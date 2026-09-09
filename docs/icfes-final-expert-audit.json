@@ -1,59 +1,35 @@
 {
-  "generatedAt": "2026-08-07T23:45:05.572Z",
+  "generatedAt": "2026-09-09T02:13:38.543Z",
   "verdict": "approved",
   "releaseDecision": "ready-for-human-integration-review",
   "deployment": "not-deployed-not-pushed-not-merged",
   "scope": {
     "inventoryResources": 34,
     "ownMocks": 23,
-    "officialSaber11": 7,
+    "attributedSaber11": 7,
     "relatedAssessments": 3,
     "guidedQuestionExperiences": 1235,
-    "guidedOfficialEligible": 5,
-    "guidedOfficialExcluded": 2,
+    "guidedAttributedEligible": 5,
+    "guidedAttributedExcluded": 2,
     "syntheticStudents": 100,
     "renderedRoutes200": 48,
     "deliberateRoutes404": 2
   },
   "browserEvidence": [
     {
-      "check": "keyboard-tabs",
+      "check": "free-result-desktop",
       "result": "passed",
-      "evidence": "ArrowRight movió foco y selección de Lugares a Personas y oficios; tabpanel actualizó aria-labelledby."
+      "evidence": "desktop 1440×1000: resultado gratuito visible, cero errores de consola y cero claves sensibles de scoring.",
+      "artifact": "artifacts/icfes-audit/icfes-free-result-desktop-2026-09-08.png"
     },
     {
-      "check": "specific-error-feedback",
+      "check": "free-result-mobile",
       "result": "passed",
-      "evidence": "Al elegir ankle, explicó tobillo, contrastó la definición y justificó throat como garganta."
-    },
-    {
-      "check": "persistence-and-review",
-      "result": "passed",
-      "evidence": "El intento mock-03:p1q1 quedó en localStorage y apareció en repaso con selección, correcta, evidencia y microlección."
-    },
-    {
-      "check": "historical-sample-scaling",
-      "result": "passed",
-      "evidence": "icfes-2022-g11 renderizó 25 preguntas, partes históricas, fuente y explicación editorial separadas."
-    },
-    {
-      "check": "mobile-layout",
-      "result": "passed",
-      "evidence": "Viewport 390×844: documentWidth 390, sin desbordamiento horizontal y CTA principales presentes."
+      "evidence": "mobile 390×844: resultado gratuito visible, cero errores de consola y cero claves sensibles de scoring.",
+      "artifact": "artifacts/icfes-audit/icfes-free-result-mobile-2026-09-08.png"
     }
   ],
-  "informationalObservations": [
-    {
-      "id": "gtm-third-party-csp",
-      "severity": "info",
-      "detail": "GTM intentó cargar un script de unpkg bloqueado por la CSP global. No afectó navegación, práctica, persistencia ni feedback ICFES; revisar aparte con el responsable de analítica."
-    },
-    {
-      "id": "turbopack-symlink",
-      "severity": "info",
-      "detail": "Turbopack no admite el symlink de node_modules del worktree /tmp. La validación se ejecutó con Webpack, soportado por Next.js 16.2.6, y produjo manifiestos finales."
-    }
-  ],
+  "informationalObservations": [],
   "limitations": [
     "La cohorte de 100 es sintética: valida rutas, contenido expuesto y oportunidad pedagógica, no memoria, motivación ni aprendizaje observado en estudiantes reales.",
     "La indexabilidad técnica no garantiza posiciones en Google. Rendimiento orgánico requiere publicación autorizada, rastreo y datos posteriores de Search Console.",
@@ -123,7 +99,7 @@
       "requirement": "Inventario cubre el alcance completo",
       "pass": true,
       "severity": "critical",
-      "evidence": "23 propios · 7 Saber 11 · 3 relacionados · 1 guiado autónomo · 34 total",
+      "evidence": "23 propios · 7 atribuidos Saber 11 · 3 relacionados · 1 guiado autónomo · 34 total",
       "remediation": "Reconciliar catálogo, archivos y rutas."
     },
     {
@@ -131,7 +107,7 @@
       "requirement": "Los 23 mocks conservan 1.035 preguntas guiadas",
       "pass": true,
       "severity": "critical",
-      "evidence": "1035/1035 · 380 controles",
+      "evidence": "1035/1035 · 382 controles",
       "remediation": "Corregir formato o feedback del banco propio."
     },
     {
@@ -163,7 +139,7 @@
       "requirement": "SEO/producto no tiene hallazgos abiertos",
       "pass": true,
       "severity": "high",
-      "evidence": "21/21 controles",
+      "evidence": "30/30 controles",
       "remediation": "Corregir canonical, sitemap, metadata o accesibilidad."
     },
     {
@@ -187,7 +163,7 @@
       "requirement": "La compuerta principal encadena todas las auditorías sin servidor",
       "pass": true,
       "severity": "high",
-      "evidence": "SEO y cohorte fuente incluidas",
+      "evidence": "Expansión, SEO y cohorte fuente incluidas",
       "remediation": "Restaurar auditorías en check:icfes-superhub."
     },
     {
@@ -199,11 +175,19 @@
       "remediation": "Actualizar el handoff editorial."
     },
     {
+      "id": "browser-e2e-gate",
+      "requirement": "El resultado gratuito funciona en escritorio y móvil sin errores ni filtración de scoring",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "2/2 dispositivos · 0 fallos",
+      "remediation": "Repetir capture-icfes-product-evidence.mjs y corregir el flujo o el DTO."
+    },
+    {
       "id": "webpack-build-artifacts",
       "requirement": "El build Webpack produjo manifiestos finales",
       "pass": true,
       "severity": "critical",
-      "evidence": "Manifiestos presentes · 2026-08-07T18:45:14.553Z",
+      "evidence": "Manifiestos presentes · 2026-09-09T02:00:08.643Z",
       "remediation": "Ejecutar next build --webpack en el worktree aislado."
     }
   ],
@@ -213,49 +197,49 @@
       "label": "Inventario maestro",
       "path": "docs/icfes-inventory-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:24:26.446Z"
+      "generatedAt": "2026-09-09T02:07:28.567Z"
     },
     {
       "id": "ownMocks",
       "label": "23 mocks propios",
       "path": "docs/icfes-guided-editorial-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:24:26.429Z"
+      "generatedAt": "2026-09-09T02:07:12.279Z"
     },
     {
       "id": "guided55",
       "label": "Entrenamiento guiado de 55",
       "path": "docs/icfes-guided-55-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:24:26.351Z"
+      "generatedAt": "2026-09-09T02:07:12.280Z"
     },
     {
       "id": "official",
       "label": "Muestras históricas guiadas",
       "path": "docs/icfes-official-guided-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:24:26.375Z"
+      "generatedAt": "2026-09-09T02:07:28.511Z"
     },
     {
       "id": "seo",
       "label": "Producto, SEO y accesibilidad",
       "path": "docs/icfes-seo-product-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:24:26.327Z"
+      "generatedAt": "2026-09-09T02:07:28.517Z"
     },
     {
       "id": "users",
       "label": "Cohorte sintética de 100 estudiantes",
       "path": "docs/icfes-100-user-simulation.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:22:46.259Z"
+      "generatedAt": "2026-09-09T02:08:43.314Z"
     },
     {
       "id": "runtime",
       "label": "Smoke de rutas renderizadas",
       "path": "docs/icfes-runtime-smoke-audit.json",
       "verdict": "approved",
-      "generatedAt": "2026-08-04T04:25:41.099Z"
+      "generatedAt": "2026-09-09T02:06:13.747Z"
     }
   ]
 }

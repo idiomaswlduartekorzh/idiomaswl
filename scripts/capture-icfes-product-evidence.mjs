@@ -10,6 +10,19 @@ await mkdir(outputDir, { recursive: true });
 const browser = await chromium.launch({ headless: true, executablePath });
 const findings = [];
 
+function collectKeys(value, keys = new Set()) {
+  if (!value || typeof value !== 'object') return keys;
+  if (Array.isArray(value)) {
+    value.forEach((item) => collectKeys(item, keys));
+    return keys;
+  }
+  Object.entries(value).forEach(([key, nested]) => {
+    keys.add(key);
+    collectKeys(nested, keys);
+  });
+  return keys;
+}
+
 for (const device of [
   { name: 'desktop', viewport: { width: 1440, height: 1000 } },
   { name: 'mobile', viewport: { width: 390, height: 844 } },
@@ -29,7 +42,17 @@ for (const device of [
   const finishButton = page.getByRole('button', { name: 'Finalizar examen' }).first();
   await finishButton.waitFor({ state: 'visible' });
   page.once('dialog', (dialog) => dialog.accept());
-  await finishButton.click();
+  const [gradeResponse] = await Promise.all([
+    page.waitForResponse((response) => response.url().endsWith('/api/icfes/attempts/grade') && response.status() === 200),
+    finishButton.click(),
+  ]);
+  const gradePayload = await gradeResponse.json();
+  const gradePayloadKeys = [...collectKeys(gradePayload)].sort();
+  const forbiddenResultKeys = ['answer', 'answers', 'correctAnswer', 'explanation', 'insights', 'questions', 'rationale'];
+  const leakedKeys = forbiddenResultKeys.filter((key) => gradePayloadKeys.includes(key));
+  if (leakedKeys.length) {
+    throw new Error(`${device.name}: sensitive scoring keys leaked: ${leakedKeys.join(', ')}`);
+  }
   await page.getByTestId('icfes-free-result').waitFor({ state: 'visible' });
   await page.getByText('Tu resultado ya está visible. Dejar tus datos es opcional.').waitFor({ state: 'visible' });
   const body = await page.locator('body').innerText();
@@ -47,7 +70,14 @@ for (const device of [
   const artifactPath = `artifacts/icfes-audit/icfes-free-result-${device.name}-2026-09-08.png`;
   const path = `${outputDir}icfes-free-result-${device.name}-2026-09-08.png`;
   await page.screenshot({ path, fullPage: true });
-  findings.push({ device: device.name, viewport: device.viewport, path: artifactPath, consoleErrors: errors });
+  findings.push({
+    device: device.name,
+    viewport: device.viewport,
+    path: artifactPath,
+    gradePayloadKeys,
+    sensitiveScoringKeys: leakedKeys,
+    consoleErrors: errors,
+  });
   await context.close();
 }
 

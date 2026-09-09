@@ -17,6 +17,7 @@ const learningHub = read('src/app/(site)/practica/icfes-saber-11/page.tsx');
 const learningLayout = read('src/app/(site)/practica/icfes-saber-11/layout.tsx');
 const workbookCatalog = read('src/app/(site)/practica/icfes-saber-11/examenes/page.tsx');
 const workbookClient = read('src/app/(site)/practica/icfes-saber-11/examenes/ExamenesClient.tsx');
+const historicalBanks = read('src/data/mocks/icfes-simulacros.ts');
 const blog = read('src/data/blog.ts');
 
 test('the primary hub owns the simulacro ICFES Inglés intent and direct CTA', () => {
@@ -49,7 +50,7 @@ test('34 unique resources produce 62 routes or modes without becoming 62 exams',
   assert.match(grid, /34 recursos distintos/);
   assert.match(grid, /62 rutas o modos de uso, pero no 62 exámenes diferentes/);
   assert.match(grid, /Ver las \$\{group\.mocks\.length - INITIAL_VISIBLE_MOCKS\} prácticas propias restantes/);
-  assert.match(grid, /Ver los \$\{group\.mocks\.length - INITIAL_VISIBLE_MOCKS\} cuadernillos restantes/);
+  assert.match(grid, /Ver los \$\{group\.mocks\.length - INITIAL_VISIBLE_MOCKS\} bancos restantes/);
   assert.match(guide, /Por qué ves 62 rutas, pero solo 34 recursos/);
 });
 
@@ -64,7 +65,7 @@ test('structured data and crawl controls reflect the public canonical inventory'
 test('satellite pages keep distinct intent and link back to the primary hub', () => {
   assert.match(preparation, /Preparación ICFES Inglés con tutor \| WeLearn/);
   assert.match(learningHub, /Cómo resolver las 7 partes de Inglés Saber 11/);
-  assert.match(workbookCatalog, /Cuadernillos ICFES Inglés divulgados: catálogo por año/);
+  assert.match(workbookCatalog, /Muestras históricas ICFES Inglés: catálogo atribuido/);
   assert.match(learningHub, /href="\/examenes\/icfes"/);
   assert.match(learningLayout, /href: '\/examenes\/icfes'/);
   assert.match(workbookClient, /href="\/examenes\/icfes"/);
@@ -77,4 +78,14 @@ test('public claims stop at B1 and avoid unsupported score promises', () => {
   assert.doesNotMatch(preparation, /10–20 puntos|replican el examen real|Oficial ICFES/);
   assert.match(guide, /B1 es el techo/);
   assert.match(blog, /Saber 11 reporta hasta B1/);
+});
+
+test('historical banks disclose unverified attribution and never imply affiliation', () => {
+  assert.match(grid, /Banco local pendiente de cotejo primario por ítem/);
+  assert.match(grid, /no implica afiliación, aval ni reproducción oficial/);
+  assert.match(workbookClient, /Atribución no cotejada/);
+  assert.doesNotMatch(workbookClient, /Fuente ICFES|resource-kind="published"/);
+  assert.doesNotMatch(examCatalog, /Divulgado por el ICFES|badge: 'Fuente ICFES'/);
+  assert.doesNotMatch(historicalBanks, /Cuadernillo Oficial/);
+  assert.match(historicalBanks, /local-bank-only-not-independently-verified/);
 });

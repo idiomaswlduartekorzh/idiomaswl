@@ -7,7 +7,7 @@
 El clúster separa tres intenciones:
 
 - `/practica/icfes-saber-11`: aprender, diagnosticar y practicar.
-- `/practica/icfes-saber-11/examenes`: usar cuadernillos divulgados en modo examen o guiado.
+- `/practica/icfes-saber-11/examenes`: usar bancos históricos atribuidos en modo examen o guiado, con cotejo primario pendiente.
 - `/preparacion-icfes`: contratar preparación del componente de inglés.
 
 El superhub enlaza siete páginas de parte, diagnóstico, vocabulario, plan de 30/60/90 días (más una opción urgente), pregunta diaria, repaso de errores, progreso y cuadernillos. Las páginas educativas indexables renderizan explicación sustancial en servidor; solo los motores interactivos son Client Components.
@@ -52,21 +52,21 @@ Fuente principal: [Guía de orientación Saber 11 2026-2 del ICFES](https://www.
 - La prueba evalúa lectura y uso de la lengua; no incluye listening, speaking ni writing.
 - Niveles reportados: Pre A1, A1, A2 y B1. B2 no es un resultado de Saber 11.
 
-Los cuadernillos históricos del banco conservan el número de preguntas de la muestra publicada. No se presentan como reproducciones de las 55 preguntas de una aplicación actual.
+Los bancos históricos atribuidos conservan el número de preguntas del registro local. Su procedencia por ítem todavía no está cotejada y no se presentan como reproducciones de las 55 preguntas de una aplicación actual.
 
 ## Banco y estados editoriales
 
 - `src/data/icfes/questions.ts`: preguntas propias tipo ICFES, con habilidad, subhabilidad, fuente, estado, fecha de revisión, evidencia, explicación y distractores.
 - `src/data/icfes/guided-registry.ts`: fuente única y ligera para los 23 mocks y las cinco muestras históricas habilitadas en modo guiado.
-- `src/data/icfes/guided-workbooks.ts`: adaptación pedagógica de cinco muestras históricas Saber 11. Sus 145 preguntas tienen explicación, evidencia y razones por alternativa.
+- `src/data/icfes/guided-workbooks.ts`: adaptación pedagógica de cinco muestras históricas atribuidas a Saber 11. Sus 145 preguntas tienen explicación, evidencia y razones por alternativa.
 - `src/data/icfes/guided-mocks.ts`: adaptación de los 23 mocks propios abreviados; comparte las mismas 1.035 preguntas con el modo examen.
-- `src/data/mocks/icfes-simulacros.ts`: preguntas de cuadernillos divulgados y rangos explícitos por parte; nunca se infiere la parte solo por posición.
+- `src/data/mocks/icfes-simulacros.ts`: banco local atribuido, aún sin cotejo primario por ítem, y rangos explícitos por parte; nunca se infiere la parte solo por posición.
 
 Tienen modo guiado completo `icfes-2023-g11`, `icfes-2022-g11`, `icfes-2019-ex1`, `icfes-2021-ex1` e `icfes-2012`. `icfes-2021-ex2` e `icfes-2016` conservan modo examen, pero no ofrecen guiado porque al banco digital le faltan seis estímulos de avisos en total; el sistema no los inventa desde la clave.
 
 Para ampliar un cuadernillo guiado:
 
-1. Confirmar fuente y clave del material divulgado.
+1. Confirmar fuente primaria y clave antes de promover una atribución a procedencia verificada.
 2. Añadir o verificar `partRanges` explícitos.
 3. Crear para cada pregunta evidencia, explicación, estrategia, microlección y una justificación específica por opción.
 4. Marcar `reviewedAt` y `editorialStatus` solo después de revisión humana.

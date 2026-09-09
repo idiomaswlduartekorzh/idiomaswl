@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-04T04:24:26.327Z",
+  "generatedAt": "2026-09-09T02:07:28.517Z",
   "verdict": "approved",
   "scope": {
     "guidedMocks": 23,
     "guidedWorkbooks": 5,
     "excludedWorkbooks": 2,
-    "checks": 21
+    "checks": 30
   },
   "findings": [],
   "checks": [
@@ -102,8 +102,8 @@
       "title": "La portada de cuadernillos comunica alcance real",
       "pass": true,
       "severity": "high",
-      "evidence": "145 explicaciones en cinco muestras",
-      "remediation": "Actualizar snippets cuando cambie el inventario."
+      "evidence": "Snippet: cinco muestras guiadas · Open Graph: 145 preguntas en cinco recorridos",
+      "remediation": "Actualizar los hechos del snippet y Open Graph cuando cambie el inventario, sin exigir una redacción literal."
     },
     {
       "id": "catalogue-cta-parity",
@@ -176,6 +176,78 @@
       "severity": "medium",
       "evidence": "4 de agosto de 2026",
       "remediation": "Actualizar solo al completar una revisión real."
+    },
+    {
+      "id": "primary-hub-intent",
+      "title": "El hub de exámenes concentra la intención simulacro ICFES Inglés",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "Title y H1 específicos en /examenes/icfes",
+      "remediation": "Mantener la consulta principal en el hub de exámenes."
+    },
+    {
+      "id": "primary-hub-cta",
+      "title": "El primer CTA abre una experiencia completa",
+      "pass": true,
+      "severity": "high",
+      "evidence": "CTA directo al recorrido propio de 55 preguntas",
+      "remediation": "No sustituirlo por una ancla o una página intermedia."
+    },
+    {
+      "id": "inventory-language",
+      "title": "La portada diferencia recursos únicos de modos",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "34 recursos = 23 propios + 10 atribuidos + 1 guiado; 62 modos",
+      "remediation": "No contar modos como exámenes distintos."
+    },
+    {
+      "id": "inventory-jsonld",
+      "title": "Los datos estructurados enumeran recursos únicos",
+      "pass": true,
+      "severity": "high",
+      "evidence": "ItemList derivado del catálogo + simulacro guiado",
+      "remediation": "Derivar siempre del catálogo y evitar cifras manuales en itemListElement."
+    },
+    {
+      "id": "intent-separation",
+      "title": "Aprendizaje, bancos históricos y tutoría conservan intención propia",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Tres titles distintos de la consulta principal",
+      "remediation": "Evitar que las páginas satélite copien el title del hub."
+    },
+    {
+      "id": "cluster-links-primary",
+      "title": "Las páginas satélite y artículos devuelven al hub primario",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Learning hub, catálogo, tutoría y cuatro artículos enlazan /examenes/icfes",
+      "remediation": "Mantener enlaces descriptivos al catálogo principal."
+    },
+    {
+      "id": "sitemap-primary-priority",
+      "title": "El sitemap prioriza el hub sobre sus satélites",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Hub 0.93 · tutoría 0.84 · aprendizaje 0.82",
+      "remediation": "Mantener el hub como URL principal de intención transaccional."
+    },
+    {
+      "id": "robots-discoverability",
+      "title": "Robots permite rastrear el clúster público",
+      "pass": true,
+      "severity": "high",
+      "evidence": "Allow / y sin bloqueos del hub o clúster",
+      "remediation": "No bloquear recursos públicos del clúster ICFES."
+    },
+    {
+      "id": "claims-b1-only",
+      "title": "El clúster no promete B2/C1 ni incrementos fijos",
+      "pass": true,
+      "severity": "critical",
+      "evidence": "B1 máximo y sin promesa fija de puntos",
+      "remediation": "No atribuir B2/C1 a Saber 11 ni publicar incrementos sin evidencia."
     }
   ]
 }

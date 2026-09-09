@@ -105,7 +105,8 @@ assert.match(workbookCatalog, /Práctica complementaria/, 'El catálogo debe sep
 assert.match(workbookCatalog, /sim\.assessment === 'saber-11'/, 'Saber 11 debe filtrarse por evaluación explícita');
 assert.match(workbookCatalog, /sim\.assessment !== 'saber-11'/, 'Saber 9, Saber 10 y TyT deben quedar en práctica complementaria');
 assert.match(mockGrid, /Prácticas propias abreviadas/, 'La landing debe diferenciar las prácticas propias');
-assert.match(mockGrid, /Cuadernillos divulgados por el ICFES/, 'La landing debe diferenciar los cuadernillos divulgados');
+assert.match(mockGrid, /Bancos históricos atribuidos a material ICFES/, 'La landing debe diferenciar los bancos históricos atribuidos');
+assert.match(mockGrid, /no implica afiliación, aval ni reproducción oficial/, 'La landing debe limitar la atribución y negar afiliación');
 assert.match(practiceClient, /no reproduce la extensión estándar 2026-2 ni predice tu puntaje oficial/, 'El resultado abreviado debe explicar su límite');
 assert.match(practiceClient, /Reforzar Parte/, 'El resultado debe recomendar la habilidad más débil');
 assert.equal((guided55.match(/part: [1-7], id:/g) ?? []).length, 34, 'El simulacro debe añadir 34 preguntas a las 21 revisadas');

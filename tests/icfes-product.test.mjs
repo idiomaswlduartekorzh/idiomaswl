@@ -48,6 +48,7 @@ test('score is shown before an explicitly optional, consented lead form', () => 
   assert.ok(score >= 0 && lead > score);
   assert.match(runner, /checked=\{consent\}/);
   assert.match(runner, /if \(!consent/);
+  assert.match(runner, /data-testid="icfes-free-result" data-active-practice="true"/);
 });
 
 test('official resources cannot reach checkout or premium detail', () => {
@@ -70,6 +71,36 @@ test('checkout uses server price, signed cookie capability, user ownership, and 
   assert.match(checkout, /attempt\.user_id && attempt\.user_id !== user\?\.id/);
   assert.match(checkout, /createWompiIntegritySignature/);
   assert.doesNotMatch(checkout, /status:\s*'APPROVED'/);
+  assert.match(read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx'), /amount_cop: data\.amountInCents \/ 100/);
+});
+
+test('feature flags default off and private ownership never comes from the client', () => {
+  const env = read('.env.example');
+  const api = [
+    'src/app/api/icfes/attempts/start/route.ts',
+    'src/app/api/icfes/attempts/grade/route.ts',
+    'src/app/api/icfes/attempts/[attemptId]/detail/route.ts',
+    'src/app/api/icfes/pass/checkout/route.ts',
+    'src/app/api/icfes/practice-progress/route.ts',
+    'src/app/api/icfes/study-plan/route.ts',
+  ].map(read).join('\n');
+  assert.match(env, /^ICFES_PERSISTENCE_ENABLED=false$/m);
+  assert.match(env, /^ICFES_PASE_ENABLED=false$/m);
+  assert.doesNotMatch(api, /(?:body|payload|input)\.(?:user_id|userId)/);
+  assert.match(api, /auth\.getUser\(\)/);
+});
+
+test('ICFES private tables have RLS and no browser-role grants or policies', () => {
+  const migration = read('supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql');
+  for (const table of ['icfes_attempts', 'icfes_pass_orders', 'icfes_entitlements']) {
+    assert.match(migration, new RegExp(`ALTER TABLE public\\.${table} ENABLE ROW LEVEL SECURITY`));
+    assert.doesNotMatch(migration, new RegExp(`CREATE POLICY[\\s\\S]{0,160}(?:ON )?public\\.${table}`, 'i'));
+  }
+  assert.match(migration, /REVOKE ALL ON TABLE public\.icfes_attempts, public\.icfes_pass_orders, public\.icfes_entitlements FROM anon, authenticated, service_role/);
+  assert.match(migration, /GRANT SELECT, INSERT, UPDATE ON TABLE public\.icfes_attempts, public\.icfes_pass_orders TO service_role/);
+  assert.match(migration, /GRANT SELECT, INSERT ON TABLE public\.icfes_entitlements TO service_role/);
+  assert.doesNotMatch(migration, /GRANT[^;]+TO (?:anon|authenticated)/i);
+  assert.match(migration, /amount_in_cents bigint NOT NULL CHECK \(amount_in_cents = 4990000\)/);
 });
 
 test('Wompi parser rejects wrong references, amount types, and statuses', () => {

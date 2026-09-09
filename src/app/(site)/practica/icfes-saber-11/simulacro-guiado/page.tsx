@@ -48,7 +48,7 @@ export default function GuidedSimulacroPage() {
           <div className={styles.guidedModeCard}>
             <span>Modo guiado completo</span><strong>55 preguntas</strong>
             <p>Contenido original basado en las habilidades vigentes. No es un cuadernillo oficial ni predice tu puntaje ICFES.</p>
-            <Link href="/practica/icfes-saber-11/examenes">Ver cuadernillos divulgados →</Link>
+            <Link href="/practica/icfes-saber-11/examenes">Ver muestras históricas atribuidas →</Link>
           </div>
         </header>
 
@@ -82,7 +82,7 @@ export default function GuidedSimulacroPage() {
 
         <section className={styles.sourceSection}>
           <div><span>Autoría y alcance</span><p>Preguntas, explicaciones y distractores: elaboración original de Idiomas WeLearn. La estructura pedagógica toma como referencia las siete partes descritas por el ICFES.</p></div>
-          <div><span>Uso responsable</span><p>El porcentaje final mide únicamente esta práctica. Para conocer el material divulgado por la entidad, consulta la sección de cuadernillos.</p></div>
+          <div><span>Uso responsable</span><p>El porcentaje final mide únicamente esta práctica. Para consultar los bancos históricos atribuidos y su estado de procedencia, abre la sección de muestras.</p></div>
         </section>
       </div>
     </main>

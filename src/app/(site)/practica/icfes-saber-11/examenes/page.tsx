@@ -5,13 +5,13 @@ import IcfesJsonLd from '../_components/IcfesJsonLd';
 const CANONICAL = 'https://www.idiomaswl.com/practica/icfes-saber-11/examenes';
 
 export const metadata: Metadata = {
-  title: 'Cuadernillos ICFES Inglés divulgados: catálogo por año',
+  title: 'Muestras históricas ICFES Inglés: catálogo atribuido',
   description:
-    'Consulta 10 cuadernillos de inglés divulgados por el ICFES, separados entre Saber 11 y práctica complementaria. Cinco tienen explicación guiada.',
+    'Consulta 10 bancos históricos atribuidos a material ICFES, separados entre Saber 11 y práctica complementaria. Cinco tienen explicación guiada; la procedencia por ítem está pendiente de cotejo.',
   alternates: { canonical: CANONICAL },
-  openGraph: { title: 'Cuadernillos ICFES Inglés divulgados por año', description: '10 materiales divulgados, separados por audiencia; 145 preguntas explicadas en cinco recorridos guiados.', url: CANONICAL, type: 'website' },
+  openGraph: { title: 'Muestras históricas ICFES Inglés por año', description: '10 bancos atribuidos y no cotejados, separados por audiencia; 145 preguntas explicadas en cinco recorridos guiados gratuitos.', url: CANONICAL, type: 'website' },
 };
 
 export default function Page() {
-  return <><IcfesJsonLd name="Cuadernillos de Inglés divulgados por el ICFES" description="Catálogo histórico por audiencia, con modo examen y práctica guiada cuando el estímulo completo está disponible." url={CANONICAL} currentLabel="Cuadernillos" /><ExamenesClient /></>;
+  return <><IcfesJsonLd name="Muestras históricas atribuidas a material ICFES" description="Banco local por audiencia, pendiente de cotejo primario por ítem, con modo examen y práctica guiada cuando el estímulo completo está disponible." url={CANONICAL} currentLabel="Muestras históricas" /><ExamenesClient /></>;
 }

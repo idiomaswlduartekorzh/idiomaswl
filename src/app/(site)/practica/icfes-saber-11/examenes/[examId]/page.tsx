@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const audience = sim.assessment === 'saber-tyt' ? 'Saber TyT' : `Grado ${sim.grade}`;
   return {
     title: `${sim.title} — Simulacro ICFES Inglés`,
-    description: `Practica con el cuadernillo divulgado por el ICFES ${sim.year} para ${audience}. ${sim.totalQuestions} preguntas, tiempo sugerido y corrección automática.`,
+    description: `Practica con una muestra histórica atribuida a material ICFES ${sim.year} para ${audience}. Banco local no cotejado, con ${sim.totalQuestions} preguntas y corrección automática.`,
     alternates: { canonical },
     robots: sim.assessment === 'saber-11' ? undefined : { index: false, follow: true },
     openGraph: {
       title: `${sim.title} — Simulacro ICFES Inglés`,
-      description: `${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES, con corrección automática.`,
+      description: `${sim.totalQuestions} preguntas de un banco histórico atribuido y no cotejado, con corrección automática.`,
       url: canonical,
       type: 'website',
     },
@@ -40,5 +40,5 @@ export default async function Page({ params }: Props) {
   if (!sim) notFound();
   const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
   const mock = sanitizeIcfesMock(simulacroToMockExam(sim));
-  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES con corrección automática.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient mock={mock} /></>;
+  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un banco histórico atribuido a material ICFES, pendiente de cotejo primario.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient mock={mock} /></>;
 }

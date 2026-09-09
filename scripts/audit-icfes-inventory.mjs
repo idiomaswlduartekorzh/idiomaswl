@@ -36,15 +36,15 @@ const ownResources = ownModules.map(({ default: mock }) => {
   };
 });
 
-const officialResources = SIMULACROS.map((simulacro) => {
+const attributedResources = SIMULACROS.map((simulacro) => {
   const family = simulacro.assessment;
   return {
     id: simulacro.id,
     family,
-    provenance: 'icfes-published',
+    provenance: 'icfes-attributed-local-bank',
     year: simulacro.year,
     grade: simulacro.grade,
-    format: simulacro.assessment === 'saber-11' ? 'historical-published-sample' : 'related-icfes-assessment',
+    format: simulacro.assessment === 'saber-11' ? 'historical-attributed-sample' : 'related-attributed-icfes-assessment',
     questions: simulacro.questions.length,
     declaredQuestions: simulacro.totalQuestions,
     parts: simulacro.partRanges.map(({ part }) => part),
@@ -70,11 +70,11 @@ const guided55 = {
   route: '/practica/icfes-saber-11/simulacro-guiado',
 };
 
-const resources = [...ownResources, ...officialResources, guided55];
+const resources = [...ownResources, ...attributedResources, guided55];
 const duplicateIds = resources.filter((resource, index) => resources.findIndex(({ id }) => id === resource.id) !== index).map(({ id }) => id);
-const catalogMissing = [...ownResources, ...officialResources].filter(({ id }) => !catalogIds.includes(id)).map(({ id }) => id);
+const catalogMissing = [...ownResources, ...attributedResources].filter(({ id }) => !catalogIds.includes(id)).map(({ id }) => id);
 const registryMissing = ownResources.filter(({ id }) => !registryIds.includes(id)).map(({ id }) => id);
-const officialCountMismatches = officialResources.filter(({ questions, declaredQuestions }) => questions !== declaredQuestions).map(({ id }) => id);
+const attributedCountMismatches = attributedResources.filter(({ questions, declaredQuestions }) => questions !== declaredQuestions).map(({ id }) => id);
 const fileIds = ownResources.map(({ id }) => id);
 
 const checks = [
@@ -82,11 +82,11 @@ const checks = [
   { id: 'own-registry', pass: registryMissing.length === 0 && registryIds.length === 23, evidence: `${registryIds.length}/23 registrados; faltan: ${registryMissing.join(', ') || 'ninguno'}` },
   { id: 'catalog-resources', pass: catalogIds.length === 33, evidence: `${catalogIds.length}/33 recursos en catálogo` },
   { id: 'catalog-parity', pass: catalogMissing.length === 0, evidence: `Faltantes: ${catalogMissing.join(', ') || 'ninguno'}` },
-  { id: 'official-export', pass: officialResources.length === 10, evidence: `${officialResources.length}/10 cuadernillos exportados` },
-  { id: 'official-question-counts', pass: officialCountMismatches.length === 0, evidence: `Desajustes: ${officialCountMismatches.join(', ') || 'ninguno'}` },
+  { id: 'attributed-export', pass: attributedResources.length === 10, evidence: `${attributedResources.length}/10 bancos atribuidos exportados` },
+  { id: 'attributed-question-counts', pass: attributedCountMismatches.length === 0, evidence: `Desajustes: ${attributedCountMismatches.join(', ') || 'ninguno'}` },
   { id: 'unique-inventory-ids', pass: duplicateIds.length === 0, evidence: `Duplicados: ${duplicateIds.join(', ') || 'ninguno'}` },
   { id: 'guided-55-route', pass: sitemapSource.includes('simulacro-guiado'), evidence: 'Ruta adicional de 55 preguntas en sitemap' },
-  { id: 'assessment-classification', pass: officialResources.find(({ id }) => id === 'icfes-tyt')?.family === 'saber-tyt' && SIMULACROS.find(({ id }) => id === 'icfes-tyt')?.grade === null, evidence: 'TyT tiene assessment propio y grade nulo' },
+  { id: 'assessment-classification', pass: attributedResources.find(({ id }) => id === 'icfes-tyt')?.family === 'saber-tyt' && SIMULACROS.find(({ id }) => id === 'icfes-tyt')?.grade === null, evidence: 'TyT tiene assessment propio y grade nulo' },
 ];
 
 const failed = checks.filter(({ pass }) => !pass);
@@ -96,8 +96,8 @@ const report = {
   totals: {
     catalogResources: 33,
     ownMocks: ownResources.length,
-    officialSaber11: officialResources.filter(({ family }) => family === 'saber-11').length,
-    relatedIcfes: officialResources.filter(({ family }) => family !== 'saber-11').length,
+    attributedSaber11: attributedResources.filter(({ family }) => family === 'saber-11').length,
+    relatedIcfes: attributedResources.filter(({ family }) => family !== 'saber-11').length,
     standaloneGuided: 1,
     saber11Experiences: resources.filter(({ family }) => family === 'saber-11').length,
     allInventoryResources: resources.length,
@@ -106,7 +106,7 @@ const report = {
   findings: [
     { severity: 'high', id: 'guided-55-generic-feedback', status: guided55.guidedStatus === 'approved' ? 'resolved' : 'open', detail: guided55.guidedStatus === 'approved' ? 'El banco de 55 ya tiene retroalimentación específica por alternativa y una compuerta editorial propia.' : 'El constructor del simulacro de 55 preguntas todavía usa una justificación genérica y la etiqueta pista parcial.' },
     { severity: 'medium', id: 'tyt-grade-model', status: 'resolved', detail: 'El modelo distingue Saber 11, Saber 10, Saber 9 y Saber TyT; TyT ya no se representa como grado 11.' },
-    { severity: 'info', id: 'historical-formats', status: 'documented', detail: 'Los siete cuadernillos Saber 11 son muestras históricas de extensiones y distribuciones distintas; no deben normalizarse como si fueran la aplicación estándar 2026-2.' },
+    { severity: 'info', id: 'historical-formats', status: 'documented', detail: 'Los siete bancos atribuidos a Saber 11 son muestras históricas de extensiones y distribuciones distintas; no deben normalizarse como si fueran la aplicación estándar 2026-2 ni presentarse como procedencia verificada.' },
   ],
   batchQueue: [
     ['mock-04', 'mock-05', 'mock-06'], ['mock-07', 'mock-08', 'mock-09'], ['mock-10', 'mock-11', 'mock-12'],

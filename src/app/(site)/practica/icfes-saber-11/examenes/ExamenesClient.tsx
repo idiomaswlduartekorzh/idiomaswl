@@ -54,13 +54,13 @@ export default function ExamenesClient() {
           </div>
 
           <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>
-            <span className="ink-line" />Material divulgado por el ICFES
+            <span className="ink-line" />Banco histórico atribuido · cotejo pendiente
           </p>
           <h1 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', fontWeight: 800, letterSpacing: '-0.03em', margin: '0 0 0.75rem' }}>
-            Cuadernillos de inglés para Saber 11
+            Muestras históricas de inglés para Saber 11
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: '0.97rem', margin: 0, maxWidth: 600, lineHeight: 1.65 }}>
-            Preguntas de cuadernillos divulgados por el ICFES. Las muestras conservan su extensión publicada —que puede ser menor que las 55 preguntas de la aplicación estándar 2026-2— y tienen corrección automática.
+            Este banco local atribuye las preguntas a material ICFES, pero todavía no dispone de trazabilidad primaria por ítem. Se ofrece gratis para practicar; no implica afiliación, aval ni reproducción oficial.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function ExamenesClient() {
                       {audienceLabel}
                     </span>
                     <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--muted)', fontFamily: 'var(--mono)', padding: '0.2rem 0.55rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
-                      Fuente ICFES
+                      Atribución no cotejada
                     </span>
                   </div>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: '0 0 0.35rem', color: 'var(--ink)', letterSpacing: '-0.01em' }}>
@@ -100,18 +100,18 @@ export default function ExamenesClient() {
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-                  {hasGuidedMode && <Link href={`/practica/icfes-saber-11/examenes/${sim.id}/guiado`} className="btn btn-ghost" data-icfes-cta="workbook_resource_open" data-icfes-mode="guided" data-icfes-resource-id={sim.id} data-icfes-resource-kind="published" data-icfes-surface="workbook-catalog" style={{ whiteSpace: 'nowrap' }}>Modo guiado</Link>}
+                  {hasGuidedMode && <Link href={`/practica/icfes-saber-11/examenes/${sim.id}/guiado`} className="btn btn-ghost" data-icfes-cta="workbook_resource_open" data-icfes-mode="guided" data-icfes-resource-id={sim.id} data-icfes-resource-kind="attributed" data-icfes-surface="workbook-catalog" style={{ whiteSpace: 'nowrap' }}>Modo guiado</Link>}
                   <Link
                     href={`/practica/icfes-saber-11/examenes/${sim.id}`}
                     className="btn"
                     data-icfes-cta="workbook_resource_open"
                     data-icfes-mode="exam"
                     data-icfes-resource-id={sim.id}
-                    data-icfes-resource-kind="published"
+                    data-icfes-resource-kind="attributed"
                     data-icfes-surface="workbook-catalog"
                     style={{ whiteSpace: 'nowrap', background: gradeColor, borderColor: gradeColor, color: '#fff' }}
                   >
-                    Resolver cuadernillo →
+                    Resolver muestra →
                   </Link>
                 </div>
                     </div>
@@ -125,7 +125,7 @@ export default function ExamenesClient() {
         {/* Info section */}
         <div style={{ maxWidth: 780, margin: '2.5rem auto 0', padding: '1.25rem 1.5rem', borderRadius: 12, background: 'rgba(15,61,140,0.04)', border: '1px solid rgba(15,61,140,0.12)' }}>
           <p style={{ fontSize: '0.82rem', color: 'var(--muted)', margin: 0, lineHeight: 1.65 }}>
-            <strong style={{ color: 'var(--ink)' }}>Dos formas de practicar:</strong> en modo examen navegas libremente y recibes corrección al final. Los cuadernillos con sello verde tienen modo guiado completo, que explica respuesta, evidencia y distractores sin modificar el contenido divulgado. Si falta un estímulo en el banco digital, el guiado se desactiva en lugar de inferirlo desde la clave.
+            <strong style={{ color: 'var(--ink)' }}>Dos formas de practicar:</strong> en modo examen navegas libremente y recibes corrección al final. Las muestras con sello verde tienen modo guiado completo, que explica respuesta, evidencia y distractores sin presentar la atribución local como procedencia verificada. Si falta un estímulo en el banco digital, el guiado se desactiva en lugar de inferirlo desde la clave.
           </p>
         </div>
       </div>

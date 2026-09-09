@@ -48,14 +48,14 @@ function check(id, label, pass, severity, evidence, remediation = '') {
   checks.push({ id, label, pass, severity: pass ? 'pass' : severity, evidence, remediation: pass ? '' : remediation });
 }
 
-check('official-count', 'Siete muestras Saber 11 clasificadas', official.length === 7, 'critical', `${official.length}/7`, 'Reconciliar el registro oficial.');
+check('attributed-count', 'Siete muestras atribuidas a Saber 11 clasificadas', official.length === 7, 'critical', `${official.length}/7`, 'Reconciliar el registro atribuido.');
 check('guided-eligibility', 'Cinco muestras completas habilitadas y dos exclusiones documentadas', GUIDED_WORKBOOK_IDS.length === 5 && Object.keys(GUIDED_WORKBOOK_EXCLUSIONS).length === 2, 'critical', `${GUIDED_WORKBOOK_IDS.length} guiadas · ${Object.keys(GUIDED_WORKBOOK_EXCLUSIONS).length} excluidas`, 'No habilitar una muestra sin todos sus estímulos.');
 
 const expectedGuidedQuestions = GUIDED_WORKBOOK_IDS.reduce((total, examId) => total + official.find(({ id }) => id === examId).questions.length, 0);
 check('guided-question-count', 'La extensión histórica se conserva', guidedRows.length === expectedGuidedQuestions && guidedRows.length === 145, 'critical', `${guidedRows.length}/145 preguntas`, 'No completar ni recortar muestras históricas.');
 
 const mismatchedOptions = guidedRows.filter(({ sourceQuestion, question }) => sourceQuestion.answer !== question.answerIndex || JSON.stringify(sourceQuestion.options) !== JSON.stringify(question.options.map(({ text }) => text)));
-check('official-option-parity', 'Opciones y claves idénticas al banco fuente', mismatchedOptions.length === 0, 'critical', `${mismatchedOptions.length} diferencias`, 'Restaurar literalmente opciones y claves divulgadas.');
+check('source-bank-option-parity', 'Opciones y claves idénticas al banco local fuente', mismatchedOptions.length === 0, 'critical', `${mismatchedOptions.length} diferencias`, 'Restaurar literalmente opciones y claves del banco local.');
 
 const mismatchedParts = guidedRows.filter(({ exam, sourceQuestion, question }) => getSimulacroQuestionPart(exam, sourceQuestion.n) !== question.officialPart);
 const invalidPartMetadata = SIMULACROS.filter(({ partMapping, partRanges }) => partMapping.status !== 'local-canonical-source-map-unverified'
@@ -120,15 +120,15 @@ const invalidPaidDetailHolds = Object.entries(expectedPaidDetailHolds).filter(([
     || !availability.reason.includes('Detalle pago no disponible')
     || getSimulacroForPaidDetail(examId) !== undefined;
 });
-check('paid-detail-editorial-gate', 'Los cuatro defectos oficiales bloquean el detalle pago sin inventar contenido', Object.keys(ICFES_EDITORIAL_HOLDS).length === 4 && invalidPaidDetailHolds.length === 0, 'critical', invalidPaidDetailHolds.map(([examId]) => examId).join(', ') || '4/4 bloqueos activos', 'Restaurar la compuerta editorial y sus números de pregunta exactos.');
+check('paid-detail-editorial-gate', 'Los cuatro defectos atribuidos bloquean el detalle pago sin inventar contenido', Object.keys(ICFES_EDITORIAL_HOLDS).length === 4 && invalidPaidDetailHolds.length === 0, 'critical', invalidPaidDetailHolds.map(([examId]) => examId).join(', ') || '4/4 bloqueos activos', 'Restaurar la compuerta editorial y sus números de pregunta exactos.');
 
 const officialPaidDetailLeaks = SIMULACROS.filter(({ id, licenseStatus }) => licenseStatus !== 'legal-review-required-paid-detail-blocked'
   || getIcfesPaidDetailAvailability(id).eligible
   || getSimulacroForPaidDetail(id) !== undefined);
-check('paid-detail-global-policy-gate', 'Todo detalle oficial pago queda bloqueado hasta verificar procedencia y licencia', officialPaidDetailLeaks.length === 0, 'critical', officialPaidDetailLeaks.map(({ id }) => id).join(', ') || `${SIMULACROS.length}/${SIMULACROS.length} bloqueados`, 'No monetizar contenido oficial sin procedencia primaria y revisión jurídica documentadas.');
+check('paid-detail-global-policy-gate', 'Todo detalle atribuido pago queda bloqueado hasta verificar procedencia y licencia', officialPaidDetailLeaks.length === 0, 'critical', officialPaidDetailLeaks.map(({ id }) => id).join(', ') || `${SIMULACROS.length}/${SIMULACROS.length} bloqueados`, 'No monetizar bancos atribuidos sin procedencia primaria y revisión jurídica documentadas.');
 
 check('dynamic-guided-page', 'La ruta usa extensión y mapa pedagógico de cada muestra', routeSource.includes('{questions.length} preguntas') && routeSource.includes('exam.partMapping.canonicalSkillPartRanges.length') && routeSource.includes('Mapa pedagógico local') && !routeSource.includes('Mapa del recorrido original') && !routeSource.includes('<strong>25 preguntas</strong>'), 'high', 'Extensión y taxonomía local explícitas', 'Eliminar textos fijos o afirmaciones de paridad histórica no verificada.');
-check('historical-disclaimer', 'La ruta explica el alcance histórico', routeSource.includes('no reproduce necesariamente la aplicación estándar 2026-2 ni predice un puntaje oficial'), 'critical', 'Descargo visible', 'No presentar una muestra histórica como formato vigente completo.');
+check('historical-disclaimer', 'La ruta explica el alcance histórico', routeSource.includes('no reproduce necesariamente la aplicación estándar 2026-2') && routeSource.includes('no implica afiliación o aval') && routeSource.includes('no predice un puntaje oficial'), 'critical', 'Descargo visible', 'No presentar una muestra histórica como formato vigente completo.');
 check('catalog-eligibility', 'El catálogo muestra guiado solo cuando es elegible', catalogSource.includes('GUIDED_WORKBOOK_IDS.includes') && catalogSource.includes('GUIDED_WORKBOOK_EXCLUSIONS'), 'high', 'Elegibilidad explícita', 'Conectar el CTA a la lista editorial aprobada.');
 check('error-review-integration', 'Los cinco cuadernillos entran a la cola de errores', errorReviewSource.includes('GUIDED_WORKBOOK_IDS.flatMap(getGuidedWorkbookQuestions)'), 'high', 'Integración por registro', 'Añadir todos los bancos guiados sin duplicarlos.');
 
@@ -140,7 +140,7 @@ const failures = checks.filter(({ pass }) => !pass);
 const report = {
   generatedAt: new Date().toISOString(),
   scope: {
-    officialSaber11Samples: official.map(({ id, year, totalQuestions, partRanges }) => ({ id, year, totalQuestions, parts: partRanges.map(({ part }) => part) })),
+    attributedSaber11Samples: official.map(({ id, year, totalQuestions, partRanges }) => ({ id, year, totalQuestions, parts: partRanges.map(({ part }) => part) })),
     guided: [...GUIDED_WORKBOOK_IDS],
     excluded: GUIDED_WORKBOOK_EXCLUSIONS,
     guidedQuestions: guidedRows.length,

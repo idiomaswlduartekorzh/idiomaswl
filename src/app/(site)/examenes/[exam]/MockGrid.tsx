@@ -38,9 +38,9 @@ export default function MockGrid({ exam }: { exam: Exam }) {
           mocks: exam.mocks.filter(mock => !mock.badge),
         },
         {
-          id: 'published',
-          title: 'Cuadernillos divulgados por el ICFES · 10 recursos',
-          description: 'Material publicado por el ICFES con su extensión y clave originales. El catálogo guiado distingue Saber 11 de los recursos complementarios.',
+          id: 'attributed',
+          title: 'Bancos históricos atribuidos a material ICFES · 10 recursos',
+          description: 'Banco local pendiente de cotejo primario por ítem. Se ofrece gratis para práctica y no implica afiliación, aval ni reproducción oficial.',
           mocks: exam.mocks.filter(mock => Boolean(mock.badge)),
         },
       ]
@@ -75,7 +75,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                     'data-icfes-cta': 'catalog_resource_open',
                     'data-icfes-mode': 'exam',
                     'data-icfes-resource-id': mock.id,
-                    'data-icfes-resource-kind': mock.badge ? 'published' : 'own',
+                    'data-icfes-resource-kind': mock.badge ? 'attributed' : 'own',
                     'data-icfes-surface': 'exam-hub-catalog',
                   } : {})}
                 >Modo examen →</Link>
@@ -135,7 +135,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
 
         {isIcfes ? (
           <p style={{ color: 'var(--muted)', lineHeight: 1.65, margin: '0 0 1.5rem' }}>
-            Este catálogo contiene <strong style={{ color: 'var(--ink)' }}>34 recursos distintos</strong>: 23 prácticas propias, 10 cuadernillos divulgados y el simulacro guiado de 55 preguntas. Algunas prácticas también se pueden abrir en modo examen y modo guiado; por eso existen 62 rutas o modos de uso, pero no 62 exámenes diferentes.
+            Este catálogo contiene <strong style={{ color: 'var(--ink)' }}>34 recursos distintos</strong>: 23 prácticas propias, 10 bancos históricos atribuidos y el simulacro guiado de 55 preguntas. Algunas prácticas también se pueden abrir en modo examen y modo guiado; por eso existen 62 rutas o modos de uso, pero no 62 exámenes diferentes.
           </p>
         ) : null}
 
@@ -145,9 +145,9 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               <div className="wl-mock-group__heading">
                 <h3>{group.title}</h3>
                 <p>{group.description}</p>
-                {group.id === 'published' && (
-                  <Link href="/practica/icfes-saber-11/examenes" data-icfes-cta="published_catalog" data-icfes-surface="exam-hub-catalog">
-                    Ver el catálogo de cuadernillos por audiencia →
+                {group.id === 'attributed' && (
+                  <Link href="/practica/icfes-saber-11/examenes" data-icfes-cta="attributed_catalog" data-icfes-surface="exam-hub-catalog">
+                    Ver el catálogo histórico por audiencia →
                   </Link>
                 )}
               </div>
@@ -156,8 +156,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             {group.mocks.length > INITIAL_VISIBLE_MOCKS ? (
               <details className="wl-mock-more">
                 <summary>
-                  {group.id === 'published'
-                    ? `Ver los ${group.mocks.length - INITIAL_VISIBLE_MOCKS} cuadernillos restantes`
+                  {group.id === 'attributed'
+                    ? `Ver los ${group.mocks.length - INITIAL_VISIBLE_MOCKS} bancos restantes`
                     : `Ver las ${group.mocks.length - INITIAL_VISIBLE_MOCKS} prácticas propias restantes`}
                 </summary>
                 {renderCards(group.mocks.slice(INITIAL_VISIBLE_MOCKS))}

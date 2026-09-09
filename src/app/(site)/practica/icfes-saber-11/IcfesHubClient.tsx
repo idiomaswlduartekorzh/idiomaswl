@@ -149,7 +149,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
               <ArrowLeft size={16} /> Volver a herramientas
             </button>
             <Link href="/practica/icfes-saber-11/examenes" className="btn btn-sm" data-icfes-cta="quick_to_published_catalog" data-icfes-surface="learning-tools" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: ICFES_COLOR, borderColor: ICFES_COLOR, color: '#fff' }}>
-              <ClipboardList size={16} /> Cuadernillos divulgados
+              <ClipboardList size={16} /> Muestras históricas
             </Link>
           </div>
           <div className="wl-card" style={{ padding: 0, overflow: 'hidden', borderRadius: 20 }}>
@@ -217,7 +217,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             <Link href="/practica/icfes-saber-11/simulacro-guiado" className="icfes-theme-accent-text" data-icfes-cta="learning_guided_55" data-icfes-mode="guided" data-icfes-resource-id="welearn-2026-2-55" data-icfes-resource-kind="own" data-icfes-surface="learning-tools" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
               Abrir simulacro guiado <ArrowRight size={14} />
             </Link>
-            <Link href="/practica/icfes-saber-11/examenes" className="icfes-theme-accent-text" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver cuadernillos divulgados</Link>
+            <Link href="/practica/icfes-saber-11/examenes" className="icfes-theme-accent-text" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver muestras históricas</Link>
           </div>
         </div>
 

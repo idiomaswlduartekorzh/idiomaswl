@@ -8,6 +8,24 @@
         "height": 1000
       },
       "path": "artifacts/icfes-audit/icfes-free-result-desktop-2026-09-08.png",
+      "gradePayloadKeys": [
+        "attemptId",
+        "byPart",
+        "bySkill",
+        "correct",
+        "examId",
+        "href",
+        "key",
+        "label",
+        "officialResource",
+        "ok",
+        "percentage",
+        "premiumEligible",
+        "recommendation",
+        "result",
+        "total"
+      ],
+      "sensitiveScoringKeys": [],
       "consoleErrors": []
     },
     {
@@ -17,6 +35,24 @@
         "height": 844
       },
       "path": "artifacts/icfes-audit/icfes-free-result-mobile-2026-09-08.png",
+      "gradePayloadKeys": [
+        "attemptId",
+        "byPart",
+        "bySkill",
+        "correct",
+        "examId",
+        "href",
+        "key",
+        "label",
+        "officialResource",
+        "ok",
+        "percentage",
+        "premiumEligible",
+        "recommendation",
+        "result",
+        "total"
+      ],
+      "sensitiveScoringKeys": [],
       "consoleErrors": []
     }
   ]

@@ -1081,7 +1081,7 @@ function ResultsView({
             Reforzar Parte {weakestSection.part} →
           </Link>
           <Link href="/practica/icfes-saber-11/examenes" className="btn btn-ghost">
-            Practicar un cuadernillo divulgado
+            Practicar una muestra histórica atribuida
           </Link>
         </div>
       )}
@@ -1145,7 +1145,7 @@ function SecureIcfesResults({
       if (!response.ok || !('ok' in data) || !data.ok) throw new Error('error' in data ? data.error : 'No pudimos abrir el pago.');
       const status = data.paymentStatus.toLowerCase() as 'pending' | 'approved' | 'declined' | 'error';
       setCheckoutState(status === 'approved' ? 'approved' : status === 'declined' ? 'declined' : 'pending');
-      trackIcfesEvent('icfes_checkout_start', { mock_id: result.examId, product_code: 'icfes-pass-v1', amount_cop: 49900 });
+      trackIcfesEvent('icfes_checkout_start', { mock_id: result.examId, product_code: 'icfes-pass-v1', amount_cop: data.amountInCents / 100 });
       window.location.assign(data.checkoutUrl ?? data.resultUrl);
     } catch (error) {
       setCheckoutState('error');
@@ -1154,7 +1154,7 @@ function SecureIcfesResults({
   }
 
   return (
-    <div className="prac-results" data-testid="icfes-free-result">
+    <div className="prac-results" data-testid="icfes-free-result" data-active-practice="true">
       <div className="prac-results__hero" style={{ '--exam-color': '#14215c' } as React.CSSProperties}>
         <p className="prac-results__label">Resultado gratuito inmediato</p>
         <div className="prac-results__score">{result.percentage}</div>
@@ -1183,7 +1183,7 @@ function SecureIcfesResults({
       {result.officialResource ? (
         <div className="icfes-product-card icfes-product-card--muted">
           <h2>Detalle pregunta por pregunta no vendido</h2>
-          <p>{result.premiumUnavailableReason ?? 'Este cuadernillo oficial solo ofrece el resultado básico gratuito.'}</p>
+          <p>{result.premiumUnavailableReason ?? 'Este banco histórico atribuido solo ofrece el resultado básico gratuito.'}</p>
         </div>
       ) : offerEnabled && result.premiumEligible ? (
         <div className="icfes-product-card" data-testid="icfes-pass-offer">

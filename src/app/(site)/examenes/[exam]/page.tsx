@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
         : `Simulacros de ${exam.fullName ?? exam.name}`),
     description:
       slug === 'icfes'
-        ? 'Haz un simulacro de inglés ICFES gratis. Elige entre 23 prácticas propias, 10 cuadernillos divulgados por el ICFES y 1 simulacro guiado de 55 preguntas.'
+        ? 'Haz un simulacro de inglés ICFES gratis. Elige entre 23 prácticas propias, 10 bancos históricos atribuidos a material ICFES y 1 simulacro guiado de 55 preguntas.'
         : guide?.description ??
       `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con retroalimentación personalizada.`,
     ...(slug === 'sat' ? { keywords: satKeywords } : slug === 'icfes' ? { keywords: icfesKeywords } : {}),
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     },
     openGraph: {
       title: slug === 'icfes' ? 'Simulacro ICFES Inglés gratis: 34 recursos' : guide?.title ?? `${exam.name} — Simulacros y preparación`,
-      description: slug === 'icfes' ? '23 prácticas propias, 10 cuadernillos divulgados por el ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
+      description: slug === 'icfes' ? '23 prácticas propias, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
       url: `https://www.idiomaswl.com/examenes/${slug}`,
       type: 'website' as const,
       locale: 'es_CO',
@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     twitter: {
       card: 'summary_large_image' as const,
       title: slug === 'icfes' ? 'Simulacro ICFES Inglés gratis: 34 recursos' : guide?.title ?? `${exam.name} — Simulacros y preparación`,
-      description: slug === 'icfes' ? '23 prácticas propias, 10 cuadernillos divulgados por el ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
+      description: slug === 'icfes' ? '23 prácticas propias, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
     },
     alternates: {
       canonical: `https://www.idiomaswl.com/examenes/${slug}`,

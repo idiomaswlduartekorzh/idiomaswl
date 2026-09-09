@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-04T04:25:41.099Z",
+  "generatedAt": "2026-09-09T02:06:13.747Z",
   "verdict": "approved",
-  "base": "http://localhost:4192",
+  "base": "http://127.0.0.1:4192",
   "totals": {
     "expected200": 48,
     "expected404": 2,

@@ -11,12 +11,12 @@ import IcfesAnalyticsScope from '@/components/analytics/IcfesAnalyticsScope'
  * Medido en Search Console (18-29 jul 2026): el clúster ICFES suma cerca de 1.000
  * impresiones, pero concentradas en los artículos del blog. La página comercial
  * /preparacion-icfes tenía 16 y /examenes/icfes estaba en posición 29 pese a que
- * el sitio tiene diez cuadernillos divulgados para practicar.
+ * el sitio tiene diez bancos históricos atribuidos para practicar.
  */
 
 const LINKS = [
   { href: '/examenes/icfes', label: 'Simulacros ICFES Inglés', note: 'Catálogo principal: 34 recursos únicos entre prácticas, cuadernillos y un recorrido guiado de 55 preguntas.' },
-  { href: '/practica/icfes-saber-11/examenes', label: 'Cuadernillos divulgados', note: 'Material publicado por el ICFES, separado por audiencia y con corrección al terminar.' },
+  { href: '/practica/icfes-saber-11/examenes', label: 'Muestras históricas', note: 'Banco atribuido a material ICFES, pendiente de cotejo primario y separado por audiencia.' },
   { href: '/practica/icfes-saber-11/vocabulario', label: 'Banco de vocabulario', note: 'Palabras académicas, conectores y verbos frecuentes para practicar dentro del sitio.' },
   { href: '/blog/icfes-vocabulario-ingles-palabras-mas-frecuentes', label: 'Vocabulario más frecuente', note: 'Las palabras que se repiten año tras año. Es por donde más rápido se sube.' },
   { href: '/blog/icfes-saber-11-niveles-ingles-guia-completa', label: 'Los cuatro niveles', note: 'Qué significa cada rango de puntaje, de Pre A1 a B1.' },

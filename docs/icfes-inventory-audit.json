@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-04T04:24:26.446Z",
+  "generatedAt": "2026-09-09T02:07:28.567Z",
   "verdict": "approved",
   "totals": {
     "catalogResources": 33,
     "ownMocks": 23,
-    "officialSaber11": 7,
+    "attributedSaber11": 7,
     "relatedIcfes": 3,
     "standaloneGuided": 1,
     "saber11Experiences": 31,
@@ -28,7 +28,7 @@
       "severity": "info",
       "id": "historical-formats",
       "status": "documented",
-      "detail": "Los siete cuadernillos Saber 11 son muestras históricas de extensiones y distribuciones distintas; no deben normalizarse como si fueran la aplicación estándar 2026-2."
+      "detail": "Los siete bancos atribuidos a Saber 11 son muestras históricas de extensiones y distribuciones distintas; no deben normalizarse como si fueran la aplicación estándar 2026-2 ni presentarse como procedencia verificada."
     }
   ],
   "batchQueue": [
@@ -118,12 +118,12 @@
       "evidence": "Faltantes: ninguno"
     },
     {
-      "id": "official-export",
+      "id": "attributed-export",
       "pass": true,
-      "evidence": "10/10 cuadernillos exportados"
+      "evidence": "10/10 bancos atribuidos exportados"
     },
     {
-      "id": "official-question-counts",
+      "id": "attributed-question-counts",
       "pass": true,
       "evidence": "Desajustes: ninguno"
     },
@@ -653,10 +653,10 @@
     {
       "id": "icfes-2023-g11",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2023,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -670,15 +670,15 @@
       "guidedStatus": "approved",
       "route": "/practica/icfes-saber-11/examenes/icfes-2023-g11",
       "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado",
-      "source": "ICFES, 2023. Cuadernillo 1, Grado 11."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2023. Cuadernillo 1, Grado 11."
     },
     {
       "id": "icfes-2022-g11",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2022,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -692,15 +692,15 @@
       "guidedStatus": "approved",
       "route": "/practica/icfes-saber-11/examenes/icfes-2022-g11",
       "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado",
-      "source": "ICFES, 2022. Cuadernillo 1, Grado 11."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1, Grado 11."
     },
     {
       "id": "icfes-2019-ex1",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2019,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -715,15 +715,15 @@
       "guidedStatus": "approved",
       "route": "/practica/icfes-saber-11/examenes/icfes-2019-ex1",
       "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado",
-      "source": "ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1."
     },
     {
       "id": "icfes-2021-ex1",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2021,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -738,15 +738,15 @@
       "guidedStatus": "approved",
       "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex1",
       "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado",
-      "source": "ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1."
     },
     {
       "id": "icfes-2021-ex2",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2021,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -762,15 +762,15 @@
       "guidedStatus": "excluded-missing-stimulus",
       "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex2",
       "guidedRoute": null,
-      "source": "ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2."
     },
     {
       "id": "icfes-2016",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2016,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -786,15 +786,15 @@
       "guidedStatus": "excluded-missing-stimulus",
       "route": "/practica/icfes-saber-11/examenes/icfes-2016",
       "guidedRoute": null,
-      "source": "ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés."
     },
     {
       "id": "icfes-2012",
       "family": "saber-11",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2012,
       "grade": 11,
-      "format": "historical-published-sample",
+      "format": "historical-attributed-sample",
       "questions": 45,
       "declaredQuestions": 45,
       "parts": [
@@ -810,15 +810,15 @@
       "guidedStatus": "approved",
       "route": "/practica/icfes-saber-11/examenes/icfes-2012",
       "guidedRoute": "/practica/icfes-saber-11/examenes/icfes-2012/guiado",
-      "source": "ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés."
     },
     {
       "id": "icfes-2022-g10",
       "family": "saber-10",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2022,
       "grade": 10,
-      "format": "related-icfes-assessment",
+      "format": "related-attributed-icfes-assessment",
       "questions": 22,
       "declaredQuestions": 22,
       "parts": [
@@ -831,15 +831,15 @@
       "guidedStatus": "not-saber-11",
       "route": "/practica/icfes-saber-11/examenes/icfes-2022-g10",
       "guidedRoute": null,
-      "source": "ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°"
+      "source": "Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°"
     },
     {
       "id": "icfes-2022-g9",
       "family": "saber-9",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2022,
       "grade": 9,
-      "format": "related-icfes-assessment",
+      "format": "related-attributed-icfes-assessment",
       "questions": 22,
       "declaredQuestions": 22,
       "parts": [
@@ -852,15 +852,15 @@
       "guidedStatus": "not-saber-11",
       "route": "/practica/icfes-saber-11/examenes/icfes-2022-g9",
       "guidedRoute": null,
-      "source": "ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°"
+      "source": "Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°"
     },
     {
       "id": "icfes-tyt",
       "family": "saber-tyt",
-      "provenance": "icfes-published",
+      "provenance": "icfes-attributed-local-bank",
       "year": 2018,
       "grade": null,
-      "format": "related-icfes-assessment",
+      "format": "related-attributed-icfes-assessment",
       "questions": 25,
       "declaredQuestions": 25,
       "parts": [
@@ -873,7 +873,7 @@
       "guidedStatus": "not-saber-11",
       "route": "/practica/icfes-saber-11/examenes/icfes-tyt",
       "guidedRoute": null,
-      "source": "ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés."
+      "source": "Atribución local pendiente de cotejo: ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés."
     },
     {
       "id": "guided-simulacro-2026-55",

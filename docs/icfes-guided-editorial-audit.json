@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T04:24:26.429Z",
+  "generatedAt": "2026-09-09T02:07:12.279Z",
   "scope": {
     "mocks": [
       "mock-01",
@@ -32,8 +32,8 @@
   },
   "verdict": "approved",
   "summary": {
-    "checks": 380,
-    "passed": 380,
+    "checks": 382,
+    "passed": 382,
     "failed": 0,
     "critical": 0,
     "high": 0,
@@ -42,7 +42,7 @@
   "answerPositions": [
     {
       "position": "A",
-      "count": 210
+      "count": 209
     },
     {
       "position": "B",
@@ -54,7 +54,7 @@
     },
     {
       "position": "D",
-      "count": 93
+      "count": 94
     },
     {
       "position": "E",
@@ -3083,6 +3083,22 @@
       "remediation": ""
     },
     {
+      "id": "confirmed-critical-keys",
+      "label": "Las cinco claves críticas confirmadas permanecen corregidas",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "5/5",
+      "remediation": ""
+    },
+    {
+      "id": "mock-21-taj-mahal-facts",
+      "label": "El pasaje crítico del Taj Mahal conserva la cronología y los nombres contrastados",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Datos UNESCO presentes; errores confirmados ausentes",
+      "remediation": ""
+    },
+    {
       "id": "unique-options",
       "label": "Opciones distintas dentro de cada pregunta",
       "pass": true,
@@ -3111,7 +3127,7 @@
       "label": "Distribución de claves sin patrón dominante",
       "pass": true,
       "severity": "pass",
-      "evidence": "A:210 · B:385 · C:298 · D:93 · E:20 · F:14 · G:15",
+      "evidence": "A:209 · B:385 · C:298 · D:94 · E:20 · F:14 · G:15",
       "remediation": ""
     },
     {

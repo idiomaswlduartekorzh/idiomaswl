@@ -50,7 +50,7 @@ export default async function GuidedMockPage({ params }: Props) {
           <ol>{ICFES_PARTS.map((part) => { const count = questions.filter((question) => question.officialPart === part.part).length; return <li key={part.part} style={{ '--map-color': part.color } as React.CSSProperties}><span>Parte {part.part}</span><strong>{part.shortTitle}</strong><small>{count} preguntas</small></li>; })}</ol>
         </section>
         <section className={styles.practiceSection}><div className={styles.sectionHeading}><p className={styles.kicker}>45 preguntas · feedback inmediato</p><h2>El error deja una ruta clara</h2><p>Cada respuesta incorrecta se guarda para que puedas revisarla después y volver a aplicar la habilidad.</p></div><IcfesPartPracticeEngine part={firstPart} questions={questions} context="guided-simulator" progressScope={`guided:${mock.id}:45`} /></section>
-        <section className={styles.sourceSection}><div><span>Fuente</span><p>Preguntas y claves: práctica original de WeLearn. Capa pedagógica: adaptación estructurada para el motor guiado.</p></div><div><span>Alcance</span><p>El porcentaje mide únicamente este test. Consulta los cuadernillos divulgados por el ICFES en el catálogo separado.</p></div></section>
+        <section className={styles.sourceSection}><div><span>Fuente</span><p>Preguntas y claves: práctica original de WeLearn. Capa pedagógica: adaptación estructurada para el motor guiado.</p></div><div><span>Alcance</span><p>El porcentaje mide únicamente este test. Consulta los bancos históricos atribuidos y pendientes de cotejo en el catálogo separado.</p></div></section>
       </div>
     </main>
   );

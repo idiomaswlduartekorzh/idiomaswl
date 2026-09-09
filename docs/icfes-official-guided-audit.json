@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-04T04:24:26.375Z",
+  "generatedAt": "2026-09-09T02:07:28.511Z",
   "scope": {
-    "officialSaber11Samples": [
+    "attributedSaber11Samples": [
       {
         "id": "icfes-2023-g11",
         "year": 2023,
@@ -107,12 +107,12 @@
       "icfes-2016": "Faltan los estímulos de los avisos 1–3 en el banco digital; no se infieren desde la clave."
     },
     "guidedQuestions": 145,
-    "provenanceRule": "Enunciados/opciones/claves: material divulgado por ICFES. Explicaciones: elaboración IdiomasWL."
+    "provenanceRule": "Banco local atribuido a material ICFES, aún sin cotejo primario por ítem. Explicaciones: elaboración IdiomasWL."
   },
   "verdict": "approved",
   "summary": {
-    "checks": 17,
-    "passed": 17,
+    "checks": 19,
+    "passed": 19,
     "failed": 0,
     "critical": 0,
     "high": 0,
@@ -154,8 +154,8 @@
   ],
   "checks": [
     {
-      "id": "official-count",
-      "label": "Siete muestras Saber 11 clasificadas",
+      "id": "attributed-count",
+      "label": "Siete muestras atribuidas a Saber 11 clasificadas",
       "pass": true,
       "severity": "pass",
       "evidence": "7/7",
@@ -178,27 +178,27 @@
       "remediation": ""
     },
     {
-      "id": "official-option-parity",
-      "label": "Opciones y claves idénticas al banco fuente",
+      "id": "source-bank-option-parity",
+      "label": "Opciones y claves idénticas al banco local fuente",
       "pass": true,
       "severity": "pass",
       "evidence": "0 diferencias",
       "remediation": ""
     },
     {
-      "id": "official-part-parity",
-      "label": "Parte histórica preservada por pregunta",
+      "id": "canonical-part-parity",
+      "label": "La taxonomía pedagógica local es explícita y no suplanta el mapa histórico",
       "pass": true,
       "severity": "pass",
-      "evidence": "0 diferencias",
+      "evidence": "0 diferencias · 0 metadatos inválidos",
       "remediation": ""
     },
     {
-      "id": "source-provenance",
-      "label": "Cada pregunta conserva la referencia oficial",
+      "id": "source-provenance-status",
+      "label": "La referencia local no se presenta como verificación independiente",
       "pass": true,
       "severity": "pass",
-      "evidence": "0 referencias inválidas",
+      "evidence": "0 referencias inválidas · 0 manifiestos inválidos",
       "remediation": ""
     },
     {
@@ -258,11 +258,27 @@
       "remediation": ""
     },
     {
-      "id": "dynamic-guided-page",
-      "label": "La ruta usa extensión y partes de cada muestra",
+      "id": "paid-detail-editorial-gate",
+      "label": "Los cuatro defectos atribuidos bloquean el detalle pago sin inventar contenido",
       "pass": true,
       "severity": "pass",
-      "evidence": "Extensión dinámica",
+      "evidence": "4/4 bloqueos activos",
+      "remediation": ""
+    },
+    {
+      "id": "paid-detail-global-policy-gate",
+      "label": "Todo detalle atribuido pago queda bloqueado hasta verificar procedencia y licencia",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "10/10 bloqueados",
+      "remediation": ""
+    },
+    {
+      "id": "dynamic-guided-page",
+      "label": "La ruta usa extensión y mapa pedagógico de cada muestra",
+      "pass": true,
+      "severity": "pass",
+      "evidence": "Extensión y taxonomía local explícitas",
       "remediation": ""
     },
     {

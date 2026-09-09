@@ -45,7 +45,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿Los simulacros de WeLearn son como el ICFES real?',
-      acceptedAnswer: { '@type': 'Answer', text: 'La plataforma usa preguntas de cuadernillos divulgados por el ICFES y conserva sus tipos de tarea. Algunos cuadernillos publicados son muestras más cortas que la aplicación estándar actual; al terminar recibes corrección y revisión.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'La plataforma incluye bancos históricos atribuidos a material ICFES y conserva sus tipos de tarea. Su procedencia por ítem está pendiente de cotejo; al terminar recibes corrección y revisión.' },
     },
     {
       '@type': 'Question',
@@ -142,7 +142,7 @@ const FAQS = [
   },
   {
     q: '¿Los simulacros de WeLearn son como el ICFES real?',
-    a: 'La plataforma usa preguntas de cuadernillos divulgados por el ICFES y conserva sus tipos de tarea. Algunos cuadernillos publicados son muestras más cortas que la aplicación estándar actual; al terminar recibes corrección y revisión.',
+    a: 'La plataforma incluye bancos históricos atribuidos a material ICFES y conserva sus tipos de tarea. Su procedencia por ítem está pendiente de cotejo; al terminar recibes corrección y revisión.',
   },
   {
     q: '¿Necesito saber inglés para empezar la preparación?',
@@ -328,7 +328,7 @@ export default function PreparacionICFESPage() {
                   Haz el simulacro ICFES ahora mismo
                 </h3>
                 <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 460 }}>
-                  Preguntas de cuadernillos divulgados por el ICFES · resultado por sección al instante. La aplicación estándar actual tiene 55 preguntas de Inglés.
+                  Bancos históricos atribuidos a material ICFES · resultado por sección al instante. La atribución por ítem aún está pendiente de cotejo; la aplicación estándar actual tiene 55 preguntas de Inglés.
                 </p>
               </div>
               <Link

@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// ICFES Saber 11 — Cuadernillos divulgados por el ICFES
-// Fuente: Cuadernillos de preguntas publicados por ICFES Colombia
+// ICFES Saber 11 — bancos históricos atribuidos a material ICFES
+// Procedencia: banco local pendiente de cotejo primario por ítem
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type QType = 'vocab' | 'notice' | 'dialog' | 'gap' | 'reading';
@@ -108,8 +108,8 @@ const exam2023: SimulacroSource = {
   assessment: 'saber-11',
   year: 2023,
   grade: 11,
-  title: 'Cuadernillo Oficial 2023 — Grado 11',
-  source: 'ICFES, 2023. Cuadernillo 1, Grado 11.',
+  title: 'Muestra histórica atribuida 2023 — Grado 11',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2023. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -263,8 +263,8 @@ const exam2022: SimulacroSource = {
   assessment: 'saber-11',
   year: 2022,
   grade: 11,
-  title: 'Cuadernillo Oficial 2022 — Grado 11',
-  source: 'ICFES, 2022. Cuadernillo 1, Grado 11.',
+  title: 'Muestra histórica atribuida 2022 — Grado 11',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1, Grado 11.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -410,8 +410,8 @@ const exam2019ex1: SimulacroSource = {
   assessment: 'saber-11',
   year: 2019,
   grade: 11,
-  title: 'Cuadernillo Oficial 2019 — Examen 1',
-  source: 'ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1.',
+  title: 'Muestra histórica atribuida 2019 — Examen 1',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2018–2019. Cuadernillo de preguntas Saber 11°. Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -565,8 +565,8 @@ const exam2021ex1: SimulacroSource = {
   assessment: 'saber-11',
   year: 2021,
   grade: 11,
-  title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 1',
-  source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1.',
+  title: 'Muestra histórica atribuida 2021 — Grado 11 · Examen 1',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 1.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -716,8 +716,8 @@ const exam2021ex2: SimulacroSource = {
   assessment: 'saber-11',
   year: 2021,
   grade: 11,
-  title: 'Cuadernillo Oficial 2021 — Grado 11 · Examen 2',
-  source: 'ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2.',
+  title: 'Muestra histórica atribuida 2021 — Grado 11 · Examen 2',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2021. Cuadernillo de preguntas Saber 11.° Inglés, Examen 2.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -866,8 +866,8 @@ const exam2016: SimulacroSource = {
   assessment: 'saber-11',
   year: 2016,
   grade: 11,
-  title: 'Cuadernillo Oficial 2016 — Grado 11',
-  source: 'ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés.',
+  title: 'Muestra histórica atribuida 2016 — Grado 11',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2016. Cuadernillo de prueba Saber 11°, publicación de preguntas Inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [
@@ -1016,8 +1016,8 @@ const exam2012: SimulacroSource = {
   assessment: 'saber-11',
   year: 2012,
   grade: 11,
-  title: 'Cuadernillo Oficial 2012 — Grado 11 · 45 preguntas',
-  source: 'ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés.',
+  title: 'Muestra histórica atribuida 2012 — Grado 11 · 45 preguntas',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2012. Cuadernillo de pruebas Saber 11°, prueba de Inglés.',
   timeMinutes: 75,
   totalQuestions: 45,
   partRanges: [
@@ -1234,8 +1234,8 @@ const exam2022g10: SimulacroSource = {
   assessment: 'saber-10',
   year: 2022,
   grade: 10,
-  title: 'Cuadernillo Oficial 2022 — Grado 10 · 22 preguntas',
-  source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°',
+  title: 'Muestra histórica atribuida 2022 — Grado 10 · 22 preguntas',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1 Inglés, Saber 10.°',
   timeMinutes: 60,
   totalQuestions: 22,
   partRanges: [
@@ -1361,8 +1361,8 @@ const exam2022g9: SimulacroSource = {
   assessment: 'saber-9',
   year: 2022,
   grade: 9,
-  title: 'Cuadernillo Oficial 2022 — Grado 9 · 22 preguntas',
-  source: 'ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°',
+  title: 'Muestra histórica atribuida 2022 — Grado 9 · 22 preguntas',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2022. Cuadernillo 1 Inglés, Saber 9.°',
   timeMinutes: 60,
   totalQuestions: 22,
   partRanges: [
@@ -1480,8 +1480,8 @@ const examTyT: SimulacroSource = {
   assessment: 'saber-tyt',
   year: 2018,
   grade: null,
-  title: 'Cuadernillo Oficial Saber TyT · Módulo Inglés',
-  source: 'ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.',
+  title: 'Muestra histórica atribuida Saber TyT · Módulo Inglés',
+  source: 'Atribución local pendiente de cotejo: ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.',
   timeMinutes: 60,
   totalQuestions: 25,
   partRanges: [

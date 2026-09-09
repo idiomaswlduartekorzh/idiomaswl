@@ -64,7 +64,7 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
           <p className="wl-exam-hero__sub">{isIcfes ? '34 recursos únicos para practicar las 7 partes del componente de Inglés.' : exam.tagline}</p>
           <p className="wl-exam-hero__desc">
             {isIcfes
-              ? 'Empieza con un simulacro de inglés ICFES de 55 preguntas o elige entre 23 prácticas propias abreviadas y 10 cuadernillos divulgados por el ICFES. Son materiales de entrenamiento: no predicen un puntaje oficial.'
+              ? 'Empieza con un simulacro de inglés ICFES de 55 preguntas o elige entre 23 prácticas propias abreviadas y 10 bancos históricos atribuidos a material ICFES. Son materiales de entrenamiento: no predicen un puntaje oficial ni implican afiliación o aval.'
               : exam.description}
           </p>
 

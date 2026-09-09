@@ -205,7 +205,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Simulacros ICFES oficiales</strong>: el ICFES publica cuadernillos de exámenes anteriores en su página oficial.</li>
   <li><strong>Newsela (newsela.com)</strong>: artículos de noticias reales adaptados por nivel de lectura. Ideal para construir velocidad lectora.</li>
-  <li><strong><a href="/examenes/icfes">Simulacros ICFES Inglés en WeLearn</a></strong>: 34 recursos únicos entre prácticas propias, cuadernillos divulgados y un simulacro guiado de 55 preguntas.</li>
+  <li><strong><a href="/examenes/icfes">Simulacros ICFES Inglés en WeLearn</a></strong>: 34 recursos únicos entre prácticas propias, bancos históricos atribuidos y un simulacro guiado de 55 preguntas.</li>
 </ul>
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
@@ -1315,7 +1315,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h3>Mes 3: Simulacros completos y ajuste</h3>
 <ul>
-  <li>1 bloque o simulacro por semana, respetando el tamaño del cuadernillo publicado que estés usando.</li>
+  <li>1 bloque o simulacro por semana, respetando el tamaño del recurso de práctica que estés usando.</li>
   <li>Analiza los errores de cada simulacro y compara con los errores del mes anterior. El progreso debe ser visible.</li>
   <li>2 semanas antes del examen: practica en condiciones reales (mismo horario, sin pausas, sin ayudas).</li>
 </ul>
@@ -1323,7 +1323,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Cuánto sube el puntaje con preparación estructurada</h2>
 <p>El avance depende del punto de partida, la frecuencia de práctica y la calidad del análisis de errores. Mide el progreso con bloques comparables y ajusta el plan según la habilidad, no según una promesa comercial.</p>
 <p>Si necesitas certificar B2, debes usar un examen internacional o el instrumento que acepte la institución correspondiente; Saber 11 reporta hasta B1.</p>
-<p>Si quieres prepararte con acompañamiento de un tutor y un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>. Si prefieres medirte primero, abre el <a href="/examenes/icfes">catálogo de simulacros ICFES Inglés</a>: diferencia prácticas propias, cuadernillos divulgados y el recorrido guiado de 55 preguntas.</p>
+<p>Si quieres prepararte con acompañamiento de un tutor y un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>. Si prefieres medirte primero, abre el <a href="/examenes/icfes">catálogo de simulacros ICFES Inglés</a>: diferencia prácticas propias, bancos históricos atribuidos y el recorrido guiado de 55 preguntas.</p>
 <p>Lee también: <a href="/blog/puntaje-icfes-ingles-niveles-y-como-mejorar">Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
@@ -4855,11 +4855,11 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <table>
   <thead><tr><th>Semanas</th><th>Objetivo</th><th>Actividades</th></tr></thead>
   <tbody>
-    <tr><td>1–2</td><td>Diagnóstico y vocabulario básico</td><td>Hacer un diagnóstico y un cuadernillo divulgado. Identificar vocabulario desconocido. Listas A1–A2.</td></tr>
+    <tr><td>1–2</td><td>Diagnóstico y vocabulario básico</td><td>Hacer un diagnóstico y una muestra histórica atribuida. Identificar vocabulario desconocido. Listas A1–A2.</td></tr>
     <tr><td>3–4</td><td>Gramática funcional para Reading</td><td>Tiempos verbales (presente, pasado, presente perfecto). Conectores y coherencia.</td></tr>
     <tr><td>5–6</td><td>Vocabulario A2–B1</td><td>Estudio de listas de vocabulario frecuente (Longman 3000, Word frequency lists). Lectura de textos A2.</td></tr>
     <tr><td>7–8</td><td>Estrategias de lectura</td><td>Skimming y scanning. Identificar ideas principales sin leer todo el texto. Textos B1.</td></tr>
-    <tr><td>9–10</td><td>Cuadernillos ICFES</td><td>Resolver dos cuadernillos divulgados con su extensión original y revisar los errores.</td></tr>
+    <tr><td>9–10</td><td>Muestras históricas</td><td>Resolver dos bancos atribuidos con su extensión local y revisar los errores.</td></tr>
     <tr><td>11</td><td>Vocabulario específico en contextos académicos</td><td>Textos sobre ciencia, historia, tecnología (los más frecuentes en ICFES).</td></tr>
     <tr><td>12</td><td>Simulacro final + ajuste</td><td>Prueba oficial anterior. Revisar solo los tipos de preguntas donde más fallas.</td></tr>
   </tbody>
@@ -6221,7 +6221,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Ya sabes las palabras. Ahora comprueba si te sirven</h2>
 <p>Memorizar una lista y reconocer esas mismas palabras dentro de un texto, a contrarreloj, son dos cosas distintas. La segunda es la que evalúa el examen.</p>
-<p>En el <a href="/examenes/icfes"><strong>catálogo gratuito de simulacros ICFES Inglés</strong></a> puedes distinguir 23 prácticas propias abreviadas, 10 cuadernillos divulgados por el ICFES y un simulacro guiado propio de 55 preguntas. Los resultados de práctica sirven para comparar intentos dentro de cada recurso; no predicen el puntaje oficial ni certifican un nivel.</p>
+<p>En el <a href="/examenes/icfes"><strong>catálogo gratuito de simulacros ICFES Inglés</strong></a> puedes distinguir 23 prácticas propias abreviadas, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado propio de 55 preguntas. La atribución por ítem de esos bancos está pendiente de cotejo. Los resultados de práctica sirven para comparar intentos dentro de cada recurso; no predicen el puntaje oficial ni certifican un nivel.</p>
 <p>Si al hacerlo descubres que el problema no es el vocabulario sino la velocidad de lectura o los conectores, tenemos práctica específica para eso: <a href="/practica/icfes-saber-11/sinonimos-inferencia">sinónimos e inferencia</a> y <a href="/practica/icfes-saber-11/gramatica-conjunciones">conectores y conjunciones</a>, que son los dos tipos de pregunta que más se fallan en la segunda mitad de la prueba.</p>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>

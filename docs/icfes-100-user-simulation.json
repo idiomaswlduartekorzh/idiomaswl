@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T04:22:46.259Z",
+  "generatedAt": "2026-09-09T02:08:43.314Z",
   "methodology": {
     "kind": "deterministic-synthetic-cohort",
     "runtime": true,
@@ -69,231 +69,231 @@
     {
       "route": "/practica/icfes-saber-11",
       "status": 200,
-      "title": "ICFES Inglés Saber 11: guía, 7 partes, práctica y simulacros · Idiomas WeLearn",
+      "title": "Cómo resolver las 7 partes de Inglés Saber 11",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-1",
       "status": 200,
-      "title": "Parte 1 ICFES Inglés: vocabulario, estrategia y práctica · Idiomas WeLearn",
+      "title": "Parte 1 ICFES Inglés: vocabulario, estrategia y práctica",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-2",
       "status": 200,
-      "title": "Parte 2 ICFES Inglés: avisos y señales con ejercicios · Idiomas WeLearn",
+      "title": "Parte 2 ICFES Inglés: avisos y señales con ejercicios",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-3",
       "status": 200,
-      "title": "Parte 3 ICFES Inglés: conversaciones y respuestas correctas · Idiomas WeLearn",
+      "title": "Parte 3 ICFES Inglés: conversaciones y respuestas correctas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-4",
       "status": 200,
-      "title": "Parte 4 ICFES Inglés: gramática y cloze explicado · Idiomas WeLearn",
+      "title": "Parte 4 ICFES Inglés: gramática y cloze explicado",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-5",
       "status": 200,
-      "title": "Parte 5 ICFES Inglés: comprensión de lectura literal · Idiomas WeLearn",
+      "title": "Parte 5 ICFES Inglés: comprensión de lectura literal",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-6",
       "status": 200,
-      "title": "Parte 6 ICFES Inglés: inferencia, propósito e intención · Idiomas WeLearn",
+      "title": "Parte 6 ICFES Inglés: inferencia, propósito e intención",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/parte-7",
       "status": 200,
-      "title": "Parte 7 ICFES Inglés: cloze, vocabulario y gramática · Idiomas WeLearn",
+      "title": "Parte 7 ICFES Inglés: cloze, vocabulario y gramática",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/vocabulario",
       "status": 200,
-      "title": "Vocabulario para ICFES Inglés: palabras, conectores y práctica · Idiomas WeLearn",
+      "title": "Vocabulario de inglés para el ICFES: palabras y conectores",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/sinonimos-inferencia",
       "status": 200,
-      "title": "Ejercicios ICFES Inglés: Sinónimos e Inferencia | Saber 11 · Idiomas WeLearn",
+      "title": "Ejercicios ICFES Inglés: Sinónimos e Inferencia | Saber 11",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/simulacro-guiado",
       "status": 200,
-      "title": "Simulacro guiado ICFES Inglés: 55 preguntas explicadas · Idiomas WeLearn",
+      "title": "Simulacro guiado ICFES Inglés: 55 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes",
       "status": 200,
-      "title": "Cuadernillos ICFES Inglés: práctica oficial explicada · Idiomas WeLearn",
+      "title": "Muestras históricas ICFES Inglés: catálogo atribuido",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes/icfes-2023-g11/guiado",
       "status": 200,
-      "title": "Cuadernillo Oficial 2023 — Grado 11: práctica guiada con explicaciones · Idiomas WeLearn",
+      "title": "Muestra histórica atribuida 2023 — Grado 11: práctica guiada con explicaciones",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes/icfes-2022-g11/guiado",
       "status": 200,
-      "title": "Cuadernillo Oficial 2022 — Grado 11: práctica guiada con explicaciones · Idiomas WeLearn",
+      "title": "Muestra histórica atribuida 2022 — Grado 11: práctica guiada con explicaciones",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes/icfes-2019-ex1/guiado",
       "status": 200,
-      "title": "Cuadernillo Oficial 2019 — Examen 1: práctica guiada con explicaciones · Idiomas WeLearn",
+      "title": "Muestra histórica atribuida 2019 — Examen 1: práctica guiada con explicaciones",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes/icfes-2021-ex1/guiado",
       "status": 200,
-      "title": "Cuadernillo Oficial 2021 — Grado 11 · Examen 1: práctica guiada con explicaciones · Idiomas WeLearn",
+      "title": "Muestra histórica atribuida 2021 — Grado 11 · Examen 1: práctica guiada con explicaciones",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/examenes/icfes-2012/guiado",
       "status": 200,
-      "title": "Cuadernillo Oficial 2012 — Grado 11 · 45 preguntas: práctica guiada con explicaciones · Idiomas WeLearn",
+      "title": "Muestra histórica atribuida 2012 — Grado 11 · 45 preguntas: práctica guiada con explicaciones",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-01/guiado",
       "status": 200,
-      "title": "Mock 1 · Lugares, personas y comunidad guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 1 · Lugares, personas y comunidad guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-02/guiado",
       "status": 200,
-      "title": "Mock 2 · Viajes y transporte guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 2 · Viajes y transporte guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-03/guiado",
       "status": 200,
-      "title": "Mock 3 · Salud y cuerpo guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 3 · Salud y cuerpo guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-04/guiado",
       "status": 200,
-      "title": "Mock 4 · Escuela y educación guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 4 · Escuela y educación guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-05/guiado",
       "status": 200,
-      "title": "Mock 5 · Comida y nutrición guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 5 · Comida y nutrición guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-06/guiado",
       "status": 200,
-      "title": "Mock 6 · Medio ambiente guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 6 · Medio ambiente guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-07/guiado",
       "status": 200,
-      "title": "Mock 7 · Tecnología e internet guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 7 · Tecnología e internet guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-08/guiado",
       "status": 200,
-      "title": "Mock 8 · Familia y hogar guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 8 · Familia y hogar guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-09/guiado",
       "status": 200,
-      "title": "Mock 9 · Trabajo y carrera guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 9 · Trabajo y carrera guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-10/guiado",
       "status": 200,
-      "title": "Mock 10 · Compras y dinero guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 10 · Compras y dinero guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-11/guiado",
       "status": 200,
-      "title": "Mock 11 · Deportes y ejercicio guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 11 · Deportes y ejercicio guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-12/guiado",
       "status": 200,
-      "title": "Mock 12 · Animales y naturaleza guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 12 · Animales y naturaleza guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-13/guiado",
       "status": 200,
-      "title": "Mock 13 · Arte y cultura guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 13 · Arte y cultura guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-14/guiado",
       "status": 200,
-      "title": "Mock 14 · Clima y estaciones guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 14 · Clima y estaciones guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/examenes/icfes/practica/mock-15/guiado",
       "status": 200,
-      "title": "Mock 15 · Redes sociales y comunicación guiado: 45 preguntas explicadas · Idiomas WeLearn",
+      "title": "Mock 15 · Redes sociales y comunicación guiado: 45 preguntas explicadas",
       "hasMain": true,
       "hasDescription": true
     },
     {
       "route": "/practica/icfes-saber-11/repaso-errores",
       "status": 200,
-      "title": "Repaso de errores ICFES Inglés: evidencia y refuerzo · Idiomas WeLearn",
+      "title": "Repaso de errores ICFES Inglés: evidencia y refuerzo",
       "hasMain": true,
       "hasDescription": true
     }
@@ -389,12 +389,12 @@
       "remediation": "No presentar un mock propio como cuadernillo oficial."
     },
     {
-      "id": "official-practice-truth",
-      "title": "Las muestras oficiales preservan procedencia y alcance histórico",
+      "id": "attributed-practice-truth",
+      "title": "Las muestras atribuidas declaran procedencia y alcance histórico",
       "pass": true,
       "severity": "critical",
-      "evidence": "Fuente, autoría de explicación y límite visibles",
-      "remediation": "Separar material divulgado y explicación propia."
+      "evidence": "Atribución, autoría de explicación y límites visibles",
+      "remediation": "Separar el banco atribuido y la explicación propia."
     },
     {
       "id": "guided-inventory-reach",

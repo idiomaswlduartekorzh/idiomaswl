@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.idiomaswl.com/schemas/icfes-own-mock-expansion-v1.json",
+  "title": "ICFES own-mock expansion manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "productId", "policy", "mocks"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "productId": { "const": "icfes-saber-11-english" },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["questionCount", "parts", "provenanceKind", "allowedEditorialStates", "allowedReleaseStates", "requiredQualityGates"],
+      "properties": {
+        "questionCount": { "const": 45 },
+        "parts": { "const": [1, 2, 3, 4, 5, 6, 7] },
+        "provenanceKind": { "const": "welearn-original" },
+        "allowedEditorialStates": { "const": ["draft", "in-review", "approved", "rejected"] },
+        "allowedReleaseStates": { "const": ["draft", "approved", "release-candidate", "published"] },
+        "requiredQualityGates": {
+          "type": "array",
+          "minItems": 8,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "mocks": {
+      "type": "array",
+      "minItems": 23,
+      "maxItems": 23,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["mockId", "modulePath", "route", "contentVersion", "contentHash", "provenance", "editorial", "releaseStatus"],
+        "properties": {
+          "mockId": { "pattern": "^mock-(0[1-9]|1[0-9]|2[0-3])$" },
+          "modulePath": { "pattern": "^src/data/mocks/icfes-mock-(0[1-9]|1[0-9]|2[0-3])\\.ts$" },
+          "route": { "pattern": "^/examenes/icfes/practica/mock-(0[1-9]|1[0-9]|2[0-3])$" },
+          "contentVersion": { "pattern": "^2026-09-08\\.[1-9][0-9]*$" },
+          "contentHash": { "pattern": "^[a-f0-9]{64}$" },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "owner", "rights", "authoringRecord"],
+            "properties": {
+              "kind": { "const": "welearn-original" },
+              "owner": { "const": "Idiomas WeLearn" },
+              "rights": { "const": "owned-content" },
+              "authoringRecord": { "type": "string", "minLength": 1 }
+            }
+          },
+          "editorial": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "reviewedAt", "reviewerRoles", "remediationRecord"],
+            "properties": {
+              "status": { "const": "approved" },
+              "reviewedAt": { "format": "date" },
+              "reviewerRoles": {
+                "const": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"]
+              },
+              "remediationRecord": { "type": "string", "minLength": 1 }
+            }
+          },
+          "releaseStatus": { "enum": ["release-candidate", "published"] }
+        }
+      }
+    }
+  }
+}
