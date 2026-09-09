@@ -29,6 +29,14 @@ const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number
   6: { src: '/images/goethe/a1-1/hoeren-teil1-06-reise.png', alt: 'Drei Reisedauern: zwei Nächte, drei Nächte oder eine Woche', width: 2036, height: 772 },
 };
 
+const READING_AD_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+  6: { src: '/images/goethe/a1-1/lesen-teil2-06-fahrrad.png', alt: 'Anzeigen A und B: Fahrradgeschäft mit Werkstatt und geführte Fahrradtour durch die Stadt', width: 1536, height: 1024 },
+  7: { src: '/images/goethe/a1-1/lesen-teil2-07-deutschkurs.png', alt: 'Anzeigen A und B: Deutschkurs für Erwachsene und Buchhandlung mit Lernbüchern', width: 1536, height: 1024 },
+  8: { src: '/images/goethe/a1-1/lesen-teil2-08-fruehstueck.png', alt: 'Anzeigen A und B: Gästezimmer mit Frühstück und Frühstücksbuffet im Restaurant', width: 1536, height: 1024 },
+  9: { src: '/images/goethe/a1-1/lesen-teil2-09-tickets.png', alt: 'Anzeigen A und B: Theater- und Konzertkasse und Reisebüro für Zug, Flug und Hotel', width: 1536, height: 1024 },
+  10: { src: '/images/goethe/a1-1/lesen-teil2-10-apotheke.png', alt: 'Anzeigen A und B: Arztpraxis am Tag und geöffnete Apotheke in der Nacht', width: 1536, height: 1024 },
+};
+
 const LISTENING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; note: string }> = {
   1: { question: 'Wann kommt der Mann heute?', options: ['9 Uhr', '10 Uhr', 'morgen um 9 Uhr'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
   2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
@@ -60,20 +68,23 @@ function itemNumber(question: MCQQuestion) {
   return Number(question.id.match(/(\d+)$/)?.[1] ?? 0);
 }
 
-function ObjectiveItem({ question, number, value, onChange, showResult, visual }: {
+function ObjectiveItem({ question, number, value, onChange, showResult, visual, readingAd }: {
   question: MCQQuestion;
   number: number;
   value?: number;
   onChange: (value: number) => void;
   showResult?: boolean;
   visual?: boolean;
+  readingAd?: boolean;
 }) {
   const visualPlate = visual ? LISTENING_PLATES[number] : undefined;
+  const readingAdPlate = readingAd ? READING_AD_PLATES[number] : undefined;
   return (
     <fieldset className={styles.question}>
       <legend><span className={styles.questionNumber}>{number}</span>{question.text}</legend>
       {visualPlate && <Image className={styles.answerPlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
       {question.stimulusLabel && <p className={styles.contextLabel}>{question.stimulusLabel}</p>}
+      {readingAdPlate && <Image className={styles.readingAdPlate} src={readingAdPlate.src} alt={readingAdPlate.alt} width={readingAdPlate.width} height={readingAdPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
       {question.stimulus && (
         <div className={question.stimulusStyle === 'sign' ? styles.sign : styles.adPair}>
           {question.stimulus.split('\n\n').map((block, index) => <div key={index}>{block}</div>)}
@@ -206,7 +217,7 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
         <ResolvedExample {...READING_EXAMPLES[section.part]} />
       )}
       <div className={styles.questionList}>
-        {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} />)}
+        {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAd={section.part === 5} />)}
       </div>
     </SectionShell>
   ))}</>;

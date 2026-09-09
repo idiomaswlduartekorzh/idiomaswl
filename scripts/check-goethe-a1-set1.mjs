@@ -31,7 +31,7 @@ assert.match(audioManifest.generatedWith, /ElevenLabs v3/, 'production audio mus
 assert.ok(fs.existsSync(voiceSourceDir), 'natural voice sources are missing');
 assert.equal(fs.readdirSync(voiceSourceDir).filter(name => name.endsWith('.mp3')).length, 28, 'expected 28 natural voice source clips');
 assert.ok(fs.existsSync(imageDir), 'exam illustration directory is missing');
-assert.equal(fs.readdirSync(imageDir).filter(name => name.endsWith('.png')).length, 8, 'expected six listening plates and two speaking card sheets');
+assert.equal(fs.readdirSync(imageDir).filter(name => name.endsWith('.png')).length, 13, 'expected six listening plates, five reading ad pairs and two speaking card sheets');
 for (const name of fs.readdirSync(imageDir).filter(file => file.endsWith('.png'))) {
   assert.ok(fs.statSync(path.join(imageDir, name)).size > 100_000, `${name} is unexpectedly small`);
 }
@@ -47,4 +47,4 @@ const complete = audioManifest.outputs.find(output => output.file.endsWith('/hoe
 assert.ok(complete.durationSeconds >= 1020 && complete.durationSeconds <= 1200, `complete listening audio must be 17–20 minutes, got ${complete.durationSeconds}s`);
 
 console.log('✓ Goethe A1 Set 1: 11 partes, Hören 15, Lesen 15, Schreiben 5+10, Sprechen 3+6+6');
-console.log(`✓ Audio completo: ${(complete.durationSeconds / 60).toFixed(2)} min · 19 assets verificados · 8 láminas visuales`);
+console.log(`✓ Audio completo: ${(complete.durationSeconds / 60).toFixed(2)} min · 19 assets verificados · 13 láminas visuales`);
