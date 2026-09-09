@@ -152,6 +152,7 @@
     "report:ielts-audio-status": "node --experimental-strip-types --no-warnings scripts/report-ielts-audio-production-status.mjs",
     "report:ielts-legacy-audit": "node --experimental-strip-types --no-warnings scripts/build-ielts-legacy-audit-report.mjs",
     "report:ielts-legacy-replacement-review": "node --experimental-strip-types --no-warnings scripts/build-ielts-legacy-replacement-review.mjs",
+    "record:ielts-legacy-replacement-approval": "node --experimental-strip-types --no-warnings scripts/record-ielts-legacy-replacement-approval.mjs",
     "scaffold:ielts-audio-human-review": "node --experimental-strip-types --no-warnings scripts/scaffold-ielts-audio-human-review.mjs",
     "audit:ielts-audio-timing": "node scripts/audit-ielts-audio-timing.mjs",
     "publish:ielts-audio": "node scripts/publish-ielts-audio.mjs",

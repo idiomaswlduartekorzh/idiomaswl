@@ -22,6 +22,7 @@ const legacyReplacementManifest = readJson(path.join(root, 'config/ielts-audio/l
 const castingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'))).digest('hex');
 const legacyReplacementCastingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/legacy-replacement-casting.json'))).digest('hex');
 const batchApproval = readJson(path.join(root, 'config/ielts-audio/batch-quality-approval.json'));
+const legacyReplacementApproval = readJson(path.join(root, 'config/ielts-audio/legacy-replacement-quality-approval.json'));
 const legacyDecision = readJson(path.join(root, 'config/ielts-audio/legacy-audio-audit-decision.json'));
 const { approvalSha256, ...batchApprovalCore } = batchApproval ?? {};
 const computedApprovalSha256 = createHash('sha256').update(JSON.stringify(batchApprovalCore)).digest('hex');
@@ -31,6 +32,14 @@ assert.equal(batchApproval.productionManifestSha256, manifest.manifestSha256, 'B
 assert.equal(batchApproval.repairManifestSha256, repairManifest.repairManifestSha256, 'Batch quality approval belongs to a stale repair manifest');
 assert.equal(batchApproval.castingSha256, castingSha256, 'Batch quality approval belongs to a stale casting and assembly policy');
 const qualityApprovalBySet = new Map(batchApproval.files.map(file => [file.set, file]));
+const { approvalSha256: legacyReplacementApprovalSha256, ...legacyReplacementApprovalCore } = legacyReplacementApproval ?? {};
+const computedLegacyReplacementApprovalSha256 = createHash('sha256').update(JSON.stringify(legacyReplacementApprovalCore)).digest('hex');
+assert.equal(legacyReplacementApprovalSha256, computedLegacyReplacementApprovalSha256, 'Legacy replacement quality approval digest is stale');
+assert.equal(legacyReplacementApproval.status, 'APPROVED', 'Legacy replacement quality approval is not approved');
+assert.equal(legacyReplacementApproval.manifestSha256, legacyReplacementManifest.manifestSha256, 'Legacy replacement quality approval belongs to a stale manifest');
+assert.equal(legacyReplacementApproval.castingSha256, legacyReplacementCastingSha256, 'Legacy replacement quality approval belongs to stale casting');
+assert.equal(legacyReplacementApproval.releaseAuthorized, false, 'Quality approval must not authorize release');
+const legacyReplacementQualityApprovalBySet = new Map(legacyReplacementApproval.files.map(file => [file.set, file]));
 const { decisionSha256, ...legacyDecisionCore } = legacyDecision ?? {};
 const computedLegacyDecisionSha256 = createHash('sha256').update(JSON.stringify(legacyDecisionCore)).digest('hex');
 assert.equal(decisionSha256, computedLegacyDecisionSha256, 'Legacy audio audit decision digest is stale');
@@ -119,7 +128,9 @@ const rows = manifest.rows.map(row => {
     ? { source: 'STAGED_NEW', audioSha256: produced.file.audioSha256 }
     : repairPassed ? { source: 'STAGED_REPAIR', audioSha256: repaired.file.sha256 }
       : legacyReplacementPassed ? { source: 'STAGED_LEGACY_REPLACEMENT', audioSha256: legacyReplacement.file.audioSha256 } : null;
-  const qualityApproval = qualityApprovalBySet.get(row.set);
+  const qualityApproval = currentStaged?.source === 'STAGED_LEGACY_REPLACEMENT'
+    ? legacyReplacementQualityApprovalBySet.get(row.set)
+    : qualityApprovalBySet.get(row.set);
   const audioQualityApproved = Boolean(currentStaged)
     && qualityApproval?.source === currentStaged.source
     && qualityApproval?.audioSha256 === currentStaged.audioSha256;
@@ -153,12 +164,14 @@ const rows = manifest.rows.map(row => {
     durationSeconds = audioDuration(repaired.file.path);
     nextAction = 'Escucha humana completa Q1–Q40 de la reparación; después publicar por hash.';
   } else if (legacyReplacementPassed) {
-    state = 'AUTO_QA_PASS_PENDING_HUMAN';
+    state = audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
     source = 'STAGED_LEGACY_REPLACEMENT';
     completionEvidence = legacyReplacement.qa.effectiveCompletionEvidence;
     wordErrorRate = legacyReplacement.qa.effectiveWordErrorRate ?? legacyReplacement.qa.globalAsr?.wordErrorRate ?? null;
     durationSeconds = legacyReplacement.technicalFile?.durationSeconds ?? null;
-    nextAction = 'Escucha humana del reemplazo; después registrar aprobación por hash antes de publicar.';
+    nextAction = audioQualityApproved
+      ? 'Calidad auditiva aprobada por hash; falta autorización separada para publicar.'
+      : 'Escucha humana del reemplazo; después registrar aprobación por hash antes de publicar.';
   } else if (legacyReplacementRecommended) {
     state = 'LEGACY_REPLACE_RECOMMENDED';
     nextAction = 'Reconstruir el guion, generar en staging y repetir QA automático antes de escucha humana.';
@@ -189,6 +202,7 @@ const report = {
   productionManifestSha256: manifest.manifestSha256,
   repairManifestSha256: repairManifest.repairManifestSha256,
   legacyReplacementManifestSha256: legacyReplacementManifest.manifestSha256,
+  legacyReplacementQualityApprovalSha256: legacyReplacementApprovalSha256,
   castingSha256,
   legacyReplacementCastingSha256,
   publicAudioChanged: false,
@@ -225,7 +239,7 @@ const markdown = [
   `QA automático completo en staging: **${report.summary.automatedQaPassed}/20 sets**`,
   `Calidad auditiva del lote aprobada por el propietario: **${report.summary.audioQualityApproved}/20 sets**`,
   `Audios heredados con reemplazo recomendado: **${report.summary.legacyReplacementRecommended}/7 sets auditados**`,
-  'Publicación: **0/20**; todos requieren escucha humana y el audio público permanece sin cambios.',
+  'Publicación: **0/20**; el audio público permanece sin cambios y requiere autorización separada.',
   '',
   '| Set | Estado de audio | Fuente | Min | Guion L | Respuestas | WER | Reading | Writing T1/T2 | Imagen T1 | Próxima acción |',
   '|---:|---|---|---:|---:|---:|---:|---:|---|---|---|',
