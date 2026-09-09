@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "status": "PUBLISHED",
+  "publishedAt": "2026-09-09T21:58:53.020Z",
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "qualityApprovalSha256": "aab3a6fb741043d23b54fa08193428468f289a3fc0ec54aada669f4a50129902",
+  "authorization": {
+    "kind": "human",
+    "reviewerId": "owner",
+    "approvedCopyCount": 7,
+    "cliGate": "--approve-copy=7"
+  },
+  "files": [
+    {
+      "set": 5,
+      "audioUrl": "/audio/ielts/ielts-listening-set-5.mp3",
+      "previousSha256": "2e8bdbcb3e039a126cf9cc4217419400f7c776fc794c142b675e1a8834d748b1",
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 6,
+      "audioUrl": "/audio/ielts/ielts-listening-set-6.mp3",
+      "previousSha256": "0d77c961a13d9bb15c5e08a6ff3bad963e1b03faa2af6e6dff1c7d8b46c8b999",
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 7,
+      "audioUrl": "/audio/ielts/ielts-listening-set-7.mp3",
+      "previousSha256": "cd28eaf245c0d3c36161f79d5c07e83f174c6f71c1d89b8a597a2cd5ba9deb30",
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 8,
+      "audioUrl": "/audio/ielts/ielts-listening-set-8.mp3",
+      "previousSha256": "74b1959ca0a8f3ed63a1f272cd5ecd01a673abdf339add92f50a39f59848a964",
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 10,
+      "audioUrl": "/audio/ielts/ielts-listening-set-10.mp3",
+      "previousSha256": "48c215c1e9907887e411d411fbc84edac4a1f93dd9f765b5720b0fce2bff8fd6",
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 11,
+      "audioUrl": "/audio/ielts/ielts-listening-set-11.mp3",
+      "previousSha256": "ad214fe5e15c0827064bc14169ffdc4434443042c68ebbc5a9b06d6cf206eca9",
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "result": "PUBLISHED"
+    },
+    {
+      "set": 12,
+      "audioUrl": "/audio/ielts/ielts-listening-set-12.mp3",
+      "previousSha256": "cdf589ad5d524b4ab02b0794e014c9e7b28e7b3b50789b0ab7e0eeee4756be68",
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "result": "PUBLISHED"
+    }
+  ],
+  "releaseAuthorized": true,
+  "receiptSha256": "2cb16bff203e16a119003ae13256f43072dc87305fe1c9999b6e927811ac7d0a"
+}

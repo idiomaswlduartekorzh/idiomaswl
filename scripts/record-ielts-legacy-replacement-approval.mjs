@@ -13,8 +13,7 @@ const write = process.argv.includes('--write');
 for (const argument of process.argv.slice(2)) assert.equal(argument, '--write', `Unknown argument: ${argument}`);
 
 const review = JSON.parse(readFileSync(reviewPath, 'utf8'));
-assert.equal(review.status, 'AUTOMATIC_QA_PASS_PENDING_HUMAN_REVIEW');
-assert.equal(review.releaseAuthorized, false);
+assert.ok(['AUTOMATIC_QA_PASS_PENDING_HUMAN_REVIEW', 'QUALITY_APPROVED_PENDING_PUBLICATION', 'PUBLISHED'].includes(review.status));
 assert.equal(review.sets.length, 7);
 assert.ok(review.sets.every(row => row.technicalStatus === 'PASS' && row.asrStatus === 'PASS' && row.completionEvidence === '33/33'));
 

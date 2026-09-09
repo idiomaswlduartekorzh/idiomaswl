@@ -12,6 +12,8 @@ const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/legacy-rep
 const castingSha256 = sha256(castingBytes);
 const productionRoot = path.join(root, 'output', manifest.outputNamespace, manifest.manifestSha256);
 const outputRoot = path.join(root, 'output/ielts-legacy-replacement-review-2026-09-09');
+const qualityApprovalPath = path.join(root, 'config/ielts-audio/legacy-replacement-quality-approval.json');
+const publishReceiptPath = path.join(root, 'config/ielts-audio/legacy-replacement-publish-receipt.json');
 
 const reviewChecks = {
   5: [
@@ -103,10 +105,36 @@ function loadSet(set) {
 }
 
 const sets = manifest.rows.map(row => loadSet(row.set));
+const qualityApproval = existsSync(qualityApprovalPath) ? JSON.parse(readFileSync(qualityApprovalPath, 'utf8')) : null;
+const publishReceipt = existsSync(publishReceiptPath) ? JSON.parse(readFileSync(publishReceiptPath, 'utf8')) : null;
+let qualityApproved = false;
+if (qualityApproval) {
+  const { approvalSha256, ...approvalCore } = qualityApproval;
+  assert.equal(sha256(JSON.stringify(approvalCore)), approvalSha256);
+  assert.equal(qualityApproval.manifestSha256, manifest.manifestSha256);
+  assert.equal(qualityApproval.castingSha256, castingSha256);
+  qualityApproved = sets.every(row => qualityApproval.files.some(file => file.set === row.set && file.audioSha256 === row.audioSha256));
+}
+let published = false;
+if (publishReceipt) {
+  const { receiptSha256, ...receiptCore } = publishReceipt;
+  assert.equal(sha256(JSON.stringify(receiptCore)), receiptSha256);
+  assert.equal(publishReceipt.manifestSha256, manifest.manifestSha256);
+  assert.equal(publishReceipt.castingSha256, castingSha256);
+  assert.equal(publishReceipt.qualityApprovalSha256, qualityApproval?.approvalSha256);
+  assert.equal(publishReceipt.releaseAuthorized, true);
+  published = sets.every(row => {
+    const receipt = publishReceipt.files.find(file => file.set === row.set);
+    const publicPath = path.join(root, 'public', manifest.rows.find(item => item.set === row.set).audioUrl);
+    return receipt?.audioSha256 === row.audioSha256
+      && existsSync(publicPath)
+      && sha256(readFileSync(publicPath)) === row.audioSha256;
+  });
+}
 const reportCore = {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
-  status: 'AUTOMATIC_QA_PASS_PENDING_HUMAN_REVIEW',
+  status: published ? 'PUBLISHED' : qualityApproved ? 'QUALITY_APPROVED_PENDING_PUBLICATION' : 'AUTOMATIC_QA_PASS_PENDING_HUMAN_REVIEW',
   manifestSha256: manifest.manifestSha256,
   castingSha256,
   modelId: 'eleven_flash_v2_5',
@@ -117,7 +145,9 @@ const reportCore = {
     protectedReserveCredits: 5000,
   },
   sets,
-  releaseAuthorized: false,
+  qualityApprovalSha256: qualityApproval?.approvalSha256 ?? null,
+  publishReceiptSha256: publishReceipt?.receiptSha256 ?? null,
+  releaseAuthorized: published,
 };
 const report = { ...reportCore, reportSha256: sha256(JSON.stringify(reportCore)) };
 mkdirSync(outputRoot, { recursive: true });
@@ -126,9 +156,10 @@ writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`);
 
 const esc = value => String(value).replace(/[&<>"']/gu, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const fmtDuration = seconds => `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, '0')}`;
+const badge = published ? 'PUBLICADO' : qualityApproved ? 'CALIDAD APROBADA' : 'AUTO QA PASS';
 const cards = sets.map(item => `
   <article class="card">
-    <div class="top"><div><span class="eyebrow">IELTS Listening</span><h2>Set ${item.set}</h2></div><span class="pass">AUTO QA PASS</span></div>
+    <div class="top"><div><span class="eyebrow">IELTS Listening</span><h2>Set ${item.set}</h2></div><span class="pass">${badge}</span></div>
     <audio controls preload="metadata" src="${esc(pathToFileURL(item.audioPath).href)}"></audio>
     <div class="metrics">
       <span><b>${fmtDuration(item.durationSeconds)}</b> duración</span>
@@ -144,7 +175,7 @@ const cards = sets.map(item => `
 
 const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Revisión · Reemplazos IELTS Listening</title><style>
 :root{color-scheme:dark;--bg:#09100e;--panel:#101b18;--line:#263a34;--ink:#eef8f3;--muted:#91a9a0;--mint:#65e6ad;--gold:#f6c96b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0,#153429 0,transparent 34%),var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui;padding:32px}main{max-width:1100px;margin:auto}.hero{padding:30px;border:1px solid var(--line);border-radius:24px;background:#0d1714cc;margin-bottom:20px}.eyebrow{color:var(--mint);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:8px 0 14px}h2{font-size:28px;margin:3px 0}h3{font-size:14px;margin:20px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.summary{color:var(--muted);max-width:780px}.notice{border-left:3px solid var(--gold);padding:10px 14px;background:#19180f;color:#eadab5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px}.top{display:flex;justify-content:space-between;align-items:flex-start}.pass{font-size:11px;font-weight:900;color:#05120d;background:var(--mint);padding:5px 8px;border-radius:999px}audio{width:100%;margin:18px 0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.metrics span{background:#0a1311;border:1px solid #20302b;padding:8px;border-radius:10px;color:var(--muted);font-size:11px}.metrics b{display:block;color:var(--ink);font-size:14px}ol{padding-left:22px;margin:0}li{padding:7px 0}li button{border:1px solid #3a5a50;background:#14241f;color:var(--mint);border-radius:7px;padding:3px 7px;cursor:pointer}li small{display:block;color:var(--muted);margin-left:58px}.path{font:10px/1.35 ui-monospace,monospace;color:#557068;overflow-wrap:anywhere;border-top:1px solid var(--line);padding-top:12px}.footer{color:var(--muted);margin:24px 4px}.footer b{color:var(--ink)}
-</style></head><body><main><section class="hero"><span class="eyebrow">Lote de reemplazo · 9 sep 2026</span><h1>7 audios listos para revisión humana</h1><p class="summary">Cada master aprobó formato, duración, densidad audible, silencios, loudness, true peak, fidelidad ASR y 33/33 respuestas de completar. Los botones llevan al punto aproximado en el reproductor de cada set.</p><p class="notice">Estado: pendiente de tu escucha. Estos archivos siguen en staging y no han reemplazado los audios públicos.</p></section><section class="grid">${cards}</section><p class="footer"><b>Créditos:</b> 38.183 observados · 15.102 disponibles · reserva mínima de 5.000 intacta. &nbsp; <b>Manifiesto:</b> ${manifest.manifestSha256}</p></main><script>document.querySelectorAll('.card').forEach(card=>card.querySelectorAll('button[data-time]').forEach(button=>button.addEventListener('click',()=>{const [m,s]=button.dataset.time.split(':').map(Number);const audio=card.querySelector('audio');audio.currentTime=m*60+s;audio.play()})))</script></body></html>`;
+</style></head><body><main><section class="hero"><span class="eyebrow">Lote de reemplazo · 9 sep 2026</span><h1>${published ? '7 audios aprobados y publicados' : qualityApproved ? '7 audios con calidad aprobada' : '7 audios listos para revisión humana'}</h1><p class="summary">Cada master aprobó formato, duración, densidad audible, silencios, loudness, true peak, fidelidad ASR y 33/33 respuestas de completar. Los botones llevan al punto aproximado en el reproductor de cada set.</p><p class="notice">${published ? 'Estado: publicados. Los siete archivos públicos coinciden exactamente con los masters aprobados y existe un respaldo de cada audio anterior.' : qualityApproved ? 'Estado: calidad auditiva aprobada; publicación pendiente.' : 'Estado: pendiente de tu escucha. Estos archivos siguen en staging y no han reemplazado los audios públicos.'}</p></section><section class="grid">${cards}</section><p class="footer"><b>Créditos:</b> 38.183 observados · 15.102 disponibles · reserva mínima de 5.000 intacta. &nbsp; <b>Manifiesto:</b> ${manifest.manifestSha256}</p></main><script>document.querySelectorAll('.card').forEach(card=>card.querySelectorAll('button[data-time]').forEach(button=>button.addEventListener('click',()=>{const [m,s]=button.dataset.time.split(':').map(Number);const audio=card.querySelector('audio');audio.currentTime=m*60+s;audio.play()})))</script></body></html>`;
 const htmlPath = path.join(outputRoot, 'reporte-revision-audios-ielts.html');
 writeFileSync(htmlPath, html);
-console.log(JSON.stringify({ status: report.status, sets: sets.length, jsonPath, htmlPath, reportSha256: report.reportSha256, releaseAuthorized: false }, null, 2));
+console.log(JSON.stringify({ status: report.status, sets: sets.length, jsonPath, htmlPath, reportSha256: report.reportSha256, releaseAuthorized: report.releaseAuthorized }, null, 2));
