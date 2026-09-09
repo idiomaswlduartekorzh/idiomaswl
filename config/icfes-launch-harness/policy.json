@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "systemId": "icfes-commercial-launch-harness",
+  "artifactRoot": "artifacts/icfes-launch-harness",
+  "schemas": {
+    "workOrder": "config/icfes-launch-harness/work-order.schema.json",
+    "reviewReport": "config/icfes-launch-harness/review-report.schema.json",
+    "approvals": "config/icfes-launch-harness/approval.schema.json",
+    "candidateLedger": "config/icfes-launch-harness/candidate-ledger.schema.json",
+    "releaseManifest": "config/icfes-launch-harness/release-manifest.schema.json"
+  },
+  "gateOrder": [
+    "editorial",
+    "seo",
+    "pricing",
+    "security",
+    "privacy",
+    "payments",
+    "teacher-ops",
+    "release"
+  ],
+  "states": [
+    "DRAFT",
+    "FAIL_EDITORIAL",
+    "FAIL_SEO",
+    "FAIL_PRICING",
+    "FAIL_SECURITY",
+    "FAIL_PRIVACY",
+    "FAIL_PAYMENTS",
+    "FAIL_TEACHER_OPS",
+    "FAIL_RELEASE",
+    "BLOCKED_EDITORIAL",
+    "BLOCKED_SEO",
+    "BLOCKED_PRICING",
+    "BLOCKED_SECURITY",
+    "BLOCKED_PRIVACY",
+    "BLOCKED_PAYMENTS",
+    "BLOCKED_TEACHER_OPS",
+    "BLOCKED_RELEASE",
+    "AWAITING_REVIEW_REPORTS",
+    "AWAITING_HUMAN_APPROVAL",
+    "READY_FOR_RELEASE",
+    "RELEASED"
+  ],
+  "roles": [
+    { "id": "coordinator", "stage": "specification", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "author", "stage": "candidate", "mayAuthor": true, "mayApprove": false, "humanRequired": false },
+    { "id": "english-reviewer", "stage": "editorial", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "icfes-format-reviewer", "stage": "editorial", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "adversary", "stage": "adversarial", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "seo-reviewer", "stage": "seo", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "security-reviewer", "stage": "security", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "privacy-reviewer", "stage": "privacy", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "payments-reviewer", "stage": "payments", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "teacher-ops-reviewer", "stage": "teacher-ops", "mayAuthor": false, "mayApprove": false, "humanRequired": false },
+    { "id": "product-owner", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "editorial-adjudicator", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "privacy-owner", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "payments-owner", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "teacher-ops-owner", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "seo-owner", "stage": "approval", "mayAuthor": false, "mayApprove": true, "humanRequired": true },
+    { "id": "release-warden", "stage": "release", "mayAuthor": false, "mayApprove": true, "humanRequired": true }
+  ],
+  "requiredReviewRoles": [
+    "author",
+    "english-reviewer",
+    "icfes-format-reviewer",
+    "adversary",
+    "seo-reviewer",
+    "security-reviewer",
+    "privacy-reviewer",
+    "payments-reviewer",
+    "teacher-ops-reviewer"
+  ],
+  "requiredApprovalRoles": [
+    "product-owner",
+    "editorial-adjudicator",
+    "privacy-owner",
+    "payments-owner",
+    "teacher-ops-owner",
+    "seo-owner",
+    "release-warden"
+  ],
+  "separationRules": [
+    { "left": "author", "right": "english-reviewer" },
+    { "left": "author", "right": "icfes-format-reviewer" },
+    { "left": "author", "right": "adversary" },
+    { "left": "author", "right": "release-warden" },
+    { "left": "english-reviewer", "right": "icfes-format-reviewer" },
+    { "left": "adversary", "right": "release-warden" },
+    { "left": "product-owner", "right": "release-warden" }
+  ],
+  "commercialModel": {
+    "currency": "COP",
+    "tiers": [
+      {
+        "sku": "icfes-detail-attempt-v1",
+        "priceCop": 12000,
+        "billing": "one-time",
+        "durationDays": null,
+        "scope": "single-attempt-detail",
+        "automaticFeedback": true,
+        "humanReviewCredits": 0
+      },
+      {
+        "sku": "exam-auto",
+        "examSlug": "icfes",
+        "priceCop": 49000,
+        "billing": "one-time",
+        "durationDays": 30,
+        "scope": "all-owned-mocks",
+        "automaticFeedback": true,
+        "humanReviewCredits": 0
+      },
+      {
+        "sku": "exam-teacher",
+        "examSlug": "icfes",
+        "priceCop": 99000,
+        "billing": "one-time",
+        "durationDays": 30,
+        "scope": "all-owned-mocks",
+        "automaticFeedback": true,
+        "humanReviewCredits": 1,
+        "humanReviewSlaHours": 24
+      }
+    ],
+    "upgradeCredits": [
+      { "fromSku": "icfes-detail-attempt-v1", "toSku": "exam-auto", "creditCop": 12000, "payableCop": 37000, "eligibilityDays": 7, "resetsDuration": true },
+      { "fromSku": "icfes-detail-attempt-v1", "toSku": "exam-teacher", "creditCop": 12000, "payableCop": 87000, "eligibilityDays": 7, "resetsDuration": true },
+      { "fromSku": "exam-auto", "toSku": "exam-teacher", "creditCop": 49000, "payableCop": 50000, "eligibilityDays": 30, "resetsDuration": false }
+    ],
+    "creditRules": {
+      "sameAuthenticatedOwner": true,
+      "approvedAndNotRefundedOnly": true,
+      "singleUseCredit": true,
+      "serverCalculated": true
+    }
+  },
+  "mockExpansion": {
+    "idPattern": "^mock-[0-9]{2,}$",
+    "firstExpansionId": "mock-24",
+    "questionsPerMock": 45,
+    "requiredParts": [1, 2, 3, 4, 5, 6, 7],
+    "candidateLedger": "config/icfes-launch-harness/candidate-ledger.json",
+    "releaseManifest": "config/icfes-launch-harness/release-manifest.json",
+    "contentVersionPattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}\\.[1-9][0-9]*$",
+    "allowAuthorSelfApproval": false,
+    "requireQuestionLevelReview": true,
+    "requireHashBoundHumanApproval": true
+  },
+  "teacherOps": {
+    "defaultHumanCreditsPerPass": 1,
+    "slaHours": 24,
+    "capacityUtilizationStopPercent": 80,
+    "oldestQueuedStopHours": 18,
+    "rollingP95StopHours": 20,
+    "escalationHours": [12, 18, 22],
+    "capacityFormula": "floor(reviewers * productiveMinutesPerDay * 0.80 / p75ReviewMinutes)",
+    "reserveBeforeCheckout": true
+  },
+  "stopConditions": [
+    { "id": "editorial-unresolved", "gate": "editorial", "condition": "Any unresolved high/critical finding, disputed key, missing item evidence, stale hash or reviewer-author collision.", "action": "Block the affected candidate and paid detail." },
+    { "id": "seo-answer-leak", "gate": "seo", "condition": "Answers, rationales or full gated feedback are indexable or serialized to an anonymous client.", "action": "Remove from sitemap/noindex and block release." },
+    { "id": "pricing-contract-missing", "gate": "pricing", "condition": "SKU, duration, finite human quota, upgrade credit or server-calculated amount is undefined.", "action": "Disable checkout for the affected tier." },
+    { "id": "security-bypass", "gate": "security", "condition": "Cross-user access, client-authoritative scoring, non-durable purchase access or entitlement bypass is possible.", "action": "Disable paid detail and block release." },
+    { "id": "privacy-contract-missing", "gate": "privacy", "condition": "Retention, deletion/export, minor handling, reviewer minimization or consent version is unapproved.", "action": "Do not persist or sell the affected workflow." },
+    { "id": "payment-evidence-missing", "gate": "payments", "condition": "Sandbox signature, amount, currency, environment, idempotency, refund or chargeback evidence is missing.", "action": "Keep payment flags off." },
+    { "id": "teacher-capacity-red", "gate": "teacher-ops", "condition": "Human quota is unbounded, utilization exceeds 80%, oldest queue exceeds 18h, rolling p95 exceeds 20h, or no calibrated reviewer is available.", "action": "Stop new human-tier sales while preserving lower tiers that remain healthy." },
+    { "id": "release-proof-missing", "gate": "release", "condition": "Any gate is not PASS, a required human approval is absent/stale, or canary/rollback evidence is missing.", "action": "Do not add the candidate to the release manifest." }
+  ]
+}

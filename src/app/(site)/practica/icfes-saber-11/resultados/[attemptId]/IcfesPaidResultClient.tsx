@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import type { IcfesPremiumDetailDto } from '@/lib/icfes/attempt-contract';
 import { trackIcfesEvent } from '@/lib/analytics/icfes';
+import { ICFES_DETAIL_OFFER_ID } from '@/lib/icfes/commerce-v1';
 
 export default function IcfesPaidResultClient({ attemptId }: { attemptId: string }) {
   const [detail, setDetail] = useState<IcfesPremiumDetailDto | null>(null);
@@ -19,11 +20,13 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
       .then((body) => {
         if (!active) return;
         setDetail(body);
-        if (body.paymentStatus === 'APPROVED' && body.result) {
+        if (body.paymentStatus === 'APPROVED' && body.result && body.productCode === ICFES_DETAIL_OFFER_ID) {
           const eventKey = `wl_icfes_purchase_complete:${attemptId}`;
           if (!window.sessionStorage.getItem(eventKey)) {
             trackIcfesEvent('icfes_purchase_complete', {
-              mock_id: body.result.examId, product_code: 'icfes-pass-v1', amount_cop: 49900,
+              mock_id: body.result.examId,
+              product_code: ICFES_DETAIL_OFFER_ID,
+              amount_cop: body.amountInCents / 100,
             });
             window.sessionStorage.setItem(eventKey, '1');
           }

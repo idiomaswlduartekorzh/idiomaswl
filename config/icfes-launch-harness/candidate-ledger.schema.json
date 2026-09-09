@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.idiomaswl.com/schemas/icfes-launch-candidate-ledger-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "candidates"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidateId", "workOrderId", "baseCommit", "candidateDigest", "subjectArtifacts", "gateAssessments"],
+        "properties": {
+          "candidateId": { "type": "string", "minLength": 1 },
+          "workOrderId": { "type": "string", "minLength": 1 },
+          "baseCommit": { "type": "string", "pattern": "^[a-f0-9]{7,40}$" },
+          "candidateDigest": { "$ref": "#/$defs/hash" },
+          "subjectArtifacts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/artifact" } },
+          "gateAssessments": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/$defs/gateAssessment" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": { "path": { "type": "string", "minLength": 1 }, "sha256": { "$ref": "#/$defs/hash" } }
+    },
+    "gateAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "ownerRole", "checkedAt", "evidence", "stopConditionIds"],
+      "properties": {
+        "status": { "enum": ["PASS", "FAIL", "BLOCKED"] },
+        "ownerRole": { "type": "string", "minLength": 1 },
+        "checkedAt": { "type": "string", "format": "date-time" },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "lines", "claim"],
+            "properties": {
+              "path": { "type": "string", "minLength": 1 },
+              "lines": { "type": "string", "minLength": 1 },
+              "claim": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "stopConditionIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
+      }
+    }
+  }
+}

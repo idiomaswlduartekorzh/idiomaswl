@@ -3,6 +3,7 @@ import 'server-only';
 import { createAdminClient } from '@/lib/supabase/admin';
 import type { WompiServerConfig } from '@/lib/wompi/validation';
 import { ICFES_PASS_AMOUNT_IN_CENTS, isIcfesPersistenceEnabled } from './product-config.server';
+import { ICFES_DETAIL_OFFER_ID } from './commerce-v1';
 import { parseIcfesWompiTransaction } from './payment-event';
 
 export type IcfesPaymentPersistenceResult = 'saved' | 'ignored' | 'failed';
@@ -44,7 +45,7 @@ export async function persistVerifiedIcfesTransaction(input: {
     if (updateError) return 'failed';
     if (nextStatus === 'APPROVED') {
       const { error: entitlementError } = await admin.from('icfes_entitlements').upsert({
-        attempt_id: transaction.attemptId, order_id: order.id, product_code: 'icfes-pass-v1', granted_at: order.paid_at ?? now,
+        attempt_id: transaction.attemptId, order_id: order.id, product_code: ICFES_DETAIL_OFFER_ID, granted_at: order.paid_at ?? now,
       }, { onConflict: 'attempt_id' });
       if (entitlementError) return 'failed';
     }

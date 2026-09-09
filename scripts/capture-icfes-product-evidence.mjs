@@ -60,7 +60,7 @@ for (const device of [
   if (!normalizedBody.includes('resultado gratuito inmediato') || !normalizedBody.includes('dejar tus datos es opcional')) {
     throw new Error(`${device.name}: free-first result contract is not visible: ${body.slice(0, 500)}`);
   }
-  if (body.includes('Pase ICFES — COP 49.900')) {
+  if (body.includes('Respuestas y detalle — COP 12.000')) {
     throw new Error(`${device.name}: disabled offer unexpectedly visible`);
   }
   await page.evaluate(() => {

@@ -2,6 +2,8 @@
 
 Fecha de cierre: 8 de septiembre de 2026 (America/Bogota)
 
+> Nota histórica: este cierre documenta la oferta anterior de COP 49.900. La fachada comercial ICFES v1 del 9 de septiembre de 2026 la sustituye por COP 12.000 por intento y las membresías de COP 49.000/COP 99.000.
+
 Rama: `codex/icfes-content-safety-20260908`
 
 Base revisada: `ac2ba152`

@@ -1,0 +1,47 @@
+{
+  "$schema": "../work-order.schema.json",
+  "schemaVersion": 1,
+  "workOrderId": "icfes-three-tier-launch-v1",
+  "campaignId": "icfes-three-tier-launch-v1",
+  "baseCommit": "ae776027",
+  "createdAt": "2026-09-09T00:00:00-05:00",
+  "workOrderDigest": "4b5afd3186c91692d08acfef8f3845f613de96efc6426f572fb5f5323a596bc0",
+  "objective": "Implement and validate the 12k single-detail, 49k 30-day automatic and 99k 30-day human-feedback ladder without weakening content truth, privacy, payment integrity or SEO.",
+  "inputArtifacts": [
+    { "path": "docs/icfes-product-activation.md", "sha256": "7e59d09053f01bebff044dcf811d6f7d4da519f7198098c134a718d2b52f35c8" },
+    { "path": "docs/icfes-commerce-v1.md", "sha256": "2d853e897359df3d2ba765793b4dcf4d062e89d9c737470cba0875212b847a61" },
+    { "path": "src/data/icfes/own-mock-expansion-manifest.json", "sha256": "adccf52de68337941821d072ba6efc2ed2982218a88727953a07b494c8afb17b" },
+    { "path": "src/data/icfes/own-mock-expansion.schema.json", "sha256": "1d0b667cbebe6c6aacef94c8e410b8d9b285e084257193bd972bf34370b33926" },
+    { "path": "scripts/check-icfes-own-expansion.mjs", "sha256": "8ef17e60dd32b48f2b8c3fd2030dcaf58fd3f093d370c79594c5dce045480935" },
+    { "path": "supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql", "sha256": "50c35d9ba7f0d824659620956455d0419a165816d3a3558b3329621e5092cb7e" },
+    { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "sha256": "150e6baf04a40d5df8dec1bff1e6c9bcfd99e835ecc6f208101d00b6132ce8ef" },
+    { "path": "src/lib/icfes/product-config.server.ts", "sha256": "5b9a30359506fc7ca725331016989dc54f1a94158ecf4be423383fc1ce0e61d0" },
+    { "path": "src/lib/icfes/commerce-v1.ts", "sha256": "72ec253d1dbfcde6e7d97cee498e3b25a70fddda27cde3689be53e2f07cebed8" },
+    { "path": "src/lib/xpress-commerce/catalog.ts", "sha256": "e7c6a9f4d848de1488b6cf1257386ab188f6a8e22cfb7250a89edb916b126570" },
+    { "path": "src/lib/xpress-commerce/payments.server.ts", "sha256": "1530667d4ec0031e27f42db99b2a74e887bc4b1d025c6b7be465b60f1a8c85ee" },
+    { "path": "src/lib/icfes/attempt-token.server.ts", "sha256": "ce1f37c800b17d1c744c416e7f243c2fd3e2ba9f0e96f7f1504da5ffbe569ab9" },
+    { "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts", "sha256": "d35a1af28dc29038c15f2430a33e0b1d90c076622edccb6c08b68f6ed22148cf" },
+    { "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx", "sha256": "8ecb77a7c50cde23ccd820fcb4b41f39b6aa665605814a9052ccfe7daf5076f8" },
+    { "path": "src/app/sitemap.ts", "sha256": "7544b006a4627f063a4aaecc54357e09e763d4cf908b9995e5aab8b0e53f2d73" },
+    { "path": "tests/icfes-product.test.mjs", "sha256": "d5bd45398897ff08436783020ef7eccf90c361b5024b485f1d659cf74b3f44e9" }
+  ],
+  "requiredRoles": [
+    "author",
+    "english-reviewer",
+    "icfes-format-reviewer",
+    "adversary",
+    "seo-reviewer",
+    "security-reviewer",
+    "privacy-reviewer",
+    "payments-reviewer",
+    "teacher-ops-reviewer"
+  ],
+  "requiredGates": ["editorial", "seo", "pricing", "security", "privacy", "payments", "teacher-ops", "release"],
+  "stopConditionIds": ["editorial-unresolved", "seo-answer-leak", "pricing-contract-missing", "security-bypass", "privacy-contract-missing", "payment-evidence-missing", "teacher-capacity-red", "release-proof-missing"],
+  "allowedImplementationRoots": ["config/icfes-launch-harness", "artifacts/icfes-launch-harness", "docs", "scripts", "src", "supabase/migrations", "tests"],
+  "targetOffer": [
+    { "sku": "icfes-detail-attempt-v1", "priceCop": 12000, "durationDays": null, "humanReviewCredits": 0 },
+    { "sku": "exam-auto", "examSlug": "icfes", "priceCop": 49000, "durationDays": 30, "humanReviewCredits": 0 },
+    { "sku": "exam-teacher", "examSlug": "icfes", "priceCop": 99000, "durationDays": 30, "humanReviewCredits": 1, "humanReviewSlaHours": 24 }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "./candidate-ledger.schema.json",
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "candidateId": "current-working-tree-on-ae776027",
+      "workOrderId": "icfes-three-tier-launch-v1",
+      "baseCommit": "ae776027",
+      "candidateDigest": "f695e5c9b5acb8a1262be3828ec96fcd4e7b1121da425833f123fe319c68a008",
+      "subjectArtifacts": [
+        { "path": "docs/icfes-product-activation.md", "sha256": "7e59d09053f01bebff044dcf811d6f7d4da519f7198098c134a718d2b52f35c8" },
+        { "path": "docs/icfes-commerce-v1.md", "sha256": "2d853e897359df3d2ba765793b4dcf4d062e89d9c737470cba0875212b847a61" },
+        { "path": "src/lib/icfes/commerce-v1.ts", "sha256": "72ec253d1dbfcde6e7d97cee498e3b25a70fddda27cde3689be53e2f07cebed8" },
+        { "path": "src/lib/xpress-commerce/catalog.ts", "sha256": "e7c6a9f4d848de1488b6cf1257386ab188f6a8e22cfb7250a89edb916b126570" },
+        { "path": "src/data/icfes/own-mock-expansion-manifest.json", "sha256": "adccf52de68337941821d072ba6efc2ed2982218a88727953a07b494c8afb17b" },
+        { "path": "src/data/icfes/own-mock-expansion.schema.json", "sha256": "1d0b667cbebe6c6aacef94c8e410b8d9b285e084257193bd972bf34370b33926" }
+      ],
+      "gateAssessments": {
+        "editorial": {
+          "status": "PASS",
+          "ownerRole": "editorial-adjudicator",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "25-31", "claim": "The current 23 owned mocks have an approved remediated snapshot; attributed historical banks remain outside paid detail." }
+          ],
+          "stopConditionIds": ["editorial-unresolved"]
+        },
+        "seo": {
+          "status": "PASS",
+          "ownerRole": "seo-owner",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx", "lines": "21-30,41-77", "claim": "Owned guided mocks are noindex/noarchive and anonymous users receive only the membership offer, not questions or feedback." },
+            { "path": "src/app/sitemap.ts", "lines": "264-280", "claim": "The sitemap contains the pedagogical public cluster but not the membership-gated owned-mock guided routes." }
+          ],
+          "stopConditionIds": ["seo-answer-leak"]
+        },
+        "pricing": {
+          "status": "PASS",
+          "ownerRole": "product-owner",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "src/lib/icfes/commerce-v1.ts", "lines": "10-14,45-83,116-192", "claim": "The facade fixes the 12k/49k/99k prices, exam-scoped monthly SKUs and deterministic upgrade quotes." },
+            { "path": "src/lib/xpress-commerce/payments.server.ts", "lines": "39-78", "claim": "Monthly checkout recalculates the active-member quote server-side and persists the exact offer, scope, credit and amount." }
+          ],
+          "stopConditionIds": ["pricing-contract-missing"]
+        },
+        "security": {
+          "status": "PASS",
+          "ownerRole": "security-reviewer",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "src/lib/icfes/attempt-token.server.ts", "lines": "38-49,52-68", "claim": "Anonymous result access uses a signed, attempt-scoped capability with a documented 30-day lifetime." },
+            { "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts", "lines": "35-77", "claim": "The route requires a matching capability or authenticated owner, checks ICFES membership scope, and requires an approved persisted one-time entitlement before returning answers." }
+          ],
+          "stopConditionIds": ["security-bypass"]
+        },
+        "privacy": {
+          "status": "BLOCKED",
+          "ownerRole": "privacy-owner",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql", "lines": "4-14", "claim": "Stored answers/results have no retention, deletion, purpose or consent-version fields." }
+          ],
+          "stopConditionIds": ["privacy-contract-missing"]
+        },
+        "payments": {
+          "status": "BLOCKED",
+          "ownerRole": "payments-owner",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "56-61", "claim": "The migrations remain unapplied and no real or Sandbox checkout has granted an entitlement." },
+            { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "lines": "2-35,41-62", "claim": "The monthly ledger models SKUs, upgrades and idempotent payment evidence, but operational refund/chargeback proof is not present." }
+          ],
+          "stopConditionIds": ["payment-evidence-missing"]
+        },
+        "teacher-ops": {
+          "status": "BLOCKED",
+          "ownerRole": "teacher-ops-owner",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "lines": "121-139", "claim": "A review table, due_at and assignment exist, but there is no calibrated roster, rubric version, capacity reservation or observed utilization/p95 evidence." }
+          ],
+          "stopConditionIds": ["teacher-capacity-red"]
+        },
+        "release": {
+          "status": "BLOCKED",
+          "ownerRole": "release-warden",
+          "checkedAt": "2026-09-09T00:00:00-05:00",
+          "evidence": [
+            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "96-102", "claim": "Production activation, migration, legal review and real-environment evidence remain explicitly pending." }
+          ],
+          "stopConditionIds": ["release-proof-missing"]
+        }
+      }
+    }
+  ]
+}

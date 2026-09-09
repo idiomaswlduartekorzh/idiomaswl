@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS public.icfes_pass_orders (
   attempt_id uuid NOT NULL REFERENCES public.icfes_attempts(id) ON DELETE CASCADE,
   user_id uuid REFERENCES auth.users(id) ON DELETE SET NULL,
   reference text NOT NULL UNIQUE CHECK (reference ~ '^WL-ICFES-'),
-  amount_in_cents bigint NOT NULL CHECK (amount_in_cents = 4990000),
+  amount_in_cents bigint NOT NULL CHECK (amount_in_cents = 1200000),
   currency text NOT NULL DEFAULT 'COP' CHECK (currency = 'COP'),
   status text NOT NULL DEFAULT 'PENDING' CHECK (status IN ('PENDING', 'APPROVED', 'DECLINED', 'VOIDED', 'ERROR')),
   environment text NOT NULL CHECK (environment IN ('sandbox', 'production')),
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS public.icfes_entitlements (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   attempt_id uuid NOT NULL UNIQUE REFERENCES public.icfes_attempts(id) ON DELETE CASCADE,
   order_id uuid NOT NULL UNIQUE REFERENCES public.icfes_pass_orders(id) ON DELETE CASCADE,
-  product_code text NOT NULL CHECK (product_code = 'icfes-pass-v1'),
+  product_code text NOT NULL CHECK (product_code = 'icfes-detail-attempt-v1'),
   granted_at timestamptz NOT NULL,
   created_at timestamptz NOT NULL DEFAULT now()
 );

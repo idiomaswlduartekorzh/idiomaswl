@@ -44,17 +44,23 @@ const LANGS = [
   { flag: '🇮🇹', name: 'Italiano' },
 ];
 
-export default function AuthForm({ mode }: { mode: Mode }) {
+export default function AuthForm({
+  mode,
+  initialIntent = null,
+}: {
+  mode: Mode;
+  initialIntent?: RegistrationIntent | null;
+}) {
   const [email, setEmail]       = useState('');
   const [password, setPassword] = useState('');
   const [name, setName]         = useState('');
-  const [studentPath, setStudentPath] = useState<StudentPath | null>(null);
-  const [language, setLanguage] = useState<WelearnLanguage | ''>('');
-  const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>('');
-  const [exam, setExam] = useState<XpressExamSlug | ''>('');
-  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
-  const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>('');
-  const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(1);
+  const [studentPath, setStudentPath] = useState<StudentPath | null>(initialIntent?.path ?? null);
+  const [language, setLanguage] = useState<WelearnLanguage | ''>(initialIntent?.language ?? '');
+  const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>(initialIntent?.path === 'welearn' ? initialIntent.plan : '');
+  const [exam, setExam] = useState<XpressExamSlug | ''>(initialIntent?.path === 'exam' ? initialIntent.exam : '');
+  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>(initialIntent?.path === 'exam' ? initialIntent.plan : '');
+  const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>(initialIntent?.path === 'exam' ? 'self' : '');
+  const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(initialIntent ? 3 : 1);
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');

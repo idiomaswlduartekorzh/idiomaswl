@@ -19,6 +19,14 @@ import {
 } from '@/data/mocks/sat/routing';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
 import type { IcfesBasicResultDto, IcfesCheckoutDto } from '@/lib/icfes/attempt-contract';
+import {
+  ICFES_DETAIL_OFFER_ID,
+  getIcfesCommerceOffer,
+} from '@/lib/icfes/commerce-v1';
+
+const ICFES_DETAIL_OFFER = getIcfesCommerceOffer(ICFES_DETAIL_OFFER_ID);
+const ICFES_AUTO_OFFER = getIcfesCommerceOffer('exam-auto');
+const ICFES_TEACHER_OFFER = getIcfesCommerceOffer('exam-teacher');
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
 function NoticesGridSection({
@@ -1115,7 +1123,9 @@ function SecureIcfesResults({
   useEffect(() => {
     trackIcfesEvent('icfes_report_view', { mock_id: result.examId, report_type: 'free_basic' });
     if (offerEnabled && result.premiumEligible) {
-      trackIcfesEvent('icfes_offer_view', { mock_id: result.examId, product_code: 'icfes-pass-v1' });
+      for (const productCode of [ICFES_DETAIL_OFFER.id, ICFES_AUTO_OFFER.id, ICFES_TEACHER_OFFER.id]) {
+        trackIcfesEvent('icfes_offer_view', { mock_id: result.examId, product_code: productCode });
+      }
     }
   }, [offerEnabled, result.examId, result.premiumEligible]);
 
@@ -1136,7 +1146,7 @@ function SecureIcfesResults({
 
   async function startCheckout() {
     setCheckoutState('loading'); setCheckoutError('');
-    trackIcfesEvent('icfes_paid_detail_intent', { mock_id: result.examId, product_code: 'icfes-pass-v1' });
+    trackIcfesEvent('icfes_paid_detail_intent', { mock_id: result.examId, product_code: ICFES_DETAIL_OFFER.id });
     try {
       const response = await fetch('/api/icfes/pass/checkout', {
         method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ attemptId: result.attemptId }),
@@ -1145,7 +1155,9 @@ function SecureIcfesResults({
       if (!response.ok || !('ok' in data) || !data.ok) throw new Error('error' in data ? data.error : 'No pudimos abrir el pago.');
       const status = data.paymentStatus.toLowerCase() as 'pending' | 'approved' | 'declined' | 'error';
       setCheckoutState(status === 'approved' ? 'approved' : status === 'declined' ? 'declined' : 'pending');
-      trackIcfesEvent('icfes_checkout_start', { mock_id: result.examId, product_code: 'icfes-pass-v1', amount_cop: data.amountInCents / 100 });
+      if (data.checkoutUrl) {
+        trackIcfesEvent('icfes_checkout_start', { mock_id: result.examId, product_code: ICFES_DETAIL_OFFER.id, amount_cop: data.amountInCents / 100 });
+      }
       window.location.assign(data.checkoutUrl ?? data.resultUrl);
     } catch (error) {
       setCheckoutState('error');
@@ -1185,16 +1197,47 @@ function SecureIcfesResults({
           <h2>Detalle pregunta por pregunta no vendido</h2>
           <p>{result.premiumUnavailableReason ?? 'Este banco histórico atribuido solo ofrece el resultado básico gratuito.'}</p>
         </div>
+      ) : !result.premiumEligible && result.premiumUnavailableReason ? (
+        <div className="icfes-product-card icfes-product-card--muted" data-testid="icfes-premium-unavailable">
+          <h2>Detalle pregunta por pregunta no disponible</h2>
+          <p>{result.premiumUnavailableReason}</p>
+        </div>
       ) : offerEnabled && result.premiumEligible ? (
-        <div className="icfes-product-card" data-testid="icfes-pass-offer">
-          <p className="icfes-product-card__eyebrow">PAGO ÚNICO</p>
-          <h2>Pase ICFES — COP 49.900</h2>
-          <p>Desbloquea el análisis detallado pregunta por pregunta de este intento. El producto se limita a nuestros simulacros propios disponibles.</p>
-          <button type="button" className="btn" onClick={startCheckout} disabled={checkoutState === 'loading'}>
-            {checkoutState === 'loading' ? 'Preparando pago seguro…' : 'Ver opción de pago'}
-          </button>
-          {checkoutError && <p role="alert" className="prac-lead-gate__error">{checkoutError}</p>}
-          <small>La compra no incluye cuadernillos oficiales ni garantiza un puntaje.</small>
+        <div data-testid="icfes-commercial-ladder">
+          <div className="icfes-product-card" data-testid="icfes-pass-offer">
+            <p className="icfes-product-card__eyebrow">UN INTENTO · PAGO ÚNICO</p>
+            <h2>Respuestas y detalle — COP 12.000</h2>
+            <p>Desbloquea las respuestas correctas y el análisis pregunta por pregunta de este intento.</p>
+            <button type="button" className="btn" onClick={startCheckout} disabled={checkoutState === 'loading'}>
+              {checkoutState === 'loading' ? 'Preparando pago seguro…' : 'Comprar detalle de este intento'}
+            </button>
+            {checkoutError && <p role="alert" className="prac-lead-gate__error">{checkoutError}</p>}
+          </div>
+          <div className="icfes-product-card">
+            <p className="icfes-product-card__eyebrow">30 DÍAS · RENOVACIÓN MANUAL</p>
+            <h2>Todos los simulacros — COP 49.000</h2>
+            <p>Acceso al catálogo ICFES, verificación de respuestas y retroalimentación automática sobre qué trabajar.</p>
+            <Link
+              href="/registro?path=exam&exam=icfes&plan=exam-auto&next=%2Fsuscripcion%2Fexamenes"
+              className="btn"
+              onClick={() => trackIcfesEvent('icfes_paid_detail_intent', { mock_id: result.examId, product_code: ICFES_AUTO_OFFER.id })}
+            >
+              Elegir plan de 30 días
+            </Link>
+          </div>
+          <div className="icfes-product-card">
+            <p className="icfes-product-card__eyebrow">30 DÍAS · RENOVACIÓN MANUAL</p>
+            <h2>Plan con docente — COP 99.000</h2>
+            <p>Incluye el plan automático y un crédito de revisión docente por periodo, con objetivo de entrega dentro de 24 horas.</p>
+            <Link
+              href="/registro?path=exam&exam=icfes&plan=exam-teacher&next=%2Fsuscripcion%2Fexamenes"
+              className="btn"
+              onClick={() => trackIcfesEvent('icfes_paid_detail_intent', { mock_id: result.examId, product_code: ICFES_TEACHER_OFFER.id })}
+            >
+              Elegir plan con docente
+            </Link>
+          </div>
+          <small>Estas opciones aplican solo a simulacros propios disponibles; no incluyen cuadernillos oficiales ni garantizan un puntaje.</small>
         </div>
       ) : null}
 

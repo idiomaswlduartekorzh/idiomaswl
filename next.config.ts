@@ -151,6 +151,25 @@ const nextConfig: NextConfig = {
           { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
         ],
       },
+      {
+        // The attempt id identifies a private ICFES result. Protect the HTML
+        // response as well as its metadata and avoid leaking it as a referrer.
+        source: '/practica/icfes-saber-11/resultados/:attemptId',
+        headers: [
+          { key: 'Cache-Control', value: 'private, no-store, max-age=0' },
+          { key: 'Referrer-Policy', value: 'no-referrer' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
+        ],
+      },
+      {
+        // Full guided workbooks contain the paid answer/feedback layer.
+        source: '/examenes/icfes/practica/:mockId/guiado',
+        headers: [
+          { key: 'Cache-Control', value: 'private, no-store, max-age=0' },
+          { key: 'Referrer-Policy', value: 'no-referrer' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
+        ],
+      },
     ];
   },
 

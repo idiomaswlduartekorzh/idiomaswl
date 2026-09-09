@@ -1,0 +1,6 @@
+{
+  "$schema": "./approval.schema.json",
+  "schemaVersion": 1,
+  "approvals": [],
+  "note": "Intentionally empty. The current baseline has unresolved launch gates and no human approval may be inferred from an automated audit or a role label."
+}

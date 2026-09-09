@@ -1,8 +1,16 @@
 import { NextResponse } from 'next/server';
 import { getIcfesSecureExam } from '@/lib/icfes/exam-registry.server';
 import { gradeIcfesAttempt, persistIcfesAttempt } from '@/lib/icfes/grading.server';
-import { validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
-import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
+import {
+  disableIcfesPremiumAfterPersistenceFailure,
+  validateIcfesAnswers,
+} from '@/lib/icfes/attempt-contract';
+import {
+  ICFES_RESULT_ACCESS_DAYS,
+  createIcfesResultAccessToken,
+  icfesAttemptCookieName,
+  verifyIcfesAttemptToken,
+} from '@/lib/icfes/attempt-token.server';
 import type { MCQQuestion } from '@/data/mocks/types';
 
 export const runtime = 'nodejs';
@@ -28,14 +36,30 @@ export async function POST(request: Request): Promise<Response> {
   if (!answers) return json({ ok: false, error: 'Las respuestas no corresponden a este simulacro.' }, 400);
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
-  try { await persistIcfesAttempt({ attemptId: payload.attemptId, examId, token: String(body.attemptToken), answers, result }); }
+  const resultAccessToken = createIcfesResultAccessToken(payload.attemptId, examId);
+  let persisted = false;
+  try {
+    persisted = await persistIcfesAttempt({
+      attemptId: payload.attemptId,
+      examId,
+      token: resultAccessToken,
+      answers,
+      result,
+    });
+  }
   catch (error) {
     console.error('[icfes-grade] secure persistence failed:', error instanceof Error ? error.message : 'unknown');
-    return json({ ok: false, error: 'No pudimos guardar el intento seguro.' }, 503);
   }
-  const response = json({ ok: true, result });
-  response.cookies.set(ICFES_ATTEMPT_COOKIE, String(body.attemptToken), {
-    httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax', path: '/', maxAge: 6 * 60 * 60,
-  });
+  const responseResult = persisted ? result : disableIcfesPremiumAfterPersistenceFailure(result);
+  const response = json({ ok: true, result: responseResult });
+  if (persisted) {
+    response.cookies.set(icfesAttemptCookieName(payload.attemptId), resultAccessToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+      maxAge: ICFES_RESULT_ACCESS_DAYS * 24 * 60 * 60,
+    });
+  }
   return response;
 }

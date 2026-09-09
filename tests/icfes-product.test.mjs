@@ -1,7 +1,12 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
-import { hasSensitiveResultFields, validateIcfesAnswers } from '../src/lib/icfes/attempt-contract.ts';
+import {
+  disableIcfesPremiumAfterPersistenceFailure,
+  hasSensitiveResultFields,
+  ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON,
+  validateIcfesAnswers,
+} from '../src/lib/icfes/attempt-contract.ts';
 import { parseIcfesWompiTransaction } from '../src/lib/icfes/payment-event.ts';
 
 const read = (path) => readFileSync(path, 'utf8');
@@ -37,8 +42,54 @@ test('secure grade route validates signed attempt, exam binding, and returns onl
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
   assert.match(route, /verifyIcfesAttemptToken\(body\.attemptToken, examId\)/);
   assert.match(route, /validateIcfesAnswers\(body\.responses, questions\)/);
-  assert.match(route, /json\(\{ ok: true, result \}\)/);
+  assert.match(route, /json\(\{ ok: true, result: responseResult \}\)/);
   assert.doesNotMatch(route, /json\([^\n]*(answers|rationale|explanation)/i);
+});
+
+test('a persistence outage preserves the basic result and explicitly disables premium', () => {
+  const result = {
+    attemptId: '123e4567-e89b-42d3-a456-426614174000',
+    examId: 'mock-1',
+    correct: 2,
+    total: 3,
+    percentage: 67,
+    byPart: [],
+    bySkill: [],
+    recommendation: { label: 'Seguir practicando', href: '/practica/icfes-saber-11' },
+    officialResource: false,
+    premiumEligible: true,
+  };
+  const degraded = disableIcfesPremiumAfterPersistenceFailure(result);
+  assert.notEqual(degraded, result);
+  assert.equal(degraded.correct, result.correct);
+  assert.equal(degraded.percentage, result.percentage);
+  assert.equal(degraded.premiumEligible, false);
+  assert.equal(degraded.premiumUnavailableReason, ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON);
+  assert.equal(result.premiumEligible, true, 'the original graded DTO must remain immutable');
+
+  const alreadyUnavailable = { ...result, premiumEligible: false, premiumUnavailableReason: 'Revisión jurídica pendiente.' };
+  assert.equal(disableIcfesPremiumAfterPersistenceFailure(alreadyUnavailable), alreadyUnavailable);
+});
+
+test('the grade route fails open only for the basic result and does not mint a premium capability', () => {
+  const route = read('src/app/api/icfes/attempts/grade/route.ts');
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
+  assert.match(route, /persisted = await persistIcfesAttempt/);
+  assert.match(route, /persisted \? result : disableIcfesPremiumAfterPersistenceFailure\(result\)/);
+  assert.match(route, /if \(persisted\) \{\s*response\.cookies\.set\(icfesAttemptCookieName\(payload\.attemptId\), resultAccessToken/);
+  assert.doesNotMatch(route, /secure persistence failed:[\s\S]{0,180}return json\(/);
+  assert.match(runner, /data-testid="icfes-premium-unavailable"/);
+  assert.match(runner, /<p>\{result\.premiumUnavailableReason\}<\/p>/);
+});
+
+test('private ICFES results use layered noindex, noarchive and no-store controls', () => {
+  const page = read('src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/page.tsx');
+  const detail = read('src/app/api/icfes/attempts/[attemptId]/detail/route.ts');
+  const nextConfig = read('next.config.ts');
+  assert.match(page, /robots: \{ index: false, follow: false, noarchive: true \}/);
+  assert.match(detail, /'cache-control': 'private, no-store, max-age=0'/);
+  assert.match(detail, /'x-robots-tag': 'noindex, nofollow, noarchive'/);
+  assert.match(nextConfig, /source: '\/practica\/icfes-saber-11\/resultados\/:attemptId'[\s\S]{0,360}X-Robots-Tag'[\s\S]{0,80}'noindex, nofollow, noarchive'/);
 });
 
 test('score is shown before an explicitly optional, consented lead form', () => {
@@ -64,14 +115,55 @@ test('official resources cannot reach checkout or premium detail', () => {
 test('checkout uses server price, signed cookie capability, user ownership, and no fake success', () => {
   const checkout = read('src/app/api/icfes/pass/checkout/route.ts');
   const config = read('src/lib/icfes/product-config.server.ts');
-  assert.match(config, /ICFES_PASS_PRICE_COP = 49_900/);
+  assert.match(config, /ICFES_PASS_PRICE_COP = ICFES_DETAIL_PRICE_COP/);
+  assert.match(read('src/lib/icfes/commerce-v1.ts'), /ICFES_DETAIL_PRICE_COP = 12_000/);
   assert.match(config, /ICFES_PASE_ENABLED !== 'true'/);
   assert.match(config, /ICFES_PERSISTENCE_ENABLED === 'true'/);
-  assert.match(checkout, /ICFES_ATTEMPT_COOKIE/);
+  assert.match(checkout, /icfesAttemptCookieName\(attemptId\)/);
   assert.match(checkout, /attempt\.user_id && attempt\.user_id !== user\?\.id/);
   assert.match(checkout, /createWompiIntegritySignature/);
   assert.doesNotMatch(checkout, /status:\s*'APPROVED'/);
   assert.match(read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx'), /amount_cop: data\.amountInCents \/ 100/);
+});
+
+test('post-result commercial ladder exposes the three reviewed choices without recurring billing claims', () => {
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
+  const register = read('src/app/(auth)/registro/page.tsx');
+  assert.match(runner, /Respuestas y detalle — COP 12\.000/);
+  assert.match(runner, /Todos los simulacros — COP 49\.000/);
+  assert.match(runner, /Plan con docente — COP 99\.000/);
+  assert.match(runner, /un crédito de revisión docente por periodo/);
+  assert.match(runner, /RENOVACIÓN MANUAL/);
+  assert.match(runner, /plan=exam-auto/);
+  assert.match(runner, /plan=exam-teacher/);
+  assert.match(register, /parseRegistrationIntent\(await searchParams\)/);
+  assert.match(register, /initialIntent=\{initialIntent\}/);
+});
+
+test('an active ICFES membership includes owned attempt detail and prevents a second one-time charge', () => {
+  const detail = read('src/app/api/icfes/attempts/[attemptId]/detail/route.ts');
+  const checkout = read('src/app/api/icfes/pass/checkout/route.ts');
+  for (const source of [detail, checkout]) {
+    assert.match(source, /activeXpressMembership/);
+    assert.match(source, /membership\?\.exam_slug === 'icfes'|active\?\.exam_slug === 'icfes'/);
+    assert.match(source, /xpressOfferIncludes\([^\n]+, 'question-review'\)/);
+  }
+  assert.match(detail, /userOwnsAttempt/);
+  assert.match(detail, /productCode: membership\.offer_id/);
+  assert.doesNotMatch(detail, /if \(!capabilityMatches\) \{[\s\S]{0,180}membresía activa/);
+  assert.match(detail, /icfes_entitlements/);
+  assert.match(checkout, /amountInCents: 0/);
+  assert.match(checkout, /paymentStatus: 'APPROVED'/);
+});
+
+test('persisted attempts receive separate 30-day result capabilities instead of one six-hour shared cookie', () => {
+  const tokens = read('src/lib/icfes/attempt-token.server.ts');
+  const grade = read('src/app/api/icfes/attempts/grade/route.ts');
+  assert.match(tokens, /ICFES_RESULT_ACCESS_DAYS = 30/);
+  assert.match(tokens, /return `wl_icfes_attempt_\$\{attemptId\}`/);
+  assert.match(grade, /createIcfesResultAccessToken\(payload\.attemptId, examId\)/);
+  assert.match(grade, /maxAge: ICFES_RESULT_ACCESS_DAYS \* 24 \* 60 \* 60/);
+  assert.match(grade, /token: resultAccessToken/);
 });
 
 test('feature flags default off and private ownership never comes from the client', () => {
@@ -100,15 +192,16 @@ test('ICFES private tables have RLS and no browser-role grants or policies', () 
   assert.match(migration, /GRANT SELECT, INSERT, UPDATE ON TABLE public\.icfes_attempts, public\.icfes_pass_orders TO service_role/);
   assert.match(migration, /GRANT SELECT, INSERT ON TABLE public\.icfes_entitlements TO service_role/);
   assert.doesNotMatch(migration, /GRANT[^;]+TO (?:anon|authenticated)/i);
-  assert.match(migration, /amount_in_cents bigint NOT NULL CHECK \(amount_in_cents = 4990000\)/);
+  assert.match(migration, /amount_in_cents bigint NOT NULL CHECK \(amount_in_cents = 1200000\)/);
+  assert.match(migration, /product_code text NOT NULL CHECK \(product_code = 'icfes-detail-attempt-v1'\)/);
 });
 
 test('Wompi parser rejects wrong references, amount types, and statuses', () => {
   const reference = 'WL-ICFES-123e4567-e89b-42d3-a456-426614174000-deadbeef';
-  const good = { id: 'wompi-1', reference, amount_in_cents: 4990000, currency: 'COP', status: 'APPROVED' };
+  const good = { id: 'wompi-1', reference, amount_in_cents: 1200000, currency: 'COP', status: 'APPROVED' };
   assert.equal(parseIcfesWompiTransaction(good)?.attemptId, '123e4567-e89b-42d3-a456-426614174000');
   assert.equal(parseIcfesWompiTransaction({ ...good, reference: 'WL-TOEFL-x' }), null);
-  assert.equal(parseIcfesWompiTransaction({ ...good, amount_in_cents: '4990000' }), null);
+  assert.equal(parseIcfesWompiTransaction({ ...good, amount_in_cents: '1200000' }), null);
   assert.equal(parseIcfesWompiTransaction({ ...good, status: 'SUCCESS' }), null);
 });
 

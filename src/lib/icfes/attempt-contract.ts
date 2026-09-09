@@ -24,6 +24,24 @@ export interface IcfesBasicResultDto {
   premiumUnavailableReason?: string;
 }
 
+export const ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON =
+  'El resultado básico está disponible, pero el detalle premium no se habilitó porque no pudimos guardar este intento.';
+
+/**
+ * A correct basic score must survive an optional persistence outage, but an
+ * unpersisted attempt can never be sold or presented as recoverable later.
+ */
+export function disableIcfesPremiumAfterPersistenceFailure(
+  result: IcfesBasicResultDto,
+): IcfesBasicResultDto {
+  if (!result.premiumEligible) return result;
+  return {
+    ...result,
+    premiumEligible: false,
+    premiumUnavailableReason: ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON,
+  };
+}
+
 export type IcfesPaymentStatus = 'PENDING' | 'APPROVED' | 'DECLINED' | 'VOIDED' | 'ERROR';
 
 export interface IcfesCheckoutDto {
@@ -51,6 +69,7 @@ export interface IcfesPremiumDetailDto {
   paymentStatus: IcfesPaymentStatus;
   amountInCents: number;
   currency: 'COP';
+  productCode: 'icfes-detail-attempt-v1' | 'exam-auto' | 'exam-teacher';
   result: IcfesBasicResultDto | null;
   questions?: IcfesPremiumQuestionDto[];
 }

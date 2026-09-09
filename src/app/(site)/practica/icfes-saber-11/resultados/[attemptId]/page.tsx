@@ -6,7 +6,7 @@ import IcfesPaidResultClient from './IcfesPaidResultClient';
 export const metadata: Metadata = {
   title: 'Detalle de intento ICFES — WeLearn',
   description: 'Estado privado del detalle pedagógico de un intento ICFES.',
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: false, noarchive: true },
 };
 
 export default async function Page({ params }: { params: Promise<{ attemptId: string }> }) {
