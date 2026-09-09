@@ -11,6 +11,7 @@ import {
   XPRESS_EXAM_OPTIONS,
   registrationCompletionPath,
   registrationIntentMetadata,
+  registrationPurchasePath,
   type RegistrationIntent,
   type StudentPath,
   type WelearnLanguage,
@@ -20,6 +21,7 @@ import { createClient } from '@/lib/supabase/client';
 import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
 
 type Mode = 'login' | 'register';
+type OAuthProvider = 'google' | 'apple';
 
 // ── Palette ────────────────────────────────────────────────────────────────────
 const A      = 'var(--accent)';
@@ -47,6 +49,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [language, setLanguage] = useState<WelearnLanguage | ''>('');
   const [exam, setExam] = useState<XpressExamSlug | ''>('');
   const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
+  const [registrationStep, setRegistrationStep] = useState<1 | 2>(1);
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');
@@ -111,7 +114,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         return;
       }
       const requestedReturn = new URLSearchParams(window.location.search).get('next');
-      const completionPath = registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : intent.path === 'exam' ? '/suscripcion/examenes' : '/dashboard');
+      const completionPath = registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : registrationPurchasePath(intent));
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -131,9 +134,13 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     }
   };
 
-  const handleGoogle = async () => {
+  const handleOAuth = async (provider: OAuthProvider) => {
+    setError('');
     const supabase = createClient();
-    if (!supabase) return;
+    if (!supabase) {
+      setError('Servicio no disponible en este momento.');
+      return;
+    }
     const intent = mode === 'register' ? registrationIntent() : null;
     if (mode === 'register' && !intent) {
       setError('Elige qué quieres hacer y completa esa selección.');
@@ -141,12 +148,37 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     }
     const requestedReturn = new URLSearchParams(window.location.search).get('next');
     const next = intent
-      ? registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : intent.path === 'exam' ? '/suscripcion/examenes' : '/dashboard')
+      ? registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : registrationPurchasePath(intent))
       : returnPath();
-    await supabase.auth.signInWithOAuth({
-      provider: 'google',
+    const { error: oauthError } = await supabase.auth.signInWithOAuth({
+      provider,
       options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
     });
+    if (oauthError) {
+      setError(provider === 'apple'
+        ? 'Apple todavía no está disponible. Puedes continuar con Google o correo.'
+        : 'No pudimos abrir Google. Inténtalo de nuevo o usa tu correo.');
+    }
+  };
+
+  const selectStudentPath = (path: StudentPath) => {
+    setStudentPath(path);
+    setError('');
+    if (path === 'welearn') {
+      setExam('');
+      setExamPlan('');
+    } else {
+      setLanguage('');
+    }
+  };
+
+  const continueRegistration = () => {
+    if (!registrationIntent()) {
+      setError('Completa tu selección para continuar.');
+      return;
+    }
+    setError('');
+    setRegistrationStep(2);
   };
 
   return (
@@ -269,18 +301,104 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               color: 'var(--ink)',
               marginBottom: '0.4rem',
             }}>
-              {mode === 'login' ? 'Bienvenido de vuelta' : 'Crea tu cuenta'}
+              {mode === 'login'
+                ? 'Bienvenido de vuelta'
+                : registrationStep === 1 ? '¿Qué quieres aprender?' : 'Crea tu cuenta'}
             </h1>
             <p style={{ fontSize: 14, color: MUTED }}>
               {mode === 'login'
                 ? 'Ingresa tus datos para acceder a tu panel.'
-                : 'Únete y empieza a aprender hoy.'}
+                : registrationStep === 1
+                  ? 'Primero elige tu recorrido. Después creas tu cuenta.'
+                  : 'Tu elección está lista. Ahora guarda tu acceso.'}
             </p>
+            {mode === 'register' && (
+              <div aria-label={`Paso ${registrationStep} de 2`} style={{ display: 'flex', gap: 6, marginTop: '1rem' }}>
+                {[1, 2].map((step) => (
+                  <span key={step} style={{ flex: 1, height: 4, borderRadius: 99, background: step <= registrationStep ? A : BORDER }} />
+                ))}
+              </div>
+            )}
           </div>
 
-          {/* Google button */}
+          {mode === 'register' && registrationStep === 1 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <Field label="Elige una opción">
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
+                  {STUDENT_PATHS.map((option) => {
+                    const selected = option.id === studentPath;
+                    return (
+                      <button
+                        key={option.id}
+                        type="button"
+                        aria-pressed={selected}
+                        onClick={() => selectStudentPath(option.id)}
+                        style={{
+                          padding: '0.85rem',
+                          textAlign: 'left',
+                          borderRadius: 12,
+                          border: `1.5px solid ${selected ? A : BORDER}`,
+                          background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
+                          color: 'var(--ink)',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <strong style={{ display: 'block', fontSize: 13 }}>{option.label}</strong>
+                        <span style={{ display: 'block', marginTop: 4, fontSize: 11, lineHeight: 1.4, color: MUTED }}>{option.description}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </Field>
+
+              {studentPath === 'welearn' && (
+                <Field label="Idioma">
+                  <select aria-label="Idioma" value={language} onChange={(event) => setLanguage(event.target.value as WelearnLanguage)} style={inputStyle}>
+                    <option value="" disabled>Selecciona un idioma</option>
+                    {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                  </select>
+                </Field>
+              )}
+
+              {studentPath === 'exam' && (
+                <>
+                  <Field label="Examen">
+                    <select aria-label="Examen" value={exam} onChange={(event) => setExam(event.target.value as XpressExamSlug)} style={inputStyle}>
+                      <option value="" disabled>Selecciona un examen</option>
+                      {XPRESS_EXAM_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                    </select>
+                  </Field>
+                  <Field label="Suscripción">
+                    <select aria-label="Suscripción" value={examPlan} onChange={(event) => setExamPlan(event.target.value as XpressOfferId)} style={inputStyle}>
+                      <option value="" disabled>Selecciona un plan</option>
+                      {XPRESS_OFFERS.map((offer) => (
+                        <option key={offer.id} value={offer.id}>
+                          ${(offer.amountInCents / 100).toLocaleString('es-CO')} al mes · {offer.id === 'exam-auto' ? 'corrección automática' : 'feedback docente en 24 h'}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                </>
+              )}
+
+              {error && <InlineMessage kind="error">{error}</InlineMessage>}
+              <button
+                type="button"
+                onClick={continueRegistration}
+                disabled={!registrationReady}
+                style={primaryButtonStyle(!registrationReady)}
+              >
+                Continuar
+              </button>
+              <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>
+                No se crea ninguna cuenta hasta completar el siguiente paso.
+              </p>
+            </div>
+          )}
+
+          {(mode === 'login' || registrationStep === 2) && <>
           <button
-            onClick={handleGoogle}
+            onClick={() => handleOAuth('google')}
             type="button"
             disabled={!registrationReady}
             style={{
@@ -320,6 +438,24 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             Continuar con Google
           </button>
 
+          {process.env.NEXT_PUBLIC_APPLE_AUTH_ENABLED === 'true' && (
+            <button
+              onClick={() => handleOAuth('apple')}
+              type="button"
+              disabled={!registrationReady}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                width: '100%', padding: '0.85rem', border: '1.5px solid #111827', borderRadius: 12,
+                background: '#111827', color: '#fff', fontSize: 14, fontWeight: 650,
+                cursor: registrationReady ? 'pointer' : 'not-allowed', opacity: registrationReady ? 1 : 0.55,
+                marginTop: '-0.6rem', marginBottom: '1.25rem',
+              }}
+            >
+              <span aria-hidden="true" style={{ fontSize: 20, lineHeight: 1 }}></span>
+              Continuar con Apple
+            </button>
+          )}
+
           {/* Divider */}
           <div style={{
             display: 'flex',
@@ -331,9 +467,10 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             <span style={{ fontSize: 12, color: MUTED, fontWeight: 500 }}>o con correo</span>
             <div style={{ flex: 1, height: 1, background: BORDER }} />
           </div>
+          </>}
 
           {/* Error / Success */}
-          {error && (
+          {error && !(mode === 'register' && registrationStep === 1) && (
             <div style={{
               background: '#fee2e2', color: '#dc2626',
               borderRadius: 10, padding: '0.65rem 0.9rem',
@@ -355,71 +492,30 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           )}
 
           {/* Form */}
+          {(mode === 'login' || registrationStep === 2) && (
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {mode === 'register' && (
               <>
-                <Field label="¿Qué quieres hacer?">
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
-                    {STUDENT_PATHS.map((option) => {
-                      const selected = option.id === studentPath;
-                      return (
-                        <button
-                          key={option.id}
-                          type="button"
-                          aria-pressed={selected}
-                          onClick={() => setStudentPath(option.id)}
-                          style={{
-                            padding: '0.75rem',
-                            textAlign: 'left',
-                            borderRadius: 10,
-                            border: `1.5px solid ${selected ? A : BORDER}`,
-                            background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
-                            color: 'var(--ink)',
-                            cursor: 'pointer',
-                          }}
-                        >
-                          <strong style={{ display: 'block', fontSize: 13 }}>{option.label}</strong>
-                          <span style={{ display: 'block', marginTop: 3, fontSize: 11, color: MUTED }}>{option.description}</span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {!studentPath && (
-                    <span style={{ fontSize: 12, color: MUTED }}>Debes elegir una opción para crear tu cuenta.</span>
-                  )}
-                </Field>
-
-                {studentPath === 'welearn' && (
-                  <Field label="Idioma que quieres aprender">
-                    <select value={language} onChange={(event) => setLanguage(event.target.value as WelearnLanguage)} style={inputStyle}>
-                      <option value="" disabled>Selecciona un idioma</option>
-                      {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
-                    </select>
-                  </Field>
-                )}
-                {studentPath === 'exam' && (
-                  <>
-                    <Field label="Examen que quieres preparar">
-                      <select value={exam} onChange={(event) => setExam(event.target.value as XpressExamSlug)} style={inputStyle}>
-                        <option value="" disabled>Selecciona un examen</option>
-                        {XPRESS_EXAM_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
-                      </select>
-                    </Field>
-                    <Field label="Plan de exámenes">
-                      <select value={examPlan} onChange={(event) => setExamPlan(event.target.value as XpressOfferId)} style={inputStyle}>
-                        <option value="" disabled>Selecciona un plan</option>
-                        {XPRESS_OFFERS.map((offer) => (
-                          <option key={offer.id} value={offer.id}>
-                            ${(offer.amountInCents / 100).toLocaleString('es-CO')} · {offer.id === 'exam-auto' ? 'corrección automática' : 'feedback docente en 24 h'}
-                          </option>
-                        ))}
-                      </select>
-                    </Field>
-                  </>
-                )}
-
+                <div style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem',
+                  padding: '0.7rem 0.85rem', border: `1px solid ${BORDER}`, borderRadius: 12, background: CARD,
+                }}>
+                  <span style={{ color: 'var(--ink)', fontSize: 13, fontWeight: 650 }}>
+                    {studentPath === 'welearn'
+                      ? `Idioma · ${WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label ?? ''}`
+                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${examPlan === 'exam-teacher' ? '$99.000' : '$49.000'}`}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => { setRegistrationStep(1); setError(''); }}
+                    style={{ border: 0, background: 'transparent', padding: 0, color: A, fontWeight: 700, cursor: 'pointer', fontSize: 12 }}
+                  >
+                    Cambiar
+                  </button>
+                </div>
                 <Field label="Nombre completo">
                   <input
+                    aria-label="Nombre completo"
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
@@ -434,6 +530,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             )}
             <Field label="Correo electrónico">
               <input
+                aria-label="Correo electrónico"
                 type="email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
@@ -446,6 +543,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             </Field>
             <Field label="Contraseña">
               <input
+                aria-label="Contraseña"
                 type="password"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
@@ -479,6 +577,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               {loading ? 'Cargando...' : mode === 'login' ? 'Iniciar sesión' : 'Crear cuenta'}
             </button>
           </form>
+          )}
 
           {/* Forgot password (login only) */}
           {mode === 'login' && (
@@ -531,6 +630,36 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
       {children}
     </div>
   );
+}
+
+function InlineMessage({ kind, children }: { kind: 'error'; children: React.ReactNode }) {
+  return (
+    <div role="alert" style={{
+      background: kind === 'error' ? '#fee2e2' : '#dcfce7',
+      color: kind === 'error' ? '#dc2626' : '#16a34a',
+      borderRadius: 10,
+      padding: '0.65rem 0.9rem',
+      fontSize: 13,
+      border: `1px solid ${kind === 'error' ? '#fecaca' : '#bbf7d0'}`,
+    }}>
+      {children}
+    </div>
+  );
+}
+
+function primaryButtonStyle(disabled: boolean): React.CSSProperties {
+  return {
+    width: '100%',
+    padding: '0.85rem',
+    background: disabled ? 'var(--muted)' : ACTION,
+    color: '#fff',
+    border: 'none',
+    borderRadius: 12,
+    fontSize: 15,
+    fontWeight: 700,
+    cursor: disabled ? 'not-allowed' : 'pointer',
+    boxShadow: disabled ? 'none' : '0 4px 14px rgba(167,25,39,0.3)',
+  };
 }
 
 const inputStyle: React.CSSProperties = {

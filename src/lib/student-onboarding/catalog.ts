@@ -120,3 +120,8 @@ export function registrationCompletionPath(intent: RegistrationIntent, returnTo 
   }
   return `/registro/completar?${params.toString()}`;
 }
+
+export function registrationPurchasePath(intent: RegistrationIntent): string {
+  if (intent.path === 'exam') return '/suscripcion/examenes';
+  return `/precios?${new URLSearchParams({ idioma: intent.language }).toString()}`;
+}
