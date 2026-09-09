@@ -157,6 +157,7 @@
     "audit:ielts-audio-timing": "node scripts/audit-ielts-audio-timing.mjs",
     "publish:ielts-audio": "node scripts/publish-ielts-audio.mjs",
     "publish:ielts-audio-repairs": "node scripts/publish-ielts-audio-repairs.mjs",
+    "publish:ielts-legacy-replacements": "node --experimental-strip-types --no-warnings scripts/publish-ielts-legacy-replacements.mjs",
     "test:ielts-audio-production": "node --experimental-strip-types --no-warnings --test tests/ielts-audio-production.test.mjs tests/ielts-audio-timing.test.mjs",
     "test:ielts-legacy-replacements": "node --experimental-strip-types --no-warnings --test tests/ielts-legacy-replacement.test.mjs",
     "check:ielts-audio-production": "npm run plan:ielts-audio && npm run test:ielts-audio-production",

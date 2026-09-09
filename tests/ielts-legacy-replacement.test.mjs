@@ -10,6 +10,7 @@ const manifest = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-
 const casting = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-casting.json', 'utf8'));
 const decision = JSON.parse(readFileSync('config/ielts-audio/legacy-audio-audit-decision.json', 'utf8'));
 const approval = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-quality-approval.json', 'utf8'));
+const receipt = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-publish-receipt.json', 'utf8'));
 
 test('legacy replacement plan is hash-bound and leaves the published manifest unchanged', () => {
   const { manifestSha256, ...core } = manifest;
@@ -85,4 +86,31 @@ test('owner quality approval is hash-bound to every staged replacement and canno
     && file.asrStatus === 'PASS'
     && file.completionEvidence === '33/33'));
   assert.equal(approval.releaseAuthorized, false);
+});
+
+test('legacy publisher requires the exact release gate and validates every QA layer before copying', () => {
+  const source = readFileSync('scripts/publish-ielts-legacy-replacements.mjs', 'utf8');
+  assert.match(source, /assert\.deepEqual\(process\.argv\.slice\(2\), \['--approve-copy=7'\]/u);
+  assert.match(source, /Quality approval digest is stale/u);
+  assert.match(source, /technical checks are incomplete/u);
+  assert.match(source, /ASR answer coverage is incomplete/u);
+  assert.match(source, /public audio changed outside this release/u);
+  assert.match(source, /copy changed before atomic publish/u);
+  assert.match(source, /releaseAuthorized: true/u);
+});
+
+test('publish receipt is hash-bound and every public MP3 matches its approved master', () => {
+  const { receiptSha256, ...core } = receipt;
+  assert.equal(sha256(JSON.stringify(core)), receiptSha256);
+  assert.equal(receipt.status, 'PUBLISHED');
+  assert.equal(receipt.manifestSha256, manifest.manifestSha256);
+  assert.equal(receipt.castingSha256, approval.castingSha256);
+  assert.equal(receipt.qualityApprovalSha256, approval.approvalSha256);
+  assert.deepEqual(receipt.files.map(file => file.set), [5, 6, 7, 8, 10, 11, 12]);
+  for (const file of receipt.files) {
+    const publicPath = `public${file.audioUrl}`;
+    assert.equal(sha256(readFileSync(publicPath)), file.audioSha256, `Set ${file.set} public audio is stale`);
+    assert.equal(file.audioSha256, approval.files.find(item => item.set === file.set).audioSha256);
+  }
+  assert.equal(receipt.releaseAuthorized, true);
 });
