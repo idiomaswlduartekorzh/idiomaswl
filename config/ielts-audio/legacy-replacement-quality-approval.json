@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "legacy_replacement_staged_audio_quality_batch",
+  "approvedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "human",
+    "id": "owner"
+  },
+  "basis": {
+    "decision": "Owner listened to the staged legacy replacement batch and confirmed that it sounds good.",
+    "automaticQaRequired": true
+  },
+  "includedSets": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "files": [
+    {
+      "set": 5,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 6,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 7,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 8,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 10,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 11,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    },
+    {
+      "set": 12,
+      "source": "STAGED_LEGACY_REPLACEMENT",
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "technicalStatus": "PASS",
+      "asrStatus": "PASS",
+      "completionEvidence": "33/33"
+    }
+  ],
+  "releaseAuthorized": false,
+  "approvalSha256": "aab3a6fb741043d23b54fa08193428468f289a3fc0ec54aada669f4a50129902"
+}

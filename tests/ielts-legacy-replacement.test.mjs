@@ -9,6 +9,7 @@ const production = JSON.parse(readFileSync('config/ielts-audio/production-manife
 const manifest = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-manifest.json', 'utf8'));
 const casting = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-casting.json', 'utf8'));
 const decision = JSON.parse(readFileSync('config/ielts-audio/legacy-audio-audit-decision.json', 'utf8'));
+const approval = JSON.parse(readFileSync('config/ielts-audio/legacy-replacement-quality-approval.json', 'utf8'));
 
 test('legacy replacement plan is hash-bound and leaves the published manifest unchanged', () => {
   const { manifestSha256, ...core } = manifest;
@@ -68,4 +69,20 @@ test('custom-manifest dry run remains non-billable and selects only replacement 
   const payload = JSON.parse(run.stdout);
   assert.deepEqual(payload.actions.REPLACE_AFTER_AUDIT, [5, 6, 7, 8, 10, 11, 12]);
   assert.match(payload.note, /No API call/);
+});
+
+test('owner quality approval is hash-bound to every staged replacement and cannot publish', () => {
+  const { approvalSha256, ...core } = approval;
+  assert.equal(sha256(JSON.stringify(core)), approvalSha256);
+  assert.equal(approval.status, 'APPROVED');
+  assert.equal(approval.manifestSha256, manifest.manifestSha256);
+  assert.equal(approval.castingSha256, sha256(readFileSync('config/ielts-audio/legacy-replacement-casting.json')));
+  assert.deepEqual(approval.includedSets, [5, 6, 7, 8, 10, 11, 12]);
+  assert.deepEqual(approval.files.map(file => file.set), approval.includedSets);
+  assert.ok(approval.files.every(file => file.source === 'STAGED_LEGACY_REPLACEMENT'));
+  assert.ok(approval.files.every(file => /^[a-f0-9]{64}$/u.test(file.audioSha256)));
+  assert.ok(approval.files.every(file => file.technicalStatus === 'PASS'
+    && file.asrStatus === 'PASS'
+    && file.completionEvidence === '33/33'));
+  assert.equal(approval.releaseAuthorized, false);
 });
