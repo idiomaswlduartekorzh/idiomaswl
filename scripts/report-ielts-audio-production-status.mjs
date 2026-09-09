@@ -18,7 +18,9 @@ for (const key of Object.keys(args)) assert.ok(['output-json', 'output-md', 'bas
 const readJson = file => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
 const manifest = readJson(path.join(root, 'config/ielts-audio/production-manifest.json'));
 const repairManifest = readJson(path.join(root, 'config/ielts-audio/repair-manifest.json'));
+const legacyReplacementManifest = readJson(path.join(root, 'config/ielts-audio/legacy-replacement-manifest.json'));
 const castingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'))).digest('hex');
+const legacyReplacementCastingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/legacy-replacement-casting.json'))).digest('hex');
 const batchApproval = readJson(path.join(root, 'config/ielts-audio/batch-quality-approval.json'));
 const legacyDecision = readJson(path.join(root, 'config/ielts-audio/legacy-audio-audit-decision.json'));
 const { approvalSha256, ...batchApprovalCore } = batchApproval ?? {};
@@ -34,6 +36,8 @@ const computedLegacyDecisionSha256 = createHash('sha256').update(JSON.stringify(
 assert.equal(decisionSha256, computedLegacyDecisionSha256, 'Legacy audio audit decision digest is stale');
 assert.equal(legacyDecision.status, 'REPLACE_RECOMMENDED', 'Legacy audio audit decision is not final');
 assert.equal(legacyDecision.productionManifestSha256, manifest.manifestSha256, 'Legacy audio audit decision belongs to a stale production manifest');
+assert.equal(legacyReplacementManifest.sourceProductionManifestSha256, manifest.manifestSha256, 'Legacy replacements belong to a stale production manifest');
+assert.equal(legacyReplacementManifest.legacyAudioAuditDecisionSha256, legacyDecision.decisionSha256, 'Legacy replacements belong to a stale audit decision');
 const legacyAuditBySet = new Map(legacyDecision.sets.map(row => [row.set, row]));
 const baseStatus = args['base-status'] ? readJson(path.resolve(args['base-status'])) : null;
 const baseBySet = new Map((baseStatus?.sets ?? []).map(row => [row.set, row]));
@@ -69,10 +73,27 @@ if (existsSync(repairRoot)) {
   }
 }
 
+const legacyReplacementBySet = new Map();
+const legacyReplacementRoot = path.join(root, 'output', legacyReplacementManifest.outputNamespace, legacyReplacementManifest.manifestSha256);
+if (existsSync(legacyReplacementRoot)) {
+  for (const name of readdirSync(legacyReplacementRoot)) {
+    const batch = path.join(legacyReplacementRoot, name);
+    const generation = readJson(path.join(batch, 'generation-log.json'));
+    const technical = readJson(path.join(batch, 'technical-qa.json'));
+    if (!generation || !technical) continue;
+    for (const file of generation.files ?? []) {
+      const technicalFile = technical.files?.find(candidate => candidate.setId === file.setId);
+      const qa = readJson(path.join(path.dirname(file.path), `staged-asr-qa-set-${file.set}.json`));
+      legacyReplacementBySet.set(file.set, { file, generation, technical, technicalFile, qa });
+    }
+  }
+}
+
 const existingAsrRoot = path.join(root, 'output/ielts-asr', manifest.manifestSha256);
 const rows = manifest.rows.map(row => {
   const produced = productionBySet.get(row.set);
   const repaired = repairBySet.get(row.set);
+  const legacyReplacement = legacyReplacementBySet.get(row.set);
   const existingAsr = readJson(path.join(existingAsrRoot, `asr-report-set-${row.set}.json`));
   const productionPassed = produced?.technical?.status === 'technical_qa_passed_pending_transcript_and_owner_listening_review'
     && produced?.qa?.status === 'PASS'
@@ -86,10 +107,18 @@ const rows = manifest.rows.map(row => {
     && repaired?.qa?.castingSha256 === castingSha256
     && repaired.qa.audioSha256 === repaired.file.sha256
     && repaired.qa.repairManifestSha256 === repairManifest.repairManifestSha256;
+  const legacyReplacementPassed = legacyReplacement?.technical?.status === 'technical_qa_passed_pending_transcript_and_owner_listening_review'
+    && legacyReplacement?.qa?.status === 'PASS'
+    && legacyReplacement?.generation?.castingSha256 === legacyReplacementCastingSha256
+    && legacyReplacement?.technical?.castingSha256 === legacyReplacementCastingSha256
+    && legacyReplacement?.qa?.castingSha256 === legacyReplacementCastingSha256
+    && legacyReplacement.qa.audioSha256 === legacyReplacement.file.audioSha256
+    && legacyReplacement.qa.manifestSha256 === legacyReplacementManifest.manifestSha256;
   const legacyAnswersPresent = existingAsr?.completionEvidenceFound === existingAsr?.completionEvidenceTotal;
   const currentStaged = productionPassed
     ? { source: 'STAGED_NEW', audioSha256: produced.file.audioSha256 }
-    : repairPassed ? { source: 'STAGED_REPAIR', audioSha256: repaired.file.sha256 } : null;
+    : repairPassed ? { source: 'STAGED_REPAIR', audioSha256: repaired.file.sha256 }
+      : legacyReplacementPassed ? { source: 'STAGED_LEGACY_REPLACEMENT', audioSha256: legacyReplacement.file.audioSha256 } : null;
   const qualityApproval = qualityApprovalBySet.get(row.set);
   const audioQualityApproved = Boolean(currentStaged)
     && qualityApproval?.source === currentStaged.source
@@ -123,6 +152,13 @@ const rows = manifest.rows.map(row => {
     wordErrorRate = null;
     durationSeconds = audioDuration(repaired.file.path);
     nextAction = 'Escucha humana completa Q1–Q40 de la reparación; después publicar por hash.';
+  } else if (legacyReplacementPassed) {
+    state = 'AUTO_QA_PASS_PENDING_HUMAN';
+    source = 'STAGED_LEGACY_REPLACEMENT';
+    completionEvidence = legacyReplacement.qa.effectiveCompletionEvidence;
+    wordErrorRate = legacyReplacement.qa.effectiveWordErrorRate ?? legacyReplacement.qa.globalAsr?.wordErrorRate ?? null;
+    durationSeconds = legacyReplacement.technicalFile?.durationSeconds ?? null;
+    nextAction = 'Escucha humana del reemplazo; después registrar aprobación por hash antes de publicar.';
   } else if (legacyReplacementRecommended) {
     state = 'LEGACY_REPLACE_RECOMMENDED';
     nextAction = 'Reconstruir el guion, generar en staging y repetir QA automático antes de escucha humana.';
@@ -139,7 +175,7 @@ const rows = manifest.rows.map(row => {
     completionEvidence,
     wordErrorRate,
     durationSeconds,
-    listeningScriptWords: row.scriptAudit.totalWords,
+    listeningScriptWords: legacyReplacementManifest.rows.find(candidate => candidate.set === row.set)?.scriptAudit.totalWords ?? row.scriptAudit.totalWords,
     readingWords: base?.metrics?.readingWords ?? base?.readingWords ?? null,
     writing: base?.metrics?.writing ?? base?.writing ?? [],
     task1Image: base?.metrics?.task1Image ?? base?.task1Image ?? null,
@@ -152,7 +188,9 @@ const report = {
   generatedAt: new Date().toISOString(),
   productionManifestSha256: manifest.manifestSha256,
   repairManifestSha256: repairManifest.repairManifestSha256,
+  legacyReplacementManifestSha256: legacyReplacementManifest.manifestSha256,
   castingSha256,
+  legacyReplacementCastingSha256,
   publicAudioChanged: false,
   humanReviewRequired: true,
   summary: {

@@ -15,16 +15,17 @@ import { elevenLabsApiKey } from './lib/elevenlabs-api-key.mjs';
 
 const API = 'https://api.elevenlabs.io';
 const root = fileURLToPath(new URL('../', import.meta.url));
-const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
-const policy = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
-const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
-const casting = JSON.parse(castingBytes);
-const castingSha256 = sha256(castingBytes);
-assert.equal(casting.manifest_sha256, manifest.manifestSha256, 'Casting belongs to a stale manifest');
-
 const args = process.argv.slice(2);
 const has = flag => args.includes(flag);
 const value = flag => has(flag) ? args[args.indexOf(flag) + 1] : null;
+const manifestPath = path.resolve(value('--manifest-file') ?? path.join(root, 'config/ielts-audio/production-manifest.json'));
+const castingPath = path.resolve(value('--casting-file') ?? path.join(root, 'config/ielts-audio/voice-casting.json'));
+const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+const policy = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
+const castingBytes = readFileSync(castingPath);
+const casting = JSON.parse(castingBytes);
+const castingSha256 = sha256(castingBytes);
+assert.equal(casting.manifest_sha256, manifest.manifestSha256, 'Casting belongs to a stale manifest');
 
 function parseSets(selection) {
   if (!selection) return [];
@@ -41,7 +42,7 @@ function parseSets(selection) {
 }
 
 const selectedSets = parseSets(value('--sets'));
-const productionRows = manifest.rows.filter(row => ['REPLACE_CONFIRMED_MISMATCH', 'CREATE_MISSING'].includes(row.action));
+const productionRows = manifest.rows.filter(row => ['REPLACE_CONFIRMED_MISMATCH', 'CREATE_MISSING', 'REPLACE_AFTER_AUDIT'].includes(row.action));
 const selectedRows = selectedSets.length ? productionRows.filter(row => selectedSets.includes(row.set)) : [];
 
 function profileVoice(profile) {
@@ -89,14 +90,19 @@ async function showReadOnlyData() {
 }
 
 async function hydrate(row) {
-  const authored = (await import(`../src/data/mocks/ielts-set-${row.set}.ts`)).default;
-  const mock = withIeltsListeningProductionTranscript(authored);
-  const sections = mock.sections.filter(section => section.skill === 'listening').sort((a, b) => a.part - b.part);
-  const segments = sections.flatMap(section => plannedSegments(section, row.accentTarget, row.set, policy)).map(segment => ({
-    ...segment,
-    characters: segment.text.length,
-    billableCharacters: ttsText(segment.text).length,
-  }));
+  let segments;
+  if (row.segments.every(segment => typeof segment.text === 'string')) {
+    segments = row.segments.map(segment => ({ ...segment }));
+  } else {
+    const authored = (await import(`../src/data/mocks/ielts-set-${row.set}.ts`)).default;
+    const mock = withIeltsListeningProductionTranscript(authored);
+    const sections = mock.sections.filter(section => section.skill === 'listening').sort((a, b) => a.part - b.part);
+    segments = sections.flatMap(section => plannedSegments(section, row.accentTarget, row.set, policy)).map(segment => ({
+      ...segment,
+      characters: segment.text.length,
+      billableCharacters: ttsText(segment.text).length,
+    }));
+  }
   assert.deepEqual(segments.map(segment => ({
     kind: segment.kind,
     part: segment.part,
@@ -106,14 +112,23 @@ async function hydrate(row) {
     words: segment.text.trim().split(/\s+/u).filter(Boolean).length,
     textSha256: sha256(segment.text),
     pauseAfterSeconds: segment.pauseAfterSeconds,
-  })), row.segments, `Set ${row.set} source changed after manifest freeze`);
+  })), row.segments.map(segment => ({
+    kind: segment.kind,
+    part: segment.part,
+    profile: segment.profile,
+    characters: segment.characters,
+    billableCharacters: segment.billableCharacters,
+    words: segment.words,
+    textSha256: segment.textSha256,
+    pauseAfterSeconds: segment.pauseAfterSeconds,
+  })), `Set ${row.set} source changed after manifest freeze`);
   return { ...row, segments };
 }
 
 function generationRoot(scope) {
   const destination = value('--output-dir')
     ? path.resolve(value('--output-dir'))
-    : path.join(root, 'output', 'ielts-audio', manifest.manifestSha256, scope);
+    : path.join(root, 'output', manifest.outputNamespace ?? 'ielts-audio', manifest.manifestSha256, scope);
   const publicRoot = path.join(root, 'public', 'audio', 'ielts');
   const relative = path.relative(publicRoot, destination);
   assert.ok(relative.startsWith('..') || path.isAbsolute(relative), 'Generation must stay outside public/audio/ielts');
@@ -256,8 +271,18 @@ function assemble(row, segmentPaths, target, workDirectory) {
   const listPath = path.join(workDirectory, 'concat.txt');
   writeFileSync(listPath, `${list.join('\n')}\n`);
   const wav = `${target}.assembly.wav`;
+  const playbackSpeed = Number(casting.target.playback_speed_by_set?.[String(row.set)] ?? 1);
+  assert.ok(Number.isFinite(playbackSpeed) && playbackSpeed >= 0.98 && playbackSpeed <= 1.02,
+    `Set ${row.set} playback speed must remain between 0.98 and 1.02`);
+  const finalAttenuationDb = Number(value('--final-attenuation-db') ?? 0);
+  assert.ok(Number.isFinite(finalAttenuationDb) && finalAttenuationDb >= -3 && finalAttenuationDb <= 0,
+    'Final attenuation must remain between -3 and 0 dB');
+  const finalLimiterLinear = Number(value('--limiter-linear') ?? 0.63);
+  assert.ok(Number.isFinite(finalLimiterLinear) && finalLimiterLinear >= 0.5 && finalLimiterLinear <= 0.63,
+    'Final limiter must remain between 0.5 and 0.63 linear amplitude');
+  const assemblyFilter = playbackSpeed === 1 ? [] : ['-af', `atempo=${playbackSpeed}`];
   const joined = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', listPath,
-    '-c:a', 'pcm_s16le', '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), wav], { encoding: 'utf8' });
+    ...assemblyFilter, '-c:a', 'pcm_s16le', '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), wav], { encoding: 'utf8' });
   assert.equal(joined.status, 0, `Assembly failed: ${joined.stderr}`);
   const analysis = spawnSync(mediaBinary('ffmpeg'), ['-hide_banner', '-nostats', '-i', wav,
     '-af', `loudnorm=I=${casting.target.integrated_loudness_lufs}:LRA=7:TP=${casting.target.normalization_true_peak_dbfs}:print_format=json`, '-f', 'null', '-'], { encoding: 'utf8' });
@@ -268,13 +293,17 @@ function assemble(row, segmentPaths, target, workDirectory) {
   const filter = [`loudnorm=I=${casting.target.integrated_loudness_lufs}`, 'LRA=7', `TP=${casting.target.normalization_true_peak_dbfs}`,
     `measured_I=${measured.input_i}`, `measured_LRA=${measured.input_lra}`, `measured_TP=${measured.input_tp}`,
     `measured_thresh=${measured.input_thresh}`, `offset=${measured.target_offset}`, 'linear=true'].join(':');
-  const encoded = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-i', wav, '-af', `${filter},alimiter=limit=0.63:attack=5:release=50:level=false:latency=1`,
+  const attenuationFilter = finalAttenuationDb === 0 ? '' : `,volume=${finalAttenuationDb}dB`;
+  const encoded = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-i', wav, '-af', `${filter},alimiter=limit=${finalLimiterLinear}:attack=5:release=50:level=false:latency=1${attenuationFilter}`,
     '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), '-b:a', casting.target.final_bitrate, target], { encoding: 'utf8' });
   if (existsSync(wav)) unlinkSync(wav);
   assert.equal(encoded.status, 0, `Final encoding failed: ${encoded.stderr}`);
   return {
     baseDurationSeconds: Number(baseDurationSeconds.toFixed(3)),
-    targetDurationSeconds: Number(padding.targetDurationSeconds.toFixed(3)),
+    targetDurationSeconds: Number((padding.targetDurationSeconds / playbackSpeed).toFixed(3)),
+    playbackSpeed,
+    finalAttenuationDb,
+    finalLimiterLinear,
     distributedReviewPaddingSeconds: Number(padding.totalPaddingSeconds.toFixed(3)),
     reviewPauseSlots: padding.slots,
     addedSecondsPerReviewPause: Number(padding.paddingPerSlotSeconds.toFixed(3)),

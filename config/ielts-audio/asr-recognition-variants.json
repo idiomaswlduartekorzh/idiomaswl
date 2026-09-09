@@ -9,6 +9,10 @@
       }
     },
     "7": {
+      "1": {
+        "variants": ["Whitcomb"],
+        "rationale": "Whisper drops the silent final e from the clearly spoken surname Whitcombe; the following turn spells W-H-I-T-C-O-M-B-E and the canonical scored answer remains Whitcombe."
+      },
       "14": {
         "variants": ["ship spell"],
         "rationale": "Whisper renders the audible phrase ship's bell as the homophone-like phrase ship spell; the canonical scored answer remains bell."
@@ -18,6 +22,12 @@
       "1": {
         "variants": ["Whitcomb"],
         "rationale": "Whisper drops the final e from the spoken surname even though the audio immediately spells W-H-I-T-C-O-M-B-E; the canonical scored answer remains Whitcombe."
+      }
+    },
+    "11": {
+      "1": {
+        "variants": ["Red Hill"],
+        "rationale": "Whisper separates the clearly spoken and immediately spelled street name Redhill into two words; the canonical scored answer remains Redhill."
       }
     },
     "2": {
