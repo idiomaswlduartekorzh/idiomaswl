@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "status": "REPLACE_RECOMMENDED",
+  "generatedAt": "2026-09-09T01:10:52.837Z",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "auditReportSha256": "1eb38759355085b1e17f3281eea1ecce1d9509f883bafafe6e968fb400874624",
+  "sets": [
+    {
+      "set": 5,
+      "audioSha256": "2e8bdbcb3e039a126cf9cc4217419400f7c776fc794c142b675e1a8834d748b1",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity"
+      ]
+    },
+    {
+      "set": 6,
+      "audioSha256": "0d77c961a13d9bb15c5e08a6ff3bad963e1b03faa2af6e6dff1c7d8b46c8b999",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "safeTruePeak"
+      ]
+    },
+    {
+      "set": 7,
+      "audioSha256": "cd28eaf245c0d3c36161f79d5c07e83f174c6f71c1d89b8a597a2cd5ba9deb30",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "safeTruePeak"
+      ]
+    },
+    {
+      "set": 8,
+      "audioSha256": "74b1959ca0a8f3ed63a1f272cd5ecd01a673abdf339add92f50a39f59848a964",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "safeTruePeak"
+      ]
+    },
+    {
+      "set": 10,
+      "audioSha256": "48c215c1e9907887e411d411fbc84edac4a1f93dd9f765b5720b0fce2bff8fd6",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "targetIntegratedLoudness",
+        "safeTruePeak"
+      ]
+    },
+    {
+      "set": 11,
+      "audioSha256": "ad214fe5e15c0827064bc14169ffdc4434443042c68ebbc5a9b06d6cf206eca9",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "targetIntegratedLoudness",
+        "safeTruePeak"
+      ]
+    },
+    {
+      "set": 12,
+      "audioSha256": "cdf589ad5d524b4ab02b0794e014c9e7b28e7b3b50789b0ab7e0eeee4756be68",
+      "recommendation": "REPLACE",
+      "severity": "HIGH",
+      "failures": [
+        "scriptLength",
+        "officialTiming",
+        "productionAsrFidelity",
+        "safeTruePeak"
+      ]
+    }
+  ],
+  "releaseAuthorized": false,
+  "decisionSha256": "3a2ecfb238aa69e74e32d3650a495452115e13ce64efd890048b1258d9c625d0"
+}

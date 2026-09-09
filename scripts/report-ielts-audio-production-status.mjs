@@ -20,6 +20,7 @@ const manifest = readJson(path.join(root, 'config/ielts-audio/production-manifes
 const repairManifest = readJson(path.join(root, 'config/ielts-audio/repair-manifest.json'));
 const castingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'))).digest('hex');
 const batchApproval = readJson(path.join(root, 'config/ielts-audio/batch-quality-approval.json'));
+const legacyDecision = readJson(path.join(root, 'config/ielts-audio/legacy-audio-audit-decision.json'));
 const { approvalSha256, ...batchApprovalCore } = batchApproval ?? {};
 const computedApprovalSha256 = createHash('sha256').update(JSON.stringify(batchApprovalCore)).digest('hex');
 assert.equal(approvalSha256, computedApprovalSha256, 'Batch quality approval digest is stale');
@@ -28,6 +29,12 @@ assert.equal(batchApproval.productionManifestSha256, manifest.manifestSha256, 'B
 assert.equal(batchApproval.repairManifestSha256, repairManifest.repairManifestSha256, 'Batch quality approval belongs to a stale repair manifest');
 assert.equal(batchApproval.castingSha256, castingSha256, 'Batch quality approval belongs to a stale casting and assembly policy');
 const qualityApprovalBySet = new Map(batchApproval.files.map(file => [file.set, file]));
+const { decisionSha256, ...legacyDecisionCore } = legacyDecision ?? {};
+const computedLegacyDecisionSha256 = createHash('sha256').update(JSON.stringify(legacyDecisionCore)).digest('hex');
+assert.equal(decisionSha256, computedLegacyDecisionSha256, 'Legacy audio audit decision digest is stale');
+assert.equal(legacyDecision.status, 'REPLACE_RECOMMENDED', 'Legacy audio audit decision is not final');
+assert.equal(legacyDecision.productionManifestSha256, manifest.manifestSha256, 'Legacy audio audit decision belongs to a stale production manifest');
+const legacyAuditBySet = new Map(legacyDecision.sets.map(row => [row.set, row]));
 const baseStatus = args['base-status'] ? readJson(path.resolve(args['base-status'])) : null;
 const baseBySet = new Map((baseStatus?.sets ?? []).map(row => [row.set, row]));
 const audioDuration = file => {
@@ -88,6 +95,13 @@ const rows = manifest.rows.map(row => {
     && qualityApproval?.source === currentStaged.source
     && qualityApproval?.audioSha256 === currentStaged.audioSha256;
   const base = baseBySet.get(row.set);
+  const legacySetDecision = legacyAuditBySet.get(row.set);
+  const publicAudioPath = path.join(root, 'public', row.audioUrl);
+  const publicAudioSha256 = existsSync(publicAudioPath)
+    ? createHash('sha256').update(readFileSync(publicAudioPath)).digest('hex')
+    : null;
+  const legacyReplacementRecommended = legacySetDecision?.recommendation === 'REPLACE'
+    && legacySetDecision?.audioSha256 === publicAudioSha256;
   let state = 'AUTOMATED_QA_INCOMPLETE';
   let source = 'PUBLIC_LEGACY';
   let completionEvidence = existingAsr ? `${existingAsr.completionEvidenceFound}/${existingAsr.completionEvidenceTotal}` : '0/0';
@@ -109,6 +123,9 @@ const rows = manifest.rows.map(row => {
     wordErrorRate = null;
     durationSeconds = audioDuration(repaired.file.path);
     nextAction = 'Escucha humana completa Q1–Q40 de la reparación; después publicar por hash.';
+  } else if (legacyReplacementRecommended) {
+    state = 'LEGACY_REPLACE_RECOMMENDED';
+    nextAction = 'Reconstruir el guion, generar en staging y repetir QA automático antes de escucha humana.';
   } else if (legacyAnswersPresent) {
     state = 'LEGACY_ANSWERS_PRESENT_PENDING_HUMAN';
     nextAction = 'Escucha humana completa; decidir conservación o reemplazo según longitud y naturalidad.';
@@ -142,6 +159,7 @@ const report = {
     totalSets: rows.length,
     automatedQaPassed: rows.filter(row => ['AUTO_QA_PASS_PENDING_HUMAN', 'BATCH_QUALITY_APPROVED_PENDING_Q40'].includes(row.state)).length,
     audioQualityApproved: rows.filter(row => row.audioQualityApproved).length,
+    legacyReplacementRecommended: rows.filter(row => row.state === 'LEGACY_REPLACE_RECOMMENDED').length,
     legacyAnswersPresentPendingHuman: rows.filter(row => row.state === 'LEGACY_ANSWERS_PRESENT_PENDING_HUMAN').length,
     answerCoverageComplete: rows.filter(row => {
       const [found, total] = row.completionEvidence.split('/').map(Number);
@@ -156,6 +174,7 @@ const labels = {
   BATCH_QUALITY_APPROVED_PENDING_Q40: 'Calidad del lote aprobada; falta evidencia Q1–Q40',
   AUTO_QA_PASS_PENDING_HUMAN: 'QA automático aprobado; falta escucha humana',
   LEGACY_ANSWERS_PRESENT_PENDING_HUMAN: 'Respuestas presentes; falta decisión humana',
+  LEGACY_REPLACE_RECOMMENDED: 'Auditoría completa; reemplazo recomendado',
   AUTOMATED_QA_INCOMPLETE: 'QA automático incompleto',
 };
 const cell = value => String(value ?? '—').replaceAll('|', '\\|').replaceAll('\n', ' ');
@@ -167,6 +186,7 @@ const markdown = [
   `Cobertura automática de respuestas: **${report.summary.answerCoverageComplete}/20 sets**`,
   `QA automático completo en staging: **${report.summary.automatedQaPassed}/20 sets**`,
   `Calidad auditiva del lote aprobada por el propietario: **${report.summary.audioQualityApproved}/20 sets**`,
+  `Audios heredados con reemplazo recomendado: **${report.summary.legacyReplacementRecommended}/7 sets auditados**`,
   'Publicación: **0/20**; todos requieren escucha humana y el audio público permanece sin cambios.',
   '',
   '| Set | Estado de audio | Fuente | Min | Guion L | Respuestas | WER | Reading | Writing T1/T2 | Imagen T1 | Próxima acción |',
