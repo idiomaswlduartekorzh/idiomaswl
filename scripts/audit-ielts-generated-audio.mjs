@@ -9,11 +9,13 @@ import { analyzeAudioTiming, mediaBinary } from './lib/ielts-audio-timing.mjs';
 
 assert.ok(process.argv[2], 'usage: audit-ielts-generated-audio.mjs <generation-directory>');
 const root = path.resolve(process.argv[2]);
+const cli = process.argv.slice(3);
+const value = flag => cli.includes(flag) ? cli[cli.indexOf(flag) + 1] : null;
 const logPath = path.join(root, 'generation-log.json');
 assert.ok(existsSync(logPath), `missing generation log: ${logPath}`);
 const log = JSON.parse(readFileSync(logPath, 'utf8'));
-const plan = JSON.parse(readFileSync(path.resolve('config/ielts-audio/production-manifest.json'), 'utf8'));
-const castingBytes = readFileSync(path.resolve('config/ielts-audio/voice-casting.json'));
+const plan = JSON.parse(readFileSync(path.resolve(value('--manifest-file') ?? 'config/ielts-audio/production-manifest.json'), 'utf8'));
+const castingBytes = readFileSync(path.resolve(value('--casting-file') ?? 'config/ielts-audio/voice-casting.json'));
 const casting = JSON.parse(castingBytes);
 assert.equal(log.manifestSha256, plan.manifestSha256, 'generation log belongs to a stale manifest');
 assert.equal(log.modelId, casting.model_id, 'generation used a different model');

@@ -1,0 +1,138 @@
+{
+  "manifest_sha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "model_id": "eleven_flash_v2_5",
+  "credits_per_character": 0.5,
+  "api_price_usd_per_1000_characters": 0.05,
+  "approval": "authorized_for_legacy_replacement_staging_by_owner_2026-09-09",
+  "approval_scope": {
+    "approved_sets": [
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "pilot_set": 5,
+    "approved_max_usd_before_tax": 8.5,
+    "minimum_remaining_credits": 5000,
+    "authorization_basis": "User explicitly authorized generating the audited legacy replacements with renewed ElevenLabs credits, prioritizing quality and then cost.",
+    "human_release_review_still_required": true
+  },
+  "target": {
+    "intermediate_output_format": "mp3_44100_128",
+    "final_sample_rate_hz": 44100,
+    "final_channels": 1,
+    "final_bitrate": "64k",
+    "minimum_duration_seconds": 1740,
+    "maximum_duration_seconds": 1800,
+    "integrated_loudness_lufs": -18,
+    "integrated_loudness_tolerance_lu": 1.5,
+    "normalization_true_peak_dbfs": -2.2,
+    "max_true_peak_dbfs": -1.5,
+    "transition_declick_fade_ms": 10,
+    "silence_between_conversation_turns_seconds": 0.35,
+    "silence_between_parts_seconds": 15,
+    "playback_speed_by_set": {
+      "6": 0.992
+    }
+  },
+  "voice_settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "voices": {
+    "british": {
+      "woman": {
+        "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+        "voice_name": "Alice - Clear, Engaging Educator",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+        "voice_name": "George - Warm, Captivating Storyteller",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "onwK4e9ZLuTAKqWW03F9",
+        "voice_name": "Daniel - Steady Broadcaster",
+        "credit_multiplier": 1
+      }
+    },
+    "north-american": {
+      "woman": {
+        "voice_id": "EXAVITQu4vr4xnSDxMaL",
+        "voice_name": "Sarah - Mature, Reassuring, Confident",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "bIHbv24MWmeRgasZH58o",
+        "voice_name": "Will - Relaxed Optimist",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "XrExE9yKIg1WjnnlVkGX",
+        "voice_name": "Matilda - Knowledgable, Professional",
+        "credit_multiplier": 1
+      }
+    },
+    "australian": {
+      "woman": {
+        "voice_id": "6UXvJKkwaqtXE3nZHvbF",
+        "voice_name": "Claire - Calm & Friendly",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "y5emW3e0EB7TnaDoqFxW",
+        "voice_name": "Grant - Mature & Friendly",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "qdQy4DB1qF46vkMgYpj4",
+        "voice_name": "Mozay",
+        "credit_multiplier": 1
+      }
+    },
+    "new-zealand": {
+      "woman": {
+        "voice_id": "7ceZgj78jCCeAW93ItNk",
+        "voice_name": "Jessie - Friendly Educator",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "lRhPoiLGmkYN4Rw9YiN4",
+        "voice_name": "Reuben - Friendly Phone and Business Voice",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "53CG2aO2HU48thT3QnMl",
+        "voice_name": "Cam S",
+        "credit_multiplier": 1
+      }
+    }
+  },
+  "role_voice": {
+    "announcer": "lecturer",
+    "guide": "woman",
+    "lecturer": "lecturer",
+    "participant-man": "man",
+    "participant-woman": "woman",
+    "service-staff": "woman",
+    "speaker": "man",
+    "student-man": "man",
+    "student-woman": "woman",
+    "tutor": "lecturer"
+  },
+  "account_snapshot": {
+    "status": "verified_by_read_only_api_query_before_production",
+    "captured_at": "2026-09-09"
+  },
+  "voice_validation": {
+    "status": "verified_available_with_required_accents_and_1x_multiplier",
+    "require_multiplier_one": true
+  },
+  "source_casting_sha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6"
+}

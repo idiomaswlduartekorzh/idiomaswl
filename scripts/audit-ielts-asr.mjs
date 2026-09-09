@@ -15,14 +15,18 @@ const args = Object.fromEntries(process.argv.slice(2).map(argument => {
   const [key, ...value] = argument.replace(/^--/, '').split('=');
   return [key, value.join('=')];
 }));
-for (const key of Object.keys(args)) assert.ok(['set', 'asr-json', 'output', 'engine', 'max-wer', 'mode', 'audio'].includes(key), `Unknown flag: ${key}`);
+for (const key of Object.keys(args)) assert.ok(['set', 'asr-json', 'output', 'engine', 'max-wer', 'mode', 'audio', 'manifest-file'].includes(key), `Unknown flag: ${key}`);
 const setNumber = Number(args.set);
 assert.ok(Number.isInteger(setNumber) && setNumber >= 1 && setNumber <= 20, '--set=1..20 is required');
 assert.ok(args['asr-json'], '--asr-json=/path/to/whisper.json is required');
 assert.ok(args.output, '--output=/path/to/report.json is required');
 
+const manifest = JSON.parse(fs.readFileSync(path.resolve(args['manifest-file'] ?? path.join(root, 'config/ielts-audio/production-manifest.json')), 'utf8'));
+const manifestRow = manifest.rows.find(row => row.set === setNumber);
+assert.ok(manifestRow, `Production manifest missing Set ${setNumber}`);
+const hasFrozenText = manifestRow.segments.every(segment => typeof segment.text === 'string');
 const authoredMock = (await import(new URL(`../src/data/mocks/ielts-set-${setNumber}.ts`, import.meta.url))).default;
-const mock = withIeltsListeningProductionTranscript(authoredMock);
+const mock = hasFrozenText ? authoredMock : withIeltsListeningProductionTranscript(authoredMock);
 const listening = mock.sections.filter(section => section.skill === 'listening');
 assert.equal(listening.length, 4, `Set ${setNumber} must contain four Listening parts`);
 const audioUrls = [...new Set(listening.map(section => section.audioUrl))];
@@ -36,14 +40,15 @@ const asr = JSON.parse(asrBytes);
 const segments = asr.segments ?? asr.result?.segments;
 const maximumWordErrorRate = args['max-wer'] ? Number(args['max-wer']) : 0.08;
 assert.ok(Number.isFinite(maximumWordErrorRate) && maximumWordErrorRate >= 0 && maximumWordErrorRate <= 1, '--max-wer must be between 0 and 1');
-const transcripts = listening.map(section => ({ part: section.part, transcript: section.transcript ?? '' }));
+const transcripts = hasFrozenText
+  ? [1, 2, 3, 4].map(part => ({ part, transcript: manifestRow.segments.filter(segment => segment.part === part && segment.kind === 'content').map(segment => segment.text).join('\n\n') }))
+  : listening.map(section => ({ part: section.part, transcript: section.transcript ?? '' }));
 const policy = JSON.parse(fs.readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
-const manifest = JSON.parse(fs.readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
 const recognitionVariantsBytes = fs.readFileSync(path.join(root, 'config/ielts-audio/asr-recognition-variants.json'));
 const recognitionVariants = JSON.parse(recognitionVariantsBytes);
-const manifestRow = manifest.rows.find(row => row.set === setNumber);
-assert.ok(manifestRow, `Production manifest missing Set ${setNumber}`);
-const expectedSegments = listening.flatMap(section => plannedSegments(section, manifestRow.accentTarget, setNumber, policy));
+const expectedSegments = hasFrozenText
+  ? manifestRow.segments.map(segment => ({ kind: segment.kind, part: segment.part, profile: segment.profile, text: segment.text, pauseAfterSeconds: segment.pauseAfterSeconds }))
+  : listening.flatMap(section => plannedSegments(section, manifestRow.accentTarget, setNumber, policy));
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const audit = auditAsrAlignment({
   expectedText: expectedSegments.map(item => ttsText(item.text)).join('\n\n'),

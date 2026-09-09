@@ -16,7 +16,7 @@ const args = Object.fromEntries(process.argv.slice(2).map(argument => {
   const [key, ...value] = argument.replace(/^--/u, '').split('=');
   return [key, value.length ? value.join('=') : 'true'];
 }));
-for (const key of Object.keys(args)) assert.ok(['sets', 'input-dir', 'model', 'force'].includes(key), `Unknown flag: ${key}`);
+for (const key of Object.keys(args)) assert.ok(['sets', 'input-dir', 'model', 'force', 'manifest-file', 'casting-file'].includes(key), `Unknown flag: ${key}`);
 assert.ok(args.sets, '--sets=2 or a comma-separated subset is required');
 const sets = [...new Set(args.sets.split(',').map(Number))].sort((left, right) => left - right);
 const input = path.resolve(args['input-dir'] || '');
@@ -26,11 +26,12 @@ const executable = process.env.IELTS_MLX_WHISPER || path.join(root, 'output/tool
 assert.ok(existsSync(executable), `Missing MLX Whisper at ${executable}`);
 const generationLog = JSON.parse(readFileSync(path.join(input, 'generation-log.json'), 'utf8'));
 const technicalQa = JSON.parse(readFileSync(path.join(input, 'technical-qa.json'), 'utf8'));
-const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
+const manifestPath = path.resolve(args['manifest-file'] ?? path.join(root, 'config/ielts-audio/production-manifest.json'));
+const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const policy = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
 const variantsBytes = readFileSync(path.join(root, 'config/ielts-audio/asr-recognition-variants.json'));
 const variants = JSON.parse(variantsBytes);
-const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
+const castingBytes = readFileSync(path.resolve(args['casting-file'] ?? path.join(root, 'config/ielts-audio/voice-casting.json')));
 const castingSha256 = sha256(castingBytes);
 assert.equal(generationLog.manifestSha256, manifest.manifestSha256, 'Generation log belongs to a stale manifest');
 assert.equal(technicalQa.manifestSha256, manifest.manifestSha256, 'Technical QA belongs to a stale manifest');
@@ -118,13 +119,18 @@ for (const setNumber of sets) {
   const directory = path.dirname(entry.path);
   const fullAsr = transcribe(entry.path, directory, `whisper-set-${setNumber}`);
   const globalReportPath = path.join(directory, `asr-report-set-${setNumber}.json`);
-  spawnSync(process.execPath, ['--experimental-strip-types', '--no-warnings', path.join(root, 'scripts/audit-ielts-asr.mjs'), `--set=${setNumber}`, `--audio=${entry.path}`, `--asr-json=${fullAsr}`, `--output=${globalReportPath}`, `--engine=mlx-whisper:${model}`, '--mode=production'], { cwd: root, encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 });
+  spawnSync(process.execPath, ['--experimental-strip-types', '--no-warnings', path.join(root, 'scripts/audit-ielts-asr.mjs'), `--set=${setNumber}`, `--audio=${entry.path}`, `--asr-json=${fullAsr}`, `--output=${globalReportPath}`, `--engine=mlx-whisper:${model}`, '--mode=production', `--manifest-file=${manifestPath}`], { cwd: root, encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 });
   const globalReport = JSON.parse(readFileSync(globalReportPath, 'utf8'));
 
   const authored = (await import(new URL(`../src/data/mocks/ielts-set-${setNumber}.ts`, import.meta.url))).default;
-  const mock = withIeltsListeningProductionTranscript(authored);
+  const manifestRow = manifest.rows.find(row => row.set === setNumber);
+  assert.ok(manifestRow, `Manifest missing Set ${setNumber}`);
+  const hasFrozenText = manifestRow.segments.every(segment => typeof segment.text === 'string');
+  const mock = hasFrozenText ? authored : withIeltsListeningProductionTranscript(authored);
   const listening = mock.sections.filter(section => section.skill === 'listening').sort((left, right) => left.part - right.part);
-  const sourceSegments = listening.flatMap(section => plannedSegments(section, manifest.rows.find(row => row.set === setNumber).accentTarget, setNumber, policy));
+  const sourceSegments = hasFrozenText
+    ? manifestRow.segments.map((segment, index) => ({ kind: segment.kind, part: segment.part, profile: segment.profile, text: segment.text, pauseAfterSeconds: segment.pauseAfterSeconds, index }))
+    : listening.flatMap(section => plannedSegments(section, manifestRow.accentTarget, setNumber, policy));
   const completionRows = objectiveRows(mock).filter(row => row.skill === 'listening' && row.kind === 'fill').map(row => {
     const section = listening.find(candidate => candidate.questions.some(question => row.key === question.id || row.key.startsWith(`${question.id}__`)));
     return { ...acceptedForAsr(row, setNumber), set: setNumber, part: section?.part };
