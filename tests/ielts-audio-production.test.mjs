@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
@@ -6,6 +7,7 @@ import { buildInvoice, integerToEnglish, reviewPaddingPlan, ttsText } from '../s
 
 const manifest = JSON.parse(readFileSync('config/ielts-audio/production-manifest.json', 'utf8'));
 const casting = JSON.parse(readFileSync('config/ielts-audio/voice-casting.json', 'utf8'));
+const batchApproval = JSON.parse(readFileSync('config/ielts-audio/batch-quality-approval.json', 'utf8'));
 
 test('production scope preserves reusable audio and queues only known missing or mismatched sets', () => {
   assert.deepEqual(manifest.rows.filter(row => row.action === 'AUDIT_BEFORE_REUSE').map(row => row.set), [1, 5, 6, 7, 8, 9, 10, 11, 12]);
@@ -50,6 +52,16 @@ test('short assemblies distribute enough review time to enter the official durat
 test('speaker transitions use a de-click fade too short to soften speech attacks', () => {
   assert.ok(casting.target.transition_declick_fade_ms >= 5);
   assert.ok(casting.target.transition_declick_fade_ms <= 12);
+});
+
+test('owner batch-quality approval is hash-bound and excludes legacy audio', () => {
+  const { approvalSha256, ...core } = batchApproval;
+  assert.equal(createHash('sha256').update(JSON.stringify(core)).digest('hex'), approvalSha256);
+  assert.equal(batchApproval.productionManifestSha256, manifest.manifestSha256);
+  assert.deepEqual(batchApproval.includedSets, [1, 2, 3, 4, 9, 13, 14, 15, 16, 17, 18, 19, 20]);
+  assert.deepEqual(batchApproval.excludedLegacySets, [5, 6, 7, 8, 10, 11, 12]);
+  assert.equal(batchApproval.files.length, 13);
+  assert.equal(batchApproval.releaseAuthorized, false);
 });
 
 test('Flash text normalization makes numbers, phones, currency and spelling explicit', () => {

@@ -19,6 +19,15 @@ const readJson = file => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8'
 const manifest = readJson(path.join(root, 'config/ielts-audio/production-manifest.json'));
 const repairManifest = readJson(path.join(root, 'config/ielts-audio/repair-manifest.json'));
 const castingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'))).digest('hex');
+const batchApproval = readJson(path.join(root, 'config/ielts-audio/batch-quality-approval.json'));
+const { approvalSha256, ...batchApprovalCore } = batchApproval ?? {};
+const computedApprovalSha256 = createHash('sha256').update(JSON.stringify(batchApprovalCore)).digest('hex');
+assert.equal(approvalSha256, computedApprovalSha256, 'Batch quality approval digest is stale');
+assert.equal(batchApproval.status, 'APPROVED', 'Batch quality approval is not approved');
+assert.equal(batchApproval.productionManifestSha256, manifest.manifestSha256, 'Batch quality approval belongs to a stale production manifest');
+assert.equal(batchApproval.repairManifestSha256, repairManifest.repairManifestSha256, 'Batch quality approval belongs to a stale repair manifest');
+assert.equal(batchApproval.castingSha256, castingSha256, 'Batch quality approval belongs to a stale casting and assembly policy');
+const qualityApprovalBySet = new Map(batchApproval.files.map(file => [file.set, file]));
 const baseStatus = args['base-status'] ? readJson(path.resolve(args['base-status'])) : null;
 const baseBySet = new Map((baseStatus?.sets ?? []).map(row => [row.set, row]));
 const audioDuration = file => {
@@ -71,6 +80,13 @@ const rows = manifest.rows.map(row => {
     && repaired.qa.audioSha256 === repaired.file.sha256
     && repaired.qa.repairManifestSha256 === repairManifest.repairManifestSha256;
   const legacyAnswersPresent = existingAsr?.completionEvidenceFound === existingAsr?.completionEvidenceTotal;
+  const currentStaged = productionPassed
+    ? { source: 'STAGED_NEW', audioSha256: produced.file.audioSha256 }
+    : repairPassed ? { source: 'STAGED_REPAIR', audioSha256: repaired.file.sha256 } : null;
+  const qualityApproval = qualityApprovalBySet.get(row.set);
+  const audioQualityApproved = Boolean(currentStaged)
+    && qualityApproval?.source === currentStaged.source
+    && qualityApproval?.audioSha256 === currentStaged.audioSha256;
   const base = baseBySet.get(row.set);
   let state = 'AUTOMATED_QA_INCOMPLETE';
   let source = 'PUBLIC_LEGACY';
@@ -80,14 +96,14 @@ const rows = manifest.rows.map(row => {
     ?? audioDuration(path.join(root, 'public', row.audioUrl));
   let nextAction = 'Resolver la evidencia automática faltante antes de revisión humana.';
   if (productionPassed) {
-    state = 'AUTO_QA_PASS_PENDING_HUMAN';
+    state = audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
     source = 'STAGED_NEW';
     completionEvidence = produced.qa.effectiveCompletionEvidence;
     wordErrorRate = produced.qa.effectiveWordErrorRate ?? produced.qa.globalAsr?.wordErrorRate ?? null;
     durationSeconds = produced.technicalFile?.durationSeconds ?? null;
     nextAction = 'Escucha humana completa Q1–Q40; después publicar por hash.';
   } else if (repairPassed) {
-    state = 'AUTO_QA_PASS_PENDING_HUMAN';
+    state = audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
     source = 'STAGED_REPAIR';
     completionEvidence = repaired.qa.effectiveCompletionEvidence;
     wordErrorRate = null;
@@ -102,6 +118,7 @@ const rows = manifest.rows.map(row => {
     state,
     source,
     releaseReady: false,
+    audioQualityApproved,
     completionEvidence,
     wordErrorRate,
     durationSeconds,
@@ -123,7 +140,8 @@ const report = {
   humanReviewRequired: true,
   summary: {
     totalSets: rows.length,
-    automatedQaPassed: rows.filter(row => row.state === 'AUTO_QA_PASS_PENDING_HUMAN').length,
+    automatedQaPassed: rows.filter(row => ['AUTO_QA_PASS_PENDING_HUMAN', 'BATCH_QUALITY_APPROVED_PENDING_Q40'].includes(row.state)).length,
+    audioQualityApproved: rows.filter(row => row.audioQualityApproved).length,
     legacyAnswersPresentPendingHuman: rows.filter(row => row.state === 'LEGACY_ANSWERS_PRESENT_PENDING_HUMAN').length,
     answerCoverageComplete: rows.filter(row => {
       const [found, total] = row.completionEvidence.split('/').map(Number);
@@ -135,6 +153,7 @@ const report = {
 };
 
 const labels = {
+  BATCH_QUALITY_APPROVED_PENDING_Q40: 'Calidad del lote aprobada; falta evidencia Q1–Q40',
   AUTO_QA_PASS_PENDING_HUMAN: 'QA automático aprobado; falta escucha humana',
   LEGACY_ANSWERS_PRESENT_PENDING_HUMAN: 'Respuestas presentes; falta decisión humana',
   AUTOMATED_QA_INCOMPLETE: 'QA automático incompleto',
@@ -147,6 +166,7 @@ const markdown = [
   `Manifiesto de producción: \`${manifest.manifestSha256}\``,
   `Cobertura automática de respuestas: **${report.summary.answerCoverageComplete}/20 sets**`,
   `QA automático completo en staging: **${report.summary.automatedQaPassed}/20 sets**`,
+  `Calidad auditiva del lote aprobada por el propietario: **${report.summary.audioQualityApproved}/20 sets**`,
   'Publicación: **0/20**; todos requieren escucha humana y el audio público permanece sin cambios.',
   '',
   '| Set | Estado de audio | Fuente | Min | Guion L | Respuestas | WER | Reading | Writing T1/T2 | Imagen T1 | Próxima acción |',
