@@ -1,16 +1,19 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AudioPlayer, Timer } from '@/components/exam-runner/primitives';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import type { Exam } from '@/data/exams';
 import type { FormGroupQuestion, MCQQuestion, MockExam, MockSection, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
+import { formatGoetheModule } from '@/lib/goethe/scoring';
+import type { GoetheResultStatus, GoetheSubmissionReceipt } from '@/lib/goethe/submission';
+import GoetheSubmission from './GoetheSubmission';
 import styles from './goethe-a1.module.css';
 
 type Skill = 'listening' | 'reading' | 'writing' | 'speaking';
-type Phase = 'intro' | 'exam' | 'results';
+type Phase = 'intro' | 'exam' | 'submit' | 'results';
 type DeliveryMode = 'class' | 'simulation';
 
 const SKILLS: Array<{ id: Skill; label: string; minutes: number; points: number }> = [
@@ -82,24 +85,6 @@ function normalise(value: string) {
 
 function wordCount(value: string) {
   return value.trim() ? value.trim().split(/\s+/).length : 0;
-}
-
-const GOETHE_FACTOR = 1.66;
-
-function scaledScore(rawPoints: number) {
-  return Math.round(rawPoints * GOETHE_FACTOR);
-}
-
-function formattedScaledScore(rawPoints: number) {
-  return (rawPoints * GOETHE_FACTOR).toFixed(2).replace('.', ',');
-}
-
-function scoreBand(score: number) {
-  if (score >= 90) return 'sehr gut';
-  if (score >= 80) return 'gut';
-  if (score >= 70) return 'befriedigend';
-  if (score >= 60) return 'ausreichend';
-  return 'nicht bestanden';
 }
 
 function officialPartNumber(part: number) {
@@ -437,7 +422,7 @@ function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, car
           <pre className={styles.speakingPrompt}>{question.text}</pre>
           {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} currentIndex={cardProgress[section.part] ?? -1} order={cardOrders[section.part] ?? []} onIndexChange={index => onCardProgress(section.part, index)} onOrderChange={order => onCardOrder(section.part, order)} />}
           <div className={styles.recorder}>
-            <p>Grabación opcional para revisión en clase</p>
+            <p>Grabación privada para la evaluación final</p>
             <IELTSSpeakingRecorder questionId={question.id} recording={recordings[question.id]} maxSeconds={section.part === 9 ? 180 : 300} onChange={recording => onRecording(question.id, recording)} />
           </div>
         </div>
@@ -515,10 +500,6 @@ function FormReview({ question, values }: { question: FormGroupQuestion; values:
   );
 }
 
-function ScoreSelect({ label, value, options, onChange }: { label: string; value?: number; options: number[]; onChange: (value: number) => void }) {
-  return <label className={styles.scoreRow}><span>{label}</span><select value={value ?? ''} onChange={event => onChange(Number(event.target.value))}><option value="">Pendiente</option>{options.map(option => <option key={option} value={option}>{String(option).replace('.', ',')}</option>)}</select></label>;
-}
-
 function SubmissionReview({ listeningMissing, readingMissing, formMissing, writingMissing, onBack, onSubmit }: {
   listeningMissing: number;
   readingMissing: number;
@@ -557,8 +538,8 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const [writing, setWriting] = useState('');
   const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording | undefined>>({});
   const [playedParts, setPlayedParts] = useState(new Set<number>());
-  const [writingScores, setWritingScores] = useState<Record<string, number>>({});
-  const [speakingScores, setSpeakingScores] = useState<Record<string, number>>({});
+  const [receipt, setReceipt] = useState<GoetheSubmissionReceipt | null>(null);
+  const [resultStatus, setResultStatus] = useState<GoetheResultStatus | null>(null);
   const [showSubmitReview, setShowSubmitReview] = useState(false);
   const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
   const [speakingCardOrders, setSpeakingCardOrders] = useState<Record<number, number[]>>({});
@@ -570,20 +551,14 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const readingCorrect = correctFor(readingQuestions);
   const formQuestion = moduleSections(mock, 'writing').flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion;
   const formCorrect = formQuestion.blanks.filter(blank => blank.answers.some(answer => normalise(answer) === normalise(formValues[blank.num] ?? ''))).length;
-  const writingOpen = ['content1', 'content2', 'content3', 'conventions'].reduce((sum, key) => sum + (writingScores[key] ?? 0), 0);
-  const writingTaskRaw = Math.round(writingOpen);
-  const speakingRaw = Math.round(['part1', 'part2', 'part3'].reduce((sum, key) => sum + (speakingScores[key] ?? 0), 0));
-  const writingRaw = formCorrect + writingTaskRaw;
+  const writingRaw = formCorrect;
   const scaled = {
-    listening: formattedScaledScore(listeningCorrect),
-    reading: formattedScaledScore(readingCorrect),
-    writing: formattedScaledScore(writingRaw),
-    speaking: formattedScaledScore(speakingRaw),
+    listening: formatGoetheModule(listeningCorrect),
+    reading: formatGoetheModule(readingCorrect),
+    writing: formatGoetheModule(writingRaw),
   };
-  const rawTotal = listeningCorrect + readingCorrect + writingRaw + speakingRaw;
-  const totalScore = scaledScore(rawTotal);
-  const manualComplete = Object.keys(writingScores).length === 4 && Object.keys(speakingScores).length === 3;
-  const resultBand = scoreBand(totalScore);
+  const rawTotal = receipt?.automatic.automaticRaw ?? (listeningCorrect + readingCorrect + formCorrect);
+  const totalScore = resultStatus?.status === 'reviewed' ? resultStatus.totalScore ?? 0 : receipt?.automatic.automaticScaled ?? 0;
   const objectiveAnswered = [...listeningQuestions, ...readingQuestions].filter(question => answers[question.id] !== undefined).length;
   const listeningMissing = listeningQuestions.filter(question => answers[question.id] === undefined).length;
   const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
@@ -592,6 +567,22 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const activeSkillIndex = SKILLS.findIndex(skill => skill.id === activeSkill);
   const activeSkillMeta = SKILLS[activeSkillIndex];
   const nextSkill = SKILLS[activeSkillIndex + 1];
+
+  useEffect(() => {
+    if (phase !== 'results' || !receipt || resultStatus?.status === 'reviewed') return
+    let cancelled = false
+    async function refreshResult() {
+      try {
+        const response = await fetch(`/api/goethe/${encodeURIComponent(mock.id)}/submissions?submissionId=${encodeURIComponent(receipt!.submissionId)}&token=${encodeURIComponent(receipt!.completionToken)}`)
+        if (!response.ok) return
+        const next = await response.json() as GoetheResultStatus
+        if (!cancelled && next.ok) setResultStatus(next)
+      } catch {}
+    }
+    void refreshResult()
+    const interval = window.setInterval(refreshResult, 15_000)
+    return () => { cancelled = true; window.clearInterval(interval) }
+  }, [mock.id, phase, receipt, resultStatus?.status]);
 
   function advanceExam() {
     if (!nextSkill) {
@@ -604,7 +595,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   }
 
   function restart() {
-    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({}); setShowSubmitReview(false); setSpeakingCardProgress({}); setSpeakingCardOrders({});
+    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setShowSubmitReview(false); setSpeakingCardProgress({}); setSpeakingCardOrders({});
   }
 
   return (
@@ -631,12 +622,12 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
           <>
             <header className={styles.topbar}>
               <div><span>WELEARN · A1</span><strong>Simulacro 1</strong></div>
-              <div className={styles.topbarStatus}><span>Bloque {activeSkillIndex + 1} de {SKILLS.length} · {objectiveAnswered}/30 objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('results')} />}</div>
+              <div className={styles.topbarStatus}><span>Bloque {activeSkillIndex + 1} de {SKILLS.length} · {objectiveAnswered}/30 objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('submit')} />}</div>
             </header>
             <ol className={styles.tabs} aria-label="Progreso del examen">{SKILLS.map((skill, index) => <li key={skill.id} className={index < activeSkillIndex ? styles.tabComplete : activeSkill === skill.id ? styles.tabActive : styles.tabPending} aria-current={activeSkill === skill.id ? 'step' : undefined}><span><b>{index + 1}</b>{skill.label}</span><small>{index < activeSkillIndex ? 'Cerrado' : activeSkill === skill.id ? 'En curso' : `${skill.minutes} min`}</small></li>)}</ol>
             <main className={styles.exam}>
               {showSubmitReview ? (
-                <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('results')} />
+                <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('submit')} />
               ) : (
                 <>
                   {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
@@ -653,30 +644,42 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
           </>
         )}
 
+        {phase === 'submit' && (
+          <main className={styles.results}>
+            <header className={styles.resultsHeader}><Link href={`/examenes/${exam.slug}`}>WELEARN · DEUTSCH A1</Link><span>Prüfung abgeben</span></header>
+            <GoetheSubmission
+              mockId={mock.id}
+              answers={answers}
+              formValues={formValues}
+              writing={writing}
+              cardOrders={speakingCardOrders}
+              recordings={recordings}
+              objectiveMissing={listeningMissing + readingMissing}
+              formMissing={formMissing}
+              onBack={() => { setPhase('exam'); setActiveSkill('speaking'); setShowSubmitReview(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onSuccess={nextReceipt => { setReceipt(nextReceipt); setResultStatus(null); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            />
+          </main>
+        )}
+
         {phase === 'results' && (
           <main className={styles.results}>
             <header className={styles.resultsHeader}><Link href={`/examenes/${exam.slug}`}>WELEARN · DEUTSCH A1</Link><span>Ergebnisbericht</span></header>
             <div className={styles.resultHero}>
-              <p>{manualComplete ? 'Gesamtergebnis' : 'Vorläufiges Ergebnis'}</p>
+              <p>{resultStatus?.status === 'reviewed' ? 'Gesamtergebnis' : 'Bestätigtes Zwischenergebnis'}</p>
               <div><strong>{totalScore}</strong><span>/ 100 Punkte</span></div>
-              {manualComplete ? <b className={totalScore >= 60 ? styles.pass : styles.fail}>{totalScore >= 60 ? 'BESTANDEN' : 'NICHT BESTANDEN'} · {resultBand}</b> : <small>Schreiben Teil 2 und Sprechen müssen noch bewertet werden.</small>}
-              <em>{rawTotal}/60 Rohpunkte · Faktor 1,66 · auf volle Punkte gerundet</em>
+              {resultStatus?.status === 'reviewed' ? <b className={(resultStatus.totalScore ?? 0) >= 60 ? styles.pass : styles.fail}>{resultStatus.totalLabel}</b> : <small>Este es el puntaje automático confirmado. Schreiben Teil 2 y Sprechen están pendientes de revisión administrativa.</small>}
+              <em>{resultStatus?.status === 'reviewed' ? 'Rúbrica cerrada · actualización automática confirmada' : `${rawTotal}/60 Rohpunkte confirmados · Faktor 1,66 · resultado final pendiente`}</em>
             </div>
             <div className={styles.scoreGrid}>
               <article><span>Hören</span><strong>{scaled.listening}</strong><small>{listeningCorrect}/15 Rohpunkte · max. 25 P.</small></article>
               <article><span>Lesen</span><strong>{scaled.reading}</strong><small>{readingCorrect}/15 Rohpunkte · max. 25 P.</small></article>
-              <article><span>Schreiben</span><strong>{scaled.writing}</strong><small>{writingRaw}/15 Rohpunkte · max. 25 P.</small></article>
-              <article><span>Sprechen</span><strong>{scaled.speaking}</strong><small>{speakingRaw}/15 Rohpunkte · max. 25 P.</small></article>
+              <article><span>Schreiben</span><strong>{resultStatus?.status === 'reviewed' ? resultStatus.skills.find(skill => skill.skill === 'Schreiben')?.label.split('·').pop()?.trim() ?? 'Listo' : `${scaled.writing}+`}</strong><small>{resultStatus?.status === 'reviewed' ? resultStatus.skills.find(skill => skill.skill === 'Schreiben')?.label : `${formCorrect}/5 confirmados · Teil 2 pendiente`}</small></article>
+              <article><span>Sprechen</span><strong>{resultStatus?.status === 'reviewed' ? resultStatus.skills.find(skill => skill.skill === 'Sprechen')?.label.split('·').pop()?.trim() ?? 'Listo' : '—'}</strong><small>{resultStatus?.status === 'reviewed' ? resultStatus.skills.find(skill => skill.skill === 'Sprechen')?.label : '3 audios enviados · revisión pendiente'}</small></article>
             </div>
 
-            <section className={styles.teacherPanel}>
-              <header><p>Bewertungsbogen · docente</p><h2>Completar la evaluación abierta</h2><span>Selecciona únicamente los valores previstos. El resultado se recalcula siguiendo la escala Goethe.</span></header>
-              <div className={styles.rubricColumns}>
-                <div><h3>Schreiben · Teil 2 <span>10 P.</span></h3><p className={styles.rubricHint}>3 = cumplido y comprensible · 1,5 = parcialmente cumplido · 0 = no cumplido.</p><ScoreSelect label="Motivo del mensaje" value={writingScores.content1} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content1: value }))} /><ScoreSelect label="Habitación para dos" value={writingScores.content2} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content2: value }))} /><ScoreSelect label="Precio con desayuno" value={writingScores.content3} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content3: value }))} /><ScoreSelect label="Anrede und Gruß" value={writingScores.conventions} options={[0, 0.5, 1]} onChange={value => setWritingScores(previous => ({ ...previous, conventions: value }))} /></div>
-                <div><h3>Sprechen <span>15 P.</span></h3><p className={styles.rubricHint}>Valora cumplimiento, inteligibilidad y reacción adecuada en cada parte.</p><ScoreSelect label="Teil 1 · presentación" value={speakingScores.part1} options={[0, 0.5, 1, 1.5, 2, 2.5, 3]} onChange={value => setSpeakingScores(previous => ({ ...previous, part1: value }))} /><ScoreSelect label="Teil 2 · preguntas/respuestas" value={speakingScores.part2} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part2: value }))} /><ScoreSelect label="Teil 3 · peticiones/reacciones" value={speakingScores.part3} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part3: value }))} /></div>
-              </div>
-              <div className={styles.writingReview}><span>Antwort · Schreiben Teil 2</span><pre>{writing || 'Keine Antwort'}</pre><small>{wordCount(writing)} Wörter</small></div>
-            </section>
+            <section className={styles.resultNotice}><strong>Entrega recibida</strong><p>Identificador: <code>{receipt?.submissionId}</code>. El administrador puede ver cada respuesta, el texto y los audios privados para cerrar la rúbrica y el resultado Goethe sobre 100.</p></section>
+            {resultStatus?.status === 'reviewed' && resultStatus.feedback && <section className={styles.resultFeedback}><strong>Feedback del revisor</strong><p>{resultStatus.feedback}</p></section>}
 
             <section className={styles.review} aria-labelledby="answer-review-title">
               <header><p>Antwort für Antwort</p><h2 id="answer-review-title">Revisión detallada</h2><span>Cada respuesta muestra el punto obtenido, la opción marcada y la solución correcta.</span></header>

@@ -25,7 +25,7 @@
     "test:admin-access": "node --experimental-strip-types --no-warnings --test tests/admin-access.test.mjs",
     "test:registration-onboarding": "node --experimental-strip-types --no-warnings --test tests/registration-onboarding.test.mjs",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
-    "check:goethe-a1": "node scripts/check-goethe-a1-set1.mjs",
+    "check:goethe-a1": "node scripts/check-goethe-a1-set1.mjs && node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/goethe-a1-scoring.test.mjs",
     "check:advanced-guided": "node --experimental-strip-types --no-warnings scripts/check-advanced-guided-lessons.mjs",
     "audio:advanced-dunning": "node --experimental-strip-types --no-warnings scripts/generate-advanced-dunning-audio.mjs",
     "audio:advanced-hypergamy": "node --experimental-strip-types --no-warnings scripts/generate-advanced-hypergamy-audio.mjs",

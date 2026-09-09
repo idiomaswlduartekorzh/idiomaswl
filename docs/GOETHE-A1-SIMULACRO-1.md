@@ -1,5 +1,13 @@
 # Goethe A1 · Simulacro 1 para clase
 
+## Circuito de entrega y evaluación
+
+- El estudiante avanza en orden por Hören, Lesen, Schreiben y Sprechen; la ruta pública no muestra transcripciones ni una hoja imprimible.
+- Antes del resultado se capturan nombre, correo y WhatsApp. Las respuestas se validan y califican de nuevo en servidor.
+- Las tres grabaciones de Sprechen se suben mediante enlaces temporales a un bucket privado; no existen políticas públicas de lectura.
+- El resultado inmediato confirma Hören, Lesen y el formulario de Schreiben. El score definitivo sobre 100 se publica cuando administración aplica la rúbrica de Schreiben Teil 2 y Sprechen.
+- El panel administrativo conserva la hoja digital completa: respuesta por respuesta, formulario, mensaje, audios, evidencia del revisor, puntaje bruto sobre 60, conversión por factor 1,66 y estado bestanden/nicht bestanden.
+
 Estado: listo para aplicación local. El contenido es original de WeLearn y replica la arquitectura pública de Start Deutsch 1; no es material oficial ni está afiliado al Goethe-Institut.
 
 ## Ruta

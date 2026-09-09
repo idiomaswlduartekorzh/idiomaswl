@@ -18,6 +18,7 @@ import type { DashboardData, LeadRow } from './JoseDashboardServer'
 import StudentList from './StudentList'
 import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
+import GoetheReviewPanel from './GoetheReviewPanel'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -514,6 +515,9 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
           )}
           {data.toeflReviews.length > 0 && (
             <TOEFLReviewPanel items={data.toeflReviews} />
+          )}
+          {data.goetheReviews.length > 0 && (
+            <GoetheReviewPanel items={data.goetheReviews} />
           )}
 
           {/* Row 3: Recent submissions + Top users */}

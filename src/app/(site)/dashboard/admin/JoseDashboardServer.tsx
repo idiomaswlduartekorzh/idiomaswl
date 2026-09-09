@@ -22,11 +22,14 @@ export interface ExamSubmission {
   total_label: string | null
   skills: unknown
   created_at: string
+  objective_answers?: unknown
+  assignment_snapshot?: unknown
   // IELTS admin-review fields
   writing_task1_answer?: string | null
   writing_task2_answer?: string | null
   speaking_answers?: Record<string, string> | null
   speaking_audio_paths?: Record<string, string> | null
+  speaking_audio_metadata?: Record<string, unknown> | null
   speaking_audio_files?: { questionId: string; signedUrl: string }[]
   submission_status?: 'uploading' | 'submitted'
   reading_band?: number | null
@@ -68,6 +71,7 @@ export interface DashboardData {
   topUsers: { user_email: string; count: number }[]
   ieltsReviews: ExamSubmission[]
   toeflReviews: ExamSubmission[]
+  goetheReviews: ExamSubmission[]
   students: StudentRow[]
   /** Leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...), no solo ICFES. */
   leads: LeadRow[]
@@ -120,6 +124,7 @@ export default async function JoseDashboardServer() {
     { data: submissions },
     { data: ieltsSubmissionRows },
     { data: toeflSubmissionRows },
+    { data: goetheSubmissionRows },
   ] = await Promise.all([
     supabase
       .from('exam_submissions')
@@ -138,6 +143,14 @@ export default async function JoseDashboardServer() {
       .from('exam_submissions')
       .select('id, user_id, user_email, user_name, exam_slug, exam_name, mock_id, mock_title, total_score, total_max, total_label, created_at, writing_task1_answer, writing_task2_answer, speaking_audio_paths, writing_task1_assessment, writing_task2_assessment, toefl_speaking_repeat_assessment, toefl_speaking_interview_assessment, reviewed_at, reviewed_by, submission_status')
       .eq('exam_slug', 'toefl')
+      .eq('submission_status', 'submitted')
+      .order('created_at', { ascending: false })
+      .limit(500),
+    supabase
+      .from('exam_submissions')
+      .select('id, user_id, user_email, user_name, exam_slug, exam_name, mock_id, mock_title, total_score, total_max, total_label, skills, created_at, objective_answers, assignment_snapshot, writing_task2_answer, speaking_audio_paths, speaking_audio_metadata, writing_task1_assessment, speaking_assessment, writing_band, speaking_band, reviewed_at, reviewed_by, submission_status')
+      .eq('exam_slug', 'goethe')
+      .eq('mock_id', 'a1-1')
       .eq('submission_status', 'submitted')
       .order('created_at', { ascending: false })
       .limit(500),
@@ -191,6 +204,9 @@ export default async function JoseDashboardServer() {
   )
   const toeflReviews = ((toeflSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
     Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_audio_paths)
+  )
+  const goetheReviews = ((goetheSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
+    Boolean(r.objective_answers || r.writing_task2_answer || r.speaking_audio_paths)
   )
 
   // ── Students list ────────────────────────────────────────────────────────────
@@ -315,6 +331,7 @@ export default async function JoseDashboardServer() {
     ...rows,
     ...((ieltsSubmissionRows ?? []) as ExamSubmission[]),
     ...((toeflSubmissionRows ?? []) as ExamSubmission[]),
+    ...((goetheSubmissionRows ?? []) as ExamSubmission[]),
   ]) {
     if (!submissionMap.has(submission.id)) submissionMap.set(submission.id, submission)
   }
@@ -354,6 +371,7 @@ export default async function JoseDashboardServer() {
     topUsers,
     ieltsReviews,
     toeflReviews,
+    goetheReviews,
     students,
     leads,
   }
