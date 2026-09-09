@@ -23,12 +23,12 @@ const mock: MockExam = {
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
       audioUrl: '/audio/goethe/a1-1/hoeren-teil1.mp3', transcript: transcriptFor(1),
       questions: [
-        { type: 'mcq', id: 'g-a1-1-h1', part: 1, text: 'Was kostet die Jacke heute?', options: ['🧥 18,90 €', '🧥 28,90 €', '🧥 38,90 €'], answer: 0 },
-        { type: 'mcq', id: 'g-a1-1-h2', part: 1, text: 'Wann treffen sie sich?', options: ['🕟 16:30 Uhr', '🕔 16:45 Uhr', '🕔 17:15 Uhr'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-1-h3', part: 1, text: 'Was nimmt die Frau?', options: ['🥣 Tomatensuppe', '🥗 Salat', '🥪 Käsebrot'], answer: 2 },
-        { type: 'mcq', id: 'g-a1-1-h4', part: 1, text: 'Wie viele Flaschen kaufen sie?', options: ['💧 2', '💧 4', '💧 10'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-1-h5', part: 1, text: 'Wo sind die Kinderbücher?', options: ['1️⃣ im ersten Stock', '2️⃣ im zweiten Stock', '3️⃣ im dritten Stock'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-1-h6', part: 1, text: 'Wie lange bleibt die Frau in Köln?', options: ['🧳 zwei Nächte', '🧳 drei Nächte', '🧳 eine Woche'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-1-h1', part: 1, text: 'Was kostet die Jacke heute?', options: ['18,90 €', '28,90 €', '38,90 €'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-1-h2', part: 1, text: 'Wann treffen sie sich?', options: ['16:30 Uhr', '16:45 Uhr', '17:15 Uhr'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-1-h3', part: 1, text: 'Was nimmt die Frau?', options: ['Tomatensuppe', 'Salat', 'Käsebrot'], answer: 2 },
+        { type: 'mcq', id: 'g-a1-1-h4', part: 1, text: 'Wie viele Flaschen kaufen sie?', options: ['2', '4', '10'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-1-h5', part: 1, text: 'Wo sind die Kinderbücher?', options: ['im ersten Stock', 'im zweiten Stock', 'im dritten Stock'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-1-h6', part: 1, text: 'Wie lange bleibt die Frau in Köln?', options: ['zwei Nächte', 'drei Nächte', 'eine Woche'], answer: 0 },
       ],
     },
     {
@@ -130,7 +130,7 @@ const mock: MockExam = {
     {
       part: 11, skill: 'speaking', title: 'Sprechen – Teil 3: Bitten formulieren und darauf reagieren',
       instructions: 'Formulieren Sie zwei höfliche Bitten. Reagieren Sie auf zwei Bitten Ihrer Partnerin oder Ihres Partners.',
-      questions: [{ type: 'speak', id: 'g-a1-1-sp3', part: 11, partNumber: 3, text: 'Benutzen Sie die Bildkarten. Beispiel: „Können Sie mir bitte das Wasser geben?“ – „Ja, gern.“', cueCard: '💧 Wasser · 🪟 Fenster · ✏️ Bleistift · 🪑 Stuhl · 🍎 Apfel · 🕒 Uhr\n🚭 nicht rauchen · 📻 Radio · 📕 Buch · 👜 Tasche · 🥄 Löffel · 🚪 Tür' }],
+      questions: [{ type: 'speak', id: 'g-a1-1-sp3', part: 11, partNumber: 3, text: 'Benutzen Sie die Bildkarten. Beispiel: „Können Sie mir bitte das Wasser geben?“ – „Ja, gern.“', cueCard: 'Wasser · Fenster · Bleistift · Stuhl · Apfel · Uhr\nnicht rauchen · Radio · Buch · Tasche · Löffel · Tür' }],
     }
   ],
 };

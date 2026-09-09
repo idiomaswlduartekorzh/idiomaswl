@@ -28,6 +28,13 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - Reparto: `WL de · Klara` (locución), `WL de · Emma` y `WL de · Frau Schneider` (voces femeninas), `WL de · Jonas` y `WL de · Herr Becker` (voces masculinas).
 - Las 28 fuentes naturales están en `public/audio/goethe/a1-1/voice-sources/`; el ensamblaje añade lecturas, pausas y repeticiones de forma determinista.
 
+## Láminas visuales originales
+
+- Hören Teil 1 incluye seis trípticos A/B/C: precio, hora, comida, cantidades, plantas de biblioteca y duración de viaje.
+- Sprechen Teil 3 incluye dos hojas con doce tarjetas pictográficas para peticiones y reacciones.
+- Son ilustraciones originales de WeLearn generadas para este simulacro; no reutilizan las láminas oficiales.
+- Los textos y números críticos permanecen también como opciones HTML accesibles, para que la evaluación no dependa del reconocimiento visual del texto dentro de una imagen.
+
 ## Modos de aplicación
 
 - Modo clase: permite repetir pistas, ver la transcripción docente, usar la hoja imprimible y registrar audio oral opcional.
@@ -46,6 +53,7 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - 1 guion JSON versionado.
 - 28 fuentes de voz natural.
 - 15 clips individuales, 3 pistas por parte y 1 máster completo.
+- 6 láminas A/B/C de Hören y 2 hojas de tarjetas de Sprechen.
 - 1 hoja de respuestas imprimible integrada.
 - 1 rúbrica de Schreiben y 1 rúbrica de Sprechen integradas.
 - 1 generador de montaje y 1 verificador estructural/de audio.

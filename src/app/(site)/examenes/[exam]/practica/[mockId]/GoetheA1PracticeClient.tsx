@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { AudioPlayer, Timer } from '@/components/exam-runner/primitives';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
@@ -18,6 +19,15 @@ const SKILLS: Array<{ id: Skill; label: string; minutes: number; points: number 
   { id: 'writing', label: 'Schreiben', minutes: 20, points: 25 },
   { id: 'speaking', label: 'Sprechen', minutes: 15, points: 25 },
 ];
+
+const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+  1: { src: '/images/goethe/a1-1/hoeren-teil1-01-jacke.png', alt: 'Drei Bildoptionen: blaue Jacke zu 18,90, 28,90 oder 38,90 Euro', width: 2172, height: 724 },
+  2: { src: '/images/goethe/a1-1/hoeren-teil1-02-uhrzeit.png', alt: 'Drei Uhrzeiten: 16:30, 16:45 und 17:15 Uhr', width: 2036, height: 772 },
+  3: { src: '/images/goethe/a1-1/hoeren-teil1-03-essen.png', alt: 'Drei Bildoptionen: Tomatensuppe, Salat und Käsebrot', width: 2172, height: 724 },
+  4: { src: '/images/goethe/a1-1/hoeren-teil1-04-flaschen.png', alt: 'Drei Bildoptionen mit zwei, vier und zehn Wasserflaschen', width: 2172, height: 724 },
+  5: { src: '/images/goethe/a1-1/hoeren-teil1-05-bibliothek.png', alt: 'Drei Etagenoptionen für die Kinderbücher: erster, zweiter oder dritter Stock', width: 2036, height: 772 },
+  6: { src: '/images/goethe/a1-1/hoeren-teil1-06-reise.png', alt: 'Drei Reisedauern: zwei Nächte, drei Nächte oder eine Woche', width: 2036, height: 772 },
+};
 
 function normalise(value: string) {
   return value.trim().toLocaleLowerCase('de-DE').replace(/[.,;:!?]+$/g, '').replace(/\s+/g, ' ');
@@ -47,9 +57,11 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual }
   showResult?: boolean;
   visual?: boolean;
 }) {
+  const visualPlate = visual ? LISTENING_PLATES[number] : undefined;
   return (
     <fieldset className={styles.question}>
       <legend><span className={styles.questionNumber}>{number}</span>{question.text}</legend>
+      {visualPlate && <Image className={styles.answerPlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
       {question.stimulusLabel && <p className={styles.contextLabel}>{question.stimulusLabel}</p>}
       {question.stimulus && (
         <div className={question.stimulusStyle === 'sign' ? styles.sign : styles.adPair}>
@@ -239,6 +251,12 @@ function SpeakingModule({ mock, recordings, onRecording }: {
       <SectionShell key={section.part} section={section}>
         <div className={styles.speakingTask}>
           <pre className={styles.speakingPrompt}>{question.text}</pre>
+          {section.part === 11 && (
+            <div className={styles.pictureCardSheets} aria-label="Bildkarten für Sprechen Teil 3">
+              <Image src="/images/goethe/a1-1/sprechen-teil3-karten-01.png" alt="Bildkarten: Wasser, Fenster, Bleistift, Stuhl, Apfel und Uhr" width={1536} height={1024} sizes="(max-width: 720px) 100vw, 900px" />
+              <Image src="/images/goethe/a1-1/sprechen-teil3-karten-02.png" alt="Bildkarten: nicht rauchen, Radio, Buch, Tasche, Löffel und Tür" width={1536} height={1024} sizes="(max-width: 720px) 100vw, 900px" />
+            </div>
+          )}
           {question.cueCard && <div className={styles.cardGroups}>{groups.map(group => (
             <div key={group.title}>
               <h3>{group.title}</h3>

@@ -9,6 +9,7 @@ const source = fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set
 const script = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-1-audio.json'), 'utf8'));
 const audioManifestPath = path.join(repoRoot, 'public/audio/goethe/a1-1/manifest.json');
 const voiceSourceDir = path.join(repoRoot, 'public/audio/goethe/a1-1/voice-sources');
+const imageDir = path.join(repoRoot, 'public/images/goethe/a1-1');
 const ffprobe = '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/tools/bin/ffprobe';
 
 function uniqueMatches(pattern) {
@@ -29,6 +30,11 @@ const audioManifest = JSON.parse(fs.readFileSync(audioManifestPath, 'utf8'));
 assert.match(audioManifest.generatedWith, /ElevenLabs v3/, 'production audio must use the approved natural German voices');
 assert.ok(fs.existsSync(voiceSourceDir), 'natural voice sources are missing');
 assert.equal(fs.readdirSync(voiceSourceDir).filter(name => name.endsWith('.mp3')).length, 28, 'expected 28 natural voice source clips');
+assert.ok(fs.existsSync(imageDir), 'exam illustration directory is missing');
+assert.equal(fs.readdirSync(imageDir).filter(name => name.endsWith('.png')).length, 8, 'expected six listening plates and two speaking card sheets');
+for (const name of fs.readdirSync(imageDir).filter(file => file.endsWith('.png'))) {
+  assert.ok(fs.statSync(path.join(imageDir, name)).size > 100_000, `${name} is unexpectedly small`);
+}
 assert.equal(audioManifest.outputs.length, 19, 'expected 15 item clips + 3 part tracks + 1 complete track');
 for (const output of audioManifest.outputs) {
   const file = path.join(repoRoot, output.file);
@@ -41,4 +47,4 @@ const complete = audioManifest.outputs.find(output => output.file.endsWith('/hoe
 assert.ok(complete.durationSeconds >= 1020 && complete.durationSeconds <= 1200, `complete listening audio must be 17–20 minutes, got ${complete.durationSeconds}s`);
 
 console.log('✓ Goethe A1 Set 1: 11 partes, Hören 15, Lesen 15, Schreiben 5+10, Sprechen 3+6+6');
-console.log(`✓ Audio completo: ${(complete.durationSeconds / 60).toFixed(2)} min · 19 assets verificados`);
+console.log(`✓ Audio completo: ${(complete.durationSeconds / 60).toFixed(2)} min · 19 assets verificados · 8 láminas visuales`);
