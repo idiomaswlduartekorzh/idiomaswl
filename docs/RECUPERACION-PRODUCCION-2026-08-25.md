@@ -380,3 +380,34 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `/practica/toefl/ejercicios`. Las tres URLs sirvieron sus canonicals esperados; el
   hub sirvió el `ItemList` 14/14 y Vercel mostró cero errores, advertencias o fallos
   fatales en la ventana posterior al despliegue.
+
+### 8 de septiembre de 2026 — membresías Xpress y clases opcionales
+
+- El comercio de Xpress quedó `DESPLEGADO` desde `main` en
+  `e1f04f9041057a91818dd99ad44eeb9e2cac59b8`. Los estudiantes de examen pueden comprar
+  30 días de simulacros con corrección automática por $49.000 o feedback docente por
+  $99.000; el cambio del plan automático al docente cuesta $50.000 durante el mismo
+  periodo y no genera renovación automática.
+- La página protegida `/suscripcion/examenes` guarda la orden antes de abrir Wompi,
+  exige aceptar condiciones y privacidad, verifica la transacción con la API privada
+  del proveedor y activa acceso únicamente ante un estado `APPROVED`. El webhook,
+  la cola de conciliación y los trabajos idempotentes conservan pagos y reintentan los
+  correos del estudiante y de los responsables.
+- Las migraciones `20260909000500_xpress_memberships_wompi.sql` y
+  `20260909003500_xpress_membership_indexes.sql` quedaron aplicadas en el proyecto
+  Supabase `ivqeokuxgxemhydvopdd`. Una prueba transaccional en producción comprobó pago
+  pendiente sin acceso, pago aprobado con una sola membresía, notificación repetida sin
+  duplicado y estado aprobado sin regresión; todos los datos de prueba se revirtieron.
+- Desde la membresía y el panel aparece `Comprar clases`, que abre el flujo de clases
+  existente con idioma, objetivo de examen y plan Esencial de 4 semanas preseleccionados
+  (precio vigente desde $320.000). Las clases conservan su orden, reglamento y cobro
+  independientes de la membresía.
+- Pasaron 19/19 pruebas de Wompi, configuración, checkout, recuperación y Xpress; el
+  catálogo protegido verificó 465 temas, TypeScript y ESLint acotado quedaron limpios,
+  y el build Webpack generó 2.524/2.524 páginas.
+- Vercel completó el deployment `dpl_CyyCQjuXX81b9f57VoDhg2Dm2xEs` desde GitHub
+  `main`; el preview redundante del mismo commit fue omitido sin afectar producción.
+  El smoke en `https://www.idiomaswl.com` comprobó `/registro` en HTTP 200, las diez
+  familias de examen y ambos precios después de seleccionar examen, redirección 307 de
+  `/suscripcion/examenes` a login sin sesión y respuesta 401 de `/api/xpress-orders`
+  para una solicitud no autenticada. No se realizó ningún cobro real durante la prueba.

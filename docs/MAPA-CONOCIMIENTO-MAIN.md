@@ -1,7 +1,7 @@
 # Mapa de conocimiento de `main`
 
-Snapshot trazable del repositorio canónico, actualizado el **7 de septiembre de 2026** desde
-`origin/main@b0eae043bbcf116721744f011f9acb9f5b43bc13`. Describe qué está versionado en `main`;
+Snapshot trazable del repositorio canónico, actualizado el **8 de septiembre de 2026** desde
+`origin/main@e1f04f9041057a91818dd99ad44eeb9e2cac59b8`. Describe qué está versionado en `main`;
 no afirma que un deployment anterior ya sirva cada commit.
 
 ```mermaid
@@ -15,6 +15,7 @@ flowchart TD
   APP --> PRACTICA[Práctica por idioma y nivel]
   APP --> EXAMS[Hubs de exámenes]
   APP --> POD[Podcasts]
+  APP --> COMMERCE[Cobros de clases y membresías Xpress]
 
   PRACTICA --> LISTEN[Escucha<br/>24 series · 480 episodios]
   PRACTICA --> SPEAK[Habla]
@@ -37,6 +38,10 @@ flowchart TD
   DATA --> PAIR
   DATA --> GRAM
   DATA --> EXAMS
+
+  COMMERCE --> WOMPI[Wompi]
+  COMMERCE --> LEDGER[Supabase<br/>órdenes, pagos y membresías]
+  COMMERCE --> MAIL[Resend<br/>comprobantes y avisos]
 
   GUARDS --> BASE[check:production-baseline]
   GUARDS --> CAT[check:practica-catalog]
@@ -62,6 +67,7 @@ flowchart TD
 | TOEFL | rutas y datos TOEFL | guardianes `check:toefl-*` | Hub, audio, editorial y pagos protegidos |
 | SAT | rutas y datos SAT | `check:sat*` + factory tests | Superhub y flujo adaptativo protegidos |
 | ICFES | rutas y datos ICFES | baseline + auditorías ICFES | Juego adaptativo y banco inteligente protegidos |
+| Comercio | `src/lib/course-pricing/`, `src/lib/xpress-commerce/`, APIs de órdenes | pruebas Wompi/Xpress + TypeScript + build | Clases y membresías Xpress con registro durable; activación solo después de pago aprobado |
 | Navegación/SEO | `src/app`, sitemap y componentes compartidos | baseline, navegación, SEO | Rutas críticas y marcadores protegidos |
 
 ## Cómo leer este mapa
