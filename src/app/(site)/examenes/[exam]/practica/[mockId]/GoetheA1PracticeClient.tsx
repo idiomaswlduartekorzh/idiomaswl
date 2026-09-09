@@ -29,6 +29,17 @@ const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number
   6: { src: '/images/goethe/a1-1/hoeren-teil1-06-reise.png', alt: 'Drei Reisedauern: zwei Nächte, drei Nächte oder eine Woche', width: 2036, height: 772 },
 };
 
+const LISTENING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; note: string }> = {
+  1: { question: 'Wann kommt der Mann heute?', options: ['9 Uhr', '10 Uhr', 'morgen um 9 Uhr'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
+  2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
+};
+
+const READING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; stimulus: string }> = {
+  4: { question: 'Nora schreibt Luis eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'Hallo Luis, … Liebe Grüße, Nora' },
+  5: { question: 'Wo können Sie am Sonntag Brot kaufen?', options: ['A — Bäckerei: Sonntag 8–12 Uhr', 'B — Café: Sonntag geschlossen'], answer: 0, stimulus: 'Sie möchten am Sonntag Brot kaufen.' },
+  6: { question: 'Hier muss man leise sein.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'BIBLIOTHEK · Bitte leise sprechen.' },
+};
+
 function normalise(value: string) {
   return value.trim().toLocaleLowerCase('de-DE').replace(/[.,;:!?]+$/g, '').replace(/\s+/g, ' ');
 }
@@ -91,6 +102,32 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual }
   );
 }
 
+function ResolvedExample({ question, options, answer, note, stimulus }: {
+  question: string;
+  options: string[];
+  answer: number;
+  note?: string;
+  stimulus?: string;
+}) {
+  return (
+    <aside className={styles.example} aria-label="Beispielaufgabe">
+      <div className={styles.exampleLabel}>Beispiel · gelöst</div>
+      {stimulus && <p className={styles.exampleStimulus}>{stimulus}</p>}
+      <p className={styles.exampleQuestion}>{question}</p>
+      <div className={styles.exampleOptions}>
+        {options.map((option, index) => (
+          <label key={option} className={index === answer ? styles.exampleCorrect : ''}>
+            <input type="radio" checked={index === answer} readOnly disabled />
+            <span>{String.fromCharCode(65 + index)}</span>
+            {option}
+          </label>
+        ))}
+      </div>
+      {note && <small>{note}</small>}
+    </aside>
+  );
+}
+
 function SectionShell({ section, children }: { section: MockSection; children: React.ReactNode }) {
   const officialPart = section.part <= 3 ? section.part : section.part <= 6 ? section.part - 3 : section.part <= 8 ? section.part - 6 : section.part - 8;
   return (
@@ -137,6 +174,9 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
           <pre>{section.transcript}</pre>
         </details>
       )}
+      {LISTENING_EXAMPLES[section.part] && (
+        <ResolvedExample {...LISTENING_EXAMPLES[section.part]} />
+      )}
       <div className={styles.questionList}>
         {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} visual={section.part === 1} />)}
       </div>
@@ -161,6 +201,9 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
             </article>
           ))}
         </div>
+      )}
+      {READING_EXAMPLES[section.part] && (
+        <ResolvedExample {...READING_EXAMPLES[section.part]} />
       )}
       <div className={styles.questionList}>
         {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} />)}
