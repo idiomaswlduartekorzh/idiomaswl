@@ -234,7 +234,7 @@ const mock: MockExam = {
           id: "p4q5",
           part: 4,
           text: "Choose the best word for blank (20).",
-          options: ["someone", "everything", "everyone", "anyone"],
+          options: ["universal", "universally", "everyone", "every"],
           answer: 2,
         },
         {

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T00:00:00-05:00",
+  "sourceReport": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json",
+  "scope": {
+    "severities": ["high", "medium"],
+    "sourceFindings": 26,
+    "dispositionedFindings": 26,
+    "unresolvedHighFindings": 0
+  },
+  "policy": {
+    "safeCorrection": "Change only original/local material when the audit evidence and item context determine the intended answer.",
+    "safeBlock": "Do not sell or label official detail as verified when primary-source provenance or licensing is absent.",
+    "falsePositive": "Use only when the reported condition cannot be reproduced; no finding met that threshold in this pass."
+  },
+  "findings": [
+    {
+      "sourceKey": "mock-03::p2q2::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed the unsupported before-use instruction from the keyed paraphrase.",
+      "evidence": ["src/data/mocks/icfes-mock-03.ts", "Notice says WIPE EQUIPMENT AFTER USE; keyed option now says after using it only."]
+    },
+    {
+      "sourceKey": "mock-01::p4q1::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Replaced alternative nouns with word-form distractors so only system completes the noun phrase.",
+      "evidence": ["src/data/mocks/icfes-mock-01.ts", "Key remains B: system."]
+    },
+    {
+      "sourceKey": "mock-01::p4q7::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed busy and installed distractors incompatible with rush-hour crowding.",
+      "evidence": ["src/data/mocks/icfes-mock-01.ts", "Key remains B: crowded."]
+    },
+    {
+      "sourceKey": "mock-02::p4q3::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Replaced alternative human groups with non-human distractors.",
+      "evidence": ["src/data/mocks/icfes-mock-02.ts", "Families is the only option that can coordinate with individuals in context."]
+    },
+    {
+      "sourceKey": "mock-02::p4q6::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Replaced buy with paint; rent remains the unique service available to a visitor who does not own a bicycle.",
+      "evidence": ["src/data/mocks/icfes-mock-02.ts", "Key remains C: rent."]
+    },
+    {
+      "sourceKey": "mock-04::p4q1,p4q5,p4q6::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed children, districts/zones, and college/school/academy as competing completions.",
+      "evidence": ["src/data/mocks/icfes-mock-04.ts", "Keys remain students, regions, and university with unique grammatical-semantic fit."]
+    },
+    {
+      "sourceKey": "mock-11::p4q6,p4q7::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Changed the athlete quality to determination and removed sports/events as alternatives to teams.",
+      "evidence": ["src/data/mocks/icfes-mock-11.ts", "Passage now reads passion and determination; teams is the only viable fan object."]
+    },
+    {
+      "sourceKey": "mock-02,mock-03,mock-06,mock-08,mock-10,mock-11::mock-02:p3q4; mock-03:p3q3; mock-06:p3q3; mock-08:p3q5; mock-10:p3q3; mock-11:p3q2,p3q5::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Reframed prompts or replaced competing natural replies while preserving the intended answer index.",
+      "evidence": ["src/data/mocks/icfes-mock-02.ts", "src/data/mocks/icfes-mock-03.ts", "src/data/mocks/icfes-mock-06.ts", "src/data/mocks/icfes-mock-08.ts", "src/data/mocks/icfes-mock-10.ts", "src/data/mocks/icfes-mock-11.ts"]
+    },
+    {
+      "sourceKey": "mock-15,mock-16::mock-15:p4q1-p4q8; mock-16:p4q1-p4q8::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Reordered the prose so visible cloze markers are monotonically numbered 16 through 23 without changing keys.",
+      "evidence": ["src/data/mocks/icfes-mock-15.ts", "src/data/mocks/icfes-mock-16.ts", "tests/icfes-editorial-remediation.test.mjs"]
+    },
+    {
+      "sourceKey": "mock-17::p4q1,p7q2::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed systems from the brain cloze and rewrote the runtime bird-species clause to exclude what birds.",
+      "evidence": ["src/data/mocks/icfes-mock-17.ts", "src/data/mocks/icfes-current-part-seven.ts"]
+    },
+    {
+      "sourceKey": "mock-18,mock-20,mock-22,mock-23::mock-18:p4q8; mock-20:p4q8; mock-22:p4q5; mock-23:p4q1::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed the alternative valid completions scores/marks/grades, corner, anyone, and in.",
+      "evidence": ["src/data/mocks/icfes-mock-18.ts", "src/data/mocks/icfes-mock-20.ts", "src/data/mocks/icfes-mock-22.ts", "src/data/mocks/icfes-mock-23.ts"]
+    },
+    {
+      "sourceKey": "mock-13,mock-16,mock-17,mock-19::mock-13:p3q3; mock-16:p3q3; mock-17:p3q1; mock-19:p3q3::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Added decisive context or replaced competing replies for all four dialogues.",
+      "evidence": ["src/data/mocks/icfes-mock-13.ts", "src/data/mocks/icfes-mock-16.ts", "src/data/mocks/icfes-mock-17.ts", "src/data/mocks/icfes-mock-19.ts"]
+    },
+    {
+      "sourceKey": "all-official::section metadata::high",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Separated canonicalSkillPartRanges from sourcePartRanges and explicitly set the unverified source map to null; UI now says Mapa pedagógico local.",
+      "evidence": ["src/data/mocks/icfes-simulacros.ts", "src/app/(site)/practica/icfes-saber-11/examenes/[examId]/guiado/page.tsx"]
+    },
+    {
+      "sourceKey": "all-official::provenance manifest::high",
+      "classification": "safe-block",
+      "status": "blocked",
+      "action": "Created immutable per-item provenance records that separate canonicalSkillPart from an unavailable sourcePart and truthfully mark URL, hash, source locator, and official key as unavailable rather than fabricating them.",
+      "evidence": ["src/data/mocks/icfes-simulacros.ts", "Every official item is marked local-bank-only-not-independently-verified."]
+    },
+    {
+      "sourceKey": "all-official-monetized::license::high",
+      "classification": "safe-block",
+      "status": "blocked",
+      "action": "Blocked paid detail for every official resource pending documented legal review and primary-source provenance.",
+      "evidence": ["src/data/mocks/icfes-simulacros.ts", "getSimulacroForPaidDetail returns undefined for all ten official resources."]
+    },
+    {
+      "sourceKey": "mock-03,mock-04,mock-08,mock-12::mock-03:p3q4,p3q5; mock-04:p3q1,p3q3; mock-08:p4q3,p4q6; mock-12:p2q4::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Disambiguated four replies, replaced unsafe vitamin advice, restored city centre/their families, and precisely paraphrased veterinarian checks.",
+      "evidence": ["src/data/mocks/icfes-mock-03.ts", "src/data/mocks/icfes-mock-04.ts", "src/data/mocks/icfes-mock-08.ts", "src/data/mocks/icfes-mock-12.ts"]
+    },
+    {
+      "sourceKey": "mock-11::p7q1::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Changed repair to the idiomatic recover in the runtime Part 7 cloze.",
+      "evidence": ["src/data/mocks/icfes-current-part-seven.ts", "Muscles need time to recover after challenging activity."]
+    },
+    {
+      "sourceKey": "mock-13::p2q2::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed the unsupported claim that the performance begins exactly on time.",
+      "evidence": ["src/data/mocks/icfes-mock-13.ts", "The option now states only that latecomers wait until the interval."]
+    },
+    {
+      "sourceKey": "mock-13::p5q4::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Corrected both passage and answer to UNESCO World Book Capital for 2007.",
+      "evidence": ["src/data/mocks/icfes-mock-13.ts", "https://www.unesco.org/en/world-book-capital/list", "UNESCO lists Bogotá, Colombia, as World Book Capital 2007."]
+    },
+    {
+      "sourceKey": "mock-13::p6q2::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed the uncited crime-reduction claim and rewrote the question around the passage's explicit ownership-and-pride goal.",
+      "evidence": ["src/data/mocks/icfes-mock-13.ts", "No causal crime claim remains in the passage or key."]
+    },
+    {
+      "sourceKey": "mock-17::p6q5::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Changed planned missions to the supported statement that more research, including sample-return missions, will be needed.",
+      "evidence": ["src/data/mocks/icfes-mock-17.ts", "Final paragraph says such research will be required."]
+    },
+    {
+      "sourceKey": "mock-19::p2q5::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Removed the unsupported second-hand inference; option now states donation and charity support only.",
+      "evidence": ["src/data/mocks/icfes-mock-19.ts", "Notice states donated and all money raised goes to charity."]
+    },
+    {
+      "sourceKey": "mock-15,mock-16::p4 blank order::medium",
+      "classification": "safe-correction",
+      "status": "resolved-with-high-finding",
+      "action": "Covered by the monotonic 16-23 correction and a dedicated structural regression test.",
+      "evidence": ["src/data/mocks/icfes-mock-15.ts", "src/data/mocks/icfes-mock-16.ts", "tests/icfes-editorial-remediation.test.mjs"]
+    },
+    {
+      "sourceKey": "mock-20::p5q3::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Changed Why to What so the configured answer directly answers the prompt.",
+      "evidence": ["src/data/mocks/icfes-mock-20.ts", "Prompt asks what universities require before graduation; key states the requirement."]
+    },
+    {
+      "sourceKey": "mock-23::p5q4::medium",
+      "classification": "safe-correction",
+      "status": "corrected",
+      "action": "Repaired the passage to say letters preserve relationship history and can become more meaningful over time.",
+      "evidence": ["src/data/mocks/icfes-mock-23.ts", "The repaired sentence supports keep them longer."]
+    },
+    {
+      "sourceKey": "icfes-tyt::q1::medium",
+      "classification": "safe-correction",
+      "status": "corrected-and-premium-blocked",
+      "action": "Restored the audited wording You use this to watch videos; independent official verification remains pending under the global gate.",
+      "evidence": ["src/data/mocks/icfes-simulacros.ts", "Key remains C: DVD; premium detail remains blocked."]
+    }
+  ]
+}

@@ -171,9 +171,9 @@ const mock: MockExam = {
           type: 'dialog',
           id: 'p3q1',
           part: 3,
-          stimulus: 'I forgot to do my homework.',
+          stimulus: 'I forgot to do my homework. What should I do?',
           text: '',
-          options: ['You should tell the teacher.', 'I always forget mine too.', 'Homework is optional.'],
+          options: ['You should tell the teacher.', 'The lesson starts at nine.', 'Your notebook is green.'],
           answer: 0,
         },
         {
@@ -189,9 +189,9 @@ const mock: MockExam = {
           type: 'dialog',
           id: 'p3q3',
           part: 3,
-          stimulus: 'Our teacher is absent today.',
+          stimulus: 'The school says our class is cancelled because the teacher is absent.',
           text: '',
-          options: ['She never comes to school.', 'I prefer that anyway.', 'We have a free class then.'],
+          options: ['The library has new books.', 'Her desk is near the window.', 'So we have a free period then.'],
           answer: 2,
         },
         {
@@ -230,7 +230,7 @@ const mock: MockExam = {
           id: 'p4q1',
           part: 4,
           text: 'Choose the best word for blank (16).',
-          options: ['students', 'children', 'parents', 'workers'],
+          options: ['students', 'buildings', 'parents', 'workers'],
           answer: 0,
         },
         {
@@ -262,7 +262,7 @@ const mock: MockExam = {
           id: 'p4q5',
           part: 4,
           text: 'Choose the best word for blank (20).',
-          options: ['cities', 'regions', 'districts', 'zones'],
+          options: ['offices', 'regions', 'lessons', 'exams'],
           answer: 1,
         },
         {
@@ -270,7 +270,7 @@ const mock: MockExam = {
           id: 'p4q6',
           part: 4,
           text: 'Choose the best word for blank (21).',
-          options: ['university', 'college', 'school', 'academy'],
+          options: ['university', 'universal', 'universally', 'universe'],
           answer: 0,
         },
         {

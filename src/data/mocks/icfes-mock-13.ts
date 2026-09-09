@@ -48,7 +48,7 @@ const mock: MockExam = {
             'LATE ARRIVALS WILL NOT BE ADMITTED\nUntil the interval.\nPlease arrive at least ten minutes\nbefore the performance begins.',
           text: 'What does this notice tell visitors?',
           options: [
-            'The performance begins exactly on time and latecomers must wait',
+            'Latecomers must wait until the interval before entering',
             'Tickets for the interval are available at a reduced price',
             'Visitors must leave the building during the interval',
           ],
@@ -197,12 +197,12 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'p3q3',
           part: 3,
-          stimulus: 'The concert tickets were very expensive.',
+          stimulus: 'The concert tickets were expensive. Was the show worth it?',
           text: '',
           options: [
-            'Concerts are always overpriced.',
-            'But it was probably worth it.',
-            'I never go to concerts.',
+            'The concert hall has two doors.',
+            'Yes, absolutely.',
+            'Tickets are printed on paper.',
           ],
           answer: 1,
         },
@@ -321,7 +321,7 @@ const mock: MockExam = {
       instructions:
         'Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).',
       passage:
-        'BOGOTÁ: A CITY OF CULTURE AND FESTIVALS\n\nBogotá, the capital of Colombia, is home to one of the most vibrant cultural scenes in Latin America. With over eight million inhabitants, the city is a place where traditional Colombian culture meets international art, music, and theatre.\n\nOne of the most celebrated events in Bogotá is the Ibero-American Theatre Festival, held every two years. It is considered one of the largest theatre festivals in the world, attracting companies from dozens of countries across Europe, the Americas, and beyond. Free and paid performances take place in theatres, parks, streets, and squares across the city for about two weeks.\n\nAnother important cultural institution is the Gold Museum, known in Spanish as the "Museo del Oro". It houses the world\'s largest collection of pre-Columbian gold pieces, offering visitors a window into the civilisations that existed in Colombia long before European arrival. The museum receives hundreds of thousands of visitors every year.\n\nBogotá was also named a UNESCO City of Books, reflecting the city\'s strong literary culture. The city hosts the Bogotá International Book Fair each year, which is one of the most important literary events in the Spanish-speaking world.\n\nDespite its rapid modernisation, Bogotá has worked hard to preserve its cultural heritage and make the arts accessible to all its residents. Entry to many public museums is free on Sundays.',
+        'BOGOTÁ: A CITY OF CULTURE AND FESTIVALS\n\nBogotá, the capital of Colombia, is home to one of the most vibrant cultural scenes in Latin America. With over eight million inhabitants, the city is a place where traditional Colombian culture meets international art, music, and theatre.\n\nOne of the most celebrated events in Bogotá is the Ibero-American Theatre Festival, held every two years. It is considered one of the largest theatre festivals in the world, attracting companies from dozens of countries across Europe, the Americas, and beyond. Free and paid performances take place in theatres, parks, streets, and squares across the city for about two weeks.\n\nAnother important cultural institution is the Gold Museum, known in Spanish as the "Museo del Oro". It houses the world\'s largest collection of pre-Columbian gold pieces, offering visitors a window into the civilisations that existed in Colombia long before European arrival. The museum receives hundreds of thousands of visitors every year.\n\nBogotá was named UNESCO World Book Capital for 2007, reflecting the city\'s strong literary culture. The city hosts the Bogotá International Book Fair each year, which is one of the most important literary events in the Spanish-speaking world.\n\nDespite its rapid modernisation, Bogotá has worked hard to preserve its cultural heritage and make the arts accessible to all its residents. Entry to many public museums is free on Sundays.',
       questions: [
         {
           type: 'mcq',
@@ -369,7 +369,7 @@ const mock: MockExam = {
           text: 'What recognition did Bogotá receive from UNESCO?',
           options: [
             'It was named a City of Music.',
-            'It was named a City of Books.',
+            'It was named UNESCO World Book Capital for 2007.',
             'It was named a World Heritage Site.',
             'It was named a City of Design.',
           ],
@@ -426,7 +426,7 @@ const mock: MockExam = {
       instructions:
         'Read the text and answer questions 31 to 35. Some questions require you to infer information from the text. Choose the best option (A, B, C, or D).',
       passage:
-        'STREET ART IN MEDELLÍN: FROM GRAFFITI TO GALLERY\n\nFifteen years ago, the walls of many Medellín neighbourhoods were covered in graffiti linked to gang activity. Today, those same walls are home to spectacular murals by internationally recognised artists. The transformation of Medellín\'s street art scene is one of the most remarkable cultural stories in Latin America.\n\nThe change began in earnest around 2012, when the city government launched a programme to use art as a tool for social transformation. Artists were invited to paint large-scale murals on the walls of residential buildings, particularly in areas that had previously been associated with violence and poverty. The idea was not simply to beautify the city, but to give communities a sense of ownership and pride in their surroundings.\n\nThe neighbourhood of La Candelaria and the famous hillside barrios connected by the Metro Cable became centres of this artistic movement. Local and international artists worked side by side with residents, often creating works that reflected the history and identity of the community.\n\nThe results went beyond aesthetic improvement. Studies found that areas with large mural projects experienced reductions in crime and increased community engagement. Young people who participated in the art projects reported greater feelings of belonging and self-confidence. Tourism also increased as visitors from around the world came to see what had become known as an open-air gallery.\n\nNot everyone agreed with the approach, however. Some critics argued that using art to address deep social problems was superficial — that murals could not compensate for inequality, unemployment, and lack of educational opportunity. Others questioned whether the attention from tourists had led to rising rents that were pushing original residents out of their own neighbourhoods.\n\nDespite these criticisms, the transformation of Medellín\'s street art scene is widely regarded as a model for other cities facing similar challenges. It demonstrates that culture can be a powerful force for positive change — even if it cannot solve every problem on its own.',
+        'STREET ART IN MEDELLÍN: FROM GRAFFITI TO GALLERY\n\nFifteen years ago, the walls of many Medellín neighbourhoods were covered in graffiti linked to gang activity. Today, those same walls are home to spectacular murals by internationally recognised artists. The transformation of Medellín\'s street art scene is one of the most remarkable cultural stories in Latin America.\n\nThe change began in earnest around 2012, when the city government launched a programme to use art as a tool for social transformation. Artists were invited to paint large-scale murals on the walls of residential buildings, particularly in areas that had previously been associated with violence and poverty. The idea was not simply to beautify the city, but to give communities a sense of ownership and pride in their surroundings.\n\nThe neighbourhood of La Candelaria and the famous hillside barrios connected by the Metro Cable became centres of this artistic movement. Local and international artists worked side by side with residents, often creating works that reflected the history and identity of the community.\n\nThe projects also created spaces where residents could collaborate and represent their community\'s history. Young participants contributed ideas and helped artists develop images connected to local identity. Visitors also came to see what had become known as an open-air gallery.\n\nNot everyone agreed with the approach, however. Some critics argued that using art to address deep social problems was superficial — that murals could not compensate for inequality, unemployment, and lack of educational opportunity. Others questioned whether the attention from tourists had led to rising rents that were pushing original residents out of their own neighbourhoods.\n\nDespite these criticisms, the transformation of Medellín\'s street art scene is widely regarded as a model for other cities facing similar challenges. It demonstrates that culture can be a powerful force for positive change — even if it cannot solve every problem on its own.',
       questions: [
         {
           type: 'mcq',
@@ -445,12 +445,12 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'p6q2',
           part: 6,
-          text: 'According to paragraph 4, what social effects did the mural projects have?',
+          text: 'What goal did the programme have besides making the city more attractive?',
           options: [
-            'They increased unemployment but reduced crime.',
-            'They led to higher school attendance among young people.',
-            'They reduced crime and increased community engagement.',
-            'They caused significant conflict between local and international artists.',
+            'To replace local residents with visiting artists.',
+            'To make every neighbourhood a tourist destination.',
+            'To give communities ownership and pride in their surroundings.',
+            'To remove all other forms of art from public spaces.',
           ],
           answer: 2,
         },

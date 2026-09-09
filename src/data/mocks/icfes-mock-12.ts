@@ -78,7 +78,7 @@ const mock: MockExam = {
             'ALL ANIMALS SOLD FROM THIS SHOP\nHave been vaccinated and health-checked\nby a certified veterinarian.\nCertificates available on request.',
           text: 'What information does this notice give customers?',
           options: [
-            'Animals from this shop have received health treatment before being sold',
+            'Animals from this shop were vaccinated and checked by a certified veterinarian',
             'Customers must bring their own veterinarian to check the animals',
             'The shop only sells animals that were born on the premises',
           ],

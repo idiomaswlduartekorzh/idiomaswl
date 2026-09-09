@@ -307,7 +307,7 @@ const mock: MockExam = {
           id: 'p4q8',
           part: 4,
           text: 'Choose the best word for blank (23).',
-          options: ['results', 'scores', 'marks', 'grades'],
+          options: ['results', 'result', 'resulting', 'resulted'],
           answer: 0,
         },
       ],

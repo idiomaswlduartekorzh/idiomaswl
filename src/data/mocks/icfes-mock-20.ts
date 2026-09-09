@@ -281,7 +281,7 @@ const mock: MockExam = {
           id: 'p4q8',
           part: 4,
           text: 'Choose the best word for blank (23).',
-          options: ['side', 'corner', 'part', 'quarter'],
+          options: ['participant', 'partial', 'part', 'partly'],
           answer: 2,
         },
       ],
@@ -328,7 +328,7 @@ const mock: MockExam = {
           type: 'mcq',
           id: 'p5q3',
           part: 5,
-          text: 'Why do some universities require students to do community service?',
+          text: 'What do some universities require students to do before graduating?',
           options: [
             'It is a condition of graduation',
             'The government pays universities to organise it',

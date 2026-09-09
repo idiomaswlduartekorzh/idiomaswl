@@ -202,7 +202,7 @@ const mock: MockExam = {
           id: "p4q1",
           part: 4,
           text: "Choose the best word for blank (16).",
-          options: ["across", "at", "during", "in"],
+          options: ["while", "for", "during", "since"],
           answer: 2,
         },
         {
@@ -272,7 +272,7 @@ const mock: MockExam = {
       instructions:
         "Read the text and answer questions 24 to 30. Choose the best option (A, B, C, or D).",
       passage:
-        "BENEFITS OF WRITING LETTERS\n\nUsing letters is not as easy and fast as using texts, emails, and video calls, but they show others that you actually care about them. Letters take time to be written, and you have to get an envelope, find a stamp, and take them to the post office. That's why people feel special and loved when they receive letters, especially when they are away from loved ones living across the country or on the other side of the world.\n\nLetter writing is also a way of processing difficult events. Sherry Amatenstein, author of books about writing as an act that repairs, says it's helpful to use letter writing to share good and bad emotions. Different from digital chats that disappear easily, letters save the history of our relationships, and they become more important after a digital communication.\n\nFinding a letter in the mail, sitting on the sofa, and reading something written by the hand of a loved one is amazing. We can take as much time as we want. We don't need to do many things with various windows open on our laptops; we can concentrate on this one personal thing, this letter in our hands. When we can't see family members or hold a friend's hand, we try to find ways to enjoy their presence. Writing a letter is building something tangible and pleasant, too.",
+        "BENEFITS OF WRITING LETTERS\n\nUsing letters is not as easy and fast as using texts, emails, and video calls, but they show others that you actually care about them. Letters take time to be written, and you have to get an envelope, find a stamp, and take them to the post office. That's why people feel special and loved when they receive letters, especially when they are away from loved ones living across the country or on the other side of the world.\n\nLetter writing is also a way of processing difficult events. Sherry Amatenstein, author of books about writing as an act that repairs, says it's helpful to use letter writing to share good and bad emotions. Unlike digital chats that can disappear easily, letters preserve the history of our relationships and can become more meaningful over time.\n\nFinding a letter in the mail, sitting on the sofa, and reading something written by the hand of a loved one is amazing. We can take as much time as we want. We don't need to do many things with various windows open on our laptops; we can concentrate on this one personal thing, this letter in our hands. When we can't see family members or hold a friend's hand, we try to find ways to enjoy their presence. Writing a letter is building something tangible and pleasant, too.",
       questions: [
         {
           type: 'mcq',

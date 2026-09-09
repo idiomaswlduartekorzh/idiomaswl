@@ -34,9 +34,32 @@ export interface Simulacro {
   totalQuestions: number;
   /** Current seven-part taxonomy, explicit because published samples can omit parts. */
   partRanges: { part: 1 | 2 | 3 | 4 | 5 | 6 | 7; from: number; to: number }[];
+  /** Local teaching taxonomy. It must not be presented as the historical source layout. */
+  partMapping: {
+    status: 'local-canonical-source-map-unverified';
+    canonicalSkillPartRanges: readonly { part: 1 | 2 | 3 | 4 | 5 | 6 | 7; from: number; to: number }[];
+    sourcePartRanges: null;
+  };
+  provenance: {
+    status: 'local-bank-only-not-independently-verified';
+    items: readonly {
+      questionNumber: number;
+      canonicalSkillPart: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+      sourcePart: null;
+      officialUrl: null;
+      localSourceHash: null;
+      sourcePageOrItemCode: null;
+      officialAnswerKey: null;
+      transcriptionStatus: 'unverified';
+      adaptationStatus: 'unknown';
+    }[];
+  };
+  licenseStatus: 'legal-review-required-paid-detail-blocked';
   passages: SimulacroPassage[];
   questions: SimulacroQuestion[];
 }
+
+type SimulacroSource = Omit<Simulacro, 'partMapping' | 'provenance' | 'licenseStatus'>;
 
 export interface IcfesEditorialHold {
   questionNumbers: readonly number[];
@@ -45,7 +68,12 @@ export interface IcfesEditorialHold {
 
 export type IcfesPaidDetailAvailability =
   | { eligible: true }
-  | { eligible: false; questionNumbers: readonly number[]; reason: string };
+  | { eligible: false; scope: 'resource'; questionNumbers: readonly number[]; reason: string };
+
+export const ICFES_OFFICIAL_PAID_DETAIL_POLICY = Object.freeze({
+  status: 'blocked' as const,
+  reason: 'Detalle pago oficial no disponible: falta verificación independiente por ítem y revisión jurídica de licencia. La práctica gratuita no demuestra autorización para comercializar los cuadernillos.',
+});
 
 /**
  * Confirmed defects whose exact official wording cannot be reconstructed from the
@@ -75,7 +103,7 @@ export const ICFES_EDITORIAL_HOLDS = {
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 1 — ICFES Saber 11 · Inglés · Grado 11 · 2023
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2023: Simulacro = {
+const exam2023: SimulacroSource = {
   id: 'icfes-2023-g11',
   assessment: 'saber-11',
   year: 2023,
@@ -230,7 +258,7 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 2 — ICFES Saber 11 · Inglés · Grado 11 · 2022
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2022: Simulacro = {
+const exam2022: SimulacroSource = {
   id: 'icfes-2022-g11',
   assessment: 'saber-11',
   year: 2022,
@@ -375,9 +403,9 @@ Tomatoes are used in many food products as pasta and pizza. According to a surve
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 3 — ICFES Saber 11 · Inglés · 2019 · Examen 1
-// Respuestas oficiales verificadas por clave publicada por ICFES
+// Banco local atribuido al material ICFES; verificación primaria por ítem pendiente.
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2019ex1: Simulacro = {
+const exam2019ex1: SimulacroSource = {
   id: 'icfes-2019-ex1',
   assessment: 'saber-11',
   year: 2019,
@@ -530,9 +558,9 @@ It certainly feels great to find new excellent food delivery companies for whene
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 4 — ICFES Saber 11 · Inglés · Grado 11 · 2021 · Examen 1
-// Fuente oficial con clave de respuestas publicada por ICFES
+// Banco local atribuido al material ICFES; verificación primaria por ítem pendiente.
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2021ex1: Simulacro = {
+const exam2021ex1: SimulacroSource = {
   id: 'icfes-2021-ex1',
   assessment: 'saber-11',
   year: 2021,
@@ -683,7 +711,7 @@ I decided to post an excellent review about this restaurant on all the major tra
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 5 — ICFES Saber 11 · Inglés · Grado 11 · 2021 · Examen 2
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2021ex2: Simulacro = {
+const exam2021ex2: SimulacroSource = {
   id: 'icfes-2021-ex2',
   assessment: 'saber-11',
   year: 2021,
@@ -831,9 +859,9 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 6 — ICFES Saber 11 · Inglés · Grado 11 · 2016
-// Clave oficial publicada en Cuadernillo Saber 11° 2016 (posiciones 101–125)
+// Banco local atribuido al cuadernillo Saber 11° 2016; verificación primaria pendiente.
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2016: Simulacro = {
+const exam2016: SimulacroSource = {
   id: 'icfes-2016',
   assessment: 'saber-11',
   year: 2016,
@@ -981,9 +1009,9 @@ Come and discover why Colombia is one of the most exciting travel destinations i
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 7 — ICFES Saber 11 · Inglés · Grado 11 · 2012
-// Formato original con 45 preguntas — clave oficial publicada
+// Banco local de 45 preguntas atribuido a la muestra 2012; verificación primaria pendiente.
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2012: Simulacro = {
+const exam2012: SimulacroSource = {
   id: 'icfes-2012',
   assessment: 'saber-11',
   year: 2012,
@@ -1201,7 +1229,7 @@ I am very grateful for the amazing experience my company gave me. I will tell ev
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 8 — ICFES Saber 10 · Inglés · Grado 10 · 2022
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2022g10: Simulacro = {
+const exam2022g10: SimulacroSource = {
   id: 'icfes-2022-g10',
   assessment: 'saber-10',
   year: 2022,
@@ -1328,7 +1356,7 @@ There are several places where you can spend a few days, a week, or longer givin
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 9 — ICFES Saber 9 · Inglés · Grado 9 · 2022
 // ─────────────────────────────────────────────────────────────────────────────
-const exam2022g9: Simulacro = {
+const exam2022g9: SimulacroSource = {
   id: 'icfes-2022-g9',
   assessment: 'saber-9',
   year: 2022,
@@ -1445,9 +1473,9 @@ Almost eight centuries later, Europeans began to make [21] own paper. At that ti
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 10 — Saber TyT · Módulo de Inglés
 // Fuente: ICFES, 2018. Cuadernillo de preguntas Saber TyT, Módulo de inglés.
-// Clave oficial publicada
+// Banco local atribuido al material TyT; verificación primaria por ítem pendiente.
 // ─────────────────────────────────────────────────────────────────────────────
-const examTyT: Simulacro = {
+const examTyT: SimulacroSource = {
   id: 'icfes-tyt',
   assessment: 'saber-tyt',
   year: 2018,
@@ -1487,7 +1515,7 @@ Every week, he goes to the restaurant and [23] six burgers on Monday and eight o
     // ── PARTE 1 — Vocabulario: Entertainment (Q1–5) ──────────────────────────
     { n:1, type:'vocab',
       vocabWords:['CD','comics','DVD','films','map','messages','ticket'],
-      stem:'You use this to watch videos or movies.',
+      stem:'You use this to watch videos.',
       options:['CD','comics','DVD','films','map','messages','ticket'], answer:2 },
     { n:2, type:'vocab',
       vocabWords:['CD','comics','DVD','films','map','messages','ticket'],
@@ -1577,11 +1605,36 @@ Every week, he goes to the restaurant and [23] six burgers on Monday and eight o
 // ─────────────────────────────────────────────────────────────────────────────
 // Export and paid-detail editorial gate
 // ─────────────────────────────────────────────────────────────────────────────
-export const SIMULACROS: Simulacro[] = [
+const SIMULACRO_SOURCES: SimulacroSource[] = [
   exam2023, exam2022, exam2019ex1,
   exam2021ex1, exam2021ex2, exam2016,
   exam2012, exam2022g10, exam2022g9, examTyT,
 ];
+
+export const SIMULACROS: Simulacro[] = SIMULACRO_SOURCES.map((exam) => ({
+  ...exam,
+  partMapping: Object.freeze({
+    status: 'local-canonical-source-map-unverified' as const,
+    canonicalSkillPartRanges: Object.freeze(exam.partRanges.map((range) => Object.freeze({ ...range }))),
+    sourcePartRanges: null,
+  }),
+  provenance: Object.freeze({
+    status: 'local-bank-only-not-independently-verified' as const,
+    items: Object.freeze(exam.questions.map(({ n }) => Object.freeze({
+      questionNumber: n,
+      canonicalSkillPart: exam.partRanges.find(({ from, to }) => n >= from && n <= to)?.part
+        ?? (() => { throw new Error(`Pregunta ${n} sin parte canónica local en ${exam.id}`); })(),
+      sourcePart: null,
+      officialUrl: null,
+      localSourceHash: null,
+      sourcePageOrItemCode: null,
+      officialAnswerKey: null,
+      transcriptionStatus: 'unverified' as const,
+      adaptationStatus: 'unknown' as const,
+    }))),
+  }),
+  licenseStatus: 'legal-review-required-paid-detail-blocked',
+}));
 
 export function getSimulacro(id: string): Simulacro | undefined {
   return SIMULACROS.find(s => s.id === id);
@@ -1593,9 +1646,12 @@ export function getIcfesEditorialHold(id: string): IcfesEditorialHold | undefine
 
 export function getIcfesPaidDetailAvailability(id: string): IcfesPaidDetailAvailability {
   const hold = getIcfesEditorialHold(id);
-  return hold
-    ? { eligible: false, questionNumbers: hold.questionNumbers, reason: hold.reason }
-    : { eligible: true };
+  const exam = getSimulacro(id);
+  if (!exam) return { eligible: false, scope: 'resource', questionNumbers: [], reason: 'Detalle pago no disponible: recurso oficial desconocido.' };
+  const reason = hold
+    ? `${ICFES_OFFICIAL_PAID_DETAIL_POLICY.reason} ${hold.reason}`
+    : ICFES_OFFICIAL_PAID_DETAIL_POLICY.reason;
+  return { eligible: false, scope: 'resource', questionNumbers: hold?.questionNumbers ?? [], reason };
 }
 
 /** Paid-detail consumers must use this accessor instead of getSimulacro. */
@@ -1606,6 +1662,6 @@ export function getSimulacroForPaidDetail(id: string): Simulacro | undefined {
 
 export function getSimulacroQuestionPart(simulacro: Simulacro, questionNumber: number): 1 | 2 | 3 | 4 | 5 | 6 | 7 {
   const range = simulacro.partRanges.find(({ from, to }) => questionNumber >= from && questionNumber <= to);
-  if (!range) throw new Error(`Pregunta ${questionNumber} sin parte oficial explícita en ${simulacro.id}`);
+  if (!range) throw new Error(`Pregunta ${questionNumber} sin parte canónica local explícita en ${simulacro.id}`);
   return range.part;
 }

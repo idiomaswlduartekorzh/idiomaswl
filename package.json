@@ -80,7 +80,7 @@
     "check:listening-series": "node scripts/validate-listening-series.mjs && node scripts/check-listening-target-language.mjs",
     "check:listening-language": "node scripts/check-listening-target-language.mjs",
     "test:reading": "node --test tests/reading-content.test.mjs",
-    "test:icfes": "node --experimental-strip-types --no-warnings --test tests/icfes-scoring.test.mjs tests/icfes-critical-content.test.mjs tests/icfes-seo-consolidation.test.mjs tests/icfes-analytics.test.mjs",
+    "test:icfes": "node --experimental-strip-types --no-warnings --test tests/icfes-scoring.test.mjs tests/icfes-critical-content.test.mjs tests/icfes-editorial-remediation.test.mjs tests/icfes-seo-consolidation.test.mjs tests/icfes-analytics.test.mjs",
     "test:icfes-analytics": "node --experimental-strip-types --no-warnings --test tests/icfes-analytics.test.mjs",
     "test:whatsapp": "node --experimental-strip-types --no-warnings --test tests/whatsapp-chatbot.test.mts",
     "test:exam-leads": "node --experimental-strip-types --no-warnings --test tests/exam-lead-capture.test.mts",

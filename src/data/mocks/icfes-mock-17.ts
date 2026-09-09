@@ -168,7 +168,7 @@ const mock: MockExam = {
           part: 3,
           stimulus: 'Have you ever used a telescope?',
           text: '',
-          options: ['Yes, I looked at the moon last night.', 'No, I prefer reading.', 'Telescopes are very heavy.'],
+          options: ['Yes, I looked at the moon last night.', 'The library closes at six.', 'The moon orbits Earth.'],
           answer: 0,
         },
         {
@@ -225,7 +225,7 @@ const mock: MockExam = {
           id: 'p4q1',
           part: 4,
           text: 'Choose the best word for blank (16).',
-          options: ['structures', 'machines', 'objects', 'systems'],
+          options: ['structures', 'structural', 'structurally', 'structured'],
           answer: 0,
         },
         {
@@ -462,7 +462,7 @@ const mock: MockExam = {
           text: 'What can be inferred from the final paragraph?',
           options: [
             'Scientists are confident they will find life on Mars within ten years',
-            'Future space missions are planned to collect samples from other planets',
+            'More research, including sample-return missions, will be needed',
             'The search for extraterrestrial life has already ended',
             'Water has been found on the surface of Europa',
           ],

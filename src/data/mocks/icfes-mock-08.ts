@@ -223,11 +223,11 @@ const mock: MockExam = {
           type: 'dialog',
           id: 'p3q5',
           part: 3,
-          stimulus: 'My grandmother lives with us.',
+          stimulus: 'I love having my grandmother live with us.',
           text: '',
           options: [
-            'Old people are difficult.',
-            'That is quite unusual.',
+            'She lives in another city.',
+            'Grandmothers are older relatives.',
             'That must be nice.',
           ],
           answer: 2,
@@ -266,7 +266,7 @@ const mock: MockExam = {
           id: 'p4q3',
           part: 4,
           text: 'Choose the best word for blank (18).',
-          options: ['river', 'beach', 'forest', 'city'],
+          options: ['river', 'beach', 'forest', 'city centre'],
           answer: 3,
         },
         {
@@ -290,7 +290,7 @@ const mock: MockExam = {
           id: 'p4q6',
           part: 4,
           text: 'Choose the best word for blank (21).',
-          options: ['strangers', 'colleagues', 'neighbours', 'families'],
+          options: ['strangers', 'colleagues', 'neighbours', 'their families'],
           answer: 3,
         },
         {

@@ -94,7 +94,7 @@ const mock: MockExam = {
           text: 'What does this notice tell you about the item?',
           options: [
             'The item was left behind by a customer',
-            'The item is second-hand and sold to support a good cause',
+            'The item was donated and its sale supports charity',
             'The item has a defect and cannot be sold at full price',
           ],
           answer: 1,
@@ -202,8 +202,8 @@ const mock: MockExam = {
           text: '',
           options: [
             'Yes, smart casual is required.',
-            'Wear absolutely anything you want.',
-            'Parties never have rules.',
+            'The party starts at eight.',
+            'The invitation is on the table.',
           ],
           answer: 0,
         },

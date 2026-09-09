@@ -58,10 +58,24 @@ const mismatchedOptions = guidedRows.filter(({ sourceQuestion, question }) => so
 check('official-option-parity', 'Opciones y claves idénticas al banco fuente', mismatchedOptions.length === 0, 'critical', `${mismatchedOptions.length} diferencias`, 'Restaurar literalmente opciones y claves divulgadas.');
 
 const mismatchedParts = guidedRows.filter(({ exam, sourceQuestion, question }) => getSimulacroQuestionPart(exam, sourceQuestion.n) !== question.officialPart);
-check('official-part-parity', 'Parte histórica preservada por pregunta', mismatchedParts.length === 0, 'critical', `${mismatchedParts.length} diferencias`, 'Usar partRanges del cuadernillo, no la distribución 2026-2.');
+const invalidPartMetadata = SIMULACROS.filter(({ partMapping, partRanges }) => partMapping.status !== 'local-canonical-source-map-unverified'
+  || partMapping.sourcePartRanges !== null
+  || JSON.stringify(partMapping.canonicalSkillPartRanges) !== JSON.stringify(partRanges));
+check('canonical-part-parity', 'La taxonomía pedagógica local es explícita y no suplanta el mapa histórico', mismatchedParts.length === 0 && invalidPartMetadata.length === 0, 'critical', `${mismatchedParts.length} diferencias · ${invalidPartMetadata.length} metadatos inválidos`, 'Separar el mapa pedagógico local de las partes históricas no verificadas.');
 
 const invalidSources = guidedRows.filter(({ exam, question }) => question.source.type !== 'official-workbook' || question.source.reference !== exam.source);
-check('source-provenance', 'Cada pregunta conserva la referencia oficial', invalidSources.length === 0, 'critical', `${invalidSources.length} referencias inválidas`, 'Separar fuente oficial de explicación WeLearn.');
+const invalidProvenance = SIMULACROS.filter((exam) => exam.provenance.status !== 'local-bank-only-not-independently-verified'
+  || exam.provenance.items.length !== exam.questions.length
+  || exam.provenance.items.some((item, index) => item.questionNumber !== exam.questions[index].n
+    || item.canonicalSkillPart !== getSimulacroQuestionPart(exam, item.questionNumber)
+    || item.sourcePart !== null
+    || item.officialUrl !== null
+    || item.localSourceHash !== null
+    || item.sourcePageOrItemCode !== null
+    || item.officialAnswerKey !== null
+    || item.transcriptionStatus !== 'unverified'
+    || item.adaptationStatus !== 'unknown'));
+check('source-provenance-status', 'La referencia local no se presenta como verificación independiente', invalidSources.length === 0 && invalidProvenance.length === 0, 'critical', `${invalidSources.length} referencias inválidas · ${invalidProvenance.length} manifiestos inválidos`, 'Mantener la procedencia por ítem como no verificada hasta contrastar fuentes primarias.');
 
 const ids = guidedRows.map(({ question }) => question.id);
 check('unique-guided-ids', 'Identificadores guiados únicos', new Set(ids).size === ids.length, 'critical', `${new Set(ids).size}/${ids.length}`, 'Prefijar ids por cuadernillo.');
@@ -101,16 +115,19 @@ const expectedPaidDetailHolds = {
 const invalidPaidDetailHolds = Object.entries(expectedPaidDetailHolds).filter(([examId, expectedQuestions]) => {
   const availability = getIcfesPaidDetailAvailability(examId);
   return availability.eligible
+    || availability.scope !== 'resource'
     || JSON.stringify(availability.questionNumbers) !== JSON.stringify(expectedQuestions)
     || !availability.reason.includes('Detalle pago no disponible')
     || getSimulacroForPaidDetail(examId) !== undefined;
 });
 check('paid-detail-editorial-gate', 'Los cuatro defectos oficiales bloquean el detalle pago sin inventar contenido', Object.keys(ICFES_EDITORIAL_HOLDS).length === 4 && invalidPaidDetailHolds.length === 0, 'critical', invalidPaidDetailHolds.map(([examId]) => examId).join(', ') || '4/4 bloqueos activos', 'Restaurar la compuerta editorial y sus números de pregunta exactos.');
 
-const paidEligibleWithoutHold = SIMULACROS.filter(({ id }) => !Object.hasOwn(expectedPaidDetailHolds, id)).filter(({ id }) => !getSimulacroForPaidDetail(id));
-check('paid-detail-clean-resources', 'Los recursos sin bloqueo siguen disponibles para integrar el detalle pago', paidEligibleWithoutHold.length === 0, 'critical', paidEligibleWithoutHold.map(({ id }) => id).join(', ') || '6/6 elegibles', 'No bloquear recursos ajenos al hallazgo.');
+const officialPaidDetailLeaks = SIMULACROS.filter(({ id, licenseStatus }) => licenseStatus !== 'legal-review-required-paid-detail-blocked'
+  || getIcfesPaidDetailAvailability(id).eligible
+  || getSimulacroForPaidDetail(id) !== undefined);
+check('paid-detail-global-policy-gate', 'Todo detalle oficial pago queda bloqueado hasta verificar procedencia y licencia', officialPaidDetailLeaks.length === 0, 'critical', officialPaidDetailLeaks.map(({ id }) => id).join(', ') || `${SIMULACROS.length}/${SIMULACROS.length} bloqueados`, 'No monetizar contenido oficial sin procedencia primaria y revisión jurídica documentadas.');
 
-check('dynamic-guided-page', 'La ruta usa extensión y partes de cada muestra', routeSource.includes('{questions.length} preguntas') && routeSource.includes('exam.partRanges.length') && !routeSource.includes('<strong>25 preguntas</strong>'), 'high', 'Extensión dinámica', 'Eliminar textos fijos del piloto 2023.');
+check('dynamic-guided-page', 'La ruta usa extensión y mapa pedagógico de cada muestra', routeSource.includes('{questions.length} preguntas') && routeSource.includes('exam.partMapping.canonicalSkillPartRanges.length') && routeSource.includes('Mapa pedagógico local') && !routeSource.includes('Mapa del recorrido original') && !routeSource.includes('<strong>25 preguntas</strong>'), 'high', 'Extensión y taxonomía local explícitas', 'Eliminar textos fijos o afirmaciones de paridad histórica no verificada.');
 check('historical-disclaimer', 'La ruta explica el alcance histórico', routeSource.includes('no reproduce necesariamente la aplicación estándar 2026-2 ni predice un puntaje oficial'), 'critical', 'Descargo visible', 'No presentar una muestra histórica como formato vigente completo.');
 check('catalog-eligibility', 'El catálogo muestra guiado solo cuando es elegible', catalogSource.includes('GUIDED_WORKBOOK_IDS.includes') && catalogSource.includes('GUIDED_WORKBOOK_EXCLUSIONS'), 'high', 'Elegibilidad explícita', 'Conectar el CTA a la lista editorial aprobada.');
 check('error-review-integration', 'Los cinco cuadernillos entran a la cola de errores', errorReviewSource.includes('GUIDED_WORKBOOK_IDS.flatMap(getGuidedWorkbookQuestions)'), 'high', 'Integración por registro', 'Añadir todos los bancos guiados sin duplicarlos.');
@@ -127,7 +144,7 @@ const report = {
     guided: [...GUIDED_WORKBOOK_IDS],
     excluded: GUIDED_WORKBOOK_EXCLUSIONS,
     guidedQuestions: guidedRows.length,
-    provenanceRule: 'Enunciados/opciones/claves: material divulgado por ICFES. Explicaciones: elaboración IdiomasWL.',
+    provenanceRule: 'Banco local atribuido a material ICFES, aún sin cotejo primario por ítem. Explicaciones: elaboración IdiomasWL.',
   },
   verdict: failures.some(({ severity }) => severity === 'critical' || severity === 'high') ? 'blocked' : failures.length ? 'conditional' : 'approved',
   summary: {

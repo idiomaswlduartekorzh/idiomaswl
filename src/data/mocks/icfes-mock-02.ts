@@ -200,7 +200,7 @@ const mock: MockExam = {
           part: 3,
           stimulus: 'The flight has been delayed by two hours.',
           text: '',
-          options: ["Let's get a coffee then.", 'I prefer trains anyway.', 'I am not surprised.'],
+          options: ["Let's get a coffee while we wait.", 'The airport has three terminals.', 'My suitcase is already checked in.'],
           answer: 0,
         },
         {
@@ -246,7 +246,7 @@ const mock: MockExam = {
           id: 'p4q3',
           part: 4,
           text: 'Choose the best word for blank (18).',
-          options: ['tourists', 'drivers', 'families', 'workers'],
+          options: ['vehicles', 'routes', 'families', 'kilometres'],
           answer: 2,
         },
         {
@@ -270,7 +270,7 @@ const mock: MockExam = {
           id: 'p4q6',
           part: 4,
           text: 'Choose the best word for blank (21).',
-          options: ['buy', 'repair', 'rent', 'sell'],
+          options: ['paint', 'repair', 'rent', 'sell'],
           answer: 2,
         },
         {

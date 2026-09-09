@@ -197,11 +197,11 @@ const mock: MockExam = {
           type: 'dialog',
           id: 'p3q3',
           part: 3,
-          stimulus: 'What is the best way to travel between cities in Colombia?',
+          stimulus: 'What is an affordable way to travel between cities in Colombia?',
           text: '',
           options: [
-            'You should always use a private car.',
-            'I always travel by plane.',
+            'Colombia has many large cities.',
+            'The journey begins tomorrow.',
             'Buses are usually comfortable and very affordable.',
           ],
           answer: 2,
@@ -243,7 +243,7 @@ const mock: MockExam = {
       instructions:
         'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
       passage:
-        "Cartagena de Indias is one of the most (22) ___ cities in Colombia and a UNESCO World Heritage Site. The (16) ___ was founded by Spanish colonists in 1533 and quickly became one of the most important (23) ___ on the Caribbean coast of South America. Today, Cartagena is celebrated for its rich (17) ___ and its beautiful (20) ___ architecture, particularly in the walled old town known as the Ciudad Amurallada. Visitors come from all over the world to explore its colourful streets, enjoy its white-sand (18) ___, and learn about its Afro-Colombian (21) ___. The city also attracts millions of (19) ___ every year who are drawn by its warm climate, exceptional food, and lively arts scene.",
+        "The (16) ___ of Cartagena de Indias was founded by Spanish colonists in 1533. Today, Cartagena is celebrated for its rich (17) ___. Visitors come to enjoy its white-sand (18) ___, and the city attracts millions of (19) ___ every year. Its beautiful (20) ___ architecture is especially visible in the walled old town, while local museums and events introduce visitors to its Afro-Colombian (21) ___. Cartagena is one of the most (22) ___ cities in Colombia and a UNESCO World Heritage Site. Historically, it became one of the most important (23) ___ on the Caribbean coast of South America.",
       questions: [
         {
           type: 'mcq',

@@ -76,16 +76,20 @@ test('all official criticals are blocked from verified paid detail with exact sc
   for (const [examId, questionNumbers] of Object.entries(expected)) {
     const availability = getIcfesPaidDetailAvailability(examId);
     assert.equal(availability.eligible, false, `${examId} must not expose paid detail`);
+    assert.equal(availability.scope, 'resource');
     assert.deepEqual([...availability.questionNumbers], questionNumbers);
     assert.match(availability.reason, /no disponible|retirad[ao] temporalmente/i);
     assert.equal(getSimulacroForPaidDetail(examId), undefined);
   }
 });
 
-test('verified official resources remain eligible for paid-detail integration', () => {
-  const heldIds = new Set(Object.keys(ICFES_EDITORIAL_HOLDS));
-  for (const exam of SIMULACROS.filter(({ id }) => !heldIds.has(id))) {
-    assert.deepEqual(getIcfesPaidDetailAvailability(exam.id), { eligible: true });
-    assert.equal(getSimulacroForPaidDetail(exam.id)?.id, exam.id);
+test('all official resources remain blocked from paid detail pending provenance and legal review', () => {
+  for (const exam of SIMULACROS) {
+    const availability = getIcfesPaidDetailAvailability(exam.id);
+    assert.equal(availability.eligible, false);
+    assert.equal(availability.scope, 'resource');
+    assert.match(availability.reason, /verificación independiente.*revisión jurídica/i);
+    assert.equal(exam.licenseStatus, 'legal-review-required-paid-detail-blocked');
+    assert.equal(getSimulacroForPaidDetail(exam.id), undefined);
   }
 });

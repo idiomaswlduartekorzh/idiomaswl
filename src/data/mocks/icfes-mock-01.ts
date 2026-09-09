@@ -242,7 +242,7 @@ const mock: MockExam = {
           id: 'p4q1',
           part: 4,
           text: 'Choose the best word for blank (16).',
-          options: ['service', 'system', 'network', 'route'],
+          options: ['systematic', 'system', 'systematically', 'systematise'],
           answer: 1,
         },
         {
@@ -290,7 +290,7 @@ const mock: MockExam = {
           id: 'p4q7',
           part: 4,
           text: 'Choose the best word for blank (22).',
-          options: ['busy', 'crowded', 'noisy', 'slow'],
+          options: ['empty', 'crowded', 'silent', 'closed'],
           answer: 1,
         },
         {

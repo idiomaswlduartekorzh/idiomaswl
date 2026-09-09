@@ -243,7 +243,7 @@ const mock: MockExam = {
       instructions:
         'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
       passage:
-        "Colombia has millions of active social media (16) ___, making it one of the most connected countries in Latin America. People use these platforms to produce and discover (17) ___ on a wide range of topics, from entertainment and sport to news and education. The most (18) ___ platform among young Colombians is one that allows them to create and watch short (21) ___. Many users access their favourite (19) ___ several times a (22) ___, spending hours scrolling through posts and stories. One of the most common activities is to (20) ___ funny or interesting content with friends and family. Social media has also become a powerful (23) ___ for small businesses, which use it to advertise their products and reach new customers.",
+        "Colombia has millions of active social media (16) ___, making it one of the most connected countries in Latin America. People use these platforms to produce and discover (17) ___ on a wide range of topics, from entertainment and sport to news and education. The most (18) ___ platform among young Colombians attracts a large audience. Many users access their favourite (19) ___ to follow posts and stories. One of the most common activities is to (20) ___ funny or interesting content with friends and family. These platforms also allow people to create and watch short (21) ___. Some users visit several times a (22) ___. Social media has also become a powerful (23) ___ for small businesses, which use it to advertise their products and reach new customers.",
       questions: [
         {
           type: 'mcq',
