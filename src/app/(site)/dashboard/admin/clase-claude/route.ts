@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { NextResponse, type NextRequest } from 'next/server'
-import { ALL_ADMIN_EMAILS } from '@/lib/config/admins'
+import { isAdminEmail } from '@/lib/config/admins'
 import { createClient } from '@/lib/supabase/server'
 
 export const runtime = 'nodejs'
@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(loginUrl)
   }
 
-  if (!user.email || !ALL_ADMIN_EMAILS.includes(user.email)) {
+  if (!isAdminEmail(user.email)) {
     return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 

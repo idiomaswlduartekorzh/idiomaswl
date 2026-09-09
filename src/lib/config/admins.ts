@@ -10,7 +10,6 @@
 
 /** Full administrators — both receive the owner dashboard and every admin action. */
 export const JOSE_EMAILS = [
-  'welearninstitute@gmail.com',
   'zhanna.duarte@mail.ru',
   'josedavidduartesilva@gmail.com',
   'david.duartes182@gmail.com',
@@ -30,3 +29,19 @@ export const ALL_ADMIN_EMAILS: readonly string[] = [
   ...JOSE_EMAILS,
   ...ZHANNA_EMAILS,
 ];
+
+export function normalizeAdminEmail(email: string | null | undefined): string {
+  return email?.trim().toLowerCase() ?? '';
+}
+
+export function isJoseAdminEmail(email: string | null | undefined): boolean {
+  return JOSE_EMAILS.some((adminEmail) => adminEmail === normalizeAdminEmail(email));
+}
+
+export function isZhannaAdminEmail(email: string | null | undefined): boolean {
+  return ZHANNA_EMAILS.some((adminEmail) => adminEmail === normalizeAdminEmail(email));
+}
+
+export function isAdminEmail(email: string | null | undefined): boolean {
+  return isJoseAdminEmail(email) || isZhannaAdminEmail(email);
+}
