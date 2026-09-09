@@ -17,6 +17,7 @@ export const ICFES_ANALYTICS_EVENTS = [
   'icfes_error_review_complete',
   'icfes_lead_submit',
   'icfes_whatsapp_click',
+  'icfes_offer_view',
   'icfes_paid_detail_intent',
   'icfes_checkout_start',
   'icfes_purchase_complete',

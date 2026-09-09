@@ -8,6 +8,8 @@ import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
 import GoetheA1PracticeClient from './GoetheA1PracticeClient';
+import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
+import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -29,6 +31,12 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
   const mock = getMock(slug, mockId);
 
   if (!exam || !mock) notFound();
+
+  if (slug === 'icfes') return <PracticeClient
+    exam={exam}
+    mock={sanitizeIcfesMock(mock)}
+    secureIcfes={{ offerEnabled: isIcfesPassEnabled() }}
+  />;
 
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
   if (slug === 'toefl') {

@@ -2256,7 +2256,9 @@ button {
 /* Top bar */
 .prac-topbar {
   position: sticky;
-  top: 0;
+  /* The global site navigation is also sticky and occupies 60px. Keeping the
+     exam controls below it prevents either bar from hiding question content. */
+  top: 60px;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -2267,6 +2269,7 @@ button {
   background: var(--ink-bg);
   border-bottom: 2px solid var(--exam-color, var(--accent));
 }
+.prac-shell--exam { scroll-padding-top: 72px; }
 .prac-topbar__left {
   display: flex;
   align-items: center;
@@ -2865,6 +2868,23 @@ button {
   margin-top: 2rem;
   flex-wrap: wrap;
 }
+.icfes-product-card {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line-soft));
+  border-radius: 16px;
+  background: var(--wl-panel-raised, #fff);
+  color: var(--ink);
+  box-shadow: 0 12px 35px rgba(20, 33, 92, 0.08);
+}
+.icfes-product-card h2 { margin: 0 0 0.6rem; font-size: 1.25rem; }
+.icfes-product-card p { line-height: 1.55; }
+.icfes-product-card small { display: block; margin-top: 0.8rem; color: var(--muted); line-height: 1.5; }
+.icfes-product-card__eyebrow { margin: 0 0 0.35rem !important; font: 700 0.72rem var(--mono); letter-spacing: 0.1em; color: var(--accent); }
+.icfes-product-card--muted { border-color: var(--line-soft); background: var(--bg-2); box-shadow: none; }
+.icfes-product-card--lead { text-align: left; }
+.icfes-consent { display: flex; align-items: flex-start; gap: 0.65rem; color: var(--muted); font-size: 0.84rem; line-height: 1.45; }
+.icfes-consent input { margin-top: 0.2rem; flex: 0 0 auto; }
 
 /* ── Lead gate ────────────────────────────────────────────────────────────── */
 .prac-lead-gate {
@@ -2973,6 +2993,31 @@ button {
   color: var(--muted);
   margin-top: 1rem;
   text-align: center;
+}
+
+.icfes-product-card {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  background: var(--wl-panel-raised, #fff);
+  color: var(--ink);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+}
+.icfes-product-card h2 { margin: 0 0 0.6rem; font-size: 1.25rem; }
+.icfes-product-card p { color: var(--muted); line-height: 1.55; }
+.icfes-product-card small { display: block; margin-top: 0.8rem; color: var(--muted); line-height: 1.45; }
+.icfes-product-card__eyebrow { margin: 0 0 0.35rem !important; font-family: var(--mono); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; }
+.icfes-product-card--muted { box-shadow: none; background: var(--bg-2); }
+.icfes-product-card--lead .prac-lead-gate__form { max-width: 520px; }
+.icfes-consent { display: flex; gap: 0.65rem; align-items: flex-start; color: var(--muted); font-size: 0.83rem; line-height: 1.45; }
+.icfes-consent input { margin-top: 0.2rem; flex: 0 0 auto; }
+
+@media (max-width: 640px) {
+  .prac-topbar { top: 60px; height: auto; min-height: 56px; padding: 0.55rem 0.75rem; }
+  .prac-topbar__title { max-width: 40vw; }
+  .prac-timer__label, .prac-timer__bar { display: none; }
+  .icfes-product-card { padding: 1.1rem; }
 }
 
 /* ── ICFES notice/sign stimulus ──────────────────────────────────────────── */

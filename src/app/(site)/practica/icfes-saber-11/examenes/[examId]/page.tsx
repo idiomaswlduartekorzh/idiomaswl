@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { getSimulacro } from '@/data/mocks/icfes-simulacros';
 import ExamClient from './ExamClient';
 import IcfesJsonLd from '../../_components/IcfesJsonLd';
+import { sanitizeIcfesMock, simulacroToMockExam } from '@/lib/icfes/exam-registry.server';
 
 interface Props {
   params: Promise<{ examId: string }>;
@@ -38,5 +39,6 @@ export default async function Page({ params }: Props) {
   const sim = getSimulacro(examId);
   if (!sim) notFound();
   const canonical = `https://www.idiomaswl.com/practica/icfes-saber-11/examenes/${sim.id}`;
-  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES con corrección automática.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient exam={sim} /></>;
+  const mock = sanitizeIcfesMock(simulacroToMockExam(sim));
+  return <><IcfesJsonLd name={`${sim.title}: modo examen`} description={`${sim.totalQuestions} preguntas de un cuadernillo divulgado por el ICFES con corrección automática.`} url={canonical} type="Quiz" questionCount={sim.totalQuestions} currentLabel={sim.title} /><ExamClient mock={mock} /></>;
 }

@@ -22,6 +22,7 @@ test('the ICFES event contract covers value and future paid-detail milestones', 
     'icfes_study_plan_generated',
     'icfes_lead_submit',
     'icfes_whatsapp_click',
+    'icfes_offer_view',
     'icfes_paid_detail_intent',
     'icfes_checkout_start',
     'icfes_purchase_complete',
@@ -77,11 +78,11 @@ test('real ICFES milestones call the shared event contract', () => {
   assert.match(whatsapp, /trackIcfesEvent\('icfes_whatsapp_click'/);
 });
 
-test('paid events remain contract-only until a verified ICFES checkout exists', () => {
+test('commercial events are documented as verified and PII-free', () => {
   const guide = read('docs/icfes-analytics-instrumentation.md');
-  assert.match(guide, /Contrato listo, todavía sin emisión/);
-  assert.match(guide, /no se emiten/);
-  assert.match(guide, /confirmación verificada del servidor/);
+  assert.match(guide, /ICFES_PASE_ENABLED=true/);
+  assert.match(guide, /endpoint privado confirma una orden `APPROVED` y su entitlement/);
+  assert.match(guide, /No se envían email, teléfono, respuestas/);
 });
 
 test('the reusable report cannot label an ICFES result above B1', () => {

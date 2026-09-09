@@ -1,4 +1,5 @@
 import { queueCoursePaymentReconciliation, reconcileCoursePayment } from '@/lib/course-pricing/payments.server';
+import { persistVerifiedIcfesTransaction } from '@/lib/icfes/payment-events.server';
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
 import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
 import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/security';
@@ -83,6 +84,23 @@ export async function POST(request: Request): Promise<Response> {
       } catch {
         return json({ received: false, code: 'course_payment_not_saved' }, 503);
       }
+    }
+
+    if (typeof candidate?.reference === 'string' && candidate.reference.startsWith('WL-ICFES-')) {
+      // Wompi's event signature does not necessarily include our commercial
+      // reference. Bind the authoritative API lookup to the signed transaction ID
+      // before using its reference, amount or status to grant an entitlement.
+      if (!event.signature.properties.includes('transaction.id') || typeof candidate.id !== 'string') {
+        return json({ received: false, code: 'invalid_icfes_signature' }, 401);
+      }
+      const icfesPersistence = await persistVerifiedIcfesTransaction({
+        transactionId: candidate.id,
+        config,
+      });
+      if (icfesPersistence === 'failed') {
+        return json({ received: false, code: 'persistence_unavailable' }, 503);
+      }
+      return json({ received: true, ignored: icfesPersistence === 'ignored' }, 200);
     }
 
     const transaction = parseAndVerifyWompiTransaction(event.data.transaction);

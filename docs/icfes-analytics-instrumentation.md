@@ -26,18 +26,16 @@ Todos los eventos incluyen `exam=icfes-saber-11`, `event_schema_version=1` y `pa
 | `icfes_study_plan_generated` | Se crea un plan local | `weeks`, `minutes_per_day` |
 | `icfes_error_review_complete` | Se marca un error como entendido | `question_id` |
 | `icfes_whatsapp_click` | Se abre WhatsApp desde una ruta ICFES | `interaction`, `cta_location` |
+| `icfes_offer_view` | Se muestra la oferta habilitada en un simulacro propio | `mock_id`, `product_code` |
+| `icfes_paid_detail_intent` | Se pulsa la opción de pago | `mock_id`, `product_code` |
+| `icfes_checkout_start` | El servidor devuelve un checkout Wompi válido | `mock_id`, `product_code`, `amount_cop` |
+| `icfes_purchase_complete` | El endpoint privado confirma APPROVED y entitlement | `mock_id`, `product_code`, `amount_cop` |
 
 Los enlaces de WhatsApp inline dependen del listener de atribución ya instalado (`NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true`). El botón flotante conserva el evento ICFES aun cuando ese listener esté desactivado.
 
-## Contrato listo, todavía sin emisión
+## Eventos comerciales condicionados
 
-`icfes_paid_detail_intent`, `icfes_checkout_start` e `icfes_purchase_complete` están reservados en el contrato, pero no se emiten. No existe todavía un checkout ICFES ni un control de acceso de suscripción conectado al catálogo, por lo que simular esos eventos produciría conversiones falsas.
-
-Cuando exista ese flujo:
-
-1. Emitir `icfes_paid_detail_intent` al pulsar el CTA de detalle bloqueado, con `resource_id` y `offer_id`.
-2. Emitir `icfes_checkout_start` solo después de crear una sesión de pago válida, con `offer_id` y `currency`; no enviar email ni teléfono.
-3. Emitir `icfes_purchase_complete` únicamente desde la confirmación verificada del servidor, con `transaction_id`, `offer_id`, `currency` y `value`. Evitar emitirlo desde la página de retorno sin verificar el pago.
+Los cuatro eventos comerciales solo pueden emitirse cuando `ICFES_PASE_ENABLED=true`. `icfes_checkout_start` ocurre después de que el servidor crea o recupera una orden con monto y firma válidos. `icfes_purchase_complete` ocurre después de que el endpoint privado confirma una orden `APPROVED` y su entitlement creado por el webhook firmado; la mera página de retorno no basta. No se envían email, teléfono, respuestas, texto de preguntas, tokens ni identificadores de transacción.
 
 ## Configuración de GTM y GA4
 
@@ -54,6 +52,6 @@ Cuando exista ese flujo:
 3. Activación: `icfes_mock_start`, `icfes_practice_start` o `icfes_guided_simulator_start`.
 4. Valor: el evento `*_complete` correspondiente.
 5. Resultado: `icfes_report_view`.
-6. Conversión: `icfes_lead_submit` o `icfes_whatsapp_click`.
+6. Conversión: `icfes_lead_submit`, `icfes_whatsapp_click` o la secuencia comercial `icfes_offer_view` → `icfes_paid_detail_intent` → `icfes_checkout_start` → `icfes_purchase_complete`.
 
 No sumar `icfes_practice_complete`, `icfes_guided_simulator_complete` e `icfes_mock_complete` como si fueran el mismo tipo de sesión. Deben compararse contra su evento de inicio correspondiente.
