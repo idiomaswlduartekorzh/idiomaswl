@@ -4,7 +4,9 @@ import { readFile } from 'node:fs/promises';
 import { PGlite } from '../.local-tools/node_modules/@electric-sql/pglite/dist/index.js';
 
 const user = '12345678-1234-4234-8234-123456789012';
+const singleUser = '92345678-1234-4234-8234-123456789012';
 const migration = new URL('../supabase/migrations/20260909000500_xpress_memberships_wompi.sql', import.meta.url);
+const singleMigration = new URL('../supabase/migrations/20260909160000_xpress_single_exam_purchase.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();
@@ -13,10 +15,16 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
       create role anon; create role authenticated; create role service_role bypassrls;
       create schema auth;
       create table auth.users(id uuid primary key);
-      insert into auth.users values('${user}');
+      insert into auth.users values('${user}'),('${singleUser}');
       create table public.exam_submissions(id uuid primary key default gen_random_uuid());
+      create table public.profiles(
+        id uuid primary key references auth.users(id), name text, full_name text, email text, avatar_url text,
+        enrolled_at timestamptz, student_path text, language text, subject text, target_exam text,
+        xpress_plan_interest text, onboarding_completed_at timestamptz
+      );
     `);
     await db.exec(await readFile(migration, 'utf8'));
+    await db.exec(await readFile(singleMigration, 'utf8'));
     await db.exec('set role service_role');
     const legal = { version: 'xpress-20260908-v1' };
     const prepare = async ({ key = user, offer = 'exam-auto', kind = 'new', credit = 0, amount = 4_900_000, coverage = null } = {}) =>
@@ -63,9 +71,26 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal(memberships.find((item) => item.offer_id === 'exam-teacher').ends_at.toISOString(), membershipEnd.toISOString());
     assert.equal((await db.query("select count(*)::int as count from xpress_fulfillment_jobs where kind in ('student_receipt','owner_notification')")).rows[0].count, 4);
 
+    const single = (await db.query(
+      'select * from public.prepare_xpress_order($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)',
+      [singleUser, 'single@example.com', singleUser, 'sandbox', 'xpress-2026-09-09-v3', 'exam-single', 'ielts', 'single', 0, 1_200_000, null, 'xpress-20260909-v2', 'xpress-privacy-20260908-v1', legal],
+    )).rows[0];
+    await db.query(
+      'select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
+      [single.reference, 'sandbox', 'transaction-single', 1_200_000, 'COP', 'APPROVED', new Date().toISOString(), 'single-approved'],
+    );
+    assert.equal((await db.query('select count(*)::int as count from xpress_exam_credits where user_id=$1 and status=$2', [singleUser, 'active'])).rows[0].count, 1);
+    assert.equal((await db.query('select count(*)::int as count from xpress_memberships where user_id=$1', [singleUser])).rows[0].count, 0);
+    const submission = (await db.query('insert into exam_submissions default values returning id')).rows[0].id;
+    const consumed = (await db.query('select public.consume_xpress_exam_credit($1,$2,$3) as id', [singleUser, 'ielts', submission])).rows[0].id;
+    assert.ok(consumed);
+    assert.equal((await db.query('select status from xpress_exam_credits where id=$1', [consumed])).rows[0].status, 'consumed');
+    assert.equal((await db.query('select public.consume_xpress_exam_credit($1,$2,$3) as id', [singleUser, 'ielts', submission])).rows[0].id, consumed);
+
     await db.exec('set role anon');
     await assert.rejects(db.query('select * from xpress_orders'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_memberships'), /permission denied/);
+    await assert.rejects(db.query('select * from xpress_exam_credits'), /permission denied/);
     await db.exec('set role authenticated');
     await assert.rejects(db.query('select * from xpress_payment_transactions'), /permission denied/);
   } finally {

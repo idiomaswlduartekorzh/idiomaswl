@@ -1,6 +1,7 @@
-export const XPRESS_OFFER_VERSION = 'xpress-2026-09-08-v2' as const;
+export const XPRESS_OFFER_VERSION = 'xpress-2026-09-09-v3' as const;
 
-export type XpressOfferId = 'exam-auto' | 'exam-teacher';
+export type XpressOfferId = 'exam-single' | 'exam-auto' | 'exam-teacher';
+export type XpressMembershipOfferId = Exclude<XpressOfferId, 'exam-single'>;
 export type XpressEntitlement =
   | 'detailed-report'
   | 'question-review'
@@ -15,7 +16,7 @@ export type XpressOffer = Readonly<{
   id: XpressOfferId;
   name: string;
   amountInCents: number;
-  billing: '30-day-membership';
+  billing: 'single-exam' | '30-day-membership';
   entitlementScope: 'exam';
   entitlements: readonly XpressEntitlement[];
   teacherFeedbackTargetHours: number | null;
@@ -26,6 +27,10 @@ const CORE_ENTITLEMENTS = [
   'detailed-report',
   'question-review',
   'focus-areas',
+] as const satisfies readonly XpressEntitlement[];
+
+const MEMBERSHIP_ENTITLEMENTS = [
+  ...CORE_ENTITLEMENTS,
   'unlimited-mocks',
   'progress-history',
   'study-route',
@@ -34,12 +39,22 @@ const CORE_ENTITLEMENTS = [
 
 export const XPRESS_OFFERS = Object.freeze([
   {
+    id: 'exam-single',
+    name: 'Un examen autodidacta',
+    amountInCents: 1_200_000,
+    billing: 'single-exam',
+    entitlementScope: 'exam',
+    entitlements: [...CORE_ENTITLEMENTS, 'automatic-feedback'],
+    teacherFeedbackTargetHours: null,
+    maxConcurrentTeacherReviews: 0,
+  },
+  {
     id: 'exam-auto',
     name: 'Exámenes + corrección automática',
     amountInCents: 4_900_000,
     billing: '30-day-membership',
     entitlementScope: 'exam',
-    entitlements: CORE_ENTITLEMENTS,
+    entitlements: MEMBERSHIP_ENTITLEMENTS,
     teacherFeedbackTargetHours: null,
     maxConcurrentTeacherReviews: 0,
   },
@@ -49,7 +64,7 @@ export const XPRESS_OFFERS = Object.freeze([
     amountInCents: 9_900_000,
     billing: '30-day-membership',
     entitlementScope: 'exam',
-    entitlements: [...CORE_ENTITLEMENTS, 'teacher-feedback-24h'],
+    entitlements: [...MEMBERSHIP_ENTITLEMENTS, 'teacher-feedback-24h'],
     teacherFeedbackTargetHours: 24,
     maxConcurrentTeacherReviews: 1,
   },
@@ -59,7 +74,7 @@ export type XpressPurchaseContext = Readonly<{
   requestedOfferId: XpressOfferId;
   requestedExamSlug: string;
   activeMembership?: Readonly<{
-    offerId: XpressOfferId;
+    offerId: XpressMembershipOfferId;
     examSlug: string;
   }>;
 }>;
@@ -70,7 +85,7 @@ export type XpressPurchaseQuote = Readonly<{
   offer: XpressOffer;
   creditInCents: number;
   examSlug: string;
-  reason: 'new-purchase' | 'membership-upgrade' | 'active-membership' | 'different-exam' | 'downgrade';
+  reason: 'single-purchase' | 'new-purchase' | 'membership-upgrade' | 'active-membership' | 'different-exam' | 'downgrade';
 }>;
 
 export function getXpressOffer(id: XpressOfferId): XpressOffer {
@@ -86,12 +101,18 @@ export function quoteXpressPurchase(context: XpressPurchaseContext): XpressPurch
 
   const active = context.activeMembership;
   if (!active) {
-    return { action: 'checkout', amountInCents: offer.amountInCents, offer, creditInCents: 0, examSlug, reason: 'new-purchase' };
+    return {
+      action: 'checkout', amountInCents: offer.amountInCents, offer, creditInCents: 0, examSlug,
+      reason: offer.billing === 'single-exam' ? 'single-purchase' : 'new-purchase',
+    };
   }
   if (active.examSlug !== examSlug) {
     return { action: 'schedule-change', amountInCents: 0, offer, creditInCents: 0, examSlug, reason: 'different-exam' };
   }
   if (active.offerId === offer.id) {
+    return { action: 'already-included', amountInCents: 0, offer, creditInCents: offer.amountInCents, examSlug, reason: 'active-membership' };
+  }
+  if (offer.id === 'exam-single') {
     return { action: 'already-included', amountInCents: 0, offer, creditInCents: offer.amountInCents, examSlug, reason: 'active-membership' };
   }
   if (active.offerId === 'exam-teacher' && offer.id === 'exam-auto') {

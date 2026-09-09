@@ -8,6 +8,7 @@ export const PLANS = [
   { id: 'intensivo', name: 'Intensivo', weekly: 4, price: 960000, description: 'El idioma dentro de tu rutina.' },
   { id: 'diario', name: 'Diario', weekly: 5, price: 1160000, description: 'Una clase cada día entre semana.' },
 ] as const;
+export type CoursePlanId = (typeof PLANS)[number]['id'];
 
 // These are interests to discuss, not verified teacher availability or exam registration.
 export const LANGUAGES = [

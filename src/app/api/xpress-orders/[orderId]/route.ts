@@ -29,6 +29,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ ord
       },
       status: state.status,
       membership: state.membership,
+      credit: state.credit,
     });
   } catch {
     return json({ message: 'No podemos consultar el pago ahora. No pagues de nuevo.' }, 503);

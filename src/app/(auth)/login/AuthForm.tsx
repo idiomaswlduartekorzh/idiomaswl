@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { safeCourseReturnPath } from '@/lib/course-pricing/payment';
+import { formatCOP, PLANS, type CoursePlanId } from '@/lib/course-pricing/catalog';
 import {
   STUDENT_PATHS,
   WELEARN_LANGUAGE_OPTIONS,
@@ -47,17 +48,18 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [name, setName]         = useState('');
   const [studentPath, setStudentPath] = useState<StudentPath | null>(null);
   const [language, setLanguage] = useState<WelearnLanguage | ''>('');
+  const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>('');
   const [exam, setExam] = useState<XpressExamSlug | ''>('');
   const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
-  const [registrationStep, setRegistrationStep] = useState<1 | 2>(1);
+  const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(1);
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');
   const router = useRouter();
 
   const registrationIntent = (): RegistrationIntent | null => {
-    if (studentPath === 'welearn' && language) return { path: 'welearn', language };
-    if (studentPath === 'exam' && exam && examPlan) return { path: 'exam', exam, plan: examPlan };
+    if (studentPath === 'welearn' && language && coursePlan) return { path: 'welearn', language, plan: coursePlan };
+    if (studentPath === 'exam' && language && exam && examPlan) return { path: 'exam', language, exam, plan: examPlan };
     return null;
   };
 
@@ -168,7 +170,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
       setExam('');
       setExamPlan('');
     } else {
-      setLanguage('');
+      setCoursePlan('');
     }
   };
 
@@ -178,8 +180,19 @@ export default function AuthForm({ mode }: { mode: Mode }) {
       return;
     }
     setError('');
+    setRegistrationStep(3);
+  };
+
+  const continueFromLanguage = () => {
+    if (!language) {
+      setError('Selecciona el idioma que quieres estudiar.');
+      return;
+    }
+    setError('');
     setRegistrationStep(2);
   };
+
+  const examsForLanguage = XPRESS_EXAM_OPTIONS.filter((option) => option.language === language);
 
   return (
     <div style={{
@@ -303,18 +316,22 @@ export default function AuthForm({ mode }: { mode: Mode }) {
             }}>
               {mode === 'login'
                 ? 'Bienvenido de vuelta'
-                : registrationStep === 1 ? '¿Qué quieres aprender?' : 'Crea tu cuenta'}
+                : registrationStep === 1 ? '¿Qué idioma quieres estudiar?'
+                  : registrationStep === 2 ? '¿Cuál es tu objetivo?'
+                    : 'Crea tu cuenta'}
             </h1>
             <p style={{ fontSize: 14, color: MUTED }}>
               {mode === 'login'
                 ? 'Ingresa tus datos para acceder a tu panel.'
                 : registrationStep === 1
-                  ? 'Primero elige tu recorrido. Después creas tu cuenta.'
-                  : 'Tu elección está lista. Ahora guarda tu acceso.'}
+                  ? 'Elige primero el idioma. Tu cuenta se crea al final.'
+                  : registrationStep === 2
+                    ? 'Elige entre idioma general o preparación para examen y selecciona un precio.'
+                    : 'Tu elección está lista. Ahora guarda tu acceso y continúa al pago.'}
             </p>
             {mode === 'register' && (
-              <div aria-label={`Paso ${registrationStep} de 2`} style={{ display: 'flex', gap: 6, marginTop: '1rem' }}>
-                {[1, 2].map((step) => (
+              <div aria-label={`Paso ${registrationStep} de 3`} style={{ display: 'flex', gap: 6, marginTop: '1rem' }}>
+                {[1, 2, 3].map((step) => (
                   <span key={step} style={{ flex: 1, height: 4, borderRadius: 99, background: step <= registrationStep ? A : BORDER }} />
                 ))}
               </div>
@@ -323,80 +340,103 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
           {mode === 'register' && registrationStep === 1 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <Field label="Elige una opción">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
-                  {STUDENT_PATHS.map((option) => {
-                    const selected = option.id === studentPath;
-                    return (
-                      <button
-                        key={option.id}
-                        type="button"
-                        aria-pressed={selected}
-                        onClick={() => selectStudentPath(option.id)}
-                        style={{
-                          padding: '0.85rem',
-                          textAlign: 'left',
-                          borderRadius: 12,
-                          border: `1.5px solid ${selected ? A : BORDER}`,
-                          background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
-                          color: 'var(--ink)',
-                          cursor: 'pointer',
-                        }}
-                      >
-                        <strong style={{ display: 'block', fontSize: 13 }}>{option.label}</strong>
-                        <span style={{ display: 'block', marginTop: 4, fontSize: 11, lineHeight: 1.4, color: MUTED }}>{option.description}</span>
-                      </button>
-                    );
-                  })}
-                </div>
+              <Field label="Idioma">
+                <select
+                  aria-label="Idioma"
+                  value={language}
+                  onChange={(event) => {
+                    setLanguage(event.target.value as WelearnLanguage);
+                    setStudentPath(null); setCoursePlan(''); setExam(''); setExamPlan(''); setError('');
+                  }}
+                  style={inputStyle}
+                >
+                  <option value="" disabled>Selecciona un idioma</option>
+                  {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                </select>
               </Field>
-
-              {studentPath === 'welearn' && (
-                <Field label="Idioma">
-                  <select aria-label="Idioma" value={language} onChange={(event) => setLanguage(event.target.value as WelearnLanguage)} style={inputStyle}>
-                    <option value="" disabled>Selecciona un idioma</option>
-                    {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
-                  </select>
-                </Field>
-              )}
-
-              {studentPath === 'exam' && (
-                <>
-                  <Field label="Examen">
-                    <select aria-label="Examen" value={exam} onChange={(event) => setExam(event.target.value as XpressExamSlug)} style={inputStyle}>
-                      <option value="" disabled>Selecciona un examen</option>
-                      {XPRESS_EXAM_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
-                    </select>
-                  </Field>
-                  <Field label="Suscripción">
-                    <select aria-label="Suscripción" value={examPlan} onChange={(event) => setExamPlan(event.target.value as XpressOfferId)} style={inputStyle}>
-                      <option value="" disabled>Selecciona un plan</option>
-                      {XPRESS_OFFERS.map((offer) => (
-                        <option key={offer.id} value={offer.id}>
-                          ${(offer.amountInCents / 100).toLocaleString('es-CO')} al mes · {offer.id === 'exam-auto' ? 'corrección automática' : 'feedback docente en 24 h'}
-                        </option>
-                      ))}
-                    </select>
-                  </Field>
-                </>
-              )}
 
               {error && <InlineMessage kind="error">{error}</InlineMessage>}
               <button
                 type="button"
-                onClick={continueRegistration}
-                disabled={!registrationReady}
-                style={primaryButtonStyle(!registrationReady)}
+                onClick={continueFromLanguage}
+                disabled={!language}
+                style={primaryButtonStyle(!language)}
               >
                 Continuar
               </button>
               <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>
-                No se crea ninguna cuenta hasta completar el siguiente paso.
+                Todavía no se crea ninguna cuenta ni se realiza ningún cobro.
               </p>
             </div>
           )}
 
-          {(mode === 'login' || registrationStep === 2) && <>
+          {mode === 'register' && registrationStep === 2 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ padding: '0.7rem 0.85rem', border: `1px solid ${BORDER}`, borderRadius: 12, background: CARD, fontSize: 13, color: 'var(--ink)' }}>
+                <strong>{WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label}</strong>
+                <button type="button" onClick={() => { setRegistrationStep(1); setError(''); }} style={{ float: 'right', border: 0, background: 'transparent', color: A, fontWeight: 700, cursor: 'pointer' }}>Cambiar</button>
+              </div>
+              <Field label="Quiero">
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
+                  {STUDENT_PATHS.map((option) => {
+                    const selected = option.id === studentPath;
+                    return <button key={option.id} type="button" aria-pressed={selected} onClick={() => selectStudentPath(option.id)} style={{
+                      padding: '0.85rem', textAlign: 'left', borderRadius: 12,
+                      border: `1.5px solid ${selected ? A : BORDER}`,
+                      background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
+                      color: 'var(--ink)', cursor: 'pointer',
+                    }}>
+                      <strong style={{ display: 'block', fontSize: 13 }}>{option.label}</strong>
+                      <span style={{ display: 'block', marginTop: 4, fontSize: 11, lineHeight: 1.4, color: MUTED }}>{option.description}</span>
+                    </button>;
+                  })}
+                </div>
+              </Field>
+
+              {studentPath === 'welearn' && <Field label="Elige tu plan de clases">
+                <div style={{ display: 'grid', gap: '0.55rem' }}>
+                  {PLANS.map((plan) => <PlanChoice
+                    key={plan.id}
+                    selected={coursePlan === plan.id}
+                    label={`${plan.name} · ${formatCOP(plan.price)} COP`}
+                    description={`${plan.weekly} ${plan.weekly === 1 ? 'clase' : 'clases'} por semana durante 4 semanas. ${plan.description}`}
+                    onSelect={() => { setCoursePlan(plan.id); setError(''); }}
+                  />)}
+                </div>
+              </Field>}
+
+              {studentPath === 'exam' && <>
+                <Field label="Examen">
+                  <select aria-label="Examen" value={exam} onChange={(event) => { setExam(event.target.value as XpressExamSlug); setError(''); }} style={inputStyle}>
+                    <option value="" disabled>Selecciona un examen de {WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label}</option>
+                    {examsForLanguage.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                  </select>
+                  {examsForLanguage.length === 0 && <p style={{ margin: '0.5rem 0 0', fontSize: 12, color: MUTED }}>Todavía no hay simulacros disponibles para este idioma. Puedes elegir Idioma general.</p>}
+                </Field>
+                <Field label="Elige cómo quieres practicar">
+                  <div style={{ display: 'grid', gap: '0.55rem' }}>
+                    {XPRESS_OFFERS.map((offer) => <PlanChoice
+                      key={offer.id}
+                      selected={examPlan === offer.id}
+                      label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
+                      description={offer.id === 'exam-single'
+                        ? 'Un simulacro con corrección automática y reporte detallado.'
+                        : offer.id === 'exam-auto'
+                          ? 'Simulacros ilimitados durante 30 días con corrección automática.'
+                          : 'Simulacros ilimitados y retroalimentación docente en máximo 24 horas.'}
+                      onSelect={() => { setExamPlan(offer.id); setError(''); }}
+                    />)}
+                  </div>
+                </Field>
+              </>}
+
+              {error && <InlineMessage kind="error">{error}</InlineMessage>}
+              <button type="button" onClick={continueRegistration} disabled={!registrationReady} style={primaryButtonStyle(!registrationReady)}>Continuar al registro</button>
+              <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>Crearás tu cuenta antes de pasar al pago seguro con Wompi.</p>
+            </div>
+          )}
+
+          {(mode === 'login' || registrationStep === 3) && <>
           <button
             onClick={() => handleOAuth('google')}
             type="button"
@@ -470,7 +510,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           </>}
 
           {/* Error / Success */}
-          {error && !(mode === 'register' && registrationStep === 1) && (
+          {error && !(mode === 'register' && registrationStep < 3) && (
             <div style={{
               background: '#fee2e2', color: '#dc2626',
               borderRadius: 10, padding: '0.65rem 0.9rem',
@@ -492,7 +532,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           )}
 
           {/* Form */}
-          {(mode === 'login' || registrationStep === 2) && (
+          {(mode === 'login' || registrationStep === 3) && (
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {mode === 'register' && (
               <>
@@ -502,12 +542,12 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                 }}>
                   <span style={{ color: 'var(--ink)', fontSize: 13, fontWeight: 650 }}>
                     {studentPath === 'welearn'
-                      ? `Idioma · ${WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label ?? ''}`
-                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${examPlan === 'exam-teacher' ? '$99.000' : '$49.000'}`}
+                      ? `${WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label ?? ''} · ${PLANS.find((option) => option.id === coursePlan)?.name ?? ''} · ${formatCOP(PLANS.find((option) => option.id === coursePlan)?.price ?? 0)}`
+                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${formatCOP((XPRESS_OFFERS.find((option) => option.id === examPlan)?.amountInCents ?? 0) / 100)}`}
                   </span>
                   <button
                     type="button"
-                    onClick={() => { setRegistrationStep(1); setError(''); }}
+                    onClick={() => { setRegistrationStep(2); setError(''); }}
                     style={{ border: 0, background: 'transparent', padding: 0, color: A, fontWeight: 700, cursor: 'pointer', fontSize: 12 }}
                   >
                     Cambiar
@@ -644,6 +684,25 @@ function InlineMessage({ kind, children }: { kind: 'error'; children: React.Reac
     }}>
       {children}
     </div>
+  );
+}
+
+function PlanChoice({ selected, label, description, onSelect }: {
+  selected: boolean;
+  label: string;
+  description: string;
+  onSelect: () => void;
+}) {
+  return (
+    <button type="button" aria-pressed={selected} onClick={onSelect} style={{
+      width: '100%', padding: '0.75rem 0.85rem', textAlign: 'left', borderRadius: 12,
+      border: `1.5px solid ${selected ? A : BORDER}`,
+      background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
+      color: 'var(--ink)', cursor: 'pointer',
+    }}>
+      <strong style={{ display: 'block', fontSize: 13 }}>{label}</strong>
+      <span style={{ display: 'block', marginTop: 4, fontSize: 11, lineHeight: 1.4, color: MUTED }}>{description}</span>
+    </button>
   );
 }
 

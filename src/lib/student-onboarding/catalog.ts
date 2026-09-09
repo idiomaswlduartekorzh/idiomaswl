@@ -1,9 +1,9 @@
 import type { XpressOfferId } from '../xpress-commerce/catalog.ts';
-import { LEVELS, selectionPath, type Selection } from '../course-pricing/catalog.ts';
+import { LEVELS, PLANS, selectionPath, type CoursePlanId, type Selection } from '../course-pricing/catalog.ts';
 
 export const STUDENT_PATHS = [
-  { id: 'welearn', label: 'Aprender un idioma', description: 'Clases y acompañamiento WeLearn.' },
-  { id: 'exam', label: 'Preparar un examen', description: 'Simulacros y correcciones.' },
+  { id: 'welearn', label: 'Idioma general', description: 'Clases en vivo para aprender y practicar el idioma.' },
+  { id: 'exam', label: 'Preparación para un examen', description: 'Simulacros, correcciones y apoyo opcional de docentes.' },
 ] as const;
 
 export const WELEARN_LANGUAGE_OPTIONS = [
@@ -63,8 +63,8 @@ export function xpressClassPurchasePath(examSlug: XpressExamSlug): string {
 }
 
 export type RegistrationIntent =
-  | Readonly<{ path: 'welearn'; language: WelearnLanguage }>
-  | Readonly<{ path: 'exam'; exam: XpressExamSlug; plan: XpressOfferId }>;
+  | Readonly<{ path: 'welearn'; language: WelearnLanguage; plan: CoursePlanId }>
+  | Readonly<{ path: 'exam'; language: WelearnLanguage; exam: XpressExamSlug; plan: XpressOfferId }>;
 
 function scalar(value: unknown): string | null {
   return typeof value === 'string' ? value : Array.isArray(value) && typeof value[0] === 'string' ? value[0] : null;
@@ -76,16 +76,19 @@ export function parseRegistrationIntent(value: unknown): RegistrationIntent | nu
   const path = scalar(input.path);
   if (path === 'welearn') {
     const language = scalar(input.language);
-    if (WELEARN_LANGUAGE_OPTIONS.some((item) => item.id === language)) {
-      return { path, language: language as WelearnLanguage };
+    const plan = scalar(input.plan);
+    if (WELEARN_LANGUAGE_OPTIONS.some((item) => item.id === language) && PLANS.some((item) => item.id === plan)) {
+      return { path, language: language as WelearnLanguage, plan: plan as CoursePlanId };
     }
     return null;
   }
   if (path === 'exam') {
+    const language = scalar(input.language);
     const exam = scalar(input.exam);
     const plan = scalar(input.plan);
-    if (XPRESS_EXAM_OPTIONS.some((item) => item.id === exam) && (plan === 'exam-auto' || plan === 'exam-teacher')) {
-      return { path, exam: exam as XpressExamSlug, plan };
+    const matchingExam = XPRESS_EXAM_OPTIONS.find((item) => item.id === exam);
+    if (matchingExam && matchingExam.language === language && (plan === 'exam-single' || plan === 'exam-auto' || plan === 'exam-teacher')) {
+      return { path, language: language as WelearnLanguage, exam: exam as XpressExamSlug, plan };
     }
   }
   return null;
@@ -113,7 +116,8 @@ export function registrationIntentMetadata(intent: RegistrationIntent) {
 
 export function registrationCompletionPath(intent: RegistrationIntent, returnTo = '/dashboard'): string {
   const params = new URLSearchParams({ path: intent.path, return: returnTo });
-  if (intent.path === 'welearn') params.set('language', intent.language);
+  params.set('language', intent.language);
+  if (intent.path === 'welearn') params.set('plan', intent.plan);
   else {
     params.set('exam', intent.exam);
     params.set('plan', intent.plan);
@@ -123,5 +127,5 @@ export function registrationCompletionPath(intent: RegistrationIntent, returnTo 
 
 export function registrationPurchasePath(intent: RegistrationIntent): string {
   if (intent.path === 'exam') return '/suscripcion/examenes';
-  return `/precios?${new URLSearchParams({ idioma: intent.language }).toString()}`;
+  return selectionPath({ language: intent.language, objective: 'general', plan: intent.plan, level: LEVELS[0] });
 }

@@ -15,7 +15,7 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   const input = value as Record<string, unknown>;
   if (typeof input.idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.idempotencyKey)) return null;
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
-  if (input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
+  if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
   if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
   getXpressOffer(input.offerId);
   return {

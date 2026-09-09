@@ -3,13 +3,13 @@
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { formatCOP } from '@/lib/course-pricing/catalog';
-import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
+import { XPRESS_OFFERS, type XpressMembershipOfferId, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
 import { XPRESS_PRIVACY_NOTICE, XPRESS_PRIVACY_VERSION, XPRESS_TERMS, XPRESS_TERMS_VERSION } from '@/lib/xpress-commerce/terms';
 import type { XpressExamSlug } from '@/lib/student-onboarding/catalog';
 import styles from './xpress-membership.module.css';
 
 type ActiveMembership = {
-  offerId: XpressOfferId;
+  offerId: XpressMembershipOfferId;
   examSlug: string;
   startsAt: string;
   endsAt: string;
@@ -18,6 +18,7 @@ type OrderResult = {
   order?: { id: string; reference: string; offerId: XpressOfferId; examSlug: string; amountInCents: number; expiresAt: string };
   status?: 'created' | 'pending' | 'paid' | 'review' | 'not_completed';
   membership?: { ends_at?: string } | null;
+  credit?: { status?: string; consumed_at?: string | null } | null;
 };
 
 export default function XpressMembershipClient({
@@ -118,6 +119,7 @@ export default function XpressMembershipClient({
 
   const selectedOffer = XPRESS_OFFERS.find((offer) => offer.id === offerId)!;
   const isUpgrade = activeMembership?.offerId === 'exam-auto' && offerId === 'exam-teacher';
+  const singleIncluded = Boolean(activeMembership && offerId === 'exam-single');
   const displayedAmount = isUpgrade ? 50_000 : selectedOffer.amountInCents / 100;
   const paid = result.status === 'paid';
 
@@ -127,7 +129,7 @@ export default function XpressMembershipClient({
         <Link href="/dashboard/student" className={styles.back}>← Volver al panel</Link>
         <p className={styles.eyebrow}>WELEARN · XPRESS</p>
         <h1>Tu preparación para <span>{examLabel}</span></h1>
-        <p>Elige el tipo de corrección. Si necesitas acompañamiento en vivo, puedes añadir clases sin cambiar tu membresía.</p>
+        <p>Elige un examen individual o un acceso de 30 días. También puedes añadir clases con docente.</p>
       </header>
 
       {activeMembership && <section className={styles.active}>
@@ -147,17 +149,18 @@ export default function XpressMembershipClient({
 
       <section className={styles.plans} aria-labelledby="plans-heading">
         <p className={styles.eyebrow}>1 · ELIGE TU PLAN</p>
-        <h2 id="plans-heading">30 días para practicar a tu ritmo</h2>
+        <h2 id="plans-heading">Elige cuánto quieres practicar</h2>
         <div className={styles.planGrid}>
           {XPRESS_OFFERS.map((offer) => {
             const active = activeMembership?.offerId === offer.id;
             const blockedDowngrade = activeMembership?.offerId === 'exam-teacher' && offer.id === 'exam-auto';
+            const includedByMembership = Boolean(activeMembership && offer.id === 'exam-single');
             return <label key={offer.id} className={`${styles.planCard} ${offerId === offer.id ? styles.selected : ''} ${active ? styles.current : ''}`}>
-              <input type="radio" name="xpress-plan" value={offer.id} checked={offerId === offer.id} disabled={active || blockedDowngrade} onChange={() => setOfferId(offer.id)} />
+              <input type="radio" name="xpress-plan" value={offer.id} checked={offerId === offer.id} disabled={active || blockedDowngrade || includedByMembership} onChange={() => setOfferId(offer.id)} />
               <span className={styles.planName}>{offer.name}</span>
-              <strong>{active ? 'Plan actual' : isUpgrade && offer.id === 'exam-teacher' ? '$50.000 para subir' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
-              <span>Simulacros disponibles sin límite durante el periodo.</span>
-              <span>{offer.id === 'exam-teacher' ? 'Corrección automática y feedback docente en máximo 24 horas.' : 'Corrección automática, reporte y áreas de atención.'}</span>
+              <strong>{active ? 'Plan actual' : includedByMembership ? 'Incluido en tu membresía' : isUpgrade && offer.id === 'exam-teacher' ? '$50.000 para subir' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
+              <span>{offer.id === 'exam-single' ? 'Un simulacro para realizar una vez.' : 'Simulacros disponibles sin límite durante 30 días.'}</span>
+              <span>{offer.id === 'exam-teacher' ? 'Corrección automática y retroalimentación docente en máximo 24 horas.' : 'Corrección automática, reporte y áreas de atención.'}</span>
             </label>;
           })}
         </div>
@@ -176,16 +179,17 @@ export default function XpressMembershipClient({
         <p className={styles.eyebrow}>3 · ANTES DEL PAGO</p>
         <h2>Condiciones claras</h2>
         <div className={styles.termGrid}>{XPRESS_TERMS.map((term) => <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>)}</div>
-        <label className={styles.check}><input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} /><span><strong>Leí y acepto las condiciones de la membresía.</strong></span></label>
+        <label className={styles.check}><input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} /><span><strong>Leí y acepto las condiciones de esta compra.</strong></span></label>
         <label className={styles.check}><input type="checkbox" checked={acceptedPrivacy} onChange={(event) => setAcceptedPrivacy(event.target.checked)} /><span>{XPRESS_PRIVACY_NOTICE}</span></label>
         <div className={styles.checkout}>
-          <div><span>{isUpgrade ? 'Valor del cambio' : 'Total por 30 días'}</span><strong>{formatCOP(displayedAmount)} COP</strong></div>
+          <div><span>{isUpgrade ? 'Valor del cambio' : selectedOffer.billing === 'single-exam' ? 'Total por un examen' : 'Total por 30 días'}</span><strong>{formatCOP(displayedAmount)} COP</strong></div>
           <button disabled={busy || !acceptedTerms || !acceptedPrivacy} onClick={() => void purchase()}>{busy ? 'Preparando…' : 'Pagar con Wompi'}</button>
         </div>
         <p className={styles.note}>No almacenamos datos de tarjeta. El acceso se activa únicamente cuando Wompi confirma el pago.</p>
       </section> : null}
 
-      <p className={styles.message} role="status">{message}</p>
+      {singleIncluded && <p className={styles.message} role="status">Tu membresía ya incluye todos los simulacros de este examen.</p>}
+      {!singleIncluded && <p className={styles.message} role="status">{message}</p>}
     </div>
   </main>;
 }

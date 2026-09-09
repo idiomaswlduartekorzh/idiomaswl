@@ -29,7 +29,9 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
   const orderId = typeof params.orden === 'string' ? params.orden : null;
   const transactionId = typeof params.id === 'string' ? params.id : null;
   const membership = await activeXpressMembership(user.id);
-  const initialOfferId: XpressOfferId = profile.xpress_plan_interest === 'exam-teacher' ? 'exam-teacher' : 'exam-auto';
+  const initialOfferId: XpressOfferId = ['exam-single', 'exam-auto', 'exam-teacher'].includes(String(profile.xpress_plan_interest))
+    ? profile.xpress_plan_interest as XpressOfferId
+    : 'exam-auto';
 
   return <XpressMembershipClient
     examSlug={exam.id as XpressExamSlug}

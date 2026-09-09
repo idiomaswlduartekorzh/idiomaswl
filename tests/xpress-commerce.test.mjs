@@ -15,12 +15,13 @@ import {
 import { parseXpressOrderInput, parseXpressProviderPayment } from '../src/lib/xpress-commerce/payment.ts';
 import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
 
-test('publishes the two exam memberships in COP cents', () => {
+test('publishes one exam purchase and two memberships in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
+    ['exam-single', 1_200_000],
     ['exam-auto', 4_900_000],
     ['exam-teacher', 9_900_000],
   ]);
-  assert.equal(XPRESS_OFFERS[1].teacherFeedbackTargetHours, 24);
+  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 24);
 });
 
 test('opens the existing class checkout with the exam objective preselected', () => {
@@ -59,6 +60,14 @@ test('an active membership cannot charge twice for the same exam', () => {
   assert.equal(quote.amountInCents, 0);
 });
 
+test('a single self-study exam charges COP 12,000 and creates no membership period', () => {
+  const quote = quoteXpressPurchase({ requestedOfferId: 'exam-single', requestedExamSlug: 'ielts' });
+  assert.equal(quote.action, 'checkout');
+  assert.equal(quote.amountInCents, 1_200_000);
+  assert.equal(quote.reason, 'single-purchase');
+  assert.equal(quote.offer.billing, 'single-exam');
+});
+
 test('charges only COP 50,000 when upgrading the same exam', () => {
   const quote = quoteXpressPurchase({
     requestedOfferId: 'exam-teacher',
@@ -92,9 +101,9 @@ test('a membership lasts 30 days and teacher access includes the 24-hour entitle
 });
 
 test('validates and normalizes both registration paths', () => {
-  const welearn = parseRegistrationIntent({ path: 'welearn', language: 'coreano' });
-  const exam = parseRegistrationIntent({ path: 'exam', exam: 'ielts', plan: 'exam-teacher' });
-  assert.deepEqual(welearn, { path: 'welearn', language: 'coreano' });
+  const welearn = parseRegistrationIntent({ path: 'welearn', language: 'coreano', plan: 'constancia' });
+  const exam = parseRegistrationIntent({ path: 'exam', language: 'ingles', exam: 'ielts', plan: 'exam-teacher' });
+  assert.deepEqual(welearn, { path: 'welearn', language: 'coreano', plan: 'constancia' });
   assert.deepEqual(registrationIntentMetadata(exam), {
     student_path: 'exam',
     language: 'ingles',
@@ -106,6 +115,6 @@ test('validates and normalizes both registration paths', () => {
   assert.equal(parseRegistrationIntent({}), null);
   assert.equal(
     registrationCompletionPath(exam, '/dashboard'),
-    '/registro/completar?path=exam&return=%2Fdashboard&exam=ielts&plan=exam-teacher',
+    '/registro/completar?path=exam&return=%2Fdashboard&language=ingles&exam=ielts&plan=exam-teacher',
   );
 });

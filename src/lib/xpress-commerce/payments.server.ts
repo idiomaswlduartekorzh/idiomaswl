@@ -5,7 +5,7 @@ import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
 import { XPRESS_EXAM_OPTIONS } from '@/lib/student-onboarding/catalog';
-import { quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressOfferId } from './catalog';
+import { quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
 import { fulfillPaidXpressOrder } from './fulfillment.server';
 import { parseXpressProviderPayment, type XpressOrderInput } from './payment';
 import { XPRESS_LEGAL_SNAPSHOT, XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from './terms';
@@ -13,7 +13,7 @@ import { XPRESS_LEGAL_SNAPSHOT, XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } f
 type MembershipRow = {
   id: string;
   exam_slug: string;
-  offer_id: XpressOfferId;
+  offer_id: XpressMembershipOfferId;
   starts_at: string;
   ends_at: string;
 };
@@ -54,7 +54,7 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
   if (quote.action === 'schedule-change') throw new Error('xpress_change_next_period');
 
   const coverageEndsAt = quote.reason === 'membership-upgrade' ? active?.ends_at ?? null : null;
-  const orderKind = quote.reason === 'membership-upgrade' ? 'upgrade' : 'new';
+  const orderKind = quote.reason === 'membership-upgrade' ? 'upgrade' : quote.reason === 'single-purchase' ? 'single' : 'new';
   const { data, error } = await createAdminClient().rpc('prepare_xpress_order', {
     p_user: user.id,
     p_email: user.email!.toLowerCase(),
@@ -87,24 +87,25 @@ export async function ownedXpressOrder(id: string, userId: string) {
 
 export async function xpressOrderState(orderId: string) {
   const db = createAdminClient();
-  const [payments, membership, jobs] = await Promise.all([
+  const [payments, membership, credit, jobs] = await Promise.all([
     db.from('xpress_payment_transactions').select('provider_id,status').eq('order_id', orderId).abortSignal(AbortSignal.timeout(8000)),
     db.from('xpress_memberships').select('id,starts_at,ends_at,status,offer_id,exam_slug').eq('source_order_id', orderId).abortSignal(AbortSignal.timeout(8000)).maybeSingle(),
+    db.from('xpress_exam_credits').select('id,status,exam_slug,granted_at,consumed_at').eq('source_order_id', orderId).abortSignal(AbortSignal.timeout(8000)).maybeSingle(),
     db.from('xpress_fulfillment_jobs').select('kind,status').eq('order_id', orderId).abortSignal(AbortSignal.timeout(8000)),
   ]);
-  if (payments.error || membership.error || jobs.error) throw new Error('xpress_order_storage_unavailable');
+  if (payments.error || membership.error || credit.error || jobs.error) throw new Error('xpress_order_storage_unavailable');
   const approved = payments.data.filter((item: { status: string }) => item.status === 'APPROVED');
   const status = jobs.data.some((item: { kind: string }) => item.kind === 'financial_review') ? 'review'
-    : approved.length && membership.data ? 'paid'
+    : approved.length && (membership.data || credit.data) ? 'paid'
       : payments.data.some((item: { status: string }) => item.status === 'PENDING') ? 'pending'
         : payments.data.length ? 'not_completed' : 'created';
-  return { status, payments: payments.data, membership: membership.data };
+  return { status, payments: payments.data, membership: membership.data, credit: credit.data };
 }
 
 export async function checkoutForXpressOrder(order: Record<string, unknown>, origin: string) {
   const config = getWompiServerConfig();
   if (config.environment !== order.environment || (process.env.VERCEL_ENV !== 'production' && config.environment === 'production')) throw new Error('environment_mismatch');
-  if (order.terms_version !== XPRESS_TERMS_VERSION) throw new Error('terms_unavailable');
+  if (![XPRESS_TERMS_VERSION, 'xpress-20260908-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
   const state = await xpressOrderState(String(order.id));
   if (['paid', 'review', 'pending'].includes(state.status)) return { status: state.status };
   const expirationTime = new Date(String(order.expires_at)).toISOString();
