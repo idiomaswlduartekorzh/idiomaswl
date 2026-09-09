@@ -37,6 +37,8 @@ Esta tubería separa inventario, producción, auditoría y publicación. Ningún
 
 Cada segmento se recorta, normaliza y termina con una rampa de 10 ms que lleva sus extremos a cero. Este de-click elimina empalmes abruptos sin suavizar perceptiblemente el ataque de la voz. El hash del casting incluye esta política y vuelve obsoleta cualquier evidencia generada con otro ensamblado.
 
+La aprobación representativa de calidad auditiva del lote se conserva en `config/ielts-audio/batch-quality-approval.json` y queda ligada al hash de cada MP3. Esta decisión permite cerrar el criterio de naturalidad del lote, pero no sustituye la evidencia humana Q1–Q40 ni autoriza por sí sola la publicación.
+
 ## Coste y modelo
 
 La opción base es `eleven_flash_v2_5`. El manifiesto factura el texto exacto que se enviará tras convertir teléfonos, importes, porcentajes, años y letras deletreadas a formas pronunciables. Multilingual v2 queda reservado para segmentos que fallen dos intentos idénticos. El lote obligatorio se ejecuta en oleadas para respetar la reserva de créditos.
