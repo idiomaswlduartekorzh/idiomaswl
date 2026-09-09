@@ -256,7 +256,7 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Sprechen', icon: '🎙️', time: '~15 min', questions: 3, color: '#a8720a', types: ['Producción oral', 'Descripción de imagen', 'Discusión'] },
     ],
     mocks: [
-      { id: 'a1-1', title: 'Goethe-Zertifikat A1 – Übungstest 1', subtitle: 'Hören · Lesen · Schreiben · Sprechen', free: true, parts: 11, questions: 25, badge: 'A1' },
+      { id: 'a1-1', title: 'A1 – Simulacro 1 · formato Start Deutsch 1', subtitle: 'Hören · Lesen · Schreiben · Sprechen', free: true, parts: 11, questions: 39, badge: 'A1' },
       { id: 'a1-2', title: 'Goethe-Zertifikat A1 – Übungstest 2', subtitle: 'Hören · Lesen · Schreiben · Sprechen', free: true, parts: 11, questions: 25, badge: 'A1' },
       { id: 'a1-3', title: 'Goethe-Zertifikat A1 – Übungstest 3', subtitle: 'Hören · Lesen · Schreiben · Sprechen', free: true, parts: 11, questions: 25, badge: 'A1' },
       { id: 'a1-4', title: 'Goethe-Zertifikat A1 – Übungstest 4', subtitle: 'Hören · Lesen · Schreiben · Sprechen', free: true, parts: 11, questions: 25, badge: 'A1' },

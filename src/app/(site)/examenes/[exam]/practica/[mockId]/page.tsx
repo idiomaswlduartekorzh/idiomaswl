@@ -7,6 +7,7 @@ import TOEFLPracticeClient from './TOEFLPracticeClient';
 import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
+import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -42,6 +43,9 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
     return mockId === 'set-1'
       ? <TOPIKPracticeClient exam={exam} mock={mock} />
       : <LanguagePracticeClient exam={exam} mock={mock} />;
+  }
+  if (slug === 'goethe' && mockId === 'a1-1') {
+    return <GoetheA1PracticeClient exam={exam} mock={mock} />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 

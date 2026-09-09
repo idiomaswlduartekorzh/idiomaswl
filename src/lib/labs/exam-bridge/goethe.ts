@@ -3,8 +3,8 @@
  * principio que exam-bridge/toefl.ts: import() dinámico del set exacto,
  * nunca el getMock() central (ver el comentario largo en exam-bridge/ielts.ts).
  *
- * El mock actual (set-1) solo tiene UNA tarea de Schreiben (taskNumber 1) —
- * a diferencia de IELTS/TOEFL/Cambridge no hay Task 2 todavía.
+ * El mock histórico (set-1) solo tiene UNA tarea de Schreiben (taskNumber 1).
+ * El A1 usa un evaluador docente propio en su runner y no entra en esta rúbrica B1.
  */
 
 import type { MockExam, WriteQuestion } from '@/data/mocks/types';
