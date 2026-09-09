@@ -10,6 +10,7 @@ import { getIcfesProductConfig, isIcfesPassEnabled } from '@/lib/icfes/product-c
 import { ICFES_ATTEMPT_ID_PATTERN, type IcfesCheckoutDto, type IcfesPaymentStatus } from '@/lib/icfes/attempt-contract';
 import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
 import { xpressOfferIncludes } from '@/lib/xpress-commerce/catalog';
+import { claimIcfesAttemptForUser, IcfesAttemptClaimError } from '@/lib/icfes/attempt-ownership.server';
 
 export const runtime = 'nodejs';
 
@@ -42,11 +43,14 @@ export async function POST(request: Request): Promise<Response> {
     || (attempt.user_id && attempt.user_id !== user?.id)) return json({ ok: false, error: 'El intento guardado no coincide con tu sesión.' }, 403);
 
   let ownedByUser = Boolean(user && attempt.user_id === user.id);
-  if (user && !attempt.user_id) {
-    const claimed = await admin.from('icfes_attempts').update({ user_id: user.id })
-      .eq('id', attemptId).is('user_id', null).select('id').maybeSingle();
-    if (claimed.error) return json({ ok: false, error: 'No pudimos asociar el intento con tu cuenta.' }, 503);
-    ownedByUser = Boolean(claimed.data);
+  if (user) {
+    try {
+      await claimIcfesAttemptForUser({ attemptId, token, userId: user.id });
+      ownedByUser = true;
+    } catch (error) {
+      const status = error instanceof IcfesAttemptClaimError && error.code === 'UNAVAILABLE' ? 503 : 403;
+      return json({ ok: false, error: 'No pudimos asociar el intento con tu cuenta.' }, status);
+    }
   }
 
   const resultUrl = `${config.origin}/practica/icfes-saber-11/resultados/${attemptId}`;

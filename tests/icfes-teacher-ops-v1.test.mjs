@@ -178,7 +178,7 @@ test('binds ICFES reviews to the owned secure attempt that contains the real ans
   const serverOps = await readFile(new URL('../src/lib/icfes/teacher-ops.server.ts', import.meta.url), 'utf8');
 
   assert.doesNotMatch(genericSave, /objective_answers\s*:/);
-  assert.match(secureGrading, /from\('icfes_attempts'\)\.upsert\([\s\S]+answers: input\.answers/);
+  assert.match(secureGrading, /from\('icfes_attempts'\)\.insert\([\s\S]+\.\.\.evidence/);
   assert.match(sql, /icfes_attempt_id uuid unique references public\.icfes_attempts\(id\)/);
   assert.match(sql, /check \(\(submission_id is null\)<>\(icfes_attempt_id is null\)\)/);
   assert.match(sql, /where id=p_attempt and user_id=p_user[\s\S]+answers<>'\{\}'::jsonb/);

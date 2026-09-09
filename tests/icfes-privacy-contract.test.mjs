@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const migration = readFileSync('supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql', 'utf8');
 const teacherMigration = readFileSync('supabase/migrations/20260909000500_xpress_memberships_wompi.sql', 'utf8');
+const operationsMigration = readFileSync('supabase/migrations/20260909180000_icfes_privacy_operations.sql', 'utf8');
 const guide = readFileSync('docs/icfes-privacy-contract.md', 'utf8');
 
 function between(source, start, end) {
@@ -72,8 +73,12 @@ test('browser roles have no table grants and service updates are column-scoped',
   assert.doesNotMatch(migration, /GRANT (?:SELECT, INSERT, )?UPDATE ON TABLE public\.icfes_attempts/);
 });
 
-test('export/delete requests are modeled but honestly policy-blocked', () => {
+test('export/delete/purge operations exist but remain honestly policy-blocked', () => {
   assert.match(migration, /request_type IN \('EXPORT', 'DELETE'\)/);
   assert.match(migration, /status text NOT NULL DEFAULT 'BLOCKED_POLICY'/);
-  assert.match(guide, /falta el flujo real de exportación\/borrado/i);
+  assert.match(operationsMigration, /CREATE FUNCTION public\.export_icfes_user_data/);
+  assert.match(operationsMigration, /CREATE FUNCTION public\.delete_icfes_user_data/);
+  assert.match(operationsMigration, /CREATE FUNCTION public\.purge_expired_icfes_attempts/);
+  assert.doesNotMatch(operationsMigration, /cron\.schedule/);
+  assert.match(guide, /sigue siendo un blocker/i);
 });

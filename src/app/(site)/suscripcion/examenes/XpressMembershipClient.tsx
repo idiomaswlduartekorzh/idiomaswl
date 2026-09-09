@@ -6,6 +6,7 @@ import { formatCOP } from '@/lib/course-pricing/catalog';
 import { XPRESS_OFFERS, type XpressMembershipOfferId, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
 import { XPRESS_PRIVACY_NOTICE, XPRESS_PRIVACY_VERSION, XPRESS_TERMS, XPRESS_TERMS_VERSION } from '@/lib/xpress-commerce/terms';
 import type { XpressExamSlug } from '@/lib/student-onboarding/catalog';
+import guardStyles from './xpress-offer-guard.module.css';
 import styles from './xpress-membership.module.css';
 
 type ActiveMembership = {
@@ -20,9 +21,18 @@ type OrderResult = {
   membership?: { ends_at?: string } | null;
   credit?: { status?: string; consumed_at?: string | null } | null;
 };
+type IcfesTeacherReadiness = {
+  purchasable: boolean;
+  message: string | null;
+};
+type IcfesTeacherAddendum = {
+  version: string;
+  supersedesSection: string;
+};
 
 export default function XpressMembershipClient({
   examSlug, examLabel, initialOfferId, activeMembership, classPurchasePath, orderId, transactionId,
+  icfesTeacherReadiness, icfesTeacherAddendum,
 }: {
   examSlug: XpressExamSlug;
   examLabel: string;
@@ -31,14 +41,22 @@ export default function XpressMembershipClient({
   classPurchasePath: string;
   orderId: string | null;
   transactionId: string | null;
+  icfesTeacherReadiness: IcfesTeacherReadiness | null;
+  icfesTeacherAddendum: IcfesTeacherAddendum | null;
 }) {
   const [offerId, setOfferId] = useState<XpressOfferId>(initialOfferId);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
+  const [acceptedIcfesTeacherAddendum, setAcceptedIcfesTeacherAddendum] = useState(false);
   const [busy, setBusy] = useState(Boolean(orderId));
   const [message, setMessage] = useState(orderId ? 'Comprobando tu pago…' : '');
   const [result, setResult] = useState<OrderResult>({});
   const verified = useRef(false);
+  const isIcfesTeacherSelected = examSlug === 'icfes' && offerId === 'exam-teacher';
+  const isIcfesTeacherUnavailable = isIcfesTeacherSelected && !icfesTeacherReadiness?.purchasable;
+  const hasRequiredAcceptances = acceptedTerms
+    && acceptedPrivacy
+    && (!isIcfesTeacherSelected || (acceptedIcfesTeacherAddendum && Boolean(icfesTeacherAddendum)));
 
   const loadOrder = useCallback(async () => {
     if (!orderId) return;
@@ -81,7 +99,7 @@ export default function XpressMembershipClient({
   }
 
   async function purchase() {
-    if (busy || !acceptedTerms || !acceptedPrivacy) return;
+    if (busy || !hasRequiredAcceptances || isIcfesTeacherUnavailable) return;
     setBusy(true);
     setMessage('Guardando la compra antes de abrir Wompi…');
     try {
@@ -99,6 +117,9 @@ export default function XpressMembershipClient({
           offerId,
           acceptedTerms: XPRESS_TERMS_VERSION,
           acceptedPrivacy: XPRESS_PRIVACY_VERSION,
+          ...(isIcfesTeacherSelected && icfesTeacherAddendum
+            ? { acceptedIcfesTeacherAddendum: icfesTeacherAddendum.version }
+            : {}),
         }),
       });
       const data = await response.json();
@@ -122,6 +143,9 @@ export default function XpressMembershipClient({
   const singleIncluded = Boolean(activeMembership && offerId === 'exam-single');
   const displayedAmount = isUpgrade ? 50_000 : selectedOffer.amountInCents / 100;
   const paid = result.status === 'paid';
+  const displayedTerms = examSlug === 'icfes'
+    ? XPRESS_TERMS.filter((term) => term.title !== (icfesTeacherAddendum?.supersedesSection ?? 'Correcciones'))
+    : XPRESS_TERMS;
 
   return <main className={styles.page}>
     <div className={styles.shell}>
@@ -155,15 +179,46 @@ export default function XpressMembershipClient({
             const active = activeMembership?.offerId === offer.id;
             const blockedDowngrade = activeMembership?.offerId === 'exam-teacher' && offer.id === 'exam-auto';
             const includedByMembership = Boolean(activeMembership && offer.id === 'exam-single');
-            return <label key={offer.id} className={`${styles.planCard} ${offerId === offer.id ? styles.selected : ''} ${active ? styles.current : ''}`}>
-              <input type="radio" name="xpress-plan" value={offer.id} checked={offerId === offer.id} disabled={active || blockedDowngrade || includedByMembership} onChange={() => setOfferId(offer.id)} />
+            const isIcfesTeacherOffer = examSlug === 'icfes' && offer.id === 'exam-teacher';
+            const teacherUnavailable = isIcfesTeacherOffer && !icfesTeacherReadiness?.purchasable;
+            const descriptionId = isIcfesTeacherOffer ? 'icfes-teacher-offer-description' : undefined;
+            return <label
+              key={offer.id}
+              className={`${styles.planCard} ${offerId === offer.id ? styles.selected : ''} ${active ? styles.current : ''} ${teacherUnavailable ? guardStyles.unavailable : ''}`}
+              aria-disabled={teacherUnavailable || undefined}
+            >
+              <input
+                type="radio"
+                name="xpress-plan"
+                value={offer.id}
+                checked={offerId === offer.id}
+                disabled={active || blockedDowngrade || includedByMembership || teacherUnavailable}
+                aria-describedby={teacherUnavailable
+                  ? `${descriptionId} icfes-teacher-availability`
+                  : descriptionId}
+                onChange={() => setOfferId(offer.id)}
+              />
               <span className={styles.planName}>{offer.name}</span>
               <strong>{active ? 'Plan actual' : includedByMembership ? 'Incluido en tu membresía' : isUpgrade && offer.id === 'exam-teacher' ? '$50.000 para subir' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
               <span>{offer.id === 'exam-single' ? 'Un simulacro para realizar una vez.' : 'Simulacros disponibles sin límite durante 30 días.'}</span>
-              <span>{offer.id === 'exam-teacher' ? 'Corrección automática y retroalimentación docente en máximo 24 horas.' : 'Corrección automática, reporte y áreas de atención.'}</span>
+              <span id={descriptionId}>{offer.id === 'exam-teacher'
+                ? isIcfesTeacherOffer
+                  ? 'Incluye un solo crédito de revisión docente durante los 30 días. Objetivo de entrega en 24 horas, sujeto a capacidad disponible.'
+                  : 'Corrección automática y feedback docente en máximo 24 horas.'
+                : 'Corrección automática, reporte y áreas de atención.'}</span>
+              {teacherUnavailable && <span className={guardStyles.unavailableMessage} role="status">
+                No disponible para compra. El plan automático sigue disponible.
+              </span>}
             </label>;
           })}
         </div>
+        {examSlug === 'icfes' && !icfesTeacherReadiness?.purchasable && <p
+          className={guardStyles.availabilityNotice}
+          id="icfes-teacher-availability"
+          role="status"
+        >
+          {icfesTeacherReadiness?.message ?? 'El plan docente ICFES no está disponible para compra en este momento.'}
+        </p>}
       </section>
 
       <section className={styles.classes}>
@@ -178,12 +233,39 @@ export default function XpressMembershipClient({
       {!activeMembership || isUpgrade ? <section className={styles.terms}>
         <p className={styles.eyebrow}>3 · ANTES DEL PAGO</p>
         <h2>Condiciones claras</h2>
-        <div className={styles.termGrid}>{XPRESS_TERMS.map((term) => <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>)}</div>
+        <div className={styles.termGrid}>
+          {displayedTerms.map((term) => <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>)}
+          {examSlug === 'icfes' && !isIcfesTeacherSelected && <article>
+            <h3>Correcciones</h3>
+            <p>El plan automático incluye reporte y áreas de atención generadas por el sistema. No incluye revisión docente.</p>
+          </article>}
+          {isIcfesTeacherSelected && <article>
+            <h3>Condición específica del plan docente ICFES</h3>
+            <p>Un solo crédito de revisión docente durante los 30 días. La entrega en 24 horas es un objetivo operativo sujeto a capacidad disponible, no una garantía.</p>
+          </article>}
+        </div>
         <label className={styles.check}><input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} /><span><strong>Leí y acepto las condiciones de esta compra.</strong></span></label>
         <label className={styles.check}><input type="checkbox" checked={acceptedPrivacy} onChange={(event) => setAcceptedPrivacy(event.target.checked)} /><span>{XPRESS_PRIVACY_NOTICE}</span></label>
+        {isIcfesTeacherSelected && <label className={styles.check}>
+          <input
+            type="checkbox"
+            checked={acceptedIcfesTeacherAddendum}
+            disabled={isIcfesTeacherUnavailable}
+            aria-describedby="icfes-teacher-addendum-copy"
+            onChange={(event) => setAcceptedIcfesTeacherAddendum(event.target.checked)}
+          />
+          <span id="icfes-teacher-addendum-copy">
+            <strong>Acepto la condición específica ICFES:</strong> un crédito de revisión docente durante 30 días y objetivo de entrega en 24 horas sujeto a capacidad disponible.
+          </span>
+        </label>}
         <div className={styles.checkout}>
           <div><span>{isUpgrade ? 'Valor del cambio' : selectedOffer.billing === 'single-exam' ? 'Total por un examen' : 'Total por 30 días'}</span><strong>{formatCOP(displayedAmount)} COP</strong></div>
-          <button disabled={busy || !acceptedTerms || !acceptedPrivacy} onClick={() => void purchase()}>{busy ? 'Preparando…' : 'Pagar con Wompi'}</button>
+          <button
+            disabled={busy || !hasRequiredAcceptances || isIcfesTeacherUnavailable}
+            onClick={() => void purchase()}
+          >
+            {isIcfesTeacherUnavailable ? 'Plan docente no disponible' : busy ? 'Preparando…' : 'Pagar con Wompi'}
+          </button>
         </div>
         <p className={styles.note}>No almacenamos datos de tarjeta. El acceso se activa únicamente cuando Wompi confirma el pago.</p>
       </section> : null}

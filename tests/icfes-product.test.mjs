@@ -121,6 +121,7 @@ test('checkout uses server price, signed cookie capability, user ownership, and 
   assert.match(config, /ICFES_PERSISTENCE_ENABLED === 'true'/);
   assert.match(checkout, /icfesAttemptCookieName\(attemptId\)/);
   assert.match(checkout, /attempt\.user_id && attempt\.user_id !== user\?\.id/);
+  assert.match(checkout, /claimIcfesAttemptForUser\(\{ attemptId, token, userId: user\.id \}\)/);
   assert.match(checkout, /createWompiIntegritySignature/);
   assert.doesNotMatch(checkout, /status:\s*'APPROVED'/);
   assert.match(read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx'), /amount_cop: data\.amountInCents \/ 100/);

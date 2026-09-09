@@ -7,6 +7,7 @@ import type { MCQQuestion } from '@/data/mocks/types';
 import type { IcfesAnswerMap, IcfesBasicResultDto, IcfesPremiumQuestionDto } from './attempt-contract';
 import { getIcfesPremiumAvailability, getIcfesSecureExam } from './exam-registry.server';
 import { isIcfesPersistenceEnabled } from './product-config.server';
+import { buildIcfesQuestionSnapshot, hashIcfesQuestionSnapshot, isSameIcfesAttemptEvidence } from './attempt-evidence';
 
 const SKILLS: Record<number, string> = {
   1: 'Uso comunicativo', 2: 'Vocabulario', 3: 'Conversaciones', 4: 'Gramática en contexto',
@@ -47,16 +48,33 @@ export async function persistIcfesAttempt(input: {
 }): Promise<boolean> {
   if (!isIcfesPersistenceEnabled()) return false;
   const { data: { user } } = await (await createClient()).auth.getUser();
-  const { error } = await createAdminClient().from('icfes_attempts').upsert({
-    id: input.attemptId,
+  const found = getIcfesSecureExam(input.examId);
+  if (!found) throw new Error('No pudimos fijar la evidencia del intento.');
+  const questionSnapshot = buildIcfesQuestionSnapshot(found.exam);
+  const evidence = {
     exam_id: input.examId,
-    user_id: user?.id ?? null,
     access_token_hash: createHash('sha256').update(input.token, 'utf8').digest('hex'),
     answers: input.answers,
     basic_result: input.result,
+    question_snapshot_version: questionSnapshot.version,
+    question_snapshot_hash: hashIcfesQuestionSnapshot(questionSnapshot),
+    question_snapshot: questionSnapshot,
+  };
+  const admin = createAdminClient();
+  const { error } = await admin.from('icfes_attempts').insert({
+    id: input.attemptId,
+    user_id: user?.id ?? null,
+    ...evidence,
     completed_at: new Date().toISOString(),
-  }, { onConflict: 'id' });
-  if (error) throw new Error('No pudimos guardar el intento seguro.');
+  });
+  if (error) {
+    const { data: existing } = await admin.from('icfes_attempts')
+      .select('exam_id,access_token_hash,answers,basic_result,question_snapshot_version,question_snapshot_hash,question_snapshot')
+      .eq('id', input.attemptId).maybeSingle();
+    if (!existing || !isSameIcfesAttemptEvidence(existing as typeof evidence, evidence)) {
+      throw new Error('No pudimos guardar el intento seguro: evidencia incompatible.');
+    }
+  }
   return true;
 }
 

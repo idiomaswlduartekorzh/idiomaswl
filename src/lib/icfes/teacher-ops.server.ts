@@ -1,10 +1,12 @@
 import 'server-only';
 import { createAdminClient } from '@/lib/supabase/admin';
+import { createClient } from '@/lib/supabase/server';
 import {
   ICFES_TEACHER_ADDENDUM_VERSION,
   type IcfesTeacherReservation,
 } from './teacher-ops-v1';
 import { ICFES_TEACHER_RUBRIC, ICFES_TEACHER_RUBRIC_VERSION } from './teacher-rubric-v1';
+import { claimIcfesAttemptForUser } from './attempt-ownership.server';
 
 export async function reserveIcfesTeacherCapacityBeforeCheckout(input: Readonly<{
   userId: string;
@@ -60,6 +62,24 @@ export async function enqueueIcfesTeacherReview(input: Readonly<{
     throw new Error('icfes_teacher_review_enqueue_failed');
   }
   return data as Record<string, unknown>;
+}
+
+export async function claimAndEnqueueIcfesTeacherReview(input: Readonly<{
+  membershipId: string;
+  attemptId: string;
+  attemptCapability: string | undefined;
+  idempotencyKey: string;
+}>): Promise<Record<string, unknown>> {
+  // Ownership is derived from server auth plus the HttpOnly capability. The
+  // queue never accepts a client-supplied owner without completing this claim.
+  const { data: { user } } = await (await createClient()).auth.getUser();
+  if (!user) throw new Error('icfes_teacher_authentication_required');
+  await claimIcfesAttemptForUser({
+    userId: user.id,
+    attemptId: input.attemptId,
+    token: input.attemptCapability,
+  });
+  return enqueueIcfesTeacherReview({ ...input, userId: user.id });
 }
 
 export async function getIcfesTeacherReviewPayload(input: Readonly<{

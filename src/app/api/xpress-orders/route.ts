@@ -1,4 +1,6 @@
 import { json, readBody, sameOrigin } from '@/lib/course-pricing/http.server';
+import { getIcfesTeacherOfferReadiness } from '@/lib/icfes/teacher-offer-readiness.server';
+import { ICFES_TEACHER_ADDENDUM_VERSION } from '@/lib/icfes/teacher-ops-v1';
 import { parseXpressOrderInput } from '@/lib/xpress-commerce/payment';
 import { prepareXpressOrder, xpressUser } from '@/lib/xpress-commerce/payments.server';
 
@@ -8,8 +10,31 @@ export async function POST(request: Request) {
   if (!sameOrigin(request)) return json({ message: 'Solicitud no permitida.' }, 403);
   const user = await xpressUser();
   if (!user) return json({ message: 'Inicia sesión para comprar una membresía.' }, 401);
+  let body: unknown;
+  try { body = await readBody(request); }
+  catch { return json({ message: 'Revisa la selección.' }, 400); }
+  const raw = body && typeof body === 'object' && !Array.isArray(body)
+    ? body as Record<string, unknown>
+    : null;
+  const isIcfesTeacher = raw?.examSlug === 'icfes' && raw.offerId === 'exam-teacher';
+  if (isIcfesTeacher) {
+    const readiness = await getIcfesTeacherOfferReadiness();
+    if (!readiness.purchasable) {
+      return json({
+        code: 'icfes_teacher_unavailable',
+        message: readiness.message,
+        alternativeOfferId: 'exam-auto',
+      }, 409);
+    }
+    if (raw.acceptedIcfesTeacherAddendum !== ICFES_TEACHER_ADDENDUM_VERSION) {
+      return json({
+        code: 'icfes_teacher_addendum_required',
+        message: 'Debes leer y aceptar la condición específica del plan docente ICFES.',
+      }, 400);
+    }
+  }
   let input;
-  try { input = parseXpressOrderInput(await readBody(request)); }
+  try { input = parseXpressOrderInput(body); }
   catch { return json({ message: 'Revisa la selección.' }, 400); }
   if (!input) return json({ message: 'Selecciona un plan y acepta las condiciones.' }, 400);
   try {
@@ -20,6 +45,20 @@ export async function POST(request: Request) {
     if (code === 'xpress_already_included') return json({ message: 'Ese plan ya está activo en tu cuenta.' }, 409);
     if (code === 'xpress_change_next_period') return json({ message: 'El cambio de examen o la reducción de plan se aplica al siguiente periodo.' }, 409);
     if (code === 'xpress_exam_mismatch') return json({ message: 'El examen no coincide con el que elegiste al registrarte.' }, 403);
+    if (code === 'icfes_teacher_capacity_unavailable') {
+      return json({
+        code: 'icfes_teacher_unavailable',
+        message: 'El cupo docente ICFES cambió antes de completar la orden. Puedes continuar con el plan automático.',
+        alternativeOfferId: 'exam-auto',
+      }, 409);
+    }
+    if (code === 'icfes_teacher_capacity_reservation_failed') {
+      return json({
+        code: 'icfes_teacher_capacity_check_unavailable',
+        message: 'No pudimos confirmar el cupo docente y no se abrió ningún cobro. El plan automático sigue disponible.',
+        alternativeOfferId: 'exam-auto',
+      }, 503);
+    }
     if (code === 'xpress_order_pending') {
       const { createAdminClient } = await import('@/lib/supabase/admin');
       const config = (await import('@/lib/wompi/server')).getWompiServerConfig();
