@@ -29,6 +29,15 @@ const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number
   6: { src: '/images/goethe/a1-1/hoeren-teil1-06-reise.png', alt: 'Drei Reisedauern: zwei Nächte, drei Nächte oder eine Woche', width: 2036, height: 772 },
 };
 
+const LISTENING_EXAMPLE_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+  1: {
+    src: '/images/goethe/a1-1/hoeren-teil1-00-beispiel-uhrzeit.png',
+    alt: 'Beispiel mit drei Bildoptionen: heute um 9 Uhr, heute um 10 Uhr und morgen um 9 Uhr',
+    width: 2167,
+    height: 725,
+  },
+};
+
 const READING_AD_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
   6: { src: '/images/goethe/a1-1/lesen-teil2-06-fahrrad.png', alt: 'Anzeigen A und B: Fahrradgeschäft mit Werkstatt und geführte Fahrradtour durch die Stadt', width: 1536, height: 1024 },
   7: { src: '/images/goethe/a1-1/lesen-teil2-07-deutschkurs.png', alt: 'Anzeigen A und B: Deutschkurs für Erwachsene und Buchhandlung mit Lernbüchern', width: 1536, height: 1024 },
@@ -75,6 +84,28 @@ function wordCount(value: string) {
   return value.trim() ? value.trim().split(/\s+/).length : 0;
 }
 
+const GOETHE_FACTOR = 1.66;
+
+function scaledScore(rawPoints: number) {
+  return Math.round(rawPoints * GOETHE_FACTOR);
+}
+
+function formattedScaledScore(rawPoints: number) {
+  return (rawPoints * GOETHE_FACTOR).toFixed(2).replace('.', ',');
+}
+
+function scoreBand(score: number) {
+  if (score >= 90) return 'sehr gut';
+  if (score >= 80) return 'gut';
+  if (score >= 70) return 'befriedigend';
+  if (score >= 60) return 'ausreichend';
+  return 'nicht bestanden';
+}
+
+function officialPartNumber(part: number) {
+  return part <= 3 ? part : part <= 6 ? part - 3 : part <= 8 ? part - 6 : part - 8;
+}
+
 function moduleSections(mock: MockExam, skill: Skill) {
   return mock.sections.filter(section => section.skill === skill);
 }
@@ -85,6 +116,11 @@ function objectiveQuestions(mock: MockExam, skill: 'listening' | 'reading') {
 
 function itemNumber(question: MCQQuestion) {
   return Number(question.id.match(/(\d+)$/)?.[1] ?? 0);
+}
+
+function formattedOption(question: MCQQuestion, index: number) {
+  const letter = String.fromCharCode(65 + index);
+  return question.options[index] === letter ? letter : `${letter} · ${question.options[index]}`;
 }
 
 function ObjectiveItem({ question, number, value, onChange, showResult, visual, readingAd, hideContextLabel }: {
@@ -147,7 +183,7 @@ function ResolvedExample({ question, options, answer, note, stimulus, visualPlat
       <div className={styles.exampleLabel}>Beispiel · gelöst</div>
       <p className={styles.exampleQuestion}><span className={styles.questionNumber}>0</span>{question}</p>
       {stimulus && <p className={styles.exampleStimulus}>{stimulus}</p>}
-      {visualPlate && <Image className={styles.examplePlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 560px" />}
+      {visualPlate && <Image className={`${styles.examplePlate} ${visualPlate.width / visualPlate.height > 2 ? styles.examplePlateWide : ''}`} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 680px" />}
       <div className={styles.exampleOptions}>
         {options.map((option, index) => (
           <label key={option} className={`${styles.option} ${index === answer ? styles.exampleCorrect : ''}`}>
@@ -163,7 +199,7 @@ function ResolvedExample({ question, options, answer, note, stimulus, visualPlat
 }
 
 function SectionShell({ section, children }: { section: MockSection; children: React.ReactNode }) {
-  const officialPart = section.part <= 3 ? section.part : section.part <= 6 ? section.part - 3 : section.part <= 8 ? section.part - 6 : section.part - 8;
+  const officialPart = officialPartNumber(section.part);
   return (
     <section className={styles.section} aria-labelledby={`goethe-section-${section.part}`}>
       <header className={styles.sectionHeader}>
@@ -209,7 +245,7 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
         </details>
       )}
       {LISTENING_EXAMPLES[section.part] && (
-        <ResolvedExample {...LISTENING_EXAMPLES[section.part]} />
+        <ResolvedExample {...LISTENING_EXAMPLES[section.part]} visualPlate={LISTENING_EXAMPLE_PLATES[section.part]} />
       )}
       <div className={styles.questionList}>
         {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} visual={section.part === 1} />)}
@@ -416,6 +452,79 @@ function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, car
   })}</>;
 }
 
+function ObjectiveReview({ mock, skill, answers }: {
+  mock: MockExam;
+  skill: 'listening' | 'reading';
+  answers: Record<string, number>;
+}) {
+  return (
+    <section className={styles.reviewGroup} aria-labelledby={`review-${skill}`}>
+      <header className={styles.reviewGroupHeader}>
+        <div><span>Automatische Korrektur</span><h3 id={`review-${skill}`}>{skill === 'listening' ? 'Hören' : 'Lesen'}</h3></div>
+        <strong>{objectiveQuestions(mock, skill).filter(question => answers[question.id] === question.answer).length}/15</strong>
+      </header>
+      <div className={styles.reviewItems}>
+        {moduleSections(mock, skill).flatMap(section => (section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => {
+          const selected = answers[question.id];
+          const answered = selected !== undefined;
+          const correct = selected === question.answer;
+          const number = itemNumber(question);
+          const transcript = skill === 'listening'
+            ? section.transcript?.split('\n\n').find(block => block.startsWith(`Nummer ${number}\n`))?.replace(/^Nummer \d+\n/, '')
+            : undefined;
+          return (
+            <article key={question.id} className={`${styles.reviewItem} ${correct ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
+              <div className={styles.reviewItemTop}>
+                <span className={styles.reviewNumber}>{number}</span>
+                <span>Teil {officialPartNumber(section.part)}</span>
+                <strong>{correct ? 'Richtig · 1 Punkt' : answered ? 'Falsch · 0 Punkte' : 'Offen · 0 Punkte'}</strong>
+              </div>
+              <p>{question.text}</p>
+              <dl className={styles.answerComparison}>
+                <div><dt>Ihre Antwort</dt><dd>{selected === undefined ? 'Keine Antwort' : formattedOption(question, selected)}</dd></div>
+                <div><dt>Richtige Antwort</dt><dd>{formattedOption(question, question.answer)}</dd></div>
+              </dl>
+              {transcript && <details className={styles.reviewEvidence}><summary>Transkript als Beleg</summary><pre>{transcript}</pre></details>}
+              {skill === 'reading' && question.stimulus && <details className={styles.reviewEvidence}><summary>Textbeleg</summary><pre>{question.stimulus}</pre></details>}
+            </article>
+          );
+        }))}
+      </div>
+    </section>
+  );
+}
+
+function FormReview({ question, values }: { question: FormGroupQuestion; values: Record<number, string> }) {
+  const correctCount = question.blanks.filter(blank => blank.answers.some(answer => normalise(answer) === normalise(values[blank.num] ?? ''))).length;
+  return (
+    <section className={styles.reviewGroup} aria-labelledby="review-form">
+      <header className={styles.reviewGroupHeader}>
+        <div><span>Automatische Korrektur</span><h3 id="review-form">Schreiben · Teil 1</h3></div>
+        <strong>{correctCount}/5</strong>
+      </header>
+      <div className={styles.reviewItems}>
+        {question.blanks.map(blank => {
+          const value = values[blank.num] ?? '';
+          const correct = blank.answers.some(answer => normalise(answer) === normalise(value));
+          return (
+            <article key={blank.num} className={`${styles.reviewItem} ${correct ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
+              <div className={styles.reviewItemTop}>
+                <span className={styles.reviewNumber}>{blank.num}</span>
+                <span>Formular</span>
+                <strong>{correct ? 'Richtig · 1 Punkt' : 'Falsch · 0 Punkte'}</strong>
+              </div>
+              <dl className={styles.answerComparison}>
+                <div><dt>Ihre Antwort</dt><dd>{value || 'Keine Antwort'}</dd></div>
+                <div><dt>Akzeptierte Antwort</dt><dd>{blank.answers[0]}</dd></div>
+              </dl>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 function ScoreSelect({ label, value, options, onChange }: { label: string; value?: number; options: number[]; onChange: (value: number) => void }) {
   return <label className={styles.scoreRow}><span>{label}</span><select value={value ?? ''} onChange={event => onChange(Number(event.target.value))}><option value="">Pendiente</option>{options.map(option => <option key={option} value={option}>{String(option).replace('.', ',')}</option>)}</select></label>;
 }
@@ -428,6 +537,7 @@ function AnswerSheet() {
       <h2>Schreiben · Teil 1</h2><div className={styles.printLines}>{Array.from({ length: 5 }, (_, index) => <p key={index}>{index + 1}. ______________________________________________</p>)}</div>
       <h2>Schreiben · Teil 2</h2><div className={styles.longLines}>{Array.from({ length: 8 }, (_, index) => <p key={index}>________________________________________________________________________________</p>)}</div>
       <h2>Sprechen · Bewertung</h2><p>Teil 1: ____ / 3 &nbsp;&nbsp; Teil 2: ____ / 6 &nbsp;&nbsp; Teil 3: ____ / 6</p>
+      <footer><strong>Rohpunkte: ____ / 60</strong><span>Gesamtpunktzahl: Rohpunkte × 1,66, auf volle Punkte gerundet · Bestanden ab 60/100.</span></footer>
     </section>
   );
 }
@@ -451,7 +561,7 @@ function SubmissionReview({ listeningMissing, readingMissing, formMissing, writi
         <li><span>Schreiben · Formular</span><strong>{formMissing ? `${formMissing} offen` : 'vollständig'}</strong></li>
         <li><span>Schreiben · Nachricht</span><strong>{writingMissing ? 'nicht begonnen' : 'vorhanden'}</strong></li>
       </ul>
-      <small>Sprechen wird live durchgeführt; die Aufnahme bleibt im Klassenmodus optional.</small>
+      <small>Sprechen se realiza en vivo y el docente completa su evaluación en el informe final.</small>
       <div>
         <button type="button" className={styles.secondary} onClick={onBack}>Zurück zur Prüfung</button>
         <button type="button" className={styles.primary} onClick={onSubmit}>{totalMissing ? 'Trotzdem abgeben' : 'Prüfung abgeben'}</button>
@@ -462,7 +572,8 @@ function SubmissionReview({ listeningMissing, readingMissing, formMissing, writi
 
 export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
-  const [mode, setMode] = useState<DeliveryMode>('class');
+  // El modo guiado/clase permanece implementado para su futura ruta, pero esta entrega abre únicamente el examen.
+  const [mode] = useState<DeliveryMode>('simulation');
   const [activeSkill, setActiveSkill] = useState<Skill>('listening');
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [formValues, setFormValues] = useState<Record<number, string>>({});
@@ -483,15 +594,19 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const formQuestion = moduleSections(mock, 'writing').flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion;
   const formCorrect = formQuestion.blanks.filter(blank => blank.answers.some(answer => normalise(answer) === normalise(formValues[blank.num] ?? ''))).length;
   const writingOpen = ['content1', 'content2', 'content3', 'conventions'].reduce((sum, key) => sum + (writingScores[key] ?? 0), 0);
-  const speakingRaw = ['part1', 'part2', 'part3'].reduce((sum, key) => sum + (speakingScores[key] ?? 0), 0);
+  const writingTaskRaw = Math.round(writingOpen);
+  const speakingRaw = Math.round(['part1', 'part2', 'part3'].reduce((sum, key) => sum + (speakingScores[key] ?? 0), 0));
+  const writingRaw = formCorrect + writingTaskRaw;
   const scaled = {
-    listening: listeningCorrect * 25 / 15,
-    reading: readingCorrect * 25 / 15,
-    writing: (formCorrect + writingOpen) * 25 / 15,
-    speaking: speakingRaw * 25 / 15,
+    listening: formattedScaledScore(listeningCorrect),
+    reading: formattedScaledScore(readingCorrect),
+    writing: formattedScaledScore(writingRaw),
+    speaking: formattedScaledScore(speakingRaw),
   };
-  const totalScore = Object.values(scaled).reduce((sum, value) => sum + value, 0);
+  const rawTotal = listeningCorrect + readingCorrect + writingRaw + speakingRaw;
+  const totalScore = scaledScore(rawTotal);
   const manualComplete = Object.keys(writingScores).length === 4 && Object.keys(speakingScores).length === 3;
+  const resultBand = scoreBand(totalScore);
   const objectiveAnswered = [...listeningQuestions, ...readingQuestions].filter(question => answers[question.id] !== undefined).length;
   const listeningMissing = listeningQuestions.filter(question => answers[question.id] === undefined).length;
   const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
@@ -507,18 +622,18 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
       <div className={styles.screen}>
         {phase === 'intro' && (
           <main className={styles.intro}>
-            <div className={styles.brand}><span>WELEARN</span><span>DEUTSCH A1</span></div>
-            <p className={styles.eyebrow}>Simulacro original · formato Start Deutsch 1</p>
-            <h1>{mock.title}</h1>
-            <p className={styles.lead}>Una experiencia completa de 80 minutos con las cuatro destrezas y puntuación 25 + 25 + 25 + 25.</p>
-            <div className={styles.moduleGrid}>{SKILLS.map(skill => <article key={skill.id}><strong>{skill.label}</strong><span>{skill.minutes} min</span><small>{skill.points} Punkte</small></article>)}</div>
-            <div className={styles.modePicker} role="group" aria-label="Modo de aplicación">
-              <button className={mode === 'class' ? styles.modeActive : ''} onClick={() => setMode('class')}><strong>Modo clase</strong><span>Audio repetible y transcripción del profesor</span></button>
-              <button className={mode === 'simulation' ? styles.modeActive : ''} onClick={() => setMode('simulation')}><strong>Modo simulacro</strong><span>80 minutos y una reproducción de cada pista</span></button>
+            <div className={styles.introCard}>
+              <div className={styles.brand}><span>WELEARN</span><span>DEUTSCH A1</span></div>
+              <p className={styles.eyebrow}>Goethe-Zertifikat A1 · Prüfungssimulation</p>
+              <h1>{mock.title}</h1>
+              <p className={styles.lead}>Simulacro completo con las cuatro destrezas, 80 minutos y resultado sobre 100 puntos.</p>
+              <div className={styles.introStats}><div><strong>4</strong><span>Prüfungsteile</span></div><div><strong>60</strong><span>Rohpunkte</span></div><div><strong>60</strong><span>zum Bestehen</span></div></div>
+              <div className={styles.moduleGrid}>{SKILLS.map(skill => <article key={skill.id}><div><strong>{skill.label}</strong><small>{skill.minutes} Minuten</small></div><span>{skill.points} P.</span></article>)}</div>
+              <div className={styles.introNotice}><strong>Antes de empezar</strong><p>El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.</p></div>
+              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>Empezar examen</button><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button></div>
+              <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
+              <Link className={styles.backLink} href={`/examenes/${exam.slug}`}>← Volver a Goethe</Link>
             </div>
-            <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>Prüfung starten</button><button className={styles.secondary} onClick={() => window.print()}>Imprimir hoja de respuestas</button></div>
-            <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
-            <Link href={`/examenes/${exam.slug}`}>← Volver a Goethe</Link>
           </main>
         )}
 
@@ -542,24 +657,35 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
 
         {phase === 'results' && (
           <main className={styles.results}>
-            <div className={styles.resultHero}><p>{manualComplete ? 'Gesamtergebnis' : 'Resultado provisional'}</p><strong>{totalScore.toFixed(1).replace('.', ',')}</strong><span>/ 100 Punkte</span>{manualComplete && <b className={totalScore >= 60 ? styles.pass : styles.fail}>{totalScore >= 60 ? 'BESTANDEN' : 'NICHT BESTANDEN'}</b>}</div>
+            <header className={styles.resultsHeader}><Link href={`/examenes/${exam.slug}`}>WELEARN · DEUTSCH A1</Link><span>Ergebnisbericht</span></header>
+            <div className={styles.resultHero}>
+              <p>{manualComplete ? 'Gesamtergebnis' : 'Vorläufiges Ergebnis'}</p>
+              <div><strong>{totalScore}</strong><span>/ 100 Punkte</span></div>
+              {manualComplete ? <b className={totalScore >= 60 ? styles.pass : styles.fail}>{totalScore >= 60 ? 'BESTANDEN' : 'NICHT BESTANDEN'} · {resultBand}</b> : <small>Schreiben Teil 2 und Sprechen müssen noch bewertet werden.</small>}
+              <em>{rawTotal}/60 Rohpunkte · Faktor 1,66 · auf volle Punkte gerundet</em>
+            </div>
             <div className={styles.scoreGrid}>
-              <article><span>Hören</span><strong>{scaled.listening.toFixed(1)}</strong><small>{listeningCorrect}/15 richtig</small></article>
-              <article><span>Lesen</span><strong>{scaled.reading.toFixed(1)}</strong><small>{readingCorrect}/15 richtig</small></article>
-              <article><span>Schreiben</span><strong>{scaled.writing.toFixed(1)}</strong><small>{formCorrect + writingOpen}/15 Rohpunkte</small></article>
-              <article><span>Sprechen</span><strong>{scaled.speaking.toFixed(1)}</strong><small>{speakingRaw}/15 Rohpunkte</small></article>
+              <article><span>Hören</span><strong>{scaled.listening}</strong><small>{listeningCorrect}/15 Rohpunkte · max. 25 P.</small></article>
+              <article><span>Lesen</span><strong>{scaled.reading}</strong><small>{readingCorrect}/15 Rohpunkte · max. 25 P.</small></article>
+              <article><span>Schreiben</span><strong>{scaled.writing}</strong><small>{writingRaw}/15 Rohpunkte · max. 25 P.</small></article>
+              <article><span>Sprechen</span><strong>{scaled.speaking}</strong><small>{speakingRaw}/15 Rohpunkte · max. 25 P.</small></article>
             </div>
 
             <section className={styles.teacherPanel}>
-              <header><p>Para el profesor</p><h2>Completar evaluación abierta</h2><span>Al completar los siete campos se calcula el resultado oficial sobre 100.</span></header>
+              <header><p>Bewertungsbogen · docente</p><h2>Completar la evaluación abierta</h2><span>Selecciona únicamente los valores previstos. El resultado se recalcula siguiendo la escala Goethe.</span></header>
               <div className={styles.rubricColumns}>
-                <div><h3>Schreiben · Teil 2</h3><ScoreSelect label="Contenido 1" value={writingScores.content1} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content1: value }))} /><ScoreSelect label="Contenido 2" value={writingScores.content2} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content2: value }))} /><ScoreSelect label="Contenido 3" value={writingScores.content3} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content3: value }))} /><ScoreSelect label="Anrede und Gruß" value={writingScores.conventions} options={[0, 0.5, 1]} onChange={value => setWritingScores(previous => ({ ...previous, conventions: value }))} /></div>
-                <div><h3>Sprechen</h3><ScoreSelect label="Teil 1 · presentación" value={speakingScores.part1} options={[0, 0.5, 1, 1.5, 2, 2.5, 3]} onChange={value => setSpeakingScores(previous => ({ ...previous, part1: value }))} /><ScoreSelect label="Teil 2 · preguntas/respuestas" value={speakingScores.part2} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part2: value }))} /><ScoreSelect label="Teil 3 · peticiones/reacciones" value={speakingScores.part3} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part3: value }))} /></div>
+                <div><h3>Schreiben · Teil 2 <span>10 P.</span></h3><p className={styles.rubricHint}>3 = cumplido y comprensible · 1,5 = parcialmente cumplido · 0 = no cumplido.</p><ScoreSelect label="Motivo del mensaje" value={writingScores.content1} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content1: value }))} /><ScoreSelect label="Habitación para dos" value={writingScores.content2} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content2: value }))} /><ScoreSelect label="Precio con desayuno" value={writingScores.content3} options={[0, 1.5, 3]} onChange={value => setWritingScores(previous => ({ ...previous, content3: value }))} /><ScoreSelect label="Anrede und Gruß" value={writingScores.conventions} options={[0, 0.5, 1]} onChange={value => setWritingScores(previous => ({ ...previous, conventions: value }))} /></div>
+                <div><h3>Sprechen <span>15 P.</span></h3><p className={styles.rubricHint}>Valora cumplimiento, inteligibilidad y reacción adecuada en cada parte.</p><ScoreSelect label="Teil 1 · presentación" value={speakingScores.part1} options={[0, 0.5, 1, 1.5, 2, 2.5, 3]} onChange={value => setSpeakingScores(previous => ({ ...previous, part1: value }))} /><ScoreSelect label="Teil 2 · preguntas/respuestas" value={speakingScores.part2} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part2: value }))} /><ScoreSelect label="Teil 3 · peticiones/reacciones" value={speakingScores.part3} options={[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]} onChange={value => setSpeakingScores(previous => ({ ...previous, part3: value }))} /></div>
               </div>
-              {writing && <details><summary>Ver respuesta de Schreiben</summary><pre>{writing}</pre></details>}
+              <div className={styles.writingReview}><span>Antwort · Schreiben Teil 2</span><pre>{writing || 'Keine Antwort'}</pre><small>{wordCount(writing)} Wörter</small></div>
             </section>
 
-            <section className={styles.review}><h2>Soluciones objetivas</h2><ListeningModule mock={mock} answers={answers} setAnswer={() => {}} mode="class" playedParts={new Set()} setPlayedParts={() => {}} showResult /><ReadingModule mock={mock} answers={answers} setAnswer={() => {}} showResult /><WritingModule mock={mock} formValues={formValues} onFormChange={() => {}} textValue={writing} onTextChange={() => {}} showResult /></section>
+            <section className={styles.review} aria-labelledby="answer-review-title">
+              <header><p>Antwort für Antwort</p><h2 id="answer-review-title">Revisión detallada</h2><span>Cada respuesta muestra el punto obtenido, la opción marcada y la solución correcta.</span></header>
+              <ObjectiveReview mock={mock} skill="listening" answers={answers} />
+              <ObjectiveReview mock={mock} skill="reading" answers={answers} />
+              <FormReview question={formQuestion} values={formValues} />
+            </section>
             <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Intentar de nuevo</button><button className={styles.secondary} onClick={() => window.print()}>Imprimir hoja</button></div>
           </main>
         )}

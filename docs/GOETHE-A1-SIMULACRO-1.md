@@ -31,7 +31,7 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 
 ## Láminas visuales originales
 
-- Hören Teil 1 incluye seis trípticos A/B/C: precio, hora, comida, cantidades, plantas de biblioteca y duración de viaje.
+- Hören Teil 1 incluye un tríptico A/B/C para el ejemplo y seis trípticos puntuables: precio, hora, comida, cantidades, plantas de biblioteca y duración de viaje.
 - Lesen Teil 2 incluye seis pares A/B con estética de anuncio: un ejemplo de clima y cinco reactivos sobre bicicleta, curso de alemán, alojamiento/desayuno, entradas/viaje y médico/farmacia.
 - Sprechen Teil 3 incluye dos hojas con doce tarjetas pictográficas para peticiones y reacciones.
 - Son ilustraciones originales de WeLearn generadas para este simulacro; no reutilizan las láminas oficiales.
@@ -39,8 +39,8 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 
 ## Modos de aplicación
 
-- Modo clase: permite repetir pistas, ver la transcripción docente, usar la hoja imprimible y registrar audio oral opcional.
-- Modo simulacro: cronómetro global de 80 minutos y una sola activación por pista; cada pista ya contiene las repeticiones reglamentarias.
+- La ruta pública abre directamente en modo examen: cronómetro global de 80 minutos y una sola activación por pista; cada pista ya contiene las repeticiones reglamentarias.
+- El modo guiado/clase permanece conservado en el runner para una futura ruta separada: permite repetir pistas, ver la transcripción docente, usar la hoja imprimible y registrar audio oral opcional.
 - Hören muestra los dos ejemplos que forman parte del audio (antes de Teil 1 y Teil 2); cada parte de Lesen incluye un ejemplo resuelto y deshabilitado antes de las preguntas puntuables.
 - Sprechen baraja cada mazo al comenzar, mantiene las tarjetas cubiertas y las revela de una en una; las láminas de Teil 3 se recortan dinámicamente desde las hojas originales aprobadas y el avance del mazo se conserva al cambiar de sección.
 - Antes de entregar se muestra un resumen de respuestas omitidas en Hören, Lesen y Schreiben; la grabación oral sigue siendo opcional en modo clase.
@@ -48,10 +48,12 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 
 ## Corrección
 
-- Hören y Lesen se califican automáticamente y escalan a 25 puntos por módulo.
-- Schreiben usa tres criterios de cumplimiento (3/1.5/0) y convenciones (1/0.5/0), luego escala a 25.
-- Sprechen usa máximos crudos 3 + 6 + 6 y escala a 25.
-- El resultado final se muestra cuando el docente completa las rúbricas manuales.
+- Hören y Lesen se califican automáticamente, respuesta por respuesta, con 1 o 0 puntos hasta un máximo de 15 por módulo.
+- Schreiben usa cinco puntos automáticos del formulario, tres criterios de cumplimiento (3/1,5/0) y convenciones (1/0,5/0), hasta 15 puntos crudos.
+- Sprechen usa máximos crudos 3 + 6 + 6; la evaluación abierta queda separada por cada parte.
+- El informe muestra la respuesta del estudiante, la solución correcta y el punto obtenido en los 30 reactivos objetivos y los cinco campos del formulario.
+- Los 60 puntos crudos se multiplican por 1,66 y el total se redondea a un número entero. La escala final es: 90–100 sehr gut, 80–89 gut, 70–79 befriedigend, 60–69 ausreichend y 0–59 nicht bestanden.
+- El resultado definitivo y aprobado/no aprobado aparece cuando el docente completa Schreiben Teil 2 y Sprechen.
 
 ## Inventario mínimo
 
@@ -59,7 +61,7 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - 1 guion JSON versionado.
 - 28 fuentes de voz natural.
 - 15 clips individuales, 3 pistas por parte y 1 máster completo.
-- 6 láminas A/B/C de Hören, 6 pares de anuncios A/B de Lesen y 2 hojas de tarjetas de Sprechen.
+- 7 láminas A/B/C de Hören —incluido el ejemplo—, 6 pares de anuncios A/B de Lesen y 2 hojas de tarjetas de Sprechen.
 - 1 hoja de respuestas imprimible integrada.
 - 1 rúbrica de Schreiben y 1 rúbrica de Sprechen integradas.
 - 1 generador de montaje y 1 verificador estructural/de audio.
