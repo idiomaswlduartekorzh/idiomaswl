@@ -238,12 +238,6 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
           />
         </div>
       )}
-      {mode === 'class' && section.transcript && !showResult && (
-        <details className={styles.transcript}>
-          <summary>Transcripción para el profesor</summary>
-          <pre>{section.transcript}</pre>
-        </details>
-      )}
       {LISTENING_EXAMPLES[section.part] && (
         <ResolvedExample {...LISTENING_EXAMPLES[section.part]} visualPlate={LISTENING_EXAMPLE_PLATES[section.part]} />
       )}
@@ -469,9 +463,6 @@ function ObjectiveReview({ mock, skill, answers }: {
           const answered = selected !== undefined;
           const correct = selected === question.answer;
           const number = itemNumber(question);
-          const transcript = skill === 'listening'
-            ? section.transcript?.split('\n\n').find(block => block.startsWith(`Nummer ${number}\n`))?.replace(/^Nummer \d+\n/, '')
-            : undefined;
           return (
             <article key={question.id} className={`${styles.reviewItem} ${correct ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
               <div className={styles.reviewItemTop}>
@@ -484,7 +475,6 @@ function ObjectiveReview({ mock, skill, answers }: {
                 <div><dt>Ihre Antwort</dt><dd>{selected === undefined ? 'Keine Antwort' : formattedOption(question, selected)}</dd></div>
                 <div><dt>Richtige Antwort</dt><dd>{formattedOption(question, question.answer)}</dd></div>
               </dl>
-              {transcript && <details className={styles.reviewEvidence}><summary>Transkript als Beleg</summary><pre>{transcript}</pre></details>}
               {skill === 'reading' && question.stimulus && <details className={styles.reviewEvidence}><summary>Textbeleg</summary><pre>{question.stimulus}</pre></details>}
             </article>
           );
@@ -527,19 +517,6 @@ function FormReview({ question, values }: { question: FormGroupQuestion; values:
 
 function ScoreSelect({ label, value, options, onChange }: { label: string; value?: number; options: number[]; onChange: (value: number) => void }) {
   return <label className={styles.scoreRow}><span>{label}</span><select value={value ?? ''} onChange={event => onChange(Number(event.target.value))}><option value="">Pendiente</option>{options.map(option => <option key={option} value={option}>{String(option).replace('.', ',')}</option>)}</select></label>;
-}
-
-function AnswerSheet() {
-  return (
-    <section className={styles.answerSheetPrintable}>
-      <header><strong>WELEARN · A1</strong><h1>Hoja de respuestas · Simulacro 1</h1><p>Nombre: ____________________________________ Fecha: __________________</p></header>
-      {(['Hören', 'Lesen'] as const).map(skill => <div key={skill}><h2>{skill}</h2><div className={styles.bubbleGrid}>{Array.from({ length: 15 }, (_, index) => <div key={index}><b>{index + 1}</b><span>○ A</span><span>○ B</span>{skill === 'Hören' && <span>○ C</span>}</div>)}</div></div>)}
-      <h2>Schreiben · Teil 1</h2><div className={styles.printLines}>{Array.from({ length: 5 }, (_, index) => <p key={index}>{index + 1}. ______________________________________________</p>)}</div>
-      <h2>Schreiben · Teil 2</h2><div className={styles.longLines}>{Array.from({ length: 8 }, (_, index) => <p key={index}>________________________________________________________________________________</p>)}</div>
-      <h2>Sprechen · Bewertung</h2><p>Teil 1: ____ / 3 &nbsp;&nbsp; Teil 2: ____ / 6 &nbsp;&nbsp; Teil 3: ____ / 6</p>
-      <footer><strong>Rohpunkte: ____ / 60</strong><span>Gesamtpunktzahl: Rohpunkte × 1,66, auf volle Punkte gerundet · Bestanden ab 60/100.</span></footer>
-    </section>
-  );
 }
 
 function SubmissionReview({ listeningMissing, readingMissing, formMissing, writingMissing, onBack, onSubmit }: {
@@ -612,6 +589,19 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
   const formMissing = formQuestion.blanks.filter(blank => !formValues[blank.num]?.trim()).length;
   const writingMissing = writing.trim() ? 0 : 1;
+  const activeSkillIndex = SKILLS.findIndex(skill => skill.id === activeSkill);
+  const activeSkillMeta = SKILLS[activeSkillIndex];
+  const nextSkill = SKILLS[activeSkillIndex + 1];
+
+  function advanceExam() {
+    if (!nextSkill) {
+      setShowSubmitReview(true);
+    } else {
+      setActiveSkill(nextSkill.id);
+      setShowSubmitReview(false);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   function restart() {
     setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({}); setShowSubmitReview(false); setSpeakingCardProgress({}); setSpeakingCardOrders({});
@@ -630,7 +620,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               <div className={styles.introStats}><div><strong>4</strong><span>Prüfungsteile</span></div><div><strong>60</strong><span>Rohpunkte</span></div><div><strong>60</strong><span>zum Bestehen</span></div></div>
               <div className={styles.moduleGrid}>{SKILLS.map(skill => <article key={skill.id}><div><strong>{skill.label}</strong><small>{skill.minutes} Minuten</small></div><span>{skill.points} P.</span></article>)}</div>
               <div className={styles.introNotice}><strong>Antes de empezar</strong><p>El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.</p></div>
-              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>Empezar examen</button><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button></div>
+              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>Empezar examen</button></div>
               <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
               <Link className={styles.backLink} href={`/examenes/${exam.slug}`}>← Volver a Goethe</Link>
             </div>
@@ -641,16 +631,24 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
           <>
             <header className={styles.topbar}>
               <div><span>WELEARN · A1</span><strong>Simulacro 1</strong></div>
-              <div className={styles.topbarStatus}><span>{objectiveAnswered}/30 respuestas objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('results')} />}</div>
+              <div className={styles.topbarStatus}><span>Bloque {activeSkillIndex + 1} de {SKILLS.length} · {objectiveAnswered}/30 objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('results')} />}</div>
             </header>
-            <nav className={styles.tabs} aria-label="Prüfungsteile">{SKILLS.map(skill => <button key={skill.id} className={activeSkill === skill.id ? styles.tabActive : ''} onClick={() => { setActiveSkill(skill.id); setShowSubmitReview(false); }}><span>{skill.label}</span><small>{skill.minutes} min · {skill.points} P.</small></button>)}</nav>
+            <ol className={styles.tabs} aria-label="Progreso del examen">{SKILLS.map((skill, index) => <li key={skill.id} className={index < activeSkillIndex ? styles.tabComplete : activeSkill === skill.id ? styles.tabActive : styles.tabPending} aria-current={activeSkill === skill.id ? 'step' : undefined}><span><b>{index + 1}</b>{skill.label}</span><small>{index < activeSkillIndex ? 'Cerrado' : activeSkill === skill.id ? 'En curso' : `${skill.minutes} min`}</small></li>)}</ol>
             <main className={styles.exam}>
-              {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
-              {activeSkill === 'reading' && <ReadingModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
-              {activeSkill === 'writing' && <WritingModule mock={mock} formValues={formValues} onFormChange={(number, value) => setFormValues(previous => ({ ...previous, [number]: value }))} textValue={writing} onTextChange={setWriting} />}
-              {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} mode={mode} cardProgress={speakingCardProgress} cardOrders={speakingCardOrders} onCardProgress={(part, index) => setSpeakingCardProgress(previous => ({ ...previous, [part]: index }))} onCardOrder={(part, order) => setSpeakingCardOrders(previous => ({ ...previous, [part]: order }))} />}
-              {showSubmitReview && <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('results')} />}
-              <div className={styles.examFooter}><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button><button className={styles.primary} onClick={() => setShowSubmitReview(true)}>Prüfung abgeben</button></div>
+              {showSubmitReview ? (
+                <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('results')} />
+              ) : (
+                <>
+                  {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
+                  {activeSkill === 'reading' && <ReadingModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
+                  {activeSkill === 'writing' && <WritingModule mock={mock} formValues={formValues} onFormChange={(number, value) => setFormValues(previous => ({ ...previous, [number]: value }))} textValue={writing} onTextChange={setWriting} />}
+                  {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} mode={mode} cardProgress={speakingCardProgress} cardOrders={speakingCardOrders} onCardProgress={(part, index) => setSpeakingCardProgress(previous => ({ ...previous, [part]: index }))} onCardOrder={(part, order) => setSpeakingCardOrders(previous => ({ ...previous, [part]: order }))} />}
+                  <div className={styles.examFooter}>
+                    <div><span>Bloque {activeSkillIndex + 1} de {SKILLS.length}</span><strong>{activeSkillMeta.label}</strong><small>Al continuar, este bloque queda cerrado.</small></div>
+                    <button className={styles.primary} onClick={advanceExam}>{nextSkill ? `Cerrar ${activeSkillMeta.label} y continuar a ${nextSkill.label}` : 'Finalizar examen'}</button>
+                  </div>
+                </>
+              )}
             </main>
           </>
         )}
@@ -686,11 +684,10 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               <ObjectiveReview mock={mock} skill="reading" answers={answers} />
               <FormReview question={formQuestion} values={formValues} />
             </section>
-            <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Intentar de nuevo</button><button className={styles.secondary} onClick={() => window.print()}>Imprimir hoja</button></div>
+            <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Intentar de nuevo</button></div>
           </main>
         )}
       </div>
-      <AnswerSheet />
     </div>
   );
 }

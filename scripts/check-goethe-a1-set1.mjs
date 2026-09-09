@@ -30,6 +30,10 @@ assert.match(runnerSource, /Antwortübersicht/, 'submission must show an omitted
 assert.match(runnerSource, /const GOETHE_FACTOR = 1\.66/, 'results must use the official 1.66 factor');
 assert.match(runnerSource, /Revisión detallada/, 'results must include answer-by-answer feedback');
 assert.match(runnerSource, /useState<DeliveryMode>\('simulation'\)/, 'the public route must open in exam mode');
+assert.match(runnerSource, /function advanceExam\(\)/, 'the exam must advance through sequential skill blocks');
+assert.match(runnerSource, /aria-current=\{activeSkill === skill\.id \? 'step'/, 'the exam must expose a non-interactive progress stepper');
+assert.doesNotMatch(runnerSource, /window\.print/, 'the public exam must not expose a printable answer sheet');
+assert.doesNotMatch(runnerSource, /Transkript als Beleg/, 'the public result must not expose listening transcripts');
 
 assert.ok(fs.existsSync(audioManifestPath), 'audio manifest is missing; run generate-goethe-a1-set1-audio.mjs');
 const audioManifest = JSON.parse(fs.readFileSync(audioManifestPath, 'utf8'));

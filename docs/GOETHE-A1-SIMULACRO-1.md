@@ -40,10 +40,12 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 ## Modos de aplicación
 
 - La ruta pública abre directamente en modo examen: cronómetro global de 80 minutos y una sola activación por pista; cada pista ya contiene las repeticiones reglamentarias.
-- El modo guiado/clase permanece conservado en el runner para una futura ruta separada: permite repetir pistas, ver la transcripción docente, usar la hoja imprimible y registrar audio oral opcional.
+- El examen avanza en orden cerrado por Hören, Lesen, Schreiben y Sprechen. El indicador superior comunica el progreso, pero no permite saltar entre bloques ni volver a uno ya cerrado.
+- El modo guiado/clase permanece conservado en el runner para una futura ruta separada: allí se podrán habilitar repeticiones, transcripciones y apoyos docentes sin mezclarlos con la simulación.
 - Hören muestra los dos ejemplos que forman parte del audio (antes de Teil 1 y Teil 2); cada parte de Lesen incluye un ejemplo resuelto y deshabilitado antes de las preguntas puntuables.
 - Sprechen baraja cada mazo al comenzar, mantiene las tarjetas cubiertas y las revela de una en una; las láminas de Teil 3 se recortan dinámicamente desde las hojas originales aprobadas y el avance del mazo se conserva al cambiar de sección.
 - Antes de entregar se muestra un resumen de respuestas omitidas en Hören, Lesen y Schreiben; la grabación oral sigue siendo opcional en modo clase.
+- La simulación no muestra transcripciones ni hoja de respuestas imprimible en ningún punto del recorrido o del resultado.
 - Todos los controles interactivos tienen foco visible para navegación con teclado.
 
 ## Corrección
@@ -62,7 +64,6 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - 28 fuentes de voz natural.
 - 15 clips individuales, 3 pistas por parte y 1 máster completo.
 - 7 láminas A/B/C de Hören —incluido el ejemplo—, 6 pares de anuncios A/B de Lesen y 2 hojas de tarjetas de Sprechen.
-- 1 hoja de respuestas imprimible integrada.
 - 1 rúbrica de Schreiben y 1 rúbrica de Sprechen integradas.
 - 1 generador de montaje y 1 verificador estructural/de audio.
 

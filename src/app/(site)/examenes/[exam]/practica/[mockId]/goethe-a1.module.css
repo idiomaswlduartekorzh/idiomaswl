@@ -196,27 +196,33 @@
   z-index: 20;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid var(--goethe-line);
   background: rgba(255,255,255,0.97);
   box-shadow: 0 5px 18px rgba(20, 33, 61, 0.05);
   backdrop-filter: blur(12px);
+  list-style: none;
 }
 
-.tabs button {
+.tabs li {
   padding: 0.7rem 0.8rem 0.6rem;
-  border: 0;
   border-right: 1px solid #e8ebf1;
   border-bottom: 3px solid transparent;
-  background: transparent;
   color: var(--goethe-muted);
-  cursor: pointer;
+  text-align: center;
 }
 
-.tabs button:last-child { border-right: 0; }
-.tabs button span, .tabs button small { display: block; }
-.tabs button span { font-size: 0.92rem; font-weight: 800; }
-.tabs button small { margin-top: 0.1rem; font-size: 0.7rem; }
+.tabs li:last-child { border-right: 0; }
+.tabs li span, .tabs li small { display: block; }
+.tabs li span { font-size: 0.92rem; font-weight: 800; }
+.tabs li span b { display: inline-flex; width: 1.35rem; height: 1.35rem; align-items: center; justify-content: center; margin-right: 0.4rem; border: 1px solid #c8ceda; border-radius: 50%; font-size: 0.68rem; }
+.tabs li small { margin-top: 0.1rem; font-size: 0.7rem; }
 .tabs .tabActive { border-bottom-color: var(--goethe-blue); background: #f6f8ff; color: var(--goethe-navy); }
+.tabs .tabActive span b { border-color: var(--goethe-blue); background: var(--goethe-blue); color: #fff; }
+.tabs .tabComplete { color: #25734a; }
+.tabs .tabComplete span b { border-color: #25734a; background: #eef9f3; }
+.tabs .tabPending { color: #8b93a3; }
 
 .exam,
 .results {
@@ -254,10 +260,6 @@
 
 .audioCard > div:first-child { display: flex; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.7rem; }
 .audioCard span { color: var(--goethe-muted); font-size: 0.75rem; }
-.transcript { margin: 1rem 1.5rem; padding: 0.8rem 1rem; border: 1px dashed #aeb6c7; border-radius: 8px; color: #4c5668; }
-.transcript summary { cursor: pointer; font-weight: 750; }
-.transcript pre { white-space: pre-wrap; font: 0.88rem/1.65 inherit; }
-
 .questionList { display: grid; gap: 0.75rem; padding: 1rem 1.5rem 1.5rem; }
 .question { min-width: 0; margin: 0; padding: 1.15rem; border: 1px solid #e0e4ec; border-radius: 11px; background: #fff; }
 .question legend { width: 100%; color: var(--goethe-ink); font-size: 1rem; font-weight: 750; line-height: 1.5; }
@@ -387,7 +389,11 @@
 .deckControls { display: flex; width: min(520px, 100%); align-items: center; justify-content: center; gap: 0.8rem; margin: 1rem auto 0; }
 .deckControls p { flex: 1; margin: 0; color: var(--goethe-muted); font-weight: 750; }
 
-.examFooter { justify-content: flex-end; }
+.examFooter { align-items: center; justify-content: space-between; padding: 1rem 1.1rem; border: 1px solid var(--goethe-line); border-radius: 12px; background: #fff; box-shadow: 0 10px 28px rgba(20, 33, 61, 0.06); }
+.examFooter > div { display: flex; flex-direction: column; gap: 0.18rem; }
+.examFooter > div span { color: var(--goethe-blue); font: 800 0.68rem/1.2 var(--font-geist-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; }
+.examFooter > div strong { color: var(--goethe-navy); font-size: 1rem; }
+.examFooter > div small { color: var(--goethe-muted); font-size: 0.75rem; }
 .submitReview { margin-top: 1.5rem; padding: 1.25rem; border: 1px solid var(--goethe-line); border-top: 4px solid var(--goethe-blue); border-radius: 12px; background: #fff; box-shadow: 0 14px 35px rgba(20, 33, 61, 0.08); }
 .submitReview > p { margin: 0; color: var(--goethe-blue); font: 800 0.68rem/1.2 var(--font-geist-mono, monospace); letter-spacing: 0.1em; text-transform: uppercase; }
 .submitReview h2 { margin: 0.35rem 0 1rem; }
@@ -462,15 +468,15 @@
 .reviewEvidence summary { cursor: pointer; font-weight: 750; }
 .reviewEvidence pre { margin: 0.5rem 0 0; padding: 0.6rem; border-radius: 7px; background: #f4f6f9; white-space: pre-wrap; font: 0.76rem/1.5 inherit; }
 
-.answerSheetPrintable { display: none; }
-
 @media (max-width: 720px) {
   .intro { padding: 0; }
   .introCard { min-height: 100vh; border: 0; border-radius: 0; box-shadow: none; }
   .moduleGrid, .rubricColumns, .reviewItems, .adPair { grid-template-columns: 1fr; }
   .topbar { padding-inline: 0.85rem; }
-  .topbarStatus > span, .tabs button small { display: none; }
-  .tabs button { padding-inline: 0.35rem; }
+  .topbarStatus > span, .tabs li small { display: none; }
+  .tabs li { padding-inline: 0.35rem; }
+  .tabs li span { font-size: 0.78rem; }
+  .tabs li span b { display: flex; margin: 0 auto 0.2rem; }
   .exam, .results { width: min(100% - 1rem, 1040px); padding-top: 1rem; }
   .sectionHeader { padding-inline: 1.25rem 1rem; }
   .questionList, .readingSequence { padding-inline: 0.75rem; }
@@ -489,18 +495,6 @@
   .scoreGrid article:nth-child(-n+2) { border-bottom: 1px solid var(--goethe-line); }
   .resultHero > div { flex-direction: column; align-items: center; gap: 0.15rem; }
   .answerComparison div { grid-template-columns: 1fr; gap: 0.2rem; }
-  .submitReview > div button, .introActions button { flex: 1; }
-}
-
-@media print {
-  .screen { display: none !important; }
-  .answerSheetPrintable { display: block; padding: 8mm; background: #fff; color: #000; font-family: Arial, sans-serif; }
-  .answerSheetPrintable header { border-bottom: 4px solid #000; }
-  .answerSheetPrintable h1 { font-size: 24px; }
-  .answerSheetPrintable h2 { margin: 16px 0 7px; border-bottom: 1px solid #000; font-size: 16px; }
-  .answerSheetPrintable footer { display: flex; flex-direction: column; gap: 5px; margin-top: 18px; padding-top: 10px; border-top: 3px solid #000; }
-  .bubbleGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px 14px; }
-  .bubbleGrid div { display: flex; gap: 9px; padding: 4px; border-bottom: 1px dotted #aaa; }
-  .printLines p, .longLines p { margin: 6px 0; }
-  .root { background: #fff; }
+  .submitReview > div button, .introActions button, .examFooter button { flex: 1; }
+  .examFooter { align-items: stretch; }
 }
