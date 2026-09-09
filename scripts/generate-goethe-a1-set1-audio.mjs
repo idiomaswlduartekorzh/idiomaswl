@@ -55,9 +55,9 @@ function signal() {
   acousticCue = nextFile('exam-signal');
   run(ffmpeg, [
     '-hide_banner', '-loglevel', 'error', '-y',
-    '-f', 'lavfi', '-i', `sine=frequency=880:sample_rate=${sampleRate}:duration=0.78`,
-    '-f', 'lavfi', '-i', `sine=frequency=740:sample_rate=${sampleRate}:duration=0.72`,
-    '-f', 'lavfi', '-i', `sine=frequency=622:sample_rate=${sampleRate}:duration=0.60`,
+    '-f', 'lavfi', '-i', `sine=frequency=990:sample_rate=${sampleRate}:duration=0.78`,
+    '-f', 'lavfi', '-i', `sine=frequency=831:sample_rate=${sampleRate}:duration=0.72`,
+    '-f', 'lavfi', '-i', `sine=frequency=698:sample_rate=${sampleRate}:duration=0.60`,
     '-filter_complex',
     '[0:a]volume=0.105,afade=t=in:st=0:d=0.02,afade=t=out:st=0.68:d=0.10[a0];' +
       '[1:a]volume=0.10,afade=t=in:st=0:d=0.02,afade=t=out:st=0.62:d=0.10[a1];' +
@@ -149,7 +149,7 @@ try {
     },
     acousticCue: {
       kind: 'WeLearn synthetic descending three-tone exam signal',
-      frequenciesHz: [880, 740, 622],
+      frequenciesHz: [990, 831, 698],
       durationSeconds: cueDurationSeconds,
       cueCount: 28,
       placement: 'before every scored playback and both Teil 1 example playbacks',

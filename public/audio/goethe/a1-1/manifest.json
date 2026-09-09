@@ -15,9 +15,9 @@
   "acousticCue": {
     "kind": "WeLearn synthetic descending three-tone exam signal",
     "frequenciesHz": [
-      880,
-      740,
-      622
+      990,
+      831,
+      698
     ],
     "durationSeconds": 2.1,
     "cueCount": 28,

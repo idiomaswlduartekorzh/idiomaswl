@@ -21,7 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil1.mp3?v=20260908-signal', transcript: transcriptFor(1),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil1.mp3?v=20260909-highcue', transcript: transcriptFor(1),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h1', part: 1, text: 'Was kostet die Jacke heute?', options: ['18,90 €', '28,90 €', '38,90 €'], answer: 0 },
         { type: 'mcq', id: 'g-a1-1-h2', part: 1, text: 'Wann treffen sie sich?', options: ['16:30 Uhr', '16:45 Uhr', '17:15 Uhr'], answer: 1 },
@@ -34,7 +34,7 @@ const mock: MockExam = {
     {
       part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen',
       instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil2.mp3?v=20260908-signal', transcript: transcriptFor(2),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil2.mp3?v=20260909-highcue', transcript: transcriptFor(2),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h7', part: 2, text: 'Der Zug nach Bonn fährt von Gleis 4.', options: ['Richtig', 'Falsch'], answer: 1 },
         { type: 'mcq', id: 'g-a1-1-h8', part: 2, text: 'Der Bus fährt um 14:30 Uhr weiter.', options: ['Richtig', 'Falsch'], answer: 0 },
@@ -45,7 +45,7 @@ const mock: MockExam = {
     {
       part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil3.mp3?v=20260908-signal', transcript: transcriptFor(3),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil3.mp3?v=20260909-highcue', transcript: transcriptFor(3),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h11', part: 3, text: 'Wann ist der neue Termin?', options: ['Dienstag, 10 Uhr', 'Mittwoch, 10 Uhr', 'Mittwoch, 12 Uhr'], answer: 1 },
         { type: 'mcq', id: 'g-a1-1-h12', part: 3, text: 'Wo treffen sich Lea und Ben?', options: ['im Café', 'vor dem Kino', 'vor der Apotheke'], answer: 2 },
@@ -56,8 +56,8 @@ const mock: MockExam = {
     },
     {
       part: 4, skill: 'reading', title: 'Lesen – Teil 1: Nachrichten',
-      instructions: 'Lesen Sie die beiden Texte und die Aufgaben 1 bis 5. Kreuzen Sie an: Richtig oder Falsch.',
-      passageTitle: 'Zwei persönliche Nachrichten',
+      instructions: 'Lesen Sie zuerst Text A und die Aufgaben 1 bis 2. Lesen Sie danach Text B und die Aufgaben 3 bis 5. Kreuzen Sie an: Richtig oder Falsch.',
+      passageTitle: 'Persönliche Nachrichten',
       passage: `TEXT A — Nachricht von Nora\n\nHallo Luis,\nmein Bus aus Leipzig kommt am Freitag um 13:20 Uhr in Dresden an. Kannst du mich am ZOB abholen? Ich warte am Eingang neben dem Bäcker. Wenn der Bus später kommt, schreibe ich dir. Abends möchte ich gern mit dir und Jana essen gehen.\n\nLiebe Grüße\nNora\n\nTEXT B — Nachricht von Tim\n\nLiebe Freunde,\nam Sonntag machen wir ein Picknick am See. Wir treffen uns um elf Uhr vor dem Bahnhof und fahren zusammen mit dem Fahrrad. Bitte bringt etwas zu trinken mit. Essen und Kuchen habe ich schon. Bei Regen treffen wir uns bei mir zu Hause. Gebt mir bitte bis Freitag Bescheid.\n\nViele Grüße\nTim`,
       questions: [
         { type: 'mcq', id: 'g-a1-1-l1', part: 4, stimulusLabel: 'Text A', text: 'Nora kommt am Freitag mit dem Bus.', options: ['Richtig', 'Falsch'], answer: 0 },
@@ -91,12 +91,12 @@ const mock: MockExam = {
     },
     {
       part: 7, skill: 'writing', title: 'Schreiben – Teil 1: Formular',
-      instructions: 'Ihr Freund Samuel möchte einen Deutschkurs besuchen. Helfen Sie ihm und schreiben Sie die fünf fehlenden Informationen in das Formular.',
+      instructions: 'In dem Formular fehlen fünf Informationen. Helfen Sie Ihrem Freund und schreiben Sie die fünf fehlenden Informationen in das Formular.',
       questions: [{
         type: 'formgroup', id: 'g-a1-1-s1', part: 7, qRange: [1, 5],
-        groupLabel: 'Informationen: Samuel Okafor, 27 Jahre, aus Nigeria, wohnt in Köln, Telefon 0157 408 92 31. Er möchte ab 14. Oktober einen Abendkurs besuchen und bar bezahlen.',
-        title: 'SPRACHHAUS KÖLN · Anmeldung Deutschkurs', example: 'Familienname, Vorname: Okafor, Samuel',
-        template: 'Alter: {{1}}\nWohnort: {{2}}\nTelefon: {{3}}\nKursbeginn: {{4}}\nZahlungsweise: {{5}}',
+        groupLabel: 'Ihr Freund Samuel Okafor ist 27 Jahre alt und kommt aus Nigeria. Seit zwei Jahren wohnt er in Köln, in der Venloer Straße 88. Er möchte ab dem 14. Oktober im Sprachhaus Köln einen Deutschkurs A1 besuchen. Weil er tagsüber arbeitet, braucht er einen Abendkurs. Seine Telefonnummer ist 0157 408 92 31. Samuel hat keine Kreditkarte und bezahlt den Kurs bar.',
+        title: 'SPRACHHAUS KÖLN · Anmeldung zum Deutschkurs', example: 'Familienname, Vorname: Okafor, Samuel',
+        template: 'Herkunftsland: Nigeria\nAlter: {{1}}\nStraße, Hausnummer: Venloer Straße 88\nPLZ, Wohnort: 50823 · {{2}}\nTelefon: {{3}}\nKurs: Deutsch A1 · Abendkurs\nKursbeginn: {{4}}\nZahlungsweise: {{5}}\nUnterschrift: Samuel Okafor',
         blanks: [
           { num: 1, answers: ['27', '27 Jahre'], maxWords: 2 },
           { num: 2, answers: ['Köln', 'Koeln'], maxWords: 1 },

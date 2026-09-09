@@ -37,6 +37,10 @@ const READING_AD_PLATES: Record<number, { src: string; alt: string; width: numbe
   10: { src: '/images/goethe/a1-1/lesen-teil2-10-apotheke.png', alt: 'Anzeigen A und B: Arztpraxis am Tag und geöffnete Apotheke in der Nacht', width: 1536, height: 1024 },
 };
 
+const READING_EXAMPLE_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+  5: { src: '/images/goethe/a1-1/lesen-teil2-00-beispiel-wetter.png', alt: 'Beispielanzeigen A und B: Open-Air-Konzert im Regen und Wetterinformation für Deutschland', width: 1536, height: 1024 },
+};
+
 const SPEAKING_PICTURE_CARDS = [
   { label: 'Wasser', sheet: 1, column: 0, row: 0 },
   { label: 'Fenster', sheet: 1, column: 1, row: 0 },
@@ -57,9 +61,9 @@ const LISTENING_EXAMPLES: Record<number, { question: string; options: string[]; 
   2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
 };
 
-const READING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; stimulus: string }> = {
-  4: { question: 'Nora schreibt Luis eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'Hallo Luis, … Liebe Grüße, Nora' },
-  5: { question: 'Wo können Sie am Sonntag Brot kaufen?', options: ['A — Bäckerei: Sonntag 8–12 Uhr', 'B — Café: Sonntag geschlossen'], answer: 0, stimulus: 'Sie möchten am Sonntag Brot kaufen.' },
+const READING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; stimulus?: string }> = {
+  4: { question: 'Nora schreibt Luis eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0 },
+  5: { question: 'Wo finden Sie Informationen über das Wetter in Deutschland?', options: ['A', 'B'], answer: 1, stimulus: 'Sie möchten wissen: Regnet es morgen in Deutschland?' },
   6: { question: 'Hier muss man leise sein.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'BIBLIOTHEK · Bitte leise sprechen.' },
 };
 
@@ -83,7 +87,7 @@ function itemNumber(question: MCQQuestion) {
   return Number(question.id.match(/(\d+)$/)?.[1] ?? 0);
 }
 
-function ObjectiveItem({ question, number, value, onChange, showResult, visual, readingAd }: {
+function ObjectiveItem({ question, number, value, onChange, showResult, visual, readingAd, hideContextLabel }: {
   question: MCQQuestion;
   number: number;
   value?: number;
@@ -91,6 +95,7 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual, 
   showResult?: boolean;
   visual?: boolean;
   readingAd?: boolean;
+  hideContextLabel?: boolean;
 }) {
   const visualPlate = visual ? LISTENING_PLATES[number] : undefined;
   const readingAdPlate = readingAd ? READING_AD_PLATES[number] : undefined;
@@ -98,9 +103,10 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual, 
     <fieldset className={styles.question}>
       <legend><span className={styles.questionNumber}>{number}</span>{question.text}</legend>
       {visualPlate && <Image className={styles.answerPlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
-      {question.stimulusLabel && <p className={styles.contextLabel}>{question.stimulusLabel}</p>}
+      {question.stimulusLabel && !hideContextLabel && <p className={styles.contextLabel}>{question.stimulusLabel}</p>}
       {readingAdPlate && <Image className={styles.readingAdPlate} src={readingAdPlate.src} alt={readingAdPlate.alt} width={readingAdPlate.width} height={readingAdPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
-      {question.stimulus && (
+      {question.stimulus && readingAdPlate && <p className={styles.srOnly}>{question.stimulus}</p>}
+      {question.stimulus && !readingAdPlate && (
         <div className={question.stimulusStyle === 'sign' ? styles.sign : styles.adPair}>
           {question.stimulus.split('\n\n').map((block, index) => <div key={index}>{block}</div>)}
         </div>
@@ -128,24 +134,26 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual, 
   );
 }
 
-function ResolvedExample({ question, options, answer, note, stimulus }: {
+function ResolvedExample({ question, options, answer, note, stimulus, visualPlate }: {
   question: string;
   options: string[];
   answer: number;
   note?: string;
   stimulus?: string;
+  visualPlate?: { src: string; alt: string; width: number; height: number };
 }) {
   return (
     <aside className={styles.example} aria-label="Beispielaufgabe">
       <div className={styles.exampleLabel}>Beispiel · gelöst</div>
+      <p className={styles.exampleQuestion}><span className={styles.questionNumber}>0</span>{question}</p>
       {stimulus && <p className={styles.exampleStimulus}>{stimulus}</p>}
-      <p className={styles.exampleQuestion}>{question}</p>
+      {visualPlate && <Image className={styles.examplePlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 560px" />}
       <div className={styles.exampleOptions}>
         {options.map((option, index) => (
-          <label key={option} className={index === answer ? styles.exampleCorrect : ''}>
+          <label key={option} className={`${styles.option} ${index === answer ? styles.exampleCorrect : ''}`}>
             <input type="radio" checked={index === answer} readOnly disabled />
-            <span>{String.fromCharCode(65 + index)}</span>
-            {option}
+            <span className={styles.optionLetter}>{String.fromCharCode(65 + index)}</span>
+            <span>{option}</span>
           </label>
         ))}
       </div>
@@ -216,26 +224,41 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
   setAnswer: (id: string, answer: number) => void;
   showResult?: boolean;
 }) {
-  return <>{moduleSections(mock, 'reading').map(section => (
-    <SectionShell key={section.part} section={section}>
-      {section.passage && (
-        <div className={styles.documents}>
-          {section.passage.split('\n\nTEXT B').map((document, index) => (
-            <article key={index} className={styles.message}>
-              <span>{index === 0 ? 'Text A' : 'Text B'}</span>
-              <pre>{index === 0 ? document.replace(/^TEXT A[^\n]*\n\n/, '') : document.replace(/^\s*—[^\n]*\n\n/, '')}</pre>
-            </article>
-          ))}
+  return <>{moduleSections(mock, 'reading').map(section => {
+    const questions = section.questions.filter(question => question.type === 'mcq') as MCQQuestion[];
+    if (section.part === 4 && section.passage) {
+      const documents = section.passage.split('\n\nTEXT B').map((document, index) => ({
+        label: index === 0 ? 'Text A' : 'Text B',
+        body: index === 0 ? document.replace(/^TEXT A[^\n]*\n\n/, '') : document.replace(/^\s*—[^\n]*\n\n/, ''),
+      }));
+      return (
+        <SectionShell key={section.part} section={section}>
+          <div className={styles.readingSequence}>
+            {documents.map((document, index) => (
+              <section key={document.label} className={styles.readingBlock} aria-labelledby={`reading-document-${index}`}>
+                <article className={styles.message}>
+                  <span id={`reading-document-${index}`}>{document.label}</span>
+                  <pre>{document.body}</pre>
+                </article>
+                {index === 0 && <ResolvedExample {...READING_EXAMPLES[section.part]} />}
+                <div className={styles.questionList}>
+                  {questions.filter(question => question.stimulusLabel === document.label).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} hideContextLabel />)}
+                </div>
+              </section>
+            ))}
+          </div>
+        </SectionShell>
+      );
+    }
+    return (
+      <SectionShell key={section.part} section={section}>
+        {READING_EXAMPLES[section.part] && <ResolvedExample {...READING_EXAMPLES[section.part]} visualPlate={READING_EXAMPLE_PLATES[section.part]} />}
+        <div className={styles.questionList}>
+          {questions.map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAd={section.part === 5} />)}
         </div>
-      )}
-      {READING_EXAMPLES[section.part] && (
-        <ResolvedExample {...READING_EXAMPLES[section.part]} />
-      )}
-      <div className={styles.questionList}>
-        {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAd={section.part === 5} />)}
-      </div>
-    </SectionShell>
-  ))}</>;
+      </SectionShell>
+    );
+  })}</>;
 }
 
 function GoetheForm({ question, values, onChange, showResult }: {
@@ -245,23 +268,27 @@ function GoetheForm({ question, values, onChange, showResult }: {
   showResult?: boolean;
 }) {
   const lines = question.template.split('\n');
+  const [exampleLabel, exampleValue = ''] = (question.example ?? '').split(/:\s*/, 2);
   return (
     <div className={styles.formTask}>
       <div className={styles.formSource}><strong>Situation</strong><p>{question.groupLabel}</p></div>
       <div className={styles.paperForm}>
         <h3>{question.title}</h3>
-        <p className={styles.formExample}>Beispiel: {question.example}</p>
+        <div className={`${styles.formStaticRow} ${styles.formExample}`}><span>{exampleLabel}</span><strong>{exampleValue}</strong><em>0 · Beispiel</em></div>
         {lines.map(line => {
-          const match = line.match(/^(.+): \{\{(\d+)\}\}$/);
-          if (!match) return null;
-          const number = Number(match[2]);
+          const match = line.match(/^(.+?):\s*(.*?)\{\{(\d+)\}\}(.*)$/);
+          if (!match) {
+            const [label, ...valueParts] = line.split(':');
+            return <div key={line} className={styles.formStaticRow}><span>{label}</span><strong>{valueParts.join(':').trim()}</strong></div>;
+          }
+          const number = Number(match[3]);
           const blank = question.blanks.find(item => item.num === number);
           const correct = showResult && blank?.answers.some(answer => normalise(answer) === normalise(values[number] ?? ''));
           return (
             <label key={number} className={styles.formRow}>
               <span>{match[1]}</span>
               <span className={styles.blankNumber}>{number}</span>
-              <input value={values[number] ?? ''} onChange={event => onChange(number, event.target.value)} disabled={showResult} className={correct ? styles.inputCorrect : ''} />
+              <span className={styles.formInputValue}>{match[2] && <b>{match[2]}</b>}<input value={values[number] ?? ''} onChange={event => onChange(number, event.target.value)} disabled={showResult} className={correct ? styles.inputCorrect : ''} />{match[4] && <b>{match[4]}</b>}</span>
             </label>
           );
         })}
@@ -308,17 +335,29 @@ function cardGroups(question: SpeakQuestion) {
   });
 }
 
-function SpeakingCardDeck({ part, groups, mode, currentIndex, onIndexChange }: {
+function shuffleIndices(length: number) {
+  const indices = Array.from({ length }, (_, index) => index);
+  for (let index = indices.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [indices[index], indices[swapIndex]] = [indices[swapIndex], indices[index]];
+  }
+  return indices;
+}
+
+function SpeakingCardDeck({ part, groups, mode, currentIndex, order, onIndexChange, onOrderChange }: {
   part: number;
   groups: Array<{ title: string; cards: string[] }>;
   mode: DeliveryMode;
   currentIndex: number;
+  order: number[];
   onIndexChange: (index: number) => void;
+  onOrderChange: (order: number[]) => void;
 }) {
   const wordCards = groups.flatMap(group => group.cards.map(label => ({ kind: 'word' as const, label, theme: group.title })));
   const pictureCards = SPEAKING_PICTURE_CARDS.map(card => ({ kind: 'picture' as const, ...card }));
   const cards = part === 11 ? pictureCards : wordCards;
-  const current = currentIndex >= 0 ? cards[currentIndex] : undefined;
+  const orderedCards = order.length === cards.length ? order.map(index => cards[index]) : cards;
+  const current = currentIndex >= 0 ? orderedCards[currentIndex] : undefined;
   const finished = currentIndex === cards.length - 1;
 
   return (
@@ -341,21 +380,23 @@ function SpeakingCardDeck({ part, groups, mode, currentIndex, onIndexChange }: {
       </div>
       <div className={styles.deckControls}>
         <p>{current ? `Karte ${currentIndex + 1} von ${cards.length}` : `${cards.length} Karten · einzeln aufdecken`}</p>
-        {!finished && <button type="button" className={styles.primary} onClick={() => onIndexChange(currentIndex + 1)}>{current ? 'Nächste Karte' : 'Karte ziehen'}</button>}
-        {finished && mode === 'class' && <button type="button" className={styles.secondary} onClick={() => onIndexChange(-1)}>Stapel neu beginnen</button>}
+        {!finished && <button type="button" className={styles.primary} onClick={() => { if (currentIndex < 0 && order.length !== cards.length) onOrderChange(shuffleIndices(cards.length)); onIndexChange(currentIndex + 1); }}>{current ? 'Nächste Karte' : 'Karte ziehen'}</button>}
+        {finished && mode === 'class' && <button type="button" className={styles.secondary} onClick={() => { onIndexChange(-1); onOrderChange([]); }}>Stapel neu mischen</button>}
         {finished && mode === 'simulation' && <span>Stapel beendet</span>}
       </div>
     </div>
   );
 }
 
-function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, onCardProgress }: {
+function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, cardOrders, onCardProgress, onCardOrder }: {
   mock: MockExam;
   recordings: Record<string, IeltsSpeakingRecording | undefined>;
   onRecording: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
   mode: DeliveryMode;
   cardProgress: Record<number, number>;
+  cardOrders: Record<number, number[]>;
   onCardProgress: (part: number, index: number) => void;
+  onCardOrder: (part: number, order: number[]) => void;
 }) {
   return <>{moduleSections(mock, 'speaking').map(section => {
     const question = section.questions[0] as SpeakQuestion;
@@ -364,7 +405,7 @@ function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, onC
       <SectionShell key={section.part} section={section}>
         <div className={styles.speakingTask}>
           <pre className={styles.speakingPrompt}>{question.text}</pre>
-          {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} currentIndex={cardProgress[section.part] ?? -1} onIndexChange={index => onCardProgress(section.part, index)} />}
+          {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} currentIndex={cardProgress[section.part] ?? -1} order={cardOrders[section.part] ?? []} onIndexChange={index => onCardProgress(section.part, index)} onOrderChange={order => onCardOrder(section.part, order)} />}
           <div className={styles.recorder}>
             <p>Grabación opcional para revisión en clase</p>
             <IELTSSpeakingRecorder questionId={question.id} recording={recordings[question.id]} maxSeconds={section.part === 9 ? 180 : 300} onChange={recording => onRecording(question.id, recording)} />
@@ -432,6 +473,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const [speakingScores, setSpeakingScores] = useState<Record<string, number>>({});
   const [showSubmitReview, setShowSubmitReview] = useState(false);
   const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
+  const [speakingCardOrders, setSpeakingCardOrders] = useState<Record<number, number[]>>({});
 
   const listeningQuestions = useMemo(() => objectiveQuestions(mock, 'listening'), [mock]);
   const readingQuestions = useMemo(() => objectiveQuestions(mock, 'reading'), [mock]);
@@ -457,7 +499,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const writingMissing = writing.trim() ? 0 : 1;
 
   function restart() {
-    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({}); setShowSubmitReview(false); setSpeakingCardProgress({});
+    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({}); setShowSubmitReview(false); setSpeakingCardProgress({}); setSpeakingCardOrders({});
   }
 
   return (
@@ -491,7 +533,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
               {activeSkill === 'reading' && <ReadingModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
               {activeSkill === 'writing' && <WritingModule mock={mock} formValues={formValues} onFormChange={(number, value) => setFormValues(previous => ({ ...previous, [number]: value }))} textValue={writing} onTextChange={setWriting} />}
-              {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} mode={mode} cardProgress={speakingCardProgress} onCardProgress={(part, index) => setSpeakingCardProgress(previous => ({ ...previous, [part]: index }))} />}
+              {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} mode={mode} cardProgress={speakingCardProgress} cardOrders={speakingCardOrders} onCardProgress={(part, index) => setSpeakingCardProgress(previous => ({ ...previous, [part]: index }))} onCardOrder={(part, order) => setSpeakingCardOrders(previous => ({ ...previous, [part]: order }))} />}
               {showSubmitReview && <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('results')} />}
               <div className={styles.examFooter}><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button><button className={styles.primary} onClick={() => setShowSubmitReview(true)}>Prüfung abgeben</button></div>
             </main>
