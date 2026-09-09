@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-1.ts'), 'utf8');
+const runnerSource = fs.readFileSync(path.join(repoRoot, 'src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheA1PracticeClient.tsx'), 'utf8');
 const script = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-1-audio.json'), 'utf8'));
 const audioManifestPath = path.join(repoRoot, 'public/audio/goethe/a1-1/manifest.json');
 const voiceSourceDir = path.join(repoRoot, 'public/audio/goethe/a1-1/voice-sources');
@@ -24,6 +25,8 @@ assert.equal(uniqueMatches(/g-a1-1-l\d+/g).length, 15, 'expected 15 reading ids'
 assert.equal(uniqueMatches(/g-a1-1-sp\d+/g).length, 3, 'expected 3 speaking ids');
 assert.match(source, /qRange:\s*\[1, 5\]/, 'writing form must contain five blanks');
 assert.match(source, /minWords:\s*30/, 'open writing target must be about 30 words');
+assert.match(runnerSource, /Karte ziehen/, 'speaking cards must be revealed one at a time');
+assert.match(runnerSource, /Antwortübersicht/, 'submission must show an omitted-answer summary');
 
 assert.ok(fs.existsSync(audioManifestPath), 'audio manifest is missing; run generate-goethe-a1-set1-audio.mjs');
 const audioManifest = JSON.parse(fs.readFileSync(audioManifestPath, 'utf8'));

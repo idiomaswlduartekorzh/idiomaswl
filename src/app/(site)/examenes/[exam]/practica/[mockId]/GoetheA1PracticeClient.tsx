@@ -37,6 +37,21 @@ const READING_AD_PLATES: Record<number, { src: string; alt: string; width: numbe
   10: { src: '/images/goethe/a1-1/lesen-teil2-10-apotheke.png', alt: 'Anzeigen A und B: Arztpraxis am Tag und geöffnete Apotheke in der Nacht', width: 1536, height: 1024 },
 };
 
+const SPEAKING_PICTURE_CARDS = [
+  { label: 'Wasser', sheet: 1, column: 0, row: 0 },
+  { label: 'Fenster', sheet: 1, column: 1, row: 0 },
+  { label: 'Bleistift', sheet: 1, column: 2, row: 0 },
+  { label: 'Stuhl', sheet: 1, column: 0, row: 1 },
+  { label: 'Apfel', sheet: 1, column: 1, row: 1 },
+  { label: 'Uhr', sheet: 1, column: 2, row: 1 },
+  { label: 'nicht rauchen', sheet: 2, column: 0, row: 0 },
+  { label: 'Radio', sheet: 2, column: 1, row: 0 },
+  { label: 'Buch', sheet: 2, column: 2, row: 0 },
+  { label: 'Tasche', sheet: 2, column: 0, row: 1 },
+  { label: 'Löffel', sheet: 2, column: 1, row: 1 },
+  { label: 'Tür', sheet: 2, column: 2, row: 1 },
+];
+
 const LISTENING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; note: string }> = {
   1: { question: 'Wann kommt der Mann heute?', options: ['9 Uhr', '10 Uhr', 'morgen um 9 Uhr'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
   2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
@@ -293,10 +308,54 @@ function cardGroups(question: SpeakQuestion) {
   });
 }
 
-function SpeakingModule({ mock, recordings, onRecording }: {
+function SpeakingCardDeck({ part, groups, mode, currentIndex, onIndexChange }: {
+  part: number;
+  groups: Array<{ title: string; cards: string[] }>;
+  mode: DeliveryMode;
+  currentIndex: number;
+  onIndexChange: (index: number) => void;
+}) {
+  const wordCards = groups.flatMap(group => group.cards.map(label => ({ kind: 'word' as const, label, theme: group.title })));
+  const pictureCards = SPEAKING_PICTURE_CARDS.map(card => ({ kind: 'picture' as const, ...card }));
+  const cards = part === 11 ? pictureCards : wordCards;
+  const current = currentIndex >= 0 ? cards[currentIndex] : undefined;
+  const finished = currentIndex === cards.length - 1;
+
+  return (
+    <div className={styles.cardDeck} aria-label={`Verdeckter Kartenstapel für Sprechen Teil ${part - 8}`}>
+      <div className={styles.cardStage} aria-live="polite">
+        {!current && <div className={styles.coveredCard}><span>?</span><strong>Karte verdeckt</strong></div>}
+        {current?.kind === 'word' && <div className={styles.currentWordCard}><span>{current.theme}</span><strong>{current.label}</strong></div>}
+        {current?.kind === 'picture' && (
+          <div className={styles.currentPictureCard} aria-label={`Bildkarte: ${current.label}`}>
+            <Image
+              src={`/images/goethe/a1-1/sprechen-teil3-karten-0${current.sheet}.png`}
+              alt={`Bildkarte: ${current.label}`}
+              width={1536}
+              height={1024}
+              sizes="(max-width: 720px) 80vw, 420px"
+              style={{ width: '300%', height: '200%', maxWidth: 'none', left: `-${current.column * 100}%`, top: `-${current.row * 100}%` }}
+            />
+          </div>
+        )}
+      </div>
+      <div className={styles.deckControls}>
+        <p>{current ? `Karte ${currentIndex + 1} von ${cards.length}` : `${cards.length} Karten · einzeln aufdecken`}</p>
+        {!finished && <button type="button" className={styles.primary} onClick={() => onIndexChange(currentIndex + 1)}>{current ? 'Nächste Karte' : 'Karte ziehen'}</button>}
+        {finished && mode === 'class' && <button type="button" className={styles.secondary} onClick={() => onIndexChange(-1)}>Stapel neu beginnen</button>}
+        {finished && mode === 'simulation' && <span>Stapel beendet</span>}
+      </div>
+    </div>
+  );
+}
+
+function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, onCardProgress }: {
   mock: MockExam;
   recordings: Record<string, IeltsSpeakingRecording | undefined>;
   onRecording: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
+  mode: DeliveryMode;
+  cardProgress: Record<number, number>;
+  onCardProgress: (part: number, index: number) => void;
 }) {
   return <>{moduleSections(mock, 'speaking').map(section => {
     const question = section.questions[0] as SpeakQuestion;
@@ -305,18 +364,7 @@ function SpeakingModule({ mock, recordings, onRecording }: {
       <SectionShell key={section.part} section={section}>
         <div className={styles.speakingTask}>
           <pre className={styles.speakingPrompt}>{question.text}</pre>
-          {section.part === 11 && (
-            <div className={styles.pictureCardSheets} aria-label="Bildkarten für Sprechen Teil 3">
-              <Image src="/images/goethe/a1-1/sprechen-teil3-karten-01.png" alt="Bildkarten: Wasser, Fenster, Bleistift, Stuhl, Apfel und Uhr" width={1536} height={1024} sizes="(max-width: 720px) 100vw, 900px" />
-              <Image src="/images/goethe/a1-1/sprechen-teil3-karten-02.png" alt="Bildkarten: nicht rauchen, Radio, Buch, Tasche, Löffel und Tür" width={1536} height={1024} sizes="(max-width: 720px) 100vw, 900px" />
-            </div>
-          )}
-          {question.cueCard && <div className={styles.cardGroups}>{groups.map(group => (
-            <div key={group.title}>
-              <h3>{group.title}</h3>
-              <div className={styles.cards}>{group.cards.map(card => <span key={card}>{card}</span>)}</div>
-            </div>
-          ))}</div>}
+          {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} currentIndex={cardProgress[section.part] ?? -1} onIndexChange={index => onCardProgress(section.part, index)} />}
           <div className={styles.recorder}>
             <p>Grabación opcional para revisión en clase</p>
             <IELTSSpeakingRecorder questionId={question.id} recording={recordings[question.id]} maxSeconds={section.part === 9 ? 180 : 300} onChange={recording => onRecording(question.id, recording)} />
@@ -343,6 +391,34 @@ function AnswerSheet() {
   );
 }
 
+function SubmissionReview({ listeningMissing, readingMissing, formMissing, writingMissing, onBack, onSubmit }: {
+  listeningMissing: number;
+  readingMissing: number;
+  formMissing: number;
+  writingMissing: number;
+  onBack: () => void;
+  onSubmit: () => void;
+}) {
+  const totalMissing = listeningMissing + readingMissing + formMissing + writingMissing;
+  return (
+    <section className={styles.submitReview} aria-labelledby="submit-review-title">
+      <p>Antwortübersicht</p>
+      <h2 id="submit-review-title">{totalMissing ? `${totalMissing} Aufgaben noch offen` : 'Schriftlicher Teil vollständig'}</h2>
+      <ul>
+        <li><span>Hören</span><strong>{listeningMissing ? `${listeningMissing} offen` : 'vollständig'}</strong></li>
+        <li><span>Lesen</span><strong>{readingMissing ? `${readingMissing} offen` : 'vollständig'}</strong></li>
+        <li><span>Schreiben · Formular</span><strong>{formMissing ? `${formMissing} offen` : 'vollständig'}</strong></li>
+        <li><span>Schreiben · Nachricht</span><strong>{writingMissing ? 'nicht begonnen' : 'vorhanden'}</strong></li>
+      </ul>
+      <small>Sprechen wird live durchgeführt; die Aufnahme bleibt im Klassenmodus optional.</small>
+      <div>
+        <button type="button" className={styles.secondary} onClick={onBack}>Zurück zur Prüfung</button>
+        <button type="button" className={styles.primary} onClick={onSubmit}>{totalMissing ? 'Trotzdem abgeben' : 'Prüfung abgeben'}</button>
+      </div>
+    </section>
+  );
+}
+
 export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [mode, setMode] = useState<DeliveryMode>('class');
@@ -354,6 +430,8 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const [playedParts, setPlayedParts] = useState(new Set<number>());
   const [writingScores, setWritingScores] = useState<Record<string, number>>({});
   const [speakingScores, setSpeakingScores] = useState<Record<string, number>>({});
+  const [showSubmitReview, setShowSubmitReview] = useState(false);
+  const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
 
   const listeningQuestions = useMemo(() => objectiveQuestions(mock, 'listening'), [mock]);
   const readingQuestions = useMemo(() => objectiveQuestions(mock, 'reading'), [mock]);
@@ -373,9 +451,13 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const totalScore = Object.values(scaled).reduce((sum, value) => sum + value, 0);
   const manualComplete = Object.keys(writingScores).length === 4 && Object.keys(speakingScores).length === 3;
   const objectiveAnswered = [...listeningQuestions, ...readingQuestions].filter(question => answers[question.id] !== undefined).length;
+  const listeningMissing = listeningQuestions.filter(question => answers[question.id] === undefined).length;
+  const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
+  const formMissing = formQuestion.blanks.filter(blank => !formValues[blank.num]?.trim()).length;
+  const writingMissing = writing.trim() ? 0 : 1;
 
   function restart() {
-    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({});
+    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setWritingScores({}); setSpeakingScores({}); setShowSubmitReview(false); setSpeakingCardProgress({});
   }
 
   return (
@@ -404,13 +486,14 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               <div><span>WELEARN · A1</span><strong>Simulacro 1</strong></div>
               <div className={styles.topbarStatus}><span>{objectiveAnswered}/30 respuestas objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('results')} />}</div>
             </header>
-            <nav className={styles.tabs} aria-label="Prüfungsteile">{SKILLS.map(skill => <button key={skill.id} className={activeSkill === skill.id ? styles.tabActive : ''} onClick={() => setActiveSkill(skill.id)}><span>{skill.label}</span><small>{skill.minutes} min · {skill.points} P.</small></button>)}</nav>
+            <nav className={styles.tabs} aria-label="Prüfungsteile">{SKILLS.map(skill => <button key={skill.id} className={activeSkill === skill.id ? styles.tabActive : ''} onClick={() => { setActiveSkill(skill.id); setShowSubmitReview(false); }}><span>{skill.label}</span><small>{skill.minutes} min · {skill.points} P.</small></button>)}</nav>
             <main className={styles.exam}>
               {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
               {activeSkill === 'reading' && <ReadingModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
               {activeSkill === 'writing' && <WritingModule mock={mock} formValues={formValues} onFormChange={(number, value) => setFormValues(previous => ({ ...previous, [number]: value }))} textValue={writing} onTextChange={setWriting} />}
-              {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} />}
-              <div className={styles.examFooter}><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button><button className={styles.primary} onClick={() => setPhase('results')}>Prüfung abgeben</button></div>
+              {activeSkill === 'speaking' && <SpeakingModule mock={mock} recordings={recordings} onRecording={(id, recording) => setRecordings(previous => ({ ...previous, [id]: recording }))} mode={mode} cardProgress={speakingCardProgress} onCardProgress={(part, index) => setSpeakingCardProgress(previous => ({ ...previous, [part]: index }))} />}
+              {showSubmitReview && <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('results')} />}
+              <div className={styles.examFooter}><button className={styles.secondary} onClick={() => window.print()}>Hoja de respuestas</button><button className={styles.primary} onClick={() => setShowSubmitReview(true)}>Prüfung abgeben</button></div>
             </main>
           </>
         )}

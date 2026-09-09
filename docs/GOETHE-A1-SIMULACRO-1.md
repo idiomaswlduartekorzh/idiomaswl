@@ -42,6 +42,9 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - Modo clase: permite repetir pistas, ver la transcripción docente, usar la hoja imprimible y registrar audio oral opcional.
 - Modo simulacro: cronómetro global de 80 minutos y una sola activación por pista; cada pista ya contiene las repeticiones reglamentarias.
 - Hören muestra los dos ejemplos que forman parte del audio (antes de Teil 1 y Teil 2); cada parte de Lesen incluye un ejemplo resuelto y deshabilitado antes de las preguntas puntuables.
+- Sprechen mantiene las tarjetas cubiertas y las revela de una en una; las láminas de Teil 3 se recortan dinámicamente desde las hojas originales aprobadas y el avance del mazo se conserva al cambiar de sección.
+- Antes de entregar se muestra un resumen de respuestas omitidas en Hören, Lesen y Schreiben; la grabación oral sigue siendo opcional en modo clase.
+- Todos los controles interactivos tienen foco visible para navegación con teclado.
 
 ## Corrección
 
