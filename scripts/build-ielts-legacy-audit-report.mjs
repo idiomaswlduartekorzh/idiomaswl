@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -15,12 +16,23 @@ for (const key of Object.keys(args)) assert.ok(['audit', 'output-dir'].includes(
 const auditPath = path.resolve(args.audit ?? path.join(root, 'output/ielts-legacy-batch-audit.json'));
 const outputDir = path.resolve(args['output-dir'] ?? path.join(root, 'output/legacy-audio-audit'));
 const audit = JSON.parse(readFileSync(auditPath, 'utf8'));
+const independentReviewPath = path.join(root, 'config/ielts-audio/legacy-audio-independent-review.json');
+const independentReview = JSON.parse(readFileSync(independentReviewPath, 'utf8'));
+const { reviewSha256, ...independentReviewCore } = independentReview;
+assert.equal(createHash('sha256').update(JSON.stringify(independentReviewCore)).digest('hex'), reviewSha256,
+  'Independent review digest is stale');
+assert.equal(independentReview.productionManifestSha256, audit.manifestSha256,
+  'Independent review belongs to another production manifest');
 assert.equal(audit.summary.setsAudited, 7, 'Expected the seven legacy reuse candidates');
 assert.equal(audit.rows.length, 7, 'Expected seven set-level rows');
+assert.ok(audit.rows.every(row => independentReview.audioHashes[String(row.set)] === row.audioSha256),
+  'Independent review belongs to another audio hash');
 
 mkdirSync(outputDir, { recursive: true });
 const copiedSourceName = 'legacy-audio-audit.json';
 copyFileSync(auditPath, path.join(outputDir, copiedSourceName));
+const copiedReviewName = 'legacy-audio-independent-review.json';
+copyFileSync(independentReviewPath, path.join(outputDir, copiedReviewName));
 
 const round = (value, digits = 2) => Number(value.toFixed(digits));
 const rows = audit.rows.map(row => ({
@@ -39,6 +51,7 @@ const rows = audit.rows.map(row => ({
   integratedLoudnessLufs: row.levels.integratedLoudnessLufs,
   truePeakDbfs: row.levels.truePeakDbfs,
   decode: row.checks.fullDecode ? 'Íntegro' : 'Falla',
+  sampleJumps: independentReview.technicalReview.sampleJumpsAbovePointFive[String(row.set)],
 }));
 const average = field => round(rows.reduce((sum, row) => sum + row[field], 0) / rows.length);
 const summary = [{
@@ -92,6 +105,23 @@ const rawSource = {
     executed_at: generatedAt,
   },
 };
+const reviewSource = {
+  id: 'legacy-audio-independent-review',
+  label: 'Revisión semántica y técnica independiente',
+  path: copiedReviewName,
+  query: {
+    engine: 'Independent transcript/ASR review + PCM signal inspection',
+    language: 'json',
+    description: 'Revisión ligada al manifiesto y a los siete hashes de audio auditados.',
+    executed_at: independentReview.generatedAt,
+    filters: ['42 filas no-completion', '49 puntos', '91 distractores', 'Siete MP3 heredados'],
+    metric_definitions: [
+      'Clave respaldada: el transcript contiene evidencia suficiente para elegir la respuesta marcada.',
+      'Distractor descartable: contradicho, degradado explícitamente, asignado a otro referente o ausente.',
+      'Salto >0,5: diferencia absoluta superior a 0,5 entre muestras PCM normalizadas consecutivas.',
+    ],
+  },
+};
 
 const artifact = {
   surface: 'report',
@@ -101,7 +131,7 @@ const artifact = {
     title: 'Auditoría de los audios IELTS heredados',
     description: 'Decisión de conservación o reemplazo para los Sets 5–8 y 10–12.',
     generatedAt,
-    sources: [source, rawSource],
+    sources: [source, rawSource, reviewSource],
     cards: [
       { id: 'replacement', dataset: 'summary', sourceId: source.id, metrics: [{ label: 'Reemplazo recomendado', field: 'replacementRecommended', format: 'number' }] },
       { id: 'answers', dataset: 'summary', sourceId: source.id, metrics: [{ label: 'Sets con respuestas 33/33', field: 'answerEvidenceComplete', format: 'number' }] },
@@ -172,6 +202,7 @@ const artifact = {
         { field: 'wordErrorRate', label: 'WER', format: 'percent' },
         { field: 'answers', label: 'Respuestas', type: 'text' },
         { field: 'decode', label: 'Archivo', type: 'text' },
+        { field: 'sampleJumps', label: 'Saltos >0,5', format: 'number' },
       ],
     }],
     blocks: [
@@ -180,8 +211,10 @@ const artifact = {
       { id: 'timing-heading', type: 'markdown', body: '## Duración y silencios\n\nTodos duran exactamente 24 minutos, pero solo contienen entre **8,31 y 9,20 minutos audibles**. Entre **61,66% y 65,36%** de cada archivo es silencio, con pausas individuales de hasta **135,9 segundos**. El patrón es consistente con guiones demasiado cortos extendidos artificialmente.' },
       { id: 'audible-chart-block', type: 'chart', chartId: 'audible-minutes' },
       { id: 'alignment-heading', type: 'markdown', body: '## Correspondencia entre audio, preguntas y respuestas\n\nLas 33 respuestas de completion verificables aparecen en el audio y en el orden esperado en los siete sets. Esa evidencia permite conservar la arquitectura de preguntas y respuestas. Sin embargo, el WER está entre **17,21% y 21,71%**, más del doble del máximo de producción del 8%, por lo que la narración no reproduce el guion con suficiente fidelidad.' },
+      { id: 'semantic-review', type: 'markdown', body: '### Revisión de opción múltiple y distractores\n\nUna revisión independiente cubrió las **42 filas no-completion y sus 49 puntos**: 49/49 claves están respaldadas por el transcript, 91/91 distractores se pueden descartar y no apareció ninguna clave ambigua. El ASR aporta la frase decisiva en 41/42 filas. La excepción es **Set 10 Q21**, cuya respuesta `community library` está en el transcript pero fue omitida parcialmente por Whisper; el segmento empieza aproximadamente en **14:18,5** y necesita una escucha puntual si se rescata.', sourceId: reviewSource.id },
       { id: 'wer-chart-block', type: 'chart', chartId: 'word-error-rate' },
       { id: 'detail-heading', type: 'markdown', body: '## Evidencia detallada\n\nLos guiones contienen entre **1.299 y 1.358 palabras**, frente al mínimo de **2.800**. Cada una de las cuatro partes también queda por debajo del piso de 680 palabras. El códec, la frecuencia y el canal son correctos; las diferencias de nivel y pico son secundarias frente a las fallas estructurales.' },
+      { id: 'technical-review', type: 'markdown', body: '### Montaje, transiciones y posibles clics\n\nLos siete archivos repiten un molde de **16 pausas largas** distribuido por todo el examen. No se detectó clipping, corte terminal duro ni un clic concluyente justo en una unión silencio–voz. Los saltos fuertes se concentran dentro de la señal: Sets **6 y 10** tienen el mayor riesgo de aspereza; Set **7** es el más limpio. Esto permite rescatar fragmentos seleccionados, pero no salva ninguno de los siete másteres completos.', sourceId: reviewSource.id },
       { id: 'detail-table-block', type: 'table', tableId: 'set-detail' },
       { id: 'recommendation', type: 'markdown', body: '## Acción recomendada\n\n1. Conservar preguntas, answer keys y las evidencias 33/33 como restricciones de construcción.\n2. Ampliar cada guion hasta el rango de producción sin mover ni revelar respuestas.\n3. Generar nuevos audios en staging con el montaje suave ya aprobado.\n4. Ejecutar otra vez hashes, decode completo, tiempos, silencios, niveles, ASR y cobertura Q1–Q40.\n5. Entregar una muestra humana antes de autorizar el lote y mantener los MP3 públicos sin cambios hasta entonces.' },
       { id: 'limits', type: 'markdown', body: '## Alcance y límites\n\nEsta auditoría mide los MP3 públicos vigentes y está ligada a sus hashes. Una modificación del audio invalida la decisión y obliga a repetirla. La detección ASR aporta evidencia fuerte de contenido y orden, pero no sustituye la escucha humana de naturalidad, pronunciación y transiciones antes de publicar.' },
@@ -193,7 +226,7 @@ const artifact = {
     status: 'ready',
     datasets: { summary, legacySets: rows },
   },
-  sources: [source, rawSource],
+  sources: [source, rawSource, reviewSource],
 };
 
 const artifactPath = path.join(outputDir, 'artifact.json');
