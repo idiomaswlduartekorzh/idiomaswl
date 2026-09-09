@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "icfes-payments-adversarial-local-v1",
+  "scope": "Deterministic local model only; no network, remote database, Wompi Sandbox or production credentials.",
+  "flags": {
+    "required": "ICFES_ADVERSARIAL_PAYMENTS_ENABLED=true",
+    "default": false,
+    "productionDenied": true
+  },
+  "command": "node --experimental-strip-types --no-warnings --test tests/icfes-payments-adversarial.test.mjs",
+  "localGate": "PASS",
+  "wompiSandboxEndToEnd": "BLOCKED",
+  "tests": {
+    "expected": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "scenarios": [
+    "PENDING does not grant access",
+    "DECLINED and ERROR do not grant access",
+    "APPROVED grants one entitlement",
+    "duplicate APPROVED and exact replay are idempotent",
+    "late PENDING cannot regress APPROVED",
+    "tampered amount, currency, environment and provider transaction are rejected",
+    "REFUND and CHARGEBACK revoke access and resist approval replay",
+    "12k to 49k and 12k to 99k credit is same-owner, seven-day and single-use",
+    "49k to 99k charges 50k and preserves the period end",
+    "a late approval cannot reuse upgrade credit released to another order",
+    "source reversal cascades to dependent upgrade access"
+  ],
+  "artifacts": {
+    "src/lib/icfes/payment-adversarial-model.ts": "7bd735e67b0c06e62b38b14d8e040ed75399f5700fe8c8b58ea6229096d06dc3",
+    "src/lib/icfes/payment-event.ts": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22",
+    "src/lib/icfes/commerce-v1.ts": "8f0fd792101d7d750ade0f0841682b4a122f180cb45464effa6876d3efddbaeb",
+    "tests/icfes-payments-adversarial.test.mjs": "15b4f4b9de27c6eb2760d9e0a42852e19ae20d03287a88584be9366c2881d650"
+  },
+  "blockers": [
+    "No real Wompi Sandbox checkout, signed webhook and authoritative transaction lookup were executed.",
+    "The local REFUND/CHARGEBACK vocabulary is not mapped to live provider events or persisted production revocation state.",
+    "No remote migrations were applied and no real entitlement was granted or revoked."
+  ]
+}

@@ -5,6 +5,8 @@ import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
 import { XPRESS_EXAM_OPTIONS } from '@/lib/student-onboarding/catalog';
+import { reserveIcfesTeacherCapacityBeforeCheckout } from '@/lib/icfes/teacher-ops.server';
+import { ICFES_TEACHER_ADDENDUM } from '@/lib/icfes/teacher-ops-v1';
 import { quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
 import { fulfillPaidXpressOrder } from './fulfillment.server';
 import { parseXpressProviderPayment, type XpressOrderInput } from './payment';
@@ -55,6 +57,16 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
 
   const coverageEndsAt = quote.reason === 'membership-upgrade' ? active?.ends_at ?? null : null;
   const orderKind = quote.reason === 'membership-upgrade' ? 'upgrade' : quote.reason === 'single-purchase' ? 'single' : 'new';
+  const isIcfesTeacher = quote.examSlug === 'icfes' && quote.offer.id === 'exam-teacher';
+  if (isIcfesTeacher) {
+    await reserveIcfesTeacherCapacityBeforeCheckout({
+      userId: user.id,
+      environment: config.environment,
+      idempotencyKey: input.idempotencyKey,
+    });
+  }
+  const legalSnapshot = JSON.parse(XPRESS_LEGAL_SNAPSHOT) as Record<string, unknown>;
+  if (isIcfesTeacher) legalSnapshot.icfesTeacherAddendum = ICFES_TEACHER_ADDENDUM;
   const { data, error } = await createAdminClient().rpc('prepare_xpress_order', {
     p_user: user.id,
     p_email: user.email!.toLowerCase(),
@@ -69,7 +81,7 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
     p_coverage_ends: coverageEndsAt,
     p_terms: XPRESS_TERMS_VERSION,
     p_privacy: XPRESS_PRIVACY_VERSION,
-    p_legal: JSON.parse(XPRESS_LEGAL_SNAPSHOT),
+    p_legal: legalSnapshot,
   }).abortSignal(AbortSignal.timeout(10000));
   if (error || !data) {
     const code = error?.message?.includes('xpress_order_pending') ? 'xpress_order_pending' : 'xpress_order_storage_unavailable';

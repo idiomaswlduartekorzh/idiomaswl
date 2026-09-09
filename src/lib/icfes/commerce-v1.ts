@@ -5,6 +5,7 @@ import {
   type XpressEntitlement,
   type XpressOffer,
   type XpressOfferId,
+  type XpressPurchaseQuote,
 } from '../xpress-commerce/catalog.ts';
 
 export const ICFES_COMMERCE_VERSION = 'icfes-commerce-2026-09-09-v1' as const;
@@ -119,6 +120,13 @@ function detailCreditIsEligible(purchasedAt: Date, now: Date): boolean {
   return Number.isFinite(ageInMilliseconds) && ageInMilliseconds >= 0 && ageInMilliseconds <= windowInMilliseconds;
 }
 
+function icfesMonthlyReason(
+  reason: XpressPurchaseQuote['reason'],
+): Extract<IcfesCommercePurchaseQuote['reason'], 'new-purchase' | 'membership-upgrade' | 'active-membership' | 'downgrade'> {
+  if (reason === 'different-exam') throw new Error('icfes_monthly_quote_scope_mismatch');
+  return reason;
+}
+
 export function quoteIcfesCommercePurchase(
   context: IcfesCommercePurchaseContext,
 ): IcfesCommercePurchaseQuote {
@@ -143,16 +151,13 @@ export function quoteIcfesCommercePurchase(
       requestedExamSlug: 'icfes',
       activeMembership: { offerId: active.offerId, examSlug: 'icfes' },
     });
-    if (monthlyQuote.reason === 'different-exam') {
-      throw new Error('icfes_monthly_quote_scope_mismatch');
-    }
     return {
       action: monthlyQuote.action,
       amountInCents: monthlyQuote.amountInCents,
       creditInCents: monthlyQuote.creditInCents,
       offer,
       periodEndsAt,
-      reason: monthlyQuote.reason,
+      reason: icfesMonthlyReason(monthlyQuote.reason),
     };
   }
 

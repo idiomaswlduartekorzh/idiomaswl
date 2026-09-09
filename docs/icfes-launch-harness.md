@@ -20,6 +20,8 @@ El estado nunca se escribe a mano. `scripts/icfes-launch-harness.mjs` lo calcula
 ```bash
 npm run check:icfes-launch-harness
 npm run test:icfes-launch-harness
+npm run test:icfes-payments-adversarial
+npm run audit:icfes-payments-adversarial
 npm run icfes:launch:inventory
 npm run icfes:launch:release-check
 ```
@@ -34,9 +36,9 @@ npm run icfes:launch:release-check
 | SEO | PASS | `src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx:16-30,41-77`, `src/app/sitemap.ts:264-280` | El guiado propio es dinámico, `noindex` y no entrega preguntas ni feedback a visitantes sin membresía; esas rutas no están en el sitemap. |
 | pricing | PASS | `src/lib/icfes/commerce-v1.ts:10-14,45-83,116-192`, `src/lib/xpress-commerce/payments.server.ts:39-78` | La fachada fija los tres precios y el servidor recalcula los SKUs mensuales y upgrades para `examSlug=icfes`. |
 | security | PASS | `src/lib/icfes/attempt-token.server.ts:38-68`, `src/app/api/icfes/attempts/[attemptId]/detail/route.ts:35-77` | Capability anónima firmada y acotada al intento; el owner autenticado conserva acceso por entitlement y la membresía se valida por usuario, examen y beneficio. |
-| privacy | BLOCKED | `supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql:4-14` | No hay contrato aprobado de retención, borrado/exportación o acceso docente minimizado. |
-| payments | BLOCKED | `docs/ICFES-INTEGRATION-FINAL-2026-09-08.md:54-59` | No existe prueba Sandbox end-to-end ni modelo de upgrade/refund/chargeback. |
-| teacher-ops | BLOCKED | `supabase/migrations/20260909000500_xpress_memberships_wompi.sql:121-139` | Existe tabla de revisiones y `due_at`, pero faltan roster calibrado, rúbrica versionada, reserva de capacidad y métricas observadas. |
+| privacy | BLOCKED | `supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql:4-229`, `docs/icfes-privacy-contract.md:25-62` | Ya existe un contrato versionado y fail-closed, cola de solicitudes y payload docente pseudónimo; faltan decisión jurídica, handlers de exportación/borrado, job de purga y prueba Sandbox. |
+| payments | BLOCKED | `docs/icfes-payments-adversarial-local.json`, `tests/icfes-payments-adversarial.test.mjs` | El modelo local aislado pasa 10/10 casos adversariales, incluidos upgrades, replay, refund y chargeback; faltan checkout, webhook firmado, consulta autoritativa y revocación persistida en Wompi Sandbox. |
+| teacher-ops | BLOCKED | `src/lib/icfes/teacher-ops-v1.ts`, `src/lib/icfes/teacher-rubric-v1.ts`, `supabase/migrations/20260909000500_xpress_memberships_wompi.sql`, `tests/icfes-teacher-ops-v1.test.mjs` | El arnés local ya cubre rúbrica, reserva, crédito único, cola, lease, idempotencia, alertas y stop conditions. Sigue bloqueado porque no existen roster calibrado, métricas observadas, migración aplicada ni aceptación visible del addendum ICFES. |
 | release | BLOCKED | `docs/ICFES-INTEGRATION-FINAL-2026-09-08.md:96-102` | Activación, migración, revisión legal y evidencia real continúan pendientes. |
 
 Con la prioridad actual, el estado calculado es `BLOCKED_PRIVACY`. El manifiesto de release está vacío y `approvals.json` también. Es deliberado.
@@ -47,7 +49,7 @@ Con la prioridad actual, el estado calculado es `BLOCKED_PRIVACY`. El manifiesto
 |---|---:|---:|---|
 | `icfes-detail-attempt-v1` | COP 12.000 | Compra única | Detalle automático de un intento. |
 | `exam-auto` + `examSlug=icfes` | COP 49.000 | 30 días | Todos los mocks propios y feedback automático. |
-| `exam-teacher` + `examSlug=icfes` | COP 99.000 | 30 días | Beneficio anterior y un crédito de feedback docente con SLA de 24 horas. |
+| `exam-teacher` + `examSlug=icfes` | COP 99.000 | 30 días | Beneficio anterior y un crédito docente; objetivo operativo de 24 horas solo con capacidad reservada. |
 
 El cupo humano inicial es uno. “Feedback docente ilimitado” no es una interpretación permitida: cambiar esa cantidad modifica la policy y exige un nuevo work order, prueba de capacidad y nuevas aprobaciones.
 
@@ -58,6 +60,8 @@ Los upgrades se calculan en servidor y consumen una compra inferior una sola vez
 - 49k → 99k: COP 50.000 mientras el pase esté vigente; conserva su fecha final.
 
 Solo una compra `APPROVED`, no reembolsada y vinculada a la misma cuenta puede originar crédito.
+
+La evidencia `docs/icfes-payments-adversarial-local.json` se regenera de forma determinista, incluye hashes de fuente/prueba y no usa red ni credenciales. El flag `ICFES_ADVERSARIAL_PAYMENTS_ENABLED` está apagado por defecto y el modelo rechaza su ejecución en producción. Esta prueba local mejora el gate, pero no lo convierte en `PASS`: la prueba end-to-end con eventos firmados y estado persistido real sigue siendo obligatoria.
 
 ## Roles y separación
 
@@ -125,6 +129,12 @@ La venta del tier humano se apaga si ocurre cualquiera de estas condiciones:
 - una brecha real de SLA sin compensación/refund y causa cerrada.
 
 Los tiers inferiores pueden continuar únicamente si sus propios gates permanecen verdes.
+
+### Divergencia contractual vigente
+
+`src/lib/xpress-commerce/terms.ts` dice que el plan docente añade retroalimentación después de “cada entrega”. Esa condición global también sirve a otros exámenes y no se altera desde este track. Para ICFES, `icfes-teacher-addendum-2026-09-09-v1` reemplaza específicamente esa sección por un crédito durante 30 días; el parser rechaza una orden ICFES docente que no incluya la aceptación de esa versión.
+
+Como la UI aún no presenta ni recoge ese addendum, el tier ICFES docente permanece bloqueado. Las pruebas locales demuestran el control y el bloqueo, pero no sustituyen aceptación contractual, roster calibrado, métricas reales ni una migración aplicada.
 
 ## Ownership
 

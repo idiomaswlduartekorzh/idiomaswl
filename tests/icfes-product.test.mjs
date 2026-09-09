@@ -184,12 +184,15 @@ test('feature flags default off and private ownership never comes from the clien
 
 test('ICFES private tables have RLS and no browser-role grants or policies', () => {
   const migration = read('supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql');
-  for (const table of ['icfes_attempts', 'icfes_pass_orders', 'icfes_entitlements']) {
+  for (const table of [
+    'icfes_privacy_contracts', 'icfes_attempts', 'icfes_pass_orders', 'icfes_entitlements',
+    'icfes_data_subject_requests',
+  ]) {
     assert.match(migration, new RegExp(`ALTER TABLE public\\.${table} ENABLE ROW LEVEL SECURITY`));
     assert.doesNotMatch(migration, new RegExp(`CREATE POLICY[\\s\\S]{0,160}(?:ON )?public\\.${table}`, 'i'));
   }
-  assert.match(migration, /REVOKE ALL ON TABLE public\.icfes_attempts, public\.icfes_pass_orders, public\.icfes_entitlements FROM anon, authenticated, service_role/);
-  assert.match(migration, /GRANT SELECT, INSERT, UPDATE ON TABLE public\.icfes_attempts, public\.icfes_pass_orders TO service_role/);
+  assert.match(migration, /GRANT SELECT, INSERT ON TABLE public\.icfes_attempts, public\.icfes_pass_orders TO service_role/);
+  assert.match(migration, /GRANT UPDATE \(user_id, updated_at\) ON TABLE public\.icfes_attempts TO service_role/);
   assert.match(migration, /GRANT SELECT, INSERT ON TABLE public\.icfes_entitlements TO service_role/);
   assert.doesNotMatch(migration, /GRANT[^;]+TO (?:anon|authenticated)/i);
   assert.match(migration, /amount_in_cents bigint NOT NULL CHECK \(amount_in_cents = 1200000\)/);

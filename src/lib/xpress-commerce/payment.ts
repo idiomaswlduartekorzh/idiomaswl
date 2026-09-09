@@ -1,4 +1,5 @@
 import { XPRESS_EXAM_OPTIONS, type XpressExamSlug } from '../student-onboarding/catalog.ts';
+import { ICFES_TEACHER_ADDENDUM_VERSION } from '../icfes/teacher-ops-v1.ts';
 import { getXpressOffer, type XpressOfferId } from './catalog.ts';
 import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from './terms.ts';
 
@@ -8,6 +9,7 @@ export type XpressOrderInput = Readonly<{
   offerId: XpressOfferId;
   acceptedTerms: string;
   acceptedPrivacy: string;
+  acceptedIcfesTeacherAddendum?: string;
 }>;
 
 export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
@@ -17,6 +19,8 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
   if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
   if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
+  const isIcfesTeacher = input.examSlug === 'icfes' && input.offerId === 'exam-teacher';
+  if (isIcfesTeacher && input.acceptedIcfesTeacherAddendum !== ICFES_TEACHER_ADDENDUM_VERSION) return null;
   getXpressOffer(input.offerId);
   return {
     idempotencyKey: input.idempotencyKey,
@@ -24,6 +28,7 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
     offerId: input.offerId,
     acceptedTerms: input.acceptedTerms,
     acceptedPrivacy: input.acceptedPrivacy,
+    ...(isIcfesTeacher ? { acceptedIcfesTeacherAddendum: ICFES_TEACHER_ADDENDUM_VERSION } : {}),
   } as XpressOrderInput;
 }
 
