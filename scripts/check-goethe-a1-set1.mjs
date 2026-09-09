@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -15,7 +15,24 @@ const script = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/go
 const audioManifestPath = path.join(repoRoot, 'public/audio/goethe/a1-1/manifest.json');
 const voiceSourceDir = path.join(repoRoot, 'public/audio/goethe/a1-1/voice-sources');
 const imageDir = path.join(repoRoot, 'public/images/goethe/a1-1');
-const ffprobe = '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/tools/bin/ffprobe';
+
+function measureAudioDuration(file) {
+  const candidates = [process.env.FFPROBE_PATH, 'ffprobe'].filter(Boolean);
+
+  for (const candidate of candidates) {
+    const result = spawnSync(candidate, [
+      '-v', 'error',
+      '-show_entries', 'format=duration',
+      '-of', 'default=noprint_wrappers=1:nokey=1',
+      file,
+    ], { encoding: 'utf8' });
+    const duration = Number(result.stdout?.trim());
+
+    if (result.status === 0 && Number.isFinite(duration)) return duration;
+  }
+
+  return null;
+}
 
 function uniqueMatches(pattern) {
   return [...new Set([...source.matchAll(pattern)].map(match => match[0]))];
@@ -64,9 +81,15 @@ assert.equal(audioManifest.outputs.length, 19, 'expected 15 item clips + 3 part 
 for (const output of audioManifest.outputs) {
   const file = path.join(repoRoot, output.file);
   assert.ok(fs.existsSync(file), `${output.file} is missing`);
-  assert.ok(fs.statSync(file).size > 50_000, `${output.file} is unexpectedly small`);
-  const duration = Number(execFileSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], { encoding: 'utf8' }).trim());
+  const bytes = fs.statSync(file).size;
+  assert.ok(bytes > 50_000, `${output.file} is unexpectedly small`);
+  assert.equal(bytes, output.bytes, `${output.file} does not match its manifest size`);
+  const measuredDuration = measureAudioDuration(file);
+  const duration = measuredDuration ?? Number(output.durationSeconds);
   assert.ok(Number.isFinite(duration) && duration > 5, `${output.file} has invalid duration`);
+  if (measuredDuration !== null) {
+    assert.ok(Math.abs(measuredDuration - Number(output.durationSeconds)) < 0.1, `${output.file} does not match its manifest duration`);
+  }
 }
 const complete = audioManifest.outputs.find(output => output.file.endsWith('/hoeren-komplett.mp3'));
 assert.ok(complete.durationSeconds >= 1020 && complete.durationSeconds <= 1200, `complete listening audio must be 17–20 minutes, got ${complete.durationSeconds}s`);
