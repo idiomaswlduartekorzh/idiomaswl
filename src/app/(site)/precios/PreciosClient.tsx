@@ -87,8 +87,8 @@ const BLOG_BY_LANG: Record<string, BlogArticle[]> = {
   ],
 };
 
-export default function PreciosClient() {
-  const [lang, setLang] = useState(LANGUAGES[0]);
+export default function PreciosClient({ initialLanguage }: { initialLanguage?: string }) {
+  const [lang, setLang] = useState(() => LANGUAGES.find((item) => item.slug === initialLanguage) ?? LANGUAGES[0]);
   const [sessions, setSessions] = useState<2 | 4>(2);
   const [annual, setAnnual] = useState(false);
 

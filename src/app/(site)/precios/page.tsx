@@ -39,8 +39,9 @@ export const metadata: Metadata = candidate ? {
 } : legacyMetadata;
 
 export default async function PreciosPage({ searchParams }: { searchParams: Promise<Query> }) {
+  const query = await searchParams;
   if (candidate) {
-    const { selection, corrected } = parseSelection(await searchParams);
+    const { selection, corrected } = parseSelection(query);
     const salesEnabled = courseSalesEnabled();
     return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} salesEnabled={salesEnabled} />;
   }
@@ -57,7 +58,7 @@ export default async function PreciosPage({ searchParams }: { searchParams: Prom
           ],
         }) }}
       />
-      <PreciosClient />
+      <PreciosClient initialLanguage={typeof query.idioma === 'string' ? query.idioma : undefined} />
     </>
   );
 }

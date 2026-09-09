@@ -13,6 +13,7 @@ import {
   registrationCompletionPath,
   registrationIntentMetadata,
   registrationPurchasePath,
+  xpressClassPurchasePath,
   type RegistrationIntent,
   type StudentPath,
   type WelearnLanguage,
@@ -23,6 +24,7 @@ import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog
 
 type Mode = 'login' | 'register';
 type OAuthProvider = 'google' | 'apple';
+type ExamPreparationMode = 'self' | 'teacher';
 
 // ── Palette ────────────────────────────────────────────────────────────────────
 const A      = 'var(--accent)';
@@ -51,6 +53,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>('');
   const [exam, setExam] = useState<XpressExamSlug | ''>('');
   const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
+  const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>('');
   const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(1);
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
@@ -59,7 +62,9 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
   const registrationIntent = (): RegistrationIntent | null => {
     if (studentPath === 'welearn' && language && coursePlan) return { path: 'welearn', language, plan: coursePlan };
-    if (studentPath === 'exam' && language && exam && examPlan) return { path: 'exam', language, exam, plan: examPlan };
+    if (studentPath === 'exam' && language && exam && examPreparationMode === 'self' && examPlan) {
+      return { path: 'exam', language, exam, plan: examPlan };
+    }
     return null;
   };
 
@@ -169,6 +174,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     if (path === 'welearn') {
       setExam('');
       setExamPlan('');
+      setExamPreparationMode('');
     } else {
       setCoursePlan('');
     }
@@ -326,7 +332,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                 : registrationStep === 1
                   ? 'Elige primero el idioma. Tu cuenta se crea al final.'
                   : registrationStep === 2
-                    ? 'Elige entre idioma general o preparación para examen y selecciona un precio.'
+                    ? 'Elige tu objetivo y cómo quieres aprender.'
                     : 'Tu elección está lista. Ahora guarda tu acceso y continúa al pago.'}
             </p>
             {mode === 'register' && (
@@ -346,7 +352,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                   value={language}
                   onChange={(event) => {
                     setLanguage(event.target.value as WelearnLanguage);
-                    setStudentPath(null); setCoursePlan(''); setExam(''); setExamPlan(''); setError('');
+                    setStudentPath(null); setCoursePlan(''); setExam(''); setExamPlan(''); setExamPreparationMode(''); setError('');
                   }}
                   style={inputStyle}
                 >
@@ -407,13 +413,35 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
               {studentPath === 'exam' && <>
                 <Field label="Examen">
-                  <select aria-label="Examen" value={exam} onChange={(event) => { setExam(event.target.value as XpressExamSlug); setError(''); }} style={inputStyle}>
+                  <select aria-label="Examen" value={exam} onChange={(event) => {
+                    setExam(event.target.value as XpressExamSlug); setExamPlan(''); setExamPreparationMode(''); setError('');
+                  }} style={inputStyle}>
                     <option value="" disabled>Selecciona un examen de {WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label}</option>
                     {examsForLanguage.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
                   </select>
                   {examsForLanguage.length === 0 && <p style={{ margin: '0.5rem 0 0', fontSize: 12, color: MUTED }}>Todavía no hay simulacros disponibles para este idioma. Puedes elegir Idioma general.</p>}
                 </Field>
-                <Field label="Elige cómo quieres practicar">
+
+                {exam && <Field label="¿Cómo quieres prepararte?">
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
+                    <JourneyChoice
+                      selected={examPreparationMode === 'self'}
+                      eyebrow="A TU RITMO"
+                      label="Autodidacta"
+                      description="Simulacros, resultados y reportes en Xpress."
+                      onSelect={() => { setExamPreparationMode('self'); setError(''); }}
+                    />
+                    <JourneyChoice
+                      selected={examPreparationMode === 'teacher'}
+                      eyebrow="CLASES EN VIVO"
+                      label="Con profesor"
+                      description="Preparación guiada con un docente de WeLearn."
+                      onSelect={() => { setExamPreparationMode('teacher'); setExamPlan(''); setError(''); }}
+                    />
+                  </div>
+                </Field>}
+
+                {examPreparationMode === 'self' && <Field label="Elige tu acceso Xpress">
                   <div style={{ display: 'grid', gap: '0.55rem' }}>
                     {XPRESS_OFFERS.map((offer) => <PlanChoice
                       key={offer.id}
@@ -427,12 +455,26 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>
-                </Field>
+                </Field>}
+
+                {examPreparationMode === 'teacher' && exam && <div style={{
+                  padding: '1rem', borderRadius: 16,
+                  border: '1px solid color-mix(in srgb, var(--accent) 38%, var(--line-soft))',
+                  background: 'linear-gradient(135deg, color-mix(in srgb, var(--accent) 13%, var(--surface)), var(--surface))',
+                  boxShadow: '0 10px 28px rgba(18, 35, 79, 0.08)',
+                }}>
+                  <p style={{ margin: 0, color: A, fontWeight: 800, fontSize: 11, letterSpacing: '0.08em' }}>PREPARACIÓN GUIADA</p>
+                  <h3 style={{ margin: '0.35rem 0', color: 'var(--ink)', fontSize: 16 }}>Elige la intensidad de tus clases</h3>
+                  <p style={{ margin: '0 0 0.9rem', color: MUTED, fontSize: 12, lineHeight: 1.5 }}>Abriremos la página completa de precios con tu idioma ya seleccionado.</p>
+                  <button type="button" onClick={() => router.push(xpressClassPurchasePath(exam))} style={primaryButtonStyle(false)}>Ver clases y precios</button>
+                </div>}
               </>}
 
               {error && <InlineMessage kind="error">{error}</InlineMessage>}
-              <button type="button" onClick={continueRegistration} disabled={!registrationReady} style={primaryButtonStyle(!registrationReady)}>Continuar al registro</button>
-              <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>Crearás tu cuenta antes de pasar al pago seguro con Wompi.</p>
+              {(studentPath !== 'exam' || examPreparationMode !== 'teacher') && <>
+                <button type="button" onClick={continueRegistration} disabled={!registrationReady} style={primaryButtonStyle(!registrationReady)}>Continuar al registro</button>
+                <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>Crearás tu cuenta antes de pasar al pago seguro con Wompi.</p>
+              </>}
             </div>
           )}
 
@@ -702,6 +744,30 @@ function PlanChoice({ selected, label, description, onSelect }: {
     }}>
       <strong style={{ display: 'block', fontSize: 13 }}>{label}</strong>
       <span style={{ display: 'block', marginTop: 4, fontSize: 11, lineHeight: 1.4, color: MUTED }}>{description}</span>
+    </button>
+  );
+}
+
+function JourneyChoice({ selected, eyebrow, label, description, onSelect }: {
+  selected: boolean;
+  eyebrow: string;
+  label: string;
+  description: string;
+  onSelect: () => void;
+}) {
+  return (
+    <button type="button" aria-pressed={selected} onClick={onSelect} style={{
+      minHeight: 118, padding: '0.9rem', textAlign: 'left', borderRadius: 16,
+      border: `1.5px solid ${selected ? A : BORDER}`,
+      background: selected
+        ? 'linear-gradient(145deg, color-mix(in srgb, var(--accent) 14%, var(--surface)), var(--surface))'
+        : CARD,
+      color: 'var(--ink)', cursor: 'pointer',
+      boxShadow: selected ? '0 10px 24px rgba(167,25,39,0.10)' : '0 3px 12px rgba(18,35,79,0.04)',
+    }}>
+      <span style={{ display: 'block', marginBottom: 8, color: selected ? A : MUTED, fontSize: 10, fontWeight: 800, letterSpacing: '0.08em' }}>{eyebrow}</span>
+      <strong style={{ display: 'block', fontSize: 14 }}>{label}</strong>
+      <span style={{ display: 'block', marginTop: 5, fontSize: 11, lineHeight: 1.45, color: MUTED }}>{description}</span>
     </button>
   );
 }
