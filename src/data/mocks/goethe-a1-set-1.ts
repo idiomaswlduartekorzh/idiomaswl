@@ -21,7 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil1.mp3', transcript: transcriptFor(1),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil1.mp3?v=20260908-signal', transcript: transcriptFor(1),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h1', part: 1, text: 'Was kostet die Jacke heute?', options: ['18,90 €', '28,90 €', '38,90 €'], answer: 0 },
         { type: 'mcq', id: 'g-a1-1-h2', part: 1, text: 'Wann treffen sie sich?', options: ['16:30 Uhr', '16:45 Uhr', '17:15 Uhr'], answer: 1 },
@@ -34,7 +34,7 @@ const mock: MockExam = {
     {
       part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen',
       instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil2.mp3', transcript: transcriptFor(2),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil2.mp3?v=20260908-signal', transcript: transcriptFor(2),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h7', part: 2, text: 'Der Zug nach Bonn fährt von Gleis 4.', options: ['Richtig', 'Falsch'], answer: 1 },
         { type: 'mcq', id: 'g-a1-1-h8', part: 2, text: 'Der Bus fährt um 14:30 Uhr weiter.', options: ['Richtig', 'Falsch'], answer: 0 },
@@ -45,7 +45,7 @@ const mock: MockExam = {
     {
       part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-1/hoeren-teil3.mp3', transcript: transcriptFor(3),
+      audioUrl: '/audio/goethe/a1-1/hoeren-teil3.mp3?v=20260908-signal', transcript: transcriptFor(3),
       questions: [
         { type: 'mcq', id: 'g-a1-1-h11', part: 3, text: 'Wann ist der neue Termin?', options: ['Dienstag, 10 Uhr', 'Mittwoch, 10 Uhr', 'Mittwoch, 12 Uhr'], answer: 1 },
         { type: 'mcq', id: 'g-a1-1-h12', part: 3, text: 'Wo treffen sich Lea und Ben?', options: ['im Café', 'vor dem Kino', 'vor der Apotheke'], answer: 2 },

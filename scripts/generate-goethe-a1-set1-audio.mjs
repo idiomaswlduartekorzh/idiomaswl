@@ -13,6 +13,8 @@ const ffmpeg = '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuida
 const ffprobe = '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/tools/bin/ffprobe';
 const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'wl-goethe-a1-natural-'));
 const sampleRate = 44100;
+const cueDurationSeconds = 2.1;
+const cueTailSeconds = 2.4;
 let sequence = 0;
 
 fs.mkdirSync(outputDir, { recursive: true });
@@ -47,6 +49,31 @@ function silence(seconds) {
   return wav;
 }
 
+let acousticCue;
+function signal() {
+  if (acousticCue) return acousticCue;
+  acousticCue = nextFile('exam-signal');
+  run(ffmpeg, [
+    '-hide_banner', '-loglevel', 'error', '-y',
+    '-f', 'lavfi', '-i', `sine=frequency=880:sample_rate=${sampleRate}:duration=0.78`,
+    '-f', 'lavfi', '-i', `sine=frequency=740:sample_rate=${sampleRate}:duration=0.72`,
+    '-f', 'lavfi', '-i', `sine=frequency=622:sample_rate=${sampleRate}:duration=0.60`,
+    '-filter_complex',
+    '[0:a]volume=0.105,afade=t=in:st=0:d=0.02,afade=t=out:st=0.68:d=0.10[a0];' +
+      '[1:a]volume=0.10,afade=t=in:st=0:d=0.02,afade=t=out:st=0.62:d=0.10[a1];' +
+      '[2:a]volume=0.095,afade=t=in:st=0:d=0.02,afade=t=out:st=0.48:d=0.12[a2];' +
+      '[a0][a1][a2]concat=n=3:v=0:a=1[out]',
+    '-map', '[out]', '-ar', String(sampleRate), '-ac', '1', '-c:a', 'pcm_s16le', acousticCue,
+  ]);
+  return acousticCue;
+}
+
+function cueWindow(seconds) {
+  const leadSeconds = Number((seconds - cueDurationSeconds - cueTailSeconds).toFixed(2));
+  if (leadSeconds < 0) throw new Error(`La ventana de ${seconds}s es demasiado corta para la señal acústica.`);
+  return [silence(leadSeconds), signal(), silence(cueTailSeconds)];
+}
+
 function concatWav(files, output) {
   const list = nextFile('concat', 'txt');
   fs.writeFileSync(list, `${files.map(file => `file '${file.replaceAll("'", "'\\''")}'`).join('\n')}\n`);
@@ -68,8 +95,8 @@ function itemSequence(itemNumber, plays) {
   // Teil 1 uses a separate neutral narrator. The sources for Teil 2 and Teil 3
   // already start with “Nummer …” in the same natural recording.
   if (itemNumber <= 6) files.push(sourceWav(`label${padded}.mp3`));
-  files.push(silence(15), stimulus);
-  if (plays === 2) files.push(silence(6), stimulus);
+  files.push(...cueWindow(15), stimulus);
+  if (plays === 2) files.push(...cueWindow(6), stimulus);
   files.push(silence(7));
 
   const out = nextFile(`item-sequence-${padded}`);
@@ -83,7 +110,7 @@ function buildPart(part) {
 
   if (part.id === 1) {
     const example = sourceWav('example01.mp3');
-    files.push(sourceWav('label-example.mp3'), silence(8), example, silence(5), example, silence(6));
+    files.push(sourceWav('label-example.mp3'), ...cueWindow(8), example, ...cueWindow(5), example, silence(6));
   } else if (part.id === 2) {
     files.push(sourceWav('example02.mp3'), silence(6));
   }
@@ -119,6 +146,13 @@ try {
       narrator: 'WL de · Klara',
       female: ['WL de · Emma', 'WL de · Frau Schneider'],
       male: ['WL de · Jonas', 'WL de · Herr Becker'],
+    },
+    acousticCue: {
+      kind: 'WeLearn synthetic descending three-tone exam signal',
+      frequenciesHz: [880, 740, 622],
+      durationSeconds: cueDurationSeconds,
+      cueCount: 28,
+      placement: 'before every scored playback and both Teil 1 example playbacks',
     },
     outputs,
   }, null, 2)}\n`);

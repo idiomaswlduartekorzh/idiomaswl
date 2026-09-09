@@ -12,6 +12,17 @@
       "WL de · Herr Becker"
     ]
   },
+  "acousticCue": {
+    "kind": "WeLearn synthetic descending three-tone exam signal",
+    "frequenciesHz": [
+      880,
+      740,
+      622
+    ],
+    "durationSeconds": 2.1,
+    "cueCount": 28,
+    "placement": "before every scored playback and both Teil 1 example playbacks"
+  },
   "outputs": [
     {
       "file": "public/audio/goethe/a1-1/hoeren-komplett.mp3",

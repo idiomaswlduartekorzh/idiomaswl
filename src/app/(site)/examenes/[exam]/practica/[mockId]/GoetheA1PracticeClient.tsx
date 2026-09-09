@@ -168,7 +168,7 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
         <div className={styles.audioCard}>
           <div>
             <strong>Audio Teil {section.part}</strong>
-            <span>{section.part === 2 ? '1 reproducción' : '2 reproducciones incluidas en la pista'}</span>
+            <span>{section.part === 2 ? '1 reproducción · señal acústica' : '2 reproducciones · señal entre escuchas'}</span>
           </div>
           <AudioPlayer
             src={section.audioUrl}

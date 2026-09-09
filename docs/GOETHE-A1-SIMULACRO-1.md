@@ -23,6 +23,7 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 - Teil 1: 06:56.280, cada texto se escucha dos veces.
 - Teil 2: 02:54.320, cada texto se escucha una vez.
 - Teil 3: 08:17.040, cada texto se escucha dos veces e incluye tres minutos de transferencia.
+- Una señal acústica descendente de tres tonos precede cada reproducción puntuable y las dos reproducciones del ejemplo de Teil 1; en las partes repetidas también marca la segunda escucha.
 - Reactivos: entre 13.60 y 18.00 segundos.
 - Codificación final: MP3, mono, 44.1 kHz, 64 kbps, normalizado a -18 LUFS.
 - Reparto: `WL de · Klara` (locución), `WL de · Emma` y `WL de · Frau Schneider` (voces femeninas), `WL de · Jonas` y `WL de · Herr Becker` (voces masculinas).

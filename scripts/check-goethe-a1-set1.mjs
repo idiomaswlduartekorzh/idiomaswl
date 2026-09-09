@@ -28,6 +28,9 @@ assert.match(source, /minWords:\s*30/, 'open writing target must be about 30 wor
 assert.ok(fs.existsSync(audioManifestPath), 'audio manifest is missing; run generate-goethe-a1-set1-audio.mjs');
 const audioManifest = JSON.parse(fs.readFileSync(audioManifestPath, 'utf8'));
 assert.match(audioManifest.generatedWith, /ElevenLabs v3/, 'production audio must use the approved natural German voices');
+assert.deepEqual(audioManifest.acousticCue?.frequenciesHz, [880, 740, 622], 'expected the descending three-tone exam signal');
+assert.equal(audioManifest.acousticCue?.durationSeconds, 2.1, 'exam signal must last 2.1 seconds');
+assert.equal(audioManifest.acousticCue?.cueCount, 28, 'expected a cue before every scored playback and both repeated example playbacks');
 assert.ok(fs.existsSync(voiceSourceDir), 'natural voice sources are missing');
 assert.equal(fs.readdirSync(voiceSourceDir).filter(name => name.endsWith('.mp3')).length, 28, 'expected 28 natural voice source clips');
 assert.ok(fs.existsSync(imageDir), 'exam illustration directory is missing');
