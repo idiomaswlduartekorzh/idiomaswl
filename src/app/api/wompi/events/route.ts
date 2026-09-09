@@ -5,6 +5,7 @@ import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/se
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { parseAndVerifyWompiTransaction } from '@/lib/wompi/transactions';
 import { WompiConfigurationError } from '@/lib/wompi/validation';
+import { queueXpressPaymentReconciliation, reconcileXpressPayment } from '@/lib/xpress-commerce/payments.server';
 
 export const runtime = 'nodejs';
 
@@ -56,6 +57,19 @@ export async function POST(request: Request): Promise<Response> {
     }
 
     const candidate = event.data.transaction as { reference?: unknown; id?: unknown } | undefined;
+    if (typeof candidate?.reference === 'string' && candidate.reference.startsWith('WX-')) {
+      if (!event.signature.properties.includes('transaction.id') || typeof candidate.id !== 'string') {
+        return json({ received: false, code: 'invalid_xpress_signature' }, 401);
+      }
+      try {
+        const queuedOrderId = await queueXpressPaymentReconciliation(candidate.reference, candidate.id);
+        if (!queuedOrderId) return json({ received: true, ignored: true }, 200);
+        await reconcileXpressPayment(candidate.id);
+        return json({ received: true }, 200);
+      } catch {
+        return json({ received: false, code: 'xpress_payment_not_saved' }, 503);
+      }
+    }
     if (typeof candidate?.reference === 'string' && candidate.reference.startsWith('WC-')) {
       // The checksum must bind the lookup ID. Other fields come from Wompi's API.
       if (!event.signature.properties.includes('transaction.id') || typeof candidate.id !== 'string') {

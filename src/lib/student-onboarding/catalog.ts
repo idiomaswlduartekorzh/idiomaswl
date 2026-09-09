@@ -1,4 +1,5 @@
 import type { XpressOfferId } from '../xpress-commerce/catalog.ts';
+import { LEVELS, selectionPath, type Selection } from '../course-pricing/catalog.ts';
 
 export const STUDENT_PATHS = [
   { id: 'welearn', label: 'Aprender un idioma', description: 'Clases y acompañamiento WeLearn.' },
@@ -32,6 +33,34 @@ export const XPRESS_EXAM_OPTIONS = [
 export type StudentPath = (typeof STUDENT_PATHS)[number]['id'];
 export type WelearnLanguage = (typeof WELEARN_LANGUAGE_OPTIONS)[number]['id'];
 export type XpressExamSlug = (typeof XPRESS_EXAM_OPTIONS)[number]['id'];
+
+const XPRESS_CLASS_OBJECTIVES: Readonly<Record<XpressExamSlug, string>> = {
+  ielts: 'IELTS Academic',
+  toefl: 'TOEFL iBT',
+  sat: 'SAT Reading and Writing',
+  icfes: 'ICFES inglés',
+  'cambridge-b2': 'general',
+  goethe: 'Goethe',
+  'delf-dalf': 'DELF',
+  'cils-celi': 'CILS',
+  topik: 'TOPIK I',
+  'celpe-bras': 'CELPE-Bras',
+};
+
+export function xpressClassSelection(examSlug: XpressExamSlug): Selection {
+  const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === examSlug);
+  if (!exam) throw new Error('unknown_xpress_exam');
+  return {
+    language: exam.language,
+    objective: XPRESS_CLASS_OBJECTIVES[examSlug],
+    plan: 'esencial',
+    level: LEVELS[0],
+  };
+}
+
+export function xpressClassPurchasePath(examSlug: XpressExamSlug): string {
+  return selectionPath(xpressClassSelection(examSlug));
+}
 
 export type RegistrationIntent =
   | Readonly<{ path: 'welearn'; language: WelearnLanguage }>

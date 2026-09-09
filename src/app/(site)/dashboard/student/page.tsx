@@ -5,6 +5,7 @@ import type { RecentExam, DashboardStats } from './StudentDashboardClient'
 import { trackDailyActivity } from '@/lib/actions/trackActivity'
 import { calculateStreak } from '@/lib/utils/streak'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
+import { XPRESS_EXAM_OPTIONS, xpressClassPurchasePath, type XpressExamSlug } from '@/lib/student-onboarding/catalog'
 
 // Korean lessons shown in the dashboard grid (step IDs match /courses/korean/step/[n])
 const KOREAN_STEPS = [
@@ -40,7 +41,7 @@ export default async function StudentDashboardPage() {
   // ── Profile ────────────────────────────────────────────────────────────────
   const { data: profile } = await supabase
     .from('profiles')
-    .select('full_name, role, plan')
+    .select('full_name, role, plan, target_exam')
     .eq('id', user.id)
     .single()
 
@@ -51,6 +52,7 @@ export default async function StudentDashboardPage() {
     'Estudiante'
 
   const plan: StudentPlan = (profile?.plan as StudentPlan) ?? 'autodidacta'
+  const targetExam = XPRESS_EXAM_OPTIONS.find(item => item.id === profile?.target_exam)
 
   // ── Exam stats ─────────────────────────────────────────────────────────────
   const { data: submissions } = await supabase
@@ -127,6 +129,8 @@ export default async function StudentDashboardPage() {
       stats={stats}
       recentExams={recentExams}
       koreanLessons={koreanLessons}
+      targetExamLabel={targetExam?.label ?? null}
+      classPurchasePath={targetExam ? xpressClassPurchasePath(targetExam.id as XpressExamSlug) : '/precios'}
     />
   )
 }

@@ -50,6 +50,8 @@ interface Props {
   stats?: DashboardStats
   recentExams?: RecentExam[]
   koreanLessons?: KoreanLesson[]
+  targetExamLabel?: string | null
+  classPurchasePath?: string
 }
 
 /* ── SVG icon map ───────────────────────────────────────────────────────────── */
@@ -180,6 +182,7 @@ const NAV: { group: string; items: { label: string; href: string; icon: ReactNod
       { label: 'Inicio',          href: '/dashboard/student', icon: IC.grid,        active: true  },
       { label: 'Mis exámenes',    href: '/examenes',          icon: IC.clipboard,   active: false },
       { label: 'Mi progreso',     href: '/dashboard/student/progreso', icon: IC.trendingUp, active: false },
+      { label: 'Mi suscripción',  href: '/suscripcion/examenes', icon: IC.award, active: false },
     ],
   },
   {
@@ -391,7 +394,7 @@ function getWeeklyChallenge(): Challenge {
 }
 
 /* ── Component ─────────────────────────────────────────────────────────────── */
-export default function StudentDashboardClient({ name, plan, streak, stats, recentExams, koreanLessons }: Props) {
+export default function StudentDashboardClient({ name, plan, streak, stats, recentExams, koreanLessons, targetExamLabel, classPurchasePath = '/precios' }: Props) {
   const [sideOpen, setSideOpen] = useState(false)
   const [challengeAnswer, setChallengeAnswer] = useState<number | null>(null)
   const initial = name[0]?.toUpperCase() ?? 'E'
@@ -658,6 +661,16 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
 
             {/* RIGHT COLUMN */}
             <div className="std-col-side">
+
+              <div className="std-widget" style={{ background: 'linear-gradient(135deg, #14215c 0%, #263b98 100%)', border: 'none' }}>
+                <p style={{ fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#ffadb5', margin: '0 0 7px' }}>Tu preparación{targetExamLabel ? ` · ${targetExamLabel}` : ''}</p>
+                <p style={{ fontSize: 17, fontWeight: 800, color: '#fff', margin: '0 0 8px' }}>Membresía y clases</p>
+                <p style={{ fontSize: 12, color: 'rgba(255,255,255,.75)', lineHeight: 1.55, margin: '0 0 14px' }}>Gestiona tu pase de simulacros o añade clases con un docente.</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  <Link href="/suscripcion/examenes" style={{ background: '#d95764', color: '#fff', padding: '8px 11px', borderRadius: 8, fontSize: 12, fontWeight: 700, textDecoration: 'none' }}>Mi suscripción</Link>
+                  <Link href={classPurchasePath} style={{ background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.25)', color: '#fff', padding: '8px 11px', borderRadius: 8, fontSize: 12, fontWeight: 700, textDecoration: 'none' }}>Comprar clases</Link>
+                </div>
+              </div>
 
               {/* Tip del día */}
               <div className="std-widget std-tip-widget">

@@ -10,7 +10,10 @@ import {
   parseRegistrationIntent,
   registrationCompletionPath,
   registrationIntentMetadata,
+  xpressClassPurchasePath,
 } from '../src/lib/student-onboarding/catalog.ts';
+import { parseXpressOrderInput, parseXpressProviderPayment } from '../src/lib/xpress-commerce/payment.ts';
+import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
 
 test('publishes the two exam memberships in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
@@ -18,6 +21,32 @@ test('publishes the two exam memberships in COP cents', () => {
     ['exam-teacher', 9_900_000],
   ]);
   assert.equal(XPRESS_OFFERS[1].teacherFeedbackTargetHours, 24);
+});
+
+test('opens the existing class checkout with the exam objective preselected', () => {
+  assert.equal(
+    xpressClassPurchasePath('toefl'),
+    '/precios?idioma=ingles&objetivo=TOEFL+iBT&plan=esencial&nivel=No+s%C3%A9+mi+nivel',
+  );
+  assert.match(xpressClassPurchasePath('topik'), /idioma=coreano/);
+  assert.match(xpressClassPurchasePath('topik'), /objetivo=TOPIK\+I/);
+});
+
+test('accepts only versioned Xpress orders and strict Wompi transactions', () => {
+  const input = {
+    idempotencyKey: '12345678-1234-4234-8234-123456789012',
+    examSlug: 'ielts',
+    offerId: 'exam-auto',
+    acceptedTerms: XPRESS_TERMS_VERSION,
+    acceptedPrivacy: XPRESS_PRIVACY_VERSION,
+  };
+  assert.deepEqual(parseXpressOrderInput(input), input);
+  assert.equal(parseXpressOrderInput({ ...input, offerId: 'inventado' }), null);
+  assert.equal(parseXpressOrderInput({ ...input, acceptedTerms: 'viejos' }), null);
+  const payment = { id: 'transaction-1', reference: 'WX-12345678-1234-4234-8234-123456789012', amount_in_cents: 4_900_000, currency: 'COP', status: 'APPROVED' };
+  assert.deepEqual(parseXpressProviderPayment(payment), payment);
+  assert.equal(parseXpressProviderPayment({ ...payment, reference: 'WC-12345678-1234-4234-8234-123456789012' }), null);
+  assert.equal(parseXpressProviderPayment({ ...payment, amount_in_cents: 49.5 }), null);
 });
 
 test('an active membership cannot charge twice for the same exam', () => {

@@ -25,8 +25,8 @@ export function parseProviderPayment(value: unknown): ProviderPayment | null {
   return {id:p.id,reference:p.reference,amount_in_cents:p.amount_in_cents,currency:p.currency,status:p.status};
 }
 export function safeCourseReturnPath(value: string | null) {
-  if (!value || !value.startsWith('/precios') && !value.startsWith('/inscripcion')) return '/dashboard';
-  try { const u=new URL(value,'https://www.idiomaswl.com'); return u.origin==='https://www.idiomaswl.com' && ['/precios','/inscripcion'].includes(u.pathname) ? u.pathname+u.search : '/dashboard'; } catch { return '/dashboard'; }
+  if (!value || !value.startsWith('/precios') && !value.startsWith('/inscripcion') && !value.startsWith('/suscripcion/examenes')) return '/dashboard';
+  try { const u=new URL(value,'https://www.idiomaswl.com'); return u.origin==='https://www.idiomaswl.com' && ['/precios','/inscripcion','/suscripcion/examenes'].includes(u.pathname) ? u.pathname+u.search : '/dashboard'; } catch { return '/dashboard'; }
 }
 export function isCourseRequestOrigin(originHeader:string|null,host:string|null,environment?:string) {
   try {

@@ -110,7 +110,8 @@ export default function AuthForm({ mode }: { mode: Mode }) {
         setLoading(false);
         return;
       }
-      const completionPath = registrationCompletionPath(intent, returnPath());
+      const requestedReturn = new URLSearchParams(window.location.search).get('next');
+      const completionPath = registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : intent.path === 'exam' ? '/suscripcion/examenes' : '/dashboard');
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -138,7 +139,10 @@ export default function AuthForm({ mode }: { mode: Mode }) {
       setError('Elige qué quieres hacer y completa esa selección.');
       return;
     }
-    const next = intent ? registrationCompletionPath(intent, returnPath()) : returnPath();
+    const requestedReturn = new URLSearchParams(window.location.search).get('next');
+    const next = intent
+      ? registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : intent.path === 'exam' ? '/suscripcion/examenes' : '/dashboard')
+      : returnPath();
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
