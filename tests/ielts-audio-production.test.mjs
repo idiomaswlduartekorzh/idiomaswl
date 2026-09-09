@@ -9,6 +9,7 @@ const manifest = JSON.parse(readFileSync('config/ielts-audio/production-manifest
 const casting = JSON.parse(readFileSync('config/ielts-audio/voice-casting.json', 'utf8'));
 const batchApproval = JSON.parse(readFileSync('config/ielts-audio/batch-quality-approval.json', 'utf8'));
 const legacyDecision = JSON.parse(readFileSync('config/ielts-audio/legacy-audio-audit-decision.json', 'utf8'));
+const independentReview = JSON.parse(readFileSync('config/ielts-audio/legacy-audio-independent-review.json', 'utf8'));
 
 test('production scope preserves reusable audio and queues only known missing or mismatched sets', () => {
   assert.deepEqual(manifest.rows.filter(row => row.action === 'AUDIT_BEFORE_REUSE').map(row => row.set), [1, 5, 6, 7, 8, 9, 10, 11, 12]);
@@ -82,6 +83,19 @@ test('legacy replacement decision is hash-bound and cannot authorize release', (
   assert.deepEqual(legacyDecision.sets.map(row => row.set), [5, 6, 7, 8, 10, 11, 12]);
   assert.ok(legacyDecision.sets.every(row => row.recommendation === 'REPLACE' && row.severity === 'HIGH'));
   assert.equal(legacyDecision.releaseAuthorized, false);
+});
+
+test('independent legacy review covers non-completion keys and current audio hashes', () => {
+  const { reviewSha256, ...core } = independentReview;
+  assert.equal(createHash('sha256').update(JSON.stringify(core)).digest('hex'), reviewSha256);
+  assert.equal(independentReview.productionManifestSha256, manifest.manifestSha256);
+  assert.deepEqual(independentReview.audioHashes,
+    Object.fromEntries(legacyDecision.sets.map(row => [row.set, row.audioSha256])));
+  assert.equal(independentReview.semanticReview.correctAnswerPointsSupportedByTranscript, 49);
+  assert.equal(independentReview.semanticReview.distractorsDismissible, 91);
+  assert.equal(independentReview.semanticReview.ambiguousKeys, 0);
+  assert.equal(independentReview.conclusion, 'REPLACE_ALL_SEVEN_MASTERS');
+  assert.equal(independentReview.releaseAuthorized, false);
 });
 
 test('Flash text normalization makes numbers, phones, currency and spelling explicit', () => {

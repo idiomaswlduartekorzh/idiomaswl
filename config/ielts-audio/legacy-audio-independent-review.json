@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "status": "COMPLETE",
+  "generatedAt": "2026-09-09T01:24:00.000Z",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "audioHashes": {
+    "5": "2e8bdbcb3e039a126cf9cc4217419400f7c776fc794c142b675e1a8834d748b1",
+    "6": "0d77c961a13d9bb15c5e08a6ff3bad963e1b03faa2af6e6dff1c7d8b46c8b999",
+    "7": "cd28eaf245c0d3c36161f79d5c07e83f174c6f71c1d89b8a597a2cd5ba9deb30",
+    "8": "74b1959ca0a8f3ed63a1f272cd5ecd01a673abdf339add92f50a39f59848a964",
+    "10": "48c215c1e9907887e411d411fbc84edac4a1f93dd9f765b5720b0fce2bff8fd6",
+    "11": "ad214fe5e15c0827064bc14169ffdc4434443042c68ebbc5a9b06d6cf206eca9",
+    "12": "cdf589ad5d524b4ab02b0794e014c9e7b28e7b3b50789b0ab7e0eeee4756be68"
+  },
+  "semanticReview": {
+    "objectiveRowsReviewed": 42,
+    "pointsReviewed": 49,
+    "correctAnswerPointsSupportedByTranscript": 49,
+    "distractorsReviewed": 91,
+    "distractorsDismissible": 91,
+    "ambiguousKeys": 0,
+    "rowsWithDecisiveAsrEvidence": 41,
+    "pointsWithDecisiveAsrEvidence": 48,
+    "spotChecks": [
+      {
+        "set": 10,
+        "question": 21,
+        "expectedAnswer": "community library",
+        "approximateStartSeconds": 858.5,
+        "reason": "The transcript is decisive, but the ASR omitted most of the opening phrase and retained only 'books'."
+      }
+    ],
+    "notes": [
+      "Sets 7, 8, 10 and 12 contain some distractors that are never mentioned; this reduces difficulty without creating answer ambiguity.",
+      "Set 8 Q22 has a plausible distractor, but the tutor explicitly identifies the unrepresentative sample.",
+      "Set 12 Q22 distinguishes slow image processing from price and weight comparisons."
+    ]
+  },
+  "technicalReview": {
+    "completeDecodes": 7,
+    "clippedFiles": 0,
+    "repeatedLongPausePatternPerFile": 16,
+    "transitionRisk": {
+      "highest": [
+        6,
+        10
+      ],
+      "lowest": [
+        7
+      ]
+    },
+    "sampleJumpsAbovePointFive": {
+      "5": 258,
+      "6": 1097,
+      "7": 0,
+      "8": 16,
+      "10": 1132,
+      "11": 5,
+      "12": 18
+    },
+    "notes": [
+      "No hard terminal cut or conclusive click at a silence-to-speech join was detected.",
+      "Strong transients occur within signal passages, especially in Sets 6 and 10, and require listening if any clip is rescued.",
+      "Any rescued clip should be assembled losslessly and encoded only once in the final master."
+    ]
+  },
+  "conclusion": "REPLACE_ALL_SEVEN_MASTERS",
+  "releaseAuthorized": false,
+  "reviewSha256": "5d8c5b0518ccab1b04120908ff68e7e0fa42fa71f43fc06804ecdf1bf824178d"
+}
