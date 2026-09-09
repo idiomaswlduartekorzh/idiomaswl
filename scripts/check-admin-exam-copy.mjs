@@ -4,7 +4,8 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const primaryAdmins = ['welearninstitute@gmail.com', 'zhanna.duarte@mail.ru']
+const primaryAdmins = ['david.duartes182@gmail.com', 'zhanna.duarte@mail.ru']
+const studentOnlyAccounts = ['welearninstitute@gmail.com']
 
 function read(relativePath) {
   return fs.readFileSync(path.join(root, relativePath), 'utf8')
@@ -18,7 +19,12 @@ for (const email of primaryAdmins) {
   assert.match(adminRegistry, new RegExp(email.replace('.', '\\.'), 'i'), `${email} must be in the server admin registry`)
 }
 
-assert.match(adminRoute, /JOSE_EMAILS[\s\S]*JoseDashboardServer/, 'full admins must receive the owner dashboard')
+for (const email of studentOnlyAccounts) {
+  assert.doesNotMatch(adminRegistry, new RegExp(email.replace('.', '\\.'), 'i'), `${email} must not be in the server admin registry`)
+}
+
+assert.match(adminRoute, /isJoseAdminEmail\(user\?\.email\)[\s\S]*JoseDashboardServer/, 'Jose admins must receive the owner dashboard')
+assert.match(adminRoute, /isZhannaAdminEmail\(user\?\.email\)[\s\S]*ZhannaDashboardServer/, 'Zhanna admins must receive the owner dashboard')
 assert.match(ownerDashboard, /await requireAdmin\(\)/, 'the owner dashboard must re-authorize on the server')
 assert.match(ownerDashboard, /createAdminClient\(\)/, 'the owner dashboard must not depend on profile-role RLS')
 
@@ -60,4 +66,4 @@ assert.match(auditRoute, /private, no-store/, 'the batch audit endpoint must nev
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /scoreIeltsObjectiveAnswers/, 'the audit must recalculate objective answers from the canonical key')
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /IELTS_SPEAKING_BUCKET/, 'the audit must verify private speaking audio')
 
-console.log('✓ Las dos cuentas principales tienen acceso completo y la experiencia de exámenes usa lenguaje académico neutral.')
+console.log('✓ Las cuentas administrativas están aisladas de las cuentas estudiantiles y la experiencia de exámenes usa lenguaje académico neutral.')
