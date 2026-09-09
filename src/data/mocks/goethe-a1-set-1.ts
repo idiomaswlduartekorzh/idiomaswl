@@ -1,4 +1,4 @@
-import audioScript from './goethe-a1-set-1-audio.json';
+import audioScript from './goethe-a1-set-1-audio.json' with { type: 'json' };
 import type { MockExam } from './types';
 
 const transcriptFor = (partId: number) => {
