@@ -170,6 +170,7 @@
     "audit:ielts-generated-audio": "node scripts/audit-ielts-generated-audio.mjs",
     "audit:ielts-staged-audio": "node --experimental-strip-types --no-warnings scripts/audit-ielts-staged-audio.mjs",
     "report:ielts-audio-status": "node --experimental-strip-types --no-warnings scripts/report-ielts-audio-production-status.mjs",
+    "report:ielts-legacy-audit": "node --experimental-strip-types --no-warnings scripts/build-ielts-legacy-audit-report.mjs",
     "scaffold:ielts-audio-human-review": "node --experimental-strip-types --no-warnings scripts/scaffold-ielts-audio-human-review.mjs",
     "audit:ielts-audio-timing": "node scripts/audit-ielts-audio-timing.mjs",
     "publish:ielts-audio": "node scripts/publish-ielts-audio.mjs",
@@ -177,6 +178,7 @@
     "test:ielts-audio-production": "node --experimental-strip-types --no-warnings --test tests/ielts-audio-production.test.mjs tests/ielts-audio-timing.test.mjs",
     "check:ielts-audio-production": "npm run plan:ielts-audio && npm run test:ielts-audio-production",
     "audit:ielts-existing-audio": "node --experimental-strip-types --no-warnings scripts/audit-ielts-existing-audio.mjs",
+    "audit:ielts-legacy-batch": "node --experimental-strip-types --no-warnings scripts/audit-ielts-legacy-batch.mjs",
     "transcribe:ielts-existing-audio": "node --experimental-strip-types --no-warnings scripts/transcribe-ielts-existing-audio.mjs"
   },
   "dependencies": {

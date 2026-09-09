@@ -8,6 +8,7 @@ import { buildInvoice, integerToEnglish, reviewPaddingPlan, ttsText } from '../s
 const manifest = JSON.parse(readFileSync('config/ielts-audio/production-manifest.json', 'utf8'));
 const casting = JSON.parse(readFileSync('config/ielts-audio/voice-casting.json', 'utf8'));
 const batchApproval = JSON.parse(readFileSync('config/ielts-audio/batch-quality-approval.json', 'utf8'));
+const legacyDecision = JSON.parse(readFileSync('config/ielts-audio/legacy-audio-audit-decision.json', 'utf8'));
 
 test('production scope preserves reusable audio and queues only known missing or mismatched sets', () => {
   assert.deepEqual(manifest.rows.filter(row => row.action === 'AUDIT_BEFORE_REUSE').map(row => row.set), [1, 5, 6, 7, 8, 9, 10, 11, 12]);
@@ -62,6 +63,25 @@ test('owner batch-quality approval is hash-bound and excludes legacy audio', () 
   assert.deepEqual(batchApproval.excludedLegacySets, [5, 6, 7, 8, 10, 11, 12]);
   assert.equal(batchApproval.files.length, 13);
   assert.equal(batchApproval.releaseAuthorized, false);
+});
+
+test('legacy reuse candidates stay blocked until their scripts meet production length', () => {
+  const legacyRows = manifest.rows.filter(row => [5, 6, 7, 8, 10, 11, 12].includes(row.set));
+  assert.equal(legacyRows.length, 7);
+  assert.ok(legacyRows.every(row => row.action === 'AUDIT_BEFORE_REUSE'));
+  assert.ok(legacyRows.every(row => row.scriptAudit.status === 'FAIL'));
+  assert.ok(legacyRows.every(row => row.scriptAudit.totalWords < 2800));
+  assert.ok(legacyRows.every(row => row.scriptAudit.partWords.every(part => part.words < 680)));
+  assert.ok(legacyRows.every(row => row.scriptAudit.completionSupport.every(item => item.foundInOrder === true)));
+});
+
+test('legacy replacement decision is hash-bound and cannot authorize release', () => {
+  const { decisionSha256, ...core } = legacyDecision;
+  assert.equal(createHash('sha256').update(JSON.stringify(core)).digest('hex'), decisionSha256);
+  assert.equal(legacyDecision.productionManifestSha256, manifest.manifestSha256);
+  assert.deepEqual(legacyDecision.sets.map(row => row.set), [5, 6, 7, 8, 10, 11, 12]);
+  assert.ok(legacyDecision.sets.every(row => row.recommendation === 'REPLACE' && row.severity === 'HIGH'));
+  assert.equal(legacyDecision.releaseAuthorized, false);
 });
 
 test('Flash text normalization makes numbers, phones, currency and spelling explicit', () => {
