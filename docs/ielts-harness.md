@@ -4,6 +4,13 @@ La producción y conservación de audio se controlan por separado en [Producció
 
 El harness convierte el inventario de los 20 sets en un proceso de release reproducible. Separa las comprobaciones automáticas de la aprobación académica: un archivo existente, una coincidencia léxica o una clave que coincide consigo misma nunca hacen que un set quede listo.
 
+Estado productivo: Sets 1–20 están `RELEASE_READY` y desplegados desde `main` en
+`1e151ba29f604c043e7e0ae8eb5f88236785615e` mediante el deployment Vercel
+`Bqc8EfzzfBJTdvk3pDkmDNiHBnak`. El smoke del 12 de septiembre de 2026 confirmó el
+hub, los 20 runners, los 20 MP3 y las regresiones públicas. La expansión 21–40 se rige
+por [el blueprint de fábrica](./ielts-mock-factory-blueprint.md) y permanece sin
+autorización de consumo de ElevenLabs.
+
 ## Estados
 
 | Estado | Significado |
