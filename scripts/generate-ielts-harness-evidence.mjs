@@ -36,6 +36,14 @@ const speakingFile = path.join(root, 'config/ielts-harness/speaking-semantic-rev
 const writingReview = readJson(writingFile);
 const speakingReview = readJson(speakingFile);
 const publications = loadVerifiedIeltsAudioPublications(root).publicationBySet;
+const finalApprovalFile = path.join(root, 'config/ielts-harness/final-release-approval.json');
+const finalApproval = fs.existsSync(finalApprovalFile) ? readJson(finalApprovalFile) : null;
+if (finalApproval) {
+  const { receiptSha256, ...approvalCore } = finalApproval;
+  assert.equal(hash(JSON.stringify(approvalCore)), receiptSha256, 'Final release approval receipt digest is stale');
+  assert.equal(finalApproval.status, 'APPROVED');
+  assert.equal(finalApproval.reviewer?.kind, 'human');
+}
 
 const technicalCore = {
   schemaVersion: 1,
@@ -291,7 +299,13 @@ for (const material of inventory.sets) {
     reviewer: { kind: 'human', id: 'owner-reviewed-set1-key' },
     reviewedAt: '2026-09-04',
   };
-  scaffold.releaseApproval = { status: 'PENDING', releaseFingerprintSha256: scaffold.generatedFrom.releaseFingerprintSha256,
+  const finalApprovalRow = finalApproval?.sets?.find(row => row.set === set
+    && row.releaseFingerprintSha256 === scaffold.generatedFrom.releaseFingerprintSha256);
+  scaffold.releaseApproval = finalApprovalRow ? {
+    status: 'APPROVED', releaseFingerprintSha256: finalApprovalRow.releaseFingerprintSha256,
+    reviewer: finalApproval.reviewer, reviewedAt: finalApproval.approvedAt,
+    evidencePath: relative(finalApprovalFile), evidenceSha256: fileSha(finalApprovalFile),
+  } : { status: 'PENDING', releaseFingerprintSha256: scaffold.generatedFrom.releaseFingerprintSha256,
     reviewer: { kind: 'human', id: '' }, reviewedAt: '' };
   const evidenceFile = path.join(evidenceDirectory, `set-${set}.json`);
   fs.writeFileSync(evidenceFile, `${JSON.stringify(scaffold, null, 2)}\n`);

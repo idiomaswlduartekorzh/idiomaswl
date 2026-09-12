@@ -87,6 +87,25 @@ function verifyEvidenceFile(root, approval) {
   return sha256(fs.readFileSync(candidate)) === approval.evidenceSha256;
 }
 
+function verifyFinalReleaseApprovalEvidence(root, approval, set, fingerprint) {
+  if (!verifyEvidenceFile(root, approval)) return false;
+  try {
+    const receipt = JSON.parse(fs.readFileSync(path.resolve(root, approval.evidencePath), 'utf8'));
+    const { receiptSha256, ...core } = receipt;
+    const row = receipt.sets?.find(candidate => candidate.set === set);
+    return receipt.schemaVersion === 1
+      && receipt.status === 'APPROVED'
+      && sha256(JSON.stringify(core)) === receiptSha256
+      && isIndependentHuman(receipt.reviewer)
+      && receipt.reviewer.kind === approval.reviewer.kind
+      && receipt.reviewer.id === approval.reviewer.id
+      && receipt.approvedAt === approval.reviewedAt
+      && row?.releaseFingerprintSha256 === fingerprint;
+  } catch {
+    return false;
+  }
+}
+
 function verifyMachineAlignmentEvidence(root, alignment, expected) {
   if (!verifyEvidenceFile(root, alignment)) return false;
   try {
@@ -326,7 +345,8 @@ export function evaluateSet(material, record, root, audioPublication = null) {
     record.releaseApproval?.status === 'APPROVED'
     && isIndependentHuman(record.releaseApproval.reviewer)
     && reviewed(record.releaseApproval)
-    && record.releaseApproval.releaseFingerprintSha256 === fingerprint,
+    && record.releaseApproval.releaseFingerprintSha256 === fingerprint
+    && verifyFinalReleaseApprovalEvidence(root, record.releaseApproval, material.set, fingerprint)
   );
   let state;
   if (missingAudio || (!publishedHashVerified && record.knownAudioStatus === 'MISSING')) state = 'BLOCKED_ASSET';

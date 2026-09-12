@@ -121,6 +121,29 @@ function completeRecord(root, current = material()) {
   };
 }
 
+function approveFinal(root, current, record) {
+  const reviewer = human('academic-reviewer');
+  const approvedAt = '2026-09-04T12:00:00.000Z';
+  const core = {
+    schemaVersion: 1,
+    status: 'APPROVED',
+    approvedAt,
+    reviewer,
+    statement: 'I approve this current release fingerprint for student use.',
+    sets: [{ set: 1, releaseFingerprintSha256: releaseFingerprint(current) }],
+  };
+  const receipt = Buffer.from(`${JSON.stringify({ ...core, receiptSha256: sha256(JSON.stringify(core)) })}\n`);
+  fs.writeFileSync(path.join(root, 'final-approval.json'), receipt);
+  record.releaseApproval = {
+    status: 'APPROVED',
+    releaseFingerprintSha256: releaseFingerprint(current),
+    reviewer,
+    reviewedAt: approvedAt,
+    evidencePath: 'final-approval.json',
+    evidenceSha256: sha256(receipt),
+  };
+}
+
 test('complete fresh evidence stops at final human release review', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
   try {
@@ -138,10 +161,24 @@ test('final independent approval over the current fingerprint releases the set',
   try {
     const current = material();
     const record = completeRecord(root, current);
-    record.releaseApproval.status = 'APPROVED';
+    approveFinal(root, current, record);
     const result = evaluateSet(current, record, root);
     assert.equal(result.state, 'RELEASE_READY');
     assert.equal(result.releaseReady, true);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('an APPROVED label without a hash-bound human receipt cannot release a set', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
+  try {
+    const current = material();
+    const record = completeRecord(root, current);
+    record.releaseApproval.status = 'APPROVED';
+    const result = evaluateSet(current, record, root);
+    assert.equal(result.state, 'READY_FOR_HUMAN_REVIEW');
+    assert.equal(result.releaseReady, false);
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
