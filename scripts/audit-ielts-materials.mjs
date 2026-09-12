@@ -21,8 +21,21 @@ for (const key of Object.keys(args)) {
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const words = whitespaceWords;
 const commandPath = command => {
-  try { return execFileSync('/usr/bin/which', [command], { encoding: 'utf8' }).trim(); }
+  try { return execFileSync('/usr/bin/which', [command], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); }
   catch { return null; }
+};
+const resolveBaseCommit = () => {
+  const deploymentCommit = process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.GITHUB_SHA;
+  if (deploymentCommit?.trim()) return deploymentCommit.trim();
+  try {
+    return execFileSync('git', ['rev-parse', 'HEAD'], {
+      cwd: root,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+  } catch {
+    return 'unavailable';
+  }
 };
 const ffprobePath = commandPath('ffprobe');
 const ffmpegPath = commandPath('ffmpeg');
@@ -201,7 +214,7 @@ for (let n = 1; n <= 20; n++) {
     academicApproval: n === 1 ? 'PINNED_OBJECTIVE_KEY_ONLY' : 'NOT_AUDITED',
   });
 }
-const result = { generatedAt: new Date().toISOString(), baseCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
+const result = { generatedAt: new Date().toISOString(), baseCommit: resolveBaseCommit(),
   scope: '20 IELTS Academic mocks; structural/media inventory and lexical screening, not full audio or academic approval',
   readingFormatSource: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading', sets };
 if (args.output) fs.writeFileSync(path.resolve(args.output), JSON.stringify(result, null, 2) + '\n');
