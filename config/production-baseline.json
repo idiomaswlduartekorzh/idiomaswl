@@ -246,7 +246,7 @@
   ],
   "smokeRoutes": [
     { "path": "/", "marker": "WeLearn" },
-    { "path": "/precios", "marker": "Un plan. Cualquier idioma." },
+    { "path": "/precios", "marker": "Elige qué quieres aprender y cuántas veces por semana." },
     { "path": "/practica/ingles/a2/escucha", "marker": "Escucha" },
     { "path": "/practica/japones/b1/lectura", "marker": "Lectura" },
     { "path": "/practica/coreano/a2/habla/acompanada", "marker": "acompañada" },
@@ -254,7 +254,7 @@
     { "path": "/podcasts", "marker": "Estrategia que se escucha." },
     { "path": "/practica/ideas-avanzadas", "marker": "Ideas that refuse a quick answer." },
     { "path": "/practica/ideas-avanzadas/efecto-encuadre", "marker": "The framing effect" },
-    { "path": "/practica/ideas-avanzadas/dunning-kruger-sin-la-curva", "marker": "Calibration, competence and the graph that escaped the lab" },
+    { "path": "/practica/ideas-avanzadas/dunning-kruger-sin-la-curva", "marker": "Confidence, competence and the graph that escaped the lab" },
     { "path": "/practica/ielts", "marker": "IELTS" },
     { "path": "/practica/icfes-saber-11", "marker": "ICFES" },
     { "path": "/nivel-radar", "marker": "nivel" },
