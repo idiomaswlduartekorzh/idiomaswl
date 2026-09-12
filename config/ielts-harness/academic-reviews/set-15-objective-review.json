@@ -1,0 +1,3555 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 15,
+  "mockId": "set-15",
+  "contentVersionAtReview": "ielts-set-15-v2",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "644988dd4d7b0f3333fe870897d5e7ee78f398d7e12d9504fc7f3ede08646d4f",
+    "listeningMaterialSha256": "62b6b2f802ac4e4d6b681db74ae4b6fc6ae1848efe4a9bd5650ab13907c09be8",
+    "readingMaterialSha256": "9273517a02d74734cab3e085b064fd692211a0175113d0fd849e862e214bc60f",
+    "objectiveMaterialSha256": "b438020c529de6d7ac5e9ac56e3ddd6257e834b38ccac7ff304585d8bf0b98f7"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Hartley"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "retirement"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "September"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "45"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "Maple"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "vegetarian"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "3"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "coffee"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "35",
+        "£35"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "cake"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the debating society",
+        "B": "B. the photography club",
+        "C": "C. the mountaineering club",
+        "D": "D. the chess club",
+        "E": "E. the drama society"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "registration"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "15",
+        "£15"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "welcome pack",
+        "pack"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "two weeks",
+        "2 weeks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "quiz night"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "main hall",
+        "hall"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "noticeboard",
+        "notice board"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "student card",
+        "card"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "how different teaching methods compare",
+        "how much time students spend on homework",
+        "which subjects students find most difficult"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the whole school",
+        "Year 9 only",
+        "a mixture of year groups"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "paper questionnaires",
+        "face-to-face interviews",
+        "an online form"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "exaggerate how much homework they do",
+        "refuse to take part",
+        "misunderstand the questions"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "short",
+        "anonymous",
+        "completed in class"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "pilot"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "code"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "patterns",
+        "pattern"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "findings"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "present"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "polyps",
+        "polyp"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "food"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "colour",
+        "color"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "temperature"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "weeks",
+        "week"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "white"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "stress"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "acidity"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "coastlines",
+        "coastline"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "nurseries",
+        "nursery"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "ninety"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "hippocampus"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "amygdala"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "ghrelin"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "epidemic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "sleep hygiene"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "fifty"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "peacetime"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "informal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "infrastructure"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "public transport"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "equitable"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The world does not produce enough food to feed its total population.",
+        "Problems of distribution, access, and poverty rather than total production capacity.",
+        "Climate change has already reduced global food production below safe levels.",
+        "Population growth is outpacing all efforts to increase agricultural output."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "North America and Europe, where industrial farming systems are most vulnerable.",
+        "East Asia and Australia, where high temperatures already reduce yields significantly.",
+        "Sub-Saharan Africa and South Asia, which are already vulnerable to food insecurity.",
+        "South America and Southeast Asia, due to intense rainfall and flooding."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Agriculture is the sole driver of greenhouse gas emissions globally.",
+        "Only livestock farming creates a significant carbon footprint.",
+        "Feeding the global population and reducing agricultural emissions is a genuine dilemma.",
+        "High-income countries have successfully decarbonised their food systems."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Encouraging consumers in high-income countries to stop eating animal products.",
+        "Reducing landfill capacity to prevent the disposal of wasted food.",
+        "Precision agriculture that optimises water, fertiliser, and pesticide use.",
+        "Relocating food production from vulnerable regions to stable ones."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "economic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "climate change"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "World Food"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "social protection"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Hartley"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: Yes, it's Hartley — that's H-A-R-T-L-E-Y.",
+      "sourceExcerptSha256": "fb828b27f2de91dbbfff002714f96f288dc2804b96f822906256f56513069691",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Hartley",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Hartley",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "retirement"
+      ],
+      "questionPrompt": "Type of event: {{2}} party",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: No, nothing like that. It's a retirement party for my father — he's finishing work after forty years.",
+      "sourceExcerptSha256": "7f56b9da507a42c4f03a0ae28aa2c22d651d62c3486548d4465377ae735460de",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "retirement",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "retirement",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "September"
+      ],
+      "questionPrompt": "Date: Saturday 14 {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: It's on Saturday the fourteenth of September.",
+      "sourceExcerptSha256": "6a80b045a27a722e0e977fa93c0aa62f459e284db8dc2e5d4c035954c9d1553b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "September",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "September",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "45"
+      ],
+      "questionPrompt": "Number of guests: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: Well, I first thought around 50, but a few people can't come now, so let's say 45.",
+      "sourceExcerptSha256": "027b76dc57f2b5152204533aadfdae072972ff0eb568d7e10fc9a0cb2c3c3d4d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "45",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "45",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Maple"
+      ],
+      "questionPrompt": "Venue: the {{5}} Hall",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: Yes, we've hired the Maple Hall on the high street.",
+      "sourceExcerptSha256": "afd4302e5c54b123a0ea7b9b6ddbbc951490e604e17eb0940ac6a8f838d9fa00",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Maple",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Maple",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vegetarian"
+      ],
+      "questionPrompt": "Dietary requirement: some {{6}} options needed",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "CUSTOMER: Yes — several of the guests don't eat meat, so we'll need some vegetarian options.",
+      "sourceExcerptSha256": "2d6281529759f8758b67c4d32ba3ea04cd62eb8ec59f242f838e57f9b606b18a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vegetarian",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vegetarian",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3"
+      ],
+      "questionPrompt": "Classic | {{7}} | £22 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "AGENT: No problem; we cater for that regularly. Now, let me describe our menus. Our Classic menu offers 3 dishes per person and costs £22 a head, and it includes freshly brewed coffee at the end of the meal.",
+      "sourceExcerptSha256": "2cc304cd409fc7fd5afa43ca2e2e96751deedcdbc133e770bf5aed3850a2b3df",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "3",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "coffee"
+      ],
+      "questionPrompt": "Classic | {{7}} | £22 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "AGENT: No problem; we cater for that regularly. Now, let me describe our menus. Our Classic menu offers 3 dishes per person and costs £22 a head, and it includes freshly brewed coffee at the end of the meal.",
+      "sourceExcerptSha256": "2cc304cd409fc7fd5afa43ca2e2e96751deedcdbc133e770bf5aed3850a2b3df",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "coffee",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "coffee",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "35",
+        "£35"
+      ],
+      "questionPrompt": "Deluxe | 5 dishes | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "AGENT: The Deluxe menu has 5 dishes and works out at £35 per person. With that one, we also provide a celebration cake, which would suit a retirement party nicely.",
+      "sourceExcerptSha256": "a3b87b718e0f714ea750fd18b922fb256b2d9b7a82e07c528f39c21cbe1ad624",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "35",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "35",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£35",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cake"
+      ],
+      "questionPrompt": "Deluxe | 5 dishes | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Ordering from a Catering Firm",
+      "sourceExcerpt": "AGENT: The Deluxe menu has 5 dishes and works out at £35 per person. With that one, we also provide a celebration cake, which would suit a retirement party nicely.",
+      "sourceExcerptSha256": "a3b87b718e0f714ea750fd18b922fb256b2d9b7a82e07c528f39c21cbe1ad624",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cake",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cake",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO clubs currently have places available to join immediately?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "We currently run more than sixty clubs, and I'll highlight a few of the most popular. The debating society is one of our largest, and I'm pleased to say it still has plenty of places available, so you can sign up today. The photography club, sadly, filled up within a week, so it's closed for now. If mountaineering appeals to you, do put your name down, but be aware there's a waiting list at the moment. The chess club, on the other hand, has spaces free and would love more beginners. And the drama society is thriving, though you'll need to attend an audition before you can join.",
+      "sourceExcerptSha256": "554e7b6b5d1c01e81f0926e862720f2b9e99edb679d1221c2a6502e21be34154",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the debating society"
+        },
+        {
+          "key": "D",
+          "text": "the chess club"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the photography club",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the mountaineering club",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the drama society",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "registration"
+      ],
+      "questionPrompt": "• Add your name to the sheet at the {{13}} desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "Now, how do you actually join? For most clubs, you simply add your name to the sheet at the registration desk, which is just behind me near the entrance. Membership isn't expensive — the annual fee used to be £20, but this year we've reduced it to £15. Once you've paid, every new member receives a free welcome pack containing a diary, a badge, and some vouchers.",
+      "sourceExcerptSha256": "52148ec0ada19bba985429f9e42dd02321e1e2eb241052f110608cc435ea68fb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "registration",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "registration",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "15",
+        "£15"
+      ],
+      "questionPrompt": "• The annual membership fee is now £{{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "Now, how do you actually join? For most clubs, you simply add your name to the sheet at the registration desk, which is just behind me near the entrance. Membership isn't expensive — the annual fee used to be £20, but this year we've reduced it to £15. Once you've paid, every new member receives a free welcome pack containing a diary, a badge, and some vouchers.",
+      "sourceExcerptSha256": "52148ec0ada19bba985429f9e42dd02321e1e2eb241052f110608cc435ea68fb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "15",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "15",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£15",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "welcome pack",
+        "pack"
+      ],
+      "questionPrompt": "• Every new member is given a free {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "Now, how do you actually join? For most clubs, you simply add your name to the sheet at the registration desk, which is just behind me near the entrance. Membership isn't expensive — the annual fee used to be £20, but this year we've reduced it to £15. Once you've paid, every new member receives a free welcome pack containing a diary, a badge, and some vouchers.",
+      "sourceExcerptSha256": "52148ec0ada19bba985429f9e42dd02321e1e2eb241052f110608cc435ea68fb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "welcome pack",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "welcome pack",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "pack",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two weeks",
+        "2 weeks"
+      ],
+      "questionPrompt": "• Taster sessions are free for the first {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "If you're not sure which club suits you, don't worry. Taster sessions are completely free for the first two weeks of term, so you can try several before committing.",
+      "sourceExcerptSha256": "2e8001538bfcafe1440fed00be58ef434f71412beeca62b179ca8bf2d68f4f5c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two weeks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two weeks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "2 weeks",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “two weeks”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "quiz night"
+      ],
+      "questionPrompt": "• The main social event of the year is the {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "I should also mention our biggest social event. Each year we hold a quiz night, which is enormous fun and open to all members. This year it takes place in the main hall, and tickets go quickly, so book early.",
+      "sourceExcerptSha256": "17457a876a5c5d92c97b5604f482d8a975159fb2937e4994b0be77e7a508cf81",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "quiz night",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "quiz night",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "main hall",
+        "hall"
+      ],
+      "questionPrompt": "• This year it is held in the {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "I should also mention our biggest social event. Each year we hold a quiz night, which is enormous fun and open to all members. This year it takes place in the main hall, and tickets go quickly, so book early.",
+      "sourceExcerptSha256": "17457a876a5c5d92c97b5604f482d8a975159fb2937e4994b0be77e7a508cf81",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "main hall",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "main hall",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "hall",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "noticeboard",
+        "notice board"
+      ],
+      "questionPrompt": "• Check the {{19}} for a full list of clubs.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "Finally, a couple of practical points. For a full and up-to-date list of every club, please check the noticeboard outside the union office rather than relying on last year's leaflet. And do remember to bring your student card to every session, as you'll need it to sign in.",
+      "sourceExcerptSha256": "f92013e88b9fa5b25a7012db99a8ba6bbd67065a6bc480da9b3c8de11a2d9faf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "noticeboard",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "noticeboard",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "notice board",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “noticeboard”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "student card",
+        "card"
+      ],
+      "questionPrompt": "• Bring your {{20}} to every session.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: University Clubs Fair",
+      "sourceExcerpt": "Finally, a couple of practical points. For a full and up-to-date list of every club, please check the noticeboard outside the union office rather than relying on last year's leaflet. And do remember to bring your student card to every session, as you'll need it to sign in.",
+      "sourceExcerptSha256": "f92013e88b9fa5b25a7012db99a8ba6bbd67065a6bc480da9b3c8de11a2d9faf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "student card",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "student card",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "card",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The students have decided that the aim of their survey is to find out",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "PRIYA: Well, originally we wanted to compare different teaching methods, but that felt too broad. So we've narrowed it down to finding out how much time students spend on homework each week.",
+      "sourceExcerptSha256": "6f01b26f24654970091d0806838554052b0daceff01944d7972e379d2d9500ad",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "how much time students spend on homework"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "how different teaching methods compare",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "which subjects students find most difficult",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "They have decided to survey",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "JAMES: We considered surveying the whole school, but that's over a thousand students. So we've decided to concentrate on Year 9 only — that's a single year group of about a hundred and twenty.",
+      "sourceExcerptSha256": "1826b33265997e67dda813795dbfa20596c713fa965d6a3ebaadb46cd1030dc2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Year 9 only"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the whole school",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "a mixture of year groups",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "They will collect the data using",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: Sensible. A focused sample is easier to analyse. Now, how will you actually collect the data? Paper questionnaires?",
+      "sourceExcerptSha256": "1a3d073148f9fe99e029e17f9afe063be978714e6173fc0e4bf363f98ce3eda9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "an online form"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "paper questionnaires",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "face-to-face interviews",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "James's main concern about the design is that students may",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "JAMES: Honestly, our biggest concern is that students might exaggerate. When you ask people about homework, they tend to overstate how much they do, so the figures may not be reliable.",
+      "sourceExcerptSha256": "35904f13623217b80904a60c10fbf39f8dfb14884d27414e108d5a68c4062b79",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "exaggerate how much homework they do"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "refuse to take part",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "misunderstand the questions",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor recommends that the questionnaire should be",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: That's a very real risk with self-reported data. One way to reduce it is to keep the questionnaire anonymous, so students feel no pressure to impress. I'd strongly recommend that.",
+      "sourceExcerptSha256": "bca93c583f5702e13cd3d8b90dd881ebc1a4f5e89257585a3a6975e75d31f57a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "anonymous"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "short",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "completed in class",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pilot"
+      ],
+      "questionPrompt": "• First, run a small {{26}} with a few students.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: Now, let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analysed statistically. Then look for patterns — for instance, whether older students report more homework. After that, write up your findings, and finally, present your conclusions to the class.",
+      "sourceExcerptSha256": "01a339b980178f934107c314e4d5b137d5d72c69ced0014dbeb227fa74ffbee6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pilot",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pilot",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "code"
+      ],
+      "questionPrompt": "• Then {{27}} the data so it can be analysed statistically.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: Now, let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analysed statistically. Then look for patterns — for instance, whether older students report more homework. After that, write up your findings, and finally, present your conclusions to the class.",
+      "sourceExcerptSha256": "01a339b980178f934107c314e4d5b137d5d72c69ced0014dbeb227fa74ffbee6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "code",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "code",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "patterns",
+        "pattern"
+      ],
+      "questionPrompt": "• Look for {{28}} in the responses.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "PRIYA: We also need to be careful about cause and association in the education survey. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+      "sourceExcerptSha256": "83a1f284e23f0ba787cb03c21a31bb8950b61143eee8de77d700bd3789f4b062",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "patterns",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "patterns",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "pattern",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "findings"
+      ],
+      "questionPrompt": "• Write up the {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: Now, let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analysed statistically. Then look for patterns — for instance, whether older students report more homework. After that, write up your findings, and finally, present your conclusions to the class.",
+      "sourceExcerptSha256": "01a339b980178f934107c314e4d5b137d5d72c69ced0014dbeb227fa74ffbee6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "findings",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "findings",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "present"
+      ],
+      "questionPrompt": "• Finally, {{30}} the conclusions to the class.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Education Survey Design",
+      "sourceExcerpt": "TUTOR: For the education survey, we can introduce the question, present only the method needed for the finding, and move secondary detail to an appendix.",
+      "sourceExcerptSha256": "62855d2b736adfcd7b778207944625562d941959e2934a0cde03c109a19dabe0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "present",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "present",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "polyps",
+        "polyp"
+      ],
+      "questionPrompt": "• A reef is built by colonies of tiny animals called {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "Although a coral reef looks like rock, it is in fact built by colonies of tiny animals called polyps. Each polyp secretes a hard skeleton of calcium carbonate, and over thousands of years these skeletons accumulate to form the vast structures we call reefs.",
+      "sourceExcerptSha256": "7dc063b58cd20feaada99b677de3ac0b85d39b7e3b7db1a69d3bc9f83e9606be",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "polyps",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "polyps",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "polyp",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "food"
+      ],
+      "questionPrompt": "• Microscopic algae inside each polyp provide the coral with {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "What makes coral so remarkable is a partnership. Living inside the tissues of each polyp are microscopic algae. Through photosynthesis, these algae provide the coral with food — in fact, up to ninety percent of the coral's energy comes from them. In return, the coral offers the algae shelter. The algae also give the coral its brilliant colour; the reds, greens and browns we associate with healthy reefs come almost entirely from them.",
+      "sourceExcerptSha256": "630def31479a2bb6950879babd51e2b1953361ef53daf836fbd76064a4f649e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "food",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "food",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "colour",
+        "color"
+      ],
+      "questionPrompt": "• The algae also give the coral its bright {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "What makes coral so remarkable is a partnership. Living inside the tissues of each polyp are microscopic algae. Through photosynthesis, these algae provide the coral with food — in fact, up to ninety percent of the coral's energy comes from them. In return, the coral offers the algae shelter. The algae also give the coral its brilliant colour; the reds, greens and browns we associate with healthy reefs come almost entirely from them.",
+      "sourceExcerptSha256": "630def31479a2bb6950879babd51e2b1953361ef53daf836fbd76064a4f649e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "colour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "colour",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "color",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “colour”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "temperature"
+      ],
+      "questionPrompt": "• Bleaching is usually triggered by a rise in sea {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "So what is bleaching? Bleaching occurs when the coral becomes stressed and expels the algae living within it. The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive: an increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership. When the algae are gone, the coral loses its colour and turns a ghostly white — hence the term \"bleaching\".",
+      "sourceExcerptSha256": "ecee78f58fe8346ef9e161dae656c32b6d31f91c6ed08ae26b25b6580c758197",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "temperature",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "temperature",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "weeks",
+        "week"
+      ],
+      "questionPrompt": "• An increase of one or two degrees lasting several {{35}} can cause it.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "So what is bleaching? Bleaching occurs when the coral becomes stressed and expels the algae living within it. The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive: an increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership. When the algae are gone, the coral loses its colour and turns a ghostly white — hence the term \"bleaching\".",
+      "sourceExcerptSha256": "ecee78f58fe8346ef9e161dae656c32b6d31f91c6ed08ae26b25b6580c758197",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "weeks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "weeks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "week",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "white"
+      ],
+      "questionPrompt": "• Without the algae, the coral turns {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "So what is bleaching? Bleaching occurs when the coral becomes stressed and expels the algae living within it. The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive: an increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership. When the algae are gone, the coral loses its colour and turns a ghostly white — hence the term \"bleaching\".",
+      "sourceExcerptSha256": "ecee78f58fe8346ef9e161dae656c32b6d31f91c6ed08ae26b25b6580c758197",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "white",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "white",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stress"
+      ],
+      "questionPrompt": "• A bleached coral is not dead but is under severe {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "It's important to understand that a bleached coral is not yet dead. It is simply under severe stress, and if conditions improve quickly, the algae can return and the coral may recover. But if the stress continues, the coral will starve and die.",
+      "sourceExcerptSha256": "5da71cba415af6d4c8553fcc7638225448d921fd1dc0ee09bc2b7ec4769c83ff",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stress",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stress",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "acidity"
+      ],
+      "questionPrompt": "• Pollution and the rising {{38}} of the ocean also harm corals.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "Warming water is not the only threat. Pollution from the land, and the rising acidity of the ocean as it absorbs carbon dioxide, both weaken corals further. This matters because reefs support a quarter of all marine species and protect vulnerable coastlines from storms and erosion.",
+      "sourceExcerptSha256": "c3b301e560e2ac52f2968d8ba668d578ec71d9dbc23f709e4e77b6b34c95a108",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "acidity",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "acidity",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "coastlines",
+        "coastline"
+      ],
+      "questionPrompt": "• Reefs protect vulnerable {{39}} from storms and erosion.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "Warming water is not the only threat. Pollution from the land, and the rising acidity of the ocean as it absorbs carbon dioxide, both weaken corals further. This matters because reefs support a quarter of all marine species and protect vulnerable coastlines from storms and erosion.",
+      "sourceExcerptSha256": "c3b301e560e2ac52f2968d8ba668d578ec71d9dbc23f709e4e77b6b34c95a108",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "coastlines",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "coastlines",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "coastline",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nurseries",
+        "nursery"
+      ],
+      "questionPrompt": "• Scientists grow young corals in underwater {{40}} and replant them.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Coral Bleaching",
+      "sourceExcerpt": "There is, however, hope. Around the world, scientists are now growing young corals in underwater nurseries and replanting them on damaged reefs.",
+      "sourceExcerptSha256": "2995cf0bd51038f21319c2750d84aab1c6d967795d0b17fed9a7c2a879156bd2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nurseries",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nurseries",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "nursery",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “nurseries”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: Sleep was historically understood to be a complex, active biological process.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "For much of human history, sleep was regarded as a passive state—a nightly suspension of consciousness in which the body rested and the mind went quiet. Modern neuroscience has fundamentally revised this view. Sleep is now understood to be an active, highly organised biological process essential for physical restoration, emotional regulation, memory consolidation, and immune function. The consequences of insufficient sleep extend far beyond daytime drowsiness, touching virtually every organ system and significantly increasing the risk of a range of serious conditions.",
+      "sourceExcerptSha256": "b30e3341dd9d109339fa622b86447f05cc3bd0dc958f589bf7f999469928f02c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: Growth hormone is released primarily during REM sleep.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Human sleep is structured in repeated cycles lasting approximately ninety minutes, although their duration varies between people and across the night. Each cycle comprises distinct stages. The lighter stages of non-rapid eye movement (NREM) sleep are followed by deeper slow-wave sleep, during which the brain emits characteristic low-frequency electrical rhythms. Growth hormone release and many processes of physical restoration are associated with deep sleep. Rapid eye movement (REM) sleep follows, during which the brain is nearly as active as when awake. REM is strongly associated with vivid dreaming and contributes to emotional processing and procedural learning. The balance changes overnight: early cycles contain more slow-wave sleep, while REM periods generally lengthen towards morning. Treating every cycle as an identical ninety-minute block therefore oversimplifies the underlying architecture.",
+      "sourceExcerptSha256": "72dacbbc9e49ac341d29c1e56fb7f61248a3220a39c8425a726e6e4c5dd1a82f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Studies show that sleeping after learning improves retention of new information.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "The relationship between sleep and memory consolidation is one of the most compelling findings in contemporary neuroscience. Studies have demonstrated that sleep after learning can improve retention compared with an equivalent period of wakefulness. During sleep, the brain appears to replay and strengthen newly acquired information, helping to reorganise traces first encoded in the hippocampus into more stable cortical networks. Different stages may support different forms of learning, so consolidation is not a single transfer completed at one moment. Conversely, sleep deprivation impairs attention at the time material is learned as well as later consolidation. A controlled comparison reported that performance after roughly seventeen hours awake resembled performance at a blood alcohol concentration of 0.05 percent, though the exact impairment varies with the task and individual.",
+      "sourceExcerptSha256": "0cad9ef9f674ec5f3c3e9058029957157be0487d5698c7e95d81266a25fe2504",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Performance after roughly seventeen hours awake has been compared with performance at a blood alcohol concentration of 0.05 percent.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "The relationship between sleep and memory consolidation is one of the most compelling findings in contemporary neuroscience. Studies have demonstrated that sleep after learning can improve retention compared with an equivalent period of wakefulness. During sleep, the brain appears to replay and strengthen newly acquired information, helping to reorganise traces first encoded in the hippocampus into more stable cortical networks. Different stages may support different forms of learning, so consolidation is not a single transfer completed at one moment. Conversely, sleep deprivation impairs attention at the time material is learned as well as later consolidation. A controlled comparison reported that performance after roughly seventeen hours awake resembled performance at a blood alcohol concentration of 0.05 percent, though the exact impairment varies with the task and individual.",
+      "sourceExcerptSha256": "0cad9ef9f674ec5f3c3e9058029957157be0487d5698c7e95d81266a25fe2504",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "5. {{5}}: The amygdala becomes less reactive when a person is sleep deprived.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Sleep also plays a central role in emotional regulation. The amygdala—the brain region most involved in processing emotional reactions—becomes significantly more reactive during sleep deprivation, while prefrontal modulation of these reactions is impaired. This combination produces heightened emotional sensitivity, reduced impulse control, and an impaired ability to regulate negative affect. Longitudinal research has established strong links between chronic sleep insufficiency and the development of anxiety disorders and depression, though the direction of causation is complex: mental health conditions also commonly disrupt sleep, creating a bidirectional relationship.",
+      "sourceExcerptSha256": "d6a56dedbd1e0492eb17c7f60c74a76228c575a46fc98bb1fd98d6d4df29573f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Sleeping fewer than six hours per night is linked to a significantly higher risk of coronary heart disease.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "The health consequences of insufficient sleep are broad. A joint expert consensus recommends that healthy adults regularly obtain at least seven hours; shorter sleep is associated with obesity, type 2 diabetes, cardiovascular disease, depression, impaired immune function, and accidents. A large meta-analysis published in 2010 found that sleeping fewer than six hours per night was associated with a forty-eight percent increase in the risk of developing or dying from coronary heart disease. Association alone does not prove that short sleep caused every outcome, because illness and social conditions can themselves disturb sleep. Plausible mechanisms nevertheless include dysregulation of appetite hormones—with sleep loss increasing ghrelin, the hunger hormone, and reducing leptin, the satiety hormone—elevated inflammatory markers, impaired glucose metabolism, and increased blood pressure.",
+      "sourceExcerptSha256": "1bec4eae2fae8902fc5c4a7ae6fdf778e724f37d999f29c489eea77d7b80004e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Delayed school start times have been associated with longer adolescent sleep and improvements in attendance.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Contemporary society is characterised by what some researchers describe as a \"sleep epidemic\": widespread, chronic sleep insufficiency driven by long working hours, evening light, social demands, and cultural attitudes that equate sleep reduction with ambition. Sleep timing reflects both homeostatic pressure, which builds during wakefulness, and a circadian clock synchronised mainly by light. Caffeine can mask some accumulated sleepiness, while bright light late in the evening can shift the clock and delay sleep onset. Public health authorities promote sleep hygiene—the behavioural practices that support sleep—including consistent sleep and wake times, limited caffeine and alcohol, and a dark, cool environment. Such advice cannot remove shift work, unsafe housing, caregiving duties, or early schedules. Researchers and policymakers therefore also consider structural changes, including delayed school start times, which studies associate with longer adolescent sleep and improvements in attendance, alertness, and some academic or safety outcomes.",
+      "sourceExcerptSha256": "f0a212e9aa829edd25c01e796f33570e637aea0291bb0233b6f9d5be69b4014d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ninety"
+      ],
+      "questionPrompt": "8. Each sleep cycle lasts approximately {{8}} minutes and includes both NREM and REM stages.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Human sleep is structured in repeated cycles lasting approximately ninety minutes, although their duration varies between people and across the night. Each cycle comprises distinct stages. The lighter stages of non-rapid eye movement (NREM) sleep are followed by deeper slow-wave sleep, during which the brain emits characteristic low-frequency electrical rhythms. Growth hormone release and many processes of physical restoration are associated with deep sleep. Rapid eye movement (REM) sleep follows, during which the brain is nearly as active as when awake. REM is strongly associated with vivid dreaming and contributes to emotional processing and procedural learning. The balance changes overnight: early cycles contain more slow-wave sleep, while REM periods generally lengthen towards morning. Treating every cycle as an identical ninety-minute block therefore oversimplifies the underlying architecture.",
+      "sourceExcerptSha256": "72dacbbc9e49ac341d29c1e56fb7f61248a3220a39c8425a726e6e4c5dd1a82f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ninety",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ninety",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hippocampus"
+      ],
+      "questionPrompt": "9. During deep sleep, newly acquired information is moved from the {{9}} to more stable long-term storage in the cortex.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "The relationship between sleep and memory consolidation is one of the most compelling findings in contemporary neuroscience. Studies have demonstrated that sleep after learning can improve retention compared with an equivalent period of wakefulness. During sleep, the brain appears to replay and strengthen newly acquired information, helping to reorganise traces first encoded in the hippocampus into more stable cortical networks. Different stages may support different forms of learning, so consolidation is not a single transfer completed at one moment. Conversely, sleep deprivation impairs attention at the time material is learned as well as later consolidation. A controlled comparison reported that performance after roughly seventeen hours awake resembled performance at a blood alcohol concentration of 0.05 percent, though the exact impairment varies with the task and individual.",
+      "sourceExcerptSha256": "0cad9ef9f674ec5f3c3e9058029957157be0487d5698c7e95d81266a25fe2504",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hippocampus",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hippocampus",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "amygdala"
+      ],
+      "questionPrompt": "10. Sleep deprivation makes the brain's {{10}} region more reactive to emotional stimuli.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Sleep also plays a central role in emotional regulation. The amygdala—the brain region most involved in processing emotional reactions—becomes significantly more reactive during sleep deprivation, while prefrontal modulation of these reactions is impaired. This combination produces heightened emotional sensitivity, reduced impulse control, and an impaired ability to regulate negative affect. Longitudinal research has established strong links between chronic sleep insufficiency and the development of anxiety disorders and depression, though the direction of causation is complex: mental health conditions also commonly disrupt sleep, creating a bidirectional relationship.",
+      "sourceExcerptSha256": "d6a56dedbd1e0492eb17c7f60c74a76228c575a46fc98bb1fd98d6d4df29573f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "amygdala",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "amygdala",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ghrelin"
+      ],
+      "questionPrompt": "11. Sleep loss disrupts appetite hormones by increasing {{11}}, the hunger hormone, and reducing leptin.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "The health consequences of insufficient sleep are broad. A joint expert consensus recommends that healthy adults regularly obtain at least seven hours; shorter sleep is associated with obesity, type 2 diabetes, cardiovascular disease, depression, impaired immune function, and accidents. A large meta-analysis published in 2010 found that sleeping fewer than six hours per night was associated with a forty-eight percent increase in the risk of developing or dying from coronary heart disease. Association alone does not prove that short sleep caused every outcome, because illness and social conditions can themselves disturb sleep. Plausible mechanisms nevertheless include dysregulation of appetite hormones—with sleep loss increasing ghrelin, the hunger hormone, and reducing leptin, the satiety hormone—elevated inflammatory markers, impaired glucose metabolism, and increased blood pressure.",
+      "sourceExcerptSha256": "1bec4eae2fae8902fc5c4a7ae6fdf778e724f37d999f29c489eea77d7b80004e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ghrelin",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ghrelin",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "epidemic"
+      ],
+      "questionPrompt": "12. Widespread chronic sleep insufficiency in modern society has been described by some researchers as a sleep {{12}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Contemporary society is characterised by what some researchers describe as a \"sleep epidemic\": widespread, chronic sleep insufficiency driven by long working hours, evening light, social demands, and cultural attitudes that equate sleep reduction with ambition. Sleep timing reflects both homeostatic pressure, which builds during wakefulness, and a circadian clock synchronised mainly by light. Caffeine can mask some accumulated sleepiness, while bright light late in the evening can shift the clock and delay sleep onset. Public health authorities promote sleep hygiene—the behavioural practices that support sleep—including consistent sleep and wake times, limited caffeine and alcohol, and a dark, cool environment. Such advice cannot remove shift work, unsafe housing, caregiving duties, or early schedules. Researchers and policymakers therefore also consider structural changes, including delayed school start times, which studies associate with longer adolescent sleep and improvements in attendance, alertness, and some academic or safety outcomes.",
+      "sourceExcerptSha256": "f0a212e9aa829edd25c01e796f33570e637aea0291bb0233b6f9d5be69b4014d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "epidemic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "epidemic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sleep hygiene"
+      ],
+      "questionPrompt": "13. The set of behavioural practices that support healthy sleep is collectively referred to as {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Science of Sleep",
+      "sourceExcerpt": "Contemporary society is characterised by what some researchers describe as a \"sleep epidemic\": widespread, chronic sleep insufficiency driven by long working hours, evening light, social demands, and cultural attitudes that equate sleep reduction with ambition. Sleep timing reflects both homeostatic pressure, which builds during wakefulness, and a circadian clock synchronised mainly by light. Caffeine can mask some accumulated sleepiness, while bright light late in the evening can shift the clock and delay sleep onset. Public health authorities promote sleep hygiene—the behavioural practices that support sleep—including consistent sleep and wake times, limited caffeine and alcohol, and a dark, cool environment. Such advice cannot remove shift work, unsafe housing, caregiving duties, or early schedules. Researchers and policymakers therefore also consider structural changes, including delayed school start times, which studies associate with longer adolescent sleep and improvements in attendance, alertness, and some academic or safety outcomes.",
+      "sourceExcerptSha256": "f0a212e9aa829edd25c01e796f33570e637aea0291bb0233b6f9d5be69b4014d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sleep hygiene",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sleep hygiene",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A comparison of very large Asian cities with those that have achieved orderly growth",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "C. Asia's urbanisation has generated a remarkable diversity of urban forms. At one end of the spectrum are the global megacities—Tokyo, Shanghai, Delhi, Mumbai, Jakarta—whose populations exceed twenty million and whose economic gravity shapes regional and sometimes global markets. At the other end are the thousands of small and medium-sized cities that are absorbing the majority of new urban migrants, often with limited infrastructure, weak municipal governance, and uncertain economic bases. Between these extremes, a number of Asian cities—Singapore, Seoul, and Shenzhen among them—have achieved rapid and relatively well-managed transitions to high-income status, providing models of urban development that other cities seek to emulate.",
+      "sourceExcerptSha256": "a7c51710d84f0f4a96443aba4c9e8eae535cff48493971e3953cb9e242366d89",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An explanation of why rankings based on urban commute times can vary",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "E. Infrastructure deficits are among the most pressing practical challenges. Rapid population growth can outpace the capacity of city administrations to provide housing, water, sanitation, transportation, and electricity. In densely populated megacities of South and Southeast Asia, long and unreliable journeys impose productivity, health, and air-quality costs, although rankings based on average commute times vary with survey methods and city boundaries. Water stress is acute in many cities, driven by population growth, industrial demand, leaky distribution networks, and in some cases aquifer depletion caused by excessive groundwater extraction. Poorer households often pay more per litre to informal vendors than connected households pay through municipal systems, showing how an infrastructure deficit can deepen inequality.",
+      "sourceExcerptSha256": "0f3402f139427624daeabfd33c66294baac0cc4d9fb84e1f5ebc30b72d4f12d7",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "An argument that high-density urban living can reduce carbon emissions per person",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "F. Environmental impacts extend beyond cities themselves. Urban expansion consumes agricultural land and natural habitats; the rapid hardening of formerly permeable land surfaces disrupts hydrological systems and increases flooding risk. Air pollution in Asian megacities is among the worst in the world, driven by vehicle emissions, industrial activity, and in some regions the burning of agricultural waste. However, dense urban living also offers environmental efficiencies: compact cities with effective public transport systems can achieve significantly lower per-capita carbon emissions than sprawling, car-dependent equivalents.",
+      "sourceExcerptSha256": "7a7596dd70adbdfa4fed453ca4eb24398350277eb2f5c10f6a82b9ea38bab85b",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Evidence that migrants often report greater satisfaction with life than rural non-migrants",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "D. The social consequences of rapid urbanisation are profound and uneven. For many migrants, the city offers genuine economic opportunity: higher wages, access to healthcare and education, and the freedom to construct identities independent of traditional community constraints. Some studies find that migrants report higher subjective wellbeing than comparable rural non-migrants despite substandard housing or informal work, but outcomes vary with job security, legal status, family separation, and access to services. The gains are unevenly distributed, and urban areas in many Asian countries are characterised by stark inequalities: the towers of central business districts coexist with dense informal settlements in which basic services are absent or precarious. Upgrading such settlements can preserve residents' livelihoods and social networks, whereas distant relocation may sever both.",
+      "sourceExcerptSha256": "c05d73e69c5d7409dad187d709fe222a118aa88590b25befcefaf8fc024e5d0e",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of how Chinese government policy shaped rural-to-urban movement",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "B. The drivers of Asian urbanisation are multiple and interconnected. Economic development creates manufacturing and service-sector jobs concentrated in cities, drawing workers from lower-productivity agricultural areas. China's spectacular economic growth between 1980 and 2010 was inseparable from the movement of an estimated 280 million rural workers to urban centres—often described as the largest peacetime migration in history. Government policy has also shaped the pattern. China's \"hukou\" system historically tied access to many public services to a person's place of registration. Reforms have relaxed some restrictions, especially in smaller cities, but migrant workers can still face unequal access to education, healthcare, and housing in the cities where they work. Large-scale transport and industrial investment has meanwhile connected previously remote areas to urban economies.",
+      "sourceExcerptSha256": "fd110a2006e765a3de27f5049ff22e14d33767528caf8485099b92494a5b28f8",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A description of the long-term consequences of current urbanisation decisions",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "G. The future of Asian urbanisation will be shaped by decisions made in the coming decade. Whether cities grow in planned or unplanned ways, whether informal settlements are upgraded or demolished, and whether public investment prioritises equitable access to services or concentrates benefits in already-advantaged areas will determine whether urbanisation continues to be a vehicle of broad-based development or primarily generates inequality and environmental stress. The scale and pace of Asia's urban transition leaves little room for experimentation: the decisions made now will define the continent's cities for generations.",
+      "sourceExcerptSha256": "5a26066b17b2790d34c5aec5d4c38a3f934e307750960b4f34f1622ed0b6bbb6",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "Statistics about the proportion of Asians living in cities in 1950 compared with today",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "A. Asia is undergoing the largest wave of urban growth in human history. In 1950, fewer than twenty percent of Asians lived in urban areas. By 2020, that figure had risen to approximately fifty percent, and United Nations projections suggested it would exceed sixty percent by 2050. Comparisons require some caution because countries classify urban settlements using different combinations of population size, density, administrative boundaries, and economic activity. Urban growth also comes from natural population increase and the reclassification or outward expansion of settlements, as well as rural-to-urban migration. Even with those qualifications, the transformation is reshaping the physical landscape, economic geography, and social fabric of the world's most populous continent.",
+      "sourceExcerptSha256": "6c770ec32fbf6bbd0d27c3d53a08b7b7b91d4bb62d3eb34781734cf224c1d08d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fifty"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "A. Asia is undergoing the largest wave of urban growth in human history. In 1950, fewer than twenty percent of Asians lived in urban areas. By 2020, that figure had risen to approximately fifty percent, and United Nations projections suggested it would exceed sixty percent by 2050. Comparisons require some caution because countries classify urban settlements using different combinations of population size, density, administrative boundaries, and economic activity. Urban growth also comes from natural population increase and the reclassification or outward expansion of settlements, as well as rural-to-urban migration. Even with those qualifications, the transformation is reshaping the physical landscape, economic geography, and social fabric of the world's most populous continent.",
+      "sourceExcerptSha256": "6c770ec32fbf6bbd0d27c3d53a08b7b7b91d4bb62d3eb34781734cf224c1d08d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fifty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fifty",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "peacetime"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "B. The drivers of Asian urbanisation are multiple and interconnected. Economic development creates manufacturing and service-sector jobs concentrated in cities, drawing workers from lower-productivity agricultural areas. China's spectacular economic growth between 1980 and 2010 was inseparable from the movement of an estimated 280 million rural workers to urban centres—often described as the largest peacetime migration in history. Government policy has also shaped the pattern. China's \"hukou\" system historically tied access to many public services to a person's place of registration. Reforms have relaxed some restrictions, especially in smaller cities, but migrant workers can still face unequal access to education, healthcare, and housing in the cities where they work. Large-scale transport and industrial investment has meanwhile connected previously remote areas to urban economies.",
+      "sourceExcerptSha256": "fd110a2006e765a3de27f5049ff22e14d33767528caf8485099b92494a5b28f8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "peacetime",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "peacetime",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "informal"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "D. The social consequences of rapid urbanisation are profound and uneven. For many migrants, the city offers genuine economic opportunity: higher wages, access to healthcare and education, and the freedom to construct identities independent of traditional community constraints. Some studies find that migrants report higher subjective wellbeing than comparable rural non-migrants despite substandard housing or informal work, but outcomes vary with job security, legal status, family separation, and access to services. The gains are unevenly distributed, and urban areas in many Asian countries are characterised by stark inequalities: the towers of central business districts coexist with dense informal settlements in which basic services are absent or precarious. Upgrading such settlements can preserve residents' livelihoods and social networks, whereas distant relocation may sever both.",
+      "sourceExcerptSha256": "c05d73e69c5d7409dad187d709fe222a118aa88590b25befcefaf8fc024e5d0e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "informal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "informal",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "infrastructure"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "C. Asia's urbanisation has generated a remarkable diversity of urban forms. At one end of the spectrum are the global megacities—Tokyo, Shanghai, Delhi, Mumbai, Jakarta—whose populations exceed twenty million and whose economic gravity shapes regional and sometimes global markets. At the other end are the thousands of small and medium-sized cities that are absorbing the majority of new urban migrants, often with limited infrastructure, weak municipal governance, and uncertain economic bases. Between these extremes, a number of Asian cities—Singapore, Seoul, and Shenzhen among them—have achieved rapid and relatively well-managed transitions to high-income status, providing models of urban development that other cities seek to emulate.",
+      "sourceExcerptSha256": "a7c51710d84f0f4a96443aba4c9e8eae535cff48493971e3953cb9e242366d89",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "infrastructure",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "infrastructure",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "public transport"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "F. Environmental impacts extend beyond cities themselves. Urban expansion consumes agricultural land and natural habitats; the rapid hardening of formerly permeable land surfaces disrupts hydrological systems and increases flooding risk. Air pollution in Asian megacities is among the worst in the world, driven by vehicle emissions, industrial activity, and in some regions the burning of agricultural waste. However, dense urban living also offers environmental efficiencies: compact cities with effective public transport systems can achieve significantly lower per-capita carbon emissions than sprawling, car-dependent equivalents.",
+      "sourceExcerptSha256": "7a7596dd70adbdfa4fed453ca4eb24398350277eb2f5c10f6a82b9ea38bab85b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "public transport",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "public transport",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "equitable"
+      ],
+      "questionPrompt": "Between 1950 and 2020, the share of Asians living in cities rose from twenty percent to approximately {{21}} percent. China's economic growth was closely tied to the migration of an estimated 280 million workers, making it the largest {{22}} migration in history. While cities offer higher wages and better services, large inequalities exist, with towers in central districts often adjoining {{23}} settlements where basic services are lacking. {{24}} deficits remain a pressing challenge as populations grow faster than city governments can provide services. Despite environmental costs such as air pollution, compact cities with good {{25}} can achieve lower carbon emissions per capita. Future outcomes will depend on whether investment prioritises {{26}} access to services for all urban residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urbanisation in Asia",
+      "sourceExcerpt": "G. The future of Asian urbanisation will be shaped by decisions made in the coming decade. Whether cities grow in planned or unplanned ways, whether informal settlements are upgraded or demolished, and whether public investment prioritises equitable access to services or concentrates benefits in already-advantaged areas will determine whether urbanisation continues to be a vehicle of broad-based development or primarily generates inequality and environmental stress. The scale and pace of Asia's urban transition leaves little room for experimentation: the decisions made now will define the continent's cities for generations.",
+      "sourceExcerptSha256": "5a26066b17b2790d34c5aec5d4c38a3f934e307750960b4f34f1622ed0b6bbb6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "equitable",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "equitable",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage identify as the primary cause of food insecurity globally?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "The apparent paradox of hunger in a food-abundant world reflects the fact that food insecurity is often a problem of distribution, access, and poverty rather than absolute global production capacity. Food is produced in surplus in some regions while being critically scarce in others; within countries, access to adequate nutrition is shaped by income, geography, gender, conflict, and political marginalisation. A subsistence farmer who loses a harvest to drought may live within a hundred kilometres of a warehouse full of food that is economically inaccessible. Markets cannot solve this automatically when households lack purchasing power, roads are damaged, traders face insecurity, or sudden price rises place staples beyond reach.",
+      "sourceExcerptSha256": "ee626649a6f77dad4c1c4df1fa5054f4fe85b4c4790295482b50e3595c659323",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Problems of distribution, access, and poverty rather than total production capacity."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The world does not produce enough food to feed its total population.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Climate change has already reduced global food production below safe levels.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Population growth is outpacing all efforts to increase agricultural output.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "According to the passage, which regions face the greatest agricultural impacts from climate change?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Climate change represents the most significant long-term threat to global food security. Rising temperatures reduce crop yields for staple grains including wheat, maize, and rice when they exceed optimal growth thresholds—an effect projected to worsen as warming continues. More frequent and intense droughts, floods, and extreme weather events disrupt agricultural systems and increase year-to-year variability in production, making it harder for farmers and food systems to plan and absorb shocks. The danger is not confined to the amount harvested. Heat and humidity can damage food in storage, floods can close roads and markets, and simultaneous crop failures in exporting regions can transmit price shocks through international trade. Irrigation, crop diversification, early-warning systems, and insurance can reduce some risks, but each requires finance and effective institutions. Regions already vulnerable to food insecurity—particularly sub-Saharan Africa and South Asia—face the greatest agricultural impacts from climate change, compounding existing inequalities.",
+      "sourceExcerptSha256": "ea41cf447316d40fe3118e52f42646b6e67e520f179c96eb7597baafc5fd72ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Sub-Saharan Africa and South Asia, which are already vulnerable to food insecurity."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "North America and Europe, where industrial farming systems are most vulnerable.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "East Asia and Australia, where high temperatures already reduce yields significantly.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "South America and Southeast Asia, due to intense rainfall and flooding.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the passage say about the relationship between food systems and climate change?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "The food system's contribution to climate change creates a further tension. The Intergovernmental Panel on Climate Change estimated that the complete food system—agriculture and land use together with storage, transport, packaging, processing, retail, and consumption—generated roughly twenty-one to thirty-seven percent of global greenhouse gas emissions during the period it assessed. Livestock, particularly cattle, contributes substantially through methane, manure, feed production, and land-use change. This creates a dilemma: feeding a growing population requires reliable agricultural production, yet doing so sustainably requires reducing emissions intensity and avoiding further ecosystem conversion. Diets rich in emissions-intensive animal products are more common in many high-income countries, making dietary change a politically sensitive but potentially important response alongside improvements in production.",
+      "sourceExcerptSha256": "2c6b4717e7c0a6ca2e20f422e06055935641a78a7e8df05fd26492ca9a300162",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Feeding the global population and reducing agricultural emissions is a genuine dilemma."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Agriculture is the sole driver of greenhouse gas emissions globally.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Only livestock farming creates a significant carbon footprint.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "High-income countries have successfully decarbonised their food systems.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Which of the following is mentioned as an approach to improving food security in lower-income countries?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Responses to food insecurity operate at multiple levels. The World Food Programme delivers emergency assistance in crisis zones, but short-term relief and long-term resilience serve different purposes. Agricultural research—particularly drought-resistant and heat-tolerant crop varieties—offers one pathway to maintaining yields under changing conditions. Precision agriculture can optimise water, fertiliser, and pesticide use, although access depends on connectivity, finance, training, and secure land rights. Policy measures include rural roads and storage, access to credit and markets for smallholders, school meals, and social protection programmes that preserve purchasing power during shocks. No single intervention addresses all four dimensions of food security; durable strategies must combine reliable production with affordability, nutritional quality, and systems able to withstand conflict, extreme weather, and price volatility.",
+      "sourceExcerptSha256": "550899e7149c2443d022428f1c90869ba4e48497f363ea124f0309538abad0e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Precision agriculture that optimises water, fertiliser, and pesticide use."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Encouraging consumers in high-income countries to stop eating animal products.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Reducing landfill capacity to prevent the disposal of wasted food.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Relocating food production from vulnerable regions to stable ones.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: The writer argues that food insecurity is often a distribution and access problem rather than a problem of total global production.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "The apparent paradox of hunger in a food-abundant world reflects the fact that food insecurity is often a problem of distribution, access, and poverty rather than absolute global production capacity. Food is produced in surplus in some regions while being critically scarce in others; within countries, access to adequate nutrition is shaped by income, geography, gender, conflict, and political marginalisation. A subsistence farmer who loses a harvest to drought may live within a hundred kilometres of a warehouse full of food that is economically inaccessible. Markets cannot solve this automatically when households lack purchasing power, roads are damaged, traders face insecurity, or sudden price rises place staples beyond reach.",
+      "sourceExcerptSha256": "ee626649a6f77dad4c1c4df1fa5054f4fe85b4c4790295482b50e3595c659323",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Rising temperatures are projected to reduce yields of wheat, maize, and rice as warming continues.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Climate change represents the most significant long-term threat to global food security. Rising temperatures reduce crop yields for staple grains including wheat, maize, and rice when they exceed optimal growth thresholds—an effect projected to worsen as warming continues. More frequent and intense droughts, floods, and extreme weather events disrupt agricultural systems and increase year-to-year variability in production, making it harder for farmers and food systems to plan and absorb shocks. The danger is not confined to the amount harvested. Heat and humidity can damage food in storage, floods can close roads and markets, and simultaneous crop failures in exporting regions can transmit price shocks through international trade. Irrigation, crop diversification, early-warning systems, and insurance can reduce some risks, but each requires finance and effective institutions. Regions already vulnerable to food insecurity—particularly sub-Saharan Africa and South Asia—face the greatest agricultural impacts from climate change, compounding existing inequalities.",
+      "sourceExcerptSha256": "ea41cf447316d40fe3118e52f42646b6e67e520f179c96eb7597baafc5fd72ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "33. {{33}}: The passage claims that livestock produce more greenhouse gases than the entire transport sector.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "The food system's contribution to climate change creates a further tension. The Intergovernmental Panel on Climate Change estimated that the complete food system—agriculture and land use together with storage, transport, packaging, processing, retail, and consumption—generated roughly twenty-one to thirty-seven percent of global greenhouse gas emissions during the period it assessed. Livestock, particularly cattle, contributes substantially through methane, manure, feed production, and land-use change. This creates a dilemma: feeding a growing population requires reliable agricultural production, yet doing so sustainably requires reducing emissions intensity and avoiding further ecosystem conversion. Diets rich in emissions-intensive animal products are more common in many high-income countries, making dietary change a politically sensitive but potentially important response alongside improvements in production.",
+      "sourceExcerptSha256": "2c6b4717e7c0a6ca2e20f422e06055935641a78a7e8df05fd26492ca9a300162",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Food is lost or wasted at stages both before and after it reaches retailers.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Food loss and waste add another dimension. FAO estimates that 13.2 percent of food is lost after harvest and before retail; UNEP estimates that a further 19 percent of food available to consumers is wasted by households, food services, and retailers. The two percentages use different denominators and stages, so they should not simply be added, but together they show losses across the chain. This unused food embodies land, water, energy, and labour and generates avoidable emissions during production and disposal. Better storage, cooling, transport, date labelling, portion planning, and redistribution can improve supply without requiring the same increase in land or inputs.",
+      "sourceExcerptSha256": "72af1ea7afaea0a87f91a1dd20843d3163e58069303bcdba1732d01a67a19314",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: The development of drought-resistant crop varieties is presented as one technical solution to food insecurity.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Responses to food insecurity operate at multiple levels. The World Food Programme delivers emergency assistance in crisis zones, but short-term relief and long-term resilience serve different purposes. Agricultural research—particularly drought-resistant and heat-tolerant crop varieties—offers one pathway to maintaining yields under changing conditions. Precision agriculture can optimise water, fertiliser, and pesticide use, although access depends on connectivity, finance, training, and secure land rights. Policy measures include rural roads and storage, access to credit and markets for smallholders, school meals, and social protection programmes that preserve purchasing power during shocks. No single intervention addresses all four dimensions of food security; durable strategies must combine reliable production with affordability, nutritional quality, and systems able to withstand conflict, extreme weather, and price volatility.",
+      "sourceExcerptSha256": "550899e7149c2443d022428f1c90869ba4e48497f363ea124f0309538abad0e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "36. {{36}}: The passage argues that dietary change is a straightforward policy solution that most governments have already implemented.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Climate change represents the most significant long-term threat to global food security. Rising temperatures reduce crop yields for staple grains including wheat, maize, and rice when they exceed optimal growth thresholds—an effect projected to worsen as warming continues. More frequent and intense droughts, floods, and extreme weather events disrupt agricultural systems and increase year-to-year variability in production, making it harder for farmers and food systems to plan and absorb shocks. The danger is not confined to the amount harvested. Heat and humidity can damage food in storage, floods can close roads and markets, and simultaneous crop failures in exporting regions can transmit price shocks through international trade. Irrigation, crop diversification, early-warning systems, and insurance can reduce some risks, but each requires finance and effective institutions. Regions already vulnerable to food insecurity—particularly sub-Saharan Africa and South Asia—face the greatest agricultural impacts from climate change, compounding existing inequalities.",
+      "sourceExcerptSha256": "ea41cf447316d40fe3118e52f42646b6e67e520f179c96eb7597baafc5fd72ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "economic"
+      ],
+      "questionPrompt": "37. The UN definition of food security includes physical, social, and {{37}} access to sufficient food.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Food security is defined by the United Nations as a condition in which all people, at all times, have physical, social, and economic access to sufficient, safe, and nutritious food that meets their dietary needs and preferences for an active and healthy life. Analysts often divide this idea into four dimensions: availability, access, utilisation, and stability over time. A country can have ample food in aggregate while particular households cannot afford it, while poor sanitation can prevent nutrients from being absorbed even when calories are available. The latest UN estimate available for this passage put the number of people facing hunger at about 645 million in 2025. That represented global improvement from the recent peak, but progress remained uneven and hunger was still more prevalent than before the pandemic.",
+      "sourceExcerptSha256": "867f38920b91d637ee8607c7b1e28ccfcbd7d800dcc29dbaaf7ca2b3394f6c1d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "economic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "economic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "climate change"
+      ],
+      "questionPrompt": "38. The most significant long-term threat to global food security identified in the passage is {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Climate change represents the most significant long-term threat to global food security. Rising temperatures reduce crop yields for staple grains including wheat, maize, and rice when they exceed optimal growth thresholds—an effect projected to worsen as warming continues. More frequent and intense droughts, floods, and extreme weather events disrupt agricultural systems and increase year-to-year variability in production, making it harder for farmers and food systems to plan and absorb shocks. The danger is not confined to the amount harvested. Heat and humidity can damage food in storage, floods can close roads and markets, and simultaneous crop failures in exporting regions can transmit price shocks through international trade. Irrigation, crop diversification, early-warning systems, and insurance can reduce some risks, but each requires finance and effective institutions. Regions already vulnerable to food insecurity—particularly sub-Saharan Africa and South Asia—face the greatest agricultural impacts from climate change, compounding existing inequalities.",
+      "sourceExcerptSha256": "ea41cf447316d40fe3118e52f42646b6e67e520f179c96eb7597baafc5fd72ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Climate change",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "climate change",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "World Food"
+      ],
+      "questionPrompt": "39. The {{39}} Programme delivers emergency food assistance in areas affected by crisis.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Responses to food insecurity operate at multiple levels. The World Food Programme delivers emergency assistance in crisis zones, but short-term relief and long-term resilience serve different purposes. Agricultural research—particularly drought-resistant and heat-tolerant crop varieties—offers one pathway to maintaining yields under changing conditions. Precision agriculture can optimise water, fertiliser, and pesticide use, although access depends on connectivity, finance, training, and secure land rights. Policy measures include rural roads and storage, access to credit and markets for smallholders, school meals, and social protection programmes that preserve purchasing power during shocks. No single intervention addresses all four dimensions of food security; durable strategies must combine reliable production with affordability, nutritional quality, and systems able to withstand conflict, extreme weather, and price volatility.",
+      "sourceExcerptSha256": "550899e7149c2443d022428f1c90869ba4e48497f363ea124f0309538abad0e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "World Food",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "World Food",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "social protection"
+      ],
+      "questionPrompt": "40. {{40}} programmes that protect purchasing power among the poor are described as an essential part of food security strategies.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Global Food Security",
+      "sourceExcerpt": "Responses to food insecurity operate at multiple levels. The World Food Programme delivers emergency assistance in crisis zones, but short-term relief and long-term resilience serve different purposes. Agricultural research—particularly drought-resistant and heat-tolerant crop varieties—offers one pathway to maintaining yields under changing conditions. Precision agriculture can optimise water, fertiliser, and pesticide use, although access depends on connectivity, finance, training, and secure land rights. Policy measures include rural roads and storage, access to credit and markets for smallholders, school meals, and social protection programmes that preserve purchasing power during shocks. No single intervention addresses all four dimensions of food security; durable strategies must combine reliable production with affordability, nutritional quality, and systems able to withstand conflict, extreme weather, and price volatility.",
+      "sourceExcerptSha256": "550899e7149c2443d022428f1c90869ba4e48497f363ea124f0309538abad0e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "social protection",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "social protection",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q7",
+        "before": "Delayed school start times have been shown to improve academic performance and mental health in adolescents.",
+        "after": "Delayed school start times have been associated with longer adolescent sleep and improvements in attendance.",
+        "reason": "The passage supports association with sleep and attendance, not the original mental-health claim."
+      },
+      {
+        "scope": "Reading Q30 option C",
+        "before": "Mobile platforms giving farmers access to precision agriculture tools.",
+        "after": "Precision agriculture that optimises water, fertiliser, and pesticide use.",
+        "reason": "The passage mentions precision agriculture but contains no mobile-platform claim."
+      }
+    ]
+  },
+  "reviewSha256": "67b2a425b9860a60ae38f9f7cc5124742a1ccef74e5c1e300dd2f40bf124ee32"
+}

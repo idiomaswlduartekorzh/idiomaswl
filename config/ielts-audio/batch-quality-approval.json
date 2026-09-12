@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "staged_audio_quality_batch",
+  "approvedAt": "2026-09-08",
+  "reviewer": {
+    "kind": "human",
+    "id": "owner"
+  },
+  "basis": {
+    "representativeListeningSets": [
+      2,
+      9
+    ],
+    "decision": "Owner approved the staged batch after representative listening, including the smoothed speaker transitions and the Set 9 Q26-Q28 repair."
+  },
+  "includedSets": [
+    1,
+    2,
+    3,
+    4,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "excludedLegacySets": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "repairManifestSha256": "f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "files": [
+    {
+      "set": 1,
+      "source": "STAGED_REPAIR",
+      "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f"
+    },
+    {
+      "set": 2,
+      "source": "STAGED_NEW",
+      "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62"
+    },
+    {
+      "set": 3,
+      "source": "STAGED_NEW",
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae"
+    },
+    {
+      "set": 4,
+      "source": "STAGED_NEW",
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846"
+    },
+    {
+      "set": 9,
+      "source": "STAGED_REPAIR",
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1"
+    },
+    {
+      "set": 13,
+      "source": "STAGED_NEW",
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e"
+    },
+    {
+      "set": 14,
+      "source": "STAGED_NEW",
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3"
+    },
+    {
+      "set": 15,
+      "source": "STAGED_NEW",
+      "audioSha256": "c134adcd57d0e4bbb043695e9d5eedaf96ec5d0214117c06d66a8535ec1c013c"
+    },
+    {
+      "set": 16,
+      "source": "STAGED_NEW",
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50"
+    },
+    {
+      "set": 17,
+      "source": "STAGED_NEW",
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752"
+    },
+    {
+      "set": 18,
+      "source": "STAGED_NEW",
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005"
+    },
+    {
+      "set": 19,
+      "source": "STAGED_NEW",
+      "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21"
+    },
+    {
+      "set": 20,
+      "source": "STAGED_NEW",
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301"
+    }
+  ],
+  "releaseAuthorized": false,
+  "approvalSha256": "1755f567ea3acb34fce924d1850af64f669f7185816e3b405c0287fb49400190"
+}

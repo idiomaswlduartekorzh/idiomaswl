@@ -3,10 +3,10 @@
   "schemaVersion": 1,
   "candidates": [
     {
-      "candidateId": "current-working-tree-on-c3afecc9",
+      "candidateId": "current-working-tree-on-59a40a9e",
       "workOrderId": "icfes-three-tier-launch-v1",
-      "baseCommit": "c3afecc9d1ff9645867dc20f9930431f2c7256a6",
-      "candidateDigest": "00ef1f12556e5d0c675a244cb0ca3f3f5c69775cf74cb588cd6e6400a666a6e2",
+      "baseCommit": "59a40a9e24844a1d07c3bb63c67db94a456f5cae",
+      "candidateDigest": "7bc02b6996a75074caeb9bd9028f3416be2a44c4e901a8d0cc6854c364fc70eb",
       "subjectArtifacts": [
         {
           "path": "docs/icfes-product-activation.md",
@@ -98,7 +98,7 @@
         },
         {
           "path": "package.json",
-          "sha256": "9446ac5b68b3ed47b1c6ee939775ea898685d1f49060be5b51296267066b9e49"
+          "sha256": "8d428e3a490dab2b13be2b8521fb8e5670ccced332a359f5fc097c73d4cba0d9"
         },
         {
           "path": "docs/icfes-launch-harness.md",
@@ -322,7 +322,7 @@
         },
         {
           "path": "config/icfes-launch-harness/campaign.json",
-          "sha256": "1873d40fde4ba76ae95f8f7cb45c02b6e439af993fe297482ee10f62baf39e61"
+          "sha256": "73dec543e8fe029c0fc4fce8ace80813de4602b183b5cc0601efe9a726891b6d"
         },
         {
           "path": "config/icfes-launch-harness/candidate-ledger.schema.json",

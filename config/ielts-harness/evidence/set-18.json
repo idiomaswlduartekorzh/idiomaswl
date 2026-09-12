@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 18,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-18.ts",
+    "sourceSha256": "7e01c64de6950da45f0cfef1f2c360aa78c710e130557ce706fabb84cfc6c645",
+    "releaseFingerprintSha256": "75b59fd2488e1161a24e59c142f7b653e0f6d059ea4256082fc4fd7ae5b71d96"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+      "transcriptSha256": "398c10297622ca0847260359e06158fb0fc2da134d348c235a94967d797203ae",
+      "objectiveSha256": "14ddca18915b19d65f2a9541744bff4a1e35a0941dada3c121407389578de878"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+      "transcriptSha256": "398c10297622ca0847260359e06158fb0fc2da134d348c235a94967d797203ae",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-18-listening-evidence.json",
+      "evidenceSha256": "8b5595cb8614a582e313e2c3a1d5e2b7cc315e141195463f210e68dda609c907"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 101.54,
+        "endSeconds": 102.76,
+        "audiblePhrase": "I'm at 8 Chestnut Close.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 159.48,
+        "endSeconds": 161.94,
+        "audiblePhrase": "I saw a poster in the local library, actually.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 220.26,
+        "endSeconds": 224.5,
+        "audiblePhrase": "I mainly read historical fiction, though I do enjoy the occasional biography.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 257.28000000000003,
+        "endSeconds": 261.16,
+        "audiblePhrase": "I was going to say Thursdays. Actually, no, Wednesdays are better for me.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 263.84000000000003,
+        "endSeconds": 271.24,
+        "audiblePhrase": "Wednesdays it is, then, and just so you know, we ask every new member to bring their favorite novel to their first meeting so they can introduce themselves.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 298.8,
+        "endSeconds": 303.74,
+        "audiblePhrase": "At the moment, we meet in a room above the bookshop on the high street. There's plenty of parking nearby.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 304.76,
+        "endSeconds": 311.04,
+        "audiblePhrase": "Now let me explain the two membership options. Standard membership costs 25 pounds a year.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 311.54,
+        "endSeconds": 315.9,
+        "audiblePhrase": "That includes two free books a year and a monthly newsletter with reviews and recommendations.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 350.16,
+        "endSeconds": 355.22,
+        "audiblePhrase": "Premium membership is 45 pounds a year. You get six free books a year instead of two,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 355.42,
+        "endSeconds": 358.38,
+        "audiblePhrase": "and premium members can also attend our free writing workshops.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 513.4000000000001,
+        "endSeconds": 548.54,
+        "audiblePhrase": "First, a few important rules. We want everyone to enjoy the reserve, but there are a couple of things we don't allow. I'm afraid dogs are not permitted anywhere on the reserve, even on a lead, because they disturb the ground-nesting birds. And although the lake looks inviting, swimming is strictly forbidden. The water is much deeper and colder than it appears. You are very welcome to cycle but only on the marked trails, not on the narrow footpaths. Photography is positively encouraged, and picnicking is fine in the designated area near the car park.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 513.4000000000001,
+        "endSeconds": 548.54,
+        "audiblePhrase": "First, a few important rules. We want everyone to enjoy the reserve, but there are a couple of things we don't allow. I'm afraid dogs are not permitted anywhere on the reserve, even on a lead, because they disturb the ground-nesting birds. And although the lake looks inviting, swimming is strictly forbidden. The water is much deeper and colder than it appears. You are very welcome to cycle but only on the marked trails, not on the narrow footpaths. Photography is positively encouraged, and picnicking is fine in the designated area near the car park.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 577.18,
+        "endSeconds": 580.94,
+        "audiblePhrase": "Blackwater covers around 200 hectares of wetland and forest.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 580.94,
+        "endSeconds": 590.08,
+        "audiblePhrase": "It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 580.94,
+        "endSeconds": 590.08,
+        "audiblePhrase": "It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 590.8,
+        "endSeconds": 594.48,
+        "audiblePhrase": "The most popular attraction is our bird hide, which overlooks the main lake.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 595.22,
+        "endSeconds": 600.18,
+        "audiblePhrase": "From there in winter you can often see large flocks of geese that migrate here from Scandinavia.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 697.46,
+        "endSeconds": 704.12,
+        "audiblePhrase": "If you follow the Blue Trail, it takes you through the ancient woodland, where some of the oak trees are over 400 years old.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 704.12,
+        "endSeconds": 711.14,
+        "audiblePhrase": "The Red Trail is longer and leads to the Observation Tower, which gives you a spectacular view across the whole reserve.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 745.18,
+        "endSeconds": 750.86,
+        "audiblePhrase": "Entry to the reserve is free, but we rely on donations, so please give generously if you can.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 905.459,
+        "endSeconds": 925.786,
+        "audiblePhrase": "Right, Maya and Tom. Let's talk about your linguistics presentation. Remind me what topic you've chosen. We're looking at why some languages become endangered and what can be done to keep them alive. We were originally going to compare two languages, but we decided to focus on just one, a language called Manx from the Isle of Man.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 956.14,
+        "endSeconds": 965.706,
+        "audiblePhrase": "Well, it's a fascinating case because the last native speaker died in the 19th seas, but the language has since been revived. There are now children being brought up speaking it again, which is quite unusual.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 992.501,
+        "endSeconds": 1003.086,
+        "audiblePhrase": "We started by reading academic articles, but honestly, the most useful material came from interviews with people involved in the revival. Talking to actual speakers gave us insights we couldn't get from books.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1032.575,
+        "endSeconds": 1042.366,
+        "audiblePhrase": "Our central point is that reviving a language depends less on money than on community enthusiasm. Funding helps, of course, but without a committed community, it simply doesn't work.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1141.838,
+        "endSeconds": 1147.938,
+        "audiblePhrase": "The hardest part is keeping the presentation short enough. We've got so much material that we keep going over the time limit.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1157.008,
+        "endSeconds": 1161.908,
+        "audiblePhrase": "First, I think you should include some audio so the audience can actually hear what Manx",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1185.516,
+        "endSeconds": 1188.308,
+        "audiblePhrase": "Second, add a map showing where the language is spoken.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1189.108,
+        "endSeconds": 1193.968,
+        "audiblePhrase": "People find geography helps them remember, and do check your pronunciation of the place names.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1194.628,
+        "endSeconds": 1196.708,
+        "audiblePhrase": "Get a native speaker to record them if you can.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1197.488,
+        "endSeconds": 1202.248,
+        "audiblePhrase": "Finally, remember to rehearse the timing at least twice before the actual presentation.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1394.935,
+        "endSeconds": 1401.315,
+        "audiblePhrase": "A desert is usually defined as any region that receives less than 250 mm of rainfall a year.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1402.035,
+        "endSeconds": 1406.275,
+        "audiblePhrase": "By this definition, deserts cover roughly one-third of the Earth's land surface,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1410.395,
+        "endSeconds": 1417.135,
+        "audiblePhrase": "The largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1447.475,
+        "endSeconds": 1451.135,
+        "audiblePhrase": "Many, such as the cactus, store water in their thick stems",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1455.235,
+        "endSeconds": 1459.255,
+        "audiblePhrase": "Others have extremely long roots that reach deep underground to find moisture.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1495.455,
+        "endSeconds": 1501.055,
+        "audiblePhrase": "Many desert animals are nocturnal, meaning they are active only at night, when temperatures are cooler.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1504.935,
+        "endSeconds": 1510.955,
+        "audiblePhrase": "It can survive its entire life without ever drinking, obtaining all the water it needs from the seeds it eats.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1632.54,
+        "endSeconds": 1638.78,
+        "audiblePhrase": "One of the greatest threats is desertification, the process by which fertile land gradually turns into desert,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1638.78,
+        "endSeconds": 1643.38,
+        "audiblePhrase": "usually as a result of human activities such as overgrazing by livestock.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1676.86,
+        "endSeconds": 1681.94,
+        "audiblePhrase": "They receive intense sunshine, which makes them ideal locations for generating solar energy.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "76b3e23dcb22975bf3db11d6b516b58437d64920ec437862eaad3a9bf49b65cf",
+      "objectiveSha256": "14ddca18915b19d65f2a9541744bff4a1e35a0941dada3c121407389578de878"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Genetic engineering—the direct manipulation of an organism's genome—now has applications in medicine, agriculture, and environmental research. Jennifer Doudna and Emmanuelle Charpentier reported a programmable CRISPR-Cas9 editing method in 2012, accelerating the field by making targeted DNA cutting easier and less costly than many earlier tools. Researchers subsequently adapted the system to cells and organisms far beyond the original bacterial context. Accuracy depends on guide design, delivery, cell type, and the repair outcome, so \"precise\" does not mean error-free or equally practical in every organism. Doudna and Charpentier received the Nobel Prize in Chemistry in 2020 for developing a method for genome editing.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In medicine, CRISPR has opened therapeutic possibilities for serious inherited disorders. In 2023, regulators in the United Kingdom and the United States authorised Casgevy, the first approved therapy to use CRISPR-Cas9; the US approval initially covered patients aged twelve or older with sickle cell disease and recurrent vaso-occlusive crises. The treatment edits a patient's blood-forming stem cells outside the body and returns them after conditioning treatment. Strong trial results justify the approval, but the procedure is intensive and long-term follow-up remains important. Researchers are also investigating edited immune cells for cancer, approaches to persistent viral infection, and in-vivo therapies delivered directly to particular tissues.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Agricultural genetic engineering predates CRISPR. Genetically modified crops containing introduced genes—such as Bt maize, which produces a bacterial insecticide—have been grown commercially since the 1990s. CRISPR can make small changes within an organism's own genome without leaving foreign DNA in the final plant, although it can also be used to insert sequences. This distinction has regulatory implications: some jurisdictions classify certain edited crops more leniently than transgenic crops, while others regulate according to technique or trait. Proposed and commercial applications include altered disease resistance, drought response, nutritional profiles, and shelf life; each trait still requires evidence about performance and unintended effects.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The governance of genetic engineering must distinguish laboratory research, edits to a patient's non-reproductive cells, environmental release, and heritable changes to embryos or reproductive cells. Benefits, risks, consent, and who can be affected differ sharply across those categories. International rules remain uneven, while experiments and medical travel can cross borders. In 2018, He Jiankui announced the birth of twins whose embryos had been edited in an attempt to alter susceptibility to HIV. The intervention lacked adequate oversight, offered disputed medical benefit, and created heritable changes with uncertain unintended effects. He was later imprisoned by Chinese authorities for illegal medical practice. The episode prompted stronger calls for registries, oversight, transparency, and international coordination. It also showed that governance requires enforceable responsibilities, routes for reporting unsafe work, and continuing review as capabilities change, rather than written principles alone.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Genetic engineering—the direct manipulation of an organism's genome—now has applications in medicine, agriculture, and environmental research. Jennifer Doudna and Emmanuelle Charpentier reported a programmable CRISPR-Cas9 editing method in 2012, accelerating the field by making targeted DNA cutting easier and less costly than many earlier tools. Researchers subsequently adapted the system to cells and organisms far beyond the original bacterial context. Accuracy depends on guide design, delivery, cell type, and the repair outcome, so \"precise\" does not mean error-free or equally practical in every organism. Doudna and Charpentier received the Nobel Prize in Chemistry in 2020 for developing a method for genome editing.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In medicine, CRISPR has opened therapeutic possibilities for serious inherited disorders. In 2023, regulators in the United Kingdom and the United States authorised Casgevy, the first approved therapy to use CRISPR-Cas9; the US approval initially covered patients aged twelve or older with sickle cell disease and recurrent vaso-occlusive crises. The treatment edits a patient's blood-forming stem cells outside the body and returns them after conditioning treatment. Strong trial results justify the approval, but the procedure is intensive and long-term follow-up remains important. Researchers are also investigating edited immune cells for cancer, approaches to persistent viral infection, and in-vivo therapies delivered directly to particular tissues.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Agricultural genetic engineering predates CRISPR. Genetically modified crops containing introduced genes—such as Bt maize, which produces a bacterial insecticide—have been grown commercially since the 1990s. CRISPR can make small changes within an organism's own genome without leaving foreign DNA in the final plant, although it can also be used to insert sequences. This distinction has regulatory implications: some jurisdictions classify certain edited crops more leniently than transgenic crops, while others regulate according to technique or trait. Proposed and commercial applications include altered disease resistance, drought response, nutritional profiles, and shelf life; each trait still requires evidence about performance and unintended effects.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The future of smart cities will be shaped by governance, values, procurement, and the distribution of benefits. Sensors and analytics in a city with weak institutions or deep inequality may do little to address those conditions and could exacerbate them. Digital-only services can exclude residents without affordable devices, connectivity, accessible design, identification, or confidence using online systems. Long contracts may also lock a city into one vendor or make public scrutiny difficult. Researchers therefore argue that the most important questions are political: who selects the problem, whose data is used and on what terms, who can challenge an automated decision, and who receives the efficiencies created? Public participation and independent evaluation can expose trade-offs before a pilot becomes permanent infrastructure.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. European programmes often frame smart-city work through privacy, data governance, and citizen participation, although practice varies within every region. Barcelona's \"Superblocks\" programme is primarily an urban-design and mobility intervention rather than a sensor project; measurement can still help assess traffic, air quality, walking, cycling, and public-space use. Amsterdam publishes many public datasets and supports projects involving government, researchers, firms, and residents. Open data can support innovation and scrutiny, but privacy, security, licensing, and data quality mean that not every record collected by city infrastructure should or can be released.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Cybersecurity is a significant risk. Smart infrastructure depends on networked systems whose interconnection creates attack surfaces for malicious actors and pathways for failures to spread. A 2018 ransomware attack disrupted Atlanta government functions, and Baltimore suffered a major ransomware incident the following year. These municipal attacks did not prove that every connected physical system was compromised, but they demonstrated the operational and recovery costs of losing access to data and services. Traffic management, water treatment, and energy distribution require stronger protection because interference could affect physical safety. Segmentation, access control, tested backups, software maintenance, incident exercises, and manual fallback procedures are therefore part of service design rather than optional additions.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The economic case for smart-city investment rests on efficiency, avoided failures, and improved service quality. Adaptive traffic systems may reduce delay and fuel use; predictive maintenance can identify equipment before it fails; energy management can expose waste. Yet a technical improvement does not automatically produce a net saving. Procurement, integration with old systems, staff training, cybersecurity, replacement cycles, and vendor fees all create costs, while extra road capacity or easier travel can induce new demand. Consultancies and technology suppliers publish large estimates of global benefits, but they may have a commercial interest in adoption. A credible business case should state the counterfactual, include operating costs, measure distributional effects, and compare the project with simpler alternatives.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Privacy and surveillance concerns are equally significant. Sensor networks, facial recognition, and analytics raise questions about what data is collected, who can access it, how long it is retained, and whether people can contest an error. China's social credit system is often inaccurately described as one national score assigned to every citizen from social media and CCTV. Research instead describes a fragmented collection of financial records, regulatory systems, sectoral lists, court-judgment enforcement, and some local pilots. Certain blacklists can still produce serious restrictions, including limits on particular forms of travel, so correcting the popular account does not remove concerns about due process or state power. Democratic cities also face function creep—the use of data for purposes beyond those originally stated.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. The \"smart city\" has become a prominent idea in urban planning and technology policy. Broadly, it describes the use of sensors, connectivity, data analytics, and artificial intelligence to manage infrastructure and services, improve residents' quality of life, or reduce environmental impacts. Applications include adaptive traffic signals, energy and water monitoring, predictive maintenance, emergency systems, and platforms through which residents report faults or use council services. The label itself does not demonstrate that a project works: cities must define the public problem, compare digital and non-digital options, and measure outcomes rather than treating the installation of connected equipment as success.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. The \"smart city\" has become a prominent idea in urban planning and technology policy. Broadly, it describes the use of sensors, connectivity, data analytics, and artificial intelligence to manage infrastructure and services, improve residents' quality of life, or reduce environmental impacts. Applications include adaptive traffic signals, energy and water monitoring, predictive maintenance, emergency systems, and platforms through which residents report faults or use council services. The label itself does not demonstrate that a project works: cities must define the public problem, compare digital and non-digital options, and measure outcomes rather than treating the installation of connected equipment as success.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The economic case for smart-city investment rests on efficiency, avoided failures, and improved service quality. Adaptive traffic systems may reduce delay and fuel use; predictive maintenance can identify equipment before it fails; energy management can expose waste. Yet a technical improvement does not automatically produce a net saving. Procurement, integration with old systems, staff training, cybersecurity, replacement cycles, and vendor fees all create costs, while extra road capacity or easier travel can induce new demand. Consultancies and technology suppliers publish large estimates of global benefits, but they may have a commercial interest in adoption. A credible business case should state the counterfactual, include operating costs, measure distributional effects, and compare the project with simpler alternatives.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Privacy and surveillance concerns are equally significant. Sensor networks, facial recognition, and analytics raise questions about what data is collected, who can access it, how long it is retained, and whether people can contest an error. China's social credit system is often inaccurately described as one national score assigned to every citizen from social media and CCTV. Research instead describes a fragmented collection of financial records, regulatory systems, sectoral lists, court-judgment enforcement, and some local pilots. Certain blacklists can still produce serious restrictions, including limits on particular forms of travel, so correcting the popular account does not remove concerns about due process or state power. Democratic cities also face function creep—the use of data for purposes beyond those originally stated.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The future of smart cities will be shaped by governance, values, procurement, and the distribution of benefits. Sensors and analytics in a city with weak institutions or deep inequality may do little to address those conditions and could exacerbate them. Digital-only services can exclude residents without affordable devices, connectivity, accessible design, identification, or confidence using online systems. Long contracts may also lock a city into one vendor or make public scrutiny difficult. Researchers therefore argue that the most important questions are political: who selects the problem, whose data is used and on what terms, who can challenge an automated decision, and who receives the efficiencies created? Public participation and independent evaluation can expose trade-offs before a pilot becomes permanent infrastructure.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Social interaction is central to many accounts. Michael Tomasello argues that joint attention—the ability to share attention to an object or event and interpret another person's communicative intention—supports word learning and cultural learning. Behaviours such as following gaze, pointing, and checking another person's response emerge gradually during the first year and continue developing. They help narrow the possible referent of a new word, but a single gaze episode does not determine meaning: children integrate repeated situations, grammar, prior knowledge, and feedback. Conversational turns also give a learner a chance to act, receive a contingent response, and repair misunderstanding. This responsiveness differs from merely hearing many words, which is why researchers measure the social organisation as well as the quantity of input.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Multilingual children may acquire languages simultaneously or add one after another. Exposure to multiple languages does not itself cause a language disorder, and code-switching is commonly systematic rather than evidence of confusion. Knowledge can be distributed across languages, so testing only one can underestimate a child's concepts and total communicative resources. Progress in each language depends partly on opportunities to hear and use it. Some studies associate bilingual experience with advantages on particular executive-function tasks, while meta-analyses disagree about the size, consistency, and causes of these effects. Socioeconomic conditions, migration history, proficiency, task choice, and publication bias can influence the comparison.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Developmental studies identify broad patterns alongside substantial variation. Infants begin tuning perception to frequently heard sound contrasts during the first year, and sensitivity to some unfamiliar contrasts may decline as native categories become more efficient. Many children produce recognisable words around the end of the first year. Vocabulary growth may accelerate between eighteen and twenty-four months, a pattern often called a \"vocabulary explosion\", but the timing and abruptness are not universal. Gesture, comprehension, production, the structure of the language, and the quantity and quality of interaction all affect what a milestone measure captures. Population ranges are therefore more informative than treating one birthday as a pass-or-fail deadline.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Developmental studies identify broad patterns alongside substantial variation. Infants begin tuning perception to frequently heard sound contrasts during the first year, and sensitivity to some unfamiliar contrasts may decline as native categories become more efficient. Many children produce recognisable words around the end of the first year. Vocabulary growth may accelerate between eighteen and twenty-four months, a pattern often called a \"vocabulary explosion\", but the timing and abruptness are not universal. Gesture, comprehension, production, the structure of the language, and the quantity and quality of interaction all affect what a milestone measure captures. Population ranges are therefore more informative than treating one birthday as a pass-or-fail deadline.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Multilingual children may acquire languages simultaneously or add one after another. Exposure to multiple languages does not itself cause a language disorder, and code-switching is commonly systematic rather than evidence of confusion. Knowledge can be distributed across languages, so testing only one can underestimate a child's concepts and total communicative resources. Progress in each language depends partly on opportunities to hear and use it. Some studies associate bilingual experience with advantages on particular executive-function tasks, while meta-analyses disagree about the size, consistency, and causes of these effects. Socioeconomic conditions, migration history, proficiency, task choice, and publication bias can influence the comparison.",
+        "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Language research informs early literacy, additional-language teaching, and support for communication disorders. Developmental language disorder is a persistent difficulty learning, understanding, or using language that is not explained by conditions such as hearing loss or insufficient exposure; the US NIDCD estimates that it affects about one in fourteen kindergarten children. It can affect multilingual and monolingual children and may persist into adulthood. Assessment should examine all languages and distinguish a disorder from normal multilingual development. Timely, targeted intervention can help build skills and participation, although outcomes vary and no single programme suits every child.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Social interaction is central to many accounts. Michael Tomasello argues that joint attention—the ability to share attention to an object or event and interpret another person's communicative intention—supports word learning and cultural learning. Behaviours such as following gaze, pointing, and checking another person's response emerge gradually during the first year and continue developing. They help narrow the possible referent of a new word, but a single gaze episode does not determine meaning: children integrate repeated situations, grammar, prior knowledge, and feedback. Conversational turns also give a learner a chance to act, receive a contingent response, and repair misunderstanding. This responsiveness differs from merely hearing many words, which is why researchers measure the social organisation as well as the quantity of input.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "How Children Acquire Language",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "84c1ca3f0408fcca6d5ed86632a5d4c8ed53a89d105a2fb3a9a4461ee55a57e5",
+      "task1ImageSha256": "0deaeac2c6dff66ef61d408b6f0221f0889863a1dc8eda8a30b66aeb5331eefb"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "3f975cb82027d6eb693b8004fa4fd920d3db120b9e90bbb98d8782f45d92d7b0"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "14ddca18915b19d65f2a9541744bff4a1e35a0941dada3c121407389578de878",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-18-objective-review.json",
+    "evidenceSha256": "797f6f9ed1a861d1166aed6b67e8a88a5048f8b8afb20c4f58908e5d60a3bd5c",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-objective-key-audit-14-20"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "84352fd1821b6a58f5fd2b4e34435cc9c0dcdaf936ced4e132c10b35e0c0741f"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "75b59fd2488e1161a24e59c142f7b653e0f6d059ea4256082fc4fd7ae5b71d96",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

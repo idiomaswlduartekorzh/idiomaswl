@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T21:57:02.724Z",
+  "set": 3,
+  "source": "src/data/mocks/ielts-set-3.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-3.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-3-4/set-3/ielts-listening-set-3.mp3",
+  "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+  "transcriptSha256": "966b1e71aed0caa36f190606092f87a8ac4a74b14a3f91acdb80f27b594f621a",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "3327278c9238fb9e400df9fbd3b36aafa6b92619ec0d9db1642a6ef5f4658f56",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-3-4/set-3/whisper-set-3.json",
+  "asrSourceSha256": "12f92debcaff6b57210a3a996f9f51036586d37fe75462496dd5dd9a22ecc71e",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3066,
+  "recognizedWords": 3006,
+  "editDistance": 131,
+  "wordErrorRate": 0.0427,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "14th",
+        "14",
+        "fourteenth"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 94.6,
+      "endSeconds": 96.38,
+      "audiblePhrase": "14th March 1998"
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "Berkley"
+      ],
+      "asrRecognitionVariants": [
+        "Berkeley"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 126.56,
+      "endSeconds": 132.18,
+      "audiblePhrase": "Blat 733 Berkeley Street, Oxford. The postcode is OX14PL."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "sophie.marsh@greenmail.co.uk"
+      ],
+      "asrRecognitionVariants": [
+        "sophie marsh at greenmail co uk"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 169.1,
+      "endSeconds": 172.84,
+      "audiblePhrase": "Yes, it's sophie.marsh at greenmail.co.uk"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "standard"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 258.08,
+      "endSeconds": 261.84,
+      "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "8",
+        "eight"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 258.08,
+      "endSeconds": 261.84,
+      "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 258.08,
+      "endSeconds": 261.84,
+      "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-form__7",
+      "candidateAcceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 292.42,
+      "endSeconds": 294.8,
+      "audiblePhrase": "There's a one off registration fee of two pounds."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "online",
+        "website"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 296.42,
+      "endSeconds": 297.98,
+      "audiblePhrase": "Can I also reserve books online?"
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 340.04,
+      "endSeconds": 345.24,
+      "audiblePhrase": "Premium membership gives you 12 books and access to our digital archive."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "archive",
+        "digital"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 340.04,
+      "endSeconds": 345.24,
+      "audiblePhrase": "Premium membership gives you 12 books and access to our digital archive."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "32"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 498.96,
+      "endSeconds": 506.76,
+      "audiblePhrase": "Our borough currently recycles about 32% of its household waste, which is below the national average of 45%."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "55"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 506.76,
+      "endSeconds": 513.62,
+      "audiblePhrase": "The new program aims to raise that figure to at least 55% by the end of the year."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "caddy",
+        "kitchen caddy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 552.98,
+      "endSeconds": 560.22,
+      "audiblePhrase": "Starting next month, every household will receive a small kitchen caddy for collecting food scraps,"
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "weekly"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 560.68,
+      "endSeconds": 564.5,
+      "audiblePhrase": "which will be emptied into a larger outdoor bin collected weekly."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "energy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 565.56,
+      "endSeconds": 572,
+      "audiblePhrase": "The material will go to an anaerobic digestion plant where it is converted into energy and compost."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "recycling"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 573.18,
+      "endSeconds": 580.24,
+      "audiblePhrase": "Some arrangements connected with the recycling program briefing may depend on the time of day or the number of visitors."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 651.14,
+      "endSeconds": 656.22,
+      "audiblePhrase": "We're adding six new bottle bank sites across the borough to make this more convenient."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "guide"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 759.5,
+      "endSeconds": 767.96,
+      "audiblePhrase": "So each household will receive a printed guide through the post, and there's a new website at recycleright.gov.uk,"
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "Rooftop",
+        "rooftop"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 986.58,
+      "endSeconds": 991.96,
+      "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "layers"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 986.58,
+      "endSeconds": 991.96,
+      "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "allotments",
+        "gardens"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 986.58,
+      "endSeconds": 991.96,
+      "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "Land",
+        "land"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1090.66,
+      "endSeconds": 1100.36,
+      "audiblePhrase": "Space is obviously a major constraint in dense urban areas. Land is expensive, and there's always competition from housing and commercial development."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "expertise",
+        "knowledge",
+        "skills"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1224.58,
+      "endSeconds": 1232.28,
+      "audiblePhrase": "Another challenge is expertise. A lot of urban residents simply don't know how to grow food. There's a need for training and ongoing support."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "Mesopotamia"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1415.02,
+      "endSeconds": 1423.12,
+      "audiblePhrase": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "pictographic"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1424.14,
+      "endSeconds": 1436.98,
+      "audiblePhrase": "Originally pictographic, that is based on simple pictures representing objects, cuneiform evolved over centuries into a more abstract system of wedge shaped marks pressed into clay tablets with a reed stylus."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "stylus"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1424.14,
+      "endSeconds": 1436.98,
+      "audiblePhrase": "Originally pictographic, that is based on simple pictures representing objects, cuneiform evolved over centuries into a more abstract system of wedge shaped marks pressed into clay tablets with a reed stylus."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "administrative",
+        "administration"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1437.5,
+      "endSeconds": 1443.42,
+      "audiblePhrase": "It was used mainly for administrative and commercial record keeping, lists of goods, taxes and transactions."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "Egypt"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1469.2,
+      "endSeconds": 1472.38,
+      "audiblePhrase": "And around the same time hieroglyphics emerged in ancient Egypt."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "sound"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1473.22,
+      "endSeconds": 1481.7,
+      "audiblePhrase": "Like early cuneiform, Egyptian hieroglyphics began as a pictographic system, but also developed sound symbols, making it a mixed system."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "religious"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1483.12,
+      "endSeconds": 1489.68,
+      "audiblePhrase": "The pictoglyphics were used not only for administration, but also for religious texts, royal inscriptions and later, literary works."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "Phoenicians"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1602.48,
+      "endSeconds": 1612.9,
+      "audiblePhrase": "The first true alphabet, in which each symbol represents a consonant sound, is generally attributed to the Phoenicians around 1050 BC."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "vowels"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1614.4,
+      "endSeconds": 1620.46,
+      "audiblePhrase": "This system spread to the Greeks, who made the crucial innovation of adding vowels producing the first complete alphabet."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "literacy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1658.44,
+      "endSeconds": 1661.38,
+      "audiblePhrase": "This made widespread literacy possible for the first time."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:12:48.927Z",
+  "set": 20,
+  "status": "PASS",
+  "manifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/ielts-listening-set-20.mp3",
+  "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/asr-report-set-20.json",
+    "reportSha256": "1a95d98b12f35f982b8564d449b778e472b9dfe7bf493581f7f0bf40dadf354c",
+    "wordErrorRate": 0.0248,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "28/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.0248,
+  "focusedReports": [
+    {
+      "part": 4,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/focused-part-4.wav",
+      "audioSha256": "d1d727099de79bc12285d873d52b8636a7b678561ce3464b23897663b39a3c17",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/whisper-focused-set-20-part-4.json",
+      "asrSha256": "9ef86d5824e5052b5d1c7f1b2e1185d65405f157c93120678fa4d03d2f5c6126",
+      "segmentIndexes": [
+        92,
+        94,
+        96
+      ],
+      "status": "PASS",
+      "expectedWords": 187,
+      "recognizedWords": 188,
+      "editDistance": 4,
+      "wordErrorRate": 0.0214,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 32,
+          "responseKey": "l4-form__32",
+          "candidateAcceptedAnswers": [
+            "currency"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 15.7,
+          "endSeconds": 18.42,
+          "audiblePhrase": "Interestingly, the seeds were also used as a form of currency."
+        },
+        {
+          "question": 33,
+          "responseKey": "l4-form__33",
+          "candidateAcceptedAnswers": [
+            "Europe"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 24.14,
+          "endSeconds": 26.96,
+          "audiblePhrase": "in the 16th century, they carried chocolate back to Europe."
+        },
+        {
+          "question": 34,
+          "responseKey": "l4-form__34",
+          "candidateAcceptedAnswers": [
+            "sugar"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 27.52,
+          "endSeconds": 30.08,
+          "audiblePhrase": "There, people added sugar to the drink to make it sweeter,"
+        },
+        {
+          "question": 35,
+          "responseKey": "l4-form__35",
+          "candidateAcceptedAnswers": [
+            "chemist"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 50.52,
+          "endSeconds": 53.9,
+          "audiblePhrase": "when a Dutch chemist invented a press that removed much of the fat,"
+        },
+        {
+          "question": 36,
+          "responseKey": "l4-form__36",
+          "candidateAcceptedAnswers": [
+            "fat"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 50.52,
+          "endSeconds": 53.9,
+          "audiblePhrase": "when a Dutch chemist invented a press that removed much of the fat,"
+        }
+      ],
+      "completionEvidenceFound": 5,
+      "completionEvidenceTotal": 5,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

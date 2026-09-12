@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "ielts_sets_8_13_academic_objective_reviews",
+  "reviewedAt": "2026-09-09",
+  "sets": [
+    {
+      "set": 8,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-8-v2",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "f4ad25635858521d2e77cdaa0a0dd56f864158c6f937a08a7a025a47bf756f0f",
+      "reviewSha256": "5bbc6602fb0b455c5a6823fc53877615028139aff39d40ac3a11de4a7e6f5bf0",
+      "fileSha256": "e86cc68a8436a60e93d6a4815d6915b6b3bf40c48754d9ba5f67c48a620111e1",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-8-objective-review.json"
+    },
+    {
+      "set": 9,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-9-v5",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "8f7e6fe39f19b580585b25cfd67420a9e722c9e3998e3aa0d5e561fc9a1cf2d3",
+      "reviewSha256": "5a1b93790782023d25f4dedfd9f260630268be16ef9d2311f64a1c6c63259f51",
+      "fileSha256": "dcd88c7ad91c2adf63b7e418cd64cc5be6934cf21cd135cd4519308bc6989acf",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-9-objective-review.json"
+    },
+    {
+      "set": 10,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-10-v4",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "173a137c5df8869b344350db782436d141f7ba5dbe2389f7993d0ee9b6ba319a",
+      "reviewSha256": "251730ac2ea2003c32b107397e0d864c162d5652540d0c195defd8e898bc1e0d",
+      "fileSha256": "202f0b926cf353b23ce51c268547326178fab6e7004fa7846a3294153ab10c51",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-10-objective-review.json"
+    },
+    {
+      "set": 11,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-11-v4",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "2aaa3ca110de07140c7def50c5961b06bfb49455081da93b3ba73746591f5bb0",
+      "reviewSha256": "3de8c1e24555416f4eb27061a2831a72aea9961fb298eeea1931d5b45501058f",
+      "fileSha256": "244a3a90c536b3e650ef28ff654dee409d2d9ccbe056f1bdba24518894570d1c",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-11-objective-review.json"
+    },
+    {
+      "set": 12,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-12-v3",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "0d4eac5c63cd3683564ba95f63ba5db962f593cd6d9235add84373fec77b5cf4",
+      "reviewSha256": "d6936a667d4886898ad944ba291c0e8f4de243fe77c9748a3a80aaf6e4edf7c7",
+      "fileSha256": "7e9fbd1f32c54905d65ba5cab6ee8b2268da640c83f6f1b0365a026080558638",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-12-objective-review.json"
+    },
+    {
+      "set": 13,
+      "status": "APPROVED",
+      "contentVersionAtReview": "ielts-set-13-v4",
+      "objectivePoints": 80,
+      "ambiguousPoints": 0,
+      "objectiveMaterialSha256": "42e7d6078f97145b8de08806aa98cccbd6bafb14402341cadf76266abd72cac7",
+      "reviewSha256": "745e9ade3d03b7595fee69164d9424c84f3b590729565f4b27babaefab61f90c",
+      "fileSha256": "d01a2be24eddc382bb1f75cc13c1909774bf1ba7d2902f285dffc76249a70f87",
+      "reviewPath": "config/ielts-harness/academic-reviews/set-13-objective-review.json"
+    }
+  ],
+  "summary": {
+    "sets": 6,
+    "objectivePoints": 480,
+    "supportedPoints": 480,
+    "ambiguousPoints": 0,
+    "corrections": 3,
+    "correctedAcceptedVariants": 2,
+    "correctedQuestionStems": 1
+  },
+  "manifestSha256": "d363862bb0bed9c6714bd0d65b33950df70de6b617b6dbcdea3815582abc76b7"
+}

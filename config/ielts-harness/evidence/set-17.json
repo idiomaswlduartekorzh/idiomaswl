@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 17,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-17.ts",
+    "sourceSha256": "6ef86f2b7a044ba3b4ef942227fd7c39b13e0bb1595f5bfcfd914af85723fada",
+    "releaseFingerprintSha256": "ed1f134e85016a2224bf28fbb19d4c883d766b24e35420bec25b69552bcfb4ae"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+      "transcriptSha256": "9f2c676755fe417a3710e053b44dcccf55dd89550d1f376d8a20c7b37e9ee291",
+      "objectiveSha256": "16abac66ef7747b3f04130a9c6f8d2f9c3136b16e755874900d0463164bb7a62"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+      "transcriptSha256": "9f2c676755fe417a3710e053b44dcccf55dd89550d1f376d8a20c7b37e9ee291",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-17-listening-evidence.json",
+      "evidenceSha256": "8d860a2ad785f1291f564539a9a006f63a7c0fa59b0d53bbc82deccc1ed8ba92"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 96.5,
+        "endSeconds": 100.36,
+        "audiblePhrase": "Thank you, Mr Whitfield. And what's your address? It's 15 Maple Avenue.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 165.38,
+        "endSeconds": 171.72,
+        "audiblePhrase": "And when's the best time for us to call you if we need to? In the evenings, please. I'm at work all day.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 224.48,
+        "endSeconds": 229.82,
+        "audiblePhrase": "There's water coming in from the roof whenever it rains heavily. Let me finish the home repair",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 258.92,
+        "endSeconds": 262.42,
+        "audiblePhrase": "Yes, there's also a broken fence in the back garden that needs repairing.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 267.52,
+        "endSeconds": 273.14,
+        "audiblePhrase": "I'd prefer the morning. Oh, actually, no. Make it the afternoon. I have to take the children to",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 300.06,
+        "endSeconds": 304.68,
+        "audiblePhrase": "And how will our technician get in if you're not at home? I'll leave a spare key with a neighbour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 305.02,
+        "endSeconds": 311.08,
+        "audiblePhrase": "They're always in. Perfect. Now, let me tell you about our two maintenance plans. The basic plan",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 311.08,
+        "endSeconds": 318.12,
+        "audiblePhrase": "includes two visits a year with a call out fee of £45 each time, but it does include free parts.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 357.42,
+        "endSeconds": 362.32,
+        "audiblePhrase": "With that plan, the call out fee drops to £30 and it also includes free labour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 357.42,
+        "endSeconds": 362.32,
+        "audiblePhrase": "With that plan, the call out fee drops to £30 and it also includes free labour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 460.96,
+        "endSeconds": 502.1,
+        "audiblePhrase": "Good morning, everyone, and welcome to the Riverside Art Gallery. My name is Karen and I'll be your guide this morning. Before we begin, let me tell you about a few improvements we've made recently. The most exciting addition is our new rooftop café, which opened last month and has wonderful views over the river. We've also created a brand new workshop room for children on the second floor, where families can take part in hands-on activities. Now, some of you have asked about the gift shop and the members' lounge. Those have been here for years. And our audio guide app, I'm afraid, is still being developed and isn't available yet. Before describing the individual",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 460.96,
+        "endSeconds": 502.1,
+        "audiblePhrase": "Good morning, everyone, and welcome to the Riverside Art Gallery. My name is Karen and I'll be your guide this morning. Before we begin, let me tell you about a few improvements we've made recently. The most exciting addition is our new rooftop café, which opened last month and has wonderful views over the river. We've also created a brand new workshop room for children on the second floor, where families can take part in hands-on activities. Now, some of you have asked about the gift shop and the members' lounge. Those have been here for years. And our audio guide app, I'm afraid, is still being developed and isn't available yet. Before describing the individual",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 526.1800000000001,
+        "endSeconds": 532.54,
+        "audiblePhrase": "Right, let me explain how the tour works. The tour lasts about 90 minutes and we'll finish back here",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 532.54,
+        "endSeconds": 538.3,
+        "audiblePhrase": "at the main entrance. Please note that photography is allowed, but only without flash, as bright",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 538.3,
+        "endSeconds": 543.96,
+        "audiblePhrase": "light can damage the older paintings. If you'd like to leave your bags, there are free lockers",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 570.88,
+        "endSeconds": 575.58,
+        "audiblePhrase": "We'll start in the East Wing, which houses the Gallery's collection of landscape paintings.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 576.3,
+        "endSeconds": 581.78,
+        "audiblePhrase": "The highlight there is a work called The Harvest, which the Gallery bought at auction in 2019",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 588.06,
+        "endSeconds": 593.5,
+        "audiblePhrase": "stay on the path, as the grass has just been receded. As the Art Gallery tour continues,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 682.86,
+        "endSeconds": 687.94,
+        "audiblePhrase": "Gallery on the first floor. Many of these portraits were donated by a local collector,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 722.94,
+        "endSeconds": 727.4,
+        "audiblePhrase": "and don't forget that gallery members receive a 10% discount in the shop.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 862.6800000000001,
+        "endSeconds": 886.26,
+        "audiblePhrase": "So Amy and Josh, thanks for coming in. I've read your draft proposal for the Sports Science Study. Perhaps you could start by reminding me what you're actually trying to find out. Well, originally we wanted to look at how diet affects sprinting speed, so now we're focusing specifically on how the amount of sleep athletes get affects their reaction times.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 927.92,
+        "endSeconds": 944.5,
+        "audiblePhrase": "We also need to be careful about cause and association in the Sports Science Study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 993.36,
+        "endSeconds": 1004.3,
+        "audiblePhrase": "The main problem has been getting participants to attend at the same time each day. Reaction times vary depending on the time of day, so if people come at different hours, that adds noise to the data.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1106.88,
+        "endSeconds": 1122.08,
+        "audiblePhrase": "This is the surprising bit. We expected that less sleep would always mean slower reactions, but actually for the fittest participants, one bad night didn't seem to affect them much at all. It seems fitness might protect against short-term sleep loss.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1162.54,
+        "endSeconds": 1181,
+        "audiblePhrase": "We should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing. The committee meets next Tuesday.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 937.9,
+        "endSeconds": 941.68,
+        "audiblePhrase": "particularly when the sample is small, participants select themselves,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1162.54,
+        "endSeconds": 1165.52,
+        "audiblePhrase": "We should keep a log of each participant's caffeine intake,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1169.04,
+        "endSeconds": 1173.34,
+        "audiblePhrase": "And I'd like you to add a short questionnaire about their usual sleep patterns.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1174.06,
+        "endSeconds": 1178.54,
+        "audiblePhrase": "Finally, make sure you get ethical approval before you start testing.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1179.28,
+        "endSeconds": 1181,
+        "audiblePhrase": "The committee meets next Tuesday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1335.9,
+        "endSeconds": 1340.16,
+        "audiblePhrase": "to reproduce texts as early as the 7th century.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1341.0400000000002,
+        "endSeconds": 1345.7,
+        "audiblePhrase": "The Chinese also experimented with movable type made from clay,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1346.42,
+        "endSeconds": 1350.48,
+        "audiblePhrase": "but because the Chinese writing system uses thousands of different characters,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1384.04,
+        "endSeconds": 1389.84,
+        "audiblePhrase": "Gutenberg's crucial innovation, developed in the German city of Mainz around 1440,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1390.54,
+        "endSeconds": 1392.66,
+        "audiblePhrase": "was movable type made from metal.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1393.6200000000001,
+        "endSeconds": 1396.68,
+        "audiblePhrase": "He created a special alloy that was durable enough",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1472.22,
+        "endSeconds": 1474.08,
+        "audiblePhrase": "Another essential element was ink.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1568.26,
+        "endSeconds": 1572.52,
+        "audiblePhrase": "Before printing, books were copied by hand, usually by monks,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1594.34,
+        "endSeconds": 1598.1,
+        "audiblePhrase": "is the reformation possible, because pamphlets could be produced",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1661.56,
+        "endSeconds": 1664.82,
+        "audiblePhrase": "Accurate diagrams could be reproduced identically",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "0023a7400992c5f2bdf2cb8cda139a0d4dd198043542f7fd9231435a90740dbe",
+      "objectiveSha256": "16abac66ef7747b3f04130a9c6f8d2f9c3136b16e755874900d0463164bb7a62"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The scale of the change is significant. Average surface pH has fallen from approximately 8.2 before industrialisation to around 8.1 today—a change that, because the pH scale is logarithmic, represents about a twenty-six percent increase in hydrogen ion concentration. Future change depends strongly on emissions. The IPCC projects a further mean open-ocean surface decline by 2081–2100 of about 0.08 pH units under a low-emissions pathway and about 0.37 under a very high-emissions pathway, relative to 1995–2014. A single end-of-century value therefore conceals a wide range of possible outcomes and regional variation.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economic and social stakes are substantial. FAO estimates that aquatic animal foods supplied at least one-fifth of animal-protein consumption for 3.2 billion people in 2021. Shellfish, crustaceans, forage fish, and zooplankton matter both commercially and as parts of food webs, but ecological change will not affect every fishery in the same way. In the US Pacific Northwest, oyster hatchery production began falling sharply in 2005. Monitoring later connected major larval losses with corrosive, high-carbon water drawn into coastal facilities during seasonal upwelling, and hatcheries adapted by tracking chemistry and timing water intake.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Mitigation of ocean acidification at a global scale ultimately requires reducing carbon dioxide emissions, since ocean chemistry is coupled to atmospheric concentrations and absorbed carbon circulates far beyond one shoreline. Local interventions—adding alkaline substances to coastal waters, protecting and restoring coastal vegetation, and reducing pollution or overharvesting—may protect valuable sites or improve ecosystem resilience, but they cannot cancel global change without emissions reduction. Deliberately adding alkalinity at large scale remains an area of research: any proposal must account for energy and material demand, ecological side effects, monitoring, and how long added carbon remains stored. Sustained observations are also essential because natural daily and seasonal variability can obscure the human-driven trend at an individual site. The scientific evidence therefore supports combining rapid emissions reduction with carefully evaluated local adaptation rather than treating either as a complete substitute for the other.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The introduction of commercially successful synchronised sound in the late 1920s transformed the industry rapidly. The Jazz Singer (1927), produced by Warner Bros, is conventionally cited as the first \"talkie\", although earlier films had experimented with recorded sound and much of this film remained silent. By the early 1930s, sound production had become the Hollywood norm. The transition created demand for performers with suitable voices and dramatic training. Some silent stars lost opportunities, while stage-trained performers gained them, although sound alone did not determine every career. It also encouraged the musical as a distinct Hollywood genre and gave dialogue writers a more central creative role.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The postwar period brought significant challenges to Hollywood dominance. Television drew audiences away from cinemas, and European cinema—particularly Italian neorealism and the French New Wave—offered formal and social alternatives to polished studio entertainment. Neorealist filmmakers often shot amid postwar streets and used non-professional performers; New Wave directors exploited lighter equipment, location work, jump cuts, and self-conscious storytelling. Individual filmmakers did not all use the same methods, but figures including Vittorio De Sica, Federico Fellini, Jean-Luc Godard, and François Truffaut expanded the possibilities of personal direction. The \"auteur\" tradition—in which a director's recurring style and concerns help define a film—became influential in criticism and among later American filmmakers.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Cinema became a major industry and a powerful medium for shaping and reflecting culture within little more than a century. Its origins lie in overlapping nineteenth-century experiments in photography, flexible film, cameras, peep-show machines, and projection. Inventors in France, Britain, Germany, and the United States worked simultaneously and competitively, so no single event can securely be called the birth of cinema. The Lumière brothers, Auguste and Louis, held an influential paid screening in Paris on 28 December 1895, showing short scenes such as workers leaving their factory. Yet customers had already paid to view films in Edison's Kinetoscope boxes, and projected motion pictures had been shown to paying audiences in New York and Berlin earlier in 1895. The Lumière programme became iconic partly because their compact Cinématographe and international operators helped popularise projection.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Cinema has long developed through exchanges among national and regional industries. India includes Hindi-language production centred in Mumbai, often called Bollywood, as well as major industries in Telugu, Tamil, Malayalam, and other languages; production totals depend on which industries and releases are counted. South Korean cinema achieved a prominent milestone when Bong Joon-ho's Parasite won the Academy Award for Best Picture in 2020, the first non-English-language film to do so. Chinese, Nigerian, Brazilian, and many other cinemas sustain substantial domestic and diasporic audiences. Streaming platforms can make subtitled films available across borders without a traditional theatrical release, while commissioning local-language productions. At the same time, catalogue decisions, territorial rights, and recommendation systems influence which works audiences actually discover, so technical availability does not guarantee equal visibility.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Hollywood consolidated its dominance of global cinema in the 1930s and 1940s through a \"studio system\" in which major studios controlled every aspect of production and distribution—writing, directing, casting, releasing, and exhibiting films through their own chains of theatres. Stars and directors worked under long-term exclusive contracts, giving studios extraordinary control over creative and financial resources. This system produced the \"Golden Age\" of Hollywood, characterised by the refinement of genre conventions—the Western, the gangster film, the screwball comedy, the musical—and by the luminous star personas of figures such as Cary Grant, Katharine Hepburn, and Humphrey Bogart.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The earliest films were silent and very short, often lasting less than a minute. As the medium developed through the 1900s and 1910s, filmmakers discovered techniques that are now the grammar of cinema: editing (cutting between shots to create narrative and meaning), close-ups (focusing on facial expression or detail to convey emotion), and cross-cutting (alternating between simultaneous actions in different locations to create tension). D. W. Griffith, the American director whose 1915 film The Birth of a Nation remains deeply controversial for its racist content, was nonetheless influential in systematising and demonstrating these techniques at epic length. His subsequent film Intolerance (1916) developed complex parallel narratives that influenced filmmakers for generations.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The blockbuster era, initiated by the enormous commercial success of Jaws (1975) and Star Wars (1977), reorganised Hollywood around large-budget, wide-release \"event\" films with massive marketing campaigns. Studios became more risk-averse, concentrating investment on films with established intellectual property, franchise potential, and global market appeal. The rise of home video in the 1980s and streaming services in the twenty-first century further transformed distribution models, while digital technology revolutionised both production—replacing celluloid with digital image capture—and visual effects, enabling the spectacle of contemporary superhero and science fiction films.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Cinema became a major industry and a powerful medium for shaping and reflecting culture within little more than a century. Its origins lie in overlapping nineteenth-century experiments in photography, flexible film, cameras, peep-show machines, and projection. Inventors in France, Britain, Germany, and the United States worked simultaneously and competitively, so no single event can securely be called the birth of cinema. The Lumière brothers, Auguste and Louis, held an influential paid screening in Paris on 28 December 1895, showing short scenes such as workers leaving their factory. Yet customers had already paid to view films in Edison's Kinetoscope boxes, and projected motion pictures had been shown to paying audiences in New York and Berlin earlier in 1895. The Lumière programme became iconic partly because their compact Cinématographe and international operators helped popularise projection.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The earliest films were silent and very short, often lasting less than a minute. As the medium developed through the 1900s and 1910s, filmmakers discovered techniques that are now the grammar of cinema: editing (cutting between shots to create narrative and meaning), close-ups (focusing on facial expression or detail to convey emotion), and cross-cutting (alternating between simultaneous actions in different locations to create tension). D. W. Griffith, the American director whose 1915 film The Birth of a Nation remains deeply controversial for its racist content, was nonetheless influential in systematising and demonstrating these techniques at epic length. His subsequent film Intolerance (1916) developed complex parallel narratives that influenced filmmakers for generations.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The introduction of commercially successful synchronised sound in the late 1920s transformed the industry rapidly. The Jazz Singer (1927), produced by Warner Bros, is conventionally cited as the first \"talkie\", although earlier films had experimented with recorded sound and much of this film remained silent. By the early 1930s, sound production had become the Hollywood norm. The transition created demand for performers with suitable voices and dramatic training. Some silent stars lost opportunities, while stage-trained performers gained them, although sound alone did not determine every career. It also encouraged the musical as a distinct Hollywood genre and gave dialogue writers a more central creative role.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Hollywood consolidated its dominance of global cinema in the 1930s and 1940s through a \"studio system\" in which major studios controlled every aspect of production and distribution—writing, directing, casting, releasing, and exhibiting films through their own chains of theatres. Stars and directors worked under long-term exclusive contracts, giving studios extraordinary control over creative and financial resources. This system produced the \"Golden Age\" of Hollywood, characterised by the refinement of genre conventions—the Western, the gangster film, the screwball comedy, the musical—and by the luminous star personas of figures such as Cary Grant, Katharine Hepburn, and Humphrey Bogart.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The postwar period brought significant challenges to Hollywood dominance. Television drew audiences away from cinemas, and European cinema—particularly Italian neorealism and the French New Wave—offered formal and social alternatives to polished studio entertainment. Neorealist filmmakers often shot amid postwar streets and used non-professional performers; New Wave directors exploited lighter equipment, location work, jump cuts, and self-conscious storytelling. Individual filmmakers did not all use the same methods, but figures including Vittorio De Sica, Federico Fellini, Jean-Luc Godard, and François Truffaut expanded the possibilities of personal direction. The \"auteur\" tradition—in which a director's recurring style and concerns help define a film—became influential in criticism and among later American filmmakers.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Cinema has long developed through exchanges among national and regional industries. India includes Hindi-language production centred in Mumbai, often called Bollywood, as well as major industries in Telugu, Tamil, Malayalam, and other languages; production totals depend on which industries and releases are counted. South Korean cinema achieved a prominent milestone when Bong Joon-ho's Parasite won the Academy Award for Best Picture in 2020, the first non-English-language film to do so. Chinese, Nigerian, Brazilian, and many other cinemas sustain substantial domestic and diasporic audiences. Streaming platforms can make subtitled films available across borders without a traditional theatrical release, while commissioning local-language productions. At the same time, catalogue decisions, territorial rights, and recommendation systems influence which works audiences actually discover, so technical availability does not guarantee equal visibility.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "For much of the twentieth century, economists often modelled a rational actor who has stable preferences, responds consistently to available information, and chooses the option that maximises utility. This simplified figure is sometimes called homo economicus. Economists did not necessarily claim that every person literally performs perfect calculations; the assumptions supplied a tractable benchmark for analysing markets and aggregate outcomes. Models can also incorporate limited information, uncertainty, and constraints without abandoning rational choice. The benchmark becomes less informative, however, when predictable features of attention, framing, memory, or self-control systematically alter choices. Behavioural evidence asks whether an apparent anomaly is robust and whether revising an assumption improves explanation enough to justify added complexity.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "For much of the twentieth century, economists often modelled a rational actor who has stable preferences, responds consistently to available information, and chooses the option that maximises utility. This simplified figure is sometimes called homo economicus. Economists did not necessarily claim that every person literally performs perfect calculations; the assumptions supplied a tractable benchmark for analysing markets and aggregate outcomes. Models can also incorporate limited information, uncertainty, and constraints without abandoning rational choice. The benchmark becomes less informative, however, when predictable features of attention, framing, memory, or self-control systematically alter choices. Behavioural evidence asks whether an apparent anomaly is robust and whether revising an assumption improves explanation enough to justify added complexity.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Behavioural economics draws on psychology, laboratory and field experiments, and other empirical methods to study systematic departures from standard predictions. Earlier ideas such as Herbert Simon's bounded rationality prepared the ground; Daniel Kahneman and Amos Tversky's work on judgement and decisions under uncertainty became especially influential from the 1970s onward. Richard Thaler connected these findings to economic problems, while Thaler and Cass Sunstein's 2008 book Nudge widened policy attention. Kahneman, a psychologist, received the 2002 Prize in Economic Sciences for integrating psychological research into economics, and Thaler received the prize in 2017 for contributions to behavioural economics. Laboratory control can identify a mechanism, while field experiments test behaviour in operational settings; neither automatically proves that an effect will be large across cultures, institutions, or time.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+        "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The best-known policy application is \"nudging\"—altering the architecture of choice predictably without forbidding options or substantially changing economic incentives. Examples include default enrolment in pension plans with an opt-out, reminders, simplified forms, placing healthier food prominently, and energy reports that compare a household with similar neighbours. Some large-scale trials have produced meaningful changes at relatively low implementation cost; other interventions have small, null, short-lived, or context-specific effects. A default can increase enrolment without proving that every participant is better off, so evaluation should examine welfare and distribution as well as uptake. A result from one institution may not transfer unchanged to another population. Evaluation therefore needs to report costs and null results, test implementation at scale, and monitor long-term or unintended effects.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The best-known policy application is \"nudging\"—altering the architecture of choice predictably without forbidding options or substantially changing economic incentives. Examples include default enrolment in pension plans with an opt-out, reminders, simplified forms, placing healthier food prominently, and energy reports that compare a household with similar neighbours. Some large-scale trials have produced meaningful changes at relatively low implementation cost; other interventions have small, null, short-lived, or context-specific effects. A default can increase enrolment without proving that every participant is better off, so evaluation should examine welfare and distribution as well as uptake. A result from one institution may not transfer unchanged to another population. Evaluation therefore needs to report costs and null results, test implementation at scale, and monitor long-term or unintended effects.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "7a28b8770344a6c4391c9fef48fdf90857987b680cfa9f87029de123a629b360",
+      "task1ImageSha256": "c1fa939b15401d4d1b6f09e628f256415b1bd9cebbd9828d7f27725cd43bfd88"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "09acb420dabb5ab7a77cb678fe50365b286bc2804b6ab5b30492b5a7e7faac34"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "16abac66ef7747b3f04130a9c6f8d2f9c3136b16e755874900d0463164bb7a62",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-17-objective-review.json",
+    "evidenceSha256": "d4cf4ef5fa2c4d14bf01aac5aca1e021e964de3cabc340d1638565adafc34aa4",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-objective-key-audit-14-20"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "15f4e15f6b1bc12b801ef8021fcf21970432ec6df6e12e9f41566271c7abe985"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "ed1f134e85016a2224bf28fbb19d4c883d766b24e35420bec25b69552bcfb4ae",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

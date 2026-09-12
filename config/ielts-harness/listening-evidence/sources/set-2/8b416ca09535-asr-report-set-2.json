@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T21:45:34.694Z",
+  "set": 2,
+  "source": "src/data/mocks/ielts-set-2.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-2.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-2/set-2/ielts-listening-set-2.mp3",
+  "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62",
+  "transcriptSha256": "c39eb4e036e4fcd19a32b61cfd34da8ab034ed681827410ff6273f9c764cdb3e",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "668b811563da6db27e9cc8b686364c65e3355c9ba68e13dcd6e49a4377264571",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-2/set-2/whisper-set-2.json",
+  "asrSourceSha256": "9b123313cf5e82b26acae73b71898e36e898d7f5877fc61f6015c7b272c47012",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3130,
+  "recognizedWords": 3080,
+  "editDistance": 97,
+  "wordErrorRate": 0.031,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "078 5501 3742",
+        "07855013742"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 97.7,
+      "endSeconds": 100.92,
+      "audiblePhrase": "My mobile is 078-5501-3742."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "Saturday",
+        "saturday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 104.24000000000001,
+      "endSeconds": 106.48,
+      "audiblePhrase": "Saturday, if possible, in the afternoon."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "four",
+        "4"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 130.46,
+      "endSeconds": 133.94,
+      "audiblePhrase": "Let me check. We have court three free from 2 o'clock to 4 o'clock."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 137.06,
+      "endSeconds": 142.78,
+      "audiblePhrase": "Great. The cost for that slot is 12 pounds per hour, so that's 24 pounds in total."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "65",
+        "sixty-five",
+        "sixty five"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 239.18,
+      "endSeconds": 246.94,
+      "audiblePhrase": "Annual membership is 65 pounds and includes unlimited use of the gym and swimming pool, as well as discounted court hire."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "2.50",
+        "2.5",
+        "2½"
+      ],
+      "asrRecognitionVariants": [
+        "two pounds fifty"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 277.52,
+      "endSeconds": 283.82,
+      "audiblePhrase": "We do. 2 pounds 50 per racket per session. You can collect them from the equipment room near the main entrance."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "morning",
+        "10–12",
+        "10-12"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 284.4,
+      "endSeconds": 290.16,
+      "audiblePhrase": "Absolutely. Our head coach, Mr. Patel, is available on Saturday from 10 to 12 in the morning."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "2:30",
+        "half past two",
+        "14:30"
+      ],
+      "asrRecognitionVariants": [
+        "half pass two",
+        "half-pass two"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 315.8,
+      "endSeconds": 319.26,
+      "audiblePhrase": "In that case, our other coach, Ms. Carter, is available from Half Pass 2."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "one hour",
+        "1 hour",
+        "hour"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 321.3,
+      "endSeconds": 323.42,
+      "audiblePhrase": "Shall I put you down for 30 minutes or a full hour?"
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "no",
+        "No"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 357.16,
+      "endSeconds": 363.98,
+      "audiblePhrase": "Just so it is clear, no. Coaching is not included with membership. It is charged separately."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "10 p.m.",
+        "10pm",
+        "ten"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 497,
+      "endSeconds": 506.28,
+      "audiblePhrase": "Let's start with the library. The main library is open seven days a week, from 8 in the morning until 10 at night on weekdays and 9 to 6 on weekends."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 497,
+      "endSeconds": 506.28,
+      "audiblePhrase": "Let's start with the library. The main library is open seven days a week, from 8 in the morning until 10 at night on weekdays and 9 to 6 on weekends."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "3–5",
+        "three to five",
+        "three-five"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 520.54,
+      "endSeconds": 528.22,
+      "audiblePhrase": "If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "sports hall",
+        "sports centre"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 599.42,
+      "endSeconds": 602.76,
+      "audiblePhrase": "The health center is on the south side of the campus, next to the sports hall."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "Thursdays",
+        "Thursday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 607.6,
+      "endSeconds": 611.02,
+      "audiblePhrase": "There is a pharmacist on site on Tuesdays and Thursdays."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "warden"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 692.62,
+      "endSeconds": 699.14,
+      "audiblePhrase": "Regarding accommodation. If you're in university halls, your warden is your first point of contact for any issues."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "15",
+        "fifteen"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 733.46,
+      "endSeconds": 737.16,
+      "audiblePhrase": "It runs every 15 minutes from 7 in the morning until 11 at night."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "11",
+        "eleven"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 733.46,
+      "endSeconds": 737.16,
+      "audiblePhrase": "It runs every 15 minutes from 7 in the morning until 11 at night."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "grid"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1149.68,
+      "endSeconds": 1154.2,
+      "audiblePhrase": "We could also suggest increased investment in grid infrastructure since that's often the bottleneck."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "locations"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1154.52,
+      "endSeconds": 1161.18,
+      "audiblePhrase": "Agreed. One thing I wanted to ask you about is the map we were asked to include showing wind farm locations. Did you manage to create it?"
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "labels",
+        "label"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1181.6,
+      "endSeconds": 1185.68,
+      "audiblePhrase": "I started it, but I'm having trouble with the software. The labels aren't positioning correctly."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "programme",
+        "program",
+        "software"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1186.1,
+      "endSeconds": 1190.62,
+      "audiblePhrase": "I can help with that. I used the same program for my geography project."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "library"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1230.4,
+      "endSeconds": 1233.26,
+      "audiblePhrase": "Sure. Let's meet at the library at two o'clock."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "species"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1387.48,
+      "endSeconds": 1395.06,
+      "audiblePhrase": "Coral reefs cover less than one percent of the ocean floor, yet they support approximately 25 percent of all known marine species."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "polyps",
+        "polyp"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1430.3999999999999,
+      "endSeconds": 1433.22,
+      "audiblePhrase": "Each individual coral is called a polyp."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "calcium"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1433.78,
+      "endSeconds": 1441.38,
+      "audiblePhrase": "Polyps secrete a hard calcium carbonate skeleton, and over thousands of years, these skeletons accumulate to form the reef structure."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "algae"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1442.36,
+      "endSeconds": 1446.1,
+      "audiblePhrase": "Inside each polyp live tiny algae called zocanthellae."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "energy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1446.6,
+      "endSeconds": 1457.18,
+      "audiblePhrase": "This is a symbiotic relationship, the algae photosynthesize, providing the coral with up to 90 percent of its energy, while the coral provides the algae with nutrients and shelter."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "temperature",
+        "temperatures"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1480.82,
+      "endSeconds": 1489.6,
+      "audiblePhrase": "This comparison helps identify which conditions are essential and which are merely helpful when water temperatures rise even slightly above normal."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "white"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1495.44,
+      "endSeconds": 1503.88,
+      "audiblePhrase": "This is known as coral bleaching. Without the algae, the coral turns white, and if temperatures remain high, the coral eventually dies."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "acidification"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1591.24,
+      "endSeconds": 1598.84,
+      "audiblePhrase": "Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "fishing"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1600.08,
+      "endSeconds": 1606.04,
+      "audiblePhrase": "This can cause critical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "starfish"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1606.9,
+      "endSeconds": 1612.9,
+      "audiblePhrase": "And the spread of invasive species such as the crown of thorn starfish, which feeds on coral tissue."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

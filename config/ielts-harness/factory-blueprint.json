@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Scale the audited IELTS Academic mock factory from 20 to 40 sets without weakening release gates.",
+  "referenceSet": 1,
+  "currentRange": [1, 20],
+  "nextRange": [21, 40],
+  "referenceContract": {
+    "listeningParts": 4,
+    "listeningQuestions": 40,
+    "readingPassages": 3,
+    "readingQuestions": 40,
+    "writingTasks": 2,
+    "speakingParts": 3,
+    "leadCaptureRequired": true,
+    "answerSheetBlueprintRequired": true,
+    "versionScopedDraftsRequired": true
+  },
+  "contentFloors": {
+    "readingWordsPerSet": [2150, 2750],
+    "listeningWordsPerPart": 680,
+    "listeningWordsPerSet": 2800,
+    "writingMinimumWords": [150, 250]
+  },
+  "agentStages": [
+    { "id": "contract-author", "output": "complete mock source and answer-sheet blueprint", "gate": "STRUCTURE_PASS" },
+    { "id": "academic-key-reviewer", "output": "independent Q1-Q40 Listening and Reading evidence", "gate": "ACADEMIC_PASS" },
+    { "id": "visual-writing-reviewer", "output": "hash-bound Writing Task 1 visual and Task 2 prompt review", "gate": "WRITING_PASS" },
+    { "id": "speaking-reviewer", "output": "Parts 1-3 breadth, cue card and topic continuity review", "gate": "SPEAKING_PASS" },
+    { "id": "casting-cost-auditor", "output": "voice casting, exact character invoice and credit reserve", "gate": "COST_AUTHORIZED" },
+    { "id": "audio-producer", "output": "staged master outside public", "gate": "TECH_PASS" },
+    { "id": "asr-alignment-reviewer", "output": "Q1-Q40 audible evidence with timecodes", "gate": "ASR_PASS" },
+    { "id": "ux-runtime-reviewer", "output": "desktop, mobile, persistence, timer and lead capture evidence", "gate": "UX_PASS" },
+    { "id": "human-release-owner", "output": "receipt bound to the current release fingerprint", "gate": "RELEASE_READY" }
+  ],
+  "audioEconomics": {
+    "provider": "ElevenLabs",
+    "preferredModel": "eleven_flash_v2_5",
+    "fallbackModel": "eleven_multilingual_v2",
+    "creditsPerCharacter": { "eleven_flash_v2_5": 0.5, "eleven_multilingual_v2": 1 },
+    "planningCharactersPerSet": [15000, 22000],
+    "planningCreditsPerSet": [7500, 11000],
+    "contingencyRatio": 0.2,
+    "pilotBatchSize": 1,
+    "subsequentBatchSize": 2,
+    "maximumAutomaticAttemptsPerSegment": 2,
+    "requireFreshAccountSnapshotBeforeEveryBatch": true,
+    "generationRequiresExplicitHumanAuthorization": true
+  },
+  "reusePolicy": {
+    "archiveIsCandidateBankOnly": true,
+    "requireQuestionCorrespondenceAudit": true,
+    "requireTechnicalQa": true,
+    "requireAsrQ1Q40": true,
+    "neverPublishDirectlyFromArchive": true
+  },
+  "failClosedOn": [
+    "missing asset",
+    "answer-key drift",
+    "question or transcript drift",
+    "unsupported answer",
+    "stale visual hash",
+    "incomplete speaking contract",
+    "audio outside technical limits",
+    "insufficient ElevenLabs credits",
+    "missing human release receipt"
+  ]
+}

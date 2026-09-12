@@ -48,6 +48,10 @@ RECEPTIONIST: Very straightforward. You fill in a form online or in person. Annu
 
 CUSTOMER: That sounds good. Can I also book a coach for a session?
 
+CUSTOMER: Do you have racket hire?
+
+RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
+
 RECEPTIONIST: Absolutely. Our head coach, Mr Patel, is available on Saturday from ten to twelve in the morning.
 
 CUSTOMER: I'd prefer the afternoon, to match our court booking.
@@ -60,11 +64,9 @@ RECEPTIONIST: Shall I put you down for thirty minutes or a full hour?
 
 CUSTOMER: A full hour, please.
 
+RECEPTIONIST: Just so it is clear, no, coaching is not included with membership; it is charged separately.
+
 RECEPTIONIST: Done. Is there anything else you need?
-
-CUSTOMER: Do you have racket hire?
-
-RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
 
 CUSTOMER: Perfect. Thank you very much.`,
       questions: [
@@ -93,7 +95,7 @@ Racket hire: £{{6}} per racket`,
             { num: 3, answers: ['four', '4'], maxWords: 1 },
             { num: 4, answers: ['12', 'twelve'], maxWords: 1 },
             { num: 5, answers: ['65', 'sixty-five', 'sixty five'], maxWords: 2 },
-            { num: 6, answers: ['2.50', '2½', 'two fifty'], maxWords: 2 },
+            { num: 6, answers: ['2.50', '2.5', '2½'], maxWords: 1 },
           ],
         },
         {
@@ -104,7 +106,7 @@ Racket hire: £{{6}} per racket`,
           groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
           headers: ['Coach', 'Availability on Saturday', 'Session length booked', 'Included with membership'],
           rows: [
-            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10 to 12'], maxWords: 1 }, 'N/A', 'No'],
+            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10-12'], maxWords: 1 }, 'N/A', 'No'],
             ['Ms Carter', { num: 8, answers: ['2:30', 'half past two', '14:30'], maxWords: 3 }, { num: 9, answers: ['one hour', '1 hour', 'hour'], maxWords: 2 }, { num: 10, answers: ['no', 'No'], maxWords: 1 }],
           ],
         },
@@ -170,11 +172,11 @@ Transport
 • Free shuttle bus runs every {{19}} minutes.
 • Bus service ends at {{20}} p.m.`,
           blanks: [
-            { num: 13, answers: ['10 p.m.', '10pm', 'ten'], maxWords: 2 },
+            { num: 13, answers: ['10 p.m.', '10pm'], maxWords: 2 },
             { num: 14, answers: ['6', 'six'], maxWords: 1 },
             { num: 15, answers: ['3–5', 'three to five', 'three-five'], maxWords: 3 },
-            { num: 16, answers: ['sports hall', 'sports centre'], maxWords: 2 },
-            { num: 17, answers: ['Thursdays', 'Thursday'], maxWords: 1 },
+            { num: 16, answers: ['sports hall'], maxWords: 2 },
+            { num: 17, answers: ['Thursdays'], maxWords: 1 },
             { num: 18, answers: ['warden'], maxWords: 1 },
             { num: 19, answers: ['15', 'fifteen'], maxWords: 1 },
             { num: 20, answers: ['11', 'eleven'], maxWords: 1 },
@@ -297,8 +299,8 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
           blanks: [
             { num: 26, answers: ['grid'], maxWords: 1 },
             { num: 27, answers: ['locations'], maxWords: 1 },
-            { num: 28, answers: ['labels', 'label'], maxWords: 1 },
-            { num: 29, answers: ['programme', 'program', 'software'], maxWords: 1 },
+            { num: 28, answers: ['labels'], maxWords: 1 },
+            { num: 29, answers: ['programme', 'program'], maxWords: 1 },
             { num: 30, answers: ['library'], maxWords: 1 },
           ],
         },
@@ -355,11 +357,11 @@ Major threats
 • Invasive species such as the crown-of-thorns {{40}}.`,
           blanks: [
             { num: 31, answers: ['species'], maxWords: 1 },
-            { num: 32, answers: ['polyps', 'polyp'], maxWords: 1 },
+            { num: 32, answers: ['polyps'], maxWords: 1 },
             { num: 33, answers: ['calcium'], maxWords: 1 },
             { num: 34, answers: ['algae'], maxWords: 1 },
             { num: 35, answers: ['energy'], maxWords: 1 },
-            { num: 36, answers: ['temperature', 'temperatures'], maxWords: 1 },
+            { num: 36, answers: ['temperatures'], maxWords: 1 },
             { num: 37, answers: ['white'], maxWords: 1 },
             { num: 38, answers: ['acidification'], maxWords: 1 },
             { num: 39, answers: ['fishing'], maxWords: 1 },
@@ -376,21 +378,21 @@ Major threats
       skill: 'reading',
       title: 'Reading Passage 1: The History of Glass',
       instructions: 'Read the passage and answer Questions 1–13.',
-      passage: `Glass is one of humanity's oldest manufactured materials, yet it remains, in many ways, one of the most remarkable. Its origins lie in the natural world: volcanic glass, known as obsidian, formed when molten rock cooled rapidly, was used by early humans to make cutting tools and weapons long before the first synthetic glass was produced. The earliest manufactured glass objects — beads and vessels — date from around 3500 BCE in Mesopotamia and ancient Egypt.
+      passage: `Glass is one of humanity's oldest manufactured materials, yet it remains, in many ways, one of the most remarkable. Its origins lie in the natural world: volcanic glass, known as obsidian, formed when molten rock cooled rapidly, was used by early humans to make cutting tools and weapons long before the first synthetic glass was produced. Archaeologists distinguish true glass from earlier glazed stone and faience, so dates depend on what is counted. The Corning Museum of Glass dates the first glass made by humans to about four thousand years ago; most objects from this early period have been found in Mesopotamia and Egypt.
 
-The first glass was made by heating a mixture of silica (sand), an alkali such as soda ash or potash, and lime. These ingredients, when melted together at very high temperatures and then allowed to cool, produce the hard, transparent solid we recognise today. In the ancient world, glass was coloured, often a deep blue-green, due to impurities in the raw materials. The Romans were among the first to develop clearer glass by adding manganese dioxide.
+The first glass was made by heating a mixture of silica (sand), an alkali such as soda ash or potash, and lime. Silica forms the basic network, the alkali lowers the temperature needed for melting, and lime improves chemical durability. When the mixture cools, its atoms do not arrange themselves into the orderly repeating structure of a crystal. This disordered structure helps explain why glass can be transparent yet shaped while hot. In the ancient world, glass was coloured, often a deep blue-green, due to impurities in the raw materials. Roman glassmakers used ingredients including manganese compounds to reduce unwanted colour.
 
-For centuries, glass objects were luxury items, affordable only by the wealthy. This changed dramatically in the first century BCE with the invention of glassblowing in the region of modern-day Syria. By blowing air through a metal tube into a gather of molten glass, craftsmen could quickly and cheaply produce a wide variety of shapes. This technique spread rapidly across the Roman Empire and transformed glass from a precious commodity into an everyday material.
+For centuries, glass objects were luxury items, affordable only by the wealthy. This changed dramatically around the first century BCE with the development of glassblowing in the eastern Mediterranean. By blowing air through a metal tube into a gather of molten glass, craftspeople could form thin-walled vessels more quickly and with less material than many earlier casting and core-forming methods required. Moulds could also impose repeated shapes or decoration. The technique spread across the Roman Empire and helped turn many kinds of glassware from precious objects into everyday goods.
 
 The fall of the Roman Empire slowed innovation in the West, and the centre of glassmaking shifted to the Islamic world. Craftsmen in what are now Iran, Iraq, and Syria developed new techniques, including the use of coloured enamels and gilding, which produced objects of extraordinary beauty.
 
-By the eleventh century, Venice had established itself as the European capital of glassmaking. The island of Murano, to which the glassblowers were relocated in 1291 — ostensibly to reduce the risk of fire in Venice itself — became synonymous with high-quality glass. Venetian craftsmen jealously guarded their techniques; it was reportedly punishable by death to reveal the secrets of the trade to outsiders.
+By the late Middle Ages, Venice had established itself as a European centre of glassmaking. A decree of 1291 required furnaces to move to the island of Murano, with fire risk in the densely built city given as the principal reason. Its stated main purpose was therefore to prevent destructive fires, not industrial espionage, although concentrating production on the island also made valuable skills and workers easier for the authorities to supervise. Murano became associated with high-quality colourless glass, mirrors, and elaborate decorative work. Its craftspeople guarded specialist knowledge, although dramatic stories about the penalties for leaving the island should be treated cautiously rather than as simple fact.
 
 The next great innovation came in 1674, when Englishman George Ravenscroft added lead oxide to the glass mixture. The resulting lead crystal glass was heavier and had a higher refractive index, giving it exceptional brilliance and making it ideal for decorative pieces such as chandeliers and fine tableware.
 
-The industrialisation of glass production in the nineteenth and twentieth centuries made glass ubiquitous. The development of plate glass through the float glass process — in which molten glass is floated on a bed of molten tin to produce perfectly flat sheets — transformed architecture, making possible the vast glass facades of modern buildings.
+The industrialisation of glass production in the nineteenth and twentieth centuries made glass ubiquitous. Earlier flat glass usually needed grinding and polishing, which added cost and could introduce distortion. In 1952, Alastair Pilkington began developing the float glass process, announced commercially in 1959 after years of experiments. Molten glass is poured continuously onto a bath of molten tin, where it spreads into a level ribbon; controlled cooling then produces sheets with nearly parallel surfaces. The process became the world standard for high-quality windows and made the vast glass facades of modern buildings economical.
 
-Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, has revolutionised telecommunications. And scientists are developing smart glass that can change its transparency in response to electrical signals, with applications ranging from privacy windows to energy-efficient building design.`,
+Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, carries information as pulses of light with very low signal loss. Coatings can control heat, glare, or reflection, while some smart glass changes its transparency in response to electrical signals. Its usefulness depends on controlled composition as much as on transparency. Glass can also be remelted, but colour mixing, contamination, collection systems, and the different compositions required for containers, windows, screens, and laboratory products complicate closed-loop recycling.`,
       questions: [
         {
           type: 'formgroup',
@@ -415,7 +417,7 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
           type: 'mcq',
           id: 'r1q6',
           part: 5,
-          text: 'The earliest manufactured glass objects were produced around 3500 BCE.',
+          text: 'The Corning Museum dates the first glass made by humans to about four thousand years ago.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -452,7 +454,7 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
           options: [
             { letter: 'A', text: 'bulletproof windows' },
             { letter: 'B', text: 'optical fibre telecommunications' },
-            { letter: 'C', text: 'smart glass for privacy and energy efficiency' },
+            { letter: 'C', text: 'smart glass that changes transparency' },
             { letter: 'D', text: 'underwater exploration equipment' },
             { letter: 'E', text: 'solar panel production' },
           ],
@@ -485,19 +487,19 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
       skill: 'reading',
       title: 'Reading Passage 2: Bees and Pollination',
       instructions: 'Read the passage and answer Questions 14–26.',
-      passage: `Of all the creatures that contribute to the pollination of flowering plants, bees are by far the most important. It is estimated that one third of the human food supply depends, directly or indirectly, on insect pollination, and bees account for the majority of this work. Without them, many of our most familiar foods — including apples, almonds, blueberries, and squash — would cease to exist in their current form.
+      passage: `Bees are among the most important animals that pollinate flowering plants, but they work alongside flies, moths, butterflies, beetles, wasps, birds, and bats. The scale of dependence is often described imprecisely. FAO reports that animal pollinators affect about 35 percent of global crop production by volume and enhance the yield of 87 of 115 leading food crops; this does not mean that bees alone produce one third of all human food. Many staples can reproduce without animal pollination, while numerous fruits, nuts, vegetables, and seeds depend on it partly or strongly. A loss of pollinators would therefore reduce the yield, quality, reliability, and diversity of many familiar foods rather than make every affected crop disappear immediately.
 
-Bees are uniquely adapted to the task of pollination. Their bodies are covered with branched, feathery hairs that readily trap pollen grains as the bee moves from flower to flower. Many species also possess specialised structures for carrying pollen: bumblebees and honeybees, for example, have basket-like structures on their hind legs called corbiculae, or pollen baskets, which they use to transport pollen back to the colony. Solitary bees, by contrast, carry pollen in dense patches of hair on their abdomen or hind legs.
+Bees are especially well adapted to pollination. Their bodies are covered with branched, feathery hairs that trap pollen grains as a bee moves from flower to flower. Electrostatic charge can help pollen jump from a flower to a visiting bee. Many species also possess specialised carrying structures: bumblebees and honeybees, for example, have basket-like structures on their hind legs called corbiculae, or pollen baskets, which they use to transport moistened pollen back to the colony. Many solitary bees instead carry relatively dry pollen in dense patches of hair called scopae on the abdomen or hind legs. Some bumblebees and solitary bees can also perform buzz pollination, vibrating flowers so that pollen is released from enclosed anthers; honeybees cannot use this technique.
 
-The relationship between flowering plants and bees is a classic example of mutualism: both parties benefit. The plant gains a reliable and efficient pollination service, while the bee obtains nectar and pollen as food sources. Nectar provides carbohydrates for energy, while pollen supplies proteins and fats essential for larval development.
+The relationship between flowering plants and bees is a classic example of mutualism: both parties benefit. The plant gains a pollination service, while the bee obtains nectar and pollen as food sources. Nectar provides carbohydrates for energy, while pollen supplies proteins and fats essential for larval development. The relationship is not perfectly cooperative, because bees sometimes take nectar without transferring much pollen and plants compete for visits. Even so, repeated visits between compatible flowers allow fertilisation and seed production.
 
-To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, often visible only in ultraviolet light, which direct the bee towards the nectary. Flowers also emit specific scent compounds that bees can detect from long distances. Some plants have gone further, mimicking the scent or appearance of female bees to lure male bees, which inadvertently pollinate the plant while attempting to mate.
+To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, sometimes visible to bees in ultraviolet wavelengths — which direct a visitor towards the nectary. Flowers also emit specific scent compounds that bees can learn and detect. During a foraging trip, a bee may repeatedly visit one flower type, a behaviour called floral constancy that can deliver pollen to a compatible plant. Some orchids have gone further, mimicking the scent or appearance of female bees to lure males, which inadvertently carry pollen while attempting to mate.
 
-Different bee species show marked preferences for particular types of flowers. Long-tongued bees, such as certain bumblebee species, are able to access nectar from deep, tubular flowers that short-tongued bees cannot reach. This specialisation means that some plants depend almost entirely on a single bee species for pollination.
+Different bee species show marked preferences for particular types of flowers. Long-tongued bees, such as certain bumblebee species, are able to access nectar from deep, tubular flowers that short-tongued bees cannot reach. Body size, daily activity, season, and the ability to buzz also influence which plants a bee can serve. Tight specialisation can make a plant vulnerable if its principal pollinator declines. At farm and landscape scales, however, a diverse community can provide insurance because species respond differently to weather, habitat, and crop flowering times. Managed honeybees are valuable, but assessments warn that they cannot always replace the contribution of wild pollinators.
 
-Bee populations globally are under considerable pressure. Among the key threats are habitat loss due to agricultural intensification, the widespread use of pesticides — particularly neonicotinoids, which impair bees' navigation and memory — and the spread of pathogens such as the Varroa mite, which parasitises honeybee colonies. Climate change adds further stress, disrupting the synchrony between bee emergence and flower bloom.
+Bee populations in many assessed regions are under considerable pressure, although data are too incomplete to describe every species or location with one global trend. Key threats include habitat loss and fragmentation, intensive farming and monocultures, pesticide exposure, invasive species, pests, and disease. Some neonicotinoid exposures can impair navigation and memory, but field effects differ by compound, dose, bee species, and farming context. The Varroa mite parasitises honeybee colonies and helps spread damaging viruses; it is not the explanation for every wild-bee decline. Climate change adds further stress through heat, drought, range shifts, and disruption of the synchrony between bee emergence and flower bloom. These pressures can interact, making a nutritionally stressed population less able to withstand chemicals or pathogens.
 
-The decline in bee populations has prompted urgent conservation efforts. These include the creation of wildflower corridors along roads and field margins; the banning or restriction of certain pesticides in several countries; and the promotion of garden planting schemes to support urban bee populations. Research into disease-resistant honeybee strains and the development of artificial pollination technologies also continues, though many scientists argue that these cannot substitute for natural pollinator communities.`,
+Pollinator declines have prompted conservation efforts that combine habitat and farming measures. Wildflower strips, hedgerows, nesting sites, and connected semi-natural areas can provide food and shelter across the season, but their plant species and management must suit local pollinators. Reducing exposure through integrated pest management, careful timing, and restrictions on harmful uses can complement habitat restoration. Garden planting can support some urban bees if flowers bloom at different times and pesticide use is limited. Research into disease-resistant honeybee strains and artificial pollination continues, yet machines or a single managed species cannot reproduce all the ecological relationships supplied by diverse natural pollinator communities. Monitoring is also essential: without comparable records of abundance, distribution, and crop visits, authorities cannot tell whether a measure protects common generalists while rare specialists continue to disappear.`,
       questions: [
         {
           type: 'mcq',
@@ -557,7 +559,7 @@ Flower adaptations to attract bees
           blanks: [
             { num: 19, answers: ['carbohydrates'], maxWords: 1 },
             { num: 20, answers: ['fats'], maxWords: 1 },
-            { num: 21, answers: ['guides', 'patterns'], maxWords: 1 },
+            { num: 21, answers: ['patterns'], maxWords: 1 },
             { num: 22, answers: ['scent'], maxWords: 1 },
             { num: 23, answers: ['mate'], maxWords: 1 },
           ],
@@ -590,19 +592,19 @@ Flower adaptations to attract bees
       skill: 'reading',
       title: 'Reading Passage 3: The Psychology of Decision Making',
       instructions: 'Read the passage and answer Questions 27–40.',
-      passage: `Every day, humans make thousands of decisions, from the trivial — which shirt to wear, what to order for lunch — to the momentous — whether to change career, whom to marry. For much of the twentieth century, economists and psychologists modelled human decision making as a largely rational process, in which individuals weigh up the costs and benefits of available options and choose the one that maximises their utility. This view, known as rational choice theory, has been enormously influential in fields as diverse as economics, political science, and sociology.
+      passage: `Every day, humans make decisions ranging from the trivial — which shirt to wear or what to order for lunch — to the momentous — whether to change career or whom to marry. Much twentieth-century economic theory modelled decision making as a rational process in which individuals weigh the costs and benefits of available options and choose the one that maximises their utility. Rational choice remains a useful benchmark and does not require researchers to believe that every real person calculates perfectly. The framework has been enormously influential in economics, political science, and sociology.
 
-However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, has challenged this picture. Their work demonstrated that human decision making is systematically biased in ways that rational choice theory cannot explain. Far from being cool, calculating machines, humans rely heavily on mental shortcuts known as heuristics, which, while often useful, can lead to predictable errors of judgement known as cognitive biases.
+However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, challenged simple versions of this picture. Their experiments showed systematic departures from the predictions of standard models under particular conditions. People rely on mental shortcuts known as heuristics, which are often efficient and useful but can also produce predictable errors of judgement called cognitive biases. Kahneman and Tversky later developed prospect theory as an alternative account of decisions involving risk, reference points, gains, and losses.
 
-One of the most studied heuristics is availability: people judge the likelihood of an event by how easily examples come to mind. After a widely reported plane crash, for instance, many people overestimate the risk of flying, even though statistics show it to be far safer than driving. Because media coverage makes the event mentally available, people perceive it as more common than it is.
+One of the most studied heuristics is availability: people may judge the likelihood of an event by how easily examples come to mind. After vivid coverage of a plane crash, for instance, an observer may temporarily overestimate the risk of flying. Ease of recall can be informative when frequent events really are encountered more often, but publicity, recency, and emotional intensity can break that connection. The bias lies in treating mental availability as if it were a complete statistical sample.
 
-Another important bias is anchoring. When people are asked to estimate an unknown quantity — the population of a city, the price of a house — their judgement is heavily influenced by the first number they encounter, even if that number is arbitrary. In one famous experiment, participants who were asked to estimate the percentage of African countries in the United Nations after spinning a wheel — which landed on either 10 or 65 by chance — gave estimates that were strongly influenced by the wheel's result.
+Another important bias is anchoring. When people estimate an unknown quantity — the population of a city or the price of a house — their judgement can be influenced by an initial number even when it is arbitrary. In a well-known experiment, a wheel was rigged to stop at either 10 or 65. Participants saw the result, judged whether the percentage of African countries in the United Nations was higher or lower, and then estimated the percentage. Although the wheel was irrelevant, estimates remained higher after the 65 anchor than after the 10 anchor. The numbers appeared random to participants, but the experimental values were deliberately controlled.
 
-Loss aversion is another well-documented phenomenon. Tversky and Kahneman showed that people feel the pain of losses more acutely than they experience the pleasure of equivalent gains. The prospect of losing £100 is typically felt as more distressing than the prospect of gaining £100 is felt as pleasurable. This asymmetry has profound implications for financial decision making, explaining why people often hold on to losing investments far longer than is rational.
+Loss aversion is another well-documented phenomenon within prospect theory. Outcomes are evaluated relative to a reference point, and a loss can influence choice more strongly than an equivalent gain. The pattern helps researchers interpret behaviour such as reluctance to give up an owned object or to realise an investment loss, although context, expectations, and measurement affect its size. It is therefore a tendency used in a model, not a claim that every individual values every £100 loss by one universal ratio.
 
-Kahneman later organised his thinking around a distinction between two systems of thought. System 1 is fast, automatic, and intuitive — it operates largely outside conscious awareness and draws on pattern recognition and emotional responses. System 2 is slow, deliberate, and analytical, requiring conscious effort. Most everyday decisions are handled by System 1, and cognitive biases arise largely because System 1 misapplies heuristics in situations where careful reasoning is required.
+Kahneman later organised his account around a distinction between two modes of thought. System 1 is fast, automatic, and intuitive; it draws on learned associations, pattern recognition, and emotional responses. System 2 is slow, deliberate, and analytical, requiring conscious effort. The labels are explanatory shorthand rather than two identifiable organs in the brain. Routine judgements often begin with System 1, while System 2 may monitor, endorse, or correct them. System 2 is therefore not used for the majority of everyday decisions. Bias can persist when effortful checking is absent or when a person lacks the information needed for correction.
 
-Understanding these biases has practical applications. In the field of public policy, the concept of 'nudging' — designing choice environments to steer people towards better decisions while preserving their freedom to choose — has gained significant traction. By changing the default option in pension enrolment (so that employees are enrolled unless they opt out, rather than having to opt in), governments have dramatically increased pension savings rates. Menu designs, energy bills, and health communications have all been reimagined with behavioural insights in mind.
+Understanding these biases has practical applications. In public policy, 'nudging' means designing a choice environment to steer behaviour while preserving the ability to choose another option. Automatic pension enrolment changes the default so eligible employees participate unless they opt out, rather than requiring them to opt in. Evidence shows that such defaults can raise participation, although contribution levels, eligibility, trust, and affordability still shape eventual savings. Menu designs, energy bills, appointment systems, and health communications have also been tested with behavioural insights. A proper evaluation compares outcomes with a control group rather than assuming that any redesigned message works.
 
 Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. Nonetheless, the field of behavioural economics — which applies insights from psychology to economic models — has transformed our understanding of human behaviour and is now firmly embedded in government, business, and healthcare policy worldwide.`,
       questions: [
@@ -616,7 +618,7 @@ Critics of nudging argue that it is paternalistic, manipulating people's choices
 
 Research by Kahneman and Tversky showed that humans use mental shortcuts called {{28}}, leading to systematic errors known as {{29}}.
 
-The availability heuristic means people overestimate events that are easy to {{30}}.
+The availability heuristic means people overestimate events whose examples come easily to {{30}}.
 
 {{31}} aversion explains why people often keep failing investments longer than they should.
 
@@ -624,10 +626,10 @@ Kahneman distinguished between System 1 — fast and {{32}} — and System 2, wh
 
 The idea of {{33}} involves designing choice environments to promote better decisions.`,
           blanks: [
-            { num: 27, answers: ['rational choice', 'rational'], maxWords: 2 },
+            { num: 27, answers: ['rational'], maxWords: 1 },
             { num: 28, answers: ['heuristics'], maxWords: 1 },
             { num: 29, answers: ['cognitive biases', 'biases'], maxWords: 2 },
-            { num: 30, answers: ['recall', 'remember', 'retrieve'], maxWords: 1 },
+            { num: 30, answers: ['mind'], maxWords: 1 },
             { num: 31, answers: ['Loss', 'loss'], maxWords: 1 },
             { num: 32, answers: ['intuitive', 'automatic'], maxWords: 1 },
             { num: 33, answers: ['nudging'], maxWords: 1 },
@@ -645,9 +647,9 @@ The idea of {{33}} involves designing choice environments to promote better deci
           type: 'mcq',
           id: 'r3q35',
           part: 7,
-          text: 'The anchoring experiment used a spinning wheel to produce random numbers.',
+          text: 'The anchoring experiment used a spinning wheel to produce genuinely random numbers.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -669,7 +671,7 @@ The idea of {{33}} involves designing choice environments to promote better deci
           type: 'mcq',
           id: 'r3q38',
           part: 7,
-          text: 'Changing pension enrolment defaults has been shown to increase savings rates.',
+          text: 'Changing pension enrolment defaults can increase participation in workplace pension schemes.',
           options: ['YES', 'NO', 'NOT GIVEN'],
           answer: 0,
         },

@@ -484,3 +484,28 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   migraciones en un entorno de prueba, ejecutar Wompi Sandbox con webhook/reversos,
   cargar un roster calibrado y capacidad real, y completar aprobaciones hash-bound,
   canary, observabilidad y rollback.
+### 12 de septiembre de 2026 — IELTS Academic Sets 1–20
+
+- Los 20 mocks quedaron `DESPLEGADOS` desde `main` en
+  `1e151ba29f604c043e7e0ae8eb5f88236785615e`. Vercel completó el deployment
+  `Bqc8EfzzfBJTdvk3pDkmDNiHBnak`
+  (`idiomaswl-poyugymug-idiomaswlduartekorzhs-projects.vercel.app`) desde GitHub
+  `main`, estado `READY`, y promovió el resultado a `https://www.idiomaswl.com`.
+- El gate consolidado dejó 20/20 sets en `RELEASE_READY`, sin incidencias P0, P1 o P2.
+  Pasaron catálogo protegido, TypeScript, 78 pruebas IELTS, auditoría estricta de las
+  cuatro destrezas y sus hojas de respuesta, evidencia Listening para 800 preguntas,
+  visuales de Writing ligados por hash, captura de lead y build Webpack.
+- El smoke productivo devolvió HTTP 200 para el hub y los 20 runners. Los 20 masters
+  respondieron como `audio/mpeg`; los Sets 1, 13 y 20 coincidieron byte por byte con
+  los aprobados (`323df1c7…`, `d787b6c5…`, `7cfc9cb0…`). El visual Writing Set 4
+  también coincidió byte por byte. Home, Práctica, Precios, Blog, login, TOEFL, SAT y
+  Escucha Inglés A1 pasaron como regresiones públicas.
+- Los 12 masters sustituidos se conservaron como banco recuperable en
+  `USB DISK/WELEARN_ARCHIVO_2026-08-31/Media_Documents/ielts-legacy-listening-before-20-set-release-2026-09-12`.
+  Son 138.596.023 bytes y su manifiesto lógico tiene SHA-256
+  `e699f482e044c746dc05f2fa6a637c7234385f841c267788503e92c379fb2d30`;
+  reutilizarlos exige nueva correspondencia Q1–Q40, QA técnico, ASR y revisión humana.
+- La rama histórica `archive/ielts-20-set-release-20260912` permanece en GitHub. El
+  blueprint de fábrica deja preparados Sets 21–40 sin autorizar generación ni gastar
+  créditos: piloto primero, lotes de dos, reserva de crédito del 20 % y todos los gates
+  académicos/técnicos antes de ElevenLabs.

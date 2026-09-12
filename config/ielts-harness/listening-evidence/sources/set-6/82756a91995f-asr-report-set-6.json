@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:52:47.038Z",
+  "set": 6,
+  "source": "src/data/mocks/ielts-set-6.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-6.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-6/ielts-listening-set-6.mp3",
+  "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+  "transcriptSha256": "972b18990d2c7f877c02702b3a4c8d069fc602f10419208279bf2139171b00c6",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "7efa01d274b641174cd2f9f6492088ddb230cdad83aae58cc10a746f17b0c142",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-6/whisper-set-6.json",
+  "asrSourceSha256": "1934540137540f37c2f10657e1fcfc20fb106d9b4054b0c3b8018edd860721d4",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 2944,
+  "recognizedWords": 2829,
+  "editDistance": 179,
+  "wordErrorRate": 0.0608,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 92.52,
+      "endSeconds": 94.82,
+      "audiblePhrase": "For three days please. I'm here until Thursday."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "mountain"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 130.12,
+      "endSeconds": 131.62,
+      "audiblePhrase": "We do road bikes and mountain bikes."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "card"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 164.78,
+      "endSeconds": 168.7,
+      "audiblePhrase": "Now we do ask for a deposit. Will you be paying by cash or card?"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "helmet"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 237.24,
+      "endSeconds": 241.04,
+      "audiblePhrase": "Of course, would you like any extras? A lot of people hire a helmet."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "kit"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 244.84000000000003,
+      "endSeconds": 250,
+      "audiblePhrase": "Sensible. And don't worry about breakdowns. A repair kit is included free with every rental."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "central"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 279.66,
+      "endSeconds": 284.66,
+      "audiblePhrase": "We have two branches, but hired bikes must be returned to the central branch near the market square."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "5",
+        "£5",
+        "five"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 315.34,
+      "endSeconds": 320.58,
+      "audiblePhrase": "Certainly. A mountain bike is five pounds an hour or 18 pounds for a full day."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "30",
+        "£30",
+        "thirty"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 321.1,
+      "endSeconds": 324.66,
+      "audiblePhrase": "The deposit on that one is 30 pounds and it comes with lights fitted."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "35",
+        "£35",
+        "thirty-five"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 326.72,
+      "endSeconds": 331.96,
+      "audiblePhrase": "An electric bike is nine pounds an hour or 35 pounds a day with a 50 pound deposit."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "charger"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 332.5,
+      "endSeconds": 335.22,
+      "audiblePhrase": "Each electric bike also comes with its own charger."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "seven",
+        "7"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 576.22,
+      "endSeconds": 581.26,
+      "audiblePhrase": "On weekdays, the center opens at seven in the morning, which is early enough for a swim before work."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "Sundays",
+        "Sunday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 581.26,
+      "endSeconds": 588.3,
+      "audiblePhrase": "Do note that it closes early on Sundays at four rather than the usual ten, so plan your weekend visits accordingly."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "40",
+        "£40",
+        "forty"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 613.26,
+      "endSeconds": 618.68,
+      "audiblePhrase": "A standard membership costs 40 pounds per month, which gives you unlimited access to all the facilities."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "session"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 619.52,
+      "endSeconds": 625.14,
+      "audiblePhrase": "As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "toddlers",
+        "children"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 716.3,
+      "endSeconds": 722.14,
+      "audiblePhrase": "The pool has a special shallow area for toddlers, so it's ideal for families with young children."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "pound",
+        "£1",
+        "1"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 723.08,
+      "endSeconds": 724.56,
+      "audiblePhrase": "One small practical point."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "yoga"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 757.08,
+      "endSeconds": 762.1,
+      "audiblePhrase": "We offer everything from spinning to boxing, but by far the most popular class is yoga."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "website",
+        "app"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 767.38,
+      "endSeconds": 774.26,
+      "audiblePhrase": "To secure a place, all booking is done through the center's website, so please create an account before you leave today."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "label",
+        "title"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1238.02,
+      "endSeconds": 1241.58,
+      "audiblePhrase": "Add a clear label to each chart. Otherwise, the reader gets lost."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "sources",
+        "source"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1242.52,
+      "endSeconds": 1245.86,
+      "audiblePhrase": "Make sure you reference all sources correctly, including websites."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "formal"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1246.86,
+      "endSeconds": 1249.38,
+      "audiblePhrase": "Keep the tone formal throughout. No slang."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "spelling"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1250.26,
+      "endSeconds": 1253.84,
+      "audiblePhrase": "Proofread carefully for spelling, because errors cost marks."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "PDF"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1254.5,
+      "endSeconds": 1259.12,
+      "audiblePhrase": "And when you're done, upload the file as a PDF, not a Word document."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "China"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1411.98,
+      "endSeconds": 1421.56,
+      "audiblePhrase": "Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavored by falling leaves."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "medicine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1426.94,
+      "endSeconds": 1432.04,
+      "audiblePhrase": "It was taken as a medicine, valued for keeping people alert and aiding digestion."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "leaves",
+        "leaf"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1432.8,
+      "endSeconds": 1439.36,
+      "audiblePhrase": "In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "monks",
+        "monk"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1473.84,
+      "endSeconds": 1480.42,
+      "audiblePhrase": "It was carried to Japan by monks who had studied in Chinese monasteries and brought the custom home with them."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "ceremony"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1484.4,
+      "endSeconds": 1489.7,
+      "audiblePhrase": "An elaborate and highly formal tea ceremony developed, with strict rules governing every movement."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "Portuguese"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1523.6,
+      "endSeconds": 1532.32,
+      "audiblePhrase": "It was first shipped to Europe by Portuguese traders in the 16th century, though the Dutch and later the British soon dominated the trade."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "silver"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1533.12,
+      "endSeconds": 1544.02,
+      "audiblePhrase": "Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "plantations",
+        "plantation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1645.26,
+      "endSeconds": 1652.54,
+      "audiblePhrase": "To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "workers",
+        "worker"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1661.32,
+      "endSeconds": 1666.98,
+      "audiblePhrase": "Conditions were often extremely hard for the workers, who labored long hours for very little pay."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "bag",
+        "bags"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1701.8,
+      "endSeconds": 1713.98,
+      "audiblePhrase": "For centuries, tea was brewed loose in a pot, but in the early 1900s the tea bag was invented, apparently by accident, when a merchant sent out samples in small silk pouches."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

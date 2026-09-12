@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { IELTS_REVIEW_BLUEPRINTS } from '../src/lib/ielts/review-blueprint.ts'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const revisedSets = new Map([[1, 4], [2, 4], [3, 3], [4, 4], [5, 4], [6, 4], [7, 4], [8, 2], [9, 5], [10, 4], [11, 4], [12, 3], [13, 4], [14, 2], [15, 2], [16, 4], [17, 3], [18, 2], [19, 3], [20, 3]])
 
 for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
   const mockId = `set-${setNumber}`
@@ -15,7 +16,8 @@ for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
   assert.equal(mock.id, mockId, `${mockId}: el id del mock no coincide`)
   assert.equal(mock.title, `IELTS Academic Set ${setNumber}`, `${mockId}: título no canónico`)
   assert.equal(blueprint.mockTitle, mock.title, `${mockId}: título del blueprint desalineado`)
-  assert.equal(blueprint.contentVersion, setNumber === 1 ? 'ielts-set-1-v2' : `ielts-set-${setNumber}-v1`, `${mockId}: versión de contenido inesperada`)
+  const expectedVersion = `ielts-set-${setNumber}-v${revisedSets.get(setNumber) ?? 1}`
+  assert.equal(blueprint.contentVersion, expectedVersion, `${mockId}: versión de contenido inesperada`)
   assert.ok(blueprint.reviewableContentVersions.includes(blueprint.contentVersion), `${mockId}: no admite su versión activa`)
 
   const writing = mock.sections

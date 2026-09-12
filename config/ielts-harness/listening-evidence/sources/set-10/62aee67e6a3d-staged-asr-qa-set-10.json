@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:54:34.768Z",
+  "set": 10,
+  "status": "PASS",
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/ielts-listening-set-10.mp3",
+  "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/asr-report-set-10.json",
+    "reportSha256": "de524ae7574d0ee9688d9df218dbeb67b75d99bab8b0e5b01e50aa38d369536c",
+    "wordErrorRate": 0.1026,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "31/33"
+  },
+  "partReports": [
+    {
+      "part": 1,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/full-part-qa-part-1.wav",
+      "audioSha256": "9b963c8887b6e65a1d9ab991387d5352f5a601e4a24bc5b929a123cffbc3d501",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/whisper-full-part-qa-set-10-part-1.json",
+      "asrSha256": "9d82a4bddd3465afdfc44ceae1a457dd592a6ec66150e88284667394c620f723",
+      "segmentIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "status": "PASS",
+      "expectedWords": 869,
+      "recognizedWords": 849,
+      "editDistance": 26,
+      "wordErrorRate": 0.0299,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 1,
+          "responseKey": "l1-form__1",
+          "candidateAcceptedAnswers": [
+            "Farrelly"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 18.24,
+          "endSeconds": 21.08,
+          "audiblePhrase": "Yes, my first name is Daniel and my surname is Farrelly."
+        },
+        {
+          "question": 2,
+          "responseKey": "l1-form__2",
+          "candidateAcceptedAnswers": [
+            "administration",
+            "admin"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 86.88,
+          "endSeconds": 89.02,
+          "audiblePhrase": "Actually, no, I'd really prefer office administration."
+        },
+        {
+          "question": 3,
+          "responseKey": "l1-form__3",
+          "candidateAcceptedAnswers": [
+            "immediately"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 95.76,
+          "endSeconds": 96.98,
+          "audiblePhrase": "I'm free immediately."
+        },
+        {
+          "question": 4,
+          "responseKey": "l1-form__4",
+          "candidateAcceptedAnswers": [
+            "retail"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 143.02,
+          "endSeconds": 144.78,
+          "audiblePhrase": "Most of my background is in retail."
+        },
+        {
+          "question": 5,
+          "responseKey": "l1-form__5",
+          "candidateAcceptedAnswers": [
+            "diploma"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 154.14,
+          "endSeconds": 156.1,
+          "audiblePhrase": "I have a diploma in business studies."
+        },
+        {
+          "question": 6,
+          "responseKey": "l1-form__6",
+          "candidateAcceptedAnswers": [
+            "French"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 165.04,
+          "endSeconds": 167.5,
+          "audiblePhrase": "Yes, I speak French fairly fluently."
+        },
+        {
+          "question": 7,
+          "responseKey": "l1-table__7",
+          "candidateAcceptedAnswers": [
+            "11.50",
+            "£11.50"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 232.32,
+          "endSeconds": 235.42,
+          "audiblePhrase": "full-time, paying 11 pounds and 50 pence an hour."
+        },
+        {
+          "question": 8,
+          "responseKey": "l1-table__8",
+          "candidateAcceptedAnswers": [
+            "Riverside"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 238.82,
+          "endSeconds": 241.34,
+          "audiblePhrase": "That one's out at Riverside, it's part-time,"
+        },
+        {
+          "question": 9,
+          "responseKey": "l1-table__9",
+          "candidateAcceptedAnswers": [
+            "evenings",
+            "evening"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 248.68,
+          "endSeconds": 253.86,
+          "audiblePhrase": "evenings only at 13 pounds an hour. The office assistant one sounds ideal"
+        },
+        {
+          "question": 10,
+          "responseKey": "l1-table__10",
+          "candidateAcceptedAnswers": [
+            "13",
+            "£13"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 248.68,
+          "endSeconds": 253.86,
+          "audiblePhrase": "evenings only at 13 pounds an hour. The office assistant one sounds ideal"
+        }
+      ],
+      "completionEvidenceFound": 10,
+      "completionEvidenceTotal": 10,
+      "failures": []
+    },
+    {
+      "part": 2,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/full-part-qa-part-2.wav",
+      "audioSha256": "a1f87c03ed8f910dc89b268c2b586494d8f37efe6a7dbd8150770a11708604bc",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/whisper-full-part-qa-set-10-part-2.json",
+      "asrSha256": "5d0a68613d4400c097083f61d7ecc548249722fb8abf7d3538802b3337a1d9e0",
+      "segmentIndexes": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "status": "PASS",
+      "expectedWords": 893,
+      "recognizedWords": 899,
+      "editDistance": 12,
+      "wordErrorRate": 0.0134,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 13,
+          "responseKey": "l2-form__13",
+          "candidateAcceptedAnswers": [
+            "residents",
+            "resident"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 98,
+          "endSeconds": 100.8,
+          "audiblePhrase": "Joining the library is completely free for local residents."
+        },
+        {
+          "question": 14,
+          "responseKey": "l2-form__14",
+          "candidateAcceptedAnswers": [
+            "12",
+            "twelve"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 101.42,
+          "endSeconds": 104.72,
+          "audiblePhrase": "Once you're a member, you can borrow up to 12 items at any one time,"
+        },
+        {
+          "question": 15,
+          "responseKey": "l2-form__15",
+          "candidateAcceptedAnswers": [
+            "three weeks",
+            "3 weeks"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 107.6,
+          "endSeconds": 109.58,
+          "audiblePhrase": "The standard loan period is three weeks,"
+        },
+        {
+          "question": 16,
+          "responseKey": "l2-form__16",
+          "candidateAcceptedAnswers": [
+            "fine"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 113.48,
+          "endSeconds": 117.58,
+          "audiblePhrase": "If you do return something late, there's a small fine for each day it's overdue,"
+        },
+        {
+          "question": 17,
+          "responseKey": "l2-form__17",
+          "candidateAcceptedAnswers": [
+            "newspapers",
+            "newspaper"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 184.34,
+          "endSeconds": 188.48,
+          "audiblePhrase": "range of online newspapers, which is perfect if you like to keep up with the news from"
+        },
+        {
+          "question": 18,
+          "responseKey": "l2-form__18",
+          "candidateAcceptedAnswers": [
+            "story session",
+            "storytime"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 188.48,
+          "endSeconds": 193.68,
+          "audiblePhrase": "around the world. For families, we run a story session for young children every Saturday morning."
+        },
+        {
+          "question": 19,
+          "responseKey": "l2-form__19",
+          "candidateAcceptedAnswers": [
+            "first",
+            "first floor"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 196.6,
+          "endSeconds": 200.96,
+          "audiblePhrase": "And if you need to use a computer, our computer suite is on the first floor with printing"
+        },
+        {
+          "question": 20,
+          "responseKey": "l2-form__20",
+          "candidateAcceptedAnswers": [
+            "address"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 256.42,
+          "endSeconds": 259.18,
+          "audiblePhrase": "Just come to the main desk and bring proof of your address."
+        }
+      ],
+      "completionEvidenceFound": 8,
+      "completionEvidenceTotal": 8,
+      "failures": []
+    },
+    {
+      "part": 3,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/full-part-qa-part-3.wav",
+      "audioSha256": "d9588ec736762a07233c44ea6c560b2db4f8c700a1af07e44005ac3a3767c336",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/whisper-full-part-qa-set-10-part-3.json",
+      "asrSha256": "efde6bdb342392ba63006c03fcd40004c2b97b51093a309f4dfaf1fe3f7efb65",
+      "segmentIndexes": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "status": "PASS",
+      "expectedWords": 828,
+      "recognizedWords": 826,
+      "editDistance": 8,
+      "wordErrorRate": 0.0097,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 26,
+          "responseKey": "l3-form__26",
+          "candidateAcceptedAnswers": [
+            "introduction"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 278.34,
+          "endSeconds": 281.22,
+          "audiblePhrase": "Start with a clear introduction that sets out your aims."
+        },
+        {
+          "question": 27,
+          "responseKey": "l3-form__27",
+          "candidateAcceptedAnswers": [
+            "materials",
+            "material"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 284.12,
+          "endSeconds": 288.2,
+          "audiblePhrase": "Then make sure you explain your choice of materials, because that's one of the strongest"
+        },
+        {
+          "question": 28,
+          "responseKey": "l3-form__28",
+          "candidateAcceptedAnswers": [
+            "diagram"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 290,
+          "endSeconds": 294.38,
+          "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow"
+        },
+        {
+          "question": 29,
+          "responseKey": "l3-form__29",
+          "candidateAcceptedAnswers": [
+            "timing"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 295.48,
+          "endSeconds": 297.76,
+          "audiblePhrase": "And do a rehearse beforehand to get your timing right."
+        },
+        {
+          "question": 30,
+          "responseKey": "l3-form__30",
+          "candidateAcceptedAnswers": [
+            "feedback"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 299.26,
+          "endSeconds": 302.84,
+          "audiblePhrase": "Practice once in front of me and I'll give you some feedback afterwards."
+        }
+      ],
+      "completionEvidenceFound": 5,
+      "completionEvidenceTotal": 5,
+      "failures": []
+    },
+    {
+      "part": 4,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/full-part-qa-part-4.wav",
+      "audioSha256": "e2b23cfcb1d4479b26faa2267ad105a49e1de934071247c2871a940caf0dabf3",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/whisper-full-part-qa-set-10-part-4.json",
+      "asrSha256": "ccec81ead5d62689cda6a0680424dc450d1e881ce094dbe9b752e922526e5a33",
+      "segmentIndexes": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "status": "PASS",
+      "expectedWords": 880,
+      "recognizedWords": 880,
+      "editDistance": 14,
+      "wordErrorRate": 0.0159,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 31,
+          "responseKey": "l4-form__31",
+          "candidateAcceptedAnswers": [
+            "breeding"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 30.5,
+          "endSeconds": 34.7,
+          "audiblePhrase": "They travel to warm breeding grounds, where their young have a better chance of surviving."
+        },
+        {
+          "question": 32,
+          "responseKey": "l4-form__32",
+          "candidateAcceptedAnswers": [
+            "krill"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 41.02,
+          "endSeconds": 46.36,
+          "audiblePhrase": "water is full of the tiny, shrimp-like creatures called krill that form the bulk of their diet."
+        },
+        {
+          "question": 33,
+          "responseKey": "l4-form__33",
+          "candidateAcceptedAnswers": [
+            "blubber",
+            "fat"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 52.2,
+          "endSeconds": 55.68,
+          "audiblePhrase": "layer of blubber that will sustain it through the long journey ahead."
+        },
+        {
+          "question": 34,
+          "responseKey": "l4-form__34",
+          "candidateAcceptedAnswers": [
+            "journeys",
+            "journey",
+            "migrations"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 52.2,
+          "endSeconds": 55.68,
+          "audiblePhrase": "layer of blubber that will sustain it through the long journey ahead."
+        },
+        {
+          "question": 35,
+          "responseKey": "l4-form__35",
+          "candidateAcceptedAnswers": [
+            "lagoons",
+            "lagoon"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 122.42,
+          "endSeconds": 127.94,
+          "audiblePhrase": "There, the females give birth in warm, shallow lagoons near the shore, which offer their"
+        },
+        {
+          "question": 36,
+          "responseKey": "l4-form__36",
+          "candidateAcceptedAnswers": [
+            "field"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 185.86,
+          "endSeconds": 192.42,
+          "audiblePhrase": "scientists believe they may be able to detect the Earth's magnetic field using it rather like a compass."
+        },
+        {
+          "question": 37,
+          "responseKey": "l4-form__37",
+          "candidateAcceptedAnswers": [
+            "songs",
+            "song"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 193.08,
+          "endSeconds": 200.72,
+          "audiblePhrase": "They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometers underwater"
+        },
+        {
+          "question": 38,
+          "responseKey": "l4-form__38",
+          "candidateAcceptedAnswers": [
+            "ships",
+            "ship"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 258.52,
+          "endSeconds": 263.1,
+          "audiblePhrase": "One of the most immediate is collision with ships along busy coastal routes,"
+        },
+        {
+          "question": 39,
+          "responseKey": "l4-form__39",
+          "candidateAcceptedAnswers": [
+            "communication"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 266.74,
+          "endSeconds": 271.86,
+          "audiblePhrase": "In addition, the growing noise from shipping and industry interferes with their communication,"
+        },
+        {
+          "question": 40,
+          "responseKey": "l4-form__40",
+          "candidateAcceptedAnswers": [
+            "food"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 280.62,
+          "endSeconds": 285.6,
+          "audiblePhrase": "and shifting the location of their food, forcing whales to change patterns of migration"
+        }
+      ],
+      "completionEvidenceFound": 10,
+      "completionEvidenceTotal": 10,
+      "failures": []
+    }
+  ],
+  "wordErrorRateEvidence": "four_complete_parts",
+  "effectiveWordErrorRate": 0.0173,
+  "focusedReports": [],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

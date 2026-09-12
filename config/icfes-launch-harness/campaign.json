@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "campaignId": "icfes-three-tier-launch-v1",
   "goal": "Launch a truthful three-tier ICFES offer while allowing owned mocks beyond mock-23 without weakening editorial, security, privacy or SEO controls.",
-  "baseCommit": "c3afecc9d1ff9645867dc20f9930431f2c7256a6",
+  "baseCommit": "59a40a9e24844a1d07c3bb63c67db94a456f5cae",
   "queue": [
     "icfes-three-tier-launch-v1"
   ],

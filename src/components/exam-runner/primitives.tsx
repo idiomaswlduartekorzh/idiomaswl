@@ -30,16 +30,31 @@ export function blankKey(groupId: string, num: number) {
 
 // ── Timer ─────────────────────────────────────────────────────────────────────
 
-export function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
-  const [secs, setSecs] = useState(totalSecs);
+function timerSecondsRemaining(totalSecs: number, deadlineMs?: number): number {
+  return deadlineMs == null
+    ? totalSecs
+    : Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000));
+}
+
+export function Timer({ totalSecs, onExpire, deadlineMs }: { totalSecs: number; onExpire: () => void; deadlineMs?: number }) {
+  const timing = useRef({ totalSecs, deadlineMs });
+  const expiredOnMount = useRef(timerSecondsRemaining(totalSecs, deadlineMs) <= 0);
+  const [secs, setSecs] = useState(() => timerSecondsRemaining(totalSecs, deadlineMs));
   const ref = useRef(onExpire);
   useEffect(() => {
     ref.current = onExpire;
   }, [onExpire]);
   useEffect(() => {
+    if (expiredOnMount.current) {
+      ref.current();
+      return;
+    }
     const id = setInterval(() => setSecs(p => {
-      if (p <= 1) { clearInterval(id); ref.current(); return 0; }
-      return p - 1;
+      const next = timing.current.deadlineMs == null
+        ? p - 1
+        : timerSecondsRemaining(timing.current.totalSecs, timing.current.deadlineMs);
+      if (next <= 0) { clearInterval(id); ref.current(); return 0; }
+      return next;
     }), 1000);
     return () => clearInterval(id);
   }, []);

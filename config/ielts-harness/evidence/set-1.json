@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 1,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-1.ts",
+    "sourceSha256": "8f6d6d6111ea00b1d79707ec3e23439304a419ccdc5e38ae221b49ff4c940ca6",
+    "releaseFingerprintSha256": "eb2ef62d96ea6f47569767896307f038f419555d6a1f993d8d8e120d9c37758b"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+      "transcriptSha256": "07235f9534063383d29b496341d54abfdc88361d1b55b5226d32ba4537bbc831",
+      "objectiveSha256": "a1deb94c79dcefc7b28740994df775a16fe9facc2c7709064ef99013c52fcc3f"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+      "transcriptSha256": "07235f9534063383d29b496341d54abfdc88361d1b55b5226d32ba4537bbc831",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-1-listening-evidence.json",
+      "evidenceSha256": "7a0eb09be5cfd99121da950d593f806fec6d3a849b179a1ee513043906b9aeb3"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 82.78,
+        "endSeconds": 84.38,
+        "audiblePhrase": "24 Ardley Road.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 115.42,
+        "endSeconds": 116.98,
+        "audiblePhrase": "I read about you in the newspaper.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 139.2,
+        "endSeconds": 144.32,
+        "audiblePhrase": "The first one begins in Los Angeles and there's plenty of time to visit some of the theme parks there.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 160.8,
+        "endSeconds": 164.58,
+        "audiblePhrase": "I don't like the idea of staying in a tent. It'd be too hot.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 176.26,
+        "endSeconds": 181.18,
+        "audiblePhrase": "Someone told me there's a really nice castle near Cambria. Will we go near that?",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 202.46,
+        "endSeconds": 204.34,
+        "audiblePhrase": "That's good for beaches, isn't it?",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 256.42,
+        "endSeconds": 265.38,
+        "audiblePhrase": "The first one I told you about is a self-drive tour through California, which lasts 12 days and covers 2,020 kilometers.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 273.28,
+        "endSeconds": 280.98,
+        "audiblePhrase": "The cost is 525 pounds per person. That includes accommodation, car rental and a flight, but no meals.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 292.66,
+        "endSeconds": 298.56,
+        "audiblePhrase": "Yes. It's almost £100 cheaper. It's £429 per person, which is a good deal.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 304.1,
+        "endSeconds": 307.62,
+        "audiblePhrase": "They aren't included, but these hotels offer dinner in the price.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 521.74,
+        "endSeconds": 523.78,
+        "audiblePhrase": "Giving details of any health problems.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 528.46,
+        "endSeconds": 534.06,
+        "audiblePhrase": "The trainer will then take you through the safety rules for using the equipment in the fitness suite.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 554.18,
+        "endSeconds": 558.96,
+        "audiblePhrase": "At the end of the personal assessment, the trainer will draw up a plan,",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 573.74,
+        "endSeconds": 580.98,
+        "audiblePhrase": "All members must pay a joining fee of £90 in addition to the rates for the monthly membership fee.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 586.32,
+        "endSeconds": 589.88,
+        "audiblePhrase": "Gold Members receive free entry to all LP clubs.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 613.54,
+        "endSeconds": 618.2,
+        "audiblePhrase": "And so LP gives booking preferences to Premier members at peak times.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 632.96,
+        "endSeconds": 635.12,
+        "audiblePhrase": "and it's for people who send passes for guests every month.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 648.46,
+        "endSeconds": 652.14,
+        "audiblePhrase": "but it's very important to remember your photo card,",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 740.64,
+        "endSeconds": 753.32,
+        "audiblePhrase": "Well, it's an international design competition, and we have to come up with a new design for a typical domestic kitchen appliance. I see, and are there any special conditions? Does it have to save energy, for example?",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 775.72,
+        "endSeconds": 793.8,
+        "audiblePhrase": "Well, they're in everyday kitchen appliance in most Australian houses, but they're all pretty boring and almost identical to each other. I think some people will be prepared to pay a little extra for something that looks different. It's a nice idea. I see you've called your design the rock pool. Why is that?",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 798.52,
+        "endSeconds": 819.12,
+        "audiblePhrase": "The top is made of glass so that you can look down into it. And there's a stone at the bottom. Is that just for decoration? Actually, it does have a function. Instead of pushing a button, you turn the stone. So it's really just another way of starting the dishwasher? That's right. It's a really nice design. But what makes it innovative?",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 872.82,
+        "endSeconds": 880.98,
+        "audiblePhrase": "Actually, that's where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again.",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 872.82,
+        "endSeconds": 880.98,
+        "audiblePhrase": "Actually, that's where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again.",
+        "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 944.22,
+        "endSeconds": 952.1,
+        "audiblePhrase": "Well, my design has made it to the final stage of the competition and in a few months' time I have to give a presentation.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 965.92,
+        "endSeconds": 971.14,
+        "audiblePhrase": "I see. Well, if you want to stand a good chance of winning, you really need a model of the machine.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 974.72,
+        "endSeconds": 978.92,
+        "audiblePhrase": "What's the main difficulty so far? Ah, let me guess, is it the materials?",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 991.1,
+        "endSeconds": 993.46,
+        "audiblePhrase": "So why don't you talk to the university about a grant?",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1003.62,
+        "endSeconds": 1007.58,
+        "audiblePhrase": "you need to make sure the technical details you've given are accurate and thorough.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1121.96,
+        "endSeconds": 1132.1,
+        "audiblePhrase": "One in ten black bears is actually born with a white coat, which is the result of a special gene that surfaces in a few.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1140.42,
+        "endSeconds": 1143.68,
+        "audiblePhrase": "its snowy fur brings with it a special power.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1154.72,
+        "endSeconds": 1158.7,
+        "audiblePhrase": "It is their way of protecting it when strangers visit the area.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1177.32,
+        "endSeconds": 1187.34,
+        "audiblePhrase": "For example, the old growth trees have extremely long roots that help prevent erosion of the soil along the banks of the many fish streams.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1223.62,
+        "endSeconds": 1230.84,
+        "audiblePhrase": "Today, the spirit bear lives off the coast of the province of British Columbia on a few islands.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1287.92,
+        "endSeconds": 1297.4,
+        "audiblePhrase": "To make matters worse, the number of salmon in those streams is declining, because there is no legal limit on fishing at the moment.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1299.08,
+        "endSeconds": 1314.32,
+        "audiblePhrase": "These influences have a negative impact on the spirit bear's very existence, which is made all the more fragile by the fact that reproduction among these bears has always been disappointingly low.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1329.08,
+        "endSeconds": 1336.44,
+        "audiblePhrase": "The spirit bear's habitat is now requiring logging companies to adopt a better logging method, which is a positive step.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1349.44,
+        "endSeconds": 1358.44,
+        "audiblePhrase": "While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion.",
+        "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "7cbe38b0d0d10cd106b5fa96d5aa06d27e0ea07bc1c02f21e4a3b4c8cce07d78",
+      "objectiveSha256": "a1deb94c79dcefc7b28740994df775a16fe9facc2c7709064ef99013c52fcc3f"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-summary__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 2",
+        "sourceExcerpt": "…, that is, chemically engineered from the constituents of coal or oil. Some are 'thermoplastic', which means that, like candlewax, they melt when heated and can then be reshaped. Others are 'thermosetting': like eggs, they cannot revert to their original viscous state, and their shape is thus fixed forever. Bakelite had the distinction of being the first totally synthetic thermosetting plastic.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-summary__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 2",
+        "sourceExcerpt": "…astic' comes from the Greek plassein, meaning 'to mould'. Some plastics are derived from natural sources, some are semi-synthetic (the result of chemical action on a natural substance), and some are entirely synthetic, that is, chemically engineered from the constituents of coal or oil. Some are 'thermoplastic', which means that, like candlewax, they melt when heated and can then be reshaped. Others are 'thermosetting': like eggs, they cannot revert to their original viscous state, and their shape is thus fixed for…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-summary__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 3",
+        "sourceExcerpt": "…elopment of these early plastics was generated by a number of factors — immense technological progress in the domain of chemistry, coupled with wider cultural changes, and the pragmatic need to find acceptable substitutes for dwindling supplies of 'luxury' materials such as tortoiseshell and ivory.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-flowchart__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 6",
+        "sourceExcerpt": "…om wood or coal) were initially combined under vacuum inside a large egg-shaped kettle. The result was a resin known as Novalak, which became soluble and malleable when heated. The resin was allowed to cool in shallow trays until it hardened, and then broken up and ground into powder.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-flowchart__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 7",
+        "sourceExcerpt": "Other substances were then introduced: including fillers, such as woodflour, asbestos or cotton, which increase strength and moisture resistance, catalysts (substances to speed up the reaction between two chemicals without joining to either) and hexa, a compound of ammonia and formaldehyde which supplied the additional formaldehyde necessary to form a thermosetting resin. This resin was then left to cool and harden, and ground up a second time. The resulting granular powder was raw Bakelite, ready to be made into a…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-flowchart__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 7",
+        "sourceExcerpt": "…oisture resistance, catalysts (substances to speed up the reaction between two chemicals without joining to either) and hexa, a compound of ammonia and formaldehyde which supplied the additional formaldehyde necessary to form a thermosetting resin. This resin was then left to cool and harden, and ground up a second time. The resulting granular powder was raw Bakelite, ready to be made into a vast range of manufactured objects.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-flowchart__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 7",
+        "sourceExcerpt": "…ting resin. This resin was then left to cool and harden, and ground up a second time. The resulting granular powder was raw Bakelite, ready to be made into a vast range of manufactured objects.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-flowchart__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Paragraph 8",
+        "sourceExcerpt": "…last stage, the heated Bakelite was poured into a hollow mould of the required shape and subjected to extreme heat and pressure; thereby 'setting' its form for life.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-multi",
+        "responseKind": "multiselect",
+        "passagePart": 1,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "The design of Bakelite objects, everything from earrings to television sets, was governed to a large extent by the technical requirements of the moulding process. The object could not be designed so that it was locked into the mould and therefore difficult to extract. A common general rule was that objects should taper towards the deepest part of the mould, and if necessary the product was moulded in separate pieces.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-multi",
+        "responseKind": "multiselect",
+        "passagePart": 1,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "The design of Bakelite objects, everything from earrings to television sets, was governed to a large extent by the technical requirements of the moulding process. The object could not be designed so that it was locked into the mould and therefore difficult to extract. A common general rule was that objects should taper towards the deepest part of the mould, and if necessary the product was moulded in separate pieces.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1q11",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Paragraph 1",
+        "sourceExcerpt": "…erial. His invention, which he named 'Bakelite', was of enormous technological importance, and effectively launched the modern plastics industry.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1q12",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Paragraph 1",
+        "sourceExcerpt": "…ist working in New York, discovered and patented a revolutionary new synthetic material. His invention, which he named 'Bakelite', was of enormous technological importance, and effectively launched the modern plastics industry.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1q13",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Paragraph 7",
+        "sourceExcerpt": "…resin. This resin was then left to cool and harden, and ground up a second time. The resulting granular powder was raw Bakelite, ready to be made into a vast range of manufactured objects.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2q14",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 2",
+        "sourceExcerpt": "…, tempting a smile, even a laugh. Laughter has always struck people as deeply mysterious, perhaps pointless. The writer Arthur Koestler dubbed it the luxury reflex: 'unique in that it serves no apparent biological purpose'.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2q15",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 3",
+        "sourceExcerpt": "Theories about humour have an ancient pedigree. Plato expressed the idea that humour is simply a delighted feeling of superiority over others. Kant and Freud felt that joke-telling relies on building up a psychic tension which is safely punctured by the ludicrousness of the punchline. But most modern humour theorists have settled on some version of Aristotle's belief that jokes are based on a reaction to or resolution of incongruity, when the punchline is either a nonsense or, though appearing silly, has a clever s…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2q16",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "…scans showed that at the beginning of a joke the listener's prefrontal cortex lit up, particularly the right prefrontal believed to be critical for problem solving. But there was also activity in the temporal lobes at the side of the head (consistent with attempts to rouse stored knowledge) and in many other brain areas. Then when the punchline arrived, a new area sprang to life — the orbital prefrontal cortex. This patch of brain tucked behind the orbits of the eyes is associated with evaluating information.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2q17",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 3",
+        "sourceExcerpt": "Theories about humour have an ancient pedigree. Plato expressed the idea that humour is simply a delighted feeling of superiority over others. Kant and Freud felt that joke-telling relies on building up a psychic tension which is safely punctured by the ludicrousness of the punchline. But most modern humour theorists have settled on some version of Aristotle's belief that jokes are based on a reaction to or resolution of incongruity, when the punchline is either a nonsense or, though appearing silly, has a clever s…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2q18",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 4",
+        "sourceExcerpt": "Graeme Ritchie, a computational linguist in Edinburgh, studies the linguistic structure of jokes in order to understand not only humour but language understanding and reasoning in machines. He says that while there is no single format for jokes, many revolve around a sudden and surprising conceptual shift. A comedian will present a situation followed by an unexpected interpretation that is also apt.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2q19",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 4",
+        "sourceExcerpt": "…He says that while there is no single format for jokes, many revolve around a sudden and surprising conceptual shift. A comedian will present a situation followed by an unexpected interpretation that is also apt.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2q20",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Paragraph 6",
+        "sourceExcerpt": "…ial part of development in most young mammals. Rats produce ultrasonic squeaks to prevent their scuffles turning nasty. Chimpanzees have a 'play-face' — a gaping expression accompanied by a panting 'ah, ah' noise. In humans, these signals have mutated into smiles and laughs. Researchers believe social situations, rather than cognitive events such as jokes, trigger these instinctual markers of play or appeasement.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-diagram__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "…inning of a joke the listener's prefrontal cortex lit up, particularly the right prefrontal believed to be critical for problem solving. But there was also activity in the temporal lobes at the side of the head (consistent with attempts to rouse stored knowledge) and in many other brain areas. Then when the punchline arrived, a new area sprang to life — the orbital prefrontal cortex. This patch of brain tucked behind the orbits of the eyes is associated with evaluating information.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-diagram__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "…t up, particularly the right prefrontal believed to be critical for problem solving. But there was also activity in the temporal lobes at the side of the head (consistent with attempts to rouse stored knowledge) and in many other brain areas. Then when the punchline arrived, a new area sprang to life — the orbital prefrontal cortex. This patch of brain tucked behind the orbits of the eyes is associated with evaluating information.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-diagram__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Paragraph 9",
+        "sourceExcerpt": "…ng to life — the orbital prefrontal cortex. This patch of brain tucked behind the orbits of the eyes is associated with evaluating information.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-match__24",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Paragraph 10",
+        "sourceExcerpt": "Making a rapid emotional assessment of the events of the moment is an extremely demanding job for the brain, animal or human. Energy and arousal levels may need to be retuned in the blink of an eye. These abrupt changes will produce either positive or negative feelings. The orbital cortex, the region that becomes active in Goel's experiment, seems the best candidate for the site that feeds such feelings into higher-level thought processes, with its close connections to the brain's sub-cortical arousal apparatus and…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-match__25",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Paragraph 11",
+        "sourceExcerpt": "…sal in response to external events, but humans, who have developed a much more complicated internal life as a result of language, respond emotionally not only to their surroundings, but to their own thoughts. Whenever a sought-for answer snaps into place, there is a shudder of pleased recognition. Creative discovery being pleasurable, humans have learned to find ways of milking this natural response. The fact that jokes tap into our general evaluative machinery explains why the line between funny and disgusting, or…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-match__26",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Paragraph 11",
+        "sourceExcerpt": "…ween funny and disgusting, or funny and frightening, can be so fine. Whether a joke gives pleasure or pain depends on a person's outlook.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 27,
+        "responseKey": "r2-match__27",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Paragraph 12",
+        "sourceExcerpt": "Humour may be a luxury, but the mechanism behind it is no evolutionary accident. As Peter Derks, a psychologist at William and Mary College in Virginia, says: 'I like to think of humour as the distorted mirror of the mind. It's creative, perceptual, analytical and lingual. If we can figure out how the mind processes humour, then we'll have a pretty good handle on how it works in general.'",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-summary__28",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 4",
+        "sourceExcerpt": "…he second half of the 17th century. For example, Newton published his mathematical treatise, known as the Principia, in Latin, but published his later work on the properties of light — Optics — in English.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-summary__29",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 7",
+        "sourceExcerpt": "…ht have felt more comfortable with Latin precisely because its audience, though international, was socially restricted. Doctors clung the most keenly to Latin as an 'insider language'.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-summary__30",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 8",
+        "sourceExcerpt": "…the early modern period. English was not well equipped to deal with scientific argument. First, it lacked the necessary technical vocabulary. Second, it lacked the grammatical resources required to represent the world in an objective and impersonal way, and to discuss the relations, such as cause and effect, that might hold between complex and hypothetical entities.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-summary__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 8",
+        "sourceExcerpt": "…l equipped to deal with scientific argument. First, it lacked the necessary technical vocabulary. Second, it lacked the grammatical resources required to represent the world in an objective and impersonal way, and to discuss the relations, such as cause and effect, that might hold between complex and hypothetical entities.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-summary__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 3",
+        "sourceExcerpt": "…asm. Some of these scholars, including two with interests in language — John Wilkins and John Wallis — helped found the Royal Society in 1660 in order to promote empirical scientific research.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-summary__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 11",
+        "sourceExcerpt": "…formative period in the establishment of scientific English. In the following century much of this momentum was lost as German established itself as the leading European language of science. It is estimated that by the end of the 18th century 401 German scientific journals had been established as opposed to 96 in France and 50 in England. However, in the 19th century scientific English again enjoyed substantial lexical growth as the industrial revolution created the need for new technical vocabulary, and new, speci…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-summary__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 11",
+        "sourceExcerpt": "…ance and 50 in England. However, in the 19th century scientific English again enjoyed substantial lexical growth as the industrial revolution created the need for new technical vocabulary, and new, specialised, professional societies were instituted to promote and publish in the new disciplines.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3q35",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Paragraph 1",
+        "sourceExcerpt": "…e. This is not just because of the importance of English-speaking countries such as the USA in scientific research; the scientists of many non-English-speaking countries find that they need to write their research papers in English to reach a wide international audience. Given the prominence of scientific English today, it may seem surprising that no one really knew how to write science in English before the 17th century. Before that, Latin was regarded as the lingua franca for European intellectuals.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3q36",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Paragraph 2",
+        "sourceExcerpt": "…the discovery of magnetism (and hence the invention of the compass), improvements in cartography and — perhaps the most important scientific revolution of them all — the new theories of astronomy and the movement of the Earth in relation to the planets and stars, developed by Copernicus (1473-1543).",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3q37",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Paragraph 11",
+        "sourceExcerpt": "The 17th century was thus a formative period in the establishment of scientific English. In the following century much of this momentum was lost as German established itself as the leading European language of science. It is estimated that by the end of the 18th century 401 German scientific journals had been established as opposed to 96 in France and 50 in England. However, in the 19th century scientific English again enjoyed substantial lexical growth as the industrial revolution created the need for new technica…",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-table__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 4",
+        "sourceExcerpt": "…itions of science. In the initial stages of the scientific revolution, most publications in the national languages were popular works, encyclopaedias, educational textbooks and translations. Original science was not done in English until the second half of the 17th century. For example, Newton published his mathematical treatise, known as the Principia, in Latin, but published his later work on the properties of light — Optics — in English.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-table__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 4",
+        "sourceExcerpt": "…nglish until the second half of the 17th century. For example, Newton published his mathematical treatise, known as the Principia, in Latin, but published his later work on the properties of light — Optics — in English.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-table__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Paragraph 5",
+        "sourceExcerpt": "…ience. Latin was suitable for an international audience of scholars, whereas English reached a socially wider, but more local, audience. Hence, popular science was written in English.",
+        "rationale": "The owner-reviewed Cambridge reading key is pinned independently; the highest-ranked passage paragraph supplies the corresponding textual evidence.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "human",
+          "id": "owner-reviewed-set1-key"
+        },
+        "reviewedAt": "2026-09-04"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "961c96ad076f9297adee808f42cbcca9cdb6e0e8918771cf066e0658b2ae7abd",
+      "task1ImageSha256": "703226494824e298afdfcbb574972161a42f78f8632dded82832a0e497c5dc5c"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "ea00959bcdf0b3811d9ed0afbc63d3cfc2f710fe69deb72ae96dc93275c25120"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "a1deb94c79dcefc7b28740994df775a16fe9facc2c7709064ef99013c52fcc3f",
+    "evidencePath": "tests/fixtures/ielts/set-1-approved.json",
+    "evidenceSha256": "d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e",
+    "reviewer": {
+      "kind": "human",
+      "id": "owner-reviewed-set1-key"
+    },
+    "reviewedAt": "2026-09-04"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "e4918e435d4e51098ae3f9c0ab8687d5eb1ecf15706cd0e6ffc944faaed8a502"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "eb2ef62d96ea6f47569767896307f038f419555d6a1f993d8d8e120d9c37758b",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

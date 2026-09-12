@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:13:18.449Z",
+  "set": 9,
+  "source": "src/data/mocks/ielts-set-9.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-9.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/ielts-listening-set-9.repaired.mp3",
+  "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+  "transcriptSha256": "84538f11d3419822eacd4cad689e684fd92971d7667e9132c98b28b65f1a60ed",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "d2a9468295bfc35ae6beba8a225c77474aaf8eee98443d6c1d0350137d5f96c0",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/whisper-repaired-set-9.json",
+  "asrSourceSha256": "ae664a08dd0c44ea0edb3e4c617f1da2ae0831163aa0f005e6faf45450851268",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "repair",
+  "status": "PASS",
+  "expectedWords": 1472,
+  "recognizedWords": 1536,
+  "editDistance": 319,
+  "wordErrorRate": 0.2167,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": false,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Whitcombe"
+      ],
+      "asrRecognitionVariants": [
+        "Whitcomb"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 128.67,
+      "endSeconds": 132.61,
+      "audiblePhrase": "Yes. My first name's Rebecca. And my surname is Whitcomb."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "4",
+        "four"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 143.63,
+      "endSeconds": 148.71,
+      "audiblePhrase": "The file is 077-34-209-865."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "double"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 166.89,
+      "endSeconds": 171.01,
+      "audiblePhrase": "I'll take a twin room. Oh, sorry. No, a double, please."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "business"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 248.29,
+      "endSeconds": 251.83,
+      "audiblePhrase": "It's for business. There's a conference in the city that week."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "parking"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 255.55,
+      "endSeconds": 259.81,
+      "audiblePhrase": "Two things, actually. We'll be driving down, so we'd like parking."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "cot"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 260.55,
+      "endSeconds": 264.01,
+      "audiblePhrase": "And we're bringing our baby. So could you put a cot in the room?"
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "garden"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 272.31,
+      "endSeconds": 276.05,
+      "audiblePhrase": "Our standard room has one double bed and looks out over the garden."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 280.85,
+      "endSeconds": 283.71,
+      "audiblePhrase": "The family room sleeps more. It has three beds,"
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 284.11,
+      "endSeconds": 289.33,
+      "audiblePhrase": "though it overlooks the car park, I'm afraid. That one is 120 pounds per night."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "180",
+        "£180"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 295.39,
+      "endSeconds": 298.37,
+      "audiblePhrase": "The suite is 180 pounds a night."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "security pass",
+        "pass"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 600.85,
+      "endSeconds": 604.83,
+      "audiblePhrase": "On your first morning, please collect your security pass from the reception desk."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "8.30",
+        "8:30"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 608.5699999999999,
+      "endSeconds": 613.37,
+      "audiblePhrase": "Our working day starts at 8.30, though many people arrive a little earlier for a coffee."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "second",
+        "second floor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 616.37,
+      "endSeconds": 620.33,
+      "audiblePhrase": "The canteen is on the second floor, and it serves hot meals from midday."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "hot drinks",
+        "drinks"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 620.99,
+      "endSeconds": 625.25,
+      "audiblePhrase": "In every kitchen area, you'll find free hot drinks available throughout the day,"
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "mentor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 627.55,
+      "endSeconds": 631.73,
+      "audiblePhrase": "In terms of your first few weeks, each new employee is assigned a mentor,"
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "software"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 637.93,
+      "endSeconds": 642.11,
+      "audiblePhrase": "The meeting will focus mainly on the company software, which can take a little getting used to."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 642.67,
+      "endSeconds": 645.89,
+      "audiblePhrase": "And I should mention that the probation period lasts three months,"
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "Friday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 652.49,
+      "endSeconds": 656.61,
+      "audiblePhrase": "There's a team meeting every Friday where we share updates and celebrate successes."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "graphs",
+        "graph"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1009.73,
+      "endSeconds": 1011.89,
+      "audiblePhrase": "For the written report, add more graphs."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "sample"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1019.95,
+      "endSeconds": 1022.63,
+      "audiblePhrase": "For future work, make your sample larger."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "reliability"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1023.17,
+      "endSeconds": 1026.17,
+      "audiblePhrase": "You should also check the reliability of your sources."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "Friday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1045.09,
+      "endSeconds": 1049.19,
+      "audiblePhrase": "The final report must be handed in by Friday, so you've got a few days."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "book"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1050.27,
+      "endSeconds": 1055.73,
+      "audiblePhrase": "Oh, and Tom, I'll lend you a book that covers survey design really well."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "plates",
+        "plate"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1322.37,
+      "endSeconds": 1325.57,
+      "audiblePhrase": "and most volcanoes form at the boundaries of these tectonic plates,"
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "lava"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1335.27,
+      "endSeconds": 1336.11,
+      "audiblePhrase": "it's known as lava."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "slopes",
+        "slope"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1347.77,
+      "endSeconds": 1350.67,
+      "audiblePhrase": "As a result, they are broad and low, with gentle slopes."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "eruptions",
+        "eruption"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1355.61,
+      "endSeconds": 1359.27,
+      "audiblePhrase": "They are tall and steep, and they tend to produce far more violent eruptions."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "ash"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1360.8700000000001,
+      "endSeconds": 1366.23,
+      "audiblePhrase": "When a large volcano erupts, it can throw enormous clouds of ash high into the atmosphere."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "flow"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1374.43,
+      "endSeconds": 1377.99,
+      "audiblePhrase": "But the deadliest hazard of all is what's called a pyroclastic flow,"
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "fertile"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1390.81,
+      "endSeconds": 1394.21,
+      "audiblePhrase": "For one thing, volcanic regions often have extremely fertile soil,"
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "energy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1396.61,
+      "endSeconds": 1400.79,
+      "audiblePhrase": "For another, the heat below the surface can be tapped to generate geothermal energy,"
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "earthquakes",
+        "earthquake"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1410.69,
+      "endSeconds": 1413.59,
+      "audiblePhrase": "Sensitive instruments record tiny earthquakes beneath the ground,"
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "predict"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1420.81,
+      "endSeconds": 1423.01,
+      "audiblePhrase": "scientists can increasingly predict eruptions,"
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T21:59:22.761Z",
+  "set": 13,
+  "source": "src/data/mocks/ielts-set-13.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-13.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/ielts-listening-set-13.mp3",
+  "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+  "transcriptSha256": "28c5d09499917ca11fb444b294548dc7f4b588ada93a4614c262c4deb306ea9d",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "5f0e8ffa6576a487fb0d641e3ff67b482a774f3c0950b60462ba24e96b7459d2",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/whisper-set-13.json",
+  "asrSourceSha256": "f58598ca12b6230ebf493ed016ac9e4c2f330b4197821efcd77e30177e5f7471",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 3258,
+  "recognizedWords": 3190,
+  "editDistance": 130,
+  "wordErrorRate": 0.0399,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Dalton",
+        "dalton"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 51.62,
+      "endSeconds": 59.4,
+      "audiblePhrase": "Yes, it's Diana Dalton. Before we move on to the specific arrangements, I should explain how I handle a gym registration."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "Hazelwood",
+        "hazelwood"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 130.68,
+      "endSeconds": 135.5,
+      "audiblePhrase": "Lovely. And your home address? I live at 14 Hazelwood Street."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "stamina"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 167.3,
+      "endSeconds": 171.92,
+      "audiblePhrase": "Well at first I thought about weight loss, but what I really want is to improve my stamina."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "friend"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 216.42,
+      "endSeconds": 219.52,
+      "audiblePhrase": "How did you hear about us? A friend recommended you actually."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "knee"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 251.14,
+      "endSeconds": 254.4,
+      "audiblePhrase": "Just my knee. I hurt it last year so nothing too high impact."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "Monday",
+        "monday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 285.64,
+      "endSeconds": 291.16,
+      "audiblePhrase": "Could I start on Monday? Monday's fine. Now let me tell you about our two membership plans."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "12"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 291.76,
+      "endSeconds": 298.06,
+      "audiblePhrase": "The standard plan runs on a 12 month contract at £29 a month and it includes free use of the sauna."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "sauna"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 291.76,
+      "endSeconds": 298.06,
+      "audiblePhrase": "The standard plan runs on a 12 month contract at £29 a month and it includes free use of the sauna."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "45",
+        "£45"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 334.64,
+      "endSeconds": 341.56,
+      "audiblePhrase": "The premium plan is more flexible. It's a shorter six month contract but it costs £45 a month."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "towel"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 342.2,
+      "endSeconds": 347.08,
+      "audiblePhrase": "With premium you also get a free towel service and two guest passes every month."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 342.2,
+      "endSeconds": 347.08,
+      "audiblePhrase": "With premium you also get a free towel service and two guest passes every month."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "three hours",
+        "3 hours"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 567.88,
+      "endSeconds": 574.74,
+      "audiblePhrase": "The check-in desks for international flights are on level 2 and they open exactly 3 hours before departure."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "security"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 575.46,
+      "endSeconds": 581.38,
+      "audiblePhrase": "If you are travelling with hand luggage only you can skip the desks entirely and go straight to security."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "100 millilitres",
+        "100 ml",
+        "100ml"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 586.36,
+      "endSeconds": 593.76,
+      "audiblePhrase": "Each container must hold no more than 100 millilitres and all of them must fit inside a single clear plastic bag."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "plastic"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 586.36,
+      "endSeconds": 593.76,
+      "audiblePhrase": "Each container must hold no more than 100 millilitres and all of them must fit inside a single clear plastic bag."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "40 minutes",
+        "forty minutes"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 666.48,
+      "endSeconds": 669.74,
+      "audiblePhrase": "Your gate number appears roughly 40 minutes before boarding."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "pharmacy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 669.74,
+      "endSeconds": 679.28,
+      "audiblePhrase": "If you have time the duty free shops are on your left and a quiet rest area with reclining seats is on the upper floor right next to the pharmacy."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "purple"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 736.94,
+      "endSeconds": 743.94,
+      "audiblePhrase": "If you're transferring to another flight follow the purple signs to the transfer desk where staff will reprint your boarding pass."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "carrying"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1132.98,
+      "endSeconds": 1143.96,
+      "audiblePhrase": "A comparison would really strengthen the analysis. I'd also make sure your literature review covers the idea of carrying capacity. It's central to this debate."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "repeated"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1143.96,
+      "endSeconds": 1151.66,
+      "audiblePhrase": "And when you write up, keep your methodology chapter detailed so the whole study could be repeated by someone else."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "appendix"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1176.42,
+      "endSeconds": 1188.76,
+      "audiblePhrase": "Put the full questionnaire in an appendix and just summarise the key figures in the main text. Oh and do get the whole thing proof read before you submit. Small errors cost marks."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "figures",
+        "figure"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1176.42,
+      "endSeconds": 1188.76,
+      "audiblePhrase": "Put the full questionnaire in an appendix and just summarise the key figures in the main text. Oh and do get the whole thing proof read before you submit. Small errors cost marks."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "proofread"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "scientists",
+        "scientist"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1323.94,
+      "endSeconds": 1336.44,
+      "audiblePhrase": "Although it has no permanent human population, at any one time during the summer season, around 500 scientists and support staff live and work there."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "air"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1377.6,
+      "endSeconds": 1384.1,
+      "audiblePhrase": "Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "cores",
+        "core"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1385,
+      "endSeconds": 1394.04,
+      "audiblePhrase": "By drilling out long cylinders of ice, called cores, researchers can measure the makeup of the atmosphere going back almost a million years."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "archive"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1394.04,
+      "endSeconds": 1398.04,
+      "audiblePhrase": "This makes the ice a unique climate archive."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "currents",
+        "current"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1431.7,
+      "endSeconds": 1443.48,
+      "audiblePhrase": "The cold, dense water that forms around the continent sinks and drives the global system of ocean currents, a process that helps to regulate temperatures worldwide."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "krill"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1443.48,
+      "endSeconds": 1455.28,
+      "audiblePhrase": "And the surrounding Southern Ocean is extraordinarily rich in a small, shrimp-like creature called krill, which sits at the very base of the food chain."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "telescopes",
+        "telescope"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1491.34,
+      "endSeconds": 1496.64,
+      "audiblePhrase": "The thin, dry, stable air makes it an excellent site for telescopes."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "meteorites",
+        "meteorite"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1504.14,
+      "endSeconds": 1512.96,
+      "audiblePhrase": "Meteorites are also far easier to find here because dark rocks stand out so clearly against the white surface."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "isolation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1619.24,
+      "endSeconds": 1629.2,
+      "audiblePhrase": "The extreme cold is an obvious hazard, but the biggest practical problem for researchers is often the isolation, especially through the long, dark winter."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "levels",
+        "level"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1678.06,
+      "endSeconds": 1686.6,
+      "audiblePhrase": "Scientists today are particularly worried about the stability of the ice because its melting would raise global sea levels dramatically."
+    }
+  ],
+  "completionEvidenceFound": 32,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "Accepted completion phrases not found in question order for Q30"
+  ],
+  "releaseAuthorized": false
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" role="img" aria-labelledby="title desc">
+  <title id="title">Fish and meat consumption in a European country, 1979 to 2004</title>
+  <desc id="desc">Line graph of weekly consumption in grams per person. Chicken rises from about 150 to 250 grams, while beef falls from about 220 to 110, lamb from 150 to 60, and fish from 60 to about 45.</desc>
+  <rect width="680" height="430" fill="#fff"/>
+  <text x="340" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#172033">Fish and meat consumption</text>
+  <g stroke="#d8dee8" stroke-width="1">
+    <path d="M76 356H548M76 302H548M76 248H548M76 194H548M76 140H548M76 86H548M76 32H548"/>
+  </g>
+  <g stroke="#303846" stroke-width="1.5">
+    <path d="M76 32V356H548" fill="none"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#303846">
+    <text x="62" y="361" text-anchor="end">0</text>
+    <text x="62" y="307" text-anchor="end">50</text>
+    <text x="62" y="253" text-anchor="end">100</text>
+    <text x="62" y="199" text-anchor="end">150</text>
+    <text x="62" y="145" text-anchor="end">200</text>
+    <text x="62" y="91" text-anchor="end">250</text>
+    <text x="62" y="37" text-anchor="end">300</text>
+    <text x="76" y="380" text-anchor="middle">1979</text>
+    <text x="170" y="380" text-anchor="middle">1984</text>
+    <text x="265" y="380" text-anchor="middle">1989</text>
+    <text x="359" y="380" text-anchor="middle">1994</text>
+    <text x="454" y="380" text-anchor="middle">1999</text>
+    <text x="548" y="380" text-anchor="middle">2004</text>
+    <text x="312" y="411" text-anchor="middle" font-size="14">Year</text>
+    <text x="18" y="194" text-anchor="middle" font-size="14" transform="rotate(-90 18 194)">Grams per person per week</text>
+  </g>
+  <polyline points="76,194 123,183 170,172 218,162 265,151 312,140 359,129 406,119 454,108 501,97 548,86" fill="none" stroke="#d33f49" stroke-width="4" stroke-linejoin="round"/>
+  <polyline points="76,119 123,156 170,97 218,108 265,108 312,140 359,162 406,151 454,194 501,226 548,237" fill="none" stroke="#2764ae" stroke-width="4" stroke-linejoin="round"/>
+  <polyline points="76,194 123,205 170,226 218,216 265,237 312,248 359,259 406,270 454,281 501,291 548,291" fill="none" stroke="#2f8b57" stroke-width="4" stroke-linejoin="round"/>
+  <polyline points="76,291 123,302 170,302 218,302 265,307 312,307 359,307 406,307 454,313 501,307 548,307" fill="none" stroke="#7d5aa6" stroke-width="4" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700">
+    <text x="559" y="89" fill="#d33f49">Chicken</text>
+    <text x="559" y="240" fill="#2764ae">Beef</text>
+    <text x="559" y="294" fill="#2f8b57">Lamb</text>
+    <text x="559" y="311" fill="#7d5aa6">Fish</text>
+  </g>
+</svg>

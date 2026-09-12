@@ -168,7 +168,7 @@ Finally, we like to say thank you properly. The end-of-year celebration is held 
           blanks: [
             { num: 13, answers: ['18', 'eighteen'], maxWords: 1 },
             { num: 14, answers: ['two hours', '2 hours'], maxWords: 2 },
-            { num: 15, answers: ['boots', 'boot'], maxWords: 1 },
+            { num: 15, answers: ['boots'], maxWords: 1 },
             { num: 16, answers: ['belongings'], maxWords: 1 },
             { num: 17, answers: ['hot drinks', 'drinks'], maxWords: 2 },
             { num: 18, answers: ['supervisor'], maxWords: 1 },
@@ -291,7 +291,7 @@ RYAN: Will do. Thanks.`,
           blanks: [
             { num: 26, answers: ['jacket'], maxWords: 1 },
             { num: 27, answers: ['camera'], maxWords: 1 },
-            { num: 28, answers: ['bottles', 'bottle'], maxWords: 1 },
+            { num: 28, answers: ['bottles'], maxWords: 1 },
             { num: 29, answers: ['notebook'], maxWords: 1 },
             { num: 30, answers: ['assessment'], maxWords: 1 },
           ],
@@ -347,15 +347,15 @@ Advice
 • Register each hive with the local {{39}}.
 • Provide a nearby source of {{40}}.`,
           blanks: [
-            { num: 31, answers: ['rooftops', 'rooftop', 'roofs'], maxWords: 1 },
+            { num: 31, answers: ['rooftops'], maxWords: 1 },
             { num: 32, answers: ['frost'], maxWords: 1 },
             { num: 33, answers: ['pollination'], maxWords: 1 },
             { num: 34, answers: ['flavour', 'flavor'], maxWords: 1 },
             { num: 35, answers: ['awareness'], maxWords: 1 },
-            { num: 36, answers: ['flowers', 'flower'], maxWords: 1 },
+            { num: 36, answers: ['flowers'], maxWords: 1 },
             { num: 37, answers: ['pollution'], maxWords: 1 },
             { num: 38, answers: ['training'], maxWords: 1 },
-            { num: 39, answers: ['council', 'authority'], maxWords: 1 },
+            { num: 39, answers: ['council'], maxWords: 1 },
             { num: 40, answers: ['water'], maxWords: 1 },
           ],
         },
@@ -383,7 +383,7 @@ The economics of coffee production drove one of the earliest examples of global 
 
 The ecological impact of coffee's spread was considerable. In many regions, rainforest was cleared to make way for plantations, altering local biodiversity and contributing to soil erosion. Modern cultivation practices have shifted significantly: shade-grown coffee, which involves planting coffee beneath the canopy of native trees, has gained favour as an approach that preserves habitat for migratory birds and other wildlife while often improving the complexity of the bean's flavour.
 
-Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models.`,
+Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models. Price volatility adds another layer of uncertainty. A harvest damaged by drought or disease in one major producing region can raise international prices, yet a later surplus can leave smallholders unable to cover their costs. Cooperatives try to reduce this exposure by sharing processing equipment, negotiating collectively, and selling beans with traceable origins. These arrangements do not eliminate market risk, but they can give growers more influence over when and how their crop is sold. Access to credit and storage also affects whether farmers must sell immediately after harvest or can wait for more favourable prices.`,
       questions: [
         {
           type: 'formgroup',
@@ -393,7 +393,7 @@ Today, coffee is the second most traded commodity in the world by volume, surpas
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
           template: `1. {{1}}: Kaldi was a historical figure whose existence has been confirmed by archaeologists.\n2. {{2}}: Sufi monks in Yemen were among the first people to brew coffee as a drink.\n3. {{3}}: Qahveh khaneh in Constantinople served food as well as coffee.\n4. {{4}}: The 1511 ban on coffee in Mecca lasted for several decades.\n5. {{5}}: The Women's Petition Against Coffee was written by a medical doctor.\n6. {{6}}: Lloyd's of London has its origins in a coffeehouse.\n7. {{7}}: The Ottoman Empire successfully prevented coffee plants from leaving its territory.`,
           blanks: [
-            { num: 1, answers: ['NOT GIVEN'] },
+            { num: 1, answers: ['FALSE'] },
             { num: 2, answers: ['TRUE'] },
             { num: 3, answers: ['NOT GIVEN'] },
             { num: 4, answers: ['FALSE'] },
@@ -415,7 +415,7 @@ Today, coffee is the second most traded commodity in the world by volume, surpas
             { num: 10, answers: ['living'] },
             { num: 11, answers: ['shade-grown'] },
             { num: 12, answers: ['petroleum'] },
-            { num: 13, answers: ['certification schemes', 'certification'] },
+            { num: 13, answers: ['certification schemes'] },
           ],
         },
       ],
@@ -440,7 +440,7 @@ E. Insects, which form the foundation of many food webs, are acutely sensitive t
 
 F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.
 
-G. The International Dark-Sky Association campaigns globally for better lighting practices and designates certified dark-sky parks and communities where light pollution is strictly controlled. As of 2024, over two hundred such protected areas exist worldwide. However, the pace of progress remains slow relative to the expansion of global light pollution, which has been growing at approximately two percent per year. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved.`,
+G. The International Dark-Sky Association campaigns globally for better lighting practices and designates certified dark-sky parks and communities where light pollution is strictly controlled. As of 2024, over two hundred such protected areas exist worldwide. However, the pace of progress remains slow relative to the expansion of global light pollution, which has been growing at approximately two percent per year. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved. Measuring progress is itself challenging. Satellite instruments record light directed upwards, whereas animals respond to brightness at ground level, colour, timing, and duration. Researchers therefore combine remote observations with field sensors and behavioural studies. This distinction matters because two towns with a similar glow from space may expose wildlife to very different conditions, depending on the lamps used and the hours during which they operate.`,
       questions: [
         {
           type: 'matching',
@@ -449,7 +449,7 @@ G. The International Dark-Sky Association campaigns globally for better lighting
           qRange: [14, 20],
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
-            { num: 14, stem: 'A description of a government body that certifies areas with low light pollution', answer: 'G' },
+            { num: 14, stem: 'A description of an international organisation that certifies areas with low light pollution', answer: 'G' },
             { num: 15, stem: 'An explanation of why hatchling sea turtles instinctively move towards light', answer: 'C' },
             { num: 16, stem: 'Details of how light affects a specific chemical produced in animals', answer: 'B' },
             { num: 17, stem: 'Statistical data on the collision deaths of migratory birds', answer: 'D' },
@@ -474,11 +474,11 @@ G. The International Dark-Sky Association campaigns globally for better lighting
           qRange: [21, 26],
           groupLabel: 'Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'The Impact of Light Pollution on Wildlife',
-          template: `Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings are drawn towards {{22}} areas rather than the sea. In birds, the problem of {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.`,
+          template: `Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.`,
           blanks: [
             { num: 21, answers: ['melatonin'] },
-            { num: 22, answers: ['lit', 'illuminated', 'developed'] },
-            { num: 23, answers: ['fatal light attraction'] },
+            { num: 22, answers: ['developed'] },
+            { num: 23, answers: ['light attraction'] },
             { num: 24, answers: ['phototaxis'] },
             { num: 25, answers: ['hedgerows'] },
             { num: 26, answers: ['reversible'] },
@@ -506,7 +506,7 @@ Not all psychologists accept Schwartz's thesis uncritically. Subsequent research
 
 Cross-cultural comparisons reveal further nuance. Research by Iyengar and colleagues found that choice preferences differ significantly between individualist and collectivist cultures. Participants from the United States, where autonomy and self-determination are central values, expressed stronger preferences for personal choice and derived greater pleasure from having made their own selections. Participants from collectivist cultures such as Japan or India showed less preference for individual choice and, in some experiments, performed better and more happily when choices were made for them by trusted others. These findings challenge the universality of choice as a value and suggest that its psychological effects are mediated by cultural context.
 
-The implications for policy and design are significant. Behavioural economists have proposed that "choice architecture"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as "decision minimalism") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised.`,
+The implications for policy and design are significant. Behavioural economists have proposed that "choice architecture"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as "decision minimalism") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion rates, later satisfaction, and reversals of a decision, while making alternatives visible and easy to select. Such evaluation shifts attention from the sheer number of options to whether the decision process helps people understand meaningful differences between them.`,
       questions: [
         {
           type: 'mcq',

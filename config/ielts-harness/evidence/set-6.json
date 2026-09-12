@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 6,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-6.ts",
+    "sourceSha256": "23715602286410127c434b4148d9caaeb4f678d4316a21b322473e5dc51ddc97",
+    "releaseFingerprintSha256": "72ff0e0764795a98bc73ff82cf3fe9b0b7923a584e82e5722280427676cf0001"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "transcriptSha256": "75a21d82847e28a6939d4658aab924d7ab512dc4f65761ca992ba013370a469f",
+      "objectiveSha256": "c29587c915921e33ada754f55ff62859f9d0267f37c3d3c3e4c33f68d7855198"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "transcriptSha256": "75a21d82847e28a6939d4658aab924d7ab512dc4f65761ca992ba013370a469f",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-6-listening-evidence.json",
+      "evidenceSha256": "fff55fbc7a97020ffed610581a1677926437ca2a3c7c29c786ea244ccb52a370"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 92.52,
+        "endSeconds": 94.82,
+        "audiblePhrase": "For three days please. I'm here until Thursday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 130.12,
+        "endSeconds": 131.62,
+        "audiblePhrase": "We do road bikes and mountain bikes.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 164.78,
+        "endSeconds": 168.7,
+        "audiblePhrase": "Now we do ask for a deposit. Will you be paying by cash or card?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 237.24,
+        "endSeconds": 241.04,
+        "audiblePhrase": "Of course, would you like any extras? A lot of people hire a helmet.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 244.84000000000003,
+        "endSeconds": 250,
+        "audiblePhrase": "Sensible. And don't worry about breakdowns. A repair kit is included free with every rental.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 279.66,
+        "endSeconds": 284.66,
+        "audiblePhrase": "We have two branches, but hired bikes must be returned to the central branch near the market square.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 315.34,
+        "endSeconds": 320.58,
+        "audiblePhrase": "Certainly. A mountain bike is five pounds an hour or 18 pounds for a full day.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 321.1,
+        "endSeconds": 324.66,
+        "audiblePhrase": "The deposit on that one is 30 pounds and it comes with lights fitted.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 326.72,
+        "endSeconds": 331.96,
+        "audiblePhrase": "An electric bike is nine pounds an hour or 35 pounds a day with a 50 pound deposit.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 332.5,
+        "endSeconds": 335.22,
+        "audiblePhrase": "Each electric bike also comes with its own charger.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 515.1,
+        "endSeconds": 545.36,
+        "audiblePhrase": "Let me begin with what's actually new here because there's been some confusion. The swimming pool, although it looks brand new, was in fact refurbished from the old center and the cafe has simply been expanded. The sports hall is the same one many of you will remember. What's really new are two things we're very proud of. A full climbing wall, the tallest in the region, and a finished style sauna next to the changing rooms. Those two are completely new additions.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 515.1,
+        "endSeconds": 545.36,
+        "audiblePhrase": "Let me begin with what's actually new here because there's been some confusion. The swimming pool, although it looks brand new, was in fact refurbished from the old center and the cafe has simply been expanded. The sports hall is the same one many of you will remember. What's really new are two things we're very proud of. A full climbing wall, the tallest in the region, and a finished style sauna next to the changing rooms. Those two are completely new additions.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 576.22,
+        "endSeconds": 581.26,
+        "audiblePhrase": "On weekdays, the center opens at seven in the morning, which is early enough for a swim before work.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 581.26,
+        "endSeconds": 588.3,
+        "audiblePhrase": "Do note that it closes early on Sundays at four rather than the usual ten, so plan your weekend visits accordingly.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 613.26,
+        "endSeconds": 618.68,
+        "audiblePhrase": "A standard membership costs 40 pounds per month, which gives you unlimited access to all the facilities.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 619.52,
+        "endSeconds": 625.14,
+        "audiblePhrase": "As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 716.3,
+        "endSeconds": 722.14,
+        "audiblePhrase": "The pool has a special shallow area for toddlers, so it's ideal for families with young children.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 723.08,
+        "endSeconds": 724.56,
+        "audiblePhrase": "One small practical point.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 757.08,
+        "endSeconds": 762.1,
+        "audiblePhrase": "We offer everything from spinning to boxing, but by far the most popular class is yoga.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 767.38,
+        "endSeconds": 774.26,
+        "audiblePhrase": "To secure a place, all booking is done through the center's website, so please create an account before you leave today.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 946.32,
+        "endSeconds": 952.16,
+        "audiblePhrase": "Come in Sophie, Mark. Let's go over your marketing coursework. Remind me what the main focus is.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 968.86,
+        "endSeconds": 981.96,
+        "audiblePhrase": "Sophie, why did you pick that clothing company in particular? Honestly, it's not because they're especially famous, though they are. The real reason is that they've published a lot of their sales data, so I actually have the figures to work with.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1008.54,
+        "endSeconds": 1029.08,
+        "audiblePhrase": "That's exactly the right thinking. Data makes all the difference. Real figures are always far more convincing to an examiner than personal opinions. Now I've read your draft. The introduction is strong, and your word count is fine. The person's work is your survey questions. Several of them are quite leading.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1133,
+        "endSeconds": 1139,
+        "audiblePhrase": "Yes, 30 is too few. Try sharing it more widely this time. And how are you planning to present your findings?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1133,
+        "endSeconds": 1139,
+        "audiblePhrase": "Yes, 30 is too few. Try sharing it more widely this time. And how are you planning to present your findings?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1238.02,
+        "endSeconds": 1241.58,
+        "audiblePhrase": "Add a clear label to each chart. Otherwise, the reader gets lost.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1242.52,
+        "endSeconds": 1245.86,
+        "audiblePhrase": "Make sure you reference all sources correctly, including websites.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1246.86,
+        "endSeconds": 1249.38,
+        "audiblePhrase": "Keep the tone formal throughout. No slang.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1250.26,
+        "endSeconds": 1253.84,
+        "audiblePhrase": "Proofread carefully for spelling, because errors cost marks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1254.5,
+        "endSeconds": 1259.12,
+        "audiblePhrase": "And when you're done, upload the file as a PDF, not a Word document.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1411.98,
+        "endSeconds": 1421.56,
+        "audiblePhrase": "Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavored by falling leaves.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1426.94,
+        "endSeconds": 1432.04,
+        "audiblePhrase": "It was taken as a medicine, valued for keeping people alert and aiding digestion.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1432.8,
+        "endSeconds": 1439.36,
+        "audiblePhrase": "In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1473.84,
+        "endSeconds": 1480.42,
+        "audiblePhrase": "It was carried to Japan by monks who had studied in Chinese monasteries and brought the custom home with them.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1484.4,
+        "endSeconds": 1489.7,
+        "audiblePhrase": "An elaborate and highly formal tea ceremony developed, with strict rules governing every movement.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1523.6,
+        "endSeconds": 1532.32,
+        "audiblePhrase": "It was first shipped to Europe by Portuguese traders in the 16th century, though the Dutch and later the British soon dominated the trade.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1533.12,
+        "endSeconds": 1544.02,
+        "audiblePhrase": "Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1645.26,
+        "endSeconds": 1652.54,
+        "audiblePhrase": "To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1661.32,
+        "endSeconds": 1666.98,
+        "audiblePhrase": "Conditions were often extremely hard for the workers, who labored long hours for very little pay.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1701.8,
+        "endSeconds": 1713.98,
+        "audiblePhrase": "For centuries, tea was brewed loose in a pot, but in the early 1900s the tea bag was invented, apparently by accident, when a merchant sent out samples in small silk pouches.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "9fa80a2b26720f45534d428e17141666293794f08fab44d6f68c06ddfeb43f47",
+      "objectiveSha256": "c29587c915921e33ada754f55ff62859f9d0267f37c3d3c3e4c33f68d7855198"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Paper is so fundamental to modern civilisation that it is easy to forget how relatively recent its invention is and how dramatically it transformed the world. Before paper, civilisations stored and transmitted knowledge on materials that were expensive, heavy, and difficult to produce: clay tablets in Mesopotamia, papyrus along the Nile, and silk or bamboo strips in ancient China. Each of these materials limited the spread of literacy and knowledge to small elites. Clay tablets were durable but cumbersome to transport, while silk was light enough to carry yet too costly for ordinary records. Bamboo strips could be tied together into documents, although even a modest text became a bulky object. A cheaper, portable surface therefore changed who could preserve information as well as how far that information could travel.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The invention of paper is attributed to Cai Lun, a court official in the Han Dynasty of China, around 105 CE. Cai Lun developed a technique for creating sheets from macerated plant fibres—including bark, hemp, rags, and fishing nets—suspended in water, drained through a mesh screen, and dried. This process produced a material that was lighter, cheaper, and more versatile than any existing writing surface. The basic method was also repeatable: a maker could spread an even layer of fibres across the screen, press out excess moisture, and produce sheets of broadly consistent thickness. Although archaeological evidence suggests that earlier, cruder forms of paper existed in China before Cai Lun, his refinement of the technique is credited with making paper practical for widespread use.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-table__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The invention of paper is attributed to Cai Lun, a court official in the Han Dynasty of China, around 105 CE. Cai Lun developed a technique for creating sheets from macerated plant fibres—including bark, hemp, rags, and fishing nets—suspended in water, drained through a mesh screen, and dried. This process produced a material that was lighter, cheaper, and more versatile than any existing writing surface. The basic method was also repeatable: a maker could spread an even layer of fibres across the screen, press out excess moisture, and produce sheets of broadly consistent thickness. Although archaeological evidence suggests that earlier, cruder forms of paper existed in China before Cai Lun, his refinement of the technique is credited with making paper practical for widespread use.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-table__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-table__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-table__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-table__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-table__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Despite predictions that digital technology would render paper obsolete—the so-called \"paperless office\" of the 1970s and 1980s—global paper consumption continued to rise until the mid-2010s, when it began to plateau and then slowly decline in certain categories. Office paper use has fallen significantly, but packaging paper and cardboard have surged alongside the growth of e-commerce. Paper, it seems, remains as adaptable as ever, finding new roles even as old ones disappear.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. In Europe, advocates of rewilding point to several large carnivores that were once native to the continent but were hunted to extinction or near-extinction over centuries of agricultural expansion: wolves, bears, lynx, and—most ambitiously—the wisent, or European bison. Some recovery has already occurred naturally. Wolf populations have expanded from remnant populations in Italy and the Iberian Peninsula, colonising France, Germany, and the Netherlands without human assistance, aided by legal protections introduced under the European Union's Habitats Directive. Lynx have been successfully reintroduced in Switzerland, the Czech Republic, and Germany.",
+        "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Rewilding is founded on the concept of trophic cascades: the idea that predators at the top of a food chain exert powerful, often indirect effects on ecosystems far below them. The most celebrated example is the reintroduction of grey wolves to Yellowstone National Park in the United States in 1995. Within a few years, wolf predation had dramatically reduced the number of elk, which had been overgrazing riverbanks and valley floors. Vegetation recovered, rivers stabilised as root systems held soil in place, and populations of beavers, songbirds, and fish rebounded. The important point was not simply that one species had returned. Changes at the top of the food chain altered grazing pressure, plant growth, riverbank stability, and habitat for several other species. Ecologists describe this sequence of events as a \"trophic cascade,\" and it provided compelling evidence for the ecological value of apex predators.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The rewilding of rivers is equally compelling. Beavers, extinct in Britain for approximately four hundred years, were reintroduced to Scotland in 2009 as part of a pilot project. The results have been striking. Beaver dams create wetland habitats, slow the flow of water, reduce downstream flooding, and improve water quality. Instead of moving rapidly through a single channel, storm water is temporarily stored in a network of ponds and side channels before continuing downstream. This delay can flatten the highest point of a flood wave even when it does not prevent flooding altogether. A river system in Devon, where beavers were reintroduced in 2011, showed a 30 percent reduction in peak water flow during storm events—a finding with significant implications for flood management in a country increasingly vulnerable to extreme rainfall.",
+        "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Perhaps the most significant challenge is cultural. The idealised European landscape—neatly farmed fields, managed forests, picturesque villages—reflects centuries of human shaping of the land. These places are not viewed only as productive territory: they can embody local history, family identity, and ideas about responsible stewardship. Allowing scrub, wetlands, or large animals to return may therefore appear to erase a valued cultural landscape. For many rural communities, the arrival of wolves or the flooding caused by beavers represents not a restoration of nature but an unwelcome disruption of their way of life. Successful rewilding programmes have found that community involvement, transparent communication, and genuine local benefit-sharing are as important as ecological science.",
+        "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Across the continent of Europe, a quiet revolution in conservation is under way. For much of the twentieth century, the dominant approach to protecting nature involved designating reserves, managing habitats carefully, and excluding or strictly controlling human activity. This model has produced important results, but ecologists increasingly argue that it is insufficient: it preserves fragments of damaged ecosystems rather than restoring their capacity to function. A growing movement known as rewilding proposes a more ambitious alternative—allowing, and in some cases actively promoting, the return of nature on a large scale.",
+        "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+        "rationale": "The cited material contains the information matched to G; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Critics of rewilding raise legitimate concerns. Farmers and landowners are understandably anxious about the return of large predators that may attack livestock. The economic impact can be severe for individual producers, even if the overall ecological and economic benefits are positive. In some regions of Europe, compensation schemes for livestock losses to wolves and bears have helped reduce conflict, but enforcement and adequacy of payments remain contentious. There are also concerns about whether rewilded landscapes can be maintained at sufficient scale: wildlife needs vast corridors of connected habitat to thrive, and much of Europe is densely settled and intensively farmed.",
+        "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sent__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Rewilding is founded on the concept of trophic cascades: the idea that predators at the top of a food chain exert powerful, often indirect effects on ecosystems far below them. The most celebrated example is the reintroduction of grey wolves to Yellowstone National Park in the United States in 1995. Within a few years, wolf predation had dramatically reduced the number of elk, which had been overgrazing riverbanks and valley floors. Vegetation recovered, rivers stabilised as root systems held soil in place, and populations of beavers, songbirds, and fish rebounded. The important point was not simply that one species had returned. Changes at the top of the food chain altered grazing pressure, plant growth, riverbank stability, and habitat for several other species. Ecologists describe this sequence of events as a \"trophic cascade,\" and it provided compelling evidence for the ecological value of apex predators.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sent__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. In Europe, advocates of rewilding point to several large carnivores that were once native to the continent but were hunted to extinction or near-extinction over centuries of agricultural expansion: wolves, bears, lynx, and—most ambitiously—the wisent, or European bison. Some recovery has already occurred naturally. Wolf populations have expanded from remnant populations in Italy and the Iberian Peninsula, colonising France, Germany, and the Netherlands without human assistance, aided by legal protections introduced under the European Union's Habitats Directive. Lynx have been successfully reintroduced in Switzerland, the Czech Republic, and Germany.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sent__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The rewilding of rivers is equally compelling. Beavers, extinct in Britain for approximately four hundred years, were reintroduced to Scotland in 2009 as part of a pilot project. The results have been striking. Beaver dams create wetland habitats, slow the flow of water, reduce downstream flooding, and improve water quality. Instead of moving rapidly through a single channel, storm water is temporarily stored in a network of ponds and side channels before continuing downstream. This delay can flatten the highest point of a flood wave even when it does not prevent flooding altogether. A river system in Devon, where beavers were reintroduced in 2011, showed a 30 percent reduction in peak water flow during storm events—a finding with significant implications for flood management in a country increasingly vulnerable to extreme rainfall.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sent__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Critics of rewilding raise legitimate concerns. Farmers and landowners are understandably anxious about the return of large predators that may attack livestock. The economic impact can be severe for individual producers, even if the overall ecological and economic benefits are positive. In some regions of Europe, compensation schemes for livestock losses to wolves and bears have helped reduce conflict, but enforcement and adequacy of payments remain contentious. There are also concerns about whether rewilded landscapes can be maintained at sufficient scale: wildlife needs vast corridors of connected habitat to thrive, and much of Europe is densely settled and intensively farmed.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sent__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sent__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Advocates of platform-based work stress its flexibility. Many gig workers report that the ability to set their own hours, work from home, and supplement other income streams makes gig work highly attractive. For students, parents caring for young children, or retirees seeking additional earnings, the gig model offers genuine autonomy that conventional employment cannot match. A 2019 survey by the McKinsey Global Institute found that the majority of independent workers—across countries and skill levels—chose their work status voluntarily and reported being satisfied with it.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics, however, focus on the substantial minority who rely on gig work as a primary income source, often involuntarily. For these workers, the flexibility argument rings hollow: without guaranteed hours, they cannot budget reliably; without employment status, they receive no sick pay, no holiday entitlement, and no employer pension contributions. Workers may also supply a vehicle, computer, insurance, or other equipment themselves. Time spent waiting for an assignment or travelling between customers may generate no fee, even though the worker cannot use it freely. Research across the United Kingdom, United States, and Australia consistently finds that median hourly earnings for gig workers, once expenses and unpaid time are accounted for, fall below the minimum wage applicable to employed workers in the same jurisdictions. The apparent freedom of gig work thus conceals significant financial insecurity.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The term \"gig economy\" describes a labour market characterised by short-term contracts, freelance work, and on-demand services, in contrast to the permanent employment that dominated the post-war economic era. The rise of digital platforms—from ride-hailing services to freelance marketplaces and food delivery apps—has accelerated this shift dramatically over the past decade. A platform can divide a service into individual assignments, match each assignment with an available worker, process payment, and record customer feedback. This coordination makes occasional work visible and accessible on a scale that informal noticeboards or personal contacts could not achieve. For some, the gig economy represents liberation from the constraints of traditional employment; for others, it represents the erosion of labour protections built up over a century of industrial relations.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation, and shifting expectations about work and employment. Whether it ultimately expands or contracts human freedom depends substantially on regulatory choices that are still being contested in legislatures, courts, and corporate boardrooms around the world.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation, and shifting expectations about work and employment. Whether it ultimately expands or contracts human freedom depends substantially on regulatory choices that are still being contested in legislatures, courts, and corporate boardrooms around the world.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "098df2b5538dae087fe4f3ac78fe1479f74c179cf7f8fc1cc582bf59b39efd80",
+      "task1ImageSha256": "eac0d0efc9bd8a880a47edb94072b47dbc17246ff52ab519e78d4e3eab1c84b3"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "7d4c4411d05b325e86943cee40ec4ab07b3bc81fc565896e64c8ba6c3e40e932"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "c29587c915921e33ada754f55ff62859f9d0267f37c3d3c3e4c33f68d7855198",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-6-objective-review.json",
+    "evidenceSha256": "298441febc72f2ec8d9d820782d1a6d8a8e0b28cd464bba5dd99c39364505366",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-academic-keys-2-7"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "2eb5642a290522f626c624bd25b93330538838c13b72229fffda63f9fda51cb7"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "72ff0e0764795a98bc73ff82cf3fe9b0b7923a584e82e5722280427676cf0001",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

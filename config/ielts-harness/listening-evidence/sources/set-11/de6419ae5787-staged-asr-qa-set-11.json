@@ -1,0 +1,781 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:58:40.339Z",
+  "set": 11,
+  "status": "PASS",
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/ielts-listening-set-11.mp3",
+  "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/asr-report-set-11.json",
+    "reportSha256": "2e0ef245336620054a1d3bd309266a2eca62bac27c4b071a9405aaeb386e25dc",
+    "wordErrorRate": 0.0878,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "32/33"
+  },
+  "partReports": [
+    {
+      "part": 1,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/full-part-qa-part-1.wav",
+      "audioSha256": "fc0efc1006587042099ddd7880b616d400e27f69e8057a807c068f4fc48c778b",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-full-part-qa-set-11-part-1.json",
+      "asrSha256": "8a14617408931b7f40569dc0d937d1859fb51376c05fc9658d1804390cc820b8",
+      "segmentIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "status": "FAIL",
+      "expectedWords": 829,
+      "recognizedWords": 805,
+      "editDistance": 34,
+      "wordErrorRate": 0.041,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 1,
+          "responseKey": "l1-form__1",
+          "candidateAcceptedAnswers": [
+            "Redhill",
+            "redhill"
+          ],
+          "asrRecognitionVariants": [
+            "Red Hill"
+          ],
+          "found": false,
+          "foundOutOfOrder": false,
+          "matchKind": null,
+          "diagnosticStartSeconds": null,
+          "startSeconds": null,
+          "endSeconds": null,
+          "audiblePhrase": ""
+        },
+        {
+          "question": 2,
+          "responseKey": "l1-form__2",
+          "candidateAcceptedAnswers": [
+            "magazine"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 92.54,
+          "endSeconds": 97.32,
+          "audiblePhrase": "I saw an advert in the newspaper. Oh no, sorry, it was actually a magazine."
+        },
+        {
+          "question": 3,
+          "responseKey": "l1-form__3",
+          "candidateAcceptedAnswers": [
+            "light"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 150.26,
+          "endSeconds": 156.7,
+          "audiblePhrase": "light, how much of it reaches the camera, and how to compose a good shot. The"
+        },
+        {
+          "question": 4,
+          "responseKey": "l1-form__4",
+          "candidateAcceptedAnswers": [
+            "morning"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 156.7,
+          "endSeconds": 158.52,
+          "audiblePhrase": "The sessions are held on Saturday morning."
+        },
+        {
+          "question": 5,
+          "responseKey": "l1-form__5",
+          "candidateAcceptedAnswers": [
+            "lake"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 202.14,
+          "endSeconds": 207.26,
+          "audiblePhrase": "For that one, the group travels out to a nearby lake and spends the whole day there."
+        },
+        {
+          "question": 6,
+          "responseKey": "l1-form__6",
+          "candidateAcceptedAnswers": [
+            "tripod"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 207.68,
+          "endSeconds": 213.3,
+          "audiblePhrase": "One thing to note, each student must bring their own tripod, as the light there can be"
+        },
+        {
+          "question": 7,
+          "responseKey": "l1-table__7",
+          "candidateAcceptedAnswers": [
+            "120",
+            "£120"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 263.24,
+          "endSeconds": 267.96,
+          "audiblePhrase": "It costs £120 and that price includes lunch."
+        },
+        {
+          "question": 8,
+          "responseKey": "l1-table__8",
+          "candidateAcceptedAnswers": [
+            "lunch"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 263.24,
+          "endSeconds": 267.96,
+          "audiblePhrase": "It costs £120 and that price includes lunch."
+        },
+        {
+          "question": 9,
+          "responseKey": "l1-table__9",
+          "candidateAcceptedAnswers": [
+            "2",
+            "two"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 271.14,
+          "endSeconds": 274.86,
+          "audiblePhrase": "The landscape workshop runs over two sessions of five hours each."
+        },
+        {
+          "question": 10,
+          "responseKey": "l1-table__10",
+          "candidateAcceptedAnswers": [
+            "transport"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 275.6,
+          "endSeconds": 280.3,
+          "audiblePhrase": "That one is £150 and the price includes transport to the lake."
+        }
+      ],
+      "completionEvidenceFound": 9,
+      "completionEvidenceTotal": 10,
+      "failures": [
+        "Accepted completion phrases not found in question order for Q1"
+      ]
+    },
+    {
+      "part": 2,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/full-part-qa-part-2.wav",
+      "audioSha256": "7c8849ced0b6bcd1d9eafbe26ee5388b2b75eaa4d05d06ce85f6c7260a7ce4e3",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-full-part-qa-set-11-part-2.json",
+      "asrSha256": "385847994e8569144ca777a765270e6a0dd18fc2b2b60e89d447fc7a3102441b",
+      "segmentIndexes": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "status": "PASS",
+      "expectedWords": 820,
+      "recognizedWords": 822,
+      "editDistance": 10,
+      "wordErrorRate": 0.0122,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 13,
+          "responseKey": "l2-form__13",
+          "candidateAcceptedAnswers": [
+            "900"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 94.30000000000001,
+          "endSeconds": 100.4,
+          "audiblePhrase": "Right, let's begin. The region is a medium sized venue and can seat 900 people."
+        },
+        {
+          "question": 14,
+          "responseKey": "l2-form__14",
+          "candidateAcceptedAnswers": [
+            "pine"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 101.14,
+          "endSeconds": 105.66,
+          "audiblePhrase": "As we walk onto the stage notice the floor. It's made of pine."
+        },
+        {
+          "question": 15,
+          "responseKey": "l2-form__15",
+          "candidateAcceptedAnswers": [
+            "scenery"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 162.74,
+          "endSeconds": 167.34,
+          "audiblePhrase": "Using a system of ropes and pulleys the crew can raise and lower the scenery"
+        },
+        {
+          "question": 16,
+          "responseKey": "l2-form__16",
+          "candidateAcceptedAnswers": [
+            "relax",
+            "wait"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 221.08,
+          "endSeconds": 228.2,
+          "audiblePhrase": "Despite the name, it isn't green, it's simply the comfortable space where the actors relax while they wait to go on."
+        },
+        {
+          "question": 17,
+          "responseKey": "l2-form__17",
+          "candidateAcceptedAnswers": [
+            "costumes",
+            "costume"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 231.52,
+          "endSeconds": 239.48,
+          "audiblePhrase": "This is where a small team of skilled staff design and make all the costumes for each production, often by hand."
+        },
+        {
+          "question": 18,
+          "responseKey": "l2-form__18",
+          "candidateAcceptedAnswers": [
+            "safety curtain",
+            "curtain",
+            "iron curtain"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 240.88,
+          "endSeconds": 249.44,
+          "audiblePhrase": "One important safety feature. In the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience."
+        },
+        {
+          "question": 19,
+          "responseKey": "l2-form__19",
+          "candidateAcceptedAnswers": [
+            "workshop"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 253.42,
+          "endSeconds": 260.8,
+          "audiblePhrase": "The large room at the back is the workshop, where the carpenters build the set, everything from walls to furniture."
+        },
+        {
+          "question": 20,
+          "responseKey": "l2-form__20",
+          "candidateAcceptedAnswers": [
+            "posters",
+            "poster",
+            "souvenirs"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 306.7,
+          "endSeconds": 311.68,
+          "audiblePhrase": "posters and other souvenirs from our current show. Do have a look before you"
+        }
+      ],
+      "completionEvidenceFound": 8,
+      "completionEvidenceTotal": 8,
+      "failures": []
+    },
+    {
+      "part": 3,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/full-part-qa-part-3.wav",
+      "audioSha256": "3da71f33e89e0492290f44be02ea7771b04240454c122501d27900ecaedba180",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-full-part-qa-set-11-part-3.json",
+      "asrSha256": "9c10d5d0dc85300fba91db33fb8a12d664829a3608dc1a275fc1f969d5772f7b",
+      "segmentIndexes": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "status": "PASS",
+      "expectedWords": 815,
+      "recognizedWords": 812,
+      "editDistance": 10,
+      "wordErrorRate": 0.0123,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 26,
+          "responseKey": "l3-form__26",
+          "candidateAcceptedAnswers": [
+            "figures",
+            "data"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 124.84,
+          "endSeconds": 130.72,
+          "audiblePhrase": "to 2009. For a topic that moves this fast, you really need more recent data."
+        },
+        {
+          "question": 27,
+          "responseKey": "l3-form__27",
+          "candidateAcceptedAnswers": [
+            "diagram"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 258.44,
+          "endSeconds": 265.28,
+          "audiblePhrase": "a diagram showing how much plastic is recycled. A visual really helps the reader. Then check"
+        },
+        {
+          "question": 28,
+          "responseKey": "l3-form__28",
+          "candidateAcceptedAnswers": [
+            "referencing",
+            "citations"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 265.28,
+          "endSeconds": 270.78,
+          "audiblePhrase": "your referencing because a couple of citations are missing a date. After that, read the whole"
+        },
+        {
+          "question": 29,
+          "responseKey": "l3-form__29",
+          "candidateAcceptedAnswers": [
+            "aloud"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 270.78,
+          "endSeconds": 277.54,
+          "audiblePhrase": "thing aloud to catch any awkward sentences. And finally, send me the revised draft by"
+        },
+        {
+          "question": 30,
+          "responseKey": "l3-form__30",
+          "candidateAcceptedAnswers": [
+            "email"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 277.54,
+          "endSeconds": 280.34,
+          "audiblePhrase": "email so I can look at it again before you submit."
+        }
+      ],
+      "completionEvidenceFound": 5,
+      "completionEvidenceTotal": 5,
+      "failures": []
+    },
+    {
+      "part": 4,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/full-part-qa-part-4.wav",
+      "audioSha256": "552ada8e860080c16d47a19debdee00244b2a7bfbc3421ee5a9c8a6066c9a17e",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-full-part-qa-set-11-part-4.json",
+      "asrSha256": "eddc8e54c49f7f37690c8f0ba5e8c6aee88ccc64ae74d305805affd4e544cff2",
+      "segmentIndexes": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "status": "PASS",
+      "expectedWords": 829,
+      "recognizedWords": 824,
+      "editDistance": 16,
+      "wordErrorRate": 0.0193,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 31,
+          "responseKey": "l4-form__31",
+          "candidateAcceptedAnswers": [
+            "ground"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 18.52,
+          "endSeconds": 20.5,
+          "audiblePhrase": "underground, hidden beneath the ground."
+        },
+        {
+          "question": 32,
+          "responseKey": "l4-form__32",
+          "candidateAcceptedAnswers": [
+            "gravity"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 63,
+          "endSeconds": 68.4,
+          "audiblePhrase": "The whole system depended on a single simple force, gravity, because there were no pumps"
+        },
+        {
+          "question": 33,
+          "responseKey": "l4-form__33",
+          "candidateAcceptedAnswers": [
+            "stagnant"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 78.1,
+          "endSeconds": 81.42,
+          "audiblePhrase": "If it was too shallow, the water stopped moving and turned stagnant."
+        },
+        {
+          "question": 34,
+          "responseKey": "l4-form__34",
+          "candidateAcceptedAnswers": [
+            "level"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 127.24,
+          "endSeconds": 129.1,
+          "audiblePhrase": "water that acted as a level."
+        },
+        {
+          "question": 35,
+          "responseKey": "l4-form__35",
+          "candidateAcceptedAnswers": [
+            "cement"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 171.58,
+          "endSeconds": 173.9,
+          "audiblePhrase": "with a special waterproof cement to prevent leaks"
+        },
+        {
+          "question": 36,
+          "responseKey": "l4-form__36",
+          "candidateAcceptedAnswers": [
+            "fountains",
+            "fountain"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 183.46,
+          "endSeconds": 185.68,
+          "audiblePhrase": "were the public fountains and baths"
+        },
+        {
+          "question": 37,
+          "responseKey": "l4-form__37",
+          "candidateAcceptedAnswers": [
+            "lime",
+            "limescale"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 226.96,
+          "endSeconds": 231.14,
+          "audiblePhrase": "the aqueducts was a constant task. A serious problem was the buildup of lime,"
+        },
+        {
+          "question": 38,
+          "responseKey": "l4-form__38",
+          "candidateAcceptedAnswers": [
+            "curator"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 240.9,
+          "endSeconds": 245.74,
+          "audiblePhrase": "entire water supply held the important title of curator, a highly respected"
+        },
+        {
+          "question": 39,
+          "responseKey": "l4-form__39",
+          "candidateAcceptedAnswers": [
+            "supply"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 279.38,
+          "endSeconds": 281.54,
+          "audiblePhrase": "to surrender simply by cutting off its supply."
+        },
+        {
+          "question": 40,
+          "responseKey": "l4-form__40",
+          "candidateAcceptedAnswers": [
+            "Renaissance"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 288.2,
+          "endSeconds": 292.34,
+          "audiblePhrase": "It was not until the Renaissance that engineers in Rome began to restore them, more than a"
+        }
+      ],
+      "completionEvidenceFound": 10,
+      "completionEvidenceTotal": 10,
+      "failures": []
+    }
+  ],
+  "wordErrorRateEvidence": "four_complete_parts",
+  "effectiveWordErrorRate": 0.0213,
+  "focusedReports": [
+    {
+      "part": 1,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/focused-part-1.wav",
+      "audioSha256": "588d7237f5a71b7aece9f2dc2057b5ee0c732b9ed8d1f349b652f3eaa86c6775",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-focused-set-11-part-1.json",
+      "asrSha256": "259a179a919a753dbe737713beee92b86c8dcb06d575217d0cd11701a6fe4c97",
+      "segmentIndexes": [
+        12
+      ],
+      "status": "PASS",
+      "expectedWords": 16,
+      "recognizedWords": 16,
+      "editDistance": 3,
+      "wordErrorRate": 0.1875,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 1,
+          "responseKey": "l1-form__1",
+          "candidateAcceptedAnswers": [
+            "Redhill",
+            "redhill"
+          ],
+          "asrRecognitionVariants": [
+            "Red Hill"
+          ],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 0,
+          "endSeconds": 4.84,
+          "audiblePhrase": "It's 42 Red Hill Road, that's R-E-D-H-I-L-L."
+        }
+      ],
+      "completionEvidenceFound": 1,
+      "completionEvidenceTotal": 1,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "7f1a79f2d2006e43349f41def6a10c08b6cc8ff8b1e84a4ff802aab36edb95d9",
+  "releaseAuthorized": false
+}

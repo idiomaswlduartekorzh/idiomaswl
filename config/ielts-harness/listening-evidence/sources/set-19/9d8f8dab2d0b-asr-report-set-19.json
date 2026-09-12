@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:11:03.960Z",
+  "set": 19,
+  "source": "src/data/mocks/ielts-set-19.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-19.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-19/ielts-listening-set-19.mp3",
+  "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21",
+  "transcriptSha256": "96be3c7d8a1fcaa2de962d7585783094f74b5c7bfc55de529a557ee05178357b",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "9fec323d1ca8f75b3e3d02670545f1fe6d737ddc7349f7c633eef7d57bc919cf",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-19/whisper-set-19.json",
+  "asrSourceSha256": "9b5f5a335800253a99b894d94518ef952c36813cbce60283a67658789c6ac35c",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3164,
+  "recognizedWords": 3105,
+  "editDistance": 82,
+  "wordErrorRate": 0.0259,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "nurse"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 144.16,
+      "endSeconds": 155.18,
+      "audiblePhrase": "Now, can I ask what you do for a living? Are you a student? No, I'm a nurse actually. I work at the City Hospital. Lovely. And which language would you like to practice with us?"
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "Spanish",
+        "spanish"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 155.9,
+      "endSeconds": 161.2,
+      "audiblePhrase": "Spanish, please. In return, I can help someone with English, which is my first language."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "intermediate"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 244.38,
+      "endSeconds": 256.82,
+      "audiblePhrase": "And how would you describe your current level of Spanish? I'd say intermediate. I studied it at school, but I've forgotten quite a lot. That's no problem at all. Where would you prefer to meet your partner?"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "library"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 257.36,
+      "endSeconds": 271.5,
+      "audiblePhrase": "I was thinking a café would be nice and relaxed. Actually, no. A café gets too noisy. The library would be far better, because it's quiet. Let me finish the Language Exchange booking by summarising what I have recorded."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "Thursday",
+        "thursday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 290.46,
+      "endSeconds": 306.58,
+      "audiblePhrase": "During the Language Exchange booking, I will listen carefully and interrupt if anything sounds different. The library is a very popular choice. And which day of the week suits you best? Could we make it Thursday? That's my day off. Thursday works well."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "pronunciation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 306.58,
+      "endSeconds": 316.68,
+      "audiblePhrase": "And is there any particular skill you'd like to concentrate on? Mostly conversation, but I'd really like to improve my pronunciation. That's my weakest area."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "handbook"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 344.48,
+      "endSeconds": 362.92,
+      "audiblePhrase": "Noted. Now let me explain our three membership levels before you decide. The basic level is completely free and you simply receive a welcome handbook full of tips. The standard level costs 15 pounds a year and it adds a group meetup once a month."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "15",
+        "£15",
+        "fifteen"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 344.48,
+      "endSeconds": 362.92,
+      "audiblePhrase": "Noted. Now let me explain our three membership levels before you decide. The basic level is completely free and you simply receive a welcome handbook full of tips. The standard level costs 15 pounds a year and it adds a group meetup once a month."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "weekly"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 362.92,
+      "endSeconds": 380.12,
+      "audiblePhrase": "And our premium level, at 40 pounds a year, gives you a weekly meeting instead. Plus access to our online lessons. That's really helpful. I think I'll start with the standard level. An excellent choice. I'll email you the details today."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "lessons"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 362.92,
+      "endSeconds": 380.12,
+      "audiblePhrase": "And our premium level, at 40 pounds a year, gives you a weekly meeting instead. Plus access to our online lessons. That's really helpful. I think I'll start with the standard level. An excellent choice. I'll email you the details today."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 583.26,
+      "endSeconds": 591.58,
+      "audiblePhrase": "Now for some practical information. Guided tours of the main galleries leave every 40 minutes from the information desk in the entrance hall."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "an hour",
+        "one hour",
+        "hour"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 591.58,
+      "endSeconds": 605.48,
+      "audiblePhrase": "Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor as large rucksacks aren't permitted in the galleries."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "cloakroom"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 591.58,
+      "endSeconds": 605.48,
+      "audiblePhrase": "Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor as large rucksacks aren't permitted in the galleries."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "two pounds",
+        "£2",
+        "2 pounds"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 606.32,
+      "endSeconds": 616.6,
+      "audiblePhrase": "Lockers are also available and they cost £2. As the Science Museum tour continues, staff may direct different groups along slightly different routes."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "flash"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 637.28,
+      "endSeconds": 646.28,
+      "audiblePhrase": "Photography is welcome throughout the building, but we do ask you to switch off your flash, because it can damage some of the more delicate exhibits."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "heart"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 740.7,
+      "endSeconds": 751.68,
+      "audiblePhrase": "Let me point out a few highlights. On the ground floor, our star attraction is a giant model heart, which is so big that you can actually walk right through it."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "moon rock"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 752.9,
+      "endSeconds": 759.96,
+      "audiblePhrase": "Upstairs, in the space gallery, you'll be able to see a genuine piece of moon rock brought back by astronauts."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "robots",
+        "robot"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 802,
+      "endSeconds": 810.62,
+      "audiblePhrase": "Finally, don't leave without visiting our temporary exhibition, which this season is all about robots. It runs until the end of August."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "subtitles",
+        "subtitle"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1238.38,
+      "endSeconds": 1246.62,
+      "audiblePhrase": "Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles because a few of the musicians are quite hard to follow."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "narration"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1247.4,
+      "endSeconds": 1257.26,
+      "audiblePhrase": "After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "permission"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1247.4,
+      "endSeconds": 1257.26,
+      "audiblePhrase": "After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "version"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1258.1,
+      "endSeconds": 1264.36,
+      "audiblePhrase": "Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "feedback"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1258.1,
+      "endSeconds": 1264.36,
+      "audiblePhrase": "Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "intermittent"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1423.3,
+      "endSeconds": 1435.78,
+      "audiblePhrase": "The problem starts with the nature of renewables themselves. Sources such as solar panels and wind farms are intermittent, which means they only generate electricity when the sun is shining or the wind is blowing, and not at other times."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "demand"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1435.78,
+      "endSeconds": 1447.38,
+      "audiblePhrase": "Because supply and use rarely match, we need to capture surplus power and release it later, during periods of high demand. For instance, on a cold winter evening when everyone switches on the heating."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "batteries",
+        "battery"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1468.24,
+      "endSeconds": 1483.18,
+      "audiblePhrase": "So, what are the options? The most widespread storage technology today relies on lithium-ion batteries like those found in phones and electric cars, only on a much larger scale."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "water"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1483.18,
+      "endSeconds": 1491.48,
+      "audiblePhrase": "A much older method is pumped hydro. When there is spare electricity, it is used to pump water uphill into a reservoir."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "turbine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1492.62,
+      "endSeconds": 1500.36,
+      "audiblePhrase": "Later, when power is needed, that water is released and flows back down through a turbine, which spins to generate electricity all over again."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "caves",
+        "cave"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1525.66,
+      "endSeconds": 1534.96,
+      "audiblePhrase": "In compressed air storage, surplus electricity squeezes air into sealed underground caves. When demand rises, the air is let out to drive a generator."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "salt"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1535.72,
+      "endSeconds": 1544.68,
+      "audiblePhrase": "And in some solar power plants, mirrors focus the sun's heat to melt salt. The molten salt stays hot for many hours and can later boil water into steam."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "lifespan",
+        "life"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1641.46,
+      "endSeconds": 1652.1,
+      "audiblePhrase": "Of course, every method has its drawbacks. Batteries, although efficient, remain expensive, and their lifespan is limited because after a certain number of charges they must be replaced."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "cobalt"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1652.74,
+      "endSeconds": 1660,
+      "audiblePhrase": "Worse still, the metals inside them, such as lithium and cobalt, are difficult and sometimes environmentally damaging to mine."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "hydrogen"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1680.26,
+      "endSeconds": 1692.16,
+      "audiblePhrase": "Looking to the future, researchers are pursuing fresh ideas. One is to store spare renewable electricity in the form of hydrogen gas, which can be burned or fed into fuel cells whenever it is needed."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

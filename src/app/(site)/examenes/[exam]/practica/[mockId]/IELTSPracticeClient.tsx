@@ -16,8 +16,15 @@ import {
 } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { isFreeIeltsMock, isReviewableIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
-import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '@/lib/ielts/mock-scoring';
+import {
+  createIeltsPracticeDraft,
+  emptyIeltsPracticeAnswers,
+  ieltsPracticeDraftKey,
+  parseIeltsPracticeDraft,
+  type IeltsPracticeAnswers,
+} from '@/lib/ielts/practice-state';
 import {
   Timer, AudioPlayer, SkillTabs,
   countWords, isCorrect, blankKey,
@@ -354,6 +361,10 @@ function WriteView({
         onChange={e => onChange(e.target.value)}
         placeholder="Write your response here…"
         rows={18}
+        spellCheck={false}
+        autoCorrect="off"
+        autoCapitalize="off"
+        autoComplete="off"
       />
       <div className={`ielts-write__wordcount${ok?' ielts-write__wordcount--ok':''}`}>
         {words} / {q.minWords} words {ok ? '✓' : ''}
@@ -396,7 +407,7 @@ function SpeakView({
       <IELTSSpeakingRecorder
         questionId={q.id}
         recording={audio}
-        maxSeconds={q.partNumber === 3 ? 180 : 150}
+        maxSeconds={q.partNumber === 2 ? 120 : 300}
         onChange={onAudio}
         onRecordingStateChange={onRecordingStateChange}
       />
@@ -411,6 +422,10 @@ function SpeakView({
           value={notes}
           onChange={e=>onNotes(e.target.value)}
           placeholder="Jot down key ideas…"
+          spellCheck={false}
+          autoCorrect="off"
+          autoCapitalize="off"
+          autoComplete="off"
         />
       </div>
     </div>
@@ -419,10 +434,7 @@ function SpeakView({
 
 // ── Section panel ─────────────────────────────────────────────────────────────
 
-type AllAnswers = {
-  fills: FillMap; mcq: MCQMap; ms: MSMap; match: MatchMap;
-  write: WriteMap; speak: SpeakMap;
-};
+type AllAnswers = IeltsPracticeAnswers;
 
 function renderQuestion(
   q: Question,
@@ -567,19 +579,19 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
   // Lazy init (no useEffect): esta vista solo se monta tras terminar el
   // examen (transición de estado del lado del cliente), nunca en SSR.
   const [leadCaptured, setLeadCaptured] = useState(() => {
-    try { return !!localStorage.getItem('wl_lead_captured'); } catch { return false; }
+    try { return localStorage.getItem('wl_lead_captured') === '1'; } catch { return false; }
   });
   const [showDetailLead, setShowDetailLead] = useState(false);
 
   function handleWantDetail() {
     try {
-      if (localStorage.getItem('wl_lead_captured')) { setLeadCaptured(true); return; }
+      if (localStorage.getItem('wl_lead_captured') === '1') { setLeadCaptured(true); return; }
     } catch {}
     setShowDetailLead(true);
   }
   function handleDetailModalClose() {
     setShowDetailLead(false);
-    try { setLeadCaptured(!!localStorage.getItem('wl_lead_captured')); } catch {}
+    try { setLeadCaptured(localStorage.getItem('wl_lead_captured') === '1'); } catch {}
   }
 
   const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
@@ -879,6 +891,8 @@ type Phase = 'intro'|'exam'|'submit'|'results';
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
+  const contentVersion = getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned';
+  const draftKey = ieltsPracticeDraftKey(mock.id, contentVersion);
 
   const comingSoonSkills = new Set(
     mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
@@ -888,12 +902,13 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   ) ?? 'reading';
 
   const [activeSkill, setActiveSkill] = useState(firstActiveSkill);
-  const [ans, setAns] = useState<AllAnswers>({
-    fills:{}, mcq:{}, ms:{}, match:{}, write:{}, speak:{},
-  });
+  const [ans, setAns] = useState<AllAnswers>(emptyIeltsPracticeAnswers);
   const [recordings, setRecordings] = useState<SpeakAudioMap>({});
   const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
   const [finishError, setFinishError] = useState('');
+  const [deadlineMs, setDeadlineMs] = useState<number | null>(null);
+  const [draftReady, setDraftReady] = useState(false);
+  const [draftRestored, setDraftRestored] = useState(false);
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
 
@@ -941,13 +956,48 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   },[mock.id,recordingIds]);
 
   const handleRetry = useCallback(()=>{
-    setAns({fills:{},mcq:{},ms:{},match:{},write:{},speak:{}});
+    try { localStorage.removeItem(draftKey); } catch {}
+    setAns(emptyIeltsPracticeAnswers());
     setRecordings({});
     setRecordingIds(new Set());
     setFinishError('');
     setSubmissionReceipt(null);
+    setDeadlineMs(null);
+    setDraftRestored(false);
     setActiveSkill(firstActiveSkill); setPhase('intro');
-  },[firstActiveSkill]);
+  },[draftKey,firstActiveSkill]);
+
+  useEffect(()=>{
+    try {
+      const serialized = localStorage.getItem(draftKey);
+      const draft = parseIeltsPracticeDraft(serialized, mock.id, contentVersion);
+      if (draft) {
+        setAns(draft.answers);
+        setDeadlineMs(draft.expiresAt);
+        if (SKILL_ORDER.includes(draft.activeSkill)
+          && mock.sections.some(section=>section.skill===draft.activeSkill&&!section.comingSoon)) {
+          setActiveSkill(draft.activeSkill);
+        }
+        setDraftRestored(true);
+      } else if (serialized) {
+        localStorage.removeItem(draftKey);
+      }
+    } catch {}
+    setDraftReady(true);
+  },[contentVersion,draftKey,mock.id]);
+
+  useEffect(()=>{
+    if (!draftReady || (phase!=='exam'&&phase!=='submit') || deadlineMs===null) return;
+    try {
+      localStorage.setItem(draftKey, JSON.stringify(createIeltsPracticeDraft({
+        mockId: mock.id,
+        contentVersion,
+        activeSkill,
+        expiresAt: deadlineMs,
+        answers: ans,
+      })));
+    } catch {}
+  },[activeSkill,ans,contentVersion,deadlineMs,draftKey,draftReady,mock.id,phase]);
 
   useEffect(()=>{
     if (phase!=='exam'&&phase!=='submit') return;
@@ -987,6 +1037,8 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           recordings={recordings}
           onBack={()=>setPhase('exam')}
           onSuccess={(receipt)=>{
+            try { localStorage.removeItem(draftKey); } catch {}
+            setDraftRestored(false);
             setSubmissionReceipt(receipt);
             setPhase('results');
           }}
@@ -1027,9 +1079,16 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               <li>Reading: los textos aparecen junto a las preguntas.</li>
               <li>Writing y Speaking: tus respuestas se envían al profesor para corrección.</li>
               {comingSoonSkills.has('listening') && <li>Listening está en construcción — próximamente con audio real.</li>}
+              {draftRestored && <li role="status">Recuperamos tus respuestas y el tiempo restante. Las grabaciones de Speaking deben hacerse otra vez.</li>}
             </ul>
           </div>
-          <button onClick={()=>{ setActiveSkill(firstActiveSkill); setPhase('exam'); }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Empezar examen</button>
+          <button onClick={()=>{
+            if (!draftRestored) {
+              setActiveSkill(firstActiveSkill);
+              setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
+            }
+            setPhase('exam');
+          }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{draftRestored?'Continuar examen':'Empezar examen'}</button>
           <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Volver a IELTS</Link>
         </div>
       </div>
@@ -1051,7 +1110,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} answered</span>
-          <Timer totalSecs={mock.timeMinutes*60} onExpire={handleSubmit} />
+          <Timer totalSecs={mock.timeMinutes*60} deadlineMs={deadlineMs??undefined} onExpire={handleSubmit} />
         </div>
       </header>
 

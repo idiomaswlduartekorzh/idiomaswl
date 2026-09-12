@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-07",
+  "repairSpecsSha256": "76028a0c11549cb068b0b80563a31be81fd5a6e480d2c7fadf46632a4a4ee56d",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "modelId": "eleven_flash_v2_5",
+  "rows": [
+    {
+      "set": 1,
+      "gapStartSeconds": 581.02,
+      "gapEndSeconds": 607.24,
+      "leadingSilenceSeconds": 0.8,
+      "requiredQuestions": [
+        17
+      ],
+      "segments": [
+        {
+          "profile": "guide:british",
+          "text": "For those who use several clubs, Gold membership is the best choice. Gold members receive free entry to all LP Clubs.",
+          "billableCharacters": 117,
+          "textSha256": "212a4dfc9b791ab1434a89fd016023f2de4316cd9b80e60c00bf5c608271aa88"
+        }
+      ],
+      "audioUrl": "/audio/ielts/ielts-listening-set-1.mp3",
+      "sourceAudioSha256": "0617e45b7a9678a7e9e3a8c20a968ad9339020501bbdbed519cddeeb05d83d3f",
+      "discoveryAsrReportSha256": "b45ea54912f0af90fa084584cfdb12d1ea47f06ff007e1aee2c6438eda1b8f71",
+      "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+      "gapDurationSeconds": 26.22,
+      "billableCharacters": 117
+    },
+    {
+      "set": 9,
+      "gapStartSeconds": 1009.15,
+      "gapEndSeconds": 1038.65,
+      "leadingSilenceSeconds": 0.8,
+      "requiredQuestions": [
+        26,
+        27,
+        28
+      ],
+      "segments": [
+        {
+          "profile": "tutor:british",
+          "text": "For the written report, add more graphs. At the moment it is too text-heavy, and visuals would make the results easier to follow.",
+          "billableCharacters": 129,
+          "textSha256": "5d33c7eec27a027888238fed1cfec30f124c438c4b1eb2f24cd3adc4fd3080ac"
+        },
+        {
+          "profile": "student-man:british",
+          "text": "We'll add those.",
+          "billableCharacters": 16,
+          "textSha256": "66c12b5eb48377e4d4e219a6d1472be21c3aef61d1deb2296ffe9292211c3df0"
+        },
+        {
+          "profile": "tutor:british",
+          "text": "For future work, make your sample larger. You should also check the reliability of your sources.",
+          "billableCharacters": 96,
+          "textSha256": "45f6ac1722287ba46a49774106a2eae0d551c212af05414671d7c93b19bec949"
+        }
+      ],
+      "audioUrl": "/audio/ielts/ielts-listening-set-9.mp3",
+      "sourceAudioSha256": "01d2ae92113a1be419c061b817790ae0f95eba1aa5d32cd64bdc9c30494790f2",
+      "discoveryAsrReportSha256": "b7c84c4401d47973f65bfc6fefca2f6b494fdb4b006de7f817324d2883a09a66",
+      "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+      "gapDurationSeconds": 29.5,
+      "billableCharacters": 241
+    }
+  ],
+  "invoice": {
+    "billableCharacters": 358,
+    "estimatedCredits": 179,
+    "estimatedUsdBeforeTax": 0.0179
+  },
+  "releaseAuthorized": false,
+  "repairManifestSha256": "f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab"
+}

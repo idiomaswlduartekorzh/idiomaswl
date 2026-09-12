@@ -1,0 +1,3598 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 16,
+  "mockId": "set-16",
+  "contentVersionAtReview": "ielts-set-16-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "3a5fb36a53c30825c07217482a37d8de935ee6550552faa05d1e0b28afe7be71",
+    "listeningMaterialSha256": "fa1bedf2a84242a9cc6ab5e41acd484756dc25ff3f55a8a49678a069441d5203",
+    "readingMaterialSha256": "7704a9b76552d700a671850a2c612435c8e7250e48dc1ea98da9e9af63371f37",
+    "objectiveMaterialSha256": "ddbe2bd9fa89782735ac217f295594ad91797cffe594e925991fae488c467dc9"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Fletcher"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "2",
+        "two"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "adventure"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "4",
+        "4pm"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "lunch"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "sunscreen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "90",
+        "£90"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "cap"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "9"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "120",
+        "£120"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "B",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. glass bottles",
+        "B": "B. plastic bags",
+        "C": "C. cardboard",
+        "D": "D. containers covered in food",
+        "E": "E. newspapers"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "green"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "Wednesday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "fortnightly",
+        "two weeks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "30 June",
+        "June"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "helpline",
+        "recycling helpline"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "voucher",
+        "shopping voucher"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "40",
+        "40%"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "caddy",
+        "kitchen caddy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "as affordable as possible",
+        "as durable as possible",
+        "as fast as possible"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "more durable",
+        "cheaper and lighter",
+        "easier to find"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "leaked at the joints",
+        "clogged when water was poured quickly",
+        "broke under pressure"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "does not kill bacteria",
+        "is too expensive",
+        "is too heavy"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "reduce the weight",
+        "lower the cost",
+        "add a disinfection stage"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "weight"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "cost"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "disinfects",
+        "disinfect"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "testing",
+        "tests"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "diagram"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "kilometres",
+        "kilometers",
+        "km"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "sun"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "stars",
+        "star"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "field"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "eyes",
+        "eye"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "smell"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "instinct"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "landmarks",
+        "landmark"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "pollution"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "tags",
+        "tag"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "learning by doing",
+        "Wright's Law"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "dispatchable"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "vehicle-to-grid"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "green hydrogen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "government revenue"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "Paris Agreement"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "cognitive stages"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "object permanence"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "proximal development"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "language acquisition"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "developmental"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "returns"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The principle of absolute advantage in international production.",
+        "The principle of comparative advantage, in which countries specialise according to relative opportunity costs.",
+        "The law of supply and demand as applied to international trade.",
+        "The principle of economic equilibrium between importing and exporting nations."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "The costs have been shared equally across all income levels and regions.",
+        "The costs have mainly been borne by wealthy sectors that lost export markets.",
+        "The costs have been concentrated in specific communities that lost manufacturing jobs.",
+        "The costs have fallen primarily on consumers who pay higher prices for imported goods."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "A graph showing that the global poor gained the most from globalisation, while the rich gained least.",
+        "A visualisation of income growth showing gains for the global middle and top 1%, but stagnation for high-income country middle classes.",
+        "A diagram comparing economic growth rates in elephantine economies such as India.",
+        "A curve showing that global inequality has consistently fallen over the period of globalisation."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Local cultures are invariably destroyed by exposure to global media and entertainment.",
+        "American cultural dominance has been largely reversed by the growth of local streaming platforms.",
+        "Exposure to global culture often produces hybrid forms rather than simply displacing local culture.",
+        "Cultural globalisation has no measurable effect on local traditions or languages."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "imperialism",
+        "homogenisation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "reshoring"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "slowbalisation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "political economy"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Fletcher"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "PARENT: It's Fletcher — shall I spell that? F-L-E-T-C-H-E-R.",
+      "sourceExcerptSha256": "a15da8cd4bea9d213d016efa073a45ecc04d900c7750430b1c0965c11334680a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Fletcher",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Fletcher",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "questionPrompt": "Number of children: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: Of course. In this summer-camp registration, I will flag any condition that depends on availability, and you can stop me whenever two alternatives sound too similar.",
+      "sourceExcerptSha256": "a17df92f54031d264d4935fd3ca66a90893d45c65649a0bb45fccd465a50a4c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “two”."
+        },
+        {
+          "answer": "two",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "adventure"
+      ],
+      "questionPrompt": "Type of camp: {{3}} camp",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "PARENT: I looked at that, but I think they'd both prefer the adventure camp — they love being outdoors.",
+      "sourceExcerptSha256": "7442d959a9eb956088f545cd5b3b9b9dc4724e17d24895a0fb736afa6199e17d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "adventure",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "adventure",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "4",
+        "4pm"
+      ],
+      "questionPrompt": "Each day finishes at: {{4}} pm",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: A popular choice. The camp runs every weekday, starting at 9 am and finishing at 4 pm.",
+      "sourceExcerptSha256": "206f8786eae6b386bac9f864ee6878ac5ffb057d3f4b2061c76c92bd1d056a6a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "4",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "4",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "4pm",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “4”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lunch"
+      ],
+      "questionPrompt": "Children must bring a packed {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: Now, a few things to remember. Children should bring a packed lunch each day, as we don't provide meals. And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.",
+      "sourceExcerptSha256": "564a7591c3e7e969ab69dc9998d3d2a490d5f6a710aef7e29728d6c7a835baf0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lunch",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lunch",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sunscreen"
+      ],
+      "questionPrompt": "Children must apply {{6}} before arriving",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: Now, a few things to remember. Children should bring a packed lunch each day, as we don't provide meals. And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.",
+      "sourceExcerptSha256": "564a7591c3e7e969ab69dc9998d3d2a490d5f6a710aef7e29728d6c7a835baf0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sunscreen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sunscreen",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "90",
+        "£90"
+      ],
+      "questionPrompt": "Juniors | 6 | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: It depends on their ages. Our Juniors programme is for children aged 6 and over, and that's £90 per week. Juniors also each receive a free cap to wear on trips.",
+      "sourceExcerptSha256": "7d5e356e0b892f947c90c36266c815cd10a148c7ae02458212efb8f0dd75c065",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "90",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "90",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£90",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cap"
+      ],
+      "questionPrompt": "Juniors | 6 | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: It depends on their ages. Our Juniors programme is for children aged 6 and over, and that's £90 per week. Juniors also each receive a free cap to wear on trips.",
+      "sourceExcerptSha256": "7d5e356e0b892f947c90c36266c815cd10a148c7ae02458212efb8f0dd75c065",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cap",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cap",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "9"
+      ],
+      "questionPrompt": "Explorers | {{9}} | {{10}} | a backpack",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: A popular choice. The camp runs every weekday, starting at 9 am and finishing at 4 pm.",
+      "sourceExcerptSha256": "206f8786eae6b386bac9f864ee6878ac5ffb057d3f4b2061c76c92bd1d056a6a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "9",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "9",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "questionPrompt": "Explorers | {{9}} | {{10}} | a backpack",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Registering Children for a Summer Camp",
+      "sourceExcerpt": "OFFICER: That would be our Explorers programme. The minimum age for that is 9, and it's a little more — £120 a week, because it includes more excursions. Explorers are given a free backpack instead of a cap.",
+      "sourceExcerptSha256": "c5d6f4cab14e80ae115edcd1c5b9ac8f06fe942ce5578928b229b43545173599",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "120",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "D"
+      ],
+      "questionPrompt": "Which TWO items are NOT allowed in the new recycling bins?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin — they jam our sorting machines. And, secondly, any container that is still covered in food cannot be recycled either; food-contaminated packaging has to go in the general waste.",
+      "sourceExcerptSha256": "307e055861111a782b61afef4adb1b3d89fd904300ab7281b894e9cd92fbd053",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "plastic bags"
+        },
+        {
+          "key": "D",
+          "text": "containers covered in food"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "glass bottles",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "cardboard",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "newspapers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "green"
+      ],
+      "questionPrompt": "• Each household receives a new recycling bin, coloured {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "Let me start with the most important change. From next month, every household will receive a brand-new recycling bin. To make it easy to identify, these bins are green, quite different from the black bins we use for general rubbish.",
+      "sourceExcerptSha256": "b78b27186470f1981533f8683d6cb3667c6e4a107730f159423d2d348b89b50a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "green",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "green",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Wednesday"
+      ],
+      "questionPrompt": "• Bins are emptied on a {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "As for collections: your green bin will be emptied on a Wednesday. Note that this won't be every week — collections are fortnightly, so once every two weeks. We'll post a calendar through your door showing the exact dates.",
+      "sourceExcerptSha256": "252cd1dcb5ddf5e670ecbf78aef50b0c33890239540992fa77fdf566a8fcfd01",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Wednesday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Wednesday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fortnightly",
+        "two weeks"
+      ],
+      "questionPrompt": "• Collections are {{15}}, not weekly.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "As for collections: your green bin will be emptied on a Wednesday. Note that this won't be every week — collections are fortnightly, so once every two weeks. We'll post a calendar through your door showing the exact dates.",
+      "sourceExcerptSha256": "252cd1dcb5ddf5e670ecbf78aef50b0c33890239540992fa77fdf566a8fcfd01",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fortnightly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fortnightly",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "two weeks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "30 June",
+        "June"
+      ],
+      "questionPrompt": "• Bins will be delivered to all homes by {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "The new bins will be delivered to all homes by 30 June, so please look out for yours. If your household is large and you feel you need a bigger bin, you can request one by calling our recycling helpline; the number is on our leaflet.",
+      "sourceExcerptSha256": "ca47c7bf8feaec717b530e6f77baad7b21dec9eef02ddcddf878f1d82eef14b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "30 June",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "30 June",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "June",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "helpline",
+        "recycling helpline"
+      ],
+      "questionPrompt": "• To request a larger bin, call the recycling {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "The new bins will be delivered to all homes by 30 June, so please look out for yours. If your household is large and you feel you need a bigger bin, you can request one by calling our recycling helpline; the number is on our leaflet.",
+      "sourceExcerptSha256": "ca47c7bf8feaec717b530e6f77baad7b21dec9eef02ddcddf878f1d82eef14b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "helpline",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "helpline",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "recycling helpline",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "voucher",
+        "shopping voucher"
+      ],
+      "questionPrompt": "• Each month a household that recycles well can win a shopping {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "To encourage everyone to take part, we're running a little competition. Each month, one household that recycles particularly well will win a shopping voucher worth fifty pounds.",
+      "sourceExcerptSha256": "b62cd1878c28396324f38d52bf56f6e213bf2b8d6abc28f01e086dd826d91be4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "voucher",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "voucher",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "shopping voucher",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "40",
+        "40%"
+      ],
+      "questionPrompt": "• The scheme aims to cut waste sent to landfill by {{19}} percent.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "Why are we doing all this? Our goal is ambitious but achievable: we aim to reduce the amount of waste sent to landfill by 40 percent within two years.",
+      "sourceExcerptSha256": "0cda6145278629762152fe16d99fd71a855ccddd848445d02bebccca7196a4de",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "40",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "40",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "40%",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "caddy",
+        "kitchen caddy"
+      ],
+      "questionPrompt": "• A free kitchen {{20}} is available from the town hall.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Recycling Scheme Launch",
+      "sourceExcerpt": "Finally, for those of you who'd like to recycle food scraps as well, a free kitchen caddy is available from the town hall — just ask at the front desk.",
+      "sourceExcerptSha256": "3b145c33c04b275fa7b8a574cb623947373cb1b34d623e8e4fae17852cbb7a0d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "caddy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "caddy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "kitchen caddy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The main aim of the students' water filter was to make it",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "SOPHIE: Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible, so anyone could build one.",
+      "sourceExcerptSha256": "82aa64d05a8f3ee731a983081b1ed08fc2f73cbb552a6f6324a30a2379816ce5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "as affordable as possible"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "as durable as possible",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "as fast as possible",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "They chose plastic rather than metal for the casing mainly because it is",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "LIAM: The outer casing is a simple plastic bottle. We did consider using metal, which is more durable, but plastic is far cheaper and lighter, and that fitted our budget better.",
+      "sourceExcerptSha256": "2153689757b313db61e2487f06309f61a752ffc960ca6507570d281e08d8cfac",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "cheaper and lighter"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "more durable",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "easier to find",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "During testing, the main problem was that the filter",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "LIAM: Mostly well, but we did hit one problem. When we ran dirty water through it quickly, the filter clogged up, and the flow almost stopped. We had to pour the water in much more slowly.",
+      "sourceExcerptSha256": "0aaf54e55612d77fc4185da7fba178874fa52c85b0840e0063240fa0b1e4734c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "clogged when water was poured quickly"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "leaked at the joints",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "broke under pressure",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The tutor's main concern about the prototype is that it",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: That's useful to know. My main concern, though, isn't the flow rate — it's safety. Your filter removes dirt and improves taste, but it won't kill bacteria. For drinking water, that's a serious gap.",
+      "sourceExcerptSha256": "14c0c01b4bf43cad96a3bd78e5ace847dc2de3c54b1dc8b4628628d62dc8ed7f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "does not kill bacteria"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "is too expensive",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "is too heavy",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "The tutor says the top priority for the next version is to",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.",
+      "sourceExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "add a disinfection stage"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "reduce the weight",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "lower the cost",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "weight"
+      ],
+      "questionPrompt": "• Reduce the {{26}} to make it easier to carry.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.",
+      "sourceExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "weight",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "weight",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cost"
+      ],
+      "questionPrompt": "• Lower the {{27}} even further.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "SOPHIE: Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible, so anyone could build one.",
+      "sourceExcerptSha256": "82aa64d05a8f3ee731a983081b1ed08fc2f73cbb552a6f6324a30a2379816ce5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cost",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cost",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "disinfects",
+        "disinfect"
+      ],
+      "questionPrompt": "• Add a stage that {{28}} the water.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.",
+      "sourceExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "disinfects",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "disinfects",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "disinfect",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "testing",
+        "tests"
+      ],
+      "questionPrompt": "• Carry out more {{29}} with different water samples.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: Good. Now, how did testing go?",
+      "sourceExcerptSha256": "56a18ea68df5b909da10fc61503e9e73400a04ba1914c211a679f00c2806a639",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "testing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "testing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "tests",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “testing”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diagram"
+      ],
+      "questionPrompt": "• Include a clear {{30}} in the report.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Engineering Prototype Review",
+      "sourceExcerpt": "TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.",
+      "sourceExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diagram",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diagram",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "kilometres",
+        "kilometers",
+        "km"
+      ],
+      "questionPrompt": "• Some birds migrate more than ten thousand {{31}} in a single journey.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Good afternoon. Today we're going to explore one of the great mysteries of the natural world: how migrating birds find their way. Every year, billions of birds travel enormous distances between their breeding and wintering grounds — some species cover more than ten thousand kilometres in a single journey — and yet they arrive with astonishing accuracy. How do they do it?",
+      "sourceExcerptSha256": "a89d950ae71a84fa5afe91e464c10d0bf1c208143be8a2248a630d7a4af2f24d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "kilometres",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "kilometres",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "kilometers",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “kilometres”."
+        },
+        {
+          "answer": "km",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “kilometres”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sun"
+      ],
+      "questionPrompt": "• By day, birds use the position of the {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass. At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.",
+      "sourceExcerptSha256": "98fbcc8398b43a14525258c28e45575bc68de03ac45b4733f4ecdc8da76016ca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sun",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sun",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stars",
+        "star"
+      ],
+      "questionPrompt": "• By night, they use the {{33}} to find north.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass. At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.",
+      "sourceExcerptSha256": "98fbcc8398b43a14525258c28e45575bc68de03ac45b4733f4ecdc8da76016ca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stars",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stars",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "star",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "field"
+      ],
+      "questionPrompt": "• Birds can sense the Earth's magnetic {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Perhaps the most remarkable tool is a kind of internal compass. Birds can sense the Earth's magnetic field, and use it to determine direction even when the sky is hidden by cloud. Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the birds' eyes, which may allow them, in effect, to \"see\" magnetic lines.",
+      "sourceExcerptSha256": "ef59a0e922b4ea2c3c099b78215b5eaa83d37c769333c3a5385135f6745afef3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "field",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "field",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "eyes",
+        "eye"
+      ],
+      "questionPrompt": "• This sense may be linked to molecules in the birds' {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Perhaps the most remarkable tool is a kind of internal compass. Birds can sense the Earth's magnetic field, and use it to determine direction even when the sky is hidden by cloud. Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the birds' eyes, which may allow them, in effect, to \"see\" magnetic lines.",
+      "sourceExcerptSha256": "ef59a0e922b4ea2c3c099b78215b5eaa83d37c769333c3a5385135f6745afef3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "eyes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "eyes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "eye",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "smell"
+      ],
+      "questionPrompt": "• Some seabirds use their sense of {{36}} to make an odour map.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Some species add yet another sense to the mix. Seabirds in particular appear to use their sense of smell, building up a kind of odour map of the ocean that helps them relocate distant islands.",
+      "sourceExcerptSha256": "11b89b33c48ba94d9b5b6e8a5080b7b555a9317a617ce6f436f1c484e3921e48",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "smell",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "smell",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "instinct"
+      ],
+      "questionPrompt": "• On their first migration, young birds are guided by {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Navigation is also partly inherited. Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology. Older, experienced birds supplement this with memory, recognising landmarks such as coastlines, mountain ranges and large rivers.",
+      "sourceExcerptSha256": "c5a1d4137e7571027933289eb1942f79433c1af2f4d68478ccd15cacf03dc1eb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "instinct",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "instinct",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "landmarks",
+        "landmark"
+      ],
+      "questionPrompt": "• Experienced birds also recognise {{38}} such as coastlines and rivers.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Navigation is also partly inherited. Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology. Older, experienced birds supplement this with memory, recognising landmarks such as coastlines, mountain ranges and large rivers.",
+      "sourceExcerptSha256": "c5a1d4137e7571027933289eb1942f79433c1af2f4d68478ccd15cacf03dc1eb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "landmarks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "landmarks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "landmark",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pollution"
+      ],
+      "questionPrompt": "• Light {{39}} from cities draws birds off course.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "Sadly, human activity is making navigation harder. Artificial light at night — what we call light pollution — draws birds off course and causes fatal collisions with buildings.",
+      "sourceExcerptSha256": "0f41479e6ba186deeaa7e5bd206b84ee18c7f791d75a832147d02e1ab35c96bd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pollution",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pollution",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tags",
+        "tag"
+      ],
+      "questionPrompt": "• Scientists fit birds with tiny electronic {{40}} to track their routes.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Bird Navigation",
+      "sourceExcerpt": "To understand all this, scientists now fit migrating birds with tiny electronic tags, which record their position and reveal, for the first time, the astonishing routes these travellers take.",
+      "sourceExcerptSha256": "71a339675b6fbd3c44aade6252005c525faa787951722c86a47805401ec8ba9b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tags",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tags",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "tag",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: In 2023, solar and wind capacity additions exceeded those of all other electricity sources combined.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The global energy system is undergoing a rapid transformation after more than a century dominated by fossil fuels. Falling technology costs, climate policy, energy-security concerns, and shifting investment have accelerated renewable deployment. IRENA recorded 473 gigawatts of new renewable power capacity in 2023, of which solar and wind supplied the overwhelming majority. Together, those two technologies added more capacity than all other electricity sources combined. Capacity is not the same as generation, however: one gigawatt of solar, wind, nuclear, or gas does not produce an identical amount of electricity over a year. Comparisons must account for local weather, maintenance, and the proportion of time each plant operates.",
+      "sourceExcerptSha256": "5534cabd2add4bec734b96b85f50b90bc9fcfcb869de4b6af5b48c40256d4dd9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: The cost decline of solar PV was primarily the result of a single major scientific breakthrough.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The decline in the cost of solar photovoltaic electricity has been one of the most dramatic changes in energy economics. Between 2010 and 2023, the global weighted average cost of electricity from newly commissioned utility-scale solar PV fell by about ninety percent. In 2023 it was substantially below IRENA's weighted average for fossil-fuel alternatives. Offshore wind costs fell by about sixty-three percent over the same period, although financing and supply-chain conditions caused variation among projects and markets. These reductions did not result from one breakthrough. They accumulated through larger factories, more efficient modules and turbines, improved installation, competitive procurement, and supply-chain learning—a process often described as \"learning by doing\" or Wright's Law. Cost averages also conceal the expense of connecting plants to grids and balancing variable output.",
+      "sourceExcerptSha256": "8b6805584bc1378b66b626e2208a1aea3b1887c9ad1adf6a5ea420f3c341e755",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Solar and wind generation poses integration challenges because their output is variable.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The implications for existing energy systems are significant. In grids that previously relied on dispatchable sources—power stations able to generate electricity on demand—the growing share of wind and solar creates integration challenges. Their output varies with weather and does not automatically match demand. Grid operators can combine several responses: transmission between regions, flexible demand, storage over different durations, stronger forecasting, and firm low-carbon generation where available. Existing gas plants may provide backup during a transition, but continued fuel use produces emissions and exposes consumers to price volatility. The appropriate mix depends on geography, interconnection, demand patterns, and how long periods of low renewable output last.",
+      "sourceExcerptSha256": "3f6e3221223a10d9807c51ce624da5e1955d542e83a2d656641fe0ad09216ea9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Utility-scale battery project costs fell by eighty-nine percent between 2010 and 2023.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Battery storage has emerged as a critical enabler of the transition. IRENA estimates that utility-scale battery project costs fell by eighty-nine percent between 2010 and 2023, unlocking installations that can store surplus renewable generation and discharge it when needed. Short-duration lithium-ion systems are well suited to shifting solar power from afternoon to evening, but seasonal shortages may require other technologies, fuels, or stronger transmission. Electric vehicles are reshaping the system both as a major new source of electricity demand and, potentially, as distributed storage through vehicle-to-grid charging. The electrification of transport, heating, and industrial processes must therefore be coordinated with grid investment and cleaner electricity supply.",
+      "sourceExcerptSha256": "70a5f874a16c82d8ed3eec3c4d0a773eb81d7e1ec3fb9b540c5330bcb9cece52",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "5. {{5}}: China, India, and Brazil have installed more renewable energy capacity than any high-income country.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The pace of transition is uneven across countries and sectors. Rich countries with strong policy frameworks and access to capital have led deployment, though some middle-income countries—notably China, India, and Brazil—have also installed renewable capacity at enormous scale. Fossil fuel-dependent economies, particularly those in which fossil fuels represent a major source of government revenue and employment, face the most complex transitions. For countries like Saudi Arabia, Nigeria, and Australia, the energy transition raises profound questions not only about electricity systems but about economic models and social contracts.",
+      "sourceExcerptSha256": "656150988b86df17c458c5cd89436cb392eff1dbeb4a0d713e14fc8217ee3bf2",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Heavy industry, aviation, and shipping are among the sectors hardest to decarbonise using renewable electricity.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+      "sourceExcerptSha256": "851bab3ce493173012562c20ea2c4750a8b7eeacebd9a4c3015c513aa20a5458",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: Green hydrogen is already widely used as a fuel in the shipping and aviation industries.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+      "sourceExcerptSha256": "851bab3ce493173012562c20ea2c4750a8b7eeacebd9a4c3015c513aa20a5458",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "learning by doing",
+        "Wright's Law"
+      ],
+      "questionPrompt": "8. The process of cost reduction through accumulated manufacturing experience is known as {{8}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The decline in the cost of solar photovoltaic electricity has been one of the most dramatic changes in energy economics. Between 2010 and 2023, the global weighted average cost of electricity from newly commissioned utility-scale solar PV fell by about ninety percent. In 2023 it was substantially below IRENA's weighted average for fossil-fuel alternatives. Offshore wind costs fell by about sixty-three percent over the same period, although financing and supply-chain conditions caused variation among projects and markets. These reductions did not result from one breakthrough. They accumulated through larger factories, more efficient modules and turbines, improved installation, competitive procurement, and supply-chain learning—a process often described as \"learning by doing\" or Wright's Law. Cost averages also conceal the expense of connecting plants to grids and balancing variable output.",
+      "sourceExcerptSha256": "8b6805584bc1378b66b626e2208a1aea3b1887c9ad1adf6a5ea420f3c341e755",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "learning by doing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "learning by doing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "Wright's Law",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "dispatchable"
+      ],
+      "questionPrompt": "9. Power stations that can generate electricity on demand are described in the passage as {{9}} sources.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The implications for existing energy systems are significant. In grids that previously relied on dispatchable sources—power stations able to generate electricity on demand—the growing share of wind and solar creates integration challenges. Their output varies with weather and does not automatically match demand. Grid operators can combine several responses: transmission between regions, flexible demand, storage over different durations, stronger forecasting, and firm low-carbon generation where available. Existing gas plants may provide backup during a transition, but continued fuel use produces emissions and exposes consumers to price volatility. The appropriate mix depends on geography, interconnection, demand patterns, and how long periods of low renewable output last.",
+      "sourceExcerptSha256": "3f6e3221223a10d9807c51ce624da5e1955d542e83a2d656641fe0ad09216ea9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "dispatchable",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "dispatchable",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vehicle-to-grid"
+      ],
+      "questionPrompt": "10. Electric vehicles could potentially help balance electricity grids through {{10}} charging systems.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Battery storage has emerged as a critical enabler of the transition. IRENA estimates that utility-scale battery project costs fell by eighty-nine percent between 2010 and 2023, unlocking installations that can store surplus renewable generation and discharge it when needed. Short-duration lithium-ion systems are well suited to shifting solar power from afternoon to evening, but seasonal shortages may require other technologies, fuels, or stronger transmission. Electric vehicles are reshaping the system both as a major new source of electricity demand and, potentially, as distributed storage through vehicle-to-grid charging. The electrification of transport, heating, and industrial processes must therefore be coordinated with grid investment and cleaner electricity supply.",
+      "sourceExcerptSha256": "70a5f874a16c82d8ed3eec3c4d0a773eb81d7e1ec3fb9b540c5330bcb9cece52",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vehicle-to-grid",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vehicle-to-grid",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "green hydrogen"
+      ],
+      "questionPrompt": "11. The {{11}} process uses renewable electricity to split water into hydrogen and oxygen.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+      "sourceExcerptSha256": "851bab3ce493173012562c20ea2c4750a8b7eeacebd9a4c3015c513aa20a5458",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Green hydrogen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "green hydrogen",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "government revenue"
+      ],
+      "questionPrompt": "12. Countries in which fossil fuels are a major source of {{12}} face the most complex energy transitions.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "The pace of transition is uneven across countries and sectors. Rich countries with strong policy frameworks and access to capital have led deployment, though some middle-income countries—notably China, India, and Brazil—have also installed renewable capacity at enormous scale. Fossil fuel-dependent economies, particularly those in which fossil fuels represent a major source of government revenue and employment, face the most complex transitions. For countries like Saudi Arabia, Nigeria, and Australia, the energy transition raises profound questions not only about electricity systems but about economic models and social contracts.",
+      "sourceExcerptSha256": "656150988b86df17c458c5cd89436cb392eff1dbeb4a0d713e14fc8217ee3bf2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "government revenue",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "government revenue",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Paris Agreement"
+      ],
+      "questionPrompt": "13. The global climate agreement whose temperature goals motivate deep energy decarbonisation is the {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Renewable Energy Transition",
+      "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+      "sourceExcerptSha256": "851bab3ce493173012562c20ea2c4750a8b7eeacebd9a4c3015c513aa20a5458",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Paris Agreement",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Paris Agreement",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "Evidence that infant cognitive abilities appear earlier than a major theorist proposed",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "C. Piaget's stage theory was enormously influential but has been revised by subsequent research. Developmental psychologists have found that some abilities emerge earlier than Piaget proposed, and that change can be more continuous and uneven than a sequence of universal stages suggests. Infant research using habituation techniques—in which attention to novel versus familiar stimuli is measured—indicates that babies as young as three or four months respond as if they possess an implicit understanding of some physical regularities, including aspects of object permanence. Interpreting looking time is difficult, however: detecting that an event is surprising does not necessarily mean an infant has the same explicit concept or reasoning strategy as an older child.",
+      "sourceExcerptSha256": "43a2a08000d890df3fda044538906b147766d5f052eced6b6e71b94039f06e20",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A description of how children develop language from their first words to full sentences",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "E. Language development is among the most remarkable achievements of early childhood. A typical child produces their first words at around twelve months, reaches a vocabulary of approximately fifty words by eighteen months, and begins combining words into two-word utterances shortly thereafter. By the age of four, most children have acquired the core grammatical structures of their language and can produce and understand an enormous variety of sentences. Linguist Noam Chomsky famously proposed that the speed and uniformity of language acquisition across cultures reflects the existence of an innate \"language acquisition device\"—a biological predisposition for language that is unique to human beings, though this view has been contested by researchers who emphasise the role of social interaction in language learning.",
+      "sourceExcerptSha256": "1219bf0b0f62414f0f9bbb4c17c3938b39b6ed40a1454d52e3c73383b9e45a1d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "Research showing that early adversity has lasting negative effects on multiple developmental outcomes",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "F. The quality of early childhood environments has profound and lasting effects. Research on adverse childhood experiences—including neglect, abuse, household instability, and poverty—finds associations with worse developmental outcomes across cognitive, social, emotional, and physical domains. Risk is not destiny: stable, responsive relationships can buffer stress, and children follow diverse developmental paths. High-quality early childhood programmes, particularly those serving disadvantaged children, can improve school readiness and later outcomes, but effects depend on programme quality, duration, family context, and the services used for comparison. Economic analyses often find high returns from effective early intervention; such estimates should not be interpreted as a guarantee that every programme with an early-childhood label will produce the same result.",
+      "sourceExcerptSha256": "e79e638bffd4a5a2680713919d7a87d451af123259bf54bf5397ec3b2a972e05",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An account of how the mature brain is shaped by early experiences",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "A. The first five years of life represent a period of cognitive development of extraordinary rapidity and consequence. In the first few years, the brain forms more than a million new neural connections per second. Simpler circuits tend to develop before more complex ones, and new capacities build on earlier foundations. This period of proliferation is followed by \"synaptic pruning\", in which some connections are strengthened and others are reduced as circuits become more efficient. Genes influence the sequence of development, while nutrition, health, stress, and responsive interaction affect how emerging networks are organised. Early experience therefore shapes brain architecture substantially, but development does not stop at five: plasticity and learning continue throughout life.",
+      "sourceExcerptSha256": "5d6cb79b3a558d3dbb21a4a132338a878e21c0480dc8a936eb3c24d49491f834",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A concept describing the gap between what a child can do alone and with support",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "D. Lev Vygotsky, a Soviet psychologist working at roughly the same time as Piaget, emphasised the social and cultural dimensions of cognitive development in ways that Piaget's framework largely ignored. For Vygotsky, cognitive growth is fundamentally a social process: children learn through interaction with more knowledgeable others—parents, older siblings, teachers—who guide them through tasks slightly beyond their current independent capability. The zone of proximal development (ZPD), Vygotsky's most influential concept, refers to the gap between what a child can do alone and what they can achieve with guidance. Effective instruction and scaffolding operate within this zone, stretching the child's capabilities without overwhelming them.",
+      "sourceExcerptSha256": "38c136ccc0baba79dc8c947be920df226cc0332fe5c365486f6a9bdeffb2a5b9",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A discussion of how the type of digital media use matters more than the amount of screen time",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "G. The digital environment presents new questions for early childhood development. Screen exposure can displace sleep, physical activity, play, and face-to-face conversation, so its opportunity cost matters alongside the content itself. Interactive, age-appropriate material that a caregiver watches and discusses with a child may support learning, while passive background television and unsupported solo use offer fewer benefits. Evidence differs by age, platform, purpose, and family context, making a single count of minutes an incomplete measure. Even so, health guidance for very young children generally limits sedentary screen time and encourages reading and storytelling with a caregiver. The quality of interaction remains central because children learn language through responsive exchanges, not merely by hearing words from a device.",
+      "sourceExcerptSha256": "089c61ce62c74fa4adf04898f611a85030b51f252193dcfd3bd223a76117b365",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of a stage of development characterised by difficulty in understanding other perspectives",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+      "sourceExcerptSha256": "b6253095fd78a8e90bd9c0d226f135de29950edbfefc403bdc913553e9fa8472",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cognitive stages"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+      "sourceExcerptSha256": "b6253095fd78a8e90bd9c0d226f135de29950edbfefc403bdc913553e9fa8472",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cognitive stages",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cognitive stages",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "object permanence"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+      "sourceExcerptSha256": "b6253095fd78a8e90bd9c0d226f135de29950edbfefc403bdc913553e9fa8472",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "object permanence",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "object permanence",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "proximal development"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "D. Lev Vygotsky, a Soviet psychologist working at roughly the same time as Piaget, emphasised the social and cultural dimensions of cognitive development in ways that Piaget's framework largely ignored. For Vygotsky, cognitive growth is fundamentally a social process: children learn through interaction with more knowledgeable others—parents, older siblings, teachers—who guide them through tasks slightly beyond their current independent capability. The zone of proximal development (ZPD), Vygotsky's most influential concept, refers to the gap between what a child can do alone and what they can achieve with guidance. Effective instruction and scaffolding operate within this zone, stretching the child's capabilities without overwhelming them.",
+      "sourceExcerptSha256": "38c136ccc0baba79dc8c947be920df226cc0332fe5c365486f6a9bdeffb2a5b9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "proximal development",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "proximal development",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "language acquisition"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "E. Language development is among the most remarkable achievements of early childhood. A typical child produces their first words at around twelve months, reaches a vocabulary of approximately fifty words by eighteen months, and begins combining words into two-word utterances shortly thereafter. By the age of four, most children have acquired the core grammatical structures of their language and can produce and understand an enormous variety of sentences. Linguist Noam Chomsky famously proposed that the speed and uniformity of language acquisition across cultures reflects the existence of an innate \"language acquisition device\"—a biological predisposition for language that is unique to human beings, though this view has been contested by researchers who emphasise the role of social interaction in language learning.",
+      "sourceExcerptSha256": "1219bf0b0f62414f0f9bbb4c17c3938b39b6ed40a1454d52e3c73383b9e45a1d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "language acquisition",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "language acquisition",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "developmental"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "C. Piaget's stage theory was enormously influential but has been revised by subsequent research. Developmental psychologists have found that some abilities emerge earlier than Piaget proposed, and that change can be more continuous and uneven than a sequence of universal stages suggests. Infant research using habituation techniques—in which attention to novel versus familiar stimuli is measured—indicates that babies as young as three or four months respond as if they possess an implicit understanding of some physical regularities, including aspects of object permanence. Interpreting looking time is difficult, however: detecting that an event is surprising does not necessarily mean an infant has the same explicit concept or reasoning strategy as an older child.",
+      "sourceExcerptSha256": "43a2a08000d890df3fda044538906b147766d5f052eced6b6e71b94039f06e20",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Developmental",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "developmental",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "returns"
+      ],
+      "questionPrompt": "Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Cognitive Development in Early Childhood",
+      "sourceExcerpt": "F. The quality of early childhood environments has profound and lasting effects. Research on adverse childhood experiences—including neglect, abuse, household instability, and poverty—finds associations with worse developmental outcomes across cognitive, social, emotional, and physical domains. Risk is not destiny: stable, responsive relationships can buffer stress, and children follow diverse developmental paths. High-quality early childhood programmes, particularly those serving disadvantaged children, can improve school readiness and later outcomes, but effects depend on programme quality, duration, family context, and the services used for comparison. Economic analyses often find high returns from effective early intervention; such estimates should not be interpreted as a guarantee that every programme with an early-childhood label will produce the same result.",
+      "sourceExcerptSha256": "e79e638bffd4a5a2680713919d7a87d451af123259bf54bf5397ec3b2a972e05",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "returns",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "returns",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What economic principle does the passage identify as the foundation for the case in favour of globalisation?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The economic case for globalisation rests on comparative advantage: countries can gain by specialising according to relative opportunity costs and trading, even when one is more productive in every activity. Applied globally, this logic supports an international division of labour that has moved some manufacturing from higher-wage to lower-wage countries, reducing many production costs and consumer prices. It does not imply that every person gains or that trade alone determines development. Under the World Bank's poverty line used in its 2018 report, the share of the world's population in extreme poverty fell from nearly thirty-six percent in 1990 to ten percent in 2015. Much of the decline occurred in East and South Asia, especially China and India, alongside domestic reforms, investment, and deeper integration into the global economy. Poverty lines and purchasing-power data are periodically revised, so exact historical percentages depend on the measurement series.",
+      "sourceExcerptSha256": "d82311d2f781ab50177c91f4764d5c4c5a5f98d8f3b8c878fd225d002df77c36",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The principle of comparative advantage, in which countries specialise according to relative opportunity costs."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The principle of absolute advantage in international production.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The law of supply and demand as applied to international trade.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The principle of economic equilibrium between importing and exporting nations.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "According to the passage, how have the costs of globalisation been distributed within high-income countries?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Not all have shared equally in these gains. Within high-income countries, the benefits of cheaper imports and expanded export markets are dispersed among consumers and firms, while factory closures and manufacturing job losses can be concentrated in particular communities. Research on trade-exposed regions has found persistent labour-market adjustment, including lower employment or wages in some places facing import competition. Technology, exchange rates, domestic policy, and changes in demand also influence industrial employment, making simple attribution difficult. Political studies have identified correlations between exposure to Chinese import competition and support for populist or protectionist candidates. Such evidence establishes a relationship that researchers try to identify more precisely; describing every political change as directly caused by trade would go beyond it.",
+      "sourceExcerptSha256": "4bddfef0949d3bb25c26bb7c1848ac02c4da2203ece6c2e820d592e1ff58822c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "The costs have been concentrated in specific communities that lost manufacturing jobs."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The costs have been shared equally across all income levels and regions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "The costs have mainly been borne by wealthy sectors that lost export markets.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The costs have fallen primarily on consumers who pay higher prices for imported goods.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the \"elephant curve\" described by the economist Branko Milanovic?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Globalisation's effects on inequality at the global level are more complex than the within-country picture. Branko Milanovic's analysis of global income distribution from 1988 to 2008 helped popularise the \"elephant curve\"—a graph showing strong income growth around the middle of the global distribution, weaker growth around the upper-middle, and large gains near the top. It was often interpreted as contrasting rising Asian middle classes with relative stagnation among parts of the high-income world's middle class. Later debate showed that the curve also reflects changes in which households occupy each percentile and differences among countries. It remains a useful description of one period, but it cannot by itself prove that globalisation caused every movement along the curve.",
+      "sourceExcerptSha256": "6f569da35027d6972bad9a54d4625d4111513e06417f743cf7b3342ac79aab9d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "A visualisation of income growth showing gains for the global middle and top 1%, but stagnation for high-income country middle classes."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "A graph showing that the global poor gained the most from globalisation, while the rich gained least.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "A diagram comparing economic growth rates in elephantine economies such as India.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "A curve showing that global inequality has consistently fallen over the period of globalisation.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the research on cultural globalisation suggest about local cultural production?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+      "sourceExcerptSha256": "c3b1272a7696afcc573bb74efb29f7dc10685293ac74a7d8ecf307484aa0cb51",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Exposure to global culture often produces hybrid forms rather than simply displacing local culture."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Local cultures are invariably destroyed by exposure to global media and entertainment.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "American cultural dominance has been largely reversed by the growth of local streaming platforms.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Cultural globalisation has no measurable effect on local traditions or languages.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: The writer argues that globalisation has generated both significant gains and significant dislocations.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Globalisation—the intensifying economic, cultural, and political interconnection of the world—has been one of the defining processes of the late twentieth and early twenty-first centuries. It has generated extraordinary gains in prosperity and connected billions of people to information, markets, and opportunities previously inaccessible to them. It has also produced profound dislocations and generated a political backlash that has shaped elections and reshaped international relations in ways that were difficult to foresee when globalisation's advance seemed irresistible.",
+      "sourceExcerptSha256": "0b2f803879e1d1ad1b199a9d2cdae8b397a60d52e732194d4a66f4501e5a9a9d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Much of the recorded fall in extreme poverty occurred in China and India alongside deeper global integration.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The economic case for globalisation rests on comparative advantage: countries can gain by specialising according to relative opportunity costs and trading, even when one is more productive in every activity. Applied globally, this logic supports an international division of labour that has moved some manufacturing from higher-wage to lower-wage countries, reducing many production costs and consumer prices. It does not imply that every person gains or that trade alone determines development. Under the World Bank's poverty line used in its 2018 report, the share of the world's population in extreme poverty fell from nearly thirty-six percent in 1990 to ten percent in 2015. Much of the decline occurred in East and South Asia, especially China and India, alongside domestic reforms, investment, and deeper integration into the global economy. Poverty lines and purchasing-power data are periodically revised, so exact historical percentages depend on the measurement series.",
+      "sourceExcerptSha256": "d82311d2f781ab50177c91f4764d5c4c5a5f98d8f3b8c878fd225d002df77c36",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: Studies have found a correlation between exposure to Chinese import competition and support for populist or protectionist candidates.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Not all have shared equally in these gains. Within high-income countries, the benefits of cheaper imports and expanded export markets are dispersed among consumers and firms, while factory closures and manufacturing job losses can be concentrated in particular communities. Research on trade-exposed regions has found persistent labour-market adjustment, including lower employment or wages in some places facing import competition. Technology, exchange rates, domestic policy, and changes in demand also influence industrial employment, making simple attribution difficult. Political studies have identified correlations between exposure to Chinese import competition and support for populist or protectionist candidates. Such evidence establishes a relationship that researchers try to identify more precisely; describing every political change as directly caused by trade would go beyond it.",
+      "sourceExcerptSha256": "4bddfef0949d3bb25c26bb7c1848ac02c4da2203ece6c2e820d592e1ff58822c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "34. {{34}}: Branko Milanovic concludes that globalisation has benefited only the top one percent of income earners globally.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Globalisation's effects on inequality at the global level are more complex than the within-country picture. Branko Milanovic's analysis of global income distribution from 1988 to 2008 helped popularise the \"elephant curve\"—a graph showing strong income growth around the middle of the global distribution, weaker growth around the upper-middle, and large gains near the top. It was often interpreted as contrasting rising Asian middle classes with relative stagnation among parts of the high-income world's middle class. Later debate showed that the curve also reflects changes in which households occupy each percentile and differences among countries. It remains a useful description of one period, but it cannot by itself prove that globalisation caused every movement along the curve.",
+      "sourceExcerptSha256": "6f569da35027d6972bad9a54d4625d4111513e06417f743cf7b3342ac79aab9d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: The passage claims that cultural globalisation has resulted in the complete disappearance of local cultural traditions in many countries.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+      "sourceExcerptSha256": "c3b1272a7696afcc573bb74efb29f7dc10685293ac74a7d8ecf307484aa0cb51",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: The COVID-19 pandemic contributed to political pressure to return production to domestic locations.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+      "sourceExcerptSha256": "0b7d3696a5388aecdbc7007e8f61d1f0255ac64dbb1a3346612439210b1bb9d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "imperialism",
+        "homogenisation"
+      ],
+      "questionPrompt": "37. The concentration of cultural production in a small number of countries has raised concerns about cultural {{37}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+      "sourceExcerptSha256": "c3b1272a7696afcc573bb74efb29f7dc10685293ac74a7d8ecf307484aa0cb51",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "imperialism",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "imperialism",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "homogenisation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "reshoring"
+      ],
+      "questionPrompt": "38. The term used to describe the return of production to domestic locations is {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+      "sourceExcerptSha256": "0b7d3696a5388aecdbc7007e8f61d1f0255ac64dbb1a3346612439210b1bb9d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "reshoring",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "reshoring",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "slowbalisation"
+      ],
+      "questionPrompt": "39. The broader shift toward reducing international economic integration has been described as {{39}} or selective deglobalisation.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+      "sourceExcerptSha256": "0b7d3696a5388aecdbc7007e8f61d1f0255ac64dbb1a3346612439210b1bb9d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "slowbalisation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "slowbalisation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "political economy"
+      ],
+      "questionPrompt": "40. The passage describes the organisation of the global economy as a central question of international {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Globalisation and Its Critics",
+      "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+      "sourceExcerptSha256": "0b7d3696a5388aecdbc7007e8f61d1f0255ac64dbb1a3346612439210b1bb9d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "political economy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "political economy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q27 option B",
+        "before": "Comparative advantage means countries specialise in their most efficient outputs.",
+        "after": "Comparative advantage means countries specialise according to relative opportunity costs.",
+        "reason": "The former wording could be read as absolute advantage; the passage defines the relative opportunity-cost principle."
+      }
+    ]
+  },
+  "reviewSha256": "156a26d153315643f187dd4cc5a532ff6d993fdf6d70fcded6a8190c5471f01e"
+}

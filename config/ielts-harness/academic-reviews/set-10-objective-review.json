@@ -1,0 +1,3531 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 10,
+  "mockId": "set-10",
+  "contentVersionAtReview": "ielts-set-10-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "a1d269ee851d651ece69718ade5b235207180da98e896eb3308d703607580294",
+    "listeningMaterialSha256": "0bbdaa7b0c6e52a2491ad3426d4428ede8778d7c837e886aa53785fdb6f4982f",
+    "readingMaterialSha256": "852fac7fc82ef60fda3a74d7696300eb99a5f142a8616b6ebb74b7d18579b50f",
+    "objectiveMaterialSha256": "173a137c5df8869b344350db782436d141f7ba5dbe2389f7993d0ee9b6ba319a"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Farrelly"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "administration",
+        "admin"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "immediately"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "retail"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "diploma"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "French"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "11.50",
+        "£11.50"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "Riverside"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "evenings",
+        "evening"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "13",
+        "£13"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. an e-book lending service",
+        "B": "B. the café",
+        "C": "C. bookable study rooms",
+        "D": "D. the children's area",
+        "E": "E. the free wifi"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "residents",
+        "resident"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "12",
+        "twelve"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "three weeks",
+        "3 weeks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "fine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "newspapers",
+        "newspaper"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "story session",
+        "storytime"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "first"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "address"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "a community library",
+        "a sports centre",
+        "a railway station"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "a historic town hall",
+        "the natural landscape",
+        "a building they had seen abroad"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "steel",
+        "concrete",
+        "timber"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "staying within budget",
+        "meeting accessibility rules",
+        "the limited size of the site"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It contained too much detail.",
+        "The scale was not clear.",
+        "It needed brighter colours."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "introduction"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "materials",
+        "material"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "diagram"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "timing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "feedback"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "breeding"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "krill"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "blubber",
+        "fat"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "journeys",
+        "journey",
+        "migrations"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "lagoons",
+        "lagoon"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "field"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "songs",
+        "song"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "ships",
+        "ship"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "communication"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "food"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "biodegrade"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "mechanical abrasion"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "persistent organic pollutants",
+        "POPs"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "endocrine disruptors"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "secondary"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "Paris Climate Accord"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sent__21",
+      "accepted": [
+        "five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sent__22",
+      "accepted": [
+        "walking"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sent__23",
+      "accepted": [
+        "fire safety"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sent__24",
+      "accepted": [
+        "restrictions"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sent__25",
+      "accepted": [
+        "freedom"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sent__26",
+      "accepted": [
+        "social capital"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Personal identity is constituted by physical continuity of the body over time.",
+        "Personal identity consists in the continuity of consciousness through memory.",
+        "Personal identity is a philosophical illusion with no neurological basis.",
+        "Personal identity depends on social recognition rather than individual memory."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "That the hippocampus is responsible for all types of human memory.",
+        "That memory is a single unified system located in one brain region.",
+        "That memory consists of distinct systems supported by different neural structures.",
+        "That procedural memory is more important than episodic memory for personal identity."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That memories are stored permanently and cannot be altered once formed.",
+        "That people can develop detailed false memories through suggestive questioning.",
+        "That eyewitness testimony is generally more reliable than previously thought.",
+        "That children are better at forming false memories than adults."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That they store too little information to be genuinely useful.",
+        "That they may impair the development of neural networks underlying comprehension.",
+        "That they make memories too accurate, preventing the normal process of forgetting.",
+        "That they cause people to share private memories inappropriately."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "episodic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "how"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "reconstructed"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "storytelling"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Farrelly"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: Yes, my first name is Daniel, and my surname is Farrelly.",
+      "sourceExcerptSha256": "7fa3bdd62128327554c62bc811235c8186059741fb23ec627389e03961fe2f88",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Farrelly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Farrelly",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "administration",
+        "admin"
+      ],
+      "questionPrompt": "Type of work wanted: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: I was thinking warehouse work — actually, no, I'd really prefer office administration. That's where my strengths are.",
+      "sourceExcerptSha256": "8fc771876b9267036641f2d4914c4347a6416b3f352efc1e5a45fa0b4c0f9ff4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "administration",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "administration",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "admin",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "immediately"
+      ],
+      "questionPrompt": "Available to start: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: I'm free immediately — I finished my last contract a fortnight ago.",
+      "sourceExcerptSha256": "d932c75fa89f3db11a244e5c4ecd9f1accefb6747889f1c810c3b084cc25d4a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "immediately",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "immediately",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "retail"
+      ],
+      "questionPrompt": "Previous experience in: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: Most of my background is in retail — I managed a small shop for three years, so I'm used to dealing with customers and paperwork.",
+      "sourceExcerptSha256": "9a03a92f316eca3f671a58b30aa83fb997954240bfb17670eff47851bb7b336f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "retail",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "retail",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diploma"
+      ],
+      "questionPrompt": "Highest qualification: {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: I have a diploma in business studies.",
+      "sourceExcerptSha256": "2c739b392e1c3b527331d59753687ff54c33a195bebff148fc7b725d28b07055",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diploma",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diploma",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "French"
+      ],
+      "questionPrompt": "Other languages: {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "JOBSEEKER: Yes, I speak French fairly fluently.",
+      "sourceExcerptSha256": "a3148d2005ef2a69578aac2542f9111530a7c3bc98443dc072e7367475279139",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "French",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "French",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "11.50",
+        "£11.50"
+      ],
+      "questionPrompt": "Receptionist | city centre | full-time | {{7}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "CONSULTANT: Wonderful. Now, let me tell you about a few vacancies we have. First, there's a Receptionist role in the city centre, full-time, paying £11.50 an hour. Then we have an Office Assistant position — that one's out at Riverside, it's part-time, and it pays £12 an hour. And finally, a Data Clerk job, also in the city centre, but the hours are evenings only, at £13 an hour.",
+      "sourceExcerptSha256": "267f1a704b4c6be54169c8b4b2a095467e56538c77f02bc1bc601f473755c666",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "11.50",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "11.50",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£11.50",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Riverside"
+      ],
+      "questionPrompt": "Office Assistant | {{8}} | part-time | £12",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "CONSULTANT: Wonderful. Now, let me tell you about a few vacancies we have. First, there's a Receptionist role in the city centre, full-time, paying £11.50 an hour. Then we have an Office Assistant position — that one's out at Riverside, it's part-time, and it pays £12 an hour. And finally, a Data Clerk job, also in the city centre, but the hours are evenings only, at £13 an hour.",
+      "sourceExcerptSha256": "267f1a704b4c6be54169c8b4b2a095467e56538c77f02bc1bc601f473755c666",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Riverside",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Riverside",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "evenings",
+        "evening"
+      ],
+      "questionPrompt": "Data Clerk | city centre | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "CONSULTANT: Wonderful. Now, let me tell you about a few vacancies we have. First, there's a Receptionist role in the city centre, full-time, paying £11.50 an hour. Then we have an Office Assistant position — that one's out at Riverside, it's part-time, and it pays £12 an hour. And finally, a Data Clerk job, also in the city centre, but the hours are evenings only, at £13 an hour.",
+      "sourceExcerptSha256": "267f1a704b4c6be54169c8b4b2a095467e56538c77f02bc1bc601f473755c666",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "evenings",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "evenings",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "evening",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "13",
+        "£13"
+      ],
+      "questionPrompt": "Data Clerk | city centre | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Job-Agency Registration",
+      "sourceExcerpt": "CONSULTANT: Wonderful. Now, let me tell you about a few vacancies we have. First, there's a Receptionist role in the city centre, full-time, paying £11.50 an hour. Then we have an Office Assistant position — that one's out at Riverside, it's part-time, and it pays £12 an hour. And finally, a Data Clerk job, also in the city centre, but the hours are evenings only, at £13 an hour.",
+      "sourceExcerptSha256": "267f1a704b4c6be54169c8b4b2a095467e56538c77f02bc1bc601f473755c666",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "13",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "13",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£13",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "C"
+      ],
+      "questionPrompt": "Which TWO services does the speaker say are new this year?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Let me start with what's new this year. We've just launched an e-book lending service, so you can now borrow digital titles and read them on your phone or tablet at home. We've also opened a set of bookable study rooms on the upper floor, which have been in great demand from students. Now, some of you will ask about the café and the free wifi — those aren't new, they've been with us for several years. And our children's area is currently being renovated, so please bear with us there.",
+      "sourceExcerptSha256": "e29a39a4428d2f8a46b7eca010cf268abb44ba42948d7c5af86163dc3279f5f6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "an e-book lending service"
+        },
+        {
+          "key": "C",
+          "text": "bookable study rooms"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the children's area",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the free wifi",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "residents",
+        "resident"
+      ],
+      "questionPrompt": "• Membership is free for local {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Now, on to membership and borrowing. Joining the library is completely free for local residents. Once you're a member, you can borrow up to twelve items at any one time — books, audiobooks, or DVDs. The standard loan period is three weeks, and you can renew online if no one else has reserved the item. If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.",
+      "sourceExcerptSha256": "6a7dcec534a4eeae749b9dc640ad7f93a6ddf43a4b5777a2d6cb6bf2445ddd8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "residents",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "residents",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "resident",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "questionPrompt": "• Members can borrow up to {{14}} items at once.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Now, on to membership and borrowing. Joining the library is completely free for local residents. Once you're a member, you can borrow up to twelve items at any one time — books, audiobooks, or DVDs. The standard loan period is three weeks, and you can renew online if no one else has reserved the item. If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.",
+      "sourceExcerptSha256": "6a7dcec534a4eeae749b9dc640ad7f93a6ddf43a4b5777a2d6cb6bf2445ddd8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "twelve",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "12",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        },
+        {
+          "answer": "twelve",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "three weeks",
+        "3 weeks"
+      ],
+      "questionPrompt": "• The standard loan period is {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Now, on to membership and borrowing. Joining the library is completely free for local residents. Once you're a member, you can borrow up to twelve items at any one time — books, audiobooks, or DVDs. The standard loan period is three weeks, and you can renew online if no one else has reserved the item. If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.",
+      "sourceExcerptSha256": "6a7dcec534a4eeae749b9dc640ad7f93a6ddf43a4b5777a2d6cb6bf2445ddd8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three weeks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "three weeks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "3 weeks",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fine"
+      ],
+      "questionPrompt": "• Late returns are charged a small {{16}} per day.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Now, on to membership and borrowing. Joining the library is completely free for local residents. Once you're a member, you can borrow up to twelve items at any one time — books, audiobooks, or DVDs. The standard loan period is three weeks, and you can renew online if no one else has reserved the item. If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.",
+      "sourceExcerptSha256": "6a7dcec534a4eeae749b9dc640ad7f93a6ddf43a4b5777a2d6cb6bf2445ddd8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "newspapers",
+        "newspaper"
+      ],
+      "questionPrompt": "• Free access to a range of online {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep up with the news from around the world. For families, we run a story session for young children every Saturday morning — it's very popular, so arrive early. And if you need to use a computer, our computer suite is on the first floor, with printing and scanning available.",
+      "sourceExcerptSha256": "fe0c27c6ec8b3f0b41634f9dce7634cccc0759530dbd98c192db5087214ac772",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "newspapers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "newspapers",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "newspaper",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "story session",
+        "storytime"
+      ],
+      "questionPrompt": "• A {{18}} for young children every Saturday morning.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep up with the news from around the world. For families, we run a story session for young children every Saturday morning — it's very popular, so arrive early. And if you need to use a computer, our computer suite is on the first floor, with printing and scanning available.",
+      "sourceExcerptSha256": "fe0c27c6ec8b3f0b41634f9dce7634cccc0759530dbd98c192db5087214ac772",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "story session",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "story session",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "storytime",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "first"
+      ],
+      "questionPrompt": "• The computer suite is on the {{19}} floor.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep up with the news from around the world. For families, we run a story session for young children every Saturday morning — it's very popular, so arrive early. And if you need to use a computer, our computer suite is on the first floor, with printing and scanning available.",
+      "sourceExcerptSha256": "fe0c27c6ec8b3f0b41634f9dce7634cccc0759530dbd98c192db5087214ac772",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "first",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "first",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "address"
+      ],
+      "questionPrompt": "• Bring proof of your {{20}} to the main desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Library Services",
+      "sourceExcerpt": "Finally, if you'd like to join today, it couldn't be simpler. Just come to the main desk and bring proof of your address — a utility bill or a bank statement is fine — and we'll issue your card on the spot.",
+      "sourceExcerptSha256": "29558bb48ffcea4524f90101ca3403a4b0f9acbbc99ebb814dd1b868260dded5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "address",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "address",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What type of building did the students design?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Let me confirm that for the assessment record: the building itself is a community library. The sports hall shown beside it belongs to the existing school, and the railway station on your location map is simply a nearby landmark. Neither of those is your design proposal.",
+      "sourceExcerptSha256": "3edfaadb70f9dc86ada66b3051b11f8ea4639fdaeb9b21bbe72cd84d7902a7ab",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "a community library"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "a sports centre",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "a railway station",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was the main inspiration for their design?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "JOSH: We did look at an old town hall for ideas, but in the end the main inspiration was the natural landscape around the site — the way the hills curve. The roofline actually echoes those hills.",
+      "sourceExcerptSha256": "778872dc583facd395183d681162baccf1e1454c41a21d5227b62666709d4182",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the natural landscape"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "a historic town hall",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "a building they had seen abroad",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Which material did they choose for the main structure?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: That's a strong concept. And what did you build the main structure from?",
+      "sourceExcerptSha256": "6156a86b9bfe0466c297df21f575f60d2b269c25b92594700beb6b1694b1ecdb",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "timber"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "steel",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "concrete",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What was the biggest challenge they faced?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "JOSH: Definitely. The hardest thing wasn't the budget or accessibility — it was the limited size of the site. It's quite a narrow plot, so fitting everything in without it feeling cramped took a lot of reworking.",
+      "sourceExcerptSha256": "356e87cf9463c79a7bef6f98f2981c37819b58ad31c272de9048410bd2627906",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "the limited size of the site"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "staying within budget",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "meeting accessibility rules",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did the tutor say about their scale model?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: You've handled that well. Now, I looked at your scale model. It's beautifully made, but I have to say the scale isn't obvious — someone looking at it can't easily tell how big the building actually is. You might add a small human figure for reference.",
+      "sourceExcerptSha256": "f4b02eb07e83e02ff5d496d839ed4ddbdd6456110aaa05da97671a0cbd4aa171",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The scale was not clear."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It contained too much detail.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It needed brighter colours.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "introduction"
+      ],
+      "questionPrompt": "• The presentation should begin with a clear {{26}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.",
+      "sourceExcerptSha256": "341b2a4aaf94fd0a7f8720c96ce9f34d5bc85b410a19f6a170c5e8316f8a8bca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "introduction",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "introduction",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "materials",
+        "material"
+      ],
+      "questionPrompt": "• They should explain their choice of {{27}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.",
+      "sourceExcerptSha256": "341b2a4aaf94fd0a7f8720c96ce9f34d5bc85b410a19f6a170c5e8316f8a8bca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "materials",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "materials",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "material",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diagram"
+      ],
+      "questionPrompt": "• The tutor suggests adding a {{28}} of the internal layout.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.",
+      "sourceExcerptSha256": "341b2a4aaf94fd0a7f8720c96ce9f34d5bc85b410a19f6a170c5e8316f8a8bca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diagram",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diagram",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "timing"
+      ],
+      "questionPrompt": "• They should rehearse to get their {{29}} right.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.",
+      "sourceExcerptSha256": "341b2a4aaf94fd0a7f8720c96ce9f34d5bc85b410a19f6a170c5e8316f8a8bca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "timing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "timing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "feedback"
+      ],
+      "questionPrompt": "• The tutor will give them {{30}} after the practice run.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Architecture Project",
+      "sourceExcerpt": "TUTOR: Now, for the presentation itself. Start with a clear introduction that sets out your aims — don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project. I'd also add a diagram showing the internal layout, so the audience can follow the flow of the spaces. And do rehearse beforehand to get your timing right; you've only got ten minutes. Practise once in front of me, and I'll give you some feedback afterwards.",
+      "sourceExcerptSha256": "341b2a4aaf94fd0a7f8720c96ce9f34d5bc85b410a19f6a170c5e8316f8a8bca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "feedback",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "feedback",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "breeding"
+      ],
+      "questionPrompt": "• They travel to warm {{31}} grounds so their young can survive.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Let's begin with why they migrate at all. Most large whales divide their year between two very different regions. In the cooler months they head towards the tropics, and the main reason is reproduction: they travel to warm breeding grounds, where their young have a better chance of surviving. In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny shrimp-like creatures called krill that form the bulk of their diet. During this feeding season a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.",
+      "sourceExcerptSha256": "4b3f9c6d48ca74ede6cc1bacdd8559c1728448d52d5ca8724329dc3cc14b23d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "breeding",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "breeding",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "krill"
+      ],
+      "questionPrompt": "• At the poles they feed on tiny creatures called {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Let's begin with why they migrate at all. Most large whales divide their year between two very different regions. In the cooler months they head towards the tropics, and the main reason is reproduction: they travel to warm breeding grounds, where their young have a better chance of surviving. In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny shrimp-like creatures called krill that form the bulk of their diet. During this feeding season a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.",
+      "sourceExcerptSha256": "4b3f9c6d48ca74ede6cc1bacdd8559c1728448d52d5ca8724329dc3cc14b23d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "krill",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "krill",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "blubber",
+        "fat"
+      ],
+      "questionPrompt": "• They store energy as a thick layer of {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Let's begin with why they migrate at all. Most large whales divide their year between two very different regions. In the cooler months they head towards the tropics, and the main reason is reproduction: they travel to warm breeding grounds, where their young have a better chance of surviving. In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny shrimp-like creatures called krill that form the bulk of their diet. During this feeding season a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.",
+      "sourceExcerptSha256": "4b3f9c6d48ca74ede6cc1bacdd8559c1728448d52d5ca8724329dc3cc14b23d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "blubber",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "blubber",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "fat",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "journeys",
+        "journey",
+        "migrations"
+      ],
+      "questionPrompt": "• Grey whales make some of the longest {{34}} of any mammal.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Now, the distances involved are extraordinary. Grey whales, for example, make some of the longest journeys of any mammal on Earth, swimming from the Arctic all the way to the coast of Mexico. There, the females give birth in warm, shallow lagoons near the shore, which offer their calves protection from predators.",
+      "sourceExcerptSha256": "ad311234de04310b021b930c4eabd421725743a4e3f36d77de5038de450f42f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "journeys",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "journeys",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "journey",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "migrations",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lagoons",
+        "lagoon"
+      ],
+      "questionPrompt": "• Females give birth in warm, shallow {{35}} near the shore.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Now, the distances involved are extraordinary. Grey whales, for example, make some of the longest journeys of any mammal on Earth, swimming from the Arctic all the way to the coast of Mexico. There, the females give birth in warm, shallow lagoons near the shore, which offer their calves protection from predators.",
+      "sourceExcerptSha256": "ad311234de04310b021b930c4eabd421725743a4e3f36d77de5038de450f42f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lagoons",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lagoons",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "lagoon",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "field"
+      ],
+      "questionPrompt": "• Whales may detect the Earth's magnetic {{36}} to navigate.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "How do whales find their way across such vast stretches of open ocean? Scientists believe they may be able to detect the Earth's magnetic field, using it rather like a compass. They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometres underwater and help them stay in contact.",
+      "sourceExcerptSha256": "cd8bbfec9ddfb4a4bf30e130eec0e28f62b86cf5f3c78e7f28021f798676f61d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "field",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "field",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "songs",
+        "song"
+      ],
+      "questionPrompt": "• They also communicate using long, complex {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "How do whales find their way across such vast stretches of open ocean? Scientists believe they may be able to detect the Earth's magnetic field, using it rather like a compass. They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometres underwater and help them stay in contact.",
+      "sourceExcerptSha256": "cd8bbfec9ddfb4a4bf30e130eec0e28f62b86cf5f3c78e7f28021f798676f61d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "songs",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "songs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "song",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ships",
+        "ship"
+      ],
+      "questionPrompt": "• Many are killed by collisions with {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Sadly, whales today face a number of serious threats. One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year. In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate. And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years.",
+      "sourceExcerptSha256": "1b6005d29b493ce2478353aa9577f1bc54ffce43891aca2b0ea7088efed4e514",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ships",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ships",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "ship",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "communication"
+      ],
+      "questionPrompt": "• Underwater noise interferes with their {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Sadly, whales today face a number of serious threats. One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year. In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate. And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years.",
+      "sourceExcerptSha256": "1b6005d29b493ce2478353aa9577f1bc54ffce43891aca2b0ea7088efed4e514",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "communication",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "communication",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "food"
+      ],
+      "questionPrompt": "• Rising sea temperatures are shifting the location of their {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Migration of Whales",
+      "sourceExcerpt": "Sadly, whales today face a number of serious threats. One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year. In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate. And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years.",
+      "sourceExcerptSha256": "1b6005d29b493ce2478353aa9577f1bc54ffce43891aca2b0ea7088efed4e514",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "food",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "food",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Microplastics are defined as plastic particles smaller than five millimetres in diameter.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Plastic pollution has become one of the most visible and alarming symptoms of humanity's impact on the natural environment. Millions of tonnes of plastic enter the world's oceans each year, where it persists indefinitely—plastic does not biodegrade but rather breaks down into progressively smaller fragments. Particles smaller than five millimetres in diameter are classified as microplastics, and their presence now pervades every marine environment on Earth, from the surface of the Arctic Ocean to the sediments of the deepest ocean trenches. Their small size makes the pollution difficult to observe and recover. A floating bottle can sometimes be collected, but fragments dispersed through water or mixed into sediment cannot be removed with the same methods. Continued fragmentation also means that old waste remains a source long after it first enters the sea.",
+      "sourceExcerptSha256": "96adc3aff8e20173d88671ad52b3746d349089026f6ecdaa923169b95369f618",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: Nurdles are primary microplastics used as raw material to make larger plastic products.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The sources of microplastics are numerous and varied. Primary microplastics are manufactured at microscopic size for specific industrial or consumer purposes: microbeads used in cosmetic exfoliants and toothpastes, and pellets known as nurdles that are the raw material from which larger plastic products are moulded. Secondary microplastics result from the gradual fragmentation of larger plastic items—bottles, bags, fishing gear, synthetic clothing—under the combined action of ultraviolet radiation, wave action, and mechanical abrasion. A single washing-machine cycle involving synthetic garments can release hundreds of thousands of microfibre particles into wastewater. Whether those fibres reach the ocean depends partly on treatment infrastructure. Some are trapped in sewage sludge, but this does not necessarily end their movement: sludge applied to land can transfer particles into soil, from which runoff may carry them into rivers. The route from product to sea is therefore often indirect.",
+      "sourceExcerptSha256": "50e2b3ddfc76df095cc25fd1fb71645f9a4acd76ac720c74f0f2b4de7a07425f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "3. {{3}}: Synthetic clothing is the main source of microplastic pollution worldwide.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+      "sourceExcerptSha256": "64a9b96b6c3204cb8e9fd3541197d393c2361b8569ff98b1e7cbcf6653e4938c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Laboratory studies have shown fish exposed to microplastics experience reduced feeding behaviour.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Marine organisms interact with microplastics at multiple levels of the food web. Filter feeders such as mussels and oysters ingest particles indiscriminately alongside their normal food. Fish and seabirds confuse floating microplastic fragments for food items, with serious consequences: laboratory studies have shown that fish exposed to microplastics exhibit reduced feeding behaviour, impaired reproduction, and liver stress. Size, shape, and density affect where a particle travels and which organisms encounter it. Some plastics remain near the surface, while others sink after organisms and minerals accumulate on them. Fibres and irregular fragments may also behave differently from smooth spheres in digestive systems. Chemical concerns compound the physical ones: microplastics are highly effective scavengers of persistent organic pollutants (POPs) in seawater, concentrating toxic chemicals that then enter the food chain when the plastic is ingested.",
+      "sourceExcerptSha256": "e509b560355dc98a2713beca928f3ba367a4e30667d0e03ad669fde466e55840",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Microplastics have been detected in human blood and placental tissue.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Human exposure to microplastics is now effectively universal. Studies have detected microplastics in human blood, lung tissue, placental tissue, and breast milk. Detection alone does not establish how much exposure produces illness, and results from cell cultures cannot be transferred directly to the complex conditions of a living body. Researchers must distinguish the effects of the particle itself from those of chemicals carried on or released from it. The health consequences of this exposure are not yet fully characterised, but laboratory studies have identified potential mechanisms of harm: microplastic particles have been shown to cause inflammatory responses in human cell cultures, and certain plastic additives—plasticisers and stabilisers—are established endocrine disruptors that interfere with hormonal regulation.",
+      "sourceExcerptSha256": "283ef2e3c54ba03e58d0250ed4a2f92ebf67dd990d2e97964230dd77adb3a816",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "6. {{6}}: The United States has banned microbeads in all consumer products, not just cosmetics.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+      "sourceExcerptSha256": "64a9b96b6c3204cb8e9fd3541197d393c2361b8569ff98b1e7cbcf6653e4938c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: United Nations member states agreed to negotiate a plastic pollution treaty in 2022.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+      "sourceExcerptSha256": "64a9b96b6c3204cb8e9fd3541197d393c2361b8569ff98b1e7cbcf6653e4938c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "biodegrade"
+      ],
+      "questionPrompt": "8. Plastic does not {{8}} but instead breaks into progressively smaller fragments.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Plastic pollution has become one of the most visible and alarming symptoms of humanity's impact on the natural environment. Millions of tonnes of plastic enter the world's oceans each year, where it persists indefinitely—plastic does not biodegrade but rather breaks down into progressively smaller fragments. Particles smaller than five millimetres in diameter are classified as microplastics, and their presence now pervades every marine environment on Earth, from the surface of the Arctic Ocean to the sediments of the deepest ocean trenches. Their small size makes the pollution difficult to observe and recover. A floating bottle can sometimes be collected, but fragments dispersed through water or mixed into sediment cannot be removed with the same methods. Continued fragmentation also means that old waste remains a source long after it first enters the sea.",
+      "sourceExcerptSha256": "96adc3aff8e20173d88671ad52b3746d349089026f6ecdaa923169b95369f618",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "biodegrade",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "biodegrade",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mechanical abrasion"
+      ],
+      "questionPrompt": "9. Fragmentation of larger plastics occurs through ultraviolet radiation, wave action, and {{9}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The sources of microplastics are numerous and varied. Primary microplastics are manufactured at microscopic size for specific industrial or consumer purposes: microbeads used in cosmetic exfoliants and toothpastes, and pellets known as nurdles that are the raw material from which larger plastic products are moulded. Secondary microplastics result from the gradual fragmentation of larger plastic items—bottles, bags, fishing gear, synthetic clothing—under the combined action of ultraviolet radiation, wave action, and mechanical abrasion. A single washing-machine cycle involving synthetic garments can release hundreds of thousands of microfibre particles into wastewater. Whether those fibres reach the ocean depends partly on treatment infrastructure. Some are trapped in sewage sludge, but this does not necessarily end their movement: sludge applied to land can transfer particles into soil, from which runoff may carry them into rivers. The route from product to sea is therefore often indirect.",
+      "sourceExcerptSha256": "50e2b3ddfc76df095cc25fd1fb71645f9a4acd76ac720c74f0f2b4de7a07425f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mechanical abrasion",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mechanical abrasion",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "persistent organic pollutants",
+        "POPs"
+      ],
+      "questionPrompt": "10. Microplastics scavenge {{10}} from seawater, concentrating toxins that enter the food chain.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Marine organisms interact with microplastics at multiple levels of the food web. Filter feeders such as mussels and oysters ingest particles indiscriminately alongside their normal food. Fish and seabirds confuse floating microplastic fragments for food items, with serious consequences: laboratory studies have shown that fish exposed to microplastics exhibit reduced feeding behaviour, impaired reproduction, and liver stress. Size, shape, and density affect where a particle travels and which organisms encounter it. Some plastics remain near the surface, while others sink after organisms and minerals accumulate on them. Fibres and irregular fragments may also behave differently from smooth spheres in digestive systems. Chemical concerns compound the physical ones: microplastics are highly effective scavengers of persistent organic pollutants (POPs) in seawater, concentrating toxic chemicals that then enter the food chain when the plastic is ingested.",
+      "sourceExcerptSha256": "e509b560355dc98a2713beca928f3ba367a4e30667d0e03ad669fde466e55840",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "persistent organic pollutants",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "persistent organic pollutants",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "POPs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "endocrine disruptors"
+      ],
+      "questionPrompt": "11. Certain plastic additives are known {{11}} that interfere with hormonal regulation.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "Human exposure to microplastics is now effectively universal. Studies have detected microplastics in human blood, lung tissue, placental tissue, and breast milk. Detection alone does not establish how much exposure produces illness, and results from cell cultures cannot be transferred directly to the complex conditions of a living body. Researchers must distinguish the effects of the particle itself from those of chemicals carried on or released from it. The health consequences of this exposure are not yet fully characterised, but laboratory studies have identified potential mechanisms of harm: microplastic particles have been shown to cause inflammatory responses in human cell cultures, and certain plastic additives—plasticisers and stabilisers—are established endocrine disruptors that interfere with hormonal regulation.",
+      "sourceExcerptSha256": "283ef2e3c54ba03e58d0250ed4a2f92ebf67dd990d2e97964230dd77adb3a816",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "endocrine disruptors",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "endocrine disruptors",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "secondary"
+      ],
+      "questionPrompt": "12. Microbead bans address only a small proportion of microplastic input compared to {{12}} microplastics.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+      "sourceExcerptSha256": "64a9b96b6c3204cb8e9fd3541197d393c2361b8569ff98b1e7cbcf6653e4938c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "secondary",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "secondary",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Paris Climate Accord"
+      ],
+      "questionPrompt": "13. The 2022 plastic pollution treaty was described as the most significant environmental agreement since the {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Microplastics in the Ocean",
+      "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+      "sourceExcerptSha256": "64a9b96b6c3204cb8e9fd3541197d393c2361b8569ff98b1e7cbcf6653e4938c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Paris Climate Accord",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Paris Climate Accord",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Specific cities that have restricted short-term rental platforms",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+      "sourceExcerptSha256": "0795382cea6ecde1b4a30d35eda53335e5164603c990593bc20a0ace2f608973",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A description of the potential benefits of community-based, non-commercial sharing",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "F. Despite these critiques, genuine sharing—distinct from commercial platform activity—does deliver social and economic value. Community sharing libraries, tool exchanges, community-supported agriculture schemes, and informal skill-swap networks provide goods and services in ways that build social capital, reduce waste, and strengthen local communities. Their value can include the relationships formed around an exchange, not just the market price of the item borrowed. Trust may reduce the need for formal monitoring, although that trust is easier to maintain among participants who expect to meet again. Whether these forms of sharing can be scaled or whether they remain inherently small-scale is an unresolved question. Some researchers argue that the true potential of the sharing economy lies not in billion-dollar platforms but in the revival of pre-market forms of mutual aid—reimagined for a networked, urban world.",
+      "sourceExcerptSha256": "f79f2de2c7a52ab03a9dcbf0d836d2f36ea9adf5fd326d13880818a6ea60981c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "Evidence that ride-sharing may increase rather than decrease vehicle use in cities",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "C. Environmental claims for the sharing economy are mixed. In theory, sharing reduces the total number of assets that need to be produced: a shared car replaces multiple privately owned vehicles, reducing manufacturing, raw material consumption, and parking infrastructure demand. The final effect depends on what the shared service replaces and whether lower cost encourages additional use. An asset used more intensively may reduce idle capacity, but frequent replacement or journeys made without passengers can offset that gain. In practice, however, research has found that ride-sharing services increase the total vehicle kilometres travelled in cities rather than reducing them, because they attract passengers from walking, cycling, and public transport rather than from car ownership. Similarly, home-sharing has been shown in some markets to increase accommodation demand and tourism-related travel, potentially generating more carbon emissions than traditional hotel use.",
+      "sourceExcerptSha256": "9a8a71a91cd55332314b8e2af9f647f52575f036521049eccfc55b719727cc1d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "Global financial data illustrating the rapid growth of sharing economy platforms",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "B. The sharing economy's growth has been dramatic. Airbnb, founded in 2008, now lists more rooms than the world's five largest hotel chains combined. Uber operates in over 70 countries and has fundamentally disrupted the taxi industry in dozens of cities. Beyond these headline platforms, thousands of smaller services facilitate the rental of cars, bicycles, formal wear, power tools, and storage space. The aggregate value of transactions flowing through sharing economy platforms reached an estimated 335 billion US dollars globally in 2025, up from virtually zero in 2010.",
+      "sourceExcerptSha256": "a8bf13fe23321efe8b5d017a31afaae173ce7844885066c72b8db94f68c0eab8",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An example of workers losing income after unexplained platform deactivation",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "E. Workers in the sharing economy—already discussed in relation to the gig economy—face significant vulnerabilities. While platform companies emphasise the freedom and autonomy they offer, the absence of employment protections means that a platform's algorithmic decisions—about pricing, job allocation, and account termination—can have immediate and severe consequences for a worker's livelihood. Ratings can determine access to future work, yet a worker may have little information about how a score is calculated or how to challenge an unfair review. The platform holds detailed transaction data while the individual provider often sees only the immediate offer. Research has documented cases in which workers were deactivated from platforms without explanation or recourse, losing their primary income with no entitlement to notice pay or appeal.",
+      "sourceExcerptSha256": "576c877b94a6356f9aa9e866a9bab5ef5a2c6adc633d8eb0f2159cebed4a521a",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "A broad definition of the sharing economy and a summary of debates about its nature",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "A. The term \"sharing economy\" describes a model of economic activity in which individuals share access to goods, services, or skills, typically mediated by digital platforms. Ride-sharing, home-sharing, tool libraries, peer-to-peer lending, and skill-exchange platforms all fall under this broad category. The common principle is access without permanent ownership, yet the relationships involved vary greatly. Neighbours lending tools without payment, a company renting a fleet of vehicles, and a homeowner charging guests through an app may all receive the same label. Proponents describe it as a more efficient, sustainable, and community-oriented alternative to traditional consumption; critics argue that many so-called sharing platforms are simply new mechanisms for commercial transaction, with the environmental and social benefits frequently overstated.",
+      "sourceExcerptSha256": "5e24ef44508e93de1ff8007353733c0a5286dbac5c87201e7ed1d7675a7cd229",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Arguments made by the traditional taxi industry against ride-sharing services",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+      "sourceExcerptSha256": "0795382cea6ecde1b4a30d35eda53335e5164603c990593bc20a0ace2f608973",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sent__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "five"
+      ],
+      "questionPrompt": "21. Airbnb now lists more rooms than the world's {{21}} largest hotel chains combined.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "B. The sharing economy's growth has been dramatic. Airbnb, founded in 2008, now lists more rooms than the world's five largest hotel chains combined. Uber operates in over 70 countries and has fundamentally disrupted the taxi industry in dozens of cities. Beyond these headline platforms, thousands of smaller services facilitate the rental of cars, bicycles, formal wear, power tools, and storage space. The aggregate value of transactions flowing through sharing economy platforms reached an estimated 335 billion US dollars globally in 2025, up from virtually zero in 2010.",
+      "sourceExcerptSha256": "a8bf13fe23321efe8b5d017a31afaae173ce7844885066c72b8db94f68c0eab8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "five",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sent__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "walking"
+      ],
+      "questionPrompt": "22. Research found that ride-sharing attracts passengers from {{22}}, cycling, and public transport.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "C. Environmental claims for the sharing economy are mixed. In theory, sharing reduces the total number of assets that need to be produced: a shared car replaces multiple privately owned vehicles, reducing manufacturing, raw material consumption, and parking infrastructure demand. The final effect depends on what the shared service replaces and whether lower cost encourages additional use. An asset used more intensively may reduce idle capacity, but frequent replacement or journeys made without passengers can offset that gain. In practice, however, research has found that ride-sharing services increase the total vehicle kilometres travelled in cities rather than reducing them, because they attract passengers from walking, cycling, and public transport rather than from car ownership. Similarly, home-sharing has been shown in some markets to increase accommodation demand and tourism-related travel, potentially generating more carbon emissions than traditional hotel use.",
+      "sourceExcerptSha256": "9a8a71a91cd55332314b8e2af9f647f52575f036521049eccfc55b719727cc1d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "walking",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "walking",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sent__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fire safety"
+      ],
+      "questionPrompt": "23. The hotel industry argues that home-sharing platforms avoid hotel taxes and {{23}} regulations.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+      "sourceExcerptSha256": "0795382cea6ecde1b4a30d35eda53335e5164603c990593bc20a0ace2f608973",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fire safety",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fire safety",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sent__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "restrictions"
+      ],
+      "questionPrompt": "24. Some cities have introduced {{24}} on short-term rentals because of rising rents for permanent residents.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+      "sourceExcerptSha256": "0795382cea6ecde1b4a30d35eda53335e5164603c990593bc20a0ace2f608973",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "restrictions",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "restrictions",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sent__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "freedom"
+      ],
+      "questionPrompt": "25. Platform companies emphasise the {{25}} and autonomy that gig workers enjoy.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "E. Workers in the sharing economy—already discussed in relation to the gig economy—face significant vulnerabilities. While platform companies emphasise the freedom and autonomy they offer, the absence of employment protections means that a platform's algorithmic decisions—about pricing, job allocation, and account termination—can have immediate and severe consequences for a worker's livelihood. Ratings can determine access to future work, yet a worker may have little information about how a score is calculated or how to challenge an unfair review. The platform holds detailed transaction data while the individual provider often sees only the immediate offer. Research has documented cases in which workers were deactivated from platforms without explanation or recourse, losing their primary income with no entitlement to notice pay or appeal.",
+      "sourceExcerptSha256": "576c877b94a6356f9aa9e866a9bab5ef5a2c6adc633d8eb0f2159cebed4a521a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "freedom",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "freedom",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sent__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "social capital"
+      ],
+      "questionPrompt": "26. Community sharing schemes build {{26}}, reduce waste, and strengthen local communities.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Sharing Economy",
+      "sourceExcerpt": "F. Despite these critiques, genuine sharing—distinct from commercial platform activity—does deliver social and economic value. Community sharing libraries, tool exchanges, community-supported agriculture schemes, and informal skill-swap networks provide goods and services in ways that build social capital, reduce waste, and strengthen local communities. Their value can include the relationships formed around an exchange, not just the market price of the item borrowed. Trust may reduce the need for formal monitoring, although that trust is easier to maintain among participants who expect to meet again. Whether these forms of sharing can be scaled or whether they remain inherently small-scale is an unresolved question. Some researchers argue that the true potential of the sharing economy lies not in billion-dollar platforms but in the revival of pre-market forms of mutual aid—reimagined for a networked, urban world.",
+      "sourceExcerptSha256": "f79f2de2c7a52ab03a9dcbf0d836d2f36ea9adf5fd326d13880818a6ea60981c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "social capital",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "social capital",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does Locke's theory of personal identity, as described in the passage, claim?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Memory is foundational to personal identity. The philosopher John Locke argued in the seventeenth century that personal identity consists in continuity of consciousness—specifically, in the ability to remember past experiences as one's own. On this account, you are the same person who woke up this morning because you remember waking up; you are the same person who attended school as a child because you can recall the experience. The view raises a difficulty because ordinary people forget large portions of their lives without appearing to become different persons each time a detail disappears. Memory, in Locke's framework, is not merely a record of the past but the very substance of the self.",
+      "sourceExcerptSha256": "4dd91552c8b83ac748ec1b9c36dbd2c44a71b03bd134b5b05405ae206272d7c0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Personal identity consists in the continuity of consciousness through memory."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Personal identity is constituted by physical continuity of the body over time.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Personal identity is a philosophical illusion with no neurological basis.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Personal identity depends on social recognition rather than individual memory.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the case of patient H.M. primarily demonstrate about memory?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+      "sourceExcerptSha256": "4ff0c4b7121dcf8fba9cc0f71b68e5e25ffb81eec6eb8c50fa2f595d11b53881",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "That memory consists of distinct systems supported by different neural structures."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That the hippocampus is responsible for all types of human memory.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "That memory is a single unified system located in one brain region.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That procedural memory is more important than episodic memory for personal identity.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did Elizabeth Loftus's research demonstrate?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+      "sourceExcerptSha256": "4c3248da6f45b99c7d6f713ebf461c00d471307a222773070ba6ca570c29a09d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "That people can develop detailed false memories through suggestive questioning."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That memories are stored permanently and cannot be altered once formed.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "That eyewitness testimony is generally more reliable than previously thought.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That children are better at forming false memories than adults.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What concern do some researchers express about digital memory tools?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "The question of how memory should be understood in an age of digital documentation adds further complexity. Photographs, videos, social media posts, and search histories now record experiences in unprecedented detail. Some researchers argue that digital memory supplements biological memory productively, freeing cognitive resources for higher-order thinking. Others warn that the outsourcing of memory to devices impairs the development of the neural networks that underpin deep comprehension and wisdom. The relationship between remembering and understanding, these researchers suggest, is more intimate than the simple storage metaphor implies.",
+      "sourceExcerptSha256": "1e07a06ff2268071737b251f51f9977f897e95d94d13f6bc0b7c82824d2248a5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "That they may impair the development of neural networks underlying comprehension."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That they store too little information to be genuinely useful.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "That they make memories too accurate, preventing the normal process of forgetting.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That they cause people to share private memories inappropriately.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "31. {{31}}: H.M.'s surgery successfully controlled his epilepsy.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+      "sourceExcerptSha256": "4ff0c4b7121dcf8fba9cc0f71b68e5e25ffb81eec6eb8c50fa2f595d11b53881",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "32. {{32}}: H.M. was unable to learn new motor skills after his surgery.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+      "sourceExcerptSha256": "93cba7ec3010715fa2fcb4219672fbe342f609a6d5a5279fb95d39cbf803fb19",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: Procedural memory is primarily supported by the hippocampus.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+      "sourceExcerptSha256": "4ff0c4b7121dcf8fba9cc0f71b68e5e25ffb81eec6eb8c50fa2f595d11b53881",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Research on false memories has led to reforms in how eyewitness testimony is used in legal proceedings.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+      "sourceExcerptSha256": "4c3248da6f45b99c7d6f713ebf461c00d471307a222773070ba6ca570c29a09d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Social memory is always an accurate record of historical events.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "The social dimension of memory is equally important. Psychologists distinguish between individual memory and collective or social memory: the shared narratives through which communities, nations, and cultures make sense of their past. Social memory is maintained through rituals, monuments, commemorations, and storytelling. It is also subject to political contestation: which events are remembered, how they are framed, and whose experiences are centred are never neutral questions. The ongoing debates in many countries about how history is taught in schools, and which historical figures deserve public commemoration, reflect the deep connection between collective memory and contemporary identity politics.",
+      "sourceExcerptSha256": "87fc65804a60d418d7cfc541b926eaebd6fefb916a743571b39c00cfb87a9272",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "36. {{36}}: The writer argues that digital tools are ultimately beneficial for human memory.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+      "sourceExcerptSha256": "93cba7ec3010715fa2fcb4219672fbe342f609a6d5a5279fb95d39cbf803fb19",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "episodic"
+      ],
+      "questionPrompt": "37. The hippocampus plays a critical role in forming {{37}} memories tied to specific times and places.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+      "sourceExcerptSha256": "4ff0c4b7121dcf8fba9cc0f71b68e5e25ffb81eec6eb8c50fa2f595d11b53881",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "episodic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "episodic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "how"
+      ],
+      "questionPrompt": "38. H.M.'s ability to learn motor skills despite amnesia shows a distinction between knowing {{38}} and knowing that.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+      "sourceExcerptSha256": "93cba7ec3010715fa2fcb4219672fbe342f609a6d5a5279fb95d39cbf803fb19",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "how",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "how",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "reconstructed"
+      ],
+      "questionPrompt": "39. Memories are not stored like files but are {{39}} each time they are recalled.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+      "sourceExcerptSha256": "4c3248da6f45b99c7d6f713ebf461c00d471307a222773070ba6ca570c29a09d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "reconstructed",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "reconstructed",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "storytelling"
+      ],
+      "questionPrompt": "40. Social memory is maintained through rituals, monuments, and {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Memory and Identity",
+      "sourceExcerpt": "The social dimension of memory is equally important. Psychologists distinguish between individual memory and collective or social memory: the shared narratives through which communities, nations, and cultures make sense of their past. Social memory is maintained through rituals, monuments, commemorations, and storytelling. It is also subject to political contestation: which events are remembered, how they are framed, and whose experiences are centred are never neutral questions. The ongoing debates in many countries about how history is taught in schools, and which historical figures deserve public commemoration, reflect the deep connection between collective memory and contemporary identity politics.",
+      "sourceExcerptSha256": "87fc65804a60d418d7cfc541b926eaebd6fefb916a743571b39c00cfb87a9272",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "storytelling",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "storytelling",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [
+    {
+      "skill": "listening",
+      "question": 19,
+      "before": [
+        "first",
+        "first floor"
+      ],
+      "after": [
+        "first"
+      ],
+      "reason": "Removed a redundant accepted variant that would render as first floor floor."
+    }
+  ],
+  "reviewSha256": "251730ac2ea2003c32b107397e0d864c162d5652540d0c195defd8e898bc1e0d"
+}

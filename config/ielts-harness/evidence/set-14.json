@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 14,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-14.ts",
+    "sourceSha256": "022ecd1e62f43655f1724288d02ff5f9d482c6735bce57bcbc10fa957acf217d",
+    "releaseFingerprintSha256": "7081fd72a0817fd12d7dd90cc34b31069313269e2a13c1a7134e0226a69cc57e"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+      "transcriptSha256": "5613922a9ca96261b769cb1a5795cd8f3df9951f56c8d139830a68e7784b04c1",
+      "objectiveSha256": "b09ecc673415f8d7b77d7b188f1ec0eee675f1d5750d3d4de4f95941653749f3"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+      "transcriptSha256": "5613922a9ca96261b769cb1a5795cd8f3df9951f56c8d139830a68e7784b04c1",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-14-listening-evidence.json",
+      "evidenceSha256": "b934939ccaf62354a51f68e068f05fcb05eec0789f02d051809f800ba4d6dd5f"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 70.66,
+        "endSeconds": 72.04,
+        "audiblePhrase": "Yes, it's Helen Brightwell.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 139.14,
+        "endSeconds": 144.58,
+        "audiblePhrase": "We were set on a Saturday. We originally wanted May, but in the end we've chosen June.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 231.76,
+        "endSeconds": 232.76,
+        "audiblePhrase": "Around 140.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 255.84,
+        "endSeconds": 263.2,
+        "audiblePhrase": "Good. During the wedding venue booking, I will listen carefully and check it against the notes I brought. I think the garden, as long as the weather's kind.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 270.56,
+        "endSeconds": 275,
+        "audiblePhrase": "One thing that really matters is that we'll need a vegetarian option for a lot of our guests.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 303.4,
+        "endSeconds": 306.54,
+        "audiblePhrase": "Mainly for the couple, so just the bridal suite for the first night.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 306.86,
+        "endSeconds": 317.26,
+        "audiblePhrase": "I'll pencil that in. Now let me run through our two packages. The classic package is 75 pounds per guest and includes a three course meal and all the table decorations.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 306.86,
+        "endSeconds": 317.26,
+        "audiblePhrase": "I'll pencil that in. Now let me run through our two packages. The classic package is 75 pounds per guest and includes a three course meal and all the table decorations.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 318.3,
+        "endSeconds": 326.2,
+        "audiblePhrase": "The deluxe package is 95 pounds per guest. On top of the meal, it also includes a professional photographer and an evening buffet.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 318.3,
+        "endSeconds": 326.2,
+        "audiblePhrase": "The deluxe package is 95 pounds per guest. On top of the meal, it also includes a professional photographer and an evening buffet.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 525.36,
+        "endSeconds": 557.68,
+        "audiblePhrase": "First, what you'll receive. Every participant who registers will be given a bright orange race t-shirt. Please do wear it on the day as it helps our marshals identify runners. Everyone who crosses the finish line will also receive a finisher's medal. Now, a few things that are not automatically provided. The route map is on our website for you to download. In the last section of the program, energy bars will only be handed out to those doing the longer 10 kilometer route and a timing chip is issued only to runners in the competitive race, not the fun run.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 525.36,
+        "endSeconds": 557.68,
+        "audiblePhrase": "First, what you'll receive. Every participant who registers will be given a bright orange race t-shirt. Please do wear it on the day as it helps our marshals identify runners. Everyone who crosses the finish line will also receive a finisher's medal. Now, a few things that are not automatically provided. The route map is on our website for you to download. In the last section of the program, energy bars will only be handed out to those doing the longer 10 kilometer route and a timing chip is issued only to runners in the competitive race, not the fun run.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 584.5600000000001,
+        "endSeconds": 591.2,
+        "audiblePhrase": "Now, the practical details. The run starts at 9.30 in the morning, so please arrive in good time to collect your number.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 591.76,
+        "endSeconds": 598.06,
+        "audiblePhrase": "The starting point is the main gate of Victoria Park, not the car park as some older leaflets wrongly stated.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 598.06,
+        "endSeconds": 604.36,
+        "audiblePhrase": "The route follows the river for most of the way and is completely flat, which makes it ideal for beginners.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 598.06,
+        "endSeconds": 604.36,
+        "audiblePhrase": "The route follows the river for most of the way and is completely flat, which makes it ideal for beginners.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 605.06,
+        "endSeconds": 609.9,
+        "audiblePhrase": "There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 713.74,
+        "endSeconds": 721.28,
+        "audiblePhrase": "A word on safety. The whole route is clearly marked with yellow arrows and first aid volunteers are stationed every kilometer.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 752.32,
+        "endSeconds": 757.5,
+        "audiblePhrase": "On fundraising, all the money we raise this year will go towards a new children's playground in the town.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 762.2,
+        "endSeconds": 770.4,
+        "audiblePhrase": "And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping center and walk across.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 953.24,
+        "endSeconds": 961.22,
+        "audiblePhrase": "Agreed. For the geology fieldwork, we can state the initial expectation and then test it against each observation. That will make the argument more credible.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 961.82,
+        "endSeconds": 973.4,
+        "audiblePhrase": "Good. And what's the main aim of the trip, Priya? Originally, we said collecting fossils, but actually our main goal is to measure and record the different rock layers. The sequence, basically.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 999.82,
+        "endSeconds": 1004.5,
+        "audiblePhrase": "We looked at taking the train, but in the end the department minibus works out cheaper for the whole group.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1031.46,
+        "endSeconds": 1040.56,
+        "audiblePhrase": "Speaking of which, Priya, what's the situation there? Most of it's ready, but we're short of hand lenses. There are only four for 12 students, so people will have to share.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1118.46,
+        "endSeconds": 1124.62,
+        "audiblePhrase": "I'll ask the store to lend us a few more. Now, safety. This is a coastal site, so what's the main risk?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1159.24,
+        "endSeconds": 1163.6,
+        "audiblePhrase": "First, each of you must bring sturdy boots because the rocks are very slippery.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1164.38,
+        "endSeconds": 1168.28,
+        "audiblePhrase": "Second, don't forget a waterproof as the weather there changes fast.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1169,
+        "endSeconds": 1173.7,
+        "audiblePhrase": "Third, everyone needs to complete the risk form and hand it in to me by Friday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1177.46,
+        "endSeconds": 1181.8,
+        "audiblePhrase": "Oh, and please label every rock sample you collect with its exact location.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1203.7,
+        "endSeconds": 1207.22,
+        "audiblePhrase": "Your phones are fine for photographs. Just make sure they're fully charged.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1362.82,
+        "endSeconds": 1371.7,
+        "audiblePhrase": "Good afternoon. In today's lecture, I'll trace the history of paper money from its origins in China right through to the plastic notes of the present day.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1402.66,
+        "endSeconds": 1413.12,
+        "audiblePhrase": "Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty, they began leaving their coins with trusted agents who issued them a paper receipt in exchange.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1402.66,
+        "endSeconds": 1413.12,
+        "audiblePhrase": "Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty, they began leaving their coins with trusted agents who issued them a paper receipt in exchange.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1414.12,
+        "endSeconds": 1420.28,
+        "audiblePhrase": "This early paper money was nicknamed flying money because a strong wind could easily blow it out of your hands.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1455.02,
+        "endSeconds": 1460.66,
+        "audiblePhrase": "When the traveler Marco Polo returned home and described it, many readers simply did not believe him.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1486.52,
+        "endSeconds": 1491.02,
+        "audiblePhrase": "Europe's first proper banknotes were issued in Sweden in the 17th century.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1491.96,
+        "endSeconds": 1499.74,
+        "audiblePhrase": "Unfortunately, the bank printed far too many and the notes quickly lost their value and early lesson in the danger of inflation.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1500.56,
+        "endSeconds": 1504.3,
+        "audiblePhrase": "For the next two centuries, most banknotes were backed by gold.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1594.98,
+        "endSeconds": 1600.14,
+        "audiblePhrase": "Since then, paper money has been what economists call called, fought currency,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1670.32,
+        "endSeconds": 1677.98,
+        "audiblePhrase": "Most recently, several countries have replaced paper with a thin, flexible plastic, usually a material called polymer.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "9b4a589c969dfa3ded4efc1ad9c35b9e79ff1a189987aaaddc8201a439e45766",
+      "objectiveSha256": "b09ecc673415f8d7b77d7b188f1ec0eee675f1d5750d3d4de4f95941653749f3"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economic consequences of AI automation represent a further ethical dimension. While economists debate the scale and pace of automation-driven job displacement, there is broad agreement that the transition will be disruptive for some sectors and demographics. Workers performing routine cognitive or physical tasks are most exposed; highly skilled professionals and those in creative, interpersonal, or highly variable roles are generally considered less vulnerable. The distributional consequences—who loses and who gains—depend heavily on policy responses, including investment in retraining, the reform of education systems, and the design of social safety nets capable of supporting workers through technological transitions.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example: it depends on a specific species of large bee, the orchid bee, for pollination—no other insect is large enough to access the flower. The same tree's seeds are dispersed almost exclusively by agoutis, large rodents equipped with teeth strong enough to crack the tree's extremely tough seed pods. Remove either partner from this relationship and the Brazil nut tree cannot successfully reproduce—a reminder of how profoundly interconnected rainforest species can be.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The understorey, lying between the canopy and the forest floor, is a region of deep shade and high humidity. Here, plants adapted to low-light conditions—large-leafed shrubs, climbers, and shade-tolerant palms—compete for whatever light filters through the canopy above. The forest floor itself receives as little as two percent of the sunlight that falls on the canopy, yet it is teeming with life: leaf-cutter ants harvesting vegetation, decomposer fungi breaking down fallen organic matter, and an extraordinary variety of invertebrates, amphibians, and small mammals. Warmth and moisture allow decomposition to proceed rapidly, so nutrients released from dead material are quickly taken up by shallow roots. Consequently, much of the ecosystem's fertility is held in living biomass rather than in deep, rich soil.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. Conservation responses have included the expansion of protected areas, the development of sustainable forestry practices, and payment-for-ecosystem-services schemes that compensate forest-dwelling communities for protecting the forest. Brazil's implementation of the Amazon Fund, financed largely by Norway, was associated with a dramatic reduction in deforestation rates in the 2000s, demonstrating that policy interventions can be effective when properly resourced and enforced. However, political commitment to conservation has fluctuated significantly, and the long-term protection of tropical rainforests ultimately depends on resolving the tension between the economic pressures driving deforestation and the global ecological services these forests provide.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Rainforests also perform vital services for the climate and water systems. Through photosynthesis, tropical forests absorb enormous quantities of carbon dioxide, acting as a major carbon sink. It is estimated that the Amazon rainforest alone stores around eighty to one hundred and twenty billion tonnes of carbon—a store that is being partially released as deforestation continues. Rainforests also drive regional weather patterns: through evapotranspiration, trees release vast quantities of water vapour, which condenses to form clouds and precipitation. Moisture can be recycled repeatedly as air moves across the basin, creating so-called \"flying rivers\" from the Atlantic coast towards the continental interior. These flows connect forest condition to rainfall far beyond the area where trees are removed and help sustain agriculture in southern Brazil.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The structure of a tropical rainforest is highly layered. The emergent layer, formed by the tallest trees—some reaching sixty metres or more—juts above the main forest canopy and is exposed to full sunlight, strong winds, and dramatic temperature fluctuations. These giants are inhabited by specialised animals, including harpy eagles, scarlet macaws, and various species of monkey adapted to life high above the ground. Below them, the dense canopy layer captures the vast majority of available sunlight, creating a lush closed environment where most of the forest's animal life resides.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Tropical rainforests are the most biodiverse terrestrial ecosystems on Earth. Covering approximately six percent of the planet's land surface, they are often estimated to contain more than half of the world's known plant and animal species, while many more remain undescribed. The Amazon basin alone harbours an estimated forty thousand plant species, three thousand freshwater fish species, and over thirteen hundred bird species. These totals are not distributed evenly: a single hectare may contain hundreds of tree species, while specialised organisms can occupy extremely narrow ranges. This extraordinary concentration of life is the product of a long evolutionary history, a relatively stable climate, and an intricate web of ecological relationships that have developed over tens of millions of years.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Tropical rainforests are the most biodiverse terrestrial ecosystems on Earth. Covering approximately six percent of the planet's land surface, they are often estimated to contain more than half of the world's known plant and animal species, while many more remain undescribed. The Amazon basin alone harbours an estimated forty thousand plant species, three thousand freshwater fish species, and over thirteen hundred bird species. These totals are not distributed evenly: a single hectare may contain hundreds of tree species, while specialised organisms can occupy extremely narrow ranges. This extraordinary concentration of life is the product of a long evolutionary history, a relatively stable climate, and an intricate web of ecological relationships that have developed over tens of millions of years.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The structure of a tropical rainforest is highly layered. The emergent layer, formed by the tallest trees—some reaching sixty metres or more—juts above the main forest canopy and is exposed to full sunlight, strong winds, and dramatic temperature fluctuations. These giants are inhabited by specialised animals, including harpy eagles, scarlet macaws, and various species of monkey adapted to life high above the ground. Below them, the dense canopy layer captures the vast majority of available sunlight, creating a lush closed environment where most of the forest's animal life resides.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example: it depends on a specific species of large bee, the orchid bee, for pollination—no other insect is large enough to access the flower. The same tree's seeds are dispersed almost exclusively by agoutis, large rodents equipped with teeth strong enough to crack the tree's extremely tough seed pods. Remove either partner from this relationship and the Brazil nut tree cannot successfully reproduce—a reminder of how profoundly interconnected rainforest species can be.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Rainforests also perform vital services for the climate and water systems. Through photosynthesis, tropical forests absorb enormous quantities of carbon dioxide, acting as a major carbon sink. It is estimated that the Amazon rainforest alone stores around eighty to one hundred and twenty billion tonnes of carbon—a store that is being partially released as deforestation continues. Rainforests also drive regional weather patterns: through evapotranspiration, trees release vast quantities of water vapour, which condenses to form clouds and precipitation. Moisture can be recycled repeatedly as air moves across the basin, creating so-called \"flying rivers\" from the Atlantic coast towards the continental interior. These flows connect forest condition to rainfall far beyond the area where trees are removed and help sustain agriculture in southern Brazil.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The popular belief that money evolved from barter has been questioned by economic historians and anthropologists. The barter story—in which communities traded goods directly until the difficulty of finding two people who simultaneously wanted what the other offered prompted the invention of money—is intuitively appealing but largely unsupported as a universal historical sequence. Anthropologist David Graeber argued that systems of mutual credit and social obligation often preceded coin-based economies. People in communities could keep track of debts informally, while rulers and temples recorded obligations in standard units of account. Direct barter certainly occurred, particularly between strangers or when monetary systems failed, but that does not prove that it was the normal starting point from which all money developed.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The popular belief that money evolved from barter has been questioned by economic historians and anthropologists. The barter story—in which communities traded goods directly until the difficulty of finding two people who simultaneously wanted what the other offered prompted the invention of money—is intuitively appealing but largely unsupported as a universal historical sequence. Anthropologist David Graeber argued that systems of mutual credit and social obligation often preceded coin-based economies. People in communities could keep track of debts informally, while rulers and temples recorded obligations in standard units of account. Direct barter certainly occurred, particularly between strangers or when monetary systems failed, but that does not prove that it was the normal starting point from which all money developed.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Paper money first appeared in China. During the Tang dynasty, merchants used transferable paper instruments often called \"flying money\" to avoid carrying large quantities of heavy copper coin over long distances. These began as private or official remittance and deposit arrangements rather than a general currency used in every shop. Under the Song dynasty, privately issued notes became more widespread, and the government later took control of issuance. When Marco Polo described Chinese paper money to European readers in the thirteenth century, the idea that paper backed by imperial authority could circulate as money appeared extraordinary. European countries developed banknotes much later; Sweden was the first to issue them in 1661.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Money is so fundamental to modern life that it is easy to forget that it is an invention—a social technology developed by human beings to solve the practical problems of exchange. The history of money is, in a sense, the history of a series of solutions to successive problems: how to facilitate trade between strangers, how to store value across time, how to coordinate economic activity at ever-increasing scales.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Paper money first appeared in China. During the Tang dynasty, merchants used transferable paper instruments often called \"flying money\" to avoid carrying large quantities of heavy copper coin over long distances. These began as private or official remittance and deposit arrangements rather than a general currency used in every shop. Under the Song dynasty, privately issued notes became more widespread, and the government later took control of issuance. When Marco Polo described Chinese paper money to European readers in the thirteenth century, the idea that paper backed by imperial authority could circulate as money appeared extraordinary. European countries developed banknotes much later; Sweden was the first to issue them in 1661.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+        "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The digital revolution has produced new forms of money. Electronic payments, credit cards, and digital wallets have made physical cash increasingly marginal in many economies, although most such payments still transfer claims denominated in conventional national currency. Cryptocurrency, beginning with Bitcoin in 2009, attempted to create digital money outside government and banking systems, relying instead on a decentralised computational network to validate transactions. Cryptocurrencies have attracted both enthusiastic adopters and sceptical economists who question whether assets with sharply changing prices can fulfil the core functions of money—medium of exchange, store of value, and unit of account—well enough to challenge conventional currencies at scale. Stablecoins attempt to reduce volatility by linking their value to another asset, while central bank digital currencies would remain liabilities of a public monetary authority. The technologies may look similar to users, but their issuers, guarantees, and governance differ fundamentally. Their adoption will therefore depend as much on public confidence, regulation, and ease of use as on the underlying code.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The digital revolution has produced new forms of money. Electronic payments, credit cards, and digital wallets have made physical cash increasingly marginal in many economies, although most such payments still transfer claims denominated in conventional national currency. Cryptocurrency, beginning with Bitcoin in 2009, attempted to create digital money outside government and banking systems, relying instead on a decentralised computational network to validate transactions. Cryptocurrencies have attracted both enthusiastic adopters and sceptical economists who question whether assets with sharply changing prices can fulfil the core functions of money—medium of exchange, store of value, and unit of account—well enough to challenge conventional currencies at scale. Stablecoins attempt to reduce volatility by linking their value to another asset, while central bank digital currencies would remain liabilities of a public monetary authority. The technologies may look similar to users, but their issuers, guarantees, and governance differ fundamentally. Their adoption will therefore depend as much on public confidence, regulation, and ease of use as on the underlying code.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "cc8066ab1a70e3348e68ceffdbb904b32bf0edba933a6681626e88e57ed868dd",
+      "task1ImageSha256": "b48f3714cfcb6cb09ef9c95db66eb93acf3b217561553f90c97d93f4b09043e1"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "0559727a9f9a8734c00ed09edf7897fb81936dd4c8372081e090bc36f9792845"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "b09ecc673415f8d7b77d7b188f1ec0eee675f1d5750d3d4de4f95941653749f3",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-14-objective-review.json",
+    "evidenceSha256": "fd5abd0bda788f1d7ab23402763932e0cd5f9859a484b70308942a772c9e2b4c",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-objective-key-audit-14-20"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "aaf59f3bbec1b4d1242622f661faa646096c6b06ba49f0c3daad3cbce05272c3"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "7081fd72a0817fd12d7dd90cc34b31069313269e2a13c1a7134e0226a69cc57e",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

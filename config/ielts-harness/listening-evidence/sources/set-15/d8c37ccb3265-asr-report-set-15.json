@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:02:03.719Z",
+  "set": 15,
+  "source": "src/data/mocks/ielts-set-15.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-15.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-15/ielts-listening-set-15.mp3",
+  "audioSha256": "c134adcd57d0e4bbb043695e9d5eedaf96ec5d0214117c06d66a8535ec1c013c",
+  "transcriptSha256": "47a1f8129b2e1167ddfe11300954a4e69d94c38871425ce7cf7dad575b4a57c1",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "00857c9655f8a0ca3ffa76788b1f80d17a68573a4cf9994e29fd7fae650846ea",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-15/whisper-set-15.json",
+  "asrSourceSha256": "15584fbe794cf6d102ebc17036fbb2b8564e7439fb06ce7c103ed2936ffca480",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3183,
+  "recognizedWords": 3128,
+  "editDistance": 95,
+  "wordErrorRate": 0.0298,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Hartley"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 57.36,
+      "endSeconds": 67.62,
+      "audiblePhrase": "My first name is Rebecca, of course. Could I take your surname as well? Yes, it's Hartley, that's H-A-R-T-L-E-Y."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "retirement"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 143.58,
+      "endSeconds": 155.4,
+      "audiblePhrase": "Now, what sort of event is it? A wedding, perhaps? No, nothing like that. It's a retirement party for my father. He's finishing work after 40 years."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "September"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 184.22,
+      "endSeconds": 188.96,
+      "audiblePhrase": "And when is the event taking place? It's on Saturday the 14th of September."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "45"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 246.12,
+      "endSeconds": 257.56,
+      "audiblePhrase": "Well, I first thought around 50, but a few people can't come now. So let's say 45. Let me finish the catering order by summarizing what I have recorded."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "Maple"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 278.12,
+      "endSeconds": 292.42,
+      "audiblePhrase": "And interrupt if anything sounds different. 45 it is. And do you have a venue booked already? Yes, we've hired the Maple Hall on the High Street. I know it well. Are there any special dietary requirements?"
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "vegetarian"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 318.46,
+      "endSeconds": 326.56,
+      "audiblePhrase": "Yes, several of the guests don't eat meat, so we'll need some vegetarian options. No problem, we cater for that regularly."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "3"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 326.56,
+      "endSeconds": 339.46,
+      "audiblePhrase": "Now, let me describe our menus. Our classic menu offers three dishes per person and costs 22 pounds a head. And it includes freshly brewed coffee at the end of the meal."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "coffee"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 326.56,
+      "endSeconds": 339.46,
+      "audiblePhrase": "Now, let me describe our menus. Our classic menu offers three dishes per person and costs 22 pounds a head. And it includes freshly brewed coffee at the end of the meal."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "35",
+        "£35"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 380.38,
+      "endSeconds": 392.18,
+      "audiblePhrase": "The Deluxe menu has five dishes and works out at 35 pounds per person. With that one, we also provide a celebration cake, which would suit a retirement party nicely."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "cake"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 380.38,
+      "endSeconds": 392.18,
+      "audiblePhrase": "The Deluxe menu has five dishes and works out at 35 pounds per person. With that one, we also provide a celebration cake, which would suit a retirement party nicely."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "registration"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 619.8,
+      "endSeconds": 629.32,
+      "audiblePhrase": "Now how do you actually join? For most clubs, you simply add your name to the sheet at the registration desk, which is just behind me near the entrance."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "15",
+        "£15"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 630.2,
+      "endSeconds": 637.46,
+      "audiblePhrase": "Membership isn't expensive. The annual fee used to be £20, but this year, we've reduced it to £15."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "welcome pack",
+        "pack"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 638.54,
+      "endSeconds": 646.3,
+      "audiblePhrase": "Once you've paid, every new member receives a free welcome pack containing a diary, a badge and some vouchers."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "two weeks",
+        "2 weeks"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 725.4,
+      "endSeconds": 735.14,
+      "audiblePhrase": "If you're not sure which club suits you, don't worry. Taster sessions are completely free for the first two weeks of term, so you can try several before committing."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "quiz night"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 757.5,
+      "endSeconds": 765.9,
+      "audiblePhrase": "I should also mention our biggest social event. Each year, we hold a quiz night, which is enormous fun and open to all members."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "main hall",
+        "hall"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 766.7,
+      "endSeconds": 771.74,
+      "audiblePhrase": "This year, it takes place in the main hall, and tickets go quickly, so book early."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "noticeboard",
+        "notice board"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 794.9,
+      "endSeconds": 806.38,
+      "audiblePhrase": "Finally, a couple of practical points. For a full and up-to-date list of every club, please check the notice board outside the Union office rather than relying on last year's leaflet."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "student card",
+        "card"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 806.38,
+      "endSeconds": 812,
+      "audiblePhrase": "And do remember to bring your student card to every session, as you'll need it to sign in."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "pilot"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1223.5,
+      "endSeconds": 1238.24,
+      "audiblePhrase": "Now let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analyzed statistically."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "code"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1223.5,
+      "endSeconds": 1238.24,
+      "audiblePhrase": "Now let me suggest a clear process. First, before you send it to everyone, run a small pilot with just a few students to check the questions make sense. Second, once you've collected the responses, you'll need to code the data so it can be analyzed statistically."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "patterns",
+        "pattern"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1238.9,
+      "endSeconds": 1248.14,
+      "audiblePhrase": "Then look for patterns. For instance, whether older students report more homework. After that, write up your findings and finally present your conclusions to the class."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "findings"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1238.9,
+      "endSeconds": 1248.14,
+      "audiblePhrase": "Then look for patterns. For instance, whether older students report more homework. After that, write up your findings and finally present your conclusions to the class."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "present"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1238.9,
+      "endSeconds": 1248.14,
+      "audiblePhrase": "Then look for patterns. For instance, whether older students report more homework. After that, write up your findings and finally present your conclusions to the class."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "polyps",
+        "polyp"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1426.3,
+      "endSeconds": 1432.04,
+      "audiblePhrase": "Although a coral reef looks like rock, it is in fact built by colonies of tiny animals called polyps."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "food"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1471.72,
+      "endSeconds": 1483.94,
+      "audiblePhrase": "Through photosynthesis, these algae provide the coral with food. In fact, up to 90% of the coral's energy comes from them. In return, the coral offers the algae shelter."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "colour",
+        "color"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1484.72,
+      "endSeconds": 1492.78,
+      "audiblePhrase": "The algae also give the coral its brilliant color. The reds, greens and browns we associate with healthy reefs come almost entirely from them."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "temperature"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1526.38,
+      "endSeconds": 1537.82,
+      "audiblePhrase": "The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive. An increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "weeks",
+        "week"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1526.38,
+      "endSeconds": 1537.82,
+      "audiblePhrase": "The most common trigger is a rise in sea temperature. Corals are surprisingly sensitive. An increase of just one or two degrees, if it persists for several weeks, is enough to break down the partnership."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "white"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1538.54,
+      "endSeconds": 1543.98,
+      "audiblePhrase": "When the algae are gone, the coral loses its color and turns a ghostly white. Hence the term bleaching."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "stress"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1613.52,
+      "endSeconds": 1624.38,
+      "audiblePhrase": "It is important to understand that a bleached coral is not yet dead. It is simply under severe stress, and if conditions improve quickly, the algae can return and the coral may recover."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "acidity"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1654.38,
+      "endSeconds": 1664.8,
+      "audiblePhrase": "Forming water is not the only threat. Pollution from the land and the rising acidity of the ocean as it absorbs carbon dioxide both weaken corals further."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "coastlines",
+        "coastline"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1666.08,
+      "endSeconds": 1672.2,
+      "audiblePhrase": "This matters because reefs support a quarter of all marine species and protect vulnerable coastlines from storms and erosion."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "nurseries",
+        "nursery"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1693.28,
+      "endSeconds": 1702.5,
+      "audiblePhrase": "There is, however, hope. Around the world, scientists are now growing young corals in underwater nurseries and replanting them on damaged reefs."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Fail-closed production and reuse policy for IELTS Academic Listening audio.",
+  "provider": "ElevenLabs",
+  "releaseAuthorized": false,
+  "productionScope": {
+    "replaceConfirmedMismatch": [2, 3, 4],
+    "createMissing": [13, 14, 15, 16, 17, 18, 19, 20],
+    "auditBeforeReuse": [1, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  "editorial": {
+    "partsPerSet": 4,
+    "questionsPerSet": 40,
+    "minimumExpandedWordsPerPart": 680,
+    "minimumExpandedWordsPerSet": 2800,
+    "speakerLabelsAreNotSpoken": true,
+    "completionAnswersMustAppearInTheirPart": true
+  },
+  "generation": {
+    "defaultModelId": "eleven_flash_v2_5",
+    "fallbackModelId": "eleven_multilingual_v2",
+    "creditsPerCharacter": {
+      "eleven_flash_v2_5": 0.5,
+      "eleven_multilingual_v2": 1
+    },
+    "apiPriceUsdPer1000Characters": {
+      "eleven_flash_v2_5": 0.05,
+      "eleven_multilingual_v2": 0.1
+    },
+    "budgetContingencyRatio": 0.2,
+    "maximumAutomaticAttemptsPerSegment": 2,
+    "pilotSet": 2,
+    "requireAccountSnapshot": true,
+    "requireAvailableVoiceAndMultiplierCheck": true,
+    "requireExplicitSpokenFormsForSensitiveTokens": true,
+    "writeOutsidePublicUntilQaPasses": true
+  },
+  "target": {
+    "intermediateOutputFormat": "mp3_44100_128",
+    "sampleRateHz": 44100,
+    "channels": 1,
+    "bitrate": "64k",
+    "integratedLoudnessLufs": -18,
+    "normalizationTruePeakDbfs": -2.2,
+    "maximumTruePeakDbfs": -1.5,
+    "minimumDurationSeconds": 1740,
+    "maximumDurationSeconds": 1800,
+    "minimumAudibleSeconds": 990,
+    "maximumSilenceRatio": 0.45,
+    "maximumSingleSilenceSeconds": 75,
+    "maximumTrailingSilenceSeconds": 5,
+    "conversationTurnPauseSeconds": 0.35,
+    "partTransitionPauseSeconds": 15
+  },
+  "qualityGates": [
+    "SCRIPT_VALIDATED",
+    "COSTED",
+    "PILOT_PASS",
+    "TECH_PASS",
+    "ASR_PASS",
+    "HUMAN_AUDIO_REVIEW",
+    "PUBLISH_APPROVED"
+  ]
+}

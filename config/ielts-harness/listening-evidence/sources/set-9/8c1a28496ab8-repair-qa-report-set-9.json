@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:13:21.639Z",
+  "set": 9,
+  "status": "PASS",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/ielts-listening-set-9.repaired.mp3",
+  "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+  "repairManifestSha256": "f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/asr-repair-report-set-9.json",
+    "reportSha256": "352b135694871730d89d18dcb5b0a40d7935d5d7caf8839e02c057019764184b",
+    "processExitCode": 0,
+    "wordErrorRate": 0.2167,
+    "wordErrorRateEnforced": false,
+    "completionEvidence": "33/33",
+    "missingRepairQuestions": [],
+    "missingNonRepairQuestions": []
+  },
+  "focusedRepairAsr": {
+    "windowAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/repair-window-set-9.wav",
+    "windowAudioSha256": "c34df6045b4064d233e3080926687cd55513d5781b0f946b5366c30304d91566",
+    "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-9/whisper-repair-window-set-9.json",
+    "asrSha256": "009ebedae58184c09433b5470657b2b02f2096d9022580bdf2137d6f2cafe5e6",
+    "status": "PASS",
+    "expectedWords": 43,
+    "recognizedWords": 59,
+    "editDistance": 16,
+    "wordErrorRate": 0.3721,
+    "maximumWordErrorRate": 0.08,
+    "wordErrorRateEnforced": false,
+    "completionEvidence": [
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "candidateAcceptedAnswers": [
+          "graphs",
+          "graph"
+        ],
+        "asrRecognitionVariants": [],
+        "found": true,
+        "foundOutOfOrder": false,
+        "matchKind": "exact",
+        "diagnosticStartSeconds": null,
+        "startSeconds": 3.66,
+        "endSeconds": 5.78,
+        "audiblePhrase": "For the written report, add more graphs."
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "candidateAcceptedAnswers": [
+          "sample"
+        ],
+        "asrRecognitionVariants": [],
+        "found": true,
+        "foundOutOfOrder": false,
+        "matchKind": "exact",
+        "diagnosticStartSeconds": null,
+        "startSeconds": 13.74,
+        "endSeconds": 16.46,
+        "audiblePhrase": "For future work, make your sample larger."
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "candidateAcceptedAnswers": [
+          "reliability"
+        ],
+        "asrRecognitionVariants": [],
+        "found": true,
+        "foundOutOfOrder": false,
+        "matchKind": "exact",
+        "diagnosticStartSeconds": null,
+        "startSeconds": 17,
+        "endSeconds": 20.02,
+        "audiblePhrase": "You should also check the reliability of your sources."
+      }
+    ],
+    "completionEvidenceFound": 3,
+    "completionEvidenceTotal": 3,
+    "failures": []
+  },
+  "requiredQuestions": [
+    26,
+    27,
+    28
+  ],
+  "requiredFound": true,
+  "effectiveCompletionEvidence": "33/33",
+  "releaseAuthorized": false
+}

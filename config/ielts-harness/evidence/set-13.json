@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "set": 13,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-13.ts",
+    "sourceSha256": "30e9689f14d2f3df66866cf9506ae8a8b8da9e9320481d1a518d765ae47bc11d",
+    "releaseFingerprintSha256": "27c8667def7ad6471943cb3e905acb100906ba8eab56e94d28b91f7966714241"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+      "transcriptSha256": "28c5d09499917ca11fb444b294548dc7f4b588ada93a4614c262c4deb306ea9d",
+      "objectiveSha256": "c63655ea107f49f2511672e7c4c1666e91b70dcf04c633c49dd02c0dbd015010"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+      "transcriptSha256": "28c5d09499917ca11fb444b294548dc7f4b588ada93a4614c262c4deb306ea9d",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-13-listening-evidence.json",
+      "evidenceSha256": "fe65795057791dacf815856a4fd3dcb743ed7ddd32d7a6fc2eff4dfdf5616e3e"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 51.62,
+        "endSeconds": 59.4,
+        "audiblePhrase": "Yes, it's Diana Dalton. Before we move on to the specific arrangements, I should explain how I handle a gym registration.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 130.68,
+        "endSeconds": 135.5,
+        "audiblePhrase": "Lovely. And your home address? I live at 14 Hazelwood Street.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 167.3,
+        "endSeconds": 171.92,
+        "audiblePhrase": "Well at first I thought about weight loss, but what I really want is to improve my stamina.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 216.42,
+        "endSeconds": 219.52,
+        "audiblePhrase": "How did you hear about us? A friend recommended you actually.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 251.14,
+        "endSeconds": 254.4,
+        "audiblePhrase": "Just my knee. I hurt it last year so nothing too high impact.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 285.64,
+        "endSeconds": 291.16,
+        "audiblePhrase": "Could I start on Monday? Monday's fine. Now let me tell you about our two membership plans.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 291.76,
+        "endSeconds": 298.06,
+        "audiblePhrase": "The standard plan runs on a 12 month contract at £29 a month and it includes free use of the sauna.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 291.76,
+        "endSeconds": 298.06,
+        "audiblePhrase": "The standard plan runs on a 12 month contract at £29 a month and it includes free use of the sauna.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 334.64,
+        "endSeconds": 341.56,
+        "audiblePhrase": "The premium plan is more flexible. It's a shorter six month contract but it costs £45 a month.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 342.2,
+        "endSeconds": 347.08,
+        "audiblePhrase": "With premium you also get a free towel service and two guest passes every month.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 482.26,
+        "endSeconds": 513.22,
+        "audiblePhrase": "Let me start with what is available free of charge. Throughout the terminal you'll find high speed wireless internet which is completely free and needs no password. We also run a free shuttle bus between the terminal and the Longstay car park leaving every 10 minutes from exit B. Please note that our luggage trolleys now require a £2 refundable deposit. The shower rooms in the lounge cost £8 and left luggage storage is charged by the hour so those three are not free.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 482.26,
+        "endSeconds": 513.22,
+        "audiblePhrase": "Let me start with what is available free of charge. Throughout the terminal you'll find high speed wireless internet which is completely free and needs no password. We also run a free shuttle bus between the terminal and the Longstay car park leaving every 10 minutes from exit B. Please note that our luggage trolleys now require a £2 refundable deposit. The shower rooms in the lounge cost £8 and left luggage storage is charged by the hour so those three are not free.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 342.2,
+        "endSeconds": 347.08,
+        "audiblePhrase": "With premium you also get a free towel service and two guest passes every month.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 567.88,
+        "endSeconds": 574.74,
+        "audiblePhrase": "The check-in desks for international flights are on level 2 and they open exactly 3 hours before departure.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 575.46,
+        "endSeconds": 581.38,
+        "audiblePhrase": "If you are travelling with hand luggage only you can skip the desks entirely and go straight to security.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 586.36,
+        "endSeconds": 593.76,
+        "audiblePhrase": "Each container must hold no more than 100 millilitres and all of them must fit inside a single clear plastic bag.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 586.36,
+        "endSeconds": 593.76,
+        "audiblePhrase": "Each container must hold no more than 100 millilitres and all of them must fit inside a single clear plastic bag.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 666.48,
+        "endSeconds": 669.74,
+        "audiblePhrase": "Your gate number appears roughly 40 minutes before boarding.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 669.74,
+        "endSeconds": 679.28,
+        "audiblePhrase": "If you have time the duty free shops are on your left and a quiet rest area with reclining seats is on the upper floor right next to the pharmacy.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 736.94,
+        "endSeconds": 743.94,
+        "audiblePhrase": "If you're transferring to another flight follow the purple signs to the transfer desk where staff will reprint your boarding pass.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 879.08,
+        "endSeconds": 899.64,
+        "audiblePhrase": "Hi Maya, come in. So let's talk about your tourism dissertation. Remind me of your main focus. Well, originally I wanted to look at the economic impact of tourism but after doing the reading I decided to focus on how local residents feel about tourism in their town. Their attitudes really?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 934.02,
+        "endSeconds": 943.58,
+        "audiblePhrase": "Partly because it's beautiful but mainly because visitor numbers there have grown so fast in the last five years. That rapid growth makes the tensions much easier to see.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 970.94,
+        "endSeconds": 978.58,
+        "audiblePhrase": "I did think about interviews but in the end I'm mainly using a questionnaire because I wanted responses from a large number of people.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1010.38,
+        "endSeconds": 1019.02,
+        "audiblePhrase": "The biggest problem was the response rate. A lot of people simply didn't return the form. In the end I only got about 120 completed questionnaires.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1095.6,
+        "endSeconds": 1102.62,
+        "audiblePhrase": "Interesting. Now one suggestion. Have you thought about comparing your town with a second location?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1132.98,
+        "endSeconds": 1143.96,
+        "audiblePhrase": "A comparison would really strengthen the analysis. I'd also make sure your literature review covers the idea of carrying capacity. It's central to this debate.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1143.96,
+        "endSeconds": 1151.66,
+        "audiblePhrase": "And when you write up, keep your methodology chapter detailed so the whole study could be repeated by someone else.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1176.42,
+        "endSeconds": 1188.76,
+        "audiblePhrase": "Put the full questionnaire in an appendix and just summarise the key figures in the main text. Oh and do get the whole thing proof read before you submit. Small errors cost marks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1176.42,
+        "endSeconds": 1188.76,
+        "audiblePhrase": "Put the full questionnaire in an appendix and just summarise the key figures in the main text. Oh and do get the whole thing proof read before you submit. Small errors cost marks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1182.841,
+        "endSeconds": 1186.521,
+        "audiblePhrase": "Oh, and do get the whole thing proofread before you submit.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1323.94,
+        "endSeconds": 1336.44,
+        "audiblePhrase": "Although it has no permanent human population, at any one time during the summer season, around 500 scientists and support staff live and work there.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1377.6,
+        "endSeconds": 1384.1,
+        "audiblePhrase": "Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1385,
+        "endSeconds": 1394.04,
+        "audiblePhrase": "By drilling out long cylinders of ice, called cores, researchers can measure the makeup of the atmosphere going back almost a million years.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1394.04,
+        "endSeconds": 1398.04,
+        "audiblePhrase": "This makes the ice a unique climate archive.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1431.7,
+        "endSeconds": 1443.48,
+        "audiblePhrase": "The cold, dense water that forms around the continent sinks and drives the global system of ocean currents, a process that helps to regulate temperatures worldwide.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1443.48,
+        "endSeconds": 1455.28,
+        "audiblePhrase": "And the surrounding Southern Ocean is extraordinarily rich in a small, shrimp-like creature called krill, which sits at the very base of the food chain.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1491.34,
+        "endSeconds": 1496.64,
+        "audiblePhrase": "The thin, dry, stable air makes it an excellent site for telescopes.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1504.14,
+        "endSeconds": 1512.96,
+        "audiblePhrase": "Meteorites are also far easier to find here because dark rocks stand out so clearly against the white surface.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1619.24,
+        "endSeconds": 1629.2,
+        "audiblePhrase": "The extreme cold is an obvious hazard, but the biggest practical problem for researchers is often the isolation, especially through the long, dark winter.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1678.06,
+        "endSeconds": 1686.6,
+        "audiblePhrase": "Scientists today are particularly worried about the stability of the ice because its melting would raise global sea levels dramatically.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "e7f3d19140c371d1b2310015692c9b4881de7ace6f8fb2d47cf67d0bfda07e46",
+      "objectiveSha256": "c63655ea107f49f2511672e7c4c1666e91b70dcf04c633c49dd02c0dbd015010"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Migration—the movement of people from one place to another—is among the most powerful forces shaping human societies. It is also one of the most ancient: Homo sapiens emerged in Africa approximately three hundred thousand years ago and, over tens of thousands of years, dispersed across every continent except Antarctica. The story of modern migration is continuous with this prehistoric movement, driven by the same fundamental forces: the search for safety, sustenance, and opportunity. Modern statistics, however, require careful interpretation. A migrant stock counts people living outside their country of birth at a particular time, whereas a migration flow records journeys during a period. Nor are categories always mutually exclusive: someone may move for work after first leaving home because of conflict or drought.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Contemporary migration takes many forms. Labour migration refers to the movement of workers, often from lower-income to higher-income countries, in search of better employment opportunities. The World Migration Report 2024 cites an estimate of approximately 281 million international migrants worldwide in 2020, representing about 3.6 percent of the global population. It also reports that international remittances—money sent home by migrants—totalled $831 billion in 2022. Of that sum, $647 billion went to low- and middle-income countries, far exceeding official development aid and constituting a vital economic lifeline for many households and national economies.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Forced migration, by contrast, involves movement driven by persecution, conflict, violence, or events that seriously disturb public order rather than primarily by economic calculation. The United Nations High Commissioner for Refugees reported that by the end of 2023, 117.3 million people were forcibly displaced—the highest figure then recorded. The total included 68.3 million internally displaced people, who had not crossed a national border, and 43.4 million refugees and other people needing international protection. A further 6.9 million were asylum-seekers awaiting decisions on their claims. These figures cannot simply be divided into refugees and internally displaced people, because the overall population contains several legal and statistical categories. Major refugee populations included people from Syria, Afghanistan, and Ukraine, while Russia's 2022 invasion of Ukraine produced one of the fastest displacement events in modern history.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Contemporary migration takes many forms. Labour migration refers to the movement of workers, often from lower-income to higher-income countries, in search of better employment opportunities. The World Migration Report 2024 cites an estimate of approximately 281 million international migrants worldwide in 2020, representing about 3.6 percent of the global population. It also reports that international remittances—money sent home by migrants—totalled $831 billion in 2022. Of that sum, $647 billion went to low- and middle-income countries, far exceeding official development aid and constituting a vital economic lifeline for many households and national economies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Forced migration, by contrast, involves movement driven by persecution, conflict, violence, or events that seriously disturb public order rather than primarily by economic calculation. The United Nations High Commissioner for Refugees reported that by the end of 2023, 117.3 million people were forcibly displaced—the highest figure then recorded. The total included 68.3 million internally displaced people, who had not crossed a national border, and 43.4 million refugees and other people needing international protection. A further 6.9 million were asylum-seekers awaiting decisions on their claims. These figures cannot simply be divided into refugees and internally displaced people, because the overall population contains several legal and statistical categories. Major refugee populations included people from Syria, Afghanistan, and Ukraine, while Russia's 2022 invasion of Ukraine produced one of the fastest displacement events in modern history.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Public attitudes toward migration often diverge sharply from the economic evidence. Research on perception finds that people in many countries consistently overestimate the number of migrants in their society—sometimes by a factor of three or four—and attribute to migrants higher rates of criminality and welfare dependency than empirical data support. These misperceptions have political consequences, fuelling support for restrictive immigration policies that may not align with national economic interests. Understanding and communicating the evidence on migration more effectively remains one of the significant challenges for both researchers and policymakers.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Public attitudes toward migration often diverge sharply from the economic evidence. Research on perception finds that people in many countries consistently overestimate the number of migrants in their society—sometimes by a factor of three or four—and attribute to migrants higher rates of criminality and welfare dependency than empirical data support. These misperceptions have political consequences, fuelling support for restrictive immigration policies that may not align with national economic interests. Understanding and communicating the evidence on migration more effectively remains one of the significant challenges for both researchers and policymakers.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Building a practical quantum computer has proved enormously challenging. Qubits are extraordinarily sensitive to their environment: any interaction with external factors—heat, electromagnetic radiation, even vibration—causes decoherence, a process in which the quantum state collapses prematurely. Maintaining qubits in a coherent state requires cooling them to temperatures near absolute zero, isolating them from external interference, and correcting errors that arise continuously during computation. Error correction creates a more dependable logical qubit from many imperfect physical qubits, but the overhead can be immense. A machine may therefore need thousands of physical components to protect the information represented by one logical unit. The engineering challenges involved have kept practical quantum computing elusive for decades.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. In recent years, the technology has advanced significantly. Google claimed in 2019 to have achieved \"quantum supremacy\"—demonstrating that its 53-qubit Sycamore processor had solved a specific problem in 200 seconds that would have taken the world's most powerful classical supercomputer approximately 10,000 years. IBM disputed the claim, arguing the task could be completed by a classical machine in 2.5 days with different techniques. The episode illustrated both genuine progress and the difficulty of making fair comparisons between quantum and classical systems. It also showed why a demonstration on a deliberately specialised benchmark does not establish that a machine is faster for ordinary scientific or commercial work.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Classical computers—the devices that underpin virtually every aspect of modern life—process information as sequences of bits: units that represent either a zero or a one. Quantum computers operate on fundamentally different principles. They use quantum bits, or qubits, which exploit the quantum mechanical properties of superposition and entanglement to process information in ways that are impossible for classical machines. A qubit can exist as a zero, a one, or any combination of both simultaneously—a state that collapses into a definite value only when measured. This property allows quantum computers to explore multiple computational pathways at once, offering in principle an exponential advantage over classical systems for certain categories of problem.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The social implications of a fully capable quantum computer would be profound. Shor's algorithm, if run at scale, would render most existing public-key cryptography obsolete, threatening the security of global financial systems, government communications, and personal data. Anticipating this risk, cryptographers have been developing \"post-quantum cryptography\"—encryption schemes designed to resist attack by quantum computers. The US National Institute of Standards and Technology published its first three final post-quantum cryptographic standards in 2024. Replacing vulnerable algorithms across browsers, servers, embedded devices, and long-lived records will take years, so organisations are being urged to begin the transition before a cryptographically capable quantum computer exists.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The theoretical foundations of quantum computing were laid in the 1980s, primarily by the physicist Richard Feynman, who proposed that a computer built on quantum mechanical principles could simulate quantum physical systems far more efficiently than any classical machine. The mathematician Peter Shor subsequently developed an algorithm in 1994 that would allow a sufficiently powerful quantum computer to factorise large integers exponentially faster than the best known classical algorithms—a result with profound implications for cryptography, since most internet encryption relies on the computational difficulty of this task.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The timeline for commercially viable, general-purpose quantum computing remains deeply uncertain. \"Fault-tolerant\" quantum computing—the point at which a machine can run long algorithms reliably without errors overwhelming the computation—requires error-corrected logical qubits at a scale current hardware has not reached. Present machines, often described as NISQ (Noisy Intermediate-Scale Quantum) devices, are too error-prone to outperform classical computers at most real-world tasks. Researchers also disagree about how rapidly hardware, control systems, and error-correction methods will improve. Governments, technology companies, and venture capital funds are investing large and growing sums in the field, but financial commitment does not by itself resolve the remaining technical barriers.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The most promising near-term applications of quantum computing lie in areas where the advantage over classical computers is most pronounced. Quantum simulation could revolutionise drug discovery by modelling the behaviour of molecules at quantum scales—something that is computationally intractable for classical systems at any useful level of precision. Optimisation problems—finding the best solution among an enormous number of possibilities—appear in logistics, finance, and materials science, and quantum algorithms may offer meaningful speed-ups in these areas. Quantum cryptography, which uses quantum mechanical principles to create theoretically unbreakable communication channels, is already in limited commercial use.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Classical computers—the devices that underpin virtually every aspect of modern life—process information as sequences of bits: units that represent either a zero or a one. Quantum computers operate on fundamentally different principles. They use quantum bits, or qubits, which exploit the quantum mechanical properties of superposition and entanglement to process information in ways that are impossible for classical machines. A qubit can exist as a zero, a one, or any combination of both simultaneously—a state that collapses into a definite value only when measured. This property allows quantum computers to explore multiple computational pathways at once, offering in principle an exponential advantage over classical systems for certain categories of problem.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The theoretical foundations of quantum computing were laid in the 1980s, primarily by the physicist Richard Feynman, who proposed that a computer built on quantum mechanical principles could simulate quantum physical systems far more efficiently than any classical machine. The mathematician Peter Shor subsequently developed an algorithm in 1994 that would allow a sufficiently powerful quantum computer to factorise large integers exponentially faster than the best known classical algorithms—a result with profound implications for cryptography, since most internet encryption relies on the computational difficulty of this task.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Building a practical quantum computer has proved enormously challenging. Qubits are extraordinarily sensitive to their environment: any interaction with external factors—heat, electromagnetic radiation, even vibration—causes decoherence, a process in which the quantum state collapses prematurely. Maintaining qubits in a coherent state requires cooling them to temperatures near absolute zero, isolating them from external interference, and correcting errors that arise continuously during computation. Error correction creates a more dependable logical qubit from many imperfect physical qubits, but the overhead can be immense. A machine may therefore need thousands of physical components to protect the information represented by one logical unit. The engineering challenges involved have kept practical quantum computing elusive for decades.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. In recent years, the technology has advanced significantly. Google claimed in 2019 to have achieved \"quantum supremacy\"—demonstrating that its 53-qubit Sycamore processor had solved a specific problem in 200 seconds that would have taken the world's most powerful classical supercomputer approximately 10,000 years. IBM disputed the claim, arguing the task could be completed by a classical machine in 2.5 days with different techniques. The episode illustrated both genuine progress and the difficulty of making fair comparisons between quantum and classical systems. It also showed why a demonstration on a deliberately specialised benchmark does not establish that a machine is faster for ordinary scientific or commercial work.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The most promising near-term applications of quantum computing lie in areas where the advantage over classical computers is most pronounced. Quantum simulation could revolutionise drug discovery by modelling the behaviour of molecules at quantum scales—something that is computationally intractable for classical systems at any useful level of precision. Optimisation problems—finding the best solution among an enormous number of possibilities—appear in logistics, finance, and materials science, and quantum algorithms may offer meaningful speed-ups in these areas. Quantum cryptography, which uses quantum mechanical principles to create theoretically unbreakable communication channels, is already in limited commercial use.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The social implications of a fully capable quantum computer would be profound. Shor's algorithm, if run at scale, would render most existing public-key cryptography obsolete, threatening the security of global financial systems, government communications, and personal data. Anticipating this risk, cryptographers have been developing \"post-quantum cryptography\"—encryption schemes designed to resist attack by quantum computers. The US National Institute of Standards and Technology published its first three final post-quantum cryptographic standards in 2024. Replacing vulnerable algorithms across browsers, servers, embedded devices, and long-lived records will take years, so organisations are being urged to begin the transition before a cryptographically capable quantum computer exists.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "In clinical medicine, a placebo is an inert treatment—a sugar pill, a saline injection, or a sham procedure—that contains no active pharmacological ingredient. The placebo effect refers to measurable improvement associated with receiving such a treatment and with the context surrounding it. Researchers must distinguish changes in a patient's reported symptoms from changes in the underlying disease: pain or nausea may ease even when a tumour, infection, or damaged tissue is unaffected. They must also separate a true response from natural recovery, fluctuating symptoms, and the statistical tendency for unusually severe symptoms to move back towards their average level. For most of the twentieth century, the placebo effect was regarded primarily as a nuisance variable in clinical trials—something to be subtracted from the results to identify the effect of an active drug. More recent research has made it a clinically significant phenomenon in its own right.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The magnitude of the placebo effect varies considerably depending on the condition, the context, and the manner in which the treatment is administered. In trials of antidepressants, placebo response rates are frequently between thirty and forty-five percent—high enough that some researchers have questioned whether the active benefit of many widely prescribed medications, over and above placebo, is clinically meaningful for mild to moderate depression. For pain conditions, placebo analgesia is well documented: patients receiving an inert injection have shown measurable reductions in subjective pain scores, and brain imaging studies have demonstrated that placebos activate the same endogenous opioid pathways as actual analgesic drugs. The brain, it appears, can produce its own pain-relieving chemicals in response to the expectation of relief.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The magnitude of the placebo effect varies considerably depending on the condition, the context, and the manner in which the treatment is administered. In trials of antidepressants, placebo response rates are frequently between thirty and forty-five percent—high enough that some researchers have questioned whether the active benefit of many widely prescribed medications, over and above placebo, is clinically meaningful for mild to moderate depression. For pain conditions, placebo analgesia is well documented: patients receiving an inert injection have shown measurable reductions in subjective pain scores, and brain imaging studies have demonstrated that placebos activate the same endogenous opioid pathways as actual analgesic drugs. The brain, it appears, can produce its own pain-relieving chemicals in response to the expectation of relief.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The context in which treatment is given—what researchers call the \"therapeutic encounter\"—matters enormously. Studies have shown that the same placebo produces larger effects when administered by a warm, attentive, and confident clinician compared with a detached or dismissive one. The colour, size, and number of pills influences the response: red and orange capsules tend to have greater stimulant effects, while blue and green ones are more often associated with calming. Brand-name pills are perceived as more effective than generics, even when chemically identical, and expensive treatments are judged more effective than cheap ones. These findings reveal how thoroughly patient outcomes are shaped by the meaning they attach to treatment.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "7e7f8d584c27655d6ac7be979bfedc8e29ba4fbee63cad2f0bdf74fbc41dd822",
+      "task1ImageSha256": "028019297b0e3c449c0f5c98f32309eab3ce37cfff4814015dd6c49a997cc8cf"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "eea682c91ecc5a8f7a359c84c8b333b49f7375ff55339bb38a08414cc7dc86f0"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "c63655ea107f49f2511672e7c4c1666e91b70dcf04c633c49dd02c0dbd015010",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-13-objective-review.json",
+    "evidenceSha256": "d01a2be24eddc382bb1f75cc13c1909774bf1ba7d2902f285dffc76249a70f87",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "1bdd53f8b2966a02349b319c63bb6d6089962e7bed1f95d800cabd2d5b71ec6a"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "APPROVED",
+    "releaseFingerprintSha256": "27c8667def7ad6471943cb3e905acb100906ba8eab56e94d28b91f7966714241",
+    "reviewer": {
+      "kind": "human",
+      "id": "workspace-owner"
+    },
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+  }
+}

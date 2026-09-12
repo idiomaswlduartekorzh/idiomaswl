@@ -78,7 +78,7 @@ Option B — Cedar Hall:
 • Student prefers Block A (quieter, faces the {{6}})`,
           blanks: [
             { num: 1, answers: ['8'], maxWords: 1 },
-            { num: 2, answers: ['Environmental Science', 'Environmental'], maxWords: 2 },
+            { num: 2, answers: ['Environmental Science'], maxWords: 2 },
             { num: 3, answers: ['10', 'ten'], maxWords: 1 },
             { num: 4, answers: ['campus'], maxWords: 1 },
             { num: 5, answers: ['bathroom'], maxWords: 1 },
@@ -93,9 +93,9 @@ Option B — Cedar Hall:
           groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
           headers: ['Requirement', 'Detail'],
           rows: [
-            ['Documents needed', { num: 7, answers: ['acceptance letter', 'letter'], maxWords: 2 } ],
+            ['Documents needed', { num: 7, answers: ['acceptance letter'], maxWords: 2 } ],
             ['Also needed', 'passport and bank statement'],
-            ['Send to', { num: 8, answers: ['housing@greenfield.ac.uk', 'email'], maxWords: 1 }],
+            ['Send to', { num: 8, answers: ['housing@greenfield.ac.uk'], maxWords: 1 }],
             ['Processing time', { num: 9, answers: ['three', '3'], maxWords: 1 } ],
             ['Deposit amount', { num: 10, answers: ['one month', "one month's rent"], maxWords: 3 }],
           ],
@@ -357,8 +357,8 @@ Flight timing:
             { num: 31, answers: ['magnetic'], maxWords: 1 },
             { num: 32, answers: ['disorient'], maxWords: 1 },
             { num: 33, answers: ['sun'], maxWords: 1 },
-            { num: 34, answers: ['night', 'star'], maxWords: 1 },
-            { num: 35, answers: ['landmarks', 'landmark'], maxWords: 1 },
+            { num: 34, answers: ['night'], maxWords: 1 },
+            { num: 35, answers: ['landmarks'], maxWords: 1 },
             { num: 36, answers: ['night'], maxWords: 1 },
           ],
         },
@@ -424,21 +424,21 @@ Flight timing:
       skill: 'reading',
       title: 'Reading Passage 1: The Origins of Agriculture',
       instructions: 'Read the passage and answer Questions 1–13.',
-      passage: `The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world.
+      passage: `The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world. It was not a single event with a universal starting date. Archaeologists instead find overlapping experiments in plant tending, seasonal settlement and animal management, followed much later by crops and herds whose physical characteristics show sustained human selection. Different combinations appeared in Southwest Asia, East Asia, New Guinea, Africa and the Americas, using species suited to local environments.
 
-For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. So why did people abandon this apparently successful lifestyle?
+For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. Such comparisons must be handled cautiously because recent foragers live in environments already shaped by states, markets and displaced populations. Even so, they challenge the assumption that cultivation automatically reduced effort or improved health. Farming demanded clearing, sowing, weeding, harvesting and storage, while tying households to fields that could fail. So why did people abandon this apparently successful lifestyle?
 
-The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation.
+The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation. Repeated harvesting then favoured plants with traits useful to people, such as larger seeds or seed heads that did not shatter before collection. These biological changes accumulated over generations, so neither a single harvest nor a single settlement marks an uncontested boundary between gathering and farming.
 
-Others point to population pressure as the key driver. As human groups grew larger, a territory that once supported a small foraging band could no longer do so. Cultivation offered a way to produce more food from the same area of land, even if the labour involved was considerably greater.
+Others point to population pressure as the key driver. As human groups grew larger, a territory that once supported a small foraging band could no longer do so. Cultivation offered a way to produce more food from the same area of land, even if the labour involved was considerably greater. Storage also changed the calculation. Grain could be kept between harvests, carried through a poor season and used to support a community in one place. At the same time, stored food required buildings, protection and decisions about ownership and distribution. Agriculture therefore altered social relationships as well as diets, creating new opportunities for cooperation but also for inequality and control.
 
-The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs.
+The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs. Zooarchaeologists reconstruct this process from changes in the age and sex of slaughtered animals, shifts in body size and the appearance of managed herds beyond a species' original range. As with crops, management could precede clear biological domestication by many generations.
 
-The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors.
+The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.
 
-Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems.
+Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems. Surplus did not mean that every harvest was abundant or that every person benefited equally. It meant that, across time, food producers could sustain people who were not directly engaged in obtaining food. Administrators could count stores and labour, craftspeople could work more continuously, and traders could connect settlements to distant sources of stone, metal and other materials.
 
-Today, scholars debate whether agriculture was genuinely "invented" at a single point in time, or whether it emerged gradually through a long process of environmental manipulation that is difficult to distinguish clearly from advanced foraging. What is certain is that once established, farming spread with remarkable speed, displacing or absorbing hunter-gatherer populations across most of the globe within a few thousand years.`,
+Today, scholars debate whether agriculture was genuinely "invented" at a single point in time, or whether it emerged gradually through a long process of environmental manipulation that is difficult to distinguish clearly from advanced foraging. What is certain is that once established, farming spread with remarkable speed, displacing or absorbing hunter-gatherer populations across most of the globe within a few thousand years. Its spread also followed more than one mechanism. In some places farming populations moved into new territory; elsewhere local foragers adopted selected crops, animals or techniques through exchange. The result was a patchwork of mixed economies rather than an immediate replacement of one way of life by another.`,
       questions: [
         {
           type: 'mcq',
@@ -544,19 +544,19 @@ Today, scholars debate whether agriculture was genuinely "invented" at a single 
       skill: 'reading',
       title: 'Reading Passage 2: Sleep and Memory',
       instructions: 'Read the passage and answer Questions 14–26.',
-      passage: `For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory.
+      passage: `For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory. Electrical recordings show organised changes in brain activity across the night rather than a uniform reduction in activity. Researchers can distinguish stages by characteristic rhythms, eye movements and muscle tone, and can relate those stages to different kinds of processing without assuming that any one stage acts alone.
 
-Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories.
+Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories. Experimental design matters here. A fair comparison must control the time between learning and testing, the time of day, prior sleep and interference from new experiences. Some studies therefore compare morning and evening learning, while others use carefully monitored naps to isolate a shorter period of sleep.
 
-Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing.
+Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.
 
-Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals.
+Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.
 
-The relationship between sleep and memory is bidirectional. Not only does sleep promote memory consolidation, but learning and stress can in turn affect sleep quality. Students revising for exams often report disrupted sleep, which paradoxically undermines the very consolidation they are trying to achieve through late-night study.
+The relationship between sleep and memory is bidirectional. Not only does sleep promote memory consolidation, but learning and stress can in turn affect sleep quality. Students revising for exams often report disrupted sleep, which paradoxically undermines the very consolidation they are trying to achieve through late-night study. Expectations can also complicate research: anxiety about an experiment or an unfamiliar laboratory can alter a participant's sleep. For this reason, studies increasingly combine controlled laboratory measurements with wearable monitoring in ordinary homes, accepting that each method offers a different balance between precision and realism.
 
-There is also evidence that sleep plays a role in creative problem-solving. During REM sleep, the brain appears to form unusual associations between distantly related concepts — connections that may not be accessible during waking life. A classic demonstration is the "insight problem": people who were given a difficult mathematical task and allowed to sleep before attempting it were over twice as likely to discover the hidden rule than those who worked on it continuously while awake.
+There is also evidence that sleep plays a role in creative problem-solving. During REM sleep, the brain appears to form unusual associations between distantly related concepts — connections that may not be accessible during waking life. A classic demonstration is the "insight problem": people who were given a difficult mathematical task and allowed to sleep before attempting it were over twice as likely to discover the hidden rule than those who worked on it continuously while awake. Such findings do not imply that sleep generates solutions without prior effort. The sleeper must first encounter and represent the problem, and improvement is measured statistically across groups rather than guaranteed for every individual. Sleep may reorganise available information, making a relationship easier to notice on returning to the task.
 
-The practical implications of this research are significant. School start times, shift work patterns, and medical training programmes — all areas where sleep deprivation is common — may need to be rethought in light of evidence about the cognitive costs of inadequate sleep. A growing number of researchers argue that treating sleep as expendable is not a minor lifestyle choice, but a serious public health issue.`,
+The practical implications of this research are significant. School start times, shift work patterns, and medical training programmes — all areas where sleep deprivation is common — may need to be rethought in light of evidence about the cognitive costs of inadequate sleep. Timing matters alongside total duration because sleep is regulated by both accumulated sleep pressure and the circadian system. Irregular schedules can place required wakefulness at a biological low point even when a person has spent enough hours in bed. A growing number of researchers argue that treating sleep as expendable is not a minor lifestyle choice, but a serious public health issue. Their argument concerns conditions that make adequate sleep possible as well as advice directed at individual behaviour.`,
       questions: [
         {
           type: 'mcq',
@@ -668,21 +668,21 @@ The practical implications of this research are significant. School start times,
       skill: 'reading',
       title: 'Reading Passage 3: The Future of Electric Vehicles',
       instructions: 'Read the passage and answer Questions 27–40.',
-      passage: `The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global sales of battery electric and plug-in hybrid vehicles exceeded 14 million units — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century.
+      passage: `The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global sales of battery electric and plug-in hybrid vehicles exceeded 14 million units — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century. Sales totals also conceal large regional differences. Uptake depends on vehicle prices, model availability, tax policy, fuel costs and access to charging, so rapid growth in one market cannot simply be projected onto another. The useful question is therefore not only how many EVs are sold, but what conditions allow adoption to spread beyond early buyers.
 
-The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal.
+The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal. Results vary with the size of the vehicle and battery, the distance driven, factory energy sources and assumptions about battery life. This explains why two credible studies can report different totals without necessarily disagreeing about the broad direction of the comparison. Transparent system boundaries are essential when evaluating such claims.
 
-Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns.
+Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.
 
-Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines.
+Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines. Laboratory performance must be translated into cells that can be produced consistently at automotive scale. Interfaces between solid materials, durability over repeated cycles and manufacturing yield remain central engineering problems. Announcing a prototype or target date is consequently different from demonstrating affordable mass production.
 
-The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it.
+The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it. Charger counts alone provide an incomplete measure. Drivers also need reliable equipment, compatible payment systems, clear pricing and enough power at useful locations. Network operators must anticipate demand without building expensive capacity that remains idle, while distribution grids may require upgrades where many vehicles charge at the same time.
 
-The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects.
+The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects. Before reuse, however, operators must estimate a pack's remaining health and trace how it was used. Testing, transport, disassembly and liability all affect whether a second-life project is economical. Standardised information about battery condition could make this market safer and reduce unnecessary processing.
 
-Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, new regulations require battery manufacturers to achieve minimum recycled content levels by 2030, signalling a move towards a circular economy approach.
+Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, new regulations require battery manufacturers to achieve minimum recycled content levels by 2030, signalling a move towards a circular economy approach. Recycling can recover valuable materials and reduce pressure for new extraction, but collection systems and processing capacity must grow as the first large generations of vehicle batteries reach retirement. Design choices matter too: packs that are difficult to open or whose components are poorly labelled raise both costs and safety risks.
 
-Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. An EV charged from a coal-powered grid produces more lifecycle emissions than a highly efficient petrol vehicle. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.`,
+Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. An EV charged from a coal-powered grid produces more lifecycle emissions than a highly efficient petrol vehicle. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. Charging strategy can strengthen that relationship if vehicles draw power when low-carbon generation is plentiful and avoid periods of peak demand. Policy must also consider public transport, walking, cycling and the total number and size of vehicles, since changing the powertrain alone does not solve congestion or every environmental cost. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.`,
       questions: [
         {
           type: 'mcq',
@@ -789,25 +789,33 @@ Ultimately, the success of the electric vehicle transition will depend not only 
     {
       part: 8,
       skill: 'writing',
-      title: 'Writing Tasks',
-      instructions: 'Complete both writing tasks.',
+      title: 'Writing — Task 1',
+      instructions: 'You should spend about 20 minutes on this task. Write at least 150 words.',
       questions: [
         {
           type: 'write',
           id: 'w1',
           part: 8,
           taskNumber: 1,
-          stimulusLabel: 'The line graph below shows the consumption of 4 kinds of meat in a European country from 1979 to 2004.',
+          stimulusLabel: 'The line graph below shows the consumption of fish and three kinds of meat in a European country from 1979 to 2004.',
           stimulus: '',
-          imageUrl: '/ielts/images/writing-set4-task1-meat.jpg',
+          imageUrl: '/assets/ielts/charts/set4-task1.svg',
           imageAlt: 'Line graph: consumption of chicken, beef, lamb and fish in grams per person per week, 1979–2004',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
+      ],
+    },
+    {
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Task 2',
+      instructions: 'You should spend about 40 minutes on this task. Write at least 250 words.',
+      questions: [
         {
           type: 'write',
           id: 'w2',
-          part: 8,
+          part: 9,
           taskNumber: 2,
           stimulusLabel: 'Write about the following topic:',
           stimulus: 'The best way to solve traffic congestion in cities is to provide free public transport. To what extent do you agree or disagree?',
@@ -820,43 +828,44 @@ Ultimately, the success of the electric vehicle transition will depend not only 
     // ─── SPEAKING ────────────────────────────────────────────────────────────
 
     {
-      part: 9,
+      part: 10,
       skill: 'speaking',
-      title: 'Speaking Tasks',
-      instructions: 'Complete all four speaking tasks.',
+      title: 'Speaking',
+      instructions: 'Complete all three parts of the Speaking test.',
       questions: [
         {
           type: 'speak',
           id: 'sp1',
-          part: 9,
+          part: 10,
           partNumber: 1,
-          text: 'Tell me about where you grew up. What was the area like?',
+          text: 'Part 1 — Personal questions (4–5 minutes). Answer the following questions about yourself.',
+          followUp: [
+            'Tell me about where you grew up. What was the area like?',
+            'Do you work or are you a student?',
+            'What practical skill do you use most often in daily life?',
+            'Is there a new skill you would like to learn? Why?',
+          ],
         },
         {
           type: 'speak',
           id: 'sp2',
-          part: 9,
+          part: 10,
           partNumber: 2,
-          text: 'Describe a skill you have learned that has been very useful in your life.',
+          text: 'Part 2 — Individual long turn (3–4 minutes). Prepare for 1 minute, then speak for 1–2 minutes.',
           cueCard: 'You should say:\n• what the skill is\n• when and how you learned it\n• why it has been useful to you\n\nAnd explain whether you would like to develop this skill further.',
         },
         {
           type: 'speak',
           id: 'sp3',
-          part: 9,
+          part: 10,
           partNumber: 3,
-          text: 'Why do you think some skills are considered more valuable than others in modern society?',
+          text: 'Part 3 — Two-way discussion (4–5 minutes). Discuss the following questions.',
           followUp: [
+            'Why do you think some skills are considered more valuable than others in modern society?',
             'How has technology changed the skills that people need in the workplace?',
             'Some people believe that schools should focus more on practical skills rather than academic subjects. Do you agree?',
+            'What can governments do to help people develop new skills throughout their working lives?',
           ],
-        },
-        {
-          type: 'speak',
-          id: 'sp4',
-          part: 9,
-          partNumber: 3,
-          text: 'What can governments do to help people develop new skills throughout their working lives?',
         },
       ],
     },

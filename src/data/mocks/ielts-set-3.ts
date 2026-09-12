@@ -40,7 +40,7 @@ ASSISTANT: Do you have an email address?
 
 MEMBER: Yes, it's sophie.marsh@greenmail.co.uk.
 
-ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks, or premium, which gives you twelve books and access to our digital archive.
+ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks.
 
 MEMBER: I think standard is fine for now.
 
@@ -49,6 +49,8 @@ ASSISTANT: Great. There's a one-off registration fee of two pounds.
 MEMBER: That's fine. Can I also reserve books online?
 
 ASSISTANT: Yes, with standard membership you can reserve up to three books at a time through our website.
+
+ASSISTANT: Premium membership gives you twelve books and access to our digital archive.
 
 ASSISTANT: Are you interested in any particular subject area? We can send you newsletters about new arrivals.
 
@@ -97,10 +99,10 @@ Registration fee: £{{7}}`,
           part: 1,
           qRange: [8, 10],
           groupLabel: 'Complete the table below.\nWrite ONE WORD ONLY for each answer.',
-          headers: ['Membership type', 'Books allowed', 'Extra benefit'],
+          headers: ['Membership type', 'Books allowed', 'Digital service'],
           rows: [
-            ['Standard', '8 books / 3 weeks', { num: 8, answers: ['online', 'website'], maxWords: 1 }],
-            ['Premium', { num: 9, answers: ['12', 'twelve'], maxWords: 1 }, { num: 10, answers: ['archive', 'digital'], maxWords: 1 }],
+            ['Standard', '8 books / 3 weeks', { num: 8, answers: ['website'], maxWords: 1 }],
+            ['Premium', { num: 9, answers: ['12', 'twelve'], maxWords: 1 }, { num: 10, answers: ['archive'], maxWords: 1 }],
           ],
         },
       ],
@@ -133,11 +135,11 @@ If you have questions, our helpline is open Monday to Friday, eight to six. The 
           id: 'l2-multi',
           part: 2,
           qRange: [11, 12],
-          text: 'Which TWO items can now be placed in the dry recycling bin from next month?',
+          text: 'Which TWO examples of newly accepted plastic film does the speaker mention?',
           options: [
             { letter: 'A', text: 'glass bottles' },
             { letter: 'B', text: 'food waste' },
-            { letter: 'C', text: 'plastic film' },
+            { letter: 'C', text: 'wrapping on ready meals' },
             { letter: 'D', text: 'carrier bags previously recycled at supermarkets' },
             { letter: 'E', text: 'cardboard packaging' },
           ],
@@ -192,7 +194,7 @@ Support resources
       instructions: 'You will hear a seminar discussion between a tutor and two students about urban farming. Listen and answer Questions 21–30.',
       transcript: `TUTOR: Right, let's begin. You've both looked at the reading on urban farming. What were your initial impressions?
 
-LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms, community allotments.
+LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms with stacked layers, and community allotments.
 
 ANNA: Yes. What struck me most was the potential for urban farming to address food security issues in cities. If residents can grow some of their own produce, that reduces dependence on supply chains that can be disrupted.
 
@@ -301,9 +303,9 @@ Key challenges
           blanks: [
             { num: 26, answers: ['Rooftop', 'rooftop'], maxWords: 1 },
             { num: 27, answers: ['layers'], maxWords: 1 },
-            { num: 28, answers: ['allotments', 'gardens'], maxWords: 1 },
+            { num: 28, answers: ['allotments'], maxWords: 1 },
             { num: 29, answers: ['Land', 'land'], maxWords: 1 },
-            { num: 30, answers: ['expertise', 'knowledge', 'skills'], maxWords: 1 },
+            { num: 30, answers: ['expertise'], maxWords: 1 },
           ],
         },
       ],
@@ -319,7 +321,7 @@ Key challenges
 
 The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.
 
-Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed symbols representing sounds, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.
+Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed sound symbols, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.
 
 Both systems were highly complex and required years of specialist training to master. Literacy was therefore restricted to a small professional class of scribes, who held considerable social power.
 
@@ -360,7 +362,7 @@ The Alphabet
             { num: 31, answers: ['Mesopotamia'], maxWords: 1 },
             { num: 32, answers: ['pictographic'], maxWords: 1 },
             { num: 33, answers: ['stylus'], maxWords: 1 },
-            { num: 34, answers: ['administrative', 'administration'], maxWords: 1 },
+            { num: 34, answers: ['administrative'], maxWords: 1 },
             { num: 35, answers: ['Egypt'], maxWords: 1 },
             { num: 36, answers: ['sound'], maxWords: 1 },
             { num: 37, answers: ['religious'], maxWords: 1 },
@@ -379,17 +381,19 @@ The Alphabet
       skill: 'reading',
       title: 'Reading Passage 1: The Silk Road',
       instructions: 'Read the passage and answer Questions 1–13.',
-      passage: `The Silk Road was not a single road but a vast network of overland and maritime trade routes that connected China with Central Asia, the Middle East, and eventually Europe and Africa. At its height — roughly from the second century BCE to the fifteenth century CE — it facilitated one of the most remarkable cultural and commercial exchanges in human history. Yet despite its name, silk was only one of many commodities that travelled along these routes.
+      passage: `The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.
 
-The term 'Silk Road' was coined in 1877 by the German geographer Ferdinand von Richthofen, who used it to describe the trade routes along which Chinese silk was exported westward. In reality, the routes carried an extraordinary diversity of goods: spices, porcelain, glass, cotton textiles, precious metals and gems, paper, and gunpowder all moved along the network, together with slaves and exotic animals.
+The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural "Silk Roads" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.
 
-China was the dominant exporter for much of the Silk Road's history. The country held a monopoly on silk production for centuries, jealously guarding the secret of sericulture — the cultivation of silkworms and the processing of their cocoons. Legend holds that the secret was smuggled out of China in the sixth century CE by monks who concealed silkworm eggs in hollow walking staves, finally ending the Chinese monopoly.
+Chinese states supplied highly valued silk and guarded knowledge of sericulture — the cultivation of silkworms and processing of their cocoons — for centuries. This monopoly concerned silk production knowledge, not all exports or all trade across the network. Calling China the single dominant exporter obscures a decentralised system in which Central Asian, Persian, Indian, Arab, and Mediterranean producers and merchants all contributed. Silk production eventually spread beyond China by several routes. A Byzantine account tells of monks carrying silkworm eggs west in hollow walking staves in the sixth century CE, but historians treat the episode as a transmitted story rather than complete proof of how the knowledge moved.
 
-Caravans were the primary means of overland transport. These were typically organised by merchants who hired guides, guards, and camel drivers. The Bactrian camel, native to Central Asia, was particularly prized for its ability to withstand extreme temperatures and carry heavy loads. Oasis towns along the routes — such as Samarkand, Dunhuang, and Kashgar — served as vital stopping points where merchants could rest, resupply, and trade.
+Caravans were a primary means of overland transport. Merchants hired guides, guards, handlers, and pack animals, adjusting routes to water, weather, taxes, conflict, and seasonal closures. The two-humped Bactrian camel was valued for carrying loads through cold and arid Central Asian terrain. Oasis towns such as Samarkand, Dunhuang, and Kashgar were important because they offered water, fodder, storage, lodging, markets, and links to other routes, not because they had unusually large armies. These hubs also supported translators, craftspeople, religious institutions, and officials who made exchange possible.
 
 The Silk Road was not only a conduit for goods but also for ideas, religions, technologies, and diseases. Buddhism spread from India to China, Korea, and Japan along the Silk Road. Islam reached Central Asia and later Southeast Asia through the same network. The Black Death, which devastated Europe in the fourteenth century, is believed to have travelled westward from Central Asia along trade routes.
 
-The decline of the Silk Road began in the fifteenth century, partly due to the collapse of the Mongol Empire — which had previously provided relative peace and security across Central Asia — and partly because European seafarers, beginning with the Portuguese, began developing maritime routes to Asia around the southern tip of Africa. These sea routes were faster, cheaper, and could carry far larger volumes of goods.
+Evidence for these exchanges comes from many sources rather than a single written record. Archaeologists compare coins, textiles, glass, ceramics, plant remains, inscriptions, and shipwreck cargoes with the places where materials were made. Manuscripts preserved in dry environments around Dunhuang record contracts, letters, religious texts, and several languages. Isotopic and genetic analyses can sometimes reveal the origin of animals, plants, or people, while art shows motifs adapted in new settings. Each source has limits: an imported object proves movement, but it may not identify every merchant or the precise route taken. Historians therefore reconstruct patterns by combining material evidence with documents produced by travellers, courts, monasteries, and trading communities.
+
+There was no single moment when the network closed. Fragmentation of Mongol rule reduced the relative security supporting some overland movement, while wars, new states, and taxes redirected particular corridors. From the late fifteenth century, Portuguese voyages around southern Africa established direct European maritime access to Asian markets. Ships could carry much larger cargoes than camel caravans, but sea travel was not always faster or safer, and overland exchange continued into the sixteenth century and beyond. Historians therefore describe changing commercial geography rather than a simple replacement of land by sea.
 
 Today, interest in the Silk Road has been revived by China's Belt and Road Initiative, launched in 2013, which seeks to build new infrastructure — roads, railways, ports, and pipelines — connecting China with Europe, Africa, and South Asia. Supporters see it as a new era of connectivity; critics raise concerns about debt and geopolitical influence.`,
       questions: [
@@ -406,7 +410,7 @@ China maintained a {{3}} on silk production for centuries, protecting the secret
 The Silk Road's decline began after the collapse of the {{5}} Empire and the rise of sea trade routes.`,
           blanks: [
             { num: 1, answers: ['geographer'], maxWords: 1 },
-            { num: 2, answers: ['spices', 'porcelain', 'glass'], maxWords: 1 },
+            { num: 2, answers: ['spices', 'glass'], maxWords: 1 },
             { num: 3, answers: ['monopoly'], maxWords: 1 },
             { num: 4, answers: ['camel'], maxWords: 1 },
             { num: 5, answers: ['Mongol'], maxWords: 1 },
@@ -486,17 +490,21 @@ The Silk Road's decline began after the collapse of the {{5}} Empire and the ris
       skill: 'reading',
       title: 'Reading Passage 2: Ocean Plastic Pollution',
       instructions: 'Read the passage and answer Questions 14–26.',
-      passage: `Plastic pollution has become one of the most pressing environmental issues of the twenty-first century. Nowhere is its impact more visible — or more damaging — than in the world's oceans. It is estimated that eight million metric tons of plastic enter the ocean every year, adding to an existing stock of between 150 and 200 million tons. This plastic kills marine wildlife, contaminates seafood, and degrades sensitive ecosystems, with consequences that scientists are only beginning to fully understand.
+      passage: `Plastic pollution is a major environmental problem, but global totals vary with definitions, years, and models. The OECD estimated that 6.1 million tonnes of plastic waste entered aquatic environments in 2019 and that 1.7 million tonnes flowed into the ocean that year. Other studies use different boundaries and produce higher values, so an undated claim that exactly eight million tonnes enters annually hides uncertainty. Plastic harms wildlife and habitats, creates costs for coastal communities, and occurs in seafood and human tissue. Detection alone does not establish the size of a health effect, and scientists are still distinguishing exposure from demonstrated harm.
 
-Plastic reaches the ocean through a variety of pathways. The majority comes from land, carried to sea by rivers and wind. In countries where waste management infrastructure is poor, plastic waste may be openly dumped near rivers or coastlines. Once in the ocean, plastic can drift thousands of kilometres from its source before washing up on remote beaches or accumulating in large rotating ocean currents known as gyres. The North Pacific Garbage Patch — a vast area of the Pacific Ocean with high concentrations of floating plastic — has become the most well-known example of this phenomenon.
+Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.
 
-Unlike organic waste, plastic does not biodegrade. Instead, it undergoes photodegradation: ultraviolet radiation from sunlight breaks it down into ever-smaller pieces. Fragments smaller than five millimetres are known as microplastics. These tiny particles have been found in the deepest ocean trenches, in Arctic ice, in rainwater, and in the bodies of animals across the food chain — including humans. Research suggests that microplastics can impair reproduction in fish, disrupt hormone function, and carry toxic chemicals into living tissue.
+Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.
 
 Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.
 
-Addressing ocean plastic pollution requires action at multiple levels. At the source, reducing plastic production and improving waste management in coastal nations is critical. Extended producer responsibility schemes — which make manufacturers financially responsible for the end-of-life of their products — have shown promise in some countries. At the consumer level, campaigns to reduce single-use plastics have led to measurable reductions in certain types of plastic waste.
+Measuring the problem is difficult because methods capture different fractions. A surface trawl may miss particles below its mesh size, items suspended deeper in the water, and dense polymers that sink. Beach counts are influenced by tides, storms, visitors, and cleanup schedules. River models combine observations with estimates of waste generation and transport, so uncertainty grows where monitoring is sparse. Researchers must also decide whether to report the number of particles, their mass, polymer type, or potential toxicity. Millions of tiny fragments can dominate a count while a few heavy fishing nets dominate mass. Transparent definitions and repeated sampling are therefore necessary when comparing places or judging whether policy has reduced leakage.
 
-Cleaning up plastic that is already in the ocean is far more difficult. Several organisations have deployed collection systems in ocean gyres, with mixed success. Critics note that cleanup operations may damage plankton and other marine life, and that the volumes of plastic involved make a comprehensive cleanup practically impossible. Prevention, most experts agree, is by far the more cost-effective strategy.`,
+Addressing ocean plastic pollution requires action across the product life cycle. Avoiding unnecessary products, designing items for reuse and repair, collecting waste reliably, and preventing pellet and fishing-gear loss can stop leakage. Extended producer responsibility schemes shift some financial or operational responsibility for end-of-life management to producers, but results depend on coverage, fees, enforcement, and recycling markets. Consumer measures can reduce selected single-use items, while procurement rules and product standards can change systems at larger scale. Substituting another material is not automatically beneficial unless its full environmental costs are assessed.
+
+Policy must also distinguish upstream and downstream action. Upstream measures change product design, material demand, and business models before waste exists. Downstream measures collect, sort, recycle, incinerate, or dispose of material after use. Better collection can sharply reduce leakage, yet it does not by itself slow growth in production or address additives that hinder safe recycling. Conversely, a ban on one item may have little effect if enforcement is weak or an equally disposable substitute takes its place. Effective programmes set measurable goals, publish material-flow data, and assign costs and responsibilities across producers, retailers, consumers, and public authorities.
+
+Cleaning up plastic already in the ocean is far more difficult. Beach and harbour collection can remove accessible debris and identify local sources, but open-ocean systems face storms, maintenance, fuel use, bycatch risk, and dispersed microplastics. They cannot capture plastic on the seabed or particles continually arriving from rivers. Cleanup can complement source control but cannot substitute for it. Comparable monitoring is essential; otherwise a change in measured debris may reflect different nets, locations, or particle-size thresholds rather than a real improvement. Prevention and accountable waste systems remain the central strategy.`,
       questions: [
         {
           type: 'mcq',
@@ -512,7 +520,7 @@ Cleaning up plastic that is already in the ocean is far more difficult. Several 
           part: 6,
           text: 'Most ocean plastic comes from land sources.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -536,7 +544,7 @@ Cleaning up plastic that is already in the ocean is far more difficult. Several 
           part: 6,
           text: 'Extended producer responsibility schemes have been trialled in some countries.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'formgroup',
@@ -545,13 +553,13 @@ Cleaning up plastic that is already in the ocean is far more difficult. Several 
           qRange: [19, 23],
           groupLabel: 'Complete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.',
           title: 'Ocean Plastic — Key Facts',
-          template: `• Approximately {{19}} million metric tons of plastic enter the ocean each year.
-• Plastic accumulates in large ocean {{20}} called gyres.
+          template: `• The OECD estimated that {{19}} million tonnes of plastic flowed into the ocean in 2019.
+• Ocean {{20}} can move plastic thousands of kilometres.
 • Plastic is broken down by ultraviolet light through {{21}}.
 • Fragments smaller than 5mm are called {{22}}.
 • Microplastics can disrupt {{23}} function in living organisms.`,
           blanks: [
-            { num: 19, answers: ['eight', '8'], maxWords: 1 },
+            { num: 19, answers: ['1.7'], maxWords: 1 },
             { num: 20, answers: ['currents'], maxWords: 1 },
             { num: 21, answers: ['photodegradation'], maxWords: 1 },
             { num: 22, answers: ['microplastics'], maxWords: 1 },
@@ -586,19 +594,21 @@ Cleaning up plastic that is already in the ocean is far more difficult. Several 
       skill: 'reading',
       title: 'Reading Passage 3: Artificial Intelligence in Medicine',
       instructions: 'Read the passage and answer Questions 27–40.',
-      passage: `Artificial intelligence is transforming medicine at a pace that would have seemed extraordinary even a decade ago. From diagnosing cancers to predicting patient deterioration in intensive care, AI systems are demonstrating capabilities that match or, in some cases, exceed those of trained clinicians. Yet the integration of AI into healthcare raises complex questions about safety, accountability, and the human dimension of medicine that are far from resolved.
+      passage: `Artificial intelligence is increasingly used in medical research, administration, screening, imaging, and clinical decision support. In carefully defined retrospective tests, some systems have matched or exceeded specialist performance on a narrow task. Such comparisons do not show that a model can replace a clinician across different patients, hospitals, and workflows. Performance also depends on reference labels, the chosen threshold, and disease prevalence in the evaluation sample. Integration into healthcare therefore raises unresolved questions about safety, accountability, equity, privacy, and the human dimension of medicine.
 
-At the heart of current medical AI are machine learning systems, particularly those using deep learning — a technique that involves training artificial neural networks on vast datasets. In medical imaging, this has proved especially powerful. Deep learning models trained on millions of labelled X-rays, CT scans, and skin images can identify abnormalities with a sensitivity and specificity comparable to that of specialist doctors. Studies have shown that AI systems can detect diabetic retinopathy, certain cancers, and signs of pneumonia from images with high accuracy.
+Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.
 
-The potential benefits are substantial. In regions with shortages of specialist physicians, AI could extend access to diagnostic expertise. In high-income countries, it could reduce the burden on overstretched health services. AI systems do not tire, are not subject to the cognitive biases that affect human judgement, and can process vastly more data than a human clinician can review.
+The potential benefits are substantial. In regions with shortages of specialist physicians, a validated tool could extend access to diagnostic support; elsewhere it might prioritise urgent cases or reduce repetitive work. Systems can process more records than one clinician and do not experience fatigue. They are not free from bias, however. Historical decisions, missing populations, measurement choices, and optimisation targets can encode or amplify unfair patterns. Clinicians may also develop automation bias, accepting a confident recommendation and overlooking an error they would otherwise have noticed.
 
-Nevertheless, significant challenges remain. Medical AI systems can fail in unexpected ways. A model trained on images from one hospital may perform poorly when applied to images from another, due to differences in equipment, patient demographics, or imaging protocols. This is known as the distribution shift problem. AI systems may also perform well on average while performing poorly for particular subgroups — if training data is not representative, the model may be less accurate for patients from ethnic minorities or with rare conditions.
+Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.
 
-Accountability is another contested issue. When a physician makes an error, the lines of responsibility are clear. When an AI system contributes to a diagnostic mistake, the responsibility may be distributed among the software developer, the hospital that deployed the system, and the clinician who acted on its recommendation. Regulatory frameworks around the world are still grappling with how to address this.
+Accountability is another contested issue, and responsibility for ordinary clinical errors is not always as simple as the contrast with AI suggests. When a system contributes to a diagnostic mistake, responsibility may be distributed among the developer, data provider, hospital, procurement team, and clinician. Patients need a route to explanation, review, and redress. Regulators can assess a product for a specified intended use, but authorisation does not guarantee safe performance forever. Software updates, new populations, and changing workflows create a need for continuing surveillance and documented human oversight.
 
 There is also debate about whether AI can ever replicate the relational aspects of medicine. The therapeutic relationship between doctor and patient — built on empathy, trust, and communication — is widely regarded as clinically important in its own right, not merely as a vehicle for information exchange. Many clinicians and patients are concerned that an over-reliance on AI could erode this relationship, reducing medicine to a technical exercise.
 
-Despite these concerns, the clinical adoption of AI is accelerating. Regulatory agencies such as the US Food and Drug Administration have approved hundreds of AI-based medical devices. Large technology companies and healthcare organisations are investing heavily in the field. The challenge for policymakers, clinicians, and technologists is to harness AI's capabilities while establishing the governance frameworks needed to ensure that it is used safely, equitably, and in a way that preserves what is most valuable in human medicine.`,
+Clinical usefulness cannot be inferred from accuracy alone. A model may identify a pattern yet fail to improve outcomes if it alerts too often, arrives after a decision, or gives staff no practical next step. Prospective trials can measure effects on missed diagnoses, treatment time, workload, and patient harm, while qualitative research can reveal whether people understand or trust the tool. Comparison with the existing care pathway matters because a small statistical gain may not justify new costs or risks. Deployment also requires training, secure data handling, accessible explanations, and the ability to override or stop the system. These conditions make medical AI a combined technical and organisational intervention rather than a piece of software operating independently.
+
+Despite these concerns, clinical adoption is expanding. The US Food and Drug Administration maintains a public list containing hundreds of AI-enabled medical devices, most in radiology, while explaining that inclusion follows its own criteria and available information. Counting authorisations says little by itself about clinical benefit. WHO guidance calls for autonomy, safety, transparency, accountability, inclusiveness, equity, responsiveness, and sustainability throughout design and use. The challenge for policymakers, clinicians, patients, regulators, and technologists is to define intended use, measure real outcomes, monitor failures, and preserve the therapeutic relationship. Governance is part of the clinical intervention rather than paperwork added after deployment.`,
       questions: [
         {
           type: 'formgroup',
@@ -621,9 +631,9 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
             { num: 27, answers: ['deep'], maxWords: 1 },
             { num: 28, answers: ['imaging', 'images'], maxWords: 1 },
             { num: 29, answers: ['diabetic retinopathy', 'retinopathy'], maxWords: 2 },
-            { num: 30, answers: ['distribution shift', 'shift'], maxWords: 2 },
+            { num: 30, answers: ['distribution shift'], maxWords: 2 },
             { num: 31, answers: ['minorities'], maxWords: 1 },
-            { num: 32, answers: ['responsibility', 'accountability'], maxWords: 1 },
+            { num: 32, answers: ['responsibility'], maxWords: 1 },
             { num: 33, answers: ['therapeutic'], maxWords: 1 },
           ],
         },
@@ -647,7 +657,7 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
           type: 'mcq',
           id: 'r3q36',
           part: 7,
-          text: 'AI systems are free from the cognitive biases that affect human doctors.',
+          text: 'AI systems can reproduce bias contained in data and design choices.',
           options: ['YES', 'NO', 'NOT GIVEN'],
           answer: 0,
         },
@@ -675,7 +685,7 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
           groupLabel: 'Match each concern about medical AI with the correct group A–D.\nWrite the correct letter, A–D, next to questions 39–40.',
           items: [
             { num: 39, stem: 'They worry that relying on AI may reduce the human element of medicine.', answer: 'B' },
-            { num: 40, stem: 'They are working to establish governance frameworks for safe AI use.', answer: 'D' },
+            { num: 40, stem: 'They assess medical products for a specified intended use.', answer: 'C' },
           ],
           endings: [
             { letter: 'A', text: 'software developers' },

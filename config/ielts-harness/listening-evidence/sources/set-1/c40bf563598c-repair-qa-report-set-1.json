@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:11:43.304Z",
+  "set": 1,
+  "status": "PASS",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/ielts-listening-set-1.repaired.mp3",
+  "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+  "repairManifestSha256": "f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/asr-repair-report-set-1.json",
+    "reportSha256": "9a41fe0f3f6dcfb2392513540b2c26d6fca4a724d170c7bd5cc6119d730451f9",
+    "processExitCode": 1,
+    "wordErrorRate": 2.3084,
+    "wordErrorRateEnforced": false,
+    "completionEvidence": "32/33",
+    "missingRepairQuestions": [
+      17
+    ],
+    "missingNonRepairQuestions": []
+  },
+  "focusedRepairAsr": {
+    "windowAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/repair-window-set-1.wav",
+    "windowAudioSha256": "68de1e45d7b6b3a4069010abcdca328d9f6a0761ec11ab0a5a4abac9e83b6a9a",
+    "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/whisper-repair-window-set-1.json",
+    "asrSha256": "71352c33f2144835a3018e32976a738e96a8fbabe442e6a9bc02d3d63b7dfad0",
+    "status": "PASS",
+    "expectedWords": 21,
+    "recognizedWords": 55,
+    "editDistance": 34,
+    "wordErrorRate": 1.619,
+    "maximumWordErrorRate": 0.08,
+    "wordErrorRateEnforced": false,
+    "completionEvidence": [
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "candidateAcceptedAnswers": [
+          "free entry"
+        ],
+        "asrRecognitionVariants": [],
+        "found": true,
+        "foundOutOfOrder": false,
+        "matchKind": "exact",
+        "diagnosticStartSeconds": null,
+        "startSeconds": 8.3,
+        "endSeconds": 11.86,
+        "audiblePhrase": "Gold Members receive free entry to all LP clubs."
+      }
+    ],
+    "completionEvidenceFound": 1,
+    "completionEvidenceTotal": 1,
+    "failures": []
+  },
+  "requiredQuestions": [
+    17
+  ],
+  "requiredFound": true,
+  "effectiveCompletionEvidence": "33/33",
+  "releaseAuthorized": false
+}

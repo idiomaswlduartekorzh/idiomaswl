@@ -1,0 +1,3555 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 17,
+  "mockId": "set-17",
+  "contentVersionAtReview": "ielts-set-17-v3",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "16abac66ef7747b3f04130a9c6f8d2f9c3136b16e755874900d0463164bb7a62",
+    "listeningMaterialSha256": "dce1e6caeb478478d765428b2be4cf9d38096efb5820ffa07e1b423db1ea8458",
+    "readingMaterialSha256": "ca7d5ab680d3ea3efcc63e0b9fc3960863c1dc5f2a890acfc057b2d1a4e8d5f1",
+    "objectiveMaterialSha256": "fc111234ebb55b9b6e73d5434b5dcc06284be8fc7684c4dbfe54e58fa0ed4537"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Maple",
+        "maple"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "evenings",
+        "evening"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "roof"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "fence"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "afternoon"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "neighbour",
+        "neighbor"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "two",
+        "2"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "parts",
+        "part"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "30",
+        "£30"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "labour",
+        "labor"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. a rooftop café",
+        "B": "B. a gift shop",
+        "C": "C. an audio guide app",
+        "D": "D. a workshop room for children",
+        "E": "E. a members lounge"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "90",
+        "ninety"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "flash"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "lockers",
+        "locker"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "landscape"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "auction"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "path"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "donated"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "discount"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "how diet affects sprinting speed",
+        "how sleep affects reaction times",
+        "how exercise affects sleep quality"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "complete beginners at sport",
+        "university students who compete in sport",
+        "professional athletes"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "getting participants to attend at the same time each day",
+        "faulty software recording the wrong times",
+        "finding enough volunteers"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "less sleep always slows reaction times",
+        "fitness may protect against short-term sleep loss",
+        "beginners react faster than expected"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "increasing the sample size",
+        "buying new equipment",
+        "getting ethical approval"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "sample"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "caffeine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "questionnaire"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "ethical"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "Tuesday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "seventh",
+        "7th"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "clay"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "characters",
+        "character"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "Mainz"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "metal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "alloy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "ink"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "monks",
+        "monk"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "Reformation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "diagrams",
+        "diagram"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "carbonic acid"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "pteropods"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "45"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "calcification"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "refugia"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "carbon dioxide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "Lumière"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "cross-cutting"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "synchronised"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "studio system"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "auteur"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "Academy Award"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "A prehistoric ancestor of modern humans who was exceptionally rational.",
+        "An economic model assuming people always act rationally in their own interests.",
+        "A term used by behavioural economists to describe irrational consumer behaviour.",
+        "A concept developed by Daniel Kahneman to describe emotional decision-making."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The tendency to avoid all financial risk, even when expected returns are positive.",
+        "The modelling assumption that losses receive roughly twice the weight of comparable gains in classic estimates.",
+        "The preference for certain outcomes over uncertain ones, regardless of expected value.",
+        "The tendency to overestimate the probability of rare but catastrophic financial losses."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "The tendency to underestimate the cost of very large future expenditures.",
+        "A discounting rate that is consistent and predictable across all time horizons.",
+        "The pattern in which people discount the near-term future much more steeply than the distant future.",
+        "The inability to calculate compound interest accurately when making savings decisions."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It has failed to produce any measurable changes in real-world behaviour.",
+        "It has never been adopted by any national government policy team.",
+        "Some argue it overstates human irrationality and that nudges can be paternalistic.",
+        "It relies exclusively on data from laboratory settings and ignores field evidence."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "expected utility"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "present bias"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "nudging"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "structural"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Maple",
+        "maple"
+      ],
+      "questionPrompt": "Address: 15 {{1}} Avenue",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "CUSTOMER: It's 15 Maple Avenue.",
+      "sourceExcerptSha256": "d764030c94d723ac94ab96557c51a3444bed475bfaa936376fc2385334aeb7c9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Maple",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Maple",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "maple",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "evenings",
+        "evening"
+      ],
+      "questionPrompt": "Best time to call: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "CUSTOMER: In the evenings, please. I'm at work all day.",
+      "sourceExcerptSha256": "0a91171d70b06e4ae5dc1d0ade22ef71df11dea11a0f9f320c2b99d2644b4c74",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "evenings",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "evenings",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "evening",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "roof"
+      ],
+      "questionPrompt": "• Main problem: a leak coming from the {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "CUSTOMER: Well, the main thing is a leak. There's water coming in from the roof whenever it rains heavily.",
+      "sourceExcerptSha256": "4ba73d9f3956c64c85bdec8041eaaf99078dba88fa569d1a58838c49d4b165ea",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "roof",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "roof",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fence"
+      ],
+      "questionPrompt": "• Also needs to repair a broken {{4}} in the back garden",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "CUSTOMER: Yes, there's also a broken fence in the back garden that needs repairing.",
+      "sourceExcerptSha256": "b61c5451847ee5efbbaede3d5af972ffa50c3ecc73d472deb4fb688f52b28e5c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fence",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fence",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "afternoon"
+      ],
+      "questionPrompt": "• Prefers an appointment in the {{5}}, not the morning",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "AGENT: Good afternoon, Hartley Home Repairs. How can I help you today?",
+      "sourceExcerptSha256": "2f09be3ad76731a96e0821b3687912864ea8fb028f43e0c4aee12550fd4be16e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "afternoon",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "afternoon",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "neighbour",
+        "neighbor"
+      ],
+      "questionPrompt": "• Will leave a spare key with a {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "CUSTOMER: I'll leave a spare key with a neighbour. They're always in.",
+      "sourceExcerptSha256": "6b085629951a52bb83eaa4676da3338b204855c2ce20725056aa9cd38431ab14",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "neighbour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "neighbour",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "neighbor",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “neighbour”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "questionPrompt": "Basic plan | {{7}} | £45 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "AGENT: Of course. In this home-repair booking, I will distinguish what is included from what can be added, and you can stop me whenever two alternatives sound too similar.",
+      "sourceExcerptSha256": "8fc581c6ca5b53f26fa0125d84fd6c2f2f41cd2e2b9f10eba02e9dd0173198c0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “two”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "parts",
+        "part"
+      ],
+      "questionPrompt": "Basic plan | {{7}} | £45 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "AGENT: Perfect. Now let me tell you about our two maintenance plans. The basic plan includes two visits a year, with a call-out fee of £45 each time, but it does include free parts.",
+      "sourceExcerptSha256": "095242960ea500b6d1239a982a949c72ad4c84aa5d2b21d2c76c58e2e4ff457e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "parts",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "parts",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "part",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "30",
+        "£30"
+      ],
+      "questionPrompt": "Premium plan | 4 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "AGENT: The premium plan gives you four visits a year. With that plan the call-out fee drops to £30, and it also includes free labour.",
+      "sourceExcerptSha256": "7aa6f047cfeee4c591590b4f1df04ac5d6984c6b9f7343b01cec5c99b4b4b511",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "30",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "30",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£30",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "labour",
+        "labor"
+      ],
+      "questionPrompt": "Premium plan | 4 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Home Repair",
+      "sourceExcerpt": "AGENT: The premium plan gives you four visits a year. With that plan the call-out fee drops to £30, and it also includes free labour.",
+      "sourceExcerptSha256": "7aa6f047cfeee4c591590b4f1df04ac5d6984c6b9f7343b01cec5c99b4b4b511",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "labour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "labour",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "labor",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “labour”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO new features have recently been added to the gallery?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "Good morning everyone, and welcome to the Riverside Art Gallery. My name's Karen, and I'll be your guide this morning. Before we begin, let me tell you about a few improvements we've made recently. The most exciting addition is our new rooftop café, which opened last month and has wonderful views over the river. We've also created a brand-new workshop room for children on the second floor, where families can take part in hands-on activities. Now, some of you have asked about the gift shop and the members' lounge — those have been here for years — and our audio guide app, I'm afraid, is still being developed and isn't available yet.",
+      "sourceExcerptSha256": "f205c7cdf066c538e659db7a76c24854a8ccc063ce00827fadf1ca52714b1d70",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "a rooftop café"
+        },
+        {
+          "key": "D",
+          "text": "a workshop room for children"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "a gift shop",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "an audio guide app",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "a members lounge",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "90",
+        "ninety"
+      ],
+      "questionPrompt": "• The tour lasts about {{13}} minutes and ends at the main entrance.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "Right, let me explain how the tour works. The tour lasts about 90 minutes, and we'll finish back here at the main entrance. Please note that photography is allowed, but only without flash, as bright light can damage the older paintings. If you'd like to leave your bags, there are free lockers next to the cloakroom.",
+      "sourceExcerptSha256": "dfc97c56379dd8637c84d08affead6f00152525c2bc13f0f78fe76b85627b316",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "90",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "90",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "ninety",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “90”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flash"
+      ],
+      "questionPrompt": "• Photography is allowed, but only without a {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "Right, let me explain how the tour works. The tour lasts about 90 minutes, and we'll finish back here at the main entrance. Please note that photography is allowed, but only without flash, as bright light can damage the older paintings. If you'd like to leave your bags, there are free lockers next to the cloakroom.",
+      "sourceExcerptSha256": "dfc97c56379dd8637c84d08affead6f00152525c2bc13f0f78fe76b85627b316",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flash",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flash",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lockers",
+        "locker"
+      ],
+      "questionPrompt": "• Free {{15}} are available next to the cloakroom for bags.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "Right, let me explain how the tour works. The tour lasts about 90 minutes, and we'll finish back here at the main entrance. Please note that photography is allowed, but only without flash, as bright light can damage the older paintings. If you'd like to leave your bags, there are free lockers next to the cloakroom.",
+      "sourceExcerptSha256": "dfc97c56379dd8637c84d08affead6f00152525c2bc13f0f78fe76b85627b316",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lockers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lockers",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "locker",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "landscape"
+      ],
+      "questionPrompt": "• The East Wing holds the collection of {{16}} paintings.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "We'll start in the East Wing, which houses the gallery's collection of landscape paintings. The highlight there is a work called 'The Harvest', which the gallery bought at auction in 2019 for a record price. From there, we move to the sculpture garden, where I'd ask you to please stay on the path, as the grass has just been reseeded.",
+      "sourceExcerptSha256": "887e12e18b8919b2beacf94b14242d8f6c449723754c95d3c2731aa0facfe4cd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "landscape",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "landscape",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "auction"
+      ],
+      "questionPrompt": "• The painting 'The Harvest' was bought at {{17}} in 2019.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "We'll start in the East Wing, which houses the gallery's collection of landscape paintings. The highlight there is a work called 'The Harvest', which the gallery bought at auction in 2019 for a record price. From there, we move to the sculpture garden, where I'd ask you to please stay on the path, as the grass has just been reseeded.",
+      "sourceExcerptSha256": "887e12e18b8919b2beacf94b14242d8f6c449723754c95d3c2731aa0facfe4cd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "auction",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "auction",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "path"
+      ],
+      "questionPrompt": "• In the sculpture garden, visitors must stay on the {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "We'll start in the East Wing, which houses the gallery's collection of landscape paintings. The highlight there is a work called 'The Harvest', which the gallery bought at auction in 2019 for a record price. From there, we move to the sculpture garden, where I'd ask you to please stay on the path, as the grass has just been reseeded.",
+      "sourceExcerptSha256": "887e12e18b8919b2beacf94b14242d8f6c449723754c95d3c2731aa0facfe4cd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "path",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "path",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "donated"
+      ],
+      "questionPrompt": "• The portraits were {{19}} by a local collector.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "After the sculpture garden, we visit the portrait gallery on the first floor. Many of these portraits were donated by a local collector whose family owned the building in the nineteenth century. The final room on the tour is the print room, which is kept quite dark to protect the delicate drawings.",
+      "sourceExcerptSha256": "187bac43f65a593dcd0ed2d2615e517c787ed82cfda1cc60f50e8d98aac0a58d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "donated",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "donated",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "discount"
+      ],
+      "questionPrompt": "• Gallery members receive a ten percent {{20}} in the shop.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Art Gallery Guided Tour",
+      "sourceExcerpt": "At the end of the tour, you're welcome to relax in the café, and don't forget that gallery members receive a ten percent discount in the shop. If you have any questions along the way, please feel free to ask me at any time. Now, if you'd all like to follow me, we'll make our way to the East Wing.",
+      "sourceExcerptSha256": "28faad392773e684518fad68405cf58955f0fa88842018ea3f04ccb93000c9b6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "discount",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "discount",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What are the students now trying to find out?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "AMY: Well, originally we wanted to look at how diet affects sprinting speed, but we decided that was too broad. So now we're focusing specifically on how the amount of sleep athletes get affects their reaction times.",
+      "sourceExcerptSha256": "ba20ad5a662aa43008b5d9453969d13f3be8ca8a696628a5e54fb99890d57380",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "how sleep affects reaction times"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "how diet affects sprinting speed",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "how exercise affects sleep quality",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Who takes part in the study as participants?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "AMY: We also need to be careful about cause and association in the sports-science study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+      "sourceExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "university students who compete in sport"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "complete beginners at sport",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "professional athletes",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What has been the main problem so far?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "JOSH: The main problem has been getting participants to attend at the same time each day. Reaction times vary depending on the time of day, so if people come at different hours, that adds noise to the data.",
+      "sourceExcerptSha256": "99901444efd3511e4b3402cb8a045ccb4bdbfd07b9b0ae2516369dafdb81be53",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "getting participants to attend at the same time each day"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "faulty software recording the wrong times",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "finding enough volunteers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did the early results surprisingly suggest?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "AMY: This is the surprising bit. We expected that less sleep would always mean slower reactions, but actually, for the fittest participants, one bad night didn't seem to affect them much at all. It seems fitness might protect against short-term sleep loss.",
+      "sourceExcerptSha256": "15d19467e9669b6479520ad24de292c165cfda78382ae48c115720492435cecb",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "fitness may protect against short-term sleep loss"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "less sleep always slows reaction times",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "beginners react faster than expected",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the tutor say must be done before testing begins?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.",
+      "sourceExcerptSha256": "be62b6bac89de7fe70ca3b7d06403e31299b77c0ed750d0e9e33cc85c8c761e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "getting ethical approval"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "increasing the sample size",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "buying new equipment",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sample"
+      ],
+      "questionPrompt": "• The students should increase the {{26}} size.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "AMY: We also need to be careful about cause and association in the sports-science study. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+      "sourceExcerptSha256": "c4fb85be2d4da6ae25d6796513c3e0d67d482171606a1c674720d2278b32e649",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sample",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sample",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "caffeine"
+      ],
+      "questionPrompt": "• They should keep a log of each participant's {{27}} intake.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.",
+      "sourceExcerptSha256": "be62b6bac89de7fe70ca3b7d06403e31299b77c0ed750d0e9e33cc85c8c761e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "caffeine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "caffeine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "questionnaire"
+      ],
+      "questionPrompt": "• They should add a short {{28}} about sleep patterns.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.",
+      "sourceExcerptSha256": "be62b6bac89de7fe70ca3b7d06403e31299b77c0ed750d0e9e33cc85c8c761e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "questionnaire",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "questionnaire",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ethical"
+      ],
+      "questionPrompt": "• They must obtain {{29}} approval before testing.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.",
+      "sourceExcerptSha256": "be62b6bac89de7fe70ca3b7d06403e31299b77c0ed750d0e9e33cc85c8c761e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ethical",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ethical",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Tuesday"
+      ],
+      "questionPrompt": "• The relevant committee meets next {{30}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Sports-Science Study Discussion",
+      "sourceExcerpt": "TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.",
+      "sourceExcerptSha256": "be62b6bac89de7fe70ca3b7d06403e31299b77c0ed750d0e9e33cc85c8c761e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Tuesday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Tuesday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "seventh",
+        "7th"
+      ],
+      "questionPrompt": "• In China, wooden blocks were used to print texts as early as the {{31}} century.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Today I'm going to talk about one of the most influential inventions in human history: the printing press. Although we often credit Johannes Gutenberg with inventing printing in the fifteenth century, forms of printing existed long before him. In China, printers were using carved wooden blocks to reproduce texts as early as the seventh century. The Chinese also experimented with movable type made from clay, but because the Chinese writing system uses thousands of different characters, the method never became widely practical there.",
+      "sourceExcerptSha256": "98fd4365f95ea25c8a8cc0bc1e81b382cb90cf4c98e351d9e3ce4c9702f0ab20",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "seventh",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "seventh",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "7th",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “seventh”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "clay"
+      ],
+      "questionPrompt": "• The Chinese also made movable type from {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Today I'm going to talk about one of the most influential inventions in human history: the printing press. Although we often credit Johannes Gutenberg with inventing printing in the fifteenth century, forms of printing existed long before him. In China, printers were using carved wooden blocks to reproduce texts as early as the seventh century. The Chinese also experimented with movable type made from clay, but because the Chinese writing system uses thousands of different characters, the method never became widely practical there.",
+      "sourceExcerptSha256": "98fd4365f95ea25c8a8cc0bc1e81b382cb90cf4c98e351d9e3ce4c9702f0ab20",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "clay",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "clay",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "characters",
+        "character"
+      ],
+      "questionPrompt": "• Their method was impractical because the writing system has thousands of {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Today I'm going to talk about one of the most influential inventions in human history: the printing press. Although we often credit Johannes Gutenberg with inventing printing in the fifteenth century, forms of printing existed long before him. In China, printers were using carved wooden blocks to reproduce texts as early as the seventh century. The Chinese also experimented with movable type made from clay, but because the Chinese writing system uses thousands of different characters, the method never became widely practical there.",
+      "sourceExcerptSha256": "98fd4365f95ea25c8a8cc0bc1e81b382cb90cf4c98e351d9e3ce4c9702f0ab20",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "characters",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "characters",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "character",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Mainz"
+      ],
+      "questionPrompt": "• Gutenberg worked in the German city of {{34}} around 1440.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Gutenberg's crucial innovation, developed in the German city of Mainz around 1440, was movable type made from metal. He created a special alloy that was durable enough to be reused thousands of times, and he designed a mould that allowed individual letters to be produced quickly and in large quantities. He also adapted the design of the wine press, which was already common in the region, to apply even pressure to the paper.",
+      "sourceExcerptSha256": "320a858d573055c7b036762edf4bb68419b9fc5cce20daffd07bb8efbdf933f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Mainz",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Mainz",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "metal"
+      ],
+      "questionPrompt": "• He produced movable type made from {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Gutenberg's crucial innovation, developed in the German city of Mainz around 1440, was movable type made from metal. He created a special alloy that was durable enough to be reused thousands of times, and he designed a mould that allowed individual letters to be produced quickly and in large quantities. He also adapted the design of the wine press, which was already common in the region, to apply even pressure to the paper.",
+      "sourceExcerptSha256": "320a858d573055c7b036762edf4bb68419b9fc5cce20daffd07bb8efbdf933f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "metal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "metal",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "alloy"
+      ],
+      "questionPrompt": "• He created a special {{36}} that could be reused thousands of times.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Gutenberg's crucial innovation, developed in the German city of Mainz around 1440, was movable type made from metal. He created a special alloy that was durable enough to be reused thousands of times, and he designed a mould that allowed individual letters to be produced quickly and in large quantities. He also adapted the design of the wine press, which was already common in the region, to apply even pressure to the paper.",
+      "sourceExcerptSha256": "320a858d573055c7b036762edf4bb68419b9fc5cce20daffd07bb8efbdf933f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "alloy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "alloy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ink"
+      ],
+      "questionPrompt": "• He developed a new oil-based {{37}} that stuck to the metal type.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "Another essential element was ink. Gutenberg developed a new oil-based ink that stuck properly to the metal type — earlier water-based inks simply slid off. His most famous product was a printed Bible, completed around 1455, which is admired even today for the beauty of its printing.",
+      "sourceExcerptSha256": "8f1cf1a2247df21169992d7df669e78a26465fcdf69895846a065333af3a3a72",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ink",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ink",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "monks",
+        "monk"
+      ],
+      "questionPrompt": "• Before printing, books were copied by hand, usually by {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "The consequences of the printing press were enormous. Before printing, books were copied by hand, usually by monks, which made them extremely expensive and rare. After Gutenberg, the price of books fell dramatically, and literacy began to spread among ordinary people. Ideas could now travel faster than ever before. Historians often argue that the printing press made the religious movement known as the Reformation possible, because pamphlets could be produced and distributed on a massive scale.",
+      "sourceExcerptSha256": "147c6ea274df1ded6c8c68aa6f191241eae13f236c2870e562616fae2a1decfd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "monks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "monks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "monk",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Reformation"
+      ],
+      "questionPrompt": "• The press is said to have made the religious movement called the {{39}} possible.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "The consequences of the printing press were enormous. Before printing, books were copied by hand, usually by monks, which made them extremely expensive and rare. After Gutenberg, the price of books fell dramatically, and literacy began to spread among ordinary people. Ideas could now travel faster than ever before. Historians often argue that the printing press made the religious movement known as the Reformation possible, because pamphlets could be produced and distributed on a massive scale.",
+      "sourceExcerptSha256": "147c6ea274df1ded6c8c68aa6f191241eae13f236c2870e562616fae2a1decfd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Reformation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Reformation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diagrams",
+        "diagram"
+      ],
+      "questionPrompt": "• In science, accurate {{40}} could be reproduced identically in every copy.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Printing Press",
+      "sourceExcerpt": "The press also had a profound effect on science. Accurate diagrams could be reproduced identically in every copy of a book, which helped scholars across Europe share knowledge reliably. Some historians claim that without the printing press, the Scientific Revolution could not have happened. By the year 1500, presses across Europe had already produced millions of books, transforming society permanently.",
+      "sourceExcerptSha256": "0c012526e705463df2bd5960bbe0d26442d47fe3bd64f545d344a69ed93a662a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diagrams",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diagrams",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "diagram",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: The oceans have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity since industrialisation.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+      "sourceExcerptSha256": "a031b8b247b649a3f1adeab878720690957b3e087a41e6ebb741328e0215c2f6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: A drop in ocean pH from 8.2 to 8.1 represents about a twenty-six percent increase in hydrogen ion concentration.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "The scale of the change is significant. Average surface pH has fallen from approximately 8.2 before industrialisation to around 8.1 today—a change that, because the pH scale is logarithmic, represents about a twenty-six percent increase in hydrogen ion concentration. Future change depends strongly on emissions. The IPCC projects a further mean open-ocean surface decline by 2081–2100 of about 0.08 pH units under a low-emissions pathway and about 0.37 under a very high-emissions pathway, relative to 1995–2014. A single end-of-century value therefore conceals a wide range of possible outcomes and regional variation.",
+      "sourceExcerptSha256": "52ca19e48e4dddc99cfa0533e7c6196d8a4fe37eefa5af2afb81faafa0aaea9e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: All species of marine plankton are equally sensitive to changes in ocean pH.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+      "sourceExcerptSha256": "c62df5c0e7f8f848d3f048ab49b4b994b8b80f98bb99a4243f9569c71f11c7b4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Oyster hatcheries in the Pacific Northwest experienced failures that were linked to corrosive, high-carbon water.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "The economic and social stakes are substantial. FAO estimates that aquatic animal foods supplied at least one-fifth of animal-protein consumption for 3.2 billion people in 2021. Shellfish, crustaceans, forage fish, and zooplankton matter both commercially and as parts of food webs, but ecological change will not affect every fishery in the same way. In the US Pacific Northwest, oyster hatchery production began falling sharply in 2005. Monitoring later connected major larval losses with corrosive, high-carbon water drawn into coastal facilities during seasonal upwelling, and hatcheries adapted by tracking chemistry and timing water intake.",
+      "sourceExcerptSha256": "d7cfc6becea615ecddd3d7814fcd7f81e803281c4846401c7fb04b375a06ed7c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Warming, deoxygenation, and acidification sometimes produce effects that are greater together than individually.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+      "sourceExcerptSha256": "88fd2d6065b5b66ed41fa49025ecfe51568636118b2a7ee66edf5690e059c553",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Seagrass beds can locally raise pH levels by absorbing carbon dioxide.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+      "sourceExcerptSha256": "88fd2d6065b5b66ed41fa49025ecfe51568636118b2a7ee66edf5690e059c553",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: Adding alkaline substances to coastal waters can fully reverse global ocean acidification.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Mitigation of ocean acidification at a global scale ultimately requires reducing carbon dioxide emissions, since ocean chemistry is coupled to atmospheric concentrations and absorbed carbon circulates far beyond one shoreline. Local interventions—adding alkaline substances to coastal waters, protecting and restoring coastal vegetation, and reducing pollution or overharvesting—may protect valuable sites or improve ecosystem resilience, but they cannot cancel global change without emissions reduction. Deliberately adding alkalinity at large scale remains an area of research: any proposal must account for energy and material demand, ecological side effects, monitoring, and how long added carbon remains stored. Sustained observations are also essential because natural daily and seasonal variability can obscure the human-driven trend at an individual site. The scientific evidence therefore supports combining rapid emissions reduction with carefully evaluated local adaptation rather than treating either as a complete substitute for the other.",
+      "sourceExcerptSha256": "896f311f48fd083419ee3c2046edc6579dd2cf0e9dde0c9c0cff993e869440c6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carbonic acid"
+      ],
+      "questionPrompt": "8. Dissolved carbon dioxide forms {{8}} when it reacts with seawater, lowering the ocean's pH.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+      "sourceExcerptSha256": "a031b8b247b649a3f1adeab878720690957b3e087a41e6ebb741328e0215c2f6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carbonic acid",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carbonic acid",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pteropods"
+      ],
+      "questionPrompt": "9. Tiny free-swimming snails called {{9}} are a critical link in many marine food webs and can be sensitive to acidification.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+      "sourceExcerptSha256": "c62df5c0e7f8f848d3f048ab49b4b994b8b80f98bb99a4243f9569c71f11c7b4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pteropods",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pteropods",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "45"
+      ],
+      "questionPrompt": "10. Laboratory studies showed measurable dissolution of pteropod shells under near-future conditions within {{10}} days.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+      "sourceExcerptSha256": "c62df5c0e7f8f848d3f048ab49b4b994b8b80f98bb99a4243f9569c71f11c7b4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "45",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "45",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "calcification"
+      ],
+      "questionPrompt": "11. Acidification slows coral {{11}} rates by reducing the availability of carbonate ions.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Many directly exposed organisms build shells or skeletons from calcium carbonate. As pH and carbonate-ion availability fall, forming these structures can require more energy and some mineral forms become more liable to dissolve. Oysters, mussels, sea urchins, starfish, and certain plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—can be sensitive, although responses differ among species and life stages. In one laboratory study, pteropods exposed to projected near-future conditions showed measurable shell dissolution within 45 days. Coral reefs, already under severe stress from warming, face the additional challenge of slower calcification and weaker reef growth.",
+      "sourceExcerptSha256": "c62df5c0e7f8f848d3f048ab49b4b994b8b80f98bb99a4243f9569c71f11c7b4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "calcification",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "calcification",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "refugia"
+      ],
+      "questionPrompt": "12. Areas where marine conditions remain more hospitable to sensitive species are known as potential {{12}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that can be additive or synergistic, producing effects greater than a single stressor. Exposure histories, food supply, genetics, and the capacity to acclimatise also help explain why responses vary. Seagrass beds and kelp forests absorb carbon dioxide through photosynthesis and can sometimes elevate local pH. Researchers study whether such habitats can function as potential refugia—areas where conditions remain more hospitable—but the effect changes with water movement, season, and ecosystem metabolism.",
+      "sourceExcerptSha256": "88fd2d6065b5b66ed41fa49025ecfe51568636118b2a7ee66edf5690e059c553",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "refugia",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "refugia",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carbon dioxide"
+      ],
+      "questionPrompt": "13. Scientists agree that tackling ocean acidification fundamentally requires reducing {{13}} emissions.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Ocean Acidification",
+      "sourceExcerpt": "The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, they have absorbed roughly a quarter of the carbon dioxide released to the atmosphere by human activity. This uptake slows the accumulation of atmospheric carbon dioxide, but it changes seawater chemistry: dissolved carbon dioxide reacts with water to form carbonic acid, increasing hydrogen ions and progressively lowering ocean pH in a process called ocean acidification. The term can be misleading because average seawater remains alkaline; acidification describes movement down the pH scale rather than an ocean that has already become acidic.",
+      "sourceExcerptSha256": "a031b8b247b649a3f1adeab878720690957b3e087a41e6ebb741328e0215c2f6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carbon dioxide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carbon dioxide",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A description of how the arrival of sound transformed the careers of film actors",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "C. The introduction of commercially successful synchronised sound in the late 1920s transformed the industry rapidly. The Jazz Singer (1927), produced by Warner Bros, is conventionally cited as the first \"talkie\", although earlier films had experimented with recorded sound and much of this film remained silent. By the early 1930s, sound production had become the Hollywood norm. The transition created demand for performers with suitable voices and dramatic training. Some silent stars lost opportunities, while stage-trained performers gained them, although sound alone did not determine every career. It also encouraged the musical as a distinct Hollywood genre and gave dialogue writers a more central creative role.",
+      "sourceExcerptSha256": "3daa547855ea806805b66820b47c06a233229f67f966f16425638dc371287fb1",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An account of how European filmmakers challenged Hollywood conventions after World War Two",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "E. The postwar period brought significant challenges to Hollywood dominance. Television drew audiences away from cinemas, and European cinema—particularly Italian neorealism and the French New Wave—offered formal and social alternatives to polished studio entertainment. Neorealist filmmakers often shot amid postwar streets and used non-professional performers; New Wave directors exploited lighter equipment, location work, jump cuts, and self-conscious storytelling. Individual filmmakers did not all use the same methods, but figures including Vittorio De Sica, Federico Fellini, Jean-Luc Godard, and François Truffaut expanded the possibilities of personal direction. The \"auteur\" tradition—in which a director's recurring style and concerns help define a film—became influential in criticism and among later American filmmakers.",
+      "sourceExcerptSha256": "86ee32c213a42c4500293b46eaff71adb491876c4a86c74c72d6b67907ee6a4e",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "A correction to the familiar claim that one Paris screening marked the birth of cinema",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "A. Cinema became a major industry and a powerful medium for shaping and reflecting culture within little more than a century. Its origins lie in overlapping nineteenth-century experiments in photography, flexible film, cameras, peep-show machines, and projection. Inventors in France, Britain, Germany, and the United States worked simultaneously and competitively, so no single event can securely be called the birth of cinema. The Lumière brothers, Auguste and Louis, held an influential paid screening in Paris on 28 December 1895, showing short scenes such as workers leaving their factory. Yet customers had already paid to view films in Edison's Kinetoscope boxes, and projected motion pictures had been shown to paying audiences in New York and Berlin earlier in 1895. The Lumière programme became iconic partly because their compact Cinématographe and international operators helped popularise projection.",
+      "sourceExcerptSha256": "0336e1244fd0f297d0d3b1989c6d3d09bc98670ee953636e2b1bb9a9187351c9",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "Information about the growing diversity of national film industries beyond Hollywood",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "G. Cinema has long developed through exchanges among national and regional industries. India includes Hindi-language production centred in Mumbai, often called Bollywood, as well as major industries in Telugu, Tamil, Malayalam, and other languages; production totals depend on which industries and releases are counted. South Korean cinema achieved a prominent milestone when Bong Joon-ho's Parasite won the Academy Award for Best Picture in 2020, the first non-English-language film to do so. Chinese, Nigerian, Brazilian, and many other cinemas sustain substantial domestic and diasporic audiences. Streaming platforms can make subtitled films available across borders without a traditional theatrical release, while commissioning local-language productions. At the same time, catalogue decisions, territorial rights, and recommendation systems influence which works audiences actually discover, so technical availability does not guarantee equal visibility.",
+      "sourceExcerptSha256": "d3b66ccc4aabd81e45f98cdda081b5ae30441aa9ed248d98e52f54b30ae9ca6c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A description of how studios controlled every stage of film production and distribution",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "D. Hollywood consolidated its dominance of global cinema in the 1930s and 1940s through a \"studio system\" in which major studios controlled every aspect of production and distribution—writing, directing, casting, releasing, and exhibiting films through their own chains of theatres. Stars and directors worked under long-term exclusive contracts, giving studios extraordinary control over creative and financial resources. This system produced the \"Golden Age\" of Hollywood, characterised by the refinement of genre conventions—the Western, the gangster film, the screwball comedy, the musical—and by the luminous star personas of figures such as Cary Grant, Katharine Hepburn, and Humphrey Bogart.",
+      "sourceExcerptSha256": "fbae6215bc754ca16907697b0f37fdb75527dee41477edf12d6f030282b7b5ac",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of editing techniques that became fundamental to cinema grammar",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "B. The earliest films were silent and very short, often lasting less than a minute. As the medium developed through the 1900s and 1910s, filmmakers discovered techniques that are now the grammar of cinema: editing (cutting between shots to create narrative and meaning), close-ups (focusing on facial expression or detail to convey emotion), and cross-cutting (alternating between simultaneous actions in different locations to create tension). D. W. Griffith, the American director whose 1915 film The Birth of a Nation remains deeply controversial for its racist content, was nonetheless influential in systematising and demonstrating these techniques at epic length. His subsequent film Intolerance (1916) developed complex parallel narratives that influenced filmmakers for generations.",
+      "sourceExcerptSha256": "1e40e6ae0653266e0cc6c87960bb95a0a7d9b672da253f66a4ff6a889fb798f0",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "An account of how two commercially successful films reshaped Hollywood priorities",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "F. The blockbuster era, initiated by the enormous commercial success of Jaws (1975) and Star Wars (1977), reorganised Hollywood around large-budget, wide-release \"event\" films with massive marketing campaigns. Studios became more risk-averse, concentrating investment on films with established intellectual property, franchise potential, and global market appeal. The rise of home video in the 1980s and streaming services in the twenty-first century further transformed distribution models, while digital technology revolutionised both production—replacing celluloid with digital image capture—and visual effects, enabling the spectacle of contemporary superhero and science fiction films.",
+      "sourceExcerptSha256": "92163d1f6cfc03019b9ed45a3440d44470bfb108b4387c68e85371c25c143170",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Lumière"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "A. Cinema became a major industry and a powerful medium for shaping and reflecting culture within little more than a century. Its origins lie in overlapping nineteenth-century experiments in photography, flexible film, cameras, peep-show machines, and projection. Inventors in France, Britain, Germany, and the United States worked simultaneously and competitively, so no single event can securely be called the birth of cinema. The Lumière brothers, Auguste and Louis, held an influential paid screening in Paris on 28 December 1895, showing short scenes such as workers leaving their factory. Yet customers had already paid to view films in Edison's Kinetoscope boxes, and projected motion pictures had been shown to paying audiences in New York and Berlin earlier in 1895. The Lumière programme became iconic partly because their compact Cinématographe and international operators helped popularise projection.",
+      "sourceExcerptSha256": "0336e1244fd0f297d0d3b1989c6d3d09bc98670ee953636e2b1bb9a9187351c9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Lumière",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Lumière",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cross-cutting"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "B. The earliest films were silent and very short, often lasting less than a minute. As the medium developed through the 1900s and 1910s, filmmakers discovered techniques that are now the grammar of cinema: editing (cutting between shots to create narrative and meaning), close-ups (focusing on facial expression or detail to convey emotion), and cross-cutting (alternating between simultaneous actions in different locations to create tension). D. W. Griffith, the American director whose 1915 film The Birth of a Nation remains deeply controversial for its racist content, was nonetheless influential in systematising and demonstrating these techniques at epic length. His subsequent film Intolerance (1916) developed complex parallel narratives that influenced filmmakers for generations.",
+      "sourceExcerptSha256": "1e40e6ae0653266e0cc6c87960bb95a0a7d9b672da253f66a4ff6a889fb798f0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cross-cutting",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cross-cutting",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "synchronised"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "C. The introduction of commercially successful synchronised sound in the late 1920s transformed the industry rapidly. The Jazz Singer (1927), produced by Warner Bros, is conventionally cited as the first \"talkie\", although earlier films had experimented with recorded sound and much of this film remained silent. By the early 1930s, sound production had become the Hollywood norm. The transition created demand for performers with suitable voices and dramatic training. Some silent stars lost opportunities, while stage-trained performers gained them, although sound alone did not determine every career. It also encouraged the musical as a distinct Hollywood genre and gave dialogue writers a more central creative role.",
+      "sourceExcerptSha256": "3daa547855ea806805b66820b47c06a233229f67f966f16425638dc371287fb1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "synchronised",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "synchronised",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "studio system"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "D. Hollywood consolidated its dominance of global cinema in the 1930s and 1940s through a \"studio system\" in which major studios controlled every aspect of production and distribution—writing, directing, casting, releasing, and exhibiting films through their own chains of theatres. Stars and directors worked under long-term exclusive contracts, giving studios extraordinary control over creative and financial resources. This system produced the \"Golden Age\" of Hollywood, characterised by the refinement of genre conventions—the Western, the gangster film, the screwball comedy, the musical—and by the luminous star personas of figures such as Cary Grant, Katharine Hepburn, and Humphrey Bogart.",
+      "sourceExcerptSha256": "fbae6215bc754ca16907697b0f37fdb75527dee41477edf12d6f030282b7b5ac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "studio system",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "studio system",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "auteur"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "E. The postwar period brought significant challenges to Hollywood dominance. Television drew audiences away from cinemas, and European cinema—particularly Italian neorealism and the French New Wave—offered formal and social alternatives to polished studio entertainment. Neorealist filmmakers often shot amid postwar streets and used non-professional performers; New Wave directors exploited lighter equipment, location work, jump cuts, and self-conscious storytelling. Individual filmmakers did not all use the same methods, but figures including Vittorio De Sica, Federico Fellini, Jean-Luc Godard, and François Truffaut expanded the possibilities of personal direction. The \"auteur\" tradition—in which a director's recurring style and concerns help define a film—became influential in criticism and among later American filmmakers.",
+      "sourceExcerptSha256": "86ee32c213a42c4500293b46eaff71adb491876c4a86c74c72d6b67907ee6a4e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "auteur",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "auteur",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Academy Award"
+      ],
+      "questionPrompt": "An influential public commercial screening took place in Paris in 1895, organised by the {{21}} brothers, although paying audiences had seen other moving-image systems earlier. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Cinema",
+      "sourceExcerpt": "G. Cinema has long developed through exchanges among national and regional industries. India includes Hindi-language production centred in Mumbai, often called Bollywood, as well as major industries in Telugu, Tamil, Malayalam, and other languages; production totals depend on which industries and releases are counted. South Korean cinema achieved a prominent milestone when Bong Joon-ho's Parasite won the Academy Award for Best Picture in 2020, the first non-English-language film to do so. Chinese, Nigerian, Brazilian, and many other cinemas sustain substantial domestic and diasporic audiences. Streaming platforms can make subtitled films available across borders without a traditional theatrical release, while commissioning local-language productions. At the same time, catalogue decisions, territorial rights, and recommendation systems influence which works audiences actually discover, so technical availability does not guarantee equal visibility.",
+      "sourceExcerptSha256": "d3b66ccc4aabd81e45f98cdda081b5ae30441aa9ed248d98e52f54b30ae9ca6c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Academy Award",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Academy Award",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is \"homo economicus\" as described in the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "For much of the twentieth century, economists often modelled a rational actor who has stable preferences, responds consistently to available information, and chooses the option that maximises utility. This simplified figure is sometimes called homo economicus. Economists did not necessarily claim that every person literally performs perfect calculations; the assumptions supplied a tractable benchmark for analysing markets and aggregate outcomes. Models can also incorporate limited information, uncertainty, and constraints without abandoning rational choice. The benchmark becomes less informative, however, when predictable features of attention, framing, memory, or self-control systematically alter choices. Behavioural evidence asks whether an apparent anomaly is robust and whether revising an assumption improves explanation enough to justify added complexity.",
+      "sourceExcerptSha256": "7743679cbafeda96b91f897b50b69ab509915e7f6fdb0e4ed797a762c05ff6fd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "An economic model assuming people always act rationally in their own interests."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "A prehistoric ancestor of modern humans who was exceptionally rational.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "A term used by behavioural economists to describe irrational consumer behaviour.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "A concept developed by Daniel Kahneman to describe emotional decision-making.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does \"loss aversion\" mean, according to the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+      "sourceExcerptSha256": "ef9a5a1f517d4c64be2210667e37ee3d0a1dc3856e6baf14d102ca8e72640314",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The modelling assumption that losses receive roughly twice the weight of comparable gains in classic estimates."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The tendency to avoid all financial risk, even when expected returns are positive.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The preference for certain outcomes over uncertain ones, regardless of expected value.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The tendency to overestimate the probability of rare but catastrophic financial losses.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What is meant by \"hyperbolic discounting\" as described in the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+      "sourceExcerptSha256": "c2a2028472b890db15a6a4d5fc4509456e560c7afdbab1f14fc89ac2ef6db3ec",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "The pattern in which people discount the near-term future much more steeply than the distant future."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The tendency to underestimate the cost of very large future expenditures.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "A discounting rate that is consistent and predictable across all time horizons.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The inability to calculate compound interest accurately when making savings decisions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Which of the following is identified as a criticism of behavioural economics in the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+      "sourceExcerptSha256": "c8a5b849362369c81dd04050c79248b3731656743d5cd1c2459da020d3b71220",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Some argue it overstates human irrationality and that nudges can be paternalistic."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It has failed to produce any measurable changes in real-world behaviour.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "It has never been adopted by any national government policy team.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It relies exclusively on data from laboratory settings and ignores field evidence.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: The rational actor model was considered useful by economists even though it did not perfectly describe real behaviour.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "For much of the twentieth century, economists often modelled a rational actor who has stable preferences, responds consistently to available information, and chooses the option that maximises utility. This simplified figure is sometimes called homo economicus. Economists did not necessarily claim that every person literally performs perfect calculations; the assumptions supplied a tractable benchmark for analysing markets and aggregate outcomes. Models can also incorporate limited information, uncertainty, and constraints without abandoning rational choice. The benchmark becomes less informative, however, when predictable features of attention, framing, memory, or self-control systematically alter choices. Behavioural evidence asks whether an apparent anomaly is robust and whether revising an assumption improves explanation enough to justify added complexity.",
+      "sourceExcerptSha256": "7743679cbafeda96b91f897b50b69ab509915e7f6fdb0e4ed797a762c05ff6fd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Daniel Kahneman was awarded the Prize in Economic Sciences while working as a psychologist.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Behavioural economics draws on psychology, laboratory and field experiments, and other empirical methods to study systematic departures from standard predictions. Earlier ideas such as Herbert Simon's bounded rationality prepared the ground; Daniel Kahneman and Amos Tversky's work on judgement and decisions under uncertainty became especially influential from the 1970s onward. Richard Thaler connected these findings to economic problems, while Thaler and Cass Sunstein's 2008 book Nudge widened policy attention. Kahneman, a psychologist, received the 2002 Prize in Economic Sciences for integrating psychological research into economics, and Thaler received the prize in 2017 for contributions to behavioural economics. Laboratory control can identify a mechanism, while field experiments test behaviour in operational settings; neither automatically proves that an effect will be large across cultures, institutions, or time.",
+      "sourceExcerptSha256": "f2793bee1f212e2645c690f10b107705c763ccea452e2dd07c8fe76d959f6322",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: Prospect theory predicts that people evaluate outcomes solely in terms of their total accumulated wealth.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+      "sourceExcerptSha256": "ef9a5a1f517d4c64be2210667e37ee3d0a1dc3856e6baf14d102ca8e72640314",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "34. {{34}}: Present bias has been shown to be the main cause of all forms of financial irresponsibility.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+      "sourceExcerptSha256": "c2a2028472b890db15a6a4d5fc4509456e560c7afdbab1f14fc89ac2ef6db3ec",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: Some large-scale nudge trials have produced meaningful behavioural changes at relatively low implementation cost.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "The best-known policy application is \"nudging\"—altering the architecture of choice predictably without forbidding options or substantially changing economic incentives. Examples include default enrolment in pension plans with an opt-out, reminders, simplified forms, placing healthier food prominently, and energy reports that compare a household with similar neighbours. Some large-scale trials have produced meaningful changes at relatively low implementation cost; other interventions have small, null, short-lived, or context-specific effects. A default can increase enrolment without proving that every participant is better off, so evaluation should examine welfare and distribution as well as uptake. A result from one institution may not transfer unchanged to another population. Evaluation therefore needs to report costs and null results, test implementation at scale, and monitor long-term or unintended effects.",
+      "sourceExcerptSha256": "3ed5674a8dbfc69ec8e04ac05374c59e99565351649c16a5c81827abca4171c9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "36. {{36}}: The author concludes that all critics of behavioural economics are motivated by conservative political beliefs.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+      "sourceExcerptSha256": "c8a5b849362369c81dd04050c79248b3731656743d5cd1c2459da020d3b71220",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "expected utility"
+      ],
+      "questionPrompt": "37. The standard economic model of decision-making under risk, which behavioural economists challenged, is called {{37}} theory.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory evaluates risky prospects through outcomes and their utilities, commonly expressed in final wealth. Prospect theory instead models gains and losses relative to a reference point, sensitivity that diminishes with distance from that point, and decision weights that do not simply equal objective probabilities. Its value function is steeper for losses than for comparable gains, a feature called loss aversion. Classic estimates used a loss slope roughly twice the gain slope, but that ratio is a model estimate rather than a universal psychological constant. Reference dependence and loss aversion can help explain reluctance to sell assets below a salient purchase price and a preference for the status quo; they do not establish one cause for every such decision.",
+      "sourceExcerptSha256": "ef9a5a1f517d4c64be2210667e37ee3d0a1dc3856e6baf14d102ca8e72640314",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "expected utility",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "expected utility",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "present bias"
+      ],
+      "questionPrompt": "38. The strong preference for immediate rewards over future ones, even when future rewards are larger, is known as {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Present bias—the tendency to give disproportionate weight to immediate rewards—is another documented departure from time-consistent choice. Standard exponential discounting applies a constant proportional discount across time, whereas hyperbolic discounting describes preferences that can reverse as a reward becomes immediate. A person may plan to save or diet next month and then change course when spending or food is available today. Researchers use several models of this pattern, and impatience does not always imply present bias. Automatic saving, deadlines, and voluntary commitment devices can help people act on earlier plans, though their effects depend on circumstances and design. A useful diagnosis must separate self-control problems from low income, uncertainty, fees, or lack of access, since those barriers call for different remedies.",
+      "sourceExcerptSha256": "c2a2028472b890db15a6a4d5fc4509456e560c7afdbab1f14fc89ac2ef6db3ec",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Present bias",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "present bias",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nudging"
+      ],
+      "questionPrompt": "39. The design of choices to guide people toward beneficial decisions without restricting their freedom is referred to as {{39}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "The best-known policy application is \"nudging\"—altering the architecture of choice predictably without forbidding options or substantially changing economic incentives. Examples include default enrolment in pension plans with an opt-out, reminders, simplified forms, placing healthier food prominently, and energy reports that compare a household with similar neighbours. Some large-scale trials have produced meaningful changes at relatively low implementation cost; other interventions have small, null, short-lived, or context-specific effects. A default can increase enrolment without proving that every participant is better off, so evaluation should examine welfare and distribution as well as uptake. A result from one institution may not transfer unchanged to another population. Evaluation therefore needs to report costs and null results, test implementation at scale, and monitor long-term or unintended effects.",
+      "sourceExcerptSha256": "3ed5674a8dbfc69ec8e04ac05374c59e99565351649c16a5c81827abca4171c9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nudging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nudging",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "structural"
+      ],
+      "questionPrompt": "40. Critics argue that nudges may be a substitute for {{40}} reforms that address the deeper causes of poor outcomes.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Behavioural Economics",
+      "sourceExcerpt": "Behavioural economics has also attracted substantive criticism. Some economists argue that it can overstate irrationality: experience, feedback, institutions, and real stakes may change behaviour relative to a laboratory task. Others question replication, external validity, or the temptation to attach a familiar bias to evidence after the fact. Ethical critics ask who defines the citizen's interests and whether a nudge is transparent, avoidable, and accountable. The political valence is mixed: conservatives may object to government manipulation, while some progressives worry that nudges substitute for structural reforms addressing deeper social and economic determinants. These criticisms do not erase well-replicated findings; they narrow the claims that evidence can support and raise the standard for application. Behavioural insights teams now operate in many governments, but responsible use requires public justification, easy routes to opt out or complain where appropriate, and comparison with regulation, information, incentives, or structural policy rather than assuming that a nudge is always the right tool.",
+      "sourceExcerptSha256": "c8a5b849362369c81dd04050c79248b3731656743d5cd1c2459da020d3b71220",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "structural",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "structural",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q9",
+        "before": "Pteropods are highly vulnerable to acidification.",
+        "after": "Pteropods can be sensitive to acidification.",
+        "reason": "The source qualifies sensitivity by species and life stage."
+      },
+      {
+        "scope": "Reading Q10",
+        "before": "Pteropod shells begin to dissolve within 45 days.",
+        "after": "Measurable shell dissolution was observed within 45 days.",
+        "reason": "The study reports measurable dissolution by that point, not the exact onset."
+      }
+    ]
+  },
+  "reviewSha256": "9a3973b86f42efe68aa942d564c0b54daad04220b39b0e27a195110bc08e6488"
+}

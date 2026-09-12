@@ -13,13 +13,16 @@ La página pública seguía sirviendo la clave antigua (Q1 Poppyfield, Q7 1260, 
 Había además dos calculadores independientes, selección doble todo-o-nada
 y un contador visual de 39 preguntas por destreza.
 
-Esta corrección conecta resultados y persistencia al mismo calculador,
-recupera la clave aprobada del Set 1 y registra ielts-set-1-v2.
+Esta corrección conecta resultados y persistencia al mismo calculador
+y recupera la clave aprobada del Set 1. La revisión externa registra
+`ielts-set-1-v3` para aplicar Q30–Q31 de Reading en cualquier orden sin conceder
+dos puntos cuando se repite una sola respuesta. `ielts-set-1-v4` conserva ese
+scoring y corrige la paráfrasis del guion Listening Q40 para usar `expansion`.
 El cálculo por punto y los contadores son compartidos por todos los sets;
 las claves de los demás sets no se modifican ni se dan por auditadas.
-Los datos históricos v1 no se sobrescriben ni se etiquetan como v2.
+Los datos históricos v1 no se sobrescriben ni se etiquetan como versiones posteriores.
 Writing/Speaking v1 sigue siendo revisable porque sus consignas no cambiaron.
-Una pestaña antigua del Set 1 no puede enviar silenciosamente bajo v2: recibe 409.
+Una pestaña antigua del Set 1 no puede enviar silenciosamente bajo la versión vigente: recibe 409.
 Las bandas son estimaciones diagnósticas de práctica, no resultados oficiales IELTS.
 
 ## Fuentes y límites de la aprobación

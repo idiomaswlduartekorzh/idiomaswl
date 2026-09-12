@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "singleWriterRule": true,
+  "selfApprovalForbidden": true,
+  "roles": [
+    {
+      "id": "coordinator",
+      "input": ["material inventory", "evidence registry", "production policy"],
+      "output": ["frozen manifest", "set queue", "lifecycle state"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": false
+    },
+    {
+      "id": "script-auditor",
+      "input": ["four transcripts", "Q1-Q40", "objective key"],
+      "output": ["script audit", "completion support map", "sensitive-token list"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": false
+    },
+    {
+      "id": "reuse-auditor",
+      "input": ["existing MP3", "canonical spoken transcript"],
+      "output": ["KEEP", "REBUILD", "MANUAL_REVIEW"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": false
+    },
+    {
+      "id": "casting-cost-auditor",
+      "input": ["frozen manifest", "account", "available voices"],
+      "output": ["validated casting", "invoice", "credit reserve"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": false
+    },
+    {
+      "id": "tts-producer",
+      "input": ["approved manifest hash", "casting hash", "budget ceiling"],
+      "output": ["cached segments", "staged MP3", "generation log"],
+      "mayBlock": false,
+      "mayGenerate": true,
+      "mayPublish": false
+    },
+    {
+      "id": "independent-qa",
+      "input": ["staged MP3", "manifest", "generation log"],
+      "output": ["technical QA", "ASR report", "timecode candidates"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": false
+    },
+    {
+      "id": "publisher",
+      "input": ["all current PASS reports", "human audio review"],
+      "output": ["atomic public replacement", "publish receipt", "registry update"],
+      "mayBlock": true,
+      "mayGenerate": false,
+      "mayPublish": true
+    }
+  ],
+  "lifecycle": [
+    "INVENTORIED",
+    "SCRIPT_VALIDATED",
+    "REUSE_CANDIDATE",
+    "AUDIO_REQUIRED",
+    "COSTED",
+    "PILOT_READY",
+    "PILOT_PASS",
+    "GENERATED_STAGING",
+    "TECH_PASS",
+    "ASR_PASS",
+    "HUMAN_AUDIO_REVIEW",
+    "PUBLISHED"
+  ],
+  "failureStates": [
+    "SCRIPT_BLOCKED",
+    "REUSE_REJECTED",
+    "BUDGET_BLOCKED",
+    "TECH_FAILED",
+    "ASR_FAILED",
+    "HUMAN_REJECTED"
+  ]
+}

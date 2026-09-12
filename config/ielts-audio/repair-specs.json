@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Minimal, hash-bound repairs for confirmed silent gaps in otherwise reusable IELTS audio.",
+  "repairs": [
+    {
+      "set": 1,
+      "gapStartSeconds": 581.02,
+      "gapEndSeconds": 607.24,
+      "leadingSilenceSeconds": 0.8,
+      "requiredQuestions": [17],
+      "segments": [
+        {
+          "profile": "guide:british",
+          "text": "For those who use several clubs, Gold membership is the best choice. Gold members receive free entry to all LP Clubs."
+        }
+      ]
+    },
+    {
+      "set": 9,
+      "gapStartSeconds": 1009.15,
+      "gapEndSeconds": 1038.65,
+      "leadingSilenceSeconds": 0.8,
+      "requiredQuestions": [26, 27, 28],
+      "segments": [
+        {
+          "profile": "tutor:british",
+          "text": "For the written report, add more graphs. At the moment it is too text-heavy, and visuals would make the results easier to follow."
+        },
+        {
+          "profile": "student-man:british",
+          "text": "We'll add those."
+        },
+        {
+          "profile": "tutor:british",
+          "text": "For future work, make your sample larger. You should also check the reliability of your sources."
+        }
+      ]
+    }
+  ]
+}

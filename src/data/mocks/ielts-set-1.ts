@@ -303,7 +303,7 @@ The bear depends on old-growth rainforest. Long tree roots prevent erosion along
 
 Its habitat is threatened by deforestation and roads built by logging companies. Salmon numbers are also falling because fishing is unrestricted. The population is especially vulnerable because its reproduction rate is low.
 
-Community organisations, environmental groups and the government are working together. Logging companies are being required to adopt a better logging method, and conservation plans need to maintain and expand the bear's territory.`,
+Community organisations, environmental groups and the government are working together. Logging companies are being required to adopt a better logging method. While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion.`,
       questions: [
         {
           type: 'formgroup',
@@ -634,6 +634,7 @@ The 17th century was thus a formative period in the establishment of scientific 
           id: 'r3-summary',
           part: 7,
           qRange: [28, 34],
+          unorderedAnswerGroups: [[30, 31]],
           groupLabel: 'Complete the summary.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.',
           template: `In Europe modern science emerged at the same time as the nation state. At first, the scientific language of choice remained {{28}}.
 
