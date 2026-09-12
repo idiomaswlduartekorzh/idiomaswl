@@ -51,6 +51,8 @@ test('server loader scopes every private product query to the authenticated iden
   assert.match(loader, /from\('exam_submissions'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('course_orders'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /purchaser_email/);
+  assert.match(loader, /email_confirmed_at/);
+  assert.match(loader, /rpc\('recover_xpress_identity'/);
   assert.match(loader, /dataAvailable: false/);
 });
 
@@ -66,6 +68,7 @@ test('completed submissions are linked to paid access without trusting the brows
   assert.match(access, /from\('exam_submissions'\)[\s\S]*?\.eq\('user_id', input\.userId\)[\s\S]*?\.eq\('exam_slug', input\.examSlug\)/);
   assert.match(access, /from\('xpress_memberships'\)[\s\S]*?\.eq\('user_id', input\.userId\)[\s\S]*?\.eq\('environment', environment\)/);
   assert.match(access, /rpc\('consume_xpress_exam_credit'/);
+  assert.match(access, /from\('xpress_submission_access'\)\.upsert/);
   assert.match(access, /from\('xpress_personalized_feedback_requests'\)\.upsert/);
 
   for (const file of [
@@ -85,7 +88,27 @@ test('the additive migration preserves old purchases and enforces the new prices
   assert.match(migration, /offer_version='xpress-2026-09-12-v5'[\s\S]*?offer_id='exam-single'[\s\S]*?amount_in_cents=1290000/);
   assert.match(migration, /exam-auto' and amount_in_cents=4990000/);
   assert.match(migration, /exam-teacher' and amount_in_cents=9990000/);
+  assert.match(migration, /create table public\.xpress_submission_access/);
+  assert.match(migration, /submission_id uuid not null unique references public\.exam_submissions/);
+  assert.match(migration, /credit_id uuid unique references public\.xpress_exam_credits/);
+  assert.match(migration, /alter table public\.xpress_submission_access enable row level security/);
+  assert.match(migration, /revoke all on public\.xpress_submission_access from public,anon,authenticated,service_role/);
   assert.match(migration, /alter table public\.xpress_personalized_feedback_requests enable row level security/);
   assert.match(migration, /revoke all on public\.xpress_personalized_feedback_requests from public,anon,authenticated,service_role/);
   assert.match(migration, /does not represent a human teacher review/);
+  assert.match(migration, /create function public\.recover_xpress_identity/);
+  assert.match(migration, /email_confirmed_at is not null/);
+  assert.match(migration, /identity_recovery_subscription_conflict/);
+  assert.match(migration, /grant execute on function public\.recover_xpress_identity\(uuid,text,text\) to service_role/);
+});
+
+test('paid reports remain addressable after a subscription ends or another single exam is purchased', () => {
+  const loader = read('src/lib/student-dashboard/data.server.ts');
+  const report = read('src/app/(site)/dashboard/student/resultados/[submissionId]/page.tsx');
+  assert.match(loader, /from\('xpress_submission_access'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
+  assert.match(loader, /consumedSubmissionIds/);
+  assert.match(loader, /isMembershipSubmission/);
+  assert.match(loader, /accessBySubmission\.has\(row\.id\)/);
+  assert.match(report, /dashboard\.attempts\.find\(\(item\) => item\.id === submissionId\)/);
+  assert.match(report, /attempt\.examHubHref/);
 });

@@ -77,12 +77,12 @@ function ProductCard({ data }: { data: StudentDashboardData }) {
 }
 
 function Attempts({ data }: { data: StudentDashboardData }) {
-  const attempts = data.access.product === 'single' ? data.attempts.slice(0, 1) : data.attempts.slice(0, 6);
+  const attempts = data.attempts.slice(0, 6);
   return <section className={styles.section} aria-labelledby="attempts-title">
     <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Resultados guardados</p><h2 id="attempts-title">Mis intentos</h2></div>{data.attempts.length > 6 ? <Link href="/dashboard/student/progreso">Ver historial</Link> : null}</header>
     {attempts.length ? <div className={styles.attemptList}>{attempts.map((attempt) => <article className={styles.attempt} key={attempt.id}>
       <div className={styles.score} aria-label={attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}><strong>{attempt.score ?? '✓'}</strong>{attempt.score !== null ? <span>%</span> : null}</div>
-      <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
+      <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'failed' ? 'Reintentaremos generar tu feedback' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
       <Link href={attempt.reportHref}>Ver reporte <span aria-hidden="true">→</span></Link>
     </article>)}</div> : <div className={styles.empty}><span aria-hidden="true">◎</span><div><h3>Todavía no hay intentos</h3><p>Cuando termines un simulacro, su resultado aparecerá aquí.</p></div></div>}
   </section>;

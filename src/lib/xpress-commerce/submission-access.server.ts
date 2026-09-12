@@ -20,6 +20,12 @@ export async function recordXpressSubmissionAccess(input: { userId: string; exam
   if (membershipError) return { access: 'public', personalizedFeedback: false };
   if (membership) {
     const personalizedFeedback = membership.offer_id === 'exam-teacher';
+    const { error: accessError } = await db.from('xpress_submission_access').upsert({
+      user_id: input.userId, submission_id: input.submissionId, environment, exam_slug: input.examSlug,
+      access_kind: 'membership', offer_id: membership.offer_id, membership_id: membership.id,
+      credit_id: null, personalized_feedback: personalizedFeedback,
+    }, { onConflict: 'submission_id', ignoreDuplicates: true });
+    if (accessError) console.error('[xpress-access] Could not persist membership submission access', { submissionId: input.submissionId });
     if (personalizedFeedback) {
       const { error } = await db.from('xpress_personalized_feedback_requests').upsert({
         user_id: input.userId, membership_id: membership.id, submission_id: input.submissionId,
@@ -30,9 +36,15 @@ export async function recordXpressSubmissionAccess(input: { userId: string; exam
     return { access: 'membership', personalizedFeedback };
   }
 
-  const { error: creditError } = await db.rpc('consume_xpress_exam_credit', {
+  const { data: creditId, error: creditError } = await db.rpc('consume_xpress_exam_credit', {
     p_user: input.userId, p_exam: input.examSlug, p_submission: input.submissionId,
   });
-  return { access: creditError ? 'public' : 'single-credit', personalizedFeedback: false };
+  if (creditError || !creditId) return { access: 'public', personalizedFeedback: false };
+  const { error: accessError } = await db.from('xpress_submission_access').upsert({
+    user_id: input.userId, submission_id: input.submissionId, environment, exam_slug: input.examSlug,
+    access_kind: 'single-credit', offer_id: 'exam-single', membership_id: null,
+    credit_id: String(creditId), personalized_feedback: false,
+  }, { onConflict: 'submission_id', ignoreDuplicates: true });
+  if (accessError) console.error('[xpress-access] Could not persist single-exam submission access', { submissionId: input.submissionId });
+  return { access: 'single-credit', personalizedFeedback: false };
 }
-

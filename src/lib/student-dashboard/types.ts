@@ -2,13 +2,16 @@ import type { StudentExamWorkspace, StudentProductKind } from './catalog';
 
 export type StudentAttempt = Readonly<{
   id: string;
+  examName: string;
+  examFlag: string;
+  examHubHref: string;
   mockId: string | null;
   title: string;
   createdAt: string;
   score: number | null;
   scoreLabel: string;
   reportHref: string;
-  feedbackState: 'not-included' | 'available' | 'processing' | 'delivered';
+  feedbackState: 'not-included' | 'available' | 'processing' | 'delivered' | 'failed';
 }>;
 
 export type StudentCourse = Readonly<{
@@ -47,4 +50,3 @@ export type StudentDashboardData = Readonly<{
   courses: readonly StudentCourse[];
   dataAvailable: boolean;
 }>;
-
