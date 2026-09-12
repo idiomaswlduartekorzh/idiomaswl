@@ -3,18 +3,17 @@ import {
   getXpressOffer,
   quoteXpressPurchase,
   type XpressEntitlement,
+  type XpressMembershipOfferId,
   type XpressOffer,
-  type XpressOfferId,
   type XpressPurchaseQuote,
 } from '../xpress-commerce/catalog.ts';
 
 export const ICFES_COMMERCE_VERSION = 'icfes-commerce-2026-09-09-v1' as const;
 export const ICFES_DETAIL_OFFER_ID = 'icfes-detail-attempt-v1' as const;
-export const ICFES_DETAIL_CREDIT_WINDOW_DAYS = 7 as const;
 export const ICFES_DETAIL_PRICE_COP = 12_000 as const;
 export const ICFES_DETAIL_AMOUNT_IN_CENTS = ICFES_DETAIL_PRICE_COP * 100;
 
-export type IcfesCommerceOfferId = typeof ICFES_DETAIL_OFFER_ID | XpressOfferId;
+export type IcfesCommerceOfferId = typeof ICFES_DETAIL_OFFER_ID | XpressMembershipOfferId;
 export type IcfesCommerceEntitlement = XpressEntitlement | 'attempt-detailed-answers';
 
 export type IcfesCommerceOffer = Readonly<{
@@ -37,7 +36,7 @@ const DETAIL_OFFER = Object.freeze({
   currency: 'COP',
   billing: 'one-time',
   entitlementScope: 'attempt',
-  entitlements: ['attempt-detailed-answers', 'detailed-report', 'question-review'],
+  entitlements: ['attempt-detailed-answers', 'detailed-report', 'question-review', 'automatic-feedback'],
   teacherReviewCreditsPerPeriod: 0,
   teacherFeedbackTargetHours: null,
   sourceVersion: ICFES_COMMERCE_VERSION,
@@ -51,27 +50,27 @@ function assertMonthlyCatalogContract(offer: XpressOffer): void {
 
   if (
     offer.id === 'exam-teacher' &&
-    (offer.teacherFeedbackTargetHours !== 24 ||
+    (offer.teacherFeedbackTargetHours !== 12 ||
       offer.maxConcurrentTeacherReviews !== 1 ||
-      !offer.entitlements.includes('teacher-feedback-24h'))
+      !offer.entitlements.includes('teacher-feedback-12h'))
   ) {
     throw new Error('icfes_teacher_catalog_mismatch');
   }
 }
 
-function fromMonthlyCatalog(id: XpressOfferId): IcfesCommerceOffer {
+function fromMonthlyCatalog(id: XpressMembershipOfferId): IcfesCommerceOffer {
   const source = getXpressOffer(id);
   assertMonthlyCatalogContract(source);
 
   return Object.freeze({
-    id: source.id,
+    id,
     name: source.name,
     amountInCents: source.amountInCents,
     currency: 'COP',
-    billing: source.billing,
+    billing: '30-day-membership',
     entitlementScope: source.entitlementScope,
     entitlements: source.entitlements,
-    teacherReviewCreditsPerPeriod: source.id === 'exam-teacher' ? 1 : 0,
+    teacherReviewCreditsPerPeriod: id === 'exam-teacher' ? 1 : 0,
     teacherFeedbackTargetHours: source.teacherFeedbackTargetHours,
     sourceVersion: XPRESS_OFFER_VERSION,
   });
@@ -93,7 +92,7 @@ export type IcfesCommercePurchaseContext = Readonly<{
   requestedOfferId: IcfesCommerceOfferId;
   purchasedDetailAt?: Date;
   activeMembership?: Readonly<{
-    offerId: XpressOfferId;
+    offerId: XpressMembershipOfferId;
     periodEndsAt: Date;
   }>;
   now?: Date;
@@ -107,23 +106,16 @@ export type IcfesCommercePurchaseQuote = Readonly<{
   periodEndsAt: string | null;
   reason:
     | 'new-purchase'
-    | 'detail-upgrade'
     | 'membership-upgrade'
     | 'active-membership'
     | 'owned-detail'
     | 'downgrade';
 }>;
 
-function detailCreditIsEligible(purchasedAt: Date, now: Date): boolean {
-  const ageInMilliseconds = now.getTime() - purchasedAt.getTime();
-  const windowInMilliseconds = ICFES_DETAIL_CREDIT_WINDOW_DAYS * 24 * 60 * 60 * 1000;
-  return Number.isFinite(ageInMilliseconds) && ageInMilliseconds >= 0 && ageInMilliseconds <= windowInMilliseconds;
-}
-
 function icfesMonthlyReason(
   reason: XpressPurchaseQuote['reason'],
 ): Extract<IcfesCommercePurchaseQuote['reason'], 'new-purchase' | 'membership-upgrade' | 'active-membership' | 'downgrade'> {
-  if (reason === 'different-exam') throw new Error('icfes_monthly_quote_scope_mismatch');
+  if (reason === 'different-exam' || reason === 'single-purchase') throw new Error('icfes_monthly_quote_scope_mismatch');
   return reason;
 }
 
@@ -182,17 +174,16 @@ export function quoteIcfesCommercePurchase(
     };
   }
 
-  const now = context.now ?? new Date();
-  const detailCredit =
-    context.purchasedDetailAt && detailCreditIsEligible(context.purchasedDetailAt, now)
-      ? DETAIL_OFFER.amountInCents
-      : 0;
+  const monthlyQuote = quoteXpressPurchase({
+    requestedOfferId: offer.id,
+    requestedExamSlug: 'icfes',
+  });
   return {
     action: 'checkout',
-    amountInCents: offer.amountInCents - detailCredit,
-    creditInCents: detailCredit,
+    amountInCents: monthlyQuote.amountInCents,
+    creditInCents: monthlyQuote.creditInCents,
     offer,
     periodEndsAt: null,
-    reason: detailCredit > 0 ? 'detail-upgrade' : 'new-purchase',
+    reason: icfesMonthlyReason(monthlyQuote.reason),
   };
 }

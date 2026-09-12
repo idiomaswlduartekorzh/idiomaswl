@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 const HASH_PATTERN = /^[a-f0-9]{64}$/;
@@ -20,6 +20,10 @@ export function sha256(value) {
 
 function readJson(repoRoot, relativePath) {
   return JSON.parse(readFileSync(path.join(repoRoot, relativePath), 'utf8'));
+}
+
+function writeJson(repoRoot, relativePath, value) {
+  writeFileSync(path.join(repoRoot, relativePath), `${JSON.stringify(value, null, 2)}\n`);
 }
 
 function withoutKey(value, key) {
@@ -154,13 +158,13 @@ function validatePolicy(policy, failures) {
   }
   push(tierBySku.get('exam-auto')?.examSlug === 'icfes', failures, 'policy: exam-auto debe estar limitado a examSlug=icfes');
   push(tierBySku.get('exam-teacher')?.examSlug === 'icfes', failures, 'policy: exam-teacher debe estar limitado a examSlug=icfes');
-  push(tierBySku.get('exam-teacher')?.humanReviewSlaHours === 24, failures, 'policy: el tier humano debe prometer 24h exactamente');
+  push(tierBySku.get('exam-teacher')?.humanReviewSlaHours === 12, failures, 'policy: el tier humano debe fijar el objetivo de 12h');
   push(policy.commercialModel.creditRules.sameAuthenticatedOwner === true, failures, 'policy: upgrades deben pertenecer a la misma cuenta');
   push(policy.commercialModel.creditRules.singleUseCredit === true, failures, 'policy: un crédito de upgrade debe consumirse una sola vez');
   push(policy.commercialModel.creditRules.serverCalculated === true, failures, 'policy: el servidor debe calcular upgrades');
   const upgrades = new Map(policy.commercialModel.upgradeCredits.map((upgrade) => [`${upgrade.fromSku}->${upgrade.toSku}`, upgrade]));
-  push(upgrades.get('icfes-detail-attempt-v1->exam-auto')?.payableCop === 37000, failures, 'policy: upgrade 12k→49k debe cobrar 37k');
-  push(upgrades.get('icfes-detail-attempt-v1->exam-teacher')?.payableCop === 87000, failures, 'policy: upgrade 12k→99k debe cobrar 87k');
+  push(!upgrades.has('icfes-detail-attempt-v1->exam-auto'), failures, 'policy: no debe inventar crédito 12k→49k');
+  push(!upgrades.has('icfes-detail-attempt-v1->exam-teacher'), failures, 'policy: no debe inventar crédito 12k→99k');
   push(upgrades.get('exam-auto->exam-teacher')?.payableCop === 50000, failures, 'policy: upgrade 49k→99k debe cobrar 50k');
   const mockPattern = new RegExp(policy.mockExpansion.idPattern);
   push(mockPattern.test('mock-24') && mockPattern.test('mock-100'), failures, 'policy: idPattern debe permitir expansión más allá de mock-23');
@@ -206,7 +210,10 @@ function validateWorkOrders(harness, failures) {
     const target = new Map(order.targetOffer.map((tier) => [tier.sku, tier]));
     for (const tier of policy.commercialModel.tiers) {
       const orderTier = target.get(tier.sku);
-      push(orderTier?.priceCop === tier.priceCop && orderTier?.durationDays === tier.durationDays && orderTier?.humanReviewCredits === tier.humanReviewCredits,
+      push(orderTier?.priceCop === tier.priceCop
+        && orderTier?.durationDays === tier.durationDays
+        && orderTier?.humanReviewCredits === tier.humanReviewCredits
+        && orderTier?.humanReviewSlaHours === tier.humanReviewSlaHours,
         failures, `${order.workOrderId}: targetOffer no coincide para ${tier.sku}`);
     }
   }
@@ -329,6 +336,42 @@ export function validateHarness(harness) {
   validateApprovals(harness, failures);
   validateReleases(harness, failures);
   return failures;
+}
+
+export function refreshHarnessDigests(repoRoot) {
+  const root = 'config/icfes-launch-harness';
+  const campaign = readJson(repoRoot, `${root}/campaign.json`);
+  const approvals = readJson(repoRoot, `${root}/approvals.json`);
+  const releaseManifest = readJson(repoRoot, `${root}/release-manifest.json`);
+  if (approvals.approvals.length > 0 || releaseManifest.releases.length > 0) {
+    throw new Error('No se regeneran digests con aprobaciones o releases existentes. Crea un candidato nuevo.');
+  }
+
+  const workOrders = campaign.workOrders.map((relativePath) => {
+    const order = readJson(repoRoot, relativePath);
+    order.inputArtifacts = [...new Map(order.inputArtifacts.map((artifact) => [artifact.path, artifact])).values()].map((artifact) => ({
+      ...artifact,
+      sha256: sha256(readFileSync(path.join(repoRoot, artifact.path))),
+    }));
+    order.workOrderDigest = calculateWorkOrderDigest(order);
+    writeJson(repoRoot, relativePath, order);
+    return order;
+  });
+
+  const ledgerPath = `${root}/candidate-ledger.json`;
+  const ledger = readJson(repoRoot, ledgerPath);
+  const workOrderIds = new Set(workOrders.map(({ workOrderId }) => workOrderId));
+  ledger.candidates = ledger.candidates.map((candidate) => {
+    if (!workOrderIds.has(candidate.workOrderId)) return candidate;
+    candidate.subjectArtifacts = [...new Map(candidate.subjectArtifacts.map((artifact) => [artifact.path, artifact])).values()].map((artifact) => ({
+      ...artifact,
+      sha256: sha256(readFileSync(path.join(repoRoot, artifact.path))),
+    }));
+    candidate.candidateDigest = calculateCandidateDigest(candidate);
+    return candidate;
+  });
+  writeJson(repoRoot, ledgerPath, ledger);
+  return loadHarness(repoRoot);
 }
 
 export function inventory(harness) {

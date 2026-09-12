@@ -36,7 +36,7 @@ test('mock identity policy permits expansion beyond mock-23 without catalog prom
   assert.ok(harness.campaign.expansionQueue.some(({ mockId, catalogEligible }) => mockId === 'mock-24' && catalogEligible === false));
 });
 
-test('commercial ladder fixes price, duration, finite human quota and upgrade credits', () => {
+test('commercial ladder fixes price, duration, finite human quota and only the implemented membership upgrade', () => {
   const tiers = new Map(harness.policy.commercialModel.tiers.map((tier) => [tier.sku, tier]));
   assert.deepEqual([tiers.get('icfes-detail-attempt-v1').priceCop, tiers.get('exam-auto').priceCop, tiers.get('exam-teacher').priceCop], [12000, 49000, 99000]);
   assert.equal(tiers.get('exam-auto').durationDays, 30);
@@ -44,8 +44,8 @@ test('commercial ladder fixes price, duration, finite human quota and upgrade cr
   assert.equal(tiers.get('exam-teacher').durationDays, 30);
   assert.equal(tiers.get('exam-teacher').examSlug, 'icfes');
   assert.equal(tiers.get('exam-teacher').humanReviewCredits, 1);
-  assert.equal(tiers.get('exam-teacher').humanReviewSlaHours, 24);
-  assert.deepEqual(harness.policy.commercialModel.upgradeCredits.map(({ payableCop }) => payableCop), [37000, 87000, 50000]);
+  assert.equal(tiers.get('exam-teacher').humanReviewSlaHours, 12);
+  assert.deepEqual(harness.policy.commercialModel.upgradeCredits.map(({ payableCop }) => payableCop), [50000]);
 });
 
 test('artifact drift invalidates a candidate instead of accepting a stale review', () => {
@@ -106,6 +106,7 @@ test('every launch gate owns an explicit stop condition', () => {
   const covered = new Set(harness.policy.stopConditions.map(({ gate }) => gate));
   assert.deepEqual([...covered], harness.policy.gateOrder);
   assert.equal(harness.policy.teacherOps.capacityUtilizationStopPercent, 80);
-  assert.equal(harness.policy.teacherOps.oldestQueuedStopHours, 18);
-  assert.equal(harness.policy.teacherOps.rollingP95StopHours, 20);
+  assert.equal(harness.policy.teacherOps.oldestQueuedStopHours, 9);
+  assert.equal(harness.policy.teacherOps.rollingP95StopHours, 10);
+  assert.deepEqual(harness.policy.teacherOps.escalationHours, [6, 9, 11]);
 });

@@ -266,6 +266,9 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
           <Link href="/dashboard/admin/contactos" style={{ alignSelf: 'flex-start', color: '#9b4e21', fontWeight: 700, fontSize: 14, padding: '10px 0' }}>
             Origen de contactos WhatsApp →
           </Link>
+          <Link href="/dashboard/admin/icfes-reviews" style={{ alignSelf: 'flex-start', color: '#14215c', fontWeight: 700, fontSize: 14, padding: '10px 0' }}>
+            Bandeja de revisiones ICFES →
+          </Link>
 
           {/* ── STUDENTS TAB ── */}
           {activeTab === 'students' && (

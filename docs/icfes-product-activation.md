@@ -2,7 +2,7 @@
 
 ## Qué está disponible sin pagar
 
-Al finalizar un simulacro ICFES, el estudiante ve inmediatamente aciertos, total, porcentaje, desglose por parte, desglose pedagógico por habilidad y una recomendación. Este valor aparece antes de cualquier formulario. El contacto es opcional, posterior al resultado y exige consentimiento explícito.
+Al finalizar un simulacro ICFES, el estudiante ve inmediatamente solo su resultado: aciertos, total y porcentaje. El desglose, las respuestas y el diagnóstico pertenecen a los productos pagos. El resultado aparece antes de cualquier formulario; el contacto es opcional, posterior y exige consentimiento explícito.
 
 El porcentaje es de esta práctica: no es un puntaje oficial ni una predicción del resultado Saber 11.
 
@@ -12,7 +12,7 @@ La fachada comercial ICFES v1 presenta tres opciones después del resultado grat
 
 - **COP 12.000, pago único:** respuestas y análisis pregunta por pregunta de un intento propio elegible.
 - **COP 49.000, acceso por 30 días:** catálogo de simulacros propios y retroalimentación automática.
-- **COP 99.000, acceso por 30 días:** lo anterior más un crédito de revisión docente por periodo, con objetivo operativo de entrega dentro de 24 horas.
+- **COP 99.000, acceso por 30 días:** lo anterior más un crédito de revisión humana por periodo, con objetivo operativo de entrega dentro de 12 horas.
 
 Las membresías se renuevan manualmente; no se autoriza débito recurrente. Tampoco se promete acceso perpetuo, subida de puntaje ni contenido oficial. Los diez cuadernillos divulgados atribuidos al ICFES conservan únicamente su resultado básico gratuito y no entran en el producto mientras falten verificación independiente por ítem y revisión jurídica.
 

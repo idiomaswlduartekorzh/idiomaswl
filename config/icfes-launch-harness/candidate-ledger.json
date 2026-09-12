@@ -6,55 +6,336 @@
       "candidateId": "current-working-tree-on-ae776027",
       "workOrderId": "icfes-three-tier-launch-v1",
       "baseCommit": "ae776027",
-      "candidateDigest": "c3774bd297ed32130a85e899d6527bda2593895acfe8c6d3783d96984fa04ed6",
+      "candidateDigest": "015255242a3f92a5ccc180148c5985f5178f85d589b9c5cba6ea993f8093410e",
       "subjectArtifacts": [
-        { "path": "docs/icfes-product-activation.md", "sha256": "7e59d09053f01bebff044dcf811d6f7d4da519f7198098c134a718d2b52f35c8" },
-        { "path": "docs/icfes-commerce-v1.md", "sha256": "2d853e897359df3d2ba765793b4dcf4d062e89d9c737470cba0875212b847a61" },
-        { "path": "src/lib/icfes/commerce-v1.ts", "sha256": "8f0fd792101d7d750ade0f0841682b4a122f180cb45464effa6876d3efddbaeb" },
-        { "path": "src/lib/icfes/payment-adversarial-model.ts", "sha256": "7bd735e67b0c06e62b38b14d8e040ed75399f5700fe8c8b58ea6229096d06dc3" },
-        { "path": "src/lib/icfes/payment-event.ts", "sha256": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22" },
-        { "path": "tests/icfes-payments-adversarial.test.mjs", "sha256": "15b4f4b9de27c6eb2760d9e0a42852e19ae20d03287a88584be9366c2881d650" },
-        { "path": "scripts/audit-icfes-payments-adversarial.mjs", "sha256": "8112b4f322d82bc1c1db3f2a49aab0ba6fc1da08a13d266379e45e96c075e8b1" },
-        { "path": "docs/icfes-payments-adversarial-local.json", "sha256": "dfeb843b1c30af7ec0ac61b80eb1ea1853fa1206fc349701275d9ef964722033" },
-        { "path": "src/lib/icfes/teacher-rubric-v1.ts", "sha256": "e47d3a72d8ece0ae7ac793ea91961f5cdddf3ffdfd5c932577d9ed88c5fff593" },
-        { "path": "src/lib/icfes/teacher-ops-v1.ts", "sha256": "727e85ea7459e5d6445accdbf72aa7049fa8bea5784c679a50af81f928effa95" },
-        { "path": "src/lib/icfes/teacher-ops.server.ts", "sha256": "fec3b3669e6d72fd95d61361f4239c9321519a89fa12f61650e59ed4f5ece326" },
-        { "path": "tests/icfes-teacher-ops-v1.test.mjs", "sha256": "d70049b445e527b69b7e9814ad8f8068246f6a3f81fea6ad7242140b2d69bfd3" },
-        { "path": "docs/icfes-teacher-ops-v1.md", "sha256": "b95904a9f5018439f79be849443be356c85878dfaa56314a66e15922ab4149c6" },
-        { "path": "src/lib/xpress-commerce/catalog.ts", "sha256": "e7c6a9f4d848de1488b6cf1257386ab188f6a8e22cfb7250a89edb916b126570" },
-        { "path": "src/lib/xpress-commerce/payment.ts", "sha256": "48ee763bd1389acf59a374f50cc93efaeb11e5df40fb3e2a2c58e227b9d18c8f" },
-        { "path": "src/lib/xpress-commerce/payments.server.ts", "sha256": "1f39fbe0f460370f5ca65f1bd31184e292618b38b4352357a165c902db44476b" },
-        { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "sha256": "6382f40605f18c5b0d1df521b918f9eee8bd3519db28f289bdd89e23675d32ad" },
-        { "path": "supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql", "sha256": "6e4c2367925cae7ec20d1b97c420510f44e83d6a8f90cccf2883eedd66f03858" },
-        { "path": "docs/icfes-privacy-contract.md", "sha256": "65166a46d1afb069d5fea63f1f97eb234f060faf8ae0b402fad01ceeda6375c7" },
-        { "path": "src/data/icfes/own-mock-expansion-manifest.json", "sha256": "adccf52de68337941821d072ba6efc2ed2982218a88727953a07b494c8afb17b" },
-        { "path": "src/data/icfes/own-mock-expansion.schema.json", "sha256": "1d0b667cbebe6c6aacef94c8e410b8d9b285e084257193bd972bf34370b33926" },
-        { "path": "package.json", "sha256": "24a5b93235f5e2087d4021fb0cab4f05e90edee3c446ad4b49d13bcc16a3e0da" },
-        { "path": "docs/icfes-launch-harness.md", "sha256": "7ac25ee6929b3d8ac501fa21d4f6758b8950f52dca5c6fbac169ccbee3180725" },
-        { "path": "src/lib/icfes/attempt-evidence.ts", "sha256": "682a60963ab43b02c6d8f5036103b66a1f819a8eae5e0aeb3e84dd013fc8df0e" },
-        { "path": "src/lib/icfes/attempt-ownership.server.ts", "sha256": "c94c8685f6733f8f7bd4f0665c7b0aa94921e9016930d567c41aff7be8e1ef09" },
-        { "path": "src/lib/icfes/grading.server.ts", "sha256": "38dcbffcff02f6cb9b6155d554f045b9d3202f3e9c06ddcb8076f08fe033304e" },
-        { "path": "src/app/api/icfes/attempts/claim/route.ts", "sha256": "e6f6a6f8d4522e42d6feb06fe235140e7705e14399bfddcca025f949e4284c2f" },
-        { "path": "src/app/api/icfes/pass/checkout/route.ts", "sha256": "bb6a6399ef7ac2f1bcb3d654e9ae1374de41dc1b6ed31779360774c94f3a0b34" },
-        { "path": "supabase/migrations/20260909002000_icfes_attempt_claim_evidence.sql", "sha256": "90134437a71c0ab93e109464054cd8ac8b6e4837aec1122f957411d410a95214" },
-        { "path": "tests/icfes-teacher-evidence-v1.test.mjs", "sha256": "aab15ba7d8ccd4e804041c5635fcb377fd90aec8adc53b3f9d155ddab3793d3a" },
-        { "path": "tests/icfes-product.test.mjs", "sha256": "284596d35bcb952fd5a21aef006d784fcc0eeb5fad2f2cd1fd43dd8574ff511d" },
-        { "path": "supabase/tests/icfes_privacy_contract.sql", "sha256": "169827a3a99afe682cba917f45249de716dd475f69705472dfb6ed5f54b26295" },
-        { "path": "tests/icfes-privacy-contract.test.mjs", "sha256": "f7a60d9f578c30c23594f2212a94e2724edc26df7257e9b5b79a157be4ecf286" },
-        { "path": "src/lib/icfes/privacy-operations.ts", "sha256": "bf8e5e8c824a03117f023b0259580cdad8def20f67ac912b19d8a7fdc059480a" },
-        { "path": "src/lib/icfes/privacy-operations.server.ts", "sha256": "4faafe2b1dbbef1633b06d7d822a47d64297a488e3ce2a77b0f3323abce21e25" },
-        { "path": "src/app/api/icfes/privacy/export/route.ts", "sha256": "d357f2c68cd2a8cdc1e92e790a9bfe97bd8b5f37187b2eb6658191137a3f8ab5" },
-        { "path": "src/app/api/icfes/privacy/delete/route.ts", "sha256": "acffe8a7f7c8d5afc41550c52a92c119c33d6826722f88e3b58877ad256514a9" },
-        { "path": "src/app/api/internal/icfes/privacy/purge/route.ts", "sha256": "d1a385d0f032275d1abb8405ebe084e188cc893490f14dc641f19a53a38c7654" },
-        { "path": "supabase/migrations/20260909180000_icfes_privacy_operations.sql", "sha256": "28f657954954489f350fbef73378445eec9ecf3b51e7a5557e8e92490462d183" },
-        { "path": "tests/icfes-privacy-operations.test.mjs", "sha256": "104e62f286f220b628854eb73c57ffb63e348303ebcbd186012dc4dfa2901c7b" },
-        { "path": "src/app/(site)/suscripcion/examenes/XpressMembershipClient.tsx", "sha256": "704e2e563367865ed5bfa06e2db52501b69ba58b31f0a25e62f80cebba13dcd9" },
-        { "path": "src/app/(site)/suscripcion/examenes/page.tsx", "sha256": "653805a7f2a2b73bef96cbe29666e655650bac4e307f73d944e83cc77315a65a" },
-        { "path": "src/app/(site)/suscripcion/examenes/xpress-offer-guard.module.css", "sha256": "feb95fdc8ac5255bfeb06d5a50b83bba0b4f58f8a20acbbc153d64b4e97633f1" },
-        { "path": "src/app/api/xpress-orders/route.ts", "sha256": "91b8289e801224a86facc1d6cc826aba63ede3f41aebe10172ee10d4cdad0426" },
-        { "path": "src/app/api/xpress-orders/[orderId]/checkout/route.ts", "sha256": "3963ba15eeb8f9846156eb8d78e75e05ca75d411528efca2f807baf1b3963a10" },
-        { "path": "src/lib/icfes/teacher-offer-readiness.server.ts", "sha256": "21b741a0220ec1f9b04b65bfb43feb8a42640cf3a4f55abb9caa9904bf32c83d" },
-        { "path": "tests/icfes-teacher-offer-ux.test.mjs", "sha256": "db43712bc3ffec760747d001c265a6e6cc213d899d90413547c1ff26065fcdf0" }
+        {
+          "path": "docs/icfes-product-activation.md",
+          "sha256": "5ce5b2f5a1a9981b4eca975255de56b051a002f2466b7a849b0fcdcd82f1e258"
+        },
+        {
+          "path": "docs/icfes-commerce-v1.md",
+          "sha256": "f960828135a8f00a661eab0cf1278786c91b2d5d7150e659a6e58a24e1f245e2"
+        },
+        {
+          "path": "src/lib/icfes/commerce-v1.ts",
+          "sha256": "107b04347f18930180c113e753fc8e6433d957c7a48789b249d121847fec82f3"
+        },
+        {
+          "path": "src/lib/icfes/payment-adversarial-model.ts",
+          "sha256": "c18fd3de27eee42009487269a1bdd8cd1cda5e215a8fdaec02251c658a3c3fed"
+        },
+        {
+          "path": "src/lib/icfes/payment-event.ts",
+          "sha256": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22"
+        },
+        {
+          "path": "src/lib/icfes/payment-events.server.ts",
+          "sha256": "b2416c7688636e368a622d1b162cc132e20a216b62968e9451577496dcff1a25"
+        },
+        {
+          "path": "tests/icfes-payments-adversarial.test.mjs",
+          "sha256": "bb93b219b57d02f62e6919d4e1f9666c135bc78e174f7f3ea8acbe476b089584"
+        },
+        {
+          "path": "scripts/audit-icfes-payments-adversarial.mjs",
+          "sha256": "b4f05a28933e3af1bd8ecca65f7e6b0666222772721155b20985fdc6e44812c0"
+        },
+        {
+          "path": "docs/icfes-payments-adversarial-local.json",
+          "sha256": "a60e8e811c858fa80ae8f28f45b51a9ec05ddbed0d8eecb850b77a8987b0a2b2"
+        },
+        {
+          "path": "src/lib/icfes/teacher-rubric-v1.ts",
+          "sha256": "e47d3a72d8ece0ae7ac793ea91961f5cdddf3ffdfd5c932577d9ed88c5fff593"
+        },
+        {
+          "path": "src/lib/icfes/teacher-ops-v1.ts",
+          "sha256": "5fa515bcd2bb15f1f109dbde396cb983d4c3d67d861a2d4b4e158cee8e26bca2"
+        },
+        {
+          "path": "src/lib/icfes/teacher-ops.server.ts",
+          "sha256": "1e83a7427c77c4efa3208df12a2686e649bbbb5a7c638471bd2b3ab83108fc7d"
+        },
+        {
+          "path": "tests/icfes-teacher-ops-v1.test.mjs",
+          "sha256": "02896a1912a0c1dde745503ce2e93d9cbcea9c69100a01ae645f5e0b74028f3b"
+        },
+        {
+          "path": "docs/icfes-teacher-ops-v1.md",
+          "sha256": "e1c7dec20be59c2470c2299baa7ff389b8e6853b220427209b0de0f6b8a368be"
+        },
+        {
+          "path": "src/lib/xpress-commerce/catalog.ts",
+          "sha256": "d39fe2b4ac7ae0c85a1c21cefaebbc340a3ed229d36db4fda689b93c476014fe"
+        },
+        {
+          "path": "src/lib/xpress-commerce/payment.ts",
+          "sha256": "8256ef42fa6165fe92dd845f8092972029a5dd3c42fe1d57a79241853c0a20a3"
+        },
+        {
+          "path": "src/lib/xpress-commerce/payments.server.ts",
+          "sha256": "653642ca3fd217266ea473074be7d5ea774e65021eb78ca95299e61b963bf408"
+        },
+        {
+          "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql",
+          "sha256": "6382f40605f18c5b0d1df521b918f9eee8bd3519db28f289bdd89e23675d32ad"
+        },
+        {
+          "path": "supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql",
+          "sha256": "6e4c2367925cae7ec20d1b97c420510f44e83d6a8f90cccf2883eedd66f03858"
+        },
+        {
+          "path": "docs/icfes-privacy-contract.md",
+          "sha256": "65166a46d1afb069d5fea63f1f97eb234f060faf8ae0b402fad01ceeda6375c7"
+        },
+        {
+          "path": "src/data/icfes/own-mock-expansion-manifest.json",
+          "sha256": "445c435d3585e09521faf4a4caaa726660d01eaaa2b05002fb53fa3685cd9dac"
+        },
+        {
+          "path": "src/data/icfes/own-mock-expansion.schema.json",
+          "sha256": "3e9977ef2aa48f988ac7555194e16de8cea7f6e31970678dc3517c1147c6e795"
+        },
+        {
+          "path": "package.json",
+          "sha256": "2d545fd17bf086dbdb05c6f42c0886aa3dec7af4d56b95c90281690020f59329"
+        },
+        {
+          "path": "docs/icfes-launch-harness.md",
+          "sha256": "43a7d98baab4cd6993eaf458a6084230a7060a0b64b06adee3cf2821a5fd1d00"
+        },
+        {
+          "path": "src/lib/icfes/attempt-evidence.ts",
+          "sha256": "682a60963ab43b02c6d8f5036103b66a1f819a8eae5e0aeb3e84dd013fc8df0e"
+        },
+        {
+          "path": "src/lib/icfes/attempt-ownership.server.ts",
+          "sha256": "c94c8685f6733f8f7bd4f0665c7b0aa94921e9016930d567c41aff7be8e1ef09"
+        },
+        {
+          "path": "src/lib/icfes/grading.server.ts",
+          "sha256": "bb7fe400421ef02835d135db5d2c4440a997f33b0af0f9719fa474469e676cd1"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/claim/route.ts",
+          "sha256": "e6f6a6f8d4522e42d6feb06fe235140e7705e14399bfddcca025f949e4284c2f"
+        },
+        {
+          "path": "src/app/api/icfes/pass/checkout/route.ts",
+          "sha256": "bb6a6399ef7ac2f1bcb3d654e9ae1374de41dc1b6ed31779360774c94f3a0b34"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/grade/route.ts",
+          "sha256": "089512dec456b1bab96d4cfbdee2e3d7a8d77cdfa251efe71840d544603fd248"
+        },
+        {
+          "path": "supabase/migrations/20260909002000_icfes_attempt_claim_evidence.sql",
+          "sha256": "90134437a71c0ab93e109464054cd8ac8b6e4837aec1122f957411d410a95214"
+        },
+        {
+          "path": "tests/icfes-teacher-evidence-v1.test.mjs",
+          "sha256": "aab15ba7d8ccd4e804041c5635fcb377fd90aec8adc53b3f9d155ddab3793d3a"
+        },
+        {
+          "path": "tests/icfes-product.test.mjs",
+          "sha256": "4c7b7fd1b55ba0d352be6e0c39d63eda7c314ce8fb85ae5b885f3550fb5927c6"
+        },
+        {
+          "path": "supabase/tests/icfes_privacy_contract.sql",
+          "sha256": "169827a3a99afe682cba917f45249de716dd475f69705472dfb6ed5f54b26295"
+        },
+        {
+          "path": "tests/icfes-privacy-contract.test.mjs",
+          "sha256": "f7a60d9f578c30c23594f2212a94e2724edc26df7257e9b5b79a157be4ecf286"
+        },
+        {
+          "path": "src/lib/icfes/privacy-operations.ts",
+          "sha256": "bf8e5e8c824a03117f023b0259580cdad8def20f67ac912b19d8a7fdc059480a"
+        },
+        {
+          "path": "src/lib/icfes/privacy-operations.server.ts",
+          "sha256": "4faafe2b1dbbef1633b06d7d822a47d64297a488e3ce2a77b0f3323abce21e25"
+        },
+        {
+          "path": "src/app/api/icfes/privacy/export/route.ts",
+          "sha256": "d357f2c68cd2a8cdc1e92e790a9bfe97bd8b5f37187b2eb6658191137a3f8ab5"
+        },
+        {
+          "path": "src/app/api/icfes/privacy/delete/route.ts",
+          "sha256": "acffe8a7f7c8d5afc41550c52a92c119c33d6826722f88e3b58877ad256514a9"
+        },
+        {
+          "path": "src/app/api/internal/icfes/privacy/purge/route.ts",
+          "sha256": "d1a385d0f032275d1abb8405ebe084e188cc893490f14dc641f19a53a38c7654"
+        },
+        {
+          "path": "supabase/migrations/20260909180000_icfes_privacy_operations.sql",
+          "sha256": "28f657954954489f350fbef73378445eec9ecf3b51e7a5557e8e92490462d183"
+        },
+        {
+          "path": "tests/icfes-privacy-operations.test.mjs",
+          "sha256": "104e62f286f220b628854eb73c57ffb63e348303ebcbd186012dc4dfa2901c7b"
+        },
+        {
+          "path": "src/app/(site)/suscripcion/examenes/XpressMembershipClient.tsx",
+          "sha256": "7ddc1ac8b0f223604af98adf1c3a749f7d6bcc86cf8d6547e97633eee3d25b0f"
+        },
+        {
+          "path": "src/app/(site)/suscripcion/examenes/page.tsx",
+          "sha256": "63e8ddc8cc327a91d6d0fe93e9349730f06819d51a8e65c7d9b47328e4f39bce"
+        },
+        {
+          "path": "src/app/(site)/suscripcion/examenes/xpress-offer-guard.module.css",
+          "sha256": "feb95fdc8ac5255bfeb06d5a50b83bba0b4f58f8a20acbbc153d64b4e97633f1"
+        },
+        {
+          "path": "src/app/api/xpress-orders/route.ts",
+          "sha256": "46fe3c7303a3f09996b0643f1e1b994d336bf8ca3ecc4bc678785c26fadc5b3a"
+        },
+        {
+          "path": "src/app/api/xpress-orders/[orderId]/checkout/route.ts",
+          "sha256": "3963ba15eeb8f9846156eb8d78e75e05ca75d411528efca2f807baf1b3963a10"
+        },
+        {
+          "path": "src/lib/icfes/teacher-offer-readiness.server.ts",
+          "sha256": "067fb8a9769e66352bef14405bf49ebafca1eca93323089b5bac40b95bd8ad02"
+        },
+        {
+          "path": "tests/icfes-teacher-offer-ux.test.mjs",
+          "sha256": "46390aceef04ab4f0ba1b2f0bda2f50384fed92a27d0284ffb9f259b148d64a4"
+        },
+        {
+          "path": "src/app/(auth)/login/AuthForm.tsx",
+          "sha256": "2cb04a7fdaca4e94582b930fe5ddeb68c311ca747004ea784cea204a68390b87"
+        },
+        {
+          "path": "src/lib/config/admins.ts",
+          "sha256": "0d90f864d34b76a9801489537a4cbec82c5cd21e24e88f0cb48d1bebc5117f72"
+        },
+        {
+          "path": "src/lib/student-onboarding/catalog.ts",
+          "sha256": "40bc02f7b4c106c1764d2201c08b9b2aaab2f3d246533f2e30febca7ff0e7be8"
+        },
+        {
+          "path": "tests/registration-onboarding.test.mjs",
+          "sha256": "88edb76b7bc5fbb28cefdd2ab0534a88916dfe86307ee599bd8a9c04dbb036b6"
+        },
+        {
+          "path": "src/app/(site)/dashboard/admin/icfes-reviews/IcfesReviewInbox.tsx",
+          "sha256": "3e5ae05abdd37c09e4c4977809b7bcb9e20aeee79db2ae28edb43aea4f396c15"
+        },
+        {
+          "path": "src/app/(site)/dashboard/admin/icfes-reviews/page.tsx",
+          "sha256": "022807884d5682e0247771d24611ac0c5f28917c07957d39d9f54f1664dd720c"
+        },
+        {
+          "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx",
+          "sha256": "9cc900cc2853c4ad40ee2fb7d9f46bd4b671904510f984d20d13e4cd210a085d"
+        },
+        {
+          "path": "src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx",
+          "sha256": "0baa2256cc9c80837c05df04b29cf1a50ba7eb85e56e9c5d1c5c0d2edd76d4bb"
+        },
+        {
+          "path": "src/app/api/admin/icfes/teacher-reviews/route.ts",
+          "sha256": "c49c51d5312c4130e8217c77c861f591c7674cb3d78f425030af3ac0e26328bc"
+        },
+        {
+          "path": "src/app/api/icfes/teacher-reviews/route.ts",
+          "sha256": "4ee814da175e4f007761289e1ed4030cdabe28784f06893a0e4042fd1affcaa1"
+        },
+        {
+          "path": "src/app/api/internal/icfes/teacher-reviews/claim/route.ts",
+          "sha256": "96b87d12413f18f015c9564e9cfeff605f3382aa1d3e7585bb84fb74bc66a762"
+        },
+        {
+          "path": "src/app/api/internal/icfes/teacher-reviews/complete/route.ts",
+          "sha256": "b7042400fea72256fbfc9587b420cb785d6f254320bd2f0954bba42e0057109b"
+        },
+        {
+          "path": "src/app/api/internal/icfes/teacher-reviews/notifications/route.ts",
+          "sha256": "28c3dff7a511ae6061df61847daaaa97f6d1e3d532641dff7dd043102ca9ef13"
+        },
+        {
+          "path": "src/app/api/internal/icfes/teacher-reviews/renew/route.ts",
+          "sha256": "05ce9a05773975bfd5bc7cb8d3ab474b3e92459e18b90ed3918d690ac273117d"
+        },
+        {
+          "path": "src/app/api/xpress-orders/[orderId]/route.ts",
+          "sha256": "75d626c0de99461a45a1693944bdb8bea7e27943ac800ebe393f167cad8e445d"
+        },
+        {
+          "path": "src/lib/icfes/attempt-contract.ts",
+          "sha256": "6a7eeec03243368676b87e4bb7871a5147d70ddd258401fa55187490818d8be6"
+        },
+        {
+          "path": "src/lib/icfes/automatic-feedback.ts",
+          "sha256": "86942ed08874fb86fa8a1a5b3028e984bb148f723e7d34dd336b70bfcc4202a2"
+        },
+        {
+          "path": "src/lib/icfes/teacher-notifications.server.ts",
+          "sha256": "141c859706a080dfe038ff1f4764fbaa5918e69e65e588eb036b8b7736107746"
+        },
+        {
+          "path": "src/lib/icfes/teacher-worker-auth.ts",
+          "sha256": "978bb3548e7671074cfa0a3d1c15fc242e184e708c30ec4c47982f82d93c0baa"
+        },
+        {
+          "path": "src/lib/xpress-commerce/terms.ts",
+          "sha256": "b342417b7888929ea77fe834f8bb25526a12464df4c5bc3712cf6ebb4e4ef546"
+        },
+        {
+          "path": "supabase/migrations/20260909183000_icfes_teacher_review_delivery.sql",
+          "sha256": "69c0bfdfacdc0754323de99b613105c176c89e465ff6b87c1589bdd0f1970f46"
+        },
+        {
+          "path": "supabase/migrations/20260912160504_icfes_teacher_12h_operational_loop.sql",
+          "sha256": "6d9c80f109f33bcbba58b729f52a73d589c5eb9a1f4ced67e1ce202a49baf985"
+        },
+        {
+          "path": "tests/icfes-automatic-feedback.test.mjs",
+          "sha256": "7e1fa6e62e57c198debb88ad257877d5491303c40f232a28f0cd92d134e09f7f"
+        },
+        {
+          "path": "tests/icfes-operational-loop.test.mjs",
+          "sha256": "aa3f4dba0ad3489cc4224d5757075b9b53e4a3426da4db647fe5b2b04797bbec"
+        },
+        {
+          "path": "vercel.json",
+          "sha256": "1982525bcf5b45a2e655657fc38538731d337ce3d71222d3eb5b5e33df71287d"
+        },
+        {
+          "path": "config/icfes-launch-harness/policy.json",
+          "sha256": "c7e07dacd52a3bdd87edf814eca2b3a8c0aa379c44623623f1428474249e4203"
+        },
+        {
+          "path": "scripts/icfes-launch-harness.mjs",
+          "sha256": "a25161d27c19277adc01cfbcbf9eada0d3e2103375e2b7997b292453aad882d5"
+        },
+        {
+          "path": "scripts/lib/icfes-launch-harness-core.mjs",
+          "sha256": "761b715cc056f4dee09f55b7fa2a946ddb2479bccc404e9b16bfddc9a43f79c3"
+        },
+        {
+          "path": "scripts/lib/icfes-own-expansion-core.mjs",
+          "sha256": "f48bf9747ff72d25b8506f06ca72af6923caed9feed81ae0845fb2f0525f6d85"
+        },
+        {
+          "path": "docs/ICFES-OWN-MOCK-EXPANSION-PIPELINE.md",
+          "sha256": "a78045bbd5f1a33d2bc4fed040c42b1630f50a42a0fe77542ae66ba46e664765"
+        },
+        {
+          "path": ".github/workflows/content-integrity.yml",
+          "sha256": "a667a6e356f94a0fec0ba7d6743602311b8bf87698b9f646d6dfc03c3a4cdee6"
+        },
+        {
+          "path": "tests/icfes-own-expansion-v2.test.mjs",
+          "sha256": "7cd17d9bafbbf3a1fd3e00929c7b3345cbec5846e6d6fe77a86fc94cf5bef9f5"
+        },
+        {
+          "path": "tests/icfes-launch-harness.test.mjs",
+          "sha256": "73a43e076fba5ec95eb677ede86c720a4e9db0ef04f95d63898e2dfd07c30637"
+        }
       ],
       "gateAssessments": {
         "editorial": {
@@ -62,89 +343,210 @@
           "ownerRole": "editorial-adjudicator",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "25-31", "claim": "The current 23 owned mocks have an approved remediated snapshot; attributed historical banks remain outside paid detail." }
+            {
+              "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md",
+              "lines": "25-31",
+              "claim": "The current 23 owned mocks have an approved remediated snapshot; attributed historical banks remain outside paid detail."
+            }
           ],
-          "stopConditionIds": ["editorial-unresolved"]
+          "stopConditionIds": [
+            "editorial-unresolved"
+          ]
         },
         "seo": {
           "status": "PASS",
           "ownerRole": "seo-owner",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx", "lines": "21-30,41-77", "claim": "Owned guided mocks are noindex/noarchive and anonymous users receive only the membership offer, not questions or feedback." },
-            { "path": "src/app/sitemap.ts", "lines": "264-280", "claim": "The sitemap contains the pedagogical public cluster but not the membership-gated owned-mock guided routes." }
+            {
+              "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx",
+              "lines": "21-30,41-77",
+              "claim": "Owned guided mocks are noindex/noarchive and anonymous users receive only the membership offer, not questions or feedback."
+            },
+            {
+              "path": "src/app/sitemap.ts",
+              "lines": "264-280",
+              "claim": "The sitemap contains the pedagogical public cluster but not the membership-gated owned-mock guided routes."
+            }
           ],
-          "stopConditionIds": ["seo-answer-leak"]
+          "stopConditionIds": [
+            "seo-answer-leak"
+          ]
         },
         "pricing": {
           "status": "PASS",
           "ownerRole": "product-owner",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "src/lib/icfes/commerce-v1.ts", "lines": "10-14,45-83,116-192", "claim": "The facade fixes the 12k/49k/99k prices, exam-scoped monthly SKUs and deterministic upgrade quotes." },
-            { "path": "src/lib/xpress-commerce/payments.server.ts", "lines": "39-78", "claim": "Monthly checkout recalculates the active-member quote server-side and persists the exact offer, scope, credit and amount." }
+            {
+              "path": "src/lib/icfes/commerce-v1.ts",
+              "lines": "10-192",
+              "claim": "The facade fixes the 12k/49k/99k prices, exam-scoped monthly SKUs and the only supported upgrade: 49k to 99k for COP 50,000 within the same period."
+            },
+            {
+              "path": "src/lib/xpress-commerce/payments.server.ts",
+              "lines": "39-78",
+              "claim": "Monthly checkout recalculates the active-member quote server-side and persists the exact offer, scope, credit and amount."
+            }
           ],
-          "stopConditionIds": ["pricing-contract-missing"]
+          "stopConditionIds": [
+            "pricing-contract-missing"
+          ]
         },
         "security": {
           "status": "PASS",
           "ownerRole": "security-reviewer",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "src/lib/icfes/attempt-token.server.ts", "lines": "38-49,52-68", "claim": "Anonymous result access uses a signed, attempt-scoped capability with a documented 30-day lifetime." },
-            { "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts", "lines": "35-77", "claim": "The route requires a matching capability or authenticated owner, checks ICFES membership scope, and requires an approved persisted one-time entitlement before returning answers." }
+            {
+              "path": "src/lib/icfes/attempt-token.server.ts",
+              "lines": "38-49,52-68",
+              "claim": "Anonymous result access uses a signed, attempt-scoped capability with a documented 30-day lifetime."
+            },
+            {
+              "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts",
+              "lines": "35-77",
+              "claim": "The route requires a matching capability or authenticated owner, checks ICFES membership scope, and requires an approved persisted one-time entitlement before returning answers."
+            }
           ],
-          "stopConditionIds": ["security-bypass"]
+          "stopConditionIds": [
+            "security-bypass"
+          ]
         },
         "privacy": {
           "status": "BLOCKED",
           "ownerRole": "privacy-owner",
           "checkedAt": "2026-09-09T17:20:23-05:00",
           "evidence": [
-            { "path": "supabase/migrations/20260909180000_icfes_privacy_operations.sql", "lines": "1-550", "claim": "Unapplied RPCs model owner-scoped export, attempt-data deletion and a bounded retention purge with explicit revokes, pseudonymous evidence, idempotency and a unique APPROVED-contract guard; no cron is scheduled." },
-            { "path": "src/lib/icfes/privacy-operations.server.ts", "lines": "1-77", "claim": "Server-only helpers derive the subject from verified auth, require an explicit disabled-by-default operations flag and call privileged RPCs without accepting client-supplied ownership." },
-            { "path": "tests/icfes-privacy-operations.test.mjs", "lines": "1-109", "claim": "Pure and static tests cover same-origin/idempotency validation, fail-closed draft behavior, owner filters, third-party exclusions, deletion ordering, bounded purge and grants." },
-            { "path": "docs/icfes-privacy-contract.md", "lines": "21-81", "claim": "Retention, request deadlines, legal basis, minor handling, financial-ledger treatment, purge scheduling and Sandbox proof remain pending human or operational approval." }
+            {
+              "path": "supabase/migrations/20260909180000_icfes_privacy_operations.sql",
+              "lines": "1-550",
+              "claim": "Unapplied RPCs model owner-scoped export, attempt-data deletion and a bounded retention purge with explicit revokes, pseudonymous evidence, idempotency and a unique APPROVED-contract guard; no cron is scheduled."
+            },
+            {
+              "path": "src/lib/icfes/privacy-operations.server.ts",
+              "lines": "1-77",
+              "claim": "Server-only helpers derive the subject from verified auth, require an explicit disabled-by-default operations flag and call privileged RPCs without accepting client-supplied ownership."
+            },
+            {
+              "path": "tests/icfes-privacy-operations.test.mjs",
+              "lines": "1-109",
+              "claim": "Pure and static tests cover same-origin/idempotency validation, fail-closed draft behavior, owner filters, third-party exclusions, deletion ordering, bounded purge and grants."
+            },
+            {
+              "path": "docs/icfes-privacy-contract.md",
+              "lines": "21-81",
+              "claim": "Retention, request deadlines, legal basis, minor handling, financial-ledger treatment, purge scheduling and Sandbox proof remain pending human or operational approval."
+            }
           ],
-          "stopConditionIds": ["privacy-contract-missing"]
+          "stopConditionIds": [
+            "privacy-contract-missing"
+          ]
         },
         "payments": {
           "status": "BLOCKED",
           "ownerRole": "payments-owner",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "docs/icfes-payments-adversarial-local.json", "lines": "1-46", "claim": "A deterministic, hash-bound local run passes 10/10 adversarial cases for state transitions, tampering, replay, reversals and every required upgrade path without network or credentials." },
-            { "path": "tests/icfes-payments-adversarial.test.mjs", "lines": "1-213", "claim": "Focused tests prove that unapproved states grant nothing, tampered provider facts are rejected, reversals revoke access and released upgrade credit cannot be reused by a late approval." },
-            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "56-61", "claim": "The migrations remain unapplied and no real or Sandbox checkout has granted an entitlement." },
-            { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "lines": "2-35,41-62", "claim": "The monthly ledger models SKUs, upgrades and idempotent payment evidence, but live provider reversal mapping and operational refund/chargeback proof are not present." }
+            {
+              "path": "docs/icfes-payments-adversarial-local.json",
+              "lines": "1-46",
+              "claim": "A deterministic, hash-bound local run passes 10/10 adversarial cases for state transitions, tampering, replay, reversals and every required upgrade path without network or credentials."
+            },
+            {
+              "path": "tests/icfes-payments-adversarial.test.mjs",
+              "lines": "1-213",
+              "claim": "Focused tests prove that unapproved states grant nothing, tampered provider facts are rejected, reversals revoke access and released upgrade credit cannot be reused by a late approval."
+            },
+            {
+              "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md",
+              "lines": "56-61",
+              "claim": "The migrations remain unapplied and no real or Sandbox checkout has granted an entitlement."
+            },
+            {
+              "path": "src/lib/icfes/payment-events.server.ts",
+              "lines": "1-70",
+              "claim": "The one-attempt ledger preserves terminal VOIDED state and revokes active detail entitlements; Sandbox refund and chargeback proof is still pending."
+            },
+            {
+              "path": "supabase/migrations/20260912160504_icfes_teacher_12h_operational_loop.sql",
+              "lines": "220-312",
+              "claim": "The monthly ledger revokes memberships and credits, cancels open teacher work and records financial review on a verified reversal; migrations and provider E2E remain unapplied."
+            }
           ],
-          "stopConditionIds": ["payment-evidence-missing"]
+          "stopConditionIds": [
+            "payment-evidence-missing"
+          ]
         },
         "teacher-ops": {
           "status": "BLOCKED",
           "ownerRole": "teacher-ops-owner",
           "checkedAt": "2026-09-09T16:40:00-05:00",
           "evidence": [
-            { "path": "src/lib/icfes/teacher-rubric-v1.ts", "lines": "1-47", "claim": "A versioned, evidence-bound ICFES pedagogical rubric defines weighted criteria, required output and QA stop conditions without claiming an official score." },
-            { "path": "src/lib/icfes/teacher-ops-v1.ts", "lines": "4-21,48-81,99-133,150-235", "claim": "The local pure harness fixes one credit, a conditional 24-hour target, pre-checkout reservation, capacity stop conditions, request idempotency, queue leases and 12/18/22-hour alerts." },
-            { "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql", "lines": "121-280,283-396,425-482,616-733", "claim": "The unapplied migration models a service-role-only calibrated roster, atomic reservation, one review per membership, payment consumption, queue leases and alerts; ICFES requests require an owned nonempty icfes_attempts row and the leased payload projects that real answer source without identity." },
-            { "path": "src/lib/icfes/teacher-ops.server.ts", "lines": "38-78", "claim": "Server-only helpers enqueue an attempt-bound review and read its payload through the lease/reviewer-checked RPC; no browser route or worker currently invokes them." },
-            { "path": "src/lib/actions/saveExamResult.ts", "lines": "27-52", "claim": "The generic ICFES history write does not persist objective_answers, so it is not accepted as teacher evidence." },
-            { "path": "src/lib/xpress-commerce/payment.ts", "lines": "6-32", "claim": "An ICFES teacher order is rejected unless it carries the exact ICFES addendum version; other exam contracts remain unchanged." },
-            { "path": "src/lib/xpress-commerce/terms.ts", "lines": "4-15", "claim": "The global terms still promise feedback after every complete submission, conflicting with the one-credit ICFES product unless the specific addendum is presented and accepted." },
-            { "path": "tests/icfes-teacher-ops-v1.test.mjs", "lines": "27-187", "claim": "Local tests cover rubric/addendum scope, capacity blocking, reservation replay, finite credit, lease recovery, alerts, service-role guards and the secure-attempt evidence link." },
-            { "path": "docs/icfes-teacher-ops-v1.md", "lines": "1-29", "claim": "No calibrated roster, observed utilization/p95, applied migration, checkout addendum capture, attempt-claim route, worker or immutable question snapshot exists; local controls do not justify enabling the tier." }
+            {
+              "path": "src/lib/icfes/teacher-rubric-v1.ts",
+              "lines": "1-47",
+              "claim": "A versioned, evidence-bound ICFES pedagogical rubric defines weighted criteria, required output and QA stop conditions without claiming an official score."
+            },
+            {
+              "path": "src/lib/icfes/teacher-ops-v1.ts",
+              "lines": "4-235",
+              "claim": "The local pure harness fixes one credit, a conditional 12-hour target, pre-checkout reservation, capacity stop conditions, request idempotency and queue leases; the durable outbox schedules owner alerts at 6, 9 and 11 hours."
+            },
+            {
+              "path": "supabase/migrations/20260912160504_icfes_teacher_12h_operational_loop.sql",
+              "lines": "80-501",
+              "claim": "The unapplied repair models finite capacity including open work, one 12-hour review credit, revocation-safe queues, expiring leases, QA and an environment-scoped durable notification outbox."
+            },
+            {
+              "path": "src/lib/icfes/teacher-ops.server.ts",
+              "lines": "1-220",
+              "claim": "Server-only helpers enqueue attempt-bound work and expose the pseudonymous payload only through reviewer- and lease-checked RPCs."
+            },
+            {
+              "path": "src/lib/actions/saveExamResult.ts",
+              "lines": "27-52",
+              "claim": "The generic ICFES history write does not persist objective_answers, so it is not accepted as teacher evidence."
+            },
+            {
+              "path": "src/lib/xpress-commerce/payment.ts",
+              "lines": "6-32",
+              "claim": "An ICFES teacher order is rejected unless it carries the exact ICFES addendum version; other exam contracts remain unchanged."
+            },
+            {
+              "path": "src/lib/xpress-commerce/terms.ts",
+              "lines": "1-80",
+              "claim": "The versioned general terms defer ICFES human-review scope to the exact one-credit, conditional 12-hour addendum captured at checkout."
+            },
+            {
+              "path": "tests/icfes-teacher-ops-v1.test.mjs",
+              "lines": "27-187",
+              "claim": "Local tests cover rubric/addendum scope, capacity blocking, reservation replay, finite credit, lease recovery, alerts, service-role guards and the secure-attempt evidence link."
+            },
+            {
+              "path": "docs/icfes-teacher-ops-v1.md",
+              "lines": "1-120",
+              "claim": "The local inbox, worker contract, outbox and immutable snapshot exist, but no calibrated production roster, observed utilization/p95, applied migration or Sandbox notification proof exists; local controls do not justify enabling the tier."
+            }
           ],
-          "stopConditionIds": ["teacher-capacity-red"]
+          "stopConditionIds": [
+            "teacher-capacity-red"
+          ]
         },
         "release": {
           "status": "BLOCKED",
           "ownerRole": "release-warden",
           "checkedAt": "2026-09-09T00:00:00-05:00",
           "evidence": [
-            { "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md", "lines": "96-102", "claim": "Production activation, migration, legal review and real-environment evidence remain explicitly pending." }
+            {
+              "path": "docs/ICFES-INTEGRATION-FINAL-2026-09-08.md",
+              "lines": "96-102",
+              "claim": "Production activation, migration, legal review and real-environment evidence remain explicitly pending."
+            }
           ],
-          "stopConditionIds": ["release-proof-missing"]
+          "stopConditionIds": [
+            "release-proof-missing"
+          ]
         }
       }
     }

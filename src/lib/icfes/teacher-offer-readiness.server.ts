@@ -4,6 +4,8 @@ import { getWompiServerConfig } from '@/lib/wompi/server';
 
 export const ICFES_TEACHER_CHECKOUT_UNAVAILABLE_MESSAGE =
   'El plan docente ICFES no está disponible para compra en este momento. Puedes continuar con el plan automático.' as const;
+export const ICFES_MEMBERSHIP_CHECKOUT_UNAVAILABLE_MESSAGE =
+  'Los planes ICFES están temporalmente cerrados mientras validamos la persistencia y el contrato de privacidad. Tu resultado gratuito sigue disponible.' as const;
 
 export type IcfesTeacherOfferReadiness = Readonly<{
   purchasable: boolean;
@@ -57,17 +59,29 @@ async function hasExactlyOneCompleteApprovedPrivacyContract(): Promise<boolean> 
     && Number.isFinite(Date.parse(contract.approved_at));
 }
 
-export async function getIcfesTeacherOfferReadiness(): Promise<IcfesTeacherOfferReadiness> {
-  if (process.env.ICFES_PERSISTENCE_ENABLED !== 'true') return unavailable('feature-disabled');
-
+export async function getIcfesMembershipOfferReadiness(): Promise<IcfesTeacherOfferReadiness> {
+  if (process.env.ICFES_PERSISTENCE_ENABLED !== 'true') {
+    return { ...unavailable('feature-disabled'), message: ICFES_MEMBERSHIP_CHECKOUT_UNAVAILABLE_MESSAGE };
+  }
   try {
     if (!(await hasExactlyOneCompleteApprovedPrivacyContract())) {
-      return unavailable('privacy-contract-unavailable');
+      return { ...unavailable('privacy-contract-unavailable'), message: ICFES_MEMBERSHIP_CHECKOUT_UNAVAILABLE_MESSAGE };
     }
     const config = getWompiServerConfig();
     if (process.env.VERCEL_ENV !== 'production' && config.environment === 'production') {
-      return unavailable('feature-disabled');
+      return { ...unavailable('feature-disabled'), message: ICFES_MEMBERSHIP_CHECKOUT_UNAVAILABLE_MESSAGE };
     }
+    return { purchasable: true, reason: 'ready', message: null };
+  } catch {
+    return { ...unavailable('privacy-contract-unavailable'), message: ICFES_MEMBERSHIP_CHECKOUT_UNAVAILABLE_MESSAGE };
+  }
+}
+
+export async function getIcfesTeacherOfferReadiness(): Promise<IcfesTeacherOfferReadiness> {
+  try {
+    const base = await getIcfesMembershipOfferReadiness();
+    if (!base.purchasable) return unavailable(base.reason as Exclude<IcfesTeacherOfferReadiness['reason'], 'ready'>);
+    const config = getWompiServerConfig();
     const { data, error } = await createAdminClient().rpc('xpress_teacher_capacity_status', {
       p_environment: config.environment,
     }).abortSignal(AbortSignal.timeout(8000));

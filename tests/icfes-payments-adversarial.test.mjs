@@ -125,19 +125,13 @@ for (const reversal of ['REFUND', 'CHARGEBACK']) {
   });
 }
 
-test('12k detail upgrades to 49k or 99k only once, for the same owner and within seven days', () => {
-  for (const [target, expectedAmount] of [['exam-auto', 3_700_000], ['exam-teacher', 8_700_000]]) {
+test('12k detail is not silently used as an unimplemented membership credit', () => {
+  for (const target of ['exam-auto', 'exam-teacher']) {
     const approved = approvedDetail(`source-${target}`);
     const source = approved.ledger.orders[`source-${target}`];
-    const upgrade = prepareIcfesLocalPaymentOrder({
+    assert.throws(() => prepareIcfesLocalPaymentOrder({
       ledger: approved.ledger, runtime, id: `upgrade-${target}`,
       reference: `LOCAL-ICFES-upgrade-${target}`, ownerId, requestedOfferId: target,
-      createdAt: '2026-09-16T12:00:00.000Z', upgradeSourceOrderId: source.id,
-    });
-    assert.equal(upgrade.order.amountInCents, expectedAmount);
-    assert.throws(() => prepareIcfesLocalPaymentOrder({
-      ledger: upgrade.ledger, runtime, id: `second-${target}`,
-      reference: `LOCAL-ICFES-second-${target}`, ownerId, requestedOfferId: target,
       createdAt: '2026-09-16T12:00:00.000Z', upgradeSourceOrderId: source.id,
     }), /upgrade_source_ineligible/);
     assert.throws(() => prepareIcfesLocalPaymentOrder({
@@ -171,11 +165,15 @@ test('49k upgrades to 99k for 50k and preserves the original period end', () => 
 });
 
 test('a late approval cannot reuse upgrade credit released and reserved by another order', () => {
-  const approved = approvedDetail('source-reassigned');
+  const prepared = prepareIcfesLocalPaymentOrder({
+    ledger: createIcfesLocalPaymentLedger(runtime), runtime, id: 'source-reassigned',
+    reference: 'LOCAL-ICFES-source-reassigned', ownerId, requestedOfferId: 'exam-auto', createdAt: instant,
+  });
+  const approved = apply(prepared.ledger, prepared.order, { eventId: 'event-source-approved', status: 'APPROVED' });
   const source = approved.ledger.orders['source-reassigned'];
   const first = prepareIcfesLocalPaymentOrder({
     ledger: approved.ledger, runtime, id: 'upgrade-first', reference: 'LOCAL-ICFES-upgrade-first', ownerId,
-    requestedOfferId: 'exam-auto', createdAt: '2026-09-10T12:00:00.000Z', upgradeSourceOrderId: source.id,
+    requestedOfferId: 'exam-teacher', createdAt: '2026-09-10T12:00:00.000Z', upgradeSourceOrderId: source.id,
   });
   const declined = apply(first.ledger, first.order, { eventId: 'event-first-declined', status: 'DECLINED' });
   const second = prepareIcfesLocalPaymentOrder({
@@ -191,11 +189,15 @@ test('a late approval cannot reuse upgrade credit released and reserved by anoth
 });
 
 test('refund or chargeback of an upgrade source revokes every dependent entitlement', () => {
-  const approved = approvedDetail('source-cascade');
+  const prepared = prepareIcfesLocalPaymentOrder({
+    ledger: createIcfesLocalPaymentLedger(runtime), runtime, id: 'source-cascade',
+    reference: 'LOCAL-ICFES-source-cascade', ownerId, requestedOfferId: 'exam-auto', createdAt: instant,
+  });
+  const approved = apply(prepared.ledger, prepared.order, { eventId: 'event-source-cascade-approved', status: 'APPROVED' });
   const source = approved.ledger.orders['source-cascade'];
   const upgrade = prepareIcfesLocalPaymentOrder({
     ledger: approved.ledger, runtime, id: 'upgrade-cascade', reference: 'LOCAL-ICFES-upgrade-cascade', ownerId,
-    requestedOfferId: 'exam-auto', createdAt: '2026-09-10T12:00:00.000Z', upgradeSourceOrderId: source.id,
+    requestedOfferId: 'exam-teacher', createdAt: '2026-09-10T12:00:00.000Z', upgradeSourceOrderId: source.id,
   });
   const upgraded = apply(upgrade.ledger, upgrade.order, { eventId: 'event-upgrade-approved', status: 'APPROVED' });
   const reversed = apply(upgraded.ledger, source, { eventId: 'event-source-chargeback', kind: 'CHARGEBACK', status: undefined });

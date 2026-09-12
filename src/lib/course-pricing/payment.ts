@@ -26,7 +26,17 @@ export function parseProviderPayment(value: unknown): ProviderPayment | null {
 }
 export function safeCourseReturnPath(value: string | null) {
   if (!value || !value.startsWith('/precios') && !value.startsWith('/inscripcion') && !value.startsWith('/suscripcion/examenes')) return '/dashboard';
-  try { const u=new URL(value,'https://www.idiomaswl.com'); return u.origin==='https://www.idiomaswl.com' && ['/precios','/inscripcion','/suscripcion/examenes'].includes(u.pathname) ? u.pathname+u.search : '/dashboard'; } catch { return '/dashboard'; }
+  try {
+    const u=new URL(value,'https://www.idiomaswl.com');
+    if (u.origin!=='https://www.idiomaswl.com' || !['/precios','/inscripcion','/suscripcion/examenes'].includes(u.pathname)) return '/dashboard';
+    if (u.pathname==='/suscripcion/examenes') {
+      const attempt=u.searchParams.get('attempt');
+      return attempt && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(attempt)
+        ? `/suscripcion/examenes?attempt=${encodeURIComponent(attempt)}`
+        : '/suscripcion/examenes';
+    }
+    return u.pathname+u.search;
+  } catch { return '/dashboard'; }
 }
 export function isCourseRequestOrigin(originHeader:string|null,host:string|null,environment?:string) {
   try {

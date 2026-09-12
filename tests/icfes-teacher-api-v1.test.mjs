@@ -24,12 +24,14 @@ const validResult = {
 };
 
 test('worker credential derives reviewer identity and fails closed on secret tampering', () => {
-  const credential = createIcfesTeacherWorkerCredential(reviewerId, secret);
-  assert.equal(authenticateIcfesTeacherWorker(credential, secret), reviewerId);
-  assert.equal(authenticateIcfesTeacherWorker(credential, `${secret}x`), null);
+  const now = Date.parse('2026-09-12T12:00:00.000Z');
+  const credential = createIcfesTeacherWorkerCredential(reviewerId, secret, now);
+  assert.equal(authenticateIcfesTeacherWorker(credential, secret, now), reviewerId);
+  assert.equal(authenticateIcfesTeacherWorker(credential, `${secret}x`, now), null);
   assert.equal(authenticateIcfesTeacherWorker(credential.replace(reviewerId, '223e4567-e89b-42d3-a456-426614174000'), secret), null);
   assert.equal(authenticateIcfesTeacherWorker(null, secret), null);
   assert.equal(authenticateIcfesTeacherWorker(credential, 'short'), null);
+  assert.equal(authenticateIcfesTeacherWorker(credential, secret, now + 15 * 60_000 + 1_000), null);
 });
 
 test('teacher result is allowlisted, versioned and deterministically hashed', () => {
@@ -62,7 +64,7 @@ test('private result UI hides request control unless server eligibility exists a
   const detail = read('src/app/api/icfes/attempts/[attemptId]/detail/route.ts');
   const client = read('src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx');
   assert.match(detail, /membership\.offer_id === 'exam-teacher'/);
-  assert.match(detail, /capabilityMatches && await isIcfesTeacherReviewRequestReady\(membership\.id\)/);
+  assert.match(detail, /userOwnsAttempt && await isIcfesTeacherReviewRequestReady\(membership\.id\)/);
   assert.match(detail, /canRequest: ready && !existing/);
   assert.match(client, /teacherReview\.canRequest \|\| detail\.teacherReview\.status/);
   assert.match(client, /body: JSON\.stringify\(\{ attemptId \}\)/);
@@ -76,7 +78,7 @@ test('worker endpoints derive reviewer from HMAC credential and allowlist their 
   const renew = read('src/app/api/internal/icfes/teacher-reviews/renew/route.ts');
   const complete = read('src/app/api/internal/icfes/teacher-reviews/complete/route.ts');
   for (const route of [claim, renew, complete]) {
-    assert.match(route, /authenticateIcfesTeacherWorker\(request\.headers\.get\('authorization'\), process\.env\.CRON_SECRET\)/);
+    assert.match(route, /authenticateIcfesTeacherWorker\(request\.headers\.get\('authorization'\), process\.env\.ICFES_TEACHER_WORKER_SECRET\)/);
     assert.doesNotMatch(route, /input\.reviewerId|body\.reviewerId/);
     assert.match(route, /Cache-Control/);
   }

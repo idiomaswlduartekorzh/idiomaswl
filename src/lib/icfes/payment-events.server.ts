@@ -36,7 +36,11 @@ export async function persistVerifiedIcfesTransaction(input: {
       || Number(order.amount_in_cents) !== transaction.amountInCents || order.currency !== transaction.currency
       || order.environment !== input.config.environment
       || (order.wompi_transaction_id && order.wompi_transaction_id !== transaction.id)) return 'failed';
-    const nextStatus = order.status === 'APPROVED' ? 'APPROVED' : transaction.status;
+    const nextStatus = order.status === 'VOIDED'
+      ? 'VOIDED'
+      : transaction.status === 'VOIDED'
+        ? 'VOIDED'
+        : order.status === 'APPROVED' ? 'APPROVED' : transaction.status;
     const now = new Date().toISOString();
     const { error: updateError } = await admin.from('icfes_pass_orders').update({
       status: nextStatus, wompi_transaction_id: transaction.id,
@@ -45,9 +49,14 @@ export async function persistVerifiedIcfesTransaction(input: {
     if (updateError) return 'failed';
     if (nextStatus === 'APPROVED') {
       const { error: entitlementError } = await admin.from('icfes_entitlements').upsert({
-        attempt_id: transaction.attemptId, order_id: order.id, product_code: ICFES_DETAIL_OFFER_ID, granted_at: order.paid_at ?? now,
+        attempt_id: transaction.attemptId, order_id: order.id, product_code: ICFES_DETAIL_OFFER_ID,
+        granted_at: order.paid_at ?? now, status: 'active', revoked_at: null,
       }, { onConflict: 'attempt_id' });
       if (entitlementError) return 'failed';
+    } else if (nextStatus === 'VOIDED') {
+      const { error: revokeError } = await admin.from('icfes_entitlements')
+        .update({ status: 'revoked', revoked_at: now }).eq('order_id', order.id).eq('status', 'active');
+      if (revokeError) return 'failed';
     }
     return 'saved';
   } catch { return 'failed'; }

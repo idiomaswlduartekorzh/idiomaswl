@@ -5,6 +5,7 @@ import {
   disableIcfesPremiumAfterPersistenceFailure,
   hasSensitiveResultFields,
   ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON,
+  toIcfesPublicResult,
   validateIcfesAnswers,
 } from '../src/lib/icfes/attempt-contract.ts';
 import { parseIcfesWompiTransaction } from '../src/lib/icfes/payment-event.ts';
@@ -18,6 +19,17 @@ test('free result DTO rejects answer-key and rationale fields', () => {
     { answer: 1 }, { correctAnswer: 'B' }, { nested: { answers: { q1: 1 } } },
     { rationale: 'because' }, { explanation: 'because' },
   ]) assert.equal(hasSensitiveResultFields(unsafe), true);
+});
+
+test('the public result omits diagnostic breakdowns reserved for paid feedback', () => {
+  const publicResult = toIcfesPublicResult({
+    attemptId: '123e4567-e89b-42d3-a456-426614174000', examId: 'mock-01',
+    correct: 2, total: 3, percentage: 67, byPart: [], bySkill: [],
+    recommendation: { label: 'Reforzar', href: '/reforzar' }, officialResource: false, premiumEligible: true,
+  });
+  assert.equal('byPart' in publicResult, false);
+  assert.equal('bySkill' in publicResult, false);
+  assert.equal('recommendation' in publicResult, false);
 });
 
 test('response validation rejects unknown questions and manipulated choices', () => {
@@ -75,11 +87,27 @@ test('the grade route fails open only for the basic result and does not mint a p
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
   assert.match(route, /persisted = await persistIcfesAttempt/);
-  assert.match(route, /persisted \? result : disableIcfesPremiumAfterPersistenceFailure\(result\)/);
+  assert.match(route, /persisted \? publicResult : disableIcfesPremiumAfterPersistenceFailure\(publicResult\)/);
+  assert.match(route, /toIcfesPublicResult\(result\)/);
   assert.match(route, /if \(persisted\) \{\s*response\.cookies\.set\(icfesAttemptCookieName\(payload\.attemptId\), resultAccessToken/);
   assert.doesNotMatch(route, /secure persistence failed:[\s\S]{0,180}return json\(/);
   assert.match(runner, /data-testid="icfes-premium-unavailable"/);
   assert.match(runner, /<p>\{result\.premiumUnavailableReason\}<\/p>/);
+});
+
+test('commercial persistence records the approved privacy contract and age assurance', () => {
+  const grade = read('src/app/api/icfes/attempts/grade/route.ts');
+  const persistence = read('src/lib/icfes/grading.server.ts');
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
+  assert.match(grade, /ADULT_ATTESTED/);
+  assert.match(grade, /MINOR_GUARDIAN_ATTESTED/);
+  assert.match(grade, /if \(!ageAssurance\) throw new Error/);
+  assert.match(persistence, /from\('icfes_privacy_contracts'\)[\s\S]+\.eq\('status', 'APPROVED'\)\.limit\(2\)/);
+  assert.match(persistence, /contracts\.length !== 1/);
+  assert.match(persistence, /privacy_contract_version: contracts\[0\]\.version/);
+  assert.match(persistence, /guardian_attested_at:/);
+  assert.match(runner, /FREE_ONLY/);
+  assert.match(runner, /ageAssurance: icfesPrivacyChoice/);
 });
 
 test('private ICFES results use layered noindex, noarchive and no-store controls', () => {
@@ -100,6 +128,7 @@ test('score is shown before an explicitly optional, consented lead form', () => 
   assert.match(runner, /checked=\{consent\}/);
   assert.match(runner, /if \(!consent/);
   assert.match(runner, /data-testid="icfes-free-result" data-active-practice="true"/);
+  assert.doesNotMatch(runner, /Desglose por parte|Habilidades observadas/);
 });
 
 test('official resources cannot reach checkout or premium detail', () => {
@@ -133,7 +162,8 @@ test('post-result commercial ladder exposes the three reviewed choices without r
   assert.match(runner, /Respuestas y detalle — COP 12\.000/);
   assert.match(runner, /Todos los simulacros — COP 49\.000/);
   assert.match(runner, /Plan con docente — COP 99\.000/);
-  assert.match(runner, /un crédito de revisión docente por periodo/);
+  assert.match(runner, /un crédito de revisión humana por periodo/);
+  assert.match(runner, /objetivo de entrega dentro de 12 horas/);
   assert.match(runner, /RENOVACIÓN MANUAL/);
   assert.match(runner, /plan=exam-auto/);
   assert.match(runner, /plan=exam-teacher/);

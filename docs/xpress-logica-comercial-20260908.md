@@ -1,5 +1,10 @@
 # Registro y membresías de exámenes
 
+> Documento histórico del 8 de septiembre de 2026. Para ICFES, la oferta vigente
+> está definida en `docs/icfes-commerce-v1.md`: un crédito humano por membresía y
+> objetivo operativo condicional de 12 horas. Las referencias de ICFES a 24 horas
+> o a revisión después de cada entrega en este archivo quedaron sustituidas.
+
 ## Registro
 
 Al crear la cuenta, la persona elige una ruta:

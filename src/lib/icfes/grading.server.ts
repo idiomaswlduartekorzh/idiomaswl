@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import type { MCQQuestion } from '@/data/mocks/types';
-import type { IcfesAnswerMap, IcfesBasicResultDto, IcfesPremiumQuestionDto } from './attempt-contract';
+import type { IcfesAgeAssurance, IcfesAnswerMap, IcfesBasicResultDto, IcfesPremiumQuestionDto } from './attempt-contract';
 import { getIcfesPremiumAvailability, getIcfesSecureExam } from './exam-registry.server';
 import { isIcfesPersistenceEnabled } from './product-config.server';
 import { buildIcfesQuestionSnapshot, hashIcfesQuestionSnapshot, isSameIcfesAttemptEvidence } from './attempt-evidence';
@@ -45,6 +45,7 @@ export function gradeIcfesAttempt(examId: string, attemptId: string, answers: Ic
 
 export async function persistIcfesAttempt(input: {
   attemptId: string; examId: string; token: string; answers: IcfesAnswerMap; result: IcfesBasicResultDto;
+  ageAssurance: IcfesAgeAssurance;
 }): Promise<boolean> {
   if (!isIcfesPersistenceEnabled()) return false;
   const { data: { user } } = await (await createClient()).auth.getUser();
@@ -61,10 +62,18 @@ export async function persistIcfesAttempt(input: {
     question_snapshot: questionSnapshot,
   };
   const admin = createAdminClient();
+  const { data: contracts, error: contractError } = await admin.from('icfes_privacy_contracts')
+    .select('version').eq('status', 'APPROVED').limit(2);
+  if (contractError || !contracts || contracts.length !== 1) {
+    throw new Error('No existe un contrato de privacidad ICFES único y aprobado.');
+  }
   const { error } = await admin.from('icfes_attempts').insert({
     id: input.attemptId,
     user_id: user?.id ?? null,
     ...evidence,
+    privacy_contract_version: contracts[0].version,
+    age_assurance: input.ageAssurance,
+    guardian_attested_at: input.ageAssurance === 'MINOR_GUARDIAN_ATTESTED' ? new Date().toISOString() : null,
     completed_at: new Date().toISOString(),
   });
   if (error) {

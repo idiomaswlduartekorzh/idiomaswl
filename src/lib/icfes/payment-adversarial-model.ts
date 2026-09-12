@@ -145,13 +145,8 @@ export function prepareIcfesLocalPaymentOrder(input: Readonly<{
     || source.creditConsumedByOrderId
   )) throw new Error('upgrade_source_ineligible');
 
-  const quote = source?.offerId === ICFES_DETAIL_OFFER_ID
-    ? quoteIcfesCommercePurchase({
-      requestedOfferId: input.requestedOfferId,
-      purchasedDetailAt: new Date(source.approvedAt!),
-      now,
-    })
-    : source
+  if (source?.offerId === ICFES_DETAIL_OFFER_ID) throw new Error('upgrade_source_ineligible');
+  const quote = source
       ? quoteIcfesCommercePurchase({
         requestedOfferId: input.requestedOfferId,
         activeMembership: {
@@ -163,9 +158,6 @@ export function prepareIcfesLocalPaymentOrder(input: Readonly<{
 
   if (quote.action !== 'checkout') throw new Error('local_payment_checkout_not_allowed');
   if (source && quote.creditInCents <= 0) throw new Error('upgrade_source_ineligible');
-  if (source?.offerId === ICFES_DETAIL_OFFER_ID && !['exam-auto', 'exam-teacher'].includes(input.requestedOfferId)) {
-    throw new Error('upgrade_path_not_allowed');
-  }
   if (source?.offerId === 'exam-auto' && input.requestedOfferId !== 'exam-teacher') {
     throw new Error('upgrade_path_not_allowed');
   }

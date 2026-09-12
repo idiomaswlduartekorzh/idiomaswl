@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { inventory, loadHarness, validateHarness } from './lib/icfes-launch-harness-core.mjs';
+import { inventory, loadHarness, refreshHarnessDigests, validateHarness } from './lib/icfes-launch-harness-core.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const modeArg = process.argv.find((argument) => argument.startsWith('--mode='));
 const mode = modeArg?.slice('--mode='.length) ?? 'check';
-const allowedModes = new Set(['check', 'inventory', 'release']);
+const allowedModes = new Set(['check', 'inventory', 'refresh', 'release']);
 
 if (!allowedModes.has(mode)) {
-  console.error(`Modo desconocido: ${mode}. Usa check, inventory o release.`);
+  console.error(`Modo desconocido: ${mode}. Usa check, inventory, refresh o release.`);
   process.exit(2);
 }
 
-const harness = loadHarness(repoRoot);
+const harness = mode === 'refresh' ? refreshHarnessDigests(repoRoot) : loadHarness(repoRoot);
 const failures = validateHarness(harness);
 if (failures.length > 0) {
   console.error(`ICFES launch harness inválido (${failures.length})`);
@@ -22,6 +22,9 @@ if (failures.length > 0) {
 }
 
 const result = inventory(harness);
+if (mode === 'refresh') {
+  console.log('✓ Digests del work order y candidato activo regenerados. No se creó ninguna aprobación ni release.');
+}
 if (mode === 'inventory') {
   console.log(JSON.stringify(result, null, 2));
   process.exit(0);

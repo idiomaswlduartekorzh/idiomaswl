@@ -4,7 +4,7 @@ import { createClient } from '@/lib/supabase/server';
 import { XPRESS_EXAM_OPTIONS, xpressClassPurchasePath, type XpressExamSlug } from '@/lib/student-onboarding/catalog';
 import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
 import type { XpressOfferId } from '@/lib/xpress-commerce/catalog';
-import { getIcfesTeacherOfferReadiness } from '@/lib/icfes/teacher-offer-readiness.server';
+import { getIcfesMembershipOfferReadiness, getIcfesTeacherOfferReadiness } from '@/lib/icfes/teacher-offer-readiness.server';
 import { ICFES_TEACHER_ADDENDUM } from '@/lib/icfes/teacher-ops-v1';
 import XpressMembershipClient from './XpressMembershipClient';
 
@@ -23,23 +23,28 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
 
   const { data: profile } = await supabase.from('profiles')
     .select('student_path,target_exam,xpress_plan_interest').eq('id', user.id).single();
-  if (profile?.student_path !== 'exam') redirect('/precios');
-  const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === profile.target_exam);
+  const params = await searchParams;
+  const requestedIcfesAttempt = typeof params.attempt === 'string'
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(params.attempt)
+    ? params.attempt.toLowerCase() : null;
+  if (profile?.student_path !== 'exam' && !requestedIcfesAttempt) redirect('/precios');
+  const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === (requestedIcfesAttempt ? 'icfes' : profile?.target_exam));
   if (!exam) redirect('/registro?error=seleccion');
 
-  const params = await searchParams;
   const orderId = typeof params.orden === 'string' ? params.orden : null;
   const transactionId = typeof params.id === 'string' ? params.id : null;
-  const [membership, icfesTeacherReadiness] = await Promise.all([
+  const icfesAttemptId = exam.id === 'icfes' ? requestedIcfesAttempt : null;
+  const [membership, icfesMembershipReadiness, icfesTeacherReadiness] = await Promise.all([
     activeXpressMembership(user.id),
+    exam.id === 'icfes' ? getIcfesMembershipOfferReadiness() : Promise.resolve(null),
     exam.id === 'icfes' ? getIcfesTeacherOfferReadiness() : Promise.resolve(null),
   ]);
-  const preferredOfferId: XpressOfferId = ['exam-single', 'exam-auto', 'exam-teacher'].includes(String(profile.xpress_plan_interest))
-    ? profile.xpress_plan_interest as XpressOfferId
+  const preferredOfferId: XpressOfferId = ['exam-single', 'exam-auto', 'exam-teacher'].includes(String(profile?.xpress_plan_interest))
+    ? profile?.xpress_plan_interest as XpressOfferId
     : 'exam-auto';
   const initialOfferId: XpressOfferId = exam.id === 'icfes'
-    && preferredOfferId === 'exam-teacher'
-    && !icfesTeacherReadiness?.purchasable
+    && (preferredOfferId === 'exam-single'
+      || (preferredOfferId === 'exam-teacher' && !icfesTeacherReadiness?.purchasable))
     ? 'exam-auto'
     : preferredOfferId;
 
@@ -56,6 +61,11 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
     classPurchasePath={xpressClassPurchasePath(exam.id as XpressExamSlug)}
     orderId={orderId}
     transactionId={transactionId}
+    icfesAttemptId={icfesAttemptId}
+    icfesMembershipReadiness={icfesMembershipReadiness ? {
+      purchasable: icfesMembershipReadiness.purchasable,
+      message: icfesMembershipReadiness.message,
+    } : null}
     icfesTeacherReadiness={icfesTeacherReadiness ? {
       purchasable: icfesTeacherReadiness.purchasable,
       message: icfesTeacherReadiness.message,

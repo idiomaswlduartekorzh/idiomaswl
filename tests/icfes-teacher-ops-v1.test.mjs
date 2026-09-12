@@ -20,7 +20,7 @@ const healthyCapacity = {
   heldReservations: 2,
   outstandingCredits: 3,
   oldestQueuedHours: 6,
-  rollingP95Hours: 11,
+  rollingP95Hours: 8,
   hasOpenSlaBreach: false,
 };
 
@@ -29,6 +29,7 @@ test('versions the rubric and limits the ICFES addendum to one credit', () => {
   assert.equal(ICFES_TEACHER_RUBRIC.criteria.reduce((sum, criterion) => sum + criterion.weight, 0), 100);
   assert.equal(ICFES_TEACHER_ADDENDUM.appliesTo.examSlug, 'icfes');
   assert.equal(ICFES_TEACHER_ADDENDUM.reviewCreditsPer30Days, 1);
+  assert.equal(ICFES_TEACHER_ADDENDUM.serviceTargetHours, 12);
   assert.match(ICFES_TEACHER_ADDENDUM.text, /un solo crédito/);
   assert.doesNotMatch(ICFES_TEACHER_ADDENDUM.text, /cada entrega/);
 });
@@ -58,7 +59,7 @@ test('reserves capacity before checkout and replays the same reservation', () =>
     userId: 'user-1', idempotencyKey: 'key-1', now, capacity: healthyCapacity,
   });
   assert.equal(first.action, 'held');
-  assert.equal(first.capacity.serviceRepresentation, 'target-24h');
+  assert.equal(first.capacity.serviceRepresentation, 'target-12h');
   assert.equal(first.reservation.expiresAt, '2026-09-09T15:20:00.000Z');
 
   const replay = reserveIcfesTeacherCapacity({
@@ -149,12 +150,12 @@ test('leases queued work, rejects stale workers and permits reclaim after expiry
   assert.equal(completed.status, 'completed');
 });
 
-test('emits idempotent alert thresholds at 12, 18 and 22 hours', () => {
+test('emits idempotent alert thresholds before the 12-hour target', () => {
   const requestedAt = new Date('2026-09-09T00:00:00.000Z');
-  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T11:59:59.999Z')), []);
-  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T12:00:00.000Z')), [12]);
-  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T18:00:00.000Z')), [12, 18]);
-  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T22:00:00.000Z')), [12, 18, 22]);
+  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T05:59:59.999Z')), []);
+  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T06:00:00.000Z')), [6]);
+  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T09:00:00.000Z')), [6, 9]);
+  assert.deepEqual(dueIcfesTeacherAlerts(requestedAt, new Date('2026-09-09T11:00:00.000Z')), [6, 9, 11]);
 });
 
 test('the unapplied SQL keeps teacher operations behind service-role RLS', async () => {

@@ -2,6 +2,7 @@ import { ICFES_TEACHER_UUID_PATTERN, parseIcfesTeacherIdempotencyKey, readIcfesT
 import { finishIcfesTeacherReviewForWorker, IcfesTeacherOpsError } from '@/lib/icfes/teacher-ops.server';
 import { parseIcfesTeacherReviewResult } from '@/lib/icfes/teacher-review-result';
 import { authenticateIcfesTeacherWorker } from '@/lib/icfes/teacher-worker-auth';
+import { recoverIcfesTeacherNotifications } from '@/lib/icfes/teacher-notifications.server';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -11,7 +12,7 @@ function json(body: unknown, status = 200) {
 }
 
 export async function POST(request: Request): Promise<Response> {
-  const reviewerId = authenticateIcfesTeacherWorker(request.headers.get('authorization'), process.env.CRON_SECRET);
+  const reviewerId = authenticateIcfesTeacherWorker(request.headers.get('authorization'), process.env.ICFES_TEACHER_WORKER_SECRET);
   if (!reviewerId) {
     return json({ ok: false, code: 'unauthorized' }, 401);
   }
@@ -39,6 +40,9 @@ export async function POST(request: Request): Promise<Response> {
       reviewId: input.reviewId, reviewerId, leaseId: input.leaseId, idempotencyKey,
       outcome, result, error: errorMessage,
     });
+    if (outcome === 'completed') {
+      try { await recoverIcfesTeacherNotifications(1); } catch { /* The durable outbox will retry. */ }
+    }
     return json({ ok: true, status: outcome });
   } catch (error) {
     const code = error instanceof IcfesTeacherOpsError ? error.code : 'unavailable';

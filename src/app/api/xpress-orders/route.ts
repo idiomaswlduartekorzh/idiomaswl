@@ -1,5 +1,5 @@
 import { json, readBody, sameOrigin } from '@/lib/course-pricing/http.server';
-import { getIcfesTeacherOfferReadiness } from '@/lib/icfes/teacher-offer-readiness.server';
+import { getIcfesMembershipOfferReadiness, getIcfesTeacherOfferReadiness } from '@/lib/icfes/teacher-offer-readiness.server';
 import { ICFES_TEACHER_ADDENDUM_VERSION } from '@/lib/icfes/teacher-ops-v1';
 import { parseXpressOrderInput } from '@/lib/xpress-commerce/payment';
 import { prepareXpressOrder, xpressUser } from '@/lib/xpress-commerce/payments.server';
@@ -17,6 +17,13 @@ export async function POST(request: Request) {
     ? body as Record<string, unknown>
     : null;
   const isIcfesTeacher = raw?.examSlug === 'icfes' && raw.offerId === 'exam-teacher';
+  const isIcfesMembership = raw?.examSlug === 'icfes' && ['exam-auto', 'exam-teacher'].includes(String(raw.offerId));
+  if (isIcfesMembership) {
+    const readiness = await getIcfesMembershipOfferReadiness();
+    if (!readiness.purchasable) return json({
+      code: 'icfes_membership_unavailable', message: readiness.message,
+    }, 409);
+  }
   if (isIcfesTeacher) {
     const readiness = await getIcfesTeacherOfferReadiness();
     if (!readiness.purchasable) {
@@ -45,6 +52,7 @@ export async function POST(request: Request) {
     if (code === 'xpress_already_included') return json({ message: 'Ese plan ya está activo en tu cuenta.' }, 409);
     if (code === 'xpress_change_next_period') return json({ message: 'El cambio de examen o la reducción de plan se aplica al siguiente periodo.' }, 409);
     if (code === 'xpress_exam_mismatch') return json({ message: 'El examen no coincide con el que elegiste al registrarte.' }, 403);
+    if (code === 'xpress_attempt_ownership_required') return json({ message: 'No pudimos asociar este resultado con tu cuenta. Vuelve al resultado e inténtalo otra vez.' }, 403);
     if (code === 'icfes_teacher_capacity_unavailable') {
       return json({
         code: 'icfes_teacher_unavailable',

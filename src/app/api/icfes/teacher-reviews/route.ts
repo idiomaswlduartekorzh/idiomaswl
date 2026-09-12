@@ -4,6 +4,7 @@ import { ICFES_ATTEMPT_ID_PATTERN } from '@/lib/icfes/attempt-contract';
 import { icfesAttemptCookieName } from '@/lib/icfes/attempt-token.server';
 import { parseIcfesTeacherIdempotencyKey, readIcfesTeacherJson } from '@/lib/icfes/teacher-api';
 import { claimAndEnqueueIcfesTeacherReview, getOwnedIcfesTeacherReview, IcfesTeacherOpsError } from '@/lib/icfes/teacher-ops.server';
+import { recoverIcfesTeacherNotifications } from '@/lib/icfes/teacher-notifications.server';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -33,6 +34,7 @@ export async function POST(request: Request): Promise<Response> {
   const attemptCapability = (await cookies()).get(icfesAttemptCookieName(attemptId))?.value;
   try {
     const review = await claimAndEnqueueIcfesTeacherReview({ attemptId, attemptCapability, idempotencyKey });
+    try { await recoverIcfesTeacherNotifications(1); } catch { /* The durable outbox will retry. */ }
     return json({ ok: true, review: {
       id: review.id, status: review.status, requestedAt: review.requested_at, dueAt: review.due_at,
     } }, 201);
@@ -50,7 +52,7 @@ export async function GET(request: Request): Promise<Response> {
     return json({ ok: true, review: review ? {
       id: review.id, status: review.status, requestedAt: review.requested_at, dueAt: review.due_at,
       completedAt: review.completed_at, result: review.review_result,
-    } : null });
+    } : null }, 200, { 'Cache-Control': 'private, no-store, max-age=0' });
   } catch (error) {
     const code = error instanceof IcfesTeacherOpsError ? error.code : 'unavailable';
     return json({ ok: false, code }, statusFor(code));

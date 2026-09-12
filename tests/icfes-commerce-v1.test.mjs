@@ -28,7 +28,7 @@ test('derives monthly prices and entitlements from the Xpress catalog', () => {
   assert.strictEqual(automatic.entitlements, getXpressOffer('exam-auto').entitlements);
   assert.strictEqual(teacher.entitlements, getXpressOffer('exam-teacher').entitlements);
   assert.equal(teacher.teacherReviewCreditsPerPeriod, 1);
-  assert.equal(teacher.teacherFeedbackTargetHours, 24);
+  assert.equal(teacher.teacherFeedbackTargetHours, 12);
 });
 
 test('charges COP 12,000 once for the detail of one attempt', () => {
@@ -40,37 +40,19 @@ test('charges COP 12,000 once for the detail of one attempt', () => {
   assert.equal(quote.offer.entitlements.includes('attempt-detailed-answers'), true);
 });
 
-test('credits the detail purchase toward either membership during seven days', () => {
-  const purchasedDetailAt = new Date('2026-09-01T12:00:00.000Z');
-  const now = new Date('2026-09-08T12:00:00.000Z');
+test('keeps the three advertised prices independent', () => {
   const automatic = quoteIcfesCommercePurchase({
     requestedOfferId: 'exam-auto',
-    purchasedDetailAt,
-    now,
   });
   const teacher = quoteIcfesCommercePurchase({
     requestedOfferId: 'exam-teacher',
-    purchasedDetailAt,
-    now,
   });
 
-  assert.equal(automatic.amountInCents, 3_700_000);
-  assert.equal(teacher.amountInCents, 8_700_000);
-  assert.equal(automatic.creditInCents, 1_200_000);
-  assert.equal(teacher.creditInCents, 1_200_000);
-  assert.equal(automatic.reason, 'detail-upgrade');
-});
-
-test('does not apply the detail credit after the seven-day window', () => {
-  const quote = quoteIcfesCommercePurchase({
-    requestedOfferId: 'exam-auto',
-    purchasedDetailAt: new Date('2026-09-01T12:00:00.000Z'),
-    now: new Date('2026-09-08T12:00:00.001Z'),
-  });
-
-  assert.equal(quote.amountInCents, 4_900_000);
-  assert.equal(quote.creditInCents, 0);
-  assert.equal(quote.reason, 'new-purchase');
+  assert.equal(automatic.amountInCents, 4_900_000);
+  assert.equal(teacher.amountInCents, 9_900_000);
+  assert.equal(automatic.creditInCents, 0);
+  assert.equal(teacher.creditInCents, 0);
+  assert.equal(automatic.reason, 'new-purchase');
 });
 
 test('reuses the monthly upgrade quote and preserves the existing period end', () => {

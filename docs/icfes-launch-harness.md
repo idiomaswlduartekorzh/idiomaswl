@@ -49,17 +49,15 @@ Con la prioridad actual, el estado calculado es `BLOCKED_PRIVACY`. El manifiesto
 |---|---:|---:|---|
 | `icfes-detail-attempt-v1` | COP 12.000 | Compra única | Detalle automático de un intento. |
 | `exam-auto` + `examSlug=icfes` | COP 49.000 | 30 días | Todos los mocks propios y feedback automático. |
-| `exam-teacher` + `examSlug=icfes` | COP 99.000 | 30 días | Beneficio anterior y un crédito docente; objetivo operativo de 24 horas solo con capacidad reservada. |
+| `exam-teacher` + `examSlug=icfes` | COP 99.000 | 30 días | Beneficio anterior y un crédito humano; objetivo operativo de 12 horas solo con capacidad reservada. |
 
 El cupo humano inicial es uno. “Feedback docente ilimitado” no es una interpretación permitida: cambiar esa cantidad modifica la policy y exige un nuevo work order, prueba de capacidad y nuevas aprobaciones.
 
-Los upgrades se calculan en servidor y consumen una compra inferior una sola vez:
+Los upgrades entre membresías se calculan en servidor:
 
-- 12k → 49k: COP 37.000 dentro de siete días; inicia una nueva vigencia de 30 días.
-- 12k → 99k: COP 87.000 dentro de siete días; inicia una nueva vigencia de 30 días.
 - 49k → 99k: COP 50.000 mientras el pase esté vigente; conserva su fecha final.
 
-Solo una compra `APPROVED`, no reembolsada y vinculada a la misma cuenta puede originar crédito.
+La compra de COP 12.000 es un detalle ligado a un intento y no se descuenta de las membresías: no existe una promesa comercial ni una implementación aprobada para ese crédito. Solo una membresía `APPROVED`, no reembolsada y vinculada a la misma cuenta puede originar el upgrade de COP 50.000.
 
 La evidencia `docs/icfes-payments-adversarial-local.json` se regenera de forma determinista, incluye hashes de fuente/prueba y no usa red ni credenciales. El flag `ICFES_ADVERSARIAL_PAYMENTS_ENABLED` está apagado por defecto y el modelo rechaza su ejecución en producción. Esta prueba local mejora el gate, pero no lo convierte en `PASS`: la prueba end-to-end con eventos firmados y estado persistido real sigue siendo obligatoria.
 
@@ -99,7 +97,7 @@ El modelo nuevo acepta `mock-24`, `mock-25` y números posteriores. Los borrador
 4. **Security:** scoring y autorización en servidor; acceso durable por usuario/capability; aislamiento entre usuarios; revocación por expiración o refund.
 5. **Privacy:** minimización, retención, exportación/borrado, menores, consentimiento versionado y acceso docente pseudónimo.
 6. **Payments:** Wompi Sandbox, firma, moneda, importe, ambiente, idempotencia, upgrade, refund y chargeback.
-7. **Teacher Ops:** rúbrica versionada, crédito finito, slot reservado antes de checkout, cola con lease, QA y alertas 12/18/22 h.
+7. **Teacher Ops:** rúbrica versionada, crédito finito, slot reservado antes de checkout, cola con lease, QA y alertas a las 6/9/11 h.
 8. **Release:** reportes, aprobaciones, build/E2E, canary, observabilidad y rollback.
 
 Cambiar texto, estímulo, opción, clave, rationale o metadata evaluada invalida el hash afectado y devuelve el candidato a revisión.
@@ -124,17 +122,17 @@ La venta del tier humano se apaga si ocurre cualquiera de estas condiciones:
 
 - cupo humano indefinido o ausencia de revisor calibrado;
 - utilización proyectada superior a 80%;
-- trabajo más antiguo en cola superior a 18 horas;
-- p95 móvil superior a 20 horas;
+- trabajo más antiguo en cola igual o superior a 9 horas;
+- p95 móvil superior a 10 horas;
 - una brecha real de SLA sin compensación/refund y causa cerrada.
 
 Los tiers inferiores pueden continuar únicamente si sus propios gates permanecen verdes.
 
-### Divergencia contractual vigente
+### Contrato específico vigente
 
-`src/lib/xpress-commerce/terms.ts` dice que el plan docente añade retroalimentación después de “cada entrega”. Esa condición global también sirve a otros exámenes y no se altera desde este track. Para ICFES, `icfes-teacher-addendum-2026-09-09-v1` reemplaza específicamente esa sección por un crédito durante 30 días; el parser rechaza una orden ICFES docente que no incluya la aceptación de esa versión.
+`src/lib/xpress-commerce/terms.ts` y el addendum ICFES coinciden en un crédito de retroalimentación humana por periodo de 30 días y un objetivo operativo de 12 horas. El parser rechaza una orden ICFES docente que no incluya la aceptación de la versión específica vigente.
 
-La UI ya presenta y recoge ese addendum de forma independiente, y el servidor conserva la versión aceptada. El tier ICFES docente permanece bloqueado porque las pruebas locales no sustituyen roster calibrado, worker desplegado, métricas reales, migraciones aplicadas ni una corrida Sandbox.
+La UI presenta y recoge ese addendum de forma independiente, y el servidor conserva la versión aceptada. El tier ICFES docente permanece bloqueado porque las pruebas locales no sustituyen roster calibrado, worker desplegado, métricas reales, migraciones aplicadas ni una corrida Sandbox.
 
 ## Ownership
 

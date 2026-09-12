@@ -23,16 +23,16 @@
     "late PENDING cannot regress APPROVED",
     "tampered amount, currency, environment and provider transaction are rejected",
     "REFUND and CHARGEBACK revoke access and resist approval replay",
-    "12k to 49k and 12k to 99k credit is same-owner, seven-day and single-use",
+    "12k attempt detail is not silently treated as an unimplemented membership credit",
     "49k to 99k charges 50k and preserves the period end",
     "a late approval cannot reuse upgrade credit released to another order",
     "source reversal cascades to dependent upgrade access"
   ],
   "artifacts": {
-    "src/lib/icfes/payment-adversarial-model.ts": "7bd735e67b0c06e62b38b14d8e040ed75399f5700fe8c8b58ea6229096d06dc3",
+    "src/lib/icfes/payment-adversarial-model.ts": "c18fd3de27eee42009487269a1bdd8cd1cda5e215a8fdaec02251c658a3c3fed",
     "src/lib/icfes/payment-event.ts": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22",
-    "src/lib/icfes/commerce-v1.ts": "8f0fd792101d7d750ade0f0841682b4a122f180cb45464effa6876d3efddbaeb",
-    "tests/icfes-payments-adversarial.test.mjs": "15b4f4b9de27c6eb2760d9e0a42852e19ae20d03287a88584be9366c2881d650"
+    "src/lib/icfes/commerce-v1.ts": "107b04347f18930180c113e753fc8e6433d957c7a48789b249d121847fec82f3",
+    "tests/icfes-payments-adversarial.test.mjs": "bb93b219b57d02f62e6919d4e1f9666c135bc78e174f7f3ea8acbe476b089584"
   },
   "blockers": [
     "No real Wompi Sandbox checkout, signed webhook and authoritative transaction lookup were executed.",

@@ -13,6 +13,7 @@ export const JOSE_EMAILS = [
   'zhanna.duarte@mail.ru',
   'josedavidduartesilva@gmail.com',
   'david.duartes182@gmail.com',
+  'david_duarte182@hotmail.com',
   // Legacy work email kept for backward compat
   'jose@welearn.com',
 ] as const;

@@ -1,11 +1,11 @@
 import { XPRESS_TERMS_VERSION } from '../xpress-commerce/terms.ts';
 import { ICFES_TEACHER_RUBRIC_VERSION } from './teacher-rubric-v1.ts';
 
-export const ICFES_TEACHER_OPS_VERSION = 'icfes-teacher-ops-2026-09-09-v1' as const;
-export const ICFES_TEACHER_ADDENDUM_VERSION = 'icfes-teacher-addendum-2026-09-09-v1' as const;
+export const ICFES_TEACHER_OPS_VERSION = 'icfes-teacher-ops-2026-09-12-v2' as const;
+export const ICFES_TEACHER_ADDENDUM_VERSION = 'icfes-teacher-addendum-2026-09-12-v2' as const;
 export const ICFES_TEACHER_REVIEW_CREDITS = 1 as const;
-export const ICFES_TEACHER_REVIEW_TARGET_HOURS = 24 as const;
-export const ICFES_TEACHER_ALERT_HOURS = Object.freeze([12, 18, 22] as const);
+export const ICFES_TEACHER_REVIEW_TARGET_HOURS = 12 as const;
+export const ICFES_TEACHER_ALERT_HOURS = Object.freeze([6, 9, 11] as const);
 export const ICFES_TEACHER_RESERVATION_MINUTES = 20 as const;
 export const ICFES_TEACHER_LEASE_MINUTES = 15 as const;
 
@@ -17,7 +17,7 @@ export const ICFES_TEACHER_ADDENDUM = Object.freeze({
   reviewCreditsPer30Days: ICFES_TEACHER_REVIEW_CREDITS,
   serviceTargetHours: ICFES_TEACHER_REVIEW_TARGET_HOURS,
   text:
-    'Para ICFES, el plan incluye un solo crédito de revisión docente durante los 30 días. El objetivo operativo es entregar la revisión dentro de 24 horas desde una solicitud completa. El checkout docente no debe ofrecerse si no existe una reserva de capacidad vigente.',
+    'Para ICFES, el plan incluye un solo crédito de revisión docente durante los 30 días. El objetivo operativo es entregar la revisión dentro de 12 horas desde una solicitud completa. El checkout docente no debe ofrecerse si no existe una reserva de capacidad vigente.',
 } as const);
 
 export type IcfesTeacherCapacitySnapshot = Readonly<{
@@ -42,7 +42,7 @@ export type IcfesTeacherCapacityDecision = Readonly<{
   canReserve: boolean;
   projectedUtilizationPercent: number | null;
   stopReasons: readonly IcfesTeacherCapacityStopReason[];
-  serviceRepresentation: 'target-24h' | 'unavailable';
+  serviceRepresentation: 'target-12h' | 'unavailable';
 }>;
 
 export function evaluateIcfesTeacherCapacity(
@@ -63,10 +63,10 @@ export function evaluateIcfesTeacherCapacity(
   if (projectedUtilizationPercent === null || projectedUtilizationPercent > 80) {
     stopReasons.push('capacity-utilization-red');
   }
-  if (snapshot.oldestQueuedHours !== null && snapshot.oldestQueuedHours >= 18) {
+  if (snapshot.oldestQueuedHours !== null && snapshot.oldestQueuedHours >= 9) {
     stopReasons.push('oldest-queue-red');
   }
-  if (snapshot.rollingP95Hours !== null && snapshot.rollingP95Hours > 20) {
+  if (snapshot.rollingP95Hours !== null && snapshot.rollingP95Hours > 10) {
     stopReasons.push('rolling-p95-red');
   }
   if (snapshot.hasOpenSlaBreach) stopReasons.push('open-sla-breach');
@@ -76,7 +76,7 @@ export function evaluateIcfesTeacherCapacity(
     canReserve,
     projectedUtilizationPercent,
     stopReasons: Object.freeze(stopReasons),
-    serviceRepresentation: canReserve ? 'target-24h' : 'unavailable',
+    serviceRepresentation: canReserve ? 'target-12h' : 'unavailable',
   });
 }
 
@@ -233,7 +233,7 @@ export function finishIcfesTeacherReview(
   });
 }
 
-export function dueIcfesTeacherAlerts(requestedAt: Date, now: Date): readonly (12 | 18 | 22)[] {
+export function dueIcfesTeacherAlerts(requestedAt: Date, now: Date): readonly (6 | 9 | 11)[] {
   const ageHours = (now.getTime() - requestedAt.getTime()) / 3_600_000;
   if (!Number.isFinite(ageHours) || ageHours < 0) return Object.freeze([]);
   return Object.freeze(ICFES_TEACHER_ALERT_HOURS.filter((threshold) => ageHours >= threshold));

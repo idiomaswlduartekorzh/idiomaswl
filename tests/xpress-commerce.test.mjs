@@ -21,7 +21,7 @@ test('publishes one exam purchase and two memberships in COP cents', () => {
     ['exam-auto', 4_900_000],
     ['exam-teacher', 9_900_000],
   ]);
-  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 24);
+  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 12);
 });
 
 test('opens the existing class checkout with the exam objective preselected', () => {
@@ -94,10 +94,10 @@ test('schedules plan or exam changes instead of creating overlapping access', ()
   assert.equal(examChange.action, 'schedule-change');
 });
 
-test('a membership lasts 30 days and teacher access includes the 24-hour entitlement', () => {
+test('a membership lasts 30 days and teacher access includes the 12-hour entitlement', () => {
   assert.equal(xpressAccessEndsAt(new Date('2026-09-08T12:00:00Z')).toISOString(), '2026-10-08T12:00:00.000Z');
-  assert.equal(xpressOfferIncludes('exam-teacher', 'teacher-feedback-24h'), true);
-  assert.equal(xpressOfferIncludes('exam-auto', 'teacher-feedback-24h'), false);
+  assert.equal(xpressOfferIncludes('exam-teacher', 'teacher-feedback-12h'), true);
+  assert.equal(xpressOfferIncludes('exam-auto', 'teacher-feedback-12h'), false);
 });
 
 test('validates and normalizes both registration paths', () => {

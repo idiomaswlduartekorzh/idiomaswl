@@ -10,7 +10,7 @@ function json(body: unknown, status = 200) {
 }
 
 export async function POST(request: Request): Promise<Response> {
-  const reviewerId = authenticateIcfesTeacherWorker(request.headers.get('authorization'), process.env.CRON_SECRET);
+  const reviewerId = authenticateIcfesTeacherWorker(request.headers.get('authorization'), process.env.ICFES_TEACHER_WORKER_SECRET);
   if (!reviewerId) {
     return json({ ok: false, code: 'unauthorized' }, 401);
   }

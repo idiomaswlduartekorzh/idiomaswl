@@ -44,7 +44,16 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
   const { data: profile, error: profileError } = await createAdminClient().from('profiles')
     .select('student_path,target_exam').eq('id', user.id).maybeSingle();
   if (profileError) throw new Error('xpress_profile_lookup_failed');
-  if (profile?.student_path !== 'exam' || profile.target_exam !== input.examSlug) throw new Error('xpress_exam_mismatch');
+  let ownsLinkedIcfesAttempt = false;
+  if (input.icfesAttemptId) {
+    const { data: ownedAttempt, error: attemptError } = await createAdminClient().from('icfes_attempts')
+      .select('id').eq('id', input.icfesAttemptId).eq('user_id', user.id).maybeSingle();
+    if (attemptError) throw new Error('xpress_attempt_lookup_failed');
+    if (!ownedAttempt) throw new Error('xpress_attempt_ownership_required');
+    ownsLinkedIcfesAttempt = true;
+  }
+  if ((profile?.student_path !== 'exam' || profile.target_exam !== input.examSlug)
+    && !(input.examSlug === 'icfes' && ownsLinkedIcfesAttempt)) throw new Error('xpress_exam_mismatch');
 
   const active = await activeXpressMembership(user.id);
   const quote = quoteXpressPurchase({
@@ -67,6 +76,7 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
   }
   const legalSnapshot = JSON.parse(XPRESS_LEGAL_SNAPSHOT) as Record<string, unknown>;
   if (isIcfesTeacher) legalSnapshot.icfesTeacherAddendum = ICFES_TEACHER_ADDENDUM;
+  if (input.icfesAttemptId) legalSnapshot.icfesAttemptId = input.icfesAttemptId;
   const { data, error } = await createAdminClient().rpc('prepare_xpress_order', {
     p_user: user.id,
     p_email: user.email!.toLowerCase(),
@@ -126,6 +136,12 @@ export async function checkoutForXpressOrder(order: Record<string, unknown>, ori
   const amountInCents = Number(order.amount_in_cents);
   const integrity = createWompiIntegritySignature({ reference, amountInCents, currency: 'COP', expirationTime, integritySecret: config.integritySecret });
   const url = new URL('https://checkout.wompi.co/p/');
+  const legalSnapshot = order.legal_snapshot && typeof order.legal_snapshot === 'object'
+    ? order.legal_snapshot as Record<string, unknown> : null;
+  const attemptId = typeof legalSnapshot?.icfesAttemptId === 'string'
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(legalSnapshot.icfesAttemptId)
+    ? legalSnapshot.icfesAttemptId : null;
+  const redirectPath = `/suscripcion/examenes?orden=${encodeURIComponent(String(order.id))}${attemptId ? `&attempt=${encodeURIComponent(attemptId)}` : ''}`;
   url.search = new URLSearchParams({
     'public-key': config.publicKey,
     currency: 'COP',
@@ -133,7 +149,7 @@ export async function checkoutForXpressOrder(order: Record<string, unknown>, ori
     reference,
     'signature:integrity': integrity,
     'expiration-time': expirationTime,
-    'redirect-url': new URL(`/suscripcion/examenes?orden=${String(order.id)}`, origin).href,
+    'redirect-url': new URL(redirectPath, origin).href,
   }).toString();
   return { status: 'ready', checkoutUrl: url.href };
 }

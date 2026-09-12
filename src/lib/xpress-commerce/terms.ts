@@ -1,4 +1,4 @@
-export const XPRESS_TERMS_VERSION = 'xpress-20260909-v2';
+export const XPRESS_TERMS_VERSION = 'xpress-20260912-v3';
 export const XPRESS_PRIVACY_VERSION = 'xpress-privacy-20260908-v1';
 
 export const XPRESS_TERMS = [
@@ -8,7 +8,7 @@ export const XPRESS_TERMS = [
   },
   {
     title: 'Correcciones',
-    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. El plan docente añade retroalimentación de WeLearn dentro de las 24 horas siguientes a cada entrega completa y correctamente guardada. Solo puede haber una revisión docente pendiente a la vez.',
+    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. Para ICFES, el plan docente añade un crédito de retroalimentación humana por cada periodo de 30 días, con objetivo operativo de entrega dentro de las 12 horas siguientes a una solicitud completa y correctamente guardada. Solo puede haber una revisión docente pendiente a la vez.',
   },
   {
     title: 'Renovación y resultados',

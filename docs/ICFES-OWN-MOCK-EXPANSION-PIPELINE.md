@@ -1,6 +1,6 @@
 # Pipeline de expansión de mocks propios ICFES
 
-**Estado:** contrato operativo v1
+**Estado:** contrato operativo v2
 
 **Fecha:** 8 de septiembre de 2026
 
@@ -25,6 +25,14 @@ draft → in-review → approved → release-candidate → published
 - `rejected`: vuelve a autoría con hallazgos documentados.
 
 Todo cambio en enunciado, estímulo, opción o clave invalida el hash aprobado. Debe incrementar `contentVersion`, volver a `in-review` y repetir la revisión. El hash solo se actualiza después de la aprobación; no se usa para “hacer pasar” el validador.
+
+## Contrato ejecutable v2
+
+El arreglo `mocks` conserva el baseline liberado; `candidates` contiene la cola desde `mock-24`. Un candidato nuevo nace con `contentHash: null`, procedencia pendiente y `catalogEligible`, `indexEligible` y `premiumEligible` en `false`. El validador JSON Schema real y las reglas semánticas impiden elevar esos flags por omisión.
+
+Los reportes de inglés, formato y adjudicación se ligan a `candidateDigest`. El digest cubre identidad, ruta, versión, hash de contenido y procedencia por ítem. Si cualquiera de esos campos cambia, los tres reportes y la adjudicación quedan obsoletos. Un `PASS` con hallazgo alto/crítico, reportes contradictorios, roles repetidos o revisores repetidos bloquea la transición.
+
+Solo `release-candidate` puede entrar explícitamente al catálogo y todavía conserva `premiumEligible: false`. `published` exige evidencia de despliegue y smoke productivo antes de habilitar monetización. `indexEligible` permanece siempre en `false` para runners; una landing indexable necesita una allowlist SEO independiente.
 
 ## Registro mínimo por mock
 
@@ -67,11 +75,12 @@ En este orden:
 1. Completar una copia de [`ICFES-OWN-MOCK-EXPANSION-CHECKLIST.md`](./templates/ICFES-OWN-MOCK-EXPANSION-CHECKLIST.md).
 2. Crear el mock como `draft`, fuera del catálogo y de los registros de rutas.
 3. Ejecutar revisión multirrol y guardar expedientes con hallazgos pregunta por pregunta.
-4. Corregir o rechazar; nunca inferir una clave dudosa.
-5. Fijar `contentVersion`, hash y estado `approved`.
-6. Añadir catálogo/registro/ruta y promover a `release-candidate`.
-7. Ejecutar `npm run check:icfes-expansion`, `npm run check:icfes-superhub`, `npm run test:icfes`, TypeScript, lint relevante y build Webpack.
-8. Verificar escritorio y móvil: navegación, teclado, foco, scoring, resultado básico sin lead y ausencia de respuestas antes del envío.
-9. Tras integración y smoke real, registrar la evidencia antes de cambiar a `published`.
+4. Ligar cada expediente al `candidateDigest`, con procedencia por ítem y roles/revisores distintos.
+5. Corregir o rechazar; nunca inferir una clave dudosa ni reutilizar un reporte cuyo digest ya cambió.
+6. Fijar `contentVersion`, hash, adjudicación y estado `approved`.
+7. Añadir catálogo/registro/ruta y promover a `release-candidate`.
+8. Ejecutar `npm run check:icfes-expansion`, `npm run check:icfes-superhub`, `npm run test:icfes`, TypeScript, lint relevante y build Webpack.
+9. Verificar escritorio y móvil: navegación, teclado, foco, scoring, resultado básico sin lead y ausencia de respuestas antes del envío.
+10. Tras integración y smoke real, guardar evidencia de despliegue y su digest antes de cambiar a `published`.
 
 Los bancos históricos atribuidos quedan fuera de esta expansión. No pueden convertirse en oferta paga hasta tener trazabilidad primaria por ítem y revisión jurídica de licencia.

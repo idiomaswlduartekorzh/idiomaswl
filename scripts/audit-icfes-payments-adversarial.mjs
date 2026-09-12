@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -50,7 +50,7 @@ const report = {
     'late PENDING cannot regress APPROVED',
     'tampered amount, currency, environment and provider transaction are rejected',
     'REFUND and CHARGEBACK revoke access and resist approval replay',
-    '12k to 49k and 12k to 99k credit is same-owner, seven-day and single-use',
+    '12k attempt detail is not silently treated as an unimplemented membership credit',
     '49k to 99k charges 50k and preserves the period end',
     'a late approval cannot reuse upgrade credit released to another order',
     'source reversal cascades to dependent upgrade access',
@@ -68,7 +68,10 @@ if (testRun.status !== 0) {
   process.exit(testRun.status ?? 1);
 }
 
-if (process.argv.includes('--verify')) {
+if (process.argv.includes('--write')) {
+  writeFileSync(evidencePath, `${JSON.stringify(report, null, 2)}\n`);
+  console.log(`✓ Evidencia adversarial local regenerada: ${passCount}/${passCount + failCount}; Wompi Sandbox sigue BLOCKED.`);
+} else if (process.argv.includes('--verify')) {
   const saved = JSON.parse(readFileSync(evidencePath, 'utf8'));
   if (JSON.stringify(saved) !== JSON.stringify(report)) {
     console.error('La evidencia local de pagos ICFES está obsoleta. Regenera el JSON revisado.');

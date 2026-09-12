@@ -24,6 +24,24 @@ export interface IcfesBasicResultDto {
   premiumUnavailableReason?: string;
 }
 
+export type IcfesAgeAssurance = 'ADULT_ATTESTED' | 'MINOR_GUARDIAN_ATTESTED';
+
+export type IcfesPublicResultDto = Pick<IcfesBasicResultDto,
+  'attemptId' | 'examId' | 'correct' | 'total' | 'percentage' | 'officialResource' | 'premiumEligible' | 'premiumUnavailableReason'>;
+
+export function toIcfesPublicResult(result: IcfesBasicResultDto): IcfesPublicResultDto {
+  return {
+    attemptId: result.attemptId,
+    examId: result.examId,
+    correct: result.correct,
+    total: result.total,
+    percentage: result.percentage,
+    officialResource: result.officialResource,
+    premiumEligible: result.premiumEligible,
+    ...(result.premiumUnavailableReason ? { premiumUnavailableReason: result.premiumUnavailableReason } : {}),
+  };
+}
+
 export const ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON =
   'El resultado básico está disponible, pero el detalle premium no se habilitó porque no pudimos guardar este intento.';
 
@@ -32,8 +50,8 @@ export const ICFES_PREMIUM_PERSISTENCE_UNAVAILABLE_REASON =
  * unpersisted attempt can never be sold or presented as recoverable later.
  */
 export function disableIcfesPremiumAfterPersistenceFailure(
-  result: IcfesBasicResultDto,
-): IcfesBasicResultDto {
+  result: IcfesPublicResultDto,
+): IcfesPublicResultDto {
   if (!result.premiumEligible) return result;
   return {
     ...result,
@@ -64,6 +82,39 @@ export interface IcfesPremiumQuestionDto {
   rationale: string;
 }
 
+export interface IcfesAutomaticFeedbackAreaDto extends IcfesBreakdownRow {
+  band: 'solid' | 'developing' | 'priority';
+  message: string;
+}
+
+export interface IcfesAutomaticQuestionFeedbackDto {
+  questionId: string;
+  number: number;
+  part: number;
+  skill: string;
+  prompt: string;
+  guidance: string;
+}
+
+export interface IcfesAutomaticFeedbackDto {
+  version: 'icfes-automatic-feedback-v1';
+  headline: string;
+  summary: string;
+  strongestAreas: readonly IcfesAutomaticFeedbackAreaDto[];
+  priorityAreas: readonly IcfesAutomaticFeedbackAreaDto[];
+  partFeedback: readonly IcfesAutomaticFeedbackAreaDto[];
+  questionFeedback: readonly IcfesAutomaticQuestionFeedbackDto[];
+}
+
+export interface IcfesTeacherReviewStatusDto {
+  canRequest: boolean;
+  status: string | null;
+  requestedAt: string | null;
+  dueAt: string | null;
+  completedAt: string | null;
+  result: import('./teacher-review-result').IcfesTeacherReviewResult | null;
+}
+
 export interface IcfesPremiumDetailDto {
   ok: true;
   paymentStatus: IcfesPaymentStatus;
@@ -72,14 +123,8 @@ export interface IcfesPremiumDetailDto {
   productCode: 'icfes-detail-attempt-v1' | 'exam-auto' | 'exam-teacher';
   result: IcfesBasicResultDto | null;
   questions?: IcfesPremiumQuestionDto[];
-  teacherReview?: {
-    canRequest: boolean;
-    status: string | null;
-    requestedAt: string | null;
-    dueAt: string | null;
-    completedAt: string | null;
-    result: import('./teacher-review-result').IcfesTeacherReviewResult | null;
-  };
+  automaticFeedback?: IcfesAutomaticFeedbackDto;
+  teacherReview?: IcfesTeacherReviewStatusDto;
 }
 
 export function hasSensitiveResultFields(value: unknown): boolean {

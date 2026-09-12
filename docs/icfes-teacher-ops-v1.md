@@ -1,14 +1,14 @@
 # Operación docente ICFES v1
 
-Este contrato local gobierna únicamente `exam-teacher` con `examSlug=icfes`: COP 99.000, 30 días y **un crédito** de revisión docente. La rúbrica vigente es `icfes-teacher-rubric-2026-09-09-v1` y el objetivo operativo es 24 horas desde una solicitud completa.
+Este contrato local gobierna únicamente `exam-teacher` con `examSlug=icfes`: COP 99.000, 30 días y **un crédito** de revisión humana. La rúbrica vigente es `icfes-teacher-rubric-2026-09-09-v1` y el objetivo operativo es 12 horas desde una solicitud completa.
 
 ## Reserva y cola
 
 1. Antes de preparar checkout, el servidor intenta una reserva de capacidad idempotente por usuario, ambiente y clave de compra.
-2. Sin revisor activo y calibrado, capacidad finita o métricas saludables, la reserva se bloquea y el objetivo de 24 horas no se representa como disponible.
+2. Sin revisor activo y calibrado, capacidad finita o métricas saludables, la reserva se bloquea y el objetivo de 12 horas no se representa como disponible.
 3. Un pago aprobado consume la reserva. Una membresía admite una sola fila de revisión, por lo que el crédito no puede convertirse en “ilimitado”.
 4. Las revisiones pasan por `queued`, `in_review`, `needs_qa`, `completed`, `failed` o `cancelled`. Un worker necesita un lease vigente y coincidente; otro worker puede recuperar un lease vencido.
-5. La cola genera alertas idempotentes a las 12, 18 y 22 horas.
+5. La cola durable genera alertas idempotentes al dueño a las 6, 9 y 11 horas, y una notificación al estudiante cuando la revisión queda entregada.
 
 ## Acceso docente minimizado
 
@@ -22,12 +22,12 @@ Todo esto sigue detrás de `ICFES_PERSISTENCE_ENABLED=false`/gates existentes y 
 
 El protocolo interno usa una credencial HMAC que contiene la identidad del revisor; no acepta `reviewerId` en el body. El claim entrega únicamente el payload pseudónimo y un lease generado en servidor. El heartbeat renueva el lease solo para el mismo revisor y lease aún vivo. Finalizar exige `reviewer + lease + completionKey`; `completed` además exige resultado versionado y hash, mientras `failed` queda reclamable de nuevo y `needs_qa` pasa a una etapa QA explícita. Un replay idéntico es idempotente y cualquier drift se rechaza.
 
-No existe aún un worker desplegado, scheduler, roster humano real ni corrida Sandbox end-to-end. Por eso esta capa permanece bloqueada y no equivale a una conexión productiva.
+El código incluye worker recuperable, cron, bandeja administrativa y handoff pseudónimo a Codex, pero todavía no están desplegados ni conectados a un roster humano real ni a una corrida Sandbox end-to-end. Por eso esta capa permanece bloqueada y no equivale a una conexión productiva.
 
-Se detienen nuevas ventas humanas si falta un revisor calibrado, la capacidad no es finita, la utilización proyectada supera 80%, la revisión más antigua llega a 18 horas, el p95 móvil supera 20 horas o existe una brecha abierta. Los tiers sin intervención docente pueden continuar si sus propios gates están saludables.
+Se detienen nuevas ventas humanas si falta un revisor calibrado, la capacidad no es finita, la utilización proyectada supera 80%, la revisión más antigua llega a 9 horas, el p95 móvil supera 10 horas o existe una brecha abierta. Los tiers sin intervención docente pueden continuar si sus propios gates están saludables.
 
-## Divergencia contractual
+## Contrato comercial alineado
 
-`src/lib/xpress-commerce/terms.ts` dice actualmente que el plan docente añade revisión “a cada entrega”. Eso contradice el único crédito ICFES. El addendum `icfes-teacher-addendum-2026-09-09-v1` limita y sustituye la sección **Correcciones** solo para ICFES, sin cambiar las condiciones globales de Xpress.
+`src/lib/xpress-commerce/terms.ts` y el addendum ICFES vigente limitan el producto a un crédito humano durante cada periodo de 30 días, con objetivo operativo de 12 horas. El addendum sustituye la sección **Correcciones** en el checkout ICFES para que la aceptación quede registrada de forma explícita.
 
-La UI de checkout ya presenta y captura la aceptación independiente del addendum ICFES; el parser y el servidor exigen exactamente esa versión. El gate `teacher-ops` continúa `BLOCKED`: no se debe vender ni prometer el servicio hasta configurar un roster humano calibrado, aplicar las migraciones, desplegar y operar el worker y aportar una corrida Sandbox con métricas observadas.
+La UI de checkout presenta y captura la aceptación independiente del addendum ICFES; el parser y el servidor exigen exactamente esa versión. El gate `teacher-ops` continúa `BLOCKED`: no se debe vender ni prometer el servicio hasta configurar un roster humano calibrado, aplicar las migraciones, desplegar y operar el worker y aportar una corrida Sandbox con métricas observadas.

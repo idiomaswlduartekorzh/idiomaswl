@@ -449,7 +449,7 @@ export default function AuthForm({
 
                 {examPreparationMode === 'self' && <Field label="Elige tu acceso Xpress">
                   <div style={{ display: 'grid', gap: '0.55rem' }}>
-                    {XPRESS_OFFERS.map((offer) => <PlanChoice
+                    {XPRESS_OFFERS.filter((offer) => exam !== 'icfes' || offer.id !== 'exam-single').map((offer) => <PlanChoice
                       key={offer.id}
                       selected={examPlan === offer.id}
                       label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
@@ -457,7 +457,7 @@ export default function AuthForm({
                         ? 'Un simulacro con corrección automática y reporte detallado.'
                         : offer.id === 'exam-auto'
                           ? 'Simulacros ilimitados durante 30 días con corrección automática.'
-                          : 'Simulacros ilimitados y retroalimentación docente en máximo 24 horas.'}
+                          : 'Simulacros ilimitados y un crédito de retroalimentación humana con objetivo de 12 horas.'}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>

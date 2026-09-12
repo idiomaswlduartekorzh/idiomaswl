@@ -87,7 +87,9 @@ export function parseRegistrationIntent(value: unknown): RegistrationIntent | nu
     const exam = scalar(input.exam);
     const plan = scalar(input.plan);
     const matchingExam = XPRESS_EXAM_OPTIONS.find((item) => item.id === exam);
-    if (matchingExam && matchingExam.language === language && (plan === 'exam-single' || plan === 'exam-auto' || plan === 'exam-teacher')) {
+    if (matchingExam && matchingExam.language === language
+      && (plan === 'exam-single' || plan === 'exam-auto' || plan === 'exam-teacher')
+      && !(exam === 'icfes' && plan === 'exam-single')) {
       return { path, language: language as WelearnLanguage, exam: exam as XpressExamSlug, plan };
     }
   }

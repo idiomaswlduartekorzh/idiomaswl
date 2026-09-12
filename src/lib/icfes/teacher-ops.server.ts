@@ -104,17 +104,22 @@ export async function claimAndEnqueueIcfesTeacherReview(input: Readonly<{
   const { data: { user } } = await (await createClient()).auth.getUser();
   if (!user) throw new IcfesTeacherOpsError('authentication_required');
   const capability = verifyIcfesAttemptToken(input.attemptCapability);
-  if (!capability || capability.attemptId !== input.attemptId
-    || !getIcfesPremiumAvailability(capability.examId).eligible) {
-    throw new IcfesTeacherOpsError('invalid_capability');
-  }
+  const capabilityMatches = Boolean(capability && capability.attemptId === input.attemptId
+    && getIcfesPremiumAvailability(capability.examId).eligible);
+  const { data: ownedAttempt, error: attemptError } = await createAdminClient().from('icfes_attempts')
+    .select('id,exam_id,user_id').eq('id', input.attemptId).abortSignal(AbortSignal.timeout(8000)).maybeSingle();
+  if (attemptError) throw new IcfesTeacherOpsError('unavailable');
+  const alreadyOwned = Boolean(ownedAttempt?.user_id === user.id
+    && getIcfesPremiumAvailability(String(ownedAttempt.exam_id)).eligible);
+  if (!capabilityMatches && !alreadyOwned) throw new IcfesTeacherOpsError('invalid_capability');
   const membership = await activeIcfesTeacherMembership(user.id);
   if (!(await isIcfesTeacherReviewRequestReady(String(membership.id)))) {
     throw new IcfesTeacherOpsError('unavailable');
   }
-  try {
-    await claimIcfesAttemptForUser({ userId: user.id, attemptId: input.attemptId, token: input.attemptCapability });
-  } catch { throw new IcfesTeacherOpsError('invalid_capability'); }
+  if (!alreadyOwned) {
+    try { await claimIcfesAttemptForUser({ userId: user.id, attemptId: input.attemptId, token: input.attemptCapability }); }
+    catch { throw new IcfesTeacherOpsError('invalid_capability'); }
+  }
   try {
     return await enqueueIcfesTeacherReview({ ...input, userId: user.id, membershipId: String(membership.id) });
   } catch (error) {
@@ -130,12 +135,19 @@ export async function getOwnedIcfesTeacherReview(attemptId: string): Promise<Rec
   if (!isIcfesPersistenceEnabled()) throw new IcfesTeacherOpsError('unavailable');
   const { data: { user } } = await (await createClient()).auth.getUser();
   if (!user) throw new IcfesTeacherOpsError('authentication_required');
-  const { data, error } = await createAdminClient().from('xpress_teacher_reviews')
-    .select('id,status,requested_at,due_at,completed_at,review_result,review_result_hash')
-    .eq('user_id', user.id).eq('icfes_attempt_id', attemptId).maybeSingle();
+  const environment = getWompiServerConfig().environment;
+  const admin = createAdminClient();
+  const { data, error } = await admin.from('xpress_teacher_reviews')
+    .select('id,membership_id,status,requested_at,due_at,completed_at,review_result,review_result_hash')
+    .eq('user_id', user.id).eq('environment', environment).eq('icfes_attempt_id', attemptId).maybeSingle();
   if (error) throw new IcfesTeacherOpsError('unavailable');
   if (!data) return null;
   const row = data as Record<string, unknown>;
+  const { data: membership, error: membershipError } = await admin.from('xpress_memberships')
+    .select('status').eq('id', String(row.membership_id)).eq('user_id', user.id)
+    .eq('environment', environment).maybeSingle();
+  if (membershipError) throw new IcfesTeacherOpsError('unavailable');
+  if (!membership || membership.status === 'revoked') return null;
   if (row.status === 'completed') {
     const result = parseIcfesTeacherReviewResult(row.review_result);
     if (!result || row.review_result_hash !== hashIcfesTeacherReviewResult(result)) {

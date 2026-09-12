@@ -3,6 +3,7 @@ import { getIcfesSecureExam } from '@/lib/icfes/exam-registry.server';
 import { gradeIcfesAttempt, persistIcfesAttempt } from '@/lib/icfes/grading.server';
 import {
   disableIcfesPremiumAfterPersistenceFailure,
+  toIcfesPublicResult,
   validateIcfesAnswers,
 } from '@/lib/icfes/attempt-contract';
 import {
@@ -37,20 +38,25 @@ export async function POST(request: Request): Promise<Response> {
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
   const resultAccessToken = createIcfesResultAccessToken(payload.attemptId, examId);
+  const ageAssurance = body.ageAssurance === 'ADULT_ATTESTED' || body.ageAssurance === 'MINOR_GUARDIAN_ATTESTED'
+    ? body.ageAssurance : null;
   let persisted = false;
   try {
+    if (!ageAssurance) throw new Error('Falta la declaración de edad para guardar el intento.');
     persisted = await persistIcfesAttempt({
       attemptId: payload.attemptId,
       examId,
       token: resultAccessToken,
       answers,
       result,
+      ageAssurance,
     });
   }
   catch (error) {
     console.error('[icfes-grade] secure persistence failed:', error instanceof Error ? error.message : 'unknown');
   }
-  const responseResult = persisted ? result : disableIcfesPremiumAfterPersistenceFailure(result);
+  const publicResult = toIcfesPublicResult(result);
+  const responseResult = persisted ? publicResult : disableIcfesPremiumAfterPersistenceFailure(publicResult);
   const response = json({ ok: true, result: responseResult });
   if (persisted) {
     response.cookies.set(icfesAttemptCookieName(payload.attemptId), resultAccessToken, {

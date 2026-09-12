@@ -10,6 +10,7 @@ export type XpressOrderInput = Readonly<{
   acceptedTerms: string;
   acceptedPrivacy: string;
   acceptedIcfesTeacherAddendum?: string;
+  icfesAttemptId?: string;
 }>;
 
 export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
@@ -18,8 +19,16 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   if (typeof input.idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.idempotencyKey)) return null;
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
   if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
+  // ICFES has its own attempt-bound COP 12.000 product. The generic single-exam
+  // credit is intentionally unavailable here because it cannot unlock an ICFES attempt.
+  if (input.examSlug === 'icfes' && input.offerId === 'exam-single') return null;
   if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
   const isIcfesTeacher = input.examSlug === 'icfes' && input.offerId === 'exam-teacher';
+  const icfesAttemptId = input.examSlug === 'icfes' && typeof input.icfesAttemptId === 'string'
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(input.icfesAttemptId)
+    ? input.icfesAttemptId.toLowerCase()
+    : undefined;
+  if (input.icfesAttemptId !== undefined && !icfesAttemptId) return null;
   if (isIcfesTeacher && input.acceptedIcfesTeacherAddendum !== ICFES_TEACHER_ADDENDUM_VERSION) return null;
   getXpressOffer(input.offerId);
   return {
@@ -29,6 +38,7 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
     acceptedTerms: input.acceptedTerms,
     acceptedPrivacy: input.acceptedPrivacy,
     ...(isIcfesTeacher ? { acceptedIcfesTeacherAddendum: ICFES_TEACHER_ADDENDUM_VERSION } : {}),
+    ...(icfesAttemptId ? { icfesAttemptId } : {}),
   } as XpressOrderInput;
 }
 

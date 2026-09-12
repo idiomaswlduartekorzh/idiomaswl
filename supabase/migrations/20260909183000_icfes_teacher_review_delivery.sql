@@ -108,7 +108,7 @@ begin
       or current_review.completion_outcome<>p_outcome
       or current_review.review_result is distinct from p_result
       or current_review.review_result_hash is distinct from p_result_hash
-      or current_review.last_error is distinct from case when p_outcome='failed' then left(p_error,300) else null end
+      or current_review.last_error is distinct from (case when p_outcome='failed' then left(p_error,300) else null end)
     then raise exception 'teacher_review_completion_drift'; end if;
     return true;
   end if;

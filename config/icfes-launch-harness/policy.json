@@ -121,12 +121,10 @@
         "scope": "all-owned-mocks",
         "automaticFeedback": true,
         "humanReviewCredits": 1,
-        "humanReviewSlaHours": 24
+        "humanReviewSlaHours": 12
       }
     ],
     "upgradeCredits": [
-      { "fromSku": "icfes-detail-attempt-v1", "toSku": "exam-auto", "creditCop": 12000, "payableCop": 37000, "eligibilityDays": 7, "resetsDuration": true },
-      { "fromSku": "icfes-detail-attempt-v1", "toSku": "exam-teacher", "creditCop": 12000, "payableCop": 87000, "eligibilityDays": 7, "resetsDuration": true },
       { "fromSku": "exam-auto", "toSku": "exam-teacher", "creditCop": 49000, "payableCop": 50000, "eligibilityDays": 30, "resetsDuration": false }
     ],
     "creditRules": {
@@ -150,11 +148,11 @@
   },
   "teacherOps": {
     "defaultHumanCreditsPerPass": 1,
-    "slaHours": 24,
+    "slaHours": 12,
     "capacityUtilizationStopPercent": 80,
-    "oldestQueuedStopHours": 18,
-    "rollingP95StopHours": 20,
-    "escalationHours": [12, 18, 22],
+    "oldestQueuedStopHours": 9,
+    "rollingP95StopHours": 10,
+    "escalationHours": [6, 9, 11],
     "capacityFormula": "floor(reviewers * productiveMinutesPerDay * 0.80 / p75ReviewMinutes)",
     "reserveBeforeCheckout": true
   },
@@ -165,7 +163,7 @@
     { "id": "security-bypass", "gate": "security", "condition": "Cross-user access, client-authoritative scoring, non-durable purchase access or entitlement bypass is possible.", "action": "Disable paid detail and block release." },
     { "id": "privacy-contract-missing", "gate": "privacy", "condition": "Retention, deletion/export, minor handling, reviewer minimization or consent version is unapproved.", "action": "Do not persist or sell the affected workflow." },
     { "id": "payment-evidence-missing", "gate": "payments", "condition": "Sandbox signature, amount, currency, environment, idempotency, refund or chargeback evidence is missing.", "action": "Keep payment flags off." },
-    { "id": "teacher-capacity-red", "gate": "teacher-ops", "condition": "Human quota is unbounded, utilization exceeds 80%, oldest queue exceeds 18h, rolling p95 exceeds 20h, or no calibrated reviewer is available.", "action": "Stop new human-tier sales while preserving lower tiers that remain healthy." },
+    { "id": "teacher-capacity-red", "gate": "teacher-ops", "condition": "Human quota is unbounded, utilization exceeds 80%, oldest queue reaches 9h, rolling p95 exceeds 10h, or no calibrated reviewer is available.", "action": "Stop new human-tier sales while preserving lower tiers that remain healthy." },
     { "id": "release-proof-missing", "gate": "release", "condition": "Any gate is not PASS, a required human approval is absent/stale, or canary/rollback evidence is missing.", "action": "Do not add the candidate to the release manifest." }
   ]
 }
