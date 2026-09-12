@@ -15,6 +15,7 @@ const recurringIndexesMigration = new URL('../supabase/migrations/20260912113000
 const recurringFinalizationMigration = new URL('../supabase/migrations/20260912114500_xpress_finalize_cancellations.sql', import.meta.url);
 const recurringCancelGuardMigration = new URL('../supabase/migrations/20260912115500_xpress_cancel_guard.sql', import.meta.url);
 const dashboardMigration = new URL('../supabase/migrations/20260912150000_xpress_personalized_feedback_prices.sql', import.meta.url);
+const assignmentsMigration = new URL('../supabase/migrations/20260912190000_student_assignments.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();
@@ -22,6 +23,11 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.exec(`
       create role anon; create role authenticated; create role service_role bypassrls;
       create schema auth;
+      create function auth.uid() returns uuid language sql stable as $$
+        select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid
+      $$;
+      grant usage on schema auth to anon,authenticated,service_role;
+      grant execute on function auth.uid() to anon,authenticated,service_role;
       create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz);
       insert into auth.users values
         ('${user}','student@example.com',now()),
@@ -35,8 +41,10 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
       create table public.profiles(
         id uuid primary key references auth.users(id), name text, full_name text, email text, avatar_url text,
         enrolled_at timestamptz, student_path text, language text, subject text, target_exam text,
-        xpress_plan_interest text, onboarding_completed_at timestamptz
+        xpress_plan_interest text, onboarding_completed_at timestamptz, plan text not null default 'autodidacta'
       );
+      create table public.course_orders(id uuid primary key default gen_random_uuid(),user_id uuid references auth.users(id),selection jsonb);
+      create table public.course_enrollments(order_id uuid primary key references public.course_orders(id));
       grant insert,select on public.exam_submissions to service_role;
     `);
     await db.exec(await readFile(migration, 'utf8'));
@@ -46,6 +54,7 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.exec(await readFile(recurringFinalizationMigration, 'utf8'));
     await db.exec(await readFile(recurringCancelGuardMigration, 'utf8'));
     await db.exec(await readFile(dashboardMigration, 'utf8'));
+    await db.exec(await readFile(assignmentsMigration, 'utf8'));
     await db.exec('set role service_role');
     const legal = { version: 'xpress-20260908-v1' };
     const prepare = async ({ key = user, offer = 'exam-auto', kind = 'new', credit = 0, amount = 4_900_000, coverage = null } = {}) =>
@@ -199,6 +208,25 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal((await db.query('select user_id from public.exam_submissions where id=$1', [submission])).rows[0].user_id, replacementUser);
     assert.equal((await db.query('select public.recover_xpress_identity($1,$2,$3) as moved', [replacementUser, 'single@example.com', 'sandbox'])).rows[0].moved, 0);
 
+    await db.exec('reset role');
+    await db.query('insert into public.profiles(id,email,plan) values($1,$2,$3)', [currentPriceUser, 'current@example.com', 'preparacion']);
+    await db.exec('set role service_role');
+    const assignment = (await db.query(
+      'insert into public.student_assignments(student_id,title,instructions) values($1,$2,$3) returning id',
+      [currentPriceUser, 'Writing Task 2', 'Preparar un ensayo'],
+    )).rows[0];
+    await db.exec('reset role');
+    await db.query("select set_config('request.jwt.claim.sub',$1,false)", [currentPriceUser]);
+    await db.exec('set role authenticated');
+    assert.equal((await db.query('select count(*)::int as count from public.student_assignments')).rows[0].count, 1);
+    assert.equal((await db.query('select public.set_student_assignment_completed($1,true) as completed', [assignment.id])).rows[0].completed, true);
+    await db.exec('reset role');
+    assert.equal((await db.query('select status from public.student_assignments where id=$1', [assignment.id])).rows[0].status, 'completed');
+    await db.query("select set_config('request.jwt.claim.sub',$1,false)", [singleUser]);
+    await db.exec('set role authenticated');
+    assert.equal((await db.query('select count(*)::int as count from public.student_assignments')).rows[0].count, 0);
+
+    await db.exec('reset role');
     await db.exec('set role anon');
     await assert.rejects(db.query('select * from xpress_orders'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_memberships'), /permission denied/);
@@ -206,6 +234,7 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await assert.rejects(db.query('select * from xpress_subscriptions'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_submission_access'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_personalized_feedback_requests'), /permission denied/);
+    await assert.rejects(db.query('select * from student_assignments'), /permission denied/);
     await db.exec('set role authenticated');
     await assert.rejects(db.query('select * from xpress_payment_transactions'), /permission denied/);
     await assert.rejects(db.query('select public.recover_xpress_identity($1,$2,$3)', [replacementUser, 'single@example.com', 'sandbox']), /permission denied/);

@@ -12,7 +12,12 @@ export async function trackDailyActivity(): Promise<void> {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return
 
-  const today = new Date().toISOString().slice(0, 10) // 'YYYY-MM-DD'
+  const today = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Bogota',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date())
 
   await supabase
     .from('daily_activity')
@@ -21,4 +26,3 @@ export async function trackDailyActivity(): Promise<void> {
       { onConflict: 'user_id,activity_date' }
     )
 }
-

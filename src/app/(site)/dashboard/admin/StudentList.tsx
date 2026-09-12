@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useTransition, useCallback } from 'react'
+import Link from 'next/link'
 import { assignPlan } from '@/lib/actions/assignPlan'
 import { assignSubject } from '@/lib/actions/assignSubject'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
@@ -208,6 +209,18 @@ function StudentDetail({ student, submissions }: { student: StudentRow; submissi
           style={{ marginLeft: 'auto', display: 'inline-flex', alignItems: 'center', gap: 5, padding: '6px 12px', borderRadius: 8, background: '#dcfce7', color: '#16a34a', fontSize: 12, fontWeight: 700, textDecoration: 'none' }}>
           💬 Escribir por WhatsApp
         </a>
+        <Link
+          href={`/dashboard/admin/estudiantes/${student.id}`}
+          style={{ display: 'inline-flex', alignItems: 'center', padding: '6px 12px', borderRadius: 8, background: TEXT, color: '#fff', fontSize: 12, fontWeight: 700, textDecoration: 'none' }}
+        >
+          Ver ficha completa →
+        </Link>
+        <Link
+          href={`/dashboard/admin/estudiantes/${student.id}`}
+          style={{ display: 'inline-flex', alignItems: 'center', padding: '6px 12px', borderRadius: 8, background: TEXT, color: '#fff', fontSize: 12, fontWeight: 700, textDecoration: 'none' }}
+        >
+          Ver ficha completa →
+        </Link>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 14 }}>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { signOut } from '@/lib/actions/signOut';
+import { setStudentAssignmentCompleted } from '@/lib/actions/studentAssignments';
 import { STUDENT_PRODUCT_COPY } from '@/lib/student-dashboard/catalog';
 import type { StudentDashboardData } from '@/lib/student-dashboard/types';
 import styles from './student-dashboard.module.css';
@@ -26,6 +27,51 @@ const PLAN_NAMES: Record<string, string> = {
 function dateLabel(value: string | null): string {
   if (!value) return 'Sin fecha';
   return new Intl.DateTimeFormat('es-CO', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'America/Bogota' }).format(new Date(value));
+}
+
+function LearningCurve({ data }: { data: StudentDashboardData }) {
+  const progress = data.progress;
+  const points = progress.points.slice(-8);
+  const coordinates = points.map((point, index) => ({
+    ...point,
+    x: points.length === 1 ? 310 : 30 + (index * 560) / (points.length - 1),
+    y: 145 - point.score * 1.15,
+  }));
+  const trend = progress.trendPoints;
+  const trendText = trend === null ? 'Necesitamos al menos dos intentos para calcular tu tendencia.'
+    : trend > 0 ? `Has subido ${trend} puntos desde tu primer intento.`
+      : trend < 0 ? `Tu resultado reciente está ${Math.abs(trend)} puntos por debajo del primero.`
+        : 'Tu resultado se mantiene estable.';
+  return <section className={`${styles.section} ${styles.progressSection}`} id="progreso" aria-labelledby="progress-title">
+    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Tu evolución</p><h2 id="progress-title">Curva de aprendizaje</h2></div><span className={styles.progressScope}>{progress.examName ?? 'Tu examen'}</span></header>
+    <div className={styles.progressGrid}>
+      <div className={styles.curveCard}>
+        {coordinates.length ? <svg viewBox="0 0 620 170" role="img" aria-label={`Evolución de ${coordinates.length} resultados`}>
+          {[30, 60, 90].map((value) => <line key={value} x1="28" x2="595" y1={145 - value * 1.15} y2={145 - value * 1.15} />)}
+          {coordinates.length > 1 ? <polyline points={coordinates.map((point) => `${point.x},${point.y}`).join(' ')} /> : null}
+          {coordinates.map((point) => <g key={point.id}><circle cx={point.x} cy={point.y} r="6" /><text x={point.x} y={point.y - 12}>{point.score}%</text></g>)}
+        </svg> : <div className={styles.progressEmpty}>Completa un simulacro para empezar tu curva.</div>}
+        <div className={styles.trendCopy}><strong>{trend !== null && trend > 0 ? '↗ ' : trend !== null && trend < 0 ? '↘ ' : '→ '}{trendText}</strong><span>{points.length} intento{points.length === 1 ? '' : 's'} comparable{points.length === 1 ? '' : 's'} · promedio {progress.averageScore === null ? '—' : `${progress.averageScore}%`}</span></div>
+      </div>
+      <div className={styles.insightColumn}>
+        <article><span>Aspectos fuertes</span>{progress.strengths.length ? progress.strengths.map((item) => <div key={item.name}><strong>{item.name}</strong><b>{item.percentage}%</b></div>) : <p>Se mostrarán cuando tengamos resultados por habilidad.</p>}</article>
+        <article><span>Aspectos por mejorar</span>{progress.improvements.length ? progress.improvements.map((item) => <div key={item.name}><strong>{item.name}</strong><b>{item.percentage}%</b></div>) : <p>Completa más secciones para recibir una guía concreta.</p>}</article>
+      </div>
+    </div>
+    <div className={styles.activityFacts}><span><strong>{progress.activeDaysLast30}</strong> días activos en los últimos 30</span><span><strong>{progress.currentStreak}</strong> días de constancia actual</span><span><strong>{progress.lastActiveAt ? dateLabel(progress.lastActiveAt) : '—'}</strong> última actividad</span></div>
+  </section>;
+}
+
+function Assignments({ data, preview }: { data: StudentDashboardData; preview: boolean }) {
+  if (!data.courses.length && !data.assignments.length) return null;
+  return <section className={`${styles.section} ${styles.assignmentSection}`} id="asignaciones" aria-labelledby="assignments-title">
+    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Trabajo con tu profesor</p><h2 id="assignments-title">Mis asignaciones</h2></div><span className={styles.assignmentCount}>{data.assignments.filter((item) => item.status === 'assigned').length} pendientes</span></header>
+    {data.assignments.length ? <div className={styles.assignmentList}>{data.assignments.map((assignment) => <article className={assignment.status === 'completed' ? styles.assignmentDone : ''} key={assignment.id}>
+      <div className={styles.assignmentCheck}>{assignment.status === 'completed' ? '✓' : '○'}</div>
+      <div><span>{assignment.status === 'completed' ? 'Completada' : assignment.dueAt ? `Entrega ${dateLabel(assignment.dueAt)}` : 'Sin fecha límite'}</span><h3>{assignment.title}</h3><p>{assignment.instructions}</p>{assignment.resourceUrl ? <Link href={assignment.resourceUrl}>Abrir material →</Link> : null}</div>
+      {preview ? <button type="button" disabled>{assignment.status === 'completed' ? 'Completada' : 'Marcar como lista'}</button> : <form action={setStudentAssignmentCompleted}><input type="hidden" name="assignmentId" value={assignment.id} /><input type="hidden" name="completed" value={assignment.status === 'completed' ? 'false' : 'true'} /><button type="submit">{assignment.status === 'completed' ? 'Reabrir' : 'Marcar como lista'}</button></form>}
+    </article>)}</div> : <div className={styles.empty}><span aria-hidden="true">✓</span><div><h3>Todo al día</h3><p>Tu profesor todavía no ha dejado nuevas asignaciones.</p></div></div>}
+  </section>;
 }
 
 function nextAction(data: StudentDashboardData) {
@@ -128,15 +174,17 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
       <Link className={styles.brand} href="/"><b>We</b>Learn<span>Student space</span></Link>
       <nav aria-label="Panel del estudiante">
         <Link className={styles.navActive} href="/dashboard/student"><span>⌂</span>Inicio</Link>
+        <a href="#progreso"><span>↗</span>Mi progreso</a>
         <a href="#simulacros"><span>▤</span>Simulacros</a>
         <a href="#resultados"><span>◔</span>Resultados</a>
+        {data.courses.length || data.assignments.length ? <a href="#asignaciones"><span>✓</span>Asignaciones</a> : null}
         <a href="#clases"><span>◉</span>Mis clases</a>
         <Link href="/dashboard/student/perfil"><span>♙</span>Mi perfil</Link>
       </nav>
       <div className={styles.sidebarBottom}><div className={styles.person}><b>{initial}</b><div><strong>{data.name}</strong><span>{data.email}</span></div></div>{preview ? <span className={styles.previewTag}>Vista de revisión</span> : <form action={signOut}><button type="submit">Cerrar sesión</button></form>}</div>
     </aside>
     <main className={styles.main}>
-      <details className={styles.mobileMenu}><summary><span className={styles.mobileBrand}><b>We</b>Learn</span><span>Menú</span></summary><nav><Link href="/dashboard/student">Inicio</Link><a href="#simulacros">Simulacros</a><a href="#resultados">Resultados</a><a href="#clases">Mis clases</a></nav></details>
+      <details className={styles.mobileMenu}><summary><span className={styles.mobileBrand}><b>We</b>Learn</span><span>Menú</span></summary><nav><Link href="/dashboard/student">Inicio</Link><a href="#progreso">Mi progreso</a><a href="#simulacros">Simulacros</a><a href="#resultados">Resultados</a>{data.courses.length || data.assignments.length ? <a href="#asignaciones">Asignaciones</a> : null}<a href="#clases">Mis clases</a></nav></details>
       <header className={styles.hero}>
         <div><p>Tu espacio de estudio</p><h1>Hola, {data.name.split(' ')[0]}.</h1><span>{data.access.exam ? `${data.access.exam.flag} ${data.access.exam.name}` : 'Todo listo para empezar'}</span></div>
         <div className={styles.heroShapes} aria-hidden="true"><i /><i /><i /></div>
@@ -147,6 +195,8 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
         </section>
         <div className={styles.metrics}><article><span>Intentos</span><strong>{completed}</strong><small>guardados en tu cuenta</small></article><article><span>Mejor resultado</span><strong>{best === null ? '—' : `${best}%`}</strong><small>{best === null ? 'Completa tu primer mock' : 'entre tus intentos'}</small></article><article><span>Simulacros disponibles</span><strong>{data.access.state === 'active' ? (data.access.product === 'single' ? '1' : data.access.exam?.mocks.length ?? 0) : '0'}</strong><small>{data.access.product === 'single' ? data.access.state === 'consumed' ? 'intento utilizado' : 'un intento comprado' : 'de tu familia de examen'}</small></article></div>
         <ProductCard data={data} />
+        <LearningCurve data={data} />
+        <Assignments data={data} preview={preview} />
         <div id="simulacros"><MockLibrary data={data} /></div>
         <div id="resultados"><Attempts data={data} /></div>
         <div id="clases"><Courses courses={data.courses} examName={data.access.exam?.name} /></div>

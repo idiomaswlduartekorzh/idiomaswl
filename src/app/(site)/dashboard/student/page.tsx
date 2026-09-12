@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation';
 import { isAdminEmail } from '@/lib/config/admins';
 import { createClient } from '@/lib/supabase/server';
 import { loadStudentDashboard } from '@/lib/student-dashboard/data.server';
+import { trackDailyActivity } from '@/lib/actions/trackActivity';
 import StudentDashboardView from '@/components/student-dashboard/StudentDashboardView';
 
 export default async function StudentDashboardPage() {
@@ -9,11 +10,13 @@ export default async function StudentDashboardPage() {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect('/login');
   if (isAdminEmail(user.email)) redirect('/dashboard/admin');
+  const activityPromise = trackDailyActivity();
 
   const { data: profile } = await supabase.from('profiles')
     .select('full_name,target_exam')
     .eq('id', user.id)
     .maybeSingle();
+  await activityPromise;
   const data = await loadStudentDashboard(user, profile);
   return <StudentDashboardView data={data} />;
 }

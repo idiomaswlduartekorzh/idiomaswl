@@ -5,6 +5,7 @@ import path from 'node:path';
 import { XPRESS_EXAM_OPTIONS } from '../src/lib/student-onboarding/catalog.ts';
 import { getStudentExamWorkspace, productKindForOffer, STUDENT_PRODUCT_COPY } from '../src/lib/student-dashboard/catalog.ts';
 import { studentDashboardPreview } from '../src/lib/student-dashboard/preview-data.ts';
+import { buildStudentProgress, parseSkillScores } from '../src/lib/student-dashboard/progress.ts';
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
@@ -39,6 +40,20 @@ test('personalized feedback and class enrollment appear only in their preview fi
   assert.equal(automatic.attempts.some((attempt) => attempt.feedbackState !== 'not-included'), false);
   assert.equal(personalized.attempts.some((attempt) => attempt.feedbackState === 'delivered'), true);
   assert.equal(personalized.courses.length, 1);
+  assert.equal(personalized.assignments.length, 2);
+});
+
+test('progress uses comparable attempts and real skill measurements', () => {
+  const personalized = studentDashboardPreview('personalized');
+  assert.equal(personalized.progress.examSlug, 'ielts');
+  assert.deepEqual(personalized.progress.points.map((point) => point.score), [68, 82]);
+  assert.equal(personalized.progress.trendPoints, 14);
+  assert.equal(personalized.progress.strengths[0].name, 'Reading');
+  assert.equal(personalized.progress.improvements[0].name, 'Writing');
+  assert.equal(personalized.progress.activeDaysLast30, 5);
+  assert.equal(personalized.progress.currentStreak, 3);
+  assert.deepEqual(parseSkillScores([{ skill: 'Reading', score: 7, max: 10 }]), [{ name: 'Reading', score: 7, maximum: 10, percentage: 70 }]);
+  assert.equal(buildStudentProgress([], null).points.length, 0);
 });
 
 test('server loader scopes every private product query to the authenticated identity', () => {
@@ -54,7 +69,29 @@ test('server loader scopes every private product query to the authenticated iden
   assert.match(loader, /purchaser_email/);
   assert.match(loader, /email_confirmed_at/);
   assert.match(loader, /rpc\('recover_xpress_identity'/);
+  assert.match(loader, /from\('student_assignments'\)[\s\S]*?\.eq\('student_id', user\.id\)/);
+  assert.match(loader, /from\('daily_activity'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /dataAvailable: false/);
+});
+
+test('admin student files and assignments remain server-authorized', () => {
+  const page = read('src/app/(site)/dashboard/admin/estudiantes/[studentId]/page.tsx');
+  const actions = read('src/lib/actions/studentAssignments.ts');
+  const migration = read('supabase/migrations/20260912190000_student_assignments.sql');
+  const fulfillment = read('src/lib/course-pricing/fulfillment.server.ts');
+  assert.match(page, /await requireAdmin\(\)/);
+  assert.match(page, /Curva de aprendizaje/);
+  assert.match(page, /createStudentAssignment/);
+  assert.match(actions, /student\.plan === 'autodidacta'/);
+  assert.match(fulfillment, /studentPlan=selection\.plan==='intensivo'\|\|selection\.plan==='diario'\?'intensivo':'preparacion'/);
+  assert.doesNotMatch(fulfillment, /plan:'autodidacta'/);
+  assert.match(migration, /alter table public\.student_assignments enable row level security/);
+  assert.match(migration, /students read own assignments/);
+  assert.match(migration, /students update own assignment completion/);
+  assert.match(migration, /grant update\(status,completed_at,updated_at\)/);
+  assert.match(migration, /security invoker/);
+  assert.match(migration, /student_id=\(select auth\.uid\(\)\)/);
+  assert.match(migration, /revoke all on function public\.set_student_assignment_completed/);
 });
 
 test('preview route is unavailable in production', () => {
