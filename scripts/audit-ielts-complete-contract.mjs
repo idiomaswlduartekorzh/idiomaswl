@@ -343,6 +343,20 @@ for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
 }
 
 const priorities = ['P0', 'P1', 'P2'];
+function resolveBaseCommit() {
+  const deploymentCommit = process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.GITHUB_SHA;
+  if (deploymentCommit?.trim()) return deploymentCommit.trim();
+  try {
+    return execFileSync('git', ['rev-parse', 'HEAD'], {
+      cwd: root,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+  } catch {
+    return 'unavailable';
+  }
+}
+
 const summary = {
   sets: sets.length,
   statusCounts: Object.fromEntries([...new Set(sets.map(row => row.status))].map(status => [status, sets.filter(row => row.status === status).length])),
@@ -358,7 +372,7 @@ const summary = {
 const report = {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
-  baseCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
+  baseCommit: resolveBaseCommit(),
   contract: { referenceSet: 1, listeningParts: 4, listeningQuestions: 40, readingPassages: 3, readingQuestions: 40, writingTasks: [1, 2], writingMinimumWords: [150, 250], speakingParts: [1, 2, 3], readingTotalWords: [2150, 2750], replacementListeningWordsPerPart: 680, replacementListeningWordsPerSet: 2800 },
   scope: 'Local source, generated answer-sheet contract, registered evidence and physical assets. Semantic approval is reported only when independent evidence exists.',
   summary,
