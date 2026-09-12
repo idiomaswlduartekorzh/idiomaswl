@@ -10,6 +10,8 @@ import { ICFES_PASS_AMOUNT_IN_CENTS, isIcfesPersistenceEnabled } from '@/lib/icf
 import { ICFES_DETAIL_OFFER_ID, getIcfesCommerceOffer } from '@/lib/icfes/commerce-v1';
 import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
 import { xpressOfferIncludes } from '@/lib/xpress-commerce/catalog';
+import { getOwnedIcfesTeacherReview } from '@/lib/icfes/teacher-ops.server';
+import { isIcfesTeacherReviewRequestReady } from '@/lib/icfes/teacher-offer-readiness.server';
 
 export const runtime = 'nodejs';
 const headers = {
@@ -54,6 +56,21 @@ export async function GET(_request: Request, context: { params: Promise<{ attemp
   }
   if (membership) {
     const offer = getIcfesCommerceOffer(membership.offer_id);
+    let teacherReview: IcfesPremiumDetailDto['teacherReview'];
+    if (membership.offer_id === 'exam-teacher') {
+      try {
+        const existing = await getOwnedIcfesTeacherReview(attemptId);
+        const ready = capabilityMatches && await isIcfesTeacherReviewRequestReady(membership.id);
+        teacherReview = {
+          canRequest: ready && !existing,
+          status: existing ? String(existing.status) : null,
+          requestedAt: existing ? String(existing.requested_at) : null,
+          dueAt: existing ? String(existing.due_at) : null,
+          completedAt: existing?.completed_at ? String(existing.completed_at) : null,
+          result: (existing?.review_result ?? null) as NonNullable<IcfesPremiumDetailDto['teacherReview']>['result'],
+        };
+      } catch { /* Fail closed: omit the teacher control and preserve paid automatic detail. */ }
+    }
     return Response.json({
       ok: true,
       paymentStatus: 'APPROVED',
@@ -62,6 +79,7 @@ export async function GET(_request: Request, context: { params: Promise<{ attemp
       productCode: membership.offer_id,
       result: attempt.basic_result as IcfesBasicResultDto,
       questions: buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [],
+      ...(teacherReview ? { teacherReview } : {}),
     } satisfies IcfesPremiumDetailDto, { headers });
   }
   const { data: order } = await admin.from('icfes_pass_orders').select('id, status, amount_in_cents, currency')

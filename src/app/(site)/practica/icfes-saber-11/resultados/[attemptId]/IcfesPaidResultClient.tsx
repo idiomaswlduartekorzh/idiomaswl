@@ -9,6 +9,30 @@ import { ICFES_DETAIL_OFFER_ID } from '@/lib/icfes/commerce-v1';
 export default function IcfesPaidResultClient({ attemptId }: { attemptId: string }) {
   const [detail, setDetail] = useState<IcfesPremiumDetailDto | null>(null);
   const [error, setError] = useState('');
+  const [teacherBusy, setTeacherBusy] = useState(false);
+  const [teacherError, setTeacherError] = useState('');
+  const requestTeacherReview = async () => {
+    if (!detail?.teacherReview?.canRequest || teacherBusy) return;
+    setTeacherBusy(true); setTeacherError('');
+    const storageKey = `wl_icfes_teacher_review_request:${attemptId}`;
+    const idempotencyKey = window.localStorage.getItem(storageKey) ?? crypto.randomUUID();
+    window.localStorage.setItem(storageKey, idempotencyKey);
+    try {
+      const response = await fetch('/api/icfes/teacher-reviews', {
+        method: 'POST', headers: { 'content-type': 'application/json', 'idempotency-key': idempotencyKey },
+        body: JSON.stringify({ attemptId }),
+      });
+      const body = await response.json();
+      if (!response.ok) throw new Error(body.code === 'credit_exhausted'
+        ? 'Este crédito docente ya fue utilizado.' : 'No pudimos solicitar la revisión docente.');
+      setDetail((current) => current ? { ...current, teacherReview: {
+        canRequest: false, status: body.review.status, requestedAt: body.review.requestedAt,
+        dueAt: body.review.dueAt, completedAt: null, result: null,
+      } } : current);
+    } catch (caught) {
+      setTeacherError(caught instanceof Error ? caught.message : 'No pudimos solicitar la revisión docente.');
+    } finally { setTeacherBusy(false); }
+  };
   useEffect(() => {
     let active = true;
     fetch(`/api/icfes/attempts/${attemptId}/detail`, { cache: 'no-store' })
@@ -57,6 +81,28 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
           <p>{question.rationale}</p>
         </article>)}
       </div>
+      {detail.teacherReview && (detail.teacherReview.canRequest || detail.teacherReview.status) && <section className="icfes-product-card" aria-labelledby="teacher-review-title">
+        <h2 id="teacher-review-title">Revisión docente</h2>
+        {detail.teacherReview.canRequest && <>
+          <p>Tu plan incluye un crédito. Al solicitarlo, un docente revisará este intento con la rúbrica ICFES vigente.</p>
+          <button className="btn" disabled={teacherBusy} onClick={requestTeacherReview}>
+            {teacherBusy ? 'Solicitando…' : 'Solicitar mi revisión docente'}
+          </button>
+        </>}
+        {detail.teacherReview.status && detail.teacherReview.status !== 'completed' &&
+          <p role="status">Solicitud recibida. Estado: {detail.teacherReview.status}.</p>}
+        {detail.teacherReview.status === 'completed' && detail.teacherReview.result && <div>
+          <p>{detail.teacherReview.result.summary}</p>
+          <h3>Fortalezas</h3><ul>{detail.teacherReview.result.strengths.map((item) => <li key={item}>{item}</li>)}</ul>
+          <h3>Prioridades</h3><ul>{detail.teacherReview.result.priorities.map((item) => <li key={item}>{item}</li>)}</ul>
+          {detail.teacherReview.result.itemFeedback.length > 0 && <>
+            <h3>Comentarios por pregunta</h3>
+            <ul>{detail.teacherReview.result.itemFeedback.map((item) =>
+              <li key={item.questionId}><strong>{item.questionId}:</strong> {item.feedback}</li>)}</ul>
+          </>}
+        </div>}
+        {teacherError && <p role="alert">{teacherError}</p>}
+      </section>}
     </>}
     <div className="prac-results__actions"><Link href="/examenes/icfes" className="btn">Volver a ICFES</Link></div>
   </div></div>;

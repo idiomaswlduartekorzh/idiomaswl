@@ -18,7 +18,11 @@ La solicitud exige que la membresía y el intento ICFES pertenezcan al mismo usu
 
 El claim local usa exclusivamente la cuenta obtenida por `auth.getUser()` y la capability firmada conservada en cookie HttpOnly. La RPC compara el hash de esa capability, bloquea la fila y aplica compare-and-set: un intento sin dueño se asocia una vez, el mismo dueño puede repetir y otra cuenta no puede tomarlo. La persistencia usa `INSERT` idempotente y rechaza un replay si cambian respuestas, resultado o snapshot. El helper compuesto reclama antes de encolar, así que el cliente no decide ownership.
 
-Todo esto sigue detrás de `ICFES_PERSISTENCE_ENABLED=false`/gates existentes y la migración es local, no aplicada. No existe aún un flujo UI de solicitud docente, worker operativo, roster humano calibrado ni corrida Sandbox end-to-end. Por eso esta capa permanece bloqueada y no equivale a una conexión productiva.
+Todo esto sigue detrás de `ICFES_PERSISTENCE_ENABLED=false`/gates existentes y las migraciones son locales, no aplicadas. La página privada muestra el control únicamente cuando el servidor confirma capability, intento propio, membresía docente, reserva consumida, privacidad aprobada y al menos un revisor calibrado. El navegador solo envía `attemptId` e idempotencia; identidad y `membershipId` se derivan en servidor.
+
+El protocolo interno usa una credencial HMAC que contiene la identidad del revisor; no acepta `reviewerId` en el body. El claim entrega únicamente el payload pseudónimo y un lease generado en servidor. El heartbeat renueva el lease solo para el mismo revisor y lease aún vivo. Finalizar exige `reviewer + lease + completionKey`; `completed` además exige resultado versionado y hash, mientras `failed` queda reclamable de nuevo y `needs_qa` pasa a una etapa QA explícita. Un replay idéntico es idempotente y cualquier drift se rechaza.
+
+No existe aún un worker desplegado, scheduler, roster humano real ni corrida Sandbox end-to-end. Por eso esta capa permanece bloqueada y no equivale a una conexión productiva.
 
 Se detienen nuevas ventas humanas si falta un revisor calibrado, la capacidad no es finita, la utilización proyectada supera 80%, la revisión más antigua llega a 18 horas, el p95 móvil supera 20 horas o existe una brecha abierta. Los tiers sin intervención docente pueden continuar si sus propios gates están saludables.
 
@@ -26,4 +30,4 @@ Se detienen nuevas ventas humanas si falta un revisor calibrado, la capacidad no
 
 `src/lib/xpress-commerce/terms.ts` dice actualmente que el plan docente añade revisión “a cada entrega”. Eso contradice el único crédito ICFES. El addendum `icfes-teacher-addendum-2026-09-09-v1` limita y sustituye la sección **Correcciones** solo para ICFES, sin cambiar las condiciones globales de Xpress.
 
-El addendum todavía no tiene captura de aceptación independiente en el checkout. Por tanto, aunque claim, evidencia, arnés y reserva sean verificables localmente, el gate `teacher-ops` continúa `BLOCKED`: no se debe vender ni prometer el servicio hasta registrar aceptación del addendum, configurar un roster humano calibrado, conectar el worker/ruta de solicitud y aportar una corrida Sandbox con métricas observadas.
+La UI de checkout ya presenta y captura la aceptación independiente del addendum ICFES; el parser y el servidor exigen exactamente esa versión. El gate `teacher-ops` continúa `BLOCKED`: no se debe vender ni prometer el servicio hasta configurar un roster humano calibrado, aplicar las migraciones, desplegar y operar el worker y aportar una corrida Sandbox con métricas observadas.

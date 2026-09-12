@@ -64,8 +64,8 @@ test('server-derived readiness fails closed before any ICFES teacher order', () 
   ]) assert.ok(readiness.includes(field), `missing approved privacy field: ${field}`);
   assert.equal(
     [...readiness.matchAll(/await hasExactlyOneCompleteApprovedPrivacyContract\(\)/g)].length,
-    2,
-    'new orders and resumed orders must both fail closed on the privacy contract',
+    3,
+    'new orders, resumed orders and review requests must fail closed on the privacy contract',
   );
   assert.ok(
     readiness.indexOf('await hasExactlyOneCompleteApprovedPrivacyContract()')

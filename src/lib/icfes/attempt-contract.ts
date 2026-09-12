@@ -72,6 +72,14 @@ export interface IcfesPremiumDetailDto {
   productCode: 'icfes-detail-attempt-v1' | 'exam-auto' | 'exam-teacher';
   result: IcfesBasicResultDto | null;
   questions?: IcfesPremiumQuestionDto[];
+  teacherReview?: {
+    canRequest: boolean;
+    status: string | null;
+    requestedAt: string | null;
+    dueAt: string | null;
+    completedAt: string | null;
+    result: import('./teacher-review-result').IcfesTeacherReviewResult | null;
+  };
 }
 
 export function hasSensitiveResultFields(value: unknown): boolean {

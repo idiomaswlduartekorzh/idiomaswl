@@ -115,3 +115,20 @@ export async function getIcfesTeacherOrderCheckoutReadiness(
     return unavailable('capacity-check-unavailable');
   }
 }
+
+export async function isIcfesTeacherReviewRequestReady(membershipId: string): Promise<boolean> {
+  if (process.env.ICFES_PERSISTENCE_ENABLED !== 'true') return false;
+  try {
+    if (!(await hasExactlyOneCompleteApprovedPrivacyContract())) return false;
+    const config = getWompiServerConfig();
+    const [reservation, capacity] = await Promise.all([
+      createAdminClient().from('xpress_teacher_capacity_reservations').select('id')
+        .eq('membership_id', membershipId).eq('environment', config.environment).eq('status', 'consumed').maybeSingle(),
+      createAdminClient().rpc('xpress_teacher_capacity_status', { p_environment: config.environment }),
+    ]);
+    if (reservation.error || capacity.error || !reservation.data) return false;
+    const row = Array.isArray(capacity.data) ? capacity.data[0] : capacity.data;
+    return Boolean(row && typeof row === 'object'
+      && Number((row as Record<string, unknown>).calibrated_reviewers) >= 1);
+  } catch { return false; }
+}

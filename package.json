@@ -86,6 +86,7 @@
     "test:icfes-launch-harness": "node --no-warnings --test tests/icfes-launch-harness.test.mjs",
     "test:icfes-privacy": "node --experimental-strip-types --no-warnings --test tests/icfes-privacy-contract.test.mjs tests/icfes-privacy-operations.test.mjs",
     "test:icfes-teacher-evidence": "node --experimental-strip-types --no-warnings --test tests/icfes-teacher-evidence-v1.test.mjs tests/icfes-teacher-ops-v1.test.mjs",
+    "test:icfes-teacher-api": "node --experimental-strip-types --no-warnings --test tests/icfes-teacher-api-v1.test.mjs",
     "test:icfes-payments-adversarial": "node --experimental-strip-types --no-warnings --test tests/icfes-payments-adversarial.test.mjs",
     "audit:icfes-payments-adversarial": "node scripts/audit-icfes-payments-adversarial.mjs --verify",
     "icfes:launch:inventory": "node --no-warnings scripts/icfes-launch-harness.mjs --mode=inventory",
