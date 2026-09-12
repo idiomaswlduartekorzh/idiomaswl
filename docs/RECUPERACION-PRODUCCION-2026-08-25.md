@@ -461,3 +461,24 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   y examen con profesor con plan Impulso. También comprobó que los datos y la firma se
   muestran únicamente tras aceptar las reglas. No se creó una orden ni se realizó un
   cobro real.
+
+### 12 de septiembre de 2026 — panel académico del estudiante y seguimiento docente
+
+- La rama aislada `codex/student-dashboard-20260912` queda `PENDIENTE DE REVISIÓN`; no
+  está integrada en `main` ni desplegada. Reúne el acceso de Xpress, los reportes que el
+  estudiante ya pagó y las clases contratadas en un panel privado ligado al usuario
+  autenticado.
+- El panel calcula una curva solo con intentos comparables de la misma familia de examen,
+  y muestra promedio, tendencia, habilidades fuertes, aspectos por mejorar, días activos
+  en los últimos 30 días y constancia actual. Las métricas salen de
+  `exam_submissions.skills` y `daily_activity`; cuando faltan datos, la interfaz lo dice y
+  no inventa resultados.
+- Cada estudiante con acompañamiento puede recibir asignaciones con instrucciones, fecha
+  y material. El estudiante solo lee y marca sus propias tareas mediante RLS; los perfiles
+  autodidactas no admiten tareas. La ficha administrativa exige la lista autorizada de
+  administradores y reúne progreso, historial, actividad y creación o cancelación de
+  asignaciones.
+- La migración `20260912190000_student_assignments.sql` todavía no se ha aplicado en el
+  Supabase productivo. La validación local pasó 10/10 pruebas funcionales, la prueba
+  transaccional de pagos y RLS, TypeScript, ESLint, el guardián de 465 temas y 4/4
+  recorridos Chromium. El build Webpack también quedó verde antes de esta revisión final.

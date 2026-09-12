@@ -18,6 +18,8 @@ test.describe('dashboard de estudiante después del pago', () => {
     await expect(page.getByRole('heading', { name: 'Xpress', exact: true })).toBeVisible();
     await expect(page.getByText('$49.900 COP · cada 30 días')).toBeVisible();
     await expect(page.getByText('Renovación activa')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Curva de aprendizaje' })).toBeVisible();
+    await expect(page.getByText(/Has subido 14 puntos/)).toBeVisible();
     await expect(page.getByText(/\bIA\b|inteligencia artificial|revisión humana/i)).toHaveCount(0);
   });
 
@@ -30,7 +32,21 @@ test.describe('dashboard de estudiante después del pago', () => {
     await expect(page.getByText(/Revisión personalizada incluida/)).toBeVisible();
     await expect(page.getByText(/observaciones concretas sobre tus resultados/)).toBeVisible();
     await expect(page.getByText(/\bIA\b|inteligencia artificial|revisión humana/i)).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Aspectos fuertes' })).toHaveCount(0);
+    await expect(page.getByText('Aspectos fuertes', { exact: true })).toBeVisible();
+    await expect(page.getByText('Aspectos por mejorar', { exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Mis asignaciones' })).toBeVisible();
+    await expect(page.getByText('Writing Task 2 · ensayo de práctica')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Mi acompañamiento' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Coordinar por WhatsApp' })).toBeVisible();
   });
+});
+
+test('la ficha administrativa reúne progreso, historial y asignaciones', async ({ page }) => {
+  await page.goto('/revision/dashboard-administrador-estudiante');
+  await expect(page.getByRole('heading', { name: 'Mariana López' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Curva de aprendizaje/ })).toBeVisible();
+  await expect(page.getByText('Fortalezas', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Exámenes realizados' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Asignaciones' })).toBeVisible();
 });

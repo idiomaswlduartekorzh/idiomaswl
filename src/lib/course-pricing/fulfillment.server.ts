@@ -47,10 +47,11 @@ async function welcomeStudent(order:CourseOrderRecord) {
     profile={id:generated.data.user.id,email:contact.studentEmail};
     accountActionLink=generated.data.properties.action_link;
   }
-  const selection=order.selection as {language:string;objective:string;level:string};
+  const selection=order.selection as {language:string;objective:string;level:string;plan:string};
+  const studentPlan=selection.plan==='intensivo'||selection.plan==='diario'?'intensivo':'preparacion';
   const {error:profileError}=await admin.from('profiles').upsert({
     id:profile.id,email:contact.studentEmail,name:contact.studentName,full_name:contact.studentName,
-    language:selection.language,level:selection.level,subject:selection.language,plan:'autodidacta',role:'user',
+    language:selection.language,level:selection.level,subject:selection.language,plan:studentPlan,role:'user',
     student_path:'welearn',target_exam:null,xpress_plan_interest:null,onboarding_completed_at:new Date().toISOString(),enrolled_at:new Date().toISOString(),
   },{onConflict:'id'});
   if(profileError)throw new Error('student_profile_update_failed');
