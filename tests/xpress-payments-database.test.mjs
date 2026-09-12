@@ -81,7 +81,10 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     );
     assert.equal((await db.query('select count(*)::int as count from xpress_exam_credits where user_id=$1 and status=$2', [singleUser, 'active'])).rows[0].count, 1);
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where user_id=$1', [singleUser])).rows[0].count, 0);
+    await assert.rejects(db.query('insert into exam_submissions default values returning id'), /permission denied/);
+    await db.exec('reset role');
     const submission = (await db.query('insert into exam_submissions default values returning id')).rows[0].id;
+    await db.exec('set role service_role');
     const consumed = (await db.query('select public.consume_xpress_exam_credit($1,$2,$3) as id', [singleUser, 'ielts', submission])).rows[0].id;
     assert.ok(consumed);
     assert.equal((await db.query('select status from xpress_exam_credits where id=$1', [consumed])).rows[0].status, 'consumed');
