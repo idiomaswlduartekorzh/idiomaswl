@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { IELTS_REVIEW_BLUEPRINTS } from '../src/lib/ielts/review-blueprint.ts'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const revisedSets = new Map([[1, 4], [2, 4], [3, 3], [4, 4], [5, 4], [6, 4], [7, 4], [8, 2], [9, 5], [10, 4], [11, 4], [12, 3], [13, 4], [14, 2], [15, 2], [16, 4], [17, 3], [18, 2], [19, 3], [20, 3]])
+const revisedSets = new Map([[1, 4], [2, 4], [3, 3], [4, 5], [5, 4], [6, 5], [7, 4], [8, 3], [9, 6], [10, 4], [11, 5], [12, 4], [13, 4], [14, 3], [15, 2], [16, 5], [17, 4], [18, 3], [19, 4], [20, 3]])
 
 for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
   const mockId = `set-${setNumber}`
