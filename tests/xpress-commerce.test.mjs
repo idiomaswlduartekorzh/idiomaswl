@@ -12,8 +12,9 @@ import {
   registrationIntentMetadata,
   xpressClassPurchasePath,
 } from '../src/lib/student-onboarding/catalog.ts';
-import { parseXpressOrderInput, parseXpressProviderPayment } from '../src/lib/xpress-commerce/payment.ts';
-import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
+import { parseXpressOrderInput, parseXpressProviderPayment, parseXpressSubscriptionForm } from '../src/lib/xpress-commerce/payment.ts';
+import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
+import { buildXpressRecurringTransaction } from '../src/lib/xpress-commerce/recurring.ts';
 
 test('publishes one exam purchase and two memberships in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
@@ -22,6 +23,48 @@ test('publishes one exam purchase and two memberships in COP cents', () => {
     ['exam-teacher', 9_900_000],
   ]);
   assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 24);
+  assert.equal(XPRESS_OFFERS[0].billing, 'single-exam');
+  assert.deepEqual(XPRESS_OFFERS.slice(1).map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days']);
+});
+
+test('accepts recurring consent and only Wompi card tokens for memberships', () => {
+  const form = new FormData();
+  form.set('idempotency_key', '12345678-1234-4234-8234-123456789012');
+  form.set('exam_slug', 'ielts');
+  form.set('offer_id', 'exam-auto');
+  form.set('accepted_terms', XPRESS_TERMS_VERSION);
+  form.set('accepted_privacy', XPRESS_PRIVACY_VERSION);
+  form.set('accepted_recurring', XPRESS_RECURRING_CONSENT_VERSION);
+  form.set('accepted_wompi', 'yes');
+  form.set('payment_source_token', 'tok_test_1234567890');
+  form.set('payment_source_type', 'CARD');
+  assert.equal(parseXpressSubscriptionForm(form)?.offerId, 'exam-auto');
+  form.set('offer_id', 'exam-single');
+  assert.equal(parseXpressSubscriptionForm(form), null);
+  form.set('offer_id', 'exam-auto');
+  form.set('accepted_recurring', 'no');
+  assert.equal(parseXpressSubscriptionForm(form), null);
+  form.set('accepted_recurring', XPRESS_RECURRING_CONSENT_VERSION);
+  form.set('payment_source_token', '4242424242424242');
+  assert.equal(parseXpressSubscriptionForm(form), null);
+});
+
+test('builds a server-side Wompi renewal without card data', () => {
+  const payload = buildXpressRecurringTransaction({
+    amountInCents: 4_900_000,
+    reference: 'WX-12345678-1234-4234-8234-123456789012',
+    email: 'student@example.com',
+    paymentSourceId: 3891,
+    integritySecret: 'test_integrity_secret',
+    acceptanceToken: 'acceptance',
+    personalDataToken: 'personal',
+  });
+  assert.equal(payload.recurrent, true);
+  assert.equal(payload.payment_source_id, 3891);
+  assert.deepEqual(payload.payment_method, { installments: 1 });
+  assert.equal(payload.signature.length, 64);
+  assert.equal('token' in payload.payment_method, false);
+  assert.equal(JSON.stringify(payload).includes('card_number'), false);
 });
 
 test('opens the existing class checkout with the exam objective preselected', () => {

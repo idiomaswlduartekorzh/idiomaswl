@@ -15,6 +15,9 @@ type XpressOrderRecord = {
   amount_in_cents: number;
   offer_id: XpressOfferId;
   exam_slug: string;
+  order_kind: 'single' | 'new' | 'upgrade' | 'subscription_start' | 'renewal';
+  subscription_id: string | null;
+  billing_period_end: string | null;
 };
 
 const DEFAULT_OWNER_EMAIL = 'david_duarte182@hotmail.com';
@@ -62,11 +65,16 @@ async function sendReceipt(order: XpressOrderRecord) {
   const name = profile?.full_name || profile?.name || 'estudiante';
   const { error } = await createAdminClient().from('profiles').update({ xpress_plan_interest: order.offer_id }).eq('id', order.user_id);
   if (error) throw new Error('xpress_profile_update_failed');
+  const isRenewal = order.order_kind === 'renewal';
+  const isSubscription = Boolean(order.subscription_id);
+  const periodEnd = order.billing_period_end
+    ? new Date(order.billing_period_end).toLocaleDateString('es-CO', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota' })
+    : null;
   await sendCourseEmail({
     to: order.purchaser_email,
-    subject: offer.billing === 'single-exam' ? `Tu examen de ${exam} está disponible` : `Tu membresía de ${exam} está activa`,
+    subject: offer.billing === 'single-exam' ? `Tu examen de ${exam} está disponible` : isRenewal ? `Renovamos tu suscripción de ${exam}` : `Tu suscripción de ${exam} está activa`,
     idempotencyKey: `xpress-receipt/${order.id}`,
-    html: `<h1>${offer.billing === 'single-exam' ? 'Tu examen está disponible' : 'Tu membresía está activa'}, ${escapeEmailHtml(name)}</h1><p>Confirmamos el pago de <strong>${escapeEmailHtml(offer.name)}</strong> para <strong>${escapeEmailHtml(exam)}</strong>.</p><p>Valor: <strong>$${Math.round(order.amount_in_cents / 100).toLocaleString('es-CO')} COP</strong>.</p><p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p><a href="https://www.idiomaswl.com/dashboard/student">Entrar a WeLearn</a></p><p>Conserva este correo como comprobante.</p>`,
+    html: `<h1>${offer.billing === 'single-exam' ? 'Tu examen está disponible' : isRenewal ? 'Tu suscripción fue renovada' : 'Tu suscripción está activa'}, ${escapeEmailHtml(name)}</h1><p>Confirmamos el pago de <strong>${escapeEmailHtml(offer.name)}</strong> para <strong>${escapeEmailHtml(exam)}</strong>.</p><p>Valor: <strong>$${Math.round(order.amount_in_cents / 100).toLocaleString('es-CO')} COP</strong>.</p>${isSubscription && periodEnd ? `<p>Este periodo está disponible hasta el <strong>${escapeEmailHtml(periodEnd)}</strong>. Puedes cancelar futuras renovaciones desde tu panel.</p>` : ''}<p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p><a href="https://www.idiomaswl.com/dashboard/student">Entrar a WeLearn</a></p><p>Conserva este correo como comprobante.</p>`,
   });
 }
 
@@ -76,7 +84,7 @@ async function notifyOwner(order: XpressOrderRecord) {
   const { exam, offer } = labels(order);
   await sendCourseEmail({
     to,
-    subject: `Nuevo pago Xpress: ${exam}`,
+    subject: `${order.order_kind === 'renewal' ? 'Renovación' : 'Nuevo pago'} Xpress: ${exam}`,
     idempotencyKey: `xpress-owner/${order.id}`,
     html: `<h1>Nuevo pago Xpress</h1><ul><li>Estudiante: ${escapeEmailHtml(order.purchaser_email)}</li><li>Examen: ${escapeEmailHtml(exam)}</li><li>Producto: ${escapeEmailHtml(offer.name)}</li><li>Valor: $${Math.round(order.amount_in_cents / 100).toLocaleString('es-CO')} COP</li><li>Referencia: ${escapeEmailHtml(order.reference)}</li></ul>`,
   });

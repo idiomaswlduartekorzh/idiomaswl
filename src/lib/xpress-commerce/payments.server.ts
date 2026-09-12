@@ -5,9 +5,9 @@ import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
 import { XPRESS_EXAM_OPTIONS } from '@/lib/student-onboarding/catalog';
-import { quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
+import { getXpressOffer, quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
 import { fulfillPaidXpressOrder } from './fulfillment.server';
-import { parseXpressProviderPayment, type XpressOrderInput } from './payment';
+import { parseXpressProviderPayment, type XpressOrderInput, type XpressProviderPayment } from './payment';
 import { XPRESS_LEGAL_SNAPSHOT, XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from './terms';
 
 type MembershipRow = {
@@ -29,7 +29,7 @@ export async function activeXpressMembership(userId: string): Promise<Membership
   const { data, error } = await createAdminClient().from('xpress_memberships')
     .select('id,exam_slug,offer_id,starts_at,ends_at')
     .eq('user_id', userId).eq('environment', config.environment).eq('status', 'active')
-    .gt('ends_at', new Date().toISOString()).order('ends_at', { ascending: false })
+    .lte('starts_at', new Date().toISOString()).gt('ends_at', new Date().toISOString()).order('ends_at', { ascending: false })
     .abortSignal(AbortSignal.timeout(8000));
   if (error) throw new Error('xpress_membership_lookup_failed');
   const memberships = (data ?? []) as MembershipRow[];
@@ -43,6 +43,7 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
     .select('student_path,target_exam').eq('id', user.id).maybeSingle();
   if (profileError) throw new Error('xpress_profile_lookup_failed');
   if (profile?.student_path !== 'exam' || profile.target_exam !== input.examSlug) throw new Error('xpress_exam_mismatch');
+  if (getXpressOffer(input.offerId).billing !== 'single-exam') throw new Error('xpress_subscription_required');
 
   const active = await activeXpressMembership(user.id);
   const quote = quoteXpressPurchase({
@@ -105,7 +106,8 @@ export async function xpressOrderState(orderId: string) {
 export async function checkoutForXpressOrder(order: Record<string, unknown>, origin: string) {
   const config = getWompiServerConfig();
   if (config.environment !== order.environment || (process.env.VERCEL_ENV !== 'production' && config.environment === 'production')) throw new Error('environment_mismatch');
-  if (![XPRESS_TERMS_VERSION, 'xpress-20260908-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
+  if (order.subscription_id) throw new Error('recurring_order_checkout_forbidden');
+  if (![XPRESS_TERMS_VERSION, 'xpress-20260909-v2', 'xpress-20260908-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
   const state = await xpressOrderState(String(order.id));
   if (['paid', 'review', 'pending'].includes(state.status)) return { status: state.status };
   const expirationTime = new Date(String(order.expires_at)).toISOString();
@@ -166,25 +168,30 @@ export async function reconcileXpressPayment(transactionId: string, expectedOrde
     const payment = parseXpressProviderPayment(raw.data);
     if (!payment || payment.id !== transactionId) throw new Error('invalid_provider_payment');
     if (expectedOrderId && payment.reference !== `WX-${expectedOrderId}`) throw new Error('payment_order_mismatch');
-    const { data, error } = await createAdminClient().rpc('record_xpress_payment', {
-      p_reference: payment.reference,
-      p_environment: config.environment,
-      p_provider_id: payment.id,
-      p_amount: payment.amount_in_cents,
-      p_currency: payment.currency,
-      p_status: payment.status,
-      p_observed: new Date().toISOString(),
-      p_fingerprint: createHash('sha256').update(JSON.stringify([config.environment, payment])).digest('hex'),
-    }).abortSignal(AbortSignal.timeout(10000));
-    if (error || !data) throw new Error('xpress_payment_storage_unavailable');
-    orderId = data as string;
-    await finishXpressPaymentReconciliation(transactionId, true);
+    orderId = await saveXpressProviderPayment(payment);
+    await finishXpressPaymentReconciliation(transactionId, payment.status !== 'PENDING', payment.status === 'PENDING' ? 'payment_pending' : undefined);
   } catch (error) {
     try { await finishXpressPaymentReconciliation(transactionId, false, error); } catch {}
     throw error;
   }
   await fulfillPaidXpressOrder(orderId);
   return orderId;
+}
+
+export async function saveXpressProviderPayment(payment: XpressProviderPayment) {
+  const config = getWompiServerConfig();
+  const { data, error } = await createAdminClient().rpc('record_xpress_payment', {
+    p_reference: payment.reference,
+    p_environment: config.environment,
+    p_provider_id: payment.id,
+    p_amount: payment.amount_in_cents,
+    p_currency: payment.currency,
+    p_status: payment.status,
+    p_observed: new Date().toISOString(),
+    p_fingerprint: createHash('sha256').update(JSON.stringify([config.environment, payment])).digest('hex'),
+  }).abortSignal(AbortSignal.timeout(10000));
+  if (error || !data) throw new Error('xpress_payment_storage_unavailable');
+  return data as string;
 }
 
 export async function recoverXpressPayments(limit = 10) {
