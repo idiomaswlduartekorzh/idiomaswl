@@ -13,6 +13,7 @@ const skillConfig = {
     workload: '15 preguntas · 3 partes',
     description: 'Escucha conversaciones y anuncios breves con la misma lógica de una o dos reproducciones del examen A1.',
     feedback: 'Corrección pregunta por pregunta al terminar la destreza.',
+    guidance: 'puedes repetir los audios de Hören y recibir feedback al final',
   },
   reading: {
     label: 'Lesen',
@@ -21,6 +22,7 @@ const skillConfig = {
     workload: '15 preguntas · 3 partes',
     description: 'Trabaja mensajes personales, anuncios de internet y avisos cotidianos con textos A1 originales.',
     feedback: 'Corrección pregunta por pregunta al terminar la destreza.',
+    guidance: 'puedes releer los textos y revisar la evidencia de cada respuesta al final',
   },
   writing: {
     label: 'Schreiben',
@@ -29,6 +31,7 @@ const skillConfig = {
     workload: 'Formulario + mensaje',
     description: 'Completa un formulario a partir de una situación y redacta un mensaje breve siguiendo tres consignas.',
     feedback: 'Revisión de campos, extensión y cumplimiento de consignas.',
+    guidance: 'puedes completar el formulario y usar la guía de revisión del mensaje al final',
   },
   speaking: {
     label: 'Sprechen',
@@ -37,6 +40,7 @@ const skillConfig = {
     workload: '3 partes · grabación',
     description: 'Practica presentación personal, preguntas por tarjetas y peticiones cotidianas en una sesión enfocada.',
     feedback: 'Registro de la grabación y guía de autoevaluación al terminar.',
+    guidance: 'puedes grabar tus respuestas y usar la guía de autoevaluación al final',
   },
 } as const;
 
@@ -94,7 +98,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
           </Link>;
         })}
       </div>
-      <aside className={styles.libraryNote}><strong>Antes de empezar</strong><p>Esta ruta es de práctica guiada: puedes repetir los audios de Hören y recibir feedback al final. El simulacro completo mantiene las restricciones y el recorrido lineal del examen.</p></aside>
+      <aside className={styles.libraryNote}><strong>Antes de empezar</strong><p>Esta ruta es de práctica guiada: {config.guidance}. El simulacro completo mantiene las restricciones y el recorrido lineal del examen.</p></aside>
     </div></section>
   </main>;
 }
