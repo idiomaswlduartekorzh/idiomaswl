@@ -410,7 +410,9 @@ export function evaluateSet(material, record, root, audioPublication = null) {
     issues: material.issues,
     lexicalFlags: material.lexicalFlags,
     reasons: [...new Set(reasons)],
-    nextAction: remediation(material, record, coverage, audioPublication),
+    nextAction: state === 'RELEASE_READY'
+      ? 'Ninguna: huella actual aprobada para uso con estudiantes.'
+      : remediation(material, record, coverage, audioPublication),
     notes: record.notes ?? [],
   };
 }

@@ -1336,12 +1336,14 @@
     "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
   },
   "releaseApproval": {
-    "status": "PENDING",
+    "status": "APPROVED",
     "releaseFingerprintSha256": "8719a561b2e4267de56c6de374a64969ecf866650455dc6dfdc2ef969dc306a4",
     "reviewer": {
       "kind": "human",
-      "id": ""
+      "id": "workspace-owner"
     },
-    "reviewedAt": ""
+    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "evidencePath": "config/ielts-harness/final-release-approval.json",
+    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
   }
 }
