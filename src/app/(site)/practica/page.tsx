@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Practica idiomas, IELTS, TOEFL e ICFES, o desarrolla inglés B2–C1 con ciclos de escucha, lectura larga, vocabulario y pensamiento crítico.',
   keywords: [
-    'IELTS Writing Task 1 conectores', 'práctica IELTS gratuita',
+    'IELTS Writing Task 1 conectores', 'práctica IELTS gratuita', 'práctica Goethe A1',
     'ICFES inglés práctica', 'Hangul aprender', 'leer coreano', 'batchim reglas',
     'inglés avanzado B2 C1', 'sesgos cognitivos en inglés',
   ],

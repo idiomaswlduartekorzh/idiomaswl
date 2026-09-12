@@ -315,7 +315,11 @@
 }
 
 .answerPlate,
-.examplePlateWide { width: min(680px, calc(100% - 2.6rem)); }
+.examplePlateWide {
+  width: min(680px, calc(100% - 2.6rem));
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
+}
 .readingAdPlate, .examplePlate:not(.examplePlateWide) { box-shadow: 0 8px 20px rgba(20, 33, 61, 0.06); }
 
 .readingAdGrid {

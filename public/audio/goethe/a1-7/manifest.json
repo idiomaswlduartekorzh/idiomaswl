@@ -1,0 +1,125 @@
+{
+  "sourceVersion": "2026-09-12-audio-set-7",
+  "sourceManifestHash": "44736332b3f0ed8b",
+  "generatedWith": "ElevenLabs Text to Dialogue · eleven_v3 · ffmpeg assembly",
+  "voiceCast": {
+    "narrator": "WL de · Klara",
+    "female": "WL de · Emma",
+    "femaleAlt": "WL de · Frau Schneider",
+    "male": "WL de · Jonas",
+    "maleAlt": "WL de · Herr Becker"
+  },
+  "credits": {
+    "before": 2344,
+    "after": 612,
+    "charged": 1732
+  },
+  "acousticCue": {
+    "kind": "WeLearn synthetic descending three-tone exam signal",
+    "frequenciesHz": [
+      990,
+      831,
+      698
+    ],
+    "durationSeconds": 2.1,
+    "cueCount": 28,
+    "placement": "before every scored playback and both Teil 1 example playbacks"
+  },
+  "outputs": [
+    {
+      "file": "public/audio/goethe/a1-7/hoeren-komplett.mp3",
+      "durationSeconds": 1038.28,
+      "bytes": 8306772
+    },
+    {
+      "file": "public/audio/goethe/a1-7/hoeren-teil1.mp3",
+      "durationSeconds": 378.84,
+      "bytes": 3031292
+    },
+    {
+      "file": "public/audio/goethe/a1-7/hoeren-teil2.mp3",
+      "durationSeconds": 180.96,
+      "bytes": 1448271
+    },
+    {
+      "file": "public/audio/goethe/a1-7/hoeren-teil3.mp3",
+      "durationSeconds": 474.48,
+      "bytes": 3796366
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-01.mp3",
+      "durationSeconds": 13.2,
+      "bytes": 106204
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-02.mp3",
+      "durationSeconds": 12.48,
+      "bytes": 100353
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-03.mp3",
+      "durationSeconds": 10.32,
+      "bytes": 83216
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-04.mp3",
+      "durationSeconds": 14.32,
+      "bytes": 115190
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-05.mp3",
+      "durationSeconds": 12.4,
+      "bytes": 99726
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-06.mp3",
+      "durationSeconds": 11.04,
+      "bytes": 88859
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-07.mp3",
+      "durationSeconds": 18.48,
+      "bytes": 148418
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-08.mp3",
+      "durationSeconds": 16.24,
+      "bytes": 130446
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-09.mp3",
+      "durationSeconds": 16.56,
+      "bytes": 132954
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-10.mp3",
+      "durationSeconds": 16.56,
+      "bytes": 132954
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-11.mp3",
+      "durationSeconds": 11.92,
+      "bytes": 95964
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-12.mp3",
+      "durationSeconds": 13.6,
+      "bytes": 109339
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-13.mp3",
+      "durationSeconds": 11.52,
+      "bytes": 92620
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-14.mp3",
+      "durationSeconds": 15.68,
+      "bytes": 126057
+    },
+    {
+      "file": "public/audio/goethe/a1-7/item-15.mp3",
+      "durationSeconds": 13.04,
+      "bytes": 104950
+    }
+  ]
+}

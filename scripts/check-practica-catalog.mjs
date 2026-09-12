@@ -127,6 +127,9 @@ expectText('src/app/(site)/practica/ingles/a1/vocabulario/[slug]/page.tsx', 'Voc
 
 expectText('src/app/(site)/nivel-radar/page.tsx', 'NivelRadarClient');
 expectText('src/app/(site)/practica/ielts/IELTSHubClient.tsx', 'IELTS Academic');
+expectText('src/app/(site)/practica/PracticaClient.tsx', "href: '/practica/goethe'");
+expectText('src/app/(site)/practica/goethe/page.tsx', 'Cuatro destrezas. Una práctica cada vez.');
+expectText('src/app/(site)/practica/goethe/page.tsx', 'mode=practice&skill=');
 expectText('src/app/(site)/practica/ielts/academic/writing/task1/page.tsx', 'Task 1');
 expectText('src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx', 'IcfesAdaptiveGame');
 expectText('src/data/icfes-smart-route.ts', 'ICFES_SMART_BANK_SUMMARY');

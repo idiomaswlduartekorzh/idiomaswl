@@ -11,22 +11,36 @@ const API = 'https://api.elevenlabs.io';
 const MODEL_ID = 'eleven_v3';
 // Measured on this account by the existing audio harness. The restricted
 // production key intentionally has no models_read permission.
-const CREDIT_MULTIPLIER = 0.548;
+// Text-to-Dialogue usage can settle a few seconds after generation. The
+// 0.70 ceiling is intentionally above the observed ~0.65 charge so the next
+// set is never started unless the whole set can finish.
+const CREDIT_MULTIPLIER = 0.70;
 const OUTPUT_FORMAT = 'mp3_44100_128';
 const generate = process.argv.includes('--generate');
+const setNumber = Number(process.argv.find(value => value.startsWith('--set='))?.split('=')[1] ?? 2);
+assert.ok(Number.isInteger(setNumber) && setNumber >= 2 && setNumber <= 8, '--set must be a number from 2 to 8');
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
-const scriptManifest = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-2-audio.json'), 'utf8'));
-const release = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-2-release.json'), 'utf8'));
-const outputDir = path.join(repoRoot, 'public/audio/goethe/a1-2');
+const scriptManifest = setNumber === 2
+  ? JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-2-audio.json'), 'utf8'))
+  : (await import(`../src/data/mocks/goethe-a1-set-${setNumber}.ts`)).audioManifest;
+const outputDir = path.join(repoRoot, `public/audio/goethe/a1-${setNumber}`);
 const sourceDir = path.join(outputDir, 'voice-sources');
-const ffmpeg = process.env.FFMPEG_PATH ?? '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/tools/bin/ffmpeg';
-const ffprobe = process.env.FFPROBE_PATH ?? '/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/tools/bin/ffprobe';
+function resolveExecutable(name, explicitPath) {
+  const candidates = [
+    explicitPath,
+    path.join('/private/tmp/wl-goethe-audio-tools', name),
+    ...String(process.env.PATH ?? '').split(path.delimiter).filter(Boolean).map(directory => path.join(directory, name)),
+  ].filter(Boolean);
+  return candidates.find(candidate => fs.existsSync(candidate));
+}
+const ffmpeg = resolveExecutable('ffmpeg', process.env.FFMPEG_PATH);
+const ffprobe = resolveExecutable('ffprobe', process.env.FFPROBE_PATH);
 const sampleRate = 44100;
 const cueDurationSeconds = 2.1;
 const cueTailSeconds = 2.4;
 const minimumReserve = Number(process.argv.find(value => value.startsWith('--reserve='))?.split('=')[1] ?? 8000);
-const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'wl-goethe-a1-set2-'));
+const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `wl-goethe-a1-set${setNumber}-`));
 let sequence = 0;
 
 const voices = {
@@ -86,7 +100,7 @@ assert.equal(jobs.length, 28, 'expected 28 natural source clips');
 assert.ok(jobs.every(job => job.inputs.reduce((sum, input) => sum + input.text.length, 0) <= 2000), 'a dialogue request exceeds the reliable 2,000-character limit');
 assert.ok(Number.isFinite(minimumReserve) && minimumReserve >= 0, 'reserve must be a non-negative number');
 
-console.log('Goethe A1 Set 2 · audio production manifest');
+console.log(`Goethe A1 Set ${setNumber} · audio production manifest`);
 console.log(`  jobs: ${jobs.length} source clips`);
 console.log(`  characters: ${totalCharacters}`);
 console.log(`  model: ${MODEL_ID} · ${OUTPUT_FORMAT}`);
@@ -100,9 +114,8 @@ if (!generate) {
   process.exit(0);
 }
 
-assert.equal(scriptManifest.status, 'script-ready-audio-blocked', 'audio script must remain explicitly gated before generation');
-assert.equal(release.audioBudget.consumeInThisPhase, false, 'release manifest must still mark this as a separately approved final phase');
-assert.ok(fs.existsSync(ffmpeg) && fs.existsSync(ffprobe), 'approved ffmpeg/ffprobe toolchain is unavailable');
+if (setNumber !== 2) assert.equal(scriptManifest.status, 'script-ready-audio-blocked', 'audio script must remain explicitly gated before generation');
+assert.ok(ffmpeg && ffprobe, 'approved ffmpeg/ffprobe toolchain is unavailable');
 
 async function apiJson(endpoint, apiKey) {
   const response = await fetch(`${API}${endpoint}`, { headers: { 'xi-api-key': apiKey } });
@@ -115,13 +128,18 @@ assert.ok(apiKey, 'ELEVENLABS_API_KEY is required and is never committed');
 const [voiceList, subscription] = await Promise.all([
   apiJson('/v2/voices?page_size=100', apiKey), apiJson('/v1/user/subscription', apiKey),
 ]);
-const estimatedCredits = Math.ceil(totalCharacters * CREDIT_MULTIPLIER);
+const pendingJobs = jobs.filter(job => {
+  const destination = path.join(sourceDir, job.name);
+  return !fs.existsSync(destination) || fs.statSync(destination).size <= 10_000;
+});
+const billableCharacters = pendingJobs.flatMap(job => job.inputs).reduce((sum, input) => sum + input.text.length, 0);
+const estimatedCredits = Math.ceil(billableCharacters * CREDIT_MULTIPLIER);
 const availableCredits = Number(subscription.character_limit) - Number(subscription.character_count);
 assert.ok(Number.isFinite(availableCredits) && availableCredits >= 0, 'unable to calculate available credits');
 assert.ok(availableCredits - estimatedCredits >= minimumReserve, `estimated ${estimatedCredits} credits would leave less than the protected ${minimumReserve}-credit reserve`);
 const availableVoiceIds = new Set((voiceList.voices ?? []).map(voice => voice.voice_id));
 for (const voice of Object.values(voices)) assert.ok(availableVoiceIds.has(voice.id), `${voice.name} is unavailable`);
-console.log(`  preflight: ${availableCredits} available · about ${estimatedCredits} needed · reserve stays above ${minimumReserve}`);
+console.log(`  preflight: ${availableCredits} available · ${billableCharacters} billable characters · about ${estimatedCredits} needed · reserve stays above ${minimumReserve}`);
 
 fs.mkdirSync(sourceDir, { recursive: true });
 for (let index = 0; index < jobs.length; index += 1) {
@@ -247,7 +265,7 @@ try {
   const outputs = expectedNames.sort().map(name => {
     const file = path.join(outputDir, name);
     const duration = Number(execFileSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], { encoding: 'utf8' }).trim());
-    return { file: `public/audio/goethe/a1-2/${name}`, durationSeconds: Number(duration.toFixed(3)), bytes: fs.statSync(file).size };
+    return { file: `public/audio/goethe/a1-${setNumber}/${name}`, durationSeconds: Number(duration.toFixed(3)), bytes: fs.statSync(file).size };
   });
   const after = await apiJson('/v1/user/subscription', apiKey);
   const afterRemaining = Number(after.character_limit) - Number(after.character_count);

@@ -77,6 +77,21 @@ public/audio/goethe/*
 !public/audio/goethe/a1-2/
 !public/audio/goethe/a1-2/**
 public/audio/goethe/a1-2/voice-sources/
+!public/audio/goethe/a1-3/
+!public/audio/goethe/a1-3/**
+public/audio/goethe/a1-3/voice-sources/
+!public/audio/goethe/a1-4/
+!public/audio/goethe/a1-4/**
+public/audio/goethe/a1-4/voice-sources/
+!public/audio/goethe/a1-5/
+!public/audio/goethe/a1-5/**
+public/audio/goethe/a1-5/voice-sources/
+!public/audio/goethe/a1-6/
+!public/audio/goethe/a1-6/**
+public/audio/goethe/a1-6/voice-sources/
+!public/audio/goethe/a1-7/
+!public/audio/goethe/a1-7/**
+public/audio/goethe/a1-7/voice-sources/
 # Práctica escucha alemán/italiano: se COMMITEAN los mp3 finales (listening-NN.mp3
 # y it-a1-*.mp3, comprimidos 64k mono). Los archivos fuente sin comprimir NO.
 public/audio/aleman/**/De-*.mp3

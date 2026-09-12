@@ -114,6 +114,8 @@ import goetheA1Set2 from './goethe-a1-set-2';
 import goetheA1Set3 from './goethe-a1-set-3';
 import goetheA1Set4 from './goethe-a1-set-4';
 import goetheA1Set5 from './goethe-a1-set-5';
+import goetheA1Set6 from './goethe-a1-set-6';
+import goetheA1Set7 from './goethe-a1-set-7';
 import goetheA2Set1 from './goethe-a2-set-1';
 import goetheA2Set2 from './goethe-a2-set-2';
 import goetheA2Set3 from './goethe-a2-set-3';
@@ -290,6 +292,8 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'goethe:a1-3': goetheA1Set3,
   'goethe:a1-4': goetheA1Set4,
   'goethe:a1-5': goetheA1Set5,
+  'goethe:a1-6': goetheA1Set6,
+  'goethe:a1-7': goetheA1Set7,
   'goethe:a2-1': goetheA2Set1,
   'goethe:a2-2': goetheA2Set2,
   'goethe:a2-3': goetheA2Set3,

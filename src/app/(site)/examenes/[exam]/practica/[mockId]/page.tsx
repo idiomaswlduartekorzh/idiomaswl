@@ -25,8 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   };
 }
 
-export default async function PracticePage({ params }: { params: Promise<{ exam: string; mockId: string }> }) {
+export default async function PracticePage({ params, searchParams }: { params: Promise<{ exam: string; mockId: string }>; searchParams: Promise<{ mode?: string; skill?: string }> }) {
   const { exam: slug, mockId } = await params;
+  const query = await searchParams;
   const exam = EXAMS[slug];
   const mock = getMock(slug, mockId);
 
@@ -52,8 +53,11 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
       ? <TOPIKPracticeClient exam={exam} mock={mock} />
       : <LanguagePracticeClient exam={exam} mock={mock} />;
   }
-  if (slug === 'goethe' && (mockId === 'a1-1' || mockId === 'a1-2')) {
-    return <GoetheA1PracticeClient exam={exam} mock={mock} />;
+  if (slug === 'goethe' && /^a1-[1-7]$/.test(mockId)) {
+    const skill = query.mode === 'practice' && ['listening', 'reading', 'writing', 'speaking'].includes(query.skill ?? '')
+      ? query.skill as 'listening' | 'reading' | 'writing' | 'speaking'
+      : undefined;
+    return <GoetheA1PracticeClient exam={exam} mock={mock} practiceSkill={skill} />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 

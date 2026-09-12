@@ -2,6 +2,11 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { completeGoetheScore, scaleGoetheRaw, scoreGoetheAutomatic } from '../src/lib/goethe/scoring.ts'
 import goetheA1Set2 from '../src/data/mocks/goethe-a1-set-2.ts'
+import goetheA1Set3 from '../src/data/mocks/goethe-a1-set-3.ts'
+import goetheA1Set4 from '../src/data/mocks/goethe-a1-set-4.ts'
+import goetheA1Set5 from '../src/data/mocks/goethe-a1-set-5.ts'
+import goetheA1Set6 from '../src/data/mocks/goethe-a1-set-6.ts'
+import goetheA1Set7 from '../src/data/mocks/goethe-a1-set-7.ts'
 import { getGoetheA1ContentVersion } from '../src/lib/goethe/submission.ts'
 
 const objective = (prefix, part) => Array.from({ length: 15 }, (_, index) => ({
@@ -37,19 +42,22 @@ test('automatic score ignores client claims and uses the frozen answer key', () 
   })
 })
 
-test('Set 2 has its own frozen version and independent perfect-score key', () => {
+test('Sets 2–7 have frozen versions and independent perfect-score keys', () => {
   assert.equal(getGoetheA1ContentVersion('a1-1'), 'goethe-a1-1-2026-09-12-r2')
   assert.equal(getGoetheA1ContentVersion('a1-2'), 'goethe-a1-2-2026-09-12-r2')
-  assert.equal(getGoetheA1ContentVersion('a1-3'), null)
-  const questions = goetheA1Set2.sections.flatMap(section => section.questions)
-  const answers = Object.fromEntries(questions.flatMap(question => question.type === 'mcq' ? [[question.id, question.answer]] : []))
-  const form = questions.find(question => question.type === 'formgroup')
-  const formValues = Object.fromEntries(form.blanks.map(blank => [String(blank.num), blank.answers[0]]))
-  assert.deepEqual(scoreGoetheAutomatic(goetheA1Set2, answers, formValues), {
-    listeningCorrect: 15,
-    readingCorrect: 15,
-    formCorrect: 5,
-    automaticRaw: 35,
-    automaticScaled: 58,
-  })
+  const bank = [goetheA1Set2, goetheA1Set3, goetheA1Set4, goetheA1Set5, goetheA1Set6, goetheA1Set7]
+  for (const set of bank) {
+    assert.match(getGoetheA1ContentVersion(set.id) ?? '', new RegExp(`^goethe-${set.id}-2026-09-12-r\\d+$`))
+    const questions = set.sections.flatMap(section => section.questions)
+    const answers = Object.fromEntries(questions.flatMap(question => question.type === 'mcq' ? [[question.id, question.answer]] : []))
+    const form = questions.find(question => question.type === 'formgroup')
+    const formValues = Object.fromEntries(form.blanks.map(blank => [String(blank.num), blank.answers[0]]))
+    assert.deepEqual(scoreGoetheAutomatic(set, answers, formValues), {
+      listeningCorrect: 15,
+      readingCorrect: 15,
+      formCorrect: 5,
+      automaticRaw: 35,
+      automaticScaled: 58,
+    })
+  }
 })

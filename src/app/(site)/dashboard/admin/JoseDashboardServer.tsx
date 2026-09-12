@@ -150,7 +150,7 @@ export default async function JoseDashboardServer() {
       .from('exam_submissions')
       .select('id, user_id, user_email, user_name, exam_slug, exam_name, mock_id, mock_title, total_score, total_max, total_label, skills, created_at, objective_answers, assignment_snapshot, writing_task2_answer, speaking_audio_paths, speaking_audio_metadata, writing_task1_assessment, speaking_assessment, writing_band, speaking_band, reviewed_at, reviewed_by, submission_status')
       .eq('exam_slug', 'goethe')
-      .in('mock_id', ['a1-1', 'a1-2'])
+      .in('mock_id', ['a1-1', 'a1-2', 'a1-3', 'a1-4', 'a1-5', 'a1-6', 'a1-7'])
       .eq('submission_status', 'submitted')
       .order('created_at', { ascending: false })
       .limit(500),

@@ -5,6 +5,11 @@ export const GOETHE_SUBMISSION_CONSENT_VERSION = 'goethe-a1-review-consent-v1'
 export const GOETHE_A1_CONTENT_VERSIONS = {
   'a1-1': 'goethe-a1-1-2026-09-12-r2',
   'a1-2': 'goethe-a1-2-2026-09-12-r2',
+  'a1-3': 'goethe-a1-3-2026-09-12-r3',
+  'a1-4': 'goethe-a1-4-2026-09-12-r3',
+  'a1-5': 'goethe-a1-5-2026-09-12-r3',
+  'a1-6': 'goethe-a1-6-2026-09-12-r1',
+  'a1-7': 'goethe-a1-7-2026-09-12-r1',
 } as const
 export const GOETHE_A1_CONTENT_VERSION = GOETHE_A1_CONTENT_VERSIONS['a1-1']
 
