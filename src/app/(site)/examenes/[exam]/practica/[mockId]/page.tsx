@@ -10,6 +10,7 @@ import TOPIKPracticeClient from './TOPIKPracticeClient';
 import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
+import { parseGoethePracticeTeil, type GoethePracticeSkill } from '@/lib/goethe/practice';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   };
 }
 
-export default async function PracticePage({ params, searchParams }: { params: Promise<{ exam: string; mockId: string }>; searchParams: Promise<{ mode?: string; skill?: string }> }) {
+export default async function PracticePage({ params, searchParams }: { params: Promise<{ exam: string; mockId: string }>; searchParams: Promise<{ mode?: string; skill?: string; teil?: string }> }) {
   const { exam: slug, mockId } = await params;
   const query = await searchParams;
   const exam = EXAMS[slug];
@@ -55,9 +56,10 @@ export default async function PracticePage({ params, searchParams }: { params: P
   }
   if (slug === 'goethe' && /^a1-[1-7]$/.test(mockId)) {
     const skill = query.mode === 'practice' && ['listening', 'reading', 'writing', 'speaking'].includes(query.skill ?? '')
-      ? query.skill as 'listening' | 'reading' | 'writing' | 'speaking'
+      ? query.skill as GoethePracticeSkill
       : undefined;
-    return <GoetheA1PracticeClient exam={exam} mock={mock} practiceSkill={skill} />;
+    const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
+    return <GoetheA1PracticeClient exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 

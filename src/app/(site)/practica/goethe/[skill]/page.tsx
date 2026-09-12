@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, BookOpenCheck, Headphones, Mic2, PenLine } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
+import { GOETHE_PRACTICE_TEILE } from '@/lib/goethe/practice';
 import styles from '../../toefl/ios.module.css';
 
 const skillConfig = {
@@ -71,6 +72,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
   const config = skillConfig[skill as Skill];
   if (!config) notFound();
   const Icon = config.icon;
+  const teile = GOETHE_PRACTICE_TEILE[skill as Skill];
 
   return <main className={styles.page} lang="es">
     <header className={styles.hero}><div className="wrap">
@@ -87,15 +89,27 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
 
     <section className={styles.modes} aria-labelledby="goethe-set-heading"><div className="wrap">
       <div className={styles.previewHeader}><div><p>Biblioteca A1</p><h2 id="goethe-set-heading">Elige un set para comenzar.</h2></div><Link href="/practica/goethe" className={styles.textLink}><ArrowLeft aria-hidden="true" /> Cambiar de destreza</Link></div>
-      <p className={styles.libraryLead}>Cada set abre únicamente {config.label}, conserva la estructura real de esa destreza y muestra la retroalimentación después de entregar.</p>
+      <p className={styles.libraryLead}>Elige la destreza completa o un Teil específico. Cada ruta conserva el material y la lógica de ese bloque, y muestra la retroalimentación únicamente después de entregar.</p>
       <div className={styles.setGrid}>
         {Array.from({ length: 7 }, (_, index) => {
           const number = index + 1;
-          return <Link key={number} href={`/examenes/goethe/practica/a1-${number}?mode=practice&skill=${skill}`} className={styles.setCard}>
-            <span className={styles.setNumber}>{String(number).padStart(2, '0')}</span>
-            <span className={styles.setCopy}><strong>Set {number}</strong><small>{config.workload}</small></span>
-            <ArrowRight aria-hidden="true" />
-          </Link>;
+          const baseHref = `/examenes/goethe/practica/a1-${number}?mode=practice&skill=${skill}`;
+          return <article key={number} className={styles.setPracticeCard}>
+            <header className={styles.setPracticeHeader}>
+              <span className={styles.setNumber}>{String(number).padStart(2, '0')}</span>
+              <span className={styles.setCopy}><strong>Set {number}</strong><small>{config.workload}</small></span>
+            </header>
+            <Link href={baseHref} className={styles.setCompleteLink}>
+              Destreza completa <ArrowRight aria-hidden="true" />
+            </Link>
+            <div className={styles.teilLinks} aria-label={`Practicar un Teil de ${config.label}, set ${number}`}>
+              {teile.map(teil => <Link key={teil.teil} href={`${baseHref}&teil=${teil.teil}`}>
+                <span>Teil {teil.teil}</span>
+                <strong>{teil.title}</strong>
+                <small>{teil.workload} · {teil.minutes} min</small>
+              </Link>)}
+            </div>
+          </article>;
         })}
       </div>
       <aside className={styles.libraryNote}><strong>Antes de empezar</strong><p>Esta ruta es de práctica guiada: {config.guidance}. El simulacro completo mantiene las restricciones y el recorrido lineal del examen.</p></aside>

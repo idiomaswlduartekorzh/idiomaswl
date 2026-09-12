@@ -132,6 +132,8 @@ expectText('src/app/(site)/practica/goethe/page.tsx', 'Cuatro destrezas. Una pr√
 expectText('src/app/(site)/practica/goethe/page.tsx', '/practica/goethe/${id}');
 expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'Array.from({ length: 7 }');
 expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'mode=practice&skill=${skill}');
+expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', '&teil=${teil.teil}');
+expectText('src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx', 'parseGoethePracticeTeil(skill, query.teil)');
 expectText('src/app/(site)/practica/ielts/academic/writing/task1/page.tsx', 'Task 1');
 expectText('src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx', 'IcfesAdaptiveGame');
 expectText('src/data/icfes-smart-route.ts', 'ICFES_SMART_BANK_SUMMARY');
