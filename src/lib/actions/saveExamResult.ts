@@ -2,6 +2,8 @@
 
 import { createClient } from '@/lib/supabase/server'
 import type { ExamReportData } from '@/components/ExamReport'
+import { randomUUID } from 'node:crypto'
+import { recordXpressSubmissionAccess } from '@/lib/xpress-commerce/submission-access.server'
 
 export interface IELTSAnswers {
   writing_task1_answer?: string
@@ -35,7 +37,9 @@ export async function saveExamResult(data: ExamReportData, ielts?: IELTSAnswers)
   const safeMax   = typeof data.totalMax   === 'number' && data.totalMax   > 0 ? data.totalMax   : 100;
   const safeScore = clampScore(data.totalScore, safeMax) ?? 0;
 
-  await supabase.from('exam_submissions').insert({
+  const submissionId = randomUUID()
+  const { error } = await supabase.from('exam_submissions').insert({
+    id: submissionId,
     user_id: user?.id ?? null,
     user_email: user?.email ?? null,
     user_name: sanitizeText(user?.user_metadata?.full_name ?? user?.email),
@@ -47,4 +51,6 @@ export async function saveExamResult(data: ExamReportData, ielts?: IELTSAnswers)
     total_label: sanitizeText(data.totalLabel, 256),
     skills: Array.isArray(data.skills) ? data.skills : null,
   })
+  if (error) throw new Error('No pudimos guardar el resultado del examen.')
+  if (user?.id) await recordXpressSubmissionAccess({ userId: user.id, examSlug: data.examSlug, submissionId })
 }

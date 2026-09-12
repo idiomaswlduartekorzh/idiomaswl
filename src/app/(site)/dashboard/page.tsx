@@ -17,17 +17,7 @@ export default async function DashboardPage() {
     redirect('/dashboard/admin')
   }
 
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('role, student_path')
-    .eq('id', user.id)
-    .single()
-
-  const role = profile?.role as string | undefined
-
-  if (profile?.student_path === 'welearn' || role === 'welearn_student') {
-    redirect('/dashboard/welearn')
-  } else {
-    redirect('/dashboard/student')
-  }
+  // Purchases are the source of truth inside the unified student dashboard.
+  // A profile preference must never grant access or split one student across accounts.
+  redirect('/dashboard/student')
 }

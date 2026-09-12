@@ -465,7 +465,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                         ? 'Pago único: un simulacro con corrección automática y reporte detallado.'
                         : offer.id === 'exam-auto'
                           ? 'Suscripción renovable: simulacros ilimitados y corrección automática por periodos de 30 días.'
-                          : 'Suscripción renovable con simulacros ilimitados y feedback docente en máximo 24 horas.'}
+                          : 'Suscripción renovable con simulacros ilimitados y feedback personalizado con asistencia de IA.'}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>

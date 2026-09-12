@@ -18,7 +18,7 @@ export async function POST(request: Request) {
   } catch (error) {
     const code = error instanceof Error ? error.message : 'xpress_order_prepare_failed';
     if (code === 'xpress_already_included') return json({ message: 'Ese plan ya está activo en tu cuenta.' }, 409);
-    if (code === 'xpress_subscription_required') return json({ message: 'Los planes de $49.000 y $99.000 se activan como suscripción desde esta misma página.' }, 409);
+    if (code === 'xpress_subscription_required') return json({ message: 'Los planes de $49.900 y $99.900 se activan como suscripción desde esta misma página.' }, 409);
     if (code === 'xpress_change_next_period') return json({ message: 'El cambio de examen o la reducción de plan se aplica al siguiente periodo.' }, 409);
     if (code === 'xpress_exam_mismatch') return json({ message: 'El examen no coincide con el que elegiste al registrarte.' }, 403);
     if (code === 'xpress_order_pending') {
