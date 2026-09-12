@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 16,
   "mockId": "set-16",
-  "contentVersionAtReview": "ielts-set-16-v4",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-16-v5",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-objective-key-audit-14-20"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "3a5fb36a53c30825c07217482a37d8de935ee6550552faa05d1e0b28afe7be71",
-    "listeningMaterialSha256": "fa1bedf2a84242a9cc6ab5e41acd484756dc25ff3f55a8a49678a069441d5203",
-    "readingMaterialSha256": "7704a9b76552d700a671850a2c612435c8e7250e48dc1ea98da9e9af63371f37",
-    "objectiveMaterialSha256": "ddbe2bd9fa89782735ac217f295594ad91797cffe594e925991fae488c467dc9"
+    "objectiveSha256": "cf0d5d0b63fa88d2136c94dcd109d2aa89c781fb01f5749457f8f7f202c386a7",
+    "listeningMaterialSha256": "5271e48a06b7caada790586ebc4e90edb69b692810c2ee3971ac9accc069181d",
+    "readingMaterialSha256": "2f22e698cae5038cf4c6e028a9f410a28d43c1983b8687d3c48fb66eca675fa9",
+    "objectiveMaterialSha256": "8e9570540afb93cb21afc4449874bc40a596dffdbcb00636190f4e874799da6d"
   },
   "summary": {
     "responseRows": 79,
@@ -279,7 +279,7 @@
       ],
       "weight": 1,
       "options": [
-        "leaked at the joints",
+        "leaked at the joints whenever water was poured through the upper container too quickly",
         "clogged when water was poured quickly",
         "broke under pressure"
       ]
@@ -295,7 +295,7 @@
       "weight": 1,
       "options": [
         "does not kill bacteria",
-        "is too expensive",
+        "is too expensive for most communities to maintain after installation",
         "is too heavy"
       ]
     },
@@ -309,7 +309,7 @@
       ],
       "weight": 1,
       "options": [
-        "reduce the weight",
+        "reduce the weight enough for one person to carry the unit",
         "lower the cost",
         "add a disinfection stage"
       ]
@@ -806,7 +806,7 @@
       ],
       "weight": 1,
       "options": [
-        "The principle of absolute advantage in international production.",
+        "The principle of absolute advantage, in which every country specialises only in goods it produces with the fewest resources.",
         "The principle of comparative advantage, in which countries specialise according to relative opportunity costs.",
         "The law of supply and demand as applied to international trade.",
         "The principle of economic equilibrium between importing and exporting nations."
@@ -838,7 +838,7 @@
       ],
       "weight": 1,
       "options": [
-        "A graph showing that the global poor gained the most from globalisation, while the rich gained least.",
+        "A graph showing that the global poor gained the most from globalisation, while middle classes in wealthy countries experienced the smallest gains.",
         "A visualisation of income growth showing gains for the global middle and top 1%, but stagnation for high-income country middle classes.",
         "A diagram comparing economic growth rates in elephantine economies such as India.",
         "A curve showing that global inequality has consistently fallen over the period of globalisation."
@@ -1700,7 +1700,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "leaked at the joints",
+          "text": "leaked at the joints whenever water was poured through the upper container too quickly",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1739,7 +1739,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "is too expensive",
+          "text": "is too expensive for most communities to maintain after installation",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1778,7 +1778,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "reduce the weight",
+          "text": "reduce the weight enough for one person to carry the unit",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3193,7 +3193,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "The principle of absolute advantage in international production.",
+          "text": "The principle of absolute advantage, in which every country specialises only in goods it produces with the fewest resources.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3283,7 +3283,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "A graph showing that the global poor gained the most from globalisation, while the rich gained least.",
+          "text": "A graph showing that the global poor gained the most from globalisation, while middle classes in wealthy countries experienced the smallest gains.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3594,5 +3594,22 @@
       }
     ]
   },
-  "reviewSha256": "156a26d153315643f187dd4cc5a532ff6d993fdf6d70fcded6a8190c5471f01e"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q23",
+      "l3q24",
+      "l3q25",
+      "r3-q27",
+      "r3-q29"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "189f317474331dd3a82ab5e596d214e426dfe6e1b3b02e59152069bfeb4a2c89"
 }

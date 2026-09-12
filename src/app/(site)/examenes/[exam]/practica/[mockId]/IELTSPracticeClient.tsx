@@ -10,6 +10,7 @@ import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
 import { IELTSAnswerDiagram } from '@/components/exam-runner/IELTSAnswerDiagram';
 import { getIeltsDiagramLayout } from '@/data/ielts/set1-diagram-layouts';
 import { ieltsQuestionNumber } from '@/data/ielts/question-number';
+import { IELTS_CHOICE_PRESENTATION_VERSION } from '@/data/mocks/ielts-choice-presentation';
 import {
   IELTSSpeakingRecorder,
   type IeltsSpeakingRecording,
@@ -18,6 +19,7 @@ import { isFreeIeltsMock, isReviewableIeltsMock } from '@/lib/labs/exam-bridge/i
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '@/lib/ielts/mock-scoring';
+import { trackIeltsEvent } from '@/lib/analytics/ielts';
 import {
   createIeltsPracticeDraft,
   emptyIeltsPracticeAnswers,
@@ -573,8 +575,8 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; onRetry: ()=>void;
 }) {
   // Lazy init (no useEffect): esta vista solo se monta tras terminar el
   // examen (transición de estado del lado del cliente), nunca en SSR.
@@ -670,6 +672,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
       <IELTSSummaryReport
         mockTitle={mock.title}
         date={reportData.date}
+        studentName={studentName}
         skills={summarySkills}
         overallBand={null}
       />
@@ -891,7 +894,8 @@ type Phase = 'intro'|'exam'|'submit'|'results';
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
-  const contentVersion = getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned';
+  const [submittedStudentName, setSubmittedStudentName] = useState('');
+  const contentVersion = `${getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned'}+${IELTS_CHOICE_PRESENTATION_VERSION}`;
   const draftKey = ieltsPracticeDraftKey(mock.id, contentVersion);
 
   const comingSoonSkills = new Set(
@@ -952,6 +956,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       return;
     }
     setFinishError('');
+    trackIeltsEvent('ielts_mock_complete', { mock_id: mock.id });
     setPhase(isReviewableIeltsMock(mock.id)?'submit':'results');
   },[mock.id,recordingIds]);
 
@@ -962,6 +967,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     setRecordingIds(new Set());
     setFinishError('');
     setSubmissionReceipt(null);
+    setSubmittedStudentName('');
     setDeadlineMs(null);
     setDraftRestored(false);
     setActiveSkill(firstActiveSkill); setPhase('intro');
@@ -1013,7 +1019,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   if (phase==='results') {
     return (
       <div className="prac-shell">
-        <IELTSResults mock={mock} exam={exam} ans={ans} receipt={submissionReceipt} onRetry={handleRetry} />
+        <IELTSResults mock={mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
       </div>
     );
   }
@@ -1036,10 +1042,14 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           speakingPrompts={speakingQuestions.map(question=>({ questionId: question.id, partNumber: question.partNumber }))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
-          onSuccess={(receipt)=>{
+          onSuccess={(receipt, studentName)=>{
             try { localStorage.removeItem(draftKey); } catch {}
+            trackIeltsEvent('ielts_lead_submit', { mock_id: mock.id });
+            trackIeltsEvent('ielts_report_view', { mock_id: mock.id, report_state: 'objective_ready_human_review_pending' });
+            trackIeltsEvent('ielts_human_review_pending', { mock_id: mock.id, pending_skills: isFreeIeltsMock(mock.id) ? 'speaking' : 'writing_speaking' });
             setDraftRestored(false);
             setSubmissionReceipt(receipt);
+            setSubmittedStudentName(studentName);
             setPhase('results');
           }}
         />
@@ -1087,6 +1097,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               setActiveSkill(firstActiveSkill);
               setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
             }
+            trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
             setPhase('exam');
           }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{draftRestored?'Continuar examen':'Empezar examen'}</button>
           <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Volver a IELTS</Link>

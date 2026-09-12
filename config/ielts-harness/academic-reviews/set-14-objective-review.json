@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 14,
   "mockId": "set-14",
-  "contentVersionAtReview": "ielts-set-14-v2",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-14-v3",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-objective-key-audit-14-20"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "b09ecc673415f8d7b77d7b188f1ec0eee675f1d5750d3d4de4f95941653749f3",
-    "listeningMaterialSha256": "1d26e051136f277d10795a7afba0ca5695886d7cf09eec14e34a096baacf4b2a",
-    "readingMaterialSha256": "ed137573bd01a6a8b0b71452c2a86b7c0907f10ac1651a8cfd72b933e70bdbb4",
-    "objectiveMaterialSha256": "2b540fc25ec6c3da6e2125c266fce5be9eb560a51265cd1a5653ed70bce877fb"
+    "objectiveSha256": "39b2d37c47a9b133cb30b1d5499693339ece6e011e3197614d706074f3cf5da7",
+    "listeningMaterialSha256": "e4a5b6ee3be6a2ef89874623769a1df07f77feadcc3c819f914897183d7c5904",
+    "readingMaterialSha256": "a166fb02c71e886709b38b89b852ba78010d62312ae4a83634755bd252cb9048",
+    "objectiveMaterialSha256": "3dc060ad97f8323e7d3b4903182924f6e966143ab76667801e8f0e5e37d2087c"
   },
   "summary": {
     "responseRows": 79,
@@ -247,7 +247,7 @@
       ],
       "weight": 1,
       "options": [
-        "a river valley",
+        "a river valley with exposed sediment layers beside an inland stream",
         "a coastal cliff site",
         "a disused quarry"
       ]
@@ -262,7 +262,7 @@
       ],
       "weight": 1,
       "options": [
-        "collect fossils",
+        "collect fossils from every visible layer before recording its position",
         "record the rock layers",
         "take water samples"
       ]
@@ -307,7 +307,7 @@
       ],
       "weight": 1,
       "options": [
-        "falling rocks",
+        "falling rocks from the cliff throughout the entire field visit",
         "the incoming tide",
         "slippery paths"
       ]
@@ -832,7 +832,7 @@
       ],
       "weight": 1,
       "options": [
-        "It was backed by gold reserves held by the Chinese government.",
+        "It was backed by gold reserves held by the Chinese government and could be exchanged for metal on demand.",
         "European readers found it difficult to understand money based on authority alone.",
         "It was adopted immediately by European merchants who heard about it.",
         "It was identical in design to modern central bank banknotes."
@@ -1603,7 +1603,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "a river valley",
+          "text": "a river valley with exposed sediment layers beside an inland stream",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1642,7 +1642,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "collect fossils",
+          "text": "collect fossils from every visible layer before recording its position",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1759,7 +1759,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "falling rocks",
+          "text": "falling rocks from the cliff throughout the entire field visit",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3240,7 +3240,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "It was backed by gold reserves held by the Chinese government.",
+          "text": "It was backed by gold reserves held by the Chinese government and could be exchanged for metal on demand.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3551,5 +3551,21 @@
       }
     ]
   },
-  "reviewSha256": "2cb94b394a9e27d1011b5ed20c42ce8fb85c8830e6eac0172f7044474c975e5b"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q21",
+      "l3q22",
+      "l3q25",
+      "r3-q29"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "cad5d22fcd78f37c1380fae69de0a625a1e0c02589a4497668089974dc42c7dd"
 }

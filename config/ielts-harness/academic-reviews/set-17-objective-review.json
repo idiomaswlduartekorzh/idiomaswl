@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 17,
   "mockId": "set-17",
-  "contentVersionAtReview": "ielts-set-17-v3",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-17-v4",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-objective-key-audit-14-20"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "16abac66ef7747b3f04130a9c6f8d2f9c3136b16e755874900d0463164bb7a62",
-    "listeningMaterialSha256": "dce1e6caeb478478d765428b2be4cf9d38096efb5820ffa07e1b423db1ea8458",
-    "readingMaterialSha256": "ca7d5ab680d3ea3efcc63e0b9fc3960863c1dc5f2a890acfc057b2d1a4e8d5f1",
-    "objectiveMaterialSha256": "fc111234ebb55b9b6e73d5434b5dcc06284be8fc7684c4dbfe54e58fa0ed4537"
+    "objectiveSha256": "65056588b72942b0524d1f9b623fd706c9496c661ed303f087237fa1a4d42efc",
+    "listeningMaterialSha256": "1388f853f7344e2db71d1c1a90cb297095e2baced4f60fadb617395b10455714",
+    "readingMaterialSha256": "7f996e2ad7adec3270e412e2188f946446bbbe5ea296f61c2d463d3a3ceaac24",
+    "objectiveMaterialSha256": "d707673ec7e72d4aa3f21698541f80a876a34432743c51db81f4a9d702096eb0"
   },
   "summary": {
     "responseRows": 79,
@@ -263,7 +263,7 @@
       ],
       "weight": 1,
       "options": [
-        "complete beginners at sport",
+        "complete beginners at sport who have never followed a structured training programme",
         "university students who compete in sport",
         "professional athletes"
       ]
@@ -279,7 +279,7 @@
       "weight": 1,
       "options": [
         "getting participants to attend at the same time each day",
-        "faulty software recording the wrong times",
+        "faulty software recording the wrong attendance times for several participants on every testing day",
         "finding enough volunteers"
       ]
     },
@@ -293,7 +293,7 @@
       ],
       "weight": 1,
       "options": [
-        "less sleep always slows reaction times",
+        "less sleep always slows reaction times equally among athletes and beginners",
         "fitness may protect against short-term sleep loss",
         "beginners react faster than expected"
       ]
@@ -800,7 +800,7 @@
       ],
       "weight": 1,
       "options": [
-        "A prehistoric ancestor of modern humans who was exceptionally rational.",
+        "A prehistoric ancestor of modern humans who was exceptionally rational and consistently maximised personal economic gain.",
         "An economic model assuming people always act rationally in their own interests.",
         "A term used by behavioural economists to describe irrational consumer behaviour.",
         "A concept developed by Daniel Kahneman to describe emotional decision-making."
@@ -816,7 +816,7 @@
       ],
       "weight": 1,
       "options": [
-        "The tendency to avoid all financial risk, even when expected returns are positive.",
+        "The tendency to avoid all financial risk, even when expected returns are positive and the potential loss is relatively small.",
         "The modelling assumption that losses receive roughly twice the weight of comparable gains in classic estimates.",
         "The preference for certain outcomes over uncertain ones, regardless of expected value.",
         "The tendency to overestimate the probability of rare but catastrophic financial losses."
@@ -833,7 +833,7 @@
       "weight": 1,
       "options": [
         "The tendency to underestimate the cost of very large future expenditures.",
-        "A discounting rate that is consistent and predictable across all time horizons.",
+        "A discounting rate that remains consistent and predictable across all time horizons, regardless of how close a reward becomes.",
         "The pattern in which people discount the near-term future much more steeply than the distant future.",
         "The inability to calculate compound interest accurately when making savings decisions."
       ]
@@ -1648,7 +1648,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "complete beginners at sport",
+          "text": "complete beginners at sport who have never followed a structured training programme",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1687,7 +1687,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "faulty software recording the wrong times",
+          "text": "faulty software recording the wrong attendance times for several participants on every testing day",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1726,7 +1726,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "less sleep always slows reaction times",
+          "text": "less sleep always slows reaction times equally among athletes and beginners",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3150,7 +3150,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "A prehistoric ancestor of modern humans who was exceptionally rational.",
+          "text": "A prehistoric ancestor of modern humans who was exceptionally rational and consistently maximised personal economic gain.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3195,7 +3195,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "The tendency to avoid all financial risk, even when expected returns are positive.",
+          "text": "The tendency to avoid all financial risk, even when expected returns are positive and the potential loss is relatively small.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3246,7 +3246,7 @@
         },
         {
           "option": 1,
-          "text": "A discounting rate that is consistent and predictable across all time horizons.",
+          "text": "A discounting rate that remains consistent and predictable across all time horizons, regardless of how close a reward becomes.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -3551,5 +3551,23 @@
       }
     ]
   },
-  "reviewSha256": "9a3973b86f42efe68aa942d564c0b54daad04220b39b0e27a195110bc08e6488"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q22",
+      "l3q23",
+      "l3q24",
+      "r3-q27",
+      "r3-q28",
+      "r3-q29"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "18ed694bcf19e13767f01c635548bf80826aec4b3dcf2bbef13c4aeac663a095"
 }

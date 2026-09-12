@@ -19,10 +19,13 @@ test('expansion keeps every release gate from the audited twenty-set contract', 
   assert.deepEqual(blueprint.referenceContract, {
     listeningParts: 4, listeningQuestions: 40, readingPassages: 3, readingQuestions: 40,
     writingTasks: 2, speakingParts: 3, leadCaptureRequired: true,
+    bandReportRequired: true, overallRequiresFourBands: true,
     answerSheetBlueprintRequired: true, versionScopedDraftsRequired: true,
   });
   const gates = blueprint.agentStages.map(stage => stage.gate);
-  for (const gate of ['STRUCTURE_PASS', 'ACADEMIC_PASS', 'WRITING_PASS', 'SPEAKING_PASS',
-    'COST_AUTHORIZED', 'TECH_PASS', 'ASR_PASS', 'UX_PASS', 'RELEASE_READY']) assert.ok(gates.includes(gate));
+  for (const gate of ['STRUCTURE_PASS', 'ACADEMIC_PASS', 'BIAS_PASS', 'WRITING_PASS', 'SPEAKING_PASS',
+    'COST_AUTHORIZED', 'TECH_PASS', 'ASR_PASS', 'UX_PASS', 'REPORT_PASS', 'RELEASE_READY']) assert.ok(gates.includes(gate));
   assert.equal(blueprint.reusePolicy.neverPublishDirectlyFromArchive, true);
+  assert.equal(blueprint.reportProduct.overallBandPolicy, 'show only after all four skill bands exist');
+  assert.equal(blueprint.reportProduct.analyticsContainsPiiOrAnswerPayloads, false);
 });

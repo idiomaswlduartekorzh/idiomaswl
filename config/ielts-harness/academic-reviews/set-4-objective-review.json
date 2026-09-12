@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 4,
   "mockId": "set-4",
-  "contentVersionAtReview": "ielts-set-4-v4",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-4-v5",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-academic-keys-2-7"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "97a253c573f0282be177844458e1d1183706ded11666ed5996f670daa280de7c",
-    "listeningMaterialSha256": "7fd96513610a874c535cc08684beba2b0b01303a3b700a05549967db90fb89f2",
-    "readingMaterialSha256": "cb168acfec5a4717c2e9deb810b4d892386aeb2f5cfad9827ddd93def9c0aaa8",
-    "objectiveMaterialSha256": "67a5af6ae109b02a0f05cc4da606c02e7a5af9cbe920e1d069ed84cd7ab5ddd0"
+    "objectiveSha256": "0c564253d64a2f35bb76ea148bd67e8eeb75b818b0b5345042f53690e0fff99c",
+    "listeningMaterialSha256": "9b6095b3a01b722f0aad4123dea6f9707d56dcc7fdbb7328dcb27add963f040f",
+    "readingMaterialSha256": "2938871cc9b4ef724396d154658b3ef89b072883fb9e5533296ef6e4dbc238d8",
+    "objectiveMaterialSha256": "5baa85d92e3f89428de0abf1be7d568e4b1388bb9b6ff39a7968bf32a2ab66c2"
   },
   "summary": {
     "responseRows": 79,
@@ -247,7 +247,7 @@
       ],
       "weight": 1,
       "options": [
-        "It used a much larger sample group.",
+        "It used a much larger sample group across several universities.",
         "It tracked the same participants over three years.",
         "It focused exclusively on adults.",
         "It used brain imaging technology."
@@ -263,7 +263,7 @@
       ],
       "weight": 1,
       "options": [
-        "It is very large and clearly significant.",
+        "It is very large and clearly significant across all measured groups.",
         "It does not exist in the data.",
         "It is statistically significant but the effect size is small.",
         "It only affects adults, not teenagers."
@@ -311,7 +311,7 @@
       ],
       "weight": 1,
       "options": [
-        "Because they are easier to recruit as research participants.",
+        "Because university students are easier to recruit, cheaper to contact, and already familiar with completing research questionnaires.",
         "Because adult studies are unavailable.",
         "Because there is more research on that age group and it is a significant developmental stage.",
         "Because social media use is much lower among adults."
@@ -344,7 +344,7 @@
       "weight": 1,
       "options": [
         "Because self-reports are often biased and people underestimate phone use.",
-        "Because screen time data is required by ethics approval.",
+        "Because screen-time data is required by the ethics approval for every participant.",
         "Because participants prefer not to complete questionnaires.",
         "Because it is cheaper than using psychological scales."
       ]
@@ -481,7 +481,7 @@
       ],
       "weight": 1,
       "options": [
-        "Most species are migrating later in the spring.",
+        "Most species are migrating later in spring because warmer winters delay departure.",
         "Climate change has not yet affected migration timing.",
         "Many species are arriving earlier in spring as temperatures rise.",
         "Winter migration has completely stopped for several species."
@@ -643,7 +643,7 @@
       ],
       "weight": 1,
       "options": [
-        "Agriculture was clearly superior to foraging in every measurable way.",
+        "Agriculture was clearly superior to foraging in nutrition, health, equality, and every other measurable way.",
         "The shift to agriculture was complex, significant, and had both positive and negative consequences.",
         "Foraging societies were unable to adapt to changing climates.",
         "Agriculture was invented in a single location and spread from there."
@@ -661,7 +661,7 @@
       "options": [
         "They were used only for religious ceremonies.",
         "They provided milk, wool, and traction power for ploughs.",
-        "They were traded with neighbouring regions for tools.",
+        "They were traded with neighbouring regions in exchange for stone tools and pottery.",
         "They were used exclusively for transportation."
       ]
     },
@@ -675,7 +675,7 @@
       ],
       "weight": 1,
       "options": [
-        "Nomadic",
+        "Nomadic, moving regularly between temporary settlements",
         "Settled, staying in one place",
         "Aggressive",
         "Productive"
@@ -755,7 +755,7 @@
       ],
       "weight": 1,
       "options": [
-        "That people solve problems faster when they work continuously without breaks.",
+        "That people solve unfamiliar problems faster when they work continuously without sleeping or taking breaks.",
         "That REM sleep helps the brain form unusual connections that aid creative problem-solving.",
         "That sleep deprivation has no effect on mathematical ability.",
         "That NREM sleep is more important for insight than REM sleep."
@@ -773,7 +773,7 @@
       "options": [
         "Working in one direction only.",
         "Operating in two directions, affecting each other mutually.",
-        "Moving randomly without a clear pattern.",
+        "Moving randomly between two directions without any consistent reciprocal relationship.",
         "Changing direction unpredictably."
       ]
     },
@@ -1702,25 +1702,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "It tracked the same participants over three years."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "It used a much larger sample group.",
+          "option": 0,
+          "text": "It used a much larger sample group across several universities.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "It focused exclusively on adults.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "It used brain imaging technology.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1747,25 +1747,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "It is statistically significant but the effect size is small."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "It is very large and clearly significant.",
+          "option": 0,
+          "text": "It is very large and clearly significant across all measured groups.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "It does not exist in the data.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "It only affects adults, not teenagers.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1792,25 +1792,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Feel socially isolated in their offline lives."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Use it only for educational purposes.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Limit their use to thirty minutes per day.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Share positive content with their followers.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1837,25 +1837,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Passive use such as scrolling through content."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Active use such as posting and commenting.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Using social media for messaging only.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Sharing academic content with peers.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1882,25 +1882,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "Because there is more research on that age group and it is a significant developmental stage."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "Because they are easier to recruit as research participants.",
+          "option": 0,
+          "text": "Because university students are easier to recruit, cheaper to contact, and already familiar with completing research questionnaires.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Because adult studies are unavailable.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Because social media use is much lower among adults.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1927,25 +1927,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "The Warwick-Edinburgh scale."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "The Oxford Happiness Questionnaire.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Self-designed interview questions.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "The Beck Depression Inventory.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -1972,25 +1972,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "Because self-reports are often biased and people underestimate phone use."
         }
       ],
       "distractors": [
         {
-          "option": "1",
-          "text": "Because screen time data is required by ethics approval.",
+          "option": 1,
+          "text": "Because screen-time data is required by the ethics approval for every participant.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Because participants prefer not to complete questionnaires.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Because it is cheaper than using psychological scales.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2287,25 +2287,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "To reduce wind resistance and save energy."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "To stay warmer during cold weather.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "To avoid collision with smaller birds.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "To navigate more accurately using star maps.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2332,25 +2332,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "When birds arrive at their destination before insects are available."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "When birds migrate to a region with no water sources.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "When climate change causes birds to change their migration routes.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "When birds lose their magnetic navigation ability.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2377,25 +2377,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "Many species are arriving earlier in spring as temperatures rise."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "Most species are migrating later in the spring.",
+          "option": 0,
+          "text": "Most species are migrating later in spring because warmer winters delay departure.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Climate change has not yet affected migration timing.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Winter migration has completely stopped for several species.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2422,25 +2422,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "3",
+          "key": 3,
           "text": "Protecting key stopover sites where birds rest mid-journey."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Reducing the number of migratory species through selective breeding.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 3 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Building bird sanctuaries at final destinations.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 3 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Eliminating predators along migration routes.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 3 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2467,19 +2467,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2506,19 +2506,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2545,19 +2545,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2584,19 +2584,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2623,19 +2623,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2662,19 +2662,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -2821,25 +2821,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "The shift to agriculture was complex, significant, and had both positive and negative consequences."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "Agriculture was clearly superior to foraging in every measurable way.",
+          "option": 0,
+          "text": "Agriculture was clearly superior to foraging in nutrition, health, equality, and every other measurable way.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Foraging societies were unable to adapt to changing climates.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Agriculture was invented in a single location and spread from there.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2866,25 +2866,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "They provided milk, wool, and traction power for ploughs."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "They were used only for religious ceremonies.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
-          "text": "They were traded with neighbouring regions for tools.",
+          "option": 2,
+          "text": "They were traded with neighbouring regions in exchange for stone tools and pottery.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "They were used exclusively for transportation.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2911,25 +2911,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Settled, staying in one place"
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "Nomadic",
+          "option": 0,
+          "text": "Nomadic, moving regularly between temporary settlements",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Aggressive",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Productive",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -2956,25 +2956,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "The brain was thought to be largely inactive during sleep."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Sleep was considered essential for immune system function.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Sleep was understood to play a key role in memory formation.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Researchers believed dream activity drove learning.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3001,25 +3001,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "Declarative memory — facts and events."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Procedural memory — motor skills and habits.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Emotional memory — processing of fearful events.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Working memory — short-term information.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3046,25 +3046,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "40%"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "20%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "30%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "50%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3091,25 +3091,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Learning and stress can disrupt sleep, which harms memory consolidation."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Learning always improves sleep quality by reducing anxiety.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "People learn better when they sleep less because the brain is more alert.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "The relationship is one-directional: sleep affects learning but not vice versa.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3136,25 +3136,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "That REM sleep helps the brain form unusual connections that aid creative problem-solving."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "That people solve problems faster when they work continuously without breaks.",
+          "option": 0,
+          "text": "That people solve unfamiliar problems faster when they work continuously without sleeping or taking breaks.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "That sleep deprivation has no effect on mathematical ability.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "That NREM sleep is more important for insight than REM sleep.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3181,25 +3181,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Operating in two directions, affecting each other mutually."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Working in one direction only.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
-          "text": "Moving randomly without a clear pattern.",
+          "option": 2,
+          "text": "Moving randomly between two directions without any consistent reciprocal relationship.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Changing direction unpredictably.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3226,25 +3226,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "The hippocampus."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "The prefrontal cortex.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "The cerebellum.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "The amygdala.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3451,19 +3451,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3490,19 +3490,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3529,19 +3529,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3568,19 +3568,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3607,19 +3607,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "FALSE"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "TRUE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3646,19 +3646,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "TRUE"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "FALSE",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "NOT GIVEN",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3685,25 +3685,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "16%"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "8%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "12%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "24%",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3730,25 +3730,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "It can be repurposed for stationary energy storage."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "It is immediately recycled into new batteries.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "It must be disposed of due to fire risk.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "It is returned to the manufacturer for refurbishment.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3775,25 +3775,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "Higher manufacturing cost than solid-state batteries."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Long charging times compared to petrol refuelling.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Performance reduction in cold temperatures.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Supply chain concerns over raw material sourcing.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3992,5 +3992,27 @@
       }
     ]
   },
-  "reviewSha256": "e8848db1a5b27797b3d47bf03da47e4dbbc11f1e2cdec5b42efddecb0d3340fc"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q21",
+      "l3q22",
+      "l3q25",
+      "l3q27",
+      "l4q39",
+      "r1q11",
+      "r1q12",
+      "r1q13",
+      "r2q18",
+      "r2q19"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "073bdecd0b8d06985c02385d48821fe454dcef813955d4abb7391900b545acdb"
 }

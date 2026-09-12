@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 19,
   "mockId": "set-19",
-  "contentVersionAtReview": "ielts-set-19-v3",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-19-v4",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-objective-key-audit-14-20"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "79efbb0fcfb711d3f86fed001645c17f6b1eece057a18482200b61a43adf144f",
-    "listeningMaterialSha256": "c4ea93fa36d454044b71022a328d811bc33f57cae721f8e5e106c67d44aae996",
-    "readingMaterialSha256": "522aa3fd7ffd97b0fc18ca60a1cf199f40aee558d8c0776e75aefccef5ce76a6",
-    "objectiveMaterialSha256": "753bdf1311f31f8690b53c49c4a04287b9940f784873fb827c4e69e7f2615f10"
+    "objectiveSha256": "791fdfcb6d0010b77a2fe1e6c69898430ab482e016246fb1720ed51c38093f29",
+    "listeningMaterialSha256": "0fab2ce6e4cfe98a5fade210a0deac0cd041d1452ece12e1d307dedd3df4461f",
+    "readingMaterialSha256": "bcbc1ab317a611a6eb0f89d7248006b99851d955752de9347320400c5e5bc54a",
+    "objectiveMaterialSha256": "364e76e805a07944cf4d0878bca724d7db2baae1ac55b52a725eaa784edba0bc"
   },
   "summary": {
     "responseRows": 79,
@@ -249,7 +249,7 @@
       ],
       "weight": 1,
       "options": [
-        "They had a strong personal interest in music.",
+        "They had a strong personal interest in music and already knew several performers who could participate.",
         "The subject was more accessible than their first idea.",
         "Their tutor recommended the topic to them."
       ]
@@ -309,7 +309,7 @@
       ],
       "weight": 1,
       "options": [
-        "on a memory stick",
+        "on a memory stick delivered directly to the tutor before the department deadline",
         "by email",
         "by uploading it to the department server"
       ]
@@ -850,7 +850,7 @@
       ],
       "weight": 1,
       "options": [
-        "That these museums do not have the resources to care for the objects properly.",
+        "That these museums do not have the resources, specialist staff, or secure facilities needed to care for the objects properly.",
         "That the argument about being guardians of world heritage serves the self-interest of the institutions holding the objects.",
         "That these museums have no legitimate claim to objects purchased legally.",
         "That universal museums promote cultural homogenisation at the expense of local traditions."
@@ -1618,7 +1618,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "They had a strong personal interest in music.",
+          "text": "They had a strong personal interest in music and already knew several performers who could participate.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1774,7 +1774,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "on a memory stick",
+          "text": "on a memory stick delivered directly to the tutor before the department deadline",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3300,7 +3300,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "That these museums do not have the resources to care for the objects properly.",
+          "text": "That these museums do not have the resources, specialist staff, or secure facilities needed to care for the objects properly.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3556,5 +3556,20 @@
     }
   ],
   "findings": [],
-  "reviewSha256": "81bb37d66ebfb9bde02cbb13b7246b241cc23480eea97ff4b095bc27b539b15a"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q21",
+      "l3q25",
+      "r3-q30"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "fd53af93c6fb79026443e54e100e9f07306f3e76ab548d39f740ed5b91f648fa"
 }

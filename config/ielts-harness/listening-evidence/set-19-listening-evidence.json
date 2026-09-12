@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "PASS",
   "set": 19,
-  "generatedAt": "2026-09-09",
+  "generatedAt": "2026-09-12",
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-19.mp3",
     "path": "public/audio/ielts/ielts-listening-set-19.mp3",
@@ -11,12 +11,12 @@
   "transcript": {
     "effectiveTranscriptSha256": "136c72c5508d272d0c0bfe949df853a3abfecaf1abcc134df217cfbd6e80dcab",
     "harnessTranscriptSha256": "96be3c7d8a1fcaa2de962d7585783094f74b5c7bfc55de529a557ee05178357b",
-    "academicListeningMaterialSha256": "c4ea93fa36d454044b71022a328d811bc33f57cae721f8e5e106c67d44aae996"
+    "academicListeningMaterialSha256": "0fab2ce6e4cfe98a5fade210a0deac0cd041d1452ece12e1d307dedd3df4461f"
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-19-objective-review.json",
-    "fileSha256": "75d7d09c1cacb4cc1589f2f8fdb7bfdcffe5d3fd12835b42a974ad587e2a6d99",
-    "reviewSha256": "81bb37d66ebfb9bde02cbb13b7246b241cc23480eea97ff4b095bc27b539b15a"
+    "fileSha256": "5ff8f9dad16c26b7dc4fc52a3292d23c964a0116b13dcb0a7571df3c99e14f1f",
+    "reviewSha256": "fd53af93c6fb79026443e54e100e9f07306f3e76ab548d39f740ed5b91f648fa"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-19/a9eaaaddf8af-staged-asr-qa-set-19.json",
@@ -453,7 +453,7 @@
       "question": 21,
       "responseKey": "l3q21",
       "part": 3,
-      "academicEvidenceSha256": "444e3f83589ee841c2051d38ee6f7ba1ff826485c5d7288d7e4b8c47b2e95d10",
+      "academicEvidenceSha256": "b502fed71dc21f9b72fcf26d520ceae5c1c143c04f1eaefd8fb429c99e5144d3",
       "academicExcerptSha256": "59d6238af7ed961ccb7378c5dce744b037fd691364dc5e877d23c568a963f04a",
       "startSeconds": 972.42,
       "endSeconds": 983.68,
@@ -541,7 +541,7 @@
       "question": 25,
       "responseKey": "l3q25",
       "part": 3,
-      "academicEvidenceSha256": "b741e4f54f49e75c929407871143be63c1d29b8c35b8ddf04363ac7eedae01c7",
+      "academicEvidenceSha256": "dfb91afef170aad245591b338b249c26cf70926e23517fbd5eadf3caf2ed2c7b",
       "academicExcerptSha256": "7791c246834a61eed8f6e782ac57807cba778bfdb3304c1fd525d7cc4bd80fb8",
       "startSeconds": 1198.88,
       "endSeconds": 1208.7,
@@ -880,5 +880,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "55eda8ff6c27a05d7177d3ab769e3b2f7ed6562f1febd0853f3d369b694fbc11"
+  "artifactSha256": "d55b2ad9a9c80e9149b1aac274d76f459ef6b5fd4e42bc9865c1251c8ca2f04c"
 }

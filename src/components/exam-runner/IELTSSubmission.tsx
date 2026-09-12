@@ -28,7 +28,7 @@ interface Props {
   speakingPrompts: IeltsSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: IeltsSubmissionReceipt) => void;
+  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string) => void;
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
@@ -193,7 +193,7 @@ export function IELTSSubmission({
           audio_count: recordedEntries.length,
         });
       } catch {}
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken });
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName);
     } catch (caught) {
       setState('idle');
       showError(errorMessage(caught));

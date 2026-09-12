@@ -4,6 +4,7 @@ import { normalizeIcfesMock } from './normalize-icfes-mock';
 import { withToefl2026FixedForm } from './toefl-fixed-form';
 import { withIeltsListeningProductionTranscript } from './ielts-listening-production';
 import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
+import { withIeltsBalancedChoicePositions } from './ielts-choice-presentation';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -202,26 +203,26 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'icfes:mock-22': icfesMock22,
   'icfes:mock-23': icfesMock23,
   // ── IELTS Academic sets 1–20 ──────────────────────────────────────────────
-  'ielts:set-1':  ieltsSet1,
-  'ielts:set-2':  withIeltsListeningProductionTranscript(ieltsSet2),
-  'ielts:set-3':  withIeltsListeningProductionTranscript(ieltsSet3),
-  'ielts:set-4':  withIeltsListeningProductionTranscript(ieltsSet4),
-  'ielts:set-5':  withIeltsListeningLegacyReplacementTranscript(ieltsSet5),
-  'ielts:set-6':  withIeltsListeningLegacyReplacementTranscript(ieltsSet6),
-  'ielts:set-7':  withIeltsListeningLegacyReplacementTranscript(ieltsSet7),
-  'ielts:set-8':  withIeltsListeningLegacyReplacementTranscript(ieltsSet8),
-  'ielts:set-9':  ieltsSet9,
-  'ielts:set-10': withIeltsListeningLegacyReplacementTranscript(ieltsSet10),
-  'ielts:set-11': withIeltsListeningLegacyReplacementTranscript(ieltsSet11),
-  'ielts:set-12': withIeltsListeningLegacyReplacementTranscript(ieltsSet12),
-  'ielts:set-13': withIeltsListeningProductionTranscript(ieltsSet13),
-  'ielts:set-14': withIeltsListeningProductionTranscript(ieltsSet14),
-  'ielts:set-15': withIeltsListeningProductionTranscript(ieltsSet15),
-  'ielts:set-16': withIeltsListeningProductionTranscript(ieltsSet16),
-  'ielts:set-17': withIeltsListeningProductionTranscript(ieltsSet17),
-  'ielts:set-18': withIeltsListeningProductionTranscript(ieltsSet18),
-  'ielts:set-19': withIeltsListeningProductionTranscript(ieltsSet19),
-  'ielts:set-20': withIeltsListeningProductionTranscript(ieltsSet20),
+  'ielts:set-1':  withIeltsBalancedChoicePositions(ieltsSet1),
+  'ielts:set-2':  withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet2)),
+  'ielts:set-3':  withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet3)),
+  'ielts:set-4':  withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet4)),
+  'ielts:set-5':  withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet5)),
+  'ielts:set-6':  withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet6)),
+  'ielts:set-7':  withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet7)),
+  'ielts:set-8':  withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet8)),
+  'ielts:set-9':  withIeltsBalancedChoicePositions(ieltsSet9),
+  'ielts:set-10': withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet10)),
+  'ielts:set-11': withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet11)),
+  'ielts:set-12': withIeltsBalancedChoicePositions(withIeltsListeningLegacyReplacementTranscript(ieltsSet12)),
+  'ielts:set-13': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet13)),
+  'ielts:set-14': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet14)),
+  'ielts:set-15': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet15)),
+  'ielts:set-16': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet16)),
+  'ielts:set-17': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet17)),
+  'ielts:set-18': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet18)),
+  'ielts:set-19': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet19)),
+  'ielts:set-20': withIeltsBalancedChoicePositions(withIeltsListeningProductionTranscript(ieltsSet20)),
   // ── Other exams ───────────────────────────────────────────────────────────
   'toefl:set-1': withToefl2026FixedForm(toeflSet1),
   'toefl:set-2': withToefl2026FixedForm(toeflSet2),

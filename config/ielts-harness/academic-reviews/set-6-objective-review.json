@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 6,
   "mockId": "set-6",
-  "contentVersionAtReview": "ielts-set-6-v4",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-6-v5",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-academic-keys-2-7"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "c29587c915921e33ada754f55ff62859f9d0267f37c3d3c3e4c33f68d7855198",
+    "objectiveSha256": "77ba1a734513871dcf703a6c272bde7b3833a4785561674d52f5567b5e3bdd0a",
     "listeningMaterialSha256": "89a4807d0cdf8bb601b6725047f39ce6ce504cae42f9cecf5696cadf0fb24d44",
-    "readingMaterialSha256": "2bfc15cf5a9a12964e7b5bb725de179a634053294aa8880aaca3e904df3f0833",
-    "objectiveMaterialSha256": "9749553861ff5ae5fcbd81d70737e8b98ecf99fb0af882976a97773eb78e25fd"
+    "readingMaterialSha256": "e8e069c6d50eb3dd8c7efa86bbc9322a7a2391124cc25c7219ae2164369107e5",
+    "objectiveMaterialSha256": "f0173a37f84a2d3a52f6629cdc1dbf4d13fff6bb14c2a965b496f070bf930cfe"
   },
   "summary": {
     "responseRows": 79,
@@ -818,7 +818,7 @@
       ],
       "weight": 1,
       "options": [
-        "Gig workers earned more than equivalent permanent employees on an hourly basis.",
+        "Gig workers earned more than equivalent permanent employees on an hourly basis after every work-related expense was included.",
         "Median gig earnings exceeded minimum wage in most jurisdictions.",
         "When expenses and unpaid time were included, median gig earnings fell below minimum wage.",
         "Earnings varied so widely that no consistent pattern could be established."
@@ -834,7 +834,7 @@
       ],
       "weight": 1,
       "options": [
-        "It classified Uber drivers as independent contractors with enhanced rights.",
+        "It classified Uber drivers as independent contractors while granting them enhanced contractual rights and predictable holiday benefits.",
         "It established that drivers were employees with full employment protections.",
         "It ruled that drivers qualified as \"workers\" and were entitled to minimum wage and holiday pay.",
         "It prevented Uber from operating in the United Kingdom."
@@ -1647,19 +1647,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "analysing a marketing campaign"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "comparing two brands",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "designing a new product",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
@@ -1686,19 +1686,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "she has data on it"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "it is very well known",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "it is a local firm",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -1725,19 +1725,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "the survey questions"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "the introduction",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "the word count",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -1764,19 +1764,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "0",
+          "key": 0,
           "text": "too few responses"
         }
       ],
       "distractors": [
         {
-          "option": "1",
+          "option": 1,
           "text": "unclear results",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "a biased sample",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -1803,19 +1803,19 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "slides"
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "a poster",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "a video",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
@@ -3203,25 +3203,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Most independent workers chose gig work voluntarily and expressed satisfaction with it."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "The majority of gig workers had been forced into independent work by redundancy.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "Gig workers in developing countries reported higher satisfaction than those in developed countries.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "The survey found that most gig workers wished to transition to traditional employment.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3248,25 +3248,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "When expenses and unpaid time were included, median gig earnings fell below minimum wage."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "Gig workers earned more than equivalent permanent employees on an hourly basis.",
+          "option": 0,
+          "text": "Gig workers earned more than equivalent permanent employees on an hourly basis after every work-related expense was included.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "Median gig earnings exceeded minimum wage in most jurisdictions.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Earnings varied so widely that no consistent pattern could be established.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3293,25 +3293,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "2",
+          "key": 2,
           "text": "It ruled that drivers qualified as \"workers\" and were entitled to minimum wage and holiday pay."
         }
       ],
       "distractors": [
         {
-          "option": "0",
-          "text": "It classified Uber drivers as independent contractors with enhanced rights.",
+          "option": 0,
+          "text": "It classified Uber drivers as independent contractors while granting them enhanced contractual rights and predictable holiday benefits.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "1",
+          "option": 1,
           "text": "It established that drivers were employees with full employment protections.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "It prevented Uber from operating in the United Kingdom.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3338,25 +3338,25 @@
       "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
       "correctOptions": [
         {
-          "key": "1",
+          "key": 1,
           "text": "Drivers were confirmed as independent contractors with some minimum guarantees."
         }
       ],
       "distractors": [
         {
-          "option": "0",
+          "option": 0,
           "text": "Rideshare drivers were reclassified as employees with full benefits.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "2",
+          "option": 2,
           "text": "The proposition was rejected by the courts as unconstitutional.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
         {
-          "option": "3",
+          "option": 3,
           "text": "Platforms were required to offer pension contributions to all drivers.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
@@ -3657,5 +3657,19 @@
       }
     ]
   },
-  "reviewSha256": "aa743dc57b421e76e1391bbcc3fcce6706bbf28222b4c659aada7208bdf9e063"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "r3-q28",
+      "r3-q29"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "bfe7273fa2602f32a8937c24ba00004d2c38039d4aa73850e001bd97fa66841a"
 }

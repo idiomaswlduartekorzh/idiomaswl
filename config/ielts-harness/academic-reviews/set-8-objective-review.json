@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 8,
   "mockId": "set-8",
-  "contentVersionAtReview": "ielts-set-8-v2",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-8-v3",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-audit-harness"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3",
-    "listeningMaterialSha256": "3a4ebeaed537b00012704d5d6d1ca45c87878e8095ccdc9c72aab5dc938179c8",
-    "readingMaterialSha256": "11b99956db5f0a3e0b83a3b159a3fd8ed0f8e35d55d1e7d2ae323353094beb5b",
-    "objectiveMaterialSha256": "f4ad25635858521d2e77cdaa0a0dd56f864158c6f937a08a7a025a47bf756f0f"
+    "objectiveSha256": "fc2926843e6d7bd8ba8a0af2e1f2524bec6cc3ea089a30b9f388a3645cc95ac0",
+    "listeningMaterialSha256": "c1ec0250f0ca5179cdafc7dafd30f201d6a115e2f6a710fe571520e46300496a",
+    "readingMaterialSha256": "7bed1ec6f035f83d5fa647eb18c22c1de035d91e726ff0bf6e176dbfc3c12f19",
+    "objectiveMaterialSha256": "7cea2e5f8622430016b56c00ce207098d9aea0fc9d519b275e03db8f57909dad"
   },
   "summary": {
     "responseRows": 79,
@@ -266,7 +266,7 @@
       ],
       "weight": 1,
       "options": [
-        "too few people were surveyed",
+        "too few people were surveyed to support any useful conclusion",
         "the questions were badly written",
         "the people he surveyed were not typical customers"
       ]
@@ -297,7 +297,7 @@
       "weight": 1,
       "options": [
         "offering a service they cannot — visiting customers at home",
-        "selling spare parts more cheaply than them",
+        "selling spare parts more cheaply than large online retailers can sell them",
         "opening a physical shop"
       ]
     },
@@ -311,7 +311,7 @@
       ],
       "weight": 1,
       "options": [
-        "competition from established repair shops",
+        "competition from established repair shops during the first few months",
         "his own lack of technical skill",
         "poor cash flow in the early months"
       ]
@@ -799,7 +799,7 @@
       ],
       "weight": 1,
       "options": [
-        "That people feel equal emotional responses to gains and losses of the same amount.",
+        "That people feel equal emotional responses to gains and losses of the same amount, regardless of their reference point.",
         "That people experience the pain of losses approximately twice as strongly as the pleasure of equivalent gains.",
         "That rational investors always hold losing stocks until they recover their full value.",
         "That insurance products are purchased because they deliver measurable financial gain."
@@ -815,7 +815,7 @@
       ],
       "weight": 1,
       "options": [
-        "The formal process of keeping financial records in separate accounts.",
+        "The formal process of keeping financial records in separate accounts for different planned expenses and sources of income.",
         "A psychological tendency to value money differently based on its source or intended use.",
         "The rational calculation of expected value when making financial decisions.",
         "A banking practice of separating holiday funds from regular income."
@@ -831,7 +831,7 @@
       ],
       "weight": 1,
       "options": [
-        "A government scheme to reduce excessive spending among high earners.",
+        "A government scheme designed to reduce excessive spending among high earners and redistribute the savings to lower-income households.",
         "A pattern where high-income spending pressure drives increased spending further down the income distribution.",
         "The tendency for windfall money to be spent more quickly than earned income.",
         "A psychological effect caused by the visibility of others' savings rather than spending."
@@ -850,7 +850,7 @@
         "They are ineffective because people ignore default settings.",
         "They are too costly to implement in pension systems.",
         "They may be paternalistic by guiding people towards choices chosen by policy-makers.",
-        "They have been shown to reduce participation in retirement savings schemes."
+        "They have been shown to reduce participation in workplace retirement savings schemes across every income group."
       ]
     },
     {
@@ -1665,7 +1665,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "too few people were surveyed",
+          "text": "too few people were surveyed to support any useful conclusion",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1743,7 +1743,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "selling spare parts more cheaply than them",
+          "text": "selling spare parts more cheaply than large online retailers can sell them",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1782,7 +1782,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "competition from established repair shops",
+          "text": "competition from established repair shops during the first few months",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3143,7 +3143,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "That people feel equal emotional responses to gains and losses of the same amount.",
+          "text": "That people feel equal emotional responses to gains and losses of the same amount, regardless of their reference point.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3188,7 +3188,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "The formal process of keeping financial records in separate accounts.",
+          "text": "The formal process of keeping financial records in separate accounts for different planned expenses and sources of income.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3233,7 +3233,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "A government scheme to reduce excessive spending among high earners.",
+          "text": "A government scheme designed to reduce excessive spending among high earners and redistribute the savings to lower-income households.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3290,7 +3290,7 @@
         },
         {
           "option": 3,
-          "text": "They have been shown to reduce participation in retirement savings schemes.",
+          "text": "They have been shown to reduce participation in workplace retirement savings schemes across every income group.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
         }
@@ -3528,5 +3528,24 @@
     }
   ],
   "findings": [],
-  "reviewSha256": "5bbc6602fb0b455c5a6823fc53877615028139aff39d40ac3a11de4a7e6f5bf0"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q22",
+      "l3q24",
+      "l3q25",
+      "r3-q27",
+      "r3-q28",
+      "r3-q29",
+      "r3-q30"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "dff22a416d921e3f5728134a963a65670507022d9e4d866cd8bd4bea35a2f894"
 }

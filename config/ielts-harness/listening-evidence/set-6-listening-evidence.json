@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "PASS",
   "set": 6,
-  "generatedAt": "2026-09-09",
+  "generatedAt": "2026-09-12",
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-6.mp3",
     "path": "public/audio/ielts/ielts-listening-set-6.mp3",
@@ -15,8 +15,8 @@
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-6-objective-review.json",
-    "fileSha256": "298441febc72f2ec8d9d820782d1a6d8a8e0b28cd464bba5dd99c39364505366",
-    "reviewSha256": "aa743dc57b421e76e1391bbcc3fcce6706bbf28222b4c659aada7208bdf9e063"
+    "fileSha256": "5b2484e8f2dd5e9b2a3f1718c652bc0b5d69e87ca55b233809bf32b8745ddf9d",
+    "reviewSha256": "bfe7273fa2602f32a8937c24ba00004d2c38039d4aa73850e001bd97fa66841a"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-6/f391573e7773-staged-asr-qa-set-6.json",
@@ -453,7 +453,7 @@
       "question": 21,
       "responseKey": "l3q21",
       "part": 3,
-      "academicEvidenceSha256": "6a6f8403b71c3848f8adfd8e8d9b3fe359bd6b72826fdc169714f7d21b02ae5e",
+      "academicEvidenceSha256": "86f5222ab1ba3f356d236e07fdd779ec91bbdc4e92b7e03bbf969a5a03859917",
       "academicExcerptSha256": "02ce2d9536c521e93175fe7601627b24540cb607a123439496cf3117590ec358",
       "startSeconds": 946.32,
       "endSeconds": 952.16,
@@ -475,7 +475,7 @@
       "question": 22,
       "responseKey": "l3q22",
       "part": 3,
-      "academicEvidenceSha256": "682233f9a648661a917d4dff27770d95ab6dbc264d3cfa75b23842f2f9330c1c",
+      "academicEvidenceSha256": "881f50eb10499d3258d2295e9a17464fcf0488a5c0fd37d1863917a300d3638b",
       "academicExcerptSha256": "8921806b845c0cacd8bc9ad70e3adf9407ae15f93e88f94f858634b1d5ee875c",
       "startSeconds": 968.86,
       "endSeconds": 981.96,
@@ -497,7 +497,7 @@
       "question": 23,
       "responseKey": "l3q23",
       "part": 3,
-      "academicEvidenceSha256": "392bf07aa4e3ebdaf8a176f898f8740cf78525435e76909086722100e447b948",
+      "academicEvidenceSha256": "7f085ab35065f2e52345cb82ac6cb27dbc2c0d0697234cdbddc9bc779148a67b",
       "academicExcerptSha256": "0ea5885469d13e29fcf0430c1f90a8384d7bb5f7b6e4e9ce6a9d56042fbd3b72",
       "startSeconds": 1008.54,
       "endSeconds": 1029.08,
@@ -519,7 +519,7 @@
       "question": 24,
       "responseKey": "l3q24",
       "part": 3,
-      "academicEvidenceSha256": "719f1c3917d35dde5642d0067f3389789132eb1f61909a9d3dbbea6e9c5ebbb5",
+      "academicEvidenceSha256": "6582685004113e6031c371dafd96c7577d024d19f8599b274e820c545b36ca13",
       "academicExcerptSha256": "b65deb6e43f190638b1ae352b51da3f8db83d658188bd50aacdcefb31676ca53",
       "startSeconds": 1133,
       "endSeconds": 1139,
@@ -541,7 +541,7 @@
       "question": 25,
       "responseKey": "l3q25",
       "part": 3,
-      "academicEvidenceSha256": "dfe3f5a37cafc3ca46eddeb687417cc35cedf6a764c9ab574b952d6f5a31106c",
+      "academicEvidenceSha256": "c91895622d3f5ff7482476c459c3ed2419b0bac17754891cdb582559dada15fc",
       "academicExcerptSha256": "b65deb6e43f190638b1ae352b51da3f8db83d658188bd50aacdcefb31676ca53",
       "startSeconds": 1133,
       "endSeconds": 1139,
@@ -880,5 +880,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "17284900d842215d812d529ff1ad3ff25c9b7e876305e8536b4eb8588be83f10"
+  "artifactSha256": "51591105ab36d86109cdf9b6c181f9df2ea59489fc9522cea745c31d057b8e94"
 }

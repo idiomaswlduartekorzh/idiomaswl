@@ -3,14 +3,14 @@
   "set": 8,
   "generatedFrom": {
     "source": "src/data/mocks/ielts-set-8.ts",
-    "sourceSha256": "64edce81b75482661be4e44d373fd30807d460f7fa3151c6a395a1985e9f9bb0",
-    "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275"
+    "sourceSha256": "90f175f317e81f80db90d470afac77d8876fe91b6c919206650a2a39e4988a47",
+    "releaseFingerprintSha256": "c2ac29c3a970e2e368ad1f4db7092f0f717b898d29d4e9af5c8cb49f83db8c0c"
   },
   "listening": {
     "binding": {
       "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
       "transcriptSha256": "961ecfa5b8db95fafde560be3fb3353f5184e2f15fdda9d03593c3d232c1ed06",
-      "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3"
+      "objectiveSha256": "fc2926843e6d7bd8ba8a0af2e1f2524bec6cc3ea089a30b9f388a3645cc95ac0"
     },
     "technicalQa": {
       "status": "PASS",
@@ -24,7 +24,7 @@
       "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
       "transcriptSha256": "961ecfa5b8db95fafde560be3fb3353f5184e2f15fdda9d03593c3d232c1ed06",
       "evidencePath": "config/ielts-harness/listening-evidence/set-8-listening-evidence.json",
-      "evidenceSha256": "1dea01c92ff21fffe09ced1194c85000e9d774d3dd1cb3c699713af9d51eefcc"
+      "evidenceSha256": "f368eaa135d6f732f19a7a79257e80de106ca21afc297a52f8bce0986aac9dfd"
     },
     "questions": [
       {
@@ -632,7 +632,7 @@
   "reading": {
     "binding": {
       "readingSha256": "db76a480f2b4eb2fce41a17800626f79bf063892d7dc050222247648d0f7ac08",
-      "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3"
+      "objectiveSha256": "fc2926843e6d7bd8ba8a0af2e1f2524bec6cc3ea089a30b9f388a3645cc95ac0"
     },
     "questions": [
       {
@@ -646,9 +646,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 2,
@@ -661,9 +661,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 3,
@@ -676,9 +676,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 4,
@@ -691,9 +691,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 5,
@@ -706,9 +706,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 6,
@@ -721,9 +721,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 7,
@@ -736,9 +736,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 8,
@@ -751,9 +751,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 9,
@@ -766,9 +766,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 10,
@@ -781,9 +781,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 11,
@@ -796,9 +796,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 12,
@@ -811,9 +811,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 13,
@@ -826,9 +826,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 14,
@@ -841,9 +841,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 15,
@@ -856,9 +856,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 16,
@@ -871,9 +871,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 17,
@@ -886,9 +886,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 18,
@@ -901,9 +901,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 19,
@@ -916,9 +916,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 20,
@@ -931,9 +931,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 21,
@@ -946,9 +946,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 22,
@@ -961,9 +961,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 23,
@@ -976,9 +976,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 24,
@@ -991,9 +991,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 25,
@@ -1006,9 +1006,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 26,
@@ -1021,9 +1021,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 27,
@@ -1036,9 +1036,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 28,
@@ -1051,9 +1051,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 29,
@@ -1066,9 +1066,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 30,
@@ -1081,9 +1081,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 31,
@@ -1096,9 +1096,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 32,
@@ -1111,9 +1111,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 33,
@@ -1126,9 +1126,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 34,
@@ -1141,9 +1141,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 35,
@@ -1156,9 +1156,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 36,
@@ -1171,9 +1171,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 37,
@@ -1186,9 +1186,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 38,
@@ -1201,9 +1201,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 39,
@@ -1216,9 +1216,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       },
       {
         "question": 40,
@@ -1231,9 +1231,9 @@
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness"
+          "id": "codex-audit-harness-bias-review"
         },
-        "reviewedAt": "2026-09-09"
+        "reviewedAt": "2026-09-12"
       }
     ]
   },
@@ -1303,19 +1303,19 @@
   },
   "objectiveKey": {
     "status": "APPROVED",
-    "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3",
+    "objectiveSha256": "fc2926843e6d7bd8ba8a0af2e1f2524bec6cc3ea089a30b9f388a3645cc95ac0",
     "evidencePath": "config/ielts-harness/academic-reviews/set-8-objective-review.json",
-    "evidenceSha256": "e86cc68a8436a60e93d6a4815d6915b6b3bf40c48754d9ba5f67c48a620111e1",
+    "evidenceSha256": "45dd69083641816ebc5463650fb6a46aded6bd52d7a4dc5f44e02efe28159fc7",
     "reviewer": {
       "kind": "academic-agent",
-      "id": "codex-audit-harness"
+      "id": "codex-audit-harness-bias-review"
     },
-    "reviewedAt": "2026-09-09"
+    "reviewedAt": "2026-09-12"
   },
   "ux": {
     "status": "APPROVED",
     "binding": {
-      "contentSha256": "3d3e1a1f7df79dcd5c2db8bd6f5c30ea0c5dd08d972ade75469f942463f48c3d"
+      "contentSha256": "52ac881a1ae813d0c62ed6672982eaa7f7149d91954e201720b0591da125c0d1"
     },
     "viewports": [
       {
@@ -1333,17 +1333,17 @@
     },
     "reviewedAt": "2026-09-12",
     "evidencePath": "config/ielts-harness/ux-runtime-review.json",
-    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+    "evidenceSha256": "88264f02b6309db0003cba7343d92990fe730c28350e1b7042adec67eb7e1c55"
   },
   "releaseApproval": {
     "status": "APPROVED",
-    "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275",
+    "releaseFingerprintSha256": "c2ac29c3a970e2e368ad1f4db7092f0f717b898d29d4e9af5c8cb49f83db8c0c",
     "reviewer": {
       "kind": "human",
-      "id": "workspace-owner"
+      "id": "David Duarte (workspace owner)"
     },
-    "reviewedAt": "2026-09-12T18:19:21.413Z",
+    "reviewedAt": "2026-09-12T19:39:19.595Z",
     "evidencePath": "config/ielts-harness/final-release-approval.json",
-    "evidenceSha256": "db89c5cc6e69c015a5776d31c1bf344c0998e868f011a2522a85eaf2623edd1b"
+    "evidenceSha256": "fe210b7b8a04559c1971598d77998f5848c5456167ef576770e8b6829d462642"
   }
 }

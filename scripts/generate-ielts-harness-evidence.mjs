@@ -19,6 +19,7 @@ const relative = file => path.relative(root, file);
 const reviewedAt = '2026-09-12';
 const evidenceDirectory = path.join(root, 'config/ielts-harness/evidence');
 const set1ApprovedFixture = path.join(root, 'tests/fixtures/ielts/set-1-approved.json');
+const set1ListeningFile = path.join(root, 'config/ielts-harness/listening-evidence/set-1-listening-evidence.json');
 fs.mkdirSync(evidenceDirectory, { recursive: true });
 
 const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-evidence-'));
@@ -107,6 +108,7 @@ const uxFile = path.join(root, 'config/ielts-harness/ux-runtime-review.json');
 fs.writeFileSync(uxFile, `${JSON.stringify(uxReport, null, 2)}\n`);
 
 function walk(directory, pattern, results = []) {
+  if (!fs.existsSync(directory)) return results;
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     if (entry.isDirectory() && ['.cache', '.segments', '.assembly', 'dev-cache-backups'].includes(entry.name)) continue;
     const file = path.join(directory, entry.name);
@@ -128,6 +130,15 @@ function optionText(option) {
   return typeof option === 'string' ? option : option?.text ?? String(option ?? '');
 }
 
+function portableOutputPath(file) {
+  if (fs.existsSync(file)) return file;
+  const marker = `${path.sep}output${path.sep}`;
+  const offset = String(file).lastIndexOf(marker);
+  if (offset < 0) return file;
+  const candidate = path.join(root, 'output', String(file).slice(offset + marker.length));
+  return fs.existsSync(candidate) ? candidate : file;
+}
+
 function set1SelectionExcerpt(question, section, row, questionNumber) {
   let answerText;
   if (question.type === 'multiselect') {
@@ -145,21 +156,34 @@ function set1SelectionExcerpt(question, section, row, questionNumber) {
 
 async function buildSet1ListeningArtifact(material) {
   const publicAudio = path.join(root, 'public/audio/ielts/ielts-listening-set-1.mp3');
+  const mock = (await import(new URL('../src/data/mocks/ielts-set-1.ts', import.meta.url))).default;
+  const listening = mock.sections.filter(section => section.skill === 'listening');
+  const transcriptSha256 = hash(JSON.stringify(listening.map(section => ({ part: section.part, transcript: section.transcript }))));
   const qaCandidates = walk(path.join(root, 'output'), /^repair-qa-report-set-1\.json$/u)
     .map(file => ({ file, report: readJson(file) }))
     .filter(candidate => candidate.report.status === 'PASS' && candidate.report.audioSha256 === fileSha(publicAudio));
+  if (qaCandidates.length === 0 && fs.existsSync(set1ListeningFile)) {
+    const existing = readJson(set1ListeningFile);
+    assert.equal(existing.status, 'PASS', 'Set 1: committed listening evidence must pass');
+    assert.equal(existing.audio?.sha256, fileSha(publicAudio), 'Set 1: committed listening evidence has stale audio');
+    assert.equal(existing.transcript?.harnessTranscriptSha256, transcriptSha256,
+      'Set 1: committed listening evidence has a stale transcript');
+    assert.deepEqual(existing.evidence.map(item => item.question).sort((a, b) => a - b),
+      Array.from({ length: 40 }, (_, index) => index + 1),
+      'Set 1: committed listening evidence must cover Q1-Q40 exactly once');
+    return existing;
+  }
   assert.equal(qaCandidates.length, 1, 'Set 1: expected one repair QA report bound to public audio');
   const { file: qaFile, report: qa } = qaCandidates[0];
-  const globalReportFile = qa.globalAsr.reportPath;
+  const globalReportFile = portableOutputPath(qa.globalAsr.reportPath);
   const globalReport = readJson(globalReportFile);
-  const globalAsrFile = globalReport.asrSourcePath;
+  const globalAsrFile = portableOutputPath(globalReport.asrSourcePath);
   const globalSegments = asrSegments(readJson(globalAsrFile));
-  const focusedAsrFile = qa.focusedRepairAsr.asrPath;
+  const focusedAsrFile = portableOutputPath(qa.focusedRepairAsr.asrPath);
   const focusedSegments = asrSegments(readJson(focusedAsrFile));
   const repairManifest = readJson(path.join(root, 'config/ielts-audio/repair-manifest.json'));
   const repair = repairManifest.rows.find(row => row.set === 1);
   const focusedOffset = repair.gapStartSeconds - 3;
-  const mock = (await import(new URL('../src/data/mocks/ielts-set-1.ts', import.meta.url))).default;
   const globalCompletion = new Map(globalReport.completionEvidence.filter(item => item.found).map(item => [item.question, item]));
   const focusedCompletion = new Map(qa.focusedRepairAsr.completionEvidence.filter(item => item.found).map(item => [item.question, item]));
   const evidence = [];
@@ -192,14 +216,13 @@ async function buildSet1ListeningArtifact(material) {
       alignmentScore: match.score, sourceAsr: { path: vendorListeningEvidenceSource({ root, set: 1, file: globalAsrFile }), sha256: fileSha(globalAsrFile),
         startSeconds: match.start, endSeconds: match.end, masterOffsetSeconds: 0 } });
   }
-  const listening = mock.sections.filter(section => section.skill === 'listening');
   const approvedFixture = set1ApprovedFixture;
   const listeningReference = path.join(root, 'tests/fixtures/ielts/set-1-listening-cambridge10-test1-reference.json');
   const core = {
     schemaVersion: 1, status: 'PASS', set: 1, generatedAt: reviewedAt,
     reviewer: { kind: 'human', id: 'owner-reviewed-set1' },
     audio: { url: '/audio/ielts/ielts-listening-set-1.mp3', path: relative(publicAudio), sha256: fileSha(publicAudio) },
-    transcript: { harnessTranscriptSha256: hash(JSON.stringify(listening.map(section => ({ part: section.part, transcript: section.transcript })))) },
+    transcript: { harnessTranscriptSha256: transcriptSha256 },
     pinnedReferences: [{ path: relative(approvedFixture), sha256: fileSha(approvedFixture) },
       { path: relative(listeningReference), sha256: fileSha(listeningReference) }],
     asr: { qaPath: vendorListeningEvidenceSource({ root, set: 1, file: qaFile }), qaSha256: fileSha(qaFile),
@@ -214,7 +237,6 @@ async function buildSet1ListeningArtifact(material) {
 
 const set1Material = inventory.sets.find(row => row.set === 1);
 const set1Listening = await buildSet1ListeningArtifact(set1Material);
-const set1ListeningFile = path.join(root, 'config/ielts-harness/listening-evidence/set-1-listening-evidence.json');
 fs.writeFileSync(set1ListeningFile, `${JSON.stringify(set1Listening, null, 2)}\n`);
 
 execFileSync(process.execPath, ['--experimental-strip-types', '--no-warnings',

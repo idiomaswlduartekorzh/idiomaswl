@@ -93,7 +93,7 @@ test('guardian rejects old key, missing questions and shuffled options', () => {
   assert.throws(()=>auditObjectiveKey(shuffled,fixture));
 });
 test('old tabs fail closed while every historical W/S version remains reviewable', () => {
-  const revisions = [4, 4, 3, 4, 4, 4, 4, 2, 5, 4, 4, 3, 4, 2, 2, 4, 3, 2, 3, 3];
+  const revisions = [4, 4, 3, 5, 4, 5, 4, 3, 6, 4, 5, 4, 4, 3, 2, 5, 4, 3, 4, 3];
   revisions.forEach((revision, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;

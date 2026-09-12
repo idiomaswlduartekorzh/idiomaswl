@@ -12,6 +12,8 @@
     "writingTasks": 2,
     "speakingParts": 3,
     "leadCaptureRequired": true,
+    "bandReportRequired": true,
+    "overallRequiresFourBands": true,
     "answerSheetBlueprintRequired": true,
     "versionScopedDraftsRequired": true
   },
@@ -24,12 +26,14 @@
   "agentStages": [
     { "id": "contract-author", "output": "complete mock source and answer-sheet blueprint", "gate": "STRUCTURE_PASS" },
     { "id": "academic-key-reviewer", "output": "independent Q1-Q40 Listening and Reading evidence", "gate": "ACADEMIC_PASS" },
+    { "id": "choice-bias-reviewer", "output": "balanced displayed positions and option-length heuristic audit", "gate": "BIAS_PASS" },
     { "id": "visual-writing-reviewer", "output": "hash-bound Writing Task 1 visual and Task 2 prompt review", "gate": "WRITING_PASS" },
     { "id": "speaking-reviewer", "output": "Parts 1-3 breadth, cue card and topic continuity review", "gate": "SPEAKING_PASS" },
     { "id": "casting-cost-auditor", "output": "voice casting, exact character invoice and credit reserve", "gate": "COST_AUTHORIZED" },
     { "id": "audio-producer", "output": "staged master outside public", "gate": "TECH_PASS" },
     { "id": "asr-alignment-reviewer", "output": "Q1-Q40 audible evidence with timecodes", "gate": "ASR_PASS" },
     { "id": "ux-runtime-reviewer", "output": "desktop, mobile, persistence, timer and lead capture evidence", "gate": "UX_PASS" },
+    { "id": "report-product-reviewer", "output": "lead-to-report flow, four-skill band integrity and PII-free funnel evidence", "gate": "REPORT_PASS" },
     { "id": "human-release-owner", "output": "receipt bound to the current release fingerprint", "gate": "RELEASE_READY" }
   ],
   "audioEconomics": {
@@ -53,13 +57,24 @@
     "requireAsrQ1Q40": true,
     "neverPublishDirectlyFromArchive": true
   },
+  "reportProduct": {
+    "currentAccess": "lead-gated practice report",
+    "futureCommercialAccess": "entitlement-gated paid report",
+    "immediateScores": ["Listening", "Reading"],
+    "humanReviewSkills": ["Writing", "Speaking"],
+    "overallBandPolicy": "show only after all four skill bands exist",
+    "detailedReview": ["objective answer review", "Writing feedback", "Speaking feedback when reviewed"],
+    "analyticsContainsPiiOrAnswerPayloads": false
+  },
   "failClosedOn": [
     "missing asset",
     "answer-key drift",
     "question or transcript drift",
     "unsupported answer",
+    "position or option-length heuristic bias",
     "stale visual hash",
     "incomplete speaking contract",
+    "lead, report or overall-band contract drift",
     "audio outside technical limits",
     "insufficient ElevenLabs credits",
     "missing human release receipt"

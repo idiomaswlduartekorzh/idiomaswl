@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 11,
   "mockId": "set-11",
-  "contentVersionAtReview": "ielts-set-11-v4",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-11-v5",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-audit-harness"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "0c6e92f248cd5f079d8a4f1d263524e4ee81d2b055c06c57f6277d44840f771a",
-    "listeningMaterialSha256": "b43c4a9da61917439047a81005c61fefd32399f4947aa515cd3fa5979765fad1",
-    "readingMaterialSha256": "dd69cb5cb2818972a667ad4532684e7c747a5ec4019288e7a419111fbcc9f108",
-    "objectiveMaterialSha256": "2aaa3ca110de07140c7def50c5961b06bfb49455081da93b3ba73746591f5bb0"
+    "objectiveSha256": "428a64cac8f919eda101e873fa4f3614e4bbb5d880c2694ebab094c98a12ea5d",
+    "listeningMaterialSha256": "5ebffc5238d6e1d8e7f585e619063631a5d58e35558035440f191641c33b4982",
+    "readingMaterialSha256": "015f002302e5d2a1ec6d5709ae72633b773f9fe950041dfd19552b690a7823c4",
+    "objectiveMaterialSha256": "1ec0f91fffadc69ab5f0916acdc737e56a0eb4cbfa4d7c64809e2aa721cef9c5"
   },
   "summary": {
     "responseRows": 79,
@@ -249,7 +249,7 @@
       "weight": 1,
       "options": [
         "Individual action alone is not enough to solve plastic waste.",
-        "Recycling schemes are too expensive for most governments.",
+        "Recycling schemes are too expensive for most national and local governments to operate effectively.",
         "Consumers are mainly to blame for plastic pollution."
       ]
     },
@@ -279,7 +279,7 @@
       "weight": 1,
       "options": [
         "Some of the statistics are out of date.",
-        "The main argument is hard to follow.",
+        "The main argument is hard for readers to follow from paragraph to paragraph.",
         "There are too few examples."
       ]
     },
@@ -293,7 +293,7 @@
       ],
       "weight": 1,
       "options": [
-        "It should be made considerably shorter.",
+        "It should be made considerably shorter by removing every example and case study.",
         "Each problem should be paired with its solution.",
         "It should contain more statistics."
       ]
@@ -308,7 +308,7 @@
       ],
       "weight": 1,
       "options": [
-        "It simply repeats points from the introduction.",
+        "It simply repeats points from the introduction without adding any new claim or recommendation.",
         "It contains an idea that belongs in the main body.",
         "It is the strongest part of the essay."
       ]
@@ -832,7 +832,7 @@
       ],
       "weight": 1,
       "options": [
-        "People accurately reassess the risk of flying after hearing of a crash.",
+        "People accurately reassess the relative risk of flying and driving after hearing reports of an aviation crash.",
         "The drama of crashes makes flying seem more dangerous than driving, despite the statistics.",
         "People increase their fear of driving after hearing about aviation accidents.",
         "The heuristic causes people to underestimate all forms of transport risk."
@@ -848,7 +848,7 @@
       ],
       "weight": 1,
       "options": [
-        "Biases are entirely harmful and should always be corrected.",
+        "Biases are entirely harmful in every context and should always be identified and corrected.",
         "Simple rules can sometimes be more effective than complex analytical approaches.",
         "The dual-process theory of mind is scientifically invalid.",
         "Biases only affect people without formal education."
@@ -1609,7 +1609,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "Recycling schemes are too expensive for most governments.",
+          "text": "Recycling schemes are too expensive for most national and local governments to operate effectively.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1687,7 +1687,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "The main argument is hard to follow.",
+          "text": "The main argument is hard for readers to follow from paragraph to paragraph.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1726,7 +1726,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "It should be made considerably shorter.",
+          "text": "It should be made considerably shorter by removing every example and case study.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1765,7 +1765,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "It simply repeats points from the introduction.",
+          "text": "It simply repeats points from the introduction without adding any new claim or recommendation.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3240,7 +3240,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "People accurately reassess the risk of flying after hearing of a crash.",
+          "text": "People accurately reassess the relative risk of flying and driving after hearing reports of an aviation crash.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3285,7 +3285,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "Biases are entirely harmful and should always be corrected.",
+          "text": "Biases are entirely harmful in every context and should always be identified and corrected.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3535,5 +3535,23 @@
     }
   ],
   "findings": [],
-  "reviewSha256": "3de8c1e24555416f4eb27061a2831a72aea9961fb298eeea1931d5b45501058f"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q21",
+      "l3q23",
+      "l3q24",
+      "l3q25",
+      "r3-q29",
+      "r3-q30"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "74b128b650acea65b5194e20b2f63e7b598a0f2f78cd7554e2d8f8eb43dee13b"
 }

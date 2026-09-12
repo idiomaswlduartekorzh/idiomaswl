@@ -529,7 +529,7 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           part: 7,
           text: 'What did research across the UK, US, and Australia consistently find about gig worker earnings?',
           options: [
-            'Gig workers earned more than equivalent permanent employees on an hourly basis.',
+            'Gig workers earned more than equivalent permanent employees on an hourly basis after every work-related expense was included.',
             'Median gig earnings exceeded minimum wage in most jurisdictions.',
             'When expenses and unpaid time were included, median gig earnings fell below minimum wage.',
             'Earnings varied so widely that no consistent pattern could be established.',
@@ -542,7 +542,7 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           part: 7,
           text: 'What was the significance of the UK Supreme Court ruling in Uber BV v Aslam?',
           options: [
-            'It classified Uber drivers as independent contractors with enhanced rights.',
+            'It classified Uber drivers as independent contractors while granting them enhanced contractual rights and predictable holiday benefits.',
             'It established that drivers were employees with full employment protections.',
             'It ruled that drivers qualified as "workers" and were entitled to minimum wage and holiday pay.',
             'It prevented Uber from operating in the United Kingdom.',

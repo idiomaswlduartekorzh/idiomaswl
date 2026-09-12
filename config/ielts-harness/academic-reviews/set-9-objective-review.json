@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 9,
   "mockId": "set-9",
-  "contentVersionAtReview": "ielts-set-9-v5",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-9-v6",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-audit-harness"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "ab6e0217ad18300d16754a756ea57767ab4433817787e60cef4f4e948a1ab39b",
-    "listeningMaterialSha256": "69f76d0aed71ba41958d577a6e6dd9c0d23f546403ed55ec46b1a7fccfc50ba4",
-    "readingMaterialSha256": "0da0c2663200bc555e58e9109b41c7476bc5d816bc3e796bb60b835d7b43df6a",
-    "objectiveMaterialSha256": "8f7e6fe39f19b580585b25cfd67420a9e722c9e3998e3aa0d5e561fc9a1cf2d3"
+    "objectiveSha256": "bb42bdc2cf1fb5e01789534ae1046a7da61daa4c90678c52650ec4dff34fa6b6",
+    "listeningMaterialSha256": "e8924afade6a4657affd87f81e8bd9787007065b337c25cfe272724a048efd0f",
+    "readingMaterialSha256": "0cb642848b0fe7dccf3c4859b81487e74b62510c00dfd7af7161db40d2141dd4",
+    "objectiveMaterialSha256": "78f250ec139fbd14592272209af4ad8fa4b3d88b36bc8d4f999b11130aa684f5"
   },
   "summary": {
     "responseRows": 79,
@@ -263,7 +263,7 @@
       "weight": 1,
       "options": [
         "It is the meal students most often skip.",
-        "It is the cheapest meal to study.",
+        "It is the cheapest meal for researchers to study across a large student population.",
         "Earlier research on it was unreliable."
       ]
     },
@@ -277,7 +277,7 @@
       ],
       "weight": 1,
       "options": [
-        "through laboratory experiments",
+        "through controlled laboratory experiments conducted over an entire academic term",
         "through an online questionnaire",
         "through face-to-face interviews"
       ]
@@ -294,7 +294,7 @@
       "options": [
         "Students who ate breakfast concentrated better.",
         "Most students skipped breakfast to save time.",
-        "Breakfast made no difference to performance."
+        "Breakfast made no measurable difference to performance in any of the tasks that students completed."
       ]
     },
     {
@@ -810,7 +810,7 @@
       ],
       "weight": 1,
       "options": [
-        "It can automate manual labour more efficiently than earlier machines.",
+        "It can automate manual labour more efficiently than earlier machines without affecting professional or cognitive occupations.",
         "It can replicate both manual and cognitive work, threatening a wider range of jobs simultaneously.",
         "It has already destroyed more jobs than any previous technology in history.",
         "It primarily affects low-skill workers rather than professionals."
@@ -1636,7 +1636,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "It is the cheapest meal to study.",
+          "text": "It is the cheapest meal for researchers to study across a large student population.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1675,7 +1675,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "through laboratory experiments",
+          "text": "through controlled laboratory experiments conducted over an entire academic term",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1720,7 +1720,7 @@
         },
         {
           "option": 2,
-          "text": "Breakfast made no difference to performance.",
+          "text": "Breakfast made no measurable difference to performance in any of the tasks that students completed.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         }
@@ -3153,7 +3153,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "It can automate manual labour more efficiently than earlier machines.",
+          "text": "It can automate manual labour more efficiently than earlier machines without affecting professional or cognitive occupations.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3506,5 +3506,21 @@
       "reason": "Removed a redundant accepted variant that would render as second floor floor."
     }
   ],
-  "reviewSha256": "5a1b93790782023d25f4dedfd9f260630268be16ef9d2311f64a1c6c63259f51"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q22",
+      "l3q23",
+      "l3q24",
+      "r3-q28"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "c49c8639a79f7a788574ecb5cab53649682529f34b76144cfd50cec6077b5060"
 }

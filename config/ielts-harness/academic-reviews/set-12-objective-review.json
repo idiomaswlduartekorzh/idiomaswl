@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 12,
   "mockId": "set-12",
-  "contentVersionAtReview": "ielts-set-12-v3",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-12-v4",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-audit-harness"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "874eb503ff5da812cbd2e42f0a8db9721b0db91dda2ff001599cb6a1b3aa6843",
-    "listeningMaterialSha256": "0e0fabdc83edcec520eafaff3a8a9ec02aee0d47baf6f5a4888561f02b87a0ad",
-    "readingMaterialSha256": "99c68c34b837dd1cecc1ee5f3ba2674d6780bff66f22acaa1087026614be88eb",
-    "objectiveMaterialSha256": "0d4eac5c63cd3683564ba95f63ba5db962f593cd6d9235add84373fec77b5cf4"
+    "objectiveSha256": "c57fd2ee0c97dccaeb111c3d84b29b26ffc6bad17e7d1262753b9349efb817ec",
+    "listeningMaterialSha256": "425706ad6182d24685212d7e4e81681c50ce4f6f91790496da3297e20079ade1",
+    "readingMaterialSha256": "68b93a92862459755ad789ea02b9c7920261e6b1cf8b434ad0c6441c1c695e7f",
+    "objectiveMaterialSha256": "54c2fa019ff5986456234af77301ed6c921ee24dbcae169a095e314fba278ce6"
   },
   "summary": {
     "responseRows": 79,
@@ -255,7 +255,7 @@
       "weight": 1,
       "options": [
         "find its way through a maze on its own",
-        "lift and carry small objects",
+        "lift and carry small objects between marked locations without human guidance",
         "respond to spoken commands"
       ]
     },
@@ -300,7 +300,7 @@
       "weight": 1,
       "options": [
         "to test it in a simple maze before the full layout",
-        "to test it in the real competition first",
+        "to test it in the real competition before conducting any controlled trials",
         "to ask another group to test it"
       ]
     },
@@ -314,7 +314,7 @@
       ],
       "weight": 1,
       "options": [
-        "making it larger",
+        "making it larger so it can hold a heavier battery",
         "using plastic instead of plywood",
         "adding a second battery"
       ]
@@ -806,7 +806,7 @@
       ],
       "weight": 1,
       "options": [
-        "Social media is primarily responsible for increasing smartphone addiction.",
+        "Social media is the main direct cause of smartphone addiction and poor mental health among all young people.",
         "Exposure to idealised images on social platforms drives feelings of inadequacy in young people.",
         "Social media platforms deliberately cause mental illness in young users.",
         "The decline in face-to-face interaction began well before smartphones were introduced."
@@ -824,7 +824,7 @@
       "options": [
         "There was no statistically measurable association between social media and wellbeing.",
         "The association between social media use and poor wellbeing was real but very small.",
-        "Social media was confirmed as the primary cause of adolescent mental health problems.",
+        "Social media was confirmed as the primary cause of adolescent mental health problems in every demographic group.",
         "Girls showed a much stronger negative association than boys."
       ]
     },
@@ -838,7 +838,7 @@
       ],
       "weight": 1,
       "options": [
-        "Young people who use social media to passively scroll through news feeds.",
+        "Young people who use social media mainly to passively scroll through news feeds without interacting with close friends.",
         "Those who live in large cities with many opportunities for face-to-face interaction.",
         "Young people who are socially isolated offline, such as LGBTQ+ youth or those with chronic illness.",
         "Adolescents who use social media for less than one hour per day."
@@ -1651,7 +1651,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "lift and carry small objects",
+          "text": "lift and carry small objects between marked locations without human guidance",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1768,7 +1768,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "to test it in the real competition first",
+          "text": "to test it in the real competition before conducting any controlled trials",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -1807,7 +1807,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "making it larger",
+          "text": "making it larger so it can hold a heavier battery",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3192,7 +3192,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "Social media is primarily responsible for increasing smartphone addiction.",
+          "text": "Social media is the main direct cause of smartphone addiction and poor mental health among all young people.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3243,7 +3243,7 @@
         },
         {
           "option": 2,
-          "text": "Social media was confirmed as the primary cause of adolescent mental health problems.",
+          "text": "Social media was confirmed as the primary cause of adolescent mental health problems in every demographic group.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         },
@@ -3282,7 +3282,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "Young people who use social media to passively scroll through news feeds.",
+          "text": "Young people who use social media mainly to passively scroll through news feeds without interacting with close friends.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3577,5 +3577,23 @@
     }
   ],
   "findings": [],
-  "reviewSha256": "d6936a667d4886898ad944ba291c0e8f4de243fe77c9748a3a80aaf6e4edf7c7"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q21",
+      "l3q24",
+      "l3q25",
+      "r3-q27",
+      "r3-q28",
+      "r3-q29"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "3040aedf84c01945a4196ab5c8f45d9aa6eb34bd6ae59191c50ae7fcfb095b7b"
 }

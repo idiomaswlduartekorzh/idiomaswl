@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "PASS",
   "set": 4,
-  "generatedAt": "2026-09-09",
+  "generatedAt": "2026-09-12",
   "audio": {
     "url": "/audio/ielts/ielts-listening-set-4.mp3",
     "path": "public/audio/ielts/ielts-listening-set-4.mp3",
@@ -11,12 +11,12 @@
   "transcript": {
     "effectiveTranscriptSha256": "8daf05b6b482fbf6d577766c8ece6e724dfbf6ac1ea395e4bab74326dfc22b3b",
     "harnessTranscriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
-    "academicListeningMaterialSha256": "7fd96513610a874c535cc08684beba2b0b01303a3b700a05549967db90fb89f2"
+    "academicListeningMaterialSha256": "9b6095b3a01b722f0aad4123dea6f9707d56dcc7fdbb7328dcb27add963f040f"
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
-    "fileSha256": "495e3f72ae862230b2b1882ecd59e21ced3a70f3fd30d3942c0831d07b7ba480",
-    "reviewSha256": "e8848db1a5b27797b3d47bf03da47e4dbbc11f1e2cdec5b42efddecb0d3340fc"
+    "fileSha256": "34e50737ef02afd9e587322e8dcefb0f2ae9258f8b0a3d6fdcbddc1d11240014",
+    "reviewSha256": "073bdecd0b8d06985c02385d48821fe454dcef813955d4abb7391900b545acdb"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-4/59007598e855-staged-asr-qa-set-4.json",
@@ -453,7 +453,7 @@
       "question": 21,
       "responseKey": "l3q21",
       "part": 3,
-      "academicEvidenceSha256": "9864fdb7d69334248b82b15cec727ff966a362ce84981d1d6b46a3ce1a553e65",
+      "academicEvidenceSha256": "976e1c51636691bceaabe0d6de73a5d0dcf5ca02ace8110ad965f031b5b2007f",
       "academicExcerptSha256": "2c17e1260319a6f37e97ac8126be2d7a216937e2deeede3fe1c2382907d9cf2e",
       "startSeconds": 985.1800000000001,
       "endSeconds": 1001.78,
@@ -475,7 +475,7 @@
       "question": 22,
       "responseKey": "l3q22",
       "part": 3,
-      "academicEvidenceSha256": "fb6d58ccfea282b1134e6e5cf48313f2c0d5c50e76a372fb47fcf064adc7f0b2",
+      "academicEvidenceSha256": "0066a0bb5ba7198fe088956b80ded6b20fb55b40810befcbf790e6edaa6fcc45",
       "academicExcerptSha256": "1323cde835fc9d93cfb9309ecefae2a7653a4c5883d4ac107d4711a068b464b1",
       "startSeconds": 1021.76,
       "endSeconds": 1051.2,
@@ -497,7 +497,7 @@
       "question": 23,
       "responseKey": "l3q23",
       "part": 3,
-      "academicEvidenceSha256": "95926212af4a5c5037498aef92ef11b4f07895cf2dd094396f06fc794bbbf69b",
+      "academicEvidenceSha256": "016ff20acd402e38e3c6f396a352e0078dd76046ab7254eb217be542f955529c",
       "academicExcerptSha256": "6382c887075f89b86e9ddf033ea668524247339feb94800f8c86e86be8df8327",
       "startSeconds": 1051.8,
       "endSeconds": 1062.16,
@@ -519,7 +519,7 @@
       "question": 24,
       "responseKey": "l3q24",
       "part": 3,
-      "academicEvidenceSha256": "b47f5097e8fdb83d92d7e61f9f555da76c0585537f93db314258c0d722a47fc4",
+      "academicEvidenceSha256": "8d64acf04104df82b4bf991ec20c55db386ee0063a5a5006e4f134bebb610806",
       "academicExcerptSha256": "47a96a7d07a85daba13cb6849cd557effb24094efd8e7ff7dca0f90e7c55de13",
       "startSeconds": 1083.9,
       "endSeconds": 1093.68,
@@ -541,7 +541,7 @@
       "question": 25,
       "responseKey": "l3q25",
       "part": 3,
-      "academicEvidenceSha256": "e2191d51fb82233716dd31d017ee3b4e664e89295c7c58ddafe21de88df6186f",
+      "academicEvidenceSha256": "b6a9db52c747930b6e0ff9184e51f73086c64b1d454a95c509ec0c706e2f804b",
       "academicExcerptSha256": "db8d90824d39359466b4c464c2b139220482d465acbb461afb8e09245215d67e",
       "startSeconds": 1124.76,
       "endSeconds": 1134.54,
@@ -563,7 +563,7 @@
       "question": 26,
       "responseKey": "l3q26",
       "part": 3,
-      "academicEvidenceSha256": "ae35c7179230ea03dc121aed5b516d2b70779704c415d601a8039676ef6fbd83",
+      "academicEvidenceSha256": "14a19df4421dcf12a6f72b20eb00891ad10c264e9f4661999f199591c3fc97e8",
       "academicExcerptSha256": "69208328d9779c97d93ba73876df4334d7d586633c779b55f4ad4ebaf0eb5d85",
       "startSeconds": 1247.5,
       "endSeconds": 1261,
@@ -585,7 +585,7 @@
       "question": 27,
       "responseKey": "l3q27",
       "part": 3,
-      "academicEvidenceSha256": "aff6b577f46144e067c504aa27a0e3a7e645bf2389525fe1f1212d7ae3ccdcbb",
+      "academicEvidenceSha256": "e1455f9814923bbee9b1ab5bb15c511e53090e9a12569063ece6362aff3b7694",
       "academicExcerptSha256": "aae6faab02a2073057a4456a8ad8d61a16fac19e834e6d198213757ec5bb3f9f",
       "startSeconds": 1284.22,
       "endSeconds": 1293.68,
@@ -796,7 +796,7 @@
       "question": 37,
       "responseKey": "l4q37",
       "part": 4,
-      "academicEvidenceSha256": "a17f16602ee181f2523e4c6556bcc2560bddcf66abf5e648108794da37050a22",
+      "academicEvidenceSha256": "49e427da660c3f7fafe833d94a4be8893f6a5ddd40382c3e4f435131b32eebf5",
       "academicExcerptSha256": "6b23cdcef1c593258797b6dd93de964f0c7d057caffbe46f88fe3a37e97219b1",
       "startSeconds": 1647.66,
       "endSeconds": 1661.12,
@@ -818,7 +818,7 @@
       "question": 38,
       "responseKey": "l4q38",
       "part": 4,
-      "academicEvidenceSha256": "e432d549d7d98b4efd2dc41a894702ff2c011577135c29f5cc1d799f0fbdb1ac",
+      "academicEvidenceSha256": "a33f3fc6482f1abdcc4b96393f87332fad88b75bc999e33597379eb52a325a4f",
       "academicExcerptSha256": "562dacfcbbd1e7cf98b51d84d81d3f5318d5cf4e2c630ca7a2399a7061f7a263",
       "startSeconds": 1663.08,
       "endSeconds": 1683,
@@ -840,7 +840,7 @@
       "question": 39,
       "responseKey": "l4q39",
       "part": 4,
-      "academicEvidenceSha256": "db8f1f440ce944e8b5b72463a192b72bf74eb28366e2f3c3928e1015d997334f",
+      "academicEvidenceSha256": "1a30e858b339899d826f0e53a5c306bd10793a7443a22e423fd905012758c157",
       "academicExcerptSha256": "562dacfcbbd1e7cf98b51d84d81d3f5318d5cf4e2c630ca7a2399a7061f7a263",
       "startSeconds": 1663.08,
       "endSeconds": 1683,
@@ -862,7 +862,7 @@
       "question": 40,
       "responseKey": "l4q40",
       "part": 4,
-      "academicEvidenceSha256": "f093e39257035388a7c046b7b72c76f8bf35f5d87dd7687476ae426f747e8752",
+      "academicEvidenceSha256": "219135ff0cc142478629d20b88c3f3c02a421b4945694434ee44137cbd3b3342",
       "academicExcerptSha256": "a1528649f6778a184661c8d7cf65f22180d4fdfe25d059e706a36e97c6cfbabb",
       "startSeconds": 1707.48,
       "endSeconds": 1720.64,
@@ -886,5 +886,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "cf6f38625da5e75ab67fbcf819d8eda99bf7c91156a41559e857c4c3a1f65f79"
+  "artifactSha256": "b85851999f516a226cecc5a545644898ef2d4744ba6cbf2d9c166836d4465a9d"
 }

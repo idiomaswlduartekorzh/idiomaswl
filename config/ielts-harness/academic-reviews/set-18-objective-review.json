@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 18,
   "mockId": "set-18",
-  "contentVersionAtReview": "ielts-set-18-v2",
-  "reviewedAt": "2026-09-09",
+  "contentVersionAtReview": "ielts-set-18-v3",
+  "reviewedAt": "2026-09-12",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "codex-objective-key-audit-14-20"
+    "id": "codex-audit-harness-bias-review"
   },
   "methodology": [
     "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
@@ -17,10 +17,10 @@
     "The review records an identified academic-agent review and does not represent human or official IELTS certification."
   ],
   "binding": {
-    "objectiveSha256": "14ddca18915b19d65f2a9541744bff4a1e35a0941dada3c121407389578de878",
-    "listeningMaterialSha256": "54d62b8946f250aca7dbbf4a2eb3a280c812817657674d0205b9efb95ec3ecd7",
-    "readingMaterialSha256": "853f992315abcb724bb2ac85cbae53a6931504ad58499a06d0ead8c13c35d4ad",
-    "objectiveMaterialSha256": "d992f1579c9036a169bf79b340fd659e33358a582d176717e3d2e90f9e32ad38"
+    "objectiveSha256": "109f141611bdec4e51bb48f51152be662ff58dc8558a9a03493eeae7ae02e7de",
+    "listeningMaterialSha256": "bbdd2935c08a0da80b9a310ea0e655055130718f45d269648934cafb4a05d2b2",
+    "readingMaterialSha256": "7b57c3a0243480687c44ea57e6be4d0e98fdf30f53ff5a110a1aa6e910f8d8be",
+    "objectiveMaterialSha256": "5492da3ebb7a0f486fce138c79196c173dfd16e382b4cc82e845da2b94516d62"
   },
   "summary": {
     "responseRows": 79,
@@ -260,7 +260,7 @@
       ],
       "weight": 1,
       "options": [
-        "It has more speakers than any other Celtic language.",
+        "It has more fluent speakers today than any other surviving Celtic language in Britain.",
         "Its last native speaker is still alive today.",
         "It has been revived after its last native speaker died."
       ]
@@ -275,7 +275,7 @@
       ],
       "weight": 1,
       "options": [
-        "academic articles",
+        "academic articles published by university researchers who had documented the revival from a distance",
         "interviews with people involved in the revival",
         "historical documents"
       ]
@@ -290,7 +290,7 @@
       ],
       "weight": 1,
       "options": [
-        "Language revival depends mainly on government funding.",
+        "Language revival depends mainly on sustained government funding and formal legislation rather than local participation.",
         "Language revival depends more on community enthusiasm than on money.",
         "Language revival is impossible once native speakers have died."
       ]
@@ -306,7 +306,7 @@
       "weight": 1,
       "options": [
         "keeping the presentation within the time limit",
-        "finding enough research material",
+        "finding enough reliable research material to support each section of the presentation",
         "disagreeing about the main argument"
       ]
     },
@@ -799,7 +799,7 @@
       ],
       "weight": 1,
       "options": [
-        "Children learn language faster when parents use simplified speech with them.",
+        "Children learn grammar faster when parents use simplified speech, explicitly correct every error, and teach formal grammatical rules.",
         "The language input children receive is too limited to explain the grammatical knowledge they develop.",
         "Children from different cultures acquire language at very different rates.",
         "Computational models have failed to reproduce human grammatical knowledge."
@@ -850,7 +850,7 @@
         "It is evidence of confusion caused by learning two languages simultaneously.",
         "It is commonly systematic rather than evidence that exposure to multiple languages caused confusion.",
         "It always leads to long-term deficits in both languages.",
-        "It is unique to children who learn two languages sequentially rather than simultaneously."
+        "It is unique to children who learn two languages sequentially and does not occur among simultaneous bilinguals."
       ]
     },
     {
@@ -1629,7 +1629,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "It has more speakers than any other Celtic language.",
+          "text": "It has more fluent speakers today than any other surviving Celtic language in Britain.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1668,7 +1668,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "academic articles",
+          "text": "academic articles published by university researchers who had documented the revival from a distance",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1707,7 +1707,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "Language revival depends mainly on government funding.",
+          "text": "Language revival depends mainly on sustained government funding and formal legislation rather than local participation.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -1746,7 +1746,7 @@
       "distractors": [
         {
           "option": 1,
-          "text": "finding enough research material",
+          "text": "finding enough reliable research material to support each section of the presentation",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
         },
@@ -3143,7 +3143,7 @@
       "distractors": [
         {
           "option": 0,
-          "text": "Children learn language faster when parents use simplified speech with them.",
+          "text": "Children learn grammar faster when parents use simplified speech, explicitly correct every error, and teach formal grammatical rules.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
         },
@@ -3290,7 +3290,7 @@
         },
         {
           "option": 3,
-          "text": "It is unique to children who learn two languages sequentially rather than simultaneously.",
+          "text": "It is unique to children who learn two languages sequentially and does not occur among simultaneous bilinguals.",
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
         }
@@ -3538,5 +3538,23 @@
       }
     ]
   },
-  "reviewSha256": "5242a1a8ddb4e9868db6907516f8e6d331c96d387c8b8e9632651feaa085ae2b"
+  "editorialBalanceReview": {
+    "status": "APPROVED",
+    "reviewedAt": "2026-09-12",
+    "changedResponseKeys": [
+      "l3q22",
+      "l3q23",
+      "l3q24",
+      "l3q25",
+      "r3-q27",
+      "r3-q30"
+    ],
+    "checks": {
+      "keyedMeaningUnchanged": true,
+      "revisedDistractorsRemainContradictedOrUnsupported": true,
+      "grammarMatchesQuestionStem": true,
+      "optionLengthHeuristicGatePassed": true
+    }
+  },
+  "reviewSha256": "f4aae4bcad707b9890c64f58c8bee3de89c85fe208fface31560b95588b633e4"
 }

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "status": "APPROVED",
-  "approvedAt": "2026-09-12T18:19:21.413Z",
+  "approvedAt": "2026-09-12T19:39:19.595Z",
   "reviewer": {
     "kind": "human",
-    "id": "workspace-owner"
+    "id": "David Duarte (workspace owner)"
   },
-  "statement": "Autorizo la liberacion de los veinte mocks IELTS auditados para uso con estudiantes y produccion.",
+  "statement": "Autorizo llevar a main y producción el cierre IELTS verificado, limpiar la rama y dejar el blueprint listo para escalar.",
   "sets": [
     {
       "set": 1,
@@ -22,7 +22,7 @@
     },
     {
       "set": 4,
-      "releaseFingerprintSha256": "6a837688b15ff986382c05333269bb142941955dac2a67fc6b6641a03806ed22"
+      "releaseFingerprintSha256": "81de55a657dfaff27ff717839f3b1129c6512e836edc5304652ef72a9ae3f92b"
     },
     {
       "set": 5,
@@ -30,7 +30,7 @@
     },
     {
       "set": 6,
-      "releaseFingerprintSha256": "72ff0e0764795a98bc73ff82cf3fe9b0b7923a584e82e5722280427676cf0001"
+      "releaseFingerprintSha256": "ed5f8ffa8e0fdce22392c6b2d0afa1c9a85d6d4103807adaf41c1a57f8d82b86"
     },
     {
       "set": 7,
@@ -38,11 +38,11 @@
     },
     {
       "set": 8,
-      "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275"
+      "releaseFingerprintSha256": "c2ac29c3a970e2e368ad1f4db7092f0f717b898d29d4e9af5c8cb49f83db8c0c"
     },
     {
       "set": 9,
-      "releaseFingerprintSha256": "a9042902d386dd8351125645ec47a6f36c9131be998efb455a8712bd7c9824e8"
+      "releaseFingerprintSha256": "c729ee817aa2acd472b60a85861fdd8a7053fe04d37c900fbb9760999618fc47"
     },
     {
       "set": 10,
@@ -50,11 +50,11 @@
     },
     {
       "set": 11,
-      "releaseFingerprintSha256": "f2762294a77c30c789d61f4608d12ae57dd8248f909aff738f6ff32e3896ea32"
+      "releaseFingerprintSha256": "281560b4d0220f3b571d08e47b304c2a1d676f1ffce4f1fd1f4490e08f2de5c2"
     },
     {
       "set": 12,
-      "releaseFingerprintSha256": "9bda329389ce8d23f29d319b0fc0db3ea5bec3465dc80da53da31b5ccd8aabdc"
+      "releaseFingerprintSha256": "ffabc85df1c8434df9670d23ddd6cf73923d706303745610be7a549ea1701f01"
     },
     {
       "set": 13,
@@ -62,7 +62,7 @@
     },
     {
       "set": 14,
-      "releaseFingerprintSha256": "7081fd72a0817fd12d7dd90cc34b31069313269e2a13c1a7134e0226a69cc57e"
+      "releaseFingerprintSha256": "543ac787e7ded38d8749b6c8c2612a7b8a6b86a68ede5eb8e5d877bb6ad87fb5"
     },
     {
       "set": 15,
@@ -70,24 +70,24 @@
     },
     {
       "set": 16,
-      "releaseFingerprintSha256": "acf7cd5dcffc36e02a83d692e8a06435b5af90c362176f6ab72e3804da44d852"
+      "releaseFingerprintSha256": "531afe46ce474f05a951f797aae4778e2f3446645ecfb36779f623ee9ad72ba9"
     },
     {
       "set": 17,
-      "releaseFingerprintSha256": "ed1f134e85016a2224bf28fbb19d4c883d766b24e35420bec25b69552bcfb4ae"
+      "releaseFingerprintSha256": "1e021084bb2ee6190bdd3c4d9ee9a94087870adbedbb03a394efac642971b370"
     },
     {
       "set": 18,
-      "releaseFingerprintSha256": "75b59fd2488e1161a24e59c142f7b653e0f6d059ea4256082fc4fd7ae5b71d96"
+      "releaseFingerprintSha256": "3c528a5e7bdc3fdd4e3fccda5ea1cef4b081ab795c7635ab7af9d7fa34cfa3a8"
     },
     {
       "set": 19,
-      "releaseFingerprintSha256": "b5f3a82e0018f2f6b6ad7fa292e9dc620e269e027671e38deba09b7ed5d8833d"
+      "releaseFingerprintSha256": "6bb0cf74ac925bddc4173b044de6f953ff9a91566d3ae3109b14486501ebb3b6"
     },
     {
       "set": 20,
       "releaseFingerprintSha256": "8719a561b2e4267de56c6de374a64969ecf866650455dc6dfdc2ef969dc306a4"
     }
   ],
-  "receiptSha256": "2a457054959f4c2e1171bbd9cdf63820a63fb351cc03fde288f07a2ed9560b82"
+  "receiptSha256": "13b17dabd578283ef6f00ccddb19cc678cf0a5e5d4b3616ef4e20effda7d7f90"
 }
