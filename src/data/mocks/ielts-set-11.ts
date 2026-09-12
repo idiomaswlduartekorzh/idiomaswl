@@ -663,7 +663,7 @@ The applied implications of cognitive bias research have been extensive. In publ
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn',
-          cueCard: `Describe a decision you made that turned out to be a mistake.\n\nYou should say:\n• what the decision was\n• why you made it at the time\n• what happened as a result\n• and explain what you learned from the experience`,
+          cueCard: `Describe a change to a city or neighbourhood that improved people's daily lives.\n\nYou should say:\n• where the place is\n• what was changed\n• who benefited from the change\n• and explain why you think the change was successful`,
         },
         {
           type: 'speak',

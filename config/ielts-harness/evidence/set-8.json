@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 8,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-8.ts",
+    "sourceSha256": "64edce81b75482661be4e44d373fd30807d460f7fa3151c6a395a1985e9f9bb0",
+    "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "transcriptSha256": "961ecfa5b8db95fafde560be3fb3353f5184e2f15fdda9d03593c3d232c1ed06",
+      "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "transcriptSha256": "961ecfa5b8db95fafde560be3fb3353f5184e2f15fdda9d03593c3d232c1ed06",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-8-listening-evidence.json",
+      "evidenceSha256": "1dea01c92ff21fffe09ced1194c85000e9d774d3dd1cb3c699713af9d51eefcc"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 71.38,
+        "endSeconds": 73.04,
+        "audiblePhrase": "Yes. It's Daniel Ashworth.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 87.6,
+        "endSeconds": 91.8,
+        "audiblePhrase": "Yes. Use 0161-496-0175.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 114.32,
+        "endSeconds": 117.18,
+        "audiblePhrase": "It's actually a rucksack, the sort you carry on both shoulders.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 131.22,
+        "endSeconds": 135.52,
+        "audiblePhrase": "It's dark green. The straps are grey and one zip has a red cord,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 143,
+        "endSeconds": 146.08,
+        "audiblePhrase": "I had it when I boarded. I'm almost certain I left it on the train.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 207.18,
+        "endSeconds": 209.78,
+        "audiblePhrase": "In the department there was a laptop and a black protective sleeve.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 231.34,
+        "endSeconds": 234.86,
+        "audiblePhrase": "From Manchester I caught the direct service rather than changing it leads.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 248.56,
+        "endSeconds": 252.64,
+        "audiblePhrase": "Today is Friday. I nearly travelled on Thursday evening then changed my booking",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 257.64,
+        "endSeconds": 263.14,
+        "audiblePhrase": "The quiet coach, carriage C. My reserve place was seat 43 beside the window.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 283.4,
+        "endSeconds": 288.86,
+        "audiblePhrase": "With the charger, clothes and books, I'd estimate the contents at around 400 pounds.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 437.4,
+        "endSeconds": 474.02,
+        "audiblePhrase": "First, the program. Several familiar attractions are available. The food market will occupy the eastern path as it did last year. The evening concert remains on Saturday and the fireworks display will close the event on Sunday. None of those three is new. This year we have introduced two additions. At midday on Saturday, a children's parade will travel through the grounds with costumes made by local schools. We are also running craft workshops throughout the weekend in the main tent. Those workshops and the children's parade are the two new attractions visitors may ask about.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 437.4,
+        "endSeconds": 474.02,
+        "audiblePhrase": "First, the program. Several familiar attractions are available. The food market will occupy the eastern path as it did last year. The evening concert remains on Saturday and the fireworks display will close the event on Sunday. None of those three is new. This year we have introduced two additions. At midday on Saturday, a children's parade will travel through the grounds with costumes made by local schools. We are also running craft workshops throughout the weekend in the main tent. Those workshops and the children's parade are the two new attractions visitors may ask about.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 474.5,
+        "endSeconds": 478.26,
+        "audiblePhrase": "The festival is being held in Victoria Park, right in the town centre.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 495.78,
+        "endSeconds": 504.1,
+        "audiblePhrase": "This year's event runs for three days. It begins at four on Friday afternoon and continues until eight on Sunday evening.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 520.72,
+        "endSeconds": 525.94,
+        "audiblePhrase": "When you sign in for a shift, collect your festival t-shirt from the volunteer desk behind this platform.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 541.46,
+        "endSeconds": 545.42,
+        "audiblePhrase": "Let us look at the site. The main stage is beside the lake in the centre of the park.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 630.08,
+        "endSeconds": 635.04,
+        "audiblePhrase": "The public car park is at the sports centre across the road, not at the swimming pool two streets away.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 652.28,
+        "endSeconds": 657.84,
+        "audiblePhrase": "If conditions become unsafe, however, outdoor performances will move into the marquee near the west gate.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 657.84,
+        "endSeconds": 665.24,
+        "audiblePhrase": "The concert will not move to the sports centre, and craft activities already inside the main tent will continue there as planned.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 729.92,
+        "endSeconds": 736.44,
+        "audiblePhrase": "All additional money raised this year goes to the local hospital, specifically towards equipment for its children's ward.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 888.58,
+        "endSeconds": 905.12,
+        "audiblePhrase": "The experience means I have the technical skills, but it wasn't my main reason. I noticed a gap in the local market. There are many cyclists here, yet hardly any repair shops, and none offers a mobile service. A friend liked the idea when I mentioned it, but she didn't suggest it.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 923.36,
+        "endSeconds": 935.44,
+        "audiblePhrase": "Your market research should demonstrate that those people will pay. You surveyed 30 members of your cycling club. 30 is not necessarily too few for an initial exercise, and the questions themselves are clear. What weakens the result?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 970.5,
+        "endSeconds": 984.66,
+        "audiblePhrase": "I assumed a low price would attract people to an unfamiliar service, but once I added fuel, travel time, and replacement tools, the low rate barely covered my costs. I now think I should charge the same as competitors and compete on convenience.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1015.6,
+        "endSeconds": 1026.8,
+        "audiblePhrase": "I can visit the customer at home or at work, inspect the bicycle, and fit the part there. An online seller can deliver a component, but it cannot provide that mobile repair service.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1087.94,
+        "endSeconds": 1102.54,
+        "audiblePhrase": "Poor cash flow. I am confident in my repair skills, and the established shops are far away. The immediate problem is timing. I must pay for tools, insurance, and a van before I have many customers. Money goes out before enough comes in.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1114.88,
+        "endSeconds": 1118.02,
+        "audiblePhrase": "So I need an executive summary at the beginning.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1136.9,
+        "endSeconds": 1151.32,
+        "audiblePhrase": "Next, the financial section contains annual totals but does not show when money enters and leaves the business. Add a monthly cash flow forecast for the first year. The month by month pattern matters because winter demand may be lower while several costs remain fixed.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1157.3,
+        "endSeconds": 1169.84,
+        "audiblePhrase": "Good. Your product description is detailed but the reader still cannot tell who will buy it. Add a description of the target customers. Commuters may form the largest group but include parents and leisure cyclists if your revised survey supports that.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1177.74,
+        "endSeconds": 1182.22,
+        "audiblePhrase": "Then add a section on marketing. At the moment, there is no plan for how those groups will hear about you.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1198.82,
+        "endSeconds": 1207.62,
+        "audiblePhrase": "Finally, arrange insurance before accepting any paid work. It must cover accidental damage to a customer's bicycle and public liability while you work at their property.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1347.94,
+        "endSeconds": 1350.78,
+        "audiblePhrase": "For this overview, the earliest device we will consider is the sundial.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1368.42,
+        "endSeconds": 1375.12,
+        "audiblePhrase": "The principle was straightforward. As Earth turned, the apparent position of the sun changed, causing a pointer's shadow to move across marked lines.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1408.32,
+        "endSeconds": 1412.44,
+        "audiblePhrase": "The ancient Egyptians used such clocks, including for activities that took place after dark.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1446.32,
+        "endSeconds": 1448.32,
+        "audiblePhrase": "The first large examples appeared in monasteries.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1469.72,
+        "endSeconds": 1471.94,
+        "audiblePhrase": "Many had no hands and no visual face at all.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1510.5,
+        "endSeconds": 1515.06,
+        "audiblePhrase": "In 1656, the Dutch scientist Christian Huygens built the first practical pendulum clock.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1572.54,
+        "endSeconds": 1576.92,
+        "audiblePhrase": "Connecting that motion to the clock mechanism made clocks far more accurate than most earlier designs.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1598.88,
+        "endSeconds": 1602.24,
+        "audiblePhrase": "The coiled spring allowed a mechanism to operate without heavy hanging weights.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1622.32,
+        "endSeconds": 1627.52,
+        "audiblePhrase": "To calculate longitude, a navigator needed to compare local solar time with the time at a known reference location.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1680.1,
+        "endSeconds": 1684.18,
+        "audiblePhrase": "Most ordinary clocks and watches today regulate time using tiny crystals of quartz.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "db76a480f2b4eb2fce41a17800626f79bf063892d7dc050222247648d0f7ac08",
+      "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago, from sites in Europe and the Near East. However, genetic analyses have produced a more complex picture. A 2016 study comparing ancient and modern dog DNA concluded that dogs were domesticated twice independently—once in Europe or the Near East and once in East Asia—before the East Asian lineage partially replaced the European one following human migrations. This scenario remains contested: a 2020 analysis suggested a single domestication event in Southeast Asia or Central Asia, with subsequent dispersal across the globe. Fossils and genes answer different parts of the question. Bones can reveal where an animal lived and whether its anatomy differed from that of wolves, while DNA can reveal relationships among populations that left no recognised remains. Both records are incomplete, and later interbreeding between dogs and wolves further obscures ancestry. The difficulty lies partly in the fact that domestication was not a single moment but likely a drawn-out process spanning thousands of years and involving multiple wolf populations.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago, from sites in Europe and the Near East. However, genetic analyses have produced a more complex picture. A 2016 study comparing ancient and modern dog DNA concluded that dogs were domesticated twice independently—once in Europe or the Near East and once in East Asia—before the East Asian lineage partially replaced the European one following human migrations. This scenario remains contested: a 2020 analysis suggested a single domestication event in Southeast Asia or Central Asia, with subsequent dispersal across the globe. Fossils and genes answer different parts of the question. Bones can reveal where an animal lived and whether its anatomy differed from that of wolves, while DNA can reveal relationships among populations that left no recognised remains. Both records are incomplete, and later interbreeding between dogs and wolves further obscures ancestry. The difficulty lies partly in the fact that domestication was not a single moment but likely a drawn-out process spanning thousands of years and involving multiple wolf populations.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The evolutionary success of dogs has come at a cost to the wolves from which they descend. As human populations expanded and natural habitats contracted, wolf populations declined dramatically. Today, domestic dogs outnumber wolves by a ratio of approximately one thousand to one—a striking reversal of the balance that existed at the beginning of the human-canine relationship. Dogs travelled with people into environments far beyond the original range of their ancestors and acquired specialised roles in hunting, guarding, herding, and transport. That diversity of work later contributed to the enormous variation among dog populations. The evolutionary bargain struck between early humans and early dogs—shelter and food in exchange for loyalty and labour—has proved highly advantageous for one partner, though perhaps not for the other.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The evolutionary success of dogs has come at a cost to the wolves from which they descend. As human populations expanded and natural habitats contracted, wolf populations declined dramatically. Today, domestic dogs outnumber wolves by a ratio of approximately one thousand to one—a striking reversal of the balance that existed at the beginning of the human-canine relationship. Dogs travelled with people into environments far beyond the original range of their ancestors and acquired specialised roles in hunting, guarding, herding, and transport. That diversity of work later contributed to the enormous variation among dog populations. The evolutionary bargain struck between early humans and early dogs—shelter and food in exchange for loyalty and labour—has proved highly advantageous for one partner, though perhaps not for the other.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The crop range currently suited to vertical farming is limited in another important way. Staple foods such as wheat, rice, and maize are not economically viable candidates for indoor production: they require large volumes per calorie, tolerate outdoor conditions relatively well, and are highly price-competitive on global commodity markets. The crops best suited to vertical farming are those with short growth cycles, compact growth habits, and high value relative to weight—characteristics that describe a narrow slice of the global diet.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The potential advantages of vertical farming are genuinely compelling. Because crops are grown indoors, they can be protected from pests without pesticides, from frost, drought, and flooding, and from contamination by pathogens common in outdoor environments. Yields per unit of land area can be dramatically higher than conventional agriculture: some vertical farms report yields ten to twenty times greater than field equivalents for leafy greens such as lettuce and spinach. Stacking creates several productive surfaces on the footprint that would hold only one field layer. Controlled temperature and light can also permit repeated harvests throughout the year instead of a single seasonal crop. Water use is typically reduced by up to ninety-five percent compared to conventional irrigation, as water is recirculated within the system and losses through evaporation and runoff are minimised.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The technology also offers geographic flexibility. Vertical farms can in principle be built anywhere—in urban warehouses close to consumers, in arid regions currently unsuitable for agriculture, or in polar territories where food security depends on costly imports. Producing delicate vegetables near cities can shorten the time between harvest and sale and reduce losses during long-distance transport. Proximity does not remove every supply-chain dependency, however, because a facility still requires electricity, nutrients, equipment, and skilled maintenance. Japan, which faces severe land constraints and frequent natural disasters, has become a global leader in vertical farming, with hundreds of facilities operating across the country. A growing number of vertical farms have been established in desert regions of the Middle East, supplying fresh produce to populations that would otherwise depend almost entirely on food imports.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Vertical farming—the practice of growing crops in stacked layers inside climate-controlled buildings—has attracted significant investment and media attention over the past decade. Proponents present it as a revolutionary answer to some of the most pressing challenges facing the global food system: land scarcity, water depletion, pesticide use, and the disruption of supply chains by extreme weather events. Critics question whether the technology can deliver on its promises at scale. The debate reflects deeper tensions in how societies think about the future of agriculture.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sent__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The potential advantages of vertical farming are genuinely compelling. Because crops are grown indoors, they can be protected from pests without pesticides, from frost, drought, and flooding, and from contamination by pathogens common in outdoor environments. Yields per unit of land area can be dramatically higher than conventional agriculture: some vertical farms report yields ten to twenty times greater than field equivalents for leafy greens such as lettuce and spinach. Stacking creates several productive surfaces on the footprint that would hold only one field layer. Controlled temperature and light can also permit repeated harvests throughout the year instead of a single seasonal crop. Water use is typically reduced by up to ninety-five percent compared to conventional irrigation, as water is recirculated within the system and losses through evaporation and runoff are minimised.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sent__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The technology also offers geographic flexibility. Vertical farms can in principle be built anywhere—in urban warehouses close to consumers, in arid regions currently unsuitable for agriculture, or in polar territories where food security depends on costly imports. Producing delicate vegetables near cities can shorten the time between harvest and sale and reduce losses during long-distance transport. Proximity does not remove every supply-chain dependency, however, because a facility still requires electricity, nutrients, equipment, and skilled maintenance. Japan, which faces severe land constraints and frequent natural disasters, has become a global leader in vertical farming, with hundreds of facilities operating across the country. A growing number of vertical farms have been established in desert regions of the Middle East, supplying fresh produce to populations that would otherwise depend almost entirely on food imports.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sent__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sent__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The crop range currently suited to vertical farming is limited in another important way. Staple foods such as wheat, rice, and maize are not economically viable candidates for indoor production: they require large volumes per calorie, tolerate outdoor conditions relatively well, and are highly price-competitive on global commodity markets. The crops best suited to vertical farming are those with short growth cycles, compact growth habits, and high value relative to weight—characteristics that describe a narrow slice of the global diet.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sent__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sent__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Mental accounting—the tendency to categorise and evaluate money differently depending on its source or intended purpose—is another departure from classical rationality. People treat unexpected windfalls differently from earned income: money won in a casino is more likely to be spent recklessly than money earned through work, even though both have identical purchasing power. Similarly, people assign different values to money in different \"mental accounts\": the money earmarked for a holiday fund feels qualitatively different from money in a current account, even if the nominal amounts are identical. The habit is not always harmful. Separating money for rent or emergencies can protect essential spending from impulsive use. The irrationality arises when labels prevent a person from comparing real alternatives, such as keeping costly debt while preserving savings in a protected category. This segmentation of money into psychological categories influences spending and saving decisions in ways that have no basis in economics but are highly predictable in practice.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Social comparison is a further force that distorts financially rational behaviour. Research by economists Robert Frank and Philip Cook has documented what they call \"expenditure cascades\": as the conspicuous consumption of high-income groups rises, those immediately below in the income distribution feel pressure to match it, driving up spending across the economy. This dynamic is intensified by social media, which creates constant visibility of others' consumption. Studies have found that exposure to images of luxury spending on platforms such as Instagram is associated with increased materialistic aspirations and reduced financial wellbeing among users.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Economists have long modelled human beings as rational agents who maximise utility—making financial decisions by carefully calculating costs and benefits and acting in their own long-term self-interest. This model has proved analytically powerful but empirically problematic. It offers a clear benchmark for predicting choices, yet a benchmark is not a complete description of how people decide under pressure, uncertainty, or limited attention. Real decisions often involve shortcuts because calculating every possible outcome would itself consume time and effort. Decades of research in behavioural economics and psychology have revealed systematic, predictable deviations from rational behaviour in financial decision-making, driven by cognitive biases, emotional responses, and social influences that the classical model does not accommodate.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Mental accounting—the tendency to categorise and evaluate money differently depending on its source or intended purpose—is another departure from classical rationality. People treat unexpected windfalls differently from earned income: money won in a casino is more likely to be spent recklessly than money earned through work, even though both have identical purchasing power. Similarly, people assign different values to money in different \"mental accounts\": the money earmarked for a holiday fund feels qualitatively different from money in a current account, even if the nominal amounts are identical. The habit is not always harmful. Separating money for rent or emergencies can protect essential spending from impulsive use. The irrationality arises when labels prevent a person from comparing real alternatives, such as keeping costly debt while preserving savings in a protected category. This segmentation of money into psychological categories influences spending and saving decisions in ways that have no basis in economics but are highly predictable in practice.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Social comparison is a further force that distorts financially rational behaviour. Research by economists Robert Frank and Philip Cook has documented what they call \"expenditure cascades\": as the conspicuous consumption of high-income groups rises, those immediately below in the income distribution feel pressure to match it, driving up spending across the economy. This dynamic is intensified by social media, which creates constant visibility of others' consumption. Studies have found that exposure to images of luxury spending on platforms such as Instagram is associated with increased materialistic aspirations and reduced financial wellbeing among users.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "02990dedfe8d1f69d1eccc4c24e6840aee3ee36b89e75158efc51a270f686560",
+      "task1ImageSha256": "de753618cfd21c2e180eb135891a909b7b662a20c0cf33da57642c6603d88a7e"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "e002a4af86740687bbe0dad5db3932f84419c45a5db5225c3958f5acf53f7ff3"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-8-objective-review.json",
+    "evidenceSha256": "e86cc68a8436a60e93d6a4815d6915b6b3bf40c48754d9ba5f67c48a620111e1",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "3d3e1a1f7df79dcd5c2db8bd6f5c30ea0c5dd08d972ade75469f942463f48c3d"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

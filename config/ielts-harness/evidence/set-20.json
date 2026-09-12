@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 20,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-20.ts",
+    "sourceSha256": "787a58ec0187027d328a5f8f0df7fb4fb94f6e1d78b814059d32748dbc83bd7d",
+    "releaseFingerprintSha256": "8719a561b2e4267de56c6de374a64969ecf866650455dc6dfdc2ef969dc306a4"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+      "transcriptSha256": "4f925ba02dc12499866ecef1562c6fb65ab1e995a1639075613ed5c62ee15270",
+      "objectiveSha256": "aa53e0533afeadbb1facb0cf6460b6d6582a25f06109b88622d494f56ebd91dc"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+      "transcriptSha256": "4f925ba02dc12499866ecef1562c6fb65ab1e995a1639075613ed5c62ee15270",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-20-listening-evidence.json",
+      "evidenceSha256": "53bfec69b5a5da54c6a6e59889a905bc190f4718cce64d5d8d631b08ce553502"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 140.88,
+        "endSeconds": 142.44,
+        "audiblePhrase": "I'm doing a degree in economics.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 180.88,
+        "endSeconds": 184.5,
+        "audiblePhrase": "Now, which floor would you like? We have rooms on the deck and in third floors.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 190.84,
+        "endSeconds": 195.78,
+        "audiblePhrase": "Now review questions 6 to 10, before the recording continues.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 286.56,
+        "endSeconds": 292.26,
+        "audiblePhrase": "Fine. Do you need any particular equipment? Most rooms have a whiteboard and some also have a projector.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 299.2,
+        "endSeconds": 300.48,
+        "audiblePhrase": "Thursday, if that's free.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 324.28,
+        "endSeconds": 328.78,
+        "audiblePhrase": "Thursday's fine. Just remember to bring your student card as you'll need it to collect the key.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 333.38,
+        "endSeconds": 338.86,
+        "audiblePhrase": "Certainly. Room A is on the third floor, holds six people and costs three pounds an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 339.16,
+        "endSeconds": 340.16,
+        "audiblePhrase": "It comes with a whiteboard.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 375.32,
+        "endSeconds": 382.12,
+        "audiblePhrase": "Room B is on the fourth floor, it seats 10, costs five pounds an hour and includes a projector which is perfect for your presentation.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 375.32,
+        "endSeconds": 382.12,
+        "audiblePhrase": "Room B is on the fourth floor, it seats 10, costs five pounds an hour and includes a projector which is perfect for your presentation.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 550.24,
+        "endSeconds": 572.68,
+        "audiblePhrase": "Let me start with our recent improvements. Over the winter, we completely renovated two of our galleries. The tram gallery has been redesigned with interactive displays. In the aircraft gallery, now has a full-size cockpit that you can actually sit in. The steam train hall, the bicycle collection and the motorcycle gallery are unchanged this year, though they're all still well worth a visit.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 550.24,
+        "endSeconds": 572.68,
+        "audiblePhrase": "Let me start with our recent improvements. Over the winter, we completely renovated two of our galleries. The tram gallery has been redesigned with interactive displays. In the aircraft gallery, now has a full-size cockpit that you can actually sit in. The steam train hall, the bicycle collection and the motorcycle gallery are unchanged this year, though they're all still well worth a visit.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 597.86,
+        "endSeconds": 606.84,
+        "audiblePhrase": "Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at 4.30, so please plan your time.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 607.6999999999999,
+        "endSeconds": 614,
+        "audiblePhrase": "Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 614.9,
+        "endSeconds": 622.12,
+        "audiblePhrase": "If you'd like something to eat, the café is on the ground floor, right next to the gift shop, as the Transport Museum guide continues.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 646.16,
+        "endSeconds": 651.92,
+        "audiblePhrase": "For families, we run a treasure hunt every afternoon. Just pick up a worksheet from the information desk.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 652.46,
+        "endSeconds": 658.28,
+        "audiblePhrase": "Children particularly enjoy the driving simulator, though I should mention there's a small extra charge of £2 for that.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 765.02,
+        "endSeconds": 769.56,
+        "audiblePhrase": "A few quick reminders. Large bags must be left in the cloakroom near the main entrance.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 769.56,
+        "endSeconds": 780.08,
+        "audiblePhrase": "Our guided tours leave every hour from the central hall, and each one lasts about 40 minutes, and if you happen to get lost, look for a member of staff in a red jacket.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 814.12,
+        "endSeconds": 829.72,
+        "audiblePhrase": "Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard, and on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 1011.7,
+        "endSeconds": 1017.58,
+        "audiblePhrase": "We decided to concentrate on sugary drinks specifically, rather than diet in general. It felt far more manageable.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1049.26,
+        "endSeconds": 1055.66,
+        "audiblePhrase": "We were going to aim at the whole campus, but in the end we've decided to target first year students since their habits are still forming.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1077.42,
+        "endSeconds": 1086.76,
+        "audiblePhrase": "At first we thought we'd emphasise the health risks, but the research suggests that frightening people rarely changes behaviour, so we'll stress the money students could save instead.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1107.46,
+        "endSeconds": 1111.6,
+        "audiblePhrase": "Yes, the cost angle is often more persuasive. How will you actually reach students?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1239.98,
+        "endSeconds": 1262.4,
+        "audiblePhrase": "That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early because it's in very high demand. And keep a copy of everything in a shared folder so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1239.98,
+        "endSeconds": 1246.02,
+        "audiblePhrase": "That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1246.56,
+        "endSeconds": 1250.4,
+        "audiblePhrase": "Second, you'll need approval from the ethics committee before you collect any data at all.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1251,
+        "endSeconds": 1258.84,
+        "audiblePhrase": "Third, book the recording equipment early because it's in very high demand. And keep a copy of everything in a shared folder so nothing gets lost.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1251,
+        "endSeconds": 1258.84,
+        "audiblePhrase": "Third, book the recording equipment early because it's in very high demand. And keep a copy of everything in a shared folder so nothing gets lost.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1259.3600000000001,
+        "endSeconds": 1262.4,
+        "audiblePhrase": "Finally, compare the survey results to judge the campaign's success.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1647.6,
+        "endSeconds": 1651.76,
+        "audiblePhrase": "Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1459.198,
+        "endSeconds": 1461.918,
+        "audiblePhrase": "Interestingly, the seeds were also used as a form of currency.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1486.254,
+        "endSeconds": 1489.074,
+        "audiblePhrase": "in the 16th century, they carried chocolate back to Europe.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1489.634,
+        "endSeconds": 1492.194,
+        "audiblePhrase": "There, people added sugar to the drink to make it sweeter,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1532.952,
+        "endSeconds": 1536.332,
+        "audiblePhrase": "when a Dutch chemist invented a press that removed much of the fat,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1532.952,
+        "endSeconds": 1536.332,
+        "audiblePhrase": "when a Dutch chemist invented a press that removed much of the fat,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1647.6,
+        "endSeconds": 1651.76,
+        "audiblePhrase": "Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1652.44,
+        "endSeconds": 1658.32,
+        "audiblePhrase": "Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1682.88,
+        "endSeconds": 1687.84,
+        "audiblePhrase": "Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1688.44,
+        "endSeconds": 1692.98,
+        "audiblePhrase": "There are also environmental concerns, since expanding plantations can lead to deforestation.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "1e3b0b019161507e37d135ad29495d1e9b8eac548305b12e64f4c6650865bdfb",
+      "objectiveSha256": "aa53e0533afeadbb1facb0cf6460b6d6582a25f06109b88622d494f56ebd91dc"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Antibiotics—medicines that kill or inhibit bacteria—are among the most transformative discoveries in the history of medicine. Since Alexander Fleming observed the bacteria-killing properties of the Penicillium mould in 1928, these drugs have made previously fatal infections treatable and have supported surgical procedures, organ transplants, and cancer chemotherapy that would be far more dangerous without effective infection control. Today, that capacity is under threat from antimicrobial resistance (AMR). The broader term includes resistance in bacteria, viruses, fungi, and parasites, while antibiotic resistance refers specifically to bacteria. Resistance is a natural biological process, but the speed at which it emerges and spreads is strongly influenced by human decisions.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The antibiotic pipeline—the process of developing new drugs—has been inadequate for decades. Antibiotics are commercially unattractive: they are taken for short periods and should be prescribed cautiously to preserve effectiveness, so sales volumes cannot follow the model used for medicines taken continuously. Many major pharmaceutical companies reduced or ended antibiotic research in the 1980s and 1990s. Recent WHO reviews describe both limited innovation and unequal access: a new product is of little public-health value if patients cannot obtain it, yet unrestricted sales can shorten its useful life. Proposed responses therefore combine public support for early research with rewards that are not tied simply to selling more doses.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "International coordination is essential because resistance genes move across borders with the bacteria that carry them, through trade, travel, and environmental flows. The World Health Assembly adopted the WHO's Global Action Plan on Antimicrobial Resistance in May 2015. Its objectives cover awareness, surveillance, infection reduction, responsible use, and sustainable investment, but implementation has been uneven and often underfunded. The problem also requires a \"One Health\" approach: prescribing in hospitals cannot be separated from animal health, food production, sanitation, wastewater, and the environment. In 2024, countries at the United Nations set a first global target to reduce deaths associated with bacterial AMR by 10 percent by 2030 from the 2019 baseline. That commitment creates a measurable destination, although success still depends on national surveillance and funded action.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The antibiotic pipeline—the process of developing new drugs—has been inadequate for decades. Antibiotics are commercially unattractive: they are taken for short periods and should be prescribed cautiously to preserve effectiveness, so sales volumes cannot follow the model used for medicines taken continuously. Many major pharmaceutical companies reduced or ended antibiotic research in the 1980s and 1990s. Recent WHO reviews describe both limited innovation and unequal access: a new product is of little public-health value if patients cannot obtain it, yet unrestricted sales can shorten its useful life. Proposed responses therefore combine public support for early research with rewards that are not tied simply to selling more doses.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The social and health benefits of urban gardening have attracted growing research interest. Contact with nature and gardening activity has been consistently associated with reduced levels of cortisol, lower rates of depression and anxiety, and improved subjective wellbeing. Community gardens, in particular, serve as sites of social interaction across demographic boundaries—age, ethnicity, socioeconomic status—that are rarely bridged in other urban spaces. Research in the United States and Europe has found that residents of neighbourhoods with community gardens report higher levels of social trust and community cohesion than comparable residents in areas without them.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The contribution of urban agriculture to food security is real but often overstated. Urban growing can supplement household food budgets, particularly for low-income families, and can provide access to fresh produce in areas described as \"food deserts\"—urban neighbourhoods where affordable, nutritious food is difficult to obtain. However, the physical constraints of urban environments—limited space, competition for land, soil contamination, and artificial light requirements for indoor growing—mean that cities are unlikely to achieve meaningful self-sufficiency in food production in the foreseeable future. The economic viability of urban farming at scale remains contested; many operations require significant public subsidy or premium pricing to remain financially sustainable.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Urban gardening—the cultivation of plants within city environments—has moved from a marginal activity associated with wartime food production and community allotments to a significant component of contemporary urban planning and sustainability strategy. From rooftop gardens and vertical farms to community vegetable patches and edible street planting, cities around the world are increasingly integrating growing spaces into the fabric of urban life. This shift reflects both practical motivations—food security and environmental resilience—and deeper cultural desires for connection to nature and community. FAO treats urban and peri-urban agriculture as part of the wider food system, including production, processing, distribution, marketing, and recycling rather than cultivation alone.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Vertical farming—the cultivation of crops in stacked layers within controlled indoor environments, typically using artificial LED lighting, hydroponic nutrient systems, and precise climate control—has attracted enormous investor attention as a potential solution to the space constraints of urban agriculture. Proponents argue that vertical farms can produce dramatically higher yields per unit of land area than conventional agriculture and can be located anywhere, independent of climate and soil conditions. Critics point to the high capital and energy costs of these systems, and question whether the environmental benefits of local food production justify the carbon footprint of the artificial lighting and climate control that vertical farms require.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The future of urban gardening is likely to be shaped by policy choices about land use, planning regulations, and public investment, as well as by the values and priorities of urban communities themselves. FAO guidance emphasises secure access to land and water, product safety, viable markets, and participation by residents alongside inclusion in urban planning. Cities that integrate green infrastructure into planning from the outset—as Singapore, Copenhagen, and Melbourne are attempting to do—may achieve genuinely transformative outcomes. For most cities, however, the challenge is retrofitting green space into environments built for very different purposes, a process that requires both technical innovation and sustained political commitment to the idea that the quality of urban life is inseparable from access to nature.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The environmental benefits of urban gardening are multiple, though their scale depends significantly on context and implementation. Urban green spaces reduce the heat island effect by providing shade and evapotranspiration, absorb carbon dioxide through photosynthesis, and support biodiversity by providing habitat for pollinators, birds, and invertebrates. In cities where stormwater management is a challenge, green roofs and garden spaces can absorb rainfall and reduce runoff, alleviating pressure on drainage systems. Research in European cities has found that urban green spaces also have measurable positive effects on air quality, particularly in relation to particulate matter.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The environmental benefits of urban gardening are multiple, though their scale depends significantly on context and implementation. Urban green spaces reduce the heat island effect by providing shade and evapotranspiration, absorb carbon dioxide through photosynthesis, and support biodiversity by providing habitat for pollinators, birds, and invertebrates. In cities where stormwater management is a challenge, green roofs and garden spaces can absorb rainfall and reduce runoff, alleviating pressure on drainage systems. Research in European cities has found that urban green spaces also have measurable positive effects on air quality, particularly in relation to particulate matter.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The social and health benefits of urban gardening have attracted growing research interest. Contact with nature and gardening activity has been consistently associated with reduced levels of cortisol, lower rates of depression and anxiety, and improved subjective wellbeing. Community gardens, in particular, serve as sites of social interaction across demographic boundaries—age, ethnicity, socioeconomic status—that are rarely bridged in other urban spaces. Research in the United States and Europe has found that residents of neighbourhoods with community gardens report higher levels of social trust and community cohesion than comparable residents in areas without them.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The contribution of urban agriculture to food security is real but often overstated. Urban growing can supplement household food budgets, particularly for low-income families, and can provide access to fresh produce in areas described as \"food deserts\"—urban neighbourhoods where affordable, nutritious food is difficult to obtain. However, the physical constraints of urban environments—limited space, competition for land, soil contamination, and artificial light requirements for indoor growing—mean that cities are unlikely to achieve meaningful self-sufficiency in food production in the foreseeable future. The economic viability of urban farming at scale remains contested; many operations require significant public subsidy or premium pricing to remain financially sustainable.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Vertical farming—the cultivation of crops in stacked layers within controlled indoor environments, typically using artificial LED lighting, hydroponic nutrient systems, and precise climate control—has attracted enormous investor attention as a potential solution to the space constraints of urban agriculture. Proponents argue that vertical farms can produce dramatically higher yields per unit of land area than conventional agriculture and can be located anywhere, independent of climate and soil conditions. Critics point to the high capital and energy costs of these systems, and question whether the environmental benefits of local food production justify the carbon footprint of the artificial lighting and climate control that vertical farms require.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Electrification of the vehicle fleet is the most widely discussed pathway, and the pace of its advance has surprised many observers. Global electric car sales approached 14 million units in 2023—approximately eighteen percent of all new car sales worldwide—up from less than one percent in 2015. Falling battery costs and supportive policy have both driven that growth, but affordability differs greatly by vehicle size and market. In 2023, battery pack prices fell by almost fourteen percent after rising the previous year, illustrating that the trend is not smooth. The primary remaining barriers are charging infrastructure (particularly for apartment dwellers and those in rural areas), the higher upfront cost of EVs in many markets, and concerns about battery supply chains involving lithium, cobalt, nickel, and graphite. Public charging points grew rapidly in 2023, yet the IEA warns that deployment must continue to keep pace with sales.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Autonomous vehicles (AVs)—cars capable of navigating without a human driver—have been the subject of intense enthusiasm and investment since the early 2010s, but the technology has proved far more difficult to deploy at scale than early proponents anticipated. Several companies that led the field, including some well-capitalised startups, have abandoned or significantly curtailed their AV programmes. As of 2024, limited robotaxi services operate in a small number of cities, primarily in controlled urban environments with favourable road conditions. The full autonomy envisioned—vehicles capable of navigating any environment in any conditions without human intervention—remains substantially further away than was predicted a decade ago.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The equity dimension of transport transitions is frequently overlooked in discussions focused on technology. The benefits of EVs and new mobility services have disproportionately accrued to higher-income households with access to private vehicles, home charging, and urban areas with good public transport. Lower-income workers in car-dependent suburbs, rural areas, and developing countries face a transition that may remove access to affordable personal mobility before adequate alternatives are in place. Ensuring that the transition to sustainable transport improves rather than worsens mobility equity is one of the defining challenges for transport policy in the coming decades.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Modal shift—moving journeys from high-emission to low-emission modes—is equally important, particularly in urban areas. Rail, cycling, and walking produce dramatically lower emissions per passenger-kilometre than private car travel. Cities that have invested heavily in public transport—Tokyo, Vienna, Zurich, Singapore—achieve high modal shares for these alternatives and have significantly lower transport emissions per capita than car-dependent cities. The design of urban environments matters profoundly: cities built at human scale, with mixed uses and dense networks of destinations, generate less travel demand and facilitate active modes far more effectively than sprawling, single-use developments.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+        "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Transport systems are the circulatory infrastructure of modern economies, enabling the movement of people and goods at the scales and speeds that contemporary life requires. They are also among the most significant sources of greenhouse gas emissions, accounting for approximately twenty-three percent of global energy-related CO₂ output, with road transport—principally cars and trucks—contributing the largest share. The decarbonisation of transport is therefore central to global climate goals, and it is being pursued through three principal pathways: electrification, modal shift, and improved efficiency.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Autonomous vehicles (AVs)—cars capable of navigating without a human driver—have been the subject of intense enthusiasm and investment since the early 2010s, but the technology has proved far more difficult to deploy at scale than early proponents anticipated. Several companies that led the field, including some well-capitalised startups, have abandoned or significantly curtailed their AV programmes. As of 2024, limited robotaxi services operate in a small number of cities, primarily in controlled urban environments with favourable road conditions. The full autonomy envisioned—vehicles capable of navigating any environment in any conditions without human intervention—remains substantially further away than was predicted a decade ago.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The equity dimension of transport transitions is frequently overlooked in discussions focused on technology. The benefits of EVs and new mobility services have disproportionately accrued to higher-income households with access to private vehicles, home charging, and urban areas with good public transport. Lower-income workers in car-dependent suburbs, rural areas, and developing countries face a transition that may remove access to affordable personal mobility before adequate alternatives are in place. Ensuring that the transition to sustainable transport improves rather than worsens mobility equity is one of the defining challenges for transport policy in the coming decades.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "76002d8db4e97303acaf2ba72c7f105db7b124a8ecac3d21763db2797bcec170",
+      "task1ImageSha256": "1ee604994926c47299cdafbded24990c0622e0b70d05cd7919d9eeb1ebe35ef9"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "7635b79e45f9050316a505ac18cb865d9aa52a66cb25ca6510798f1db1db97b3"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "aa53e0533afeadbb1facb0cf6460b6d6582a25f06109b88622d494f56ebd91dc",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-20-objective-review.json",
+    "evidenceSha256": "bda10dd7cb8224c52b35dc0d1e362a2078a7bcbf2182e871e38b1016f595f88d",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-objective-key-audit-14-20"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "9932a6358d5754cd96de466f0f1a22fe17c69cc028c34cd5c16d45acf6b4fd30"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "8719a561b2e4267de56c6de374a64969ecf866650455dc6dfdc2ef969dc306a4",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

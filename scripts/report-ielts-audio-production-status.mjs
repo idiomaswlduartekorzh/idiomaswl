@@ -7,8 +7,10 @@ import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { mediaBinary } from './lib/ielts-audio-timing.mjs';
+import { loadVerifiedIeltsAudioPublications } from './lib/ielts-audio-publication.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const publicationAudit = loadVerifiedIeltsAudioPublications(root);
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const args = Object.fromEntries(process.argv.slice(2).map(argument => {
   const [key, ...value] = argument.replace(/^--/u, '').split('=');
@@ -42,7 +44,6 @@ assert.equal(legacyReplacementApproval.manifestSha256, legacyReplacementManifest
 assert.equal(legacyReplacementApproval.castingSha256, legacyReplacementCastingSha256, 'Legacy replacement quality approval belongs to stale casting');
 assert.equal(legacyReplacementApproval.releaseAuthorized, false, 'Quality approval must not authorize release');
 const legacyReplacementQualityApprovalBySet = new Map(legacyReplacementApproval.files.map(file => [file.set, file]));
-let legacyReplacementPublishedBySet = new Map();
 let legacyReplacementPublishReceiptSha256 = null;
 if (legacyReplacementPublishReceipt) {
   const { receiptSha256, ...receiptCore } = legacyReplacementPublishReceipt;
@@ -52,7 +53,6 @@ if (legacyReplacementPublishReceipt) {
   assert.equal(legacyReplacementPublishReceipt.castingSha256, legacyReplacementCastingSha256, 'Legacy replacement publish receipt belongs to another casting policy');
   assert.equal(legacyReplacementPublishReceipt.qualityApprovalSha256, legacyReplacementApprovalSha256, 'Legacy replacement publish receipt belongs to another quality approval');
   assert.equal(legacyReplacementPublishReceipt.releaseAuthorized, true, 'Legacy replacement publish receipt lacks release authorization');
-  legacyReplacementPublishedBySet = new Map(legacyReplacementPublishReceipt.files.map(file => [file.set, file]));
   legacyReplacementPublishReceiptSha256 = receiptSha256;
 }
 const { decisionSha256, ...legacyDecisionCore } = legacyDecision ?? {};
@@ -157,9 +157,9 @@ const rows = manifest.rows.map(row => {
     : null;
   const legacyReplacementRecommended = legacySetDecision?.recommendation === 'REPLACE'
     && legacySetDecision?.audioSha256 === publicAudioSha256;
-  const publishedReplacement = legacyReplacementPublishedBySet.get(row.set);
-  const audioPublished = publishedReplacement?.audioSha256 === publicAudioSha256
-    && publishedReplacement?.audioSha256 === currentStaged?.audioSha256;
+  const verifiedPublication = publicationAudit.publicationBySet.get(row.set);
+  const audioPublished = verifiedPublication?.audioSha256 === publicAudioSha256
+    && verifiedPublication?.audioSha256 === currentStaged?.audioSha256;
   let state = 'AUTOMATED_QA_INCOMPLETE';
   let source = 'PUBLIC_LEGACY';
   let completionEvidence = existingAsr ? `${existingAsr.completionEvidenceFound}/${existingAsr.completionEvidenceTotal}` : '0/0';
@@ -168,19 +168,25 @@ const rows = manifest.rows.map(row => {
     ?? audioDuration(path.join(root, 'public', row.audioUrl));
   let nextAction = 'Resolver la evidencia automática faltante antes de revisión humana.';
   if (productionPassed) {
-    state = audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
+    state = audioPublished ? 'PUBLISHED_AUDIO_QA_APPROVED'
+      : audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
     source = 'STAGED_NEW';
     completionEvidence = produced.qa.effectiveCompletionEvidence;
     wordErrorRate = produced.qa.effectiveWordErrorRate ?? produced.qa.globalAsr?.wordErrorRate ?? null;
     durationSeconds = produced.technicalFile?.durationSeconds ?? null;
-    nextAction = 'Escucha humana completa Q1–Q40; después publicar por hash.';
+    nextAction = audioPublished
+      ? 'Audio público coincide con el master aprobado y el recibo por hash; falta evidencia humana independiente Q1–Q40.'
+      : 'Escucha humana completa Q1–Q40; después publicar por hash.';
   } else if (repairPassed) {
-    state = audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
+    state = audioPublished ? 'PUBLISHED_AUDIO_QA_APPROVED'
+      : audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
     source = 'STAGED_REPAIR';
     completionEvidence = repaired.qa.effectiveCompletionEvidence;
     wordErrorRate = null;
     durationSeconds = audioDuration(repaired.file.path);
-    nextAction = 'Escucha humana completa Q1–Q40 de la reparación; después publicar por hash.';
+    nextAction = audioPublished
+      ? 'Reparación pública coincide con el master aprobado y el recibo por hash; falta evidencia humana independiente Q1–Q40.'
+      : 'Escucha humana completa Q1–Q40 de la reparación; después publicar por hash.';
   } else if (legacyReplacementPassed) {
     state = audioPublished ? 'PUBLISHED_AUDIO_QA_APPROVED'
       : audioQualityApproved ? 'BATCH_QUALITY_APPROVED_PENDING_Q40' : 'AUTO_QA_PASS_PENDING_HUMAN';
@@ -226,6 +232,7 @@ const report = {
   legacyReplacementManifestSha256: legacyReplacementManifest.manifestSha256,
   legacyReplacementQualityApprovalSha256: legacyReplacementApprovalSha256,
   legacyReplacementPublishReceiptSha256,
+  approvedBatchPublishReceiptSha256: publicationAudit.approvedBatchReceiptSha256,
   castingSha256,
   legacyReplacementCastingSha256,
   publicAudioChanged: rows.some(row => row.audioPublished),

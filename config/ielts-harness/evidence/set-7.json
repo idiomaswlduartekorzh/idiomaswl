@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 7,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-7.ts",
+    "sourceSha256": "616be7d9bedca032fbea2889e141c82ae786c692136748628e58fd937235ce9c",
+    "releaseFingerprintSha256": "c245ff42a9662ff56d1787b39c1b296e9ba53d62830ce44ecf4b1c5a58a91f9c"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "transcriptSha256": "154ec15cc6b7d7875a971993a9dd24f979ceb9b4edd9d81ffdb4e46a63516fc1",
+      "objectiveSha256": "b673de869e6cb5334701604d454ace4dca8e98fcd1ae61c76c4520240ca37ac2"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "transcriptSha256": "154ec15cc6b7d7875a971993a9dd24f979ceb9b4edd9d81ffdb4e46a63516fc1",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-7-listening-evidence.json",
+      "evidenceSha256": "26119c865d03ee8f6e31fd0e1b9e1ad45aee9acbfd033c3884f63b7582a886d5"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 84.5,
+        "endSeconds": 90.92,
+        "audiblePhrase": "Yes, my first name's Helen. Thank you Helen. And your surname? It's Whitcomb. Could you spell that for me?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 101.46,
+        "endSeconds": 113.24,
+        "audiblePhrase": "Whitcomb, got it. And a contact number. In case a class is cancelled or the room changes, my mobile is 07700900318.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 144.98,
+        "endSeconds": 151.48,
+        "audiblePhrase": "However, I first found the autumn program when I saw your poster in the library, so put the library on the form.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 202.24,
+        "endSeconds": 210.3,
+        "audiblePhrase": "Drawing also sounded relaxing. But after reading the course descriptions, I've made up my mind. I'd like to do photography.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 225.98,
+        "endSeconds": 238.86,
+        "audiblePhrase": "I don't need a qualification. Mainly I'm hoping it will help with my career. I work in marketing and lately I've been expected to take better images for our website instead of always hiring a photographer.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 246.8,
+        "endSeconds": 255.3,
+        "audiblePhrase": "One important requirement is that students bring their own camera. The centre has computers for editing, but it doesn't lend photographic equipment.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 285.86,
+        "endSeconds": 296.12,
+        "audiblePhrase": "In that case, start with beginners. It runs on Tuesday evenings from 6.30 until 8.30 and lasts for 10 weeks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 297.46,
+        "endSeconds": 309.54,
+        "audiblePhrase": "There is a short break halfway through the evening. The term fee is £120 which includes printing materials and the class meets in Room B4 on the ground floor.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 335.16,
+        "endSeconds": 347.5,
+        "audiblePhrase": "Yes. The follow-up course concentrates on portrait and low light work. It runs on Thursday evenings. It's slightly shorter at 8 weeks and its fees lower to £95.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 335.16,
+        "endSeconds": 347.5,
+        "audiblePhrase": "Yes. The follow-up course concentrates on portrait and low light work. It runs on Thursday evenings. It's slightly shorter at 8 weeks and its fees lower to £95.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 481.48,
+        "endSeconds": 526.8,
+        "audiblePhrase": "Before we begin, here are a few practical details. Admission to the main galleries is completely free for every visitor. You do not need to collect a ticket for them. Our children's activity trail is free as well. Families can pick up a trail sheet and pencil at reception, and there is no charge for returning visitors who want a second sheet. Other activities are priced separately. The guided Harbor tour costs £6. The temporary exhibition on the top floor requires a £3 ticket, and hiring this audio guide also carries a small charge. Those three items are sometimes included in special group bookings, but they are not free to the general public.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 481.48,
+        "endSeconds": 526.8,
+        "audiblePhrase": "Before we begin, here are a few practical details. Admission to the main galleries is completely free for every visitor. You do not need to collect a ticket for them. Our children's activity trail is free as well. Families can pick up a trail sheet and pencil at reception, and there is no charge for returning visitors who want a second sheet. Other activities are priced separately. The guided Harbor tour costs £6. The temporary exhibition on the top floor requires a £3 ticket, and hiring this audio guide also carries a small charge. Those three items are sometimes included in special group bookings, but they are not free to the general public.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 547.42,
+        "endSeconds": 559.36,
+        "audiblePhrase": "Now take a moment to look at the building around you. The museum occupies a 19th century warehouse, which once stored timber, rope and other goods arriving by sea.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 584.14,
+        "endSeconds": 590.86,
+        "audiblePhrase": "A ship's bell made roughly 400 years ago. Divers recovered it from a wreck just off this coast.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 608.42,
+        "endSeconds": 615.42,
+        "audiblePhrase": "Next, go through the wide doorway on your left. The first gallery contains detailed models of fishing boats.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 676.903,
+        "endSeconds": 679.903,
+        "audiblePhrase": "Its charts show how the coastline near Harboura",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 723.84,
+        "endSeconds": 733.54,
+        "audiblePhrase": "A modern, wet suit stands nearby for comparison, but visitor surveys consistently identify the Victorian diving suit as the favourite.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 733.9,
+        "endSeconds": 739.66,
+        "audiblePhrase": "In the same room, a short film tells the history of the port through photographs and interviews.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 759.62,
+        "endSeconds": 766.94,
+        "audiblePhrase": "The café is at the rear of the building, beside the garden. On fine days, tables are placed among the old anchors outside.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 775.1,
+        "endSeconds": 785.02,
+        "audiblePhrase": "Before going upstairs, please put large bags and wet coats in the cloakroom near the entrance. This protects both the exhibits and other visitors in the narrow galleries.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 887.08,
+        "endSeconds": 897.16,
+        "audiblePhrase": "Come in, Megan and Ryan. I read the outline you sent yesterday. You've settled on a topic for your psychology experiment, so talk me through it in your own words.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 956.394,
+        "endSeconds": 972.614,
+        "audiblePhrase": "The type of music played. One group will read in silence, one will hear instrumental music, and one will hear music with lyrics. We briefly considered testing different volumes, but we decided to keep volume constant for both music groups.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1028.22,
+        "endSeconds": 1038.98,
+        "audiblePhrase": "So our final plan is to put up a notice on the student portal and invite volunteers. The notice will give the time commitment without revealing which kind of music we expect to work best.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1051.32,
+        "endSeconds": 1068.86,
+        "audiblePhrase": "The proposed groups are adequate for the assignment. My main concern lies elsewhere. Your draft says each participant will complete all three conditions. By the third reading, people may be better at the procedure simply because they have practiced it. That practice effect could distort the comparison.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1161.6,
+        "endSeconds": 1172.36,
+        "audiblePhrase": "Exactly. Preparing and checking that test comes next, the pilot follows after I approve it. Let's go through the remaining details so your protocol is complete. Where will testing take place?",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1137.44,
+        "endSeconds": 1142.8,
+        "audiblePhrase": "The library room is already provisionally booked, so booking is not our immediate task.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1196.42,
+        "endSeconds": 1204.84,
+        "audiblePhrase": "Make sure every passage is the same length. Similar topics are useful, but a longer passage would demand more effort and introduce another variable.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1213.9,
+        "endSeconds": 1221.22,
+        "audiblePhrase": "Rather than explaining the task differently each time, one of us will read the instructions aloud from a fixed script.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1232.5,
+        "endSeconds": 1243.46,
+        "audiblePhrase": "We'll calculate an average score for each condition. In the report, the three scores will appear in a bar graph because the groups are separate categories rather than measurements across continuous time.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1250.66,
+        "endSeconds": 1261,
+        "audiblePhrase": "Finally, ethics. Your information sheet explains that people may leave at any time, which is good. Before anyone takes part, however, you must obtain written consent.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1401.92,
+        "endSeconds": 1405.42,
+        "audiblePhrase": "The brain normally increases production of a hormone called melatonin.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1422.36,
+        "endSeconds": 1426.6,
+        "audiblePhrase": "That signal operates within a roughly 24-hour pattern known as the circadian rhythm.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1475.46,
+        "endSeconds": 1481.22,
+        "audiblePhrase": "For a simple overview, these are often grouped into two main types, REM sleep and deep sleep.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1488.08,
+        "endSeconds": 1492.28,
+        "audiblePhrase": "Vivid dreaming is common and most large muscles are temporarily less active.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1534.08,
+        "endSeconds": 1537.86,
+        "audiblePhrase": "Evidence links it to emotional processing and to consolidating memory.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1620.46,
+        "endSeconds": 1626.18,
+        "audiblePhrase": "Even several nights of restricted sleep can alter the activity of immune cells and weaken the immune system.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1639.44,
+        "endSeconds": 1641.82,
+        "audiblePhrase": "Sleep loss has a strong influence on mood.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1664.28,
+        "endSeconds": 1669.7,
+        "audiblePhrase": "Teenagers generally need more sleep than adults, partly because adolescence is a period of rapid growth.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1708.02,
+        "endSeconds": 1717.46,
+        "audiblePhrase": "Sleep disorder is insomnia, defined by repeated trouble falling asleep, staying asleep or obtaining restorative sleep, despite having an adequate opportunity to rest.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1752.3,
+        "endSeconds": 1755.26,
+        "audiblePhrase": "In particular, experts advise avoiding caffeine in the evening.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "d5cf0f46eaeca51c8337c94108f9447e42802aa9e2484c1c2a416bfb81f0e0e9",
+      "objectiveSha256": "b673de869e6cb5334701604d454ace4dca8e98fcd1ae61c76c4520240ca37ac2"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The term was popularised by biologist Janine Benyus in her 1997 book Biomimicry: Innovation Inspired by Nature. Benyus argued that rather than merely extracting resources from the natural world, designers and engineers should treat nature as a mentor, learning from the elegance and efficiency of biological systems. The concept was not new—inventors had always drawn inspiration from nature—but Benyus provided a systematic framework for doing so, and her work catalysed a new field of research and practice.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Some of the most celebrated examples of biomimicry involve architecture. The Eastgate Centre in Harare, Zimbabwe, designed by architect Mick Pearce in the 1990s, takes its cues from the ventilation strategies of African termite mounds. Despite the intense heat of the Zimbabwean climate, termite mounds maintain a remarkably stable internal temperature because of a system of vents and tunnels that allow hot air to rise and be expelled while cool air is drawn from below. Pearce replicated this principle in the Eastgate Centre using a passive cooling system that requires no conventional air conditioning, reducing the building's energy consumption by approximately ninety percent compared to a conventional building of similar size. The example also illustrates why biological inspiration must be translated into local engineering. Materials, openings, internal heat loads, and daily temperature changes all affect the performance of the ventilation system, so designers adapted the principle instead of attempting a literal copy of the mound.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Some of the most celebrated examples of biomimicry involve architecture. The Eastgate Centre in Harare, Zimbabwe, designed by architect Mick Pearce in the 1990s, takes its cues from the ventilation strategies of African termite mounds. Despite the intense heat of the Zimbabwean climate, termite mounds maintain a remarkably stable internal temperature because of a system of vents and tunnels that allow hot air to rise and be expelled while cool air is drawn from below. Pearce replicated this principle in the Eastgate Centre using a passive cooling system that requires no conventional air conditioning, reducing the building's energy consumption by approximately ninety percent compared to a conventional building of similar size. The example also illustrates why biological inspiration must be translated into local engineering. Materials, openings, internal heat loads, and daily temperature changes all affect the performance of the ventilation system, so designers adapted the principle instead of attempting a literal copy of the mound.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+        "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Researchers are careful to note the limitations of Blue Zone research. The data on centenarian concentrations, particularly in some regions, may be affected by poor historical record-keeping and inflated claims of age. Confounding variables—genetics, geography, selective migration—make it difficult to isolate the causal effect of any single lifestyle factor. People who remain healthy into old age may also retain active routines because of their health, which complicates claims that the routine alone produced the outcome. Observational comparisons can reveal associations, but they cannot reproduce the control available in a long-term experiment. Nonetheless, the convergence of so many independent populations around similar habits has persuaded many public health researchers that the Blue Zone lifestyle represents a meaningful and replicable model for extending healthy life expectancy.",
+        "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+        "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Physical activity in Blue Zone populations is not the vigorous, scheduled exercise of gym culture. Rather, it is embedded in daily routine: walking to village markets, tending gardens, herding animals, kneading bread. Okinawan elders sit on the floor to eat and rest, which means they rise and lower themselves dozens of times daily, engaging muscle groups that sedentary chair-bound living leaves dormant. Sardinian shepherds walk hilly terrain for hours each day as a natural consequence of their occupation. Movement is therefore distributed across the day and tied to necessary tasks, rather than confined to a single planned session. This pattern may be easier to sustain because the surrounding environment continually prompts it. Research suggests that this form of low-intensity, continuous movement may confer health benefits distinct from those of intermittent high-intensity exercise.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. A sense of purpose—articulated in Okinawan culture as ikigai, \"the reason for getting up in the morning\"—and, separately, stress-reduction practices are features common to all zones. Nicoyans speak of their plan de vida, or life plan, as a core source of meaning. Seventh-day Adventists in Loma Linda observe a weekly Sabbath as a regular pause from the pressures of daily life. Sardinians decompress through daily social rituals, including extended family meals. The mechanisms by which psychological wellbeing translates into longevity are not fully understood, but the connection is robust across multiple research traditions.",
+        "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. In 2004, journalist Dan Buettner, working with demographers and epidemiologists, identified five regions of the world with unusually high concentrations of centenarians—people who live to age one hundred or beyond. Buettner called these regions \"Blue Zones,\" a term derived from the blue ink demographers used to mark areas of interest on maps. The five zones are: Sardinia in Italy; Okinawa in Japan; Loma Linda in California; the Nicoya Peninsula in Costa Rica; and the island of Ikaria in Greece. Despite their geographical and cultural diversity, researchers identified a set of lifestyle characteristics common to all five populations.",
+        "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+        "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-table__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Physical activity in Blue Zone populations is not the vigorous, scheduled exercise of gym culture. Rather, it is embedded in daily routine: walking to village markets, tending gardens, herding animals, kneading bread. Okinawan elders sit on the floor to eat and rest, which means they rise and lower themselves dozens of times daily, engaging muscle groups that sedentary chair-bound living leaves dormant. Sardinian shepherds walk hilly terrain for hours each day as a natural consequence of their occupation. Movement is therefore distributed across the day and tied to necessary tasks, rather than confined to a single planned session. This pattern may be easier to sustain because the surrounding environment continually prompts it. Research suggests that this form of low-intensity, continuous movement may confer health benefits distinct from those of intermittent high-intensity exercise.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-table__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-table__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-table__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-table__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. A sense of purpose—articulated in Okinawan culture as ikigai, \"the reason for getting up in the morning\"—and, separately, stress-reduction practices are features common to all zones. Nicoyans speak of their plan de vida, or life plan, as a core source of meaning. Seventh-day Adventists in Loma Linda observe a weekly Sabbath as a regular pause from the pressures of daily life. Sardinians decompress through daily social rituals, including extended family meals. The mechanisms by which psychological wellbeing translates into longevity are not fully understood, but the connection is robust across multiple research traditions.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-table__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Researchers are careful to note the limitations of Blue Zone research. The data on centenarian concentrations, particularly in some regions, may be affected by poor historical record-keeping and inflated claims of age. Confounding variables—genetics, geography, selective migration—make it difficult to isolate the causal effect of any single lifestyle factor. People who remain healthy into old age may also retain active routines because of their health, which complicates claims that the routine alone produced the outcome. Observational comparisons can reveal associations, but they cannot reproduce the control available in a long-term experiment. Nonetheless, the convergence of so many independent populations around similar habits has persuaded many public health researchers that the Blue Zone lifestyle represents a meaningful and replicable model for extending healthy life expectancy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The hypothesis of linguistic relativity—the idea that the language one speaks influences how one perceives and thinks about the world—has generated intense debate in linguistics, psychology, and cognitive science for more than a century. In its strongest form, the Sapir-Whorf hypothesis (named after linguists Edward Sapir and Benjamin Lee Whorf) holds that language determines thought: that people who speak different languages inhabit incommensurable cognitive worlds. This strong version has been largely discredited. If thought were strictly limited by existing words and grammar, translation and the creation of new concepts would be extremely difficult to explain. A weaker but more defensible version—that language influences certain cognitive tendencies and perceptions without determining them—has accumulated considerable empirical support in recent decades. It predicts measurable differences in attention or speed while allowing speakers of every language to learn unfamiliar distinctions.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Spatial cognition offers another revealing domain. In Kuuk Thaayorre, an Aboriginal Australian language, speakers use absolute cardinal directions (north, south, east, west) for all spatial reference rather than ego-centred terms (left, right, in front, behind). A speaker might locate an object to the north of another one where an English speaker would place it on the left. Using the system in ordinary conversation requires continual awareness of orientation, even indoors or in unfamiliar positions. Researchers found that Kuuk Thaayorre speakers maintain a constant, accurate sense of cardinal direction regardless of their orientation—a remarkable navigational ability that is not characteristically observed in speakers of ego-centred languages. Whether this ability is caused by the language or merely correlated with cultural practices that both produce the language and the navigation skill is an ongoing debate.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Grammatical gender provides further evidence. In languages where nouns are assigned grammatical gender—German, French, Spanish—the gender of a noun has been shown to influence the adjectives and metaphors speakers use to describe the referent. German speakers, for whom the word for \"bridge\" (Brücke) is feminine, more often describe bridges using adjectives like \"beautiful\" and \"elegant\"; Spanish speakers, for whom puente is masculine, more often use adjectives like \"strong\" and \"sturdy.\" These effects, while small, are consistent across multiple studies and have been replicated even when the instructions are given in a different language.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Spatial cognition offers another revealing domain. In Kuuk Thaayorre, an Aboriginal Australian language, speakers use absolute cardinal directions (north, south, east, west) for all spatial reference rather than ego-centred terms (left, right, in front, behind). A speaker might locate an object to the north of another one where an English speaker would place it on the left. Using the system in ordinary conversation requires continual awareness of orientation, even indoors or in unfamiliar positions. Researchers found that Kuuk Thaayorre speakers maintain a constant, accurate sense of cardinal direction regardless of their orientation—a remarkable navigational ability that is not characteristically observed in speakers of ego-centred languages. Whether this ability is caused by the language or merely correlated with cultural practices that both produce the language and the navigation skill is an ongoing debate.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Grammatical gender provides further evidence. In languages where nouns are assigned grammatical gender—German, French, Spanish—the gender of a noun has been shown to influence the adjectives and metaphors speakers use to describe the referent. German speakers, for whom the word for \"bridge\" (Brücke) is feminine, more often describe bridges using adjectives like \"beautiful\" and \"elegant\"; Spanish speakers, for whom puente is masculine, more often use adjectives like \"strong\" and \"sturdy.\" These effects, while small, are consistent across multiple studies and have been replicated even when the instructions are given in a different language.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of linguistic relativity research raise important methodological objections. Many of the effects reported are small in magnitude and sensitive to experimental conditions. The causal arrow is difficult to establish: rather than language shaping thought, cultural practices may independently shape both language and cognition. Bilingual speakers present another complication because their experience cannot always be assigned neatly to one linguistic system. Experimental instructions may themselves activate words or categories that affect the result being measured. There are also concerns about publication bias—the tendency for journals to publish positive results while null findings accumulate unpublished. A comprehensive meta-analysis of linguistic relativity studies published in 2012 found effect sizes were generally modest but significantly above chance, suggesting that while language does not determine thought, it may subtly tune the cognitive tools available for particular tasks.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The practical implications of linguistic relativity are modestly significant. In second-language acquisition, understanding that a learner's native language may predispose them to perceive and categorise the world in particular ways can inform pedagogical strategies. Teachers can give additional practice to distinctions that the learner's first language does not routinely require, while avoiding the assumption that the learner is incapable of perceiving them. In cross-cultural communication, awareness that linguistic structure shapes subtle perceptual and categorical tendencies may promote greater patience with misunderstandings that arise not from logic but from deeply embedded linguistic habits. The evidence supports careful adaptation and awareness rather than treating speakers as prisoners of their grammar.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The hypothesis of linguistic relativity—the idea that the language one speaks influences how one perceives and thinks about the world—has generated intense debate in linguistics, psychology, and cognitive science for more than a century. In its strongest form, the Sapir-Whorf hypothesis (named after linguists Edward Sapir and Benjamin Lee Whorf) holds that language determines thought: that people who speak different languages inhabit incommensurable cognitive worlds. This strong version has been largely discredited. If thought were strictly limited by existing words and grammar, translation and the creation of new concepts would be extremely difficult to explain. A weaker but more defensible version—that language influences certain cognitive tendencies and perceptions without determining them—has accumulated considerable empirical support in recent decades. It predicts measurable differences in attention or speed while allowing speakers of every language to learn unfamiliar distinctions.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of linguistic relativity research raise important methodological objections. Many of the effects reported are small in magnitude and sensitive to experimental conditions. The causal arrow is difficult to establish: rather than language shaping thought, cultural practices may independently shape both language and cognition. Bilingual speakers present another complication because their experience cannot always be assigned neatly to one linguistic system. Experimental instructions may themselves activate words or categories that affect the result being measured. There are also concerns about publication bias—the tendency for journals to publish positive results while null findings accumulate unpublished. A comprehensive meta-analysis of linguistic relativity studies published in 2012 found effect sizes were generally modest but significantly above chance, suggesting that while language does not determine thought, it may subtly tune the cognitive tools available for particular tasks.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The practical implications of linguistic relativity are modestly significant. In second-language acquisition, understanding that a learner's native language may predispose them to perceive and categorise the world in particular ways can inform pedagogical strategies. Teachers can give additional practice to distinctions that the learner's first language does not routinely require, while avoiding the assumption that the learner is incapable of perceiving them. In cross-cultural communication, awareness that linguistic structure shapes subtle perceptual and categorical tendencies may promote greater patience with misunderstandings that arise not from logic but from deeply embedded linguistic habits. The evidence supports careful adaptation and awareness rather than treating speakers as prisoners of their grammar.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "712c8613242b843b9e9721eb2a193fce53458d846e9b5b1b6986926a9037ba84",
+      "task1ImageSha256": "14716af50d5a3b92603ecaf7379eb74d9175c946829ff65f26a5fd1ca5913011"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "3dfbd7fa33a429c723f3c3eaf6ae11795941aaf4376c63155df61e4a4a0916fd"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "b673de869e6cb5334701604d454ace4dca8e98fcd1ae61c76c4520240ca37ac2",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-7-objective-review.json",
+    "evidenceSha256": "632c3752c56f0b7cee4519cc27576cd4ec8b5de496138bb724d80bf1e7f0c755",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-academic-keys-2-7"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "288e3d997504c4645d5ad832c24714a055e11755ce117a366c78a9615ba7cb83"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "c245ff42a9662ff56d1787b39c1b296e9ba53d62830ce44ecf4b1c5a58a91f9c",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

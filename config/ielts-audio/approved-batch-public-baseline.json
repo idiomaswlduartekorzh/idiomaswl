@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-09",
+  "scope": "Public audio state immediately before publishing the owner-approved 13-file batch",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "rows": [
+    {
+      "set": 1,
+      "audioSha256": "0617e45b7a9678a7e9e3a8c20a968ad9339020501bbdbed519cddeeb05d83d3f"
+    },
+    {
+      "set": 2,
+      "audioSha256": "e7da362cf46f2460b21becfa946ce896d30b46851beb2808a6d195eb02e5864b"
+    },
+    {
+      "set": 3,
+      "audioSha256": "23bf5c75ae752dba91f5d6b607746862ec20855e61e98a875f94fc1c4ff1557e"
+    },
+    {
+      "set": 4,
+      "audioSha256": "36a014438a93cc79ea854980787ea88ebbc8101e2fd5f322375c61b37991e192"
+    },
+    {
+      "set": 9,
+      "audioSha256": "01d2ae92113a1be419c061b817790ae0f95eba1aa5d32cd64bdc9c30494790f2"
+    },
+    {
+      "set": 13,
+      "audioSha256": null
+    },
+    {
+      "set": 14,
+      "audioSha256": null
+    },
+    {
+      "set": 15,
+      "audioSha256": null
+    },
+    {
+      "set": 16,
+      "audioSha256": null
+    },
+    {
+      "set": 17,
+      "audioSha256": null
+    },
+    {
+      "set": 18,
+      "audioSha256": null
+    },
+    {
+      "set": 19,
+      "audioSha256": null
+    },
+    {
+      "set": 20,
+      "audioSha256": null
+    }
+  ],
+  "releaseAuthorized": false,
+  "baselineSha256": "b819d8ff5ecddf948480106844a82793750c7f48612143f3bfff7eb57abe82de"
+}

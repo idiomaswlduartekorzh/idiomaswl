@@ -172,11 +172,11 @@ Transport
 • Free shuttle bus runs every {{19}} minutes.
 • Bus service ends at {{20}} p.m.`,
           blanks: [
-            { num: 13, answers: ['10 p.m.', '10pm', 'ten'], maxWords: 2 },
+            { num: 13, answers: ['10 p.m.', '10pm'], maxWords: 2 },
             { num: 14, answers: ['6', 'six'], maxWords: 1 },
             { num: 15, answers: ['3–5', 'three to five', 'three-five'], maxWords: 3 },
-            { num: 16, answers: ['sports hall', 'sports centre'], maxWords: 2 },
-            { num: 17, answers: ['Thursdays', 'Thursday'], maxWords: 1 },
+            { num: 16, answers: ['sports hall'], maxWords: 2 },
+            { num: 17, answers: ['Thursdays'], maxWords: 1 },
             { num: 18, answers: ['warden'], maxWords: 1 },
             { num: 19, answers: ['15', 'fifteen'], maxWords: 1 },
             { num: 20, answers: ['11', 'eleven'], maxWords: 1 },
@@ -299,8 +299,8 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
           blanks: [
             { num: 26, answers: ['grid'], maxWords: 1 },
             { num: 27, answers: ['locations'], maxWords: 1 },
-            { num: 28, answers: ['labels', 'label'], maxWords: 1 },
-            { num: 29, answers: ['programme', 'program', 'software'], maxWords: 1 },
+            { num: 28, answers: ['labels'], maxWords: 1 },
+            { num: 29, answers: ['programme', 'program'], maxWords: 1 },
             { num: 30, answers: ['library'], maxWords: 1 },
           ],
         },
@@ -357,11 +357,11 @@ Major threats
 • Invasive species such as the crown-of-thorns {{40}}.`,
           blanks: [
             { num: 31, answers: ['species'], maxWords: 1 },
-            { num: 32, answers: ['polyps', 'polyp'], maxWords: 1 },
+            { num: 32, answers: ['polyps'], maxWords: 1 },
             { num: 33, answers: ['calcium'], maxWords: 1 },
             { num: 34, answers: ['algae'], maxWords: 1 },
             { num: 35, answers: ['energy'], maxWords: 1 },
-            { num: 36, answers: ['temperature', 'temperatures'], maxWords: 1 },
+            { num: 36, answers: ['temperatures'], maxWords: 1 },
             { num: 37, answers: ['white'], maxWords: 1 },
             { num: 38, answers: ['acidification'], maxWords: 1 },
             { num: 39, answers: ['fishing'], maxWords: 1 },
@@ -454,7 +454,7 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
           options: [
             { letter: 'A', text: 'bulletproof windows' },
             { letter: 'B', text: 'optical fibre telecommunications' },
-            { letter: 'C', text: 'smart glass for privacy and energy efficiency' },
+            { letter: 'C', text: 'smart glass that changes transparency' },
             { letter: 'D', text: 'underwater exploration equipment' },
             { letter: 'E', text: 'solar panel production' },
           ],
@@ -559,7 +559,7 @@ Flower adaptations to attract bees
           blanks: [
             { num: 19, answers: ['carbohydrates'], maxWords: 1 },
             { num: 20, answers: ['fats'], maxWords: 1 },
-            { num: 21, answers: ['guides', 'patterns'], maxWords: 1 },
+            { num: 21, answers: ['patterns'], maxWords: 1 },
             { num: 22, answers: ['scent'], maxWords: 1 },
             { num: 23, answers: ['mate'], maxWords: 1 },
           ],
@@ -626,7 +626,7 @@ Kahneman distinguished between System 1 — fast and {{32}} — and System 2, wh
 
 The idea of {{33}} involves designing choice environments to promote better decisions.`,
           blanks: [
-            { num: 27, answers: ['rational choice', 'rational'], maxWords: 2 },
+            { num: 27, answers: ['rational'], maxWords: 1 },
             { num: 28, answers: ['heuristics'], maxWords: 1 },
             { num: 29, answers: ['cognitive biases', 'biases'], maxWords: 2 },
             { num: 30, answers: ['mind'], maxWords: 1 },

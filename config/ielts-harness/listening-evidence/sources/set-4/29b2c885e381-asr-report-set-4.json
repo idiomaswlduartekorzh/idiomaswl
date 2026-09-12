@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T21:57:51.552Z",
+  "set": 4,
+  "source": "src/data/mocks/ielts-set-4.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-4.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-3-4/set-4/ielts-listening-set-4.mp3",
+  "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+  "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "9529f19f4d2e6cdd60c04cfb0680e162cf0a4df59a2a2f67451cb0bb836909aa",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-3-4/set-4/whisper-set-4.json",
+  "asrSourceSha256": "eeecdbc6de3032594f51a316c36ebf5eb04101b85626979e01afd8a918c5dd68",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3092,
+  "recognizedWords": 2985,
+  "editDistance": 168,
+  "wordErrorRate": 0.0543,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "8"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 71.3,
+      "endSeconds": 81.98,
+      "audiblePhrase": "Sure. My name's Paolo Ferreira, F-E-R-R-E-I-R-A, and my student number is PG4471-8."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "Environmental Science",
+        "Environmental"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 113.96,
+      "endSeconds": 115.04,
+      "audiblePhrase": "Environmental Science."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 149.22,
+      "endSeconds": 161.54,
+      "audiblePhrase": "That would be a cluster flat then. We have two options available from 1 September. The first is Maple Court. It's a 10 minute walk from the main campus. Each room has a desk, wardrobe, and single bed."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "campus"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 149.22,
+      "endSeconds": 161.54,
+      "audiblePhrase": "That would be a cluster flat then. We have two options available from 1 September. The first is Maple Court. It's a 10 minute walk from the main campus. Each room has a desk, wardrobe, and single bed."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "bathroom"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 253.18,
+      "endSeconds": 264.98,
+      "audiblePhrase": "The second is Cedar Hall. It's actually on campus, so very convenient. Monthly rent is £475. The rooms are slightly larger, and each has its own bathroom."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "library"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 270.58,
+      "endSeconds": 282.06,
+      "audiblePhrase": "Let me check availability. Cedar Hall has rooms available in both Block A and Block B. Block A faces the library and tends to be quieter. Block B is closer to the sports centre."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "acceptance letter",
+        "letter"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 313.22,
+      "endSeconds": 318.94,
+      "audiblePhrase": "Now for the application, I'll need a copy of your acceptance letter, your passport, and one recent bank statement."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "housing@greenfield.ac.uk",
+        "email"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 319.36,
+      "endSeconds": 327.04,
+      "audiblePhrase": "I have all of those. Can I send them by email? Before we close the student housing inquiry, could you tell me how I should raise a question after today?"
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "three",
+        "3"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 349.32,
+      "endSeconds": 355.72,
+      "audiblePhrase": "Once we receive your documents, we'll confirm your room within three working days and send you a contract to sign."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "one month",
+        "one month's rent"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 357.92,
+      "endSeconds": 365.4,
+      "audiblePhrase": "Yes. The deposit is equivalent to one month's rent. It's fully refundable at the end of your stay, provided the room is left in good condition."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "26",
+        "twenty-six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 614,
+      "endSeconds": 619.16,
+      "audiblePhrase": "which is 26 metres in length and took two years to reassemble following restoration work."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 614,
+      "endSeconds": 619.16,
+      "audiblePhrase": "which is 26 metres in length and took two years to reassemble following restoration work."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 626.16,
+      "endSeconds": 632.5,
+      "audiblePhrase": "Many visitors are surprised to learn that less than 10% of the world's known species are preserved here."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "last"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 716.28,
+      "endSeconds": 720,
+      "audiblePhrase": "Gallery 3 is our newest addition, opened just last year."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "peat"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 725.26,
+      "endSeconds": 732.02,
+      "audiblePhrase": "Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old,"
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "4,000",
+        "4000",
+        "four thousand"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 725.26,
+      "endSeconds": 732.02,
+      "audiblePhrase": "Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old,"
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "renovation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 759.8,
+      "endSeconds": 765.54,
+      "audiblePhrase": "Gallery 4 is currently undergoing partial renovation, but the dinosaur fossil section remains open."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "Montana"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 766.5,
+      "endSeconds": 774.64,
+      "audiblePhrase": "Our most prized exhibit is the Tyrannosaurus Rex skeleton in the far corner, which was discovered in Montana in 1987."
+    },
+    {
+      "question": 28,
+      "responseKey": "l4-notes__28",
+      "candidateAcceptedAnswers": [
+        "food"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1461.32,
+      "endSeconds": 1464.76,
+      "audiblePhrase": "Migration is fundamentally a response to seasonal changes in food availability."
+    },
+    {
+      "question": 29,
+      "responseKey": "l4-notes__29",
+      "candidateAcceptedAnswers": [
+        "daylight"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1465.38,
+      "endSeconds": 1473.02,
+      "audiblePhrase": "During summer in the northern hemisphere, insects, seeds and fruits are abundant, and the long daylight hours allow birds to forage for long periods."
+    },
+    {
+      "question": 30,
+      "responseKey": "l4-notes__30",
+      "candidateAcceptedAnswers": [
+        "scarce"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1474.02,
+      "endSeconds": 1481.4,
+      "audiblePhrase": "In winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-notes__31",
+      "candidateAcceptedAnswers": [
+        "magnetic"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1507.14,
+      "endSeconds": 1518.76,
+      "audiblePhrase": "First and most importantly, many species navigate using Earth's magnetic field. Researchers have discovered that birds have magnetite crystals in their beaks, effectively biological compasses."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-notes__32",
+      "candidateAcceptedAnswers": [
+        "disorient"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1519.26,
+      "endSeconds": 1524.72,
+      "audiblePhrase": "A 2019 study confirmed that disrupting magnetic fields can disorient migrating birds even in clear conditions."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-notes__33",
+      "candidateAcceptedAnswers": [
+        "sun"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1525.72,
+      "endSeconds": 1533.26,
+      "audiblePhrase": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-notes__34",
+      "candidateAcceptedAnswers": [
+        "night",
+        "star"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1525.72,
+      "endSeconds": 1533.26,
+      "audiblePhrase": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-notes__35",
+      "candidateAcceptedAnswers": [
+        "landmarks",
+        "landmark"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1619.8400000000001,
+      "endSeconds": 1629.24,
+      "audiblePhrase": "Third, birds rely on familiar landscape features. Coastlines, rivers and mountain ranges, and visual landmarks, particularly during the final stages of a journey."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-notes__36",
+      "candidateAcceptedAnswers": [
+        "night"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1647.66,
+      "endSeconds": 1652.6,
+      "audiblePhrase": "Interestingly, many small songbirds migrate at night, when there is less wind turbulence and fewer predators."
+    }
+  ],
+  "completionEvidenceFound": 27,
+  "completionEvidenceTotal": 27,
+  "failures": [],
+  "releaseAuthorized": false
+}

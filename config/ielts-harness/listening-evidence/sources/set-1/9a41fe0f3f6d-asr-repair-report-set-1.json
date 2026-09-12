@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:11:38.037Z",
+  "set": 1,
+  "source": "src/data/mocks/ielts-set-1.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-1.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/ielts-listening-set-1.repaired.mp3",
+  "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+  "transcriptSha256": "07235f9534063383d29b496341d54abfdc88361d1b55b5226d32ba4537bbc831",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "0f4e74d0179ca83a47256fae637c67a47b590d21e79d69c7f0db3dd34503a33d",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-repairs/f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab/set-1/whisper-repaired-set-1.json",
+  "asrSourceSha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "repair",
+  "status": "FAIL",
+  "expectedWords": 1028,
+  "recognizedWords": 2811,
+  "editDistance": 2373,
+  "wordErrorRate": 2.3084,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": false,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Ardleigh"
+      ],
+      "asrRecognitionVariants": [
+        "Ardley",
+        "Ard L E I G H"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 82.78,
+      "endSeconds": 84.38,
+      "audiblePhrase": "24 Ardley Road."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "newspaper"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 115.42,
+      "endSeconds": 116.98,
+      "audiblePhrase": "I read about you in the newspaper."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "theme"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 139.2,
+      "endSeconds": 144.32,
+      "audiblePhrase": "The first one begins in Los Angeles and there's plenty of time to visit some of the theme parks there."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "tent"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 160.8,
+      "endSeconds": 164.58,
+      "audiblePhrase": "I don't like the idea of staying in a tent. It'd be too hot."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "castle"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 176.26,
+      "endSeconds": 181.18,
+      "audiblePhrase": "Someone told me there's a really nice castle near Cambria. Will we go near that?"
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "beach",
+        "beaches"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 202.46,
+      "endSeconds": 204.34,
+      "audiblePhrase": "That's good for beaches, isn't it?"
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "2020",
+        "2,020"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 256.42,
+      "endSeconds": 265.38,
+      "audiblePhrase": "The first one I told you about is a self-drive tour through California, which lasts 12 days and covers 2,020 kilometers."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "flight"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 273.28,
+      "endSeconds": 280.98,
+      "audiblePhrase": "The cost is 525 pounds per person. That includes accommodation, car rental and a flight, but no meals."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "429"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 292.66,
+      "endSeconds": 298.56,
+      "audiblePhrase": "Yes. It's almost £100 cheaper. It's £429 per person, which is a good deal."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "dinner"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 304.1,
+      "endSeconds": 307.62,
+      "audiblePhrase": "They aren't included, but these hotels offer dinner in the price."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "health problems"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 521.74,
+      "endSeconds": 523.78,
+      "audiblePhrase": "Giving details of any health problems."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "safety rules"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 528.46,
+      "endSeconds": 534.06,
+      "audiblePhrase": "The trainer will then take you through the safety rules for using the equipment in the fitness suite."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "plan"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 554.18,
+      "endSeconds": 558.96,
+      "audiblePhrase": "At the end of the personal assessment, the trainer will draw up a plan,"
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "joining"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 573.74,
+      "endSeconds": 580.98,
+      "audiblePhrase": "All members must pay a joining fee of £90 in addition to the rates for the monthly membership fee."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "free entry"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "peak"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 613.54,
+      "endSeconds": 618.2,
+      "audiblePhrase": "And so LP gives booking preferences to Premier members at peak times."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "guests"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 632.96,
+      "endSeconds": 635.12,
+      "audiblePhrase": "and it's for people who send passes for guests every month."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "photo card",
+        "photo cards"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 648.46,
+      "endSeconds": 652.14,
+      "audiblePhrase": "but it's very important to remember your photo card,"
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "presentation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 944.22,
+      "endSeconds": 952.1,
+      "audiblePhrase": "Well, my design has made it to the final stage of the competition and in a few months' time I have to give a presentation."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "model"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 965.92,
+      "endSeconds": 971.14,
+      "audiblePhrase": "I see. Well, if you want to stand a good chance of winning, you really need a model of the machine."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "material",
+        "materials"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 974.72,
+      "endSeconds": 978.92,
+      "audiblePhrase": "What's the main difficulty so far? Ah, let me guess, is it the materials?"
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "grant"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 991.1,
+      "endSeconds": 993.46,
+      "audiblePhrase": "So why don't you talk to the university about a grant?"
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "technical"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1003.62,
+      "endSeconds": 1007.58,
+      "audiblePhrase": "you need to make sure the technical details you've given are accurate and thorough."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "gene"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1121.96,
+      "endSeconds": 1132.1,
+      "audiblePhrase": "One in ten black bears is actually born with a white coat, which is the result of a special gene that surfaces in a few."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "power",
+        "powers"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1140.42,
+      "endSeconds": 1143.68,
+      "audiblePhrase": "its snowy fur brings with it a special power."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "strangers"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1154.72,
+      "endSeconds": 1158.7,
+      "audiblePhrase": "It is their way of protecting it when strangers visit the area."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "erosion"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1177.32,
+      "endSeconds": 1187.34,
+      "audiblePhrase": "For example, the old growth trees have extremely long roots that help prevent erosion of the soil along the banks of the many fish streams."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "islands"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1223.62,
+      "endSeconds": 1230.84,
+      "audiblePhrase": "Today, the spirit bear lives off the coast of the province of British Columbia on a few islands."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "roads"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1269.08,
+      "endSeconds": 1280.42,
+      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "fishing"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1287.92,
+      "endSeconds": 1297.4,
+      "audiblePhrase": "To make matters worse, the number of salmon in those streams is declining, because there is no legal limit on fishing at the moment."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "reproduction"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1299.08,
+      "endSeconds": 1314.32,
+      "audiblePhrase": "These influences have a negative impact on the spirit bear's very existence, which is made all the more fragile by the fact that reproduction among these bears has always been disappointingly low."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "method",
+        "methods"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1329.08,
+      "endSeconds": 1336.44,
+      "audiblePhrase": "The spirit bear's habitat is now requiring logging companies to adopt a better logging method, which is a positive step."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "expansion"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1349.44,
+      "endSeconds": 1358.44,
+      "audiblePhrase": "While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion."
+    }
+  ],
+  "completionEvidenceFound": 32,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "Accepted completion phrases not found in question order for Q17"
+  ],
+  "releaseAuthorized": false
+}

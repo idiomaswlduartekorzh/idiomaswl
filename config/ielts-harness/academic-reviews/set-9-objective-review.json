@@ -1,0 +1,3510 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 9,
+  "mockId": "set-9",
+  "contentVersionAtReview": "ielts-set-9-v5",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "ab6e0217ad18300d16754a756ea57767ab4433817787e60cef4f4e948a1ab39b",
+    "listeningMaterialSha256": "69f76d0aed71ba41958d577a6e6dd9c0d23f546403ed55ec46b1a7fccfc50ba4",
+    "readingMaterialSha256": "0da0c2663200bc555e58e9109b41c7476bc5d816bc3e796bb60b835d7b43df6a",
+    "objectiveMaterialSha256": "8f7e6fe39f19b580585b25cfd67420a9e722c9e3998e3aa0d5e561fc9a1cf2d3"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Whitcombe"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "4",
+        "four"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "double"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "business"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "parking"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "cot"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "garden"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "3",
+        "three"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "120",
+        "£120"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "180",
+        "£180"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the gym",
+        "B": "B. the canteen",
+        "C": "C. the car park",
+        "D": "D. the bike storage",
+        "E": "E. the reception desk"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "security pass",
+        "pass"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "8.30",
+        "8:30"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "second"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "hot drinks",
+        "drinks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "mentor"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "software"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "3",
+        "three"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "Friday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "to compare diets in different countries",
+        "to investigate students' breakfast habits",
+        "to test a new dietary supplement"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "It is the meal students most often skip.",
+        "It is the cheapest meal to study.",
+        "Earlier research on it was unreliable."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "through laboratory experiments",
+        "through an online questionnaire",
+        "through face-to-face interviews"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Students who ate breakfast concentrated better.",
+        "Most students skipped breakfast to save time.",
+        "Breakfast made no difference to performance."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "There were too few male participants.",
+        "The participants were all the same age.",
+        "The overall sample was too small."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "graphs",
+        "graph"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "sample"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "reliability"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "Friday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "book"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "plates",
+        "plate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "lava"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "slopes",
+        "slope"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "eruptions",
+        "eruption"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "ash"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "flow"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "fertile"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "energy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "earthquakes",
+        "earthquake"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "predict"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-table__8",
+      "accepted": [
+        "vaccine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-table__9",
+      "accepted": [
+        "anthrax"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-table__10",
+      "accepted": [
+        "disease-causing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-table__11",
+      "accepted": [
+        "polio"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-table__12",
+      "accepted": [
+        "polio"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-table__13",
+      "accepted": [
+        "autism"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sent__21",
+      "accepted": [
+        "1,086",
+        "1086"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sent__22",
+      "accepted": [
+        "chemosynthesis"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sent__23",
+      "accepted": [
+        "copper"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sent__24",
+      "accepted": [
+        "centuries"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sent__25",
+      "accepted": [
+        "months"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sent__26",
+      "accepted": [
+        "enforce"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "They were correct that mechanisation would both destroy their jobs and harm the broader economy.",
+        "They were wrong that mechanisation would affect their specific occupations.",
+        "They correctly predicted the elimination of their jobs but were wrong about broader economic consequences.",
+        "They successfully prevented the mechanisation of the textile industry."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It can automate manual labour more efficiently than earlier machines.",
+        "It can replicate both manual and cognitive work, threatening a wider range of jobs simultaneously.",
+        "It has already destroyed more jobs than any previous technology in history.",
+        "It primarily affects low-skill workers rather than professionals."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "An economy in which both high-skill and low-skill jobs are shrinking simultaneously.",
+        "A polarised labour market where middle-skill jobs decline while demand grows at both extremes.",
+        "An economy that cycles rapidly between growth and recession.",
+        "A model in which middle-income earners have more job security than those at either extreme."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It has been shown to significantly reduce motivation to work in pilot programmes.",
+        "It primarily benefits high-income individuals who do not need additional support.",
+        "It may not be financially sustainable and could reduce incentives to work.",
+        "It has been rejected by all Nordic countries as impractical."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "creative"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "wage"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "learning"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "rigorous"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Whitcombe"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: Yes, my first name's Rebecca, and my surname is Whitcombe.",
+      "sourceExcerptSha256": "b3a0ddb0912ea0a26ebd0163bb96a250983da791fe7e541c7af2e715243a8cb8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Whitcombe",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Whitcombe",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "4",
+        "four"
+      ],
+      "questionPrompt": "Number of nights: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: We'll be there for four nights, arriving on the Thursday.",
+      "sourceExcerptSha256": "4fdc6731d3f5c06dabc5119077662474d2dd0babd563ee48c975bb5b01ad7b54",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "four",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "4",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        },
+        {
+          "answer": "four",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "double"
+      ],
+      "questionPrompt": "Room type: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: I'll take a twin room — oh, sorry, no, a double, please. My husband is coming with me.",
+      "sourceExcerptSha256": "ec4bab13d998fc1ce3b34d222f52403211b14dfd6d0c71d0ba33e9077ecb5819",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "double",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "double",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "business"
+      ],
+      "questionPrompt": "Reason for visit: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: It's for business — there's a conference in the city that week.",
+      "sourceExcerptSha256": "39252ab27392b9f9b2e6f9700895a8ac3fbf3499484bec579e4a0265aa6a086f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "business",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "business",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "parking"
+      ],
+      "questionPrompt": "Also needs {{5}} for the car",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: Two things, actually. We'll be driving down, so we'd like parking. And we're bringing our baby, so could you put a cot in the room?",
+      "sourceExcerptSha256": "41170074dc8051b6acaec7439feacda351ce33d161375df42a969e45abce8fde",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "parking",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "parking",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cot"
+      ],
+      "questionPrompt": "Also needs a {{6}} in the room for a baby",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "CUSTOMER: Two things, actually. We'll be driving down, so we'd like parking. And we're bringing our baby, so could you put a cot in the room?",
+      "sourceExcerptSha256": "41170074dc8051b6acaec7439feacda351ce33d161375df42a969e45abce8fde",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cot",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cot",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "garden"
+      ],
+      "questionPrompt": "Standard | one double | {{7}} | £95",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "RECEPTIONIST: No problem at all — parking is free for guests, and I'll arrange a cot. Now, let me describe our rooms so you can choose. Our Standard room has one double bed and looks out over the garden; that's £95 a night.",
+      "sourceExcerptSha256": "9905353118e76d98166bb82b9c75b8b3eb643bf4b6d85c8d6a9eeb0916d1821c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "garden",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "garden",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "questionPrompt": "Family | {{8}} | car park | {{9}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "RECEPTIONIST: The Family room sleeps more — it has three beds, though it overlooks the car park, I'm afraid. That one is £120 per night.",
+      "sourceExcerptSha256": "b490db01412301823684a5f09a46da39f516172a05c1570b467e032f18cd06ac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        },
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "questionPrompt": "Family | {{8}} | car park | {{9}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "RECEPTIONIST: The Family room sleeps more — it has three beds, though it overlooks the car park, I'm afraid. That one is £120 per night.",
+      "sourceExcerptSha256": "b490db01412301823684a5f09a46da39f516172a05c1570b467e032f18cd06ac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "120",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "180",
+        "£180"
+      ],
+      "questionPrompt": "Suite | one double | sea | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Hotel Reservation",
+      "sourceExcerpt": "RECEPTIONIST: That would be the Suite, with one double bed and a wonderful sea view. The Suite is £180 a night.",
+      "sourceExcerptSha256": "5bcaa4556ded940aee6abf403611b2698d86ed66fab9541f4dd351389218915b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "180",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "180",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£180",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO facilities have recently been added to the building?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Let me start with the building itself, because we've made some changes recently. Over the summer we added a brand-new gym on the ground floor, which all employees can use free of charge. We've also installed secure bike storage by the rear entrance, which has proved very popular with cyclists. The canteen and the car park, of course, have been here for years, so those aren't new — but the gym and the bike storage are, and I'd encourage you to make the most of them.",
+      "sourceExcerptSha256": "2eb8a5d57e8fd4f47d34bfbe49117f141f7cd9bf6fc8bafe7ad8f1a622c0638f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the gym"
+        },
+        {
+          "key": "D",
+          "text": "the bike storage"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the canteen",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the car park",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the reception desk",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "security pass",
+        "pass"
+      ],
+      "questionPrompt": "• Collect your {{13}} from the reception desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Now, a few practical matters. On your first morning, please collect your security pass from the reception desk — you'll need it to enter the building and to use the lifts. Our working day starts at 8.30, though many people arrive a little earlier for a coffee.",
+      "sourceExcerptSha256": "387b4799008eeb8d65076a175c221ae2b6d2ee1b19da863505b14a5d22eae884",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "security pass",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "security pass",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "pass",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "8.30",
+        "8:30"
+      ],
+      "questionPrompt": "• The working day starts at {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Now, a few practical matters. On your first morning, please collect your security pass from the reception desk — you'll need it to enter the building and to use the lifts. Our working day starts at 8.30, though many people arrive a little earlier for a coffee.",
+      "sourceExcerptSha256": "387b4799008eeb8d65076a175c221ae2b6d2ee1b19da863505b14a5d22eae884",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "8.30",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "8.30",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "8:30",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "This differs from the cited form only in case, spacing, punctuation or accepted spelling."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "second"
+      ],
+      "questionPrompt": "• The canteen is located on the {{15}} floor.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Let me tell you about the facilities. The canteen is on the second floor, and it serves hot meals from midday. In every kitchen area you'll find free hot drinks available throughout the day, so please help yourself.",
+      "sourceExcerptSha256": "a2dabfc49b3166faaaa270b36f360965b1493103dbc8b78d057d547491de4b9a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "second",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "second",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hot drinks",
+        "drinks"
+      ],
+      "questionPrompt": "• All staff get free {{16}} in the kitchen area.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Let me tell you about the facilities. The canteen is on the second floor, and it serves hot meals from midday. In every kitchen area you'll find free hot drinks available throughout the day, so please help yourself.",
+      "sourceExcerptSha256": "a2dabfc49b3166faaaa270b36f360965b1493103dbc8b78d057d547491de4b9a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hot drinks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hot drinks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "drinks",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mentor"
+      ],
+      "questionPrompt": "• Each new employee is assigned a {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "In terms of your first few weeks, each new employee is assigned a mentor — an experienced colleague who'll answer your questions and show you how things work. Your early training will focus mainly on the company software, which can take a little getting used to. And I should mention that the probation period lasts three months, after which we'll have a review to discuss how you're getting on.",
+      "sourceExcerptSha256": "beef41b63f33478dbd0b0b0bbc28c2076dee21bde70ce518ed9579d4427075a1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mentor",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mentor",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "software"
+      ],
+      "questionPrompt": "• Early training focuses on the company {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "In terms of your first few weeks, each new employee is assigned a mentor — an experienced colleague who'll answer your questions and show you how things work. Your early training will focus mainly on the company software, which can take a little getting used to. And I should mention that the probation period lasts three months, after which we'll have a review to discuss how you're getting on.",
+      "sourceExcerptSha256": "beef41b63f33478dbd0b0b0bbc28c2076dee21bde70ce518ed9579d4427075a1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "software",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "software",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "questionPrompt": "• The probation period lasts {{19}} months.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "In terms of your first few weeks, each new employee is assigned a mentor — an experienced colleague who'll answer your questions and show you how things work. Your early training will focus mainly on the company software, which can take a little getting used to. And I should mention that the probation period lasts three months, after which we'll have a review to discuss how you're getting on.",
+      "sourceExcerptSha256": "beef41b63f33478dbd0b0b0bbc28c2076dee21bde70ce518ed9579d4427075a1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        },
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Friday"
+      ],
+      "questionPrompt": "• There is a team meeting every {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Company Induction",
+      "sourceExcerpt": "Finally, staying informed. There's a team meeting every Friday, where we share updates and celebrate successes. We also send out a newsletter once a month by email.",
+      "sourceExcerptSha256": "1bc4a7fe30d277cefeb5387dbcd96caef613ed7391908e4e96d8aa36d2c351c0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Friday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Friday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was the main aim of the nutrition project?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "KIRSTY: Well, we set out to investigate students' breakfast habits — whether they eat breakfast, and what they typically have.",
+      "sourceExcerptSha256": "3760e1f3c2c845659eec557fcb0ff570576cbaf9e708a6c95a0711cc53e74a69",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "to investigate students' breakfast habits"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "to compare diets in different countries",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "to test a new dietary supplement",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Why did the students decide to focus on breakfast?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TOM: Mainly because it's the meal students skip most often. We thought that made it worth studying — there's a lot of advice telling people not to skip it, but not much on what students actually do.",
+      "sourceExcerptSha256": "40f16e91ba1f2f7630545ebcfea5e2af657d292cf2b32eee14814ab8c23bb56d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "It is the meal students most often skip."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "It is the cheapest meal to study.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Earlier research on it was unreliable.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "How did they collect most of their data?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "KIRSTY: We considered doing face-to-face interviews at first, but in the end we used an online questionnaire. It let us reach far more people quickly.",
+      "sourceExcerptSha256": "8ce86e1e8fa9a14f365b69b8acd806c79097a9673f584ac0c7586c34f7c68fd6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "through an online questionnaire"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "through laboratory experiments",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "through face-to-face interviews",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did they find most surprising?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TOM: The most surprising result was that most students who skipped breakfast did so simply to save time in the mornings — not because they weren't hungry or were dieting, as we'd assumed.",
+      "sourceExcerptSha256": "97456ba35e8ec487b050bcf19929ff834945ec2e7c39cc5a1fd2a22a1c4d8fbd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Most students skipped breakfast to save time."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Students who ate breakfast concentrated better.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Breakfast made no difference to performance.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What was the main weakness of their study?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "KIRSTY: Yes — our biggest problem was the sample. We had far too few male participants; nearly eighty per cent of respondents were women, so the results are a bit skewed.",
+      "sourceExcerptSha256": "78729df44e2174e1a25abb85bbf822a387459a194a8ed9152b9ed5719cb5cf08",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "There were too few male participants."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "The participants were all the same age.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The overall sample was too small.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "graphs",
+        "graph"
+      ],
+      "questionPrompt": "• The tutor thinks the report needs more {{26}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TUTOR: That's an honest assessment. Now, thinking about the write-up: your data is strong, but the report itself needs more graphs — at the moment it's very text-heavy, and readers will find visuals easier to follow.",
+      "sourceExcerptSha256": "91b8682fcf53f8d67a2d7316c15f02c33c9223d57617958ba0d89ab24223f40d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "graphs",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "graphs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "graph",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sample"
+      ],
+      "questionPrompt": "• In future they should make their {{27}} larger.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TUTOR: And for any future work, do make your sample larger — a few hundred would be ideal. I'd also advise you to check the reliability of your sources; a couple of the websites you cited aren't peer-reviewed.",
+      "sourceExcerptSha256": "d0d3f4506823a357574ac38c14f8dc372d1fc203adec23bb644bdf5fde0fe27d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sample",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sample",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "reliability"
+      ],
+      "questionPrompt": "• The tutor advises checking the {{28}} of their sources.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TUTOR: And for any future work, do make your sample larger — a few hundred would be ideal. I'd also advise you to check the reliability of your sources; a couple of the websites you cited aren't peer-reviewed.",
+      "sourceExcerptSha256": "d0d3f4506823a357574ac38c14f8dc372d1fc203adec23bb644bdf5fde0fe27d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "reliability",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "reliability",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Friday"
+      ],
+      "questionPrompt": "• The final report must be handed in by {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TUTOR: The final report must be handed in by Friday, so you've got a few days. Oh — and Tom, I'll lend you a book that covers survey design really well; come by my office and collect it.",
+      "sourceExcerptSha256": "0748be4b6a098e84bfb6bdc8efdd7bf214c7ee46c57d73fb3e0b0ecd003312d6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Friday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Friday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "book"
+      ],
+      "questionPrompt": "• The tutor will lend Tom a useful {{30}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Nutrition Study Project",
+      "sourceExcerpt": "TUTOR: The final report must be handed in by Friday, so you've got a few days. Oh — and Tom, I'll lend you a book that covers survey design really well; come by my office and collect it.",
+      "sourceExcerptSha256": "0748be4b6a098e84bfb6bdc8efdd7bf214c7ee46c57d73fb3e0b0ecd003312d6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "book",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "book",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plates",
+        "plate"
+      ],
+      "questionPrompt": "• Most volcanoes form at the boundaries of tectonic {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Let's begin with formation. The Earth's outer shell is broken into enormous sections, and most volcanoes form at the boundaries of these tectonic plates, where they pull apart or push together. Deep underground, rock melts to form magma. When this molten rock finally reaches the surface, we no longer call it magma — it's known as lava.",
+      "sourceExcerptSha256": "ab2cc9aedbe4c5dee628ceddc08c8a0569d1b99017e13db2060a242d7f1f9877",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plates",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plates",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "plate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lava"
+      ],
+      "questionPrompt": "• Molten rock that reaches the surface is known as {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Let's begin with formation. The Earth's outer shell is broken into enormous sections, and most volcanoes form at the boundaries of these tectonic plates, where they pull apart or push together. Deep underground, rock melts to form magma. When this molten rock finally reaches the surface, we no longer call it magma — it's known as lava.",
+      "sourceExcerptSha256": "ab2cc9aedbe4c5dee628ceddc08c8a0569d1b99017e13db2060a242d7f1f9877",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lava",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lava",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "slopes",
+        "slope"
+      ],
+      "questionPrompt": "• Shield volcanoes are broad and low, with gentle {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Now, volcanoes are not all the same. Broadly, there are two main types. Shield volcanoes, like those in Hawaii, are built up from very runny lava that flows a long way before it cools. As a result, they are broad and low, with gentle slopes. Composite volcanoes, by contrast, are formed from thicker, stickier lava. They are tall and steep, and they tend to produce far more violent eruptions.",
+      "sourceExcerptSha256": "fa4451b9c8dc8d49c4b866aed23c52bedd67a614839501fa188348f2fe99f2c3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "slopes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "slopes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "slope",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "eruptions",
+        "eruption"
+      ],
+      "questionPrompt": "• Composite volcanoes produce far more violent {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Now, volcanoes are not all the same. Broadly, there are two main types. Shield volcanoes, like those in Hawaii, are built up from very runny lava that flows a long way before it cools. As a result, they are broad and low, with gentle slopes. Composite volcanoes, by contrast, are formed from thicker, stickier lava. They are tall and steep, and they tend to produce far more violent eruptions.",
+      "sourceExcerptSha256": "fa4451b9c8dc8d49c4b866aed23c52bedd67a614839501fa188348f2fe99f2c3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "eruptions",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "eruptions",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "eruption",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ash"
+      ],
+      "questionPrompt": "• Clouds of {{35}} can travel great distances and ground aircraft.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "That brings me to hazards. When a large volcano erupts, it can throw enormous clouds of ash high into the atmosphere. This ash can travel great distances on the wind, and it's a serious problem for aviation, since it can ground aircraft across whole continents. But the deadliest hazard of all is what's called a pyroclastic flow — a fast-moving avalanche of superheated gas and rock that races down the slopes, destroying everything in its path.",
+      "sourceExcerptSha256": "26c4c22fbe5b01df6153ea2261eb4e9c72055ba5d5d203a8a4cb395e1a78d3e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ash",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ash",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flow"
+      ],
+      "questionPrompt": "• The deadliest hazard is a pyroclastic {{36}} of hot gas and rock.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "That brings me to hazards. When a large volcano erupts, it can throw enormous clouds of ash high into the atmosphere. This ash can travel great distances on the wind, and it's a serious problem for aviation, since it can ground aircraft across whole continents. But the deadliest hazard of all is what's called a pyroclastic flow — a fast-moving avalanche of superheated gas and rock that races down the slopes, destroying everything in its path.",
+      "sourceExcerptSha256": "26c4c22fbe5b01df6153ea2261eb4e9c72055ba5d5d203a8a4cb395e1a78d3e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flow",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flow",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fertile"
+      ],
+      "questionPrompt": "• Volcanic regions often have very {{37}} soil for crops.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Despite these dangers, people continue to live near volcanoes, and there are good reasons why. For one thing, volcanic regions often have extremely fertile soil, which is excellent for growing crops. For another, the heat below the surface can be tapped to generate geothermal energy, providing clean electricity for nearby communities.",
+      "sourceExcerptSha256": "26e439affaae2c9b377a783fc7ecd09f6b68074ed8f95faf265ecc3fe8aad56b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fertile",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fertile",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "questionPrompt": "• The heat below the surface provides geothermal {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Despite these dangers, people continue to live near volcanoes, and there are good reasons why. For one thing, volcanic regions often have extremely fertile soil, which is excellent for growing crops. For another, the heat below the surface can be tapped to generate geothermal energy, providing clean electricity for nearby communities.",
+      "sourceExcerptSha256": "26e439affaae2c9b377a783fc7ecd09f6b68074ed8f95faf265ecc3fe8aad56b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "energy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "energy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "earthquakes",
+        "earthquake"
+      ],
+      "questionPrompt": "• Instruments record tiny {{39}} before an eruption.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Finally, a word on monitoring. Because eruptions are so dangerous, scientists watch active volcanoes closely. Sensitive instruments record tiny earthquakes beneath the ground, which often increase in the days before an eruption. By studying these signals, together with changes in the shape of the volcano, scientists can increasingly predict eruptions — and that early warning can save thousands of lives.",
+      "sourceExcerptSha256": "53c0465389fe1778eac87857f7dbeaf56fe3dc1e0783f6845537365ab3ca2849",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "earthquakes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "earthquakes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "earthquake",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "predict"
+      ],
+      "questionPrompt": "• Good monitoring allows scientists to {{40}} eruptions.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Volcanoes",
+      "sourceExcerpt": "Finally, a word on monitoring. Because eruptions are so dangerous, scientists watch active volcanoes closely. Sensitive instruments record tiny earthquakes beneath the ground, which often increase in the days before an eruption. By studying these signals, together with changes in the shape of the volcano, scientists can increasingly predict eruptions — and that early warning can save thousands of lives.",
+      "sourceExcerptSha256": "53c0465389fe1778eac87857f7dbeaf56fe3dc1e0783f6845537365ab3ca2849",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "predict",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "predict",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Smallpox has been completely eradicated thanks to vaccination.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "Vaccination is one of the most effective public health interventions in human history. Before its development, infectious diseases including smallpox, polio, measles, and diphtheria killed or disabled millions of people annually and were considered inescapable facts of life. Today, smallpox has been completely eradicated, polio survives in only a handful of countries, and childhood diseases that once swept through populations in devastating waves are largely preventable with a single injection. Protection operates at both individual and population levels. When enough people are immune, an infected person has fewer opportunities to pass a pathogen onward, indirectly protecting people who cannot receive a particular vaccine. Sustaining that barrier requires broad coverage because local gaps can still permit outbreaks.",
+      "sourceExcerptSha256": "6c08a2f4aa7258c6e03cbd3eaad2277991bf5d4ee368ff68ab2df42463949156",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: Variolation was first practised in the Ottoman Empire before spreading to China.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+      "sourceExcerptSha256": "f7fc6cca1cd4d0ea1e707d4925ce4a68a21b646a7823865f7778a094d4cf5e1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Lady Mary Wortley Montagu promoted variolation in England after observing it in Constantinople.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+      "sourceExcerptSha256": "f7fc6cca1cd4d0ea1e707d4925ce4a68a21b646a7823865f7778a094d4cf5e1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: The mortality rate from variolation was higher than from naturally acquired smallpox.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+      "sourceExcerptSha256": "f7fc6cca1cd4d0ea1e707d4925ce4a68a21b646a7823865f7778a094d4cf5e1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "5. {{5}}: James Phipps was Edward Jenner's own son.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+      "sourceExcerptSha256": "274e5a461862dff0bd89f887c405847f0e8cf2f2030c88677c065addee276818",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "6. {{6}}: The germ theory of disease had already been established when Jenner published his findings.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+      "sourceExcerptSha256": "274e5a461862dff0bd89f887c405847f0e8cf2f2030c88677c065addee276818",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Before the polio vaccine, hundreds of thousands of children were paralysed by the disease each year.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+      "sourceExcerptSha256": "f51c947b1253aa9f80b81d8881ad42d8413c514e75c102a5b55f7dc3ca21288f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vaccine"
+      ],
+      "questionPrompt": "8. Jenner (1796): Coined the word \"{{8}}\" from the Latin word for cow.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+      "sourceExcerptSha256": "274e5a461862dff0bd89f887c405847f0e8cf2f2030c88677c065addee276818",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vaccine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vaccine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "anthrax"
+      ],
+      "questionPrompt": "9. Pasteur: Developed vaccines against cholera, {{9}}, and rabies.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The late nineteenth and early twentieth centuries saw rapid expansion of vaccine development, driven by advances in bacteriology and virology pioneered by Louis Pasteur and Robert Koch. Pasteur developed vaccines against chicken cholera, anthrax, and rabies; Koch established the methodological framework for identifying disease-causing microorganisms. Once particular microbes could be linked to particular diseases, researchers could design and test preventive preparations more systematically. Production still required reliable methods for weakening or inactivating an organism, preserving the product, and ensuring that one batch behaved like the next. The introduction of vaccines against diphtheria, tetanus, and pertussis in the 1920s and 1930s dramatically reduced childhood mortality in industrialised countries.",
+      "sourceExcerptSha256": "b13e08ffe953ff2a870787bccad71930445b06f69127b5fa82648661fcccddeb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "anthrax",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "anthrax",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "disease-causing"
+      ],
+      "questionPrompt": "10. Koch: Established methods for identifying {{10}} microorganisms.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The late nineteenth and early twentieth centuries saw rapid expansion of vaccine development, driven by advances in bacteriology and virology pioneered by Louis Pasteur and Robert Koch. Pasteur developed vaccines against chicken cholera, anthrax, and rabies; Koch established the methodological framework for identifying disease-causing microorganisms. Once particular microbes could be linked to particular diseases, researchers could design and test preventive preparations more systematically. Production still required reliable methods for weakening or inactivating an organism, preserving the product, and ensuring that one batch behaved like the next. The introduction of vaccines against diphtheria, tetanus, and pertussis in the 1920s and 1930s dramatically reduced childhood mortality in industrialised countries.",
+      "sourceExcerptSha256": "b13e08ffe953ff2a870787bccad71930445b06f69127b5fa82648661fcccddeb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "disease-causing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "disease-causing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-table__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "polio"
+      ],
+      "questionPrompt": "11. Salk (1955): Developed a vaccine against {{11}}, reducing US cases by 90% within a decade.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+      "sourceExcerptSha256": "f51c947b1253aa9f80b81d8881ad42d8413c514e75c102a5b55f7dc3ca21288f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "polio",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "polio",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-table__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "polio"
+      ],
+      "questionPrompt": "12. 1988 global campaign: Reduced annual {{12}} cases from 350,000 to fewer than fifty.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+      "sourceExcerptSha256": "f51c947b1253aa9f80b81d8881ad42d8413c514e75c102a5b55f7dc3ca21288f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "polio",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "polio",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-table__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "autism"
+      ],
+      "questionPrompt": "13. Late 1990s: A fraudulent study claimed a link between the MMR vaccine and {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Vaccination",
+      "sourceExcerpt": "Vaccination has not been without controversy. In the late 1990s, a study published in a major medical journal claimed a link between the measles-mumps-rubella vaccine and autism. The study was subsequently found to be fraudulent; its lead author lost his medical licence and the paper was retracted. However, the damage to public confidence in vaccination proved persistent. Vaccine hesitancy—reluctance or refusal to vaccinate—has been identified by the World Health Organization as one of the top ten threats to global health, contributing to resurgences of measles in countries that had previously eliminated the disease.",
+      "sourceExcerptSha256": "42f9516acb47f4025fba424ff3ccb740708c3a9241944fed4eaa8457e44f5227",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "autism",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "autism",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A description of mineral deposits found on the ocean floor and their commercial value",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+      "sourceExcerptSha256": "7f67aa2b26ef929d1912b43ff303db6953bbf9ee5fcbe796af6b459eab5a5e6f",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "Details of vehicles that can operate without human pilots during deep-sea surveys",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "E. Remote sensing technologies have transformed the pace and scope of deep-sea exploration. Autonomous Underwater Vehicles (AUVs) can be programmed to follow pre-set survey routes, collecting bathymetric data, water samples, and high-resolution imagery for months at a time without a surface crew. Remotely Operated Vehicles (ROVs), controlled in real time by operators on a surface ship, allow for more flexible investigation and the collection of biological specimens. The two systems serve complementary purposes: an AUV can cover a planned area efficiently, while an ROV lets scientists respond immediately when a camera reveals an unexpected feature. Both reduce the need to place people inside a pressure-resistant vehicle. Together, these technologies have enabled the mapping and characterisation of thousands of previously unknown seamounts, cold-water coral ecosystems, and deep-water fish populations.",
+      "sourceExcerptSha256": "97ed5031a5d6281f2574b9cb38a0c6f6f5daf243b2f8b0170423fceed1f7320d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A reference to the possibility of life on moons of other planets",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+      "sourceExcerptSha256": "3f74c19e4d335a48b0a5974570518799e41f126a84fdb0c6e53cee319e90ed9a",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "A comparison between ocean floor mapping and data available for another planet",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "A. The deep ocean—generally defined as water below 200 metres in depth—covers more than half of the Earth's surface and represents the planet's largest habitat. Yet it remains the least explored environment on Earth. As of 2024, less than 25 percent of the ocean floor has been mapped to a resolution comparable to what is available for the surface of Mars. Mapping and direct observation are different achievements: sonar can outline ridges and trenches from a vessel, while identifying organisms or sediments requires cameras, sensors, or samples close to the seabed. A mapped area may therefore remain biologically almost unknown. The technological and logistical challenges of deep-sea exploration are immense, but so are the potential rewards: in biodiversity, in mineral resources, and in understanding the fundamental processes that regulate Earth's climate.",
+      "sourceExcerptSha256": "9fbeee4cb95598801cf80778421a8493dffb27342898a611779b952067e0caa3",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of why pressure makes deep-sea exploration technically difficult",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "B. Pressure is the defining physical challenge of deep-sea environments. At the deepest point of the ocean—the Challenger Deep in the Mariana Trench, approximately 11,000 metres below the surface—the water pressure reaches about 1,086 bar, or roughly 1,086 times the pressure at sea level. This pressure would crush most conventional equipment and is lethal to organisms adapted to surface conditions. A sphere distributes force more evenly than a flat-sided chamber, reducing points where the hull might fail. Seals, windows, cables, and electronic housings must tolerate the same pressure difference, so the strength of the main vessel alone is insufficient. Exploring such environments requires specially engineered submersibles with titanium or glass spherical hulls capable of withstanding these forces, and the cost of constructing and operating such vehicles is prohibitive for most research institutions.",
+      "sourceExcerptSha256": "6e4f04b657ece46e85d4cebf2286298a44a467149efc8a738a43815a804774ac",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "Details of a new international agreement on ocean governance",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "F. International governance of the deep ocean remains incomplete. The high seas—oceans beyond national jurisdiction—cover approximately 43 percent of the Earth's surface and are governed by a fragmented framework of treaties. In 2023, after nearly two decades of negotiation, the United Nations adopted a Treaty on the High Seas, establishing for the first time a legal mechanism for creating marine protected areas in international waters. Conservationists welcomed the treaty as a historic step, though its effectiveness will ultimately depend on the political will of member states to ratify and enforce its provisions.",
+      "sourceExcerptSha256": "c67e6e43d61103dc27123242741d794c366a4aeb64782b3a62db49e7ecae816e",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "An account of an ecosystem that does not depend on sunlight for energy",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+      "sourceExcerptSha256": "3f74c19e4d335a48b0a5974570518799e41f126a84fdb0c6e53cee319e90ed9a",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sent__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "1,086",
+        "1086"
+      ],
+      "questionPrompt": "21. At the Challenger Deep, water pressure reaches approximately {{21}} bar.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "B. Pressure is the defining physical challenge of deep-sea environments. At the deepest point of the ocean—the Challenger Deep in the Mariana Trench, approximately 11,000 metres below the surface—the water pressure reaches about 1,086 bar, or roughly 1,086 times the pressure at sea level. This pressure would crush most conventional equipment and is lethal to organisms adapted to surface conditions. A sphere distributes force more evenly than a flat-sided chamber, reducing points where the hull might fail. Seals, windows, cables, and electronic housings must tolerate the same pressure difference, so the strength of the main vessel alone is insufficient. Exploring such environments requires specially engineered submersibles with titanium or glass spherical hulls capable of withstanding these forces, and the cost of constructing and operating such vehicles is prohibitive for most research institutions.",
+      "sourceExcerptSha256": "6e4f04b657ece46e85d4cebf2286298a44a467149efc8a738a43815a804774ac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "1,086",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "1,086",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "1086",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sent__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chemosynthesis"
+      ],
+      "questionPrompt": "22. Deep-sea ecosystems at hydrothermal vents are sustained by {{22}}, not photosynthesis.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+      "sourceExcerptSha256": "3f74c19e4d335a48b0a5974570518799e41f126a84fdb0c6e53cee319e90ed9a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chemosynthesis",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chemosynthesis",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sent__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "copper"
+      ],
+      "questionPrompt": "23. Polymetallic nodules contain metals such as manganese, cobalt, nickel, and {{23}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+      "sourceExcerptSha256": "7f67aa2b26ef929d1912b43ff303db6953bbf9ee5fcbe796af6b459eab5a5e6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "copper",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "copper",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sent__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "centuries"
+      ],
+      "questionPrompt": "24. Scientists warn that abyssal plain ecosystems may take {{24}} to recover from mining disturbance.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+      "sourceExcerptSha256": "7f67aa2b26ef929d1912b43ff303db6953bbf9ee5fcbe796af6b459eab5a5e6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "centuries",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "centuries",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sent__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "months"
+      ],
+      "questionPrompt": "25. AUVs collect data during pre-set surveys that can last for {{25}} without a surface crew.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "E. Remote sensing technologies have transformed the pace and scope of deep-sea exploration. Autonomous Underwater Vehicles (AUVs) can be programmed to follow pre-set survey routes, collecting bathymetric data, water samples, and high-resolution imagery for months at a time without a surface crew. Remotely Operated Vehicles (ROVs), controlled in real time by operators on a surface ship, allow for more flexible investigation and the collection of biological specimens. The two systems serve complementary purposes: an AUV can cover a planned area efficiently, while an ROV lets scientists respond immediately when a camera reveals an unexpected feature. Both reduce the need to place people inside a pressure-resistant vehicle. Together, these technologies have enabled the mapping and characterisation of thousands of previously unknown seamounts, cold-water coral ecosystems, and deep-water fish populations.",
+      "sourceExcerptSha256": "97ed5031a5d6281f2574b9cb38a0c6f6f5daf243b2f8b0170423fceed1f7320d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "months",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "months",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sent__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "enforce"
+      ],
+      "questionPrompt": "26. The 2023 UN treaty was welcomed as a historic step, but its success depends on member states' willingness to {{26}} its provisions.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Deep-Sea Exploration",
+      "sourceExcerpt": "F. International governance of the deep ocean remains incomplete. The high seas—oceans beyond national jurisdiction—cover approximately 43 percent of the Earth's surface and are governed by a fragmented framework of treaties. In 2023, after nearly two decades of negotiation, the United Nations adopted a Treaty on the High Seas, establishing for the first time a legal mechanism for creating marine protected areas in international waters. Conservationists welcomed the treaty as a historic step, though its effectiveness will ultimately depend on the political will of member states to ratify and enforce its provisions.",
+      "sourceExcerptSha256": "c67e6e43d61103dc27123242741d794c366a4aeb64782b3a62db49e7ecae816e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "enforce",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "enforce",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the passage say about the Luddites?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+      "sourceExcerptSha256": "8bbfcc937327ddfc400d201a0cf284b3b78bb50c5e498b9c5c432dec2fe9afa2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "They correctly predicted the elimination of their jobs but were wrong about broader economic consequences."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "They were correct that mechanisation would both destroy their jobs and harm the broader economy.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "They were wrong that mechanisation would affect their specific occupations.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "They successfully prevented the mechanisation of the textile industry.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what distinguishes AI from previous technologies, according to sceptics?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+      "sourceExcerptSha256": "8bbfcc937327ddfc400d201a0cf284b3b78bb50c5e498b9c5c432dec2fe9afa2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "It can replicate both manual and cognitive work, threatening a wider range of jobs simultaneously."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It can automate manual labour more efficiently than earlier machines.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It has already destroyed more jobs than any previous technology in history.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It primarily affects low-skill workers rather than professionals.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the \"hourglass economy\" described by Autor et al. refer to?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+      "sourceExcerptSha256": "9126bc8aeaa28f1060c47292b0adf91e97486c9945db0073436f995319970d60",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "A polarised labour market where middle-skill jobs decline while demand grows at both extremes."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "An economy in which both high-skill and low-skill jobs are shrinking simultaneously.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "An economy that cycles rapidly between growth and recession.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "A model in which middle-income earners have more job security than those at either extreme.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What criticism of universal basic income is mentioned in the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+      "sourceExcerptSha256": "20e0d514c81422ac0fae6f599ccafd26485da5b14b10ea79105e0cc77f65b1a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "It may not be financially sustainable and could reduce incentives to work."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It has been shown to significantly reduce motivation to work in pilot programmes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "It primarily benefits high-income individuals who do not need additional support.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It has been rejected by all Nordic countries as impractical.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "31. {{31}}: Routine cognitive tasks have been more resistant to automation than non-routine physical tasks.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+      "sourceExcerptSha256": "9126bc8aeaa28f1060c47292b0adf91e97486c9945db0073436f995319970d60",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "32. {{32}}: Generative AI since 2020 has primarily affected production workers in manufacturing.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The rise of generative artificial intelligence since 2020 has added a new dimension to this debate. Large language models and image-generation systems can now produce text, code, and creative content of professional quality in seconds. Unlike the automation of the 1980s, which primarily affected production workers, generative AI threatens professions that have historically been insulated from technological displacement: lawyers, accountants, journalists, radiologists, and software developers. Exposure does not necessarily mean that an entire profession disappears. A system may draft routine material while a worker verifies facts, handles unusual cases, or remains accountable for the result, changing the composition and required skill of the job. Whether this represents the beginning of a genuinely new economic era or simply an accelerated version of previous technological transitions remains vigorously contested.",
+      "sourceExcerptSha256": "db4cef1c7d2f42fbf5a18c409aa7f284938524a4d78bf8b0920948a26c6e38a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: Nordic countries have invested in labour market policies that help workers transition between sectors.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+      "sourceExcerptSha256": "20e0d514c81422ac0fae6f599ccafd26485da5b14b10ea79105e0cc77f65b1a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "34. {{34}}: Universal basic income has been successfully implemented in all Nordic countries.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+      "sourceExcerptSha256": "20e0d514c81422ac0fae6f599ccafd26485da5b14b10ea79105e0cc77f65b1a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: Educational reformers argue that developing adaptability is more valuable than fixed knowledge.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+      "sourceExcerptSha256": "c48de6a15b27acb85161ae9cec17499698ec0dde916c3ff3cc246389a5bb515a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: The ultimate effect of technological change on employment is presented as uncertain.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+      "sourceExcerptSha256": "8bbfcc937327ddfc400d201a0cf284b3b78bb50c5e498b9c5c432dec2fe9afa2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "creative"
+      ],
+      "questionPrompt": "37. Jobs involving {{37}} problem-solving and social intelligence have proved more resilient to automation.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+      "sourceExcerptSha256": "9126bc8aeaa28f1060c47292b0adf91e97486c9945db0073436f995319970d60",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "creative",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "creative",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "wage"
+      ],
+      "questionPrompt": "38. Nordic countries use active labour market policies including retraining and {{38}} subsidies.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+      "sourceExcerptSha256": "20e0d514c81422ac0fae6f599ccafd26485da5b14b10ea79105e0cc77f65b1a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "wage",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "wage",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "learning"
+      ],
+      "questionPrompt": "39. Reformers argue that {{39}} to learn—developing metacognitive skills—is more valuable than any fixed knowledge.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+      "sourceExcerptSha256": "c48de6a15b27acb85161ae9cec17499698ec0dde916c3ff3cc246389a5bb515a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "learning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "learning",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rigorous"
+      ],
+      "questionPrompt": "40. Sceptics warn that enthusiasm for new skills has sometimes justified abandoning {{40}} instruction.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Work",
+      "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+      "sourceExcerptSha256": "c48de6a15b27acb85161ae9cec17499698ec0dde916c3ff3cc246389a5bb515a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rigorous",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rigorous",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [
+    {
+      "skill": "listening",
+      "question": 15,
+      "before": [
+        "second",
+        "second floor"
+      ],
+      "after": [
+        "second"
+      ],
+      "reason": "Removed a redundant accepted variant that would render as second floor floor."
+    }
+  ],
+  "reviewSha256": "5a1b93790782023d25f4dedfd9f260630268be16ef9d2311f64a1c6c63259f51"
+}

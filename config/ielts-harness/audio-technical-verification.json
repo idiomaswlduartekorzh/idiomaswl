@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "reviewedAt": "2026-09-12",
+  "reviewer": {
+    "kind": "qa-agent",
+    "id": "codex-media-integrity-audit"
+  },
+  "releaseAuthorized": false,
+  "sets": [
+    {
+      "set": 1,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-1.mp3",
+      "audioSha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f",
+      "bytes": 11038137,
+      "seconds": 1379.73551,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 2,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-2.mp3",
+      "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 3,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-3.mp3",
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 4,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-4.mp3",
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 5,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-5.mp3",
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 6,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-6.mp3",
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "bytes": 14073147,
+      "seconds": 1759.111837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 7,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-7.mp3",
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "bytes": 14296546,
+      "seconds": 1787.036735,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 8,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-8.mp3",
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 9,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-9.mp3",
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+      "bytes": 11520461,
+      "seconds": 1440.026122,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 10,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-10.mp3",
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 11,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-11.mp3",
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 12,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-12.mp3",
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 13,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-13.mp3",
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 14,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-14.mp3",
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 15,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-15.mp3",
+      "audioSha256": "c134adcd57d0e4bbb043695e9d5eedaf96ec5d0214117c06d66a8535ec1c013c",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 16,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-16.mp3",
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 17,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-17.mp3",
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 18,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-18.mp3",
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 19,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-19.mp3",
+      "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    },
+    {
+      "set": 20,
+      "status": "PASS",
+      "audioUrl": "/audio/ielts/ielts-listening-set-20.mp3",
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+      "bytes": 13960507,
+      "seconds": 1745.031837,
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": 44100,
+          "channels": 1
+        }
+      ],
+      "probe": "afinfo",
+      "checks": {
+        "publicFileExists": true,
+        "decodePassed": true,
+        "exactlyOneAudioStream": true,
+        "plausibleExamDuration": true,
+        "nontrivialFileSize": true,
+        "publishedHashMatches": true
+      }
+    }
+  ],
+  "reportSha256": "6a41847d7fbce3e950599b6d00981ff3c482549744c97dbfa67022a0b94bb6d6"
+}

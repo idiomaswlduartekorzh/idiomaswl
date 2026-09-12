@@ -3976,6 +3976,20 @@ button {
 .ielts-skill-tab:hover { color: var(--fg); }
 .ielts-skill-tab--active { color: var(--accent); border-bottom-color: var(--accent); }
 
+@media (max-width: 600px) {
+  .ielts-skill-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+  .ielts-skill-tab {
+    justify-content: center;
+    min-width: 0;
+    padding: 0.7rem 0.35rem;
+    margin-bottom: 0;
+  }
+}
+
 /* Coming-soon tab state */
 .ielts-skill-tab--coming-soon {
   opacity: 0.55;

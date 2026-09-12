@@ -1,0 +1,3548 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 20,
+  "mockId": "set-20",
+  "contentVersionAtReview": "ielts-set-20-v3",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "aa53e0533afeadbb1facb0cf6460b6d6582a25f06109b88622d494f56ebd91dc",
+    "listeningMaterialSha256": "c11d7599342f3b8f3b0173144880547ca362c904b5fb4cd612de066f1f38d28c",
+    "readingMaterialSha256": "c302e9667fd79defa36a03b3e8af0bb80bccd4a421a69f7209e1a515751c2077",
+    "objectiveMaterialSha256": "b6c59a883fa4a536e2791ddb3514df9b7e9e2d1f937ccb99480605db23543092"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "economics"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "third",
+        "3rd"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "6",
+        "six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "projector"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "Thursday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "card"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "6",
+        "six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "whiteboard"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "fourth",
+        "4th",
+        "4"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "projector"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "B",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the steam-train hall",
+        "B": "B. the tram gallery",
+        "C": "C. the bicycle collection",
+        "D": "D. the aircraft gallery",
+        "E": "E. the motorcycle gallery"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "four thirty",
+        "4.30",
+        "4:30"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "model railway"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "gift shop",
+        "shop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "worksheet"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "simulator"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "cloakroom"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "questionnaire"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "sugary drinks",
+        "diet in general",
+        "fast food"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the whole campus",
+        "first-year students",
+        "postgraduate students"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the health risks",
+        "the money students can save",
+        "the environmental impact"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "posters",
+        "email",
+        "social media"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "social media shares",
+        "staff interviews",
+        "a before-and-after survey"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "script"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "ethics"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "equipment"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "folder"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "results"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "cacao",
+        "cocoa"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "currency"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "Europe"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "sugar"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "chemist"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "fat"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "butter"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "milk"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "Africa"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "deforestation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "stewardship"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "last-resort"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "pipeline"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "reduce"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "environmental"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "priority"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "victory"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "organoponico"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "heat island"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "depression",
+        "anxiety",
+        "cortisol"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "contamination"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "capital"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Government subsidies have made EVs significantly cheaper than conventional vehicles everywhere.",
+        "Falling battery costs together with supportive government policy.",
+        "The superior performance and range of electric vehicles compared to petrol cars.",
+        "International agreements requiring car manufacturers to phase out combustion engines."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It is negligible compared to the lifetime savings from zero tailpipe emissions.",
+        "EV manufacturing produces more carbon than conventional vehicle manufacturing, mainly because of battery production.",
+        "The carbon debt of EV manufacturing is higher in countries with renewable electricity grids.",
+        "The carbon debt means that EVs never achieve a lower carbon footprint than petrol cars."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "They have been successfully deployed at scale in most major cities by 2024.",
+        "They have proved much more difficult to deploy than early optimists predicted.",
+        "Most investment in AVs has come from public transport authorities rather than private companies.",
+        "They are expected to be widely available within the next two to three years."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "EVs are too expensive for high-income households in most countries.",
+        "Public transport improvements have benefited rural areas more than cities.",
+        "The benefits of new mobility technologies have disproportionately gone to wealthier, urban households.",
+        "Lower-income countries are choosing to build high-speed rail instead of expanding road networks."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "modal shift"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "carbon"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "controlled"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "mobility"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "economics"
+      ],
+      "questionPrompt": "• Studying for a degree in {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "STUDENT: I'm doing a degree in economics.",
+      "sourceExcerptSha256": "503a883a49fce25cbd63c8585b6b0b39d672caec219e0d4d26019eb10747d56d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "economics",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "economics",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "third",
+        "3rd"
+      ],
+      "questionPrompt": "• Prefers a room on the {{2}} floor (not the second)",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: They certainly are, especially at this time of year. Now, which floor would you like? We have rooms on the second and third floors.",
+      "sourceExcerptSha256": "630f17f54faafc1e13ff1093459dfbbdb5f5bab0e12691e744a682e7a9a40d14",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "third",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "third",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "3rd",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “third”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "questionPrompt": "• The room is for {{3}} people",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "STUDENT: There'll be six of us altogether.",
+      "sourceExcerptSha256": "2e5f523ac4c1feaa9fd04503875d993583c4dd5d1e1c3e02d7bb9ddcd4ccbb11",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “six”."
+        },
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "projector"
+      ],
+      "questionPrompt": "• Wants a room with a {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: Fine. Do you need any particular equipment? Most rooms have a whiteboard, and some also have a projector.",
+      "sourceExcerptSha256": "e50b99c3ced5bc78e1a60095b0c501c57771270feebe233e4865e30bcf3e39fc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "projector",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "projector",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Thursday"
+      ],
+      "questionPrompt": "• Booking is for {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "STUDENT: Thursday, if that's free.",
+      "sourceExcerptSha256": "b48c17a4030c92e6073782c374d5b6218a1e4e2e160e6e0a1d333aa3517e72ac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Thursday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Thursday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "card"
+      ],
+      "questionPrompt": "• Must bring student {{6}} to collect the key",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: Thursday's fine. Just remember to bring your student card, as you'll need it to collect the key.",
+      "sourceExcerptSha256": "be32c29b694819413ce70ab1c372d6fc5994a3f47d279c7528e543ecb4bc41c4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "card",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "card",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "questionPrompt": "Room A | third | {{7}} | £3 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "STUDENT: There'll be six of us altogether.",
+      "sourceExcerptSha256": "2e5f523ac4c1feaa9fd04503875d993583c4dd5d1e1c3e02d7bb9ddcd4ccbb11",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “six”."
+        },
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "whiteboard"
+      ],
+      "questionPrompt": "Room A | third | {{7}} | £3 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: Fine. Do you need any particular equipment? Most rooms have a whiteboard, and some also have a projector.",
+      "sourceExcerptSha256": "e50b99c3ced5bc78e1a60095b0c501c57771270feebe233e4865e30bcf3e39fc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "whiteboard",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "whiteboard",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fourth",
+        "4th",
+        "4"
+      ],
+      "questionPrompt": "Room B | {{9}} | 10 | £5 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: Room B is on the fourth floor. It seats ten, costs five pounds an hour, and includes a projector, which is perfect for your presentation.",
+      "sourceExcerptSha256": "8853233fcfdf61fb85c1836901ec9a0222e8aad7a9b27744872a3c61d4fff334",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fourth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fourth",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "4th",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “fourth”."
+        },
+        {
+          "answer": "4",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “fourth”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "projector"
+      ],
+      "questionPrompt": "Room B | {{9}} | 10 | £5 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reserving a Study Room",
+      "sourceExcerpt": "LIBRARIAN: Fine. Do you need any particular equipment? Most rooms have a whiteboard, and some also have a projector.",
+      "sourceExcerptSha256": "e50b99c3ced5bc78e1a60095b0c501c57771270feebe233e4865e30bcf3e39fc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "projector",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "projector",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "D"
+      ],
+      "questionPrompt": "Which TWO galleries have recently been renovated?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "Let me start with our recent improvements. Over the winter we completely renovated two of our galleries. The tram gallery has been redesigned with interactive displays, and the aircraft gallery now has a full-size cockpit that you can actually sit in. The steam-train hall, the bicycle collection and the motorcycle gallery are unchanged this year, though they're all still well worth a visit.",
+      "sourceExcerptSha256": "38b26c3c910b9c339a450d170447943cbcdbcc2ab365683a804fe83991fd39ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "the tram gallery"
+        },
+        {
+          "key": "D",
+          "text": "the aircraft gallery"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "the steam-train hall",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the bicycle collection",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the motorcycle gallery",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "four thirty",
+        "4.30",
+        "4:30"
+      ],
+      "questionPrompt": "• Last entry to the exhibits is at {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at four thirty, so please plan your time. Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms. If you'd like something to eat, the café is on the ground floor, right next to the gift shop.",
+      "sourceExcerptSha256": "e60d152f9fb14ca0d5a83ff0faae3eb66524b44f29731f0449df1dcd81b309c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "four thirty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "four thirty",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "4.30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “four thirty”."
+        },
+        {
+          "answer": "4:30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “four thirty”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "model railway"
+      ],
+      "questionPrompt": "• Photography is not allowed in the {{14}} room.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at four thirty, so please plan your time. Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms. If you'd like something to eat, the café is on the ground floor, right next to the gift shop.",
+      "sourceExcerptSha256": "e60d152f9fb14ca0d5a83ff0faae3eb66524b44f29731f0449df1dcd81b309c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "model railway",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "model railway",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "gift shop",
+        "shop"
+      ],
+      "questionPrompt": "• The café is next to the {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at four thirty, so please plan your time. Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms. If you'd like something to eat, the café is on the ground floor, right next to the gift shop.",
+      "sourceExcerptSha256": "e60d152f9fb14ca0d5a83ff0faae3eb66524b44f29731f0449df1dcd81b309c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "gift shop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "gift shop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "shop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "worksheet"
+      ],
+      "questionPrompt": "• Pick up a treasure-hunt {{16}} from the information desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "For families, we run a treasure hunt every afternoon; just pick up a worksheet from the information desk. Children particularly enjoy the driving simulator, though I should mention there's a small extra charge of two pounds for that.",
+      "sourceExcerptSha256": "9f3c2b00e69b55e48d8e6e6757c994d1a168e63cf2901f41e437931c07547b61",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "worksheet",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "worksheet",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "simulator"
+      ],
+      "questionPrompt": "• There is a £2 charge for the driving {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "For families, we run a treasure hunt every afternoon; just pick up a worksheet from the information desk. Children particularly enjoy the driving simulator, though I should mention there's a small extra charge of two pounds for that.",
+      "sourceExcerptSha256": "9f3c2b00e69b55e48d8e6e6757c994d1a168e63cf2901f41e437931c07547b61",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "simulator",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "simulator",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cloakroom"
+      ],
+      "questionPrompt": "• Large bags must be left in the {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "A few quick reminders. Large bags must be left in the cloakroom near the main entrance. Our guided tours leave every hour from the central hall, and each one lasts about forty minutes. And if you happen to get lost, look for a member of staff in a red jacket — they'll be glad to point you in the right direction.",
+      "sourceExcerptSha256": "50cd070593c63e2f26da5d9d0182ae06e33427cba960c40ddc139f189fdd5356",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cloakroom",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cloakroom",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "questionPrompt": "• Guided tours last about {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "A few quick reminders. Large bags must be left in the cloakroom near the main entrance. Our guided tours leave every hour from the central hall, and each one lasts about forty minutes. And if you happen to get lost, look for a member of staff in a red jacket — they'll be glad to point you in the right direction.",
+      "sourceExcerptSha256": "50cd070593c63e2f26da5d9d0182ae06e33427cba960c40ddc139f189fdd5356",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "forty minutes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "forty minutes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "40 minutes",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “forty minutes”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "questionnaire"
+      ],
+      "questionPrompt": "• Visitors are asked to complete a {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Transport Museum Guide",
+      "sourceExcerpt": "Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard. And on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve. Right — enjoy the museum.",
+      "sourceExcerptSha256": "2e84e59a7fa7e80a446b90e42c739802798d304b68fcd229a2f32a05388c1fc1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "questionnaire",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "questionnaire",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The students decided to focus their campaign on",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "PRIYA: We decided to concentrate on sugary drinks specifically, rather than diet in general — it felt far more manageable.",
+      "sourceExcerptSha256": "bff40b213cc63b43598a8489775b958df33adcb6b813a1df121569607af1f55f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "sugary drinks"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "diet in general",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "fast food",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Their target audience will be",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "SAM: We were going to aim at the whole campus, but in the end we've decided to target first-year students, since their habits are still forming.",
+      "sourceExcerptSha256": "11ea52517a4b3f32f6e6f4beaff28255daedbe9fcc813446559fa236eddb81a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "first-year students"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the whole campus",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "postgraduate students",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Their main message will emphasise",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "PRIYA: At first we thought we'd emphasise the health risks, but the research suggests that frightening people rarely changes behaviour. So we'll stress the money students could save instead.",
+      "sourceExcerptSha256": "6df833bf96381518f338f4b25029a4a8379324edc4083f77a22031920031a3e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the money students can save"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the health risks",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "the environmental impact",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "They will mainly reach students through",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: Yes, the cost angle is often more persuasive. How will you actually reach students?",
+      "sourceExcerptSha256": "4bba651e591f2527011882e79e97392498751f63edebf15ad45715d9ef949506",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "social media"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "posters",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "email",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "They will measure the campaign's success using",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+      "sourceExcerptSha256": "3b0eebcf4b5eea59c5a107006af6d2c87cb4490f3cb47dce6bde4884f1aaa628",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "a before-and-after survey"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "social media shares",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "staff interviews",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "script"
+      ],
+      "questionPrompt": "• Do not start filming until a clear {{26}} has been written.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+      "sourceExcerptSha256": "3b0eebcf4b5eea59c5a107006af6d2c87cb4490f3cb47dce6bde4884f1aaa628",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "script",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "script",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ethics"
+      ],
+      "questionPrompt": "• Approval is needed from the {{27}} committee before collecting data.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+      "sourceExcerptSha256": "3b0eebcf4b5eea59c5a107006af6d2c87cb4490f3cb47dce6bde4884f1aaa628",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ethics",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ethics",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "equipment"
+      ],
+      "questionPrompt": "• Book the recording {{28}} early.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+      "sourceExcerptSha256": "3b0eebcf4b5eea59c5a107006af6d2c87cb4490f3cb47dce6bde4884f1aaa628",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "equipment",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "equipment",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "folder"
+      ],
+      "questionPrompt": "• Keep a copy of everything in a shared {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Finally, compare the survey results to judge the campaign's success.",
+      "sourceExcerptSha256": "3b0eebcf4b5eea59c5a107006af6d2c87cb4490f3cb47dce6bde4884f1aaa628",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "folder",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "folder",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "results"
+      ],
+      "questionPrompt": "• Success will be judged by comparing the survey {{30}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Public Health Campaign Plan",
+      "sourceExcerpt": "PRIYA: We'll run a survey before and after the campaign, and then compare the results.",
+      "sourceExcerptSha256": "28af670bb5517cdaacdc24aefb46199b28313a0152c80e55bebf0ffe567fc044",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "results",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "results",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cacao",
+        "cocoa"
+      ],
+      "questionPrompt": "• Chocolate comes from the seeds of the {{31}} tree.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Chocolate comes from the seeds of the cacao tree, which grows in the tropical regions of Central and South America. The first people to use it were the ancient Olmec, but it was the Maya and later the Aztecs who truly valued it. They ground the roasted seeds and mixed them with water to make a bitter drink. Interestingly, the seeds were also used as a form of currency — you could actually buy everyday goods with cacao beans.",
+      "sourceExcerptSha256": "c0034c3c3f6df246105b3852e57e36fb6a839cd7c129bbb7a9bc2a1e28b3ce51",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cacao",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cacao",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "cocoa",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “cacao”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "currency"
+      ],
+      "questionPrompt": "• The seeds were also used as a form of {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Chocolate comes from the seeds of the cacao tree, which grows in the tropical regions of Central and South America. The first people to use it were the ancient Olmec, but it was the Maya and later the Aztecs who truly valued it. They ground the roasted seeds and mixed them with water to make a bitter drink. Interestingly, the seeds were also used as a form of currency — you could actually buy everyday goods with cacao beans.",
+      "sourceExcerptSha256": "c0034c3c3f6df246105b3852e57e36fb6a839cd7c129bbb7a9bc2a1e28b3ce51",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "currency",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "currency",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Europe"
+      ],
+      "questionPrompt": "• Spanish explorers carried chocolate back to {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "When Spanish explorers reached the Americas in the sixteenth century, they carried chocolate back to Europe. There, people added sugar to the drink to make it sweeter, and it quickly became a fashionable luxury among the wealthy. For a long time chocolate stayed expensive, because processing the beans by hand was extremely slow.",
+      "sourceExcerptSha256": "aff829c7758c708437661b1d7e7d2719602a53911088873be0904baed292d27c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Europe",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Europe",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sugar"
+      ],
+      "questionPrompt": "• People added {{34}} to make the drink sweeter.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "When Spanish explorers reached the Americas in the sixteenth century, they carried chocolate back to Europe. There, people added sugar to the drink to make it sweeter, and it quickly became a fashionable luxury among the wealthy. For a long time chocolate stayed expensive, because processing the beans by hand was extremely slow.",
+      "sourceExcerptSha256": "aff829c7758c708437661b1d7e7d2719602a53911088873be0904baed292d27c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sugar",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sugar",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chemist"
+      ],
+      "questionPrompt": "• In 1828 a Dutch {{35}} invented a press.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Everything changed during the Industrial Revolution. New machinery made it possible to produce chocolate on a large scale, and prices began to fall. A major breakthrough came in 1828, when a Dutch chemist invented a press that removed much of the fat, leaving a smooth powder that was far easier to use.",
+      "sourceExcerptSha256": "e046b4e3518f47a6a750a05cb5cb32b437f5c40bb0d2ab5c7ae9ae5aa766e094",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chemist",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chemist",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fat"
+      ],
+      "questionPrompt": "• The press removed much of the {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Everything changed during the Industrial Revolution. New machinery made it possible to produce chocolate on a large scale, and prices began to fall. A major breakthrough came in 1828, when a Dutch chemist invented a press that removed much of the fat, leaving a smooth powder that was far easier to use.",
+      "sourceExcerptSha256": "e046b4e3518f47a6a750a05cb5cb32b437f5c40bb0d2ab5c7ae9ae5aa766e094",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fat",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fat",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "butter"
+      ],
+      "questionPrompt": "• Adding extra cocoa {{37}} produced a bar that melts in the mouth.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "The solid chocolate bar we know today appeared a few decades later. Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth. Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children.",
+      "sourceExcerptSha256": "16afba4937d675950b90def1d9512398dd47ae6db62cf654ced0153883f4bae5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "butter",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "butter",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "milk"
+      ],
+      "questionPrompt": "• The addition of {{38}} created milk chocolate.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "The solid chocolate bar we know today appeared a few decades later. Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth. Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children.",
+      "sourceExcerptSha256": "16afba4937d675950b90def1d9512398dd47ae6db62cf654ced0153883f4bae5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "milk",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "milk",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Africa"
+      ],
+      "questionPrompt": "• Most cacao is now grown in West {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Today chocolate is a global industry worth billions. However, it faces serious challenges. Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop. There are also environmental concerns, since expanding plantations can lead to deforestation. For that reason, many companies now promote products certified as sustainable. So next time you eat a chocolate bar, remember its remarkable journey through history.",
+      "sourceExcerptSha256": "4bb0fcd9751247dca47e04d594cc26a6c69b673a96398e1ed677cf71da302236",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Africa",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Africa",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "deforestation"
+      ],
+      "questionPrompt": "• Expanding plantations can lead to {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Chocolate",
+      "sourceExcerpt": "Today chocolate is a global industry worth billions. However, it faces serious challenges. Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop. There are also environmental concerns, since expanding plantations can lead to deforestation. For that reason, many companies now promote products certified as sustainable. So next time you eat a chocolate bar, remember its remarkable journey through history.",
+      "sourceExcerptSha256": "4bb0fcd9751247dca47e04d594cc26a6c69b673a96398e1ed677cf71da302236",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "deforestation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "deforestation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Alexander Fleming discovered penicillin by observing the bacteria-killing properties of a mould in 1928.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Antibiotics—medicines that kill or inhibit bacteria—are among the most transformative discoveries in the history of medicine. Since Alexander Fleming observed the bacteria-killing properties of the Penicillium mould in 1928, these drugs have made previously fatal infections treatable and have supported surgical procedures, organ transplants, and cancer chemotherapy that would be far more dangerous without effective infection control. Today, that capacity is under threat from antimicrobial resistance (AMR). The broader term includes resistance in bacteria, viruses, fungi, and parasites, while antibiotic resistance refers specifically to bacteria. Resistance is a natural biological process, but the speed at which it emerges and spreads is strongly influenced by human decisions.",
+      "sourceExcerptSha256": "250d217e09e89b99ac40c0a63b7bccea5ee4cd5e2fced30b3cbbb18d2b9807d1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: Antibiotic resistance arises because antibiotics completely eliminate all bacteria in a population.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+      "sourceExcerptSha256": "78c35d9d2dea5f28bd120cff1e1f1914bc4b77b821a947dc0bd2a6d55b4307f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: The use of antibiotics at sub-therapeutic levels to promote livestock growth has been linked to the spread of resistance genes.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+      "sourceExcerptSha256": "78c35d9d2dea5f28bd120cff1e1f1914bc4b77b821a947dc0bd2a6d55b4307f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: In 2019, AMR was directly responsible for 4.95 million deaths globally.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+      "sourceExcerptSha256": "2bf298351542441a437c71ec25815d79f7c361132f4d86876093b4e32777b7db",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "5. {{5}}: Most major pharmaceutical companies have increased their investment in antibiotic research since the 1990s.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "The antibiotic pipeline—the process of developing new drugs—has been inadequate for decades. Antibiotics are commercially unattractive: they are taken for short periods and should be prescribed cautiously to preserve effectiveness, so sales volumes cannot follow the model used for medicines taken continuously. Many major pharmaceutical companies reduced or ended antibiotic research in the 1980s and 1990s. Recent WHO reviews describe both limited innovation and unequal access: a new product is of little public-health value if patients cannot obtain it, yet unrestricted sales can shorten its useful life. Proposed responses therefore combine public support for early research with rewards that are not tied simply to selling more doses.",
+      "sourceExcerptSha256": "b1bd02053ef04c1e02f66fd52f671fad3c5b7929d25cfc2d23a121cdd5bcb319",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Rapid diagnostic tests can currently distinguish bacterial from viral infections within minutes.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+      "sourceExcerptSha256": "abc25327774eb661029ae349318166d0b2eb06d479201c5f693c0e6854fe9a1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: The World Health Assembly adopted the WHO Global Action Plan on AMR in 2015.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "International coordination is essential because resistance genes move across borders with the bacteria that carry them, through trade, travel, and environmental flows. The World Health Assembly adopted the WHO's Global Action Plan on Antimicrobial Resistance in May 2015. Its objectives cover awareness, surveillance, infection reduction, responsible use, and sustainable investment, but implementation has been uneven and often underfunded. The problem also requires a \"One Health\" approach: prescribing in hospitals cannot be separated from animal health, food production, sanitation, wastewater, and the environment. In 2024, countries at the United Nations set a first global target to reduce deaths associated with bacterial AMR by 10 percent by 2030 from the 2019 baseline. That commitment creates a measurable destination, although success still depends on national surveillance and funded action.",
+      "sourceExcerptSha256": "3265d841d9477ff175ae44cb2973d80e87a1b5cd5ca984d6a26f6c985116493c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stewardship"
+      ],
+      "questionPrompt": "8. Antibiotic {{8}} programmes aim to ensure that drugs are prescribed only when necessary and in correct doses.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+      "sourceExcerptSha256": "abc25327774eb661029ae349318166d0b2eb06d479201c5f693c0e6854fe9a1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Stewardship",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stewardship",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "last-resort"
+      ],
+      "questionPrompt": "9. Carbapenems are described in the passage as {{9}} treatments when other antibiotics have failed.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+      "sourceExcerptSha256": "2bf298351542441a437c71ec25815d79f7c361132f4d86876093b4e32777b7db",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "last-resort",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "last-resort",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pipeline"
+      ],
+      "questionPrompt": "10. The decline in pharmaceutical company investment in antibiotics since the 1980s has resulted in an inadequate antibiotic {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "The antibiotic pipeline—the process of developing new drugs—has been inadequate for decades. Antibiotics are commercially unattractive: they are taken for short periods and should be prescribed cautiously to preserve effectiveness, so sales volumes cannot follow the model used for medicines taken continuously. Many major pharmaceutical companies reduced or ended antibiotic research in the 1980s and 1990s. Recent WHO reviews describe both limited innovation and unequal access: a new product is of little public-health value if patients cannot obtain it, yet unrestricted sales can shorten its useful life. Proposed responses therefore combine public support for early research with rewards that are not tied simply to selling more doses.",
+      "sourceExcerptSha256": "b1bd02053ef04c1e02f66fd52f671fad3c5b7929d25cfc2d23a121cdd5bcb319",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pipeline",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pipeline",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "reduce"
+      ],
+      "questionPrompt": "11. In 2024, countries agreed to {{11}} deaths associated with bacterial AMR by 10 percent before 2030.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, restricting routine and growth-promoting antibiotic use in livestock is a necessary step. European Union rules prohibit routine use and reserve preventive treatment of an individual animal for exceptional circumstances, although implementation and enforcement remain essential.",
+      "sourceExcerptSha256": "abc25327774eb661029ae349318166d0b2eb06d479201c5f693c0e6854fe9a1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "reduce",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "reduce",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "environmental"
+      ],
+      "questionPrompt": "12. Resistance genes spread internationally through trade, travel, and {{12}} flows.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. Where medicines can be obtained without effective oversight, self-medication may also involve incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.",
+      "sourceExcerptSha256": "78c35d9d2dea5f28bd120cff1e1f1914bc4b77b821a947dc0bd2a6d55b4307f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "environmental",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "environmental",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "priority"
+      ],
+      "questionPrompt": "13. Bacteria of particular concern appear on the WHO's {{13}} list.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Crisis of Antibiotic Resistance",
+      "sourceExcerpt": "The consequences of the AMR crisis are already severe. For 2019, researchers estimated that bacterial AMR was associated with approximately 4.95 million deaths globally; within that total, about 1.27 million deaths were directly attributable to resistance. These measures describe different relationships and must not be added together. A later global analysis projected that resistance could cause 39 million attributable deaths between 2025 and 2050 if trends are not reversed. Particular concern surrounds the bacteria on the WHO's 2024 priority list. The list separates critical, high, and medium priorities rather than treating every organism as resistant to the same drugs. Its critical group includes carbapenem-resistant Acinetobacter baumannii and resistant Enterobacterales, while vancomycin-resistant Enterococcus faecium is classified as high priority. Carbapenems are among the last-resort treatments used when other options fail.",
+      "sourceExcerptSha256": "2bf298351542441a437c71ec25815d79f7c361132f4d86876093b4e32777b7db",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "priority",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "priority",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of a country that developed large-scale urban farming in response to an economic crisis",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+      "sourceExcerptSha256": "1ae17fedefd4881bf55b8aa110acc5cb82577e3066759cb16395529431316f58",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Evidence that gardens improve social trust among residents of a neighbourhood",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "D. The social and health benefits of urban gardening have attracted growing research interest. Contact with nature and gardening activity has been consistently associated with reduced levels of cortisol, lower rates of depression and anxiety, and improved subjective wellbeing. Community gardens, in particular, serve as sites of social interaction across demographic boundaries—age, ethnicity, socioeconomic status—that are rarely bridged in other urban spaces. Research in the United States and Europe has found that residents of neighbourhoods with community gardens report higher levels of social trust and community cohesion than comparable residents in areas without them.",
+      "sourceExcerptSha256": "cb318b45ed6e55a0310cd44e33ab4c9bc5d0387b9eccfa7ff6ff8e3b2be8540c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A caution that cities are unlikely to achieve significant food self-sufficiency through urban farming",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "E. The contribution of urban agriculture to food security is real but often overstated. Urban growing can supplement household food budgets, particularly for low-income families, and can provide access to fresh produce in areas described as \"food deserts\"—urban neighbourhoods where affordable, nutritious food is difficult to obtain. However, the physical constraints of urban environments—limited space, competition for land, soil contamination, and artificial light requirements for indoor growing—mean that cities are unlikely to achieve meaningful self-sufficiency in food production in the foreseeable future. The economic viability of urban farming at scale remains contested; many operations require significant public subsidy or premium pricing to remain financially sustainable.",
+      "sourceExcerptSha256": "cac8c043b8ad60c282f82a6f94b975b3e9e5d8fad02aead9562d57687d327bef",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An overview of how urban gardening has become part of contemporary sustainability strategy",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "A. Urban gardening—the cultivation of plants within city environments—has moved from a marginal activity associated with wartime food production and community allotments to a significant component of contemporary urban planning and sustainability strategy. From rooftop gardens and vertical farms to community vegetable patches and edible street planting, cities around the world are increasingly integrating growing spaces into the fabric of urban life. This shift reflects both practical motivations—food security and environmental resilience—and deeper cultural desires for connection to nature and community. FAO treats urban and peri-urban agriculture as part of the wider food system, including production, processing, distribution, marketing, and recycling rather than cultivation alone.",
+      "sourceExcerptSha256": "89a60677db061025e7a9158ba9cd3362a2ffda441a81e88d4cdee6700e7b0637",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A description of how vertical farms work and the debate about their environmental credentials",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "F. Vertical farming—the cultivation of crops in stacked layers within controlled indoor environments, typically using artificial LED lighting, hydroponic nutrient systems, and precise climate control—has attracted enormous investor attention as a potential solution to the space constraints of urban agriculture. Proponents argue that vertical farms can produce dramatically higher yields per unit of land area than conventional agriculture and can be located anywhere, independent of climate and soil conditions. Critics point to the high capital and energy costs of these systems, and question whether the environmental benefits of local food production justify the carbon footprint of the artificial lighting and climate control that vertical farms require.",
+      "sourceExcerptSha256": "159177912fa3f09636782cf324558138e2da7f06de05c5f7a25f86f44cca3129",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "An argument that the best outcomes require integrating green space into city planning from the beginning",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "G. The future of urban gardening is likely to be shaped by policy choices about land use, planning regulations, and public investment, as well as by the values and priorities of urban communities themselves. FAO guidance emphasises secure access to land and water, product safety, viable markets, and participation by residents alongside inclusion in urban planning. Cities that integrate green infrastructure into planning from the outset—as Singapore, Copenhagen, and Melbourne are attempting to do—may achieve genuinely transformative outcomes. For most cities, however, the challenge is retrofitting green space into environments built for very different purposes, a process that requires both technical innovation and sustained political commitment to the idea that the quality of urban life is inseparable from access to nature.",
+      "sourceExcerptSha256": "24a2f1a6e11fa55337e79d2b3a587503b4ac23cd31998ec1eb9b59f46e543be6",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A mention of the role urban gardens can play in managing rainwater and reducing flooding risk",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "C. The environmental benefits of urban gardening are multiple, though their scale depends significantly on context and implementation. Urban green spaces reduce the heat island effect by providing shade and evapotranspiration, absorb carbon dioxide through photosynthesis, and support biodiversity by providing habitat for pollinators, birds, and invertebrates. In cities where stormwater management is a challenge, green roofs and garden spaces can absorb rainfall and reduce runoff, alleviating pressure on drainage systems. Research in European cities has found that urban green spaces also have measurable positive effects on air quality, particularly in relation to particulate matter.",
+      "sourceExcerptSha256": "e6a0e83eecf129b07315112fa30f975f0811164cdd939df32fe3a7df9af69735",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "victory"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+      "sourceExcerptSha256": "1ae17fedefd4881bf55b8aa110acc5cb82577e3066759cb16395529431316f58",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "victory",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "victory",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "organoponico"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "B. The history of urban food growing is long and cyclical. In both world wars, \"victory gardens\" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's \"organoponico\" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country with sharply reduced access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture. Community gardens transformed abandoned lots across Havana into productive growing spaces and expanded the local supply of fresh vegetables.",
+      "sourceExcerptSha256": "1ae17fedefd4881bf55b8aa110acc5cb82577e3066759cb16395529431316f58",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "organoponico",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "organoponico",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "heat island"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "C. The environmental benefits of urban gardening are multiple, though their scale depends significantly on context and implementation. Urban green spaces reduce the heat island effect by providing shade and evapotranspiration, absorb carbon dioxide through photosynthesis, and support biodiversity by providing habitat for pollinators, birds, and invertebrates. In cities where stormwater management is a challenge, green roofs and garden spaces can absorb rainfall and reduce runoff, alleviating pressure on drainage systems. Research in European cities has found that urban green spaces also have measurable positive effects on air quality, particularly in relation to particulate matter.",
+      "sourceExcerptSha256": "e6a0e83eecf129b07315112fa30f975f0811164cdd939df32fe3a7df9af69735",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "heat island",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "heat island",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "depression",
+        "anxiety",
+        "cortisol"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "D. The social and health benefits of urban gardening have attracted growing research interest. Contact with nature and gardening activity has been consistently associated with reduced levels of cortisol, lower rates of depression and anxiety, and improved subjective wellbeing. Community gardens, in particular, serve as sites of social interaction across demographic boundaries—age, ethnicity, socioeconomic status—that are rarely bridged in other urban spaces. Research in the United States and Europe has found that residents of neighbourhoods with community gardens report higher levels of social trust and community cohesion than comparable residents in areas without them.",
+      "sourceExcerptSha256": "cb318b45ed6e55a0310cd44e33ab4c9bc5d0387b9eccfa7ff6ff8e3b2be8540c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "depression",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "depression",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "anxiety",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "cortisol",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "contamination"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "E. The contribution of urban agriculture to food security is real but often overstated. Urban growing can supplement household food budgets, particularly for low-income families, and can provide access to fresh produce in areas described as \"food deserts\"—urban neighbourhoods where affordable, nutritious food is difficult to obtain. However, the physical constraints of urban environments—limited space, competition for land, soil contamination, and artificial light requirements for indoor growing—mean that cities are unlikely to achieve meaningful self-sufficiency in food production in the foreseeable future. The economic viability of urban farming at scale remains contested; many operations require significant public subsidy or premium pricing to remain financially sustainable.",
+      "sourceExcerptSha256": "cac8c043b8ad60c282f82a6f94b975b3e9e5d8fad02aead9562d57687d327bef",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "contamination",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "contamination",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "capital"
+      ],
+      "questionPrompt": "Urban gardening has a long history, including wartime {{21}} gardens that converted parks and lawns to food production. In Cuba, the {{22}} movement transformed abandoned lots into community growing spaces after economic crisis. Urban green spaces provide environmental benefits including reducing the {{23}} effect, absorbing CO₂, and supporting biodiversity. Community gardens are associated with reduced {{24}} and improved social cohesion across demographic groups. However, soil {{25}} and space constraints mean cities are unlikely to achieve food self-sufficiency. Vertical farming uses hydroponic systems and artificial light, but its high {{26}} costs and energy demands have attracted criticism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Urban Gardening and the Green City",
+      "sourceExcerpt": "F. Vertical farming—the cultivation of crops in stacked layers within controlled indoor environments, typically using artificial LED lighting, hydroponic nutrient systems, and precise climate control—has attracted enormous investor attention as a potential solution to the space constraints of urban agriculture. Proponents argue that vertical farms can produce dramatically higher yields per unit of land area than conventional agriculture and can be located anywhere, independent of climate and soil conditions. Critics point to the high capital and energy costs of these systems, and question whether the environmental benefits of local food production justify the carbon footprint of the artificial lighting and climate control that vertical farms require.",
+      "sourceExcerptSha256": "159177912fa3f09636782cf324558138e2da7f06de05c5f7a25f86f44cca3129",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "capital",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "capital",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, which combination of factors has driven the rapid growth of electric vehicle sales?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Electrification of the vehicle fleet is the most widely discussed pathway, and the pace of its advance has surprised many observers. Global electric car sales approached 14 million units in 2023—approximately eighteen percent of all new car sales worldwide—up from less than one percent in 2015. Falling battery costs and supportive policy have both driven that growth, but affordability differs greatly by vehicle size and market. In 2023, battery pack prices fell by almost fourteen percent after rising the previous year, illustrating that the trend is not smooth. The primary remaining barriers are charging infrastructure (particularly for apartment dwellers and those in rural areas), the higher upfront cost of EVs in many markets, and concerns about battery supply chains involving lithium, cobalt, nickel, and graphite. Public charging points grew rapidly in 2023, yet the IEA warns that deployment must continue to keep pace with sales.",
+      "sourceExcerptSha256": "b05f7f5b0947b10769a38271be838e0fb8ba5eca0718f886e3746692fc248152",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Falling battery costs together with supportive government policy."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Government subsidies have made EVs significantly cheaper than conventional vehicles everywhere.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The superior performance and range of electric vehicles compared to petrol cars.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "International agreements requiring car manufacturers to phase out combustion engines.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about the \"carbon debt\" of manufacturing electric vehicles?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+      "sourceExcerptSha256": "de202421f5e13263e9cf79e776281e4c1be7e65bc32f2304b9d890cc6cd04afe",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "EV manufacturing produces more carbon than conventional vehicle manufacturing, mainly because of battery production."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It is negligible compared to the lifetime savings from zero tailpipe emissions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The carbon debt of EV manufacturing is higher in countries with renewable electricity grids.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The carbon debt means that EVs never achieve a lower carbon footprint than petrol cars.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage suggest about autonomous vehicles?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Autonomous vehicles (AVs)—cars capable of navigating without a human driver—have been the subject of intense enthusiasm and investment since the early 2010s, but the technology has proved far more difficult to deploy at scale than early proponents anticipated. Several companies that led the field, including some well-capitalised startups, have abandoned or significantly curtailed their AV programmes. As of 2024, limited robotaxi services operate in a small number of cities, primarily in controlled urban environments with favourable road conditions. The full autonomy envisioned—vehicles capable of navigating any environment in any conditions without human intervention—remains substantially further away than was predicted a decade ago.",
+      "sourceExcerptSha256": "9eab521454c07e9701027823bca0021b01fdaf29b86fe56cac35f881209469af",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "They have proved much more difficult to deploy than early optimists predicted."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "They have been successfully deployed at scale in most major cities by 2024.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Most investment in AVs has come from public transport authorities rather than private companies.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "They are expected to be widely available within the next two to three years.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What equity concern about the transport transition does the passage identify?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The equity dimension of transport transitions is frequently overlooked in discussions focused on technology. The benefits of EVs and new mobility services have disproportionately accrued to higher-income households with access to private vehicles, home charging, and urban areas with good public transport. Lower-income workers in car-dependent suburbs, rural areas, and developing countries face a transition that may remove access to affordable personal mobility before adequate alternatives are in place. Ensuring that the transition to sustainable transport improves rather than worsens mobility equity is one of the defining challenges for transport policy in the coming decades.",
+      "sourceExcerptSha256": "835aed3116c24f8a93632b163abab9db51524f77aefe93c47b555567be2c2a64",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "The benefits of new mobility technologies have disproportionately gone to wealthier, urban households."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "EVs are too expensive for high-income households in most countries.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Public transport improvements have benefited rural areas more than cities.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Lower-income countries are choosing to build high-speed rail instead of expanding road networks.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "31. {{31}}: The writer argues that electrification alone is sufficient to decarbonise the transport sector fully.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+      "sourceExcerptSha256": "bde4df415250ff2847922345831c2e9b87826daa3058c15b9d377c1ecb4a7c37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: The carbon benefit of an EV depends significantly on how clean the electricity grid is in the country where it is charged.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+      "sourceExcerptSha256": "de202421f5e13263e9cf79e776281e4c1be7e65bc32f2304b9d890cc6cd04afe",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: Cities designed at human scale with mixed uses tend to generate lower overall travel demand than car-dependent sprawl.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Modal shift—moving journeys from high-emission to low-emission modes—is equally important, particularly in urban areas. Rail, cycling, and walking produce dramatically lower emissions per passenger-kilometre than private car travel. Cities that have invested heavily in public transport—Tokyo, Vienna, Zurich, Singapore—achieve high modal shares for these alternatives and have significantly lower transport emissions per capita than car-dependent cities. The design of urban environments matters profoundly: cities built at human scale, with mixed uses and dense networks of destinations, generate less travel demand and facilitate active modes far more effectively than sprawling, single-use developments.",
+      "sourceExcerptSha256": "b1e60ed578543c01865391ebfe3ab234135e58d7a05b87b7b8be854b15ffaa6d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "34. {{34}}: High-speed rail has already replaced the majority of short-haul flights in Europe and Asia.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+      "sourceExcerptSha256": "bde4df415250ff2847922345831c2e9b87826daa3058c15b9d377c1ecb4a7c37",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Sustainable aviation fuels are already available at cost-competitive prices and are widely used by major airlines.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+      "sourceExcerptSha256": "bde4df415250ff2847922345831c2e9b87826daa3058c15b9d377c1ecb4a7c37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: The passage suggests that transport infrastructure built today will constrain choices for future generations.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.",
+      "sourceExcerptSha256": "bde4df415250ff2847922345831c2e9b87826daa3058c15b9d377c1ecb4a7c37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "modal shift"
+      ],
+      "questionPrompt": "37. The three principal pathways for decarbonising transport are electrification, {{37}}, and improved efficiency.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Transport systems are the circulatory infrastructure of modern economies, enabling the movement of people and goods at the scales and speeds that contemporary life requires. They are also among the most significant sources of greenhouse gas emissions, accounting for approximately twenty-three percent of global energy-related CO₂ output, with road transport—principally cars and trucks—contributing the largest share. The decarbonisation of transport is therefore central to global climate goals, and it is being pursued through three principal pathways: electrification, modal shift, and improved efficiency.",
+      "sourceExcerptSha256": "36428a5598e8ad5fb8f78bed11cf18ce5a66978bc4e0112f4971cb6944897b38",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "modal shift",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "modal shift",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carbon"
+      ],
+      "questionPrompt": "38. Electric vehicles are charged from electricity grids of varying {{38}} intensity, which determines their actual climate benefit.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this \"carbon debt\" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.",
+      "sourceExcerptSha256": "de202421f5e13263e9cf79e776281e4c1be7e65bc32f2304b9d890cc6cd04afe",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carbon",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carbon",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "controlled"
+      ],
+      "questionPrompt": "39. Robotaxi services currently operate in a limited number of cities in {{39}} urban environments with favourable road conditions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "Autonomous vehicles (AVs)—cars capable of navigating without a human driver—have been the subject of intense enthusiasm and investment since the early 2010s, but the technology has proved far more difficult to deploy at scale than early proponents anticipated. Several companies that led the field, including some well-capitalised startups, have abandoned or significantly curtailed their AV programmes. As of 2024, limited robotaxi services operate in a small number of cities, primarily in controlled urban environments with favourable road conditions. The full autonomy envisioned—vehicles capable of navigating any environment in any conditions without human intervention—remains substantially further away than was predicted a decade ago.",
+      "sourceExcerptSha256": "9eab521454c07e9701027823bca0021b01fdaf29b86fe56cac35f881209469af",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "controlled",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "controlled",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mobility"
+      ],
+      "questionPrompt": "40. The passage identifies improving {{40}} equity as one of the defining challenges for transport policy in the coming decades.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Future of Transport",
+      "sourceExcerpt": "The equity dimension of transport transitions is frequently overlooked in discussions focused on technology. The benefits of EVs and new mobility services have disproportionately accrued to higher-income households with access to private vehicles, home charging, and urban areas with good public transport. Lower-income workers in car-dependent suburbs, rural areas, and developing countries face a transition that may remove access to affordable personal mobility before adequate alternatives are in place. Ensuring that the transition to sustainable transport improves rather than worsens mobility equity is one of the defining challenges for transport policy in the coming decades.",
+      "sourceExcerptSha256": "835aed3116c24f8a93632b163abab9db51524f77aefe93c47b555567be2c2a64",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mobility",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mobility",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q13",
+        "before": "Bacteria resistant to multiple antibiotic classes are grouped by WHO as priority pathogens.",
+        "after": "Bacteria of particular concern appear on the WHO's priority list.",
+        "reason": "The passage does not define priority-list membership by resistance to multiple classes."
+      },
+      {
+        "scope": "Reading Q27 option B",
+        "before": "The main reason for rapid EV sales growth was the dramatic fall in battery costs.",
+        "after": "Rapid EV sales growth was driven by falling battery costs together with supportive policy.",
+        "reason": "The passage names both drivers and does not rank one as the sole main reason."
+      }
+    ]
+  },
+  "reviewSha256": "b1a71a341e7a35cef4b8a68aed04c813ca7e319b8af87ebc17fb28b7ce303702"
+}

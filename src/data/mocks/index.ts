@@ -3,6 +3,7 @@ import { SAT_MOCK_REGISTRY } from './sat/registry.generated';
 import { normalizeIcfesMock } from './normalize-icfes-mock';
 import { withToefl2026FixedForm } from './toefl-fixed-form';
 import { withIeltsListeningProductionTranscript } from './ielts-listening-production';
+import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -205,14 +206,14 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-2':  withIeltsListeningProductionTranscript(ieltsSet2),
   'ielts:set-3':  withIeltsListeningProductionTranscript(ieltsSet3),
   'ielts:set-4':  withIeltsListeningProductionTranscript(ieltsSet4),
-  'ielts:set-5':  ieltsSet5,
-  'ielts:set-6':  ieltsSet6,
-  'ielts:set-7':  ieltsSet7,
-  'ielts:set-8':  ieltsSet8,
+  'ielts:set-5':  withIeltsListeningLegacyReplacementTranscript(ieltsSet5),
+  'ielts:set-6':  withIeltsListeningLegacyReplacementTranscript(ieltsSet6),
+  'ielts:set-7':  withIeltsListeningLegacyReplacementTranscript(ieltsSet7),
+  'ielts:set-8':  withIeltsListeningLegacyReplacementTranscript(ieltsSet8),
   'ielts:set-9':  ieltsSet9,
-  'ielts:set-10': ieltsSet10,
-  'ielts:set-11': ieltsSet11,
-  'ielts:set-12': ieltsSet12,
+  'ielts:set-10': withIeltsListeningLegacyReplacementTranscript(ieltsSet10),
+  'ielts:set-11': withIeltsListeningLegacyReplacementTranscript(ieltsSet11),
+  'ielts:set-12': withIeltsListeningLegacyReplacementTranscript(ieltsSet12),
   'ielts:set-13': withIeltsListeningProductionTranscript(ieltsSet13),
   'ielts:set-14': withIeltsListeningProductionTranscript(ieltsSet14),
   'ielts:set-15': withIeltsListeningProductionTranscript(ieltsSet15),

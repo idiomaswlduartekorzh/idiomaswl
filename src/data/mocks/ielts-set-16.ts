@@ -517,7 +517,7 @@ The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply ch
           text: 'What economic principle does the passage identify as the foundation for the case in favour of globalisation?',
           options: [
             'The principle of absolute advantage in international production.',
-            'The principle of comparative advantage, in which countries specialise in their most efficient outputs.',
+            'The principle of comparative advantage, in which countries specialise according to relative opportunity costs.',
             'The law of supply and demand as applied to international trade.',
             'The principle of economic equilibrium between importing and exporting nations.',
           ],
@@ -658,7 +658,7 @@ The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply ch
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn',
-          cueCard: `Describe a change that has happened in your country that you consider positive.\n\nYou should say:\n• what the change is\n• when and how it happened\n• how it has affected people's lives\n• and explain why you consider it a positive development`,
+          cueCard: `Describe an environmental or energy-related change in your country that you consider positive.\n\nYou should say:\n• what the change is\n• when and how it happened\n• how it has affected people's lives\n• and explain why you think it could help the environment in the long term`,
         },
         {
           type: 'speak',

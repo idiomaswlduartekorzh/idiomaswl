@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 12,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-12.ts",
+    "sourceSha256": "356517f14085e042e404f318e3e1b66ebc100db642151b080a53dabda872e605",
+    "releaseFingerprintSha256": "9bda329389ce8d23f29d319b0fc0db3ea5bec3465dc80da53da31b5ccd8aabdc"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "transcriptSha256": "3b145f7a72a7c1dd036da482ee5a1e3f61a7879c2f6de202bcc39445ec497696",
+      "objectiveSha256": "874eb503ff5da812cbd2e42f0a8db9721b0db91dda2ff001599cb6a1b3aa6843"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "transcriptSha256": "3b145f7a72a7c1dd036da482ee5a1e3f61a7879c2f6de202bcc39445ec497696",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-12-listening-evidence.json",
+      "evidenceSha256": "476bc4ddfd524ffb8759d41c6179d6a86d10e638b67e667632c1ef3b07cedc77"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 80.26,
+        "endSeconds": 85.46,
+        "audiblePhrase": "Eight Ashgrove Avenue. That's A-S-H-G-R-O-V-E.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 132.12,
+        "endSeconds": 138.8,
+        "audiblePhrase": "The Riverside one please. Oh sorry. No, I meant the station car park. That's the one nearest my flat.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 230.88,
+        "endSeconds": 234.52,
+        "audiblePhrase": "Just so you know a warden checks the permits every day so you'll need to display it clearly.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 236.98,
+        "endSeconds": 239,
+        "audiblePhrase": "On the windscreen. Got it.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 265.18,
+        "endSeconds": 270.16,
+        "audiblePhrase": "Now the travel card, it's very useful. You can use it on the buses and the tram right across the city.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 274.16,
+        "endSeconds": 278.72,
+        "audiblePhrase": "When you come in, just bring a recent photo of yourself and we'll print the card while you wait.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 309.6,
+        "endSeconds": 314.66,
+        "audiblePhrase": "We have two options. The weekly card is £15 and it includes a free map of the network.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 309.6,
+        "endSeconds": 314.66,
+        "audiblePhrase": "We have two options. The weekly card is £15 and it includes a free map of the network.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 314.66,
+        "endSeconds": 318.32,
+        "audiblePhrase": "The monthly card lasts 30 days and costs £58.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 319.04,
+        "endSeconds": 323.1,
+        "audiblePhrase": "With that one you also get discounts at a number of shops and cafes in the centre.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 490.21999999999997,
+        "endSeconds": 524.66,
+        "audiblePhrase": "Hello everyone. And a warm welcome to you. Welcome to Greenfields Farm on our annual open day. It's wonderful to see so many families here. Let me start by telling you what's new. This year for the very first time we've opened a farm shop selling our own produce and we've built a large children's play barn for when the weather turns. Now some of our old favourites are still here too. The cafe has been serving visitors for over 20 years. The duck pond is where it's always been. And yes, the tractor rides are running as usual so don't worry.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 490.21999999999997,
+        "endSeconds": 524.66,
+        "audiblePhrase": "Hello everyone. And a warm welcome to you. Welcome to Greenfields Farm on our annual open day. It's wonderful to see so many families here. Let me start by telling you what's new. This year for the very first time we've opened a farm shop selling our own produce and we've built a large children's play barn for when the weather turns. Now some of our old favourites are still here too. The cafe has been serving visitors for over 20 years. The duck pond is where it's always been. And yes, the tractor rides are running as usual so don't worry.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 568.64,
+        "endSeconds": 573.42,
+        "audiblePhrase": "All of our guided walks set off from the car park just behind you so please gather there.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 607.68,
+        "endSeconds": 611.52,
+        "audiblePhrase": "That begins at 11 over in the top field and it lasts about half an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 640.34,
+        "endSeconds": 644.4,
+        "audiblePhrase": "After that children are welcome to help feed the lambs in the small animal barn.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 708.14,
+        "endSeconds": 713.08,
+        "audiblePhrase": "Through the window you can watch our staff making cheese in the traditional way and there are samples to try.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 746.06,
+        "endSeconds": 751.04,
+        "audiblePhrase": "If you'd like to take something home head down to the lower field where you can pick your own strawberries.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 753.26,
+        "endSeconds": 757.72,
+        "audiblePhrase": "When you get hungry hot food and drinks are served all day in the food tent near the main gate.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 759.68,
+        "endSeconds": 764.02,
+        "audiblePhrase": "We do have animals roaming freely so please keep your dogs on a lead at all times.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 766.9,
+        "endSeconds": 771.08,
+        "audiblePhrase": "The farm closes at 5pm today and the car park closes shortly after.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 942.8,
+        "endSeconds": 954.14,
+        "audiblePhrase": "So Sam, Priya, how's the robotics project coming along? Remind me what your robot has to do. Well the brief is to build a small robot that can find its way through a maze without any human control.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1008.9,
+        "endSeconds": 1018.82,
+        "audiblePhrase": "We've built the frame and fitted the wheels. The main headache has been the sensors. At first we used a camera to detect the walls but it was far too slow to process the images.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1064.8,
+        "endSeconds": 1070.44,
+        "audiblePhrase": "Pria is doing all the programming and I'm concentrating on the electronics, the wiring and the motors.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1167.54,
+        "endSeconds": 1174.7,
+        "audiblePhrase": "Of course. My advice would be to test the right amount of time. Now let's start with the robot in a simple maze first. Before you try the full competition layout you'll find the faults much more quickly.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1241.12,
+        "endSeconds": 1258.56,
+        "audiblePhrase": "Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also book the workshop for Friday. You'll need the space. And email me your budget because I think you can still claim some funding.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1210.18,
+        "endSeconds": 1213.2,
+        "audiblePhrase": "I'd switch to plastic. It's lighter and your battery will last longer.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1245.52,
+        "endSeconds": 1247.94,
+        "audiblePhrase": "Then finish the code so the robot can turn corners.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1248.62,
+        "endSeconds": 1251.58,
+        "audiblePhrase": "After that, run a full test and record the results in a table.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1252.18,
+        "endSeconds": 1253.6,
+        "audiblePhrase": "Also book the workshop for Friday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1255.68,
+        "endSeconds": 1258.56,
+        "audiblePhrase": "And email me your budget because I think you can still claim some funding.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1418.22,
+        "endSeconds": 1423.56,
+        "audiblePhrase": "When light enters, it is focused onto a thin layer of light sensitive tissue at the back of the eye called the retina.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1473.14,
+        "endSeconds": 1477.7,
+        "audiblePhrase": "The second kind, the cones, are responsible for color vision, though they need bright light to work well.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1514.7,
+        "endSeconds": 1516.92,
+        "audiblePhrase": "Now in the human eye, there are three different types of cone.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1519.3,
+        "endSeconds": 1523.14,
+        "audiblePhrase": "and because of this, each responds most strongly to a particular wavelength of light.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1524.2,
+        "endSeconds": 1528.84,
+        "audiblePhrase": "Now, speaking, one type is most sensitive to red, another to green, and the third to blue.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1534.3,
+        "endSeconds": 1538.64,
+        "audiblePhrase": "and that comparison is carried out by the brain, which interprets the mixture as a single color.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1636.68,
+        "endSeconds": 1640.76,
+        "audiblePhrase": "In most cases, the condition is inherited, passed down from a person's parents through their genes.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1641.5,
+        "endSeconds": 1643.8,
+        "audiblePhrase": "Interestingly, it is far more common in men than in women",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1647.38,
+        "endSeconds": 1650.44,
+        "audiblePhrase": "The most frequent form is an inability to distinguish red from green,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1694.32,
+        "endSeconds": 1697.56,
+        "audiblePhrase": "Birds, for example, have an extra type of cone and can see ultraviolet light,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "908cc560bcac7a5b4076f4b5df31c7f15670c7f0519a3a8c160723126c3cc9be",
+      "objectiveSha256": "874eb503ff5da812cbd2e42f0a8db9721b0db91dda2ff001599cb6a1b3aa6843"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Coral reefs occupy less than one percent of the ocean floor, yet they support approximately twenty-five percent of all known marine species. These ecosystems—often described as the rainforests of the sea—provide food security, coastal protection, and economic income to hundreds of millions of people worldwide. Today, they face an unprecedented convergence of threats that scientists warn could eliminate most of the world's reefs within decades.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Ocean acidification compounds this problem significantly. As the ocean absorbs approximately thirty percent of all carbon dioxide emitted by human activity, a chemical reaction produces carbonic acid, lowering the pH of seawater. Since the Industrial Revolution, ocean surface pH has dropped from 8.2 to 8.1—a change that, because pH is logarithmic, represents a twenty-six percent increase in acidity. Seawater remains alkaline, but the shift in chemistry still changes which dissolved compounds are available to organisms. For corals, which build their skeletons from calcium carbonate, this is deeply problematic: acidification reduces the availability of carbonate ions, making it harder for corals to calcify and causing existing skeletons to weaken and dissolve. Slower construction also limits a reef's ability to replace material lost to storms, erosion, and grazing organisms.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Local stressors add further pressure. Agricultural runoff introduces nutrients into coastal waters, stimulating algal blooms that smother reefs and block sunlight. Overfishing removes herbivorous fish such as parrotfish and surgeonfish, which normally keep algae in check. Coastal development disrupts sediment patterns and can physically damage reef structures. The interaction among pressures matters: a reef weakened by bleaching may be less able to compete with algae or tolerate sediment, while the loss of grazing fish can prevent young corals from reclaiming open surfaces. Reducing a local stressor cannot stop marine heat waves, but it can improve the condition in which corals meet them. In many regions, these local threats operate in combination with climate stressors, creating a \"death by a thousand cuts\" dynamic from which reefs have little opportunity to recover.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economic stakes are enormous. Coral reefs generate an estimated US$375 billion per year in goods and services, including fisheries, tourism, and coastal protection. The physical barrier they create absorbs wave energy and protects shorelines from erosion and storm damage—a service valued at hundreds of billions of dollars annually for low-lying coastal nations and islands. In countries like Indonesia, the Philippines, and the Maldives, reef-based tourism and fishing underpin the livelihoods of millions of people, making reef degradation not merely an ecological problem but a development crisis.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Responses to reef decline range from local interventions to global policy ambitions. Coral gardening—growing fragments of resilient coral on underwater nurseries and transplanting them to degraded reefs—has shown promise in the Caribbean and parts of the Indo-Pacific, though the scale of the work required is vast. Scientists are investigating heat-resistant coral strains, produced through selective breeding or assisted evolution, that may be able to survive warmer waters. At the policy level, the establishment of marine protected areas reduces local stressors and gives reefs more capacity to recover from bleaching events. Ultimately, however, conservationists argue that without aggressive action to limit greenhouse gas emissions, all other interventions risk being overwhelmed by continued warming.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Local stressors add further pressure. Agricultural runoff introduces nutrients into coastal waters, stimulating algal blooms that smother reefs and block sunlight. Overfishing removes herbivorous fish such as parrotfish and surgeonfish, which normally keep algae in check. Coastal development disrupts sediment patterns and can physically damage reef structures. The interaction among pressures matters: a reef weakened by bleaching may be less able to compete with algae or tolerate sediment, while the loss of grazing fish can prevent young corals from reclaiming open surfaces. Reducing a local stressor cannot stop marine heat waves, but it can improve the condition in which corals meet them. In many regions, these local threats operate in combination with climate stressors, creating a \"death by a thousand cuts\" dynamic from which reefs have little opportunity to recover.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economic stakes are enormous. Coral reefs generate an estimated US$375 billion per year in goods and services, including fisheries, tourism, and coastal protection. The physical barrier they create absorbs wave energy and protects shorelines from erosion and storm damage—a service valued at hundreds of billions of dollars annually for low-lying coastal nations and islands. In countries like Indonesia, the Philippines, and the Maldives, reef-based tourism and fishing underpin the livelihoods of millions of people, making reef degradation not merely an ecological problem but a development crisis.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Responses to reef decline range from local interventions to global policy ambitions. Coral gardening—growing fragments of resilient coral on underwater nurseries and transplanting them to degraded reefs—has shown promise in the Caribbean and parts of the Indo-Pacific, though the scale of the work required is vast. Scientists are investigating heat-resistant coral strains, produced through selective breeding or assisted evolution, that may be able to survive warmer waters. At the policy level, the establishment of marine protected areas reduces local stressors and gives reefs more capacity to recover from bleaching events. Ultimately, however, conservationists argue that without aggressive action to limit greenhouse gas emissions, all other interventions risk being overwhelmed by continued warming.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. European chess diverged from shatranj in the late fifteenth century, during a period that coincided roughly with the height of the Renaissance. The most significant changes involved the newly empowered queen—known in shatranj as the counsellor or firz, a weak piece restricted to diagonal moves—who became the most powerful piece on the board, capable of moving any number of squares in any direction. The bishop received long-range diagonal movement, and the pawn acquired the option of moving two squares on its first move, along with the option of capturing en passant. These changes dramatically increased the pace and tactical richness of the game, making the prior, slower version obsolete almost overnight. Regional customs did not disappear at once, so players also needed agreement about exceptional moves and the conditions for a draw. Printed rule books and wider competition gradually promoted a common version that opponents from different places could recognise.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Chess is one of the oldest and most widely played strategy games in the world. Its origins lie in the Indian subcontinent, where a game called chaturanga—meaning \"four divisions,\" a reference to the divisions of the Indian military—was played as early as the sixth century CE. Chaturanga featured four types of pieces corresponding to infantry, cavalry, elephants, and chariots, and was played on an eight-by-eight grid. From India, the game spread westward to Persia, where it was transformed into chatrang, later shatranj. The Persian word for the game's most important piece, shah, meaning king, gave rise to the words \"chess\" and \"checkmate\"—the latter derived from shah mat, meaning \"the king is helpless.\"",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The twenty-first century has seen chess undergo a remarkable popular revival. The COVID-19 pandemic drove millions of people online, and chess became one of the most-watched and played games on the internet. The release of the Netflix series The Queen's Gambit in 2020 introduced the game to an entirely new global audience. Online platforms such as Chess.com reported record membership growth, and live-streamed chess tournaments attracted audiences in the millions. Chess, it seems, is as resilient and adaptable as the game itself demands its players to be.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Arab traders and scholars carried shatranj across the Islamic world following the conquest of Persia in the seventh century. The game proved enormously popular in the caliphate courts, and a significant body of chess literature—including problem collections, treatise on strategy, and biographical accounts of great players—was produced in Arabic during the eighth and ninth centuries. The caliph Harun al-Rashid, famed for his patronage of arts and sciences, was reportedly a devoted player. When chess reached Moorish Spain and Sicily, it entered Europe, where it would undergo a transformation that produced the game we recognise today.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The eighteenth and nineteenth centuries saw chess flourish as a competitive pursuit. The first formal World Chess Championship was the match between Wilhelm Steinitz and Johannes Zukertort in 1886, which Steinitz won, becoming the game's first recognised world champion. International competition required agreed match conditions, time controls, and ways of recording moves so that games could be studied afterwards. Newspapers and specialist publications helped turn leading players into public figures whose methods could influence opponents they never met. Steinitz also developed what became known as positional chess—a style emphasising long-term structural advantages, pawn formations, and the control of open files, rather than the swashbuckling tactical play that had dominated earlier European chess. His ideas, initially controversial, proved enormously influential on subsequent generations of players.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match—a result that shocked the chess world and the public alike. Today's chess engines, running on ordinary laptop computers, play at a level far beyond the reach of any human player. They can evaluate possible continuations quickly, but their numerical verdict does not automatically explain a position in terms a learner understands. Human coaches still decide which alternatives illustrate a useful principle and how to turn an error into instruction. Paradoxically, rather than diminishing the human game, computer analysis has enriched it: players and coaches use engines to prepare openings, analyse mistakes, and explore positions of extraordinary complexity that would have been inaccessible to earlier generations.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Chess is one of the oldest and most widely played strategy games in the world. Its origins lie in the Indian subcontinent, where a game called chaturanga—meaning \"four divisions,\" a reference to the divisions of the Indian military—was played as early as the sixth century CE. Chaturanga featured four types of pieces corresponding to infantry, cavalry, elephants, and chariots, and was played on an eight-by-eight grid. From India, the game spread westward to Persia, where it was transformed into chatrang, later shatranj. The Persian word for the game's most important piece, shah, meaning king, gave rise to the words \"chess\" and \"checkmate\"—the latter derived from shah mat, meaning \"the king is helpless.\"",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. European chess diverged from shatranj in the late fifteenth century, during a period that coincided roughly with the height of the Renaissance. The most significant changes involved the newly empowered queen—known in shatranj as the counsellor or firz, a weak piece restricted to diagonal moves—who became the most powerful piece on the board, capable of moving any number of squares in any direction. The bishop received long-range diagonal movement, and the pawn acquired the option of moving two squares on its first move, along with the option of capturing en passant. These changes dramatically increased the pace and tactical richness of the game, making the prior, slower version obsolete almost overnight. Regional customs did not disappear at once, so players also needed agreement about exceptional moves and the conditions for a draw. Printed rule books and wider competition gradually promoted a common version that opponents from different places could recognise.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The eighteenth and nineteenth centuries saw chess flourish as a competitive pursuit. The first formal World Chess Championship was the match between Wilhelm Steinitz and Johannes Zukertort in 1886, which Steinitz won, becoming the game's first recognised world champion. International competition required agreed match conditions, time controls, and ways of recording moves so that games could be studied afterwards. Newspapers and specialist publications helped turn leading players into public figures whose methods could influence opponents they never met. Steinitz also developed what became known as positional chess—a style emphasising long-term structural advantages, pawn formations, and the control of open files, rather than the swashbuckling tactical play that had dominated earlier European chess. His ideas, initially controversial, proved enormously influential on subsequent generations of players.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match—a result that shocked the chess world and the public alike. Today's chess engines, running on ordinary laptop computers, play at a level far beyond the reach of any human player. They can evaluate possible continuations quickly, but their numerical verdict does not automatically explain a position in terms a learner understands. Human coaches still decide which alternatives illustrate a useful principle and how to turn an error into instruction. Paradoxically, rather than diminishing the human game, computer analysis has enriched it: players and coaches use engines to prepare openings, analyse mistakes, and explore positions of extraordinary complexity that would have been inaccessible to earlier generations.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The popular concern is grounded in striking statistics. In the United States and the United Kingdom, rates of depression, anxiety, and self-harm among adolescents—particularly girls—began rising sharply around 2012, a period that coincides with the widespread adoption of smartphones and social media platforms. The psychologist Jean Twenge, one of the most prominent voices in this debate, argues that this correlation reflects causation: that social media use has fundamentally altered the social landscape of adolescence in harmful ways. Platforms built around social comparison, she argues, expose young users to a constant stream of curated, idealised images of others' lives, driving feelings of inadequacy, envy, and low self-worth. The displacement of face-to-face social interaction by screen time, she further argues, deprives young people of the emotionally nourishing forms of connection that genuine relationships provide.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The popular concern is grounded in striking statistics. In the United States and the United Kingdom, rates of depression, anxiety, and self-harm among adolescents—particularly girls—began rising sharply around 2012, a period that coincides with the widespread adoption of smartphones and social media platforms. The psychologist Jean Twenge, one of the most prominent voices in this debate, argues that this correlation reflects causation: that social media use has fundamentally altered the social landscape of adolescence in harmful ways. Platforms built around social comparison, she argues, expose young users to a constant stream of curated, idealised images of others' lives, driving feelings of inadequacy, envy, and low self-worth. The displacement of face-to-face social interaction by screen time, she further argues, deprives young people of the emotionally nourishing forms of connection that genuine relationships provide.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "f26a5525f13a37a3d5553a120523af593739b015dd611884f8331ab3193b1ef3",
+      "task1ImageSha256": "0ff196cc2e6b35cefd5b362048f1c9fa40ddf174bf5e6575af1c04ce2eb147ff"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "f64d91e2be6345cd302031d5061604e0b72ada087a9c93f71b7143e7580a49e3"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "874eb503ff5da812cbd2e42f0a8db9721b0db91dda2ff001599cb6a1b3aa6843",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-12-objective-review.json",
+    "evidenceSha256": "7e9fbd1f32c54905d65ba5cab6ee8b2268da640c83f6f1b0365a026080558638",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "ce501ed03f6f4a5cb6b9e549054b16b3f14ff3732f269a1ff053476d8cab12eb"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "9bda329389ce8d23f29d319b0fc0db3ea5bec3465dc80da53da31b5ccd8aabdc",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

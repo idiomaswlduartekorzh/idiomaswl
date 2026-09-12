@@ -12,6 +12,8 @@
  */
 
 import type { MockExam, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
+import { withIeltsListeningProductionTranscript } from '@/data/mocks/ielts-listening-production';
+import { withIeltsListeningLegacyReplacementTranscript } from '@/data/mocks/ielts-listening-legacy-replacement';
 
 export interface IeltsWritingAssignment {
   /** Consigna completa tal como la ve el estudiante en el examen real. */
@@ -65,7 +67,8 @@ export function isReviewableIeltsMock(mockId: string): boolean {
 export async function loadIeltsMock(mockId: string): Promise<MockExam | null> {
   const loader = SET_LOADERS[mockId];
   if (!loader) return null;
-  return (await loader()).default;
+  const authored = (await loader()).default;
+  return withIeltsListeningLegacyReplacementTranscript(withIeltsListeningProductionTranscript(authored));
 }
 
 async function findWriteQuestion(mockId: string, taskNumber: 1 | 2): Promise<WriteQuestion | null> {

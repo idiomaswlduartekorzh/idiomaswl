@@ -1,0 +1,3560 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 19,
+  "mockId": "set-19",
+  "contentVersionAtReview": "ielts-set-19-v3",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "79efbb0fcfb711d3f86fed001645c17f6b1eece057a18482200b61a43adf144f",
+    "listeningMaterialSha256": "c4ea93fa36d454044b71022a328d811bc33f57cae721f8e5e106c67d44aae996",
+    "readingMaterialSha256": "522aa3fd7ffd97b0fc18ca60a1cf199f40aee558d8c0776e75aefccef5ce76a6",
+    "objectiveMaterialSha256": "753bdf1311f31f8690b53c49c4a04287b9940f784873fb827c4e69e7f2615f10"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "nurse"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "Spanish",
+        "spanish"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "intermediate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "library"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "Thursday",
+        "thursday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "pronunciation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "handbook"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "15",
+        "£15",
+        "fifteen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "weekly"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "lessons"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the planetarium",
+        "B": "B. the café",
+        "C": "C. the gift shop",
+        "D": "D. the energy garden",
+        "E": "E. the flight gallery"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "an hour",
+        "one hour",
+        "hour"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "cloakroom"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "two pounds",
+        "£2",
+        "2 pounds"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "flash"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "heart"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "moon rock"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "robots",
+        "robot"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "They had a strong personal interest in music.",
+        "The subject was more accessible than their first idea.",
+        "Their tutor recommended the topic to them."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The lighting was poor.",
+        "Background traffic noise affected the sound.",
+        "The musicians were unwilling to take part."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the camerawork",
+        "the interviews",
+        "the background music"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "It is too long.",
+        "It is poorly organised.",
+        "The sound quality is weak."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "on a memory stick",
+        "by email",
+        "by uploading it to the department server"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "subtitles",
+        "subtitle"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "narration"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "permission"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "version"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "feedback"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "intermittent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "demand"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "batteries",
+        "battery"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "water"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "turbine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "caves",
+        "cave"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "salt"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "lifespan",
+        "life"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "cobalt"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "hydrogen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "flat rotation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "lensing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "WIMPs"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "cosmic ray"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "Newtonian"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "distribution"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "convenience"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "network"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "bricks-and-mortar",
+        "brick-and-mortar"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "last mile"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "warehouses"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "augmented reality"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Only economic value through tourism and international recognition.",
+        "Multiple motivations including cultural continuity, tourism, identity, and scientific value.",
+        "Primarily scientific value as records of human history and evolutionary development.",
+        "Mainly political motivations related to national sovereignty and territorial rights."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "They were destroyed accidentally during armed conflict, not deliberately targeted.",
+        "They were calculated acts of cultural erasure intended to sever communities from their histories.",
+        "They were destroyed because the groups responsible believed the sites had no cultural value.",
+        "Their destruction led directly to the creation of the UNESCO World Heritage Convention."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "That buildings should always be restored to their original historical state.",
+        "That later additions to historical buildings should always be preserved intact.",
+        "That contributions from different periods should be respected and replacements distinguished from the original.",
+        "That digital replicas are an acceptable substitute for the preservation of authentic physical sites."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That these museums do not have the resources to care for the objects properly.",
+        "That the argument about being guardians of world heritage serves the self-interest of the institutions holding the objects.",
+        "That these museums have no legitimate claim to objects purchased legally.",
+        "That universal museums promote cultural homogenisation at the expense of local traditions."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "intangible"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "Convention"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "original",
+        "idealised"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "photogrammetry"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nurse"
+      ],
+      "questionPrompt": "• Occupation: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: No, I'm a nurse, actually. I work at the city hospital.",
+      "sourceExcerptSha256": "b844c31dc8afe8927c6948b56430bca5f08dc4368e3fc0dcec39f1946f6c1f50",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nurse",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nurse",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Spanish",
+        "spanish"
+      ],
+      "questionPrompt": "• Language she wants to practise: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: Spanish, please. In return I can help someone with English, which is my first language.",
+      "sourceExcerptSha256": "fd66b1cfa0cd58ef1c37f0641ba864500b6b294ed8a16e208f796b21d2ab7800",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Spanish",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Spanish",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "spanish",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "intermediate"
+      ],
+      "questionPrompt": "• Current level: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: I'd say intermediate. I studied it at school, but I've forgotten quite a lot.",
+      "sourceExcerptSha256": "51c214b314127a8242bc4e69c6c00a542a7f6cc08c487bf9f542d51c0bb00829",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "intermediate",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "intermediate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "library"
+      ],
+      "questionPrompt": "• Preferred place to meet: the {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: I was thinking a café would be nice and relaxed. Actually, no — a café gets too noisy. The library would be far better, because it's quiet.",
+      "sourceExcerptSha256": "ca21b56455d86eefd04c3561db88b15b7235e0f8973331a88633b34bbf8d1a13",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "library",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "library",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Thursday",
+        "thursday"
+      ],
+      "questionPrompt": "• Preferred day: {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: Could we make it Thursday? That's my day off.",
+      "sourceExcerptSha256": "5235fe785067646f7c816b8f011decf25f68f05bbd0387c829c009265f647565",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Thursday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Thursday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "thursday",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pronunciation"
+      ],
+      "questionPrompt": "• Skill she most wants to improve: {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "CALLER: Mostly conversation, but I'd really like to improve my pronunciation — that's my weakest area.",
+      "sourceExcerptSha256": "6e37582f307f55b472797a1fa7168966aceb1a65b9dd4a557ae115fb413afedf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pronunciation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pronunciation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "handbook"
+      ],
+      "questionPrompt": "Basic | free | none | {{7}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "COORDINATOR: Noted. Now, let me explain our three membership levels before you decide. The Basic level is completely free, and you simply receive a welcome handbook full of tips. The Standard level costs fifteen pounds a year, and it adds a group meet-up once a month. And our Premium level, at forty pounds a year, gives you a weekly meeting instead, plus access to our online lessons.",
+      "sourceExcerptSha256": "9187dbb273561f9afd486991ee0caf89ffe7ab9a689202e41fb224886c34a898",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "handbook",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "handbook",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "15",
+        "£15",
+        "fifteen"
+      ],
+      "questionPrompt": "Standard | {{8}} | monthly | —",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "COORDINATOR: Noted. Now, let me explain our three membership levels before you decide. The Basic level is completely free, and you simply receive a welcome handbook full of tips. The Standard level costs fifteen pounds a year, and it adds a group meet-up once a month. And our Premium level, at forty pounds a year, gives you a weekly meeting instead, plus access to our online lessons.",
+      "sourceExcerptSha256": "9187dbb273561f9afd486991ee0caf89ffe7ab9a689202e41fb224886c34a898",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fifteen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "15",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “fifteen”."
+        },
+        {
+          "answer": "£15",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “fifteen”."
+        },
+        {
+          "answer": "fifteen",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "weekly"
+      ],
+      "questionPrompt": "Premium | £40 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "COORDINATOR: Noted. Now, let me explain our three membership levels before you decide. The Basic level is completely free, and you simply receive a welcome handbook full of tips. The Standard level costs fifteen pounds a year, and it adds a group meet-up once a month. And our Premium level, at forty pounds a year, gives you a weekly meeting instead, plus access to our online lessons.",
+      "sourceExcerptSha256": "9187dbb273561f9afd486991ee0caf89ffe7ab9a689202e41fb224886c34a898",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "weekly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "weekly",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lessons"
+      ],
+      "questionPrompt": "Premium | £40 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a language exchange",
+      "sourceExcerpt": "COORDINATOR: Noted. Now, let me explain our three membership levels before you decide. The Basic level is completely free, and you simply receive a welcome handbook full of tips. The Standard level costs fifteen pounds a year, and it adds a group meet-up once a month. And our Premium level, at forty pounds a year, gives you a weekly meeting instead, plus access to our online lessons.",
+      "sourceExcerptSha256": "9187dbb273561f9afd486991ee0caf89ffe7ab9a689202e41fb224886c34a898",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lessons",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lessons",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO attractions have been newly opened at the museum this year?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Let me start with what's changed since your last visit. This year we've opened two brand-new attractions that I'd encourage you all to see. The first is a planetarium on the top floor, where you can lie back and watch the night sky. The second is our outdoor energy garden, where science comes to life in the open air. We've also refurbished the café and updated the gift shop, and of course the ever-popular flight gallery is still here, exactly where it always was.",
+      "sourceExcerptSha256": "12daa3b201d819958e4772a24454314412b405d9752bb186965fe5e33e996714",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the planetarium"
+        },
+        {
+          "key": "D",
+          "text": "the energy garden"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the gift shop",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the flight gallery",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "questionPrompt": "• Guided tours leave every {{13}} from the information desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Now for some practical information. Guided tours of the main galleries leave every forty minutes from the information desk in the entrance hall. Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor, as large rucksacks aren't permitted in the galleries. Lockers are also available, and they cost two pounds.",
+      "sourceExcerptSha256": "bf4de0a7dae37be95692d7f5acd8ad94c7526840d07509a5e27b08c61d9f7786",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "forty minutes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "forty minutes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "40 minutes",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “forty minutes”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "an hour",
+        "one hour",
+        "hour"
+      ],
+      "questionPrompt": "• Each guided tour lasts about {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Now for some practical information. Guided tours of the main galleries leave every forty minutes from the information desk in the entrance hall. Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor, as large rucksacks aren't permitted in the galleries. Lockers are also available, and they cost two pounds.",
+      "sourceExcerptSha256": "bf4de0a7dae37be95692d7f5acd8ad94c7526840d07509a5e27b08c61d9f7786",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "an hour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "an hour",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "one hour",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “an hour”."
+        },
+        {
+          "answer": "hour",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cloakroom"
+      ],
+      "questionPrompt": "• Bags must be left in the {{15}} on the ground floor.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Now for some practical information. Guided tours of the main galleries leave every forty minutes from the information desk in the entrance hall. Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor, as large rucksacks aren't permitted in the galleries. Lockers are also available, and they cost two pounds.",
+      "sourceExcerptSha256": "bf4de0a7dae37be95692d7f5acd8ad94c7526840d07509a5e27b08c61d9f7786",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cloakroom",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cloakroom",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two pounds",
+        "£2",
+        "2 pounds"
+      ],
+      "questionPrompt": "• Lockers are available and cost {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Now for some practical information. Guided tours of the main galleries leave every forty minutes from the information desk in the entrance hall. Each guided tour lasts about an hour, so do allow enough time. If you're carrying bags, please leave them in the cloakroom on the ground floor, as large rucksacks aren't permitted in the galleries. Lockers are also available, and they cost two pounds.",
+      "sourceExcerptSha256": "bf4de0a7dae37be95692d7f5acd8ad94c7526840d07509a5e27b08c61d9f7786",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two pounds",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two pounds",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “two pounds”."
+        },
+        {
+          "answer": "2 pounds",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “two pounds”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flash"
+      ],
+      "questionPrompt": "• When taking photos, visitors must switch off the {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Photography is welcome throughout the building, but we do ask you to switch off your flash, because it can damage some of the more delicate exhibits.",
+      "sourceExcerptSha256": "e2da6c3bf8fc8593f2f94e18748618a030b96a4ca7cbd422e6a50490adec248f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flash",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flash",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "heart"
+      ],
+      "questionPrompt": "• On the ground floor, you can walk through a giant model {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Let me point out a few highlights. On the ground floor, our star attraction is a giant model heart, which is so big that you can actually walk right through it. Upstairs, in the space gallery, you'll be able to see a genuine piece of moon rock, brought back by astronauts. And outside in the energy garden, you can try generating electricity yourself by pedalling a bicycle.",
+      "sourceExcerptSha256": "42806a66d291a03016ad05bf9f3bba9e6e1872738100f36cbbe3ebc80167ffbb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "heart",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "heart",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "moon rock"
+      ],
+      "questionPrompt": "• In the space gallery there is a real piece of {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Let me point out a few highlights. On the ground floor, our star attraction is a giant model heart, which is so big that you can actually walk right through it. Upstairs, in the space gallery, you'll be able to see a genuine piece of moon rock, brought back by astronauts. And outside in the energy garden, you can try generating electricity yourself by pedalling a bicycle.",
+      "sourceExcerptSha256": "42806a66d291a03016ad05bf9f3bba9e6e1872738100f36cbbe3ebc80167ffbb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "moon rock",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "moon rock",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "robots",
+        "robot"
+      ],
+      "questionPrompt": "• The temporary exhibition is about {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Science-museum tour",
+      "sourceExcerpt": "Finally, don't leave without visiting our temporary exhibition, which this season is all about robots. It runs until the end of August. Members receive a twenty per cent discount in the shop, and children under five come in free. Enjoy your visit, and please ask any of our staff if you need help.",
+      "sourceExcerptSha256": "bd81964a6fcccc376fbe8ea8f19dd74030d3b860fd2d47c8191e057a7fbe1cb8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "robots",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "robots",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "robot",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Why did the students choose street musicians as their subject?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "MAYA: Thanks. As you know, we chose to film the street musicians who perform around the old town.",
+      "sourceExcerptSha256": "59d6238af7ed961ccb7378c5dce744b037fd691364dc5e877d23c568a963f04a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The subject was more accessible than their first idea."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "They had a strong personal interest in music.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Their tutor recommended the topic to them.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was the main difficulty the students had when filming?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TOM: The lighting actually turned out fine, and the performers were very happy to take part. The real headache was the sound — traffic noise in the background spoiled several of our best takes.",
+      "sourceExcerptSha256": "37ad787e6b828780afd747b3763bee5f2add76a7da7d21b49966e83c7810e0a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Background traffic noise affected the sound."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The lighting was poor.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The musicians were unwilling to take part.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Which part of the documentary is Maya most pleased with?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "MAYA: We also need to be careful about cause and association in the film-studies project. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+      "sourceExcerptSha256": "52599e7770a44487fb18beb88f3ac845ac08851125799607cb32663816635a55",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the interviews"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the camerawork",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "the background music",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What is the tutor's main criticism of the documentary?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: I agree — the interviews are your strongest element. Now, my main criticism concerns the length. At twenty-five minutes, it's simply too long for this assignment; you need to bring it down to about fifteen.",
+      "sourceExcerptSha256": "f5c471c704a38276566cc121df7cad5aceef9b94dae95e7672b051c394dd7352",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "It is too long."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "It is poorly organised.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The sound quality is weak.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "How must the students submit the finished film?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: Good plan. And when you hand it in, remember the film must be uploaded to the department server, not brought in on a memory stick — the files are far too large for that.",
+      "sourceExcerptSha256": "7791c246834a61eed8f6e782ac57807cba778bfdb3304c1fd525d7cc4bd80fb8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "by uploading it to the department server"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "on a memory stick",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "by email",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "subtitles",
+        "subtitle"
+      ],
+      "questionPrompt": "• Add {{26}} so that the musicians are easier to follow.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.",
+      "sourceExcerptSha256": "a3f87885a3f9bdd3d456fccdbe0e2d6430ee0a87750f799658dd7c2174b94cf5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "subtitles",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "subtitles",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "subtitle",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "narration"
+      ],
+      "questionPrompt": "• Record a short {{27}} to introduce each performer.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.",
+      "sourceExcerptSha256": "a3f87885a3f9bdd3d456fccdbe0e2d6430ee0a87750f799658dd7c2174b94cf5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "narration",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "narration",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "permission"
+      ],
+      "questionPrompt": "• Obtain written {{28}} from every musician.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.",
+      "sourceExcerptSha256": "a3f87885a3f9bdd3d456fccdbe0e2d6430ee0a87750f799658dd7c2174b94cf5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "permission",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "permission",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "version"
+      ],
+      "questionPrompt": "• Send the tutor a rough {{29}} of the film by next Friday.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "MAYA: For the film-studies project, let us test the instructions on somebody outside the group. That should reveal any ambiguity before the final version.",
+      "sourceExcerptSha256": "9208dcd20d57d8c41e855dbe4326ba198a79362b02f3daf488a0b98e59730eb4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "version",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "version",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "feedback"
+      ],
+      "questionPrompt": "• The tutor will provide {{30}} before the final deadline.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Film-studies project",
+      "sourceExcerpt": "TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.",
+      "sourceExcerptSha256": "a3f87885a3f9bdd3d456fccdbe0e2d6430ee0a87750f799658dd7c2174b94cf5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "feedback",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "feedback",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "intermittent"
+      ],
+      "questionPrompt": "• Solar and wind power are {{31}}: they do not produce electricity all the time.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "The problem starts with the nature of renewables themselves. Sources such as solar panels and wind farms are intermittent, which means they only generate electricity when the sun is shining or the wind is blowing, and not at other times. Because supply and use rarely match, we need to capture surplus power and release it later, during periods of high demand — for instance, on a cold winter evening when everyone switches on the heating.",
+      "sourceExcerptSha256": "8b33edb81ff252570d3732cb4f881f52d19259bc800a7571c87993b44ae4ad72",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "intermittent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "intermittent",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "demand"
+      ],
+      "questionPrompt": "• Storage saves surplus power for periods of high {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "The problem starts with the nature of renewables themselves. Sources such as solar panels and wind farms are intermittent, which means they only generate electricity when the sun is shining or the wind is blowing, and not at other times. Because supply and use rarely match, we need to capture surplus power and release it later, during periods of high demand — for instance, on a cold winter evening when everyone switches on the heating.",
+      "sourceExcerptSha256": "8b33edb81ff252570d3732cb4f881f52d19259bc800a7571c87993b44ae4ad72",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "demand",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "demand",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "batteries",
+        "battery"
+      ],
+      "questionPrompt": "• The most common technology today uses lithium-ion {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "So what are the options? The most widespread storage technology today relies on lithium-ion batteries, like those found in phones and electric cars, only on a much larger scale. A much older method is pumped hydro. When there is spare electricity, it is used to pump water uphill into a reservoir. Later, when power is needed, that water is released and flows back down through a turbine, which spins to generate electricity all over again.",
+      "sourceExcerptSha256": "58e626b761fd00a3258032440575f20f4b9c48f2e8ea0bdc322377523bb5a88a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "batteries",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "batteries",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "battery",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “batteries”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "water"
+      ],
+      "questionPrompt": "• Pumped hydro uses spare electricity to pump {{34}} up into a reservoir.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "So what are the options? The most widespread storage technology today relies on lithium-ion batteries, like those found in phones and electric cars, only on a much larger scale. A much older method is pumped hydro. When there is spare electricity, it is used to pump water uphill into a reservoir. Later, when power is needed, that water is released and flows back down through a turbine, which spins to generate electricity all over again.",
+      "sourceExcerptSha256": "58e626b761fd00a3258032440575f20f4b9c48f2e8ea0bdc322377523bb5a88a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "water",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "water",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "turbine"
+      ],
+      "questionPrompt": "• The stored water later flows down through a {{35}} to generate electricity.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "So what are the options? The most widespread storage technology today relies on lithium-ion batteries, like those found in phones and electric cars, only on a much larger scale. A much older method is pumped hydro. When there is spare electricity, it is used to pump water uphill into a reservoir. Later, when power is needed, that water is released and flows back down through a turbine, which spins to generate electricity all over again.",
+      "sourceExcerptSha256": "58e626b761fd00a3258032440575f20f4b9c48f2e8ea0bdc322377523bb5a88a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "turbine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "turbine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "caves",
+        "cave"
+      ],
+      "questionPrompt": "• Compressed-air storage forces air into sealed underground {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "There are other clever approaches too. In compressed-air storage, surplus electricity squeezes air into sealed underground caves; when demand rises, the air is let out to drive a generator. And in some solar power plants, mirrors focus the sun's heat to melt salt. The molten salt stays hot for many hours and can later boil water into steam.",
+      "sourceExcerptSha256": "f78dffe3df6d908e68c473a2a5ef314ab7bd49127ff6c666e711dd43b834510e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "caves",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "caves",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "cave",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "salt"
+      ],
+      "questionPrompt": "• Some solar plants store heat by melting {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "There are other clever approaches too. In compressed-air storage, surplus electricity squeezes air into sealed underground caves; when demand rises, the air is let out to drive a generator. And in some solar power plants, mirrors focus the sun's heat to melt salt. The molten salt stays hot for many hours and can later boil water into steam.",
+      "sourceExcerptSha256": "f78dffe3df6d908e68c473a2a5ef314ab7bd49127ff6c666e711dd43b834510e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "salt",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "salt",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lifespan",
+        "life"
+      ],
+      "questionPrompt": "• Batteries are costly and have a limited {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "Of course, every method has its drawbacks. Batteries, although efficient, remain expensive, and their lifespan is limited, because after a certain number of charges they must be replaced. Worse still, the metals inside them, such as lithium and cobalt, are difficult and sometimes environmentally damaging to mine.",
+      "sourceExcerptSha256": "43f05af79af73d1e69a6a598147764ee44e2bc314dd105ae4fe5cac473949473",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lifespan",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lifespan",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "life",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cobalt"
+      ],
+      "questionPrompt": "• Mining the metals they contain, such as lithium and {{39}}, causes environmental harm.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "Of course, every method has its drawbacks. Batteries, although efficient, remain expensive, and their lifespan is limited, because after a certain number of charges they must be replaced. Worse still, the metals inside them, such as lithium and cobalt, are difficult and sometimes environmentally damaging to mine.",
+      "sourceExcerptSha256": "43f05af79af73d1e69a6a598147764ee44e2bc314dd105ae4fe5cac473949473",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cobalt",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cobalt",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hydrogen"
+      ],
+      "questionPrompt": "• Surplus electricity may be stored as {{40}} gas for later use.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Renewable energy storage",
+      "sourceExcerpt": "Looking to the future, researchers are pursuing fresh ideas. One is to store spare renewable electricity in the form of hydrogen gas, which can be burned or fed into fuel cells whenever it is needed. Others are designing cheaper batteries that avoid rare metals altogether. With better storage, renewable energy could one day power our homes and cities around the clock.",
+      "sourceExcerptSha256": "a53a7d67d740ea48c373891186b56ee1ceadfa85b0b86dc6ea21b2b891f0f4a2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hydrogen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hydrogen",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Dark matter is estimated to make up approximately twenty-seven percent of the total energy content of the universe.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "One of the most profound puzzles in modern physics is dark matter: an inferred form of matter that does not emit, absorb, or reflect enough light to be observed directly, yet exerts gravity. Measurements interpreted through the standard cosmological model assign it about twenty-seven percent of the universe's mass-energy content. Dark energy, the name given to the component associated with accelerated cosmic expansion, contributes roughly sixty-eight percent, while ordinary or baryonic matter contributes about five percent. These fractions are model-based estimates from several observations, including the cosmic microwave background, rather than a direct inventory of invisible objects.",
+      "sourceExcerptSha256": "46301a4e83e355b4169ac1eaf6c872bcbafaf28cecef1ed79471c131993df501",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: Vera Rubin discovered that stars near the outer edges of galaxies rotate faster than expected based on visible mass.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Evidence for dark matter comes from multiple scales. In the 1930s, Fritz Zwicky inferred missing mass from galaxy motions in the Coma Cluster, although his result did not establish its nature. In the 1970s, Vera Rubin, Kent Ford, and collaborators measured orbital speeds in spiral galaxies with much stronger observational coverage. If visible matter supplied almost all the gravity, speeds should generally decline beyond the bright central region. Instead, many outer rotation curves remain approximately flat: stars and gas orbit faster than the visible mass alone predicts. This pattern is called a flat rotation curve. Researchers compare many galaxies because one curve can be affected by distance, inclination, gas motions, and estimates of stellar mass. Within standard gravity, an extended halo of unseen mass explains the pattern. The observation does not logically prove one particle model, because modified-gravity proposals can reproduce some galactic curves, but any alternative must also address clusters, gravitational lensing, the cosmic microwave background, and the growth of large-scale structure.",
+      "sourceExcerptSha256": "2b54322b23e63e1ed33dc13ec4f1704d3db40d9f4d31aa3239c829d2d75dba1a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: Gravitational lensing works by measuring how much light is accelerated near massive objects.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Evidence for dark matter comes from multiple scales. In the 1930s, Fritz Zwicky inferred missing mass from galaxy motions in the Coma Cluster, although his result did not establish its nature. In the 1970s, Vera Rubin, Kent Ford, and collaborators measured orbital speeds in spiral galaxies with much stronger observational coverage. If visible matter supplied almost all the gravity, speeds should generally decline beyond the bright central region. Instead, many outer rotation curves remain approximately flat: stars and gas orbit faster than the visible mass alone predicts. This pattern is called a flat rotation curve. Researchers compare many galaxies because one curve can be affected by distance, inclination, gas motions, and estimates of stellar mass. Within standard gravity, an extended halo of unseen mass explains the pattern. The observation does not logically prove one particle model, because modified-gravity proposals can reproduce some galactic curves, but any alternative must also address clusters, gravitational lensing, the cosmic microwave background, and the growth of large-scale structure.",
+      "sourceExcerptSha256": "2b54322b23e63e1ed33dc13ec4f1704d3db40d9f4d31aa3239c829d2d75dba1a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: The Bullet Cluster is considered particularly important evidence because it separates the visible matter from the bulk of the mass.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Evidence for dark matter comes from multiple scales. In the 1930s, Fritz Zwicky inferred missing mass from galaxy motions in the Coma Cluster, although his result did not establish its nature. In the 1970s, Vera Rubin, Kent Ford, and collaborators measured orbital speeds in spiral galaxies with much stronger observational coverage. If visible matter supplied almost all the gravity, speeds should generally decline beyond the bright central region. Instead, many outer rotation curves remain approximately flat: stars and gas orbit faster than the visible mass alone predicts. This pattern is called a flat rotation curve. Researchers compare many galaxies because one curve can be affected by distance, inclination, gas motions, and estimates of stellar mass. Within standard gravity, an extended halo of unseen mass explains the pattern. The observation does not logically prove one particle model, because modified-gravity proposals can reproduce some galactic curves, but any alternative must also address clusters, gravitational lensing, the cosmic microwave background, and the growth of large-scale structure.",
+      "sourceExcerptSha256": "2b54322b23e63e1ed33dc13ec4f1704d3db40d9f4d31aa3239c829d2d75dba1a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "5. {{5}}: WIMP detection experiments deep underground have produced several confirmed detections in recent years.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "The nature of dark matter remains unknown. WIMPs, or Weakly Interacting Massive Particles, have long been a prominent candidate class. Direct-detection experiments place sensitive detectors deep underground to reduce cosmic ray interference and search for rare collisions in carefully shielded target material, but no result has yet been confirmed as dark matter. Researchers must distinguish a possible signal from radioactive contamination, detector noise, and neutrinos, so experiments compare event energy, location, timing, and target response. Increasingly strict limits rule out parts of the WIMP parameter space rather than the whole idea. Other candidates include axions, sterile neutrinos, primordial black holes within constrained mass ranges, and particles interacting through a richer hidden sector. Collider searches and astronomical observations test complementary possibilities.",
+      "sourceExcerptSha256": "7a8e0c1af913a8eb94236b8bb994ceb5b6821eac14d3b4c2a1b4d218a3515e91",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: MOND proposes that the law of gravity behaves differently at very low accelerations.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "An alternative class of explanations modifies gravitational dynamics. Modified Newtonian Dynamics (MOND), proposed by Mordecai Milgrom in 1983, changes the effective relation between acceleration and gravity below a characteristic scale and can reproduce many galaxy rotation curves with close links to visible matter. That empirical success is one reason the idea remains scientifically useful rather than merely an absence of particles. Basic MOND alone has greater difficulty with galaxy clusters, gravitational lensing, the cosmic microwave background, and structure formation; relativistic extensions add fields or ingredients to address some of those observations. The comparison is therefore between complete models across datasets, not between one successful curve and one failed detector.",
+      "sourceExcerptSha256": "a22b197aff4f038eb5c1dee79770c9cf8bc87a4a48c3e6dc8ce0c67ea7417e1b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: The Vera Rubin Observatory was named after the astronomer who first proposed the theory of dark matter.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Despite decades of research, dark matter remains an open question. The Vera C. Rubin Observatory, named for the astronomer whose galaxy measurements transformed the evidence, began its ten-year Legacy Survey of Space and Time in June 2026. Repeated images of the southern sky will support weak-lensing measurements, maps of the distribution of matter, and tests of how cosmic structure evolves. Rubin's work did not originate the dark-matter idea, which had earlier observational roots, but made the galaxy evidence far harder to dismiss. Underground detectors, collider experiments, and other observatories will supply independent tests; agreement among methods matters because no single null result or sky map can identify a particle by itself.",
+      "sourceExcerptSha256": "d0db376dd7757a426b7e75906121a7881829fa47608f1b410eda98fad9cd5cc4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flat rotation"
+      ],
+      "questionPrompt": "8. Galaxy rotation speeds that remain approximately constant beyond the bright centre produce a {{8}} curve.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Evidence for dark matter comes from multiple scales. In the 1930s, Fritz Zwicky inferred missing mass from galaxy motions in the Coma Cluster, although his result did not establish its nature. In the 1970s, Vera Rubin, Kent Ford, and collaborators measured orbital speeds in spiral galaxies with much stronger observational coverage. If visible matter supplied almost all the gravity, speeds should generally decline beyond the bright central region. Instead, many outer rotation curves remain approximately flat: stars and gas orbit faster than the visible mass alone predicts. This pattern is called a flat rotation curve. Researchers compare many galaxies because one curve can be affected by distance, inclination, gas motions, and estimates of stellar mass. Within standard gravity, an extended halo of unseen mass explains the pattern. The observation does not logically prove one particle model, because modified-gravity proposals can reproduce some galactic curves, but any alternative must also address clusters, gravitational lensing, the cosmic microwave background, and the growth of large-scale structure.",
+      "sourceExcerptSha256": "2b54322b23e63e1ed33dc13ec4f1704d3db40d9f4d31aa3239c829d2d75dba1a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flat rotation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flat rotation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lensing"
+      ],
+      "questionPrompt": "9. The distortion of distant light by foreground mass is known as gravitational {{9}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Evidence for dark matter comes from multiple scales. In the 1930s, Fritz Zwicky inferred missing mass from galaxy motions in the Coma Cluster, although his result did not establish its nature. In the 1970s, Vera Rubin, Kent Ford, and collaborators measured orbital speeds in spiral galaxies with much stronger observational coverage. If visible matter supplied almost all the gravity, speeds should generally decline beyond the bright central region. Instead, many outer rotation curves remain approximately flat: stars and gas orbit faster than the visible mass alone predicts. This pattern is called a flat rotation curve. Researchers compare many galaxies because one curve can be affected by distance, inclination, gas motions, and estimates of stellar mass. Within standard gravity, an extended halo of unseen mass explains the pattern. The observation does not logically prove one particle model, because modified-gravity proposals can reproduce some galactic curves, but any alternative must also address clusters, gravitational lensing, the cosmic microwave background, and the growth of large-scale structure.",
+      "sourceExcerptSha256": "2b54322b23e63e1ed33dc13ec4f1704d3db40d9f4d31aa3239c829d2d75dba1a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lensing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lensing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "WIMPs"
+      ],
+      "questionPrompt": "10. A long-prominent class of candidate dark-matter particles is called {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "The nature of dark matter remains unknown. WIMPs, or Weakly Interacting Massive Particles, have long been a prominent candidate class. Direct-detection experiments place sensitive detectors deep underground to reduce cosmic ray interference and search for rare collisions in carefully shielded target material, but no result has yet been confirmed as dark matter. Researchers must distinguish a possible signal from radioactive contamination, detector noise, and neutrinos, so experiments compare event energy, location, timing, and target response. Increasingly strict limits rule out parts of the WIMP parameter space rather than the whole idea. Other candidates include axions, sterile neutrinos, primordial black holes within constrained mass ranges, and particles interacting through a richer hidden sector. Collider searches and astronomical observations test complementary possibilities.",
+      "sourceExcerptSha256": "7a8e0c1af913a8eb94236b8bb994ceb5b6821eac14d3b4c2a1b4d218a3515e91",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "WIMPs",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "WIMPs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cosmic ray"
+      ],
+      "questionPrompt": "11. Underground dark matter detectors reduce {{11}} interference.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "The nature of dark matter remains unknown. WIMPs, or Weakly Interacting Massive Particles, have long been a prominent candidate class. Direct-detection experiments place sensitive detectors deep underground to reduce cosmic ray interference and search for rare collisions in carefully shielded target material, but no result has yet been confirmed as dark matter. Researchers must distinguish a possible signal from radioactive contamination, detector noise, and neutrinos, so experiments compare event energy, location, timing, and target response. Increasingly strict limits rule out parts of the WIMP parameter space rather than the whole idea. Other candidates include axions, sterile neutrinos, primordial black holes within constrained mass ranges, and particles interacting through a richer hidden sector. Collider searches and astronomical observations test complementary possibilities.",
+      "sourceExcerptSha256": "7a8e0c1af913a8eb94236b8bb994ceb5b6821eac14d3b4c2a1b4d218a3515e91",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cosmic ray",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cosmic ray",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Newtonian"
+      ],
+      "questionPrompt": "12. The alternative proposed by Mordecai Milgrom is called Modified {{12}} Dynamics.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "An alternative class of explanations modifies gravitational dynamics. Modified Newtonian Dynamics (MOND), proposed by Mordecai Milgrom in 1983, changes the effective relation between acceleration and gravity below a characteristic scale and can reproduce many galaxy rotation curves with close links to visible matter. That empirical success is one reason the idea remains scientifically useful rather than merely an absence of particles. Basic MOND alone has greater difficulty with galaxy clusters, gravitational lensing, the cosmic microwave background, and structure formation; relativistic extensions add fields or ingredients to address some of those observations. The comparison is therefore between complete models across datasets, not between one successful curve and one failed detector.",
+      "sourceExcerptSha256": "a22b197aff4f038eb5c1dee79770c9cf8bc87a4a48c3e6dc8ce0c67ea7417e1b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Newtonian",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Newtonian",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "distribution"
+      ],
+      "questionPrompt": "13. The Rubin survey will support maps of the {{13}} of matter.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Mystery of Dark Matter",
+      "sourceExcerpt": "Despite decades of research, dark matter remains an open question. The Vera C. Rubin Observatory, named for the astronomer whose galaxy measurements transformed the evidence, began its ten-year Legacy Survey of Space and Time in June 2026. Repeated images of the southern sky will support weak-lensing measurements, maps of the distribution of matter, and tests of how cosmic structure evolves. Rubin's work did not originate the dark-matter idea, which had earlier observational roots, but made the galaxy evidence far harder to dismiss. Underground detectors, collider experiments, and other observatories will supply independent tests; agreement among methods matters because no single null result or sky map can identify a particle by itself.",
+      "sourceExcerptSha256": "d0db376dd7757a426b7e75906121a7881829fa47608f1b410eda98fad9cd5cc4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "distribution",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "distribution",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A reference to concerns about working conditions and injury rates in e-commerce warehouses",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "F. Labour conditions have attracted sustained scrutiny. Workers and regulators have raised concerns about work intensity, electronic monitoring, ergonomics, and injury rates at some large warehouses. Comparing an individual operator with a broad retail average can be misleading because job mix and reporting differ, but recurring findings warrant investigation and prevention. Algorithmic scheduling and performance targets can coordinate complex operations, yet workers may struggle to understand or challenge a disciplinary decision generated from those measures. Delivery arrangements range from employees to subcontractors and independent platform workers, with corresponding differences in pay stability, benefits, bargaining power, and liability for vehicles or waiting time. Several jurisdictions have introduced rules on platform work, warehouse quotas, or employment status, and disputes continue over how those rules apply.",
+      "sourceExcerptSha256": "12f29ca88a39c16500f40abc23f13efd58b3365d4006432fdb7f1424a9af58fa",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "An explanation of how large platforms use data to gain competitive advantages over small retailers",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "C. Many e-commerce markets are concentrated, although leadership differs by country and category and can change. Large marketplaces benefit from network effects: more buyers can attract more sellers, and broader selection can attract more buyers. Scale also supports fulfilment infrastructure, advertising services, and data analysis. Platforms can rank products, personalise recommendations, target promotions, and test prices or interfaces. These capabilities can help small sellers reach customers, while also creating dependence on marketplace rules, commissions, search placement, and access to data that the platform itself controls. Consumers and merchants can use several platforms, which can limit lock-in, but switching becomes harder when reputation scores, advertising history, fulfilment, or customer relationships cannot move with them.",
+      "sourceExcerptSha256": "0f85e6cdd2f9b0f325cb9e662c648f7958b730bfb6dc5ef0b693d878a48a816b",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An explanation of why two e-commerce statistics with different scopes cannot be directly substituted",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "A. Electronic commerce—the ordering or sale of goods and services over computer networks—expanded rapidly after the commercial internet grew in the 1990s. Its scale depends on definition. UNCTAD estimated that businesses in 43 economies, together representing about three-quarters of world output, generated almost US$27 trillion in e-commerce sales in 2022; that measure includes business-to-business transactions and is not a global retail-only total. The US Census Bureau separately estimated that online orders represented 15.4 percent of US retail sales in 2023. Such figures cannot be substituted for one another, and forecasts add assumptions about exchange rates, prices, adoption, and which transactions are counted.",
+      "sourceExcerptSha256": "c092e868797c5eb6def1943180d340f4843d043aaad38813f11e3f8af21ed860",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A discussion of mixed effects on lower-income communities when local shops close",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "D. Traditional bricks-and-mortar retail has changed as online sales have grown. Some department stores and chains entered bankruptcy or reduced their estates, while other retailers integrated websites, shops, collection points, and returns. Empty premises can reduce employment and footfall in town centres, but e-commerce is only one cause: rents, debt, changing demographics, out-of-town development, the pandemic, and weak local demand also matter. Lower-income communities may lose nearby jobs and accessible shops, while simultaneously benefiting from wider selection or delivery. Establishing the distributional effect requires local evidence rather than assuming the same outcome everywhere.",
+      "sourceExcerptSha256": "e0da4dfca61d1a9d3a85c31c078fe52241417e8e51e08860b48b1c996b883bb2",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An account of how the COVID-19 pandemic affected consumer shopping behaviour",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "B. Convenience is a major driver: online shopping is available at any hour, can reduce travel, and enables rapid comparison among vendors. Smartphones and mobile internet extended access, while digital payments and delivery networks determine whether browsing can become a completed purchase. The COVID-19 pandemic accelerated adoption as restrictions shifted consumers and businesses toward remote channels. Some habits persisted, but effects differ by product, country, income, connectivity, and trust. Averages can conceal exclusion among people without reliable internet, payment instruments, accessible interfaces, or secure delivery addresses.",
+      "sourceExcerptSha256": "af37c6e9a22f25518724db88250cf1d5f72733260dc9facea2a86d0b7157a49d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A discussion of the environmental costs of packaging, returns, and last-mile delivery",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "E. The environmental footprint is complex. Consolidated delivery rounds may use less energy than many individual car trips, especially in dense areas with high drop rates. Packaging, warehouses, failed deliveries, rapid shipping, and product returns can reverse that advantage. Return rates are particularly important for some categories such as apparel but should not be treated as identical across all goods. The \"last mile\" from a distribution centre to a home is challenging because order density, vehicle type, route planning, delivery speed, and whether a consumer makes additional shopping trips all affect emissions. A fair comparison therefore uses a defined product and full delivery-and-return scenario. It should also state whether it counts consumer travel, building energy, upstream freight, packaging manufacture, damaged or unsold goods, and the rebound effect of purchasing more when ordering becomes easier.",
+      "sourceExcerptSha256": "bfa9ddbc69da16918c739fcf4c306805fab44597c53e5cd7ec418527f9c3a400",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A description of emerging technologies such as drones and augmented reality in e-commerce",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "G. E-commerce will be shaped by technology, regulation, and consumer preferences. Augmented reality tools let consumers visualise products at home; social commerce combines content, recommendation, and purchase; experiments continue with lockers, drones, robots, and autonomous vehicles. Technical feasibility does not establish safety, accessibility, labour benefit, or lower emissions. Regulators in the European Union, United States, China, and elsewhere scrutinise platform competition, data use, product safety, deceptive design, and the terms offered to smaller businesses. The central governance problem is to preserve useful access and innovation while making platforms accountable for rules and effects they can influence.",
+      "sourceExcerptSha256": "1a00e4621e1484b968ea55dca8cafddc6959061072c1d02df739c7bb9cdb126c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "convenience"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "B. Convenience is a major driver: online shopping is available at any hour, can reduce travel, and enables rapid comparison among vendors. Smartphones and mobile internet extended access, while digital payments and delivery networks determine whether browsing can become a completed purchase. The COVID-19 pandemic accelerated adoption as restrictions shifted consumers and businesses toward remote channels. Some habits persisted, but effects differ by product, country, income, connectivity, and trust. Averages can conceal exclusion among people without reliable internet, payment instruments, accessible interfaces, or secure delivery addresses.",
+      "sourceExcerptSha256": "af37c6e9a22f25518724db88250cf1d5f72733260dc9facea2a86d0b7157a49d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Convenience",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "convenience",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "network"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "C. Many e-commerce markets are concentrated, although leadership differs by country and category and can change. Large marketplaces benefit from network effects: more buyers can attract more sellers, and broader selection can attract more buyers. Scale also supports fulfilment infrastructure, advertising services, and data analysis. Platforms can rank products, personalise recommendations, target promotions, and test prices or interfaces. These capabilities can help small sellers reach customers, while also creating dependence on marketplace rules, commissions, search placement, and access to data that the platform itself controls. Consumers and merchants can use several platforms, which can limit lock-in, but switching becomes harder when reputation scores, advertising history, fulfilment, or customer relationships cannot move with them.",
+      "sourceExcerptSha256": "0f85e6cdd2f9b0f325cb9e662c648f7958b730bfb6dc5ef0b693d878a48a816b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "network",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "network",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bricks-and-mortar",
+        "brick-and-mortar"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "D. Traditional bricks-and-mortar retail has changed as online sales have grown. Some department stores and chains entered bankruptcy or reduced their estates, while other retailers integrated websites, shops, collection points, and returns. Empty premises can reduce employment and footfall in town centres, but e-commerce is only one cause: rents, debt, changing demographics, out-of-town development, the pandemic, and weak local demand also matter. Lower-income communities may lose nearby jobs and accessible shops, while simultaneously benefiting from wider selection or delivery. Establishing the distributional effect requires local evidence rather than assuming the same outcome everywhere.",
+      "sourceExcerptSha256": "e0da4dfca61d1a9d3a85c31c078fe52241417e8e51e08860b48b1c996b883bb2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bricks-and-mortar",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bricks-and-mortar",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "brick-and-mortar",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “bricks-and-mortar”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "last mile"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "E. The environmental footprint is complex. Consolidated delivery rounds may use less energy than many individual car trips, especially in dense areas with high drop rates. Packaging, warehouses, failed deliveries, rapid shipping, and product returns can reverse that advantage. Return rates are particularly important for some categories such as apparel but should not be treated as identical across all goods. The \"last mile\" from a distribution centre to a home is challenging because order density, vehicle type, route planning, delivery speed, and whether a consumer makes additional shopping trips all affect emissions. A fair comparison therefore uses a defined product and full delivery-and-return scenario. It should also state whether it counts consumer travel, building energy, upstream freight, packaging manufacture, damaged or unsold goods, and the rebound effect of purchasing more when ordering becomes easier.",
+      "sourceExcerptSha256": "bfa9ddbc69da16918c739fcf4c306805fab44597c53e5cd7ec418527f9c3a400",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "last mile",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "last mile",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "warehouses"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "E. The environmental footprint is complex. Consolidated delivery rounds may use less energy than many individual car trips, especially in dense areas with high drop rates. Packaging, warehouses, failed deliveries, rapid shipping, and product returns can reverse that advantage. Return rates are particularly important for some categories such as apparel but should not be treated as identical across all goods. The \"last mile\" from a distribution centre to a home is challenging because order density, vehicle type, route planning, delivery speed, and whether a consumer makes additional shopping trips all affect emissions. A fair comparison therefore uses a defined product and full delivery-and-return scenario. It should also state whether it counts consumer travel, building energy, upstream freight, packaging manufacture, damaged or unsold goods, and the rebound effect of purchasing more when ordering becomes easier.",
+      "sourceExcerptSha256": "bfa9ddbc69da16918c739fcf4c306805fab44597c53e5cd7ec418527f9c3a400",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "warehouses",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "warehouses",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "augmented reality"
+      ],
+      "questionPrompt": "E-commerce has grown rapidly since the 1990s, driven partly by {{21}} and the adoption of smartphones. Large platforms benefit from {{22}} effects, through which buyers and sellers can attract one another. Traditional {{23}} retail has changed, although online trade is only one cause. Environmental outcomes depend strongly on the {{24}} delivery stage and on returns, order density, transport, and consumer trips. Regulators have examined electronic monitoring and injury rates at some large {{25}}. In the future, {{26}} tools can let shoppers visualise products at home before buying.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Rise of E-commerce",
+      "sourceExcerpt": "G. E-commerce will be shaped by technology, regulation, and consumer preferences. Augmented reality tools let consumers visualise products at home; social commerce combines content, recommendation, and purchase; experiments continue with lockers, drones, robots, and autonomous vehicles. Technical feasibility does not establish safety, accessibility, labour benefit, or lower emissions. Regulators in the European Union, United States, China, and elsewhere scrutinise platform competition, data use, product safety, deceptive design, and the terms offered to smaller businesses. The central governance problem is to preserve useful access and innovation while making platforms accountable for rules and effects they can influence.",
+      "sourceExcerptSha256": "1a00e4621e1484b968ea55dca8cafddc6959061072c1d02df739c7bb9cdb126c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Augmented reality",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "augmented reality",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what are the motivations for preserving cultural heritage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "Cultural heritage encompasses the practices, knowledge, artistic expressions, places, and objects that communities inherit from the past and wish to transmit to future generations. It includes the tangible—buildings, archaeological sites, artefacts, manuscripts—and the intangible: oral traditions, performing arts, rituals, craftsmanship, and indigenous knowledge systems. The preservation of cultural heritage is driven by multiple and sometimes competing motivations: the intrinsic value of cultural continuity, the economic value of heritage tourism, the role of heritage in constructing national and community identities, and the scientific value of material remains as records of human history.",
+      "sourceExcerptSha256": "68e1a8263dfa2afa30625df89a843f594089264e8d6af9f536abf262527dcbe0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Multiple motivations including cultural continuity, tourism, identity, and scientific value."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Only economic value through tourism and international recognition.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Primarily scientific value as records of human history and evolutionary development.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Mainly political motivations related to national sovereignty and territorial rights.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about the destruction of Palmyra and the Bamiyan Buddhas?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The scale of the threat to global heritage is enormous. Natural disasters—earthquakes, floods, fires—have always posed dangers, but climate change is intensifying these risks. Coastal heritage sites face accelerating erosion as sea levels rise and storms become more intense; permafrost regions such as northern Canada and Siberia, where cold conditions have preserved organic materials for thousands of years, are now thawing, causing irreversible deterioration. Managers cannot save every exposed feature, so adaptation may combine drainage, fire planning, relocation, documentation, emergency stabilisation, and decisions about acceptable loss. Those priorities affect living communities and should include their knowledge and values. Armed conflict has also used destruction as a cultural weapon: attacks on Palmyra by the Islamic State group in Syria and the Taliban's demolition of the Bamiyan Buddhas in 2001 sought to erase valued connections with history.",
+      "sourceExcerptSha256": "7593118df2b2f92d691d7f40963b53a8bda4f251ebd938fe0fd026b85f8c6138",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "They were calculated acts of cultural erasure intended to sever communities from their histories."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "They were destroyed accidentally during armed conflict, not deliberately targeted.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "They were destroyed because the groups responsible believed the sites had no cultural value.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Their destruction led directly to the creation of the UNESCO World Heritage Convention.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What principle established by the Venice Charter continues to guide conservation practice?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The practice of conservation has evolved significantly. Some nineteenth-century restorations pursued an idealised \"original\" state, removing later additions or replacing deteriorated material. The 1964 Venice Charter instead said that valid contributions from all periods should be respected and that replacement work should be distinguishable from the original so the historical record is not falsified. Reversibility later became a widely discussed conservation aim, but the word itself does not appear in the Charter. Later documents and practice also placed greater weight on cultural context, living traditions, and participation by the communities whose heritage is being conserved. Authenticity and significance can depend on use, setting, knowledge, and relationships as well as original fabric.",
+      "sourceExcerptSha256": "63834f7a86c067a49966e02945cc849ee21c0341f454e74c884c4a68c5d68b6c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "That contributions from different periods should be respected and replacements distinguished from the original."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That buildings should always be restored to their original historical state.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "That later additions to historical buildings should always be preserved intact.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That digital replicas are an acceptable substitute for the preservation of authentic physical sites.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What criticism do repatriation advocates make of major universal museums that resist returning artefacts?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The repatriation of cultural property is highly contested. The Parthenon Sculptures, Benin Bronzes, and many objects removed during colonial rule have different legal histories; grouping every acquisition as identically illegal would erase evidence central to each claim. Requesting states and descendant communities may emphasise coercion, sacred meaning, cultural repair, or the ability to interpret objects in context. Holding institutions have cited legal restrictions, preservation, access, and the idea of a universal museum, while critics ask who authorised that universal role. Recent returns and long-term loans show that outcomes can include transfer of title, shared stewardship, or negotiated circulation. Provenance research is essential because labels such as gift, purchase, expedition, and seizure may conceal unequal power.",
+      "sourceExcerptSha256": "566d512d53a1a95e9a2d5b396b7e4b6422454b599877c62cd19ed93ce0006246",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "That the argument about being guardians of world heritage serves the self-interest of the institutions holding the objects."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That these museums do not have the resources to care for the objects properly.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "That these museums have no legitimate claim to objects purchased legally.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That universal museums promote cultural homogenisation at the expense of local traditions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: Climate change is intensifying existing threats to coastal and permafrost heritage sites.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The scale of the threat to global heritage is enormous. Natural disasters—earthquakes, floods, fires—have always posed dangers, but climate change is intensifying these risks. Coastal heritage sites face accelerating erosion as sea levels rise and storms become more intense; permafrost regions such as northern Canada and Siberia, where cold conditions have preserved organic materials for thousands of years, are now thawing, causing irreversible deterioration. Managers cannot save every exposed feature, so adaptation may combine drainage, fire planning, relocation, documentation, emergency stabilisation, and decisions about acceptable loss. Those priorities affect living communities and should include their knowledge and values. Armed conflict has also used destruction as a cultural weapon: attacks on Palmyra by the Islamic State group in Syria and the Taliban's demolition of the Bamiyan Buddhas in 2001 sought to erase valued connections with history.",
+      "sourceExcerptSha256": "7593118df2b2f92d691d7f40963b53a8bda4f251ebd938fe0fd026b85f8c6138",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: By 2026, the World Heritage List contained more than 1,200 properties in over 170 states.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The international framework for heritage protection is centred on the UNESCO World Heritage Convention, adopted in 1972. By 2026, its List contained more than 1,200 properties in over 170 states, while 196 states had joined the Convention. States Parties identify and nominate properties, protect their World Heritage values, manage them, and report on their condition. Inscription does not transfer ownership to UNESCO, and national authorities retain primary responsibility, with international assistance available under the Convention. Listing can attract attention and support, but does not guarantee safety: UNESCO maintained dozens of properties on the List of World Heritage in Danger. The Great Barrier Reef faces severe threats from climate change, yet it was not on that danger list, illustrating why the condition of a site and its formal UNESCO category must not be conflated.",
+      "sourceExcerptSha256": "4ab715f7d802cc91bdfb5f96fb769c59b4874d525f7aee583a6b2a6e71e289a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: The Venice Charter says replacement work should remain distinguishable from the original material.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The practice of conservation has evolved significantly. Some nineteenth-century restorations pursued an idealised \"original\" state, removing later additions or replacing deteriorated material. The 1964 Venice Charter instead said that valid contributions from all periods should be respected and that replacement work should be distinguishable from the original so the historical record is not falsified. Reversibility later became a widely discussed conservation aim, but the word itself does not appear in the Charter. Later documents and practice also placed greater weight on cultural context, living traditions, and participation by the communities whose heritage is being conserved. Authenticity and significance can depend on use, setting, knowledge, and relationships as well as original fabric.",
+      "sourceExcerptSha256": "63834f7a86c067a49966e02945cc849ee21c0341f454e74c884c4a68c5d68b6c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "34. {{34}}: Every cultural object removed during colonial rule has the same legal and historical circumstances.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The repatriation of cultural property is highly contested. The Parthenon Sculptures, Benin Bronzes, and many objects removed during colonial rule have different legal histories; grouping every acquisition as identically illegal would erase evidence central to each claim. Requesting states and descendant communities may emphasise coercion, sacred meaning, cultural repair, or the ability to interpret objects in context. Holding institutions have cited legal restrictions, preservation, access, and the idea of a universal museum, while critics ask who authorised that universal role. Recent returns and long-term loans show that outcomes can include transfer of title, shared stewardship, or negotiated circulation. Provenance research is essential because labels such as gift, purchase, expedition, and seizure may conceal unequal power.",
+      "sourceExcerptSha256": "566d512d53a1a95e9a2d5b396b7e4b6422454b599877c62cd19ed93ce0006246",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Digital reconstructions preserve every material and social quality of an authentic physical site.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "Digital technologies create new possibilities for documentation and access. Three-dimensional scanning, photogrammetry, and virtual reality can record geometry and appearance, assist repair, or let remote audiences explore a reconstruction. A digital record survives some forms of physical destruction, but files also depend on metadata, formats, storage, maintenance, and permission. Models of Palmyra or Notre-Dame may support research and public understanding, yet they cannot preserve original material, location, ritual use, memory, or every uncertainty in the evidence. Decisions about who owns scans and how sacred or sensitive knowledge is displayed add a further governance problem. Digital preservation is therefore a valuable layer of practice rather than an automatic substitute for caring for people, places, and objects.",
+      "sourceExcerptSha256": "101ee9d2c79a6d890538a9a86e94dfc68626a3dbb83ed5ba12c2d31e9638a275",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: Digital records can remain useful after some forms of physical destruction, although they require continuing care.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "Digital technologies create new possibilities for documentation and access. Three-dimensional scanning, photogrammetry, and virtual reality can record geometry and appearance, assist repair, or let remote audiences explore a reconstruction. A digital record survives some forms of physical destruction, but files also depend on metadata, formats, storage, maintenance, and permission. Models of Palmyra or Notre-Dame may support research and public understanding, yet they cannot preserve original material, location, ritual use, memory, or every uncertainty in the evidence. Decisions about who owns scans and how sacred or sensitive knowledge is displayed add a further governance problem. Digital preservation is therefore a valuable layer of practice rather than an automatic substitute for caring for people, places, and objects.",
+      "sourceExcerptSha256": "101ee9d2c79a6d890538a9a86e94dfc68626a3dbb83ed5ba12c2d31e9638a275",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "intangible"
+      ],
+      "questionPrompt": "37. Cultural heritage includes both tangible artefacts and {{37}} elements such as oral traditions and rituals.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "Cultural heritage encompasses the practices, knowledge, artistic expressions, places, and objects that communities inherit from the past and wish to transmit to future generations. It includes the tangible—buildings, archaeological sites, artefacts, manuscripts—and the intangible: oral traditions, performing arts, rituals, craftsmanship, and indigenous knowledge systems. The preservation of cultural heritage is driven by multiple and sometimes competing motivations: the intrinsic value of cultural continuity, the economic value of heritage tourism, the role of heritage in constructing national and community identities, and the scientific value of material remains as records of human history.",
+      "sourceExcerptSha256": "68e1a8263dfa2afa30625df89a843f594089264e8d6af9f536abf262527dcbe0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "intangible",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "intangible",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Convention"
+      ],
+      "questionPrompt": "38. The UNESCO World Heritage {{38}}, adopted in 1972, is the central international framework for heritage protection.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The international framework for heritage protection is centred on the UNESCO World Heritage Convention, adopted in 1972. By 2026, its List contained more than 1,200 properties in over 170 states, while 196 states had joined the Convention. States Parties identify and nominate properties, protect their World Heritage values, manage them, and report on their condition. Inscription does not transfer ownership to UNESCO, and national authorities retain primary responsibility, with international assistance available under the Convention. Listing can attract attention and support, but does not guarantee safety: UNESCO maintained dozens of properties on the List of World Heritage in Danger. The Great Barrier Reef faces severe threats from climate change, yet it was not on that danger list, illustrating why the condition of a site and its formal UNESCO category must not be conflated.",
+      "sourceExcerptSha256": "4ab715f7d802cc91bdfb5f96fb769c59b4874d525f7aee583a6b2a6e71e289a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Convention",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Convention",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "original",
+        "idealised"
+      ],
+      "questionPrompt": "39. Early conservation philosophy sometimes prioritised restoring buildings to an {{39}} state by removing later additions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "The practice of conservation has evolved significantly. Some nineteenth-century restorations pursued an idealised \"original\" state, removing later additions or replacing deteriorated material. The 1964 Venice Charter instead said that valid contributions from all periods should be respected and that replacement work should be distinguishable from the original so the historical record is not falsified. Reversibility later became a widely discussed conservation aim, but the word itself does not appear in the Charter. Later documents and practice also placed greater weight on cultural context, living traditions, and participation by the communities whose heritage is being conserved. Authenticity and significance can depend on use, setting, knowledge, and relationships as well as original fabric.",
+      "sourceExcerptSha256": "63834f7a86c067a49966e02945cc849ee21c0341f454e74c884c4a68c5d68b6c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "original",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "original",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "idealised",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "photogrammetry"
+      ],
+      "questionPrompt": "40. Technologies such as three-dimensional scanning and {{40}} enable the creation of detailed digital records of endangered sites.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cultural Heritage and Its Preservation",
+      "sourceExcerpt": "Digital technologies create new possibilities for documentation and access. Three-dimensional scanning, photogrammetry, and virtual reality can record geometry and appearance, assist repair, or let remote audiences explore a reconstruction. A digital record survives some forms of physical destruction, but files also depend on metadata, formats, storage, maintenance, and permission. Models of Palmyra or Notre-Dame may support research and public understanding, yet they cannot preserve original material, location, ritual use, memory, or every uncertainty in the evidence. Decisions about who owns scans and how sacred or sensitive knowledge is displayed add a further governance problem. Digital preservation is therefore a valuable layer of practice rather than an automatic substitute for caring for people, places, and objects.",
+      "sourceExcerptSha256": "101ee9d2c79a6d890538a9a86e94dfc68626a3dbb83ed5ba12c2d31e9638a275",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "photogrammetry",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "photogrammetry",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [],
+  "reviewSha256": "81bb37d66ebfb9bde02cbb13b7246b241cc23480eea97ff4b095bc27b539b15a"
+}

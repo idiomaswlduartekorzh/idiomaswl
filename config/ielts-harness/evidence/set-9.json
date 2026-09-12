@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 9,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-9.ts",
+    "sourceSha256": "f4ff3e27af7db9ef2230c1649ec960aaeca2b4399829dfb5b2832c8d718f7961",
+    "releaseFingerprintSha256": "a9042902d386dd8351125645ec47a6f36c9131be998efb455a8712bd7c9824e8"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+      "transcriptSha256": "84538f11d3419822eacd4cad689e684fd92971d7667e9132c98b28b65f1a60ed",
+      "objectiveSha256": "ab6e0217ad18300d16754a756ea57767ab4433817787e60cef4f4e948a1ab39b"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+      "transcriptSha256": "84538f11d3419822eacd4cad689e684fd92971d7667e9132c98b28b65f1a60ed",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-9-listening-evidence.json",
+      "evidenceSha256": "b673b4949d8221f53a63bbcbfb09820277a72be334e11d13e9f9326978997750"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 128.67,
+        "endSeconds": 132.61,
+        "audiblePhrase": "Yes. My first name's Rebecca. And my surname is Whitcomb.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 143.63,
+        "endSeconds": 148.71,
+        "audiblePhrase": "The file is 077-34-209-865.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 166.89,
+        "endSeconds": 171.01,
+        "audiblePhrase": "I'll take a twin room. Oh, sorry. No, a double, please.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 248.29,
+        "endSeconds": 251.83,
+        "audiblePhrase": "It's for business. There's a conference in the city that week.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 255.55,
+        "endSeconds": 259.81,
+        "audiblePhrase": "Two things, actually. We'll be driving down, so we'd like parking.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 260.55,
+        "endSeconds": 264.01,
+        "audiblePhrase": "And we're bringing our baby. So could you put a cot in the room?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 272.31,
+        "endSeconds": 276.05,
+        "audiblePhrase": "Our standard room has one double bed and looks out over the garden.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 280.85,
+        "endSeconds": 283.71,
+        "audiblePhrase": "The family room sleeps more. It has three beds,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 284.11,
+        "endSeconds": 289.33,
+        "audiblePhrase": "though it overlooks the car park, I'm afraid. That one is 120 pounds per night.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 295.39,
+        "endSeconds": 298.37,
+        "audiblePhrase": "The suite is 180 pounds a night.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 571.17,
+        "endSeconds": 597.71,
+        "audiblePhrase": "Let me start with the building itself, because we've made some changes recently. Over the summer, we added a brand new gym on the ground floor, which all employees can use free of charge. We've also added secure bike storage by the rear entrance, which has proved very popular with cyclists. The canteen and the car park, of course, have been here for years, so those aren't new. But the gym and the bike storage are, and I'd encourage you to make the most of them.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 571.17,
+        "endSeconds": 597.71,
+        "audiblePhrase": "Let me start with the building itself, because we've made some changes recently. Over the summer, we added a brand new gym on the ground floor, which all employees can use free of charge. We've also added secure bike storage by the rear entrance, which has proved very popular with cyclists. The canteen and the car park, of course, have been here for years, so those aren't new. But the gym and the bike storage are, and I'd encourage you to make the most of them.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 600.85,
+        "endSeconds": 604.83,
+        "audiblePhrase": "On your first morning, please collect your security pass from the reception desk.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 608.5699999999999,
+        "endSeconds": 613.37,
+        "audiblePhrase": "Our working day starts at 8.30, though many people arrive a little earlier for a coffee.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 616.37,
+        "endSeconds": 620.33,
+        "audiblePhrase": "The canteen is on the second floor, and it serves hot meals from midday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 620.99,
+        "endSeconds": 625.25,
+        "audiblePhrase": "In every kitchen area, you'll find free hot drinks available throughout the day,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 627.55,
+        "endSeconds": 631.73,
+        "audiblePhrase": "In terms of your first few weeks, each new employee is assigned a mentor,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 637.93,
+        "endSeconds": 642.11,
+        "audiblePhrase": "The meeting will focus mainly on the company software, which can take a little getting used to.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 642.67,
+        "endSeconds": 645.89,
+        "audiblePhrase": "And I should mention that the probation period lasts three months,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 652.49,
+        "endSeconds": 656.61,
+        "audiblePhrase": "There's a team meeting every Friday where we share updates and celebrate successes.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 885.79,
+        "endSeconds": 892.05,
+        "audiblePhrase": "Well, we set out to investigate students' breakfast habits, whether they eat breakfast and what they typically have.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 894.21,
+        "endSeconds": 904.59,
+        "audiblePhrase": "Mainly because it's the meals students skip most often. We thought that made it worth studying. There's a lot of advice telling people not to skip it, but not much on what students actually do.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 907.93,
+        "endSeconds": 915.93,
+        "audiblePhrase": "We considered doing face-to-face interviews at first, but in the end, we used an online questionnaire. It let us reach far more people quickly.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 918.43,
+        "endSeconds": 928.17,
+        "audiblePhrase": "The most surprising result was that most students who skip breakfast did so simply to save time in the mornings, not because they weren't hungry or were dieting, as we'd assumed.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1003.55,
+        "endSeconds": 1018.11,
+        "audiblePhrase": "Yes. Our biggest problem was the sample. We had far too few male participants. For the written report, add more graphs. At the moment, it is too text-heavy, and visuals would make the results easier to follow.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1009.73,
+        "endSeconds": 1011.89,
+        "audiblePhrase": "For the written report, add more graphs.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1019.95,
+        "endSeconds": 1022.63,
+        "audiblePhrase": "For future work, make your sample larger.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1023.17,
+        "endSeconds": 1026.17,
+        "audiblePhrase": "You should also check the reliability of your sources.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1045.09,
+        "endSeconds": 1049.19,
+        "audiblePhrase": "The final report must be handed in by Friday, so you've got a few days.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1050.27,
+        "endSeconds": 1055.73,
+        "audiblePhrase": "Oh, and Tom, I'll lend you a book that covers survey design really well.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1322.37,
+        "endSeconds": 1325.57,
+        "audiblePhrase": "and most volcanoes form at the boundaries of these tectonic plates,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1335.27,
+        "endSeconds": 1336.11,
+        "audiblePhrase": "it's known as lava.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1347.77,
+        "endSeconds": 1350.67,
+        "audiblePhrase": "As a result, they are broad and low, with gentle slopes.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1355.61,
+        "endSeconds": 1359.27,
+        "audiblePhrase": "They are tall and steep, and they tend to produce far more violent eruptions.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1360.8700000000001,
+        "endSeconds": 1366.23,
+        "audiblePhrase": "When a large volcano erupts, it can throw enormous clouds of ash high into the atmosphere.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1374.43,
+        "endSeconds": 1377.99,
+        "audiblePhrase": "But the deadliest hazard of all is what's called a pyroclastic flow,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1390.81,
+        "endSeconds": 1394.21,
+        "audiblePhrase": "For one thing, volcanic regions often have extremely fertile soil,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1396.61,
+        "endSeconds": 1400.79,
+        "audiblePhrase": "For another, the heat below the surface can be tapped to generate geothermal energy,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1410.69,
+        "endSeconds": 1413.59,
+        "audiblePhrase": "Sensitive instruments record tiny earthquakes beneath the ground,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1420.81,
+        "endSeconds": 1423.01,
+        "audiblePhrase": "scientists can increasingly predict eruptions,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "3abf50b40ad7e813b5a21a0651328ad909eed948a816cb6bb00ded9eae54e754",
+      "objectiveSha256": "ab6e0217ad18300d16754a756ea57767ab4433817787e60cef4f4e948a1ab39b"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Vaccination is one of the most effective public health interventions in human history. Before its development, infectious diseases including smallpox, polio, measles, and diphtheria killed or disabled millions of people annually and were considered inescapable facts of life. Today, smallpox has been completely eradicated, polio survives in only a handful of countries, and childhood diseases that once swept through populations in devastating waves are largely preventable with a single injection. Protection operates at both individual and population levels. When enough people are immune, an infected person has fewer opportunities to pass a pathogen onward, indirectly protecting people who cannot receive a particular vaccine. Sustaining that barrier requires broad coverage because local gaps can still permit outbreaks.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The foundational insight of vaccination—that exposure to a mild or weakened form of a disease could confer protection against the severe form—was not the product of a single discovery but emerged from centuries of observation. In China, practitioners of variolation were inoculating people against smallpox as early as the sixteenth century by introducing dried scabs from mild cases into healthy individuals through the nose or skin. The practice spread through the Ottoman Empire and reached England in the early eighteenth century, where it was championed by Lady Mary Wortley Montagu, who had observed it in Constantinople. Variolation carried a small but real mortality risk—approximately two percent of those inoculated died—but this was far lower than the thirty percent case fatality rate of naturally acquired smallpox. Recipients could also transmit infection while recovering, so the practice remained dangerous to both the individual and the surrounding community. Its adoption nevertheless showed that people were prepared to accept a controlled risk to avoid a much greater one.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-table__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The decisive advance came in 1796, when English country physician Edward Jenner noticed that milkmaids who had contracted cowpox—a mild disease transmitted from cows—seemed to be protected against smallpox. Testing this hypothesis on a young boy named James Phipps, Jenner inoculated him with cowpox material and subsequently exposed him to smallpox. Phipps did not develop the disease. Jenner published his findings in 1798, coining the term \"vaccine\" from the Latin word vacca (cow). His discovery was remarkable not because it was immediately understood—the germ theory of disease would not emerge for another century—but because it worked.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-table__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The late nineteenth and early twentieth centuries saw rapid expansion of vaccine development, driven by advances in bacteriology and virology pioneered by Louis Pasteur and Robert Koch. Pasteur developed vaccines against chicken cholera, anthrax, and rabies; Koch established the methodological framework for identifying disease-causing microorganisms. Once particular microbes could be linked to particular diseases, researchers could design and test preventive preparations more systematically. Production still required reliable methods for weakening or inactivating an organism, preserving the product, and ensuring that one batch behaved like the next. The introduction of vaccines against diphtheria, tetanus, and pertussis in the 1920s and 1930s dramatically reduced childhood mortality in industrialised countries.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-table__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The late nineteenth and early twentieth centuries saw rapid expansion of vaccine development, driven by advances in bacteriology and virology pioneered by Louis Pasteur and Robert Koch. Pasteur developed vaccines against chicken cholera, anthrax, and rabies; Koch established the methodological framework for identifying disease-causing microorganisms. Once particular microbes could be linked to particular diseases, researchers could design and test preventive preparations more systematically. Production still required reliable methods for weakening or inactivating an organism, preserving the product, and ensuring that one batch behaved like the next. The introduction of vaccines against diphtheria, tetanus, and pertussis in the 1920s and 1930s dramatically reduced childhood mortality in industrialised countries.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-table__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-table__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The polio vaccine, developed by Jonas Salk and introduced in 1955, demonstrated the transformative potential of large-scale vaccination campaigns. Before the vaccine, polio paralysed hundreds of thousands of children annually. Within a decade of the vaccine's introduction, cases had fallen by ninety percent in the United States. The global effort to eradicate polio, launched in 1988, has since reduced annual cases from approximately 350,000 to fewer than fifty—one of the greatest public health achievements of the modern era. Reaching the final cases is especially difficult because health teams must find infections in communities affected by conflict, migration, or weak medical infrastructure. Success depends on surveillance and repeated delivery as well as the scientific effectiveness of the vaccine itself.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-table__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Vaccination has not been without controversy. In the late 1990s, a study published in a major medical journal claimed a link between the measles-mumps-rubella vaccine and autism. The study was subsequently found to be fraudulent; its lead author lost his medical licence and the paper was retracted. However, the damage to public confidence in vaccination proved persistent. Vaccine hesitancy—reluctance or refusal to vaccinate—has been identified by the World Health Organization as one of the top ten threats to global health, contributing to resurgences of measles in countries that had previously eliminated the disease.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Remote sensing technologies have transformed the pace and scope of deep-sea exploration. Autonomous Underwater Vehicles (AUVs) can be programmed to follow pre-set survey routes, collecting bathymetric data, water samples, and high-resolution imagery for months at a time without a surface crew. Remotely Operated Vehicles (ROVs), controlled in real time by operators on a surface ship, allow for more flexible investigation and the collection of biological specimens. The two systems serve complementary purposes: an AUV can cover a planned area efficiently, while an ROV lets scientists respond immediately when a camera reveals an unexpected feature. Both reduce the need to place people inside a pressure-resistant vehicle. Together, these technologies have enabled the mapping and characterisation of thousands of previously unknown seamounts, cold-water coral ecosystems, and deep-water fish populations.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. The deep ocean—generally defined as water below 200 metres in depth—covers more than half of the Earth's surface and represents the planet's largest habitat. Yet it remains the least explored environment on Earth. As of 2024, less than 25 percent of the ocean floor has been mapped to a resolution comparable to what is available for the surface of Mars. Mapping and direct observation are different achievements: sonar can outline ridges and trenches from a vessel, while identifying organisms or sediments requires cameras, sensors, or samples close to the seabed. A mapped area may therefore remain biologically almost unknown. The technological and logistical challenges of deep-sea exploration are immense, but so are the potential rewards: in biodiversity, in mineral resources, and in understanding the fundamental processes that regulate Earth's climate.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Pressure is the defining physical challenge of deep-sea environments. At the deepest point of the ocean—the Challenger Deep in the Mariana Trench, approximately 11,000 metres below the surface—the water pressure reaches about 1,086 bar, or roughly 1,086 times the pressure at sea level. This pressure would crush most conventional equipment and is lethal to organisms adapted to surface conditions. A sphere distributes force more evenly than a flat-sided chamber, reducing points where the hull might fail. Seals, windows, cables, and electronic housings must tolerate the same pressure difference, so the strength of the main vessel alone is insufficient. Exploring such environments requires specially engineered submersibles with titanium or glass spherical hulls capable of withstanding these forces, and the cost of constructing and operating such vehicles is prohibitive for most research institutions.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. International governance of the deep ocean remains incomplete. The high seas—oceans beyond national jurisdiction—cover approximately 43 percent of the Earth's surface and are governed by a fragmented framework of treaties. In 2023, after nearly two decades of negotiation, the United Nations adopted a Treaty on the High Seas, establishing for the first time a legal mechanism for creating marine protected areas in international waters. Conservationists welcomed the treaty as a historic step, though its effectiveness will ultimately depend on the political will of member states to ratify and enforce its provisions.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sent__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Pressure is the defining physical challenge of deep-sea environments. At the deepest point of the ocean—the Challenger Deep in the Mariana Trench, approximately 11,000 metres below the surface—the water pressure reaches about 1,086 bar, or roughly 1,086 times the pressure at sea level. This pressure would crush most conventional equipment and is lethal to organisms adapted to surface conditions. A sphere distributes force more evenly than a flat-sided chamber, reducing points where the hull might fail. Seals, windows, cables, and electronic housings must tolerate the same pressure difference, so the strength of the main vessel alone is insufficient. Exploring such environments requires specially engineered submersibles with titanium or glass spherical hulls capable of withstanding these forces, and the cost of constructing and operating such vehicles is prohibitive for most research institutions.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sent__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Despite these difficulties, the deep sea has already yielded discoveries that have transformed our understanding of life. The discovery of hydrothermal vent ecosystems in 1977 overturned a foundational assumption of biology: that all life on Earth ultimately depends on photosynthesis. Vent communities thrive in total darkness, sustained by chemosynthesis—the conversion of chemical energy from hydrogen sulfide and other compounds emitted by vents into organic matter. Tube worms, shrimp, crabs, and fish crowd around these superheated plumes at temperatures that would be fatal to most surface life. The existence of life in such extreme conditions has extended scientific speculation about the possibility of life elsewhere in the solar system, particularly in the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sent__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sent__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The deep ocean also holds vast mineral deposits. Polymetallic nodules—potato-sized lumps of manganese, cobalt, nickel, and copper—litter vast areas of the abyssal plain, formed over millions of years by the precipitation of minerals from seawater. The Clarion-Clipperton Zone in the Pacific alone is estimated to contain more nickel and cobalt than all known land-based deposits combined—metals critical to battery technology for electric vehicles. The nodules also provide hard surfaces in an environment otherwise dominated by soft sediment, allowing some organisms to attach or shelter nearby. Collecting them would remove that habitat and stir plumes of fine material whose movement is difficult to predict. Growing interest in deep-sea mining has alarmed marine scientists, who warn that the ecosystems of the abyssal plain, where biological turnover is extraordinarily slow, may take centuries to recover from physical disturbance.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sent__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Remote sensing technologies have transformed the pace and scope of deep-sea exploration. Autonomous Underwater Vehicles (AUVs) can be programmed to follow pre-set survey routes, collecting bathymetric data, water samples, and high-resolution imagery for months at a time without a surface crew. Remotely Operated Vehicles (ROVs), controlled in real time by operators on a surface ship, allow for more flexible investigation and the collection of biological specimens. The two systems serve complementary purposes: an AUV can cover a planned area efficiently, while an ROV lets scientists respond immediately when a camera reveals an unexpected feature. Both reduce the need to place people inside a pressure-resistant vehicle. Together, these technologies have enabled the mapping and characterisation of thousands of previously unknown seamounts, cold-water coral ecosystems, and deep-water fish populations.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sent__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. International governance of the deep ocean remains incomplete. The high seas—oceans beyond national jurisdiction—cover approximately 43 percent of the Earth's surface and are governed by a fragmented framework of treaties. In 2023, after nearly two decades of negotiation, the United Nations adopted a Treaty on the High Seas, establishing for the first time a legal mechanism for creating marine protected areas in international waters. Conservationists welcomed the treaty as a historic step, though its effectiveness will ultimately depend on the political will of member states to ratify and enforce its provisions.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The rise of generative artificial intelligence since 2020 has added a new dimension to this debate. Large language models and image-generation systems can now produce text, code, and creative content of professional quality in seconds. Unlike the automation of the 1980s, which primarily affected production workers, generative AI threatens professions that have historically been insulated from technological displacement: lawyers, accountants, journalists, radiologists, and software developers. Exposure does not necessarily mean that an entire profession disappears. A system may draft routine material while a worker verifies facts, handles unusual cases, or remains accountable for the result, changing the composition and required skill of the job. Whether this represents the beginning of a genuinely new economic era or simply an accelerated version of previous technological transitions remains vigorously contested.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The fear that technological change will destroy jobs on a net basis has a long history. The Luddites—English textile workers who destroyed machinery in the early nineteenth century—feared, correctly, that mechanisation would eliminate their specific occupations. They were wrong, however, about the broader consequences: industrialisation ultimately created far more employment than it destroyed, raising living standards across the economy. That distinction between a task, an occupation, and total employment is central to the modern debate. Technology can remove one activity from a job while leaving other duties intact, or eliminate a local occupation while creating different work elsewhere. Aggregate gains do not guarantee that displaced individuals can move easily into the new roles. Economists who draw comfort from this history argue that technological change is fundamentally labour-complementing—creating new tasks, new industries, and new forms of work that offset the jobs displaced. Sceptics counter that artificial intelligence differs qualitatively from previous technologies because it can replicate not just manual labour but cognitive work, threatening a much broader range of occupations simultaneously.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The empirical evidence so far is mixed. Routine cognitive and manual tasks—those that can be reduced to a set of predictable steps—have been automated at substantial rates since the 1980s. Jobs involving non-routine physical tasks (plumbing, surgery, hairdressing) and non-routine cognitive tasks (creative problem-solving, social intelligence, strategic judgement) have proved considerably more resilient. Studies by economists David Autor and colleagues have documented a polarisation of labour markets in advanced economies: middle-skill jobs in routine occupations have hollowed out, while demand has grown at both the high-skill and low-skill ends of the distribution. Growth at both ends does not imply equal rewards. High-skill work may command rising salaries, while many low-skill service roles remain poorly paid and offer limited progression. The result is an \"hourglass economy\" in which middle-income earners face declining opportunity.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Policy responses to labour market transformation have varied widely. Nordic countries have invested heavily in active labour market policies—retraining programmes, wage subsidies, and generous unemployment insurance—that facilitate transitions between sectors without the prolonged hardship experienced in economies with weaker social safety nets. Some economists have proposed universal basic income as a more radical solution: providing every adult with an unconditional payment sufficient to cover basic needs, freeing individuals to pursue education, caregiving, or entrepreneurship without being trapped in insecure low-wage employment. Critics question whether such schemes are financially sustainable or whether they would reduce incentives to work.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Education systems face enormous pressure to adapt. Curricula designed for the industrial era, emphasising memorisation and standardised assessment, are increasingly misaligned with the cognitive competencies—adaptability, complex communication, creative thinking—that labour markets are beginning to demand. Educational reformers argue that learning to learn—developing the metacognitive skills to acquire and deploy new capabilities throughout a working life—is more valuable than mastery of any fixed body of knowledge. Updating skills cannot be confined to the years before a person enters employment if technology continues to change during a career. Employers, training institutions, and governments therefore face questions about who should fund repeated learning and how workers can study without losing their income. Sceptics warn that fundamental skills in literacy, numeracy, and analytical reasoning remain essential foundations, and that enthusiasm for \"twenty-first-century skills\" has sometimes been used to justify the abandonment of rigorous instruction.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "eb64803929cdf7caf83f012b16fb858a1fdc31239a0ad15520df2372a864e6fe",
+      "task1ImageSha256": "070be567c78cc7b5612747e996295b3f7b5d6ba30bac73735a2fd11fdcf53b3b"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Corrected the prompt from six to five subject areas to match the five categories shown."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "f191bbad2ede2e2820d2819fb71cda52490fd3d3bb4c6ce61da54fc84e021afd"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "ab6e0217ad18300d16754a756ea57767ab4433817787e60cef4f4e948a1ab39b",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-9-objective-review.json",
+    "evidenceSha256": "dcd88c7ad91c2adf63b7e418cd64cc5be6934cf21cd135cd4519308bc6989acf",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "34cbf1d45c0d17f9716ce3629456356ce679cf36c8dbb509e4257421328684a0"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "a9042902d386dd8351125645ec47a6f36c9131be998efb455a8712bd7c9824e8",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

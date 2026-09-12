@@ -407,7 +407,7 @@ International coordination is essential because resistance genes move across bor
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Antibiotic {{8}} programmes aim to ensure that drugs are prescribed only when necessary and in correct doses.\n9. Carbapenems are described in the passage as {{9}} treatments when other antibiotics have failed.\n10. The decline in pharmaceutical company investment in antibiotics since the 1980s has resulted in an inadequate antibiotic {{10}}.\n11. In 2024, countries agreed to {{11}} deaths associated with bacterial AMR by 10 percent before 2030.\n12. Resistance genes spread internationally through trade, travel, and {{12}} flows.\n13. Bacteria that have developed resistance to multiple antibiotic classes are grouped by the WHO as {{13}} pathogens.`,
+          template: `8. Antibiotic {{8}} programmes aim to ensure that drugs are prescribed only when necessary and in correct doses.\n9. Carbapenems are described in the passage as {{9}} treatments when other antibiotics have failed.\n10. The decline in pharmaceutical company investment in antibiotics since the 1980s has resulted in an inadequate antibiotic {{10}}.\n11. In 2024, countries agreed to {{11}} deaths associated with bacterial AMR by 10 percent before 2030.\n12. Resistance genes spread internationally through trade, travel, and {{12}} flows.\n13. Bacteria of particular concern appear on the WHO's {{13}} list.`,
           blanks: [
             { num: 8, answers: ['stewardship'] },
             { num: 9, answers: ['last-resort'] },
@@ -511,10 +511,10 @@ The equity dimension of transport transitions is frequently overlooked in discus
           type: 'mcq',
           id: 'r3-q27',
           part: 7,
-          text: 'According to the passage, what is the main reason why electric vehicle sales have grown so rapidly?',
+          text: 'According to the passage, which combination of factors has driven the rapid growth of electric vehicle sales?',
           options: [
             'Government subsidies have made EVs significantly cheaper than conventional vehicles everywhere.',
-            'The dramatic fall in the cost of lithium-ion batteries over the past decade.',
+            'Falling battery costs together with supportive government policy.',
             'The superior performance and range of electric vehicles compared to petrol cars.',
             'International agreements requiring car manufacturers to phase out combustion engines.',
           ],

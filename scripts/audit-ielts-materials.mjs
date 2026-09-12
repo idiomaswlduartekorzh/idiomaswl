@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { objectiveRows, mockFromPublicHtml } from './lib/ielts-answer-key-audit.mjs';
 import { ieltsAnswerUnits, whitespaceWords } from './lib/ielts-text-metrics.mjs';
 import { withIeltsListeningProductionTranscript } from '../src/data/mocks/ielts-listening-production.ts';
+import { withIeltsListeningLegacyReplacementTranscript } from '../src/data/mocks/ielts-listening-legacy-replacement.ts';
 
 // Inventory and screening, NOT academic approval. Never derives a trusted key
 // from the same key being tested. Generated evidence belongs outside product code.
@@ -107,9 +108,10 @@ const sets = [];
 for (let n = 1; n <= 20; n++) {
   const source = `src/data/mocks/ielts-set-${n}.ts`;
   const authoredMock = (await import(new URL(`../${source}`, import.meta.url))).default;
-  const mock = withIeltsListeningProductionTranscript(authoredMock);
+  const mock = withIeltsListeningLegacyReplacementTranscript(withIeltsListeningProductionTranscript(authoredMock));
   const sections = skill => mock.sections.filter(s => s.skill === skill);
   const L = sections('listening'), R = sections('reading'), W = sections('writing').flatMap(s => s.questions);
+  const S = sections('speaking').flatMap(section => section.questions).filter(question => question.type === 'speak');
   const issues = [];
   const add = (code, detail, severity = 'high') => issues.push({ code, detail, severity });
   let rows = [];
@@ -179,10 +181,15 @@ for (let n = 1; n <= 20; n++) {
   const listeningTranscriptSha256 = hash(JSON.stringify(L.map(s => ({ part: s.part, transcript: s.transcript ?? '' }))));
   const readingContentSha256 = hash(JSON.stringify(R.map(s => ({ part: s.part, passage: s.passage ?? '' }))));
   const writingContentSha256 = hash(JSON.stringify(W.map(q => ({ id: q.id, task: q.taskNumber, text: q.text ?? '', stimulus: q.stimulus ?? '', stimulusLabel: q.stimulusLabel ?? '', imageUrl: q.imageUrl ?? '' }))));
+  const speakingContentSha256 = hash(JSON.stringify(S.map(question => ({
+    id: question.id, part: question.part, partNumber: question.partNumber, text: question.text,
+    cueCard: question.cueCard ?? '', followUp: question.followUp ?? [],
+  }))));
   const sourceSha256 = hash(fs.readFileSync(path.join(root, source)));
-  const contentSha256 = hash(JSON.stringify({ sourceSha256, objectiveSha256, listeningTranscriptSha256, readingContentSha256, writingContentSha256 }));
+  const contentSha256 = hash(JSON.stringify({ sourceSha256, objectiveSha256, listeningTranscriptSha256,
+    readingContentSha256, writingContentSha256, speakingContentSha256 }));
   sets.push({ set: n, mockId: mock.id, source, sourceSha256, contentSha256, objectiveSha256, objectiveAuditRows,
-    listeningTranscriptSha256, readingContentSha256, writingContentSha256,
+    listeningTranscriptSha256, readingContentSha256, writingContentSha256, speakingContentSha256,
     audio, transcriptCount: L.filter(s => s.transcript).length,
     listening: L.map(s => ({ part: s.part, title: s.title, words: words(s.transcript), sha256: hash(s.transcript ?? '') })),
     reading, readingWords, writingImage,

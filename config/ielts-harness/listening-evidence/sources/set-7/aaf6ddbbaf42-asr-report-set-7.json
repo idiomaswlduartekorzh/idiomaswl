@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T21:04:13.271Z",
+  "set": 7,
+  "source": "src/data/mocks/ielts-set-7.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-7.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/ielts-listening-set-7.mp3",
+  "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+  "transcriptSha256": "9ea7a082accb0d799f7345e98c104421c5ba1cabb22cf065d9f12c49cf5245f4",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "5f26d813173381b46a1a86a343279cd325ad606233abd30c1cb6f3ebf6e76f95",
+  "asrRecognitionVariantsSha256": "868c1025166f17e7f38b8f3e7bbdbc258b8d3ab4e6e11df14d04f8199ae95e5b",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/whisper-set-7.json",
+  "asrSourceSha256": "58c5bfe887224b097de2ba8b4ce69f191694ceedc1175fdd01dafd55470b0043",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 3829,
+  "recognizedWords": 3684,
+  "editDistance": 245,
+  "wordErrorRate": 0.064,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Whitcombe",
+        "whitcombe"
+      ],
+      "asrRecognitionVariants": [
+        "Whitcomb"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 84.5,
+      "endSeconds": 90.92,
+      "audiblePhrase": "Yes, my first name's Helen. Thank you Helen. And your surname? It's Whitcomb. Could you spell that for me?"
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "07700900318",
+        "07700 900318"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 101.46,
+      "endSeconds": 113.24,
+      "audiblePhrase": "Whitcomb, got it. And a contact number. In case a class is cancelled or the room changes, my mobile is 07700900318."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "library"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 144.98,
+      "endSeconds": 151.48,
+      "audiblePhrase": "However, I first found the autumn program when I saw your poster in the library, so put the library on the form."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "photography"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 202.24,
+      "endSeconds": 210.3,
+      "audiblePhrase": "Drawing also sounded relaxing. But after reading the course descriptions, I've made up my mind. I'd like to do photography."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "career"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 225.98,
+      "endSeconds": 238.86,
+      "audiblePhrase": "I don't need a qualification. Mainly I'm hoping it will help with my career. I work in marketing and lately I've been expected to take better images for our website instead of always hiring a photographer."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "camera"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 246.8,
+      "endSeconds": 255.3,
+      "audiblePhrase": "One important requirement is that students bring their own camera. The centre has computers for editing, but it doesn't lend photographic equipment."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 285.86,
+      "endSeconds": 296.12,
+      "audiblePhrase": "In that case, start with beginners. It runs on Tuesday evenings from 6.30 until 8.30 and lasts for 10 weeks."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 297.46,
+      "endSeconds": 309.54,
+      "audiblePhrase": "There is a short break halfway through the evening. The term fee is £120 which includes printing materials and the class meets in Room B4 on the ground floor."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "Thursday",
+        "thursday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 335.16,
+      "endSeconds": 347.5,
+      "audiblePhrase": "Yes. The follow-up course concentrates on portrait and low light work. It runs on Thursday evenings. It's slightly shorter at 8 weeks and its fees lower to £95."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "95",
+        "£95"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 335.16,
+      "endSeconds": 347.5,
+      "audiblePhrase": "Yes. The follow-up course concentrates on portrait and low light work. It runs on Thursday evenings. It's slightly shorter at 8 weeks and its fees lower to £95."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "warehouse"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 547.42,
+      "endSeconds": 559.36,
+      "audiblePhrase": "Now take a moment to look at the building around you. The museum occupies a 19th century warehouse, which once stored timber, rope and other goods arriving by sea."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "bell"
+      ],
+      "asrRecognitionVariants": [
+        "ship spell"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 584.14,
+      "endSeconds": 590.86,
+      "audiblePhrase": "A ship's bell made roughly 400 years ago. Divers recovered it from a wreck just off this coast."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "fishing boats",
+        "boats"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 608.42,
+      "endSeconds": 615.42,
+      "audiblePhrase": "Next, go through the wide doorway on your left. The first gallery contains detailed models of fishing boats."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "coastline"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "diving suit"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 723.84,
+      "endSeconds": 733.54,
+      "audiblePhrase": "A modern, wet suit stands nearby for comparison, but visitor surveys consistently identify the Victorian diving suit as the favourite."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "film"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 733.9,
+      "endSeconds": 739.66,
+      "audiblePhrase": "In the same room, a short film tells the history of the port through photographs and interviews."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "garden"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 759.62,
+      "endSeconds": 766.94,
+      "audiblePhrase": "The café is at the rear of the building, beside the garden. On fine days, tables are placed among the old anchors outside."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "cloakroom"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 775.1,
+      "endSeconds": 785.02,
+      "audiblePhrase": "Before going upstairs, please put large bags and wet coats in the cloakroom near the entrance. This protects both the exhibits and other visitors in the narrow galleries."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "room"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1137.44,
+      "endSeconds": 1142.8,
+      "audiblePhrase": "The library room is already provisionally booked, so booking is not our immediate task."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "length"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1196.42,
+      "endSeconds": 1204.84,
+      "audiblePhrase": "Make sure every passage is the same length. Similar topics are useful, but a longer passage would demand more effort and introduce another variable."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "script"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1213.9,
+      "endSeconds": 1221.22,
+      "audiblePhrase": "Rather than explaining the task differently each time, one of us will read the instructions aloud from a fixed script."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "graph"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1232.5,
+      "endSeconds": 1243.46,
+      "audiblePhrase": "We'll calculate an average score for each condition. In the report, the three scores will appear in a bar graph because the groups are separate categories rather than measurements across continuous time."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "consent"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1250.66,
+      "endSeconds": 1261,
+      "audiblePhrase": "Finally, ethics. Your information sheet explains that people may leave at any time, which is good. Before anyone takes part, however, you must obtain written consent."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "melatonin"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1401.92,
+      "endSeconds": 1405.42,
+      "audiblePhrase": "The brain normally increases production of a hormone called melatonin."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "rhythm"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1422.36,
+      "endSeconds": 1426.6,
+      "audiblePhrase": "That signal operates within a roughly 24-hour pattern known as the circadian rhythm."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "deep"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1475.46,
+      "endSeconds": 1481.22,
+      "audiblePhrase": "For a simple overview, these are often grouped into two main types, REM sleep and deep sleep."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "muscle",
+        "muscles"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1488.08,
+      "endSeconds": 1492.28,
+      "audiblePhrase": "Vivid dreaming is common and most large muscles are temporarily less active."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "memory",
+        "memories"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1534.08,
+      "endSeconds": 1537.86,
+      "audiblePhrase": "Evidence links it to emotional processing and to consolidating memory."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "system"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1620.46,
+      "endSeconds": 1626.18,
+      "audiblePhrase": "Even several nights of restricted sleep can alter the activity of immune cells and weaken the immune system."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "mood"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1639.44,
+      "endSeconds": 1641.82,
+      "audiblePhrase": "Sleep loss has a strong influence on mood."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "growth"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1664.28,
+      "endSeconds": 1669.7,
+      "audiblePhrase": "Teenagers generally need more sleep than adults, partly because adolescence is a period of rapid growth."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "insomnia"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1708.02,
+      "endSeconds": 1717.46,
+      "audiblePhrase": "Sleep disorder is insomnia, defined by repeated trouble falling asleep, staying asleep or obtaining restorative sleep, despite having an adequate opportunity to rest."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "caffeine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1752.3,
+      "endSeconds": 1755.26,
+      "audiblePhrase": "In particular, experts advise avoiding caffeine in the evening."
+    }
+  ],
+  "completionEvidenceFound": 32,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "Accepted completion phrases not found in question order for Q16"
+  ],
+  "releaseAuthorized": false
+}

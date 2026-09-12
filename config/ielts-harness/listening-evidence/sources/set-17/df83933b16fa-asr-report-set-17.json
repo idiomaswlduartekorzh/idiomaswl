@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:06:12.741Z",
+  "set": 17,
+  "source": "src/data/mocks/ielts-set-17.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-17.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-17/ielts-listening-set-17.mp3",
+  "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+  "transcriptSha256": "9f2c676755fe417a3710e053b44dcccf55dd89550d1f376d8a20c7b37e9ee291",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "d683037a44b6b3a39ba1a3edd279386246ee55e4f0bd19773ae4f582f14e69db",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-17/whisper-set-17.json",
+  "asrSourceSha256": "cfd6dceb3dbf3ed65b1e8871b4dd7220999b3865c3fd5168081da9b239eb1b49",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3260,
+  "recognizedWords": 3174,
+  "editDistance": 140,
+  "wordErrorRate": 0.0429,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Maple",
+        "maple"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 96.5,
+      "endSeconds": 100.36,
+      "audiblePhrase": "Thank you, Mr Whitfield. And what's your address? It's 15 Maple Avenue."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "evenings",
+        "evening"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 165.38,
+      "endSeconds": 171.72,
+      "audiblePhrase": "And when's the best time for us to call you if we need to? In the evenings, please. I'm at work all day."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "roof"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 224.48,
+      "endSeconds": 229.82,
+      "audiblePhrase": "There's water coming in from the roof whenever it rains heavily. Let me finish the home repair"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "fence"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 258.92,
+      "endSeconds": 262.42,
+      "audiblePhrase": "Yes, there's also a broken fence in the back garden that needs repairing."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "afternoon"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 267.52,
+      "endSeconds": 273.14,
+      "audiblePhrase": "I'd prefer the morning. Oh, actually, no. Make it the afternoon. I have to take the children to"
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "neighbour",
+        "neighbor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 300.06,
+      "endSeconds": 304.68,
+      "audiblePhrase": "And how will our technician get in if you're not at home? I'll leave a spare key with a neighbour."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 305.02,
+      "endSeconds": 311.08,
+      "audiblePhrase": "They're always in. Perfect. Now, let me tell you about our two maintenance plans. The basic plan"
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "parts",
+        "part"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 311.08,
+      "endSeconds": 318.12,
+      "audiblePhrase": "includes two visits a year with a call out fee of £45 each time, but it does include free parts."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "30",
+        "£30"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 357.42,
+      "endSeconds": 362.32,
+      "audiblePhrase": "With that plan, the call out fee drops to £30 and it also includes free labour."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "labour",
+        "labor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 357.42,
+      "endSeconds": 362.32,
+      "audiblePhrase": "With that plan, the call out fee drops to £30 and it also includes free labour."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "90",
+        "ninety"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 526.1800000000001,
+      "endSeconds": 532.54,
+      "audiblePhrase": "Right, let me explain how the tour works. The tour lasts about 90 minutes and we'll finish back here"
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "flash"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 532.54,
+      "endSeconds": 538.3,
+      "audiblePhrase": "at the main entrance. Please note that photography is allowed, but only without flash, as bright"
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "lockers",
+        "locker"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 538.3,
+      "endSeconds": 543.96,
+      "audiblePhrase": "light can damage the older paintings. If you'd like to leave your bags, there are free lockers"
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "landscape"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 570.88,
+      "endSeconds": 575.58,
+      "audiblePhrase": "We'll start in the East Wing, which houses the Gallery's collection of landscape paintings."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "auction"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 576.3,
+      "endSeconds": 581.78,
+      "audiblePhrase": "The highlight there is a work called The Harvest, which the Gallery bought at auction in 2019"
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "path"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 588.06,
+      "endSeconds": 593.5,
+      "audiblePhrase": "stay on the path, as the grass has just been receded. As the Art Gallery tour continues,"
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "donated"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 682.86,
+      "endSeconds": 687.94,
+      "audiblePhrase": "Gallery on the first floor. Many of these portraits were donated by a local collector,"
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "discount"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 722.94,
+      "endSeconds": 727.4,
+      "audiblePhrase": "and don't forget that gallery members receive a 10% discount in the shop."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "sample"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 937.9,
+      "endSeconds": 941.68,
+      "audiblePhrase": "particularly when the sample is small, participants select themselves,"
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "caffeine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1162.54,
+      "endSeconds": 1165.52,
+      "audiblePhrase": "We should keep a log of each participant's caffeine intake,"
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "questionnaire"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1169.04,
+      "endSeconds": 1173.34,
+      "audiblePhrase": "And I'd like you to add a short questionnaire about their usual sleep patterns."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "ethical"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1174.06,
+      "endSeconds": 1178.54,
+      "audiblePhrase": "Finally, make sure you get ethical approval before you start testing."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "Tuesday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1179.28,
+      "endSeconds": 1181,
+      "audiblePhrase": "The committee meets next Tuesday."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "seventh",
+        "7th"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1335.9,
+      "endSeconds": 1340.16,
+      "audiblePhrase": "to reproduce texts as early as the 7th century."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "clay"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1341.0400000000002,
+      "endSeconds": 1345.7,
+      "audiblePhrase": "The Chinese also experimented with movable type made from clay,"
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "characters",
+        "character"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1346.42,
+      "endSeconds": 1350.48,
+      "audiblePhrase": "but because the Chinese writing system uses thousands of different characters,"
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "Mainz"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1384.04,
+      "endSeconds": 1389.84,
+      "audiblePhrase": "Gutenberg's crucial innovation, developed in the German city of Mainz around 1440,"
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "metal"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1390.54,
+      "endSeconds": 1392.66,
+      "audiblePhrase": "was movable type made from metal."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "alloy"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1393.6200000000001,
+      "endSeconds": 1396.68,
+      "audiblePhrase": "He created a special alloy that was durable enough"
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "ink"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1472.22,
+      "endSeconds": 1474.08,
+      "audiblePhrase": "Another essential element was ink."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "monks",
+        "monk"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1568.26,
+      "endSeconds": 1572.52,
+      "audiblePhrase": "Before printing, books were copied by hand, usually by monks,"
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "Reformation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1594.34,
+      "endSeconds": 1598.1,
+      "audiblePhrase": "is the reformation possible, because pamphlets could be produced"
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "diagrams",
+        "diagram"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1661.56,
+      "endSeconds": 1664.82,
+      "audiblePhrase": "Accurate diagrams could be reproduced identically"
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

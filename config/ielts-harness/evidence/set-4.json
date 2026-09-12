@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 4,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-4.ts",
+    "sourceSha256": "277662baf65ab60fad4bd0bdf14b8f419149c76d78bfa943af06e7e80e09d94e",
+    "releaseFingerprintSha256": "6a837688b15ff986382c05333269bb142941955dac2a67fc6b6641a03806ed22"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+      "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
+      "objectiveSha256": "97a253c573f0282be177844458e1d1183706ded11666ed5996f670daa280de7c"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+      "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-4-listening-evidence.json",
+      "evidenceSha256": "6cec64d9918d35bd9bfa507eae15424cf3f79045091b7b6e71bb06c4162dad54"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 71.3,
+        "endSeconds": 81.98,
+        "audiblePhrase": "Sure. My name's Paolo Ferreira, F-E-R-R-E-I-R-A, and my student number is PG4471-8.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 113.96,
+        "endSeconds": 115.04,
+        "audiblePhrase": "Environmental Science.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 149.22,
+        "endSeconds": 161.54,
+        "audiblePhrase": "That would be a cluster flat then. We have two options available from 1 September. The first is Maple Court. It's a 10 minute walk from the main campus. Each room has a desk, wardrobe, and single bed.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 149.22,
+        "endSeconds": 161.54,
+        "audiblePhrase": "That would be a cluster flat then. We have two options available from 1 September. The first is Maple Court. It's a 10 minute walk from the main campus. Each room has a desk, wardrobe, and single bed.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 253.18,
+        "endSeconds": 264.98,
+        "audiblePhrase": "The second is Cedar Hall. It's actually on campus, so very convenient. Monthly rent is £475. The rooms are slightly larger, and each has its own bathroom.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 270.58,
+        "endSeconds": 282.06,
+        "audiblePhrase": "Let me check availability. Cedar Hall has rooms available in both Block A and Block B. Block A faces the library and tends to be quieter. Block B is closer to the sports centre.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 313.22,
+        "endSeconds": 318.94,
+        "audiblePhrase": "Now for the application, I'll need a copy of your acceptance letter, your passport, and one recent bank statement.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 319.36,
+        "endSeconds": 327.04,
+        "audiblePhrase": "I have all of those. Can I send them by email? Before we close the student housing inquiry, could you tell me how I should raise a question after today?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 349.32,
+        "endSeconds": 355.72,
+        "audiblePhrase": "Once we receive your documents, we'll confirm your room within three working days and send you a contract to sign.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 357.92,
+        "endSeconds": 365.4,
+        "audiblePhrase": "Yes. The deposit is equivalent to one month's rent. It's fully refundable at the end of your stay, provided the room is left in good condition.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 559.16,
+        "endSeconds": 580.38,
+        "audiblePhrase": "Gallery 1 is dedicated to Earth's geological history, covering the formation of continents, volcanic activity and earthquakes. This gallery is particularly popular with school groups. You'll find interactive panels where visitors can simulate small earthquakes and examine real rock samples dating back over three billion years.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 559.16,
+        "endSeconds": 580.38,
+        "audiblePhrase": "Gallery 1 is dedicated to Earth's geological history, covering the formation of continents, volcanic activity and earthquakes. This gallery is particularly popular with school groups. You'll find interactive panels where visitors can simulate small earthquakes and examine real rock samples dating back over three billion years.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 614,
+        "endSeconds": 619.16,
+        "audiblePhrase": "which is 26 metres in length and took two years to reassemble following restoration work.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 614,
+        "endSeconds": 619.16,
+        "audiblePhrase": "which is 26 metres in length and took two years to reassemble following restoration work.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 626.16,
+        "endSeconds": 632.5,
+        "audiblePhrase": "Many visitors are surprised to learn that less than 10% of the world's known species are preserved here.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 716.28,
+        "endSeconds": 720,
+        "audiblePhrase": "Gallery 3 is our newest addition, opened just last year.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 725.26,
+        "endSeconds": 732.02,
+        "audiblePhrase": "Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 725.26,
+        "endSeconds": 732.02,
+        "audiblePhrase": "Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 759.8,
+        "endSeconds": 765.54,
+        "audiblePhrase": "Gallery 4 is currently undergoing partial renovation, but the dinosaur fossil section remains open.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 766.5,
+        "endSeconds": 774.64,
+        "audiblePhrase": "Our most prized exhibit is the Tyrannosaurus Rex skeleton in the far corner, which was discovered in Montana in 1987.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 985.1800000000001,
+        "endSeconds": 1001.78,
+        "audiblePhrase": "Hi James, did you finish reading the papers for our project on social media and wellbeing? Most of them. I thought the Valkenburg study was particularly convincing. It tracked the same group of teenagers over three years rather than just using a one-off questionnaire.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1021.76,
+        "endSeconds": 1051.2,
+        "audiblePhrase": "Our first idea may still help organise the work, but it should not decide how we describe the result. I think the media has blown it out of proportion. The relationship is probably more nuanced than more social media equals worse mental health.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1051.8,
+        "endSeconds": 1062.16,
+        "audiblePhrase": "I agree. Some studies show positive effects. Like for teenagers who feel socially isolated, social media can actually improve their sense of connection and reduce loneliness.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1083.9,
+        "endSeconds": 1093.68,
+        "audiblePhrase": "Right. An active use, posting, commenting, messaging seems less harmful than passive use, like just scrolling through other people's highlights.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1124.76,
+        "endSeconds": 1134.54,
+        "audiblePhrase": "I think we should focus on adolescents. There's more research on that group, and the developmental stage makes it especially interesting from a psychological perspective.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3q26",
+        "part": 3,
+        "startSeconds": 1247.5,
+        "endSeconds": 1261,
+        "audiblePhrase": "I will turn those points into a checklist, then we can sign off each requirement before calling the revision complete. The Warwick-Edenbrich scale is commonly used and well validated, it covers both psychological and social wellbeing.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3q27",
+        "part": 3,
+        "startSeconds": 1284.22,
+        "endSeconds": 1293.68,
+        "audiblePhrase": "That would be great for objective data rather than just self-reports, which tend to be unreliable, people consistently underestimate how long they spend on their phones.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l4-notes__28",
+        "part": 4,
+        "startSeconds": 1461.32,
+        "endSeconds": 1464.76,
+        "audiblePhrase": "Migration is fundamentally a response to seasonal changes in food availability.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l4-notes__29",
+        "part": 4,
+        "startSeconds": 1465.38,
+        "endSeconds": 1473.02,
+        "audiblePhrase": "During summer in the northern hemisphere, insects, seeds and fruits are abundant, and the long daylight hours allow birds to forage for long periods.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l4-notes__30",
+        "part": 4,
+        "startSeconds": 1474.02,
+        "endSeconds": 1481.4,
+        "audiblePhrase": "In winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-notes__31",
+        "part": 4,
+        "startSeconds": 1507.14,
+        "endSeconds": 1518.76,
+        "audiblePhrase": "First and most importantly, many species navigate using Earth's magnetic field. Researchers have discovered that birds have magnetite crystals in their beaks, effectively biological compasses.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-notes__32",
+        "part": 4,
+        "startSeconds": 1519.26,
+        "endSeconds": 1524.72,
+        "audiblePhrase": "A 2019 study confirmed that disrupting magnetic fields can disorient migrating birds even in clear conditions.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-notes__33",
+        "part": 4,
+        "startSeconds": 1525.72,
+        "endSeconds": 1533.26,
+        "audiblePhrase": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-notes__34",
+        "part": 4,
+        "startSeconds": 1525.72,
+        "endSeconds": 1533.26,
+        "audiblePhrase": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-notes__35",
+        "part": 4,
+        "startSeconds": 1619.8400000000001,
+        "endSeconds": 1629.24,
+        "audiblePhrase": "Third, birds rely on familiar landscape features. Coastlines, rivers and mountain ranges, and visual landmarks, particularly during the final stages of a journey.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-notes__36",
+        "part": 4,
+        "startSeconds": 1647.66,
+        "endSeconds": 1652.6,
+        "audiblePhrase": "Interestingly, many small songbirds migrate at night, when there is less wind turbulence and fewer predators.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4q37",
+        "part": 4,
+        "startSeconds": 1647.66,
+        "endSeconds": 1661.12,
+        "audiblePhrase": "Interestingly, many small songbirds migrate at night, when there is less wind turbulence and fewer predators. Larger birds like geese and swans travel during the day, often in V formations which reduce wind resistance and conserve energy.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4q38",
+        "part": 4,
+        "startSeconds": 1663.08,
+        "endSeconds": 1683,
+        "audiblePhrase": "This is also a good example of a migration. Many species are shifting their migration timing, arriving earlier in spring as temperatures rise. This sounds positive, but it can cause a mismatch. Birds may arrive before their food sources, the insects they feed on, have become available. This is called a phenological mismatch, and it is emerging as one of the key threats to migratory bird populations worldwide.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4q39",
+        "part": 4,
+        "startSeconds": 1663.08,
+        "endSeconds": 1683,
+        "audiblePhrase": "This is also a good example of a migration. Many species are shifting their migration timing, arriving earlier in spring as temperatures rise. This sounds positive, but it can cause a mismatch. Birds may arrive before their food sources, the insects they feed on, have become available. This is called a phenological mismatch, and it is emerging as one of the key threats to migratory bird populations worldwide.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4q40",
+        "part": 4,
+        "startSeconds": 1707.48,
+        "endSeconds": 1720.64,
+        "audiblePhrase": "Conservation efforts are focusing on protecting key stopover sites, the staging areas where birds rest and refuel mid-journey. Losing even one critical stopover site can have devastating effects on an entire species population.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "9949003ac506455cd902232fc885fb63730a6a8eddac54ffd609663117e77a91",
+      "objectiveSha256": "97a253c573f0282be177844458e1d1183706ded11666ed5996f670daa280de7c"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1q1",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. Such comparisons must be handled cautiously because recent foragers live in environments already shaped by states, markets and displaced populations. Even so, they challenge the assumption that cultivation automatically reduced effort or improved health. Farming demanded clearing, sowing, weeding, harvesting and storage, while tying households to fields that could fail. So why did people abandon this apparently successful lifestyle?",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1q2",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world. It was not a single event with a universal starting date. Archaeologists instead find overlapping experiments in plant tending, seasonal settlement and animal management, followed much later by crops and herds whose physical characteristics show sustained human selection. Different combinations appeared in Southwest Asia, East Asia, New Guinea, Africa and the Americas, using species suited to local environments.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1q3",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation. Repeated harvesting then favoured plants with traits useful to people, such as larger seeds or seed heads that did not shatter before collection. These biological changes accumulated over generations, so neither a single harvest nor a single settlement marks an uncontested boundary between gathering and farming.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1q4",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation. Repeated harvesting then favoured plants with traits useful to people, such as larger seeds or seed heads that did not shatter before collection. These biological changes accumulated over generations, so neither a single harvest nor a single settlement marks an uncontested boundary between gathering and farming.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1q5",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1q6",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs. Zooarchaeologists reconstruct this process from changes in the age and sex of slaughtered animals, shifts in body size and the appearance of managed herds beyond a species' original range. As with crops, management could precede clear biological domestication by many generations.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-summary__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems. Surplus did not mean that every harvest was abundant or that every person benefited equally. It meant that, across time, food producers could sustain people who were not directly engaged in obtaining food. Administrators could count stores and labour, craftspeople could work more continuously, and traders could connect settlements to distant sources of stone, metal and other materials.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-summary__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems. Surplus did not mean that every harvest was abundant or that every person benefited equally. It meant that, across time, food producers could sustain people who were not directly engaged in obtaining food. Administrators could count stores and labour, craftspeople could work more continuously, and traders could connect settlements to distant sources of stone, metal and other materials.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-summary__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-summary__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Today, scholars debate whether agriculture was genuinely \"invented\" at a single point in time, or whether it emerged gradually through a long process of environmental manipulation that is difficult to distinguish clearly from advanced foraging. What is certain is that once established, farming spread with remarkable speed, displacing or absorbing hunter-gatherer populations across most of the globe within a few thousand years. Its spread also followed more than one mechanism. In some places farming populations moved into new territory; elsewhere local foragers adopted selected crops, animals or techniques through exchange. The result was a patchwork of mixed economies rather than an immediate replacement of one way of life by another.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1q11",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1q12",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs. Zooarchaeologists reconstruct this process from changes in the age and sex of slaughtered animals, shifts in body size and the appearance of managed herds beyond a species' original range. As with crops, management could precede clear biological domestication by many generations.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1q13",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world. It was not a single event with a universal starting date. Archaeologists instead find overlapping experiments in plant tending, seasonal settlement and animal management, followed much later by crops and herds whose physical characteristics show sustained human selection. Different combinations appeared in Southwest Asia, East Asia, New Guinea, Africa and the Americas, using species suited to local environments.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2q14",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory. Electrical recordings show organised changes in brain activity across the night rather than a uniform reduction in activity. Researchers can distinguish stages by characteristic rhythms, eye movements and muscle tone, and can relate those stages to different kinds of processing without assuming that any one stage acts alone.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2q15",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2q16",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2q17",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "The relationship between sleep and memory is bidirectional. Not only does sleep promote memory consolidation, but learning and stress can in turn affect sleep quality. Students revising for exams often report disrupted sleep, which paradoxically undermines the very consolidation they are trying to achieve through late-night study. Expectations can also complicate research: anxiety about an experiment or an unfamiliar laboratory can alter a participant's sleep. For this reason, studies increasingly combine controlled laboratory measurements with wearable monitoring in ordinary homes, accepting that each method offers a different balance between precision and realism.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2q18",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "There is also evidence that sleep plays a role in creative problem-solving. During REM sleep, the brain appears to form unusual associations between distantly related concepts — connections that may not be accessible during waking life. A classic demonstration is the \"insight problem\": people who were given a difficult mathematical task and allowed to sleep before attempting it were over twice as likely to discover the hidden rule than those who worked on it continuously while awake. Such findings do not imply that sleep generates solutions without prior effort. The sleeper must first encounter and represent the problem, and improvement is measured statistically across groups rather than guaranteed for every individual. Sleep may reorganise available information, making a relationship easier to notice on returning to the task.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2q19",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories. Experimental design matters here. A fair comparison must control the time between learning and testing, the time of day, prior sleep and interference from new experiences. Some studies therefore compare morning and evening learning, while others use carefully monitored naps to isolate a shorter period of sleep.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2q20",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-summary__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory. Electrical recordings show organised changes in brain activity across the night rather than a uniform reduction in activity. Researchers can distinguish stages by characteristic rhythms, eye movements and muscle tone, and can relate those stages to different kinds of processing without assuming that any one stage acts alone.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-summary__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories. Experimental design matters here. A fair comparison must control the time between learning and testing, the time of day, prior sleep and interference from new experiences. Some studies therefore compare morning and evening learning, while others use carefully monitored naps to isolate a shorter period of sleep.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-summary__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-summary__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-summary__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-summary__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "The practical implications of this research are significant. School start times, shift work patterns, and medical training programmes — all areas where sleep deprivation is common — may need to be rethought in light of evidence about the cognitive costs of inadequate sleep. Timing matters alongside total duration because sleep is regulated by both accumulated sleep pressure and the circadian system. Irregular schedules can place required wakefulness at a biological low point even when a person has spent enough hours in bed. A growing number of researchers argue that treating sleep as expendable is not a minor lifestyle choice, but a serious public health issue. Their argument concerns conditions that make adequate sleep possible as well as advice directed at individual behaviour.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global sales of battery electric and plug-in hybrid vehicles exceeded 14 million units — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century. Sales totals also conceal large regional differences. Uptake depends on vehicle prices, model availability, tax policy, fuel costs and access to charging, so rapid growth in one market cannot simply be projected onto another. The useful question is therefore not only how many EVs are sold, but what conditions allow adoption to spread beyond early buyers.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal. Results vary with the size of the vehicle and battery, the distance driven, factory energy sources and assumptions about battery life. This explains why two credible studies can report different totals without necessarily disagreeing about the broad direction of the comparison. Transparent system boundaries are essential when evaluating such claims.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines. Laboratory performance must be translated into cells that can be produced consistently at automotive scale. Interfaces between solid materials, durability over repeated cycles and manufacturing yield remain central engineering problems. Announcing a prototype or target date is consequently different from demonstrating affordable mass production.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines. Laboratory performance must be translated into cells that can be produced consistently at automotive scale. Interfaces between solid materials, durability over repeated cycles and manufacturing yield remain central engineering problems. Announcing a prototype or target date is consequently different from demonstrating affordable mass production.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3q31",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it. Charger counts alone provide an incomplete measure. Drivers also need reliable equipment, compatible payment systems, clear pricing and enough power at useful locations. Network operators must anticipate demand without building expensive capacity that remains idle, while distribution grids may require upgrades where many vehicles charge at the same time.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3q32",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, new regulations require battery manufacturers to achieve minimum recycled content levels by 2030, signalling a move towards a circular economy approach. Recycling can recover valuable materials and reduce pressure for new extraction, but collection systems and processing capacity must grow as the first large generations of vehicle batteries reach retirement. Design choices matter too: packs that are difficult to open or whose components are poorly labelled raise both costs and safety risks.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3q33",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal. Results vary with the size of the vehicle and battery, the distance driven, factory energy sources and assumptions about battery life. This explains why two credible studies can report different totals without necessarily disagreeing about the broad direction of the comparison. Transparent system boundaries are essential when evaluating such claims.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3q34",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects. Before reuse, however, operators must estimate a pack's remaining health and trace how it was used. Testing, transport, disassembly and liability all affect whether a second-life project is economical. Standardised information about battery condition could make this market safer and reduce unnecessary processing.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3q35",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-summary__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-summary__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-summary__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it. Charger counts alone provide an incomplete measure. Drivers also need reliable equipment, compatible payment systems, clear pricing and enough power at useful locations. Network operators must anticipate demand without building expensive capacity that remains idle, while distribution grids may require upgrades where many vehicles charge at the same time.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-summary__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects. Before reuse, however, operators must estimate a pack's remaining health and trace how it was used. Testing, transport, disassembly and liability all affect whether a second-life project is economical. Standardised information about battery condition could make this market safer and reduce unnecessary processing.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-summary__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. An EV charged from a coal-powered grid produces more lifecycle emissions than a highly efficient petrol vehicle. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. Charging strategy can strengthen that relationship if vehicles draw power when low-carbon generation is plentiful and avoid periods of peak demand. Policy must also consider public transport, walking, cycling and the total number and size of vehicles, since changing the powertrain alone does not solve congestion or every environmental cost. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "d3410051154d70e517327c4c20e255d85627d5fef2b8d76078a48da8942b1ca6",
+      "task1ImageSha256": "ef5960298b935d1b754aa0526108688f07fd43a4d8f034bb7da39ecdcd0bc292"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Replaced 250×262 raster with a legible vector redraw preserving the four series, units, years and principal trends."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "9809385bc2b65de1fbfe4b44a124305e693f50655c32b8ba28363e42831ebd02"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "97a253c573f0282be177844458e1d1183706ded11666ed5996f670daa280de7c",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
+    "evidenceSha256": "495e3f72ae862230b2b1882ecd59e21ced3a70f3fd30d3942c0831d07b7ba480",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-academic-keys-2-7"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "f88896e6c6c9c8030d50da2979a37992f0d3b51a89e7f83642fd7a1f1cf5a805"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "6a837688b15ff986382c05333269bb142941955dac2a67fc6b6641a03806ed22",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

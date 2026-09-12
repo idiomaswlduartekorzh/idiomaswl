@@ -1,0 +1,3586 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 5,
+  "mockId": "set-5",
+  "contentVersionAtReview": "ielts-set-5-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "a7892b694ee15b7781871f643cc4d9e9cb01e0b48b5071b73740e35c7cd3113c",
+    "listeningMaterialSha256": "09b300266009e045335a51f1c992e80bec61a905a2ab6c4cc9ee0161c49ce687",
+    "readingMaterialSha256": "f7421ec7351f6d226718e9a12666b5ed0c9cdb0a25014dc5d08be88a05a1ca7e",
+    "objectiveMaterialSha256": "8da657205ffc762e087085781f52f3060c80d44b94ca02980e649c002955e1c1"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "friend"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "morning"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "cathedral"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "shoes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "market"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "café",
+        "cafe"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "4",
+        "four"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "guidebook"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "6",
+        "six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "lunch"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "B",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. guiding visitors",
+        "B": "B. planting trees",
+        "C": "C. counting birds",
+        "D": "D. repairing fences",
+        "E": "E. running the café"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "18",
+        "eighteen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "two hours",
+        "2 hours"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "boots"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "belongings"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "hot drinks",
+        "drinks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "supervisor"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "newsletter"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "celebration"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "its closeness to the university",
+        "its variety of habitats",
+        "an earlier group's research there"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "water quality",
+        "bird populations",
+        "plant species"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "by coach",
+        "by train",
+        "by minibus"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the weather",
+        "the tides",
+        "the deadline"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "divide into teams",
+        "read the safety guidelines",
+        "book the equipment"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "jacket"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "camera"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "bottles"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "notebook"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "assessment"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "rooftops"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "frost"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "pollination"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "flavour",
+        "flavor"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "awareness"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "flowers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "pollution"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "training"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "council"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "water"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "schools"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "sobriety"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "living"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "shade-grown"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "petroleum"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "certification schemes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "melatonin"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "developed"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "light attraction"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "phototaxis"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "hedgerows"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "reversible"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Consumer culture has always recognised the dangers of excessive choice.",
+        "Research suggests that having more options can reduce rather than increase satisfaction.",
+        "Psychologists agree that decision fatigue is the central problem facing consumers.",
+        "Supermarket experiments have proven that fewer products lead to more sales."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Maximisers make decisions more quickly but are less thorough.",
+        "Satisficers report higher satisfaction despite evaluating fewer options.",
+        "Maximisers generally report greater happiness with their final decisions.",
+        "Satisficers are more likely to experience anticipated regret."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "People are more likely to make collaborative decisions.",
+        "Unhappiness becomes attributed to individual failure rather than structural factors.",
+        "Career opportunities are more equally distributed across society.",
+        "People from affluent societies show lower rates of depression."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It was confirmed as a universal and consistent phenomenon.",
+        "It only occurs when people choose luxury products.",
+        "Its effects were inconsistent across different studies.",
+        "It is more pronounced in collectivist cultures than individualist ones."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "satisficers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "autonomy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "decision minimalism"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "design"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "friend"
+      ],
+      "questionPrompt": "• Heard about the tours from a {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "CUSTOMER: A friend recommended you, actually. She did the tour last month.",
+      "sourceExcerptSha256": "dab7c4d23ca6f87f0d234606babaf48ce1e7ad2e6d3e0c442028ec90143e0c6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "friend",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "friend",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "morning"
+      ],
+      "questionPrompt": "• Customer chooses the {{2}} tour (not the evening one)",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "CUSTOMER: I was thinking about the evening walk at first, but I'll go for the morning tour — I'd rather see everything in daylight.",
+      "sourceExcerptSha256": "dc01b00755f7c01f3b89e74d58ebf0abd5a7364c4474402511b5ab4aa9b7acf2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "morning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "morning",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cathedral"
+      ],
+      "questionPrompt": "• The walk starts outside the {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: Perfect, the morning tour it is. It begins outside the cathedral, on the main square.",
+      "sourceExcerptSha256": "55d1f5b69cd7734594fb13d44437676e8a165df729c80879f1c839bbdf53dac9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cathedral",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cathedral",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "shoes"
+      ],
+      "questionPrompt": "• Advised to wear comfortable {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: Mainly just make sure you wear comfortable shoes, as there's a fair amount of walking on cobbled streets.",
+      "sourceExcerptSha256": "d41d5da19957c2db3d13a1d2060a6f4e9a2562be8b0e2506ced79093140b3c09",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "shoes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "shoes",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "market"
+      ],
+      "questionPrompt": "• The guide points out the old {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: The guide takes you through the medieval quarter and points out the old market, which dates back six hundred years. Around midday, the group stops for lunch at a café by the river.",
+      "sourceExcerptSha256": "bb1a88fef0ceccd86f21e782345265d2c7a7a631dc5c4eee39642ecfb5066249",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "market",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "market",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "café",
+        "cafe"
+      ],
+      "questionPrompt": "• The group stops for lunch at a {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: The guide takes you through the medieval quarter and points out the old market, which dates back six hundred years. Around midday, the group stops for lunch at a café by the river.",
+      "sourceExcerptSha256": "bb1a88fef0ceccd86f21e782345265d2c7a7a631dc5c4eee39642ecfb5066249",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "café",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "café",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "cafe",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "4",
+        "four"
+      ],
+      "questionPrompt": "Morning tour | 3 hours | {{7}} | £25 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: Certainly. The morning tour lasts three hours and covers about four kilometres. It costs twenty-five pounds per person, and that includes a printed guidebook to take home.",
+      "sourceExcerptSha256": "9a54fc094815c65d2951c22e59ebced7862d29261aab640debd709e49be932b9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "four",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "4",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "four",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "guidebook"
+      ],
+      "questionPrompt": "Morning tour | 3 hours | {{7}} | £25 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: Certainly. The morning tour lasts three hours and covers about four kilometres. It costs twenty-five pounds per person, and that includes a printed guidebook to take home.",
+      "sourceExcerptSha256": "9a54fc094815c65d2951c22e59ebced7862d29261aab640debd709e49be932b9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "guidebook",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "guidebook",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "questionPrompt": "Full-day tour | {{9}} | 9 km | £40 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: There's also a full-day tour. That one runs for six hours and covers nine kilometres, priced at forty pounds. Best of all, a two-course lunch is included in that package.",
+      "sourceExcerptSha256": "57adc54110f63e9eba376fac8fef461116279c8d8968cea248eddbf5d08b1128",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lunch"
+      ],
+      "questionPrompt": "Full-day tour | {{9}} | 9 km | £40 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Guided City Walk",
+      "sourceExcerpt": "AGENT: There's also a full-day tour. That one runs for six hours and covers nine kilometres, priced at forty pounds. Best of all, a two-course lunch is included in that package.",
+      "sourceExcerptSha256": "57adc54110f63e9eba376fac8fef461116279c8d8968cea248eddbf5d08b1128",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lunch",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lunch",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "C"
+      ],
+      "questionPrompt": "Which TWO tasks will the volunteers help with over the summer?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the new woodland trail, and counting birds for our annual wildlife survey. The fences are repaired by outside contractors, and the café is run by paid staff, so those aren't jobs for volunteers.",
+      "sourceExcerptSha256": "0cd5c58507fd6784b5c64919e7294a35e3b099903d535d7ec16e8352778b241f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "planting trees"
+        },
+        {
+          "key": "C",
+          "text": "counting birds"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "guiding visitors",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "repairing fences",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "running the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "18",
+        "eighteen"
+      ],
+      "questionPrompt": "• Volunteers must be at least {{13}} years old.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "Now for some practical points. To join the main programme, you must be at least eighteen years old — there's a separate scheme for younger helpers. Today's induction is quite relaxed, and it lasts about two hours, including a short tour of the grounds.",
+      "sourceExcerptSha256": "f834b82223efd1f181a6459bac09b916261c71f30d93ea451f6762ec8a2cd6e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "eighteen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "18",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "eighteen",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two hours",
+        "2 hours"
+      ],
+      "questionPrompt": "• The induction session lasts about {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "Now for some practical points. To join the main programme, you must be at least eighteen years old — there's a separate scheme for younger helpers. Today's induction is quite relaxed, and it lasts about two hours, including a short tour of the grounds.",
+      "sourceExcerptSha256": "f834b82223efd1f181a6459bac09b916261c71f30d93ea451f6762ec8a2cd6e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two hours",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two hours",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "2 hours",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "boots"
+      ],
+      "questionPrompt": "• Wear sturdy {{15}} for the outdoor work.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "For outdoor work, please wear sturdy boots. Trainers aren't suitable, because the paths get very muddy after rain. When you arrive, you can leave your things safely, as lockers are provided for your personal belongings — there's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day.",
+      "sourceExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "boots",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "boots",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "belongings"
+      ],
+      "questionPrompt": "• Lockers are provided for personal {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "For outdoor work, please wear sturdy boots. Trainers aren't suitable, because the paths get very muddy after rain. When you arrive, you can leave your things safely, as lockers are provided for your personal belongings — there's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day.",
+      "sourceExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "belongings",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "belongings",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hot drinks",
+        "drinks"
+      ],
+      "questionPrompt": "• Free {{17}} are available in the staff room.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "For outdoor work, please wear sturdy boots. Trainers aren't suitable, because the paths get very muddy after rain. When you arrive, you can leave your things safely, as lockers are provided for your personal belongings — there's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day.",
+      "sourceExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hot drinks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hot drinks",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "drinks",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "supervisor"
+      ],
+      "questionPrompt": "• Report any injuries to the {{18}} on duty.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "Safety comes first here. If you have an accident of any kind, however minor, you must report any injuries to the supervisor on duty immediately — please don't wait until you get home.",
+      "sourceExcerptSha256": "c0862e267800a5d7dfd8106158e45cfe70a7cc0bc7cb95f2ff1d5eef82fa4f1e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "supervisor",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "supervisor",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "newsletter"
+      ],
+      "questionPrompt": "• Volunteers receive a monthly {{19}} by email.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "To keep everyone informed, you'll receive a monthly newsletter by email, listing upcoming events and work parties. Do read it, because that's how we announce any last-minute changes.",
+      "sourceExcerptSha256": "ae89c603baecd46cd4af43e9308892d3c13bfe1edd311cdd5fe8affa80f91659",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "newsletter",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "newsletter",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "celebration"
+      ],
+      "questionPrompt": "• The end-of-year {{20}} is held in December.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Volunteer Induction Talk",
+      "sourceExcerpt": "Finally, we like to say thank you properly. The end-of-year celebration is held in December, with food and music for all our volunteers and their families. It's always a wonderful evening, and I very much hope you'll come along. Right — let's start that tour of the reserve.",
+      "sourceExcerptSha256": "9f26e6d946b963003546cd16c6051e5b35ed1654b2915c9d0c25e386207e4b64",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "celebration",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "celebration",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor says the Fenwick Estuary is a good choice because of",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Right, Meg and Ryan, let's plan your ecology field trip. I've suggested the Fenwick Estuary. Any thoughts on why it's a good choice?",
+      "sourceExcerptSha256": "38456d0677ed32be3d26f55914c914669b38ec38a0d73eefec5783a5e2a84f29",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "its variety of habitats"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "its closeness to the university",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "an earlier group's research there",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "For the assignment, the students will collect data on",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: You could, but for this assignment I'd like you to concentrate on water quality — testing salinity and oxygen levels at different points.",
+      "sourceExcerptSha256": "e13ac85586f44c7160a394a84d964eedd73b8ed4709e69755dbded4845f9ee5f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "water quality"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "bird populations",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "plant species",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "The group will travel to the site",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Good question. A coach would be far too expensive for a group your size, and the nearest train station is miles from the shore. So I've arranged a minibus, which the department will drive.",
+      "sourceExcerptSha256": "ca45fdc9c518a397826b453cc04b3668b907a0bfae6a8d03c71c52e29ed9964c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "by minibus"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "by coach",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "by train",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Meg is most worried about",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "MEG: Great. The one thing I'm nervous about is the tides — I don't want us getting cut off on the mudflats.",
+      "sourceExcerptSha256": "24ce10e5246e59972594959328b2f2137e39f784f2eaaef0de591dd2429fde49",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "the tides"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "the weather",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "the deadline",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor tells the students that they must first",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Before anything else, please read the safety guidelines I've uploaded. Don't book the equipment or divide into teams until you've done that.",
+      "sourceExcerptSha256": "4be0696062dccff21d3a6ae67b467ab8f128c3f1ee8ffed1242e7f6d9b9f7b5e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "read the safety guidelines"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "divide into teams",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "book the equipment",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "jacket"
+      ],
+      "questionPrompt": "• Each student must bring a waterproof {{26}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.",
+      "sourceExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "jacket",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "jacket",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "camera"
+      ],
+      "questionPrompt": "• Remember to charge the {{27}} beforehand.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.",
+      "sourceExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "camera",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "camera",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bottles"
+      ],
+      "questionPrompt": "• Collect water samples in labelled {{28}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.",
+      "sourceExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bottles",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bottles",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "notebook"
+      ],
+      "questionPrompt": "• Record all measurements in a {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.",
+      "sourceExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "notebook",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "notebook",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "assessment"
+      ],
+      "questionPrompt": "• Submit the risk {{30}} to the tutor by Friday.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Field-trip Planning Discussion",
+      "sourceExcerpt": "TUTOR: Yes — a few essentials. Each of you must bring a waterproof jacket, as the shore is exposed. Remember to charge the camera the night before, so you can photograph your sites. Collect your water samples in labelled bottles, and record all your measurements in a notebook rather than on loose paper. And finally, submit the risk assessment to me by Friday.",
+      "sourceExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "assessment",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "assessment",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rooftops"
+      ],
+      "questionPrompt": "• Hives are often placed on the {{31}} of buildings.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "Let me start with some background. Contrary to what you might expect, cities can be surprisingly good places for bees. Because space at ground level is limited, hives are often placed on the rooftops of buildings — offices, schools and even hotels now host colonies high above the streets. Another advantage is temperature. Built-up areas tend to be a few degrees warmer than the surrounding countryside, and this extra warmth protects bees from frost during the colder months.",
+      "sourceExcerptSha256": "b54d9417d45cf6dd70098ffe29d4f32833b24e2141e1219d0a9c2a2b388dd504",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rooftops",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rooftops",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "frost"
+      ],
+      "questionPrompt": "• Cities can be warmer, which protects bees from {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "Let me start with some background. Contrary to what you might expect, cities can be surprisingly good places for bees. Because space at ground level is limited, hives are often placed on the rooftops of buildings — offices, schools and even hotels now host colonies high above the streets. Another advantage is temperature. Built-up areas tend to be a few degrees warmer than the surrounding countryside, and this extra warmth protects bees from frost during the colder months.",
+      "sourceExcerptSha256": "b54d9417d45cf6dd70098ffe29d4f32833b24e2141e1219d0a9c2a2b388dd504",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "frost",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "frost",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pollination"
+      ],
+      "questionPrompt": "• Bees improve the {{33}} of nearby gardens and parks.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "So what are the benefits? The most obvious one is pollination. As the bees forage, they dramatically improve the pollination of nearby gardens and parks, which means more flowers and better fruit crops. There's a culinary benefit too: because urban bees visit such a wide range of plants, city honey often has a distinctive flavour that many people prize. And beyond the practical gains, keeping bees in visible places helps raise public awareness of wildlife and the threats it faces.",
+      "sourceExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pollination",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pollination",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flavour",
+        "flavor"
+      ],
+      "questionPrompt": "• City honey often has a distinctive {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "So what are the benefits? The most obvious one is pollination. As the bees forage, they dramatically improve the pollination of nearby gardens and parks, which means more flowers and better fruit crops. There's a culinary benefit too: because urban bees visit such a wide range of plants, city honey often has a distinctive flavour that many people prize. And beyond the practical gains, keeping bees in visible places helps raise public awareness of wildlife and the threats it faces.",
+      "sourceExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flavour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flavour",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "flavor",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "awareness"
+      ],
+      "questionPrompt": "• Beekeeping helps raise public {{35}} of wildlife.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "So what are the benefits? The most obvious one is pollination. As the bees forage, they dramatically improve the pollination of nearby gardens and parks, which means more flowers and better fruit crops. There's a culinary benefit too: because urban bees visit such a wide range of plants, city honey often has a distinctive flavour that many people prize. And beyond the practical gains, keeping bees in visible places helps raise public awareness of wildlife and the threats it faces.",
+      "sourceExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "awareness",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "awareness",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flowers"
+      ],
+      "questionPrompt": "• A lack of {{36}} in some areas limits food for the bees.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "Of course, there are challenges. In some neighbourhoods, a lack of flowers means there simply isn't enough food to sustain large numbers of bees, and colonies can struggle. The bees may also be affected by pollution from traffic, which can settle on the plants they feed on. And a more human problem is that new keepers often lack proper training, which can lead to poorly managed hives and unhappy neighbours.",
+      "sourceExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flowers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flowers",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pollution"
+      ],
+      "questionPrompt": "• Bees may be affected by {{37}} from traffic.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "Of course, there are challenges. In some neighbourhoods, a lack of flowers means there simply isn't enough food to sustain large numbers of bees, and colonies can struggle. The bees may also be affected by pollution from traffic, which can settle on the plants they feed on. And a more human problem is that new keepers often lack proper training, which can lead to poorly managed hives and unhappy neighbours.",
+      "sourceExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pollution",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pollution",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "training"
+      ],
+      "questionPrompt": "• New keepers often lack proper {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "Of course, there are challenges. In some neighbourhoods, a lack of flowers means there simply isn't enough food to sustain large numbers of bees, and colonies can struggle. The bees may also be affected by pollution from traffic, which can settle on the plants they feed on. And a more human problem is that new keepers often lack proper training, which can lead to poorly managed hives and unhappy neighbours.",
+      "sourceExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "training",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "training",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "council"
+      ],
+      "questionPrompt": "• Register each hive with the local {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "So what would I advise anyone thinking of starting? First, always register each hive with the local council, so that its location is on record. This is a legal requirement in many places. Second — and this is often forgotten — provide a nearby source of water. Bees need to drink, and without it they will visit your neighbours' swimming pools instead.",
+      "sourceExcerptSha256": "298cae9ab8069ecaccb48ce46a851afbe03600ce41dd074d718c44673311561a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "council",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "council",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "water"
+      ],
+      "questionPrompt": "• Provide a nearby source of {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Urban Beekeeping",
+      "sourceExcerpt": "So what would I advise anyone thinking of starting? First, always register each hive with the local council, so that its location is on record. This is a legal requirement in many places. Second — and this is often forgotten — provide a nearby source of water. Bees need to drink, and without it they will visit your neighbours' swimming pools instead.",
+      "sourceExcerptSha256": "298cae9ab8069ecaccb48ce46a851afbe03600ce41dd074d718c44673311561a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "water",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "water",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: Kaldi was a historical figure whose existence has been confirmed by archaeologists.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "According to popular legend, coffee was discovered in the ninth century by an Ethiopian goat herder named Kaldi, who observed that his animals became unusually energetic after eating berries from a particular tree. Though this tale cannot be verified, historians agree that coffee plants were indeed growing wild in Ethiopia for centuries before humans began consuming them deliberately. The first credible evidence of coffee drinking appears in fifteenth-century Yemen, where Sufi monks brewed the berries into a drink they called qahwa to help them remain alert during long nights of prayer.",
+      "sourceExcerptSha256": "afe5a0d894805d081f2d7a9653667a12a7b7f7d461fb2859b3fe0f699940358f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: Sufi monks in Yemen were among the first people to brew coffee as a drink.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "According to popular legend, coffee was discovered in the ninth century by an Ethiopian goat herder named Kaldi, who observed that his animals became unusually energetic after eating berries from a particular tree. Though this tale cannot be verified, historians agree that coffee plants were indeed growing wild in Ethiopia for centuries before humans began consuming them deliberately. The first credible evidence of coffee drinking appears in fifteenth-century Yemen, where Sufi monks brewed the berries into a drink they called qahwa to help them remain alert during long nights of prayer.",
+      "sourceExcerptSha256": "afe5a0d894805d081f2d7a9653667a12a7b7f7d461fb2859b3fe0f699940358f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "3. {{3}}: Qahveh khaneh in Constantinople served food as well as coffee.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+      "sourceExcerptSha256": "8a748c86302528f630f7de9024b4f388be5307f642c6dbb15667517a48832a79",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: The 1511 ban on coffee in Mecca lasted for several decades.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+      "sourceExcerptSha256": "8a748c86302528f630f7de9024b4f388be5307f642c6dbb15667517a48832a79",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "5. {{5}}: The Women's Petition Against Coffee was written by a medical doctor.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+      "sourceExcerptSha256": "8e3b3512edce63f2cbb08150f871b2447589ecf837294b0f2514505799b01d13",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Lloyd's of London has its origins in a coffeehouse.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+      "sourceExcerptSha256": "8e3b3512edce63f2cbb08150f871b2447589ecf837294b0f2514505799b01d13",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: The Ottoman Empire successfully prevented coffee plants from leaving its territory.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "The economics of coffee production drove one of the earliest examples of global commodity trade. In the seventeenth century, the Ottoman Empire attempted to maintain a monopoly on coffee cultivation by prohibiting the export of fertile seeds. This restriction was eventually circumvented when Dutch traders smuggled living plants to Java in the 1690s, establishing the first major coffee plantation outside the Arab world. The Dutch later brought plants to South America, where conditions proved extraordinarily favourable for cultivation. By the nineteenth century, Brazil had emerged as the world's dominant coffee producer, a position it retains today.",
+      "sourceExcerptSha256": "0602a4bb51fca59c8a86bcc0d7b36cdf23196e61a45c00e5dd95ae8b9f24c819",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "schools"
+      ],
+      "questionPrompt": "8. Coffeehouses in the Arab world were sometimes described as \"{{8}} of the wise\" because of their role in intellectual life.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+      "sourceExcerptSha256": "8a748c86302528f630f7de9024b4f388be5307f642c6dbb15667517a48832a79",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "schools",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "schools",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sobriety"
+      ],
+      "questionPrompt": "9. When coffee arrived in Europe, it was initially praised for encouraging {{9}} and clear thinking.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+      "sourceExcerptSha256": "8e3b3512edce63f2cbb08150f871b2447589ecf837294b0f2514505799b01d13",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sobriety",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sobriety",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "living"
+      ],
+      "questionPrompt": "10. Dutch traders broke the Ottoman monopoly by smuggling {{10}} coffee plants to Java.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "The economics of coffee production drove one of the earliest examples of global commodity trade. In the seventeenth century, the Ottoman Empire attempted to maintain a monopoly on coffee cultivation by prohibiting the export of fertile seeds. This restriction was eventually circumvented when Dutch traders smuggled living plants to Java in the 1690s, establishing the first major coffee plantation outside the Arab world. The Dutch later brought plants to South America, where conditions proved extraordinarily favourable for cultivation. By the nineteenth century, Brazil had emerged as the world's dominant coffee producer, a position it retains today.",
+      "sourceExcerptSha256": "0602a4bb51fca59c8a86bcc0d7b36cdf23196e61a45c00e5dd95ae8b9f24c819",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "living",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "living",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "shade-grown"
+      ],
+      "questionPrompt": "11. The practice of {{11}} coffee has been promoted as an environmentally friendly cultivation method.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "The ecological impact of coffee's spread was considerable. In many regions, rainforest was cleared to make way for plantations, altering local biodiversity and contributing to soil erosion. Modern cultivation practices have shifted significantly: shade-grown coffee, which involves planting coffee beneath the canopy of native trees, has gained favour as an approach that preserves habitat for migratory birds and other wildlife while often improving the complexity of the bean's flavour.",
+      "sourceExcerptSha256": "35fec77a1db122f2ba702361fb86081e09d5ce375069e52ad96d88d857a42683",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "shade-grown",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "shade-grown",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "petroleum"
+      ],
+      "questionPrompt": "12. Coffee is the world's second most traded commodity after {{12}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models. Price volatility adds another layer of uncertainty. A harvest damaged by drought or disease in one major producing region can raise international prices, yet a later surplus can leave smallholders unable to cover their costs. Cooperatives try to reduce this exposure by sharing processing equipment, negotiating collectively, and selling beans with traceable origins. These arrangements do not eliminate market risk, but they can give growers more influence over when and how their crop is sold. Access to",
+      "sourceExcerptSha256": "41c2c7b045fb38cae4271edcde3fdb7fff100944b6ad1c9cbb49a58ff5adf6e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "petroleum",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "petroleum",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "certification schemes"
+      ],
+      "questionPrompt": "13. Fair-trade {{13}} have been developed to address inequalities in the coffee supply chain.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Origins of Coffee",
+      "sourceExcerpt": "Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models. Price volatility adds another layer of uncertainty. A harvest damaged by drought or disease in one major producing region can raise international prices, yet a later surplus can leave smallholders unable to cover their costs. Cooperatives try to reduce this exposure by sharing processing equipment, negotiating collectively, and selling beans with traceable origins. These arrangements do not eliminate market risk, but they can give growers more influence over when and how their crop is sold. Access to",
+      "sourceExcerptSha256": "41c2c7b045fb38cae4271edcde3fdb7fff100944b6ad1c9cbb49a58ff5adf6e2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "certification schemes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "certification schemes",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A description of an international organisation that certifies areas with low light pollution",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "G. The International Dark-Sky Association campaigns globally for better lighting practices and designates certified dark-sky parks and communities where light pollution is strictly controlled. As of 2024, over two hundred such protected areas exist worldwide. However, the pace of progress remains slow relative to the expansion of global light pollution, which has been growing at approximately two percent per year. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved. Measuring progress is itself challenging. Satellite instruments record light directed upwards, whereas animals respond to brightness at ground level, colour, timing, and duration. Researchers therefore combine remote observations with field sensors and behavioural studies. This distinction matters because two towns with a similar glow from space may expose wildlife to very different conditions, depending on the lamps used and the hours during which they operate.",
+      "sourceExcerptSha256": "d4de69d241a258ded526666305a809cc45711f993b6080e9fe15e90fedbe85f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to G; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "An explanation of why hatchling sea turtles instinctively move towards light",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "C. Perhaps the most dramatic examples of light pollution's effects involve sea turtles. Female turtles have nested on the same beaches for millions of years, emerging from the sea under cover of darkness to lay their eggs in the sand. When hatchlings emerge, they orient themselves towards the brightest horizon—in natural conditions, the open sea, which reflects starlight and moonlight. On beaches adjacent to developed coastlines, however, the glow from hotels, streetlights, and parking lots draws hatchlings inland, where they become disorientated, dehydrated, and eventually die. In Florida, it is estimated that hundreds of thousands of hatchlings are lost this way each year, contributing to the threatened status of several turtle species.",
+      "sourceExcerptSha256": "366a95b417bf574b80d2807d78b36402a8f1fe49f7c9923eab53172b274ff88d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "Details of how light affects a specific chemical produced in animals",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+      "sourceExcerptSha256": "9da430cc58321f9d3386049f9ad63d80c8a63abbd1563e80087748fae6b7f0d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Statistical data on the collision deaths of migratory birds",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as \"fatal light attraction.\" The problem is concentrated around large cities during peak migration periods: in a single night in 2020, an estimated one thousand birds were killed after colliding with a single illuminated building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.",
+      "sourceExcerptSha256": "69831dc2082291bd9a13f9616b0f2e06a776378233dde378f87cbd1221ae89a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "Evidence that reducing light pollution can rapidly benefit wildlife",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.",
+      "sourceExcerptSha256": "797f2a036d567cdbbbd7137fe30f12959b653377e71b295ff599fdf2011841e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A reference to the effect of artificial light on plant reproduction",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+      "sourceExcerptSha256": "aa93d41c584842be6a712d4102675487f802f2cd2d286f0b2d1eb1c17340b0a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A statement about how long animals have evolved to exploit night conditions",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+      "sourceExcerptSha256": "9da430cc58321f9d3386049f9ad63d80c8a63abbd1563e80087748fae6b7f0d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "melatonin"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+      "sourceExcerptSha256": "9da430cc58321f9d3386049f9ad63d80c8a63abbd1563e80087748fae6b7f0d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "melatonin",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "melatonin",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "developed"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "C. Perhaps the most dramatic examples of light pollution's effects involve sea turtles. Female turtles have nested on the same beaches for millions of years, emerging from the sea under cover of darkness to lay their eggs in the sand. When hatchlings emerge, they orient themselves towards the brightest horizon—in natural conditions, the open sea, which reflects starlight and moonlight. On beaches adjacent to developed coastlines, however, the glow from hotels, streetlights, and parking lots draws hatchlings inland, where they become disorientated, dehydrated, and eventually die. In Florida, it is estimated that hundreds of thousands of hatchlings are lost this way each year, contributing to the threatened status of several turtle species.",
+      "sourceExcerptSha256": "366a95b417bf574b80d2807d78b36402a8f1fe49f7c9923eab53172b274ff88d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "developed",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "developed",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "light attraction"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as \"fatal light attraction.\" The problem is concentrated around large cities during peak migration periods: in a single night in 2020, an estimated one thousand birds were killed after colliding with a single illuminated building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.",
+      "sourceExcerptSha256": "69831dc2082291bd9a13f9616b0f2e06a776378233dde378f87cbd1221ae89a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "light attraction",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "light attraction",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "phototaxis"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+      "sourceExcerptSha256": "aa93d41c584842be6a712d4102675487f802f2cd2d286f0b2d1eb1c17340b0a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "phototaxis",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "phototaxis",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hedgerows"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+      "sourceExcerptSha256": "aa93d41c584842be6a712d4102675487f802f2cd2d286f0b2d1eb1c17340b0a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hedgerows",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hedgerows",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "reversible"
+      ],
+      "questionPrompt": "Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings on {{22}} coastlines are drawn inland rather than to the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Light Pollution and Wildlife",
+      "sourceExcerpt": "F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.",
+      "sourceExcerptSha256": "797f2a036d567cdbbbd7137fe30f12959b653377e71b295ff599fdf2011841e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "reversible",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "reversible",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main argument presented in the first two paragraphs of the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Research suggests that having more options can reduce rather than increase satisfaction."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Consumer culture has always recognised the dangers of excessive choice.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Psychologists agree that decision fatigue is the central problem facing consumers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Supermarket experiments have proven that fewer products lead to more sales.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, how do \"maximisers\" differ from \"satisficers\"?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Beyond indecision, over-choice produces what researchers call \"anticipated regret\": the foreknowledge that, whatever one chooses, alternatives will linger as what might have been. Schwartz distinguishes between two types of decision-makers: \"maximisers,\" who feel compelled to evaluate every possible option before choosing, and \"satisficers,\" who select the first option that meets an acceptable standard. Paradoxically, maximisers—who by definition make more thorough decisions—report lower satisfaction with their choices than satisficers, precisely because they are more keenly aware of what they sacrificed.",
+      "sourceExcerptSha256": "1f6bb3fb96050aa135538a8f96eaaa9c145a428b544e6feb964537b3044cbab5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Satisficers report higher satisfaction despite evaluating fewer options."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Maximisers make decisions more quickly but are less thorough.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Maximisers generally report greater happiness with their final decisions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Satisficers are more likely to experience anticipated regret.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage suggest is a social consequence of abundant choice?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "There is also a social dimension to the paradox. In an era of abundant choice, poor outcomes are increasingly attributed to individual failure rather than systemic constraint. If hundreds of career paths, hundreds of potential partners, and hundreds of possible lifestyles are theoretically available, then unhappiness becomes a personal indictment: you had every option, so you must have chosen wrong. This attribution of responsibility for outcomes to individual agency—rather than to structural factors such as economics or opportunity—has been linked by some researchers to rising rates of depression and anxiety in affluent societies.",
+      "sourceExcerptSha256": "c6c6bce7a6d430e01838c066c391c1167fed5b6a54d27d05512b9ae3ee5bfc37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Unhappiness becomes attributed to individual failure rather than structural factors."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "People are more likely to make collaborative decisions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Career opportunities are more equally distributed across society.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "People from affluent societies show lower rates of depression.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "According to the 2010 meta-analysis by Scheibehenne et al., what was found about the \"choice overload\" effect?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Not all psychologists accept Schwartz's thesis uncritically. Subsequent research has complicated the picture. A meta-analysis by Scheibehenne, Greifeneder, and Todd in 2010, examining fifty experiments, found inconsistent evidence for the \"choice overload\" effect: in some studies, more choice actually enhanced satisfaction. The discrepancy may depend on context. When choosers are knowledgeable about a domain—experts selecting wine, for instance—additional options are more manageable and often welcome. Overload appears to be most damaging when options are complex, when choosers lack expertise, and when the decision has high personal stakes.",
+      "sourceExcerptSha256": "c245ac922268ed7baec462522aa88e3a95de0d2cfe0320353fc90d77ec17f17f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Its effects were inconsistent across different studies."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It was confirmed as a universal and consistent phenomenon.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "It only occurs when people choose luxury products.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It is more pronounced in collectivist cultures than individualist ones.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "31. {{31}}: The Iyengar and Lepper jam study was conducted in a laboratory setting.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The psychologist Barry Schwartz, in his influential 2004 book The Paradox of Choice, drew on laboratory research to argue that excessive choice generates anxiety rather than liberation. When people face too many options, they experience what Schwartz calls \"decision fatigue\"—a depletion of cognitive resources that impairs subsequent decision-making. A study by Iyengar and Lepper, conducted in a supermarket, found that customers who encountered a display of twenty-four varieties of jam were significantly less likely to make a purchase than those offered only six. When choice exceeded a certain threshold, it became paralysing.",
+      "sourceExcerptSha256": "b71b167ad10a0633497822fa87448663918056b595dd3fdf3316d5c0f314d4d9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: People with expertise in a domain cope better with a large number of options.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "33. {{33}}: Schwartz's research was based entirely on studies conducted outside the United States.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Not all psychologists accept Schwartz's thesis uncritically. Subsequent research has complicated the picture. A meta-analysis by Scheibehenne, Greifeneder, and Todd in 2010, examining fifty experiments, found inconsistent evidence for the \"choice overload\" effect: in some studies, more choice actually enhanced satisfaction. The discrepancy may depend on context. When choosers are knowledgeable about a domain—experts selecting wine, for instance—additional options are more manageable and often welcome. Overload appears to be most damaging when options are complex, when choosers lack expertise, and when the decision has high personal stakes.",
+      "sourceExcerptSha256": "c245ac922268ed7baec462522aa88e3a95de0d2cfe0320353fc90d77ec17f17f",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Participants from collectivist cultures sometimes performed better when choices were made by others.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Cross-cultural comparisons reveal further nuance. Research by Iyengar and colleagues found that choice preferences differ significantly between individualist and collectivist cultures. Participants from the United States, where autonomy and self-determination are central values, expressed stronger preferences for personal choice and derived greater pleasure from having made their own selections. Participants from collectivist cultures such as Japan or India showed less preference for individual choice and, in some experiments, performed better and more happily when choices were made for them by trusted others. These findings challenge the universality of choice as a value and suggest that its psychological effects are mediated by cultural context.",
+      "sourceExcerptSha256": "b164f1e842824581c1211fdb1c2c8f39e495d8e7689fc389f03eadf4c839f457",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Behavioural economists have shown that restricting choice completely leads to the best outcomes.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: Organ donation rates have improved in some countries through the use of choice architecture.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "satisficers"
+      ],
+      "questionPrompt": "37. Decision-makers who select the first acceptable option are called {{37}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Beyond indecision, over-choice produces what researchers call \"anticipated regret\": the foreknowledge that, whatever one chooses, alternatives will linger as what might have been. Schwartz distinguishes between two types of decision-makers: \"maximisers,\" who feel compelled to evaluate every possible option before choosing, and \"satisficers,\" who select the first option that meets an acceptable standard. Paradoxically, maximisers—who by definition make more thorough decisions—report lower satisfaction with their choices than satisficers, precisely because they are more keenly aware of what they sacrificed.",
+      "sourceExcerptSha256": "1f6bb3fb96050aa135538a8f96eaaa9c145a428b544e6feb964537b3044cbab5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "satisficers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "satisficers",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "autonomy"
+      ],
+      "questionPrompt": "38. Cross-cultural research suggests that participants from the United States place particular value on {{38}} and self-determination.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "Cross-cultural comparisons reveal further nuance. Research by Iyengar and colleagues found that choice preferences differ significantly between individualist and collectivist cultures. Participants from the United States, where autonomy and self-determination are central values, expressed stronger preferences for personal choice and derived greater pleasure from having made their own selections. Participants from collectivist cultures such as Japan or India showed less preference for individual choice and, in some experiments, performed better and more happily when choices were made for them by trusted others. These findings challenge the universality of choice as a value and suggest that its psychological effects are mediated by cultural context.",
+      "sourceExcerptSha256": "b164f1e842824581c1211fdb1c2c8f39e495d8e7689fc389f03eadf4c839f457",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "autonomy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "autonomy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "decision minimalism"
+      ],
+      "questionPrompt": "39. The term used for reducing the number of everyday decisions is {{39}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "decision minimalism",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "decision minimalism",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "design"
+      ],
+      "questionPrompt": "40. The passage concludes that excessive choice is not an argument against freedom but a call for more thoughtful {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Paradox of Choice",
+      "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+      "sourceExcerptSha256": "3a3ad727b8eab856f7c09e739ffc07d21765af16ef45d9e9a6cbae167d3272d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "design",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "design",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q31",
+        "before": "rooftops; rooftop; roofs",
+        "after": "rooftops",
+        "reason": "Only the stated plural completes “on the ___ of buildings” precisely."
+      },
+      {
+        "scope": "Listening Q39",
+        "before": "council; authority",
+        "after": "council",
+        "reason": "Only “council” occurs in the effective transcript."
+      },
+      {
+        "scope": "Reading Q1",
+        "before": "NOT GIVEN",
+        "after": "FALSE",
+        "reason": "The passage says the Kaldi tale cannot be verified, directly contradicting confirmed existence."
+      },
+      {
+        "scope": "Reading Q13",
+        "before": "certification schemes; certification",
+        "after": "certification schemes",
+        "reason": "The singular fragment makes the plural sentence ungrammatical."
+      },
+      {
+        "scope": "Reading Q22",
+        "before": "lit; illuminated; developed in an ambiguous sentence",
+        "after": "developed in a direct coastline sentence",
+        "reason": "The replacement binds the completion to the turtle paragraph and removes words sourced from other animals."
+      },
+      {
+        "scope": "Listening Q15, Q28, Q36",
+        "before": "singular variants alongside source plurals",
+        "after": "source plurals only",
+        "reason": "The singular forms were ungrammatical in the displayed sentences."
+      }
+    ]
+  },
+  "reviewSha256": "bdc203b1d0d31124796297f1f988ed1e382e58b546249e24f99c106b0d7d938a"
+}

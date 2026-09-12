@@ -1,0 +1,3518 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 7,
+  "mockId": "set-7",
+  "contentVersionAtReview": "ielts-set-7-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "b673de869e6cb5334701604d454ace4dca8e98fcd1ae61c76c4520240ca37ac2",
+    "listeningMaterialSha256": "0c8dbed300c2dcff4d78b01c9f8f01534f627207b412df0c1acc6fb8ad9ab590",
+    "readingMaterialSha256": "00ef4d2ef4a331454305a639d70a4c6247bedee5b7d4f027d943c209beb5f0b5",
+    "objectiveMaterialSha256": "f625c9aac5dc910b1921ca789d19d135ea2a40fc0e55273fef9e27bcffa0e418"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Whitcombe",
+        "whitcombe"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "07700900318",
+        "07700 900318"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "library"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "photography"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "career"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "camera"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "10",
+        "ten"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "120",
+        "£120"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "Thursday",
+        "thursday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "95",
+        "£95"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "B",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the guided harbour tour",
+        "B": "B. entry to the main galleries",
+        "C": "C. the temporary exhibition",
+        "D": "D. the children's activity trail",
+        "E": "E. hire of the audio guide"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "warehouse"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "bell"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "fishing boats"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "coastline"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "diving suit"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "film"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "garden"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "cloakroom"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "they had read a study that surprised them",
+        "they disagreed about a personal habit",
+        "their tutor suggested it to them"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "the type of music played",
+        "the volume of the music",
+        "the length of the reading task"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "test their own friends",
+        "select students at random from a class list",
+        "invite volunteers through a notice"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the groups will be too small",
+        "participants may improve through practice",
+        "the music may be played too loudly"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "prepare and check their test questions",
+        "run a small pilot study",
+        "book a quiet room"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "room"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "length"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "script"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "graph"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "consent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "melatonin"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "rhythm"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "deep"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "muscle"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "memory"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "system"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "mood"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "growth"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "insomnia"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "caffeine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "hydrophilic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "hydrophobic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "tubercle"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "fifteen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "history"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "bioinspired"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-table__21",
+      "accepted": [
+        "scheduled"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-table__22",
+      "accepted": [
+        "Legumes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-table__23",
+      "accepted": [
+        "hara hachi bu"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-table__24",
+      "accepted": [
+        "moai"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-table__25",
+      "accepted": [
+        "ikigai"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-table__26",
+      "accepted": [
+        "Confounding"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It has been confirmed by multiple empirical studies.",
+        "It has been largely rejected, though a weaker version has support.",
+        "It is still debated but has not been tested experimentally.",
+        "It applies only to colour perception and spatial cognition."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Speakers of all languages discriminate colours at the same speed.",
+        "Only languages with no colour terms showed differences in colour perception.",
+        "Speakers whose language distinguishes two colour categories were faster at discriminating those colours, but only in one visual field.",
+        "Colour perception is entirely determined by the number of colour terms in a language."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The ability to use ego-centred terms more accurately than other speakers.",
+        "A consistently accurate sense of cardinal direction regardless of orientation.",
+        "Superior colour discrimination compared to other Aboriginal language speakers.",
+        "The ability to learn spatial terms in English significantly faster than other groups."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That German and Spanish speakers describe all objects identically regardless of grammatical gender.",
+        "That grammatical gender influences the adjectives speakers use to describe things.",
+        "That grammatical gender effects disappear when instructions are given in a different language.",
+        "That French speakers show stronger grammatical gender effects than Spanish or German speakers."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "Sapir-Whorf"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "lexical distinction"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "chance"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "pedagogical"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Whitcombe",
+        "whitcombe"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "STUDENT: It's Whitcombe.",
+      "sourceExcerptSha256": "696e52085d329c63481af51d89da56cbf114af2ef29397671b67c3301398302e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Whitcombe",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Whitcombe",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "whitcombe",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "07700900318",
+        "07700 900318"
+      ],
+      "questionPrompt": "Contact number: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "STUDENT: My mobile is 07700 900318.",
+      "sourceExcerptSha256": "396223488fd5af5268765e599001eb71f211e58cc566afb898dfd1be1a44afd2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "07700 900318",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "07700900318",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        },
+        {
+          "answer": "07700 900318",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "library"
+      ],
+      "questionPrompt": "Heard about the centre from: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "STUDENT: A friend recommended the centre after taking a language class here. However, I first found the autumn programme when I saw your poster in the library, so put the library on the form.",
+      "sourceExcerptSha256": "f8ba22e35fffb3fcceec63d17e7d1d0f8b505572bfe1bbcedba0a68951b926a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "library",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "library",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "photography"
+      ],
+      "questionPrompt": "Course chosen: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "STUDENT: I was originally thinking of cookery because I enjoy it at home. Drawing also sounded relaxing. But after reading the course descriptions, I've made up my mind: I'd like to do photography.",
+      "sourceExcerptSha256": "f728ffc82b80ccbcc8b5ce60480c9551ce7d9ff2b697da81776fa744bcb880ff",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "photography",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "photography",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "career"
+      ],
+      "questionPrompt": "Reason for taking the course: to help with her {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "STUDENT: I don't need a qualification. Mainly I'm hoping it will help with my career. I work in marketing, and lately I've been expected to take better images for our website instead of always hiring a photographer.",
+      "sourceExcerptSha256": "654afef33bcfbb9f17bdd8d653e3385dfe3be5bda4f97cab7eaf37f537ce5965",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "career",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "career",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "camera"
+      ],
+      "questionPrompt": "Note: students must bring their own {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "REGISTRAR: That makes sense. The tutor uses practical assignments, so you should be able to apply the skills at work. One important requirement is that students bring their own camera. The centre has computers for editing, but it doesn't lend photographic equipment.",
+      "sourceExcerptSha256": "0263dd709a9dfb537d30581de236919f307fe3983162327a4374206b079f5ae7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "camera",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "camera",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "questionPrompt": "Photography (beginners) | Tuesday | {{7}} | {{8}} | B4",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "REGISTRAR: In that case, start with beginners. It runs on Tuesday evenings from six thirty until eight thirty and lasts for 10 weeks. There is a short break halfway through the evening. The term fee is £120, which includes printing materials, and the class meets in Room B4 on the ground floor.",
+      "sourceExcerptSha256": "016d1d2e2f207c423161ad5049895876e0c490ccda72a4a11cd78f44a4411639",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "10",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "10",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "ten",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "questionPrompt": "Photography (beginners) | Tuesday | {{7}} | {{8}} | B4",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "REGISTRAR: In that case, start with beginners. It runs on Tuesday evenings from six thirty until eight thirty and lasts for 10 weeks. There is a short break halfway through the evening. The term fee is £120, which includes printing materials, and the class meets in Room B4 on the ground floor.",
+      "sourceExcerptSha256": "016d1d2e2f207c423161ad5049895876e0c490ccda72a4a11cd78f44a4411639",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "120",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "120",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "£120",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Thursday",
+        "thursday"
+      ],
+      "questionPrompt": "Photography (advanced) | {{9}} | 8 weeks | {{10}} | B7",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "REGISTRAR: Yes. The follow-up course concentrates on portrait and low-light work. It runs on Thursday evenings. It's slightly shorter, at eight weeks, and its fee is lower too: £95. That class is upstairs in Room B7, but you cannot join it until you have completed the beginners' course or shown the tutor a portfolio.",
+      "sourceExcerptSha256": "b744ceb5051bac6128c99e52d2018ca04a4159d6a1660b93dbc7335cef4d531f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Thursday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Thursday",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "thursday",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "95",
+        "£95"
+      ],
+      "questionPrompt": "Photography (advanced) | {{9}} | 8 weeks | {{10}} | B7",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Enrolling in an Evening Course",
+      "sourceExcerpt": "REGISTRAR: Yes. The follow-up course concentrates on portrait and low-light work. It runs on Thursday evenings. It's slightly shorter, at eight weeks, and its fee is lower too: £95. That class is upstairs in Room B7, but you cannot join it until you have completed the beginners' course or shown the tutor a portfolio.",
+      "sourceExcerptSha256": "b744ceb5051bac6128c99e52d2018ca04a4159d6a1660b93dbc7335cef4d531f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "95",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "95",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "£95",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "D"
+      ],
+      "questionPrompt": "Which TWO things at the museum are free of charge for all visitors?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "Before we begin, here are a few practical details. Admission to the main galleries is completely free for every visitor; you do not need to collect a ticket for them. Our children's activity trail is free as well. Families can pick up a trail sheet and pencil at reception, and there is no charge for returning visitors who want a second sheet. Other activities are priced separately. The guided harbour tour costs six pounds, the temporary exhibition on the top floor requires a three-pound ticket, and hiring this audio guide also carries a small charge. Those three items are sometimes included in special group bookings, but they are not free to the general public.",
+      "sourceExcerptSha256": "801f9e95d3fe9a2e9067d907cc33bd18bb8e7e0e4a01f8b2dd808fa265be3e17",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "entry to the main galleries"
+        },
+        {
+          "key": "D",
+          "text": "the children's activity trail"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "the guided harbour tour",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the temporary exhibition",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "hire of the audio guide",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "warehouse"
+      ],
+      "questionPrompt": "• The museum is housed in a former {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "Now, take a moment to look at the building around you. The museum occupies a nineteenth-century warehouse which once stored timber, rope and other goods arriving by sea. It was not originally a customs house, as many visitors assume. Local merchants built it beside the working quay so cargo could be moved indoors quickly during bad weather. Much of the brickwork and the heavy wooden roof are original.",
+      "sourceExcerptSha256": "4e67f7779d1fcb945f5d087b6ccd0cf0002bbb879bece4cb3aaeab3cdba06c9e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "warehouse",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "warehouse",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bell"
+      ],
+      "questionPrompt": "• Entrance hall: a ship's {{14}}, four hundred years old — the oldest object.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "We begin in the entrance hall. In the glass case ahead is the oldest object in the collection: a ship's bell made roughly four hundred years ago. Divers recovered it from a wreck just off this coast. The vessel's name cannot be read clearly, although researchers think it traded between Britain and northern Europe. Beside the case, you can hear a recording of the sound made by a modern copy; the original bell is too fragile to ring.",
+      "sourceExcerptSha256": "eb4ce3533a8fe7a5fe276a2783b820f82daab73e072f10ff780717d3ea2456d1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bell",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bell",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fishing boats"
+      ],
+      "questionPrompt": "• First gallery: models of {{15}} built by local craftsmen.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "Next, go through the wide doorway on your left. The first gallery contains detailed models of fishing boats. Local craftsmen built them over the past century, often copying vessels on which they had worked. Some visitors expect full-sized boats here, but the ceiling is too low, so the museum displays those outside during summer. Notice how the models change from sail to engine power as you move clockwise around the room.",
+      "sourceExcerptSha256": "bf8499db7e131e9f0e0ef9d8b732835fcfee1c3989f15d3913cf6506b4395992",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fishing boats",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fishing boats",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "coastline"
+      ],
+      "questionPrompt": "• Map gallery: shows how the {{16}} has changed over the centuries.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "Continue into the map gallery. Its charts show how the coastline near Harborough has changed over several centuries as the sea advanced, retreated and deposited sand. An interactive screen lets you compare the present shore with surveys from 1750 and 1900. The display is about the shape of the coast, rather than shipping routes, although an old navigation chart hangs near the exit.",
+      "sourceExcerptSha256": "5a8af8166532611804d3605107401cd9dbb9e18ace2efc19c08fd70048b9cebd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "coastline",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "coastline",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diving suit"
+      ],
+      "questionPrompt": "• Most popular exhibit (upstairs): a Victorian {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "When you reach the stairs, follow the blue signs to the upper floor. Our most popular exhibit is there: a complete Victorian diving suit with a heavy brass helmet, weighted boots and an air hose. It looks impossibly cumbersome today, yet divers used equipment of this kind for difficult work beneath ships. A modern wetsuit stands nearby for comparison, but visitor surveys consistently identify the Victorian diving suit as the favourite.",
+      "sourceExcerptSha256": "c9d16822af22c93b9eb482f87dc0a0b49177d3901bc52dbe3a22dd6ffb024709",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diving suit",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diving suit",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "film"
+      ],
+      "questionPrompt": "• A short {{18}} about the port is shown every hour.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "In the same room, a short film tells the history of the port through photographs and interviews. It begins on the hour, every hour, and lasts twenty minutes. There is no extra charge for the film, but seats are limited, so arrive a few minutes early. A separate documentary about lifeboats plays only for school groups.",
+      "sourceExcerptSha256": "208371b94b0c18800d5938d481b10aac39533e3802fa9773a371bf65aae123ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "film",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "film",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "garden"
+      ],
+      "questionPrompt": "• The café is located beside the {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "After the film, you may want refreshments. The café is at the rear of the building, beside the garden. On fine days, tables are placed among the old anchors outside. The shop is closer to reception, while toilets and baby-changing facilities are reached from the corridor between the two.",
+      "sourceExcerptSha256": "73d3c357ed5f0833ab8afed5f926003dff7444a7952f67d2aeebe6d7703c070b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "garden",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "garden",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cloakroom"
+      ],
+      "questionPrompt": "• Leave large bags in the {{20}} near the entrance.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Museum Audio Guide",
+      "sourceExcerpt": "Before going upstairs, please put large bags and wet coats in the cloakroom near the entrance. This protects both the exhibits and other visitors in the narrow galleries. Small handbags may be carried, and lockers are available for valuables. Staff cannot store luggage behind the reception desk.",
+      "sourceExcerptSha256": "72300df50881eae7f2b17f587866d1dea941cdf29d2da42a12e1b4a16d78f61d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cloakroom",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cloakroom",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Megan and Ryan chose their topic mainly because",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "TUTOR: Come in, Megan and Ryan. I read the outline you sent yesterday. You've settled on a topic for your psychology experiment, so talk me through it in your own words.",
+      "sourceExcerptSha256": "97733f3212e7b2ae4a45aefdc443e64b1c5ab5492663dc955482d3d68c9148e1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "they disagreed about a personal habit"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "they had read a study that surprised them",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "their tutor suggested it to them",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The independent variable in their experiment will be",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "MEGAN: The type of music played. One group will read in silence, one will hear instrumental music, and one will hear music with lyrics. We briefly considered testing different volumes, but we decided to keep volume constant for both music groups.",
+      "sourceExcerptSha256": "1889db2ac8e349cc45a9a81ff3f9d2e6f60999c842006c5472ee231576d05b4a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "the type of music played"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "the volume of the music",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "the length of the reading task",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "To recruit participants, they have finally decided to",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "MEGAN: So our final plan is to put up a notice on the student portal and invite volunteers. The notice will give the time commitment without revealing which kind of music we expect to work best.",
+      "sourceExcerptSha256": "2c9ab87d56e229c110e6dd36e18b55ff7775f79750733d3e7855f17da07c1d35",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "invite volunteers through a notice"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "test their own friends",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "select students at random from a class list",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor is mainly concerned that",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "TUTOR: The proposed groups are adequate for the assignment. My main concern lies elsewhere. Your draft says each participant will complete all three conditions. By the third reading, people may be better at the procedure simply because they have practised it. That practice effect could distort the comparison.",
+      "sourceExcerptSha256": "88a957bdc62372a0fc5c2a0d8fad61366271fff6fe5f7befbc211ee94600e002",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "participants may improve through practice"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "the groups will be too small",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "the music may be played too loudly",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What do the students agree to do next?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "TUTOR: Exactly. Preparing and checking that test comes next; the pilot follows after I approve it. Let's go through the remaining details so your protocol is complete. Where will testing take place?",
+      "sourceExcerptSha256": "6940339297c4c2df70365fbf4435042d219e4cf33cd6fd85702c483cf2f1a016",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "prepare and check their test questions"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "run a small pilot study",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "book a quiet room",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "room"
+      ],
+      "questionPrompt": "• The tests will take place in a quiet {{26}} in the library.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "RYAN: In a quiet room in the library. It is away from the entrance and has a sign we can put on the door, so interruptions should be rare.",
+      "sourceExcerptSha256": "0a8415a02ab51863b5c0e48bbff25dc41c3c33296b86082ac165f94360c3dcca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "room",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "room",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "length"
+      ],
+      "questionPrompt": "• Every reading passage will be the same {{27}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "RYAN: The reading period will be twelve minutes in every condition as well. We don't want task length to vary.",
+      "sourceExcerptSha256": "2e7f93b059755c9e209fa070ce4d1cb853ccece5536f501cbda9287ce3e1b3a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "length",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "length",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "script"
+      ],
+      "questionPrompt": "• Instructions will be read aloud from a fixed {{28}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "MEGAN: Rather than explaining the task differently each time, one of us will read the instructions aloud from a fixed script. That way each group hears exactly the same wording.",
+      "sourceExcerptSha256": "ab12ca3844e77d5670ac13b0ef9af3629346a6c9e1ecb638dc0427a3c45f5ae4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "script",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "script",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "graph"
+      ],
+      "questionPrompt": "• The scores will be presented in a bar {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "RYAN: We'll calculate an average score for each condition. In the report, the three scores will appear in a bar graph, because the groups are separate categories rather than measurements across continuous time.",
+      "sourceExcerptSha256": "015f42fb9d44e132a5074aa80521a01718a8c2d42ff8ccdef8598b0879550deb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "graph",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "graph",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "consent"
+      ],
+      "questionPrompt": "• Written {{30}} must be obtained from every participant.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Designing a Psychology Experiment",
+      "sourceExcerpt": "TUTOR: Finally, ethics. Your information sheet explains that people may leave at any time, which is good. Before anyone takes part, however, you must obtain written consent. An email saying they are interested is not sufficient.",
+      "sourceExcerptSha256": "f451205e000772789f75aad58a7f1aaf77a015faf2bcf3b3cfb7203a9b9f4fd2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "consent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "consent",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "melatonin"
+      ],
+      "questionPrompt": "• At night, the brain releases a hormone called {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "As darkness approaches, the brain normally increases production of a hormone called melatonin. Rising levels help us feel drowsy and signal that the biological night has begun. Melatonin does not act like a powerful sleeping drug, and taking more of it cannot compensate for every cause of poor sleep. Its central role is as a timing signal, coordinating the body's preparation for rest.",
+      "sourceExcerptSha256": "c3325ac2d93935cf18a8515156ea291a9e89be1574b55329452c6645886c99ab",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "melatonin",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "melatonin",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rhythm"
+      ],
+      "questionPrompt": "• The body clock follows a 24-hour cycle called the circadian {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "That signal operates within a roughly twenty-four-hour pattern known as the circadian rhythm. The central clock is located in a small region of the brain, but clocks in other tissues respond to its timing. Left entirely without external cues, the daily cycle may drift slightly. Exposure to daylight, especially in the morning, resets it each day and keeps it aligned with the local day-night schedule. Meal times and activity provide secondary cues, but light is the strongest one for most people.",
+      "sourceExcerptSha256": "a5d62a7be7e1530f81d2137a838a3c8ee81db0bc2c9e5cd7f8bcaac629961bbe",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rhythm",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rhythm",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "deep"
+      ],
+      "questionPrompt": "• There are two main types: REM sleep and {{33}} sleep.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "Once asleep, we move through a repeating pattern of stages. For a simple overview, these are often grouped into two main types: REM sleep and deep sleep. REM stands for rapid eye movement. Brain activity in this stage can resemble waking activity, vivid dreaming is common, and most large muscles are temporarily less active. Deep sleep belongs to non-REM sleep and is marked by especially slow, synchronised brain waves. A night's sleep contains several cycles, and their composition changes towards morning.",
+      "sourceExcerptSha256": "fcbac45f000526cbbd77127a9cc324f4cf1b46e5a88d4d0e6965145b8ec7acc1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "deep",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "deep",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "muscle"
+      ],
+      "questionPrompt": "• During deep sleep, the body rebuilds {{34}} and releases growth hormone.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "The stages contribute differently to restoration. Deep sleep is strongly associated with physical recovery. During it, the body repairs tissue, rebuilds muscle and releases growth hormone. Athletes therefore pay attention to sleep as part of training, but the same processes matter after ordinary daily activity. Deep sleep tends to be more abundant in the first portion of the night, which is one reason a severely shortened night cannot be fully repaired by simply lying in later once.",
+      "sourceExcerptSha256": "4b2191d8ff7837a098a253a758637ff9dafdf358aec84b94b0c63a98535b4bd8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "muscle",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "muscle",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "memory"
+      ],
+      "questionPrompt": "• REM sleep is important for consolidating {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "REM sleep is particularly important for the brain. Evidence links it to emotional processing and to consolidating memory, the process through which newly learned material becomes more stable. Other sleep stages contribute to learning too, so it would be misleading to assign all memory work to REM alone. Still, experiments in which researchers interrupt selected stages show that the architecture of sleep matters, not just the total number of hours spent in bed.",
+      "sourceExcerptSha256": "3773eebfc1fb1f391212d17f041b64772e57b4e13145444c6144b998b22b4ffd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "memory",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "memory",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "system"
+      ],
+      "questionPrompt": "• A lack of sleep can weaken the immune {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "Now consider the effects of insufficient sleep on health. Even several nights of restricted sleep can alter the activity of immune cells and weaken the immune system. That does not mean one late night guarantees an infection. It means that repeated shortage reduces one part of the body's defence and is associated with greater vulnerability over time.",
+      "sourceExcerptSha256": "23921a458e45aa26dab8d7e1279f6a27ed888fb5838209358bf0d833a7e7874f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "system",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "system",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mood"
+      ],
+      "questionPrompt": "• Sleep loss also has a strong effect on {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "There are immediate psychological effects as well. Sleep loss has a strong influence on mood. Tired people often report greater irritability and anxiety, and they may react more strongly to minor difficulties. Attention and decision-making can also suffer. These changes matter in workplaces involving driving, machinery or medical judgement, where a brief lapse can have serious consequences.",
+      "sourceExcerptSha256": "857badb14f5fdd68acb303b5b4939b28ba47184473cab02dd529c61d8029d61d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mood",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mood",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "growth"
+      ],
+      "questionPrompt": "• Teenagers need extra sleep partly because of rapid {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "Sleep needs vary with age and from person to person. Teenagers generally need more sleep than adults, partly because adolescence is a period of rapid growth. Their internal timing also tends to shift later, so many find it difficult to fall asleep early even when school requires an early start. This biological tendency can conflict with social schedules; it should not automatically be interpreted as laziness.",
+      "sourceExcerptSha256": "bec82cce54fc736f574695f82acbd598e898783fed4619c1193c2bdd44ed6c99",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "growth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "growth",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "insomnia"
+      ],
+      "questionPrompt": "• The most common sleep disorder is {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "Persistent difficulty sleeping deserves separate attention. The most common sleep disorder is insomnia, defined by repeated trouble falling asleep, staying asleep or obtaining restorative sleep despite having an adequate opportunity to rest. It differs from choosing to stay awake for work or entertainment. Other disorders include breathing interruptions and abnormal movements, so treatment should depend on the cause rather than on one general remedy.",
+      "sourceExcerptSha256": "7f6480bf90792599519edd2787a7f871c8a2cee78a3d420b2a61770be1e9c2bd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "insomnia",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "insomnia",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "caffeine"
+      ],
+      "questionPrompt": "• Experts advise avoiding {{40}} in the evening.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Science of Sleep",
+      "sourceExcerpt": "Diet and stimulants also matter. In particular, experts advise avoiding caffeine in the evening. It blocks signals associated with sleep pressure and can remain active in the body for many hours. Coffee is the obvious source, but tea, energy drinks, chocolate and some medicines may contain it too. Alcohol may initially make a person feel sleepy, yet it can disrupt the later structure of the night.",
+      "sourceExcerptSha256": "4d76d935a2855040aa77d96f131207b3fc5ef1e449c58192658649e7deffd1fb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "caffeine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "caffeine",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Janine Benyus popularised the term \"biomimicry\" in a book published in 1997.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "The term was popularised by biologist Janine Benyus in her 1997 book Biomimicry: Innovation Inspired by Nature. Benyus argued that rather than merely extracting resources from the natural world, designers and engineers should treat nature as a mentor, learning from the elegance and efficiency of biological systems. The concept was not new—inventors had always drawn inspiration from nature—but Benyus provided a systematic framework for doing so, and her work catalysed a new field of research and practice.",
+      "sourceExcerptSha256": "a40995b19b5f0a08448de7546b618a57e859ec29bc6891ead7d586d8c62f419e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: The Eastgate Centre uses a cooling system similar to that found in termite mounds.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "Some of the most celebrated examples of biomimicry involve architecture. The Eastgate Centre in Harare, Zimbabwe, designed by architect Mick Pearce in the 1990s, takes its cues from the ventilation strategies of African termite mounds. Despite the intense heat of the Zimbabwean climate, termite mounds maintain a remarkably stable internal temperature because of a system of vents and tunnels that allow hot air to rise and be expelled while cool air is drawn from below. Pearce replicated this principle in the Eastgate Centre using a passive cooling system that requires no conventional air conditioning, reducing the building's energy consumption by approximately ninety percent compared to a conventional building of similar size. The example also illustrates why biological inspiration must be translated into local engineering. Materials, openings, internal heat loads, and daily temperature changes all affect the performance of the ventilation system, so designers adapted the principle instead of attempting a literal copy of the mound.",
+      "sourceExcerptSha256": "8b17fa03315dc6bf7c31bdac23cfde502469716575b616ad1fd6e30a7a1ae655",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: The Eastgate Centre consumes about ninety percent less energy than a conventional building.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "Some of the most celebrated examples of biomimicry involve architecture. The Eastgate Centre in Harare, Zimbabwe, designed by architect Mick Pearce in the 1990s, takes its cues from the ventilation strategies of African termite mounds. Despite the intense heat of the Zimbabwean climate, termite mounds maintain a remarkably stable internal temperature because of a system of vents and tunnels that allow hot air to rise and be expelled while cool air is drawn from below. Pearce replicated this principle in the Eastgate Centre using a passive cooling system that requires no conventional air conditioning, reducing the building's energy consumption by approximately ninety percent compared to a conventional building of similar size. The example also illustrates why biological inspiration must be translated into local engineering. Materials, openings, internal heat loads, and daily temperature changes all affect the performance of the ventilation system, so designers adapted the principle instead of attempting a literal copy of the mound.",
+      "sourceExcerptSha256": "8b17fa03315dc6bf7c31bdac23cfde502469716575b616ad1fd6e30a7a1ae655",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: The Namib Desert beetle collects water from rain using its bumped surface.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+      "sourceExcerptSha256": "25518afb0017961331ff18cac20c50b7bb549044d80b1b92cc4d640463dd0623",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "5. {{5}}: Tubercle technology was first applied to wind turbines before aircraft wings.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+      "sourceExcerptSha256": "e9be8c72e9dc28aa3f952d51741e186b9496c4068105f9f2c2ad1ff97597649c",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: The Shinkansen's redesigned nose was modelled on the beak of the kingfisher.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+      "sourceExcerptSha256": "e9be8c72e9dc28aa3f952d51741e186b9496c4068105f9f2c2ad1ff97597649c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: Critics argue that natural selection always produces the most mathematically optimal design.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+      "sourceExcerptSha256": "a4f9b658b584397dd9c3dc049af2ff6c3df272f76cb93015d31446d8e2a9b770",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hydrophilic"
+      ],
+      "questionPrompt": "8. The bumps on the Namib beetle's back have {{8}} tips that attract water droplets from fog.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+      "sourceExcerptSha256": "25518afb0017961331ff18cac20c50b7bb549044d80b1b92cc4d640463dd0623",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hydrophilic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hydrophilic",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hydrophobic"
+      ],
+      "questionPrompt": "9. Water rolls towards the beetle's mouth along the {{9}} slopes of each bump.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. The combination matters: an entirely water-attracting surface might hold droplets in place, while a uniformly repellent one would make initial collection difficult. Alternating properties allows the surface first to capture water and then to move it. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.",
+      "sourceExcerptSha256": "25518afb0017961331ff18cac20c50b7bb549044d80b1b92cc4d640463dd0623",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hydrophobic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hydrophobic",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tubercle"
+      ],
+      "questionPrompt": "10. Small bumps on wind turbine blades, inspired by whale flippers, are called {{10}} technology.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+      "sourceExcerptSha256": "e9be8c72e9dc28aa3f952d51741e186b9496c4068105f9f2c2ad1ff97597649c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tubercle",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tubercle",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fifteen"
+      ],
+      "questionPrompt": "11. The Shinkansen nose redesign reduced energy consumption by {{11}} percent.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.",
+      "sourceExcerptSha256": "e9be8c72e9dc28aa3f952d51741e186b9496c4068105f9f2c2ad1ff97597649c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fifteen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fifteen",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "history"
+      ],
+      "questionPrompt": "12. Critics note that natural selection is constrained by evolutionary {{12}} and available materials.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+      "sourceExcerptSha256": "a4f9b658b584397dd9c3dc049af2ff6c3df272f76cb93015d31446d8e2a9b770",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "history",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "history",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bioinspired"
+      ],
+      "questionPrompt": "13. Algorithms modelled on biological processes form the basis of {{13}} computing.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Biomimicry in Design",
+      "sourceExcerpt": "Critics of biomimicry note that natural selection does not produce optimal designs but rather \"good enough\" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Biological features may also serve several functions at once, making it risky to isolate one visible trait without understanding the wider organism. Engineers therefore test a proposed mechanism against human requirements rather than assuming that a natural precedent guarantees success. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied",
+      "sourceExcerptSha256": "a4f9b658b584397dd9c3dc049af2ff6c3df272f76cb93015d31446d8e2a9b770",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bioinspired",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bioinspired",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A description of a cultural practice that limits food intake at mealtimes",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+      "sourceExcerptSha256": "f569128fe436db0ad3da33c70062717defe02cc8826da92b233c9c0c0a862fd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A warning that the longevity data may be unreliable in some regions",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "F. Researchers are careful to note the limitations of Blue Zone research. The data on centenarian concentrations, particularly in some regions, may be affected by poor historical record-keeping and inflated claims of age. Confounding variables—genetics, geography, selective migration—make it difficult to isolate the causal effect of any single lifestyle factor. People who remain healthy into old age may also retain active routines because of their health, which complicates claims that the routine alone produced the outcome. Observational comparisons can reveal associations, but they cannot reproduce the control available in a long-term experiment. Nonetheless, the convergence of so many independent populations around similar habits has persuaded many public health researchers that the Blue Zone lifestyle represents a meaningful and replicable model for extending healthy life expectancy.",
+      "sourceExcerptSha256": "5fd80e5190b4e61b2713bcb9d47c1b747b948f742bf85f8298ed6ddca6d4b193",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Lifelong social support groups called moai",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+      "sourceExcerptSha256": "56a080fe0a5adf0cae856c60915e1acffb132b1ab2c5632ba44b6cf3f3799ec3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of how occupation naturally provides physical activity",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "B. Physical activity in Blue Zone populations is not the vigorous, scheduled exercise of gym culture. Rather, it is embedded in daily routine: walking to village markets, tending gardens, herding animals, kneading bread. Okinawan elders sit on the floor to eat and rest, which means they rise and lower themselves dozens of times daily, engaging muscle groups that sedentary chair-bound living leaves dormant. Sardinian shepherds walk hilly terrain for hours each day as a natural consequence of their occupation. Movement is therefore distributed across the day and tied to necessary tasks, rather than confined to a single planned session. This pattern may be easier to sustain because the surrounding environment continually prompts it. Research suggests that this form of low-intensity, continuous movement may confer health benefits distinct from those of intermittent high-intensity exercise.",
+      "sourceExcerptSha256": "d1a50673475866e2d65d3dc9d3dccd3f0c63d773ee1aba5d0b73cce351cd6657",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A reference to the cultural concept of having a sense of life purpose",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "E. A sense of purpose—articulated in Okinawan culture as ikigai, \"the reason for getting up in the morning\"—and, separately, stress-reduction practices are features common to all zones. Nicoyans speak of their plan de vida, or life plan, as a core source of meaning. Seventh-day Adventists in Loma Linda observe a weekly Sabbath as a regular pause from the pressures of daily life. Sardinians decompress through daily social rituals, including extended family meals. The mechanisms by which psychological wellbeing translates into longevity are not fully understood, but the connection is robust across multiple research traditions.",
+      "sourceExcerptSha256": "8b84554e4f559c3aa998a9a9b2d300b5a4f7be327a026c3fa2ad16d565758bd8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "The origin of the term \"Blue Zone\" and the five regions identified",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "A. In 2004, journalist Dan Buettner, working with demographers and epidemiologists, identified five regions of the world with unusually high concentrations of centenarians—people who live to age one hundred or beyond. Buettner called these regions \"Blue Zones,\" a term derived from the blue ink demographers used to mark areas of interest on maps. The five zones are: Sardinia in Italy; Okinawa in Japan; Loma Linda in California; the Nicoya Peninsula in Costa Rica; and the island of Ikaria in Greece. Despite their geographical and cultural diversity, researchers identified a set of lifestyle characteristics common to all five populations.",
+      "sourceExcerptSha256": "3b4e6c927689dfb410a04ed47eb747bb38c0a75b5e2dbc858ed667c62179fc2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A comparison between the health risks of social isolation and smoking",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+      "sourceExcerptSha256": "56a080fe0a5adf0cae856c60915e1acffb132b1ab2c5632ba44b6cf3f3799ec3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-table__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "scheduled"
+      ],
+      "questionPrompt": "21. Physical activity: Embedded in daily routine; not {{21}} exercise.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "B. Physical activity in Blue Zone populations is not the vigorous, scheduled exercise of gym culture. Rather, it is embedded in daily routine: walking to village markets, tending gardens, herding animals, kneading bread. Okinawan elders sit on the floor to eat and rest, which means they rise and lower themselves dozens of times daily, engaging muscle groups that sedentary chair-bound living leaves dormant. Sardinian shepherds walk hilly terrain for hours each day as a natural consequence of their occupation. Movement is therefore distributed across the day and tied to necessary tasks, rather than confined to a single planned session. This pattern may be easier to sustain because the surrounding environment continually prompts it. Research suggests that this form of low-intensity, continuous movement may confer health benefits distinct from those of intermittent high-intensity exercise.",
+      "sourceExcerptSha256": "d1a50673475866e2d65d3dc9d3dccd3f0c63d773ee1aba5d0b73cce351cd6657",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "scheduled",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "scheduled",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-table__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Legumes"
+      ],
+      "questionPrompt": "22. Diet staple: {{22}} consumed daily in all five zones.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+      "sourceExcerptSha256": "f569128fe436db0ad3da33c70062717defe02cc8826da92b233c9c0c0a862fd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Legumes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Legumes",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-table__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hara hachi bu"
+      ],
+      "questionPrompt": "23. Okinawan eating principle: Called {{23}}: eating until 80% full.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. This is a rule for stopping before complete satiety, not a prescribed menu, and it may reduce habitual overconsumption without requiring calorie counting. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation. Shared features should not obscure the considerable differences between the foods available in each region.",
+      "sourceExcerptSha256": "f569128fe436db0ad3da33c70062717defe02cc8826da92b233c9c0c0a862fd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hara hachi bu",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hara hachi bu",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-table__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "moai"
+      ],
+      "questionPrompt": "24. Okinawan social group: Lifelong support groups called {{24}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Because membership continues over many years, help is available through an established relationship rather than assembled only after a crisis. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. These arrangements give older people opportunities to contribute knowledge and care as well as receive assistance. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.",
+      "sourceExcerptSha256": "56a080fe0a5adf0cae856c60915e1acffb132b1ab2c5632ba44b6cf3f3799ec3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "moai",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "moai",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-table__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ikigai"
+      ],
+      "questionPrompt": "25. Okinawan life purpose: Called {{25}}: \"the reason for getting up\".",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "E. A sense of purpose—articulated in Okinawan culture as ikigai, \"the reason for getting up in the morning\"—and, separately, stress-reduction practices are features common to all zones. Nicoyans speak of their plan de vida, or life plan, as a core source of meaning. Seventh-day Adventists in Loma Linda observe a weekly Sabbath as a regular pause from the pressures of daily life. Sardinians decompress through daily social rituals, including extended family meals. The mechanisms by which psychological wellbeing translates into longevity are not fully understood, but the connection is robust across multiple research traditions.",
+      "sourceExcerptSha256": "8b84554e4f559c3aa998a9a9b2d300b5a4f7be327a026c3fa2ad16d565758bd8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ikigai",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ikigai",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-table__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Confounding"
+      ],
+      "questionPrompt": "26. Research limitation: {{26}} variables such as genetics make causation hard to isolate.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Blue Zones — The Science of Longevity",
+      "sourceExcerpt": "F. Researchers are careful to note the limitations of Blue Zone research. The data on centenarian concentrations, particularly in some regions, may be affected by poor historical record-keeping and inflated claims of age. Confounding variables—genetics, geography, selective migration—make it difficult to isolate the causal effect of any single lifestyle factor. People who remain healthy into old age may also retain active routines because of their health, which complicates claims that the routine alone produced the outcome. Observational comparisons can reveal associations, but they cannot reproduce the control available in a long-term experiment. Nonetheless, the convergence of so many independent populations around similar habits has persuaded many public health researchers that the Blue Zone lifestyle represents a meaningful and replicable model for extending healthy life expectancy.",
+      "sourceExcerptSha256": "5fd80e5190b4e61b2713bcb9d47c1b747b948f742bf85f8298ed6ddca6d4b193",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Confounding",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Confounding",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about the strong version of the Sapir-Whorf hypothesis?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The hypothesis of linguistic relativity—the idea that the language one speaks influences how one perceives and thinks about the world—has generated intense debate in linguistics, psychology, and cognitive science for more than a century. In its strongest form, the Sapir-Whorf hypothesis (named after linguists Edward Sapir and Benjamin Lee Whorf) holds that language determines thought: that people who speak different languages inhabit incommensurable cognitive worlds. This strong version has been largely discredited. If thought were strictly limited by existing words and grammar, translation and the creation of new concepts would be extremely difficult to explain. A weaker but more defensible version—that language influences certain cognitive tendencies and perceptions without determining them—has accumulated considerable empirical support in recent decades. It predicts measurable differences in attention or speed while allowing speakers of every language to learn unfamiliar distinctions.",
+      "sourceExcerptSha256": "ab41c4f38f8bdfef086cfa1ff9232b8cc17d728cf049fd20450dda18cf42449d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "It has been largely rejected, though a weaker version has support."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It has been confirmed by multiple empirical studies.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "It is still debated but has not been tested experimentally.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It applies only to colour perception and spatial cognition.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What did the colour perception experiments described in the passage find?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+      "sourceExcerptSha256": "1b210aca29d5d72c0eccfdccb10866814072367c21783f790bc91e147fdd1ece",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Speakers whose language distinguishes two colour categories were faster at discriminating those colours, but only in one visual field."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Speakers of all languages discriminate colours at the same speed.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Only languages with no colour terms showed differences in colour perception.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Colour perception is entirely determined by the number of colour terms in a language.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What notable ability have Kuuk Thaayorre speakers been shown to possess?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Spatial cognition offers another revealing domain. In Kuuk Thaayorre, an Aboriginal Australian language, speakers use absolute cardinal directions (north, south, east, west) for all spatial reference rather than ego-centred terms (left, right, in front, behind). A speaker might locate an object to the north of another one where an English speaker would place it on the left. Using the system in ordinary conversation requires continual awareness of orientation, even indoors or in unfamiliar positions. Researchers found that Kuuk Thaayorre speakers maintain a constant, accurate sense of cardinal direction regardless of their orientation—a remarkable navigational ability that is not characteristically observed in speakers of ego-centred languages. Whether this ability is caused by the language or merely correlated with cultural practices that both produce the language and the navigation skill is an ongoing debate.",
+      "sourceExcerptSha256": "0539211f3f8665cd6cda742f86086d884e52747d687fcb60cc4e253a42b6ccd5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "A consistently accurate sense of cardinal direction regardless of orientation."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "The ability to use ego-centred terms more accurately than other speakers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Superior colour discrimination compared to other Aboriginal language speakers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "The ability to learn spatial terms in English significantly faster than other groups.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the research on grammatical gender described in the passage show?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Grammatical gender provides further evidence. In languages where nouns are assigned grammatical gender—German, French, Spanish—the gender of a noun has been shown to influence the adjectives and metaphors speakers use to describe the referent. German speakers, for whom the word for \"bridge\" (Brücke) is feminine, more often describe bridges using adjectives like \"beautiful\" and \"elegant\"; Spanish speakers, for whom puente is masculine, more often use adjectives like \"strong\" and \"sturdy.\" These effects, while small, are consistent across multiple studies and have been replicated even when the instructions are given in a different language.",
+      "sourceExcerptSha256": "61b75a9d01db32083ae9aa6987a8acc57a3d6149fd6ebe597cdbb305eb89e003",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "That grammatical gender influences the adjectives speakers use to describe things."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "That German and Spanish speakers describe all objects identically regardless of grammatical gender.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "That grammatical gender effects disappear when instructions are given in a different language.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "That French speakers show stronger grammatical gender effects than Spanish or German speakers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "31. {{31}}: The Pirahã language has a very large number of specific colour terms.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+      "sourceExcerptSha256": "1b210aca29d5d72c0eccfdccb10866814072367c21783f790bc91e147fdd1ece",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: The left hemisphere of the brain is typically where language is processed.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+      "sourceExcerptSha256": "1b210aca29d5d72c0eccfdccb10866814072367c21783f790bc91e147fdd1ece",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: The navigational ability of Kuuk Thaayorre speakers is definitively caused by their language.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Spatial cognition offers another revealing domain. In Kuuk Thaayorre, an Aboriginal Australian language, speakers use absolute cardinal directions (north, south, east, west) for all spatial reference rather than ego-centred terms (left, right, in front, behind). A speaker might locate an object to the north of another one where an English speaker would place it on the left. Using the system in ordinary conversation requires continual awareness of orientation, even indoors or in unfamiliar positions. Researchers found that Kuuk Thaayorre speakers maintain a constant, accurate sense of cardinal direction regardless of their orientation—a remarkable navigational ability that is not characteristically observed in speakers of ego-centred languages. Whether this ability is caused by the language or merely correlated with cultural practices that both produce the language and the navigation skill is an ongoing debate.",
+      "sourceExcerptSha256": "0539211f3f8665cd6cda742f86086d884e52747d687fcb60cc4e253a42b6ccd5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: The grammatical gender effects reported in research are consistent across multiple studies.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Grammatical gender provides further evidence. In languages where nouns are assigned grammatical gender—German, French, Spanish—the gender of a noun has been shown to influence the adjectives and metaphors speakers use to describe the referent. German speakers, for whom the word for \"bridge\" (Brücke) is feminine, more often describe bridges using adjectives like \"beautiful\" and \"elegant\"; Spanish speakers, for whom puente is masculine, more often use adjectives like \"strong\" and \"sturdy.\" These effects, while small, are consistent across multiple studies and have been replicated even when the instructions are given in a different language.",
+      "sourceExcerptSha256": "61b75a9d01db32083ae9aa6987a8acc57a3d6149fd6ebe597cdbb305eb89e003",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: Publication bias means negative findings are less likely to be published than positive ones.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Critics of linguistic relativity research raise important methodological objections. Many of the effects reported are small in magnitude and sensitive to experimental conditions. The causal arrow is difficult to establish: rather than language shaping thought, cultural practices may independently shape both language and cognition. Bilingual speakers present another complication because their experience cannot always be assigned neatly to one linguistic system. Experimental instructions may themselves activate words or categories that affect the result being measured. There are also concerns about publication bias—the tendency for journals to publish positive results while null findings accumulate unpublished. A comprehensive meta-analysis of linguistic relativity studies published in 2012 found effect sizes were generally modest but significantly above chance, suggesting that while language does not determine thought, it may subtly tune the cognitive tools available for particular tasks.",
+      "sourceExcerptSha256": "38acbf74524f19c61f79434715db7d3fdb4dbfb6f3703fd5a23a913141962683",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: The writer suggests that awareness of linguistic relativity can improve cross-cultural communication.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The practical implications of linguistic relativity are modestly significant. In second-language acquisition, understanding that a learner's native language may predispose them to perceive and categorise the world in particular ways can inform pedagogical strategies. Teachers can give additional practice to distinctions that the learner's first language does not routinely require, while avoiding the assumption that the learner is incapable of perceiving them. In cross-cultural communication, awareness that linguistic structure shapes subtle perceptual and categorical tendencies may promote greater patience with misunderstandings that arise not from logic but from deeply embedded linguistic habits. The evidence supports careful adaptation and awareness rather than treating speakers as prisoners of their grammar.",
+      "sourceExcerptSha256": "bef46bd142a56ab21658087e629d9a1b7c7634d40eab2970e6f43b7972079283",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Sapir-Whorf"
+      ],
+      "questionPrompt": "37. The hypothesis that language influences thought is sometimes called the {{37}} hypothesis.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The hypothesis of linguistic relativity—the idea that the language one speaks influences how one perceives and thinks about the world—has generated intense debate in linguistics, psychology, and cognitive science for more than a century. In its strongest form, the Sapir-Whorf hypothesis (named after linguists Edward Sapir and Benjamin Lee Whorf) holds that language determines thought: that people who speak different languages inhabit incommensurable cognitive worlds. This strong version has been largely discredited. If thought were strictly limited by existing words and grammar, translation and the creation of new concepts would be extremely difficult to explain. A weaker but more defensible version—that language influences certain cognitive tendencies and perceptions without determining them—has accumulated considerable empirical support in recent decades. It predicts measurable differences in attention or speed while allowing speakers of every language to learn unfamiliar distinctions.",
+      "sourceExcerptSha256": "ab41c4f38f8bdfef086cfa1ff9232b8cc17d728cf049fd20450dda18cf42449d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Sapir-Whorf",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Sapir-Whorf",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lexical distinction"
+      ],
+      "questionPrompt": "38. Russian distinguishes between light blue (goluboy) and dark blue with a separate {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.",
+      "sourceExcerptSha256": "1b210aca29d5d72c0eccfdccb10866814072367c21783f790bc91e147fdd1ece",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lexical distinction",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lexical distinction",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chance"
+      ],
+      "questionPrompt": "39. The 2012 meta-analysis found effect sizes were generally modest but above {{39}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "Critics of linguistic relativity research raise important methodological objections. Many of the effects reported are small in magnitude and sensitive to experimental conditions. The causal arrow is difficult to establish: rather than language shaping thought, cultural practices may independently shape both language and cognition. Bilingual speakers present another complication because their experience cannot always be assigned neatly to one linguistic system. Experimental instructions may themselves activate words or categories that affect the result being measured. There are also concerns about publication bias—the tendency for journals to publish positive results while null findings accumulate unpublished. A comprehensive meta-analysis of linguistic relativity studies published in 2012 found effect sizes were generally modest but significantly above chance, suggesting that while language does not determine thought, it may subtly tune the cognitive tools available for particular tasks.",
+      "sourceExcerptSha256": "38acbf74524f19c61f79434715db7d3fdb4dbfb6f3703fd5a23a913141962683",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chance",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chance",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pedagogical"
+      ],
+      "questionPrompt": "40. In second-language education, understanding linguistic relativity can inform {{40}} strategies.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Linguistic Relativity",
+      "sourceExcerpt": "The practical implications of linguistic relativity are modestly significant. In second-language acquisition, understanding that a learner's native language may predispose them to perceive and categorise the world in particular ways can inform pedagogical strategies. Teachers can give additional practice to distinctions that the learner's first language does not routinely require, while avoiding the assumption that the learner is incapable of perceiving them. In cross-cultural communication, awareness that linguistic structure shapes subtle perceptual and categorical tendencies may promote greater patience with misunderstandings that arise not from logic but from deeply embedded linguistic habits. The evidence supports careful adaptation and awareness rather than treating speakers as prisoners of their grammar.",
+      "sourceExcerptSha256": "bef46bd142a56ab21658087e629d9a1b7c7634d40eab2970e6f43b7972079283",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pedagogical",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pedagogical",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q34",
+        "before": "muscle; muscles",
+        "after": "muscle",
+        "reason": "The effective transcript states “rebuilds muscle”."
+      },
+      {
+        "scope": "Listening Q35",
+        "before": "memory; memories",
+        "after": "memory",
+        "reason": "The effective transcript states “consolidating memory”."
+      },
+      {
+        "scope": "Reading Q24",
+        "before": "moais; moai",
+        "after": "moai",
+        "reason": "The passage uses the invariant Okinawan term “moai”."
+      },
+      {
+        "scope": "Listening Q15",
+        "before": "fishing boats; boats",
+        "after": "fishing boats",
+        "reason": "The full source phrase identifies the specific models and avoids an incomplete generic answer."
+      }
+    ]
+  },
+  "reviewSha256": "542af531dd6747eaa9077da86ca493c7fac5fad8e9540ecc35bd3f263200bfba"
+}

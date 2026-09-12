@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "generatedAt": "2026-09-09",
+  "scope": "ielts_listening_sets_2_20",
+  "sets": [
+    {
+      "set": 2,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "f14616ac55ca16256b7675bc4542062bb058068dfc0b5c16675d57218e6fcb62",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-2-listening-evidence.json",
+      "artifactFileSha256": "14c7a53aaad8cbc9a5d754b0a4ca30be79f170793e4cfbc018f7b7fbb123546f",
+      "artifactSha256": "b54b71b45a6c548ab587134aeb67a64304b4889957d8568bee2c0857804fce93"
+    },
+    {
+      "set": 3,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-3-listening-evidence.json",
+      "artifactFileSha256": "5c0dbbf43481827eb9d140c6a365972af5ace2047331069d73e93bd21662102c",
+      "artifactSha256": "d74da7179db5ac2b9ee19f1afd5f4b8fc967bb2cff0d7c7d79acb15c9071e057"
+    },
+    {
+      "set": 4,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-4-listening-evidence.json",
+      "artifactFileSha256": "6cec64d9918d35bd9bfa507eae15424cf3f79045091b7b6e71bb06c4162dad54",
+      "artifactSha256": "cf6f38625da5e75ab67fbcf819d8eda99bf7c91156a41559e857c4c3a1f65f79"
+    },
+    {
+      "set": 5,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-5-listening-evidence.json",
+      "artifactFileSha256": "a03b0a2a0fe47ac9a58ab5064a88ca5cd5d792cfbcfa09b2e35e822a06c33a2f",
+      "artifactSha256": "2caded6c3991ca2b3a758122825b56c1de6d395aabb4be721c9d4ce18813757b"
+    },
+    {
+      "set": 6,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "15e49c287487b42f03dbfca8b3c47575a188e65f4c9714bfc616c601d1f1cd41",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-6-listening-evidence.json",
+      "artifactFileSha256": "fff55fbc7a97020ffed610581a1677926437ca2a3c7c29c786ea244ccb52a370",
+      "artifactSha256": "17284900d842215d812d529ff1ad3ff25c9b7e876305e8536b4eb8588be83f10"
+    },
+    {
+      "set": 7,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-7-listening-evidence.json",
+      "artifactFileSha256": "26119c865d03ee8f6e31fd0e1b9e1ad45aee9acbfd033c3884f63b7582a886d5",
+      "artifactSha256": "94667eb5552855c2a12707daf9a354d550a190758b54e271bd38f2631d1ade90"
+    },
+    {
+      "set": 8,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "e94ee3ac3e2855403f388e74e6355fe5a2d47aa7febd42354dc4d5faeec748dd",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-8-listening-evidence.json",
+      "artifactFileSha256": "1dea01c92ff21fffe09ced1194c85000e9d774d3dd1cb3c699713af9d51eefcc",
+      "artifactSha256": "c757eabe7ecc0721ecf69d359acc507177cbb861c392b8a7fd26de439f3b8fad"
+    },
+    {
+      "set": 9,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "35763e69d35ae656e2c98e6129c01d6d70ac395a2dca09a9bd6b0eea7212bef1",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-9-listening-evidence.json",
+      "artifactFileSha256": "b673b4949d8221f53a63bbcbfb09820277a72be334e11d13e9f9326978997750",
+      "artifactSha256": "e34a0c2546324401eb111db6bf9ce914b77456a7351ecda0e4f08ea3bdddd9ab"
+    },
+    {
+      "set": 10,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-10-listening-evidence.json",
+      "artifactFileSha256": "f7d181a71eea3980964001f6e110494760f4bd08b6f08fe39db7de3fdc484c85",
+      "artifactSha256": "70b1d15c1079408b73bb3725218146fa2bf35e7c3c22624ce17215b556796e50"
+    },
+    {
+      "set": 11,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-11-listening-evidence.json",
+      "artifactFileSha256": "007b6a522e9df0e9dc3f22c31dee0e1b37787c5d93b64dd27700926a8220fd69",
+      "artifactSha256": "f0a6802342f7bda2f49aaa7a0c6fc40189f33694aeb63141fa66dbb060b8fcca"
+    },
+    {
+      "set": 12,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-12-listening-evidence.json",
+      "artifactFileSha256": "476bc4ddfd524ffb8759d41c6179d6a86d10e638b67e667632c1ef3b07cedc77",
+      "artifactSha256": "dad31128b2a72471bc75d22f39e2e26da5a478b72a012917f9792a29a769f4ba"
+    },
+    {
+      "set": 13,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-13-listening-evidence.json",
+      "artifactFileSha256": "fe65795057791dacf815856a4fd3dcb743ed7ddd32d7a6fc2eff4dfdf5616e3e",
+      "artifactSha256": "631e7677b86528c4d95c4bce100077fec3533d2f3ac9bb80092b9105fed9b325"
+    },
+    {
+      "set": 14,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-14-listening-evidence.json",
+      "artifactFileSha256": "b934939ccaf62354a51f68e068f05fcb05eec0789f02d051809f800ba4d6dd5f",
+      "artifactSha256": "943180b0cdc193765415b29e19977c9e220385dba7964ac4522a6fdd8d9dc88c"
+    },
+    {
+      "set": 15,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "c134adcd57d0e4bbb043695e9d5eedaf96ec5d0214117c06d66a8535ec1c013c",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-15-listening-evidence.json",
+      "artifactFileSha256": "d7be8d6e1215d6339db5e8afc56677a0744e3014e7d4fcc053322cd686a3480d",
+      "artifactSha256": "60fad3523b730efc3ae8943ae478ddb6fceaca5b646cdaec7aae76cde9294c1f"
+    },
+    {
+      "set": 16,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-16-listening-evidence.json",
+      "artifactFileSha256": "6e4b1e4ce22cc339a6046a689ea2e4c94a76a43e1c08edefce82d3ac0a249473",
+      "artifactSha256": "9dcfa44b78fe5b118afe3f5ea24ae16e456c04c168e5472d6994c74b9ecfa994"
+    },
+    {
+      "set": 17,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "cbbbc71160323623f782f42b2e2cc47555f6a3f6132461edc1cc042722eff752",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-17-listening-evidence.json",
+      "artifactFileSha256": "8d860a2ad785f1291f564539a9a006f63a7c0fa59b0d53bbc82deccc1ed8ba92",
+      "artifactSha256": "b6cf043d7e97f68603e39fa8d8803be27a6d5e1ad7d4ceaac9277b87fbb948af"
+    },
+    {
+      "set": 18,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-18-listening-evidence.json",
+      "artifactFileSha256": "8b5595cb8614a582e313e2c3a1d5e2b7cc315e141195463f210e68dda609c907",
+      "artifactSha256": "0875783a3d1094858302c6830efe7c4e1c49cb6e435043f99e8c2951f2a48c09"
+    },
+    {
+      "set": 19,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-19-listening-evidence.json",
+      "artifactFileSha256": "1c29473b66a27ec1acaf240eebef793be67cac90341264c8490652f36cd86392",
+      "artifactSha256": "55eda8ff6c27a05d7177d3ab769e3b2f7ed6562f1febd0853f3d369b694fbc11"
+    },
+    {
+      "set": 20,
+      "status": "PASS",
+      "questions": 40,
+      "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+      "artifactPath": "config/ielts-harness/listening-evidence/set-20-listening-evidence.json",
+      "artifactFileSha256": "53bfec69b5a5da54c6a6e59889a905bc190f4718cce64d5d8d631b08ce553502",
+      "artifactSha256": "59fb0ab061375d9ef28942a725519835d6991e0e8ae7ac85e48eb657bccc31ec"
+    }
+  ],
+  "summary": {
+    "sets": 19,
+    "questions": 760,
+    "supported": 760,
+    "unresolved": 0
+  },
+  "manifestSha256": "78608f635fb1246c5970cd650760f259f6983fefadf7a411b42d932ba66a51da"
+}

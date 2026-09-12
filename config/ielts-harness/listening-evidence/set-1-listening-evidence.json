@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "set": 1,
+  "generatedAt": "2026-09-12",
+  "reviewer": {
+    "kind": "human",
+    "id": "owner-reviewed-set1"
+  },
+  "audio": {
+    "url": "/audio/ielts/ielts-listening-set-1.mp3",
+    "path": "public/audio/ielts/ielts-listening-set-1.mp3",
+    "sha256": "323df1c7e2e3a8f087d0382da5dc4f2c5323699b6f4b8e8fbe4f45c7232ce68f"
+  },
+  "transcript": {
+    "harnessTranscriptSha256": "07235f9534063383d29b496341d54abfdc88361d1b55b5226d32ba4537bbc831"
+  },
+  "pinnedReferences": [
+    {
+      "path": "tests/fixtures/ielts/set-1-approved.json",
+      "sha256": "d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e"
+    },
+    {
+      "path": "tests/fixtures/ielts/set-1-listening-cambridge10-test1-reference.json",
+      "sha256": "6a2aa0d7ab3b415003042a65175fea0294bffbb83ef7479852a02a30e5b6c22b"
+    }
+  ],
+  "asr": {
+    "qaPath": "config/ielts-harness/listening-evidence/sources/set-1/c40bf563598c-repair-qa-report-set-1.json",
+    "qaSha256": "c40bf563598c6d51cf61709c1082a9cb620fb5cd67230c7bd43fd3edc76e2820",
+    "globalReportPath": "config/ielts-harness/listening-evidence/sources/set-1/9a41fe0f3f6d-asr-repair-report-set-1.json",
+    "globalReportSha256": "9a41fe0f3f6dcfb2392513540b2c26d6fca4a724d170c7bd5cc6119d730451f9",
+    "globalSourcePath": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+    "globalSourceSha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612"
+  },
+  "evidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "part": 1,
+      "startSeconds": 82.78,
+      "endSeconds": 84.38,
+      "audiblePhrase": "24 Ardley Road.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 82.78,
+        "endSeconds": 84.38,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "part": 1,
+      "startSeconds": 115.42,
+      "endSeconds": 116.98,
+      "audiblePhrase": "I read about you in the newspaper.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 115.42,
+        "endSeconds": 116.98,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "part": 1,
+      "startSeconds": 139.2,
+      "endSeconds": 144.32,
+      "audiblePhrase": "The first one begins in Los Angeles and there's plenty of time to visit some of the theme parks there.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 139.2,
+        "endSeconds": 144.32,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "part": 1,
+      "startSeconds": 160.8,
+      "endSeconds": 164.58,
+      "audiblePhrase": "I don't like the idea of staying in a tent. It'd be too hot.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 160.8,
+        "endSeconds": 164.58,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "part": 1,
+      "startSeconds": 176.26,
+      "endSeconds": 181.18,
+      "audiblePhrase": "Someone told me there's a really nice castle near Cambria. Will we go near that?",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 176.26,
+        "endSeconds": 181.18,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "part": 1,
+      "startSeconds": 202.46,
+      "endSeconds": 204.34,
+      "audiblePhrase": "That's good for beaches, isn't it?",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 202.46,
+        "endSeconds": 204.34,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "part": 1,
+      "startSeconds": 256.42,
+      "endSeconds": 265.38,
+      "audiblePhrase": "The first one I told you about is a self-drive tour through California, which lasts 12 days and covers 2,020 kilometers.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 256.42,
+        "endSeconds": 265.38,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "part": 1,
+      "startSeconds": 273.28,
+      "endSeconds": 280.98,
+      "audiblePhrase": "The cost is 525 pounds per person. That includes accommodation, car rental and a flight, but no meals.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 273.28,
+        "endSeconds": 280.98,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "part": 1,
+      "startSeconds": 292.66,
+      "endSeconds": 298.56,
+      "audiblePhrase": "Yes. It's almost £100 cheaper. It's £429 per person, which is a good deal.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 292.66,
+        "endSeconds": 298.56,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "part": 1,
+      "startSeconds": 304.1,
+      "endSeconds": 307.62,
+      "audiblePhrase": "They aren't included, but these hotels offer dinner in the price.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 304.1,
+        "endSeconds": 307.62,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 11,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "startSeconds": 1269.08,
+      "endSeconds": 1280.42,
+      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.3077,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 12,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "startSeconds": 1269.08,
+      "endSeconds": 1280.42,
+      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.2857,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "part": 2,
+      "startSeconds": 521.74,
+      "endSeconds": 523.78,
+      "audiblePhrase": "Giving details of any health problems.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 521.74,
+        "endSeconds": 523.78,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "part": 2,
+      "startSeconds": 528.46,
+      "endSeconds": 534.06,
+      "audiblePhrase": "The trainer will then take you through the safety rules for using the equipment in the fitness suite.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 528.46,
+        "endSeconds": 534.06,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "part": 2,
+      "startSeconds": 554.18,
+      "endSeconds": 558.96,
+      "audiblePhrase": "At the end of the personal assessment, the trainer will draw up a plan,",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 554.18,
+        "endSeconds": 558.96,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "part": 2,
+      "startSeconds": 573.74,
+      "endSeconds": 580.98,
+      "audiblePhrase": "All members must pay a joining fee of £90 in addition to the rates for the monthly membership fee.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 573.74,
+        "endSeconds": 580.98,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "part": 2,
+      "startSeconds": 586.32,
+      "endSeconds": 589.88,
+      "audiblePhrase": "Gold Members receive free entry to all LP clubs.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "FOCUSED_REPAIR_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/71352c33f214-whisper-repair-window-set-1.json",
+        "sha256": "71352c33f2144835a3018e32976a738e96a8fbabe442e6a9bc02d3d63b7dfad0",
+        "startSeconds": 8.3,
+        "endSeconds": 11.86,
+        "masterOffsetSeconds": 578.02
+      }
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "part": 2,
+      "startSeconds": 613.54,
+      "endSeconds": 618.2,
+      "audiblePhrase": "And so LP gives booking preferences to Premier members at peak times.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 613.54,
+        "endSeconds": 618.2,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "part": 2,
+      "startSeconds": 632.96,
+      "endSeconds": 635.12,
+      "audiblePhrase": "and it's for people who send passes for guests every month.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 632.96,
+        "endSeconds": 635.12,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "part": 2,
+      "startSeconds": 648.46,
+      "endSeconds": 652.14,
+      "audiblePhrase": "but it's very important to remember your photo card,",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 648.46,
+        "endSeconds": 652.14,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 21,
+      "responseKey": "l3q21",
+      "part": 3,
+      "startSeconds": 740.64,
+      "endSeconds": 753.32,
+      "audiblePhrase": "Well, it's an international design competition, and we have to come up with a new design for a typical domestic kitchen appliance. I see, and are there any special conditions? Does it have to save energy, for example?",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.3182,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 740.64,
+        "endSeconds": 753.32,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 22,
+      "responseKey": "l3q22",
+      "part": 3,
+      "startSeconds": 775.72,
+      "endSeconds": 793.8,
+      "audiblePhrase": "Well, they're in everyday kitchen appliance in most Australian houses, but they're all pretty boring and almost identical to each other. I think some people will be prepared to pay a little extra for something that looks different. It's a nice idea. I see you've called your design the rock pool. Why is that?",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.2286,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 775.72,
+        "endSeconds": 793.8,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 23,
+      "responseKey": "l3q23",
+      "part": 3,
+      "startSeconds": 798.52,
+      "endSeconds": 819.12,
+      "audiblePhrase": "The top is made of glass so that you can look down into it. And there's a stone at the bottom. Is that just for decoration? Actually, it does have a function. Instead of pushing a button, you turn the stone. So it's really just another way of starting the dishwasher? That's right. It's a really nice design. But what makes it innovative?",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.3143,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 798.52,
+        "endSeconds": 819.12,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 24,
+      "responseKey": "l3q24",
+      "part": 3,
+      "startSeconds": 872.82,
+      "endSeconds": 880.98,
+      "audiblePhrase": "Actually, that's where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again.",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.5,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 872.82,
+        "endSeconds": 880.98,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 25,
+      "responseKey": "l3q25",
+      "part": 3,
+      "startSeconds": 872.82,
+      "endSeconds": 880.98,
+      "audiblePhrase": "Actually, that's where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again.",
+      "rationale": "The pinned Cambridge answer reference identifies the keyed option and this timed ASR window contains its supporting discussion.",
+      "method": "PINNED_REFERENCE_SELECTION_ALIGNMENT",
+      "confidence": "MEDIUM",
+      "alignmentScore": 0.4706,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 872.82,
+        "endSeconds": 880.98,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "part": 3,
+      "startSeconds": 944.22,
+      "endSeconds": 952.1,
+      "audiblePhrase": "Well, my design has made it to the final stage of the competition and in a few months' time I have to give a presentation.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 944.22,
+        "endSeconds": 952.1,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "part": 3,
+      "startSeconds": 965.92,
+      "endSeconds": 971.14,
+      "audiblePhrase": "I see. Well, if you want to stand a good chance of winning, you really need a model of the machine.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 965.92,
+        "endSeconds": 971.14,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "part": 3,
+      "startSeconds": 974.72,
+      "endSeconds": 978.92,
+      "audiblePhrase": "What's the main difficulty so far? Ah, let me guess, is it the materials?",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 974.72,
+        "endSeconds": 978.92,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "part": 3,
+      "startSeconds": 991.1,
+      "endSeconds": 993.46,
+      "audiblePhrase": "So why don't you talk to the university about a grant?",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 991.1,
+        "endSeconds": 993.46,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "part": 3,
+      "startSeconds": 1003.62,
+      "endSeconds": 1007.58,
+      "audiblePhrase": "you need to make sure the technical details you've given are accurate and thorough.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1003.62,
+        "endSeconds": 1007.58,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "part": 4,
+      "startSeconds": 1121.96,
+      "endSeconds": 1132.1,
+      "audiblePhrase": "One in ten black bears is actually born with a white coat, which is the result of a special gene that surfaces in a few.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1121.96,
+        "endSeconds": 1132.1,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "part": 4,
+      "startSeconds": 1140.42,
+      "endSeconds": 1143.68,
+      "audiblePhrase": "its snowy fur brings with it a special power.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1140.42,
+        "endSeconds": 1143.68,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "part": 4,
+      "startSeconds": 1154.72,
+      "endSeconds": 1158.7,
+      "audiblePhrase": "It is their way of protecting it when strangers visit the area.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1154.72,
+        "endSeconds": 1158.7,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "part": 4,
+      "startSeconds": 1177.32,
+      "endSeconds": 1187.34,
+      "audiblePhrase": "For example, the old growth trees have extremely long roots that help prevent erosion of the soil along the banks of the many fish streams.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1177.32,
+        "endSeconds": 1187.34,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "part": 4,
+      "startSeconds": 1223.62,
+      "endSeconds": 1230.84,
+      "audiblePhrase": "Today, the spirit bear lives off the coast of the province of British Columbia on a few islands.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1223.62,
+        "endSeconds": 1230.84,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "part": 4,
+      "startSeconds": 1269.08,
+      "endSeconds": 1280.42,
+      "audiblePhrase": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1269.08,
+        "endSeconds": 1280.42,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "part": 4,
+      "startSeconds": 1287.92,
+      "endSeconds": 1297.4,
+      "audiblePhrase": "To make matters worse, the number of salmon in those streams is declining, because there is no legal limit on fishing at the moment.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1287.92,
+        "endSeconds": 1297.4,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "part": 4,
+      "startSeconds": 1299.08,
+      "endSeconds": 1314.32,
+      "audiblePhrase": "These influences have a negative impact on the spirit bear's very existence, which is made all the more fragile by the fact that reproduction among these bears has always been disappointingly low.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1299.08,
+        "endSeconds": 1314.32,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "part": 4,
+      "startSeconds": 1329.08,
+      "endSeconds": 1336.44,
+      "audiblePhrase": "The spirit bear's habitat is now requiring logging companies to adopt a better logging method, which is a positive step.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1329.08,
+        "endSeconds": 1336.44,
+        "masterOffsetSeconds": 0
+      }
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "part": 4,
+      "startSeconds": 1349.44,
+      "endSeconds": 1358.44,
+      "audiblePhrase": "While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion.",
+      "rationale": "The pinned Cambridge answer reference and the timed ASR phrase independently support this response in the owner-approved Set 1 recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-1/4fdef9ccde66-whisper-repaired-set-1.json",
+        "sha256": "4fdef9ccde66ba57c39500d06a35c4e5bce272fbf089e83ffb9015b3525bf612",
+        "startSeconds": 1349.44,
+        "endSeconds": 1358.44,
+        "masterOffsetSeconds": 0
+      }
+    }
+  ],
+  "summary": {
+    "questions": 40,
+    "supported": 40,
+    "unresolved": 0
+  },
+  "artifactSha256": "217a39d56d5e0e77d8e31fecf25fc252c63a57bb8f8d72366990509ea42fc168"
+}

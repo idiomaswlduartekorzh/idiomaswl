@@ -181,7 +181,7 @@ Staying informed
           blanks: [
             { num: 13, answers: ['security pass', 'pass'], maxWords: 2 },
             { num: 14, answers: ['8.30', '8:30'], maxWords: 2 },
-            { num: 15, answers: ['second', 'second floor'], maxWords: 2 },
+            { num: 15, answers: ['second'], maxWords: 2 },
             { num: 16, answers: ['hot drinks', 'drinks'], maxWords: 2 },
             { num: 17, answers: ['mentor'], maxWords: 1 },
             { num: 18, answers: ['software'], maxWords: 1 },
@@ -556,7 +556,7 @@ Education systems face enormous pressure to adapt. Curricula designed for the in
         type: 'write', id: 'w1', part: 8, taskNumber: 1,
         imageUrl: '/assets/ielts/charts/set9-task1.svg',
         imageAlt: 'Bar chart comparing university enrolment by subject area in 2005 and 2023',
-        stimulus: 'The bar chart below compares the percentage of students enrolled in six university subject areas in 2005 and 2023.',
+        stimulus: 'The bar chart below compares the percentage of students enrolled in five university subject areas in 2005 and 2023.',
         text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
         minWords: 150,
       }],

@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 10,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-10.ts",
+    "sourceSha256": "7aac9ca1103173f8132586b65f40f296d132604bd76dbb78ffed1ed8731e9d23",
+    "releaseFingerprintSha256": "27094cda7ab979f22bbedc066419ff5f31edca65fcbff57f1dad2f8834e2409f"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "transcriptSha256": "51b9df219144dcb6f311e13b2e63921d1585a1aa430fd14e6afc6072b5b48f66",
+      "objectiveSha256": "a1d269ee851d651ece69718ade5b235207180da98e896eb3308d703607580294"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+      "transcriptSha256": "51b9df219144dcb6f311e13b2e63921d1585a1aa430fd14e6afc6072b5b48f66",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-10-listening-evidence.json",
+      "evidenceSha256": "f7d181a71eea3980964001f6e110494760f4bd08b6f08fe39db7de3fdc484c85"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 61.348,
+        "endSeconds": 63.784,
+        "audiblePhrase": "Yes, my first name is Daniel and my surname is Farrelly.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 121.46,
+        "endSeconds": 125.24,
+        "audiblePhrase": "I was thinking warehouse work. Actually, no, I'd really prefer office administration.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 130.96,
+        "endSeconds": 134.56,
+        "audiblePhrase": "I'm free immediately. I finished my last contract a fortnight ago.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 219.088,
+        "endSeconds": 220.438,
+        "audiblePhrase": "Most of my background is in retail.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 228.78,
+        "endSeconds": 230.46,
+        "audiblePhrase": "I have a diploma in business studies.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 238.58,
+        "endSeconds": 240.5,
+        "audiblePhrase": "Yes, I speak French fairly fluently.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 297.54,
+        "endSeconds": 303.92,
+        "audiblePhrase": "First, there's a receptionist role in the city center, full-time, paying 11 pounds and 50 pence an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 303.92,
+        "endSeconds": 311.9,
+        "audiblePhrase": "Then we have an office assistant position. That one's out at Riverside, it's part-time, and it pays 12 pounds an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 312.46,
+        "endSeconds": 319.24,
+        "audiblePhrase": "And finally, a data clerk job, also in the city center, but the hours are evenings only at 13 pounds an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 312.46,
+        "endSeconds": 319.24,
+        "audiblePhrase": "And finally, a data clerk job, also in the city center, but the hours are evenings only at 13 pounds an hour.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 502.22,
+        "endSeconds": 528.32,
+        "audiblePhrase": "Let me start with what's new this year. We've just launched an e-book lending service, so you can now borrow digital titles and read them on your phone or tablet at home. We've also opened a set of bookable study rooms on the upper floor, which have been in great demand from students. Now some of you will ask about the cafe and the free Wi-Fi. Those aren't new, they've been with us for several years, and our children's area is currently being renovated, so please bear with us there.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 502.22,
+        "endSeconds": 528.32,
+        "audiblePhrase": "Let me start with what's new this year. We've just launched an e-book lending service, so you can now borrow digital titles and read them on your phone or tablet at home. We've also opened a set of bookable study rooms on the upper floor, which have been in great demand from students. Now some of you will ask about the cafe and the free Wi-Fi. Those aren't new, they've been with us for several years, and our children's area is currently being renovated, so please bear with us there.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 578.04,
+        "endSeconds": 582.9,
+        "audiblePhrase": "You can also go on to membership and borrowing. Joining the library is completely free for local residents.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 583.52,
+        "endSeconds": 589.3,
+        "audiblePhrase": "Once you're a member, you can borrow up to 12 items at any one time, books, audio books, or DVDs.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 589.72,
+        "endSeconds": 594.96,
+        "audiblePhrase": "The standard loan period is three weeks, and you can renew online if no one else has reserved the item.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 595.5,
+        "endSeconds": 601.48,
+        "audiblePhrase": "If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 704.08,
+        "endSeconds": 712.42,
+        "audiblePhrase": "We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep an eye on online news.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 712.44,
+        "endSeconds": 726.8,
+        "audiblePhrase": "For families we run a story session for young children every Saturday morning. It's very popular so arrive early. And if you need to use a computer, our computer suite is on the first floor with printing and scanning available.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 712.44,
+        "endSeconds": 726.8,
+        "audiblePhrase": "For families we run a story session for young children every Saturday morning. It's very popular so arrive early. And if you need to use a computer, our computer suite is on the first floor with printing and scanning available.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 775.38,
+        "endSeconds": 787.14,
+        "audiblePhrase": "Finally, if you'd like to join today, it couldn't be simpler. Just come to the main desk and bring proof of your address. A utility bill or a bank statement is fine and will issue your card on the spot.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 936.34,
+        "endSeconds": 953.14,
+        "audiblePhrase": "Let me confirm that for the assessment record. The building itself is a community library. The sports hall shown beside it belongs to the existing school. And the railway station on your location map is simply a nearby landmark. Neither of those is your design proposal.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 989.079,
+        "endSeconds": 1000.332,
+        "audiblePhrase": "We did look at an old town hall for ideas, But in the end, the main inspiration was the natural landscape around the site, the way the hills curve. The roofline actually echoes those hills.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1033.932,
+        "endSeconds": 1043.352,
+        "audiblePhrase": "the historic facade was your principal model. That's a strong concept. And what did you build the main structure from? We debated using concrete because it's cheap and durable,",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1139.26,
+        "endSeconds": 1151.18,
+        "audiblePhrase": "Definitely. The hardest thing wasn't the budget or accessibility. It was the limited size of the site. It's quite a narrow plot, so fitting everything in without it feeling cramped took a lot of reworking.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1170.58,
+        "endSeconds": 1194.86,
+        "audiblePhrase": "That response shows useful development. Include an early plan and the revised one so the audience can see how the restricted plot changed your thinking. You've handled that well. Now, I looked at your scale model. It's beautifully made, but I have to say the scale isn't obvious. Someone looking at it can't easily tell how big the building actually is. You might add a small human figure for reference.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1221.9,
+        "endSeconds": 1235.84,
+        "audiblePhrase": "Now, for the presentation itself. Start with a clear introduction that sets out your aims. Don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1221.9,
+        "endSeconds": 1235.84,
+        "audiblePhrase": "Now, for the presentation itself. Start with a clear introduction that sets out your aims. Don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1236.44,
+        "endSeconds": 1249.32,
+        "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1236.44,
+        "endSeconds": 1249.32,
+        "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1236.44,
+        "endSeconds": 1249.32,
+        "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1369.56,
+        "endSeconds": 1383.88,
+        "audiblePhrase": "Large whales divide their year between two very different regions. In the cooler months, they head towards the tropics, and the main reason is reproduction. They travel to warm breeding grounds, where their young have a better chance of surviving.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1384.56,
+        "endSeconds": 1395.56,
+        "audiblePhrase": "In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny, shrimp-like creatures called krill that form the bulk of their diet.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1396.32,
+        "endSeconds": 1404.84,
+        "audiblePhrase": "During this feeding season, a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1396.32,
+        "endSeconds": 1404.84,
+        "audiblePhrase": "During this feeding season, a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1469.62,
+        "endSeconds": 1476.64,
+        "audiblePhrase": "There, the females give birth in warm, shallow lagoons near the shore, which offer their calves protection from predators.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1576.2599999999998,
+        "endSeconds": 1582.36,
+        "audiblePhrase": "Scientists believe they may be able to detect the Earth's magnetic field using it rather like a compass.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1583.22,
+        "endSeconds": 1592.68,
+        "audiblePhrase": "They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometers underwater and help them stay in contact.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1646.52,
+        "endSeconds": 1654.02,
+        "audiblePhrase": "One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1654.74,
+        "endSeconds": 1663.52,
+        "audiblePhrase": "In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1664.28,
+        "endSeconds": 1676.2,
+        "audiblePhrase": "And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "ac72d5dfbc661c27aebfb861256b588af0b91fd36a9bbd9f8cc3aac7eb7df99e",
+      "objectiveSha256": "a1d269ee851d651ece69718ade5b235207180da98e896eb3308d703607580294"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Plastic pollution has become one of the most visible and alarming symptoms of humanity's impact on the natural environment. Millions of tonnes of plastic enter the world's oceans each year, where it persists indefinitely—plastic does not biodegrade but rather breaks down into progressively smaller fragments. Particles smaller than five millimetres in diameter are classified as microplastics, and their presence now pervades every marine environment on Earth, from the surface of the Arctic Ocean to the sediments of the deepest ocean trenches. Their small size makes the pollution difficult to observe and recover. A floating bottle can sometimes be collected, but fragments dispersed through water or mixed into sediment cannot be removed with the same methods. Continued fragmentation also means that old waste remains a source long after it first enters the sea.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The sources of microplastics are numerous and varied. Primary microplastics are manufactured at microscopic size for specific industrial or consumer purposes: microbeads used in cosmetic exfoliants and toothpastes, and pellets known as nurdles that are the raw material from which larger plastic products are moulded. Secondary microplastics result from the gradual fragmentation of larger plastic items—bottles, bags, fishing gear, synthetic clothing—under the combined action of ultraviolet radiation, wave action, and mechanical abrasion. A single washing-machine cycle involving synthetic garments can release hundreds of thousands of microfibre particles into wastewater. Whether those fibres reach the ocean depends partly on treatment infrastructure. Some are trapped in sewage sludge, but this does not necessarily end their movement: sludge applied to land can transfer particles into soil, from which runoff may carry them into rivers. The route from product to sea is therefore often indirect.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Marine organisms interact with microplastics at multiple levels of the food web. Filter feeders such as mussels and oysters ingest particles indiscriminately alongside their normal food. Fish and seabirds confuse floating microplastic fragments for food items, with serious consequences: laboratory studies have shown that fish exposed to microplastics exhibit reduced feeding behaviour, impaired reproduction, and liver stress. Size, shape, and density affect where a particle travels and which organisms encounter it. Some plastics remain near the surface, while others sink after organisms and minerals accumulate on them. Fibres and irregular fragments may also behave differently from smooth spheres in digestive systems. Chemical concerns compound the physical ones: microplastics are highly effective scavengers of persistent organic pollutants (POPs) in seawater, concentrating toxic chemicals that then enter the food chain when the plastic is ingested.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Human exposure to microplastics is now effectively universal. Studies have detected microplastics in human blood, lung tissue, placental tissue, and breast milk. Detection alone does not establish how much exposure produces illness, and results from cell cultures cannot be transferred directly to the complex conditions of a living body. Researchers must distinguish the effects of the particle itself from those of chemicals carried on or released from it. The health consequences of this exposure are not yet fully characterised, but laboratory studies have identified potential mechanisms of harm: microplastic particles have been shown to cause inflammatory responses in human cell cultures, and certain plastic additives—plasticisers and stabilisers—are established endocrine disruptors that interfere with hormonal regulation.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Plastic pollution has become one of the most visible and alarming symptoms of humanity's impact on the natural environment. Millions of tonnes of plastic enter the world's oceans each year, where it persists indefinitely—plastic does not biodegrade but rather breaks down into progressively smaller fragments. Particles smaller than five millimetres in diameter are classified as microplastics, and their presence now pervades every marine environment on Earth, from the surface of the Arctic Ocean to the sediments of the deepest ocean trenches. Their small size makes the pollution difficult to observe and recover. A floating bottle can sometimes be collected, but fragments dispersed through water or mixed into sediment cannot be removed with the same methods. Continued fragmentation also means that old waste remains a source long after it first enters the sea.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The sources of microplastics are numerous and varied. Primary microplastics are manufactured at microscopic size for specific industrial or consumer purposes: microbeads used in cosmetic exfoliants and toothpastes, and pellets known as nurdles that are the raw material from which larger plastic products are moulded. Secondary microplastics result from the gradual fragmentation of larger plastic items—bottles, bags, fishing gear, synthetic clothing—under the combined action of ultraviolet radiation, wave action, and mechanical abrasion. A single washing-machine cycle involving synthetic garments can release hundreds of thousands of microfibre particles into wastewater. Whether those fibres reach the ocean depends partly on treatment infrastructure. Some are trapped in sewage sludge, but this does not necessarily end their movement: sludge applied to land can transfer particles into soil, from which runoff may carry them into rivers. The route from product to sea is therefore often indirect.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Marine organisms interact with microplastics at multiple levels of the food web. Filter feeders such as mussels and oysters ingest particles indiscriminately alongside their normal food. Fish and seabirds confuse floating microplastic fragments for food items, with serious consequences: laboratory studies have shown that fish exposed to microplastics exhibit reduced feeding behaviour, impaired reproduction, and liver stress. Size, shape, and density affect where a particle travels and which organisms encounter it. Some plastics remain near the surface, while others sink after organisms and minerals accumulate on them. Fibres and irregular fragments may also behave differently from smooth spheres in digestive systems. Chemical concerns compound the physical ones: microplastics are highly effective scavengers of persistent organic pollutants (POPs) in seawater, concentrating toxic chemicals that then enter the food chain when the plastic is ingested.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Human exposure to microplastics is now effectively universal. Studies have detected microplastics in human blood, lung tissue, placental tissue, and breast milk. Detection alone does not establish how much exposure produces illness, and results from cell cultures cannot be transferred directly to the complex conditions of a living body. Researchers must distinguish the effects of the particle itself from those of chemicals carried on or released from it. The health consequences of this exposure are not yet fully characterised, but laboratory studies have identified potential mechanisms of harm: microplastic particles have been shown to cause inflammatory responses in human cell cultures, and certain plastic additives—plasticisers and stabilisers—are established endocrine disruptors that interfere with hormonal regulation.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The regulatory response to microplastic pollution has been partial and slow. Several countries including the United States, the United Kingdom, and France have banned the use of microbeads in cosmetics. However, these measures address only a fraction of the problem: microbeads account for a small proportion of total microplastic input compared to secondary microplastics from larger items. Filters and cleanup projects can intercept some particles, but downstream controls must process enormous volumes of water and cannot capture material already spread across the open ocean. More comprehensive solutions require addressing plastic production and waste management at the source—reducing the volume of plastic manufactured, improving recycling infrastructure, and developing materials that degrade safely in the environment. Producers, consumers, waste services, and regulators all influence that chain, which makes responsibility harder to assign than for a single discharge point. In 2022, United Nations member states agreed to negotiate a legally binding international treaty on plastic pollution, widely described as the most significant environmental agreement since the Paris Climate Accord.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Despite these critiques, genuine sharing—distinct from commercial platform activity—does deliver social and economic value. Community sharing libraries, tool exchanges, community-supported agriculture schemes, and informal skill-swap networks provide goods and services in ways that build social capital, reduce waste, and strengthen local communities. Their value can include the relationships formed around an exchange, not just the market price of the item borrowed. Trust may reduce the need for formal monitoring, although that trust is easier to maintain among participants who expect to meet again. Whether these forms of sharing can be scaled or whether they remain inherently small-scale is an unresolved question. Some researchers argue that the true potential of the sharing economy lies not in billion-dollar platforms but in the revival of pre-market forms of mutual aid—reimagined for a networked, urban world.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Environmental claims for the sharing economy are mixed. In theory, sharing reduces the total number of assets that need to be produced: a shared car replaces multiple privately owned vehicles, reducing manufacturing, raw material consumption, and parking infrastructure demand. The final effect depends on what the shared service replaces and whether lower cost encourages additional use. An asset used more intensively may reduce idle capacity, but frequent replacement or journeys made without passengers can offset that gain. In practice, however, research has found that ride-sharing services increase the total vehicle kilometres travelled in cities rather than reducing them, because they attract passengers from walking, cycling, and public transport rather than from car ownership. Similarly, home-sharing has been shown in some markets to increase accommodation demand and tourism-related travel, potentially generating more carbon emissions than traditional hotel use.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The sharing economy's growth has been dramatic. Airbnb, founded in 2008, now lists more rooms than the world's five largest hotel chains combined. Uber operates in over 70 countries and has fundamentally disrupted the taxi industry in dozens of cities. Beyond these headline platforms, thousands of smaller services facilitate the rental of cars, bicycles, formal wear, power tools, and storage space. The aggregate value of transactions flowing through sharing economy platforms reached an estimated 335 billion US dollars globally in 2025, up from virtually zero in 2010.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Workers in the sharing economy—already discussed in relation to the gig economy—face significant vulnerabilities. While platform companies emphasise the freedom and autonomy they offer, the absence of employment protections means that a platform's algorithmic decisions—about pricing, job allocation, and account termination—can have immediate and severe consequences for a worker's livelihood. Ratings can determine access to future work, yet a worker may have little information about how a score is calculated or how to challenge an unfair review. The platform holds detailed transaction data while the individual provider often sees only the immediate offer. Research has documented cases in which workers were deactivated from platforms without explanation or recourse, losing their primary income with no entitlement to notice pay or appeal.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. The term \"sharing economy\" describes a model of economic activity in which individuals share access to goods, services, or skills, typically mediated by digital platforms. Ride-sharing, home-sharing, tool libraries, peer-to-peer lending, and skill-exchange platforms all fall under this broad category. The common principle is access without permanent ownership, yet the relationships involved vary greatly. Neighbours lending tools without payment, a company renting a fleet of vehicles, and a homeowner charging guests through an app may all receive the same label. Proponents describe it as a more efficient, sustainable, and community-oriented alternative to traditional consumption; critics argue that many so-called sharing platforms are simply new mechanisms for commercial transaction, with the environmental and social benefits frequently overstated.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sent__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The sharing economy's growth has been dramatic. Airbnb, founded in 2008, now lists more rooms than the world's five largest hotel chains combined. Uber operates in over 70 countries and has fundamentally disrupted the taxi industry in dozens of cities. Beyond these headline platforms, thousands of smaller services facilitate the rental of cars, bicycles, formal wear, power tools, and storage space. The aggregate value of transactions flowing through sharing economy platforms reached an estimated 335 billion US dollars globally in 2025, up from virtually zero in 2010.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sent__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Environmental claims for the sharing economy are mixed. In theory, sharing reduces the total number of assets that need to be produced: a shared car replaces multiple privately owned vehicles, reducing manufacturing, raw material consumption, and parking infrastructure demand. The final effect depends on what the shared service replaces and whether lower cost encourages additional use. An asset used more intensively may reduce idle capacity, but frequent replacement or journeys made without passengers can offset that gain. In practice, however, research has found that ride-sharing services increase the total vehicle kilometres travelled in cities rather than reducing them, because they attract passengers from walking, cycling, and public transport rather than from car ownership. Similarly, home-sharing has been shown in some markets to increase accommodation demand and tourism-related travel, potentially generating more carbon emissions than traditional hotel use.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sent__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sent__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The disruption of regulated industries is a persistent source of controversy. The hotel industry argues that home-sharing platforms operate at a competitive advantage by avoiding hotel taxes, fire safety regulations, and disability access requirements. Taxi industries have lobbied strenuously against ride-sharing platforms that they claim circumvent licensing and insurance requirements designed to protect consumers. Regulators must decide whether responsibility lies with each individual provider, with the platform that connects the transaction, or with both. Rules designed for a conventional hotel or taxi fleet may be difficult to apply to thousands of occasional providers, while exemption can shift costs and risks to residents. Regulators have responded inconsistently: some cities have embraced platforms while negotiating new forms of compliance, while others have sought outright bans. Amsterdam, Barcelona, and New York City have all introduced restrictions on short-term rentals following evidence that home-sharing had contributed to housing shortages and rising rents for permanent residents.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sent__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Workers in the sharing economy—already discussed in relation to the gig economy—face significant vulnerabilities. While platform companies emphasise the freedom and autonomy they offer, the absence of employment protections means that a platform's algorithmic decisions—about pricing, job allocation, and account termination—can have immediate and severe consequences for a worker's livelihood. Ratings can determine access to future work, yet a worker may have little information about how a score is calculated or how to challenge an unfair review. The platform holds detailed transaction data while the individual provider often sees only the immediate offer. Research has documented cases in which workers were deactivated from platforms without explanation or recourse, losing their primary income with no entitlement to notice pay or appeal.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sent__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Despite these critiques, genuine sharing—distinct from commercial platform activity—does deliver social and economic value. Community sharing libraries, tool exchanges, community-supported agriculture schemes, and informal skill-swap networks provide goods and services in ways that build social capital, reduce waste, and strengthen local communities. Their value can include the relationships formed around an exchange, not just the market price of the item borrowed. Trust may reduce the need for formal monitoring, although that trust is easier to maintain among participants who expect to meet again. Whether these forms of sharing can be scaled or whether they remain inherently small-scale is an unresolved question. Some researchers argue that the true potential of the sharing economy lies not in billion-dollar platforms but in the revival of pre-market forms of mutual aid—reimagined for a networked, urban world.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Memory is foundational to personal identity. The philosopher John Locke argued in the seventeenth century that personal identity consists in continuity of consciousness—specifically, in the ability to remember past experiences as one's own. On this account, you are the same person who woke up this morning because you remember waking up; you are the same person who attended school as a child because you can recall the experience. The view raises a difficulty because ordinary people forget large portions of their lives without appearing to become different persons each time a detail disappears. Memory, in Locke's framework, is not merely a record of the past but the very substance of the self.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The question of how memory should be understood in an age of digital documentation adds further complexity. Photographs, videos, social media posts, and search histories now record experiences in unprecedented detail. Some researchers argue that digital memory supplements biological memory productively, freeing cognitive resources for higher-order thinking. Others warn that the outsourcing of memory to devices impairs the development of the neural networks that underpin deep comprehension and wisdom. The relationship between remembering and understanding, these researchers suggest, is more intimate than the simple storage metaphor implies.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The social dimension of memory is equally important. Psychologists distinguish between individual memory and collective or social memory: the shared narratives through which communities, nations, and cultures make sense of their past. Social memory is maintained through rituals, monuments, commemorations, and storytelling. It is also subject to political contestation: which events are remembered, how they are framed, and whose experiences are centred are never neutral questions. The ongoing debates in many countries about how history is taught in schools, and which historical figures deserve public commemoration, reflect the deep connection between collective memory and contemporary identity politics.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "This philosophical intuition is supported, in a qualified way, by neuroscience. The hippocampus—a structure deep in the medial temporal lobe—plays a critical role in the formation of episodic memories: memories of specific events tied to particular times and places. It does not simply function as a permanent container. Its role in establishing and organising new memories differs from the distributed cortical networks involved when older knowledge is retained and retrieved. When the hippocampus is damaged, as in the celebrated case of patient H.M., who had large portions of both hippocampi removed in 1953 to control severe epilepsy, the ability to form new long-term memories is profoundly impaired. H.M. could remember his life before the surgery in broad outline but was unable to form lasting memories of anything that happened afterwards. He met his doctors daily for decades but greeted them each time as strangers. His case revealed that memory is not a single, unified faculty but a collection of distinct systems, each supported by different neural structures.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all memory is explicit and declarative. Procedural memory—the memory of skills and habits—operates largely independently of the hippocampus and remains intact even in patients with severe amnesia. H.M. was able to learn new motor skills, such as tracing a star shape while viewing his hand in a mirror, even though he had no conscious recollection of having practised the task. This dissociation between knowing how and knowing that reveals that human identity is not constituted solely by the narrative memory championed by Locke, but by a deeper layer of embodied, non-narrative competence.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Memory is also far more malleable than the metaphor of a \"recording\" implies. Memories are not stored like files on a computer but are reconstructed each time they are recalled, incorporating new information, subsequent experience, and current emotional states. Reconstruction normally helps people combine partial traces into a coherent account, so variability does not mean that every memory is false. It does mean that confidence and vivid detail cannot by themselves prove accuracy. The psychologist Elizabeth Loftus conducted landmark research demonstrating that people can be induced to form detailed and confident false memories through suggestive questioning. In one celebrated paradigm, subjects who were told that they had been lost in a shopping mall as children subsequently developed elaborate false memories of the event, complete with sensory details. This malleability has profound implications for the reliability of eyewitness testimony in legal contexts—an area where research has driven significant reforms in many jurisdictions.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The social dimension of memory is equally important. Psychologists distinguish between individual memory and collective or social memory: the shared narratives through which communities, nations, and cultures make sense of their past. Social memory is maintained through rituals, monuments, commemorations, and storytelling. It is also subject to political contestation: which events are remembered, how they are framed, and whose experiences are centred are never neutral questions. The ongoing debates in many countries about how history is taught in schools, and which historical figures deserve public commemoration, reflect the deep connection between collective memory and contemporary identity politics.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "6e19cc91dbfe09b9813c2f6cfb93f36b625a28af29b8a16f4f63831ecf9c1033",
+      "task1ImageSha256": "fb3da49f6f33937fa7bee67392b5052a2d4e42c566aaf97b7d1e2d2c0aa6a857"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "ffccb544bce5cc3e57470e1fd40471b935bacd3c91149a237012f8fd166cccac"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "a1d269ee851d651ece69718ade5b235207180da98e896eb3308d703607580294",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-10-objective-review.json",
+    "evidenceSha256": "202f0b926cf353b23ce51c268547326178fab6e7004fa7846a3294153ab10c51",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "e0eeb3bee7f3f3acbc442219ef3d8c6bfbab4ef7808cfda5888f76f96b7730b2"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "27094cda7ab979f22bbedc066419ff5f31edca65fcbff57f1dad2f8834e2409f",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

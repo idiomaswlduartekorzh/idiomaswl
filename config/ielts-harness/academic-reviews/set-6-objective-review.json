@@ -1,0 +1,3661 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 6,
+  "mockId": "set-6",
+  "contentVersionAtReview": "ielts-set-6-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "c29587c915921e33ada754f55ff62859f9d0267f37c3d3c3e4c33f68d7855198",
+    "listeningMaterialSha256": "89a4807d0cdf8bb601b6725047f39ce6ce504cae42f9cecf5696cadf0fb24d44",
+    "readingMaterialSha256": "2bfc15cf5a9a12964e7b5bb725de179a634053294aa8880aaca3e904df3f0833",
+    "objectiveMaterialSha256": "9749553861ff5ae5fcbd81d70737e8b98ecf99fb0af882976a97773eb78e25fd"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "3",
+        "three"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "mountain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "card"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "helmet"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "kit"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "central"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "5",
+        "£5",
+        "five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "30",
+        "£30",
+        "thirty"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "35",
+        "£35",
+        "thirty-five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "charger"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "E"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the climbing wall",
+        "B": "B. the swimming pool",
+        "C": "C. the café",
+        "D": "D. the sports hall",
+        "E": "E. the sauna"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "seven",
+        "7"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "Sundays",
+        "Sunday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "40",
+        "£40",
+        "forty"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "session"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "toddlers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "pound",
+        "£1",
+        "1"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "yoga"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "website"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "comparing two brands",
+        "designing a new product",
+        "analysing a marketing campaign"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "it is very well known",
+        "she has data on it",
+        "it is a local firm"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the introduction",
+        "the survey questions",
+        "the word count"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "too few responses",
+        "unclear results",
+        "a biased sample"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "a poster",
+        "slides",
+        "a video"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "label"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "sources"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "formal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "spelling"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "PDF"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "China"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "medicine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "leaves"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "monks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "ceremony"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "Portuguese"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "silver"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "plantations"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "workers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "bag"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-table__8",
+      "accepted": [
+        "plant fibres"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-table__9",
+      "accepted": [
+        "Abbasid"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-table__10",
+      "accepted": [
+        "parchment"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-table__11",
+      "accepted": [
+        "Wood pulp"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-table__12",
+      "accepted": [
+        "closed-loop water"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-table__13",
+      "accepted": [
+        "Packaging",
+        "Packaging paper"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sent__21",
+      "accepted": [
+        "trophic cascade"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sent__22",
+      "accepted": [
+        "Habitats Directive"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sent__23",
+      "accepted": [
+        "water flow"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sent__24",
+      "accepted": [
+        "compensation schemes",
+        "compensation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sent__25",
+      "accepted": [
+        "wildlife"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sent__26",
+      "accepted": [
+        "hectares"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The majority of gig workers had been forced into independent work by redundancy.",
+        "Most independent workers chose gig work voluntarily and expressed satisfaction with it.",
+        "Gig workers in developing countries reported higher satisfaction than those in developed countries.",
+        "The survey found that most gig workers wished to transition to traditional employment."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Gig workers earned more than equivalent permanent employees on an hourly basis.",
+        "Median gig earnings exceeded minimum wage in most jurisdictions.",
+        "When expenses and unpaid time were included, median gig earnings fell below minimum wage.",
+        "Earnings varied so widely that no consistent pattern could be established."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It classified Uber drivers as independent contractors with enhanced rights.",
+        "It established that drivers were employees with full employment protections.",
+        "It ruled that drivers qualified as \"workers\" and were entitled to minimum wage and holiday pay.",
+        "It prevented Uber from operating in the United Kingdom."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Rideshare drivers were reclassified as employees with full benefits.",
+        "Drivers were confirmed as independent contractors with some minimum guarantees.",
+        "The proposition was rejected by the courts as unconstitutional.",
+        "Platforms were required to offer pension contributions to all drivers."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "employees"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "legal presumption"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "official labour",
+        "official"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "structural"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "questionPrompt": "• Customer needs the bike for {{1}} days",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "CUSTOMER: Perfect. I'll take the mountain bike for three days.",
+      "sourceExcerptSha256": "b98cac24211bb925c6bcec1679fb4cd68e8addb473247c9c7cb59dc244827bcb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mountain"
+      ],
+      "questionPrompt": "• Customer chooses a {{2}} bike (not a road bike)",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "CUSTOMER: I was going to go for a road bike, but actually I'll take a mountain bike — some of the trails here are quite rough.",
+      "sourceExcerptSha256": "86f68d18608ef4b6b8cedadded9721e2defdfeb066bfa6cff52322909623cf8f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mountain",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mountain",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "card"
+      ],
+      "questionPrompt": "• The deposit will be paid by {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: Good choice for the trails. Now, we do ask for a deposit. Will you be paying by cash or card?",
+      "sourceExcerptSha256": "6f3878e90b9a72bc6ccd5d04191e1943b8799fc615dac8366272a25d574ecc9a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "card",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "card",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "helmet"
+      ],
+      "questionPrompt": "• Customer decides to hire a {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: Of course. Would you like any extras? A lot of people hire a helmet.",
+      "sourceExcerptSha256": "6479eb5ad9c63023344bd69a82fa68b049da4df598469fb0dca822ad06a86286",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "helmet",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "helmet",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "kit"
+      ],
+      "questionPrompt": "• A repair {{5}} is included free",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: Sensible. And don't worry about breakdowns: a repair kit is included free with every rental.",
+      "sourceExcerptSha256": "e888909dab4ea866f60efc2cd853b00af6e845687c51e4a6d53e2a2dc3eea4f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "kit",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "kit",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "central"
+      ],
+      "questionPrompt": "• Bikes must be returned to the {{6}} branch",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: We have two branches, but hired bikes must be returned to the central branch, near the market square.",
+      "sourceExcerptSha256": "05067f733f51bfdcf5fa4fb020a2253e73c7c960db4a67788e3cd1745567c288",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "central",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "central",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "5",
+        "£5",
+        "five"
+      ],
+      "questionPrompt": "Mountain bike | {{7}} | £18 | {{8}} | lights",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: Certainly. A mountain bike is five pounds an hour, or eighteen pounds for a full day. The deposit on that one is thirty pounds, and it comes with lights fitted.",
+      "sourceExcerptSha256": "9db3217cf0586d0a1e76daadf2983cb58f4b6bc1c4b8e402e5340809f79a8b84",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "5",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "£5",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "five",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "30",
+        "£30",
+        "thirty"
+      ],
+      "questionPrompt": "Mountain bike | {{7}} | £18 | {{8}} | lights",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: Certainly. A mountain bike is five pounds an hour, or eighteen pounds for a full day. The deposit on that one is thirty pounds, and it comes with lights fitted.",
+      "sourceExcerptSha256": "9db3217cf0586d0a1e76daadf2983cb58f4b6bc1c4b8e402e5340809f79a8b84",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "thirty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "£30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "thirty",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "35",
+        "£35",
+        "thirty-five"
+      ],
+      "questionPrompt": "Electric bike | £9 | {{9}} | £50 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: An electric bike is nine pounds an hour, or thirty-five pounds a day, with a fifty-pound deposit. Each electric bike also comes with its own charger.",
+      "sourceExcerptSha256": "8b2fe1cd0c28634b5937fc81eb6356646c3b208ab8bdc1966b8216adccdd3623",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "thirty-five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "35",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "£35",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "thirty-five",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "charger"
+      ],
+      "questionPrompt": "Electric bike | £9 | {{9}} | £50 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Renting a Bicycle",
+      "sourceExcerpt": "AGENT: An electric bike is nine pounds an hour, or thirty-five pounds a day, with a fifty-pound deposit. Each electric bike also comes with its own charger.",
+      "sourceExcerptSha256": "8b2fe1cd0c28634b5937fc81eb6356646c3b208ab8bdc1966b8216adccdd3623",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "charger",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "charger",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "E"
+      ],
+      "questionPrompt": "Which TWO facilities at the centre are completely new?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Let me begin with what's actually new here, because there's been some confusion. The swimming pool, although it looks brand new, was in fact refurbished from the old centre, and the café has simply been expanded. The sports hall is the same one many of you will remember. What is genuinely new are two things we're very proud of: a full climbing wall, the tallest in the region, and a Finnish-style sauna next to the changing rooms. Those two are completely new additions.",
+      "sourceExcerptSha256": "e4061ff764139287a4608bbeca9e606a0c2a90fde39321791376cc2e482a4f24",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the climbing wall"
+        },
+        {
+          "key": "E",
+          "text": "the sauna"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the swimming pool",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and E for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and E for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the sports hall",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and E for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "seven",
+        "7"
+      ],
+      "questionPrompt": "• On weekdays the centre opens at {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Now, some useful information. On weekdays the centre opens at seven in the morning, which is early enough for a swim before work. Do note that it closes early on Sundays, at four rather than the usual ten, so plan your weekend visits accordingly.",
+      "sourceExcerptSha256": "8661c06573733ff5bca8bcb2443d25fb44a1c81cb3ca27098f0444c16a641a19",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "seven",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "seven",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "7",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Sundays",
+        "Sunday"
+      ],
+      "questionPrompt": "• It closes early on {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Now, some useful information. On weekdays the centre opens at seven in the morning, which is early enough for a swim before work. Do note that it closes early on Sundays, at four rather than the usual ten, so plan your weekend visits accordingly.",
+      "sourceExcerptSha256": "8661c06573733ff5bca8bcb2443d25fb44a1c81cb3ca27098f0444c16a641a19",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Sundays",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Sundays",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "Sunday",
+          "basis": "GRAMMATICAL_VARIANT",
+          "rationale": "The accepted inflection preserves the source meaning and fits the displayed sentence."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "40",
+        "£40",
+        "forty"
+      ],
+      "questionPrompt": "• A standard membership costs {{15}} per month.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Let's talk membership. A standard membership costs forty pounds per month, which gives you unlimited access to all the facilities. As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan.",
+      "sourceExcerptSha256": "4997db9561b8feff0e873d2cfdbd84eb6730e4a6937c5d57276adc7e9a056c7a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "forty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "40",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "£40",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "forty",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "session"
+      ],
+      "questionPrompt": "• Every new member gets a free {{16}} with a trainer.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Let's talk membership. A standard membership costs forty pounds per month, which gives you unlimited access to all the facilities. As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan.",
+      "sourceExcerptSha256": "4997db9561b8feff0e873d2cfdbd84eb6730e4a6937c5d57276adc7e9a056c7a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "session",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "session",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "toddlers"
+      ],
+      "questionPrompt": "• The pool has a special shallow area for {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "A few notes on the facilities themselves. The pool has a special shallow area for toddlers, so it's ideal for families with young children. One small practical point: the lockers require a pound coin, which you get back at the end, so do keep one handy.",
+      "sourceExcerptSha256": "ffad819a0abc9c454bfb7048b249e7f43565d5edde154c5f8214c68c405aca00",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "toddlers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "toddlers",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pound",
+        "£1",
+        "1"
+      ],
+      "questionPrompt": "• The lockers require a {{18}} coin.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "A few notes on the facilities themselves. The pool has a special shallow area for toddlers, so it's ideal for families with young children. One small practical point: the lockers require a pound coin, which you get back at the end, so do keep one handy.",
+      "sourceExcerptSha256": "ffad819a0abc9c454bfb7048b249e7f43565d5edde154c5f8214c68c405aca00",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pound",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pound",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "£1",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "1",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "yoga"
+      ],
+      "questionPrompt": "• The most popular class is {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Finally, our timetable of classes is packed. We offer everything from spinning to boxing, but by far the most popular class is yoga — the morning sessions fill up within minutes, so do get here early if you'd like a space on the floor. To secure a place, all booking is done through the centre's website, so please create an account before you leave today.",
+      "sourceExcerptSha256": "44520115805fb32a919f9d45fbd1599fa79e384198f7ed5c39c1bda6214daf72",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "yoga",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "yoga",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "website"
+      ],
+      "questionPrompt": "• All booking is done through the centre's {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: New Leisure-Centre Tour",
+      "sourceExcerpt": "Finally, our timetable of classes is packed. We offer everything from spinning to boxing, but by far the most popular class is yoga — the morning sessions fill up within minutes, so do get here early if you'd like a space on the floor. To secure a place, all booking is done through the centre's website, so please create an account before you leave today.",
+      "sourceExcerptSha256": "44520115805fb32a919f9d45fbd1599fa79e384198f7ed5c39c1bda6214daf72",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "website",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "website",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "The main focus of the coursework is",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Come in, Sophie, Mark. Let's go over your marketing coursework. Remind me what the main focus is.",
+      "sourceExcerptSha256": "02ce2d9536c521e93175fe7601627b24540cb607a123439496cf3117590ec358",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "analysing a marketing campaign"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "comparing two brands",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "designing a new product",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Sophie chose the clothing company because",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "SOPHIE: Honestly, it's not because they're especially famous, though they are. The real reason is that they've published a lot of their sales data, so I actually have the figures to work with.",
+      "sourceExcerptSha256": "8921806b845c0cacd8bc9ad70e3adf9407ae15f93e88f94f858634b1d5ee875c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "she has data on it"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "it is very well known",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "it is a local firm",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor thinks the students should improve",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: That's exactly the right thinking — data makes all the difference. Real figures are always far more convincing to an examiner than personal opinions. Now, I've read your draft. The introduction is strong, and your word count is fine. What really needs work is your survey questions — several of them are quite leading.",
+      "sourceExcerptSha256": "0ea5885469d13e29fcf0430c1f90a8384d7bb5f7b6e4e9ce6a9d56042fbd3b72",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "the survey questions"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "the introduction",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "the word count",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The problem with the survey was that there were",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Yes, thirty is too few. Try sharing it more widely this time. And how are you planning to present your findings?",
+      "sourceExcerptSha256": "b65deb6e43f190638b1ae352b51da3f8db83d658188bd50aacdcefb31676ca53",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "too few responses"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "unclear results",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "a biased sample",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The students will present their findings using",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Yes, thirty is too few. Try sharing it more widely this time. And how are you planning to present your findings?",
+      "sourceExcerptSha256": "b65deb6e43f190638b1ae352b51da3f8db83d658188bd50aacdcefb31676ca53",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "slides"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "a poster",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "a video",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "label"
+      ],
+      "questionPrompt": "• Add a clear {{26}} to each chart.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.",
+      "sourceExcerptSha256": "c10201f343f95e7259b74650ba2c3a9aaefcb59f22e3fd149700a354cbbd4e3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "label",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "label",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sources"
+      ],
+      "questionPrompt": "• Reference all {{27}} correctly.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.",
+      "sourceExcerptSha256": "c10201f343f95e7259b74650ba2c3a9aaefcb59f22e3fd149700a354cbbd4e3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sources",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sources",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "formal"
+      ],
+      "questionPrompt": "• Keep the tone {{28}} throughout.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.",
+      "sourceExcerptSha256": "c10201f343f95e7259b74650ba2c3a9aaefcb59f22e3fd149700a354cbbd4e3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "formal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "formal",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "spelling"
+      ],
+      "questionPrompt": "• Proofread carefully for {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.",
+      "sourceExcerptSha256": "c10201f343f95e7259b74650ba2c3a9aaefcb59f22e3fd149700a354cbbd4e3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "spelling",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "spelling",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "PDF"
+      ],
+      "questionPrompt": "• Upload the file as a {{30}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Marketing Coursework Discussion",
+      "sourceExcerpt": "TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.",
+      "sourceExcerptSha256": "c10201f343f95e7259b74650ba2c3a9aaefcb59f22e3fd149700a354cbbd4e3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "PDF",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "PDF",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "China"
+      ],
+      "questionPrompt": "• Tea was first drunk in {{31}} thousands of years ago.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Let's begin at the very start. Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves. Interestingly, tea was not originally a social drink at all — it was taken as a medicine, valued for keeping people alert and aiding digestion. In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.",
+      "sourceExcerptSha256": "a08c3a6eb21ca8a15eba9e9402c0f10093719f66331f376b1ce759d5f3a74461",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "China",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "China",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "medicine"
+      ],
+      "questionPrompt": "• It was originally taken as a {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Let's begin at the very start. Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves. Interestingly, tea was not originally a social drink at all — it was taken as a medicine, valued for keeping people alert and aiding digestion. In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.",
+      "sourceExcerptSha256": "a08c3a6eb21ca8a15eba9e9402c0f10093719f66331f376b1ce759d5f3a74461",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "medicine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "medicine",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "leaves"
+      ],
+      "questionPrompt": "• Early tea was made from dried {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Let's begin at the very start. Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves. Interestingly, tea was not originally a social drink at all — it was taken as a medicine, valued for keeping people alert and aiding digestion. In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.",
+      "sourceExcerptSha256": "a08c3a6eb21ca8a15eba9e9402c0f10093719f66331f376b1ce759d5f3a74461",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "leaves",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "leaves",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "monks"
+      ],
+      "questionPrompt": "• Tea was carried to Japan by {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "From China, tea gradually spread across Asia. It was carried to Japan by monks, who had studied in Chinese monasteries and brought the custom home with them. There, tea became far more than a beverage: an elaborate and highly formal tea ceremony developed, with strict rules governing every movement.",
+      "sourceExcerptSha256": "28885571b1fe327043c5a20c5ba3363ade804a9734c558fc2cf78a1c73a40601",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "monks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "monks",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ceremony"
+      ],
+      "questionPrompt": "• In Japan a formal tea {{35}} developed.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "From China, tea gradually spread across Asia. It was carried to Japan by monks, who had studied in Chinese monasteries and brought the custom home with them. There, tea became far more than a beverage: an elaborate and highly formal tea ceremony developed, with strict rules governing every movement.",
+      "sourceExcerptSha256": "28885571b1fe327043c5a20c5ba3363ade804a9734c558fc2cf78a1c73a40601",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ceremony",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ceremony",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Portuguese"
+      ],
+      "questionPrompt": "• Tea was first shipped to Europe by {{36}} traders.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Now, how did tea reach the West? It was first shipped to Europe by Portuguese traders in the sixteenth century, though the Dutch and later the British soon dominated the trade. Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China.",
+      "sourceExcerptSha256": "a0b552cc6f4546888fc2109245085ef8d9a4a7f1ef0b0034deb6ba9786a39f60",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Portuguese",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Portuguese",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "silver"
+      ],
+      "questionPrompt": "• Europeans paid for their tea with {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Now, how did tea reach the West? It was first shipped to Europe by Portuguese traders in the sixteenth century, though the Dutch and later the British soon dominated the trade. Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China.",
+      "sourceExcerptSha256": "a0b552cc6f4546888fc2109245085ef8d9a4a7f1ef0b0034deb6ba9786a39f60",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "silver",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "silver",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plantations"
+      ],
+      "questionPrompt": "• The British set up large {{38}} in India.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "This brings us to mass production. To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam. This made tea far cheaper and turned it into an everyday drink. However, we should not romanticise this period — conditions were often extremely hard for the workers, who laboured long hours for very little pay.",
+      "sourceExcerptSha256": "e2187526b564fb6b774d9d1875d35c816cd39770d8dd375db453b914dfbb73b2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plantations",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plantations",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "workers"
+      ],
+      "questionPrompt": "• Conditions were often hard for the {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "This brings us to mass production. To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam. This made tea far cheaper and turned it into an everyday drink. However, we should not romanticise this period — conditions were often extremely hard for the workers, who laboured long hours for very little pay.",
+      "sourceExcerptSha256": "e2187526b564fb6b774d9d1875d35c816cd39770d8dd375db453b914dfbb73b2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "workers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "workers",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bag"
+      ],
+      "questionPrompt": "• In the early 1900s the tea {{40}} was invented.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Tea",
+      "sourceExcerpt": "Finally, a word about convenience. For centuries tea was brewed loose in a pot, but in the early nineteen-hundreds the tea bag was invented, apparently by accident, when a merchant sent out samples in small silk pouches. This simple innovation made tea quicker and cleaner to prepare, and it transformed how the world drinks tea.",
+      "sourceExcerptSha256": "d8e4183f62163135e0ea23fe62b4b0c8d6bd6ff8ef0eef3acbb320a8d230b7c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bag",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bag",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: Before paper, writing materials were generally expensive and difficult to make.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "Paper is so fundamental to modern civilisation that it is easy to forget how relatively recent its invention is and how dramatically it transformed the world. Before paper, civilisations stored and transmitted knowledge on materials that were expensive, heavy, and difficult to produce: clay tablets in Mesopotamia, papyrus along the Nile, and silk or bamboo strips in ancient China. Each of these materials limited the spread of literacy and knowledge to small elites. Clay tablets were durable but cumbersome to transport, while silk was light enough to carry yet too costly for ordinary records. Bamboo strips could be tied together into documents, although even a modest text became a bulky object. A cheaper, portable surface therefore changed who could preserve information as well as how far that information could travel.",
+      "sourceExcerptSha256": "95dc0064462d76d984f57ea16bb36534f12052d0715fa34d6dc4c5f0ea33a6d1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: Archaeological evidence confirms that Cai Lun was the sole inventor of paper.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "The invention of paper is attributed to Cai Lun, a court official in the Han Dynasty of China, around 105 CE. Cai Lun developed a technique for creating sheets from macerated plant fibres—including bark, hemp, rags, and fishing nets—suspended in water, drained through a mesh screen, and dried. This process produced a material that was lighter, cheaper, and more versatile than any existing writing surface. The basic method was also repeatable: a maker could spread an even layer of fibres across the screen, press out excess moisture, and produce sheets of broadly consistent thickness. Although archaeological evidence suggests that earlier, cruder forms of paper existed in China before Cai Lun, his refinement of the technique is credited with making paper practical for widespread use.",
+      "sourceExcerptSha256": "7e1677e2499a99a81384662b3a5b70c0f0d20344591a9ebad0bb5d0568386135",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Chinese authorities deliberately prevented papermaking knowledge from leaving the country.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+      "sourceExcerptSha256": "3616f17c65965afa549bc6a8d2a0a40e93ab77590dcde657ce2a6436425d9770",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "4. {{4}}: The Battle of Talas resulted in a Chinese military victory.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+      "sourceExcerptSha256": "3616f17c65965afa549bc6a8d2a0a40e93ab77590dcde657ce2a6436425d9770",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Parchment was considered more durable than paper in medieval Europe.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+      "sourceExcerptSha256": "c8b93065b4fb95355a0722f51ef16e8ed0d5cd00a26eb3a0cf0445889d51fc6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: The movable-type printing press reduced the cost of producing books.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+      "sourceExcerptSha256": "c8b93065b4fb95355a0722f51ef16e8ed0d5cd00a26eb3a0cf0445889d51fc6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Recycled fibre now accounts for over fifty percent of paper production in developed countries.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+      "sourceExcerptSha256": "f15749e0ea0f3f11a3d934a36ad8e33f70fd433a0721d95e558602329943caec",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plant fibres"
+      ],
+      "questionPrompt": "8. 105 CE — Cai Lun's paper: Paper made from macerated {{8}} and other materials.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "The invention of paper is attributed to Cai Lun, a court official in the Han Dynasty of China, around 105 CE. Cai Lun developed a technique for creating sheets from macerated plant fibres—including bark, hemp, rags, and fishing nets—suspended in water, drained through a mesh screen, and dried. This process produced a material that was lighter, cheaper, and more versatile than any existing writing surface. The basic method was also repeatable: a maker could spread an even layer of fibres across the screen, press out excess moisture, and produce sheets of broadly consistent thickness. Although archaeological evidence suggests that earlier, cruder forms of paper existed in China before Cai Lun, his refinement of the technique is credited with making paper practical for widespread use.",
+      "sourceExcerptSha256": "7e1677e2499a99a81384662b3a5b70c0f0d20344591a9ebad0bb5d0568386135",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plant fibres",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plant fibres",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Abbasid"
+      ],
+      "questionPrompt": "9. 751 CE — Battle of Talas: Knowledge passed to the {{9}} court at Baghdad.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.",
+      "sourceExcerptSha256": "3616f17c65965afa549bc6a8d2a0a40e93ab77590dcde657ce2a6436425d9770",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Abbasid",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Abbasid",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "parchment"
+      ],
+      "questionPrompt": "10. ~1440 — Gutenberg's press: Created demand for paper that {{10}} could not supply.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.",
+      "sourceExcerptSha256": "c8b93065b4fb95355a0722f51ef16e8ed0d5cd00a26eb3a0cf0445889d51fc6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "parchment",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "parchment",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-table__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Wood pulp"
+      ],
+      "questionPrompt": "11. 19th century: {{11}} replaced rags as the primary raw material.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+      "sourceExcerptSha256": "f15749e0ea0f3f11a3d934a36ad8e33f70fd433a0721d95e558602329943caec",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "wood pulp",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Wood pulp",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-table__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "closed-loop water"
+      ],
+      "questionPrompt": "12. Modern era — Environmental response: Adoption of {{12}} recycling in mills.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries. Recycling does not eliminate every environmental cost, since fibres shorten and weaken each time they are processed and must eventually be supplemented with new material. It nevertheless reduces the volume of fresh pulp required and keeps",
+      "sourceExcerptSha256": "f15749e0ea0f3f11a3d934a36ad8e33f70fd433a0721d95e558602329943caec",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "closed-loop water",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "closed-loop water",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-table__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Packaging",
+        "Packaging paper"
+      ],
+      "questionPrompt": "13. Mid-2010s to present: {{13}} demand surged due to e-commerce growth.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The History of Paper",
+      "sourceExcerpt": "Despite predictions that digital technology would render paper obsolete—the so-called \"paperless office\" of the 1970s and 1980s—global paper consumption continued to rise until the mid-2010s, when it began to plateau and then slowly decline in certain categories. Office paper use has fallen significantly, but packaging paper and cardboard have surged alongside the growth of e-commerce. Paper, it seems, remains as adaptable as ever, finding new roles even as old ones disappear.",
+      "sourceExcerptSha256": "8dcf1c2544dd07707ebfa57ccfebd019915849caa08d1d5474e4b2502eef9531",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "packaging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Packaging",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        },
+        {
+          "answer": "Packaging paper",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "An example of a carnivore species recovering in Europe without direct human intervention",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "C. In Europe, advocates of rewilding point to several large carnivores that were once native to the continent but were hunted to extinction or near-extinction over centuries of agricultural expansion: wolves, bears, lynx, and—most ambitiously—the wisent, or European bison. Some recovery has already occurred naturally. Wolf populations have expanded from remnant populations in Italy and the Iberian Peninsula, colonising France, Germany, and the Netherlands without human assistance, aided by legal protections introduced under the European Union's Habitats Directive. Lynx have been successfully reintroduced in Switzerland, the Czech Republic, and Germany.",
+      "sourceExcerptSha256": "482562a7328a5c880b11b57281b25c2a354b38290327a75cb621ee0ee5d5ad28",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of how top predators can indirectly change river conditions",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "B. Rewilding is founded on the concept of trophic cascades: the idea that predators at the top of a food chain exert powerful, often indirect effects on ecosystems far below them. The most celebrated example is the reintroduction of grey wolves to Yellowstone National Park in the United States in 1995. Within a few years, wolf predation had dramatically reduced the number of elk, which had been overgrazing riverbanks and valley floors. Vegetation recovered, rivers stabilised as root systems held soil in place, and populations of beavers, songbirds, and fish rebounded. The important point was not simply that one species had returned. Changes at the top of the food chain altered grazing pressure, plant growth, riverbank stability, and habitat for several other species. Ecologists describe this sequence of events as a \"trophic cascade,\" and it provided compelling evidence for the ecological value of apex predators.",
+      "sourceExcerptSha256": "fe5ab4a006a030f561e9ece35e5169d1814659a284d24784f5acc60268972031",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Evidence that returning a specific animal reduced peak water flow during storms",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "D. The rewilding of rivers is equally compelling. Beavers, extinct in Britain for approximately four hundred years, were reintroduced to Scotland in 2009 as part of a pilot project. The results have been striking. Beaver dams create wetland habitats, slow the flow of water, reduce downstream flooding, and improve water quality. Instead of moving rapidly through a single channel, storm water is temporarily stored in a network of ponds and side channels before continuing downstream. This delay can flatten the highest point of a flood wave even when it does not prevent flooding altogether. A river system in Devon, where beavers were reintroduced in 2011, showed a 30 percent reduction in peak water flow during storm events—a finding with significant implications for flood management in a country increasingly vulnerable to extreme rainfall.",
+      "sourceExcerptSha256": "f74b939ad86c404a9ac0879fc5a0fdfefd5041b392c7d9a3a4f8805d550802f3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A traditional landscape can embody local history and identity",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "F. Perhaps the most significant challenge is cultural. The idealised European landscape—neatly farmed fields, managed forests, picturesque villages—reflects centuries of human shaping of the land. These places are not viewed only as productive territory: they can embody local history, family identity, and ideas about responsible stewardship. Allowing scrub, wetlands, or large animals to return may therefore appear to erase a valued cultural landscape. For many rural communities, the arrival of wolves or the flooding caused by beavers represents not a restoration of nature but an unwelcome disruption of their way of life. Successful rewilding programmes have found that community involvement, transparent communication, and genuine local benefit-sharing are as important as ecological science.",
+      "sourceExcerptSha256": "c33474cf12fcc6a27bc48a67bc4ab895319299ee5653c1f0d3def7c825c33cd9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "Traditional conservation may preserve damaged fragments without restoring how they function",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "A. Across the continent of Europe, a quiet revolution in conservation is under way. For much of the twentieth century, the dominant approach to protecting nature involved designating reserves, managing habitats carefully, and excluding or strictly controlling human activity. This model has produced important results, but ecologists increasingly argue that it is insufficient: it preserves fragments of damaged ecosystems rather than restoring their capacity to function. A growing movement known as rewilding proposes a more ambitious alternative—allowing, and in some cases actively promoting, the return of nature on a large scale.",
+      "sourceExcerptSha256": "382fbfcc8384fc29879f4d306d732ab5c921a68466ea47a977dada3c6e2594a1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "An organisation's aim to rewild one million hectares",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+      "sourceExcerptSha256": "c2d3bd43721d4fd368bd623435e38e1aaae6aef420bdc0e9a3fb93dfe1c4df69",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to G; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports G for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An explanation of difficulties in compensating farmers for losses",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "E. Critics of rewilding raise legitimate concerns. Farmers and landowners are understandably anxious about the return of large predators that may attack livestock. The economic impact can be severe for individual producers, even if the overall ecological and economic benefits are positive. In some regions of Europe, compensation schemes for livestock losses to wolves and bears have helped reduce conflict, but enforcement and adequacy of payments remain contentious. There are also concerns about whether rewilded landscapes can be maintained at sufficient scale: wildlife needs vast corridors of connected habitat to thrive, and much of Europe is densely settled and intensively farmed.",
+      "sourceExcerptSha256": "79294ab968c75f495fa3ead59ffbc4e4b229da119c9f07bbc134adbbe034fb27",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports E for the precise question; option G is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sent__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "trophic cascade"
+      ],
+      "questionPrompt": "21. The concept that predators indirectly affect all levels of an ecosystem is known as a {{21}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "B. Rewilding is founded on the concept of trophic cascades: the idea that predators at the top of a food chain exert powerful, often indirect effects on ecosystems far below them. The most celebrated example is the reintroduction of grey wolves to Yellowstone National Park in the United States in 1995. Within a few years, wolf predation had dramatically reduced the number of elk, which had been overgrazing riverbanks and valley floors. Vegetation recovered, rivers stabilised as root systems held soil in place, and populations of beavers, songbirds, and fish rebounded. The important point was not simply that one species had returned. Changes at the top of the food chain altered grazing pressure, plant growth, riverbank stability, and habitat for several other species. Ecologists describe this sequence of events as a \"trophic cascade,\" and it provided compelling evidence for the ecological value of apex predators.",
+      "sourceExcerptSha256": "fe5ab4a006a030f561e9ece35e5169d1814659a284d24784f5acc60268972031",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "trophic cascade",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "trophic cascade",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sent__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Habitats Directive"
+      ],
+      "questionPrompt": "22. The legal protection of wolves in Europe is partly due to the EU's {{22}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "C. In Europe, advocates of rewilding point to several large carnivores that were once native to the continent but were hunted to extinction or near-extinction over centuries of agricultural expansion: wolves, bears, lynx, and—most ambitiously—the wisent, or European bison. Some recovery has already occurred naturally. Wolf populations have expanded from remnant populations in Italy and the Iberian Peninsula, colonising France, Germany, and the Netherlands without human assistance, aided by legal protections introduced under the European Union's Habitats Directive. Lynx have been successfully reintroduced in Switzerland, the Czech Republic, and Germany.",
+      "sourceExcerptSha256": "482562a7328a5c880b11b57281b25c2a354b38290327a75cb621ee0ee5d5ad28",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Habitats Directive",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Habitats Directive",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sent__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "water flow"
+      ],
+      "questionPrompt": "23. The reintroduction of beavers to Devon resulted in a 30 percent reduction in peak {{23}} during storms.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "D. The rewilding of rivers is equally compelling. Beavers, extinct in Britain for approximately four hundred years, were reintroduced to Scotland in 2009 as part of a pilot project. The results have been striking. Beaver dams create wetland habitats, slow the flow of water, reduce downstream flooding, and improve water quality. Instead of moving rapidly through a single channel, storm water is temporarily stored in a network of ponds and side channels before continuing downstream. This delay can flatten the highest point of a flood wave even when it does not prevent flooding altogether. A river system in Devon, where beavers were reintroduced in 2011, showed a 30 percent reduction in peak water flow during storm events—a finding with significant implications for flood management in a country increasingly vulnerable to extreme rainfall.",
+      "sourceExcerptSha256": "f74b939ad86c404a9ac0879fc5a0fdfefd5041b392c7d9a3a4f8805d550802f3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "water flow",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "water flow",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sent__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "compensation schemes",
+        "compensation"
+      ],
+      "questionPrompt": "24. Financial {{24}} for livestock losses have been introduced in some regions to reduce conflict with farmers.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "E. Critics of rewilding raise legitimate concerns. Farmers and landowners are understandably anxious about the return of large predators that may attack livestock. The economic impact can be severe for individual producers, even if the overall ecological and economic benefits are positive. In some regions of Europe, compensation schemes for livestock losses to wolves and bears have helped reduce conflict, but enforcement and adequacy of payments remain contentious. There are also concerns about whether rewilded landscapes can be maintained at sufficient scale: wildlife needs vast corridors of connected habitat to thrive, and much of Europe is densely settled and intensively farmed.",
+      "sourceExcerptSha256": "79294ab968c75f495fa3ead59ffbc4e4b229da119c9f07bbc134adbbe034fb27",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "compensation schemes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "compensation schemes",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "compensation",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sent__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "wildlife"
+      ],
+      "questionPrompt": "25. Rewilding advocates argue that functioning ecosystems can generate income through {{25}} tourism.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+      "sourceExcerptSha256": "c2d3bd43721d4fd368bd623435e38e1aaae6aef420bdc0e9a3fb93dfe1c4df69",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "wildlife",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "wildlife",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sent__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hectares"
+      ],
+      "questionPrompt": "26. Rewilding Europe aims to restore one million {{26}} of land across the continent by 2030.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Rewilding Europe",
+      "sourceExcerpt": "G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.",
+      "sourceExcerptSha256": "c2d3bd43721d4fd368bd623435e38e1aaae6aef420bdc0e9a3fb93dfe1c4df69",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hectares",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hectares",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Which of the following best describes the McKinsey 2019 survey findings?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Advocates of platform-based work stress its flexibility. Many gig workers report that the ability to set their own hours, work from home, and supplement other income streams makes gig work highly attractive. For students, parents caring for young children, or retirees seeking additional earnings, the gig model offers genuine autonomy that conventional employment cannot match. A 2019 survey by the McKinsey Global Institute found that the majority of independent workers—across countries and skill levels—chose their work status voluntarily and reported being satisfied with it.",
+      "sourceExcerptSha256": "31530ab6cad72d8b7ba33e2287273ba11e22f0db88c385b8ba7356846bb544ca",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Most independent workers chose gig work voluntarily and expressed satisfaction with it."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "The majority of gig workers had been forced into independent work by redundancy.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Gig workers in developing countries reported higher satisfaction than those in developed countries.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "The survey found that most gig workers wished to transition to traditional employment.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What did research across the UK, US, and Australia consistently find about gig worker earnings?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Critics, however, focus on the substantial minority who rely on gig work as a primary income source, often involuntarily. For these workers, the flexibility argument rings hollow: without guaranteed hours, they cannot budget reliably; without employment status, they receive no sick pay, no holiday entitlement, and no employer pension contributions. Workers may also supply a vehicle, computer, insurance, or other equipment themselves. Time spent waiting for an assignment or travelling between customers may generate no fee, even though the worker cannot use it freely. Research across the United Kingdom, United States, and Australia consistently finds that median hourly earnings for gig workers, once expenses and unpaid time are accounted for, fall below the minimum wage applicable to employed workers in the same jurisdictions. The apparent freedom of gig work thus conceals significant financial insecurity.",
+      "sourceExcerptSha256": "71d032c6f579b90719b780e18eabafae1f5c5e6d6dbe16774a2af23fb464ab04",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "When expenses and unpaid time were included, median gig earnings fell below minimum wage."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Gig workers earned more than equivalent permanent employees on an hourly basis.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Median gig earnings exceeded minimum wage in most jurisdictions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Earnings varied so widely that no consistent pattern could be established.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What was the significance of the UK Supreme Court ruling in Uber BV v Aslam?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+      "sourceExcerptSha256": "06808beaeaa6edf96db98a8b68385c14589968ec58d6454abfe8e94733010db1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "It ruled that drivers qualified as \"workers\" and were entitled to minimum wage and holiday pay."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It classified Uber drivers as independent contractors with enhanced rights.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "It established that drivers were employees with full employment protections.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It prevented Uber from operating in the United Kingdom.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what is a consequence of California's Proposition 22?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+      "sourceExcerptSha256": "cad74b78df8aaa0f6bed87189038e454b8c331efae4008f6f9dd541ec5ba63ab",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Drivers were confirmed as independent contractors with some minimum guarantees."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Rideshare drivers were reclassified as employees with full benefits.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "The proposition was rejected by the courts as unconstitutional.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Platforms were required to offer pension contributions to all drivers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "31. {{31}}: The gig economy has grown primarily because digital platforms have reduced the need for labour.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "The term \"gig economy\" describes a labour market characterised by short-term contracts, freelance work, and on-demand services, in contrast to the permanent employment that dominated the post-war economic era. The rise of digital platforms—from ride-hailing services to freelance marketplaces and food delivery apps—has accelerated this shift dramatically over the past decade. A platform can divide a service into individual assignments, match each assignment with an available worker, process payment, and record customer feedback. This coordination makes occasional work visible and accessible on a scale that informal noticeboards or personal contacts could not achieve. For some, the gig economy represents liberation from the constraints of traditional employment; for others, it represents the erosion of labour protections built up over a century of industrial relations.",
+      "sourceExcerptSha256": "4ea14bfec37a46e991e5d8879f28d9e79da675fa36c3563b626607c27377976a",
+      "verdict": "SUPPORTED",
+      "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Platform companies have generally preferred to classify workers as independent contractors.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+      "sourceExcerptSha256": "06808beaeaa6edf96db98a8b68385c14589968ec58d6454abfe8e94733010db1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: The EU Platform Work Directive was fully approved and implemented by 2022.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+      "sourceExcerptSha256": "cad74b78df8aaa0f6bed87189038e454b8c331efae4008f6f9dd541ec5ba63ab",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Some economists argue that platform work improves total employment and economic output.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+      "sourceExcerptSha256": "0cae25b73c32a9b9e1088ea99c065bd5275ed42dbb6acad8e9ae0931549901e0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Official labour statistics reliably capture the full extent of gig work.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+      "sourceExcerptSha256": "0cae25b73c32a9b9e1088ea99c065bd5275ed42dbb6acad8e9ae0931549901e0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: The writer suggests that the future of the gig economy depends partly on regulatory decisions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation, and shifting expectations about work and employment. Whether it ultimately expands or contracts human freedom depends substantially on regulatory choices that are still being contested in legislatures, courts, and corporate boardrooms around the world.",
+      "sourceExcerptSha256": "5ec9e11615b8d2d2ead89c67f192c49633ac7fa8c67c35d55bf6d7b255b0f437",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "employees"
+      ],
+      "questionPrompt": "37. Workers who have full employment protections are classified as {{37}} in most legal systems.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of \"worker\" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were \"workers\" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.",
+      "sourceExcerptSha256": "06808beaeaa6edf96db98a8b68385c14589968ec58d6454abfe8e94733010db1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "employees",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "employees",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "legal presumption"
+      ],
+      "questionPrompt": "38. The EU directive proposes a {{38}} that platform workers are employees unless proven otherwise.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.",
+      "sourceExcerptSha256": "cad74b78df8aaa0f6bed87189038e454b8c331efae4008f6f9dd541ec5ba63ab",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "legal presumption",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "legal presumption",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "official labour",
+        "official"
+      ],
+      "questionPrompt": "39. The difficulty of measuring the gig economy is partly due to its undercount in {{39}} statistics.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision. A person may perform platform tasks for only a few hours, combine several apps, or treat the income as secondary work and therefore answer a survey according to a different primary occupation. Estimates can consequently vary depending on whether researchers count registered accounts, recent activity, hours worked, or",
+      "sourceExcerptSha256": "0cae25b73c32a9b9e1088ea99c065bd5275ed42dbb6acad8e9ae0931549901e0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "official labour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "official labour",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "official",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "structural"
+      ],
+      "questionPrompt": "40. The passage describes the gig economy as a {{40}} feature of modern labour markets, not a temporary trend.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Gig Economy",
+      "sourceExcerpt": "What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation, and shifting expectations about work and employment. Whether it ultimately expands or contracts human freedom depends substantially on regulatory choices that are still being contested in legislatures, courts, and corporate boardrooms around the world.",
+      "sourceExcerptSha256": "5ec9e11615b8d2d2ead89c67f192c49633ac7fa8c67c35d55bf6d7b255b0f437",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "structural",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "structural",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q17",
+        "before": "toddlers; children",
+        "after": "toddlers",
+        "reason": "The shallow pool area is explicitly for toddlers."
+      },
+      {
+        "scope": "Listening Q20",
+        "before": "website; app",
+        "after": "website",
+        "reason": "No app is mentioned in the effective transcript."
+      },
+      {
+        "scope": "Listening Q26",
+        "before": "label; title",
+        "after": "label",
+        "reason": "Only “label” is spoken."
+      },
+      {
+        "scope": "Listening Q27",
+        "before": "sources; source",
+        "after": "sources",
+        "reason": "The singular does not complete “all ___” grammatically."
+      },
+      {
+        "scope": "Listening Q33/Q34/Q38/Q39/Q40",
+        "before": "unsupported or ungrammatical number variants",
+        "after": "leaves; monks; plantations; workers; bag",
+        "reason": "Each answer now follows the number actually spoken and required by its sentence."
+      },
+      {
+        "scope": "Reading Q9",
+        "before": "Abbasid; Abbasid Caliphate",
+        "after": "Abbasid",
+        "reason": "Only “Abbasid” completes “___ court” in the wording used by the passage."
+      },
+      {
+        "scope": "Reading Q12",
+        "before": "closed-loop; closed-loop water",
+        "after": "closed-loop water",
+        "reason": "The environmental response named in the passage is “closed-loop water recycling”."
+      },
+      {
+        "scope": "Reading Q33",
+        "before": "NOT GIVEN",
+        "after": "NO",
+        "reason": "A directive merely proposed in 2021 was not fully approved and implemented by 2022."
+      }
+    ]
+  },
+  "reviewSha256": "aa743dc57b421e76e1391bbcc3fcce6706bbf28222b4c659aada7208bdf9e063"
+}

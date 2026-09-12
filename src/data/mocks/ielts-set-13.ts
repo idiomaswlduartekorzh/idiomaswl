@@ -400,7 +400,7 @@ Public attitudes toward migration often diverge sharply from the economic eviden
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Money sent back to their home countries by migrants is known as {{8}}.\n9. People who are displaced within their own national borders are referred to as {{9}} displaced persons.\n10. The legal framework for refugee protection, the 1951 Refugee Convention, did not anticipate {{10}} displacement.\n11. A 2020 study found that immigrants accounted for a disproportionately large share of {{11}} and innovation in the United States.\n12. Public attitudes toward migration are often shaped by {{12}}, such as overestimating the number of migrants.\n13. The failure to communicate evidence on migration effectively remains a challenge for both researchers and {{13}}.`,
+          template: `8. Money sent back to their home countries by migrants is known as {{8}}.\n9. People who are displaced within their own national borders are referred to as {{9}} displaced persons.\n10. The legal framework for refugee protection, the 1951 Refugee Convention, did not anticipate {{10}} displacement.\n11. Research found that immigrants accounted for a disproportionately large share of {{11}} and innovation in the United States.\n12. Public attitudes toward migration are often shaped by {{12}}, such as overestimating the number of migrants.\n13. The failure to communicate evidence on migration effectively remains a challenge for both researchers and {{13}}.`,
           blanks: [
             { num: 8, answers: ['remittances'] },
             { num: 9, answers: ['internally'] },
@@ -646,7 +646,7 @@ Research on the nocebo effect—the counterpart to the placebo effect, in which 
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn',
-          cueCard: `Describe an experience you had that changed your perspective on something important.\n\nYou should say:\n• what the experience was\n• where and when it happened\n• how it affected the way you think\n• and explain why this change in perspective was significant to you`,
+          cueCard: `Describe an experience of meeting or working with someone from a different cultural background.\n\nYou should say:\n• who the person was\n• where and when you met\n• what you learned about each other's cultures\n• and explain how the experience affected your perspective`,
         },
         {
           type: 'speak',
