@@ -8,6 +8,7 @@ import type { StudentAttempt, StudentCourse, StudentDashboardData, StudentSubscr
 type AuthUser = Readonly<{
   id: string;
   email?: string | null;
+  email_confirmed_at?: string | null;
   user_metadata?: Record<string, unknown>;
 }>;
 
@@ -23,6 +24,7 @@ type SubmissionRow = {
 type SubscriptionRow = StudentSubscription & { offer_id: string; exam_slug: string; created_at: string };
 type CourseOrderRow = { id: string; selection: unknown; amount_in_cents: number; classes: number; sessions: number; created_at: string };
 type FeedbackRow = { submission_id: string; status: 'pending' | 'processing' | 'completed' | 'failed' };
+type SubmissionAccessRow = { submission_id: string; offer_id: string; personalized_feedback: boolean };
 
 function commerceEnvironment(): 'sandbox' | 'production' {
   return process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY?.startsWith('pub_prod_') ? 'production' : 'sandbox';
@@ -52,8 +54,12 @@ function hasDeliveredAssessment(row: SubmissionRow): boolean {
 
 function toAttempt(row: SubmissionRow, personalized: boolean, feedbackStatus?: FeedbackRow['status']): StudentAttempt {
   const score = normalizedScore(row);
+  const exam = getStudentExamWorkspace(row.exam_slug);
   return {
     id: row.id,
+    examName: exam?.name ?? row.exam_slug.toUpperCase(),
+    examFlag: exam?.flag ?? '',
+    examHubHref: exam?.hubHref ?? '/examenes',
     mockId: row.mock_id,
     title: row.mock_title?.trim() || 'Simulacro completado',
     createdAt: row.created_at,
@@ -61,7 +67,7 @@ function toAttempt(row: SubmissionRow, personalized: boolean, feedbackStatus?: F
     scoreLabel: score.label,
     reportHref: authenticatedResultHref(row.id),
     feedbackState: personalized
-      ? (feedbackStatus === 'completed' || hasDeliveredAssessment(row) ? 'delivered' : feedbackStatus ? 'processing' : 'available')
+      ? (feedbackStatus === 'failed' ? 'failed' : feedbackStatus === 'completed' || hasDeliveredAssessment(row) ? 'delivered' : feedbackStatus ? 'processing' : 'available')
       : 'not-included',
   };
 }
@@ -86,7 +92,13 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const db = createAdminClient();
     const environment = commerceEnvironment();
     const email = user.email.trim().toLowerCase();
-    const [memberships, credits, subscriptions, submissions, feedbackRequests, ownedCourseOrders, emailedCourseOrders] = await Promise.all([
+    if (user.email_confirmed_at) {
+      const { error: recoveryError } = await db.rpc('recover_xpress_identity', {
+        p_user: user.id, p_email: email, p_environment: environment,
+      });
+      if (recoveryError) return fallback;
+    }
+    const [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders] = await Promise.all([
       db.from('xpress_memberships').select('offer_id,exam_slug,status,starts_at,ends_at,created_at')
         .eq('user_id', user.id).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
       db.from('xpress_exam_credits').select('exam_slug,status,granted_at,consumed_at,consumed_submission_id')
@@ -95,6 +107,8 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
         .eq('user_id', user.id).eq('environment', environment).order('created_at', { ascending: false }).limit(5),
       db.from('exam_submissions').select('id,exam_slug,mock_id,mock_title,total_score,total_max,total_label,created_at,reviewed_at,writing_task1_assessment,writing_task2_assessment,toefl_speaking_repeat_assessment,toefl_speaking_interview_assessment')
         .eq('user_id', user.id).order('created_at', { ascending: false }).limit(100),
+      db.from('xpress_submission_access').select('submission_id,offer_id,personalized_feedback')
+        .eq('user_id', user.id).eq('environment', environment).order('granted_at', { ascending: false }).limit(100),
       db.from('xpress_personalized_feedback_requests').select('submission_id,status')
         .eq('user_id', user.id).order('created_at', { ascending: false }).limit(100),
       db.from('course_orders').select('id,selection,amount_in_cents,classes,sessions,created_at')
@@ -102,7 +116,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       db.from('course_orders').select('id,selection,amount_in_cents,classes,sessions,created_at')
         .eq('purchaser_email', email).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
     ]);
-    const failed = [memberships, credits, subscriptions, submissions, feedbackRequests, ownedCourseOrders, emailedCourseOrders].some((result) => result.error);
+    const failed = [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders].some((result) => result.error);
     if (failed) return fallback;
 
     const now = Date.now();
@@ -110,6 +124,8 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const creditRows = (credits.data ?? []) as CreditRow[];
     const subscriptionRows = (subscriptions.data ?? []) as unknown as SubscriptionRow[];
     const submissionRows = (submissions.data ?? []) as SubmissionRow[];
+    const accessRows = (submissionAccess.data ?? []) as SubmissionAccessRow[];
+    const accessBySubmission = new Map(accessRows.map((row) => [row.submission_id, row]));
     const feedbackBySubmission = new Map(((feedbackRequests.data ?? []) as FeedbackRow[]).map((row) => [row.submission_id, row.status]));
     const activeMembership = membershipRows.find((row) => row.status === 'active' && Date.parse(row.starts_at) <= now && Date.parse(row.ends_at) > now);
     const latestCredit = creditRows.find((row) => row.status === 'active' || row.status === 'consumed') ?? null;
@@ -117,12 +133,16 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const selectedExam = activeMembership?.exam_slug || latestCredit?.exam_slug || latestMembership?.exam_slug || subscriptionRows[0]?.exam_slug || profile?.target_exam || null;
     const product = activeMembership ? productKindForOffer(activeMembership.offer_id) : latestCredit ? 'single' : latestMembership ? productKindForOffer(latestMembership.offer_id) : null;
     const accessState = activeMembership ? 'active' : latestCredit?.status === 'active' ? 'active' : latestCredit?.status === 'consumed' ? 'consumed' : latestMembership ? 'expired' : 'none';
-    const personalized = product === 'personalized' && accessState === 'active';
-    const relevantSubmissions = accessState === 'active' && product !== 'single'
-      ? submissionRows.filter((row) => row.exam_slug === selectedExam)
-      : accessState === 'consumed' && latestCredit?.consumed_submission_id
-        ? submissionRows.filter((row) => row.id === latestCredit.consumed_submission_id)
-        : [];
+    const consumedSubmissionIds = new Set(creditRows.flatMap((row) => row.consumed_submission_id ? [row.consumed_submission_id] : []));
+    const isMembershipSubmission = (row: SubmissionRow) => membershipRows.some((membership) => (
+      membership.status === 'active' && membership.exam_slug === row.exam_slug
+      && Date.parse(row.created_at) >= Date.parse(membership.starts_at)
+      && Date.parse(row.created_at) < Date.parse(membership.ends_at)
+    ));
+    const relevantSubmissions = submissionRows.filter((row) => (
+      accessBySubmission.has(row.id) || consumedSubmissionIds.has(row.id)
+      || feedbackBySubmission.has(row.id) || isMembershipSubmission(row)
+    ));
     const courseOrderMap = new Map<string, CourseOrderRow>();
     for (const order of [...(ownedCourseOrders.data ?? []), ...(emailedCourseOrders.data ?? [])] as CourseOrderRow[]) courseOrderMap.set(order.id, order);
     const courseOrderIds = [...courseOrderMap.keys()];
@@ -153,7 +173,14 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
         singleAttemptAvailable: product === 'single' && latestCredit?.status === 'active',
       },
       subscription,
-      attempts: relevantSubmissions.map((row) => toAttempt(row, personalized, feedbackBySubmission.get(row.id))),
+      attempts: relevantSubmissions.map((row) => {
+        const ledgerAccess = accessBySubmission.get(row.id);
+        const personalized = ledgerAccess?.personalized_feedback === true || ledgerAccess?.offer_id === 'exam-teacher'
+          || feedbackBySubmission.has(row.id)
+          || membershipRows.some((membership) => membership.offer_id === 'exam-teacher' && membership.exam_slug === row.exam_slug
+            && Date.parse(row.created_at) >= Date.parse(membership.starts_at) && Date.parse(row.created_at) < Date.parse(membership.ends_at));
+        return toAttempt(row, personalized, feedbackBySubmission.get(row.id));
+      }),
       courses,
     };
   } catch {

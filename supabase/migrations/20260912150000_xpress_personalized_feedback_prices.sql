@@ -156,6 +156,36 @@ begin
   return result;
 end $$;
 
+-- Durable entitlement for every submitted exam. Memberships can expire or be
+-- canceled, but reports already earned during a paid period stay addressable.
+create table public.xpress_submission_access (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id),
+  submission_id uuid not null unique references public.exam_submissions(id),
+  environment text not null check (environment in ('sandbox','production')),
+  exam_slug text not null check (exam_slug in ('ielts','toefl','sat','icfes','cambridge-b2','goethe','delf-dalf','cils-celi','topik','celpe-bras')),
+  access_kind text not null check (access_kind in ('membership','single-credit')),
+  offer_id text not null check (offer_id in ('exam-single','exam-auto','exam-teacher')),
+  membership_id uuid references public.xpress_memberships(id),
+  credit_id uuid unique references public.xpress_exam_credits(id),
+  personalized_feedback boolean not null default false,
+  granted_at timestamptz not null default now(),
+  check (
+    access_kind='membership' and membership_id is not null and credit_id is null
+      and offer_id in ('exam-auto','exam-teacher') and personalized_feedback=(offer_id='exam-teacher')
+    or access_kind='single-credit' and membership_id is null and credit_id is not null
+      and offer_id='exam-single' and personalized_feedback=false
+  )
+);
+create index xpress_submission_access_user_date on public.xpress_submission_access(user_id,granted_at desc);
+create index xpress_submission_access_membership on public.xpress_submission_access(membership_id,granted_at desc) where membership_id is not null;
+alter table public.xpress_submission_access enable row level security;
+revoke all on public.xpress_submission_access from public,anon,authenticated,service_role;
+grant select,insert on public.xpress_submission_access to service_role;
+
+comment on table public.xpress_submission_access is
+  'Private durable link between an approved Xpress entitlement and one owned exam submission.';
+
 create table public.xpress_personalized_feedback_requests (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id),
@@ -179,3 +209,88 @@ grant update(status,generated_report,last_error,updated_at,completed_at) on publ
 
 comment on table public.xpress_personalized_feedback_requests is
   'Private queue for AI-assisted WeLearn feedback. It does not represent a human teacher review or an official exam score.';
+
+create index xpress_orders_purchaser_identity on public.xpress_orders(environment,purchaser_email,user_id);
+create index xpress_subscriptions_purchaser_identity on public.xpress_subscriptions(environment,purchaser_email,user_id);
+
+-- Supabase can assign a different auth id when an existing customer returns
+-- through another identity provider. A confirmed, exact email match repairs
+-- the private ownership chain atomically without changing payment evidence.
+create function public.recover_xpress_identity(p_user uuid,p_email text,p_environment text)
+returns integer language plpgsql security definer set search_path='' as $$
+declare moved integer:=0; affected integer:=0;
+begin
+  if p_user is null or p_email is null or p_email<>lower(p_email) or p_environment not in ('sandbox','production') then
+    raise exception 'invalid_identity_recovery';
+  end if;
+  if not exists(
+    select 1 from auth.users where id=p_user and lower(email)=p_email and email_confirmed_at is not null
+  ) then raise exception 'unverified_identity_recovery'; end if;
+
+  perform pg_catalog.pg_advisory_xact_lock(pg_catalog.hashtextextended(p_environment||':'||p_email, 27));
+  if exists(
+    select 1 from public.xpress_subscriptions
+    where user_id=p_user and environment=p_environment and status<>'canceled'
+  ) and exists(
+    select 1 from public.xpress_subscriptions
+    where user_id<>p_user and purchaser_email=p_email and environment=p_environment and status<>'canceled'
+  ) then raise exception 'identity_recovery_subscription_conflict'; end if;
+
+  update public.exam_submissions submission set user_id=p_user
+  where submission.id in (
+    select credit.consumed_submission_id from public.xpress_exam_credits credit
+      join public.xpress_orders source on source.id=credit.source_order_id
+      where source.purchaser_email=p_email and source.environment=p_environment and source.user_id<>p_user
+        and credit.consumed_submission_id is not null
+    union
+    select access.submission_id from public.xpress_submission_access access
+      left join public.xpress_memberships membership on membership.id=access.membership_id
+      left join public.xpress_exam_credits credit on credit.id=access.credit_id
+      left join public.xpress_orders source on source.id=coalesce(membership.source_order_id,credit.source_order_id)
+      where source.purchaser_email=p_email and source.environment=p_environment and source.user_id<>p_user
+    union
+    select feedback.submission_id from public.xpress_personalized_feedback_requests feedback
+      join public.xpress_memberships membership on membership.id=feedback.membership_id
+      join public.xpress_orders source on source.id=membership.source_order_id
+      where source.purchaser_email=p_email and source.environment=p_environment and source.user_id<>p_user
+  );
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_submission_access access set user_id=p_user
+  from public.xpress_orders source
+  left join public.xpress_memberships membership on membership.source_order_id=source.id
+  left join public.xpress_exam_credits credit on credit.source_order_id=source.id
+  where (access.membership_id=membership.id or access.credit_id=credit.id)
+    and source.purchaser_email=p_email and source.environment=p_environment and access.user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_personalized_feedback_requests feedback set user_id=p_user
+  from public.xpress_memberships membership,public.xpress_orders source
+  where feedback.membership_id=membership.id and membership.source_order_id=source.id
+    and source.purchaser_email=p_email and source.environment=p_environment and feedback.user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_memberships membership set user_id=p_user
+  from public.xpress_orders source
+  where membership.source_order_id=source.id and source.purchaser_email=p_email
+    and source.environment=p_environment and membership.user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_exam_credits credit set user_id=p_user
+  from public.xpress_orders source
+  where credit.source_order_id=source.id and source.purchaser_email=p_email
+    and source.environment=p_environment and credit.user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_subscriptions set user_id=p_user
+  where purchaser_email=p_email and environment=p_environment and user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+
+  update public.xpress_orders set user_id=p_user
+  where purchaser_email=p_email and environment=p_environment and user_id<>p_user;
+  get diagnostics affected=row_count; moved:=moved+affected;
+  return moved;
+end $$;
+
+revoke all on function public.recover_xpress_identity(uuid,text,text) from public,anon,authenticated;
+grant execute on function public.recover_xpress_identity(uuid,text,text) to service_role;
