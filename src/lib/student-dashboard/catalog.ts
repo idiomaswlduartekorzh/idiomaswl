@@ -39,7 +39,7 @@ export const STUDENT_PRODUCT_COPY = Object.freeze({
     label: 'Xpress + feedback',
     price: '$99.900 COP',
     billing: 'cada 30 días',
-    summary: 'Todo Xpress más feedback pedagógico personalizado de WeLearn, asistido por IA.',
+    summary: 'Todo Xpress más una revisión pedagógica personalizada de WeLearn.',
   },
 } as const);
 
@@ -79,4 +79,3 @@ export function productKindForOffer(offerId: string | null | undefined): Student
 export function authenticatedResultHref(submissionId: string): string {
   return `/dashboard/student/resultados/${encodeURIComponent(submissionId)}`;
 }
-

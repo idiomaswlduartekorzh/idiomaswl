@@ -26,7 +26,8 @@ test('the dashboard keeps the three products distinct', () => {
   assert.equal(STUDENT_PRODUCT_COPY.single.billing, 'pago único');
   assert.equal(STUDENT_PRODUCT_COPY.automatic.billing, 'cada 30 días');
   assert.equal(STUDENT_PRODUCT_COPY.personalized.billing, 'cada 30 días');
-  assert.match(STUDENT_PRODUCT_COPY.personalized.summary, /asistido por IA/);
+  assert.match(STUDENT_PRODUCT_COPY.personalized.summary, /revisión pedagógica personalizada/);
+  assert.doesNotMatch(STUDENT_PRODUCT_COPY.personalized.summary, /\bIA\b|inteligencia artificial|revisión humana/i);
 });
 
 test('personalized feedback and class enrollment appear only in their preview fixtures', () => {

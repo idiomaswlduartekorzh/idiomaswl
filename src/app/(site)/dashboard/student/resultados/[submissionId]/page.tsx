@@ -27,9 +27,9 @@ export default async function StudentResultPage({ params }: { params: Promise<{ 
       <div><p>Intento guardado en tu cuenta</p><h2>Tu reporte está disponible de forma permanente dentro del acceso contratado.</h2><p>El detalle pedagógico se construye con la información que registró este simulacro. Las correcciones y escalas son de práctica y no constituyen un resultado oficial.</p></div>
     </section>
     {attempt.feedbackState !== 'not-included' ? <section className={styles.feedback}>
-      <p>Feedback pedagógico personalizado</p>
+      <p>Revisión pedagógica personalizada</p>
       <h2>{attempt.feedbackState === 'delivered' ? 'Tu devolución ya está lista' : attempt.feedbackState === 'failed' ? 'Estamos reintentando generar tu devolución' : 'Estamos preparando tu devolución'}</h2>
-      <span>Se genera con asistencia de IA a partir de tus resultados. No es una revisión humana ni un resultado oficial.</span>
+      <span>Encontrarás observaciones sobre tu desempeño y los aspectos que conviene reforzar. Las escalas de práctica no constituyen un resultado oficial.</span>
     </section> : null}
     <section className={styles.actions}><Link href={attempt.examHubHref}>Volver a los simulacros</Link><a href="https://wa.me/573005004253?text=Hola%2C%20necesito%20ayuda%20con%20mi%20reporte%20de%20WeLearn." rel="noreferrer" target="_blank">Pedir ayuda</a></section>
   </main>;
