@@ -101,6 +101,7 @@
     "generate:ielts-listening-evidence": "node --experimental-strip-types --no-warnings scripts/generate-ielts-listening-evidence.mjs",
     "generate:ielts-harness-evidence": "node --experimental-strip-types --no-warnings scripts/generate-ielts-harness-evidence.mjs",
     "report:ielts-final-release-review": "node --experimental-strip-types --no-warnings scripts/build-ielts-final-release-review.mjs",
+    "record:ielts-final-release-approval": "node --experimental-strip-types --no-warnings scripts/record-ielts-final-release-approval.mjs",
     "audit:ielts-complete-contract": "node --experimental-strip-types --no-warnings scripts/audit-ielts-complete-contract.mjs --strict",
     "audit:ielts-asr": "node --experimental-strip-types --no-warnings scripts/audit-ielts-asr.mjs",
     "scaffold:ielts-evidence": "node --experimental-strip-types --no-warnings scripts/ielts-harness.mjs --mode=scaffold",
