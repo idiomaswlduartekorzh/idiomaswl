@@ -71,7 +71,7 @@ function ProductCard({ data }: { data: StudentDashboardData }) {
       <Link href="/suscripcion/examenes">Administrar</Link>
     </div> : null}
     {access.product === 'personalized' && access.state === 'active' ? <div className={styles.aiNotice}>
-      <span aria-hidden="true">✦</span><p><strong>Feedback personalizado incluido.</strong> WeLearn lo genera con asistencia de IA a partir de tus resultados. No es una revisión humana ni un resultado oficial del examen.</p>
+      <span aria-hidden="true">✦</span><p><strong>Revisión personalizada incluida.</strong> Recibirás observaciones concretas sobre tus resultados y los aspectos que conviene reforzar.</p>
     </div> : null}
   </section>;
 }
