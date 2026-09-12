@@ -1,0 +1,3555 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 14,
+  "mockId": "set-14",
+  "contentVersionAtReview": "ielts-set-14-v2",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "b09ecc673415f8d7b77d7b188f1ec0eee675f1d5750d3d4de4f95941653749f3",
+    "listeningMaterialSha256": "1d26e051136f277d10795a7afba0ca5695886d7cf09eec14e34a096baacf4b2a",
+    "readingMaterialSha256": "ed137573bd01a6a8b0b71452c2a86b7c0907f10ac1651a8cfd72b933e70bdbb4",
+    "objectiveMaterialSha256": "2b540fc25ec6c3da6e2125c266fce5be9eb560a51265cd1a5653ed70bce877fb"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Brightwell",
+        "brightwell"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "June",
+        "june"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "140"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "garden"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "vegetarian"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "suite"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "75",
+        "£75"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "decorations",
+        "decoration"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "photographer"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "buffet"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "B"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. a race T-shirt",
+        "B": "B. a finisher's medal",
+        "C": "C. energy bars",
+        "D": "D. a printed route map",
+        "E": "E. a timing chip"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "nine thirty",
+        "9.30",
+        "9:30"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "gate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "river"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "flat"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "water station"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "arrows",
+        "arrow"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "playground"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "shopping centre",
+        "shopping center"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "a river valley",
+        "a coastal cliff site",
+        "a disused quarry"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "collect fossils",
+        "record the rock layers",
+        "take water samples"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "train",
+        "minibus",
+        "coach"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "hand lenses",
+        "safety helmets",
+        "notebooks"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "falling rocks",
+        "the incoming tide",
+        "slippery paths"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "boots",
+        "boot"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "waterproof"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "form"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "sample"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "phones",
+        "phone"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "China",
+        "china"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "copper"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "receipt"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "flying"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "believe"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "Sweden",
+        "sweden"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "inflation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "gold"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "fiat"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "polymer"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "perpetuate",
+        "amplify"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "sentencing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "explanation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "LAWS"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "military"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "ethics washing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "land surface"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "emergent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "symbiotic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "carbon sink"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "ranching"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "tipping point"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It is confirmed by recent archaeological evidence from ancient civilisations.",
+        "It is widely accepted by economic historians as accurate.",
+        "It is intuitive but largely unsupported by historical or ethnographic evidence.",
+        "It correctly identifies barter as the universal precursor to monetary systems."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "A system of direct barter between neighbouring communities.",
+        "Systems of mutual credit and social obligation.",
+        "The use of commodity money such as grain and shells.",
+        "Centralised government distribution of goods and services."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It was backed by gold reserves held by the Chinese government.",
+        "European readers found it difficult to understand money based on authority alone.",
+        "It was adopted immediately by European merchants who heard about it.",
+        "It was identical in design to modern central bank banknotes."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Money that is backed by gold or silver reserves held by a central bank.",
+        "Currency whose value is supported by government decree and public trust.",
+        "Digital currency that operates outside the banking system.",
+        "Money that can be exchanged for a fixed quantity of a physical commodity."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "commodity"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "Lydia"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "gold standard"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "decentralised computational"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Brightwell",
+        "brightwell"
+      ],
+      "questionPrompt": "Name: Helen {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: Yes, it's Helen Brightwell.",
+      "sourceExcerptSha256": "04e43764b38a7030b7171aedfac79da03b40fefd5925e6559eb6a2feb219b51a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Brightwell",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Brightwell",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "brightwell",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "June",
+        "june"
+      ],
+      "questionPrompt": "Preferred month: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: We were set on a Saturday. We originally wanted May, but in the end we've chosen June.",
+      "sourceExcerptSha256": "c49227378c76c63940aa2276c2a5fd35c3856f3a7bad4c5102ffa3e278a97143",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "June",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "June",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "june",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "140"
+      ],
+      "questionPrompt": "Number of guests: about {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: Around 140.",
+      "sourceExcerptSha256": "57ac1c043cf2cf7926a8451301bef3bab0549ec93a6f889d82723d0ce087a41c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "140",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "140",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "garden"
+      ],
+      "questionPrompt": "Ceremony to be held in the {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: I think the garden, as long as the weather's kind.",
+      "sourceExcerptSha256": "8df779267a502273c11cac735074ac9bf0054410af3bc247d9e99d38e53872ec",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "garden",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "garden",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vegetarian"
+      ],
+      "questionPrompt": "Special meal request: {{5}} option needed",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: One thing that really matters is that we'll need a vegetarian option for a lot of our guests.",
+      "sourceExcerptSha256": "bfedb945a859f6ec8844c0951ddcd6767148748a3c2930a2c994411e182bd670",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vegetarian",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vegetarian",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "suite"
+      ],
+      "questionPrompt": "Accommodation: book the bridal {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "CUSTOMER: Mainly for the couple, so just the bridal suite for the first night.",
+      "sourceExcerptSha256": "1b56893ca33109dba277d34d72125370f738c39d94e593517ff077cc5ce72e7c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "suite",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "suite",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "75",
+        "£75"
+      ],
+      "questionPrompt": "Classic | {{7}} | {{8}} | none",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "COORDINATOR: I'll pencil that in. Now let me run through our two packages. The Classic package is £75 per guest and includes a three-course meal and all the table decorations. The Deluxe package is £95 per guest; on top of the meal, it also includes a professional photographer and an evening buffet.",
+      "sourceExcerptSha256": "ef65d81fccbe4e4e139eb0cfbcd3ae7e8f28f3bead1f1da106bc648619e38dd3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "75",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "75",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£75",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "decorations",
+        "decoration"
+      ],
+      "questionPrompt": "Classic | {{7}} | {{8}} | none",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "COORDINATOR: I'll pencil that in. Now let me run through our two packages. The Classic package is £75 per guest and includes a three-course meal and all the table decorations. The Deluxe package is £95 per guest; on top of the meal, it also includes a professional photographer and an evening buffet.",
+      "sourceExcerptSha256": "ef65d81fccbe4e4e139eb0cfbcd3ae7e8f28f3bead1f1da106bc648619e38dd3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "decorations",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "decorations",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "decoration",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "photographer"
+      ],
+      "questionPrompt": "Deluxe | £95 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "COORDINATOR: I'll pencil that in. Now let me run through our two packages. The Classic package is £75 per guest and includes a three-course meal and all the table decorations. The Deluxe package is £95 per guest; on top of the meal, it also includes a professional photographer and an evening buffet.",
+      "sourceExcerptSha256": "ef65d81fccbe4e4e139eb0cfbcd3ae7e8f28f3bead1f1da106bc648619e38dd3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "photographer",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "photographer",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "buffet"
+      ],
+      "questionPrompt": "Deluxe | £95 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a wedding venue",
+      "sourceExcerpt": "COORDINATOR: I'll pencil that in. Now let me run through our two packages. The Classic package is £75 per guest and includes a three-course meal and all the table decorations. The Deluxe package is £95 per guest; on top of the meal, it also includes a professional photographer and an evening buffet.",
+      "sourceExcerptSha256": "ef65d81fccbe4e4e139eb0cfbcd3ae7e8f28f3bead1f1da106bc648619e38dd3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "buffet",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "buffet",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "B"
+      ],
+      "questionPrompt": "Which TWO items will every participant in the fun run receive?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "First, what you'll receive. Every participant who registers will be given a bright orange race T-shirt — please do wear it on the day, as it helps our marshals identify runners. Everyone who crosses the finish line will also receive a finisher's medal. Now, a few things that are not automatically provided: the route map is on our website for you to download, energy bars will only be handed out to those doing the longer ten-kilometre route, and a timing chip is issued only to runners in the competitive race, not the fun run.",
+      "sourceExcerptSha256": "7bee7ffa6d3b1847e6f6317a582afd0a00332ef5229a046ef4c28f21b16de7c8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "a race T-shirt"
+        },
+        {
+          "key": "B",
+          "text": "a finisher's medal"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "C",
+          "text": "energy bars",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "a printed route map",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "a timing chip",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nine thirty",
+        "9.30",
+        "9:30"
+      ],
+      "questionPrompt": "• The run starts at {{13}} in the morning.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+      "sourceExcerptSha256": "a744ccfe5f37b347d6b3d925ddf07550466906379d426ca4e670ab7c53ca5ffc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nine thirty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nine thirty",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "9.30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “nine thirty”."
+        },
+        {
+          "answer": "9:30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “nine thirty”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "gate"
+      ],
+      "questionPrompt": "• The starting point is the main {{14}} of Victoria Park.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+      "sourceExcerptSha256": "a744ccfe5f37b347d6b3d925ddf07550466906379d426ca4e670ab7c53ca5ffc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "gate",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "gate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "river"
+      ],
+      "questionPrompt": "• The route follows the {{15}} for most of the way.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+      "sourceExcerptSha256": "a744ccfe5f37b347d6b3d925ddf07550466906379d426ca4e670ab7c53ca5ffc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "river",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "river",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flat"
+      ],
+      "questionPrompt": "• The route is completely {{16}}, so it is ideal for beginners.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+      "sourceExcerptSha256": "a744ccfe5f37b347d6b3d925ddf07550466906379d426ca4e670ab7c53ca5ffc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flat",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flat",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "water station"
+      ],
+      "questionPrompt": "• There is one {{17}} roughly halfway round.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "Now, the practical details. The run starts at nine thirty in the morning, so please arrive in good time to collect your number. The starting point is the main gate of Victoria Park — not the car park, as some older leaflets wrongly stated. The route follows the river for most of the way and is completely flat, which makes it ideal for beginners. There is one water station, roughly halfway round, where you can also leave any spare clothing.",
+      "sourceExcerptSha256": "a744ccfe5f37b347d6b3d925ddf07550466906379d426ca4e670ab7c53ca5ffc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "water station",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "water station",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "arrows",
+        "arrow"
+      ],
+      "questionPrompt": "• The route is marked with yellow {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "A word on safety. The whole route is clearly marked with yellow arrows, and first-aid volunteers are stationed every kilometre. If you feel unwell, stop and wait for a marshal — please don't try to carry on. Dogs, unfortunately, are not allowed this year, for insurance reasons.",
+      "sourceExcerptSha256": "24b106d44100178ed5f4f4180cca1de1c73ad6dc85b17bb65941b8a8ace2dce7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "arrows",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "arrows",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "arrow",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "playground"
+      ],
+      "questionPrompt": "• The money raised will pay for a new children's {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "On fundraising: all the money we raise this year will go towards a new children's playground in the town. The easiest way to collect donations is through your online sponsorship page. And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping centre and walk across. Thanks again, and let's hope for some sunshine.",
+      "sourceExcerptSha256": "89bda7842c088ae8bfe26946220761fee1a0500be2c72f630a620eb022314c4d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "playground",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "playground",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "shopping centre",
+        "shopping center"
+      ],
+      "questionPrompt": "• Participants should park at the nearby {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Charity fun-run briefing",
+      "sourceExcerpt": "On fundraising: all the money we raise this year will go towards a new children's playground in the town. The easiest way to collect donations is through your online sponsorship page. And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping centre and walk across. Thanks again, and let's hope for some sunshine.",
+      "sourceExcerptSha256": "89bda7842c088ae8bfe26946220761fee1a0500be2c72f630a620eb022314c4d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "shopping centre",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "shopping centre",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "shopping center",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “shopping centre”."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The fieldwork will take place at",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "BEN: Agreed. For the geology fieldwork, we can state the initial expectation and then test it against each observation. That will make the argument more credible.",
+      "sourceExcerptSha256": "117d44bf4ac1d3c2afaf40da0dc171d38f4793a5a2671f2697e4884931fc7369",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "a coastal cliff site"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "a river valley",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "a disused quarry",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The main aim of the trip is to",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "PRIYA: Originally we said collecting fossils, but actually our main goal is to measure and record the different rock layers — the sequence, basically.",
+      "sourceExcerptSha256": "ef1a12b31eb9d4b2dd85f1c831595c86a06679372c03751d35b073922a27b51d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "record the rock layers"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "collect fossils",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "take water samples",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The group will travel to the site by",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "BEN: We looked at taking the train, but in the end the department minibus works out cheaper for the whole group.",
+      "sourceExcerptSha256": "641282fcb138c3022ad432f694a03f305b0c65ee7cd4cf2ce1c17e31e00e5a1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "minibus"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "train",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "coach",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "There are not enough",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "PRIYA: Most of it's ready, but we're short of hand lenses — there are only four for twelve students, so people will have to share.",
+      "sourceExcerptSha256": "3c16709071e7b1abfd209ece60c5a1116854bf34c02185ea576581806740df5b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "hand lenses"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "safety helmets",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "notebooks",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "At the site, the main safety risk is",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "TUTOR: I'll ask the store to lend us a few more. Now, safety. This is a coastal site, so what's the main risk?",
+      "sourceExcerptSha256": "b5cbe4ef0ae1dab269a716a5255fd2633dac3fcec7c56c3bd6dca778c6f9bacd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the incoming tide"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "falling rocks",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "slippery paths",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "boots",
+        "boot"
+      ],
+      "questionPrompt": "• bring sturdy {{26}}, because the rocks are slippery",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "TUTOR: Absolutely — the tide is our number-one hazard. Right, a few things for everyone to prepare. First, each of you must bring sturdy boots, because the rocks are very slippery. Second, don't forget a waterproof, as the weather there changes fast. Third, everyone needs to complete the risk form and hand it in to me by Friday. I'll bring the first-aid kit and a spare hammer. Oh, and please label every rock sample you collect with its exact location — an unlabelled sample is useless for the report.",
+      "sourceExcerptSha256": "2d58e53636a716a7708d5ec97c26a42e18a5e4bd4e5f73d988d479515b71f608",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "boots",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "boots",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "boot",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "waterproof"
+      ],
+      "questionPrompt": "• bring a {{27}} in case the weather changes",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "TUTOR: Absolutely — the tide is our number-one hazard. Right, a few things for everyone to prepare. First, each of you must bring sturdy boots, because the rocks are very slippery. Second, don't forget a waterproof, as the weather there changes fast. Third, everyone needs to complete the risk form and hand it in to me by Friday. I'll bring the first-aid kit and a spare hammer. Oh, and please label every rock sample you collect with its exact location — an unlabelled sample is useless for the report.",
+      "sourceExcerptSha256": "2d58e53636a716a7708d5ec97c26a42e18a5e4bd4e5f73d988d479515b71f608",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "waterproof",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "waterproof",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "form"
+      ],
+      "questionPrompt": "• complete the risk {{28}} and hand it in by Friday",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "TUTOR: Absolutely — the tide is our number-one hazard. Right, a few things for everyone to prepare. First, each of you must bring sturdy boots, because the rocks are very slippery. Second, don't forget a waterproof, as the weather there changes fast. Third, everyone needs to complete the risk form and hand it in to me by Friday. I'll bring the first-aid kit and a spare hammer. Oh, and please label every rock sample you collect with its exact location — an unlabelled sample is useless for the report.",
+      "sourceExcerptSha256": "2d58e53636a716a7708d5ec97c26a42e18a5e4bd4e5f73d988d479515b71f608",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "form",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "form",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sample"
+      ],
+      "questionPrompt": "• label every rock {{29}} with its exact location",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "BEN: We also need to be careful about cause and association in the geology fieldwork. Two patterns can occur together without one necessarily producing the other, particularly when the sample is small, participants select themselves, or an uncontrolled factor affects both.",
+      "sourceExcerptSha256": "ad0033f4219a75485fc02b5effe64079073066d4a42c20b5194548cad8ae7e21",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sample",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sample",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "phones",
+        "phone"
+      ],
+      "questionPrompt": "• make sure their {{30}} are charged for taking photographs",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Geology fieldwork plan",
+      "sourceExcerpt": "TUTOR: Your phones are fine for photographs — just make sure they're fully charged.",
+      "sourceExcerptSha256": "5dffb7f2d8ebdcb2c9321472aa0473eba2fb20ed9ed2b08c11a761cd1198d4c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "phones",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "phones",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "phone",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "China",
+        "china"
+      ],
+      "questionPrompt": "• Paper money first appeared in {{31}}, over a thousand years ago.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "Good afternoon. In today's lecture I'll trace the history of paper money, from its origins in China right through to the plastic notes of the present day.",
+      "sourceExcerptSha256": "0597762ea24a0104fe48767d57737cb39dfa53a9e44d90660d12dcf26654d507",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "China",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "China",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "china",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "copper"
+      ],
+      "questionPrompt": "• Merchants were tired of carrying heavy strings of {{32}} coins.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "The story begins in China, more than a thousand years ago. Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty they began leaving their coins with trusted agents, who issued them a paper receipt in exchange. This early paper money was nicknamed \"flying money\", because a strong wind could easily blow it out of your hands.",
+      "sourceExcerptSha256": "e2e6ac1777028a989e3533be5f7004ffe0167416ac38cd30804889f418fa8525",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "copper",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "copper",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "receipt"
+      ],
+      "questionPrompt": "• Agents issued a paper {{33}} in exchange for the coins.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "The story begins in China, more than a thousand years ago. Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty they began leaving their coins with trusted agents, who issued them a paper receipt in exchange. This early paper money was nicknamed \"flying money\", because a strong wind could easily blow it out of your hands.",
+      "sourceExcerptSha256": "e2e6ac1777028a989e3533be5f7004ffe0167416ac38cd30804889f418fa8525",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "receipt",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "receipt",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "flying"
+      ],
+      "questionPrompt": "• The early notes were nicknamed \"{{34}} money\".",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "The story begins in China, more than a thousand years ago. Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty they began leaving their coins with trusted agents, who issued them a paper receipt in exchange. This early paper money was nicknamed \"flying money\", because a strong wind could easily blow it out of your hands.",
+      "sourceExcerptSha256": "e2e6ac1777028a989e3533be5f7004ffe0167416ac38cd30804889f418fa8525",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "flying",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "flying",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "believe"
+      ],
+      "questionPrompt": "• When Marco Polo described it, many readers did not {{35}} him.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "By the following dynasty, the government itself had taken over the printing of the notes, and paper money became official currency. The idea took a very long time to reach Europe. When the traveller Marco Polo returned home and described it, many readers simply did not believe him.",
+      "sourceExcerptSha256": "a5d2fdb503145bae4615d7660fdab60de6015ccfdf9a41ce034ee449a4187b12",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "believe",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "believe",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Sweden",
+        "sweden"
+      ],
+      "questionPrompt": "• Europe's first banknotes were issued in {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "Europe's first proper banknotes were issued in Sweden in the seventeenth century. Unfortunately, the bank printed far too many, and the notes quickly lost their value — an early lesson in the danger of inflation. For the next two centuries, most banknotes were backed by gold: in theory, a note could always be exchanged at the bank for a fixed weight of the metal.",
+      "sourceExcerptSha256": "1f8343353ab3b96c3e27fd5e531d3c0ad92e9490fdaba0d5bd6678bcb3b3ff87",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Sweden",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Sweden",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "sweden",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "inflation"
+      ],
+      "questionPrompt": "• Printing too many notes led to the danger of {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "Europe's first proper banknotes were issued in Sweden in the seventeenth century. Unfortunately, the bank printed far too many, and the notes quickly lost their value — an early lesson in the danger of inflation. For the next two centuries, most banknotes were backed by gold: in theory, a note could always be exchanged at the bank for a fixed weight of the metal.",
+      "sourceExcerptSha256": "1f8343353ab3b96c3e27fd5e531d3c0ad92e9490fdaba0d5bd6678bcb3b3ff87",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "inflation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "inflation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "gold"
+      ],
+      "questionPrompt": "• For two centuries, notes were backed by {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "Europe's first proper banknotes were issued in Sweden in the seventeenth century. Unfortunately, the bank printed far too many, and the notes quickly lost their value — an early lesson in the danger of inflation. For the next two centuries, most banknotes were backed by gold: in theory, a note could always be exchanged at the bank for a fixed weight of the metal.",
+      "sourceExcerptSha256": "1f8343353ab3b96c3e27fd5e531d3c0ad92e9490fdaba0d5bd6678bcb3b3ff87",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "gold",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "gold",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fiat"
+      ],
+      "questionPrompt": "• Today paper money is called {{39}} currency.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "That link to gold was finally broken in the twentieth century. Since then, paper money has been what economists call \"fiat\" currency, meaning that its value rests entirely on public trust rather than on any precious metal.",
+      "sourceExcerptSha256": "47f956f814fe8d38218d56d5e36af3cd7ee5617bf8848790dff6b99420130baf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fiat",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fiat",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "polymer"
+      ],
+      "questionPrompt": "• Modern plastic notes are made from a material called {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The history of paper money",
+      "sourceExcerpt": "Most recently, several countries have replaced paper with a thin, flexible plastic, usually a material called polymer. These notes last far longer, survive being washed, and are much harder to forge. Some economists predict that, as digital payments spread, physical cash may one day disappear altogether — but for now, the banknote in your pocket remains a remarkable piece of technology.",
+      "sourceExcerptSha256": "eb3bbf549debda2ef7cf48b4831e801e9bec83aae90cf996d85a4b06555eab4c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "polymer",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "polymer",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: The COMPAS algorithm was found to misclassify white defendants as high risk more often than black defendants.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+      "sourceExcerptSha256": "4f4846f5d80ec8c115f8c8849507c0c78ebde5454db3250c0d44cf1a64cd66ae",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: Deep learning AI systems are sometimes described as \"black boxes\" because their reasoning is difficult to understand.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+      "sourceExcerptSha256": "8736e88358449a6e5b46ffbdcbd5f7e0c4a6ca0e1dd3f7aa7290c2b13d331987",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Under specified GDPR exceptions, safeguards for automated decisions include human intervention and a right to contest the decision.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+      "sourceExcerptSha256": "8736e88358449a6e5b46ffbdcbd5f7e0c4a6ca0e1dd3f7aa7290c2b13d331987",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: All major world powers have signed an international treaty banning lethal autonomous weapons.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+      "sourceExcerptSha256": "1ac7171ab102dcd93b422217870a038f7536d901c8f676c5071778e6849109ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Workers performing highly routine tasks are considered more vulnerable to automation than those in creative roles.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "The economic consequences of AI automation represent a further ethical dimension. While economists debate the scale and pace of automation-driven job displacement, there is broad agreement that the transition will be disruptive for some sectors and demographics. Workers performing routine cognitive or physical tasks are most exposed; highly skilled professionals and those in creative, interpersonal, or highly variable roles are generally considered less vulnerable. The distributional consequences—who loses and who gains—depend heavily on policy responses, including investment in retraining, the reform of education systems, and the design of social safety nets capable of supporting workers through technological transitions.",
+      "sourceExcerptSha256": "7a8bca42dc5ebf31769a959b3d98997190171b220886d4895df65c42fe72a7cf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Most AI ethics frameworks include principles of fairness, transparency, and accountability.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+      "sourceExcerptSha256": "b7e64d4fc96aa0916875e68529f140f7663cbe3f348a9df06dbcac218c6c48a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "7. {{7}}: Voluntary industry ethics guidelines currently carry legally binding enforcement mechanisms.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+      "sourceExcerptSha256": "b7e64d4fc96aa0916875e68529f140f7663cbe3f348a9df06dbcac218c6c48a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "perpetuate",
+        "amplify"
+      ],
+      "questionPrompt": "8. AI systems that learn from historically biased data may {{8}} patterns of discrimination rather than eliminate them.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+      "sourceExcerptSha256": "4f4846f5d80ec8c115f8c8849507c0c78ebde5454db3250c0d44cf1a64cd66ae",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "perpetuate",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "perpetuate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "amplify",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sentencing"
+      ],
+      "questionPrompt": "9. The COMPAS algorithm was used to inform {{9}} recommendations in parts of the United States.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. Bias can also enter through an unrepresentative sample or through proxy variables, such as a postcode that indirectly encodes income or ethnicity. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to estimate whether a convicted person would reoffend and to inform sentencing decisions. A ProPublica investigation in 2016 reported that black defendants who did not reoffend were nearly twice as likely as comparable white defendants to be classified as higher risk. The company that created COMPAS disputed the analysis, illustrating how different statistical definitions of fairness can produce competing assessments of the same system.",
+      "sourceExcerptSha256": "4f4846f5d80ec8c115f8c8849507c0c78ebde5454db3250c0d44cf1a64cd66ae",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sentencing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sentencing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "explanation"
+      ],
+      "questionPrompt": "10. Lawyers debate the exact scope of any broader right to {{10}} under the GDPR.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as \"black boxes\": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) gives people protections against decisions based solely on automated processing when those decisions have legal or similarly significant effects. Where specified exceptions apply, safeguards include human intervention, an opportunity to express a view, and the ability to contest the decision. The regulation also requires information about automated decision-making and the logic involved, although lawyers continue to debate the exact scope of any broader \"right to explanation\".",
+      "sourceExcerptSha256": "8736e88358449a6e5b46ffbdcbd5f7e0c4a6ca0e1dd3f7aa7290c2b13d331987",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "explanation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "explanation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "LAWS"
+      ],
+      "questionPrompt": "11. Lethal autonomous weapons systems are sometimes abbreviated as {{11}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+      "sourceExcerptSha256": "1ac7171ab102dcd93b422217870a038f7536d901c8f676c5071778e6849109ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "LAWS",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "LAWS",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "military"
+      ],
+      "questionPrompt": "12. International humanitarian law requires combatants to distinguish between civilians and {{12}} targets.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable, once activated, of selecting and engaging targets without further human intervention are sometimes described as lethal autonomous weapons systems or LAWS. Critics argue that ceding decisions about lethal force to a machine threatens fundamental principles of international humanitarian law, including distinction between civilians and military targets and proportionality in attack. The International Committee of the Red Cross has recommended binding rules that would prohibit unpredictable systems and those designed or used to apply force against people, while restricting other autonomous weapons. International agreement on the precise limits remains unresolved.",
+      "sourceExcerptSha256": "1ac7171ab102dcd93b422217870a038f7536d901c8f676c5071778e6849109ba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "military",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "military",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ethics washing"
+      ],
+      "questionPrompt": "13. The adoption of ethical language without genuine change in practice is sometimes described as {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Ethics of Artificial Intelligence",
+      "sourceExcerpt": "In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. UNESCO's global recommendation, for example, links these principles to impact assessment, audit, traceability, and access to remedy throughout a system's life cycle. The practical implementation of such principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of \"ethics washing\"—the superficial adoption of ethical language without meaningful change in practice. Effective governance therefore requires institutions able to test systems, investigate harm, assign responsibility, and enforce corrective action rather than principles alone.",
+      "sourceExcerptSha256": "b7e64d4fc96aa0916875e68529f140f7663cbe3f348a9df06dbcac218c6c48a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ethics washing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ethics washing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "An example of how the removal of one species can prevent another from reproducing",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example: it depends on a specific species of large bee, the orchid bee, for pollination—no other insect is large enough to access the flower. The same tree's seeds are dispersed almost exclusively by agoutis, large rodents equipped with teeth strong enough to crack the tree's extremely tough seed pods. Remove either partner from this relationship and the Brazil nut tree cannot successfully reproduce—a reminder of how profoundly interconnected rainforest species can be.",
+      "sourceExcerptSha256": "162182f279d855f9795f07598710ecf7643016caeea384209c553d9be65edf70",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A description of conditions found in the shaded middle layer of the forest",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "C. The understorey, lying between the canopy and the forest floor, is a region of deep shade and high humidity. Here, plants adapted to low-light conditions—large-leafed shrubs, climbers, and shade-tolerant palms—compete for whatever light filters through the canopy above. The forest floor itself receives as little as two percent of the sunlight that falls on the canopy, yet it is teeming with life: leaf-cutter ants harvesting vegetation, decomposer fungi breaking down fallen organic matter, and an extraordinary variety of invertebrates, amphibians, and small mammals. Warmth and moisture allow decomposition to proceed rapidly, so nutrients released from dead material are quickly taken up by shallow roots. Consequently, much of the ecosystem's fertility is held in living biomass rather than in deep, rich soil.",
+      "sourceExcerptSha256": "2ef14fdd734c98f9279144e390f229ec4605a9c50a3909caedd93df0c460abf3",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A reference to a financial scheme that rewarded communities for preserving forest",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "G. Conservation responses have included the expansion of protected areas, the development of sustainable forestry practices, and payment-for-ecosystem-services schemes that compensate forest-dwelling communities for protecting the forest. Brazil's implementation of the Amazon Fund, financed largely by Norway, was associated with a dramatic reduction in deforestation rates in the 2000s, demonstrating that policy interventions can be effective when properly resourced and enforced. However, political commitment to conservation has fluctuated significantly, and the long-term protection of tropical rainforests ultimately depends on resolving the tension between the economic pressures driving deforestation and the global ecological services these forests provide.",
+      "sourceExcerptSha256": "34a4fe64c2a451b135a83883928e899d31a810449b7773bb6039937560a98fe8",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An account of how forests generate and recycle their own rainfall",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "E. Rainforests also perform vital services for the climate and water systems. Through photosynthesis, tropical forests absorb enormous quantities of carbon dioxide, acting as a major carbon sink. It is estimated that the Amazon rainforest alone stores around eighty to one hundred and twenty billion tonnes of carbon—a store that is being partially released as deforestation continues. Rainforests also drive regional weather patterns: through evapotranspiration, trees release vast quantities of water vapour, which condenses to form clouds and precipitation. Moisture can be recycled repeatedly as air moves across the basin, creating so-called \"flying rivers\" from the Atlantic coast towards the continental interior. These flows connect forest condition to rainfall far beyond the area where trees are removed and help sustain agriculture in southern Brazil.",
+      "sourceExcerptSha256": "1779d2cee37f625264bfafb35ec252c3ae273a9949d071feba25908a7f8a76d0",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of the animals found in the uppermost forest layer",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "B. The structure of a tropical rainforest is highly layered. The emergent layer, formed by the tallest trees—some reaching sixty metres or more—juts above the main forest canopy and is exposed to full sunlight, strong winds, and dramatic temperature fluctuations. These giants are inhabited by specialised animals, including harpy eagles, scarlet macaws, and various species of monkey adapted to life high above the ground. Below them, the dense canopy layer captures the vast majority of available sunlight, creating a lush closed environment where most of the forest's animal life resides.",
+      "sourceExcerptSha256": "70b790dff534bfeeb530a784dc4be6b6d8613e865434e8d76e1492ae68ae7330",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A warning about a threshold beyond which forest loss could become irreversible",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+      "sourceExcerptSha256": "4cf5f770988cbf526b2699af058bde4954d0e97200195deb2ebab296a9991627",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "Statistics about the total number of species found in the Amazon basin",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "A. Tropical rainforests are the most biodiverse terrestrial ecosystems on Earth. Covering approximately six percent of the planet's land surface, they are often estimated to contain more than half of the world's known plant and animal species, while many more remain undescribed. The Amazon basin alone harbours an estimated forty thousand plant species, three thousand freshwater fish species, and over thirteen hundred bird species. These totals are not distributed evenly: a single hectare may contain hundreds of tree species, while specialised organisms can occupy extremely narrow ranges. This extraordinary concentration of life is the product of a long evolutionary history, a relatively stable climate, and an intricate web of ecological relationships that have developed over tens of millions of years.",
+      "sourceExcerptSha256": "8e7747bf1062ae9b40030f55d18797740ed2a3e99f866b848e2ed7bab00ce0ca",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "land surface"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "A. Tropical rainforests are the most biodiverse terrestrial ecosystems on Earth. Covering approximately six percent of the planet's land surface, they are often estimated to contain more than half of the world's known plant and animal species, while many more remain undescribed. The Amazon basin alone harbours an estimated forty thousand plant species, three thousand freshwater fish species, and over thirteen hundred bird species. These totals are not distributed evenly: a single hectare may contain hundreds of tree species, while specialised organisms can occupy extremely narrow ranges. This extraordinary concentration of life is the product of a long evolutionary history, a relatively stable climate, and an intricate web of ecological relationships that have developed over tens of millions of years.",
+      "sourceExcerptSha256": "8e7747bf1062ae9b40030f55d18797740ed2a3e99f866b848e2ed7bab00ce0ca",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "land surface",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "land surface",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "emergent"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "B. The structure of a tropical rainforest is highly layered. The emergent layer, formed by the tallest trees—some reaching sixty metres or more—juts above the main forest canopy and is exposed to full sunlight, strong winds, and dramatic temperature fluctuations. These giants are inhabited by specialised animals, including harpy eagles, scarlet macaws, and various species of monkey adapted to life high above the ground. Below them, the dense canopy layer captures the vast majority of available sunlight, creating a lush closed environment where most of the forest's animal life resides.",
+      "sourceExcerptSha256": "70b790dff534bfeeb530a784dc4be6b6d8613e865434e8d76e1492ae68ae7330",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "emergent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "emergent",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "symbiotic"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example: it depends on a specific species of large bee, the orchid bee, for pollination—no other insect is large enough to access the flower. The same tree's seeds are dispersed almost exclusively by agoutis, large rodents equipped with teeth strong enough to crack the tree's extremely tough seed pods. Remove either partner from this relationship and the Brazil nut tree cannot successfully reproduce—a reminder of how profoundly interconnected rainforest species can be.",
+      "sourceExcerptSha256": "162182f279d855f9795f07598710ecf7643016caeea384209c553d9be65edf70",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "symbiotic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "symbiotic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carbon sink"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "E. Rainforests also perform vital services for the climate and water systems. Through photosynthesis, tropical forests absorb enormous quantities of carbon dioxide, acting as a major carbon sink. It is estimated that the Amazon rainforest alone stores around eighty to one hundred and twenty billion tonnes of carbon—a store that is being partially released as deforestation continues. Rainforests also drive regional weather patterns: through evapotranspiration, trees release vast quantities of water vapour, which condenses to form clouds and precipitation. Moisture can be recycled repeatedly as air moves across the basin, creating so-called \"flying rivers\" from the Atlantic coast towards the continental interior. These flows connect forest condition to rainfall far beyond the area where trees are removed and help sustain agriculture in southern Brazil.",
+      "sourceExcerptSha256": "1779d2cee37f625264bfafb35ec252c3ae273a9949d071feba25908a7f8a76d0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carbon sink",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carbon sink",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ranching"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+      "sourceExcerptSha256": "4cf5f770988cbf526b2699af058bde4954d0e97200195deb2ebab296a9991627",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ranching",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ranching",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tipping point"
+      ],
+      "questionPrompt": "Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Remarkable Diversity of Tropical Rainforests",
+      "sourceExcerpt": "F. The threats facing tropical rainforests are severe. The UN Food and Agriculture Organization estimated global deforestation at ten million hectares per year between 2015 and 2020; agricultural expansion was the principal driver, especially in tropical regions. In the Amazon, cattle ranching, crop production, logging, mining, and roads all contribute to pressure on forests. Satellite imagery also reveals degradation by selective logging, fire, and fragmentation—processes that weaken resilience without immediately converting forest to a different land use. Scientists warn that the Amazon may be approaching a \"tipping point\" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of what remains.",
+      "sourceExcerptSha256": "4cf5f770988cbf526b2699af058bde4954d0e97200195deb2ebab296a9991627",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tipping point",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tipping point",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the passage say about the traditional \"barter story\" of money's origins?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The popular belief that money evolved from barter has been questioned by economic historians and anthropologists. The barter story—in which communities traded goods directly until the difficulty of finding two people who simultaneously wanted what the other offered prompted the invention of money—is intuitively appealing but largely unsupported as a universal historical sequence. Anthropologist David Graeber argued that systems of mutual credit and social obligation often preceded coin-based economies. People in communities could keep track of debts informally, while rulers and temples recorded obligations in standard units of account. Direct barter certainly occurred, particularly between strangers or when monetary systems failed, but that does not prove that it was the normal starting point from which all money developed.",
+      "sourceExcerptSha256": "5f027ceaff40a4b6c55b340154739ec4d694f0a6ffaef6e1721a3a0ed1c2a572",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "It is intuitive but largely unsupported by historical or ethnographic evidence."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It is confirmed by recent archaeological evidence from ancient civilisations.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "It is widely accepted by economic historians as accurate.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It correctly identifies barter as the universal precursor to monetary systems.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to David Graeber, what actually preceded the use of money in early societies?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The popular belief that money evolved from barter has been questioned by economic historians and anthropologists. The barter story—in which communities traded goods directly until the difficulty of finding two people who simultaneously wanted what the other offered prompted the invention of money—is intuitively appealing but largely unsupported as a universal historical sequence. Anthropologist David Graeber argued that systems of mutual credit and social obligation often preceded coin-based economies. People in communities could keep track of debts informally, while rulers and temples recorded obligations in standard units of account. Direct barter certainly occurred, particularly between strangers or when monetary systems failed, but that does not prove that it was the normal starting point from which all money developed.",
+      "sourceExcerptSha256": "5f027ceaff40a4b6c55b340154739ec4d694f0a6ffaef6e1721a3a0ed1c2a572",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Systems of mutual credit and social obligation."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "A system of direct barter between neighbouring communities.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The use of commodity money such as grain and shells.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Centralised government distribution of goods and services.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was significant about the paper money described by Marco Polo?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "Paper money first appeared in China. During the Tang dynasty, merchants used transferable paper instruments often called \"flying money\" to avoid carrying large quantities of heavy copper coin over long distances. These began as private or official remittance and deposit arrangements rather than a general currency used in every shop. Under the Song dynasty, privately issued notes became more widespread, and the government later took control of issuance. When Marco Polo described Chinese paper money to European readers in the thirteenth century, the idea that paper backed by imperial authority could circulate as money appeared extraordinary. European countries developed banknotes much later; Sweden was the first to issue them in 1661.",
+      "sourceExcerptSha256": "09616fdc9d940effe4d94b9f9ecfe9b2d9c9f27b5824fa2ab5629df671eeacc6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "European readers found it difficult to understand money based on authority alone."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It was backed by gold reserves held by the Chinese government.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It was adopted immediately by European merchants who heard about it.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It was identical in design to modern central bank banknotes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does \"fiat money\" mean, according to the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+      "sourceExcerptSha256": "eab5cb4ded26757653ae0f5fea9250a0c567af298feb2a43b58f80d3fbddf9c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Currency whose value is supported by government decree and public trust."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Money that is backed by gold or silver reserves held by a central bank.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Digital currency that operates outside the banking system.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Money that can be exchanged for a fixed quantity of a physical commodity.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: The author describes money as a social technology invented to solve problems of exchange.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "Money is so fundamental to modern life that it is easy to forget that it is an invention—a social technology developed by human beings to solve the practical problems of exchange. The history of money is, in a sense, the history of a series of solutions to successive problems: how to facilitate trade between strangers, how to store value across time, how to coordinate economic activity at ever-increasing scales.",
+      "sourceExcerptSha256": "f1c5190eb98c4e44358a3bf1c6500ecd57b4e0fbc6e2fb2668be7b5963ff7b8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "32. {{32}}: Lydian coins were the first coins to be made exclusively from pure gold.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+      "sourceExcerptSha256": "3e0a9d4f9860010f6b6e980d8191d9bdc7e8681f39777b8cd8a3921e3f1ccbd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: Chinese \"flying money\" began as merchant remittance and deposit arrangements rather than a general shop currency.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "Paper money first appeared in China. During the Tang dynasty, merchants used transferable paper instruments often called \"flying money\" to avoid carrying large quantities of heavy copper coin over long distances. These began as private or official remittance and deposit arrangements rather than a general currency used in every shop. Under the Song dynasty, privately issued notes became more widespread, and the government later took control of issuance. When Marco Polo described Chinese paper money to European readers in the thirteenth century, the idea that paper backed by imperial authority could circulate as money appeared extraordinary. European countries developed banknotes much later; Sweden was the first to issue them in 1661.",
+      "sourceExcerptSha256": "09616fdc9d940effe4d94b9f9ecfe9b2d9c9f27b5824fa2ab5629df671eeacc6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "34. {{34}}: The Bank of England was the first central bank ever established in the world.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+      "sourceExcerptSha256": "eab5cb4ded26757653ae0f5fea9250a0c567af298feb2a43b58f80d3fbddf9c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: The United States formally ended gold convertibility of the dollar in 1971.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+      "sourceExcerptSha256": "eab5cb4ded26757653ae0f5fea9250a0c567af298feb2a43b58f80d3fbddf9c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "36. {{36}}: The passage suggests that cryptocurrencies have successfully replaced conventional currencies in most economies.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The digital revolution has produced new forms of money. Electronic payments, credit cards, and digital wallets have made physical cash increasingly marginal in many economies, although most such payments still transfer claims denominated in conventional national currency. Cryptocurrency, beginning with Bitcoin in 2009, attempted to create digital money outside government and banking systems, relying instead on a decentralised computational network to validate transactions. Cryptocurrencies have attracted both enthusiastic adopters and sceptical economists who question whether assets with sharply changing prices can fulfil the core functions of money—medium of exchange, store of value, and unit of account—well enough to challenge conventional currencies at scale. Stablecoins attempt to reduce volatility by linking their value to another asset, while central bank digital currencies would remain liabilities of a public monetary authority. The technologies may look similar to users, but their issuers, guarantees, and governance differ fundamentally. Their adoption will therefore depend as much on public confidence, regulation, and ease of use as on the underlying code.",
+      "sourceExcerptSha256": "0f3ba85365d438b2093bd9accac27beb0499f2d4f6a3de0c3d26a9f70c3c8501",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "commodity"
+      ],
+      "questionPrompt": "37. Objects with value independent of their use as money, such as grain or shells, are described as {{37}} money.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+      "sourceExcerptSha256": "3e0a9d4f9860010f6b6e980d8191d9bdc7e8681f39777b8cd8a3921e3f1ccbd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "commodity",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "commodity",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Lydia"
+      ],
+      "questionPrompt": "38. The earliest metal coins are generally associated with the kingdom of {{38}} in present-day Turkey.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The earliest physical money appears in the form of commodity money—objects that had value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and stamped to certify their weight and composition. Standard pieces reduced the need to weigh and test metal during every transaction. Coinage spread across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where taxes and military pay helped integrate it into a vast economy.",
+      "sourceExcerptSha256": "3e0a9d4f9860010f6b6e980d8191d9bdc7e8681f39777b8cd8a3921e3f1ccbd1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Lydia",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Lydia",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "gold standard"
+      ],
+      "questionPrompt": "39. The abandonment of the {{39}} meant that currencies were no longer tied to a physical commodity.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The development of central banking in the seventeenth and eighteenth centuries was a further transformation. The Bank of England, founded in 1694, initially issued notes as receipts for deposits; holders could redeem them for coin or gold. Britain did not adopt a formal legal gold standard until the nineteenth century, and convertibility was suspended during several crises. International forms of the gold standard were progressively abandoned during the twentieth century, culminating in the United States ending the dollar's convertibility into gold for foreign monetary authorities in 1971. Major currencies consequently operate as \"fiat\" money—backed by law, institutions, and public trust rather than a promise to exchange each note for a fixed amount of a commodity. Their stability depends on confidence in the issuing authority, as episodes of hyperinflation demonstrate when that confidence collapses.",
+      "sourceExcerptSha256": "eab5cb4ded26757653ae0f5fea9250a0c567af298feb2a43b58f80d3fbddf9c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "gold standard",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "gold standard",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "decentralised computational"
+      ],
+      "questionPrompt": "40. Bitcoin, launched in 2009, relies on a {{40}} network to validate transactions rather than banks or governments.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The History of Money",
+      "sourceExcerpt": "The digital revolution has produced new forms of money. Electronic payments, credit cards, and digital wallets have made physical cash increasingly marginal in many economies, although most such payments still transfer claims denominated in conventional national currency. Cryptocurrency, beginning with Bitcoin in 2009, attempted to create digital money outside government and banking systems, relying instead on a decentralised computational network to validate transactions. Cryptocurrencies have attracted both enthusiastic adopters and sceptical economists who question whether assets with sharply changing prices can fulfil the core functions of money—medium of exchange, store of value, and unit of account—well enough to challenge conventional currencies at scale. Stablecoins attempt to reduce volatility by linking their value to another asset, while central bank digital currencies would remain liabilities of a public monetary authority. The technologies may look similar to users, but their issuers, guarantees, and governance differ fundamentally. Their adoption will therefore depend as much on public confidence, regulation, and ease of use as on the underlying code.",
+      "sourceExcerptSha256": "0f3ba85365d438b2093bd9accac27beb0499f2d4f6a3de0c3d26a9f70c3c8501",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "decentralised computational",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "decentralised computational",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q10",
+        "before": "The EU's GDPR established a right to explanation for individuals affected by automated decisions.",
+        "after": "Lawyers debate the exact scope of any broader right to explanation under the GDPR.",
+        "reason": "The passage explicitly says the broader right remains legally debated."
+      },
+      {
+        "scope": "Reading Q33",
+        "before": "Chinese \"flying money\" was initially used by wealthy merchants rather than ordinary citizens.",
+        "after": "Chinese \"flying money\" began as merchant remittance and deposit arrangements rather than a general shop currency.",
+        "reason": "The passage identifies merchants and limited remittance/deposit use, but never says they were wealthy."
+      }
+    ]
+  },
+  "reviewSha256": "2cb94b394a9e27d1011b5ed20c42ce8fb85c8830e6eac0172f7044474c975e5b"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T21:04:13.312Z",
+  "set": 7,
+  "status": "PASS",
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/ielts-listening-set-7.mp3",
+  "audioSha256": "5ad1a48be9e96f86da26574ef4bd73594fdf9ced5e2d967a403e42d11430a02e",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/asr-report-set-7.json",
+    "reportSha256": "aaf6ddbbaf42ec5da9278a5550fee9fec42bd2244ca46326327777738b5f48c7",
+    "wordErrorRate": 0.064,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "32/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.064,
+  "focusedReports": [
+    {
+      "part": 2,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/focused-part-2.wav",
+      "audioSha256": "10a1b2528a1228b4c30450f9cccad0940058833cd168b207fe234753969684ce",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/whisper-focused-set-7-part-2.json",
+      "asrSha256": "b49616a7f50346b5898547725b0bd1550e5fc6030c3a1b504756bd418e033b15",
+      "segmentIndexes": [
+        47
+      ],
+      "status": "PASS",
+      "expectedWords": 68,
+      "recognizedWords": 69,
+      "editDistance": 3,
+      "wordErrorRate": 0.0441,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 16,
+          "responseKey": "l2-form__16",
+          "candidateAcceptedAnswers": [
+            "coastline"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 2.1,
+          "endSeconds": 5.1,
+          "audiblePhrase": "Its charts show how the coastline near Harboura"
+        }
+      ],
+      "completionEvidenceFound": 1,
+      "completionEvidenceTotal": 1,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "868c1025166f17e7f38b8f3e7bbdbc258b8d3ab4e6e11df14d04f8199ae95e5b",
+  "releaseAuthorized": false
+}

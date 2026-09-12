@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T21:18:38.048Z",
+  "set": 5,
+  "status": "PASS",
+  "manifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "castingSha256": "b7a374282c6e15c76ca2ea8a3aa6558309e16e9bf56983ae420574f990c96096",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/ielts-listening-set-5.mp3",
+  "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/asr-report-set-5.json",
+    "reportSha256": "e67a51521b2c6ea1611b0efb783ebb8ef6d6e492504f154baeac6c84e05aaeac",
+    "wordErrorRate": 0.0542,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "32/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.0542,
+  "focusedReports": [
+    {
+      "part": 1,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/focused-part-1.wav",
+      "audioSha256": "ffdcd1bc4c6e3e490c43d0aaef485ceaedcb695e092d8d3122de46ba2d4a2e87",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/whisper-focused-set-5-part-1.json",
+      "asrSha256": "b9d2e7e91ecb139160428eada0ee5e89388f1bad1d81f3aa707daf34f1698e0c",
+      "segmentIndexes": [
+        11
+      ],
+      "status": "PASS",
+      "expectedWords": 11,
+      "recognizedWords": 11,
+      "editDistance": 0,
+      "wordErrorRate": 0,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 1,
+          "responseKey": "l1-form__1",
+          "candidateAcceptedAnswers": [
+            "friend"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 0,
+          "endSeconds": 2.94,
+          "audiblePhrase": "A friend recommended you, actually. She did the tour last month."
+        }
+      ],
+      "completionEvidenceFound": 1,
+      "completionEvidenceTotal": 1,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "868c1025166f17e7f38b8f3e7bbdbc258b8d3ab4e6e11df14d04f8199ae95e5b",
+  "releaseAuthorized": false
+}

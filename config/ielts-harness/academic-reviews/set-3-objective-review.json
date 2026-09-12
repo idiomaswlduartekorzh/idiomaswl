@@ -1,0 +1,3804 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 3,
+  "mockId": "set-3",
+  "contentVersionAtReview": "ielts-set-3-v3",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "da2c166abb622086112cb64ab121658b641a9918cf368ff0b1b50c0f9cb8137a",
+    "listeningMaterialSha256": "304a1c5d41a9823225f0bc47463822f4b9277c7880e7494bc510f0422fee792c",
+    "readingMaterialSha256": "570041870aa150a3451d0c695a71d8bee871285a2d1e7cb241345d4b07c0b4aa",
+    "objectiveMaterialSha256": "20a38816ec7fa6b411ea04bdf9831462da743e1feb2905793d9bca986e239605"
+  },
+  "summary": {
+    "responseRows": 78,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "14th",
+        "14",
+        "fourteenth"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "Berkley"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "sophie.marsh@greenmail.co.uk"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "standard"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "8",
+        "eight"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "3",
+        "three"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-form__7",
+      "accepted": [
+        "2",
+        "two"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "website"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "12",
+        "twelve"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "archive"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "C",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. glass bottles",
+        "B": "B. food waste",
+        "C": "C. wrapping on ready meals",
+        "D": "D. carrier bags previously recycled at supermarkets",
+        "E": "E. cardboard packaging"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "32"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "55"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "caddy",
+        "kitchen caddy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "weekly"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "energy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "recycling"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "6",
+        "six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "guide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "expensive land",
+        "fragile supply chains",
+        "fossil fuel energy"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "local air quality",
+        "food security",
+        "social cohesion"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It requires too much space.",
+        "It can have a high carbon footprint.",
+        "It is unsuitable for most crops."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "a replacement for conventional agriculture",
+        "the future of global food production",
+        "a complement to conventional agriculture"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "technological innovation",
+        "policy support and subsidies",
+        "changes in consumer habits"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "Rooftop",
+        "rooftop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "layers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "allotments"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "Land",
+        "land"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "expertise"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "Mesopotamia"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "pictographic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "stylus"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "administrative"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "Egypt"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "sound"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "religious"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "Phoenicians"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "vowels"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "literacy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-summary__1",
+      "accepted": [
+        "geographer"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-summary__2",
+      "accepted": [
+        "spices",
+        "glass"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-summary__3",
+      "accepted": [
+        "monopoly"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-summary__4",
+      "accepted": [
+        "camel"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-summary__5",
+      "accepted": [
+        "Mongol"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "mcq",
+      "key": "r1q6",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "mcq",
+      "key": "r1q7",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "mcq",
+      "key": "r1q8",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "mcq",
+      "key": "r1q9",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "multiselect",
+      "key": "r1-multi",
+      "accepted": [
+        "B",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the spread of the Black Death",
+        "B": "B. the collapse of the Mongol Empire",
+        "C": "C. the development of new maritime routes",
+        "D": "D. the end of Chinese silk production",
+        "E": "E. the rise of Arab traders in the region"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "match",
+      "key": "r1-match__12",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Ferdinand von Richthofen",
+        "B": "B. Genghis Khan",
+        "C": "C. the Portuguese",
+        "D": "D. the Sumerians",
+        "E": "E. Kublai Khan"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "match",
+      "key": "r1-match__13",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Ferdinand von Richthofen",
+        "B": "B. Genghis Khan",
+        "C": "C. the Portuguese",
+        "D": "D. the Sumerians",
+        "E": "E. Kublai Khan"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "mcq",
+      "key": "r2q14",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "mcq",
+      "key": "r2q15",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "mcq",
+      "key": "r2q16",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "mcq",
+      "key": "r2q17",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "mcq",
+      "key": "r2q18",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "fill",
+      "key": "r2-notes__19",
+      "accepted": [
+        "1.7"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "fill",
+      "key": "r2-notes__20",
+      "accepted": [
+        "currents"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-notes__21",
+      "accepted": [
+        "photodegradation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-notes__22",
+      "accepted": [
+        "microplastics"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-notes__23",
+      "accepted": [
+        "hormone"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "match",
+      "key": "r2-match__24",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. absorb toxic chemicals from microplastics",
+        "B": "B. ingest plastic mistaken for prey",
+        "C": "C. lose habitat to plastic-covered seabeds",
+        "D": "D. become entangled in plastic fishing gear",
+        "E": "E. suffer hormonal disruption from microplastics",
+        "F": "F. face increased disease risk and smothering from plastic debris"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "match",
+      "key": "r2-match__25",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. absorb toxic chemicals from microplastics",
+        "B": "B. ingest plastic mistaken for prey",
+        "C": "C. lose habitat to plastic-covered seabeds",
+        "D": "D. become entangled in plastic fishing gear",
+        "E": "E. suffer hormonal disruption from microplastics",
+        "F": "F. face increased disease risk and smothering from plastic debris"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "match",
+      "key": "r2-match__26",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. absorb toxic chemicals from microplastics",
+        "B": "B. ingest plastic mistaken for prey",
+        "C": "C. lose habitat to plastic-covered seabeds",
+        "D": "D. become entangled in plastic fishing gear",
+        "E": "E. suffer hormonal disruption from microplastics",
+        "F": "F. face increased disease risk and smothering from plastic debris"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "fill",
+      "key": "r3-summary__27",
+      "accepted": [
+        "deep"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "fill",
+      "key": "r3-summary__28",
+      "accepted": [
+        "imaging",
+        "images"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "fill",
+      "key": "r3-summary__29",
+      "accepted": [
+        "diabetic retinopathy",
+        "retinopathy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "fill",
+      "key": "r3-summary__30",
+      "accepted": [
+        "distribution shift"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-summary__31",
+      "accepted": [
+        "minorities"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-summary__32",
+      "accepted": [
+        "responsibility"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-summary__33",
+      "accepted": [
+        "therapeutic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "mcq",
+      "key": "r3q34",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "mcq",
+      "key": "r3q35",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "mcq",
+      "key": "r3q36",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "mcq",
+      "key": "r3q37",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "mcq",
+      "key": "r3q38",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "match",
+      "key": "r3-match__39",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. software developers",
+        "B": "B. clinicians and patients",
+        "C": "C. regulatory agencies",
+        "D": "D. policymakers"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "match",
+      "key": "r3-match__40",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. software developers",
+        "B": "B. clinicians and patients",
+        "C": "C. regulatory agencies",
+        "D": "D. policymakers"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "14th",
+        "14",
+        "fourteenth"
+      ],
+      "questionPrompt": "Date of birth: {{1}} March 1998",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "MEMBER: The fourteenth of March, 1998.",
+      "sourceExcerptSha256": "ec29d2b623cdba891559cf43c13a1e84b3c809cc87620409972d61963f192ed8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fourteenth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "14th",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "14",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "fourteenth",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Berkley"
+      ],
+      "questionPrompt": "Address: Flat 7, 33 {{2}} Street, Oxford — OX1 4PL",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "MEMBER: Flat 7, 33 Berkley Street, Oxford. The postcode is OX1 4PL.",
+      "sourceExcerptSha256": "4d33a07c0053f908d8cf25de68602aa0af4398122cc2d6683dbfe6a7ec665b9b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Berkley",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Berkley",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sophie.marsh@greenmail.co.uk"
+      ],
+      "questionPrompt": "Email: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "MEMBER: Yes, it's sophie.marsh@greenmail.co.uk.",
+      "sourceExcerptSha256": "a7cc98cafeab6eed55cdbacf29e5dc450ad23aa1dfd7ab0aa5074508d280b017",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sophie.marsh@greenmail.co.uk",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sophie.marsh@greenmail.co.uk",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "standard"
+      ],
+      "questionPrompt": "Membership type: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks.",
+      "sourceExcerptSha256": "95582137b2662cdb7663768a7a6083b90e295a31ff318fade6c76830ae477ebe",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "standard",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "standard",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "8",
+        "eight"
+      ],
+      "questionPrompt": "Maximum books borrowed: {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks.",
+      "sourceExcerptSha256": "95582137b2662cdb7663768a7a6083b90e295a31ff318fade6c76830ae477ebe",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "eight",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "8",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "eight",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "questionPrompt": "Reservation limit (online): {{6}} books",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks.",
+      "sourceExcerptSha256": "95582137b2662cdb7663768a7a6083b90e295a31ff318fade6c76830ae477ebe",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-form__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "questionPrompt": "Registration fee: £{{7}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: Great. There's a one-off registration fee of two pounds.",
+      "sourceExcerptSha256": "51ff877c28def262f9eca4f9ec27417132e9b209a154e98781cf79a7ab393138",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "two",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "website"
+      ],
+      "questionPrompt": "Standard | 8 books / 3 weeks | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: Yes, with standard membership you can reserve up to three books at a time through our website.",
+      "sourceExcerptSha256": "d5bd51c3a29fc647f96400d607bcdaf52709ce1076d8582e79b6bc4f79583059",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "website",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "website",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "questionPrompt": "Premium | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: Premium membership gives you twelve books and access to our digital archive.",
+      "sourceExcerptSha256": "89440f5e2cc34bc892106bb2f217e2017bcb884827793bbdc30d218c35882b1b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "twelve",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "12",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "twelve",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "archive"
+      ],
+      "questionPrompt": "Premium | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Library Membership",
+      "sourceExcerpt": "ASSISTANT: Premium membership gives you twelve books and access to our digital archive.",
+      "sourceExcerptSha256": "89440f5e2cc34bc892106bb2f217e2017bcb884827793bbdc30d218c35882b1b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "archive",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "archive",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "C",
+        "D"
+      ],
+      "questionPrompt": "Which TWO examples of newly accepted plastic film does the speaker mention?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "We're also expanding what can go into the dry recycling bin. From next month, you'll be able to recycle plastic film — like the wrapping on ready meals and carrier bags. Previously this had to go to collection points at supermarkets.",
+      "sourceExcerptSha256": "de8a26b9584672bdb93b57ba08ebfbe2a78f48f82d52ffeac267e9b64757dfd5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "C",
+          "text": "wrapping on ready meals"
+        },
+        {
+          "key": "D",
+          "text": "carrier bags previously recycled at supermarkets"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "glass bottles",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "food waste",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "cardboard packaging",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "32"
+      ],
+      "questionPrompt": "Current recycling rate: {{13}}%",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "First, the background. Our borough currently recycles about 32% of its household waste, which is below the national average of 45%. The new programme aims to raise that figure to at least 55% by the end of the year.",
+      "sourceExcerptSha256": "12a6d46743adf59911ee80e706411553ff0e1250d4b53e3840b31cbefbd7aac0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "32",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "32",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "55"
+      ],
+      "questionPrompt": "Target recycling rate: at least {{14}}%",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "First, the background. Our borough currently recycles about 32% of its household waste, which is below the national average of 45%. The new programme aims to raise that figure to at least 55% by the end of the year.",
+      "sourceExcerptSha256": "12a6d46743adf59911ee80e706411553ff0e1250d4b53e3840b31cbefbd7aac0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "55",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "55",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "caddy",
+        "kitchen caddy"
+      ],
+      "questionPrompt": "• New {{15}} provided for kitchen food scraps.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "So what's changing? The biggest change is the introduction of separate bins for food waste. Up to now, food waste has been going into general waste. Starting next month, every household will receive a small kitchen caddy for collecting food scraps, which will be emptied into a larger outdoor bin collected weekly. The material will go to an anaerobic digestion plant where it is converted into energy and compost.",
+      "sourceExcerptSha256": "39d260cb7d97a3d706a7a9536a1412d18c6db7b8bf91673a6207ed74e5c3cbbb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "caddy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "caddy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "kitchen caddy",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "weekly"
+      ],
+      "questionPrompt": "• Collected {{16}} and sent to anaerobic digestion plant.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "So what's changing? The biggest change is the introduction of separate bins for food waste. Up to now, food waste has been going into general waste. Starting next month, every household will receive a small kitchen caddy for collecting food scraps, which will be emptied into a larger outdoor bin collected weekly. The material will go to an anaerobic digestion plant where it is converted into energy and compost.",
+      "sourceExcerptSha256": "39d260cb7d97a3d706a7a9536a1412d18c6db7b8bf91673a6207ed74e5c3cbbb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "weekly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "weekly",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "questionPrompt": "• Converted into {{17}} and compost.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "So what's changing? The biggest change is the introduction of separate bins for food waste. Up to now, food waste has been going into general waste. Starting next month, every household will receive a small kitchen caddy for collecting food scraps, which will be emptied into a larger outdoor bin collected weekly. The material will go to an anaerobic digestion plant where it is converted into energy and compost.",
+      "sourceExcerptSha256": "39d260cb7d97a3d706a7a9536a1412d18c6db7b8bf91673a6207ed74e5c3cbbb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "energy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "energy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "recycling"
+      ],
+      "questionPrompt": "• No longer accepted in mixed {{18}} bin.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "Glass will no longer go in your mixed recycling bin. You'll need to use the bottle banks in the area — we're adding six new bottle bank sites across the borough to make this more convenient.",
+      "sourceExcerptSha256": "fc3489cbad6161b5e49b533758769f4ca7cd96277b4041e9ac6784fc64948f0e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "recycling",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "recycling",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "questionPrompt": "• Use bottle banks — {{19}} new sites being added.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "Glass will no longer go in your mixed recycling bin. You'll need to use the bottle banks in the area — we're adding six new bottle bank sites across the borough to make this more convenient.",
+      "sourceExcerptSha256": "fc3489cbad6161b5e49b533758769f4ca7cd96277b4041e9ac6784fc64948f0e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "guide"
+      ],
+      "questionPrompt": "• Printed {{20}} sent to each household.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Talk about a Recycling Programme",
+      "sourceExcerpt": "We know change takes some getting used to. So each household will receive a printed guide through the post, and there's a new website at recycleright.gov.uk with videos and a postcode checker to find your nearest bottle bank.",
+      "sourceExcerptSha256": "2181e76d41689a801446adc9d60930b6b0dd2c363198a3e69bfe1d350d584639",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "guide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "guide",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to Anna, urban farming can help cities because it reduces dependence on",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "ANNA: Yes. What struck me most was the potential for urban farming to address food security issues in cities. If residents can grow some of their own produce, that reduces dependence on supply chains that can be disrupted.",
+      "sourceExcerptSha256": "9ea6b478f22082c7043809e0b685e4236893a64337cf515498cf427b64b5185b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "fragile supply chains"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "expensive land",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "fossil fuel energy",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Lee suggests that community gardens improve",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: I'd add that there's also a social dimension. Community gardens can help build relationships between neighbours who might otherwise never interact. There's evidence that social cohesion in areas with active community gardens is significantly higher.",
+      "sourceExcerptSha256": "c9fe435cbcc594af553c8f7f9165ef0378b28458520b6a8f55a47b6402791bc1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "social cohesion"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "local air quality",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "food security",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main criticism of vertical farming mentioned in the seminar?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "TUTOR: Yes, that's one of the key criticisms of vertical farming. If the electricity comes from fossil fuels, the carbon footprint can actually be worse than conventional agriculture.",
+      "sourceExcerptSha256": "47e861436d31c22b4ba38440d097728db37e767b8a4a9b82a42c9d7023a1f8b3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "It can have a high carbon footprint."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It requires too much space.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "It is unsuitable for most crops.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Lee and Anna agree that urban farming should be seen as",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "ANNA: I think urban farming is most viable as a complement to, rather than a replacement for, conventional agriculture. It can provide fresh produce locally and build community, but it can't feed entire cities.",
+      "sourceExcerptSha256": "20e61b3eb01909a0d6079d670f8170f7ae3fdc4918c9c324176bc86b7f8b209b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "a complement to conventional agriculture"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "a replacement for conventional agriculture",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "the future of global food production",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Lee says that for urban farming to succeed long-term, there needs to be",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: I agree. And for it to succeed long-term, there needs to be policy support — planning regulations that make it easier to establish urban farms, and subsidies to offset the high costs.",
+      "sourceExcerptSha256": "abb0983fb3362674a1907c32ff247f119a6bd9454202f9936582059d4c39ef60",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "policy support and subsidies"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "technological innovation",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "changes in consumer habits",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Rooftop",
+        "rooftop"
+      ],
+      "questionPrompt": "• {{26}} gardens on building tops",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms with stacked layers, and community allotments.",
+      "sourceExcerptSha256": "9d9c2fc78f8c9a2132ab62009d0dd6fcf73dc7bdf6e54b0d9c3b005b6da00183",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rooftop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Rooftop",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        },
+        {
+          "answer": "rooftop",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "layers"
+      ],
+      "questionPrompt": "• Vertical farms using stacked {{27}}",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms with stacked layers, and community allotments.",
+      "sourceExcerptSha256": "9d9c2fc78f8c9a2132ab62009d0dd6fcf73dc7bdf6e54b0d9c3b005b6da00183",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "layers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "layers",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "allotments"
+      ],
+      "questionPrompt": "• Community {{28}} for residents",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms with stacked layers, and community allotments.",
+      "sourceExcerptSha256": "9d9c2fc78f8c9a2132ab62009d0dd6fcf73dc7bdf6e54b0d9c3b005b6da00183",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "allotments",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "allotments",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Land",
+        "land"
+      ],
+      "questionPrompt": "• {{29}} is expensive and scarce in dense cities.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "ANNA: Space is obviously a major constraint in dense urban areas. Land is expensive, and there's always competition from housing and commercial development.",
+      "sourceExcerptSha256": "f4d0f9397df89ddfa5fe2d1101fcb92cd1c84690a2adc0d7eac4d697ae12b942",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Land",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Land",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "land",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "expertise"
+      ],
+      "questionPrompt": "• Urban residents often lack the {{30}} to grow food.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Seminar on Urban Farming",
+      "sourceExcerpt": "LEE: Another challenge is expertise. A lot of urban residents simply don't know how to grow food. There's a need for training and ongoing support.",
+      "sourceExcerptSha256": "3be17c6a27c197869620a243aaad85f088a55195532f92c71e964f3310e1139f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "expertise",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "expertise",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Mesopotamia"
+      ],
+      "questionPrompt": "• Developed by the Sumerians of ancient {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.",
+      "sourceExcerptSha256": "4b14368ee326e306f9c6f41b83aa1b4b9aae923cf4f88a44595d7e07210b4994",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Mesopotamia",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Mesopotamia",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pictographic"
+      ],
+      "questionPrompt": "• Originally {{32}} — based on pictures representing objects.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.",
+      "sourceExcerptSha256": "4b14368ee326e306f9c6f41b83aa1b4b9aae923cf4f88a44595d7e07210b4994",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pictographic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pictographic",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stylus"
+      ],
+      "questionPrompt": "• Marks made in clay with a reed {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.",
+      "sourceExcerptSha256": "4b14368ee326e306f9c6f41b83aa1b4b9aae923cf4f88a44595d7e07210b4994",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stylus",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stylus",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "administrative"
+      ],
+      "questionPrompt": "• Used mainly for {{34}} and commercial records.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.",
+      "sourceExcerptSha256": "4b14368ee326e306f9c6f41b83aa1b4b9aae923cf4f88a44595d7e07210b4994",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "administrative",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "administrative",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Egypt"
+      ],
+      "questionPrompt": "• Emerged in ancient {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed sound symbols, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.",
+      "sourceExcerptSha256": "f37b5d73409b3265681c1fb729a1b1cc0ff897aee982d7c2375f69146fe72407",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Egypt",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Egypt",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sound"
+      ],
+      "questionPrompt": "• A mixed system using pictures and {{36}} symbols.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed sound symbols, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.",
+      "sourceExcerptSha256": "f37b5d73409b3265681c1fb729a1b1cc0ff897aee982d7c2375f69146fe72407",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sound",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sound",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "religious"
+      ],
+      "questionPrompt": "• Also used for {{37}} texts and royal inscriptions.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed sound symbols, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.",
+      "sourceExcerptSha256": "f37b5d73409b3265681c1fb729a1b1cc0ff897aee982d7c2375f69146fe72407",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "religious",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "religious",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Phoenicians"
+      ],
+      "questionPrompt": "• First true alphabet attributed to the {{38}}, c. 1050 BCE.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "A fundamental change came with the development of alphabetic writing. The first true alphabet — in which each symbol represents a consonant sound — is generally attributed to the Phoenicians, around 1050 BCE. This system spread to the Greeks, who made the crucial innovation of adding vowels, producing the first complete alphabet. The Roman alphabet, derived from Greek, became the basis for most European writing systems in use today.",
+      "sourceExcerptSha256": "fb0ab41d448d0b7b55291919c20f8709419fec71feb253f71bc1c9c46b521a8e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Phoenicians",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Phoenicians",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vowels"
+      ],
+      "questionPrompt": "• Greeks added {{39}}, creating the first complete alphabet.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "A fundamental change came with the development of alphabetic writing. The first true alphabet — in which each symbol represents a consonant sound — is generally attributed to the Phoenicians, around 1050 BCE. This system spread to the Greeks, who made the crucial innovation of adding vowels, producing the first complete alphabet. The Roman alphabet, derived from Greek, became the basis for most European writing systems in use today.",
+      "sourceExcerptSha256": "fb0ab41d448d0b7b55291919c20f8709419fec71feb253f71bc1c9c46b521a8e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vowels",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vowels",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "literacy"
+      ],
+      "questionPrompt": "• Fewer symbols made widespread {{40}} possible.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on the History of Writing",
+      "sourceExcerpt": "Because alphabets have far fewer symbols than logographic or syllabic systems — typically between twenty and thirty — they are much easier to learn. This made widespread literacy possible for the first time.",
+      "sourceExcerptSha256": "836139a43258c1baa84c145ff8f43d1b2b9326e9b881dda8dbb684a8a5e88f3e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "literacy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "literacy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-summary__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "geographer"
+      ],
+      "questionPrompt": "The term 'Silk Road' was invented by a German {{1}} in 1877. Although silk was a major export, many other goods also travelled these routes, including {{2}} and paper.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+      "sourceExcerptSha256": "2b5650161a8891494517a594348c56b8fe98cc226b4e96f155d2a282674ee9cb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "geographer",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "geographer",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-summary__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "spices",
+        "glass"
+      ],
+      "questionPrompt": "The term 'Silk Road' was invented by a German {{1}} in 1877. Although silk was a major export, many other goods also travelled these routes, including {{2}} and paper.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+      "sourceExcerptSha256": "2b5650161a8891494517a594348c56b8fe98cc226b4e96f155d2a282674ee9cb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "spices",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "spices",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "glass",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-summary__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "monopoly"
+      ],
+      "questionPrompt": "China maintained a {{3}} on silk production for centuries, protecting the secrets of silkworm cultivation. The caravans that crossed these routes relied heavily on the Bactrian {{4}}, which could endure extreme conditions.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "Chinese states supplied highly valued silk and guarded knowledge of sericulture — the cultivation of silkworms and processing of their cocoons — for centuries. This monopoly concerned silk production knowledge, not all exports or all trade across the network. Calling China the single dominant exporter obscures a decentralised system in which Central Asian, Persian, Indian, Arab, and Mediterranean producers and merchants all contributed. Silk production eventually spread beyond China by several routes. A Byzantine account tells of monks carrying silkworm eggs west in hollow walking staves in the sixth century CE, but historians treat the episode as a transmitted story rather than complete proof of how the knowledge moved.",
+      "sourceExcerptSha256": "854352d6c3c6ad9040567288273261f39430b7d4af9f33342b6eba1fae76a068",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "monopoly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "monopoly",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-summary__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "camel"
+      ],
+      "questionPrompt": "China maintained a {{3}} on silk production for centuries, protecting the secrets of silkworm cultivation. The caravans that crossed these routes relied heavily on the Bactrian {{4}}, which could endure extreme conditions.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "Caravans were a primary means of overland transport. Merchants hired guides, guards, handlers, and pack animals, adjusting routes to water, weather, taxes, conflict, and seasonal closures. The two-humped Bactrian camel was valued for carrying loads through cold and arid Central Asian terrain. Oasis towns such as Samarkand, Dunhuang, and Kashgar were important because they offered water, fodder, storage, lodging, markets, and links to other routes, not because they had unusually large armies. These hubs also supported translators, craftspeople, religious institutions, and officials who made exchange possible.",
+      "sourceExcerptSha256": "d53d6bc377fa5ee77d4414ac73caa0be19a19705f2b059425a2eab11a68b4ca6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "camel",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "camel",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-summary__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Mongol"
+      ],
+      "questionPrompt": "The Silk Road's decline began after the collapse of the {{5}} Empire and the rise of sea trade routes.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "There was no single moment when the network closed. Fragmentation of Mongol rule reduced the relative security supporting some overland movement, while wars, new states, and taxes redirected particular corridors. From the late fifteenth century, Portuguese voyages around southern Africa established direct European maritime access to Asian markets. Ships could carry much larger cargoes than camel caravans, but sea travel was not always faster or safer, and overland exchange continued into the sixteenth century and beyond. Historians therefore describe changing commercial geography rather than a simple replacement of land by sea.",
+      "sourceExcerptSha256": "d8deaf82e3dbe02d9e7f43d6b63d39fde8aa027b3ddeae62f87d766239ab5333",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Mongol",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Mongol",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1q6",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The Silk Road was a single, well-defined trade route.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.",
+      "sourceExcerptSha256": "a0f923b245c70348ae3453e008e7d743bb2cc7322ce4fbeaf6e9916fc9db0481",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1q7",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "According to legend, the secret of silk production was brought out of China by monks.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "Chinese states supplied highly valued silk and guarded knowledge of sericulture — the cultivation of silkworms and processing of their cocoons — for centuries. This monopoly concerned silk production knowledge, not all exports or all trade across the network. Calling China the single dominant exporter obscures a decentralised system in which Central Asian, Persian, Indian, Arab, and Mediterranean producers and merchants all contributed. Silk production eventually spread beyond China by several routes. A Byzantine account tells of monks carrying silkworm eggs west in hollow walking staves in the sixth century CE, but historians treat the episode as a transmitted story rather than complete proof of how the knowledge moved.",
+      "sourceExcerptSha256": "854352d6c3c6ad9040567288273261f39430b7d4af9f33342b6eba1fae76a068",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1q8",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Samarkand and Dunhuang were important cities because of their large armies.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "Caravans were a primary means of overland transport. Merchants hired guides, guards, handlers, and pack animals, adjusting routes to water, weather, taxes, conflict, and seasonal closures. The two-humped Bactrian camel was valued for carrying loads through cold and arid Central Asian terrain. Oasis towns such as Samarkand, Dunhuang, and Kashgar were important because they offered water, fodder, storage, lodging, markets, and links to other routes, not because they had unusually large armies. These hubs also supported translators, craftspeople, religious institutions, and officials who made exchange possible.",
+      "sourceExcerptSha256": "d53d6bc377fa5ee77d4414ac73caa0be19a19705f2b059425a2eab11a68b4ca6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1q9",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Buddhism spread to East Asia partly through the Silk Road.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The Silk Road was not only a conduit for goods but also for ideas, religions, technologies, and diseases. Buddhism spread from India to China, Korea, and Japan along the Silk Road. Islam reached Central Asia and later Southeast Asia through the same network. The Black Death, which devastated Europe in the fourteenth century, is believed to have travelled westward from Central Asia along trade routes.",
+      "sourceExcerptSha256": "ada1dc7891bee6eab34ba762da118667b8754fc00ab2fb33347d7ceeda0dc4f2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10-Q11",
+      "responseKey": "r1-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "C"
+      ],
+      "questionPrompt": "Which TWO factors contributed to the decline of the Silk Road?",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.",
+      "sourceExcerptSha256": "a0f923b245c70348ae3453e008e7d743bb2cc7322ce4fbeaf6e9916fc9db0481",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "the collapse of the Mongol Empire"
+        },
+        {
+          "key": "C",
+          "text": "the development of new maritime routes"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "the spread of the Black Death",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the end of Chinese silk production",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the rise of Arab traders in the region",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-match__12",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "Coined the term \"Silk Road\"",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+      "sourceExcerptSha256": "2b5650161a8891494517a594348c56b8fe98cc226b4e96f155d2a282674ee9cb",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Genghis Khan",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the Portuguese",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the Sumerians",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Kublai Khan",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-match__13",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "First European explorers to develop a sea route to Asia",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Silk Road",
+      "sourceExcerpt": "There was no single moment when the network closed. Fragmentation of Mongol rule reduced the relative security supporting some overland movement, while wars, new states, and taxes redirected particular corridors. From the late fifteenth century, Portuguese voyages around southern Africa established direct European maritime access to Asian markets. Ships could carry much larger cargoes than camel caravans, but sea travel was not always faster or safer, and overland exchange continued into the sixteenth century and beyond. Historians therefore describe changing commercial geography rather than a simple replacement of land by sea.",
+      "sourceExcerptSha256": "d8deaf82e3dbe02d9e7f43d6b63d39fde8aa027b3ddeae62f87d766239ab5333",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Ferdinand von Richthofen",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "Genghis Khan",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the Sumerians",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "Kublai Khan",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2q14",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Scientists fully understand the consequences of ocean plastic pollution.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Plastic pollution is a major environmental problem, but global totals vary with definitions, years, and models. The OECD estimated that 6.1 million tonnes of plastic waste entered aquatic environments in 2019 and that 1.7 million tonnes flowed into the ocean that year. Other studies use different boundaries and produce higher values, so an undated claim that exactly eight million tonnes enters annually hides uncertainty. Plastic harms wildlife and habitats, creates costs for coastal communities, and occurs in seafood and human tissue. Detection alone does not establish the size of a health effect, and scientists are still distinguishing exposure from demonstrated harm.",
+      "sourceExcerptSha256": "1ba05bf7d83c85ba5d55b4a29c4283416154eb87f3eb9066beb7e97cc92ad149",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2q15",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Most ocean plastic comes from land sources.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+      "sourceExcerptSha256": "464816e1c4811d269e2f6a2c25b15ab3dc2f3d3accac4f09a3e272e0391363fd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "NOT GIVEN"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2q16",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The North Pacific Garbage Patch is entirely made up of large plastic items.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+      "sourceExcerptSha256": "464816e1c4811d269e2f6a2c25b15ab3dc2f3d3accac4f09a3e272e0391363fd",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2q17",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Microplastics have been detected in the human body.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+      "sourceExcerptSha256": "220537196d3cc04c7e0451a9527d8b08c3e1a774fd30f59b24de0941b08e0335",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2q18",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Extended producer responsibility schemes have been trialled in some countries.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Addressing ocean plastic pollution requires action across the product life cycle. Avoiding unnecessary products, designing items for reuse and repair, collecting waste reliably, and preventing pellet and fishing-gear loss can stop leakage. Extended producer responsibility schemes shift some financial or operational responsibility for end-of-life management to producers, but results depend on coverage, fees, enforcement, and recycling markets. Consumer measures can reduce selected single-use items, while procurement rules and product standards can change systems at larger scale. Substituting another material is not automatically beneficial unless its full environmental costs are assessed.",
+      "sourceExcerptSha256": "d5b6bdc1449264e77a4db29f9b8298b6fb5cf0fc95387b6a53389fd7677c96a9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "NOT GIVEN"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-notes__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "1.7"
+      ],
+      "questionPrompt": "• The OECD estimated that {{19}} million tonnes of plastic flowed into the ocean in 2019.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Plastic pollution is a major environmental problem, but global totals vary with definitions, years, and models. The OECD estimated that 6.1 million tonnes of plastic waste entered aquatic environments in 2019 and that 1.7 million tonnes flowed into the ocean that year. Other studies use different boundaries and produce higher values, so an undated claim that exactly eight million tonnes enters annually hides uncertainty. Plastic harms wildlife and habitats, creates costs for coastal communities, and occurs in seafood and human tissue. Detection alone does not establish the size of a health effect, and scientists are still distinguishing exposure from demonstrated harm.",
+      "sourceExcerptSha256": "1ba05bf7d83c85ba5d55b4a29c4283416154eb87f3eb9066beb7e97cc92ad149",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "1.7",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "1.7",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-notes__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "currents"
+      ],
+      "questionPrompt": "• Ocean {{20}} can move plastic thousands of kilometres.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+      "sourceExcerptSha256": "464816e1c4811d269e2f6a2c25b15ab3dc2f3d3accac4f09a3e272e0391363fd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "currents",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "currents",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-notes__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "photodegradation"
+      ],
+      "questionPrompt": "• Plastic is broken down by ultraviolet light through {{21}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+      "sourceExcerptSha256": "220537196d3cc04c7e0451a9527d8b08c3e1a774fd30f59b24de0941b08e0335",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "photodegradation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "photodegradation",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-notes__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "microplastics"
+      ],
+      "questionPrompt": "• Fragments smaller than 5mm are called {{22}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+      "sourceExcerptSha256": "220537196d3cc04c7e0451a9527d8b08c3e1a774fd30f59b24de0941b08e0335",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "microplastics",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "microplastics",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-notes__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hormone"
+      ],
+      "questionPrompt": "• Microplastics can disrupt {{23}} function in living organisms.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+      "sourceExcerptSha256": "220537196d3cc04c7e0451a9527d8b08c3e1a774fd30f59b24de0941b08e0335",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hormone",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hormone",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-match__24",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "Sea turtles and whales",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+      "sourceExcerptSha256": "ec725e458238b6b3642e913fcc1e15a6f1ae8490c5de795e23f9078a1240708c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "absorb toxic chemicals from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "lose habitat to plastic-covered seabeds",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "become entangled in plastic fishing gear",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "suffer hormonal disruption from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "face increased disease risk and smothering from plastic debris",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-match__25",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Dolphins and seals",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+      "sourceExcerptSha256": "ec725e458238b6b3642e913fcc1e15a6f1ae8490c5de795e23f9078a1240708c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "absorb toxic chemicals from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "ingest plastic mistaken for prey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "lose habitat to plastic-covered seabeds",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "suffer hormonal disruption from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "face increased disease risk and smothering from plastic debris",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-match__26",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "Coral reefs",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Ocean Plastic Pollution",
+      "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+      "sourceExcerptSha256": "ec725e458238b6b3642e913fcc1e15a6f1ae8490c5de795e23f9078a1240708c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "absorb toxic chemicals from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "ingest plastic mistaken for prey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "lose habitat to plastic-covered seabeds",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "become entangled in plastic fishing gear",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "suffer hormonal disruption from microplastics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-summary__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "deep"
+      ],
+      "questionPrompt": "Medical AI systems use {{27}} learning, trained on large datasets, to perform tasks such as analysing medical {{28}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+      "sourceExcerptSha256": "542589875e5bd5fe3a5a63ffbeb924273d9f305e00c5dfb6638ed0aa77000410",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "deep",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "deep",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-summary__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "imaging",
+        "images"
+      ],
+      "questionPrompt": "Medical AI systems use {{27}} learning, trained on large datasets, to perform tasks such as analysing medical {{28}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+      "sourceExcerptSha256": "8cf2d771626693716ba39861c359baf59f28ab4d67d9ce624ea633668979cd42",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "imaging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "imaging",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "images",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-summary__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diabetic retinopathy",
+        "retinopathy"
+      ],
+      "questionPrompt": "These systems can detect conditions like {{29}} and pneumonia with high accuracy.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+      "sourceExcerptSha256": "542589875e5bd5fe3a5a63ffbeb924273d9f305e00c5dfb6638ed0aa77000410",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diabetic retinopathy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diabetic retinopathy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "retinopathy",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-summary__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "distribution shift"
+      ],
+      "questionPrompt": "A key limitation is the {{30}} problem, where a model trained at one hospital performs poorly at another.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+      "sourceExcerptSha256": "8cf2d771626693716ba39861c359baf59f28ab4d67d9ce624ea633668979cd42",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "distribution shift",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "distribution shift",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-summary__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "minorities"
+      ],
+      "questionPrompt": "If AI systems are trained on unrepresentative data, they may be less accurate for some ethnic {{31}} or rare cases.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+      "sourceExcerptSha256": "8cf2d771626693716ba39861c359baf59f28ab4d67d9ce624ea633668979cd42",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "minorities",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "minorities",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-summary__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "responsibility"
+      ],
+      "questionPrompt": "When AI contributes to a medical error, {{32}} for the mistake is unclear and spread across multiple parties.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Accountability is another contested issue, and responsibility for ordinary clinical errors is not always as simple as the contrast with AI suggests. When a system contributes to a diagnostic mistake, responsibility may be distributed among the developer, data provider, hospital, procurement team, and clinician. Patients need a route to explanation, review, and redress. Regulators can assess a product for a specified intended use, but authorisation does not guarantee safe performance forever. Software updates, new populations, and changing workflows create a need for continuing surveillance and documented human oversight.",
+      "sourceExcerptSha256": "b6c6698c5d1f148b87404c5c8410950b6f10a67bd848d00b77ae5cd8f2ee1ded",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "responsibility",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "responsibility",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-summary__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "therapeutic"
+      ],
+      "questionPrompt": "Many believe that AI could damage the {{33}} relationship between doctor and patient.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "There is also debate about whether AI can ever replicate the relational aspects of medicine. The therapeutic relationship between doctor and patient — built on empathy, trust, and communication — is widely regarded as clinically important in its own right, not merely as a vehicle for information exchange. Many clinicians and patients are concerned that an over-reliance on AI could erode this relationship, reducing medicine to a technical exercise.",
+      "sourceExcerptSha256": "69ed346a030a811c808139513c4b768b4f039c1afe221052159cacf3dff779a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "therapeutic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "therapeutic",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3q34",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "AI systems in medicine can always outperform human specialists.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Artificial intelligence is increasingly used in medical research, administration, screening, imaging, and clinical decision support. In carefully defined retrospective tests, some systems have matched or exceeded specialist performance on a narrow task. Such comparisons do not show that a model can replace a clinician across different patients, hospitals, and workflows. Performance also depends on reference labels, the chosen threshold, and disease prevalence in the evaluation sample. Integration into healthcare therefore raises unresolved questions about safety, accountability, equity, privacy, and the human dimension of medicine.",
+      "sourceExcerptSha256": "ca18b26d445bdfbba9be5286a33f9adf6a45e7e6395c14a63a7e70d4d67c4656",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "NO"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "YES",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3q35",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "AI could help extend diagnostic expertise to regions where specialist doctors are scarce.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "The potential benefits are substantial. In regions with shortages of specialist physicians, a validated tool could extend access to diagnostic support; elsewhere it might prioritise urgent cases or reduce repetitive work. Systems can process more records than one clinician and do not experience fatigue. They are not free from bias, however. Historical decisions, missing populations, measurement choices, and optimisation targets can encode or amplify unfair patterns. Clinicians may also develop automation bias, accepting a confident recommendation and overlooking an error they would otherwise have noticed.",
+      "sourceExcerptSha256": "0841b6fff0281b65e34464dc0f518ccac691c7b84e8fc73a77a22307e7d651e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "YES"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "NO",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3q36",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "AI systems can reproduce bias contained in data and design choices.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "The potential benefits are substantial. In regions with shortages of specialist physicians, a validated tool could extend access to diagnostic support; elsewhere it might prioritise urgent cases or reduce repetitive work. Systems can process more records than one clinician and do not experience fatigue. They are not free from bias, however. Historical decisions, missing populations, measurement choices, and optimisation targets can encode or amplify unfair patterns. Clinicians may also develop automation bias, accepting a confident recommendation and overlooking an error they would otherwise have noticed.",
+      "sourceExcerptSha256": "0841b6fff0281b65e34464dc0f518ccac691c7b84e8fc73a77a22307e7d651e7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "YES"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "NO",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3q37",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The US Food and Drug Administration has not yet approved any AI-based medical devices.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Despite these concerns, clinical adoption is expanding. The US Food and Drug Administration maintains a public list containing hundreds of AI-enabled medical devices, most in radiology, while explaining that inclusion follows its own criteria and available information. Counting authorisations says little by itself about clinical benefit. WHO guidance calls for autonomy, safety, transparency, accountability, inclusiveness, equity, responsiveness, and sustainability throughout design and use. The challenge for policymakers, clinicians, patients, regulators, and technologists is to define intended use, measure real outcomes, monitor failures, and preserve the therapeutic relationship. Governance is part of the clinical intervention rather than paperwork added after deployment.",
+      "sourceExcerptSha256": "1ea14ed8b33c29d521bd73918f34f27b8fd741e4b05a98388dd596d935461447",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "NO"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "YES",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3q38",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The therapeutic relationship between doctor and patient is considered clinically important.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "There is also debate about whether AI can ever replicate the relational aspects of medicine. The therapeutic relationship between doctor and patient — built on empathy, trust, and communication — is widely regarded as clinically important in its own right, not merely as a vehicle for information exchange. Many clinicians and patients are concerned that an over-reliance on AI could erode this relationship, reducing medicine to a technical exercise.",
+      "sourceExcerptSha256": "69ed346a030a811c808139513c4b768b4f039c1afe221052159cacf3dff779a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "YES"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "NO",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-match__39",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "They worry that relying on AI may reduce the human element of medicine.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Artificial intelligence is increasingly used in medical research, administration, screening, imaging, and clinical decision support. In carefully defined retrospective tests, some systems have matched or exceeded specialist performance on a narrow task. Such comparisons do not show that a model can replace a clinician across different patients, hospitals, and workflows. Performance also depends on reference labels, the chosen threshold, and disease prevalence in the evaluation sample. Integration into healthcare therefore raises unresolved questions about safety, accountability, equity, privacy, and the human dimension of medicine.",
+      "sourceExcerptSha256": "ca18b26d445bdfbba9be5286a33f9adf6a45e7e6395c14a63a7e70d4d67c4656",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "software developers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "regulatory agencies",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "policymakers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-match__40",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "They assess medical products for a specified intended use.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: Artificial Intelligence in Medicine",
+      "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+      "sourceExcerptSha256": "542589875e5bd5fe3a5a63ffbeb924273d9f305e00c5dfb6638ed0aa77000410",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "software developers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "clinicians and patients",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "policymakers",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q10",
+        "before": "archive; digital",
+        "after": "archive",
+        "reason": "“digital” alone does not name the Premium benefit."
+      },
+      {
+        "scope": "Listening Q11–12",
+        "before": "plastic-film category overlapped with one of its examples",
+        "after": "two distinct examples: ready-meal wrapping and carrier bags",
+        "reason": "Removed overlapping answer choices and the existing-cardboard ambiguity."
+      },
+      {
+        "scope": "Listening Q30",
+        "before": "expertise; knowledge; skills",
+        "after": "expertise",
+        "reason": "Only “expertise” is the stated answer in the effective transcript."
+      },
+      {
+        "scope": "Reading Q15",
+        "before": "TRUE",
+        "after": "NOT GIVEN",
+        "reason": "The passage calls land waste a major source but never establishes that it is most ocean plastic."
+      },
+      {
+        "scope": "Reading Q18",
+        "before": "TRUE",
+        "after": "NOT GIVEN",
+        "reason": "The passage explains EPR schemes but does not state that countries trialled them."
+      },
+      {
+        "scope": "Reading Q20",
+        "before": "Plastic accumulates in large ocean ___ called gyres",
+        "after": "Ocean ___ can move plastic thousands of kilometres",
+        "reason": "The former sentence introduced “gyres”, a word absent from the passage; the replacement directly tests currents."
+      },
+      {
+        "scope": "Reading Q30",
+        "before": "distribution shift; shift",
+        "after": "distribution shift",
+        "reason": "The named concept in the passage is the two-word “distribution shift” problem."
+      },
+      {
+        "scope": "Reading Q32",
+        "before": "responsibility; accountability",
+        "after": "responsibility",
+        "reason": "The sentence and passage state that responsibility is distributed; “accountability” did not complete the sentence faithfully."
+      },
+      {
+        "scope": "Reading Q40",
+        "before": "policymakers / vague governance-framework claim",
+        "after": "regulatory agencies / assess products for a specified intended use",
+        "reason": "The replacement has one explicit, unique source match."
+      },
+      {
+        "scope": "Listening Q8, Q28, Q34 and Reading Q2",
+        "before": "ambiguous header and unsupported/generalised variants",
+        "after": "source-faithful prompt and forms only",
+        "reason": "Removed variants that were absent from the source or did not uniquely fit the displayed answer context."
+      }
+    ]
+  },
+  "reviewSha256": "c3ffcca3386608f08f964f7ce4ec5e430b76a652f6400dba63dffd4ad8d1f6e2"
+}

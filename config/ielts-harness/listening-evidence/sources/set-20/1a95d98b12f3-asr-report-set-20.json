@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:12:40.284Z",
+  "set": 20,
+  "source": "src/data/mocks/ielts-set-20.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-20.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/ielts-listening-set-20.mp3",
+  "audioSha256": "7cfc9cb0d151e7a326ba019692bdc435576c5aedd129136d3afbd6ab48c1b301",
+  "transcriptSha256": "4f925ba02dc12499866ecef1562c6fb65ab1e995a1639075613ed5c62ee15270",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "57b4a8f75a54597c05deb1e53ecf157275b847552cde8f35541b1a5e876cd7bb",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-20/whisper-set-20.json",
+  "asrSourceSha256": "158c878e7bf968d93a0f9e4885a8386bb6daac3e99fcc966de26bf77bbbf56ac",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 3184,
+  "recognizedWords": 3164,
+  "editDistance": 79,
+  "wordErrorRate": 0.0248,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "economics"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 140.88,
+      "endSeconds": 142.44,
+      "audiblePhrase": "I'm doing a degree in economics."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "third",
+        "3rd"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 180.88,
+      "endSeconds": 184.5,
+      "audiblePhrase": "Now, which floor would you like? We have rooms on the deck and in third floors."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 190.84,
+      "endSeconds": 195.78,
+      "audiblePhrase": "Now review questions 6 to 10, before the recording continues."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "projector"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 286.56,
+      "endSeconds": 292.26,
+      "audiblePhrase": "Fine. Do you need any particular equipment? Most rooms have a whiteboard and some also have a projector."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "Thursday"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 299.2,
+      "endSeconds": 300.48,
+      "audiblePhrase": "Thursday, if that's free."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "card"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 324.28,
+      "endSeconds": 328.78,
+      "audiblePhrase": "Thursday's fine. Just remember to bring your student card as you'll need it to collect the key."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 333.38,
+      "endSeconds": 338.86,
+      "audiblePhrase": "Certainly. Room A is on the third floor, holds six people and costs three pounds an hour."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "whiteboard"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 339.16,
+      "endSeconds": 340.16,
+      "audiblePhrase": "It comes with a whiteboard."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "fourth",
+        "4th",
+        "4"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 375.32,
+      "endSeconds": 382.12,
+      "audiblePhrase": "Room B is on the fourth floor, it seats 10, costs five pounds an hour and includes a projector which is perfect for your presentation."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "projector"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 375.32,
+      "endSeconds": 382.12,
+      "audiblePhrase": "Room B is on the fourth floor, it seats 10, costs five pounds an hour and includes a projector which is perfect for your presentation."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "four thirty",
+        "4.30",
+        "4:30"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 597.86,
+      "endSeconds": 606.84,
+      "audiblePhrase": "Now some practical information. The museum stays open until five o'clock, but last entry to the exhibits is at 4.30, so please plan your time."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "model railway"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 607.6999999999999,
+      "endSeconds": 614,
+      "audiblePhrase": "Photography is allowed everywhere except in the model railway room, where the flash disturbs the delicate mechanisms."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "gift shop",
+        "shop"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 614.9,
+      "endSeconds": 622.12,
+      "audiblePhrase": "If you'd like something to eat, the café is on the ground floor, right next to the gift shop, as the Transport Museum guide continues."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "worksheet"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 646.16,
+      "endSeconds": 651.92,
+      "audiblePhrase": "For families, we run a treasure hunt every afternoon. Just pick up a worksheet from the information desk."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "simulator"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 652.46,
+      "endSeconds": 658.28,
+      "audiblePhrase": "Children particularly enjoy the driving simulator, though I should mention there's a small extra charge of £2 for that."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "cloakroom"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 765.02,
+      "endSeconds": 769.56,
+      "audiblePhrase": "A few quick reminders. Large bags must be left in the cloakroom near the main entrance."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "forty minutes",
+        "40 minutes"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 769.56,
+      "endSeconds": 780.08,
+      "audiblePhrase": "Our guided tours leave every hour from the central hall, and each one lasts about 40 minutes, and if you happen to get lost, look for a member of staff in a red jacket."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "questionnaire"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 814.12,
+      "endSeconds": 829.72,
+      "audiblePhrase": "Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard, and on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "script"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1239.98,
+      "endSeconds": 1246.02,
+      "audiblePhrase": "That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "ethics"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1246.56,
+      "endSeconds": 1250.4,
+      "audiblePhrase": "Second, you'll need approval from the ethics committee before you collect any data at all."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "equipment"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1251,
+      "endSeconds": 1258.84,
+      "audiblePhrase": "Third, book the recording equipment early because it's in very high demand. And keep a copy of everything in a shared folder so nothing gets lost."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "folder"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1251,
+      "endSeconds": 1258.84,
+      "audiblePhrase": "Third, book the recording equipment early because it's in very high demand. And keep a copy of everything in a shared folder so nothing gets lost."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "results"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1259.3600000000001,
+      "endSeconds": 1262.4,
+      "audiblePhrase": "Finally, compare the survey results to judge the campaign's success."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "cacao",
+        "cocoa"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1647.6,
+      "endSeconds": 1651.76,
+      "audiblePhrase": "Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "currency"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": true,
+      "matchKind": null,
+      "diagnosticStartSeconds": 1459.2,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "Europe"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": true,
+      "matchKind": null,
+      "diagnosticStartSeconds": 1484.56,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "sugar"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": true,
+      "matchKind": null,
+      "diagnosticStartSeconds": 1489.68,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "chemist"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": true,
+      "matchKind": null,
+      "diagnosticStartSeconds": 1531.08,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "fat"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": true,
+      "matchKind": null,
+      "diagnosticStartSeconds": 1531.08,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "butter"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1647.6,
+      "endSeconds": 1651.76,
+      "audiblePhrase": "Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "milk"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1652.44,
+      "endSeconds": 1658.32,
+      "audiblePhrase": "Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "Africa"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1682.88,
+      "endSeconds": 1687.84,
+      "audiblePhrase": "Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "deforestation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1688.44,
+      "endSeconds": 1692.98,
+      "audiblePhrase": "There are also environmental concerns, since expanding plantations can lead to deforestation."
+    }
+  ],
+  "completionEvidenceFound": 28,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "Accepted completion phrases not found in question order for Q32, Q33, Q34, Q35, Q36"
+  ],
+  "releaseAuthorized": false
+}

@@ -1,0 +1,3581 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 12,
+  "mockId": "set-12",
+  "contentVersionAtReview": "ielts-set-12-v3",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "874eb503ff5da812cbd2e42f0a8db9721b0db91dda2ff001599cb6a1b3aa6843",
+    "listeningMaterialSha256": "0e0fabdc83edcec520eafaff3a8a9ec02aee0d47baf6f5a4888561f02b87a0ad",
+    "readingMaterialSha256": "99c68c34b837dd1cecc1ee5f3ba2674d6780bff66f22acaa1087026614be88eb",
+    "objectiveMaterialSha256": "0d4eac5c63cd3683564ba95f63ba5db962f593cd6d9235add84373fec77b5cf4"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Ashgrove",
+        "ashgrove"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "station"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "day"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "windscreen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "tram"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "photo",
+        "photograph"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "15",
+        "£15"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "map"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "58",
+        "£58"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "discounts",
+        "discount"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the farm shop",
+        "B": "B. the café",
+        "C": "C. the children's play barn",
+        "D": "D. the duck pond",
+        "E": "E. the tractor rides"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "car park",
+        "car-park"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "11",
+        "11 am",
+        "eleven"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "lambs",
+        "lamb"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "cheese"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "strawberries",
+        "strawberry"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "tent",
+        "food tent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "dogs",
+        "dog"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "5 pm",
+        "5",
+        "5pm",
+        "five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "find its way through a maze on its own",
+        "lift and carry small objects",
+        "respond to spoken commands"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It was too expensive to buy.",
+        "It processed the images too slowly.",
+        "It was too heavy for the frame."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the programming",
+        "the electronics",
+        "writing the report"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "to test it in a simple maze before the full layout",
+        "to test it in the real competition first",
+        "to ask another group to test it"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "making it larger",
+        "using plastic instead of plywood",
+        "adding a second battery"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "plastic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "code",
+        "programming"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "table"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "workshop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "budget"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "retina"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "cones",
+        "cone"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "three",
+        "3"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "wavelength"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "blue"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "brain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "inherited"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "men"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "green"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "ultraviolet"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "zooxanthellae"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "Great Barrier Reef"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "coral skeleton"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "algal blooms"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "barrier"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "heat-resistant"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "chaturanga"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "long-range diagonal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "Wilhelm Steinitz",
+        "Steinitz"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "world champions"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "Deep Blue"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "series"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Social media is primarily responsible for increasing smartphone addiction.",
+        "Exposure to idealised images on social platforms drives feelings of inadequacy in young people.",
+        "Social media platforms deliberately cause mental illness in young users.",
+        "The decline in face-to-face interaction began well before smartphones were introduced."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "There was no statistically measurable association between social media and wellbeing.",
+        "The association between social media use and poor wellbeing was real but very small.",
+        "Social media was confirmed as the primary cause of adolescent mental health problems.",
+        "Girls showed a much stronger negative association than boys."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Young people who use social media to passively scroll through news feeds.",
+        "Those who live in large cities with many opportunities for face-to-face interaction.",
+        "Young people who are socially isolated offline, such as LGBTQ+ youth or those with chronic illness.",
+        "Adolescents who use social media for less than one hour per day."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It has been shown to completely eliminate social comparison on platforms.",
+        "Research suggests it may reduce the intensity of social comparison behaviour.",
+        "It has been banned in several countries as an insufficient measure.",
+        "Platform companies introduced it voluntarily after being legally required to do so."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "self-harm"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "bidirectional"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "passive"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "quality"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Ashgrove",
+        "ashgrove"
+      ],
+      "questionPrompt": "Address: 8 {{1}} Avenue",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "CUSTOMER: 8 Ashgrove Avenue — that's A-S-H-G-R-O-V-E.",
+      "sourceExcerptSha256": "f2132fc595f69b27e6804dc9e9305cb2a197ca9c06cfc96dcb40577675218e0a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Ashgrove",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Ashgrove",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "ashgrove",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "station"
+      ],
+      "questionPrompt": "• The customer wants a permit for the {{2}} car park.",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "CUSTOMER: The riverside one, please. Oh, sorry — no, I meant the station car park. That's the one nearest my flat.",
+      "sourceExcerptSha256": "4a6171de562173fd04dc35b05a27f314e2f0c553a1d2e036b43a9fb448f7be8c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "station",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "station",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "day"
+      ],
+      "questionPrompt": "• A warden checks the permits every {{3}}.",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: The station car park, fine. Just so you know, a warden checks the permits every day, so you'll need to display it clearly — on the windscreen, please, not on the dashboard.",
+      "sourceExcerptSha256": "e87683f848b402a5d678e7a5ce06a52526b26b94e30f9ae24179d6e5e0f7c93e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "day",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "day",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "windscreen"
+      ],
+      "questionPrompt": "• The permit must be displayed on the {{4}}.",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: The station car park, fine. Just so you know, a warden checks the permits every day, so you'll need to display it clearly — on the windscreen, please, not on the dashboard.",
+      "sourceExcerptSha256": "e87683f848b402a5d678e7a5ce06a52526b26b94e30f9ae24179d6e5e0f7c93e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "windscreen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "windscreen",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tram"
+      ],
+      "questionPrompt": "• The card can be used on buses and the {{5}}.",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: Now, the travel card. It's very useful — you can use it on the buses and the tram, right across the city.",
+      "sourceExcerptSha256": "516326ab63830f47505afdfc876a8c4e4b8b9c22849a1a581297fea1a4c4c97d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tram",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tram",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "photo",
+        "photograph"
+      ],
+      "questionPrompt": "• To apply, the customer must bring a recent {{6}}.",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: When you come in, just bring a recent photo of yourself and we'll print the card while you wait.",
+      "sourceExcerptSha256": "499695420a1819bc0ad73ea7f2ece01a83fb67516a01c2881b72548648b1c0b0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "photo",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "photo",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "photograph",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "15",
+        "£15"
+      ],
+      "questionPrompt": "Weekly card | 7 days | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre.",
+      "sourceExcerptSha256": "bfd95b169e3420b2ec1e48debd7f81f5ba178816b1b54c44d9795d72a0fcca6e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "15",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "15",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£15",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "map"
+      ],
+      "questionPrompt": "Weekly card | 7 days | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre.",
+      "sourceExcerptSha256": "bfd95b169e3420b2ec1e48debd7f81f5ba178816b1b54c44d9795d72a0fcca6e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "map",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "map",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "58",
+        "£58"
+      ],
+      "questionPrompt": "Monthly card | 30 days | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre.",
+      "sourceExcerptSha256": "bfd95b169e3420b2ec1e48debd7f81f5ba178816b1b54c44d9795d72a0fcca6e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "58",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "58",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£58",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "discounts",
+        "discount"
+      ],
+      "questionPrompt": "Monthly card | 30 days | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Car-Park and Travel-Card Enquiry",
+      "sourceExcerpt": "AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre.",
+      "sourceExcerptSha256": "bfd95b169e3420b2ec1e48debd7f81f5ba178816b1b54c44d9795d72a0fcca6e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "discounts",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "discounts",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "discount",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "C"
+      ],
+      "questionPrompt": "Which TWO attractions are new at the farm this year?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "Hello everyone, and a warm welcome to Greenfields Farm on our annual open day. It's wonderful to see so many families here. Let me start by telling you what's new. This year, for the very first time, we've opened a farm shop selling our own produce, and we've built a large children's play barn for when the weather turns. Now, some of our old favourites are still here too — the café has been serving visitors for over twenty years, the duck pond is where it's always been, and yes, the tractor rides are running as usual, so don't worry.",
+      "sourceExcerptSha256": "42cc306a815fbc55b6178ac721b46e46e3761fe958597730cab9ad681fd36604",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the farm shop"
+        },
+        {
+          "key": "C",
+          "text": "the children's play barn"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "the duck pond",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the tractor rides",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "car park",
+        "car-park"
+      ],
+      "questionPrompt": "• The guided walks start from the {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "Right, let me run through today's programme. All of our guided walks set off from the car park, just behind you, so please gather there.",
+      "sourceExcerptSha256": "42ea1f8114000b6640dd5e710965a834047463442c5d8b180288867482226e56",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "car park",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "car park",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "car-park",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "This differs from the cited form only in case, spacing, punctuation or accepted spelling."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "11",
+        "11 am",
+        "eleven"
+      ],
+      "questionPrompt": "• The sheepdog display begins at {{14}} in the top field.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "One thing you mustn't miss is the sheepdog display. That begins at 11, over in the top field, and it lasts about half an hour.",
+      "sourceExcerptSha256": "c43867d17e9117e3f998d75ecb7189619df85a53b4615b162a046bb5541ffb02",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "11",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "11",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "11 am",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        },
+        {
+          "answer": "eleven",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lambs",
+        "lamb"
+      ],
+      "questionPrompt": "• Children can help to feed the {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "After that, children are welcome to help feed the lambs in the small animal barn — they do love a bottle of milk.",
+      "sourceExcerptSha256": "772ba3b6adb6b2ccc86a604bb0ce28f927821efecee29bbf9fd5a710d7a07a46",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lambs",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lambs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "lamb",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cheese"
+      ],
+      "questionPrompt": "• In the dairy, visitors can watch staff making {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "Next to that is the dairy. Through the window, you can watch our staff making cheese in the traditional way, and there are samples to try.",
+      "sourceExcerptSha256": "9c3e516105b7d80dfdc46a718ce6f1dc50a1112ff139dd7e92c993aec8a961c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cheese",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cheese",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "strawberries",
+        "strawberry"
+      ],
+      "questionPrompt": "• In the lower field you can pick your own {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "If you'd like to take something home, head down to the lower field, where you can pick your own strawberries — bring a basket if you have one.",
+      "sourceExcerptSha256": "15d3d5c081c24b02a256000a2267018aa535c540a7715ffe67bbc632936256df",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "strawberries",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "strawberries",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "strawberry",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tent",
+        "food tent"
+      ],
+      "questionPrompt": "• Hot food is served all day in a large {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "When you get hungry, hot food and drinks are served all day in the food tent, near the main gate.",
+      "sourceExcerptSha256": "68a25da7735a024a601fa756beff93f6ba2e9684c2164aec4b647073aaebf142",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tent",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "food tent",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "dogs",
+        "dog"
+      ],
+      "questionPrompt": "• Visitors must keep their {{19}} on a lead.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "A couple of reminders. We do have animals roaming freely, so please keep your dogs on a lead at all times. And do watch your children near the machinery.",
+      "sourceExcerptSha256": "289a7d5f5486e8f31059162309791cbae8906f57de0c903aab5c4818e4e3cad4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "dogs",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "dogs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "dog",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "5 pm",
+        "5",
+        "5pm",
+        "five"
+      ],
+      "questionPrompt": "• The farm closes at {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Farm Open-Day Talk",
+      "sourceExcerpt": "The farm closes at 5 pm today, and the car park closes shortly after, so do allow yourself plenty of time.",
+      "sourceExcerptSha256": "cc6d41c389eeda9aace1c676ffe48984157e43f3376605ddeba8e39f26133530",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "5 pm",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "5 pm",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "5",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "5pm",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        },
+        {
+          "answer": "five",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What must the robot be able to do?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "SAM: Well, the brief is to build a small robot that can find its way through a maze without any human control.",
+      "sourceExcerptSha256": "9e5612924cf8fa9400dd0c1ae8722d17666003521b19569df98adf2ba6812fd4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "find its way through a maze on its own"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "lift and carry small objects",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "respond to spoken commands",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Why did the students stop using a camera?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "SAM: We've built the frame and fitted the wheels. The main headache has been the sensors. At first we used a camera to detect the walls, but it was far too slow to process the images.",
+      "sourceExcerptSha256": "89bd2b7fa85126834485a2abc1a4355e758fbaf5ab5f328f09e846cb9135ad78",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "It processed the images too slowly."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It was too expensive to buy.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It was too heavy for the frame.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is Sam mainly responsible for?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "SAM: Priya is doing all the programming, and I'm concentrating on the electronics — the wiring and the motors.",
+      "sourceExcerptSha256": "ad78d7a3664a99cc12099098a3be6dce2037151d7b8d78befee27a93c8c6f850",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the electronics"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the programming",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "writing the report",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What does the tutor advise about testing the robot?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Of course. My advice would be to test the robot in a simple maze first, before you try the full competition layout. You'll find the faults much more quickly.",
+      "sourceExcerptSha256": "9399184f9ddd4986200688a57f74df3b8bb0e9f5f9015fa999d368081165e86e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "to test it in a simple maze before the full layout"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "to test it in the real competition first",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "to ask another group to test it",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What change does the tutor suggest for the robot's body?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "using plastic instead of plywood"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "making it larger",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "adding a second battery",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plastic"
+      ],
+      "questionPrompt": "• Order the {{26}} needed for the new body.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plastic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plastic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "code",
+        "programming"
+      ],
+      "questionPrompt": "• Finish the {{27}} so the robot can turn corners.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "code",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "code",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "programming",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "table"
+      ],
+      "questionPrompt": "• Run a full test and record the results in a {{28}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "table",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "table",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "workshop"
+      ],
+      "questionPrompt": "• Book the {{29}} for Friday.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "workshop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "workshop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "budget"
+      ],
+      "questionPrompt": "• Email the tutor the {{30}} to claim funding.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Robotics Group Project",
+      "sourceExcerpt": "TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.",
+      "sourceExcerptSha256": "79613abf62e794a8124bf7905d6407dbb3d0a2e6cb95a3ba89c1b01eaa768009",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "budget",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "budget",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "retina"
+      ],
+      "questionPrompt": "• Light is focused onto the {{31}} at the back of the eye.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "It begins in the eye. When light enters, it is focused onto a thin layer of light-sensitive tissue at the back of the eye called the retina. This layer is packed with millions of specialised cells that convert light into electrical signals.",
+      "sourceExcerptSha256": "4eb78f253302b1875892b6c47cda7fb889596f81446afd698b2b31c3fbd86492",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "retina",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "retina",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cones",
+        "cone"
+      ],
+      "questionPrompt": "• Colour is detected by cells called {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "There are two main kinds of these cells. The first, called rods, are extremely sensitive and allow us to see in dim light, but they cannot detect colour. The second kind, the cones, are responsible for colour vision, though they need bright light to work well. That is why, on a dark night, the world appears in shades of grey.",
+      "sourceExcerptSha256": "00e05c3144501927fe98d5ad8dd5569a0c6a6bdbce69041be4601f13cef46240",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cones",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cones",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "cone",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "three",
+        "3"
+      ],
+      "questionPrompt": "• The human eye contains {{33}} types of these cells.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "Now, in the human eye there are three different types of cone. Each type contains a slightly different pigment, and because of this, each responds most strongly to a particular wavelength of light. Broadly speaking, one type is most sensitive to red, another to green, and the third to blue. Every colour we perceive is produced by the eye comparing the signals from these three types, and that comparison is carried out by the brain, which interprets the mixture as a single colour.",
+      "sourceExcerptSha256": "a22a0c5648b138bb5188677a10a7e7138e1b98c619fb7af257077cb5016690d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "wavelength"
+      ],
+      "questionPrompt": "• Each type responds most strongly to a different {{34}} of light.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "Now, in the human eye there are three different types of cone. Each type contains a slightly different pigment, and because of this, each responds most strongly to a particular wavelength of light. Broadly speaking, one type is most sensitive to red, another to green, and the third to blue. Every colour we perceive is produced by the eye comparing the signals from these three types, and that comparison is carried out by the brain, which interprets the mixture as a single colour.",
+      "sourceExcerptSha256": "a22a0c5648b138bb5188677a10a7e7138e1b98c619fb7af257077cb5016690d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "wavelength",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "wavelength",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "blue"
+      ],
+      "questionPrompt": "• The three types are most sensitive to red, green and {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "Now, in the human eye there are three different types of cone. Each type contains a slightly different pigment, and because of this, each responds most strongly to a particular wavelength of light. Broadly speaking, one type is most sensitive to red, another to green, and the third to blue. Every colour we perceive is produced by the eye comparing the signals from these three types, and that comparison is carried out by the brain, which interprets the mixture as a single colour.",
+      "sourceExcerptSha256": "a22a0c5648b138bb5188677a10a7e7138e1b98c619fb7af257077cb5016690d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "blue",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "blue",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "brain"
+      ],
+      "questionPrompt": "• The signals are combined and interpreted by the {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "Now, in the human eye there are three different types of cone. Each type contains a slightly different pigment, and because of this, each responds most strongly to a particular wavelength of light. Broadly speaking, one type is most sensitive to red, another to green, and the third to blue. Every colour we perceive is produced by the eye comparing the signals from these three types, and that comparison is carried out by the brain, which interprets the mixture as a single colour.",
+      "sourceExcerptSha256": "a22a0c5648b138bb5188677a10a7e7138e1b98c619fb7af257077cb5016690d2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "brain",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "brain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "inherited"
+      ],
+      "questionPrompt": "• In most cases the condition is {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "This system also explains colour blindness. In most cases the condition is inherited, passed down from a person's parents through their genes. Interestingly, it is far more common in men than in women, for reasons linked to the way the relevant genes are carried. The most frequent form is an inability to distinguish red from green, which can make everyday tasks, such as reading a map, surprisingly difficult.",
+      "sourceExcerptSha256": "4029e1806ffc7b01589fcd9d448a1b984c3cc12980586ebf645a9d6e6b963ec0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "inherited",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "inherited",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "men"
+      ],
+      "questionPrompt": "• It is much more common in {{38}} than in women.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "This system also explains colour blindness. In most cases the condition is inherited, passed down from a person's parents through their genes. Interestingly, it is far more common in men than in women, for reasons linked to the way the relevant genes are carried. The most frequent form is an inability to distinguish red from green, which can make everyday tasks, such as reading a map, surprisingly difficult.",
+      "sourceExcerptSha256": "4029e1806ffc7b01589fcd9d448a1b984c3cc12980586ebf645a9d6e6b963ec0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "men",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "men",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "green"
+      ],
+      "questionPrompt": "• The commonest form is difficulty telling red from {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "This system also explains colour blindness. In most cases the condition is inherited, passed down from a person's parents through their genes. Interestingly, it is far more common in men than in women, for reasons linked to the way the relevant genes are carried. The most frequent form is an inability to distinguish red from green, which can make everyday tasks, such as reading a map, surprisingly difficult.",
+      "sourceExcerptSha256": "4029e1806ffc7b01589fcd9d448a1b984c3cc12980586ebf645a9d6e6b963ec0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "green",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "green",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ultraviolet"
+      ],
+      "questionPrompt": "• Some birds have an extra cone and can see {{40}} light.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Human Colour Vision",
+      "sourceExcerpt": "Finally, it's worth remembering that human vision is not the limit of what's possible. Many animals see the world quite differently. Birds, for example, have an extra type of cone and can see ultraviolet light, which is completely invisible to us.",
+      "sourceExcerptSha256": "bc62dd88efc47f000af3e131464066d58a6a8dea0ce9b99148202876b60dcd14",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ultraviolet",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ultraviolet",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: Coral reefs cover approximately one quarter of the total ocean floor.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Coral reefs occupy less than one percent of the ocean floor, yet they support approximately twenty-five percent of all known marine species. These ecosystems—often described as the rainforests of the sea—provide food security, coastal protection, and economic income to hundreds of millions of people worldwide. Today, they face an unprecedented convergence of threats that scientists warn could eliminate most of the world's reefs within decades.",
+      "sourceExcerptSha256": "b0c4966f4c261b8afff0b870249357e840f3e01c7952a64cea6701ba46c0f8c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: Zooxanthellae supply corals with most of their energy through photosynthesis.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+      "sourceExcerptSha256": "b1bb990f127d5c567228ec686b6355501b3b91e24f54ec11ed1fd3c4c38cf2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: A temperature rise of five degrees is needed to trigger coral bleaching.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+      "sourceExcerptSha256": "b1bb990f127d5c567228ec686b6355501b3b91e24f54ec11ed1fd3c4c38cf2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Ocean pH has become more acidic since the beginning of the Industrial Revolution.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Ocean acidification compounds this problem significantly. As the ocean absorbs approximately thirty percent of all carbon dioxide emitted by human activity, a chemical reaction produces carbonic acid, lowering the pH of seawater. Since the Industrial Revolution, ocean surface pH has dropped from 8.2 to 8.1—a change that, because pH is logarithmic, represents a twenty-six percent increase in acidity. Seawater remains alkaline, but the shift in chemistry still changes which dissolved compounds are available to organisms. For corals, which build their skeletons from calcium carbonate, this is deeply problematic: acidification reduces the availability of carbonate ions, making it harder for corals to calcify and causing existing skeletons to weaken and dissolve. Slower construction also limits a reef's ability to replace material lost to storms, erosion, and grazing organisms.",
+      "sourceExcerptSha256": "c5ac76e68bfbdad3cb328459a669a29a4546d2be7f88a2db8fab8443016e8b25",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Parrotfish and surgeonfish help reefs by controlling algae growth.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Local stressors add further pressure. Agricultural runoff introduces nutrients into coastal waters, stimulating algal blooms that smother reefs and block sunlight. Overfishing removes herbivorous fish such as parrotfish and surgeonfish, which normally keep algae in check. Coastal development disrupts sediment patterns and can physically damage reef structures. The interaction among pressures matters: a reef weakened by bleaching may be less able to compete with algae or tolerate sediment, while the loss of grazing fish can prevent young corals from reclaiming open surfaces. Reducing a local stressor cannot stop marine heat waves, but it can improve the condition in which corals meet them. In many regions, these local threats operate in combination with climate stressors, creating a \"death by a thousand cuts\" dynamic from which reefs have little opportunity to recover.",
+      "sourceExcerptSha256": "3ae6f33b54a7fee20ec7d5c191988c481d0f2c202de72e6dc2c6fabace99b486",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "6. {{6}}: Coral reefs generate more economic value from tourism than from fisheries.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The economic stakes are enormous. Coral reefs generate an estimated US$375 billion per year in goods and services, including fisheries, tourism, and coastal protection. The physical barrier they create absorbs wave energy and protects shorelines from erosion and storm damage—a service valued at hundreds of billions of dollars annually for low-lying coastal nations and islands. In countries like Indonesia, the Philippines, and the Maldives, reef-based tourism and fishing underpin the livelihoods of millions of people, making reef degradation not merely an ecological problem but a development crisis.",
+      "sourceExcerptSha256": "1321879e0b42179fa26231d1d72405214c332c67fd2e56814f096b01af9a167d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Coral gardening involves transplanting resilient coral fragments to damaged reefs.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Responses to reef decline range from local interventions to global policy ambitions. Coral gardening—growing fragments of resilient coral on underwater nurseries and transplanting them to degraded reefs—has shown promise in the Caribbean and parts of the Indo-Pacific, though the scale of the work required is vast. Scientists are investigating heat-resistant coral strains, produced through selective breeding or assisted evolution, that may be able to survive warmer waters. At the policy level, the establishment of marine protected areas reduces local stressors and gives reefs more capacity to recover from bleaching events. Ultimately, however, conservationists argue that without aggressive action to limit greenhouse gas emissions, all other interventions risk being overwhelmed by continued warming.",
+      "sourceExcerptSha256": "0623589f2b1f284bc2cb40090120d41a5678bbf4738e4730daa1221c1cb896eb",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "zooxanthellae"
+      ],
+      "questionPrompt": "8. The algae living inside coral tissue are called {{8}} and they are expelled during bleaching events.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+      "sourceExcerptSha256": "b1bb990f127d5c567228ec686b6355501b3b91e24f54ec11ed1fd3c4c38cf2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "zooxanthellae",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "zooxanthellae",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Great Barrier Reef"
+      ],
+      "questionPrompt": "9. The {{9}} experienced five mass bleaching events between 2016 and 2024.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+      "sourceExcerptSha256": "b1bb990f127d5c567228ec686b6355501b3b91e24f54ec11ed1fd3c4c38cf2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Great Barrier Reef",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Great Barrier Reef",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "coral skeleton"
+      ],
+      "questionPrompt": "10. When corals lose their algae, they appear white because their {{10}} becomes visible.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. Bleaching is therefore a sign of severe stress rather than immediate death. A coral may regain algae if temperatures fall soon enough, but recovery consumes energy and repeated events leave less time to rebuild tissue and reproduce. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.",
+      "sourceExcerptSha256": "b1bb990f127d5c567228ec686b6355501b3b91e24f54ec11ed1fd3c4c38cf2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "coral skeleton",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "coral skeleton",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "algal blooms"
+      ],
+      "questionPrompt": "11. Agricultural runoff promotes {{11}} that cover reefs and block sunlight.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Local stressors add further pressure. Agricultural runoff introduces nutrients into coastal waters, stimulating algal blooms that smother reefs and block sunlight. Overfishing removes herbivorous fish such as parrotfish and surgeonfish, which normally keep algae in check. Coastal development disrupts sediment patterns and can physically damage reef structures. The interaction among pressures matters: a reef weakened by bleaching may be less able to compete with algae or tolerate sediment, while the loss of grazing fish can prevent young corals from reclaiming open surfaces. Reducing a local stressor cannot stop marine heat waves, but it can improve the condition in which corals meet them. In many regions, these local threats operate in combination with climate stressors, creating a \"death by a thousand cuts\" dynamic from which reefs have little opportunity to recover.",
+      "sourceExcerptSha256": "3ae6f33b54a7fee20ec7d5c191988c481d0f2c202de72e6dc2c6fabace99b486",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "algal blooms",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "algal blooms",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "barrier"
+      ],
+      "questionPrompt": "12. Coral reefs protect coastlines from erosion by acting as a physical {{12}} that absorbs wave energy.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "The economic stakes are enormous. Coral reefs generate an estimated US$375 billion per year in goods and services, including fisheries, tourism, and coastal protection. The physical barrier they create absorbs wave energy and protects shorelines from erosion and storm damage—a service valued at hundreds of billions of dollars annually for low-lying coastal nations and islands. In countries like Indonesia, the Philippines, and the Maldives, reef-based tourism and fishing underpin the livelihoods of millions of people, making reef degradation not merely an ecological problem but a development crisis.",
+      "sourceExcerptSha256": "1321879e0b42179fa26231d1d72405214c332c67fd2e56814f096b01af9a167d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "barrier",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "barrier",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "heat-resistant"
+      ],
+      "questionPrompt": "13. Scientists are developing {{13}} coral strains that may survive higher ocean temperatures.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Decline of Coral Reefs",
+      "sourceExcerpt": "Responses to reef decline range from local interventions to global policy ambitions. Coral gardening—growing fragments of resilient coral on underwater nurseries and transplanting them to degraded reefs—has shown promise in the Caribbean and parts of the Indo-Pacific, though the scale of the work required is vast. Scientists are investigating heat-resistant coral strains, produced through selective breeding or assisted evolution, that may be able to survive warmer waters. At the policy level, the establishment of marine protected areas reduces local stressors and gives reefs more capacity to recover from bleaching events. Ultimately, however, conservationists argue that without aggressive action to limit greenhouse gas emissions, all other interventions risk being overwhelmed by continued warming.",
+      "sourceExcerptSha256": "0623589f2b1f284bc2cb40090120d41a5678bbf4738e4730daa1221c1cb896eb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "heat-resistant",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "heat-resistant",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A description of changes made to the rules of chess during the Renaissance period",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "C. European chess diverged from shatranj in the late fifteenth century, during a period that coincided roughly with the height of the Renaissance. The most significant changes involved the newly empowered queen—known in shatranj as the counsellor or firz, a weak piece restricted to diagonal moves—who became the most powerful piece on the board, capable of moving any number of squares in any direction. The bishop received long-range diagonal movement, and the pawn acquired the option of moving two squares on its first move, along with the option of capturing en passant. These changes dramatically increased the pace and tactical richness of the game, making the prior, slower version obsolete almost overnight. Regional customs did not disappear at once, so players also needed agreement about exceptional moves and the conditions for a draw. Printed rule books and wider competition gradually promoted a common version that opponents from different places could recognise.",
+      "sourceExcerptSha256": "b6e43ef987c736f3f74ff23eb0271c1ec518f7ec5feccb228f0489bcd5b3db0b",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An account of how chess became linked to Cold War political rivalry",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+      "sourceExcerptSha256": "2286ceb4a31d599f39f7ca8ff4a5eb70c790141a3bae576478e8e6da5dcb12be",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An explanation of the origin of the word \"checkmate\"",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "A. Chess is one of the oldest and most widely played strategy games in the world. Its origins lie in the Indian subcontinent, where a game called chaturanga—meaning \"four divisions,\" a reference to the divisions of the Indian military—was played as early as the sixth century CE. Chaturanga featured four types of pieces corresponding to infantry, cavalry, elephants, and chariots, and was played on an eight-by-eight grid. From India, the game spread westward to Persia, where it was transformed into chatrang, later shatranj. The Persian word for the game's most important piece, shah, meaning king, gave rise to the words \"chess\" and \"checkmate\"—the latter derived from shah mat, meaning \"the king is helpless.\"",
+      "sourceExcerptSha256": "ac13e38d2f7d76f2fac1ed464aff45f9a7179a84efc7e7798270229269ca9b51",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A popular revival driven by the pandemic and a television series",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "G. The twenty-first century has seen chess undergo a remarkable popular revival. The COVID-19 pandemic drove millions of people online, and chess became one of the most-watched and played games on the internet. The release of the Netflix series The Queen's Gambit in 2020 introduced the game to an entirely new global audience. Online platforms such as Chess.com reported record membership growth, and live-streamed chess tournaments attracted audiences in the millions. Chess, it seems, is as resilient and adaptable as the game itself demands its players to be.",
+      "sourceExcerptSha256": "48e587213f87d8973dd8abefee12b726efc6cee8e87220ea2e0da7e3d960a057",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A reference to Arabic texts produced about chess strategy",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "B. Arab traders and scholars carried shatranj across the Islamic world following the conquest of Persia in the seventh century. The game proved enormously popular in the caliphate courts, and a significant body of chess literature—including problem collections, treatise on strategy, and biographical accounts of great players—was produced in Arabic during the eighth and ninth centuries. The caliph Harun al-Rashid, famed for his patronage of arts and sciences, was reportedly a devoted player. When chess reached Moorish Spain and Sicily, it entered Europe, where it would undergo a transformation that produced the game we recognise today.",
+      "sourceExcerptSha256": "ba18fdfdfe15feaaac9485605bda8da77c6caea4d6965c59c078e094519aceb1",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Information about a chess player who changed how the game was theoretically understood",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "D. The eighteenth and nineteenth centuries saw chess flourish as a competitive pursuit. The first formal World Chess Championship was the match between Wilhelm Steinitz and Johannes Zukertort in 1886, which Steinitz won, becoming the game's first recognised world champion. International competition required agreed match conditions, time controls, and ways of recording moves so that games could be studied afterwards. Newspapers and specialist publications helped turn leading players into public figures whose methods could influence opponents they never met. Steinitz also developed what became known as positional chess—a style emphasising long-term structural advantages, pawn formations, and the control of open files, rather than the swashbuckling tactical play that had dominated earlier European chess. His ideas, initially controversial, proved enormously influential on subsequent generations of players.",
+      "sourceExcerptSha256": "069a09dcc0d1f63ca1672c37ab781dedc0d66eac81cc7f71b055d19f711a0966",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "An account of a computer defeating a human world chess champion",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match—a result that shocked the chess world and the public alike. Today's chess engines, running on ordinary laptop computers, play at a level far beyond the reach of any human player. They can evaluate possible continuations quickly, but their numerical verdict does not automatically explain a position in terms a learner understands. Human coaches still decide which alternatives illustrate a useful principle and how to turn an error into instruction. Paradoxically, rather than diminishing the human game, computer analysis has enriched it: players and coaches use engines to prepare openings, analyse mistakes, and explore positions of extraordinary complexity that would have been inaccessible to earlier generations.",
+      "sourceExcerptSha256": "506a0ad0df943048caf55541ee51f8597f76655e0933e11e0112b8f7029d2faa",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chaturanga"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "A. Chess is one of the oldest and most widely played strategy games in the world. Its origins lie in the Indian subcontinent, where a game called chaturanga—meaning \"four divisions,\" a reference to the divisions of the Indian military—was played as early as the sixth century CE. Chaturanga featured four types of pieces corresponding to infantry, cavalry, elephants, and chariots, and was played on an eight-by-eight grid. From India, the game spread westward to Persia, where it was transformed into chatrang, later shatranj. The Persian word for the game's most important piece, shah, meaning king, gave rise to the words \"chess\" and \"checkmate\"—the latter derived from shah mat, meaning \"the king is helpless.\"",
+      "sourceExcerptSha256": "ac13e38d2f7d76f2fac1ed464aff45f9a7179a84efc7e7798270229269ca9b51",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chaturanga",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chaturanga",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "long-range diagonal"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "C. European chess diverged from shatranj in the late fifteenth century, during a period that coincided roughly with the height of the Renaissance. The most significant changes involved the newly empowered queen—known in shatranj as the counsellor or firz, a weak piece restricted to diagonal moves—who became the most powerful piece on the board, capable of moving any number of squares in any direction. The bishop received long-range diagonal movement, and the pawn acquired the option of moving two squares on its first move, along with the option of capturing en passant. These changes dramatically increased the pace and tactical richness of the game, making the prior, slower version obsolete almost overnight. Regional customs did not disappear at once, so players also needed agreement about exceptional moves and the conditions for a draw. Printed rule books and wider competition gradually promoted a common version that opponents from different places could recognise.",
+      "sourceExcerptSha256": "b6e43ef987c736f3f74ff23eb0271c1ec518f7ec5feccb228f0489bcd5b3db0b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "long-range diagonal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "long-range diagonal",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Wilhelm Steinitz",
+        "Steinitz"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "D. The eighteenth and nineteenth centuries saw chess flourish as a competitive pursuit. The first formal World Chess Championship was the match between Wilhelm Steinitz and Johannes Zukertort in 1886, which Steinitz won, becoming the game's first recognised world champion. International competition required agreed match conditions, time controls, and ways of recording moves so that games could be studied afterwards. Newspapers and specialist publications helped turn leading players into public figures whose methods could influence opponents they never met. Steinitz also developed what became known as positional chess—a style emphasising long-term structural advantages, pawn formations, and the control of open files, rather than the swashbuckling tactical play that had dominated earlier European chess. His ideas, initially controversial, proved enormously influential on subsequent generations of players.",
+      "sourceExcerptSha256": "069a09dcc0d1f63ca1672c37ab781dedc0d66eac81cc7f71b055d19f711a0966",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Wilhelm Steinitz",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Wilhelm Steinitz",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "Steinitz",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "world champions"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+      "sourceExcerptSha256": "2286ceb4a31d599f39f7ca8ff4a5eb70c790141a3bae576478e8e6da5dcb12be",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "world champions",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "world champions",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Deep Blue"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match—a result that shocked the chess world and the public alike. Today's chess engines, running on ordinary laptop computers, play at a level far beyond the reach of any human player. They can evaluate possible continuations quickly, but their numerical verdict does not automatically explain a position in terms a learner understands. Human coaches still decide which alternatives illustrate a useful principle and how to turn an error into instruction. Paradoxically, rather than diminishing the human game, computer analysis has enriched it: players and coaches use engines to prepare openings, analyse mistakes, and explore positions of extraordinary complexity that would have been inaccessible to earlier generations.",
+      "sourceExcerptSha256": "506a0ad0df943048caf55541ee51f8597f76655e0933e11e0112b8f7029d2faa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Deep Blue",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Deep Blue",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "series"
+      ],
+      "questionPrompt": "Chess originated in India as a game called {{21}}, which represented the four divisions of the army. From India, it spread to Persia and was later brought to Europe by Arab traders. In the fifteenth century, the queen became the most powerful piece and the bishop gained {{22}} movement, making the game faster. The first formal world championship took place in 1886 and was won by {{23}}. The Soviet Union promoted chess as a prestige sport, producing many {{24}} who dominated the game throughout the twentieth century. In 1997, IBM's chess computer {{25}} defeated world champion Garry Kasparov. More recently, the release of a popular Netflix {{26}} introduced chess to a new generation of fans.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: A History of Chess",
+      "sourceExcerpt": "E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions beginning with Mikhail Botvinnik and continuing through Tigran Petrosian, Boris Spassky, and Anatoly Karpov. Training became systematic: promising players studied established openings, analysed completed games in groups, and received institutional support for sustained competition. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.",
+      "sourceExcerptSha256": "2286ceb4a31d599f39f7ca8ff4a5eb70c790141a3bae576478e8e6da5dcb12be",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "series",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "series",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main argument made by Jean Twenge regarding social media?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "The popular concern is grounded in striking statistics. In the United States and the United Kingdom, rates of depression, anxiety, and self-harm among adolescents—particularly girls—began rising sharply around 2012, a period that coincides with the widespread adoption of smartphones and social media platforms. The psychologist Jean Twenge, one of the most prominent voices in this debate, argues that this correlation reflects causation: that social media use has fundamentally altered the social landscape of adolescence in harmful ways. Platforms built around social comparison, she argues, expose young users to a constant stream of curated, idealised images of others' lives, driving feelings of inadequacy, envy, and low self-worth. The displacement of face-to-face social interaction by screen time, she further argues, deprives young people of the emotionally nourishing forms of connection that genuine relationships provide.",
+      "sourceExcerptSha256": "e9a230b3bdabbc837a9628422e117bed5ecac07915bec3a614baa1b50f091b8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Exposure to idealised images on social platforms drives feelings of inadequacy in young people."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Social media is primarily responsible for increasing smartphone addiction.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Social media platforms deliberately cause mental illness in young users.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The decline in face-to-face interaction began well before smartphones were introduced.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did the 2019 meta-analysis published in Psychological Science find about social media and wellbeing?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+      "sourceExcerptSha256": "3dad9df09b4ed601b4937ab3168eb65ed659ccb217e12c4e206d201506213d92",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The association between social media use and poor wellbeing was real but very small."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "There was no statistically measurable association between social media and wellbeing.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Social media was confirmed as the primary cause of adolescent mental health problems.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Girls showed a much stronger negative association than boys.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "According to the passage, which group appears to experience positive effects from social media use?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+      "sourceExcerptSha256": "0e0af10d4a1770371158f7c2844aaf51800c74ac73104adf73c11dbd5c30ec37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Young people who are socially isolated offline, such as LGBTQ+ youth or those with chronic illness."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Young people who use social media to passively scroll through news feeds.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Those who live in large cities with many opportunities for face-to-face interaction.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Adolescents who use social media for less than one hour per day.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about the effect of removing \"like counts\" from posts?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+      "sourceExcerptSha256": "7e386b20efe0bbba280e7eccf72219f35ed84fa4fc3319298add044a913e6756",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Research suggests it may reduce the intensity of social comparison behaviour."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It has been shown to completely eliminate social comparison on platforms.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It has been banned in several countries as an insufficient measure.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Platform companies introduced it voluntarily after being legally required to do so.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: Jean Twenge argues that the rise in adolescent mental health problems is directly caused by social media.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+      "sourceExcerptSha256": "3dad9df09b4ed601b4937ab3168eb65ed659ccb217e12c4e206d201506213d92",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: The 2019 meta-analysis studied data from more than 500,000 adolescents.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. A small average association can coexist with larger effects for particular individuals, but it cannot show by itself which users are harmed or whether the platform caused the difference. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.",
+      "sourceExcerptSha256": "3dad9df09b4ed601b4937ab3168eb65ed659ccb217e12c4e206d201506213d92",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: People who are already depressed may use social media more heavily than others.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+      "sourceExcerptSha256": "0e0af10d4a1770371158f7c2844aaf51800c74ac73104adf73c11dbd5c30ec37",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "34. {{34}}: Active engagement on social media, such as messaging, is more harmful than passive scrolling.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+      "sourceExcerptSha256": "a4773191f7c82391eaddf925cfc6942ff8f82a89da31615518ed108abff062e5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "35. {{35}}: Australia enacted a national social-media minimum-age framework in 2024.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+      "sourceExcerptSha256": "7e386b20efe0bbba280e7eccf72219f35ed84fa4fc3319298add044a913e6756",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "36. {{36}}: Social media companies have sufficient financial incentive to prioritise user wellbeing over engagement.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Regulators and platform companies are under increasing pressure to respond. Australia enacted a national social-media minimum-age framework in 2024, while Norway has continued developing a separate age-limit bill. Such policies also require decisions about age assurance, privacy, exemptions, and responsibility for enforcement. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.",
+      "sourceExcerptSha256": "7e386b20efe0bbba280e7eccf72219f35ed84fa4fc3319298add044a913e6756",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "self-harm"
+      ],
+      "questionPrompt": "37. The concern about social media and mental health is partly based on the sharp increase in rates of depression, anxiety, and {{37}} among adolescents from around 2012.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "The popular concern is grounded in striking statistics. In the United States and the United Kingdom, rates of depression, anxiety, and self-harm among adolescents—particularly girls—began rising sharply around 2012, a period that coincides with the widespread adoption of smartphones and social media platforms. The psychologist Jean Twenge, one of the most prominent voices in this debate, argues that this correlation reflects causation: that social media use has fundamentally altered the social landscape of adolescence in harmful ways. Platforms built around social comparison, she argues, expose young users to a constant stream of curated, idealised images of others' lives, driving feelings of inadequacy, envy, and low self-worth. The displacement of face-to-face social interaction by screen time, she further argues, deprives young people of the emotionally nourishing forms of connection that genuine relationships provide.",
+      "sourceExcerptSha256": "e9a230b3bdabbc837a9628422e117bed5ecac07915bec3a614baa1b50f091b8d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "self-harm",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "self-harm",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bidirectional"
+      ],
+      "questionPrompt": "38. Some researchers argue that the relationship between social media and mental health is {{38}}, meaning each can influence the other.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.",
+      "sourceExcerptSha256": "0e0af10d4a1770371158f7c2844aaf51800c74ac73104adf73c11dbd5c30ec37",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bidirectional",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bidirectional",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "passive"
+      ],
+      "questionPrompt": "39. {{39}} consumption of social media, such as passively viewing others' posts, is more associated with negative outcomes than active use.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+      "sourceExcerptSha256": "a4773191f7c82391eaddf925cfc6942ff8f82a89da31615518ed108abff062e5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Passive",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "passive",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "quality"
+      ],
+      "questionPrompt": "40. Researchers emphasise that the key variable is not the time spent on social media but the {{40}} of the social experience.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Social Media and Mental Health",
+      "sourceExcerpt": "The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. The same duration can therefore contain very different experiences, and a single measure of daily screen time may combine supportive conversation with upsetting comparison. Individual vulnerability, the content encountered, and events occurring offline can further change the result. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.",
+      "sourceExcerptSha256": "a4773191f7c82391eaddf925cfc6942ff8f82a89da31615518ed108abff062e5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "quality",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "quality",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [],
+  "reviewSha256": "d6936a667d4886898ad944ba291c0e8f4de243fe77c9748a3a80aaf6e4edf7c7"
+}

@@ -99,10 +99,10 @@ Registration fee: £{{7}}`,
           part: 1,
           qRange: [8, 10],
           groupLabel: 'Complete the table below.\nWrite ONE WORD ONLY for each answer.',
-          headers: ['Membership type', 'Books allowed', 'Extra benefit'],
+          headers: ['Membership type', 'Books allowed', 'Digital service'],
           rows: [
-            ['Standard', '8 books / 3 weeks', { num: 8, answers: ['online', 'website'], maxWords: 1 }],
-            ['Premium', { num: 9, answers: ['12', 'twelve'], maxWords: 1 }, { num: 10, answers: ['archive', 'digital'], maxWords: 1 }],
+            ['Standard', '8 books / 3 weeks', { num: 8, answers: ['website'], maxWords: 1 }],
+            ['Premium', { num: 9, answers: ['12', 'twelve'], maxWords: 1 }, { num: 10, answers: ['archive'], maxWords: 1 }],
           ],
         },
       ],
@@ -135,11 +135,11 @@ If you have questions, our helpline is open Monday to Friday, eight to six. The 
           id: 'l2-multi',
           part: 2,
           qRange: [11, 12],
-          text: 'Which TWO items can now be placed in the dry recycling bin from next month?',
+          text: 'Which TWO examples of newly accepted plastic film does the speaker mention?',
           options: [
             { letter: 'A', text: 'glass bottles' },
             { letter: 'B', text: 'food waste' },
-            { letter: 'C', text: 'plastic film' },
+            { letter: 'C', text: 'wrapping on ready meals' },
             { letter: 'D', text: 'carrier bags previously recycled at supermarkets' },
             { letter: 'E', text: 'cardboard packaging' },
           ],
@@ -303,9 +303,9 @@ Key challenges
           blanks: [
             { num: 26, answers: ['Rooftop', 'rooftop'], maxWords: 1 },
             { num: 27, answers: ['layers'], maxWords: 1 },
-            { num: 28, answers: ['allotments', 'gardens'], maxWords: 1 },
+            { num: 28, answers: ['allotments'], maxWords: 1 },
             { num: 29, answers: ['Land', 'land'], maxWords: 1 },
-            { num: 30, answers: ['expertise', 'knowledge', 'skills'], maxWords: 1 },
+            { num: 30, answers: ['expertise'], maxWords: 1 },
           ],
         },
       ],
@@ -362,7 +362,7 @@ The Alphabet
             { num: 31, answers: ['Mesopotamia'], maxWords: 1 },
             { num: 32, answers: ['pictographic'], maxWords: 1 },
             { num: 33, answers: ['stylus'], maxWords: 1 },
-            { num: 34, answers: ['administrative', 'administration'], maxWords: 1 },
+            { num: 34, answers: ['administrative'], maxWords: 1 },
             { num: 35, answers: ['Egypt'], maxWords: 1 },
             { num: 36, answers: ['sound'], maxWords: 1 },
             { num: 37, answers: ['religious'], maxWords: 1 },
@@ -410,7 +410,7 @@ China maintained a {{3}} on silk production for centuries, protecting the secret
 The Silk Road's decline began after the collapse of the {{5}} Empire and the rise of sea trade routes.`,
           blanks: [
             { num: 1, answers: ['geographer'], maxWords: 1 },
-            { num: 2, answers: ['spices', 'porcelain', 'glass'], maxWords: 1 },
+            { num: 2, answers: ['spices', 'glass'], maxWords: 1 },
             { num: 3, answers: ['monopoly'], maxWords: 1 },
             { num: 4, answers: ['camel'], maxWords: 1 },
             { num: 5, answers: ['Mongol'], maxWords: 1 },
@@ -520,7 +520,7 @@ Cleaning up plastic already in the ocean is far more difficult. Beach and harbou
           part: 6,
           text: 'Most ocean plastic comes from land sources.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'mcq',
@@ -544,7 +544,7 @@ Cleaning up plastic already in the ocean is far more difficult. Beach and harbou
           part: 6,
           text: 'Extended producer responsibility schemes have been trialled in some countries.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'formgroup',
@@ -554,7 +554,7 @@ Cleaning up plastic already in the ocean is far more difficult. Beach and harbou
           groupLabel: 'Complete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.',
           title: 'Ocean Plastic — Key Facts',
           template: `• The OECD estimated that {{19}} million tonnes of plastic flowed into the ocean in 2019.
-• Plastic accumulates in large ocean {{20}} called gyres.
+• Ocean {{20}} can move plastic thousands of kilometres.
 • Plastic is broken down by ultraviolet light through {{21}}.
 • Fragments smaller than 5mm are called {{22}}.
 • Microplastics can disrupt {{23}} function in living organisms.`,
@@ -631,9 +631,9 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
             { num: 27, answers: ['deep'], maxWords: 1 },
             { num: 28, answers: ['imaging', 'images'], maxWords: 1 },
             { num: 29, answers: ['diabetic retinopathy', 'retinopathy'], maxWords: 2 },
-            { num: 30, answers: ['distribution shift', 'shift'], maxWords: 2 },
+            { num: 30, answers: ['distribution shift'], maxWords: 2 },
             { num: 31, answers: ['minorities'], maxWords: 1 },
-            { num: 32, answers: ['responsibility', 'accountability'], maxWords: 1 },
+            { num: 32, answers: ['responsibility'], maxWords: 1 },
             { num: 33, answers: ['therapeutic'], maxWords: 1 },
           ],
         },
@@ -685,7 +685,7 @@ Many believe that AI could damage the {{33}} relationship between doctor and pat
           groupLabel: 'Match each concern about medical AI with the correct group A–D.\nWrite the correct letter, A–D, next to questions 39–40.',
           items: [
             { num: 39, stem: 'They worry that relying on AI may reduce the human element of medicine.', answer: 'B' },
-            { num: 40, stem: 'They are working to establish governance frameworks for safe AI use.', answer: 'D' },
+            { num: 40, stem: 'They assess medical products for a specified intended use.', answer: 'C' },
           ],
           endings: [
             { letter: 'A', text: 'software developers' },

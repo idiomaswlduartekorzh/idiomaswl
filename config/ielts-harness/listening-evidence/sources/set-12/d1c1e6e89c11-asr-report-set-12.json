@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:57:48.285Z",
+  "set": 12,
+  "source": "src/data/mocks/ielts-set-12.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-12.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-12/ielts-listening-set-12.mp3",
+  "audioSha256": "a24dfb0f77be8a7addebc299c3fc955db062388401091c52141598ef96edc70a",
+  "transcriptSha256": "6f18bf8a955823b1bbd07b1180379cfefede1dddfa7844702e482884a8b955cb",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "eaf0cb9bc4e2de98c7d5f64df927716fa87610f4aed59f5a2786586956604797",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-12/whisper-set-12.json",
+  "asrSourceSha256": "64fa0594831a2f8080e228b2dcc558656697d32033ecf4be469be80fed9b546d",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3390,
+  "recognizedWords": 3349,
+  "editDistance": 181,
+  "wordErrorRate": 0.0534,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Ashgrove",
+        "ashgrove"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 80.26,
+      "endSeconds": 85.46,
+      "audiblePhrase": "Eight Ashgrove Avenue. That's A-S-H-G-R-O-V-E."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "station"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 132.12,
+      "endSeconds": 138.8,
+      "audiblePhrase": "The Riverside one please. Oh sorry. No, I meant the station car park. That's the one nearest my flat."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "day"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 230.88,
+      "endSeconds": 234.52,
+      "audiblePhrase": "Just so you know a warden checks the permits every day so you'll need to display it clearly."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "windscreen"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 236.98,
+      "endSeconds": 239,
+      "audiblePhrase": "On the windscreen. Got it."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "tram"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 265.18,
+      "endSeconds": 270.16,
+      "audiblePhrase": "Now the travel card, it's very useful. You can use it on the buses and the tram right across the city."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "photo",
+        "photograph"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 274.16,
+      "endSeconds": 278.72,
+      "audiblePhrase": "When you come in, just bring a recent photo of yourself and we'll print the card while you wait."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "15",
+        "£15"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 309.6,
+      "endSeconds": 314.66,
+      "audiblePhrase": "We have two options. The weekly card is £15 and it includes a free map of the network."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "map"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 309.6,
+      "endSeconds": 314.66,
+      "audiblePhrase": "We have two options. The weekly card is £15 and it includes a free map of the network."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "58",
+        "£58"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 314.66,
+      "endSeconds": 318.32,
+      "audiblePhrase": "The monthly card lasts 30 days and costs £58."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "discounts",
+        "discount"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 319.04,
+      "endSeconds": 323.1,
+      "audiblePhrase": "With that one you also get discounts at a number of shops and cafes in the centre."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "car park",
+        "car-park"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 568.64,
+      "endSeconds": 573.42,
+      "audiblePhrase": "All of our guided walks set off from the car park just behind you so please gather there."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "11",
+        "11 am",
+        "eleven"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 607.68,
+      "endSeconds": 611.52,
+      "audiblePhrase": "That begins at 11 over in the top field and it lasts about half an hour."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "lambs",
+        "lamb"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 640.34,
+      "endSeconds": 644.4,
+      "audiblePhrase": "After that children are welcome to help feed the lambs in the small animal barn."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "cheese"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 708.14,
+      "endSeconds": 713.08,
+      "audiblePhrase": "Through the window you can watch our staff making cheese in the traditional way and there are samples to try."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "strawberries",
+        "strawberry"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 746.06,
+      "endSeconds": 751.04,
+      "audiblePhrase": "If you'd like to take something home head down to the lower field where you can pick your own strawberries."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "tent",
+        "food tent"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 753.26,
+      "endSeconds": 757.72,
+      "audiblePhrase": "When you get hungry hot food and drinks are served all day in the food tent near the main gate."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "dogs",
+        "dog"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 759.68,
+      "endSeconds": 764.02,
+      "audiblePhrase": "We do have animals roaming freely so please keep your dogs on a lead at all times."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "5 pm",
+        "5",
+        "5pm",
+        "five"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 766.9,
+      "endSeconds": 771.08,
+      "audiblePhrase": "The farm closes at 5pm today and the car park closes shortly after."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "plastic"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1210.18,
+      "endSeconds": 1213.2,
+      "audiblePhrase": "I'd switch to plastic. It's lighter and your battery will last longer."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "code",
+        "programming"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1245.52,
+      "endSeconds": 1247.94,
+      "audiblePhrase": "Then finish the code so the robot can turn corners."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "table"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1248.62,
+      "endSeconds": 1251.58,
+      "audiblePhrase": "After that, run a full test and record the results in a table."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "workshop"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1252.18,
+      "endSeconds": 1253.6,
+      "audiblePhrase": "Also book the workshop for Friday."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "budget"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1255.68,
+      "endSeconds": 1258.56,
+      "audiblePhrase": "And email me your budget because I think you can still claim some funding."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "retina"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1418.22,
+      "endSeconds": 1423.56,
+      "audiblePhrase": "When light enters, it is focused onto a thin layer of light sensitive tissue at the back of the eye called the retina."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "cones",
+        "cone"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1473.14,
+      "endSeconds": 1477.7,
+      "audiblePhrase": "The second kind, the cones, are responsible for color vision, though they need bright light to work well."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "three",
+        "3"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1514.7,
+      "endSeconds": 1516.92,
+      "audiblePhrase": "Now in the human eye, there are three different types of cone."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "wavelength"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1519.3,
+      "endSeconds": 1523.14,
+      "audiblePhrase": "and because of this, each responds most strongly to a particular wavelength of light."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "blue"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1524.2,
+      "endSeconds": 1528.84,
+      "audiblePhrase": "Now, speaking, one type is most sensitive to red, another to green, and the third to blue."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "brain"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1534.3,
+      "endSeconds": 1538.64,
+      "audiblePhrase": "and that comparison is carried out by the brain, which interprets the mixture as a single color."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "inherited"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1636.68,
+      "endSeconds": 1640.76,
+      "audiblePhrase": "In most cases, the condition is inherited, passed down from a person's parents through their genes."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "men"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1641.5,
+      "endSeconds": 1643.8,
+      "audiblePhrase": "Interestingly, it is far more common in men than in women"
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "green"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1647.38,
+      "endSeconds": 1650.44,
+      "audiblePhrase": "The most frequent form is an inability to distinguish red from green,"
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "ultraviolet"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1694.32,
+      "endSeconds": 1697.56,
+      "audiblePhrase": "Birds, for example, have an extra type of cone and can see ultraviolet light,"
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

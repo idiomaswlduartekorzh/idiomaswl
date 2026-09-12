@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "reviewedAt": "2026-09-12",
+  "reviewer": {
+    "kind": "ux-agent",
+    "id": "codex-ielts-runtime-review"
+  },
+  "browserReview": {
+    "status": "PASS",
+    "route": "/examenes/ielts/practica/set-4",
+    "browser": "Chrome",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "checks": {
+      "writingChartVisibleAndLegible": true,
+      "speakingPartsAndRecordingLimitsVisible": true,
+      "draftRestoredAfterReload": true,
+      "timerContinuedAfterReload": true,
+      "leadCaptureSummaryVisibleBeforeSend": true,
+      "consoleWarningsOrErrors": 0
+    }
+  },
+  "automatedContractTest": "tests/ielts-mock-experience.test.mjs",
+  "sets": [
+    {
+      "set": 1,
+      "mockId": "set-1",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-1",
+      "contentSha256": "e4918e435d4e51098ae3f9c0ab8687d5eb1ecf15706cd0e6ffc944faaed8a502",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 2,
+      "mockId": "set-2",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-2",
+      "contentSha256": "656bbe58ff9b39ebfe49c31d4dfd122ed42fbc6338f0c5ec6e49f0852373303d",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 3,
+      "mockId": "set-3",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-3",
+      "contentSha256": "a84f7f11c4ca015b717be58bc7e249ae9828ffe94a9053cb0c3030d714118d6f",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 4,
+      "mockId": "set-4",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-4",
+      "contentSha256": "f88896e6c6c9c8030d50da2979a37992f0d3b51a89e7f83642fd7a1f1cf5a805",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 5,
+      "mockId": "set-5",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-5",
+      "contentSha256": "63ff143238f99345d5648b8d39cb5ecc4f12ad66ee88ecdde975e3baa06f7540",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 6,
+      "mockId": "set-6",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-6",
+      "contentSha256": "2eb5642a290522f626c624bd25b93330538838c13b72229fffda63f9fda51cb7",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 7,
+      "mockId": "set-7",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-7",
+      "contentSha256": "288e3d997504c4645d5ad832c24714a055e11755ce117a366c78a9615ba7cb83",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 8,
+      "mockId": "set-8",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-8",
+      "contentSha256": "3d3e1a1f7df79dcd5c2db8bd6f5c30ea0c5dd08d972ade75469f942463f48c3d",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 9,
+      "mockId": "set-9",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-9",
+      "contentSha256": "34cbf1d45c0d17f9716ce3629456356ce679cf36c8dbb509e4257421328684a0",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 10,
+      "mockId": "set-10",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-10",
+      "contentSha256": "e0eeb3bee7f3f3acbc442219ef3d8c6bfbab4ef7808cfda5888f76f96b7730b2",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 11,
+      "mockId": "set-11",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-11",
+      "contentSha256": "53fc7d54678a5cea9afe85aa7fa5b1675f8ce9a3eb49bad52af059ebcdc9c7a1",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 12,
+      "mockId": "set-12",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-12",
+      "contentSha256": "ce501ed03f6f4a5cb6b9e549054b16b3f14ff3732f269a1ff053476d8cab12eb",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 13,
+      "mockId": "set-13",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-13",
+      "contentSha256": "1bdd53f8b2966a02349b319c63bb6d6089962e7bed1f95d800cabd2d5b71ec6a",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 14,
+      "mockId": "set-14",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-14",
+      "contentSha256": "aaf59f3bbec1b4d1242622f661faa646096c6b06ba49f0c3daad3cbce05272c3",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 15,
+      "mockId": "set-15",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-15",
+      "contentSha256": "f6c514d3d6785a73abd20f8cfa46b55e87d2fcc9dcd9c89cbcc936015575ff5b",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 16,
+      "mockId": "set-16",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-16",
+      "contentSha256": "83308e1e66baf2a3c076b323e1f625d27c8c6f97724383ad7b51eaffedf0c23c",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 17,
+      "mockId": "set-17",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-17",
+      "contentSha256": "15f4e15f6b1bc12b801ef8021fcf21970432ec6df6e12e9f41566271c7abe985",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 18,
+      "mockId": "set-18",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-18",
+      "contentSha256": "84352fd1821b6a58f5fd2b4e34435cc9c0dcdaf936ced4e132c10b35e0c0741f",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 19,
+      "mockId": "set-19",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-19",
+      "contentSha256": "d86404e21433297975d235bc0b5b7121b2b076b82a52f678f19d39024e721c36",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    },
+    {
+      "set": 20,
+      "mockId": "set-20",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-20",
+      "contentSha256": "9932a6358d5754cd96de466f0f1a22fe17c69cc028c34cd5c16d45acf6b4fd30",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "writingRendersTwoSeparateTasks": true,
+        "speakingRendersThreeOrderedParts": true,
+        "leadCapturePrecedesSubmission": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      }
+    }
+  ],
+  "reportSha256": "33393bf6aeed93200c5b6a631eb4c864cb690ecfa8cb2bf40ddf3be00f144bbe"
+}

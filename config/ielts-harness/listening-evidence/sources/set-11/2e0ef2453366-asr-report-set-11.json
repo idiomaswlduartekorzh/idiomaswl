@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:58:38.685Z",
+  "set": 11,
+  "source": "src/data/mocks/ielts-set-11.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-11.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/ielts-listening-set-11.mp3",
+  "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+  "transcriptSha256": "a7e2cb99c0fdacf1bc518f93614acc3167df8198332c1e7d88b3b6c036d4b4ae",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "283683641eb2406b9154f07682a8d0e0877f4835909b7e4e4037d486c2db6011",
+  "asrRecognitionVariantsSha256": "7f1a79f2d2006e43349f41def6a10c08b6cc8ff8b1e84a4ff802aab36edb95d9",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-11/whisper-set-11.json",
+  "asrSourceSha256": "3da13f1252187251d50c694d22fe685b74ed67af5b7104c14d3f0712fd7d3397",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 3293,
+  "recognizedWords": 3078,
+  "editDistance": 289,
+  "wordErrorRate": 0.0878,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Redhill",
+        "redhill"
+      ],
+      "asrRecognitionVariants": [
+        "Red Hill"
+      ],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "magazine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 126.4,
+      "endSeconds": 129,
+      "audiblePhrase": "Oh, no. Sorry. It was actually a magazine."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "light"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 218.08,
+      "endSeconds": 219.8,
+      "audiblePhrase": "You'll learn how to control the light,"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "morning"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 225.66,
+      "endSeconds": 227.74,
+      "audiblePhrase": "The sessions are held on Saturday morning."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "lake"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 268.28,
+      "endSeconds": 271.62,
+      "audiblePhrase": "For that one, the group travels out to a nearby lake"
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "tripod"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 273.74,
+      "endSeconds": 277.44,
+      "audiblePhrase": "One thing to note, each student must bring their own tripod"
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 326.7,
+      "endSeconds": 330.68,
+      "audiblePhrase": "It costs £120 and that price includes lunch."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "lunch"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 326.7,
+      "endSeconds": 330.68,
+      "audiblePhrase": "It costs £120 and that price includes lunch."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 332.6,
+      "endSeconds": 336.32,
+      "audiblePhrase": "The landscape workshop runs over two sessions of five hours each."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "transport"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 336.92,
+      "endSeconds": 341.72,
+      "audiblePhrase": "That one is £150 and the price includes transport to the lake."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "900"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 584.5,
+      "endSeconds": 588.48,
+      "audiblePhrase": "The region is a medium sized venue and can seat 900 people."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "pine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 592.76,
+      "endSeconds": 593.76,
+      "audiblePhrase": "It's made of pine."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "scenery"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 648,
+      "endSeconds": 655.2,
+      "audiblePhrase": "Using a system of ropes and pulleys, the crew can raise and lower the scenery quickly between scenes,"
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "relax",
+        "wait"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 750,
+      "endSeconds": 754.46,
+      "audiblePhrase": "It's simply the comfortable space where the actors relax while they wait to go on."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "costumes",
+        "costume"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 757.14,
+      "endSeconds": 765.1,
+      "audiblePhrase": "This is where a small team of skilled staff design and make all the costumes for each production, often by hand."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "safety curtain",
+        "curtain",
+        "iron curtain"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 768.66,
+      "endSeconds": 774.42,
+      "audiblePhrase": "In the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "workshop"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 778.02,
+      "endSeconds": 785.16,
+      "audiblePhrase": "The large room at the back is the workshop, where the carpenters build the set, everything from walls to furniture."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "posters",
+        "poster",
+        "souvenirs"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 825.68,
+      "endSeconds": 831.98,
+      "audiblePhrase": "And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "figures",
+        "data"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1072.36,
+      "endSeconds": 1076.26,
+      "audiblePhrase": "For a topic that moves this fast, you really need more recent data."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "diagram"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1236.62,
+      "endSeconds": 1244.14,
+      "audiblePhrase": "Second, I'd like you to add a diagram showing how much plastic is recycled. A visual really helps the reader."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "referencing",
+        "citations"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1244.14,
+      "endSeconds": 1253.16,
+      "audiblePhrase": "Then check your referencing because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "aloud"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1244.14,
+      "endSeconds": 1253.16,
+      "audiblePhrase": "Then check your referencing because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "email"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1253.96,
+      "endSeconds": 1260.2,
+      "audiblePhrase": "And finally, send me the revised draft by email so I can look at it again before you submit."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "ground"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1403.14,
+      "endSeconds": 1410.38,
+      "audiblePhrase": "Contrary to popular belief, most of an aqueduct's length ran not on those famous arches, but underground, hidden beneath the ground."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "gravity"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1451.04,
+      "endSeconds": 1454.5,
+      "audiblePhrase": "The whole system depended on a single simple force, gravity."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "stagnant"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1465.98,
+      "endSeconds": 1471.94,
+      "audiblePhrase": "If it was too shallow, the water stopped moving and turned stagnant. The required gradient could be remarkably small."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "level"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1507.62,
+      "endSeconds": 1515.04,
+      "audiblePhrase": "To measure these tiny gradients, surveyors used a long wooden instrument filled with water that acted as a level."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "cement"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1595.28,
+      "endSeconds": 1601.36,
+      "audiblePhrase": "The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "fountains",
+        "fountain"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1606.42,
+      "endSeconds": 1614.8,
+      "audiblePhrase": "The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "lime",
+        "limescale"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1652.92,
+      "endSeconds": 1661.96,
+      "audiblePhrase": "A serious problem was the buildup of lime, a hard mineral deposit left by the water, which gradually narrowed the channel and had to be chipped away by hand."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "curator"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1662.36,
+      "endSeconds": 1669.92,
+      "audiblePhrase": "The official placed in overall charge of the entire water supply held the important title of curator, a highly respected public office."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "supply"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1697.26,
+      "endSeconds": 1703.76,
+      "audiblePhrase": "Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "Renaissance"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1710.42,
+      "endSeconds": 1715.4,
+      "audiblePhrase": "It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later."
+    }
+  ],
+  "completionEvidenceFound": 32,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "WER 8.78% exceeds 8.00%",
+    "Accepted completion phrases not found in question order for Q1"
+  ],
+  "releaseAuthorized": false
+}

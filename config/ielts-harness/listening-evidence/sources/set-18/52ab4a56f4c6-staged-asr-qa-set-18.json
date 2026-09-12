@@ -1,0 +1,720 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:13:36.768Z",
+  "set": 18,
+  "status": "PASS",
+  "manifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/ielts-listening-set-18.mp3",
+  "audioSha256": "3ab42a8e1b4e9f157dbaa4bd55a4dc1aa02466ecdaa6a29b2f83f565317e1005",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/asr-report-set-18.json",
+    "reportSha256": "e2746bb630818e7d99731934d4527029d0f24e1a1ef5ee24fce9035d6c80a0a7",
+    "wordErrorRate": 0.4054,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "21/33"
+  },
+  "partReports": [
+    {
+      "part": 1,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/full-part-qa-part-1.wav",
+      "audioSha256": "a4ef76f1e3c3aed32c1de3bda1f65048127501102dce97b13d1de2d0cbd65f4c",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/whisper-full-part-qa-set-18-part-1.json",
+      "asrSha256": "acdddc5b5e7b611145e901219e63e8454a9fc1499cbaf9ca20d03cb8d654e2c8",
+      "segmentIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "status": "PASS",
+      "expectedWords": 804,
+      "recognizedWords": 800,
+      "editDistance": 7,
+      "wordErrorRate": 0.0087,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 1,
+          "responseKey": "l1-form__1",
+          "candidateAcceptedAnswers": [
+            "Chestnut",
+            "chestnut"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 58.52,
+          "endSeconds": 60.04,
+          "audiblePhrase": "I'm at 8 Chestnut Close."
+        },
+        {
+          "question": 2,
+          "responseKey": "l1-form__2",
+          "candidateAcceptedAnswers": [
+            "library"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 121.94,
+          "endSeconds": 124.4,
+          "audiblePhrase": "I saw a poster in the local library actually."
+        },
+        {
+          "question": 3,
+          "responseKey": "l1-form__3",
+          "candidateAcceptedAnswers": [
+            "historical"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 135.44,
+          "endSeconds": 139.7,
+          "audiblePhrase": "I mainly read historical fiction, though I do enjoy the occasional biography."
+        },
+        {
+          "question": 4,
+          "responseKey": "l1-form__4",
+          "candidateAcceptedAnswers": [
+            "Wednesdays",
+            "Wednesday"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 174.96,
+          "endSeconds": 178.94,
+          "audiblePhrase": "I was going to say Thursdays. Actually, no, Wednesdays are better for me."
+        },
+        {
+          "question": 5,
+          "responseKey": "l1-form__5",
+          "candidateAcceptedAnswers": [
+            "novel"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 184.32,
+          "endSeconds": 189.7,
+          "audiblePhrase": "we ask every new member to bring their favorite novel to their first meeting so they can introduce themselves."
+        },
+        {
+          "question": 6,
+          "responseKey": "l1-form__6",
+          "candidateAcceptedAnswers": [
+            "bookshop"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 219.62,
+          "endSeconds": 224.76,
+          "audiblePhrase": "At the moment, we meet in a room above the bookshop on the high street. There's plenty of parking nearby."
+        },
+        {
+          "question": 7,
+          "responseKey": "l1-table__7",
+          "candidateAcceptedAnswers": [
+            "25",
+            "£25"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 230.5,
+          "endSeconds": 238.24,
+          "audiblePhrase": "Standard membership costs 25 pounds a year. That includes two free books a year and a monthly newsletter with reviews and recommendations."
+        },
+        {
+          "question": 8,
+          "responseKey": "l1-table__8",
+          "candidateAcceptedAnswers": [
+            "newsletter"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 230.5,
+          "endSeconds": 238.24,
+          "audiblePhrase": "Standard membership costs 25 pounds a year. That includes two free books a year and a monthly newsletter with reviews and recommendations."
+        },
+        {
+          "question": 9,
+          "responseKey": "l1-table__9",
+          "candidateAcceptedAnswers": [
+            "six",
+            "6"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 274.84,
+          "endSeconds": 283.36,
+          "audiblePhrase": "Premium membership is 45 pounds a year. You get six free books a year instead of two, and premium members can also attend our free writing workshops."
+        },
+        {
+          "question": 10,
+          "responseKey": "l1-table__10",
+          "candidateAcceptedAnswers": [
+            "workshops",
+            "workshop"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 274.84,
+          "endSeconds": 283.36,
+          "audiblePhrase": "Premium membership is 45 pounds a year. You get six free books a year instead of two, and premium members can also attend our free writing workshops."
+        }
+      ],
+      "completionEvidenceFound": 10,
+      "completionEvidenceTotal": 10,
+      "failures": []
+    },
+    {
+      "part": 2,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/full-part-qa-part-2.wav",
+      "audioSha256": "c013d25fe7bc2baf063cf1f2fbeb72717c33d8dec9ae95f777a3d7b098499ae7",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/whisper-full-part-qa-set-18-part-2.json",
+      "asrSha256": "683f3d5c36ce45ba7ed29e5a4b2f6a464a0d835522941765eebd7c1cae5e2f9a",
+      "segmentIndexes": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "status": "PASS",
+      "expectedWords": 765,
+      "recognizedWords": 763,
+      "editDistance": 24,
+      "wordErrorRate": 0.0314,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 13,
+          "responseKey": "l2-form__13",
+          "candidateAcceptedAnswers": [
+            "200"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 108.58,
+          "endSeconds": 112.36,
+          "audiblePhrase": "Blackwater covers around 200 hectares of wetland and forest."
+        },
+        {
+          "question": 14,
+          "responseKey": "l2-form__14",
+          "candidateAcceptedAnswers": [
+            "1987"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 112.36,
+          "endSeconds": 118.46,
+          "audiblePhrase": "It was established in 1987, originally to protect a single rare species of dragonfly,"
+        },
+        {
+          "question": 15,
+          "responseKey": "l2-form__15",
+          "candidateAcceptedAnswers": [
+            "dragonfly"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 112.36,
+          "endSeconds": 118.46,
+          "audiblePhrase": "It was established in 1987, originally to protect a single rare species of dragonfly,"
+        },
+        {
+          "question": 16,
+          "responseKey": "l2-form__16",
+          "candidateAcceptedAnswers": [
+            "hide"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 122.22,
+          "endSeconds": 125.9,
+          "audiblePhrase": "The most popular attraction is our bird hide, which overlooks the main lake."
+        },
+        {
+          "question": 17,
+          "responseKey": "l2-form__17",
+          "candidateAcceptedAnswers": [
+            "geese"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 126.66,
+          "endSeconds": 131.6,
+          "audiblePhrase": "From there in winter you can often see large flocks of geese that migrate here from Scandinavia."
+        },
+        {
+          "question": 18,
+          "responseKey": "l2-form__18",
+          "candidateAcceptedAnswers": [
+            "woodland"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 181.96,
+          "endSeconds": 187.18,
+          "audiblePhrase": "If you follow the Blue Trail, it takes you through the ancient woodland, where some of the oak trees"
+        },
+        {
+          "question": 19,
+          "responseKey": "l2-form__19",
+          "candidateAcceptedAnswers": [
+            "tower"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 189.36,
+          "endSeconds": 194.12,
+          "audiblePhrase": "The Red Trail is longer and leads to the Observation Tower, which gives you a spectacular"
+        },
+        {
+          "question": 20,
+          "responseKey": "l2-form__20",
+          "candidateAcceptedAnswers": [
+            "donations",
+            "donation"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 231.24,
+          "endSeconds": 236.92,
+          "audiblePhrase": "Entry to the reserve is free, but we rely on donations, so please give generously if you can."
+        }
+      ],
+      "completionEvidenceFound": 8,
+      "completionEvidenceTotal": 8,
+      "failures": []
+    },
+    {
+      "part": 3,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/full-part-qa-part-3.wav",
+      "audioSha256": "3f4185bfed7ccef012f02bf2cc28451128d2c1a0a54c3fbcb30e235e5ba0a675",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/whisper-full-part-qa-set-18-part-3.json",
+      "asrSha256": "f3ad8ef7f3b3c225942581d5461ae222471ef583e173138032a4cadfc783831e",
+      "segmentIndexes": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "status": "PASS",
+      "expectedWords": 801,
+      "recognizedWords": 797,
+      "editDistance": 9,
+      "wordErrorRate": 0.0112,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 26,
+          "responseKey": "l3-form__26",
+          "candidateAcceptedAnswers": [
+            "audio"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 222.22,
+          "endSeconds": 227.12,
+          "audiblePhrase": "First, I think you should include some audio so the audience can actually hear what Manx"
+        },
+        {
+          "question": 27,
+          "responseKey": "l3-form__27",
+          "candidateAcceptedAnswers": [
+            "map"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 253.08,
+          "endSeconds": 256.12,
+          "audiblePhrase": "Second, add a map showing where the language is spoken."
+        },
+        {
+          "question": 28,
+          "responseKey": "l3-form__28",
+          "candidateAcceptedAnswers": [
+            "pronunciation"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 256.92,
+          "endSeconds": 261.78,
+          "audiblePhrase": "People find geography helps them remember, and do check your pronunciation of the place names."
+        },
+        {
+          "question": 29,
+          "responseKey": "l3-form__29",
+          "candidateAcceptedAnswers": [
+            "record"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 262.44,
+          "endSeconds": 264.52,
+          "audiblePhrase": "Get a native speaker to record them if you can."
+        },
+        {
+          "question": 30,
+          "responseKey": "l3-form__30",
+          "candidateAcceptedAnswers": [
+            "rehearse",
+            "practise",
+            "practice"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 265.3,
+          "endSeconds": 270.06,
+          "audiblePhrase": "Finally, remember to rehearse the timing at least twice before the actual presentation."
+        }
+      ],
+      "completionEvidenceFound": 5,
+      "completionEvidenceTotal": 5,
+      "failures": []
+    },
+    {
+      "part": 4,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/full-part-qa-part-4.wav",
+      "audioSha256": "235725438ac4b7f5a1d09d7eecc7e2398103c563a1cee5b5fa931a085b62cb66",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-17-18/set-18/whisper-full-part-qa-set-18-part-4.json",
+      "asrSha256": "5b1f24f6d5e83a55581226295d1721907eae4ef4806fef6c9d9c2020ec5b719b",
+      "segmentIndexes": [
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "status": "PASS",
+      "expectedWords": 854,
+      "recognizedWords": 848,
+      "editDistance": 10,
+      "wordErrorRate": 0.0117,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": true,
+      "completionEvidence": [
+        {
+          "question": 31,
+          "responseKey": "l4-form__31",
+          "candidateAcceptedAnswers": [
+            "rainfall",
+            "rain"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 50.98,
+          "endSeconds": 57.36,
+          "audiblePhrase": "A desert is usually defined as any region that receives less than 250 mm of rainfall a year."
+        },
+        {
+          "question": 32,
+          "responseKey": "l4-form__32",
+          "candidateAcceptedAnswers": [
+            "third"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 58.08,
+          "endSeconds": 62.32,
+          "audiblePhrase": "By this definition, deserts cover roughly one-third of the Earth's land surface,"
+        },
+        {
+          "question": 33,
+          "responseKey": "l4-form__33",
+          "candidateAcceptedAnswers": [
+            "Antarctica"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 66.44,
+          "endSeconds": 73.18,
+          "audiblePhrase": "The largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry."
+        },
+        {
+          "question": 34,
+          "responseKey": "l4-form__34",
+          "candidateAcceptedAnswers": [
+            "stems",
+            "stem"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 104.82000000000001,
+          "endSeconds": 108.48,
+          "audiblePhrase": "Many, such as the cactus, store water in their thick stems"
+        },
+        {
+          "question": 35,
+          "responseKey": "l4-form__35",
+          "candidateAcceptedAnswers": [
+            "roots",
+            "root"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 112.58,
+          "endSeconds": 116.6,
+          "audiblePhrase": "Others have extremely long roots that reach deep underground to find moisture."
+        },
+        {
+          "question": 36,
+          "responseKey": "l4-form__36",
+          "candidateAcceptedAnswers": [
+            "nocturnal"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 154.1,
+          "endSeconds": 159.7,
+          "audiblePhrase": "Many desert animals are nocturnal, meaning they are active only at night, when temperatures are cooler."
+        },
+        {
+          "question": 37,
+          "responseKey": "l4-form__37",
+          "candidateAcceptedAnswers": [
+            "seeds",
+            "seed"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 163.58,
+          "endSeconds": 169.6,
+          "audiblePhrase": "It can survive its entire life without ever drinking, obtaining all the water it needs from the seeds it eats."
+        },
+        {
+          "question": 38,
+          "responseKey": "l4-form__38",
+          "candidateAcceptedAnswers": [
+            "desertification"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 243.56,
+          "endSeconds": 249.82,
+          "audiblePhrase": "repair. One of the greatest threats is desertification, the process by which fertile land gradually"
+        },
+        {
+          "question": 39,
+          "responseKey": "l4-form__39",
+          "candidateAcceptedAnswers": [
+            "livestock"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 249.82,
+          "endSeconds": 255.34,
+          "audiblePhrase": "turns into desert, usually as a result of human activities such as overgrazing by livestock."
+        },
+        {
+          "question": 40,
+          "responseKey": "l4-form__40",
+          "candidateAcceptedAnswers": [
+            "solar"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 291.06,
+          "endSeconds": 297.36,
+          "audiblePhrase": "sunshine, which makes them ideal locations for generating solar energy. And scientists study"
+        }
+      ],
+      "completionEvidenceFound": 10,
+      "completionEvidenceTotal": 10,
+      "failures": []
+    }
+  ],
+  "wordErrorRateEvidence": "four_complete_parts",
+  "effectiveWordErrorRate": 0.0155,
+  "focusedReports": [],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

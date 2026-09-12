@@ -1,0 +1,3575 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 13,
+  "mockId": "set-13",
+  "contentVersionAtReview": "ielts-set-13-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "c63655ea107f49f2511672e7c4c1666e91b70dcf04c633c49dd02c0dbd015010",
+    "listeningMaterialSha256": "a861484ee8ebe0e7a0e3c37edef851b0c3cc7511aeb35243525f0d0b94516ccf",
+    "readingMaterialSha256": "6b9274698cef30f52c68e897259bb0d9f0ffeb1a24deffe4d33857e14fbc7368",
+    "objectiveMaterialSha256": "42e7d6078f97145b8de08806aa98cccbd6bafb14402341cadf76266abd72cac7"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Dalton",
+        "dalton"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "Hazelwood",
+        "hazelwood"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "stamina"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "friend"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "knee"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "Monday",
+        "monday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "12"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "sauna"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "45",
+        "£45"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "towel"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the wireless internet",
+        "B": "B. the luggage trolleys",
+        "C": "C. the shower rooms",
+        "D": "D. the shuttle bus",
+        "E": "E. the left-luggage storage"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "two",
+        "2"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "three hours",
+        "3 hours"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "security"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "100 millilitres",
+        "100 ml",
+        "100ml"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "plastic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "40 minutes",
+        "forty minutes"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "pharmacy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "purple"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "the economic impact of tourism",
+        "the environmental impact of tourism",
+        "residents' attitudes to tourism"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "it is a very beautiful place",
+        "its visitor numbers have grown rapidly",
+        "it is easy for her to travel to"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "face-to-face interviews",
+        "a questionnaire",
+        "official statistics"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "the low response rate",
+        "the cost of the survey",
+        "finding a suitable case study"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "reduce the size of her sample",
+        "compare her town with a second location",
+        "change her research topic"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "carrying"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "repeated"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "appendix"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "figures",
+        "figure"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "proofread"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "scientists",
+        "scientist"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "air"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "cores",
+        "core"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "archive"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "currents",
+        "current"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "krill"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "telescopes",
+        "telescope"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "meteorites",
+        "meteorite"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "isolation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "levels",
+        "level"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "remittances"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "internally"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "environmental",
+        "climate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "patents"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "misperceptions"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "policymakers"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "qubits"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "factorise"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "decoherence"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "quantum supremacy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "quantum simulation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "post-quantum"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "As a powerful and useful therapeutic tool in clinical practice.",
+        "As an unwanted confounding factor in clinical trials.",
+        "As a psychological phenomenon with no measurable physiological basis.",
+        "As the primary mechanism behind most drug treatments."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Placebos blocked pain signals before they reached the brain.",
+        "Placebos activated the same opioid pathways as real analgesic drugs.",
+        "Placebo pain relief was entirely explained by distraction effects.",
+        "The brain could not distinguish between placebos and active pain medication."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Placebos only work when patients are completely unaware they are receiving them.",
+        "Informing patients they are taking a placebo makes the treatment entirely ineffective.",
+        "Placebos can produce measurable benefits even when patients know they are inert.",
+        "Open-label placebos are more effective than blinded placebos in all conditions."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Patients should not be told about potential side effects of their treatment.",
+        "Negative expectations can produce adverse physical symptoms.",
+        "Informed consent procedures are unnecessary for placebo treatments.",
+        "The nocebo effect is stronger than the placebo effect in most studies."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "expectation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "therapeutic encounter"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "nocebo"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "paradoxically"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Dalton",
+        "dalton"
+      ],
+      "questionPrompt": "Name: Diana {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: Yes, it's Diana Dalton.",
+      "sourceExcerptSha256": "9cf4191c9c8ffbfcb974e99e42052ff687f8301de5e44c45f9f7ea7fba778955",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Dalton",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Dalton",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "dalton",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Hazelwood",
+        "hazelwood"
+      ],
+      "questionPrompt": "Home address: 14 {{2}} Street",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: I live at 14 Hazelwood Street.",
+      "sourceExcerptSha256": "9f55b25686237211c8fb7df0e427e87c6f090a3939b74effade0b6b1aca07c53",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Hazelwood",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Hazelwood",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "hazelwood",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stamina"
+      ],
+      "questionPrompt": "Main fitness goal: to improve {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: Well, at first I thought about weight loss, but what I really want is to improve my stamina.",
+      "sourceExcerptSha256": "2a5f84fc37ef3724f7b541726f20231652ed7acacd2eaa62a8e7ccd1d3a23823",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stamina",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stamina",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "friend"
+      ],
+      "questionPrompt": "Heard about gym from: a {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: A friend recommended you, actually.",
+      "sourceExcerptSha256": "4aec2c152bac234975eee8da8e2f8e333ebef51cbebc6153fa9bd2d811279d65",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "friend",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "friend",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "knee"
+      ],
+      "questionPrompt": "Existing injury: problem with one {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: Just my knee. I hurt it last year, so nothing too high-impact.",
+      "sourceExcerptSha256": "6e375f1c7acce1bf68c28bc0bba64242751163ff881e4d71635db94c6cdd2a5d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "knee",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "knee",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Monday",
+        "monday"
+      ],
+      "questionPrompt": "Preferred start day: {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "CUSTOMER: Could I start on Monday?",
+      "sourceExcerptSha256": "19f14783246d2561eb986965be88c383b973ff5e194d9609c33d7d4b7f71834d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Monday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Monday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "monday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "12"
+      ],
+      "questionPrompt": "Standard | {{7}} | £29 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "STAFF: Monday's fine. Now let me tell you about our two membership plans. The Standard plan runs on a 12-month contract at £29 a month, and it includes free use of the sauna.",
+      "sourceExcerptSha256": "309031ca4c2b839e58d28066c9f830f11be2a2027d007bcedcbfa152abebfb97",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "12",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "12",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sauna"
+      ],
+      "questionPrompt": "Standard | {{7}} | £29 | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "STAFF: Monday's fine. Now let me tell you about our two membership plans. The Standard plan runs on a 12-month contract at £29 a month, and it includes free use of the sauna.",
+      "sourceExcerptSha256": "309031ca4c2b839e58d28066c9f830f11be2a2027d007bcedcbfa152abebfb97",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sauna",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sauna",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "45",
+        "£45"
+      ],
+      "questionPrompt": "Premium | 6 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "STAFF: The Premium plan is more flexible — it's a shorter, 6-month contract, but it costs £45 a month. With Premium you also get a free towel service and two guest passes every month.",
+      "sourceExcerptSha256": "10a165c6ae5de1e67420d7132481aaed9aa5f53f51589e588e6dd686d7d04bd5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "45",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "45",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£45",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "towel"
+      ],
+      "questionPrompt": "Premium | 6 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Signing up for a gym",
+      "sourceExcerpt": "STAFF: The Premium plan is more flexible — it's a shorter, 6-month contract, but it costs £45 a month. With Premium you also get a free towel service and two guest passes every month.",
+      "sourceExcerptSha256": "10a165c6ae5de1e67420d7132481aaed9aa5f53f51589e588e6dd686d7d04bd5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "towel",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "towel",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO services does the announcement say are free of charge?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Let me start with what is available free of charge. Throughout the terminal you'll find high-speed wireless internet, which is completely free and needs no password. We also run a free shuttle bus between the terminal and the long-stay car park, leaving every ten minutes from Exit B. Please note that our luggage trolleys now require a two-pound refundable deposit, the shower rooms in the lounge cost eight pounds, and left-luggage storage is charged by the hour — so those three are not free.",
+      "sourceExcerptSha256": "dc1d037252f86f9ec7883241cd3e6865c56be126ce3a099c561aa8bff00bddf6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the wireless internet"
+        },
+        {
+          "key": "D",
+          "text": "the shuttle bus"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the luggage trolleys",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the shower rooms",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the left-luggage storage",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "questionPrompt": "• Check-in desks for international flights are on level {{13}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
+      "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "three hours",
+        "3 hours"
+      ],
+      "questionPrompt": "• The desks open {{14}} before departure.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
+      "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three hours",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "three hours",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "3 hours",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "security"
+      ],
+      "questionPrompt": "• Passengers with hand luggage only can go straight to {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
+      "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "security",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "security",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "100 millilitres",
+        "100 ml",
+        "100ml"
+      ],
+      "questionPrompt": "• Each liquid container must hold no more than {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
+      "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "100 millilitres",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "100 millilitres",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "100 ml",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        },
+        {
+          "answer": "100ml",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plastic"
+      ],
+      "questionPrompt": "• All liquids must fit inside a single clear {{17}} bag.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Now, some important information about check-in. The check-in desks for international flights are on level two, and they open exactly three hours before departure. If you're travelling with hand luggage only, you can skip the desks entirely and go straight to security. At security, remember to take any liquids out of your bag — each container must hold no more than 100 millilitres, and all of them must fit inside a single clear plastic bag.",
+      "sourceExcerptSha256": "5f34dfb391713d13500dc2a5a40b8d8fec86732cd14043b11fce4cbd620dfd1f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plastic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plastic",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "40 minutes",
+        "forty minutes"
+      ],
+      "questionPrompt": "• Your gate number appears about {{18}} before boarding.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Once you're through, you'll enter the departure lounge. Boarding information is shown on the large screens, but please don't rely on hearing your name, as we no longer call passengers individually. Your gate number appears roughly 40 minutes before boarding. If you have time, the duty-free shops are on your left, and a quiet rest area with reclining seats is on the upper floor, right next to the pharmacy.",
+      "sourceExcerptSha256": "77cbb396c4da2b04efc55a1dd944604dc5a6d2e2cdae75d6a81c32f0b0c5efde",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "40 minutes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "40 minutes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "forty minutes",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pharmacy"
+      ],
+      "questionPrompt": "• A quiet rest area is on the upper floor, next to the {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Once you're through, you'll enter the departure lounge. Boarding information is shown on the large screens, but please don't rely on hearing your name, as we no longer call passengers individually. Your gate number appears roughly 40 minutes before boarding. If you have time, the duty-free shops are on your left, and a quiet rest area with reclining seats is on the upper floor, right next to the pharmacy.",
+      "sourceExcerptSha256": "77cbb396c4da2b04efc55a1dd944604dc5a6d2e2cdae75d6a81c32f0b0c5efde",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pharmacy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pharmacy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "purple"
+      ],
+      "questionPrompt": "• Transferring passengers should follow the {{20}} signs to the transfer desk.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Airport orientation announcement",
+      "sourceExcerpt": "Finally, a word about connections. If you're transferring to another flight, follow the purple signs to the transfer desk, where staff will reprint your boarding pass. Passengers with less than one hour between flights should speak to a member of staff at once. Thank you, and enjoy your journey.",
+      "sourceExcerptSha256": "3b60a0d923979ccaca98238432fc15725d522706c6e0978aa53261daa684c3da",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "purple",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "purple",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "The main focus of Maya's dissertation is",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "MAYA: Well, originally I wanted to look at the economic impact of tourism, but after doing the reading I decided to focus on how local residents feel about tourism in their town — their attitudes, really.",
+      "sourceExcerptSha256": "75759ee050e256be7cf875afe75528ffb6b88b6bbf13f1a201f15ee6ec1557a8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "residents' attitudes to tourism"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the economic impact of tourism",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "the environmental impact of tourism",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Maya chose Whitby as her case study mainly because",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "MAYA: Partly because it's beautiful, but mainly because visitor numbers there have grown so fast in the last five years. That rapid growth makes the tensions much easier to see.",
+      "sourceExcerptSha256": "cd605ce5a8383e8174f67abd73bfdcea072096b0f26c129126001ad4ce4fccd7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "its visitor numbers have grown rapidly"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "it is a very beautiful place",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "it is easy for her to travel to",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "To collect her data, Maya is mainly using",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "MAYA: I did think about interviews, but in the end I'm mainly using a questionnaire, because I wanted responses from a large number of people.",
+      "sourceExcerptSha256": "6a18e680bb3de4b03302c689f8563d5cd3bdf2a19f65d511b3fd13c69f4c7e4c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "a questionnaire"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "face-to-face interviews",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "official statistics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The main difficulty Maya had was",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "MAYA: The biggest problem was the response rate — a lot of people simply didn't return the form. In the end I only got about a hundred and twenty completed questionnaires.",
+      "sourceExcerptSha256": "a4f8dc21a670f3d80c579787c10e3a048372e4307b93629781334b837d9a72a0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "the low response rate"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "the cost of the survey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "finding a suitable case study",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The tutor suggests that Maya should",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: Interesting. Now, one suggestion — have you thought about comparing your town with a second location?",
+      "sourceExcerptSha256": "b53811770a8dc6fcd9f07098f67b98b6eb0f41eb4001401d97c2a4b4ac627df6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "compare her town with a second location"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "reduce the size of her sample",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "change her research topic",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carrying"
+      ],
+      "questionPrompt": "• The literature review should cover the idea of {{26}} capacity.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: A comparison would really strengthen the analysis. I'd also make sure your literature review covers the idea of 'carrying capacity' — it's central to this debate. And when you write up, keep your methodology chapter detailed, so the whole study could be repeated by someone else.",
+      "sourceExcerptSha256": "4f01339b8d48e20bd512f19bd06fc89c0a8390309991df44a6125265bdbc4eb2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carrying",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carrying",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "repeated"
+      ],
+      "questionPrompt": "• The methodology chapter must be detailed enough for the study to be {{27}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: A comparison would really strengthen the analysis. I'd also make sure your literature review covers the idea of 'carrying capacity' — it's central to this debate. And when you write up, keep your methodology chapter detailed, so the whole study could be repeated by someone else.",
+      "sourceExcerptSha256": "4f01339b8d48e20bd512f19bd06fc89c0a8390309991df44a6125265bdbc4eb2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "repeated",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "repeated",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "appendix"
+      ],
+      "questionPrompt": "• The full questionnaire should be placed in an {{28}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: Put the full questionnaire in an appendix, and just summarise the key figures in the main text. Oh, and do get the whole thing proofread before you submit — small errors cost marks.",
+      "sourceExcerptSha256": "734a93411312b31a5bb5683fe1dba50e415253867ba33816f8ad51e149d4f80b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "appendix",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "appendix",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "figures",
+        "figure"
+      ],
+      "questionPrompt": "• Only the key {{29}} should be summarised in the main text.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: Put the full questionnaire in an appendix, and just summarise the key figures in the main text. Oh, and do get the whole thing proofread before you submit — small errors cost marks.",
+      "sourceExcerptSha256": "734a93411312b31a5bb5683fe1dba50e415253867ba33816f8ad51e149d4f80b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "figures",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "figures",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "figure",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "proofread"
+      ],
+      "questionPrompt": "• Maya should get the dissertation {{30}} before submitting it.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Tourism dissertation discussion",
+      "sourceExcerpt": "TUTOR: Put the full questionnaire in an appendix, and just summarise the key figures in the main text. Oh, and do get the whole thing proofread before you submit — small errors cost marks.",
+      "sourceExcerptSha256": "734a93411312b31a5bb5683fe1dba50e415253867ba33816f8ad51e149d4f80b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "proofread",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "proofread",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "scientists",
+        "scientist"
+      ],
+      "questionPrompt": "• In summer, about 5,000 {{31}} and support staff work there.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Good morning. Today's lecture is about scientific research in Antarctica, the coldest, windiest and driest continent on Earth. Although it has no permanent human population, at any one time during the summer season around 5,000 scientists and support staff live and work there.",
+      "sourceExcerptSha256": "6e6dc424a2c0ff7cf2c0d116602e15ebd181334b36f0dc091715c5643660f790",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "scientists",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "scientists",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "scientist",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "air"
+      ],
+      "questionPrompt": "• Ancient bubbles of {{32}} are trapped in the ice.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Let me begin with why Antarctica matters to science. First, it is the finest place on the planet to study the history of our climate. Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air. By drilling out long cylinders of ice, called cores, researchers can measure the make-up of the atmosphere going back almost a million years. This makes the ice a unique climate archive.",
+      "sourceExcerptSha256": "fc270f279fbaf2dad452f35d9ddc680d2a0472e6958181ed30aa4f892570faaa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "air",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "air",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cores",
+        "core"
+      ],
+      "questionPrompt": "• Cylinders of ice drilled out by researchers are called {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Let me begin with why Antarctica matters to science. First, it is the finest place on the planet to study the history of our climate. Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air. By drilling out long cylinders of ice, called cores, researchers can measure the make-up of the atmosphere going back almost a million years. This makes the ice a unique climate archive.",
+      "sourceExcerptSha256": "fc270f279fbaf2dad452f35d9ddc680d2a0472e6958181ed30aa4f892570faaa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cores",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cores",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "core",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "archive"
+      ],
+      "questionPrompt": "• The ice works as a unique climate {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Let me begin with why Antarctica matters to science. First, it is the finest place on the planet to study the history of our climate. Deep in the ice sheet, layers of compressed snow have trapped tiny bubbles of ancient air. By drilling out long cylinders of ice, called cores, researchers can measure the make-up of the atmosphere going back almost a million years. This makes the ice a unique climate archive.",
+      "sourceExcerptSha256": "fc270f279fbaf2dad452f35d9ddc680d2a0472e6958181ed30aa4f892570faaa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "archive",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "archive",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "currents",
+        "current"
+      ],
+      "questionPrompt": "• Cold, dense water drives the global system of ocean {{35}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Antarctica is also central to studying the oceans. The cold, dense water that forms around the continent sinks and drives the global system of ocean currents, a process that helps to regulate temperatures worldwide. And the surrounding Southern Ocean is extraordinarily rich in a small, shrimp-like creature called krill, which sits at the very base of the food chain.",
+      "sourceExcerptSha256": "afdd853c4f596d930c4916f87f9cf42d736055100ad41657958d286853132798",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "currents",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "currents",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "current",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "krill"
+      ],
+      "questionPrompt": "• The Southern Ocean is rich in {{36}}, at the base of the food chain.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Antarctica is also central to studying the oceans. The cold, dense water that forms around the continent sinks and drives the global system of ocean currents, a process that helps to regulate temperatures worldwide. And the surrounding Southern Ocean is extraordinarily rich in a small, shrimp-like creature called krill, which sits at the very base of the food chain.",
+      "sourceExcerptSha256": "afdd853c4f596d930c4916f87f9cf42d736055100ad41657958d286853132798",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "krill",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "krill",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "telescopes",
+        "telescope"
+      ],
+      "questionPrompt": "• The stable air makes Antarctica a good site for {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "The continent is important for space science too. The thin, dry, stable air makes it an excellent site for telescopes, and the deep ice is even used to detect particles arriving from distant galaxies. Meteorites are also far easier to find here, because dark rocks stand out so clearly against the white surface.",
+      "sourceExcerptSha256": "887635927f61bc3843f706a35ac60a3d089706e68b3d4417db5041c8d9e08c3b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "telescopes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "telescopes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "telescope",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "meteorites",
+        "meteorite"
+      ],
+      "questionPrompt": "• {{38}} are easy to find because they stand out against the ice.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "The continent is important for space science too. The thin, dry, stable air makes it an excellent site for telescopes, and the deep ice is even used to detect particles arriving from distant galaxies. Meteorites are also far easier to find here, because dark rocks stand out so clearly against the white surface.",
+      "sourceExcerptSha256": "887635927f61bc3843f706a35ac60a3d089706e68b3d4417db5041c8d9e08c3b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Meteorites",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "meteorites",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "meteorite",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "isolation"
+      ],
+      "questionPrompt": "• The biggest practical problem for researchers is the {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Of course, working in Antarctica is difficult. The extreme cold is an obvious hazard, but the biggest practical problem for researchers is often the isolation, especially through the long, dark winter. Supplies must arrive before the sea freezes, and once winter begins, no aircraft can land.",
+      "sourceExcerptSha256": "075f01e2b8fe0379ca836ba659c4f012f561950d2c677dcffacb4450e88440e0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "isolation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "isolation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "levels",
+        "level"
+      ],
+      "questionPrompt": "• Melting ice would raise global sea {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Antarctic research",
+      "sourceExcerpt": "Finally, a word about protection. Since 1959, the continent has been governed by an international treaty that sets the whole area aside for peaceful, scientific use. Scientists today are particularly worried about the stability of the ice, because its melting would raise global sea levels dramatically. Continued monitoring, therefore, remains absolutely essential.",
+      "sourceExcerptSha256": "cb1a2aa40c62c29a229882111754e6b1731ff170eec6a2b509586466910d756d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "levels",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "levels",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "level",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: Homo sapiens originated in Africa and eventually spread to every continent including Antarctica.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Migration—the movement of people from one place to another—is among the most powerful forces shaping human societies. It is also one of the most ancient: Homo sapiens emerged in Africa approximately three hundred thousand years ago and, over tens of thousands of years, dispersed across every continent except Antarctica. The story of modern migration is continuous with this prehistoric movement, driven by the same fundamental forces: the search for safety, sustenance, and opportunity. Modern statistics, however, require careful interpretation. A migrant stock counts people living outside their country of birth at a particular time, whereas a migration flow records journeys during a period. Nor are categories always mutually exclusive: someone may move for work after first leaving home because of conflict or drought.",
+      "sourceExcerptSha256": "cf34d2e75ca432fff49059c49607bb2bf76d130a0c09f281cccbcbf716bce43c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: In 2022, remittances sent by migrants exceeded the total value of official development aid.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Contemporary migration takes many forms. Labour migration refers to the movement of workers, often from lower-income to higher-income countries, in search of better employment opportunities. The World Migration Report 2024 cites an estimate of approximately 281 million international migrants worldwide in 2020, representing about 3.6 percent of the global population. It also reports that international remittances—money sent home by migrants—totalled $831 billion in 2022. Of that sum, $647 billion went to low- and middle-income countries, far exceeding official development aid and constituting a vital economic lifeline for many households and national economies.",
+      "sourceExcerptSha256": "6df2d2638729d95c00270c5f93cdb7cf64550beb4358b394356c9581514fa681",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: By the end of 2023, more than half of all forcibly displaced people had crossed an international border.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Forced migration, by contrast, involves movement driven by persecution, conflict, violence, or events that seriously disturb public order rather than primarily by economic calculation. The United Nations High Commissioner for Refugees reported that by the end of 2023, 117.3 million people were forcibly displaced—the highest figure then recorded. The total included 68.3 million internally displaced people, who had not crossed a national border, and 43.4 million refugees and other people needing international protection. A further 6.9 million were asylum-seekers awaiting decisions on their claims. These figures cannot simply be divided into refugees and internally displaced people, because the overall population contains several legal and statistical categories. Major refugee populations included people from Syria, Afghanistan, and Ukraine, while Russia's 2022 invasion of Ukraine produced one of the fastest displacement events in modern history.",
+      "sourceExcerptSha256": "539621e01ee9dd19457db1d64fa7f0c9cdd625202900b713b681c308de8aa2f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: People displaced by climate change are fully protected under the 1951 Refugee Convention.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+      "sourceExcerptSha256": "c7333b65d3ed90b8f24bc3f475764e4fdf1608c4f5f8fd751b6d3fb04db87385",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Immigrants and their children have founded a large proportion of major US companies.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+      "sourceExcerptSha256": "10895300c4bd141f0a34d02010d0152193382ef5e5ee21d50406fda1a2f52f91",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "6. {{6}}: Workers competing directly with migrants for jobs always experience wage increases.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+      "sourceExcerptSha256": "10895300c4bd141f0a34d02010d0152193382ef5e5ee21d50406fda1a2f52f91",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Studies show that many people overestimate the number of migrants living in their country.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+      "sourceExcerptSha256": "c7333b65d3ed90b8f24bc3f475764e4fdf1608c4f5f8fd751b6d3fb04db87385",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "remittances"
+      ],
+      "questionPrompt": "8. Money sent back to their home countries by migrants is known as {{8}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Contemporary migration takes many forms. Labour migration refers to the movement of workers, often from lower-income to higher-income countries, in search of better employment opportunities. The World Migration Report 2024 cites an estimate of approximately 281 million international migrants worldwide in 2020, representing about 3.6 percent of the global population. It also reports that international remittances—money sent home by migrants—totalled $831 billion in 2022. Of that sum, $647 billion went to low- and middle-income countries, far exceeding official development aid and constituting a vital economic lifeline for many households and national economies.",
+      "sourceExcerptSha256": "6df2d2638729d95c00270c5f93cdb7cf64550beb4358b394356c9581514fa681",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "remittances",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "remittances",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "internally"
+      ],
+      "questionPrompt": "9. People who are displaced within their own national borders are referred to as {{9}} displaced persons.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Forced migration, by contrast, involves movement driven by persecution, conflict, violence, or events that seriously disturb public order rather than primarily by economic calculation. The United Nations High Commissioner for Refugees reported that by the end of 2023, 117.3 million people were forcibly displaced—the highest figure then recorded. The total included 68.3 million internally displaced people, who had not crossed a national border, and 43.4 million refugees and other people needing international protection. A further 6.9 million were asylum-seekers awaiting decisions on their claims. These figures cannot simply be divided into refugees and internally displaced people, because the overall population contains several legal and statistical categories. Major refugee populations included people from Syria, Afghanistan, and Ukraine, while Russia's 2022 invasion of Ukraine produced one of the fastest displacement events in modern history.",
+      "sourceExcerptSha256": "539621e01ee9dd19457db1d64fa7f0c9cdd625202900b713b681c308de8aa2f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "internally",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "internally",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "environmental",
+        "climate"
+      ],
+      "questionPrompt": "10. The legal framework for refugee protection, the 1951 Refugee Convention, did not anticipate {{10}} displacement.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Environmental migration—movement associated with climate change, sea-level rise, and extreme weather events—is an increasingly significant phenomenon that existing international legal frameworks were not designed to address directly. People displaced solely by environmental factors do not qualify as refugees under the 1951 Refugee Convention, whose definition rests on a well-founded fear of persecution. Some people move temporarily after a storm; others relocate within their own country after repeated crop failures; and a smaller group crosses a border when living conditions become untenable. This variety makes the phenomenon difficult to measure and has left many environmental migrants without the protections accorded to Convention refugees.",
+      "sourceExcerptSha256": "c7333b65d3ed90b8f24bc3f475764e4fdf1608c4f5f8fd751b6d3fb04db87385",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Environmental",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "environmental",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "climate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "patents"
+      ],
+      "questionPrompt": "11. Research found that immigrants accounted for a disproportionately large share of {{11}} and innovation in the United States.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "The social and economic effects of migration on receiving countries are complex and contested. Research generally shows that, in aggregate, migration can increase the economic output of receiving countries: migrants fill labour shortages, bring skills and entrepreneurship, and contribute to fiscal revenues through taxation. One analysis of the 2017 Fortune 500 found that 18.4 percent of those companies had been founded by immigrants and another 24.8 percent by their children. Separate research has also found that immigrant-founded firms account for a disproportionately high share of patents and innovation. However, aggregate benefits can mask distributional effects: employers and consumers may gain while some workers in direct competition with new arrivals face wage pressure. Outcomes depend on migrants' skills, local labour demand, and how quickly housing and public services adjust.",
+      "sourceExcerptSha256": "10895300c4bd141f0a34d02010d0152193382ef5e5ee21d50406fda1a2f52f91",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "patents",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "patents",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "misperceptions"
+      ],
+      "questionPrompt": "12. Public attitudes toward migration are often shaped by {{12}}, such as overestimating the number of migrants.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Public attitudes toward migration often diverge sharply from the economic evidence. Research on perception finds that people in many countries consistently overestimate the number of migrants in their society—sometimes by a factor of three or four—and attribute to migrants higher rates of criminality and welfare dependency than empirical data support. These misperceptions have political consequences, fuelling support for restrictive immigration policies that may not align with national economic interests. Understanding and communicating the evidence on migration more effectively remains one of the significant challenges for both researchers and policymakers.",
+      "sourceExcerptSha256": "2d2c4b2cdd47780f28c73b47115200af5fd85132be599a7abaf7d57161107823",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "misperceptions",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "misperceptions",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "policymakers"
+      ],
+      "questionPrompt": "13. The failure to communicate evidence on migration effectively remains a challenge for both researchers and {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Patterns of Human Migration",
+      "sourceExcerpt": "Public attitudes toward migration often diverge sharply from the economic evidence. Research on perception finds that people in many countries consistently overestimate the number of migrants in their society—sometimes by a factor of three or four—and attribute to migrants higher rates of criminality and welfare dependency than empirical data support. These misperceptions have political consequences, fuelling support for restrictive immigration policies that may not align with national economic interests. Understanding and communicating the evidence on migration more effectively remains one of the significant challenges for both researchers and policymakers.",
+      "sourceExcerptSha256": "2d2c4b2cdd47780f28c73b47115200af5fd85132be599a7abaf7d57161107823",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "policymakers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "policymakers",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A description of why qubits are difficult to keep stable",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "C. Building a practical quantum computer has proved enormously challenging. Qubits are extraordinarily sensitive to their environment: any interaction with external factors—heat, electromagnetic radiation, even vibration—causes decoherence, a process in which the quantum state collapses prematurely. Maintaining qubits in a coherent state requires cooling them to temperatures near absolute zero, isolating them from external interference, and correcting errors that arise continuously during computation. Error correction creates a more dependable logical qubit from many imperfect physical qubits, but the overhead can be immense. A machine may therefore need thousands of physical components to protect the information represented by one logical unit. The engineering challenges involved have kept practical quantum computing elusive for decades.",
+      "sourceExcerptSha256": "c9b876a3b9d4434badc99e310559daf3bb6cff0bce712d66dafe74c07100b52d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "An account of a disputed claim about quantum computers outperforming classical ones",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "D. In recent years, the technology has advanced significantly. Google claimed in 2019 to have achieved \"quantum supremacy\"—demonstrating that its 53-qubit Sycamore processor had solved a specific problem in 200 seconds that would have taken the world's most powerful classical supercomputer approximately 10,000 years. IBM disputed the claim, arguing the task could be completed by a classical machine in 2.5 days with different techniques. The episode illustrated both genuine progress and the difficulty of making fair comparisons between quantum and classical systems. It also showed why a demonstration on a deliberately specialised benchmark does not establish that a machine is faster for ordinary scientific or commercial work.",
+      "sourceExcerptSha256": "e652550b372bb55ca98147523bf16aea484f4d472be4ee8d99d126f7578a473c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An explanation of how qubits differ from classical computer bits",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "A. Classical computers—the devices that underpin virtually every aspect of modern life—process information as sequences of bits: units that represent either a zero or a one. Quantum computers operate on fundamentally different principles. They use quantum bits, or qubits, which exploit the quantum mechanical properties of superposition and entanglement to process information in ways that are impossible for classical machines. A qubit can exist as a zero, a one, or any combination of both simultaneously—a state that collapses into a definite value only when measured. This property allows quantum computers to explore multiple computational pathways at once, offering in principle an exponential advantage over classical systems for certain categories of problem.",
+      "sourceExcerptSha256": "4561eebb074ba308c1baf9293d08ff3c9d8c1932899c2db02036dbcc5a7412a0",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "Information about international standards designed to protect data from quantum attacks",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "G. The social implications of a fully capable quantum computer would be profound. Shor's algorithm, if run at scale, would render most existing public-key cryptography obsolete, threatening the security of global financial systems, government communications, and personal data. Anticipating this risk, cryptographers have been developing \"post-quantum cryptography\"—encryption schemes designed to resist attack by quantum computers. The US National Institute of Standards and Technology published its first three final post-quantum cryptographic standards in 2024. Replacing vulnerable algorithms across browsers, servers, embedded devices, and long-lived records will take years, so organisations are being urged to begin the transition before a cryptographically capable quantum computer exists.",
+      "sourceExcerptSha256": "d43b71b3c42b669ffa36c7ddf1d857b4c5da93cd7c847f91f798635a771ca47b",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of how Shor's algorithm could undermine encryption based on factoring large integers",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "B. The theoretical foundations of quantum computing were laid in the 1980s, primarily by the physicist Richard Feynman, who proposed that a computer built on quantum mechanical principles could simulate quantum physical systems far more efficiently than any classical machine. The mathematician Peter Shor subsequently developed an algorithm in 1994 that would allow a sufficiently powerful quantum computer to factorise large integers exponentially faster than the best known classical algorithms—a result with profound implications for cryptography, since most internet encryption relies on the computational difficulty of this task.",
+      "sourceExcerptSha256": "1cc0b228b04e32305c01caf5903bdf7a0624403301c14eec43bbd6b7811ec59f",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "An explanation of what NISQ devices are and their current limitations",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "F. The timeline for commercially viable, general-purpose quantum computing remains deeply uncertain. \"Fault-tolerant\" quantum computing—the point at which a machine can run long algorithms reliably without errors overwhelming the computation—requires error-corrected logical qubits at a scale current hardware has not reached. Present machines, often described as NISQ (Noisy Intermediate-Scale Quantum) devices, are too error-prone to outperform classical computers at most real-world tasks. Researchers also disagree about how rapidly hardware, control systems, and error-correction methods will improve. Governments, technology companies, and venture capital funds are investing large and growing sums in the field, but financial commitment does not by itself resolve the remaining technical barriers.",
+      "sourceExcerptSha256": "dda4289d4f5af9262a6d9d122728712c2c29c13181dd532e5d41558f590c282b",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A mention of an existing commercial use of quantum technology",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "E. The most promising near-term applications of quantum computing lie in areas where the advantage over classical computers is most pronounced. Quantum simulation could revolutionise drug discovery by modelling the behaviour of molecules at quantum scales—something that is computationally intractable for classical systems at any useful level of precision. Optimisation problems—finding the best solution among an enormous number of possibilities—appear in logistics, finance, and materials science, and quantum algorithms may offer meaningful speed-ups in these areas. Quantum cryptography, which uses quantum mechanical principles to create theoretically unbreakable communication channels, is already in limited commercial use.",
+      "sourceExcerptSha256": "4a4ccdbcf0360c4d7369e1fa6d9121c9200dc0418551e08cdfc1ebc13d1c4472",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "qubits"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "A. Classical computers—the devices that underpin virtually every aspect of modern life—process information as sequences of bits: units that represent either a zero or a one. Quantum computers operate on fundamentally different principles. They use quantum bits, or qubits, which exploit the quantum mechanical properties of superposition and entanglement to process information in ways that are impossible for classical machines. A qubit can exist as a zero, a one, or any combination of both simultaneously—a state that collapses into a definite value only when measured. This property allows quantum computers to explore multiple computational pathways at once, offering in principle an exponential advantage over classical systems for certain categories of problem.",
+      "sourceExcerptSha256": "4561eebb074ba308c1baf9293d08ff3c9d8c1932899c2db02036dbcc5a7412a0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "qubits",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "qubits",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "factorise"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "B. The theoretical foundations of quantum computing were laid in the 1980s, primarily by the physicist Richard Feynman, who proposed that a computer built on quantum mechanical principles could simulate quantum physical systems far more efficiently than any classical machine. The mathematician Peter Shor subsequently developed an algorithm in 1994 that would allow a sufficiently powerful quantum computer to factorise large integers exponentially faster than the best known classical algorithms—a result with profound implications for cryptography, since most internet encryption relies on the computational difficulty of this task.",
+      "sourceExcerptSha256": "1cc0b228b04e32305c01caf5903bdf7a0624403301c14eec43bbd6b7811ec59f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "factorise",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "factorise",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "decoherence"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "C. Building a practical quantum computer has proved enormously challenging. Qubits are extraordinarily sensitive to their environment: any interaction with external factors—heat, electromagnetic radiation, even vibration—causes decoherence, a process in which the quantum state collapses prematurely. Maintaining qubits in a coherent state requires cooling them to temperatures near absolute zero, isolating them from external interference, and correcting errors that arise continuously during computation. Error correction creates a more dependable logical qubit from many imperfect physical qubits, but the overhead can be immense. A machine may therefore need thousands of physical components to protect the information represented by one logical unit. The engineering challenges involved have kept practical quantum computing elusive for decades.",
+      "sourceExcerptSha256": "c9b876a3b9d4434badc99e310559daf3bb6cff0bce712d66dafe74c07100b52d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "decoherence",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "decoherence",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "quantum supremacy"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "D. In recent years, the technology has advanced significantly. Google claimed in 2019 to have achieved \"quantum supremacy\"—demonstrating that its 53-qubit Sycamore processor had solved a specific problem in 200 seconds that would have taken the world's most powerful classical supercomputer approximately 10,000 years. IBM disputed the claim, arguing the task could be completed by a classical machine in 2.5 days with different techniques. The episode illustrated both genuine progress and the difficulty of making fair comparisons between quantum and classical systems. It also showed why a demonstration on a deliberately specialised benchmark does not establish that a machine is faster for ordinary scientific or commercial work.",
+      "sourceExcerptSha256": "e652550b372bb55ca98147523bf16aea484f4d472be4ee8d99d126f7578a473c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "quantum supremacy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "quantum supremacy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "quantum simulation"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "E. The most promising near-term applications of quantum computing lie in areas where the advantage over classical computers is most pronounced. Quantum simulation could revolutionise drug discovery by modelling the behaviour of molecules at quantum scales—something that is computationally intractable for classical systems at any useful level of precision. Optimisation problems—finding the best solution among an enormous number of possibilities—appear in logistics, finance, and materials science, and quantum algorithms may offer meaningful speed-ups in these areas. Quantum cryptography, which uses quantum mechanical principles to create theoretically unbreakable communication channels, is already in limited commercial use.",
+      "sourceExcerptSha256": "4a4ccdbcf0360c4d7369e1fa6d9121c9200dc0418551e08cdfc1ebc13d1c4472",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Quantum simulation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "quantum simulation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "post-quantum"
+      ],
+      "questionPrompt": "Unlike classical computers, quantum computers use {{21}} which can exist as zero, one, or a combination of both simultaneously. The theoretical basis for quantum computing was partly established by Richard Feynman, while Peter Shor developed an algorithm to {{22}} large numbers exponentially faster than classical computers. The main engineering obstacle is {{23}}, which causes qubits to lose their quantum state due to environmental interference. In 2019, Google claimed its Sycamore processor had achieved {{24}}, though this was disputed by IBM. Near-term quantum applications include {{25}}, which could transform drug development by modelling molecular behaviour. To protect future communications, cryptographers are already developing {{26}} cryptographic schemes resistant to quantum attack.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Quantum Computing — Promise and Reality",
+      "sourceExcerpt": "G. The social implications of a fully capable quantum computer would be profound. Shor's algorithm, if run at scale, would render most existing public-key cryptography obsolete, threatening the security of global financial systems, government communications, and personal data. Anticipating this risk, cryptographers have been developing \"post-quantum cryptography\"—encryption schemes designed to resist attack by quantum computers. The US National Institute of Standards and Technology published its first three final post-quantum cryptographic standards in 2024. Replacing vulnerable algorithms across browsers, servers, embedded devices, and long-lived records will take years, so organisations are being urged to begin the transition before a cryptographically capable quantum computer exists.",
+      "sourceExcerptSha256": "d43b71b3c42b669ffa36c7ddf1d857b4c5da93cd7c847f91f798635a771ca47b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "post-quantum",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "post-quantum",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "How was the placebo effect primarily viewed during most of the twentieth century?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "In clinical medicine, a placebo is an inert treatment—a sugar pill, a saline injection, or a sham procedure—that contains no active pharmacological ingredient. The placebo effect refers to measurable improvement associated with receiving such a treatment and with the context surrounding it. Researchers must distinguish changes in a patient's reported symptoms from changes in the underlying disease: pain or nausea may ease even when a tumour, infection, or damaged tissue is unaffected. They must also separate a true response from natural recovery, fluctuating symptoms, and the statistical tendency for unusually severe symptoms to move back towards their average level. For most of the twentieth century, the placebo effect was regarded primarily as a nuisance variable in clinical trials—something to be subtracted from the results to identify the effect of an active drug. More recent research has made it a clinically significant phenomenon in its own right.",
+      "sourceExcerptSha256": "fef6e69c4716a9191c9f53769b516b23ce47a5e4f6197ee9a38646186acbd417",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "As an unwanted confounding factor in clinical trials."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "As a powerful and useful therapeutic tool in clinical practice.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "As a psychological phenomenon with no measurable physiological basis.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "As the primary mechanism behind most drug treatments.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What did brain imaging studies show about placebo analgesia?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The magnitude of the placebo effect varies considerably depending on the condition, the context, and the manner in which the treatment is administered. In trials of antidepressants, placebo response rates are frequently between thirty and forty-five percent—high enough that some researchers have questioned whether the active benefit of many widely prescribed medications, over and above placebo, is clinically meaningful for mild to moderate depression. For pain conditions, placebo analgesia is well documented: patients receiving an inert injection have shown measurable reductions in subjective pain scores, and brain imaging studies have demonstrated that placebos activate the same endogenous opioid pathways as actual analgesic drugs. The brain, it appears, can produce its own pain-relieving chemicals in response to the expectation of relief.",
+      "sourceExcerptSha256": "b012374aa33fee6a8c4b078f4ac8986b99b493fe85d9e538b504f1df64cd40b9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Placebos activated the same opioid pathways as real analgesic drugs."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Placebos blocked pain signals before they reached the brain.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Placebo pain relief was entirely explained by distraction effects.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The brain could not distinguish between placebos and active pain medication.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What is the key finding of \"open-label placebo\" research?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "Placebos can produce measurable benefits even when patients know they are inert."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Placebos only work when patients are completely unaware they are receiving them.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Informing patients they are taking a placebo makes the treatment entirely ineffective.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Open-label placebos are more effective than blinded placebos in all conditions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the nocebo effect demonstrate, according to the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+      "sourceExcerptSha256": "d8710c4532fbdd17ddbd1ee15d649fbbe08c98daafed28d791f79bfec0edd6a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Negative expectations can produce adverse physical symptoms."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Patients should not be told about potential side effects of their treatment.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Informed consent procedures are unnecessary for placebo treatments.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The nocebo effect is stronger than the placebo effect in most studies.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: Placebo response rates in antidepressant trials are high enough to question the clinical benefit of active medication for mild depression.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The magnitude of the placebo effect varies considerably depending on the condition, the context, and the manner in which the treatment is administered. In trials of antidepressants, placebo response rates are frequently between thirty and forty-five percent—high enough that some researchers have questioned whether the active benefit of many widely prescribed medications, over and above placebo, is clinically meaningful for mild to moderate depression. For pain conditions, placebo analgesia is well documented: patients receiving an inert injection have shown measurable reductions in subjective pain scores, and brain imaging studies have demonstrated that placebos activate the same endogenous opioid pathways as actual analgesic drugs. The brain, it appears, can produce its own pain-relieving chemicals in response to the expectation of relief.",
+      "sourceExcerptSha256": "b012374aa33fee6a8c4b078f4ac8986b99b493fe85d9e538b504f1df64cd40b9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "32. {{32}}: Classical conditioning plays no role in the placebo effect.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: Ted Kaptchuk's research showed that open-label placebos were ineffective for chronic pain.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: The colour and perceived cost of a treatment can influence how effective patients find it.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "35. {{35}}: Most researchers now agree that open-label placebos should be used as a standard clinical treatment.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: Warning patients about side effects can sometimes cause them to experience those symptoms.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+      "sourceExcerptSha256": "d8710c4532fbdd17ddbd1ee15d649fbbe08c98daafed28d791f79bfec0edd6a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "expectation"
+      ],
+      "questionPrompt": "37. The core mechanism of the placebo effect is widely considered to be the {{37}} of benefit on the part of the patient.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The expectation of benefit is widely considered the core mechanism of the placebo effect, but it is not the only one. Classical conditioning also plays a role: if a patient has previously responded well to a treatment, the ritual of receiving any similar treatment—the clinical environment, the manner of the prescriber, the act of swallowing a pill—can trigger a conditioned therapeutic response. Research by Ted Kaptchuk at Harvard Medical School has produced the counterintuitive finding that placebos can be effective even when patients are told explicitly that they are receiving an inert treatment, a phenomenon known as \"open-label placebo\" or OLP. Participants in several OLP trials reported significant improvements in conditions including irritable bowel syndrome and chronic lower back pain, apparently because the ritual of receiving treatment retained some therapeutic power independent of belief.",
+      "sourceExcerptSha256": "7edc79bbe3a6b0f1e54143ed1cd2a924c3b5f60f7967747dd8066d1cdbfc5041",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "expectation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "expectation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "therapeutic encounter"
+      ],
+      "questionPrompt": "38. The clinical setting in which treatment is given, including the behaviour of the clinician, is referred to by researchers as the {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "The context in which treatment is given—what researchers call the \"therapeutic encounter\"—matters enormously. Studies have shown that the same placebo produces larger effects when administered by a warm, attentive, and confident clinician compared with a detached or dismissive one. The colour, size, and number of pills influences the response: red and orange capsules tend to have greater stimulant effects, while blue and green ones are more often associated with calming. Brand-name pills are perceived as more effective than generics, even when chemically identical, and expensive treatments are judged more effective than cheap ones. These findings reveal how thoroughly patient outcomes are shaped by the meaning they attach to treatment.",
+      "sourceExcerptSha256": "3392cf5a2f215ad0d3f44135b7a52cbce75edf5eccbc6290c02d7ae6a1cfd370",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "therapeutic encounter",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "therapeutic encounter",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nocebo"
+      ],
+      "questionPrompt": "39. The {{39}} effect describes how negative expectations can produce harmful physical outcomes in patients.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+      "sourceExcerptSha256": "d8710c4532fbdd17ddbd1ee15d649fbbe08c98daafed28d791f79bfec0edd6a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nocebo",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nocebo",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "paradoxically"
+      ],
+      "questionPrompt": "40. The passage argues that detailed disclosure of side effects may {{40}} cause the symptoms described, creating a dilemma for informed consent.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Placebo Effect",
+      "sourceExcerpt": "Research on the nocebo effect—the counterpart to the placebo effect, in which negative expectations produce adverse outcomes—adds further complexity. Patients who are warned about the side effects of a drug are more likely to experience them, even when given a placebo instead of the drug. In one notable study, patients randomised to a placebo arm in a cardiac trial who believed they might be receiving a beta-blocker were significantly more likely to report fatigue—the key side effect of beta-blockers—than placebo patients who did not hold this belief. The nocebo effect has practical implications for informed consent: detailed disclosure of side effects may not only inform patients but, paradoxically, cause the very symptoms it describes. Clinicians therefore face a communication problem. They must describe material risks honestly while presenting probabilities in a balanced way that does not magnify fear or imply that adverse effects are inevitable.",
+      "sourceExcerptSha256": "d8710c4532fbdd17ddbd1ee15d649fbbe08c98daafed28d791f79bfec0edd6a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "paradoxically",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "paradoxically",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [
+    {
+      "skill": "reading",
+      "question": 11,
+      "before": "A 2020 study found that immigrants accounted for a disproportionately large share of {{11}} and innovation in the United States.",
+      "after": "Research found that immigrants accounted for a disproportionately large share of {{11}} and innovation in the United States.",
+      "reason": "Removed an unsupported 2020 date; the passage attributes the finding only to separate research."
+    }
+  ],
+  "reviewSha256": "745e9ade3d03b7595fee69164d9424c84f3b590729565f4b27babaefab61f90c"
+}

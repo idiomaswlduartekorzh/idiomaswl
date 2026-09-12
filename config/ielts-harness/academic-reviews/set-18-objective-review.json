@@ -1,0 +1,3542 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 18,
+  "mockId": "set-18",
+  "contentVersionAtReview": "ielts-set-18-v2",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-objective-key-audit-14-20"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product, including the production overlay for Sets 14-20.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "14ddca18915b19d65f2a9541744bff4a1e35a0941dada3c121407389578de878",
+    "listeningMaterialSha256": "54d62b8946f250aca7dbbf4a2eb3a280c812817657674d0205b9efb95ec3ecd7",
+    "readingMaterialSha256": "853f992315abcb724bb2ac85cbae53a6931504ad58499a06d0ead8c13c35d4ad",
+    "objectiveMaterialSha256": "d992f1579c9036a169bf79b340fd659e33358a582d176717e3d2e90f9e32ad38"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Chestnut",
+        "chestnut"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "library"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "historical"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "Wednesdays",
+        "Wednesday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "novel"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "bookshop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "25",
+        "£25"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "newsletter"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "six",
+        "6"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "workshops",
+        "workshop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "B",
+        "E"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. cycling on the marked trails",
+        "B": "B. bringing dogs",
+        "C": "C. taking photographs",
+        "D": "D. picnicking near the car park",
+        "E": "E. swimming in the lake"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "200"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "1987"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "dragonfly"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "hide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "geese"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "woodland"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "tower"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "donations",
+        "donation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "to compare three languages instead of two",
+        "to focus on a single language rather than two",
+        "to choose a language that is still widely spoken"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It has more speakers than any other Celtic language.",
+        "Its last native speaker is still alive today.",
+        "It has been revived after its last native speaker died."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "academic articles",
+        "interviews with people involved in the revival",
+        "historical documents"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Language revival depends mainly on government funding.",
+        "Language revival depends more on community enthusiasm than on money.",
+        "Language revival is impossible once native speakers have died."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "keeping the presentation within the time limit",
+        "finding enough research material",
+        "disagreeing about the main argument"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "audio"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "map"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "pronunciation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "record"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "rehearse",
+        "practise",
+        "practice"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "rainfall",
+        "rain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "third"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "Antarctica"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "stems",
+        "stem"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "roots",
+        "root"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "nocturnal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "seeds",
+        "seed"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "desertification"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "livestock"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "solar"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "guide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "knockout"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "sickle cell"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "bacterial insecticide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "Mendelian inheritance"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "recalled"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "data analytics"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "sensor platforms"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "governance"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "cybersecurity"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "function creep"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "political"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Children learn language faster when parents use simplified speech with them.",
+        "The language input children receive is too limited to explain the grammatical knowledge they develop.",
+        "Children from different cultures acquire language at very different rates.",
+        "Computational models have failed to reproduce human grammatical knowledge."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "The role of a language-specific brain module in enabling rapid grammar learning.",
+        "The importance of formal schooling in developing complex grammatical knowledge.",
+        "General learning mechanisms operating on statistical patterns in the language children hear.",
+        "The universality of grammatical structures across all human languages."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Humans possess an innate universal grammar that other primates lack.",
+        "It helps children track another person’s attention and communicative intention when learning words.",
+        "The unique ability of human children to imitate sounds with great precision.",
+        "The larger brain size of humans, which enables a greater memory for vocabulary."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It is evidence of confusion caused by learning two languages simultaneously.",
+        "It is commonly systematic rather than evidence that exposure to multiple languages caused confusion.",
+        "It always leads to long-term deficits in both languages.",
+        "It is unique to children who learn two languages sequentially rather than simultaneously."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "universal"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "child-directed"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "joint"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "language"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Chestnut",
+        "chestnut"
+      ],
+      "questionPrompt": "Address: 8 {{1}} Close",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "CUSTOMER: I'm at 8 Chestnut Close.",
+      "sourceExcerptSha256": "04fa714d8d2cfb35ec873fa7ac930f72d6ee9accab4a8c085245a1611a2f05bf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Chestnut",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Chestnut",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "chestnut",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "library"
+      ],
+      "questionPrompt": "• Heard about the club from a poster in the local {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "CUSTOMER: I saw a poster in the local library, actually.",
+      "sourceExcerptSha256": "abea386a90aabc67936299ce95f9a262d37019184ad6efc077a082c85a6fe1d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "library",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "library",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "historical"
+      ],
+      "questionPrompt": "• Mainly enjoys reading {{3}} fiction",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "CUSTOMER: I mainly read historical fiction, though I do enjoy the occasional biography.",
+      "sourceExcerptSha256": "a28f508d3ac3a94bb54a5c937067837e154c4ae12067a1fce8253a6ac19b2a49",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "historical",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "historical",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Wednesdays",
+        "Wednesday"
+      ],
+      "questionPrompt": "• Prefers meetings to be held on {{4}}, not Thursdays",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "CUSTOMER: I was going to say Thursdays — actually, no, Wednesdays are better for me. I have a class on Thursdays.",
+      "sourceExcerptSha256": "40c9e5319b82486177e27855cf783d7e39d7b3e213e2df5cc00992562ddebfba",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Wednesdays",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Wednesdays",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "Wednesday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "novel"
+      ],
+      "questionPrompt": "• New members bring their favourite {{5}} to the first meeting",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: Wednesdays it is, then. And just so you know, we ask every new member to bring their favourite novel to their first meeting, so they can introduce themselves.",
+      "sourceExcerptSha256": "37876aa82481caeb3927ca360f5d22936f89ad4abed679ae170c7305ed338df0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "novel",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "novel",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bookshop"
+      ],
+      "questionPrompt": "• The club meets in a room above the {{6}} on the high street",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: At the moment we meet in a room above the bookshop on the high street. There's plenty of parking nearby.",
+      "sourceExcerptSha256": "0f84271366621a8538459910acbcdf9792367339abb09db0b1beb26029290784",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bookshop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bookshop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "25",
+        "£25"
+      ],
+      "questionPrompt": "Standard | {{7}} | 2 books | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: Now let me explain the two membership options. Standard membership costs £25 a year. That includes two free books a year and a monthly newsletter with reviews and recommendations.",
+      "sourceExcerptSha256": "4f28a49d392a7baf86cc05ff4cfd8cc4d272d4a5dcecc9664b96c635c47d8027",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "25",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "25",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "£25",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "newsletter"
+      ],
+      "questionPrompt": "Standard | {{7}} | 2 books | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: Now let me explain the two membership options. Standard membership costs £25 a year. That includes two free books a year and a monthly newsletter with reviews and recommendations.",
+      "sourceExcerptSha256": "4f28a49d392a7baf86cc05ff4cfd8cc4d272d4a5dcecc9664b96c635c47d8027",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "newsletter",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "newsletter",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "six",
+        "6"
+      ],
+      "questionPrompt": "Premium | £45 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: Premium membership is £45 a year. You get six free books a year instead of two, and premium members can also attend our free writing workshops.",
+      "sourceExcerptSha256": "2b5eec9fee8ffea38bcfce859a90f7d089be80772334ff02a1e060c84ff1d967",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the accepted written-number equivalent of the source form “six”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "workshops",
+        "workshop"
+      ],
+      "questionPrompt": "Premium | £45 | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Joining a Book Club",
+      "sourceExcerpt": "ORGANISER: Premium membership is £45 a year. You get six free books a year instead of two, and premium members can also attend our free writing workshops.",
+      "sourceExcerptSha256": "2b5eec9fee8ffea38bcfce859a90f7d089be80772334ff02a1e060c84ff1d967",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "workshops",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "workshops",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "workshop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "E"
+      ],
+      "questionPrompt": "Which TWO activities does the ranger say are not permitted in the reserve?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "First, a few important rules. We want everyone to enjoy the reserve, but there are a couple of things we don't allow. I'm afraid dogs are not permitted anywhere on the reserve, even on a lead, because they disturb the ground-nesting birds. And although the lake looks inviting, swimming is strictly forbidden — the water is much deeper and colder than it appears. You are very welcome to cycle, but only on the marked trails, not on the narrow footpaths. Photography is positively encouraged, and picnicking is fine in the designated area near the car park.",
+      "sourceExcerptSha256": "b6fa9f84d1b224a22591319416c99569d7a05c41b2b5c08fca769b459703d73d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "bringing dogs"
+        },
+        {
+          "key": "E",
+          "text": "swimming in the lake"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "cycling on the marked trails",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and E for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "taking photographs",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and E for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "picnicking near the car park",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and E for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "200"
+      ],
+      "questionPrompt": "• The reserve covers around {{13}} hectares of wetland and forest.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.",
+      "sourceExcerptSha256": "36d1621e1b02d02b768b3e0868a578f4a7a5af507bf5ecc97e20a1dc1daecba4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "200",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "200",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "1987"
+      ],
+      "questionPrompt": "• It was established in {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.",
+      "sourceExcerptSha256": "36d1621e1b02d02b768b3e0868a578f4a7a5af507bf5ecc97e20a1dc1daecba4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "1987",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "1987",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "dragonfly"
+      ],
+      "questionPrompt": "• It was originally created to protect a rare species of {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.",
+      "sourceExcerptSha256": "36d1621e1b02d02b768b3e0868a578f4a7a5af507bf5ecc97e20a1dc1daecba4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "dragonfly",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "dragonfly",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hide"
+      ],
+      "questionPrompt": "• The most popular attraction is the bird {{16}}, overlooking the main lake.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.",
+      "sourceExcerptSha256": "36d1621e1b02d02b768b3e0868a578f4a7a5af507bf5ecc97e20a1dc1daecba4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hide",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "geese"
+      ],
+      "questionPrompt": "• In winter, visitors can see flocks of {{17}} from Scandinavia.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Now, let me tell you about the reserve itself. Blackwater covers around 200 hectares of wetland and forest. It was established in 1987, originally to protect a single rare species of dragonfly, but today it's home to more than a hundred kinds of bird. The most popular attraction is our bird hide, which overlooks the main lake. From there, in winter, you can often see large flocks of geese that migrate here from Scandinavia.",
+      "sourceExcerptSha256": "36d1621e1b02d02b768b3e0868a578f4a7a5af507bf5ecc97e20a1dc1daecba4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "geese",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "geese",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "woodland"
+      ],
+      "questionPrompt": "• The blue trail passes through ancient {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "If you follow the blue trail, it takes you through the ancient woodland, where some of the oak trees are over four hundred years old. The red trail is longer and leads to the observation tower, which gives you a spectacular view across the whole reserve. Do allow about two hours if you want to complete it.",
+      "sourceExcerptSha256": "b5760e050f61a58d3bad5dfbafcfe5a48978facd576e19d8cb7f2ecc1131a3ff",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "woodland",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "woodland",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tower"
+      ],
+      "questionPrompt": "• The red trail leads to an observation {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "If you follow the blue trail, it takes you through the ancient woodland, where some of the oak trees are over four hundred years old. The red trail is longer and leads to the observation tower, which gives you a spectacular view across the whole reserve. Do allow about two hours if you want to complete it.",
+      "sourceExcerptSha256": "b5760e050f61a58d3bad5dfbafcfe5a48978facd576e19d8cb7f2ecc1131a3ff",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tower",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tower",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "donations",
+        "donation"
+      ],
+      "questionPrompt": "• Entry is free, but the reserve relies on {{20}} from visitors.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Nature Reserve Welcome Talk",
+      "sourceExcerpt": "Our visitor centre, just behind me, has a small café and a shop selling maps and guidebooks. There's also an exhibition explaining how the wetland is managed. Entry to the reserve is free, but we rely on donations, so please give generously if you can. Finally, the reserve closes at dusk, so please make sure you've returned to the car park before the gates are locked. Enjoy your visit, and do come and find me if you have any questions.",
+      "sourceExcerptSha256": "7e6902f5a60f0e9d92fdbd9610b3e90605b68a1eb26dbd385715e86269487057",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "donations",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "donations",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "donation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What change did the students make to their topic?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "MAYA: We're looking at why some languages become endangered, and what can be done to keep them alive. We were originally going to compare two languages, but we decided to focus on just one — a language called Manx, from the Isle of Man.",
+      "sourceExcerptSha256": "06748cfb9c31750810a08ff7b4a296b3e32650bd91d5b23ff7df315e8a41073e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "to focus on a single language rather than two"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "to compare three languages instead of two",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "to choose a language that is still widely spoken",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Why did the students choose Manx as their example?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TOM: Well, it's a fascinating case because the last native speaker died in the 1970s, but the language has since been revived. There are now children being brought up speaking it again, which is quite unusual.",
+      "sourceExcerptSha256": "36a4265b25f1898e903658684380d5e9cca7b7bd5f6f6820b537c0c95d2fa632",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "It has been revived after its last native speaker died."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It has more speakers than any other Celtic language.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "Its last native speaker is still alive today.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Which source of information did the students find most useful?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "MAYA: We started by reading academic articles, but honestly, the most useful material came from interviews with people involved in the revival. Talking to actual speakers gave us insights we couldn't get from books.",
+      "sourceExcerptSha256": "aadc0c456a92896bea283422411d67c16424ece708920e68af7b87a2b9b1d277",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "interviews with people involved in the revival"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "academic articles",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "historical documents",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main argument the students will make?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TOM: Our central point is that reviving a language depends less on money than on community enthusiasm. Funding helps, of course, but without a committed community, it simply doesn't work.",
+      "sourceExcerptSha256": "9e0cfdaf31aee75adc60a81f1296e0d30ad0d5a5c582d95bf5b4999904a78aed",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Language revival depends more on community enthusiasm than on money."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Language revival depends mainly on government funding.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Language revival is impossible once native speakers have died.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What problem are the students currently having?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "MAYA: The hardest part is keeping the presentation short enough. We've got so much material that we keep going over the time limit.",
+      "sourceExcerptSha256": "f4ea75ec16e22c9ffb0eb4026bc65b7a779d554bec17369c51c0f833b91c85f4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "keeping the presentation within the time limit"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "finding enough research material",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "disagreeing about the main argument",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "audio"
+      ],
+      "questionPrompt": "• Include some {{26}} so the audience can hear the language.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TUTOR: That's a common problem. Be ruthless — cut anything that doesn't support your main argument. Now, a few suggestions for improvement. First, I think you should include some audio, so the audience can actually hear what Manx sounds like. That will be far more powerful than just describing it.",
+      "sourceExcerptSha256": "d665d1d9315e9084f4334ffac362f425d9920354a91f3d24e0fbc5ebbf5c5c50",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "audio",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "audio",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "map"
+      ],
+      "questionPrompt": "• Add a {{27}} showing where the language is spoken.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TUTOR: Second, add a map showing where the language is spoken — people find geography helps them remember. And do check your pronunciation of the place names; get a native speaker to record them if you can. Finally, remember to rehearse the timing at least twice before the actual presentation.",
+      "sourceExcerptSha256": "7f1c6b7111996d77117b8e762b65345e73862cbae9f76d5e237501429e37b3d9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "map",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "map",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pronunciation"
+      ],
+      "questionPrompt": "• Check the {{28}} of the place names.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TUTOR: Second, add a map showing where the language is spoken — people find geography helps them remember. And do check your pronunciation of the place names; get a native speaker to record them if you can. Finally, remember to rehearse the timing at least twice before the actual presentation.",
+      "sourceExcerptSha256": "7f1c6b7111996d77117b8e762b65345e73862cbae9f76d5e237501429e37b3d9",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pronunciation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pronunciation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "record"
+      ],
+      "questionPrompt": "• Ask a native speaker to {{29}} the place names.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "MAYA: I will turn those points into a checklist. Then we can record the remaining action beside the person responsible for it.",
+      "sourceExcerptSha256": "329b7c2a5b2c9e7440e6df3c8fcbbbd3786b5855120aba1b335d3195bc9e76c8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "record",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "record",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rehearse",
+        "practise",
+        "practice"
+      ],
+      "questionPrompt": "• {{30}} the timing at least twice before presenting.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Linguistics Presentation Discussion",
+      "sourceExcerpt": "TUTOR: For the linguistics presentation, we can add a linking sentence at each handover and rehearse the transitions.",
+      "sourceExcerptSha256": "c910efa0eb1b7ef9411cc7147e869d75159a5745a25e222a45a8e7819b454cef",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rehearse",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rehearse",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "practise",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “rehearse”."
+        },
+        {
+          "answer": "practice",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This accepted answer is a concise equivalent of the cited source form “rehearse”."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rainfall",
+        "rain"
+      ],
+      "questionPrompt": "• A desert receives less than 250 millimetres of {{31}} per year.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "First, let's define what we mean by a desert. A desert is usually defined as any region that receives less than 250 millimetres of rainfall a year. By this definition, deserts cover roughly one third of the Earth's land surface. And, surprisingly, not all deserts are hot — the largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry.",
+      "sourceExcerptSha256": "37bedd1875bd436a018d4758ace49867d115942b0a43adc4cd49be53753f94f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rainfall",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rainfall",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "rain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "third"
+      ],
+      "questionPrompt": "• Deserts cover roughly one {{32}} of the Earth's land surface.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "First, let's define what we mean by a desert. A desert is usually defined as any region that receives less than 250 millimetres of rainfall a year. By this definition, deserts cover roughly one third of the Earth's land surface. And, surprisingly, not all deserts are hot — the largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry.",
+      "sourceExcerptSha256": "37bedd1875bd436a018d4758ace49867d115942b0a43adc4cd49be53753f94f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "third",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "third",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Antarctica"
+      ],
+      "questionPrompt": "• The largest desert in the world is {{33}}, because it is extremely dry.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "First, let's define what we mean by a desert. A desert is usually defined as any region that receives less than 250 millimetres of rainfall a year. By this definition, deserts cover roughly one third of the Earth's land surface. And, surprisingly, not all deserts are hot — the largest desert in the world is actually Antarctica, which is classified as a desert because it is extremely dry.",
+      "sourceExcerptSha256": "37bedd1875bd436a018d4758ace49867d115942b0a43adc4cd49be53753f94f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Antarctica",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Antarctica",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stems",
+        "stem"
+      ],
+      "questionPrompt": "• A cactus stores water in its thick {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "The central challenge for any desert organism is a shortage of water. Plants have evolved several strategies to cope. Many, such as the cactus, store water in their thick stems and have leaves reduced to spines to limit evaporation. Others have extremely long roots that reach deep underground to find moisture. A third group survives underground and grows rapidly after the rare rains.",
+      "sourceExcerptSha256": "4f44ff9955f699df13ba316cd8ba343816bdd6a9ef500d6f608dd621829416c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stems",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stems",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "stem",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "roots",
+        "root"
+      ],
+      "questionPrompt": "• Some plants have very long {{35}} that reach moisture deep underground.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "The central challenge for any desert organism is a shortage of water. Plants have evolved several strategies to cope. Many, such as the cactus, store water in their thick stems and have leaves reduced to spines to limit evaporation. Others have extremely long roots that reach deep underground to find moisture. A third group survives underground and grows rapidly after the rare rains.",
+      "sourceExcerptSha256": "4f44ff9955f699df13ba316cd8ba343816bdd6a9ef500d6f608dd621829416c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "roots",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "roots",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "root",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nocturnal"
+      ],
+      "questionPrompt": "• Many desert animals are {{36}} and are active only at night.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "Animals face the same challenge and have their own adaptations. Many desert animals are nocturnal, meaning they are active only at night, when temperatures are cooler. The kangaroo rat is a striking example — it can survive its entire life without ever drinking, obtaining all the water it needs from the seeds it eats. Larger animals, such as the camel, can tolerate a significant loss of body water and can go for long periods without drinking at all.",
+      "sourceExcerptSha256": "2350ad2e90a1b32cff96b65d9c26a3fcacd532460e4a8098b755a09157a1d67c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nocturnal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nocturnal",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "seeds",
+        "seed"
+      ],
+      "questionPrompt": "• The kangaroo rat gets all its water from the {{37}} that it eats.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "Animals face the same challenge and have their own adaptations. Many desert animals are nocturnal, meaning they are active only at night, when temperatures are cooler. The kangaroo rat is a striking example — it can survive its entire life without ever drinking, obtaining all the water it needs from the seeds it eats. Larger animals, such as the camel, can tolerate a significant loss of body water and can go for long periods without drinking at all.",
+      "sourceExcerptSha256": "2350ad2e90a1b32cff96b65d9c26a3fcacd532460e4a8098b755a09157a1d67c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "seeds",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "seeds",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        },
+        {
+          "answer": "seed",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "desertification"
+      ],
+      "questionPrompt": "• Fertile land turning into desert is a process called {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "Deserts are also fragile. Because plants grow so slowly, any damage takes a very long time to repair. One of the greatest threats is desertification — the process by which fertile land gradually turns into desert, usually as a result of human activities such as overgrazing by livestock. Climate change is expected to make many existing deserts even drier in the coming decades.",
+      "sourceExcerptSha256": "4828379989e3eea373a6ad263da4c46b9bf47d747044e2126670e80443d6781f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "desertification",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "desertification",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "livestock"
+      ],
+      "questionPrompt": "• This is often caused by overgrazing by {{39}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "Deserts are also fragile. Because plants grow so slowly, any damage takes a very long time to repair. One of the greatest threats is desertification — the process by which fertile land gradually turns into desert, usually as a result of human activities such as overgrazing by livestock. Climate change is expected to make many existing deserts even drier in the coming decades.",
+      "sourceExcerptSha256": "4828379989e3eea373a6ad263da4c46b9bf47d747044e2126670e80443d6781f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "livestock",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "livestock",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "solar"
+      ],
+      "questionPrompt": "• Deserts are good places to generate {{40}} energy.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Desert Ecosystems",
+      "sourceExcerpt": "Yet deserts also offer opportunities. They receive intense sunshine, which makes them ideal locations for generating solar energy. And scientists study desert organisms in the hope of discovering compounds that could be used in medicine. Far from being empty wastelands, deserts are dynamic systems that deserve our protection.",
+      "sourceExcerptSha256": "4ee84ddb98c5a84ef0b4767dfda6cf9d451c2312d4ab39b88db8babe30433820",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "solar",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "solar",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: CRISPR-Cas9 was announced by Doudna and Charpentier in 2012 and earned them a Nobel Prize in 2020.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Genetic engineering—the direct manipulation of an organism's genome—now has applications in medicine, agriculture, and environmental research. Jennifer Doudna and Emmanuelle Charpentier reported a programmable CRISPR-Cas9 editing method in 2012, accelerating the field by making targeted DNA cutting easier and less costly than many earlier tools. Researchers subsequently adapted the system to cells and organisms far beyond the original bacterial context. Accuracy depends on guide design, delivery, cell type, and the repair outcome, so \"precise\" does not mean error-free or equally practical in every organism. Doudna and Charpentier received the Nobel Prize in Chemistry in 2020 for developing a method for genome editing.",
+      "sourceExcerptSha256": "c8c0bb0269ecbcf21332794f9fbe92615078c45a611de09288cae075913d6cab",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: The Cas9 protein was originally used by bacteria as a mechanism of immune defence.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+      "sourceExcerptSha256": "bce54b69d22e5e08cd08a03ba9a805dd20ba16422263d8c474fba5c5273de6ef",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: Clinical trials for CRISPR treatments of sickle cell disease have so far produced disappointing results.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "In medicine, CRISPR has opened therapeutic possibilities for serious inherited disorders. In 2023, regulators in the United Kingdom and the United States authorised Casgevy, the first approved therapy to use CRISPR-Cas9; the US approval initially covered patients aged twelve or older with sickle cell disease and recurrent vaso-occlusive crises. The treatment edits a patient's blood-forming stem cells outside the body and returns them after conditioning treatment. Strong trial results justify the approval, but the procedure is intensive and long-term follow-up remains important. Researchers are also investigating edited immune cells for cancer, approaches to persistent viral infection, and in-vivo therapies delivered directly to particular tissues.",
+      "sourceExcerptSha256": "fa6d1799a40df7aa665aba82a636a37c5b294d699da7fbbc21e6394c06d3481b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: Some regulatory systems treat CRISPR-edited crops more leniently than traditional GM crops.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Agricultural genetic engineering predates CRISPR. Genetically modified crops containing introduced genes—such as Bt maize, which produces a bacterial insecticide—have been grown commercially since the 1990s. CRISPR can make small changes within an organism's own genome without leaving foreign DNA in the final plant, although it can also be used to insert sequences. This distinction has regulatory implications: some jurisdictions classify certain edited crops more leniently than transgenic crops, while others regulate according to technique or trait. Proposed and commercial applications include altered disease resistance, drought response, nutritional profiles, and shelf life; each trait still requires evidence about performance and unintended effects.",
+      "sourceExcerptSha256": "0603babbd1daa684464e3dcea5bcf67521bd0fe49857ad2586f3d983ec74dad8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "5. {{5}}: Gene drives can spread a genetic trait through a wild population faster than natural inheritance.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+      "sourceExcerptSha256": "7fa8ed75aee63d9a1c1d4ac89c5bf9b1750d5421833da02dab34f4df339fbef8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "6. {{6}}: He Jiankui's gene-edited baby experiment was approved by all relevant international regulatory bodies.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+      "sourceExcerptSha256": "bce54b69d22e5e08cd08a03ba9a805dd20ba16422263d8c474fba5c5273de6ef",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: He Jiankui was subsequently imprisoned for conducting illegal medical practices.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "The governance of genetic engineering must distinguish laboratory research, edits to a patient's non-reproductive cells, environmental release, and heritable changes to embryos or reproductive cells. Benefits, risks, consent, and who can be affected differ sharply across those categories. International rules remain uneven, while experiments and medical travel can cross borders. In 2018, He Jiankui announced the birth of twins whose embryos had been edited in an attempt to alter susceptibility to HIV. The intervention lacked adequate oversight, offered disputed medical benefit, and created heritable changes with uncertain unintended effects. He was later imprisoned by Chinese authorities for illegal medical practice. The episode prompted stronger calls for registries, oversight, transparency, and international coordination. It also showed that governance requires enforceable responsibilities, routes for reporting unsafe work, and continuing review as capabilities change, rather than written principles alone.",
+      "sourceExcerptSha256": "7bbbcbed53c53cb6fe04c1dbea33723664fe113b5fbfd6c8329928517209f2d4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "guide"
+      ],
+      "questionPrompt": "8. In CRISPR-Cas9, a {{8}} RNA directs the Cas9 protein to the correct location in the genome.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Genetic engineering—the direct manipulation of an organism's genome—now has applications in medicine, agriculture, and environmental research. Jennifer Doudna and Emmanuelle Charpentier reported a programmable CRISPR-Cas9 editing method in 2012, accelerating the field by making targeted DNA cutting easier and less costly than many earlier tools. Researchers subsequently adapted the system to cells and organisms far beyond the original bacterial context. Accuracy depends on guide design, delivery, cell type, and the repair outcome, so \"precise\" does not mean error-free or equally practical in every organism. Doudna and Charpentier received the Nobel Prize in Chemistry in 2020 for developing a method for genome editing.",
+      "sourceExcerptSha256": "c8c0bb0269ecbcf21332794f9fbe92615078c45a611de09288cae075913d6cab",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "guide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "guide",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "knockout"
+      ],
+      "questionPrompt": "9. When repair disrupts a targeted gene, the result is called a gene {{9}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "CRISPR-Cas9 operates as a molecular scissors-and-guide system derived from bacterial immune defence. A guide RNA directs the Cas9 protein to a matching genomic sequence, where the enzyme cuts both strands of DNA. The cell's repair machinery may then disrupt the targeted gene, producing a gene knockout, or researchers may supply a template intended for gene insertion or correction. Repair is probabilistic: cells can acquire different small insertions or deletions, template-based correction may be inefficient, and cutting at sufficiently similar unintended sites is possible. Experiments therefore verify the edited sequence and assess off-target changes rather than assuming that every treated cell has the planned result.",
+      "sourceExcerptSha256": "bce54b69d22e5e08cd08a03ba9a805dd20ba16422263d8c474fba5c5273de6ef",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "knockout",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "knockout",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sickle cell"
+      ],
+      "questionPrompt": "10. The first CRISPR-based therapy received regulatory approval in 2023 for the treatment of {{10}} disease.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "In medicine, CRISPR has opened therapeutic possibilities for serious inherited disorders. In 2023, regulators in the United Kingdom and the United States authorised Casgevy, the first approved therapy to use CRISPR-Cas9; the US approval initially covered patients aged twelve or older with sickle cell disease and recurrent vaso-occlusive crises. The treatment edits a patient's blood-forming stem cells outside the body and returns them after conditioning treatment. Strong trial results justify the approval, but the procedure is intensive and long-term follow-up remains important. Researchers are also investigating edited immune cells for cancer, approaches to persistent viral infection, and in-vivo therapies delivered directly to particular tissues.",
+      "sourceExcerptSha256": "fa6d1799a40df7aa665aba82a636a37c5b294d699da7fbbc21e6394c06d3481b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sickle cell",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sickle cell",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bacterial insecticide"
+      ],
+      "questionPrompt": "11. Bt maize produces a {{11}} within the plant.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Agricultural genetic engineering predates CRISPR. Genetically modified crops containing introduced genes—such as Bt maize, which produces a bacterial insecticide—have been grown commercially since the 1990s. CRISPR can make small changes within an organism's own genome without leaving foreign DNA in the final plant, although it can also be used to insert sequences. This distinction has regulatory implications: some jurisdictions classify certain edited crops more leniently than transgenic crops, while others regulate according to technique or trait. Proposed and commercial applications include altered disease resistance, drought response, nutritional profiles, and shelf life; each trait still requires evidence about performance and unintended effects.",
+      "sourceExcerptSha256": "0603babbd1daa684464e3dcea5bcf67521bd0fe49857ad2586f3d983ec74dad8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bacterial insecticide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bacterial insecticide",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Mendelian inheritance"
+      ],
+      "questionPrompt": "12. Gene drives spread traits more frequently than ordinary {{12}} would predict.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+      "sourceExcerptSha256": "7fa8ed75aee63d9a1c1d4ac89c5bf9b1750d5421833da02dab34f4df339fbef8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Mendelian inheritance",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Mendelian inheritance",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "recalled"
+      ],
+      "questionPrompt": "13. Researchers cannot guarantee that a self-propagating gene drive can be {{13}} after release.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Genetic Engineering and Its Applications",
+      "sourceExcerpt": "Environmental applications present both potential and ethical complexity. Gene drives bias inheritance so that a genetic trait can spread through a population more frequently than ordinary Mendelian inheritance would predict. CRISPR-based drives have been proposed to suppress malaria-carrying mosquitoes or make them less able to transmit pathogens; this is different from self-limiting modified mosquitoes already released in some programmes. By mid-2026, gene-drive organisms had been tested in laboratories and large cages, but no open-environment release had been reported. Proposed field studies follow staged risk assessment and community engagement. Critics emphasise ecological uncertainty, movement across borders, and the difficulty of controlling a self-propagating construct. Researchers are also designing localised, self-limiting, resistant, or reversal systems, but none guarantees that a construct can be recalled after release.",
+      "sourceExcerptSha256": "7fa8ed75aee63d9a1c1d4ac89c5bf9b1750d5421833da02dab34f4df339fbef8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "recalled",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "recalled",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A warning that smart city technology cannot compensate for weak governance or deep inequality",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "G. The future of smart cities will be shaped by governance, values, procurement, and the distribution of benefits. Sensors and analytics in a city with weak institutions or deep inequality may do little to address those conditions and could exacerbate them. Digital-only services can exclude residents without affordable devices, connectivity, accessible design, identification, or confidence using online systems. Long contracts may also lock a city into one vendor or make public scrutiny difficult. Researchers therefore argue that the most important questions are political: who selects the problem, whose data is used and on what terms, who can challenge an automated decision, and who receives the efficiencies created? Public participation and independent evaluation can expose trade-offs before a pilot becomes permanent infrastructure.",
+      "sourceExcerptSha256": "95d3f6c94f207461f0108ad92fd3e96441dcd0ffa1e372fd2e004059e76ab52d",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "An example of a city that publishes many public datasets",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "C. European programmes often frame smart-city work through privacy, data governance, and citizen participation, although practice varies within every region. Barcelona's \"Superblocks\" programme is primarily an urban-design and mobility intervention rather than a sensor project; measurement can still help assess traffic, air quality, walking, cycling, and public-space use. Amsterdam publishes many public datasets and supports projects involving government, researchers, firms, and residents. Open data can support innovation and scrutiny, but privacy, security, licensing, and data quality mean that not every record collected by city infrastructure should or can be released.",
+      "sourceExcerptSha256": "d99f024807ae84bbf6e11148461ee98f8771d7c03a38dc105c4dcc8956ed9d97",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "A description of municipal government functions disrupted by a ransomware cyberattack",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "E. Cybersecurity is a significant risk. Smart infrastructure depends on networked systems whose interconnection creates attack surfaces for malicious actors and pathways for failures to spread. A 2018 ransomware attack disrupted Atlanta government functions, and Baltimore suffered a major ransomware incident the following year. These municipal attacks did not prove that every connected physical system was compromised, but they demonstrated the operational and recovery costs of losing access to data and services. Traffic management, water treatment, and energy distribution require stronger protection because interference could affect physical safety. Segmentation, access control, tested backups, software maintenance, incident exercises, and manual fallback procedures are therefore part of service design rather than optional additions.",
+      "sourceExcerptSha256": "3de91c8990e3986537742a781ef36a88fa4f7992cbed4d37934da941071daee3",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "An explanation of how smart city economic projections may be influenced by commercial interests",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "D. The economic case for smart-city investment rests on efficiency, avoided failures, and improved service quality. Adaptive traffic systems may reduce delay and fuel use; predictive maintenance can identify equipment before it fails; energy management can expose waste. Yet a technical improvement does not automatically produce a net saving. Procurement, integration with old systems, staff training, cybersecurity, replacement cycles, and vendor fees all create costs, while extra road capacity or easier travel can induce new demand. Consultancies and technology suppliers publish large estimates of global benefits, but they may have a commercial interest in adoption. A credible business case should state the counterfactual, include operating costs, measure distributional effects, and compare the project with simpler alternatives.",
+      "sourceExcerptSha256": "b3a374740fcb577c4f0b7683812476e52771e2c5b2bbff1b7a1c08935a3eaaa2",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A correction to the claim that China assigns every citizen one national social credit score",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "F. Privacy and surveillance concerns are equally significant. Sensor networks, facial recognition, and analytics raise questions about what data is collected, who can access it, how long it is retained, and whether people can contest an error. China's social credit system is often inaccurately described as one national score assigned to every citizen from social media and CCTV. Research instead describes a fragmented collection of financial records, regulatory systems, sectoral lists, court-judgment enforcement, and some local pilots. Certain blacklists can still produce serious restrictions, including limits on particular forms of travel, so correcting the popular account does not remove concerns about due process or state power. Democratic cities also face function creep—the use of data for purposes beyond those originally stated.",
+      "sourceExcerptSha256": "f0eebca3680ccdd0a69a20e5646362fd27804c496c62b2f2fa572abdd68d97d6",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "An overview of the broad definition of what a smart city is",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "A. The \"smart city\" has become a prominent idea in urban planning and technology policy. Broadly, it describes the use of sensors, connectivity, data analytics, and artificial intelligence to manage infrastructure and services, improve residents' quality of life, or reduce environmental impacts. Applications include adaptive traffic signals, energy and water monitoring, predictive maintenance, emergency systems, and platforms through which residents report faults or use council services. The label itself does not demonstrate that a project works: cities must define the public problem, compare digital and non-digital options, and measure outcomes rather than treating the installation of connected equipment as success.",
+      "sourceExcerptSha256": "aa6bd884c4963c66094819b3c07f8bf229898a7698f932663ce428a37d7e4833",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of Singapore's shared digital and sensor infrastructure",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+      "sourceExcerptSha256": "3f46aa5fd92d911c39030a87060d45e1cb7b94ccbdda46db8ee999cd855839cb",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "data analytics"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "A. The \"smart city\" has become a prominent idea in urban planning and technology policy. Broadly, it describes the use of sensors, connectivity, data analytics, and artificial intelligence to manage infrastructure and services, improve residents' quality of life, or reduce environmental impacts. Applications include adaptive traffic signals, energy and water monitoring, predictive maintenance, emergency systems, and platforms through which residents report faults or use council services. The label itself does not demonstrate that a project works: cities must define the public problem, compare digital and non-digital options, and measure outcomes rather than treating the installation of connected equipment as success.",
+      "sourceExcerptSha256": "aa6bd884c4963c66094819b3c07f8bf229898a7698f932663ce428a37d7e4833",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "data analytics",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "data analytics",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sensor platforms"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+      "sourceExcerptSha256": "3f46aa5fd92d911c39030a87060d45e1cb7b94ccbdda46db8ee999cd855839cb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sensor platforms",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sensor platforms",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "governance"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "B. Singapore launched its Smart Nation initiative in 2014 and is frequently cited as a leading example. Government programmes use sensor platforms, smart water meters, transport data, digital identity, and other shared infrastructure for public services and planning. Different systems have different operators and purposes; describing them as one all-seeing central platform would obscure that institutional detail. Camera analytics and face verification can offer convenience or support security, while also raising questions about necessity, access, retention, oversight, and civil liberties. The benefits therefore depend on governance around a technology as well as its technical capability.",
+      "sourceExcerptSha256": "3f46aa5fd92d911c39030a87060d45e1cb7b94ccbdda46db8ee999cd855839cb",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "governance",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "governance",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cybersecurity"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "D. The economic case for smart-city investment rests on efficiency, avoided failures, and improved service quality. Adaptive traffic systems may reduce delay and fuel use; predictive maintenance can identify equipment before it fails; energy management can expose waste. Yet a technical improvement does not automatically produce a net saving. Procurement, integration with old systems, staff training, cybersecurity, replacement cycles, and vendor fees all create costs, while extra road capacity or easier travel can induce new demand. Consultancies and technology suppliers publish large estimates of global benefits, but they may have a commercial interest in adoption. A credible business case should state the counterfactual, include operating costs, measure distributional effects, and compare the project with simpler alternatives.",
+      "sourceExcerptSha256": "b3a374740fcb577c4f0b7683812476e52771e2c5b2bbff1b7a1c08935a3eaaa2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cybersecurity",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cybersecurity",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "function creep"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "F. Privacy and surveillance concerns are equally significant. Sensor networks, facial recognition, and analytics raise questions about what data is collected, who can access it, how long it is retained, and whether people can contest an error. China's social credit system is often inaccurately described as one national score assigned to every citizen from social media and CCTV. Research instead describes a fragmented collection of financial records, regulatory systems, sectoral lists, court-judgment enforcement, and some local pilots. Certain blacklists can still produce serious restrictions, including limits on particular forms of travel, so correcting the popular account does not remove concerns about due process or state power. Democratic cities also face function creep—the use of data for purposes beyond those originally stated.",
+      "sourceExcerptSha256": "f0eebca3680ccdd0a69a20e5646362fd27804c496c62b2f2fa572abdd68d97d6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "function creep",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "function creep",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "political"
+      ],
+      "questionPrompt": "A smart city uses digital technologies including sensors, AI, and {{21}} to improve urban management. Singapore is frequently cited as a leading example, using shared digital systems and {{22}} for public services and planning. European programmes often frame their work through data {{23}} and citizen participation, although practice varies. A key risk is {{24}}, since interconnected digital systems can be targeted by ransomware and other attacks. The use of data beyond its originally stated purpose is known as {{25}} and is a concern in democratic societies too. Researchers argue that the most important smart city questions are {{26}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Smart Cities",
+      "sourceExcerpt": "G. The future of smart cities will be shaped by governance, values, procurement, and the distribution of benefits. Sensors and analytics in a city with weak institutions or deep inequality may do little to address those conditions and could exacerbate them. Digital-only services can exclude residents without affordable devices, connectivity, accessible design, identification, or confidence using online systems. Long contracts may also lock a city into one vendor or make public scrutiny difficult. Researchers therefore argue that the most important questions are political: who selects the problem, whose data is used and on what terms, who can challenge an automated decision, and who receives the efficiencies created? Public participation and independent evaluation can expose trade-offs before a pilot becomes permanent infrastructure.",
+      "sourceExcerptSha256": "95d3f6c94f207461f0108ad92fd3e96441dcd0ffa1e372fd2e004059e76ab52d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "political",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "political",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main evidence Chomsky and nativists use to support the idea of an innate language capacity?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+      "sourceExcerptSha256": "4e39640931cae44001a18d22196c96e08fddeb87bcf528167f3e227a29bf1317",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The language input children receive is too limited to explain the grammatical knowledge they develop."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Children learn language faster when parents use simplified speech with them.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Children from different cultures acquire language at very different rates.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Computational models have failed to reproduce human grammatical knowledge.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What do empiricist accounts of language acquisition emphasise?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+      "sourceExcerptSha256": "e8e5855a0b6807bd247add804f8e17bbcfb6c139286296ec5d70d710e903ffae",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "General learning mechanisms operating on statistical patterns in the language children hear."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The role of a language-specific brain module in enabling rapid grammar learning.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "The importance of formal schooling in developing complex grammatical knowledge.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The universality of grammatical structures across all human languages.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What role does the passage assign to joint attention in language acquisition?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Social interaction is central to many accounts. Michael Tomasello argues that joint attention—the ability to share attention to an object or event and interpret another person's communicative intention—supports word learning and cultural learning. Behaviours such as following gaze, pointing, and checking another person's response emerge gradually during the first year and continue developing. They help narrow the possible referent of a new word, but a single gaze episode does not determine meaning: children integrate repeated situations, grammar, prior knowledge, and feedback. Conversational turns also give a learner a chance to act, receive a contingent response, and repair misunderstanding. This responsiveness differs from merely hearing many words, which is why researchers measure the social organisation as well as the quantity of input.",
+      "sourceExcerptSha256": "fac69dd715218c0fedf779b97ca628a3b3aa9627ea22d10d06fbec79a0934135",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "It helps children track another person’s attention and communicative intention when learning words."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Humans possess an innate universal grammar that other primates lack.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The unique ability of human children to imitate sounds with great precision.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The larger brain size of humans, which enables a greater memory for vocabulary.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about code-switching in multilingual children?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Multilingual children may acquire languages simultaneously or add one after another. Exposure to multiple languages does not itself cause a language disorder, and code-switching is commonly systematic rather than evidence of confusion. Knowledge can be distributed across languages, so testing only one can underestimate a child's concepts and total communicative resources. Progress in each language depends partly on opportunities to hear and use it. Some studies associate bilingual experience with advantages on particular executive-function tasks, while meta-analyses disagree about the size, consistency, and causes of these effects. Socioeconomic conditions, migration history, proficiency, task choice, and publication bias can influence the comparison.",
+      "sourceExcerptSha256": "d587de7c3959b983f6b59caa51a3678007830d8820865abe6ded9d1028f2e772",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "It is commonly systematic rather than evidence that exposure to multiple languages caused confusion."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It is evidence of confusion caused by learning two languages simultaneously.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It always leads to long-term deficits in both languages.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "It is unique to children who learn two languages sequentially rather than simultaneously.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "31. {{31}}: Nativist theories of language acquisition are currently accepted by all leading researchers in the field.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+      "sourceExcerptSha256": "4e39640931cae44001a18d22196c96e08fddeb87bcf528167f3e227a29bf1317",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Child-directed speech can contain repetition and other cues that may help children identify words and meanings.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+      "sourceExcerptSha256": "e8e5855a0b6807bd247add804f8e17bbcfb6c139286296ec5d70d710e903ffae",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: Infants become better at distinguishing every unfamiliar sound contrast as they grow older.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Developmental studies identify broad patterns alongside substantial variation. Infants begin tuning perception to frequently heard sound contrasts during the first year, and sensitivity to some unfamiliar contrasts may decline as native categories become more efficient. Many children produce recognisable words around the end of the first year. Vocabulary growth may accelerate between eighteen and twenty-four months, a pattern often called a \"vocabulary explosion\", but the timing and abruptness are not universal. Gesture, comprehension, production, the structure of the language, and the quantity and quality of interaction all affect what a milestone measure captures. Population ranges are therefore more informative than treating one birthday as a pass-or-fail deadline.",
+      "sourceExcerptSha256": "d78f2568d718b0a302d4b87ef9d2d500f7ff3a3ff2fdf847def4699e575a7050",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: An acceleration in vocabulary growth is often described between eighteen and twenty-four months, although it is not universal.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Developmental studies identify broad patterns alongside substantial variation. Infants begin tuning perception to frequently heard sound contrasts during the first year, and sensitivity to some unfamiliar contrasts may decline as native categories become more efficient. Many children produce recognisable words around the end of the first year. Vocabulary growth may accelerate between eighteen and twenty-four months, a pattern often called a \"vocabulary explosion\", but the timing and abruptness are not universal. Gesture, comprehension, production, the structure of the language, and the quantity and quality of interaction all affect what a milestone measure captures. Population ranges are therefore more informative than treating one birthday as a pass-or-fail deadline.",
+      "sourceExcerptSha256": "d78f2568d718b0a302d4b87ef9d2d500f7ff3a3ff2fdf847def4699e575a7050",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "35. {{35}}: Bilingual children consistently show stronger academic performance than monolingual children.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Multilingual children may acquire languages simultaneously or add one after another. Exposure to multiple languages does not itself cause a language disorder, and code-switching is commonly systematic rather than evidence of confusion. Knowledge can be distributed across languages, so testing only one can underestimate a child's concepts and total communicative resources. Progress in each language depends partly on opportunities to hear and use it. Some studies associate bilingual experience with advantages on particular executive-function tasks, while meta-analyses disagree about the size, consistency, and causes of these effects. Socioeconomic conditions, migration history, proficiency, task choice, and publication bias can influence the comparison.",
+      "sourceExcerptSha256": "d587de7c3959b983f6b59caa51a3678007830d8820865abe6ded9d1028f2e772",
+      "verdict": "SUPPORTED",
+      "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: Developmental language disorder affects about one in fourteen kindergarten children and can persist into adulthood.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Language research informs early literacy, additional-language teaching, and support for communication disorders. Developmental language disorder is a persistent difficulty learning, understanding, or using language that is not explained by conditions such as hearing loss or insufficient exposure; the US NIDCD estimates that it affects about one in fourteen kindergarten children. It can affect multilingual and monolingual children and may persist into adulthood. Assessment should examine all languages and distinguish a disorder from normal multilingual development. Timely, targeted intervention can help build skills and participation, although outcomes vary and no single programme suits every child.",
+      "sourceExcerptSha256": "fdaecaeae4863d6dffe283f2562bfaa93f9083669fcc6f804c40ae780499b149",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "universal"
+      ],
+      "questionPrompt": "37. Chomsky's proposed innate biological capacity for language is sometimes called {{37}} grammar.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "One longstanding debate contrasts nativist accounts with usage-based, statistical-learning, and social-interactionist accounts. Nativist theories associated with Noam Chomsky propose an innate biological endowment for language, historically described through terms such as a language acquisition device or universal grammar. The argument from the \"poverty of the stimulus\" holds that children's input lacks enough direct evidence to explain some grammatical generalisations without language-specific constraints. That is a theoretical argument whose premises and examples are debated, rather than a neutral observation accepted by the whole field. All sides recognise biological capacities and experience; they disagree about which learning biases are language-specific and how much structure the input supplies.",
+      "sourceExcerptSha256": "4e39640931cae44001a18d22196c96e08fddeb87bcf528167f3e227a29bf1317",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "universal",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "universal",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "child-directed"
+      ],
+      "questionPrompt": "38. The simplified speech that caregivers direct at young children is referred to as {{38}} speech.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Usage-based and social-interactionist researchers, including Elizabeth Bates and Brian MacWhinney, emphasise statistical patterns in input, general learning, communicative intention, and repeated use. Child-directed speech often contains repetition, altered pitch, short utterances, or cues that may help learners segment words and track meaning, but who addresses children and how often varies across communities. Other children and overheard conversation can also be important sources. Computational models show that some grammatical patterns can be learned from distributional evidence without explicitly encoding a traditional universal grammar. Yet model architecture supplies its own biases, training data may greatly exceed a child's experience, and success on a benchmark does not establish that a network and a child learn by the same mechanism.",
+      "sourceExcerptSha256": "e8e5855a0b6807bd247add804f8e17bbcfb6c139286296ec5d70d710e903ffae",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Child-directed",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "child-directed",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "joint"
+      ],
+      "questionPrompt": "39. The ability to share attention to an object or event with another person is called {{39}} attention.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "Social interaction is central to many accounts. Michael Tomasello argues that joint attention—the ability to share attention to an object or event and interpret another person's communicative intention—supports word learning and cultural learning. Behaviours such as following gaze, pointing, and checking another person's response emerge gradually during the first year and continue developing. They help narrow the possible referent of a new word, but a single gaze episode does not determine meaning: children integrate repeated situations, grammar, prior knowledge, and feedback. Conversational turns also give a learner a chance to act, receive a contingent response, and repair misunderstanding. This responsiveness differs from merely hearing many words, which is why researchers measure the social organisation as well as the quantity of input.",
+      "sourceExcerptSha256": "fac69dd715218c0fedf779b97ca628a3b3aa9627ea22d10d06fbec79a0934135",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "joint",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "joint",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited source excerpt."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "language"
+      ],
+      "questionPrompt": "40. A persistent difficulty with language development affecting around seven percent of children is known as developmental {{40}} disorder.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: How Children Acquire Language",
+      "sourceExcerpt": "How Children Acquire Language",
+      "sourceExcerptSha256": "3b8c9c78cff1e5ca8b42b07e10d5812098087d8b2974d980d78e8c86273edc0c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Language",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "language",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "Capitalisation or source punctuation differs, while the lexical answer is identical."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Reading Q16",
+        "before": "A city was paralysed by a ransomware cyberattack.",
+        "after": "Municipal government functions were disrupted by a ransomware cyberattack.",
+        "reason": "The passage reports disruption to Atlanta government functions and avoids claiming every connected system failed."
+      }
+    ]
+  },
+  "reviewSha256": "5242a1a8ddb4e9868db6907516f8e6d331c96d387c8b8e9632651feaa085ae2b"
+}

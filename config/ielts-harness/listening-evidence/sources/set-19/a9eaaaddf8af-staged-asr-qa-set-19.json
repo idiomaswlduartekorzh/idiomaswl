@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:11:03.999Z",
+  "set": 19,
+  "status": "PASS",
+  "manifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-19/ielts-listening-set-19.mp3",
+  "audioSha256": "638d3abd6b093aa385795ae0e590b19f122e065503036c3d38c0fdfff6255d21",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-19-20/set-19/asr-report-set-19.json",
+    "reportSha256": "9d8f8dab2d0b52325564eb7ef87493c6cd2c7a93f9cd55290dc387c61f474570",
+    "wordErrorRate": 0.0259,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "33/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.0259,
+  "focusedReports": [],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

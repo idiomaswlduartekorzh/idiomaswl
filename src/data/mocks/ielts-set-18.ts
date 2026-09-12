@@ -451,7 +451,7 @@ G. The future of smart cities will be shaped by governance, values, procurement,
           items: [
             { num: 14, stem: 'A warning that smart city technology cannot compensate for weak governance or deep inequality', answer: 'G' },
             { num: 15, stem: 'An example of a city that publishes many public datasets', answer: 'C' },
-            { num: 16, stem: 'A description of how a city has been paralysed by a ransomware cyberattack', answer: 'E' },
+            { num: 16, stem: 'A description of municipal government functions disrupted by a ransomware cyberattack', answer: 'E' },
             { num: 17, stem: 'An explanation of how smart city economic projections may be influenced by commercial interests', answer: 'D' },
             { num: 18, stem: 'A correction to the claim that China assigns every citizen one national social credit score', answer: 'F' },
             { num: 19, stem: 'An overview of the broad definition of what a smart city is', answer: 'A' },

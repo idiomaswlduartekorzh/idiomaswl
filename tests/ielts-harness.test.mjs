@@ -18,6 +18,7 @@ const material = () => ({
   listeningTranscriptSha256: 'transcript',
   readingContentSha256: 'reading',
   writingContentSha256: 'writing',
+  speakingContentSha256: 'speaking',
   audio: [{ url: '/audio/set-1.mp3', exists: true, sha256: 'audio' }],
   listening: [{ part: 1, words: 700 }, { part: 2, words: 700 }, { part: 3, words: 700 }, { part: 4, words: 700 }],
   readingWords: 2400,
@@ -54,11 +55,24 @@ function completeRecord(root, current = material()) {
     checks: { decode: true, format: true, loudness: true, timing: true },
   })}\n`);
   fs.writeFileSync(path.join(root, 'technical.json'), technicalReport);
+  const uxReport = Buffer.from(`${JSON.stringify({
+    schemaVersion: 1,
+    status: 'PASS',
+    browserReview: { status: 'PASS' },
+    sets: [{
+      set: 1,
+      status: 'PASS',
+      contentSha256: 'content',
+      checks: { route: true, responsive: true },
+    }],
+  })}\n`);
+  fs.writeFileSync(path.join(root, 'ux.json'), uxReport);
   const reviewer = human('academic-reviewer');
   const reviewedAt = '2026-09-04T12:00:00.000Z';
   const evidenceFile = { evidencePath: 'fixture.json', evidenceSha256: sha256(fixture) };
   const asrEvidenceFile = { evidencePath: 'asr.json', evidenceSha256: sha256(asrReport) };
   const technicalEvidenceFile = { evidencePath: 'technical.json', evidenceSha256: sha256(technicalReport) };
+  const uxEvidenceFile = { evidencePath: 'ux.json', evidenceSha256: sha256(uxReport) };
   return {
     set: 1,
     knownAudioStatus: 'FULL_MATCH_REVIEWED',
@@ -80,6 +94,20 @@ function completeRecord(root, current = material()) {
         { task: 2, checks: { promptComplete: true, responseModeClear: true, wordingReviewed: true }, status: 'APPROVED', reviewer, reviewedAt },
       ],
     },
+    speaking: {
+      status: 'APPROVED',
+      binding: { speakingSha256: 'speaking' },
+      checks: {
+        threeOrderedParts: true,
+        part1Breadth: true,
+        part2CueCard: true,
+        part3Breadth: true,
+        topicContinuity: true,
+      },
+      reviewer,
+      reviewedAt,
+      ...evidenceFile,
+    },
     objectiveKey: {
       status: 'APPROVED',
       objectiveSha256: 'objective',
@@ -88,7 +116,7 @@ function completeRecord(root, current = material()) {
       reviewer,
       reviewedAt,
     },
-    ux: { status: 'APPROVED', binding: { contentSha256: 'content' }, viewports: [390, 1280], reviewer, reviewedAt, ...evidenceFile },
+    ux: { status: 'APPROVED', binding: { contentSha256: 'content' }, viewports: [390, 1280], reviewer, reviewedAt, ...uxEvidenceFile },
     releaseApproval: { status: 'PENDING', releaseFingerprintSha256: releaseFingerprint(current), reviewer, reviewedAt },
   };
 }
@@ -99,7 +127,7 @@ test('complete fresh evidence stops at final human release review', () => {
     const current = material();
     const result = evaluateSet(current, completeRecord(root, current), root);
     assert.equal(result.state, 'READY_FOR_HUMAN_REVIEW');
-    assert.deepEqual(result.coverage, { listening: true, reading: true, writing: true, objectiveKey: true, ux: true });
+    assert.deepEqual(result.coverage, { listening: true, reading: true, writing: true, speaking: true, objectiveKey: true, ux: true });
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
@@ -206,6 +234,20 @@ test('duplicate question evidence does not count as Q1-Q40 coverage', () => {
   }
 });
 
+test('a changed Speaking review invalidates previously approved evidence', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
+  try {
+    const current = material();
+    const record = completeRecord(root, current);
+    record.speaking.binding.speakingSha256 = 'changed-speaking';
+    const result = evaluateSet(current, record, root);
+    assert.equal(result.coverage.speaking, false);
+    assert.equal(result.state, 'NEEDS_FULL_EVIDENCE');
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('missing and mismatched audio remain hard blockers', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
   try {
@@ -225,10 +267,61 @@ test('missing and mismatched audio remain hard blockers', () => {
   }
 });
 
+test('a hash-verified publication supersedes a stale observation without granting release', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
+  try {
+    const current = material();
+    const record = completeRecord(root, current);
+    record.knownAudioStatus = 'CONFIRMED_MISMATCH';
+    record.listening.questions[0].status = 'PENDING';
+    const publication = {
+      status: 'PUBLISHED_HASH_VERIFIED',
+      audioUrl: '/audio/set-1.mp3',
+      audioSha256: 'audio',
+      humanQualityApproval: true,
+      fullQ40Evidence: false,
+      releaseReady: false,
+    };
+    const result = evaluateSet(current, record, root, publication);
+    assert.equal(result.state, 'NEEDS_FULL_EVIDENCE');
+    assert.equal(result.releaseReady, false);
+    assert.equal(result.effectiveAudioStatus, 'PUBLISHED_HASH_VERIFIED');
+    assert.ok(!result.reasons.includes('AUDIO_MISMATCH'));
+    assert.ok(result.reasons.includes('PUBLISHED_AUDIO_FULL_Q40_EVIDENCE_PENDING'));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('a publication receipt cannot supersede the observation for another runtime audio route', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
+  try {
+    const current = material();
+    const record = completeRecord(root, current);
+    record.knownAudioStatus = 'CONFIRMED_MISMATCH';
+    const publication = {
+      status: 'PUBLISHED_HASH_VERIFIED',
+      audioUrl: '/audio/another-set.mp3',
+      audioSha256: 'audio',
+      fullQ40Evidence: false,
+      releaseReady: false,
+    };
+    const result = evaluateSet(current, record, root, publication);
+    assert.equal(result.state, 'BLOCKED_ALIGNMENT');
+    assert.equal(result.effectiveAudioStatus, 'CONFIRMED_MISMATCH');
+    assert.equal(result.audioPublicationMaterialBound, false);
+    assert.ok(result.reasons.includes('PUBLISHED_AUDIO_MATERIAL_BINDING_INVALID'));
+    assert.ok(result.reasons.includes('AUDIO_MISMATCH'));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('scaffold contains one pending record for every Listening and Reading point', () => {
   const scaffold = evidenceScaffold(material());
   assert.equal(scaffold.listening.questions.length, 40);
   assert.equal(scaffold.reading.questions.length, 40);
   assert.deepEqual(scaffold.listening.questions.map(entry => entry.question), Array.from({ length: 40 }, (_, index) => index + 1));
+  assert.equal(scaffold.speaking.status, 'PENDING');
   assert.equal(scaffold.releaseApproval.status, 'PENDING');
 });

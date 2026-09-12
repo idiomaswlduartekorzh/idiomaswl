@@ -175,7 +175,7 @@ Joining today
             { num: 16, answers: ['fine'], maxWords: 2 },
             { num: 17, answers: ['newspapers', 'newspaper'], maxWords: 2 },
             { num: 18, answers: ['story session', 'storytime'], maxWords: 2 },
-            { num: 19, answers: ['first', 'first floor'], maxWords: 2 },
+            { num: 19, answers: ['first'], maxWords: 2 },
             { num: 20, answers: ['address'], maxWords: 1 },
           ],
         },

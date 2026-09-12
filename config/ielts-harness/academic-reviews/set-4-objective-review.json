@@ -1,0 +1,3996 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 4,
+  "mockId": "set-4",
+  "contentVersionAtReview": "ielts-set-4-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "97a253c573f0282be177844458e1d1183706ded11666ed5996f670daa280de7c",
+    "listeningMaterialSha256": "7fd96513610a874c535cc08684beba2b0b01303a3b700a05549967db90fb89f2",
+    "readingMaterialSha256": "cb168acfec5a4717c2e9deb810b4d892386aeb2f5cfad9827ddd93def9c0aaa8",
+    "objectiveMaterialSha256": "67a5af6ae109b02a0f05cc4da606c02e7a5af9cbe920e1d069ed84cd7ab5ddd0"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "8"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "Environmental Science"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "10",
+        "ten"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "campus"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "bathroom"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "library"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "acceptance letter"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "housing@greenfield.ac.uk"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "three",
+        "3"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "one month",
+        "one month's rent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. interactive earthquake simulation panels",
+        "B": "B. a display of preserved insects and birds",
+        "C": "C. rock samples over three billion years old",
+        "D": "D. a famous blue whale skeleton",
+        "E": "E. guided school tours only"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "26",
+        "twenty-six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "two",
+        "2"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "10",
+        "ten"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "last"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "peat"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "4,000",
+        "4000",
+        "four thousand"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "renovation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "Montana"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It used a much larger sample group.",
+        "It tracked the same participants over three years.",
+        "It focused exclusively on adults.",
+        "It used brain imaging technology."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "It is very large and clearly significant.",
+        "It does not exist in the data.",
+        "It is statistically significant but the effect size is small.",
+        "It only affects adults, not teenagers."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Use it only for educational purposes.",
+        "Feel socially isolated in their offline lives.",
+        "Limit their use to thirty minutes per day.",
+        "Share positive content with their followers."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Active use such as posting and commenting.",
+        "Passive use such as scrolling through content.",
+        "Using social media for messaging only.",
+        "Sharing academic content with peers."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Because they are easier to recruit as research participants.",
+        "Because adult studies are unavailable.",
+        "Because there is more research on that age group and it is a significant developmental stage.",
+        "Because social media use is much lower among adults."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "mcq",
+      "key": "l3q26",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The Oxford Happiness Questionnaire.",
+        "The Warwick-Edinburgh scale.",
+        "Self-designed interview questions.",
+        "The Beck Depression Inventory."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "mcq",
+      "key": "l3q27",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "Because self-reports are often biased and people underestimate phone use.",
+        "Because screen time data is required by ethics approval.",
+        "Because participants prefer not to complete questionnaires.",
+        "Because it is cheaper than using psychological scales."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l4-notes__28",
+      "accepted": [
+        "food"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l4-notes__29",
+      "accepted": [
+        "daylight"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l4-notes__30",
+      "accepted": [
+        "scarce"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-notes__31",
+      "accepted": [
+        "magnetic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-notes__32",
+      "accepted": [
+        "disorient"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-notes__33",
+      "accepted": [
+        "sun"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-notes__34",
+      "accepted": [
+        "night"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-notes__35",
+      "accepted": [
+        "landmarks"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-notes__36",
+      "accepted": [
+        "night"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "mcq",
+      "key": "l4q37",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "To stay warmer during cold weather.",
+        "To reduce wind resistance and save energy.",
+        "To avoid collision with smaller birds.",
+        "To navigate more accurately using star maps."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "mcq",
+      "key": "l4q38",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "When birds migrate to a region with no water sources.",
+        "When birds arrive at their destination before insects are available.",
+        "When climate change causes birds to change their migration routes.",
+        "When birds lose their magnetic navigation ability."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "mcq",
+      "key": "l4q39",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Most species are migrating later in the spring.",
+        "Climate change has not yet affected migration timing.",
+        "Many species are arriving earlier in spring as temperatures rise.",
+        "Winter migration has completely stopped for several species."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "mcq",
+      "key": "l4q40",
+      "accepted": [
+        3
+      ],
+      "weight": 1,
+      "options": [
+        "Reducing the number of migratory species through selective breeding.",
+        "Building bird sanctuaries at final destinations.",
+        "Eliminating predators along migration routes.",
+        "Protecting key stopover sites where birds rest mid-journey."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "mcq",
+      "key": "r1q1",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "mcq",
+      "key": "r1q2",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "mcq",
+      "key": "r1q3",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "mcq",
+      "key": "r1q4",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "mcq",
+      "key": "r1q5",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "mcq",
+      "key": "r1q6",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-summary__7",
+      "accepted": [
+        "carrying"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-summary__8",
+      "accepted": [
+        "written"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-summary__9",
+      "accepted": [
+        "vulnerable"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-summary__10",
+      "accepted": [
+        "manipulation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "mcq",
+      "key": "r1q11",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Agriculture was clearly superior to foraging in every measurable way.",
+        "The shift to agriculture was complex, significant, and had both positive and negative consequences.",
+        "Foraging societies were unable to adapt to changing climates.",
+        "Agriculture was invented in a single location and spread from there."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "mcq",
+      "key": "r1q12",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "They were used only for religious ceremonies.",
+        "They provided milk, wool, and traction power for ploughs.",
+        "They were traded with neighbouring regions for tools.",
+        "They were used exclusively for transportation."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "mcq",
+      "key": "r1q13",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Nomadic",
+        "Settled, staying in one place",
+        "Aggressive",
+        "Productive"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "mcq",
+      "key": "r2q14",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Sleep was considered essential for immune system function.",
+        "The brain was thought to be largely inactive during sleep.",
+        "Sleep was understood to play a key role in memory formation.",
+        "Researchers believed dream activity drove learning."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "mcq",
+      "key": "r2q15",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Procedural memory — motor skills and habits.",
+        "Emotional memory — processing of fearful events.",
+        "Declarative memory — facts and events.",
+        "Working memory — short-term information."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "mcq",
+      "key": "r2q16",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "50%"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "mcq",
+      "key": "r2q17",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Learning always improves sleep quality by reducing anxiety.",
+        "Learning and stress can disrupt sleep, which harms memory consolidation.",
+        "People learn better when they sleep less because the brain is more alert.",
+        "The relationship is one-directional: sleep affects learning but not vice versa."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "mcq",
+      "key": "r2q18",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That people solve problems faster when they work continuously without breaks.",
+        "That REM sleep helps the brain form unusual connections that aid creative problem-solving.",
+        "That sleep deprivation has no effect on mathematical ability.",
+        "That NREM sleep is more important for insight than REM sleep."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "mcq",
+      "key": "r2q19",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Working in one direction only.",
+        "Operating in two directions, affecting each other mutually.",
+        "Moving randomly without a clear pattern.",
+        "Changing direction unpredictably."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "mcq",
+      "key": "r2q20",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "The prefrontal cortex.",
+        "The cerebellum.",
+        "The hippocampus.",
+        "The amygdala."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-summary__21",
+      "accepted": [
+        "complex"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-summary__22",
+      "accepted": [
+        "consolidation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-summary__23",
+      "accepted": [
+        "declarative"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-summary__24",
+      "accepted": [
+        "dreaming"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-summary__25",
+      "accepted": [
+        "encode"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-summary__26",
+      "accepted": [
+        "public"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3q27",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3q30",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "mcq",
+      "key": "r3q31",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "mcq",
+      "key": "r3q32",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "mcq",
+      "key": "r3q33",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "8%",
+        "12%",
+        "16%",
+        "24%"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "mcq",
+      "key": "r3q34",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It is immediately recycled into new batteries.",
+        "It can be repurposed for stationary energy storage.",
+        "It must be disposed of due to fire risk.",
+        "It is returned to the manufacturer for refurbishment."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "mcq",
+      "key": "r3q35",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "Long charging times compared to petrol refuelling.",
+        "Performance reduction in cold temperatures.",
+        "Higher manufacturing cost than solid-state batteries.",
+        "Supply chain concerns over raw material sourcing."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-summary__36",
+      "accepted": [
+        "charging"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-summary__37",
+      "accepted": [
+        "energy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-summary__38",
+      "accepted": [
+        "infrastructure"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-summary__39",
+      "accepted": [
+        "stationary"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-summary__40",
+      "accepted": [
+        "decarbonisation",
+        "decarbonization"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "8"
+      ],
+      "questionPrompt": "Student number: PG 4471-{{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "STUDENT: Sure. My name's Paulo Ferreira — F-E-R-R-E-I-R-A — and my student number is PG 4471 dash 8.",
+      "sourceExcerptSha256": "9efc16b89185176f905b3db8cb3e9c04b4e625d1ebda75266f58846b94d51204",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "8",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "8",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Environmental Science"
+      ],
+      "questionPrompt": "Faculty: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "STUDENT: Environmental Science.",
+      "sourceExcerptSha256": "712f410eb1fd7e979d5a60d68caab86d3a331b9510afa2c1b71d7dd9bff606a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Environmental Science",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Environmental Science",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "questionPrompt": "• Distance from campus: {{3}} minutes' walk",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: That would be a cluster flat then. We have two options available from 1st September. The first is Maple Court — it's a ten-minute walk from the main campus. Each room has a desk, wardrobe, and single bed. The shared kitchen is fully equipped. The monthly rent is four hundred and twenty pounds.",
+      "sourceExcerptSha256": "30be5bbc523bbc578cb708a79d2290f970047fceacbb5d02e15978e0c5303aaa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ten",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "10",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "ten",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "campus"
+      ],
+      "questionPrompt": "• Location: on {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "STUDENT: Hi, yes. I'm a new postgraduate student and I'm looking for accommodation on campus. Could you help me?",
+      "sourceExcerptSha256": "f8f7056f4a229b902be006695dbd4361c28739364688aed96e96617cbfdb7da5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "campus",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "campus",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bathroom"
+      ],
+      "questionPrompt": "• Each room has its own {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: The second is Cedar Hall — it's actually on campus, so very convenient. Monthly rent is four hundred and seventy-five pounds. The rooms are slightly larger and each has its own bathroom.",
+      "sourceExcerptSha256": "242cc1914407c6eb44e2f37de1178ca49425ebc173a99a7f16c201d3ad4c8954",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bathroom",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bathroom",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "library"
+      ],
+      "questionPrompt": "• Student prefers Block A (quieter, faces the {{6}})",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: Let me check availability. Cedar Hall has rooms available in both Block A and Block B. Block A faces the library and tends to be quieter. Block B is closer to the sports centre.",
+      "sourceExcerptSha256": "a84b22ee12e05753f3e86fdfd58ef341f797e546ff6bad2f170a0fbaa311128f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "library",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "library",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "acceptance letter"
+      ],
+      "questionPrompt": "Documents needed | {{7}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: Perfect. Now, for the application, I'll need a copy of your acceptance letter, your passport, and one recent bank statement.",
+      "sourceExcerptSha256": "7c84319010f613340e21ee9ce96cec652f330a0f4cefd5b9290cbb151a3e6231",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "acceptance letter",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "acceptance letter",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "housing@greenfield.ac.uk"
+      ],
+      "questionPrompt": "Send to | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: Yes. Send them to housing@greenfield.ac.uk. Once we receive your documents, we'll confirm your room within three working days and send you a contract to sign.",
+      "sourceExcerptSha256": "a59ebda21b14eddcc2506cfe94e7a62fbba261c099ba5c2da3eebc816363cc3f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "housing@greenfield.ac.uk",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "housing@greenfield.ac.uk",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "three",
+        "3"
+      ],
+      "questionPrompt": "Processing time | {{9}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: Yes. Send them to housing@greenfield.ac.uk. Once we receive your documents, we'll confirm your room within three working days and send you a contract to sign.",
+      "sourceExcerptSha256": "a59ebda21b14eddcc2506cfe94e7a62fbba261c099ba5c2da3eebc816363cc3f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "three",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "3",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "one month",
+        "one month's rent"
+      ],
+      "questionPrompt": "Deposit amount | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Student Housing Inquiry",
+      "sourceExcerpt": "OFFICER: Yes. The deposit is equivalent to one month's rent. It's fully refundable at the end of your stay provided the room is left in good condition.",
+      "sourceExcerptSha256": "eacfe2825795c5b0a2d7ec9abd387c17be0bcf7687d50279d3b2c5ebb212aae5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "one month",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "one month",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "one month's rent",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "C"
+      ],
+      "questionPrompt": "Which TWO features does the speaker mention about Gallery One?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery One is dedicated to Earth's geological history, covering the formation of continents, volcanic activity, and earthquakes. This gallery is particularly popular with school groups. You'll find interactive panels where visitors can simulate small earthquakes and examine real rock samples dating back over three billion years.",
+      "sourceExcerptSha256": "4af3c48f38fba20b7ee19dfb467426b1bcf6e5854b9d84a9f32e3a10f40ef111",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "interactive earthquake simulation panels"
+        },
+        {
+          "key": "C",
+          "text": "rock samples over three billion years old"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "a display of preserved insects and birds",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "a famous blue whale skeleton",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "guided school tours only",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "26",
+        "twenty-six"
+      ],
+      "questionPrompt": "• Blue whale skeleton: {{13}} metres in length",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Two focuses on evolution and biodiversity. The centrepiece is our famous blue whale skeleton, which is 26 metres in length and took two years to reassemble following restoration work. You'll also find over two thousand specimens of insects, birds, and mammals on display. Many visitors are surprised to learn that less than 10% of the world's known species are preserved here — it gives a sense of how vast the natural world truly is.",
+      "sourceExcerptSha256": "dbd0266e4cc4c34c994c2fd2ff095de57383632c93cf5c21a0b342cb27ea3190",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "26",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "26",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "twenty-six",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "two",
+        "2"
+      ],
+      "questionPrompt": "• Took {{14}} years to reassemble after restoration",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Two focuses on evolution and biodiversity. The centrepiece is our famous blue whale skeleton, which is 26 metres in length and took two years to reassemble following restoration work. You'll also find over two thousand specimens of insects, birds, and mammals on display. Many visitors are surprised to learn that less than 10% of the world's known species are preserved here — it gives a sense of how vast the natural world truly is.",
+      "sourceExcerptSha256": "dbd0266e4cc4c34c994c2fd2ff095de57383632c93cf5c21a0b342cb27ea3190",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "two",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        },
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "questionPrompt": "• Less than {{15}}% of known species on display",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Two focuses on evolution and biodiversity. The centrepiece is our famous blue whale skeleton, which is 26 metres in length and took two years to reassemble following restoration work. You'll also find over two thousand specimens of insects, birds, and mammals on display. Many visitors are surprised to learn that less than 10% of the world's known species are preserved here — it gives a sense of how vast the natural world truly is.",
+      "sourceExcerptSha256": "dbd0266e4cc4c34c994c2fd2ff095de57383632c93cf5c21a0b342cb27ea3190",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "10",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "10",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "ten",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "last"
+      ],
+      "questionPrompt": "• Opened {{16}} year",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Three is our newest addition, opened just last year. It explores the relationship between humans and the environment through the centuries. Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old, and a collection of tools used by early farming communities in the Middle East.",
+      "sourceExcerptSha256": "8b5b84870cb802c94b0a673814b0073bd4a286c9e44f32b0afeb50fdc60c2c83",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "last",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "last",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "peat"
+      ],
+      "questionPrompt": "• Features an ancient canoe from a {{17}} bog in Ireland",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Three is our newest addition, opened just last year. It explores the relationship between humans and the environment through the centuries. Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old, and a collection of tools used by early farming communities in the Middle East.",
+      "sourceExcerptSha256": "8b5b84870cb802c94b0a673814b0073bd4a286c9e44f32b0afeb50fdc60c2c83",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "peat",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "peat",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "4,000",
+        "4000",
+        "four thousand"
+      ],
+      "questionPrompt": "• Canoe estimated to be around {{18}} years old",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Three is our newest addition, opened just last year. It explores the relationship between humans and the environment through the centuries. Highlights include an ancient canoe discovered in a peat bog in Ireland, believed to be around 4,000 years old, and a collection of tools used by early farming communities in the Middle East.",
+      "sourceExcerptSha256": "8b5b84870cb802c94b0a673814b0073bd4a286c9e44f32b0afeb50fdc60c2c83",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "4,000",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "4,000",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "4000",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        },
+        {
+          "answer": "four thousand",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "renovation"
+      ],
+      "questionPrompt": "• Partially under {{19}}",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Four is currently undergoing partial renovation, but the dinosaur fossil section remains open. Our most prized exhibit is the Tyrannosaurus rex skeleton in the far corner, which was discovered in Montana in 1987.",
+      "sourceExcerptSha256": "7fb6c02ca05b5416a0337e28aebab8c5f32b5a646933509f196a316f9c40c798",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "renovation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "renovation",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Montana"
+      ],
+      "questionPrompt": "• Most prized exhibit: T-rex skeleton discovered in {{20}}",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Natural History Museum Audio Guide",
+      "sourceExcerpt": "Gallery Four is currently undergoing partial renovation, but the dinosaur fossil section remains open. Our most prized exhibit is the Tyrannosaurus rex skeleton in the far corner, which was discovered in Montana in 1987.",
+      "sourceExcerptSha256": "7fb6c02ca05b5416a0337e28aebab8c5f32b5a646933509f196a316f9c40c798",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Montana",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Montana",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What makes the Valkenburg study different from others, according to James?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: Most of them. I thought the Valkenburg study was particularly convincing — it tracked the same group of teenagers over three years rather than just using a one-off questionnaire.",
+      "sourceExcerptSha256": "2c17e1260319a6f37e97ac8126be2d7a216937e2deeede3fe1c2382907d9cf2e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "It tracked the same participants over three years."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It used a much larger sample group.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "It focused exclusively on adults.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It used brain imaging technology.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does James say about the correlation between social media use and anxiety?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: It was statistically significant, but the effect size was quite small. I think the media has blown it out of proportion. The relationship is probably more nuanced than \"more social media equals worse mental health.\"",
+      "sourceExcerptSha256": "1323cde835fc9d93cfb9309ecefae2a7653a4c5883d4ac107d4711a068b464b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "It is statistically significant but the effect size is small."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It is very large and clearly significant.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "It does not exist in the data.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It only affects adults, not teenagers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to Sofia, social media can benefit teenagers who:",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "SOFIA: I agree. Some studies show positive effects — like for teenagers who feel socially isolated, social media can actually improve their sense of connection and reduce loneliness.",
+      "sourceExcerptSha256": "6382c887075f89b86e9ddf033ea668524247339feb94800f8c86e86be8df8327",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Feel socially isolated in their offline lives."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Use it only for educational purposes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Limit their use to thirty minutes per day.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Share positive content with their followers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Which type of social media use do the students suggest is more harmful?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: Right. And active use — posting, commenting, messaging — seems less harmful than passive use, like just scrolling through other people's highlights.",
+      "sourceExcerptSha256": "47a96a7d07a85daba13cb6849cd557effb24094efd8e7ff7dca0f90e7c55de13",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Passive use such as scrolling through content."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Active use such as posting and commenting.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Using social media for messaging only.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Sharing academic content with peers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Why do the students choose to focus on adolescents for their literature review?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: I think we should focus on adolescents. There's more research on that group, and the developmental stage makes it especially interesting from a psychological perspective.",
+      "sourceExcerptSha256": "db8d90824d39359466b4c464c2b139220482d465acbb461afb8e09245215d67e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Because there is more research on that age group and it is a significant developmental stage."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Because they are easier to recruit as research participants.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Because adult studies are unavailable.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Because social media use is much lower among adults.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3q26",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What measurement tool do the students agree to use for well-being?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: The Warwick-Edinburgh scale is commonly used and well-validated. It covers both psychological and social well-being.",
+      "sourceExcerptSha256": "69208328d9779c97d93ba73876df4334d7d586633c779b55f4ad4ebaf0eb5d85",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "The Warwick-Edinburgh scale."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "The Oxford Happiness Questionnaire.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Self-designed interview questions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "The Beck Depression Inventory.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Why do the students want to include phone screen time data alongside self-reports?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Research Discussion — Social Media and Well-being",
+      "sourceExcerpt": "JAMES: That would be great for objective data rather than just self-reports, which tend to be unreliable — people consistently underestimate how long they spend on their phones.",
+      "sourceExcerptSha256": "aae6faab02a2073057a4456a8ad8d61a16fac19e834e6d198213757ec5bb3f9f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "Because self-reports are often biased and people underestimate phone use."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "Because screen time data is required by ethics approval.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Because participants prefer not to complete questionnaires.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Because it is cheaper than using psychological scales.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l4-notes__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "food"
+      ],
+      "questionPrompt": "• Seasonal changes in {{28}} availability",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
+      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "food",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "food",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l4-notes__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "daylight"
+      ],
+      "questionPrompt": "• Northern summer: insects/seeds abundant; long {{29}} hours allow extended foraging",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
+      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "daylight",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "daylight",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l4-notes__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "scarce"
+      ],
+      "questionPrompt": "• Winter: food becomes {{30}} in northern regions",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Let's start with the \"why.\" Migration is fundamentally a response to seasonal changes in food availability. During summer in the northern hemisphere, insects, seeds, and fruits are abundant, and the long daylight hours allow birds to forage for long periods. But as winter approaches, food becomes scarce. Rather than staying and struggling, migrating birds travel to regions where conditions are more favourable.",
+      "sourceExcerptSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "scarce",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "scarce",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-notes__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "magnetic"
+      ],
+      "questionPrompt": "1. Earth's {{31}} field — birds have magnetite crystals in their beaks (natural compasses)",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Now, the \"how\" is even more fascinating. Birds use multiple navigational systems simultaneously. First and most importantly, many species navigate using Earth's magnetic field. Researchers have discovered that birds have magnetite crystals in their beaks — effectively biological compasses. A 2019 study confirmed that disrupting magnetic fields can disorient migrating birds even in clear conditions.",
+      "sourceExcerptSha256": "76a54389007a8a55d7e77f8c7c40d5e7f4635571cbe03fe6ab1b99b7994e1822",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "magnetic",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "magnetic",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-notes__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "disorient"
+      ],
+      "questionPrompt": "   — Disrupting this field can {{32}} migrating birds",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Now, the \"how\" is even more fascinating. Birds use multiple navigational systems simultaneously. First and most importantly, many species navigate using Earth's magnetic field. Researchers have discovered that birds have magnetite crystals in their beaks — effectively biological compasses. A 2019 study confirmed that disrupting magnetic fields can disorient migrating birds even in clear conditions.",
+      "sourceExcerptSha256": "76a54389007a8a55d7e77f8c7c40d5e7f4635571cbe03fe6ab1b99b7994e1822",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "disorient",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "disorient",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-notes__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sun"
+      ],
+      "questionPrompt": "2. Position of the {{33}} (daytime) and stars (night-time)",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map — they learn the night sky during their first summer, before they have ever migrated, and use this knowledge later.",
+      "sourceExcerptSha256": "9f41b7030b6fd5270e829574f3de868a67a2e940130c3d716ffc6d441dc1291e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sun",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sun",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-notes__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "night"
+      ],
+      "questionPrompt": "   — Young birds learn the {{34}} sky in their first summer before migrating",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Second, birds use the position of the sun during the day and the stars at night. Young birds seem to have an innate star map — they learn the night sky during their first summer, before they have ever migrated, and use this knowledge later.",
+      "sourceExcerptSha256": "9f41b7030b6fd5270e829574f3de868a67a2e940130c3d716ffc6d441dc1291e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "night",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "night",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-notes__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "landmarks"
+      ],
+      "questionPrompt": "3. Visual {{35}} — coastlines, rivers, mountain ranges (mainly at journey's end)",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Third, birds rely on familiar landscape features — coastlines, rivers, and mountain ranges — as visual landmarks, particularly during the final stages of a journey.",
+      "sourceExcerptSha256": "8d722ac2cb0efc989003a4dfcdd3c1161f1654031a4d85a535c079ae21f6651c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "landmarks",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "landmarks",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-notes__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "night"
+      ],
+      "questionPrompt": "• Small songbirds: migrate at {{36}} (less turbulence and fewer predators)",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Interestingly, many small songbirds migrate at night, when there is less wind turbulence and fewer predators. Larger birds like geese and swans travel during the day, often in V-formations which reduce wind resistance and conserve energy.",
+      "sourceExcerptSha256": "6b23cdcef1c593258797b6dd93de964f0c7d057caffbe46f88fe3a37e97219b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "night",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "night",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4q37",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Why do larger birds like geese fly in V-formations?",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Interestingly, many small songbirds migrate at night, when there is less wind turbulence and fewer predators. Larger birds like geese and swans travel during the day, often in V-formations which reduce wind resistance and conserve energy.",
+      "sourceExcerptSha256": "6b23cdcef1c593258797b6dd93de964f0c7d057caffbe46f88fe3a37e97219b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "To reduce wind resistance and save energy."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "To stay warmer during cold weather.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "To avoid collision with smaller birds.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "To navigate more accurately using star maps.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4q38",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is a \"phenological mismatch\" as described in the lecture?",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Climate change is now affecting migration. Many species are shifting their migration timing — arriving earlier in spring as temperatures rise. This sounds positive, but it can cause a mismatch: birds may arrive before their food sources — the insects they feed on — have become available. This is called a phenological mismatch, and it is emerging as one of the key threats to migratory bird populations worldwide.",
+      "sourceExcerptSha256": "562dacfcbbd1e7cf98b51d84d81d3f5318d5cf4e2c630ca7a2399a7061f7a263",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "When birds arrive at their destination before insects are available."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "When birds migrate to a region with no water sources.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "When climate change causes birds to change their migration routes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "When birds lose their magnetic navigation ability.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4q39",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What does the lecturer say about the timing of migration due to climate change?",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Climate change is now affecting migration. Many species are shifting their migration timing — arriving earlier in spring as temperatures rise. This sounds positive, but it can cause a mismatch: birds may arrive before their food sources — the insects they feed on — have become available. This is called a phenological mismatch, and it is emerging as one of the key threats to migratory bird populations worldwide.",
+      "sourceExcerptSha256": "562dacfcbbd1e7cf98b51d84d81d3f5318d5cf4e2c630ca7a2399a7061f7a263",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Many species are arriving earlier in spring as temperatures rise."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Most species are migrating later in the spring.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Climate change has not yet affected migration timing.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Winter migration has completely stopped for several species.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4q40",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        3
+      ],
+      "questionPrompt": "What do current conservation efforts focus on to protect migratory birds?",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Bird Migration",
+      "sourceExcerpt": "Conservation efforts are focusing on protecting key stopover sites — the staging areas where birds rest and refuel mid-journey. Losing even one critical stopover site can have devastating effects on an entire species' population.",
+      "sourceExcerptSha256": "a1528649f6778a184661c8d7cf65f22180d4fdfe25d059e706a36e97c6cfbabb",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "3",
+          "text": "Protecting key stopover sites where birds rest mid-journey."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Reducing the number of migratory species through selective breeding.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 3 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Building bird sanctuaries at final destinations.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 3 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Eliminating predators along migration routes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 3 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1q1",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked MORE hours per day than early farmers.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. Such comparisons must be handled cautiously because recent foragers live in environments already shaped by states, markets and displaced populations. Even so, they challenge the assumption that cultivation automatically reduced effort or improved health. Farming demanded clearing, sowing, weeding, harvesting and storage, while tying households to fields that could fail. So why did people abandon this apparently successful lifestyle?",
+      "sourceExcerptSha256": "78dd73cbcaa992014681bf1b04493e2446cbb77043e72091d3de8408bc08f9f9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1q2",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Agriculture began independently in multiple locations around the world.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world. It was not a single event with a universal starting date. Archaeologists instead find overlapping experiments in plant tending, seasonal settlement and animal management, followed much later by crops and herds whose physical characteristics show sustained human selection. Different combinations appeared in Southwest Asia, East Asia, New Guinea, Africa and the Americas, using species suited to local environments.",
+      "sourceExcerptSha256": "ae7f4ebdca789fddb151d52fef49fe89f77933d8ff6f968729bec7231a337f9f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1q3",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The Fertile Crescent stretches from modern-day China through Central Asia.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation. Repeated harvesting then favoured plants with traits useful to people, such as larger seeds or seed heads that did not shatter before collection. These biological changes accumulated over generations, so neither a single harvest nor a single settlement marks an uncontested boundary between gathering and farming.",
+      "sourceExcerptSha256": "6eb755ceb19bceb5b9424512175d1de4e895526f0aeb3996ff70ca9d8fb2e24a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1q4",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Climate change at the end of the Ice Age may have encouraged experimentation with cultivation.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The answer is likely to be complex and context-dependent. In the Fertile Crescent — the arc of land stretching from modern-day Iraq and Syria through Jordan and Israel — domestication of wheat, barley, lentils, and other crops began around 10,500 BCE. Some archaeologists argue that climate change at the end of the last Ice Age created new environmental pressures: warming temperatures, the retreat of glaciers, and changing patterns of rainfall led to the expansion of grasslands rich in edible wild grains. This abundance may have encouraged more sedentary behaviour and experimentation with cultivation. Repeated harvesting then favoured plants with traits useful to people, such as larger seeds or seed heads that did not shatter before collection. These biological changes accumulated over generations, so neither a single harvest nor a single settlement marks an uncontested boundary between gathering and farming.",
+      "sourceExcerptSha256": "6eb755ceb19bceb5b9424512175d1de4e895526f0aeb3996ff70ca9d8fb2e24a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1q5",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Early farmers were typically taller and healthier than their forager predecessors.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+      "sourceExcerptSha256": "c3bc16244c624673841d10fe2d3983dfc62bd565d39ebab8f5e1294e46f8baaf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1q6",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Dogs were the first animals to be domesticated, approximately 15,000 years ago.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs. Zooarchaeologists reconstruct this process from changes in the age and sex of slaughtered animals, shifts in body size and the appearance of managed herds beyond a species' original range. As with crops, management could precede clear biological domestication by many generations.",
+      "sourceExcerptSha256": "dee27957b8bd928842f342f8c91b6d7958a150682063f5189a797590e6598c69",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-summary__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carrying"
+      ],
+      "questionPrompt": "The shift to agriculture enabled a dramatic increase in the {{7}} capacity of the land, allowing larger populations to be supported. Surplus food freed people to specialise in various roles, giving rise to the first cities and {{8}} language. However, settled communities became more {{9}} to infectious diseases because living close to animals in denser populations facilitated the spread of pathogens. Modern scholars debate whether farming was truly \"invented\" or emerged gradually through a long process of environmental {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems. Surplus did not mean that every harvest was abundant or that every person benefited equally. It meant that, across time, food producers could sustain people who were not directly engaged in obtaining food. Administrators could count stores and labour, craftspeople could work more continuously, and traders could connect settlements to distant sources of stone, metal and other materials.",
+      "sourceExcerptSha256": "49686bddb13787d8810d0c4f1d163acd801f8c4f9d8a94bbba112e21af02e3c0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carrying",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carrying",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-summary__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "written"
+      ],
+      "questionPrompt": "The shift to agriculture enabled a dramatic increase in the {{7}} capacity of the land, allowing larger populations to be supported. Surplus food freed people to specialise in various roles, giving rise to the first cities and {{8}} language. However, settled communities became more {{9}} to infectious diseases because living close to animals in denser populations facilitated the spread of pathogens. Modern scholars debate whether farming was truly \"invented\" or emerged gradually through a long process of environmental {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "Nevertheless, agriculture enabled a dramatic increase in the carrying capacity of the land — the number of people it could support — and provided the surplus food that freed some individuals to specialise in crafts, trade, religion, and governance. These conditions gave rise to the first cities, written language, and complex political systems. Surplus did not mean that every harvest was abundant or that every person benefited equally. It meant that, across time, food producers could sustain people who were not directly engaged in obtaining food. Administrators could count stores and labour, craftspeople could work more continuously, and traders could connect settlements to distant sources of stone, metal and other materials.",
+      "sourceExcerptSha256": "49686bddb13787d8810d0c4f1d163acd801f8c4f9d8a94bbba112e21af02e3c0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "written",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "written",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-summary__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "vulnerable"
+      ],
+      "questionPrompt": "The shift to agriculture enabled a dramatic increase in the {{7}} capacity of the land, allowing larger populations to be supported. Surplus food freed people to specialise in various roles, giving rise to the first cities and {{8}} language. However, settled communities became more {{9}} to infectious diseases because living close to animals in denser populations facilitated the spread of pathogens. Modern scholars debate whether farming was truly \"invented\" or emerged gradually through a long process of environmental {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+      "sourceExcerptSha256": "c3bc16244c624673841d10fe2d3983dfc62bd565d39ebab8f5e1294e46f8baaf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "vulnerable",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "vulnerable",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-summary__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "manipulation"
+      ],
+      "questionPrompt": "The shift to agriculture enabled a dramatic increase in the {{7}} capacity of the land, allowing larger populations to be supported. Surplus food freed people to specialise in various roles, giving rise to the first cities and {{8}} language. However, settled communities became more {{9}} to infectious diseases because living close to animals in denser populations facilitated the spread of pathogens. Modern scholars debate whether farming was truly \"invented\" or emerged gradually through a long process of environmental {{10}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "Today, scholars debate whether agriculture was genuinely \"invented\" at a single point in time, or whether it emerged gradually through a long process of environmental manipulation that is difficult to distinguish clearly from advanced foraging. What is certain is that once established, farming spread with remarkable speed, displacing or absorbing hunter-gatherer populations across most of the globe within a few thousand years. Its spread also followed more than one mechanism. In some places farming populations moved into new territory; elsewhere local foragers adopted selected crops, animals or techniques through exchange. The result was a patchwork of mixed economies rather than an immediate replacement of one way of life by another.",
+      "sourceExcerptSha256": "4a2a49871f5fe89138be5bd9854dffd88838fa50201631a7b392dc1bd396c163",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "manipulation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "manipulation",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1q11",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is the main argument of the passage?",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors. These patterns vary by region and period, and bones cannot reveal every aspect of an individual's experience. Nevertheless, a diet concentrated on a few staple crops could expose communities to deficiencies and make a failed harvest especially damaging. Permanent settlements also accumulated waste and sometimes relied on contaminated water sources.",
+      "sourceExcerptSha256": "c3bc16244c624673841d10fe2d3983dfc62bd565d39ebab8f5e1294e46f8baaf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "The shift to agriculture was complex, significant, and had both positive and negative consequences."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Agriculture was clearly superior to foraging in every measurable way.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Foraging societies were unable to adapt to changing climates.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Agriculture was invented in a single location and spread from there.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1q12",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what role did cattle and sheep play beyond providing meat?",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs. Zooarchaeologists reconstruct this process from changes in the age and sex of slaughtered animals, shifts in body size and the appearance of managed herds beyond a species' original range. As with crops, management could precede clear biological domestication by many generations.",
+      "sourceExcerptSha256": "dee27957b8bd928842f342f8c91b6d7958a150682063f5189a797590e6598c69",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "They provided milk, wool, and traction power for ploughs."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "They were used only for religious ceremonies.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "They were traded with neighbouring regions for tools.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "They were used exclusively for transportation.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1q13",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The word \"sedentary\" in paragraph three most closely means:",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
+      "sourceExcerpt": "The shift from foraging to farming is widely regarded as the most significant transformation in human history. Approximately 10,000 years ago, in several independent locations across the globe, human societies began cultivating plants and domesticating animals rather than relying solely on hunting and gathering. This agricultural revolution, as it is commonly called, set the stage for the rise of settled civilisations, population growth, and ultimately the modern world. It was not a single event with a universal starting date. Archaeologists instead find overlapping experiments in plant tending, seasonal settlement and animal management, followed much later by crops and herds whose physical characteristics show sustained human selection. Different combinations appeared in Southwest Asia, East Asia, New Guinea, Africa and the Americas, using species suited to local environments.",
+      "sourceExcerptSha256": "ae7f4ebdca789fddb151d52fef49fe89f77933d8ff6f968729bec7231a337f9f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Settled, staying in one place"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Nomadic",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Aggressive",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Productive",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2q14",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was the traditional view of sleep in the twentieth century?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory. Electrical recordings show organised changes in brain activity across the night rather than a uniform reduction in activity. Researchers can distinguish stages by characteristic rhythms, eye movements and muscle tone, and can relate those stages to different kinds of processing without assuming that any one stage acts alone.",
+      "sourceExcerptSha256": "7df25047f3a6a9674991394a5589e57ba05e3e4dd794d026d4d56228f4ebe1fc",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "The brain was thought to be largely inactive during sleep."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Sleep was considered essential for immune system function.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Sleep was understood to play a key role in memory formation.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Researchers believed dream activity drove learning.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2q15",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "According to the passage, which type of memory does NREM slow-wave sleep consolidate?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+      "sourceExcerptSha256": "6e5b824e400a2c94f0bfe66f0083a2f5bf8cac1d9b7633457cf131129e49e84a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Declarative memory — facts and events."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Procedural memory — motor skills and habits.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Emotional memory — processing of fearful events.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Working memory — short-term information.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2q16",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "In Walker's experiment, sleep-deprived participants encoded how much less new information compared to rested participants?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+      "sourceExcerptSha256": "52834f999b5a1a1054d318a9ecfe8236e74be19f72fd7a89f98e0f59a0b94464",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "40%"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "20%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "30%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "50%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2q17",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the passage say about the relationship between learning and sleep quality?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "The relationship between sleep and memory is bidirectional. Not only does sleep promote memory consolidation, but learning and stress can in turn affect sleep quality. Students revising for exams often report disrupted sleep, which paradoxically undermines the very consolidation they are trying to achieve through late-night study. Expectations can also complicate research: anxiety about an experiment or an unfamiliar laboratory can alter a participant's sleep. For this reason, studies increasingly combine controlled laboratory measurements with wearable monitoring in ordinary homes, accepting that each method offers a different balance between precision and realism.",
+      "sourceExcerptSha256": "b0e3e019372baf19e61e2c587cf4e4114460b52ed0ed18224b3788718fb404b1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Learning and stress can disrupt sleep, which harms memory consolidation."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Learning always improves sleep quality by reducing anxiety.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "People learn better when they sleep less because the brain is more alert.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "The relationship is one-directional: sleep affects learning but not vice versa.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2q18",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the \"insight problem\" experiment demonstrate about sleep?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "There is also evidence that sleep plays a role in creative problem-solving. During REM sleep, the brain appears to form unusual associations between distantly related concepts — connections that may not be accessible during waking life. A classic demonstration is the \"insight problem\": people who were given a difficult mathematical task and allowed to sleep before attempting it were over twice as likely to discover the hidden rule than those who worked on it continuously while awake. Such findings do not imply that sleep generates solutions without prior effort. The sleeper must first encounter and represent the problem, and improvement is measured statistically across groups rather than guaranteed for every individual. Sleep may reorganise available information, making a relationship easier to notice on returning to the task.",
+      "sourceExcerptSha256": "af7391b9ed73928b20f99bf13ec496036dada2cc443f03e248a57d8d466603e8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "That REM sleep helps the brain form unusual connections that aid creative problem-solving."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "That people solve problems faster when they work continuously without breaks.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "That sleep deprivation has no effect on mathematical ability.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "That NREM sleep is more important for insight than REM sleep.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2q19",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The word \"bidirectional\" in paragraph five means:",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories. Experimental design matters here. A fair comparison must control the time between learning and testing, the time of day, prior sleep and interference from new experiences. Some studies therefore compare morning and evening learning, while others use carefully monitored naps to isolate a shorter period of sleep.",
+      "sourceExcerptSha256": "c75f1d5b3661211560c242e5796cd6433815b17248e363198bf500944c6cc899",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "Operating in two directions, affecting each other mutually."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Working in one direction only.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "Moving randomly without a clear pattern.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Changing direction unpredictably.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2q20",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Which brain region showed reduced activity in sleep-deprived participants in Walker's experiment?",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+      "sourceExcerptSha256": "52834f999b5a1a1054d318a9ecfe8236e74be19f72fd7a89f98e0f59a0b94464",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "The hippocampus."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "The prefrontal cortex.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "The cerebellum.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "The amygdala.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-summary__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "complex"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "For much of the twentieth century, sleep was regarded as little more than a passive state of unconsciousness — a kind of biological standby mode. The brain, it was assumed, simply shut down and rested. The last three decades of neuroscience research have overturned this view entirely. Far from being inactive, the sleeping brain is engaged in a remarkably complex set of operations, many of which are central to learning and memory. Electrical recordings show organised changes in brain activity across the night rather than a uniform reduction in activity. Researchers can distinguish stages by characteristic rhythms, eye movements and muscle tone, and can relate those stages to different kinds of processing without assuming that any one stage acts alone.",
+      "sourceExcerptSha256": "7df25047f3a6a9674991394a5589e57ba05e3e4dd794d026d4d56228f4ebe1fc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "complex",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "complex",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-summary__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "consolidation"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Memory consolidation — the process by which newly acquired information is stabilised and integrated into long-term storage — is now known to depend critically on sleep. The evidence comes from multiple directions. Behavioural studies consistently show that people who sleep after learning perform better on subsequent tests than those who remain awake. Brain imaging studies reveal that specific patterns of neural activity during sleep mirror those that occurred during initial learning, suggesting that the brain is literally replaying and reinforcing new memories. Experimental design matters here. A fair comparison must control the time between learning and testing, the time of day, prior sleep and interference from new experiences. Some studies therefore compare morning and evening learning, while others use carefully monitored naps to isolate a shorter period of sleep.",
+      "sourceExcerptSha256": "c75f1d5b3661211560c242e5796cd6433815b17248e363198bf500944c6cc899",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "consolidation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "consolidation",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-summary__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "declarative"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+      "sourceExcerptSha256": "6e5b824e400a2c94f0bfe66f0083a2f5bf8cac1d9b7633457cf131129e49e84a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "declarative",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "declarative",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-summary__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "dreaming"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Sleep architecture is not uniform. A full night's sleep consists of repeated cycles of different stages, broadly divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep. NREM sleep, particularly the deep slow-wave phase, appears to be especially important for consolidating declarative memories — those involving facts and events. REM sleep, which is characterised by vivid dreaming, seems to play a greater role in procedural memory (motor skills and habits) and emotional memory processing. The balance changes over the night: slow-wave sleep is concentrated more heavily in earlier cycles, whereas REM periods tend to lengthen towards morning. Consequently, shortening sleep at either end may remove a different mixture of stages, one reason researchers avoid treating all lost hours as neurologically identical.",
+      "sourceExcerptSha256": "6e5b824e400a2c94f0bfe66f0083a2f5bf8cac1d9b7633457cf131129e49e84a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "dreaming",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "dreaming",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-summary__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "encode"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "Research by Matthew Walker at the University of California, Berkeley, has demonstrated that sleep deprivation has dramatic effects on the brain's ability to form new memories. In one key experiment, sleep-deprived participants showed a 40% reduction in the ability to encode new information compared to those who had slept normally. This deficit was localised to the hippocampus — a structure central to memory formation — which showed significantly reduced activity in sleep-deprived individuals. This distinction between encoding and later consolidation is important. A tired brain may struggle to register material effectively before the next sleep period even begins. Poor performance after an all-night study session may therefore reflect both a weakened initial record and less effective processing of what was learned earlier.",
+      "sourceExcerptSha256": "52834f999b5a1a1054d318a9ecfe8236e74be19f72fd7a89f98e0f59a0b94464",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "encode",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "encode",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-summary__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "public"
+      ],
+      "questionPrompt": "Sleep research has shown that the sleeping brain is engaged in {{21}} operations rather than resting passively. The process known as memory {{22}} depends critically on sleep, with studies showing that people who sleep after learning perform better on tests. Sleep consists of repeated cycles: NREM sleep helps consolidate {{23}} memories involving facts and events, while REM sleep — associated with vivid {{24}} — is linked to procedural memory and emotional processing. Sleep deprivation significantly reduces the brain's ability to {{25}} new information. Researchers argue that inadequate sleep should be treated as a serious {{26}} health issue.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Sleep and Memory",
+      "sourceExcerpt": "The practical implications of this research are significant. School start times, shift work patterns, and medical training programmes — all areas where sleep deprivation is common — may need to be rethought in light of evidence about the cognitive costs of inadequate sleep. Timing matters alongside total duration because sleep is regulated by both accumulated sleep pressure and the circadian system. Irregular schedules can place required wakefulness at a biological low point even when a person has spent enough hours in bed. A growing number of researchers argue that treating sleep as expendable is not a minor lifestyle choice, but a serious public health issue. Their argument concerns conditions that make adequate sleep possible as well as advice directed at individual behaviour.",
+      "sourceExcerptSha256": "560bc0e14b44858d21cf2e2a6da6787fa6f99db373e194018f4489113754b288",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "public",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "public",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Global EV sales in 2023 exceeded 14 million units.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global sales of battery electric and plug-in hybrid vehicles exceeded 14 million units — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century. Sales totals also conceal large regional differences. Uptake depends on vehicle prices, model availability, tax policy, fuel costs and access to charging, so rapid growth in one market cannot simply be projected onto another. The useful question is therefore not only how many EVs are sold, but what conditions allow adoption to spread beyond early buyers.",
+      "sourceExcerptSha256": "78e60e008d2dc416a6bf48288a1d9fb3524f416a3f1f3ea79335c7af5e6a9fbe",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Life-cycle analyses show that EVs always produce fewer emissions than petrol vehicles regardless of the energy source used.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal. Results vary with the size of the vehicle and battery, the distance driven, factory energy sources and assumptions about battery life. This explains why two credible studies can report different totals without necessarily disagreeing about the broad direction of the comparison. Transparent system boundaries are essential when evaluating such claims.",
+      "sourceExcerptSha256": "c000f9c0ff72874ecce5c0fc116c36601ca0ae07f55c59648375410f0b4aa5c3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Solid-state batteries are already in widespread commercial use in electric vehicles.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines. Laboratory performance must be translated into cells that can be produced consistently at automotive scale. Interfaces between solid materials, durability over repeated cycles and manufacturing yield remain central engineering problems. Announcing a prototype or target date is consequently different from demonstrating affordable mass production.",
+      "sourceExcerptSha256": "439998df1c77d43bca664cca45814f3487dc19c86d6f3f6180d4f0ac2b20ef25",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Solid-state batteries eliminate the fire risk associated with liquid electrolytes.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Solid-state batteries, still largely in the research and development phase, promise to address several of these limitations. They use a solid electrolyte rather than a liquid one, which eliminates the fire risk associated with liquid electrolytes, increases energy density, and may reduce charging times to as little as ten minutes. Toyota, Samsung SDI, and several start-ups have announced plans for commercialisation in the late 2020s, though many industry analysts remain cautious about timelines. Laboratory performance must be translated into cells that can be produced consistently at automotive scale. Interfaces between solid materials, durability over repeated cycles and manufacturing yield remain central engineering problems. Announcing a prototype or target date is consequently different from demonstrating affordable mass production.",
+      "sourceExcerptSha256": "439998df1c77d43bca664cca45814f3487dc19c86d6f3f6180d4f0ac2b20ef25",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3q31",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Rural areas and developing economies face fewer barriers to EV adoption than urban areas.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it. Charger counts alone provide an incomplete measure. Drivers also need reliable equipment, compatible payment systems, clear pricing and enough power at useful locations. Network operators must anticipate demand without building expensive capacity that remains idle, while distribution grids may require upgrades where many vehicles charge at the same time.",
+      "sourceExcerptSha256": "c879d831f790308942d6722601f5b98e9bf1202fa6542d8033813fdf2bee905d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3q32",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The EU has introduced regulations requiring minimum recycled content levels for batteries by 2030.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, new regulations require battery manufacturers to achieve minimum recycled content levels by 2030, signalling a move towards a circular economy approach. Recycling can recover valuable materials and reduce pressure for new extraction, but collection systems and processing capacity must grow as the first large generations of vehicle batteries reach retirement. Design choices matter too: packs that are difficult to open or whose components are poorly labelled raise both costs and safety risks.",
+      "sourceExcerptSha256": "3c1b9819b29280d47769b397a173b9bc106533798a30b954c3e791648df8bda1",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3q33",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Road transport accounts for approximately what percentage of global greenhouse gas emissions?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal. Results vary with the size of the vehicle and battery, the distance driven, factory energy sources and assumptions about battery life. This explains why two credible studies can report different totals without necessarily disagreeing about the broad direction of the comparison. Transparent system boundaries are essential when evaluating such claims.",
+      "sourceExcerptSha256": "c000f9c0ff72874ecce5c0fc116c36601ca0ae07f55c59648375410f0b4aa5c3",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "16%"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "8%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "12%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "24%",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3q34",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What happens to an EV battery when it degrades to 70–80% of its original capacity?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects. Before reuse, however, operators must estimate a pack's remaining health and trace how it was used. Testing, transport, disassembly and liability all affect whether a second-life project is economical. Standardised information about battery condition could make this market safer and reduce unnecessary processing.",
+      "sourceExcerptSha256": "c9a352e265b8f6738e71322e7aeaa85e5a3667126bfc081fa47e452e2a1ae46c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "It can be repurposed for stationary energy storage."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It is immediately recycled into new batteries.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "It must be disposed of due to fire risk.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "It is returned to the manufacturer for refurbishment.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3q35",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Which of the following is NOT mentioned as a limitation of current lithium-ion batteries?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+      "sourceExcerptSha256": "438aa77cbf3208446033fb26646cdf0f5928dbed9466d4a02260f3459b4a30b8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "Higher manufacturing cost than solid-state batteries."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "Long charging times compared to petrol refuelling.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "Performance reduction in cold temperatures.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "3",
+          "text": "Supply chain concerns over raw material sourcing.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-summary__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "charging"
+      ],
+      "questionPrompt": "The electric vehicle sector has grown rapidly, but the transition faces several challenges. Battery technology remains central: lithium-ion batteries have improved but still suffer from long {{36}} times and raw material concerns. Solid-state batteries promise higher {{37}} density and may reduce charging to ten minutes. The charging {{38}} gap is a major barrier, especially outside urban areas. Used EV batteries can be repurposed for {{39}} storage applications when they degrade. The long-term environmental benefit of EVs depends heavily on the pace of grid {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+      "sourceExcerptSha256": "438aa77cbf3208446033fb26646cdf0f5928dbed9466d4a02260f3459b4a30b8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "charging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "charging",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-summary__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "questionPrompt": "The electric vehicle sector has grown rapidly, but the transition faces several challenges. Battery technology remains central: lithium-ion batteries have improved but still suffer from long {{36}} times and raw material concerns. Solid-state batteries promise higher {{37}} density and may reduce charging to ten minutes. The charging {{38}} gap is a major barrier, especially outside urban areas. Used EV batteries can be repurposed for {{39}} storage applications when they degrade. The long-term environmental benefit of EVs depends heavily on the pace of grid {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns. Manufacturers are responding with several cell chemistries rather than a single replacement. Some reduce dependence on costly minerals at the expense of energy density; others prioritise range or charging performance.",
+      "sourceExcerptSha256": "438aa77cbf3208446033fb26646cdf0f5928dbed9466d4a02260f3459b4a30b8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "energy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "energy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-summary__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "infrastructure"
+      ],
+      "questionPrompt": "The electric vehicle sector has grown rapidly, but the transition faces several challenges. Battery technology remains central: lithium-ion batteries have improved but still suffer from long {{36}} times and raw material concerns. Solid-state batteries promise higher {{37}} density and may reduce charging to ten minutes. The charging {{38}} gap is a major barrier, especially outside urban areas. Used EV batteries can be repurposed for {{39}} storage applications when they degrade. The long-term environmental benefit of EVs depends heavily on the pace of grid {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The charging infrastructure gap remains a significant barrier to mass adoption, particularly in rural areas and developing economies. Urban consumers with access to home charging face few practical barriers, but those in apartments or without private driveways are dependent on public charging networks that, in many countries, remain insufficient. Governments in Europe, the United States, and China are investing billions in expanding charging networks, but the pace of expansion will determine whether EVs can achieve mass penetration before mid-century targets require it. Charger counts alone provide an incomplete measure. Drivers also need reliable equipment, compatible payment systems, clear pricing and enough power at useful locations. Network operators must anticipate demand without building expensive capacity that remains idle, while distribution grids may require upgrades where many vehicles charge at the same time.",
+      "sourceExcerptSha256": "c879d831f790308942d6722601f5b98e9bf1202fa6542d8033813fdf2bee905d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "infrastructure",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "infrastructure",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-summary__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stationary"
+      ],
+      "questionPrompt": "The electric vehicle sector has grown rapidly, but the transition faces several challenges. Battery technology remains central: lithium-ion batteries have improved but still suffer from long {{36}} times and raw material concerns. Solid-state batteries promise higher {{37}} density and may reduce charging to ten minutes. The charging {{38}} gap is a major barrier, especially outside urban areas. Used EV batteries can be repurposed for {{39}} storage applications when they degrade. The long-term environmental benefit of EVs depends heavily on the pace of grid {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects. Before reuse, however, operators must estimate a pack's remaining health and trace how it was used. Testing, transport, disassembly and liability all affect whether a second-life project is economical. Standardised information about battery condition could make this market safer and reduce unnecessary processing.",
+      "sourceExcerptSha256": "c9a352e265b8f6738e71322e7aeaa85e5a3667126bfc081fa47e452e2a1ae46c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stationary",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stationary",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-summary__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "decarbonisation",
+        "decarbonization"
+      ],
+      "questionPrompt": "The electric vehicle sector has grown rapidly, but the transition faces several challenges. Battery technology remains central: lithium-ion batteries have improved but still suffer from long {{36}} times and raw material concerns. Solid-state batteries promise higher {{37}} density and may reduce charging to ten minutes. The charging {{38}} gap is a major barrier, especially outside urban areas. Used EV batteries can be repurposed for {{39}} storage applications when they degrade. The long-term environmental benefit of EVs depends heavily on the pace of grid {{40}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Future of Electric Vehicles",
+      "sourceExcerpt": "Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. An EV charged from a coal-powered grid produces more lifecycle emissions than a highly efficient petrol vehicle. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. Charging strategy can strengthen that relationship if vehicles draw power when low-carbon generation is plentiful and avoid periods of peak demand. Policy must also consider public transport, walking, cycling and the total number and size of vehicles, since changing the powertrain alone does not solve congestion or every environmental cost. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.",
+      "sourceExcerptSha256": "955a40efd7416f2860730c4f37be678f023a274cca3bb275ac4a3e6c1a066838",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "decarbonisation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "decarbonisation",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "decarbonization",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q2",
+        "before": "Environmental Science; Environmental",
+        "after": "Environmental Science",
+        "reason": "The stated faculty is the full two-word name."
+      },
+      {
+        "scope": "Listening Q7",
+        "before": "acceptance letter; letter",
+        "after": "acceptance letter",
+        "reason": "The generic variant loses the required document type."
+      },
+      {
+        "scope": "Listening Q8",
+        "before": "email address; email",
+        "after": "email address only",
+        "reason": "“email” does not complete the “Send to” table cell."
+      },
+      {
+        "scope": "Listening Q34",
+        "before": "night; star",
+        "after": "night",
+        "reason": "The transcript states “night sky”; “star sky” is not a valid completion."
+      },
+      {
+        "scope": "Listening Q35",
+        "before": "landmarks; landmark",
+        "after": "landmarks",
+        "reason": "The recording and displayed list require the plural form."
+      }
+    ]
+  },
+  "reviewSha256": "e8848db1a5b27797b3d47bf03da47e4dbbc11f1e2cdec5b42efddecb0d3340fc"
+}

@@ -396,7 +396,7 @@ In response to these challenges, governments, companies, and international bodie
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. AI systems that learn from historically biased data may {{8}} patterns of discrimination rather than eliminate them.\n9. The COMPAS algorithm was used to inform {{9}} recommendations in parts of the United States.\n10. The EU's GDPR established a right to {{10}} for individuals affected by automated decisions.\n11. Lethal autonomous weapons systems are sometimes abbreviated as {{11}}.\n12. International humanitarian law requires combatants to distinguish between civilians and {{12}} targets.\n13. The adoption of ethical language without genuine change in practice is sometimes described as {{13}}.`,
+          template: `8. AI systems that learn from historically biased data may {{8}} patterns of discrimination rather than eliminate them.\n9. The COMPAS algorithm was used to inform {{9}} recommendations in parts of the United States.\n10. Lawyers debate the exact scope of any broader right to {{10}} under the GDPR.\n11. Lethal autonomous weapons systems are sometimes abbreviated as {{11}}.\n12. International humanitarian law requires combatants to distinguish between civilians and {{12}} targets.\n13. The adoption of ethical language without genuine change in practice is sometimes described as {{13}}.`,
           blanks: [
             { num: 8, answers: ['perpetuate', 'amplify'] },
             { num: 9, answers: ['sentencing'] },
@@ -552,7 +552,7 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The author describes money as a social technology invented to solve problems of exchange.\n32. {{32}}: Lydian coins were the first coins to be made exclusively from pure gold.\n33. {{33}}: Chinese "flying money" was initially used by wealthy merchants rather than ordinary citizens.\n34. {{34}}: The Bank of England was the first central bank ever established in the world.\n35. {{35}}: The United States formally ended gold convertibility of the dollar in 1971.\n36. {{36}}: The passage suggests that cryptocurrencies have successfully replaced conventional currencies in most economies.`,
+          template: `31. {{31}}: The author describes money as a social technology invented to solve problems of exchange.\n32. {{32}}: Lydian coins were the first coins to be made exclusively from pure gold.\n33. {{33}}: Chinese "flying money" began as merchant remittance and deposit arrangements rather than a general shop currency.\n34. {{34}}: The Bank of England was the first central bank ever established in the world.\n35. {{35}}: The United States formally ended gold convertibility of the dollar in 1971.\n36. {{36}}: The passage suggests that cryptocurrencies have successfully replaced conventional currencies in most economies.`,
           blanks: [
             { num: 31, answers: ['YES'] },
             { num: 32, answers: ['NO'] },

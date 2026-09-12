@@ -1,0 +1,3532 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 8,
+  "mockId": "set-8",
+  "contentVersionAtReview": "ielts-set-8-v2",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "a4e3b4597ab819320a4d11033b563526f8cfa4b5b4f8b9a79db07d1d0007d8f3",
+    "listeningMaterialSha256": "3a4ebeaed537b00012704d5d6d1ca45c87878e8095ccdc9c72aab5dc938179c8",
+    "readingMaterialSha256": "11b99956db5f0a3e0b83a3b159a3fd8ed0f8e35d55d1e7d2ae323353094beb5b",
+    "objectiveMaterialSha256": "f4ad25635858521d2e77cdaa0a0dd56f864158c6f937a08a7a025a47bf756f0f"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Ashworth",
+        "ashworth"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "0161 496 0175",
+        "01614960175"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "rucksack",
+        "backpack"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "green"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "train"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "laptop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "Manchester",
+        "manchester"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "Friday",
+        "friday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "43"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "400",
+        "£400"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "C",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the food market",
+        "B": "B. the evening concert",
+        "C": "C. the children's parade",
+        "D": "D. the craft workshops",
+        "E": "E. the fireworks display"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "Victoria Park",
+        "park"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "three days",
+        "3 days"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "T-shirt",
+        "t-shirt",
+        "tshirt"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "lake"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "sports centre",
+        "sports center"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "marquee"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "information tent",
+        "tent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "hospital"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "he has always wanted to run a business",
+        "he noticed a gap in the local market",
+        "a friend suggested it to him"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "too few people were surveyed",
+        "the questions were badly written",
+        "the people he surveyed were not typical customers"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "charge less than his competitors",
+        "charge the same as his competitors",
+        "offer a free first repair"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "offering a service they cannot — visiting customers at home",
+        "selling spare parts more cheaply than them",
+        "opening a physical shop"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "competition from established repair shops",
+        "his own lack of technical skill",
+        "poor cash flow in the early months"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "summary"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "forecast"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "customers",
+        "customer"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "marketing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "insurance"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "sundial"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "sun"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "Egyptians",
+        "egyptians",
+        "Egyptian"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "monasteries",
+        "monastery"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "hands",
+        "hand"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "Huygens",
+        "huygens"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "accurate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "spring"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "longitude"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "quartz"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "self-domestication"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "tameness"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "social"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "chimpanzees"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "intentions"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "bargain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sent__21",
+      "accepted": [
+        "ninety-five",
+        "95"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sent__22",
+      "accepted": [
+        "land"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sent__23",
+      "accepted": [
+        "energy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sent__24",
+      "accepted": [
+        "growth"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sent__25",
+      "accepted": [
+        "plant growth"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sent__26",
+      "accepted": [
+        "low-light"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "That people feel equal emotional responses to gains and losses of the same amount.",
+        "That people experience the pain of losses approximately twice as strongly as the pleasure of equivalent gains.",
+        "That rational investors always hold losing stocks until they recover their full value.",
+        "That insurance products are purchased because they deliver measurable financial gain."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "The formal process of keeping financial records in separate accounts.",
+        "A psychological tendency to value money differently based on its source or intended use.",
+        "The rational calculation of expected value when making financial decisions.",
+        "A banking practice of separating holiday funds from regular income."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "A government scheme to reduce excessive spending among high earners.",
+        "A pattern where high-income spending pressure drives increased spending further down the income distribution.",
+        "The tendency for windfall money to be spent more quickly than earned income.",
+        "A psychological effect caused by the visibility of others' savings rather than spending."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "They are ineffective because people ignore default settings.",
+        "They are too costly to implement in pension systems.",
+        "They may be paternalistic by guiding people towards choices chosen by policy-makers.",
+        "They have been shown to reduce participation in retirement savings schemes."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "prospect theory"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "present bias"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "enrolment"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "individual autonomy"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Ashworth",
+        "ashworth"
+      ],
+      "questionPrompt": "Surname: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: Yes. It's Daniel Ashworth.",
+      "sourceExcerptSha256": "6c8e888c048ad2339d54683805ef59cf72f1063cd3113e1fc247a63ba8457fc8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Ashworth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Ashworth",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "ashworth",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "0161 496 0175",
+        "01614960175"
+      ],
+      "questionPrompt": "Contact number: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: Yes, use 0161 496 0175.",
+      "sourceExcerptSha256": "f05f9b22016ef120adc4a9634d19079138608e37ae0b53b22f995f0774daa544",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "0161 496 0175",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "0161 496 0175",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "01614960175",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rucksack",
+        "backpack"
+      ],
+      "questionPrompt": "Item lost: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: I first described it as a suitcase when I spoke to the station, but that was wrong. It's actually a rucksack, the sort you carry on both shoulders.",
+      "sourceExcerptSha256": "9fe80bd457c82d6a54dc468aeabc3f82c65342edc32325827512f40efe2c5af5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rucksack",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rucksack",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "backpack",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "green"
+      ],
+      "questionPrompt": "Colour: {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: It's dark green. The straps are grey and one zip has a red cord, but anyone looking at the whole bag would call it green.",
+      "sourceExcerptSha256": "7a3c8f11f3db12dc90412d21ebbb4ecc929a38551a1284912afe15c66c5cfb5a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "green",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "green",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "train"
+      ],
+      "questionPrompt": "Item was left on the {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: Hi. I think I left a bag on a train earlier today, and I'm hoping someone has handed it in.",
+      "sourceExcerptSha256": "d985e8c7f6ecf5e8710100e13987884bfd1aa92db2b9774fdb579922e317034f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "train",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "train",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "laptop"
+      ],
+      "questionPrompt": "Most valuable contents: a {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: In the main compartment there was a laptop in a black protective sleeve. That is the most valuable item. There were also two library books, a blue jumper and a charger, but no cash or passport.",
+      "sourceExcerptSha256": "cb48d15c6b10da29e929aa1424b518de4c2eb9279554e63119066c2a87a84bac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "laptop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "laptop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Manchester",
+        "manchester"
+      ],
+      "questionPrompt": "Travelling from | {{7}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: From Manchester. I caught the direct service rather than changing at Leeds.",
+      "sourceExcerptSha256": "eef359edad84459e2e05631150d947b0b062c24f31da0bd7c0869a3c6351ab5d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Manchester",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Manchester",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "manchester",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Friday",
+        "friday"
+      ],
+      "questionPrompt": "Day of travel | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: Today is Friday. I nearly travelled on Thursday evening, then changed my booking, so Friday is the date you need.",
+      "sourceExcerptSha256": "5a356267f3f7e6b8008fbe18fdb3c0f1e0cdc59711f9812a5829a185cc163a89",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Friday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Friday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "friday",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "43"
+      ],
+      "questionPrompt": "Seat number | {{9}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: The quiet coach, carriage C. My reserved place was seat 43, beside the window.",
+      "sourceExcerptSha256": "45f4971fdf9b556e71838988c8e7cb896e6d3921717209b66c87b0bff8c31351",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "43",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "43",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "400",
+        "£400"
+      ],
+      "questionPrompt": "Estimated value of contents | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Reporting a Lost Item",
+      "sourceExcerpt": "PASSENGER: The laptop is a few years old, so I wouldn't claim its original price. With the charger, clothes and books, I'd estimate the contents at around £400.",
+      "sourceExcerptSha256": "2af78b4fcdec68414042580e86674a4d2522454d32274b94b38d10788516bc49",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "400",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "400",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£400",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "C",
+        "D"
+      ],
+      "questionPrompt": "Which TWO attractions are new at this year's festival?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "First, the programme. Several familiar attractions are returning. The food market will occupy the eastern path as it did last year, the evening concert remains on Saturday, and the fireworks display will close the event on Sunday. None of those three is new. This year we have introduced two additions. At midday on Saturday, a children's parade will travel through the grounds, with costumes made by local schools. We are also running craft workshops throughout the weekend in the main tent. Those workshops and the children's parade are the two new attractions visitors may ask about.",
+      "sourceExcerptSha256": "af169b95d7f17035b5987d45ee594aed003d941d776822eb376515b9f384e72a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "C",
+          "text": "the children's parade"
+        },
+        {
+          "key": "D",
+          "text": "the craft workshops"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "the food market",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "the evening concert",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the fireworks display",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Victoria Park",
+        "park"
+      ],
+      "questionPrompt": "• Location: {{13}}, in the town centre.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "The festival is being held in Victoria Park, right in the town centre. There is another green space called Riverside Gardens beside the station, and some online maps have confused the two. Please make sure visitors know they need Victoria Park. Pedestrians should use the north and west gates; the smaller riverside entrance is reserved for performers carrying equipment.",
+      "sourceExcerptSha256": "6948e3d4004b3bb89c63b770b03b39c647af015679d2915c545f2513a19c51ed",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Victoria Park",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Victoria Park",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "park",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "three days",
+        "3 days"
+      ],
+      "questionPrompt": "• The festival runs for {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "This year's event runs for three days. It begins at four on Friday afternoon and continues until eight on Sunday evening. In previous years we operated only on Saturday and Sunday, so returning visitors may expect two days. The longer programme gives us room for more than two hundred stalls without making the central paths too crowded.",
+      "sourceExcerptSha256": "ab7ce4fe4955aadb467dfd82849c71baab12c12027ca1007bc5b68aabc87589a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three days",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "three days",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "3 days",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "T-shirt",
+        "t-shirt",
+        "tshirt"
+      ],
+      "questionPrompt": "• Volunteers should collect their {{15}} before their shift.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "When you sign in for a shift, collect your festival T-shirt from the volunteer desk behind this platform. Wear it over your own clothes so visitors can identify you. Waterproof jackets are available if necessary, but they remain festival property and must be returned. The cap in your welcome pack is optional; the T-shirt is the item every volunteer should collect.",
+      "sourceExcerptSha256": "6fd8e4ddc595bca5ffa7803fb6395d0d753f3b7ada62b76cce8f7f5b50914437",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "T-shirt",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "T-shirt",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "t-shirt",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "tshirt",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lake"
+      ],
+      "questionPrompt": "• The main stage is beside the {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "Let us look at the site. The main stage is beside the lake in the centre of the park. The ground there slopes gently, so spectators at the back can still see. The smaller acoustic stage is near the rose garden, and the children's storytelling area is inside the library tent. If someone simply asks where the main performances happen, direct them towards the lake.",
+      "sourceExcerptSha256": "1c7f88e35c4c166e2ae3d660bee264f959f8c9e4597a40b9c5b767d05b0211e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lake",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lake",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sports centre",
+        "sports center"
+      ],
+      "questionPrompt": "• Visitors can park at the {{17}} across the road.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "Parking causes the most confusion. No visitor cars are allowed inside Victoria Park. The public car park is at the sports centre across the road, not at the swimming pool two streets away. It has accessible bays near its entrance. Drivers pay the normal parking charge, while bicycles can be left free at racks beside the north gate.",
+      "sourceExcerptSha256": "a31d79cc806887a95977acec1f15b11dbc88b872efed48bd17f0a1af79aa9903",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sports centre",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sports centre",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "sports center",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "marquee"
+      ],
+      "questionPrompt": "• If it rains, performances move to the {{18}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "The forecast currently predicts rain on Saturday afternoon. Light rain will not alter the programme, so visitors should bring suitable clothing. If conditions become unsafe, however, outdoor performances will move into the marquee near the west gate. The concert will not move to the sports centre, and craft activities already inside the main tent will continue there as planned. The event manager will make any weather decision and send it to volunteers by text.",
+      "sourceExcerptSha256": "0adf28ffe3415d5b833ba1e0e529bf2a5f0c9977e5aad9295a1eca30903c7462",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "marquee",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "marquee",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "information tent",
+        "tent"
+      ],
+      "questionPrompt": "• Lost children should be taken to the {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "The forecast currently predicts rain on Saturday afternoon. Light rain will not alter the programme, so visitors should bring suitable clothing. If conditions become unsafe, however, outdoor performances will move into the marquee near the west gate. The concert will not move to the sports centre, and craft activities already inside the main tent will continue there as planned. The event manager will make any weather decision and send it to volunteers by text.",
+      "sourceExcerptSha256": "0adf28ffe3415d5b833ba1e0e529bf2a5f0c9977e5aad9295a1eca30903c7462",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "information tent",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        },
+        {
+          "answer": "tent",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hospital"
+      ],
+      "questionPrompt": "• Money raised goes to the local {{20}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Community Festival Briefing",
+      "sourceExcerpt": "The final point concerns fundraising. Stall fees cover the operating costs of the festival. All additional money raised this year goes to the local hospital, specifically towards equipment for its children's ward. Last year we supported the community theatre, so please do not repeat that older information. Donation boxes are sealed and should be taken only by volunteers assigned to the finance team.",
+      "sourceExcerptSha256": "488170a21627ee662562ce25053bf49fb8b5734249c60e19a971ac4ace8eb29c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hospital",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hospital",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Sam chose the business idea mainly because",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "SAM: The experience means I have the technical skills, but it wasn't my main reason. I noticed a gap in the local market. There are many cyclists here, yet hardly any repair shops, and none offers a mobile service. A friend liked the idea when I mentioned it, but she didn't suggest it.",
+      "sourceExcerptSha256": "f727dd24ca9dee1aa46113a640818eec2570dd6c3572e331be4cb436b361cc16",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "he noticed a gap in the local market"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "he has always wanted to run a business",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "a friend suggested it to him",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "The tutor thinks Sam's market research is weak because",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "TUTOR: Your market research should demonstrate that those people will pay. You surveyed thirty members of your cycling club. Thirty is not necessarily too few for an initial exercise, and the questions themselves are clear. What weakens the result?",
+      "sourceExcerptSha256": "d12d21af4b366ad406b68ef2045fccb3ebbe5593320b0a626f9afb0a8fad822a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "the people he surveyed were not typical customers"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "too few people were surveyed",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "the questions were badly written",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Regarding pricing, Sam finally decides to",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "SAM: I assumed a low price would attract people to an unfamiliar service. But once I added fuel, travel time and replacement tools, the low rate barely covered my costs. I now think I should charge the same as competitors and compete on convenience.",
+      "sourceExcerptSha256": "833ecf329c1654305bf0d356eb03cc0996a496c051581e202d074fd7da7822a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "charge the same as his competitors"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "charge less than his competitors",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "offer a free first repair",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The tutor advises Sam to respond to online competitors by",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "SAM: I can visit the customer at home or at work, inspect the bicycle and fit the part there. An online seller can deliver a component, but it cannot provide that mobile repair service.",
+      "sourceExcerptSha256": "9b462b5a4ea590501829a5535c759bd674e0be4dd47acb77ceec5b3224795de0",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "offering a service they cannot — visiting customers at home"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "selling spare parts more cheaply than them",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "opening a physical shop",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Sam says the biggest risk to the business is",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "SAM: Poor cash flow. I am confident in my repair skills, and the established shops are far away. The immediate problem is timing: I must pay for tools, insurance and a van before I have many customers. Money goes out before enough comes in.",
+      "sourceExcerptSha256": "ac819bd721346d83ffdef83675646ebf3487226d412b627f8d035ce2ae88baed",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "poor cash flow in the early months"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "competition from established repair shops",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "his own lack of technical skill",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "summary"
+      ],
+      "questionPrompt": "• a short {{26}} at the very beginning.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "TUTOR: Yes. In the plan itself, label it simply “Summary”. Keep it short and place it at the very beginning. It should identify the customer problem, your mobile solution and the amount of start-up finance required.",
+      "sourceExcerptSha256": "c270bd7c99e8b2666374ae97d39522152a663446773e762c8b025b3f18faf15a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Summary",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "summary",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "forecast"
+      ],
+      "questionPrompt": "• a monthly cash-flow {{27}} for the first year.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "TUTOR: That is sensible. Next, the financial section contains annual totals but does not show when money enters and leaves the business. Add a monthly cash-flow forecast for the first year. The month-by-month pattern matters because winter demand may be lower while several costs remain fixed.",
+      "sourceExcerptSha256": "809e6b19040e6335831e26aa54eca967ce2e6ea027337b26be0bae8769e08419",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "forecast",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "forecast",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "customers",
+        "customer"
+      ],
+      "questionPrompt": "• a description of the target {{28}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "TUTOR: Good. Your product description is detailed, but the reader still cannot tell who will buy it. Add a description of the target customers. Commuters may form the largest group, but include parents and leisure cyclists if your revised survey supports that.",
+      "sourceExcerptSha256": "651e84fe3270d4b169d1eb61eb36be4f2094b62eecf0f2e02a20f390fa98f0dd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "customers",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "customers",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "customer",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "marketing"
+      ],
+      "questionPrompt": "• a section on {{29}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "TUTOR: Then add a section on marketing. At the moment, there is no plan for how those groups will hear about you. Local employers, cycling clubs and notices near transport hubs may all help, but estimate the cost and likely reach of each channel.",
+      "sourceExcerptSha256": "2443f4d4d7d47d98e2915b89643787296517f41ba96ac6e8982f84c6f2a69f02",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "marketing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "marketing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "insurance"
+      ],
+      "questionPrompt": "• Sam must also arrange {{30}} before starting.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Business Plan Tutorial",
+      "sourceExcerpt": "SAM: Poor cash flow. I am confident in my repair skills, and the established shops are far away. The immediate problem is timing: I must pay for tools, insurance and a van before I have many customers. Money goes out before enough comes in.",
+      "sourceExcerptSha256": "ac819bd721346d83ffdef83675646ebf3487226d412b627f8d035ce2ae88baed",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "insurance",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "insurance",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sundial"
+      ],
+      "questionPrompt": "• The earliest device was the {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "For this overview, the earliest device we will consider is the sundial. Ancient civilisations used several forms, from a simple upright stick to carefully marked stone surfaces. The moving shadow indicated how far the day had progressed. Such devices helped organise work, ceremonies and public activity, although their divisions were not always equal to our modern sixty-minute hours.",
+      "sourceExcerptSha256": "33dff690687065798c7b6baa3982a8adced99fde39611c152eab40abc8a01fac",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sundial",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sundial",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sun"
+      ],
+      "questionPrompt": "• It relied on the position of the {{32}} and failed at night.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "The principle was straightforward. As Earth turned, the apparent position of the sun changed, causing a pointer's shadow to move across marked lines. The method could be surprisingly effective when the instrument was designed for its location. Its weakness was equally clear: it depended on the position of the sun. At night it produced no reading, and clouds or a poorly chosen position could make the shadow difficult to see. A sundial also had to be oriented correctly rather than simply placed on any flat surface.",
+      "sourceExcerptSha256": "34ec9ecdd4582da5f6e2dc285f6c63a0cc132bb00033bc2df4f0d667774a5a04",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sun",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sun",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Egyptians",
+        "egyptians",
+        "Egyptian"
+      ],
+      "questionPrompt": "• The water clock was used by the ancient {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "Communities therefore developed instruments that did not rely directly on daylight. One important example was the water clock. Water flowed at a controlled rate into or out of a vessel, and marks on the container indicated elapsed time. The ancient Egyptians used such clocks, including for activities that took place after dark. Greek, Chinese and other societies later developed their own versions, sometimes with elaborate displays.",
+      "sourceExcerptSha256": "bda6adde5a0362bd7f88fbcbb1524ddf635829ee2c7ce98687b027e8f5f6b3a1",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Egyptians",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Egyptians",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "egyptians",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "Egyptian",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "monasteries",
+        "monastery"
+      ],
+      "questionPrompt": "• The first mechanical clocks appeared in European {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "The next stage in our simplified chronology is the emergence of mechanical clocks in medieval Europe. The first large examples appeared in monasteries. Monks needed signals for the prescribed hours of prayer, including times when no one wanted to watch a water level continuously. Weight-driven mechanisms gradually provided a more automatic solution. Similar machines later appeared in church towers and civic buildings, where an audible signal could regulate activity across a town.",
+      "sourceExcerptSha256": "0911712e54816c680305955bc4d46125cfb223c87d554d841a887786ca2b3a0c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "monasteries",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "monasteries",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "monastery",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "hands",
+        "hand"
+      ],
+      "questionPrompt": "• Many early clocks had no {{35}} and only struck a bell.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "These early mechanical clocks looked very different from modern wall clocks. Many had no hands and no visual face at all. Their purpose was simply to strike a bell at the correct hour. The English word “clock” is itself connected historically with words for bell. Accuracy was limited; a mechanism might gain or lose a substantial amount in one day and require adjustment by observing the sun.",
+      "sourceExcerptSha256": "a6aa38222fd09ed60f3e7ab35bf12fe6e5080f9536d57fd103bec6fba73fe3a2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hands",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "hands",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "hand",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Huygens",
+        "huygens"
+      ],
+      "questionPrompt": "• In 1656 {{36}} built the first pendulum clock.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "A major advance came in the seventeenth century. In 1656, the Dutch scientist Christiaan Huygens built the first practical pendulum clock. Galileo had earlier studied the regular motion of pendulums, but he did not complete such a working clock. Giving Huygens credit for the 1656 instrument therefore does not mean he was the first person to notice the pendulum's useful properties.",
+      "sourceExcerptSha256": "5a2e0499c7edc758c4a535574308a13f1d2e911408dbbbc5263fdd5662f087b3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Huygens",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Huygens",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "huygens",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "accurate"
+      ],
+      "questionPrompt": "• The pendulum made clocks far more {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "The pendulum swings in a highly regular way when its length and movement are controlled. Connecting that motion to the clock mechanism made clocks far more accurate than most earlier designs. Instead of losing many minutes in a day, a well-made pendulum clock might lose only seconds. This improvement encouraged more precise scientific observation and made the minute hand a normal feature.",
+      "sourceExcerptSha256": "b9773593868734da3c008de7d9627cb59eefafbfd0c223a0a92a30e676497cb4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "accurate",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "accurate",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "spring"
+      ],
+      "questionPrompt": "• The coiled {{38}} allowed clocks to become portable.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "However, a long swinging pendulum works best when it remains stable. It is unsuitable for a pocket and unreliable on a moving ship. Portability required another source of controlled energy. The coiled spring allowed a mechanism to operate without heavy hanging weights. Spring-powered clocks could be made smaller, eventually leading to watches carried on the body. Early portable pieces still varied with movement and temperature, but makers steadily improved them.",
+      "sourceExcerptSha256": "063570bfe259e6453fbcc8d567ac35413c3441c4707a67b35cbb1ea733fa0a34",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "spring",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "spring",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "longitude"
+      ],
+      "questionPrompt": "• Reliable clocks let sailors calculate their {{39}} at sea.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "The challenge was building a clock that remained reliable through changes in temperature, humidity and the constant motion of a vessel. Marine chronometers addressed these problems through careful engineering. Once reliable clocks could travel aboard ships, sailors could calculate longitude with much greater confidence. The clock did not tell them location by itself; it supplied the reference time needed for the calculation.",
+      "sourceExcerptSha256": "05f42c755d94bd19127be0e4d8f4820d7b6692be4185339cd275d16f20de5f42",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "longitude",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "longitude",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "quartz"
+      ],
+      "questionPrompt": "• Modern clocks keep time using crystals of {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The History of Clocks",
+      "sourceExcerpt": "In the twentieth century, many devices replaced mechanical oscillators with electrically driven systems. Most ordinary clocks and watches today regulate time using tiny crystals of quartz. When an electric current is applied, quartz vibrates at a highly stable frequency. Electronic circuits count those vibrations and convert them into seconds. The material is inexpensive, compact and sufficiently precise for normal daily use.",
+      "sourceExcerptSha256": "45eacb724c2d9bd51eb8d1adf543edbbdcc44de4292780c4e26c75be77d0bacc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "quartz",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "quartz",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "1. {{1}}: The earliest fossil evidence for domestic dogs is approximately 15,000 years old.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago, from sites in Europe and the Near East. However, genetic analyses have produced a more complex picture. A 2016 study comparing ancient and modern dog DNA concluded that dogs were domesticated twice independently—once in Europe or the Near East and once in East Asia—before the East Asian lineage partially replaced the European one following human migrations. This scenario remains contested: a 2020 analysis suggested a single domestication event in Southeast Asia or Central Asia, with subsequent dispersal across the globe. Fossils and genes answer different parts of the question. Bones can reveal where an animal lived and whether its anatomy differed from that of wolves, while DNA can reveal relationships among populations that left no recognised remains. Both records are incomplete, and later interbreeding between dogs and wolves further obscures ancestry. The difficulty lies partly in the fact that domestication was not a single moment but likely a drawn-out process spanning thousands of years and involving multiple wolf populations.",
+      "sourceExcerptSha256": "2903259daa8310eca1dd511b27d1c2147f7d69507cb602b17ff5618f378d82de",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "2. {{2}}: Genetic studies have produced a single universally accepted theory of dog domestication.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago, from sites in Europe and the Near East. However, genetic analyses have produced a more complex picture. A 2016 study comparing ancient and modern dog DNA concluded that dogs were domesticated twice independently—once in Europe or the Near East and once in East Asia—before the East Asian lineage partially replaced the European one following human migrations. This scenario remains contested: a 2020 analysis suggested a single domestication event in Southeast Asia or Central Asia, with subsequent dispersal across the globe. Fossils and genes answer different parts of the question. Bones can reveal where an animal lived and whether its anatomy differed from that of wolves, while DNA can reveal relationships among populations that left no recognised remains. Both records are incomplete, and later interbreeding between dogs and wolves further obscures ancestry. The difficulty lies partly in the fact that domestication was not a single moment but likely a drawn-out process spanning thousands of years and involving multiple wolf populations.",
+      "sourceExcerptSha256": "2903259daa8310eca1dd511b27d1c2147f7d69507cb602b17ff5618f378d82de",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "3. {{3}}: Belyaev's fox experiment began in the 1950s in Russia.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+      "sourceExcerptSha256": "9196dc8ed30de7123143c282760b1040155d00ce91ee24205c7928e202b40c90",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "4. {{4}}: Belyaev selected foxes based on their physical appearance rather than their behaviour.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+      "sourceExcerptSha256": "9196dc8ed30de7123143c282760b1040155d00ce91ee24205c7928e202b40c90",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "5. {{5}}: Foxes in Belyaev's experiment developed curled tails within the first generation.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+      "sourceExcerptSha256": "9196dc8ed30de7123143c282760b1040155d00ce91ee24205c7928e202b40c90",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: Dogs perform better than chimpanzees at following a human pointing gesture.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+      "sourceExcerptSha256": "38aa85481e6a76ed4dcd3ea2680072ddda8746a668ec31f5e165b7c512983e8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: Domestic dogs currently outnumber wild wolves by roughly one thousand to one.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The evolutionary success of dogs has come at a cost to the wolves from which they descend. As human populations expanded and natural habitats contracted, wolf populations declined dramatically. Today, domestic dogs outnumber wolves by a ratio of approximately one thousand to one—a striking reversal of the balance that existed at the beginning of the human-canine relationship. Dogs travelled with people into environments far beyond the original range of their ancestors and acquired specialised roles in hunting, guarding, herding, and transport. That diversity of work later contributed to the enormous variation among dog populations. The evolutionary bargain struck between early humans and early dogs—shelter and food in exchange for loyalty and labour—has proved highly advantageous for one partner, though perhaps not for the other.",
+      "sourceExcerptSha256": "ac7a0ad0cd926cd05014cddba115d7c9c0cb9d770c607de738d0bc4ec8b5bead",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "self-domestication"
+      ],
+      "questionPrompt": "8. Wolves that were less fearful of humans had better access to food scraps, a process sometimes called {{8}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+      "sourceExcerptSha256": "9196dc8ed30de7123143c282760b1040155d00ce91ee24205c7928e202b40c90",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "self-domestication",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "self-domestication",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tameness"
+      ],
+      "questionPrompt": "9. Belyaev's experiment showed that selection for {{9}} rapidly produced a range of domestication traits.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called \"self-domestication.\" Humans may later have reinforced the process by keeping animals that warned of danger, helped locate prey, or consumed refuse around camps. Once people began choosing which animals survived and reproduced, unconscious selection could develop into more deliberate breeding. Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.",
+      "sourceExcerptSha256": "9196dc8ed30de7123143c282760b1040155d00ce91ee24205c7928e202b40c90",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tameness",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tameness",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "social"
+      ],
+      "questionPrompt": "10. Dogs are described as uniquely sensitive to human {{10}} cues.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+      "sourceExcerptSha256": "38aa85481e6a76ed4dcd3ea2680072ddda8746a668ec31f5e165b7c512983e8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "social",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "social",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chimpanzees"
+      ],
+      "questionPrompt": "11. Unlike dogs, {{11}} are less reliable at following a human pointing gesture to find food.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+      "sourceExcerptSha256": "38aa85481e6a76ed4dcd3ea2680072ddda8746a668ec31f5e165b7c512983e8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chimpanzees",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chimpanzees",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "intentions"
+      ],
+      "questionPrompt": "12. Some researchers argue that dogs evolved to read human {{12}} more effectively than any other animal.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. This skill is notable because a point has no necessary physical connection with the hidden object; the animal must treat a human movement as an attempt to communicate. Puppies can respond before extensive training, although experience with people strengthens performance. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.",
+      "sourceExcerptSha256": "38aa85481e6a76ed4dcd3ea2680072ddda8746a668ec31f5e165b7c512983e8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "intentions",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "intentions",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "bargain"
+      ],
+      "questionPrompt": "13. The passage describes the relationship between early humans and dogs as an evolutionary {{13}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: The Domestication of Dogs",
+      "sourceExcerpt": "The evolutionary success of dogs has come at a cost to the wolves from which they descend. As human populations expanded and natural habitats contracted, wolf populations declined dramatically. Today, domestic dogs outnumber wolves by a ratio of approximately one thousand to one—a striking reversal of the balance that existed at the beginning of the human-canine relationship. Dogs travelled with people into environments far beyond the original range of their ancestors and acquired specialised roles in hunting, guarding, herding, and transport. That diversity of work later contributed to the enormous variation among dog populations. The evolutionary bargain struck between early humans and early dogs—shelter and food in exchange for loyalty and labour—has proved highly advantageous for one partner, though perhaps not for the other.",
+      "sourceExcerptSha256": "ac7a0ad0cd926cd05014cddba115d7c9c0cb9d770c607de738d0bc4ec8b5bead",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "bargain",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "bargain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "An explanation of why staple crops are not suitable for vertical farming",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "E. The crop range currently suited to vertical farming is limited in another important way. Staple foods such as wheat, rice, and maize are not economically viable candidates for indoor production: they require large volumes per calorie, tolerate outdoor conditions relatively well, and are highly price-competitive on global commodity markets. The crops best suited to vertical farming are those with short growth cycles, compact growth habits, and high value relative to weight—characteristics that describe a narrow slice of the global diet.",
+      "sourceExcerptSha256": "bbe0f228274bbdef03ee0a4c67abac708e27f6b71941cb3e3559ffe32654ff25",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "A description of how water is conserved in vertical farming systems",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "B. The potential advantages of vertical farming are genuinely compelling. Because crops are grown indoors, they can be protected from pests without pesticides, from frost, drought, and flooding, and from contamination by pathogens common in outdoor environments. Yields per unit of land area can be dramatically higher than conventional agriculture: some vertical farms report yields ten to twenty times greater than field equivalents for leafy greens such as lettuce and spinach. Stacking creates several productive surfaces on the footprint that would hold only one field layer. Controlled temperature and light can also permit repeated harvests throughout the year instead of a single seasonal crop. Water use is typically reduced by up to ninety-five percent compared to conventional irrigation, as water is recirculated within the system and losses through evaporation and runoff are minimised.",
+      "sourceExcerptSha256": "2747623cc18d8200c84fd7e1ad539536c9fcf5677c43b0e879ca8b7be50aa147",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "Examples of regions using vertical farming despite land or climate constraints",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "C. The technology also offers geographic flexibility. Vertical farms can in principle be built anywhere—in urban warehouses close to consumers, in arid regions currently unsuitable for agriculture, or in polar territories where food security depends on costly imports. Producing delicate vegetables near cities can shorten the time between harvest and sale and reduce losses during long-distance transport. Proximity does not remove every supply-chain dependency, however, because a facility still requires electricity, nutrients, equipment, and skilled maintenance. Japan, which faces severe land constraints and frequent natural disasters, has become a global leader in vertical farming, with hundreds of facilities operating across the country. A growing number of vertical farms have been established in desert regions of the Middle East, supplying fresh produce to populations that would otherwise depend almost entirely on food imports.",
+      "sourceExcerptSha256": "e2ac5ee0d545e737cec8d532aa7c27ca83d9d6cc7fcff04378df119b48f02d1c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Specific data comparing the energy costs of vertical vs field-grown produce",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+      "sourceExcerptSha256": "8d2d22b96c1fcae18452201f8db9cbc1c2a5d01d9b79669f4281199d71df0fd4",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "A reference to how new lighting technologies have improved efficiency",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+      "sourceExcerptSha256": "99f3acedf5087436d30900fe91ea47d53d72d03a6bdb996326d5c1a67fe8067c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "A general introduction to the debate about vertical farming's potential",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "A. Vertical farming—the practice of growing crops in stacked layers inside climate-controlled buildings—has attracted significant investment and media attention over the past decade. Proponents present it as a revolutionary answer to some of the most pressing challenges facing the global food system: land scarcity, water depletion, pesticide use, and the disruption of supply chains by extreme weather events. Critics question whether the technology can deliver on its promises at scale. The debate reflects deeper tensions in how societies think about the future of agriculture.",
+      "sourceExcerptSha256": "c612ddc33bc59e6311313eddc91a423d9033a0a7e9dff69b63d429ac2ab4e6d1",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "A mention of the crops for which vertical farming is currently most economically feasible",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+      "sourceExcerptSha256": "8d2d22b96c1fcae18452201f8db9cbc1c2a5d01d9b79669f4281199d71df0fd4",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sent__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ninety-five",
+        "95"
+      ],
+      "questionPrompt": "21. Vertical farms can reduce water use by up to {{21}} percent compared to conventional irrigation.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "B. The potential advantages of vertical farming are genuinely compelling. Because crops are grown indoors, they can be protected from pests without pesticides, from frost, drought, and flooding, and from contamination by pathogens common in outdoor environments. Yields per unit of land area can be dramatically higher than conventional agriculture: some vertical farms report yields ten to twenty times greater than field equivalents for leafy greens such as lettuce and spinach. Stacking creates several productive surfaces on the footprint that would hold only one field layer. Controlled temperature and light can also permit repeated harvests throughout the year instead of a single seasonal crop. Water use is typically reduced by up to ninety-five percent compared to conventional irrigation, as water is recirculated within the system and losses through evaporation and runoff are minimised.",
+      "sourceExcerptSha256": "2747623cc18d8200c84fd7e1ad539536c9fcf5677c43b0e879ca8b7be50aa147",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ninety-five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ninety-five",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "95",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sent__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "land"
+      ],
+      "questionPrompt": "22. Japan has become a global leader in vertical farming partly due to its severe {{22}} constraints.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "C. The technology also offers geographic flexibility. Vertical farms can in principle be built anywhere—in urban warehouses close to consumers, in arid regions currently unsuitable for agriculture, or in polar territories where food security depends on costly imports. Producing delicate vegetables near cities can shorten the time between harvest and sale and reduce losses during long-distance transport. Proximity does not remove every supply-chain dependency, however, because a facility still requires electricity, nutrients, equipment, and skilled maintenance. Japan, which faces severe land constraints and frequent natural disasters, has become a global leader in vertical farming, with hundreds of facilities operating across the country. A growing number of vertical farms have been established in desert regions of the Middle East, supplying fresh produce to populations that would otherwise depend almost entirely on food imports.",
+      "sourceExcerptSha256": "e2ac5ee0d545e737cec8d532aa7c27ca83d9d6cc7fcff04378df119b48f02d1c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "land",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "land",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sent__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "questionPrompt": "23. The main economic obstacle for vertical farming is its high {{23}} consumption.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. Lights also produce heat, so cooling and air circulation may consume additional power even though the farm is protected from outdoor weather. The environmental balance therefore depends partly on how the electricity is generated: efficiency inside the building does not guarantee low emissions across the whole energy system. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.",
+      "sourceExcerptSha256": "8d2d22b96c1fcae18452201f8db9cbc1c2a5d01d9b79669f4281199d71df0fd4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "energy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "energy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sent__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "growth"
+      ],
+      "questionPrompt": "24. Crops with short {{24}} cycles and compact growth habits are best suited to vertical farming.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "E. The crop range currently suited to vertical farming is limited in another important way. Staple foods such as wheat, rice, and maize are not economically viable candidates for indoor production: they require large volumes per calorie, tolerate outdoor conditions relatively well, and are highly price-competitive on global commodity markets. The crops best suited to vertical farming are those with short growth cycles, compact growth habits, and high value relative to weight—characteristics that describe a narrow slice of the global diet.",
+      "sourceExcerptSha256": "bbe0f228274bbdef03ee0a4c67abac708e27f6b71941cb3e3559ffe32654ff25",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "growth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "growth",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sent__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "plant growth"
+      ],
+      "questionPrompt": "25. LED spectra are now tailored to optimise {{25}} rather than to illuminate for human vision.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+      "sourceExcerptSha256": "99f3acedf5087436d30900fe91ea47d53d72d03a6bdb996326d5c1a67fe8067c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "plant growth",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "plant growth",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sent__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "low-light"
+      ],
+      "questionPrompt": "26. Plant varieties are being developed for indoor, {{26}}, high-efficiency cultivation.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: Vertical Farming",
+      "sourceExcerpt": "F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Sensors can monitor temperature, humidity, nutrients, and plant development continuously, enabling operators to adjust conditions before a visible problem spreads through a crop. The same tight control that supports consistency also creates technical dependence: failure in lighting, pumps, or climate regulation can affect many stacked layers at once. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.",
+      "sourceExcerptSha256": "99f3acedf5087436d30900fe91ea47d53d72d03a6bdb996326d5c1a67fe8067c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "low-light",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "low-light",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does prospect theory, as described in the passage, demonstrate?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+      "sourceExcerptSha256": "c65abcf5cda0dfab8069dc543ecd24abe73e124645025f178e27e4413c9aaf89",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "That people experience the pain of losses approximately twice as strongly as the pleasure of equivalent gains."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "That people feel equal emotional responses to gains and losses of the same amount.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "That rational investors always hold losing stocks until they recover their full value.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "That insurance products are purchased because they deliver measurable financial gain.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what does \"mental accounting\" refer to?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Mental accounting—the tendency to categorise and evaluate money differently depending on its source or intended purpose—is another departure from classical rationality. People treat unexpected windfalls differently from earned income: money won in a casino is more likely to be spent recklessly than money earned through work, even though both have identical purchasing power. Similarly, people assign different values to money in different \"mental accounts\": the money earmarked for a holiday fund feels qualitatively different from money in a current account, even if the nominal amounts are identical. The habit is not always harmful. Separating money for rent or emergencies can protect essential spending from impulsive use. The irrationality arises when labels prevent a person from comparing real alternatives, such as keeping costly debt while preserving savings in a protected category. This segmentation of money into psychological categories influences spending and saving decisions in ways that have no basis in economics but are highly predictable in practice.",
+      "sourceExcerptSha256": "8d7f9a0e8111d224d67400156d838d3b5b5ef8edefb8ab203c3e0f190bfe27a5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "A psychological tendency to value money differently based on its source or intended use."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "The formal process of keeping financial records in separate accounts.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The rational calculation of expected value when making financial decisions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "A banking practice of separating holiday funds from regular income.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is an \"expenditure cascade\" as described by Frank and Cook?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Social comparison is a further force that distorts financially rational behaviour. Research by economists Robert Frank and Philip Cook has documented what they call \"expenditure cascades\": as the conspicuous consumption of high-income groups rises, those immediately below in the income distribution feel pressure to match it, driving up spending across the economy. This dynamic is intensified by social media, which creates constant visibility of others' consumption. Studies have found that exposure to images of luxury spending on platforms such as Instagram is associated with increased materialistic aspirations and reduced financial wellbeing among users.",
+      "sourceExcerptSha256": "87385c6ffb5a2afaf570369039c8be06c4926f78a50de4601313237865e64dcf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "A pattern where high-income spending pressure drives increased spending further down the income distribution."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "A government scheme to reduce excessive spending among high earners.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The tendency for windfall money to be spent more quickly than earned income.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "A psychological effect caused by the visibility of others' savings rather than spending.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "What is the main argument against \"behavioural nudge\" approaches mentioned in the passage?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+      "sourceExcerptSha256": "35a6b2955a79c61c0a53e3fb63ca57336c9c233621128a122dee698516d19750",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 2,
+          "text": "They may be paternalistic by guiding people towards choices chosen by policy-makers."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "They are ineffective because people ignore default settings.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 1,
+          "text": "They are too costly to implement in pension systems.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "They have been shown to reduce participation in retirement savings schemes.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "31. {{31}}: Classical economic models assume people always act in their own long-term financial interest.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Economists have long modelled human beings as rational agents who maximise utility—making financial decisions by carefully calculating costs and benefits and acting in their own long-term self-interest. This model has proved analytically powerful but empirically problematic. It offers a clear benchmark for predicting choices, yet a benchmark is not a complete description of how people decide under pressure, uncertainty, or limited attention. Real decisions often involve shortcuts because calculating every possible outcome would itself consume time and effort. Decades of research in behavioural economics and psychology have revealed systematic, predictable deviations from rational behaviour in financial decision-making, driven by cognitive biases, emotional responses, and social influences that the classical model does not accommodate.",
+      "sourceExcerptSha256": "806c86ec4710b142740e3010d20737baaeaa7c2e1ed3c4ecb530d821a7b3c999",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "32. {{32}}: Loss aversion explains why people sell losing investments before they recover.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+      "sourceExcerptSha256": "c65abcf5cda0dfab8069dc543ecd24abe73e124645025f178e27e4413c9aaf89",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "33. {{33}}: Money won through gambling has the same purchasing power as money earned through work.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Mental accounting—the tendency to categorise and evaluate money differently depending on its source or intended purpose—is another departure from classical rationality. People treat unexpected windfalls differently from earned income: money won in a casino is more likely to be spent recklessly than money earned through work, even though both have identical purchasing power. Similarly, people assign different values to money in different \"mental accounts\": the money earmarked for a holiday fund feels qualitatively different from money in a current account, even if the nominal amounts are identical. The habit is not always harmful. Separating money for rent or emergencies can protect essential spending from impulsive use. The irrationality arises when labels prevent a person from comparing real alternatives, such as keeping costly debt while preserving savings in a protected category. This segmentation of money into psychological categories influences spending and saving decisions in ways that have no basis in economics but are highly predictable in practice.",
+      "sourceExcerptSha256": "8d7f9a0e8111d224d67400156d838d3b5b5ef8edefb8ab203c3e0f190bfe27a5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Research has found that Instagram use is linked to increased financial dissatisfaction.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Social comparison is a further force that distorts financially rational behaviour. Research by economists Robert Frank and Philip Cook has documented what they call \"expenditure cascades\": as the conspicuous consumption of high-income groups rises, those immediately below in the income distribution feel pressure to match it, driving up spending across the economy. This dynamic is intensified by social media, which creates constant visibility of others' consumption. Studies have found that exposure to images of luxury spending on platforms such as Instagram is associated with increased materialistic aspirations and reduced financial wellbeing among users.",
+      "sourceExcerptSha256": "87385c6ffb5a2afaf570369039c8be06c4926f78a50de4601313237865e64dcf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: Present bias means people overestimate future rewards relative to immediate ones.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+      "sourceExcerptSha256": "f607cacbc4a30757fd71d5ec27326bcc5c8eeb1ac683fee15535fcd506a47903",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "36. {{36}}: The writer ultimately argues that behavioural nudge policies are always superior to classical approaches.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+      "sourceExcerptSha256": "35a6b2955a79c61c0a53e3fb63ca57336c9c233621128a122dee698516d19750",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "prospect theory"
+      ],
+      "questionPrompt": "37. Kahneman and Tversky's research on loss aversion was formalised in a theory called {{37}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. Whether an outcome feels like a loss depends on the reference point against which it is judged. The same final amount can be experienced differently if someone expected to receive more or began with less. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to \"break even\" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.",
+      "sourceExcerptSha256": "c65abcf5cda0dfab8069dc543ecd24abe73e124645025f178e27e4413c9aaf89",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Prospect theory",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "prospect theory",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "present bias"
+      ],
+      "questionPrompt": "38. The tendency to prefer smaller rewards now over larger future rewards is called {{38}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+      "sourceExcerptSha256": "f607cacbc4a30757fd71d5ec27326bcc5c8eeb1ac683fee15535fcd506a47903",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "present bias",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "present bias",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "enrolment"
+      ],
+      "questionPrompt": "39. Default {{39}} in pension schemes significantly increases participation rates compared to opt-in systems.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this \"present bias\": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save \"next month.\" The conflict is between preferences expressed at different moments: a plan made for the future loses influence when an immediate temptation becomes available. Commitment devices attempt to preserve the earlier plan by making the later reversal less convenient. Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.",
+      "sourceExcerptSha256": "f607cacbc4a30757fd71d5ec27326bcc5c8eeb1ac683fee15535fcd506a47903",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "enrolment",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "enrolment",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "individual autonomy"
+      ],
+      "questionPrompt": "40. Critics of behavioural nudges argue such approaches may undermine {{40}} by directing people towards policy-maker-chosen outcomes.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: The Psychology of Money",
+      "sourceExcerpt": "Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this \"behavioural nudge\" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.",
+      "sourceExcerptSha256": "35a6b2955a79c61c0a53e3fb63ca57336c9c233621128a122dee698516d19750",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "individual autonomy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "individual autonomy",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [],
+  "reviewSha256": "5bbc6602fb0b455c5a6823fc53877615028139aff39d40ac3a11de4a7e6f5bf0"
+}

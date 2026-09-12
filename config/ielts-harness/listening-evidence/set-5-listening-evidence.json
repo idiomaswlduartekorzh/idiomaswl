@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "set": 5,
+  "generatedAt": "2026-09-09",
+  "audio": {
+    "url": "/audio/ielts/ielts-listening-set-5.mp3",
+    "path": "public/audio/ielts/ielts-listening-set-5.mp3",
+    "sha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912"
+  },
+  "transcript": {
+    "effectiveTranscriptSha256": "02bdc6288495f1792b5e7df3012dee920bf82f5e3d4319eb52027c612212f47d",
+    "harnessTranscriptSha256": "afb8486a93caa09b695075ecbf7170df8fec9454c4c6674d4acb35393703b671",
+    "academicListeningMaterialSha256": "09b300266009e045335a51f1c992e80bec61a905a2ab6c4cc9ee0161c49ce687"
+  },
+  "academicReview": {
+    "path": "config/ielts-harness/academic-reviews/set-5-objective-review.json",
+    "fileSha256": "6e256f77870b480b9df80539b8d128cd11b7eff0a4e8f972de09c5b9b76706aa",
+    "reviewSha256": "bdc203b1d0d31124796297f1f988ed1e382e58b546249e24f99c106b0d7d938a"
+  },
+  "asr": {
+    "qaPath": "config/ielts-harness/listening-evidence/sources/set-5/869bd6a5bb9b-staged-asr-qa-set-5.json",
+    "qaSha256": "869bd6a5bb9b1ca1e1a45bdbe696283d88e321b41bebb361d7f8da8109651a20",
+    "globalReportPath": "config/ielts-harness/listening-evidence/sources/set-5/e67a51521b2c-asr-report-set-5.json",
+    "globalReportSha256": "e67a51521b2c6ea1611b0efb783ebb8ef6d6e492504f154baeac6c84e05aaeac",
+    "globalSourcePath": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+    "globalSourceSha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd"
+  },
+  "evidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "part": 1,
+      "academicEvidenceSha256": "6619e83536e293b5a61fdb1435fb9eef0934fde24eab62779abda3558d9094f5",
+      "academicExcerptSha256": "dab7c4d23ca6f87f0d234606babaf48ce1e7ad2e6d3e0c442028ec90143e0c6f",
+      "startSeconds": 86.713,
+      "endSeconds": 89.653,
+      "audiblePhrase": "A friend recommended you, actually. She did the tour last month.",
+      "audiblePhraseSha256": "6a9014eee4f8c8570aff1a122bb8b7679008b9ef61b0a088e5582817762bdc28",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "FOCUSED_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/b9d2e7e91ecb-whisper-focused-set-5-part-1.json",
+        "sha256": "b9d2e7e91ecb139160428eada0ee5e89388f1bad1d81f3aa707daf34f1698e0c",
+        "startSeconds": 0,
+        "endSeconds": 2.94
+      },
+      "conversion": {
+        "localStartSeconds": 0,
+        "localEndSeconds": 2.94,
+        "segmentIndexes": [
+          11
+        ],
+        "playbackSpeed": 1,
+        "masterStartSeconds": 86.713,
+        "masterEndSeconds": 89.653
+      }
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "part": 1,
+      "academicEvidenceSha256": "6e704741f49cb64de11e753b5297a4a880dcf4141ea9706cd1d036bbcedff2eb",
+      "academicExcerptSha256": "dc01b00755f7c01f3b89e74d58ebf0abd5a7364c4474402511b5ab4aa9b7acf2",
+      "startSeconds": 116.52000000000001,
+      "endSeconds": 122.92,
+      "audiblePhrase": "That's great to hear. Now we run two walks. Would you prefer the evening tour or the morning one?",
+      "audiblePhraseSha256": "c33e59c2e274ad311087ebfed67a3c2c15e66f46ec5bb5602eb125df07076890",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 116.52000000000001,
+        "endSeconds": 122.92
+      }
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "part": 1,
+      "academicEvidenceSha256": "25f411cde689d2ea80c824a8cfe9b3dfddfde5386ab7ce7cf91da410fe505724",
+      "academicExcerptSha256": "55d1f5b69cd7734594fb13d44437676e8a165df729c80879f1c839bbdf53dac9",
+      "startSeconds": 133.08,
+      "endSeconds": 139.04,
+      "audiblePhrase": "cathedral on the main square. Outside the cathedral. Got it. Is there anything I should bring?",
+      "audiblePhraseSha256": "f39de71b0b7d26e1fdf645d59ea46ad173e2d3494b6b49bc2cab9c3145b3626e",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 133.08,
+        "endSeconds": 139.04
+      }
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "part": 1,
+      "academicEvidenceSha256": "92731a35434efdd175678a0a48c2266d69c4f200b24baa762848bc84e4955704",
+      "academicExcerptSha256": "d41d5da19957c2db3d13a1d2060a6f4e9a2562be8b0e2506ced79093140b3c09",
+      "startSeconds": 139.44,
+      "endSeconds": 144.64,
+      "audiblePhrase": "Mainly just make sure you wear comfortable shoes, as there's a fair amount of walking on cobbled",
+      "audiblePhraseSha256": "bfeb6f47342068bac753397ecc3c80a46bfee3af9f007d0a45998cffeb82cf66",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 139.44,
+        "endSeconds": 144.64
+      }
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "part": 1,
+      "academicEvidenceSha256": "cb4f04443bb7b678b4fbedc184743092fa2221acfb5927f30ef0a95b173bce63",
+      "academicExcerptSha256": "bb1a88fef0ceccd86f21e782345265d2c7a7a631dc5c4eee39642ecfb5066249",
+      "startSeconds": 235.56,
+      "endSeconds": 242.54,
+      "audiblePhrase": "and points out the old market, which dates back 600 years. Around midday, the group stops for",
+      "audiblePhraseSha256": "99a178a413f2d722eeafb9e3ab54a1c94f39ff9958c12afb0e954221bb2e6017",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 235.56,
+        "endSeconds": 242.54
+      }
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "part": 1,
+      "academicEvidenceSha256": "b5a14e8553467a40431f1be68428efcdec7d52c167b685e33a88e4b4974269b2",
+      "academicExcerptSha256": "bb1a88fef0ceccd86f21e782345265d2c7a7a631dc5c4eee39642ecfb5066249",
+      "startSeconds": 242.54,
+      "endSeconds": 247.26,
+      "audiblePhrase": "lunch at a cafe by the river. You may take photographs, but please stay with the group at",
+      "audiblePhraseSha256": "fb3f61a0b17424a5d9430f9eef1ec94ff8e084f11155cd0f931eeadc5b0e827b",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 242.54,
+        "endSeconds": 247.26
+      }
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "part": 1,
+      "academicEvidenceSha256": "60e13bfdd02d4bb5b8989cc4d77d66ec763238d864e51f5cebdcb3246d3e0e3d",
+      "academicExcerptSha256": "9a54fc094815c65d2951c22e59ebced7862d29261aab640debd709e49be932b9",
+      "startSeconds": 269.96,
+      "endSeconds": 276.8,
+      "audiblePhrase": "Certainly. The morning tour lasts three hours and covers about four kilometres. It costs 25",
+      "audiblePhraseSha256": "e7c81314662623a69b25dd6edc52b8e20d679bca16c1011fc3f35cbd51bf2248",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 269.96,
+        "endSeconds": 276.8
+      }
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "part": 1,
+      "academicEvidenceSha256": "65f1c7b817f10c23658f1e298838160c3295c97288d3590835aa11aba9b92e46",
+      "academicExcerptSha256": "9a54fc094815c65d2951c22e59ebced7862d29261aab640debd709e49be932b9",
+      "startSeconds": 276.8,
+      "endSeconds": 283.48,
+      "audiblePhrase": "pounds per person, and that includes a printed guidebook to take home. I like having some background",
+      "audiblePhraseSha256": "86068a2227b7fa830330c58f48e9abb7989ba4478f7ec237f9fc0ef7012853c3",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 276.8,
+        "endSeconds": 283.48
+      }
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "part": 1,
+      "academicEvidenceSha256": "e308d0f341a2dd8aefeb5641088c3c97538c3dcc38c55a87d0042a70b4508157",
+      "academicExcerptSha256": "57adc54110f63e9eba376fac8fef461116279c8d8968cea248eddbf5d08b1128",
+      "startSeconds": 331.56,
+      "endSeconds": 338.38,
+      "audiblePhrase": "tour. That one runs for six hours and covers nine kilometres, priced at 40 pounds. Best of all,",
+      "audiblePhraseSha256": "03efb84ca2b7ec36d31cabcd878d87d214f48f80eb0a0ec3458fef53bd8808ac",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 331.56,
+        "endSeconds": 338.38
+      }
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "part": 1,
+      "academicEvidenceSha256": "4548a8f23534b5aa59aa39d0f40a3a34e94347af5418c232d95cf0e8fa748322",
+      "academicExcerptSha256": "57adc54110f63e9eba376fac8fef461116279c8d8968cea248eddbf5d08b1128",
+      "startSeconds": 338.56,
+      "endSeconds": 343.5,
+      "audiblePhrase": "a two course lunch is included in that package. Excellent. I'll take the morning tour for now.",
+      "audiblePhraseSha256": "2edc59f5daf10c3b702054a9832d0efccf9b89c66ae4edd8752db55507e24f27",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 338.56,
+        "endSeconds": 343.5
+      }
+    },
+    {
+      "question": 11,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "academicEvidenceSha256": "45aeb6ecf2673ae817883a899ae1e676d6991ca20cf6d99e301f8410f64780a5",
+      "academicExcerptSha256": "0cd5c58507fd6784b5c64919e7294a35e3b099903d535d7ec16e8352778b241f",
+      "startSeconds": 473.2,
+      "endSeconds": 507.1,
+      "audiblePhrase": "Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the New Woodland Trail and counting birds for our annual wildlife survey. The fences are repaired by outside contractors and the cafe is run by paid staff, so those aren't jobs for volunteers. We organise the rotor several weeks ahead, but you are not expected to attend",
+      "audiblePhraseSha256": "f732105d0212f1b316cf6b44f07dc45d982af9b4ac306413e0fcc9a035ee1dbc",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 1,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 473.2,
+        "endSeconds": 507.1
+      }
+    },
+    {
+      "question": 12,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "academicEvidenceSha256": "45aeb6ecf2673ae817883a899ae1e676d6991ca20cf6d99e301f8410f64780a5",
+      "academicExcerptSha256": "0cd5c58507fd6784b5c64919e7294a35e3b099903d535d7ec16e8352778b241f",
+      "startSeconds": 473.2,
+      "endSeconds": 507.1,
+      "audiblePhrase": "Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the New Woodland Trail and counting birds for our annual wildlife survey. The fences are repaired by outside contractors and the cafe is run by paid staff, so those aren't jobs for volunteers. We organise the rotor several weeks ahead, but you are not expected to attend",
+      "audiblePhraseSha256": "f732105d0212f1b316cf6b44f07dc45d982af9b4ac306413e0fcc9a035ee1dbc",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 1,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 473.2,
+        "endSeconds": 507.1
+      }
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "part": 2,
+      "academicEvidenceSha256": "ec7594bfd37e266a5d99e6209270b039d86caeb4b6150be11325a651259617c7",
+      "academicExcerptSha256": "f834b82223efd1f181a6459bac09b916261c71f30d93ea451f6762ec8a2cd6e2",
+      "startSeconds": 532.1800000000001,
+      "endSeconds": 537.78,
+      "audiblePhrase": "You must be at least 18 years old. There's a separate scheme for younger helpers.",
+      "audiblePhraseSha256": "e6297f27dfb10959e887e5f750a245f100503dcd68067ac765b8f1a7831089bd",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 532.1800000000001,
+        "endSeconds": 537.78
+      }
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "part": 2,
+      "academicEvidenceSha256": "a545442146213bc25b48720fd759aa9807ab24d735b9cc84733f039f56f44c1f",
+      "academicExcerptSha256": "f834b82223efd1f181a6459bac09b916261c71f30d93ea451f6762ec8a2cd6e2",
+      "startSeconds": 537.78,
+      "endSeconds": 543.84,
+      "audiblePhrase": "Today's induction is quite relaxed and it lasts about two hours, including a short tour of the",
+      "audiblePhraseSha256": "115e7a35826f118cb08e88086fc3f8320fff02f05e5df1d3d03a23d98a3394e2",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 537.78,
+        "endSeconds": 543.84
+      }
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "part": 2,
+      "academicEvidenceSha256": "fe60e6cd0c3f93874d70e8e589f45d48ce67cb6b3795b7be019ef218b503dd18",
+      "academicExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "startSeconds": 563.9,
+      "endSeconds": 570.16,
+      "audiblePhrase": "observation much more than completing a job quickly. For outdoor work, please wear sturdy boots.",
+      "audiblePhraseSha256": "b4c52390d552d36a17d181caf6ae5f349e9aedf8649fb23b04a1187a874833d4",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 563.9,
+        "endSeconds": 570.16
+      }
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "part": 2,
+      "academicEvidenceSha256": "34d5ce5b16528f09f5ec345d39ab22668c0603792234793c8989daed3d3ca359",
+      "academicExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "startSeconds": 576.2,
+      "endSeconds": 580.44,
+      "audiblePhrase": "you can leave your things safely as lockers are provided for your personal belongings.",
+      "audiblePhraseSha256": "be677f68420f1addcf7265a215aaf4f913f8160077d571932cba0e9fdd284ff9",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 576.2,
+        "endSeconds": 580.44
+      }
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "part": 2,
+      "academicEvidenceSha256": "dbe663ae1ca1718838ffb4fee4c84f93a87693c5b9e905729180e4c410a165bf",
+      "academicExcerptSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+      "startSeconds": 581.02,
+      "endSeconds": 593.64,
+      "audiblePhrase": "There's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day. Now review questions 16 to 20 before the recording",
+      "audiblePhraseSha256": "bf3568d19e411b6774be0436f794b7599a5c424b3ca3c7379a5e57c5e6249692",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 581.02,
+        "endSeconds": 593.64
+      }
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "part": 2,
+      "academicEvidenceSha256": "8ea8185f9467568fd53bcbd48eae53b9501644a593ef0df0a07f546c7a916a03",
+      "academicExcerptSha256": "c0862e267800a5d7dfd8106158e45cfe70a7cc0bc7cb95f2ff1d5eef82fa4f1e",
+      "startSeconds": 688.24,
+      "endSeconds": 694.54,
+      "audiblePhrase": "injuries to the supervisor on duty immediately. Please don't wait until you get home. The",
+      "audiblePhraseSha256": "be5c4db628584aefd23c924fa092acef29a9d6c17b9fc94f56728f5d4b2d38de",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 688.24,
+        "endSeconds": 694.54
+      }
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "part": 2,
+      "academicEvidenceSha256": "1e105fa53f3cc8a03d1a411aeb9fd30b9ecce5ee1ad1c1f7d563d34bd4caa0f5",
+      "academicExcerptSha256": "ae89c603baecd46cd4af43e9308892d3c13bfe1edd311cdd5fe8affa80f91659",
+      "startSeconds": 744.1,
+      "endSeconds": 749.56,
+      "audiblePhrase": "you'll receive a monthly newsletter by email listing upcoming events and work parties.",
+      "audiblePhraseSha256": "bccb81ecf18a47a5055de6c7a4cb94bf300909cf1031bfaad58fdcb7a4667bf6",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 744.1,
+        "endSeconds": 749.56
+      }
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "part": 2,
+      "academicEvidenceSha256": "e460a86816356fbb257ce7129f73708eaa1d9c90d4deefeaaf86503a1bbc7f76",
+      "academicExcerptSha256": "9f26e6d946b963003546cd16c6051e5b35ed1654b2915c9d0c25e386207e4b64",
+      "startSeconds": 774.1,
+      "endSeconds": 779.92,
+      "audiblePhrase": "you properly. The end of year celebration is held in December, with food and music for all our",
+      "audiblePhraseSha256": "1351a4b9cb9983abcdb320ddb0ce641c6a30ad1f728b00b85d1d8f2bbf9cba23",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 774.1,
+        "endSeconds": 779.92
+      }
+    },
+    {
+      "question": 21,
+      "responseKey": "l3q21",
+      "part": 3,
+      "academicEvidenceSha256": "53542d07312a1d86eb93364bb7389da82d8f3f0e9525c2cf5fb8dc28b12b6a6d",
+      "academicExcerptSha256": "38456d0677ed32be3d26f55914c914669b38ec38a0d73eefec5783a5e2a84f29",
+      "startSeconds": 904.48,
+      "endSeconds": 914.74,
+      "audiblePhrase": "Right, Megan Ryan, let's plan your ecology field trip. I've suggested the Fenwick estuary. Any thoughts on why it's a good choice? Well, it's quite close to the university,",
+      "audiblePhraseSha256": "26a492e7aed08ff093f1dd4e5ba21e6af4c7426741ae46fbed7313c4b095af12",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.875,
+      "answerSupportScore": 0.25,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 904.48,
+        "endSeconds": 914.74
+      }
+    },
+    {
+      "question": 22,
+      "responseKey": "l3q22",
+      "part": 3,
+      "academicEvidenceSha256": "2dc904289bfd0237fe7eb64cf55c13569267885c65c1887e3b2c0b30a067b438",
+      "academicExcerptSha256": "e13ac85586f44c7160a394a84d964eedd73b8ed4709e69755dbded4845f9ee5f",
+      "startSeconds": 948.0600000000001,
+      "endSeconds": 961.2,
+      "audiblePhrase": "You could, but for this assignment, I'd like you to concentrate on water quality, testing salinity, and oxygen levels at different points. Should we take readings at random points or use",
+      "audiblePhraseSha256": "28f36eaaa5d1ffc9d8a2e66d9df593be2efb4d7a8420fa9d62effebef6ddf647",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9565,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 948.0600000000001,
+        "endSeconds": 961.2
+      }
+    },
+    {
+      "question": 23,
+      "responseKey": "l3q23",
+      "part": 3,
+      "academicEvidenceSha256": "f4cfdb20c11c6ef6f1e91abeb5a0676d1499de211b8bf94c4da4055f950aa19e",
+      "academicExcerptSha256": "ca45fdc9c518a397826b453cc04b3668b907a0bfae6a8d03c71c52e29ed9964c",
+      "startSeconds": 1020.54,
+      "endSeconds": 1032.54,
+      "audiblePhrase": "Good question. A coach would be far too expensive for a group your size, and the nearest train station is miles from the shore. So I've arranged a minibus, which the department will drive.",
+      "audiblePhraseSha256": "0032d31d1b76f6146675b03d86bbf7b5f9b0ecf098d586c240b7b6a1549e14fd",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9714,
+      "answerSupportScore": 0.5,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1020.54,
+        "endSeconds": 1032.54
+      }
+    },
+    {
+      "question": 24,
+      "responseKey": "l3q24",
+      "part": 3,
+      "academicEvidenceSha256": "aee97de45af119b02a35c4aec3b2c6248453d0c075fbf214fad4d3fabf984647",
+      "academicExcerptSha256": "24ce10e5246e59972594959328b2f2137e39f784f2eaaef0de591dd2429fde49",
+      "startSeconds": 1032.54,
+      "endSeconds": 1038.5,
+      "audiblePhrase": "Great. The one thing I'm nervous about is the tides. I don't want us getting cut off on the mud flats.",
+      "audiblePhraseSha256": "510fe0e229829bc657ab9e375ddf1b7b11a083a0dcb7d8a50dd8d912ac8bdd93",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9048,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1032.54,
+        "endSeconds": 1038.5
+      }
+    },
+    {
+      "question": 25,
+      "responseKey": "l3q25",
+      "part": 3,
+      "academicEvidenceSha256": "c72da9694b717253b94be822162344f0add9538b9d68bd2fe2e38fa343994d06",
+      "academicExcerptSha256": "4be0696062dccff21d3a6ae67b467ab8f128c3f1ee8ffed1242e7f6d9b9f7b5e",
+      "startSeconds": 1132.26,
+      "endSeconds": 1143.4,
+      "audiblePhrase": "Before anything else, please read the safety guidelines I've uploaded. Don't book the equipment or divide into teams until you've done that. Should we decide now what pattern we expect to",
+      "audiblePhraseSha256": "f5b6ab3c19ec49ab9edb087a046e416da01c3571b80230f363765be56416bf36",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9565,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1132.26,
+        "endSeconds": 1143.4
+      }
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "part": 3,
+      "academicEvidenceSha256": "a4e633b71e538d4fbca146d1d7ccd259ef77774e32cc3fe9a497582b460fb62d",
+      "academicExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "startSeconds": 1200.12,
+      "endSeconds": 1207.04,
+      "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera",
+      "audiblePhraseSha256": "4d23ef9c62963b186c718364030fac89dc1132d62e25ced0315ba92dd8f2e2ac",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1200.12,
+        "endSeconds": 1207.04
+      }
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "part": 3,
+      "academicEvidenceSha256": "de545354ef177dde30af6756ad02e73a92ff65ec0933273d2e3f621f16ffff3e",
+      "academicExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "startSeconds": 1200.12,
+      "endSeconds": 1207.04,
+      "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera",
+      "audiblePhraseSha256": "4d23ef9c62963b186c718364030fac89dc1132d62e25ced0315ba92dd8f2e2ac",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1200.12,
+        "endSeconds": 1207.04
+      }
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "part": 3,
+      "academicEvidenceSha256": "c0ce02db12e1926f771252c76940a4bf816fb647ba482216b78151fbfdd0f751",
+      "academicExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "startSeconds": 1208.36,
+      "endSeconds": 1213.08,
+      "audiblePhrase": "so you can photograph your sights, collect your water samples in labeled bottles,",
+      "audiblePhraseSha256": "77635a279b1c3de4fe3c4660ca71136785ca6dde96c845b405431a4ed7c65889",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1208.36,
+        "endSeconds": 1213.08
+      }
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "part": 3,
+      "academicEvidenceSha256": "111d06cebdb10422a0dea77f5e98292c5394901b4e21755369ef3c990fd3079a",
+      "academicExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "startSeconds": 1213.68,
+      "endSeconds": 1219.02,
+      "audiblePhrase": "and record all your measurements in a notebook rather than on loose paper. And finally,",
+      "audiblePhraseSha256": "9e209049ab559f9967363a52dbe134710cb0bdacb38e403087cf8b44e75f9320",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1213.68,
+        "endSeconds": 1219.02
+      }
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "part": 3,
+      "academicEvidenceSha256": "7dd14a1fba18ca07bb6094ec9bff3b7b17c3fe829c71ea3512652c52e4c758de",
+      "academicExcerptSha256": "8fcd9dcd14625d803d6106440e9d29b49ab72d14b371333b4bb169b67221a9a6",
+      "startSeconds": 1219.48,
+      "endSeconds": 1226.72,
+      "audiblePhrase": "submit the risk assessment to me by Friday. We'll do. Thanks. Part three is complete. Check your answers.",
+      "audiblePhraseSha256": "9556c20aea66b638806f41b9adecd3713a56a7de6ca8de33d7e10977498c9509",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1219.48,
+        "endSeconds": 1226.72
+      }
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "part": 4,
+      "academicEvidenceSha256": "997c11dbbb098676c92848bd310034e2b19c54a3b0d1def067da429893886c31",
+      "academicExcerptSha256": "b54d9417d45cf6dd70098ffe29d4f32833b24e2141e1219d0a9c2a2b388dd504",
+      "startSeconds": 1358.78,
+      "endSeconds": 1365.28,
+      "audiblePhrase": "Because space at ground level is limited, hives are often placed on the rooftops of buildings.",
+      "audiblePhraseSha256": "c0fb712ba1cf05f3b5e48496ab4aa36d038db8023fbfed33da754b9cbfdd781d",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1358.78,
+        "endSeconds": 1365.28
+      }
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "part": 4,
+      "academicEvidenceSha256": "ec6a15d009c0051072489121c95e734a3735767997500737b66c39befef5b0c6",
+      "academicExcerptSha256": "b54d9417d45cf6dd70098ffe29d4f32833b24e2141e1219d0a9c2a2b388dd504",
+      "startSeconds": 1382.66,
+      "endSeconds": 1389.76,
+      "audiblePhrase": "and this extra warmth protects bees from frost during the colder months. An important distinction",
+      "audiblePhraseSha256": "6e0ab427621504906f7c5cdce6caaadcdaa002faea4c0cc95a8e6c444ea69a0d",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1382.66,
+        "endSeconds": 1389.76
+      }
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "part": 4,
+      "academicEvidenceSha256": "e2df8a383733ab22e25e7d52374c6e16d0d79fbab862545fb03dfb362aa139a7",
+      "academicExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "startSeconds": 1421.62,
+      "endSeconds": 1428.16,
+      "audiblePhrase": "as space allows. So what are the benefits? The most obvious one is pollination.",
+      "audiblePhraseSha256": "25b851933e2b5a8589bb5949fd0acfff614643fba71ebdfa3ce95a1e096c5683",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1421.62,
+        "endSeconds": 1428.16
+      }
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "part": 4,
+      "academicEvidenceSha256": "b4ff298fe3df7b32f4a7064e805b75f4bba9b223426b5103935610b84f87f738",
+      "academicExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "startSeconds": 1442.1,
+      "endSeconds": 1448.9,
+      "audiblePhrase": "because urban bees visit such a wide range of plants. City honey often has a distinctive flavor",
+      "audiblePhraseSha256": "ee6db14701ab6a8d36f143452ee1ade074a39217808776c4df88ef1d25d9c2b5",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1442.1,
+        "endSeconds": 1448.9
+      }
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "part": 4,
+      "academicEvidenceSha256": "4cc78d70de231e169ef7b0df963ab1fa1dc39bd66dcdf56fc46f95cbc06d40be",
+      "academicExcerptSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
+      "startSeconds": 1456.24,
+      "endSeconds": 1463.62,
+      "audiblePhrase": "raise public awareness of wildlife and the threats it faces. Researchers also examine movement",
+      "audiblePhraseSha256": "3faf3b1790c1db84957be4ecfed6cf92f93fea185dc6489e99b4675d76bf3339",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1456.24,
+        "endSeconds": 1463.62
+      }
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "part": 4,
+      "academicEvidenceSha256": "c2cec80e2aa70db80b2ee65aeeecc8d0b2c4cec6945bf5892e6a798547a26875",
+      "academicExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "startSeconds": 1496.62,
+      "endSeconds": 1504.26,
+      "audiblePhrase": "insects. Of course there are challenges. In some neighborhoods, a lack of flowers means there simply",
+      "audiblePhraseSha256": "e7934d7689ed30c7227c68e98da5e726600f48cfa11e3916e67213363977dbb8",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1496.62,
+        "endSeconds": 1504.26
+      }
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "part": 4,
+      "academicEvidenceSha256": "351cb3a3d3ea7dc3db80860bba5b7485dd290ebea22d71db340d0f9360870172",
+      "academicExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "startSeconds": 1511.64,
+      "endSeconds": 1518.04,
+      "audiblePhrase": "affected by pollution from traffic, which can settle on the plants they feed on. And a more human",
+      "audiblePhraseSha256": "b8911cc6599e06b57ee213b74a1d3fb03a4fc842f7db35077301e9de0eaa827e",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1511.64,
+        "endSeconds": 1518.04
+      }
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "part": 4,
+      "academicEvidenceSha256": "97fedd0958ff1d23254a8d41a94cc0e7016cf5a846456954864a8e6748c04a35",
+      "academicExcerptSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
+      "startSeconds": 1518.88,
+      "endSeconds": 1524.4,
+      "audiblePhrase": "is that new keepers often lack proper training, which can lead to poorly managed hives",
+      "audiblePhraseSha256": "be7b2cf4ee1a83967587513f784a0e61faebefc5bd8bb866caa879b17b1245c5",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1518.88,
+        "endSeconds": 1524.4
+      }
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "part": 4,
+      "academicEvidenceSha256": "254c0abb28dc8938b3ca24040dba88545f6e5e251e47b96e17a066c38e0f7bef",
+      "academicExcerptSha256": "298cae9ab8069ecaccb48ce46a851afbe03600ce41dd074d718c44673311561a",
+      "startSeconds": 1615.42,
+      "endSeconds": 1622.68,
+      "audiblePhrase": "advise anyone thinking of starting? First, always register each hive with the local council so that",
+      "audiblePhraseSha256": "fe5b5d0aa9b3ff9b24d560a35393604584fc42ab7c338155a480e16dd5a9021a",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1615.42,
+        "endSeconds": 1622.68
+      }
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "part": 4,
+      "academicEvidenceSha256": "fd2c7343c3b35e76fffe8c06e91a92990973ddf391110dfc75b7ff0e9d923f2a",
+      "academicExcerptSha256": "298cae9ab8069ecaccb48ce46a851afbe03600ce41dd074d718c44673311561a",
+      "startSeconds": 1632.1000000000001,
+      "endSeconds": 1638.42,
+      "audiblePhrase": "provide a nearby source of water. Bees need to drink, and without it, they will visit your",
+      "audiblePhraseSha256": "2596ec50253c5c87ec598a9b70b627c812a7ba2190f2742c1ef5e137e4d116a0",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-5/16eb843d81da-whisper-set-5.json",
+        "sha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+        "startSeconds": 1632.1000000000001,
+        "endSeconds": 1638.42
+      }
+    }
+  ],
+  "summary": {
+    "questions": 40,
+    "supported": 40,
+    "unresolved": 0
+  },
+  "artifactSha256": "2caded6c3991ca2b3a758122825b56c1de6d395aabb4be721c9d4ce18813757b"
+}

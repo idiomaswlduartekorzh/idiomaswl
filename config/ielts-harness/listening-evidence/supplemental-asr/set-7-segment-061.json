@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "generatedAt": "2026-09-12",
+  "set": 7,
+  "part": 3,
+  "segmentIndexes": [
+    61
+  ],
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "settings": {
+    "language": "en",
+    "temperature": 0,
+    "conditionOnPreviousText": false,
+    "wordTimestamps": true
+  },
+  "sourceAudio": {
+    "path": "output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-7/set-7/.segments/segment-061.mp3",
+    "sha256": "28d21342b210a750a5b2638f5c6dfc698f0a9d493ec6d4ae5cf3a10830b30b04"
+  },
+  "result": {
+    "text": " The type of music played. One group will read in silence, one will hear instrumental music, and one will hear music with lyrics. We briefly considered testing different volumes, but we decided to keep volume constant for both music groups.",
+    "segments": [
+      {
+        "start": 0,
+        "end": 6.14,
+        "text": " The type of music played. One group will read in silence, one will hear instrumental music,"
+      },
+      {
+        "start": 6.6,
+        "end": 11.8,
+        "text": " and one will hear music with lyrics. We briefly considered testing different volumes,"
+      },
+      {
+        "start": 12.42,
+        "end": 16.22,
+        "text": " but we decided to keep volume constant for both music groups."
+      }
+    ]
+  }
+}

@@ -405,7 +405,7 @@ Mitigation of ocean acidification at a global scale ultimately requires reducing
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Dissolved carbon dioxide forms {{8}} when it reacts with seawater, lowering the ocean's pH.\n9. Tiny free-swimming snails called {{9}} are a critical link in many marine food webs and are highly vulnerable to acidification.\n10. Laboratory studies showed that pteropod shells begin to dissolve when exposed to near-future pH levels within {{10}} days.\n11. Acidification slows coral {{11}} rates by reducing the availability of carbonate ions.\n12. Areas where marine conditions remain more hospitable to sensitive species are known as potential {{12}}.\n13. Scientists agree that tackling ocean acidification fundamentally requires reducing {{13}} emissions.`,
+          template: `8. Dissolved carbon dioxide forms {{8}} when it reacts with seawater, lowering the ocean's pH.\n9. Tiny free-swimming snails called {{9}} are a critical link in many marine food webs and can be sensitive to acidification.\n10. Laboratory studies showed measurable dissolution of pteropod shells under near-future conditions within {{10}} days.\n11. Acidification slows coral {{11}} rates by reducing the availability of carbonate ions.\n12. Areas where marine conditions remain more hospitable to sensitive species are known as potential {{12}}.\n13. Scientists agree that tackling ocean acidification fundamentally requires reducing {{13}} emissions.`,
           blanks: [
             { num: 8, answers: ['carbonic acid'] },
             { num: 9, answers: ['pteropods'] },
@@ -651,7 +651,7 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn',
-          cueCard: `Describe a film or television series that had a strong impact on you.\n\nYou should say:\n• what the film or series was about\n• when and where you watched it\n• why it had such a strong impact on you\n• and explain what you learned or felt as a result`,
+          cueCard: `Describe a film, documentary, or television programme about an environmental issue that had a strong impact on you.\n\nYou should say:\n• what the programme was and which issue it explored\n• when and where you watched it\n• why it had such a strong impact on you\n• and explain whether it changed your behaviour or opinions`,
         },
         {
           type: 'speak',

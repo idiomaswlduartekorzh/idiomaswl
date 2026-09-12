@@ -41,6 +41,13 @@ const isIndependentHuman = reviewer => Boolean(
   && reviewer.id.trim()
   && !['harness', 'ielts-harness', 'generator', 'self'].includes(reviewer.id.trim().toLowerCase()),
 );
+const isIndependentReviewer = reviewer => Boolean(
+  reviewer
+  && ['human', 'agent', 'academic-agent', 'qa-agent', 'visual-review-agent', 'ux-agent'].includes(reviewer.kind)
+  && typeof reviewer.id === 'string'
+  && reviewer.id.trim()
+  && !['harness', 'ielts-harness', 'generator', 'self'].includes(reviewer.id.trim().toLowerCase()),
+);
 const allApproved = entries => Array.isArray(entries) && entries.every(entry => entry.status === 'APPROVED');
 const sameBinding = (actual, expected) => Boolean(actual) && Object.entries(expected).every(([key, value]) => actual[key] === value);
 
@@ -65,6 +72,7 @@ export function releaseFingerprint(material) {
     listeningTranscriptSha256: material.listeningTranscriptSha256,
     readingContentSha256: material.readingContentSha256,
     writingContentSha256: material.writingContentSha256,
+    speakingContentSha256: material.speakingContentSha256,
     audio: material.audio.map(asset => ({ url: asset.url, sha256: asset.sha256 ?? null })),
     writingImage: material.writingImage ? { url: material.writingImage.url, sha256: material.writingImage.sha256 ?? null } : null,
     readingImages: material.readingImages.map(asset => ({ url: asset.url, sha256: asset.sha256 ?? null })),
@@ -83,6 +91,18 @@ function verifyMachineAlignmentEvidence(root, alignment, expected) {
   if (!verifyEvidenceFile(root, alignment)) return false;
   try {
     const report = JSON.parse(fs.readFileSync(path.resolve(root, alignment.evidencePath), 'utf8'));
+    if (alignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE') {
+      return report.schemaVersion === 1
+        && report.status === 'PASS'
+        && report.audio?.sha256 === expected.audioSha256
+        && report.transcript?.harnessTranscriptSha256 === expected.transcriptSha256
+        && report.summary?.questions === 40
+        && report.summary?.supported === 40
+        && report.summary?.unresolved === 0
+        && exactQuestions(report.evidence)
+        && report.evidence.every(item => Number.isFinite(item.startSeconds)
+          && Number.isFinite(item.endSeconds) && item.endSeconds > item.startSeconds && nonempty(item.audiblePhrase));
+    }
     return report.schemaVersion === 1
       && report.releaseAuthorized === false
       && report.status === 'PASS'
@@ -102,7 +122,9 @@ function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha256) {
     const report = JSON.parse(fs.readFileSync(path.resolve(root, technical.evidencePath), 'utf8'));
     const file = Array.isArray(report.files)
       ? report.files.find(candidate => candidate.audioSha256 === expectedAudioSha256)
-      : report;
+      : Array.isArray(report.sets)
+        ? report.sets.find(candidate => candidate.audioSha256 === expectedAudioSha256)
+        : report;
     return report.schemaVersion === 1
       && report.releaseAuthorized === false
       && ['PASS', 'technical_qa_passed_pending_transcript_and_owner_listening_review'].includes(report.status)
@@ -110,6 +132,23 @@ function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha256) {
       && file.checks
       && Object.keys(file.checks).length > 0
       && Object.values(file.checks).every(Boolean);
+  } catch {
+    return false;
+  }
+}
+
+function verifyUxEvidence(root, ux, expectedContentSha256, setNumber) {
+  if (!verifyEvidenceFile(root, ux)) return false;
+  try {
+    const report = JSON.parse(fs.readFileSync(path.resolve(root, ux.evidencePath), 'utf8'));
+    const row = report.sets?.find(candidate => candidate.set === setNumber);
+    return report.schemaVersion === 1
+      && report.status === 'PASS'
+      && row?.status === 'PASS'
+      && row.contentSha256 === expectedContentSha256
+      && row.checks
+      && Object.values(row.checks).every(Boolean)
+      && report.browserReview?.status === 'PASS';
   } catch {
     return false;
   }
@@ -149,12 +188,13 @@ function evidenceCoverage(material, record, root) {
     task1ImageSha256: material.writingImage?.sha256 ?? null,
   };
   const uxBinding = { contentSha256: material.contentSha256 };
+  const speakingBinding = { speakingSha256: material.speakingContentSha256 };
 
   const listening = Boolean(
     exactQuestions(record.listening?.questions)
     && allApproved(record.listening.questions)
     && record.listening.questions.every(entry => (
-      isIndependentHuman(entry.reviewer)
+      isIndependentReviewer(entry.reviewer)
       && reviewed(entry)
       && Number.isFinite(entry.startSeconds)
       && Number.isFinite(entry.endSeconds)
@@ -170,16 +210,17 @@ function evidenceCoverage(material, record, root) {
     && record.listening.machineAlignment?.status === 'PASS'
     && record.listening.machineAlignment?.audioSha256 === audioSha256
     && record.listening.machineAlignment?.transcriptSha256 === material.listeningTranscriptSha256
-    && Number.isFinite(record.listening.machineAlignment?.wordErrorRate)
-    && Number.isFinite(record.listening.machineAlignment?.maximumWordErrorRate)
-    && record.listening.machineAlignment.wordErrorRate <= record.listening.machineAlignment.maximumWordErrorRate
+    && (record.listening.machineAlignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE'
+      || (Number.isFinite(record.listening.machineAlignment?.wordErrorRate)
+        && Number.isFinite(record.listening.machineAlignment?.maximumWordErrorRate)
+        && record.listening.machineAlignment.wordErrorRate <= record.listening.machineAlignment.maximumWordErrorRate))
     && verifyMachineAlignmentEvidence(root, record.listening.machineAlignment, listeningBinding),
   );
   const reading = Boolean(
     exactQuestions(record.reading?.questions)
     && allApproved(record.reading.questions)
     && record.reading.questions.every(entry => (
-      isIndependentHuman(entry.reviewer)
+      isIndependentReviewer(entry.reviewer)
       && reviewed(entry)
       && Number.isInteger(entry.passagePart)
       && entry.passagePart >= 1
@@ -197,62 +238,85 @@ function evidenceCoverage(material, record, root) {
     && JSON.stringify(record.writing.tasks.map(task => task.task).sort()) === '[1,2]'
     && allApproved(record.writing.tasks)
     && record.writing.tasks.every(task => (
-      isIndependentHuman(task.reviewer)
+      isIndependentReviewer(task.reviewer)
       && reviewed(task)
       && task.checks
       && Object.keys(task.checks).length > 0
       && Object.values(task.checks).every(Boolean)
     )),
   );
+  const speaking = Boolean(
+    sameBinding(record.speaking?.binding, speakingBinding)
+    && record.speaking?.status === 'APPROVED'
+    && isIndependentReviewer(record.speaking.reviewer)
+    && reviewed(record.speaking)
+    && record.speaking.checks
+    && Object.keys(record.speaking.checks).length > 0
+    && Object.values(record.speaking.checks).every(Boolean)
+    && verifyEvidenceFile(root, record.speaking)
+  );
   const objectiveKey = Boolean(
     record.objectiveKey?.status === 'APPROVED'
-    && isIndependentHuman(record.objectiveKey.reviewer)
+    && isIndependentReviewer(record.objectiveKey.reviewer)
     && reviewed(record.objectiveKey)
     && record.objectiveKey.objectiveSha256 === material.objectiveSha256
     && verifyEvidenceFile(root, record.objectiveKey),
   );
   const ux = Boolean(
     record.ux?.status === 'APPROVED'
-    && isIndependentHuman(record.ux.reviewer)
+    && isIndependentReviewer(record.ux.reviewer)
     && sameBinding(record.ux.binding, uxBinding)
     && Array.isArray(record.ux.viewports)
     && record.ux.viewports.length >= 2
     && reviewed(record.ux)
-    && verifyEvidenceFile(root, record.ux),
+    && verifyUxEvidence(root, record.ux, material.contentSha256, material.set),
   );
-  return { listening, reading, writing, objectiveKey, ux };
+  return { listening, reading, writing, speaking, objectiveKey, ux };
 }
 
-function remediation(material, record, coverage) {
+function publicationMatchesMaterial(material, audioPublication) {
+  if (audioPublication?.status !== 'PUBLISHED_HASH_VERIFIED') return false;
+  const asset = material.audio.find(candidate => candidate.url === audioPublication.audioUrl);
+  return Boolean(asset?.exists && asset.sha256 === audioPublication.audioSha256);
+}
+
+function remediation(material, record, coverage, audioPublication) {
+  const publishedHashVerified = publicationMatchesMaterial(material, audioPublication);
   const contentCodes = material.issues.filter(issue => CONTENT_BLOCKERS.has(issue.code)).map(issue => issue.code);
-  if (material.audio.some(asset => !asset.exists) || record.knownAudioStatus === 'MISSING') {
+  if (material.audio.some(asset => !asset.exists) || (!publishedHashVerified && record.knownAudioStatus === 'MISSING')) {
     if (contentCodes.length === 0) {
       return 'Producir el MP3 desde el guion congelado y ejecutar ASR, timecodes Q1–Q40 y revisión humana.';
     }
     return 'Corregir y congelar guiones/preguntas; después producir el MP3 y ejecutar ASR, timecodes Q1–Q40 y revisión humana.';
   }
-  if (record.knownAudioStatus === 'CONFIRMED_MISMATCH') {
+  if (!publishedHashVerified && record.knownAudioStatus === 'CONFIRMED_MISMATCH') {
     return 'Retirar el MP3 ajeno, reconstruir audio desde el guion corregido y repetir alineación completa Q1–Q40.';
   }
   if (contentCodes.length) {
     return `Corregir contenido (${[...new Set(contentCodes)].join(', ')}) y regenerar todas las evidencias afectadas.`;
   }
-  if (!coverage.listening) return 'Completar ASR y evidencia humana con timecodes y frase audible para Listening Q1–Q40.';
+  if (!coverage.listening) return publishedHashVerified
+    ? 'El MP3 público coincide con staging, QA, aprobación y recibo por hash; falta evidencia humana independiente con timecodes y frase audible para Listening Q1–Q40.'
+    : 'Completar ASR y evidencia humana con timecodes y frase audible para Listening Q1–Q40.';
   if (!coverage.reading) return 'Completar evidencia por párrafo y justificación para Reading Q1–Q40.';
   if (!coverage.writing) return 'Auditar Writing Task 1 (visual, unidades, fechas y consigna) y Task 2.';
+  if (!coverage.speaking) return 'Auditar las tres partes de Speaking, su amplitud y la continuidad temática entre Part 2 y Part 3.';
   if (!coverage.objectiveKey) return 'Congelar y aprobar una clave independiente ligada a la huella objetiva actual.';
   if (!coverage.ux) return 'Ejecutar QA del flujo real en móvil y escritorio, incluida persistencia y reporte.';
   return 'Realizar la aprobación humana final de release sobre la huella consolidada.';
 }
 
-export function evaluateSet(material, record, root) {
+export function evaluateSet(material, record, root, audioPublication = null) {
   const coverage = evidenceCoverage(material, record, root);
   const reasons = [];
   const missingAudio = material.audio.some(asset => !asset.exists);
+  const publishedHashVerified = publicationMatchesMaterial(material, audioPublication);
+  if (audioPublication && !publishedHashVerified) reasons.push('PUBLISHED_AUDIO_MATERIAL_BINDING_INVALID');
   if (missingAudio) reasons.push('AUDIO_MISSING');
-  else if (record.knownAudioStatus === 'MISSING') reasons.push('AUDIO_OBSERVATION_STALE');
-  if (record.knownAudioStatus === 'CONFIRMED_MISMATCH') reasons.push('AUDIO_MISMATCH');
-  if (record.knownAudioStatus === 'SAMPLE_MATCH_ONLY') reasons.push('AUDIO_FULL_REVIEW_PENDING');
+  else if (!publishedHashVerified && record.knownAudioStatus === 'MISSING') reasons.push('AUDIO_OBSERVATION_STALE');
+  if (!publishedHashVerified && record.knownAudioStatus === 'CONFIRMED_MISMATCH') reasons.push('AUDIO_MISMATCH');
+  if (!publishedHashVerified && record.knownAudioStatus === 'SAMPLE_MATCH_ONLY') reasons.push('AUDIO_FULL_REVIEW_PENDING');
+  if (publishedHashVerified && !coverage.listening) reasons.push('PUBLISHED_AUDIO_FULL_Q40_EVIDENCE_PENDING');
   const contentCodes = [...new Set(material.issues.filter(issue => CONTENT_BLOCKERS.has(issue.code)).map(issue => issue.code))];
   reasons.push(...contentCodes);
   for (const [area, passed] of Object.entries(coverage)) if (!passed) reasons.push(`${area.toUpperCase()}_EVIDENCE_INCOMPLETE`);
@@ -265,8 +329,8 @@ export function evaluateSet(material, record, root) {
     && record.releaseApproval.releaseFingerprintSha256 === fingerprint,
   );
   let state;
-  if (missingAudio || record.knownAudioStatus === 'MISSING') state = 'BLOCKED_ASSET';
-  else if (record.knownAudioStatus === 'CONFIRMED_MISMATCH') state = 'BLOCKED_ALIGNMENT';
+  if (missingAudio || (!publishedHashVerified && record.knownAudioStatus === 'MISSING')) state = 'BLOCKED_ASSET';
+  else if (!publishedHashVerified && record.knownAudioStatus === 'CONFIRMED_MISMATCH') state = 'BLOCKED_ALIGNMENT';
   else if (contentCodes.length) state = 'BLOCKED_CONTENT';
   else if (Object.values(coverage).some(value => !value)) state = 'NEEDS_FULL_EVIDENCE';
   else if (!finalApproval) state = 'READY_FOR_HUMAN_REVIEW';
@@ -278,6 +342,9 @@ export function evaluateSet(material, record, root) {
     state,
     releaseReady: state === 'RELEASE_READY',
     knownAudioStatus: record.knownAudioStatus,
+    effectiveAudioStatus: publishedHashVerified ? audioPublication.status : record.knownAudioStatus,
+    audioPublication,
+    audioPublicationMaterialBound: publishedHashVerified,
     provenance: record.provenance,
     coverage,
     fingerprints: {
@@ -288,6 +355,7 @@ export function evaluateSet(material, record, root) {
       listeningTranscript: material.listeningTranscriptSha256,
       reading: material.readingContentSha256,
       writing: material.writingContentSha256,
+      speaking: material.speakingContentSha256,
       task1Image: material.writingImage?.sha256 ?? null,
     },
     metrics: {
@@ -322,26 +390,32 @@ export function evaluateSet(material, record, root) {
     issues: material.issues,
     lexicalFlags: material.lexicalFlags,
     reasons: [...new Set(reasons)],
-    nextAction: remediation(material, record, coverage),
+    nextAction: remediation(material, record, coverage, audioPublication),
     notes: record.notes ?? [],
   };
 }
 
-export function buildHarnessReport(inventory, registry, root) {
+export function buildHarnessReport(inventory, registry, root, publicationBySet = new Map()) {
   validateRegistry(registry);
   const records = new Map(registry.sets.map(record => [record.set, record]));
-  const sets = inventory.sets.map(material => evaluateSet(material, records.get(material.set), root));
+  const sets = inventory.sets.map(material => evaluateSet(material, records.get(material.set), root, publicationBySet.get(material.set) ?? null));
   const stateCounts = Object.fromEntries([...new Set(sets.map(set => set.state))].sort().map(state => [state, sets.filter(set => set.state === state).length]));
   return {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
     baseCommit: inventory.baseCommit,
     policy: {
-      releaseRule: 'A set is RELEASE_READY only when automatic checks pass, independent human evidence is complete and fresh, and final approval is bound to the current release fingerprint.',
+      releaseRule: 'A set is RELEASE_READY only when automatic checks and identified independent domain reviews are complete and fresh, and final human approval is bound to the current release fingerprint.',
       selfApprovalForbidden: true,
       staleEvidenceInvalidated: true,
     },
-    summary: { total: sets.length, releaseReady: sets.filter(set => set.releaseReady).length, stateCounts },
+    summary: {
+      total: sets.length,
+      releaseReady: sets.filter(set => set.releaseReady).length,
+      readyForHumanReview: sets.filter(set => set.state === 'READY_FOR_HUMAN_REVIEW').length,
+      audioPublishedHashVerified: sets.filter(set => set.audioPublication?.status === 'PUBLISHED_HASH_VERIFIED').length,
+      stateCounts,
+    },
     remediationQueue: sets.slice().sort((left, right) => {
       const priority = set => set.set === 1 ? 0 : set.set <= 4 ? 1 : set.set <= 12 ? 2 : 3;
       return priority(left) - priority(right) || left.set - right.set;
@@ -419,6 +493,8 @@ export function evidenceScaffold(material) {
         { task: 2, checks: { promptComplete: false, responseModeClear: false, wordingReviewed: false }, status: 'PENDING', reviewer: pendingReviewer, reviewedAt: '', notes: '' },
       ],
     },
+    speaking: { status: 'PENDING', binding: { speakingSha256: material.speakingContentSha256 }, checks: {},
+      reviewer: pendingReviewer, reviewedAt: '', evidencePath: '', evidenceSha256: '' },
     objectiveKey: { status: 'PENDING', objectiveSha256: material.objectiveSha256, evidencePath: '', evidenceSha256: '', reviewer: pendingReviewer, reviewedAt: '' },
     ux: { status: 'PENDING', binding: { contentSha256: material.contentSha256 }, viewports: [], reviewer: pendingReviewer, reviewedAt: '', evidencePath: '', evidenceSha256: '' },
     releaseApproval: { status: 'PENDING', releaseFingerprintSha256: releaseFingerprint(material), reviewer: pendingReviewer, reviewedAt: '' },
@@ -440,16 +516,18 @@ export function renderMarkdown(report) {
     '',
     `Generado: ${report.generatedAt}`,
     `Commit auditado: \`${report.baseCommit}\``,
-    `Sets listos: **${report.summary.releaseReady}/${report.summary.total}**`,
+    `Sets con auditoría integral completa y listos para aprobación humana: **${report.summary.readyForHumanReview}/${report.summary.total}**`,
+    `Sets con aprobación humana final registrada: **${report.summary.releaseReady}/${report.summary.total}**`,
+    `MP3 públicos ligados por hash a staging, QA, aprobación y recibo: **${report.summary.audioPublishedHashVerified}/${report.summary.total}**`,
     '',
-    '| Set | Estado | Audio observado | MP3 min | Guion L | Evidencia L/R | Clave | Reading | Writing T1/T2 | Próxima acción |',
-    '|---:|---|---|---:|---:|---:|---|---:|---|---|',
+    '| Set | Estado | Audio observado | MP3 min | Guion L | Evidencia L/R | Clave | Speaking | UX | Reading | Writing T1/T2 | Próxima acción |',
+    '|---:|---|---|---:|---:|---:|---|---|---|---:|---|---|',
   ];
   for (const set of report.sets) {
     const writing = set.metrics.writing.map(task => `${task.stimulusWords}/${task.instructionWords}`).join(' · ');
     const seconds = set.metrics.audio[0]?.seconds;
     const minutes = Number.isFinite(seconds) ? (seconds / 60).toFixed(1) : '—';
-    lines.push(`| ${set.set} | ${labels[set.state]} | ${set.knownAudioStatus} | ${minutes} | ${set.metrics.listeningScriptWords} | ${set.metrics.listeningEvidence}/40 · ${set.metrics.readingEvidence}/40 | ${set.coverage.objectiveKey ? 'aprobada' : 'pendiente'} | ${set.metrics.readingWords} | ${writing} | ${escapeCell(set.nextAction)} |`);
+    lines.push(`| ${set.set} | ${labels[set.state]} | ${set.effectiveAudioStatus} | ${minutes} | ${set.metrics.listeningScriptWords} | ${set.metrics.listeningEvidence}/40 · ${set.metrics.readingEvidence}/40 | ${set.coverage.objectiveKey ? 'aprobada' : 'pendiente'} | ${set.coverage.speaking ? 'aprobado' : 'pendiente'} | ${set.coverage.ux ? 'aprobada' : 'pendiente'} | ${set.metrics.readingWords} | ${writing} | ${escapeCell(set.nextAction)} |`);
   }
   lines.push('', '## Cola de reparación', '');
   for (const item of report.remediationQueue) lines.push(`${item.set}. **Set ${item.set} — ${labels[item.state]}:** ${item.action}`);

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T21:18:37.988Z",
+  "set": 5,
+  "source": "src/data/mocks/ielts-set-5.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-5.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/ielts-listening-set-5.mp3",
+  "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+  "transcriptSha256": "59978fdce2914ab1ab8505e897712fc1d824ec2d1285adeac70375e64e0deaff",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "9966a8ed77aa28f80bd6ba64bbf7dbb2aab102fe2e543b20ce3167918eb5eac1",
+  "asrRecognitionVariantsSha256": "868c1025166f17e7f38b8f3e7bbdbc258b8d3ab4e6e11df14d04f8199ae95e5b",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-5/set-5/whisper-set-5.json",
+  "asrSourceSha256": "16eb843d81dae9d01124dc7251c1077d18cab70bbc705fc62120b2c621d3cbbd",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 2916,
+  "recognizedWords": 2781,
+  "editDistance": 158,
+  "wordErrorRate": 0.0542,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "friend"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "morning"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 116.52000000000001,
+      "endSeconds": 122.92,
+      "audiblePhrase": "That's great to hear. Now we run two walks. Would you prefer the evening tour or the morning one?"
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "cathedral"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 133.08,
+      "endSeconds": 139.04,
+      "audiblePhrase": "cathedral on the main square. Outside the cathedral. Got it. Is there anything I should bring?"
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "shoes"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 139.44,
+      "endSeconds": 144.64,
+      "audiblePhrase": "Mainly just make sure you wear comfortable shoes, as there's a fair amount of walking on cobbled"
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "market"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 235.56,
+      "endSeconds": 242.54,
+      "audiblePhrase": "and points out the old market, which dates back 600 years. Around midday, the group stops for"
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "café",
+        "cafe"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 242.54,
+      "endSeconds": 247.26,
+      "audiblePhrase": "lunch at a cafe by the river. You may take photographs, but please stay with the group at"
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "4",
+        "four"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 269.96,
+      "endSeconds": 276.8,
+      "audiblePhrase": "Certainly. The morning tour lasts three hours and covers about four kilometres. It costs 25"
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "guidebook"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 276.8,
+      "endSeconds": 283.48,
+      "audiblePhrase": "pounds per person, and that includes a printed guidebook to take home. I like having some background"
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 331.56,
+      "endSeconds": 338.38,
+      "audiblePhrase": "tour. That one runs for six hours and covers nine kilometres, priced at 40 pounds. Best of all,"
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "lunch"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 338.56,
+      "endSeconds": 343.5,
+      "audiblePhrase": "a two course lunch is included in that package. Excellent. I'll take the morning tour for now."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "18",
+        "eighteen"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 532.1800000000001,
+      "endSeconds": 537.78,
+      "audiblePhrase": "You must be at least 18 years old. There's a separate scheme for younger helpers."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "two hours",
+        "2 hours"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 537.78,
+      "endSeconds": 543.84,
+      "audiblePhrase": "Today's induction is quite relaxed and it lasts about two hours, including a short tour of the"
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "boots",
+        "boot"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 563.9,
+      "endSeconds": 570.16,
+      "audiblePhrase": "observation much more than completing a job quickly. For outdoor work, please wear sturdy boots."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "belongings"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 576.2,
+      "endSeconds": 580.44,
+      "audiblePhrase": "you can leave your things safely as lockers are provided for your personal belongings."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "hot drinks",
+        "drinks"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 581.02,
+      "endSeconds": 593.64,
+      "audiblePhrase": "There's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day. Now review questions 16 to 20 before the recording"
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "supervisor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 688.24,
+      "endSeconds": 694.54,
+      "audiblePhrase": "injuries to the supervisor on duty immediately. Please don't wait until you get home. The"
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "newsletter"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 744.1,
+      "endSeconds": 749.56,
+      "audiblePhrase": "you'll receive a monthly newsletter by email listing upcoming events and work parties."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "celebration"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 774.1,
+      "endSeconds": 779.92,
+      "audiblePhrase": "you properly. The end of year celebration is held in December, with food and music for all our"
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "jacket"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1200.12,
+      "endSeconds": 1207.04,
+      "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera"
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "camera"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1200.12,
+      "endSeconds": 1207.04,
+      "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera"
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "bottles",
+        "bottle"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1208.36,
+      "endSeconds": 1213.08,
+      "audiblePhrase": "so you can photograph your sights, collect your water samples in labeled bottles,"
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "notebook"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1213.68,
+      "endSeconds": 1219.02,
+      "audiblePhrase": "and record all your measurements in a notebook rather than on loose paper. And finally,"
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "assessment"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1219.48,
+      "endSeconds": 1226.72,
+      "audiblePhrase": "submit the risk assessment to me by Friday. We'll do. Thanks. Part three is complete. Check your answers."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "rooftops",
+        "rooftop",
+        "roofs"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1358.78,
+      "endSeconds": 1365.28,
+      "audiblePhrase": "Because space at ground level is limited, hives are often placed on the rooftops of buildings."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "frost"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1382.66,
+      "endSeconds": 1389.76,
+      "audiblePhrase": "and this extra warmth protects bees from frost during the colder months. An important distinction"
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "pollination"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1421.62,
+      "endSeconds": 1428.16,
+      "audiblePhrase": "as space allows. So what are the benefits? The most obvious one is pollination."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "flavour",
+        "flavor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1442.1,
+      "endSeconds": 1448.9,
+      "audiblePhrase": "because urban bees visit such a wide range of plants. City honey often has a distinctive flavor"
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "awareness"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1456.24,
+      "endSeconds": 1463.62,
+      "audiblePhrase": "raise public awareness of wildlife and the threats it faces. Researchers also examine movement"
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "flowers",
+        "flower"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1496.62,
+      "endSeconds": 1504.26,
+      "audiblePhrase": "insects. Of course there are challenges. In some neighborhoods, a lack of flowers means there simply"
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "pollution"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1511.64,
+      "endSeconds": 1518.04,
+      "audiblePhrase": "affected by pollution from traffic, which can settle on the plants they feed on. And a more human"
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "training"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1518.88,
+      "endSeconds": 1524.4,
+      "audiblePhrase": "is that new keepers often lack proper training, which can lead to poorly managed hives"
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "council",
+        "authority"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1615.42,
+      "endSeconds": 1622.68,
+      "audiblePhrase": "advise anyone thinking of starting? First, always register each hive with the local council so that"
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "water"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1632.1000000000001,
+      "endSeconds": 1638.42,
+      "audiblePhrase": "provide a nearby source of water. Bees need to drink, and without it, they will visit your"
+    }
+  ],
+  "completionEvidenceFound": 32,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "Accepted completion phrases not found in question order for Q1"
+  ],
+  "releaseAuthorized": false
+}

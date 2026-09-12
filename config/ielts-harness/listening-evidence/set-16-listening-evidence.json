@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "set": 16,
+  "generatedAt": "2026-09-09",
+  "audio": {
+    "url": "/audio/ielts/ielts-listening-set-16.mp3",
+    "path": "public/audio/ielts/ielts-listening-set-16.mp3",
+    "sha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50"
+  },
+  "transcript": {
+    "effectiveTranscriptSha256": "20bc9f718fa314818b21c8656c8829d43c12db0d76ce20d1721561da9a02bdd2",
+    "harnessTranscriptSha256": "ffbedc7f652f6618217f7cb998a5a096f83ae14d8a908a4d482bebe92248f2ac",
+    "academicListeningMaterialSha256": "fa1bedf2a84242a9cc6ab5e41acd484756dc25ff3f55a8a49678a069441d5203"
+  },
+  "academicReview": {
+    "path": "config/ielts-harness/academic-reviews/set-16-objective-review.json",
+    "fileSha256": "8eefa32ad0755f773f0fa32e25408ba5ed5ed1ce83366b6637a6497da9038ec0",
+    "reviewSha256": "156a26d153315643f187dd4cc5a532ff6d993fdf6d70fcded6a8190c5471f01e"
+  },
+  "asr": {
+    "qaPath": "config/ielts-harness/listening-evidence/sources/set-16/546469473e3f-staged-asr-qa-set-16.json",
+    "qaSha256": "546469473e3f9647903d576af08a66d9f793d895906806cb4b2c5895ae462e98",
+    "globalReportPath": "config/ielts-harness/listening-evidence/sources/set-16/80a377d64b3b-asr-report-set-16.json",
+    "globalReportSha256": "80a377d64b3b98df1bc50551b46b337b2a475fecda926aa8cabd550490368692",
+    "globalSourcePath": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+    "globalSourceSha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6"
+  },
+  "evidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "part": 1,
+      "academicEvidenceSha256": "2c67cf565a650d35ea494ecc4aadcf66fb50e7bd8b20431d28dc5729ac407ae9",
+      "academicExcerptSha256": "a15da8cd4bea9d213d016efa073a45ecc04d900c7750430b1c0965c11334680a",
+      "startSeconds": 105.44,
+      "endSeconds": 110.58,
+      "audiblePhrase": "It's Fletcher. Shall I spell that? F-L-E-T-C-H-E-R.",
+      "audiblePhraseSha256": "d3fae3eb2db64a070303de2212b2a9d4e3db5af2fc9d587d3985efb08d2990a9",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 105.44,
+        "endSeconds": 110.58
+      }
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "part": 1,
+      "academicEvidenceSha256": "214c60d24a8f387cd700bceb9b250ac3e78741938638301e43ff733e064e886d",
+      "academicExcerptSha256": "a17df92f54031d264d4935fd3ca66a90893d45c65649a0bb45fccd465a50a4c7",
+      "startSeconds": 134.36,
+      "endSeconds": 137.64,
+      "audiblePhrase": "and you can stop me whenever two alternatives sound too similar.",
+      "audiblePhraseSha256": "ec4186ce315d8c6220c499d7471e314bf5628e5564d4eca493ad334eaa4fd9a3",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 134.36,
+        "endSeconds": 137.64
+      }
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "part": 1,
+      "academicEvidenceSha256": "072bf5a85c6e9c7f7c2400ba552a4a8d68242beb5da9708f490616b5e2ce457c",
+      "academicExcerptSha256": "7442d959a9eb956088f545cd5b3b9b9dc4724e17d24895a0fb736afa6199e17d",
+      "startSeconds": 251.84,
+      "endSeconds": 256.62,
+      "audiblePhrase": "I looked at that, but I think they'd both prefer the adventure camp. They love being outdoors.",
+      "audiblePhraseSha256": "a340d5f59908990df7605b13016277f687e343af5397ee403fa39a72b017dce6",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 251.84,
+        "endSeconds": 256.62
+      }
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "part": 1,
+      "academicEvidenceSha256": "d4031fcf99c33f546da1edfedda48068feadea06f79d0f736ebdcacac888904e",
+      "academicExcerptSha256": "206f8786eae6b386bac9f864ee6878ac5ffb057d3f4b2061c76c92bd1d056a6a",
+      "startSeconds": 282.08,
+      "endSeconds": 287.68,
+      "audiblePhrase": "A popular choice. The camp runs every weekday, starting at 9am and finishing at 4pm.",
+      "audiblePhraseSha256": "b49cd9b3669da4541b26666c9bb93d9f48bbc05a3df58762e78319232c1bed6d",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 282.08,
+        "endSeconds": 287.68
+      }
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "part": 1,
+      "academicEvidenceSha256": "cae76312954cb9e689f295bf9b3d2daa6b849e728dd28fb844d1e68a98a0c557",
+      "academicExcerptSha256": "564a7591c3e7e969ab69dc9998d3d2a490d5f6a710aef7e29728d6c7a835baf0",
+      "startSeconds": 290.72,
+      "endSeconds": 295.76,
+      "audiblePhrase": "Things to remember, children should bring a packed lunch each day, as we don't provide meals.",
+      "audiblePhraseSha256": "99940cc16d07e970c4c061822bd3a50fc7e6c0cf887d652fa3747b1e874feafb",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 290.72,
+        "endSeconds": 295.76
+      }
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "part": 1,
+      "academicEvidenceSha256": "30d383439d6991697dc51f5aa9c26327dac63a19a1c03ef4fbc5f05ba336d16f",
+      "academicExcerptSha256": "564a7591c3e7e969ab69dc9998d3d2a490d5f6a710aef7e29728d6c7a835baf0",
+      "startSeconds": 296.46,
+      "endSeconds": 300.96,
+      "audiblePhrase": "And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.",
+      "audiblePhraseSha256": "f7b5324967ee506f10696a1b4c8d32488403a6e030ee8babd889b6f8c4c23c0c",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 296.46,
+        "endSeconds": 300.96
+      }
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "part": 1,
+      "academicEvidenceSha256": "74d65b5c67fc3adb304cc895ccbfebf3cf10d3a24f9d7978e83bfa787f901a57",
+      "academicExcerptSha256": "7d5e356e0b892f947c90c36266c815cd10a148c7ae02458212efb8f0dd75c065",
+      "startSeconds": 329.16,
+      "endSeconds": 335.7,
+      "audiblePhrase": "It depends on their ages. Our Junior's program is for children aged 6 and over, and that's 90 pounds per week.",
+      "audiblePhraseSha256": "3c18b0080e1c4a967e4b21f3f63934009adfdf8a7e044a47135125bd9951a7f8",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 329.16,
+        "endSeconds": 335.7
+      }
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "part": 1,
+      "academicEvidenceSha256": "3af24a6b7968215f16c6957ab1e5a0efee6a9896fcbe4036b09a81bf4304c1e5",
+      "academicExcerptSha256": "7d5e356e0b892f947c90c36266c815cd10a148c7ae02458212efb8f0dd75c065",
+      "startSeconds": 336.36,
+      "endSeconds": 339.34,
+      "audiblePhrase": "Juniors also each receive a free cap to wear on trips.",
+      "audiblePhraseSha256": "0458809cd91dec9cfa101cf54a67872d762a52c7c020da61e9ab6c908dea43c7",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 336.36,
+        "endSeconds": 339.34
+      }
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "part": 1,
+      "academicEvidenceSha256": "1f74c13fb40fdc90d790ec62c958eafb9552b2ad342138a5c60d12a5250577ab",
+      "academicExcerptSha256": "206f8786eae6b386bac9f864ee6878ac5ffb057d3f4b2061c76c92bd1d056a6a",
+      "startSeconds": 372.66,
+      "endSeconds": 382.16,
+      "audiblePhrase": "That would be our Explorers program. The minimum age for that is 9, and it's a little more 120 pounds a week, because it includes more excursions.",
+      "audiblePhraseSha256": "a78cd6539fdcf61a4db6ae696db9b668591ab82990771e803b9d93442a8d1552",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 372.66,
+        "endSeconds": 382.16
+      }
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "part": 1,
+      "academicEvidenceSha256": "7c2f0e95913a61ef277a25796666a4308813b475598e91faea74366380d43e61",
+      "academicExcerptSha256": "c5d6f4cab14e80ae115edcd1c5b9ac8f06fe942ce5578928b229b43545173599",
+      "startSeconds": 372.66,
+      "endSeconds": 382.16,
+      "audiblePhrase": "That would be our Explorers program. The minimum age for that is 9, and it's a little more 120 pounds a week, because it includes more excursions.",
+      "audiblePhraseSha256": "a78cd6539fdcf61a4db6ae696db9b668591ab82990771e803b9d93442a8d1552",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 372.66,
+        "endSeconds": 382.16
+      }
+    },
+    {
+      "question": 11,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "academicEvidenceSha256": "0176a3e927aac0db9229d5543b35dddcfa92bc8d1a573ae0ce26f3a017c98833",
+      "academicExcerptSha256": "307e055861111a782b61afef4adb1b3d89fd904300ab7281b894e9cd92fbd053",
+      "startSeconds": 570.16,
+      "endSeconds": 594.02,
+      "audiblePhrase": "Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin. They jam our sorting machines. And secondly, any container that is still covered in food cannot be recycled either. Food contaminated packaging has to go in the general waste.",
+      "audiblePhraseSha256": "0af8c6fb386462e0f27193abce730c4414bc1725ce91a1f1eda4f04bc20f2c28",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 1,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 570.16,
+        "endSeconds": 594.02
+      }
+    },
+    {
+      "question": 12,
+      "responseKey": "l2-multi",
+      "part": 2,
+      "academicEvidenceSha256": "0176a3e927aac0db9229d5543b35dddcfa92bc8d1a573ae0ce26f3a017c98833",
+      "academicExcerptSha256": "307e055861111a782b61afef4adb1b3d89fd904300ab7281b894e9cd92fbd053",
+      "startSeconds": 570.16,
+      "endSeconds": 594.02,
+      "audiblePhrase": "Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin. They jam our sorting machines. And secondly, any container that is still covered in food cannot be recycled either. Food contaminated packaging has to go in the general waste.",
+      "audiblePhraseSha256": "0af8c6fb386462e0f27193abce730c4414bc1725ce91a1f1eda4f04bc20f2c28",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 1,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 570.16,
+        "endSeconds": 594.02
+      }
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "part": 2,
+      "academicEvidenceSha256": "e0af88eb7434d5f3fc2c94f32b8a5c03d6fa544a6cf2278505c227799b21a88d",
+      "academicExcerptSha256": "b78b27186470f1981533f8683d6cb3667c6e4a107730f159423d2d348b89b50a",
+      "startSeconds": 539,
+      "endSeconds": 544.72,
+      "audiblePhrase": "To make it easy to identify, these bins are green, quite different from the black bins we use for General Rubbish.",
+      "audiblePhraseSha256": "5b4cc9edd5c91e97fa738f670c43053b766bd035c9a79f3baab6aba17b963057",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 539,
+        "endSeconds": 544.72
+      }
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "part": 2,
+      "academicEvidenceSha256": "0f734bd03211c5beab430bb513683e9220acc8f77890aec3c013d68c1ed41e4a",
+      "academicExcerptSha256": "252cd1dcb5ddf5e670ecbf78aef50b0c33890239540992fa77fdf566a8fcfd01",
+      "startSeconds": 620.76,
+      "endSeconds": 623.82,
+      "audiblePhrase": "As for collections, your green bin will be emptied on a Wednesday.",
+      "audiblePhraseSha256": "00e64d88e0768b5f64c6bda3386b78b7cc98c522bff009b5f4a6e4beda46e1f3",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 620.76,
+        "endSeconds": 623.82
+      }
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "part": 2,
+      "academicEvidenceSha256": "8e2cd4fb4730acf8a7532d1ac1a099f45135f75b673cd3d3b3ce966022cf27ad",
+      "academicExcerptSha256": "252cd1dcb5ddf5e670ecbf78aef50b0c33890239540992fa77fdf566a8fcfd01",
+      "startSeconds": 624.58,
+      "endSeconds": 628.88,
+      "audiblePhrase": "Note that this won't be every week. Collections are fortnightly, so once every two weeks.",
+      "audiblePhraseSha256": "1a70ebd15afabdb8296744a184ab179e870333478a00f3a8f11095e2c633c5d1",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 624.58,
+        "endSeconds": 628.88
+      }
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "part": 2,
+      "academicEvidenceSha256": "d71d027a54ac5dcabf74ba14c7ff3cdc7eeee1671c28686197fce6a4587883ac",
+      "academicExcerptSha256": "ca47c7bf8feaec717b530e6f77baad7b21dec9eef02ddcddf878f1d82eef14b1",
+      "startSeconds": 656.2,
+      "endSeconds": 660.5,
+      "audiblePhrase": "The new bins will be delivered to all homes by 30 June, so please look out for yours.",
+      "audiblePhraseSha256": "c32e9f11afa465bc1862f63c9852cc330d52f28239c7718b130386edcaf92446",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 656.2,
+        "endSeconds": 660.5
+      }
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "part": 2,
+      "academicEvidenceSha256": "3f367e60a0be5f56e04325ea112c0c27f7d3145f324e016aab9518237b23ee90",
+      "academicExcerptSha256": "ca47c7bf8feaec717b530e6f77baad7b21dec9eef02ddcddf878f1d82eef14b1",
+      "startSeconds": 665.13,
+      "endSeconds": 666.65,
+      "audiblePhrase": "calling our recycling helpline.",
+      "audiblePhraseSha256": "02339dc6fe0c29593b9610a96d0e638052d21fa5751461db4752af0c87f7205e",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "FOCUSED_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/643f2433fd0a-whisper-focused-set-16-part-2.json",
+        "sha256": "643f2433fd0ae506a2979bcf814146ecc66062b27b9589108e3f6c01cd83733a",
+        "startSeconds": 8.92,
+        "endSeconds": 10.44
+      },
+      "conversion": {
+        "localStartSeconds": 8.92,
+        "localEndSeconds": 10.44,
+        "segmentIndexes": [
+          47
+        ],
+        "playbackSpeed": 1,
+        "masterStartSeconds": 665.13,
+        "masterEndSeconds": 666.65
+      }
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "part": 2,
+      "academicEvidenceSha256": "0cc1055643a05c7beeda7577fba11710c856e2681a054d8810e8143985e6ed7b",
+      "academicExcerptSha256": "b62cd1878c28396324f38d52bf56f6e213bf2b8d6abc28f01e086dd826d91be4",
+      "startSeconds": 734.42,
+      "endSeconds": 739.22,
+      "audiblePhrase": "Each month, one household that recycles particularly well will win a shopping voucher worth £50.",
+      "audiblePhraseSha256": "57c3d0cb4c2ad751f251dc2fb4eb232975eb72fd9b3c816ad475659fe4414587",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 734.42,
+        "endSeconds": 739.22
+      }
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "part": 2,
+      "academicEvidenceSha256": "b0136d0eeacf20c688eb9d1346b1c5b2e5ec128c50c57f6b5f17397d340ec51f",
+      "academicExcerptSha256": "0cda6145278629762152fe16d99fd71a855ccddd848445d02bebccca7196a4de",
+      "startSeconds": 764.16,
+      "endSeconds": 769.08,
+      "audiblePhrase": "We aim to reduce the amount of waste sent to landfill by 40% within two years.",
+      "audiblePhraseSha256": "c0898568537c190915677c136611e8dd941aae12b8dfeaafb28d0b113a775800",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 764.16,
+        "endSeconds": 769.08
+      }
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "part": 2,
+      "academicEvidenceSha256": "4e1d6a4149601d33ea8e3544dbf5f18ceef746d2d636e44c162fab3a17893046",
+      "academicExcerptSha256": "3b145c33c04b275fa7b8a574cb623947373cb1b34d623e8e4fae17852cbb7a0d",
+      "startSeconds": 789.94,
+      "endSeconds": 796.48,
+      "audiblePhrase": "Finally, for those of you who'd like to recycle food scraps as well, a free kitchen caddy is available from the town hall.",
+      "audiblePhraseSha256": "30a4d24a52093414d474866c370209f9b179829cfc2a3533f37981aabad80cf8",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 789.94,
+        "endSeconds": 796.48
+      }
+    },
+    {
+      "question": 21,
+      "responseKey": "l3q21",
+      "part": 3,
+      "academicEvidenceSha256": "e0aca2f3595a8696384803d7592a4c1bf9f27e571407ef217c6dcf4f85f14145",
+      "academicExcerptSha256": "82aa64d05a8f3ee731a983081b1ed08fc2f73cbb552a6f6324a30a2379816ce5",
+      "startSeconds": 959.5600000000001,
+      "endSeconds": 975.7,
+      "audiblePhrase": "Right, Liam Sophie, let's review your prototype. Talk me through it. Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible so anyone could build one.",
+      "audiblePhraseSha256": "df509b5132e4d5499f5e50fea7bca9e8538b77a37811fd2c9c0e9d49546c4fb2",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 1,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 959.5600000000001,
+        "endSeconds": 975.7
+      }
+    },
+    {
+      "question": 22,
+      "responseKey": "l3q22",
+      "part": 3,
+      "academicEvidenceSha256": "02cc46ae193160e3a05c37b270669e4987fe2317eb8171fe4c4a34cf006c2077",
+      "academicExcerptSha256": "2153689757b313db61e2487f06309f61a752ffc960ca6507570d281e08d8cfac",
+      "startSeconds": 1027.6,
+      "endSeconds": 1037.54,
+      "audiblePhrase": "The outer casing is a simple plastic bottle. We did consider using metal which is more durable, but plastic is far cheaper and lighter, and that fitted our budget better.",
+      "audiblePhraseSha256": "0d464e13ec2dab891dbc21b40c5702bd5a0dd1cc185a57c2611e7a385f339420",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9677,
+      "answerSupportScore": 1,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1027.6,
+        "endSeconds": 1037.54
+      }
+    },
+    {
+      "question": 23,
+      "responseKey": "l3q23",
+      "part": 3,
+      "academicEvidenceSha256": "1ae388764e15363dfef405f0a7a913a98e568718fc28654702218589f801d40a",
+      "academicExcerptSha256": "0aaf54e55612d77fc4185da7fba178874fa52c85b0840e0063240fa0b1e4734c",
+      "startSeconds": 1154.22,
+      "endSeconds": 1164.92,
+      "audiblePhrase": "Mostly well, but we did hit one problem. When we ran dirty water through it quickly, the filter clogged up and the flow almost stopped. We had to pour the water in much more slowly.",
+      "audiblePhraseSha256": "ce0338415a9041a9ad4459204cdf8a9521e7dd682f1ebc88742539105a813544",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9722,
+      "answerSupportScore": 0.6,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1154.22,
+        "endSeconds": 1164.92
+      }
+    },
+    {
+      "question": 24,
+      "responseKey": "l3q24",
+      "part": 3,
+      "academicEvidenceSha256": "cda1f1def1e5b06f237bb178cbac9d23faacc1dc36abaaff092c4b5496dca0e9",
+      "academicExcerptSha256": "14c0c01b4bf43cad96a3bd78e5ace847dc2de3c54b1dc8b4628628d62dc8ed7f",
+      "startSeconds": 1165.54,
+      "endSeconds": 1175.86,
+      "audiblePhrase": "That's useful to know. My main concern though isn't the flow rate. It's safety. Your filter removes dirt and improves taste, but it won't kill bacteria. For drinking water, that's a serious gap.",
+      "audiblePhraseSha256": "f554e96d820bb3ab6b69ad08c04b3f3a65b4ad174e0887068a2366e799f6095b",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9706,
+      "answerSupportScore": 0.5,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1165.54,
+        "endSeconds": 1175.86
+      }
+    },
+    {
+      "question": 25,
+      "responseKey": "l3q25",
+      "part": 3,
+      "academicEvidenceSha256": "5fa0f0a967743f745dff00d8d417af3007efdd913e085d3b74b746eb71e34dbf",
+      "academicExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "startSeconds": 1199.94,
+      "endSeconds": 1220.74,
+      "audiblePhrase": "So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+      "audiblePhraseSha256": "b8fec688b1370040b7d9c6e49cd6fd1a13465adc707e0dea2e09f13963063b49",
+      "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+      "method": "ACADEMIC_EXCERPT_ALIGNMENT",
+      "confidence": "HIGH",
+      "alignmentScore": 0.9701,
+      "answerSupportScore": 0.75,
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1199.94,
+        "endSeconds": 1220.74
+      }
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "part": 3,
+      "academicEvidenceSha256": "00806fccfc0181a114bd163d7731febc02c86452139c5023efdb791a28a9c105",
+      "academicExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "startSeconds": 1199.94,
+      "endSeconds": 1204.66,
+      "audiblePhrase": "So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry.",
+      "audiblePhraseSha256": "1cd4d4c466b45ffaa86bed92de3b4cf44f4588f3828c3d079efd76363cd20325",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1199.94,
+        "endSeconds": 1204.66
+      }
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "part": 3,
+      "academicEvidenceSha256": "71076c3fde4c0de1e75c2372fbc7b747f535d8596046af4e01a65626a9d37964",
+      "academicExcerptSha256": "82aa64d05a8f3ee731a983081b1ed08fc2f73cbb552a6f6324a30a2379816ce5",
+      "startSeconds": 1205.24,
+      "endSeconds": 1212.72,
+      "audiblePhrase": "Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step.",
+      "audiblePhraseSha256": "d8c3f9a00dd1be00bff6c677368811518d7649bcdac9aa94bbf22445fb8e47b2",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1205.24,
+        "endSeconds": 1212.72
+      }
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "part": 3,
+      "academicEvidenceSha256": "6b44d1714314c102075f695d83a0ec84af0413caa83d4c97b840139c737f189e",
+      "academicExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "startSeconds": 1205.24,
+      "endSeconds": 1212.72,
+      "audiblePhrase": "Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step.",
+      "audiblePhraseSha256": "d8c3f9a00dd1be00bff6c677368811518d7649bcdac9aa94bbf22445fb8e47b2",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1205.24,
+        "endSeconds": 1212.72
+      }
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "part": 3,
+      "academicEvidenceSha256": "41c04ddf7780a707bf1a17a1e1daffe2e0a980fb32072a1cbaac1f1da003ee3c",
+      "academicExcerptSha256": "56a18ea68df5b909da10fc61503e9e73400a04ba1914c211a679f00c2806a639",
+      "startSeconds": 1213.56,
+      "endSeconds": 1220.74,
+      "audiblePhrase": "Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+      "audiblePhraseSha256": "630c519047d36c7eef3ee80702fbfeb904234c6c252989c313d0ad46d4bb9505",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1213.56,
+        "endSeconds": 1220.74
+      }
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "part": 3,
+      "academicEvidenceSha256": "c06581720547af2d72a38ea9a121aa0579d46352e8251d499dd08b07ade1230c",
+      "academicExcerptSha256": "ba145a509400c25f13735f7e3e82b9bce95aeb4c0c997db14348f79012be03d8",
+      "startSeconds": 1213.56,
+      "endSeconds": 1220.74,
+      "audiblePhrase": "Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+      "audiblePhraseSha256": "630c519047d36c7eef3ee80702fbfeb904234c6c252989c313d0ad46d4bb9505",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1213.56,
+        "endSeconds": 1220.74
+      }
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "part": 4,
+      "academicEvidenceSha256": "a61d6267a4ea7418f4b11cf3c039d0e7ae1790bbecf55fedc4e09c1bd3b8f415",
+      "academicExcerptSha256": "a89d950ae71a84fa5afe91e464c10d0bf1c208143be8a2248a630d7a4af2f24d",
+      "startSeconds": 1419.72,
+      "endSeconds": 1422.88,
+      "audiblePhrase": "Some species cover more than 10,000 kilometers in a single journey.",
+      "audiblePhraseSha256": "8ad1277fad0b5fc068fcb7c9bb7eeb79952a1be1d399a83d1185fd77801ed1a0",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1419.72,
+        "endSeconds": 1422.88
+      }
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "part": 4,
+      "academicEvidenceSha256": "755c573654b089ce502407099a0769b104b45ba5269424bf9f189e06fa7fe9f0",
+      "academicExcerptSha256": "98fbcc8398b43a14525258c28e45575bc68de03ac45b4733f4ecdc8da76016ca",
+      "startSeconds": 1452.86,
+      "endSeconds": 1461.62,
+      "audiblePhrase": "The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass.",
+      "audiblePhraseSha256": "9e7212e9e26d85c1931cf3eae72ef07b09ccaec9b8603b7c3dc16abdacee2aa3",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1452.86,
+        "endSeconds": 1461.62
+      }
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "part": 4,
+      "academicEvidenceSha256": "1c4f22902ee2bd522e8924a98004295541d58de2d53a95ea59c5615a0a13830a",
+      "academicExcerptSha256": "98fbcc8398b43a14525258c28e45575bc68de03ac45b4733f4ecdc8da76016ca",
+      "startSeconds": 1462.58,
+      "endSeconds": 1470.4,
+      "audiblePhrase": "At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.",
+      "audiblePhraseSha256": "933a80e71ec8f985d2841d9e2998ed8056c60b5ae3efba089183e183e94519f8",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1462.58,
+        "endSeconds": 1470.4
+      }
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "part": 4,
+      "academicEvidenceSha256": "6b9ec96c138538b2ac22e5023d23cab0011a3c123895456d585cbd9bd72b91b6",
+      "academicExcerptSha256": "ef59a0e922b4ea2c3c099b78215b5eaa83d37c769333c3a5385135f6745afef3",
+      "startSeconds": 1495.62,
+      "endSeconds": 1500.76,
+      "audiblePhrase": "Birds can sense the earth's magnetic field and use it to determine direction even when the sky is hidden by cloud.",
+      "audiblePhraseSha256": "80a6f632d3214a2a50c0e31a29d0a92af153e7fac99268cd2271c18de811ce9c",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1495.62,
+        "endSeconds": 1500.76
+      }
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "part": 4,
+      "academicEvidenceSha256": "7ba8bf6c59e7bc8bd6fad36b1eeb35c6928ed132ce376d0ddef80a6c0e4ad9a7",
+      "academicExcerptSha256": "ef59a0e922b4ea2c3c099b78215b5eaa83d37c769333c3a5385135f6745afef3",
+      "startSeconds": 1500.76,
+      "endSeconds": 1511.66,
+      "audiblePhrase": "Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the bird's eyes, which may allow them, in effect, to see magnetic lines.",
+      "audiblePhraseSha256": "8277e81106a8a9a3bcac97fce1ea1e36204a8c666cb4831a47f73af77545f56f",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1500.76,
+        "endSeconds": 1511.66
+      }
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "part": 4,
+      "academicEvidenceSha256": "08dafe16cd9d64e5cf52cdbe375bbefa7c5d1f4febf3f288a4aa81acff4fe22b",
+      "academicExcerptSha256": "11b89b33c48ba94d9b5b6e8a5080b7b555a9317a617ce6f436f1c484e3921e48",
+      "startSeconds": 1537,
+      "endSeconds": 1543.78,
+      "audiblePhrase": "Sea birds in particular appear to use their sense of smell, building up a kind of odor map of the ocean that helps them relocate distant islands.",
+      "audiblePhraseSha256": "f9166f12ba2b67b02c6cc7f52d1c7d651c5820ddeab481f89b5234c21e2d8707",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1537,
+        "endSeconds": 1543.78
+      }
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "part": 4,
+      "academicEvidenceSha256": "4cf8c9022a02d21643b1e18dc4c04e42fd31743f5cfc911a70a15ed79c63b80d",
+      "academicExcerptSha256": "c5a1d4137e7571027933289eb1942f79433c1af2f4d68478ccd15cacf03dc1eb",
+      "startSeconds": 1627.74,
+      "endSeconds": 1634.22,
+      "audiblePhrase": "Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology.",
+      "audiblePhraseSha256": "cb7f37928949e80d748d50abebdfdb2575dfcadea80c05d0a7a29cb8c13fcc5b",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1627.74,
+        "endSeconds": 1634.22
+      }
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "part": 4,
+      "academicEvidenceSha256": "4074d0fc614cdbbd93e198eed695524297096edb9500c798f38a2f09d39cec1c",
+      "academicExcerptSha256": "c5a1d4137e7571027933289eb1942f79433c1af2f4d68478ccd15cacf03dc1eb",
+      "startSeconds": 1635.18,
+      "endSeconds": 1641.6,
+      "audiblePhrase": "Older experienced birds supplement this with memory, recognizing landmarks such as coastlines, mountain ranges and large rivers.",
+      "audiblePhraseSha256": "ed9af737a9a68a516b806037269dcbf3faf0c732ce4073457111b2e1b67d4e47",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1635.18,
+        "endSeconds": 1641.6
+      }
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "part": 4,
+      "academicEvidenceSha256": "57205b80286e1b89804e752410dfac6b303d8375fbc8c916d5ab09dd840f8ed9",
+      "academicExcerptSha256": "0f41479e6ba186deeaa7e5bd206b84ee18c7f791d75a832147d02e1ab35c96bd",
+      "startSeconds": 1668.26,
+      "endSeconds": 1673.74,
+      "audiblePhrase": "Artificial light at night, what we call light pollution, draws birds off course and causes fatal collisions with buildings.",
+      "audiblePhraseSha256": "59e2fbbed07585cad4ee3182752a3b7a315bfb7a638d55fd7cdab8d7b4f4bd51",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1668.26,
+        "endSeconds": 1673.74
+      }
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "part": 4,
+      "academicEvidenceSha256": "4f63a050cbeeda598fbf4a5e3bd2cccd1fa80a23f27e8ba313e036f9325d481f",
+      "academicExcerptSha256": "71a339675b6fbd3c44aade6252005c525faa787951722c86a47805401ec8ba9b",
+      "startSeconds": 1692.8,
+      "endSeconds": 1703.24,
+      "audiblePhrase": "To understand all this, scientists now fit migrating birds with tiny electronic tags, which record their position and reveal, for the first time, the astonishing routes these travelers take.",
+      "audiblePhraseSha256": "627bad505575d319c230a73aaffc0867ee34cd967d9f59f8128d40bbcef4b85c",
+      "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+      "method": "GLOBAL_COMPLETION",
+      "confidence": "HIGH",
+      "asrMatchKind": "exact",
+      "sourceAsr": {
+        "path": "config/ielts-harness/listening-evidence/sources/set-16/49cab378b112-whisper-set-16.json",
+        "sha256": "49cab378b112f49bf404a217338605b9f59ec02e07cb580a8de7eec93ac3eec6",
+        "startSeconds": 1692.8,
+        "endSeconds": 1703.24
+      }
+    }
+  ],
+  "summary": {
+    "questions": 40,
+    "supported": 40,
+    "unresolved": 0
+  },
+  "artifactSha256": "9dcfa44b78fe5b118afe3f5ea24ae16e456c04c168e5472d6994c74b9ecfa994"
+}

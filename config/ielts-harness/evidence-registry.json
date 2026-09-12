@@ -1,35 +1,436 @@
 {
   "schemaVersion": 1,
+  "generatedAt": "2026-09-12",
   "policy": {
-    "purpose": "Observed state and independent approval evidence. Observations never constitute release approval.",
-    "releaseRequiresFreshFingerprints": true,
-    "selfApprovalForbidden": true,
-    "lastConstraintSweep": {
-      "observedAt": "2026-09-05",
-      "revisedSets": [2, 5, 6, 7, 9, 10, 11, 12, 16, 20],
-      "result": "No accepted answer exceeds its displayed word/number limit and no fill answer remains lexically absent from its supplied text. This is a screening result, not academic approval."
-    }
+    "intermediateEvidence": "Identified independent domain agents may approve hash-bound academic, ASR, visual, speaking and UX evidence.",
+    "finalReleaseApproval": "A human reviewer must approve the current release fingerprint; the harness and generators cannot self-approve release."
   },
   "sets": [
-    { "set": 1, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["Cambridge IELTS 10 Academic, Test 1, Listening", "tests/fixtures/ielts/set-1-listening-cambridge10-test1-reference.json", "Cambridge IELTS 5 Academic, Test 2, Reading", "tests/fixtures/ielts/set-1-reading-cambridge5-test2-reference.json"], "objectiveKey": { "status": "APPROVED", "objectiveSha256": "a1deb94c79dcefc7b28740994df775a16fe9facc2c7709064ef99013c52fcc3f", "evidencePath": "tests/fixtures/ielts/set-1-approved.json", "evidenceSha256": "d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e", "reviewer": { "kind": "human", "id": "owner-reviewed-set1-key" }, "reviewedAt": "2026-09-04" }, "notes": ["Objective key and Set 1 diagram guards exist independently.", "Listening Q1-Q40 matches a separately pinned Cambridge 10 Test 1 answer reference.", "Reading Q1-Q40 matches a separately pinned Cambridge 5 Test 2 answer reference; Q30-Q31 are scored in either order with one-time answer consumption.", "Listening Q40 key and the corrected abbreviated transcript both use expansion; full audio evidence remains pending."] },
-    { "set": 2, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://whatson.cmog.org/exhibitions-galleries/origins-glassmaking", "https://www.pilkington.com/en-gb/united-kingdom/about-us/pilkington-history/invention-of-float-glass", "https://www.pilkington.com/en/gbl/knowledge-hub-selection/architectural-and-technical-glass-knowledge-hub/learn-about-glass-technology/the-float-process", "https://www.fao.org/pollination/about/", "https://files.ipbes.net/ipbes-web-prod-public-files/downloads/pdf/2017_pollination_full_report_book_v12_pages.pdf", "https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2002/popular.html", "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf", "https://www.gov.uk/government/publications/incentivising-pension-saving-wp109"], "notes": ["MP3 contains the Louisa Hardie transport survey; screen/script describe Daniel Harris court booking.", "Reading expanded within existing paragraphs. Glass history now distinguishes glass from faience, uses the Corning Museum chronology, qualifies Murano legends and dates the Pilkington float process. Pollination replaces the misleading one-third-of-food claim with FAO's bounded crop-production measures, distinguishes managed and wild pollinators, and qualifies interacting threats. Decision making presents rational choice as a benchmark, corrects the rigged-wheel description and changes Q35 from YES to NO; pension Q38 now tests participation rather than an unsupported general savings-rate claim. Q30 retains the literal completion mind. The mismatched MP3 must be replaced and fully aligned before release."] },
-    { "set": 3, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704", "https://whc.unesco.org/en/list/1442/", "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/global-plastics-outlook_a653d1c9/de747aef-en.pdf", "https://www.who.int/publications/i/item/9789240029200", "https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models", "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices"], "notes": ["MP3 contains nursery registration; screen/script describe library membership.", "Reading expanded within existing thematic sections. The Silk Roads passage now treats the network as decentralised, qualifies the monks and Black Death narratives, and explains the evidence used by historians. Ocean plastic replaces the undated eight-million-tonne claim with OECD's bounded 2019 estimate; Q19 changes from eight to 1.7, while exposure and health effects are distinguished. Medical AI replaces general claims of superhuman performance and freedom from bias with task-bounded validation, distribution shift, automation bias, clinical workflow and WHO governance requirements; Q36 now tests encoded bias directly. The mismatched MP3 must be replaced and fully aligned before release."] },
-    { "set": 4, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["MP3 contains a call to a builder; screen/script describe university accommodation."] },
-    { "set": 5, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded to 2,164 words without adding question-bearing paragraphs; Q14 now describes the certifying body as an international organisation. Machine evidence has no weak candidates or missing literal completion answers. Full academic and audio review remain pending."] },
-    { "set": 6, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading was expanded within the existing passage structure. Matching prompts Q15–Q19 now describe their supporting evidence precisely; full academic and audio review remain pending."] },
-    { "set": 7, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded within the existing passage structure. Q1 now states the supported publication claim, Q16 identifies moai directly, Q33 correctly rejects definitive causation, and Q38 forms a grammatical completion with lexical distinction. Full academic and audio review remain pending."] },
-    { "set": 8, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded within existing paragraphs. Q16 now describes the land/climate examples precisely; Q26 and Q37 form grammatical literal completions. Full academic and audio review remain pending."] },
-    { "set": 9, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded within existing paragraphs. Unsupported completion variants were removed from Q8, Q10 and Q21; Q37 now uses the literal adjective creative, while Q36 directly tests the passage's stated uncertainty. Full academic and audio review remain pending."] },
-    { "set": 10, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded within existing paragraphs. Matching Q18 now describes the evidenced unexplained deactivation instead of assuming automation. Full academic and audio review remain pending."] },
-    { "set": 11, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading expanded within existing paragraphs without changing the objective key or paragraph destinations. Full academic and audio review remain pending."] },
-    { "set": 12, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.legislation.gov.au/C2024A00127/asmade/downloads", "https://www.regjeringen.no/en/whats-new/norwegian-social-media-age-restrictions-law-on-track-to-be-introduced-this-year-this-is-how-the-age-limit-for-social-media-will-work/id3157276/"], "notes": ["Reading expanded within existing paragraphs. The chess chronology now calls 1886 the first formal championship and starts the Soviet state-supported champion sequence with Botvinnik. Q17 directly identifies the modern revival. The Australia/Norway regulatory distinction was checked against current official government sources. Full academic and audio review remain pending."] },
-    { "set": 13, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.unhcr.org/media/global-trends-report-2023?id=72929&langcode=en&site=unhcr&type=media", "https://worldmigrationreport.iom.int/sites/g/files/tmzbdl1691/files/documents/2024-05/key-migration-data-at-a-glance_2024.pdf", "https://www.brookings.edu/articles/almost-half-of-fortune-500-companies-were-founded-by-american-immigrants-or-their-children/", "https://www.nber.org/papers/w24494", "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"], "notes": ["Reading expanded within existing paragraphs. Migration dates and forced-displacement categories were corrected against IOM and UNHCR sources; the Fortune 500 attribution now distinguishes immigrant founders from children of immigrants. Quantum investment language was made non-numeric, error correction and benchmark limits were clarified, and Q18 now points directly to Shor's algorithm. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 14, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02016R0679-20160504", "https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence?hub=66927", "https://www.icrc.org/en/law-and-policy/autonomous-weapons", "https://www.fao.org/interactive/state-of-forests/2020/en/", "https://www.bankofengland.co.uk/quarterly-bulletin/2021/2021-q3/our-new-banknotes-the-journey-from-design-to-launch", "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2013/quarterly-bulletin-2013-q4.pdf"], "notes": ["Reading expanded within existing paragraphs. The GDPR item now tests the safeguards stated in Article 22 rather than asserting a disputed general right to explanation. The autonomous-weapons description follows the ICRC definition and current regulatory position. The rainforest loss figure is time-bounded to FAO's 2015–2020 estimate. The money passage distinguishes Tang remittance instruments from Song notes and separates early redeemable Bank of England notes from the later legal gold standard. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 15, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://pubmed.ncbi.nlm.nih.gov/9230429/", "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf", "https://stacks.cdc.gov/view/cdc/38887", "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2020/Jan/un_2018_wup_report.pdf", "https://www.fao.org/director-general/speeches/details/launch-of-the-state-of-food-security-and-nutrition-in-the-world-%28sofi%29-2026-report-statement/en", "https://www.ipcc.ch/srccl/", "https://www.fao.org/policy-support/policy-themes/food-loss-and-food-waste/fao-policy-series--food-loss---food-waste/"], "notes": ["Reading expanded within existing paragraphs. Sleep-cycle and health language now distinguishes variable architecture and association from causation; Q4 states the measured 0.05% blood-alcohol comparison directly. Urban statistics are time-bounded and the unsupported Manila commute figure was replaced by a question about measurement variability. Food-security figures use SOFI 2026, distinguish food-system from agriculture emissions, and separate pre-retail food loss from consumer-stage waste. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 16, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.irena.org/Publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023", "https://unfccc.int/sites/default/files/english_paris_agreement.pdf", "https://www.unicef.org/media/145336/file/Early_Childhood_Development_-_UNICEF_Vision_for_Every_Child.pdf", "https://developingchild.harvard.edu/key-concept/brain-architecture/", "https://www.who.int/publications/i/item/9789241550536", "https://www.worldbank.org/en/publication/poverty-and-shared-prosperity-2018", "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"], "notes": ["Reading expanded within existing paragraphs. Renewable-capacity and cost figures now follow IRENA and the Paris Agreement wording no longer attributes a uniform mid-century technology requirement to the treaty. Child-development claims distinguish association from destiny, qualify infant looking-time inference, and explain screen exposure through content, context, and opportunity cost. Globalisation Q32 and Q33 now test documented co-occurrence and correlation rather than unsupported single-cause claims, while the poverty and elephant-curve passages state their measurement limits. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 17, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://oceanacidification.noaa.gov/webstory/turning-the-tide/", "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/", "https://ioos.noaa.gov/project/pacific-ocean-acidification-project/", "https://www.fao.org/newsroom/detail/fao-report-global-fisheries-and-aquaculture-production-reaches-a-new-record-high/", "https://www.bfi.org.uk/sight-and-sound/features/origins-cinema-early-inventors-pioneers", "https://www.oscars.org/oscars/ceremonies/2020", "https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2002/popular.html", "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2017-2.pdf", "https://www.oecd.org/en/publications/tools-and-ethics-for-applied-behavioural-insights-the-basic-toolkit_9ea76a8f-en/full-report/component-6.html"], "notes": ["Reading expanded within existing paragraphs. Ocean chemistry and nutrition figures now use scenario-bounded IPCC, NOAA and FAO language; species responses and local interventions are qualified. The cinema passage corrects the false claim that the Lumière programme was the first paid moving-image exhibition while preserving its historical significance. Behavioural economics now treats rational choice as a benchmark, limits the classic loss-aversion ratio, and distinguishes context-specific nudge effects from universal success. Q1, Q2, Q4, Q16, Q21, Q28, Q32, Q33 and Q35 were updated to follow the revised evidence without changing their keyed outcomes. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 18, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.nobelprize.org/prizes/chemistry/2020/press-release/", "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease", "https://www.who.int/publications-detail-redirect/9789240030060", "https://iris.who.int/bitstream/handle/10665/381332/9789240108820-eng.pdf", "https://targetmalaria.org/latest/news/target-malaria-activities-suspended-in-burkina-faso/", "https://www.gao.gov/products/gao-25-107019", "https://www.justice.gov/usao-ndga/pr/atlanta-us-attorney-charges-iranian-nationals-city-atlanta-ransomware-attack", "https://www.smartnation.gov.sg/files/abt-smart-nation/transforming-sg-through-tech-26feb21.pdf", "https://www.cambridge.org/core/journals/law-and-social-inquiry/article/from-datafication-to-data-state-making-sense-of-chinas-social-credit-system-and-its-implications/EDF66228C909BE5A24180EFC1904BE00", "https://www.nidcd.nih.gov/health/developmental-language-disorder", "https://www.asha.org/public/speech/development/learning-more-than-one-language/", "https://pubmed.ncbi.nlm.nih.gov/34663486/", "https://doi.org/10.1162/ling_a_00533"], "notes": ["Reading expanded within existing paragraphs. CRISPR claims now distinguish cutting from uncertain repair outcomes, describe Casgevy's 2023 approval precisely, and separate released self-limiting mosquitoes from gene-drive organisms not yet released in open environments by mid-2026. Smart Cities corrects the false description of one national Chinese citizen score and adds procurement, cybersecurity, privacy and access limits. Language acquisition treats poverty of the stimulus as a debated argument, qualifies neural-model and milestone claims, and distinguishes multilingual development from disorder. Reading Q31 changed from NOT GIVEN to NO because the revised passage explicitly contradicts universal acceptance; Q12 and related prompts were updated to test supported gene-drive evidence. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 19, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_cosmic_recipe", "https://science.nasa.gov/missions/webb/nasa-webb-pierces-bullet-cluster-refines-its-mass/", "https://science.nasa.gov/dark-matter/", "https://rubinobservatory.org/news/action-rubin-lsst-begins", "https://rubinobservatory.org/for-scientists/rubin-101/the-legacy-survey-of-space-and-time-lsst", "https://unctad.org/publication/business-e-commerce-sales-and-role-online-platforms", "https://www2.census.gov/retail/releases/historical/ecomm/23q4.pdf", "https://unctad.org/system/files/official-document/der2024_ch05_en.pdf", "https://whc.unesco.org/en/list", "https://whc.unesco.org/en/86", "https://www.icomos.org/images/DOCUMENTS/Charters/Venice_Charter_EN_2023.pdf", "https://www.unesco.org/en/articles/impact-climate-change-archaeological-sites"], "notes": ["Reading expanded within existing paragraphs. Dark-matter evidence now distinguishes model inference from particle identification, updates Rubin Observatory after the June 2026 start of LSST, and corrects Q7 from NOT GIVEN to FALSE because the concept predates Rubin. E-commerce replaces an unsupported global retail forecast with scoped UNCTAD and US Census measures and qualifies platform, labour, retail and environmental claims. Heritage uses current UNESCO counts, removes the false claim that the Great Barrier Reef is on the danger list, and corrects the false attribution of reversibility to the Venice Charter; Q35 changes from NOT GIVEN to NO because the revised passage explicitly rejects full equivalence of digital and physical heritage. Full academic review and missing-audio production/alignment remain pending."] },
-    { "set": 20, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["https://www.who.int/europe/news/item/27-09-2024-global-leaders-set-first-targets-to-control-antimicrobial-resistance-crisis", "https://www.who.int/publications/i/item/9789240093461", "https://www.who.int/publications/i/item/9789241509763%EF%BB%BF", "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32019R0006", "https://www.fao.org/urban-peri-urban-agriculture/about/en", "https://www.fao.org/4/a1124e/a1124e04.pdf", "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter_10.pdf", "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-cars", "https://www.iea.org/reports/global-ev-outlook-2024/executive-summary", "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-batteries"], "notes": ["Reading expanded within existing paragraphs. The AMR passage now separates deaths associated with resistance from the attributable subset, uses the WHO 2024 priority categories, identifies the World Health Assembly as the body that adopted the 2015 plan, and reflects the 2024 UN mortality target; Q7 and Q11 were rewritten to follow that evidence. Urban agriculture adds FAO's food-system scope and planning conditions while qualifying the Cuban supply claim. Transport retains the IPCC emissions denominator but replaces unsupported claims about universal battery-price decline and unsubsidized price parity with the IEA's bounded 2023 sales, battery-price and charging evidence. Full academic review and missing-audio production/alignment remain pending."] }
+    {
+      "set": 1,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-1.json",
+      "references": [
+        "Cambridge IELTS 10 Academic, Test 1, Listening",
+        "tests/fixtures/ielts/set-1-listening-cambridge10-test1-reference.json",
+        "Cambridge IELTS 5 Academic, Test 2, Reading",
+        "tests/fixtures/ielts/set-1-reading-cambridge5-test2-reference.json"
+      ],
+      "notes": [
+        "Objective key and Set 1 diagram guards exist independently.",
+        "Listening Q1-Q40 matches a separately pinned Cambridge 10 Test 1 answer reference.",
+        "Reading Q1-Q40 matches a separately pinned Cambridge 5 Test 2 answer reference; Q30-Q31 are scored in either order with one-time answer consumption.",
+        "Listening Q40 key and the corrected abbreviated transcript both use expansion; full audio evidence remains pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 2,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-2.json",
+      "references": [
+        "https://whatson.cmog.org/exhibitions-galleries/origins-glassmaking",
+        "https://www.pilkington.com/en-gb/united-kingdom/about-us/pilkington-history/invention-of-float-glass",
+        "https://www.pilkington.com/en/gbl/knowledge-hub-selection/architectural-and-technical-glass-knowledge-hub/learn-about-glass-technology/the-float-process",
+        "https://www.fao.org/pollination/about/",
+        "https://files.ipbes.net/ipbes-web-prod-public-files/downloads/pdf/2017_pollination_full_report_book_v12_pages.pdf",
+        "https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2002/popular.html",
+        "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf",
+        "https://www.gov.uk/government/publications/incentivising-pension-saving-wp109"
+      ],
+      "notes": [
+        "MP3 contains the Louisa Hardie transport survey; screen/script describe Daniel Harris court booking.",
+        "Reading expanded within existing paragraphs. Glass history now distinguishes glass from faience, uses the Corning Museum chronology, qualifies Murano legends and dates the Pilkington float process. Pollination replaces the misleading one-third-of-food claim with FAO's bounded crop-production measures, distinguishes managed and wild pollinators, and qualifies interacting threats. Decision making presents rational choice as a benchmark, corrects the rigged-wheel description and changes Q35 from YES to NO; pension Q38 now tests participation rather than an unsupported general savings-rate claim. Q30 retains the literal completion mind. The mismatched MP3 must be replaced and fully aligned before release.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 3,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-3.json",
+      "references": [
+        "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
+        "https://whc.unesco.org/en/list/1442/",
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/global-plastics-outlook_a653d1c9/de747aef-en.pdf",
+        "https://www.who.int/publications/i/item/9789240029200",
+        "https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models",
+        "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices"
+      ],
+      "notes": [
+        "MP3 contains nursery registration; screen/script describe library membership.",
+        "Reading expanded within existing thematic sections. The Silk Roads passage now treats the network as decentralised, qualifies the monks and Black Death narratives, and explains the evidence used by historians. Ocean plastic replaces the undated eight-million-tonne claim with OECD's bounded 2019 estimate; Q19 changes from eight to 1.7, while exposure and health effects are distinguished. Medical AI replaces general claims of superhuman performance and freedom from bias with task-bounded validation, distribution shift, automation bias, clinical workflow and WHO governance requirements; Q36 now tests encoded bias directly. The mismatched MP3 must be replaced and fully aligned before release.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 4,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-4.json",
+      "references": [],
+      "notes": [
+        "MP3 contains a call to a builder; screen/script describe university accommodation.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 5,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-5.json",
+      "references": [],
+      "notes": [
+        "Reading expanded to 2,164 words without adding question-bearing paragraphs; Q14 now describes the certifying body as an international organisation. Machine evidence has no weak candidates or missing literal completion answers. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 6,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-6.json",
+      "references": [],
+      "notes": [
+        "Reading was expanded within the existing passage structure. Matching prompts Q15–Q19 now describe their supporting evidence precisely; full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 7,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-7.json",
+      "references": [],
+      "notes": [
+        "Reading expanded within the existing passage structure. Q1 now states the supported publication claim, Q16 identifies moai directly, Q33 correctly rejects definitive causation, and Q38 forms a grammatical completion with lexical distinction. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 8,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-8.json",
+      "references": [],
+      "notes": [
+        "Reading expanded within existing paragraphs. Q16 now describes the land/climate examples precisely; Q26 and Q37 form grammatical literal completions. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 9,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-9.json",
+      "references": [],
+      "notes": [
+        "Reading expanded within existing paragraphs. Unsupported completion variants were removed from Q8, Q10 and Q21; Q37 now uses the literal adjective creative, while Q36 directly tests the passage's stated uncertainty. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 10,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-10.json",
+      "references": [],
+      "notes": [
+        "Reading expanded within existing paragraphs. Matching Q18 now describes the evidenced unexplained deactivation instead of assuming automation. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 11,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-11.json",
+      "references": [],
+      "notes": [
+        "Reading expanded within existing paragraphs without changing the objective key or paragraph destinations. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 12,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/legacy-replacement-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-12.json",
+      "references": [
+        "https://www.legislation.gov.au/C2024A00127/asmade/downloads",
+        "https://www.regjeringen.no/en/whats-new/norwegian-social-media-age-restrictions-law-on-track-to-be-introduced-this-year-this-is-how-the-age-limit-for-social-media-will-work/id3157276/"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. The chess chronology now calls 1886 the first formal championship and starts the Soviet state-supported champion sequence with Botvinnik. Q17 directly identifies the modern revival. The Australia/Norway regulatory distinction was checked against current official government sources. Full academic and audio review remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 13,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-13.json",
+      "references": [
+        "https://www.unhcr.org/media/global-trends-report-2023?id=72929&langcode=en&site=unhcr&type=media",
+        "https://worldmigrationreport.iom.int/sites/g/files/tmzbdl1691/files/documents/2024-05/key-migration-data-at-a-glance_2024.pdf",
+        "https://www.brookings.edu/articles/almost-half-of-fortune-500-companies-were-founded-by-american-immigrants-or-their-children/",
+        "https://www.nber.org/papers/w24494",
+        "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. Migration dates and forced-displacement categories were corrected against IOM and UNHCR sources; the Fortune 500 attribution now distinguishes immigrant founders from children of immigrants. Quantum investment language was made non-numeric, error correction and benchmark limits were clarified, and Q18 now points directly to Shor's algorithm. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 14,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-14.json",
+      "references": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02016R0679-20160504",
+        "https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence?hub=66927",
+        "https://www.icrc.org/en/law-and-policy/autonomous-weapons",
+        "https://www.fao.org/interactive/state-of-forests/2020/en/",
+        "https://www.bankofengland.co.uk/quarterly-bulletin/2021/2021-q3/our-new-banknotes-the-journey-from-design-to-launch",
+        "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2013/quarterly-bulletin-2013-q4.pdf"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. The GDPR item now tests the safeguards stated in Article 22 rather than asserting a disputed general right to explanation. The autonomous-weapons description follows the ICRC definition and current regulatory position. The rainforest loss figure is time-bounded to FAO's 2015–2020 estimate. The money passage distinguishes Tang remittance instruments from Song notes and separates early redeemable Bank of England notes from the later legal gold standard. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 15,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-15.json",
+      "references": [
+        "https://pubmed.ncbi.nlm.nih.gov/9230429/",
+        "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+        "https://stacks.cdc.gov/view/cdc/38887",
+        "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2020/Jan/un_2018_wup_report.pdf",
+        "https://www.fao.org/director-general/speeches/details/launch-of-the-state-of-food-security-and-nutrition-in-the-world-%28sofi%29-2026-report-statement/en",
+        "https://www.ipcc.ch/srccl/",
+        "https://www.fao.org/policy-support/policy-themes/food-loss-and-food-waste/fao-policy-series--food-loss---food-waste/"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. Sleep-cycle and health language now distinguishes variable architecture and association from causation; Q4 states the measured 0.05% blood-alcohol comparison directly. Urban statistics are time-bounded and the unsupported Manila commute figure was replaced by a question about measurement variability. Food-security figures use SOFI 2026, distinguish food-system from agriculture emissions, and separate pre-retail food loss from consumer-stage waste. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 16,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-16.json",
+      "references": [
+        "https://www.irena.org/Publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023",
+        "https://unfccc.int/sites/default/files/english_paris_agreement.pdf",
+        "https://www.unicef.org/media/145336/file/Early_Childhood_Development_-_UNICEF_Vision_for_Every_Child.pdf",
+        "https://developingchild.harvard.edu/key-concept/brain-architecture/",
+        "https://www.who.int/publications/i/item/9789241550536",
+        "https://www.worldbank.org/en/publication/poverty-and-shared-prosperity-2018",
+        "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. Renewable-capacity and cost figures now follow IRENA and the Paris Agreement wording no longer attributes a uniform mid-century technology requirement to the treaty. Child-development claims distinguish association from destiny, qualify infant looking-time inference, and explain screen exposure through content, context, and opportunity cost. Globalisation Q32 and Q33 now test documented co-occurrence and correlation rather than unsupported single-cause claims, while the poverty and elephant-curve passages state their measurement limits. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 17,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-17.json",
+      "references": [
+        "https://oceanacidification.noaa.gov/webstory/turning-the-tide/",
+        "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/",
+        "https://ioos.noaa.gov/project/pacific-ocean-acidification-project/",
+        "https://www.fao.org/newsroom/detail/fao-report-global-fisheries-and-aquaculture-production-reaches-a-new-record-high/",
+        "https://www.bfi.org.uk/sight-and-sound/features/origins-cinema-early-inventors-pioneers",
+        "https://www.oscars.org/oscars/ceremonies/2020",
+        "https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2002/popular.html",
+        "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2017-2.pdf",
+        "https://www.oecd.org/en/publications/tools-and-ethics-for-applied-behavioural-insights-the-basic-toolkit_9ea76a8f-en/full-report/component-6.html"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. Ocean chemistry and nutrition figures now use scenario-bounded IPCC, NOAA and FAO language; species responses and local interventions are qualified. The cinema passage corrects the false claim that the Lumière programme was the first paid moving-image exhibition while preserving its historical significance. Behavioural economics now treats rational choice as a benchmark, limits the classic loss-aversion ratio, and distinguishes context-specific nudge effects from universal success. Q1, Q2, Q4, Q16, Q21, Q28, Q32, Q33 and Q35 were updated to follow the revised evidence without changing their keyed outcomes. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 18,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-18.json",
+      "references": [
+        "https://www.nobelprize.org/prizes/chemistry/2020/press-release/",
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+        "https://www.who.int/publications-detail-redirect/9789240030060",
+        "https://iris.who.int/bitstream/handle/10665/381332/9789240108820-eng.pdf",
+        "https://targetmalaria.org/latest/news/target-malaria-activities-suspended-in-burkina-faso/",
+        "https://www.gao.gov/products/gao-25-107019",
+        "https://www.justice.gov/usao-ndga/pr/atlanta-us-attorney-charges-iranian-nationals-city-atlanta-ransomware-attack",
+        "https://www.smartnation.gov.sg/files/abt-smart-nation/transforming-sg-through-tech-26feb21.pdf",
+        "https://www.cambridge.org/core/journals/law-and-social-inquiry/article/from-datafication-to-data-state-making-sense-of-chinas-social-credit-system-and-its-implications/EDF66228C909BE5A24180EFC1904BE00",
+        "https://www.nidcd.nih.gov/health/developmental-language-disorder",
+        "https://www.asha.org/public/speech/development/learning-more-than-one-language/",
+        "https://pubmed.ncbi.nlm.nih.gov/34663486/",
+        "https://doi.org/10.1162/ling_a_00533"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. CRISPR claims now distinguish cutting from uncertain repair outcomes, describe Casgevy's 2023 approval precisely, and separate released self-limiting mosquitoes from gene-drive organisms not yet released in open environments by mid-2026. Smart Cities corrects the false description of one national Chinese citizen score and adds procurement, cybersecurity, privacy and access limits. Language acquisition treats poverty of the stimulus as a debated argument, qualifies neural-model and milestone claims, and distinguishes multilingual development from disorder. Reading Q31 changed from NOT GIVEN to NO because the revised passage explicitly contradicts universal acceptance; Q12 and related prompts were updated to test supported gene-drive evidence. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 19,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-19.json",
+      "references": [
+        "https://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_cosmic_recipe",
+        "https://science.nasa.gov/missions/webb/nasa-webb-pierces-bullet-cluster-refines-its-mass/",
+        "https://science.nasa.gov/dark-matter/",
+        "https://rubinobservatory.org/news/action-rubin-lsst-begins",
+        "https://rubinobservatory.org/for-scientists/rubin-101/the-legacy-survey-of-space-and-time-lsst",
+        "https://unctad.org/publication/business-e-commerce-sales-and-role-online-platforms",
+        "https://www2.census.gov/retail/releases/historical/ecomm/23q4.pdf",
+        "https://unctad.org/system/files/official-document/der2024_ch05_en.pdf",
+        "https://whc.unesco.org/en/list",
+        "https://whc.unesco.org/en/86",
+        "https://www.icomos.org/images/DOCUMENTS/Charters/Venice_Charter_EN_2023.pdf",
+        "https://www.unesco.org/en/articles/impact-climate-change-archaeological-sites"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. Dark-matter evidence now distinguishes model inference from particle identification, updates Rubin Observatory after the June 2026 start of LSST, and corrects Q7 from NOT GIVEN to FALSE because the concept predates Rubin. E-commerce replaces an unsupported global retail forecast with scoped UNCTAD and US Census measures and qualifies platform, labour, retail and environmental claims. Heritage uses current UNESCO counts, removes the false claim that the Great Barrier Reef is on the danger list, and corrects the false attribution of reversibility to the Venice Charter; Q35 changes from NOT GIVEN to NO because the revised passage explicitly rejects full equivalence of digital and physical heritage. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    },
+    {
+      "set": 20,
+      "knownAudioStatus": "FULL_MATCH_REVIEWED",
+      "provenance": {
+        "source": "config/ielts-audio/batch-quality-approval.json",
+        "observedAt": "2026-09-12"
+      },
+      "evidencePath": "config/ielts-harness/evidence/set-20.json",
+      "references": [
+        "https://www.who.int/europe/news/item/27-09-2024-global-leaders-set-first-targets-to-control-antimicrobial-resistance-crisis",
+        "https://www.who.int/publications/i/item/9789240093461",
+        "https://www.who.int/publications/i/item/9789241509763%EF%BB%BF",
+        "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32019R0006",
+        "https://www.fao.org/urban-peri-urban-agriculture/about/en",
+        "https://www.fao.org/4/a1124e/a1124e04.pdf",
+        "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter_10.pdf",
+        "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-cars",
+        "https://www.iea.org/reports/global-ev-outlook-2024/executive-summary",
+        "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-batteries"
+      ],
+      "notes": [
+        "Reading expanded within existing paragraphs. The AMR passage now separates deaths associated with resistance from the attributable subset, uses the WHO 2024 priority categories, identifies the World Health Assembly as the body that adopted the 2015 plan, and reflects the 2024 UN mortality target; Q7 and Q11 were rewritten to follow that evidence. Urban agriculture adds FAO's food-system scope and planning conditions while qualifying the Cuban supply claim. Transport retains the IPCC emissions denominator but replaces unsupported claims about universal battery-price decline and unsubsidized price parity with the IEA's bounded 2023 sales, battery-price and charging evidence. Full academic review and missing-audio production/alignment remain pending.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift.",
+        "Current evidence is generated from hash-bound domain reviews and invalidates automatically after material drift."
+      ]
+    }
   ]
 }

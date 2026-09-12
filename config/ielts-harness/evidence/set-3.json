@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 3,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-3.ts",
+    "sourceSha256": "e113e07ac98a220006347124ccbcb87309aff79dc0bb085efd5742cec83a9759",
+    "releaseFingerprintSha256": "2c2f7ca2bd284189edba457d91b925e657c0dd4eb3a5204cb3eec2a5c32a3077"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+      "transcriptSha256": "966b1e71aed0caa36f190606092f87a8ac4a74b14a3f91acdb80f27b594f621a",
+      "objectiveSha256": "da2c166abb622086112cb64ab121658b641a9918cf368ff0b1b50c0f9cb8137a"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "85bba30ce490cb76fe8f8c3aaa98a4739d3176f859e20dc3da328861df1f25ae",
+      "transcriptSha256": "966b1e71aed0caa36f190606092f87a8ac4a74b14a3f91acdb80f27b594f621a",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-3-listening-evidence.json",
+      "evidenceSha256": "5c0dbbf43481827eb9d140c6a365972af5ace2047331069d73e93bd21662102c"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 94.6,
+        "endSeconds": 96.38,
+        "audiblePhrase": "14th March 1998",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 126.56,
+        "endSeconds": 132.18,
+        "audiblePhrase": "Blat 733 Berkeley Street, Oxford. The postcode is OX14PL.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 169.1,
+        "endSeconds": 172.84,
+        "audiblePhrase": "Yes, it's sophie.marsh at greenmail.co.uk",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 258.08,
+        "endSeconds": 261.84,
+        "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 258.08,
+        "endSeconds": 261.84,
+        "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 258.08,
+        "endSeconds": 261.84,
+        "audiblePhrase": "We offer standard, which gives you up to eight books for three weeks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-form__7",
+        "part": 1,
+        "startSeconds": 292.42,
+        "endSeconds": 294.8,
+        "audiblePhrase": "There's a one off registration fee of two pounds.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 296.42,
+        "endSeconds": 297.98,
+        "audiblePhrase": "Can I also reserve books online?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 340.04,
+        "endSeconds": 345.24,
+        "audiblePhrase": "Premium membership gives you 12 books and access to our digital archive.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 340.04,
+        "endSeconds": 345.24,
+        "audiblePhrase": "Premium membership gives you 12 books and access to our digital archive.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 601.1,
+        "endSeconds": 615.7,
+        "audiblePhrase": "We're also expanding what can go into the dry recycling bin. From next month, you'll be able to recycle plastic film, like the wrapping on ready meals and carrier bags. Previously, this had to go to collection points at supermarkets.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 601.1,
+        "endSeconds": 615.7,
+        "audiblePhrase": "We're also expanding what can go into the dry recycling bin. From next month, you'll be able to recycle plastic film, like the wrapping on ready meals and carrier bags. Previously, this had to go to collection points at supermarkets.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 498.96,
+        "endSeconds": 506.76,
+        "audiblePhrase": "Our borough currently recycles about 32% of its household waste, which is below the national average of 45%.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 506.76,
+        "endSeconds": 513.62,
+        "audiblePhrase": "The new program aims to raise that figure to at least 55% by the end of the year.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 552.98,
+        "endSeconds": 560.22,
+        "audiblePhrase": "Starting next month, every household will receive a small kitchen caddy for collecting food scraps,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 560.68,
+        "endSeconds": 564.5,
+        "audiblePhrase": "which will be emptied into a larger outdoor bin collected weekly.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 565.56,
+        "endSeconds": 572,
+        "audiblePhrase": "The material will go to an anaerobic digestion plant where it is converted into energy and compost.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 573.18,
+        "endSeconds": 580.24,
+        "audiblePhrase": "Some arrangements connected with the recycling program briefing may depend on the time of day or the number of visitors.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 651.14,
+        "endSeconds": 656.22,
+        "audiblePhrase": "We're adding six new bottle bank sites across the borough to make this more convenient.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 759.5,
+        "endSeconds": 767.96,
+        "audiblePhrase": "So each household will receive a printed guide through the post, and there's a new website at recycleright.gov.uk,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 992.64,
+        "endSeconds": 1007.58,
+        "audiblePhrase": "Yes. What struck me most was the potential for urban farming to address food security issues in cities. If residents can grow some of their own produce, that reduces dependence on supply chains that can be disrupted.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1049.34,
+        "endSeconds": 1064.36,
+        "audiblePhrase": "I'd add that there's also a social dimension. Community gardens can help build relationships between neighbours who might otherwise never interact. There's evidence that social cohesion in areas with active community gardens is significantly higher.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1186.02,
+        "endSeconds": 1196.14,
+        "audiblePhrase": "Yes, that's one of the key criticisms of vertical farming. If the electricity comes from fossil fuels, the carbon footprint can actually be worse than conventional agriculture.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1242.76,
+        "endSeconds": 1258.88,
+        "audiblePhrase": "I think urban farming is most viable as a complement to, rather than a replacement for, conventional agriculture. It can provide fresh produce locally and build community, but it can't feed entire cities.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1281.32,
+        "endSeconds": 1292.98,
+        "audiblePhrase": "I agree, and for it to succeed long term there needs to be policy support, planning regulations that make it easier to establish urban farms, and subsidies to offset the high costs.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 986.58,
+        "endSeconds": 991.96,
+        "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 986.58,
+        "endSeconds": 991.96,
+        "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 986.58,
+        "endSeconds": 991.96,
+        "audiblePhrase": "Rooftop gardens, vertical farms with stacked layers, and community allotments.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1090.66,
+        "endSeconds": 1100.36,
+        "audiblePhrase": "Space is obviously a major constraint in dense urban areas. Land is expensive, and there's always competition from housing and commercial development.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1224.58,
+        "endSeconds": 1232.28,
+        "audiblePhrase": "Another challenge is expertise. A lot of urban residents simply don't know how to grow food. There's a need for training and ongoing support.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1415.02,
+        "endSeconds": 1423.12,
+        "audiblePhrase": "The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1424.14,
+        "endSeconds": 1436.98,
+        "audiblePhrase": "Originally pictographic, that is based on simple pictures representing objects, cuneiform evolved over centuries into a more abstract system of wedge shaped marks pressed into clay tablets with a reed stylus.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1424.14,
+        "endSeconds": 1436.98,
+        "audiblePhrase": "Originally pictographic, that is based on simple pictures representing objects, cuneiform evolved over centuries into a more abstract system of wedge shaped marks pressed into clay tablets with a reed stylus.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1437.5,
+        "endSeconds": 1443.42,
+        "audiblePhrase": "It was used mainly for administrative and commercial record keeping, lists of goods, taxes and transactions.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1469.2,
+        "endSeconds": 1472.38,
+        "audiblePhrase": "And around the same time hieroglyphics emerged in ancient Egypt.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1473.22,
+        "endSeconds": 1481.7,
+        "audiblePhrase": "Like early cuneiform, Egyptian hieroglyphics began as a pictographic system, but also developed sound symbols, making it a mixed system.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1483.12,
+        "endSeconds": 1489.68,
+        "audiblePhrase": "The pictoglyphics were used not only for administration, but also for religious texts, royal inscriptions and later, literary works.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1602.48,
+        "endSeconds": 1612.9,
+        "audiblePhrase": "The first true alphabet, in which each symbol represents a consonant sound, is generally attributed to the Phoenicians around 1050 BC.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1614.4,
+        "endSeconds": 1620.46,
+        "audiblePhrase": "This system spread to the Greeks, who made the crucial innovation of adding vowels producing the first complete alphabet.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1658.44,
+        "endSeconds": 1661.38,
+        "audiblePhrase": "This made widespread literacy possible for the first time.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "54a835ff76b75dd8aa20c157c954bced2588ea3f2a7c13fad1e901c7ae15242c",
+      "objectiveSha256": "da2c166abb622086112cb64ab121658b641a9918cf368ff0b1b50c0f9cb8137a"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-summary__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-summary__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-summary__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Chinese states supplied highly valued silk and guarded knowledge of sericulture — the cultivation of silkworms and processing of their cocoons — for centuries. This monopoly concerned silk production knowledge, not all exports or all trade across the network. Calling China the single dominant exporter obscures a decentralised system in which Central Asian, Persian, Indian, Arab, and Mediterranean producers and merchants all contributed. Silk production eventually spread beyond China by several routes. A Byzantine account tells of monks carrying silkworm eggs west in hollow walking staves in the sixth century CE, but historians treat the episode as a transmitted story rather than complete proof of how the knowledge moved.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-summary__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Caravans were a primary means of overland transport. Merchants hired guides, guards, handlers, and pack animals, adjusting routes to water, weather, taxes, conflict, and seasonal closures. The two-humped Bactrian camel was valued for carrying loads through cold and arid Central Asian terrain. Oasis towns such as Samarkand, Dunhuang, and Kashgar were important because they offered water, fodder, storage, lodging, markets, and links to other routes, not because they had unusually large armies. These hubs also supported translators, craftspeople, religious institutions, and officials who made exchange possible.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-summary__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "There was no single moment when the network closed. Fragmentation of Mongol rule reduced the relative security supporting some overland movement, while wars, new states, and taxes redirected particular corridors. From the late fifteenth century, Portuguese voyages around southern Africa established direct European maritime access to Asian markets. Ships could carry much larger cargoes than camel caravans, but sea travel was not always faster or safer, and overland exchange continued into the sixteenth century and beyond. Historians therefore describe changing commercial geography rather than a simple replacement of land by sea.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1q6",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1q7",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Chinese states supplied highly valued silk and guarded knowledge of sericulture — the cultivation of silkworms and processing of their cocoons — for centuries. This monopoly concerned silk production knowledge, not all exports or all trade across the network. Calling China the single dominant exporter obscures a decentralised system in which Central Asian, Persian, Indian, Arab, and Mediterranean producers and merchants all contributed. Silk production eventually spread beyond China by several routes. A Byzantine account tells of monks carrying silkworm eggs west in hollow walking staves in the sixth century CE, but historians treat the episode as a transmitted story rather than complete proof of how the knowledge moved.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1q8",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Caravans were a primary means of overland transport. Merchants hired guides, guards, handlers, and pack animals, adjusting routes to water, weather, taxes, conflict, and seasonal closures. The two-humped Bactrian camel was valued for carrying loads through cold and arid Central Asian terrain. Oasis towns such as Samarkand, Dunhuang, and Kashgar were important because they offered water, fodder, storage, lodging, markets, and links to other routes, not because they had unusually large armies. These hubs also supported translators, craftspeople, religious institutions, and officials who made exchange possible.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1q9",
+        "responseKind": "mcq",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The Silk Road was not only a conduit for goods but also for ideas, religions, technologies, and diseases. Buddhism spread from India to China, Korea, and Japan along the Silk Road. Islam reached Central Asia and later Southeast Asia through the same network. The Black Death, which devastated Europe in the fourteenth century, is believed to have travelled westward from Central Asia along trade routes.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-multi",
+        "responseKind": "multiselect",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-multi",
+        "responseKind": "multiselect",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The Silk Road was not a single road but a changing network of overland and maritime routes linking communities across East, Central, South, and West Asia with the Mediterranean and parts of Africa. Some sections existed long before sustained long-distance exchange expanded in the second century BCE, and different corridors flourished at different times. UNESCO describes a system of trade and communication whose political, social, and cultural effects reached far beyond goods. Merchants rarely travelled from one end to the other; cargo commonly passed through many intermediaries. Despite the modern name, silk was only one of numerous commodities carried along these routes.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-match__12",
+        "responseKind": "match",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The term 'Silk Road' is itself recent. It is generally credited to the German geographer Ferdinand von Richthofen, who published the expression Seidenstrasse in 1877. The plural \"Silk Roads\" better captures routes that divided, rejoined, and shifted with politics and demand. They carried spices, ceramics, glass, cotton textiles, precious metals and gems, paper, technologies, animals, and enslaved people. Goods could also change meaning as they moved: glass made in western Asia became a prestige object farther east, while Chinese silk served as clothing, diplomatic tribute, and currency.",
+        "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-match__13",
+        "responseKind": "match",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "There was no single moment when the network closed. Fragmentation of Mongol rule reduced the relative security supporting some overland movement, while wars, new states, and taxes redirected particular corridors. From the late fifteenth century, Portuguese voyages around southern Africa established direct European maritime access to Asian markets. Ships could carry much larger cargoes than camel caravans, but sea travel was not always faster or safer, and overland exchange continued into the sixteenth century and beyond. Historians therefore describe changing commercial geography rather than a simple replacement of land by sea.",
+        "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2q14",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Plastic pollution is a major environmental problem, but global totals vary with definitions, years, and models. The OECD estimated that 6.1 million tonnes of plastic waste entered aquatic environments in 2019 and that 1.7 million tonnes flowed into the ocean that year. Other studies use different boundaries and produce higher values, so an undated claim that exactly eight million tonnes enters annually hides uncertainty. Plastic harms wildlife and habitats, creates costs for coastal communities, and occurs in seafood and human tissue. Detection alone does not establish the size of a health effect, and scientists are still distinguishing exposure from demonstrated harm.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2q15",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2q16",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2q17",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2q18",
+        "responseKind": "mcq",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Addressing ocean plastic pollution requires action across the product life cycle. Avoiding unnecessary products, designing items for reuse and repair, collecting waste reliably, and preventing pellet and fishing-gear loss can stop leakage. Extended producer responsibility schemes shift some financial or operational responsibility for end-of-life management to producers, but results depend on coverage, fees, enforcement, and recycling markets. Consumer measures can reduce selected single-use items, while procurement rules and product standards can change systems at larger scale. Substituting another material is not automatically beneficial unless its full environmental costs are assessed.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-notes__19",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Plastic pollution is a major environmental problem, but global totals vary with definitions, years, and models. The OECD estimated that 6.1 million tonnes of plastic waste entered aquatic environments in 2019 and that 1.7 million tonnes flowed into the ocean that year. Other studies use different boundaries and produce higher values, so an undated claim that exactly eight million tonnes enters annually hides uncertainty. Plastic harms wildlife and habitats, creates costs for coastal communities, and occurs in seafood and human tissue. Detection alone does not establish the size of a health effect, and scientists are still distinguishing exposure from demonstrated harm.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-notes__20",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Plastic reaches the ocean through rivers, storm drains, wind, wastewater, direct coastal dumping, fishing, aquaculture, and shipping. Mismanaged waste on land is a major source, while lost fishing gear can dominate some categories of large floating debris. Rivers are important pathways, but plastic may remain on floodplains, banks, or beds for years before reaching the sea. Ocean currents can then move debris thousands of kilometres. The North Pacific Garbage Patch is a broad zone where circulating currents concentrate material; it is not a solid island and contains numerous small fragments as well as larger objects.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-notes__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-notes__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-notes__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Most conventional plastics persist for long periods rather than biodegrading rapidly like food waste. Sunlight, heat, waves, and abrasion cause weathering and photodegradation, breaking items into smaller pieces without necessarily removing the polymer. Particles smaller than five millimetres are called microplastics; some are manufactured at that size and others form from larger products. They occur in deep-sea sediment, ice, air, water, wildlife, and human samples. Laboratory research shows that particles or associated chemicals can affect feeding, inflammation, reproduction, or hormone function in some organisms, but dose, polymer, shape, and exposure route matter. Evidence for population-level ecological effects and human clinical outcomes remains incomplete.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-match__24",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-match__25",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+        "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-match__26",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "Marine wildlife is harmed in multiple ways. Sea turtles, whales, and seabirds regularly ingest plastic, mistaking it for prey. Dolphins, seals, and sea turtles become entangled in plastic fishing gear and packaging, leading to injury and drowning. Coral reefs are also affected: plastic debris increases the risk of disease and can physically smother reef structures.",
+        "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-summary__27",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-summary__28",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-summary__29",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-summary__30",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-summary__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Significant technical challenges remain. A model trained on images from one hospital may perform poorly at another because equipment, patient demographics, disease prevalence, or imaging protocols differ. This is the distribution shift problem. A system may also appear accurate on average while failing for a subgroup; unrepresentative training data can disadvantage ethnic minorities or people with rare conditions. Calibration matters too: a score interpreted as a 20 percent risk should correspond to that frequency in the relevant population. Hospitals need local validation, monitoring after deployment, and a plan for responding when practice or data changes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-summary__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Accountability is another contested issue, and responsibility for ordinary clinical errors is not always as simple as the contrast with AI suggests. When a system contributes to a diagnostic mistake, responsibility may be distributed among the developer, data provider, hospital, procurement team, and clinician. Patients need a route to explanation, review, and redress. Regulators can assess a product for a specified intended use, but authorisation does not guarantee safe performance forever. Software updates, new populations, and changing workflows create a need for continuing surveillance and documented human oversight.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-summary__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "There is also debate about whether AI can ever replicate the relational aspects of medicine. The therapeutic relationship between doctor and patient — built on empathy, trust, and communication — is widely regarded as clinically important in its own right, not merely as a vehicle for information exchange. Many clinicians and patients are concerned that an over-reliance on AI could erode this relationship, reducing medicine to a technical exercise.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3q34",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Artificial intelligence is increasingly used in medical research, administration, screening, imaging, and clinical decision support. In carefully defined retrospective tests, some systems have matched or exceeded specialist performance on a narrow task. Such comparisons do not show that a model can replace a clinician across different patients, hospitals, and workflows. Performance also depends on reference labels, the chosen threshold, and disease prevalence in the evaluation sample. Integration into healthcare therefore raises unresolved questions about safety, accountability, equity, privacy, and the human dimension of medicine.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3q35",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The potential benefits are substantial. In regions with shortages of specialist physicians, a validated tool could extend access to diagnostic support; elsewhere it might prioritise urgent cases or reduce repetitive work. Systems can process more records than one clinician and do not experience fatigue. They are not free from bias, however. Historical decisions, missing populations, measurement choices, and optimisation targets can encode or amplify unfair patterns. Clinicians may also develop automation bias, accepting a confident recommendation and overlooking an error they would otherwise have noticed.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3q36",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The potential benefits are substantial. In regions with shortages of specialist physicians, a validated tool could extend access to diagnostic support; elsewhere it might prioritise urgent cases or reduce repetitive work. Systems can process more records than one clinician and do not experience fatigue. They are not free from bias, however. Historical decisions, missing populations, measurement choices, and optimisation targets can encode or amplify unfair patterns. Clinicians may also develop automation bias, accepting a confident recommendation and overlooking an error they would otherwise have noticed.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3q37",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Despite these concerns, clinical adoption is expanding. The US Food and Drug Administration maintains a public list containing hundreds of AI-enabled medical devices, most in radiology, while explaining that inclusion follows its own criteria and available information. Counting authorisations says little by itself about clinical benefit. WHO guidance calls for autonomy, safety, transparency, accountability, inclusiveness, equity, responsiveness, and sustainability throughout design and use. The challenge for policymakers, clinicians, patients, regulators, and technologists is to define intended use, measure real outcomes, monitor failures, and preserve the therapeutic relationship. Governance is part of the clinical intervention rather than paperwork added after deployment.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3q38",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "There is also debate about whether AI can ever replicate the relational aspects of medicine. The therapeutic relationship between doctor and patient — built on empathy, trust, and communication — is widely regarded as clinically important in its own right, not merely as a vehicle for information exchange. Many clinicians and patients are concerned that an over-reliance on AI could erode this relationship, reducing medicine to a technical exercise.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-match__39",
+        "responseKind": "match",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Artificial intelligence is increasingly used in medical research, administration, screening, imaging, and clinical decision support. In carefully defined retrospective tests, some systems have matched or exceeded specialist performance on a narrow task. Such comparisons do not show that a model can replace a clinician across different patients, hospitals, and workflows. Performance also depends on reference labels, the chosen threshold, and disease prevalence in the evaluation sample. Integration into healthcare therefore raises unresolved questions about safety, accountability, equity, privacy, and the human dimension of medicine.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-match__40",
+        "responseKind": "match",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Many current medical AI tools use machine learning, including deep learning, in which artificial neural networks learn patterns from labelled examples. Imaging is prominent because scans can be represented numerically and paired with diagnoses or expert annotations. Models have been developed to detect diabetic retinopathy, certain cancers, and signs of pneumonia. Reported sensitivity and specificity can be high on a test set, yet those values describe different errors and vary when a decision threshold changes. A credible assessment also asks whether data came from independent institutions and whether performance was evaluated prospectively in the intended clinical setting.",
+        "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "9fc6c4c68568aae899d64590952d6e043f983757a5a7b9c01895b547757252b6",
+      "task1ImageSha256": "b74776574d1916b49f7ae9c8020624911351bf7c9b7ee35ad6528c6247332064"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "a5ff5bb7971d665c012c64d9b955e407fff49a360cb900ae1618d262f43870be"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "da2c166abb622086112cb64ab121658b641a9918cf368ff0b1b50c0f9cb8137a",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-3-objective-review.json",
+    "evidenceSha256": "9963e50c65113031479e4e2510cfaae2037a0b477d38cba67c411f34390aa2c9",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-academic-keys-2-7"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "a84f7f11c4ca015b717be58bc7e249ae9828ffe94a9053cb0c3030d714118d6f"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "2c2f7ca2bd284189edba457d91b925e657c0dd4eb3a5204cb3eec2a5c32a3077",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

@@ -7,6 +7,7 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { buildHarnessReport, evidenceScaffold, hydrateRegistry, renderMarkdown } from './lib/ielts-harness-core.mjs';
+import { loadVerifiedIeltsAudioPublications } from './lib/ielts-audio-publication.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const args = Object.fromEntries(process.argv.slice(2).map(argument => {
@@ -39,13 +40,16 @@ try {
 
   const registryPath = path.resolve(args.registry ?? path.join(root, 'config/ielts-harness/evidence-registry.json'));
   const registry = hydrateRegistry(JSON.parse(fs.readFileSync(registryPath, 'utf8')), root);
-  const report = buildHarnessReport(inventory, registry, root);
+  const publicationAudit = loadVerifiedIeltsAudioPublications(root);
+  const report = buildHarnessReport(inventory, registry, root, publicationAudit.publicationBySet);
   const selectedSets = setNumber ? report.sets.filter(set => set.set === setNumber) : report.sets;
   const selected = setNumber ? {
     ...report,
     summary: {
       total: selectedSets.length,
       releaseReady: selectedSets.filter(set => set.releaseReady).length,
+      readyForHumanReview: selectedSets.filter(set => set.state === 'READY_FOR_HUMAN_REVIEW').length,
+      audioPublishedHashVerified: selectedSets.filter(set => set.audioPublication?.status === 'PUBLISHED_HASH_VERIFIED').length,
       stateCounts: Object.fromEntries([...new Set(selectedSets.map(set => set.state))].map(state => [state, selectedSets.filter(set => set.state === state).length])),
     },
     sets: selectedSets,
@@ -56,6 +60,8 @@ try {
   const summary = {
     baseCommit: selected.baseCommit,
     releaseReady: `${selected.sets.filter(set => set.releaseReady).length}/${selected.sets.length}`,
+    readyForHumanReview: `${selected.sets.filter(set => set.state === 'READY_FOR_HUMAN_REVIEW').length}/${selected.sets.length}`,
+    audioPublishedHashVerified: `${selected.sets.filter(set => set.audioPublication?.status === 'PUBLISHED_HASH_VERIFIED').length}/${selected.sets.length}`,
     states: selected.sets.map(set => ({ set: set.set, state: set.state, nextAction: set.nextAction })),
     outputs: { json: args['output-json'] ?? null, markdown: args['output-md'] ?? null },
   };

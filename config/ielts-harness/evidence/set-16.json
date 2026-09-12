@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 16,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-16.ts",
+    "sourceSha256": "4a2e37369048b5f2eec5eb521a20f49c1f803ef8d16c636cf953d2e16989051b",
+    "releaseFingerprintSha256": "acf7cd5dcffc36e02a83d692e8a06435b5af90c362176f6ab72e3804da44d852"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+      "transcriptSha256": "ffbedc7f652f6618217f7cb998a5a096f83ae14d8a908a4d482bebe92248f2ac",
+      "objectiveSha256": "3a5fb36a53c30825c07217482a37d8de935ee6550552faa05d1e0b28afe7be71"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+      "transcriptSha256": "ffbedc7f652f6618217f7cb998a5a096f83ae14d8a908a4d482bebe92248f2ac",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-16-listening-evidence.json",
+      "evidenceSha256": "6e4b1e4ce22cc339a6046a689ea2e4c94a76a43e1c08edefce82d3ac0a249473"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 105.44,
+        "endSeconds": 110.58,
+        "audiblePhrase": "It's Fletcher. Shall I spell that? F-L-E-T-C-H-E-R.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 134.36,
+        "endSeconds": 137.64,
+        "audiblePhrase": "and you can stop me whenever two alternatives sound too similar.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 251.84,
+        "endSeconds": 256.62,
+        "audiblePhrase": "I looked at that, but I think they'd both prefer the adventure camp. They love being outdoors.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 282.08,
+        "endSeconds": 287.68,
+        "audiblePhrase": "A popular choice. The camp runs every weekday, starting at 9am and finishing at 4pm.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 290.72,
+        "endSeconds": 295.76,
+        "audiblePhrase": "Things to remember, children should bring a packed lunch each day, as we don't provide meals.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 296.46,
+        "endSeconds": 300.96,
+        "audiblePhrase": "And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 329.16,
+        "endSeconds": 335.7,
+        "audiblePhrase": "It depends on their ages. Our Junior's program is for children aged 6 and over, and that's 90 pounds per week.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 336.36,
+        "endSeconds": 339.34,
+        "audiblePhrase": "Juniors also each receive a free cap to wear on trips.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 372.66,
+        "endSeconds": 382.16,
+        "audiblePhrase": "That would be our Explorers program. The minimum age for that is 9, and it's a little more 120 pounds a week, because it includes more excursions.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 372.66,
+        "endSeconds": 382.16,
+        "audiblePhrase": "That would be our Explorers program. The minimum age for that is 9, and it's a little more 120 pounds a week, because it includes more excursions.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 570.16,
+        "endSeconds": 594.02,
+        "audiblePhrase": "Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin. They jam our sorting machines. And secondly, any container that is still covered in food cannot be recycled either. Food contaminated packaging has to go in the general waste.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 570.16,
+        "endSeconds": 594.02,
+        "audiblePhrase": "Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin. They jam our sorting machines. And secondly, any container that is still covered in food cannot be recycled either. Food contaminated packaging has to go in the general waste.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 539,
+        "endSeconds": 544.72,
+        "audiblePhrase": "To make it easy to identify, these bins are green, quite different from the black bins we use for General Rubbish.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 620.76,
+        "endSeconds": 623.82,
+        "audiblePhrase": "As for collections, your green bin will be emptied on a Wednesday.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 624.58,
+        "endSeconds": 628.88,
+        "audiblePhrase": "Note that this won't be every week. Collections are fortnightly, so once every two weeks.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 656.2,
+        "endSeconds": 660.5,
+        "audiblePhrase": "The new bins will be delivered to all homes by 30 June, so please look out for yours.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 665.13,
+        "endSeconds": 666.65,
+        "audiblePhrase": "calling our recycling helpline.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 734.42,
+        "endSeconds": 739.22,
+        "audiblePhrase": "Each month, one household that recycles particularly well will win a shopping voucher worth £50.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 764.16,
+        "endSeconds": 769.08,
+        "audiblePhrase": "We aim to reduce the amount of waste sent to landfill by 40% within two years.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 789.94,
+        "endSeconds": 796.48,
+        "audiblePhrase": "Finally, for those of you who'd like to recycle food scraps as well, a free kitchen caddy is available from the town hall.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 959.5600000000001,
+        "endSeconds": 975.7,
+        "audiblePhrase": "Right, Liam Sophie, let's review your prototype. Talk me through it. Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible so anyone could build one.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1027.6,
+        "endSeconds": 1037.54,
+        "audiblePhrase": "The outer casing is a simple plastic bottle. We did consider using metal which is more durable, but plastic is far cheaper and lighter, and that fitted our budget better.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1154.22,
+        "endSeconds": 1164.92,
+        "audiblePhrase": "Mostly well, but we did hit one problem. When we ran dirty water through it quickly, the filter clogged up and the flow almost stopped. We had to pour the water in much more slowly.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1165.54,
+        "endSeconds": 1175.86,
+        "audiblePhrase": "That's useful to know. My main concern though isn't the flow rate. It's safety. Your filter removes dirt and improves taste, but it won't kill bacteria. For drinking water, that's a serious gap.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1199.94,
+        "endSeconds": 1220.74,
+        "audiblePhrase": "So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1199.94,
+        "endSeconds": 1204.66,
+        "audiblePhrase": "So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1205.24,
+        "endSeconds": 1212.72,
+        "audiblePhrase": "Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1205.24,
+        "endSeconds": 1212.72,
+        "audiblePhrase": "Second, bring the cost down even more if you can. Third, add a stage that disinfects the water. Perhaps a UV step.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1213.56,
+        "endSeconds": 1220.74,
+        "audiblePhrase": "Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1213.56,
+        "endSeconds": 1220.74,
+        "audiblePhrase": "Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your reports so the design is easy to follow.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1419.72,
+        "endSeconds": 1422.88,
+        "audiblePhrase": "Some species cover more than 10,000 kilometers in a single journey.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1452.86,
+        "endSeconds": 1461.62,
+        "audiblePhrase": "The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1462.58,
+        "endSeconds": 1470.4,
+        "audiblePhrase": "At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1495.62,
+        "endSeconds": 1500.76,
+        "audiblePhrase": "Birds can sense the earth's magnetic field and use it to determine direction even when the sky is hidden by cloud.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1500.76,
+        "endSeconds": 1511.66,
+        "audiblePhrase": "Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the bird's eyes, which may allow them, in effect, to see magnetic lines.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1537,
+        "endSeconds": 1543.78,
+        "audiblePhrase": "Sea birds in particular appear to use their sense of smell, building up a kind of odor map of the ocean that helps them relocate distant islands.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1627.74,
+        "endSeconds": 1634.22,
+        "audiblePhrase": "Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1635.18,
+        "endSeconds": 1641.6,
+        "audiblePhrase": "Older experienced birds supplement this with memory, recognizing landmarks such as coastlines, mountain ranges and large rivers.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1668.26,
+        "endSeconds": 1673.74,
+        "audiblePhrase": "Artificial light at night, what we call light pollution, draws birds off course and causes fatal collisions with buildings.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1692.8,
+        "endSeconds": 1703.24,
+        "audiblePhrase": "To understand all this, scientists now fit migrating birds with tiny electronic tags, which record their position and reveal, for the first time, the astonishing routes these travelers take.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "8804b62abdc78fd2dd554914b1ef05d5b4082e1f5d933d85a270d1b25aea6c46",
+      "objectiveSha256": "3a5fb36a53c30825c07217482a37d8de935ee6550552faa05d1e0b28afe7be71"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The global energy system is undergoing a rapid transformation after more than a century dominated by fossil fuels. Falling technology costs, climate policy, energy-security concerns, and shifting investment have accelerated renewable deployment. IRENA recorded 473 gigawatts of new renewable power capacity in 2023, of which solar and wind supplied the overwhelming majority. Together, those two technologies added more capacity than all other electricity sources combined. Capacity is not the same as generation, however: one gigawatt of solar, wind, nuclear, or gas does not produce an identical amount of electricity over a year. Comparisons must account for local weather, maintenance, and the proportion of time each plant operates.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The decline in the cost of solar photovoltaic electricity has been one of the most dramatic changes in energy economics. Between 2010 and 2023, the global weighted average cost of electricity from newly commissioned utility-scale solar PV fell by about ninety percent. In 2023 it was substantially below IRENA's weighted average for fossil-fuel alternatives. Offshore wind costs fell by about sixty-three percent over the same period, although financing and supply-chain conditions caused variation among projects and markets. These reductions did not result from one breakthrough. They accumulated through larger factories, more efficient modules and turbines, improved installation, competitive procurement, and supply-chain learning—a process often described as \"learning by doing\" or Wright's Law. Cost averages also conceal the expense of connecting plants to grids and balancing variable output.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The implications for existing energy systems are significant. In grids that previously relied on dispatchable sources—power stations able to generate electricity on demand—the growing share of wind and solar creates integration challenges. Their output varies with weather and does not automatically match demand. Grid operators can combine several responses: transmission between regions, flexible demand, storage over different durations, stronger forecasting, and firm low-carbon generation where available. Existing gas plants may provide backup during a transition, but continued fuel use produces emissions and exposes consumers to price volatility. The appropriate mix depends on geography, interconnection, demand patterns, and how long periods of low renewable output last.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Battery storage has emerged as a critical enabler of the transition. IRENA estimates that utility-scale battery project costs fell by eighty-nine percent between 2010 and 2023, unlocking installations that can store surplus renewable generation and discharge it when needed. Short-duration lithium-ion systems are well suited to shifting solar power from afternoon to evening, but seasonal shortages may require other technologies, fuels, or stronger transmission. Electric vehicles are reshaping the system both as a major new source of electricity demand and, potentially, as distributed storage through vehicle-to-grid charging. The electrification of transport, heating, and industrial processes must therefore be coordinated with grid investment and cleaner electricity supply.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The pace of transition is uneven across countries and sectors. Rich countries with strong policy frameworks and access to capital have led deployment, though some middle-income countries—notably China, India, and Brazil—have also installed renewable capacity at enormous scale. Fossil fuel-dependent economies, particularly those in which fossil fuels represent a major source of government revenue and employment, face the most complex transitions. For countries like Saudi Arabia, Nigeria, and Australia, the energy transition raises profound questions not only about electricity systems but about economic models and social contracts.",
+        "rationale": "The bound passage discusses the relevant topic but does not state or resolve this proposition; NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The decline in the cost of solar photovoltaic electricity has been one of the most dramatic changes in energy economics. Between 2010 and 2023, the global weighted average cost of electricity from newly commissioned utility-scale solar PV fell by about ninety percent. In 2023 it was substantially below IRENA's weighted average for fossil-fuel alternatives. Offshore wind costs fell by about sixty-three percent over the same period, although financing and supply-chain conditions caused variation among projects and markets. These reductions did not result from one breakthrough. They accumulated through larger factories, more efficient modules and turbines, improved installation, competitive procurement, and supply-chain learning—a process often described as \"learning by doing\" or Wright's Law. Cost averages also conceal the expense of connecting plants to grids and balancing variable output.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The implications for existing energy systems are significant. In grids that previously relied on dispatchable sources—power stations able to generate electricity on demand—the growing share of wind and solar creates integration challenges. Their output varies with weather and does not automatically match demand. Grid operators can combine several responses: transmission between regions, flexible demand, storage over different durations, stronger forecasting, and firm low-carbon generation where available. Existing gas plants may provide backup during a transition, but continued fuel use produces emissions and exposes consumers to price volatility. The appropriate mix depends on geography, interconnection, demand patterns, and how long periods of low renewable output last.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Battery storage has emerged as a critical enabler of the transition. IRENA estimates that utility-scale battery project costs fell by eighty-nine percent between 2010 and 2023, unlocking installations that can store surplus renewable generation and discharge it when needed. Short-duration lithium-ion systems are well suited to shifting solar power from afternoon to evening, but seasonal shortages may require other technologies, fuels, or stronger transmission. Electric vehicles are reshaping the system both as a major new source of electricity demand and, potentially, as distributed storage through vehicle-to-grid charging. The electrification of transport, heating, and industrial processes must therefore be coordinated with grid investment and cleaner electricity supply.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The pace of transition is uneven across countries and sectors. Rich countries with strong policy frameworks and access to capital have led deployment, though some middle-income countries—notably China, India, and Brazil—have also installed renewable capacity at enormous scale. Fossil fuel-dependent economies, particularly those in which fossil fuels represent a major source of government revenue and employment, face the most complex transitions. For countries like Saudi Arabia, Nigeria, and Australia, the energy transition raises profound questions not only about electricity systems but about economic models and social contracts.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Pathways consistent with the Paris Agreement's temperature goals commonly require deep energy decarbonisation around mid-century. The agreement itself asks countries to strengthen national contributions and aims for a balance between human-caused greenhouse-gas emissions and removals in the second half of the century; it does not prescribe one identical technology timetable for every country. The Paris Agreement therefore sets a common direction while leaving each government to determine and update its own nationally determined contribution. Meeting its goals requires continued scaling of wind, solar, storage, grids, and efficiency, as well as progress where direct renewable electrification is difficult. \"Hard-to-abate\" sectors—heavy industry, aviation, and shipping—present greater technical and economic challenges than many uses of electricity. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, may serve some industrial and fuel applications, though conversion losses, high costs, and limited infrastructure constrain its current use.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Piaget's stage theory was enormously influential but has been revised by subsequent research. Developmental psychologists have found that some abilities emerge earlier than Piaget proposed, and that change can be more continuous and uneven than a sequence of universal stages suggests. Infant research using habituation techniques—in which attention to novel versus familiar stimuli is measured—indicates that babies as young as three or four months respond as if they possess an implicit understanding of some physical regularities, including aspects of object permanence. Interpreting looking time is difficult, however: detecting that an event is surprising does not necessarily mean an infant has the same explicit concept or reasoning strategy as an older child.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Language development is among the most remarkable achievements of early childhood. A typical child produces their first words at around twelve months, reaches a vocabulary of approximately fifty words by eighteen months, and begins combining words into two-word utterances shortly thereafter. By the age of four, most children have acquired the core grammatical structures of their language and can produce and understand an enormous variety of sentences. Linguist Noam Chomsky famously proposed that the speed and uniformity of language acquisition across cultures reflects the existence of an innate \"language acquisition device\"—a biological predisposition for language that is unique to human beings, though this view has been contested by researchers who emphasise the role of social interaction in language learning.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The quality of early childhood environments has profound and lasting effects. Research on adverse childhood experiences—including neglect, abuse, household instability, and poverty—finds associations with worse developmental outcomes across cognitive, social, emotional, and physical domains. Risk is not destiny: stable, responsive relationships can buffer stress, and children follow diverse developmental paths. High-quality early childhood programmes, particularly those serving disadvantaged children, can improve school readiness and later outcomes, but effects depend on programme quality, duration, family context, and the services used for comparison. Economic analyses often find high returns from effective early intervention; such estimates should not be interpreted as a guarantee that every programme with an early-childhood label will produce the same result.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. The first five years of life represent a period of cognitive development of extraordinary rapidity and consequence. In the first few years, the brain forms more than a million new neural connections per second. Simpler circuits tend to develop before more complex ones, and new capacities build on earlier foundations. This period of proliferation is followed by \"synaptic pruning\", in which some connections are strengthened and others are reduced as circuits become more efficient. Genes influence the sequence of development, while nutrition, health, stress, and responsive interaction affect how emerging networks are organised. Early experience therefore shapes brain architecture substantially, but development does not stop at five: plasticity and learning continue throughout life.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Lev Vygotsky, a Soviet psychologist working at roughly the same time as Piaget, emphasised the social and cultural dimensions of cognitive development in ways that Piaget's framework largely ignored. For Vygotsky, cognitive growth is fundamentally a social process: children learn through interaction with more knowledgeable others—parents, older siblings, teachers—who guide them through tasks slightly beyond their current independent capability. The zone of proximal development (ZPD), Vygotsky's most influential concept, refers to the gap between what a child can do alone and what they can achieve with guidance. Effective instruction and scaffolding operate within this zone, stretching the child's capabilities without overwhelming them.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The digital environment presents new questions for early childhood development. Screen exposure can displace sleep, physical activity, play, and face-to-face conversation, so its opportunity cost matters alongside the content itself. Interactive, age-appropriate material that a caregiver watches and discusses with a child may support learning, while passive background television and unsupported solo use offer fewer benefits. Evidence differs by age, platform, purpose, and family context, making a single count of minutes an incomplete measure. Even so, health guidance for very young children generally limits sedentary screen time and encourages reading and storytelling with a caregiver. The quality of interaction remains central because children learn language through responsive exchanges, not merely by hearing words from a device.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Lev Vygotsky, a Soviet psychologist working at roughly the same time as Piaget, emphasised the social and cultural dimensions of cognitive development in ways that Piaget's framework largely ignored. For Vygotsky, cognitive growth is fundamentally a social process: children learn through interaction with more knowledgeable others—parents, older siblings, teachers—who guide them through tasks slightly beyond their current independent capability. The zone of proximal development (ZPD), Vygotsky's most influential concept, refers to the gap between what a child can do alone and what they can achieve with guidance. Effective instruction and scaffolding operate within this zone, stretching the child's capabilities without overwhelming them.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Language development is among the most remarkable achievements of early childhood. A typical child produces their first words at around twelve months, reaches a vocabulary of approximately fifty words by eighteen months, and begins combining words into two-word utterances shortly thereafter. By the age of four, most children have acquired the core grammatical structures of their language and can produce and understand an enormous variety of sentences. Linguist Noam Chomsky famously proposed that the speed and uniformity of language acquisition across cultures reflects the existence of an innate \"language acquisition device\"—a biological predisposition for language that is unique to human beings, though this view has been contested by researchers who emphasise the role of social interaction in language learning.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Piaget's stage theory was enormously influential but has been revised by subsequent research. Developmental psychologists have found that some abilities emerge earlier than Piaget proposed, and that change can be more continuous and uneven than a sequence of universal stages suggests. Infant research using habituation techniques—in which attention to novel versus familiar stimuli is measured—indicates that babies as young as three or four months respond as if they possess an implicit understanding of some physical regularities, including aspects of object permanence. Interpreting looking time is difficult, however: detecting that an event is surprising does not necessarily mean an infant has the same explicit concept or reasoning strategy as an older child.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The quality of early childhood environments has profound and lasting effects. Research on adverse childhood experiences—including neglect, abuse, household instability, and poverty—finds associations with worse developmental outcomes across cognitive, social, emotional, and physical domains. Risk is not destiny: stable, responsive relationships can buffer stress, and children follow diverse developmental paths. High-quality early childhood programmes, particularly those serving disadvantaged children, can improve school readiness and later outcomes, but effects depend on programme quality, duration, family context, and the services used for comparison. Economic analyses often find high returns from effective early intervention; such estimates should not be interpreted as a guarantee that every programme with an early-childhood label will produce the same result.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The economic case for globalisation rests on comparative advantage: countries can gain by specialising according to relative opportunity costs and trading, even when one is more productive in every activity. Applied globally, this logic supports an international division of labour that has moved some manufacturing from higher-wage to lower-wage countries, reducing many production costs and consumer prices. It does not imply that every person gains or that trade alone determines development. Under the World Bank's poverty line used in its 2018 report, the share of the world's population in extreme poverty fell from nearly thirty-six percent in 1990 to ten percent in 2015. Much of the decline occurred in East and South Asia, especially China and India, alongside domestic reforms, investment, and deeper integration into the global economy. Poverty lines and purchasing-power data are periodically revised, so exact historical percentages depend on the measurement series.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all have shared equally in these gains. Within high-income countries, the benefits of cheaper imports and expanded export markets are dispersed among consumers and firms, while factory closures and manufacturing job losses can be concentrated in particular communities. Research on trade-exposed regions has found persistent labour-market adjustment, including lower employment or wages in some places facing import competition. Technology, exchange rates, domestic policy, and changes in demand also influence industrial employment, making simple attribution difficult. Political studies have identified correlations between exposure to Chinese import competition and support for populist or protectionist candidates. Such evidence establishes a relationship that researchers try to identify more precisely; describing every political change as directly caused by trade would go beyond it.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Globalisation's effects on inequality at the global level are more complex than the within-country picture. Branko Milanovic's analysis of global income distribution from 1988 to 2008 helped popularise the \"elephant curve\"—a graph showing strong income growth around the middle of the global distribution, weaker growth around the upper-middle, and large gains near the top. It was often interpreted as contrasting rising Asian middle classes with relative stagnation among parts of the high-income world's middle class. Later debate showed that the curve also reflects changes in which households occupy each percentile and differences among countries. It remains a useful description of one period, but it cannot by itself prove that globalisation caused every movement along the curve.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Globalisation—the intensifying economic, cultural, and political interconnection of the world—has been one of the defining processes of the late twentieth and early twenty-first centuries. It has generated extraordinary gains in prosperity and connected billions of people to information, markets, and opportunities previously inaccessible to them. It has also produced profound dislocations and generated a political backlash that has shaped elections and reshaped international relations in ways that were difficult to foresee when globalisation's advance seemed irresistible.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The economic case for globalisation rests on comparative advantage: countries can gain by specialising according to relative opportunity costs and trading, even when one is more productive in every activity. Applied globally, this logic supports an international division of labour that has moved some manufacturing from higher-wage to lower-wage countries, reducing many production costs and consumer prices. It does not imply that every person gains or that trade alone determines development. Under the World Bank's poverty line used in its 2018 report, the share of the world's population in extreme poverty fell from nearly thirty-six percent in 1990 to ten percent in 2015. Much of the decline occurred in East and South Asia, especially China and India, alongside domestic reforms, investment, and deeper integration into the global economy. Poverty lines and purchasing-power data are periodically revised, so exact historical percentages depend on the measurement series.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all have shared equally in these gains. Within high-income countries, the benefits of cheaper imports and expanded export markets are dispersed among consumers and firms, while factory closures and manufacturing job losses can be concentrated in particular communities. Research on trade-exposed regions has found persistent labour-market adjustment, including lower employment or wages in some places facing import competition. Technology, exchange rates, domestic policy, and changes in demand also influence industrial employment, making simple attribution difficult. Political studies have identified correlations between exposure to Chinese import competition and support for populist or protectionist candidates. Such evidence establishes a relationship that researchers try to identify more precisely; describing every political change as directly caused by trade would go beyond it.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Globalisation's effects on inequality at the global level are more complex than the within-country picture. Branko Milanovic's analysis of global income distribution from 1988 to 2008 helped popularise the \"elephant curve\"—a graph showing strong income growth around the middle of the global distribution, weaker growth around the upper-middle, and large gains near the top. It was often interpreted as contrasting rising Asian middle classes with relative stagnation among parts of the high-income world's middle class. Later debate showed that the curve also reflects changes in which households occupy each percentile and differences among countries. It remains a useful description of one period, but it cannot by itself prove that globalisation caused every movement along the curve.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The COVID-19 pandemic exposed vulnerabilities in highly interconnected supply chains, as disruptions cascaded through systems producing medicines, semiconductors, and food. Governments and firms responded with larger inventories, additional suppliers, and pressure for supply-chain \"reshoring\"—the return of production to domestic locations—or \"friend-shoring\" among political allies. These strategies may improve resilience to one kind of interruption while raising costs or concentrating dependence in a different way. Digital services, data, and finance can also remain globally connected even when trade in selected physical goods becomes more regional. The resulting emphasis on strategic autonomy has contributed to what some observers call \"slowbalisation\" or selective deglobalisation. Whether this is a temporary adjustment or a deeper structural shift remains a central question of international political economy.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-objective-key-audit-14-20"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "7495267b40c64ec66914bd211e7567cea0c1f4761360661d24de3d6601750244",
+      "task1ImageSha256": "5569f39da3a425f95165754533bbabe82b87168531b98f797bed8693467bbb86"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "f9866d407458fbe0ebeb1e7ea2d7e9aed7bb6bf1eaad44498833d8e38935dd8c"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "3a5fb36a53c30825c07217482a37d8de935ee6550552faa05d1e0b28afe7be71",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-16-objective-review.json",
+    "evidenceSha256": "8eefa32ad0755f773f0fa32e25408ba5ed5ed1ce83366b6637a6497da9038ec0",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-objective-key-audit-14-20"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "83308e1e66baf2a3c076b323e1f625d27c8c6f97724383ad7b51eaffedf0c23c"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "acf7cd5dcffc36e02a83d692e8a06435b5af90c362176f6ab72e3804da44d852",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

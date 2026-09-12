@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:00:18.856Z",
+  "set": 14,
+  "source": "src/data/mocks/ielts-set-14.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-14.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-14/ielts-listening-set-14.mp3",
+  "audioSha256": "8511d391a0e35cdc2be35308220a24c382132c2760353d2c9a3c40f2ed3dc8c3",
+  "transcriptSha256": "5613922a9ca96261b769cb1a5795cd8f3df9951f56c8d139830a68e7784b04c1",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "expectedAudioTextSha256": "70233f8be0d82fe602001f34a832f15996a682d9c0fcb606c5c1aea4c8afbecf",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-14/whisper-set-14.json",
+  "asrSourceSha256": "f42567d1761556a5e600d7719aaeaee856a61e89902d9bc2f228a2a9cff7ea95",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "PASS",
+  "expectedWords": 3177,
+  "recognizedWords": 3068,
+  "editDistance": 168,
+  "wordErrorRate": 0.0529,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Brightwell",
+        "brightwell"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 70.66,
+      "endSeconds": 72.04,
+      "audiblePhrase": "Yes, it's Helen Brightwell."
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "June",
+        "june"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 139.14,
+      "endSeconds": 144.58,
+      "audiblePhrase": "We were set on a Saturday. We originally wanted May, but in the end we've chosen June."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "140"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 231.76,
+      "endSeconds": 232.76,
+      "audiblePhrase": "Around 140."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "garden"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 255.84,
+      "endSeconds": 263.2,
+      "audiblePhrase": "Good. During the wedding venue booking, I will listen carefully and check it against the notes I brought. I think the garden, as long as the weather's kind."
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "vegetarian"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 270.56,
+      "endSeconds": 275,
+      "audiblePhrase": "One thing that really matters is that we'll need a vegetarian option for a lot of our guests."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "suite"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 303.4,
+      "endSeconds": 306.54,
+      "audiblePhrase": "Mainly for the couple, so just the bridal suite for the first night."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "75",
+        "£75"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 306.86,
+      "endSeconds": 317.26,
+      "audiblePhrase": "I'll pencil that in. Now let me run through our two packages. The classic package is 75 pounds per guest and includes a three course meal and all the table decorations."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "decorations",
+        "decoration"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 306.86,
+      "endSeconds": 317.26,
+      "audiblePhrase": "I'll pencil that in. Now let me run through our two packages. The classic package is 75 pounds per guest and includes a three course meal and all the table decorations."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "photographer"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 318.3,
+      "endSeconds": 326.2,
+      "audiblePhrase": "The deluxe package is 95 pounds per guest. On top of the meal, it also includes a professional photographer and an evening buffet."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "buffet"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 318.3,
+      "endSeconds": 326.2,
+      "audiblePhrase": "The deluxe package is 95 pounds per guest. On top of the meal, it also includes a professional photographer and an evening buffet."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "nine thirty",
+        "9.30",
+        "9:30"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 584.5600000000001,
+      "endSeconds": 591.2,
+      "audiblePhrase": "Now, the practical details. The run starts at 9.30 in the morning, so please arrive in good time to collect your number."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "gate"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 591.76,
+      "endSeconds": 598.06,
+      "audiblePhrase": "The starting point is the main gate of Victoria Park, not the car park as some older leaflets wrongly stated."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "river"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 598.06,
+      "endSeconds": 604.36,
+      "audiblePhrase": "The route follows the river for most of the way and is completely flat, which makes it ideal for beginners."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "flat"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 598.06,
+      "endSeconds": 604.36,
+      "audiblePhrase": "The route follows the river for most of the way and is completely flat, which makes it ideal for beginners."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "water station"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 605.06,
+      "endSeconds": 609.9,
+      "audiblePhrase": "There is one water station, roughly halfway round, where you can also leave any spare clothing."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "arrows",
+        "arrow"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 713.74,
+      "endSeconds": 721.28,
+      "audiblePhrase": "A word on safety. The whole route is clearly marked with yellow arrows and first aid volunteers are stationed every kilometer."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "playground"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 752.32,
+      "endSeconds": 757.5,
+      "audiblePhrase": "On fundraising, all the money we raise this year will go towards a new children's playground in the town."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "shopping centre",
+        "shopping center"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 762.2,
+      "endSeconds": 770.4,
+      "audiblePhrase": "And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping center and walk across."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "boots",
+        "boot"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1159.24,
+      "endSeconds": 1163.6,
+      "audiblePhrase": "First, each of you must bring sturdy boots because the rocks are very slippery."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "waterproof"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1164.38,
+      "endSeconds": 1168.28,
+      "audiblePhrase": "Second, don't forget a waterproof as the weather there changes fast."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "form"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1169,
+      "endSeconds": 1173.7,
+      "audiblePhrase": "Third, everyone needs to complete the risk form and hand it in to me by Friday."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "sample"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1177.46,
+      "endSeconds": 1181.8,
+      "audiblePhrase": "Oh, and please label every rock sample you collect with its exact location."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "phones",
+        "phone"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1203.7,
+      "endSeconds": 1207.22,
+      "audiblePhrase": "Your phones are fine for photographs. Just make sure they're fully charged."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "China",
+        "china"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1362.82,
+      "endSeconds": 1371.7,
+      "audiblePhrase": "Good afternoon. In today's lecture, I'll trace the history of paper money from its origins in China right through to the plastic notes of the present day."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "copper"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1402.66,
+      "endSeconds": 1413.12,
+      "audiblePhrase": "Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty, they began leaving their coins with trusted agents who issued them a paper receipt in exchange."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "receipt"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1402.66,
+      "endSeconds": 1413.12,
+      "audiblePhrase": "Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty, they began leaving their coins with trusted agents who issued them a paper receipt in exchange."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "flying"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1414.12,
+      "endSeconds": 1420.28,
+      "audiblePhrase": "This early paper money was nicknamed flying money because a strong wind could easily blow it out of your hands."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "believe"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1455.02,
+      "endSeconds": 1460.66,
+      "audiblePhrase": "When the traveler Marco Polo returned home and described it, many readers simply did not believe him."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "Sweden",
+        "sweden"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1486.52,
+      "endSeconds": 1491.02,
+      "audiblePhrase": "Europe's first proper banknotes were issued in Sweden in the 17th century."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "inflation"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1491.96,
+      "endSeconds": 1499.74,
+      "audiblePhrase": "Unfortunately, the bank printed far too many and the notes quickly lost their value and early lesson in the danger of inflation."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "gold"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1500.56,
+      "endSeconds": 1504.3,
+      "audiblePhrase": "For the next two centuries, most banknotes were backed by gold."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "fiat"
+      ],
+      "asrRecognitionVariants": [
+        "fought"
+      ],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1594.98,
+      "endSeconds": 1600.14,
+      "audiblePhrase": "Since then, paper money has been what economists call called, fought currency,"
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "polymer"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1670.32,
+      "endSeconds": 1677.98,
+      "audiblePhrase": "Most recently, several countries have replaced paper with a thin, flexible plastic, usually a material called polymer."
+    }
+  ],
+  "completionEvidenceFound": 33,
+  "completionEvidenceTotal": 33,
+  "failures": [],
+  "releaseAuthorized": false
+}

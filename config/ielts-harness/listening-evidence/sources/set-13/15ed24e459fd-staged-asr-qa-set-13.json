@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T21:59:25.378Z",
+  "set": 13,
+  "status": "PASS",
+  "manifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/ielts-listening-set-13.mp3",
+  "audioSha256": "d787b6c58ea6531b31420b4345827dd1ec301f640f9fac0bca3d3903084dc54e",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/asr-report-set-13.json",
+    "reportSha256": "c2ba45021f38c5e96a4148c5e65fd948fbb6db6ada4e0a1fdce3eb5129f7a559",
+    "wordErrorRate": 0.0399,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "32/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.0399,
+  "focusedReports": [
+    {
+      "part": 3,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/focused-part-3.wav",
+      "audioSha256": "5073352117473d3dea71690bb32037ef4250b6fe36c9cf4f6abf8e07aef5d507",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-13-14/set-13/whisper-focused-set-13-part-3.json",
+      "asrSha256": "36a519b91bd4f4c9e6cfe4b13045acad3fede9089e2a7a938c26536b3915c726",
+      "segmentIndexes": [
+        82
+      ],
+      "status": "PASS",
+      "expectedWords": 32,
+      "recognizedWords": 32,
+      "editDistance": 1,
+      "wordErrorRate": 0.0313,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 30,
+          "responseKey": "l3-form__30",
+          "candidateAcceptedAnswers": [
+            "proofread"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 6.36,
+          "endSeconds": 10.04,
+          "audiblePhrase": "Oh, and do get the whole thing proofread before you submit."
+        }
+      ],
+      "completionEvidenceFound": 1,
+      "completionEvidenceTotal": 1,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

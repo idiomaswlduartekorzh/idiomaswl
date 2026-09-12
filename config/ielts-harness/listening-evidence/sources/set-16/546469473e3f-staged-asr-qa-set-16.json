@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T22:03:02.314Z",
+  "set": 16,
+  "status": "PASS",
+  "manifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
+  "castingSha256": "4bf69f4a26f9dbdf8fce5442db201a1d7aa938ac274c1be4a09a105feb8743d6",
+  "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-16/ielts-listening-set-16.mp3",
+  "audioSha256": "f109a0a78a4dc696d4295341b96b7c312d0bf8909526abd56a067d53c02e4c50",
+  "technicalPassed": true,
+  "globalAsr": {
+    "reportPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-16/asr-report-set-16.json",
+    "reportSha256": "80a377d64b3b98df1bc50551b46b337b2a475fecda926aa8cabd550490368692",
+    "wordErrorRate": 0.0266,
+    "maximumWordErrorRate": 0.08,
+    "completionEvidence": "32/33"
+  },
+  "partReports": [],
+  "wordErrorRateEvidence": "complete_recording",
+  "effectiveWordErrorRate": 0.0266,
+  "focusedReports": [
+    {
+      "part": 2,
+      "audioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-16/focused-part-2.wav",
+      "audioSha256": "de2d73efa2500023d5203bdf3240158073a604edd709a225df6dd15e7682fe66",
+      "asrPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio/bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818/sets-15-16/set-16/whisper-focused-set-16-part-2.json",
+      "asrSha256": "643f2433fd0ae506a2979bcf814146ecc66062b27b9589108e3f6c01cd83733a",
+      "segmentIndexes": [
+        47
+      ],
+      "status": "PASS",
+      "expectedWords": 47,
+      "recognizedWords": 47,
+      "editDistance": 0,
+      "wordErrorRate": 0,
+      "maximumWordErrorRate": 0.08,
+      "wordErrorRateEnforced": false,
+      "completionEvidence": [
+        {
+          "question": 17,
+          "responseKey": "l2-form__17",
+          "candidateAcceptedAnswers": [
+            "helpline",
+            "recycling helpline"
+          ],
+          "asrRecognitionVariants": [],
+          "found": true,
+          "foundOutOfOrder": false,
+          "matchKind": "exact",
+          "diagnosticStartSeconds": null,
+          "startSeconds": 8.92,
+          "endSeconds": 10.44,
+          "audiblePhrase": "calling our recycling helpline."
+        }
+      ],
+      "completionEvidenceFound": 1,
+      "completionEvidenceTotal": 1,
+      "failures": []
+    }
+  ],
+  "effectiveCompletionEvidence": "33/33",
+  "unresolvedQuestions": [],
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "releaseAuthorized": false
+}

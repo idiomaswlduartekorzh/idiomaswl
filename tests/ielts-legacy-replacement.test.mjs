@@ -3,6 +3,13 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
+import { withIeltsListeningLegacyReplacementTranscript } from '../src/data/mocks/ielts-listening-legacy-replacement.ts';
+import {
+  loadVerifiedIeltsAudioPublications,
+  loadVerifiedIeltsLegacyPublications,
+  verifyIeltsApprovedBatchPublicationDocuments,
+  verifyIeltsLegacyPublicationDocuments,
+} from '../scripts/lib/ielts-audio-publication.mjs';
 
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const production = JSON.parse(readFileSync('config/ielts-audio/production-manifest.json', 'utf8'));
@@ -113,4 +120,96 @@ test('publish receipt is hash-bound and every public MP3 matches its approved ma
     assert.equal(file.audioSha256, approval.files.find(item => item.set === file.set).audioSha256);
   }
   assert.equal(receipt.releaseAuthorized, true);
+});
+
+test('runtime Listening transcripts match the frozen spoken transcript hashes', async () => {
+  for (const row of manifest.rows) {
+    const authored = (await import(`../src/data/mocks/ielts-set-${row.set}.ts`)).default;
+    const rawListening = authored.sections.filter(section => section.skill === 'listening')
+      .map(section => ({ part: section.part, transcript: section.transcript }));
+    assert.equal(sha256(JSON.stringify(rawListening)), row.rawTranscriptSha256, `Set ${row.set} base transcript changed`);
+
+    const runtime = withIeltsListeningLegacyReplacementTranscript(authored);
+    const spokenListening = runtime.sections.filter(section => section.skill === 'listening')
+      .map(section => ({ part: section.part, transcript: section.transcript }));
+    assert.equal(sha256(JSON.stringify(spokenListening)), row.spokenTranscriptSha256, `Set ${row.set} runtime transcript differs from published audio script`);
+  }
+});
+
+test('central mock registry and exam bridge apply the published legacy transcript overlay', () => {
+  const registrySource = readFileSync('src/data/mocks/index.ts', 'utf8');
+  const bridgeSource = readFileSync('src/lib/labs/exam-bridge/ielts.ts', 'utf8');
+
+  assert.match(registrySource, /import \{ withIeltsListeningLegacyReplacementTranscript \} from '\.\/ielts-listening-legacy-replacement';/u);
+  for (const set of [5, 6, 7, 8, 10, 11, 12]) {
+    assert.match(
+      registrySource,
+      new RegExp(`'ielts:set-${set}':\\s+withIeltsListeningLegacyReplacementTranscript\\(ieltsSet${set}\\)`, 'u'),
+      `Set ${set} is not wired to the published transcript in the central registry`,
+    );
+  }
+
+  assert.match(bridgeSource, /import \{ withIeltsListeningLegacyReplacementTranscript \} from '@\/data\/mocks\/ielts-listening-legacy-replacement';/u);
+  assert.match(
+    bridgeSource,
+    /return withIeltsListeningLegacyReplacementTranscript\(withIeltsListeningProductionTranscript\(authored\)\);/u,
+  );
+});
+
+test('publication audit recognizes exactly the seven hash-bound public replacements', () => {
+  const root = process.cwd();
+  const audit = loadVerifiedIeltsLegacyPublications(root);
+  assert.equal(audit.manifestSha256, manifest.manifestSha256);
+  assert.equal(audit.receiptSha256, receipt.receiptSha256);
+  assert.deepEqual([...audit.publicationBySet.keys()], [5, 6, 7, 8, 10, 11, 12]);
+  for (const publication of audit.publicationBySet.values()) {
+    assert.equal(publication.status, 'PUBLISHED_HASH_VERIFIED');
+    assert.equal(publication.automaticQa.technicalStatus, 'PASS');
+    assert.equal(publication.automaticQa.asrStatus, 'PASS');
+    assert.equal(publication.automaticQa.completionEvidence, '33/33');
+    assert.equal(publication.humanQualityApproval, true);
+    assert.equal(publication.fullQ40Evidence, false);
+    assert.equal(publication.releaseReady, false);
+  }
+});
+
+test('publication audit rejects a public hash that differs from the receipt', () => {
+  const publicAudioSha256ByUrl = new Map(receipt.files.map(file => [file.audioUrl, file.audioSha256]));
+  publicAudioSha256ByUrl.set(receipt.files[0].audioUrl, '0'.repeat(64));
+  assert.throws(() => verifyIeltsLegacyPublicationDocuments({
+    manifest,
+    castingSha256: sha256(readFileSync('config/ielts-audio/legacy-replacement-casting.json')),
+    approval,
+    receipt,
+    publicAudioSha256ByUrl,
+  }), /public MP3 differs from its receipt/u);
+});
+
+test('combined publication audit recognizes all twenty public audio routes without granting full release', () => {
+  const audit = loadVerifiedIeltsAudioPublications(process.cwd());
+  assert.deepEqual([...audit.publicationBySet.keys()].sort((left, right) => left - right), Array.from({ length: 20 }, (_, index) => index + 1));
+  for (const publication of audit.publicationBySet.values()) {
+    assert.equal(publication.status, 'PUBLISHED_HASH_VERIFIED');
+    assert.equal(publication.fullQ40Evidence, false);
+    assert.equal(publication.releaseReady, false);
+  }
+});
+
+test('approved batch audit rejects a public hash that differs from its receipt', () => {
+  const productionManifest = JSON.parse(readFileSync('config/ielts-audio/production-manifest.json', 'utf8'));
+  const repairManifest = JSON.parse(readFileSync('config/ielts-audio/repair-manifest.json', 'utf8'));
+  const batchApproval = JSON.parse(readFileSync('config/ielts-audio/batch-quality-approval.json', 'utf8'));
+  const baseline = JSON.parse(readFileSync('config/ielts-audio/approved-batch-public-baseline.json', 'utf8'));
+  const batchReceipt = JSON.parse(readFileSync('config/ielts-audio/approved-batch-publish-receipt.json', 'utf8'));
+  const publicAudioSha256ByUrl = new Map(batchReceipt.files.map(file => [file.audioUrl, file.audioSha256]));
+  publicAudioSha256ByUrl.set(batchReceipt.files[0].audioUrl, '0'.repeat(64));
+  assert.throws(() => verifyIeltsApprovedBatchPublicationDocuments({
+    manifest: productionManifest,
+    repairManifest,
+    castingSha256: sha256(readFileSync('config/ielts-audio/voice-casting.json')),
+    approval: batchApproval,
+    baseline,
+    receipt: batchReceipt,
+    publicAudioSha256ByUrl,
+  }), /public MP3 differs from its receipt/u);
 });

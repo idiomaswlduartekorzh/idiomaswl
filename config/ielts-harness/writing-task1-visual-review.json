@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-09",
+  "policy": {
+    "scope": "IELTS Academic Writing Tasks 1 and 2: Task 1 prompt-to-visual correspondence and legibility; Task 2 prompt completeness, response mode and word limit.",
+    "approvalMeaning": "The prompt, visible categories/steps, units, dates and chart type correspond; the asset is readable at its native vector or raster dimensions.",
+    "invalidation": "Any prompt or asset hash change voids approval."
+  },
+  "reviewer": {
+    "kind": "agent",
+    "id": "codex-primary-writing-review"
+  },
+  "sets": [
+    {
+      "set": 1,
+      "mockId": "set-1",
+      "questionId": "w1",
+      "imageUrl": "/ielts/images/writing-set1-task1-chester.png",
+      "promptSha256": "5a756876fe1e931268bf4aeb770ff9a11f0eb6f134d3ad7c569009a3e159cc53",
+      "assetSha256": "703226494824e298afdfcbb574972161a42f78f8632dded82832a0e497c5dc5c",
+      "assetBytes": 96552,
+      "dimensions": {
+        "width": 936,
+        "height": 460
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "rendered-image-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "1a0818bed1cbe8a50f4996b2f5d173fc82ceb95eb6d9cb27777759f24537109f",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 2,
+      "mockId": "set-2",
+      "questionId": "w1",
+      "imageUrl": "/ielts/images/writing-set2-task1-games.png",
+      "promptSha256": "f10220c8185c51c9f064640bf48da2bc006527e8ad6203129bb05e588eb56636",
+      "assetSha256": "e364ebc5edd15ce339e6a84fef13b98c898168aac497f9637370ad10f750c5e0",
+      "assetBytes": 417042,
+      "dimensions": {
+        "width": 1499,
+        "height": 847
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "rendered-image-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "67ebe527a0c2eed6df941ab06191e55c76dfb8a2ff0ed04275f0fbbb5bd70996",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 3,
+      "mockId": "set-3",
+      "questionId": "w1",
+      "imageUrl": "/ielts/images/writing-set3-task1-spreads.jpg",
+      "promptSha256": "a991f91345db87d0d296681fb6898214321e9da5405b12d40ff43da747a2f968",
+      "assetSha256": "b74776574d1916b49f7ae9c8020624911351bf7c9b7ee35ad6528c6247332064",
+      "assetBytes": 180071,
+      "dimensions": {
+        "width": 936,
+        "height": 580
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "rendered-image-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "23fcd1d0d0c232ec33e5eb96d9c9b23ddf88c9bfc438369e4ac75e9ba6b081de",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 4,
+      "mockId": "set-4",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set4-task1.svg",
+      "promptSha256": "40e5cbdcef33067ecb2b46da528d2f6ef703e63af505fa2fd583d94da45aa76e",
+      "assetSha256": "ef5960298b935d1b754aa0526108688f07fd43a4d8f034bb7da39ecdcd0bc292",
+      "assetBytes": 2857,
+      "dimensions": {
+        "width": 680,
+        "height": 430
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "rendered-image-inspection",
+      "findings": [
+        "Replaced 250\u00d7262 raster with a legible vector redraw preserving the four series, units, years and principal trends."
+      ],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "c1e4a625c3bedc6a4ab8a787870b00d827c95264ea9798adcee69d5cc85a9681",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 5,
+      "mockId": "set-5",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set5-task1.svg",
+      "promptSha256": "9218e93747d28c89c32e272f6a4fc7a37cef8df032c611ead74261570b24ef4a",
+      "assetSha256": "819818e38535292448dc8eaee18eb3dc747207bc1cae863eda9772a6e5e67a93",
+      "assetBytes": 4056,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "fdaff42370e56d6affb5e12185de528d37695f2df44e91c0273c1647f55087de",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 6,
+      "mockId": "set-6",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set6-task1.svg",
+      "promptSha256": "0b0b92feabb2d794c1dd0a451bdabdc30b7d62f886c66e8e24665b4a98fe108f",
+      "assetSha256": "eac0d0efc9bd8a880a47edb94072b47dbc17246ff52ab519e78d4e3eab1c84b3",
+      "assetBytes": 4233,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "6ec2f450dd8a52648ae68d52d12b260ff7e10636119016280b9e5d1a7eb1d381",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 7,
+      "mockId": "set-7",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set7-task1.svg",
+      "promptSha256": "ba89bca715b4ff392617c6dd06dbcb44af29d69f970f8b08f172d7eacb118d16",
+      "assetSha256": "14716af50d5a3b92603ecaf7379eb74d9175c946829ff65f26a5fd1ca5913011",
+      "assetBytes": 3155,
+      "dimensions": {
+        "width": 680,
+        "height": 380
+      },
+      "visualKind": "pie-charts",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "4580c47f8108fab74fa591e993fe1b3c20622ac30ec0266bff700e434b757b00",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 8,
+      "mockId": "set-8",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set8-task1.svg",
+      "promptSha256": "1c53acd1f04e5f50d35729835ef5a1e3d1938baf371134acb2777c6a6a247bbc",
+      "assetSha256": "de753618cfd21c2e180eb135891a909b7b662a20c0cf33da57642c6603d88a7e",
+      "assetBytes": 5396,
+      "dimensions": {
+        "width": 680,
+        "height": 380
+      },
+      "visualKind": "process-diagram",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "13c016f461a6fc635ada5d5f42b8b9e447a2d7aa2c024aa0d1aa4bb1870bf17a",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 9,
+      "mockId": "set-9",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set9-task1.svg",
+      "promptSha256": "969467418c66ccbbd4fdce26ca133d91d7bc36866c3ce9c8f5cb1cc536934e78",
+      "assetSha256": "070be567c78cc7b5612747e996295b3f7b5d6ba30bac73735a2fd11fdcf53b3b",
+      "assetBytes": 3455,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [
+        "Corrected the prompt from six to five subject areas to match the five categories shown."
+      ],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "7c48a2d55ec1756ae176e04a1f8ab55c95abe710caa9339eb2bab7cf71da654f",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 10,
+      "mockId": "set-10",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set10-task1.svg",
+      "promptSha256": "452a8ef37e47f26e7a1af99afc8c72e132b08e6ede59320095ab7c2deabe3a69",
+      "assetSha256": "fb3da49f6f33937fa7bee67392b5052a2d4e42c566aaf97b7d1e2d2c0aa6a857",
+      "assetBytes": 5012,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "ef42960e675bec9701c6d51e40d548cfb38cb86887610fc7bc2ad3f3bae82ead",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 11,
+      "mockId": "set-11",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set11-task1.svg",
+      "promptSha256": "af11afe14033983d58c8f014babb0db501897fda66f3e81a0ede4ee33b63452c",
+      "assetSha256": "25895856d7923ad780ca0a7ea8153f3ac85cfeb3e2676015b71dae746b9ed421",
+      "assetBytes": 3011,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "db6da1c77e4a7d7526d6740a16b0ae1ca9c0311aa33c6bddf576c40f333a864a",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 12,
+      "mockId": "set-12",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set12-task1.svg",
+      "promptSha256": "3511d8ecda920cab4d5ede045fc902d2869fbb2459bb1131c7a11beea853acf4",
+      "assetSha256": "0ff196cc2e6b35cefd5b362048f1c9fa40ddf174bf5e6575af1c04ce2eb147ff",
+      "assetBytes": 4449,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "01f2404f948b97bf64b7f89a54732f945679e893eb06c24b6f2abe7458c1ff08",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 13,
+      "mockId": "set-13",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set13-task1.svg",
+      "promptSha256": "1792a374926a45f7698db8e638ec10da85b523199da3e09077eee6e57509cf01",
+      "assetSha256": "028019297b0e3c449c0f5c98f32309eab3ce37cfff4814015dd6c49a997cc8cf",
+      "assetBytes": 3493,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "d323434d40873c038e42dbec5a07bf196d2f8e807ddd0c1a8ac9036247afa7c1",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 14,
+      "mockId": "set-14",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set14-task1.svg",
+      "promptSha256": "c23c7c07142ec0f5f05d5d3430900af47fa1b6d5b8df1046e6c0313d75d3e86b",
+      "assetSha256": "b48f3714cfcb6cb09ef9c95db66eb93acf3b217561553f90c97d93f4b09043e1",
+      "assetBytes": 5950,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "process-diagram",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "c3fa4043eafa0caa6b3ace974289eb277bc38a87d35f155a42a69269d9b07d75",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 15,
+      "mockId": "set-15",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set15-task1.svg",
+      "promptSha256": "cfadce860bb0d4412e296751b4b815958ea16803b0699a59d37e030cd54afe30",
+      "assetSha256": "724c1dfe03481bfef886da2001672200ef06a7abff168ab5de930176a20b10b6",
+      "assetBytes": 3473,
+      "dimensions": {
+        "width": 680,
+        "height": 390
+      },
+      "visualKind": "pie-charts",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "64d2bead89b7a193acfe672fce910cfd4be017902fbf4ee23b3ee0cd66d206f9",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 16,
+      "mockId": "set-16",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set16-task1.svg",
+      "promptSha256": "786773e9d6dbdd1ed555400a82af825de8b3ade3df99ec19ddbebd51d6b745bb",
+      "assetSha256": "5569f39da3a425f95165754533bbabe82b87168531b98f797bed8693467bbb86",
+      "assetBytes": 3275,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "e89b6f1b963389d39ee61e69ab42dcf0759a65bfba4f389b2372e679a2aad256",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 17,
+      "mockId": "set-17",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set17-task1.svg",
+      "promptSha256": "d7e2ddc78c1f4726b64cc7ab114bd0d053acaf28794bb04a9269a8554fc51e06",
+      "assetSha256": "c1fa939b15401d4d1b6f09e628f256415b1bd9cebbd9828d7f27725cd43bfd88",
+      "assetBytes": 3419,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "42420ef3e4d632fead3b0cb9ad4c4a534a13e254d8f05a0268696cbd742ad7c9",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 18,
+      "mockId": "set-18",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set18-task1.svg",
+      "promptSha256": "7cb319c33cfb99e18623715f1102f28de8f8517088bb6a37f4ee54e80538b6f1",
+      "assetSha256": "0deaeac2c6dff66ef61d408b6f0221f0889863a1dc8eda8a30b66aeb5331eefb",
+      "assetBytes": 5764,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "process-diagram",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "f83062ec6d174a4bdc19fc72d84fe51db01d5cc713ca1ef8226e8676d8a25929",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 19,
+      "mockId": "set-19",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set19-task1.svg",
+      "promptSha256": "056b33ff895b533ff53aad69029fedc1a82911aaf58df316946b453c1f807160",
+      "assetSha256": "a3d1c864cf480cdc456a65e8150df288a77879a32765f1566c052f099440eea8",
+      "assetBytes": 5333,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "line-graph",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "fec4057aaf739a7128032c3854b789ef072869e9fc0bc48dc3842a0def69779e",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    },
+    {
+      "set": 20,
+      "mockId": "set-20",
+      "questionId": "w1",
+      "imageUrl": "/assets/ielts/charts/set20-task1.svg",
+      "promptSha256": "13187927be3ffef5dc7a9f1bde08e1fa4f8464bc4ed6b421bdccaf980bd396f6",
+      "assetSha256": "1ee604994926c47299cdafbded24990c0622e0b70d05cd7919d9eeb1ebe35ef9",
+      "assetBytes": 3238,
+      "dimensions": {
+        "width": 680,
+        "height": 400
+      },
+      "visualKind": "bar-chart",
+      "semanticStatus": "APPROVED",
+      "reviewMethod": "svg-source-and-label-inspection",
+      "findings": [],
+      "task1Checks": {
+        "visualMatchesPrompt": true,
+        "titleOrSubject": true,
+        "unitsWhereApplicable": true,
+        "datesWhereApplicable": true,
+        "legendOrStages": true,
+        "legibility": true,
+        "minWords150": true
+      },
+      "task2": {
+        "questionId": "w2",
+        "promptSha256": "def3d7781875f0b60340f98e51a0317738a4f1581cc7bff5700ae32690bfde3f",
+        "minWords": 250,
+        "semanticStatus": "APPROVED",
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        }
+      }
+    }
+  ]
+}

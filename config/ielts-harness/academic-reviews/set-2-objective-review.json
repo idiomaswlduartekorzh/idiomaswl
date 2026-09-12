@@ -1,0 +1,3858 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 2,
+  "mockId": "set-2",
+  "contentVersionAtReview": "ielts-set-2-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-academic-keys-2-7"
+  },
+  "methodology": [
+    "Listening was checked against the effective transcript selected by the product registry, including the production overlay for Sets 2-4 and the legacy replacement overlay for Sets 5-7.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence, sentence grammar and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "2b7e3afccff799a49740cda2b43d9eecd8e5ef717d90aeb76de52b17e9792955",
+    "listeningMaterialSha256": "9b2a6d2b7f34ebd2f43a7a0008a26eeb0f3c6e0e1f3a4012c20924645dafa411",
+    "readingMaterialSha256": "3a951bfc4cdd3c61577887c0150976d34e6992a03fcbf5775c6afc160b06c47c",
+    "objectiveMaterialSha256": "233f3633f3910c952e14032ad440902ddbd3f1cc75b715db17b70a8bb6772113"
+  },
+  "summary": {
+    "responseRows": 78,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "078 5501 3742",
+        "07855013742"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "Saturday",
+        "saturday"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "four",
+        "4"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "12",
+        "twelve"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "65",
+        "sixty-five",
+        "sixty five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "2.50",
+        "2.5",
+        "2½"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "morning",
+        "10–12",
+        "10-12"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "2:30",
+        "half past two",
+        "14:30"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "one hour",
+        "1 hour",
+        "hour"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "no",
+        "No"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. academic advice",
+        "B": "B. sports facilities",
+        "C": "C. financial guidance",
+        "D": "D. library loans",
+        "E": "E. accommodation bookings"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "10 p.m.",
+        "10pm"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "6",
+        "six"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "3–5",
+        "three to five",
+        "three-five"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "sports hall"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "Thursdays"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "warden"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "15",
+        "fifteen"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "11",
+        "eleven"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "contained too many statistics",
+        "lacked real-world examples",
+        "was too long"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "solar power",
+        "hydroelectric sources",
+        "wind power"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "adding a completely new section",
+        "revising the existing section",
+        "removing the section entirely"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It was too long.",
+        "It only summarised what had already been said.",
+        "It contained factual errors."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "fund more research into solar energy",
+        "set mandatory renewable energy targets",
+        "reduce energy consumption"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "grid"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "locations"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "labels"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "programme",
+        "program"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "library"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "species"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "polyps"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "calcium"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "algae"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "energy"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "temperatures"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "white"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "acidification"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "fishing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "starfish"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-summary__1",
+      "accepted": [
+        "silica"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-summary__2",
+      "accepted": [
+        "impurities"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-summary__3",
+      "accepted": [
+        "glassblowing"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-summary__4",
+      "accepted": [
+        "Murano"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-summary__5",
+      "accepted": [
+        "oxide"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "mcq",
+      "key": "r1q6",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "mcq",
+      "key": "r1q7",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "mcq",
+      "key": "r1q8",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "mcq",
+      "key": "r1q9",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "multiselect",
+      "key": "r1-multi",
+      "accepted": [
+        "B",
+        "C"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. bulletproof windows",
+        "B": "B. optical fibre telecommunications",
+        "C": "C. smart glass that changes transparency",
+        "D": "D. underwater exploration equipment",
+        "E": "E. solar panel production"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "match",
+      "key": "r1-match__12",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. resistant to sudden temperature changes",
+        "B": "B. changes transparency with electricity",
+        "C": "C. produces perfectly flat glass sheets",
+        "D": "D. requires addition of lead oxide",
+        "E": "E. uses volcanic material as raw ingredient"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "match",
+      "key": "r1-match__13",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. resistant to sudden temperature changes",
+        "B": "B. changes transparency with electricity",
+        "C": "C. produces perfectly flat glass sheets",
+        "D": "D. requires addition of lead oxide",
+        "E": "E. uses volcanic material as raw ingredient"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "mcq",
+      "key": "r2q14",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "mcq",
+      "key": "r2q15",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "mcq",
+      "key": "r2q16",
+      "accepted": [
+        2
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "mcq",
+      "key": "r2q17",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "mcq",
+      "key": "r2q18",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "fill",
+      "key": "r2-notes__19",
+      "accepted": [
+        "carbohydrates"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "fill",
+      "key": "r2-notes__20",
+      "accepted": [
+        "fats"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-notes__21",
+      "accepted": [
+        "patterns"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-notes__22",
+      "accepted": [
+        "scent"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-notes__23",
+      "accepted": [
+        "mate"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "match",
+      "key": "r2-match__24",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. destroys wildflower habitats used by bees",
+        "B": "B. parasitises honeybee colonies",
+        "C": "C. prevents bees from producing enough honey",
+        "D": "D. impairs bees' navigation and memory",
+        "E": "E. reduces the number of flowers available",
+        "F": "F. disrupts the timing between bee emergence and flowering"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "match",
+      "key": "r2-match__25",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. destroys wildflower habitats used by bees",
+        "B": "B. parasitises honeybee colonies",
+        "C": "C. prevents bees from producing enough honey",
+        "D": "D. impairs bees' navigation and memory",
+        "E": "E. reduces the number of flowers available",
+        "F": "F. disrupts the timing between bee emergence and flowering"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "match",
+      "key": "r2-match__26",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. destroys wildflower habitats used by bees",
+        "B": "B. parasitises honeybee colonies",
+        "C": "C. prevents bees from producing enough honey",
+        "D": "D. impairs bees' navigation and memory",
+        "E": "E. reduces the number of flowers available",
+        "F": "F. disrupts the timing between bee emergence and flowering"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "fill",
+      "key": "r3-summary__27",
+      "accepted": [
+        "rational"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "fill",
+      "key": "r3-summary__28",
+      "accepted": [
+        "heuristics"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "fill",
+      "key": "r3-summary__29",
+      "accepted": [
+        "cognitive biases",
+        "biases"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "fill",
+      "key": "r3-summary__30",
+      "accepted": [
+        "mind"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-summary__31",
+      "accepted": [
+        "Loss",
+        "loss"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-summary__32",
+      "accepted": [
+        "intuitive",
+        "automatic"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-summary__33",
+      "accepted": [
+        "nudging"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "mcq",
+      "key": "r3q34",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "mcq",
+      "key": "r3q35",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "mcq",
+      "key": "r3q36",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "mcq",
+      "key": "r3q37",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "mcq",
+      "key": "r3q38",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "match",
+      "key": "r3-match__39",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. supporters of rational choice theory",
+        "B": "B. critics who object to paternalism",
+        "C": "C. critics who question long-term effectiveness",
+        "D": "D. proponents of behavioural economics"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "match",
+      "key": "r3-match__40",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. supporters of rational choice theory",
+        "B": "B. critics who object to paternalism",
+        "C": "C. critics who question long-term effectiveness",
+        "D": "D. proponents of behavioural economics"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "078 5501 3742",
+        "07855013742"
+      ],
+      "questionPrompt": "Contact number: {{1}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "CUSTOMER: My mobile is 078 5501 3742.",
+      "sourceExcerptSha256": "344147478e1ce7eab4a46d27d86ed4a9489b01263020f802d4210cd7f28306f7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "078 5501 3742",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "078 5501 3742",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "07855013742",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Saturday",
+        "saturday"
+      ],
+      "questionPrompt": "Day of booking: {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "CUSTOMER: Saturday, if possible. In the afternoon.",
+      "sourceExcerptSha256": "f043f38c4e72fecf028688100ecf7dd93d0e2b427ed59597564302edd1aedb79",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Saturday",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Saturday",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "saturday",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "four",
+        "4"
+      ],
+      "questionPrompt": "Number of players: {{3}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "CUSTOMER: That would be perfect. We're a group of four players.",
+      "sourceExcerptSha256": "96fa677b0826fd1960d70e73f813ae3c796030ee4517334e47cde2ac00c6b12f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "four",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "four",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "4",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "questionPrompt": "Court hire cost (without discount): £{{4}} per hour",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: Great. The cost for that slot is twelve pounds per hour, so that's twenty-four pounds in total.",
+      "sourceExcerptSha256": "cbd6e781e7e45d2ffe05e9e811afd1d9e7331b752f87e7519bb53d226cd2abfa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "twelve",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "12",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "twelve",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "65",
+        "sixty-five",
+        "sixty five"
+      ],
+      "questionPrompt": "Annual membership fee: £{{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: Very straightforward. You fill in a form online or in person. Annual membership is sixty-five pounds and includes unlimited use of the gym and swimming pool, as well as discounted court hire.",
+      "sourceExcerptSha256": "e7a62977f1385dc5698d2f434a55905ea933a61c0d5b5e0758536e57fc58a05c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sixty-five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "65",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "sixty-five",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "sixty five",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "2.50",
+        "2.5",
+        "2½"
+      ],
+      "questionPrompt": "Racket hire: £{{6}} per racket",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.",
+      "sourceExcerptSha256": "6d0d810914dfdf7d89b5d8aa36bc50f6bd67c70f9a6c61541c1caf2d8df5b0a4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two pounds fifty",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "2.50",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "2.5",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "2½",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "morning",
+        "10–12",
+        "10-12"
+      ],
+      "questionPrompt": "Mr Patel | {{7}} | N/A | No",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: Absolutely. Our head coach, Mr Patel, is available on Saturday from ten to twelve in the morning.",
+      "sourceExcerptSha256": "2734f1973a757fc342dfd5d60fcc7be8600b447959fe81733fd29d9ad8693904",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "morning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "morning",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "10–12",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        },
+        {
+          "answer": "10-12",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "2:30",
+        "half past two",
+        "14:30"
+      ],
+      "questionPrompt": "Ms Carter | {{8}} | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: In that case, our other coach, Ms Carter, is available from half past two.",
+      "sourceExcerptSha256": "6a840c6b94babf8eb4ab94b26e929f3f521a4ab20d72680fa5d5f98ff01710aa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "half past two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "2:30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "half past two",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "14:30",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "one hour",
+        "1 hour",
+        "hour"
+      ],
+      "questionPrompt": "Ms Carter | {{8}} | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: Great. The cost for that slot is twelve pounds per hour, so that's twenty-four pounds in total.",
+      "sourceExcerptSha256": "cbd6e781e7e45d2ffe05e9e811afd1d9e7331b752f87e7519bb53d226cd2abfa",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "hour",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "one hour",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        },
+        {
+          "answer": "1 hour",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        },
+        {
+          "answer": "hour",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "no",
+        "No"
+      ],
+      "questionPrompt": "Ms Carter | {{8}} | {{9}} | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Sports Facility",
+      "sourceExcerpt": "RECEPTIONIST: Just so it is clear, no, coaching is not included with membership; it is charged separately.",
+      "sourceExcerptSha256": "fa16c5514293626f8c7e854deae84d8d82073148bf9a6fe6849b7bc9efbdf5a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "no",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "no",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "No",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "C"
+      ],
+      "questionPrompt": "Which TWO services does the Student Support Centre provide?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Next, the Student Support Centre. This is located in the Fleming Building, just to the left of the main gate as you come in. It handles a wide range of services — academic advice, welfare support, and financial guidance. They also run a peer mentoring programme where second and third-year students are paired with first-years to help with the transition to university life.",
+      "sourceExcerptSha256": "4a27a9d70daa474a7bff2d01cc9e4e2864c0c78a7180bd97662157d699c7c5bf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "academic advice"
+        },
+        {
+          "key": "C",
+          "text": "financial guidance"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "sports facilities",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "library loans",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "accommodation bookings",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "10 p.m.",
+        "10pm"
+      ],
+      "questionPrompt": "• Open until {{13}} on weekdays.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Let's start with the library. The main library is open seven days a week — from eight in the morning until ten at night on weekdays, and nine to six on weekends. You'll need your student card to access the building after six in the evening. The library holds over 400,000 physical books and gives you access to more than 200 academic databases online. If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days.",
+      "sourceExcerptSha256": "4af139d5e543eed822f2ffb04f977194b1b57f5f1441da1d9072e051a2908717",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ten at night",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "10 p.m.",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "10pm",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "questionPrompt": "• Student card required after {{14}} p.m.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Let's start with the library. The main library is open seven days a week — from eight in the morning until ten at night on weekdays, and nine to six on weekends. You'll need your student card to access the building after six in the evening. The library holds over 400,000 physical books and gives you access to more than 200 academic databases online. If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days.",
+      "sourceExcerptSha256": "4af139d5e543eed822f2ffb04f977194b1b57f5f1441da1d9072e051a2908717",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "six",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "6",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "six",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "3–5",
+        "three to five",
+        "three-five"
+      ],
+      "questionPrompt": "• Inter-library loans take {{15}} working days.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Let's start with the library. The main library is open seven days a week — from eight in the morning until ten at night on weekdays, and nine to six on weekends. You'll need your student card to access the building after six in the evening. The library holds over 400,000 physical books and gives you access to more than 200 academic databases online. If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days.",
+      "sourceExcerptSha256": "4af139d5e543eed822f2ffb04f977194b1b57f5f1441da1d9072e051a2908717",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "three to five",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "3–5",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "three to five",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "three-five",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 3,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "sports hall"
+      ],
+      "questionPrompt": "• Located next to the {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "The health centre is on the south side of the campus, next to the sports hall. You should register as soon as possible — appointments can be booked online or by phone. There is a pharmacist on site on Tuesdays and Thursdays.",
+      "sourceExcerptSha256": "ea8d62efa3e37019f8d422575daa6868c06f2737d330477eefd12935321d79a7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "sports hall",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "sports hall",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Thursdays"
+      ],
+      "questionPrompt": "• Pharmacist available on Tuesdays and {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "The health centre is on the south side of the campus, next to the sports hall. You should register as soon as possible — appointments can be booked online or by phone. There is a pharmacist on site on Tuesdays and Thursdays.",
+      "sourceExcerptSha256": "ea8d62efa3e37019f8d422575daa6868c06f2737d330477eefd12935321d79a7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Thursdays",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Thursdays",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "warden"
+      ],
+      "questionPrompt": "• Students in halls should contact their {{18}} for problems.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Regarding accommodation: if you're in university halls, your warden is your first point of contact for any issues. Each hall also has a common room that stays open until midnight.",
+      "sourceExcerptSha256": "6e03ddd1aee1570d676a4db1d21c6146536f71c56380633b762876e25a40fe2a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "warden",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "warden",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "15",
+        "fifteen"
+      ],
+      "questionPrompt": "• Free shuttle bus runs every {{19}} minutes.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Finally, transport. The university operates a free shuttle bus between the north campus, the main campus, and the train station. It runs every fifteen minutes from seven in the morning until eleven at night. You don't need to book — just turn up and show your student card.",
+      "sourceExcerptSha256": "3c0beb87285ea536beb22c260d5b8d44a86e8dfb409cd20490d9f5022b2db66f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fifteen",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "15",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "fifteen",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "11",
+        "eleven"
+      ],
+      "questionPrompt": "• Bus service ends at {{20}} p.m.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Campus Orientation Talk",
+      "sourceExcerpt": "Finally, transport. The university operates a free shuttle bus between the north campus, the main campus, and the train station. It runs every fifteen minutes from seven in the morning until eleven at night. You don't need to book — just turn up and show your student card.",
+      "sourceExcerptSha256": "3c0beb87285ea536beb22c260d5b8d44a86e8dfb409cd20490d9f5022b2db66f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "eleven",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "11",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "The accepted numeral or number wording represents the same value stated in the source."
+        },
+        {
+          "answer": "eleven",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Professor Jenkins' main criticism of their wind energy section was that it",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
+      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "lacked real-world examples"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "contained too many statistics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "was too long",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Tom found a report from the Danish government showing that Denmark gets over 50% of its electricity from",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "TOM: That's a good point. I found a report from the Danish government on their offshore wind programme — apparently they now get over 50% of their electricity from wind. That's a compelling example.",
+      "sourceExcerptSha256": "7c091e215cfc0997ed8b657903e5ed1f5bbbd987e30b66ef10bf7e8e5125c98e",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "wind power"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "solar power",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "hydroelectric sources",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Tom and Sarah decide to handle the wind energy feedback by",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
+      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "revising the existing section"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "adding a completely new section",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "removing the section entirely",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What was the main problem with their conclusion?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?",
+      "sourceExcerptSha256": "a8397db2d76ac8fdcc668a8e0d71bf1b93c6c311c1e8018bbe884774059ec891",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "It only summarised what had already been said."
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "It was too long.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "It contained factual errors.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "One of their recommendations for the conclusion is that governments should",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Well, we could recommend that governments set mandatory renewable energy targets — say, sixty percent renewables by 2035.",
+      "sourceExcerptSha256": "795e1e7425dfcf1b65df28cd15dbed70bea6d6023e582a421c6dd2aac63c2eaa",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "set mandatory renewable energy targets"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "fund more research into solar energy",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "reduce energy consumption",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "grid"
+      ],
+      "questionPrompt": "• Tom and Sarah also recommend increased investment in {{26}} infrastructure.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "TOM: Good idea. We could also suggest increased investment in grid infrastructure, since that's often the bottleneck.",
+      "sourceExcerptSha256": "c4defa25b6a7c48aeb32cce45c53287fc5b9f531c1619cb2d41f60b2eb0287f8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "grid",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "grid",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "locations"
+      ],
+      "questionPrompt": "• The map shows wind farm {{27}} across different regions.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Agreed. One thing I wanted to ask you about is the map we were asked to include showing wind farm locations. Did you manage to create it?",
+      "sourceExcerptSha256": "5664132c7f4b80dde2c2db9c8f558581346b465e3f3e7ed27b1508b7f3bede46",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "locations",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "locations",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "labels"
+      ],
+      "questionPrompt": "• Tom is having trouble with the {{28}} when creating the map.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "TOM: I started it but I'm having trouble with the software. The labels aren't positioning correctly.",
+      "sourceExcerptSha256": "ac975be9fe62d69ebb436736e023f9fcb35480d99b20b2012aee625ef1a9bd7b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "labels",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "labels",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "programme",
+        "program"
+      ],
+      "questionPrompt": "• Sarah is able to help because she used the same {{29}} for a geography project.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: I can help with that. I used the same programme for my geography project.",
+      "sourceExcerptSha256": "4293d08e5e53fe1eab09c934db4aab642bd324fc8146c2c80a24ccebdaad521c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "programme",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "programme",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "program",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "library"
+      ],
+      "questionPrompt": "• They plan to meet at the {{30}} on Thursday at 2 p.m.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Discussion about Renewable Energy Project",
+      "sourceExcerpt": "SARAH: Sure. Let's meet at the library at two o'clock.",
+      "sourceExcerptSha256": "b9a47cc8627829daffdac3eb7e430a52aba4470b2f5d967dc6f4eef568007e70",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "library",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "library",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "species"
+      ],
+      "questionPrompt": "• Coral reefs cover less than 1% of the ocean floor but support 25% of marine {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Coral reefs cover less than one percent of the ocean floor, yet they support approximately 25% of all known marine species. This extraordinary concentration of biodiversity makes them one of the most ecologically important environments on Earth.",
+      "sourceExcerptSha256": "2cec6809d69999824d85f0bbdba113e9dca81db02b0a63bd776c357752d540f5",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "species",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "species",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "polyps"
+      ],
+      "questionPrompt": "• Individual corals are called {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.",
+      "sourceExcerptSha256": "1f4a0d4b5ea42ba8bd758e427472d91c48d5f82ad20231725c3bbf108588da6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Polyps",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "polyps",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "calcium"
+      ],
+      "questionPrompt": "• Corals secrete a {{33}} carbonate skeleton to form the reef structure.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.",
+      "sourceExcerptSha256": "1f4a0d4b5ea42ba8bd758e427472d91c48d5f82ad20231725c3bbf108588da6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "calcium",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "calcium",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "algae"
+      ],
+      "questionPrompt": "• Tiny {{34}} live inside each coral polyp.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.",
+      "sourceExcerptSha256": "1f4a0d4b5ea42ba8bd758e427472d91c48d5f82ad20231725c3bbf108588da6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "algae",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "algae",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "questionPrompt": "• They provide up to 90% of the coral's {{35}} through photosynthesis.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.",
+      "sourceExcerptSha256": "1f4a0d4b5ea42ba8bd758e427472d91c48d5f82ad20231725c3bbf108588da6f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "energy",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "energy",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "temperatures"
+      ],
+      "questionPrompt": "• Caused by a rise in water {{36}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "When water temperatures rise even slightly above normal — sometimes by just one degree Celsius — the coral expels the zooxanthellae. This is known as coral bleaching. Without the algae, the coral turns white and, if temperatures remain high, the coral eventually dies. Mass bleaching events have become far more frequent due to climate change.",
+      "sourceExcerptSha256": "32cc211387cc67e03d6e834134ad4a49aa8d5d419316cfa5c3de407a33cb2d11",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "temperatures",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "temperatures",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "white"
+      ],
+      "questionPrompt": "• The coral expels the algae and turns {{37}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "When water temperatures rise even slightly above normal — sometimes by just one degree Celsius — the coral expels the zooxanthellae. This is known as coral bleaching. Without the algae, the coral turns white and, if temperatures remain high, the coral eventually dies. Mass bleaching events have become far more frequent due to climate change.",
+      "sourceExcerptSha256": "32cc211387cc67e03d6e834134ad4a49aa8d5d419316cfa5c3de407a33cb2d11",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "white",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "white",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "acidification"
+      ],
+      "questionPrompt": "• Ocean {{38}}, which weakens the reef structure.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures; physical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing; and the spread of invasive species such as the crown-of-thorns starfish, which feeds on coral tissue.",
+      "sourceExcerptSha256": "a79503580f57f71cb4d3b45f3360e3bd3c27436003e03d68f481a640a2a88f01",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "acidification",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "acidification",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fishing"
+      ],
+      "questionPrompt": "• Physical damage from divers and destructive {{39}} practices.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures; physical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing; and the spread of invasive species such as the crown-of-thorns starfish, which feeds on coral tissue.",
+      "sourceExcerptSha256": "a79503580f57f71cb4d3b45f3360e3bd3c27436003e03d68f481a640a2a88f01",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fishing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fishing",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "starfish"
+      ],
+      "questionPrompt": "• Invasive species such as the crown-of-thorns {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: Lecture on Coral Reef Ecosystems",
+      "sourceExcerpt": "Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures; physical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing; and the spread of invasive species such as the crown-of-thorns starfish, which feeds on coral tissue.",
+      "sourceExcerptSha256": "a79503580f57f71cb4d3b45f3360e3bd3c27436003e03d68f481a640a2a88f01",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "starfish",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "starfish",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-summary__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "silica"
+      ],
+      "questionPrompt": "Glass is made from {{1}}, an alkali, and lime. Ancient glass was coloured due to {{2}} in the raw materials.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "The first glass was made by heating a mixture of silica (sand), an alkali such as soda ash or potash, and lime. Silica forms the basic network, the alkali lowers the temperature needed for melting, and lime improves chemical durability. When the mixture cools, its atoms do not arrange themselves into the orderly repeating structure of a crystal. This disordered structure helps explain why glass can be transparent yet shaped while hot. In the ancient world, glass was coloured, often a deep blue-green, due to impurities in the raw materials. Roman glassmakers used ingredients including manganese compounds to reduce unwanted colour.",
+      "sourceExcerptSha256": "13750a5020aae543deef57aae6629839dafda2513d7434ed1bca5ab2b6250ab2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "silica",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "silica",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-summary__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "impurities"
+      ],
+      "questionPrompt": "Glass is made from {{1}}, an alkali, and lime. Ancient glass was coloured due to {{2}} in the raw materials.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "The first glass was made by heating a mixture of silica (sand), an alkali such as soda ash or potash, and lime. Silica forms the basic network, the alkali lowers the temperature needed for melting, and lime improves chemical durability. When the mixture cools, its atoms do not arrange themselves into the orderly repeating structure of a crystal. This disordered structure helps explain why glass can be transparent yet shaped while hot. In the ancient world, glass was coloured, often a deep blue-green, due to impurities in the raw materials. Roman glassmakers used ingredients including manganese compounds to reduce unwanted colour.",
+      "sourceExcerptSha256": "13750a5020aae543deef57aae6629839dafda2513d7434ed1bca5ab2b6250ab2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "impurities",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "impurities",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-summary__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "glassblowing"
+      ],
+      "questionPrompt": "The invention of {{3}} in the first century BCE made glass production much faster and cheaper.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "For centuries, glass objects were luxury items, affordable only by the wealthy. This changed dramatically around the first century BCE with the development of glassblowing in the eastern Mediterranean. By blowing air through a metal tube into a gather of molten glass, craftspeople could form thin-walled vessels more quickly and with less material than many earlier casting and core-forming methods required. Moulds could also impose repeated shapes or decoration. The technique spread across the Roman Empire and helped turn many kinds of glassware from precious objects into everyday goods.",
+      "sourceExcerptSha256": "a1c0b6037a41d4e420c26910034bbadc636c78e6226ccc09681dd3197697a7e4",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "glassblowing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "glassblowing",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-summary__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Murano"
+      ],
+      "questionPrompt": "In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George Ravenscroft created lead crystal glass by adding lead {{5}} to the mixture.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "By the late Middle Ages, Venice had established itself as a European centre of glassmaking. A decree of 1291 required furnaces to move to the island of Murano, with fire risk in the densely built city given as the principal reason. Its stated main purpose was therefore to prevent destructive fires, not industrial espionage, although concentrating production on the island also made valuable skills and workers easier for the authorities to supervise. Murano became associated with high-quality colourless glass, mirrors, and elaborate decorative work. Its craftspeople guarded specialist knowledge, although dramatic stories about the penalties for leaving the island should be treated cautiously rather than as simple fact.",
+      "sourceExcerptSha256": "35f46bad7a6218db753ef1ac55712f26a5fa26420d314fabc2a295d725979f8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Murano",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Murano",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-summary__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "oxide"
+      ],
+      "questionPrompt": "In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George Ravenscroft created lead crystal glass by adding lead {{5}} to the mixture.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "The next great innovation came in 1674, when Englishman George Ravenscroft added lead oxide to the glass mixture. The resulting lead crystal glass was heavier and had a higher refractive index, giving it exceptional brilliance and making it ideal for decorative pieces such as chandeliers and fine tableware.",
+      "sourceExcerptSha256": "f8eaca7aa25e930cfc968203666d3a78b2a20799a41556da7748f949e997fecf",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "oxide",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "oxide",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1q6",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "The Corning Museum dates the first glass made by humans to about four thousand years ago.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "Glass is one of humanity's oldest manufactured materials, yet it remains, in many ways, one of the most remarkable. Its origins lie in the natural world: volcanic glass, known as obsidian, formed when molten rock cooled rapidly, was used by early humans to make cutting tools and weapons long before the first synthetic glass was produced. Archaeologists distinguish true glass from earlier glazed stone and faience, so dates depend on what is counted. The Corning Museum of Glass dates the first glass made by humans to about four thousand years ago; most objects from this early period have been found in Mesopotamia and Egypt.",
+      "sourceExcerptSha256": "f897a5b89e488921427b4ed435e7d91f416ee98e7b1ba223f39424170c614858",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1q7",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Glassblowing was invented in Venice.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "For centuries, glass objects were luxury items, affordable only by the wealthy. This changed dramatically around the first century BCE with the development of glassblowing in the eastern Mediterranean. By blowing air through a metal tube into a gather of molten glass, craftspeople could form thin-walled vessels more quickly and with less material than many earlier casting and core-forming methods required. Moulds could also impose repeated shapes or decoration. The technique spread across the Roman Empire and helped turn many kinds of glassware from precious objects into everyday goods.",
+      "sourceExcerptSha256": "a1c0b6037a41d4e420c26910034bbadc636c78e6226ccc09681dd3197697a7e4",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1q8",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The relocation of glassblowers to Murano was mainly to prevent industrial espionage.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "By the late Middle Ages, Venice had established itself as a European centre of glassmaking. A decree of 1291 required furnaces to move to the island of Murano, with fire risk in the densely built city given as the principal reason. Its stated main purpose was therefore to prevent destructive fires, not industrial espionage, although concentrating production on the island also made valuable skills and workers easier for the authorities to supervise. Murano became associated with high-quality colourless glass, mirrors, and elaborate decorative work. Its craftspeople guarded specialist knowledge, although dramatic stories about the penalties for leaving the island should be treated cautiously rather than as simple fact.",
+      "sourceExcerptSha256": "35f46bad7a6218db753ef1ac55712f26a5fa26420d314fabc2a295d725979f8a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1q9",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Lead crystal glass was prized for its decorative qualities.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "The next great innovation came in 1674, when Englishman George Ravenscroft added lead oxide to the glass mixture. The resulting lead crystal glass was heavier and had a higher refractive index, giving it exceptional brilliance and making it ideal for decorative pieces such as chandeliers and fine tableware.",
+      "sourceExcerptSha256": "f8eaca7aa25e930cfc968203666d3a78b2a20799a41556da7748f949e997fecf",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10-Q11",
+      "responseKey": "r1-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "B",
+        "C"
+      ],
+      "questionPrompt": "Which TWO modern uses of glass are mentioned in the passage?",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, carries information as pulses of light with very low signal loss. Coatings can control heat, glare, or reflection, while some smart glass changes its transparency in response to electrical signals. Its usefulness depends on controlled composition as much as on transparency. Glass can also be remelted, but colour mixing, contamination, collection systems, and the different compositions required for containers, windows, screens, and laboratory products complicate closed-loop recycling.",
+      "sourceExcerptSha256": "944a061ee54439c24654eb84cbea3fb77619237710977e36c039b96b1799c508",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "B",
+          "text": "optical fibre telecommunications"
+        },
+        {
+          "key": "C",
+          "text": "smart glass that changes transparency"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "A",
+          "text": "bulletproof windows",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "underwater exploration equipment",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "solar panel production",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B and C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-match__12",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "Float glass process",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "The industrialisation of glass production in the nineteenth and twentieth centuries made glass ubiquitous. Earlier flat glass usually needed grinding and polishing, which added cost and could introduce distortion. In 1952, Alastair Pilkington began developing the float glass process, announced commercially in 1959 after years of experiments. Molten glass is poured continuously onto a bath of molten tin, where it spreads into a level ribbon; controlled cooling then produces sheets with nearly parallel surfaces. The process became the world standard for high-quality windows and made the vast glass facades of modern buildings economical.",
+      "sourceExcerptSha256": "4c7db566c22f51fc97b6edf6c6b0e08cb2a702ee3a9f85bf08ede154029b3e1c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "resistant to sudden temperature changes",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "changes transparency with electricity",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "requires addition of lead oxide",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "uses volcanic material as raw ingredient",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-match__13",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "Borosilicate glass",
+      "sourcePart": 5,
+      "sourceTitle": "Reading Passage 1: The History of Glass",
+      "sourceExcerpt": "Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, carries information as pulses of light with very low signal loss. Coatings can control heat, glare, or reflection, while some smart glass changes its transparency in response to electrical signals. Its usefulness depends on controlled composition as much as on transparency. Glass can also be remelted, but colour mixing, contamination, collection systems, and the different compositions required for containers, windows, screens, and laboratory products complicate closed-loop recycling.",
+      "sourceExcerptSha256": "944a061ee54439c24654eb84cbea3fb77619237710977e36c039b96b1799c508",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to A; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "changes transparency with electricity",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "produces perfectly flat glass sheets",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "requires addition of lead oxide",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "uses volcanic material as raw ingredient",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2q14",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Bees are responsible for pollinating approximately one third of the human food supply.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bees are among the most important animals that pollinate flowering plants, but they work alongside flies, moths, butterflies, beetles, wasps, birds, and bats. The scale of dependence is often described imprecisely. FAO reports that animal pollinators affect about 35 percent of global crop production by volume and enhance the yield of 87 of 115 leading food crops; this does not mean that bees alone produce one third of all human food. Many staples can reproduce without animal pollination, while numerous fruits, nuts, vegetables, and seeds depend on it partly or strongly. A loss of pollinators would therefore reduce the yield, quality, reliability, and diversity of many familiar foods rather than make every affected crop disappear immediately.",
+      "sourceExcerptSha256": "c611dc1645244aa166ac5ad7596cfcf36a3c7e0b2a20c353228327a21343fb12",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "FALSE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2q15",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Bumblebees carry pollen in structures on their hind legs.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bees are especially well adapted to pollination. Their bodies are covered with branched, feathery hairs that trap pollen grains as a bee moves from flower to flower. Electrostatic charge can help pollen jump from a flower to a visiting bee. Many species also possess specialised carrying structures: bumblebees and honeybees, for example, have basket-like structures on their hind legs called corbiculae, or pollen baskets, which they use to transport moistened pollen back to the colony. Many solitary bees instead carry relatively dry pollen in dense patches of hair called scopae on the abdomen or hind legs. Some bumblebees and solitary bees can also perform buzz pollination, vibrating flowers so that pollen is released from enclosed anthers; honeybees cannot use this technique.",
+      "sourceExcerptSha256": "236141a394b854ee7d46c2f466ca8e72d772193ba0253bda30da1a4a3afda20f",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2q16",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        2
+      ],
+      "questionPrompt": "Solitary bees are more efficient pollinators than social bees.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bees are among the most important animals that pollinate flowering plants, but they work alongside flies, moths, butterflies, beetles, wasps, birds, and bats. The scale of dependence is often described imprecisely. FAO reports that animal pollinators affect about 35 percent of global crop production by volume and enhance the yield of 87 of 115 leading food crops; this does not mean that bees alone produce one third of all human food. Many staples can reproduce without animal pollination, while numerous fruits, nuts, vegetables, and seeds depend on it partly or strongly. A loss of pollinators would therefore reduce the yield, quality, reliability, and diversity of many familiar foods rather than make every affected crop disappear immediately.",
+      "sourceExcerptSha256": "c611dc1645244aa166ac5ad7596cfcf36a3c7e0b2a20c353228327a21343fb12",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "2",
+          "text": "NOT GIVEN"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "TRUE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 2 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2q17",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Some flowers use ultraviolet patterns to guide bees to their nectar.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, sometimes visible to bees in ultraviolet wavelengths — which direct a visitor towards the nectary. Flowers also emit specific scent compounds that bees can learn and detect. During a foraging trip, a bee may repeatedly visit one flower type, a behaviour called floral constancy that can deliver pollen to a compatible plant. Some orchids have gone further, mimicking the scent or appearance of female bees to lure males, which inadvertently carry pollen while attempting to mate.",
+      "sourceExcerptSha256": "b91b663e6558dea10b33ba0363f176f03f20aedac34017b93d10114e86143727",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2q18",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Neonicotinoid pesticides affect bees' ability to find their way.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bees are among the most important animals that pollinate flowering plants, but they work alongside flies, moths, butterflies, beetles, wasps, birds, and bats. The scale of dependence is often described imprecisely. FAO reports that animal pollinators affect about 35 percent of global crop production by volume and enhance the yield of 87 of 115 leading food crops; this does not mean that bees alone produce one third of all human food. Many staples can reproduce without animal pollination, while numerous fruits, nuts, vegetables, and seeds depend on it partly or strongly. A loss of pollinators would therefore reduce the yield, quality, reliability, and diversity of many familiar foods rather than make every affected crop disappear immediately.",
+      "sourceExcerptSha256": "c611dc1645244aa166ac5ad7596cfcf36a3c7e0b2a20c353228327a21343fb12",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "TRUE"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "FALSE",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-notes__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "carbohydrates"
+      ],
+      "questionPrompt": "• Nectar provides {{19}} for energy.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "The relationship between flowering plants and bees is a classic example of mutualism: both parties benefit. The plant gains a pollination service, while the bee obtains nectar and pollen as food sources. Nectar provides carbohydrates for energy, while pollen supplies proteins and fats essential for larval development. The relationship is not perfectly cooperative, because bees sometimes take nectar without transferring much pollen and plants compete for visits. Even so, repeated visits between compatible flowers allow fertilisation and seed production.",
+      "sourceExcerptSha256": "728b2caaf59bcc03881cc5770f3219c58c5fcd74f2943fee9b3eb05c701faa2d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "carbohydrates",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "carbohydrates",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-notes__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fats"
+      ],
+      "questionPrompt": "• Pollen provides proteins and {{20}} for larval development.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "The relationship between flowering plants and bees is a classic example of mutualism: both parties benefit. The plant gains a pollination service, while the bee obtains nectar and pollen as food sources. Nectar provides carbohydrates for energy, while pollen supplies proteins and fats essential for larval development. The relationship is not perfectly cooperative, because bees sometimes take nectar without transferring much pollen and plants compete for visits. Even so, repeated visits between compatible flowers allow fertilisation and seed production.",
+      "sourceExcerptSha256": "728b2caaf59bcc03881cc5770f3219c58c5fcd74f2943fee9b3eb05c701faa2d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fats",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fats",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-notes__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "patterns"
+      ],
+      "questionPrompt": "• Ultraviolet {{21}} on petals guide bees to the nectary.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, sometimes visible to bees in ultraviolet wavelengths — which direct a visitor towards the nectary. Flowers also emit specific scent compounds that bees can learn and detect. During a foraging trip, a bee may repeatedly visit one flower type, a behaviour called floral constancy that can deliver pollen to a compatible plant. Some orchids have gone further, mimicking the scent or appearance of female bees to lure males, which inadvertently carry pollen while attempting to mate.",
+      "sourceExcerptSha256": "b91b663e6558dea10b33ba0363f176f03f20aedac34017b93d10114e86143727",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "patterns",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "patterns",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-notes__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "scent"
+      ],
+      "questionPrompt": "• Flowers emit {{22}} compounds detectable from a distance.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, sometimes visible to bees in ultraviolet wavelengths — which direct a visitor towards the nectary. Flowers also emit specific scent compounds that bees can learn and detect. During a foraging trip, a bee may repeatedly visit one flower type, a behaviour called floral constancy that can deliver pollen to a compatible plant. Some orchids have gone further, mimicking the scent or appearance of female bees to lure males, which inadvertently carry pollen while attempting to mate.",
+      "sourceExcerptSha256": "b91b663e6558dea10b33ba0363f176f03f20aedac34017b93d10114e86143727",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "scent",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "scent",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-notes__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mate"
+      ],
+      "questionPrompt": "• Some plants mimic female bees to attract male bees looking for a {{23}}.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, sometimes visible to bees in ultraviolet wavelengths — which direct a visitor towards the nectary. Flowers also emit specific scent compounds that bees can learn and detect. During a foraging trip, a bee may repeatedly visit one flower type, a behaviour called floral constancy that can deliver pollen to a compatible plant. Some orchids have gone further, mimicking the scent or appearance of female bees to lure males, which inadvertently carry pollen while attempting to mate.",
+      "sourceExcerptSha256": "b91b663e6558dea10b33ba0363f176f03f20aedac34017b93d10114e86143727",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mate",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mate",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-match__24",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "Varroa mite",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bee populations in many assessed regions are under considerable pressure, although data are too incomplete to describe every species or location with one global trend. Key threats include habitat loss and fragmentation, intensive farming and monocultures, pesticide exposure, invasive species, pests, and disease. Some neonicotinoid exposures can impair navigation and memory, but field effects differ by compound, dose, bee species, and farming context. The Varroa mite parasitises honeybee colonies and helps spread damaging viruses; it is not the explanation for every wild-bee decline. Climate change adds further stress through heat, drought, range shifts, and disruption of the synchrony between bee emergence and flower bloom. These pressures can interact, making a nutritionally stressed population less able to withstand chemicals or pathogens.",
+      "sourceExcerptSha256": "a8b9edd00ed97f3a777fb0d9a17e66badc6707c7c026a5acc41aa22503282eea",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "destroys wildflower habitats used by bees",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "prevents bees from producing enough honey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "impairs bees' navigation and memory",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "reduces the number of flowers available",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "disrupts the timing between bee emergence and flowering",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-match__25",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Neonicotinoids",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bee populations in many assessed regions are under considerable pressure, although data are too incomplete to describe every species or location with one global trend. Key threats include habitat loss and fragmentation, intensive farming and monocultures, pesticide exposure, invasive species, pests, and disease. Some neonicotinoid exposures can impair navigation and memory, but field effects differ by compound, dose, bee species, and farming context. The Varroa mite parasitises honeybee colonies and helps spread damaging viruses; it is not the explanation for every wild-bee decline. Climate change adds further stress through heat, drought, range shifts, and disruption of the synchrony between bee emergence and flower bloom. These pressures can interact, making a nutritionally stressed population less able to withstand chemicals or pathogens.",
+      "sourceExcerptSha256": "a8b9edd00ed97f3a777fb0d9a17e66badc6707c7c026a5acc41aa22503282eea",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "destroys wildflower habitats used by bees",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "parasitises honeybee colonies",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "prevents bees from producing enough honey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "reduces the number of flowers available",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "F",
+          "text": "disrupts the timing between bee emergence and flowering",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports D for the precise question; option F is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-match__26",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "Climate change",
+      "sourcePart": 6,
+      "sourceTitle": "Reading Passage 2: Bees and Pollination",
+      "sourceExcerpt": "Bee populations in many assessed regions are under considerable pressure, although data are too incomplete to describe every species or location with one global trend. Key threats include habitat loss and fragmentation, intensive farming and monocultures, pesticide exposure, invasive species, pests, and disease. Some neonicotinoid exposures can impair navigation and memory, but field effects differ by compound, dose, bee species, and farming context. The Varroa mite parasitises honeybee colonies and helps spread damaging viruses; it is not the explanation for every wild-bee decline. Climate change adds further stress through heat, drought, range shifts, and disruption of the synchrony between bee emergence and flower bloom. These pressures can interact, making a nutritionally stressed population less able to withstand chemicals or pathogens.",
+      "sourceExcerptSha256": "a8b9edd00ed97f3a777fb0d9a17e66badc6707c7c026a5acc41aa22503282eea",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "destroys wildflower habitats used by bees",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "parasitises honeybee colonies",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "prevents bees from producing enough honey",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "impairs bees' navigation and memory",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "reduces the number of flowers available",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports F for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-summary__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rational"
+      ],
+      "questionPrompt": "Traditional models of decision making were based on {{27}} choice theory, which assumed people always maximise their benefit.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Every day, humans make decisions ranging from the trivial — which shirt to wear or what to order for lunch — to the momentous — whether to change career or whom to marry. Much twentieth-century economic theory modelled decision making as a rational process in which individuals weigh the costs and benefits of available options and choose the one that maximises their utility. Rational choice remains a useful benchmark and does not require researchers to believe that every real person calculates perfectly. The framework has been enormously influential in economics, political science, and sociology.",
+      "sourceExcerptSha256": "c2385d27b1177f7ae58c52ac43a5e9dd4393408ca837ab915932b5d9f47c6c26",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rational",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rational",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-summary__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "heuristics"
+      ],
+      "questionPrompt": "Research by Kahneman and Tversky showed that humans use mental shortcuts called {{28}}, leading to systematic errors known as {{29}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, challenged simple versions of this picture. Their experiments showed systematic departures from the predictions of standard models under particular conditions. People rely on mental shortcuts known as heuristics, which are often efficient and useful but can also produce predictable errors of judgement called cognitive biases. Kahneman and Tversky later developed prospect theory as an alternative account of decisions involving risk, reference points, gains, and losses.",
+      "sourceExcerptSha256": "43ed11026f601d339121784c289e8030617e4af00ec060e1d1d0252fb6c72f2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "heuristics",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "heuristics",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-summary__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cognitive biases",
+        "biases"
+      ],
+      "questionPrompt": "Research by Kahneman and Tversky showed that humans use mental shortcuts called {{28}}, leading to systematic errors known as {{29}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, challenged simple versions of this picture. Their experiments showed systematic departures from the predictions of standard models under particular conditions. People rely on mental shortcuts known as heuristics, which are often efficient and useful but can also produce predictable errors of judgement called cognitive biases. Kahneman and Tversky later developed prospect theory as an alternative account of decisions involving risk, reference points, gains, and losses.",
+      "sourceExcerptSha256": "43ed11026f601d339121784c289e8030617e4af00ec060e1d1d0252fb6c72f2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cognitive biases",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cognitive biases",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "biases",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-summary__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "mind"
+      ],
+      "questionPrompt": "The availability heuristic means people overestimate events whose examples come easily to {{30}}.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "One of the most studied heuristics is availability: people may judge the likelihood of an event by how easily examples come to mind. After vivid coverage of a plane crash, for instance, an observer may temporarily overestimate the risk of flying. Ease of recall can be informative when frequent events really are encountered more often, but publicity, recency, and emotional intensity can break that connection. The bias lies in treating mental availability as if it were a complete statistical sample.",
+      "sourceExcerptSha256": "6f312b25262d003784f742434a0a5d689f9aebda3098507233a7f34f69b54614",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "mind",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "mind",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-summary__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Loss",
+        "loss"
+      ],
+      "questionPrompt": "{{31}} aversion explains why people often keep failing investments longer than they should.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Loss aversion is another well-documented phenomenon within prospect theory. Outcomes are evaluated relative to a reference point, and a loss can influence choice more strongly than an equivalent gain. The pattern helps researchers interpret behaviour such as reluctance to give up an owned object or to realise an investment loss, although context, expectations, and measurement affect its size. It is therefore a tendency used in a model, not a claim that every individual values every £100 loss by one universal ratio.",
+      "sourceExcerptSha256": "040945431978b7f7f89fd0ca3a35a76680fa6def8d76d28702e869bc20496c7e",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Loss",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Loss",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "loss",
+          "basis": "ORTHOGRAPHIC_VARIANT",
+          "rationale": "The accepted answer differs only in case, spacing, punctuation or standard spelling."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-summary__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "intuitive",
+        "automatic"
+      ],
+      "questionPrompt": "Kahneman distinguished between System 1 — fast and {{32}} — and System 2, which is slow and deliberate.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Kahneman later organised his account around a distinction between two modes of thought. System 1 is fast, automatic, and intuitive; it draws on learned associations, pattern recognition, and emotional responses. System 2 is slow, deliberate, and analytical, requiring conscious effort. The labels are explanatory shorthand rather than two identifiable organs in the brain. Routine judgements often begin with System 1, while System 2 may monitor, endorse, or correct them. System 2 is therefore not used for the majority of everyday decisions. Bias can persist when effortful checking is absent or when a person lacks the information needed for correction.",
+      "sourceExcerptSha256": "ed5c0ee1fdc079b22f16505293515e1af47030c0841e24ffa9043b47974b609a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "intuitive",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "intuitive",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        },
+        {
+          "answer": "automatic",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "The accepted wording expresses the same source detail and fits the displayed answer context."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-summary__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nudging"
+      ],
+      "questionPrompt": "The idea of {{33}} involves designing choice environments to promote better decisions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Understanding these biases has practical applications. In public policy, 'nudging' means designing a choice environment to steer behaviour while preserving the ability to choose another option. Automatic pension enrolment changes the default so eligible employees participate unless they opt out, rather than requiring them to opt in. Evidence shows that such defaults can raise participation, although contribution levels, eligibility, trust, and affordability still shape eventual savings. Menu designs, energy bills, appointment systems, and health communications have also been tested with behavioural insights. A proper evaluation compares outcomes with a control group rather than assuming that any redesigned message works.",
+      "sourceExcerptSha256": "c5ffefc0a51482cf10b5d617bee677eaf14bfcc69e6dac9ded7fd5c773998138",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nudging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nudging",
+          "basis": "LITERAL",
+          "rationale": "The accepted answer reproduces the cited source wording."
+        }
+      ],
+      "sourceFormRationale": "The cited source form is the exact wording heard or read; the accepted variants preserve its value through spelling, number notation or grammar.",
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3q34",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "Rational choice theory has only been applied in the field of economics.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Every day, humans make decisions ranging from the trivial — which shirt to wear or what to order for lunch — to the momentous — whether to change career or whom to marry. Much twentieth-century economic theory modelled decision making as a rational process in which individuals weigh the costs and benefits of available options and choose the one that maximises their utility. Rational choice remains a useful benchmark and does not require researchers to believe that every real person calculates perfectly. The framework has been enormously influential in economics, political science, and sociology.",
+      "sourceExcerptSha256": "c2385d27b1177f7ae58c52ac43a5e9dd4393408ca837ab915932b5d9f47c6c26",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "NO"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "YES",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3q35",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "The anchoring experiment used a spinning wheel to produce genuinely random numbers.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Another important bias is anchoring. When people estimate an unknown quantity — the population of a city or the price of a house — their judgement can be influenced by an initial number even when it is arbitrary. In a well-known experiment, a wheel was rigged to stop at either 10 or 65. Participants saw the result, judged whether the percentage of African countries in the United Nations was higher or lower, and then estimated the percentage. Although the wheel was irrelevant, estimates remained higher after the 65 anchor than after the 10 anchor. The numbers appeared random to participants, but the experimental values were deliberately controlled.",
+      "sourceExcerptSha256": "085955592f8cee9a50e78fa60120490babc2b5189170310201822a74a2205a43",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "NO"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "YES",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3q36",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Loss aversion means that people respond more strongly to losses than to gains of the same size.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, challenged simple versions of this picture. Their experiments showed systematic departures from the predictions of standard models under particular conditions. People rely on mental shortcuts known as heuristics, which are often efficient and useful but can also produce predictable errors of judgement called cognitive biases. Kahneman and Tversky later developed prospect theory as an alternative account of decisions involving risk, reference points, gains, and losses.",
+      "sourceExcerptSha256": "43ed11026f601d339121784c289e8030617e4af00ec060e1d1d0252fb6c72f2b",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "YES"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "NO",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3q37",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "System 2 thinking is used for the majority of everyday decisions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Kahneman later organised his account around a distinction between two modes of thought. System 1 is fast, automatic, and intuitive; it draws on learned associations, pattern recognition, and emotional responses. System 2 is slow, deliberate, and analytical, requiring conscious effort. The labels are explanatory shorthand rather than two identifiable organs in the brain. Routine judgements often begin with System 1, while System 2 may monitor, endorse, or correct them. System 2 is therefore not used for the majority of everyday decisions. Bias can persist when effortful checking is absent or when a person lacks the information needed for correction.",
+      "sourceExcerptSha256": "ed5c0ee1fdc079b22f16505293515e1af47030c0841e24ffa9043b47974b609a",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "1",
+          "text": "NO"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "0",
+          "text": "YES",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3q38",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "Changing pension enrolment defaults can increase participation in workplace pension schemes.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Understanding these biases has practical applications. In public policy, 'nudging' means designing a choice environment to steer behaviour while preserving the ability to choose another option. Automatic pension enrolment changes the default so eligible employees participate unless they opt out, rather than requiring them to opt in. Evidence shows that such defaults can raise participation, although contribution levels, eligibility, trust, and affordability still shape eventual savings. Menu designs, energy bills, appointment systems, and health communications have also been tested with behavioural insights. A proper evaluation compares outcomes with a control group rather than assuming that any redesigned message works.",
+      "sourceExcerptSha256": "c5ffefc0a51482cf10b5d617bee677eaf14bfcc69e6dac9ded7fd5c773998138",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "0",
+          "text": "YES"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "1",
+          "text": "NO",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "2",
+          "text": "NOT GIVEN",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-match__39",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "They argue that nudging manipulates people without their knowledge.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. Nonetheless, the field of behavioural economics — which applies insights from psychology to economic models — has transformed our understanding of human behaviour and is now firmly embedded in government, business, and healthcare policy worldwide.",
+      "sourceExcerptSha256": "4fd0b86f191590f438b074e7b7d03454cb975a55b2cb4ccd339945abd54ac841",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "supporters of rational choice theory",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "critics who question long-term effectiveness",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "proponents of behavioural economics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports B for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-match__40",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "They doubt whether short-term nudges can change deeply ingrained habits.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading Passage 3: The Psychology of Decision Making",
+      "sourceExcerpt": "Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. Nonetheless, the field of behavioural economics — which applies insights from psychology to economic models — has transformed our understanding of human behaviour and is now firmly embedded in government, business, and healthcare policy worldwide.",
+      "sourceExcerptSha256": "4fd0b86f191590f438b074e7b7d03454cb975a55b2cb4ccd339945abd54ac841",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "supporters of rational choice theory",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option A is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "B",
+          "text": "critics who object to paternalism",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "D",
+          "text": "proponents of behavioural economics",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports C for the precise question; option D is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    }
+  ],
+  "findings": {
+    "status": "CORRECTED_AND_APPROVED",
+    "corrections": [
+      {
+        "scope": "Listening Q16",
+        "before": "sports hall; sports centre",
+        "after": "sports hall",
+        "reason": "Only “sports hall” is stated as the Health Centre location."
+      },
+      {
+        "scope": "Reading Q10–11 option C",
+        "before": "smart glass for privacy and energy efficiency",
+        "after": "smart glass that changes transparency",
+        "reason": "The passage mentions electrically changing transparency, not the two claimed applications."
+      },
+      {
+        "scope": "Reading Q21",
+        "before": "guides; patterns",
+        "after": "patterns",
+        "reason": "Only “patterns” completes “Ultraviolet ___ on petals” grammatically and from the passage."
+      },
+      {
+        "scope": "Reading Q27",
+        "before": "rational choice; rational",
+        "after": "rational",
+        "reason": "“rational choice” duplicated the following words “choice theory”."
+      },
+      {
+        "scope": "Listening Q13, Q17, Q28-Q29, Q32, Q36",
+        "before": "over-permissive shortened, singular or generic variants",
+        "after": "source-faithful forms only",
+        "reason": "Removed forms not heard exactly or not grammatical in the displayed sentence."
+      }
+    ]
+  },
+  "reviewSha256": "1808a6f8daf7db6b2f7524d12cd13b12fd664defd0aec20d789b7fb01f8b9de2"
+}

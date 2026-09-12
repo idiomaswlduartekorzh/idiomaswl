@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-09T20:53:41.471Z",
+  "set": 10,
+  "source": "src/data/mocks/ielts-set-10.ts",
+  "audioUrl": "/audio/ielts/ielts-listening-set-10.mp3",
+  "auditedAudioPath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/ielts-listening-set-10.mp3",
+  "audioSha256": "a834f456825ea1ca25abbc3c986a774fbcf9816c7afee1256595a19205d3246b",
+  "transcriptSha256": "13d7c4dce09e8bb2bc986a07704e8663802a669a2528cad3fb254382b97b28e1",
+  "productionManifestSha256": "0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30",
+  "expectedAudioTextSha256": "21ac6b37990484b499c30a45b1350c77a0fbf674810827bbec582bf5c9f79cf0",
+  "asrRecognitionVariantsSha256": "575de1d92528538bef622775dfe79a38a43045642c4f91050b2d7c7e8955531e",
+  "asrSourcePath": "/Users/ddev/Documents/ChatGPT/IdiomasWL/handoff-local/continuidad/ielts-harness/worktree/output/ielts-audio-legacy-replacements/0738c805310ea69095af4930e958402a85fd7dbbe34dc9149585d25e0bcb2f30/sets-6-10-11-12/set-10/whisper-set-10.json",
+  "asrSourceSha256": "cc29b822f489dd75af58bdfd0184e6d36e87e46c1a33c391e5205d1f27fb078f",
+  "engine": "mlx-whisper:mlx-community/whisper-small-mlx",
+  "mode": "production",
+  "status": "FAIL",
+  "expectedWords": 3470,
+  "recognizedWords": 3149,
+  "editDistance": 356,
+  "wordErrorRate": 0.1026,
+  "maximumWordErrorRate": 0.08,
+  "wordErrorRateEnforced": true,
+  "completionEvidence": [
+    {
+      "question": 1,
+      "responseKey": "l1-form__1",
+      "candidateAcceptedAnswers": [
+        "Farrelly"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 2,
+      "responseKey": "l1-form__2",
+      "candidateAcceptedAnswers": [
+        "administration",
+        "admin"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 121.46,
+      "endSeconds": 125.24,
+      "audiblePhrase": "I was thinking warehouse work. Actually, no, I'd really prefer office administration."
+    },
+    {
+      "question": 3,
+      "responseKey": "l1-form__3",
+      "candidateAcceptedAnswers": [
+        "immediately"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 130.96,
+      "endSeconds": 134.56,
+      "audiblePhrase": "I'm free immediately. I finished my last contract a fortnight ago."
+    },
+    {
+      "question": 4,
+      "responseKey": "l1-form__4",
+      "candidateAcceptedAnswers": [
+        "retail"
+      ],
+      "asrRecognitionVariants": [],
+      "found": false,
+      "foundOutOfOrder": false,
+      "matchKind": null,
+      "diagnosticStartSeconds": null,
+      "startSeconds": null,
+      "endSeconds": null,
+      "audiblePhrase": ""
+    },
+    {
+      "question": 5,
+      "responseKey": "l1-form__5",
+      "candidateAcceptedAnswers": [
+        "diploma"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 228.78,
+      "endSeconds": 230.46,
+      "audiblePhrase": "I have a diploma in business studies."
+    },
+    {
+      "question": 6,
+      "responseKey": "l1-form__6",
+      "candidateAcceptedAnswers": [
+        "French"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 238.58,
+      "endSeconds": 240.5,
+      "audiblePhrase": "Yes, I speak French fairly fluently."
+    },
+    {
+      "question": 7,
+      "responseKey": "l1-table__7",
+      "candidateAcceptedAnswers": [
+        "11.50",
+        "£11.50"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 297.54,
+      "endSeconds": 303.92,
+      "audiblePhrase": "First, there's a receptionist role in the city center, full-time, paying 11 pounds and 50 pence an hour."
+    },
+    {
+      "question": 8,
+      "responseKey": "l1-table__8",
+      "candidateAcceptedAnswers": [
+        "Riverside"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 303.92,
+      "endSeconds": 311.9,
+      "audiblePhrase": "Then we have an office assistant position. That one's out at Riverside, it's part-time, and it pays 12 pounds an hour."
+    },
+    {
+      "question": 9,
+      "responseKey": "l1-table__9",
+      "candidateAcceptedAnswers": [
+        "evenings",
+        "evening"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 312.46,
+      "endSeconds": 319.24,
+      "audiblePhrase": "And finally, a data clerk job, also in the city center, but the hours are evenings only at 13 pounds an hour."
+    },
+    {
+      "question": 10,
+      "responseKey": "l1-table__10",
+      "candidateAcceptedAnswers": [
+        "13",
+        "£13"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 312.46,
+      "endSeconds": 319.24,
+      "audiblePhrase": "And finally, a data clerk job, also in the city center, but the hours are evenings only at 13 pounds an hour."
+    },
+    {
+      "question": 13,
+      "responseKey": "l2-form__13",
+      "candidateAcceptedAnswers": [
+        "residents",
+        "resident"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 578.04,
+      "endSeconds": 582.9,
+      "audiblePhrase": "You can also go on to membership and borrowing. Joining the library is completely free for local residents."
+    },
+    {
+      "question": 14,
+      "responseKey": "l2-form__14",
+      "candidateAcceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 583.52,
+      "endSeconds": 589.3,
+      "audiblePhrase": "Once you're a member, you can borrow up to 12 items at any one time, books, audio books, or DVDs."
+    },
+    {
+      "question": 15,
+      "responseKey": "l2-form__15",
+      "candidateAcceptedAnswers": [
+        "three weeks",
+        "3 weeks"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 589.72,
+      "endSeconds": 594.96,
+      "audiblePhrase": "The standard loan period is three weeks, and you can renew online if no one else has reserved the item."
+    },
+    {
+      "question": 16,
+      "responseKey": "l2-form__16",
+      "candidateAcceptedAnswers": [
+        "fine"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 595.5,
+      "endSeconds": 601.48,
+      "audiblePhrase": "If you do return something late, there's a small fine for each day it's overdue, so do keep an eye on your due dates."
+    },
+    {
+      "question": 17,
+      "responseKey": "l2-form__17",
+      "candidateAcceptedAnswers": [
+        "newspapers",
+        "newspaper"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 704.08,
+      "endSeconds": 712.42,
+      "audiblePhrase": "We also provide some services you might not know about. Members get free access to a wide range of online newspapers, which is perfect if you like to keep an eye on online news."
+    },
+    {
+      "question": 18,
+      "responseKey": "l2-form__18",
+      "candidateAcceptedAnswers": [
+        "story session",
+        "storytime"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 712.44,
+      "endSeconds": 726.8,
+      "audiblePhrase": "For families we run a story session for young children every Saturday morning. It's very popular so arrive early. And if you need to use a computer, our computer suite is on the first floor with printing and scanning available."
+    },
+    {
+      "question": 19,
+      "responseKey": "l2-form__19",
+      "candidateAcceptedAnswers": [
+        "first",
+        "first floor"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 712.44,
+      "endSeconds": 726.8,
+      "audiblePhrase": "For families we run a story session for young children every Saturday morning. It's very popular so arrive early. And if you need to use a computer, our computer suite is on the first floor with printing and scanning available."
+    },
+    {
+      "question": 20,
+      "responseKey": "l2-form__20",
+      "candidateAcceptedAnswers": [
+        "address"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 775.38,
+      "endSeconds": 787.14,
+      "audiblePhrase": "Finally, if you'd like to join today, it couldn't be simpler. Just come to the main desk and bring proof of your address. A utility bill or a bank statement is fine and will issue your card on the spot."
+    },
+    {
+      "question": 26,
+      "responseKey": "l3-form__26",
+      "candidateAcceptedAnswers": [
+        "introduction"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1221.9,
+      "endSeconds": 1235.84,
+      "audiblePhrase": "Now, for the presentation itself. Start with a clear introduction that sets out your aims. Don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project."
+    },
+    {
+      "question": 27,
+      "responseKey": "l3-form__27",
+      "candidateAcceptedAnswers": [
+        "materials",
+        "material"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1221.9,
+      "endSeconds": 1235.84,
+      "audiblePhrase": "Now, for the presentation itself. Start with a clear introduction that sets out your aims. Don't dive straight into the details. Then make sure you explain your choice of materials, because that's one of the strongest parts of your project."
+    },
+    {
+      "question": 28,
+      "responseKey": "l3-form__28",
+      "candidateAcceptedAnswers": [
+        "diagram"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1236.44,
+      "endSeconds": 1249.32,
+      "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards."
+    },
+    {
+      "question": 29,
+      "responseKey": "l3-form__29",
+      "candidateAcceptedAnswers": [
+        "timing"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1236.44,
+      "endSeconds": 1249.32,
+      "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards."
+    },
+    {
+      "question": 30,
+      "responseKey": "l3-form__30",
+      "candidateAcceptedAnswers": [
+        "feedback"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1236.44,
+      "endSeconds": 1249.32,
+      "audiblePhrase": "I'd also add a diagram showing the internal layout so the audience can follow the flow of the spaces, and do rehearse beforehand to get your timing right. You've only got 10 minutes. Practice once in front of me and I'll give you some feedback afterwards."
+    },
+    {
+      "question": 31,
+      "responseKey": "l4-form__31",
+      "candidateAcceptedAnswers": [
+        "breeding"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1369.56,
+      "endSeconds": 1383.88,
+      "audiblePhrase": "Large whales divide their year between two very different regions. In the cooler months, they head towards the tropics, and the main reason is reproduction. They travel to warm breeding grounds, where their young have a better chance of surviving."
+    },
+    {
+      "question": 32,
+      "responseKey": "l4-form__32",
+      "candidateAcceptedAnswers": [
+        "krill"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1384.56,
+      "endSeconds": 1395.56,
+      "audiblePhrase": "In summer, by contrast, they return to the poles to feed, where the cold, nutrient-rich water is full of the tiny, shrimp-like creatures called krill that form the bulk of their diet."
+    },
+    {
+      "question": 33,
+      "responseKey": "l4-form__33",
+      "candidateAcceptedAnswers": [
+        "blubber",
+        "fat"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1396.32,
+      "endSeconds": 1404.84,
+      "audiblePhrase": "During this feeding season, a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead."
+    },
+    {
+      "question": 34,
+      "responseKey": "l4-form__34",
+      "candidateAcceptedAnswers": [
+        "journeys",
+        "journey",
+        "migrations"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1396.32,
+      "endSeconds": 1404.84,
+      "audiblePhrase": "During this feeding season, a whale eats almost constantly, storing the energy as a thick layer of blubber that will sustain it through the long journey ahead."
+    },
+    {
+      "question": 35,
+      "responseKey": "l4-form__35",
+      "candidateAcceptedAnswers": [
+        "lagoons",
+        "lagoon"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1469.62,
+      "endSeconds": 1476.64,
+      "audiblePhrase": "There, the females give birth in warm, shallow lagoons near the shore, which offer their calves protection from predators."
+    },
+    {
+      "question": 36,
+      "responseKey": "l4-form__36",
+      "candidateAcceptedAnswers": [
+        "field"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1576.2599999999998,
+      "endSeconds": 1582.36,
+      "audiblePhrase": "Scientists believe they may be able to detect the Earth's magnetic field using it rather like a compass."
+    },
+    {
+      "question": 37,
+      "responseKey": "l4-form__37",
+      "candidateAcceptedAnswers": [
+        "songs",
+        "song"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1583.22,
+      "endSeconds": 1592.68,
+      "audiblePhrase": "They also rely heavily on sound, and some species produce long, complex songs that carry for many kilometers underwater and help them stay in contact."
+    },
+    {
+      "question": 38,
+      "responseKey": "l4-form__38",
+      "candidateAcceptedAnswers": [
+        "ships",
+        "ship"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1646.52,
+      "endSeconds": 1654.02,
+      "audiblePhrase": "One of the most immediate is collision with ships along busy coastal routes, which kills or injures many animals every year."
+    },
+    {
+      "question": 39,
+      "responseKey": "l4-form__39",
+      "candidateAcceptedAnswers": [
+        "communication"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1654.74,
+      "endSeconds": 1663.52,
+      "audiblePhrase": "In addition, the growing noise from shipping and industry interferes with their communication, making it harder for them to find one another and to navigate."
+    },
+    {
+      "question": 40,
+      "responseKey": "l4-form__40",
+      "candidateAcceptedAnswers": [
+        "food"
+      ],
+      "asrRecognitionVariants": [],
+      "found": true,
+      "foundOutOfOrder": false,
+      "matchKind": "exact",
+      "diagnosticStartSeconds": null,
+      "startSeconds": 1664.28,
+      "endSeconds": 1676.2,
+      "audiblePhrase": "And in the longer term, rising sea temperatures are altering ocean currents and shifting the location of their food, forcing whales to change patterns of migration that have remained stable for thousands of years."
+    }
+  ],
+  "completionEvidenceFound": 31,
+  "completionEvidenceTotal": 33,
+  "failures": [
+    "WER 10.26% exceeds 8.00%",
+    "Accepted completion phrases not found in question order for Q1, Q4"
+  ],
+  "releaseAuthorized": false
+}

@@ -381,7 +381,7 @@ Contemporary society is characterised by what some researchers describe as a "sl
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: Sleep was historically understood to be a complex, active biological process.\n2. {{2}}: Growth hormone is released primarily during REM sleep.\n3. {{3}}: Studies show that sleeping after learning improves retention of new information.\n4. {{4}}: Performance after roughly seventeen hours awake has been compared with performance at a blood alcohol concentration of 0.05 percent.\n5. {{5}}: The amygdala becomes less reactive when a person is sleep deprived.\n6. {{6}}: Sleeping fewer than six hours per night is linked to a significantly higher risk of coronary heart disease.\n7. {{7}}: Delayed school start times have been shown to improve academic performance and mental health in adolescents.`,
+          template: `1. {{1}}: Sleep was historically understood to be a complex, active biological process.\n2. {{2}}: Growth hormone is released primarily during REM sleep.\n3. {{3}}: Studies show that sleeping after learning improves retention of new information.\n4. {{4}}: Performance after roughly seventeen hours awake has been compared with performance at a blood alcohol concentration of 0.05 percent.\n5. {{5}}: The amygdala becomes less reactive when a person is sleep deprived.\n6. {{6}}: Sleeping fewer than six hours per night is linked to a significantly higher risk of coronary heart disease.\n7. {{7}}: Delayed school start times have been associated with longer adolescent sleep and improvements in attendance.`,
           blanks: [
             { num: 1, answers: ['FALSE'] },
             { num: 2, answers: ['FALSE'] },
@@ -543,7 +543,7 @@ Responses to food insecurity operate at multiple levels. The World Food Programm
           options: [
             'Encouraging consumers in high-income countries to stop eating animal products.',
             'Reducing landfill capacity to prevent the disposal of wasted food.',
-            'Mobile platforms giving farmers access to precision agriculture tools.',
+            'Precision agriculture that optimises water, fertiliser, and pesticide use.',
             'Relocating food production from vulnerable regions to stable ones.',
           ],
           answer: 2,

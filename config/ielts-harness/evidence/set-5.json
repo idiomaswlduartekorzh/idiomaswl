@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 5,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-5.ts",
+    "sourceSha256": "5cd5a6d48958d9d54311dd2b1494a42bc9954e8d7ffa411e2201000ab9dd9b46",
+    "releaseFingerprintSha256": "63b746fed47e2fa8a8de24d7d38128dfa0bb0b46584430ba82e56e3fe0ec8f2c"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "transcriptSha256": "afb8486a93caa09b695075ecbf7170df8fec9454c4c6674d4acb35393703b671",
+      "objectiveSha256": "a7892b694ee15b7781871f643cc4d9e9cb01e0b48b5071b73740e35c7cd3113c"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "b3d4c4a17de2a4dd0b1eeb29d75eaf89728c6017791cded5c8942627740ec912",
+      "transcriptSha256": "afb8486a93caa09b695075ecbf7170df8fec9454c4c6674d4acb35393703b671",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-5-listening-evidence.json",
+      "evidenceSha256": "a03b0a2a0fe47ac9a58ab5064a88ca5cd5d792cfbcfa09b2e35e822a06c33a2f"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 86.713,
+        "endSeconds": 89.653,
+        "audiblePhrase": "A friend recommended you, actually. She did the tour last month.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 116.52000000000001,
+        "endSeconds": 122.92,
+        "audiblePhrase": "That's great to hear. Now we run two walks. Would you prefer the evening tour or the morning one?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 133.08,
+        "endSeconds": 139.04,
+        "audiblePhrase": "cathedral on the main square. Outside the cathedral. Got it. Is there anything I should bring?",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 139.44,
+        "endSeconds": 144.64,
+        "audiblePhrase": "Mainly just make sure you wear comfortable shoes, as there's a fair amount of walking on cobbled",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 235.56,
+        "endSeconds": 242.54,
+        "audiblePhrase": "and points out the old market, which dates back 600 years. Around midday, the group stops for",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 242.54,
+        "endSeconds": 247.26,
+        "audiblePhrase": "lunch at a cafe by the river. You may take photographs, but please stay with the group at",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 269.96,
+        "endSeconds": 276.8,
+        "audiblePhrase": "Certainly. The morning tour lasts three hours and covers about four kilometres. It costs 25",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 276.8,
+        "endSeconds": 283.48,
+        "audiblePhrase": "pounds per person, and that includes a printed guidebook to take home. I like having some background",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 331.56,
+        "endSeconds": 338.38,
+        "audiblePhrase": "tour. That one runs for six hours and covers nine kilometres, priced at 40 pounds. Best of all,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 338.56,
+        "endSeconds": 343.5,
+        "audiblePhrase": "a two course lunch is included in that package. Excellent. I'll take the morning tour for now.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 473.2,
+        "endSeconds": 507.1,
+        "audiblePhrase": "Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the New Woodland Trail and counting birds for our annual wildlife survey. The fences are repaired by outside contractors and the cafe is run by paid staff, so those aren't jobs for volunteers. We organise the rotor several weeks ahead, but you are not expected to attend",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 473.2,
+        "endSeconds": 507.1,
+        "audiblePhrase": "Let me start with the work itself. Over the summer, there's a great deal to do. Now, some of you imagine you'll spend your time guiding visitors around the site, but that's actually handled by our trained staff. What volunteers will really help with is planting trees along the New Woodland Trail and counting birds for our annual wildlife survey. The fences are repaired by outside contractors and the cafe is run by paid staff, so those aren't jobs for volunteers. We organise the rotor several weeks ahead, but you are not expected to attend",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 532.1800000000001,
+        "endSeconds": 537.78,
+        "audiblePhrase": "You must be at least 18 years old. There's a separate scheme for younger helpers.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 537.78,
+        "endSeconds": 543.84,
+        "audiblePhrase": "Today's induction is quite relaxed and it lasts about two hours, including a short tour of the",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 563.9,
+        "endSeconds": 570.16,
+        "audiblePhrase": "observation much more than completing a job quickly. For outdoor work, please wear sturdy boots.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 576.2,
+        "endSeconds": 580.44,
+        "audiblePhrase": "you can leave your things safely as lockers are provided for your personal belongings.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 581.02,
+        "endSeconds": 593.64,
+        "audiblePhrase": "There's no need to carry a bag around the site. You'll also be pleased to hear that free hot drinks are available in the staff room all day. Now review questions 16 to 20 before the recording",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 688.24,
+        "endSeconds": 694.54,
+        "audiblePhrase": "injuries to the supervisor on duty immediately. Please don't wait until you get home. The",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 744.1,
+        "endSeconds": 749.56,
+        "audiblePhrase": "you'll receive a monthly newsletter by email listing upcoming events and work parties.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 774.1,
+        "endSeconds": 779.92,
+        "audiblePhrase": "you properly. The end of year celebration is held in December, with food and music for all our",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 904.48,
+        "endSeconds": 914.74,
+        "audiblePhrase": "Right, Megan Ryan, let's plan your ecology field trip. I've suggested the Fenwick estuary. Any thoughts on why it's a good choice? Well, it's quite close to the university,",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 948.0600000000001,
+        "endSeconds": 961.2,
+        "audiblePhrase": "You could, but for this assignment, I'd like you to concentrate on water quality, testing salinity, and oxygen levels at different points. Should we take readings at random points or use",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1020.54,
+        "endSeconds": 1032.54,
+        "audiblePhrase": "Good question. A coach would be far too expensive for a group your size, and the nearest train station is miles from the shore. So I've arranged a minibus, which the department will drive.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1032.54,
+        "endSeconds": 1038.5,
+        "audiblePhrase": "Great. The one thing I'm nervous about is the tides. I don't want us getting cut off on the mud flats.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1132.26,
+        "endSeconds": 1143.4,
+        "audiblePhrase": "Before anything else, please read the safety guidelines I've uploaded. Don't book the equipment or divide into teams until you've done that. Should we decide now what pattern we expect to",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1200.12,
+        "endSeconds": 1207.04,
+        "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1200.12,
+        "endSeconds": 1207.04,
+        "audiblePhrase": "Each of you must bring a waterproof jacket as the shore is exposed. Remember to charge the camera",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1208.36,
+        "endSeconds": 1213.08,
+        "audiblePhrase": "so you can photograph your sights, collect your water samples in labeled bottles,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1213.68,
+        "endSeconds": 1219.02,
+        "audiblePhrase": "and record all your measurements in a notebook rather than on loose paper. And finally,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1219.48,
+        "endSeconds": 1226.72,
+        "audiblePhrase": "submit the risk assessment to me by Friday. We'll do. Thanks. Part three is complete. Check your answers.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1358.78,
+        "endSeconds": 1365.28,
+        "audiblePhrase": "Because space at ground level is limited, hives are often placed on the rooftops of buildings.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1382.66,
+        "endSeconds": 1389.76,
+        "audiblePhrase": "and this extra warmth protects bees from frost during the colder months. An important distinction",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1421.62,
+        "endSeconds": 1428.16,
+        "audiblePhrase": "as space allows. So what are the benefits? The most obvious one is pollination.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1442.1,
+        "endSeconds": 1448.9,
+        "audiblePhrase": "because urban bees visit such a wide range of plants. City honey often has a distinctive flavor",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1456.24,
+        "endSeconds": 1463.62,
+        "audiblePhrase": "raise public awareness of wildlife and the threats it faces. Researchers also examine movement",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1496.62,
+        "endSeconds": 1504.26,
+        "audiblePhrase": "insects. Of course there are challenges. In some neighborhoods, a lack of flowers means there simply",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1511.64,
+        "endSeconds": 1518.04,
+        "audiblePhrase": "affected by pollution from traffic, which can settle on the plants they feed on. And a more human",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1518.88,
+        "endSeconds": 1524.4,
+        "audiblePhrase": "is that new keepers often lack proper training, which can lead to poorly managed hives",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1615.42,
+        "endSeconds": 1622.68,
+        "audiblePhrase": "advise anyone thinking of starting? First, always register each hive with the local council so that",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1632.1000000000001,
+        "endSeconds": 1638.42,
+        "audiblePhrase": "provide a nearby source of water. Bees need to drink, and without it, they will visit your",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "06437d8a62b37e261bb40c03bb0209268d6b4767d41cf6c97cf190d2dd80b3cf",
+      "objectiveSha256": "a7892b694ee15b7781871f643cc4d9e9cb01e0b48b5071b73740e35c7cd3113c"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "According to popular legend, coffee was discovered in the ninth century by an Ethiopian goat herder named Kaldi, who observed that his animals became unusually energetic after eating berries from a particular tree. Though this tale cannot be verified, historians agree that coffee plants were indeed growing wild in Ethiopia for centuries before humans began consuming them deliberately. The first credible evidence of coffee drinking appears in fifteenth-century Yemen, where Sufi monks brewed the berries into a drink they called qahwa to help them remain alert during long nights of prayer.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "According to popular legend, coffee was discovered in the ninth century by an Ethiopian goat herder named Kaldi, who observed that his animals became unusually energetic after eating berries from a particular tree. Though this tale cannot be verified, historians agree that coffee plants were indeed growing wild in Ethiopia for centuries before humans began consuming them deliberately. The first credible evidence of coffee drinking appears in fifteenth-century Yemen, where Sufi monks brewed the berries into a drink they called qahwa to help them remain alert during long nights of prayer.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economics of coffee production drove one of the earliest examples of global commodity trade. In the seventeenth century, the Ottoman Empire attempted to maintain a monopoly on coffee cultivation by prohibiting the export of fertile seeds. This restriction was eventually circumvented when Dutch traders smuggled living plants to Java in the 1690s, establishing the first major coffee plantation outside the Arab world. The Dutch later brought plants to South America, where conditions proved extraordinarily favourable for cultivation. By the nineteenth century, Brazil had emerged as the world's dominant coffee producer, a position it retains today.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "From Yemen, coffee spread rapidly across the Arab world. By the sixteenth century, coffeehouses—known as qahveh khaneh—had become central institutions in cities like Constantinople, Cairo, and Mecca. These establishments served not merely as places to consume the beverage but as vibrant hubs for intellectual exchange, political debate, and social interaction. So significant was their cultural role that they earned the epithet \"schools of the wise.\" However, their popularity also attracted suspicion: coffee was banned in Mecca in 1511 by a local governor who feared that the stimulating beverage would encourage seditious gatherings. The ban was short-lived, but it reflected an anxiety about coffee's social power that would resurface repeatedly in later centuries.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Coffee reached Europe in the seventeenth century, initially through Venetian merchants, and quickly generated enormous interest as well as controversy. In 1674, a pamphlet titled The Women's Petition Against Coffee argued that the drink was rendering English men idle and impotent. Conversely, coffee's proponents praised it for promoting sobriety and mental clarity—virtues particularly valued in an era when ale and wine were consumed throughout the day. By 1700, London alone had more than two thousand coffeehouses, which had become inseparable from the era's intellectual and commercial life. Lloyd's of London, the famous insurance market, began as a coffeehouse frequented by merchants and maritime underwriters.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The economics of coffee production drove one of the earliest examples of global commodity trade. In the seventeenth century, the Ottoman Empire attempted to maintain a monopoly on coffee cultivation by prohibiting the export of fertile seeds. This restriction was eventually circumvented when Dutch traders smuggled living plants to Java in the 1690s, establishing the first major coffee plantation outside the Arab world. The Dutch later brought plants to South America, where conditions proved extraordinarily favourable for cultivation. By the nineteenth century, Brazil had emerged as the world's dominant coffee producer, a position it retains today.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The ecological impact of coffee's spread was considerable. In many regions, rainforest was cleared to make way for plantations, altering local biodiversity and contributing to soil erosion. Modern cultivation practices have shifted significantly: shade-grown coffee, which involves planting coffee beneath the canopy of native trees, has gained favour as an approach that preserves habitat for migratory birds and other wildlife while often improving the complexity of the bean's flavour.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models. Price volatility adds another layer of uncertainty. A harvest damaged by drought or disease in one major producing region can raise international prices, yet a later surplus can leave smallholders unable to cover their costs. Cooperatives try to reduce this exposure by sharing processing equipment, negotiating collectively, and selling beans with traceable origins. These arrangements do not eliminate market risk, but they can give growers more influence over when and how their crop is sold. Access to",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models. Price volatility adds another layer of uncertainty. A harvest damaged by drought or disease in one major producing region can raise international prices, yet a later surplus can leave smallholders unable to cover their costs. Cooperatives try to reduce this exposure by sharing processing equipment, negotiating collectively, and selling beans with traceable origins. These arrangements do not eliminate market risk, but they can give growers more influence over when and how their crop is sold. Access to",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. The International Dark-Sky Association campaigns globally for better lighting practices and designates certified dark-sky parks and communities where light pollution is strictly controlled. As of 2024, over two hundred such protected areas exist worldwide. However, the pace of progress remains slow relative to the expansion of global light pollution, which has been growing at approximately two percent per year. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved. Measuring progress is itself challenging. Satellite instruments record light directed upwards, whereas animals respond to brightness at ground level, colour, timing, and duration. Researchers therefore combine remote observations with field sensors and behavioural studies. This distinction matters because two towns with a similar glow from space may expose wildlife to very different conditions, depending on the lamps used and the hours during which they operate.",
+        "rationale": "The cited material contains the information matched to G; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Perhaps the most dramatic examples of light pollution's effects involve sea turtles. Female turtles have nested on the same beaches for millions of years, emerging from the sea under cover of darkness to lay their eggs in the sand. When hatchlings emerge, they orient themselves towards the brightest horizon—in natural conditions, the open sea, which reflects starlight and moonlight. On beaches adjacent to developed coastlines, however, the glow from hotels, streetlights, and parking lots draws hatchlings inland, where they become disorientated, dehydrated, and eventually die. In Florida, it is estimated that hundreds of thousands of hatchlings are lost this way each year, contributing to the threatened status of several turtle species.",
+        "rationale": "The cited material contains the information matched to C; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as \"fatal light attraction.\" The problem is concentrated around large cities during peak migration periods: in a single night in 2020, an estimated one thousand birds were killed after colliding with a single illuminated building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.",
+        "rationale": "The cited material contains the information matched to D; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.",
+        "rationale": "The cited material contains the information matched to F; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+        "rationale": "The cited material contains the information matched to E; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+        "rationale": "The cited material contains the information matched to B; the other labelled alternatives address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal species evolved over millions of years to exploit the opportunities offered by night: reduced competition, cooler temperatures, and safety from daytime predators. Artificial light disrupts these adaptations at a neurological level. Studies have shown that exposure to artificial light at night suppresses the production of melatonin, a hormone that regulates sleep-wake cycles in vertebrates and also plays roles in immune function, reproduction, and migration timing. Even relatively dim light can interfere with these biological processes.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. Perhaps the most dramatic examples of light pollution's effects involve sea turtles. Female turtles have nested on the same beaches for millions of years, emerging from the sea under cover of darkness to lay their eggs in the sand. When hatchlings emerge, they orient themselves towards the brightest horizon—in natural conditions, the open sea, which reflects starlight and moonlight. On beaches adjacent to developed coastlines, however, the glow from hotels, streetlights, and parking lots draws hatchlings inland, where they become disorientated, dehydrated, and eventually die. In Florida, it is estimated that hundreds of thousands of hatchlings are lost this way each year, contributing to the threatened status of several turtle species.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as \"fatal light attraction.\" The problem is concentrated around large cities during peak migration periods: in a single night in 2020, an estimated one thousand birds were killed after colliding with a single illuminated building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Beyond indecision, over-choice produces what researchers call \"anticipated regret\": the foreknowledge that, whatever one chooses, alternatives will linger as what might have been. Schwartz distinguishes between two types of decision-makers: \"maximisers,\" who feel compelled to evaluate every possible option before choosing, and \"satisficers,\" who select the first option that meets an acceptable standard. Paradoxically, maximisers—who by definition make more thorough decisions—report lower satisfaction with their choices than satisficers, precisely because they are more keenly aware of what they sacrificed.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "There is also a social dimension to the paradox. In an era of abundant choice, poor outcomes are increasingly attributed to individual failure rather than systemic constraint. If hundreds of career paths, hundreds of potential partners, and hundreds of possible lifestyles are theoretically available, then unhappiness becomes a personal indictment: you had every option, so you must have chosen wrong. This attribution of responsibility for outcomes to individual agency—rather than to structural factors such as economics or opportunity—has been linked by some researchers to rising rates of depression and anxiety in affluent societies.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all psychologists accept Schwartz's thesis uncritically. Subsequent research has complicated the picture. A meta-analysis by Scheibehenne, Greifeneder, and Todd in 2010, examining fifty experiments, found inconsistent evidence for the \"choice overload\" effect: in some studies, more choice actually enhanced satisfaction. The discrepancy may depend on context. When choosers are knowledgeable about a domain—experts selecting wine, for instance—additional options are more manageable and often welcome. Overload appears to be most damaging when options are complex, when choosers lack expertise, and when the decision has high personal stakes.",
+        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The psychologist Barry Schwartz, in his influential 2004 book The Paradox of Choice, drew on laboratory research to argue that excessive choice generates anxiety rather than liberation. When people face too many options, they experience what Schwartz calls \"decision fatigue\"—a depletion of cognitive resources that impairs subsequent decision-making. A study by Iyengar and Lepper, conducted in a supermarket, found that customers who encountered a display of twenty-four varieties of jam were significantly less likely to make a purchase than those offered only six. When choice exceeded a certain threshold, it became paralysing.",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all psychologists accept Schwartz's thesis uncritically. Subsequent research has complicated the picture. A meta-analysis by Scheibehenne, Greifeneder, and Todd in 2010, examining fifty experiments, found inconsistent evidence for the \"choice overload\" effect: in some studies, more choice actually enhanced satisfaction. The discrepancy may depend on context. When choosers are knowledgeable about a domain—experts selecting wine, for instance—additional options are more manageable and often welcome. Overload appears to be most damaging when options are complex, when choosers lack expertise, and when the decision has high personal stakes.",
+        "rationale": "The closest relevant material does not establish the proposition at the scope claimed, so NOT GIVEN is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Cross-cultural comparisons reveal further nuance. Research by Iyengar and colleagues found that choice preferences differ significantly between individualist and collectivist cultures. Participants from the United States, where autonomy and self-determination are central values, expressed stronger preferences for personal choice and derived greater pleasure from having made their own selections. Participants from collectivist cultures such as Japan or India showed less preference for individual choice and, in some experiments, performed better and more happily when choices were made for them by trusted others. These findings challenge the universality of choice as a value and suggest that its psychological effects are mediated by cultural context.",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The cited material contradicts the proposition or its stated scope, so the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The cited material directly states or unambiguously paraphrases the proposition, so the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Beyond indecision, over-choice produces what researchers call \"anticipated regret\": the foreknowledge that, whatever one chooses, alternatives will linger as what might have been. Schwartz distinguishes between two types of decision-makers: \"maximisers,\" who feel compelled to evaluate every possible option before choosing, and \"satisficers,\" who select the first option that meets an acceptable standard. Paradoxically, maximisers—who by definition make more thorough decisions—report lower satisfaction with their choices than satisficers, precisely because they are more keenly aware of what they sacrificed.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Cross-cultural comparisons reveal further nuance. Research by Iyengar and colleagues found that choice preferences differ significantly between individualist and collectivist cultures. Participants from the United States, where autonomy and self-determination are central values, expressed stronger preferences for personal choice and derived greater pleasure from having made their own selections. Participants from collectivist cultures such as Japan or India showed less preference for individual choice and, in some experiments, performed better and more happily when choices were made for them by trusted others. These findings challenge the universality of choice as a value and suggest that its psychological effects are mediated by cultural context.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The implications for policy and design are significant. Behavioural economists have proposed that \"choice architecture\"—the structure within which options are presented—can guide people toward better outcomes without removing freedom. Default settings, opt-out rather than opt-in arrangements, and the strategic reduction of trivial decisions (a phenomenon sometimes described as \"decision minimalism\") all represent attempts to preserve meaningful autonomy while reducing the cognitive burden of choice. Several governments have adopted such approaches in areas from organ donation to retirement savings, with measurable improvements in outcomes. The paradox of choice, it turns out, is not an argument against freedom but a call for more thoughtful design of the environments in which freedom is exercised. Good design also requires testing rather than assuming that one arrangement suits everyone. People may interpret defaults as recommendations, overlook an opt-out, or resist guidance they consider intrusive. Designers can compare completion",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-academic-keys-2-7"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "505f01a5e961e911f351a64c7728d4eb3fc8cccf8c6bef0da0b777c68c27f253",
+      "task1ImageSha256": "819818e38535292448dc8eaee18eb3dc747207bc1cae863eda9772a6e5e67a93"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "53e3e1687e9bad833623c33549959e0ecb5b6aeb3affe75fd592688ee041a3d5"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "a7892b694ee15b7781871f643cc4d9e9cb01e0b48b5071b73740e35c7cd3113c",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-5-objective-review.json",
+    "evidenceSha256": "6e256f77870b480b9df80539b8d128cd11b7eff0a4e8f972de09c5b9b76706aa",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-academic-keys-2-7"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "63ff143238f99345d5648b8d39cb5ecc4f12ad66ee88ecdde975e3baa06f7540"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "63b746fed47e2fa8a8de24d7d38128dfa0bb0b46584430ba82e56e3fe0ec8f2c",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

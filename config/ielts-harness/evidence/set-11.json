@@ -1,0 +1,1347 @@
+{
+  "schemaVersion": 1,
+  "set": 11,
+  "generatedFrom": {
+    "source": "src/data/mocks/ielts-set-11.ts",
+    "sourceSha256": "7314b119997d55b636b0852327f52b1993c81db80915827abe07f0444dd8491d",
+    "releaseFingerprintSha256": "f2762294a77c30c789d61f4608d12ae57dd8248f909aff738f6ff32e3896ea32"
+  },
+  "listening": {
+    "binding": {
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "transcriptSha256": "7775ef32734f8ffb8a9d2dbcb7841890c64e3e8920851ad752adcc1edd3d0012",
+      "objectiveSha256": "0c6e92f248cd5f079d8a4f1d263524e4ee81d2b055c06c57f6277d44840f771a"
+    },
+    "technicalQa": {
+      "status": "PASS",
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "evidencePath": "config/ielts-harness/audio-technical-verification.json",
+      "evidenceSha256": "3f8ce0a155c7181cdc78112c9dd2532ad1dc13a4b6d1612d1eaf403a961ee900"
+    },
+    "machineAlignment": {
+      "status": "PASS",
+      "method": "Q1_Q40_AUDIBLE_EVIDENCE",
+      "audioSha256": "0b526e3dc73c530915468f5892094b63e5ee8d31103c722616cf02683f97dc6e",
+      "transcriptSha256": "7775ef32734f8ffb8a9d2dbcb7841890c64e3e8920851ad752adcc1edd3d0012",
+      "evidencePath": "config/ielts-harness/listening-evidence/set-11-listening-evidence.json",
+      "evidenceSha256": "007b6a522e9df0e9dc3f22c31dee0e1b37787c5d93b64dd27700926a8220fd69"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "l1-form__1",
+        "part": 1,
+        "startSeconds": 103.436,
+        "endSeconds": 108.276,
+        "audiblePhrase": "It's 42 Red Hill Road, that's R-E-D-H-I-L-L.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 2,
+        "responseKey": "l1-form__2",
+        "part": 1,
+        "startSeconds": 126.4,
+        "endSeconds": 129,
+        "audiblePhrase": "Oh, no. Sorry. It was actually a magazine.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 3,
+        "responseKey": "l1-form__3",
+        "part": 1,
+        "startSeconds": 218.08,
+        "endSeconds": 219.8,
+        "audiblePhrase": "You'll learn how to control the light,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 4,
+        "responseKey": "l1-form__4",
+        "part": 1,
+        "startSeconds": 225.66,
+        "endSeconds": 227.74,
+        "audiblePhrase": "The sessions are held on Saturday morning.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 5,
+        "responseKey": "l1-form__5",
+        "part": 1,
+        "startSeconds": 268.28,
+        "endSeconds": 271.62,
+        "audiblePhrase": "For that one, the group travels out to a nearby lake",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 6,
+        "responseKey": "l1-form__6",
+        "part": 1,
+        "startSeconds": 273.74,
+        "endSeconds": 277.44,
+        "audiblePhrase": "One thing to note, each student must bring their own tripod",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 7,
+        "responseKey": "l1-table__7",
+        "part": 1,
+        "startSeconds": 326.7,
+        "endSeconds": 330.68,
+        "audiblePhrase": "It costs £120 and that price includes lunch.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 8,
+        "responseKey": "l1-table__8",
+        "part": 1,
+        "startSeconds": 326.7,
+        "endSeconds": 330.68,
+        "audiblePhrase": "It costs £120 and that price includes lunch.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 9,
+        "responseKey": "l1-table__9",
+        "part": 1,
+        "startSeconds": 332.6,
+        "endSeconds": 336.32,
+        "audiblePhrase": "The landscape workshop runs over two sessions of five hours each.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 10,
+        "responseKey": "l1-table__10",
+        "part": 1,
+        "startSeconds": 336.92,
+        "endSeconds": 341.72,
+        "audiblePhrase": "That one is £150 and the price includes transport to the lake.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 11,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 495.701,
+        "endSeconds": 537.071,
+        "audiblePhrase": "Good morning everyone and welcome to the backstage tour of the Regent Theatre. Before we set off, let me mention the improvements we've made this year. We've installed a completely new lighting system above the stage, which is now fully computer controlled. We've also refurbished the dressing rooms downstairs, which the actors are delighted with. Now some of you asked about the main auditorium. I'm afraid we can't alter that as the building is protected and the little cafe by the entrance is exactly as it has always been. The box office hasn't changed either though we do hope to modernize it next year. The new equipment above the stage uses less",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 12,
+        "responseKey": "l2-multi",
+        "part": 2,
+        "startSeconds": 495.701,
+        "endSeconds": 537.071,
+        "audiblePhrase": "Good morning everyone and welcome to the backstage tour of the Regent Theatre. Before we set off, let me mention the improvements we've made this year. We've installed a completely new lighting system above the stage, which is now fully computer controlled. We've also refurbished the dressing rooms downstairs, which the actors are delighted with. Now some of you asked about the main auditorium. I'm afraid we can't alter that as the building is protected and the little cafe by the entrance is exactly as it has always been. The box office hasn't changed either though we do hope to modernize it next year. The new equipment above the stage uses less",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 13,
+        "responseKey": "l2-form__13",
+        "part": 2,
+        "startSeconds": 584.5,
+        "endSeconds": 588.48,
+        "audiblePhrase": "The region is a medium sized venue and can seat 900 people.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 14,
+        "responseKey": "l2-form__14",
+        "part": 2,
+        "startSeconds": 592.76,
+        "endSeconds": 593.76,
+        "audiblePhrase": "It's made of pine.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 15,
+        "responseKey": "l2-form__15",
+        "part": 2,
+        "startSeconds": 648,
+        "endSeconds": 655.2,
+        "audiblePhrase": "Using a system of ropes and pulleys, the crew can raise and lower the scenery quickly between scenes,",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 16,
+        "responseKey": "l2-form__16",
+        "part": 2,
+        "startSeconds": 750,
+        "endSeconds": 754.46,
+        "audiblePhrase": "It's simply the comfortable space where the actors relax while they wait to go on.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 17,
+        "responseKey": "l2-form__17",
+        "part": 2,
+        "startSeconds": 757.14,
+        "endSeconds": 765.1,
+        "audiblePhrase": "This is where a small team of skilled staff design and make all the costumes for each production, often by hand.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 18,
+        "responseKey": "l2-form__18",
+        "part": 2,
+        "startSeconds": 768.66,
+        "endSeconds": 774.42,
+        "audiblePhrase": "In the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 19,
+        "responseKey": "l2-form__19",
+        "part": 2,
+        "startSeconds": 778.02,
+        "endSeconds": 785.16,
+        "audiblePhrase": "The large room at the back is the workshop, where the carpenters build the set, everything from walls to furniture.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 20,
+        "responseKey": "l2-form__20",
+        "part": 2,
+        "startSeconds": 825.68,
+        "endSeconds": 831.98,
+        "audiblePhrase": "And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 21,
+        "responseKey": "l3q21",
+        "part": 3,
+        "startSeconds": 971.18,
+        "endSeconds": 979.2,
+        "audiblePhrase": "Well, your central claim is that individual action alone isn't enough. That governments and manufacturers have to take the lead. That came through very strongly.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 22,
+        "responseKey": "l3q22",
+        "part": 3,
+        "startSeconds": 1019.237,
+        "endSeconds": 1036.193,
+        "audiblePhrase": "And the writing itself is clear and well organised. What impressed me most though was your use of real examples. The case study of the deposit return scheme in Germany was excellent. I found that really interesting to research. The German case",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 23,
+        "responseKey": "l3q23",
+        "part": 3,
+        "startSeconds": 1064.84,
+        "endSeconds": 1076.26,
+        "audiblePhrase": "Now there is one weakness. Some of your statistics are quite old. A few of your sources date back to 2009. For a topic that moves this fast, you really need more recent data.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 24,
+        "responseKey": "l3q24",
+        "part": 3,
+        "startSeconds": 1080.72,
+        "endSeconds": 1093.92,
+        "audiblePhrase": "I understand, but do update them. Also, I'd suggest reorganizing the middle section. At the moment, you present all the problems and then all the solutions. It would be stronger to pair each problem with its solution as you go.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 25,
+        "responseKey": "l3q25",
+        "part": 3,
+        "startSeconds": 1176.36,
+        "endSeconds": 1190.62,
+        "audiblePhrase": "That link supports your central position. Exactly. One more thing. Your conclusion is a little short. You introduce an interesting idea about consumer behavior right at the end, but you don't develop it. I'd move that into the main body.",
+        "rationale": "The timed ASR window reproduces the academic review excerpt that supports the keyed selection and dismisses its distractors.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 26,
+        "responseKey": "l3-form__26",
+        "part": 3,
+        "startSeconds": 1072.36,
+        "endSeconds": 1076.26,
+        "audiblePhrase": "For a topic that moves this fast, you really need more recent data.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 27,
+        "responseKey": "l3-form__27",
+        "part": 3,
+        "startSeconds": 1236.62,
+        "endSeconds": 1244.14,
+        "audiblePhrase": "Second, I'd like you to add a diagram showing how much plastic is recycled. A visual really helps the reader.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 28,
+        "responseKey": "l3-form__28",
+        "part": 3,
+        "startSeconds": 1244.14,
+        "endSeconds": 1253.16,
+        "audiblePhrase": "Then check your referencing because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 29,
+        "responseKey": "l3-form__29",
+        "part": 3,
+        "startSeconds": 1244.14,
+        "endSeconds": 1253.16,
+        "audiblePhrase": "Then check your referencing because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 30,
+        "responseKey": "l3-form__30",
+        "part": 3,
+        "startSeconds": 1253.96,
+        "endSeconds": 1260.2,
+        "audiblePhrase": "And finally, send me the revised draft by email so I can look at it again before you submit.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 31,
+        "responseKey": "l4-form__31",
+        "part": 4,
+        "startSeconds": 1403.14,
+        "endSeconds": 1410.38,
+        "audiblePhrase": "Contrary to popular belief, most of an aqueduct's length ran not on those famous arches, but underground, hidden beneath the ground.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 32,
+        "responseKey": "l4-form__32",
+        "part": 4,
+        "startSeconds": 1451.04,
+        "endSeconds": 1454.5,
+        "audiblePhrase": "The whole system depended on a single simple force, gravity.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 33,
+        "responseKey": "l4-form__33",
+        "part": 4,
+        "startSeconds": 1465.98,
+        "endSeconds": 1471.94,
+        "audiblePhrase": "If it was too shallow, the water stopped moving and turned stagnant. The required gradient could be remarkably small.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 34,
+        "responseKey": "l4-form__34",
+        "part": 4,
+        "startSeconds": 1507.62,
+        "endSeconds": 1515.04,
+        "audiblePhrase": "To measure these tiny gradients, surveyors used a long wooden instrument filled with water that acted as a level.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 35,
+        "responseKey": "l4-form__35",
+        "part": 4,
+        "startSeconds": 1595.28,
+        "endSeconds": 1601.36,
+        "audiblePhrase": "The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 36,
+        "responseKey": "l4-form__36",
+        "part": 4,
+        "startSeconds": 1606.42,
+        "endSeconds": 1614.8,
+        "audiblePhrase": "The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 37,
+        "responseKey": "l4-form__37",
+        "part": 4,
+        "startSeconds": 1652.92,
+        "endSeconds": 1661.96,
+        "audiblePhrase": "A serious problem was the buildup of lime, a hard mineral deposit left by the water, which gradually narrowed the channel and had to be chipped away by hand.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 38,
+        "responseKey": "l4-form__38",
+        "part": 4,
+        "startSeconds": 1662.36,
+        "endSeconds": 1669.92,
+        "audiblePhrase": "The official placed in overall charge of the entire water supply held the important title of curator, a highly respected public office.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 39,
+        "responseKey": "l4-form__39",
+        "part": 4,
+        "startSeconds": 1697.26,
+        "endSeconds": 1703.76,
+        "audiblePhrase": "Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      },
+      {
+        "question": 40,
+        "responseKey": "l4-form__40",
+        "part": 4,
+        "startSeconds": 1710.42,
+        "endSeconds": 1715.4,
+        "audiblePhrase": "It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later.",
+        "rationale": "The academic review identifies the answer evidence, and the ASR exact match locates that supporting phrase in the published recording.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "qa-agent",
+          "id": "codex-listening-evidence-q1-q40"
+        },
+        "reviewedAt": "2026-09-12"
+      }
+    ]
+  },
+  "reading": {
+    "binding": {
+      "readingSha256": "fe001992dff079690fcd06fa8f274ba205448c1e047a38f8f14f7c17fbb75502",
+      "objectiveSha256": "0c6e92f248cd5f079d8a4f1d263524e4ee81d2b055c06c57f6277d44840f771a"
+    },
+    "questions": [
+      {
+        "question": 1,
+        "responseKey": "r1-tfng__1",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground, a precaution against both enemy attack and evaporation. Over the following five centuries, ten further aqueducts were constructed, eventually supplying water from sources up to ninety kilometres away. The most celebrated, the Aqua Claudia and the Anio Novus, were completed under the Emperor Claudius in 52 CE. These structures stretched for over sixty kilometres and carried water across dramatic valleys on soaring arcaded bridges, many of which still stand today.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 2,
+        "responseKey": "r1-tfng__2",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground, a precaution against both enemy attack and evaporation. Over the following five centuries, ten further aqueducts were constructed, eventually supplying water from sources up to ninety kilometres away. The most celebrated, the Aqua Claudia and the Anio Novus, were completed under the Emperor Claudius in 52 CE. These structures stretched for over sixty kilometres and carried water across dramatic valleys on soaring arcaded bridges, many of which still stand today.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 3,
+        "responseKey": "r1-tfng__3",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 4,
+        "responseKey": "r1-tfng__4",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 5,
+        "responseKey": "r1-tfng__5",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 6,
+        "responseKey": "r1-tfng__6",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 7,
+        "responseKey": "r1-tfng__7",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 8,
+        "responseKey": "r1-sent__8",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 9,
+        "responseKey": "r1-sent__9",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 10,
+        "responseKey": "r1-sent__10",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 11,
+        "responseKey": "r1-sent__11",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 12,
+        "responseKey": "r1-sent__12",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 13,
+        "responseKey": "r1-sent__13",
+        "responseKind": "fill",
+        "passagePart": 1,
+        "paragraph": "Reviewed passage 1",
+        "sourceExcerpt": "The eventual decline of Rome's water supply was less a story of engineering failure than of political collapse. As central authority weakened during the third and fourth centuries CE, maintenance became increasingly difficult. Invading armies cut or damaged aqueducts deliberately, knowing that disrupting water supply would hasten surrender. By the sixth century, only a fraction of the aqueducts remained operational, and Rome's population had fallen to perhaps thirty thousand. The infrastructure was not meaningfully restored until the Renaissance, when popes began rebuilding aqueducts to supply the growing city and, less nobly, to power the elaborate fountain displays that became symbols of papal prestige.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 14,
+        "responseKey": "r2-match__14",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. At a systemic level, the most durable solutions involve rethinking the materials and geometry of urban design. Orienting streets to allow prevailing winds to penetrate the city fabric can improve ventilation significantly. Limiting the height and density of buildings in key corridors can reduce the \"canyon effect,\" in which tall buildings trap heat radiating from the street. Long-term, the integration of urban heat island mitigation into planning regulations and building codes represents the most powerful tool available to cities facing a warming future—one in which climate change is expected to intensify the UHI effect by raising baseline temperatures across the globe.",
+        "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 15,
+        "responseKey": "r2-match__15",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "F. Water features also play a role that is frequently underestimated. Fountains, ponds, and water channels cool the air through evaporation, and several cities—including Medellín in Colombia and Seville in Spain—have incorporated water-based cooling into their heat mitigation strategies. Seville has experimented with deploying misting systems in pedestrian areas during summer months, generating local temperature reductions of up to eight degrees in public spaces. These interventions, while effective, are costly and require ongoing maintenance and water supply, which may be scarce in the drier climates most vulnerable to heat stress.",
+        "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 16,
+        "responseKey": "r2-match__16",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+        "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 17,
+        "responseKey": "r2-match__17",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "D. The economic costs are equally significant. Higher temperatures drive up demand for air conditioning, increasing electricity consumption and placing strain on power grids during peak periods. A study in Los Angeles found that each additional degree Celsius of urban warming increased peak electricity demand by approximately two percent. This cycle reinforces the UHI effect itself: as buildings consume more energy to cool their interiors, they discharge more heat into the surrounding streets. The additional burden on power infrastructure also raises the risk of blackouts during extreme heat events.",
+        "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 18,
+        "responseKey": "r2-match__18",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "A. Cities are measurably warmer than the rural areas that surround them. This phenomenon, known as the urban heat island (UHI) effect, was first documented systematically by the English chemist Luke Howard in the early nineteenth century, who observed that London's city centre was consistently warmer than the countryside around it. Today, the temperature difference between a large city and its rural surroundings can exceed ten degrees Celsius on calm, clear nights, with profound consequences for public health, energy consumption, and environmental quality.",
+        "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 19,
+        "responseKey": "r2-match__19",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Urban planners and researchers have identified several strategies to reduce the UHI effect. Increasing the proportion of green space—through parks, street trees, and green roofs—can lower surface temperatures significantly. Trees are particularly effective: a mature street tree can reduce the ambient temperature of its immediate surroundings by several degrees through shading and evapotranspiration. Placement matters because shade over a pavement, bus stop, or building can reduce direct exposure where people actually spend time. Young trees need years, water, and maintenance before providing the same benefit, and poorly selected species may struggle in compacted urban soil. Studies in cities from Singapore to Phoenix have demonstrated that well-designed parks create measurable \"cool islands\" that extend beyond their physical boundaries. Cool pavements and reflective roofing materials, which reflect rather than absorb solar radiation, offer additional benefits.",
+        "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 20,
+        "responseKey": "r2-match__20",
+        "responseKind": "match",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "C. The health consequences of elevated urban temperatures are well established. During heat waves, cities experience disproportionately high mortality rates relative to rural areas. The European heat wave of 2003 killed an estimated seventy thousand people across the continent, with the elderly and those without access to air conditioning at greatest risk. Urban heat is also associated with increased levels of ground-level ozone, which forms when sunlight reacts with pollutants—a process accelerated by higher temperatures. Ozone causes respiratory irritation and is linked to long-term lung damage and increased rates of asthma, particularly in children.",
+        "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 21,
+        "responseKey": "r2-sum__21",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 22,
+        "responseKey": "r2-sum__22",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 23,
+        "responseKey": "r2-sum__23",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 24,
+        "responseKey": "r2-sum__24",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 25,
+        "responseKey": "r2-sum__25",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "E. Urban planners and researchers have identified several strategies to reduce the UHI effect. Increasing the proportion of green space—through parks, street trees, and green roofs—can lower surface temperatures significantly. Trees are particularly effective: a mature street tree can reduce the ambient temperature of its immediate surroundings by several degrees through shading and evapotranspiration. Placement matters because shade over a pavement, bus stop, or building can reduce direct exposure where people actually spend time. Young trees need years, water, and maintenance before providing the same benefit, and poorly selected species may struggle in compacted urban soil. Studies in cities from Singapore to Phoenix have demonstrated that well-designed parks create measurable \"cool islands\" that extend beyond their physical boundaries. Cool pavements and reflective roofing materials, which reflect rather than absorb solar radiation, offer additional benefits.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 26,
+        "responseKey": "r2-sum__26",
+        "responseKind": "fill",
+        "passagePart": 2,
+        "paragraph": "Reviewed passage 2",
+        "sourceExcerpt": "G. At a systemic level, the most durable solutions involve rethinking the materials and geometry of urban design. Orienting streets to allow prevailing winds to penetrate the city fabric can improve ventilation significantly. Limiting the height and density of buildings in key corridors can reduce the \"canyon effect,\" in which tall buildings trap heat radiating from the street. Long-term, the integration of urban heat island mitigation into planning regulations and building codes represents the most powerful tool available to cities facing a warming future—one in which climate change is expected to intensify the UHI effect by raising baseline temperatures across the globe.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 27,
+        "responseKey": "r3-q27",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 28,
+        "responseKey": "r3-q28",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The anchoring effect describes the tendency for an initial piece of information to disproportionately influence subsequent judgements. In one famous experiment, subjects were asked to spin a wheel that was rigged to stop at either ten or sixty-five, then estimate what percentage of African countries belonged to the United Nations. Those who spun a high number gave systematically higher estimates than those who had spun a low number—despite the complete irrelevance of the spin. People often adjust away from an initial value, but the adjustment tends to be insufficient, leaving the final judgement closer to the anchor than the evidence warrants. Even awareness that a starting number is arbitrary may not remove its influence completely. Anchoring influences price negotiations, legal sentences, and medical prognoses, often with substantial real-world consequences.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 29,
+        "responseKey": "r3-q29",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "A third bias—availability heuristic—leads people to judge the likelihood of events based on how easily examples come to mind. Events that are dramatic, recent, or frequently covered in media are perceived as more probable than quieter, more common events. After a well-publicised plane crash, fear of flying spikes even as driving—statistically more dangerous—does not attract comparable anxiety. Conversely, slow-developing risks such as poor diet or sedentary behaviour, which cause the majority of premature deaths, may be chronically underestimated precisely because they generate no memorable events.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 30,
+        "responseKey": "r3-q30",
+        "responseKind": "mcq",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+        "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 31,
+        "responseKey": "r3-ynng__31",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+        "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 32,
+        "responseKey": "r3-ynng__32",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the most widely studied biases is confirmation bias: the tendency to search for, interpret, and recall information in a way that confirms one's pre-existing beliefs. Studies consistently show that people evaluate identical evidence more favourably when it supports their views and more critically when it contradicts them. The bias can enter at several stages: a person may choose sources likely to agree, demand stronger proof from an opposing claim, or remember supportive examples more readily afterwards. Greater access to information does not automatically solve the problem if selection itself is biased. This asymmetry has significant consequences in contexts ranging from medical diagnosis—where clinicians may too readily accept initial assessments—to political belief, where exposure to contradictory information can, paradoxically, entrench rather than revise opinion.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 33,
+        "responseKey": "r3-ynng__33",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Human beings like to think of themselves as rational agents: creatures who weigh evidence, consider alternatives, and reach conclusions through careful deliberation. Research in cognitive psychology and behavioural economics over the past half-century has painted a considerably more complicated picture. Our thinking is shaped, often without our awareness, by a range of systematic errors known as cognitive biases—predictable patterns of deviation from logical reasoning that affect individuals across cultures and educational levels.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 34,
+        "responseKey": "r3-ynng__34",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all researchers accept that biases are as universal or as harmful as the standard account implies. Gerd Gigerenzer, a German psychologist, has argued that many so-called biases are actually ecological rationality in action: heuristics that perform well in the environments in which they evolved. A doctor who relies on a simple decision rule—such as admitting all patients with two or more risk factors—may outperform a statistical algorithm that weighs hundreds of variables, precisely because the simpler rule avoids overfitting to noisy data. Gigerenzer's view is that the bias literature too often tests human reasoning against an inappropriate standard of formal logic and ignores the practical value of fast and frugal thinking.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 35,
+        "responseKey": "r3-ynng__35",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+        "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 36,
+        "responseKey": "r3-ynng__36",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+        "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 37,
+        "responseKey": "r3-sent__37",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "One of the most widely studied biases is confirmation bias: the tendency to search for, interpret, and recall information in a way that confirms one's pre-existing beliefs. Studies consistently show that people evaluate identical evidence more favourably when it supports their views and more critically when it contradicts them. The bias can enter at several stages: a person may choose sources likely to agree, demand stronger proof from an opposing claim, or remember supportive examples more readily afterwards. Greater access to information does not automatically solve the problem if selection itself is biased. This asymmetry has significant consequences in contexts ranging from medical diagnosis—where clinicians may too readily accept initial assessments—to political belief, where exposure to contradictory information can, paradoxically, entrench rather than revise opinion.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 38,
+        "responseKey": "r3-sent__38",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "Not all researchers accept that biases are as universal or as harmful as the standard account implies. Gerd Gigerenzer, a German psychologist, has argued that many so-called biases are actually ecological rationality in action: heuristics that perform well in the environments in which they evolved. A doctor who relies on a simple decision rule—such as admitting all patients with two or more risk factors—may outperform a statistical algorithm that weighs hundreds of variables, precisely because the simpler rule avoids overfitting to noisy data. Gigerenzer's view is that the bias literature too often tests human reasoning against an inappropriate standard of formal logic and ignores the practical value of fast and frugal thinking.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 39,
+        "responseKey": "r3-sent__39",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      },
+      {
+        "question": 40,
+        "responseKey": "r3-sent__40",
+        "responseKind": "fill",
+        "passagePart": 3,
+        "paragraph": "Reviewed passage 3",
+        "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+        "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "academic-agent",
+          "id": "codex-audit-harness"
+        },
+        "reviewedAt": "2026-09-09"
+      }
+    ]
+  },
+  "writing": {
+    "binding": {
+      "writingSha256": "c3c4b04cd51e8ab35177157f223f1ffdcbb6893638216e33e102c5b897ac198d",
+      "task1ImageSha256": "25895856d7923ad780ca0a7ea8153f3ac85cfeb3e2676015b71dae746b9ed421"
+    },
+    "tasks": [
+      {
+        "task": 1,
+        "checks": {
+          "visualMatchesPrompt": true,
+          "titleOrSubject": true,
+          "unitsWhereApplicable": true,
+          "datesWhereApplicable": true,
+          "legendOrStages": true,
+          "legibility": true,
+          "minWords150": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "No findings."
+      },
+      {
+        "task": 2,
+        "checks": {
+          "promptComplete": true,
+          "responseModeClear": true,
+          "wordLimit250": true,
+          "wordingReviewed": true
+        },
+        "status": "APPROVED",
+        "reviewer": {
+          "kind": "agent",
+          "id": "codex-primary-writing-review"
+        },
+        "reviewedAt": "2026-09-09",
+        "notes": "Prompt semantics and response mode reviewed."
+      }
+    ]
+  },
+  "speaking": {
+    "status": "APPROVED",
+    "binding": {
+      "speakingSha256": "db7eb7b4374ab4b47918e1374bd0a0212ba9b0e131341adeac68087fe80b291a"
+    },
+    "checks": {
+      "threeOrderedParts": true,
+      "part1Breadth": true,
+      "part2CueCard": true,
+      "part3Breadth": true,
+      "part2ToPart3TopicContinuity": true,
+      "examAppropriatePrompts": true
+    },
+    "reviewer": {
+      "kind": "agent",
+      "id": "codex-primary-speaking-review"
+    },
+    "reviewedAt": "2026-09-09",
+    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
+    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+  },
+  "objectiveKey": {
+    "status": "APPROVED",
+    "objectiveSha256": "0c6e92f248cd5f079d8a4f1d263524e4ee81d2b055c06c57f6277d44840f771a",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-11-objective-review.json",
+    "evidenceSha256": "244a3a90c536b3e650ef28ff654dee409d2d9ccbe056f1bdba24518894570d1c",
+    "reviewer": {
+      "kind": "academic-agent",
+      "id": "codex-audit-harness"
+    },
+    "reviewedAt": "2026-09-09"
+  },
+  "ux": {
+    "status": "APPROVED",
+    "binding": {
+      "contentSha256": "53fc7d54678a5cea9afe85aa7fa5b1675f8ce9a3eb49bad52af059ebcdc9c7a1"
+    },
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "reviewer": {
+      "kind": "ux-agent",
+      "id": "codex-ielts-runtime-review"
+    },
+    "reviewedAt": "2026-09-12",
+    "evidencePath": "config/ielts-harness/ux-runtime-review.json",
+    "evidenceSha256": "3b5987b0332cf33a2f5e5ad99ac6af33d0e21c2dd723d7441445335536928a33"
+  },
+  "releaseApproval": {
+    "status": "PENDING",
+    "releaseFingerprintSha256": "f2762294a77c30c789d61f4608d12ae57dd8248f909aff738f6ff32e3896ea32",
+    "reviewer": {
+      "kind": "human",
+      "id": ""
+    },
+    "reviewedAt": ""
+  }
+}

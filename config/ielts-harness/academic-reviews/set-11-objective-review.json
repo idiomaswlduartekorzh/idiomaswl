@@ -1,0 +1,3539 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "scope": "independent_academic_objective_key_review",
+  "set": 11,
+  "mockId": "set-11",
+  "contentVersionAtReview": "ielts-set-11-v4",
+  "reviewedAt": "2026-09-09",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "codex-audit-harness"
+  },
+  "methodology": [
+    "Listening was checked against the transcript selected by the product registry, including the legacy replacement overlay for Sets 8 and 10-12 and the production overlay for Set 13.",
+    "Reading completions, matching, MCQ and TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN judgements were checked against the effective passage text.",
+    "Every keyed selection was reviewed against all distractors; every completion was checked for literal evidence and the printed word limit.",
+    "The review records an identified academic-agent review and does not represent human or official IELTS certification."
+  ],
+  "binding": {
+    "objectiveSha256": "0c6e92f248cd5f079d8a4f1d263524e4ee81d2b055c06c57f6277d44840f771a",
+    "listeningMaterialSha256": "b43c4a9da61917439047a81005c61fefd32399f4947aa515cd3fa5979765fad1",
+    "readingMaterialSha256": "dd69cb5cb2818972a667ad4532684e7c747a5ec4019288e7a419111fbcc9f108",
+    "objectiveMaterialSha256": "2aaa3ca110de07140c7def50c5961b06bfb49455081da93b3ba73746591f5bb0"
+  },
+  "summary": {
+    "responseRows": 79,
+    "objectivePoints": 80,
+    "listeningPoints": 40,
+    "readingPoints": 40,
+    "supportedPoints": 80,
+    "ambiguousPoints": 0
+  },
+  "objectiveRows": [
+    {
+      "skill": "listening",
+      "number": 1,
+      "kind": "fill",
+      "key": "l1-form__1",
+      "accepted": [
+        "Redhill",
+        "redhill"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 2,
+      "kind": "fill",
+      "key": "l1-form__2",
+      "accepted": [
+        "magazine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 3,
+      "kind": "fill",
+      "key": "l1-form__3",
+      "accepted": [
+        "light"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 4,
+      "kind": "fill",
+      "key": "l1-form__4",
+      "accepted": [
+        "morning"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 5,
+      "kind": "fill",
+      "key": "l1-form__5",
+      "accepted": [
+        "lake"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 6,
+      "kind": "fill",
+      "key": "l1-form__6",
+      "accepted": [
+        "tripod"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 7,
+      "kind": "fill",
+      "key": "l1-table__7",
+      "accepted": [
+        "120",
+        "£120"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 8,
+      "kind": "fill",
+      "key": "l1-table__8",
+      "accepted": [
+        "lunch"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 9,
+      "kind": "fill",
+      "key": "l1-table__9",
+      "accepted": [
+        "2",
+        "two"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 10,
+      "kind": "fill",
+      "key": "l1-table__10",
+      "accepted": [
+        "transport"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 11,
+      "kind": "multiselect",
+      "key": "l2-multi",
+      "accepted": [
+        "A",
+        "D"
+      ],
+      "weight": 2,
+      "options": {
+        "A": "A. the lighting system",
+        "B": "B. the main auditorium",
+        "C": "C. the café",
+        "D": "D. the dressing rooms",
+        "E": "E. the box office"
+      }
+    },
+    {
+      "skill": "listening",
+      "number": 13,
+      "kind": "fill",
+      "key": "l2-form__13",
+      "accepted": [
+        "900"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 14,
+      "kind": "fill",
+      "key": "l2-form__14",
+      "accepted": [
+        "pine"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 15,
+      "kind": "fill",
+      "key": "l2-form__15",
+      "accepted": [
+        "scenery"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 16,
+      "kind": "fill",
+      "key": "l2-form__16",
+      "accepted": [
+        "relax",
+        "wait"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 17,
+      "kind": "fill",
+      "key": "l2-form__17",
+      "accepted": [
+        "costumes",
+        "costume"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 18,
+      "kind": "fill",
+      "key": "l2-form__18",
+      "accepted": [
+        "safety curtain",
+        "curtain",
+        "iron curtain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 19,
+      "kind": "fill",
+      "key": "l2-form__19",
+      "accepted": [
+        "workshop"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 20,
+      "kind": "fill",
+      "key": "l2-form__20",
+      "accepted": [
+        "posters",
+        "poster",
+        "souvenirs"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 21,
+      "kind": "mcq",
+      "key": "l3q21",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "Individual action alone is not enough to solve plastic waste.",
+        "Recycling schemes are too expensive for most governments.",
+        "Consumers are mainly to blame for plastic pollution."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 22,
+      "kind": "mcq",
+      "key": "l3q22",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "the clarity of the writing",
+        "the use of real examples",
+        "the length of the essay"
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 23,
+      "kind": "mcq",
+      "key": "l3q23",
+      "accepted": [
+        0
+      ],
+      "weight": 1,
+      "options": [
+        "Some of the statistics are out of date.",
+        "The main argument is hard to follow.",
+        "There are too few examples."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 24,
+      "kind": "mcq",
+      "key": "l3q24",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It should be made considerably shorter.",
+        "Each problem should be paired with its solution.",
+        "It should contain more statistics."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 25,
+      "kind": "mcq",
+      "key": "l3q25",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "It simply repeats points from the introduction.",
+        "It contains an idea that belongs in the main body.",
+        "It is the strongest part of the essay."
+      ]
+    },
+    {
+      "skill": "listening",
+      "number": 26,
+      "kind": "fill",
+      "key": "l3-form__26",
+      "accepted": [
+        "figures",
+        "data"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 27,
+      "kind": "fill",
+      "key": "l3-form__27",
+      "accepted": [
+        "diagram"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 28,
+      "kind": "fill",
+      "key": "l3-form__28",
+      "accepted": [
+        "referencing",
+        "citations"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 29,
+      "kind": "fill",
+      "key": "l3-form__29",
+      "accepted": [
+        "aloud"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 30,
+      "kind": "fill",
+      "key": "l3-form__30",
+      "accepted": [
+        "email"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 31,
+      "kind": "fill",
+      "key": "l4-form__31",
+      "accepted": [
+        "ground"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 32,
+      "kind": "fill",
+      "key": "l4-form__32",
+      "accepted": [
+        "gravity"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 33,
+      "kind": "fill",
+      "key": "l4-form__33",
+      "accepted": [
+        "stagnant"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 34,
+      "kind": "fill",
+      "key": "l4-form__34",
+      "accepted": [
+        "level"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 35,
+      "kind": "fill",
+      "key": "l4-form__35",
+      "accepted": [
+        "cement"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 36,
+      "kind": "fill",
+      "key": "l4-form__36",
+      "accepted": [
+        "fountains",
+        "fountain"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 37,
+      "kind": "fill",
+      "key": "l4-form__37",
+      "accepted": [
+        "lime",
+        "limescale"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 38,
+      "kind": "fill",
+      "key": "l4-form__38",
+      "accepted": [
+        "curator"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 39,
+      "kind": "fill",
+      "key": "l4-form__39",
+      "accepted": [
+        "supply"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "number": 40,
+      "kind": "fill",
+      "key": "l4-form__40",
+      "accepted": [
+        "Renaissance"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 1,
+      "kind": "fill",
+      "key": "r1-tfng__1",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 2,
+      "kind": "fill",
+      "key": "r1-tfng__2",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 3,
+      "kind": "fill",
+      "key": "r1-tfng__3",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 4,
+      "kind": "fill",
+      "key": "r1-tfng__4",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 5,
+      "kind": "fill",
+      "key": "r1-tfng__5",
+      "accepted": [
+        "FALSE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 6,
+      "kind": "fill",
+      "key": "r1-tfng__6",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 7,
+      "kind": "fill",
+      "key": "r1-tfng__7",
+      "accepted": [
+        "TRUE"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 8,
+      "kind": "fill",
+      "key": "r1-sent__8",
+      "accepted": [
+        "chorobates"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 9,
+      "kind": "fill",
+      "key": "r1-sent__9",
+      "accepted": [
+        "inverted siphon"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 10,
+      "kind": "fill",
+      "key": "r1-sent__10",
+      "accepted": [
+        "highest"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 11,
+      "kind": "fill",
+      "key": "r1-sent__11",
+      "accepted": [
+        "Cloaca Maxima"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 12,
+      "kind": "fill",
+      "key": "r1-sent__12",
+      "accepted": [
+        "water infrastructure"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 13,
+      "kind": "fill",
+      "key": "r1-sent__13",
+      "accepted": [
+        "invading armies"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 14,
+      "kind": "match",
+      "key": "r2-match__14",
+      "accepted": [
+        "G"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 15,
+      "kind": "match",
+      "key": "r2-match__15",
+      "accepted": [
+        "F"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 16,
+      "kind": "match",
+      "key": "r2-match__16",
+      "accepted": [
+        "B"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 17,
+      "kind": "match",
+      "key": "r2-match__17",
+      "accepted": [
+        "D"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 18,
+      "kind": "match",
+      "key": "r2-match__18",
+      "accepted": [
+        "A"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 19,
+      "kind": "match",
+      "key": "r2-match__19",
+      "accepted": [
+        "E"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 20,
+      "kind": "match",
+      "key": "r2-match__20",
+      "accepted": [
+        "C"
+      ],
+      "weight": 1,
+      "options": {
+        "A": "A. Paragraph A",
+        "B": "B. Paragraph B",
+        "C": "C. Paragraph C",
+        "D": "D. Paragraph D",
+        "E": "E. Paragraph E",
+        "F": "F. Paragraph F",
+        "G": "G. Paragraph G"
+      }
+    },
+    {
+      "skill": "reading",
+      "number": 21,
+      "kind": "fill",
+      "key": "r2-sum__21",
+      "accepted": [
+        "albedo"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 22,
+      "kind": "fill",
+      "key": "r2-sum__22",
+      "accepted": [
+        "air conditioning"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 23,
+      "kind": "fill",
+      "key": "r2-sum__23",
+      "accepted": [
+        "rural"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 24,
+      "kind": "fill",
+      "key": "r2-sum__24",
+      "accepted": [
+        "air conditioning"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 25,
+      "kind": "fill",
+      "key": "r2-sum__25",
+      "accepted": [
+        "trees"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 26,
+      "kind": "fill",
+      "key": "r2-sum__26",
+      "accepted": [
+        "density"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 27,
+      "kind": "mcq",
+      "key": "r3-q27",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "System 1 is used mainly for mathematical calculations, while System 2 handles emotional responses.",
+        "System 1 is rapid and automatic, while System 2 is slower and more deliberate.",
+        "System 2 is faster but less accurate than System 1.",
+        "System 1 is the dominant system used in complex, high-stakes decisions."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 28,
+      "kind": "mcq",
+      "key": "r3-q28",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "People are unable to estimate statistical information accurately.",
+        "An irrelevant initial number can significantly distort later numerical judgements.",
+        "High numbers always produce more accurate estimates than low numbers.",
+        "Anchoring bias only applies to tasks involving geography."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 29,
+      "kind": "mcq",
+      "key": "r3-q29",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "People accurately reassess the risk of flying after hearing of a crash.",
+        "The drama of crashes makes flying seem more dangerous than driving, despite the statistics.",
+        "People increase their fear of driving after hearing about aviation accidents.",
+        "The heuristic causes people to underestimate all forms of transport risk."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 30,
+      "kind": "mcq",
+      "key": "r3-q30",
+      "accepted": [
+        1
+      ],
+      "weight": 1,
+      "options": [
+        "Biases are entirely harmful and should always be corrected.",
+        "Simple rules can sometimes be more effective than complex analytical approaches.",
+        "The dual-process theory of mind is scientifically invalid.",
+        "Biases only affect people without formal education."
+      ]
+    },
+    {
+      "skill": "reading",
+      "number": 31,
+      "kind": "fill",
+      "key": "r3-ynng__31",
+      "accepted": [
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 32,
+      "kind": "fill",
+      "key": "r3-ynng__32",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 33,
+      "kind": "fill",
+      "key": "r3-ynng__33",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 34,
+      "kind": "fill",
+      "key": "r3-ynng__34",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 35,
+      "kind": "fill",
+      "key": "r3-ynng__35",
+      "accepted": [
+        "NO"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 36,
+      "kind": "fill",
+      "key": "r3-ynng__36",
+      "accepted": [
+        "YES"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 37,
+      "kind": "fill",
+      "key": "r3-sent__37",
+      "accepted": [
+        "confirmation"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 38,
+      "kind": "fill",
+      "key": "r3-sent__38",
+      "accepted": [
+        "ecological rationality"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 39,
+      "kind": "fill",
+      "key": "r3-sent__39",
+      "accepted": [
+        "nudging"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "number": 40,
+      "kind": "fill",
+      "key": "r3-sent__40",
+      "accepted": [
+        "checklists"
+      ],
+      "weight": 1
+    }
+  ],
+  "evidence": [
+    {
+      "skill": "listening",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "l1-form__1",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Redhill",
+        "redhill"
+      ],
+      "questionPrompt": "Address: 42 {{1}} Road",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "CUSTOMER: It's 42 Redhill Road — that's R-E-D-H-I-L-L.",
+      "sourceExcerptSha256": "f0bdf890d6cb0ebbbcf21a298a95ff7c9fc2f082c2c471faa323c0be72c622b0",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Redhill",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Redhill",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "redhill",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "l1-form__2",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "magazine"
+      ],
+      "questionPrompt": "Heard about the studio from: a {{2}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "CUSTOMER: I saw an advert in the newspaper — oh, no, sorry, it was actually a magazine.",
+      "sourceExcerptSha256": "93c09b9d2125839538c0c6968a997a30ad0690a580acae39f9763cce9761f370",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "magazine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "magazine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "l1-form__3",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "light"
+      ],
+      "questionPrompt": "• learn how to control the {{3}} on a camera",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The first is our Beginners' Workshop. You'll learn how to control the light — how much of it reaches the camera — and how to compose a good shot. The sessions are held on Saturday morning.",
+      "sourceExcerptSha256": "1e31be2007760cd9d3c3553e815d5a8ac92bf555cf312bbeec8caf4a3e2922e3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "light",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "light",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "l1-form__4",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "morning"
+      ],
+      "questionPrompt": "• sessions are held on Saturday {{4}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The first is our Beginners' Workshop. You'll learn how to control the light — how much of it reaches the camera — and how to compose a good shot. The sessions are held on Saturday morning.",
+      "sourceExcerptSha256": "1e31be2007760cd9d3c3553e815d5a8ac92bf555cf312bbeec8caf4a3e2922e3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "morning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "morning",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "l1-form__5",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lake"
+      ],
+      "questionPrompt": "• the group travels to a nearby {{5}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The second is the Landscape Workshop. For that one, the group travels out to a nearby lake and spends the whole day there. One thing to note — each student must bring their own tripod, as the light there can be quite low.",
+      "sourceExcerptSha256": "5485abdeae73e2842b9d880d41f1a1f0c77cc3be4ae8c508e563b951f80bf6c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lake",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lake",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "l1-form__6",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "tripod"
+      ],
+      "questionPrompt": "• each student must bring their own {{6}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The second is the Landscape Workshop. For that one, the group travels out to a nearby lake and spends the whole day there. One thing to note — each student must bring their own tripod, as the light there can be quite low.",
+      "sourceExcerptSha256": "5485abdeae73e2842b9d880d41f1a1f0c77cc3be4ae8c508e563b951f80bf6c7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "tripod",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "tripod",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "l1-table__7",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "120",
+        "£120"
+      ],
+      "questionPrompt": "Beginners' Workshop | 4 | 3 hours | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: Let me give you the prices. The Beginners' Workshop is four sessions of three hours each. It costs £120, and that price includes lunch.",
+      "sourceExcerptSha256": "2bcc894cf28e06f810938f897a1f57baad32fc4c7d40fad9711de4c7b1bd66b3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "120",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "£120",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "l1-table__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lunch"
+      ],
+      "questionPrompt": "Beginners' Workshop | 4 | 3 hours | {{7}} | {{8}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: Let me give you the prices. The Beginners' Workshop is four sessions of three hours each. It costs £120, and that price includes lunch.",
+      "sourceExcerptSha256": "2bcc894cf28e06f810938f897a1f57baad32fc4c7d40fad9711de4c7b1bd66b3",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lunch",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lunch",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "l1-table__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "questionPrompt": "Landscape Workshop | {{9}} | 5 hours | £150 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The Landscape Workshop runs over two sessions of five hours each. That one is £150, and the price includes transport to the lake.",
+      "sourceExcerptSha256": "fcb40115f47516b0e6168066c1cb0a87c8d3e2f95d5802eb4840a5fd939b87e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "two",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "2",
+          "basis": "NUMERIC_EQUIVALENT",
+          "rationale": "This is the standard numeral or written-number equivalent of the cited spoken form."
+        },
+        {
+          "answer": "two",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "l1-table__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "transport"
+      ],
+      "questionPrompt": "Landscape Workshop | {{9}} | 5 hours | £150 | {{10}}",
+      "sourcePart": 1,
+      "sourceTitle": "Listening — Section 1: Booking a Photography Workshop",
+      "sourceExcerpt": "AGENT: The Landscape Workshop runs over two sessions of five hours each. That one is £150, and the price includes transport to the lake.",
+      "sourceExcerptSha256": "fcb40115f47516b0e6168066c1cb0a87c8d3e2f95d5802eb4840a5fd939b87e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "transport",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "transport",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 11,
+      "questionLabel": "Q11-Q12",
+      "responseKey": "l2-multi",
+      "kind": "multiselect",
+      "evidenceClass": "selection",
+      "points": 2,
+      "acceptedAnswers": [
+        "A",
+        "D"
+      ],
+      "questionPrompt": "Which TWO parts of the theatre have recently been improved?",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Good morning everyone, and welcome to the backstage tour of the Regent Theatre. Before we set off, let me mention the improvements we've made this year. We've installed a completely new lighting system above the stage, which is now fully computer-controlled. We've also refurbished the dressing rooms downstairs, which the actors are delighted with. Now, some of you asked about the main auditorium — I'm afraid we can't alter that, as the building is protected, and the little café by the entrance is exactly as it has always been. The box office hasn't changed either, though we do hope to modernise it next year.",
+      "sourceExcerptSha256": "8e48afed734d40f9014ce003ebfa910d3d15acd4b91d868273f4116446a1f291",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": "A",
+          "text": "the lighting system"
+        },
+        {
+          "key": "D",
+          "text": "the dressing rooms"
+        }
+      ],
+      "distractors": [
+        {
+          "option": "B",
+          "text": "the main auditorium",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option B is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "C",
+          "text": "the café",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option C is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": "E",
+          "text": "the box office",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports A and D for the precise question; option E is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "l2-form__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "900"
+      ],
+      "questionPrompt": "• The theatre can seat {{13}} people.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Right, let's begin. The Regent is a medium-sized venue and can seat 900 people. As we walk onto the stage, notice the floor — it's made of pine, a soft wood that has a gentle spring to it, which is kinder to the dancers' feet.",
+      "sourceExcerptSha256": "387a46e7f86391e75d18f94385793860cbd852935e20a5d24e6133fd7c606ab8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "900",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "900",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "l2-form__14",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "pine"
+      ],
+      "questionPrompt": "• The stage floor is made of {{14}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Right, let's begin. The Regent is a medium-sized venue and can seat 900 people. As we walk onto the stage, notice the floor — it's made of pine, a soft wood that has a gentle spring to it, which is kinder to the dancers' feet.",
+      "sourceExcerptSha256": "387a46e7f86391e75d18f94385793860cbd852935e20a5d24e6133fd7c606ab8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "pine",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "pine",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "l2-form__15",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "scenery"
+      ],
+      "questionPrompt": "• The fly tower is used to raise and lower the {{15}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Now look up. That tall space above us is the fly tower. Using a system of ropes and pulleys, the crew can raise and lower the scenery quickly between scenes, so the audience never sees it happening.",
+      "sourceExcerptSha256": "6dbdb3e7101b332694e8043a88aaf8fb91f1111ffb425eb238ffd2601d63cf29",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "scenery",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "scenery",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "l2-form__16",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "relax",
+        "wait"
+      ],
+      "questionPrompt": "• The green room is where the actors {{16}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Just through this door is the green room. Despite the name, it isn't green — it's simply the comfortable space where the actors relax while they wait to go on.",
+      "sourceExcerptSha256": "9394476f1c515675d58f4ac5529048b8fe452b1487629ff620b1ff1a280d6773",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "relax",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "relax",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "wait",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "l2-form__17",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "costumes",
+        "costume"
+      ],
+      "questionPrompt": "• The wardrobe department makes all the {{17}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "Next door is the wardrobe department. This is where a small team of skilled staff design and make all the costumes for each production, often by hand.",
+      "sourceExcerptSha256": "fcae70b849637424b8ccc5cec632e89213546aa1ad84560aa94c36f104f82f4a",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "costumes",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "costumes",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "costume",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "l2-form__18",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "safety curtain",
+        "curtain",
+        "iron curtain"
+      ],
+      "questionPrompt": "• A heavy {{18}} can be lowered in case of fire.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "One important safety feature: in the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience. It is tested before every performance.",
+      "sourceExcerptSha256": "051e66165575bbab63fce522ce0222b3b32e2ea71b2b26c9a04ac95359de408b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "safety curtain",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "safety curtain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "curtain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "iron curtain",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "l2-form__19",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "workshop"
+      ],
+      "questionPrompt": "• The set is built in the {{19}}.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "The large room at the back is the workshop, where the carpenters build the set — everything from walls to furniture.",
+      "sourceExcerptSha256": "9abc9d619b51568092243edc30cf82ac44b529b3efb8093f95bcc621e2e1f02b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "workshop",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "workshop",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "l2-form__20",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "posters",
+        "poster",
+        "souvenirs"
+      ],
+      "questionPrompt": "• The shop sells {{20}} from the current show.",
+      "sourcePart": 2,
+      "sourceTitle": "Listening — Section 2: Theatre Backstage Tour",
+      "sourceExcerpt": "And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show. Do have a look before you leave. Thank you.",
+      "sourceExcerptSha256": "1eaf93fd821f6c73d175d82a9cc13e17f5b3614747607fc3c06cfea2dd4d2aa8",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "posters",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "posters",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "poster",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "souvenirs",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "l3q21",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What is the main argument of Maria's essay?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: Well, your central claim is that individual action alone isn't enough — that governments and manufacturers have to take the lead. That came through very strongly.",
+      "sourceExcerptSha256": "77211ebbb899f60debebf3ab1f85b8cc9cb1747de19913c7802628be539aa76d",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "Individual action alone is not enough to solve plastic waste."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "Recycling schemes are too expensive for most governments.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "Consumers are mainly to blame for plastic pollution.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "l3q22",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the tutor say impressed him most about the essay?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: And the writing itself is clear and well organised. What impressed me most, though, was your use of real examples — the case study of the deposit-return scheme in Germany was excellent.",
+      "sourceExcerptSha256": "bd744b28ce8b2fd893977009904635735d6acc68a53baa8d45695a9ccf710b91",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "the use of real examples"
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "the clarity of the writing",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "the length of the essay",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "l3q23",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        0
+      ],
+      "questionPrompt": "What weakness does the tutor identify?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: Now, there is one weakness. Some of your statistics are quite old — a few of your sources date back to 2009. For a topic that moves this fast, you really need more recent data.",
+      "sourceExcerptSha256": "00a161a2378b68857d1f637611aa8a5e18e58ebca8a781899462a7bb78ae6127",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 0,
+          "text": "Some of the statistics are out of date."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 1,
+          "text": "The main argument is hard to follow.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 1 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "There are too few examples.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 0 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "l3q24",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the tutor suggest about the middle section?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: I understand, but do update them. Also, I'd suggest reorganising the middle section. At the moment you present all the problems and then all the solutions. It would be stronger to pair each problem with its solution as you go.",
+      "sourceExcerptSha256": "86ce6aaf06654339838bcbd54026f431263fdaf0793bc071163fe4529a7f76c8",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Each problem should be paired with its solution."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It should be made considerably shorter.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It should contain more statistics.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "l3q25",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the tutor say about the conclusion?",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: Exactly. One more thing — your conclusion is a little short. You introduce an interesting idea about consumer behaviour right at the end, but you don't develop it. I'd move that into the main body.",
+      "sourceExcerptSha256": "4b5b85e18c59d39d71fdb62410e27dc0205126f5fbaef7e9567acae40cb4b993",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "It contains an idea that belongs in the main body."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "It simply repeats points from the introduction.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "It is the strongest part of the essay.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "l3-form__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "figures",
+        "data"
+      ],
+      "questionPrompt": "• Find some more recent {{26}} to strengthen the evidence.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.",
+      "sourceExcerptSha256": "750746d4e5895edae440a7958f6a851ec296fb22362bf97bdc62f283476e9594",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "figures",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "figures",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "data",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "l3-form__27",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "diagram"
+      ],
+      "questionPrompt": "• Add a {{27}} showing how much plastic is recycled.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.",
+      "sourceExcerptSha256": "750746d4e5895edae440a7958f6a851ec296fb22362bf97bdc62f283476e9594",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "diagram",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "diagram",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "l3-form__28",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "referencing",
+        "citations"
+      ],
+      "questionPrompt": "• Check the {{28}}, as a few entries are missing dates.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.",
+      "sourceExcerptSha256": "750746d4e5895edae440a7958f6a851ec296fb22362bf97bdc62f283476e9594",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "referencing",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "referencing",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "citations",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "l3-form__29",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "aloud"
+      ],
+      "questionPrompt": "• Read the whole essay {{29}} to catch awkward sentences.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.",
+      "sourceExcerptSha256": "750746d4e5895edae440a7958f6a851ec296fb22362bf97bdc62f283476e9594",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "aloud",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "aloud",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "l3-form__30",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "email"
+      ],
+      "questionPrompt": "• Send the revised draft to the tutor by {{30}}.",
+      "sourcePart": 3,
+      "sourceTitle": "Listening — Section 3: Environmental Essay Review",
+      "sourceExcerpt": "TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.",
+      "sourceExcerptSha256": "750746d4e5895edae440a7958f6a851ec296fb22362bf97bdc62f283476e9594",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "email",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "email",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "l4-form__31",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ground"
+      ],
+      "questionPrompt": "• Most of an aqueduct ran underground, beneath the {{31}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "Today I'd like to look at one of the great engineering achievements of the ancient world: the Roman aqueduct. Contrary to popular belief, most of an aqueduct's length ran not on those famous arches but underground, hidden beneath the ground. The tall arches we admire today were used only where the water had to cross a valley.",
+      "sourceExcerptSha256": "806d6d2cd7f7886c16f5616f2efab9075124cdbfaed3f01644d7867e0ac04bb2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ground",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ground",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "l4-form__32",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "gravity"
+      ],
+      "questionPrompt": "• The system relied entirely on the force of {{32}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "The whole system depended on a single, simple force: gravity. Because there were no pumps, the channel had to slope gently downhill for its entire length, sometimes for many kilometres. If the slope was too steep, the water moved too fast and damaged the channel; if it was too shallow, the water stopped moving and turned stagnant.",
+      "sourceExcerptSha256": "5d4fc020ef3328667297a291c6163560709ad57e72f06429f1c1291527f87d53",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "gravity",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "gravity",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "l4-form__33",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "stagnant"
+      ],
+      "questionPrompt": "• If the channel's slope was too shallow, the water turned {{33}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "The whole system depended on a single, simple force: gravity. Because there were no pumps, the channel had to slope gently downhill for its entire length, sometimes for many kilometres. If the slope was too steep, the water moved too fast and damaged the channel; if it was too shallow, the water stopped moving and turned stagnant.",
+      "sourceExcerptSha256": "5d4fc020ef3328667297a291c6163560709ad57e72f06429f1c1291527f87d53",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "stagnant",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "stagnant",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "l4-form__34",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "level"
+      ],
+      "questionPrompt": "• Surveyors measured the gradient using an instrument that acted as a {{34}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "To measure these tiny gradients, surveyors used a long wooden instrument, filled with water, that acted as a level. Getting the measurement wrong by even a fraction could ruin the whole project.",
+      "sourceExcerptSha256": "e3628405fd0fba3c5e808bbc71d3e1e0f4cd4cd5d0d90e2519f4979bc632eb3f",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "level",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "level",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "l4-form__35",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "cement"
+      ],
+      "questionPrompt": "• The channel was lined with waterproof {{35}} to prevent leaks.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean. When the water finally reached the city, it was collected in a large tank and shared out. The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water.",
+      "sourceExcerptSha256": "b3ab6d44e5b90db1d27b395e9160e019554b56ace8244238729fb6df3b486e31",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "cement",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "cement",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "l4-form__36",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "fountains",
+        "fountain"
+      ],
+      "questionPrompt": "• When water reached the city, it went first to the public {{36}} and baths.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean. When the water finally reached the city, it was collected in a large tank and shared out. The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water.",
+      "sourceExcerptSha256": "b3ab6d44e5b90db1d27b395e9160e019554b56ace8244238729fb6df3b486e31",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "fountains",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "fountains",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "fountain",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "l4-form__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "lime",
+        "limescale"
+      ],
+      "questionPrompt": "• Channels became blocked by deposits of {{37}} and had to be cleaned.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "Maintaining the aqueducts was a constant task. A serious problem was the build-up of lime, a hard mineral deposit left by the water, which gradually narrowed the channel and had to be chipped away by hand.",
+      "sourceExcerptSha256": "633aecd35896c6bbbb9164c79f24fd6836693da5de85c74b6748eee48e1b401d",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "lime",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "lime",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        },
+        {
+          "answer": "limescale",
+          "basis": "SEMANTIC_EQUIVALENT",
+          "rationale": "This is a direct, context-preserving equivalent of the cited answer and does not broaden the keyed meaning."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "l4-form__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "curator"
+      ],
+      "questionPrompt": "• The official in charge of the water supply was called the {{38}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "The official placed in overall charge of the entire water supply held the important title of curator, a highly respected public office.",
+      "sourceExcerptSha256": "9d9c4519f9f1dd5f8b54c55b105f6621fa43755b82dff8728cf02a91e7ed241b",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "curator",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "curator",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "l4-form__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "supply"
+      ],
+      "questionPrompt": "• In wartime, an enemy could cut off a city's {{39}} to force surrender.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply. And once the central government grew too weak to pay for repairs, the aqueducts slowly fell into ruin. It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later.",
+      "sourceExcerptSha256": "96eb76db6f022ecfe1d1fcc75e7a3c0a2f8e44ab4b909e345fd1e1958ca7ffcc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "supply",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "supply",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "listening",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "l4-form__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Renaissance"
+      ],
+      "questionPrompt": "• The aqueducts were not repaired until the {{40}}.",
+      "sourcePart": 4,
+      "sourceTitle": "Listening — Section 4: The Roman Aqueducts",
+      "sourceExcerpt": "Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply. And once the central government grew too weak to pay for repairs, the aqueducts slowly fell into ruin. It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later.",
+      "sourceExcerptSha256": "96eb76db6f022ecfe1d1fcc75e7a3c0a2f8e44ab4b909e345fd1e1958ca7ffcc",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Renaissance",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Renaissance",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 1,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 1,
+      "questionLabel": "Q1",
+      "responseKey": "r1-tfng__1",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "1. {{1}}: The Aqua Appia was built above ground for most of its length.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground, a precaution against both enemy attack and evaporation. Over the following five centuries, ten further aqueducts were constructed, eventually supplying water from sources up to ninety kilometres away. The most celebrated, the Aqua Claudia and the Anio Novus, were completed under the Emperor Claudius in 52 CE. These structures stretched for over sixty kilometres and carried water across dramatic valleys on soaring arcaded bridges, many of which still stand today.",
+      "sourceExcerptSha256": "6557f7f8100478a16fbd32a99db50bf951b48f916a75ce4d4302c6da21b38e19",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 2,
+      "questionLabel": "Q2",
+      "responseKey": "r1-tfng__2",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "2. {{2}}: The Aqua Claudia and Anio Novus were built during the reign of Emperor Claudius.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground, a precaution against both enemy attack and evaporation. Over the following five centuries, ten further aqueducts were constructed, eventually supplying water from sources up to ninety kilometres away. The most celebrated, the Aqua Claudia and the Anio Novus, were completed under the Emperor Claudius in 52 CE. These structures stretched for over sixty kilometres and carried water across dramatic valleys on soaring arcaded bridges, many of which still stand today.",
+      "sourceExcerptSha256": "6557f7f8100478a16fbd32a99db50bf951b48f916a75ce4d4302c6da21b38e19",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 3,
+      "questionLabel": "Q3",
+      "responseKey": "r1-tfng__3",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "3. {{3}}: Roman aqueducts used mechanical pumps to maintain water flow.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+      "sourceExcerptSha256": "b9fc802599b6cd03746cfa7f30c37cdb1a0c0b486543a99e4c94dfa7a1ac6705",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 4,
+      "questionLabel": "Q4",
+      "responseKey": "r1-tfng__4",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "4. {{4}}: The castella aquae supplied water to public fountains before private homes.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+      "sourceExcerptSha256": "c69c61160161eb7c3ce30a15c244e764b4ffc1b7f921ba3351fe9a0fef43149c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 5,
+      "questionLabel": "Q5",
+      "responseKey": "r1-tfng__5",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "questionPrompt": "5. {{5}}: All Roman citizens, regardless of wealth, had access to private water connections.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+      "sourceExcerptSha256": "c69c61160161eb7c3ce30a15c244e764b4ffc1b7f921ba3351fe9a0fef43149c",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 6,
+      "questionLabel": "Q6",
+      "responseKey": "r1-tfng__6",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "6. {{6}}: The Cloaca Maxima was originally designed to drain marshland.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+      "sourceExcerptSha256": "273e80c6095b66b54857a33e9066412c1c9daf271f330c1af6e664d5a19a1d10",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 7,
+      "questionLabel": "Q7",
+      "responseKey": "r1-tfng__7",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "questionPrompt": "7. {{7}}: The post of curator aquarum was created during the reign of Augustus.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+      "sourceExcerptSha256": "273e80c6095b66b54857a33e9066412c1c9daf271f330c1af6e664d5a19a1d10",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 8,
+      "questionLabel": "Q8",
+      "responseKey": "r1-sent__8",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "chorobates"
+      ],
+      "questionPrompt": "8. Roman engineers used instruments such as the groma and the {{8}} to survey terrain accurately.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+      "sourceExcerptSha256": "b9fc802599b6cd03746cfa7f30c37cdb1a0c0b486543a99e4c94dfa7a1ac6705",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "chorobates",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "chorobates",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 9,
+      "questionLabel": "Q9",
+      "responseKey": "r1-sent__9",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "inverted siphon"
+      ],
+      "questionPrompt": "9. An {{9}} allowed water to descend into a valley and rise on the other side using water pressure.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. A slope that was too shallow could allow sediment to accumulate, while one that was too steep could accelerate the water and damage the channel. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Construction teams also had to reconcile the ideal route with rock, unstable ground, and property boundaries. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.",
+      "sourceExcerptSha256": "b9fc802599b6cd03746cfa7f30c37cdb1a0c0b486543a99e4c94dfa7a1ac6705",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "inverted siphon",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "inverted siphon",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 10,
+      "questionLabel": "Q10",
+      "responseKey": "r1-sent__10",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "highest"
+      ],
+      "questionPrompt": "10. Public fountains had the {{10}} priority in the distribution of Rome's water supply.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. The tanks helped divide flow among branches and made the network easier to inspect, but illegal connections and leakage remained persistent problems. Because pressure and elevation affected delivery, access depended on the position of a building as well as its legal entitlement. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.",
+      "sourceExcerptSha256": "c69c61160161eb7c3ce30a15c244e764b4ffc1b7f921ba3351fe9a0fef43149c",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "highest",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "highest",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 11,
+      "questionLabel": "Q11",
+      "responseKey": "r1-sent__11",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "Cloaca Maxima"
+      ],
+      "questionPrompt": "11. The {{11}} was one of the world's earliest large-scale sewage systems.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+      "sourceExcerptSha256": "273e80c6095b66b54857a33e9066412c1c9daf271f330c1af6e664d5a19a1d10",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Cloaca Maxima",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "Cloaca Maxima",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 12,
+      "questionLabel": "Q12",
+      "responseKey": "r1-sent__12",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "water infrastructure"
+      ],
+      "questionPrompt": "12. The curator aquarum was an official responsible for overseeing Rome's entire {{12}}.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.",
+      "sourceExcerptSha256": "273e80c6095b66b54857a33e9066412c1c9daf271f330c1af6e664d5a19a1d10",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "water infrastructure",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "water infrastructure",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 13,
+      "questionLabel": "Q13",
+      "responseKey": "r1-sent__13",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "invading armies"
+      ],
+      "questionPrompt": "13. Rome's aqueducts were deliberately damaged by {{13}} who understood that cutting the water supply would weaken the city.",
+      "sourcePart": 5,
+      "sourceTitle": "Reading — Passage 1: Engineering Water in Ancient Rome",
+      "sourceExcerpt": "The eventual decline of Rome's water supply was less a story of engineering failure than of political collapse. As central authority weakened during the third and fourth centuries CE, maintenance became increasingly difficult. Invading armies cut or damaged aqueducts deliberately, knowing that disrupting water supply would hasten surrender. By the sixth century, only a fraction of the aqueducts remained operational, and Rome's population had fallen to perhaps thirty thousand. The infrastructure was not meaningfully restored until the Renaissance, when popes began rebuilding aqueducts to supply the growing city and, less nobly, to power the elaborate fountain displays that became symbols of papal prestige.",
+      "sourceExcerptSha256": "0adfa7c929a7ed02fa0934529178a50269fbc125685f38e94401a0717d477d36",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "Invading armies",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "invading armies",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 14,
+      "questionLabel": "Q14",
+      "responseKey": "r2-match__14",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "G"
+      ],
+      "questionPrompt": "A description of how building orientation can improve airflow through a city",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "G. At a systemic level, the most durable solutions involve rethinking the materials and geometry of urban design. Orienting streets to allow prevailing winds to penetrate the city fabric can improve ventilation significantly. Limiting the height and density of buildings in key corridors can reduce the \"canyon effect,\" in which tall buildings trap heat radiating from the street. Long-term, the integration of urban heat island mitigation into planning regulations and building codes represents the most powerful tool available to cities facing a warming future—one in which climate change is expected to intensify the UHI effect by raising baseline temperatures across the globe.",
+      "sourceExcerptSha256": "2d6aa92160d0cb0b0e3a303a6205c7d20255f2a4cbb6f1ddcc7cd4b10d9b5efd",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph G contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "G",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph G; paragraph F addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 15,
+      "questionLabel": "Q15",
+      "responseKey": "r2-match__15",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "F"
+      ],
+      "questionPrompt": "An example of a city using water spray to cool outdoor public spaces",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "F. Water features also play a role that is frequently underestimated. Fountains, ponds, and water channels cool the air through evaporation, and several cities—including Medellín in Colombia and Seville in Spain—have incorporated water-based cooling into their heat mitigation strategies. Seville has experimented with deploying misting systems in pedestrian areas during summer months, generating local temperature reductions of up to eight degrees in public spaces. These interventions, while effective, are costly and require ongoing maintenance and water supply, which may be scarce in the drier climates most vulnerable to heat stress.",
+      "sourceExcerptSha256": "f6ec4d0822155faa840d50b4f50f7ce561d3331376a60872ffa16ebdb028a3ab",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph F contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "F",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph E addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph F; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 16,
+      "questionLabel": "Q16",
+      "responseKey": "r2-match__16",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "B"
+      ],
+      "questionPrompt": "An explanation of why vegetation reduces surface temperatures",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+      "sourceExcerptSha256": "5ff1c0253136c83fd126159444d483b86a4903612f0f211c4c29a55fb68e77e6",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph B contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "B",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph A addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph B; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 17,
+      "questionLabel": "Q17",
+      "responseKey": "r2-match__17",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "D"
+      ],
+      "questionPrompt": "Data showing how a rise in temperature affects electricity demand",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "D. The economic costs are equally significant. Higher temperatures drive up demand for air conditioning, increasing electricity consumption and placing strain on power grids during peak periods. A study in Los Angeles found that each additional degree Celsius of urban warming increased peak electricity demand by approximately two percent. This cycle reinforces the UHI effect itself: as buildings consume more energy to cool their interiors, they discharge more heat into the surrounding streets. The additional burden on power infrastructure also raises the risk of blackouts during extreme heat events.",
+      "sourceExcerptSha256": "2bf0f52040c7c4febb0dd4fb0580c523307c7a9bc12cc32ec230219c673d721c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph D contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "D",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph C addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph D; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 18,
+      "questionLabel": "Q18",
+      "responseKey": "r2-match__18",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "A"
+      ],
+      "questionPrompt": "A reference to the first scientific documentation of the UHI effect",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "A. Cities are measurably warmer than the rural areas that surround them. This phenomenon, known as the urban heat island (UHI) effect, was first documented systematically by the English chemist Luke Howard in the early nineteenth century, who observed that London's city centre was consistently warmer than the countryside around it. Today, the temperature difference between a large city and its rural surroundings can exceed ten degrees Celsius on calm, clear nights, with profound consequences for public health, energy consumption, and environmental quality.",
+      "sourceExcerptSha256": "037f1cea4623f44c4ff6618e4dec694a721303b1847b475865d8013797bd233c",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph A contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "A",
+      "distractors": [
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph A; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 19,
+      "questionLabel": "Q19",
+      "responseKey": "r2-match__19",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "E"
+      ],
+      "questionPrompt": "Evidence that the cooling effect of parks extends beyond their edges",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "E. Urban planners and researchers have identified several strategies to reduce the UHI effect. Increasing the proportion of green space—through parks, street trees, and green roofs—can lower surface temperatures significantly. Trees are particularly effective: a mature street tree can reduce the ambient temperature of its immediate surroundings by several degrees through shading and evapotranspiration. Placement matters because shade over a pavement, bus stop, or building can reduce direct exposure where people actually spend time. Young trees need years, water, and maintenance before providing the same benefit, and poorly selected species may struggle in compacted urban soil. Studies in cities from Singapore to Phoenix have demonstrated that well-designed parks create measurable \"cool islands\" that extend beyond their physical boundaries. Cool pavements and reflective roofing materials, which reflect rather than absorb solar radiation, offer additional benefits.",
+      "sourceExcerptSha256": "f9bcaded6eb32da3fb9ceda299c3a224b12ab483bfde8cd4b7af85a12e9f0f12",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph E contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "E",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph B addresses a different detail."
+        },
+        {
+          "option": "C",
+          "text": "Paragraph C",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph C addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph D addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph E; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 20,
+      "questionLabel": "Q20",
+      "responseKey": "r2-match__20",
+      "kind": "match",
+      "evidenceClass": "matching",
+      "points": 1,
+      "acceptedAnswers": [
+        "C"
+      ],
+      "questionPrompt": "A link between high urban temperatures and a specific respiratory condition",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "C. The health consequences of elevated urban temperatures are well established. During heat waves, cities experience disproportionately high mortality rates relative to rural areas. The European heat wave of 2003 killed an estimated seventy thousand people across the continent, with the elderly and those without access to air conditioning at greatest risk. Urban heat is also associated with increased levels of ground-level ozone, which forms when sunlight reacts with pollutants—a process accelerated by higher temperatures. Ozone causes respiratory irritation and is linked to long-term lung damage and increased rates of asthma, particularly in children.",
+      "sourceExcerptSha256": "b107315df92f0d9b7b3f024c3701e822da27dc9a7ad6dbc8e73b85e4a62c76cc",
+      "verdict": "SUPPORTED",
+      "rationale": "Paragraph C contains the requested information directly; the other labelled paragraphs address different claims or examples.",
+      "correctParagraph": "C",
+      "distractors": [
+        {
+          "option": "A",
+          "text": "Paragraph A",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph A addresses a different detail."
+        },
+        {
+          "option": "B",
+          "text": "Paragraph B",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph B addresses a different detail."
+        },
+        {
+          "option": "D",
+          "text": "Paragraph D",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph D addresses a different detail."
+        },
+        {
+          "option": "E",
+          "text": "Paragraph E",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph E addresses a different detail."
+        },
+        {
+          "option": "F",
+          "text": "Paragraph F",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph F addresses a different detail."
+        },
+        {
+          "option": "G",
+          "text": "Paragraph G",
+          "verdict": "DISMISSED",
+          "rationale": "The requested detail is stated in paragraph C; paragraph G addresses a different detail."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 21,
+      "questionLabel": "Q21",
+      "responseKey": "r2-sum__21",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "albedo"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+      "sourceExcerptSha256": "5ff1c0253136c83fd126159444d483b86a4903612f0f211c4c29a55fb68e77e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "albedo",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "albedo",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 22,
+      "questionLabel": "Q22",
+      "responseKey": "r2-sum__22",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "air conditioning"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+      "sourceExcerptSha256": "5ff1c0253136c83fd126159444d483b86a4903612f0f211c4c29a55fb68e77e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "air conditioning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "air conditioning",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 23,
+      "questionLabel": "Q23",
+      "responseKey": "r2-sum__23",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "rural"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+      "sourceExcerptSha256": "5ff1c0253136c83fd126159444d483b86a4903612f0f211c4c29a55fb68e77e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "rural",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "rural",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 24,
+      "questionLabel": "Q24",
+      "responseKey": "r2-sum__24",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "air conditioning"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. The contrast is often strongest after sunset because rural ground cools rapidly while urban materials release energy stored during the day. Closely spaced buildings can further restrict the escape of long-wave radiation to the sky. In addition, cities produce enormous quantities of \"waste heat\" from vehicles, air conditioning units, industrial processes, and human bodies.",
+      "sourceExcerptSha256": "5ff1c0253136c83fd126159444d483b86a4903612f0f211c4c29a55fb68e77e6",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "air conditioning",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "air conditioning",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 25,
+      "questionLabel": "Q25",
+      "responseKey": "r2-sum__25",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "trees"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "E. Urban planners and researchers have identified several strategies to reduce the UHI effect. Increasing the proportion of green space—through parks, street trees, and green roofs—can lower surface temperatures significantly. Trees are particularly effective: a mature street tree can reduce the ambient temperature of its immediate surroundings by several degrees through shading and evapotranspiration. Placement matters because shade over a pavement, bus stop, or building can reduce direct exposure where people actually spend time. Young trees need years, water, and maintenance before providing the same benefit, and poorly selected species may struggle in compacted urban soil. Studies in cities from Singapore to Phoenix have demonstrated that well-designed parks create measurable \"cool islands\" that extend beyond their physical boundaries. Cool pavements and reflective roofing materials, which reflect rather than absorb solar radiation, offer additional benefits.",
+      "sourceExcerptSha256": "f9bcaded6eb32da3fb9ceda299c3a224b12ab483bfde8cd4b7af85a12e9f0f12",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "trees",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "trees",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 26,
+      "questionLabel": "Q26",
+      "responseKey": "r2-sum__26",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "density"
+      ],
+      "questionPrompt": "The urban heat island effect occurs because urban surfaces have lower {{21}} than natural vegetation, causing them to absorb and retain more heat. Cities also generate waste heat through vehicles, industrial processes, and {{22}} units. During heat waves, mortality in cities is disproportionately high compared to {{23}} areas. Economically, rising urban temperatures increase demand for {{24}}, putting pressure on power systems. Green strategies include planting street {{25}}, which cool the air through shading and evapotranspiration. Structurally, limiting the height and {{26}} of buildings in key corridors helps prevent heat from becoming trapped between them.",
+      "sourcePart": 6,
+      "sourceTitle": "Reading — Passage 2: The Urban Heat Island Effect",
+      "sourceExcerpt": "G. At a systemic level, the most durable solutions involve rethinking the materials and geometry of urban design. Orienting streets to allow prevailing winds to penetrate the city fabric can improve ventilation significantly. Limiting the height and density of buildings in key corridors can reduce the \"canyon effect,\" in which tall buildings trap heat radiating from the street. Long-term, the integration of urban heat island mitigation into planning regulations and building codes represents the most powerful tool available to cities facing a warming future—one in which climate change is expected to intensify the UHI effect by raising baseline temperatures across the globe.",
+      "sourceExcerptSha256": "2d6aa92160d0cb0b0e3a303a6205c7d20255f2a4cbb6f1ddcc7cd4b10d9b5efd",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "density",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "density",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 27,
+      "questionLabel": "Q27",
+      "responseKey": "r3-q27",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "According to the passage, what is the main difference between System 1 and System 2 thinking?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+      "sourceExcerptSha256": "31a9f87b8f3813e5889381f2d0738552617af98e36503b57312d37d8a5d0d7c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "System 1 is rapid and automatic, while System 2 is slower and more deliberate."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "System 1 is used mainly for mathematical calculations, while System 2 handles emotional responses.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "System 2 is faster but less accurate than System 1.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "System 1 is the dominant system used in complex, high-stakes decisions.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 28,
+      "questionLabel": "Q28",
+      "responseKey": "r3-q28",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What does the anchoring experiment with the spinning wheel demonstrate?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The anchoring effect describes the tendency for an initial piece of information to disproportionately influence subsequent judgements. In one famous experiment, subjects were asked to spin a wheel that was rigged to stop at either ten or sixty-five, then estimate what percentage of African countries belonged to the United Nations. Those who spun a high number gave systematically higher estimates than those who had spun a low number—despite the complete irrelevance of the spin. People often adjust away from an initial value, but the adjustment tends to be insufficient, leaving the final judgement closer to the anchor than the evidence warrants. Even awareness that a starting number is arbitrary may not remove its influence completely. Anchoring influences price negotiations, legal sentences, and medical prognoses, often with substantial real-world consequences.",
+      "sourceExcerptSha256": "d705d34ad4b0cea367c21bb08d97666ca38a9713ebf68624bcee0dac5fe5d2a6",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "An irrelevant initial number can significantly distort later numerical judgements."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "People are unable to estimate statistical information accurately.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "High numbers always produce more accurate estimates than low numbers.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Anchoring bias only applies to tasks involving geography.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 29,
+      "questionLabel": "Q29",
+      "responseKey": "r3-q29",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "How does the availability heuristic explain people's responses to aeroplane crashes?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "A third bias—availability heuristic—leads people to judge the likelihood of events based on how easily examples come to mind. Events that are dramatic, recent, or frequently covered in media are perceived as more probable than quieter, more common events. After a well-publicised plane crash, fear of flying spikes even as driving—statistically more dangerous—does not attract comparable anxiety. Conversely, slow-developing risks such as poor diet or sedentary behaviour, which cause the majority of premature deaths, may be chronically underestimated precisely because they generate no memorable events.",
+      "sourceExcerptSha256": "08152a3f3f2090fd8b1a30fae0d6641cbb3de0bab33eb7d47565048788ae14cc",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "The drama of crashes makes flying seem more dangerous than driving, despite the statistics."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "People accurately reassess the risk of flying after hearing of a crash.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "People increase their fear of driving after hearing about aviation accidents.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "The heuristic causes people to underestimate all forms of transport risk.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 30,
+      "questionLabel": "Q30",
+      "responseKey": "r3-q30",
+      "kind": "mcq",
+      "evidenceClass": "selection",
+      "points": 1,
+      "acceptedAnswers": [
+        1
+      ],
+      "questionPrompt": "What is Gigerenzer's main argument about cognitive biases?",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+      "sourceExcerptSha256": "31a9f87b8f3813e5889381f2d0738552617af98e36503b57312d37d8a5d0d7c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited material directly supports the keyed option; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "correctOptions": [
+        {
+          "key": 1,
+          "text": "Simple rules can sometimes be more effective than complex analytical approaches."
+        }
+      ],
+      "distractors": [
+        {
+          "option": 0,
+          "text": "Biases are entirely harmful and should always be corrected.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 0 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 2,
+          "text": "The dual-process theory of mind is scientifically invalid.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
+        },
+        {
+          "option": 3,
+          "text": "Biases only affect people without formal education.",
+          "verdict": "DISMISSED",
+          "rationale": "The effective material supports 1 for the precise question; option 3 is contradicted, rejected, or not stated as the answer."
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "question": 31,
+      "questionLabel": "Q31",
+      "responseKey": "r3-ynng__31",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "questionPrompt": "31. {{31}}: Kahneman and Tversky conducted their key experiments in the United States.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.",
+      "sourceExcerptSha256": "31a9f87b8f3813e5889381f2d0738552617af98e36503b57312d37d8a5d0d7c5",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage gives the closest relevant context but states neither the proposition nor its inverse; NOT GIVEN is therefore required."
+    },
+    {
+      "skill": "reading",
+      "question": 32,
+      "questionLabel": "Q32",
+      "responseKey": "r3-ynng__32",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "32. {{32}}: Confirmation bias can cause people to become more entrenched in their beliefs when exposed to opposing evidence.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "One of the most widely studied biases is confirmation bias: the tendency to search for, interpret, and recall information in a way that confirms one's pre-existing beliefs. Studies consistently show that people evaluate identical evidence more favourably when it supports their views and more critically when it contradicts them. The bias can enter at several stages: a person may choose sources likely to agree, demand stronger proof from an opposing claim, or remember supportive examples more readily afterwards. Greater access to information does not automatically solve the problem if selection itself is biased. This asymmetry has significant consequences in contexts ranging from medical diagnosis—where clinicians may too readily accept initial assessments—to political belief, where exposure to contradictory information can, paradoxically, entrench rather than revise opinion.",
+      "sourceExcerptSha256": "44d5a4fec4bff9d585f6655811b29ed7e9845031f32ef7e5ba0a47e94a6566a2",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 33,
+      "questionLabel": "Q33",
+      "responseKey": "r3-ynng__33",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "33. {{33}}: Cognitive biases are more common in people with lower levels of formal education.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "Human beings like to think of themselves as rational agents: creatures who weigh evidence, consider alternatives, and reach conclusions through careful deliberation. Research in cognitive psychology and behavioural economics over the past half-century has painted a considerably more complicated picture. Our thinking is shaped, often without our awareness, by a range of systematic errors known as cognitive biases—predictable patterns of deviation from logical reasoning that affect individuals across cultures and educational levels.",
+      "sourceExcerptSha256": "f81a500be10ec04264c13aadbb255485e4c91d09ea3d14993ac596d80dac16e9",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 34,
+      "questionLabel": "Q34",
+      "responseKey": "r3-ynng__34",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "34. {{34}}: Gigerenzer argues that simple decision rules can outperform complex statistical models in some situations.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "Not all researchers accept that biases are as universal or as harmful as the standard account implies. Gerd Gigerenzer, a German psychologist, has argued that many so-called biases are actually ecological rationality in action: heuristics that perform well in the environments in which they evolved. A doctor who relies on a simple decision rule—such as admitting all patients with two or more risk factors—may outperform a statistical algorithm that weighs hundreds of variables, precisely because the simpler rule avoids overfitting to noisy data. Gigerenzer's view is that the bias literature too often tests human reasoning against an inappropriate standard of formal logic and ignores the practical value of fast and frugal thinking.",
+      "sourceExcerptSha256": "567b1d7a3f4484583ef14a05f7141f06ed43533722ba967a1103876950d94d92",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 35,
+      "questionLabel": "Q35",
+      "responseKey": "r3-ynng__35",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "questionPrompt": "35. {{35}}: The nudging approach to policy design has been proven to eliminate cognitive biases.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+      "sourceExcerptSha256": "deb5f120c9799494c774837c7ace48d1a19cc88df5eef9d04875ee2d6eea3bf7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage contradicts the proposition or states the inverse with the relevant scope; the negative judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 36,
+      "questionLabel": "Q36",
+      "responseKey": "r3-ynng__36",
+      "kind": "fill",
+      "evidenceClass": "judgement",
+      "points": 1,
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "questionPrompt": "36. {{36}}: Research on cognitive bias has influenced legal proceedings in some countries.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+      "sourceExcerptSha256": "deb5f120c9799494c774837c7ace48d1a19cc88df5eef9d04875ee2d6eea3bf7",
+      "verdict": "SUPPORTED",
+      "rationale": "The cited passage directly states or unambiguously paraphrases the proposition without changing its scope; the positive judgement is required."
+    },
+    {
+      "skill": "reading",
+      "question": 37,
+      "questionLabel": "Q37",
+      "responseKey": "r3-sent__37",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "confirmation"
+      ],
+      "questionPrompt": "37. The tendency to interpret evidence in favour of existing beliefs is known as {{37}} bias.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "One of the most widely studied biases is confirmation bias: the tendency to search for, interpret, and recall information in a way that confirms one's pre-existing beliefs. Studies consistently show that people evaluate identical evidence more favourably when it supports their views and more critically when it contradicts them. The bias can enter at several stages: a person may choose sources likely to agree, demand stronger proof from an opposing claim, or remember supportive examples more readily afterwards. Greater access to information does not automatically solve the problem if selection itself is biased. This asymmetry has significant consequences in contexts ranging from medical diagnosis—where clinicians may too readily accept initial assessments—to political belief, where exposure to contradictory information can, paradoxically, entrench rather than revise opinion.",
+      "sourceExcerptSha256": "44d5a4fec4bff9d585f6655811b29ed7e9845031f32ef7e5ba0a47e94a6566a2",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "confirmation",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "confirmation",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 38,
+      "questionLabel": "Q38",
+      "responseKey": "r3-sent__38",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "ecological rationality"
+      ],
+      "questionPrompt": "38. Gigerenzer uses the phrase {{38}} to describe efficient, practical thinking adapted to real-world conditions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "Not all researchers accept that biases are as universal or as harmful as the standard account implies. Gerd Gigerenzer, a German psychologist, has argued that many so-called biases are actually ecological rationality in action: heuristics that perform well in the environments in which they evolved. A doctor who relies on a simple decision rule—such as admitting all patients with two or more risk factors—may outperform a statistical algorithm that weighs hundreds of variables, precisely because the simpler rule avoids overfitting to noisy data. Gigerenzer's view is that the bias literature too often tests human reasoning against an inappropriate standard of formal logic and ignores the practical value of fast and frugal thinking.",
+      "sourceExcerptSha256": "567b1d7a3f4484583ef14a05f7141f06ed43533722ba967a1103876950d94d92",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "ecological rationality",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "ecological rationality",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 39,
+      "questionLabel": "Q39",
+      "responseKey": "r3-sent__39",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "nudging"
+      ],
+      "questionPrompt": "39. \"{{39}}\" is a policy design approach that uses knowledge of biases to encourage beneficial choices.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+      "sourceExcerptSha256": "deb5f120c9799494c774837c7ace48d1a19cc88df5eef9d04875ee2d6eea3bf7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "nudging",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "nudging",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    },
+    {
+      "skill": "reading",
+      "question": 40,
+      "questionLabel": "Q40",
+      "responseKey": "r3-sent__40",
+      "kind": "fill",
+      "evidenceClass": "completion",
+      "points": 1,
+      "acceptedAnswers": [
+        "checklists"
+      ],
+      "questionPrompt": "40. In hospitals, the use of {{40}} and structured protocols helps reduce the influence of biases on clinical decisions.",
+      "sourcePart": 7,
+      "sourceTitle": "Reading — Passage 3: Cognitive Biases and Decision-Making",
+      "sourceExcerpt": "The applied implications of cognitive bias research have been extensive. In public policy, the concept of \"nudging\"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.",
+      "sourceExcerptSha256": "deb5f120c9799494c774837c7ace48d1a19cc88df5eef9d04875ee2d6eea3bf7",
+      "verdict": "SUPPORTED",
+      "rationale": "The effective material states the keyed value in the required answer context, and every accepted form stays within the printed word limit.",
+      "sourceAnswerForm": "checklists",
+      "acceptedAnswerEvidence": [
+        {
+          "answer": "checklists",
+          "basis": "LITERAL",
+          "rationale": "This accepted form appears verbatim in the cited effective material."
+        }
+      ],
+      "maxWords": 2,
+      "limitStatus": "PASS"
+    }
+  ],
+  "findings": [],
+  "reviewSha256": "3de8c1e24555416f4eb27061a2831a72aea9961fb298eeea1931d5b45501058f"
+}
