@@ -3,10 +3,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import set1 from '../src/data/mocks/goethe-a1-set-1.ts';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-set-1.ts'), 'utf8');
 const runnerSource = fs.readFileSync(path.join(repoRoot, 'src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheA1PracticeClient.tsx'), 'utf8');
+const runnerStyles = fs.readFileSync(path.join(repoRoot, 'src/app/(site)/examenes/[exam]/practica/[mockId]/goethe-a1.module.css'), 'utf8');
 const submissionSource = fs.readFileSync(path.join(repoRoot, 'src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheSubmission.tsx'), 'utf8');
 const scoringSource = fs.readFileSync(path.join(repoRoot, 'src/lib/goethe/scoring.ts'), 'utf8');
 const serverSource = fs.readFileSync(path.join(repoRoot, 'src/lib/goethe/submission.server.ts'), 'utf8');
@@ -38,6 +40,10 @@ function uniqueMatches(pattern) {
   return [...new Set([...source.matchAll(pattern)].map(match => match[0]))];
 }
 
+function words(value = '') {
+  return value.match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) ?? [];
+}
+
 assert.match(source, /timeMinutes:\s*80/);
 assert.deepEqual(script.parts.map(part => part.items.length), [6, 4, 5], 'Hören must contain 6 + 4 + 5 scored items');
 assert.deepEqual(script.parts.map(part => part.plays), [2, 1, 2], 'Hören replay policy must be 2 + 1 + 2');
@@ -47,7 +53,7 @@ assert.equal(uniqueMatches(/g-a1-1-sp\d+/g).length, 3, 'expected 3 speaking ids'
 assert.match(source, /qRange:\s*\[1, 5\]/, 'writing form must contain five blanks');
 assert.match(source, /minWords:\s*30/, 'open writing target must be about 30 words');
 assert.match(runnerSource, /Karte ziehen/, 'speaking cards must be revealed one at a time');
-assert.match(runnerSource, /Antwortübersicht/, 'submission must show an omitted-answer summary');
+assert.doesNotMatch(runnerSource, /Antwortübersicht/, 'exam mode must proceed directly to secure delivery without an answer sheet');
 assert.match(scoringSource, /GOETHE_FACTOR = 1\.66/, 'results must use the official 1.66 factor');
 assert.match(runnerSource, /Revisión detallada/, 'results must include answer-by-answer feedback');
 assert.match(runnerSource, /useState<DeliveryMode>\('simulation'\)/, 'the public route must open in exam mode');
@@ -63,6 +69,23 @@ assert.match(serverSource, /scoreGoetheAutomatic/, 'objective scoring must be re
 assert.match(serverSource, /submission_status: 'uploading'/, 'submission must be persisted before audio upload');
 assert.match(adminSource, /completeGoetheReview/, 'admin must be able to close the Goethe review');
 assert.match(adminSource, /30 respuestas objetivas/, 'admin must receive the answer-by-answer sheet');
+
+const readingTwo = set1.sections.find(section => section.part === 5);
+assert.equal(readingTwo?.questions.length, 5, 'Lesen Teil 2 must contain five advert pairs');
+for (const question of readingTwo?.questions ?? []) {
+  assert.equal(question.stimulus?.split('\n\n').length, 2, `${question.id} needs one independent A/B advert pair`);
+  assert.ok(words(question.stimulus).length >= 22 && words(question.stimulus).length <= 48, `${question.id} advert pair has ${words(question.stimulus).length} words`);
+}
+const readingThree = set1.sections.find(section => section.part === 6);
+const noticeLengths = readingThree?.questions.map(question => words(question.stimulus).length) ?? [];
+assert.equal(noticeLengths.length, 5, 'Lesen Teil 3 must contain five notices');
+assert.ok(noticeLengths.every(length => length >= 6 && length <= 25), `Lesen Teil 3 notices must stay inside the A1 envelope: ${noticeLengths.join('/')}`);
+assert.ok(Math.min(...noticeLengths) <= 10 && Math.max(...noticeLengths) >= 16, `Lesen Teil 3 needs authentic short/long variation: ${noticeLengths.join('/')}`);
+assert.ok(new Set(noticeLengths).size >= 3, `Lesen Teil 3 notices are too uniform: ${noticeLengths.join('/')}`);
+assert.match(runnerSource, /function ReadingAdPair/, 'Set 1 Anzeigen need an integrated A/B advert renderer');
+assert.match(runnerSource, /renderReadingAdCards=\{mock\.id === 'a1-1' \|\| mock\.id === 'a1-2'\}/, 'both Goethe A1 sets must use the compact advert renderer');
+assert.match(runnerStyles, /\.readingAdGrid/, 'the compact advert layout is missing');
+assert.match(runnerStyles, /\.readingAdThumb/, 'the photographic advert header is missing');
 
 assert.ok(fs.existsSync(audioManifestPath), 'audio manifest is missing; run generate-goethe-a1-set1-audio.mjs');
 const audioManifest = JSON.parse(fs.readFileSync(audioManifestPath, 'utf8'));
@@ -96,3 +119,4 @@ assert.ok(complete.durationSeconds >= 1020 && complete.durationSeconds <= 1200, 
 
 console.log('✓ Goethe A1 Set 1: 11 partes, Hören 15, Lesen 15, Schreiben 5+10, Sprechen 3+6+6');
 console.log(`✓ Audio completo: ${(complete.durationSeconds / 60).toFixed(2)} min · 19 assets verificados · 15 láminas visuales`);
+console.log(`✓ Lesen visual: anuncios A/B con texto integrado · avisos Teil 3 variados ${noticeLengths.join('/')} palabras`);

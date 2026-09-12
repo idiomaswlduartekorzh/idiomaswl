@@ -1,141 +1,126 @@
 import type { MockExam } from './types';
 
-// Goethe-Zertifikat A1 (Start Deutsch 1) — formato oficial Modellsatz. Conteúdo ORIGINAL WeLearn.
-// Áudio sob /audio/goethe/a1-2/ — ver checklist de mídia.
-
+// Goethe-Zertifikat A1 (Start Deutsch 1): contenido ORIGINAL de WeLearn.
+// Replica la arquitectura pública del Modellsatz/Übungssatz sin copiar sus estímulos.
+// Audio original WeLearn producido después de cerrar la auditoría editorial y visual.
 const mock: MockExam = {
-  id: 'a1-2',
-  examSlug: 'goethe',
-  title: 'Goethe-Zertifikat A1 – Übungstest 2',
-  subtitle: 'Hören · Lesen · Schreiben · Sprechen',
-  timeMinutes: 65,
+  id: 'a1-2', examSlug: 'goethe',
+  title: 'A1 – Simulacro 2 · formato Start Deutsch 1',
+  subtitle: 'Hören · Lesen · Schreiben · Sprechen · contenido original WeLearn',
+  timeMinutes: 80,
   sections: [
     {
       part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche',
-      instructions: 'Was ist richtig? Hören Sie jedes Gespräch einmal und wählen Sie die richtige Antwort.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil1.mp3',
-      transcript: `Gespräch 1 — Frau: Wo ist die Post, bitte? Mann: Gehen Sie geradeaus und dann die erste Straße links.\n\nGespräch 2 — Kind: Was kostet das Eis? Verkäufer: Eine Kugel kostet einen Euro fünfzig.\n\nGespräch 3 — Mann: Welche Farbe hat dein neues Auto? Frau: Es ist blau.\n\nGespräch 4 — Frau: Wie viele Personen kommen zum Essen? Mann: Wir sind fünf, mit den Kindern.`,
+      instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil1.mp3?v=20260912',
       questions: [
-        { type: 'mcq', id: 'g-a1-2-h1', part: 1, text: 'Wo ist die Post?', options: ['Geradeaus, erste Straße rechts', 'Geradeaus, erste Straße links', 'Zweite Straße links'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-h2', part: 1, text: 'Was kostet eine Kugel Eis?', options: ['2,00 €', '1,00 €', '1,50 €'], answer: 2 },
-        { type: 'mcq', id: 'g-a1-2-h3', part: 1, text: 'Welche Farbe hat das Auto?', options: ['Grün', 'Blau', 'Rot'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-h4', part: 1, text: 'Wie viele Personen kommen zum Essen?', options: ['Drei', 'Fünf', 'Zwei'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h1', part: 1, text: 'Was kostet der Rucksack heute?', options: ['24,90 €', '34,90 €', '44,90 €'], answer: 2 },
+        { type: 'mcq', id: 'g-a1-2-h2', part: 1, text: 'Wann fährt der Bus ab?', options: ['8:15 Uhr', '8:30 Uhr', '8:45 Uhr'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h3', part: 1, text: 'Was trinkt die Frau?', options: ['eine Tasse Kaffee', 'ein Glas Orangensaft', 'eine Tasse Tee'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h4', part: 1, text: 'Wie viele Postkarten kauft der Mann?', options: ['drei', 'fünf', 'acht'], answer: 2 },
+        { type: 'mcq', id: 'g-a1-2-h5', part: 1, text: 'Wo ist die Apotheke?', options: ['im Erdgeschoss', 'im ersten Stock', 'im zweiten Stock'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h6', part: 1, text: 'Wie fährt die Frau zum Flughafen?', options: ['mit dem Bus', 'mit dem Zug', 'mit dem Taxi'], answer: 1 },
       ],
     },
     {
-      part: 2, skill: 'listening', title: 'Hören – Teil 2: Durchsagen',
-      instructions: 'Kreuzen Sie an: richtig oder falsch? Sie hören jede Durchsage einmal.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil2.mp3',
-      transcript: `Durchsage 1 — Liebe Fahrgäste, der Bus der Linie 12 hat heute zehn Minuten Verspätung.\n\nDurchsage 2 — Achtung im Supermarkt: Heute gibt es frische Erdbeeren im Angebot, nur zwei Euro.\n\nDurchsage 3 — Guten Tag. Das Schwimmbad ist heute wegen Reparatur geschlossen.`,
+      part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen',
+      instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil2.mp3?v=20260912',
       questions: [
-        { type: 'mcq', id: 'g-a1-2-h5', part: 2, text: 'Der Bus Linie 12 kommt pünktlich.', options: ['Richtig', 'Falsch'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-h6', part: 2, text: 'Die Erdbeeren kosten zwei Euro.', options: ['Falsch', 'Richtig'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-h7', part: 2, text: 'Das Schwimmbad ist heute geöffnet.', options: ['Falsch', 'Richtig'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h7', part: 2, text: 'Der Eingang zum Museum ist links.', options: ['Richtig', 'Falsch'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h8', part: 2, text: 'Die Bäckerei schließt heute um 18:30 Uhr.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h9', part: 2, text: 'Das Schwimmbad ist heute geschlossen.', options: ['Richtig', 'Falsch'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h10', part: 2, text: 'Der Flug nach Madrid geht von Ausgang B8.', options: ['Richtig', 'Falsch'], answer: 0 },
       ],
     },
     {
-      part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonansagen',
-      instructions: 'Was ist richtig? Hören Sie jede Ansage einmal und wählen Sie die richtige Antwort.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil3.mp3',
-      transcript: `Ansage 1 — Hallo Sabine, hier ist Klaus. Ich hole dich morgen um neun Uhr mit dem Auto ab. Warte bitte vor dem Haus.\n\nAnsage 2 — Guten Tag, hier ist das Reisebüro Sonne. Ihre Flugtickets sind fertig. Sie können sie am Freitag abholen.\n\nAnsage 3 — Hi Papa, hier ist Nina. Ich komme heute später nach Hause, so gegen sieben. Ich bin bei Lena.`,
+      part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten',
+      instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil3.mp3?v=20260912',
       questions: [
-        { type: 'mcq', id: 'g-a1-2-h8', part: 3, text: 'Wann holt Klaus Sabine ab?', options: ['Um 7 Uhr', 'Um 9 Uhr morgen', 'Um 9 Uhr heute'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-h9', part: 3, text: 'Wann kann man die Flugtickets abholen?', options: ['Am Montag', 'Heute', 'Am Freitag'], answer: 2 },
-        { type: 'mcq', id: 'g-a1-2-h10', part: 3, text: 'Wann kommt Nina nach Hause?', options: ['Um 5 Uhr', 'Gegen 7 Uhr', 'Am Morgen'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h11', part: 3, text: 'Wann ist der Termin?', options: ['Montag um 15 Uhr', 'Dienstag um 15 Uhr', 'Dienstag um 17 Uhr'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h12', part: 3, text: 'Wo wartet Mila?', options: ['vor dem Bankgebäude', 'an der Bushaltestelle', 'im kleinen Stadtcafé'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-h13', part: 3, text: 'Wann kann Frau Klein das Paket abholen?', options: ['heute bis 18 Uhr', 'morgen ab 8 Uhr', 'morgen ab 10 Uhr'], answer: 2 },
+        { type: 'mcq', id: 'g-a1-2-h14', part: 3, text: 'Was soll Leo mitbringen?', options: ['seinen Schlüssel', 'seinen Laptop', 'seine Kamera'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-h15', part: 3, text: 'Warum kommt Anna später?', options: ['Ihr Bus fällt aus.', 'Ihr Zug hat Verspätung.', 'Ihr Fahrrad ist kaputt.'], answer: 1 },
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Lesen – Teil 1: E-Mails',
-      instructions: 'Lesen Sie die E-Mail. Kreuzen Sie an: richtig oder falsch?',
-      passage: `Hallo Tom,\n\nvielen Dank für deine E-Mail! Ja, ich komme gern mit ins Schwimmbad. Aber am Sonntag kann ich leider nicht, ich besuche meine Oma. Können wir am Samstag gehen? Ich habe um 14 Uhr Zeit. Bitte bring auch deinen Bruder mit. Das Wetter soll schön werden.\n\nBis Samstag!\nFelix`,
-      passageTitle: 'E-Mail von Felix',
+      part: 4, skill: 'reading', title: 'Lesen – Teil 1: Nachrichten',
+      instructions: 'Lesen Sie zuerst Text A und die Aufgaben 1 bis 2. Lesen Sie danach Text B und die Aufgaben 3 bis 5. Kreuzen Sie an: Richtig oder Falsch.',
+      passageTitle: 'Persönliche Nachrichten',
+      passage: `TEXT A — Nachricht von Lea
+
+Hallo Karim,
+mein Zug aus Hannover kommt am Donnerstag um 17:40 Uhr in Bremen an. Kannst du mich am Bahnhof abholen? Ich warte vor der Information. Mein Koffer ist sehr schwer. Am Abend möchte ich nur etwas Kleines essen, denn am Freitag beginnt mein Computerkurs schon um acht Uhr.
+
+Liebe Grüße
+Lea
+
+TEXT B — Nachricht von Jana
+
+Hallo zusammen,
+am Sonntag ist der Flohmarkt in unserem Stadtteil. Wir treffen uns um neun Uhr vor der Schule und bauen dort zwei Tische auf. Bitte bringt eure alten Bücher, Kleidung und kleine Sachen mit. Getränke kaufe ich. Um 15 Uhr räumen wir alles wieder weg. Bei starkem Regen findet der Flohmarkt in der Sporthalle statt.
+
+Viele Grüße
+Jana`,
       questions: [
-        { type: 'mcq', id: 'g-a1-2-l1', part: 4, text: 'Felix möchte ins Schwimmbad gehen.', options: ['Richtig', 'Falsch'], answer: 0 },
-        { type: 'mcq', id: 'g-a1-2-l2', part: 4, text: 'Am Sonntag hat Felix keine Zeit.', options: ['Falsch', 'Richtig'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-l3', part: 4, text: 'Felix will am Samstag um 12 Uhr gehen.', options: ['Richtig', 'Falsch'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-l4', part: 4, text: 'Tom soll seinen Bruder mitbringen.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l1', part: 4, stimulusLabel: 'Text A', text: 'Lea kommt am Donnerstag mit dem Zug.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l2', part: 4, stimulusLabel: 'Text A', text: 'Karim soll am Freitagmorgen zum Bahnhof kommen.', options: ['Richtig', 'Falsch'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l3', part: 4, stimulusLabel: 'Text B', text: 'Die Gruppe trifft sich vor der Schule.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l4', part: 4, stimulusLabel: 'Text B', text: 'Jana bittet die anderen, Getränke mitzubringen.', options: ['Richtig', 'Falsch'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l5', part: 4, stimulusLabel: 'Text B', text: 'Der Flohmarkt endet um 15 Uhr.', options: ['Richtig', 'Falsch'], answer: 0 },
       ],
     },
     {
-      part: 5, skill: 'reading', title: 'Lesen – Teil 2: Anzeigen',
-      instructions: 'Lesen Sie die Situationen und die Anzeigen. Wo finden Sie was? Wählen Sie die richtige Anzeige.',
-      passage: `Anzeige A — Fahrschule Müller: Führerschein schnell und günstig. Theorie online, Praxis mit netten Fahrlehrern.\n\nAnzeige B — Bäckerei Korn: Frisches Brot und Kuchen. Täglich ab 6 Uhr geöffnet. Sonntags Brötchen frisch!\n\nAnzeige C — Bibliothek Stadtmitte: Bücher, Zeitschriften und Internet. Mo–Fr 10–19 Uhr. Ausweis kostenlos.`,
-      passageTitle: 'Anzeigen',
+      part: 5, skill: 'reading', title: 'Lesen – Teil 2: Anzeigen und Internetseiten',
+      instructions: 'Wo finden Sie die richtige Information? Lesen Sie die Situation und wählen Sie A oder B.',
       questions: [
-        { type: 'mcq', id: 'g-a1-2-l5', part: 5, text: 'Sie möchten ein Buch lesen. Welche Anzeige passt?', options: ['Anzeige B', 'Anzeige C', 'Anzeige A'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-l6', part: 5, text: 'Sie möchten den Führerschein machen. Welche Anzeige passt?', options: ['Anzeige A', 'Anzeige B', 'Anzeige C'], answer: 0 },
-        { type: 'mcq', id: 'g-a1-2-l7', part: 5, text: 'Sie möchten am Sonntag frische Brötchen kaufen. Welche Anzeige passt?', options: ['Anzeige C', 'Anzeige A', 'Anzeige B'], answer: 2 },
+        { type: 'mcq', id: 'g-a1-2-l6', part: 5, stimulusLabel: 'Sie suchen einen Raum für eine Geburtstagsfeier mit 25 Personen.', stimulus: 'A — Ferienwohnung Rosa: Ruhige Wohnung für zwei Personen. Keine Feiern, keine Haustiere.\n\nB — Café Rosenhof: Heller Feierraum für 20 bis 40 Personen. Essen und Getränke nach Wunsch. Freitag und Samstag bis 24 Uhr.', stimulusStyle: 'notice', text: 'Welche Anzeige passt?', options: ['A', 'B'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l7', part: 5, stimulusLabel: 'Sie müssen am Sonntagmorgen sehr früh zum Flughafen fahren.', stimulus: 'A — Airport-Express: Erste Fahrt täglich um 4:30 Uhr. Direkt vom Hauptbahnhof zum Flughafen. Fahrzeit 28 Minuten.\n\nB — Parkhaus Flughafen: Sicher parken ab 8 Euro pro Tag. Reservierung im Internet.', stimulusStyle: 'notice', text: 'Welche Anzeige passt?', options: ['A', 'B'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l8', part: 5, stimulusLabel: 'Sie arbeiten tagsüber und möchten am Abend Deutsch lernen.', stimulus: 'A — Lernladen: Wörterbücher, Übungsbücher und Lernkarten für Deutsch A1 bis C1. Montag bis Samstag geöffnet.\n\nB — Sprachforum: Deutsch A1 am Montag und Mittwoch von 19 bis 21 Uhr. Kleine Gruppen, Start im Oktober.', stimulusStyle: 'notice', text: 'Welche Anzeige passt?', options: ['A', 'B'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l9', part: 5, stimulusLabel: 'Sie möchten eine Zugfahrt und ein Hotel zusammen buchen.', stimulus: 'A — Reisewelt online: Bahnfahrkarten, Hotels und Wochenendreisen in einem Paket. Beratung auch per Telefon.\n\nB — Kulturkasse: Tickets für Konzerte, Kino und Theater. Keine Reisebuchungen.', stimulusStyle: 'notice', text: 'Welche Anzeige passt?', options: ['A', 'B'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l10', part: 5, stimulusLabel: 'Sie brauchen am Wochenende jemanden für Ihren Hund.', stimulus: 'A — Tierarztzentrum Nord: Untersuchung und Operation nach Termin. Notfälle nur nachts.\n\nB — Hundeglück: Spaziergänge und Betreuung bei Ihnen zu Hause. Auch samstags und sonntags.', stimulusStyle: 'notice', text: 'Welche Anzeige passt?', options: ['A', 'B'], answer: 1 },
       ],
     },
     {
       part: 6, skill: 'reading', title: 'Lesen – Teil 3: Schilder und Hinweise',
-      instructions: 'Lesen Sie die Schilder. Kreuzen Sie an: richtig oder falsch?',
-      passage: `Schild 1 (am Eingang): "Bitte die Schuhe ausziehen."\n\nSchild 2 (im Krankenhaus): "Handys bitte ausschalten."\n\nSchild 3 (am Parkplatz): "Parken nur für Kunden. Maximal 2 Stunden."`,
-      passageTitle: 'Schilder',
+      instructions: 'Lesen Sie die Texte und die Aufgaben 11 bis 15. Kreuzen Sie an: Richtig oder Falsch.',
       questions: [
-        { type: 'mcq', id: 'g-a1-2-l8', part: 6, text: 'Man soll die Schuhe ausziehen.', options: ['Falsch', 'Richtig'], answer: 1 },
-        { type: 'mcq', id: 'g-a1-2-l9', part: 6, text: 'Im Krankenhaus darf das Handy laut sein.', options: ['Falsch', 'Richtig'], answer: 0 },
-        { type: 'mcq', id: 'g-a1-2-l10', part: 6, text: 'Man darf hier maximal zwei Stunden parken.', options: ['Falsch', 'Richtig'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l11', part: 6, stimulusLabel: 'In der Postfiliale', stimulus: 'PAKETE ABHOLEN\nMontag bis Freitag: 14–18 Uhr\nBitte Ausweis und Abholschein mitbringen.\nSamstags bleibt die Filiale geschlossen.', stimulusStyle: 'sign', text: 'Für ein Paket braucht man einen Ausweis.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l12', part: 6, stimulusLabel: 'Vor einem Geschäft', stimulus: 'Fahrradparkplatz hinter dem Haus\nBitte den Eingang freihalten.', stimulusStyle: 'sign', text: 'Fahrräder sollen direkt vor dem Eingang stehen.', options: ['Richtig', 'Falsch'], answer: 1 },
+        { type: 'mcq', id: 'g-a1-2-l13', part: 6, stimulusLabel: 'In einem Café', stimulus: 'Heute keine Kartenzahlung möglich.\nWir bitten um Barzahlung.\nDer nächste Geldautomat ist gegenüber.', stimulusStyle: 'sign', text: 'Heute kann man hier nur mit Bargeld bezahlen.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l14', part: 6, stimulusLabel: 'Im Aufzug', stimulus: 'MAXIMAL 4 PERSONEN\nBitte nicht mehr gemeinsam einsteigen.', stimulusStyle: 'sign', text: 'Vier Personen dürfen zusammen den Aufzug benutzen.', options: ['Richtig', 'Falsch'], answer: 0 },
+        { type: 'mcq', id: 'g-a1-2-l15', part: 6, stimulusLabel: 'An der Bushaltestelle', stimulus: 'HALTESTELLE RATHAUS HEUTE GESCHLOSSEN\nBus 16 hält bis Freitag am Marktplatz vor der Apotheke.\nAb Samstag hält er wieder hier.', stimulusStyle: 'sign', text: 'Der Bus 16 hält heute am Rathaus.', options: ['Richtig', 'Falsch'], answer: 1 },
       ],
     },
     {
       part: 7, skill: 'writing', title: 'Schreiben – Teil 1: Formular',
-      instructions: 'Ihre Freundin Yuki möchte sich in einem Fitnessstudio anmelden. Schreiben Sie die Informationen in Sätzen.',
-      questions: [
-        {
-          type: 'write', id: 'g-a1-2-s1', part: 7, taskNumber: 1,
-          stimulusLabel: 'Anmeldung Fitnessstudio',
-          stimulus: 'Informationen über Yuki:\n• Name: Yuki Tanaka\n• Aus: Japan, wohnt in Berlin\n• Alter: 28 Jahre\n• Beruf: Ärztin\n• Möchte: dreimal pro Woche trainieren, am Abend',
-          text: 'Schreiben Sie 5 kurze Sätze mit den Informationen über Yuki (Name, Herkunft, Wohnort, Alter, Beruf, Wunsch).',
-          minWords: 20,
-        },
-      ],
+      instructions: 'In dem Formular fehlen fünf Informationen. Helfen Sie Ihrem Freund und schreiben Sie die fünf fehlenden Informationen in das Formular.',
+      questions: [{
+        type: 'formgroup', id: 'g-a1-2-s1', part: 7, qRange: [1, 5],
+        groupLabel: 'Ihr Freund Amir Nasser ist 30 Jahre alt und kommt aus Ägypten. Er wohnt in Hamburg, in der Reeperbahn 42, und arbeitet als Reiseleiter. Ab dem 18. September möchte er im Kochstudio Hafen einen Abendkurs besuchen. Amir kann keine Nüsse essen. Seine Telefonnummer ist 0176 529 18 40. Er bezahlt den Kurs per Banküberweisung.',
+        title: 'KOCHSTUDIO HAFEN · Anmeldung zum Abendkurs', example: 'Familienname, Vorname: Nasser, Amir',
+        template: 'Herkunftsland: Ägypten\nAlter: {{1}}\nStraße, Hausnummer: Reeperbahn 42\nWohnort: {{2}}\nTelefon: 0176 529 18 40\nBeruf: {{3}}\nKurs: Abendkurs\nKursbeginn: {{4}}\nWichtige Information zum Essen: {{5}}\nZahlungsweise: Banküberweisung\nUnterschrift: Amir Nasser',
+        blanks: [
+          { num: 1, answers: ['30', '30 Jahre'], maxWords: 2 }, { num: 2, answers: ['Hamburg'], maxWords: 1 },
+          { num: 3, answers: ['Reiseleiter'], maxWords: 1 }, { num: 4, answers: ['18. September', '18 September', '18.09.'], maxWords: 2 },
+          { num: 5, answers: ['keine Nüsse', 'keine Nuesse', 'Nussallergie'], maxWords: 2 },
+        ],
+      }],
     },
     {
       part: 8, skill: 'writing', title: 'Schreiben – Teil 2: Kurze Mitteilung',
-      instructions: 'Schreiben Sie eine kurze Nachricht.',
-      questions: [
-        {
-          type: 'write', id: 'g-a1-2-s2', part: 8, taskNumber: 2,
-          stimulusLabel: 'Einladung an einen Freund',
-          stimulus: 'Situation: Sie möchten am Wochenende mit Ihrem Freund Ben Fußball spielen. Schreiben Sie ihm eine Nachricht.',
-          text: 'Schreiben Sie an Ben: 1) Vorschlag (Fußball spielen am Samstag), 2) Wo und wann?, 3) Bitte um Antwort. Schreiben Sie 3–4 Sätze mit Anrede und Gruß. (ca. 30 Wörter)',
-          minWords: 30,
-        },
-      ],
+      instructions: 'Schreiben Sie einen kurzen Text. Schreiben Sie zu jedem Punkt ein bis zwei Sätze sowie eine Anrede und einen Gruß.',
+      questions: [{
+        type: 'write', id: 'g-a1-2-s2', part: 8, taskNumber: 1, stimulusLabel: 'Nachricht an Frau Brandt',
+        stimulus: 'Sie möchten am Freitag bei Ihrer Hausmeisterin Frau Brandt den Schlüssel für Ihre neue Wohnung abholen. Sie haben 16 Uhr vereinbart, kommen aber später.',
+        text: '• Warum schreiben Sie?\n• Sagen Sie: Sie kommen um 17:30 Uhr.\n• Fragen Sie: Wo ist der Schlüssel, wenn Frau Brandt nicht da ist?\n\nSchreiben Sie circa 30 Wörter. Schreiben Sie auch eine Anrede und einen Gruß.', minWords: 30,
+      }],
     },
-    {
-      part: 9, skill: 'speaking', title: 'Sprechen – Teil 1: Sich vorstellen',
-      instructions: 'Stellen Sie sich vor. Sprechen Sie über sich.',
-      questions: [
-        {
-          type: 'speak', id: 'g-a1-2-sp1', part: 9, partNumber: 1,
-          text: 'Stellen Sie sich vor: Name, Alter, Land, Wohnort, Sprachen, Beruf und Hobby. Buchstabieren Sie Ihren Namen und nennen Sie Ihre Telefonnummer.',
-        },
-      ],
-    },
-    {
-      part: 10, skill: 'speaking', title: 'Sprechen – Teil 2: Um Informationen bitten',
-      instructions: 'Stellen Sie Fragen und antworten Sie zum Thema auf den Karten.',
-      questions: [
-        {
-          type: 'speak', id: 'g-a1-2-sp2', part: 10, partNumber: 2,
-          text: 'Thema: "Freizeit". Bilden Sie zu jedem Wort eine Frage und antworten Sie.',
-          cueCard: 'Wörter zum Thema Freizeit:\n• Hobby\n• Wochenende\n• Sport\n• Wie oft?\n• Mit wem?\n\nBeispiel: "Was machst du am Wochenende?"',
-        },
-      ],
-    },
-    {
-      part: 11, skill: 'speaking', title: 'Sprechen – Teil 3: Bitten und darauf reagieren',
-      instructions: 'Bitten Sie um etwas und reagieren Sie auf die Bitten Ihres Partners.',
-      questions: [
-        {
-          type: 'speak', id: 'g-a1-2-sp3', part: 11, partNumber: 3,
-          text: 'Formulieren Sie höfliche Bitten zu den Bildkarten und reagieren Sie darauf.',
-          cueCard: 'Bildkarten (Situationen):\n• die Tür schließen\n• den Stift geben\n• die Heizung anmachen\n• einen Kaffee\n\nBeispiel: "Kannst du bitte die Tür schließen?" – "Ja, natürlich."',
-        },
-      ],
-    },
+    { part: 9, skill: 'speaking', title: 'Sprechen – Teil 1: Sich vorstellen', instructions: 'Stellen Sie sich vor. Buchstabieren Sie danach Ihren Familiennamen und nennen Sie eine Telefonnummer.', questions: [{ type: 'speak', id: 'g-a1-2-sp1', part: 9, partNumber: 1, text: 'Name · Alter · Land · Wohnort · Sprachen · Beruf · Hobby\n\nDanach: Familienname buchstabieren und Telefonnummer nennen.' }] },
+    { part: 10, skill: 'speaking', title: 'Sprechen – Teil 2: Um Informationen bitten und Informationen geben', instructions: 'Formulieren Sie zu jeder Karte eine Frage. Antworten Sie auf die Frage Ihrer Partnerin oder Ihres Partners.', questions: [{ type: 'speak', id: 'g-a1-2-sp2', part: 10, partNumber: 2, text: 'Runde 1: Wohnen · Runde 2: Reisen', cueCard: 'WOHNEN\nZimmer · Miete · Balkon · Nachbarn · Küche · Stadtteil\n\nREISEN\nZiel · Zug · Koffer · Hotel · Dauer · Urlaub' }] },
+    { part: 11, skill: 'speaking', title: 'Sprechen – Teil 3: Bitten formulieren und darauf reagieren', instructions: 'Formulieren Sie zwei höfliche Bitten. Reagieren Sie auf zwei Bitten Ihrer Partnerin oder Ihres Partners.', questions: [{ type: 'speak', id: 'g-a1-2-sp3', part: 11, partNumber: 3, text: 'Benutzen Sie die Bildkarten. Beispiel: „Können Sie mir bitte das Salz geben?“ – „Ja, gern.“', cueCard: 'Salz · Glas · Schlüssel · Lampe · Teller · Jacke\nFenster · Handy · Fahrkarte · Kamera · Tür · Taxi' }] },
   ],
 };
 

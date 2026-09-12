@@ -3,6 +3,8 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import goetheA1Set1 from '@/data/mocks/goethe-a1-set-1'
+import goetheA1Set2 from '@/data/mocks/goethe-a1-set-2'
+import type { MockExam } from '@/data/mocks/types'
 import { completeGoetheScore, scoreGoetheAutomatic } from '@/lib/goethe/scoring'
 import { GOETHE_SUBMISSION_ID_PATTERN } from '@/lib/goethe/submission-token.server'
 import type { GoetheReviewPayload } from '@/lib/goethe/submission'
@@ -11,6 +13,7 @@ const WRITING_CONTENT = new Set([0, 1.5, 3])
 const WRITING_CONVENTIONS = new Set([0, 0.5, 1])
 const SPEAKING_PART1 = new Set([0, 0.5, 1, 1.5, 2, 2.5, 3])
 const SPEAKING_PART23 = new Set(Array.from({ length: 13 }, (_, index) => index / 2))
+const GOETHE_A1_MOCKS = new Map<string, MockExam>([[goetheA1Set1.id, goetheA1Set1], [goetheA1Set2.id, goetheA1Set2]])
 
 export async function completeGoetheReview(input: {
   submissionId: string
@@ -31,14 +34,16 @@ export async function completeGoetheReview(input: {
 
   const admin = createAdminClient()
   const { data: submission, error: readError } = await admin.from('exam_submissions')
-    .select('id, objective_answers, reviewed_at').eq('id', input.submissionId).eq('exam_slug', 'goethe')
-    .eq('mock_id', 'a1-1').eq('submission_status', 'submitted').maybeSingle()
+    .select('id, mock_id, objective_answers, reviewed_at').eq('id', input.submissionId).eq('exam_slug', 'goethe')
+    .in('mock_id', [...GOETHE_A1_MOCKS.keys()]).eq('submission_status', 'submitted').maybeSingle()
   if (readError) throw readError
   if (!submission) throw new Error('No encontramos una entrega Goethe A1 válida.')
   if (submission.reviewed_at) throw new Error('Esta entrega ya tiene una revisión cerrada.')
+  const mock = GOETHE_A1_MOCKS.get(submission.mock_id)
+  if (!mock) throw new Error('El simulacro Goethe A1 no tiene una rúbrica registrada.')
 
   const responses = (submission.objective_answers ?? {}) as { answers?: Record<string, number>; formValues?: Record<string, string> }
-  const automatic = scoreGoetheAutomatic(goetheA1Set1, responses.answers ?? {}, responses.formValues ?? {})
+  const automatic = scoreGoetheAutomatic(mock, responses.answers ?? {}, responses.formValues ?? {})
   const writingRaw = input.writing.content1 + input.writing.content2 + input.writing.content3 + input.writing.conventions
   const speakingRaw = input.speaking.part1 + input.speaking.part2 + input.speaking.part3
   const result = completeGoetheScore(automatic, writingRaw, speakingRaw)

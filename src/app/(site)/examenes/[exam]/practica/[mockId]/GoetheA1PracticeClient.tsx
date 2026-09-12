@@ -23,7 +23,11 @@ const SKILLS: Array<{ id: Skill; label: string; minutes: number; points: number 
   { id: 'speaking', label: 'Sprechen', minutes: 15, points: 25 },
 ];
 
-const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+type Plate = { src: string; alt: string; width: number; height: number };
+type SpeakingPictureCard = { label: string; sheet?: number; column?: number; row?: number };
+type ReadingExample = { question: string; options: string[]; answer: number; stimulus?: string; adCopy?: string };
+
+const SET1_LISTENING_PLATES: Record<number, Plate> = {
   1: { src: '/images/goethe/a1-1/hoeren-teil1-01-jacke.png', alt: 'Drei Bildoptionen: blaue Jacke zu 18,90, 28,90 oder 38,90 Euro', width: 2172, height: 724 },
   2: { src: '/images/goethe/a1-1/hoeren-teil1-02-uhrzeit.png', alt: 'Drei Uhrzeiten: 16:30, 16:45 und 17:15 Uhr', width: 2036, height: 772 },
   3: { src: '/images/goethe/a1-1/hoeren-teil1-03-essen.png', alt: 'Drei Bildoptionen: Tomatensuppe, Salat und Käsebrot', width: 2172, height: 724 },
@@ -32,7 +36,7 @@ const LISTENING_PLATES: Record<number, { src: string; alt: string; width: number
   6: { src: '/images/goethe/a1-1/hoeren-teil1-06-reise.png', alt: 'Drei Reisedauern: zwei Nächte, drei Nächte oder eine Woche', width: 2036, height: 772 },
 };
 
-const LISTENING_EXAMPLE_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+const SET1_LISTENING_EXAMPLE_PLATES: Record<number, Plate> = {
   1: {
     src: '/images/goethe/a1-1/hoeren-teil1-00-beispiel-uhrzeit.png',
     alt: 'Beispiel mit drei Bildoptionen: heute um 9 Uhr, heute um 10 Uhr und morgen um 9 Uhr',
@@ -41,7 +45,7 @@ const LISTENING_EXAMPLE_PLATES: Record<number, { src: string; alt: string; width
   },
 };
 
-const READING_AD_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+const SET1_READING_AD_PLATES: Record<number, Plate> = {
   6: { src: '/images/goethe/a1-1/lesen-teil2-06-fahrrad.png', alt: 'Anzeigen A und B: Fahrradgeschäft mit Werkstatt und geführte Fahrradtour durch die Stadt', width: 1536, height: 1024 },
   7: { src: '/images/goethe/a1-1/lesen-teil2-07-deutschkurs.png', alt: 'Anzeigen A und B: Deutschkurs für Erwachsene und Buchhandlung mit Lernbüchern', width: 1536, height: 1024 },
   8: { src: '/images/goethe/a1-1/lesen-teil2-08-fruehstueck.png', alt: 'Anzeigen A und B: Gästezimmer mit Frühstück und Frühstücksbuffet im Restaurant', width: 1536, height: 1024 },
@@ -49,11 +53,36 @@ const READING_AD_PLATES: Record<number, { src: string; alt: string; width: numbe
   10: { src: '/images/goethe/a1-1/lesen-teil2-10-apotheke.png', alt: 'Anzeigen A und B: Arztpraxis am Tag und geöffnete Apotheke in der Nacht', width: 1536, height: 1024 },
 };
 
-const READING_EXAMPLE_PLATES: Record<number, { src: string; alt: string; width: number; height: number }> = {
+const SET1_READING_EXAMPLE_PLATES: Record<number, Plate> = {
   5: { src: '/images/goethe/a1-1/lesen-teil2-00-beispiel-wetter.png', alt: 'Beispielanzeigen A und B: Open-Air-Konzert im Regen und Wetterinformation für Deutschland', width: 1536, height: 1024 },
 };
 
-const SPEAKING_PICTURE_CARDS = [
+const SET2_LISTENING_EXAMPLE_PLATES: Record<number, Plate> = {
+  1: { src: '/images/goethe/a1-2/hoeren-teil1-00-beispiel-buslinie.png', alt: 'Drei Bildoptionen mit einem roten, einem blauen und einem gelben Stadtbus', width: 2172, height: 724 },
+};
+
+const SET2_LISTENING_PLATES: Record<number, Plate> = {
+  1: { src: '/images/goethe/a1-2/hoeren-teil1-01-rucksack.png', alt: 'Drei rote Rucksäcke mit den Preisen 24,90, 34,90 und 44,90 Euro', width: 2172, height: 724 },
+  2: { src: '/images/goethe/a1-2/hoeren-teil1-02-uhrzeit.png', alt: 'Drei Bahnhofsuhren zeigen 8:15, 8:30 und 8:45 Uhr', width: 2172, height: 724 },
+  3: { src: '/images/goethe/a1-2/hoeren-teil1-03-getraenk.png', alt: 'Drei Getränke: Kaffee, Orangensaft und Tee', width: 2172, height: 724 },
+  4: { src: '/images/goethe/a1-2/hoeren-teil1-04-postkarten.png', alt: 'Drei Gruppen mit drei, fünf und acht Postkarten', width: 2172, height: 724 },
+  5: { src: '/images/goethe/a1-2/hoeren-teil1-05-apotheke.png', alt: 'Die Apotheke liegt im Erdgeschoss, im ersten oder im zweiten Stock', width: 2172, height: 724 },
+  6: { src: '/images/goethe/a1-2/hoeren-teil1-06-flughafen.png', alt: 'Drei Möglichkeiten zum Flughafen: Bus, Zug und Taxi', width: 2172, height: 724 },
+};
+
+const SET2_READING_AD_PLATES: Record<number, Plate> = {
+  6: { src: '/images/goethe/a1-2/lesen-teil2-06-feierraum.png', alt: 'Anzeige A zeigt eine ruhige Ferienwohnung, Anzeige B einen Raum für eine große Geburtstagsfeier', width: 1536, height: 1024 },
+  7: { src: '/images/goethe/a1-2/lesen-teil2-07-flughafen.png', alt: 'Anzeige A zeigt einen frühen Flughafenbus, Anzeige B ein Parkhaus am Flughafen', width: 1536, height: 1024 },
+  8: { src: '/images/goethe/a1-2/lesen-teil2-08-deutschkurs.png', alt: 'Anzeige A zeigt Lernbücher, Anzeige B einen Deutschkurs am Abend', width: 1536, height: 1024 },
+  9: { src: '/images/goethe/a1-2/lesen-teil2-09-reise.png', alt: 'Anzeige A zeigt eine Buchung von Zug und Hotel, Anzeige B eine Kulturkasse', width: 1536, height: 1024 },
+  10: { src: '/images/goethe/a1-2/lesen-teil2-10-hund.png', alt: 'Anzeige A zeigt eine Tierarztpraxis, Anzeige B eine Hundebetreuung', width: 1536, height: 1024 },
+};
+
+const SET2_READING_EXAMPLE_PLATES: Record<number, Plate> = {
+  5: { src: '/images/goethe/a1-2/lesen-teil2-00-beispiel-wetter.png', alt: 'Beispielanzeigen A und B: Wetterinformation für Österreich und ein Open-Air-Konzert', width: 1536, height: 1024 },
+};
+
+const SET1_SPEAKING_PICTURE_CARDS: SpeakingPictureCard[] = [
   { label: 'Wasser', sheet: 1, column: 0, row: 0 },
   { label: 'Fenster', sheet: 1, column: 1, row: 0 },
   { label: 'Bleistift', sheet: 1, column: 2, row: 0 },
@@ -68,16 +97,63 @@ const SPEAKING_PICTURE_CARDS = [
   { label: 'Tür', sheet: 2, column: 2, row: 1 },
 ];
 
-const LISTENING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; note: string }> = {
-  1: { question: 'Wann kommt der Mann heute?', options: ['9 Uhr', '10 Uhr', 'morgen um 9 Uhr'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
-  2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
+const SET2_SPEAKING_PICTURE_CARDS: SpeakingPictureCard[] = [
+  { label: 'Salz', sheet: 1, column: 0, row: 0 }, { label: 'Glas', sheet: 1, column: 1, row: 0 },
+  { label: 'Schlüssel', sheet: 1, column: 2, row: 0 }, { label: 'Lampe', sheet: 1, column: 0, row: 1 },
+  { label: 'Teller', sheet: 1, column: 1, row: 1 }, { label: 'Jacke', sheet: 1, column: 2, row: 1 },
+  { label: 'Fenster', sheet: 2, column: 0, row: 0 }, { label: 'Handy', sheet: 2, column: 1, row: 0 },
+  { label: 'Fahrkarte', sheet: 2, column: 2, row: 0 }, { label: 'Kamera', sheet: 2, column: 0, row: 1 },
+  { label: 'Tür', sheet: 2, column: 1, row: 1 }, { label: 'Taxi', sheet: 2, column: 2, row: 1 },
+];
+
+const LISTENING_EXAMPLES: Record<string, Record<number, { question: string; options: string[]; answer: number; note: string }>> = {
+  'a1-1': {
+    1: { question: 'Wann kommt der Mann heute?', options: ['9 Uhr', '10 Uhr', 'morgen um 9 Uhr'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
+    2: { question: 'Das Café schließt heute um 18 Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
+  },
+  'a1-2': {
+    1: { question: 'Welche Buslinie fährt zum Zentrum?', options: ['Linie 2', 'Linie 12', 'Linie 20'], answer: 1, note: 'Das Beispiel hören Sie zweimal.' },
+    2: { question: 'Der Markt öffnet heute um neun Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
+  },
 };
 
-const READING_EXAMPLES: Record<number, { question: string; options: string[]; answer: number; stimulus?: string }> = {
-  4: { question: 'Nora schreibt Luis eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0 },
-  5: { question: 'Wo finden Sie Informationen über das Wetter in Deutschland?', options: ['A', 'B'], answer: 1, stimulus: 'Sie möchten wissen: Regnet es morgen in Deutschland?' },
-  6: { question: 'Hier muss man leise sein.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'BIBLIOTHEK · Bitte leise sprechen.' },
+const READING_EXAMPLES: Record<string, Record<number, ReadingExample>> = {
+  'a1-1': {
+    4: { question: 'Nora schreibt Luis eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0 },
+    5: {
+      question: 'Wo finden Sie Informationen über das Wetter in Deutschland?',
+      options: ['A', 'B'],
+      answer: 1,
+      stimulus: 'Sie möchten wissen: Regnet es morgen in Deutschland?',
+      adCopy: 'A — Sommerbühne: Open-Air-Konzert am Samstagabend. Bei Regen findet das Konzert in der Stadthalle statt.\n\nB — DeutschlandWetter: Wetter für ganz Deutschland. Temperaturen, Regen und Sonne für heute und morgen.',
+    },
+    6: { question: 'Hier muss man leise sein.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'BIBLIOTHEK · Bitte leise sprechen.' },
+  },
+  'a1-2': {
+    4: { question: 'Lea schreibt Karim eine persönliche Nachricht.', options: ['Richtig', 'Falsch'], answer: 0 },
+    5: {
+      question: 'Wo finden Sie Informationen über das Wetter in Österreich?',
+      options: ['A', 'B'],
+      answer: 0,
+      stimulus: 'Sie planen einen Ausflug und möchten wissen: Regnet es morgen?',
+      adCopy: 'A — AlpenWetter: Wetter für Österreich. Temperaturen, Regen und Sonne für heute und morgen.\n\nB — Stadtklang: Open-Air-Konzert am Samstag. Bei Regen findet das Konzert in der Stadthalle statt.',
+    },
+    6: { question: 'Hier darf man heute nicht parken.', options: ['Richtig', 'Falsch'], answer: 0, stimulus: 'PARKPLATZ HEUTE GESCHLOSSEN.' },
+  },
 };
+
+function mediaFor(mockId: string) {
+  if (mockId === 'a1-1') return {
+    listening: SET1_LISTENING_PLATES,
+    listeningExamples: SET1_LISTENING_EXAMPLE_PLATES,
+    readingAds: SET1_READING_AD_PLATES,
+    readingExamples: SET1_READING_EXAMPLE_PLATES,
+  };
+  return { listening: SET2_LISTENING_PLATES, listeningExamples: SET2_LISTENING_EXAMPLE_PLATES, readingAds: SET2_READING_AD_PLATES, readingExamples: SET2_READING_EXAMPLE_PLATES } as {
+    listening: Record<number, Plate>; listeningExamples: Record<number, Plate>;
+    readingAds: Record<number, Plate>; readingExamples: Record<number, Plate>;
+  };
+}
 
 function normalise(value: string) {
   return value.trim().toLocaleLowerCase('de-DE').replace(/[.,;:!?]+$/g, '').replace(/\s+/g, ' ');
@@ -108,31 +184,69 @@ function formattedOption(question: MCQQuestion, index: number) {
   return question.options[index] === letter ? letter : `${letter} · ${question.options[index]}`;
 }
 
-function ObjectiveItem({ question, number, value, onChange, showResult, visual, readingAd, hideContextLabel }: {
+function ReadingAdPair({ plate, stimulus }: { plate: Plate; stimulus: string }) {
+  const adverts = stimulus.split('\n\n').map((block, index) => {
+    const match = block.trim().match(/^([AB])\s+—\s+([^:]+):\s*([\s\S]*)$/);
+    return {
+      letter: match?.[1] ?? String.fromCharCode(65 + index),
+      title: match?.[2] ?? 'Anzeige',
+      body: match?.[3] ?? block.trim(),
+    };
+  });
+
+  return (
+    <div className={styles.readingAdGrid} aria-label={plate.alt}>
+      {adverts.map((advert, index) => (
+        <article key={`${advert.letter}-${advert.title}`} className={styles.readingAdCard}>
+          <div className={styles.readingAdChrome}>
+            <span>{advert.letter}</span>
+            <i>Anzeige · Internetseite</i>
+          </div>
+          <div className={styles.readingAdThumb} aria-hidden="true">
+            <Image
+              src={plate.src}
+              alt=""
+              width={plate.width}
+              height={plate.height}
+              sizes="(max-width: 720px) 100vw, 360px"
+              style={{ left: index === 0 ? '0' : '-100%' }}
+            />
+          </div>
+          <div className={styles.readingAdCopy}>
+            <strong>{advert.title}</strong>
+            <p>{advert.body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function ObjectiveItem({ question, number, value, onChange, showResult, visualPlate, readingAdPlate, renderReadingAdCards, hideContextLabel }: {
   question: MCQQuestion;
   number: number;
   value?: number;
   onChange: (value: number) => void;
   showResult?: boolean;
-  visual?: boolean;
-  readingAd?: boolean;
+  visualPlate?: Plate;
+  readingAdPlate?: Plate;
+  renderReadingAdCards?: boolean;
   hideContextLabel?: boolean;
 }) {
-  const visualPlate = visual ? LISTENING_PLATES[number] : undefined;
-  const readingAdPlate = readingAd ? READING_AD_PLATES[number] : undefined;
   return (
     <fieldset className={styles.question}>
       <legend><span className={styles.questionNumber}>{number}</span>{question.text}</legend>
       {visualPlate && <Image className={styles.answerPlate} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
       {question.stimulusLabel && !hideContextLabel && <p className={styles.contextLabel}>{question.stimulusLabel}</p>}
-      {readingAdPlate && <Image className={styles.readingAdPlate} src={readingAdPlate.src} alt={readingAdPlate.alt} width={readingAdPlate.width} height={readingAdPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
-      {question.stimulus && readingAdPlate && <p className={styles.srOnly}>{question.stimulus}</p>}
+      {readingAdPlate && question.stimulus && renderReadingAdCards && <ReadingAdPair plate={readingAdPlate} stimulus={question.stimulus} />}
+      {readingAdPlate && !renderReadingAdCards && <Image className={styles.readingAdPlate} src={readingAdPlate.src} alt={readingAdPlate.alt} width={readingAdPlate.width} height={readingAdPlate.height} sizes="(max-width: 720px) 100vw, 900px" />}
+      {question.stimulus && readingAdPlate && !renderReadingAdCards && <p className={styles.srOnly}>{question.stimulus}</p>}
       {question.stimulus && !readingAdPlate && (
         <div className={question.stimulusStyle === 'sign' ? styles.sign : styles.adPair}>
           {question.stimulus.split('\n\n').map((block, index) => <div key={index}>{block}</div>)}
         </div>
       )}
-      <div className={`${styles.options} ${visual ? styles.visualOptions : ''}`}>
+      <div className={`${styles.options} ${visualPlate ? styles.visualOptions : ''}`}>
         {question.options.map((option, index) => {
           const correct = showResult && index === question.answer;
           const wrong = showResult && value === index && index !== question.answer;
@@ -155,12 +269,13 @@ function ObjectiveItem({ question, number, value, onChange, showResult, visual, 
   );
 }
 
-function ResolvedExample({ question, options, answer, note, stimulus, visualPlate }: {
+function ResolvedExample({ question, options, answer, note, stimulus, adCopy, visualPlate }: {
   question: string;
   options: string[];
   answer: number;
   note?: string;
   stimulus?: string;
+  adCopy?: string;
   visualPlate?: { src: string; alt: string; width: number; height: number };
 }) {
   return (
@@ -168,7 +283,7 @@ function ResolvedExample({ question, options, answer, note, stimulus, visualPlat
       <div className={styles.exampleLabel}>Beispiel · gelöst</div>
       <p className={styles.exampleQuestion}><span className={styles.questionNumber}>0</span>{question}</p>
       {stimulus && <p className={styles.exampleStimulus}>{stimulus}</p>}
-      {visualPlate && <Image className={`${styles.examplePlate} ${visualPlate.width / visualPlate.height > 2 ? styles.examplePlateWide : ''}`} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 680px" />}
+      {visualPlate && adCopy ? <ReadingAdPair plate={visualPlate} stimulus={adCopy} /> : visualPlate && <Image className={`${styles.examplePlate} ${visualPlate.width / visualPlate.height > 2 ? styles.examplePlateWide : ''}`} src={visualPlate.src} alt={visualPlate.alt} width={visualPlate.width} height={visualPlate.height} sizes="(max-width: 720px) 100vw, 680px" />}
       <div className={styles.exampleOptions}>
         {options.map((option, index) => (
           <label key={option} className={`${styles.option} ${index === answer ? styles.exampleCorrect : ''}`}>
@@ -206,6 +321,8 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
   setPlayedParts: (next: Set<number>) => void;
   showResult?: boolean;
 }) {
+  const media = mediaFor(mock.id);
+  const examples = LISTENING_EXAMPLES[mock.id] ?? {};
   return <>{moduleSections(mock, 'listening').map(section => (
     <SectionShell key={section.part} section={section}>
       {section.audioUrl && !showResult && (
@@ -223,11 +340,16 @@ function ListeningModule({ mock, answers, setAnswer, mode, playedParts, setPlaye
           />
         </div>
       )}
-      {LISTENING_EXAMPLES[section.part] && (
-        <ResolvedExample {...LISTENING_EXAMPLES[section.part]} visualPlate={LISTENING_EXAMPLE_PLATES[section.part]} />
+      {!section.audioUrl && !showResult && (
+        <div className={styles.audioCard}>
+          <div><strong>Audio Teil {section.part}</strong><span>Guion listo · producción y control de calidad pendientes</span></div>
+        </div>
+      )}
+      {examples[section.part] && (
+        <ResolvedExample {...examples[section.part]} visualPlate={media.listeningExamples[section.part]} />
       )}
       <div className={styles.questionList}>
-        {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} visual={section.part === 1} />)}
+        {(section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} visualPlate={section.part === 1 ? media.listening[itemNumber(question)] : undefined} />)}
       </div>
     </SectionShell>
   ))}</>;
@@ -239,6 +361,8 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
   setAnswer: (id: string, answer: number) => void;
   showResult?: boolean;
 }) {
+  const media = mediaFor(mock.id);
+  const examples = READING_EXAMPLES[mock.id] ?? {};
   return <>{moduleSections(mock, 'reading').map(section => {
     const questions = section.questions.filter(question => question.type === 'mcq') as MCQQuestion[];
     if (section.part === 4 && section.passage) {
@@ -255,7 +379,7 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
                   <span id={`reading-document-${index}`}>{document.label}</span>
                   <pre>{document.body}</pre>
                 </article>
-                {index === 0 && <ResolvedExample {...READING_EXAMPLES[section.part]} />}
+                {index === 0 && examples[section.part] && <ResolvedExample {...examples[section.part]} />}
                 <div className={styles.questionList}>
                   {questions.filter(question => question.stimulusLabel === document.label).map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} hideContextLabel />)}
                 </div>
@@ -267,9 +391,9 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
     }
     return (
       <SectionShell key={section.part} section={section}>
-        {READING_EXAMPLES[section.part] && <ResolvedExample {...READING_EXAMPLES[section.part]} visualPlate={READING_EXAMPLE_PLATES[section.part]} />}
+        {examples[section.part] && <ResolvedExample {...examples[section.part]} visualPlate={media.readingExamples[section.part]} />}
         <div className={styles.questionList}>
-          {questions.map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAd={section.part === 5} />)}
+          {questions.map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAdPlate={section.part === 5 ? media.readingAds[itemNumber(question)] : undefined} renderReadingAdCards={mock.id === 'a1-1' || mock.id === 'a1-2'} />)}
         </div>
       </SectionShell>
     );
@@ -359,17 +483,19 @@ function shuffleIndices(length: number) {
   return indices;
 }
 
-function SpeakingCardDeck({ part, groups, mode, currentIndex, order, onIndexChange, onOrderChange }: {
+function SpeakingCardDeck({ part, groups, mode, mockId, currentIndex, order, onIndexChange, onOrderChange }: {
   part: number;
   groups: Array<{ title: string; cards: string[] }>;
   mode: DeliveryMode;
+  mockId: string;
   currentIndex: number;
   order: number[];
   onIndexChange: (index: number) => void;
   onOrderChange: (order: number[]) => void;
 }) {
   const wordCards = groups.flatMap(group => group.cards.map(label => ({ kind: 'word' as const, label, theme: group.title })));
-  const pictureCards = SPEAKING_PICTURE_CARDS.map(card => ({ kind: 'picture' as const, ...card }));
+  const pictureCardSource = mockId === 'a1-1' ? SET1_SPEAKING_PICTURE_CARDS : SET2_SPEAKING_PICTURE_CARDS;
+  const pictureCards = pictureCardSource.map(card => ({ kind: 'picture' as const, ...card }));
   const cards = part === 11 ? pictureCards : wordCards;
   const orderedCards = order.length === cards.length ? order.map(index => cards[index]) : cards;
   const current = currentIndex >= 0 ? orderedCards[currentIndex] : undefined;
@@ -382,14 +508,14 @@ function SpeakingCardDeck({ part, groups, mode, currentIndex, order, onIndexChan
         {current?.kind === 'word' && <div className={styles.currentWordCard}><span>{current.theme}</span><strong>{current.label}</strong></div>}
         {current?.kind === 'picture' && (
           <div className={styles.currentPictureCard} aria-label={`Bildkarte: ${current.label}`}>
-            <Image
-              src={`/images/goethe/a1-1/sprechen-teil3-karten-0${current.sheet}.png`}
+            {current.sheet !== undefined ? <Image
+              src={`/images/goethe/${mockId}/sprechen-teil3-karten-0${current.sheet}.png`}
               alt={`Bildkarte: ${current.label}`}
               width={1536}
               height={1024}
               sizes="(max-width: 720px) 80vw, 420px"
-              style={{ width: '300%', height: '200%', maxWidth: 'none', left: `-${current.column * 100}%`, top: `-${current.row * 100}%` }}
-            />
+              style={{ width: '300%', height: '200%', maxWidth: 'none', left: `-${(current.column ?? 0) * 100}%`, top: `-${(current.row ?? 0) * 100}%` }}
+            /> : <strong>{current.label}</strong>}
           </div>
         )}
       </div>
@@ -420,7 +546,7 @@ function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, car
       <SectionShell key={section.part} section={section}>
         <div className={styles.speakingTask}>
           <pre className={styles.speakingPrompt}>{question.text}</pre>
-          {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} currentIndex={cardProgress[section.part] ?? -1} order={cardOrders[section.part] ?? []} onIndexChange={index => onCardProgress(section.part, index)} onOrderChange={order => onCardOrder(section.part, order)} />}
+          {question.cueCard && <SpeakingCardDeck part={section.part} groups={groups} mode={mode} mockId={mock.id} currentIndex={cardProgress[section.part] ?? -1} order={cardOrders[section.part] ?? []} onIndexChange={index => onCardProgress(section.part, index)} onOrderChange={order => onCardOrder(section.part, order)} />}
           <div className={styles.recorder}>
             <p>Grabación privada para la evaluación final</p>
             <IELTSSpeakingRecorder questionId={question.id} recording={recordings[question.id]} maxSeconds={section.part === 9 ? 180 : 300} onChange={recording => onRecording(question.id, recording)} />
@@ -500,34 +626,6 @@ function FormReview({ question, values }: { question: FormGroupQuestion; values:
   );
 }
 
-function SubmissionReview({ listeningMissing, readingMissing, formMissing, writingMissing, onBack, onSubmit }: {
-  listeningMissing: number;
-  readingMissing: number;
-  formMissing: number;
-  writingMissing: number;
-  onBack: () => void;
-  onSubmit: () => void;
-}) {
-  const totalMissing = listeningMissing + readingMissing + formMissing + writingMissing;
-  return (
-    <section className={styles.submitReview} aria-labelledby="submit-review-title">
-      <p>Antwortübersicht</p>
-      <h2 id="submit-review-title">{totalMissing ? `${totalMissing} Aufgaben noch offen` : 'Schriftlicher Teil vollständig'}</h2>
-      <ul>
-        <li><span>Hören</span><strong>{listeningMissing ? `${listeningMissing} offen` : 'vollständig'}</strong></li>
-        <li><span>Lesen</span><strong>{readingMissing ? `${readingMissing} offen` : 'vollständig'}</strong></li>
-        <li><span>Schreiben · Formular</span><strong>{formMissing ? `${formMissing} offen` : 'vollständig'}</strong></li>
-        <li><span>Schreiben · Nachricht</span><strong>{writingMissing ? 'nicht begonnen' : 'vorhanden'}</strong></li>
-      </ul>
-      <small>Sprechen se realiza en vivo y el docente completa su evaluación en el informe final.</small>
-      <div>
-        <button type="button" className={styles.secondary} onClick={onBack}>Zurück zur Prüfung</button>
-        <button type="button" className={styles.primary} onClick={onSubmit}>{totalMissing ? 'Trotzdem abgeben' : 'Prüfung abgeben'}</button>
-      </div>
-    </section>
-  );
-}
-
 export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
   // El modo guiado/clase permanece implementado para su futura ruta, pero esta entrega abre únicamente el examen.
@@ -540,9 +638,10 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const [playedParts, setPlayedParts] = useState(new Set<number>());
   const [receipt, setReceipt] = useState<GoetheSubmissionReceipt | null>(null);
   const [resultStatus, setResultStatus] = useState<GoetheResultStatus | null>(null);
-  const [showSubmitReview, setShowSubmitReview] = useState(false);
   const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
   const [speakingCardOrders, setSpeakingCardOrders] = useState<Record<number, number[]>>({});
+  const submissionReady = mock.id === 'a1-1' || mock.id === 'a1-2';
+  const setNumber = mock.id.split('-').at(-1) ?? '1';
 
   const listeningQuestions = useMemo(() => objectiveQuestions(mock, 'listening'), [mock]);
   const readingQuestions = useMemo(() => objectiveQuestions(mock, 'reading'), [mock]);
@@ -563,7 +662,6 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
   const listeningMissing = listeningQuestions.filter(question => answers[question.id] === undefined).length;
   const readingMissing = readingQuestions.filter(question => answers[question.id] === undefined).length;
   const formMissing = formQuestion.blanks.filter(blank => !formValues[blank.num]?.trim()).length;
-  const writingMissing = writing.trim() ? 0 : 1;
   const activeSkillIndex = SKILLS.findIndex(skill => skill.id === activeSkill);
   const activeSkillMeta = SKILLS[activeSkillIndex];
   const nextSkill = SKILLS[activeSkillIndex + 1];
@@ -586,16 +684,15 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
 
   function advanceExam() {
     if (!nextSkill) {
-      setShowSubmitReview(true);
+      setPhase('submit');
     } else {
       setActiveSkill(nextSkill.id);
-      setShowSubmitReview(false);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function restart() {
-    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setShowSubmitReview(false); setSpeakingCardProgress({}); setSpeakingCardOrders({});
+    setPhase('intro'); setActiveSkill('listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setSpeakingCardProgress({}); setSpeakingCardOrders({});
   }
 
   return (
@@ -607,11 +704,11 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               <div className={styles.brand}><span>WELEARN</span><span>DEUTSCH A1</span></div>
               <p className={styles.eyebrow}>Goethe-Zertifikat A1 · Prüfungssimulation</p>
               <h1>{mock.title}</h1>
-              <p className={styles.lead}>Simulacro completo con las cuatro destrezas, 80 minutos y resultado sobre 100 puntos.</p>
+              <p className={styles.lead}>{submissionReady ? 'Simulacro completo con las cuatro destrezas, 80 minutos y resultado sobre 100 puntos.' : 'Borrador estructural completo para revisar contenido, secuencia y componentes antes de producir los medios.'}</p>
               <div className={styles.introStats}><div><strong>4</strong><span>Prüfungsteile</span></div><div><strong>60</strong><span>Rohpunkte</span></div><div><strong>60</strong><span>zum Bestehen</span></div></div>
               <div className={styles.moduleGrid}>{SKILLS.map(skill => <article key={skill.id}><div><strong>{skill.label}</strong><small>{skill.minutes} Minuten</small></div><span>{skill.points} P.</span></article>)}</div>
-              <div className={styles.introNotice}><strong>Antes de empezar</strong><p>El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.</p></div>
-              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>Empezar examen</button></div>
+              <div className={styles.introNotice}><strong>Antes de empezar</strong><p>{submissionReady ? 'El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.' : 'El audio se producirá al final. En esta fase se revisan la lógica completa, Lesen, Schreiben y las tarjetas de Sprechen.'}</p></div>
+              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>{submissionReady ? 'Empezar examen' : 'Revisar borrador estructural'}</button></div>
               <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
               <Link className={styles.backLink} href={`/examenes/${exam.slug}`}>← Volver a Goethe</Link>
             </div>
@@ -621,15 +718,12 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
         {phase === 'exam' && (
           <>
             <header className={styles.topbar}>
-              <div><span>WELEARN · A1</span><strong>Simulacro 1</strong></div>
+              <div><span>WELEARN · A1</span><strong>Simulacro {setNumber}</strong></div>
               <div className={styles.topbarStatus}><span>Bloque {activeSkillIndex + 1} de {SKILLS.length} · {objectiveAnswered}/30 objetivas</span>{mode === 'simulation' && <Timer totalSecs={80 * 60} onExpire={() => setPhase('submit')} />}</div>
             </header>
             <ol className={styles.tabs} aria-label="Progreso del examen">{SKILLS.map((skill, index) => <li key={skill.id} className={index < activeSkillIndex ? styles.tabComplete : activeSkill === skill.id ? styles.tabActive : styles.tabPending} aria-current={activeSkill === skill.id ? 'step' : undefined}><span><b>{index + 1}</b>{skill.label}</span><small>{index < activeSkillIndex ? 'Cerrado' : activeSkill === skill.id ? 'En curso' : `${skill.minutes} min`}</small></li>)}</ol>
             <main className={styles.exam}>
-              {showSubmitReview ? (
-                <SubmissionReview listeningMissing={listeningMissing} readingMissing={readingMissing} formMissing={formMissing} writingMissing={writingMissing} onBack={() => setShowSubmitReview(false)} onSubmit={() => setPhase('submit')} />
-              ) : (
-                <>
+              <>
                   {activeSkill === 'listening' && <ListeningModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
                   {activeSkill === 'reading' && <ReadingModule mock={mock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
                   {activeSkill === 'writing' && <WritingModule mock={mock} formValues={formValues} onFormChange={(number, value) => setFormValues(previous => ({ ...previous, [number]: value }))} textValue={writing} onTextChange={setWriting} />}
@@ -638,8 +732,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
                     <div><span>Bloque {activeSkillIndex + 1} de {SKILLS.length}</span><strong>{activeSkillMeta.label}</strong><small>Al continuar, este bloque queda cerrado.</small></div>
                     <button className={styles.primary} onClick={advanceExam}>{nextSkill ? `Cerrar ${activeSkillMeta.label} y continuar a ${nextSkill.label}` : 'Finalizar examen'}</button>
                   </div>
-                </>
-              )}
+              </>
             </main>
           </>
         )}
@@ -656,7 +749,7 @@ export default function GoetheA1PracticeClient({ exam, mock }: { exam: Exam; moc
               recordings={recordings}
               objectiveMissing={listeningMissing + readingMissing}
               formMissing={formMissing}
-              onBack={() => { setPhase('exam'); setActiveSkill('speaking'); setShowSubmitReview(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onBack={() => { setPhase('exam'); setActiveSkill('speaking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               onSuccess={nextReceipt => { setReceipt(nextReceipt); setResultStatus(null); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             />
           </main>

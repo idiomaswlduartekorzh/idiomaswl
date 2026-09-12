@@ -52,7 +52,7 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
       ? <TOPIKPracticeClient exam={exam} mock={mock} />
       : <LanguagePracticeClient exam={exam} mock={mock} />;
   }
-  if (slug === 'goethe' && mockId === 'a1-1') {
+  if (slug === 'goethe' && (mockId === 'a1-1' || mockId === 'a1-2')) {
     return <GoetheA1PracticeClient exam={exam} mock={mock} />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;

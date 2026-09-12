@@ -6,7 +6,7 @@ import { saveLead } from '@/lib/actions/saveLead'
 import { isPlausibleWhatsapp } from '@/lib/leads/contact'
 import type { IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder'
 import {
-  GOETHE_A1_CONTENT_VERSION,
+  getGoetheA1ContentVersion,
   GOETHE_SPEAKING_BUCKET,
   GOETHE_SUBMISSION_CONSENT_VERSION,
   type GoetheCompleteResponse,
@@ -92,7 +92,7 @@ export default function GoetheSubmission({
         leadSaved.current = true
       }
       const payload = {
-        contentVersion: GOETHE_A1_CONTENT_VERSION,
+        contentVersion: getGoetheA1ContentVersion(mockId),
         consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION,
         name: cleanName,
         email: cleanEmail,
@@ -148,7 +148,7 @@ export default function GoetheSubmission({
         <article className={missingAudio ? styles.deliveryMissing : styles.deliveryReady}><strong>Sprechen</strong><span>{audioEntries.length}/3 grabaciones {missingAudio ? '· faltan audios' : '· listas'}</span></article>
       </div>
 
-      {audioEntries.length > 0 && <ul className={styles.deliveryAudioList}>{audioEntries.map(({ questionId, recording }) => <li key={questionId}><span>{questionId.replace('g-a1-1-sp', 'Sprechen Teil ')}</span><strong>{formatDuration(recording.durationSeconds)}</strong></li>)}</ul>}
+      {audioEntries.length > 0 && <ul className={styles.deliveryAudioList}>{audioEntries.map(({ questionId, recording }) => <li key={questionId}><span>{questionId.replace(/g-a1-\d+-sp/, 'Sprechen Teil ')}</span><strong>{formatDuration(recording.durationSeconds)}</strong></li>)}</ul>}
       {openCount > 0 && <p className={styles.deliveryWarning}>Puedes entregar respuestas escritas incompletas; los campos vacíos cuentan como cero. Los tres audios sí son necesarios para que administración pueda evaluar Sprechen.</p>}
 
       <form className={styles.deliveryForm} onSubmit={submit} noValidate>

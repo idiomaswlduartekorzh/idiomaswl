@@ -1,6 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { completeGoetheScore, scaleGoetheRaw, scoreGoetheAutomatic } from '../src/lib/goethe/scoring.ts'
+import goetheA1Set2 from '../src/data/mocks/goethe-a1-set-2.ts'
+import { getGoetheA1ContentVersion } from '../src/lib/goethe/submission.ts'
 
 const objective = (prefix, part) => Array.from({ length: 15 }, (_, index) => ({
   type: 'mcq', id: `${prefix}${index + 1}`, part, text: `Aufgabe ${index + 1}`, options: ['A', 'B', 'C'], answer: index % 3,
@@ -27,6 +29,23 @@ test('automatic score ignores client claims and uses the frozen answer key', () 
   const answers = Object.fromEntries(mock.sections.flatMap(section => section.questions).flatMap(question => question.type === 'mcq' ? [[question.id, question.answer]] : []))
   const formValues = { '1': '27', '2': 'Köln', '3': '01574089231', '4': '14. Oktober', '5': 'bar' }
   assert.deepEqual(scoreGoetheAutomatic(mock, answers, formValues), {
+    listeningCorrect: 15,
+    readingCorrect: 15,
+    formCorrect: 5,
+    automaticRaw: 35,
+    automaticScaled: 58,
+  })
+})
+
+test('Set 2 has its own frozen version and independent perfect-score key', () => {
+  assert.equal(getGoetheA1ContentVersion('a1-1'), 'goethe-a1-1-2026-09-12-r2')
+  assert.equal(getGoetheA1ContentVersion('a1-2'), 'goethe-a1-2-2026-09-12-r2')
+  assert.equal(getGoetheA1ContentVersion('a1-3'), null)
+  const questions = goetheA1Set2.sections.flatMap(section => section.questions)
+  const answers = Object.fromEntries(questions.flatMap(question => question.type === 'mcq' ? [[question.id, question.answer]] : []))
+  const form = questions.find(question => question.type === 'formgroup')
+  const formValues = Object.fromEntries(form.blanks.map(blank => [String(blank.num), blank.answers[0]]))
+  assert.deepEqual(scoreGoetheAutomatic(goetheA1Set2, answers, formValues), {
     listeningCorrect: 15,
     readingCorrect: 15,
     formCorrect: 5,

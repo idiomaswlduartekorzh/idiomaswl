@@ -4,11 +4,12 @@ import { randomUUID } from 'node:crypto'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import goetheA1Set1 from '@/data/mocks/goethe-a1-set-1'
-import type { FormGroupQuestion, MCQQuestion, SpeakQuestion } from '@/data/mocks/types'
+import goetheA1Set2 from '@/data/mocks/goethe-a1-set-2'
+import type { FormGroupQuestion, MCQQuestion, MockExam, SpeakQuestion } from '@/data/mocks/types'
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server'
 import { scoreGoetheAutomatic } from './scoring'
 import {
-  GOETHE_A1_CONTENT_VERSION,
+  getGoetheA1ContentVersion,
   GOETHE_SPEAKING_BUCKET,
   GOETHE_SUBMISSION_CONSENT_VERSION,
   type GoetheAudioDescriptor,
@@ -26,6 +27,17 @@ const MAX_TOTAL_AUDIO_BYTES = 30 * 1024 * 1024
 const ALLOWED_MIME_TYPES = new Set(['audio/webm', 'audio/mp4', 'audio/ogg', 'audio/mpeg', 'audio/wav', 'audio/x-m4a'])
 
 interface ErrorResponse { ok: false; error: string }
+
+const GOETHE_A1_MOCKS = new Map<string, MockExam>([
+  [goetheA1Set1.id, goetheA1Set1],
+  [goetheA1Set2.id, goetheA1Set2],
+])
+
+function resolveMock(mockId: string): { mock: MockExam; contentVersion: string } | null {
+  const mock = GOETHE_A1_MOCKS.get(mockId)
+  const contentVersion = getGoetheA1ContentVersion(mockId)
+  return mock && contentVersion ? { mock, contentVersion } : null
+}
 
 function jsonError(error: string, status: number, headers?: HeadersInit): Response {
   return Response.json({ ok: false, error } satisfies ErrorResponse, { status, headers })
@@ -89,12 +101,12 @@ function cleanAudio(value: unknown, speakingIds: ReadonlySet<string>): GoetheAud
   return seen.size === speakingIds.size ? result : null
 }
 
-function validatePayload(value: unknown): { ok: true; payload: GoetheSubmissionPayload } | { ok: false; error: string } {
+function validatePayload(value: unknown, mock: MockExam, contentVersion: string): { ok: true; payload: GoetheSubmissionPayload } | { ok: false; error: string } {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return { ok: false, error: 'La entrega no tiene un formato válido.' }
   const candidate = value as Partial<GoetheSubmissionPayload>
-  const objective = goetheA1Set1.sections.flatMap(section => section.questions.filter(question => question.type === 'mcq') as MCQQuestion[])
-  const form = goetheA1Set1.sections.flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion
-  const speaking = goetheA1Set1.sections.flatMap(section => section.questions.filter(question => question.type === 'speak') as SpeakQuestion[])
+  const objective = mock.sections.flatMap(section => section.questions.filter(question => question.type === 'mcq') as MCQQuestion[])
+  const form = mock.sections.flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion
+  const speaking = mock.sections.flatMap(section => section.questions.filter(question => question.type === 'speak') as SpeakQuestion[])
   const answers = cleanAnswers(candidate.answers, objective)
   const formValues = cleanStringMap(candidate.formValues, new Set(form.blanks.map(blank => String(blank.num))), 100)
   const cardOrders = cleanCardOrders(candidate.cardOrders)
@@ -103,13 +115,13 @@ function validatePayload(value: unknown): { ok: true; payload: GoetheSubmissionP
   const email = cleanText(candidate.email, 254).toLowerCase()
   const writing = typeof candidate.writing === 'string' ? candidate.writing.slice(0, 5_000) : ''
 
-  if (candidate.contentVersion !== GOETHE_A1_CONTENT_VERSION) return { ok: false, error: 'El examen cambió mientras estaba abierto. Recarga la página antes de enviarlo.' }
+  if (candidate.contentVersion !== contentVersion) return { ok: false, error: 'El examen cambió mientras estaba abierto. Recarga la página antes de enviarlo.' }
   if (candidate.consentVersion !== GOETHE_SUBMISSION_CONSENT_VERSION) return { ok: false, error: 'Debes aceptar el consentimiento académico vigente.' }
   if (name.length < 2) return { ok: false, error: 'Escribe el nombre completo del estudiante.' }
   if (!/^\S+@\S+\.\S+$/.test(email)) return { ok: false, error: 'Escribe un correo electrónico válido.' }
   if (!answers || !formValues || !cardOrders) return { ok: false, error: 'No pudimos verificar una de las respuestas del examen.' }
   if (!audio) return { ok: false, error: 'Necesitamos las tres grabaciones de Sprechen para completar la evaluación.' }
-  return { ok: true, payload: { contentVersion: GOETHE_A1_CONTENT_VERSION, consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION, name, email, answers, formValues, writing, cardOrders, audio } }
+  return { ok: true, payload: { contentVersion, consentVersion: GOETHE_SUBMISSION_CONSENT_VERSION, name, email, answers, formValues, writing, cardOrders, audio } }
 }
 
 function extensionForMime(mimeType: string): string {
@@ -124,8 +136,8 @@ function clientIp(request: Request): string {
   return request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || request.headers.get('x-real-ip') || 'unknown'
 }
 
-function objectiveSnapshot() {
-  return goetheA1Set1.sections.flatMap(section =>
+function objectiveSnapshot(mock: MockExam) {
+  return mock.sections.flatMap(section =>
     (section.questions.filter(question => question.type === 'mcq') as MCQQuestion[]).map(question => ({
       id: question.id,
       skill: section.skill,
@@ -138,8 +150,10 @@ function objectiveSnapshot() {
 }
 
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
-  if (mockId !== goetheA1Set1.id) return jsonError('Este simulacro todavía no admite entregas verificables.', 404)
-  const validated = validatePayload(rawPayload)
+  const resolved = resolveMock(mockId)
+  if (!resolved) return jsonError('Este simulacro todavía no admite entregas verificables.', 404)
+  const { mock, contentVersion } = resolved
+  const validated = validatePayload(rawPayload, mock, contentVersion)
   if (!validated.ok) return jsonError(validated.error, 400)
   const payload = validated.payload
   const ipAllowed = await consumeExamReviewRateLimit({ namespace: 'goethe-submit-ip', identifier: clientIp(request), limit: 100, windowSeconds: 3600 })
@@ -156,7 +170,7 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
   }))
   if (uploads.some(upload => upload.error || !upload.data?.token)) return jsonError('No pudimos abrir el almacenamiento privado de audios. Inténtalo otra vez.', 503)
 
-  const automatic = scoreGoetheAutomatic(goetheA1Set1, payload.answers, payload.formValues)
+  const automatic = scoreGoetheAutomatic(mock, payload.answers, payload.formValues)
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   const speakingMetadata = Object.fromEntries(payload.audio.map(audio => [audio.questionId, audio]))
@@ -168,12 +182,12 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
     exam_slug: 'goethe',
     exam_name: 'Goethe-Zertifikat A1',
     mock_id: mockId,
-    mock_title: goetheA1Set1.title,
-    content_version: GOETHE_A1_CONTENT_VERSION,
+    mock_title: mock.title,
+    content_version: contentVersion,
     assignment_snapshot: {
-      objective: objectiveSnapshot(),
-      form: (goetheA1Set1.sections.flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion),
-      speaking: goetheA1Set1.sections.flatMap(section => section.questions.filter(question => question.type === 'speak')),
+      objective: objectiveSnapshot(mock),
+      form: (mock.sections.flatMap(section => section.questions).find(question => question.type === 'formgroup') as FormGroupQuestion),
+      speaking: mock.sections.flatMap(section => section.questions.filter(question => question.type === 'speak')),
       cardOrders: payload.cardOrders,
       scoring: { scale: 'Start Deutsch 1 raw 60 × 1.66, rounded', passScore: 60 },
     },
@@ -201,7 +215,8 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
 }
 
 async function completeSubmission(mockId: string, submissionId: unknown, token: unknown): Promise<Response> {
-  if (mockId !== goetheA1Set1.id || typeof submissionId !== 'string' || !GOETHE_SUBMISSION_ID_PATTERN.test(submissionId) || !verifyGoetheSubmissionToken(submissionId, token)) {
+  const resolved = resolveMock(mockId)
+  if (!resolved || typeof submissionId !== 'string' || !GOETHE_SUBMISSION_ID_PATTERN.test(submissionId) || !verifyGoetheSubmissionToken(submissionId, token)) {
     return jsonError('La confirmación de la entrega no es válida o venció.', 403)
   }
   const admin = createAdminClient()
@@ -210,7 +225,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
     .eq('id', submissionId).eq('exam_slug', 'goethe').eq('mock_id', mockId).maybeSingle()
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404)
   const objective = (submission.objective_answers ?? {}) as { answers?: Record<string, number>; formValues?: Record<string, string> }
-  const automatic = scoreGoetheAutomatic(goetheA1Set1, objective.answers ?? {}, objective.formValues ?? {})
+  const automatic = scoreGoetheAutomatic(resolved.mock, objective.answers ?? {}, objective.formValues ?? {})
   if (submission.submission_status !== 'submitted') {
     const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>
     const metadata = (submission.speaking_audio_metadata ?? {}) as Record<string, GoetheAudioDescriptor>
@@ -241,7 +256,7 @@ export async function handleGoetheResultRequest(request: Request, mockId: string
   const url = new URL(request.url)
   const submissionId = url.searchParams.get('submissionId')
   const token = url.searchParams.get('token')
-  if (mockId !== goetheA1Set1.id || !submissionId || !GOETHE_SUBMISSION_ID_PATTERN.test(submissionId) || !verifyGoetheSubmissionToken(submissionId, token)) {
+  if (!resolveMock(mockId) || !submissionId || !GOETHE_SUBMISSION_ID_PATTERN.test(submissionId) || !verifyGoetheSubmissionToken(submissionId, token)) {
     return jsonError('El comprobante de resultado no es válido o venció.', 403)
   }
   const { data, error } = await createAdminClient().from('exam_submissions')

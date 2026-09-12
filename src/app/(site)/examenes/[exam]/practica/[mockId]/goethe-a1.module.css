@@ -318,6 +318,77 @@
 .examplePlateWide { width: min(680px, calc(100% - 2.6rem)); }
 .readingAdPlate, .examplePlate:not(.examplePlateWide) { box-shadow: 0 8px 20px rgba(20, 33, 61, 0.06); }
 
+.readingAdGrid {
+  display: grid;
+  width: min(720px, calc(100% - 2.6rem));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0.9rem auto 0;
+}
+
+.readingAdCard {
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid #303846;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 5px 6px 0 #e4e7ed;
+}
+
+.readingAdChrome {
+  display: flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.35rem 0.55rem;
+  border-bottom: 1px solid #596170;
+  background: #edf0f4;
+}
+
+.readingAdChrome span {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #303846;
+  background: #fff;
+  color: var(--goethe-navy);
+  font: 900 0.78rem/1 var(--font-geist-mono, monospace);
+}
+
+.readingAdChrome i {
+  overflow: hidden;
+  color: #596170;
+  font: 700 0.64rem/1.2 var(--font-geist-mono, monospace);
+  font-style: normal;
+  letter-spacing: 0.04em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.readingAdThumb {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+  border-bottom: 1px solid #cbd1db;
+  background: #e9edf3;
+}
+
+.readingAdThumb img {
+  position: absolute;
+  top: -9rem;
+  width: 200%;
+  height: auto;
+  max-width: none;
+}
+
+.readingAdCopy { min-height: 118px; padding: 0.8rem 0.9rem 0.9rem; }
+.readingAdCopy strong { color: var(--goethe-navy); font-size: 1rem; }
+.readingAdCopy p { margin: 0.35rem 0 0; color: #343d4e; font-size: 0.88rem; line-height: 1.5; }
+
 .example {
   margin: 1rem 1.5rem 0;
   padding: 1rem;
@@ -503,7 +574,7 @@
 @media (max-width: 720px) {
   .intro { padding: 0; }
   .introCard { min-height: 100vh; border: 0; border-radius: 0; box-shadow: none; }
-  .moduleGrid, .rubricColumns, .reviewItems, .adPair, .deliverySummary, .deliveryForm { grid-template-columns: 1fr; }
+  .moduleGrid, .rubricColumns, .reviewItems, .adPair, .readingAdGrid, .deliverySummary, .deliveryForm { grid-template-columns: 1fr; }
   .topbar { padding-inline: 0.85rem; }
   .topbarStatus > span, .tabs li small { display: none; }
   .tabs li { padding-inline: 0.35rem; }
@@ -515,7 +586,9 @@
   .question { padding: 0.9rem; }
   .options, .exampleOptions, .contextLabel, .exampleStimulus, .example small { margin-left: 0; }
   .option { min-width: 100%; }
-  .answerPlate, .readingAdPlate, .examplePlate, .examplePlateWide, .sign { width: 100%; margin-left: 0; }
+  .answerPlate, .readingAdPlate, .readingAdGrid, .examplePlate, .examplePlateWide, .sign { width: 100%; margin-left: 0; }
+  .readingAdThumb { height: 88px; }
+  .readingAdCopy { min-height: 0; }
   .example { margin-inline: 0.75rem; }
   .exampleQuestion { align-items: flex-start; }
   .formTask, .writingTask, .speakingTask { padding: 0.9rem; }

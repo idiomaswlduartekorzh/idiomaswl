@@ -2,7 +2,15 @@ import type { GoetheAutomaticScore } from './scoring'
 
 export const GOETHE_SPEAKING_BUCKET = 'goethe-speaking-audio'
 export const GOETHE_SUBMISSION_CONSENT_VERSION = 'goethe-a1-review-consent-v1'
-export const GOETHE_A1_CONTENT_VERSION = 'goethe-a1-1-2026-09-09'
+export const GOETHE_A1_CONTENT_VERSIONS = {
+  'a1-1': 'goethe-a1-1-2026-09-12-r2',
+  'a1-2': 'goethe-a1-2-2026-09-12-r2',
+} as const
+export const GOETHE_A1_CONTENT_VERSION = GOETHE_A1_CONTENT_VERSIONS['a1-1']
+
+export function getGoetheA1ContentVersion(mockId: string): string | null {
+  return GOETHE_A1_CONTENT_VERSIONS[mockId as keyof typeof GOETHE_A1_CONTENT_VERSIONS] ?? null
+}
 
 export interface GoetheAudioDescriptor {
   questionId: string
@@ -12,7 +20,7 @@ export interface GoetheAudioDescriptor {
 }
 
 export interface GoetheSubmissionPayload {
-  contentVersion: typeof GOETHE_A1_CONTENT_VERSION
+  contentVersion: string
   name: string
   email: string
   consentVersion: typeof GOETHE_SUBMISSION_CONSENT_VERSION

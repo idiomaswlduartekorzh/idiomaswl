@@ -1,0 +1,52 @@
+{
+  "mockId": "a1-2",
+  "contentVersion": "goethe-a1-2-2026-09-12-r2",
+  "status": "local-ready",
+  "references": [
+    "https://www.goethe.de/ins/co/es/spr/prf/gzsd1/ueb.html",
+    "https://www.goethe.de/pro/relaunch/prf/materialien/A1_sd1/sd_1_modellsatz.pdf",
+    "https://www.goethe.de/pro/relaunch/prf/materialien/A1_sd1/sd_1_uebungssatz01.pdf",
+    "https://www.goethe.de/pro/relaunch/prf/materialien/A1_sd1/sd_1_uebungssatz02.pdf"
+  ],
+  "releaseGates": {
+    "structure": "ready",
+    "editorial": "ready",
+    "images": "ready-15-of-15",
+    "audio": "ready-19-of-19",
+    "serverScoring": "ready",
+    "production": "ready-for-main"
+  },
+  "expectedImages": [
+    "hoeren-teil1-00-beispiel-buslinie.png",
+    "hoeren-teil1-01-rucksack.png",
+    "hoeren-teil1-02-uhrzeit.png",
+    "hoeren-teil1-03-getraenk.png",
+    "hoeren-teil1-04-postkarten.png",
+    "hoeren-teil1-05-apotheke.png",
+    "hoeren-teil1-06-flughafen.png",
+    "lesen-teil2-00-beispiel-wetter.png",
+    "lesen-teil2-06-feierraum.png",
+    "lesen-teil2-07-flughafen.png",
+    "lesen-teil2-08-deutschkurs.png",
+    "lesen-teil2-09-reise.png",
+    "lesen-teil2-10-hund.png",
+    "sprechen-teil3-karten-01.png",
+    "sprechen-teil3-karten-02.png"
+  ],
+  "expectedAudio": [
+    "hoeren-teil1.mp3",
+    "hoeren-teil2.mp3",
+    "hoeren-teil3.mp3",
+    "hoeren-komplett.mp3",
+    "manifest.json"
+  ],
+  "audioBudget": {
+    "availableCreditsChecked": 15102,
+    "remainingCreditsAfter": 13191,
+    "checkedAt": "2026-09-12",
+    "sourceCharacterTarget": [3600, 4600],
+    "estimatedCredits": [1900, 2200],
+    "actualCredits": 1911,
+    "consumeInThisPhase": true
+  }
+}

@@ -40,10 +40,11 @@ Total: 80 minutos, 100 puntos, aprobación desde 60 puntos.
 ## Láminas visuales originales
 
 - Hören Teil 1 incluye un tríptico A/B/C para el ejemplo y seis trípticos puntuables: precio, hora, comida, cantidades, plantas de biblioteca y duración de viaje.
-- Lesen Teil 2 incluye seis pares A/B con estética de anuncio: un ejemplo de clima y cinco reactivos sobre bicicleta, curso de alemán, alojamiento/desayuno, entradas/viaje y médico/farmacia.
+- Lesen Teil 2 incluye seis pares A/B con estética de anuncio: un ejemplo de clima y cinco reactivos sobre bicicleta, curso de alemán, alojamiento/desayuno, entradas/viaje y médico/farmacia. Cada par se presenta como dos anuncios compactos con fotografía, encabezado y texto HTML integrado, igual que en el Set 2.
+- Los avisos de Lesen Teil 3 alternan deliberadamente textos breves y extensos dentro del rango A1, en lugar de repetir cinco carteles de longitud uniforme.
 - Sprechen Teil 3 incluye dos hojas con doce tarjetas pictográficas para peticiones y reacciones.
 - Son ilustraciones originales de WeLearn generadas para este simulacro; no reutilizan las láminas oficiales.
-- Los textos y números críticos permanecen también como opciones HTML accesibles, para que la evaluación no dependa del reconocimiento visual del texto dentro de una imagen.
+- Los textos y números críticos permanecen como HTML accesible, para que la evaluación no dependa del reconocimiento visual del texto dentro de una imagen.
 
 ## Modos de aplicación
 

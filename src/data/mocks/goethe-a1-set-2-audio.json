@@ -1,0 +1,97 @@
+{
+  "version": "2026-09-12-audio-ready",
+  "locale": "de-DE",
+  "status": "ready-existing",
+  "production": {
+    "provider": "ElevenLabs",
+    "generateLast": true,
+    "manifest": "/audio/goethe/a1-2/manifest.json",
+    "cueFrequenciesHz": [990, 831, 698],
+    "cueDurationSeconds": 2.1,
+    "targetLufs": -18,
+    "format": "mp3 mono 44.1 kHz 64 kbps"
+  },
+  "parts": [
+    {
+      "id": 1,
+      "plays": 2,
+      "intro": "Hören, Teil eins. Sie hören sechs kurze Gespräche. Zu jedem Gespräch gibt es eine Aufgabe. Wählen Sie A, B oder C. Sie hören jeden Text zweimal.",
+      "example": {
+        "question": "Welche Buslinie fährt zum Zentrum?",
+        "options": ["Linie 2", "Linie 12", "Linie 20"],
+        "answer": 1,
+        "turns": [
+          { "voice": "female", "text": "Entschuldigung, fährt die Linie zwei zum Zentrum?" },
+          { "voice": "male", "text": "Nein, nehmen Sie die Linie zwölf. Die Linie zwanzig fährt zum Krankenhaus." },
+          { "voice": "female", "text": "Also die zwölf. Vielen Dank." }
+        ]
+      },
+      "items": [
+        { "number": 1, "turns": [
+          { "voice": "male", "text": "Guten Tag. Was kostet der rote Rucksack?" },
+          { "voice": "female", "text": "Vierundvierzig Euro neunzig. Nur der blaue kostet heute vierunddreißig Euro neunzig." },
+          { "voice": "male", "text": "Und das Schild mit vierundzwanzig Euro neunzig?" },
+          { "voice": "female", "text": "Das ist für den kleinen Kinderrucksack." }
+        ] },
+        { "number": 2, "turns": [
+          { "voice": "female", "text": "Fährt der Bus zum See um halb neun?" },
+          { "voice": "male", "text": "Heute nicht. Er fährt schon um Viertel nach acht. Der nächste kommt erst um Viertel vor neun." },
+          { "voice": "female", "text": "Dann müssen wir uns beeilen." }
+        ] },
+        { "number": 3, "turns": [
+          { "voice": "male", "text": "Möchten Sie einen Kaffee oder lieber Tee?" },
+          { "voice": "female", "text": "Danke, Kaffee trinke ich morgens. Tee hatte ich gerade. Haben Sie Orangensaft?" },
+          { "voice": "male", "text": "Ja, natürlich." },
+          { "voice": "female", "text": "Dann nehme ich den Saft, bitte." }
+        ] },
+        { "number": 4, "turns": [
+          { "voice": "female", "text": "Die Postkarten kosten einen Euro. Wie viele möchten Sie?" },
+          { "voice": "male", "text": "Ich brauche eine für meine Eltern und zwei für Freunde. Ach, meine Kolleginnen bekommen auch eine. Geben Sie mir bitte acht Karten." },
+          { "voice": "female", "text": "Acht Postkarten. Das macht acht Euro." }
+        ] },
+        { "number": 5, "turns": [
+          { "voice": "male", "text": "Entschuldigung, wo finde ich die Apotheke? Im ersten Stock?" },
+          { "voice": "female", "text": "Nein, dort sind die Arztpraxen. Die Apotheke ist unten im Erdgeschoss, direkt neben dem Eingang." },
+          { "voice": "male", "text": "Gut, dann gehe ich wieder nach unten." }
+        ] },
+        { "number": 6, "turns": [
+          { "voice": "female", "text": "Mein Flug geht morgen sehr früh. Der Bus fährt um diese Zeit noch nicht." },
+          { "voice": "male", "text": "Dann nimm doch ein Taxi." },
+          { "voice": "female", "text": "Das ist mir zu teuer. Der erste Zug fährt um vier Uhr vierzig direkt zum Flughafen. Den nehme ich." }
+        ] }
+      ]
+    },
+    {
+      "id": 2,
+      "plays": 1,
+      "intro": "Hören, Teil zwei. Sie hören vier Ansagen. Entscheiden Sie: richtig oder falsch. Sie hören jeden Text einmal.",
+      "example": {
+        "question": "Der Markt öffnet heute um neun Uhr.",
+        "options": ["Richtig", "Falsch"],
+        "answer": 0,
+        "turns": [
+          { "voice": "announcer", "text": "Liebe Kundinnen und Kunden. Unser Markt öffnet heute wie immer um neun Uhr." }
+        ]
+      },
+      "items": [
+        { "number": 7, "turns": [{ "voice": "announcer", "text": "Liebe Besucherinnen und Besucher. Wegen Bauarbeiten ist der linke Eingang des Museums heute geschlossen. Bitte benutzen Sie den Eingang auf der rechten Seite neben dem Café. Die Ausstellung beginnt im Erdgeschoss." }] },
+        { "number": 8, "turns": [{ "voice": "announcer", "text": "Achtung, liebe Kundinnen und Kunden. Unsere Bäckerei im Erdgeschoss schließt heute nicht um neunzehn Uhr, sondern schon um achtzehn Uhr dreißig. Bitte bezahlen Sie Ihre Einkäufe rechtzeitig." }] },
+        { "number": 9, "turns": [{ "voice": "announcer", "text": "Guten Morgen im Stadtbad. Das Schwimmbad ist heute normal geöffnet. Nur die Sauna bleibt wegen einer Reparatur geschlossen. Die Kurse im großen Becken finden wie geplant statt." }] },
+        { "number": 10, "turns": [{ "voice": "announcer", "text": "Letzter Aufruf für den Flug sieben vier zwei nach Madrid. Alle Reisenden gehen bitte sofort zu Ausgang B acht. Das Einsteigen endet in zehn Minuten. Ausgang B acht befindet sich im ersten Stock." }] }
+      ]
+    },
+    {
+      "id": 3,
+      "plays": 2,
+      "intro": "Hören, Teil drei. Sie hören fünf Nachrichten am Telefon. Wählen Sie A, B oder C. Sie hören jeden Text zweimal.",
+      "items": [
+        { "number": 11, "turns": [{ "voice": "female", "text": "Guten Tag, Herr Novak. Hier ist die Zahnarztpraxis Blum. Ihr Termin am Dienstag um fünfzehn Uhr ist leider nicht möglich. Können Sie schon am Montag um fünfzehn Uhr kommen? Um siebzehn Uhr haben wir keine Termine mehr frei. Bitte rufen Sie kurz zurück." }] },
+        { "number": 12, "turns": [{ "voice": "female", "text": "Hallo Tom, hier ist Mila. Ich bin schon in der Stadt. Vor der Bank ist heute eine Baustelle und im Café ist kein Tisch frei. Ich warte deshalb an der Bushaltestelle gegenüber der Bank. Bis gleich." }] },
+        { "number": 13, "turns": [{ "voice": "male", "text": "Guten Tag, Frau Klein. Ihr Paket ist heute angekommen. Heute schließen wir leider schon um achtzehn Uhr. Morgen können Sie es ab zehn Uhr abholen. Bitte bringen Sie Ihren Ausweis mit." }] },
+        { "number": 14, "turns": [{ "voice": "male", "text": "Hallo Leo, Ben hier. Ich stehe vor deiner Wohnung, aber du bist nicht da. Meine Kamera und den Laptop habe ich dabei. Bitte bring deinen Schlüssel mit, sonst können wir die Tür nicht öffnen. Ruf mich an." }] },
+        { "number": 15, "turns": [{ "voice": "female", "text": "Hallo Papa, Anna hier. Mein Zug hat zwanzig Minuten Verspätung. Der Bus fährt normal und mein Fahrrad steht zu Hause. Ich komme deshalb erst gegen halb acht an. Du musst nicht am Bahnhof warten." }] }
+      ],
+      "outro": "Ende des Tests Hören. Übertragen und kontrollieren Sie jetzt Ihre Lösungen eins bis fünfzehn. Dafür haben Sie drei Minuten Zeit."
+    }
+  ]
+}
