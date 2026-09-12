@@ -11,7 +11,7 @@ import XpressMembershipClient from './XpressMembershipClient';
 
 export const metadata: Metadata = {
   title: 'Membresía de exámenes | WeLearn',
-  description: 'Elige tu pase de simulacros y añade clases con docente si las necesitas.',
+  description: 'Elige un examen individual o una suscripción recurrente y añade clases con docente si las necesitas.',
   robots: { index: false, follow: false },
 };
 
