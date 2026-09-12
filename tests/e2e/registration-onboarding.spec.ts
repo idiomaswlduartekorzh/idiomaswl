@@ -29,16 +29,24 @@ test.describe('registro guiado', () => {
     await expect(page.getByRole('button', { name: 'Continuar con Google' })).toHaveCount(0);
   });
 
-  test('conserva el idioma antes de crear la cuenta', async ({ page }) => {
+  test('el idioma general abre el reglamento antes de pedir los datos', async ({ page }) => {
     await page.goto('/registro');
     await page.getByLabel('Idioma').selectOption('frances');
     await page.getByRole('button', { name: 'Continuar' }).click();
     await page.getByRole('button', { name: /Idioma general/ }).click();
     await page.getByRole('button', { name: /Impulso · \$760\.000/ }).click();
-    await page.getByRole('button', { name: 'Continuar al registro' }).click();
+    await page.getByRole('button', { name: 'Continuar al reglamento' }).click();
 
-    await expect(page.getByText('Francés · Impulso · $760.000')).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Crear cuenta' })).toBeVisible();
+    await expect(page).toHaveURL(/\/precios\?idioma=frances&objetivo=general&plan=impulso&nivel=No\+s%C3%A9\+mi\+nivel&paso=reglamento/);
+    await expect(page.getByRole('heading', { name: 'Lo importante, antes de inscribirte' })).toBeVisible();
+    const acceptance = page.getByLabel(/Confirmo que leí y acepto el reglamento/);
+    await expect(acceptance).not.toBeChecked();
+    await expect(page.getByText(/El formulario se desbloquea al confirmar la lectura/)).toBeVisible();
+    await acceptance.check();
+    await expect(page.getByLabel('WhatsApp con código de país')).toBeVisible();
+    await expect(page.getByLabel('Dirección de residencia')).toBeVisible();
+    await expect(page.getByLabel('Propósito del curso')).toBeVisible();
+    await expect(page.getByLabel('Firma electrónica')).toBeVisible();
   });
 
   test('filtra los exámenes por el idioma elegido y muestra los tres precios', async ({ page }) => {
@@ -56,21 +64,22 @@ test.describe('registro guiado', () => {
     await expect(page.getByRole('button', { name: /Exámenes \+ feedback docente · \$99\.000/ })).toBeVisible();
   });
 
-  test('la preparación con profesor abre los precios con idioma y examen seleccionados', async ({ page }) => {
+  test('la preparación con profesor exige un plan y abre su reglamento', async ({ page }) => {
     await page.goto('/registro');
     await page.getByLabel('Idioma').selectOption('italiano');
     await page.getByRole('button', { name: 'Continuar' }).click();
     await page.getByRole('button', { name: /Preparación para un examen/ }).click();
     await page.getByLabel('Examen').selectOption('cils-celi');
     await page.getByRole('button', { name: /Con profesor/ }).click();
-    await expect(page.getByRole('button', { name: 'Ver clases y precios' })).toBeVisible();
-    await page.getByRole('button', { name: 'Ver clases y precios' }).click();
-    await expect(page).toHaveURL(/\/precios\?idioma=italiano&objetivo=CILS&plan=esencial&nivel=No\+s%C3%A9\+mi\+nivel/);
-    const candidateLanguage = page.getByRole('radio', { name: 'Italiano' });
-    if (await candidateLanguage.count()) {
-      await expect(candidateLanguage).toBeChecked();
-    } else {
-      await expect(page.getByRole('tab', { name: '🇮🇹 Italiano' })).toHaveAttribute('aria-selected', 'true');
-    }
+    await expect(page.getByRole('button', { name: 'Continuar al reglamento' })).toBeDisabled();
+    await expect(page.getByRole('button', { name: /Impulso · \$760\.000/ })).toBeVisible();
+    await page.getByRole('button', { name: /Impulso · \$760\.000/ }).click();
+    await page.getByRole('button', { name: 'Continuar al reglamento' }).click();
+    await expect(page).toHaveURL(/\/precios\?idioma=italiano&objetivo=CILS&plan=impulso&nivel=No\+s%C3%A9\+mi\+nivel&paso=reglamento/);
+    await expect(page.getByRole('heading', { name: 'Lo importante, antes de inscribirte' })).toBeVisible();
+    const summary = page.getByRole('region', { name: 'Todo claro antes de seguir.' });
+    await expect(summary.getByText('Italiano · CILS')).toBeVisible();
+    await expect(summary.getByText('Impulso · 3 clases por semana')).toBeVisible();
+    await expect(summary.getByText('$760.000 COP')).toBeVisible();
   });
 });

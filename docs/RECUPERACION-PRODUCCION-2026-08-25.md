@@ -438,3 +438,26 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `/suscripcion/examenes` a login sin sesión, redirección 303 del alta de suscripción
   anónima a login, respuesta 401 al cancelar sin sesión y respuesta 401 del cron sin
   secreto. No se tokenizó ninguna tarjeta ni se realizó un cobro real.
+
+### 12 de septiembre de 2026 — contratación de clases desde el registro
+
+- El flujo de clases quedó `DESPLEGADO` desde `main` en
+  `efacc498314037d554bbc1531d9463c0b2b8bb72`. Tanto Idioma general como Preparación
+  para un examen con profesor exigen escoger uno de los cinco planes y pasan
+  directamente al reglamento; la cuenta ya no se crea antes de contratar las clases.
+- El formulario permanece bloqueado hasta aceptar el reglamento. Después solicita
+  nombre, correo, WhatsApp, ciudad y país, dirección, propósito del curso, pagador y
+  firma electrónica. La firma debe coincidir con el nombre del pagador y la orden
+  conserva la versión, el texto exacto y la huella SHA-256 del reglamento aceptado.
+- Wompi sigue recibiendo el pago solamente después de guardar la orden. La cuenta se
+  crea tras un pago `APPROVED`; si el correo ya pertenece a un estudiante, la orden se
+  vincula a ese perfil. Los correos de bienvenida y notificación conservan sus trabajos
+  idempotentes y la cola de conciliación mantiene los reintentos ante interrupciones.
+- El prebuild completo, TypeScript, el build Webpack y los guardianes de producto
+  quedaron verdes. Vercel completó la compilación GitHub
+  `DwH1zaAtuWpbSQRNFTCerDJmAv6R` y promovió el resultado a producción.
+- La prueba Chromium sobre `https://www.idiomaswl.com` pasó 4/4 recorridos: selección
+  obligatoria del producto, tres precios autodidactas, idioma general hacia reglamento
+  y examen con profesor con plan Impulso. También comprobó que los datos y la firma se
+  muestran únicamente tras aceptar las reglas. No se creó una orden ni se realizó un
+  cobro real.
