@@ -20,7 +20,7 @@ test.describe('registro guiado', () => {
     await page.getByRole('button', { name: 'Continuar al registro' }).click();
 
     await expect(page.getByRole('heading', { name: 'Crea tu cuenta' })).toBeVisible();
-    await expect(page.getByText('IELTS · $99.000')).toBeVisible();
+    await expect(page.getByText('IELTS · $99.900')).toBeVisible();
     await expect(page.getByRole('button', { name: 'Continuar con Google' })).toBeVisible();
     await expect(page.getByLabel('Nombre completo')).toBeVisible();
     await expect(page.getByLabel('Correo electrónico')).toBeVisible();

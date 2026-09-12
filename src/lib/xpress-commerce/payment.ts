@@ -1,4 +1,5 @@
 import { XPRESS_EXAM_OPTIONS, type XpressExamSlug } from '../student-onboarding/catalog.ts';
+import { ICFES_TEACHER_ADDENDUM_VERSION } from '../icfes/teacher-ops-v1.ts';
 import { getXpressOffer, type XpressOfferId } from './catalog.ts';
 import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS_VERSION } from './terms.ts';
 
@@ -8,6 +9,8 @@ export type XpressOrderInput = Readonly<{
   offerId: XpressOfferId;
   acceptedTerms: string;
   acceptedPrivacy: string;
+  acceptedIcfesTeacherAddendum?: string;
+  icfesAttemptId?: string;
 }>;
 
 export type XpressSubscriptionInput = Readonly<{
@@ -20,6 +23,7 @@ export type XpressSubscriptionInput = Readonly<{
   acceptedWompi: true;
   paymentSourceToken: string;
   paymentSourceType: 'CARD';
+  icfesAttemptId?: string;
 }>;
 
 export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
@@ -28,7 +32,17 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   if (typeof input.idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.idempotencyKey)) return null;
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
   if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
+  // ICFES has its own attempt-bound COP 12.900 product. The generic single-exam
+  // credit is intentionally unavailable here because it cannot unlock an ICFES attempt.
+  if (input.examSlug === 'icfes' && input.offerId === 'exam-single') return null;
   if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
+  const isIcfesTeacher = input.examSlug === 'icfes' && input.offerId === 'exam-teacher';
+  const icfesAttemptId = input.examSlug === 'icfes' && typeof input.icfesAttemptId === 'string'
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(input.icfesAttemptId)
+    ? input.icfesAttemptId.toLowerCase()
+    : undefined;
+  if (input.icfesAttemptId !== undefined && !icfesAttemptId) return null;
+  if (isIcfesTeacher && input.acceptedIcfesTeacherAddendum !== ICFES_TEACHER_ADDENDUM_VERSION) return null;
   getXpressOffer(input.offerId);
   return {
     idempotencyKey: input.idempotencyKey,
@@ -36,6 +50,8 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
     offerId: input.offerId,
     acceptedTerms: input.acceptedTerms,
     acceptedPrivacy: input.acceptedPrivacy,
+    ...(isIcfesTeacher ? { acceptedIcfesTeacherAddendum: ICFES_TEACHER_ADDENDUM_VERSION } : {}),
+    ...(icfesAttemptId ? { icfesAttemptId } : {}),
   } as XpressOrderInput;
 }
 
@@ -49,12 +65,18 @@ export function parseXpressSubscriptionForm(value: FormData): XpressSubscription
   const acceptedWompi = value.get('accepted_wompi');
   const paymentSourceToken = value.get('payment_source_token');
   const paymentSourceType = value.get('payment_source_type');
+  const rawIcfesAttemptId = value.get('icfes_attempt_id');
   if (typeof idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(idempotencyKey)) return null;
   if (typeof examSlug !== 'string' || !XPRESS_EXAM_OPTIONS.some((item) => item.id === examSlug)) return null;
   if (offerId !== 'exam-auto' && offerId !== 'exam-teacher') return null;
   if (acceptedTerms !== XPRESS_TERMS_VERSION || acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
   if (acceptedRecurring !== XPRESS_RECURRING_CONSENT_VERSION || acceptedWompi !== 'yes') return null;
   if (paymentSourceType !== 'CARD' || typeof paymentSourceToken !== 'string' || !/^tok_(test|prod)_[A-Za-z0-9_-]{8,240}$/.test(paymentSourceToken)) return null;
+  const icfesAttemptId = examSlug === 'icfes' && typeof rawIcfesAttemptId === 'string'
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(rawIcfesAttemptId)
+    ? rawIcfesAttemptId.toLowerCase()
+    : undefined;
+  if (rawIcfesAttemptId && !icfesAttemptId) return null;
   return {
     idempotencyKey,
     examSlug: examSlug as XpressExamSlug,
@@ -65,6 +87,7 @@ export function parseXpressSubscriptionForm(value: FormData): XpressSubscription
     acceptedWompi: true,
     paymentSourceToken,
     paymentSourceType,
+    ...(icfesAttemptId ? { icfesAttemptId } : {}),
   };
 }
 

@@ -1,13 +1,13 @@
 {
   "$schema": "./own-mock-expansion.schema.json",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "productId": "icfes-saber-11-english",
   "policy": {
     "questionCount": 45,
     "parts": [1, 2, 3, 4, 5, 6, 7],
     "provenanceKind": "welearn-original",
-    "allowedEditorialStates": ["draft", "in-review", "approved", "rejected"],
-    "allowedReleaseStates": ["draft", "approved", "release-candidate", "published"],
+    "allowedEditorialStates": ["draft", "in-review", "approved", "rejected", "release-candidate", "published"],
+    "allowedReleaseStates": ["draft", "approved", "rejected", "release-candidate", "published"],
     "requiredQualityGates": [
       "schema-and-manifest",
       "stable-unique-ids",
@@ -249,6 +249,37 @@
       "provenance": { "kind": "welearn-original", "owner": "Idiomas WeLearn", "rights": "owned-content", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
       "editorial": { "status": "approved", "reviewedAt": "2026-09-08", "reviewerRoles": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
       "releaseStatus": "release-candidate"
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "mock-24-v1",
+      "mockId": "mock-24",
+      "modulePath": "src/data/mocks/icfes-mock-24.ts",
+      "route": "/examenes/icfes/practica/mock-24",
+      "contentVersion": null,
+      "contentHash": null,
+      "candidateDigest": "d00fe0d3cc54ce01cc7621b1455cdb187f0b9cf4eac2ec3081cfc5234a6836c9",
+      "provenance": {
+        "status": "pending",
+        "kind": "welearn-original",
+        "owner": "Idiomas WeLearn",
+        "rights": "pending",
+        "authoringRecord": null,
+        "itemEvidence": []
+      },
+      "editorial": {
+        "status": "draft",
+        "reviewReports": [],
+        "adjudication": null
+      },
+      "release": {
+        "status": "draft",
+        "catalogEligible": false,
+        "indexEligible": false,
+        "premiumEligible": false,
+        "deploymentEvidence": null
+      }
     }
   ]
 }

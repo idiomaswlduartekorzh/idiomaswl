@@ -26,4 +26,7 @@ test('exam students continue to the matching subscription checkout', () => {
   const intent = parseRegistrationIntent({ path: 'exam', language: 'ingles', exam: 'ielts', plan: 'exam-single' });
   assert.deepEqual(intent, { path: 'exam', language: 'ingles', exam: 'ielts', plan: 'exam-single' });
   assert.equal(registrationPurchasePath(intent), '/suscripcion/examenes');
+  assert.equal(parseRegistrationIntent({
+    path: 'exam', language: 'ingles', exam: 'icfes', plan: 'exam-single',
+  }), null, 'ICFES $12k starts from an owned attempt, never from generic onboarding');
 });

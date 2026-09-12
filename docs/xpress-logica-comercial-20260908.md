@@ -1,5 +1,10 @@
 # Registro y membresías de exámenes
 
+> Documento histórico del 8 de septiembre de 2026. Para ICFES, la oferta vigente
+> está definida en `docs/icfes-commerce-v1.md`: un crédito de feedback pedagógico personalizado por membresía y
+> objetivo operativo condicional de 12 horas. Las referencias de ICFES a 24 horas
+> o a revisión después de cada entrega en este archivo quedaron sustituidas.
+
 ## Registro
 
 Al crear la cuenta, la persona elige una ruta:
@@ -15,10 +20,10 @@ En esta etapa no se vende la práctica general de idiomas como suscripción. El 
 
 | Plan | Precio por 30 días | Incluye |
 |---|---:|---|
-| Corrección automática | $49.000 | Todos los mocks del examen elegido, reportes automáticos, revisión pregunta por pregunta, historial y áreas de atención |
-| Feedback docente | $99.000 | Todo lo anterior y revisión de David o Zhanna entregada dentro de las 24 horas siguientes a cada entrega |
+| Corrección automática | $49.900 | Todos los mocks del examen elegido, reportes automáticos, revisión pregunta por pregunta, historial y áreas de atención |
+| Feedback personalizado | $99.900 | Todo lo anterior y un crédito por periodo de feedback pedagógico personalizado de WeLearn con asistencia de IA y control de calidad interno; objetivo condicional de 12 horas |
 
-La corrección automática usa las claves y reglas propias de cada examen. No requiere IA para puntuar preguntas objetivas. Writing, Speaking y otras respuestas abiertas solo se presentan como revisión docente cuando exista una rúbrica verificada para ese examen.
+La corrección automática usa las claves y reglas propias de cada examen. No requiere IA para puntuar preguntas objetivas. El feedback personalizado declara siempre la asistencia de IA y no se atribuye públicamente a un docente; antes de entregarse exige el control de calidad y la evidencia definidos para el examen.
 
 ## Reglas de operación
 
@@ -47,7 +52,7 @@ Las clases son un complemento opcional y no cambian el precio de $49.000 o $99.0
 - Pedido inmutable: persona, examen, oferta, versión, precio, moneda y aceptación de condiciones.
 - Transacción: referencia Wompi, historial de eventos y estado verificado.
 - Membresía: examen, plan, inicio, final, cambio programado y causa de revocación.
-- Revisión docente: entrega, fecha límite, estado, responsable y fecha de entrega.
+- Feedback personalizado: entrega, objetivo interno, estado, responsable del control de calidad y fecha de entrega.
 - Cola de recuperación para pagos, acceso, correos y revisiones que fallen temporalmente.
 
 Estas piezas están implementadas en las tablas privadas `xpress_orders`, `xpress_payment_transactions`, `xpress_payment_events`, `xpress_memberships`, `xpress_fulfillment_jobs`, `xpress_payment_reconciliation_queue` y `xpress_teacher_reviews`. El navegador no puede leerlas directamente: las rutas del servidor autentican al usuario y usan el cliente administrativo solo después de verificar propiedad.

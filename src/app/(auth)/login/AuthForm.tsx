@@ -45,17 +45,23 @@ const LANGS = [
   { flag: '🇮🇹', name: 'Italiano' },
 ];
 
-export default function AuthForm({ mode }: { mode: Mode }) {
+export default function AuthForm({
+  mode,
+  initialIntent = null,
+}: {
+  mode: Mode;
+  initialIntent?: RegistrationIntent | null;
+}) {
   const [email, setEmail]       = useState('');
   const [password, setPassword] = useState('');
   const [name, setName]         = useState('');
-  const [studentPath, setStudentPath] = useState<StudentPath | null>(null);
-  const [language, setLanguage] = useState<WelearnLanguage | ''>('');
-  const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>('');
-  const [exam, setExam] = useState<XpressExamSlug | ''>('');
-  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
-  const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>('');
-  const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(1);
+  const [studentPath, setStudentPath] = useState<StudentPath | null>(initialIntent?.path ?? null);
+  const [language, setLanguage] = useState<WelearnLanguage | ''>(initialIntent?.language ?? '');
+  const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>(initialIntent?.path === 'welearn' ? initialIntent.plan : '');
+  const [exam, setExam] = useState<XpressExamSlug | ''>(initialIntent?.path === 'exam' ? initialIntent.exam : '');
+  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>(initialIntent?.path === 'exam' ? initialIntent.plan : '');
+  const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>(initialIntent?.path === 'exam' ? 'self' : '');
+  const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(initialIntent ? 3 : 1);
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');
@@ -457,7 +463,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
                 {examPreparationMode === 'self' && <Field label="Elige tu acceso Xpress">
                   <div style={{ display: 'grid', gap: '0.55rem' }}>
-                    {XPRESS_OFFERS.map((offer) => <PlanChoice
+                    {XPRESS_OFFERS.filter((offer) => exam !== 'icfes' || offer.id !== 'exam-single').map((offer) => <PlanChoice
                       key={offer.id}
                       selected={examPlan === offer.id}
                       label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
@@ -465,7 +471,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                         ? 'Pago único: un simulacro con corrección automática y reporte detallado.'
                         : offer.id === 'exam-auto'
                           ? 'Suscripción renovable: simulacros ilimitados y corrección automática por periodos de 30 días.'
-                          : 'Suscripción renovable con simulacros ilimitados y feedback docente en máximo 24 horas.'}
+                          : 'Suscripción renovable con simulacros ilimitados y un crédito de feedback pedagógico personalizado de WeLearn con asistencia de IA por periodo.'}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>

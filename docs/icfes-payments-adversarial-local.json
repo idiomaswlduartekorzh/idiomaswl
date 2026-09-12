@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "icfes-payments-adversarial-local-v1",
+  "scope": "Deterministic local model only; no network, remote database, Wompi Sandbox or production credentials.",
+  "flags": {
+    "required": "ICFES_ADVERSARIAL_PAYMENTS_ENABLED=true",
+    "default": false,
+    "productionDenied": true
+  },
+  "command": "node --experimental-strip-types --no-warnings --test tests/icfes-payments-adversarial.test.mjs",
+  "localGate": "PASS",
+  "wompiSandboxEndToEnd": "BLOCKED",
+  "tests": {
+    "expected": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "scenarios": [
+    "PENDING does not grant access",
+    "DECLINED and ERROR do not grant access",
+    "APPROVED grants one entitlement",
+    "duplicate APPROVED and exact replay are idempotent",
+    "late PENDING cannot regress APPROVED",
+    "tampered amount, currency, environment and provider transaction are rejected",
+    "REFUND and CHARGEBACK revoke access and resist approval replay",
+    "COP 12,900 attempt detail is not silently treated as a membership credit",
+    "COP 49,900 to COP 99,900 charges COP 50,000 and preserves the period end",
+    "a late approval cannot reuse upgrade credit released to another order",
+    "source reversal cascades to dependent upgrade access"
+  ],
+  "artifacts": {
+    "src/lib/icfes/payment-adversarial-model.ts": "c18fd3de27eee42009487269a1bdd8cd1cda5e215a8fdaec02251c658a3c3fed",
+    "src/lib/icfes/payment-event.ts": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22",
+    "src/lib/icfes/commerce-v1.ts": "95a87a3978a48687f7892b4d4c746e9f900558ac984b56612697e42badfc2680",
+    "tests/icfes-payments-adversarial.test.mjs": "bb93b219b57d02f62e6919d4e1f9666c135bc78e174f7f3ea8acbe476b089584"
+  },
+  "blockers": [
+    "No real Wompi Sandbox checkout, signed webhook and authoritative transaction lookup were executed.",
+    "The local REFUND/CHARGEBACK vocabulary is not mapped to live provider events or persisted production revocation state.",
+    "No remote migrations were applied and no real entitlement was granted or revoked."
+  ]
+}

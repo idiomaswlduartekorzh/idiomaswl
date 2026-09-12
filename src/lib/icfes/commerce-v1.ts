@@ -1,0 +1,189 @@
+import {
+  XPRESS_OFFER_VERSION,
+  getXpressOffer,
+  quoteXpressPurchase,
+  type XpressEntitlement,
+  type XpressMembershipOfferId,
+  type XpressOffer,
+  type XpressPurchaseQuote,
+} from '../xpress-commerce/catalog.ts';
+
+export const ICFES_COMMERCE_VERSION = 'icfes-commerce-2026-09-12-v2' as const;
+export const ICFES_DETAIL_OFFER_ID = 'icfes-detail-attempt-v1' as const;
+export const ICFES_DETAIL_PRICE_COP = 12_900 as const;
+export const ICFES_DETAIL_AMOUNT_IN_CENTS = ICFES_DETAIL_PRICE_COP * 100;
+
+export type IcfesCommerceOfferId = typeof ICFES_DETAIL_OFFER_ID | XpressMembershipOfferId;
+export type IcfesCommerceEntitlement = XpressEntitlement | 'attempt-detailed-answers';
+
+export type IcfesCommerceOffer = Readonly<{
+  id: IcfesCommerceOfferId;
+  name: string;
+  amountInCents: number;
+  currency: 'COP';
+  billing: 'one-time' | '30-day-membership';
+  entitlementScope: 'attempt' | 'exam';
+  entitlements: readonly IcfesCommerceEntitlement[];
+  teacherReviewCreditsPerPeriod: number;
+  teacherFeedbackTargetHours: number | null;
+  sourceVersion: typeof ICFES_COMMERCE_VERSION | typeof XPRESS_OFFER_VERSION;
+}>;
+
+const DETAIL_OFFER = Object.freeze({
+  id: ICFES_DETAIL_OFFER_ID,
+  name: 'Detalle y respuestas de un intento ICFES',
+  amountInCents: ICFES_DETAIL_AMOUNT_IN_CENTS,
+  currency: 'COP',
+  billing: 'one-time',
+  entitlementScope: 'attempt',
+  entitlements: ['attempt-detailed-answers', 'detailed-report', 'question-review', 'automatic-feedback'],
+  teacherReviewCreditsPerPeriod: 0,
+  teacherFeedbackTargetHours: null,
+  sourceVersion: ICFES_COMMERCE_VERSION,
+} as const satisfies IcfesCommerceOffer);
+
+function assertMonthlyCatalogContract(offer: XpressOffer): void {
+  const requiredAmount = offer.id === 'exam-auto' ? 4_990_000 : 9_990_000;
+  if (offer.amountInCents !== requiredAmount || offer.billing !== 'recurring-30-days') {
+    throw new Error(`icfes_monthly_catalog_mismatch:${offer.id}`);
+  }
+
+  if (
+    offer.id === 'exam-teacher' &&
+    (offer.teacherFeedbackTargetHours !== 12 ||
+      offer.maxConcurrentTeacherReviews !== 1 ||
+      !offer.entitlements.includes('personalized-feedback-12h'))
+  ) {
+    throw new Error('icfes_teacher_catalog_mismatch');
+  }
+}
+
+function fromMonthlyCatalog(id: XpressMembershipOfferId): IcfesCommerceOffer {
+  const source = getXpressOffer(id);
+  assertMonthlyCatalogContract(source);
+
+  return Object.freeze({
+    id,
+    name: source.name,
+    amountInCents: source.amountInCents,
+    currency: 'COP',
+    billing: '30-day-membership',
+    entitlementScope: source.entitlementScope,
+    entitlements: source.entitlements,
+    teacherReviewCreditsPerPeriod: id === 'exam-teacher' ? 1 : 0,
+    teacherFeedbackTargetHours: source.teacherFeedbackTargetHours,
+    sourceVersion: XPRESS_OFFER_VERSION,
+  });
+}
+
+export const ICFES_COMMERCE_OFFERS = Object.freeze([
+  DETAIL_OFFER,
+  fromMonthlyCatalog('exam-auto'),
+  fromMonthlyCatalog('exam-teacher'),
+] as const satisfies readonly IcfesCommerceOffer[]);
+
+export function getIcfesCommerceOffer(id: IcfesCommerceOfferId): IcfesCommerceOffer {
+  const offer = ICFES_COMMERCE_OFFERS.find((candidate) => candidate.id === id);
+  if (!offer) throw new Error('unknown_icfes_commerce_offer');
+  return offer;
+}
+
+export type IcfesCommercePurchaseContext = Readonly<{
+  requestedOfferId: IcfesCommerceOfferId;
+  purchasedDetailAt?: Date;
+  activeMembership?: Readonly<{
+    offerId: XpressMembershipOfferId;
+    periodEndsAt: Date;
+  }>;
+  now?: Date;
+}>;
+
+export type IcfesCommercePurchaseQuote = Readonly<{
+  action: 'checkout' | 'already-included' | 'schedule-change';
+  amountInCents: number;
+  creditInCents: number;
+  offer: IcfesCommerceOffer;
+  periodEndsAt: string | null;
+  reason:
+    | 'new-purchase'
+    | 'membership-upgrade'
+    | 'active-membership'
+    | 'owned-detail'
+    | 'downgrade';
+}>;
+
+function icfesMonthlyReason(
+  reason: XpressPurchaseQuote['reason'],
+): Extract<IcfesCommercePurchaseQuote['reason'], 'new-purchase' | 'membership-upgrade' | 'active-membership' | 'downgrade'> {
+  if (reason === 'different-exam' || reason === 'single-purchase') throw new Error('icfes_monthly_quote_scope_mismatch');
+  return reason;
+}
+
+export function quoteIcfesCommercePurchase(
+  context: IcfesCommercePurchaseContext,
+): IcfesCommercePurchaseQuote {
+  const offer = getIcfesCommerceOffer(context.requestedOfferId);
+  const active = context.activeMembership;
+
+  if (active) {
+    const periodEndsAt = active.periodEndsAt.toISOString();
+    if (offer.id === ICFES_DETAIL_OFFER_ID) {
+      return {
+        action: 'already-included',
+        amountInCents: 0,
+        creditInCents: DETAIL_OFFER.amountInCents,
+        offer,
+        periodEndsAt,
+        reason: 'active-membership',
+      };
+    }
+
+    const monthlyQuote = quoteXpressPurchase({
+      requestedOfferId: offer.id,
+      requestedExamSlug: 'icfes',
+      activeMembership: { offerId: active.offerId, examSlug: 'icfes' },
+    });
+    return {
+      action: monthlyQuote.action,
+      amountInCents: monthlyQuote.amountInCents,
+      creditInCents: monthlyQuote.creditInCents,
+      offer,
+      periodEndsAt,
+      reason: icfesMonthlyReason(monthlyQuote.reason),
+    };
+  }
+
+  if (offer.id === ICFES_DETAIL_OFFER_ID) {
+    if (context.purchasedDetailAt) {
+      return {
+        action: 'already-included',
+        amountInCents: 0,
+        creditInCents: DETAIL_OFFER.amountInCents,
+        offer,
+        periodEndsAt: null,
+        reason: 'owned-detail',
+      };
+    }
+    return {
+      action: 'checkout',
+      amountInCents: offer.amountInCents,
+      creditInCents: 0,
+      offer,
+      periodEndsAt: null,
+      reason: 'new-purchase',
+    };
+  }
+
+  const monthlyQuote = quoteXpressPurchase({
+    requestedOfferId: offer.id,
+    requestedExamSlug: 'icfes',
+  });
+  return {
+    action: 'checkout',
+    amountInCents: monthlyQuote.amountInCents,
+    creditInCents: monthlyQuote.creditInCents,
+    offer,
+    periodEndsAt: null,
+    reason: icfesMonthlyReason(monthlyQuote.reason),
+  };
+}

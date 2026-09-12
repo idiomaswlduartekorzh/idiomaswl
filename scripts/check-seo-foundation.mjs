@@ -59,7 +59,6 @@ const DERIVED_SITEMAP_MARKERS = [
   ['publishedReadingExercises', 'lecturas publicadas'],
   ['getVocabLevels', 'vocabulario aprobado'],
   ['getHistorias', 'historias publicadas'],
-  ['GUIDED_MOCK_IDS', 'mocks guiados ICFES'],
   ['GUIDED_WORKBOOK_IDS', 'cuadernillos guiados ICFES'],
   ["SIMULACROS.filter((exam) => exam.assessment === 'saber-11')", 'límite Saber 11'],
   ['SAT_GUIDE_SLUGS', 'guías SAT'],
@@ -74,6 +73,10 @@ const DERIVED_SITEMAP_MARKERS = [
 
 for (const [marker, label] of DERIVED_SITEMAP_MARKERS) {
   if (!sitemap.includes(marker)) errors.push(`El sitemap dejó de derivar ${label} de su fuente publicada.`);
+}
+
+if (sitemap.includes('GUIDED_MOCK_IDS')) {
+  errors.push('El sitemap volvió a publicar los mocks guiados ICFES reservados para miembros.');
 }
 
 requireMatch(

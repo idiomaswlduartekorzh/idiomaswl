@@ -6,18 +6,30 @@ import { PGlite } from '../.local-tools/node_modules/@electric-sql/pglite/dist/i
 const user = '12345678-1234-4234-8234-123456789012';
 const singleUser = '92345678-1234-4234-8234-123456789012';
 const subscriptionUser = '72345678-1234-4234-8234-123456789012';
+const icfesBaseMigration = new URL('../supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql', import.meta.url);
 const migration = new URL('../supabase/migrations/20260909000500_xpress_memberships_wompi.sql', import.meta.url);
+const teacherQueueMigration = new URL('../supabase/migrations/20260909001000_icfes_teacher_review_queue.sql', import.meta.url);
+const evidenceMigration = new URL('../supabase/migrations/20260909002000_icfes_attempt_claim_evidence.sql', import.meta.url);
 const singleMigration = new URL('../supabase/migrations/20260909160000_xpress_single_exam_purchase.sql', import.meta.url);
+const privacyFoundationMigration = new URL('../supabase/migrations/20260909170000_icfes_privacy_foundation.sql', import.meta.url);
+const teacherDeliveryMigration = new URL('../supabase/migrations/20260909183000_icfes_teacher_review_delivery.sql', import.meta.url);
 const recurringMigration = new URL('../supabase/migrations/20260912110000_xpress_recurring_subscriptions.sql', import.meta.url);
 const recurringIndexesMigration = new URL('../supabase/migrations/20260912113000_xpress_recurring_indexes.sql', import.meta.url);
 const recurringFinalizationMigration = new URL('../supabase/migrations/20260912114500_xpress_finalize_cancellations.sql', import.meta.url);
 const recurringCancelGuardMigration = new URL('../supabase/migrations/20260912115500_xpress_cancel_guard.sql', import.meta.url);
+const teacherOperationalMigration = new URL('../supabase/migrations/20260912160504_icfes_teacher_12h_operational_loop.sql', import.meta.url);
+const canonicalPriceMigration = new URL('../supabase/migrations/20260912170000_icfes_detail_price_reconciliation.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();
   try {
     await db.exec(`
       create role anon; create role authenticated; create role service_role bypassrls;
+      create schema extensions;
+      create function extensions.digest(text,text) returns bytea language sql immutable
+        as $$ select decode(repeat('00',32),'hex') $$;
+      grant usage on schema extensions to service_role;
+      grant execute on function extensions.digest(text,text) to service_role;
       create schema auth;
       create table auth.users(id uuid primary key);
       insert into auth.users values('${user}'),('${singleUser}'),('${subscriptionUser}');
@@ -29,12 +41,19 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
       );
       grant insert,select on public.exam_submissions to service_role;
     `);
+    await db.exec(await readFile(icfesBaseMigration, 'utf8'));
     await db.exec(await readFile(migration, 'utf8'));
+    await db.exec(await readFile(teacherQueueMigration, 'utf8'));
+    await db.exec(await readFile(evidenceMigration, 'utf8'));
     await db.exec(await readFile(singleMigration, 'utf8'));
+    await db.exec(await readFile(privacyFoundationMigration, 'utf8'));
+    await db.exec(await readFile(teacherDeliveryMigration, 'utf8'));
     await db.exec(await readFile(recurringMigration, 'utf8'));
     await db.exec(await readFile(recurringIndexesMigration, 'utf8'));
     await db.exec(await readFile(recurringFinalizationMigration, 'utf8'));
     await db.exec(await readFile(recurringCancelGuardMigration, 'utf8'));
+    await db.exec(await readFile(teacherOperationalMigration, 'utf8'));
+    await db.exec(await readFile(canonicalPriceMigration, 'utf8'));
     await db.exec('set role service_role');
     const legal = { version: 'xpress-20260908-v1' };
     const prepare = async ({ key = user, offer = 'exam-auto', kind = 'new', credit = 0, amount = 4_900_000, coverage = null } = {}) =>
@@ -83,11 +102,11 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
 
     const single = (await db.query(
       'select * from public.prepare_xpress_order($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)',
-      [singleUser, 'single@example.com', singleUser, 'sandbox', 'xpress-2026-09-09-v3', 'exam-single', 'ielts', 'single', 0, 1_200_000, null, 'xpress-20260909-v2', 'xpress-privacy-20260908-v1', legal],
+      [singleUser, 'single@example.com', singleUser, 'sandbox', 'xpress-2026-09-12-v5', 'exam-single', 'ielts', 'single', 0, 1_290_000, null, 'xpress-20260912-v4', 'xpress-privacy-20260908-v1', legal],
     )).rows[0];
     await db.query(
       'select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
-      [single.reference, 'sandbox', 'transaction-single', 1_200_000, 'COP', 'APPROVED', new Date().toISOString(), 'single-approved'],
+      [single.reference, 'sandbox', 'transaction-single', 1_290_000, 'COP', 'APPROVED', new Date().toISOString(), 'single-approved'],
     );
     assert.equal((await db.query('select count(*)::int as count from xpress_exam_credits where user_id=$1 and status=$2', [singleUser, 'active'])).rows[0].count, 1);
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where user_id=$1', [singleUser])).rows[0].count, 0);
@@ -101,7 +120,7 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
 
     const subscription = (await db.query(
       'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
-      [subscriptionUser, 'recurring@example.com', subscriptionUser, 'sandbox', 'xpress-2026-09-12-v4', 'exam-auto', 'toefl', 4_900_000, new Date().toISOString(), 'xpress-20260912-v3', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v1', { recurring: true }],
+      [subscriptionUser, 'recurring@example.com', subscriptionUser, 'sandbox', 'xpress-2026-09-12-v5', 'exam-auto', 'toefl', 4_990_000, new Date().toISOString(), 'xpress-20260912-v4', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v1', { recurring: true }],
     )).rows[0];
     assert.equal(subscription.status, 'creating_source');
     const attached = (await db.query(
@@ -111,12 +130,12 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal(attached.status, 'pending_initial');
     const firstCharge = (await db.query('select * from public.prepare_xpress_subscription_charge($1)', [subscription.id])).rows[0];
     assert.equal(firstCharge.order_kind, 'subscription_start');
-    assert.equal(firstCharge.amount_in_cents, 4_900_000);
+    assert.equal(firstCharge.amount_in_cents, 4_990_000);
     assert.equal((await db.query('select public.start_xpress_recurring_charge($1) as started', [firstCharge.id])).rows[0].started, true);
     assert.equal((await db.query('select public.start_xpress_recurring_charge($1) as started', [firstCharge.id])).rows[0].started, false);
     const firstPayment = (status, fingerprint) => db.query(
       'select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
-      [firstCharge.reference, 'sandbox', 'subscription-transaction', 4_900_000, 'COP', status, new Date().toISOString(), fingerprint],
+      [firstCharge.reference, 'sandbox', 'subscription-transaction', 4_990_000, 'COP', status, new Date().toISOString(), fingerprint],
     );
     await firstPayment('PENDING', 'subscription-pending');
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where subscription_id=$1', [subscription.id])).rows[0].count, 0);
@@ -131,7 +150,7 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal(renewal.order_kind, 'renewal');
     await db.query(
       'select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
-      [renewal.reference, 'sandbox', 'subscription-declined', 4_900_000, 'COP', 'DECLINED', new Date().toISOString(), 'subscription-declined'],
+      [renewal.reference, 'sandbox', 'subscription-declined', 4_990_000, 'COP', 'DECLINED', new Date().toISOString(), 'subscription-declined'],
     );
     assert.equal((await db.query('select payment_failure_count from xpress_subscriptions where id=$1', [subscription.id])).rows[0].payment_failure_count, 1);
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where subscription_id=$1 and status=$2', [subscription.id, 'active'])).rows[0].count, 1);
@@ -145,15 +164,14 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
 
     const pendingCancellation = (await db.query(
       'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
-      [singleUser, 'single@example.com', '62345678-1234-4234-8234-123456789012', 'sandbox', 'xpress-2026-09-12-v4', 'exam-teacher', 'ielts', 9_900_000, new Date().toISOString(), 'xpress-20260912-v3', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v1', { recurring: true }],
+      [singleUser, 'single@example.com', '62345678-1234-4234-8234-123456789012', 'sandbox', 'xpress-2026-09-12-v5', 'exam-teacher', 'ielts', 9_990_000, new Date().toISOString(), 'xpress-20260912-v4', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v1', { recurring: true }],
     )).rows[0];
     await db.query('select public.attach_xpress_subscription_source($1,$2,$3,$4,$5)', [pendingCancellation.id, singleUser, 'sandbox', '4891', 'AVAILABLE']);
     const pendingOrder = (await db.query('select * from public.prepare_xpress_subscription_charge($1)', [pendingCancellation.id])).rows[0];
-    await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)', [pendingOrder.reference, 'sandbox', 'pending-cancel-transaction', 9_900_000, 'COP', 'PENDING', new Date().toISOString(), 'pending-cancel']);
+    await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)', [pendingOrder.reference, 'sandbox', 'pending-cancel-transaction', 9_990_000, 'COP', 'PENDING', new Date().toISOString(), 'pending-cancel']);
     assert.equal((await db.query('select * from public.cancel_xpress_subscription($1,$2,$3)', [pendingCancellation.id, singleUser, 'sandbox'])).rows[0].status, 'cancel_at_period_end');
-    await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)', [pendingOrder.reference, 'sandbox', 'pending-cancel-transaction', 9_900_000, 'COP', 'DECLINED', new Date().toISOString(), 'pending-cancel-declined']);
+    await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)', [pendingOrder.reference, 'sandbox', 'pending-cancel-transaction', 9_990_000, 'COP', 'DECLINED', new Date().toISOString(), 'pending-cancel-declined']);
     assert.equal((await db.query('select status from xpress_subscriptions where id=$1', [pendingCancellation.id])).rows[0].status, 'canceled');
-
     await db.exec('set role anon');
     await assert.rejects(db.query('select * from xpress_orders'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_memberships'), /permission denied/);

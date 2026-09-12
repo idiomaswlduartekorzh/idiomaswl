@@ -7,7 +7,7 @@ import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 import { publishedReadingExercises } from '@/lib/reading/catalog';
 import { readingAlternates, readingExerciseLocalePaths } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
-import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
+import { GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
 import { HISTORIA_LANG_KEYS, getHistorias } from '@/data/practica/historias';
 import {
@@ -268,7 +268,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/practica/icfes-saber-11/diagnostico`, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/plan-de-estudio`, changeFrequency: 'monthly' as const, priority: 0.8  },
     { url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`, changeFrequency: 'monthly' as const, priority: 0.84 },
-    ...GUIDED_MOCK_IDS.map((mockId) => ({ url: `${BASE}/examenes/icfes/practica/${mockId}/guiado`, changeFrequency: 'monthly' as const, priority: 0.76 })),
     { url: `${BASE}/practica/icfes-saber-11/pregunta-del-dia`, changeFrequency: 'daily'   as const, priority: 0.78 },
     ...(['parte-1', 'parte-2', 'parte-3', 'parte-4', 'parte-5', 'parte-6', 'parte-7'] as const).map((part) => ({
       url: `${BASE}/practica/icfes-saber-11/${part}`,

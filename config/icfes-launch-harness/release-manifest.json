@@ -1,0 +1,6 @@
+{
+  "$schema": "./release-manifest.schema.json",
+  "schemaVersion": 1,
+  "releases": [],
+  "note": "Intentionally empty. No three-tier candidate currently satisfies every gate and hash-bound human approval."
+}

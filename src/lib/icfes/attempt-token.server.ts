@@ -21,15 +21,32 @@ function signature(payload: string): string {
   return createHmac('sha256', secret()).update(payload, 'utf8').digest('base64url');
 }
 
+function encodeToken(payload: TokenPayload): string {
+  const encoded = Buffer.from(JSON.stringify(payload), 'utf8').toString('base64url');
+  return `${encoded}.${signature(encoded)}`;
+}
+
 export function createIcfesAttemptToken(examId: string, now = Date.now()): string {
-  const payload: TokenPayload = {
+  return encodeToken({
     v: 1,
     attemptId: randomUUID(),
     examId,
     expiresAt: now + 6 * 60 * 60 * 1000,
-  };
-  const encoded = Buffer.from(JSON.stringify(payload), 'utf8').toString('base64url');
-  return `${encoded}.${signature(encoded)}`;
+  });
+}
+
+export const ICFES_RESULT_ACCESS_DAYS = 30;
+
+export function createIcfesResultAccessToken(attemptId: string, examId: string, now = Date.now()): string {
+  if (!ICFES_ATTEMPT_ID_PATTERN.test(attemptId) || !/^[a-z0-9-]{3,80}$/.test(examId)) {
+    throw new Error('Invalid ICFES result access scope');
+  }
+  return encodeToken({
+    v: 1,
+    attemptId,
+    examId,
+    expiresAt: now + ICFES_RESULT_ACCESS_DAYS * 24 * 60 * 60 * 1000,
+  });
 }
 
 export function verifyIcfesAttemptToken(token: unknown, expectedExamId?: string, now = Date.now()): TokenPayload | null {
@@ -51,4 +68,7 @@ export function verifyIcfesAttemptToken(token: unknown, expectedExamId?: string,
   }
 }
 
-export const ICFES_ATTEMPT_COOKIE = 'wl_icfes_attempt';
+export function icfesAttemptCookieName(attemptId: string): string {
+  if (!ICFES_ATTEMPT_ID_PATTERN.test(attemptId)) throw new Error('Invalid ICFES attempt cookie scope');
+  return `wl_icfes_attempt_${attemptId}`;
+}

@@ -4,9 +4,10 @@ import { createHash } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import type { MCQQuestion } from '@/data/mocks/types';
-import type { IcfesAnswerMap, IcfesBasicResultDto, IcfesPremiumQuestionDto } from './attempt-contract';
+import type { IcfesAgeAssurance, IcfesAnswerMap, IcfesBasicResultDto, IcfesPremiumQuestionDto } from './attempt-contract';
 import { getIcfesPremiumAvailability, getIcfesSecureExam } from './exam-registry.server';
 import { isIcfesPersistenceEnabled } from './product-config.server';
+import { buildIcfesQuestionSnapshot, hashIcfesQuestionSnapshot, isSameIcfesAttemptEvidence } from './attempt-evidence';
 
 const SKILLS: Record<number, string> = {
   1: 'Uso comunicativo', 2: 'Vocabulario', 3: 'Conversaciones', 4: 'Gramática en contexto',
@@ -44,19 +45,45 @@ export function gradeIcfesAttempt(examId: string, attemptId: string, answers: Ic
 
 export async function persistIcfesAttempt(input: {
   attemptId: string; examId: string; token: string; answers: IcfesAnswerMap; result: IcfesBasicResultDto;
+  ageAssurance: IcfesAgeAssurance;
 }): Promise<boolean> {
   if (!isIcfesPersistenceEnabled()) return false;
   const { data: { user } } = await (await createClient()).auth.getUser();
-  const { error } = await createAdminClient().from('icfes_attempts').upsert({
-    id: input.attemptId,
+  const found = getIcfesSecureExam(input.examId);
+  if (!found) throw new Error('No pudimos fijar la evidencia del intento.');
+  const questionSnapshot = buildIcfesQuestionSnapshot(found.exam);
+  const evidence = {
     exam_id: input.examId,
-    user_id: user?.id ?? null,
     access_token_hash: createHash('sha256').update(input.token, 'utf8').digest('hex'),
     answers: input.answers,
     basic_result: input.result,
+    question_snapshot_version: questionSnapshot.version,
+    question_snapshot_hash: hashIcfesQuestionSnapshot(questionSnapshot),
+    question_snapshot: questionSnapshot,
+  };
+  const admin = createAdminClient();
+  const { data: contracts, error: contractError } = await admin.from('icfes_privacy_contracts')
+    .select('version').eq('status', 'APPROVED').limit(2);
+  if (contractError || !contracts || contracts.length !== 1) {
+    throw new Error('No existe un contrato de privacidad ICFES único y aprobado.');
+  }
+  const { error } = await admin.from('icfes_attempts').insert({
+    id: input.attemptId,
+    user_id: user?.id ?? null,
+    ...evidence,
+    privacy_contract_version: contracts[0].version,
+    age_assurance: input.ageAssurance,
+    guardian_attested_at: input.ageAssurance === 'MINOR_GUARDIAN_ATTESTED' ? new Date().toISOString() : null,
     completed_at: new Date().toISOString(),
-  }, { onConflict: 'id' });
-  if (error) throw new Error('No pudimos guardar el intento seguro.');
+  });
+  if (error) {
+    const { data: existing } = await admin.from('icfes_attempts')
+      .select('exam_id,access_token_hash,answers,basic_result,question_snapshot_version,question_snapshot_hash,question_snapshot')
+      .eq('id', input.attemptId).maybeSingle();
+    if (!existing || !isSameIcfesAttemptEvidence(existing as typeof evidence, evidence)) {
+      throw new Error('No pudimos guardar el intento seguro: evidencia incompatible.');
+    }
+  }
   return true;
 }
 

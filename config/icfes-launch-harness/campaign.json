@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "icfes-three-tier-launch-v1",
+  "goal": "Launch a truthful three-tier ICFES offer while allowing owned mocks beyond mock-23 without weakening editorial, security, privacy or SEO controls.",
+  "baseCommit": "c3afecc9d1ff9645867dc20f9930431f2c7256a6",
+  "queue": [
+    "icfes-three-tier-launch-v1"
+  ],
+  "workOrders": [
+    "config/icfes-launch-harness/work-orders/icfes-three-tier-launch-v1.json"
+  ],
+  "expansionQueue": [
+    { "mockId": "mock-24", "status": "not-started", "catalogEligible": false },
+    { "mockId": "mock-25", "status": "not-started", "catalogEligible": false }
+  ],
+  "parallelism": {
+    "maximumWorkers": 4,
+    "maximumOpenAuthoringCandidates": 2,
+    "rule": "Authors produce isolated candidates; reviewers never edit the candidate they judge; only the release warden may write a hash-approved candidate to the release manifest."
+  }
+}

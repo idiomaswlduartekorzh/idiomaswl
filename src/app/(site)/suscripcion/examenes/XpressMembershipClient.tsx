@@ -13,6 +13,7 @@ import {
   XPRESS_TERMS_VERSION,
 } from '@/lib/xpress-commerce/terms';
 import type { XpressExamSlug } from '@/lib/student-onboarding/catalog';
+import guardStyles from './xpress-offer-guard.module.css';
 import styles from './xpress-membership.module.css';
 
 type ActiveMembership = { offerId: XpressMembershipOfferId; examSlug: string; startsAt: string; endsAt: string };
@@ -29,10 +30,18 @@ type Subscription = {
   paymentFailureCount: number;
 };
 type OrderResult = {
-  order?: { id: string; reference: string; offerId: XpressOfferId; examSlug: string; amountInCents: number; expiresAt: string };
+  order?: { id: string; reference: string; offerId: XpressOfferId; examSlug: string; amountInCents: number; expiresAt: string; resultUrl?: string | null };
   status?: 'created' | 'pending' | 'paid' | 'review' | 'not_completed';
   membership?: { ends_at?: string } | null;
   credit?: { status?: string; consumed_at?: string | null } | null;
+};
+type IcfesTeacherReadiness = {
+  purchasable: boolean;
+  message: string | null;
+};
+type IcfesTeacherAddendum = {
+  version: string;
+  supersedesSection: string;
 };
 
 function dateLabel(value: string) {
@@ -42,6 +51,7 @@ function dateLabel(value: string) {
 export default function XpressMembershipClient({
   examSlug, examLabel, initialOfferId, activeMembership, initialSubscription, classPurchasePath,
   orderId, transactionId, wompiPublicKey, wompiDocuments, subscriptionIdempotencyKey, setupMessage,
+  icfesMembershipReadiness, icfesTeacherReadiness, icfesTeacherAddendum, icfesAttemptId,
 }: {
   examSlug: XpressExamSlug;
   examLabel: string;
@@ -55,6 +65,10 @@ export default function XpressMembershipClient({
   wompiDocuments: { policy: string; personalData: string } | null;
   subscriptionIdempotencyKey: string;
   setupMessage: string;
+  icfesAttemptId: string | null;
+  icfesMembershipReadiness: IcfesTeacherReadiness | null;
+  icfesTeacherReadiness: IcfesTeacherReadiness | null;
+  icfesTeacherAddendum: IcfesTeacherAddendum | null;
 }) {
   const [offerId, setOfferId] = useState<XpressOfferId>(initialSubscription?.offerId ?? initialOfferId);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
@@ -62,17 +76,31 @@ export default function XpressMembershipClient({
   const [acceptedRecurring, setAcceptedRecurring] = useState(false);
   const [acceptedWompi, setAcceptedWompi] = useState(false);
   const [subscription, setSubscription] = useState(initialSubscription);
+  const [acceptedIcfesTeacherAddendum, setAcceptedIcfesTeacherAddendum] = useState(false);
   const [busy, setBusy] = useState(Boolean(orderId));
   const [message, setMessage] = useState(orderId ? 'Comprobando tu pago…' : setupMessage);
   const [result, setResult] = useState<OrderResult>({});
   const formRef = useRef<HTMLFormElement>(null);
+  const [attemptClaim, setAttemptClaim] = useState<'idle' | 'claiming' | 'claimed' | 'error'>(icfesAttemptId ? 'claiming' : 'idle');
   const verified = useRef(false);
+  const isIcfesTeacherSelected = examSlug === 'icfes' && offerId === 'exam-teacher';
+  const isIcfesMembershipUnavailable = examSlug === 'icfes' && !icfesMembershipReadiness?.purchasable;
+  const isIcfesTeacherUnavailable = isIcfesTeacherSelected && !icfesTeacherReadiness?.purchasable;
+  const hasRequiredAcceptances = acceptedTerms
+    && acceptedPrivacy
+    && (!isIcfesTeacherSelected || (acceptedIcfesTeacherAddendum && Boolean(icfesTeacherAddendum)));
+  const visibleOffers = examSlug === 'icfes'
+    ? XPRESS_OFFERS.filter((offer) => offer.id !== 'exam-single')
+    : XPRESS_OFFERS;
 
   const selectedOffer = XPRESS_OFFERS.find((offer) => offer.id === offerId)!;
   const recurring = selectedOffer.billing === 'recurring-30-days';
   const completingSource = subscription?.status === 'creating_source';
   const legacyCoverage = Boolean(activeMembership && (!subscription || completingSource) && activeMembership.examSlug === examSlug);
-  const recurringReady = recurring && (!subscription || completingSource) && Boolean(wompiDocuments) && acceptedTerms && acceptedPrivacy && acceptedRecurring && acceptedWompi;
+  const recurringReady = recurring && (!subscription || completingSource) && Boolean(wompiDocuments)
+    && hasRequiredAcceptances && acceptedRecurring && acceptedWompi
+    && !isIcfesMembershipUnavailable && !isIcfesTeacherUnavailable
+    && attemptClaim !== 'claiming' && attemptClaim !== 'error';
 
   useEffect(() => {
     const form = formRef.current;
@@ -125,6 +153,20 @@ export default function XpressMembershipClient({
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { void loadOrder(); }, [loadOrder]);
 
+  useEffect(() => {
+    if (!icfesAttemptId) return;
+    let active = true;
+    fetch('/api/icfes/attempts/claim', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ attemptId: icfesAttemptId }),
+    }).then((response) => {
+      if (!active) return;
+      setAttemptClaim(response.ok ? 'claimed' : 'error');
+    }).catch(() => active && setAttemptClaim('error'));
+    return () => { active = false; };
+  }, [icfesAttemptId]);
+
   async function openCheckout(id: string) {
     const response = await fetch(`/api/xpress-orders/${encodeURIComponent(id)}/checkout`, { method: 'POST' });
     const data = await response.json();
@@ -136,7 +178,8 @@ export default function XpressMembershipClient({
   }
 
   async function purchaseSingle() {
-    if (busy || recurring || !acceptedTerms || !acceptedPrivacy) return;
+    if (busy || recurring || !hasRequiredAcceptances || isIcfesMembershipUnavailable
+      || isIcfesTeacherUnavailable || attemptClaim === 'claiming' || attemptClaim === 'error') return;
     setBusy(true);
     setMessage('Guardando la compra antes de abrir Wompi…');
     try {
@@ -146,8 +189,19 @@ export default function XpressMembershipClient({
       if (!key) key = crypto.randomUUID();
       try { localStorage.setItem(storageKey, key); } catch {}
       const response = await fetch('/api/xpress-orders', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ idempotencyKey: key, examSlug, offerId, acceptedTerms: XPRESS_TERMS_VERSION, acceptedPrivacy: XPRESS_PRIVACY_VERSION }),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idempotencyKey: key,
+          examSlug,
+          offerId,
+          acceptedTerms: XPRESS_TERMS_VERSION,
+          acceptedPrivacy: XPRESS_PRIVACY_VERSION,
+          ...(isIcfesTeacherSelected && icfesTeacherAddendum
+            ? { acceptedIcfesTeacherAddendum: icfesTeacherAddendum.version }
+            : {}),
+          ...(icfesAttemptId ? { icfesAttemptId } : {}),
+        }),
       });
       const data = await response.json();
       if (!response.ok) {
@@ -175,17 +229,22 @@ export default function XpressMembershipClient({
     } catch (error) { setMessage(error instanceof Error ? error.message : 'No pudimos actualizar la suscripción.'); }
     finally { setBusy(false); }
   }
-
+  const isUpgrade = activeMembership?.offerId === 'exam-auto' && offerId === 'exam-teacher';
   const singleIncluded = Boolean(activeMembership && offerId === 'exam-single');
   const paid = result.status === 'paid';
   const firstChargeDate = legacyCoverage ? activeMembership!.endsAt : new Date().toISOString();
+  const displayedTerms = examSlug === 'icfes'
+    ? XPRESS_TERMS.filter((term) => term.title !== (icfesTeacherAddendum?.supersedesSection ?? 'Correcciones'))
+    : XPRESS_TERMS;
 
   return <main className={styles.page}><div className={styles.shell}>
     <header className={styles.hero}>
       <Link href="/dashboard/student" className={styles.back}>← Volver al panel</Link>
       <p className={styles.eyebrow}>WELEARN · XPRESS</p>
       <h1>Tu preparación para <span>{examLabel}</span></h1>
-      <p>Elige un examen individual o una suscripción que se renueva cada 30 días. También puedes añadir clases con docente.</p>
+      <p>{examSlug === 'icfes'
+        ? 'El detalle de un solo intento se compra desde su resultado. Aquí puedes elegir una suscripción a todos los simulacros por periodos de 30 días.'
+        : 'Elige un examen individual o una suscripción que se renueva cada 30 días. También puedes añadir clases con docente.'}</p>
     </header>
 
     {activeMembership && <section className={styles.active}>
@@ -223,29 +282,61 @@ export default function XpressMembershipClient({
 
     <section className={styles.plans} aria-labelledby="plans-heading">
       <p className={styles.eyebrow}>1 · ELIGE TU PLAN</p><h2 id="plans-heading">Elige cuánto quieres practicar</h2>
-      <div className={styles.planGrid}>{XPRESS_OFFERS.map((offer) => {
-        const disabled = Boolean(subscription) || Boolean(activeMembership && offer.id === 'exam-single');
-        return <label key={offer.id} className={`${styles.planCard} ${offerId === offer.id ? styles.selected : ''} ${activeMembership?.offerId === offer.id ? styles.current : ''}`}>
+      <div className={styles.planGrid}>{visibleOffers.map((offer) => {
+        const active = activeMembership?.offerId === offer.id;
+        const blockedDowngrade = activeMembership?.offerId === 'exam-teacher' && offer.id === 'exam-auto';
+        const includedByMembership = Boolean(activeMembership && offer.id === 'exam-single');
+        const isIcfesTeacherOffer = examSlug === 'icfes' && offer.id === 'exam-teacher';
+        const membershipUnavailable = examSlug === 'icfes' && !icfesMembershipReadiness?.purchasable;
+        const teacherUnavailable = isIcfesTeacherOffer && !icfesTeacherReadiness?.purchasable;
+        const disabled = Boolean(subscription) || active || blockedDowngrade
+          || includedByMembership || membershipUnavailable || teacherUnavailable;
+        return <label key={offer.id} aria-disabled={membershipUnavailable || teacherUnavailable || undefined} className={`${styles.planCard} ${offerId === offer.id ? styles.selected : ''} ${activeMembership?.offerId === offer.id ? styles.current : ''} ${teacherUnavailable ? guardStyles.unavailable : ''}`}>
           <input type="radio" name="xpress-plan" value={offer.id} checked={offerId === offer.id} disabled={disabled}
-            onChange={() => { setOfferId(offer.id); setAcceptedTerms(false); setAcceptedPrivacy(false); setAcceptedRecurring(false); setAcceptedWompi(false); }} />
+            aria-describedby={teacherUnavailable ? 'icfes-teacher-availability' : undefined}
+            onChange={() => { setOfferId(offer.id); setAcceptedTerms(false); setAcceptedPrivacy(false); setAcceptedRecurring(false); setAcceptedWompi(false); setAcceptedIcfesTeacherAddendum(false); }} />
           <span className={styles.planName}>{offer.name}</span>
-          <strong>{activeMembership && offer.id === 'exam-single' ? 'Incluido en tu acceso' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
+          <strong>{active ? 'Plan actual' : activeMembership && offer.id === 'exam-single' ? 'Incluido en tu acceso' : isUpgrade && offer.id === 'exam-teacher' ? '$50.000 para subir' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
           <span>{offer.id === 'exam-single' ? 'Pago único para realizar un simulacro una vez.' : 'Suscripción por periodos de 30 días, con cancelación desde tu panel.'}</span>
-          <span>{offer.id === 'exam-teacher' ? 'Corrección automática y retroalimentación docente en máximo 24 horas.' : 'Corrección automática, reporte y áreas de atención.'}</span>
+          <span>{offer.id === 'exam-teacher'
+            ? isIcfesTeacherOffer
+              ? 'Incluye un crédito de feedback pedagógico personalizado de WeLearn con asistencia de IA por periodo.'
+              : 'Corrección automática y feedback personalizado según las condiciones del examen.'
+            : examSlug === 'icfes'
+              ? 'Simulacros ilimitados, corrección automática, reporte y áreas de atención. No incluye feedback personalizado.'
+              : 'Corrección automática, reporte y áreas de atención.'}</span>
+          {teacherUnavailable && <span className={guardStyles.unavailableMessage} role="status">No disponible para compra. El plan automático sigue disponible.</span>}
         </label>;
       })}</div>
+      {examSlug === 'icfes' && !icfesMembershipReadiness?.purchasable && <p className={guardStyles.availabilityNotice} role="status">
+        {icfesMembershipReadiness?.message ?? 'Los planes ICFES no están disponibles para compra en este momento.'}
+      </p>}
+      {examSlug === 'icfes' && !icfesTeacherReadiness?.purchasable && <p id="icfes-teacher-availability" className={guardStyles.availabilityNotice} role="status">
+        {icfesTeacherReadiness?.message ?? 'El plan personalizado ICFES no está disponible para compra en este momento.'}
+      </p>}
     </section>
+
+    {attemptClaim === 'claiming' && <p className={styles.message} role="status">Asociando este resultado con tu cuenta…</p>}
+    {attemptClaim === 'error' && <p className={styles.message} role="alert">No pudimos asociar el resultado con tu cuenta. Vuelve al resultado original antes de pagar.</p>}
 
     <section className={styles.classes}><div>
       <p className={styles.eyebrow}>2 · CLASES OPCIONALES</p><h2>¿Quieres trabajar tus errores con un docente?</h2>
       <p>Las clases se compran por separado y muestran su propio reglamento antes del pago. Las condiciones de abajo pertenecen solo a Xpress.</p>
     </div><Link href={classPurchasePath}>Ver clases desde $320.000 →</Link></section>
-
     {(!subscription || completingSource) && !singleIncluded && <section className={styles.terms}>
       <p className={styles.eyebrow}>3 · ANTES DEL PAGO</p><h2>Condiciones claras</h2>
-      <div className={styles.termGrid}>{XPRESS_TERMS.map((term) => <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>)}</div>
+      <div className={styles.termGrid}>
+        {displayedTerms.map((term) => <article key={term.title}><h3>{term.title}</h3><p>{term.text}</p></article>)}
+        {examSlug === 'icfes' && !isIcfesTeacherSelected && <article><h3>Correcciones</h3><p>El plan automático incluye reporte y áreas de atención generadas por el sistema. No incluye feedback personalizado.</p></article>}
+        {isIcfesTeacherSelected && <article><h3>Feedback personalizado ICFES</h3><p>Incluye un crédito por periodo de feedback pedagógico personalizado de WeLearn con asistencia de IA. Antes de entregarse pasa por control de calidad y aparecerá como pendiente.</p></article>}
+      </div>
       <label className={styles.check}><input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} /><span><strong>Leí y acepto las condiciones de Xpress.</strong></span></label>
       <label className={styles.check}><input type="checkbox" checked={acceptedPrivacy} onChange={(event) => setAcceptedPrivacy(event.target.checked)} /><span>{XPRESS_PRIVACY_NOTICE}</span></label>
+      {isIcfesTeacherSelected && <label className={styles.check}>
+        <input type="checkbox" checked={acceptedIcfesTeacherAddendum} disabled={isIcfesTeacherUnavailable}
+          onChange={(event) => setAcceptedIcfesTeacherAddendum(event.target.checked)} />
+        <span><strong>Acepto la condición específica ICFES:</strong> un crédito de feedback pedagógico personalizado de WeLearn con asistencia de IA por periodo y objetivo operativo de 12 horas sujeto a capacidad.</span>
+      </label>}
 
       {recurring && <>
         <label className={styles.check}><input type="checkbox" checked={acceptedRecurring} onChange={(event) => setAcceptedRecurring(event.target.checked)} /><span><strong>{XPRESS_RECURRING_CONSENT}</strong></span></label>
@@ -267,6 +358,8 @@ export default function XpressMembershipClient({
           <input type="hidden" name="accepted_privacy" value={acceptedPrivacy ? XPRESS_PRIVACY_VERSION : ''} />
           <input type="hidden" name="accepted_recurring" value={acceptedRecurring ? XPRESS_RECURRING_CONSENT_VERSION : ''} />
           <input type="hidden" name="accepted_wompi" value={acceptedWompi ? 'yes' : ''} />
+          <input type="hidden" name="icfes_attempt_id" value={icfesAttemptId ?? ''} />
+          <input type="hidden" name="accepted_icfes_teacher_addendum" value={acceptedIcfesTeacherAddendum && icfesTeacherAddendum ? icfesTeacherAddendum.version : ''} />
           {!recurringReady && <button type="button" disabled>Completa las aceptaciones para suscribirte</button>}
         </form>}
       </div>

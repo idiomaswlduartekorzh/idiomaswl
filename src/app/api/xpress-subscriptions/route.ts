@@ -25,15 +25,20 @@ export async function POST(request: Request) {
   try {
     const result = await prepareXpressSubscription(user, input);
     const params: Record<string, string> = { suscripcion: result.subscription.id };
+    if (input.icfesAttemptId) params.attempt = input.icfesAttemptId;
     if (result.order?.id) params.orden = String(result.order.id);
     if (!result.order) params.programada = '1';
     return redirectTo(request, params);
   } catch (error) {
     const code = error instanceof Error ? error.message : 'subscription_failed';
     console.error('[xpress-subscriptions] setup failed', { userId: user.id, code });
-    if (code === 'xpress_subscription_exists') return redirectTo(request, { error: 'ya-activa' });
-    if (code === 'xpress_exam_mismatch') return redirectTo(request, { error: 'seleccion' });
-    if (code.startsWith('payment_source_rejected_')) return redirectTo(request, { error: 'tarjeta' });
-    return redirectTo(request, { error: 'suscripcion' });
+    const attempt: Record<string, string> = {};
+    if (input.icfesAttemptId) attempt.attempt = input.icfesAttemptId;
+    if (code === 'xpress_subscription_exists') return redirectTo(request, { error: 'ya-activa', ...attempt });
+    if (code === 'xpress_exam_mismatch') return redirectTo(request, { error: 'seleccion', ...attempt });
+    if (code === 'icfes_membership_unavailable') return redirectTo(request, { error: 'icfes-cerrado', ...attempt });
+    if (code === 'icfes_teacher_unavailable') return redirectTo(request, { error: 'capacidad', ...attempt });
+    if (code.startsWith('payment_source_rejected_')) return redirectTo(request, { error: 'tarjeta', ...attempt });
+    return redirectTo(request, { error: 'suscripcion', ...attempt });
   }
 }

@@ -42,3 +42,25 @@ jobs:
       - run: npm run build
         env:
           NODE_OPTIONS: --max-old-space-size=4096
+
+  icfes-content-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check:icfes-expansion
+      - run: npm run test:icfes-expansion-v2
+      - run: npm run check:icfes-superhub
+      - run: npm run test:icfes
+      - run: npm run test:icfes-privacy
+      - run: npm run test:icfes-teacher-evidence
+      - run: npm run test:icfes-teacher-api
+      - run: npm run test:icfes-payments-adversarial
+      - run: npm run audit:icfes-payments-adversarial
+      - run: npm run test:icfes-launch-harness
+      - run: npm run check:icfes-launch-harness

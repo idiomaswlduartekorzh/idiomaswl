@@ -12,6 +12,11 @@ export async function GET(_request: Request, { params }: { params: Promise<{ ord
     const order = await ownedXpressOrder(orderId, user.id);
     if (!order) return json({ message: 'Compra no encontrada.' }, 404);
     const state = await xpressOrderState(orderId);
+    const legalSnapshot = order.legal_snapshot && typeof order.legal_snapshot === 'object'
+      ? order.legal_snapshot as Record<string, unknown> : null;
+    const icfesAttemptId = typeof legalSnapshot?.icfesAttemptId === 'string'
+      && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(legalSnapshot.icfesAttemptId)
+      ? legalSnapshot.icfesAttemptId : null;
     return json({
       order: {
         id: order.id,
@@ -26,6 +31,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ ord
         acceptedAt: order.accepted_at,
         termsVersion: order.terms_version,
         legalSnapshot: order.legal_snapshot,
+        resultUrl: icfesAttemptId ? `/practica/icfes-saber-11/resultados/${icfesAttemptId}` : null,
       },
       status: state.status,
       membership: state.membership,

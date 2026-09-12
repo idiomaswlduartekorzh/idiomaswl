@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import {
   XPRESS_OFFERS,
@@ -18,11 +19,11 @@ import { buildXpressRecurringTransaction } from '../src/lib/xpress-commerce/recu
 
 test('publishes one exam purchase and two memberships in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
-    ['exam-single', 1_200_000],
-    ['exam-auto', 4_900_000],
-    ['exam-teacher', 9_900_000],
+    ['exam-single', 1_290_000],
+    ['exam-auto', 4_990_000],
+    ['exam-teacher', 9_990_000],
   ]);
-  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 24);
+  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 12);
   assert.equal(XPRESS_OFFERS[0].billing, 'single-exam');
   assert.deepEqual(XPRESS_OFFERS.slice(1).map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days']);
 });
@@ -51,7 +52,7 @@ test('accepts recurring consent and only Wompi card tokens for memberships', () 
 
 test('builds a server-side Wompi renewal without card data', () => {
   const payload = buildXpressRecurringTransaction({
-    amountInCents: 4_900_000,
+    amountInCents: 4_990_000,
     reference: 'WX-12345678-1234-4234-8234-123456789012',
     email: 'student@example.com',
     paymentSourceId: 3891,
@@ -88,7 +89,7 @@ test('accepts only versioned Xpress orders and strict Wompi transactions', () =>
   assert.deepEqual(parseXpressOrderInput(input), input);
   assert.equal(parseXpressOrderInput({ ...input, offerId: 'inventado' }), null);
   assert.equal(parseXpressOrderInput({ ...input, acceptedTerms: 'viejos' }), null);
-  const payment = { id: 'transaction-1', reference: 'WX-12345678-1234-4234-8234-123456789012', amount_in_cents: 4_900_000, currency: 'COP', status: 'APPROVED' };
+  const payment = { id: 'transaction-1', reference: 'WX-12345678-1234-4234-8234-123456789012', amount_in_cents: 4_990_000, currency: 'COP', status: 'APPROVED' };
   assert.deepEqual(parseXpressProviderPayment(payment), payment);
   assert.equal(parseXpressProviderPayment({ ...payment, reference: 'WC-12345678-1234-4234-8234-123456789012' }), null);
   assert.equal(parseXpressProviderPayment({ ...payment, amount_in_cents: 49.5 }), null);
@@ -104,10 +105,10 @@ test('an active membership cannot charge twice for the same exam', () => {
   assert.equal(quote.amountInCents, 0);
 });
 
-test('a single self-study exam charges COP 12,000 and creates no membership period', () => {
+test('a single self-study exam charges COP 12,900 and creates no membership period', () => {
   const quote = quoteXpressPurchase({ requestedOfferId: 'exam-single', requestedExamSlug: 'ielts' });
   assert.equal(quote.action, 'checkout');
-  assert.equal(quote.amountInCents, 1_200_000);
+  assert.equal(quote.amountInCents, 1_290_000);
   assert.equal(quote.reason, 'single-purchase');
   assert.equal(quote.offer.billing, 'single-exam');
 });
@@ -138,10 +139,23 @@ test('schedules plan or exam changes instead of creating overlapping access', ()
   assert.equal(examChange.action, 'schedule-change');
 });
 
-test('a membership lasts 30 days and teacher access includes the 24-hour entitlement', () => {
+test('a membership lasts 30 days and the superior tier alone includes personalized feedback', () => {
   assert.equal(xpressAccessEndsAt(new Date('2026-09-08T12:00:00Z')).toISOString(), '2026-10-08T12:00:00.000Z');
-  assert.equal(xpressOfferIncludes('exam-teacher', 'teacher-feedback-24h'), true);
-  assert.equal(xpressOfferIncludes('exam-auto', 'teacher-feedback-24h'), false);
+  assert.equal(xpressOfferIncludes('exam-teacher', 'personalized-feedback-12h'), true);
+  assert.equal(xpressOfferIncludes('exam-auto', 'personalized-feedback-12h'), false);
+});
+
+test('ICFES personalized subscriptions are gated in server code and atomically reserve capacity before charging', () => {
+  const subscriptions = readFileSync('src/lib/xpress-commerce/subscriptions.server.ts', 'utf8');
+  const route = readFileSync('src/app/api/xpress-subscriptions/route.ts', 'utf8');
+  const repair = readFileSync('supabase/migrations/20260912170000_icfes_detail_price_reconciliation.sql', 'utf8');
+  assert.match(subscriptions, /input\.examSlug === 'icfes'[\s\S]+getIcfesMembershipOfferReadiness/);
+  assert.match(subscriptions, /input\.offerId === 'exam-teacher'[\s\S]+getIcfesTeacherOfferReadiness/);
+  assert.match(subscriptions, /link_xpress_subscription_teacher_capacity[\s\S]+start_xpress_recurring_charge/);
+  assert.match(route, /icfes_teacher_unavailable[\s\S]+error: 'capacidad'/);
+  assert.match(repair, /prepare_xpress_subscription[\s\S]+p_exam='icfes' and p_offer='exam-teacher'[\s\S]+xpress_teacher_capacity_status/);
+  assert.match(repair, /link_xpress_subscription_teacher_capacity[\s\S]+order_kind not in \('subscription_start','renewal'\)/);
+  assert.match(repair, /link_xpress_subscription_teacher_capacity[\s\S]+status='order_linked',order_id=p_order/);
 });
 
 test('validates and normalizes both registration paths', () => {

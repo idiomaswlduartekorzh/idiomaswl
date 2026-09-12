@@ -1,0 +1,486 @@
+{
+  "$schema": "../work-order.schema.json",
+  "schemaVersion": 1,
+  "workOrderId": "icfes-three-tier-launch-v1",
+  "campaignId": "icfes-three-tier-launch-v1",
+  "baseCommit": "c3afecc9d1ff9645867dc20f9930431f2c7256a6",
+  "createdAt": "2026-09-09T00:00:00-05:00",
+  "workOrderDigest": "e399d8d6f6328e6179a8beffeef6d267fec913bb8efd66abcc1f7876463e5286",
+  "objective": "Implement and validate the COP 12,900 single-detail, COP 49,900 automatic and COP 99,900 one-credit AI-assisted WeLearn feedback ladder, with human approval evidence before delivery and no public teacher-authorship claim.",
+  "inputArtifacts": [
+    {
+      "path": "docs/icfes-product-activation.md",
+      "sha256": "4795db95e9200896f02b3af42d068d545870017a3fca00b2166e0114e3fe52b7"
+    },
+    {
+      "path": "docs/icfes-commerce-v1.md",
+      "sha256": "d289b2a3d8af3b9c0c39a7384e9bc35d99d9290aab867a13f9f6cd8186bd768d"
+    },
+    {
+      "path": "src/data/icfes/own-mock-expansion-manifest.json",
+      "sha256": "445c435d3585e09521faf4a4caaa726660d01eaaa2b05002fb53fa3685cd9dac"
+    },
+    {
+      "path": "src/data/icfes/own-mock-expansion.schema.json",
+      "sha256": "3e9977ef2aa48f988ac7555194e16de8cea7f6e31970678dc3517c1147c6e795"
+    },
+    {
+      "path": "scripts/check-icfes-own-expansion.mjs",
+      "sha256": "64b7512d0d9195ce893859124bbc682bdd27d9fd6fe246c649885b46d5f2d4fb"
+    },
+    {
+      "path": "supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql",
+      "sha256": "fe3e607af907d2acaa6375a1d564f24fc6bfcc97ea3e96cee578033d6d76d8a8"
+    },
+    {
+      "path": "docs/icfes-privacy-contract.md",
+      "sha256": "46d9b3fa5388f13c10dca3b2f776429f78fd30e64de89af9a4da5ca49fd8d36d"
+    },
+    {
+      "path": "tests/icfes-privacy-contract.test.mjs",
+      "sha256": "f416b8e8dc6a6507b527956bb8c8c5d3a37909ef48ae51e33d1158403e396656"
+    },
+    {
+      "path": "supabase/tests/icfes_privacy_contract.sql",
+      "sha256": "169827a3a99afe682cba917f45249de716dd475f69705472dfb6ed5f54b26295"
+    },
+    {
+      "path": "supabase/migrations/20260909000500_xpress_memberships_wompi.sql",
+      "sha256": "150e6baf04a40d5df8dec1bff1e6c9bcfd99e835ecc6f208101d00b6132ce8ef"
+    },
+    {
+      "path": "src/lib/icfes/product-config.server.ts",
+      "sha256": "bfe6bf44d63db057be8911b646369c4ed72e2be421d02efa15cc39f4aa943a51"
+    },
+    {
+      "path": "src/lib/icfes/commerce-v1.ts",
+      "sha256": "95a87a3978a48687f7892b4d4c746e9f900558ac984b56612697e42badfc2680"
+    },
+    {
+      "path": "src/lib/icfes/payment-adversarial-model.ts",
+      "sha256": "c18fd3de27eee42009487269a1bdd8cd1cda5e215a8fdaec02251c658a3c3fed"
+    },
+    {
+      "path": "src/lib/icfes/payment-event.ts",
+      "sha256": "0fbb075f4d2884ba0149358eacfe46e3c9f5007ea3cc3ad0c0b70b8a9fcf7c22"
+    },
+    {
+      "path": "src/lib/icfes/payment-events.server.ts",
+      "sha256": "855362a9d1e40f06ec30443fbdee7f050a919937abb3694c4ba00c7ecff0c6b0"
+    },
+    {
+      "path": "tests/icfes-payments-adversarial.test.mjs",
+      "sha256": "bb93b219b57d02f62e6919d4e1f9666c135bc78e174f7f3ea8acbe476b089584"
+    },
+    {
+      "path": "scripts/audit-icfes-payments-adversarial.mjs",
+      "sha256": "83e967e661cbe20d2833c9a73f397818361ff43d53b1f9622fa6561ff70f91b5"
+    },
+    {
+      "path": "docs/icfes-payments-adversarial-local.json",
+      "sha256": "809371bfa1adef95a6f93619cdb8a2e53870f526d8a981da7c609b54d49f6a5f"
+    },
+    {
+      "path": "src/lib/icfes/teacher-rubric-v1.ts",
+      "sha256": "57f1b131ba030ee7c6037965f36a9368b3d7d6c5b6cebca65d1ec2e68a13f60a"
+    },
+    {
+      "path": "src/lib/icfes/teacher-ops-v1.ts",
+      "sha256": "d792956e22dd6d435e8593860b5738f815e6dd941412058f51a9dd187a0bc3a6"
+    },
+    {
+      "path": "src/lib/icfes/teacher-ops.server.ts",
+      "sha256": "957f23121205a1192c597687e3e5afb3497c3c461c6e7393a412168e63858c36"
+    },
+    {
+      "path": "tests/icfes-teacher-ops-v1.test.mjs",
+      "sha256": "0f28cbcae964f8ef7ab288af09e6a3d30d4f1e06439937c04fa7865170b843c6"
+    },
+    {
+      "path": "docs/icfes-teacher-ops-v1.md",
+      "sha256": "8f5175284d95b31d385ee793eab31258b3508ddcd3e75a335dbc829934dacebf"
+    },
+    {
+      "path": "src/lib/xpress-commerce/catalog.ts",
+      "sha256": "fb30d3b085bd8a6aa9bdc19b8140a9b609cdbdc4bebaa2ff728d443250e3c8ef"
+    },
+    {
+      "path": "src/lib/xpress-commerce/payment.ts",
+      "sha256": "95c3bf6b1a48aa1bf12934a9574c405ca330b1c04ee3afb7754c49d1c2196a99"
+    },
+    {
+      "path": "src/lib/xpress-commerce/payments.server.ts",
+      "sha256": "738cba184fe6e75fc565dd2b7614bd981d5c8a0952cbf747c26faca965a591a6"
+    },
+    {
+      "path": "src/lib/icfes/attempt-token.server.ts",
+      "sha256": "ce1f37c800b17d1c744c416e7f243c2fd3e2ba9f0e96f7f1504da5ffbe569ab9"
+    },
+    {
+      "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts",
+      "sha256": "afd63094c0a87cf2ce302f5b9912d8ca25dd6ddc6f6ba12ac93a94801762f1b9"
+    },
+    {
+      "path": "src/app/api/icfes/attempts/grade/route.ts",
+      "sha256": "089512dec456b1bab96d4cfbdee2e3d7a8d77cdfa251efe71840d544603fd248"
+    },
+    {
+      "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/guiado/page.tsx",
+      "sha256": "64526a0a9d53fef4170011fc973b32998e6f5e5a12c0627b5c59a5240814b345"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "sha256": "7544b006a4627f063a4aaecc54357e09e763d4cf908b9995e5aab8b0e53f2d73"
+    },
+    {
+      "path": "tests/icfes-product.test.mjs",
+      "sha256": "e4d3c03b62bc1b67538b3b7d60998536af5c94b593a0d2111398dbcb0e9b04d5"
+    },
+    {
+      "path": "package.json",
+      "sha256": "9446ac5b68b3ed47b1c6ee939775ea898685d1f49060be5b51296267066b9e49"
+    },
+    {
+      "path": "docs/icfes-launch-harness.md",
+      "sha256": "b1acc89061754c64188e9d26ce974afde00490065ff61b6eb1a671617ea1b29b"
+    },
+    {
+      "path": "src/lib/icfes/attempt-evidence.ts",
+      "sha256": "682a60963ab43b02c6d8f5036103b66a1f819a8eae5e0aeb3e84dd013fc8df0e"
+    },
+    {
+      "path": "src/lib/icfes/attempt-ownership.server.ts",
+      "sha256": "c94c8685f6733f8f7bd4f0665c7b0aa94921e9016930d567c41aff7be8e1ef09"
+    },
+    {
+      "path": "src/lib/icfes/grading.server.ts",
+      "sha256": "bb7fe400421ef02835d135db5d2c4440a997f33b0af0f9719fa474469e676cd1"
+    },
+    {
+      "path": "src/app/api/icfes/attempts/claim/route.ts",
+      "sha256": "e6f6a6f8d4522e42d6feb06fe235140e7705e14399bfddcca025f949e4284c2f"
+    },
+    {
+      "path": "src/app/api/icfes/pass/checkout/route.ts",
+      "sha256": "bb6a6399ef7ac2f1bcb3d654e9ae1374de41dc1b6ed31779360774c94f3a0b34"
+    },
+    {
+      "path": "supabase/migrations/20260909002000_icfes_attempt_claim_evidence.sql",
+      "sha256": "49f5e74cf0f0200983b90ecb9bc18c0b14f38495c6c6e13db36732fcb1e69218"
+    },
+    {
+      "path": "tests/icfes-teacher-evidence-v1.test.mjs",
+      "sha256": "aab15ba7d8ccd4e804041c5635fcb377fd90aec8adc53b3f9d155ddab3793d3a"
+    },
+    {
+      "path": "src/lib/icfes/privacy-operations.ts",
+      "sha256": "bf8e5e8c824a03117f023b0259580cdad8def20f67ac912b19d8a7fdc059480a"
+    },
+    {
+      "path": "src/lib/icfes/privacy-operations.server.ts",
+      "sha256": "4faafe2b1dbbef1633b06d7d822a47d64297a488e3ce2a77b0f3323abce21e25"
+    },
+    {
+      "path": "src/app/api/icfes/privacy/export/route.ts",
+      "sha256": "d357f2c68cd2a8cdc1e92e790a9bfe97bd8b5f37187b2eb6658191137a3f8ab5"
+    },
+    {
+      "path": "src/app/api/icfes/privacy/delete/route.ts",
+      "sha256": "acffe8a7f7c8d5afc41550c52a92c119c33d6826722f88e3b58877ad256514a9"
+    },
+    {
+      "path": "src/app/api/internal/icfes/privacy/purge/route.ts",
+      "sha256": "d1a385d0f032275d1abb8405ebe084e188cc893490f14dc641f19a53a38c7654"
+    },
+    {
+      "path": "supabase/migrations/20260909180000_icfes_privacy_operations.sql",
+      "sha256": "28f657954954489f350fbef73378445eec9ecf3b51e7a5557e8e92490462d183"
+    },
+    {
+      "path": "tests/icfes-privacy-operations.test.mjs",
+      "sha256": "d63cbe5e5fd654480103964d2f73fc22817ebf43160bd97b6b840e966d258d83"
+    },
+    {
+      "path": "src/app/(site)/suscripcion/examenes/XpressMembershipClient.tsx",
+      "sha256": "6e36bc27f8021b137b463e9e419cdd7f88e6470fb986a56ef10e239b64125760"
+    },
+    {
+      "path": "src/app/(site)/suscripcion/examenes/page.tsx",
+      "sha256": "4da850801c1a3622d574322894657fb56ed622ed767fe9a5faede3615cc384fb"
+    },
+    {
+      "path": "src/app/(site)/suscripcion/examenes/xpress-offer-guard.module.css",
+      "sha256": "feb95fdc8ac5255bfeb06d5a50b83bba0b4f58f8a20acbbc153d64b4e97633f1"
+    },
+    {
+      "path": "src/app/api/xpress-orders/route.ts",
+      "sha256": "9861808710bb4f42d64c2b0f95ced4d99985c8319be9dc6db7c0a5317e5464de"
+    },
+    {
+      "path": "src/app/api/xpress-orders/[orderId]/checkout/route.ts",
+      "sha256": "3963ba15eeb8f9846156eb8d78e75e05ca75d411528efca2f807baf1b3963a10"
+    },
+    {
+      "path": "src/lib/icfes/teacher-offer-readiness.server.ts",
+      "sha256": "7dd56cc4108b1a1cb0587d09da0630a2c1223dd201f699e1900fe0b9203959f5"
+    },
+    {
+      "path": "tests/icfes-teacher-offer-ux.test.mjs",
+      "sha256": "ec895ab80e01ee05ffa5b94b32980d609f54d4886870004f169bed8c19f8c82d"
+    },
+    {
+      "path": "src/app/(auth)/login/AuthForm.tsx",
+      "sha256": "93471a5be8845a198050088283227c1da10fffc948d03ff8adec94eab08867dc"
+    },
+    {
+      "path": "src/lib/config/admins.ts",
+      "sha256": "0d90f864d34b76a9801489537a4cbec82c5cd21e24e88f0cb48d1bebc5117f72"
+    },
+    {
+      "path": "src/lib/student-onboarding/catalog.ts",
+      "sha256": "f426adba4a5edeefad2b1b3c3ee9ca3b736073a3d9780537e8115a058b4cb9e5"
+    },
+    {
+      "path": "tests/registration-onboarding.test.mjs",
+      "sha256": "acb1b7ad78157f4bd0429e4f61e19849f018fa28a0b2d2ab396db22dbf2b613b"
+    },
+    {
+      "path": "src/app/(site)/dashboard/admin/icfes-reviews/IcfesReviewInbox.tsx",
+      "sha256": "2a09953de03ff3839832b7e3bfaa2e1fc80d36e92354a5cfab90aeabd0b02680"
+    },
+    {
+      "path": "src/app/(site)/dashboard/admin/icfes-reviews/page.tsx",
+      "sha256": "022807884d5682e0247771d24611ac0c5f28917c07957d39d9f54f1664dd720c"
+    },
+    {
+      "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx",
+      "sha256": "255ca9a0ed553a2ddfcc201243a3a4c536939f5e33716ffb5587ac816733425c"
+    },
+    {
+      "path": "src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx",
+      "sha256": "ef3a1222c799fc336bc982000dc33bc544da32a4f2703a6a3177ff469bc48445"
+    },
+    {
+      "path": "src/app/api/admin/icfes/teacher-reviews/route.ts",
+      "sha256": "966b1b23fdd6f51a991a59a25f5ebb967207172eaeaaac271705dc7fc28238db"
+    },
+    {
+      "path": "src/app/api/icfes/teacher-reviews/route.ts",
+      "sha256": "581ad621b5105108ec6c75b9ff06ab3f9612707b9531d090a5653184ad4fad4d"
+    },
+    {
+      "path": "src/app/api/internal/icfes/teacher-reviews/claim/route.ts",
+      "sha256": "96b87d12413f18f015c9564e9cfeff605f3382aa1d3e7585bb84fb74bc66a762"
+    },
+    {
+      "path": "src/app/api/internal/icfes/teacher-reviews/complete/route.ts",
+      "sha256": "5377ce2c138a4be2483c0fa58990a2d0f650a96d893c39968101dc2f8980a6a4"
+    },
+    {
+      "path": "src/app/api/internal/icfes/teacher-reviews/notifications/route.ts",
+      "sha256": "28c3dff7a511ae6061df61847daaaa97f6d1e3d532641dff7dd043102ca9ef13"
+    },
+    {
+      "path": "src/app/api/internal/icfes/teacher-reviews/renew/route.ts",
+      "sha256": "05ce9a05773975bfd5bc7cb8d3ab474b3e92459e18b90ed3918d690ac273117d"
+    },
+    {
+      "path": "src/app/api/xpress-orders/[orderId]/route.ts",
+      "sha256": "75d626c0de99461a45a1693944bdb8bea7e27943ac800ebe393f167cad8e445d"
+    },
+    {
+      "path": "src/lib/icfes/attempt-contract.ts",
+      "sha256": "bce6836127b7ae6d6f112855f4216bba52a9f5fb3bdd9c412430db3a481f0d5e"
+    },
+    {
+      "path": "src/lib/icfes/automatic-feedback.ts",
+      "sha256": "86942ed08874fb86fa8a1a5b3028e984bb148f723e7d34dd336b70bfcc4202a2"
+    },
+    {
+      "path": "src/lib/icfes/teacher-notifications.server.ts",
+      "sha256": "dbb222359e42ff6db266c6a852366927010f1a755df6cbf284a9aec8d2bfa07c"
+    },
+    {
+      "path": "src/lib/icfes/teacher-worker-auth.ts",
+      "sha256": "978bb3548e7671074cfa0a3d1c15fc242e184e708c30ec4c47982f82d93c0baa"
+    },
+    {
+      "path": "src/lib/xpress-commerce/terms.ts",
+      "sha256": "8fb4e199eadaf4f1a3d81c7c30079186841e2d05dbca48272c5aeed4f1e68136"
+    },
+    {
+      "path": "supabase/migrations/20260909001000_icfes_teacher_review_queue.sql",
+      "sha256": "be56044fcbedacafe18fe00eb9256b451eccdfb48d308b86933fe803badec15c"
+    },
+    {
+      "path": "supabase/migrations/20260909170000_icfes_privacy_foundation.sql",
+      "sha256": "76d5a92a8b286f1ddad6ccb8d3771b4139f3c5dbf65002644af0ecc66d914b7b"
+    },
+    {
+      "path": "supabase/migrations/20260909183000_icfes_teacher_review_delivery.sql",
+      "sha256": "3680befe6debb9e813e367a675a4607f20af9e3f1574a40762dff21c445346db"
+    },
+    {
+      "path": "supabase/migrations/20260912160504_icfes_teacher_12h_operational_loop.sql",
+      "sha256": "708937164c1c8521ff4f9b080e7351b978955fb2add8f8e2ba6877065cc90d0c"
+    },
+    {
+      "path": "supabase/migrations/20260912170000_icfes_detail_price_reconciliation.sql",
+      "sha256": "207df5ddbac97827a86ab66e13bc85b7ef4f613ce5cca24535458027e48ad8ea"
+    },
+    {
+      "path": "tests/icfes-automatic-feedback.test.mjs",
+      "sha256": "7e1fa6e62e57c198debb88ad257877d5491303c40f232a28f0cd92d134e09f7f"
+    },
+    {
+      "path": "tests/icfes-operational-loop.test.mjs",
+      "sha256": "f8274cba5037f669339e1e492c87916d5bfc289284da860c59e5bf6a9ebaddc1"
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "1982525bcf5b45a2e655657fc38538731d337ce3d71222d3eb5b5e33df71287d"
+    },
+    {
+      "path": "config/icfes-launch-harness/approval.schema.json",
+      "sha256": "4f77639fba267df02d731d2be169143ab4b3bd4f1a644c25f454a266e6b5a20b"
+    },
+    {
+      "path": "config/icfes-launch-harness/campaign.json",
+      "sha256": "1873d40fde4ba76ae95f8f7cb45c02b6e439af993fe297482ee10f62baf39e61"
+    },
+    {
+      "path": "config/icfes-launch-harness/candidate-ledger.schema.json",
+      "sha256": "dc416f260cab639a4f0b7424a11c5f6b5377fdb506933f71ef4cd1b114447e93"
+    },
+    {
+      "path": "config/icfes-launch-harness/release-manifest.schema.json",
+      "sha256": "19200ff260479c7d117bf9e3740691134e786d662ecd05992d6ff154884ebaf4"
+    },
+    {
+      "path": "config/icfes-launch-harness/review-report.schema.json",
+      "sha256": "d7e32b5f97bcebea2ec9db4087dadbddd58c2571ee46409d47dfa27bb5d596e6"
+    },
+    {
+      "path": "config/icfes-launch-harness/work-order.schema.json",
+      "sha256": "47d3d23dddeeb8bc1c906e70b8de708b8fe7ae35341e98c453b7ebde645d1b3e"
+    },
+    {
+      "path": "scripts/audit-icfes-seo-product.mjs",
+      "sha256": "c3fd10b36b39958bfd4079c40300cedc20b890b61e9b4e20aca9bc907c2321e6"
+    },
+    {
+      "path": "docs/templates/ICFES-OWN-MOCK-EXPANSION-CHECKLIST.md",
+      "sha256": "d9ae7d69ca866007e6fcf741a43c8c36aaacc8cbd3c4a024b1e1c99cce1c1add"
+    },
+    {
+      "path": "docs/icfes-seo-measurement-2026-09-09.md",
+      "sha256": "112d7aaed9b7dd0e8cf997407f1dc380412daa8dec5dc4f90a4a1a6e14cd16c5"
+    },
+    {
+      "path": "config/icfes-launch-harness/policy.json",
+      "sha256": "75b21f5a203a9d6066ae1d88d8ae0a17caad2ab6299584b4104d2b964c47cbe8"
+    },
+    {
+      "path": "scripts/icfes-launch-harness.mjs",
+      "sha256": "18a093265426e887ece7584f2bf4cb0143e0c7ebc0695e0742253c0c36795135"
+    },
+    {
+      "path": "scripts/lib/icfes-launch-harness-core.mjs",
+      "sha256": "45b17ce663dd6efadb7857935dffd55db032e80f686eae39cf2013fec6ebd279"
+    },
+    {
+      "path": "scripts/lib/icfes-own-expansion-core.mjs",
+      "sha256": "f48bf9747ff72d25b8506f06ca72af6923caed9feed81ae0845fb2f0525f6d85"
+    },
+    {
+      "path": "docs/ICFES-OWN-MOCK-EXPANSION-PIPELINE.md",
+      "sha256": "bb825c95cc6749815b73d906126aab52c2baa780eaf2c9659a3fe7ba2fb7c897"
+    },
+    {
+      "path": ".github/workflows/content-integrity.yml",
+      "sha256": "a667a6e356f94a0fec0ba7d6743602311b8bf87698b9f646d6dfc03c3a4cdee6"
+    },
+    {
+      "path": "tests/icfes-own-expansion-v2.test.mjs",
+      "sha256": "7cd17d9bafbbf3a1fd3e00929c7b3345cbec5846e6d6fe77a86fc94cf5bef9f5"
+    },
+    {
+      "path": "tests/icfes-launch-harness.test.mjs",
+      "sha256": "8ab77b9b49ed4c357b40c71b2afb7243044324b7a1026fc757d36a1ebc8b7110"
+    }
+  ],
+  "requiredRoles": [
+    "author",
+    "english-reviewer",
+    "icfes-format-reviewer",
+    "adversary",
+    "seo-reviewer",
+    "geo-aeo-ai-reviewer",
+    "security-reviewer",
+    "privacy-reviewer",
+    "payments-reviewer",
+    "teacher-ops-reviewer"
+  ],
+  "requiredGates": [
+    "editorial",
+    "seo",
+    "geo-aeo-ai",
+    "pricing",
+    "security",
+    "privacy",
+    "payments",
+    "teacher-ops",
+    "release"
+  ],
+  "stopConditionIds": [
+    "editorial-unresolved",
+    "seo-answer-leak",
+    "discovery-claim-or-source-gap",
+    "pricing-contract-missing",
+    "security-bypass",
+    "privacy-contract-missing",
+    "payment-evidence-missing",
+    "teacher-capacity-red",
+    "release-proof-missing"
+  ],
+  "allowedImplementationRoots": [
+    "config/icfes-launch-harness",
+    "artifacts/icfes-launch-harness",
+    "docs",
+    "scripts",
+    "src",
+    "supabase/migrations",
+    "supabase/tests",
+    "tests"
+  ],
+  "targetOffer": [
+    {
+      "sku": "icfes-detail-attempt-v1",
+      "priceCop": 12900,
+      "durationDays": null,
+      "humanReviewCredits": 0
+    },
+    {
+      "sku": "exam-auto",
+      "examSlug": "icfes",
+      "priceCop": 49900,
+      "durationDays": 30,
+      "humanReviewCredits": 0
+    },
+    {
+      "sku": "exam-teacher",
+      "examSlug": "icfes",
+      "priceCop": 99900,
+      "durationDays": 30,
+      "humanReviewCredits": 1,
+      "humanReviewSlaHours": 12,
+      "feedbackCreditsPerPeriod": 1,
+      "publicBenefitLabel": "feedback pedagógico personalizado de WeLearn con asistencia de IA",
+      "aiAssistanceDisclosureRequired": true,
+      "humanApprovalEvidenceRequiredBeforeDelivery": true,
+      "publicTeacherAuthorshipClaimForbidden": true,
+      "deliveryTargetConditionalOnReservedCapacity": true,
+      "deliveryTargetIsGuarantee": false
+    }
+  ]
+}

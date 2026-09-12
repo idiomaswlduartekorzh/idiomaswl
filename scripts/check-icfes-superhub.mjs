@@ -46,7 +46,9 @@ for (const route of ['diagnostico', 'plan-de-estudio', 'pregunta-del-dia', 'voca
   assert.ok(sitemap.includes(route), `Falta ${route} en sitemap`);
 }
 assert.match(sitemap, /GUIDED_WORKBOOK_IDS\.map/, 'El sitemap debe incluir todos los cuadernillos guiados desde el registro');
-assert.match(sitemap, /GUIDED_MOCK_IDS\.map/, 'El sitemap debe incluir los 23 mocks guiados desde el registro');
+assert.doesNotMatch(sitemap, /GUIDED_MOCK_IDS\.map/, 'Los 23 mocks guiados para miembros no deben entrar al sitemap público');
+assert.match(guidedMockPage, /robots: \{ index: false, follow: false, noarchive: true \}/, 'El modo guiado para miembros debe ser noindex');
+assert.match(guidedMockPage, /activeXpressMembership/, 'El modo guiado completo debe verificar una membresía activa');
 
 for (const table of ['icfes_practice_sessions', 'icfes_practice_attempts', 'icfes_skill_mastery', 'icfes_error_queue']) {
   assert.match(migration, new RegExp(`ALTER TABLE ${table} ENABLE ROW LEVEL SECURITY`), `${table} debe habilitar RLS`);

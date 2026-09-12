@@ -10,6 +10,10 @@ import { activeXpressMembership, queueXpressPaymentReconciliation, reconcileXpre
 import { parseXpressProviderPayment, type XpressSubscriptionInput } from './payment';
 import { buildXpressRecurringTransaction } from './recurring';
 import {
+  getIcfesMembershipOfferReadiness,
+  getIcfesTeacherOfferReadiness,
+} from '@/lib/icfes/teacher-offer-readiness.server';
+import {
   XPRESS_LEGAL_SNAPSHOT,
   XPRESS_PRIVACY_VERSION,
   XPRESS_RECURRING_CONSENT_VERSION,
@@ -120,19 +124,25 @@ export async function currentXpressSubscription(userId: string): Promise<Subscri
   return data as SubscriptionRow | null;
 }
 
-async function profileAllowsSubscription(userId: string, examSlug: string) {
+async function profileAllowsSubscription(userId: string, examSlug: string, icfesAttemptId?: string) {
   const { data, error } = await createAdminClient().from('profiles').select('student_path,target_exam').eq('id', userId).maybeSingle();
   if (error) throw new Error('xpress_profile_lookup_failed');
-  return data?.student_path === 'exam' && data.target_exam === examSlug;
+  if (data?.student_path === 'exam' && data.target_exam === examSlug) return true;
+  if (examSlug !== 'icfes' || !icfesAttemptId) return false;
+  const { data: attempt, error: attemptError } = await createAdminClient().from('icfes_attempts')
+    .select('id').eq('id', icfesAttemptId).eq('user_id', userId).maybeSingle();
+  if (attemptError) throw new Error('xpress_attempt_lookup_failed');
+  return Boolean(attempt);
 }
 
-function legalSnapshot(acceptance: WompiAcceptance) {
+function legalSnapshot(acceptance: WompiAcceptance, icfesAttemptId?: string) {
   return {
     ...JSON.parse(XPRESS_LEGAL_SNAPSHOT),
     wompiDocuments: {
       endUserPolicy: acceptance.policy.permalink,
       personalDataAuthorization: acceptance.personalData.permalink,
     },
+    ...(icfesAttemptId ? { icfesAttemptId } : {}),
   };
 }
 
@@ -141,8 +151,16 @@ export async function prepareXpressSubscription(
   input: XpressSubscriptionInput,
 ) {
   const config = getWompiServerConfig();
-  if (!user.email || !await profileAllowsSubscription(user.id, input.examSlug)) throw new Error('xpress_exam_mismatch');
+  if (!user.email || !await profileAllowsSubscription(user.id, input.examSlug, input.icfesAttemptId)) throw new Error('xpress_exam_mismatch');
   if (process.env.VERCEL_ENV !== 'production' && config.environment === 'production') throw new Error('production_disabled_outside_production');
+  if (input.examSlug === 'icfes') {
+    const membershipReadiness = await getIcfesMembershipOfferReadiness();
+    if (!membershipReadiness.purchasable) throw new Error('icfes_membership_unavailable');
+    if (input.offerId === 'exam-teacher') {
+      const teacherReadiness = await getIcfesTeacherOfferReadiness();
+      if (!teacherReadiness.purchasable) throw new Error('icfes_teacher_unavailable');
+    }
+  }
   const offer = getXpressOffer(input.offerId);
   const active = await activeXpressMembership(user.id);
   if (active && active.exam_slug !== input.examSlug) throw new Error('xpress_exam_mismatch');
@@ -164,10 +182,11 @@ export async function prepareXpressSubscription(
     p_terms: XPRESS_TERMS_VERSION,
     p_privacy: XPRESS_PRIVACY_VERSION,
     p_recurring: XPRESS_RECURRING_CONSENT_VERSION,
-    p_legal: legalSnapshot(acceptance),
+    p_legal: legalSnapshot(acceptance, input.icfesAttemptId),
   }).abortSignal(AbortSignal.timeout(10000));
   if (error || !prepared) {
     if (error?.message?.includes('xpress_subscription_exists')) throw new Error('xpress_subscription_exists');
+    if (error?.message?.includes('teacher_capacity')) throw new Error('icfes_teacher_unavailable');
     throw new Error('xpress_subscription_storage_unavailable');
   }
   let subscription = prepared as SubscriptionRow;
@@ -202,6 +221,13 @@ export async function dispatchXpressSubscriptionCharge(subscription: Subscriptio
   if (!order) {
     if (leaseId) await db.rpc('release_xpress_subscription_lease', { p_subscription: subscription.id, p_lease: leaseId, p_next: null });
     return { order: null, transactionStatus: null };
+  }
+  if (subscription.exam_slug === 'icfes' && subscription.offer_id === 'exam-teacher') {
+    const { data: reserved, error: reserveError } = await db.rpc('link_xpress_subscription_teacher_capacity', {
+      p_subscription: subscription.id,
+      p_order: order.id,
+    }).abortSignal(AbortSignal.timeout(10000));
+    if (reserveError || reserved !== true) throw new Error('icfes_teacher_unavailable');
   }
   const { data: mayDispatch, error: dispatchError } = await db.rpc('start_xpress_recurring_charge', { p_order: order.id })
     .abortSignal(AbortSignal.timeout(10000));

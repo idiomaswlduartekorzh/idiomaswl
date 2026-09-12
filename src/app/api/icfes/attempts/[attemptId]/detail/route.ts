@@ -3,43 +3,134 @@ import { cookies } from 'next/headers';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import { ICFES_ATTEMPT_ID_PATTERN, type IcfesBasicResultDto, type IcfesPaymentStatus, type IcfesPremiumDetailDto } from '@/lib/icfes/attempt-contract';
-import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
+import { icfesAttemptCookieName, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { buildPremiumQuestions } from '@/lib/icfes/grading.server';
 import { getIcfesPaidExam, getIcfesPremiumAvailability } from '@/lib/icfes/exam-registry.server';
 import { ICFES_PASS_AMOUNT_IN_CENTS, isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
+import { ICFES_DETAIL_OFFER_ID, getIcfesCommerceOffer } from '@/lib/icfes/commerce-v1';
+import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
+import { xpressOfferIncludes } from '@/lib/xpress-commerce/catalog';
+import { getOwnedIcfesTeacherReview } from '@/lib/icfes/teacher-ops.server';
+import { isIcfesTeacherReviewRequestReady } from '@/lib/icfes/teacher-offer-readiness.server';
+import { buildIcfesAutomaticFeedback } from '@/lib/icfes/automatic-feedback';
 
 export const runtime = 'nodejs';
-const headers = { 'cache-control': 'private, no-store, max-age=0' };
+const headers = {
+  'cache-control': 'private, no-store, max-age=0',
+  'referrer-policy': 'no-referrer',
+  'x-robots-tag': 'noindex, nofollow, noarchive',
+};
 
 export async function GET(_request: Request, context: { params: Promise<{ attemptId: string }> }): Promise<Response> {
   const { attemptId } = await context.params;
   if (!ICFES_ATTEMPT_ID_PATTERN.test(attemptId) || !isIcfesPersistenceEnabled()) {
     return Response.json({ ok: false, error: 'Resultado no disponible.' }, { status: 404, headers });
   }
-  const token = (await cookies()).get(ICFES_ATTEMPT_COOKIE)?.value;
-  const payload = verifyIcfesAttemptToken(token);
-  if (!payload || payload.attemptId !== attemptId) return Response.json({ ok: false, error: 'Acceso no autorizado.' }, { status: 403, headers });
   const admin = createAdminClient();
   const { data: { user } } = await (await createClient()).auth.getUser();
-  const tokenHash = createHash('sha256').update(token!, 'utf8').digest('hex');
+  const token = (await cookies()).get(icfesAttemptCookieName(attemptId))?.value;
+  const payload = verifyIcfesAttemptToken(token);
   const { data: attempt } = await admin.from('icfes_attempts').select('id, exam_id, user_id, access_token_hash, answers, basic_result')
     .eq('id', attemptId).maybeSingle();
-  if (!attempt || attempt.access_token_hash !== tokenHash || (attempt.user_id && attempt.user_id !== user?.id)) {
+  if (!attempt) {
+    return Response.json({ ok: false, error: 'Acceso no autorizado.' }, { status: 403, headers });
+  }
+  const capabilityMatches = Boolean(
+    token
+    && payload?.attemptId === attemptId
+    && attempt.access_token_hash === createHash('sha256').update(token, 'utf8').digest('hex'),
+  );
+  const userOwnsAttempt = Boolean(user && attempt.user_id === user.id);
+  if (!capabilityMatches && !userOwnsAttempt) {
     return Response.json({ ok: false, error: 'Acceso no autorizado.' }, { status: 403, headers });
   }
   const availability = getIcfesPremiumAvailability(attempt.exam_id);
   if (!availability.eligible || !getIcfesPaidExam(attempt.exam_id)) {
     return Response.json({ ok: false, error: availability.reason ?? 'Detalle premium no disponible.' }, { status: 403, headers });
   }
+  let membership: Awaited<ReturnType<typeof activeXpressMembership>> = null;
+  let ownedTeacherReview: Awaited<ReturnType<typeof getOwnedIcfesTeacherReview>> = null;
+  if (userOwnsAttempt && user) {
+    try {
+      const active = await activeXpressMembership(user.id);
+      if (active?.exam_slug === 'icfes' && xpressOfferIncludes(active.offer_id, 'question-review')) membership = active;
+    } catch { /* A valid one-time entitlement remains usable if membership lookup is unavailable. */ }
+    try { ownedTeacherReview = await getOwnedIcfesTeacherReview(attemptId); }
+    catch { /* A missing queue must not hide an otherwise valid paid result. */ }
+  }
+  if (membership) {
+    const offer = getIcfesCommerceOffer(membership.offer_id);
+    const result = attempt.basic_result as IcfesBasicResultDto;
+    const questions = buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [];
+    let teacherReview: IcfesPremiumDetailDto['teacherReview'];
+    if (membership.offer_id === 'exam-teacher') {
+      try {
+        const existing = ownedTeacherReview;
+        const ready = userOwnsAttempt && await isIcfesTeacherReviewRequestReady(membership.id);
+        teacherReview = {
+          canRequest: ready && !existing,
+          status: existing ? String(existing.status) : null,
+          requestedAt: existing ? String(existing.requested_at) : null,
+          dueAt: existing ? String(existing.due_at) : null,
+          completedAt: existing?.completed_at ? String(existing.completed_at) : null,
+          attribution: existing?.delivery_attribution
+            ? existing.delivery_attribution as NonNullable<IcfesPremiumDetailDto['teacherReview']>['attribution']
+            : null,
+          result: (existing?.review_result ?? null) as NonNullable<IcfesPremiumDetailDto['teacherReview']>['result'],
+        };
+      } catch { /* Fail closed: omit the teacher control and preserve paid automatic detail. */ }
+    }
+    return Response.json({
+      ok: true,
+      paymentStatus: 'APPROVED',
+      amountInCents: offer.amountInCents,
+      currency: 'COP',
+      productCode: membership.offer_id,
+      result,
+      questions,
+      automaticFeedback: buildIcfesAutomaticFeedback(result, questions),
+      ...(teacherReview ? { teacherReview } : {}),
+    } satisfies IcfesPremiumDetailDto, { headers });
+  }
+  if (userOwnsAttempt && ownedTeacherReview) {
+    const result = attempt.basic_result as IcfesBasicResultDto;
+    const questions = buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [];
+    return Response.json({
+      ok: true,
+      paymentStatus: 'APPROVED',
+      amountInCents: getIcfesCommerceOffer('exam-teacher').amountInCents,
+      currency: 'COP',
+      productCode: 'exam-teacher',
+      result,
+      questions,
+      automaticFeedback: buildIcfesAutomaticFeedback(result, questions),
+      teacherReview: {
+        canRequest: false,
+        status: String(ownedTeacherReview.status),
+        requestedAt: String(ownedTeacherReview.requested_at),
+        dueAt: String(ownedTeacherReview.due_at),
+        completedAt: ownedTeacherReview.completed_at ? String(ownedTeacherReview.completed_at) : null,
+        attribution: ownedTeacherReview.delivery_attribution
+          ? ownedTeacherReview.delivery_attribution as NonNullable<IcfesPremiumDetailDto['teacherReview']>['attribution']
+          : null,
+        result: (ownedTeacherReview.review_result ?? null) as NonNullable<IcfesPremiumDetailDto['teacherReview']>['result'],
+      },
+    } satisfies IcfesPremiumDetailDto, { headers });
+  }
   const { data: order } = await admin.from('icfes_pass_orders').select('id, status, amount_in_cents, currency')
     .eq('attempt_id', attemptId).order('created_at', { ascending: false }).limit(1).maybeSingle();
   const status = (order?.status ?? 'ERROR') as IcfesPaymentStatus;
   const base: IcfesPremiumDetailDto = {
     ok: true, paymentStatus: status, amountInCents: Number(order?.amount_in_cents ?? ICFES_PASS_AMOUNT_IN_CENTS),
-    currency: 'COP', result: attempt.basic_result as IcfesBasicResultDto,
+    currency: 'COP', productCode: ICFES_DETAIL_OFFER_ID, result: attempt.basic_result as IcfesBasicResultDto,
   };
   if (status !== 'APPROVED') return Response.json(base, { headers });
-  const { data: entitlement } = await admin.from('icfes_entitlements').select('id').eq('attempt_id', attemptId).maybeSingle();
+  const { data: entitlement } = await admin.from('icfes_entitlements').select('id').eq('attempt_id', attemptId).eq('status', 'active').maybeSingle();
   if (!entitlement) return Response.json({ ...base, paymentStatus: 'ERROR' }, { headers });
-  return Response.json({ ...base, questions: buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [] }, { headers });
+  const questions = buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [];
+  return Response.json({
+    ...base,
+    questions,
+    automaticFeedback: buildIcfesAutomaticFeedback(base.result as IcfesBasicResultDto, questions),
+  }, { headers });
 }

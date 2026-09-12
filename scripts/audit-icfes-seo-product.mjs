@@ -34,16 +34,32 @@ function check(id, title, pass, severity, evidence, remediation) {
 
 check('guided-mock-registry', 'Los 23 mocks guiados tienen una fuente única', GUIDED_MOCK_IDS.length === 23 && new Set(GUIDED_MOCK_IDS).size === 23, 'critical', `${GUIDED_MOCK_IDS.length}/23 IDs únicos`, 'Corregir guided-registry.ts antes de exponer rutas.');
 check('guided-workbook-registry', 'Cinco muestras guiadas y dos exclusiones documentadas', GUIDED_WORKBOOK_IDS.length === 5 && Object.keys(GUIDED_WORKBOOK_EXCLUSIONS).length === 2, 'critical', `${GUIDED_WORKBOOK_IDS.length} guiadas · ${Object.keys(GUIDED_WORKBOOK_EXCLUSIONS).length} exclusiones`, 'No publicar guiado sin estímulo completo.');
-check('sitemap-guided-mocks', 'El sitemap deriva todos los mocks del registro', sitemap.includes('...GUIDED_MOCK_IDS.map'), 'high', 'Mapeo dinámico desde GUIDED_MOCK_IDS', 'Eliminar listas manuales parciales.');
+check(
+  'private-guided-mocks-out-of-sitemap',
+  'Los cuadernos guiados de membresía no entran al sitemap',
+  !sitemap.includes('GUIDED_MOCK_IDS') && !sitemap.includes('/examenes/icfes/practica/${mockId}/guiado'),
+  'critical',
+  'Las 23 rutas premium se descubren dentro del producto, no como destinos indexables',
+  'Retirar del sitemap cualquier URL que revele o anuncie el detalle premium por mock.',
+);
 check('sitemap-guided-workbooks', 'El sitemap deriva las cinco muestras guiadas', sitemap.includes('...GUIDED_WORKBOOK_IDS.map'), 'high', 'Mapeo dinámico desde GUIDED_WORKBOOK_IDS', 'Añadir las rutas guiadas aprobadas.');
 check('sitemap-saber11-boundary', 'El sitemap Saber 11 excluye otras evaluaciones', sitemap.includes("SIMULACROS.filter((exam) => exam.assessment === 'saber-11')"), 'critical', 'Filtro explícito assessment=saber-11', 'No mezclar Saber 9, Saber 10 o TyT en esta arquitectura.');
 check('related-noindex', 'Los materiales complementarios no compiten como páginas Saber 11', workbookPage.includes("robots: sim.assessment === 'saber-11' ? undefined : { index: false, follow: true }"), 'high', 'noindex,follow condicional', 'Mantener acceso y enlaces sin indexación engañosa.');
 check('canonical-hub-parts', 'Hub y partes declaran URL canónica', hub.includes('alternates: { canonical: CANONICAL }') && partPage.includes('alternates: { canonical: url }'), 'critical', 'Canonicals propios en hub y siete páginas dinámicas', 'Añadir canonical absoluto.');
-check('canonical-guided', 'Ambas familias guiadas declaran canonical propio', guidedMockPage.includes('alternates: { canonical }') && guidedWorkbookPage.includes('alternates: { canonical }'), 'high', 'Canonical en mocks y muestras guiadas', 'Evitar que el modo guiado compita con modo examen.');
+check(
+  'guided-indexing-boundary',
+  'Las muestras públicas tienen canonical y los cuadernos premium permanecen privados',
+  guidedWorkbookPage.includes('alternates: { canonical }')
+    && guidedMockPage.includes('robots: { index: false, follow: false, noarchive: true }')
+    && !guidedMockPage.includes('alternates: { canonical }'),
+  'critical',
+  'Canonical propio en muestras públicas; noindex/noarchive y sin canonical indexable en mocks de membresía',
+  'No mezclar señales SEO públicas con contenido completo reservado a una membresía.',
+);
 check('private-tools-noindex', 'Progreso y repaso personal no se indexan', progress.includes('index: false') && errorReview.includes('index: false'), 'high', 'Dos herramientas personales con noindex,follow', 'Excluir páginas dependientes de estado personal.');
 check('legacy-redirect', 'La antigua ruta /practica/icfes consolida autoridad', legacy.includes("permanentRedirect('/practica/icfes-saber-11')"), 'high', 'Redirección permanente al hub', 'Evitar una landing duplicada.');
 check('structured-data', 'Hub y experiencias publican datos estructurados pertinentes', hub.includes("'@type': 'CollectionPage'") && hub.includes("'@type': 'BreadcrumbList'") && guidedMockPage.includes('type="Quiz"') && guidedWorkbookPage.includes('type="Quiz"'), 'medium', 'CollectionPage + BreadcrumbList + Quiz', 'Mantener schema alineado con contenido visible.');
-const workbookMetadataStatesGuidedScope = /Cinco\s+(?:(?:muestras\s+)?traen|tienen)\s+explicación\s+guiada/i.test(workbookCatalogPage);
+const workbookMetadataStatesGuidedScope = /Cinco\s+(?:(?:(?:muestras\s+)?traen|tienen)\s+explicación\s+guiada|tienen\s+gu[ií]a)/i.test(workbookCatalogPage);
 const workbookOpenGraphStatesQuestionCount = /145\s+preguntas\s+explicadas\s+en\s+cinco\s+recorridos\s+guiados/i.test(workbookCatalogPage);
 check('metadata-truth', 'La portada de cuadernillos comunica alcance real', workbookMetadataStatesGuidedScope && workbookOpenGraphStatesQuestionCount && !workbookCatalogPage.includes('análisis guiado en el cuadernillo 2023'), 'high', 'Snippet: cinco muestras guiadas · Open Graph: 145 preguntas en cinco recorridos', 'Actualizar los hechos del snippet y Open Graph cuando cambie el inventario, sin exigir una redacción literal.');
 check('catalogue-cta-parity', 'Catálogos y modo examen consultan el registro único', mockGrid.includes("from '@/data/icfes/guided-registry'") && practiceClient.includes("from '@/data/icfes/guided-registry'") && workbookCatalog.includes("from '@/data/icfes/guided-registry'"), 'critical', 'Tres consumidores usan el registro ligero', 'No volver a listas locales de tres IDs.');

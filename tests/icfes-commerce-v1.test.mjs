@@ -1,0 +1,88 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { getXpressOffer } from '../src/lib/xpress-commerce/catalog.ts';
+import {
+  ICFES_COMMERCE_OFFERS,
+  ICFES_COMMERCE_VERSION,
+  quoteIcfesCommercePurchase,
+} from '../src/lib/icfes/commerce-v1.ts';
+
+test('publishes the versioned ICFES offer facade with exact COP prices', () => {
+  assert.equal(ICFES_COMMERCE_VERSION, 'icfes-commerce-2026-09-12-v2');
+  assert.deepEqual(
+    ICFES_COMMERCE_OFFERS.map(({ id, amountInCents, billing }) => [id, amountInCents, billing]),
+    [
+      ['icfes-detail-attempt-v1', 1_290_000, 'one-time'],
+      ['exam-auto', 4_990_000, '30-day-membership'],
+      ['exam-teacher', 9_990_000, '30-day-membership'],
+    ],
+  );
+});
+
+test('derives monthly prices and entitlements from the Xpress catalog', () => {
+  const automatic = ICFES_COMMERCE_OFFERS[1];
+  const teacher = ICFES_COMMERCE_OFFERS[2];
+
+  assert.equal(automatic.amountInCents, getXpressOffer('exam-auto').amountInCents);
+  assert.equal(teacher.amountInCents, getXpressOffer('exam-teacher').amountInCents);
+  assert.strictEqual(automatic.entitlements, getXpressOffer('exam-auto').entitlements);
+  assert.strictEqual(teacher.entitlements, getXpressOffer('exam-teacher').entitlements);
+  assert.equal(teacher.teacherReviewCreditsPerPeriod, 1);
+  assert.equal(teacher.teacherFeedbackTargetHours, 12);
+});
+
+test('charges COP 12,900 once for the detail of one attempt', () => {
+  const quote = quoteIcfesCommercePurchase({ requestedOfferId: 'icfes-detail-attempt-v1' });
+
+  assert.equal(quote.action, 'checkout');
+  assert.equal(quote.amountInCents, 1_290_000);
+  assert.equal(quote.offer.entitlementScope, 'attempt');
+  assert.equal(quote.offer.entitlements.includes('attempt-detailed-answers'), true);
+});
+
+test('keeps the three advertised prices independent', () => {
+  const automatic = quoteIcfesCommercePurchase({
+    requestedOfferId: 'exam-auto',
+  });
+  const teacher = quoteIcfesCommercePurchase({
+    requestedOfferId: 'exam-teacher',
+  });
+
+  assert.equal(automatic.amountInCents, 4_990_000);
+  assert.equal(teacher.amountInCents, 9_990_000);
+  assert.equal(automatic.creditInCents, 0);
+  assert.equal(teacher.creditInCents, 0);
+  assert.equal(automatic.reason, 'new-purchase');
+});
+
+test('reuses the monthly upgrade quote and preserves the existing period end', () => {
+  const periodEndsAt = new Date('2026-10-01T08:30:00.000Z');
+  const quote = quoteIcfesCommercePurchase({
+    requestedOfferId: 'exam-teacher',
+    activeMembership: { offerId: 'exam-auto', periodEndsAt },
+  });
+
+  assert.equal(quote.action, 'checkout');
+  assert.equal(quote.amountInCents, 5_000_000);
+  assert.equal(quote.creditInCents, 4_990_000);
+  assert.equal(quote.reason, 'membership-upgrade');
+  assert.equal(quote.periodEndsAt, periodEndsAt.toISOString());
+});
+
+test('does not create overlapping access for included offers or downgrades', () => {
+  const periodEndsAt = new Date('2026-10-01T08:30:00.000Z');
+  const detail = quoteIcfesCommercePurchase({
+    requestedOfferId: 'icfes-detail-attempt-v1',
+    activeMembership: { offerId: 'exam-auto', periodEndsAt },
+  });
+  const downgrade = quoteIcfesCommercePurchase({
+    requestedOfferId: 'exam-auto',
+    activeMembership: { offerId: 'exam-teacher', periodEndsAt },
+  });
+
+  assert.equal(detail.action, 'already-included');
+  assert.equal(detail.amountInCents, 0);
+  assert.equal(downgrade.action, 'schedule-change');
+  assert.equal(downgrade.amountInCents, 0);
+  assert.equal(downgrade.periodEndsAt, periodEndsAt.toISOString());
+});

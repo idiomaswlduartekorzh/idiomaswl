@@ -461,3 +461,26 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   y examen con profesor con plan Impulso. También comprobó que los datos y la firma se
   muestran únicamente tras aceptar las reglas. No se creó una orden ni se realizó un
   cobro real.
+
+### 12 de septiembre de 2026 — integración comercial auditada de ICFES (sin desplegar)
+
+- La rama `codex/icfes-commercial-integration-20260912` integra el harness editorial,
+  el embudo posterior al resultado y la operación del feedback personalizado sobre la
+  última base de `origin/main`. No se fusionó en `main`, no se aplicaron migraciones y
+  no se activaron flags ni cobros.
+- El contrato nuevo queda versionado en COP 12.900 por el detalle de un intento, COP
+  49.900 por una suscripción renovable cada 30 días y COP 99.900 por la suscripción con
+  un crédito de feedback pedagógico personalizado de WeLearn con asistencia de IA.
+  El upgrade cuesta COP 50.000 y conserva el fin del periodo activo.
+- La cadena local de PostgreSQL comprobó las migraciones históricas y nuevas, precios
+  versionados, idempotencia, conciliación, cancelación, revocación e inaccesibilidad
+  para roles de navegador. Las migraciones históricas ya aplicadas permanecieron
+  byte por byte iguales a `origin/main`.
+- Pasaron TypeScript, ESLint acotado, build Webpack de 2.530 páginas, el audit SEO/GEO/AEO
+  de 30 controles, la verificación de 23 mocks/1.035 preguntas sin duplicados exactos y
+  los recorridos locales de autenticación que conservan intento y plan. El mock 24 sigue
+  como borrador fuera del catálogo.
+- La liberación sigue cerrada por diseño hasta aprobar privacidad y menores, aplicar las
+  migraciones en un entorno de prueba, ejecutar Wompi Sandbox con webhook/reversos,
+  cargar un roster calibrado y capacidad real, y completar aprobaciones hash-bound,
+  canary, observabilidad y rollback.

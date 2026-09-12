@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.idiomaswl.com/schemas/icfes-launch-work-order-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workOrderId", "campaignId", "baseCommit", "createdAt", "workOrderDigest", "objective", "inputArtifacts", "requiredRoles", "requiredGates", "stopConditionIds", "allowedImplementationRoots", "targetOffer"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "workOrderId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "campaignId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "baseCommit": { "type": "string", "pattern": "^[a-f0-9]{7,40}$" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "workOrderDigest": { "$ref": "#/$defs/hash" },
+    "objective": { "type": "string", "minLength": 40 },
+    "inputArtifacts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/artifact" } },
+    "requiredRoles": { "type": "array", "minItems": 5, "uniqueItems": true, "items": { "type": "string" } },
+    "requiredGates": { "type": "array", "minItems": 9, "uniqueItems": true, "items": { "type": "string" } },
+    "stopConditionIds": { "type": "array", "minItems": 9, "uniqueItems": true, "items": { "type": "string" } },
+    "allowedImplementationRoots": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "targetOffer": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "#/$defs/tier" } }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": { "path": { "type": "string", "minLength": 1 }, "sha256": { "$ref": "#/$defs/hash" } }
+    },
+    "tier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sku", "priceCop", "durationDays", "humanReviewCredits"],
+      "properties": {
+        "sku": { "type": "string", "pattern": "^(icfes-[a-z0-9-]+-v[0-9]+|exam-(auto|teacher))$" },
+        "examSlug": { "type": "string", "const": "icfes" },
+        "priceCop": { "type": "integer", "minimum": 1 },
+        "durationDays": { "type": ["integer", "null"], "minimum": 1 },
+        "humanReviewCredits": { "type": "integer", "minimum": 0 },
+        "humanReviewSlaHours": { "type": "integer", "minimum": 1 },
+        "feedbackCreditsPerPeriod": { "type": "integer", "minimum": 1 },
+        "publicBenefitLabel": { "type": "string", "minLength": 20 },
+        "aiAssistanceDisclosureRequired": { "type": "boolean" },
+        "humanApprovalEvidenceRequiredBeforeDelivery": { "type": "boolean" },
+        "publicTeacherAuthorshipClaimForbidden": { "type": "boolean" },
+        "deliveryTargetConditionalOnReservedCapacity": { "type": "boolean" },
+        "deliveryTargetIsGuarantee": { "type": "boolean" }
+      }
+    }
+  }
+}

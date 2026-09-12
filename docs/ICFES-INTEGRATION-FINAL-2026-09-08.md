@@ -2,6 +2,8 @@
 
 Fecha de cierre: 8 de septiembre de 2026 (America/Bogota)
 
+> Nota histórica: este cierre documenta una oferta anterior. El contrato comercial vigente para la integración usa COP 12.900 por intento y membresías de COP 49.900/COP 99.900.
+
 Rama: `codex/icfes-content-safety-20260908`
 
 Base revisada: `ac2ba152`

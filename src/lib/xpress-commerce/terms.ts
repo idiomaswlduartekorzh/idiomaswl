@@ -1,18 +1,18 @@
-export const XPRESS_TERMS_VERSION = 'xpress-20260912-v3';
+export const XPRESS_TERMS_VERSION = 'xpress-20260912-v4';
 export const XPRESS_PRIVACY_VERSION = 'xpress-privacy-20260908-v1';
 
 export const XPRESS_TERMS = [
   {
     title: 'Qué estás comprando',
-    text: 'La compra individual de $12.000 permite realizar una vez un simulacro de la familia elegida. Las suscripciones de $49.000 y $99.000 activan periodos sucesivos de 30 días con simulacros disponibles de esa familia. Ninguna opción incluye la inscripción al examen oficial.',
+    text: 'La compra individual de $12.900 permite realizar una vez un simulacro de la familia elegida. Las suscripciones de $49.900 y $99.900 activan periodos sucesivos de 30 días con simulacros disponibles de esa familia. Ninguna opción incluye la inscripción al examen oficial.',
   },
   {
     title: 'Correcciones',
-    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. El plan docente añade retroalimentación de WeLearn dentro de las 24 horas siguientes a cada entrega completa y correctamente guardada. Solo puede haber una revisión docente pendiente a la vez.',
+    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. Para ICFES, el plan superior añade un crédito de feedback pedagógico personalizado de WeLearn con asistencia de IA por cada periodo de 30 días. El plazo de 12 horas es un objetivo operativo sujeto a capacidad disponible, no una garantía. Solo puede haber una solicitud pendiente a la vez.',
   },
   {
     title: 'Renovación automática',
-    text: 'La compra de $12.000 es un pago único. Las suscripciones de $49.000 y $99.000 cobran el mismo valor por cada periodo de 30 días hasta que las canceles. La renovación puede procesarse durante las 24 horas anteriores al siguiente periodo para evitar que pierdas acceso. Antes de suscribirte verás el valor y la fecha del primer cobro. El servicio no garantiza una calificación, admisión ni aprobación.',
+    text: 'La compra de $12.900 es un pago único. Las suscripciones de $49.900 y $99.900 cobran el mismo valor por cada periodo de 30 días hasta que las canceles. La renovación puede procesarse durante las 24 horas anteriores al siguiente periodo para evitar que pierdas acceso. Antes de suscribirte verás el valor y la fecha del primer cobro. El servicio no garantiza una calificación, admisión ni aprobación.',
   },
   {
     title: 'Cancelación sencilla',
