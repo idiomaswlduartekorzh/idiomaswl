@@ -396,6 +396,125 @@ a.modeCard:focus-visible {
   max-width: 830px;
 }
 
+.skillHeroGrid {
+  align-items: end;
+  display: grid;
+  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  padding-bottom: clamp(2.5rem, 6vw, 4.75rem);
+}
+
+.skillSummary {
+  background: var(--toefl-navy);
+  color: #fff;
+  display: grid;
+  gap: 0.55rem;
+  min-height: 230px;
+  padding: 1.5rem;
+}
+
+.skillSummary svg {
+  color: #8fe0ea;
+  height: 30px;
+  margin-bottom: auto;
+  width: 30px;
+}
+
+.skillSummary strong {
+  font-size: 2.15rem;
+  letter-spacing: -0.055em;
+}
+
+.skillSummary span {
+  color: #dbe5fb;
+  font-weight: 720;
+}
+
+.skillSummary small {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #c8d5f5;
+  line-height: 1.55;
+  padding-top: 0.75rem;
+}
+
+.libraryLead {
+  color: var(--toefl-muted);
+  line-height: 1.7;
+  margin: 1rem 0 2rem;
+  max-width: 720px;
+}
+
+.setGrid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.setCard {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--toefl-line);
+  color: inherit;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr auto;
+  min-height: 106px;
+  padding: 1rem 1.15rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.setCard:hover,
+.setCard:focus-visible {
+  border-color: var(--toefl-teal);
+  box-shadow: 0 12px 30px rgba(31, 46, 83, 0.1);
+  transform: translateY(-2px);
+}
+
+.setNumber {
+  align-items: center;
+  background: color-mix(in srgb, var(--toefl-teal) 10%, white);
+  color: var(--toefl-teal);
+  display: inline-flex;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.75rem;
+  font-weight: 820;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.setCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.setCopy strong {
+  color: var(--toefl-navy);
+  font-size: 1.1rem;
+}
+
+.setCopy small {
+  color: var(--toefl-muted);
+}
+
+.setCard > svg {
+  color: var(--toefl-teal);
+  height: 18px;
+  width: 18px;
+}
+
+.libraryNote {
+  border-left: 3px solid var(--toefl-teal);
+  margin-top: 2rem;
+  max-width: 850px;
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+
+.libraryNote strong { color: var(--toefl-navy); }
+.libraryNote p { color: var(--toefl-muted); line-height: 1.65; margin: 0.35rem 0 0; }
+
 .breadcrumb a:focus-visible,
 .modeCard:focus-visible,
 .textLink:focus-visible,
@@ -428,6 +547,18 @@ a.modeCard:focus-visible {
 }
 
 @media (max-width: 700px) {
+  .skillHeroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .skillSummary {
+    min-height: 210px;
+  }
+
+  .setGrid {
+    grid-template-columns: 1fr;
+  }
+
   .facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

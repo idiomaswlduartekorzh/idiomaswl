@@ -50,7 +50,7 @@ export default function GoethePracticePage() {
           <div className={styles.modeTop}><span className={styles.modeIcon}><ClipboardCheck aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusAvailable}`}>Disponible</span></div>
           <p className={styles.modeNumber}>01</p><h3>Práctica por destreza</h3><p>Elige Hören, Lesen, Schreiben o Sprechen y trabaja únicamente ese módulo.</p><span className={styles.modeAction}>Elegir una destreza <ArrowRight aria-hidden="true" /></span>
         </Link>
-        <Link href="/examenes/goethe/practica/a1-1?mode=practice&skill=listening" className={`${styles.modeCard} ${styles.modePractice}`}>
+        <Link href="/practica/goethe/listening" className={`${styles.modeCard} ${styles.modePractice}`}>
           <div className={styles.modeTop}><span className={styles.modeIcon}><Headphones aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusAvailable}`}>Modo guiado</span></div>
           <p className={styles.modeNumber}>02</p><h3>Empezar con Hören</h3><p>Escucha con repeticiones disponibles y revisa cada respuesta cuando termines el módulo.</p><span className={styles.modeAction}>Abrir Hören A1 <ArrowRight aria-hidden="true" /></span>
         </Link>
@@ -63,7 +63,7 @@ export default function GoethePracticePage() {
 
     <section className={styles.preview} id="destrezas" aria-labelledby="goethe-skills-heading"><div className="wrap">
       <div className={styles.previewHeader}><div><p>Nivel A1</p><h2 id="goethe-skills-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver los siete simulacros <ArrowRight aria-hidden="true" /></Link></div>
-      <div className={styles.sectionStrip}>{skills.map(({ id, label, note, icon: Icon }) => <Link key={id} href={`/examenes/goethe/practica/a1-1?mode=practice&skill=${id}`} className={styles.sectionPreview} data-section={id}><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div>
+      <div className={styles.sectionStrip}>{skills.map(({ id, label, note, icon: Icon }) => <Link key={id} href={`/practica/goethe/${id}`} className={styles.sectionPreview} data-section={id}><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div>
     </div></section>
   </main>;
 }
