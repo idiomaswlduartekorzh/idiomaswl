@@ -665,6 +665,65 @@ function FormReview({ question, values }: { question: FormGroupQuestion; values:
   );
 }
 
+function WritingPracticeReview({ mock, text }: { mock: MockExam; text: string }) {
+  const question = moduleSections(mock, 'writing').flatMap(section => section.questions).find(item => item.type === 'write') as WriteQuestion;
+  const count = wordCount(text);
+  const hasGreeting = /(?:^|\n)\s*(?:hallo|liebe[rn]?|guten\s+(?:tag|morgen|abend))/i.test(text);
+  const hasClosing = /(?:viele|liebe|freundliche)\s+grüße|bis\s+bald|tschüss/i.test(text);
+  const prompts = question.text.match(/^•\s*.+$/gm) ?? [];
+  const checks = [
+    { label: 'Extensión', detail: `${count} Wörter · objetivo: circa 30`, ready: count >= 27 },
+    { label: 'Anrede', detail: hasGreeting ? 'Saludo reconocible incluido' : 'Añade un saludo: Hallo…, Liebe… o Lieber…', ready: hasGreeting },
+    { label: 'Gruß', detail: hasClosing ? 'Despedida reconocible incluida' : 'Añade una despedida: Viele Grüße, Liebe Grüße o Bis bald', ready: hasClosing },
+  ];
+  return <section className={styles.reviewGroup} aria-labelledby="review-writing-message">
+    <header className={styles.reviewGroupHeader}><div><span>Geführte Selbstkontrolle</span><h3 id="review-writing-message">Schreiben · Teil 2</h3></div><strong>{checks.filter(check => check.ready).length}/3</strong></header>
+    <div className={styles.reviewItems}>
+      {checks.map((check, index) => <article key={check.label} className={`${styles.reviewItem} ${check.ready ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
+        <div className={styles.reviewItemTop}><span className={styles.reviewNumber}>{index + 1}</span><span>{check.label}</span><strong>{check.ready ? 'Listo' : 'Revisar'}</strong></div>
+        <p>{check.detail}</p>
+      </article>)}
+      <article className={styles.reviewItem}>
+        <div className={styles.reviewItemTop}><span className={styles.reviewNumber}>4</span><span>Inhalt</span><strong>Autoevaluación</strong></div>
+        <p>Comprueba que respondiste las tres consignas.</p>
+        <ul className={styles.guidedChecklist}>{prompts.map(prompt => <li key={prompt}>{prompt.replace(/^•\s*/, '')}</li>)}</ul>
+        <details className={styles.reviewEvidence}><summary>Ihre Nachricht</summary><pre>{text || 'Keine Antwort'}</pre></details>
+      </article>
+    </div>
+  </section>;
+}
+
+function PracticeRecordingPlayer({ recording, label }: { recording: IeltsSpeakingRecording; label: string }) {
+  const [url, setUrl] = useState('');
+  useEffect(() => {
+    const nextUrl = URL.createObjectURL(recording.blob);
+    setUrl(nextUrl);
+    return () => URL.revokeObjectURL(nextUrl);
+  }, [recording]);
+  return url ? <audio className={styles.guidedAudio} controls preload="metadata" src={url} aria-label={`Escuchar ${label}`} /> : null;
+}
+
+function SpeakingPracticeReview({ mock, recordings }: { mock: MockExam; recordings: Record<string, IeltsSpeakingRecording | undefined> }) {
+  const criteria: Record<number, string> = {
+    9: 'Incluye datos personales, deletrea el apellido y dice un número de teléfono con claridad.',
+    10: 'Formula una pregunta comprensible relacionada con la tarjeta y da una respuesta pertinente.',
+    11: 'Formula una petición cortés con “bitte” y reacciona de forma adecuada a una petición.',
+  };
+  const sections = moduleSections(mock, 'speaking');
+  return <section className={styles.reviewGroup} aria-labelledby="review-speaking">
+    <header className={styles.reviewGroupHeader}><div><span>Geführte Selbstkontrolle</span><h3 id="review-speaking">Sprechen</h3></div><strong>{Object.values(recordings).filter(Boolean).length}/3</strong></header>
+    <div className={styles.reviewItems}>{sections.map(section => {
+      const question = section.questions[0] as SpeakQuestion;
+      const recording = recordings[question.id];
+      return <article key={question.id} className={`${styles.reviewItem} ${recording ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
+        <div className={styles.reviewItemTop}><span className={styles.reviewNumber}>{section.part - 8}</span><span>Teil {section.part - 8}</span><strong>{recording ? `${recording.durationSeconds} s` : 'Sin audio'}</strong></div>
+        <p>{criteria[section.part]}</p>
+        {recording && <PracticeRecordingPlayer recording={recording} label={`Sprechen Teil ${section.part - 8}`} />}
+      </article>;
+    })}</div>
+  </section>;
+}
+
 export default function GoetheA1PracticeClient({ exam, mock, practiceSkill }: { exam: Exam; mock: MockExam; practiceSkill?: Skill }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const mode: DeliveryMode = practiceSkill ? 'class' : 'simulation';
@@ -840,8 +899,8 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill }: { 
               <header><p>Modo guiado</p><h2 id="practice-review-title">Retroalimentación del módulo</h2><span>Esta revisión pertenece a la zona de práctica y no genera un resultado oficial del simulacro completo.</span></header>
               {practiceSkill === 'listening' && <ObjectiveReview mock={mock} skill="listening" answers={answers} showListeningEvidence />}
               {practiceSkill === 'reading' && <ObjectiveReview mock={mock} skill="reading" answers={answers} />}
-              {practiceSkill === 'writing' && <FormReview question={formQuestion} values={formValues} />}
-              {practiceSkill === 'speaking' && <section className={styles.resultNotice}><strong>Práctica oral guardada en esta sesión</strong><p>Escucha tus grabaciones antes de repetir el módulo. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section>}
+              {practiceSkill === 'writing' && <><FormReview question={formQuestion} values={formValues} /><WritingPracticeReview mock={mock} text={writing} /></>}
+              {practiceSkill === 'speaking' && <><section className={styles.resultNotice}><strong>Práctica oral disponible en esta sesión</strong><p>Escucha cada respuesta y compárala con el criterio del Teil. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section><SpeakingPracticeReview mock={mock} recordings={recordings} /></>}
             </section>
             <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Practicar de nuevo</button><Link className={styles.secondary} href="/practica/goethe">Elegir otra destreza</Link></div>
           </main>

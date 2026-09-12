@@ -574,6 +574,8 @@
 .reviewEvidence { margin-top: 0.65rem; color: var(--goethe-muted); font-size: 0.78rem; }
 .reviewEvidence summary { cursor: pointer; font-weight: 750; }
 .reviewEvidence pre { margin: 0.5rem 0 0; padding: 0.6rem; border-radius: 7px; background: #f4f6f9; white-space: pre-wrap; font: 0.76rem/1.5 inherit; }
+.guidedChecklist { margin: 0.65rem 0 0; padding-left: 1.25rem; color: var(--goethe-muted); font-size: 0.82rem; line-height: 1.55; }
+.guidedAudio { width: 100%; margin-top: 0.65rem; }
 
 @media (max-width: 720px) {
   .intro { padding: 0; }
