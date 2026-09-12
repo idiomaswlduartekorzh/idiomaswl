@@ -3,6 +3,7 @@ import 'server-only'
 import { randomUUID } from 'node:crypto'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
+import { recordXpressSubmissionAccess } from '@/lib/xpress-commerce/submission-access.server'
 import goetheA1Set1 from '@/data/mocks/goethe-a1-set-1'
 import goetheA1Set2 from '@/data/mocks/goethe-a1-set-2'
 import type { FormGroupQuestion, MCQQuestion, MockExam, SpeakQuestion } from '@/data/mocks/types'
@@ -221,7 +222,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
   }
   const admin = createAdminClient()
   const { data: submission, error: readError } = await admin.from('exam_submissions')
-    .select('id, objective_answers, speaking_audio_paths, speaking_audio_metadata, submission_status')
+    .select('id, user_id, objective_answers, speaking_audio_paths, speaking_audio_metadata, submission_status')
     .eq('id', submissionId).eq('exam_slug', 'goethe').eq('mock_id', mockId).maybeSingle()
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404)
   const objective = (submission.objective_answers ?? {}) as { answers?: Record<string, number>; formValues?: Record<string, string> }
@@ -241,6 +242,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
       .eq('id', submissionId).eq('submission_status', 'uploading').select('id').maybeSingle()
     if (error || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega.', 500)
   }
+  if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'goethe', submissionId })
   return Response.json({ ok: true, submissionId, completionToken: token, automatic })
 }
 

@@ -3,6 +3,7 @@ import 'server-only';
 import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
+import { recordXpressSubmissionAccess } from '@/lib/xpress-commerce/submission-access.server';
 import {
   getIeltsSpeakingAssignment,
   getIeltsWritingAssignment,
@@ -307,14 +308,17 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   const admin = createAdminClient();
   const { data: submission, error: readError } = await admin
     .from('exam_submissions')
-    .select('id, speaking_audio_paths, speaking_audio_metadata, submission_status')
+    .select('id, user_id, speaking_audio_paths, speaking_audio_metadata, submission_status')
     .eq('id', submissionId)
     .eq('exam_slug', 'ielts')
     .eq('mock_id', mockId)
     .eq('mock_title', blueprint.mockTitle)
     .maybeSingle();
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404);
-  if (submission.submission_status === 'submitted') return Response.json({ ok: true, submissionId });
+  if (submission.submission_status === 'submitted') {
+    if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId });
+    return Response.json({ ok: true, submissionId });
+  }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
   const metadata = (submission.speaking_audio_metadata ?? {}) as Record<string, IeltsAudioDescriptor>;
@@ -340,6 +344,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .select('id')
     .maybeSingle();
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
+  if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId });
   return Response.json({ ok: true, submissionId });
 }
 

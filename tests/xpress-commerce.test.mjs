@@ -18,11 +18,11 @@ import { buildXpressRecurringTransaction } from '../src/lib/xpress-commerce/recu
 
 test('publishes one exam purchase and two memberships in COP cents', () => {
   assert.deepEqual(XPRESS_OFFERS.map(({ id, amountInCents }) => [id, amountInCents]), [
-    ['exam-single', 1_200_000],
-    ['exam-auto', 4_900_000],
-    ['exam-teacher', 9_900_000],
+    ['exam-single', 1_290_000],
+    ['exam-auto', 4_990_000],
+    ['exam-teacher', 9_990_000],
   ]);
-  assert.equal(XPRESS_OFFERS[2].teacherFeedbackTargetHours, 24);
+  assert.equal(XPRESS_OFFERS[2].name, 'Exámenes + feedback personalizado');
   assert.equal(XPRESS_OFFERS[0].billing, 'single-exam');
   assert.deepEqual(XPRESS_OFFERS.slice(1).map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days']);
 });
@@ -104,10 +104,10 @@ test('an active membership cannot charge twice for the same exam', () => {
   assert.equal(quote.amountInCents, 0);
 });
 
-test('a single self-study exam charges COP 12,000 and creates no membership period', () => {
+test('a single self-study exam charges COP 12,900 and creates no membership period', () => {
   const quote = quoteXpressPurchase({ requestedOfferId: 'exam-single', requestedExamSlug: 'ielts' });
   assert.equal(quote.action, 'checkout');
-  assert.equal(quote.amountInCents, 1_200_000);
+  assert.equal(quote.amountInCents, 1_290_000);
   assert.equal(quote.reason, 'single-purchase');
   assert.equal(quote.offer.billing, 'single-exam');
 });
@@ -138,10 +138,10 @@ test('schedules plan or exam changes instead of creating overlapping access', ()
   assert.equal(examChange.action, 'schedule-change');
 });
 
-test('a membership lasts 30 days and teacher access includes the 24-hour entitlement', () => {
+test('a membership lasts 30 days and only the top plan includes personalized feedback', () => {
   assert.equal(xpressAccessEndsAt(new Date('2026-09-08T12:00:00Z')).toISOString(), '2026-10-08T12:00:00.000Z');
-  assert.equal(xpressOfferIncludes('exam-teacher', 'teacher-feedback-24h'), true);
-  assert.equal(xpressOfferIncludes('exam-auto', 'teacher-feedback-24h'), false);
+  assert.equal(xpressOfferIncludes('exam-teacher', 'personalized-feedback'), true);
+  assert.equal(xpressOfferIncludes('exam-auto', 'personalized-feedback'), false);
 });
 
 test('validates and normalizes both registration paths', () => {

@@ -13,14 +13,14 @@ test.describe('registro guiado', () => {
     await expect(page.getByRole('heading', { name: '¿Cuál es tu objetivo?' })).toBeVisible();
     await page.getByRole('button', { name: /Preparación para un examen/ }).click();
     await page.getByLabel('Examen').selectOption('ielts');
-    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.000/ })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.900/ })).toHaveCount(0);
     await page.getByRole('button', { name: /Autodidacta/ }).click();
-    await page.getByRole('button', { name: /Exámenes \+ feedback docente · \$99\.000/ }).click();
+    await page.getByRole('button', { name: /Exámenes \+ feedback personalizado · \$99\.900/ }).click();
     await expect(page.getByRole('button', { name: 'Continuar al registro' })).toBeEnabled();
     await page.getByRole('button', { name: 'Continuar al registro' }).click();
 
     await expect(page.getByRole('heading', { name: 'Crea tu cuenta' })).toBeVisible();
-    await expect(page.getByText('IELTS · $99.000')).toBeVisible();
+    await expect(page.getByText('IELTS · $99.900')).toBeVisible();
     await expect(page.getByRole('button', { name: 'Continuar con Google' })).toBeVisible();
     await expect(page.getByLabel('Nombre completo')).toBeVisible();
     await expect(page.getByLabel('Correo electrónico')).toBeVisible();
@@ -57,11 +57,11 @@ test.describe('registro guiado', () => {
     await expect(page.getByLabel('Examen').getByRole('option', { name: 'TOPIK' })).toHaveCount(1);
     await expect(page.getByLabel('Examen').getByRole('option', { name: 'IELTS' })).toHaveCount(0);
     await page.getByLabel('Examen').selectOption('topik');
-    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.000/ })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.900/ })).toHaveCount(0);
     await page.getByRole('button', { name: /Autodidacta/ }).click();
-    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.000/ })).toBeVisible();
-    await expect(page.getByRole('button', { name: /Exámenes \+ corrección automática · \$49\.000/ })).toBeVisible();
-    await expect(page.getByRole('button', { name: /Exámenes \+ feedback docente · \$99\.000/ })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.900/ })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Exámenes \+ corrección automática · \$49\.900/ })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Exámenes \+ feedback personalizado · \$99\.900/ })).toBeVisible();
   });
 
   test('la preparación con profesor exige un plan y abre su reglamento', async ({ page }) => {

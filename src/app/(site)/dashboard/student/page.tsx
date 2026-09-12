@@ -1,136 +1,19 @@
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import StudentDashboardClient from './StudentDashboardClient'
-import type { RecentExam, DashboardStats } from './StudentDashboardClient'
-import { trackDailyActivity } from '@/lib/actions/trackActivity'
-import { calculateStreak } from '@/lib/utils/streak'
-import type { StudentPlan } from '@/lib/actions/assignPlan'
-import { XPRESS_EXAM_OPTIONS, xpressClassPurchasePath, type XpressExamSlug } from '@/lib/student-onboarding/catalog'
-
-// Korean lessons shown in the dashboard grid (step IDs match /courses/korean/step/[n])
-const KOREAN_STEPS = [
-  { day: 1, title: 'Annyeonghaseyo', sub: 'Saludos básicos' },
-  { day: 2, title: 'Café I',         sub: 'Pedir bebidas' },
-  { day: 3, title: 'Café II',        sub: 'Vocabulario extendido' },
-  { day: 4, title: 'Café III',       sub: 'Demostrativos + números' },
-  { day: 6, title: 'Mercado',        sub: 'Compras y precios' },
-  { day: 7, title: 'Transporte',     sub: 'Cómo pedir taxi' },
-]
-
-// Exam slug → brand colour
-const EXAM_COLOURS: Record<string, string> = {
-  ielts:      '#c8202e',
-  toefl:      '#1a6e3c',
-  icfes:      '#0f7c3e',
-  goethe:     '#1a2ecc',
-  'delf-dalf':'#1a2ecc',
-  'cils-celi':'#b45309',
-  'celpe-bras':'#166534',
-  topik:      '#c8202e',
-}
+import { redirect } from 'next/navigation';
+import { isAdminEmail } from '@/lib/config/admins';
+import { createClient } from '@/lib/supabase/server';
+import { loadStudentDashboard } from '@/lib/student-dashboard/data.server';
+import StudentDashboardView from '@/components/student-dashboard/StudentDashboardView';
 
 export default async function StudentDashboardPage() {
-  // Track today as active day (upsert — safe to call every load)
-  await trackDailyActivity()
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect('/login');
+  if (isAdminEmail(user.email)) redirect('/dashboard/admin');
 
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user) redirect('/login')
-
-  // ── Profile ────────────────────────────────────────────────────────────────
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('full_name, role, plan, target_exam')
+  const { data: profile } = await supabase.from('profiles')
+    .select('full_name,target_exam')
     .eq('id', user.id)
-    .single()
-
-  const name =
-    profile?.full_name ||
-    user.user_metadata?.full_name ||
-    user.email?.split('@')[0] ||
-    'Estudiante'
-
-  const plan: StudentPlan = (profile?.plan as StudentPlan) ?? 'autodidacta'
-  const targetExam = XPRESS_EXAM_OPTIONS.find(item => item.id === profile?.target_exam)
-
-  // ── Exam stats ─────────────────────────────────────────────────────────────
-  const { data: submissions } = await supabase
-    .from('exam_submissions')
-    .select('exam_slug, exam_name, mock_title, total_score, total_max, created_at')
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: false })
-    .limit(50)
-
-  const stats: DashboardStats = { simulacros: 0, mejorScore: 0, diasActivo: 0 }
-  const recentExams: RecentExam[] = []
-
-  if (submissions && submissions.length > 0) {
-    stats.simulacros = submissions.length
-
-    const scores = submissions
-      .filter(s => s.total_max > 0)
-      .map(s => Math.round((s.total_score / s.total_max) * 100))
-    stats.mejorScore = scores.length > 0 ? Math.max(...scores) : 0
-
-    const uniqueDays = new Set(
-      submissions
-        .filter(s => s.created_at)
-        .map(s => new Date(s.created_at as string).toISOString().slice(0, 10))
-    )
-    stats.diasActivo = uniqueDays.size
-
-    const seen = new Set<string>()
-    for (const s of submissions) {
-      const key = `${s.exam_slug}/${s.mock_title}`
-      if (seen.has(key)) continue
-      seen.add(key)
-      const pct = s.total_max > 0 ? Math.round((s.total_score / s.total_max) * 100) : 0
-      recentExams.push({
-        name:     s.exam_name as string,
-        subtitle: s.mock_title as string,
-        pct,
-        color: EXAM_COLOURS[s.exam_slug as string] ?? '#1a2ecc',
-        slug:  s.exam_slug as string,
-      })
-      if (recentExams.length === 3) break
-    }
-  }
-
-  // ── Korean lesson progress ─────────────────────────────────────────────────
-  const { data: progressRows } = await supabase
-    .from('user_progress')
-    .select('step_id')
-    .eq('user_id', user.id)
-    .eq('course_slug', 'korean')
-
-  const completedStepIds = new Set((progressRows ?? []).map(r => String(r.step_id)))
-  const koreanLessons = KOREAN_STEPS.map(step => ({
-    ...step,
-    done: completedStepIds.has(String(step.day)),
-  }))
-
-  // ── Daily streak ──────────────────────────────────────────────────────────
-  const { data: activityRows } = await supabase
-    .from('daily_activity')
-    .select('activity_date')
-    .eq('user_id', user.id)
-    .order('activity_date', { ascending: false })
-    .limit(365)
-
-  const activityDates = (activityRows ?? []).map(r => String(r.activity_date))
-  const streak = calculateStreak(activityDates)
-
-  return (
-    <StudentDashboardClient
-      name={name}
-      plan={plan}
-      streak={streak}
-      stats={stats}
-      recentExams={recentExams}
-      koreanLessons={koreanLessons}
-      targetExamLabel={targetExam?.label ?? null}
-      classPurchasePath={targetExam ? xpressClassPurchasePath(targetExam.id as XpressExamSlug) : '/precios'}
-    />
-  )
+    .maybeSingle();
+  const data = await loadStudentDashboard(user, profile);
+  return <StudentDashboardView data={data} />;
 }
