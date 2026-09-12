@@ -448,10 +448,10 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                       selected={examPlan === offer.id}
                       label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
                       description={offer.id === 'exam-single'
-                        ? 'Un simulacro con corrección automática y reporte detallado.'
+                        ? 'Pago único: un simulacro con corrección automática y reporte detallado.'
                         : offer.id === 'exam-auto'
-                          ? 'Simulacros ilimitados durante 30 días con corrección automática.'
-                          : 'Simulacros ilimitados y retroalimentación docente en máximo 24 horas.'}
+                          ? 'Suscripción renovable: simulacros ilimitados y corrección automática por periodos de 30 días.'
+                          : 'Suscripción renovable con simulacros ilimitados y feedback docente en máximo 24 horas.'}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>

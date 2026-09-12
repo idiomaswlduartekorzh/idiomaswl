@@ -411,3 +411,30 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   familias de examen y ambos precios después de seleccionar examen, redirección 307 de
   `/suscripcion/examenes` a login sin sesión y respuesta 401 de `/api/xpress-orders`
   para una solicitud no autenticada. No se realizó ningún cobro real durante la prueba.
+
+### 12 de septiembre de 2026 — renovaciones automáticas de Xpress
+
+- Xpress quedó `DESPLEGADO` desde `main` en `5c179597afd956555048b6dd4b867de0e6a038b4`,
+  con la implementación principal en `6ddd8a0d7e2725cad29044f52aed6b9ba9e8404c`.
+  El examen individual de $12.000 sigue siendo un pago único; los planes de $49.000 y
+  $99.000 se cobran por periodos sucesivos de 30 días hasta que el estudiante cancele
+  la renovación desde su panel.
+- La tarjeta se tokeniza y permanece en Wompi. WeLearn conserva únicamente el ID de la
+  fuente de pago. Cada periodo usa una orden y referencia únicas, conciliación durable,
+  límite de reintentos, notificaciones idempotentes y acceso solo después de `APPROVED`.
+  La cancelación impide cobros futuros y conserva el acceso ya pagado hasta su vencimiento.
+- Las migraciones `20260912110000_xpress_recurring_subscriptions.sql`,
+  `20260912113000_xpress_recurring_indexes.sql`,
+  `20260912114500_xpress_finalize_cancellations.sql` y
+  `20260912115500_xpress_cancel_guard.sql` quedaron aplicadas en Supabase
+  `ivqeokuxgxemhydvopdd`. Las tablas nuevas tienen RLS, sin lectura para `anon` o
+  `authenticated`, y al cerrar la validación no contenían suscripciones ni órdenes
+  recurrentes ficticias.
+- Pasaron 12/12 pruebas de comercio y base de datos, TypeScript, ESLint acotado, el
+  guardián de 465 temas y el build Webpack de 2.525 páginas. GitHub aprobó
+  `baseline-and-types` y `production-build`. Vercel completó
+  `dpl_2B6XEgp8pkDSQc64Agpxdh3BzdZL` desde GitHub `main`.
+- El smoke productivo comprobó `/registro` en HTTP 200, redirección 307 de
+  `/suscripcion/examenes` a login sin sesión, redirección 303 del alta de suscripción
+  anónima a login, respuesta 401 al cancelar sin sesión y respuesta 401 del cron sin
+  secreto. No se tokenizó ninguna tarjeta ni se realizó un cobro real.

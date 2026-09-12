@@ -1,4 +1,4 @@
-export const XPRESS_OFFER_VERSION = 'xpress-2026-09-09-v3' as const;
+export const XPRESS_OFFER_VERSION = 'xpress-2026-09-12-v4' as const;
 
 export type XpressOfferId = 'exam-single' | 'exam-auto' | 'exam-teacher';
 export type XpressMembershipOfferId = Exclude<XpressOfferId, 'exam-single'>;
@@ -16,7 +16,7 @@ export type XpressOffer = Readonly<{
   id: XpressOfferId;
   name: string;
   amountInCents: number;
-  billing: 'single-exam' | '30-day-membership';
+  billing: 'single-exam' | 'recurring-30-days';
   entitlementScope: 'exam';
   entitlements: readonly XpressEntitlement[];
   teacherFeedbackTargetHours: number | null;
@@ -52,7 +52,7 @@ export const XPRESS_OFFERS = Object.freeze([
     id: 'exam-auto',
     name: 'Exámenes + corrección automática',
     amountInCents: 4_900_000,
-    billing: '30-day-membership',
+    billing: 'recurring-30-days',
     entitlementScope: 'exam',
     entitlements: MEMBERSHIP_ENTITLEMENTS,
     teacherFeedbackTargetHours: null,
@@ -62,7 +62,7 @@ export const XPRESS_OFFERS = Object.freeze([
     id: 'exam-teacher',
     name: 'Exámenes + feedback docente',
     amountInCents: 9_900_000,
-    billing: '30-day-membership',
+    billing: 'recurring-30-days',
     entitlementScope: 'exam',
     entitlements: [...MEMBERSHIP_ENTITLEMENTS, 'teacher-feedback-24h'],
     teacherFeedbackTargetHours: 24,
