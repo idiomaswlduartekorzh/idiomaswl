@@ -49,6 +49,10 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
             studentEmail: form.get('studentEmail'),
             payerName: form.get('payerName'),
             phone: form.get('phone'),
+            address: form.get('address'),
+            city: form.get('city'),
+            purpose: form.get('purpose'),
+            signerName: form.get('signerName'),
           },
           acceptedTerms: TERMS_VERSION,
           reviewedTerms: TERMS_VERSION,
@@ -69,7 +73,7 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
 
   return <form onSubmit={submit} className={styles.enrollment}>
     <div className={styles.rulesIntro}>
-      <p className={styles.eyebrow}>04 / REGLAS DEL CURSO</p>
+      <p className={styles.eyebrow}>02 / REGLAMENTO</p>
       <h3>Lo importante, antes de inscribirte</h3>
       <p>Lee estas condiciones con calma. Los puntos que más afectan la programación y el pago están resaltados.</p>
     </div>
@@ -88,18 +92,23 @@ export default function CourseEnrollmentForm({ selection, salesEnabled }: { sele
 
     {!acceptedRules ? <div className={styles.formLocked} aria-live="polite">
       <span aria-hidden="true">🔒</span>
-      <p><strong>El formulario se desbloquea al confirmar la lectura.</strong><br />Después podrás ingresar los datos del estudiante y continuar al pago.</p>
+      <p><strong>El formulario se desbloquea al confirmar la lectura.</strong><br />Después podrás ingresar los datos de contratación, firmar electrónicamente y continuar al pago.</p>
     </div> : <div className={styles.formUnlocked}>
-      <p className={styles.eyebrow}>05 / DATOS DEL ESTUDIANTE</p>
-      <h3>¿A quién le damos la bienvenida?</h3>
+      <p className={styles.eyebrow}>03 / DATOS Y FIRMA</p>
+      <h3>Completa la contratación</h3>
       <p className={styles.small}>Después de confirmar el pago crearemos la cuenta del estudiante y enviaremos el acceso a este correo.</p>
       <div className={styles.fields}>
         <label>Nombre del estudiante<input name="studentName" autoComplete="name" required minLength={2} maxLength={100} /></label>
         <label>Correo del estudiante<input name="studentEmail" type="email" autoComplete="email" required maxLength={254} /></label>
-        <label>Nombre de quien paga<input name="payerName" autoComplete="cc-name" required minLength={2} maxLength={100} /></label>
         <label>WhatsApp con código de país<input name="phone" type="tel" autoComplete="tel" placeholder="+573001234567" pattern="\+[1-9][0-9]{7,14}" required aria-describedby="phone-help" /></label>
+        <label>Ciudad y país<input name="city" autoComplete="address-level2" placeholder="Bucaramanga, Colombia" required minLength={2} maxLength={100} /></label>
+        <label className={styles.fieldWide}>Dirección de residencia<input name="address" autoComplete="street-address" required minLength={5} maxLength={180} /></label>
+        <label className={styles.fieldWide}>Propósito del curso<textarea name="purpose" placeholder="Por ejemplo: prepararme para IELTS Academic y mejorar mi escritura." required minLength={10} maxLength={500} rows={4} /></label>
+        <label>Nombre de quien paga<input name="payerName" autoComplete="cc-name" required minLength={2} maxLength={100} /></label>
+        <label>Firma electrónica<input name="signerName" autoComplete="name" required minLength={2} maxLength={100} aria-describedby="signature-help" /></label>
       </div>
       <p id="phone-help" className={styles.small}>Usa + y el código de país, sin espacios. Si el estudiante es menor, continúa su madre, padre o representante.</p>
+      <p id="signature-help" className={styles.signatureHelp}><strong>Escribe exactamente el mismo nombre de quien paga.</strong> Este nombre será tu firma electrónica. Guardaremos la fecha, la versión y la huella del reglamento aceptado.</p>
       <div className={styles.agreements}>
         <label><input name="privacy" type="checkbox" required /> {PRIVACY_NOTICE}</label>
         <label><input name="adult" type="checkbox" required /> Soy mayor de edad y tengo autorización para inscribirme o representar al estudiante y proporcionar sus datos.</label>

@@ -6,7 +6,7 @@ export default function ReglamentoPage() {
     <h1>Reglamento de clases</h1>
     <p><strong>Lee estas condiciones antes de pagar.</strong> Puedes guardar o imprimir esta página desde tu navegador. Conservamos con tu orden la versión que aceptaste.</p>
     {COURSE_TERMS.map(section=><section key={section.title}><h2>{section.title}</h2><p>{section.text}</p></section>)}
-    <p>Versión: {TERMS_VERSION} · Vigente desde el 7 de septiembre de 2026.</p>
+    <p>Versión: {TERMS_VERSION} · Vigente desde el 12 de septiembre de 2026.</p>
     <p>Consulta tus derechos en la <a href="https://www.sic.gov.co/">Superintendencia de Industria y Comercio</a>.</p>
   </main>;
 }

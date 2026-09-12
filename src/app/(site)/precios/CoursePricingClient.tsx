@@ -9,9 +9,9 @@ import {
 import CourseEnrollmentForm from './CourseEnrollmentForm';
 import styles from './course-pricing.module.css';
 
-export default function CoursePricingClient({ initialSelection, corrected, salesEnabled }: { initialSelection: Selection; corrected: boolean; salesEnabled: boolean }) {
+export default function CoursePricingClient({ initialSelection, initialReviewing = false, corrected, salesEnabled }: { initialSelection: Selection; initialReviewing?: boolean; corrected: boolean; salesEnabled: boolean }) {
   const [selection, setSelection] = useState(initialSelection);
-  const [reviewing, setReviewing] = useState(false);
+  const [reviewing, setReviewing] = useState(initialReviewing);
   const [copyStatus, setCopyStatus] = useState('');
   const [fallback, setFallback] = useState('');
   const reviewRef = useRef<HTMLHeadingElement>(null);
@@ -107,7 +107,7 @@ export default function CoursePricingClient({ initialSelection, corrected, sales
           <p className={styles.small}>Sin renovación automática. Puedes cambiar tu selección antes de continuar.</p>
         </aside>
       </div> : <section className={styles.review} aria-labelledby="review-heading">
-        <p className={styles.eyebrow}>03 / TU SELECCIÓN</p>
+        <p className={styles.eyebrow}>PLAN ELEGIDO</p>
         <h2 id="review-heading" tabIndex={-1} ref={reviewRef}>Todo claro antes de seguir.</h2>
         <p>Revisa el curso que elegiste. Después encontrarás el reglamento y, al confirmar que lo leíste, se abrirá el formulario de inscripción.</p>
         <dl className={styles.reviewDetails}>

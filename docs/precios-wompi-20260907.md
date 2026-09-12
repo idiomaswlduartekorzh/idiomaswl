@@ -14,7 +14,7 @@ El webhook reconoce referencias `WC-` tras comprobar la firma y consulta Wompi p
 
 El reglamento final es visible antes del formulario. Sus reglas se presentan en tarjetas con los puntos cruciales destacados; una confirmación obligatoria desbloquea los datos del estudiante y las autorizaciones separadas. El servidor valida versiones y guarda texto/hash en la orden. La persona puede consultar después la versión aceptada en su inscripción.
 
-El texto contractual quedó versionado como `course-20260907-v1`. El servidor exige que la liberación versionada esté activa y que `COURSE_SALES_EMERGENCY_DISABLED` no sea `true`.
+El texto contractual vigente quedó versionado como `course-20260912-v2`; las órdenes nuevas guardan la firma electrónica escrita, la fecha del servidor, el texto aceptado y su huella. El servidor admite que las órdenes pendientes con `course-20260907-v1` terminen su pago. También exige que la liberación versionada esté activa y que `COURSE_SALES_EMERGENCY_DISABLED` no sea `true`.
 
 ## Verificación local
 

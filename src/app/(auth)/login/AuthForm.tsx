@@ -11,6 +11,7 @@ import {
   WELEARN_LANGUAGE_OPTIONS,
   XPRESS_EXAM_OPTIONS,
   registrationCompletionPath,
+  guidedLanguagePurchasePath,
   registrationIntentMetadata,
   registrationPurchasePath,
   xpressClassPurchasePath,
@@ -187,6 +188,19 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     }
     setError('');
     setRegistrationStep(3);
+  };
+
+  const continueGuidedCourse = () => {
+    if (!language || !coursePlan) {
+      setError('Selecciona el plan de clases para continuar.');
+      return;
+    }
+    setError('');
+    if (studentPath === 'exam' && exam) {
+      router.push(xpressClassPurchasePath(exam, { plan: coursePlan, startAtRules: true }));
+      return;
+    }
+    if (studentPath === 'welearn') router.push(guidedLanguagePurchasePath(language, coursePlan));
   };
 
   const continueFromLanguage = () => {
@@ -429,14 +443,14 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                       eyebrow="A TU RITMO"
                       label="Autodidacta"
                       description="Simulacros, resultados y reportes en Xpress."
-                      onSelect={() => { setExamPreparationMode('self'); setError(''); }}
+                      onSelect={() => { setExamPreparationMode('self'); setCoursePlan(''); setError(''); }}
                     />
                     <JourneyChoice
                       selected={examPreparationMode === 'teacher'}
                       eyebrow="CLASES EN VIVO"
                       label="Con profesor"
                       description="Preparación guiada con un docente de WeLearn."
-                      onSelect={() => { setExamPreparationMode('teacher'); setExamPlan(''); setError(''); }}
+                      onSelect={() => { setExamPreparationMode('teacher'); setExamPlan(''); setCoursePlan(''); setError(''); }}
                     />
                   </div>
                 </Field>}
@@ -457,21 +471,25 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                   </div>
                 </Field>}
 
-                {examPreparationMode === 'teacher' && exam && <div style={{
-                  padding: '1rem', borderRadius: 16,
-                  border: '1px solid color-mix(in srgb, var(--accent) 38%, var(--line-soft))',
-                  background: 'linear-gradient(135deg, color-mix(in srgb, var(--accent) 13%, var(--surface)), var(--surface))',
-                  boxShadow: '0 10px 28px rgba(18, 35, 79, 0.08)',
-                }}>
-                  <p style={{ margin: 0, color: A, fontWeight: 800, fontSize: 11, letterSpacing: '0.08em' }}>PREPARACIÓN GUIADA</p>
-                  <h3 style={{ margin: '0.35rem 0', color: 'var(--ink)', fontSize: 16 }}>Elige la intensidad de tus clases</h3>
-                  <p style={{ margin: '0 0 0.9rem', color: MUTED, fontSize: 12, lineHeight: 1.5 }}>Abriremos la página completa de precios con tu idioma ya seleccionado.</p>
-                  <button type="button" onClick={() => router.push(xpressClassPurchasePath(exam))} style={primaryButtonStyle(false)}>Ver clases y precios</button>
-                </div>}
+                {examPreparationMode === 'teacher' && exam && <Field label="Elige tu plan de clases">
+                  <div style={{ display: 'grid', gap: '0.55rem' }}>
+                    {PLANS.map((plan) => <PlanChoice
+                      key={plan.id}
+                      selected={coursePlan === plan.id}
+                      label={`${plan.name} · ${formatCOP(plan.price)} COP`}
+                      description={`${plan.weekly} ${plan.weekly === 1 ? 'clase' : 'clases'} por semana durante 4 semanas. ${plan.description}`}
+                      onSelect={() => { setCoursePlan(plan.id); setError(''); }}
+                    />)}
+                  </div>
+                </Field>}
               </>}
 
               {error && <InlineMessage kind="error">{error}</InlineMessage>}
-              {(studentPath !== 'exam' || examPreparationMode !== 'teacher') && <>
+              {(studentPath === 'welearn' || (studentPath === 'exam' && examPreparationMode === 'teacher')) && <>
+                <button type="button" onClick={continueGuidedCourse} disabled={!coursePlan || (studentPath === 'exam' && !exam)} style={primaryButtonStyle(!coursePlan || (studentPath === 'exam' && !exam))}>Continuar al reglamento</button>
+                <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>Leerás y aceptarás el reglamento antes de ingresar tus datos y pagar. La cuenta se crea cuando Wompi confirme el pago.</p>
+              </>}
+              {studentPath === 'exam' && examPreparationMode === 'self' && <>
                 <button type="button" onClick={continueRegistration} disabled={!registrationReady} style={primaryButtonStyle(!registrationReady)}>Continuar al registro</button>
                 <p style={{ margin: 0, textAlign: 'center', color: MUTED, fontSize: 12 }}>Crearás tu cuenta antes de pasar al pago seguro con Wompi.</p>
               </>}

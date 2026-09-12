@@ -47,19 +47,25 @@ const XPRESS_CLASS_OBJECTIVES: Readonly<Record<XpressExamSlug, string>> = {
   'celpe-bras': 'CELPE-Bras',
 };
 
-export function xpressClassSelection(examSlug: XpressExamSlug): Selection {
+export function xpressClassSelection(examSlug: XpressExamSlug, plan: CoursePlanId = 'esencial'): Selection {
   const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === examSlug);
   if (!exam) throw new Error('unknown_xpress_exam');
+  if (!PLANS.some((item) => item.id === plan)) throw new Error('unknown_course_plan');
   return {
     language: exam.language,
     objective: XPRESS_CLASS_OBJECTIVES[examSlug],
-    plan: 'esencial',
+    plan,
     level: LEVELS[0],
   };
 }
 
-export function xpressClassPurchasePath(examSlug: XpressExamSlug): string {
-  return selectionPath(xpressClassSelection(examSlug));
+export function xpressClassPurchasePath(examSlug: XpressExamSlug, options?: { plan?: CoursePlanId; startAtRules?: boolean }): string {
+  const path = selectionPath(xpressClassSelection(examSlug, options?.plan));
+  return options?.startAtRules ? `${path}&paso=reglamento` : path;
+}
+
+export function guidedLanguagePurchasePath(language: WelearnLanguage, plan: CoursePlanId): string {
+  return `${selectionPath({ language, objective: 'general', plan, level: LEVELS[0] })}&paso=reglamento`;
 }
 
 export type RegistrationIntent =

@@ -3,13 +3,16 @@ import assert from 'node:assert/strict';
 import { parseOrderInput, parseProviderPayment, safeCourseReturnPath, isCourseRequestOrigin } from '../src/lib/course-pricing/payment.ts';
 import { TERMS_VERSION,PRIVACY_VERSION,COURSE_LEGAL_READY } from '../src/lib/course-pricing/terms.ts';
 import { COURSE_SALES_RELEASED, courseSalesEnabled } from '../src/lib/course-pricing/release.ts';
-const input={idempotencyKey:'12345678-1234-4234-8234-123456789012',selection:{language:'ingles',objective:'general',plan:'constancia',level:'No sé mi nivel'},contact:{studentName:'Estudiante Prueba',studentEmail:'Estudiante@Example.com',payerName:'Pagador Prueba',phone:'+573001234567'},acceptedTerms:TERMS_VERSION,reviewedTerms:TERMS_VERSION,acceptedPrivacy:PRIVACY_VERSION,acceptedAdult:true};
+const input={idempotencyKey:'12345678-1234-4234-8234-123456789012',selection:{language:'ingles',objective:'general',plan:'constancia',level:'No sé mi nivel'},contact:{studentName:'Estudiante Prueba',studentEmail:'Estudiante@Example.com',payerName:'Pagador Prueba',phone:'+573001234567',address:'Calle 10 # 20-30',city:'Bucaramanga, Colombia',purpose:'Mejorar mi inglés para estudiar en el exterior.',signerName:'Pagador Prueba'},acceptedTerms:TERMS_VERSION,reviewedTerms:TERMS_VERSION,acceptedPrivacy:PRIVACY_VERSION,acceptedAdult:true};
 test('server calculates price and requires current explicit legal acceptance',()=>{
  const order=parseOrderInput({...input,amountInCents:1});assert.ok(order);assert.ok(order.amountInCents>1);assert.equal(order.acceptance.privacyVersion,PRIVACY_VERSION);
  assert.equal(order.contact.studentEmail,'estudiante@example.com');
+ assert.equal(order.acceptance.signedBy,'Pagador Prueba');
  for(const field of ['acceptedTerms','reviewedTerms','acceptedPrivacy','acceptedAdult'])assert.equal(parseOrderInput({...input,[field]:null}),null);
  assert.equal(parseOrderInput({...input,acceptedTerms:'old'}),null);
  assert.equal(parseOrderInput({...input,contact:{...input.contact,phone:'123'}}),null);
+ assert.equal(parseOrderInput({...input,contact:{...input.contact,address:'x'}}),null);
+ assert.equal(parseOrderInput({...input,contact:{...input.contact,signerName:'Otra Persona'}}),null);
  assert.equal(COURSE_LEGAL_READY,true,'Approved terms can proceed when the operational sales flag is enabled');
 });
 test('released course sales retain an emergency stop',()=>{

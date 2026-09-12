@@ -74,6 +74,7 @@ test('opens the existing class checkout with the exam objective preselected', ()
   );
   assert.match(xpressClassPurchasePath('topik'), /idioma=coreano/);
   assert.match(xpressClassPurchasePath('topik'), /objetivo=TOPIK\+I/);
+  assert.match(xpressClassPurchasePath('ielts', { plan: 'impulso', startAtRules: true }), /plan=impulso.*paso=reglamento/);
 });
 
 test('accepts only versioned Xpress orders and strict Wompi transactions', () => {

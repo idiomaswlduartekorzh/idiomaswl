@@ -2,7 +2,7 @@
 import {useCallback,useEffect,useRef,useState} from 'react';
 import {formatCOP,objectiveLabel,LANGUAGES,PLANS,type Selection} from '@/lib/course-pricing/catalog';
 import styles from '../precios/course-pricing.module.css';
-type Order={id:string;reference:string;selection:Selection;amountInCents:number;classes:number;sessions:number;expiresAt:string;acceptedAt:string;termsVersion:string;legalSnapshot:string|null};
+type Order={id:string;reference:string;selection:Selection;amountInCents:number;classes:number;sessions:number;expiresAt:string;acceptedAt:string;signedBy:string|null;termsVersion:string;legalSnapshot:string|null};
 type Result={order?:Order;status?:string;message?:string};
 export default function CourseOrderClient({orderId,transactionId}:{orderId:string|null;transactionId:string|null}) {
   const [result,setResult]=useState<Result>({}),[message,setMessage]=useState('Consultando…'),[busy,setBusy]=useState(true),[login,setLogin]=useState(false);
@@ -46,7 +46,7 @@ export default function CourseOrderClient({orderId,transactionId}:{orderId:strin
     {order&&<><p>{LANGUAGES.find(l=>l.id===order.selection.language)?.name} · {objectiveLabel(order.selection.objective)} · {PLANS.find(p=>p.id===order.selection.plan)?.name??order.selection.plan}</p>
       <p className={styles.total}>{formatCOP(order.amountInCents/100)} <small>COP</small></p><p>{order.classes} clases de 100 minutos · {order.sessions} sesiones · cuatro semanas.</p>
       <p className={styles.small}>Referencia: {order.reference}</p>
-      {!!acceptedSections.length&&<details><summary>Condiciones que aceptaste</summary><p>Versión {order.termsVersion} · {new Date(order.acceptedAt).toLocaleString('es-CO')}</p>{acceptedSections.map(s=><section key={s.title}><h3>{s.title}</h3><p>{s.text}</p></section>)}</details>}
+      {!!acceptedSections.length&&<details><summary>Condiciones que aceptaste</summary><p>Versión {order.termsVersion} · {new Date(order.acceptedAt).toLocaleString('es-CO')}{order.signedBy?` · Firmado electrónicamente por ${order.signedBy}`:''}</p>{acceptedSections.map(s=><section key={s.title}><h3>{s.title}</h3><p>{s.text}</p></section>)}</details>}
       {result.status==='paid'?<p>Ahora coordinamos contigo el horario de tus clases. El pago está registrado; no necesitas volver a pagar.</p>:null}
       {result.status==='pending'||result.status==='review'?<p>Conservamos tu inscripción. No hagas otro pago mientras revisamos el actual.</p>:null}
       {['created','not_completed'].includes(result.status??'')&&<button className={styles.primary} disabled={busy} onClick={pay}>Pagar con Wompi</button>}

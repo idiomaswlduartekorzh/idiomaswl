@@ -74,7 +74,7 @@ export async function courseOrderState(orderId:string) {
 export async function checkoutForOrder(order:Record<string,unknown>,origin:string) {
   const config=getWompiServerConfig();
   if(config.environment!==order.environment || (process.env.VERCEL_ENV!=='production'&&config.environment==='production')) throw new Error('environment_mismatch');
-  if (!courseSalesEnabled() || order.terms_version!==TERMS_VERSION) throw new Error('terms_unavailable');
+  if (!courseSalesEnabled() || ![TERMS_VERSION,'course-20260907-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
   const state=await courseOrderState(String(order.id));
   if(state.status==='paid'||state.status==='review'||state.status==='pending') return {status:state.status};
   const expirationTime=new Date(String(order.expires_at)).toISOString();

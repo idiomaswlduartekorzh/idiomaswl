@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import {
+  guidedLanguagePurchasePath,
   parseRegistrationIntent,
   registrationPurchasePath,
 } from '../src/lib/student-onboarding/catalog.ts';
@@ -18,6 +19,7 @@ test('general-language students continue to their selected class package', () =>
   const intent = parseRegistrationIntent({ path: 'welearn', language: 'frances', plan: 'impulso' });
   assert.deepEqual(intent, { path: 'welearn', language: 'frances', plan: 'impulso' });
   assert.equal(registrationPurchasePath(intent), '/precios?idioma=frances&objetivo=general&plan=impulso&nivel=No+s%C3%A9+mi+nivel');
+  assert.equal(guidedLanguagePurchasePath('frances','impulso'), '/precios?idioma=frances&objetivo=general&plan=impulso&nivel=No+s%C3%A9+mi+nivel&paso=reglamento');
 });
 
 test('exam students continue to the matching subscription checkout', () => {

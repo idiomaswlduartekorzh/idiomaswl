@@ -43,7 +43,7 @@ export default async function PreciosPage({ searchParams }: { searchParams: Prom
   if (candidate) {
     const { selection, corrected } = parseSelection(query);
     const salesEnabled = courseSalesEnabled();
-    return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} salesEnabled={salesEnabled} />;
+    return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} initialReviewing={query.paso === 'reglamento'} corrected={corrected} salesEnabled={salesEnabled} />;
   }
   return (
     <>

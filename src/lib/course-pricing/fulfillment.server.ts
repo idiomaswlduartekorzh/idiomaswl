@@ -31,7 +31,7 @@ async function findProfile(email:string) {
 
 async function welcomeStudent(order:CourseOrderRecord) {
   const admin=createAdminClient();
-  const contact=order.contact as {studentName:string;studentEmail:string};
+  const contact=order.contact as {studentName:string;studentEmail:string;acceptance?:{termsVersion?:string;signedBy?:string}};
   let profile=await findProfile(contact.studentEmail);
   let invited=false;
   let accountActionLink:string|null=null;
@@ -64,21 +64,21 @@ async function welcomeStudent(order:CourseOrderRecord) {
     to:contact.studentEmail,
     subject:`Bienvenido a WeLearn: tu pago de ${language} está confirmado`,
     idempotencyKey:`course-welcome/${order.id}`,
-    html:`<h1>¡Bienvenido a WeLearn, ${escapeEmailHtml(contact.studentName)}!</h1><p>Confirmamos tu inscripción a <strong>${escapeEmailHtml(language)}</strong> por ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p>${escapeEmailHtml(accountMessage)}</p><p><a href="${escapeEmailHtml(accountHref)}">${escapeEmailHtml(accountLabel)}</a></p><p>Te contactaremos para coordinar el horario. Conserva este correo como constancia de la compra.</p>`,
+    html:`<h1>¡Bienvenido a WeLearn, ${escapeEmailHtml(contact.studentName)}!</h1><p>Confirmamos tu inscripción a <strong>${escapeEmailHtml(language)}</strong> por ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p>Reglamento ${escapeEmailHtml(contact.acceptance?.termsVersion??'registrado con la orden')}${contact.acceptance?.signedBy?`, firmado electrónicamente por ${escapeEmailHtml(contact.acceptance.signedBy)}`:''}.</p><p>${escapeEmailHtml(accountMessage)}</p><p><a href="${escapeEmailHtml(accountHref)}">${escapeEmailHtml(accountLabel)}</a></p><p>Te contactaremos para coordinar el horario. Conserva este correo como constancia de la compra.</p>`,
   });
 }
 
 async function notifyOwner(order:CourseOrderRecord) {
   const to=process.env.COURSE_OWNER_NOTIFICATION_EMAIL||DEFAULT_OWNER_NOTIFICATION_EMAIL;
   if(!to || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to))throw new Error('course_owner_email_not_configured');
-  const contact=order.contact as {studentName:string;studentEmail:string;payerName:string;phone:string};
+  const contact=order.contact as {studentName:string;studentEmail:string;payerName:string;phone:string;address?:string;city?:string;purpose?:string;signerName?:string};
   const selection=order.selection as {language:string;objective:string;plan:string;level:string};
   const language=LANGUAGES.find(item=>item.id===selection.language)?.name??selection.language;
   const plan=PLANS.find(item=>item.id===selection.plan)?.name??selection.plan;
   await sendCourseEmail({
     to,subject:`Nuevo pago confirmado: ${language} · ${contact.studentName}`,
     idempotencyKey:`course-owner/${order.id}`,
-    html:`<h1>Nuevo estudiante para coordinar</h1><p><strong>${escapeEmailHtml(contact.studentName)}</strong> pagó ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><ul><li>Curso: ${escapeEmailHtml(language)} · ${escapeEmailHtml(objectiveLabel(selection.objective))}</li><li>Plan: ${escapeEmailHtml(plan)} · ${escapeEmailHtml(order.classes)} clases</li><li>Nivel: ${escapeEmailHtml(selection.level)}</li><li>Correo: ${escapeEmailHtml(contact.studentEmail)}</li><li>WhatsApp: ${escapeEmailHtml(contact.phone)}</li><li>Pagador: ${escapeEmailHtml(contact.payerName)}</li><li>Referencia: ${escapeEmailHtml(order.reference)}</li></ul><p>La tarea de coordinación quedó registrada en la plataforma.</p>`,
+    html:`<h1>Nuevo estudiante para coordinar</h1><p><strong>${escapeEmailHtml(contact.studentName)}</strong> pagó ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><ul><li>Curso: ${escapeEmailHtml(language)} · ${escapeEmailHtml(objectiveLabel(selection.objective))}</li><li>Plan: ${escapeEmailHtml(plan)} · ${escapeEmailHtml(order.classes)} clases</li><li>Nivel: ${escapeEmailHtml(selection.level)}</li><li>Correo: ${escapeEmailHtml(contact.studentEmail)}</li><li>WhatsApp: ${escapeEmailHtml(contact.phone)}</li><li>Dirección: ${escapeEmailHtml(contact.address??'No registrada')} · ${escapeEmailHtml(contact.city??'')}</li><li>Propósito: ${escapeEmailHtml(contact.purpose??'No registrado')}</li><li>Pagador y firmante: ${escapeEmailHtml(contact.signerName??contact.payerName)}</li><li>Referencia: ${escapeEmailHtml(order.reference)}</li></ul><p>La tarea de coordinación quedó registrada en la plataforma.</p>`,
   });
 }
 
