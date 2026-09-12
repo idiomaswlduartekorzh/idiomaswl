@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "status": "APPROVED",
+  "approvedAt": "2026-09-12T18:19:21.413Z",
+  "reviewer": {
+    "kind": "human",
+    "id": "workspace-owner"
+  },
+  "statement": "Autorizo la liberacion de los veinte mocks IELTS auditados para uso con estudiantes y produccion.",
+  "sets": [
+    {
+      "set": 1,
+      "releaseFingerprintSha256": "eb2ef62d96ea6f47569767896307f038f419555d6a1f993d8d8e120d9c37758b"
+    },
+    {
+      "set": 2,
+      "releaseFingerprintSha256": "39056cba9b33d96c119b8a55d015d87d8ba0efa38b70161a7949d58abf5880be"
+    },
+    {
+      "set": 3,
+      "releaseFingerprintSha256": "2c2f7ca2bd284189edba457d91b925e657c0dd4eb3a5204cb3eec2a5c32a3077"
+    },
+    {
+      "set": 4,
+      "releaseFingerprintSha256": "6a837688b15ff986382c05333269bb142941955dac2a67fc6b6641a03806ed22"
+    },
+    {
+      "set": 5,
+      "releaseFingerprintSha256": "63b746fed47e2fa8a8de24d7d38128dfa0bb0b46584430ba82e56e3fe0ec8f2c"
+    },
+    {
+      "set": 6,
+      "releaseFingerprintSha256": "72ff0e0764795a98bc73ff82cf3fe9b0b7923a584e82e5722280427676cf0001"
+    },
+    {
+      "set": 7,
+      "releaseFingerprintSha256": "c245ff42a9662ff56d1787b39c1b296e9ba53d62830ce44ecf4b1c5a58a91f9c"
+    },
+    {
+      "set": 8,
+      "releaseFingerprintSha256": "d121106fbe110eb92acf4985a1db6cd5bd0be981b467441df78a8c7bc4afc275"
+    },
+    {
+      "set": 9,
+      "releaseFingerprintSha256": "a9042902d386dd8351125645ec47a6f36c9131be998efb455a8712bd7c9824e8"
+    },
+    {
+      "set": 10,
+      "releaseFingerprintSha256": "27094cda7ab979f22bbedc066419ff5f31edca65fcbff57f1dad2f8834e2409f"
+    },
+    {
+      "set": 11,
+      "releaseFingerprintSha256": "f2762294a77c30c789d61f4608d12ae57dd8248f909aff738f6ff32e3896ea32"
+    },
+    {
+      "set": 12,
+      "releaseFingerprintSha256": "9bda329389ce8d23f29d319b0fc0db3ea5bec3465dc80da53da31b5ccd8aabdc"
+    },
+    {
+      "set": 13,
+      "releaseFingerprintSha256": "27c8667def7ad6471943cb3e905acb100906ba8eab56e94d28b91f7966714241"
+    },
+    {
+      "set": 14,
+      "releaseFingerprintSha256": "7081fd72a0817fd12d7dd90cc34b31069313269e2a13c1a7134e0226a69cc57e"
+    },
+    {
+      "set": 15,
+      "releaseFingerprintSha256": "d54f338511379142856623b9194b44645c718434735f70e0749f5b34f1aa4143"
+    },
+    {
+      "set": 16,
+      "releaseFingerprintSha256": "acf7cd5dcffc36e02a83d692e8a06435b5af90c362176f6ab72e3804da44d852"
+    },
+    {
+      "set": 17,
+      "releaseFingerprintSha256": "ed1f134e85016a2224bf28fbb19d4c883d766b24e35420bec25b69552bcfb4ae"
+    },
+    {
+      "set": 18,
+      "releaseFingerprintSha256": "75b59fd2488e1161a24e59c142f7b653e0f6d059ea4256082fc4fd7ae5b71d96"
+    },
+    {
+      "set": 19,
+      "releaseFingerprintSha256": "b5f3a82e0018f2f6b6ad7fa292e9dc620e269e027671e38deba09b7ed5d8833d"
+    },
+    {
+      "set": 20,
+      "releaseFingerprintSha256": "8719a561b2e4267de56c6de374a64969ecf866650455dc6dfdc2ef969dc306a4"
+    }
+  ],
+  "receiptSha256": "2a457054959f4c2e1171bbd9cdf63820a63fb351cc03fde288f07a2ed9560b82"
+}
