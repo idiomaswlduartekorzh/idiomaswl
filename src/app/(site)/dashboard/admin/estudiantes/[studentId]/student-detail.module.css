@@ -1,3 +1,8 @@
+:global(body):has(.page) :global(.wl-site-nav),
+:global(body):has(.page) :global(.wl-wa-float) {
+  display: none !important;
+}
+
 .page {
   --ink: #152052;
   --blue: #3157d5;
@@ -24,9 +29,17 @@
 
 .page > nav {
   margin-bottom: 34px;
+  padding: 13px 16px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
+  border: 1px solid rgba(255, 255, 255, .92);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 12px 34px rgba(38, 54, 112, .07), inset 0 1px rgba(255, 255, 255, .92);
+  backdrop-filter: blur(20px) saturate(145%);
+  -webkit-backdrop-filter: blur(20px) saturate(145%);
   font-size: 11px;
   font-weight: 750;
 }
