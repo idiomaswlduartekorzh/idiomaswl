@@ -66,6 +66,11 @@ test.describe('registro guiado', () => {
     await expect(page.getByRole('button', { name: 'Ver clases y precios' })).toBeVisible();
     await page.getByRole('button', { name: 'Ver clases y precios' }).click();
     await expect(page).toHaveURL(/\/precios\?idioma=italiano&objetivo=CILS&plan=esencial&nivel=No\+s%C3%A9\+mi\+nivel/);
-    await expect(page.getByRole('tab', { name: '🇮🇹 Italiano' })).toHaveAttribute('aria-selected', 'true');
+    const candidateLanguage = page.getByRole('radio', { name: 'Italiano' });
+    if (await candidateLanguage.count()) {
+      await expect(candidateLanguage).toBeChecked();
+    } else {
+      await expect(page.getByRole('tab', { name: '🇮🇹 Italiano' })).toHaveAttribute('aria-selected', 'true');
+    }
   });
 });
