@@ -34,6 +34,10 @@ for (const { number, mock, audio } of sets) {
   assert.deepEqual(audio.parts.map(part => part.items.length), [6,4,5]);
   assert.deepEqual(audio.parts.map(part => part.plays), [2,1,2]);
   assert.deepEqual(audio.production.cueFrequenciesHz, [990,831,698]);
+  for (const part of audio.parts) {
+    const transcript = sections.get(part.id).transcript ?? '';
+    for (const item of part.items) assert.match(transcript, new RegExp(`Nummer ${item.number}\\n`), `Set ${number}: guided transcript is missing item ${item.number}`);
+  }
   const audioCharacters = audio.parts.flatMap(part => [part.intro, part.outro ?? '', ...(part.example?.turns ?? []).map(turn => turn.text), ...part.items.flatMap(item => item.turns.map(turn => turn.text))]).join('').length;
   assert.ok(audioCharacters >= 3600 && audioCharacters <= 4600, `Set ${number}: audio source ${audioCharacters} chars`);
   for (const item of audio.parts.flatMap(part => part.items)) {

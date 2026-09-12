@@ -47,6 +47,10 @@ function words(value = '') {
 assert.match(source, /timeMinutes:\s*80/);
 assert.deepEqual(script.parts.map(part => part.items.length), [6, 4, 5], 'Hören must contain 6 + 4 + 5 scored items');
 assert.deepEqual(script.parts.map(part => part.plays), [2, 1, 2], 'Hören replay policy must be 2 + 1 + 2');
+for (const part of script.parts) {
+  const transcript = set1.sections.find(section => section.part === part.id)?.transcript ?? '';
+  for (const item of part.items) assert.match(transcript, new RegExp(`Nummer ${item.number}\\n`), `guided transcript is missing item ${item.number}`);
+}
 assert.equal(uniqueMatches(/g-a1-1-h\d+/g).length, 15, 'expected 15 listening ids');
 assert.equal(uniqueMatches(/g-a1-1-l\d+/g).length, 15, 'expected 15 reading ids');
 assert.equal(uniqueMatches(/g-a1-1-sp\d+/g).length, 3, 'expected 3 speaking ids');
@@ -61,6 +65,8 @@ assert.match(runnerSource, /function advanceExam\(\)/, 'the exam must advance th
 assert.match(runnerSource, /aria-current=\{activeSkill === skill\.id \? 'step'/, 'the exam must expose a non-interactive progress stepper');
 assert.doesNotMatch(runnerSource, /window\.print/, 'the public exam must not expose a printable answer sheet');
 assert.doesNotMatch(runnerSource, /Transkript als Beleg/, 'the public result must not expose listening transcripts');
+assert.match(runnerSource, /practiceSkill === 'listening' && <ObjectiveReview[^>]+showListeningEvidence/, 'guided Hören must expose transcript evidence only after practice');
+assert.match(runnerSource, /<ObjectiveReview mock=\{mock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
 assert.doesNotMatch(runnerSource, /Bewertungsbogen · docente/, 'students must not be able to assign their own open-task score');
 assert.match(runnerSource, /phase === 'submit'/, 'the exam must enter a dedicated delivery phase before results');
 assert.match(submissionSource, /saveLead\(/, 'delivery must capture the Goethe lead');

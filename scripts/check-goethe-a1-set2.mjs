@@ -23,6 +23,11 @@ const reading = set2.sections.filter(section => section.skill === 'reading').fla
 const writing = set2.sections.filter(section => section.skill === 'writing').flatMap(section => section.questions);
 const speaking = set2.sections.filter(section => section.skill === 'speaking').flatMap(section => section.questions);
 
+for (const part of audio.parts) {
+  const transcript = sections.get(part.id)?.transcript ?? '';
+  for (const item of part.items) assert.match(transcript, new RegExp(`Nummer ${item.number}\\n`), `guided transcript is missing item ${item.number}`);
+}
+
 function words(value = '') {
   return value.match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) ?? [];
 }
@@ -192,6 +197,8 @@ assert.equal(release.releaseGates.production, 'ready-for-main');
 assert.match(pageSource, /\/\^a1-\[1-7\]\$\/\.test\(mockId\)/, 'Set 2 must use the approved Goethe A1 runner');
 assert.match(runnerSource, /mock\.id/, 'the approved runner must resolve media and labels by mock id');
 assert.doesNotMatch(runnerSource, /Transkript als Beleg/);
+assert.match(runnerSource, /practiceSkill === 'listening' && <ObjectiveReview[^>]+showListeningEvidence/, 'guided Hören must expose transcript evidence only after practice');
+assert.match(runnerSource, /<ObjectiveReview mock=\{mock\} skill="listening" answers=\{answers\} \/>/, 'full exam result must keep listening evidence disabled');
 assert.doesNotMatch(runnerSource, /Antwortübersicht/, 'exam mode must not expose an answer sheet before submission');
 assert.doesNotMatch(runnerSource, /window\.print/);
 assert.match(runnerSource, /function ReadingAdPair/, 'Set 2 Anzeigen need an integrated A/B advert renderer');

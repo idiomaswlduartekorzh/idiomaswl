@@ -30,6 +30,10 @@ const listeningIntro = {
   3: 'Hören, Teil drei. Sie hören fünf Nachrichten am Telefon. Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
 };
 
+const transcriptFor = (items: Array<{ turns: AudioTurn[] }>, startNumber: number) => items
+  .map((item, index) => `Nummer ${startNumber + index}\n${item.turns.map(turn => turn.text).join('\n')}`)
+  .join('\n\n');
+
 export function buildGoetheA1Set(content: GoetheA1SetContent): MockExam {
   const prefix = `g-a1-${content.number}`;
   return {
@@ -42,19 +46,19 @@ export function buildGoetheA1Set(content: GoetheA1SetContent): MockExam {
       {
         part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche',
         instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil1.mp3?v=20260912`,
+        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil1.mp3?v=20260912`, transcript: transcriptFor(content.listening1, 1),
         questions: content.listening1.map((item, index) => ({ type: 'mcq' as const, id: `${prefix}-h${index + 1}`, part: 1, text: item.question, options: item.options, answer: item.answer })),
       },
       {
         part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen',
         instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.',
-        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil2.mp3?v=20260912`,
+        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil2.mp3?v=20260912`, transcript: transcriptFor(content.listening2, 7),
         questions: content.listening2.map((item, index) => ({ type: 'mcq' as const, id: `${prefix}-h${index + 7}`, part: 2, text: item.question, options: ['Richtig', 'Falsch'], answer: item.answer })),
       },
       {
         part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten',
         instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil3.mp3?v=20260912`,
+        audioUrl: `/audio/goethe/a1-${content.number}/hoeren-teil3.mp3?v=20260912`, transcript: transcriptFor(content.listening3, 11),
         questions: content.listening3.map((item, index) => ({ type: 'mcq' as const, id: `${prefix}-h${index + 11}`, part: 3, text: item.question, options: item.options, answer: item.answer })),
       },
       {

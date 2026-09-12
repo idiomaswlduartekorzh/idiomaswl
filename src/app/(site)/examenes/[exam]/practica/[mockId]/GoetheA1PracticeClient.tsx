@@ -587,10 +587,17 @@ function SpeakingModule({ mock, recordings, onRecording, mode, cardProgress, car
   })}</>;
 }
 
-function ObjectiveReview({ mock, skill, answers }: {
+function transcriptEvidence(section: MockSection, number: number) {
+  const marker = `Nummer ${number}\n`;
+  const block = section.transcript?.split(/\n\n/).find(item => item.startsWith(marker));
+  return block?.slice(marker.length).trim();
+}
+
+function ObjectiveReview({ mock, skill, answers, showListeningEvidence = false }: {
   mock: MockExam;
   skill: 'listening' | 'reading';
   answers: Record<string, number>;
+  showListeningEvidence?: boolean;
 }) {
   return (
     <section className={styles.reviewGroup} aria-labelledby={`review-${skill}`}>
@@ -604,6 +611,7 @@ function ObjectiveReview({ mock, skill, answers }: {
           const answered = selected !== undefined;
           const correct = selected === question.answer;
           const number = itemNumber(question);
+          const listeningEvidence = skill === 'listening' && showListeningEvidence ? transcriptEvidence(section, number) : undefined;
           return (
             <article key={question.id} className={`${styles.reviewItem} ${correct ? styles.reviewItemCorrect : styles.reviewItemWrong}`}>
               <div className={styles.reviewItemTop}>
@@ -617,6 +625,7 @@ function ObjectiveReview({ mock, skill, answers }: {
                 <div><dt>Richtige Antwort</dt><dd>{formattedOption(question, question.answer)}</dd></div>
               </dl>
               {skill === 'reading' && question.stimulus && <details className={styles.reviewEvidence}><summary>Textbeleg</summary><pre>{question.stimulus}</pre></details>}
+              {listeningEvidence && <details className={styles.reviewEvidence}><summary>Audio-Beleg · transcripción</summary><pre>{listeningEvidence}</pre></details>}
             </article>
           );
         }))}
@@ -829,7 +838,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill }: { 
             </div>
             <section className={styles.review} aria-labelledby="practice-review-title">
               <header><p>Modo guiado</p><h2 id="practice-review-title">Retroalimentación del módulo</h2><span>Esta revisión pertenece a la zona de práctica y no genera un resultado oficial del simulacro completo.</span></header>
-              {practiceSkill === 'listening' && <ObjectiveReview mock={mock} skill="listening" answers={answers} />}
+              {practiceSkill === 'listening' && <ObjectiveReview mock={mock} skill="listening" answers={answers} showListeningEvidence />}
               {practiceSkill === 'reading' && <ObjectiveReview mock={mock} skill="reading" answers={answers} />}
               {practiceSkill === 'writing' && <FormReview question={formQuestion} values={formValues} />}
               {practiceSkill === 'speaking' && <section className={styles.resultNotice}><strong>Práctica oral guardada en esta sesión</strong><p>Escucha tus grabaciones antes de repetir el módulo. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section>}

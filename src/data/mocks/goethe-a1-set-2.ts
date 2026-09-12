@@ -1,4 +1,13 @@
+import audioScript from './goethe-a1-set-2-audio.json' with { type: 'json' };
 import type { MockExam } from './types';
+
+const transcriptFor = (partId: number) => {
+  const part = audioScript.parts.find(item => item.id === partId);
+  if (!part) return '';
+  return part.items
+    .map(item => `Nummer ${item.number}\n${item.turns.map(turn => turn.text).join('\n')}`)
+    .join('\n\n');
+};
 
 // Goethe-Zertifikat A1 (Start Deutsch 1): contenido ORIGINAL de WeLearn.
 // Replica la arquitectura pública del Modellsatz/Übungssatz sin copiar sus estímulos.
@@ -12,7 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil1.mp3?v=20260912',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil1.mp3?v=20260912', transcript: transcriptFor(1),
       questions: [
         { type: 'mcq', id: 'g-a1-2-h1', part: 1, text: 'Was kostet der Rucksack heute?', options: ['24,90 €', '34,90 €', '44,90 €'], answer: 2 },
         { type: 'mcq', id: 'g-a1-2-h2', part: 1, text: 'Wann fährt der Bus ab?', options: ['8:15 Uhr', '8:30 Uhr', '8:45 Uhr'], answer: 0 },
@@ -25,7 +34,7 @@ const mock: MockExam = {
     {
       part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen',
       instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil2.mp3?v=20260912',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil2.mp3?v=20260912', transcript: transcriptFor(2),
       questions: [
         { type: 'mcq', id: 'g-a1-2-h7', part: 2, text: 'Der Eingang zum Museum ist links.', options: ['Richtig', 'Falsch'], answer: 1 },
         { type: 'mcq', id: 'g-a1-2-h8', part: 2, text: 'Die Bäckerei schließt heute um 18:30 Uhr.', options: ['Richtig', 'Falsch'], answer: 0 },
@@ -36,7 +45,7 @@ const mock: MockExam = {
     {
       part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten',
       instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.',
-      audioUrl: '/audio/goethe/a1-2/hoeren-teil3.mp3?v=20260912',
+      audioUrl: '/audio/goethe/a1-2/hoeren-teil3.mp3?v=20260912', transcript: transcriptFor(3),
       questions: [
         { type: 'mcq', id: 'g-a1-2-h11', part: 3, text: 'Wann ist der Termin?', options: ['Montag um 15 Uhr', 'Dienstag um 15 Uhr', 'Dienstag um 17 Uhr'], answer: 0 },
         { type: 'mcq', id: 'g-a1-2-h12', part: 3, text: 'Wo wartet Mila?', options: ['vor dem Bankgebäude', 'an der Bushaltestelle', 'im kleinen Stadtcafé'], answer: 1 },
