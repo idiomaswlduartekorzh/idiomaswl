@@ -487,3 +487,28 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   blueprint de fábrica deja preparados Sets 21–40 sin autorizar generación ni gastar
   créditos: piloto primero, lotes de dos, reserva de crédito del 20 % y todos los gates
   académicos/técnicos antes de ElevenLabs.
+
+### 19 de septiembre de 2026 — práctica libre IELTS Listening Sets 1–20
+
+- La práctica por secciones quedó `DESPLEGADA` desde `main`. La funcionalidad entró en
+  `2875f248f627f943ef666ad32ba359d36c5fa900` y la corrección editorial final en
+  `270295f457ba3bec3d7bdb8e37cd33a06a1fbb1f`. Vercel publicó este último commit
+  como `dpl_3ZNcUjaZrUF7DcvZBpZaQtnmBKrq`, estado `READY`, en
+  `https://www.idiomaswl.com` desde GitHub `main`.
+- `/practica/ielts/listening` explica el formato y
+  `/practica/ielts/listening/simulacros` ofrece los 20 sets. Cada runner reutiliza el
+  audio y las 40 preguntas del mock auditado, permite escuchar varias veces, pausar,
+  retroceder, adelantar y cambiar de parte sin cronómetro, puntúa en el servidor y
+  descarga un PDF A4 con preguntas y hoja de respuestas en blanco.
+- El gate de publicación permaneció en 20/20 `RELEASE_READY`, con 20/20 audios ligados
+  por hash y auditoría estricta 20/20 sin P0, P1 ni P2. Pasaron siete pruebas de la
+  práctica seccional, TypeScript, el catálogo protegido de 465 temas y el build Webpack
+  de 2.556 páginas. Las claves y transcripciones no pasan al navegador.
+- El smoke público comprobó el Set 20 con cuatro partes de diez respuestas, MP3 de
+  29:05 que avanza y se pausa; el Set 4 con partes de 10/10/7/13, corrección del
+  servidor de un intento vacío a 0/40 y banda estimada con desglose por parte. El PDF
+  del Set 4 se descargó en ocho páginas A4.
+- La instrucción de Listening Part 3 del Set 4 ahora muestra 21–27 en la práctica,
+  en el mock completo y en la página 4 del PDF, conforme a Q21–Q27. La fuente académica
+  aprobada se conserva intacta; una excepción de presentación exacta y un test sobre
+  los 20 sets evitan desactualizar la aprobación humana y detectan nuevos rangos erróneos.
