@@ -8,7 +8,7 @@ import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components
 import type { Exam } from '@/data/exams';
 import type { FormGroupQuestion, MCQQuestion, MockExam, MockSection, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
 import { GOETHE_A1_SETS_3_TO_8 } from '@/data/mocks/goethe-a1-sets-3-8-content';
-import { goethePracticeSections, goethePracticeTeilMeta, type GoethePracticeSkill, type GoethePracticeTeil } from '@/lib/goethe/practice';
+import { goethePracticeSections, goethePracticeTeilMeta, nextGoethePractice, type GoethePracticeSkill, type GoethePracticeTeil } from '@/lib/goethe/practice';
 import { formatGoetheModule } from '@/lib/goethe/scoring';
 import type { GoetheResultStatus, GoetheSubmissionReceipt } from '@/lib/goethe/submission';
 import GoetheSubmission from './GoetheSubmission';
@@ -790,6 +790,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
       : practiceSkill === 'writing'
         ? 'Completa la tarea sin una respuesta modelo; al entregar recibirás una revisión guiada, no un puntaje oficial.'
         : 'Graba tu respuesta; al entregar podrás escucharla y contrastarla con los criterios del Teil.';
+  const nextPractice = practiceSkill ? nextGoethePractice(mock.id, practiceSkill, practicePart) : undefined;
 
   useEffect(() => {
     if (phase !== 'results' || !receipt || resultStatus?.status === 'reviewed') return
@@ -929,7 +930,11 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               {practiceSkill === 'writing' && <>{formQuestion && <FormReview question={formQuestion} values={formValues} />}{hasWritingMessage && <WritingPracticeReview mock={deliveryMock} text={writing} />}</>}
               {practiceSkill === 'speaking' && <><section className={styles.resultNotice}><strong>Práctica oral disponible en esta sesión</strong><p>Escucha cada respuesta y compárala con el criterio del Teil. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section><SpeakingPracticeReview mock={deliveryMock} recordings={recordings} /></>}
             </section>
-            <div className={styles.introActions}><button className={styles.primary} onClick={restart}>Practicar de nuevo</button><Link className={styles.secondary} href={`/practica/goethe/${practiceSkill}`}>Elegir otro set o Teil</Link></div>
+            <div className={styles.introActions}>
+              {nextPractice && <Link className={styles.primary} href={nextPractice.href}>{nextPractice.label}</Link>}
+              <button className={nextPractice ? styles.secondary : styles.primary} onClick={restart}>Practicar de nuevo</button>
+              <Link className={styles.secondary} href={`/practica/goethe/${practiceSkill}`}>Elegir otro set o Teil</Link>
+            </div>
           </main>
         )}
       </div>

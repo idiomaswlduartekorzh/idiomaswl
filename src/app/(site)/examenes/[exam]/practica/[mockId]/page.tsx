@@ -59,7 +59,7 @@ export default async function PracticePage({ params, searchParams }: { params: P
       ? query.skill as GoethePracticeSkill
       : undefined;
     const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
-    return <GoetheA1PracticeClient exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
+    return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 
