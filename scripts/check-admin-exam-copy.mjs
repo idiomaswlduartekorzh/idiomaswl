@@ -23,8 +23,10 @@ for (const email of studentOnlyAccounts) {
   assert.doesNotMatch(adminRegistry, new RegExp(email.replace('.', '\\.'), 'i'), `${email} must not be in the server admin registry`)
 }
 
-assert.match(adminRoute, /isJoseAdminEmail\(user\?\.email\)[\s\S]*JoseDashboardServer/, 'Jose admins must receive the owner dashboard')
-assert.match(adminRoute, /isZhannaAdminEmail\(user\?\.email\)[\s\S]*ZhannaDashboardServer/, 'Zhanna admins must receive the owner dashboard')
+assert.match(adminRoute, /isVerifiedJoseAdminUser\(user\)[\s\S]*JoseDashboardServer/, 'verified Jose admins must receive the owner dashboard')
+assert.match(adminRoute, /isVerifiedZhannaAdminUser\(user\)[\s\S]*ZhannaDashboardServer/, 'verified Zhanna admins must receive the owner dashboard')
+assert.match(adminRegistry, /Boolean\(user\?\.email_confirmed_at\) && isJoseAdminEmail\(user\?\.email\)/, 'Jose admin access requires a confirmed email')
+assert.match(adminRegistry, /Boolean\(user\?\.email_confirmed_at\) && isZhannaAdminEmail\(user\?\.email\)/, 'Zhanna admin access requires a confirmed email')
 assert.match(ownerDashboard, /await requireAdmin\(\)/, 'the owner dashboard must re-authorize on the server')
 assert.match(ownerDashboard, /createAdminClient\(\)/, 'the owner dashboard must not depend on profile-role RLS')
 
