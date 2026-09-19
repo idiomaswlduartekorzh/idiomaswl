@@ -892,18 +892,55 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
 // ── Main component ────────────────────────────────────────────────────────────
 
 type Phase = 'intro'|'exam'|'submit'|'results';
+type FocusedSkill = 'reading' | 'writing' | 'speaking';
 
-export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+function IELTSFocusedResults({ mock, skill, ans, recordings, onRetry, onReview }: {
+  mock: MockExam;
+  skill: FocusedSkill;
+  ans: AllAnswers;
+  recordings: SpeakAudioMap;
+  onRetry: () => void;
+  onReview: () => void;
+}) {
+  const sections = getSkillSections(mock, skill).filter(section => !section.comingSoon);
+  const reading = skill === 'reading' ? scoreIeltsObjectiveAnswers(mock, ans).reading : null;
+  const writing = sections.flatMap(section => section.questions).filter((question): question is WriteQuestion => question.type === 'write');
+  const speaking = sections.flatMap(section => section.questions).filter((question): question is SpeakQuestion => question.type === 'speak');
+
+  return <div className="prac-shell prac-shell--intro"><section className="prac-intro">
+    <p className="prac-intro__eyebrow">IELTS {SKILL_LABEL[skill]} · {mock.title}</p>
+    <h1 className="prac-intro__title">Practice review</h1>
+    {reading ? <>
+      <p className="prac-intro__sub">{reading.correct}/{reading.total} correct · estimated Reading band {reading.band}. This is a WeLearn practice estimate, not an official IELTS result.</p>
+      <div className="prac-intro__sections">{sections.map((section, index) => {
+        const score = scoreIeltsObjectiveAnswers({ ...mock, sections: [section] }, ans).reading;
+        return <div key={section.part} className="prac-intro__section"><span className="prac-intro__section-part">Passage {index + 1}</span><span className="prac-intro__section-title">{section.title}</span><span className="prac-intro__section-q">{score.correct}/{score.total}</span></div>;
+      })}</div>
+    </> : null}
+    {skill === 'writing' ? <>
+      <p className="prac-intro__sub">Review your two drafts against their tasks. Word counts help you check completeness; they are not a Writing band.</p>
+      <div className="prac-intro__sections">{writing.map(question => <div key={question.id} className="prac-intro__section"><span className="prac-intro__section-part">Task {question.taskNumber}</span><span className="prac-intro__section-title">{question.text}</span><span className="prac-intro__section-q">{countWords(ans.write[question.id] ?? '')} words · target {question.minWords}</span>{ans.write[question.id]?.trim() ? <details><summary>Read your draft</summary><p style={{ whiteSpace: 'pre-wrap' }}>{ans.write[question.id]}</p></details> : null}</div>)}</div>
+    </> : null}
+    {skill === 'speaking' ? <>
+      <p className="prac-intro__sub">{speaking.filter(question => recordings[question.id]).length}/{speaking.length} prompts recorded. Return to your responses to replay the recordings while this page remains open. No automatic Speaking band is assigned.</p>
+      <div className="prac-intro__sections">{speaking.map(question => <div key={question.id} className="prac-intro__section"><span className="prac-intro__section-part">Part {question.partNumber}</span><span className="prac-intro__section-title">{question.text}</span><span className="prac-intro__section-q">{recordings[question.id] ? 'Recorded' : 'Not recorded'}</span>{ans.speak[question.id]?.trim() ? <details><summary>Read preparation notes</summary><p style={{ whiteSpace: 'pre-wrap' }}>{ans.speak[question.id]}</p></details> : null}</div>)}</div>
+    </> : null}
+    <div className="prac-intro__tips"><p className="prac-intro__tips-title">Next step</p><p>You can return to your responses or start this skill again.{skill === 'speaking' ? ' Recordings stay only in this open session.' : ''}</p></div>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}><button type="button" className="btn btn-ghost" onClick={onReview}>Review responses</button><button type="button" className="btn" onClick={onRetry}>Try again</button><Link className="btn btn-ghost" href={`/practica/ielts/${skill}/simulacros`}>Choose another set</Link></div>
+  </section></div>;
+}
+
+export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exam: Exam; mock: MockExam; practiceSkill?: FocusedSkill }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
   const [submittedStudentName, setSubmittedStudentName] = useState('');
   const contentVersion = `${getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned'}+${IELTS_CHOICE_PRESENTATION_VERSION}`;
-  const draftKey = ieltsPracticeDraftKey(mock.id, contentVersion);
+  const draftKey = ieltsPracticeDraftKey(mock.id, practiceSkill ? `${contentVersion}:${practiceSkill}` : contentVersion);
 
   const comingSoonSkills = new Set(
     mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
   );
-  const firstActiveSkill = SKILL_ORDER.find(sk=>
+  const firstActiveSkill = practiceSkill ?? SKILL_ORDER.find(sk=>
     mock.sections.some(s=>s.skill===sk && !s.comingSoon)
   ) ?? 'reading';
 
@@ -915,8 +952,9 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const [deadlineMs, setDeadlineMs] = useState<number | null>(null);
   const [draftReady, setDraftReady] = useState(false);
   const [draftRestored, setDraftRestored] = useState(false);
+  const [activePartIndex, setActivePartIndex] = useState(0);
 
-  const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
+  const skills = practiceSkill ? [practiceSkill] : SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
 
   const handlers = {
     onFill: useCallback((k:string,v:string)=>setAns(p=>({...p,fills:{...p.fills,[k]:v}})),[]),
@@ -958,9 +996,13 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       return;
     }
     setFinishError('');
+    if (practiceSkill) {
+      setPhase('results');
+      return;
+    }
     trackIeltsEvent('ielts_mock_complete', { mock_id: mock.id });
     setPhase(isReviewableIeltsMock(mock.id)?'submit':'results');
-  },[mock.id,recordingIds]);
+  },[mock.id,practiceSkill,recordingIds]);
 
   const handleRetry = useCallback(()=>{
     try { localStorage.removeItem(draftKey); } catch {}
@@ -972,6 +1014,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     setSubmittedStudentName('');
     setDeadlineMs(null);
     setDraftRestored(false);
+    setActivePartIndex(0);
     setActiveSkill(firstActiveSkill); setPhase('intro');
   },[draftKey,firstActiveSkill]);
 
@@ -981,10 +1024,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       const draft = parseIeltsPracticeDraft(serialized, mock.id, contentVersion);
       if (draft) {
         setAns(draft.answers);
-        setDeadlineMs(draft.expiresAt);
+        if (!practiceSkill) setDeadlineMs(draft.expiresAt);
         if (SKILL_ORDER.includes(draft.activeSkill)
           && mock.sections.some(section=>section.skill===draft.activeSkill&&!section.comingSoon)) {
-          setActiveSkill(draft.activeSkill);
+          setActiveSkill(practiceSkill ?? draft.activeSkill);
         }
         setDraftRestored(true);
       } else if (serialized) {
@@ -992,20 +1035,20 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       }
     } catch {}
     setDraftReady(true);
-  },[contentVersion,draftKey,mock.id]);
+  },[contentVersion,draftKey,mock.id,practiceSkill]);
 
   useEffect(()=>{
-    if (!draftReady || (phase!=='exam'&&phase!=='submit') || deadlineMs===null) return;
+    if (!draftReady || (phase!=='exam'&&phase!=='submit') || (!practiceSkill && deadlineMs===null)) return;
     try {
       localStorage.setItem(draftKey, JSON.stringify(createIeltsPracticeDraft({
         mockId: mock.id,
         contentVersion,
         activeSkill,
-        expiresAt: deadlineMs,
+        expiresAt: deadlineMs ?? 0,
         answers: ans,
       })));
     } catch {}
-  },[activeSkill,ans,contentVersion,deadlineMs,draftKey,draftReady,mock.id,phase]);
+  },[activeSkill,ans,contentVersion,deadlineMs,draftKey,draftReady,mock.id,phase,practiceSkill]);
 
   useEffect(()=>{
     if (phase!=='exam'&&phase!=='submit') return;
@@ -1018,7 +1061,12 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     window.scrollTo({top:0,left:0,behavior:'auto'});
   },[phase]);
 
+  useEffect(()=>{
+    if (practiceSkill && phase === 'exam') window.scrollTo({top:0,left:0,behavior:'auto'});
+  },[activePartIndex,phase,practiceSkill]);
+
   if (phase==='results') {
+    if (practiceSkill) return <IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} onRetry={handleRetry} onReview={() => setPhase('exam')} />;
     return (
       <div className="prac-shell">
         <IELTSResults mock={mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
@@ -1062,54 +1110,66 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   // Intro
   if (phase==='intro') {
     const totalQ=mock.sections
-      .filter(section=>!section.comingSoon)
+      .filter(section=>!section.comingSoon && (!practiceSkill || section.skill===practiceSkill))
       .reduce((total,section)=>total+countGroupAnswers(section,ans).total,0);
     return (
       <div className="prac-shell prac-shell--intro">
         <div className="prac-intro" style={{'--exam-color':exam.color} as React.CSSProperties}>
-          <p className="prac-intro__eyebrow">{exam.flag} {exam.name}</p>
-          <h1 className="prac-intro__title">{mock.title}</h1>
-          <p className="prac-intro__sub">{mock.subtitle}</p>
+          <p className="prac-intro__eyebrow">{exam.flag} {exam.name}{practiceSkill ? ` · ${SKILL_LABEL[practiceSkill]} practice` : ''}</p>
+          <h1 className="prac-intro__title">{practiceSkill ? `${SKILL_LABEL[practiceSkill]} · ${mock.title}` : mock.title}</h1>
+          <p className="prac-intro__sub">{practiceSkill ? `Practise only ${SKILL_LABEL[practiceSkill]} using the audited material from this set. Move freely between parts; there is no timer.` : mock.subtitle}</p>
           <div className="prac-intro__stats">
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">Secciones activas</span></div>
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">Respuestas</span></div>
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutos</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{practiceSkill ? (practiceSkill === 'writing' ? 2 : 3) : skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'Parts' : 'Secciones activas'}</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'Responses' : 'Respuestas'}</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{practiceSkill ? '∞' : mock.timeMinutes}</span><span className="prac-intro__stat-lbl">{practiceSkill ? 'No timer' : 'Minutos'}</span></div>
           </div>
           <div className="prac-intro__sections">
-            {mock.sections.map(sec=>(
-              <div key={sec.part} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
+            {mock.sections.filter(sec=>!practiceSkill || sec.skill===practiceSkill).flatMap(sec =>
+              practiceSkill === 'speaking'
+                ? sec.questions.filter((question): question is SpeakQuestion => question.type === 'speak').map(question => ({ section: sec, label: `Part ${question.partNumber}`, count: 1 }))
+                : [{ section: sec, label: sec.title.split('—')[1]?.trim() ?? sec.title, count: sec.questions.length }]
+            ).map(({ section: sec, label, count }) => (
+              <div key={`${sec.part}:${label}`} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
                 <span className="prac-intro__section-part">{sec.skill?SKILL_LABEL[sec.skill]:''}</span>
-                <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : (sec.title.split('—')[1]?.trim()??sec.title)}</span>
-                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : `${sec.questions.length} grupos`}</span>
+                <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : label}</span>
+                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : practiceSkill ? `${count} ${count===1 ? 'task' : 'question groups'}` : `${count} grupos`}</span>
               </div>
             ))}
           </div>
           <div className="prac-intro__tips">
-            <p className="prac-intro__tips-title">Antes de empezar</p>
-            <ul>
+            <p className="prac-intro__tips-title">{practiceSkill ? 'Before you start' : 'Antes de empezar'}</p>
+            {practiceSkill ? <ul>
+              <li>Move freely between parts. There is no timer in this practice mode.</li>
+              <li>{practiceSkill === 'reading' ? 'The passage stays beside its questions; your answers are saved in this browser.' : practiceSkill === 'writing' ? 'Your drafts are saved in this browser. The review checks word counts but does not assign a band.' : 'Record and replay each part. Recordings stay only in this open session and are not submitted.'}</li>
+              {draftRestored && <li role="status">Your text responses were restored. Speaking recordings must be made again.</li>}
+            </ul> : <ul>
               <li>Navega entre las secciones usando las pestañas superiores.</li>
               <li>Reading: los textos aparecen junto a las preguntas.</li>
               <li>Writing y Speaking: tus respuestas se envían al profesor para corrección.</li>
               {comingSoonSkills.has('listening') && <li>Listening está en construcción — próximamente con audio real.</li>}
               {draftRestored && <li role="status">Recuperamos tus respuestas y el tiempo restante. Las grabaciones de Speaking deben hacerse otra vez.</li>}
-            </ul>
+            </ul>}
           </div>
           <button onClick={()=>{
             if (!draftRestored) {
               setActiveSkill(firstActiveSkill);
-              setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
+              if (!practiceSkill) setDeadlineMs(Date.now()+mock.timeMinutes*60*1000);
             }
-            trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
+            if (!practiceSkill) trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
             setPhase('exam');
-          }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{draftRestored?'Continuar examen':'Empezar examen'}</button>
-          <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Volver a IELTS</Link>
+          }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{practiceSkill ? (draftRestored ? 'Continue practice' : 'Start practice') : (draftRestored?'Continuar examen':'Empezar examen')}</button>
+          <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>{practiceSkill ? 'Back to skill sets' : 'Volver a IELTS'}</Link>
         </div>
       </div>
     );
   }
 
   // Exam
-  const activeSections = getSkillSections(mock, activeSkill).filter(s=>!s.comingSoon);
+  const sourceSkillSections = getSkillSections(mock, activeSkill).filter(s=>!s.comingSoon);
+  const skillSections = practiceSkill === 'speaking'
+    ? sourceSkillSections.flatMap(section => section.questions.filter((question): question is SpeakQuestion => question.type === 'speak').map(question => ({ ...section, title: `Speaking — Part ${question.partNumber}`, questions: [question] })))
+    : sourceSkillSections;
+  const activeSections = practiceSkill ? skillSections.slice(activePartIndex, activePartIndex + 1) : skillSections;
   const totalAnswered = Object.values(progressMap).reduce((a,p)=>a+p.done,0);
   const totalQs = Object.values(progressMap).reduce((a,p)=>a+p.total,0);
   const unanswered = totalQs - totalAnswered;
@@ -1118,16 +1178,16 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     <div className="prac-shell prac-shell--exam">
       <header className="prac-topbar" style={{'--exam-color':exam.color} as React.CSSProperties}>
         <div className="prac-topbar__left">
-          <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">IELTS</Link>
-          <span className="prac-topbar__title">{mock.title}</span>
+          <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} className="prac-topbar__back">IELTS</Link>
+          <span className="prac-topbar__title">{mock.title}{practiceSkill ? ` · ${SKILL_LABEL[practiceSkill]}` : ''}</span>
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} answered</span>
-          <Timer totalSecs={mock.timeMinutes*60} deadlineMs={deadlineMs??undefined} onExpire={handleSubmit} />
+          {!practiceSkill && <Timer totalSecs={mock.timeMinutes*60} deadlineMs={deadlineMs??undefined} onExpire={handleSubmit} />}
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />
+      {practiceSkill ? <nav aria-label={`${SKILL_LABEL[practiceSkill]} parts`} style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', padding: '1rem', justifyContent: 'center' }}>{skillSections.map((section, index) => <button key={section.part} type="button" className={index===activePartIndex ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} aria-current={index===activePartIndex ? 'step' : undefined} onClick={() => setActivePartIndex(index)}>{practiceSkill==='writing' ? `Task ${index+1}` : `Part ${index+1}`}</button>)}</nav> : <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />}
 
       <div className="ielts-exam-body">
         {activeSkill === 'listening' && (
@@ -1142,7 +1202,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
         <div className="ielts-exam-footer">
           <p className="ielts-exam-footer__error" role="alert" aria-live="assertive">{finishError}</p>
           <div className="ielts-skill-nav__row">
-            {skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
+            {practiceSkill ? <span style={{display:'flex',flexWrap:'wrap',gap:'0.75rem'}}><button type="button" className="btn btn-ghost btn-sm" disabled={activePartIndex===0} onClick={()=>setActivePartIndex(index=>index-1)}>← Previous part</button><button type="button" className="btn btn-sm" disabled={activePartIndex===skillSections.length-1} onClick={()=>setActivePartIndex(index=>index+1)}>Next part →</button><button type="button" className="btn" onClick={handleSubmit}>Finish {SKILL_LABEL[practiceSkill]} practice</button></span> : skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
               if (sk!==activeSkill) return null;
               const prev=arr[i-1], next=arr[i+1];
               return (

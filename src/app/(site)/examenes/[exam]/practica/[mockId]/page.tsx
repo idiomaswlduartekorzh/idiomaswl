@@ -40,7 +40,12 @@ export default async function PracticePage({ params, searchParams }: { params: P
     secureIcfes={{ offerEnabled: isIcfesPassEnabled() }}
   />;
 
-  if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
+  if (slug === 'ielts') {
+    const practiceSkill = query.mode === 'practice' && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
+      ? query.skill as 'reading' | 'writing' | 'speaking'
+      : undefined;
+    return <IELTSPracticeClient exam={exam} mock={mock} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
+  }
   if (slug === 'toefl') {
     // All twenty public TOEFL sets use the audited fixed-form 2026 runner.
     return mock.format === 'toefl-2026'

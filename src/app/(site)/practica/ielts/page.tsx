@@ -3,9 +3,9 @@ import IELTSHubClient from './IELTSHubClient';
 import { CourseSchema } from '@/components/practica/EducationSchema';
 
 export const metadata: Metadata = {
-  title: 'IELTS Practice: Listening, Reading and Writing',
+  title: 'IELTS Practice: 4 Skills and 20 Sets',
   description:
-    'Practise IELTS Listening with 20 replayable sets and PDFs, plus Reading question types and explained Writing Task 1 and Task 2 exercises.',
+    'Practise IELTS Listening, Reading, Writing and Speaking independently with 20 audited sets, or take a complete mock.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ielts' },
 };
 
@@ -14,10 +14,10 @@ export default function IELTSPage() {
     <>
       <CourseSchema
         name="IELTS Practice — Academic and General Training"
-        description="Practise IELTS with 20 replayable Listening sets, printable worksheets, Reading question types, and explained Writing Task 1 and Task 2 exercises."
+        description="Practise the four IELTS skills independently with 20 audited Academic sets, or take a complete mock."
         url="https://www.idiomaswl.com/practica/ielts"
         educationalLevel="B1,B2,C1"
-        teaches="IELTS Academic, IELTS General Training, Listening, Reading, Writing, English"
+        teaches="IELTS Academic, IELTS General Training, Listening, Reading, Writing, Speaking, English"
         inLanguage="en"
       />
       <IELTSHubClient />

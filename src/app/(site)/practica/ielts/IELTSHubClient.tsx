@@ -37,8 +37,8 @@ const AVAILABLE_SKILLS = [
     id: 'reading',
     name: 'Reading',
     label: 'Reading comprehension',
-    desc: 'Study 14 question-format routes, strengthen 6 reading skills and transfer the method through guided, independent and mixed practice.',
-    count: '14 question routes · 6 skills',
+    desc: 'Practise Reading alone with 20 audited sets, or study 14 question formats and 6 transferable reading skills.',
+    count: '20 sets · 40 questions each · method lessons',
     href: '/practica/ielts/reading',
     icon: BookOpenText,
   },
@@ -46,15 +46,20 @@ const AVAILABLE_SKILLS = [
     id: 'writing',
     name: 'Writing',
     label: 'Academic writing',
-    desc: 'Build visual-data responses in Task 1 and argument-led essays in Task 2 through connected architecture, skills and full-task practice.',
-    count: 'Task 1 · Task 2 · complete practice paths',
-    href: '/practica/ielts/academic/writing',
+    desc: 'Work on Task 1 and Task 2 from any of the 20 audited sets, with no exam timer, then study the full Writing method.',
+    count: '20 sets · Task 1 + Task 2',
+    href: '/practica/ielts/writing',
     icon: PenLine,
   },
-];
-
-const COMING_SKILLS = [
-  { name: 'Speaking', label: 'Speaking production', desc: 'Personal questions, a long turn and discussion.', icon: Mic2 },
+  {
+    id: 'speaking',
+    name: 'Speaking',
+    label: 'Spoken production',
+    desc: 'Practise the three Speaking parts independently with prompts from 20 audited sets and record your responses.',
+    count: '20 sets · 3 parts · recording',
+    href: '/practica/ielts/speaking',
+    icon: Mic2,
+  },
 ];
 
 export default function IELTSHubClient() {
@@ -64,16 +69,38 @@ export default function IELTSHubClient() {
         <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span aria-hidden="true">/</span><span aria-current="page">IELTS</span></nav>
 
         <header className={styles.hero}>
-          <p className={styles.eyebrow}>IELTS practice · Format, method & transfer</p>
-          <h1>Choose the exam route. Build the skill behind it.</h1>
-          <p className={styles.heroLead}>Start with Academic or General Training, then move into Listening, Reading or Writing. Every available route separates official format from WeLearn strategy and connects explanation to real practice.</p>
+          <p className={styles.eyebrow}>IELTS practice · Choose your route</p>
+          <h1>Practise one skill or take a complete mock.</h1>
+          <p className={styles.heroLead}>Choose Listening, Reading, Writing or Speaking and work from the 20 audited Academic sets at your own pace. When you want exam conditions, take all four skills together in a complete mock.</p>
           <div className={styles.factGrid} aria-label="IELTS practice at a glance">
-            <div className={styles.fact}><strong>2 routes</strong><span>Academic and General Training pathways</span></div>
-            <div className={styles.fact}><strong>3 live skills</strong><span>Listening, Reading and Writing available now</span></div>
-            <div className={styles.fact}><strong>20+ paths</strong><span>question formats and transferable skills</span></div>
-            <div className={styles.fact}><strong>English-first</strong><span>international learning experience</span></div>
+            <div className={styles.fact}><strong>4 skills</strong><span>independent practice</span></div>
+            <div className={styles.fact}><strong>20 sets</strong><span>audited Academic material</span></div>
+            <div className={styles.fact}><strong>No timer</strong><span>in skill practice</span></div>
+            <div className={styles.fact}><strong>Full mocks</strong><span>when you are ready</span></div>
           </div>
         </header>
+
+        <section className={styles.section} aria-labelledby="ielts-mode-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Start here</p><h2 id="ielts-mode-heading">How do you want to practise today?</h2><p>Choose a single skill for focused work or complete a timed IELTS mock.</p></div>
+          <div className={styles.pathGrid}>
+            <Link href="#destrezas" className={styles.pathCard}><div className={styles.pathTop}><h3>Practice by skill</h3><span className={styles.status}>01</span></div><p>Choose Listening, Reading, Writing or Speaking. Move between parts without a timer.</p><strong>Choose a skill <ArrowRight size={16} aria-hidden="true" /></strong></Link>
+            <Link href="/examenes/ielts#practica" className={styles.pathCard}><div className={styles.pathTop}><h3>Complete mocks</h3><span className={styles.status}>02</span></div><p>Take all four skills together using the full exam flow and its report.</p><strong>Choose a full mock <ArrowRight size={16} aria-hidden="true" /></strong></Link>
+          </div>
+        </section>
+
+        <section className={styles.section} id="destrezas" aria-labelledby="skills-heading">
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Four independent skills</p><h2 id="skills-heading">One skill at a time.</h2><p>Each route uses the same audited material as the complete mock. Choose a set, practise freely, then return here to switch skills.</p></div>
+          <div className={styles.skillGrid}>
+            {AVAILABLE_SKILLS.map(({ icon: Icon, ...skill }) => (
+              <Link key={skill.id} href={skill.href} className={styles.skillCard}>
+                <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={23} aria-hidden="true" /></span><span className={styles.skillLabel}>{skill.label}</span></div>
+                <h3>{skill.name}</h3><p>{skill.desc}</p><strong>{skill.count} <ArrowRight size={16} aria-hidden="true" /></strong>
+              </Link>
+            ))}
+          </div>
+
+          <p className={styles.routeNote}><strong>Score note:</strong> Listening and Reading show estimated practice bands. Writing and Speaking provide completion review without inventing an automatic band.</p>
+        </section>
 
         <section className={styles.section} aria-labelledby="routes-heading">
           <div className={styles.sectionHeading}><p className={styles.kicker}>Choose your test route</p><h2 id="routes-heading">Academic and General Training start differently</h2><p>Choose the test you are preparing for before opening a skill. This keeps Writing Task 1 format differences and Reading contexts clear.</p></div>
@@ -95,28 +122,6 @@ export default function IELTSHubClient() {
           description="Start with the episode that matches your next task. Each one has its own exam page with the audio, an editorial accuracy note, a written study map and direct routes into practice."
         />
 
-        <section className={styles.section} aria-labelledby="skills-heading">
-          <div className={styles.sectionHeading}><p className={styles.kicker}>Choose a live skill</p><h2 id="skills-heading">Learn the method, practise it, then transfer it</h2><p>Listening, Reading and Writing now use connected practice routes with audited source material and independent work.</p></div>
-          <div className={styles.skillGrid}>
-            {AVAILABLE_SKILLS.map(({ icon: Icon, ...skill }) => (
-              <Link key={skill.id} href={skill.href} className={styles.skillCard}>
-                <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={23} aria-hidden="true" /></span><span className={styles.skillLabel}>{skill.label}</span></div>
-                <h3>{skill.name}</h3><p>{skill.desc}</p><strong>{skill.count} <ArrowRight size={16} aria-hidden="true" /></strong>
-              </Link>
-            ))}
-          </div>
-
-          <div className={styles.comingGrid} aria-label="Skills in development">
-            {COMING_SKILLS.map(({ icon: Icon, ...skill }) => (
-              <article key={skill.name} className={styles.comingCard}>
-                <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={22} aria-hidden="true" /></span><span className={styles.comingBadge}>Coming soon</span></div>
-                <h3>{skill.name}</h3><p>{skill.desc}</p>
-              </article>
-            ))}
-          </div>
-
-          <p className={styles.routeNote}><strong>Score note:</strong> WeLearn lesson and Progress Engine results measure practice performance. They do not predict or award an IELTS band.</p>
-        </section>
       </div>
     </div>
   );

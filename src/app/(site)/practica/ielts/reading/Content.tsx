@@ -208,12 +208,10 @@ export default function IELTSReadingHub() {
               Build the complete Reading system: understand every question family, train the subskills that make it work, and then transfer both into mixed practice.
             </p>
             <div className={styles.heroActions}>
-              <a href="#choose-your-route" className={styles.primaryAction}>
-                Choose your route <ArrowRight size={17} aria-hidden="true" />
-              </a>
-              <Link href="/practica/ielts/reading/habilidades" className={styles.secondaryAction}>
-                Start with reading skills
+              <Link href="/practica/ielts/reading/simulacros" className={styles.primaryAction}>
+                Choose one of 20 Reading sets <ArrowRight size={17} aria-hidden="true" />
               </Link>
+              <a href="#choose-your-route" className={styles.secondaryAction}>Study the Reading method</a>
             </div>
           </div>
 
@@ -475,6 +473,7 @@ export default function IELTSReadingHub() {
         <section className={styles.finalCta} aria-labelledby="next-heading">
           <div><p className={styles.kicker}>Your next session</p><h2 id="next-heading">Build the map before you race the clock.</h2></div>
           <div className={styles.finalActions}>
+            <Link href="/practica/ielts/reading/simulacros">Choose one of 20 Reading sets <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link href="/practica/ielts/reading/habilidades/skimming">Start with Skimming <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link href="/practica/ielts/reading/tipos-de-preguntas">Browse question types</Link>
           </div>

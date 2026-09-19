@@ -21,4 +21,12 @@ La prueba también coteja los rangos que ve el estudiante en las instrucciones c
 
 Para Sets 21–40 se registra primero el mock completo mediante el blueprint de fábrica. Cuando el set supera sus auditorías de Listening, Reading, Writing, Speaking, claves, UX y evidencia, se añade el identificador al catálogo seccional. La práctica y el PDF aparecen desde la misma fuente; no se copian preguntas ni se crea una segunda clave.
 
-Reading, Writing y Speaking deben seguir el mismo patrón: adaptador público sin material de corrección, estado versionado, evaluación en servidor cuando aplique, PDF estudiantil y prueba de paridad contra el mock completo.
+## Reading, Writing y Speaking
+
+La portada `/practica/ielts#destrezas` separa las cuatro habilidades. Cada biblioteca de Reading, Writing y Speaking muestra `set-1` a `set-20` y abre el mock canónico con `mode=practice&skill=...`; el mock completo conserva su ruta sin parámetros y su cronómetro. La práctica enfocada navega libremente entre los tres pasajes de Reading, las dos tareas de Writing o las tres partes de Speaking. Usa claves de borrador distintas del examen completo y no obliga a enviar una entrega integral para terminar la habilidad.
+
+Reading presenta una banda estimada a partir de sus 40 respuestas y un desglose por pasaje. Writing muestra los dos borradores y sus extensiones; Speaking permite grabar y reproducir durante la sesión. Ninguna de estas dos últimas habilidades presenta una banda automática ni afirma que la práctica se haya enviado al profesor. Las grabaciones de Speaking no se guardan en `localStorage` y desaparecen al cerrar la sesión.
+
+`test:ielts-focused-practice` comprueba para los 20 sets los tres pasajes y 40 respuestas de Reading con una ruta 40/40, las dos tareas de Writing con el visual existente de Task 1 y los tres prompts de Speaking. Se ejecuta dentro de `check:ielts-sectional-listening`, que ya forma parte de `check:ielts-harness`.
+
+La ampliación editorial futura seguirá el principio de fuente única: auditar primero el set completo y después exponerlo en las bibliotecas. Listening mantiene además su contrato reforzado de scoring privado y PDF estudiantil. Para los otros módulos, si se necesita descarga de hojas o corrección privada al estilo Listening, se añadirá un adaptador específico antes de habilitar esas funciones; el modo actual no promete esas prestaciones.
