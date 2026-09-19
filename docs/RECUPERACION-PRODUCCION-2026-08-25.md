@@ -602,7 +602,7 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 
 - El cambio funcional quedó en `main` con
   `deef5f87d537c94d08db95f34a787f14d8180ecd`. Vercel lo publicó como
-  `dpl_8yvUvt5XfiuKcz4nBMmiUa6But9B`; el contexto de GitHub terminó en
+  `dpl_J4ATo9rziFxV9SssvzFe8oDLSjeJ`; el contexto de GitHub terminó en
   `success` y `https://www.idiomaswl.com` sirvió la nueva API de Reading.
 - El runner del mock completo ya no envía claves ni transcripciones antes de la
   entrega. Tras verificar el token y los audios, el servidor entrega el mock de
