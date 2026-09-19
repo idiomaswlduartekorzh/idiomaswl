@@ -47,3 +47,15 @@ test('public ICFES copy does not promise held mocks or stale inventory counts', 
     assert.doesNotMatch(source, /23 prácticas propias|23 recorridos|34 recursos|62 rutas/, file);
   }
 });
+
+test('release manifest records the editorial and rights hold truthfully', () => {
+  const manifest = JSON.parse(readFileSync('src/data/icfes/own-mock-expansion-manifest.json', 'utf8'));
+  for (const id of heldIds) {
+    const record = manifest.mocks.find((mock) => mock.mockId === id);
+    assert.ok(record, id);
+    assert.equal(record.provenance.kind, 'unverified-draft', id);
+    assert.equal(record.provenance.rights, 'provenance-pending', id);
+    assert.equal(record.editorial.status, 'blocked', id);
+    assert.equal(record.releaseStatus, 'draft', id);
+  }
+});

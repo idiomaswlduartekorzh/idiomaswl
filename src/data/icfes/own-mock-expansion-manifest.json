@@ -226,9 +226,9 @@
       "route": "/examenes/icfes/practica/mock-21",
       "contentVersion": "2026-09-08.1",
       "contentHash": "7e8e5cbda8fa164046dfae443e72da2ee05ed7312e61f2b75873b4f724f53e9d",
-      "provenance": { "kind": "welearn-original", "owner": "Idiomas WeLearn", "rights": "owned-content", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
-      "editorial": { "status": "approved", "reviewedAt": "2026-09-08", "reviewerRoles": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
-      "releaseStatus": "release-candidate"
+      "provenance": { "kind": "unverified-draft", "owner": "Idiomas WeLearn", "rights": "provenance-pending", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
+      "editorial": { "status": "blocked", "reviewedAt": null, "reviewerRoles": [], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
+      "releaseStatus": "draft"
     },
     {
       "mockId": "mock-22",
@@ -236,9 +236,9 @@
       "route": "/examenes/icfes/practica/mock-22",
       "contentVersion": "2026-09-08.1",
       "contentHash": "9df53cbac3f04fb3493566f7f1c1f0dde9243b9fe3fe068dd366d7c5b48f22e1",
-      "provenance": { "kind": "welearn-original", "owner": "Idiomas WeLearn", "rights": "owned-content", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
-      "editorial": { "status": "approved", "reviewedAt": "2026-09-08", "reviewerRoles": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
-      "releaseStatus": "release-candidate"
+      "provenance": { "kind": "unverified-draft", "owner": "Idiomas WeLearn", "rights": "provenance-pending", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
+      "editorial": { "status": "blocked", "reviewedAt": null, "reviewerRoles": [], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
+      "releaseStatus": "draft"
     },
     {
       "mockId": "mock-23",
@@ -246,9 +246,9 @@
       "route": "/examenes/icfes/practica/mock-23",
       "contentVersion": "2026-09-08.1",
       "contentHash": "45bb84638e7316cb425faaccc30a3ffad432312516469abf05a3e64f00983b6b",
-      "provenance": { "kind": "welearn-original", "owner": "Idiomas WeLearn", "rights": "owned-content", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
-      "editorial": { "status": "approved", "reviewedAt": "2026-09-08", "reviewerRoles": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
-      "releaseStatus": "release-candidate"
+      "provenance": { "kind": "unverified-draft", "owner": "Idiomas WeLearn", "rights": "provenance-pending", "authoringRecord": "artifacts/icfes-audit/icfes-editorial-multiagent-2026-09-08.json" },
+      "editorial": { "status": "blocked", "reviewedAt": null, "reviewerRoles": [], "remediationRecord": "artifacts/icfes-audit/icfes-editorial-remediation-2026-09-08.json" },
+      "releaseStatus": "draft"
     }
   ]
 }

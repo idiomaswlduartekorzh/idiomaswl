@@ -46,7 +46,7 @@ for (const route of ['diagnostico', 'plan-de-estudio', 'pregunta-del-dia', 'voca
   assert.ok(sitemap.includes(route), `Falta ${route} en sitemap`);
 }
 assert.match(sitemap, /GUIDED_WORKBOOK_IDS\.map/, 'El sitemap debe incluir todos los cuadernillos guiados desde el registro');
-assert.match(sitemap, /GUIDED_MOCK_IDS\.map/, 'El sitemap debe incluir los 23 mocks guiados desde el registro');
+assert.match(sitemap, /GUIDED_MOCK_IDS\.map/, 'El sitemap debe incluir los mocks guiados publicados desde el registro');
 
 for (const table of ['icfes_practice_sessions', 'icfes_practice_attempts', 'icfes_skill_mastery', 'icfes_error_queue']) {
   assert.match(migration, new RegExp(`ALTER TABLE ${table} ENABLE ROW LEVEL SECURITY`), `${table} debe habilitar RLS`);
@@ -82,13 +82,14 @@ assert.doesNotMatch(publicTruth, /solo evalúa comprensión de lectura/i);
 assert.match(examCatalog, /totalQuestions: 55/, 'La ficha pública ICFES debe declarar 55 preguntas para 2026-2');
 assert.match(examCatalog, /Parte 1[\s\S]{0,180}Relacionar descripciones con palabras/, 'Parte 1 debe ser descripciones y palabras');
 assert.match(examCatalog, /Parte 2[\s\S]{0,180}Interpretar avisos/, 'Parte 2 debe ser avisos');
-assert.equal((examCatalog.match(/Práctica propia abreviada · 45 preguntas/g) ?? []).length, 23, 'Los 23 mocks propios deben declararse abreviados');
+assert.equal((examCatalog.match(/Práctica propia abreviada · 45 preguntas/g) ?? []).length, 20, 'Solo los 20 mocks publicados deben declararse abreviados');
 assert.doesNotMatch(examGuide, /empieza con avisos e instrucciones cortas, sigue con vocabulario/i, 'La guía no debe invertir Partes 1 y 2');
 assert.doesNotMatch(blog, /81\s*[–-]\s*100\s*→\s*Nivel B2/i, 'El blog no debe reportar B2 como nivel de Saber 11');
 
 assert.match(legacyNormalizer, /'matching-grid': 1/, 'El normalizador debe mapear vocabulario a Parte 1');
 assert.match(legacyNormalizer, /'notices-grid': 2/, 'El normalizador debe mapear avisos a Parte 2');
-assert.match(mockRegistry, /normalizeIcfesMock\(mock\)/, 'El registro debe normalizar los 23 mocks heredados');
+assert.match(mockRegistry, /normalizeIcfesMock\(mock\)/, 'El registro debe normalizar los mocks heredados');
+assert.match(mockRegistry, /\['mock-21', 'mock-22', 'mock-23'\]\.includes\(mockId\)\) return null/, 'El bloqueo editorial debe negar las tres rutas y APIs por ID');
 const currentPartSeven = read('src/data/mocks/icfes-current-part-seven.ts');
 const editorialAudit = read('scripts/audit-icfes-guided-editorial.mjs');
 const inventoryAudit = read('scripts/audit-icfes-inventory.mjs');
@@ -96,7 +97,7 @@ assert.equal((currentPartSeven.match(/'mock-(?:0[1-9]|1[0-9]|2[0-3])': section/g
 assert.equal((currentPartSeven.match(/\.map\(clozeQuestion\)/g) ?? []).length, 23, 'Cada Parte 7 vigente debe construir diez espacios de cloze');
 assert.match(legacyNormalizer, /CURRENT_PART_SEVEN/, 'Examen y guiado deben compartir la Parte 7 vigente');
 assert.match(editorialAudit, /assert\.equal\(report\.verdict, 'approved'/, 'La auditoría editorial debe bloquear el flujo si no aprueba');
-assert.match(inventoryAudit, /catalogResources:\s*33/, 'El inventario debe cubrir los 33 recursos del catálogo ICFES');
+assert.match(inventoryAudit, /catalogResources:\s*30/, 'El inventario debe cubrir los 30 recursos publicados del catálogo ICFES');
 assert.match(inventoryAudit, /allInventoryResources:\s*resources\.length/, 'El inventario debe incluir el entrenamiento guiado adicional');
 
 assert.match(studyPlan, /repaso-errores/, 'Las semanas de repaso deben enlazar a la cola de errores');
@@ -117,16 +118,16 @@ assert.match(guided55Page, /No es un cuadernillo oficial ni predice tu puntaje I
 assert.match(errorReviewPage, /GUIDED_SIMULACRO_2026_QUESTIONS/, 'Los errores del simulacro guiado deben entrar a la cola de repaso');
 assert.match(questions, /bookstore[\s\S]{0,500}library/, 'Borrow debe contrastar library con el distractor plausible bookstore');
 assert.match(questions, /Library o bookstore/, 'La microlección de borrow debe explicar la distinción que aparece en las opciones');
-assert.match(guidedRegistry, /'mock-22', 'mock-23'/, 'Los veintitrés mocks deben ofrecer modo guiado');
+assert.doesNotMatch(guidedRegistry, /'mock-21'|'mock-22'|'mock-23'/, 'Los tres borradores retenidos no deben ofrecer modo guiado');
 assert.match(guidedMocks, /throat: 'la garganta: el conducto detrás de la boca/, 'Throat debe tener una explicación semántica concreta');
 assert.match(guidedMocks, /ankle: 'el tobillo: la articulación que une el pie con la pierna'/, 'Ankle debe explicar por qué no es throat');
 assert.doesNotMatch(guidedMocks, /trap: 'pista parcial'/, 'El adaptador no debe inventar la misma etiqueta de trampa para todos los distractores');
 assert.match(guidedMockPage, /mismas 45 preguntas del modo examen/, 'La página guiada debe explicar que ambos modos comparten banco');
-assert.match(errorReviewPage, /GUIDED_MOCK_IDS\.flatMap\(getGuidedMockQuestions\)/, 'Los errores de los 23 mocks deben entrar al repaso');
+assert.match(errorReviewPage, /GUIDED_MOCK_IDS\.flatMap\(getGuidedMockQuestions\)/, 'Los errores de los mocks publicados deben entrar al repaso');
 for (const mockId of ['01', '02', '03']) {
   const mockSource = read(`src/data/mocks/icfes-mock-${mockId}.ts`);
   const machineScored = (mockSource.match(/type: '(?:mcq|dialog)'/g) ?? []).length;
   assert.equal(machineScored, 45, `El mock-${mockId} debe conservar sus 45 preguntas adaptables`);
 }
 
-console.log('Superhub ICFES íntegro: formato 2026-2, 7 partes progresivas, 110 demostraciones, 1.235 preguntas en experiencias guiadas, rutas de refuerzo, SEO y RLS verificados.');
+console.log('Superhub ICFES íntegro con 20 mocks propios publicados y 3 borradores retenidos: formato 2026-2, 7 partes progresivas, rutas de refuerzo, SEO y RLS verificados.');

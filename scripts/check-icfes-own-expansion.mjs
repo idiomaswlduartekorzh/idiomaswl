@@ -5,6 +5,7 @@ import { existsSync, readFileSync } from 'node:fs';
 const MANIFEST_PATH = 'src/data/icfes/own-mock-expansion-manifest.json';
 const SCHEMA_PATH = 'src/data/icfes/own-mock-expansion.schema.json';
 const EXPECTED_IDS = Array.from({ length: 23 }, (_, index) => `mock-${String(index + 1).padStart(2, '0')}`);
+const HELD_IDS = new Set(['mock-21', 'mock-22', 'mock-23']);
 const EXPECTED_PARTS = [1, 2, 3, 4, 5, 6, 7];
 const REQUIRED_GATES = [
   'schema-and-manifest',
@@ -46,16 +47,22 @@ let totalQuestions = 0;
 const normalize = (value) => String(value ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLowerCase();
 
 for (const record of manifest.mocks) {
+  const held = HELD_IDS.has(record.mockId);
   assert.equal(record.modulePath, `src/data/mocks/icfes-${record.mockId}.ts`);
   assert.equal(record.route, `/examenes/icfes/practica/${record.mockId}`);
   assert.match(record.contentVersion, /^2026-09-08\.[1-9][0-9]*$/);
   assert.match(record.contentHash, /^[a-f0-9]{64}$/);
-  assert.equal(record.provenance.kind, 'welearn-original');
+  assert.equal(record.provenance.kind, held ? 'unverified-draft' : 'welearn-original');
   assert.equal(record.provenance.owner, 'Idiomas WeLearn');
-  assert.equal(record.provenance.rights, 'owned-content');
-  assert.equal(record.editorial.status, 'approved');
-  assert.deepEqual(record.editorial.reviewerRoles, ['english-language-specialist', 'icfes-format-reviewer', 'editorial-adjudicator']);
-  assert.ok(['release-candidate', 'published'].includes(record.releaseStatus));
+  assert.equal(record.provenance.rights, held ? 'provenance-pending' : 'owned-content');
+  assert.equal(record.editorial.status, held ? 'blocked' : 'approved');
+  assert.deepEqual(record.editorial.reviewerRoles, held ? [] : ['english-language-specialist', 'icfes-format-reviewer', 'editorial-adjudicator']);
+  if (held) {
+    assert.equal(record.editorial.reviewedAt, null);
+    assert.equal(record.releaseStatus, 'draft');
+  } else {
+    assert.ok(['release-candidate', 'published'].includes(record.releaseStatus));
+  }
   assert.ok(existsSync(record.provenance.authoringRecord), `${record.mockId}: falta authoringRecord`);
   assert.ok(existsSync(record.editorial.remediationRecord), `${record.mockId}: falta remediationRecord`);
 
@@ -96,22 +103,29 @@ for (const record of manifest.mocks) {
     exactContent.set(fingerprint, globalId);
   }
 
-  assert.match(catalog, new RegExp(`id: '${record.mockId}'`), `${record.mockId}: falta en catálogo.`);
+  if (held) {
+    assert.doesNotMatch(catalog, new RegExp(`id: '${record.mockId}'`), `${record.mockId}: borrador retenido visible en catálogo.`);
+    assert.doesNotMatch(guidedRegistry, new RegExp(`'${record.mockId}'`), `${record.mockId}: borrador retenido visible en guiado.`);
+  } else {
+    assert.match(catalog, new RegExp(`id: '${record.mockId}'`), `${record.mockId}: falta en catálogo.`);
+    assert.match(guidedRegistry, new RegExp(`'${record.mockId}'`), `${record.mockId}: falta en registro guiado.`);
+  }
   assert.match(registry, new RegExp(`'icfes:${record.mockId}'`), `${record.mockId}: falta en registro runtime.`);
-  assert.match(guidedRegistry, new RegExp(`'${record.mockId}'`), `${record.mockId}: falta en registro guiado.`);
 }
 
 assert.equal(totalQuestions, 1035);
 assert.match(practicePage, /mock=\{sanitizeIcfesMock\(mock\)\}/, 'La ruta pública debe sanitizar el mock en el servidor.');
 assert.match(sanitizer, /delete publicQuestion\.answer/, 'El payload público debe eliminar answer.');
 assert.match(sanitizer, /insights: undefined/, 'El payload público debe eliminar insights.');
+assert.match(registry, /\['mock-21', 'mock-22', 'mock-23'\]\.includes\(mockId\)\) return null/, 'El registro debe negar los borradores retenidos por ID.');
 
 console.log(JSON.stringify({
-  verdict: 'approved',
+  verdict: 'structurally-valid-with-editorial-hold',
   schemaVersion: manifest.schemaVersion,
   mocks: manifest.mocks.length,
   questions: totalQuestions,
   partsPerMock: EXPECTED_PARTS.length,
   exactDuplicateQuestions: 0,
+  heldMocks: HELD_IDS.size,
   qualityGates: REQUIRED_GATES.length,
 }, null, 2));

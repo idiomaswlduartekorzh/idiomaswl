@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const OWN_IDS = Array.from({ length: 23 }, (_, index) => `mock-${String(index + 1).padStart(2, '0')}`);
+const HELD_IDS = new Set(['mock-21', 'mock-22', 'mock-23']);
 const ownModules = await Promise.all(OWN_IDS.map((id) => import(`../src/data/mocks/icfes-${id}.ts`)));
 const { SIMULACROS } = await import('../src/data/mocks/icfes-simulacros.ts');
 
@@ -20,19 +21,20 @@ const guidedWorkbookExclusions = guidedRegistrySource.match(/GUIDED_WORKBOOK_EXC
 
 const ownResources = ownModules.map(({ default: mock }) => {
   const questionCount = mock.sections.reduce((total, section) => total + section.questions.length, 0);
+  const held = HELD_IDS.has(mock.id);
   return {
     id: mock.id,
     family: 'saber-11',
-    provenance: 'welearn-original',
+    provenance: held ? 'unverified-draft' : 'welearn-original',
     year: null,
     grade: 11,
     format: 'practice-abbreviated-45',
     questions: questionCount,
     parts: [...new Set(mock.sections.map((section) => section.part))].sort(),
-    guidedEligible: true,
-    guidedStatus: guidedIds.includes(mock.id) ? 'pilot-approved' : 'pending-editorial-batch',
-    route: `/examenes/icfes/practica/${mock.id}`,
-    guidedRoute: `/examenes/icfes/practica/${mock.id}/guiado`,
+    guidedEligible: !held,
+    guidedStatus: held ? 'editorial-hold' : guidedIds.includes(mock.id) ? 'pilot-approved' : 'pending-editorial-batch',
+    route: held ? null : `/examenes/icfes/practica/${mock.id}`,
+    guidedRoute: held ? null : `/examenes/icfes/practica/${mock.id}/guiado`,
   };
 });
 
@@ -72,16 +74,17 @@ const guided55 = {
 
 const resources = [...ownResources, ...attributedResources, guided55];
 const duplicateIds = resources.filter((resource, index) => resources.findIndex(({ id }) => id === resource.id) !== index).map(({ id }) => id);
-const catalogMissing = [...ownResources, ...attributedResources].filter(({ id }) => !catalogIds.includes(id)).map(({ id }) => id);
+const catalogMissing = [...ownResources, ...attributedResources].filter(({ id }) => !HELD_IDS.has(id) && !catalogIds.includes(id)).map(({ id }) => id);
 const registryMissing = ownResources.filter(({ id }) => !registryIds.includes(id)).map(({ id }) => id);
 const attributedCountMismatches = attributedResources.filter(({ questions, declaredQuestions }) => questions !== declaredQuestions).map(({ id }) => id);
 const fileIds = ownResources.map(({ id }) => id);
 
 const checks = [
-  { id: 'own-files', pass: fileIds.length === 23, evidence: `${fileIds.length}/23 módulos propios` },
+  { id: 'own-files', pass: fileIds.length === 23, evidence: `${fileIds.length}/23 módulos locales; 3 retenidos sin procedencia aprobada` },
   { id: 'own-registry', pass: registryMissing.length === 0 && registryIds.length === 23, evidence: `${registryIds.length}/23 registrados; faltan: ${registryMissing.join(', ') || 'ninguno'}` },
-  { id: 'catalog-resources', pass: catalogIds.length === 33, evidence: `${catalogIds.length}/33 recursos en catálogo` },
+  { id: 'catalog-resources', pass: catalogIds.length === 30, evidence: `${catalogIds.length}/30 recursos publicados en catálogo` },
   { id: 'catalog-parity', pass: catalogMissing.length === 0, evidence: `Faltantes: ${catalogMissing.join(', ') || 'ninguno'}` },
+  { id: 'editorial-hold', pass: [...HELD_IDS].every((id) => !catalogIds.includes(id) && !guidedIds.includes(id)), evidence: 'Mocks 21–23 fuera de catálogo y guiado' },
   { id: 'attributed-export', pass: attributedResources.length === 10, evidence: `${attributedResources.length}/10 bancos atribuidos exportados` },
   { id: 'attributed-question-counts', pass: attributedCountMismatches.length === 0, evidence: `Desajustes: ${attributedCountMismatches.join(', ') || 'ninguno'}` },
   { id: 'unique-inventory-ids', pass: duplicateIds.length === 0, evidence: `Duplicados: ${duplicateIds.join(', ') || 'ninguno'}` },
@@ -94,8 +97,9 @@ const report = {
   generatedAt: new Date().toISOString(),
   verdict: failed.length ? 'blocked' : 'approved',
   totals: {
-    catalogResources: 33,
+    catalogResources: 30,
     ownMocks: ownResources.length,
+    heldMocks: HELD_IDS.size,
     attributedSaber11: attributedResources.filter(({ family }) => family === 'saber-11').length,
     relatedIcfes: attributedResources.filter(({ family }) => family !== 'saber-11').length,
     standaloneGuided: 1,

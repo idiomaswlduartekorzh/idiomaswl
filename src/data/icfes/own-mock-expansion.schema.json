@@ -45,9 +45,9 @@
             "additionalProperties": false,
             "required": ["kind", "owner", "rights", "authoringRecord"],
             "properties": {
-              "kind": { "const": "welearn-original" },
+              "kind": { "enum": ["welearn-original", "unverified-draft"] },
               "owner": { "const": "Idiomas WeLearn" },
-              "rights": { "const": "owned-content" },
+              "rights": { "enum": ["owned-content", "provenance-pending"] },
               "authoringRecord": { "type": "string", "minLength": 1 }
             }
           },
@@ -56,15 +56,15 @@
             "additionalProperties": false,
             "required": ["status", "reviewedAt", "reviewerRoles", "remediationRecord"],
             "properties": {
-              "status": { "const": "approved" },
-              "reviewedAt": { "format": "date" },
+              "status": { "enum": ["approved", "blocked"] },
+              "reviewedAt": { "anyOf": [{ "format": "date" }, { "type": "null" }] },
               "reviewerRoles": {
-                "const": ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"]
+                "enum": [[], ["english-language-specialist", "icfes-format-reviewer", "editorial-adjudicator"]]
               },
               "remediationRecord": { "type": "string", "minLength": 1 }
             }
           },
-          "releaseStatus": { "enum": ["release-candidate", "published"] }
+          "releaseStatus": { "enum": ["draft", "release-candidate", "published"] }
         }
       }
     }
