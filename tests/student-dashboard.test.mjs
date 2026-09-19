@@ -83,7 +83,7 @@ test('server loader scopes every private product query to the authenticated iden
 test('admin student files and assignments remain server-authorized', () => {
   const page = read('src/app/(site)/dashboard/admin/estudiantes/[studentId]/page.tsx');
   const actions = read('src/lib/actions/studentAssignments.ts');
-  const migration = read('supabase/migrations/20260912190000_student_assignments.sql');
+  const migration = read('supabase/migrations/20260919195421_student_assignments.sql');
   const fulfillment = read('src/lib/course-pricing/fulfillment.server.ts');
   assert.match(page, /await requireAdmin\(\)/);
   assert.match(page, /Curva de aprendizaje/);
@@ -109,7 +109,7 @@ test('preview route is unavailable in production', () => {
 
 test('completed submissions are linked to paid access without trusting the browser', () => {
   const access = read('src/lib/xpress-commerce/submission-access.server.ts');
-  const atomic = read('supabase/migrations/20260912191000_xpress_submission_access_atomic.sql');
+  const atomic = read('supabase/migrations/20260919195432_xpress_submission_access_atomic.sql');
   assert.match(access, /rpc\('record_xpress_submission_access'/);
   assert.match(access, /throw new Error\('xpress_submission_access_unavailable'\)/);
   assert.match(atomic, /id=p_submission and user_id=p_user and exam_slug=p_exam/);
@@ -130,7 +130,7 @@ test('completed submissions are linked to paid access without trusting the brows
 });
 
 test('the additive migration preserves old purchases and enforces the new prices privately', () => {
-  const migration = read('supabase/migrations/20260912150000_xpress_personalized_feedback_prices.sql');
+  const migration = read('supabase/migrations/20260919195406_xpress_personalized_feedback_prices.sql');
   assert.match(migration, /xpress-2026-09-12-v4/);
   assert.match(migration, /xpress-2026-09-12-v5/);
   assert.match(migration, /offer_version='xpress-2026-09-12-v5'[\s\S]*?offer_id='exam-single'[\s\S]*?amount_in_cents=1290000/);
@@ -151,7 +151,7 @@ test('the additive migration preserves old purchases and enforces the new prices
 });
 
 test('the 24-hour tutor review is assigned privately and shown only after delivery', () => {
-  const migration = read('supabase/migrations/20260912192000_xpress_feedback_review_workflow.sql');
+  const migration = read('supabase/migrations/20260919195444_xpress_feedback_review_workflow.sql');
   const action = read('src/lib/actions/xpressReviews.ts');
   const queue = read('src/app/(site)/dashboard/admin/revisiones-xpress/page.tsx');
   const loader = read('src/lib/student-dashboard/data.server.ts');

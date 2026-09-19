@@ -14,10 +14,10 @@ const recurringMigration = new URL('../supabase/migrations/20260912110000_xpress
 const recurringIndexesMigration = new URL('../supabase/migrations/20260912113000_xpress_recurring_indexes.sql', import.meta.url);
 const recurringFinalizationMigration = new URL('../supabase/migrations/20260912114500_xpress_finalize_cancellations.sql', import.meta.url);
 const recurringCancelGuardMigration = new URL('../supabase/migrations/20260912115500_xpress_cancel_guard.sql', import.meta.url);
-const dashboardMigration = new URL('../supabase/migrations/20260912150000_xpress_personalized_feedback_prices.sql', import.meta.url);
-const assignmentsMigration = new URL('../supabase/migrations/20260912190000_student_assignments.sql', import.meta.url);
-const atomicAccessMigration = new URL('../supabase/migrations/20260912191000_xpress_submission_access_atomic.sql', import.meta.url);
-const reviewWorkflowMigration = new URL('../supabase/migrations/20260912192000_xpress_feedback_review_workflow.sql', import.meta.url);
+const dashboardMigration = new URL('../supabase/migrations/20260919195406_xpress_personalized_feedback_prices.sql', import.meta.url);
+const assignmentsMigration = new URL('../supabase/migrations/20260919195421_student_assignments.sql', import.meta.url);
+const atomicAccessMigration = new URL('../supabase/migrations/20260919195432_xpress_submission_access_atomic.sql', import.meta.url);
+const reviewWorkflowMigration = new URL('../supabase/migrations/20260919195444_xpress_feedback_review_workflow.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();

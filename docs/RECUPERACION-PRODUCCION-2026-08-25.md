@@ -529,8 +529,8 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   autodidactas no admiten tareas. La ficha administrativa exige la lista autorizada de
   administradores y reúne progreso, historial, actividad y creación o cancelación de
   asignaciones.
-- La migración `20260912190000_student_assignments.sql` todavía no se ha aplicado en el
-  Supabase productivo. La validación local pasó 10/10 pruebas funcionales, la prueba
+- La migración `20260919195421_student_assignments.sql` se aplicó en el
+  Supabase productivo el 19 de septiembre. La validación local pasó 10/10 pruebas funcionales, la prueba
   transaccional de pagos y RLS, TypeScript, ESLint, el guardián de 465 temas y 4/4
   recorridos Chromium. El build Webpack también quedó verde antes de esta revisión final.
 
@@ -558,12 +558,12 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - Un alumno que solo compró clases ve su plan, la siguiente asignación, prácticas
   completadas y días de actividad en el mismo diseño, sin tarjetas de suscripción Xpress
   ni simulacros a cero. La ruta antigua de progreso se redirige al panel unificado.
-- Las migraciones `20260912150000_xpress_personalized_feedback_prices.sql`,
-  `20260912190000_student_assignments.sql`,
-  `20260912191000_xpress_submission_access_atomic.sql` y
-  `20260912192000_xpress_feedback_review_workflow.sql` **no están aplicadas** en el
-  Supabase productivo (lista comprobada el 19 de septiembre). No desplegar el código
-  que las consume antes de aplicarlas en orden.
+- Las migraciones `20260919195406_xpress_personalized_feedback_prices.sql`,
+  `20260919195421_student_assignments.sql`,
+  `20260919195432_xpress_submission_access_atomic.sql` y
+  `20260919195444_xpress_feedback_review_workflow.sql` se aplicaron en ese orden al
+  Supabase productivo el 19 de septiembre; la lista remota y las tablas y función
+  transaccional se verificaron antes de integrar el código.
 - El asesor de seguridad de Supabase informó que la protección contra contraseñas
   filtradas está desactivada. Requiere activarse en la configuración de Auth; no depende
   de estas migraciones. Los avisos de tablas de pagos sin políticas RLS corresponden a
