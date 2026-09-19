@@ -598,6 +598,29 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   Speaking Set 1 con tres partes sin cronómetro, y el mock completo Set 1
   con sus cuatro secciones y 164 minutos.
 
+### 19 de septiembre de 2026 — cierre de seguridad y UX IELTS
+
+- El cambio funcional quedó en `main` con
+  `deef5f87d537c94d08db95f34a787f14d8180ecd`. Vercel lo publicó como
+  `dpl_8yvUvt5XfiuKcz4nBMmiUa6But9B`; el contexto de GitHub terminó en
+  `success` y `https://www.idiomaswl.com` sirvió la nueva API de Reading.
+- El runner del mock completo ya no envía claves ni transcripciones antes de la
+  entrega. Tras verificar el token y los audios, el servidor entrega el mock de
+  revisión. Reading por habilidad puntúa en el servidor, valida versión y
+  campos de respuesta, y solo devuelve aciertos y banda estimada.
+- Los 20 payloads sin claves, los 20 contratos de Reading 40/40 y la identidad
+  entre mock servido y mock de revisión pasaron la nueva prueba del harness.
+  También pasaron el catálogo protegido, TypeScript, el build de producción
+  Webpack, los checks de GitHub y `npm audit` con cero vulnerabilidades tras
+  actualizar Next.js a 16.3.5 y sus dependencias transitivas.
+- El smoke público comprobó las cuatro bibliotecas Sets 1–20; controles de
+  Listening; navegación y revisión de Reading, la imagen y el editor de Writing,
+  y las partes y revisión de Speaking;
+  el mock completo; Reading Set 20 en móvil; ausencia de claves en HTML; rechazo
+  de versión obsoleta y de token de entrega inválido. La API de Reading devolvió
+  40/40 y banda 9 en Sets 1 y 20 con solicitudes cotejadas localmente. No se
+  creó una entrega real con datos de contacto ni audio de prueba.
+
 ### 19 de septiembre de 2026 — registro, pagos Xpress y panel del estudiante
 
 - El panel privado, la ficha administrativa, las asignaciones y el acceso persistente a
