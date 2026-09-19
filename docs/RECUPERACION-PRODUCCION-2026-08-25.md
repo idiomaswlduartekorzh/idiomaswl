@@ -573,3 +573,27 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   nuevos; el guardián de 465 temas; 4/4 recorridos Chromium; y el build de producción
   Webpack. El recorrido Chromium incluye ahora 5/5 vistas, también clases con profesor.
   Las capturas locales no mostraron errores de página ni superposición de Next.
+
+### 19 de septiembre de 2026 — práctica IELTS por habilidad
+
+- Las cuatro habilidades se reúnen en `/practica/ielts#destrezas`. Listening conserva
+  su práctica por partes, audio repetible, corrección en servidor y PDF; Reading,
+  Writing y Speaking ofrecen los 20 sets auditados de forma separada, sin cronómetro
+  y con navegación libre entre pasajes, tareas o partes.
+- Reading presenta los tres pasajes y las 40 respuestas de cada set, y al terminar
+  muestra aciertos y banda estimada. Writing permite redactar Task 1 y Task 2 y
+  revisar borradores y recuento de palabras. Speaking permite grabar y reproducir
+  las tres partes mientras la página siga abierta. Writing y Speaking no asignan
+  una banda automática ni capturan leads en este modo libre. El mock completo
+  conserva su flujo anterior.
+- La implementación entró en `main` con
+  `e9eca3788abdc864e0728e8cc73bb3db9f7f2037`. El build Webpack, TypeScript,
+  catálogo protegido, controles SEO, siete pruebas de Listening y la validación
+  de Reading/Writing/Speaking de los 20 sets pasaron localmente.
+- Vercel publicó `dpl_5sWkQgDuqBTKU38wiPFg6M8fTMfJ` desde ese commit de `main`,
+  estado `READY`, asignado a `https://www.idiomaswl.com`.
+- El smoke público confirmó `/practica/ielts#destrezas`, las bibliotecas de
+  Reading, Writing y Speaking con Sets 1–20, Reading Set 1 en modo libre con
+  tres pasajes y 40 respuestas, Writing Set 4 con Task 1 y su gráfica,
+  Speaking Set 1 con tres partes sin cronómetro, y el mock completo Set 1
+  con sus cuatro secciones y 164 minutos.
