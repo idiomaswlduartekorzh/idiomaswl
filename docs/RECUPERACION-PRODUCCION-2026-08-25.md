@@ -597,3 +597,10 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   tres pasajes y 40 respuestas, Writing Set 4 con Task 1 y su gráfica,
   Speaking Set 1 con tres partes sin cronómetro, y el mock completo Set 1
   con sus cuatro secciones y 164 minutos.
+- La tarjeta de `/practica` se actualizó en
+  `6a46f88ae8bc1abcbdd343e2b19ed508496117d2` para anunciar cuatro habilidades
+  y 20 sets sin prometer corrección automática de Writing/Speaking. Pasó el prebuild
+  completo y el build Webpack de 2.564 páginas. Vercel publicó este commit como
+  `dpl_6vPv3ZMscZMHiYEosoHfJpAdEUvN`, estado `READY`, en
+  `https://www.idiomaswl.com`. El smoke público abrió la tarjeta actualizada y
+  llegó desde ella al hub con las cuatro rutas.
