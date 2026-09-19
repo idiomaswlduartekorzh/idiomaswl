@@ -45,6 +45,31 @@ export function goethePracticeTeilMeta(skill: GoethePracticeSkill, teil?: Goethe
     : GOETHE_PRACTICE_TEILE[skill].find(item => item.teil === teil);
 }
 
+export function goethePracticeHref(mockId: string, skill: GoethePracticeSkill, teil?: GoethePracticeTeil) {
+  const params = new URLSearchParams({ mode: 'practice', skill });
+  if (teil !== undefined) params.set('teil', String(teil));
+  return `/examenes/goethe/practica/${mockId}?${params.toString()}`;
+}
+
+export function nextGoethePractice(mockId: string, skill: GoethePracticeSkill, teil?: GoethePracticeTeil) {
+  const setNumber = Number(mockId.match(/^a1-([1-7])$/)?.[1]);
+  if (!setNumber) return undefined;
+
+  const nextTeil = teil === undefined
+    ? undefined
+    : GOETHE_PRACTICE_TEILE[skill].find(item => item.teil === teil + 1)?.teil;
+  if (nextTeil) {
+    return { href: goethePracticeHref(mockId, skill, nextTeil), label: `Continuar con Teil ${nextTeil}` };
+  }
+  if (setNumber === 7) return undefined;
+
+  const nextSet = setNumber + 1;
+  return {
+    href: goethePracticeHref(`a1-${nextSet}`, skill, teil === undefined ? undefined : 1),
+    label: `Continuar con Set ${nextSet}${teil === undefined ? '' : ' · Teil 1'}`,
+  };
+}
+
 export function goethePracticeSections(mock: MockExam, skill: GoethePracticeSkill, teil?: GoethePracticeTeil): MockSection[] {
   const sections = mock.sections.filter(section => section.skill === skill);
   if (teil === undefined) return sections;
