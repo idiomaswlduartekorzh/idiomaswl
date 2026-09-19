@@ -11,6 +11,7 @@ import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import { parseGoethePracticeTeil, type GoethePracticeSkill } from '@/lib/goethe/practice';
+import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -44,7 +45,7 @@ export default async function PracticePage({ params, searchParams }: { params: P
     const practiceSkill = query.mode === 'practice' && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as 'reading' | 'writing' | 'speaking'
       : undefined;
-    return <IELTSPracticeClient exam={exam} mock={mock} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
+    return <IELTSPracticeClient exam={exam} mock={sanitizeIeltsMock(mock)} key={`${mock.id}:${practiceSkill ?? 'exam'}`} practiceSkill={practiceSkill} />;
   }
   if (slug === 'toefl') {
     // All twenty public TOEFL sets use the audited fixed-form 2026 runner.

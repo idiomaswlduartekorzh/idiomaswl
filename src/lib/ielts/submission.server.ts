@@ -317,7 +317,9 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404);
   if (submission.submission_status === 'submitted') {
     if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId });
-    return Response.json({ ok: true, submissionId });
+    const reviewMock = await loadIeltsMock(mockId);
+    if (!reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
+    return Response.json({ ok: true, submissionId, reviewMock });
   }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
@@ -345,7 +347,9 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .maybeSingle();
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
   if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId });
-  return Response.json({ ok: true, submissionId });
+  const reviewMock = await loadIeltsMock(mockId);
+  if (!reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
+  return Response.json({ ok: true, submissionId, reviewMock });
 }
 
 export async function handleIeltsSubmissionRequest(request: Request, mockId: string): Promise<Response> {

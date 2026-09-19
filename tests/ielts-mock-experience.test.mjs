@@ -74,7 +74,7 @@ test('the shared route, runner, submission and results flow cannot drift by set'
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx');
   const submission = read('src/components/exam-runner/IELTSSubmission.tsx');
 
-  assert.match(route, /slug === 'ielts'[\s\S]*<IELTSPracticeClient exam=\{exam\} mock=\{mock\}/);
+  assert.match(route, /slug === 'ielts'[\s\S]*<IELTSPracticeClient exam=\{exam\} mock=\{sanitizeIeltsMock\(mock\)\}/);
   assert.match(runner, /scoreIeltsObjectiveAnswers\(mock, ans\)/);
   assert.match(runner, /<SkillTabs skills=\{skills\}/);
   assert.match(runner, /<IELTSSubmission/);

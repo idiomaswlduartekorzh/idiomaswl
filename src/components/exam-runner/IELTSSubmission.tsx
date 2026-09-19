@@ -17,6 +17,7 @@ import {
 } from '@/lib/ielts/submission';
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
 import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import type { MockExam } from '@/data/mocks/types';
 
 interface Props {
   mockId: string;
@@ -28,7 +29,7 @@ interface Props {
   speakingPrompts: IeltsSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string) => void;
+  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string, reviewMock: MockExam) => void;
 }
 
 type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
@@ -193,7 +194,8 @@ export function IELTSSubmission({
           audio_count: recordedEntries.length,
         });
       } catch {}
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName);
+      if (!completed.reviewMock || completed.reviewMock.id !== mockId) throw new Error('La revisión del servidor no llegó completa. Inténtalo otra vez.');
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName, completed.reviewMock);
     } catch (caught) {
       setState('idle');
       showError(errorMessage(caught));

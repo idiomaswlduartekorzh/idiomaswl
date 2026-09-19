@@ -1,4 +1,5 @@
 import type { IeltsSubmissionReceipt } from './review-blueprint';
+import type { MockExam } from '@/data/mocks/types';
 
 export const IELTS_SPEAKING_BUCKET = 'ielts-speaking-audio';
 export const IELTS_SUBMISSION_CONSENT_VERSION = 'ielts-review-consent-v2';
@@ -48,6 +49,7 @@ export interface IeltsPrepareResponse extends IeltsSubmissionReceipt {
 export interface IeltsCompleteResponse {
   ok: true;
   submissionId: string;
+  reviewMock: MockExam;
 }
 
 export const IELTS_SPEAKING_MIN_PART_SECONDS: Readonly<Record<number, number>> = {

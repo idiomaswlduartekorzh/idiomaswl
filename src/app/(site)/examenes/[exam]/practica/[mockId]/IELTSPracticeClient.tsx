@@ -16,10 +16,10 @@ import {
   IELTSSpeakingRecorder,
   type IeltsSpeakingRecording,
 } from '@/components/exam-runner/IELTSSpeakingRecorder';
-import { isFreeIeltsMock, isReviewableIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '@/lib/ielts/mock-scoring';
+import type { IeltsReadingPracticeResult } from '@/lib/ielts/reading-practice-contract';
 import { trackIeltsEvent } from '@/lib/analytics/ielts';
 import {
   createIeltsPracticeDraft,
@@ -41,6 +41,9 @@ import type {
 } from '@/data/mocks/types';
 
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
+const FREE_WRITING_MOCKS = new Set(['set-1', 'set-2', 'set-3', 'set-4']);
+const isFreeIeltsMock = (mockId: string) => FREE_WRITING_MOCKS.has(mockId);
+const isReviewableIeltsMock = (mockId: string) => getIeltsReviewBlueprint(mockId) !== null;
 const SKILL_LABEL: Record<string,string> = {
   listening:'Listening', reading:'Reading', writing:'Writing', speaking:'Speaking',
 };
@@ -532,7 +535,6 @@ function SectionPanel({
     <div className="ielts-section-panel">
       <p className="ielts-section-panel__title">{section.title}</p>
       <p className="ielts-section-panel__instructions">{displayIeltsSectionInstructions(mockId, section)}</p>
-      {/* transcript data preserved in section.transcript — hidden in exam UI */}
       {questionsEl}
     </div>
   );
@@ -894,16 +896,16 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
 type Phase = 'intro'|'exam'|'submit'|'results';
 type FocusedSkill = 'reading' | 'writing' | 'speaking';
 
-function IELTSFocusedResults({ mock, skill, ans, recordings, onRetry, onReview }: {
+function IELTSFocusedResults({ mock, skill, ans, recordings, reading, onRetry, onReview }: {
   mock: MockExam;
   skill: FocusedSkill;
   ans: AllAnswers;
   recordings: SpeakAudioMap;
+  reading: IeltsReadingPracticeResult | null;
   onRetry: () => void;
   onReview: () => void;
 }) {
   const sections = getSkillSections(mock, skill).filter(section => !section.comingSoon);
-  const reading = skill === 'reading' ? scoreIeltsObjectiveAnswers(mock, ans).reading : null;
   const writing = sections.flatMap(section => section.questions).filter((question): question is WriteQuestion => question.type === 'write');
   const speaking = sections.flatMap(section => section.questions).filter((question): question is SpeakQuestion => question.type === 'speak');
 
@@ -911,10 +913,10 @@ function IELTSFocusedResults({ mock, skill, ans, recordings, onRetry, onReview }
     <p className="prac-intro__eyebrow">IELTS {SKILL_LABEL[skill]} · {mock.title}</p>
     <h1 className="prac-intro__title">Practice review</h1>
     {reading ? <>
-      <p className="prac-intro__sub">{reading.correct}/{reading.total} correct · estimated Reading band {reading.band}. This is a WeLearn practice estimate, not an official IELTS result.</p>
+      <p className="prac-intro__sub">{reading.correct}/{reading.denominator} correct · estimated Reading band {reading.band}. This is a WeLearn practice estimate, not an official IELTS result.</p>
       <div className="prac-intro__sections">{sections.map((section, index) => {
-        const score = scoreIeltsObjectiveAnswers({ ...mock, sections: [section] }, ans).reading;
-        return <div key={section.part} className="prac-intro__section"><span className="prac-intro__section-part">Passage {index + 1}</span><span className="prac-intro__section-title">{section.title}</span><span className="prac-intro__section-q">{score.correct}/{score.total}</span></div>;
+        const score = reading.passages.find(passage => passage.part === section.part);
+        return <div key={section.part} className="prac-intro__section"><span className="prac-intro__section-part">Passage {index + 1}</span><span className="prac-intro__section-title">{section.title}</span><span className="prac-intro__section-q">{score?.correct ?? 0}/{score?.total ?? 0}</span></div>;
       })}</div>
     </> : null}
     {skill === 'writing' ? <>
@@ -933,6 +935,9 @@ function IELTSFocusedResults({ mock, skill, ans, recordings, onRetry, onReview }
 export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exam: Exam; mock: MockExam; practiceSkill?: FocusedSkill }) {
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
+  const [completedReviewMock, setCompletedReviewMock] = useState<MockExam | null>(null);
+  const [readingResult, setReadingResult] = useState<IeltsReadingPracticeResult | null>(null);
+  const [readingScoring, setReadingScoring] = useState(false);
   const [submittedStudentName, setSubmittedStudentName] = useState('');
   const contentVersion = `${getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned'}+${IELTS_CHOICE_PRESENTATION_VERSION}`;
   const draftKey = ieltsPracticeDraftKey(mock.id, practiceSkill ? `${contentVersion}:${practiceSkill}` : contentVersion);
@@ -990,19 +995,43 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     return [sk,{done,total}];
   }));
 
-  const handleSubmit = useCallback(()=>{
+  const handleSubmit = useCallback(async ()=>{
     if (recordingIds.size>0) {
       setFinishError('Detén la grabación activa antes de terminar el examen.');
       return;
     }
     setFinishError('');
     if (practiceSkill) {
+      if (practiceSkill === 'reading') {
+        if (readingScoring) return;
+        setReadingScoring(true);
+        try {
+          const response = await fetch('/api/practica/ielts/reading/score', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({
+              mockId: mock.id,
+              contentVersion,
+              answers: { fills: ans.fills, mcq: ans.mcq, ms: ans.ms, match: ans.match },
+            }),
+          });
+          if (!response.ok) throw new Error(response.status === 429 ? 'Hay demasiadas revisiones desde esta conexión. Espera unos minutos e inténtalo otra vez.' : 'No pudimos puntuar Reading. Tus respuestas siguen guardadas; inténtalo otra vez.');
+          const result = await response.json() as IeltsReadingPracticeResult;
+          if (result.denominator !== 40 || !Array.isArray(result.passages)) throw new Error('La revisión llegó incompleta. Inténtalo otra vez.');
+          setReadingResult(result);
+        } catch (error) {
+          setFinishError(error instanceof Error ? error.message : 'No pudimos puntuar Reading. Inténtalo otra vez.');
+          setReadingScoring(false);
+          return;
+        }
+        setReadingScoring(false);
+      }
       setPhase('results');
       return;
     }
     trackIeltsEvent('ielts_mock_complete', { mock_id: mock.id });
     setPhase(isReviewableIeltsMock(mock.id)?'submit':'results');
-  },[mock.id,practiceSkill,recordingIds]);
+  },[ans,contentVersion,mock.id,practiceSkill,readingScoring,recordingIds]);
 
   const handleRetry = useCallback(()=>{
     try { localStorage.removeItem(draftKey); } catch {}
@@ -1011,6 +1040,9 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     setRecordingIds(new Set());
     setFinishError('');
     setSubmissionReceipt(null);
+    setCompletedReviewMock(null);
+    setReadingResult(null);
+    setReadingScoring(false);
     setSubmittedStudentName('');
     setDeadlineMs(null);
     setDraftRestored(false);
@@ -1066,10 +1098,10 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   },[activePartIndex,phase,practiceSkill]);
 
   if (phase==='results') {
-    if (practiceSkill) return <IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} onRetry={handleRetry} onReview={() => setPhase('exam')} />;
+    if (practiceSkill) return <IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} />;
     return (
       <div className="prac-shell">
-        <IELTSResults mock={mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
+        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
       </div>
     );
   }
@@ -1092,13 +1124,14 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
           speakingPrompts={speakingQuestions.map(question=>({ questionId: question.id, partNumber: question.partNumber }))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
-          onSuccess={(receipt, studentName)=>{
+          onSuccess={(receipt, studentName, reviewMock)=>{
             try { localStorage.removeItem(draftKey); } catch {}
             trackIeltsEvent('ielts_lead_submit', { mock_id: mock.id });
             trackIeltsEvent('ielts_report_view', { mock_id: mock.id, report_state: 'objective_ready_human_review_pending' });
             trackIeltsEvent('ielts_human_review_pending', { mock_id: mock.id, pending_skills: isFreeIeltsMock(mock.id) ? 'speaking' : 'writing_speaking' });
             setDraftRestored(false);
             setSubmissionReceipt(receipt);
+            setCompletedReviewMock(reviewMock);
             setSubmittedStudentName(studentName);
             setPhase('results');
           }}
@@ -1202,7 +1235,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
         <div className="ielts-exam-footer">
           <p className="ielts-exam-footer__error" role="alert" aria-live="assertive">{finishError}</p>
           <div className="ielts-skill-nav__row">
-            {practiceSkill ? <span style={{display:'flex',flexWrap:'wrap',gap:'0.75rem'}}><button type="button" className="btn btn-ghost btn-sm" disabled={activePartIndex===0} onClick={()=>setActivePartIndex(index=>index-1)}>← Previous part</button><button type="button" className="btn btn-sm" disabled={activePartIndex===skillSections.length-1} onClick={()=>setActivePartIndex(index=>index+1)}>Next part →</button><button type="button" className="btn" onClick={handleSubmit}>Finish {SKILL_LABEL[practiceSkill]} practice</button></span> : skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
+            {practiceSkill ? <span style={{display:'flex',flexWrap:'wrap',gap:'0.75rem'}}><button type="button" className="btn btn-ghost btn-sm" disabled={activePartIndex===0} onClick={()=>setActivePartIndex(index=>index-1)}>← Previous part</button><button type="button" className="btn btn-sm" disabled={activePartIndex===skillSections.length-1} onClick={()=>setActivePartIndex(index=>index+1)}>Next part →</button><button type="button" className="btn" disabled={readingScoring} onClick={handleSubmit}>{readingScoring ? 'Scoring Reading…' : `Finish ${SKILL_LABEL[practiceSkill]} practice`}</button></span> : skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
               if (sk!==activeSkill) return null;
               const prev=arr[i-1], next=arr[i+1];
               return (

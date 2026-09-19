@@ -21,11 +21,11 @@ export type IeltsListeningAllowedKeys = {
 
 const blankKey = (groupId: string, num: number) => `${groupId}__${num}`;
 
-export function getIeltsListeningAllowedKeys(mock: MockExam): IeltsListeningAllowedKeys {
+export function getIeltsObjectiveAllowedKeys(mock: MockExam, skill: 'listening' | 'reading'): IeltsListeningAllowedKeys {
   const keys: IeltsListeningAllowedKeys = {
     fills: new Set(), mcq: new Set(), ms: new Set(), match: new Set(),
   };
-  for (const section of mock.sections.filter(item => item.skill === 'listening' && !item.comingSoon)) {
+  for (const section of mock.sections.filter(item => item.skill === skill && !item.comingSoon)) {
     for (const question of section.questions) {
       if (question.type === 'formgroup') {
         for (const blank of question.blanks) keys.fills.add(blankKey(question.id, blank.num));
@@ -43,6 +43,10 @@ export function getIeltsListeningAllowedKeys(mock: MockExam): IeltsListeningAllo
     }
   }
   return keys;
+}
+
+export function getIeltsListeningAllowedKeys(mock: MockExam): IeltsListeningAllowedKeys {
+  return getIeltsObjectiveAllowedKeys(mock, 'listening');
 }
 
 export function scoreIeltsListeningPracticeAttempt(
