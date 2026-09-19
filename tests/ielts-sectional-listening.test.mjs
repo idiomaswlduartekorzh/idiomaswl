@@ -4,6 +4,7 @@ import path from 'node:path';
 import test from 'node:test';
 
 import { getMock } from '../src/data/mocks/index.ts';
+import { displayIeltsSectionInstructions } from '../src/data/ielts/listening-instruction-errata.ts';
 import {
   IELTS_SECTIONAL_LISTENING_SET_IDS,
   isIeltsSectionalListeningSetId,
@@ -45,6 +46,15 @@ function assertNoKeys(value, location = 'practice') {
   }
 }
 
+function responseNumbers(section) {
+  return section.questions.flatMap(question => {
+    if (question.type === 'formgroup') return question.blanks.map(blank => blank.num);
+    if (question.type === 'tablegroup') return question.rows.flatMap(row => row.flatMap(cell => typeof cell === 'string' ? [] : [cell.num]));
+    if (question.type === 'multiselect' || question.type === 'matching') return Array.from({ length: question.qRange[1] - question.qRange[0] + 1 }, (_, index) => question.qRange[0] + index);
+    return [Number(question.id.match(/q(\d+)$/i)?.[1])];
+  });
+}
+
 test('catalog exposes exactly IELTS Listening Sets 1–20', () => {
   assert.deepEqual(IELTS_SECTIONAL_LISTENING_SET_IDS, Array.from({ length: 20 }, (_, index) => `set-${index + 1}`));
   for (const id of IELTS_SECTIONAL_LISTENING_SET_IDS) assert.equal(isIeltsSectionalListeningSetId(id), true);
@@ -61,15 +71,38 @@ test('all 20 projections preserve four parts, 40 response slots and one released
     assert.deepEqual(practice.sections.map(section => section.part), [1, 2, 3, 4]);
     assert.equal(new Set(practice.sections.map(section => section.audioUrl)).size, 1);
     assert.equal(practice.audioUrl, practice.sections[0].audioUrl);
-    const numbers = practice.sections.flatMap(section => section.questions.flatMap(question => {
-      if (question.type === 'formgroup') return question.blanks.map(blank => blank.num);
-      if (question.type === 'tablegroup') return question.rows.flatMap(row => row.flatMap(cell => typeof cell === 'string' ? [] : [cell.num]));
-      if (question.type === 'multiselect' || question.type === 'matching') return Array.from({ length: question.qRange[1] - question.qRange[0] + 1 }, (_, index) => question.qRange[0] + index);
-      return [Number(question.id.match(/q(\d+)$/i)?.[1])];
-    }));
+    const numbers = practice.sections.flatMap(responseNumbers);
     assert.deepEqual(numbers.sort((a, b) => a - b), Array.from({ length: 40 }, (_, index) => index + 1));
     await access(path.join(ROOT, 'public', practice.audioUrl.replace(/^\//, '')));
   }
+});
+
+test('displayed part instructions name the actual response range in all 20 sets', () => {
+  const sourceMismatches = [];
+  const displayedMismatches = [];
+  for (const mockId of IELTS_SECTIONAL_LISTENING_SET_IDS) {
+    const mock = getMock('ielts', mockId);
+    const practice = selectIeltsListeningPractice(mock);
+    for (const section of mock.sections.filter(item => item.skill === 'listening')) {
+      const displayed = displayIeltsSectionInstructions(mockId, section);
+      assert.equal(practice.sections.find(item => item.part === section.part)?.instructions, displayed);
+      const match = displayed.match(/Questions?\s+(\d+)\s*[–-]\s*(\d+)/i);
+      if (!match) continue;
+      const numbers = responseNumbers(section);
+      const expected = [Math.min(...numbers), Math.max(...numbers)];
+      const stated = [Number(match[1]), Number(match[2])];
+      if (stated[0] !== expected[0] || stated[1] !== expected[1]) {
+        displayedMismatches.push(`${mockId} part ${section.part}: says ${stated.join('–')}, has ${expected.join('–')}`);
+      }
+      if (section.instructions !== displayed) {
+        sourceMismatches.push(`${mockId} part ${section.part}: ${section.instructions} -> ${displayed}`);
+      }
+    }
+  }
+  assert.deepEqual(displayedMismatches, []);
+  assert.deepEqual(sourceMismatches, [
+    'set-4 part 3: You will hear two students discussing a research project on social media and well-being. Listen and answer Questions 21–30. -> You will hear two students discussing a research project on social media and well-being. Listen and answer Questions 21–27.',
+  ]);
 });
 
 test('client payloads never expose answer keys or transcripts', () => {

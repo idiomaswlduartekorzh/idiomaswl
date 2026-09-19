@@ -10,6 +10,7 @@ import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
 import { IELTSAnswerDiagram } from '@/components/exam-runner/IELTSAnswerDiagram';
 import { getIeltsDiagramLayout } from '@/data/ielts/set1-diagram-layouts';
 import { ieltsQuestionNumber } from '@/data/ielts/question-number';
+import { displayIeltsSectionInstructions } from '@/data/ielts/listening-instruction-errata';
 import { IELTS_CHOICE_PRESENTATION_VERSION } from '@/data/mocks/ielts-choice-presentation';
 import {
   IELTSSpeakingRecorder,
@@ -486,8 +487,9 @@ function renderQuestion(
 }
 
 function SectionPanel({
-  section, ans, recordings, handlers,
+  mockId, section, ans, recordings, handlers,
 }: {
+  mockId: string;
   section: MockSection;
   ans: AllAnswers;
   recordings: SpeakAudioMap;
@@ -519,7 +521,7 @@ function SectionPanel({
         </div>
         <div className="ielts-split__right">
           <p className="ielts-split__section-title">{section.title}</p>
-          <p className="ielts-split__instructions">{section.instructions}</p>
+          <p className="ielts-split__instructions">{displayIeltsSectionInstructions(mockId, section)}</p>
           {questionsEl}
         </div>
       </div>
@@ -529,7 +531,7 @@ function SectionPanel({
   return (
     <div className="ielts-section-panel">
       <p className="ielts-section-panel__title">{section.title}</p>
-      <p className="ielts-section-panel__instructions">{section.instructions}</p>
+      <p className="ielts-section-panel__instructions">{displayIeltsSectionInstructions(mockId, section)}</p>
       {/* transcript data preserved in section.transcript — hidden in exam UI */}
       {questionsEl}
     </div>
@@ -1134,7 +1136,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           </div>
         )}
         {activeSections.map(sec=>(
-          <SectionPanel key={sec.part} section={sec} ans={ans} recordings={recordings} handlers={handlers} />
+          <SectionPanel key={sec.part} mockId={mock.id} section={sec} ans={ans} recordings={recordings} handlers={handlers} />
         ))}
 
         <div className="ielts-exam-footer">

@@ -7,6 +7,7 @@ import type {
   TableGroupQuestion,
 } from '@/data/mocks/types';
 import { IELTS_CHOICE_PRESENTATION_VERSION } from '@/data/mocks/ielts-choice-presentation';
+import { displayIeltsSectionInstructions } from '@/data/ielts/listening-instruction-errata';
 import { getIeltsReviewBlueprint } from '@/lib/ielts/review-blueprint';
 
 export type PublicIeltsFormGroupQuestion = Omit<FormGroupQuestion, 'blanks' | 'unorderedAnswerGroups'> & {
@@ -136,7 +137,7 @@ export function selectIeltsListeningPractice(mock: MockExam): IeltsListeningSect
   const sections = sourceSections.map<PublicIeltsListeningSection>(section => ({
     part: section.part,
     title: section.title,
-    instructions: section.instructions,
+    instructions: displayIeltsSectionInstructions(mock.id, section),
     audioUrl: section.audioUrl!,
     questions: section.questions.map(question => sanitizeQuestion(question as FormGroupQuestion | TableGroupQuestion | MultiSelectQuestion | MatchingGroupQuestion | MCQQuestion)),
   }));
