@@ -2,6 +2,15 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 
 export async function proxy(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
+  if (/^\/examenes\/icfes\/practica\/mock-(?:21|22|23)(?:\/|$)/.test(pathname)) {
+    return new NextResponse('No encontrado', {
+      status: 404,
+      headers: { 'X-Robots-Tag': 'noindex, nofollow' },
+    });
+  }
+  if (!pathname.startsWith('/dashboard')) return NextResponse.next({ request });
+
   let supabaseResponse = NextResponse.next({ request });
 
   const supabase = createServerClient(
@@ -32,5 +41,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*'],
+  matcher: ['/dashboard/:path*', '/examenes/icfes/practica/:path*'],
 };

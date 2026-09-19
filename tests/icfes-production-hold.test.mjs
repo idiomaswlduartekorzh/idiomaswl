@@ -59,3 +59,11 @@ test('release manifest records the editorial and rights hold truthfully', () => 
     assert.equal(record.releaseStatus, 'draft', id);
   }
 });
+
+test('proxy returns a real HTTP 404 before streaming retained practice pages', () => {
+  const proxy = readFileSync('src/proxy.ts', 'utf8');
+  assert.match(proxy, /mock-\(\?:21\|22\|23\)/);
+  assert.match(proxy, /status: 404/);
+  assert.match(proxy, /'X-Robots-Tag': 'noindex, nofollow'/);
+  assert.match(proxy, /'\/examenes\/icfes\/practica\/:path\*'/);
+});
