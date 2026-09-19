@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { isAdminEmail } from '@/lib/config/admins'
+import { isVerifiedAdminUser } from '@/lib/config/admins'
 import AdminSessionClient from './AdminSessionClient'
 import coreano1 from '@/data/live-sets/coreano-1'
 import nivel1 from '@/data/live-sets/coreano-nivel-1'
@@ -20,7 +20,7 @@ export default async function AdminSessionPage({
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
-  if (!isAdminEmail(user.email)) redirect('/dashboard/student')
+  if (!isVerifiedAdminUser(user)) redirect('/dashboard/student')
 
   const { code } = await params
   const admin = createAdminClient()

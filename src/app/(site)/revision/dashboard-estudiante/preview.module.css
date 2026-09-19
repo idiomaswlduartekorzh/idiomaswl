@@ -1,0 +1,2 @@
+.planSwitch{position:fixed;z-index:100;right:16px;top:12px;display:flex;gap:6px;padding:6px;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.95);border-radius:999px;box-shadow:0 8px 24px rgba(17,32,84,.17);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+@media(max-width:620px){.planSwitch{top:auto;right:12px;bottom:12px;left:12px;justify-content:space-between;border-radius:18px}.planSwitch a{flex:1;text-align:center;padding:10px 5px!important;font-size:10px!important}}

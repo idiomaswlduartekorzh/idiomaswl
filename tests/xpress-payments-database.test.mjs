@@ -6,12 +6,18 @@ import { PGlite } from '../.local-tools/node_modules/@electric-sql/pglite/dist/i
 const user = '12345678-1234-4234-8234-123456789012';
 const singleUser = '92345678-1234-4234-8234-123456789012';
 const subscriptionUser = '72345678-1234-4234-8234-123456789012';
+const currentPriceUser = '62345678-1234-4234-8234-123456789012';
+const replacementUser = '52345678-1234-4234-8234-123456789012';
 const migration = new URL('../supabase/migrations/20260909000500_xpress_memberships_wompi.sql', import.meta.url);
 const singleMigration = new URL('../supabase/migrations/20260909160000_xpress_single_exam_purchase.sql', import.meta.url);
 const recurringMigration = new URL('../supabase/migrations/20260912110000_xpress_recurring_subscriptions.sql', import.meta.url);
 const recurringIndexesMigration = new URL('../supabase/migrations/20260912113000_xpress_recurring_indexes.sql', import.meta.url);
 const recurringFinalizationMigration = new URL('../supabase/migrations/20260912114500_xpress_finalize_cancellations.sql', import.meta.url);
 const recurringCancelGuardMigration = new URL('../supabase/migrations/20260912115500_xpress_cancel_guard.sql', import.meta.url);
+const dashboardMigration = new URL('../supabase/migrations/20260919195406_xpress_personalized_feedback_prices.sql', import.meta.url);
+const assignmentsMigration = new URL('../supabase/migrations/20260919195421_student_assignments.sql', import.meta.url);
+const atomicAccessMigration = new URL('../supabase/migrations/20260919195432_xpress_submission_access_atomic.sql', import.meta.url);
+const reviewWorkflowMigration = new URL('../supabase/migrations/20260919195444_xpress_feedback_review_workflow.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();
@@ -19,14 +25,29 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.exec(`
       create role anon; create role authenticated; create role service_role bypassrls;
       create schema auth;
-      create table auth.users(id uuid primary key);
-      insert into auth.users values('${user}'),('${singleUser}'),('${subscriptionUser}');
-      create table public.exam_submissions(id uuid primary key default gen_random_uuid());
+      create function auth.uid() returns uuid language sql stable as $$
+        select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid
+      $$;
+      grant usage on schema auth to anon,authenticated,service_role;
+      grant execute on function auth.uid() to anon,authenticated,service_role;
+      create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz);
+      insert into auth.users values
+        ('${user}','student@example.com',now()),
+        ('${singleUser}','single@example.com',now()),
+        ('${subscriptionUser}','recurring@example.com',now()),
+        ('${currentPriceUser}','current@example.com',now()),
+        ('${replacementUser}','single@example.com',now());
+      create table public.exam_submissions(
+        id uuid primary key default gen_random_uuid(),user_id uuid references auth.users(id),exam_slug text,
+        created_at timestamptz not null default now()
+      );
       create table public.profiles(
         id uuid primary key references auth.users(id), name text, full_name text, email text, avatar_url text,
         enrolled_at timestamptz, student_path text, language text, subject text, target_exam text,
-        xpress_plan_interest text, onboarding_completed_at timestamptz
+        xpress_plan_interest text, onboarding_completed_at timestamptz, plan text not null default 'autodidacta'
       );
+      create table public.course_orders(id uuid primary key default gen_random_uuid(),user_id uuid references auth.users(id),selection jsonb);
+      create table public.course_enrollments(order_id uuid primary key references public.course_orders(id));
       grant insert,select on public.exam_submissions to service_role;
     `);
     await db.exec(await readFile(migration, 'utf8'));
@@ -35,6 +56,10 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.exec(await readFile(recurringIndexesMigration, 'utf8'));
     await db.exec(await readFile(recurringFinalizationMigration, 'utf8'));
     await db.exec(await readFile(recurringCancelGuardMigration, 'utf8'));
+    await db.exec(await readFile(dashboardMigration, 'utf8'));
+    await db.exec(await readFile(assignmentsMigration, 'utf8'));
+    await db.exec(await readFile(atomicAccessMigration, 'utf8'));
+    await db.exec(await readFile(reviewWorkflowMigration, 'utf8'));
     await db.exec('set role service_role');
     const legal = { version: 'xpress-20260908-v1' };
     const prepare = async ({ key = user, offer = 'exam-auto', kind = 'new', credit = 0, amount = 4_900_000, coverage = null } = {}) =>
@@ -92,12 +117,37 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal((await db.query('select count(*)::int as count from xpress_exam_credits where user_id=$1 and status=$2', [singleUser, 'active'])).rows[0].count, 1);
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where user_id=$1', [singleUser])).rows[0].count, 0);
     await db.exec('reset role');
-    const submission = (await db.query('insert into exam_submissions default values returning id')).rows[0].id;
+    const submission = (await db.query('insert into exam_submissions(user_id,exam_slug) values($1,$2) returning id', [singleUser, 'ielts'])).rows[0].id;
     await db.exec('set role service_role');
-    const consumed = (await db.query('select public.consume_xpress_exam_credit($1,$2,$3) as id', [singleUser, 'ielts', submission])).rows[0].id;
-    assert.ok(consumed);
+    await assert.rejects(db.query('select public.record_xpress_submission_access($1,$2,$3,$4)', [user, 'ielts', submission, 'sandbox']), /xpress_submission_not_owned/);
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [singleUser, 'ielts', submission, 'production'])).rows[0].result.access, 'public');
+    assert.equal((await db.query('select status from xpress_exam_credits where user_id=$1', [singleUser])).rows[0].status, 'active');
+    const singleAccess = (await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [singleUser, 'ielts', submission, 'sandbox'])).rows[0].result;
+    assert.equal(singleAccess.access, 'single-credit');
+    const consumed = (await db.query('select id from xpress_exam_credits where consumed_submission_id=$1', [submission])).rows[0].id;
     assert.equal((await db.query('select status from xpress_exam_credits where id=$1', [consumed])).rows[0].status, 'consumed');
-    assert.equal((await db.query('select public.consume_xpress_exam_credit($1,$2,$3) as id', [singleUser, 'ielts', submission])).rows[0].id, consumed);
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [singleUser, 'ielts', submission, 'sandbox'])).rows[0].result.access, 'single-credit');
+    assert.equal((await db.query('select count(*)::int as count from public.xpress_submission_access where credit_id=$1', [consumed])).rows[0].count, 1);
+
+    const secondSingle = (await db.query(
+      'select * from public.prepare_xpress_order($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)',
+      [singleUser, 'single@example.com', 'a2345678-1234-4234-8234-123456789012', 'sandbox', 'xpress-2026-09-09-v3', 'exam-single', 'ielts', 'single', 0, 1_200_000, null, 'xpress-20260909-v2', 'xpress-privacy-20260908-v1', legal],
+    )).rows[0];
+    await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
+      [secondSingle.reference, 'sandbox', 'transaction-single-two', 1_200_000, 'COP', 'APPROVED', new Date().toISOString(), 'single-two-approved']);
+    const secondSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [singleUser, 'ielts'])).rows[0].id;
+    await db.exec('reset role');
+    await db.exec(`create function public.fail_xpress_access() returns trigger language plpgsql as $$
+      begin raise exception 'forced_access_failure'; end $$;
+      create trigger fail_xpress_access before insert on public.xpress_submission_access
+      for each row execute function public.fail_xpress_access();`);
+    await db.exec('set role service_role');
+    await assert.rejects(db.query('select public.record_xpress_submission_access($1,$2,$3,$4)', [singleUser, 'ielts', secondSubmission, 'sandbox']), /forced_access_failure/);
+    assert.equal((await db.query('select count(*)::int as count from xpress_exam_credits where user_id=$1 and status=$2', [singleUser, 'active'])).rows[0].count, 1);
+    await db.exec('reset role');
+    await db.exec('drop trigger fail_xpress_access on public.xpress_submission_access; drop function public.fail_xpress_access()');
+    await db.exec('set role service_role');
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [singleUser, 'ielts', secondSubmission, 'sandbox'])).rows[0].result.access, 'single-credit');
 
     const subscription = (await db.query(
       'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
@@ -135,6 +185,35 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     );
     assert.equal((await db.query('select payment_failure_count from xpress_subscriptions where id=$1', [subscription.id])).rows[0].payment_failure_count, 1);
     assert.equal((await db.query('select count(*)::int as count from xpress_memberships where subscription_id=$1 and status=$2', [subscription.id, 'active'])).rows[0].count, 1);
+
+    const membership = (await db.query('select id from public.xpress_memberships where subscription_id=$1 and status=$2', [subscription.id, 'active'])).rows[0];
+    const membershipSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [subscriptionUser, 'toefl'])).rows[0].id;
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [subscriptionUser, 'toefl', membershipSubmission, 'sandbox'])).rows[0].result.access, 'membership');
+    assert.equal((await db.query('select count(*)::int as count from public.xpress_submission_access where membership_id=$1', [membership.id])).rows[0].count, 1);
+    const delayedSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [subscriptionUser, 'toefl'])).rows[0].id;
+    await db.query("update public.xpress_memberships set status='expired' where id=$1", [membership.id]);
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [subscriptionUser, 'toefl', delayedSubmission, 'sandbox'])).rows[0].result.access, 'membership');
+    await db.query("update public.xpress_memberships set status='active' where id=$1", [membership.id]);
+    const teacherSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [user, 'ielts'])).rows[0].id;
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [user, 'ielts', teacherSubmission, 'sandbox'])).rows[0].result.personalizedFeedback, true);
+    assert.equal((await db.query('select count(*)::int as count from public.xpress_personalized_feedback_requests where submission_id=$1', [teacherSubmission])).rows[0].count, 1);
+    const review = (await db.query('select id,created_at,due_at from public.xpress_personalized_feedback_requests where submission_id=$1', [teacherSubmission])).rows[0];
+    assert.equal(Math.round((review.due_at - review.created_at) / 3_600_000), 24);
+    const teacherReport = { summary: 'Resultado general con fortalezas claras', strengths: 'Reading fue la destreza más consistente', improvements: 'Writing requiere estructura y precisión', nextSteps: 'Completar un ensayo y revisar conectores' };
+    await db.query(`update public.xpress_personalized_feedback_requests
+      set status='completed',generated_report=$1,reviewer_id=$2,completed_at=now(),updated_at=now()
+      where id=$3`, [teacherReport, user, review.id]);
+    assert.equal((await db.query('select generated_report from public.xpress_personalized_feedback_requests where id=$1', [review.id])).rows[0].generated_report.summary, teacherReport.summary);
+
+    const currentPriceSubscription = (await db.query(
+      'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
+      [currentPriceUser, 'current@example.com', currentPriceUser, 'sandbox', 'xpress-2026-09-12-v5', 'exam-teacher', 'goethe', 9_990_000, new Date().toISOString(), 'xpress-20260912-v4', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v2', { recurring: true, aiAssisted: true }],
+    )).rows[0];
+    assert.equal(currentPriceSubscription.amount_in_cents, 9_990_000);
+    await assert.rejects(db.query(
+      'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
+      [currentPriceUser, 'current@example.com', currentPriceUser, 'sandbox', 'xpress-2026-09-12-v5', 'exam-teacher', 'goethe', 9_900_000, new Date().toISOString(), 'xpress-20260912-v4', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v2', { recurring: true, aiAssisted: true }],
+    ), /idempotency_conflict|invalid_subscription_quote/);
     assert.equal((await db.query('select count(*)::int as count from xpress_subscription_notifications where subscription_id=$1', [subscription.id])).rows[0].count, 1);
 
     const canceled = (await db.query('select * from public.cancel_xpress_subscription($1,$2,$3)', [subscription.id, subscriptionUser, 'sandbox'])).rows[0];
@@ -154,13 +233,45 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.query('select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)', [pendingOrder.reference, 'sandbox', 'pending-cancel-transaction', 9_900_000, 'COP', 'DECLINED', new Date().toISOString(), 'pending-cancel-declined']);
     assert.equal((await db.query('select status from xpress_subscriptions where id=$1', [pendingCancellation.id])).rows[0].status, 'canceled');
 
+    const moved = (await db.query('select public.recover_xpress_identity($1,$2,$3) as moved', [replacementUser, 'single@example.com', 'sandbox'])).rows[0].moved;
+    assert.ok(moved > 0);
+    assert.equal((await db.query('select user_id from public.xpress_exam_credits where id=$1', [consumed])).rows[0].user_id, replacementUser);
+    assert.equal((await db.query('select user_id from public.xpress_submission_access where credit_id=$1', [consumed])).rows[0].user_id, replacementUser);
+    assert.equal((await db.query('select user_id from public.exam_submissions where id=$1', [submission])).rows[0].user_id, replacementUser);
+    assert.equal((await db.query('select public.recover_xpress_identity($1,$2,$3) as moved', [replacementUser, 'single@example.com', 'sandbox'])).rows[0].moved, 0);
+
+    await db.exec('reset role');
+    await db.query('insert into public.profiles(id,email,plan) values($1,$2,$3)', [currentPriceUser, 'current@example.com', 'preparacion']);
+    await db.exec('set role service_role');
+    const assignment = (await db.query(
+      'insert into public.student_assignments(student_id,title,instructions) values($1,$2,$3) returning id',
+      [currentPriceUser, 'Writing Task 2', 'Preparar un ensayo'],
+    )).rows[0];
+    await db.exec('reset role');
+    await db.query("select set_config('request.jwt.claim.sub',$1,false)", [currentPriceUser]);
+    await db.exec('set role authenticated');
+    assert.equal((await db.query('select count(*)::int as count from public.student_assignments')).rows[0].count, 1);
+    assert.equal((await db.query('select public.set_student_assignment_completed($1,true) as completed', [assignment.id])).rows[0].completed, true);
+    await db.exec('reset role');
+    assert.equal((await db.query('select status from public.student_assignments where id=$1', [assignment.id])).rows[0].status, 'completed');
+    await db.query("select set_config('request.jwt.claim.sub',$1,false)", [singleUser]);
+    await db.exec('set role authenticated');
+    assert.equal((await db.query('select count(*)::int as count from public.student_assignments')).rows[0].count, 0);
+
+    await db.exec('reset role');
     await db.exec('set role anon');
     await assert.rejects(db.query('select * from xpress_orders'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_memberships'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_exam_credits'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_subscriptions'), /permission denied/);
+    await assert.rejects(db.query('select * from xpress_submission_access'), /permission denied/);
+    await assert.rejects(db.query('select * from xpress_personalized_feedback_requests'), /permission denied/);
+    await assert.rejects(db.query('select * from student_assignments'), /permission denied/);
     await db.exec('set role authenticated');
     await assert.rejects(db.query('select * from xpress_payment_transactions'), /permission denied/);
+    await assert.rejects(db.query('select public.recover_xpress_identity($1,$2,$3)', [replacementUser, 'single@example.com', 'sandbox']), /permission denied/);
+    await assert.rejects(db.query('select public.record_xpress_submission_access($1,$2,$3,$4)', [singleUser, 'ielts', submission, 'sandbox']), /permission denied/);
+    await assert.rejects(db.query('update public.xpress_personalized_feedback_requests set status=$1 where id=$2', ['completed', review.id]), /permission denied/);
   } finally {
     await db.close();
   }

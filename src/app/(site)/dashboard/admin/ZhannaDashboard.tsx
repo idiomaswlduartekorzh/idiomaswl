@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { signOut } from '@/lib/actions/signOut'
 import {
   BarChart,
@@ -198,6 +199,7 @@ export default function ZhannaDashboard({ realData }: { realData?: ZhannaRealDat
           </p>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <Link href="/dashboard/admin/revisiones-xpress" style={{ color: C.blue, fontSize: 12, fontWeight: 800, textDecoration: 'none', padding: '8px 11px', borderRadius: 999, background: C.blueLight }}>Revisiones Xpress</Link>
           <div
             style={{
               width: 40, height: 40, borderRadius: '50%',

@@ -49,5 +49,11 @@ export default defineConfig({
     video: 'off',
     screenshot: 'only-on-failure',
   },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+  projects: [{
+    name: 'chromium',
+    use: {
+      ...devices['Desktop Chrome'],
+      ...(process.env.PLAYWRIGHT_USE_INSTALLED_CHROME === 'true' ? { channel: 'chrome' as const } : {}),
+    },
+  }],
 })
