@@ -23,9 +23,9 @@ const SKILLS = [
     id: 'listening',
     label: 'Listening',
     icon: '🎧',
-    desc: 'Four sections with native speakers. 30 minutes plus 10 minutes to transfer answers.',
-    href: '#',
-    available: false,
+    desc: 'Four parts and 40 questions. Replay, pause and rewind the audio, practise without a timer, or download a student PDF.',
+    href: '/practica/ielts/listening',
+    available: true,
   },
   {
     id: 'speaking',
@@ -58,10 +58,10 @@ export default function IELTSAcademicPage() {
           <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 8, marginBottom: '1.25rem' }}>
             <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic assesses Listening, Reading, Writing and Speaking. This section starts with Reading and Writing because these routes have complete banks, exercises and explained answers.
+              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic assesses Listening, Reading, Writing and Speaking. Listening, Reading and Writing now have complete WeLearn practice routes.
             </p>
             <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> study is separated by skill: Reading combines official question types with skills such as skimming and scanning; Writing separates Task 1, Task 2, the rubric and annotated models.
+              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> study is separated by skill: Listening uses replayable audited sets and printable worksheets; Reading combines official question types with skills such as skimming and scanning; Writing separates Task 1, Task 2, the rubric and annotated models.
             </p>
           </section>
 

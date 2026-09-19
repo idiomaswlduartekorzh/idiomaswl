@@ -120,6 +120,15 @@ export function AudioPlayer({
     setDuration(Number.isFinite(nextDuration) ? nextDuration : 0);
   };
 
+  const seekTo = (seconds: number) => {
+    if (!replayable || !audioRef.current || !Number.isFinite(seconds)) return;
+    const ceiling = Number.isFinite(audioRef.current.duration) ? audioRef.current.duration : duration;
+    const next = Math.min(Math.max(seconds, 0), Math.max(ceiling, 0));
+    audioRef.current.currentTime = next;
+    setCurrent(next);
+    setDone(ceiling > 0 && next >= ceiling);
+  };
+
   if (!src) return null;
 
   if (alreadyPlayed && !started && !replayable) {
@@ -173,14 +182,35 @@ export function AudioPlayer({
                     : `${label} — press play to begin`}
           </span>
           <div className="ielts-audio__progress-wrap">
-            <div
-              className="ielts-audio__progress-bar"
-              style={{ '--pct': `${pct}%` } as React.CSSProperties}
-            />
+            {replayable ? (
+              <input
+                type="range"
+                className="ielts-audio__seek"
+                min={0}
+                max={duration || 0}
+                step={1}
+                value={Math.min(current, duration || 0)}
+                onChange={event => seekTo(Number(event.target.value))}
+                aria-label={`Audio position for ${label}`}
+                style={{ '--pct': `${pct}%` } as React.CSSProperties}
+              />
+            ) : (
+              <div
+                className="ielts-audio__progress-bar"
+                style={{ '--pct': `${pct}%` } as React.CSSProperties}
+              />
+            )}
             <span className="ielts-audio__time">
               {formatTime(Math.floor(current))}{duration > 0 ? ` / ${formatTime(Math.floor(duration))}` : ''}
             </span>
           </div>
+          {replayable ? (
+            <div className="ielts-audio__transport" aria-label="Audio navigation controls">
+              <button type="button" onClick={() => seekTo(current - 10)} aria-label="Go back 10 seconds">−10s</button>
+              <button type="button" onClick={() => seekTo(current + 10)} aria-label="Go forward 10 seconds">+10s</button>
+              <span>Pause, replay or drag the timeline at any time.</span>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
