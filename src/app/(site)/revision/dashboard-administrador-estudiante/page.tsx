@@ -14,7 +14,7 @@ export default function AdminStudentPreviewPage() {
   const points = [{ x: 35, y: 88, score: 52 }, { x: 170, y: 72, score: 64 }, { x: 310, y: 66, score: 69 }, { x: 445, y: 48, score: 84 }, { x: 570, y: 45, score: 87 }];
   return <main className={styles.page}>
     <nav><span>← Volver a estudiantes</span><span>Ficha privada · vista de revisión</span></nav>
-    <header><div className={styles.avatar}>M</div><div><p>Preparación · Inglés</p><h1>Mariana López</h1><span>mariana@ejemplo.com</span></div></header>
+    <header><div className={styles.avatar}>M</div><div><p>Preparación · Inglés</p><h1>Mariana López</h1><span>mariana@ejemplo.com</span></div><div className={styles.heroPills} aria-hidden="true"><i /><i /></div></header>
     <section className={styles.metrics}><article><span>Simulacros</span><strong>5</strong></article><article><span>Promedio</span><strong>71%</strong></article><article><span>Días activos · 30 días</span><strong>12</strong></article><article><span>Última actividad</span><strong>12 sept 2026</strong></article></section>
     <section className={styles.card}>
       <div className={styles.cardHeader}><div><p>Seguimiento académico</p><h2>Curva de aprendizaje · IELTS</h2></div><span>+35 puntos</span></div>

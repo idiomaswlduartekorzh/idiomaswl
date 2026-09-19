@@ -235,6 +235,11 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               <MessageCircle size={13} /> Leads {data.leads.length > 0 && <span style={{ background: A, color: '#fff', borderRadius: 10, fontSize: 10, fontWeight: 800, padding: '1px 6px', marginLeft: 2 }}>{data.leads.length}</span>}
             </button>
             <Link
+              href="/dashboard/admin/revisiones-xpress"
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(49,87,213,.12)', color: '#3157d5', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
+              Revisiones Xpress
+            </Link>
+            <Link
               href="/dashboard/admin/live/create"
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: 'rgba(99,60,180,0.25)', color: '#a78bfa', fontSize: 12, fontWeight: 700, cursor: 'pointer', textDecoration: 'none', flexShrink: 0 }}>
               🎬 Live Quiz

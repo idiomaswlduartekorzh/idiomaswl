@@ -533,3 +533,43 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   Supabase productivo. La validación local pasó 10/10 pruebas funcionales, la prueba
   transaccional de pagos y RLS, TypeScript, ESLint, el guardián de 465 temas y 4/4
   recorridos Chromium. El build Webpack también quedó verde antes de esta revisión final.
+
+### 19 de septiembre de 2026 — cierre técnico del panel Xpress, pendiente de aprobación visual
+
+- `codex/student-dashboard-20260912` sigue aislada: no se ha integrado en `main`, no hay
+  despliegue del dashboard y no se han hecho cobros de prueba reales. La vista de revisión
+  de escritorio y móvil fue compartida con David; su aprobación visual del dashboard
+  sigue pendiente.
+- El registro del intento pagado, el consumo de un crédito y la creación de la solicitud
+  de revisión ahora ocurren en una sola transacción de Supabase, con separación de
+  sandbox/producción, bloqueo ante duplicados y verificación de propietario. Un enlace
+  directo al reporte comprueba el usuario y el derecho persistido aunque el intento ya
+  no esté entre los resultados recientes. La antigua ruta de progreso deja de mostrar
+  resultados sin verificar la compra.
+- La identidad administrativa requiere ahora correo confirmado además de pertenecer a
+  la lista privada; la cuenta institucional de estudiante no recibe privilegios de
+  administrador. Las clases compradas por correo solo se asocian a una identidad con
+  correo confirmado.
+- La revisión personalizada del plan de $99.900 tiene una bandeja privada para José y
+  Zhanna, plazo de 24 horas desde la entrega y cuatro campos de devolución. El estado
+  «entregado» solo se muestra cuando esa devolución queda guardada por un administrador;
+  el estudiante la lee en su reporte privado. Queda por verificar el proceso operativo
+  de atención del plazo con cuentas reales antes de publicar el plan.
+- Un alumno que solo compró clases ve su plan, la siguiente asignación, prácticas
+  completadas y días de actividad en el mismo diseño, sin tarjetas de suscripción Xpress
+  ni simulacros a cero. La ruta antigua de progreso se redirige al panel unificado.
+- Las migraciones `20260912150000_xpress_personalized_feedback_prices.sql`,
+  `20260912190000_student_assignments.sql`,
+  `20260912191000_xpress_submission_access_atomic.sql` y
+  `20260912192000_xpress_feedback_review_workflow.sql` **no están aplicadas** en el
+  Supabase productivo (lista comprobada el 19 de septiembre). No desplegar el código
+  que las consume antes de aplicarlas en orden.
+- El asesor de seguridad de Supabase informó que la protección contra contraseñas
+  filtradas está desactivada. Requiere activarse en la configuración de Auth; no depende
+  de estas migraciones. Los avisos de tablas de pagos sin políticas RLS corresponden a
+  tablas privadas accesibles solo con `service_role`.
+- Pasaron 27 pruebas de comercio, Wompi, registro y acceso administrativo; 12 pruebas
+  del dashboard; la prueba transaccional con PGlite; TypeScript; ESLint de los archivos
+  nuevos; el guardián de 465 temas; 4/4 recorridos Chromium; y el build de producción
+  Webpack. El recorrido Chromium incluye ahora 5/5 vistas, también clases con profesor.
+  Las capturas locales no mostraron errores de página ni superposición de Next.

@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import { isAdminEmail } from '@/lib/config/admins'
+import { isVerifiedAdminUser } from '@/lib/config/admins'
 
 export default async function DashboardPage() {
   const supabase = await createClient()
@@ -13,7 +13,7 @@ export default async function DashboardPage() {
   }
 
   // Email-based admin check is the source of truth (no Supabase profile needed)
-  if (isAdminEmail(user.email)) {
+  if (isVerifiedAdminUser(user)) {
     redirect('/dashboard/admin')
   }
 

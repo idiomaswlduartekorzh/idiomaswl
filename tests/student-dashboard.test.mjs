@@ -41,6 +41,11 @@ test('personalized feedback and class enrollment appear only in their preview fi
   assert.equal(personalized.attempts.some((attempt) => attempt.feedbackState === 'delivered'), true);
   assert.equal(personalized.courses.length, 1);
   assert.equal(personalized.assignments.length, 2);
+  const guided = studentDashboardPreview('guided');
+  assert.equal(guided.access.product, null);
+  assert.equal(guided.courses.length, 1);
+  assert.equal(guided.courseProgress.completedActivities, 12);
+  assert.equal(guided.assignments[0].status, 'assigned');
 });
 
 test('progress uses comparable attempts and real skill measurements', () => {
@@ -60,7 +65,7 @@ test('server loader scopes every private product query to the authenticated iden
   const loader = read('src/lib/student-dashboard/data.server.ts');
   const page = read('src/app/(site)/dashboard/student/page.tsx');
   assert.match(page, /auth\.getUser\(\)/);
-  assert.match(page, /isAdminEmail\(user\.email\)/);
+  assert.match(page, /isVerifiedAdminUser\(user\)/);
   assert.match(loader, /from\('xpress_memberships'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('xpress_exam_credits'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('xpress_subscriptions'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
@@ -70,6 +75,7 @@ test('server loader scopes every private product query to the authenticated iden
   assert.match(loader, /email_confirmed_at/);
   assert.match(loader, /rpc\('recover_xpress_identity'/);
   assert.match(loader, /from\('student_assignments'\)[\s\S]*?\.eq\('student_id', user\.id\)/);
+  assert.match(loader, /from\('user_progress'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /from\('daily_activity'\)[\s\S]*?\.eq\('user_id', user\.id\)/);
   assert.match(loader, /dataAvailable: false/);
 });
@@ -103,11 +109,15 @@ test('preview route is unavailable in production', () => {
 
 test('completed submissions are linked to paid access without trusting the browser', () => {
   const access = read('src/lib/xpress-commerce/submission-access.server.ts');
-  assert.match(access, /from\('exam_submissions'\)[\s\S]*?\.eq\('user_id', input\.userId\)[\s\S]*?\.eq\('exam_slug', input\.examSlug\)/);
-  assert.match(access, /from\('xpress_memberships'\)[\s\S]*?\.eq\('user_id', input\.userId\)[\s\S]*?\.eq\('environment', environment\)/);
-  assert.match(access, /rpc\('consume_xpress_exam_credit'/);
-  assert.match(access, /from\('xpress_submission_access'\)\.upsert/);
-  assert.match(access, /from\('xpress_personalized_feedback_requests'\)\.upsert/);
+  const atomic = read('supabase/migrations/20260912191000_xpress_submission_access_atomic.sql');
+  assert.match(access, /rpc\('record_xpress_submission_access'/);
+  assert.match(access, /throw new Error\('xpress_submission_access_unavailable'\)/);
+  assert.match(atomic, /id=p_submission and user_id=p_user and exam_slug=p_exam/);
+  assert.match(atomic, /source\.environment=p_environment/);
+  assert.match(atomic, /pg_advisory_xact_lock/);
+  assert.match(atomic, /insert into public\.xpress_submission_access/);
+  assert.match(atomic, /insert into public\.xpress_personalized_feedback_requests/);
+  assert.match(atomic, /grant execute on function public\.record_xpress_submission_access\(uuid,text,uuid,text\) to service_role/);
 
   for (const file of [
     'src/lib/actions/saveExamResult.ts',
@@ -133,11 +143,27 @@ test('the additive migration preserves old purchases and enforces the new prices
   assert.match(migration, /revoke all on public\.xpress_submission_access from public,anon,authenticated,service_role/);
   assert.match(migration, /alter table public\.xpress_personalized_feedback_requests enable row level security/);
   assert.match(migration, /revoke all on public\.xpress_personalized_feedback_requests from public,anon,authenticated,service_role/);
-  assert.match(migration, /does not represent a human teacher review/);
+  assert.match(migration, /xpress_personalized_feedback_requests/);
   assert.match(migration, /create function public\.recover_xpress_identity/);
   assert.match(migration, /email_confirmed_at is not null/);
   assert.match(migration, /identity_recovery_subscription_conflict/);
   assert.match(migration, /grant execute on function public\.recover_xpress_identity\(uuid,text,text\) to service_role/);
+});
+
+test('the 24-hour tutor review is assigned privately and shown only after delivery', () => {
+  const migration = read('supabase/migrations/20260912192000_xpress_feedback_review_workflow.sql');
+  const action = read('src/lib/actions/xpressReviews.ts');
+  const queue = read('src/app/(site)/dashboard/admin/revisiones-xpress/page.tsx');
+  const loader = read('src/lib/student-dashboard/data.server.ts');
+  const report = read('src/app/(site)/dashboard/student/resultados/[submissionId]/page.tsx');
+  assert.match(migration, /interval '24 hours'/);
+  assert.match(migration, /reviewer_id uuid references auth\.users/);
+  assert.match(action, /await requireAdmin\(\)/);
+  assert.match(action, /reviewer_id: admin\.id/);
+  assert.match(queue, /await requireAdmin\(\)/);
+  assert.match(queue, /\.eq\('environment', getWompiServerConfig\(\)\.environment\)/);
+  assert.match(loader, /feedback\?\.status === 'completed' \? teacherFeedback/);
+  assert.match(report, /attempt\.teacherFeedback/);
 });
 
 test('paid reports remain addressable after a subscription ends or another single exam is purchased', () => {
@@ -147,6 +173,16 @@ test('paid reports remain addressable after a subscription ends or another singl
   assert.match(loader, /consumedSubmissionIds/);
   assert.match(loader, /isMembershipSubmission/);
   assert.match(loader, /accessBySubmission\.has\(row\.id\)/);
-  assert.match(report, /dashboard\.attempts\.find\(\(item\) => item\.id === submissionId\)/);
+  assert.match(loader, /loadOwnedPaidAttempt\(user: AuthUser, submissionId: string\)/);
+  assert.match(loader, /\.eq\('id', submissionId\)\.eq\('user_id', user\.id\)/);
+  assert.match(report, /loadOwnedPaidAttempt\(user, submissionId\)/);
   assert.match(report, /attempt\.examHubHref/);
+});
+
+test('the progress link cannot expose an older unverified exam list', () => {
+  const progress = read('src/app/(site)/dashboard/student/progreso/page.tsx');
+  const view = read('src/components/student-dashboard/StudentDashboardView.tsx');
+  assert.match(progress, /auth\.getUser\(\)/);
+  assert.match(progress, /redirect\('\/dashboard\/student#progreso'\)/);
+  assert.match(view, /intentos anteriores/);
 });

@@ -5,7 +5,24 @@ import type { StudentAttempt, StudentDashboardData } from './types';
 const NOW = '2026-09-12T15:00:00.000Z';
 const END = '2026-10-12T15:00:00.000Z';
 
-export function studentDashboardPreview(product: StudentProductKind): StudentDashboardData {
+export type StudentPreviewKind = StudentProductKind | 'guided';
+
+export function studentDashboardPreview(product: StudentPreviewKind): StudentDashboardData {
+  if (product === 'guided') {
+    const activityDates = ['2026-09-12', '2026-09-11', '2026-09-10', '2026-09-08', '2026-09-05'];
+    return {
+      name: 'Mariana López', email: 'mariana@ejemplo.com', dataAvailable: true,
+      access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, singleAttemptAvailable: false },
+      subscription: null, attempts: [],
+      courses: [{ id: '00000000-0000-4000-8000-000000000005', language: 'ingles', objective: 'Idioma general', plan: 'constancia', classes: 8, sessions: 16, purchasedAt: NOW }],
+      courseProgress: { completedActivities: 12, lastCompletedAt: '2026-09-11T20:00:00.000Z' },
+      assignments: [
+        { id: '00000000-0000-4000-8000-000000000006', title: 'Conversación: pedir indicaciones', instructions: 'Practica el diálogo y anota tres expresiones nuevas para la próxima clase.', resourceUrl: '/practica/ingles/a1/habla', dueAt: '2026-09-14T23:59:00.000Z', status: 'assigned', assignedAt: NOW, completedAt: null },
+        { id: '00000000-0000-4000-8000-000000000007', title: 'Repasar pasado simple', instructions: 'Completa el ejercicio y trae tus dudas a clase.', resourceUrl: '/practica/ingles/a1/gramatica', dueAt: '2026-09-11T23:59:00.000Z', status: 'completed', assignedAt: '2026-09-08T15:00:00.000Z', completedAt: '2026-09-11T20:00:00.000Z' },
+      ],
+      progress: buildStudentProgress([], null, activityDates, new Date('2026-09-12T18:00:00.000Z')),
+    };
+  }
   const examSlug = product === 'single' ? 'toefl' : product === 'automatic' ? 'goethe' : 'ielts';
   const exam = getStudentExamWorkspace(examSlug)!;
   const attempts: StudentAttempt[] = product === 'single' ? [{
@@ -25,6 +42,7 @@ export function studentDashboardPreview(product: StudentProductKind): StudentDas
     subscription: product === 'single' ? null : { id: '00000000-0000-4000-8000-000000000004', status: 'active', nextChargeAt: END, periodEndsAt: END, cancelRequestedAt: null },
     attempts,
     courses,
+    courseProgress: { completedActivities: courses.length ? 4 : 0, lastCompletedAt: courses.length ? NOW : null },
     assignments: courses.length ? [
       { id: '00000000-0000-4000-8000-000000000006', title: 'Writing Task 2 · ensayo de práctica', instructions: 'Escribe un ensayo de 250 palabras y súbelo antes de la próxima clase.', resourceUrl: '/examenes/ielts', dueAt: '2026-09-14T23:59:00.000Z', status: 'assigned', assignedAt: NOW, completedAt: null },
       { id: '00000000-0000-4000-8000-000000000007', title: 'Repasar conectores de contraste', instructions: 'Completa la práctica y anota tres dudas para revisar juntos.', resourceUrl: '/practica/ielts-writing-conectores', dueAt: '2026-09-11T23:59:00.000Z', status: 'completed', assignedAt: '2026-09-08T15:00:00.000Z', completedAt: '2026-09-11T20:00:00.000Z' },

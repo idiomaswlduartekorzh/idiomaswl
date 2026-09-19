@@ -58,7 +58,7 @@ export default async function AdminStudentDetailPage({ params }: { params: Promi
 
   return <main className={styles.page}>
     <nav><Link href="/dashboard/admin">← Volver a estudiantes</Link><span>Ficha privada</span></nav>
-    <header><div className={styles.avatar}>{(profile.full_name ?? profile.email ?? 'E')[0].toUpperCase()}</div><div><p>{profile.plan} · {profile.subject ?? 'Sin materia'}</p><h1>{profile.full_name ?? 'Estudiante'}</h1><span>{profile.email}</span></div></header>
+    <header><div className={styles.avatar}>{(profile.full_name ?? profile.email ?? 'E')[0].toUpperCase()}</div><div><p>{profile.plan} · {profile.subject ?? 'Sin materia'}</p><h1>{profile.full_name ?? 'Estudiante'}</h1><span>{profile.email}</span></div><div className={styles.heroPills} aria-hidden="true"><i /><i /></div></header>
     <section className={styles.metrics}>
       <article><span>Simulacros</span><strong>{attempts.length}</strong></article>
       <article><span>Promedio</span><strong>{progress.averageScore === null ? '—' : `${progress.averageScore}%`}</strong></article>

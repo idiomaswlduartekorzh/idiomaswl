@@ -13,6 +13,7 @@ export type StudentAttempt = Readonly<{
   scoreLabel: string;
   reportHref: string;
   feedbackState: 'not-included' | 'available' | 'processing' | 'delivered' | 'failed';
+  teacherFeedback?: Readonly<{ summary: string; strengths: string; improvements: string; nextSteps: string }> | null;
   skills: readonly StudentSkillScore[];
 }>;
 
@@ -70,6 +71,11 @@ export type StudentCourse = Readonly<{
   purchasedAt: string;
 }>;
 
+export type StudentCourseProgress = Readonly<{
+  completedActivities: number;
+  lastCompletedAt: string | null;
+}>;
+
 export type StudentAccess = Readonly<{
   state: 'active' | 'consumed' | 'expired' | 'none';
   product: StudentProductKind | null;
@@ -94,6 +100,7 @@ export type StudentDashboardData = Readonly<{
   subscription: StudentSubscription | null;
   attempts: readonly StudentAttempt[];
   courses: readonly StudentCourse[];
+  courseProgress: StudentCourseProgress;
   assignments: readonly StudentAssignment[];
   progress: StudentProgressSummary;
   dataAvailable: boolean;

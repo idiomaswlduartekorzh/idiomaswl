@@ -191,6 +191,7 @@ create table public.xpress_personalized_feedback_requests (
   user_id uuid not null references auth.users(id),
   membership_id uuid not null references public.xpress_memberships(id),
   submission_id uuid not null unique references public.exam_submissions(id),
+  environment text not null check (environment in ('sandbox','production')),
   exam_slug text not null check (exam_slug in ('ielts','toefl','sat','icfes','cambridge-b2','goethe','delf-dalf','cils-celi','topik','celpe-bras')),
   status text not null default 'pending' check (status in ('pending','processing','completed','failed')),
   generated_report jsonb,

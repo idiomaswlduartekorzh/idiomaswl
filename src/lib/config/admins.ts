@@ -45,3 +45,17 @@ export function isZhannaAdminEmail(email: string | null | undefined): boolean {
 export function isAdminEmail(email: string | null | undefined): boolean {
   return isJoseAdminEmail(email) || isZhannaAdminEmail(email);
 }
+
+type AuthIdentity = { email?: string | null; email_confirmed_at?: string | null } | null | undefined;
+
+export function isVerifiedAdminUser(user: AuthIdentity): boolean {
+  return Boolean(user?.email_confirmed_at) && isAdminEmail(user?.email);
+}
+
+export function isVerifiedJoseAdminUser(user: AuthIdentity): boolean {
+  return Boolean(user?.email_confirmed_at) && isJoseAdminEmail(user?.email);
+}
+
+export function isVerifiedZhannaAdminUser(user: AuthIdentity): boolean {
+  return Boolean(user?.email_confirmed_at) && isZhannaAdminEmail(user?.email);
+}

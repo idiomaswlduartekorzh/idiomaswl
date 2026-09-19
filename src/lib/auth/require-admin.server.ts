@@ -1,7 +1,7 @@
 import 'server-only';
 
 import { createClient } from '@/lib/supabase/server';
-import { isAdminEmail, normalizeAdminEmail } from '@/lib/config/admins';
+import { isVerifiedAdminUser, normalizeAdminEmail } from '@/lib/config/admins';
 
 export interface AuthorizedAdmin {
   id: string;
@@ -19,7 +19,7 @@ export async function requireAdmin(): Promise<AuthorizedAdmin> {
   const { data: { user } } = await supabase.auth.getUser();
   const email = normalizeAdminEmail(user?.email);
 
-  if (!user || !isAdminEmail(email)) {
+  if (!user || !isVerifiedAdminUser(user)) {
     throw new Error('No tienes permisos de administrador.');
   }
 

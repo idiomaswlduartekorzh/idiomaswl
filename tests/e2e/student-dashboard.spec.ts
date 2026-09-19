@@ -40,6 +40,18 @@ test.describe('dashboard de estudiante después del pago', () => {
     await expect(page.getByRole('heading', { name: 'Mi acompañamiento' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Coordinar por WhatsApp' })).toBeVisible();
   });
+
+  test('el estudiante de idioma con profesor continúa su práctica y sus tareas', async ({ page }) => {
+    await page.goto('/revision/dashboard-estudiante?plan=guided');
+
+    await expect(page.getByTestId('student-dashboard')).toHaveAttribute('data-plan', 'none');
+    await expect(page.getByRole('heading', { name: 'Continúa con tu asignación' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Avance en Inglés' })).toBeVisible();
+    await expect(page.getByText('12', { exact: true }).first()).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Mi acompañamiento' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Mis asignaciones' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Sin plan activo' })).toHaveCount(0);
+  });
 });
 
 test('la ficha administrativa reúne progreso, historial y asignaciones', async ({ page }) => {

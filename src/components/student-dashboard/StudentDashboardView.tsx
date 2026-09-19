@@ -62,6 +62,23 @@ function LearningCurve({ data }: { data: StudentDashboardData }) {
   </section>;
 }
 
+function CourseProgress({ data }: { data: StudentDashboardData }) {
+  const course = data.courses[0];
+  if (!course) return null;
+  const pending = data.assignments.filter((item) => item.status === 'assigned').length;
+  return <section className={`${styles.section} ${styles.courseProgress}`} id="progreso" aria-labelledby="course-progress-title">
+    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Tu evolución</p><h2 id="course-progress-title">Avance en {LANGUAGE_NAMES[course.language] ?? course.language}</h2></div><span className={styles.progressScope}>Con profesor</span></header>
+    <p>Tu actividad se actualiza al completar prácticas y tareas de tu ruta de estudio.</p>
+    <div className={styles.courseProgressGrid}>
+      <article><strong>{data.courseProgress.completedActivities}</strong><span>prácticas completadas</span></article>
+      <article><strong>{data.progress.activeDaysLast30}</strong><span>días activos en los últimos 30</span></article>
+      <article><strong>{data.progress.currentStreak}</strong><span>días de constancia</span></article>
+      <article><strong>{pending}</strong><span>asignaciones pendientes</span></article>
+    </div>
+    <small>Última práctica completada: {dateLabel(data.courseProgress.lastCompletedAt)}.</small>
+  </section>;
+}
+
 function Assignments({ data, preview }: { data: StudentDashboardData; preview: boolean }) {
   if (!data.courses.length && !data.assignments.length) return null;
   return <section className={`${styles.section} ${styles.assignmentSection}`} id="asignaciones" aria-labelledby="assignments-title">
@@ -87,6 +104,13 @@ function nextAction(data: StudentDashboardData) {
   }
   if (access.state === 'consumed' && data.attempts[0]) {
     return { title: 'Tu reporte está listo', body: 'Tu compra incluía un intento. Puedes consultar el resultado cuando quieras.', href: data.attempts[0].reportHref, cta: 'Ver mi reporte' };
+  }
+  if (data.courses.length) {
+    const course = data.courses[0];
+    const task = data.assignments.find((item) => item.status === 'assigned' && item.resourceUrl?.startsWith('/'));
+    return task
+      ? { title: 'Continúa con tu asignación', body: task.title, href: task.resourceUrl!, cta: 'Abrir actividad' }
+      : { title: 'Sigue practicando tu idioma', body: `${LANGUAGE_NAMES[course.language] ?? course.language} · ${course.objective}`, href: `/practica/${course.language}/a1`, cta: 'Ir a práctica' };
   }
   return { title: 'Escoge cómo quieres practicar', body: 'Selecciona un examen y un plan para activar tu espacio personal.', href: '/registro', cta: 'Ver planes' };
 }
@@ -122,15 +146,22 @@ function ProductCard({ data }: { data: StudentDashboardData }) {
   </section>;
 }
 
+function AttemptRow({ attempt }: { attempt: StudentDashboardData['attempts'][number] }) {
+  return <article className={styles.attempt}>
+    <div className={styles.score} aria-label={attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}><strong>{attempt.score ?? '✓'}</strong>{attempt.score !== null ? <span>%</span> : null}</div>
+    <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'failed' ? 'Retomaremos tu revisión' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
+    <Link href={attempt.reportHref}>Ver reporte <span aria-hidden="true">→</span></Link>
+  </article>;
+}
+
 function Attempts({ data }: { data: StudentDashboardData }) {
   const attempts = data.attempts.slice(0, 6);
+  const older = data.attempts.slice(6);
   return <section className={styles.section} aria-labelledby="attempts-title">
-    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Resultados guardados</p><h2 id="attempts-title">Mis intentos</h2></div>{data.attempts.length > 6 ? <Link href="/dashboard/student/progreso">Ver historial</Link> : null}</header>
-    {attempts.length ? <div className={styles.attemptList}>{attempts.map((attempt) => <article className={styles.attempt} key={attempt.id}>
-      <div className={styles.score} aria-label={attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}><strong>{attempt.score ?? '✓'}</strong>{attempt.score !== null ? <span>%</span> : null}</div>
-      <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'failed' ? 'Reintentaremos generar tu feedback' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
-      <Link href={attempt.reportHref}>Ver reporte <span aria-hidden="true">→</span></Link>
-    </article>)}</div> : <div className={styles.empty}><span aria-hidden="true">◎</span><div><h3>Todavía no hay intentos</h3><p>Cuando termines un simulacro, su resultado aparecerá aquí.</p></div></div>}
+    <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Resultados guardados</p><h2 id="attempts-title">Mis intentos</h2></div><span>{data.attempts.length} con acceso verificado</span></header>
+    {attempts.length ? <><div className={styles.attemptList}>{attempts.map((attempt) => <AttemptRow key={attempt.id} attempt={attempt} />)}</div>
+      {older.length ? <details className={styles.olderAttempts}><summary>Ver {older.length} intentos anteriores</summary><div className={styles.attemptList}>{older.map((attempt) => <AttemptRow key={attempt.id} attempt={attempt} />)}</div></details> : null}
+    </> : <div className={styles.empty}><span aria-hidden="true">◎</span><div><h3>Todavía no hay intentos</h3><p>Cuando termines un simulacro, su resultado aparecerá aquí.</p></div></div>}
   </section>;
 }
 
@@ -151,7 +182,7 @@ function MockLibrary({ data }: { data: StudentDashboardData }) {
 }
 
 function Courses({ courses, examName }: { courses: StudentDashboardData['courses']; examName?: string }) {
-  return <section className={`${styles.section} ${styles.courseSection}`} aria-labelledby="courses-title">
+  return <section className={`${styles.section} ${styles.courseSection}`} id="clases" aria-labelledby="courses-title">
     <header className={styles.sectionHeader}><div><p className={styles.eyebrow}>Clases con profesor</p><h2 id="courses-title">Mi acompañamiento</h2></div><Link href="/precios">Añadir clases</Link></header>
     {courses.length ? <div className={styles.courseGrid}>{courses.map((course) => <article className={styles.courseCard} key={course.id}>
       <div className={styles.teacherMark} aria-hidden="true"><span /><span /><span /></div>
@@ -166,6 +197,7 @@ function Courses({ courses, examName }: { courses: StudentDashboardData['courses
 
 export default function StudentDashboardView({ data, preview = false }: { data: StudentDashboardData; preview?: boolean }) {
   const action = nextAction(data);
+  const guidedOnly = data.courses.length > 0 && !data.access.product;
   const initial = data.name.trim().charAt(0).toUpperCase() || 'E';
   const completed = data.attempts.length;
   const best = data.attempts.reduce<number | null>((value, attempt) => attempt.score === null ? value : Math.max(value ?? 0, attempt.score), null);
@@ -175,8 +207,8 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
       <nav aria-label="Panel del estudiante">
         <Link className={styles.navActive} href="/dashboard/student"><span>⌂</span>Inicio</Link>
         <a href="#progreso"><span>↗</span>Mi progreso</a>
-        <a href="#simulacros"><span>▤</span>Simulacros</a>
-        <a href="#resultados"><span>◔</span>Resultados</a>
+        {!guidedOnly ? <a href="#simulacros"><span>▤</span>Simulacros</a> : null}
+        {!guidedOnly || data.attempts.length ? <a href="#resultados"><span>◔</span>Resultados</a> : null}
         {data.courses.length || data.assignments.length ? <a href="#asignaciones"><span>✓</span>Asignaciones</a> : null}
         <a href="#clases"><span>◉</span>Mis clases</a>
         <Link href="/dashboard/student/perfil"><span>♙</span>Mi perfil</Link>
@@ -184,22 +216,23 @@ export default function StudentDashboardView({ data, preview = false }: { data: 
       <div className={styles.sidebarBottom}><div className={styles.person}><b>{initial}</b><div><strong>{data.name}</strong><span>{data.email}</span></div></div>{preview ? <span className={styles.previewTag}>Vista de revisión</span> : <form action={signOut}><button type="submit">Cerrar sesión</button></form>}</div>
     </aside>
     <main className={styles.main}>
-      <details className={styles.mobileMenu}><summary><span className={styles.mobileBrand}><b>We</b>Learn</span><span>Menú</span></summary><nav><Link href="/dashboard/student">Inicio</Link><a href="#progreso">Mi progreso</a><a href="#simulacros">Simulacros</a><a href="#resultados">Resultados</a>{data.courses.length || data.assignments.length ? <a href="#asignaciones">Asignaciones</a> : null}<a href="#clases">Mis clases</a></nav></details>
+      <details className={styles.mobileMenu}><summary><span className={styles.mobileBrand}><b>We</b>Learn</span><span>Menú</span></summary><nav><Link href="/dashboard/student">Inicio</Link><a href="#progreso">Mi progreso</a>{!guidedOnly ? <a href="#simulacros">Simulacros</a> : null}{!guidedOnly || data.attempts.length ? <a href="#resultados">Resultados</a> : null}{data.courses.length || data.assignments.length ? <a href="#asignaciones">Asignaciones</a> : null}<a href="#clases">Mis clases</a></nav></details>
       <header className={styles.hero}>
-        <div><p>Tu espacio de estudio</p><h1>Hola, {data.name.split(' ')[0]}.</h1><span>{data.access.exam ? `${data.access.exam.flag} ${data.access.exam.name}` : 'Todo listo para empezar'}</span></div>
+        <div><p>Tu espacio de estudio</p><h1>Hola, {data.name.split(' ')[0]}.</h1><span>{data.access.exam ? `${data.access.exam.flag} ${data.access.exam.name}` : guidedOnly ? `${LANGUAGE_NAMES[data.courses[0].language] ?? data.courses[0].language} · clases con profesor` : 'Todo listo para empezar'}</span></div>
         <div className={styles.heroShapes} aria-hidden="true"><i /><i /><i /></div>
       </header>
       <div className={styles.content}>
         <section className={styles.actionCard} style={{ '--exam-color': data.access.exam?.color ?? '#ef3340' } as React.CSSProperties}>
           <div><p className={styles.eyebrow}>Siguiente paso</p><h2>{action.title}</h2><p>{action.body}</p></div><Link href={action.href}>{action.cta} <span aria-hidden="true">→</span></Link>
         </section>
-        <div className={styles.metrics}><article><span>Intentos</span><strong>{completed}</strong><small>guardados en tu cuenta</small></article><article><span>Mejor resultado</span><strong>{best === null ? '—' : `${best}%`}</strong><small>{best === null ? 'Completa tu primer mock' : 'entre tus intentos'}</small></article><article><span>Simulacros disponibles</span><strong>{data.access.state === 'active' ? (data.access.product === 'single' ? '1' : data.access.exam?.mocks.length ?? 0) : '0'}</strong><small>{data.access.product === 'single' ? data.access.state === 'consumed' ? 'intento utilizado' : 'un intento comprado' : 'de tu familia de examen'}</small></article></div>
-        <ProductCard data={data} />
-        <LearningCurve data={data} />
+        {guidedOnly ? <div className={styles.metrics}><article><span>Clases contratadas</span><strong>{data.courses.reduce((sum, course) => sum + course.classes, 0)}</strong><small>en tus planes de estudio</small></article><article><span>Prácticas terminadas</span><strong>{data.courseProgress.completedActivities}</strong><small>guardadas en tu cuenta</small></article><article><span>Tareas pendientes</span><strong>{data.assignments.filter((item) => item.status === 'assigned').length}</strong><small>de tu profesor</small></article></div>
+          : <div className={styles.metrics}><article><span>Intentos</span><strong>{completed}</strong><small>guardados en tu cuenta</small></article><article><span>Mejor resultado</span><strong>{best === null ? '—' : `${best}%`}</strong><small>{best === null ? 'Completa tu primer mock' : 'entre tus intentos'}</small></article><article><span>Simulacros disponibles</span><strong>{data.access.state === 'active' ? (data.access.product === 'single' ? '1' : data.access.exam?.mocks.length ?? 0) : '0'}</strong><small>{data.access.product === 'single' ? data.access.state === 'consumed' ? 'intento utilizado' : 'un intento comprado' : 'de tu familia de examen'}</small></article></div>}
+        {guidedOnly ? <Courses courses={data.courses} /> : <ProductCard data={data} />}
+        {guidedOnly ? <CourseProgress data={data} /> : <LearningCurve data={data} />}
         <Assignments data={data} preview={preview} />
         <div id="simulacros"><MockLibrary data={data} /></div>
-        <div id="resultados"><Attempts data={data} /></div>
-        <div id="clases"><Courses courses={data.courses} examName={data.access.exam?.name} /></div>
+        <div id="resultados">{data.access.product || data.attempts.length ? <Attempts data={data} /> : null}</div>
+        {guidedOnly ? null : <Courses courses={data.courses} examName={data.access.exam?.name} />}
       </div>
     </main>
   </div>;

@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { isAdminEmail } from '@/lib/config/admins';
+import { isVerifiedAdminUser } from '@/lib/config/admins';
 import { createClient } from '@/lib/supabase/server';
 import { loadStudentDashboard } from '@/lib/student-dashboard/data.server';
 import { trackDailyActivity } from '@/lib/actions/trackActivity';
@@ -9,7 +9,7 @@ export default async function StudentDashboardPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect('/login');
-  if (isAdminEmail(user.email)) redirect('/dashboard/admin');
+  if (isVerifiedAdminUser(user)) redirect('/dashboard/admin');
   const activityPromise = trackDailyActivity();
 
   const { data: profile } = await supabase.from('profiles')

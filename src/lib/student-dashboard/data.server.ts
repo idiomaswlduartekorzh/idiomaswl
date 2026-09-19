@@ -2,6 +2,7 @@ import 'server-only';
 
 import { createAdminClient } from '@/lib/supabase/admin';
 import { objectiveLabel } from '@/lib/course-pricing/catalog';
+import { getWompiServerConfig } from '@/lib/wompi/server';
 import { authenticatedResultHref, getStudentExamWorkspace, productKindForOffer } from './catalog';
 import { buildStudentProgress, parseSkillScores } from './progress';
 import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentSubscription } from './types';
@@ -25,15 +26,21 @@ type SubmissionRow = {
 };
 type SubscriptionRow = StudentSubscription & { offer_id: string; exam_slug: string; created_at: string };
 type CourseOrderRow = { id: string; selection: unknown; amount_in_cents: number; classes: number; sessions: number; created_at: string };
-type FeedbackRow = { submission_id: string; status: 'pending' | 'processing' | 'completed' | 'failed' };
+type FeedbackRow = { submission_id: string; status: 'pending' | 'processing' | 'completed' | 'failed'; generated_report?: unknown };
 type SubmissionAccessRow = { submission_id: string; offer_id: string; personalized_feedback: boolean };
 type AssignmentRow = {
   id: string; title: string; instructions: string; resource_url: string | null; due_at: string | null;
   status: StudentAssignment['status']; assigned_at: string; completed_at: string | null;
 };
+type CourseProgressRow = { course_slug: string; completed_at: string };
+
+const COURSE_SLUGS: Record<string, string> = {
+  ingles: 'english', coreano: 'korean', frances: 'french', aleman: 'german', italiano: 'italian',
+  portugues: 'portuguese', japones: 'japanese', ruso: 'russian',
+};
 
 function commerceEnvironment(): 'sandbox' | 'production' {
-  return process.env.NEXT_PUBLIC_WOMPI_PUBLIC_KEY?.startsWith('pub_prod_') ? 'production' : 'sandbox';
+  return getWompiServerConfig().environment;
 }
 
 function displayName(user: AuthUser, profile: Profile): string {
@@ -51,16 +58,19 @@ function normalizedScore(row: SubmissionRow): { score: number | null; label: str
   return { score: null, label: row.total_label?.trim() || 'Reporte disponible' };
 }
 
-function hasDeliveredAssessment(row: SubmissionRow): boolean {
-  return Boolean(
-    row.reviewed_at || row.writing_task1_assessment || row.writing_task2_assessment
-    || row.toefl_speaking_repeat_assessment || row.toefl_speaking_interview_assessment,
-  );
+function teacherFeedback(value: unknown): StudentAttempt['teacherFeedback'] {
+  if (!value || typeof value !== 'object') return null;
+  const report = value as Record<string, unknown>;
+  if (typeof report.summary !== 'string' || typeof report.strengths !== 'string'
+    || typeof report.improvements !== 'string' || typeof report.nextSteps !== 'string') return null;
+  return { summary: report.summary, strengths: report.strengths,
+    improvements: report.improvements, nextSteps: report.nextSteps };
 }
 
-function toAttempt(row: SubmissionRow, personalized: boolean, feedbackStatus?: FeedbackRow['status']): StudentAttempt {
+function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: FeedbackRow): StudentAttempt {
   const score = normalizedScore(row);
   const exam = getStudentExamWorkspace(row.exam_slug);
+  const deliveredFeedback = feedback?.status === 'completed' ? teacherFeedback(feedback.generated_report) : null;
   return {
     id: row.id,
     examSlug: row.exam_slug,
@@ -75,9 +85,37 @@ function toAttempt(row: SubmissionRow, personalized: boolean, feedbackStatus?: F
     reportHref: authenticatedResultHref(row.id),
     skills: parseSkillScores(row.skills),
     feedbackState: personalized
-      ? (feedbackStatus === 'failed' ? 'failed' : feedbackStatus === 'completed' || hasDeliveredAssessment(row) ? 'delivered' : feedbackStatus ? 'processing' : 'available')
+      ? (deliveredFeedback ? 'delivered' : feedback?.status === 'failed' ? 'failed' : feedback ? 'processing' : 'available')
       : 'not-included',
+    teacherFeedback: deliveredFeedback,
   };
+}
+
+export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string): Promise<StudentAttempt | null> {
+  if (!user.email) return null;
+  const db = createAdminClient();
+  const environment = commerceEnvironment();
+  const { data: submission, error: submissionError } = await db.from('exam_submissions')
+    .select('id,exam_slug,mock_id,mock_title,total_score,total_max,total_label,skills,created_at,reviewed_at,writing_task1_assessment,writing_task2_assessment,toefl_speaking_repeat_assessment,toefl_speaking_interview_assessment')
+    .eq('id', submissionId).eq('user_id', user.id).maybeSingle();
+  if (submissionError || !submission) return null;
+  const row = submission as SubmissionRow;
+  const [access, credit, membership, feedback] = await Promise.all([
+    db.from('xpress_submission_access').select('offer_id,personalized_feedback')
+      .eq('submission_id', submissionId).eq('user_id', user.id).eq('environment', environment).maybeSingle(),
+    db.from('xpress_exam_credits').select('id').eq('user_id', user.id).eq('environment', environment)
+      .eq('consumed_submission_id', submissionId).maybeSingle(),
+    db.from('xpress_memberships').select('offer_id').eq('user_id', user.id).eq('environment', environment)
+      .eq('exam_slug', row.exam_slug).eq('status', 'active').lte('starts_at', row.created_at)
+      .gt('ends_at', row.created_at).limit(1).maybeSingle(),
+    db.from('xpress_personalized_feedback_requests').select('submission_id,status,generated_report').eq('submission_id', submissionId)
+      .eq('user_id', user.id).maybeSingle(),
+  ]);
+  if ([access, credit, membership, feedback].some((result) => result.error)) return null;
+  if (!access.data && !credit.data && !membership.data) return null;
+  const personalized = access.data?.personalized_feedback === true || access.data?.offer_id === 'exam-teacher'
+    || membership.data?.offer_id === 'exam-teacher' || Boolean(feedback.data);
+  return toAttempt(row, personalized, (feedback.data as FeedbackRow | null) ?? undefined);
 }
 
 function courseFromOrder(order: CourseOrderRow): StudentCourse {
@@ -92,7 +130,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
   const fallback: StudentDashboardData = {
     name: displayName(user, profile), email: user.email ?? '', dataAvailable: false,
     access: { state: 'none', product: null, exam: null, startsAt: null, endsAt: null, singleAttemptAvailable: false },
-    subscription: null, attempts: [], courses: [], assignments: [],
+    subscription: null, attempts: [], courses: [], courseProgress: { completedActivities: 0, lastCompletedAt: null }, assignments: [],
     progress: buildStudentProgress([], profile?.target_exam),
   };
   if (!user.email) return fallback;
@@ -107,7 +145,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       });
       if (recoveryError) return fallback;
     }
-    const [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows] = await Promise.all([
+    const [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows] = await Promise.all([
       db.from('xpress_memberships').select('offer_id,exam_slug,status,starts_at,ends_at,created_at')
         .eq('user_id', user.id).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
       db.from('xpress_exam_credits').select('exam_slug,status,granted_at,consumed_at,consumed_submission_id')
@@ -118,17 +156,21 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
         .eq('user_id', user.id).order('created_at', { ascending: false }).limit(100),
       db.from('xpress_submission_access').select('submission_id,offer_id,personalized_feedback')
         .eq('user_id', user.id).eq('environment', environment).order('granted_at', { ascending: false }).limit(100),
-      db.from('xpress_personalized_feedback_requests').select('submission_id,status')
+      db.from('xpress_personalized_feedback_requests').select('submission_id,status,generated_report')
         .eq('user_id', user.id).order('created_at', { ascending: false }).limit(100),
       db.from('course_orders').select('id,selection,amount_in_cents,classes,sessions,created_at')
         .eq('user_id', user.id).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
-      db.from('course_orders').select('id,selection,amount_in_cents,classes,sessions,created_at')
-        .eq('purchaser_email', email).eq('environment', environment).order('created_at', { ascending: false }).limit(20),
+      user.email_confirmed_at
+        ? db.from('course_orders').select('id,selection,amount_in_cents,classes,sessions,created_at')
+          .eq('purchaser_email', email).eq('environment', environment).order('created_at', { ascending: false }).limit(20)
+        : Promise.resolve({ data: [] as CourseOrderRow[], error: null }),
       db.from('daily_activity').select('activity_date').eq('user_id', user.id).order('activity_date', { ascending: false }).limit(365),
       db.from('student_assignments').select('id,title,instructions,resource_url,due_at,status,assigned_at,completed_at')
         .eq('student_id', user.id).neq('status', 'canceled').order('assigned_at', { ascending: false }).limit(100),
+      db.from('user_progress').select('course_slug,completed_at').eq('user_id', user.id)
+        .order('completed_at', { ascending: false }).limit(1000),
     ]);
-    const failed = [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows].some((result) => result.error);
+    const failed = [memberships, credits, subscriptions, submissions, submissionAccess, feedbackRequests, ownedCourseOrders, emailedCourseOrders, activity, assignmentRows, courseProgressRows].some((result) => result.error);
     if (failed) return fallback;
 
     const now = Date.now();
@@ -138,7 +180,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const submissionRows = (submissions.data ?? []) as SubmissionRow[];
     const accessRows = (submissionAccess.data ?? []) as SubmissionAccessRow[];
     const accessBySubmission = new Map(accessRows.map((row) => [row.submission_id, row]));
-    const feedbackBySubmission = new Map(((feedbackRequests.data ?? []) as FeedbackRow[]).map((row) => [row.submission_id, row.status]));
+    const feedbackBySubmission = new Map(((feedbackRequests.data ?? []) as FeedbackRow[]).map((row) => [row.submission_id, row]));
     const activeMembership = membershipRows.find((row) => row.status === 'active' && Date.parse(row.starts_at) <= now && Date.parse(row.ends_at) > now);
     const latestCredit = creditRows.find((row) => row.status === 'active' || row.status === 'consumed') ?? null;
     const latestMembership = membershipRows[0] ?? null;
@@ -187,6 +229,12 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       dueAt: row.due_at, status: row.status, assignedAt: row.assigned_at, completedAt: row.completed_at,
     }));
     const activityDates = (activity.data ?? []).map((row) => String(row.activity_date));
+    const selectedCourseSlugs = new Set(courses.flatMap((course) => {
+      const translated = COURSE_SLUGS[course.language];
+      return translated ? [course.language, translated] : [course.language];
+    }));
+    const completedCourseRows = ((courseProgressRows.data ?? []) as CourseProgressRow[])
+      .filter((row) => selectedCourseSlugs.has(row.course_slug));
 
     return {
       name: displayName(user, profile), email, dataAvailable: true,
@@ -201,6 +249,8 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       subscription,
       attempts,
       courses,
+      courseProgress: { completedActivities: completedCourseRows.length,
+        lastCompletedAt: completedCourseRows[0]?.completed_at ?? null },
       assignments,
       progress: buildStudentProgress(attempts, selectedExam, activityDates),
     };

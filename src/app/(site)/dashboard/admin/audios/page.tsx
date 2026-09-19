@@ -2,13 +2,13 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import AudiosAdmin from './AudiosAdmin';
-import { isAdminEmail } from '@/lib/config/admins';
+import { isVerifiedAdminUser } from '@/lib/config/admins';
 
 export default async function AudiosAdminPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  if (!isAdminEmail(user?.email)) {
+  if (!isVerifiedAdminUser(user)) {
     redirect('/dashboard');
   }
 
