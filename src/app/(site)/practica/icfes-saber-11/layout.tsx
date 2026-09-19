@@ -15,7 +15,7 @@ import IcfesAnalyticsScope from '@/components/analytics/IcfesAnalyticsScope'
  */
 
 const LINKS = [
-  { href: '/examenes/icfes', label: 'Simulacros ICFES Inglés', note: 'Catálogo principal: 34 recursos únicos entre prácticas, cuadernillos y un recorrido guiado de 55 preguntas.' },
+  { href: '/examenes/icfes', label: 'Simulacros ICFES Inglés', note: 'Catálogo principal: 31 recursos únicos entre prácticas, cuadernillos y un recorrido guiado de 55 preguntas.' },
   { href: '/practica/icfes-saber-11/examenes', label: 'Muestras históricas', note: 'Banco atribuido a material ICFES, pendiente de cotejo primario y separado por audiencia.' },
   { href: '/practica/icfes-saber-11/vocabulario', label: 'Banco de vocabulario', note: 'Palabras académicas, conectores y verbos frecuentes para practicar dentro del sitio.' },
   { href: '/blog/icfes-vocabulario-ingles-palabras-mas-frecuentes', label: 'Vocabulario más frecuente', note: 'Las palabras que se repiten año tras año. Es por donde más rápido se sube.' },

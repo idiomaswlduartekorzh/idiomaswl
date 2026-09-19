@@ -40,7 +40,7 @@ export default function ExamenesClient() {
           <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn" data-icfes-cta="workbook_catalog_guided_55" data-icfes-mode="guided" data-icfes-resource-id="welearn-2026-2-55" data-icfes-resource-kind="own" data-icfes-surface="workbook-catalog" style={{ background: 'var(--wl-surface-card)', color: 'var(--wl-on-panel, #172554)', whiteSpace: 'nowrap' }}>Empezar guiado →</Link>
         </div>
         <div style={{ maxWidth: 780, margin: '0 auto 1.5rem' }}>
-          <Link href="/examenes/icfes" className="btn btn-ghost btn-sm">← Ver los 34 recursos de simulacro ICFES Inglés</Link>
+          <Link href="/examenes/icfes" className="btn btn-ghost btn-sm">← Ver los 31 recursos de simulacro ICFES Inglés</Link>
         </div>
         {/* Header */}
         <div style={{ maxWidth: 780, margin: '0 auto 2.5rem' }}>

@@ -113,7 +113,7 @@ export default function ExamJsonLd({ exam, guide }: { exam: Exam; guide?: ExamGu
     graph.push({
       '@type': 'ItemList',
       '@id': `${url}#recursos`,
-      name: '34 recursos para practicar Inglés Saber 11',
+      name: `${resources.length} recursos para practicar Inglés Saber 11`,
       numberOfItems: resources.length,
       itemListElement: resources.map((resource, index) => ({
         '@type': 'ListItem',

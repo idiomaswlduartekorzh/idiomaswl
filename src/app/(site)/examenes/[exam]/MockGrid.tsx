@@ -29,13 +29,14 @@ export default function MockGrid({ exam }: { exam: Exam }) {
   const icfesModes = isIcfes
     ? icfesUniqueResources + exam.mocks.filter(mock => hasGuidedMock(mock.id) || hasGuidedWorkbook(mock.id)).length
     : 0;
+  const ownIcfesMocks = isIcfes ? exam.mocks.filter(mock => !mock.badge) : [];
   const groups = exam.slug === 'icfes'
     ? [
         {
           id: 'practice',
-          title: 'Prácticas propias abreviadas · 23 recursos',
-          description: '23 recorridos creados por WeLearn para entrenar las siete partes. Tienen 45 preguntas y no reproducen la extensión estándar 2026-2 de 55 preguntas.',
-          mocks: exam.mocks.filter(mock => !mock.badge),
+          title: `Prácticas propias abreviadas · ${ownIcfesMocks.length} recursos`,
+          description: `${ownIcfesMocks.length} recorridos creados por WeLearn para entrenar las siete partes. Tienen 45 preguntas y no reproducen la extensión estándar 2026-2 de 55 preguntas.`,
+          mocks: ownIcfesMocks,
         },
         {
           id: 'attributed',
@@ -135,7 +136,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
 
         {isIcfes ? (
           <p style={{ color: 'var(--muted)', lineHeight: 1.65, margin: '0 0 1.5rem' }}>
-            Este catálogo contiene <strong style={{ color: 'var(--ink)' }}>34 recursos distintos</strong>: 23 prácticas propias, 10 bancos históricos atribuidos y el simulacro guiado de 55 preguntas. Algunas prácticas también se pueden abrir en modo examen y modo guiado; por eso existen 62 rutas o modos de uso, pero no 62 exámenes diferentes.
+            Este catálogo contiene <strong style={{ color: 'var(--ink)' }}>{icfesUniqueResources} recursos distintos</strong>: {ownIcfesMocks.length} prácticas propias, 10 bancos históricos atribuidos y el simulacro guiado de 55 preguntas. Algunas prácticas también se pueden abrir en modo examen y modo guiado; por eso existen {icfesModes} rutas o modos de uso, pero no {icfesModes} exámenes diferentes.
           </p>
         ) : null}
 

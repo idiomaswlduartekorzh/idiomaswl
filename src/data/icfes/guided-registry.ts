@@ -3,7 +3,7 @@ export const GUIDED_MOCK_IDS = [
   'mock-01', 'mock-02', 'mock-03', 'mock-04', 'mock-05', 'mock-06',
   'mock-07', 'mock-08', 'mock-09', 'mock-10', 'mock-11', 'mock-12',
   'mock-13', 'mock-14', 'mock-15', 'mock-16', 'mock-17', 'mock-18',
-  'mock-19', 'mock-20', 'mock-21', 'mock-22', 'mock-23',
+  'mock-19', 'mock-20',
 ] as const;
 
 export const GUIDED_WORKBOOK_IDS = [

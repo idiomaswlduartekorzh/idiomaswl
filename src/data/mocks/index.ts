@@ -358,6 +358,9 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
 };
 
 export function getMock(examSlug: string, mockId: string): MockExam | null {
+  // Editorial hold: these drafts must not be served by direct routes, guided
+  // routes, grading or paid-detail APIs until provenance and approval close.
+  if (examSlug === 'icfes' && ['mock-21', 'mock-22', 'mock-23'].includes(mockId)) return null;
   const mock = MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
   if (!mock) return null;
 

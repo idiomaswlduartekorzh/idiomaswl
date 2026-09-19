@@ -205,7 +205,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Simulacros ICFES oficiales</strong>: el ICFES publica cuadernillos de exámenes anteriores en su página oficial.</li>
   <li><strong>Newsela (newsela.com)</strong>: artículos de noticias reales adaptados por nivel de lectura. Ideal para construir velocidad lectora.</li>
-  <li><strong><a href="/examenes/icfes">Simulacros ICFES Inglés en WeLearn</a></strong>: 34 recursos únicos entre prácticas propias, bancos históricos atribuidos y un simulacro guiado de 55 preguntas.</li>
+  <li><strong><a href="/examenes/icfes">Simulacros ICFES Inglés en WeLearn</a></strong>: 31 recursos únicos entre prácticas propias, bancos históricos atribuidos y un simulacro guiado de 55 preguntas.</li>
 </ul>
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
@@ -4867,7 +4867,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Recursos gratuitos para preparar el inglés ICFES</h2>
 <ul>
-  <li><strong><a href="/examenes/icfes">Catálogo de simulacros ICFES Inglés</a></strong>: 34 recursos diferenciados por procedencia y extensión, con acceso al simulacro guiado de 55 preguntas.</li>
+  <li><strong><a href="/examenes/icfes">Catálogo de simulacros ICFES Inglés</a></strong>: 31 recursos diferenciados por procedencia y extensión, con acceso al simulacro guiado de 55 preguntas.</li>
   <li><strong>Caja de herramientas del ICFES</strong>: cuadernillos, preguntas explicadas y materiales publicados por la entidad.</li>
   <li><strong>British Council Learn English</strong> (learnenglish.britishcouncil.org): materiales gratuitos de lectura por nivel</li>
   <li><strong>Duolingo</strong> (solo para vocabulario básico A1–A2 — no es suficiente solo con esto)</li>
@@ -6221,7 +6221,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Ya sabes las palabras. Ahora comprueba si te sirven</h2>
 <p>Memorizar una lista y reconocer esas mismas palabras dentro de un texto, a contrarreloj, son dos cosas distintas. La segunda es la que evalúa el examen.</p>
-<p>En el <a href="/examenes/icfes"><strong>catálogo gratuito de simulacros ICFES Inglés</strong></a> puedes distinguir 23 prácticas propias abreviadas, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado propio de 55 preguntas. La atribución por ítem de esos bancos está pendiente de cotejo. Los resultados de práctica sirven para comparar intentos dentro de cada recurso; no predicen el puntaje oficial ni certifican un nivel.</p>
+<p>En el <a href="/examenes/icfes"><strong>catálogo gratuito de simulacros ICFES Inglés</strong></a> puedes distinguir 20 prácticas propias abreviadas, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado propio de 55 preguntas. La atribución por ítem de esos bancos está pendiente de cotejo. Los resultados de práctica sirven para comparar intentos dentro de cada recurso; no predicen el puntaje oficial ni certifican un nivel.</p>
 <p>Si al hacerlo descubres que el problema no es el vocabulario sino la velocidad de lectura o los conectores, tenemos práctica específica para eso: <a href="/practica/icfes-saber-11/sinonimos-inferencia">sinónimos e inferencia</a> y <a href="/practica/icfes-saber-11/gramatica-conjunciones">conectores y conjunciones</a>, que son los dos tipos de pregunta que más se fallan en la segunda mitad de la prueba.</p>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>

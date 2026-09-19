@@ -619,16 +619,16 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
   },
 
   icfes: {
-    title: 'Simulacro ICFES Inglés gratis: 34 recursos Saber 11',
-    description: '23 prácticas propias, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado de 55 preguntas. Escala reportada: Pre A1, A1, A2 y B1.',
+    title: 'Simulacro ICFES Inglés gratis: 31 recursos Saber 11',
+    description: '20 prácticas propias, 10 bancos históricos atribuidos a material ICFES y un simulacro guiado de 55 preguntas. Escala reportada: Pre A1, A1, A2 y B1.',
     lead:
-      'Sí, aquí puedes hacer un <strong>simulacro ICFES Inglés gratis</strong>. El catálogo reúne 34 recursos únicos: <strong>23 prácticas propias abreviadas de 45 preguntas</strong>, <strong>10 bancos históricos atribuidos a material ICFES</strong>, pendientes de cotejo primario por ítem, y <strong>un simulacro guiado propio de 55 preguntas</strong>. Ninguno promete predecir tu puntaje oficial ni implica afiliación o aval.',
+      'Sí, aquí puedes hacer un <strong>simulacro ICFES Inglés gratis</strong>. El catálogo reúne 31 recursos únicos: <strong>20 prácticas propias abreviadas de 45 preguntas</strong>, <strong>10 bancos históricos atribuidos a material ICFES</strong>, pendientes de cotejo primario por ítem, y <strong>un simulacro guiado propio de 55 preguntas</strong>. Ninguno promete predecir tu puntaje oficial ni implica afiliación o aval.',
     sections: [
       {
-        h: 'Por qué ves 62 rutas, pero solo 34 recursos',
+        h: 'Por qué ves 56 rutas, pero solo 31 recursos',
         body: [
-          'El inventario tiene <strong>34 recursos únicos</strong>: 23 prácticas propias, 10 bancos históricos atribuidos y un simulacro guiado actual. Esa es la cifra que debes usar para comparar el catálogo.',
-          'Varias prácticas se pueden resolver en <strong>modo examen</strong> y también en <strong>modo guiado</strong>. Al contar cada experiencia como una URL aparecen 62 modos o rutas; no son 62 simulacros diferentes ni 62 cuadernillos.',
+          'El inventario tiene <strong>31 recursos únicos</strong>: 20 prácticas propias, 10 bancos históricos atribuidos y un simulacro guiado actual. Esa es la cifra que debes usar para comparar el catálogo.',
+          'Varias prácticas se pueden resolver en <strong>modo examen</strong> y también en <strong>modo guiado</strong>. Al contar cada experiencia como una URL aparecen 56 modos o rutas; no son 56 simulacros diferentes ni 56 cuadernillos.',
           'Si buscas cuadernillos ICFES Inglés, abre el catálogo por audiencia. Si quieres un simulacro de inglés ICFES con enseñanza paso a paso, empieza por el recorrido guiado de 55 preguntas.',
         ],
       },
@@ -669,7 +669,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     ],
     faqs: [
       { q: '¿Los simulacros ICFES de esta página son gratis?', a: 'Sí y no requieren registro. La página diferencia las prácticas propias de WeLearn de diez bancos históricos atribuidos a material ICFES cuya procedencia por ítem todavía no está cotejada.' },
-      { q: '¿Hay 34 simulacros o 62?', a: 'Hay 34 recursos únicos: 23 prácticas propias, 10 bancos históricos atribuidos y un simulacro guiado de 55 preguntas. Algunas prácticas tienen modo examen y modo guiado; al contar cada experiencia aparecen 62 rutas, pero no son 62 exámenes distintos.' },
+      { q: '¿Hay 31 simulacros o 56?', a: 'Hay 31 recursos únicos: 20 prácticas propias, 10 bancos históricos atribuidos y un simulacro guiado de 55 preguntas. Algunas prácticas tienen modo examen y modo guiado; al contar cada experiencia aparecen 56 rutas, pero no son 56 exámenes distintos.' },
       { q: '¿Cuántas preguntas de inglés tiene el ICFES y cuánto dura?', a: 'El cuadernillo estándar 2026-2 incluye 55 preguntas de inglés en la segunda sesión. El ICFES fija 4 horas y 30 minutos para la sesión completa, no un tiempo oficial independiente para inglés.' },
       { q: '¿El ICFES de inglés evalúa listening o speaking?', a: 'No. El componente de inglés del Saber 11 evalúa lectura y uso de la lengua: vocabulario, pragmática, gramática y comprensión literal e inferencial. No hay comprensión auditiva, producción escrita ni prueba oral.' },
       { q: '¿Cuál es el puntaje máximo y qué nivel equivale?', a: 'El máximo es 100 puntos, que corresponde al nivel B1. B1 es el techo de la prueba: el ICFES no reporta B2, C1 ni C2.' },

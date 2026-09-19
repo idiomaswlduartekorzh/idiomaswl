@@ -61,10 +61,10 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
         <div className="wrap wl-hub-panel wl-hub-panel--hero">
           <p className="wl-exam-hero__eyebrow"><span aria-hidden="true">{exam.flag}</span> {exam.language}</p>
           <h1 id="exam-title" className="wl-exam-hero__title">{vocabulary.title}</h1>
-          <p className="wl-exam-hero__sub">{isIcfes ? '34 recursos únicos para practicar las 7 partes del componente de Inglés.' : exam.tagline}</p>
+          <p className="wl-exam-hero__sub">{isIcfes ? `${exam.mocks.length + 1} recursos únicos para practicar las 7 partes del componente de Inglés.` : exam.tagline}</p>
           <p className="wl-exam-hero__desc">
             {isIcfes
-              ? 'Empieza con un simulacro de inglés ICFES de 55 preguntas o elige entre 23 prácticas propias abreviadas y 10 bancos históricos atribuidos a material ICFES. Son materiales de entrenamiento: no predicen un puntaje oficial ni implican afiliación o aval.'
+              ? `Empieza con un simulacro de inglés ICFES de 55 preguntas o elige entre ${exam.mocks.filter((mock) => !mock.badge).length} prácticas propias abreviadas y 10 bancos históricos atribuidos a material ICFES. Son materiales de entrenamiento: no predicen un puntaje oficial ni implican afiliación o aval.`
               : exam.description}
           </p>
 
@@ -80,7 +80,7 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
                   data-icfes-resource-kind="own"
                   data-icfes-surface="exam-hub-hero"
                 >Empezar simulacro de 55 preguntas <span aria-hidden="true">→</span></Link>
-                <a href="#practica" className="btn btn-ghost" data-icfes-cta="hero_inventory" data-icfes-surface="exam-hub-hero">Ver los 34 recursos</a>
+                <a href="#practica" className="btn btn-ghost" data-icfes-cta="hero_inventory" data-icfes-surface="exam-hub-hero">Ver los {exam.mocks.length + 1} recursos</a>
               </>
             ) : (
               <a href="#practica" className="btn">Ver prácticas <span aria-hidden="true">→</span></a>

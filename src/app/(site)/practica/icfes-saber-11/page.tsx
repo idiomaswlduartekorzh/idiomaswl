@@ -57,7 +57,7 @@ export default function Page() {
             <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, practicar sin registro y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
             <div className={styles.hubActions}>
               <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton} data-icfes-cta="learning_hero_diagnostic" data-icfes-surface="learning-hub-hero">Hacer diagnóstico</Link>
-              <Link href="/examenes/icfes" className={styles.secondaryButton} data-icfes-cta="learning_hero_catalog" data-icfes-surface="learning-hub-hero">Ver 34 recursos de examen</Link>
+              <Link href="/examenes/icfes" className={styles.secondaryButton} data-icfes-cta="learning_hero_catalog" data-icfes-surface="learning-hub-hero">Ver 31 recursos de examen</Link>
             </div>
             <div className={styles.truthStrip}>
               <span><strong>55</strong> preguntas en la aplicación estándar 2026-2</span>
