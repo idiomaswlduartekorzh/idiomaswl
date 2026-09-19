@@ -15,6 +15,7 @@ test.describe('registro guiado', () => {
     await page.getByLabel('Examen').selectOption('ielts');
     await expect(page.getByRole('button', { name: /Un examen autodidacta · \$12\.900/ })).toHaveCount(0);
     await page.getByRole('button', { name: /Autodidacta/ }).click();
+    await expect(page.getByRole('button', { name: /revisión personalizada de un tutor de WeLearn dentro de las 24 horas/ })).toBeVisible();
     await page.getByRole('button', { name: /Exámenes \+ feedback personalizado · \$99\.900/ }).click();
     await expect(page.getByRole('button', { name: 'Continuar al registro' })).toBeEnabled();
     await page.getByRole('button', { name: 'Continuar al registro' }).click();
