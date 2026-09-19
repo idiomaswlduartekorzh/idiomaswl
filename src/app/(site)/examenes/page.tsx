@@ -31,7 +31,7 @@ export default function ExamenesPage() {
           Elige tu examen
         </h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 3rem' }}>
-          Prácticas, estrategia de examen y retroalimentación para cada certificación, con alcance identificado en cada recurso.
+          Prácticas y estrategia de examen para cada certificación; retroalimentación personalizada cuando el recurso o plan la incluye.
         </p>
 
         <div className="wl-exams-catalog">
