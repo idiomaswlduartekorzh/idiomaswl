@@ -51,4 +51,8 @@ La migración Xpress general ya está en remoto. No se eliminan órdenes ni enti
 4. Confirmar que PENDING no desbloquea contenido, APPROVED concede una sola vez y los niveles inferiores nunca reciben `personalizedFeedback`.
 5. Verificar el embudo en móvil y escritorio y comprobar que las rutas privadas mantienen `noindex`.
 
+## Pendiente de producto antes de cobrar
+
+El acceso privado al informe depende hoy de cookies firmadas con vencimiento de seis horas y un solo intento activo por navegador. Esto sirve para validar el embudo, pero **no garantiza que un comprador pueda volver a abrir su informe** después de ese plazo o después de realizar otro mock. Antes de habilitar pagos se requiere una ruta durable de recuperación ligada a una cuenta verificada o a otra credencial recuperable, sin permitir que conocer el `attemptId` otorgue acceso.
+
 El arnés colegiado rechaza los reportes del 12 de septiembre porque están vinculados a un hash anterior del manifiesto, además de mantener hallazgos editoriales. No se actualizan hashes ni se reutilizan aprobaciones: el contenido exacto actual requiere una nueva revisión independiente antes de salir de `BLOCKED_EDITORIAL`. Integrar código no equivale a autorizar publicación de los mocks retenidos, cobros ni cambios remotos.
