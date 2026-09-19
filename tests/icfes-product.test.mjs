@@ -41,6 +41,13 @@ test('secure grade route validates signed attempt, exam binding, and returns onl
   assert.doesNotMatch(route, /json\([^\n]*(answers|rationale|explanation)/i);
 });
 
+test('mocks can finish while private persistence is disabled', () => {
+  const route = read('src/app/api/icfes/attempts/grade/route.ts');
+  assert.match(route, /if \(!isIcfesPersistenceEnabled\(\)\) return json\(\{ ok: true, result \}\)/);
+  assert.match(route, /if \(!persisted\) return json\(\{ ok: false/);
+  assert.ok(route.indexOf('if (!isIcfesPersistenceEnabled())') < route.indexOf('persistIcfesAttempt('));
+});
+
 test('score is shown before an explicitly optional, consented lead form', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
   const score = runner.indexOf('data-testid="icfes-free-result"');
