@@ -44,7 +44,7 @@ export async function persistVerifiedIcfesTransaction(input: {
     if (updateError) return 'failed';
     if (nextStatus === 'APPROVED') {
       const { error: entitlementError } = await admin.from('icfes_entitlements').upsert({
-        attempt_id: transaction.attemptId, order_id: order.id, product_code: 'icfes-pass-v1', granted_at: order.paid_at ?? now,
+        attempt_id: transaction.attemptId, order_id: order.id, product_code: 'icfes-single-report-v1', granted_at: order.paid_at ?? now,
       }, { onConflict: 'attempt_id' });
       if (entitlementError) return 'failed';
     }

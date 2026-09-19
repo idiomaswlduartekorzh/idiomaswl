@@ -21,7 +21,7 @@ import {
   type XpressExamSlug,
 } from '@/lib/student-onboarding/catalog';
 import { createClient } from '@/lib/supabase/client';
-import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
+import { getXpressOffersForExam, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
 
 type Mode = 'login' | 'register';
 type OAuthProvider = 'google' | 'apple';
@@ -213,6 +213,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   };
 
   const examsForLanguage = XPRESS_EXAM_OPTIONS.filter((option) => option.language === language);
+  const examOffers = getXpressOffersForExam(exam || '');
 
   return (
     <div style={{
@@ -457,7 +458,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
                 {examPreparationMode === 'self' && <Field label="Elige tu acceso Xpress">
                   <div style={{ display: 'grid', gap: '0.55rem' }}>
-                    {XPRESS_OFFERS.map((offer) => <PlanChoice
+                    {examOffers.filter((offer) => exam !== 'icfes' || offer.id !== 'exam-single').map((offer) => <PlanChoice
                       key={offer.id}
                       selected={examPlan === offer.id}
                       label={`${offer.name} · ${formatCOP(offer.amountInCents / 100)} COP`}
@@ -465,7 +466,9 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                         ? 'Pago único: un simulacro con corrección automática y reporte detallado.'
                         : offer.id === 'exam-auto'
                           ? 'Suscripción renovable: simulacros ilimitados y corrección automática por periodos de 30 días.'
-                          : 'Suscripción renovable: simulacros ilimitados y revisión personalizada de un tutor de WeLearn dentro de las 24 horas siguientes al envío.'}
+                          : exam === 'icfes'
+                            ? 'Feedback pedagógico personalizado de WeLearn, generado automáticamente a partir de tus resultados.'
+                            : 'Suscripción renovable: simulacros ilimitados y revisión personalizada de un tutor de WeLearn dentro de las 24 horas siguientes al envío.'}
                       onSelect={() => { setExamPlan(offer.id); setError(''); }}
                     />)}
                   </div>
@@ -603,7 +606,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                   <span style={{ color: 'var(--ink)', fontSize: 13, fontWeight: 650 }}>
                     {studentPath === 'welearn'
                       ? `${WELEARN_LANGUAGE_OPTIONS.find((option) => option.id === language)?.label ?? ''} · ${PLANS.find((option) => option.id === coursePlan)?.name ?? ''} · ${formatCOP(PLANS.find((option) => option.id === coursePlan)?.price ?? 0)}`
-                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${formatCOP((XPRESS_OFFERS.find((option) => option.id === examPlan)?.amountInCents ?? 0) / 100)}`}
+                      : `${XPRESS_EXAM_OPTIONS.find((option) => option.id === exam)?.label ?? 'Examen'} · ${formatCOP((examOffers.find((option) => option.id === examPlan)?.amountInCents ?? 0) / 100)}`}
                   </span>
                   <button
                     type="button"

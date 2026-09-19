@@ -8,6 +8,7 @@ const singleUser = '92345678-1234-4234-8234-123456789012';
 const subscriptionUser = '72345678-1234-4234-8234-123456789012';
 const currentPriceUser = '62345678-1234-4234-8234-123456789012';
 const replacementUser = '52345678-1234-4234-8234-123456789012';
+const icfesUser = '42345678-1234-4234-8234-123456789012';
 const migration = new URL('../supabase/migrations/20260909000500_xpress_memberships_wompi.sql', import.meta.url);
 const singleMigration = new URL('../supabase/migrations/20260909160000_xpress_single_exam_purchase.sql', import.meta.url);
 const recurringMigration = new URL('../supabase/migrations/20260912110000_xpress_recurring_subscriptions.sql', import.meta.url);
@@ -18,6 +19,7 @@ const dashboardMigration = new URL('../supabase/migrations/20260919195406_xpress
 const assignmentsMigration = new URL('../supabase/migrations/20260919195421_student_assignments.sql', import.meta.url);
 const atomicAccessMigration = new URL('../supabase/migrations/20260919195432_xpress_submission_access_atomic.sql', import.meta.url);
 const reviewWorkflowMigration = new URL('../supabase/migrations/20260919195444_xpress_feedback_review_workflow.sql', import.meta.url);
+const icfesRecurringMigration = new URL('../supabase/migrations/20260912200000_xpress_icfes_commercial_contract_v2.sql', import.meta.url);
 
 test('Xpress ledger prevents duplicate charges and grants access only after an approved payment', async () => {
   const db = new PGlite();
@@ -36,7 +38,8 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
         ('${singleUser}','single@example.com',now()),
         ('${subscriptionUser}','recurring@example.com',now()),
         ('${currentPriceUser}','current@example.com',now()),
-        ('${replacementUser}','single@example.com',now());
+        ('${replacementUser}','single@example.com',now()),
+        ('${icfesUser}','icfes@example.com',now());
       create table public.exam_submissions(
         id uuid primary key default gen_random_uuid(),user_id uuid references auth.users(id),exam_slug text,
         created_at timestamptz not null default now()
@@ -60,6 +63,7 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     await db.exec(await readFile(assignmentsMigration, 'utf8'));
     await db.exec(await readFile(atomicAccessMigration, 'utf8'));
     await db.exec(await readFile(reviewWorkflowMigration, 'utf8'));
+    await db.exec(await readFile(icfesRecurringMigration, 'utf8'));
     await db.exec('set role service_role');
     const legal = { version: 'xpress-20260908-v1' };
     const prepare = async ({ key = user, offer = 'exam-auto', kind = 'new', credit = 0, amount = 4_900_000, coverage = null } = {}) =>
@@ -259,6 +263,38 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     assert.equal((await db.query('select count(*)::int as count from public.student_assignments')).rows[0].count, 0);
 
     await db.exec('reset role');
+
+    const icfesLegal = { recurring: true, cadenceDays: 30, automated: true };
+    await db.exec('set role service_role');
+    await assert.rejects(
+      db.query(
+        'select * from public.prepare_icfes_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
+        [icfesUser, 'icfes@example.com', icfesUser, 'production', 'icfes-2026-09-12-v1', 'exam-teacher', 'icfes', 9_990_000, new Date().toISOString(), 'icfes-terms-2026-09-12-v2', 'icfes-privacy-2026-09-12-v2', 'icfes-recurring-30d-2026-09-12-v1', icfesLegal],
+      ),
+      /invalid_icfes_subscription_version/,
+    );
+    await assert.rejects(
+      db.query(
+        'select * from public.prepare_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
+        [icfesUser, 'icfes@example.com', '42345678-1234-4234-8234-123456789012', 'sandbox', 'xpress-2026-09-12-v4', 'exam-teacher', 'icfes', 9_900_000, new Date().toISOString(), 'xpress-20260912-v3', 'xpress-privacy-20260908-v1', 'xpress-recurring-30d-20260912-v1', icfesLegal],
+      ),
+      /invalid_icfes_subscription_contract/,
+    );
+    const icfesSubscription = (await db.query(
+      'select * from public.prepare_icfes_xpress_subscription($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)',
+      [icfesUser, 'icfes@example.com', icfesUser, 'sandbox', 'icfes-2026-09-12-v2', 'exam-teacher', 'icfes', 9_990_000, new Date().toISOString(), 'icfes-terms-2026-09-12-v2', 'icfes-privacy-2026-09-12-v2', 'icfes-recurring-30d-2026-09-12-v1', icfesLegal],
+    )).rows[0];
+    assert.equal(icfesSubscription.amount_in_cents, 9_990_000);
+    await db.query('select public.attach_xpress_subscription_source($1,$2,$3,$4,$5)', [icfesSubscription.id, icfesUser, 'sandbox', '5891', 'AVAILABLE']);
+    const icfesCharge = (await db.query('select * from public.prepare_xpress_subscription_charge($1)', [icfesSubscription.id])).rows[0];
+    assert.equal(icfesCharge.offer_version, 'icfes-2026-09-12-v2');
+    assert.equal(icfesCharge.exam_slug, 'icfes');
+    assert.equal(icfesCharge.amount_in_cents, 9_990_000);
+    await db.query(
+      'select public.record_xpress_payment($1,$2,$3,$4,$5,$6,$7,$8)',
+      [icfesCharge.reference, 'sandbox', 'icfes-subscription-approved', 9_990_000, 'COP', 'APPROVED', new Date().toISOString(), 'icfes-subscription-approved'],
+    );
+    assert.equal((await db.query('select count(*)::int as count from xpress_memberships where subscription_id=$1 and exam_slug=$2', [icfesSubscription.id, 'icfes'])).rows[0].count, 1);
     await db.exec('set role anon');
     await assert.rejects(db.query('select * from xpress_orders'), /permission denied/);
     await assert.rejects(db.query('select * from xpress_memberships'), /permission denied/);

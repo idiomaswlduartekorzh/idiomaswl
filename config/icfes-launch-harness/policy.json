@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "candidateId": "icfes-final-integration-20260912",
+  "artifactRoot": "artifacts/icfes-launch-harness/board-20260912",
+  "requiredReportRoles": ["english-specialist", "icfes-format-specialist", "editorial-adjudicator"],
+  "commercialContract": {
+    "examSlug": "icfes",
+    "offers": [
+      { "productCode": "icfes-single-report-v1", "priceCop": 12900, "billing": "one-time", "personalizedFeedback": false },
+      { "productCode": "icfes-membership-v1", "priceCop": 49900, "billing": "recurring-30-days", "personalizedFeedback": false },
+      { "productCode": "icfes-intensive-v1", "priceCop": 99900, "billing": "recurring-30-days", "personalizedFeedback": true, "benefit": "Feedback pedagógico personalizado de WeLearn, generado automáticamente a partir de tus resultados" }
+    ]
+  },
+  "expansion": {
+    "frozen": true,
+    "nextCandidateId": "mock-24",
+    "workQueue": [],
+    "publicationAllowed": false
+  },
+  "paymentPolicy": {
+    "defaultEnvironment": "sandbox",
+    "productionEnabled": false,
+    "remoteChargesAllowedByHarness": false
+  }
+}

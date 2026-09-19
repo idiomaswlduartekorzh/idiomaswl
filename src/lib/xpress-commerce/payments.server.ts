@@ -5,10 +5,20 @@ import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
 import { XPRESS_EXAM_OPTIONS } from '@/lib/student-onboarding/catalog';
-import { getXpressOffer, quoteXpressPurchase, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
+import { assertIcfesWompiEnvironment, ICFES_EXAM_SLUG } from '@/lib/icfes/commercial-contract';
+import {
+  getXpressOffer,
+  getXpressOfferVersion,
+  quoteXpressPurchase,
+  type XpressMembershipOfferId,
+} from './catalog';
 import { fulfillPaidXpressOrder } from './fulfillment.server';
 import { parseXpressProviderPayment, type XpressOrderInput, type XpressProviderPayment } from './payment';
-import { XPRESS_LEGAL_SNAPSHOT, XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from './terms';
+import {
+  xpressLegalSnapshotForExam,
+  xpressPrivacyVersionForExam,
+  xpressTermsVersionForExam,
+} from './terms';
 
 type MembershipRow = {
   id: string;
@@ -24,13 +34,14 @@ export async function xpressUser() {
   return !error && user?.email_confirmed_at && user.email ? user : null;
 }
 
-export async function activeXpressMembership(userId: string): Promise<MembershipRow | null> {
+export async function activeXpressMembership(userId: string, examSlug?: string): Promise<MembershipRow | null> {
   const config = getWompiServerConfig();
-  const { data, error } = await createAdminClient().from('xpress_memberships')
+  let query = createAdminClient().from('xpress_memberships')
     .select('id,exam_slug,offer_id,starts_at,ends_at')
     .eq('user_id', userId).eq('environment', config.environment).eq('status', 'active')
-    .lte('starts_at', new Date().toISOString()).gt('ends_at', new Date().toISOString()).order('ends_at', { ascending: false })
-    .abortSignal(AbortSignal.timeout(8000));
+    .lte('starts_at', new Date().toISOString()).gt('ends_at', new Date().toISOString());
+  if (examSlug) query = query.eq('exam_slug', examSlug);
+  const { data, error } = await query.order('ends_at', { ascending: false }).abortSignal(AbortSignal.timeout(8000));
   if (error) throw new Error('xpress_membership_lookup_failed');
   const memberships = (data ?? []) as MembershipRow[];
   return memberships.find((item) => item.offer_id === 'exam-teacher') ?? memberships[0] ?? null;
@@ -38,6 +49,10 @@ export async function activeXpressMembership(userId: string): Promise<Membership
 
 export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<typeof xpressUser>>>, input: XpressOrderInput) {
   const config = getWompiServerConfig();
+  if (input.examSlug === ICFES_EXAM_SLUG) {
+    assertIcfesWompiEnvironment(config.environment);
+    throw new Error('icfes_attempt_checkout_required');
+  }
   if (process.env.VERCEL_ENV !== 'production' && config.environment === 'production') throw new Error('production_disabled_outside_production');
   const { data: profile, error: profileError } = await createAdminClient().from('profiles')
     .select('student_path,target_exam').eq('id', user.id).maybeSingle();
@@ -61,16 +76,16 @@ export async function prepareXpressOrder(user: NonNullable<Awaited<ReturnType<ty
     p_email: user.email!.toLowerCase(),
     p_key: input.idempotencyKey,
     p_environment: config.environment,
-    p_offer_version: XPRESS_OFFER_VERSION,
+    p_offer_version: getXpressOfferVersion(input.examSlug),
     p_offer: quote.offer.id,
     p_exam: quote.examSlug,
     p_kind: orderKind,
     p_credit: quote.creditInCents,
     p_amount: quote.amountInCents,
     p_coverage_ends: coverageEndsAt,
-    p_terms: XPRESS_TERMS_VERSION,
-    p_privacy: XPRESS_PRIVACY_VERSION,
-    p_legal: JSON.parse(XPRESS_LEGAL_SNAPSHOT),
+    p_terms: xpressTermsVersionForExam(input.examSlug),
+    p_privacy: xpressPrivacyVersionForExam(input.examSlug),
+    p_legal: JSON.parse(xpressLegalSnapshotForExam(input.examSlug)),
   }).abortSignal(AbortSignal.timeout(10000));
   if (error || !data) {
     const code = error?.message?.includes('xpress_order_pending') ? 'xpress_order_pending' : 'xpress_order_storage_unavailable';
@@ -105,9 +120,15 @@ export async function xpressOrderState(orderId: string) {
 
 export async function checkoutForXpressOrder(order: Record<string, unknown>, origin: string) {
   const config = getWompiServerConfig();
+  if (order.exam_slug === ICFES_EXAM_SLUG) assertIcfesWompiEnvironment(config.environment);
   if (config.environment !== order.environment || (process.env.VERCEL_ENV !== 'production' && config.environment === 'production')) throw new Error('environment_mismatch');
   if (order.subscription_id) throw new Error('recurring_order_checkout_forbidden');
-  if (![XPRESS_TERMS_VERSION, 'xpress-20260909-v2', 'xpress-20260908-v1'].includes(String(order.terms_version))) throw new Error('terms_unavailable');
+  const expectedTerms = xpressTermsVersionForExam(String(order.exam_slug));
+  const acceptedTerms = String(order.terms_version);
+  const legacyTerms = order.exam_slug === ICFES_EXAM_SLUG
+    ? []
+    : ['xpress-20260909-v2', 'xpress-20260908-v1'];
+  if (acceptedTerms !== expectedTerms && !legacyTerms.includes(acceptedTerms)) throw new Error('terms_unavailable');
   const state = await xpressOrderState(String(order.id));
   if (['paid', 'review', 'pending'].includes(state.status)) return { status: state.status };
   const expirationTime = new Date(String(order.expires_at)).toISOString();

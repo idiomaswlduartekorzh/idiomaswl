@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
 import { getIcfesSecureExam } from '@/lib/icfes/exam-registry.server';
 import { gradeIcfesAttempt, persistIcfesAttempt } from '@/lib/icfes/grading.server';
-import { validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
+import { toIcfesFreeSummary, validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
 import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 import type { MCQQuestion } from '@/data/mocks/types';
+import type { IcfesGradeReceiptDto, IcfesUnavailableCommerceGradeDto } from '@/lib/icfes/attempt-contract';
+import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 
 export const runtime = 'nodejs';
 
@@ -29,9 +31,19 @@ export async function POST(request: Request): Promise<Response> {
   if (!answers) return json({ ok: false, error: 'Las respuestas no corresponden a este simulacro.' }, 400);
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
-  // Mocks remain usable until the private attempt schema is approved and enabled.
-  // No attempt cookie is issued because there is no persisted paid report to access.
-  if (!isIcfesPersistenceEnabled()) return json({ ok: true, result });
+  if (!isIcfesPersistenceEnabled()) {
+    // Keep existing mocks usable while the private database and consent ledger
+    // are not activated. Do not collect a lead or imply that paid detail exists.
+    const fallback: IcfesUnavailableCommerceGradeDto = {
+      ok: true,
+      attemptId: result.attemptId,
+      examId: result.examId,
+      leadRequired: false,
+      commerceAvailable: false,
+      freeSummary: toIcfesFreeSummary(result),
+    };
+    return json(fallback);
+  }
   try {
     const persisted = await persistIcfesAttempt({ attemptId: payload.attemptId, examId, token: String(body.attemptToken), answers, result });
     if (!persisted) return json({ ok: false, error: 'El guardado privado del intento no está habilitado.' }, 503);
@@ -40,7 +52,15 @@ export async function POST(request: Request): Promise<Response> {
     console.error('[icfes-grade] secure persistence failed:', error instanceof Error ? error.message : 'unknown');
     return json({ ok: false, error: 'No pudimos guardar el intento seguro.' }, 503);
   }
-  const response = json({ ok: true, result });
+  const receipt: IcfesGradeReceiptDto = {
+    ok: true,
+    attemptId: result.attemptId,
+    examId: result.examId,
+    leadRequired: true,
+    officialResource: result.officialResource,
+    premiumEligible: result.premiumEligible,
+  };
+  const response = json(receipt);
   response.cookies.set(ICFES_ATTEMPT_COOKIE, String(body.attemptToken), {
     httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax', path: '/', maxAge: 6 * 60 * 60,
   });

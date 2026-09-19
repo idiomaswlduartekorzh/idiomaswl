@@ -6,12 +6,13 @@ import { XPRESS_EXAM_OPTIONS, xpressClassPurchasePath, type XpressExamSlug } fro
 import { activeXpressMembership } from '@/lib/xpress-commerce/payments.server';
 import { currentXpressSubscription, wompiAcceptanceLinks } from '@/lib/xpress-commerce/subscriptions.server';
 import { getWompiServerConfig } from '@/lib/wompi/server';
+import { ICFES_ATTEMPT_ID_PATTERN } from '@/lib/icfes/attempt-contract';
 import type { XpressOfferId } from '@/lib/xpress-commerce/catalog';
 import XpressMembershipClient from './XpressMembershipClient';
 
 export const metadata: Metadata = {
   title: 'Membresía de exámenes | WeLearn',
-  description: 'Elige un examen individual o una suscripción recurrente y añade clases con docente si las necesitas.',
+  description: 'Elige un examen individual o una suscripción recurrente. Las clases se contratan por separado.',
   robots: { index: false, follow: false },
 };
 
@@ -31,8 +32,11 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
   const params = await searchParams;
   const orderId = typeof params.orden === 'string' ? params.orden : null;
   const transactionId = typeof params.id === 'string' ? params.id : null;
+  const requestedIcfesAttempt = typeof params.icfes_intento === 'string' ? params.icfes_intento : '';
+  const icfesAttemptId = exam.id === 'icfes' && ICFES_ATTEMPT_ID_PATTERN.test(requestedIcfesAttempt)
+    ? requestedIcfesAttempt : null;
   const [membership, subscription, wompiDocuments] = await Promise.all([
-    activeXpressMembership(user.id),
+    activeXpressMembership(user.id, exam.id),
     currentXpressSubscription(user.id),
     wompiAcceptanceLinks().catch(() => null),
   ]);
@@ -69,6 +73,7 @@ export default async function XpressMembershipPage({ searchParams }: { searchPar
     wompiDocuments={wompiDocuments}
     subscriptionIdempotencyKey={randomUUID()}
     setupMessage={subscriptionMessage(params)}
+    icfesAttemptId={icfesAttemptId}
   />;
 }
 

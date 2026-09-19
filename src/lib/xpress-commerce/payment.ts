@@ -1,6 +1,10 @@
 import { XPRESS_EXAM_OPTIONS, type XpressExamSlug } from '../student-onboarding/catalog.ts';
 import { getXpressOffer, type XpressOfferId } from './catalog.ts';
-import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS_VERSION } from './terms.ts';
+import {
+  xpressPrivacyVersionForExam,
+  xpressRecurringConsentVersionForExam,
+  xpressTermsVersionForExam,
+} from './terms.ts';
 
 export type XpressOrderInput = Readonly<{
   idempotencyKey: string;
@@ -28,7 +32,8 @@ export function parseXpressOrderInput(value: unknown): XpressOrderInput | null {
   if (typeof input.idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.idempotencyKey)) return null;
   if (!XPRESS_EXAM_OPTIONS.some((item) => item.id === input.examSlug)) return null;
   if (input.offerId !== 'exam-single' && input.offerId !== 'exam-auto' && input.offerId !== 'exam-teacher') return null;
-  if (input.acceptedTerms !== XPRESS_TERMS_VERSION || input.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
+  if (input.acceptedTerms !== xpressTermsVersionForExam(String(input.examSlug))
+    || input.acceptedPrivacy !== xpressPrivacyVersionForExam(String(input.examSlug))) return null;
   getXpressOffer(input.offerId);
   return {
     idempotencyKey: input.idempotencyKey,
@@ -52,8 +57,9 @@ export function parseXpressSubscriptionForm(value: FormData): XpressSubscription
   if (typeof idempotencyKey !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(idempotencyKey)) return null;
   if (typeof examSlug !== 'string' || !XPRESS_EXAM_OPTIONS.some((item) => item.id === examSlug)) return null;
   if (offerId !== 'exam-auto' && offerId !== 'exam-teacher') return null;
-  if (acceptedTerms !== XPRESS_TERMS_VERSION || acceptedPrivacy !== XPRESS_PRIVACY_VERSION) return null;
-  if (acceptedRecurring !== XPRESS_RECURRING_CONSENT_VERSION || acceptedWompi !== 'yes') return null;
+  if (acceptedTerms !== xpressTermsVersionForExam(examSlug)
+    || acceptedPrivacy !== xpressPrivacyVersionForExam(examSlug)) return null;
+  if (acceptedRecurring !== xpressRecurringConsentVersionForExam(examSlug) || acceptedWompi !== 'yes') return null;
   if (paymentSourceType !== 'CARD' || typeof paymentSourceToken !== 'string' || !/^tok_(test|prod)_[A-Za-z0-9_-]{8,240}$/.test(paymentSourceToken)) return null;
   return {
     idempotencyKey,

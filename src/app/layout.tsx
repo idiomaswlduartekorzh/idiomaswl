@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // definen lo sustituyen entero, sin heredar ningún sufijo.
   title: 'Idiomas WeLearn — Aprende un idioma, en serio',
   description:
-    'Aprende coreano, inglés, francés, alemán, italiano y más con el método WeLearn: once pasos diarios que imitan cómo el cerebro interioriza un idioma. Simulacros completos de TOEFL, IELTS e ICFES.',
+    'Aprende coreano, inglés, francés, alemán, italiano y más con el método WeLearn: once pasos diarios que imitan cómo el cerebro interioriza un idioma. Simulacros de TOEFL e IELTS y prácticas propias abreviadas de ICFES.',
   keywords: [
     'aprender idiomas', 'coreano online', 'aprender inglés', 'TOEFL simulacro',
     'IELTS práctica', 'ICFES inglés', 'Saber 11 inglés', 'método WeLearn',

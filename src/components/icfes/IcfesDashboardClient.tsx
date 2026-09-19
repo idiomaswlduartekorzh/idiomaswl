@@ -61,7 +61,7 @@ const WEEK_RECOMMENDATIONS: Record<number, string[]> = {
   1: ['Vocabulario básico', 'Construcciones básicas', 'Matching simple'],
   2: ['Paráfrasis', 'Conectores', 'Referencias'],
   3: ['Idea principal', 'Detalles específicos', 'Inferencias'],
-  4: ['Simulacro completo', 'Gestión de tiempo', 'Problemas comunes'],
+  4: ['Práctica abreviada', 'Gestión de tiempo', 'Problemas comunes'],
   5: ['Simulacro oficial', 'Repaso final', 'Confianza'],
 }
 

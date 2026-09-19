@@ -23,7 +23,7 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
           const eventKey = `wl_icfes_purchase_complete:${attemptId}`;
           if (!window.sessionStorage.getItem(eventKey)) {
             trackIcfesEvent('icfes_purchase_complete', {
-              mock_id: body.result.examId, product_code: 'icfes-pass-v1', amount_cop: 49900,
+              mock_id: body.result.examId, product_code: body.productCode, amount_cop: body.amountInCents / 100,
             });
             window.sessionStorage.setItem(eventKey, '1');
           }
@@ -34,7 +34,7 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
   }, [attemptId]);
 
   return <div className="prac-shell"><div className="prac-results">
-    <p className="eyebrow"><span className="ink-line" />Pase ICFES</p>
+    <p className="eyebrow"><span className="ink-line" />Informe ICFES</p>
     <h1>Detalle de tu intento</h1>
     {!detail && !error && <p role="status">Verificando el estado del pago…</p>}
     {error && <div className="icfes-product-card icfes-product-card--muted"><p role="alert">{error}</p></div>}
@@ -45,6 +45,17 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
     </div>}
     {detail?.paymentStatus === 'APPROVED' && detail.result && <>
       <div className="prac-results__hero"><p className="prac-results__label">Pago verificado · análisis pedagógico</p><div className="prac-results__score">{detail.result.percentage}</div><p className="prac-results__fraction">{detail.result.correct}/{detail.result.total} correctas</p></div>
+      {detail.personalizedFeedback && <article className="icfes-product-card" data-testid="icfes-personalized-feedback">
+        <p className="icfes-product-card__eyebrow">EXCLUSIVO · MEMBRESÍA ICFES INTENSIVA</p>
+        <h2>{detail.personalizedFeedback.headline}</h2>
+        <p>{detail.personalizedFeedback.executiveReading}</p>
+        {detail.personalizedFeedback.strength && <p><strong>Fortaleza: {detail.personalizedFeedback.strength.label}.</strong> {detail.personalizedFeedback.strength.evidence} {detail.personalizedFeedback.strength.action}</p>}
+        {detail.personalizedFeedback.priority && <p><strong>Prioridad: {detail.personalizedFeedback.priority.label}.</strong> {detail.personalizedFeedback.priority.evidence} {detail.personalizedFeedback.priority.action}</p>}
+        <h3>Plan de siete días</h3>
+        <ol>{detail.personalizedFeedback.sevenDayPlan.map((item) => <li key={item.day}><strong>Día {item.day} · {item.focus}:</strong> {item.task}</li>)}</ol>
+        <p><strong>Meta:</strong> {detail.personalizedFeedback.nextMockGoal}</p>
+        <small>Generado automáticamente a partir de este intento · ID {detail.personalizedFeedback.feedbackId.slice(0, 12)} · evidencia {detail.personalizedFeedback.traceability.inputDigest.slice(0, 12)}</small>
+      </article>}
       <div className="prac-results__review"><h2 className="prac-results__review-title">Pregunta por pregunta</h2>
         {(detail.questions ?? []).map((question) => <article key={question.id} className={`prac-review-item ${question.correct ? 'prac-review-item--correct' : 'prac-review-item--wrong'}`}>
           <div className="prac-review-item__header"><span className="prac-review-item__num">P{question.number} · Parte {question.part}</span><span className={`prac-review-item__badge ${question.correct ? 'prac-review-item__badge--ok' : 'prac-review-item__badge--err'}`}>{question.correct ? '✓ Correcta' : '✗ Por revisar'}</span></div>

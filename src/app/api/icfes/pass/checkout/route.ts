@@ -5,9 +5,20 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import { createClient } from '@/lib/supabase/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { getIcfesPremiumAvailability } from '@/lib/icfes/exam-registry.server';
-import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
+import {
+  ICFES_ATTEMPT_COOKIE,
+  ICFES_LEAD_COOKIE,
+  verifyIcfesAttemptToken,
+  verifyIcfesLeadToken,
+} from '@/lib/icfes/attempt-token.server';
 import { getIcfesProductConfig, isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import type { IcfesCheckoutDto, IcfesPaymentStatus } from '@/lib/icfes/attempt-contract';
+import {
+  ICFES_LEGAL_SNAPSHOT,
+  ICFES_PRIVACY_VERSION,
+  ICFES_PURCHASE_CONSENT_VERSION,
+  ICFES_TERMS_VERSION,
+} from '@/lib/icfes/terms';
 
 export const runtime = 'nodejs';
 
@@ -23,9 +34,18 @@ export async function POST(request: Request): Promise<Response> {
   try { body = await request.json() as Record<string, unknown>; }
   catch { return json({ ok: false, error: 'Solicitud inválida.' }, 400); }
   const attemptId = typeof body.attemptId === 'string' ? body.attemptId : '';
-  const token = (await cookies()).get(ICFES_ATTEMPT_COOKIE)?.value;
+  if (body.acceptedTerms !== ICFES_TERMS_VERSION
+    || body.acceptedPrivacy !== ICFES_PRIVACY_VERSION
+    || body.acceptedConsent !== ICFES_PURCHASE_CONSENT_VERSION) {
+    return json({ ok: false, error: 'Acepta las condiciones vigentes antes de continuar.' }, 400);
+  }
+  const jar = await cookies();
+  const token = jar.get(ICFES_ATTEMPT_COOKIE)?.value;
   const payload = verifyIcfesAttemptToken(token);
-  if (!payload || payload.attemptId !== attemptId) return json({ ok: false, error: 'El intento no está autorizado.' }, 403);
+  if (!payload || payload.attemptId !== attemptId
+    || !verifyIcfesLeadToken(jar.get(ICFES_LEAD_COOKIE)?.value, attemptId)) {
+    return json({ ok: false, error: 'El intento no está autorizado.' }, 403);
+  }
   const availability = getIcfesPremiumAvailability(payload.examId);
   if (!availability.eligible) return json({ ok: false, error: availability.reason ?? 'Este recurso no admite detalle premium.' }, 403);
 
@@ -38,7 +58,7 @@ export async function POST(request: Request): Promise<Response> {
   if (!attempt || attempt.exam_id !== payload.examId || attempt.access_token_hash !== tokenHash
     || (attempt.user_id && attempt.user_id !== user?.id)) return json({ ok: false, error: 'El intento guardado no coincide con tu sesión.' }, 403);
 
-  const select = 'id, attempt_id, reference, amount_in_cents, currency, status, environment';
+  const select = 'id, attempt_id, reference, amount_in_cents, currency, status, environment, terms_version, privacy_version, consent_version';
   const { data: existing } = await admin.from('icfes_pass_orders').select(select)
     .eq('attempt_id', attemptId).in('status', ['PENDING', 'APPROVED']).order('created_at', { ascending: false }).limit(1).maybeSingle();
   let order = existing;
@@ -48,6 +68,11 @@ export async function POST(request: Request): Promise<Response> {
       attempt_id: attemptId, user_id: user?.id ?? null, reference,
       amount_in_cents: config.amountInCents, currency: config.currency,
       status: 'PENDING', environment: config.environment,
+      terms_version: ICFES_TERMS_VERSION,
+      privacy_version: ICFES_PRIVACY_VERSION,
+      consent_version: ICFES_PURCHASE_CONSENT_VERSION,
+      legal_snapshot: JSON.parse(ICFES_LEGAL_SNAPSHOT),
+      accepted_at: new Date().toISOString(),
     }).select(select).single();
     if (inserted.error || !inserted.data) {
       // Two clicks can race against the partial unique index. Recover the one
@@ -63,6 +88,11 @@ export async function POST(request: Request): Promise<Response> {
   }
   if (Number(order.amount_in_cents) !== config.amountInCents || order.environment !== config.environment) {
     return json({ ok: false, error: 'El precio o ambiente del pago no coincide.' }, 409);
+  }
+  if (order.terms_version !== ICFES_TERMS_VERSION
+    || order.privacy_version !== ICFES_PRIVACY_VERSION
+    || order.consent_version !== ICFES_PURCHASE_CONSENT_VERSION) {
+    return json({ ok: false, error: 'La orden existente usa condiciones obsoletas.' }, 409);
   }
   const resultUrl = `${config.origin}/practica/icfes-saber-11/resultados/${attemptId}`;
   let checkoutUrl: string | null = null;

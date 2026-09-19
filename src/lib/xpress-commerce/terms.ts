@@ -1,3 +1,14 @@
+import { ICFES_EXAM_SLUG } from '../icfes/commercial-contract.ts';
+import {
+  ICFES_LEGAL_SNAPSHOT,
+  ICFES_PRIVACY_NOTICE,
+  ICFES_PRIVACY_VERSION,
+  ICFES_RECURRING_CONSENT,
+  ICFES_RECURRING_CONSENT_VERSION,
+  ICFES_TERMS,
+  ICFES_TERMS_VERSION,
+} from '../icfes/terms.ts';
+
 export const XPRESS_TERMS_VERSION = 'xpress-20260912-v4';
 export const XPRESS_PRIVACY_VERSION = 'xpress-privacy-20260908-v1';
 
@@ -37,3 +48,31 @@ export const XPRESS_LEGAL_SNAPSHOT = JSON.stringify({
   recurringConsent: XPRESS_RECURRING_CONSENT,
   sections: XPRESS_TERMS,
 });
+
+export function xpressTermsForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_TERMS : XPRESS_TERMS;
+}
+
+export function xpressTermsVersionForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_TERMS_VERSION : XPRESS_TERMS_VERSION;
+}
+
+export function xpressPrivacyNoticeForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_PRIVACY_NOTICE : XPRESS_PRIVACY_NOTICE;
+}
+
+export function xpressPrivacyVersionForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_PRIVACY_VERSION : XPRESS_PRIVACY_VERSION;
+}
+
+export function xpressRecurringConsentForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_RECURRING_CONSENT : XPRESS_RECURRING_CONSENT;
+}
+
+export function xpressRecurringConsentVersionForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_RECURRING_CONSENT_VERSION : XPRESS_RECURRING_CONSENT_VERSION;
+}
+
+export function xpressLegalSnapshotForExam(examSlug: string) {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_LEGAL_SNAPSHOT : XPRESS_LEGAL_SNAPSHOT;
+}
