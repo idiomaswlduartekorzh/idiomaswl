@@ -106,7 +106,7 @@ export async function loadOwnedPaidAttempt(user: AuthUser, submissionId: string)
     db.from('xpress_exam_credits').select('id').eq('user_id', user.id).eq('environment', environment)
       .eq('consumed_submission_id', submissionId).maybeSingle(),
     db.from('xpress_memberships').select('offer_id').eq('user_id', user.id).eq('environment', environment)
-      .eq('exam_slug', row.exam_slug).eq('status', 'active').lte('starts_at', row.created_at)
+      .eq('exam_slug', row.exam_slug).neq('status', 'revoked').lte('starts_at', row.created_at)
       .gt('ends_at', row.created_at).limit(1).maybeSingle(),
     db.from('xpress_personalized_feedback_requests').select('submission_id,status,generated_report').eq('submission_id', submissionId)
       .eq('user_id', user.id).maybeSingle(),
@@ -189,7 +189,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
     const accessState = activeMembership ? 'active' : latestCredit?.status === 'active' ? 'active' : latestCredit?.status === 'consumed' ? 'consumed' : latestMembership ? 'expired' : 'none';
     const consumedSubmissionIds = new Set(creditRows.flatMap((row) => row.consumed_submission_id ? [row.consumed_submission_id] : []));
     const isMembershipSubmission = (row: SubmissionRow) => membershipRows.some((membership) => (
-      membership.status === 'active' && membership.exam_slug === row.exam_slug
+      membership.status !== 'revoked' && membership.exam_slug === row.exam_slug
       && Date.parse(row.created_at) >= Date.parse(membership.starts_at)
       && Date.parse(row.created_at) < Date.parse(membership.ends_at)
     ));
@@ -220,7 +220,7 @@ export async function loadStudentDashboard(user: AuthUser, profile: Profile): Pr
       const ledgerAccess = accessBySubmission.get(row.id);
       const personalized = ledgerAccess?.personalized_feedback === true || ledgerAccess?.offer_id === 'exam-teacher'
         || feedbackBySubmission.has(row.id)
-        || membershipRows.some((membership) => membership.offer_id === 'exam-teacher' && membership.exam_slug === row.exam_slug
+        || membershipRows.some((membership) => membership.status !== 'revoked' && membership.offer_id === 'exam-teacher' && membership.exam_slug === row.exam_slug
           && Date.parse(row.created_at) >= Date.parse(membership.starts_at) && Date.parse(row.created_at) < Date.parse(membership.ends_at));
       return toAttempt(row, personalized, feedbackBySubmission.get(row.id));
     });

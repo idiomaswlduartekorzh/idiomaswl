@@ -190,6 +190,10 @@ test('Xpress ledger prevents duplicate charges and grants access only after an a
     const membershipSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [subscriptionUser, 'toefl'])).rows[0].id;
     assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [subscriptionUser, 'toefl', membershipSubmission, 'sandbox'])).rows[0].result.access, 'membership');
     assert.equal((await db.query('select count(*)::int as count from public.xpress_submission_access where membership_id=$1', [membership.id])).rows[0].count, 1);
+    const delayedSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [subscriptionUser, 'toefl'])).rows[0].id;
+    await db.query("update public.xpress_memberships set status='expired' where id=$1", [membership.id]);
+    assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [subscriptionUser, 'toefl', delayedSubmission, 'sandbox'])).rows[0].result.access, 'membership');
+    await db.query("update public.xpress_memberships set status='active' where id=$1", [membership.id]);
     const teacherSubmission = (await db.query('insert into public.exam_submissions(user_id,exam_slug) values($1,$2) returning id', [user, 'ielts'])).rows[0].id;
     assert.equal((await db.query('select public.record_xpress_submission_access($1,$2,$3,$4) as result', [user, 'ielts', teacherSubmission, 'sandbox'])).rows[0].result.personalizedFeedback, true);
     assert.equal((await db.query('select count(*)::int as count from public.xpress_personalized_feedback_requests where submission_id=$1', [teacherSubmission])).rows[0].count, 1);

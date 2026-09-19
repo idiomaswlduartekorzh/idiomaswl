@@ -34,7 +34,7 @@ begin
 
   select membership.* into selected_membership from public.xpress_memberships membership
     where membership.user_id=p_user and membership.environment=p_environment
-      and membership.exam_slug=p_exam and membership.status='active'
+      and membership.exam_slug=p_exam and membership.status<>'revoked'
       and membership.starts_at<=selected_submission.created_at
       and membership.ends_at>selected_submission.created_at
     order by membership.starts_at desc,membership.id desc limit 1;
