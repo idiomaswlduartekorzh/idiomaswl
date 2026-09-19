@@ -597,6 +597,38 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   tres pasajes y 40 respuestas, Writing Set 4 con Task 1 y su gráfica,
   Speaking Set 1 con tres partes sin cronómetro, y el mock completo Set 1
   con sus cuatro secciones y 164 minutos.
+
+### 19 de septiembre de 2026 — registro, pagos Xpress y panel del estudiante
+
+- El panel privado, la ficha administrativa, las asignaciones y el acceso persistente a
+  exámenes pagados entraron en `main` mediante PR #11, commit
+  `4ae26acd58865f22c8db6ab796dc422c5e429278`. El despliegue de producción
+  `dpl_BXAZM8aWbXr5mEsx4NDuTc6N7uNP` quedó `READY` y asignado a
+  `https://www.idiomaswl.com`. La corrección de la promesa visible del plan docente
+  entró después mediante PR #12, commit `26d5696ea02c218e30cc51e827611291ae4d9106`.
+- El registro público exige idioma, objetivo, examen cuando corresponde, modalidad y
+  plan antes de crear cuenta. Xpress muestra $12.900 por un simulacro (pago único),
+  $49.900 por periodos renovables de 30 días con corrección automática y $99.900 por
+  periodos renovables de 30 días con revisión de tutor dentro de las 24 horas siguientes
+  al envío. Los cursos con profesor muestran sus propios planes y el reglamento antes
+  del formulario y del pago.
+- Las cuatro migraciones de Xpress, asignaciones, registro transaccional de intentos y
+  revisión docente, enumeradas arriba, están aplicadas en el Supabase productivo.
+  Las pruebas de comercio, acceso y panel pasan 24/24; el registro pasa 4/4 en Chrome;
+  TypeScript, prebuild, catálogo protegido y build Webpack local pasan. Los checks de
+  GitHub de PR #11 y #12 pasaron.
+- Smoke público sin cuenta ni cobro: `/registro` exige selección, muestra los tres
+  precios y deja llegar a la creación de cuenta; la preparación con profesor llega a
+  `/precios` con plan, precio y reglamento, que bloquea los datos hasta confirmar su
+  lectura. `/dashboard/student` y `/dashboard/admin` llevan a `/login` sin sesión.
+  Tras la corrección se volvió a verificar en el dominio público que el plan de
+  $99.900 anuncia la revisión de un tutor dentro de 24 horas y no menciona IA.
+  **No se hizo una transacción real en Wompi**; la entrega de una revisión humana dentro
+  de 24 horas todavía requiere seguimiento operativo con estudiantes reales.
+- El despliegue final del texto corregido, `dpl_7LhvCrv4vzSW1YRxVH3kncRu8YaJ`,
+  quedó `READY` el 19 de septiembre de 2026 a las 16:11 COT desde el commit
+  `26d5696ea02c218e30cc51e827611291ae4d9106` de `main`, con
+  `https://www.idiomaswl.com` asignado.
 - La tarjeta de `/practica` se actualizó en
   `6a46f88ae8bc1abcbdd343e2b19ed508496117d2` para anunciar cuatro habilidades
   y 20 sets sin prometer corrección automática de Writing/Speaking. Pasó el prebuild
