@@ -13,7 +13,7 @@ import {
   xpressClassPurchasePath,
 } from '../src/lib/student-onboarding/catalog.ts';
 import { parseXpressOrderInput, parseXpressProviderPayment, parseXpressSubscriptionForm } from '../src/lib/xpress-commerce/payment.ts';
-import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
+import { XPRESS_PRIVACY_VERSION, XPRESS_RECURRING_CONSENT_VERSION, XPRESS_TERMS, XPRESS_TERMS_VERSION } from '../src/lib/xpress-commerce/terms.ts';
 import { buildXpressRecurringTransaction } from '../src/lib/xpress-commerce/recurring.ts';
 
 test('publishes one exam purchase and two memberships in COP cents', () => {
@@ -25,6 +25,13 @@ test('publishes one exam purchase and two memberships in COP cents', () => {
   assert.equal(XPRESS_OFFERS[2].name, 'Exámenes + feedback personalizado');
   assert.equal(XPRESS_OFFERS[0].billing, 'single-exam');
   assert.deepEqual(XPRESS_OFFERS.slice(1).map((offer) => offer.billing), ['recurring-30-days', 'recurring-30-days']);
+});
+
+test('the paid tutor promise matches the human 24-hour review workflow', () => {
+  const correctionTerms = XPRESS_TERMS.find((section) => section.title === 'Correcciones')?.text ?? '';
+  assert.match(correctionTerms, /tutor de WeLearn/);
+  assert.match(correctionTerms, /24 horas/);
+  assert.doesNotMatch(correctionTerms, /No es una revisión humana/);
 });
 
 test('accepts recurring consent and only Wompi card tokens for memberships', () => {

@@ -8,7 +8,7 @@ export const XPRESS_TERMS = [
   },
   {
     title: 'Correcciones',
-    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. El plan de $99.900 añade feedback pedagógico personalizado de WeLearn generado con asistencia de inteligencia artificial a partir de los resultados. No es una revisión humana ni una calificación oficial.',
+    text: 'Todas las opciones incluyen el resultado y el reporte automático disponible. El plan de $99.900 añade una revisión personalizada de un tutor de WeLearn, entregada en el panel dentro de las 24 horas siguientes al envío del simulacro. Esta revisión no es una calificación oficial.',
   },
   {
     title: 'Renovación automática',
