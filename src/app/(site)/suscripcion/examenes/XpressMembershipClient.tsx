@@ -231,7 +231,7 @@ export default function XpressMembershipClient({
           <span className={styles.planName}>{offer.name}</span>
           <strong>{activeMembership && offer.id === 'exam-single' ? 'Incluido en tu acceso' : `${formatCOP(offer.amountInCents / 100)} COP`}</strong>
           <span>{offer.id === 'exam-single' ? 'Pago único para realizar un simulacro una vez.' : 'Suscripción por periodos de 30 días, con cancelación desde tu panel.'}</span>
-          <span>{offer.id === 'exam-teacher' ? 'Corrección automática y feedback pedagógico personalizado con asistencia de IA.' : 'Corrección automática, reporte y áreas de atención.'}</span>
+          <span>{offer.id === 'exam-teacher' ? 'Corrección automática y revisión personalizada de un tutor de WeLearn dentro de las 24 horas siguientes al envío.' : 'Corrección automática, reporte y áreas de atención.'}</span>
         </label>;
       })}</div>
     </section>
