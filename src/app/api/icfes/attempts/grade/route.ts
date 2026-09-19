@@ -6,7 +6,6 @@ import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attem
 import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 import type { MCQQuestion } from '@/data/mocks/types';
 import type { IcfesGradeReceiptDto, IcfesUnavailableCommerceGradeDto } from '@/lib/icfes/attempt-contract';
-import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
 
 export const runtime = 'nodejs';
 
