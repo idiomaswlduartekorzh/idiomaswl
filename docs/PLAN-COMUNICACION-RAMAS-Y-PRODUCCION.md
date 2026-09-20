@@ -9,6 +9,20 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Hojas PDF Goethe y TOEFL — 19 de septiembre de 2026
+
+`codex/goethe-toefl-worksheets-20260919` parte de la referencia local `origin/main`
+en `d729dbc3`. Estado: `EN_VALIDACION`. Alcance: hojas de estudiante Goethe A1 y
+TOEFL iBT 2026, botones de descarga en sus prácticas y guardián
+`check:exam-worksheets`. No requiere variables ni migraciones. Un `git fetch` posterior
+confirmó que `origin/main` remoto sigue en `d729dbc3`. Catálogo, TypeScript y
+`prebuild` pasaron; el build Webpack y la revisión visual local pasaron. El build
+predeterminado de Turbopack se interrumpió tras permanecer sin progreso en la fase
+de empaquetado en este worktree. Integración, SHA de `main`, despliegue y smoke
+productivo: pendientes. El 20 de septiembre, con autorización explícita, la rama
+se publicó en GitHub y se abrió el [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15)
+en borrador para revisión.
+
 ## Parche activo de seguridad — 19 de septiembre de 2026
 
 `codex/private-cycle-audio-20260919` parte de `origin/main` en `9cc951a8`.

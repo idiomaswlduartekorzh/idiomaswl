@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { AlertTriangle, ArrowLeft, ArrowRight, CheckCircle2, Headphones, RotateCcw, ShieldCheck } from 'lucide-react';
 
 import { AudioPlayer } from '@/components/exam-runner/primitives';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { MockSection, ToeflListeningSingleQuestion } from '@/data/mocks/types';
 import type { ToeflListeningSectionPractice } from '@/data/toefl/sectional-listening-adapter';
 import type { ToeflListeningScoreResult } from '@/lib/toefl/listening-contract';
@@ -103,6 +104,17 @@ export default function ToeflListeningSectionRunner({
   practice: ToeflListeningSectionPractice;
 }) {
   const setLabel = practice.sourceMockId.replace('set-', 'Set ');
+  const downloadWorksheet = async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    await generateExamWorksheetPdf({
+      id: practice.sourceMockId, examSlug: 'toefl', title: practice.title,
+      subtitle: practice.disclosure, timeMinutes: 0, sections: practice.sections,
+    }, {
+      label: 'Listening',
+      sourcePath: `/practica/toefl/listening/simulacros/practica/${practice.sourceMockId}`,
+      listeningOrderVersion: phase === 'intro' ? CURRENT_LISTENING_ORDER : listeningOrderVersion,
+    });
+  };
   const frames = useMemo(() => buildFrames(practice), [practice]);
   const questions = useMemo(
     () => practice.sections.flatMap((section) => listeningQuestions(section)),
@@ -267,6 +279,7 @@ export default function ToeflListeningSectionRunner({
           <p className={styles.disclosure}>Fixed WeLearn practice. It does not reproduce adaptive routing or official TOEFL scoring.</p>
           <div className={styles.actions}>
             <button type="button" onClick={begin} disabled={!hydrated}>Start practice <ArrowRight aria-hidden="true" /></button>
+            <PdfDownloadButton generate={downloadWorksheet} label="Download student PDF" />
             <Link href="/practica/toefl/listening/simulacros">Back to the library</Link>
           </div>
         </section>
@@ -294,6 +307,7 @@ export default function ToeflListeningSectionRunner({
           </div>
           <div className={styles.actions}>
             <button type="button" onClick={reset}><RotateCcw aria-hidden="true" /> Repeat {setLabel}</button>
+            <PdfDownloadButton generate={downloadWorksheet} label="Download student PDF" />
             <Link href="/practica/toefl/listening/simulacros">Choose another set</Link>
             <Link href="/examenes/toefl#practica">Open a full mock</Link>
           </div>
@@ -420,6 +434,7 @@ export default function ToeflListeningSectionRunner({
             <button type="button" onClick={() => goToFrame(frameIndex - 1)} disabled={frameIndex === 0 || phase === 'scoring'}>
               <ArrowLeft aria-hidden="true" /> Previous block
             </button>
+            <PdfDownloadButton generate={downloadWorksheet} label="Student PDF" compact />
             <button type="button" onClick={advance} disabled={phase === 'scoring'}>
               {phase === 'scoring'
                 ? 'Checking…'

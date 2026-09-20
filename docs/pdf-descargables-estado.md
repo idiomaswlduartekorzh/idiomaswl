@@ -17,7 +17,16 @@ membretada. La descarga es libre y de un clic: no pide correo.
 | Escritura | `generateWritingPdf.ts` | `IntegratedWritingPractice` |
 | Los 100 verbos irregulares | `generateVerbsResourcePdf.ts` | dentro de `ingles/a2/gramatica/past-simple-irregular` |
 
-Exámenes queda fuera a propósito: decisión de producto, no un olvido.
+IELTS Listening ya ofrece 20 hojas de estudiante en sus prácticas por set. Esta rama añade hojas
+para Goethe A1 (7 sets, por destreza y por Teil) y TOEFL iBT 2026 (20 simulacros completos y
+20 prácticas independientes de Listening). Los PDF nacen del mismo mock que ve el estudiante:
+`examWorksheetContent.ts` proyecta solo campos imprimibles y `generateExamWorksheetPdf.ts`
+compone el PDF con la plantilla. No imprime claves, soluciones, transcripciones ni guiones de
+Listen and Repeat. El audio se abre desde la práctica viva.
+
+`npm run check:exam-worksheets` comprueba los 27 sets, el recorte por Teil, las 34 preguntas de
+Listening por set, opciones y materiales de lectura, imágenes Goethe disponibles, orden de
+opciones TOEFL y canarios de privacidad. Corre en `prebuild`.
 
 ## Cómo está montado
 
@@ -74,8 +83,8 @@ pierde ese ejemplo en el PDF, y el propio PDF lo dice.
 
 ## Pendiente
 
-- **Escucha** no tiene PDF. Es la única destreza sin él; tendría que llevar la
-  transcripción del episodio y sus preguntas.
+- **Escucha general de idiomas** aún no tiene PDF. Los PDF de IELTS Listening,
+  Goethe Hören y TOEFL Listening son hojas de preguntas; el audio está en la web.
 - **Vocabulario** solo tiene datos de inglés A1 y A2. El generador ya sirve para
   los ocho idiomas: en cuanto haya catálogo, sale solo.
 - La lección `japones/b1/you-ni-naru-b1` compara con el coreano y ese ejemplo no
