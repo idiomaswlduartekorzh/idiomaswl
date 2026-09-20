@@ -22,7 +22,8 @@ const ALLOWED_MIME_TYPES = new Set([
 ]);
 
 /** Valid difficulty levels that the Korean cycle exposes. */
-const ALLOWED_NIVELES = new Set(['A1', 'A2', 'B1', 'B2', 'C1']);
+const ALLOWED_NIVELES = new Set(['A1', 'A2', 'B1']);
+const ALLOWED_QUIZ_LEVELS = new Set(['principiante', 'intermedio', 'avanzado']);
 
 // ── Simple in-memory rate limiter ──────────────────────────────────────────────
 // NOTE: Vercel spins up multiple serverless instances so this only throttles
@@ -45,11 +46,6 @@ function isRateLimited(key: string): boolean {
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
-/** Sanitize a string so it is safe to embed in a storage path. */
-function sanitizePath(s: string): string {
-  return s.replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64);
-}
-
 /**
  * Validate the `respuestas` JSON field.
  * We only accept a plain object or array of plain objects — no primitives.
@@ -92,7 +88,7 @@ export async function POST(request: Request) {
     const respuestas = form.get('respuestas') as string | null;
 
     // ── Required field check ─────────────────────────────────────────────────
-    if (!audio || !username || !nivel || !textoId) {
+    if (!audio || !username || !nivel || !textoId || !quizLevel) {
       return NextResponse.json({ error: 'Faltan campos requeridos.' }, { status: 400 });
     }
 
@@ -127,6 +123,9 @@ export async function POST(request: Request) {
     if (!ALLOWED_NIVELES.has(nivel)) {
       return NextResponse.json({ error: 'Nivel inválido.' }, { status: 400 });
     }
+    if (!ALLOWED_QUIZ_LEVELS.has(quizLevel)) {
+      return NextResponse.json({ error: 'Nivel de preguntas inválido.' }, { status: 400 });
+    }
 
     // ── textoId: only alphanumeric + dashes/underscores, max 64 chars ────────
     if (!/^[a-zA-Z0-9_-]{1,64}$/.test(textoId)) {
@@ -143,8 +142,8 @@ export async function POST(request: Request) {
 
     // ── Build safe storage path ──────────────────────────────────────────────
     const supabase  = createAdminClient();
-    const timestamp = Date.now();
-    const path      = `${timestamp}_${sanitizePath(username)}_${nivel}_${textoId}.${ext}`;
+    const submissionId = crypto.randomUUID();
+    const path = `submissions/${submissionId}.${ext}`;
 
     // Upload audio to Supabase Storage
     const arrayBuffer = await audio.arrayBuffer();
@@ -157,24 +156,25 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Error al subir el audio.' }, { status: 500 });
     }
 
-    const { data: { publicUrl } } = supabase.storage.from('cycle-audio').getPublicUrl(path);
-
     // ── Save metadata to DB ──────────────────────────────────────────────────
     const { error: dbError } = await supabase.from('cycle_submissions').insert({
+      id: submissionId,
       username,
       email:     email || null,
       nivel,
       texto_id:  textoId,
       quiz_level: quizLevel,
-      audio_url: publicUrl,
+      audio_url: `/api/admin/cycle-audio/${submissionId}`,
       audio_path: path,
       respuestas: parsedRespuestas,
     });
 
     if (dbError) {
       console.error('[submit-audio] db error:', dbError);
-      // Audio was uploaded; still return success to the user so they are not
-      // prompted to re-record — the teacher can still access the audio directly.
+      // Do not leave an orphaned recording that no administrator can retrieve.
+      const { error: cleanupError } = await supabase.storage.from('cycle-audio').remove([path]);
+      if (cleanupError) console.error('[submit-audio] cleanup error:', cleanupError);
+      return NextResponse.json({ error: 'No se pudo guardar el audio. Intenta de nuevo.' }, { status: 500 });
     }
 
     return NextResponse.json({ success: true, message: 'Audio enviado correctamente.' });

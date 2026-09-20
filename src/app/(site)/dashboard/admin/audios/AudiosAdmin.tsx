@@ -170,7 +170,7 @@ export default function AudiosAdmin({
                   {/* Actions */}
                   <div style={{ display:'flex', gap:'0.4rem', flexShrink:0 }}>
                     <a
-                      href={s.audio_url}
+                      href={`/api/admin/cycle-audio/${s.id}?download=1`}
                       download
                       style={{
                         padding:'0.35rem 0.6rem', borderRadius:8, fontSize:'0.75rem', fontWeight:700,
@@ -198,7 +198,7 @@ export default function AudiosAdmin({
                     {/* Audio player */}
                     <div style={{ marginBottom:'1rem' }}>
                       <p style={{ margin:'0 0 0.5rem', fontSize:'0.78rem', fontFamily:'var(--mono)', textTransform:'uppercase', letterSpacing:'0.06em', color:'var(--muted)', fontWeight:700 }}>Audio del estudiante</p>
-                      <audio controls src={s.audio_url} style={{ width:'100%', borderRadius:8 }} />
+                      <audio controls src={`/api/admin/cycle-audio/${s.id}`} style={{ width:'100%', borderRadius:8 }} />
                     </div>
 
                     {/* Quiz level + answers */}

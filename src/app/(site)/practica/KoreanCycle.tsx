@@ -428,7 +428,7 @@ function StepRead({ text, onNext }: { text: CycleText; onNext: () => void }) {
 
 // ─── Step 2: Listen ───────────────────────────────────────────────────────────
 
-const AUDIO_BASE = 'https://ivqeokuxgxemhydvopdd.supabase.co/storage/v1/object/public/cycle-audio/textos';
+const AUDIO_BASE = '/api/practica/lesson-audio';
 
 function StepListen({ text, onNext }: { text: CycleText; onNext: () => void }) {
   const [isTTSPlaying, setIsTTSPlaying] = useState(false);

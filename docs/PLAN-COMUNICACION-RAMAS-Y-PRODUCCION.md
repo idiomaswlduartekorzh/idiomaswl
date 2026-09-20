@@ -9,6 +9,17 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Parche activo de seguridad — 19 de septiembre de 2026
+
+`codex/private-cycle-audio-20260919` parte de `origin/main` en `9cc951a8`.
+Estado: `EN_VALIDACION`. Alcance: bucket `cycle-audio`, rutas de audio del ciclo
+coreano y panel administrativo. Dependencia externa: migración de Supabase
+`20260920032155_private_cycle_audio.sql`, que solo se aplica después de
+desplegar y verificar las nuevas rutas. Validaciones: catálogo, TypeScript,
+pruebas de privacidad de audio y build Webpack aprobados. No requiere nuevas
+variables. Orden, pruebas de permisos y reversión:
+[`SEGURIDAD-AUDIO-CICLO-2026-09-19.md`](SEGURIDAD-AUDIO-CICLO-2026-09-19.md).
+
 ## 1. Resultado que debe producir este plan
 
 El sistema de trabajo debe garantizar simultáneamente que:
