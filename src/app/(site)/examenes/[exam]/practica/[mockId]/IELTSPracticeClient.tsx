@@ -7,6 +7,7 @@ import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
 import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import { IELTSAnswerDiagram } from '@/components/exam-runner/IELTSAnswerDiagram';
 import { getIeltsDiagramLayout } from '@/data/ielts/set1-diagram-layouts';
 import { ieltsQuestionNumber } from '@/data/ielts/question-number';
@@ -909,7 +910,7 @@ function IELTSFocusedResults({ mock, skill, ans, recordings, reading, onRetry, o
   const writing = sections.flatMap(section => section.questions).filter((question): question is WriteQuestion => question.type === 'write');
   const speaking = sections.flatMap(section => section.questions).filter((question): question is SpeakQuestion => question.type === 'speak');
 
-  return <div className="prac-shell prac-shell--intro"><section className="prac-intro">
+  return <div className="prac-shell prac-shell--intro exam-unified exam-unified__intro" data-exam="ielts"><section className="prac-intro">
     <p className="prac-intro__eyebrow">IELTS {SKILL_LABEL[skill]} · {mock.title}</p>
     <h1 className="prac-intro__title">Practice review</h1>
     {reading ? <>
@@ -960,6 +961,22 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const [activePartIndex, setActivePartIndex] = useState(0);
 
   const skills = practiceSkill ? [practiceSkill] : SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
+  const downloadWorksheetFor = (skill?: string) => async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    await generateExamWorksheetPdf(mock, {
+      sections: mock.sections.filter(section => !section.comingSoon && (!skill || section.skill === skill)),
+      label: skill ? `${SKILL_LABEL[skill]} practice` : 'Full practice',
+      sourcePath: `/examenes/ielts/practica/${mock.id}${skill ? `?mode=practice&skill=${skill}` : ''}`,
+    });
+  };
+  const downloadPartWorksheet = (section: MockSection, label: string) => async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    await generateExamWorksheetPdf(mock, {
+      sections: [section],
+      label,
+      sourcePath: `/examenes/ielts/practica/${mock.id}?mode=practice&skill=${section.skill ?? practiceSkill ?? 'reading'}`,
+    });
+  };
 
   const handlers = {
     onFill: useCallback((k:string,v:string)=>setAns(p=>({...p,fills:{...p.fills,[k]:v}})),[]),
@@ -1098,10 +1115,11 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   },[activePartIndex,phase,practiceSkill]);
 
   if (phase==='results') {
-    if (practiceSkill) return <IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} />;
+    if (practiceSkill) return <div className="exam-unified" data-exam="ielts"><IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} /><div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={`${SKILL_LABEL[practiceSkill]} PDF`} /></div></div>;
     return (
-      <div className="prac-shell">
+      <div className="prac-shell exam-unified" data-exam="ielts">
         <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
+        <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor()} label="Full practice PDF" /></div>
       </div>
     );
   }
@@ -1113,7 +1131,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     const speakingQuestions=getSkillSections(mock,'speaking').flatMap(section=>section.questions) as SpeakQuestion[];
 
     return (
-      <div className="prac-shell">
+      <div className="prac-shell exam-unified" data-exam="ielts">
         <IELTSSubmission
           mockId={mock.id}
           mockTitle={mock.title}
@@ -1146,8 +1164,8 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
       .filter(section=>!section.comingSoon && (!practiceSkill || section.skill===practiceSkill))
       .reduce((total,section)=>total+countGroupAnswers(section,ans).total,0);
     return (
-      <div className="prac-shell prac-shell--intro">
-        <div className="prac-intro" style={{'--exam-color':exam.color} as React.CSSProperties}>
+      <div className="prac-shell prac-shell--intro exam-unified exam-unified__intro" data-exam="ielts">
+        <div className="prac-intro">
           <p className="prac-intro__eyebrow">{exam.flag} {exam.name}{practiceSkill ? ` · ${SKILL_LABEL[practiceSkill]} practice` : ''}</p>
           <h1 className="prac-intro__title">{practiceSkill ? `${SKILL_LABEL[practiceSkill]} · ${mock.title}` : mock.title}</h1>
           <p className="prac-intro__sub">{practiceSkill ? `Practise only ${SKILL_LABEL[practiceSkill]} using the audited material from this set. Move freely between parts; there is no timer.` : mock.subtitle}</p>
@@ -1159,15 +1177,20 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
           <div className="prac-intro__sections">
             {mock.sections.filter(sec=>!practiceSkill || sec.skill===practiceSkill).flatMap(sec =>
               practiceSkill === 'speaking'
-                ? sec.questions.filter((question): question is SpeakQuestion => question.type === 'speak').map(question => ({ section: sec, label: `Part ${question.partNumber}`, count: 1 }))
+                ? sec.questions.filter((question): question is SpeakQuestion => question.type === 'speak').map(question => ({ section: { ...sec, questions: [question] }, label: `Part ${question.partNumber}`, count: 1 }))
                 : [{ section: sec, label: sec.title.split('—')[1]?.trim() ?? sec.title, count: sec.questions.length }]
             ).map(({ section: sec, label, count }) => (
               <div key={`${sec.part}:${label}`} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
                 <span className="prac-intro__section-part">{sec.skill?SKILL_LABEL[sec.skill]:''}</span>
                 <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : label}</span>
                 <span className="prac-intro__section-q">{sec.comingSoon ? '—' : practiceSkill ? `${count} ${count===1 ? 'task' : 'question groups'}` : `${count} grupos`}</span>
+                {practiceSkill && !sec.comingSoon && <PdfDownloadButton generate={downloadPartWorksheet(sec, label)} label={`${label} PDF`} compact />}
               </div>
             ))}
+          </div>
+          <div className="exam-pdf-options" aria-label="Student worksheets">
+            <PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={practiceSkill ? `${SKILL_LABEL[practiceSkill]} PDF` : 'Full practice PDF'} />
+            {!practiceSkill && skills.filter(skill => !comingSoonSkills.has(skill)).map(skill => <PdfDownloadButton key={skill} generate={downloadWorksheetFor(skill)} label={`${SKILL_LABEL[skill]} PDF`} compact />)}
           </div>
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">{practiceSkill ? 'Before you start' : 'Antes de empezar'}</p>
@@ -1208,8 +1231,8 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const unanswered = totalQs - totalAnswered;
 
   return (
-    <div className="prac-shell prac-shell--exam">
-      <header className="prac-topbar" style={{'--exam-color':exam.color} as React.CSSProperties}>
+    <div className="prac-shell prac-shell--exam exam-unified" data-exam="ielts">
+      <header className="prac-topbar">
         <div className="prac-topbar__left">
           <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} className="prac-topbar__back">IELTS</Link>
           <span className="prac-topbar__title">{mock.title}{practiceSkill ? ` · ${SKILL_LABEL[practiceSkill]}` : ''}</span>
@@ -1223,6 +1246,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
       {practiceSkill ? <nav aria-label={`${SKILL_LABEL[practiceSkill]} parts`} style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', padding: '1rem', justifyContent: 'center' }}>{skillSections.map((section, index) => <button key={section.part} type="button" className={index===activePartIndex ? 'btn btn-sm' : 'btn btn-ghost btn-sm'} aria-current={index===activePartIndex ? 'step' : undefined} onClick={() => setActivePartIndex(index)}>{practiceSkill==='writing' ? `Task ${index+1}` : `Part ${index+1}`}</button>)}</nav> : <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />}
 
       <div className="ielts-exam-body">
+        <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill ?? activeSkill)} label={`${SKILL_LABEL[practiceSkill ?? activeSkill]} PDF`} compact />{practiceSkill && activeSections[0] && <PdfDownloadButton generate={downloadPartWorksheet(activeSections[0], practiceSkill === 'writing' ? `Task ${activePartIndex + 1}` : `Part ${activePartIndex + 1}`)} label={`${practiceSkill === 'writing' ? 'Task' : 'Part'} ${activePartIndex + 1} PDF`} compact />}</div>
         {activeSkill === 'listening' && (
           <div className="ielts-audio-sticky">
             <AudioPlayer src={mock.sections.find(s=>s.skill==='listening')?.audioUrl} label="IELTS Listening" />

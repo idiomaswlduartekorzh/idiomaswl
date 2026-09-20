@@ -257,8 +257,8 @@ export default function ToeflListeningSectionRunner({
 
   if (phase === 'intro') {
     return (
-      <div className={styles.shell}>
-        <section className={styles.intro} aria-labelledby="listening-runner-title">
+      <div className={`${styles.shell} exam-unified exam-unified__intro`} data-exam="toefl">
+        <section className={`${styles.intro} exam-unified__card`} aria-labelledby="listening-runner-title">
           <p className={styles.kicker}>TOEFL Listening · {setLabel}</p>
           <h1 id="listening-runner-title">One focused Listening session.</h1>
           <p className={styles.lead}>
@@ -290,8 +290,8 @@ export default function ToeflListeningSectionRunner({
   if (phase === 'results' && result) {
     const breakdown = taskBreakdown(practice, result);
     return (
-      <div className={styles.shell}>
-        <section className={styles.results} aria-labelledby="listening-result-title">
+      <div className={`${styles.shell} exam-unified exam-unified__intro`} data-exam="toefl">
+        <section className={`${styles.results} exam-unified__card`} aria-labelledby="listening-result-title">
           <p className={styles.kicker}>Practice result</p>
           <CheckCircle2 className={styles.resultIcon} aria-hidden="true" />
           <h1 id="listening-result-title">You completed Listening {setLabel}.</h1>
@@ -319,8 +319,8 @@ export default function ToeflListeningSectionRunner({
   if (!activeFrame) return null;
 
   return (
-    <div className={styles.shell}>
-      <header className={styles.runnerHeader}>
+    <div className={`${styles.shell} exam-unified`} data-exam="toefl">
+      <header className={`${styles.runnerHeader} exam-unified__topbar exam-unified__body`}>
         <div>
           <p>Listening {setLabel}</p>
           <strong>{activeFrame.label}</strong>
@@ -347,7 +347,7 @@ export default function ToeflListeningSectionRunner({
         ))}
       </nav>
 
-      <section className={styles.runnerBody} aria-labelledby="active-listening-title">
+      <section className={`${styles.runnerBody} exam-unified__surface exam-unified__body`} aria-labelledby="active-listening-title">
         <div className={styles.frameHeading}>
           <p className={styles.kicker}>{activeFrame.label}</p>
           <h1 id="active-listening-title">{activeFrame.title.replace(/^Listening Módulo \d — /, '')}</h1>

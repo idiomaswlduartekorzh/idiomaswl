@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-import PracticeRouteShell, { type PracticeSection } from '@/components/exam-practice/PracticeRouteShell';
-import PracticeSetCatalog from '@/components/exam-practice/PracticeSetCatalog';
+import ExamSkillSetLibrary from '../../../ExamSkillSetLibrary';
 import { getMock } from '@/data/mocks';
 import { IELTS_SECTIONAL_LISTENING_SET_IDS } from '@/data/ielts/sectional-listening-adapter';
 
@@ -51,12 +50,5 @@ export default async function IeltsSkillSetsPage({ params }: Props) {
     };
   });
 
-  return <PracticeRouteShell
-    section={selectedSkill as PracticeSection}
-    breadcrumbs={[{ label: 'Practice', href: '/practica' }, { label: 'IELTS', href: '/practica/ielts' }, { label: config.label }]}
-    backHref="/practica/ielts#destrezas"
-    backLabel="Choose another IELTS skill"
-  >
-    <PracticeSetCatalog product="IELTS" section={selectedSkill} task={config.label} description={`Choose one of the 20 audited IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} sets={sets} note={config.note} />
-  </PracticeRouteShell>;
+  return <ExamSkillSetLibrary product="ielts" skill={selectedSkill} description={`Choose one of the 20 audited IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} detail={config.detail} note={config.note} sets={sets} backHref="/practica/ielts#destrezas" backLabel="Choose another IELTS skill" />;
 }

@@ -1,11 +1,11 @@
 .root {
   --goethe-navy: #14213d;
-  --goethe-blue: #3457d5;
-  --goethe-blue-soft: #eef2ff;
+  --goethe-blue: #8b671c;
+  --goethe-blue-soft: #fff8e7;
   --goethe-ink: #172033;
   --goethe-muted: #667085;
   --goethe-line: #d9dee8;
-  --goethe-bg: #f5f7fa;
+  --goethe-bg: #f3f6fb;
   --goethe-surface: #ffffff;
   min-height: 100vh;
   background: var(--goethe-bg);
@@ -38,7 +38,7 @@
   place-items: center;
   padding: 2rem 1rem;
   background:
-    radial-gradient(circle at 15% 10%, rgba(52, 87, 213, 0.13), transparent 28rem),
+    radial-gradient(circle at 15% 10%, rgba(182, 145, 52, 0.12), transparent 28rem),
     linear-gradient(160deg, #f8faff 0%, #eef2f8 100%);
 }
 

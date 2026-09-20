@@ -11,6 +11,15 @@
   color: var(--toefl-ink);
   overflow: clip;
 }
+.page[data-exam="goethe"] {
+  --toefl-navy: #17264b;
+  --toefl-red: #b43a35;
+  --toefl-teal: #8b671c;
+}
+.page[data-exam="ielts"] {
+  --toefl-red: #245b9b;
+  --toefl-teal: #245b9b;
+}
 .hero {
   background:
     linear-gradient(90deg, rgba(16, 46, 111, 0.035) 1px, transparent 1px),

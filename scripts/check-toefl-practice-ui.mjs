@@ -65,7 +65,6 @@ const toeflCatalogSource = await readFile(
 assert.ok(toeflCatalogSource.includes('PracticeSetCatalog'), 'TOEFL must use the reusable practice catalog template.');
 
 for (const relativePath of [
-  'src/app/(site)/practica/toefl/listening/simulacros/page.tsx',
   'src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/page.tsx',
   'src/app/(site)/practica/toefl/reading/formato-2026/complete-the-words/page.tsx',
   'src/app/(site)/practica/toefl/reading/formato-2026/read-in-daily-life/page.tsx',
@@ -78,6 +77,8 @@ for (const relativePath of [
   const source = await readFile(path.join(ROOT, relativePath), 'utf8');
   assert.ok(source.includes('PracticeRouteShell'), `${relativePath} must use the shared practice route shell.`);
 }
+const listeningLibrary = await readFile(path.join(ROOT, 'src/app/(site)/practica/toefl/listening/simulacros/page.tsx'), 'utf8');
+assert.ok(listeningLibrary.includes('ExamSkillSetLibrary'), 'Listening sets must use the shared exam skill library.');
 
 const siteNavSource = await readFile(path.join(ROOT, 'src/components/SiteNav.tsx'), 'utf8');
 assert.ok(

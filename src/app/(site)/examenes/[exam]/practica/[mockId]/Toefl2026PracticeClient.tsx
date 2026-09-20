@@ -678,7 +678,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   const discussionAssessment = useWritingAssessment('toefl', mock.id, 2, discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : '', receipt);
 
   return (
-    <main className="t26-results" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <main className="t26-results">
       <p className="prac-intro__eyebrow">{exam.flag} {exam.name} · resultado de práctica fija</p>
       <h1>{mock.title}</h1>
       <p className="t26-results__disclosure" role="status">
@@ -753,6 +753,14 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const downloadWorksheet = async () => {
     const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
     await generateExamWorksheetPdf(mock, { listeningOrderVersion: phase === 'intro' ? CURRENT_LISTENING_ORDER : listeningOrderVersion });
+  };
+  const downloadSkillWorksheet = (skill: 'reading' | 'listening' | 'writing' | 'speaking') => async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    await generateExamWorksheetPdf(mock, {
+      sections: mock.sections.filter(section => section.skill === skill),
+      label: `${skill[0].toUpperCase()}${skill.slice(1)} practice`,
+      listeningOrderVersion: phase === 'intro' ? CURRENT_LISTENING_ORDER : listeningOrderVersion,
+    });
   };
   const [phase, setPhase] = useState<Phase>('intro');
   const [listeningOrderVersion, setListeningOrderVersion] = useState<ListeningOrderVersion>(LEGACY_LISTENING_ORDER);
@@ -1191,7 +1199,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 
   if (phase === 'submit') {
     return (
-      <div className="prac-shell"><style>{T26_CSS}</style>
+      <div className="prac-shell exam-unified" data-exam="toefl"><style>{T26_CSS}</style>
         <TOEFLSubmission
           mockId={mock.id}
           mockTitle={mock.title}
@@ -1214,9 +1222,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 
   if (phase === 'results' && receipt) {
     return (
-      <div className="prac-shell"><style>{T26_CSS}</style>
+      <div className="prac-shell exam-unified" data-exam="toefl"><style>{T26_CSS}</style>
         <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} onRetry={handleRetry} />
-        <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja PDF" /></div>
+        <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
       </div>
     );
   }
@@ -1224,8 +1232,8 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   // ── Intro ──
   if (phase === 'intro') {
     return (
-      <div className="prac-shell prac-shell--intro"><style>{T26_CSS}</style>
-        <div className="prac-intro" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+      <div className="prac-shell prac-shell--intro exam-unified exam-unified__intro" data-exam="toefl"><style>{T26_CSS}</style>
+        <div className="prac-intro">
           <p className="prac-intro__eyebrow">{exam.flag} {exam.name} · Formato 2026</p>
           <h1 className="prac-intro__title">{mock.title}</h1>
           <p className="prac-intro__sub">{mock.subtitle}</p>
@@ -1249,7 +1257,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             </p>
           </div>
           <button className="btn prac-intro__start" onClick={beginExam} disabled={!hydrated}>Empezar práctica fija</button>
-          <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja PDF" /></div>
+          <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>
         </div>
       </div>
@@ -1260,9 +1268,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 
   // ── Exam ──
   return (
-    <div className="prac-shell prac-shell--exam" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <div className="prac-shell prac-shell--exam exam-unified" data-exam="toefl">
       <style>{T26_CSS}</style>
-      <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+      <header className="prac-topbar">
         <div className="prac-topbar__left">
           <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">{exam.name}</Link>
           <span className="prac-topbar__title">{mock.title}</span>
@@ -1305,7 +1313,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
       )}
 
       <div className="ielts-exam-body">
-        <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Hoja de práctica PDF" compact /></div>
+        <div className="exam-pdf-options"><PdfDownloadButton generate={downloadSkillWorksheet(activeStage.skill)} label={`${activeStage.skill[0].toUpperCase()}${activeStage.skill.slice(1)} PDF`} compact /></div>
         <div className="t26-stage-heading">
           <p className="t26-stage-kicker">Bloque {stageIndex + 1} de {stages.length} · {activeStage.navigation === 'forward-only' ? 'sólo hacia adelante' : 'revisión dentro del módulo'}</p>
           <h1 id="t26-stage-heading" tabIndex={-1}>{activeStage.label}</h1>

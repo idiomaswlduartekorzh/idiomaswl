@@ -26,7 +26,7 @@ const skills = [
 ] as const;
 
 export default function GoethePracticePage() {
-  return <main className={styles.page} lang="es">
+  return <main className={styles.page} data-exam="goethe" lang="es">
     <header className={styles.hero}><div className="wrap">
       <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><span>Goethe A1</span></nav>
       <div className={styles.heroCopy}>

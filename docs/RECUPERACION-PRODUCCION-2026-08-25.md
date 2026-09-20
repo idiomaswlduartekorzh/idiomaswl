@@ -659,3 +659,9 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `dpl_6vPv3ZMscZMHiYEosoHfJpAdEUvN`, estado `READY`, en
   `https://www.idiomaswl.com`. El smoke público abrió la tarjeta actualizada y
   llegó desde ella al hub con las cuatro rutas.
+
+### 20 de septiembre de 2026 — interfaz de práctica y cuadernos PDF de exámenes
+
+| Trabajo | Rama / base | Estado | Responsable y alcance | Validación, integración y producción |
+|---|---|---|---|---|
+| Práctica TOEFL, IELTS y Goethe; PDFs por destreza | `codex/exam-ui-pdf-unification-20260920` / `f957d1b12823a8d4bb3950336e77724a8eca11fb` | `LISTO_PARA_INTEGRAR` | Codex; hubs y librerías de sets, corredores de práctica, `src/app/globals.css`, generador PDF y guardianes. Sin migraciones, variables ni activos externos nuevos. Decisión: `MERGE`. | Revisión visual de escritorio y móvil, PDFs reales de los tres exámenes, 47 sets bajo contrato, catálogo protegido, TypeScript, prebuild y build Webpack de 2562 páginas aprobados. PR, SHA en `main`, deployment Vercel y smoke de producción pendientes. |

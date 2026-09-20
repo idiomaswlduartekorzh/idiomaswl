@@ -254,7 +254,7 @@ export default function IELTSListeningSectionRunner({ practice }: { practice: Ie
   };
 
   if (phase === 'intro') return (
-    <div className={styles.shell}><section className={styles.intro}>
+    <div className={`${styles.shell} exam-unified exam-unified__intro`} data-exam="ielts"><section className={`${styles.intro} exam-unified__card`}>
       <p className={styles.kicker}>IELTS Listening practice · {setLabel}</p>
       <h1>Use the real set at your own pace.</h1>
       <p className={styles.lead}>Listen as many times as you need, pause, rewind, move freely between all four parts and answer without a timer. The 40 questions are the same audited questions used in the complete mock.</p>
@@ -265,7 +265,7 @@ export default function IELTSListeningSectionRunner({ practice }: { practice: Ie
   );
 
   if (phase === 'results' && result) return (
-    <div className={styles.shell}><section className={styles.results}>
+    <div className={`${styles.shell} exam-unified exam-unified__intro`} data-exam="ielts"><section className={`${styles.results} exam-unified__card`}>
       <p className={styles.kicker}>IELTS Listening · {setLabel}</p><h1>Estimated band {result.band}</h1><p className={styles.score}>{result.correct}<span>/40 correct</span></p>
       <div className={styles.partResults}>{result.parts.map(part => <article key={part.part}><span>Part {part.part}</span><strong>{part.correct}/{part.total}</strong></article>)}</div>
       <p className={styles.disclosure}>{result.disclosure}</p>
@@ -274,11 +274,11 @@ export default function IELTSListeningSectionRunner({ practice }: { practice: Ie
   );
 
   return (
-    <div className={styles.shell}>
-      <header className={styles.runnerHeader}><div><p>IELTS Listening practice · {setLabel}</p><strong>Part {activeSection.part} of 4</strong></div><span className={styles.progressCopy}>{answeredTotal}/40 answered</span><div className={styles.progressTrack}><span style={{ width: `${answeredTotal / 40 * 100}%` }} /></div></header>
+    <div className={`${styles.shell} exam-unified`} data-exam="ielts">
+      <header className={`${styles.runnerHeader} exam-unified__topbar exam-unified__body`}><div><p>IELTS Listening practice · {setLabel}</p><strong>Part {activeSection.part} of 4</strong></div><span className={styles.progressCopy}>{answeredTotal}/40 answered</span><div className={styles.progressTrack}><span style={{ width: `${answeredTotal / 40 * 100}%` }} /></div></header>
       <div className={styles.audioDock}><AudioPlayer key={practice.audioUrl} src={practice.audioUrl} label={`${setLabel} complete Listening audio`} replayable /><p>The same recording covers Parts 1–4. You can pause, replay or rewind throughout practice.</p></div>
       <nav className={styles.partNav} aria-label="Listening parts">{practice.sections.map((section, index) => <button type="button" key={section.part} aria-current={index === partIndex ? 'step' : undefined} onClick={() => setPartIndex(index)}><span>Part {section.part}</span><small>{answeredByPart[index].size}/{partNumbers[index].length}</small></button>)}</nav>
-      <section className={styles.runnerBody} aria-labelledby="active-listening-part"><div className={styles.partHeading}><p>Questions {partNumbers[partIndex][0]}–{partNumbers[partIndex].at(-1)}</p><h1 id="active-listening-part">{activeSection.title.replace(/^Listening\s*[—-]\s*/i, '')}</h1><span>{activeSection.instructions}</span></div><div className={styles.questions}>{activeSection.questions.map(question => <QuestionView key={question.id} question={question} answers={answers} setAnswers={setAnswers} />)}</div></section>
+      <section className={`${styles.runnerBody} exam-unified__surface exam-unified__body`} aria-labelledby="active-listening-part"><div className={styles.partHeading}><p>Questions {partNumbers[partIndex][0]}–{partNumbers[partIndex].at(-1)}</p><h1 id="active-listening-part">{activeSection.title.replace(/^Listening\s*[—-]\s*/i, '')}</h1><span>{activeSection.instructions}</span></div><div className={styles.questions}>{activeSection.questions.map(question => <QuestionView key={question.id} question={question} answers={answers} setAnswers={setAnswers} />)}</div></section>
       {scoringError ? <p className={styles.error} role="alert">We could not score this attempt. Your answers are still saved; please try again.</p> : null}
       <footer className={styles.runnerFooter}><button type="button" disabled={partIndex === 0} onClick={() => setPartIndex(index => index - 1)}><ArrowLeft aria-hidden="true" /> Previous part</button><PdfDownloadButton generate={downloadPdf} label="Student PDF" compact />{partIndex < 3 ? <button type="button" onClick={() => setPartIndex(index => index + 1)}>Next part <ArrowRight aria-hidden="true" /></button> : <button type="button" disabled={phase === 'scoring'} onClick={submit}>{phase === 'scoring' ? 'Scoring…' : `Finish and score (${answeredTotal}/40)`}</button>}</footer>
     </div>
