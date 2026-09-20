@@ -19,9 +19,9 @@ confirmó que `origin/main` remoto sigue en `d729dbc3`. Catálogo, TypeScript y
 `prebuild` pasaron; el build Webpack y la revisión visual local pasaron. El build
 predeterminado de Turbopack se interrumpió tras permanecer sin progreso en la fase
 de empaquetado en este worktree. Integración, SHA de `main`, despliegue y smoke
-productivo: pendientes. El commit de esta rama permanece solo en el worktree local:
-la revisión automática denegó subirla a GitHub por falta de autorización explícita
-para publicar este código en el remoto.
+productivo: pendientes. El 20 de septiembre, con autorización explícita, la rama
+se publicó en GitHub y se abrió el [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15)
+en borrador para revisión.
 
 ## Parche activo de seguridad — 19 de septiembre de 2026
 
