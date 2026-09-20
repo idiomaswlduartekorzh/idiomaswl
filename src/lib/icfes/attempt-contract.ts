@@ -24,6 +24,64 @@ export interface IcfesBasicResultDto {
   premiumUnavailableReason?: string;
 }
 
+export interface IcfesFreeSummaryDto {
+  attemptId: string;
+  examId: string;
+  correct: number;
+  total: number;
+  percentage: number;
+  disclaimer: string;
+  officialResource: boolean;
+  premiumEligible: boolean;
+}
+
+export type IcfesOfferProductCode =
+  | 'icfes-single-report-v1'
+  | 'icfes-membership-v1'
+  | 'icfes-intensive-v1';
+
+export interface IcfesOfferProductDto {
+  offerId: 'exam-single' | 'exam-auto' | 'exam-teacher';
+  code: IcfesOfferProductCode;
+  title: string;
+  amountInCents: number;
+  currency: 'COP';
+  billingLabel: 'pago único' | 'renovable cada 30 días';
+  benefits: readonly string[];
+  checkoutEnabled: boolean;
+}
+
+export interface IcfesOfferCatalogDto {
+  version: 'icfes-2026-09-12-v2';
+  offers: readonly IcfesOfferProductDto[];
+  checkoutMode: 'disabled' | 'sandbox' | 'production';
+}
+
+export interface IcfesGradeReceiptDto {
+  ok: true;
+  attemptId: string;
+  examId: string;
+  leadRequired: true;
+  officialResource: boolean;
+  premiumEligible: boolean;
+}
+
+export interface IcfesUnavailableCommerceGradeDto {
+  ok: true;
+  attemptId: string;
+  examId: string;
+  leadRequired: false;
+  commerceAvailable: false;
+  freeSummary: IcfesFreeSummaryDto;
+}
+
+export interface IcfesLeadAcceptedDto {
+  ok: true;
+  offer: IcfesOfferCatalogDto;
+  premiumEligible: boolean;
+  officialResource: boolean;
+}
+
 export type IcfesPaymentStatus = 'PENDING' | 'APPROVED' | 'DECLINED' | 'VOIDED' | 'ERROR';
 
 export interface IcfesCheckoutDto {
@@ -46,13 +104,46 @@ export interface IcfesPremiumQuestionDto {
   rationale: string;
 }
 
+export interface IcfesPersonalizedFeedbackDto {
+  version: 'icfes-personalized-feedback-v1';
+  feedbackId: string;
+  headline: string;
+  executiveReading: string;
+  strength: { label: string; evidence: string; action: string } | null;
+  priority: { label: string; evidence: string; action: string } | null;
+  nextMockGoal: string;
+  sevenDayPlan: readonly { day: number; focus: string; task: string }[];
+  traceability: {
+    attemptId: string;
+    examId: string;
+    inputDigest: string;
+    resultVersion: string;
+    evidenceKeys: readonly string[];
+  };
+}
+
 export interface IcfesPremiumDetailDto {
   ok: true;
   paymentStatus: IcfesPaymentStatus;
   amountInCents: number;
   currency: 'COP';
+  productCode: IcfesOfferProductCode;
   result: IcfesBasicResultDto | null;
   questions?: IcfesPremiumQuestionDto[];
+  personalizedFeedback?: IcfesPersonalizedFeedbackDto;
+}
+
+export function toIcfesFreeSummary(result: IcfesBasicResultDto): IcfesFreeSummaryDto {
+  return {
+    attemptId: result.attemptId,
+    examId: result.examId,
+    correct: result.correct,
+    total: result.total,
+    percentage: result.percentage,
+    disclaimer: 'Resultado pedagógico no oficial; no predice el puntaje ICFES.',
+    officialResource: result.officialResource,
+    premiumEligible: result.premiumEligible,
+  };
 }
 
 export function hasSensitiveResultFields(value: unknown): boolean {

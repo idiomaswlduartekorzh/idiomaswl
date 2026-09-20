@@ -1,3 +1,9 @@
+import {
+  ICFES_COMMERCIAL_OFFERS,
+  ICFES_COMMERCIAL_VERSION,
+  ICFES_EXAM_SLUG,
+} from '../icfes/commercial-contract.ts';
+
 export const XPRESS_OFFER_VERSION = 'xpress-2026-09-12-v5' as const;
 
 export type XpressOfferId = 'exam-single' | 'exam-auto' | 'exam-teacher';
@@ -86,10 +92,35 @@ export function getXpressOffer(id: XpressOfferId): XpressOffer {
   return offer;
 }
 
+const ICFES_XPRESS_OFFERS = Object.freeze(ICFES_COMMERCIAL_OFFERS.map((offer) => ({
+  id: offer.id,
+  name: offer.name,
+  amountInCents: offer.amountInCents,
+  billing: offer.billing,
+  entitlementScope: 'exam' as const,
+  entitlements: offer.entitlements,
+} satisfies XpressOffer)));
+
+export function getXpressOffersForExam(examSlug: string): readonly XpressOffer[] {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG ? ICFES_XPRESS_OFFERS : XPRESS_OFFERS;
+}
+
+export function getXpressOfferForExam(id: XpressOfferId, examSlug: string): XpressOffer {
+  const offer = getXpressOffersForExam(examSlug).find((candidate) => candidate.id === id);
+  if (!offer) throw new Error('unknown_xpress_offer');
+  return offer;
+}
+
+export function getXpressOfferVersion(examSlug: string): string {
+  return examSlug.trim().toLowerCase() === ICFES_EXAM_SLUG
+    ? ICFES_COMMERCIAL_VERSION
+    : XPRESS_OFFER_VERSION;
+}
+
 export function quoteXpressPurchase(context: XpressPurchaseContext): XpressPurchaseQuote {
-  const offer = getXpressOffer(context.requestedOfferId);
   const examSlug = context.requestedExamSlug.trim().toLowerCase();
   if (!examSlug) throw new Error('xpress_exam_required');
+  const offer = getXpressOfferForExam(context.requestedOfferId, examSlug);
 
   const active = context.activeMembership;
   if (!active) {
@@ -111,7 +142,7 @@ export function quoteXpressPurchase(context: XpressPurchaseContext): XpressPurch
     return { action: 'schedule-change', amountInCents: 0, offer, creditInCents: 0, examSlug, reason: 'downgrade' };
   }
 
-  const credit = getXpressOffer('exam-auto').amountInCents;
+  const credit = getXpressOfferForExam('exam-auto', examSlug).amountInCents;
   return { action: 'checkout', amountInCents: offer.amountInCents - credit, offer, creditInCents: credit, examSlug, reason: 'membership-upgrade' };
 }
 
@@ -119,6 +150,11 @@ export function xpressAccessEndsAt(paidAt: Date): Date {
   return new Date(paidAt.getTime() + 30 * 24 * 60 * 60 * 1000);
 }
 
-export function xpressOfferIncludes(offerId: XpressOfferId, entitlement: XpressEntitlement): boolean {
-  return getXpressOffer(offerId).entitlements.includes(entitlement);
+export function xpressOfferIncludes(
+  offerId: XpressOfferId,
+  entitlement: XpressEntitlement,
+  examSlug?: string,
+): boolean {
+  return (examSlug ? getXpressOfferForExam(offerId, examSlug) : getXpressOffer(offerId))
+    .entitlements.includes(entitlement);
 }

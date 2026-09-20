@@ -1,9 +1,18 @@
 import 'server-only';
 
 import { getWompiServerConfig } from '@/lib/wompi/server';
+import type { IcfesOfferCatalogDto } from './attempt-contract';
+import {
+  assertIcfesWompiEnvironment,
+  getIcfesCommercialOffer,
+  ICFES_COMMERCIAL_OFFERS,
+  ICFES_COMMERCIAL_VERSION,
+} from './commercial-contract';
+import { ICFES_PRIVACY_VERSION } from './terms';
 
-export const ICFES_PASS_PRICE_COP = 49_900;
-export const ICFES_PASS_AMOUNT_IN_CENTS = ICFES_PASS_PRICE_COP * 100;
+const SINGLE_REPORT = getIcfesCommercialOffer('exam-single');
+export const ICFES_PASS_PRICE_COP = SINGLE_REPORT.amountInCents / 100;
+export const ICFES_PASS_AMOUNT_IN_CENTS = SINGLE_REPORT.amountInCents;
 
 export interface IcfesProductConfig {
   enabled: true;
@@ -17,6 +26,7 @@ export interface IcfesProductConfig {
 
 export function isIcfesPersistenceEnabled(): boolean {
   return process.env.ICFES_PERSISTENCE_ENABLED === 'true'
+    && process.env.ICFES_PRIVACY_POLICY_VERSION === ICFES_PRIVACY_VERSION
     && Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL?.trim())
     && Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim())
     && Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY?.trim());
@@ -27,9 +37,10 @@ export function getIcfesProductConfig(): IcfesProductConfig {
   if (!isIcfesPersistenceEnabled()) throw new Error('ICFES persistence disabled');
   const configuredPrice = process.env.ICFES_PASE_PRICE_COP?.trim();
   if (configuredPrice && Number(configuredPrice) !== ICFES_PASS_PRICE_COP) {
-    throw new Error('ICFES_PASE_PRICE_COP must match the reviewed COP 49.900 offer');
+    throw new Error('ICFES_PASE_PRICE_COP must match the reviewed COP 12.900 offer');
   }
   const wompi = getWompiServerConfig();
+  assertIcfesWompiEnvironment(wompi.environment);
   const originValue = process.env.ICFES_PASE_ORIGIN?.trim() || 'https://www.idiomaswl.com';
   const origin = new URL(originValue);
   if (!['http:', 'https:'].includes(origin.protocol)
@@ -42,6 +53,26 @@ export function getIcfesProductConfig(): IcfesProductConfig {
     integritySecret: wompi.integritySecret,
     environment: wompi.environment,
     origin: origin.origin,
+  };
+}
+
+export function getIcfesPublicOfferCatalog(): IcfesOfferCatalogDto {
+  const enabled = isIcfesPassEnabled();
+  let checkoutMode: IcfesOfferCatalogDto['checkoutMode'] = 'disabled';
+  if (enabled) checkoutMode = getIcfesProductConfig().environment;
+  return {
+    version: ICFES_COMMERCIAL_VERSION,
+    checkoutMode,
+    offers: ICFES_COMMERCIAL_OFFERS.map((offer) => ({
+      offerId: offer.id,
+      code: offer.productCode,
+      title: offer.name,
+      amountInCents: offer.amountInCents,
+      currency: offer.currency,
+      billingLabel: offer.billing === 'single-exam' ? 'pago único' : 'renovable cada 30 días',
+      benefits: offer.benefits,
+      checkoutEnabled: enabled,
+    })),
   };
 }
 

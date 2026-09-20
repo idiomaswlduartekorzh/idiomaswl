@@ -1,54 +1,58 @@
-# Pase ICFES: operación y activación segura
+# ICFES: operación y activación segura
 
-## Qué está disponible sin pagar
+## Contrato comercial acotado
 
-Al finalizar un simulacro ICFES, el estudiante ve inmediatamente aciertos, total, porcentaje, desglose por parte, desglose pedagógico por habilidad y una recomendación. Este valor aparece antes de cualquier formulario. El contacto es opcional, posterior al resultado y exige consentimiento explícito.
+Este contrato solo aplica a `examSlug=icfes`:
 
-El porcentaje es de esta práctica: no es un puntaje oficial ni una predicción del resultado Saber 11.
+- COP 12.900, pago único: informe detallado de un intento.
+- COP 49.900, renovación cada 30 días: membresía ICFES.
+- COP 99.900, renovación cada 30 días: membresía ICFES Intensiva. Es la única que incluye **Feedback pedagógico personalizado de WeLearn, generado automáticamente a partir de tus resultados**.
 
-## Qué se vende
+Los demás exámenes conservan intacto su catálogo Xpress. El identificador interno `exam-teacher` se mantiene únicamente por compatibilidad con el esquema ya desplegado; en ICFES representa `icfes-intensive-v1` y no habilita operaciones manuales, cupos ni tiempos prometidos.
 
-**Pase ICFES — COP 49.900, pago único.** Desbloquea el análisis detallado pregunta por pregunta del intento autorizado y se limita a los simulacros propios disponibles. No se promete acceso perpetuo, tutoría humana, subida de puntaje ni contenido oficial. Los diez cuadernillos divulgados atribuidos al ICFES conservan únicamente su resultado básico gratuito y no entran en el producto mientras falten verificación independiente por ítem y revisión jurídica.
+El informe de pago único aparece solo después de terminar y registrar un intento elegible. La pantalla general de membresías ICFES ofrece únicamente los dos planes recurrentes; así no puede crearse un pago sin el intento que debe desbloquear.
 
-## Estado por defecto
+## Embudo y minimización
 
-La calificación se realiza en servidor. Las claves se eliminan del payload público. En producción, `ICFES_ATTEMPT_SIGNING_SECRET` es obligatorio.
+La calificación del intento propio ocurre en servidor. Con persistencia activa, el primer DTO confirma únicamente que el intento fue guardado; no contiene puntaje, claves ni diagnóstico. Después del consentimiento versionado se guarda el lead y se presenta la oferta. La ruta gratuita entrega solo correctas, total, porcentaje y aviso de resultado no oficial. Partes, habilidades, respuestas, explicaciones y feedback permanecen en rutas privadas y bajo entitlement.
 
-El cobro está apagado por defecto y necesita dos interruptores:
+El consentimiento del lead queda en `icfes_lead_consents`, ligado al intento, con versiones, snapshot, hashes y fecha. No se guarda el token ni el contacto en claro en ese ledger. Si la persistencia aún está apagada, el examen termina con **solo el puntaje gratuito**, sin pedir datos, crear orden ni mostrar oferta pagable. La información privada y los cobros siguen fallando cerrados si política, propiedad, consentimiento o entitlement no pueden verificarse.
+
+## Interruptores por defecto
 
 ```dotenv
 ICFES_ATTEMPT_SIGNING_SECRET=<32-o-mas-caracteres-aleatorios>
-ICFES_PERSISTENCE_ENABLED=true
-ICFES_PASE_ENABLED=true
-ICFES_PASE_PRICE_COP=49900
-ICFES_PASE_ORIGIN=https://www.idiomaswl.com
+ICFES_PERSISTENCE_ENABLED=false
+ICFES_PRIVACY_POLICY_VERSION=
+ICFES_PASE_ENABLED=false
+ICFES_PASE_PRICE_COP=12900
+ICFES_WOMPI_SANDBOX_ONLY=true
+ICFES_PASE_ORIGIN=http://localhost:3000
 ```
 
-`ICFES_PASE_PRICE_COP` solo acepta `49900`: la UI no decide el monto. También se requieren las variables Wompi existentes (`NEXT_PUBLIC_WOMPI_PUBLIC_KEY`, `WOMPI_PRIVATE_KEY`, `WOMPI_INTEGRITY_SECRET`, `WOMPI_EVENTS_SECRET`) del mismo ambiente, y las credenciales Supabase existentes. En local o Preview deben ser credenciales Wompi Sandbox. No mezclar prefijos `test` y `prod`.
+Para habilitar persistencia en Sandbox, `ICFES_PRIVACY_POLICY_VERSION` debe coincidir exactamente con `icfes-privacy-2026-09-12-v2`. El precio es calculado en servidor y cualquier valor configurado distinto de `12900` bloquea checkout. Con `ICFES_WOMPI_SANDBOX_ONLY=true`, las rutas ICFES rechazan un ambiente Wompi de producción.
 
-## Migración Supabase manual
+## Migraciones remotas pendientes
 
-No se aplicó ninguna migración remota en esta implementación. Antes de activar persistencia, revisar y aplicar manualmente:
+Esta integración no aplicó migraciones remotas. El orden revisable es:
 
-`supabase/migrations/20260908170000_icfes_secure_attempts_and_pass.sql`
+1. `20260908170000_icfes_secure_attempts_and_pass.sql`
+2. `20260912193000_icfes_commercial_contract_v2.sql`
+3. `20260912194500_icfes_lead_consent_ledger.sql`
+4. `20260912200000_xpress_icfes_commercial_contract_v2.sql`
 
-Las tres tablas tienen RLS activo, sin políticas ni permisos para `anon`/`authenticated`; solo las rutas de servidor con `service_role` leen o escriben. La migración fija COP 49.900, mantiene respuestas y resultados privados, registra órdenes idempotentes y crea un entitlement solo después de `APPROVED` verificado.
+La migración Xpress general ya está en remoto. No se eliminan órdenes ni entitlements anteriores. La migración comercial acepta el monto histórico para reconciliación, pero la aplicación solo genera nuevas órdenes de COP 12.900. La migración ICFES conserva también el contrato genérico Xpress v5 de COP 12.900/49.900/99.900. El ambiente Sandbox o producción se controla por los flags del servidor, no por una prohibición permanente en la base. Un rollback operativo apaga los flags y conserva el ledger; cualquier corrección de esquema se hace con otra migración.
 
-Rollback manual y destructivo, solo si no hay información que conservar:
+## Secuencia de verificación
 
-```sql
-DROP TABLE IF EXISTS public.icfes_entitlements;
-DROP TABLE IF EXISTS public.icfes_pass_orders;
-DROP TABLE IF EXISTS public.icfes_attempts;
-```
+1. Ejecutar catálogo, TypeScript, lint, pruebas ICFES/Xpress/DB/privacidad/pagos y build Webpack.
+2. Aplicar las migraciones únicamente en una base de prueba y confirmar RLS, grants de servidor e inmutabilidad del consentimiento.
+3. Configurar credenciales Wompi Sandbox del mismo ambiente y probar tokenización, cobro inicial, webhook, reconciliación, renovación, cancelación y reactivación.
+4. Confirmar que PENDING no desbloquea contenido, APPROVED concede una sola vez y los niveles inferiores nunca reciben `personalizedFeedback`.
+5. Verificar el embudo en móvil y escritorio y comprobar que las rutas privadas mantienen `noindex`.
 
-## Secuencia de activación
+## Pendiente de producto antes de cobrar
 
-1. Mantener `ICFES_PASE_ENABLED=false`; configurar el secreto de intentos y comprobar el resultado gratuito.
-2. Aplicar la migración en un proyecto Supabase de prueba. Activar solo `ICFES_PERSISTENCE_ENABLED=true` y verificar que los intentos se guardan sin exposición por Data API.
-3. Configurar Wompi Sandbox y el webhook existente `/api/wompi/events`. Verificar la firma del evento y la consulta autoritativa por ID a la API de Wompi, además de monto, referencia, ambiente, reintento idempotente y estados PENDING/APPROVED/DECLINED/ERROR.
-4. Activar `ICFES_PASE_ENABLED=true` solo en Preview. Realizar una compra Sandbox completa y comprobar que PENDING no abre el detalle, APPROVED crea exactamente un entitlement y el retorno no simula éxito.
-5. Validar en GA4/GTM `icfes_offer_view`, `icfes_paid_detail_intent`, `icfes_checkout_start` e `icfes_purchase_complete`. Ningún evento contiene respuestas ni PII.
-6. Obtener aprobación editorial, jurídica, de precio y operación. Solo entonces repetir con credenciales de producción y HTTPS.
+El acceso privado al informe depende hoy de cookies firmadas con vencimiento de seis horas y un solo intento activo por navegador. Esto sirve para validar el embudo, pero **no garantiza que un comprador pueda volver a abrir su informe** después de ese plazo o después de realizar otro mock. Antes de habilitar pagos se requiere una ruta durable de recuperación ligada a una cuenta verificada o a otra credencial recuperable, sin permitir que conocer el `attemptId` otorgue acceso.
 
-Apagar `ICFES_PASE_ENABLED` retira el checkout de inmediato. Apagar además `ICFES_PERSISTENCE_ENABLED` deja el resultado gratuito con intento firmado y evita escrituras; los entitlements ya concedidos permanecen en la base hasta una decisión operativa explícita.
+El arnés colegiado rechaza los reportes del 12 de septiembre porque están vinculados a un hash anterior del manifiesto, además de mantener hallazgos editoriales. No se actualizan hashes ni se reutilizan aprobaciones: el contenido exacto actual requiere una nueva revisión independiente antes de salir de `BLOCKED_EDITORIAL`. Integrar código no equivale a autorizar publicación de los mocks retenidos, cobros ni cambios remotos.

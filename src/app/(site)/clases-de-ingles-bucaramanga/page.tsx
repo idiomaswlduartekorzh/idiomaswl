@@ -236,7 +236,7 @@ export default function ClasesInglessBucaramangaPage() {
       <PracticeBand
         accent="#1a4fcc"
         title="Practica gratis antes de venir a la primera clase"
-        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES y el diagnóstico de nivel. Sin registro."
+        sub="Las cinco habilidades de A1 a B2, simulacros de IELTS y TOEFL, prácticas propias abreviadas de ICFES y diagnóstico de nivel. Sin registro."
         cards={[
           { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 a B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
           { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },

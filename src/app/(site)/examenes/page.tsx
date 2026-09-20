@@ -5,7 +5,7 @@ import { EXAM_LIST } from '@/data/exams';
 export const metadata: Metadata = {
   title: 'Simulacros de Certificación Internacional',
   description:
-    'Simulacros completos de TOEFL iBT, IELTS, Cambridge B2 First, ICFES Saber 11, Goethe, DELF/DALF, CILS y Celpe-Bras, con resultado inmediato.',
+    'Prácticas de TOEFL iBT, IELTS, Cambridge B2 First, ICFES Saber 11, Goethe, DELF/DALF, CILS y Celpe-Bras, con resultado inmediato.',
   keywords: [
     'TOEFL iBT simulacro', 'IELTS práctica online', 'ICFES Saber 11 inglés',
     'Cambridge B2 First FCE Colombia', 'FCE simulacro gratis',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Simulacros de Certificación',
-    description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con retroalimentación personalizada.',
+    description: 'TOEFL, IELTS, ICFES y más. Prácticas con retroalimentación y alcance claramente identificado.',
     url: 'https://www.idiomaswl.com/examenes',
   },
   alternates: {
@@ -31,7 +31,7 @@ export default function ExamenesPage() {
           Elige tu examen
         </h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 3rem' }}>
-          Simulacros completos, estrategia de examen y retroalimentación personalizada para cada certificación.
+          Prácticas y estrategia de examen para cada certificación; retroalimentación personalizada cuando el recurso o plan la incluye.
         </p>
 
         <div className="wl-exams-catalog">

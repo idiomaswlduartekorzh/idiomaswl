@@ -10,6 +10,13 @@ interface TokenPayload {
   expiresAt: number;
 }
 
+interface LeadTokenPayload {
+  v: 1;
+  purpose: 'icfes-lead-complete';
+  attemptId: string;
+  expiresAt: number;
+}
+
 function secret(): string {
   const value = process.env.ICFES_ATTEMPT_SIGNING_SECRET?.trim();
   if (value) return value;
@@ -52,3 +59,35 @@ export function verifyIcfesAttemptToken(token: unknown, expectedExamId?: string,
 }
 
 export const ICFES_ATTEMPT_COOKIE = 'wl_icfes_attempt';
+export const ICFES_LEAD_COOKIE = 'wl_icfes_lead';
+
+export function createIcfesLeadToken(attemptId: string, now = Date.now()): string {
+  const payload: LeadTokenPayload = {
+    v: 1,
+    purpose: 'icfes-lead-complete',
+    attemptId,
+    expiresAt: now + 6 * 60 * 60 * 1000,
+  };
+  const encoded = Buffer.from(JSON.stringify(payload), 'utf8').toString('base64url');
+  return `${encoded}.${signature(encoded)}`;
+}
+
+export function verifyIcfesLeadToken(token: unknown, attemptId: string, now = Date.now()): boolean {
+  if (typeof token !== 'string' || token.length > 2_000) return false;
+  const [encoded, provided, extra] = token.split('.');
+  if (!encoded || !provided || extra) return false;
+  const expected = signature(encoded);
+  const expectedBytes = Buffer.from(expected);
+  const providedBytes = Buffer.from(provided);
+  if (expectedBytes.length !== providedBytes.length || !timingSafeEqual(expectedBytes, providedBytes)) return false;
+  try {
+    const payload = JSON.parse(Buffer.from(encoded, 'base64url').toString('utf8')) as LeadTokenPayload;
+    return payload.v === 1
+      && payload.purpose === 'icfes-lead-complete'
+      && payload.attemptId === attemptId
+      && ICFES_ATTEMPT_ID_PATTERN.test(payload.attemptId)
+      && payload.expiresAt >= now;
+  } catch {
+    return false;
+  }
+}

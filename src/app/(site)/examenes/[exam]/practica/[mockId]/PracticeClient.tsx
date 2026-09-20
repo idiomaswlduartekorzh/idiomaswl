@@ -18,7 +18,8 @@ import {
   type RamaModulo2,
 } from '@/data/mocks/sat/routing';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
-import type { IcfesBasicResultDto, IcfesCheckoutDto } from '@/lib/icfes/attempt-contract';
+import type { IcfesFreeSummaryDto, IcfesGradeReceiptDto, IcfesUnavailableCommerceGradeDto } from '@/lib/icfes/attempt-contract';
+import IcfesLeadOfferFlow from '@/components/icfes/IcfesLeadOfferFlow';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
 function NoticesGridSection({
@@ -1094,132 +1095,9 @@ function ResultsView({
   );
 }
 
-function SecureIcfesResults({
-  result,
-  offerEnabled,
-  onRetry,
-}: {
-  result: IcfesBasicResultDto;
-  offerEnabled: boolean;
-  onRetry: () => void;
-}) {
-  const [showLead, setShowLead] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
-  const [consent, setConsent] = useState(false);
-  const [leadState, setLeadState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
-  const [checkoutState, setCheckoutState] = useState<'idle' | 'loading' | 'pending' | 'approved' | 'declined' | 'error'>('idle');
-  const [checkoutError, setCheckoutError] = useState('');
-
-  useEffect(() => {
-    trackIcfesEvent('icfes_report_view', { mock_id: result.examId, report_type: 'free_basic' });
-    if (offerEnabled && result.premiumEligible) {
-      trackIcfesEvent('icfes_offer_view', { mock_id: result.examId, product_code: 'icfes-pass-v1' });
-    }
-  }, [offerEnabled, result.examId, result.premiumEligible]);
-
-  async function submitLead(event: React.FormEvent) {
-    event.preventDefault();
-    if (!consent || name.trim().length < 2 || !isPlausibleEmail(email) || !isPlausibleWhatsapp(whatsapp)) {
-      setLeadState('error'); return;
-    }
-    setLeadState('saving');
-    const saved = await saveLead({
-      name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim(), examSlug: 'icfes',
-      examScore: `${result.percentage}/100 (${result.correct}/${result.total} correctas)`, source: 'icfes-post-result-opt-in',
-    });
-    if (!saved.ok) { setLeadState('error'); return; }
-    setLeadState('saved');
-    trackIcfesEvent('icfes_lead_submit', { mock_id: result.examId, lead_context: 'post_free_result_opt_in' });
-  }
-
-  async function startCheckout() {
-    setCheckoutState('loading'); setCheckoutError('');
-    trackIcfesEvent('icfes_paid_detail_intent', { mock_id: result.examId, product_code: 'icfes-pass-v1' });
-    try {
-      const response = await fetch('/api/icfes/pass/checkout', {
-        method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ attemptId: result.attemptId }),
-      });
-      const data = await response.json() as IcfesCheckoutDto | { error?: string };
-      if (!response.ok || !('ok' in data) || !data.ok) throw new Error('error' in data ? data.error : 'No pudimos abrir el pago.');
-      const status = data.paymentStatus.toLowerCase() as 'pending' | 'approved' | 'declined' | 'error';
-      setCheckoutState(status === 'approved' ? 'approved' : status === 'declined' ? 'declined' : 'pending');
-      trackIcfesEvent('icfes_checkout_start', { mock_id: result.examId, product_code: 'icfes-pass-v1', amount_cop: data.amountInCents / 100 });
-      window.location.assign(data.checkoutUrl ?? data.resultUrl);
-    } catch (error) {
-      setCheckoutState('error');
-      setCheckoutError(error instanceof Error ? error.message : 'No pudimos abrir el pago.');
-    }
-  }
-
-  return (
-    <div className="prac-results" data-testid="icfes-free-result" data-active-practice="true">
-      <div className="prac-results__hero" style={{ '--exam-color': '#14215c' } as React.CSSProperties}>
-        <p className="prac-results__label">Resultado gratuito inmediato</p>
-        <div className="prac-results__score">{result.percentage}</div>
-        <p className="prac-results__score-sub">% de aciertos en esta práctica</p>
-        <p className="prac-results__fraction">{result.correct} / {result.total} correctas</p>
-        <p style={{ maxWidth: 560, margin: '0.8rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
-          Este resultado pedagógico no predice ni reemplaza el puntaje oficial del ICFES.
-        </p>
-      </div>
-
-      <section className="prac-results__sections" aria-labelledby="icfes-breakdown-title">
-        <h2 id="icfes-breakdown-title" style={{ margin: 0, fontSize: '1.2rem' }}>Desglose por parte</h2>
-        {result.byPart.map((row) => <div key={row.key} className="prac-results__sec">
-          <div className="prac-results__sec-header"><span>{row.label}</span><span>{row.correct}/{row.total} · {row.percentage}%</span></div>
-          <div className="prac-results__bar"><div className="prac-results__bar-fill" style={{ width: `${row.percentage}%`, background: '#14215c' }} /></div>
-        </div>)}
-      </section>
-      <section className="prac-results__sections" aria-labelledby="icfes-skills-title">
-        <h2 id="icfes-skills-title" style={{ margin: 0, fontSize: '1.2rem' }}>Habilidades observadas</h2>
-        {result.bySkill.map((row) => <div key={row.key} className="prac-results__sec">
-          <div className="prac-results__sec-header"><span>{row.label}</span><span>{row.percentage}%</span></div>
-        </div>)}
-        <Link href={result.recommendation.href} className="btn">{result.recommendation.label} →</Link>
-      </section>
-
-      {result.officialResource ? (
-        <div className="icfes-product-card icfes-product-card--muted">
-          <h2>Detalle pregunta por pregunta no vendido</h2>
-          <p>{result.premiumUnavailableReason ?? 'Este banco histórico atribuido solo ofrece el resultado básico gratuito.'}</p>
-        </div>
-      ) : offerEnabled && result.premiumEligible ? (
-        <div className="icfes-product-card" data-testid="icfes-pass-offer">
-          <p className="icfes-product-card__eyebrow">PAGO ÚNICO</p>
-          <h2>Pase ICFES — COP 49.900</h2>
-          <p>Desbloquea el análisis detallado pregunta por pregunta de este intento. El producto se limita a nuestros simulacros propios disponibles.</p>
-          <button type="button" className="btn" onClick={startCheckout} disabled={checkoutState === 'loading'}>
-            {checkoutState === 'loading' ? 'Preparando pago seguro…' : 'Ver opción de pago'}
-          </button>
-          {checkoutError && <p role="alert" className="prac-lead-gate__error">{checkoutError}</p>}
-          <small>La compra no incluye cuadernillos oficiales ni garantiza un puntaje.</small>
-        </div>
-      ) : null}
-
-      <div className="icfes-product-card icfes-product-card--lead">
-        <h2>¿Quieres recibir orientación por correo o WhatsApp?</h2>
-        <p>Tu resultado ya está visible. Dejar tus datos es opcional.</p>
-        {!showLead ? <button type="button" className="btn btn-ghost" onClick={() => setShowLead(true)}>Quiero recibir orientación</button> :
-          leadState === 'saved' ? <p role="status">Listo. Registramos tu solicitud.</p> : (
-          <form onSubmit={submitLead} className="prac-lead-gate__form">
-            <label className="prac-lead-gate__field"><span className="prac-lead-gate__label">Nombre</span><input className="prac-lead-gate__input" value={name} onChange={(event) => setName(event.target.value)} /></label>
-            <label className="prac-lead-gate__field"><span className="prac-lead-gate__label">Correo</span><input type="email" className="prac-lead-gate__input" value={email} onChange={(event) => setEmail(event.target.value)} /></label>
-            <label className="prac-lead-gate__field"><span className="prac-lead-gate__label">WhatsApp</span><input type="tel" className="prac-lead-gate__input" value={whatsapp} onChange={(event) => setWhatsapp(event.target.value)} /></label>
-            <label className="icfes-consent"><input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} /> Acepto que WeLearn me contacte sobre orientación y productos ICFES. Puedo retirar mi consentimiento.</label>
-            {leadState === 'error' && <p role="alert" className="prac-lead-gate__error">Revisa los datos y acepta el contacto antes de enviar.</p>}
-            <button className="btn" disabled={leadState === 'saving'}>{leadState === 'saving' ? 'Guardando…' : 'Enviar datos opcionales'}</button>
-          </form>)}
-      </div>
-      <div className="prac-results__actions"><button onClick={onRetry} className="btn btn-ghost">Intentar de nuevo</button><Link href="/examenes/icfes" className="btn">Volver a ICFES</Link></div>
-    </div>
-  );
-}
-
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'module-break' | 'lead' | 'results';
+type Phase = 'intro' | 'exam' | 'module-break' | 'lead' | 'results' | 'icfes-free-only';
 
 // ── Lead gate (shown after exam, before results) ───────────────────────────────
 function LeadGateView({
@@ -1317,7 +1195,8 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [flagged, setFlagged] = useState<Set<string>>(new Set());
-  const [secureResult, setSecureResult] = useState<IcfesBasicResultDto | null>(null);
+  const [secureReceipt, setSecureReceipt] = useState<IcfesGradeReceiptDto | null>(null);
+  const [fallbackFreeSummary, setFallbackFreeSummary] = useState<IcfesFreeSummaryDto | null>(null);
   const [gradingError, setGradingError] = useState('');
   const [attemptToken, setAttemptToken] = useState('');
   // Holds computed score while user fills the lead gate
@@ -1371,14 +1250,20 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
           method: 'POST', headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ examId: mock.id, attemptToken, responses: answers }),
         });
-        const data = await response.json() as { ok?: boolean; result?: IcfesBasicResultDto; error?: string };
-        if (!response.ok || !data.ok || !data.result) throw new Error(data.error ?? 'No pudimos calificar el intento.');
-        setSecureResult(data.result);
+        const data = await response.json() as IcfesGradeReceiptDto | IcfesUnavailableCommerceGradeDto | { ok?: false; error?: string };
+        if (!response.ok || !data.ok || !('attemptId' in data)) {
+          throw new Error('error' in data ? data.error ?? 'No pudimos calificar el intento.' : 'No pudimos calificar el intento.');
+        }
+        if ('freeSummary' in data) {
+          setFallbackFreeSummary(data.freeSummary);
+          setPhase('icfes-free-only');
+          return;
+        }
+        setSecureReceipt(data);
         trackIcfesEvent('icfes_mock_complete', {
-          mock_id: mock.id, mode: 'exam', question_count: data.result.total,
-          correct_count: data.result.correct, accuracy: data.result.percentage,
+          mock_id: mock.id, mode: 'exam', question_count: allQuestions.length,
         });
-        setPhase('results');
+        setPhase('lead');
       } catch (error) {
         setGradingError(error instanceof Error ? error.message : 'No pudimos calificar el intento.');
       }
@@ -1520,7 +1405,8 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     setFlagged(new Set());
     setCurrentIdx(0);
     setRoutedTo(null);
-    setSecureResult(null);
+    setSecureReceipt(null);
+    setFallbackFreeSummary(null);
     setGradingError('');
     setAttemptToken('');
     setPhase('intro');
@@ -1559,7 +1445,20 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
     });
   }, [exam.slug, mock.id, phase, secureIcfes]);
 
+  if (phase === 'icfes-free-only' && fallbackFreeSummary) {
+    return <main className="prac-shell" data-testid="icfes-free-only-result">
+      <section className="prac-results" aria-labelledby="icfes-free-only-title">
+        <p className="eyebrow">Resultado pedagógico no oficial</p>
+        <h1 id="icfes-free-only-title">Tu puntaje</h1>
+        <div className="prac-results__hero"><div className="prac-results__score">{fallbackFreeSummary.correct}/{fallbackFreeSummary.total}</div></div>
+        <p>El informe detallado y los pagos ICFES no están habilitados en este momento. No te pedimos datos ni se generó un cobro.</p>
+        <div className="prac-results__actions"><button onClick={handleRetry} className="btn btn-ghost">Intentar de nuevo</button><Link href="/examenes/icfes" className="btn">Volver a ICFES</Link></div>
+      </section>
+    </main>;
+  }
+
   if (phase === 'lead') {
+    if (secureIcfes && secureReceipt) return <IcfesLeadOfferFlow receipt={secureReceipt} onRetry={handleRetry} />;
     // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
     // un simulacro de una sola sección, «análisis por parte» era una barra que repetía
     // el marcador; el SAT lo da por dominio porque sus ítems traen dominio.
@@ -1577,7 +1476,6 @@ export default function PracticeClient({ exam, mock, secureIcfes }: { exam: Exam
   }
 
   if (phase === 'results') {
-    if (secureIcfes && secureResult) return <div className="prac-shell"><SecureIcfesResults result={secureResult} offerEnabled={secureIcfes.offerEnabled} onRetry={handleRetry} /></div>;
     return (
       <div className="prac-shell">
         <ResultsView mock={servedMock} exam={exam} answers={answers} onRetry={handleRetry} routedTo={routedTo} />

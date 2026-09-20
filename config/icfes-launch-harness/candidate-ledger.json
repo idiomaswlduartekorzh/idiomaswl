@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 2,
+  "candidates": [
+    {
+      "candidateId": "icfes-final-integration-20260912",
+      "workOrderId": "icfes-final-integration-v2",
+      "workOrderDigest": "4d44cc7302b98ce0a47a460339bef127d003a6cdf795488bd9bf5645a8016438",
+      "baseCommit": "1e151ba2",
+      "state": "BLOCKED_EDITORIAL",
+      "rawBundleDigest": "37db3d11710bf2243f717fb998ba1f237f50b6292e21fceb8373fa2c6988c169",
+      "runtimeBundleDigest": "89cda55f2ce95b0e9b8dcfd3d77d6d09178ce220172001f6b06867e9fa02ccba",
+      "subjectArtifacts": [
+        {
+          "path": "config/icfes-launch-harness/policy.json",
+          "sha256": "404419583d676c40004001ce0a371631012503ad15b05765d4dbd25422e9d643"
+        },
+        {
+          "path": "src/data/icfes/own-mock-expansion-manifest.json",
+          "sha256": "c43b3bc12446bffa49b5c1a19b711bd59cbc6b40c79840884f7d21ae5f81778c"
+        },
+        {
+          "path": "src/data/icfes/own-mock-expansion.schema.json",
+          "sha256": "5ebd623b27b01668424fac9251a4611a5c5906b87fd9d7367ef61812a8e01d37"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-01.ts",
+          "sha256": "8d27c215c91c377316b219dd0575cb2bd33b4654adc9dcc90bae468935b22eea"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-02.ts",
+          "sha256": "b886a267b16e3195baf81fa4a31436a2aeee92037014d4cf4834b8a3eb42f7da"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-03.ts",
+          "sha256": "5b688aa19a1d9c744d971b93da2633797598d248d8771dc87f2398e9d3ab53f8"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-04.ts",
+          "sha256": "92e30331c40db50c0d9a2ae95ff2f84e588f853f9df2d88a180fc7d174c7b791"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-05.ts",
+          "sha256": "ccdd2ba5258a8912e3f9d3928f142e7d6cca64f37fe1dcd909eee05b7ab3c726"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-06.ts",
+          "sha256": "5f356a7cc28c7881a76b6b8ecb5a47636027d24d295b858a7e0293f4b68a2ca8"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-07.ts",
+          "sha256": "ffcb018776d88d0ea40c92ee9644cd76838d67c0fb141b484f7b2e83a36ed93b"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-08.ts",
+          "sha256": "c20b74c55ff9052d16bd797bbedd2601ac5bdda94c4fce9145a9a8481be00ccd"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-09.ts",
+          "sha256": "0a0d2c1fedd3cd443bf707ba7df074c3ca71f7e51ca24e139f438a39ed3459b2"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-10.ts",
+          "sha256": "c57ac17eea29000bbf762cbbdf9f2df7d987e2cd4b8181db2842a05a79852390"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-11.ts",
+          "sha256": "c38181ab5cef6337d041db4ae4a5a0580adc4060131d58bc61e34ada77832b3e"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-12.ts",
+          "sha256": "f8f8f923202917f9c92c4ee29a82c1bab2c9589469daf630f9fee474d68adc76"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-13.ts",
+          "sha256": "ab3da51261d99f7b8178b894cd05e74bc09247b1f4507f5cb49be87fb10cebe4"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-14.ts",
+          "sha256": "eeb0ed7fcb005086f0a5838b0791a60242619f572e6c7d1a15904c298c87fdb1"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-15.ts",
+          "sha256": "7f4936dd7cff49e72740d53b4f57ef504a0d63fde511e0c88b279daafbcb73f4"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-16.ts",
+          "sha256": "c055323e74994c4e037054ad2b8b9e342253d06b0d00777ddfb28dee0aa2b277"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-17.ts",
+          "sha256": "d5d188541e6d164d1ee1c82a9c9f9a7bd115b9bbeaf3a5dd7420d00cae78579a"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-18.ts",
+          "sha256": "88b51e8c9073c29ac9e8bd23ebef023a7fa72b0bccefc90cded368811d02b585"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-19.ts",
+          "sha256": "e3ce13f64f2d10f45f31eb20ce42f8b42f9d0e5bbd486610105869a8872a352c"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-20.ts",
+          "sha256": "3e35f6d75e2c323fb760b1d33a3a851f1806d0db90e20f3551dc96c846d8554e"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-21.ts",
+          "sha256": "92babac36e20958b7586795c49e782feeaa23fa38c4294f04b43b7af3c01ee70"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-22.ts",
+          "sha256": "4b9a8430118df42f22a3dc8a06281214eefcdf000c9d036fe7d4980728e4980a"
+        },
+        {
+          "path": "src/data/mocks/icfes-mock-23.ts",
+          "sha256": "33d0507db357912467f3aa4ed424dade9b567c3cfbe97ffca5fc76caab5f7845"
+        },
+        {
+          "path": "src/data/mocks/index.ts",
+          "sha256": "be99fd48085940d0d338b54ad245e5da6b00756d5285101829a012ed307d3853"
+        },
+        {
+          "path": "src/data/mocks/normalize-icfes-mock.ts",
+          "sha256": "88c6fcf5ff1422ee5423d3dd4c4c24581fa5348f2b997b4b65d15dca96cc3ecb"
+        },
+        {
+          "path": "src/data/mocks/icfes-current-part-seven.ts",
+          "sha256": "03f5dc5783ff71ae76b1926f25b0e122097ca411eb33739354d7cb3fcd391537"
+        },
+        {
+          "path": "src/lib/icfes/commercial-contract.ts",
+          "sha256": "9eba82d435b962b545eb72528711159cb743fbd05644b14d9c5086fb41950302"
+        },
+        {
+          "path": "src/lib/icfes/terms.ts",
+          "sha256": "fac84142570c1dcc5ce42d24c961612e1d58852424758de895c4796f3c0574dc"
+        },
+        {
+          "path": "src/lib/icfes/attempt-contract.ts",
+          "sha256": "3cc457e44f900ba0ea0015c4d1b737d66614ac39abe0687a80c3b9cc94e2ba3a"
+        },
+        {
+          "path": "src/lib/icfes/attempt-store.server.ts",
+          "sha256": "1f2ea56707a1a0bb518ee7c155b7373dad8e012e4f81cb5c9a99709822ae111b"
+        },
+        {
+          "path": "src/lib/icfes/attempt-token.server.ts",
+          "sha256": "7d0e88a0f34896e39d591a5e39ff4a54df6076ccc0e0aeac8d80f94e393ee4ba"
+        },
+        {
+          "path": "src/lib/icfes/product-config.server.ts",
+          "sha256": "af9d83c2590de6575fef254a7c80704abe2b9c872c006a4295af62954e5ddc08"
+        },
+        {
+          "path": "src/lib/icfes/personalized-feedback.server.ts",
+          "sha256": "88f1924a7fd00b730bcf3d09ded4f98734a676de2b95b669a791605265077509"
+        },
+        {
+          "path": "src/lib/icfes/payment-events.server.ts",
+          "sha256": "d0fdc3b6cec622f80d3a31fb0ebe65212fec455a3c5d35b8882d91cf088ff460"
+        },
+        {
+          "path": "src/lib/analytics/icfes.ts",
+          "sha256": "03f9667346d358611de3c3f3fd729551353a2774911b55ff7d455caaf6b26e64"
+        },
+        {
+          "path": "src/lib/xpress-commerce/catalog.ts",
+          "sha256": "9b3d62d7a0383bc91a21d9390a7c0b75e06751e69dd2e11f27ccd865420f9e8f"
+        },
+        {
+          "path": "src/lib/xpress-commerce/terms.ts",
+          "sha256": "04946b356a70168b79c659a99145c31c6927f435604eabe232719e2f0bd05d99"
+        },
+        {
+          "path": "src/lib/xpress-commerce/payment.ts",
+          "sha256": "1565a55b1c6012946dfdbf3cc6fe3811c95512f531efacb8159c6f35b8292d6a"
+        },
+        {
+          "path": "src/lib/xpress-commerce/payments.server.ts",
+          "sha256": "6753fd91e1af7cfb44f7a27fe51fc84d10a1d36104ce1c9b0e6f9e5e7a9865c8"
+        },
+        {
+          "path": "src/lib/xpress-commerce/subscriptions.server.ts",
+          "sha256": "3eac6dc3f460ddae59a35f1f72e8079b034329102fa01d9ee66958bf57241a16"
+        },
+        {
+          "path": "src/lib/xpress-commerce/fulfillment.server.ts",
+          "sha256": "40853a2bc4a1c4f991d122e60670b04d16a895a34385e2fe6fbedce334a69aab"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/grade/route.ts",
+          "sha256": "351a13583e5ce7a13c750258a41f658db95d3917b5a80793b8d92079974b5bbe"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/[attemptId]/lead/route.ts",
+          "sha256": "ecc26e41575b39613c192efeaf4923232ef6bf6239a109d52aef4ca17dedfb0f"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/[attemptId]/free-summary/route.ts",
+          "sha256": "fc80920dd2f5f3faa1658356da59ddf9726ea5627ca497fa5b24abd4fb0e1469"
+        },
+        {
+          "path": "src/app/api/icfes/attempts/[attemptId]/detail/route.ts",
+          "sha256": "2825605b4d378af5544b30abceedcc9bd48831fb576ed6dbdda08986e86563c6"
+        },
+        {
+          "path": "src/app/api/icfes/pass/checkout/route.ts",
+          "sha256": "a827d0d67c1c0f383ac802f23da250888d7a931e4f76d1e3419e2f67cbf6776a"
+        },
+        {
+          "path": "src/app/api/xpress-orders/route.ts",
+          "sha256": "7bd6ad9492f0370e454a57e90f2a0e6d3d5f23f4f07077379e8261a4acc15a8c"
+        },
+        {
+          "path": "src/components/icfes/IcfesLeadOfferFlow.tsx",
+          "sha256": "1035ddda6ca40c5f86ecd58de2b6bb3f9b2a05817a8cebd42c5951f0116b73a0"
+        },
+        {
+          "path": "src/components/icfes/IcfesLeadOfferFlow.module.css",
+          "sha256": "d6f0a2510f18dc2572219b84d89171af0a4c57b135a580ea63e28ae4da7f4600"
+        },
+        {
+          "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx",
+          "sha256": "96d7726cb72553415a19b126f55a077c9805fc65a0a1629aef5513d6a2151afe"
+        },
+        {
+          "path": "src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx",
+          "sha256": "005ffe567a9d08f55e9b2ea1594eb5da8342350dd0aae751b40a869786ace72a"
+        },
+        {
+          "path": "src/app/(site)/suscripcion/examenes/XpressMembershipClient.tsx",
+          "sha256": "05f3984ca1bfb51c8baea4683d4418564bce0d4f7b20e9e8288476a81fdd2117"
+        },
+        {
+          "path": "src/app/(site)/suscripcion/examenes/page.tsx",
+          "sha256": "37d3caee9db4c5c840fd7fe9ac04dfd91a83451fd8ccbe68748721d0b1caa1a8"
+        },
+        {
+          "path": "src/app/(auth)/login/AuthForm.tsx",
+          "sha256": "218937417018a21b7a4c77fcc73d0ea31ce4012eb860cc3b1e0984fed612864e"
+        },
+        {
+          "path": "src/app/layout.tsx",
+          "sha256": "c16d95244a8d3f4f9bb0ee1695ac38fd533a2ba7b566911d9adb532d2b7a6017"
+        },
+        {
+          "path": "src/app/(site)/examenes/page.tsx",
+          "sha256": "a1a3d8a480dfdf01735bedf6d3f792579f0624ff4983a03dbddd7f4ce5dfed27"
+        },
+        {
+          "path": "src/app/(site)/clases-de-ingles/page.tsx",
+          "sha256": "11207133076ce5990a437a47c0dce7eb89cc90a1114bf785427231d6fce1083c"
+        },
+        {
+          "path": "src/app/(site)/clases-de-ingles-bucaramanga/page.tsx",
+          "sha256": "944feb02a7b511a1d05aaf8efdc301e78610a9329f9752d5a880bf9c44809401"
+        },
+        {
+          "path": "src/components/icfes/IcfesDashboardClient.tsx",
+          "sha256": "3951195fbc4c3d1a08bfe64cf5c6c2d0bf491b19e6d5180c2ab857e386b0eeda"
+        },
+        {
+          "path": "supabase/migrations/20260912193000_icfes_commercial_contract_v2.sql",
+          "sha256": "671005b7a48069a4edbb17678e2f29b4e620880a6f3dfd1f504568a9ff4be480"
+        },
+        {
+          "path": "supabase/migrations/20260912194500_icfes_lead_consent_ledger.sql",
+          "sha256": "58ad4c7160b6fc17252b3f311036cfac02c7751fc647f903e26b7314bae128f9"
+        },
+        {
+          "path": "supabase/migrations/20260912200000_xpress_icfes_commercial_contract_v2.sql",
+          "sha256": "1533b86b1761094e7a8a6f5799e28a23315e514530886de36ac80e56ed830c59"
+        },
+        {
+          "path": "config/icfes-launch-harness/review-report.schema.json",
+          "sha256": "66aea0613bb9f37dfa062543fa62c0549fd3d4a28fe75dafffc8606c334d9b2d"
+        },
+        {
+          "path": ".env.example",
+          "sha256": "750bb3b585db28cc1bb8832a7e647ced21e1cd23cf8c11ef61dc9e034d734442"
+        },
+        {
+          "path": "package.json",
+          "sha256": "fed16b1dba4312914db8383a6123505e7f2a47b427dda8cf3f9b48ed31f01df0"
+        },
+        {
+          "path": "playwright.config.ts",
+          "sha256": "d135e82182628f5236e2bbbc75899c01e60646c0ce443bd435652867ca959685"
+        },
+        {
+          "path": "scripts/check-icfes-own-expansion.mjs",
+          "sha256": "d92fd6bcb3ed87ec8d5152308da95085edc4ae6cf9f42ece7f10c87f4a985da6"
+        },
+        {
+          "path": "scripts/icfes-launch-harness.mjs",
+          "sha256": "e10823e2d38770f3953a601695de941ed73261852fcf121413eca1e9f6b78c0a"
+        },
+        {
+          "path": "scripts/lib/icfes-launch-harness-core.mjs",
+          "sha256": "4925c2019fa5ed4af266c48a8ffddd3c481174b458e8363623d855c1eb064302"
+        },
+        {
+          "path": "scripts/lib/icfes-runtime-effective.mjs",
+          "sha256": "af18ed43be9f02000c2fecc6cf050f9b7813b8552870634e07b75ee6d753d567"
+        },
+        {
+          "path": "tests/icfes-final-integration.test.mjs",
+          "sha256": "1b11b3d279d2aa20dea80f7efce1ff0ca110081ab7f171d943b666c1b58f18bb"
+        },
+        {
+          "path": "tests/icfes-commercial-database.test.mjs",
+          "sha256": "983201099ab60b0db57c530ce9b347faf2f5ce656452cca955401dccd7a759b9"
+        },
+        {
+          "path": "tests/icfes-launch-harness.test.mjs",
+          "sha256": "97af780a7e9bde97d2bf70ad095a03100ecdd03f955759c7977b93d4c1b3b920"
+        },
+        {
+          "path": "tests/icfes-analytics.test.mjs",
+          "sha256": "04f429b4e07c2934ccac8fe6fac90b02d0a053f68007d83e550e5a8f499a94fb"
+        },
+        {
+          "path": "tests/icfes-product.test.mjs",
+          "sha256": "04e57f0853fedecc6c432af98e74369aacf183cea400cf0042b981817c75d7ce"
+        },
+        {
+          "path": "tests/xpress-payments-database.test.mjs",
+          "sha256": "8f94ae30dc787c47674d1bf5f88d4b753c2551c617a983f5e06cdafcc2d577c8"
+        },
+        {
+          "path": "tests/e2e/icfes-commercial-funnel.spec.ts",
+          "sha256": "152c9cf1ebb81ac55cef73bfa804580c53e6d6b31afc4509e504a4c3a4a51d3f"
+        },
+        {
+          "path": "docs/icfes-product-activation.md",
+          "sha256": "226eba0ef1ef1cd15fc99d803ba87a4b8c67d1881bf4ff88dc59af57665dc950"
+        },
+        {
+          "path": "docs/icfes-analytics-instrumentation.md",
+          "sha256": "065ffea85459ecdd83dcac9d379cfe5bfd1eecdac7220977cd66387b30bc4ce3"
+        },
+        {
+          "path": "docs/icfes-final-integration-20260912.md",
+          "sha256": "0ff32eb9074e824df304a5269187328325577ff52922e8cf81da03ce500f94ff"
+        }
+      ],
+      "candidateDigest": "dd72ac8045b17d3306f7370fde861412c3955879ad5f48eb35a6afde295a9da7"
+    }
+  ]
+}

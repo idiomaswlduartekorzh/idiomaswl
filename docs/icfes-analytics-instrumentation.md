@@ -28,6 +28,10 @@ Todos los eventos incluyen `exam=icfes-saber-11`, `event_schema_version=1` y `pa
 | `icfes_whatsapp_click` | Se abre WhatsApp desde una ruta ICFES | `interaction`, `cta_location` |
 | `icfes_offer_view` | Se muestra la oferta habilitada en un simulacro propio | `mock_id`, `product_code` |
 | `icfes_paid_detail_intent` | Se pulsa la opción de pago | `mock_id`, `product_code` |
+| `icfes_single_report_select` | Se elige el informe de un intento | `mock_id`, `product_code`, `amount_cop` |
+| `icfes_pass_select` | Se elige la membresía de 30 días | `mock_id`, `product_code`, `amount_cop` |
+| `icfes_intensive_select` | Se elige la membresía intensiva | `mock_id`, `product_code`, `amount_cop` |
+| `icfes_free_continue` | Se continúa al puntaje gratuito mínimo | `mock_id`, `offer_variant` |
 | `icfes_checkout_start` | El servidor devuelve un checkout Wompi válido | `mock_id`, `product_code`, `amount_cop` |
 | `icfes_purchase_complete` | El endpoint privado confirma APPROVED y entitlement | `mock_id`, `product_code`, `amount_cop` |
 

@@ -46,7 +46,7 @@ const FAQS = [
   { q: '¿Puedo presentar el TOEFL iBT en Bucaramanga?', a: 'No nos consta que exista sede de TOEFL iBT en la ciudad, así que cuenta con viajar. Cuidado con una confusión muy común: el TOEFL ITP que se ofrece localmente es un examen diferente, con otros usos, y no reemplaza al iBT que piden las universidades del exterior. Confirma siempre en la fuente oficial antes de pagar.' },
   { q: '¿Qué nivel de inglés necesito para graduarme de la universidad en Bucaramanga?', a: 'Depende de la universidad y varía bastante: va desde A1 en pregrado en la UIS hasta B2 en la UNAB, pasando por B1 en la UPB, la USTA y la UDES. Las UTS piden B1 en tecnología y B2 en el ciclo profesional. Muchas permiten homologar el requisito con un examen internacional. Confirma tu caso con tu facultad, porque los reglamentos cambian.' },
   { q: '¿Qué nivel de inglés piden los call centers bilingües en Bucaramanga?', a: 'Hoy el estándar es B2, que en muchas convocatorias se expresa como un 80% de dominio. Es un salto real frente al B1 que se pedía hace unos años. En el área metropolitana operan compañías como TP, Concentrix, Lean Solutions, Accedo, Atento y Solvo, y los cargos bilingües pagan por encima de los monolingües.' },
-  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación propia con simulacros completos y retroalimentación por sección.' },
+  { q: '¿Qué exámenes de inglés preparan en WeLearn?', a: 'Preparamos IELTS Academic y General, TOEFL iBT, Cambridge B2 First (FCE) e ICFES Saber 11. Cada examen tiene su ruta de preparación; los recursos ICFES propios indican expresamente cuando son prácticas abreviadas.' },
   { q: '¿Cuánto cuesta aprender inglés en Bucaramanga con WeLearn?', a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. El diagnóstico inicial es gratis y ahí definimos objetivo, nivel y frecuencia para darte el precio exacto de tu caso. Escríbenos al 300 500 4253.' },
   { q: '¿Tienen paquetes de horas con descuento?', a: 'Sí. Hay paquetes prepago de clases en vivo, y entre más horas tomas, menor es el valor por hora. Escríbenos por WhatsApp al 300 500 4253 y te contamos las opciones vigentes.' },
   { q: '¿Cuánto tiempo necesito para prepararme para el IELTS?', a: 'Con nivel B1 sólido, entre 10 y 14 semanas de preparación constante (1 hora diaria) son suficientes para alcanzar Band 7. Con nivel más bajo, puede tomar de 5 a 8 meses.' },
@@ -614,7 +614,7 @@ export default function ClasesDeInglesPage() {
       <PracticeBand
         accent="#1a4fcc"
         title="Todo lo que puedes practicar gratis desde hoy"
-        sub="Las cinco habilidades de A1 a B2, los simulacros completos de IELTS, TOEFL e ICFES, y el diagnóstico de nivel. Corrección inmediata y sin registro."
+        sub="Las cinco habilidades de A1 a B2, simulacros de IELTS y TOEFL, prácticas propias abreviadas de ICFES y diagnóstico de nivel. Corrección inmediata y sin registro."
         cards={[
           { href: '/practica/ingles/a1/gramatica', title: 'Gramática A1 · A2 · B1 · B2', desc: 'Desde los cimientos hasta estructuras avanzadas, con corrección al instante en los cuatro niveles.' },
           { href: '/practica/ingles/a1/vocabulario', title: 'Vocabulario con audio', desc: 'Palabras de alta frecuencia con audio nativo, organizadas por nivel del Marco Europeo.' },

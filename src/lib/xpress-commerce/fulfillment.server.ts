@@ -3,7 +3,7 @@ import { randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { escapeEmailHtml, sendCourseEmail } from '@/lib/course-pricing/email.server';
 import { XPRESS_EXAM_OPTIONS } from '@/lib/student-onboarding/catalog';
-import { getXpressOffer } from './catalog';
+import { getXpressOfferForExam } from './catalog';
 import type { XpressOfferId } from './catalog';
 
 type JobKind = 'student_receipt' | 'owner_notification';
@@ -55,7 +55,7 @@ async function runJob(orderId: string, kind: JobKind, work: () => Promise<void>)
 
 function labels(order: XpressOrderRecord) {
   const exam = XPRESS_EXAM_OPTIONS.find((item) => item.id === order.exam_slug)?.label ?? order.exam_slug;
-  const offer = getXpressOffer(order.offer_id);
+  const offer = getXpressOfferForExam(order.offer_id, order.exam_slug);
   return { exam, offer };
 }
 

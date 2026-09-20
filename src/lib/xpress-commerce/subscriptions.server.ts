@@ -5,15 +5,21 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import { escapeEmailHtml, sendCourseEmail } from '@/lib/course-pricing/email.server';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
-import { getXpressOffer, XPRESS_OFFER_VERSION, type XpressMembershipOfferId } from './catalog';
+import { assertIcfesWompiEnvironment, ICFES_EXAM_SLUG } from '@/lib/icfes/commercial-contract';
+import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
+import {
+  getXpressOfferForExam,
+  getXpressOfferVersion,
+  type XpressMembershipOfferId,
+} from './catalog';
 import { activeXpressMembership, queueXpressPaymentReconciliation, reconcileXpressPayment, saveXpressProviderPayment, xpressExamLabel } from './payments.server';
 import { parseXpressProviderPayment, type XpressSubscriptionInput } from './payment';
 import { buildXpressRecurringTransaction } from './recurring';
 import {
-  XPRESS_LEGAL_SNAPSHOT,
-  XPRESS_PRIVACY_VERSION,
-  XPRESS_RECURRING_CONSENT_VERSION,
-  XPRESS_TERMS_VERSION,
+  xpressLegalSnapshotForExam,
+  xpressPrivacyVersionForExam,
+  xpressRecurringConsentVersionForExam,
+  xpressTermsVersionForExam,
 } from './terms';
 
 export type XpressSubscriptionStatus = 'creating_source' | 'pending_initial' | 'scheduled' | 'active' | 'past_due' | 'cancel_at_period_end' | 'canceled';
@@ -126,9 +132,9 @@ async function profileAllowsSubscription(userId: string, examSlug: string) {
   return data?.student_path === 'exam' && data.target_exam === examSlug;
 }
 
-function legalSnapshot(acceptance: WompiAcceptance) {
+function legalSnapshot(examSlug: string, acceptance: WompiAcceptance) {
   return {
-    ...JSON.parse(XPRESS_LEGAL_SNAPSHOT),
+    ...JSON.parse(xpressLegalSnapshotForExam(examSlug)),
     wompiDocuments: {
       endUserPolicy: acceptance.policy.permalink,
       personalDataAuthorization: acceptance.personalData.permalink,
@@ -141,9 +147,13 @@ export async function prepareXpressSubscription(
   input: XpressSubscriptionInput,
 ) {
   const config = getWompiServerConfig();
+  if (input.examSlug === ICFES_EXAM_SLUG) {
+    if (!isIcfesPassEnabled()) throw new Error('icfes_commerce_disabled');
+    assertIcfesWompiEnvironment(config.environment);
+  }
   if (!user.email || !await profileAllowsSubscription(user.id, input.examSlug)) throw new Error('xpress_exam_mismatch');
   if (process.env.VERCEL_ENV !== 'production' && config.environment === 'production') throw new Error('production_disabled_outside_production');
-  const offer = getXpressOffer(input.offerId);
+  const offer = getXpressOfferForExam(input.offerId, input.examSlug);
   const active = await activeXpressMembership(user.id);
   if (active && active.exam_slug !== input.examSlug) throw new Error('xpress_exam_mismatch');
   const initialChargeAt = active?.ends_at && new Date(active.ends_at).getTime() > Date.now()
@@ -151,20 +161,23 @@ export async function prepareXpressSubscription(
     : new Date().toISOString();
   const acceptance = await getWompiAcceptance();
   const db = createAdminClient();
-  const { data: prepared, error } = await db.rpc('prepare_xpress_subscription', {
+  const prepareRpc = input.examSlug === ICFES_EXAM_SLUG
+    ? 'prepare_icfes_xpress_subscription'
+    : 'prepare_xpress_subscription';
+  const { data: prepared, error } = await db.rpc(prepareRpc, {
     p_user: user.id,
     p_email: user.email.toLowerCase(),
     p_key: input.idempotencyKey,
     p_environment: config.environment,
-    p_offer_version: XPRESS_OFFER_VERSION,
+    p_offer_version: getXpressOfferVersion(input.examSlug),
     p_offer: offer.id,
     p_exam: input.examSlug,
     p_amount: offer.amountInCents,
     p_initial_charge_at: initialChargeAt,
-    p_terms: XPRESS_TERMS_VERSION,
-    p_privacy: XPRESS_PRIVACY_VERSION,
-    p_recurring: XPRESS_RECURRING_CONSENT_VERSION,
-    p_legal: legalSnapshot(acceptance),
+    p_terms: xpressTermsVersionForExam(input.examSlug),
+    p_privacy: xpressPrivacyVersionForExam(input.examSlug),
+    p_recurring: xpressRecurringConsentVersionForExam(input.examSlug),
+    p_legal: legalSnapshot(input.examSlug, acceptance),
   }).abortSignal(AbortSignal.timeout(10000));
   if (error || !prepared) {
     if (error?.message?.includes('xpress_subscription_exists')) throw new Error('xpress_subscription_exists');
@@ -198,6 +211,11 @@ async function subscriptionOrder(subscriptionId: string) {
 
 export async function dispatchXpressSubscriptionCharge(subscription: SubscriptionRow, leaseId?: string) {
   const db = createAdminClient();
+  const config = getWompiServerConfig();
+  if (subscription.exam_slug === ICFES_EXAM_SLUG) {
+    if (!isIcfesPassEnabled()) throw new Error('icfes_commerce_disabled');
+    assertIcfesWompiEnvironment(config.environment);
+  }
   const order = await subscriptionOrder(subscription.id);
   if (!order) {
     if (leaseId) await db.rpc('release_xpress_subscription_lease', { p_subscription: subscription.id, p_lease: leaseId, p_next: null });
@@ -210,7 +228,6 @@ export async function dispatchXpressSubscriptionCharge(subscription: Subscriptio
     if (leaseId) await db.rpc('release_xpress_subscription_lease', { p_subscription: subscription.id, p_lease: leaseId, p_next: null });
     return { order, transactionStatus: 'PENDING' as const };
   }
-  const config = getWompiServerConfig();
   let providerRejected = false;
   try {
     const acceptance = await getWompiAcceptance();
@@ -289,7 +306,7 @@ async function sendSubscriptionNotification(job: Record<string, unknown>) {
   const { data: subscription, error } = await db.from('xpress_subscriptions').select('*').eq('id', job.subscription_id).maybeSingle();
   if (error || !subscription) throw new Error('xpress_subscription_notification_missing');
   const exam = xpressExamLabel(subscription.exam_slug);
-  const offer = getXpressOffer(subscription.offer_id);
+  const offer = getXpressOfferForExam(subscription.offer_id, subscription.exam_slug);
   const end = subscription.current_period_end
     ? new Date(subscription.current_period_end).toLocaleDateString('es-CO', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Bogota' })
     : null;
