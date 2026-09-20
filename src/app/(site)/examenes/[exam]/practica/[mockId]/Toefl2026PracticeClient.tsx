@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { AudioPlayer, formatTime } from '@/components/exam-runner/primitives';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
@@ -749,6 +750,10 @@ function createClientId(prefix: string) {
 }
 
 export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+  const downloadWorksheet = async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    await generateExamWorksheetPdf(mock, { listeningOrderVersion: phase === 'intro' ? CURRENT_LISTENING_ORDER : listeningOrderVersion });
+  };
   const [phase, setPhase] = useState<Phase>('intro');
   const [listeningOrderVersion, setListeningOrderVersion] = useState<ListeningOrderVersion>(LEGACY_LISTENING_ORDER);
   const stages = useMemo(() => buildToeflFixedStages(mock), [mock]);
@@ -1211,6 +1216,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     return (
       <div className="prac-shell"><style>{T26_CSS}</style>
         <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} onRetry={handleRetry} />
+        <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja PDF" /></div>
       </div>
     );
   }
@@ -1243,6 +1249,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             </p>
           </div>
           <button className="btn prac-intro__start" onClick={beginExam} disabled={!hydrated}>Empezar práctica fija</button>
+          <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja PDF" /></div>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>
         </div>
       </div>
@@ -1298,6 +1305,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
       )}
 
       <div className="ielts-exam-body">
+        <div className="t26-worksheet-action"><PdfDownloadButton generate={downloadWorksheet} label="Hoja de práctica PDF" compact /></div>
         <div className="t26-stage-heading">
           <p className="t26-stage-kicker">Bloque {stageIndex + 1} de {stages.length} · {activeStage.navigation === 'forward-only' ? 'sólo hacia adelante' : 'revisión dentro del módulo'}</p>
           <h1 id="t26-stage-heading" tabIndex={-1}>{activeStage.label}</h1>
@@ -1361,6 +1369,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
 // Minimal CSS for the 2026-only task types (supplements ielts-*/prac-* in globals.css).
 const T26_CSS = `
   .t26-stimulus { white-space: pre-wrap; font-family: inherit; background: var(--surface,#f6f7f9); border:1px solid var(--line-soft,#e3e6ea); border-radius:8px; padding:.75rem 1rem; margin:.5rem 0; line-height:1.6; }
+  .t26-worksheet-action { display:flex; justify-content:center; padding:.75rem; }
   .t26-word .ielts-form__body { max-width:78ch; font-size:clamp(1rem,1.25vw,1.1rem); line-height:2.05; }
   .t26-word__wrap { position:relative; display:inline-flex; align-items:baseline; vertical-align:baseline; margin-inline:.06em; padding:.55em .02em 0; white-space:nowrap; }
   .t26-word__num { position:absolute; inset-block-start:.05em; inset-inline-start:.05em; color:var(--muted,#687386); font:700 .52rem/1 var(--mono,monospace); letter-spacing:.02em; }
