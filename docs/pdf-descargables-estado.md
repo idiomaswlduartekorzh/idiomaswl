@@ -17,9 +17,11 @@ membretada. La descarga es libre y de un clic: no pide correo.
 | Escritura | `generateWritingPdf.ts` | `IntegratedWritingPractice` |
 | Los 100 verbos irregulares | `generateVerbsResourcePdf.ts` | dentro de `ingles/a2/gramatica/past-simple-irregular` |
 
-IELTS Listening ya ofrece 20 hojas de estudiante en sus prácticas por set. Esta rama añade hojas
-para Goethe A1 (7 sets, por destreza y por Teil) y TOEFL iBT 2026 (20 simulacros completos y
-20 prácticas independientes de Listening). Los PDF nacen del mismo mock que ve el estudiante:
+IELTS Listening ya ofrece 20 hojas de estudiante en sus prácticas por set. El
+[PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15), publicado en producción,
+añadió hojas para Goethe A1 (7 sets, por destreza y por Teil) y TOEFL iBT 2026
+(20 simulacros completos y 20 prácticas independientes de Listening). Los PDF
+nacen del mismo mock que ve el estudiante:
 `examWorksheetContent.ts` proyecta solo campos imprimibles y `generateExamWorksheetPdf.ts`
 compone el PDF con la plantilla. No imprime claves, soluciones, transcripciones ni guiones de
 Listen and Repeat. El audio se abre desde la práctica viva.
