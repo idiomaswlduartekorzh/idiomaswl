@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
-import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
-import PracticeSetCatalog from '@/components/exam-practice/PracticeSetCatalog';
+import ExamSkillSetLibrary from '../../../ExamSkillSetLibrary';
 import { getMock } from '@/data/mocks/index';
 import { IELTS_SECTIONAL_LISTENING_SET_IDS } from '@/data/ielts/sectional-listening-adapter';
 
@@ -45,9 +44,7 @@ export default function IELTSListeningLibraryPage() {
       <LearningResourceJsonLd name="IELTS Listening Practice Sets" url={URL} description="Twenty focused IELTS Listening practice sets created by WeLearn." teaches={['IELTS Listening', 'form completion', 'multiple choice', 'matching', 'note completion']} inLanguage="en" isPartOf={{ name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' }} />
       <BreadcrumbJsonLd items={[{ name: 'Practice', url: 'https://www.idiomaswl.com/practica' }, { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' }, { name: 'Listening', url: 'https://www.idiomaswl.com/practica/ielts/listening' }, { name: 'Listening sets', url: URL }]} />
       <FaqJsonLd faqs={faqs} />
-      <PracticeRouteShell section="listening" breadcrumbs={[{ label: 'Practice', href: '/practica' }, { label: 'IELTS', href: '/practica/ielts' }, { label: 'Listening', href: '/practica/ielts/listening' }, { label: 'Listening sets' }]} backHref="/practica/ielts/listening" backLabel="Back to Listening guidance">
-        <PracticeSetCatalog product="IELTS" section="listening" task="Listening" description="Use the same audited audio and questions as each complete mock, with no timer and full playback control. Each set also has a printable student worksheet." sets={sets} note="Progress stays in this browser. Answer keys remain on the server and are never included in the downloadable student PDF." />
-      </PracticeRouteShell>
+      <ExamSkillSetLibrary product="ielts" skill="listening" description="Use the same audited audio and questions as each complete mock, with no timer and full playback control. Each set also has a printable student worksheet." detail="4 parts · 40 questions · replayable audio" note="Progress stays in this browser. Answer keys remain on the server and are never included in the downloadable student PDF." sets={sets} backHref="/practica/ielts/listening" backLabel="Back to Listening guidance" />
     </>
   );
 }

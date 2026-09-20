@@ -5,8 +5,7 @@ import {
   FaqJsonLd,
   LearningResourceJsonLd,
 } from '@/components/exam-practice/StructuredData';
-import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
-import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog';
+import ExamSkillSetLibrary from '../../../ExamSkillSetLibrary';
 import { TOEFL_SECTIONAL_LISTENING_SET_IDS } from '@/data/toefl/sectional-listening-adapter';
 
 const URL = 'https://www.idiomaswl.com/practica/toefl/listening/simulacros';
@@ -78,26 +77,22 @@ export default function ToeflListeningLibraryPage() {
       />
       <FaqJsonLd faqs={faqs} />
 
-      <PracticeRouteShell
-        section="listening"
-        breadcrumbs={[
-          { label: 'Exercises', href: '/practica/toefl/ejercicios#listening' },
-          { label: 'Listening sets' },
-        ]}
-      >
-        <ToeflPracticeSetCatalog
-          section="listening"
-          task="Listening"
-          description="Choose any set. Every exercise contains the four current Listening task families, replayable audio, free navigation, and private scoring."
-          sets={TOEFL_SECTIONAL_LISTENING_SET_IDS.map((mockId, index) => ({
+      <ExamSkillSetLibrary
+        product="toefl"
+        skill="listening"
+        description="Choose any set. Every exercise contains the four current Listening task families, replayable audio, free navigation, and private scoring."
+        detail="4 task families · replayable audio"
+        note="Fixed WeLearn practice with private raw scoring. Each set has a printable student PDF; audio plays in the live exercise."
+        backHref="/practica/toefl/ejercicios#listening"
+        backLabel="Choose another TOEFL task"
+        sets={TOEFL_SECTIONAL_LISTENING_SET_IDS.map((mockId, index) => ({
             number: index + 1,
             title: `Listening Set ${setNumberFromId(mockId)}`,
-            detail: '4 task families · replayable audio · private scoring',
+            detail: '4 task families · replayable audio · student PDF',
             href: `/practica/toefl/listening/simulacros/practica/${mockId}`,
             meta: 'Self-paced',
           }))}
-        />
-      </PracticeRouteShell>
+      />
     </>
   );
 }

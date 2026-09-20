@@ -8859,3 +8859,65 @@ body {
   max-width: 42ch;
   line-height: 1.4;
 }
+.exam-unified {
+  --exam-accent: #245b9b;
+  --exam-accent-soft: #eef5fd;
+  --exam-accent-edge: #245b9b;
+  --exam-color: var(--exam-accent);
+  --ink: #17233d;
+  --muted: #5c6680;
+  --surface: #fff;
+  --line-soft: #d8e0ec;
+  min-height: 100vh;
+  color: #17233d;
+  background: #f3f6fb;
+}
+.exam-unified[data-exam="toefl"] {
+  --exam-accent: #0e6678;
+  --exam-accent-soft: #eaf6f7;
+  --exam-accent-edge: #0e6678;
+}
+.exam-unified[data-exam="goethe"] {
+  --exam-accent: #8b671c;
+  --exam-accent-soft: #fff8e7;
+  --exam-accent-edge: #b43a35;
+}
+.exam-unified.exam-unified__intro,
+.exam-unified .exam-unified__intro {
+  min-height: calc(100vh - 60px);
+  padding: clamp(1.25rem, 4vw, 3rem) 1rem;
+  background: radial-gradient(circle at 12% 8%, var(--exam-accent-soft), transparent 30rem), #f3f6fb;
+}
+.exam-unified .exam-unified__card,
+.exam-unified .prac-intro {
+  width: min(760px, 100%);
+  max-width: 760px;
+  border: 1px solid #d8e0ec;
+  border-top: 4px solid var(--exam-accent-edge);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 22px 54px rgb(20 38 82 / 9%);
+}
+.exam-unified .exam-unified__card h1,
+.exam-unified .prac-intro__title { color: #14215c; font-weight: 740; letter-spacing: -.045em; line-height: 1.08; }
+.exam-unified__card .exam-unified__eyebrow,
+.exam-unified .prac-intro__eyebrow { color: var(--exam-accent); font-weight: 800; }
+.exam-unified .prac-intro__stat-val { color: var(--exam-accent); }
+.exam-unified .prac-intro__section { flex-wrap: wrap; }
+.exam-unified .prac-intro__section-title { min-width: 12rem; }
+.exam-unified .prac-intro__tips { background: var(--exam-accent-soft); border-left: 3px solid var(--exam-accent); }
+.exam-unified .exam-unified__topbar,
+.exam-unified .prac-topbar { background: #17264b; border-bottom: 3px solid var(--exam-accent-edge); color: #fff; }
+.exam-unified .prac-topbar .prac-topbar__back,
+.exam-unified .prac-topbar .ielts-topbar__progress { color: #dbe5fb; }
+.exam-unified .exam-unified__nav { border-bottom: 1px solid #d8e0ec; background: #fff; }
+.exam-unified .exam-unified__body,
+.exam-unified .ielts-exam-body { width: min(1200px, 100%); margin-inline: auto; }
+.exam-unified .exam-unified__surface { border: 1px solid #d8e0ec; border-radius: 16px; background: #fff; box-shadow: 0 18px 42px rgb(20 38 82 / 7%); }
+.exam-pdf-options { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .55rem; width: 100%; margin: .75rem auto 1rem; }
+.exam-pdf-options > * { max-width: 100%; }
+@media (max-width: 540px) {
+  .exam-unified .exam-unified__card,
+  .exam-unified .prac-intro { padding: 1.35rem; }
+  .exam-pdf-options > * { flex: 1 1 45%; }
+}

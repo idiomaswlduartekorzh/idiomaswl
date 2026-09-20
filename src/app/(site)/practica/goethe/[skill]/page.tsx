@@ -74,7 +74,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
   const Icon = config.icon;
   const teile = GOETHE_PRACTICE_TEILE[skill as Skill];
 
-  return <main className={styles.page} lang="es">
+  return <main className={styles.page} data-exam="goethe" lang="es">
     <header className={styles.hero}><div className="wrap">
       <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><Link href="/practica/goethe">Goethe A1</Link><span>›</span><span>{config.label}</span></nav>
       <div className={styles.skillHeroGrid}>

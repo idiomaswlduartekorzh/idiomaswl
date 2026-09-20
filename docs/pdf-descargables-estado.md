@@ -26,9 +26,18 @@ nacen del mismo mock que ve el estudiante:
 compone el PDF con la plantilla. No imprime claves, soluciones, transcripciones ni guiones de
 Listen and Repeat. El audio se abre desde la práctica viva.
 
-`npm run check:exam-worksheets` comprueba los 27 sets, el recorte por Teil, las 34 preguntas de
-Listening por set, opciones y materiales de lectura, imágenes Goethe disponibles, orden de
-opciones TOEFL y canarios de privacidad. Corre en `prebuild`.
+La ampliación de la rama de unificación añade botones por destreza en los 20 sets
+TOEFL e IELTS, y por Task/Part/Pasaje en las prácticas independientes de IELTS.
+Goethe conserva sus PDF por destreza y por Teil. La composición de Goethe Lesen
+Teil 1 intercala Text A con sus preguntas antes de Text B; Teil 2 coloca la
+lámina de anuncios junto a cada pregunta, y Teil 3 presenta cada aviso como
+recuadro. Los gráficos y diagramas de IELTS, incluidos los SVG, se imprimen
+junto a sus tareas. La plantilla `brandedDoc.ts` sigue siendo la misma.
+
+`npm run check:exam-worksheets` comprueba los 47 sets, el recorte por Teil,
+los grupos texto/preguntas de Goethe, las láminas públicas, la numeración 1–40
+de IELTS Listening y Reading, las 34 preguntas de TOEFL Listening, el orden de
+opciones y los canarios de privacidad. Corre en `prebuild`.
 
 ## Cómo está montado
 
