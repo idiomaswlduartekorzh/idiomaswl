@@ -11,17 +11,20 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 
 ## Hojas PDF Goethe y TOEFL — 19 de septiembre de 2026
 
-`codex/goethe-toefl-worksheets-20260919` parte de la referencia local `origin/main`
-en `d729dbc3`. Estado: `EN_VALIDACION`. Alcance: hojas de estudiante Goethe A1 y
-TOEFL iBT 2026, botones de descarga en sus prácticas y guardián
-`check:exam-worksheets`. No requiere variables ni migraciones. Un `git fetch` posterior
-confirmó que `origin/main` remoto sigue en `d729dbc3`. Catálogo, TypeScript y
-`prebuild` pasaron; el build Webpack y la revisión visual local pasaron. El build
-predeterminado de Turbopack se interrumpió tras permanecer sin progreso en la fase
-de empaquetado en este worktree. Integración, SHA de `main`, despliegue y smoke
-productivo: pendientes. El 20 de septiembre, con autorización explícita, la rama
-se publicó en GitHub y se abrió el [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15)
-en borrador para revisión.
+`codex/goethe-toefl-worksheets-20260919` partió de `origin/main` en `d729dbc3`.
+Estado: `DESPLEGADO`. Alcance: hojas PDF de estudiante Goethe A1 y TOEFL iBT 2026,
+botones de descarga en sus prácticas y guardián `check:exam-worksheets`. No requiere
+variables ni migraciones. El [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15)
+pasó baseline, catálogo, TypeScript y build completo en GitHub Actions; se integró por
+squash a `main` como `d5c01dc6670308da89262e7b64b3aaf5f9f3f71a`.
+Vercel publicó ese commit desde `main` con deployment
+[`dpl_C1k3HiYByqxzRgTrEz7NtEzADGpM`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/C1k3HiYByqxzRgTrEz7NtEzADGpM)
+en estado `Ready` y asignó `www.idiomaswl.com` e `idiomaswl.vercel.app`.
+El smoke productivo pasó en 25 rutas y 17 audios protegidos. En el navegador público
+se descargaron y comprobaron Goethe Hören Teil 1 (5 páginas), TOEFL completo
+(36 páginas) y TOEFL Listening independiente (16 páginas). Vercel mostró 0 % de
+errores en el resumen del proyecto tras el despliegue. El preview del PR fue omitido
+por la configuración de build; la validación previa se hizo en CI y navegador local.
 
 ## Parche activo de seguridad — 19 de septiembre de 2026
 
