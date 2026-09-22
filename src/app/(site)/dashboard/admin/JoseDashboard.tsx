@@ -7,6 +7,7 @@ import {
   MessageCircle, Globe, BookOpen, GraduationCap,
   Calendar, Download,
   KeyRound,
+  ClipboardCheck, UserRoundSearch,
 } from 'lucide-react'
 import type React from 'react'
 import { signOut } from '@/lib/actions/signOut'
@@ -15,7 +16,7 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from 'recharts'
 import { motion } from 'framer-motion'
-import type { DashboardData, LeadRow } from './JoseDashboardServer'
+import type { AdminViewer, DashboardData, LeadRow } from './JoseDashboardServer'
 import StudentList from './StudentList'
 import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
@@ -56,6 +57,52 @@ function Stat({ label, value, sub }: { label: string; value: string; sub: string
         <span style={{ fontSize: 11, color: MUTED, whiteSpace: 'nowrap' }}>{sub}</span>
       </div>
     </div>
+  )
+}
+
+function ActionCard({
+  icon: Icon,
+  label,
+  value,
+  detail,
+  color,
+  onClick,
+}: {
+  icon: React.ElementType
+  label: string
+  value: number
+  detail: string
+  color: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        flex: 1,
+        minWidth: 220,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 14,
+        padding: '16px 18px',
+        border: `1px solid ${BORDER}`,
+        borderRadius: 14,
+        background: CARD,
+        textAlign: 'left',
+        cursor: 'pointer',
+        boxShadow: '0 1px 6px rgba(0,0,0,0.04)',
+      }}
+    >
+      <span style={{ width: 38, height: 38, borderRadius: 11, background: `${color}18`, color, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+        <Icon size={19} />
+      </span>
+      <span style={{ flex: 1, minWidth: 0 }}>
+        <span style={{ display: 'block', color: MUTED, fontSize: 11, fontWeight: 700, marginBottom: 2 }}>{label}</span>
+        <span style={{ display: 'block', color: TEXT, fontSize: 12, lineHeight: 1.35 }}>{detail}</span>
+      </span>
+      <strong style={{ color, fontSize: 26, lineHeight: 1 }}>{value}</strong>
+    </button>
   )
 }
 
@@ -156,7 +203,7 @@ const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null }[] = [
   { Icon: Globe,           tab: null },
 ]
 
-export default function JoseDashboard({ data }: { data: DashboardData }) {
+export default function JoseDashboard({ data, viewer }: { data: DashboardData; viewer: AdminViewer }) {
   const [activeTab, setActiveTab] = useState<Tab>('overview')
   const [leadExam, setLeadExam] = useState<string>('todos')
 
@@ -181,6 +228,24 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
   const trend = weekTrend(data.thisWeekCount, data.lastWeekCount)
   const trendColor = data.thisWeekCount >= data.lastWeekCount ? '#16a34a' : '#dc2626'
+
+  const oneWeekAgo = new Date(now.getTime() - 7 * 86400000)
+  const twoWeeksAgo = new Date(now.getTime() - 14 * 86400000)
+  const newStudentsThisWeek = data.students.filter(student =>
+    Boolean(student.enrolled_at && new Date(student.enrolled_at) >= oneWeekAgo)
+  ).length
+  const newContactableLeads = data.leads.filter(lead =>
+    Boolean(lead.whatsapp && new Date(lead.created_at) >= oneWeekAgo)
+  ).length
+  const pendingReviewCount = [
+    ...data.ieltsReviews,
+    ...data.toeflReviews,
+    ...data.goetheReviews,
+  ].filter(submission => !submission.reviewed_at).length
+  const studentsNeedingFollowUp = data.students.filter(student => {
+    if (student.last_active) return new Date(student.last_active) < twoWeeksAgo
+    return !student.enrolled_at || new Date(student.enrolled_at) < oneWeekAgo
+  }).length
 
   // Bar chart data for per-exam breakdown
   const examBarData = data.perExam.map(e => ({
@@ -223,7 +288,7 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             <button
               onClick={() => setActiveTab('overview')}
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, border: 'none', background: activeTab === 'overview' ? TEXT : 'transparent', color: activeTab === 'overview' ? '#fff' : MUTED, fontSize: 12, fontWeight: 600, cursor: 'pointer', flexShrink: 0 }}>
-              <LayoutDashboard size={13} /> Overview
+              <LayoutDashboard size={13} /> Centro operativo
             </button>
             <button
               onClick={() => setActiveTab('students')}
@@ -259,7 +324,7 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             </div>
             <form action={signOut} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div style={{ width: 32, height: 32, borderRadius: '50%', background: A, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: 12, flexShrink: 0 }}>
-                JD
+                {viewer.initials}
               </div>
               <button type="submit" style={{
                 padding: '5px 12px', borderRadius: 8, border: `1px solid ${BORDER}`,
@@ -410,38 +475,60 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
           {/* Title */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>Overview</h1>
+            <div>
+              <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>Centro operativo</h1>
+              <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Datos reales de exámenes, leads y estudiantes.</p>
+            </div>
+          </div>
+
+          {/* Acciones que requieren atención, calculadas con datos reales. */}
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }} aria-label="Prioridades operativas">
+            <ActionCard
+              icon={ClipboardCheck}
+              label="Correcciones pendientes"
+              value={pendingReviewCount}
+              detail="IELTS, TOEFL y Goethe aún sin cerrar"
+              color="#7c3aed"
+              onClick={() => document.getElementById('review-queues')?.scrollIntoView({ behavior: 'smooth' })}
+            />
+            <ActionCard
+              icon={MessageCircle}
+              label="Leads nuevos con WhatsApp"
+              value={newContactableLeads}
+              detail="Capturados durante los últimos 7 días"
+              color="#16a34a"
+              onClick={() => setActiveTab('leads')}
+            />
+            <ActionCard
+              icon={UserRoundSearch}
+              label="Estudiantes para seguimiento"
+              value={studentsNeedingFollowUp}
+              detail="Sin actividad reciente o sin haber empezado"
+              color="#dc2626"
+              onClick={() => setActiveTab('students')}
+            />
           </div>
 
           {/* KPI strip */}
-          {(() => {
-            const oneWeekAgo = new Date(now.getTime() - 7 * 86400000)
-            const newStudentsThisWeek = data.students.filter(s => {
-              if (!s.enrolled_at) return false
-              return new Date(s.enrolled_at) >= oneWeekAgo
-            }).length
-            return (
-              <Card style={{ padding: '16px 24px' }}>
-                <div style={{ display: 'flex', gap: 0, alignItems: 'stretch', flexWrap: 'wrap' }}>
-                  <Stat label="Simulacros totales" value={String(data.totalCount)} sub="enviados" />
+          <Card style={{ padding: '16px 24px' }}>
+            <div style={{ display: 'flex', gap: 0, alignItems: 'stretch', flexWrap: 'wrap' }}>
+              <Stat label="Simulacros totales" value={String(data.totalCount)} sub="enviados" />
+              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+              <Stat label="Esta semana" value={String(data.thisWeekCount)} sub="simulacros" />
+              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+              <Stat label="Semana anterior" value={String(data.lastWeekCount)} sub="simulacros" />
+              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+              <Stat label="Personas evaluadas" value={String(data.uniqueExamTakers)} sub="identificadas" />
+              <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
+              <Stat label="Estudiantes" value={String(data.students.length)} sub="registrados" />
+              {newStudentsThisWeek > 0 && (
+                <>
                   <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                  <Stat label="Esta semana" value={String(data.thisWeekCount)} sub="simulacros" />
-                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                  <Stat label="Semana anterior" value={String(data.lastWeekCount)} sub="simulacros" />
-                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                  <Stat label="Exámenes distintos" value={String(data.perExam.length)} sub="tipos" />
-                  <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                  <Stat label="Estudiantes" value={String(data.students.length)} sub="registrados" />
-                  {newStudentsThisWeek > 0 && (
-                    <>
-                      <div style={{ width: 1, background: BORDER, margin: '0 20px' }} />
-                      <Stat label="Nuevos esta semana" value={String(newStudentsThisWeek)} sub="estudiantes" />
-                    </>
-                  )}
-                </div>
-              </Card>
-            )
-          })()}
+                  <Stat label="Nuevos esta semana" value={String(newStudentsThisWeek)} sub="estudiantes" />
+                </>
+              )}
+            </div>
+          </Card>
 
           {/* Row 2: Exam breakdown + Top users */}
           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>
@@ -495,7 +582,7 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
                 <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>Estado exámenes</h3>
               </div>
               <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>
-                Estudiantes únicos: <strong style={{ color: TEXT, fontWeight: 700 }}>{data.topUsers.length}</strong>
+                Personas evaluadas: <strong style={{ color: TEXT, fontWeight: 700 }}>{data.uniqueExamTakers}</strong>
               </p>
               {/* Color bars */}
               {data.perExam.length > 0 && (
@@ -520,16 +607,17 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
             </Card>
           </div>
 
-          {/* IELTS review queue + reviewed history */}
-          {data.ieltsReviews.length > 0 && (
-            <IELTSReviewPanel items={data.ieltsReviews} />
-          )}
-          {data.toeflReviews.length > 0 && (
-            <TOEFLReviewPanel items={data.toeflReviews} />
-          )}
-          {data.goetheReviews.length > 0 && (
-            <GoetheReviewPanel items={data.goetheReviews} />
-          )}
+          {/* IELTS, TOEFL y Goethe: cola pendiente e historial revisado. */}
+          <div id="review-queues" style={{ display: 'flex', flexDirection: 'column', gap: 14, scrollMarginTop: 18 }}>
+            {data.ieltsReviews.length > 0 && <IELTSReviewPanel items={data.ieltsReviews} />}
+            {data.toeflReviews.length > 0 && <TOEFLReviewPanel items={data.toeflReviews} />}
+            {data.goetheReviews.length > 0 && <GoetheReviewPanel items={data.goetheReviews} />}
+            {pendingReviewCount === 0 && data.ieltsReviews.length + data.toeflReviews.length + data.goetheReviews.length === 0 && (
+              <Card>
+                <p style={{ margin: 0, color: MUTED, fontSize: 12 }}>No hay entregas abiertas para revisión académica.</p>
+              </Card>
+            )}
+          </div>
 
           {/* Row 3: Recent submissions + Top users */}
           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 14 }}>

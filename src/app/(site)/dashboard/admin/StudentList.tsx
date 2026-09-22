@@ -215,12 +215,6 @@ function StudentDetail({ student, submissions }: { student: StudentRow; submissi
         >
           Ver ficha completa →
         </Link>
-        <Link
-          href={`/dashboard/admin/estudiantes/${student.id}`}
-          style={{ display: 'inline-flex', alignItems: 'center', padding: '6px 12px', borderRadius: 8, background: TEXT, color: '#fff', fontSize: 12, fontWeight: 700, textDecoration: 'none' }}
-        >
-          Ver ficha completa →
-        </Link>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 14 }}>

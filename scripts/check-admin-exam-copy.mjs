@@ -13,7 +13,7 @@ function read(relativePath) {
 
 const adminRegistry = read('src/lib/config/admins.ts')
 const adminRoute = read('src/app/(site)/dashboard/admin/page.tsx')
-const ownerDashboard = read('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx')
+const operationalDashboard = read('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx')
 
 for (const email of primaryAdmins) {
   assert.match(adminRegistry, new RegExp(email.replace('.', '\\.'), 'i'), `${email} must be in the server admin registry`)
@@ -23,12 +23,12 @@ for (const email of studentOnlyAccounts) {
   assert.doesNotMatch(adminRegistry, new RegExp(email.replace('.', '\\.'), 'i'), `${email} must not be in the server admin registry`)
 }
 
-assert.match(adminRoute, /isVerifiedJoseAdminUser\(user\)[\s\S]*JoseDashboardServer/, 'verified Jose admins must receive the owner dashboard')
-assert.match(adminRoute, /isVerifiedZhannaAdminUser\(user\)[\s\S]*ZhannaDashboardServer/, 'verified Zhanna admins must receive the owner dashboard')
-assert.match(adminRegistry, /Boolean\(user\?\.email_confirmed_at\) && isJoseAdminEmail\(user\?\.email\)/, 'Jose admin access requires a confirmed email')
-assert.match(adminRegistry, /Boolean\(user\?\.email_confirmed_at\) && isZhannaAdminEmail\(user\?\.email\)/, 'Zhanna admin access requires a confirmed email')
-assert.match(ownerDashboard, /await requireAdmin\(\)/, 'the owner dashboard must re-authorize on the server')
-assert.match(ownerDashboard, /createAdminClient\(\)/, 'the owner dashboard must not depend on profile-role RLS')
+assert.match(adminRoute, /isVerifiedAdminUser\(user\)[\s\S]*JoseDashboardServer/, 'all verified admins must receive the same operational dashboard')
+assert.doesNotMatch(adminRoute, /ZhannaDashboardServer/, 'the admin route must not branch into a demo dashboard')
+assert.equal(fs.existsSync(path.join(root, 'src/app/(site)/dashboard/admin/ZhannaDashboard.tsx')), false, 'the demo dashboard must not remain in the application')
+assert.match(adminRegistry, /Boolean\(user\?\.email_confirmed_at\) && isAdminEmail\(user\?\.email\)/, 'admin access requires a confirmed email')
+assert.match(operationalDashboard, /await requireAdmin\(\)/, 'the operational dashboard must re-authorize on the server')
+assert.match(operationalDashboard, /createAdminClient\(\)/, 'the operational dashboard must not depend on profile-role RLS')
 
 const copyFiles = [
   'src/app/(site)/examenes/page.tsx',
@@ -68,4 +68,4 @@ assert.match(auditRoute, /private, no-store/, 'the batch audit endpoint must nev
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /scoreIeltsObjectiveAnswers/, 'the audit must recalculate objective answers from the canonical key')
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /IELTS_SPEAKING_BUCKET/, 'the audit must verify private speaking audio')
 
-console.log('✓ Las cuentas administrativas están aisladas de las cuentas estudiantiles y la experiencia de exámenes usa lenguaje académico neutral.')
+console.log('✓ Todos los administradores comparten el centro operativo, las cuentas estudiantiles siguen aisladas y los exámenes usan lenguaje académico neutral.')

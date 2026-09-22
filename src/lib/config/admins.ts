@@ -8,7 +8,7 @@
  * accept the user-editable `profiles.role` field as a substitute.
  */
 
-/** Platform-owner administrators — receive the owner dashboard and every admin action. */
+/** Platform-owner administrators. */
 export const JOSE_EMAILS = [
   'josedavidduartesilva@gmail.com',
   'david.duartes182@gmail.com',
@@ -16,7 +16,7 @@ export const JOSE_EMAILS = [
   'jose@welearn.com',
 ] as const;
 
-/** Zhanna's academic-admin accounts — receive the limited academic dashboard. */
+/** Zhanna's administrator accounts. All admins receive the same operational dashboard. */
 export const ZHANNA_EMAILS = [
   'zhanna.duarte@mail.ru',
   'zhanna.korzh@gmail.com',

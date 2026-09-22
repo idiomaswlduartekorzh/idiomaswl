@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
 
 import {
@@ -28,7 +29,7 @@ test('approved admin emails are normalized consistently', () => {
   assert.equal(isVerifiedAdminUser({ email: 'welearninstitute@gmail.com', email_confirmed_at: '2026-09-12T00:00:00Z' }), false);
 });
 
-test('Zhanna production email receives the academic dashboard, not the owner dashboard', () => {
+test('Zhanna production email is a verified administrator', () => {
   const email = '  ZHANNA.DUARTE@MAIL.RU  ';
   const confirmedUser = { email, email_confirmed_at: '2026-09-21T00:00:00Z' };
 
@@ -37,4 +38,17 @@ test('Zhanna production email receives the academic dashboard, not the owner das
   assert.equal(isZhannaAdminEmail(email), true);
   assert.equal(isVerifiedJoseAdminUser(confirmedUser), false);
   assert.equal(isVerifiedZhannaAdminUser(confirmedUser), true);
+});
+
+test('all verified admins use the same operational dashboard without demo students', () => {
+  const adminDir = new URL('../src/app/(site)/dashboard/admin/', import.meta.url);
+  const pageSource = readFileSync(new URL('page.tsx', adminDir), 'utf8');
+  const dashboardSource = readFileSync(new URL('JoseDashboard.tsx', adminDir), 'utf8');
+
+  assert.match(pageSource, /isVerifiedAdminUser/);
+  assert.match(pageSource, /<JoseDashboardServer/);
+  assert.doesNotMatch(pageSource, /ZhannaDashboardServer/);
+  assert.equal(existsSync(new URL('ZhannaDashboard.tsx', adminDir)), false);
+  assert.equal(existsSync(new URL('ZhannaDashboardServer.tsx', adminDir)), false);
+  assert.doesNotMatch(dashboardSource, /María García|Carlos Ramírez|IELTS Prep/);
 });

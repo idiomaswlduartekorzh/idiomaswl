@@ -7,6 +7,7 @@ import type { StudentSubject } from '@/lib/actions/inviteStudent'
 import { EXAMS } from '@/data/exams'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
+import { isZhannaAdminEmail } from '@/lib/config/admins'
 
 export interface ExamSubmission {
   id: string
@@ -68,6 +69,7 @@ export interface DashboardData {
   lastWeekCount: number
   perExam: { exam_slug: string; exam_name: string; count: number }[]
   recentSubmissions: ExamSubmission[]
+  uniqueExamTakers: number
   topUsers: { user_email: string; count: number }[]
   ieltsReviews: ExamSubmission[]
   toeflReviews: ExamSubmission[]
@@ -75,6 +77,12 @@ export interface DashboardData {
   students: StudentRow[]
   /** Leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...), no solo ICFES. */
   leads: LeadRow[]
+}
+
+export interface AdminViewer {
+  email: string
+  displayName: string
+  initials: string
 }
 
 // ── Resolución del examen de un lead ─────────────────────────────────────────
@@ -112,10 +120,18 @@ function leadIdentity(email: string | null, examSlug: string | null): string | n
 }
 
 export default async function JoseDashboardServer() {
-  // All reads in the owner dashboard stay server-side. Authorization is based
+  // All reads in the shared operational dashboard stay server-side. Authorization is based
   // on the immutable email registry, never on a user-editable profile role.
-  await requireAdmin()
+  const admin = await requireAdmin()
   const supabase = createAdminClient()
+
+  const now = new Date()
+  const startOfThisWeek = new Date(now)
+  startOfThisWeek.setDate(now.getDate() - now.getDay())
+  startOfThisWeek.setHours(0, 0, 0, 0)
+
+  const startOfLastWeek = new Date(startOfThisWeek)
+  startOfLastWeek.setDate(startOfThisWeek.getDate() - 7)
 
   // IELTS and TOEFL own independent queues so general exam traffic cannot push
   // valid attempts out of the admin panel. Audio links are generated lazily only
@@ -125,13 +141,16 @@ export default async function JoseDashboardServer() {
     { data: ieltsSubmissionRows },
     { data: toeflSubmissionRows },
     { data: goetheSubmissionRows },
+    { count: totalSubmissionCount },
+    { count: thisWeekSubmissionCount },
+    { count: lastWeekSubmissionCount },
   ] = await Promise.all([
     supabase
       .from('exam_submissions')
-      .select('*')
+      .select('id, user_id, user_email, user_name, exam_slug, exam_name, mock_title, mock_id, total_score, total_max, total_label, skills, created_at, submission_status')
       .eq('submission_status', 'submitted')
       .order('created_at', { ascending: false })
-      .limit(100),
+      .limit(5000),
     supabase
       .from('exam_submissions')
       .select('*')
@@ -154,22 +173,33 @@ export default async function JoseDashboardServer() {
       .eq('submission_status', 'submitted')
       .order('created_at', { ascending: false })
       .limit(500),
+    supabase
+      .from('exam_submissions')
+      .select('id', { count: 'exact', head: true })
+      .eq('submission_status', 'submitted'),
+    supabase
+      .from('exam_submissions')
+      .select('id', { count: 'exact', head: true })
+      .eq('submission_status', 'submitted')
+      .gte('created_at', startOfThisWeek.toISOString()),
+    supabase
+      .from('exam_submissions')
+      .select('id', { count: 'exact', head: true })
+      .eq('submission_status', 'submitted')
+      .gte('created_at', startOfLastWeek.toISOString())
+      .lt('created_at', startOfThisWeek.toISOString()),
   ])
 
   const rows = (submissions ?? []) as ExamSubmission[]
-
-  const now = new Date()
-  const startOfThisWeek = new Date(now)
-  startOfThisWeek.setDate(now.getDate() - now.getDay())
-  startOfThisWeek.setHours(0, 0, 0, 0)
-
-  const startOfLastWeek = new Date(startOfThisWeek)
-  startOfLastWeek.setDate(startOfThisWeek.getDate() - 7)
-
-  const thisWeekCount = rows.filter(r => new Date(r.created_at) >= startOfThisWeek).length
-  const lastWeekCount = rows.filter(r => {
-    const d = new Date(r.created_at)
-    return d >= startOfLastWeek && d < startOfThisWeek
+  // Exact database counts drive the KPIs. The in-memory calculation is only a
+  // resilience fallback if PostgREST cannot return a count for a request.
+  const totalCount = totalSubmissionCount ?? rows.length
+  const thisWeekCount = thisWeekSubmissionCount ?? rows.filter(row =>
+    new Date(row.created_at) >= startOfThisWeek
+  ).length
+  const lastWeekCount = lastWeekSubmissionCount ?? rows.filter(row => {
+    const createdAt = new Date(row.created_at)
+    return createdAt >= startOfLastWeek && createdAt < startOfThisWeek
   }).length
 
   // Per-exam breakdown
@@ -196,6 +226,13 @@ export default async function JoseDashboardServer() {
     .map(([user_email, count]) => ({ user_email, count }))
     .sort((a, b) => b.count - a.count)
     .slice(0, 5)
+
+  const uniqueExamTakers = new Set(
+    rows.flatMap(row => {
+      const identity = row.user_id ?? row.user_email?.trim().toLowerCase()
+      return identity ? [identity] : []
+    })
+  ).size
 
   // IELTS review history stays visible after correction. The client panel owns
   // the Pending/Reviewed filter, so an evaluated student never disappears.
@@ -363,11 +400,12 @@ export default async function JoseDashboardServer() {
 
   const dashboardData: DashboardData = {
     submissions: rows,
-    totalCount: rows.length,
+    totalCount,
     thisWeekCount,
     lastWeekCount,
     perExam,
     recentSubmissions: rows.slice(0, 10),
+    uniqueExamTakers,
     topUsers,
     ieltsReviews,
     toeflReviews,
@@ -376,5 +414,9 @@ export default async function JoseDashboardServer() {
     leads,
   }
 
-  return <JoseDashboard data={dashboardData} />
+  const viewer: AdminViewer = isZhannaAdminEmail(admin.email)
+    ? { email: admin.email, displayName: 'Zhanna', initials: 'ZD' }
+    : { email: admin.email, displayName: 'José David', initials: 'JD' }
+
+  return <JoseDashboard data={dashboardData} viewer={viewer} />
 }
