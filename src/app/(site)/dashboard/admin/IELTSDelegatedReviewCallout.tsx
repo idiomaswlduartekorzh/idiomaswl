@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from 'react'
 import { Bot, Copy, Link2, ShieldCheck, XCircle } from 'lucide-react'
 import {
   createIeltsDelegatedReviewInvite,
-  getIeltsDelegatedReviewInviteHistory,
   revokeIeltsDelegatedReviewInvite,
   type CreateIeltsDelegatedReviewResult,
   type IeltsDelegatedReviewInviteHistoryItem,
@@ -28,15 +27,19 @@ export default function IELTSDelegatedReviewCallout({ submission }: { submission
   const [history, setHistory] = useState<IeltsDelegatedReviewInviteHistoryItem[] | null>(null)
 
   useEffect(() => {
-    let cancelled = false
-    getIeltsDelegatedReviewInviteHistory(submission.id).then(result => {
-      if (cancelled) return
-      if (result.ok) setHistory(result.items)
-      else setError(result.error)
-    }).catch(() => {
-      if (!cancelled) setError('No pudimos cargar el historial de llamados.')
+    const controller = new AbortController()
+    fetch(`/api/admin/ielts/submissions/${encodeURIComponent(submission.id)}/delegated-reviews`, {
+      credentials: 'same-origin',
+      cache: 'no-store',
+      signal: controller.signal,
+    }).then(async response => {
+      const payload = await response.json().catch(() => null) as { items?: IeltsDelegatedReviewInviteHistoryItem[]; error?: string } | null
+      if (response.ok && Array.isArray(payload?.items)) setHistory(payload.items)
+      else setError(payload?.error ?? 'No pudimos cargar el historial de llamados.')
+    }).catch(fetchError => {
+      if (fetchError instanceof Error && fetchError.name !== 'AbortError') setError('No pudimos cargar el historial de llamados.')
     })
-    return () => { cancelled = true }
+    return () => controller.abort()
   }, [submission.id])
 
   const available: Record<IeltsDelegatedReviewTask, boolean> = {

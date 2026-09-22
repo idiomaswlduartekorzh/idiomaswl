@@ -53,9 +53,10 @@ test('all verified admins use the same operational dashboard without demo studen
   assert.doesNotMatch(dashboardSource, /María García|Carlos Ramírez|IELTS Prep/);
 });
 
-test('private IELTS and TOEFL audio routes require an admin and disable caching', () => {
+test('private admin review routes require an admin and disable caching', () => {
   const routePaths = [
     '../src/app/api/admin/ielts/submissions/[submissionId]/audio/route.ts',
+    '../src/app/api/admin/ielts/submissions/[submissionId]/delegated-reviews/route.ts',
     '../src/app/api/admin/toefl/submissions/[submissionId]/audio/route.ts',
   ];
 
@@ -63,6 +64,10 @@ test('private IELTS and TOEFL audio routes require an admin and disable caching'
     const source = readFileSync(new URL(routePath, import.meta.url), 'utf8');
     assert.match(source, /await requireAdmin\(\)/);
     assert.match(source, /private, no-store/);
+  }
+
+  for (const routePath of routePaths.filter(path => path.endsWith('/audio/route.ts'))) {
+    const source = readFileSync(new URL(routePath, import.meta.url), 'utf8');
     assert.match(source, /submission_status.*submitted/s);
   }
 });

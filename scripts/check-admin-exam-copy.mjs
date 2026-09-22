@@ -70,6 +70,7 @@ assert.match(read('src/lib/ielts/submission-audit.server.ts'), /IELTS_SPEAKING_B
 
 for (const routePath of [
   'src/app/api/admin/ielts/submissions/[submissionId]/audio/route.ts',
+  'src/app/api/admin/ielts/submissions/[submissionId]/delegated-reviews/route.ts',
   'src/app/api/admin/toefl/submissions/[submissionId]/audio/route.ts',
 ]) {
   const audioRoute = read(routePath)
