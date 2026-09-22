@@ -49,6 +49,7 @@ export interface ToeflPrepareResponse extends ToeflSubmissionReceipt {
 export interface ToeflCompleteResponse {
   ok: true;
   submissionId: string;
+  xpressAccess: 'membership' | 'single-credit' | 'public';
 }
 
 export function countToeflWords(value: string): number {

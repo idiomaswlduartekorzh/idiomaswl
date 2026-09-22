@@ -8,6 +8,7 @@ import { getIcfesPremiumAvailability } from '@/lib/icfes/exam-registry.server';
 import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { getIcfesProductConfig, isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import type { IcfesCheckoutDto, IcfesPaymentStatus } from '@/lib/icfes/attempt-contract';
+import { XPRESS_PRIVACY_VERSION, XPRESS_TERMS_VERSION } from '@/lib/xpress-commerce/terms';
 
 export const runtime = 'nodejs';
 
@@ -23,6 +24,9 @@ export async function POST(request: Request): Promise<Response> {
   try { body = await request.json() as Record<string, unknown>; }
   catch { return json({ ok: false, error: 'Solicitud inválida.' }, 400); }
   const attemptId = typeof body.attemptId === 'string' ? body.attemptId : '';
+  if (body.acceptedTerms !== XPRESS_TERMS_VERSION || body.acceptedPrivacy !== XPRESS_PRIVACY_VERSION) {
+    return json({ ok: false, error: 'Confirma las condiciones y el uso de datos antes de pagar.' }, 400);
+  }
   const token = (await cookies()).get(ICFES_ATTEMPT_COOKIE)?.value;
   const payload = verifyIcfesAttemptToken(token);
   if (!payload || payload.attemptId !== attemptId) return json({ ok: false, error: 'El intento no está autorizado.' }, 403);
@@ -38,7 +42,7 @@ export async function POST(request: Request): Promise<Response> {
   if (!attempt || attempt.exam_id !== payload.examId || attempt.access_token_hash !== tokenHash
     || (attempt.user_id && attempt.user_id !== user?.id)) return json({ ok: false, error: 'El intento guardado no coincide con tu sesión.' }, 403);
 
-  const select = 'id, attempt_id, reference, amount_in_cents, currency, status, environment';
+  const select = 'id, attempt_id, reference, amount_in_cents, currency, status, environment, terms_version, privacy_version, consented_at';
   const { data: existing } = await admin.from('icfes_pass_orders').select(select)
     .eq('attempt_id', attemptId).in('status', ['PENDING', 'APPROVED']).order('created_at', { ascending: false }).limit(1).maybeSingle();
   let order = existing;
@@ -48,6 +52,8 @@ export async function POST(request: Request): Promise<Response> {
       attempt_id: attemptId, user_id: user?.id ?? null, reference,
       amount_in_cents: config.amountInCents, currency: config.currency,
       status: 'PENDING', environment: config.environment,
+      terms_version: XPRESS_TERMS_VERSION, privacy_version: XPRESS_PRIVACY_VERSION,
+      consented_at: new Date().toISOString(),
     }).select(select).single();
     if (inserted.error || !inserted.data) {
       // Two clicks can race against the partial unique index. Recover the one
@@ -60,6 +66,15 @@ export async function POST(request: Request): Promise<Response> {
     } else {
       order = inserted.data;
     }
+  }
+  if (order && (order.terms_version !== XPRESS_TERMS_VERSION || order.privacy_version !== XPRESS_PRIVACY_VERSION)) {
+    const consented = await admin.from('icfes_pass_orders').update({
+      terms_version: XPRESS_TERMS_VERSION,
+      privacy_version: XPRESS_PRIVACY_VERSION,
+      consented_at: new Date().toISOString(),
+    }).eq('id', order.id).select(select).single();
+    if (consented.error || !consented.data) return json({ ok: false, error: 'No pudimos registrar tu aceptación.' }, 503);
+    order = consented.data;
   }
   if (Number(order.amount_in_cents) !== config.amountInCents || order.environment !== config.environment) {
     return json({ ok: false, error: 'El precio o ambiente del pago no coincide.' }, 409);

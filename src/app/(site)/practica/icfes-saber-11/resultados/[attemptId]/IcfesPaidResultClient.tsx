@@ -19,7 +19,7 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
       .then((body) => {
         if (!active) return;
         setDetail(body);
-        if (body.paymentStatus === 'APPROVED' && body.result) {
+        if (body.paymentStatus === 'APPROVED' && body.result && body.accessSource !== 'access-code') {
           const eventKey = `wl_icfes_purchase_complete:${attemptId}`;
           if (!window.sessionStorage.getItem(eventKey)) {
             trackIcfesEvent('icfes_purchase_complete', {
@@ -34,7 +34,7 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
   }, [attemptId]);
 
   return <div className="prac-shell"><div className="prac-results">
-    <p className="eyebrow"><span className="ink-line" />Pase ICFES</p>
+    <p className="eyebrow"><span className="ink-line" />{detail?.accessSource === 'access-code' ? 'Acceso institucional' : 'Pase ICFES'}</p>
     <h1>Detalle de tu intento</h1>
     {!detail && !error && <p role="status">Verificando el estado del pago…</p>}
     {error && <div className="icfes-product-card icfes-product-card--muted"><p role="alert">{error}</p></div>}
@@ -44,7 +44,7 @@ export default function IcfesPaidResultClient({ attemptId }: { attemptId: string
       <button className="btn btn-ghost" onClick={() => window.location.reload()}>Consultar de nuevo</button>
     </div>}
     {detail?.paymentStatus === 'APPROVED' && detail.result && <>
-      <div className="prac-results__hero"><p className="prac-results__label">Pago verificado · análisis pedagógico</p><div className="prac-results__score">{detail.result.percentage}</div><p className="prac-results__fraction">{detail.result.correct}/{detail.result.total} correctas</p></div>
+      <div className="prac-results__hero"><p className="prac-results__label">{detail.accessSource === 'access-code' ? 'Código verificado · análisis pedagógico' : 'Pago verificado · análisis pedagógico'}</p><div className="prac-results__score">{detail.result.percentage}</div><p className="prac-results__fraction">{detail.result.correct}/{detail.result.total} correctas</p></div>
       <div className="prac-results__review"><h2 className="prac-results__review-title">Pregunta por pregunta</h2>
         {(detail.questions ?? []).map((question) => <article key={question.id} className={`prac-review-item ${question.correct ? 'prac-review-item--correct' : 'prac-review-item--wrong'}`}>
           <div className="prac-review-item__header"><span className="prac-review-item__num">P{question.number} · Parte {question.part}</span><span className={`prac-review-item__badge ${question.correct ? 'prac-review-item__badge--ok' : 'prac-review-item__badge--err'}`}>{question.correct ? '✓ Correcta' : '✗ Por revisar'}</span></div>

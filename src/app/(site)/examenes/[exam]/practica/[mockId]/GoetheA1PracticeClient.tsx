@@ -14,6 +14,8 @@ import { formatGoetheModule } from '@/lib/goethe/scoring';
 import type { GoetheResultStatus, GoetheSubmissionReceipt } from '@/lib/goethe/submission';
 import GoetheSubmission from './GoetheSubmission';
 import styles from './goethe-a1.module.css';
+import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 type Skill = GoethePracticeSkill;
 type Phase = 'intro' | 'exam' | 'submit' | 'results' | 'practice-results';
@@ -739,6 +741,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   const [playedParts, setPlayedParts] = useState(new Set<number>());
   const [receipt, setReceipt] = useState<GoetheSubmissionReceipt | null>(null);
   const [resultStatus, setResultStatus] = useState<GoetheResultStatus | null>(null);
+  const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
   const [speakingCardProgress, setSpeakingCardProgress] = useState<Record<number, number>>({});
   const [speakingCardOrders, setSpeakingCardOrders] = useState<Record<number, number[]>>({});
   const setNumber = mock.id.split('-').at(-1) ?? '1';
@@ -839,7 +842,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   }
 
   function restart() {
-    setPhase('intro'); setActiveSkill(practiceSkill ?? 'listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setSpeakingCardProgress({}); setSpeakingCardOrders({});
+    setPhase('intro'); setActiveSkill(practiceSkill ?? 'listening'); setAnswers({}); setFormValues({}); setWriting(''); setRecordings({}); setPlayedParts(new Set()); setReceipt(null); setResultStatus(null); setResultAccess({ unlocked: false }); setSpeakingCardProgress({}); setSpeakingCardOrders({});
   }
 
   return (
@@ -899,12 +902,26 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               objectiveMissing={listeningMissing + readingMissing}
               formMissing={formMissing}
               onBack={() => { setPhase('exam'); setActiveSkill('speaking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              onSuccess={nextReceipt => { setReceipt(nextReceipt); setResultStatus(null); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              onSuccess={(nextReceipt, access) => { setReceipt(nextReceipt); setResultStatus(null); setResultAccess(access); setPhase('results'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             />
           </main>
         )}
 
-        {phase === 'results' && (
+        {phase === 'results' && !resultAccess.unlocked && receipt && (
+          <ExamResultOffers
+            examSlug="goethe"
+            examName={exam.name}
+            attemptRef={receipt.submissionId}
+            score={`${rawTotal}/60`}
+            scoreLabel="puntos brutos"
+            initialCodeMessage={resultAccess.message}
+            fullResult={null}
+            onRetry={restart}
+            onUnlocked={() => setResultAccess({ unlocked: true })}
+          />
+        )}
+
+        {phase === 'results' && resultAccess.unlocked && (
           <main className={styles.results}>
             <header className={styles.resultsHeader}><Link href={`/examenes/${exam.slug}`}>WELEARN · DEUTSCH A1</Link><span>Ergebnisbericht</span></header>
             <div className={styles.resultHero}>

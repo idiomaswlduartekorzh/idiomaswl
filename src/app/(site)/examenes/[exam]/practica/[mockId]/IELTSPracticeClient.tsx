@@ -3,7 +3,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
 import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
@@ -40,6 +39,8 @@ import type {
   FormGroupQuestion, TableGroupQuestion, TableCell,
   MultiSelectQuestion, MatchingGroupQuestion,
 } from '@/data/mocks/types';
+import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
 const FREE_WRITING_MOCKS = new Set(['set-1', 'set-2', 'set-3', 'set-4']);
@@ -580,27 +581,9 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; onRetry: ()=>void;
+function IELTSResults({ mock, exam, ans, receipt, studentName, access, onAccessUnlocked, onRetry }: {
+  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void;
 }) {
-  // Lazy init (no useEffect): esta vista solo se monta tras terminar el
-  // examen (transición de estado del lado del cliente), nunca en SSR.
-  const [leadCaptured, setLeadCaptured] = useState(() => {
-    try { return localStorage.getItem('wl_lead_captured') === '1'; } catch { return false; }
-  });
-  const [showDetailLead, setShowDetailLead] = useState(false);
-
-  function handleWantDetail() {
-    try {
-      if (localStorage.getItem('wl_lead_captured') === '1') { setLeadCaptured(true); return; }
-    } catch {}
-    setShowDetailLead(true);
-  }
-  function handleDetailModalClose() {
-    setShowDetailLead(false);
-    try { setLeadCaptured(localStorage.getItem('wl_lead_captured') === '1'); } catch {}
-  }
-
   const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
   const lCorrect = objectiveScore.listening?.correct ?? 0;
   const rCorrect = objectiveScore.reading.correct;
@@ -619,8 +602,8 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
   // con revisión manual. Se llama SIEMPRE (reglas de hooks) con essay=''
   // cuando no aplica — el hook no fetchea en ese caso.
   const writingEnabled = writeQs.length > 0 && isFreeIeltsMock(mock.id);
-  const task1Essay = writingEnabled && task1 ? (ans.write[task1.id] ?? '').trim() : '';
-  const task2Essay = writingEnabled && task2 ? (ans.write[task2.id] ?? '').trim() : '';
+  const task1Essay = writingEnabled && access.unlocked && task1 ? (ans.write[task1.id] ?? '').trim() : '';
+  const task2Essay = writingEnabled && access.unlocked && task2 ? (ans.write[task2.id] ?? '').trim() : '';
   const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay, receipt);
   const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay, receipt);
 
@@ -670,7 +653,18 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
     skills: autoSkills,
   };
 
-  const hasDetailContent = writingEnabled || (mock.sections.some(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon));
+  if (!access.unlocked) {
+    return <ExamResultOffers
+      examSlug="ielts"
+      examName={exam.name}
+      attemptRef={receipt?.submissionId ?? `ielts:${mock.id}`}
+      score={`${lCorrect + rCorrect}/${lTotal + rTotal}`}
+      initialCodeMessage={access.message}
+      fullResult={null}
+      onRetry={onRetry}
+      onUnlocked={onAccessUnlocked}
+    />;
+  }
 
   return (
     <div className="prac-results">
@@ -699,32 +693,6 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
         </div>
       )}
 
-      {/* Reporte detallado — bloqueado detrás del mismo lead que ya usa
-          LeadCaptureModal (flag wl_lead_captured compartido). Sin esto,
-          nada de pregunta-por-pregunta ni corrección de Writing se ve. */}
-      {hasDetailContent && !leadCaptured && (
-        <div className="mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center">
-          <p className="text-3xl mb-2">🔒</p>
-          <p className="font-semibold text-[var(--fg)] mb-1">Reporte detallado bloqueado</p>
-          <p className="text-sm text-[var(--muted)] mb-4 max-w-md mx-auto">
-            Respuesta por respuesta de Listening y Reading, y la corrección completa de tu
-            Writing (errores marcados + versión corregida) — déjanos tu WhatsApp para verlo.
-          </p>
-          <button onClick={handleWantDetail} className="btn">Ver reporte detallado</button>
-        </div>
-      )}
-
-      {showDetailLead && (
-        <LeadCaptureModal
-          examSlug={exam.slug}
-          examScore={reportData.totalLabel}
-          examName={exam.name}
-          onClose={handleDetailModalClose}
-        />
-      )}
-
-      {leadCaptured && (
-      <>
       {writingEnabled && (
         <>
           {task1Essay && (
@@ -881,9 +849,6 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, onRetry }: {
           </div>
         ))}
       </div>
-      </>
-      )}
-
       <div className="prac-results__actions">
         <button onClick={onRetry} className="btn btn-ghost">Try again</button>
         <Link href={`/examenes/${exam.slug}`} className="btn">Back to IELTS</Link>
@@ -940,6 +905,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
   const [readingResult, setReadingResult] = useState<IeltsReadingPracticeResult | null>(null);
   const [readingScoring, setReadingScoring] = useState(false);
   const [submittedStudentName, setSubmittedStudentName] = useState('');
+  const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
   const contentVersion = `${getIeltsReviewBlueprint(mock.id)?.contentVersion ?? 'unversioned'}+${IELTS_CHOICE_PRESENTATION_VERSION}`;
   const draftKey = ieltsPracticeDraftKey(mock.id, practiceSkill ? `${contentVersion}:${practiceSkill}` : contentVersion);
 
@@ -1061,6 +1027,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     setReadingResult(null);
     setReadingScoring(false);
     setSubmittedStudentName('');
+    setResultAccess({ unlocked: false });
     setDeadlineMs(null);
     setDraftRestored(false);
     setActivePartIndex(0);
@@ -1118,7 +1085,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
     if (practiceSkill) return <div className="exam-unified" data-exam="ielts"><IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} /><div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={`${SKILL_LABEL[practiceSkill]} PDF`} /></div></div>;
     return (
       <div className="prac-shell exam-unified" data-exam="ielts">
-        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} onRetry={handleRetry} />
+        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor()} label="Full practice PDF" /></div>
       </div>
     );
@@ -1142,7 +1109,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
           speakingPrompts={speakingQuestions.map(question=>({ questionId: question.id, partNumber: question.partNumber }))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
-          onSuccess={(receipt, studentName, reviewMock)=>{
+          onSuccess={(receipt, studentName, reviewMock, access)=>{
             try { localStorage.removeItem(draftKey); } catch {}
             trackIeltsEvent('ielts_lead_submit', { mock_id: mock.id });
             trackIeltsEvent('ielts_report_view', { mock_id: mock.id, report_state: 'objective_ready_human_review_pending' });
@@ -1151,6 +1118,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill }: { exa
             setSubmissionReceipt(receipt);
             setCompletedReviewMock(reviewMock);
             setSubmittedStudentName(studentName);
+            setResultAccess(access);
             setPhase('results');
           }}
         />

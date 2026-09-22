@@ -94,6 +94,7 @@
     "test:icfes-analytics": "node --experimental-strip-types --no-warnings --test tests/icfes-analytics.test.mjs",
     "test:whatsapp": "node --experimental-strip-types --no-warnings --test tests/whatsapp-chatbot.test.mts",
     "test:exam-leads": "node --experimental-strip-types --no-warnings --test tests/exam-lead-capture.test.mts",
+    "test:exam-access-codes": "node --experimental-strip-types --no-warnings --test tests/exam-access-codes.test.mjs",
     "test:ielts-review": "node --experimental-strip-types --no-warnings --test tests/ielts-review-scoring.test.mjs",
     "check:ielts-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-ielts-review-blueprint.mjs && npm run check:ielts-answer-keys && npm run check:ielts-set1-answer-key && npm run check:ielts-set1-listening-reference && npm run check:ielts-set1-reading-reference && npm run test:ielts-objective && npm run check:ielts-diagrams && npm run check:ielts-harness",
     "check:ielts-diagrams": "node --experimental-strip-types --no-warnings scripts/check-ielts-diagrams.mjs",

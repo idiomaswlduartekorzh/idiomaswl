@@ -30,14 +30,18 @@ test('IELTS analytics strips contact data, answers, essays and audio fields', ()
   }
 });
 
-test('the shared IELTS runner captures the lead before showing the band report', () => {
+test('the shared IELTS runner captures the lead, gates the report and supports an access code', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx');
   const submission = read('src/components/exam-runner/IELTSSubmission.tsx');
   assert.match(submission, /await saveLead\(/u);
   assert.match(submission, /if \(!leadResult\.ok\)[\s\S]*throw new Error/u);
+  assert.match(submission, /Código de acceso/u);
+  assert.match(submission, /redeemExamAccessCodeFromBrowser/u);
   assert.match(runner, /setPhase\('results'\)/u);
   assert.match(runner, /trackIeltsEvent\('ielts_lead_submit'[\s\S]{0,800}setPhase\('results'\)/u);
+  assert.match(runner, /if \(!access\.unlocked\)[\s\S]*<ExamResultOffers/u);
   assert.match(runner, /<IELTSSummaryReport/u);
+  assert.ok(runner.indexOf('if (!access.unlocked)') < runner.indexOf('<IELTSSummaryReport'));
   assert.match(runner, /studentName=\{studentName\}/u);
   assert.match(runner, /overallBand=\{null\}/u);
 });

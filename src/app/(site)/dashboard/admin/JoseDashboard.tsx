@@ -6,6 +6,7 @@ import {
   LayoutDashboard, Users, FileText, DollarSign, Settings,
   MessageCircle, Globe, BookOpen, GraduationCap,
   Calendar, Download,
+  KeyRound,
 } from 'lucide-react'
 import type React from 'react'
 import { signOut } from '@/lib/actions/signOut'
@@ -238,6 +239,11 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
               href="/dashboard/admin/revisiones-xpress"
               style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(49,87,213,.12)', color: '#3157d5', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
               Revisiones Xpress
+            </Link>
+            <Link
+              href="/dashboard/admin/codigos-examen"
+              style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '6px 14px', borderRadius: 20, background: 'rgba(200,121,65,.12)', color: '#9b4e21', fontSize: 12, fontWeight: 700, textDecoration: 'none', flexShrink: 0 }}>
+              <KeyRound size={13} /> Códigos de examen
             </Link>
             <Link
               href="/dashboard/admin/live/create"

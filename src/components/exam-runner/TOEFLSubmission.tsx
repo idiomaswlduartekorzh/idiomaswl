@@ -17,6 +17,7 @@ import {
 } from '@/lib/toefl/submission';
 import type { ToeflSubmissionReceipt } from '@/lib/toefl/review-blueprint';
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
+import { redeemExamAccessCodeFromBrowser, type ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 interface Props {
   mockId: string;
@@ -28,10 +29,10 @@ interface Props {
   speakingPrompts: ToeflSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: ToeflSubmissionReceipt) => void;
+  onSuccess: (receipt: ToeflSubmissionReceipt, access: ExamAccessOutcome) => void;
 }
 
-type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
+type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking';
 
 function readError(error: unknown): string {
   return error instanceof Error ? error.message : 'No pudimos enviar la entrega. Tus respuestas siguen en esta pantalla.';
@@ -64,6 +65,7 @@ export function TOEFLSubmission({
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
+  const [accessCode, setAccessCode] = useState('');
   const [consent, setConsent] = useState(false);
   const [state, setState] = useState<SubmitState>('idle');
   const [progress, setProgress] = useState({ current: 0, total: 0 });
@@ -94,6 +96,8 @@ export function TOEFLSubmission({
       ? `Subiendo audio ${progress.current} de ${progress.total}…`
       : state === 'confirming'
         ? 'Confirmando que textos y audios llegaron completos…'
+        : state === 'unlocking'
+          ? 'Validando el código institucional…'
         : '';
 
   function showError(message: string) {
@@ -182,7 +186,12 @@ export function TOEFLSubmission({
       try {
         window.dataLayer?.push({ event: 'toefl_submission', exam_slug: 'toefl', mock_id: mockId, audio_count: descriptors.length });
       } catch {}
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken });
+      let access: ExamAccessOutcome = { unlocked: completed.xpressAccess !== 'public' };
+      if (!access.unlocked && accessCode.trim()) {
+        setState('unlocking');
+        access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'toefl', attemptRef: prepared.submissionId });
+      }
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, access);
     } catch (caught) {
       setState('idle');
       showError(readError(caught));
@@ -229,6 +238,11 @@ export function TOEFLSubmission({
           <div className="ielts-submit__field">
             <label htmlFor="toefl-student-whatsapp">WhatsApp</label>
             <input id="toefl-student-whatsapp" name="studentWhatsapp" type="tel" inputMode="tel" autoComplete="tel" value={whatsapp} onChange={event => setWhatsapp(event.target.value)} placeholder="Ej.: +57 300 123 4567" maxLength={24} required />
+          </div>
+          <div className="ielts-submit__field ielts-submit__field--access">
+            <label htmlFor="toefl-access-code">Código de acceso <span>(opcional)</span></label>
+            <input id="toefl-access-code" name="accessCode" type="text" autoComplete="one-time-code" value={accessCode} onChange={event => setAccessCode(event.target.value.toUpperCase())} placeholder="WL-ABCD-EFGH-JKLM-NP" maxLength={24} />
+            <small>Úsalo si tu profesor o institución te dio acceso al informe completo.</small>
           </div>
           <label className="ielts-submit__consent">
             <input name="reviewConsent" type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)} required />

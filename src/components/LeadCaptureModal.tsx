@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { saveLead } from '@/lib/actions/saveLead';
 import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
+import { redeemExamAccessCodeFromBrowser, type ExamAccessOutcome } from '@/lib/exam-access-codes/client';
+import type { ExamAccessCodeExam } from '@/lib/exam-access-codes/config';
 
 const WA_NUMBER = '573005004253';
 
@@ -17,15 +19,20 @@ interface Props {
   onClose:   () => void;
   /** Bloquea el resultado hasta guardar nombre, correo y WhatsApp. */
   mandatory?: boolean;
+  /** Enables the institutional-code field and binds a grant to this attempt. */
+  attemptRef?: string;
+  onAccessResolved?: (access: ExamAccessOutcome) => void;
 }
 
-export function LeadCaptureModal({ examSlug, examScore, examName, onClose, mandatory = false }: Props) {
+export function LeadCaptureModal({ examSlug, examScore, examName, onClose, mandatory = false, attemptRef, onAccessResolved }: Props) {
   const [name, setName]       = useState('');
   const [phone, setPhone]     = useState('');
   const [email, setEmail]     = useState('');
+  const [accessCode, setAccessCode] = useState('');
   const [status, setStatus]   = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const leadSavedRef = useRef(false);
 
   // Focus first field on mount
   useEffect(() => { inputRef.current?.focus(); }, []);
@@ -52,23 +59,37 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
     // Read UTM params from URL
     const params = new URLSearchParams(window.location.search);
 
-    const result = await saveLead({
-      name,
-      whatsapp: phone,
-      email:    email || undefined,
-      examSlug,
-      examScore,
-      source:      'simulacro',
-      utmSource:   params.get('utm_source')   ?? undefined,
-      utmMedium:   params.get('utm_medium')   ?? undefined,
-      utmCampaign: params.get('utm_campaign') ?? undefined,
-    });
+    if (!leadSavedRef.current) {
+      const result = await saveLead({
+        name,
+        whatsapp: phone,
+        email:    email || undefined,
+        examSlug,
+        examScore,
+        source:      'simulacro',
+        utmSource:   params.get('utm_source')   ?? undefined,
+        utmMedium:   params.get('utm_medium')   ?? undefined,
+        utmCampaign: params.get('utm_campaign') ?? undefined,
+      });
 
-    if (!result.ok) {
-      setStatus('error');
-      setErrorMsg(result.error ?? 'Error al enviar. Intenta de nuevo.');
-      return;
+      if (!result.ok) {
+        setStatus('error');
+        setErrorMsg(result.error ?? 'Error al enviar. Intenta de nuevo.');
+        return;
+      }
+      leadSavedRef.current = true;
     }
+
+    let access: ExamAccessOutcome = { unlocked: false };
+    if (accessCode.trim() && attemptRef) {
+      access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: examSlug as ExamAccessCodeExam, attemptRef });
+      if (!access.unlocked) {
+        setStatus('error');
+        setErrorMsg(access.message ?? 'El código no es válido.');
+        return;
+      }
+    }
+    onAccessResolved?.(access);
 
     // Mark captured so modal doesn't show again this session
     try { localStorage.setItem('wl_lead_captured', '1'); } catch {}
@@ -172,6 +193,12 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
           border-color: rgba(200,32,46,0.6);
           background: rgba(255,255,255,0.1);
         }
+        .wl-lead-code-help {
+          margin: -0.2rem 0 0.75rem;
+          color: rgba(255,255,255,0.45);
+          font-size: 0.75rem;
+          line-height: 1.45;
+        }
         .wl-lead-error {
           font-size: 0.8rem; color: #f87171;
           margin: -0.25rem 0 0.75rem;
@@ -263,17 +290,17 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate>
-              {/* Score badge */}
               <div className="wl-lead-score-badge">
-                🎯 Tu resultado: {examScore}
+                {mandatory ? '🔒 Simulacro terminado · resultado protegido' : `🎯 Tu resultado: ${examScore}`}
               </div>
 
               <h2 className="wl-lead-title">
-                ¿Quieres mejorar este puntaje?
+                {mandatory ? 'Guarda tus datos para ver tu marcador' : '¿Quieres mejorar este puntaje?'}
               </h2>
               <p className="wl-lead-subtitle">
-                Déjanos tus datos y te enviamos un plan de preparación personalizado
-                basado en tu resultado de {examName}. Sin costo.
+                {mandatory
+                  ? `El resultado de ${examName} se mostrará después de confirmar el registro. Si tu institución te dio un código, podrás abrir aquí el informe completo.`
+                  : `Déjanos tus datos y te enviamos un plan de preparación personalizado basado en tu resultado de ${examName}. Sin costo.`}
               </p>
 
               <div className="wl-lead-field">
@@ -291,6 +318,14 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
                   required={mandatory}
                 />
               </div>
+
+              {attemptRef && onAccessResolved && (
+                <div className="wl-lead-field">
+                  <label htmlFor="lead-access-code" className="wl-lead-label">Código de acceso (opcional)</label>
+                  <input id="lead-access-code" className="wl-lead-input" type="text" autoComplete="one-time-code" placeholder="WL-ABCD-EFGH-JKLM-NP" value={accessCode} onChange={event => setAccessCode(event.target.value.toUpperCase())} maxLength={24} />
+                  <p className="wl-lead-code-help">Si tu profesor te dio un código, abre el informe completo sin pasar por el pago.</p>
+                </div>
+              )}
 
               <div className="wl-lead-field">
                 <label htmlFor="lead-phone" className="wl-lead-label">WhatsApp *</label>
@@ -331,7 +366,11 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
                 className="wl-lead-submit"
                 disabled={status === 'loading'}
               >
-                {status === 'loading' ? 'Enviando…' : 'Quiero mi plan personalizado →'}
+                {status === 'loading'
+                  ? 'Guardando…'
+                  : mandatory
+                    ? accessCode.trim() ? 'Guardar y validar código' : 'Guardar y ver mi marcador'
+                    : 'Quiero mi plan personalizado →'}
               </button>
 
               {!mandatory && (

@@ -18,6 +18,7 @@ import {
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
 import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import type { MockExam } from '@/data/mocks/types';
+import { redeemExamAccessCodeFromBrowser, type ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 interface Props {
   mockId: string;
@@ -29,10 +30,10 @@ interface Props {
   speakingPrompts: IeltsSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
-  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string, reviewMock: MockExam) => void;
+  onSuccess: (receipt: IeltsSubmissionReceipt, studentName: string, reviewMock: MockExam, access: ExamAccessOutcome) => void;
 }
 
-type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
+type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking';
 
 function formatDuration(seconds: number): string {
   const minutes = Math.floor(seconds / 60);
@@ -67,6 +68,7 @@ export function IELTSSubmission({
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
+  const [accessCode, setAccessCode] = useState('');
   const [consent, setConsent] = useState(false);
   const [state, setState] = useState<SubmitState>('idle');
   const [uploadProgress, setUploadProgress] = useState({ current: 0, total: 0 });
@@ -96,6 +98,8 @@ export function IELTSSubmission({
       ? `Subiendo audio ${uploadProgress.current} de ${uploadProgress.total}…`
       : state === 'confirming'
         ? 'Confirmando que textos y audios llegaron completos…'
+        : state === 'unlocking'
+          ? 'Validando el código institucional…'
         : '';
 
   function showError(message: string) {
@@ -195,7 +199,12 @@ export function IELTSSubmission({
         });
       } catch {}
       if (!completed.reviewMock || completed.reviewMock.id !== mockId) throw new Error('La revisión del servidor no llegó completa. Inténtalo otra vez.');
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName, completed.reviewMock);
+      let access: ExamAccessOutcome = { unlocked: completed.xpressAccess !== 'public' };
+      if (!access.unlocked && accessCode.trim()) {
+        setState('unlocking');
+        access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'ielts', attemptRef: prepared.submissionId });
+      }
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken }, trimmedName, completed.reviewMock, access);
     } catch (caught) {
       setState('idle');
       showError(errorMessage(caught));
@@ -257,6 +266,12 @@ export function IELTSSubmission({
             <input id="ielts-student-whatsapp" name="student_whatsapp" type="tel" inputMode="tel" autoComplete="tel"
               value={whatsapp} onChange={event => setWhatsapp(event.target.value)}
               placeholder="Ej.: +57 300 123 4567" maxLength={24} required />
+          </div>
+          <div className="ielts-submit__field ielts-submit__field--access">
+            <label htmlFor="ielts-access-code">Código de acceso <span>(opcional)</span></label>
+            <input id="ielts-access-code" name="access_code" type="text" autoComplete="one-time-code" value={accessCode}
+              onChange={event => setAccessCode(event.target.value.toUpperCase())} placeholder="WL-ABCD-EFGH-JKLM-NP" maxLength={24} />
+            <small>Úsalo si tu profesor o institución te dio acceso al informe completo.</small>
           </div>
 
           <label className="ielts-submit__consent">

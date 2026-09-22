@@ -53,6 +53,7 @@ export interface IcfesPremiumDetailDto {
   currency: 'COP';
   result: IcfesBasicResultDto | null;
   questions?: IcfesPremiumQuestionDto[];
+  accessSource?: 'payment' | 'access-code';
 }
 
 export function hasSensitiveResultFields(value: unknown): boolean {

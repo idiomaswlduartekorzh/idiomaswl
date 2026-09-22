@@ -200,6 +200,7 @@ export default function ZhannaDashboard({ realData }: { realData?: ZhannaRealDat
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Link href="/dashboard/admin/revisiones-xpress" style={{ color: C.blue, fontSize: 12, fontWeight: 800, textDecoration: 'none', padding: '8px 11px', borderRadius: 999, background: C.blueLight }}>Revisiones Xpress</Link>
+          <Link href="/dashboard/admin/codigos-examen" style={{ color: '#9b4e21', fontSize: 12, fontWeight: 800, textDecoration: 'none', padding: '8px 11px', borderRadius: 999, background: '#fff0e5' }}>Códigos de examen</Link>
           <div
             style={{
               width: 40, height: 40, borderRadius: '50%',

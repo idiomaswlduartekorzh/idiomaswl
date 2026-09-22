@@ -50,6 +50,7 @@ export interface IeltsCompleteResponse {
   ok: true;
   submissionId: string;
   reviewMock: MockExam;
+  xpressAccess: 'membership' | 'single-credit' | 'public';
 }
 
 export const IELTS_SPEAKING_MIN_PART_SECONDS: Readonly<Record<number, number>> = {

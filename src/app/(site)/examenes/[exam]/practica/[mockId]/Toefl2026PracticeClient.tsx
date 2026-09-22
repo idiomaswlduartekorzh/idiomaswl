@@ -31,6 +31,8 @@ import {
   flattenForwardItems,
   type ToeflFixedStage,
 } from '@/lib/toefl/fixed-session';
+import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 // ── Fixed practice shape aligned to the 2026 TOEFL iBT task families ──────────
 // This runner neither claims adaptive routing nor awards an ETS 1–6 score.
@@ -641,7 +643,7 @@ function computeReadingListening(
   return { correct, total };
 }
 
-function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, receipt, onRetry }: {
+function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, receipt, access, onAccessUnlocked, onRetry }: {
   mock: MockExam;
   exam: Exam;
   ans: Answers;
@@ -651,6 +653,8 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   buildScore?: ToeflBuildSentenceScoreResult;
   capturedSpeakingCount: number;
   receipt: ToeflSubmissionReceipt;
+  access: ExamAccessOutcome;
+  onAccessUnlocked: () => void;
   onRetry: () => void;
 }) {
   const r = computeReadingListening(mock, 'reading', ans, wordScores, readingScore);
@@ -674,8 +678,21 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   const savedWriting = constructedWriting.filter((question) => (ans.write[question.id] ?? '').trim()).length;
   const emailQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 1) as WriteQuestion | undefined;
   const discussionQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 2) as WriteQuestion | undefined;
-  const emailAssessment = useWritingAssessment('toefl', mock.id, 1, emailQuestion ? ans.write[emailQuestion.id] ?? '' : '', receipt);
-  const discussionAssessment = useWritingAssessment('toefl', mock.id, 2, discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : '', receipt);
+  const emailAssessment = useWritingAssessment('toefl', mock.id, 1, access.unlocked && emailQuestion ? ans.write[emailQuestion.id] ?? '' : '', receipt);
+  const discussionAssessment = useWritingAssessment('toefl', mock.id, 2, access.unlocked && discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : '', receipt);
+
+  if (!access.unlocked) {
+    return <ExamResultOffers
+      examSlug="toefl"
+      examName={exam.name}
+      attemptRef={receipt.submissionId}
+      score={`${r.correct + l.correct + bCorrect}/${r.total + l.total + bTotal}`}
+      initialCodeMessage={access.message}
+      fullResult={null}
+      onRetry={onRetry}
+      onUnlocked={onAccessUnlocked}
+    />;
+  }
 
   return (
     <main className="t26-results">
@@ -773,6 +790,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [currentPlayingMediaId, setCurrentPlayingMediaId] = useState('');
   const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording>>({});
   const [receipt, setReceipt] = useState<ToeflSubmissionReceipt | null>(null);
+  const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
   const [ans, setAns] = useState<Answers>(EMPTY);
   const [wordScores, setWordScores] = useState<WordScoreMap>({});
   const [readingScore, setReadingScore] = useState<ToeflReadingScoreResult>();
@@ -1115,6 +1133,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     setAns(EMPTY);
     setWordScores({}); setReadingScore(undefined); setListeningScore(undefined); setBuildScore(undefined); setAttemptId(createClientId('attempt')); setLastWordFocusId(''); setLastReadingFocusId(''); setLastBuildFocusId('');
     setStageIndex(0); setForwardItemIndex(0); setStageDeadlineAt(null); setStartedMediaIds([]); setCompletedMediaIds([]); setCurrentPlayingMediaId(''); setRecordings({}); setReceipt(null);
+    setResultAccess({ unlocked: false });
     setWordScoringError(false); setReadingScoringError(false); setListeningScoringError(false); setBuildScoringError(false);
     try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
     setPhase('intro');
@@ -1210,8 +1229,9 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           speakingPrompts={speakingPrompts}
           recordings={recordings}
           onBack={() => setPhase('exam')}
-          onSuccess={(nextReceipt) => {
+          onSuccess={(nextReceipt, access) => {
             setReceipt(nextReceipt);
+            setResultAccess(access);
             try { window.localStorage.removeItem(storageKey); } catch { /* receipt remains in memory */ }
             setPhase('results');
           }}
@@ -1223,7 +1243,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   if (phase === 'results' && receipt) {
     return (
       <div className="prac-shell exam-unified" data-exam="toefl"><style>{T26_CSS}</style>
-        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} onRetry={handleRetry} />
+        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheet} label="Full practice PDF" />{(['reading', 'listening', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill[0].toUpperCase()}${skill.slice(1)} PDF`} compact />)}</div>
       </div>
     );

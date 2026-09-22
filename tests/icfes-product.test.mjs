@@ -48,14 +48,32 @@ test('mocks can finish while private persistence is disabled', () => {
   assert.ok(route.indexOf('if (!isIcfesPersistenceEnabled())') < route.indexOf('persistIcfesAttempt('));
 });
 
-test('score is shown before an explicitly optional, consented lead form', () => {
+test('lead is mandatory and saved before the score-only result is released', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
-  const score = runner.indexOf('data-testid="icfes-free-result"');
-  const lead = runner.indexOf('Tu resultado ya está visible. Dejar tus datos es opcional.');
-  assert.ok(score >= 0 && lead > score);
-  assert.match(runner, /checked=\{consent\}/);
-  assert.match(runner, /if \(!consent/);
-  assert.match(runner, /data-testid="icfes-free-result" data-active-practice="true"/);
+  const flow = read('src/components/icfes/IcfesLeadResultOffers.tsx');
+  assert.match(runner, /<IcfesLeadResultOffers result=\{secureResult\}/);
+  assert.ok(flow.indexOf('data-testid="icfes-lead-gate"') < flow.indexOf('data-testid="icfes-result-offers"'));
+  assert.match(flow, /required checked=\{leadConsent\}/);
+  assert.match(flow, /const saved = await saveLead/);
+  assert.ok(flow.indexOf('if (!saved.ok)') < flow.indexOf("setStep('offers')"));
+  const releasedResult = flow.slice(flow.indexOf('data-testid="icfes-result-offers"'));
+  assert.match(releasedResult, /\{result\.correct\}<span>\/\{result\.total\}<\/span>/);
+  assert.doesNotMatch(releasedResult, /result\.(?:percentage|byPart|bySkill|recommendation)/);
+  assert.doesNotMatch(flow, /Dejar tus datos es opcional/);
+});
+
+test('post-exam screen reuses the reviewed Xpress products and preserves their scope', () => {
+  const flow = read('src/components/icfes/IcfesLeadResultOffers.tsx');
+  const catalog = read('src/lib/xpress-commerce/catalog.ts');
+  assert.match(flow, /XPRESS_OFFERS\.map/);
+  assert.match(flow, /Informe detallado/);
+  assert.match(flow, /Preparación automática/);
+  assert.match(flow, /Feedback personalizado/);
+  assert.match(flow, /Revisión personalizada de un tutor/);
+  assert.match(flow, /Entrega en el panel dentro de 24 horas/);
+  assert.match(catalog, /amountInCents: 1_290_000/);
+  assert.match(catalog, /amountInCents: 4_990_000/);
+  assert.match(catalog, /amountInCents: 9_990_000/);
 });
 
 test('official resources cannot reach checkout or premium detail', () => {
@@ -71,14 +89,16 @@ test('official resources cannot reach checkout or premium detail', () => {
 test('checkout uses server price, signed cookie capability, user ownership, and no fake success', () => {
   const checkout = read('src/app/api/icfes/pass/checkout/route.ts');
   const config = read('src/lib/icfes/product-config.server.ts');
-  assert.match(config, /ICFES_PASS_PRICE_COP = 49_900/);
+  assert.match(config, /ICFES_PASS_PRICE_COP = 12_900/);
   assert.match(config, /ICFES_PASE_ENABLED !== 'true'/);
   assert.match(config, /ICFES_PERSISTENCE_ENABLED === 'true'/);
+  assert.match(checkout, /acceptedTerms !== XPRESS_TERMS_VERSION/);
+  assert.match(checkout, /acceptedPrivacy !== XPRESS_PRIVACY_VERSION/);
   assert.match(checkout, /ICFES_ATTEMPT_COOKIE/);
   assert.match(checkout, /attempt\.user_id && attempt\.user_id !== user\?\.id/);
   assert.match(checkout, /createWompiIntegritySignature/);
   assert.doesNotMatch(checkout, /status:\s*'APPROVED'/);
-  assert.match(read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx'), /amount_cop: data\.amountInCents \/ 100/);
+  assert.match(read('src/components/icfes/IcfesLeadResultOffers.tsx'), /amount_cop: data\.amountInCents \/ 100/);
 });
 
 test('feature flags default off and private ownership never comes from the client', () => {
@@ -108,14 +128,19 @@ test('ICFES private tables have RLS and no browser-role grants or policies', () 
   assert.match(migration, /GRANT SELECT, INSERT ON TABLE public\.icfes_entitlements TO service_role/);
   assert.doesNotMatch(migration, /GRANT[^;]+TO (?:anon|authenticated)/i);
   assert.match(migration, /amount_in_cents bigint NOT NULL CHECK \(amount_in_cents = 4990000\)/);
+  const commercialMigration = read('supabase/migrations/20260921160000_icfes_single_report_offer.sql');
+  assert.match(commercialMigration, /amount_in_cents IN \(1290000, 4990000\)/);
+  assert.match(commercialMigration, /terms_version text/);
+  assert.match(commercialMigration, /privacy_version text/);
+  assert.match(commercialMigration, /consented_at timestamptz/);
 });
 
 test('Wompi parser rejects wrong references, amount types, and statuses', () => {
   const reference = 'WL-ICFES-123e4567-e89b-42d3-a456-426614174000-deadbeef';
-  const good = { id: 'wompi-1', reference, amount_in_cents: 4990000, currency: 'COP', status: 'APPROVED' };
+  const good = { id: 'wompi-1', reference, amount_in_cents: 1290000, currency: 'COP', status: 'APPROVED' };
   assert.equal(parseIcfesWompiTransaction(good)?.attemptId, '123e4567-e89b-42d3-a456-426614174000');
   assert.equal(parseIcfesWompiTransaction({ ...good, reference: 'WL-TOEFL-x' }), null);
-  assert.equal(parseIcfesWompiTransaction({ ...good, amount_in_cents: '4990000' }), null);
+  assert.equal(parseIcfesWompiTransaction({ ...good, amount_in_cents: '1290000' }), null);
   assert.equal(parseIcfesWompiTransaction({ ...good, status: 'SUCCESS' }), null);
 });
 
@@ -128,7 +153,7 @@ test('verified webhook is signature-bound, amount-bound and idempotently grants 
   assert.match(webhook, /persistVerifiedIcfesTransaction/);
   assert.match(persistence, /apiBaseUrl.*transactions/);
   assert.match(persistence, /Authorization: `Bearer \$\{input\.config\.publicKey\}`/);
-  assert.match(persistence, /transaction\.amountInCents !== ICFES_PASS_AMOUNT_IN_CENTS/);
+  assert.match(persistence, /isSupportedIcfesPassAmount\(transaction\.amountInCents\)/);
   assert.match(persistence, /order\.status === 'APPROVED' \? 'APPROVED'/);
   assert.match(persistence, /upsert\(/);
   assert.match(migration, /attempt_id uuid NOT NULL UNIQUE/);
@@ -136,8 +161,10 @@ test('verified webhook is signature-bound, amount-bound and idempotently grants 
 
 test('commercial analytics use centralized names and exclude PII/answers', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
+  const offers = read('src/components/icfes/IcfesLeadResultOffers.tsx');
   const paid = read('src/app/(site)/practica/icfes-saber-11/resultados/[attemptId]/IcfesPaidResultClient.tsx');
-  for (const event of ['icfes_offer_view', 'icfes_paid_detail_intent', 'icfes_checkout_start']) assert.ok(runner.includes(`trackIcfesEvent('${event}'`));
+  for (const event of ['icfes_offer_view', 'icfes_paid_detail_intent', 'icfes_checkout_start']) assert.ok(offers.includes(`trackIcfesEvent('${event}'`));
   assert.ok(paid.includes("trackIcfesEvent('icfes_purchase_complete'"));
-  assert.doesNotMatch(runner.match(/trackIcfesEvent\('icfes_(offer_view|paid_detail_intent|checkout_start)'[\s\S]{0,180}/g)?.join('') ?? '', /email|whatsapp|answer/);
+  assert.doesNotMatch(offers.match(/trackIcfesEvent\('icfes_(offer_view|paid_detail_intent|checkout_start)'[\s\S]{0,180}/g)?.join('') ?? '', /email|whatsapp|answer/);
+  assert.ok(runner.includes("trackIcfesEvent('icfes_mock_complete'"));
 });

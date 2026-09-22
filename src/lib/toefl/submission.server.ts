@@ -394,8 +394,10 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .maybeSingle();
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404);
   if (submission.submission_status === 'submitted') {
-    if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId });
-    return Response.json({ ok: true, submissionId });
+    const xpressAccess = submission.user_id
+      ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId })
+      : { access: 'public' as const, personalizedFeedback: false };
+    return Response.json({ ok: true, submissionId, xpressAccess: xpressAccess.access });
   }
 
   const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
@@ -421,8 +423,10 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .select('id')
     .maybeSingle();
   if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
-  if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId });
-  return Response.json({ ok: true, submissionId });
+  const xpressAccess = submission.user_id
+    ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'toefl', submissionId })
+    : { access: 'public' as const, personalizedFeedback: false };
+  return Response.json({ ok: true, submissionId, xpressAccess: xpressAccess.access });
 }
 
 export async function handleToeflSubmissionRequest(request: Request, mockId: string): Promise<Response> {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect, useId } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
@@ -25,6 +25,8 @@ import type {
   MultiSelectQuestion,
   MatchingGroupQuestion,
 } from '@/data/mocks/types';
+import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -903,6 +905,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   const [formAnswers, setFormAnswers] = useState<Record<string, Record<number, string>>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
+  const [resultAccess, setResultAccess] = useState<ExamAccessOutcome>({ unlocked: false });
+  const [attemptNumber, setAttemptNumber] = useState(1);
+  const stableInstanceId = useId().replace(/[^A-Za-z0-9_-]/g, '');
+  const attemptRef = `language:${mock.id}:${stableInstanceId}:${attemptNumber}`;
 
   const handleMCQ = useCallback((id: string, i: number) => {
     setMcqAnswers(prev => ({ ...prev, [id]: i }));
@@ -938,6 +944,8 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     setFormAnswers({});
     setMultiAnswers({});
     setMatchAnswers({});
+    setResultAccess({ unlocked: false });
+    setAttemptNumber(previous => previous + 1);
     setActiveSkill(skills[0] ?? 'reading');
     setPhase('intro');
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -1020,25 +1028,40 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
           examName={exam.name}
           onClose={() => setPhase('results')}
           mandatory
+          attemptRef={exam.slug === 'goethe' ? attemptRef : undefined}
+          onAccessResolved={exam.slug === 'goethe' ? setResultAccess : undefined}
         />
       </div>
     );
   }
 
   if (phase === 'results') {
+    const fullResult = <ResultsView
+      mock={mock}
+      exam={exam}
+      mcqAnswers={mcqAnswers}
+      writeAnswers={writeAnswers}
+      speakingAnswers={speakingAnswers}
+      formAnswers={formAnswers}
+      multiAnswers={multiAnswers}
+      matchAnswers={matchAnswers}
+      onRetry={handleRetry}
+    />;
+    if (exam.slug === 'goethe') {
+      return <div className="prac-shell"><ExamResultOffers
+        examSlug="goethe"
+        examName={exam.name}
+        attemptRef={attemptRef}
+        score={`${leadCorrect}/${leadTotal}`}
+        initialUnlocked={resultAccess.unlocked}
+        initialCodeMessage={resultAccess.message}
+        fullResult={fullResult}
+        onRetry={handleRetry}
+      /></div>;
+    }
     return (
       <div className="prac-shell">
-        <ResultsView
-          mock={mock}
-          exam={exam}
-          mcqAnswers={mcqAnswers}
-          writeAnswers={writeAnswers}
-          speakingAnswers={speakingAnswers}
-          formAnswers={formAnswers}
-          multiAnswers={multiAnswers}
-          matchAnswers={matchAnswers}
-          onRetry={handleRetry}
-        />
+        {fullResult}
       </div>
     );
   }

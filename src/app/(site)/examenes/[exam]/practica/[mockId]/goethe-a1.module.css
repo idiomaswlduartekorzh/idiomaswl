@@ -498,6 +498,9 @@
 .deliveryForm { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 1.25rem; }
 .deliveryForm > label:not(.deliveryConsent) { display: flex; flex-direction: column; gap: 0.35rem; color: var(--goethe-navy); font-size: 0.82rem; font-weight: 800; }
 .deliveryForm > label:nth-child(3) { grid-column: 1 / -1; }
+.deliveryAccess { grid-column: 1 / -1; }
+.deliveryAccess small, .deliveryAccess em { color: var(--goethe-muted); font-weight: 500; }
+.deliveryAccess em { font-size: 0.75rem; line-height: 1.45; }
 .deliveryForm input:not([type='checkbox']) { width: 100%; padding: 0.75rem; border: 1px solid #aeb7c7; border-radius: 8px; background: #fff; color: var(--goethe-ink); font: inherit; }
 .deliveryConsent { display: flex; grid-column: 1 / -1; align-items: flex-start; gap: 0.65rem; color: var(--goethe-muted); font-size: 0.78rem; line-height: 1.5; }
 .deliveryConsent input { width: 18px; height: 18px; flex: 0 0 auto; margin-top: 0.1rem; accent-color: var(--goethe-blue); }
@@ -610,7 +613,7 @@
   .resultHero > div { flex-direction: column; align-items: center; gap: 0.15rem; }
   .answerComparison div { grid-template-columns: 1fr; gap: 0.2rem; }
   .submitReview > div button, .introActions > *, .examFooter button { flex: 1 1 100%; }
-  .deliveryForm > label:nth-child(3), .deliveryConsent, .deliveryError, .deliveryStatus, .deliveryActions { grid-column: 1; }
+  .deliveryForm > label:nth-child(3), .deliveryAccess, .deliveryConsent, .deliveryError, .deliveryStatus, .deliveryActions { grid-column: 1; }
   .deliveryActions { flex-direction: column-reverse; }
   .deliveryActions button { width: 100%; }
   .examFooter { align-items: stretch; }

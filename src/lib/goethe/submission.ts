@@ -54,6 +54,7 @@ export interface GoetheCompleteResponse {
   submissionId: string
   completionToken: string
   automatic: GoetheAutomaticScore
+  xpressAccess: 'membership' | 'single-credit' | 'public'
 }
 
 export interface GoetheSubmissionReceipt {

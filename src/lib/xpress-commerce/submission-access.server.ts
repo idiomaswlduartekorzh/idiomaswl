@@ -3,7 +3,7 @@ import 'server-only';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 
-type SubmissionAccessResult = Readonly<{ access: 'membership' | 'single-credit' | 'public'; personalizedFeedback: boolean }>;
+export type SubmissionAccessResult = Readonly<{ access: 'membership' | 'single-credit' | 'public'; personalizedFeedback: boolean }>;
 
 export async function recordXpressSubmissionAccess(input: { userId: string; examSlug: string; submissionId: string }): Promise<SubmissionAccessResult> {
   const { data, error } = await createAdminClient().rpc('record_xpress_submission_access', {

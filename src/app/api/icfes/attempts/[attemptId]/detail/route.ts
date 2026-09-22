@@ -31,12 +31,27 @@ export async function GET(_request: Request, context: { params: Promise<{ attemp
   if (!availability.eligible || !getIcfesPaidExam(attempt.exam_id)) {
     return Response.json({ ok: false, error: availability.reason ?? 'Detalle premium no disponible.' }, { status: 403, headers });
   }
-  const { data: order } = await admin.from('icfes_pass_orders').select('id, status, amount_in_cents, currency')
-    .eq('attempt_id', attemptId).order('created_at', { ascending: false }).limit(1).maybeSingle();
+  const [{ data: order }, { data: accessGrant }] = await Promise.all([
+    admin.from('icfes_pass_orders').select('id, status, amount_in_cents, currency')
+      .eq('attempt_id', attemptId).order('created_at', { ascending: false }).limit(1).maybeSingle(),
+    admin.from('exam_access_code_redemptions').select('id')
+      .eq('exam_slug', 'icfes').eq('attempt_ref', attemptId).maybeSingle(),
+  ]);
+  if (accessGrant) {
+    return Response.json({
+      ok: true,
+      paymentStatus: 'APPROVED',
+      amountInCents: 0,
+      currency: 'COP',
+      accessSource: 'access-code',
+      result: attempt.basic_result as IcfesBasicResultDto,
+      questions: buildPremiumQuestions(attempt.exam_id, attempt.answers) ?? [],
+    } satisfies IcfesPremiumDetailDto, { headers });
+  }
   const status = (order?.status ?? 'ERROR') as IcfesPaymentStatus;
   const base: IcfesPremiumDetailDto = {
     ok: true, paymentStatus: status, amountInCents: Number(order?.amount_in_cents ?? ICFES_PASS_AMOUNT_IN_CENTS),
-    currency: 'COP', result: attempt.basic_result as IcfesBasicResultDto,
+    currency: 'COP', accessSource: 'payment', result: attempt.basic_result as IcfesBasicResultDto,
   };
   if (status !== 'APPROVED') return Response.json(base, { headers });
   const { data: entitlement } = await admin.from('icfes_entitlements').select('id').eq('attempt_id', attemptId).maybeSingle();

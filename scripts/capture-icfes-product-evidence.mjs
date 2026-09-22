@@ -53,22 +53,22 @@ for (const device of [
   if (leakedKeys.length) {
     throw new Error(`${device.name}: sensitive scoring keys leaked: ${leakedKeys.join(', ')}`);
   }
-  await page.getByTestId('icfes-free-result').waitFor({ state: 'visible' });
-  await page.getByText('Tu resultado ya está visible. Dejar tus datos es opcional.').waitFor({ state: 'visible' });
+  await page.getByTestId('icfes-lead-gate').waitFor({ state: 'visible' });
+  await page.getByText('Tu examen ya fue calificado').waitFor({ state: 'visible' });
   const body = await page.locator('body').innerText();
   const normalizedBody = body.toLocaleLowerCase('es');
-  if (!normalizedBody.includes('resultado gratuito inmediato') || !normalizedBody.includes('dejar tus datos es opcional')) {
-    throw new Error(`${device.name}: free-first result contract is not visible: ${body.slice(0, 500)}`);
+  if (!normalizedBody.includes('resultado protegido') || !normalizedBody.includes('guardar y ver mi puntaje')) {
+    throw new Error(`${device.name}: required lead gate is not visible: ${body.slice(0, 500)}`);
   }
-  if (body.includes('Pase ICFES — COP 49.900')) {
-    throw new Error(`${device.name}: disabled offer unexpectedly visible`);
+  if (/\b\d+\s*\/\s*45\b/.test(body) || body.includes('$12.900')) {
+    throw new Error(`${device.name}: result or offer leaked before lead capture`);
   }
   await page.evaluate(() => {
     window.scrollTo(0, 0);
     if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
   });
-  const artifactPath = `artifacts/icfes-audit/icfes-free-result-${device.name}-2026-09-08.png`;
-  const path = `${outputDir}icfes-free-result-${device.name}-2026-09-08.png`;
+  const artifactPath = `artifacts/icfes-audit/icfes-lead-gate-${device.name}-2026-09-21.png`;
+  const path = `${outputDir}icfes-lead-gate-${device.name}-2026-09-21.png`;
   await page.screenshot({ path, fullPage: true });
   findings.push({
     device: device.name,

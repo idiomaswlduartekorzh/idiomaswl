@@ -66,13 +66,17 @@ test('the primary and learning hubs install the lightweight analytics scope', ()
 test('real ICFES milestones call the shared event contract', () => {
   const practiceEngine = read('src/app/(site)/practica/icfes-saber-11/_components/IcfesPartPracticeEngine.tsx');
   const examRunner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx');
+  const resultOffers = read('src/components/icfes/IcfesLeadResultOffers.tsx');
   const plan = read('src/app/(site)/practica/icfes-saber-11/plan-de-estudio/StudyPlanClient.tsx');
   const whatsapp = read('src/components/WhatsAppAttribution.tsx');
 
   assert.match(practiceEngine, /trackIcfesEvent\(context === 'guided-simulator' \? 'icfes_guided_simulator_start' : 'icfes_practice_start'/);
   assert.match(practiceEngine, /trackIcfesEvent\('icfes_report_view'/);
-  for (const event of ['icfes_mock_start', 'icfes_mock_complete', 'icfes_lead_submit', 'icfes_report_view']) {
+  for (const event of ['icfes_mock_start', 'icfes_mock_complete']) {
     assert.ok(examRunner.includes(`trackIcfesEvent('${event}'`), `Exam runner is missing ${event}`);
+  }
+  for (const event of ['icfes_lead_submit', 'icfes_report_view', 'icfes_offer_view']) {
+    assert.ok(resultOffers.includes(`trackIcfesEvent('${event}'`), `Result funnel is missing ${event}`);
   }
   assert.match(plan, /trackIcfesEvent\('icfes_study_plan_generated'/);
   assert.match(whatsapp, /trackIcfesEvent\('icfes_whatsapp_click'/);

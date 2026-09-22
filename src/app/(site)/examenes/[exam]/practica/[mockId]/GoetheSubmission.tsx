@@ -14,6 +14,7 @@ import {
   type GoetheSubmissionReceipt,
 } from '@/lib/goethe/submission'
 import styles from './goethe-a1.module.css'
+import { redeemExamAccessCodeFromBrowser, type ExamAccessOutcome } from '@/lib/exam-access-codes/client'
 
 interface Props {
   mockId: string
@@ -25,10 +26,10 @@ interface Props {
   objectiveMissing: number
   formMissing: number
   onBack: () => void
-  onSuccess: (receipt: GoetheSubmissionReceipt) => void
+  onSuccess: (receipt: GoetheSubmissionReceipt, access: ExamAccessOutcome) => void
 }
 
-type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming'
+type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming' | 'unlocking'
 
 function readResponse<T>(response: Response): Promise<T & { error?: string }> {
   return response.json().catch(() => { throw new Error('El servidor no respondió correctamente. Inténtalo de nuevo.') })
@@ -53,6 +54,7 @@ export default function GoetheSubmission({
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [whatsapp, setWhatsapp] = useState('')
+  const [accessCode, setAccessCode] = useState('')
   const [consent, setConsent] = useState(false)
   const [state, setState] = useState<SubmitState>('idle')
   const [progress, setProgress] = useState({ current: 0, total: 0 })
@@ -66,7 +68,8 @@ export default function GoetheSubmission({
   const status = state === 'capturing' ? 'Guardando los datos del estudiante…'
     : state === 'preparing' ? 'Validando respuestas y preparando la entrega privada…'
       : state === 'uploading' ? `Subiendo audio ${progress.current} de ${progress.total}…`
-        : state === 'confirming' ? 'Verificando que respuestas y audios llegaron completos…' : ''
+        : state === 'confirming' ? 'Verificando que respuestas y audios llegaron completos…'
+          : state === 'unlocking' ? 'Validando el código institucional…' : ''
 
   function fail(message: string) {
     setError(message)
@@ -130,7 +133,12 @@ export default function GoetheSubmission({
         localStorage.setItem('wl_lead_captured', '1')
         window.dataLayer?.push({ event: 'goethe_submission', exam_slug: 'goethe', mock_id: mockId, audio_count: audioEntries.length })
       } catch {}
-      onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic })
+      let access: ExamAccessOutcome = { unlocked: completed.xpressAccess !== 'public' }
+      if (!access.unlocked && accessCode.trim()) {
+        setState('unlocking')
+        access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'goethe', attemptRef: completed.submissionId })
+      }
+      onSuccess({ submissionId: completed.submissionId, completionToken: completed.completionToken, automatic: completed.automatic }, access)
     } catch (caught) {
       fail(caught instanceof Error ? caught.message : 'No pudimos enviar la entrega. Tus respuestas siguen guardadas en esta pantalla.')
     }
@@ -155,6 +163,7 @@ export default function GoetheSubmission({
         <label>Nombre completo<input value={name} onChange={event => setName(event.target.value)} autoComplete="name" disabled={busy} /></label>
         <label>Correo electrónico<input type="email" value={email} onChange={event => setEmail(event.target.value)} autoComplete="email" disabled={busy} /></label>
         <label>WhatsApp<input type="tel" value={whatsapp} onChange={event => setWhatsapp(event.target.value)} autoComplete="tel" placeholder="Ej. 3001234567" disabled={busy} /></label>
+        <label className={styles.deliveryAccess}>Código de acceso <small>(opcional)</small><input type="text" value={accessCode} onChange={event => setAccessCode(event.target.value.toUpperCase())} autoComplete="one-time-code" placeholder="WL-ABCD-EFGH-JKLM-NP" maxLength={24} disabled={busy} /><em>Úsalo si tu profesor o institución te dio acceso al informe completo.</em></label>
         <label className={styles.deliveryConsent}><input type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)} disabled={busy} /><span>Autorizo el almacenamiento privado de mis respuestas y audios para evaluación académica y el contacto relacionado con este simulacro.</span></label>
         {error && <p className={styles.deliveryError} role="alert">{error}</p>}
         {status && <p className={styles.deliveryStatus} role="status" aria-live="polite">{status}</p>}

@@ -2,8 +2,14 @@ import 'server-only';
 
 import { getWompiServerConfig } from '@/lib/wompi/server';
 
-export const ICFES_PASS_PRICE_COP = 49_900;
+export const ICFES_PASS_PRICE_COP = 12_900;
 export const ICFES_PASS_AMOUNT_IN_CENTS = ICFES_PASS_PRICE_COP * 100;
+export const ICFES_LEGACY_PASS_AMOUNT_IN_CENTS = 49_900 * 100;
+
+export function isSupportedIcfesPassAmount(amountInCents: number): boolean {
+  return amountInCents === ICFES_PASS_AMOUNT_IN_CENTS
+    || amountInCents === ICFES_LEGACY_PASS_AMOUNT_IN_CENTS;
+}
 
 export interface IcfesProductConfig {
   enabled: true;
@@ -27,7 +33,7 @@ export function getIcfesProductConfig(): IcfesProductConfig {
   if (!isIcfesPersistenceEnabled()) throw new Error('ICFES persistence disabled');
   const configuredPrice = process.env.ICFES_PASE_PRICE_COP?.trim();
   if (configuredPrice && Number(configuredPrice) !== ICFES_PASS_PRICE_COP) {
-    throw new Error('ICFES_PASE_PRICE_COP must match the reviewed COP 49.900 offer');
+    throw new Error('ICFES_PASE_PRICE_COP must match the reviewed COP 12.900 offer');
   }
   const wompi = getWompiServerConfig();
   const originValue = process.env.ICFES_PASE_ORIGIN?.trim() || 'https://www.idiomaswl.com';

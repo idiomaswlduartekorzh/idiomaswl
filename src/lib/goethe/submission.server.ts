@@ -252,8 +252,10 @@ async function completeSubmission(mockId: string, submissionId: unknown, token: 
       .eq('id', submissionId).eq('submission_status', 'uploading').select('id').maybeSingle()
     if (error || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega.', 500)
   }
-  if (submission.user_id) await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'goethe', submissionId })
-  return Response.json({ ok: true, submissionId, completionToken: token, automatic })
+  const xpressAccess = submission.user_id
+    ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'goethe', submissionId })
+    : { access: 'public' as const, personalizedFeedback: false }
+  return Response.json({ ok: true, submissionId, completionToken: token, automatic, xpressAccess: xpressAccess.access })
 }
 
 export async function handleGoetheSubmissionRequest(request: Request, mockId: string): Promise<Response> {

@@ -2,7 +2,7 @@ import 'server-only';
 
 import { createAdminClient } from '@/lib/supabase/admin';
 import type { WompiServerConfig } from '@/lib/wompi/validation';
-import { ICFES_PASS_AMOUNT_IN_CENTS, isIcfesPersistenceEnabled } from './product-config.server';
+import { isIcfesPersistenceEnabled, isSupportedIcfesPassAmount } from './product-config.server';
 import { parseIcfesWompiTransaction } from './payment-event';
 
 export type IcfesPaymentPersistenceResult = 'saved' | 'ignored' | 'failed';
@@ -26,7 +26,7 @@ export async function persistVerifiedIcfesTransaction(input: {
     const body = await response.json() as { data?: unknown };
     const transaction = parseIcfesWompiTransaction(body?.data);
     if (!transaction || transaction.id !== input.transactionId) return 'ignored';
-    if (transaction.amountInCents !== ICFES_PASS_AMOUNT_IN_CENTS) return 'failed';
+    if (!isSupportedIcfesPassAmount(transaction.amountInCents)) return 'failed';
     const admin = createAdminClient();
     const { data: order, error } = await admin.from('icfes_pass_orders')
       .select('id, attempt_id, amount_in_cents, currency, environment, status, wompi_transaction_id, paid_at')

@@ -79,7 +79,10 @@ test('the shared route, runner, submission and results flow cannot drift by set'
   assert.match(runner, /<SkillTabs skills=\{skills\}/);
   assert.match(runner, /<IELTSSubmission/);
   assert.match(runner, /parseIeltsPracticeDraft/);
-  assert.match(runner, /localStorage\.getItem\('wl_lead_captured'\) === '1'/);
+  assert.match(runner, /<ExamResultOffers/);
+  assert.match(runner, /access=\{resultAccess\}/);
+  assert.doesNotMatch(runner, /localStorage\.getItem\('wl_lead_captured'\)/);
+  assert.match(submission, /redeemExamAccessCodeFromBrowser/);
   assert.match(runner, /maxSeconds=\{q\.partNumber === 2 \? 120 : 300\}/);
   assert.ok((runner.match(/spellCheck=\{false\}/g) ?? []).length >= 2, 'Writing and Speaking notes must disable spellcheck');
   assert.doesNotMatch(runner, /saveExamResult/);
