@@ -1,6 +1,13 @@
 # Centro operativo de administración
 
-Estado: **implementado y pendiente de cierre de despliegue**.
+Estado: **DESPLEGADO**.
+
+Última verificación de producción: **22 de septiembre de 2026**.
+
+- Commit funcional en `main`: `596d9e7f` (`fix: load delegated review history safely`).
+- Deployment de producción: `dpl_BKuLohJwNHKvCPbXVwiKbAkJJzkb`.
+- URL del deployment: `https://idiomaswl-5r9wea4x0-idiomaswlduartekorzhs-projects.vercel.app`.
+- Dominios activos: `https://www.idiomaswl.com`, `https://idiomaswl.com` y `https://idiomaswl.vercel.app`.
 
 ## Fuente de verdad
 
@@ -42,3 +49,14 @@ npm run build
 ```
 
 Antes de marcar este documento como desplegado deben registrarse el SHA de `main`, el deployment de Vercel en estado `READY` y el smoke de `/dashboard/admin` sin sesión (`307` hacia `/login`).
+
+## Evidencia del despliegue
+
+- Vercel construyó la rama `main` y dejó el deployment en estado `READY`.
+- Sin sesión, `/dashboard/admin` responde `307` y redirige a `/login`.
+- Con la sesión real de Zhanna, el panel muestra el saludo personalizado y la misma interfaz operativa que José.
+- La página no contiene los nombres de demostración retirados.
+- El smoke no registró errores de hidratación ni respuestas `500` del panel o de sus rutas administrativas.
+- IELTS y TOEFL no solicitan audio automáticamente. La carga manual de audio IELTS respondió `200` desde una ruta privada, autorizada y sin caché.
+- El historial de llamados delegados usa una ruta GET privada y sin caché; ya no dispara una Server Action durante el montaje.
+- Esta entrega no requirió una migración nueva de Supabase: usa las tablas, buckets y políticas ya desplegados.
