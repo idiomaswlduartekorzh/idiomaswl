@@ -1,9 +1,8 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { ClipboardCheck } from 'lucide-react'
-import { getToeflSubmissionAudio } from '@/lib/actions/getToeflSubmissionAudio'
 import { completeToeflReview } from '@/lib/actions/completeToeflReview'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { ExamSubmission } from './JoseDashboardServer'
@@ -17,7 +16,7 @@ const BORDER = '#cbd5e1'
 const TASK_GUIDE = 'https://www.ets.org/pdfs/toefl/toefl-ibt-test-overview.pdf'
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+  return new Date(iso).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })
 }
 
 function Report({ label, report }: { label: string; report?: FullAssessment | null }) {
@@ -59,18 +58,9 @@ export default function TOEFLReviewPanel({ items }: { items: ExamSubmission[] })
   const [interviewScore, setInterviewScore] = useState<number | null>(null)
   const [notes, setNotes] = useState('')
   const [audio, setAudio] = useState<{ id: string; files: { questionId: string; signedUrl: string }[]; error: string } | null>(null)
+  const [audioLoadingFor, setAudioLoadingFor] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
-
-  const audioSignature = Object.keys(active?.speaking_audio_paths ?? {}).sort().join('|')
-  useEffect(() => {
-    let cancelled = false
-    if (!active?.id || !audioSignature) return
-    getToeflSubmissionAudio(active.id).then(result => {
-      if (!cancelled) setAudio({ id: active.id, files: result.ok ? result.files : [], error: result.ok ? '' : result.error })
-    }).catch(() => { if (!cancelled) setAudio({ id: active.id, files: [], error: 'No pudimos preparar los audios privados.' }) })
-    return () => { cancelled = true }
-  }, [active?.id, audioSignature])
 
   function choose(item: ExamSubmission) {
     setSelectedId(item.id)
@@ -78,6 +68,29 @@ export default function TOEFLReviewPanel({ items }: { items: ExamSubmission[] })
     setInterviewScore(item.toefl_speaking_interview_assessment?.score ?? null)
     setNotes(item.toefl_speaking_repeat_assessment?.evidenceNotes ?? '')
     setMessage('')
+  }
+
+  async function loadAudio() {
+    if (!active?.id) return
+    const requestedId = active.id
+    setAudioLoadingFor(requestedId)
+    setAudio(null)
+    try {
+      const response = await fetch(`/api/admin/toefl/submissions/${encodeURIComponent(requestedId)}/audio`, {
+        credentials: 'same-origin',
+        cache: 'no-store',
+      })
+      const payload = await response.json().catch(() => null) as { files?: { questionId: string; signedUrl: string }[]; error?: string } | null
+      setAudio({
+        id: requestedId,
+        files: response.ok && Array.isArray(payload?.files) ? payload.files : [],
+        error: response.ok ? '' : payload?.error ?? 'No pudimos preparar los audios privados.',
+      })
+    } catch {
+      setAudio({ id: requestedId, files: [], error: 'No pudimos preparar los audios privados.' })
+    } finally {
+      setAudioLoadingFor(current => current === requestedId ? null : current)
+    }
   }
 
   async function save() {
@@ -95,6 +108,7 @@ export default function TOEFLReviewPanel({ items }: { items: ExamSubmission[] })
   }
 
   const activeAudio = audio?.id === active?.id ? audio : null
+  const audioLoading = audioLoadingFor === active?.id
   return (
     <section style={{ background: CARD, border: `2px solid ${A}`, borderRadius: 16, padding: 20, boxShadow: '0 1px 6px rgba(0,0,0,.06)' }} aria-labelledby="toefl-review-heading">
       <header style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap', marginBottom: 14 }}>
@@ -112,7 +126,7 @@ export default function TOEFLReviewPanel({ items }: { items: ExamSubmission[] })
             <Report label="Informe preliminar · Email" report={active.writing_task1_assessment} />
             <Essay label="Academic Discussion" text={active.writing_task2_answer} />
             <Report label="Informe preliminar · Discussion" report={active.writing_task2_assessment} />
-            <section><h4 style={{ margin: '0 0 6px', fontSize: 11 }}>Speaking · evidencia privada</h4>{!activeAudio && <p style={{ color: MUTED, fontSize: 10 }}>Preparando enlaces temporales…</p>}{activeAudio?.error && <p role="alert" style={{ color: '#b91c1c', fontSize: 10 }}>{activeAudio.error}</p>}<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 7 }}>{activeAudio?.files.map(file => <div key={file.questionId} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 8 }}><strong style={{ fontSize: 10 }}>{file.questionId}</strong><audio controls preload="metadata" src={file.signedUrl} aria-label={`Escuchar respuesta ${file.questionId}`} style={{ width: '100%', marginTop: 5 }} /></div>)}</div></section>
+            <section><h4 style={{ margin: '0 0 6px', fontSize: 11 }}>Speaking · evidencia privada</h4><button type="button" onClick={loadAudio} disabled={audioLoading} style={{ minHeight: 40, marginBottom: 8, border: `1px solid ${A}`, borderRadius: 8, background: audioLoading ? `${A}18` : CARD, color: A, padding: '7px 10px', fontSize: 10, fontWeight: 800, cursor: audioLoading ? 'wait' : 'pointer' }}>{audioLoading ? 'Preparando enlaces privados…' : activeAudio ? 'Renovar enlaces de audio' : 'Cargar audios privados'}</button>{activeAudio?.error && <p role="alert" style={{ color: '#b91c1c', fontSize: 10 }}>{activeAudio.error}</p>}<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 7 }}>{activeAudio?.files.map(file => <div key={file.questionId} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 8 }}><strong style={{ fontSize: 10 }}>{file.questionId}</strong><audio controls preload="metadata" src={file.signedUrl} aria-label={`Escuchar respuesta ${file.questionId}`} style={{ width: '100%', marginTop: 5 }} /></div>)}</div></section>
             <a href={TASK_GUIDE} target="_blank" rel="noreferrer" style={{ color: A, fontSize: 10, fontWeight: 750 }}>Guías públicas TOEFL 2026 de Writing y Speaking (ETS) ↗</a>
             {!active.reviewed_at && <section style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 12 }}><p style={{ color: MUTED, fontSize: 10 }}>Asigna una estimación agregada 0–5 por familia oral después de escuchar toda la evidencia. No se convierte a 1–6.</p><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 10 }}><ScorePicker label="Listen and Repeat" value={repeatScore} onChange={setRepeatScore} /><ScorePicker label="Take an Interview" value={interviewScore} onChange={setInterviewScore} /></div><label style={{ display: 'block', marginTop: 10, fontSize: 11, fontWeight: 750 }}>Evidencia y observaciones<textarea value={notes} onChange={event => setNotes(event.target.value)} rows={5} style={{ display: 'block', width: '100%', marginTop: 4, padding: 9, border: `1px solid ${BORDER}`, borderRadius: 8 }} /></label><button type="button" onClick={save} disabled={saving || repeatScore == null || interviewScore == null} style={{ width: '100%', marginTop: 10, border: 0, borderRadius: 8, background: A, color: '#fff', padding: 10, fontWeight: 800, cursor: 'pointer', opacity: saving ? .65 : 1 }}>{saving ? 'Guardando…' : 'Cerrar revisión TOEFL'}</button></section>}
             <p role="status" aria-live="polite" style={{ margin: 0, color: message.includes('correctamente') ? '#166534' : '#b91c1c', fontSize: 10 }}>{message}</p>

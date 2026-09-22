@@ -49,7 +49,7 @@ const BG     = '#f5f0eb'
 
 function formatDate(iso: string | null) {
   if (!iso) return '—'
-  return new Date(iso).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric' })
+  return new Date(iso).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'America/Bogota' })
 }
 
 function activityStatus(lastActive: string | null): { label: string; color: string; bg: string } {
@@ -267,7 +267,7 @@ function StudentDetail({ student, submissions }: { student: StudentRow; submissi
                       <td style={{ padding: '6px 8px', color: TEXT }}>{s.exam_name} {s.mock_title ? `· ${s.mock_title}` : ''}</td>
                       <td style={{ padding: '6px 8px', fontWeight: 700, color: A }}>{s.total_label ?? '—'}</td>
                       <td style={{ padding: '6px 8px', color: MUTED, whiteSpace: 'nowrap' }}>
-                        {new Date(s.created_at).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                        {new Date(s.created_at).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })}
                       </td>
                     </tr>
                   ))}

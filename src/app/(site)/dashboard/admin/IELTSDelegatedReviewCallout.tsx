@@ -159,7 +159,7 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
             <div>
               <p style={{ margin: 0, color: A, fontSize: 10, fontWeight: 850 }}>{invite.callCode}</p>
-              <p style={{ margin: '3px 0 0', color: MUTED, fontSize: 9 }}>Vence {new Date(invite.expiresAt).toLocaleString('es-CO')}</p>
+              <p style={{ margin: '3px 0 0', color: MUTED, fontSize: 9 }}>Vence {new Date(invite.expiresAt).toLocaleString('es-CO', { timeZone: 'America/Bogota' })}</p>
             </div>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: '#166534', fontSize: 9, fontWeight: 750 }}><ShieldCheck size={13} /> Un solo uso</span>
           </div>

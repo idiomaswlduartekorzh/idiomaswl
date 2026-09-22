@@ -127,9 +127,10 @@ function weekTrend(thisWeek: number, lastWeek: number): string {
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-ES', {
+  return new Date(iso).toLocaleDateString('es-CO', {
     day: '2-digit', month: 'short', year: 'numeric',
     hour: '2-digit', minute: '2-digit',
+    timeZone: 'America/Bogota',
   })
 }
 
@@ -184,7 +185,7 @@ function leadsCsv(leads: LeadRow[]): string {
     l.email ?? '',
     leadExamName(l),
     l.exam_score ?? '',
-    new Date(l.created_at).toLocaleString('es-CO'),
+    new Date(l.created_at).toLocaleString('es-CO', { timeZone: 'America/Bogota' }),
   ])
   return [head, ...rows].map(r => r.map(csvCell).join(',')).join('\n')
 }
@@ -220,10 +221,11 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
     ? data.leads
     : data.leads.filter(l => leadExamName(l) === leadExam)
 
-  const now = new Date()
-  const dateStr = now.toLocaleDateString('es-ES', {
+  const now = new Date(data.generatedAt)
+  const dateStr = now.toLocaleDateString('es-CO', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
     hour: '2-digit', minute: '2-digit',
+    timeZone: 'America/Bogota',
   })
 
   const trend = weekTrend(data.thisWeekCount, data.lastWeekCount)
@@ -447,7 +449,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                               ) : <span style={{ color: MUTED }}>—</span>}
                             </td>
                             <td style={{ padding: '10px 12px', color: MUTED, fontSize: 11, whiteSpace: 'nowrap' }}>
-                              {new Date(lead.created_at).toLocaleString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                              {new Date(lead.created_at).toLocaleString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })}
                             </td>
                             <td style={{ padding: '10px 12px' }}>
                               {waHref ? (

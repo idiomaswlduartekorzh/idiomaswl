@@ -1,10 +1,9 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { ClipboardCheck } from 'lucide-react'
 import { scoreSubmission } from '@/lib/actions/scoreSubmission'
-import { getIeltsSubmissionAudio } from '@/lib/actions/getIeltsSubmissionAudio'
 import { calculateIeltsWritingBand } from '@/lib/ielts/scoring'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { IeltsDelegatedReviewMetadata, IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
@@ -22,8 +21,9 @@ const BAND_OPTIONS = Array.from({ length: 19 }, (_, index) => index / 2)
 type Filter = 'pending' | 'reviewed' | 'all'
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-ES', {
+  return new Date(iso).toLocaleDateString('es-CO', {
     day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit',
+    timeZone: 'America/Bogota',
   })
 }
 
@@ -206,6 +206,7 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
     files: { questionId: string; signedUrl: string }[]
     error: string
   } | null>(null)
+  const [audioLoadingFor, setAudioLoadingFor] = useState<string | null>(null)
 
   const mockOptions = useMemo(() => [...new Set(items.map(item => item.mock_title).filter(Boolean) as string[])].sort(), [items])
   const visibleItems = useMemo(() => items.filter(item => {
@@ -218,29 +219,33 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
   }), [filter, items, mockFilter, search])
   const active = visibleItems.find(item => item.id === selected) ?? visibleItems[0] ?? null
   const activeId = active?.id ?? null
-  const activeAudioSignature = Object.keys(active?.speaking_audio_paths ?? {}).sort().join('|')
-
-  useEffect(() => {
-    let cancelled = false
-    if (!activeId || !activeAudioSignature) return
-    getIeltsSubmissionAudio(activeId).then(result => {
-      if (cancelled) return
-      setAudioResult({
-        submissionId: activeId,
-        files: result.ok ? result.files : [],
-        error: result.ok ? '' : result.error,
-      })
-    }).catch(() => {
-      if (!cancelled) {
-        setAudioResult({ submissionId: activeId, files: [], error: 'No fue posible preparar los audios privados.' })
-      }
-    })
-    return () => { cancelled = true }
-  }, [activeAudioSignature, activeId])
 
   const activeAudioResult = audioResult?.submissionId === activeId ? audioResult : null
   const audioFiles = activeAudioResult?.files ?? []
-  const audioLoading = Boolean(activeAudioSignature && !activeAudioResult)
+  const audioLoading = audioLoadingFor === activeId
+
+  async function loadAudio() {
+    if (!activeId) return
+    const requestedId = activeId
+    setAudioLoadingFor(requestedId)
+    setAudioResult(null)
+    try {
+      const response = await fetch(`/api/admin/ielts/submissions/${encodeURIComponent(requestedId)}/audio`, {
+        credentials: 'same-origin',
+        cache: 'no-store',
+      })
+      const payload = await response.json().catch(() => null) as { files?: { questionId: string; signedUrl: string }[]; error?: string } | null
+      setAudioResult({
+        submissionId: requestedId,
+        files: response.ok && Array.isArray(payload?.files) ? payload.files : [],
+        error: response.ok ? '' : payload?.error ?? 'No fue posible preparar los audios privados.',
+      })
+    } catch {
+      setAudioResult({ submissionId: requestedId, files: [], error: 'No fue posible preparar los audios privados.' })
+    } finally {
+      setAudioLoadingFor(current => current === requestedId ? null : current)
+    }
+  }
 
   function selectItem(item: ExamSubmission) {
     setSelected(item.id)
@@ -389,6 +394,10 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
               {active.speaking_audio_paths && Object.keys(active.speaking_audio_paths).length > 0 && (
                 <section>
                   <h4 style={{ margin: '0 0 6px', fontSize: 11, color: TEXT, textTransform: 'uppercase' }}>Speaking · audios privados</h4>
+                  <button type="button" onClick={loadAudio} disabled={audioLoading}
+                    style={{ minHeight: 40, marginBottom: 8, border: `1px solid ${A}`, borderRadius: 8, background: audioLoading ? `${A}18` : CARD, color: A, padding: '7px 10px', fontSize: 11, fontWeight: 800, cursor: audioLoading ? 'wait' : 'pointer' }}>
+                    {audioLoading ? 'Preparando enlaces privados…' : activeAudioResult ? 'Renovar enlaces de audio' : 'Cargar audios privados'}
+                  </button>
                   {audioLoading && <p style={{ color: MUTED, fontSize: 11 }}>Preparando enlaces privados…</p>}
                   {activeAudioResult?.error && <p role="alert" style={{ color: '#b91c1c', fontSize: 11 }}>{activeAudioResult.error}</p>}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 8 }}>

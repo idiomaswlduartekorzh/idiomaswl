@@ -21,7 +21,7 @@ interface StoredWritingReview { content1?: number; content2?: number; content3?:
 interface StoredSpeakingReview { part1?: number; part2?: number; part3?: number }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+  return new Date(iso).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })
 }
 
 function Picker({ label, values, value, onChange }: { label: string; values: number[]; value: number | null; onChange: (value: number) => void }) {

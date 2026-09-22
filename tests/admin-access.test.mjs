@@ -52,3 +52,17 @@ test('all verified admins use the same operational dashboard without demo studen
   assert.equal(existsSync(new URL('ZhannaDashboardServer.tsx', adminDir)), false);
   assert.doesNotMatch(dashboardSource, /María García|Carlos Ramírez|IELTS Prep/);
 });
+
+test('private IELTS and TOEFL audio routes require an admin and disable caching', () => {
+  const routePaths = [
+    '../src/app/api/admin/ielts/submissions/[submissionId]/audio/route.ts',
+    '../src/app/api/admin/toefl/submissions/[submissionId]/audio/route.ts',
+  ];
+
+  for (const routePath of routePaths) {
+    const source = readFileSync(new URL(routePath, import.meta.url), 'utf8');
+    assert.match(source, /await requireAdmin\(\)/);
+    assert.match(source, /private, no-store/);
+    assert.match(source, /submission_status.*submitted/s);
+  }
+});

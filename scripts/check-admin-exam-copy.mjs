@@ -68,4 +68,13 @@ assert.match(auditRoute, /private, no-store/, 'the batch audit endpoint must nev
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /scoreIeltsObjectiveAnswers/, 'the audit must recalculate objective answers from the canonical key')
 assert.match(read('src/lib/ielts/submission-audit.server.ts'), /IELTS_SPEAKING_BUCKET/, 'the audit must verify private speaking audio')
 
+for (const routePath of [
+  'src/app/api/admin/ielts/submissions/[submissionId]/audio/route.ts',
+  'src/app/api/admin/toefl/submissions/[submissionId]/audio/route.ts',
+]) {
+  const audioRoute = read(routePath)
+  assert.match(audioRoute, /await requireAdmin\(\)/, `${routePath} must require a server-authorized admin`)
+  assert.match(audioRoute, /private, no-store/, `${routePath} must never cache signed student audio URLs`)
+}
+
 console.log('✓ Todos los administradores comparten el centro operativo, las cuentas estudiantiles siguen aisladas y los exámenes usan lenguaje académico neutral.')

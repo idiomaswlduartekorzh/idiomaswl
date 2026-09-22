@@ -63,6 +63,7 @@ export interface LeadRow {
 }
 
 export interface DashboardData {
+  generatedAt: string
   submissions: ExamSubmission[]
   totalCount: number
   thisWeekCount: number
@@ -399,6 +400,7 @@ export default async function JoseDashboardServer() {
     .slice(0, 300)
 
   const dashboardData: DashboardData = {
+    generatedAt: now.toISOString(),
     submissions: rows,
     totalCount,
     thisWeekCount,
