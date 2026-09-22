@@ -91,4 +91,11 @@ create policy "progress_select_admin"
     )
   );
 
+-- Keep administrative accounts out of student totals and preserve compatibility
+-- with older role-aware policies. The application still authorizes admins from
+-- its server-owned email allowlist, never from this editable profile field.
+update public.profiles
+set role = 'admin'::public.user_role
+where lower(email) = 'zhanna.duarte@mail.ru';
+
 commit;
