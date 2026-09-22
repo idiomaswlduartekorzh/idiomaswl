@@ -8,17 +8,17 @@
  * accept the user-editable `profiles.role` field as a substitute.
  */
 
-/** Full administrators — both receive the owner dashboard and every admin action. */
+/** Platform-owner administrators — receive the owner dashboard and every admin action. */
 export const JOSE_EMAILS = [
-  'zhanna.duarte@mail.ru',
   'josedavidduartesilva@gmail.com',
   'david.duartes182@gmail.com',
   // Legacy work email kept for backward compat
   'jose@welearn.com',
 ] as const;
 
-/** Legacy teacher accounts kept for backward-compatible limited access. */
+/** Zhanna's academic-admin accounts — receive the limited academic dashboard. */
 export const ZHANNA_EMAILS = [
+  'zhanna.duarte@mail.ru',
   'zhanna.korzh@gmail.com',
   // Legacy work email kept for backward compat
   'zhanna@welearn.com',
