@@ -1,0 +1,67 @@
+{
+  "order": {
+    "schemaVersion": 1,
+    "set": 1,
+    "run": "golden-1",
+    "baseCommit": "a1f55f8fe5d03571701ec0b7aafbee448a309f46",
+    "fingerprints": {
+      "blueprint": "91d502db39abc8a5fd0e121d48c0022e8524fcfeb2f63fb12ad4f2e118fefbfb",
+      "sources": "cd113739318769f55c0bb7bcdf7a3e9fc59643ca5ce94b97b1b6f3c0cfe86567",
+      "ledger": "a0074ffe0999396d2bf7ac0569a067e683c85e60b8991f526d0ccadbf970fad4",
+      "prompts": "d64b674f5d3499eb9f30ab673a0dd82bfd7e55b2b165b344cd4559ec0ce6dee2",
+      "harness": "1df65b490f76dd6adca9a79f410b28a42623b177d2dd1a73234dd8dd7fd89489"
+    },
+    "topicReservation": {
+      "set": 1,
+      "status": "reserved",
+      "domains": [
+        "repair cooperative",
+        "city library services",
+        "neighbourhood workshop"
+      ],
+      "places": [
+        "Leipzig",
+        "Halle"
+      ],
+      "interaction": "coordinate a shared appointment",
+      "forbiddenCarryover": [
+        "generic cinema cancellation",
+        "generic language-course registration"
+      ]
+    },
+    "requiredStages": [
+      "coordinator",
+      "spec-guardian",
+      "listening-author",
+      "reading-author",
+      "productive-author",
+      "key-auditor",
+      "language-auditor",
+      "originality-auditor",
+      "media-director",
+      "audio-planner",
+      "integrator",
+      "ux-reviewer",
+      "release-warden"
+    ],
+    "releaseTarget": "AUDIO_BLOCKED"
+  },
+  "candidate": null,
+  "reports": {
+    "work-order.json": null,
+    "spec.json": null,
+    "listening.json": null,
+    "reading.json": null,
+    "productive.json": null,
+    "key-audit.json": null,
+    "language.json": null,
+    "originality.json": null,
+    "media.json": null,
+    "audio-plan.json": null,
+    "integration.json": null,
+    "ux.json": null,
+    "release.json": null
+  },
+  "derivedState": "NEEDS_DRAFT",
+  "note": "Audio generation is outside this scaffold and remains blocked."
+}
