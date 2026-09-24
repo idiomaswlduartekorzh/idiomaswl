@@ -40,7 +40,7 @@ variables. Orden, pruebas de permisos y reversión:
 ## Expansión Goethe A1 a diez sets — 24 de septiembre de 2026
 
 `codex/goethe-a1-sets-8-10` parte de `origin/main` en `57fcb34b`.
-Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: sets originales A1 8–10,
+Estado: `DESPLEGADO`. Responsable: Codex. Alcance: sets originales A1 8–10,
 catálogo de examen y práctica por destreza, imágenes, scoring, guiones y fábrica de
 audio. Compartidos: `package.json`, registros centrales de mocks y este documento.
 No requiere migraciones ni variables nuevas. Dependencia externa: créditos de
@@ -51,6 +51,14 @@ práctica por Teil, PDFs estudiantiles, catálogo protegido, TypeScript, prebuil
 global y build Webpack de 2.563 páginas; smoke local 200 en hub, biblioteca,
 Lesen del set 8 y Sprechen del set 10, con redirecciones protegidas para Hören y
 los simulacros sin audio. Decisión de integración: `MERGE` desde la base vigente.
+La rama quedó respaldada en GitHub y se integró por fast-forward en `main` como
+`05ae3e5e`. Vercel publicó ese commit desde `main` en el deployment
+[`Bi5txHMcTQSfgjFZhnxQ3Wc6k14p`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/Bi5txHMcTQSfgjFZhnxQ3Wc6k14p),
+estado `success` a las 22:13:54 UTC. El smoke público devolvió HTTP 200 en el hub,
+la portada y las bibliotecas Goethe, Lesen Set 8, Schreiben Set 9 y Sprechen Set 10;
+la imagen de tarjetas del Set 10 respondió `image/png`. El catálogo mostró Set 10
+y `Audio pendiente`, Hören no enlazó los sets 8–10 y las rutas directas sin audio
+emitieron los meta-redireccionamientos protegidos esperados.
 Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 [`GOETHE-A1-SETS-8-10.md`](GOETHE-A1-SETS-8-10.md).
 
