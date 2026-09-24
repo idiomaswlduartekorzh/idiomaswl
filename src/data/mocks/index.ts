@@ -5,6 +5,7 @@ import { withToefl2026FixedForm } from './toefl-fixed-form';
 import { withIeltsListeningProductionTranscript } from './ielts-listening-production';
 import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
 import { withIeltsBalancedChoicePositions } from './ielts-choice-presentation';
+import { isGoetheA2Held } from '@/lib/goethe/a2-release';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -367,6 +368,9 @@ export function getMock(examSlug: string, mockId: string): MockExam | null {
   // Editorial hold: these drafts must not be served by direct routes, guided
   // routes, grading or paid-detail APIs until provenance and approval close.
   if (examSlug === 'icfes' && ['mock-21', 'mock-22', 'mock-23'].includes(mockId)) return null;
+  // The historical Goethe A2 files are incomplete scaffolds. Keep every access
+  // path fail-closed until a fingerprinted A2 release satisfies all gates.
+  if (examSlug === 'goethe' && isGoetheA2Held(mockId)) return null;
   const mock = MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
   if (!mock) return null;
 

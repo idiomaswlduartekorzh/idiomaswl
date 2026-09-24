@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://welearn.com.co/schemas/goethe-a2-report.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "set", "stage", "candidateFingerprint", "reviewer", "status", "findings", "reviewedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "set": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "stage": { "type": "string", "minLength": 1 },
+    "candidateFingerprint": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "reviewer": { "type": "object", "required": ["id", "kind"], "properties": { "id": { "type": "string", "minLength": 1 }, "kind": { "enum": ["agent", "human"] } } },
+    "status": { "enum": ["PASS", "FAIL"] },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "reviewedAt": { "type": "string", "format": "date-time" }
+  }
+}

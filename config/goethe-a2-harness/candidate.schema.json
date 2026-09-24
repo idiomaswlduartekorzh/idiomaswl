@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://welearn.com.co/schemas/goethe-a2-candidate.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "set", "candidateFingerprint", "reading", "listening", "writing", "speaking", "provenance"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "set": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "candidateFingerprint": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "reading": { "type": "array", "minItems": 4, "maxItems": 4 },
+    "listening": { "type": "array", "minItems": 4, "maxItems": 4 },
+    "writing": { "type": "array", "minItems": 2, "maxItems": 2 },
+    "speaking": { "type": "array", "minItems": 3, "maxItems": 3 },
+    "provenance": {
+      "type": "object",
+      "required": ["originalWeLearn", "officialSourcesUsedForArchitectureOnly"],
+      "properties": {
+        "originalWeLearn": { "const": true },
+        "officialSourcesUsedForArchitectureOnly": { "const": true }
+      }
+    }
+  }
+}
