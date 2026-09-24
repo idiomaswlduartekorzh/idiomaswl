@@ -45,7 +45,20 @@ test('mocks can finish while private persistence is disabled', () => {
   const route = read('src/app/api/icfes/attempts/grade/route.ts');
   assert.match(route, /if \(!isIcfesPersistenceEnabled\(\)\) return json\(\{ ok: true, result \}\)/);
   assert.match(route, /if \(!persisted\) return json\(\{ ok: false/);
+  assert.match(route, /await persistIcfesSubmissionSummary\(/);
+  assert.ok(route.indexOf('persistIcfesSubmissionSummary(') < route.indexOf('if (!isIcfesPersistenceEnabled())'));
   assert.ok(route.indexOf('if (!isIcfesPersistenceEnabled())') < route.indexOf('persistIcfesAttempt('));
+});
+
+test('every secure completion stores a safe admin summary without answers', () => {
+  const persistence = read('src/lib/icfes/grading.server.ts');
+  const summary = persistence.slice(persistence.indexOf('export async function persistIcfesSubmissionSummary'), persistence.indexOf('export function buildPremiumQuestions'));
+  assert.match(summary, /from\('exam_submissions'\)\.upsert\(/);
+  assert.match(summary, /id: input\.result\.attemptId/);
+  assert.match(summary, /exam_slug: 'icfes'/);
+  assert.match(summary, /submission_status: 'submitted'/);
+  assert.match(summary, /skills: input\.result\.bySkill\.map/);
+  assert.doesNotMatch(summary, /input\.answers|answers:|answer_key|access_token/);
 });
 
 test('lead is mandatory and saved before the score-only result is released', () => {
@@ -55,11 +68,26 @@ test('lead is mandatory and saved before the score-only result is released', () 
   assert.ok(flow.indexOf('data-testid="icfes-lead-gate"') < flow.indexOf('data-testid="icfes-result-offers"'));
   assert.match(flow, /required checked=\{leadConsent\}/);
   assert.match(flow, /const saved = await saveLead/);
+  assert.match(flow, /source: 'icfes-practica'/);
+  assert.match(flow, /event: 'lead_simulacro'/);
   assert.ok(flow.indexOf('if (!saved.ok)') < flow.indexOf("setStep('offers')"));
   const releasedResult = flow.slice(flow.indexOf('data-testid="icfes-result-offers"'));
   assert.match(releasedResult, /\{result\.correct\}<span>\/\{result\.total\}<\/span>/);
   assert.doesNotMatch(releasedResult, /result\.(?:percentage|byPart|bySkill|recommendation)/);
   assert.doesNotMatch(flow, /Dejar tus datos es opcional/);
+});
+
+test('admin includes both current and legacy ICFES lead sources', () => {
+  const dashboard = read('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx');
+  assert.match(dashboard, /source\.like\.\*-practica/);
+  assert.match(dashboard, /source\.eq\.icfes-post-result-gate-v1/);
+  assert.match(dashboard, /\.in\('source', \['simulacro', 'icfes-post-result-gate-v1'\]\)/);
+});
+
+test('ICFES resource count is derived from the catalog', () => {
+  const hero = read('src/app/(site)/examenes/[exam]/ExamInfoGraphic.tsx');
+  assert.match(hero, /label: 'Recursos únicos', value: String\(exam\.mocks\.length \+ 1\)/);
+  assert.doesNotMatch(hero, /label: 'Recursos únicos', value: '34'/);
 });
 
 test('post-exam screen reuses the reviewed Xpress products and preserves their scope', () => {

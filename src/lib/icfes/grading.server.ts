@@ -60,6 +60,44 @@ export async function persistIcfesAttempt(input: {
   return true;
 }
 
+/**
+ * Stores the non-sensitive completion summary used by the shared admin dashboard.
+ * This is deliberately independent from ICFES_PERSISTENCE_ENABLED: that flag protects
+ * the private answer payload and paid report, while operations still need to know that
+ * a mock was completed. Answers and answer keys never enter exam_submissions.
+ */
+export async function persistIcfesSubmissionSummary(input: {
+  examId: string;
+  examTitle: string;
+  result: IcfesBasicResultDto;
+}): Promise<void> {
+  const { data: { user } } = await (await createClient()).auth.getUser();
+  const displayName = typeof user?.user_metadata?.full_name === 'string'
+    ? user.user_metadata.full_name.trim().slice(0, 256)
+    : user?.email ?? null;
+  const { error } = await createAdminClient().from('exam_submissions').upsert({
+    id: input.result.attemptId,
+    user_id: user?.id ?? null,
+    user_email: user?.email ?? null,
+    user_name: displayName || null,
+    exam_slug: 'icfes',
+    exam_name: 'ICFES Saber 11 Inglés',
+    mock_id: input.examId,
+    mock_title: input.examTitle.slice(0, 128),
+    total_score: input.result.correct,
+    total_max: input.result.total,
+    total_label: `${input.result.correct}/${input.result.total} correctas`,
+    skills: input.result.bySkill.map((row) => ({
+      skill: row.label,
+      score: row.percentage,
+      max: 100,
+      label: `${row.correct}/${row.total}`,
+    })),
+    submission_status: 'submitted',
+  }, { onConflict: 'id' });
+  if (error) throw new Error('No pudimos registrar el simulacro en el panel administrativo.');
+}
+
 export function buildPremiumQuestions(examId: string, answers: IcfesAnswerMap): IcfesPremiumQuestionDto[] | null {
   const found = getIcfesSecureExam(examId);
   if (!found || found.officialResource) return null;

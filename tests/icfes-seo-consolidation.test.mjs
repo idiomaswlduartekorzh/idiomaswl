@@ -21,7 +21,7 @@ const historicalBanks = read('src/data/mocks/icfes-simulacros.ts');
 const blog = read('src/data/blog.ts');
 
 test('the primary hub owns the simulacro ICFES Inglés intent and direct CTA', () => {
-  assert.match(hubPage, /Simulacro ICFES Inglés gratis: 34 recursos Saber 11/);
+  assert.match(hubPage, /Simulacro ICFES Inglés gratis: \$\{icfesResources\} recursos Saber 11/);
   for (const query of ['simulacro ICFES inglés', 'simulacro inglés ICFES', 'simulacro de inglés ICFES', 'cuadernillos ICFES inglés']) {
     assert.ok(hubPage.includes(query), `Missing query variant: ${query}`);
   }
@@ -30,7 +30,7 @@ test('the primary hub owns the simulacro ICFES Inglés intent and direct CTA', (
   assert.match(hubPage, /canonical: `https:\/\/www\.idiomaswl\.com\/examenes\/\$\{slug\}`/);
 });
 
-test('34 unique resources produce 62 routes or modes without becoming 62 exams', () => {
+test('31 unique resources produce 56 routes or modes without becoming 56 exams', () => {
   const catalogBlock = examCatalog.match(/icfes:\s*\{[\s\S]*?\n\s*available:\s*true,\n\s*\},/)?.[0] ?? '';
   const catalogIds = [...catalogBlock.matchAll(/\{ id: '([^']+)'/g)].map((match) => match[1]);
   const ownIds = catalogIds.filter((id) => /^mock-\d+$/.test(id));
@@ -38,20 +38,20 @@ test('34 unique resources produce 62 routes or modes without becoming 62 exams',
   const guidedMockIds = guidedRegistry.match(/GUIDED_MOCK_IDS\s*=\s*\[([\s\S]*?)\]\s*as const/)?.[1].match(/mock-\d+/g) ?? [];
   const guidedWorkbookIds = guidedRegistry.match(/GUIDED_WORKBOOK_IDS\s*=\s*\[([\s\S]*?)\]\s*as const/)?.[1].match(/icfes-[\w-]+/g) ?? [];
 
-  assert.equal(catalogIds.length, 33);
-  assert.equal(new Set(catalogIds).size, 33);
-  assert.equal(ownIds.length, 23);
+  assert.equal(catalogIds.length, 30);
+  assert.equal(new Set(catalogIds).size, 30);
+  assert.equal(ownIds.length, 20);
   assert.equal(publishedIds.length, 10);
 
   const uniqueResources = catalogIds.length + 1;
   const modes = uniqueResources + guidedMockIds.length + guidedWorkbookIds.length;
-  assert.equal(uniqueResources, 34);
-  assert.equal(modes, 62);
-  assert.match(grid, /34 recursos distintos/);
-  assert.match(grid, /62 rutas o modos de uso, pero no 62 exámenes diferentes/);
+  assert.equal(uniqueResources, 31);
+  assert.equal(modes, 56);
+  assert.match(grid, /\{icfesUniqueResources\} recursos distintos/);
+  assert.match(grid, /existen \{icfesModes\} rutas o modos de uso, pero no \{icfesModes\} exámenes diferentes/);
   assert.match(grid, /Ver las \$\{group\.mocks\.length - INITIAL_VISIBLE_MOCKS\} prácticas propias restantes/);
   assert.match(grid, /Ver los \$\{group\.mocks\.length - INITIAL_VISIBLE_MOCKS\} bancos restantes/);
-  assert.match(guide, /Por qué ves 62 rutas, pero solo 34 recursos/);
+  assert.match(guide, /Por qué ves 56 rutas, pero solo 31 recursos/);
 });
 
 test('structured data and crawl controls reflect the public canonical inventory', () => {

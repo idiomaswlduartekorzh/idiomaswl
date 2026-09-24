@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getIcfesSecureExam } from '@/lib/icfes/exam-registry.server';
-import { gradeIcfesAttempt, persistIcfesAttempt } from '@/lib/icfes/grading.server';
+import { gradeIcfesAttempt, persistIcfesAttempt, persistIcfesSubmissionSummary } from '@/lib/icfes/grading.server';
 import { validateIcfesAnswers } from '@/lib/icfes/attempt-contract';
 import { ICFES_ATTEMPT_COOKIE, verifyIcfesAttemptToken } from '@/lib/icfes/attempt-token.server';
 import { isIcfesPersistenceEnabled } from '@/lib/icfes/product-config.server';
@@ -29,8 +29,16 @@ export async function POST(request: Request): Promise<Response> {
   if (!answers) return json({ ok: false, error: 'Las respuestas no corresponden a este simulacro.' }, 400);
   const result = gradeIcfesAttempt(examId, payload.attemptId, answers);
   if (!result) return json({ ok: false, error: 'No fue posible calificar el intento.' }, 404);
+  try {
+    await persistIcfesSubmissionSummary({ examId, examTitle: found.exam.title, result });
+  }
+  catch (error) {
+    console.error('[icfes-grade] admin summary persistence failed:', error instanceof Error ? error.message : 'unknown');
+    return json({ ok: false, error: 'No pudimos registrar el resultado. Intenta nuevamente.' }, 503);
+  }
   // Mocks remain usable until the private attempt schema is approved and enabled.
-  // No attempt cookie is issued because there is no persisted paid report to access.
+  // The admin summary above is always stored, but no attempt cookie is issued because
+  // there is no persisted paid report to access while private persistence is disabled.
   if (!isIcfesPersistenceEnabled()) return json({ ok: true, result });
   try {
     const persisted = await persistIcfesAttempt({ attemptId: payload.attemptId, examId, token: String(body.attemptToken), answers, result });

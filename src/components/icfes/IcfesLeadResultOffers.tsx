@@ -93,6 +93,7 @@ export default function IcfesLeadResultOffers({
   const [leadConsent, setLeadConsent] = useState(false);
   const [purchaseConsent, setPurchaseConsent] = useState(false);
   const [savingLead, setSavingLead] = useState(false);
+  const [leadSaved, setLeadSaved] = useState(false);
   const [busyOffer, setBusyOffer] = useState<XpressOfferId | null>(null);
   const [message, setMessage] = useState('');
   const leadSavedRef = useRef(false);
@@ -135,11 +136,18 @@ export default function IcfesLeadResultOffers({
           whatsapp: whatsapp.trim(),
           examSlug: 'icfes',
           examScore: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
-          source: 'icfes-post-result-gate-v1',
+          source: 'icfes-practica',
         });
         if (!saved.ok) throw new Error(saved.error ?? 'No pudimos guardar tus datos.');
         leadSavedRef.current = true;
+        setLeadSaved(true);
         trackIcfesEvent('icfes_lead_submit', { mock_id: result.examId, lead_context: 'post_exam_required' });
+        window.dataLayer = window.dataLayer ?? [];
+        window.dataLayer.push({
+          event: 'lead_simulacro',
+          exam_slug: 'icfes',
+          exam_score: `${result.correct}/${result.total} correctas (${result.percentage}%)`,
+        });
       }
       if (accessCode.trim() && codeReportAvailable) {
         const access = await redeemExamAccessCodeFromBrowser({ code: accessCode, examSlug: 'icfes', attemptRef: result.attemptId });
@@ -239,7 +247,7 @@ export default function IcfesLeadResultOffers({
             </label>
             {message && <p className={styles.error} role="alert">{message}</p>}
             <button className={styles.primaryButton} disabled={savingLead}>{savingLead ? 'Validando acceso…' : accessCode.trim() ? 'Guardar y validar código' : 'Guardar y ver mi puntaje'}</button>
-            {leadSavedRef.current && message && <button type="button" className={styles.textButton} onClick={() => setStep('offers')}>Continuar sin código</button>}
+            {leadSaved && message && <button type="button" className={styles.textButton} onClick={() => setStep('offers')}>Continuar sin código</button>}
           </form>
           <p className={styles.privacy}>Tus respuestas permanecen privadas. Nunca enviamos respuestas ni datos personales a herramientas de analítica.</p>
         </section>
