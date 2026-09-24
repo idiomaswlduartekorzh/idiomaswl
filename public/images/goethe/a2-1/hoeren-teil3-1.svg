@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220"><rect width="720" height="220" fill="#fff"/><g fill="none" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M45 20h190v180H45zM265 20h190v180H265zM485 20h190v180H485z" stroke-width="3"/><path d="M85 105h78l28 22-20 26-35-25H85zM98 153v25M160 72l28 18-17 31"/><path d="M320 175l50-120 50 120M337 135h66M348 108h44M360 80h20"/><path d="M535 85h90v68h-90zM550 70h60M550 105h60M565 153v22M595 153v22"/></g><g font-family="Arial" font-size="24" font-weight="700"><text x="58" y="52">A</text><text x="278" y="52">B</text><text x="498" y="52">C</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" role="img" aria-labelledby="title desc">
+  <title id="title">Bohrmaschine, Leiter oder Nähmaschine</title>
+  <desc id="desc">Drei illustrierte Antwortmöglichkeiten: Bohrmaschine, Leiter und Nähmaschine.</desc>
+  <image href="hoeren-teil3-1-art.jpg" width="2172" height="724"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="#17212b">
+    <g><rect x="28" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="61" y="66">A</text></g>
+    <g><rect x="752" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="785" y="66">B</text></g>
+    <g><rect x="1476" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1509" y="66">C</text></g>
+  </g>
+</svg>

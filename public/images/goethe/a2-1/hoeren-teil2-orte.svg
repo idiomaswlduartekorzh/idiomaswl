@@ -1,14 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
-  <title id="title">Neun Orte, A bis I</title><desc id="desc">Einfache schwarz-weiße Prüfungsillustrationen eines Cafés, einer Bäckerei, eines Markts, einer Fahrradwerkstatt, eines Parks, einer Straßenbahnhaltestelle, einer Apotheke, einer Bibliothek und einer Post.</desc>
-  <rect width="900" height="600" fill="#fff"/><g fill="none" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M15 15h270v170H15zM315 15h270v170H315zM615 15h270v170H615zM15 215h270v170H15zM315 215h270v170H315zM615 215h270v170H615zM15 415h270v170H15zM315 415h270v170H315zM615 415h270v170H615z" stroke-width="3"/>
-    <path d="M90 80h90v55H90zM180 90h25v35h-25M105 65h60M115 145h70"/><path d="M390 78h120v70H390zM380 78l18-30h104l18 30M405 105h32v43M455 105h35"/>
-    <path d="M675 85h150M690 85v65M735 85v65M780 85v65M670 85l20-32h115l20 32M702 118h28M758 118h28"/>
-    <circle cx="95" cy="320" r="30"/><circle cx="205" cy="320" r="30"/><path d="M95 320l45-48 32 48h33M140 272h38l27 48M140 272l-18 48M125 260h32M205 272h30v70"/>
-    <path d="M365 345h170M405 345v-72M485 345v-95M375 294h70M450 272h75M430 345v25M470 345v25"/><circle cx="405" cy="250" r="24"/><circle cx="485" cy="225" r="28"/>
-    <path d="M670 330h160M700 330v35M800 330v35M710 280h80l25 50H685zM735 280v-35h30v35M700 345h100"/>
-    <path d="M85 475h130v80H85zM150 455v120M105 515h90"/><path d="M130 485h40M150 465v40"/>
-    <path d="M370 550h160V480H370zM355 480l95-45 95 45M400 505h20v45M440 505h20v45M480 505h20v45"/>
-    <path d="M690 470h120v90H690zM675 470l75-35 75 35M715 500h70M715 525h70M735 470v90"/>
-  </g><g font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#111827"><text x="30" y="48">A</text><text x="330" y="48">B</text><text x="630" y="48">C</text><text x="30" y="248">D</text><text x="330" y="248">E</text><text x="630" y="248">F</text><text x="30" y="448">G</text><text x="330" y="448">H</text><text x="630" y="448">I</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Neun Orte für die Hörübung</title>
+  <desc id="desc">Café, Bäckerei, Markt, Fahrradwerkstatt, Park, Straßenbahnhaltestelle, Apotheke, Bibliothek und Post.</desc>
+  <image href="hoeren-teil2-orte-art.jpg" width="1536" height="1024"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#17212b">
+    <g><rect x="34" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="65">A</text></g>
+    <g><rect x="546" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="65">B</text></g>
+    <g><rect x="1058" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="65">C</text></g>
+    <g><rect x="34" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="407">D</text></g>
+    <g><rect x="546" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="407">E</text></g>
+    <g><rect x="1058" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="407">F</text></g>
+    <g><rect x="34" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="748">G</text></g>
+    <g><rect x="546" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="748">H</text></g>
+    <g><rect x="1058" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="748">I</text></g>
+  </g>
 </svg>

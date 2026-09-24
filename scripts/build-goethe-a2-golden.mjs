@@ -23,4 +23,4 @@ if (process.argv.includes('--write')) {
   fs.writeFileSync(path.join(root, 'src/data/mocks/goethe-a2-set-1-audio.json'), `${JSON.stringify(audioPlan, null, 2)}\n`);
   fs.writeFileSync(path.join(audioRoot, 'manifest.json'), `${JSON.stringify(audioPlan, null, 2)}\n`);
 }
-console.log(`✓ Goethe A2 golden set: 13 parts · 45 responses · ${golden.media.assets.length} vector assets · audio blocked`);
+console.log(`✓ Goethe A2 golden set: 13 parts · 45 responses · ${golden.media.assets.length} visual assets · audio blocked`);
