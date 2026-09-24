@@ -194,7 +194,7 @@ for (const asset of imageManifest.assets) {
 assert.equal(release.releaseGates.audio, 'ready-19-of-19');
 assert.equal(release.releaseGates.serverScoring, 'ready');
 assert.equal(release.releaseGates.production, 'ready-for-main');
-assert.match(pageSource, /\/\^a1-\[1-7\]\$\/\.test\(mockId\)/, 'Set 2 must use the approved Goethe A1 runner');
+assert.ok(pageSource.includes("/^a1-(?:[1-9]|10)$/.test(mockId)"), 'all ten A1 sets must use the approved Goethe runner');
 assert.match(runnerSource, /mock\.id/, 'the approved runner must resolve media and labels by mock id');
 assert.doesNotMatch(runnerSource, /Transkript als Beleg/);
 assert.match(runnerSource, /practiceSkill === 'listening' && <ObjectiveReview[^>]+showListeningEvidence/, 'guided Hören must expose transcript evidence only after practice');
@@ -202,10 +202,10 @@ assert.match(runnerSource, /<ObjectiveReview mock=\{mock\} skill="listening" ans
 assert.doesNotMatch(runnerSource, /Antwortübersicht/, 'exam mode must not expose an answer sheet before submission');
 assert.doesNotMatch(runnerSource, /window\.print/);
 assert.match(runnerSource, /function ReadingAdPair/, 'Set 2 Anzeigen need an integrated A/B advert renderer');
-assert.match(runnerSource, /renderReadingAdCards=\{\/\^a1-\[1-7\]\$\/\.test\(mock\.id\)\}/, 'all published Goethe A1 sets must use the compact advert renderer');
+assert.ok(runnerSource.includes("renderReadingAdCards={/^a1-(?:[1-9]|10)$/.test(mock.id)}"), 'all published Goethe A1 sets must use the compact advert renderer');
 assert.match(runnerStyles, /\.readingAdGrid/, 'the compact advert layout is missing');
 assert.match(runnerStyles, /\.readingAdThumb/, 'the photographic advert header is missing');
-assert.match(adminSource, /\.in\('mock_id', \['a1-1', 'a1-2', 'a1-3', 'a1-4', 'a1-5', 'a1-6', 'a1-7'\]\)/, 'admin review queue must include all published Goethe A1 sets');
+assert.match(adminSource, /\.in\('mock_id', \['a1-1', 'a1-2', 'a1-3', 'a1-4', 'a1-5', 'a1-6', 'a1-7', 'a1-8', 'a1-9', 'a1-10'\]\)/, 'admin review queue must include all published Goethe A1 sets');
 assert.match(reviewSource, /goetheA1Set2/, 'human review must resolve the Set 2 answer key');
 
 console.log('✓ Goethe A1 Set 2: 11 partes · Hören 6+4+5 · Lesen 5+5+5 · Schreiben 5+10 · Sprechen 3+6+6');

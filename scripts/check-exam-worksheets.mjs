@@ -12,7 +12,7 @@ const skills = ['listening', 'reading', 'writing', 'speaking'];
 let checked = 0;
 
 for (const [exam, ids] of [
-  ['goethe', Array.from({ length: 7 }, (_, index) => `a1-${index + 1}`)],
+  ['goethe', Array.from({ length: 10 }, (_, index) => `a1-${index + 1}`)],
   ['toefl', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
   ['ielts', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
 ]) {

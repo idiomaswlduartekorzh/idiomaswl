@@ -101,7 +101,7 @@ export function buildGoetheA1Set(content: GoetheA1SetContent): MockExam {
 
 export function buildGoetheA1AudioManifest(content: GoetheA1SetContent) {
   return {
-    version: `2026-09-12-audio-set-${content.number}`,
+    version: `${content.number >= 8 ? '2026-09-24' : '2026-09-12'}-audio-set-${content.number}`,
     locale: 'de-DE',
     status: 'script-ready-audio-blocked',
     production: { provider: 'ElevenLabs', generateLast: true, manifest: `/audio/goethe/a1-${content.number}/manifest.json`, cueFrequenciesHz: [990, 831, 698], cueDurationSeconds: 2.1, targetLufs: -18, format: 'mp3 mono 44.1 kHz 64 kbps' },

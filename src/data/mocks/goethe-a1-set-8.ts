@@ -1,5 +1,5 @@
 import { buildGoetheA1AudioManifest, buildGoetheA1Set } from './goethe-a1-set-builder';
-import { getGoetheA1SetContent } from './goethe-a1-sets-3-8-content';
+import { getGoetheA1SetContent } from './goethe-a1-sets-3-10-content';
 
 const content = getGoetheA1SetContent(8);
 export const audioManifest = buildGoetheA1AudioManifest(content);

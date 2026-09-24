@@ -1,4 +1,5 @@
 import type { MockExam, MockSection } from '@/data/mocks/types';
+import { goethePracticeSetNumbers } from './release';
 
 export type GoethePracticeSkill = 'listening' | 'reading' | 'writing' | 'speaking';
 export type GoethePracticeTeil = 1 | 2 | 3;
@@ -52,8 +53,10 @@ export function goethePracticeHref(mockId: string, skill: GoethePracticeSkill, t
 }
 
 export function nextGoethePractice(mockId: string, skill: GoethePracticeSkill, teil?: GoethePracticeTeil) {
-  const setNumber = Number(mockId.match(/^a1-([1-7])$/)?.[1]);
-  if (!setNumber) return undefined;
+  const setNumber = Number(mockId.match(/^a1-(\d+)$/)?.[1]);
+  const availableSets = goethePracticeSetNumbers(skill);
+  const setIndex = availableSets.indexOf(setNumber);
+  if (setIndex < 0) return undefined;
 
   const nextTeil = teil === undefined
     ? undefined
@@ -61,9 +64,9 @@ export function nextGoethePractice(mockId: string, skill: GoethePracticeSkill, t
   if (nextTeil) {
     return { href: goethePracticeHref(mockId, skill, nextTeil), label: `Continuar con Teil ${nextTeil}` };
   }
-  if (setNumber === 7) return undefined;
+  const nextSet = availableSets[setIndex + 1];
+  if (!nextSet) return undefined;
 
-  const nextSet = setNumber + 1;
   return {
     href: goethePracticeHref(`a1-${nextSet}`, skill, teil === undefined ? undefined : 1),
     label: `Continuar con Set ${nextSet}${teil === undefined ? '' : ' · Teil 1'}`,

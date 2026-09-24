@@ -69,7 +69,7 @@ export const EXAMENES: Examen[] = [
   { code: 'toefl', name: 'TOEFL', lang: 'Inglés · iBT', sessions: '8 semanas', mock: '12 simulacros', focus: 'Academic' },
   { code: 'ielts', name: 'IELTS', lang: 'Inglés · Academic & General', sessions: '8 semanas', mock: '10 simulacros', focus: 'Band 7+' },
   { code: 'icfes', name: 'ICFES', lang: 'Inglés · Saber 11', sessions: '12 semanas', mock: '20 simulacros', focus: 'Colombia' },
-  { code: 'goethe', name: 'Goethe', lang: 'Alemán · A1 – C2', sessions: '10 semanas', mock: '8 simulacros', focus: 'Zertifikat' },
+  { code: 'goethe', name: 'Goethe', lang: 'Alemán · A1 – C2', sessions: '10 semanas', mock: '10 simulacros', focus: 'Zertifikat' },
   { code: 'delf', name: 'DELF/DALF', lang: 'Francés · A1 – C2', sessions: '10 semanas', mock: '8 simulacros', focus: 'Officiel' },
   { code: 'cils', name: 'CILS', lang: 'Italiano · A1 – C2', sessions: '10 semanas', mock: '6 simulacros', focus: 'Certificazione' },
 ];

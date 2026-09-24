@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, BookOpenCheck, Headphones, Mic2, PenLine } from 
 import { notFound } from 'next/navigation';
 
 import { GOETHE_PRACTICE_TEILE } from '@/lib/goethe/practice';
+import { GOETHE_A1_AUDIO_READY_SETS, GOETHE_A1_SET_COUNT, goethePracticeSetNumbers } from '@/lib/goethe/release';
 import styles from '../../toefl/ios.module.css';
 
 const skillConfig = {
@@ -59,9 +60,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const config = skillConfig[skill as Skill];
   if (!config) return {};
   const canonical = `https://www.idiomaswl.com/practica/goethe/${skill}`;
+  const setCount = goethePracticeSetNumbers(skill as Skill).length;
   return {
-    title: `Práctica Goethe A1 ${config.label}: 7 ejercicios guiados`,
-    description: `${config.workload}. Elige uno de siete sets originales de WeLearn para practicar ${config.label} de forma independiente.`,
+    title: `Práctica Goethe A1 ${config.label}: ${setCount} ejercicios guiados`,
+    description: `${config.workload}. Elige uno de ${setCount} sets originales de WeLearn para practicar ${config.label} de forma independiente.`,
     alternates: { canonical },
     robots: { index: true, follow: true },
   };
@@ -73,6 +75,9 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
   if (!config) notFound();
   const Icon = config.icon;
   const teile = GOETHE_PRACTICE_TEILE[skill as Skill];
+  const setNumbers = goethePracticeSetNumbers(skill as Skill);
+  const pendingAudioSets = Array.from({ length: GOETHE_A1_SET_COUNT }, (_, index) => index + 1)
+    .filter(number => !GOETHE_A1_AUDIO_READY_SETS.has(number));
 
   return <main className={styles.page} data-exam="goethe" lang="es">
     <header className={styles.hero}><div className="wrap">
@@ -91,8 +96,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
       <div className={styles.previewHeader}><div><p>Biblioteca A1</p><h2 id="goethe-set-heading">Elige un set para comenzar.</h2></div><Link href="/practica/goethe" className={styles.textLink}><ArrowLeft aria-hidden="true" /> Cambiar de destreza</Link></div>
       <p className={styles.libraryLead}>Elige la destreza completa o un Teil específico. Cada ruta conserva el material y la lógica de ese bloque, y muestra la retroalimentación únicamente después de entregar.</p>
       <div className={styles.setGrid}>
-        {Array.from({ length: 7 }, (_, index) => {
-          const number = index + 1;
+        {setNumbers.map(number => {
           const baseHref = `/examenes/goethe/practica/a1-${number}?mode=practice&skill=${skill}`;
           return <article key={number} className={styles.setPracticeCard}>
             <header className={styles.setPracticeHeader}>
@@ -112,6 +116,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
           </article>;
         })}
       </div>
+      {skill === 'listening' && pendingAudioSets.length > 0 ? <aside className={styles.libraryNote}><strong>Audio en producción</strong><p>Los sets {pendingAudioSets.join(', ')} ya tienen guion, preguntas e imágenes, pero Hören se habilitará únicamente cuando sus pistas hayan pasado el control de audio.</p></aside> : null}
       <aside className={styles.libraryNote}><strong>Antes de empezar</strong><p>Esta ruta es de práctica guiada: {config.guidance}. El simulacro completo mantiene las restricciones y el recorrido lineal del examen.</p></aside>
     </div></section>
   </main>;

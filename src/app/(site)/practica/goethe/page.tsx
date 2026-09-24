@@ -2,15 +2,19 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BookOpenCheck, ClipboardCheck, Headphones, Mic2, PenLine } from 'lucide-react';
 
+import { GOETHE_A1_AUDIO_READY_SETS, GOETHE_A1_SET_COUNT } from '@/lib/goethe/release';
 import styles from '../toefl/ios.module.css';
+
+const AUDIO_READY_COUNT = GOETHE_A1_AUDIO_READY_SETS.size;
+const AUDIO_PENDING_COUNT = GOETHE_A1_SET_COUNT - AUDIO_READY_COUNT;
 
 export const metadata: Metadata = {
   title: 'Práctica Goethe A1: Hören, Lesen, Schreiben y Sprechen',
-  description: 'Practica por separado las cuatro destrezas del Goethe-Zertifikat A1 o elige uno de siete simulacros completos originales de WeLearn.',
+  description: `Practica por separado las cuatro destrezas del Goethe-Zertifikat A1 con ${GOETHE_A1_SET_COUNT} sets originales de WeLearn; ${AUDIO_READY_COUNT} incluyen audio completo.`,
   alternates: { canonical: 'https://www.idiomaswl.com/practica/goethe' },
   openGraph: {
     title: 'Práctica Goethe A1 por destreza y simulacros completos',
-    description: 'Hören, Lesen, Schreiben y Sprechen por separado, más siete simulacros A1 completos de WeLearn.',
+    description: `Hören, Lesen, Schreiben y Sprechen por separado en ${GOETHE_A1_SET_COUNT} sets A1 originales; ${AUDIO_READY_COUNT} simulacros tienen audio completo.`,
     url: 'https://www.idiomaswl.com/practica/goethe',
     type: 'website',
     locale: 'es_CO',
@@ -38,7 +42,7 @@ export default function GoethePracticePage() {
       <dl className={styles.facts} aria-label="Práctica Goethe A1 disponible">
         <div><dt>Nivel</dt><dd>A1</dd><dd className={styles.factNote}>Start Deutsch 1</dd></div>
         <div><dt>Destrezas</dt><dd>4</dd><dd className={styles.factNote}>práctica independiente</dd></div>
-        <div><dt>Simulacros</dt><dd>7</dd><dd className={styles.factNote}>sesiones completas</dd></div>
+        <div><dt>Sets A1</dt><dd>{GOETHE_A1_SET_COUNT}</dd><dd className={styles.factNote}>{AUDIO_READY_COUNT} con audio completo</dd></div>
         <div><dt>Examen completo</dt><dd>80</dd><dd className={styles.factNote}>minutos</dd></div>
       </dl>
     </div></header>
@@ -55,14 +59,14 @@ export default function GoethePracticePage() {
           <p className={styles.modeNumber}>02</p><h3>Empezar con Hören</h3><p>Escucha con repeticiones disponibles y revisa cada respuesta cuando termines el módulo.</p><span className={styles.modeAction}>Abrir Hören A1 <ArrowRight aria-hidden="true" /></span>
         </Link>
         <Link href="/examenes/goethe#practica" className={`${styles.modeCard} ${styles.modeMocks}`}>
-          <div className={styles.modeTop}><span className={styles.modeIcon}><BookOpenCheck aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusMocks}`}>7 disponibles</span></div>
+          <div className={styles.modeTop}><span className={styles.modeIcon}><BookOpenCheck aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusMocks}`}>{AUDIO_READY_COUNT} completos · {AUDIO_PENDING_COUNT} parciales</span></div>
           <p className={styles.modeNumber}>03</p><h3>Simulacros completos</h3><p>Haz Hören, Lesen, Schreiben y Sprechen en una sesión continua con resultado Goethe sobre 100.</p><span className={styles.modeAction}>Elegir simulacro <ArrowRight aria-hidden="true" /></span>
         </Link>
       </div>
     </div></section>
 
     <section className={styles.preview} id="destrezas" aria-labelledby="goethe-skills-heading"><div className="wrap">
-      <div className={styles.previewHeader}><div><p>Nivel A1</p><h2 id="goethe-skills-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver los siete simulacros <ArrowRight aria-hidden="true" /></Link></div>
+      <div className={styles.previewHeader}><div><p>Nivel A1</p><h2 id="goethe-skills-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver los {GOETHE_A1_SET_COUNT} sets <ArrowRight aria-hidden="true" /></Link></div>
       <div className={styles.sectionStrip}>{skills.map(({ id, label, note, icon: Icon }) => <Link key={id} href={`/practica/goethe/${id}`} className={styles.sectionPreview} data-section={id}><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div>
     </div></section>
   </main>;

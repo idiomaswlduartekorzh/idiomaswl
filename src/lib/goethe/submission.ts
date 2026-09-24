@@ -10,6 +10,9 @@ export const GOETHE_A1_CONTENT_VERSIONS = {
   'a1-5': 'goethe-a1-5-2026-09-12-r3',
   'a1-6': 'goethe-a1-6-2026-09-12-r1',
   'a1-7': 'goethe-a1-7-2026-09-12-r1',
+  'a1-8': 'goethe-a1-8-2026-09-24-r1',
+  'a1-9': 'goethe-a1-9-2026-09-24-r1',
+  'a1-10': 'goethe-a1-10-2026-09-24-r1',
 } as const
 export const GOETHE_A1_CONTENT_VERSION = GOETHE_A1_CONTENT_VERSIONS['a1-1']
 

@@ -89,7 +89,7 @@ assert.ok(noticeLengths.every(length => length >= 6 && length <= 25), `Lesen Tei
 assert.ok(Math.min(...noticeLengths) <= 10 && Math.max(...noticeLengths) >= 16, `Lesen Teil 3 needs authentic short/long variation: ${noticeLengths.join('/')}`);
 assert.ok(new Set(noticeLengths).size >= 3, `Lesen Teil 3 notices are too uniform: ${noticeLengths.join('/')}`);
 assert.match(runnerSource, /function ReadingAdPair/, 'Set 1 Anzeigen need an integrated A/B advert renderer');
-assert.match(runnerSource, /renderReadingAdCards=\{\/\^a1-\[1-7\]\$\/\.test\(mock\.id\)\}/, 'all published Goethe A1 sets must use the compact advert renderer');
+assert.ok(runnerSource.includes("renderReadingAdCards={/^a1-(?:[1-9]|10)$/.test(mock.id)}"), 'all published Goethe A1 sets must use the compact advert renderer');
 assert.match(runnerStyles, /\.readingAdGrid/, 'the compact advert layout is missing');
 assert.match(runnerStyles, /\.readingAdThumb/, 'the photographic advert header is missing');
 

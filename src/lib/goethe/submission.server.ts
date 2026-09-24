@@ -11,6 +11,9 @@ import goetheA1Set4 from '@/data/mocks/goethe-a1-set-4'
 import goetheA1Set5 from '@/data/mocks/goethe-a1-set-5'
 import goetheA1Set6 from '@/data/mocks/goethe-a1-set-6'
 import goetheA1Set7 from '@/data/mocks/goethe-a1-set-7'
+import goetheA1Set8 from '@/data/mocks/goethe-a1-set-8'
+import goetheA1Set9 from '@/data/mocks/goethe-a1-set-9'
+import goetheA1Set10 from '@/data/mocks/goethe-a1-set-10'
 import type { FormGroupQuestion, MCQQuestion, MockExam, SpeakQuestion } from '@/data/mocks/types'
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server'
 import { scoreGoetheAutomatic } from './scoring'
@@ -42,6 +45,9 @@ const GOETHE_A1_MOCKS = new Map<string, MockExam>([
   [goetheA1Set5.id, goetheA1Set5],
   [goetheA1Set6.id, goetheA1Set6],
   [goetheA1Set7.id, goetheA1Set7],
+  [goetheA1Set8.id, goetheA1Set8],
+  [goetheA1Set9.id, goetheA1Set9],
+  [goetheA1Set10.id, goetheA1Set10],
 ])
 
 function resolveMock(mockId: string): { mock: MockExam; contentVersion: string } | null {

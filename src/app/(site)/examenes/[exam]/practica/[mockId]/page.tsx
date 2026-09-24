@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { EXAMS } from '@/data/exams';
 import { getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
@@ -11,6 +11,7 @@ import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
 import { parseGoethePracticeTeil, type GoethePracticeSkill } from '@/lib/goethe/practice';
+import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
@@ -60,10 +61,12 @@ export default async function PracticePage({ params, searchParams }: { params: P
       ? <TOPIKPracticeClient exam={exam} mock={mock} />
       : <LanguagePracticeClient exam={exam} mock={mock} />;
   }
-  if (slug === 'goethe' && /^a1-[1-7]$/.test(mockId)) {
+  if (slug === 'goethe' && /^a1-(?:[1-9]|10)$/.test(mockId)) {
     const skill = query.mode === 'practice' && ['listening', 'reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as GoethePracticeSkill
       : undefined;
+    if (!hasGoetheA1Audio(mockId) && !skill) redirect(`/examenes/goethe/practica/${mockId}?mode=practice&skill=reading`);
+    if (!hasGoetheA1Audio(mockId) && skill === 'listening') redirect('/practica/goethe/listening');
     const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
     return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
   }

@@ -5,8 +5,9 @@ import { fileURLToPath } from 'node:url';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const release = process.argv.includes('--release');
+const audioRelease = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/mocks/goethe-a1-audio-release.json'), 'utf8'));
 const sets = [];
-const finalSet = release ? 7 : 8;
+const finalSet = 10;
 for (let number = 3; number <= finalSet; number += 1) {
   const module = await import(`../src/data/mocks/goethe-a1-set-${number}.ts`);
   sets.push({ number, mock: module.default, audio: module.audioManifest });
@@ -71,16 +72,21 @@ for (const { number, mock, audio } of sets) {
     const imageDir = path.join(repoRoot, `public/images/goethe/a1-${number}`);
     const imageNames = ['hoeren-teil1-00.png', ...Array.from({length:6},(_,i)=>`hoeren-teil1-${String(i+1).padStart(2,'0')}.png`), 'lesen-teil2-00.png', ...Array.from({length:5},(_,i)=>`lesen-teil2-${String(i+6).padStart(2,'0')}.png`), 'sprechen-teil3-karten-01.png', 'sprechen-teil3-karten-02.png'];
     imageNames.forEach(name => assert.ok(fs.statSync(path.join(imageDir, name)).size > 20_000, `Set ${number}: missing image ${name}`));
-    const audioDir = path.join(repoRoot, `public/audio/goethe/a1-${number}`);
-    const audioNames = ['hoeren-komplett.mp3','hoeren-teil1.mp3','hoeren-teil2.mp3','hoeren-teil3.mp3', ...Array.from({length:15},(_,i)=>`item-${String(i+1).padStart(2,'0')}.mp3`), 'manifest.json'];
-    audioNames.forEach(name => assert.ok(fs.statSync(path.join(audioDir, name)).size > (name.endsWith('.mp3') ? 10_000 : 100), `Set ${number}: missing audio ${name}`));
-    const manifest = JSON.parse(fs.readFileSync(path.join(audioDir, 'manifest.json'), 'utf8'));
-    assert.equal(manifest.outputs.length, 19); assert.equal(manifest.acousticCue.cueCount, 28);
-    assert.ok(manifest.outputs.find(output => output.file.endsWith('/hoeren-komplett.mp3')).durationSeconds >= 1020);
+    if (audioRelease.releasedSets.includes(number)) {
+      const audioDir = path.join(repoRoot, `public/audio/goethe/a1-${number}`);
+      const audioNames = ['hoeren-komplett.mp3','hoeren-teil1.mp3','hoeren-teil2.mp3','hoeren-teil3.mp3', ...Array.from({length:15},(_,i)=>`item-${String(i+1).padStart(2,'0')}.mp3`), 'manifest.json'];
+      audioNames.forEach(name => assert.ok(fs.statSync(path.join(audioDir, name)).size > (name.endsWith('.mp3') ? 10_000 : 100), `Set ${number}: missing audio ${name}`));
+      const manifest = JSON.parse(fs.readFileSync(path.join(audioDir, 'manifest.json'), 'utf8'));
+      assert.equal(manifest.outputs.length, 19); assert.equal(manifest.acousticCue.cueCount, 28);
+      assert.ok(manifest.outputs.find(output => output.file.endsWith('/hoeren-komplett.mp3')).durationSeconds >= 1020);
+    } else {
+      assert.equal(audio.status, 'script-ready-audio-blocked', `Set ${number}: pending audio must remain gated`);
+    }
   }
-  console.log(`✓ Goethe A1 Set ${number}: 11 parts · 35 responses · ${audioCharacters} audio chars${release ? ' · 15 images · 19 audio outputs' : ''}`);
+  const releaseStatus = !release ? '' : audioRelease.releasedSets.includes(number) ? ' · 15 images · 19 audio outputs' : ' · 15 images · audio script gated';
+  console.log(`✓ Goethe A1 Set ${number}: 11 parts · 35 responses · ${audioCharacters} audio chars${releaseStatus}`);
 }
 
 const comparable = sets.flatMap(({ number, mock }) => mock.sections.flatMap(section => [section.passage, ...section.questions.flatMap(question => [question.stimulus, question.type === 'mcq' ? question.text : question.groupLabel])]).filter(Boolean).map(value => ({ number, value: value.toLocaleLowerCase('de-DE').replace(/[^\p{L}\p{N}]+/gu, ' ').trim() })));
 for (let left = 0; left < comparable.length; left += 1) for (let right = left + 1; right < comparable.length; right += 1) if (comparable[left].number !== comparable[right].number && comparable[left].value.length > 35) assert.notEqual(comparable[left].value, comparable[right].value, `duplicate stimulus across Sets ${comparable[left].number}/${comparable[right].number}`);
-console.log(`✓ Sets 3–${finalSet} are mutually original at full-stimulus level${release ? ' and release-ready' : ' (Set 8 remains an unpublished draft)'}`);
+console.log(`✓ Sets 3–${finalSet} are mutually original at full-stimulus level${release ? '; Sets 8–10 are content-ready with audio explicitly gated' : ''}`);

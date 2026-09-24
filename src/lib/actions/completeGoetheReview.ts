@@ -9,6 +9,9 @@ import goetheA1Set4 from '@/data/mocks/goethe-a1-set-4'
 import goetheA1Set5 from '@/data/mocks/goethe-a1-set-5'
 import goetheA1Set6 from '@/data/mocks/goethe-a1-set-6'
 import goetheA1Set7 from '@/data/mocks/goethe-a1-set-7'
+import goetheA1Set8 from '@/data/mocks/goethe-a1-set-8'
+import goetheA1Set9 from '@/data/mocks/goethe-a1-set-9'
+import goetheA1Set10 from '@/data/mocks/goethe-a1-set-10'
 import type { MockExam } from '@/data/mocks/types'
 import { completeGoetheScore, scoreGoetheAutomatic } from '@/lib/goethe/scoring'
 import { GOETHE_SUBMISSION_ID_PATTERN } from '@/lib/goethe/submission-token.server'
@@ -18,7 +21,7 @@ const WRITING_CONTENT = new Set([0, 1.5, 3])
 const WRITING_CONVENTIONS = new Set([0, 0.5, 1])
 const SPEAKING_PART1 = new Set([0, 0.5, 1, 1.5, 2, 2.5, 3])
 const SPEAKING_PART23 = new Set(Array.from({ length: 13 }, (_, index) => index / 2))
-const GOETHE_A1_MOCKS = new Map<string, MockExam>([goetheA1Set1, goetheA1Set2, goetheA1Set3, goetheA1Set4, goetheA1Set5, goetheA1Set6, goetheA1Set7].map(mock => [mock.id, mock]))
+const GOETHE_A1_MOCKS = new Map<string, MockExam>([goetheA1Set1, goetheA1Set2, goetheA1Set3, goetheA1Set4, goetheA1Set5, goetheA1Set6, goetheA1Set7, goetheA1Set8, goetheA1Set9, goetheA1Set10].map(mock => [mock.id, mock]))
 
 export async function completeGoetheReview(input: {
   submissionId: string

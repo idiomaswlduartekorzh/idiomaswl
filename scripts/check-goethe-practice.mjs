@@ -9,10 +9,13 @@ import set4 from '../src/data/mocks/goethe-a1-set-4.ts';
 import set5 from '../src/data/mocks/goethe-a1-set-5.ts';
 import set6 from '../src/data/mocks/goethe-a1-set-6.ts';
 import set7 from '../src/data/mocks/goethe-a1-set-7.ts';
+import set8 from '../src/data/mocks/goethe-a1-set-8.ts';
+import set9 from '../src/data/mocks/goethe-a1-set-9.ts';
+import set10 from '../src/data/mocks/goethe-a1-set-10.ts';
 import { GOETHE_PRACTICE_TEILE, goethePracticeHref, goethePracticeSections, nextGoethePractice, parseGoethePracticeTeil } from '../src/lib/goethe/practice.ts';
 
 const root = path.resolve(import.meta.dirname, '..');
-const sets = [set1, set2, set3, set4, set5, set6, set7];
+const sets = [set1, set2, set3, set4, set5, set6, set7, set8, set9, set10];
 const expectedQuestionCounts = {
   listening: [6, 4, 5],
   reading: [5, 5, 5],
@@ -27,9 +30,10 @@ for (const [skill, expectedCounts] of Object.entries(expectedQuestionCounts)) {
 
 for (const mock of sets) {
   for (const [skill, expectedCounts] of Object.entries(expectedQuestionCounts)) {
+    if (skill === 'listening' && Number(mock.id.split('-')[1]) > 7) continue;
     const completeSections = goethePracticeSections(mock, skill);
     assert.equal(completeSections.length, expectedCounts.length, `${mock.id} ${skill}: cantidad de Teile incorrecta`);
-    const followingSet = sets.find(candidate => Number(candidate.id.split('-')[1]) === Number(mock.id.split('-')[1]) + 1);
+    const followingSet = sets.find(candidate => Number(candidate.id.split('-')[1]) === Number(mock.id.split('-')[1]) + 1 && (skill !== 'listening' || Number(candidate.id.split('-')[1]) <= 7));
     assert.equal(
       nextGoethePractice(mock.id, skill)?.href,
       followingSet ? goethePracticeHref(followingSet.id, skill) : undefined,
@@ -65,8 +69,10 @@ assert.deepEqual(nextGoethePractice('a1-2', 'listening'), {
   href: goethePracticeHref('a1-3', 'listening'),
   label: 'Continuar con Set 3',
 });
-assert.equal(nextGoethePractice('a1-7', 'speaking', 3), undefined, 'El último Teil no debe enlazar a Set 8');
-assert.equal(nextGoethePractice('a1-7', 'speaking'), undefined, 'La última destreza completa no debe enlazar a Set 8');
+assert.deepEqual(nextGoethePractice('a1-7', 'speaking', 3), { href: goethePracticeHref('a1-8', 'speaking', 1), label: 'Continuar con Set 8 · Teil 1' });
+assert.deepEqual(nextGoethePractice('a1-7', 'speaking'), { href: goethePracticeHref('a1-8', 'speaking'), label: 'Continuar con Set 8' });
+assert.equal(nextGoethePractice('a1-7', 'listening'), undefined, 'Hören no debe enlazar a un set sin audio publicado');
+assert.equal(nextGoethePractice('a1-10', 'speaking'), undefined, 'Set 10 debe cerrar la secuencia editorial');
 
 const librarySource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/[skill]/page.tsx'), 'utf8');
 const routeSource = fs.readFileSync(path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx'), 'utf8');
@@ -80,4 +86,4 @@ assert.match(runnerSource, /no equivale a un puntaje oficial Goethe/, 'Falta dis
 assert.match(runnerSource, /showListeningEvidence/, 'La práctica de Hören perdió la evidencia posterior a la entrega');
 assert.match(runnerSource, /nextGoethePractice\(mock\.id, practiceSkill, practicePart\)/, 'El runner no ofrece continuidad contextual');
 
-console.log('Práctica Goethe íntegra: 7 sets × 4 destrezas, 11 Teile aislables y feedback posterior protegido.');
+console.log('Práctica Goethe íntegra: 10 sets editoriales, Hören habilitado en 7, 11 Teile aislables y feedback posterior protegido.');

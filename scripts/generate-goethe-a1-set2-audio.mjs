@@ -18,7 +18,7 @@ const CREDIT_MULTIPLIER = 0.70;
 const OUTPUT_FORMAT = 'mp3_44100_128';
 const generate = process.argv.includes('--generate');
 const setNumber = Number(process.argv.find(value => value.startsWith('--set='))?.split('=')[1] ?? 2);
-assert.ok(Number.isInteger(setNumber) && setNumber >= 2 && setNumber <= 8, '--set must be a number from 2 to 8');
+assert.ok(Number.isInteger(setNumber) && setNumber >= 2 && setNumber <= 10, '--set must be a number from 2 to 10');
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
 const scriptManifest = setNumber === 2
@@ -26,6 +26,7 @@ const scriptManifest = setNumber === 2
   : (await import(`../src/data/mocks/goethe-a1-set-${setNumber}.ts`)).audioManifest;
 const outputDir = path.join(repoRoot, `public/audio/goethe/a1-${setNumber}`);
 const sourceDir = path.join(outputDir, 'voice-sources');
+const releasePath = path.join(repoRoot, 'src/data/mocks/goethe-a1-audio-release.json');
 function resolveExecutable(name, explicitPath) {
   const candidates = [
     explicitPath,
@@ -278,6 +279,9 @@ try {
     acousticCue: { kind: 'WeLearn synthetic descending three-tone exam signal', frequenciesHz: [990, 831, 698], durationSeconds: cueDurationSeconds, cueCount: 28, placement: 'before every scored playback and both Teil 1 example playbacks' },
     outputs,
   }, null, 2)}\n`);
+  const releaseManifest = JSON.parse(fs.readFileSync(releasePath, 'utf8'));
+  releaseManifest.releasedSets = [...new Set([...releaseManifest.releasedSets, setNumber])].sort((left, right) => left - right);
+  fs.writeFileSync(releasePath, `${JSON.stringify(releaseManifest, null, 2)}\n`);
   console.log(`  complete: ${(outputs.find(output => output.file.endsWith('/hoeren-komplett.mp3')).durationSeconds / 60).toFixed(2)} minutes`);
   console.log(`  charged: ${availableCredits - afterRemaining} credits · remaining: ${afterRemaining}`);
 } finally {

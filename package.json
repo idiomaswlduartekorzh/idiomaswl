@@ -34,6 +34,7 @@
     "check:goethe-a1:set2": "node --experimental-strip-types --no-warnings scripts/check-goethe-a1-set2.mjs",
     "audio:goethe-a1:set2": "node --experimental-strip-types --no-warnings scripts/generate-goethe-a1-set2-audio.mjs",
     "audio:goethe-a1": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/generate-goethe-a1-set2-audio.mjs",
+    "audio:goethe-a1:pending": "npm run audio:goethe-a1 -- --set=8 --generate && npm run audio:goethe-a1 -- --set=9 --generate && npm run audio:goethe-a1 -- --set=10 --generate",
     "check:advanced-guided": "node --experimental-strip-types --no-warnings scripts/check-advanced-guided-lessons.mjs",
     "audio:advanced-dunning": "node --experimental-strip-types --no-warnings scripts/generate-advanced-dunning-audio.mjs",
     "audio:advanced-hypergamy": "node --experimental-strip-types --no-warnings scripts/generate-advanced-hypergamy-audio.mjs",

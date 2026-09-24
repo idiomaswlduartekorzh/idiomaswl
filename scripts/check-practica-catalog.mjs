@@ -130,7 +130,7 @@ expectText('src/app/(site)/practica/ielts/IELTSHubClient.tsx', 'IELTS Academic')
 expectText('src/app/(site)/practica/PracticaClient.tsx', "href: '/practica/goethe'");
 expectText('src/app/(site)/practica/goethe/page.tsx', 'Cuatro destrezas. Una práctica cada vez.');
 expectText('src/app/(site)/practica/goethe/page.tsx', '/practica/goethe/${id}');
-expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'Array.from({ length: 7 }');
+expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'goethePracticeSetNumbers(skill as Skill)');
 expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'mode=practice&skill=${skill}');
 expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', '&teil=${teil.teil}');
 expectText('src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx', 'parseGoethePracticeTeil(skill, query.teil)');

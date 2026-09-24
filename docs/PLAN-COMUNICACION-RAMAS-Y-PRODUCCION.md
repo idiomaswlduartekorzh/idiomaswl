@@ -37,6 +37,23 @@ pruebas de privacidad de audio y build Webpack aprobados. No requiere nuevas
 variables. Orden, pruebas de permisos y reversión:
 [`SEGURIDAD-AUDIO-CICLO-2026-09-19.md`](SEGURIDAD-AUDIO-CICLO-2026-09-19.md).
 
+## Expansión Goethe A1 a diez sets — 24 de septiembre de 2026
+
+`codex/goethe-a1-sets-8-10` parte de `origin/main` en `57fcb34b`.
+Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: sets originales A1 8–10,
+catálogo de examen y práctica por destreza, imágenes, scoring, guiones y fábrica de
+audio. Compartidos: `package.json`, registros centrales de mocks y este documento.
+No requiere migraciones ni variables nuevas. Dependencia externa: créditos de
+ElevenLabs para producir Hören; hasta entonces los tres sets publican Lesen,
+Schreiben y Sprechen y bloquean automáticamente Hören y el simulacro completo.
+Validaciones del 24 de septiembre: banco Goethe y originalidad 3–10, scoring,
+práctica por Teil, PDFs estudiantiles, catálogo protegido, TypeScript, prebuild
+global y build Webpack de 2.563 páginas; smoke local 200 en hub, biblioteca,
+Lesen del set 8 y Sprechen del set 10, con redirecciones protegidas para Hören y
+los simulacros sin audio. Decisión de integración: `MERGE` desde la base vigente.
+Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
+[`GOETHE-A1-SETS-8-10.md`](GOETHE-A1-SETS-8-10.md).
+
 ## 1. Resultado que debe producir este plan
 
 El sistema de trabajo debe garantizar simultáneamente que:

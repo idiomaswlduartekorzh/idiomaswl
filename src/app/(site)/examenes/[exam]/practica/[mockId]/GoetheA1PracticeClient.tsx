@@ -8,7 +8,7 @@ import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { Exam } from '@/data/exams';
 import type { FormGroupQuestion, MCQQuestion, MockExam, MockSection, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
-import { GOETHE_A1_SETS_3_TO_8 } from '@/data/mocks/goethe-a1-sets-3-8-content';
+import { GOETHE_A1_SETS_3_TO_10 } from '@/data/mocks/goethe-a1-sets-3-10-content';
 import { goethePracticeHref, goethePracticeSections, goethePracticeTeilMeta, nextGoethePractice, type GoethePracticeSkill, type GoethePracticeTeil } from '@/lib/goethe/practice';
 import { formatGoetheModule } from '@/lib/goethe/scoring';
 import type { GoetheResultStatus, GoetheSubmissionReceipt } from '@/lib/goethe/submission';
@@ -159,7 +159,7 @@ function mediaFor(mockId: string) {
     readingAds: Record<number, Plate>; readingExamples: Record<number, Plate>;
   };
   const number = Number(mockId.split('-').at(-1));
-  const content = GOETHE_A1_SETS_3_TO_8[number];
+  const content = GOETHE_A1_SETS_3_TO_10[number];
   const plate = (src: string, alt: string, width: number, height: number): Plate => ({ src, alt, width, height });
   return {
     listening: Object.fromEntries(content.listening1.map((item, index) => [index + 1, plate(`/images/goethe/${mockId}/hoeren-teil1-${String(index + 1).padStart(2, '0')}.png`, `Drei Bildoptionen für Aufgabe ${index + 1}: ${item.options.join(', ')}`, 2172, 724)])),
@@ -172,7 +172,7 @@ function mediaFor(mockId: string) {
 function listeningExamplesFor(mockId: string) {
   const existing = LISTENING_EXAMPLES[mockId];
   if (existing) return existing;
-  const content = GOETHE_A1_SETS_3_TO_8[Number(mockId.split('-').at(-1))];
+  const content = GOETHE_A1_SETS_3_TO_10[Number(mockId.split('-').at(-1))];
   return {
     1: { question: content.listeningExample.question, options: content.listeningExample.options, answer: content.listeningExample.answer, note: 'Das Beispiel hören Sie zweimal.' },
     2: { question: 'Das Informationsbüro öffnet heute um neun Uhr.', options: ['Richtig', 'Falsch'], answer: 0, note: 'Das Beispiel hören Sie einmal.' },
@@ -425,7 +425,7 @@ function ReadingModule({ mock, answers, setAnswer, showResult }: {
       <SectionShell key={section.part} section={section}>
         {examples[section.part] && <ResolvedExample {...examples[section.part]} visualPlate={media.readingExamples[section.part]} />}
         <div className={styles.questionList}>
-          {questions.map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAdPlate={section.part === 5 ? media.readingAds[itemNumber(question)] : undefined} renderReadingAdCards={/^a1-[1-7]$/.test(mock.id)} />)}
+          {questions.map(question => <ObjectiveItem key={question.id} question={question} number={itemNumber(question)} value={answers[question.id]} onChange={value => setAnswer(question.id, value)} showResult={showResult} readingAdPlate={section.part === 5 ? media.readingAds[itemNumber(question)] : undefined} renderReadingAdCards={/^a1-(?:[1-9]|10)$/.test(mock.id)} />)}
         </div>
       </SectionShell>
     );
@@ -526,7 +526,7 @@ function SpeakingCardDeck({ part, groups, mode, mockId, currentIndex, order, onI
   onOrderChange: (order: number[]) => void;
 }) {
   const wordCards = groups.flatMap(group => group.cards.map(label => ({ kind: 'word' as const, label, theme: group.title })));
-  const configuredPictures = GOETHE_A1_SETS_3_TO_8[Number(mockId.split('-').at(-1))]?.speaking3
+  const configuredPictures = GOETHE_A1_SETS_3_TO_10[Number(mockId.split('-').at(-1))]?.speaking3
     .flatMap((group, groupIndex) => group.map((label, index) => ({ label, sheet: groupIndex + 1, column: index % 3, row: Math.floor(index / 3) })));
   const pictureCardSource = mockId === 'a1-1' ? SET1_SPEAKING_PICTURE_CARDS : mockId === 'a1-2' ? SET2_SPEAKING_PICTURE_CARDS : configuredPictures;
   const pictureCards = pictureCardSource.map(card => ({ kind: 'picture' as const, ...card }));

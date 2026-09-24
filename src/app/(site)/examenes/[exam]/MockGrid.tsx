@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 import { hasGuidedMock, hasGuidedWorkbook } from '@/data/icfes/guided-registry';
+import { hasGoetheA1Audio } from '@/lib/goethe/release';
 
 const INITIAL_VISIBLE_MOCKS = 8;
 
@@ -51,12 +52,14 @@ export default function MockGrid({ exam }: { exam: Exam }) {
     <div className="wl-mock-grid">
       {mocks.map((mock) => {
         const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
+        const goetheAudioPending = exam.slug === 'goethe' && /^a1-/.test(mock.id) && !hasGoetheA1Audio(mock.id);
         return (
           <article key={mock.id} className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
             <div className="wl-mock-card__header">
               <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
               <div className="wl-mock-card__badges">
                 {mock.badge ? <span className="wl-exam-status-chip">{mock.badge}</span> : null}
+                {goetheAudioPending ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
                 <span className={`wl-mock-card__tag ${mock.free ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
                   {mock.free ? 'Gratis' : 'Pro'}
                 </span>
@@ -70,7 +73,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             {mock.free ? (
               <div className="wl-mock-card__actions">
                 <Link
-                  href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
+                  href={goetheAudioPending ? `/examenes/goethe/practica/${mock.id}?mode=practice&skill=reading` : mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
                   className="wl-mock-card__cta btn btn-sm"
                   {...(isIcfes ? {
                     'data-icfes-cta': 'catalog_resource_open',
@@ -79,7 +82,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                     'data-icfes-resource-kind': mock.badge ? 'attributed' : 'own',
                     'data-icfes-surface': 'exam-hub-catalog',
                   } : {})}
-                >Modo examen →</Link>
+                >{goetheAudioPending ? 'Practicar Lesen →' : 'Modo examen →'}</Link>
                 {exam.slug === 'icfes' && hasGuidedMock(mock.id) ? (
                   <Link
                     href={`/examenes/icfes/practica/${mock.id}/guiado`}

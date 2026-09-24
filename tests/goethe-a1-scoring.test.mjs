@@ -7,6 +7,9 @@ import goetheA1Set4 from '../src/data/mocks/goethe-a1-set-4.ts'
 import goetheA1Set5 from '../src/data/mocks/goethe-a1-set-5.ts'
 import goetheA1Set6 from '../src/data/mocks/goethe-a1-set-6.ts'
 import goetheA1Set7 from '../src/data/mocks/goethe-a1-set-7.ts'
+import goetheA1Set8 from '../src/data/mocks/goethe-a1-set-8.ts'
+import goetheA1Set9 from '../src/data/mocks/goethe-a1-set-9.ts'
+import goetheA1Set10 from '../src/data/mocks/goethe-a1-set-10.ts'
 import { getGoetheA1ContentVersion } from '../src/lib/goethe/submission.ts'
 
 const objective = (prefix, part) => Array.from({ length: 15 }, (_, index) => ({
@@ -42,12 +45,12 @@ test('automatic score ignores client claims and uses the frozen answer key', () 
   })
 })
 
-test('Sets 2–7 have frozen versions and independent perfect-score keys', () => {
+test('Sets 2–10 have frozen versions and independent perfect-score keys', () => {
   assert.equal(getGoetheA1ContentVersion('a1-1'), 'goethe-a1-1-2026-09-12-r2')
   assert.equal(getGoetheA1ContentVersion('a1-2'), 'goethe-a1-2-2026-09-12-r2')
-  const bank = [goetheA1Set2, goetheA1Set3, goetheA1Set4, goetheA1Set5, goetheA1Set6, goetheA1Set7]
+  const bank = [goetheA1Set2, goetheA1Set3, goetheA1Set4, goetheA1Set5, goetheA1Set6, goetheA1Set7, goetheA1Set8, goetheA1Set9, goetheA1Set10]
   for (const set of bank) {
-    assert.match(getGoetheA1ContentVersion(set.id) ?? '', new RegExp(`^goethe-${set.id}-2026-09-12-r\\d+$`))
+    assert.match(getGoetheA1ContentVersion(set.id) ?? '', new RegExp(`^goethe-${set.id}-2026-09-(?:12|24)-r\\d+$`))
     const questions = set.sections.flatMap(section => section.questions)
     const answers = Object.fromEntries(questions.flatMap(question => question.type === 'mcq' ? [[question.id, question.answer]] : []))
     const form = questions.find(question => question.type === 'formgroup')
