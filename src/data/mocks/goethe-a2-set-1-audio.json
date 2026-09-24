@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "set": 1,
+  "candidateFingerprint": "72f9582694b9f15ce7904035bca1feacb99ee98ea16958db7af648bb32ee6d92",
+  "status": "script-ready-audio-blocked",
+  "provider": "ElevenLabs",
+  "generation": {
+    "requiresFreshCreditSnapshot": true,
+    "requiresExplicitHumanAuthorization": true,
+    "publishesAutomatically": false
+  },
+  "technical": {
+    "format": "mp3 mono 44.1 kHz 64 kbps",
+    "targetLufs": -18,
+    "targetMinutes": [
+      22,
+      25
+    ]
+  },
+  "master": {
+    "path": "/audio/goethe/a2-1/goethe-a2-1-master.mp3",
+    "containsSpokenInstructions": true,
+    "containsExamples": true,
+    "containsPauses": true,
+    "containsTransferWindow": true,
+    "navigation": {
+      "pause": false,
+      "seek": false,
+      "replay": false
+    }
+  },
+  "voices": [
+    {
+      "id": "announcer",
+      "profile": "adult female, clear standard German, neutral examination delivery"
+    },
+    {
+      "id": "adult-f-1",
+      "profile": "adult female, natural everyday German"
+    },
+    {
+      "id": "adult-f-2",
+      "profile": "adult female, distinct from announcer"
+    },
+    {
+      "id": "adult-m-1",
+      "profile": "adult male, natural everyday German"
+    },
+    {
+      "id": "adult-m-2",
+      "profile": "adult male, distinct from adult-m-1"
+    }
+  ],
+  "sequence": [
+    {
+      "part": 1,
+      "family": "five-short-public-or-private-messages",
+      "plays": 2,
+      "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zweimal.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h1-1",
+          "turns": [
+            {
+              "speaker": "Bibliothek",
+              "text": "Guten Tag, Frau Campos, hier ist die Stadtbibliothek. Ihr bestelltes Buch ist da. Wir legen es bis Donnerstagabend für Sie zurück. Am Mittwoch schließen wir schon um sechzehn Uhr. Bitte bringen Sie Ihren Bibliotheksausweis mit."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-2",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Achtung, Fahrgäste der Linie sieben Richtung Hauptbahnhof. Wegen Bauarbeiten kann die Haltestelle Markt heute nicht benutzt werden. Bitte steigen Sie an der Ersatzhaltestelle in der Kleinen Steinstraße ein."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-3",
+          "turns": [
+            {
+              "speaker": "Werkstatt",
+              "text": "Hallo Herr Novak, hier ist die Werkstatt Lichtblick. Ihre Lampe funktioniert fast wieder, aber der passende Schalter kommt leider erst morgen. Sie können die Lampe deshalb am Freitag ab vierzehn Uhr abholen."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-4",
+          "turns": [
+            {
+              "speaker": "Hausansage",
+              "text": "Liebe Besucherinnen und Besucher, der Vortrag „Weniger Müll im Alltag“ beginnt um achtzehn Uhr nicht im großen Saal, sondern in Raum zwei. Der Saal wird heute noch gestrichen. Das Café bleibt wie gewohnt geöffnet."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-5",
+          "turns": [
+            {
+              "speaker": "Mailbox",
+              "text": "Hallo zusammen, unsere Führung durch die alte Fabrik findet morgen statt, auch wenn es regnet, denn wir sind meistens drinnen. Der Boden ist an einigen Stellen nass. Zieht bitte feste Schuhe an. Getränke gibt es vor Ort."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "family": "one-continuous-conversation",
+      "plays": 1,
+      "instruction": "Sie hören ein Gespräch einmal. Ordnen Sie die Bilder zu.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h2-1",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h2-2",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h2-3",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h2-4",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h2-5",
+          "turns": []
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "family": "five-short-conversations",
+      "plays": 1,
+      "instruction": "Sie hören fünf kurze Gespräche einmal. Wählen Sie das richtige Bild.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h3-1",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Brauchen Sie die Bohrmaschine oder die Leiter?"
+            },
+            {
+              "speaker": "Frau",
+              "text": "Die Bohrmaschine habe ich schon. Aber die Leiter brauche ich bis Montag."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-2",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Unser Termin war doch um zehn. Wo bleiben Sie?"
+            },
+            {
+              "speaker": "Mann",
+              "text": "Entschuldigung, der Bus steht im Stau. Ich bin in dreißig Minuten bei Ihnen."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-3",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Haben wir noch ein Schild für die Fahrräder?"
+            },
+            {
+              "speaker": "Frau",
+              "text": "Du meinst das Schild, das zeigt, wo man sie abstellen darf? Es liegt im Schrank."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-4",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Es regnet stark. Wollen wir die Fahrräder hier lassen und ein Taxi nehmen?"
+            },
+            {
+              "speaker": "Mann",
+              "text": "Das ist zu teuer. Die Straßenbahn kommt in fünf Minuten."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-5",
+          "turns": [
+            {
+              "speaker": "Verkäufer",
+              "text": "Wie viel Farbe brauchen Sie?"
+            },
+            {
+              "speaker": "Kundin",
+              "text": "Für die Wand eine große Dose Weiß. Und für die Schilder noch eine kleine Dose Grün."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "family": "radio-interview",
+      "plays": 2,
+      "instruction": "Sie hören ein Radiointerview zweimal. Wählen Sie Ja oder Nein.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h4-1",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h4-2",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h4-3",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h4-4",
+          "turns": []
+        },
+        {
+          "id": "g-a2-1-h4-5",
+          "turns": []
+        }
+      ]
+    }
+  ],
+  "outro": "Ende des Tests Hören. Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen zu übertragen und zu kontrollieren."
+}

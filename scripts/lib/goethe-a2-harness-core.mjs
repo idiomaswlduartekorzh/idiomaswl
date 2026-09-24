@@ -95,8 +95,10 @@ export function validateGoetheA2Harness(harness) {
   if (interactionKeys.some(value => !value) || new Set(interactionKeys).size !== interactionKeys.length) fail('ledger: interactions must be non-empty and unique');
 
   if (release.schemaVersion !== 1 || release.level !== 'A2') fail('release: invalid identity');
-  if ((release.sets ?? []).length !== 5) fail('release: the five legacy sets must be represented');
-  for (const row of release.sets ?? []) {
+  if ((release.sets ?? []).length !== 5) fail('release: sets 1 through 5 must be represented');
+  const golden = release.sets?.find(row => row.id === 'a2-1');
+  if (!golden || golden.state !== 'AUDIO_BLOCKED' || golden.published || !golden.contentReady || !golden.visualsReady || golden.audioReady || !golden.scoringReady || golden.humanApproved) fail('release: a2-1 must be content/visual/scoring ready, audio blocked, unapproved and unpublished');
+  for (const row of release.sets?.filter(record => record.id !== 'a2-1') ?? []) {
     if (row.state !== 'LEGACY_HOLD' || row.published || row.contentReady || row.visualsReady || row.audioReady || row.scoringReady || row.humanApproved) fail(`release: ${row.id} must fail closed as LEGACY_HOLD`);
   }
 
@@ -112,7 +114,7 @@ export function harnessFingerprints(harness) {
     sources: fingerprint(harness.sources),
     ledger: fingerprint(harness.ledger),
     prompts: fingerprint(Object.fromEntries(Object.entries(harness.prompts).map(([id, prompt]) => [id, prompt.source]))),
-    harness: fingerprint(fs.readFileSync(new URL(import.meta.url))),
+    harness: fingerprint({ core: fs.readFileSync(new URL(import.meta.url), 'utf8'), schemas: harness.schemas }),
   };
 }
 

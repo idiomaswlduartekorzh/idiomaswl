@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "level": "A2",
   "sets": [
-    { "id": "a2-1", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
+    { "id": "a2-1", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
     { "id": "a2-2", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
     { "id": "a2-3", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
     { "id": "a2-4", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },

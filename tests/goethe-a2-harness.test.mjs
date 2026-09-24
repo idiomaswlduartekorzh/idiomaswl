@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -26,9 +27,11 @@ test('official A2 shape, scoring and audio repetitions are frozen', () => {
   assert.deepEqual(contract.passRules, { totalMinimum: 60, writtenMinimum: 45, writtenMaximum: 75, oralMinimum: 15, oralMaximum: 25 });
 });
 
-test('all five legacy A2 sets are fail-closed', () => {
+test('golden set is audio-blocked and the four remaining legacy sets are fail-closed', () => {
   assert.equal(harness.release.sets.length, 5);
-  for (const row of harness.release.sets) {
+  const golden = harness.release.sets.find(row => row.id === 'a2-1');
+  assert.deepEqual(golden, { id: 'a2-1', state: 'AUDIO_BLOCKED', published: false, contentReady: true, visualsReady: true, audioReady: false, scoringReady: true, humanApproved: false });
+  for (const row of harness.release.sets.filter(record => record.id !== 'a2-1')) {
     assert.equal(row.state, 'LEGACY_HOLD');
     assert.equal(row.published, false);
     for (const capability of harness.blueprint.releaseCapabilities.filter(value => value !== 'published')) assert.equal(row[capability], false);
@@ -68,6 +71,8 @@ test('work orders bind one set to source, blueprint, ledger, prompts and harness
   assert.equal(order.requiredStages.length, 13);
   for (const value of Object.values(order.fingerprints)) assert.match(value, /^[a-f0-9]{64}$/);
   assert.deepEqual(order.fingerprints, harnessFingerprints(harness));
+  const stored = JSON.parse(fs.readFileSync(path.join(root, 'artifacts/goethe-a2-harness/set-1/golden-1/work-order.json'), 'utf8'));
+  assert.deepEqual(stored.fingerprints, harnessFingerprints(harness));
 });
 
 test('fingerprints are stable and invalidate when policy changes', () => {
