@@ -62,6 +62,24 @@ emitieron los meta-redireccionamientos protegidos esperados.
 Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 [`GOETHE-A1-SETS-8-10.md`](GOETHE-A1-SETS-8-10.md).
 
+## Presencia en tiempo real del sitio — 24 de septiembre de 2026
+
+`codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
+Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: medición anónima de sesiones
+activas, detección estimada de bots, API administrativa y tarjeta en
+`/dashboard/admin`. Compartidos reservados: `src/app/layout.tsx`, `src/proxy.ts`,
+migraciones de Supabase y este documento. Requiere una migración nueva, sin
+variables adicionales. La medición no conserva IP, correo ni user-agent; solo un
+identificador irreversible, el tipo estimado, la ruta actual y marcas de tiempo.
+La migración `20260924233546_live_site_presence.sql` se aplicó en Supabase
+producción. Verificación: seis columnas esperadas, RLS activo, `anon` y
+`authenticated` sin privilegios, `service_role` con acceso explícito, tres
+índices y cero filas iniciales. Los asesores de seguridad y rendimiento no
+reportaron errores ni advertencias para `site_presence`. Validación local:
+5/5 pruebas de presencia, TypeScript, ESLint focalizado, catálogo de prácticas,
+build completo de Next.js y smoke visual/HTTP. Pendiente: integrar en `main`,
+comprobar el deployment exacto de Vercel y ejecutar smoke productivo.
+
 ## 1. Resultado que debe producir este plan
 
 El sistema de trabajo debe garantizar simultáneamente que:

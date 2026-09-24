@@ -6,6 +6,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import RouteThemeScope from "@/components/RouteThemeScope";
 import WhatsAppAttribution from "@/components/WhatsAppAttribution";
+import PresenceTracker from "@/components/PresenceTracker";
 
 const GTM_ID = 'GTM-57NXLPZV';
 
@@ -27,6 +28,7 @@ const ENTORNO = process.env.VERCEL_ENV;
 // The canonical deployment is Vercel production. Local `next start`, previews
 // and other hosts must not pollute analytics or execute remote GTM tags.
 const CARGAR_GTM = process.env.NODE_ENV === 'production' && ENTORNO === 'production';
+const MEDIR_PRESENCIA = process.env.NODE_ENV === 'production' && ENTORNO === 'production';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -132,6 +134,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Suspense fallback={null}><RouteThemeScope /></Suspense>
         <Suspense fallback={null}><WhatsAppAttribution /></Suspense>
+        <Suspense fallback={null}><PresenceTracker enabled={MEDIR_PRESENCIA} /></Suspense>
         {/* Google Tag Manager (noscript) — immediately after <body> open */}
         {CARGAR_GTM && (
           <noscript>
