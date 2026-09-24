@@ -38,6 +38,31 @@ Prompt base de Lesen:
 
 Cada set incluye seis pares visuales para el ejemplo y las preguntas 6–10. Los pares representan exactamente las dos alternativas descritas en cada estímulo del banco.
 
+### Criterio visual para futuras expansiones de Lesen Teil 2
+
+Observación editorial registrada el 24 de septiembre de 2026: las imágenes actuales de
+los sets 8–10 se conservan, pero no deben usarse como referencia estética para próximos
+sets. Su acabado es demasiado cercano a fotografía publicitaria generada por IA.
+
+En futuras expansiones, Lesen Teil 2 debe parecer material producido dentro de una prueba
+Goethe A1: anuncios impresos sencillos, clasificados, carteles de comercio local o fichas
+editoriales diagramadas, con composición funcional, tipografía sobria y recursos visuales
+didácticos. La imagen puede contener fotografía, pero debe sentirse subordinada al anuncio
+y a la lectura, no como una escena cinematográfica o una campaña comercial.
+
+Evitar en los próximos lotes:
+
+- iluminación excesivamente pulida, simetría perfecta y superficies con acabado de render;
+- escaparates, personas u objetos con apariencia de fotografía de banco demasiado idealizada;
+- grandes escenas fotorrealistas que sustituyen la lectura por una pista visual obvia;
+- tipografía inventada, logotipos falsos, textos deformados y carteles con demasiada producción;
+- reutilizar el prompt fotorrealista anterior como plantilla principal de Lesen Teil 2.
+
+Dirección recomendada: construir primero el pequeño anuncio A1 —título, horario, servicio,
+precio o condición relevante— y usar una foto documental modesta, un recorte, un icono o
+una ilustración sencilla únicamente como apoyo. El resultado debe recordar una hoja de
+examen diagramada y no revelar a primera vista que fue creado con IA.
+
 Prompt base de Sprechen:
 
 > Hoja de tarjetas Goethe-Zertifikat A1, 1536 × 1024, cuadrícula estricta 3 × 2 con bordes azul marino redondeados y fondo marfil, un objeto fotorrealista aislado por celda, sin texto, logotipos, marcas de agua ni objetos adicionales.
