@@ -1,0 +1,1980 @@
+{
+  "auditVersion": "diagnostic-recovered-listening-content-v1",
+  "snapshotDate": "2026-09-24",
+  "purpose": "Content completeness and audio-binding audit; never a linguistic approval or operational release.",
+  "policy": {
+    "operationalUseAllowed": false,
+    "oldSpanishQuestionsReusable": false,
+    "reason": "Spanish prompts and options add first-language reading to the listening construct."
+  },
+  "summary": {
+    "items": 60,
+    "audioPresent": 60,
+    "byDisposition": {
+      "ready-for-english-question-rewrite": 40,
+      "transcription-required": 20
+    },
+    "byLevel": {
+      "A1": {
+        "items": 20,
+        "completeTranscripts": 20,
+        "readyForQuestionRewrite": 20,
+        "transcriptionRequired": 0
+      },
+      "A2": {
+        "items": 20,
+        "completeTranscripts": 0,
+        "readyForQuestionRewrite": 0,
+        "transcriptionRequired": 20
+      },
+      "B1": {
+        "items": 20,
+        "completeTranscripts": 20,
+        "readyForQuestionRewrite": 20,
+        "transcriptionRequired": 0
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "en-a1-legacy-listening-01",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "hello-emma",
+        "exerciseContentSha256": "1c90fc36d2ca356efb1a8d7c73d84b0daf776679d0fdc779f8f7ee0455d8afd1"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 20
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-01.mp3",
+        "sha256": "b6300ad4a3ca54cd8f6216c8f6c8570c2517d15354972d2705b26ab54eeb6ed4",
+        "bytes": 162839,
+        "durationSeconds": 20.323
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-02",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "my-family",
+        "exerciseContentSha256": "3903ef90059e94edbd72086e04ae2b590ff9f3d84d33f27187f8f292abb4230e"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-02.mp3",
+        "sha256": "fffce79b71a39276f16028b4de12c89a22f4cebf6caf4e483ce8442af2c39244",
+        "bytes": 164928,
+        "durationSeconds": 20.584
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-03",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "my-bedroom",
+        "exerciseContentSha256": "704481ad70eadb46acd1add02603f69b28a6bb61f1eb76ec9f727dce0987f4d7"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 20
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-03.mp3",
+        "sha256": "7f24be0e6f0a947207cbfc08cd1721ee1922c3c4b5d75c5c29f2572937e8b075",
+        "bytes": 159704,
+        "durationSeconds": 19.931
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-04",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "our-house",
+        "exerciseContentSha256": "e4389556a04e5d9849866fcc3e2e0370b98c12d8e408c9cde3b41825d5b1b89c"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-04.mp3",
+        "sha256": "d32d89601154d55e9943bcd031dc23d6c4298928f7f734c228b20c5974fe7a46",
+        "bytes": 195021,
+        "durationSeconds": 24.346
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-05",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "my-town",
+        "exerciseContentSha256": "13cf45bbe52354e2082ddcfb16eea724d9e881afc6d34fb2a38dd7cffbd78a1b"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 22
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-05.mp3",
+        "sha256": "d82dedd5746e87d0fee4361c0e97c5d321bf6d9167e6d5ead839477536468523",
+        "bytes": 173079,
+        "durationSeconds": 21.603
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-06",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "morning-routine",
+        "exerciseContentSha256": "cdaf8e758a98c63f9e1f7cb3a2c42e1e1baf52fccb6d79c96756fe4775f5f3ae"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 20
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-06.mp3",
+        "sha256": "1c75b93a487a9c928de67822dbaf4a86c86a8e3110924c0f24262d4c44135e05",
+        "bytes": 162421,
+        "durationSeconds": 20.271
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-07",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "day-at-work",
+        "exerciseContentSha256": "ac82081dd7ea5f704e996f371e06ffd8c7cdaaa0f85ee8600b1960283a36af45"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 20
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-07.mp3",
+        "sha256": "88573bb5c5917c545f0f02dccc34283c7fdd18cfd60e2fcf6dfe3790a1030146",
+        "bytes": 196902,
+        "durationSeconds": 24.581
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-08",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "my-week",
+        "exerciseContentSha256": "43f06bb41ca4b8ef1e76f9160ea60be4f054e63252a1b1bf8410213b77161f5a"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-08.mp3",
+        "sha256": "7bd4a198398a53647d2d7e0540a0211d53fe4afb765bd9b748973b43a46d139f",
+        "bytes": 200037,
+        "durationSeconds": 24.973
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-09",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "saturday-morning",
+        "exerciseContentSha256": "870d2f07b6f0b72bbfa4e7ef1f6118b1f6697a401ca420390c4ff615d614dfaa"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-09.mp3",
+        "sha256": "3fe4a77c0fb1846f5c77694a8c537cb915f07f59f3be8e432c4ee776ccc7e2c2",
+        "bytes": 176840,
+        "durationSeconds": 22.073
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-10",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "class-schedule",
+        "exerciseContentSha256": "9dfe94b221ffe76c52cb8df6c11734322ed2639f6eac01ced0282eaa57523b7c"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 22
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-10.mp3",
+        "sha256": "e729c37aee513ae3809ba1aa66e835923fb70fa76e1ad5b066d3901ab3f96d90",
+        "bytes": 202127,
+        "durationSeconds": 25.234
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-11",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "shopping-list",
+        "exerciseContentSha256": "07a41bff9978f7e0cf5f0789d8d562cfc3e6b499b2b93d1b8736c8726deed619"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-11.mp3",
+        "sha256": "44da0224d913da13858477e9c9b2cbc369e4a7b7264980c6186b61a36f00af5f",
+        "bytes": 196902,
+        "durationSeconds": 24.581
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-12",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "favorite-lunch",
+        "exerciseContentSha256": "e3ffa92294ca31ff522efb1b532b867c8905d8c96abf99c0b0e6ee2eabd220b4"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 27
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-12.mp3",
+        "sha256": "4f1e41b2ef3d31861a3831f2f523ae8491f69a75feb4cdd2f4e9067abf7944c3",
+        "bytes": 214875,
+        "durationSeconds": 26.828
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-13",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "school-clothes",
+        "exerciseContentSha256": "92ae74b08d750b741fba9080d846a90d0e6ec276505a0515f2da0698a7ee0a05"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 22
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-13.mp3",
+        "sha256": "790240bd26231fac6d510f3fbe24d2fb41413d45a1bf191af7e5abe242a9625d",
+        "bytes": 179766,
+        "durationSeconds": 22.439
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-14",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "weather-today",
+        "exerciseContentSha256": "64bd303f5884254db57d85d29cfa5c6b47b426e07464e1459992e382bc4def07"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-14.mp3",
+        "sha256": "f0f564d2205c9211c6498971e0b9cb2980b2fac08e58226ecb8d15330d997a0a",
+        "bytes": 164928,
+        "durationSeconds": 20.584
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-15",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "dog-max",
+        "exerciseContentSha256": "a7086d61aa9d6c7634b581731db7ad59c44b33e1be5b59ac90b3e6304413e10d"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-15.mp3",
+        "sha256": "125fe8468925b98fb4e6a77ee88fb07a6d1f8feee7d66b35730506a1d2b64d15",
+        "bytes": 188752,
+        "durationSeconds": 23.562
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-16",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "park-now",
+        "exerciseContentSha256": "f0e065f6aaf913d6b158a7ebe79bdb97c104932cbaeeff3cfcc42aa71aef8378"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-16.mp3",
+        "sha256": "d87d90c9e150482ff03c3da0b9565299519b54f855213f44256b6947f11e9cad",
+        "bytes": 169526,
+        "durationSeconds": 21.159
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-17",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "things-i-can-do",
+        "exerciseContentSha256": "2374849ba7bd2b6c51a08c65d8b5b474e668ddef1d77ed38dbdfb30cce44931a"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-17.mp3",
+        "sha256": "612e5f70fe0f93cb798d3db71df1dd17a25618b9f244bb5d8ff04d8e5aeb1eed",
+        "bytes": 172452,
+        "durationSeconds": 21.525
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-18",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "saturday-plan",
+        "exerciseContentSha256": "bee921c3756fb9b8a09d5dc35000413d30c5c856452c4fd64bde905114434960"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 30
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-18.mp3",
+        "sha256": "605e56e6667ae8a75f4b6ca3cdbaddae323eee8540db7a9ee8a7106fc5214cd2",
+        "bytes": 237235,
+        "durationSeconds": 29.623
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-19",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "library-directions",
+        "exerciseContentSha256": "f7d2802907ab369999be9869fb6e8497adaa066b1c8a6043e9d93ad5a297d392"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 31
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-19.mp3",
+        "sha256": "8176c965887cb863ad95bcff3da01f3912a62832e3b23997387b073bbcef7503",
+        "bytes": 252073,
+        "durationSeconds": 31.478
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a1-legacy-listening-20",
+      "levelCandidate": "A1",
+      "source": {
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "sourceSha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "exerciseId": "ideal-day",
+        "exerciseContentSha256": "a7f28090f9efcaec939d104d6b68a442c9cd7b0e656d4f2149f970c7a9bf8cd6"
+      },
+      "evidence": {
+        "transcriptLines": 5,
+        "detailQuestions": 3,
+        "totalQuestionObjects": 5,
+        "questionsWithSingleKey": 5,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 32
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a1/listening-20.mp3",
+        "sha256": "385737b782fa47d0dd0bd247ee9331dff0c247e8a73527b15e874da814eafc9b",
+        "bytes": 258342,
+        "durationSeconds": 32.261
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-01",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "empty-shop",
+        "exerciseContentSha256": "6fef457603a9e287e3dee7443d7820aaa0ffbef1097f76841a9df50d9a1e5f2c"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 34
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-01.mp3",
+        "sha256": "0868e1745d611523c063a64523f29012846fd8047bfec1095404729f8dcd09ee",
+        "bytes": 269836,
+        "durationSeconds": 33.698
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-02",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "grandfathers-key",
+        "exerciseContentSha256": "a2ad76fcd9c747d4143e87588071a0dbea66132e8e218f835f960f10e08b37c9"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 32
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-02.mp3",
+        "sha256": "5163e0ac85b35cd5d3ae1d23700ad13cb0d00a4d42ea4b41e08836c9a7ebe148",
+        "bytes": 260014,
+        "durationSeconds": 32.47
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-03",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "first-problem",
+        "exerciseContentSha256": "8ba5686abebae5a7df581ce64cc9cf2837a564193ff67e10c17d21d2cd6372dc"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 34
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-03.mp3",
+        "sha256": "0f59ea148ab12bb84e6513e8d39d975a386926f87faa4115e9c300f484d14752",
+        "bytes": 269836,
+        "durationSeconds": 33.698
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-04",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "rainy-saturday",
+        "exerciseContentSha256": "f7dae6eb2b9839d9e9a8142074cc19bcd2dd66cb32e7b9e5f156d01a83f11e90"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 30
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-04.mp3",
+        "sha256": "6949af4a9023fe1347ab77822af8ddff10eca738f532f2103cb00733d6c25a1a",
+        "bytes": 237026,
+        "durationSeconds": 29.597
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-05",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "better-name",
+        "exerciseContentSha256": "5f1110d93bb84f809af82bd05f95342d517d6761b94d688b438836c0d8a2bc95"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-05.mp3",
+        "sha256": "f919d3d62062b7df34f7ed3deca8e7af2deab229e02b1397864ca8b25c806151",
+        "bytes": 200664,
+        "durationSeconds": 25.051
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-06",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "best-table",
+        "exerciseContentSha256": "f3966a063db7376a997e158208b6fa1f66d0435b741803eb4b71f53d2982fc3e"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 23
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-06.mp3",
+        "sha256": "7f35b876f2b191fdf8f2df4cd3a2eceb489805b062763c8d7b82be070df3812f",
+        "bytes": 181229,
+        "durationSeconds": 22.622
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-07",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "opening-weekend",
+        "exerciseContentSha256": "0a67d86537dd8e5d459ae84d6c1fd73660522a8418caac57d58c65517c6852a1"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-07.mp3",
+        "sha256": "9d0d7589252f6d743cdf0a86f3d19d6de87c02dac75781f2495c4a075a212395",
+        "bytes": 200664,
+        "durationSeconds": 25.051
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-08",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "promise-library",
+        "exerciseContentSha256": "5a079d5ca29ed08747d426752f3d13184d4409f9d40eccac9e3295aab7ed1322"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-08.mp3",
+        "sha256": "8be550e1e0d8f17de1ae74e265873ffb048137e1fcb60c628c4b6b0699cd31ce",
+        "bytes": 190633,
+        "durationSeconds": 23.798
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-09",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "already-done",
+        "exerciseContentSha256": "d6f0d83b7cf2ecf1cb49c1474d92c6bd55f50c7e9832ae10df4e19875a6f9bd3"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-09.mp3",
+        "sha256": "626e8c9e924154732dcddf37eb11c82392cf945f27d62b7131cb706da4ff9d4d",
+        "bytes": 167227,
+        "durationSeconds": 20.872
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-10",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "menu-test",
+        "exerciseContentSha256": "56ef0575ad9917c481227ab8011dba122bfd8818b61c85d98e271868b27a1ce6"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-10.mp3",
+        "sha256": "3281ef92cdc7f5fd870ee0b471239d933bc8599cbaa7458ff1988b6d4e12b1df",
+        "bytes": 189797,
+        "durationSeconds": 23.693
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-11",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "budget-jar",
+        "exerciseContentSha256": "9c91d31ad4f7e1db1acb4ffbacaacced78cf51a670f47166e140ce83eaf43cab"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-11.mp3",
+        "sha256": "c2c87fe9a70b1906f196d32b59d25a632a48154ea8af95f35db7a125e8e9f8f9",
+        "bytes": 169526,
+        "durationSeconds": 21.159
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-12",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "opening-rules",
+        "exerciseContentSha256": "cf2f2f08085d5be0dcb799406989d52e3b06990324100710d04279726b0e5464"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 21
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-12.mp3",
+        "sha256": "5c5a211e5fc861fcbdf17f7216747b17455bde235f32769a9623aa1c66deacf3",
+        "bytes": 168272,
+        "durationSeconds": 21.002
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-13",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "if-it-rains",
+        "exerciseContentSha256": "7f022a032585ee2060a1a2c0502fb26a8858263724f318c532c7542d751042a5"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-13.mp3",
+        "sha256": "5f5c0b380955d08eaf042846c25a6fd447ad765ce4cfd5d2fd0e46b958299451",
+        "bytes": 193559,
+        "durationSeconds": 24.163
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-14",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "why-started",
+        "exerciseContentSha256": "fbc20bb1530b592bcb006933a74227cab6c2cedf4c32a408015667ce2794bd8d"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-14.mp3",
+        "sha256": "072360c646e6e2bbb1256c1cfd240a88d072fba4f21e3cea4b205e9fdaf9522a",
+        "bytes": 191051,
+        "durationSeconds": 23.85
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-15",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "real-morning",
+        "exerciseContentSha256": "308756b3c316095bfe2feff22e7a460a26f5fa6977be12c93fe078eb4d200c6d"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 24
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-15.mp3",
+        "sha256": "3527134328e995e87a2963f4161bfcd40c13b84922d55db50c801710d42dc0d5",
+        "bytes": 188752,
+        "durationSeconds": 23.562
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-16",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "first-review",
+        "exerciseContentSha256": "76388043998ae96ed9b8009895b91143b362b9cbd3d7d886a1912e83b5df5135"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 28
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-16.mp3",
+        "sha256": "0fc05218b363874ea9e8a8b9c94fa4d735a01f02ef86c7847a768863f9a4239d",
+        "bytes": 221144,
+        "durationSeconds": 27.611
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-17",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "missing-key",
+        "exerciseContentSha256": "b88bfeb93157a7df6b78de01312c12c9e4f6b21f88e1b9944ecb419df9988b29"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 29
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-17.mp3",
+        "sha256": "aac3dd42d391735e28e6fc53a0ba289feeaab6a37a1a461bea5e4bc2f0095c8b",
+        "bytes": 233265,
+        "durationSeconds": 29.127
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-18",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "community-map",
+        "exerciseContentSha256": "2bf7f75e0645977ddb8871005177163ba6cfaf732616a99622b76614132f2464"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 25
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-18.mp3",
+        "sha256": "e1102372c7cc6df12750f95fca671722cdaa958797d3464ba4e54d1673ab2247",
+        "bytes": 203590,
+        "durationSeconds": 25.417
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-19",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "new-saturday-plan",
+        "exerciseContentSha256": "39febc108b89f739530b1a90182f56502137ea745e575c4acfacaa909b8aa58b"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 23
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-19.mp3",
+        "sha256": "22f63db0935395a670941eb21a4ef5dec7dbdb21d489e740a2f438a95e6eb7d4",
+        "bytes": 186871,
+        "durationSeconds": 23.327
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-a2-legacy-listening-20",
+      "levelCandidate": "A2",
+      "source": {
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "sourceSha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "exerciseId": "door-stays-open",
+        "exerciseContentSha256": "7aa5f089b2d8dcaacc99775fbd72295ea4f9499168291e5398e1961ba59c788b"
+      },
+      "evidence": {
+        "transcriptLines": 0,
+        "detailQuestions": 1,
+        "totalQuestionObjects": 3,
+        "questionsWithSingleKey": 3,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 28
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/a2/listening-20.mp3",
+        "sha256": "3b0406bce3b7ad787481894ac367e0926d4e5c44795f5687b690831107d13934",
+        "bytes": 221353,
+        "durationSeconds": 27.638
+      },
+      "disposition": "transcription-required",
+      "requiredActions": [
+        "transcribe-audio",
+        "verify-transcript-humanly",
+        "author-target-language-testlet",
+        "independent-linguistic-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-01",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "letter-on-the-door",
+        "exerciseContentSha256": "c343b8e666d76f97e50fb370925c8b3e67b3ae2036aa54e46d8e4d95b64bd406"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-01.mp3",
+        "sha256": "5f182b2d24b1ddbb3a636ba89a974cab6fee44e2b1ef09419b053d4fc5eccca6",
+        "bytes": 283002,
+        "durationSeconds": 35.344
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-02",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "what-the-owner-had-decided",
+        "exerciseContentSha256": "84605e36b3bb4215bc7ea96b18278d27b0ce51a5175354d0bd02202bc55c2446"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 58
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-02.mp3",
+        "sha256": "235db677f644a1c2e7c823c1c571fd82383d17b99890ddbaaf90b276b7619fce",
+        "bytes": 324380,
+        "durationSeconds": 40.516
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-03",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "were-going-to-fight",
+        "exerciseContentSha256": "2be28c5ef2a9611cb11794288528394565dfeba04b3cab407008a5b773e2007e"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 52
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-03.mp3",
+        "sha256": "aff398c34ca4bd06a36698df6401f6537e5677520ca1e0811ed17a01b14a7941",
+        "bytes": 250819,
+        "durationSeconds": 31.321
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-04",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "everything-we-have-built",
+        "exerciseContentSha256": "8078e67fe8c7beec50321779b3caf45dbba0d02a4dce0e1c5288a8509600ef0d"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-04.mp3",
+        "sha256": "cb017b2b1f906460d71e0b161a4f2f669aaa4cf411d6414b4d79bbead0d3aca7",
+        "bytes": 299093,
+        "durationSeconds": 37.355
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-05",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "weve-been-working-for-months",
+        "exerciseContentSha256": "8ddce910b135bddc7c64fafd7106b5ebf55e1c7cbe432424834467d85e001efe"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-05.mp3",
+        "sha256": "c0b8e31e2ee0a3e1de43a44abcc67e1a6aed321dcbe7d361ab16557ccafa8c66",
+        "bytes": 349248,
+        "durationSeconds": 43.624
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-06",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "if-we-raise-enough",
+        "exerciseContentSha256": "87428f888d039d8a19ea2d453a026440d1c4dbbd20ea777d27b23efd75d76f4f"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-06.mp3",
+        "sha256": "041f0417af7a049132d769a8ec950beb6eec1d3d6975e1d8584a6eae8aa60b14",
+        "bytes": 322499,
+        "durationSeconds": 40.281
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-07",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "if-i-were-the-owner",
+        "exerciseContentSha256": "239cbb1f25b08bf5602810c528209ef5ff75755cc9eb9a001e99caaeb1eafedf"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-07.mp3",
+        "sha256": "298dfb12a8608b622310e6aa66f9b084fc825efea43cc0e2ffb359fc0e29e384",
+        "bytes": 314558,
+        "durationSeconds": 39.288
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-08",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "what-we-must-do-by-friday",
+        "exerciseContentSha256": "b2df56a038472cef616be45d0f9643310756e5c8fc02b23b38ae1f3bb869e262"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 52
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-08.mp3",
+        "sha256": "2efef4102a2de61d7aa7ef92a6b1436647330471636c0f8526e4a858b4b97f4e",
+        "bytes": 292406,
+        "durationSeconds": 36.519
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-09",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "the-corner-that-was-loved",
+        "exerciseContentSha256": "19a5bdf6294acdf6c4713c203eb485929fee5e49255b70177ed59db31adeea53"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 58
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-09.mp3",
+        "sha256": "4326775e770e56b4469de26b9de012748ae38e7157cad3c608118dc55b23ebf3",
+        "bytes": 355100,
+        "durationSeconds": 44.356
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-10",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "the-people-who-help",
+        "exerciseContentSha256": "3302b2f3d278fee0ca99219015ed76309ef2ce03e3b60509ec741e8218c893b6"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-10.mp3",
+        "sha256": "74c0a8dca4df6953a955363c5b77deb0cdc9ff1b8cca5edc4cec2ffdc267bd4c",
+        "bytes": 318737,
+        "durationSeconds": 39.811
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-11",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "why-i-keep-going",
+        "exerciseContentSha256": "48fc1b533904f69fde1bf58b9b6f05240c0d0ec379cfa358cc8c933eec41b16d"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-11.mp3",
+        "sha256": "dc644b1cb7ebe2da1b92fb547fcd49f98069778f36a8a3de8157d1004e9a1be9",
+        "bytes": 312259,
+        "durationSeconds": 39.001
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-12",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "what-the-bank-said",
+        "exerciseContentSha256": "cce13373d889ce7fb9c8da20b22ff0756e682ff1954ddadc777777f6811d6f6d"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 60
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-12.mp3",
+        "sha256": "8d6629682d499685c1992bb2fc7410415686c9846c34ecab2f694d73e73445ed",
+        "bytes": 332112,
+        "durationSeconds": 41.482
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-13",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "the-better-offer",
+        "exerciseContentSha256": "4cc7b5aca398c3172112571463b9374204e2e0faffc564648f66ed07dbabbc46"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-13.mp3",
+        "sha256": "32d0a35351118cd4482513d6f9896a18f047b5f87a61bf6a13d581155421d2f2",
+        "bytes": 328768,
+        "durationSeconds": 41.064
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-14",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "counting-every-coin",
+        "exerciseContentSha256": "dd26ed46b8e07b55a37b6505f09d3f59ae461bad7b8d0914af6d59a5514dab8b"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 52
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-14.mp3",
+        "sha256": "4b4c05df16078fcbe1136222e023eda5fcb9a5e7cc5e4aee7cb7e19a81527227",
+        "bytes": 324589,
+        "durationSeconds": 40.542
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-15",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "the-corner-a-home-the-idea",
+        "exerciseContentSha256": "195e0544a3e7d9b90052fde6b5144ab25a2d1bfcb996e45b264c4893a4e175d3"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 62
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-15.mp3",
+        "sha256": "d886e9560c5aa5bd0820764f9ecc80d64ec8e161a562cebbe481530e8c3ba680",
+        "bytes": 384566,
+        "durationSeconds": 48.039
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-16",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "we-wont-give-up",
+        "exerciseContentSha256": "cced48a924eb139381494157439f37c8fd6d0bc6f8fb7eb39bacb22dd96f9680"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 58
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-16.mp3",
+        "sha256": "2e7fb4cf5ef38b7933ff0852872169dee095324072b327f9a739829b37a8c83e",
+        "bytes": 311841,
+        "durationSeconds": 38.949
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-17",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "as-soon-as-the-bank-opens",
+        "exerciseContentSha256": "371ddffa38e22e926e022aaf52a1e04a49537d3ef902f876853c46828b8a20e5"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 55
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-17.mp3",
+        "sha256": "144f773c3beb0e90730bdd0b01c2649b1272d3ebf2ba125ed73d3d3d27423c6b",
+        "bytes": 346114,
+        "durationSeconds": 43.233
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-18",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "we-did-it-didnt-we",
+        "exerciseContentSha256": "33b9666f86c57b2bc271f2dc32cd66329b98907980a0ac9a43feb397a6f8eb7a"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 58
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-18.mp3",
+        "sha256": "a647e0e517fa7231cabafd508b16eef5101ff5c9ed119790387766c20053394b",
+        "bytes": 344651,
+        "durationSeconds": 43.05
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-19",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "i-wish-he-could-see-this",
+        "exerciseContentSha256": "ca90061aa14e51113df481085cfe03ba11f2e3a7543506102e59a35b6a08bdc4"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 58
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-19.mp3",
+        "sha256": "d95c37c6619ea6396b0800893e0f24e5d8ac2c194026c26bae1c94e938cb82fc",
+        "bytes": 367639,
+        "durationSeconds": 45.923
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    },
+    {
+      "id": "en-b1-legacy-listening-20",
+      "levelCandidate": "B1",
+      "source": {
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "sourceSha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "exerciseId": "the-door-stays-open-after-all",
+        "exerciseContentSha256": "3a356b21ac353547ce3e3665d188e2bac641ec4eab6e1dd8dba67f375e8a921f"
+      },
+      "evidence": {
+        "transcriptLines": 7,
+        "detailQuestions": 2,
+        "totalQuestionObjects": 4,
+        "questionsWithSingleKey": 4,
+        "promptLanguage": "es",
+        "targetAudioLanguage": "en",
+        "expectedDurationSeconds": 60
+      },
+      "audio": {
+        "privatePath": ".diagnostic-private/legacy-audio/en/b1/listening-20.mp3",
+        "sha256": "b6f4aaa399a1cb4972ec79e2d2bf0f57937be5686ce995896f21dddd34ec98d4",
+        "bytes": 353010,
+        "durationSeconds": 44.095
+      },
+      "disposition": "ready-for-english-question-rewrite",
+      "requiredActions": [
+        "rewrite-prompts-and-options-in-target-language",
+        "independent-linguistic-review",
+        "human-audio-alignment-review"
+      ]
+    }
+  ]
+}

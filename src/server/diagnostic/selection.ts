@@ -42,6 +42,7 @@ function seedFingerprint(seed: string): string {
 function isSelectable(record: DiagnosticBankRecord, language: string, excluded: ReadonlySet<string>): boolean {
   return record.publicItem.language === language
     && (record.status === 'pilot' || record.status === 'operational')
+    && record.exposure === 'reserved'
     && record.review.status === 'approved'
     && !excluded.has(record.publicItem.id);
 }

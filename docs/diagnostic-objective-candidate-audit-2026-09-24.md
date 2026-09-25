@@ -41,12 +41,35 @@ revisión lingüística.
    propósito como insumo editorial, no como evidencia de nivel MCER.
 4. Los motores existentes de MCQ, cloze y matching, siempre con contenido reservado nuevo.
 
+### Resultado de los 60 audios retirados de inglés
+
+La segunda auditoría enlazó cada MP3 recuperado con el objeto editorial exacto guardado en Git:
+
+- **A1: 20/20** tienen transcripción y al menos tres preguntas con una sola clave; pueden pasar
+  a reescritura de preguntas y opciones en inglés.
+- **A2: 0/20** tienen transcripción en la fuente recuperada; conservan audio y metadatos, pero
+  requieren transcripción verificada antes de escribir un testlet.
+- **B1: 20/20** tienen transcripción y preguntas suficientes; pueden pasar a reescritura en
+  inglés.
+
+Los prompts y opciones heredados están en español. No se reutilizarán porque añadirían
+comprensión lectora en la lengua materna al constructo de escucha. Los 60 audios miden entre
+menos de tres minutos y ya son fragmentos cerrados; no necesitan el recorte de los masters
+Cambridge, aunque sí alineación auditiva humana.
+
+Como primera tanda editorial se escribieron **12 decisiones A1 y 12 B1** en inglés, distribuidas
+en seis audios por nivel. Permanecen como borradores `previously-public`: sirven para revisión y
+piloto, pero el selector productivo solo admite exposición `reserved`. Una decisión académica
+posterior deberá escoger entre regenerar formas de audio equivalentes y reservadas o aceptar de
+manera explícita el riesgo de exposición para un piloto de bajo impacto.
+
 ## Qué no se reutiliza directamente
 
 - enunciados u opciones ya visibles en páginas de práctica;
 - explicaciones o claves incluidas en módulos importables por cliente;
 - la etiqueta `difficulty` de ICFES como nivel MCER;
 - un MP3 completo de sección para puntuar una sola decisión;
+- preguntas de escucha en español para un diagnóstico de comprensión auditiva en inglés;
 - la etiqueta genérica `Reading & Use of English` para asignar todos sus ítems a gramática;
 - una puntuación o nivel producido antes de revisión y pilotaje.
 
@@ -61,4 +84,3 @@ Cada promoción futura exigirá contenido nuevo, clave y racional en servidor, h
 contenido revisado, aprobación lingüística independiente y estado explícito de piloto. El paso
 de piloto a operativo exigirá parámetros empíricos y no ocurrirá por una edición manual del
 estado.
-

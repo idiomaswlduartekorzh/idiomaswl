@@ -35,7 +35,10 @@ Actualizado el 24 de septiembre de 2026:
   965 interacciones objetivas de ICFES, TOEFL y Cambridge quedaron clasificadas por habilidad,
   rango candidato, exposición de clave, huella y reparación requerida. El análisis demuestra
   que 820 están concentradas en B2, 840 exponen su clave en material público y los 40 MP3 de
-  Cambridge necesitan segmentación. Ningún candidato se considera aprobado lingüísticamente.
+  Cambridge necesitan segmentación. La auditoría de contenido recuperado confirmó que los 20
+  audios A1 y los 20 B1 tienen transcripción suficiente para reescribir testlets en inglés; los
+  20 A2 exigen transcripción verificada. Ningún candidato se considera aprobado
+  lingüísticamente.
 - **Fase 2 — núcleo en progreso:** contratos público/privado, scoring objetivo en servidor,
   validación antimanipulación y una migración durable con tablas de intentos, etapas,
   respuestas, escritura y auditoría implementados. Las tablas niegan acceso directo a roles de
@@ -54,6 +57,11 @@ Actualizado el 24 de septiembre de 2026:
 - **Fase 5 — núcleo de escritura iniciado:** rúbrica de cuatro criterios A1–C2, validación de
   evidencia, comparación humano/modelo y adjudicación implementadas. Hay 24 consignas
   reservadas —cuatro por nivel— en estado borrador, pendientes de aprobación lingüística.
+- **Banco objetivo — primera tanda editorial:** 24 decisiones de escucha en inglés —12 A1 y
+  12 B1, sobre seis audios distintos por nivel— reescritas a partir de audios recuperados. Las
+  claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
+  previamente público; el selector bloquea cualquier contenido que no tenga exposición
+  `reserved`, incluso si alguien cambia por error su estado a aprobado.
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.

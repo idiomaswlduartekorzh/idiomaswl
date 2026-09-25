@@ -107,10 +107,12 @@ test('reports bank capacity deficits and refuses silent underfilled forms', () =
 test('draft, unreviewed and non-English items never enter a delivered form', () => {
   const bank = completeBank();
   bank.push(fixtureRecord('reading', 'A2', 99, { review: { status: 'draft' } }));
+  bank.push(fixtureRecord('reading', 'A2', 97, { exposure: 'previously-public' }));
   bank.push(fixtureRecord('reading', 'A2', 98, {
     publicItem: { ...fixtureRecord('reading', 'A2', 98).publicItem, language: 'es' },
   }));
   const selected = selectEnglishLocator(bank, 'attempt-filter');
   assert.equal(selected.records.some(record => record.publicItem.id.endsWith('-99')), false);
   assert.equal(selected.records.some(record => record.publicItem.id.endsWith('-98')), false);
+  assert.equal(selected.records.some(record => record.publicItem.id.endsWith('-97')), false);
 });
