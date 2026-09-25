@@ -65,7 +65,7 @@ Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
-Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: medición anónima de sesiones
+Estado: `DESPLEGADO_PRODUCCION`. Responsable: Codex. Alcance: medición anónima de sesiones
 activas, detección estimada de bots, API administrativa y tarjeta en
 `/dashboard/admin`. Compartidos reservados: `src/app/layout.tsx`, `src/proxy.ts`,
 migraciones de Supabase y este documento. Requiere una migración nueva, sin
@@ -77,8 +77,13 @@ producción. Verificación: seis columnas esperadas, RLS activo, `anon` y
 índices y cero filas iniciales. Los asesores de seguridad y rendimiento no
 reportaron errores ni advertencias para `site_presence`. Validación local:
 5/5 pruebas de presencia, TypeScript, ESLint focalizado, catálogo de prácticas,
-build completo de Next.js y smoke visual/HTTP. Pendiente: integrar en `main`,
-comprobar el deployment exacto de Vercel y ejecutar smoke productivo.
+build completo de Next.js y smoke visual/HTTP. Integrado en `main` por el commit
+`2e608ac0`; el deployment productivo final también contiene el commit posterior
+`38f46db8`. Vercel `3LKF2yaNEyLhfwuQDof8zknsmRPm` quedó `Ready`, `Latest` y
+`Current` para `www.idiomaswl.com`. Smoke final: página pública `200`, heartbeat
+humano `204`, visita bot `200`, API administrativa anónima `403` y panel anónimo
+redirigido a `/login`. Supabase confirmó filas recientes tanto `person/heartbeat`
+como `bot/request`.
 
 ## 1. Resultado que debe producir este plan
 
