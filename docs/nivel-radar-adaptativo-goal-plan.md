@@ -299,10 +299,10 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  corte `8272e872` quedó verificado con **267/267 pruebas**, TypeScript sin errores, un build de
+  corte `b99918aa` quedó verificado con **270/270 pruebas**, TypeScript sin errores, un build de
   **2.564 páginas estáticas** y **4/4 historias E2E**. La huella de fuente
-  `ec61e91a9f409bbdf2cbcc4979f23d1e6abd80a54285192bfbae42556919589e` y el recibo privado
-  `7efe396a68bbcb1b3243e775bd32acffcd593051ca1c67856e09b4fd3a3c4b92` dejan el gate de
+  `db6ae05a60e34a1b06de1b31e0a4e7f0f0799b61cb7d52eeb6a4a2fa7852a2df` y el recibo privado
+  `72a6dd418a9ac8e4195663a51414a28b4f3391c53a4ef3bc728be6c8e36d2b0b` dejan el gate de
   calidad atado exactamente a ese código.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
   paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.
