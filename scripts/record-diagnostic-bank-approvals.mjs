@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 import assert from 'node:assert/strict';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+import { readFileSync, renameSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -17,24 +19,51 @@ import {
   releaseApprovedWritingBank,
 } from '../src/server/diagnostic/bank/release.ts';
 import {
+  buildDiagnosticBankApprovalProposal,
+  recordDiagnosticBankApprovalProposal,
+} from './lib/diagnostic-bank-approval-record.mjs';
+import {
   compileDiagnosticApprovals,
   validateCompletedDiagnosticReviewPacket,
 } from './lib/diagnostic-review-workflow.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const privateRoot = path.resolve(root, '.diagnostic-private');
 const cli = process.argv.slice(2);
 const value = flag => {
   const argument = cli.find(row => row.startsWith(`${flag}=`));
-  return argument ? argument.slice(flag.length + 1) : null;
+  return argument ? argument.slice(flag.length + 1) : '';
 };
-const receiptPaths = cli.filter(argument => !argument.startsWith('--')).map(file => path.resolve(file));
-const manifestPath = path.resolve(value('--manifest') ?? path.join(root, 'config/diagnostic/english-bank-approvals.json'));
-const manifestVersion = value('--manifest-version');
 for (const argument of cli.filter(row => row.startsWith('--'))) {
-  assert.ok(argument.startsWith('--manifest=') || argument.startsWith('--manifest-version='), `Unknown flag: ${argument}`);
+  assert.ok(['--manifest=', '--manifest-version=', '--confirm=', '--applied-by='].some(prefix => argument.startsWith(prefix))
+    || argument === '--write', `Unknown flag: ${argument}`);
 }
-assert.ok(receiptPaths.length >= 2, 'Provide at least two independent completed review receipts');
-assert.ok(manifestVersion?.trim(), '--manifest-version is required and must identify this approval revision');
+
+const receiptArguments = cli.filter(argument => !argument.startsWith('--'));
+assert.ok(receiptArguments.length >= 2, 'Provide at least two independent completed review receipts');
+const receiptPaths = receiptArguments.map(argument => {
+  const resolved = path.resolve(root, argument);
+  const relative = path.relative(privateRoot, resolved);
+  assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative),
+    'Completed review receipts must stay below .diagnostic-private/.');
+  assert.ok(path.basename(resolved).endsWith('.completed.json'),
+    'Completed review receipt filenames must end in .completed.json.');
+  return resolved;
+});
+assert.equal(new Set(receiptPaths).size, receiptPaths.length, 'Completed review receipt paths must be unique');
+
+const defaultManifestPath = path.resolve(root, 'config/diagnostic/english-bank-approvals.json');
+const manifestArgument = value('--manifest');
+const manifestPath = manifestArgument ? path.resolve(root, manifestArgument) : defaultManifestPath;
+if (manifestPath !== defaultManifestPath) {
+  const relative = path.relative(privateRoot, manifestPath);
+  assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative),
+    'A custom approval manifest may only be written below .diagnostic-private/.');
+}
+const manifestVersion = value('--manifest-version');
+assert.ok(manifestVersion, '--manifest-version is required and must identify this approval revision');
+const workingTree = execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim();
+assert.equal(workingTree, '', 'Recording diagnostic bank approvals requires a clean working tree.');
 
 const objectiveCandidates = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
@@ -44,9 +73,17 @@ const objectiveCandidates = [
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
 ];
-const packets = receiptPaths.map(file => JSON.parse(readFileSync(file, 'utf8')));
-const signatures = packets.map(packet => validateCompletedDiagnosticReviewPacket(
-  packet,
+const receiptEntries = receiptPaths.map(file => {
+  const bytes = readFileSync(file);
+  const packet = JSON.parse(bytes.toString('utf8'));
+  return {
+    file: path.basename(file),
+    sha256: createHash('sha256').update(bytes).digest('hex'),
+    packet,
+  };
+});
+const signatures = receiptEntries.map(entry => validateCompletedDiagnosticReviewPacket(
+  entry.packet,
   objectiveCandidates,
   ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES,
 ));
@@ -56,26 +93,58 @@ assert.equal(compiled.changesRequested.length, 0, `Changes requested: ${compiled
 assert.ok(compiled.objectiveApprovals.length + compiled.writingApprovals.length > 0, 'No complete approvals were found');
 
 const existing = JSON.parse(readFileSync(manifestPath, 'utf8'));
-assert.notEqual(manifestVersion.trim(), existing.manifestVersion, '--manifest-version must identify a new approval revision');
-const merge = (current, additions) => {
-  const byId = new Map(current.map(approval => [approval.itemId, approval]));
-  for (const approval of additions) byId.set(approval.itemId, approval);
-  return [...byId.values()].sort((left, right) => left.itemId.localeCompare(right.itemId));
+const built = buildDiagnosticBankApprovalProposal({
+  existingManifest: existing,
+  compiled,
+  manifestVersion,
+  receiptReferences: receiptEntries.map(entry => ({
+    file: entry.file,
+    sha256: entry.sha256,
+    packetId: entry.packet.packetId,
+    role: entry.packet.role,
+    reviewerId: entry.packet.reviewer.id.trim(),
+  })),
+});
+const candidateManifest = recordDiagnosticBankApprovalProposal({
+  proposal: built.proposal,
+  proposalSha256: built.proposalSha256,
+  appliedAt: new Date().toISOString(),
+  appliedBy: value('--applied-by') || 'dry-run-placeholder',
+});
+releaseApprovedObjectiveBank(objectiveCandidates, candidateManifest);
+releaseApprovedWritingBank(ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES, candidateManifest);
+const confirmation = `APPLY_DIAGNOSTIC_BANK_APPROVALS:${built.proposalSha256}:${built.receiptSetSha256}`;
+const summary = {
+  decision: 'VALID_BANK_APPROVALS_READY_TO_APPLY',
+  manifest: path.relative(root, manifestPath),
+  manifestVersion: built.proposal.manifestVersion,
+  proposalSha256: built.proposalSha256,
+  receiptSetSha256: built.receiptSetSha256,
+  sourceReceiptCount: built.proposal.sourceReceipts.length,
+  addedObjectiveApprovals: built.addedObjectiveApprovals,
+  addedWritingApprovals: built.addedWritingApprovals,
+  totalObjectiveApprovals: built.proposal.objectiveApprovals.length,
+  totalWritingApprovals: built.proposal.writingApprovals.length,
 };
-const manifest = {
-  manifestVersion: manifestVersion.trim(),
-  updatedAt: new Date().toISOString(),
-  objectiveApprovals: merge(existing.objectiveApprovals ?? [], compiled.objectiveApprovals),
-  writingApprovals: merge(existing.writingApprovals ?? [], compiled.writingApprovals),
-};
+if (!cli.includes('--write')) {
+  process.stdout.write(`${JSON.stringify(summary, null, 2)}\n`);
+  process.stdout.write(`Dry run only. To apply, add --write --applied-by=<operator> --confirm=${confirmation}\n`);
+  process.exit(0);
+}
+assert.equal(value('--confirm'), confirmation, 'Bank approval confirmation does not match the exact proposal and receipt set.');
+assert.ok(value('--applied-by'), '--applied-by is required when writing diagnostic bank approvals.');
+const appliedAt = new Date().toISOString();
+const manifest = recordDiagnosticBankApprovalProposal({
+  proposal: built.proposal,
+  proposalSha256: built.proposalSha256,
+  appliedAt,
+  appliedBy: value('--applied-by'),
+});
 releaseApprovedObjectiveBank(objectiveCandidates, manifest);
 releaseApprovedWritingBank(ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES, manifest);
-writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+const temporaryPath = `${manifestPath}.tmp-${process.pid}`;
+writeFileSync(temporaryPath, `${JSON.stringify(manifest, null, 2)}\n`, { flag: 'wx' });
+renameSync(temporaryPath, manifestPath);
 process.stdout.write(`${JSON.stringify({
-  manifest: manifestPath,
-  manifestVersion: manifest.manifestVersion,
-  addedObjectiveApprovals: compiled.objectiveApprovals.length,
-  addedWritingApprovals: compiled.writingApprovals.length,
-  totalObjectiveApprovals: manifest.objectiveApprovals.length,
-  totalWritingApprovals: manifest.writingApprovals.length,
+  ...summary, decision: 'APPLIED', appliedAt, appliedBy: value('--applied-by'),
 }, null, 2)}\n`);

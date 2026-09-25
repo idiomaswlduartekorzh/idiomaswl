@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 import { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } from '../src/server/diagnostic/bank/listening.en.ts';
@@ -9,6 +10,10 @@ import {
   createDiagnosticReviewPacket,
   validateCompletedDiagnosticReviewPacket,
 } from '../scripts/lib/diagnostic-review-workflow.mjs';
+import {
+  buildDiagnosticBankApprovalProposal,
+  recordDiagnosticBankApprovalProposal,
+} from '../scripts/lib/diagnostic-bank-approval-record.mjs';
 
 const generatedAt = '2026-09-25T12:00:00.000Z';
 const reading = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 1);
@@ -98,4 +103,84 @@ test('changes requested never compile into an approval', () => {
   assert.deepEqual(compiled.changesRequested, ['objective:en-a1-reading-01-q1']);
   assert.equal(compiled.objectiveApprovals.length, 0);
   assert.equal(compiled.writingApprovals.length, 1);
+});
+
+test('bank approval proposal binds completed private receipts and merges without silent loss', () => {
+  const objectiveApproval = {
+    itemId: 'new-objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewedAt: generatedAt,
+    reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
+  };
+  const writingApproval = {
+    itemId: 'new-writing', contentVersion: 'v1', contentSha256: 'b'.repeat(64), reviewedAt: generatedAt,
+    reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
+  };
+  const receiptReferences = [
+    { file: 'linguistic.completed.json', sha256: '1'.repeat(64), packetId: 'packet:linguistic', role: 'linguistic-reviewer', reviewerId: 'linguist-1' },
+    { file: 'assessment.completed.json', sha256: '2'.repeat(64), packetId: 'packet:assessment', role: 'assessment-reviewer', reviewerId: 'assessor-1' },
+  ];
+  const built = buildDiagnosticBankApprovalProposal({
+    existingManifest: {
+      manifestVersion: 'previous-v1', objectiveApprovals: [{ ...objectiveApproval, itemId: 'existing-objective' }], writingApprovals: [],
+    },
+    compiled: { objectiveApprovals: [objectiveApproval], writingApprovals: [writingApproval], incomplete: [], changesRequested: [] },
+    manifestVersion: 'next-v2',
+    receiptReferences,
+  });
+  assert.equal(built.proposal.objectiveApprovals.length, 2);
+  assert.equal(built.proposal.writingApprovals.length, 1);
+  assert.equal(built.proposal.sourceReceipts.length, 2);
+  assert.match(built.proposalSha256, /^[a-f0-9]{64}$/u);
+  assert.match(built.receiptSetSha256, /^[a-f0-9]{64}$/u);
+  const manifest = recordDiagnosticBankApprovalProposal({
+    proposal: built.proposal,
+    proposalSha256: built.proposalSha256,
+    appliedAt: '2026-09-25T13:00:00.000Z',
+    appliedBy: 'release-operator',
+  });
+  assert.equal(manifest.manifestVersion, 'next-v2');
+  assert.equal(manifest.application.proposalSha256, built.proposalSha256);
+  assert.equal(manifest.application.appliedBy, 'release-operator');
+});
+
+test('bank approval proposal rejects templates, incomplete decisions and post-review tampering', () => {
+  const compiled = {
+    objectiveApprovals: [{
+      itemId: 'objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewedAt: generatedAt,
+      reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
+    }],
+    writingApprovals: [], incomplete: [], changesRequested: [],
+  };
+  const base = {
+    existingManifest: { manifestVersion: 'previous-v1', objectiveApprovals: [], writingApprovals: [] },
+    compiled,
+    manifestVersion: 'next-v2',
+    receiptReferences: [
+      { file: 'linguistic.completed.json', sha256: '1'.repeat(64), packetId: 'p1', role: 'linguistic-reviewer', reviewerId: 'linguist-1' },
+      { file: 'assessment.completed.json', sha256: '2'.repeat(64), packetId: 'p2', role: 'assessment-reviewer', reviewerId: 'assessor-1' },
+    ],
+  };
+  assert.throws(() => buildDiagnosticBankApprovalProposal({
+    ...base,
+    receiptReferences: [{ ...base.receiptReferences[0], file: 'linguistic.template.json' }, base.receiptReferences[1]],
+  }), /incomplete, unsafe or duplicated/);
+  assert.throws(() => buildDiagnosticBankApprovalProposal({
+    ...base, compiled: { ...compiled, incomplete: [{ identity: 'objective', missingRoles: ['assessment-reviewer'] }] },
+  }), /Only complete approval decisions/);
+  const built = buildDiagnosticBankApprovalProposal(base);
+  assert.throws(() => recordDiagnosticBankApprovalProposal({
+    proposal: { ...built.proposal, manifestVersion: 'tampered' }, proposalSha256: built.proposalSha256,
+    appliedAt: '2026-09-25T13:00:00.000Z', appliedBy: 'release-operator',
+  }), /invalid or changed/);
+});
+
+test('bank approval recorder is private, clean-tree, dry-run and confirmation bound', () => {
+  const source = readFileSync(new URL('../scripts/record-diagnostic-bank-approvals.mjs', import.meta.url), 'utf8');
+  assert.match(source, /Completed review receipts must stay below \.diagnostic-private/);
+  assert.match(source, /\.completed\.json/);
+  assert.match(source, /requires a clean working tree/);
+  assert.match(source, /Dry run only/);
+  assert.match(source, /APPLY_DIAGNOSTIC_BANK_APPROVALS/);
+  assert.match(source, /--write/);
+  assert.match(source, /--applied-by/);
+  assert.match(source, /renameSync/);
 });

@@ -206,6 +206,27 @@ del piloto. No marca el borrado como probado, no aprueba el banco y no valida re
 piloto. Cambiar cualquier regla o umbral después de la aprobación invalida su snapshot aunque los
 metadatos de aprobación cambien.
 
+### Aprobación editorial del banco
+
+Los paquetes de revisión se generan por nivel, habilidad, tipo o rol y permanecen privados:
+
+```bash
+npm run scaffold:diagnostic-bank-review -- --level=B1 --skill=reading
+# cada persona completa su archivo y lo renombra a *.completed.json
+npm run record:diagnostic-bank-approvals -- \
+  .diagnostic-private/review-packets/.../linguistic-reviewer.completed.json \
+  .diagnostic-private/review-packets/.../assessment-reviewer.completed.json \
+  --manifest-version=english-diagnostic-approvals-v2
+```
+
+El registrador ya no escribe por defecto. Exige recibos `*.completed.json` dentro de
+`.diagnostic-private/`, checkout limpio, roles e identidades independientes, listas completas y
+contenido con versión/hash vigente. Compila una propuesta estable que fija el hash de cada recibo
+y la unión exacta con aprobaciones anteriores. Solo una segunda ejecución con `--write`, operador
+identificado y la confirmación ligada al hash de la propuesta y del conjunto de recibos actualiza
+el manifiesto de forma atómica. Plantillas, decisiones incompletas, cambios solicitados, rutas
+externas o modificaciones posteriores fallan antes de escribir.
+
 ### Captura y validación del piloto
 
 El informe del piloto no se descarga manualmente ni se enlaza solo por nombre. Sobre un checkout

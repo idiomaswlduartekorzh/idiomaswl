@@ -668,6 +668,10 @@ exclusivamente dentro de `.diagnostic-private/`, que está ignorado por Git. Dos
 completados e independientes se compilan con `record:diagnostic-bank-approvals`; una decisión
 `CHANGES_REQUESTED`, un hash obsoleto, una lista incompleta o dos roles firmados por la misma
 identidad impiden la aprobación. Escucha añade obligatoriamente un tercer recibo de alineación.
+El registrador es ahora dry run por defecto: solo admite recibos `*.completed.json` privados y un
+checkout limpio, fija hashes de archivos y propuesta, conserva la unión auditada con aprobaciones
+anteriores y requiere `--write`, operador y confirmación exacta para una escritura atómica. Así,
+preparar o inspeccionar revisiones nunca promueve contenido accidentalmente.
 
 ## Definición de terminado del goal
 
