@@ -232,7 +232,7 @@ Actualizado el 25 de septiembre de 2026:
   sobreescribir ningún gate. El informe piloto incluye ahora un SHA-256 canónico de ítems,
   claves, racionales, fuentes y consignas; cambiar cualquiera invalida el piloto anterior. La
   vía humana de escritura puede liberar el producto sin proveedor externo, pero exige al menos
-  dos revisores verificados y SLA. El estado actual medido es `HOLD` en **1/8 gates** y **19
+  dos revisores verificados y SLA. El estado actual medido es `HOLD` en **1/8 gates** y **20
   bloqueos**: solo calidad pasa; gobierno quedó nuevamente cerrado hasta aprobar la política de
   entrega y las otras seis dimensiones conservan sus bloqueos externos, humanos o de contenido.
 - **Fase 8 — panel de salud del piloto implementado:** el panel administrativo puede solicitar
@@ -310,10 +310,10 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  corte `4b9755ae` quedó verificado con **274/274 pruebas**, TypeScript sin errores, un build de
+  corte `afe10027` quedó verificado con **276/276 pruebas**, TypeScript sin errores, un build de
   **2.564 páginas estáticas** y **4/4 historias E2E**. La huella de fuente
-  `25e218c7e9ce37fedefe6e87efb9ce3feaea70cdf04ba59b830979cb32896804` y el recibo privado
-  `dd73d86300cccb87261145e337951396b47f5b7bd744bedce3d5e7c9eb503399` dejan el gate de
+  `e033addcd675fc0197ae75f6b87cd36f5f6630ee463cdc805723169d2e71af5c` y el recibo privado
+  `40b12c27a70c4da6fe44ef31a2443291e44b3d9c17d8a15e99ac20471b8eab23` dejan el gate de
   calidad atado exactamente a ese código.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
   paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.
