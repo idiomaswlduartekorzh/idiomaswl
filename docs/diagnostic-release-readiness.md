@@ -130,6 +130,25 @@ solo es válido durante 24 horas, registra el número de pruebas y páginas est�
 si el árbol se ensucia o cambia la huella durante la ejecución. Registrar esta evidencia no puede
 aprobar contenido, audio, escritura, retención ni piloto.
 
+### Revisión humana de gobierno
+
+Las decisiones que no son mecánicas se preparan como cinco revisiones independientes y nacen
+vacías, sin modo de escritura ni aprobación preseleccionados:
+
+```bash
+npm run scaffold:diagnostic-governance-review
+```
+
+El paquete privado liga cada revisión a una huella exacta: operación de escritura, política de
+retención o umbrales del piloto. Escritura exige acuerdo independiente de liderazgo académico y
+operaciones; retención exige privacidad; los criterios del piloto exigen liderazgo académico y
+medición. Aprobar la ruta humana requiere al menos dos referencias verificables de revisores y
+un SLA máximo de 72 horas. La ruta externa exige referencias separadas para consentimiento y
+revisión de proveedor. Un cambio de documento invalida automáticamente sus recibos.
+
+Los paquetes son preparación, no aprobación. Mientras las cinco personas o roles no completen
+sus recibos y el compilador confirme independencia y acuerdo, ningún gate cambia de estado.
+
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
 diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica

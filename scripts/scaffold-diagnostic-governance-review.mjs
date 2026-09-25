@@ -1,0 +1,41 @@
+import { createHash } from 'node:crypto';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { relative, resolve, sep } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { buildDiagnosticGovernanceReviewPackets } from './lib/diagnostic-governance-review.mjs';
+
+const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
+const outputArgument = process.argv.find(argument => argument.startsWith('--output='));
+const outputRoot = resolve(root, outputArgument?.slice('--output='.length)
+  || '.diagnostic-private/governance-review');
+const privateRoot = resolve(root, '.diagnostic-private');
+const privateRelative = relative(privateRoot, outputRoot);
+if (!privateRelative || privateRelative === '..' || privateRelative.startsWith(`..${sep}`)) {
+  throw new Error('Governance packets may only be written below .diagnostic-private/.');
+}
+const hashBytes = bytes => createHash('sha256').update(bytes).digest('hex');
+const fileSnapshot = path => hashBytes(readFileSync(resolve(root, path)));
+const workflowPaths = [
+  'src/server/diagnostic/writing.ts',
+  'src/server/diagnostic/finalize-core.ts',
+  'src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
+  'src/app/(site)/dashboard/admin/nivel-radar/page.tsx',
+];
+const workflowHash = createHash('sha256');
+for (const path of workflowPaths) workflowHash.update(path).update('\0').update(readFileSync(resolve(root, path))).update('\0');
+const snapshots = {
+  'writing-operations': workflowHash.digest('hex'),
+  'retention-policy': fileSnapshot('config/diagnostic/data-retention-policy.json'),
+  'pilot-criteria': fileSnapshot('config/diagnostic/pilot-publication-criteria.json'),
+};
+const packets = buildDiagnosticGovernanceReviewPackets({ snapshots, generatedAt: new Date().toISOString() });
+mkdirSync(outputRoot, { recursive: true });
+for (const packet of packets) {
+  const path = resolve(outputRoot, `${packet.topic}--${packet.role}.json`);
+  writeFileSync(path, `${JSON.stringify(packet, null, 2)}\n`, { mode: 0o600 });
+}
+writeFileSync(resolve(outputRoot, 'snapshot.json'), `${JSON.stringify({
+  snapshotVersion: 'diagnostic-governance-snapshot-v1', snapshots, workflowPaths,
+}, null, 2)}\n`, { mode: 0o600 });
+process.stdout.write(`${JSON.stringify({ outputRoot, packetCount: packets.length, snapshots }, null, 2)}\n`);

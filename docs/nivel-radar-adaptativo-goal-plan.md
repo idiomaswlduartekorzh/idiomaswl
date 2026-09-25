@@ -214,6 +214,13 @@ Actualizado el 24 de septiembre de 2026:
   commit `df2970e7` quedó verificado con **214/214 pruebas**, TypeScript sin errores y un build de
   **2.564 páginas estáticas**; el recibo privado se registró por SHA-256 y el gate de calidad ya
   pasa sobre la misma huella de fuente.
+- **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
+  paquetes hash-bound para escritura, retención y criterios de piloto. Escritura requiere
+  revisiones independientes académica y operativa y, si se elige modo humano, dos referencias
+  verificables de revisores con SLA máximo de 72 horas. Retención exige privacidad y los umbrales
+  del piloto exigen revisiones académica y de medición. Los paquetes nacen sin decisión ni modo
+  seleccionado; una huella distinta, identidades duplicadas o desacuerdo operativo invalida la
+  compilación. Falta completar esos recibos por personas autorizadas.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
