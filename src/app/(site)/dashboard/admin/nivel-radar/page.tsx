@@ -7,12 +7,17 @@ import { DIAGNOSTIC_WRITING_RUBRIC_VERSION } from '@/server/diagnostic/writing-a
 import { getDiagnosticWritingProviderReadiness } from '@/server/diagnostic/writing-provider';
 import { loadDiagnosticWritingReviewQueue } from '@/server/diagnostic/repository.server';
 import DiagnosticWritingReviewClient from './DiagnosticWritingReviewClient';
+import PilotEnrollmentAdminClient from './PilotEnrollmentAdminClient';
 
 export const dynamic = 'force-dynamic';
 
 export default async function DiagnosticWritingReviewPage() {
   const admin = await requireAdmin();
   const providerReadiness = getDiagnosticWritingProviderReadiness();
+  const configuredPilotConsentVersion = process.env.DIAGNOSTIC_PILOT_CONSENT_VERSION?.trim() ?? '';
+  const pilotConsentVersion = configuredPilotConsentVersion.length >= 3
+    && configuredPilotConsentVersion.length <= 160
+    ? configuredPilotConsentVersion : null;
   let error = '';
   let items: DiagnosticWritingReviewView[] = [];
   try {
@@ -52,7 +57,12 @@ export default async function DiagnosticWritingReviewPage() {
     <main style={{ minHeight: '100vh', background: '#f5f0eb', padding: '24px clamp(16px, 4vw, 48px)', color: '#1a1a2e' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto' }}>
         <Link href="/dashboard/admin" style={{ color: '#8f461f', fontSize: 13, fontWeight: 700 }}>← Panel administrativo</Link>
-        <h1 style={{ margin: '18px 0 4px', fontSize: 'clamp(26px, 4vw, 42px)' }}>Revisión de escritura · Nivel Radar</h1>
+        <h1 style={{ margin: '18px 0 4px', fontSize: 'clamp(26px, 4vw, 42px)' }}>Operación · Nivel Radar</h1>
+        <p style={{ margin: '0 0 20px', color: '#6b7280', maxWidth: 820 }}>
+          Administra la cohorte cerrada del piloto y la revisión académica de escritura sin exponer el banco ni datos adicionales del participante.
+        </p>
+        <PilotEnrollmentAdminClient consentVersion={pilotConsentVersion} />
+        <h2 style={{ margin: '0 0 6px', fontSize: 24 }}>Revisión de escritura</h2>
         <p style={{ margin: '0 0 20px', color: '#6b7280', maxWidth: 820 }}>
           La primera revisión es ciega frente al modelo. Una discrepancia material o una decisión de revisar pasa a otra identidad para adjudicación. Sin autorización externa, el caso conserva una ruta completamente humana.
         </p>

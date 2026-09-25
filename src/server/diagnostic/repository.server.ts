@@ -96,6 +96,7 @@ export async function persistDiagnosticPilotEnrollment(input: {
   action: 'invited' | 'consented' | 'revoked' | 'completed';
   pilotConsentVersion: string | null;
   consentedAt: string | null;
+  consentReference: string | null;
   actedBy: string;
   reason: string | null;
 }): Promise<{ status: string; cohortId: string }> {
@@ -105,6 +106,7 @@ export async function persistDiagnosticPilotEnrollment(input: {
     p_action: input.action,
     p_pilot_consent_version: input.pilotConsentVersion,
     p_consented_at: input.consentedAt,
+    p_consent_reference: input.consentReference,
     p_acted_by: input.actedBy,
     p_reason: input.reason,
   });

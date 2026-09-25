@@ -49,7 +49,9 @@ export async function POST(request: Request): Promise<Response> {
     return error('INVALID_ENROLLMENT', 'La inscripción no es válida.', 400);
   }
   const candidate = body as Record<string, unknown>;
-  const allowedKeys = new Set(['userId', 'cohortId', 'action', 'pilotConsentVersion', 'consentedAt', 'reason']);
+  const allowedKeys = new Set([
+    'userId', 'cohortId', 'action', 'consentConfirmed', 'consentedAt', 'consentReference', 'reason',
+  ]);
   if (Object.keys(candidate).some(key => !allowedKeys.has(key))) {
     return error('INVALID_ENROLLMENT', 'La inscripción contiene campos no permitidos.', 400);
   }
@@ -57,6 +59,8 @@ export async function POST(request: Request): Promise<Response> {
   const cohortId = typeof candidate.cohortId === 'string' ? candidate.cohortId : '';
   const action = typeof candidate.action === 'string' ? candidate.action : '';
   const reason = typeof candidate.reason === 'string' ? candidate.reason.trim() : null;
+  const consentReference = typeof candidate.consentReference === 'string'
+    ? candidate.consentReference.trim() : null;
   if (!UUID.test(userId) || !COHORT.test(cohortId) || !ACTIONS.includes(action as typeof ACTIONS[number])) {
     return error('INVALID_ENROLLMENT', 'La inscripción no cumple el contrato.', 400);
   }
@@ -70,18 +74,21 @@ export async function POST(request: Request): Promise<Response> {
     }
   }
   if (action === 'consented') {
-    const suppliedVersion = typeof candidate.pilotConsentVersion === 'string'
-      ? candidate.pilotConsentVersion.trim() : '';
     const suppliedDate = typeof candidate.consentedAt === 'string'
       ? new Date(candidate.consentedAt) : new Date(Number.NaN);
-    if (suppliedVersion !== configuredConsentVersion
+    if (candidate.consentConfirmed !== true
       || Number.isNaN(suppliedDate.getTime())
-      || suppliedDate.toISOString() !== candidate.consentedAt) {
-      return error('INVALID_CONSENT', 'La evidencia de consentimiento no coincide con la versión vigente.', 400);
+      || suppliedDate.toISOString() !== candidate.consentedAt
+      || suppliedDate.getTime() > Date.now() + 300_000
+      || !consentReference
+      || !/^[A-Za-z0-9][A-Za-z0-9._:/-]{2,199}$/u.test(consentReference)) {
+      return error('INVALID_CONSENT', 'La evidencia de consentimiento no está completa.', 400);
     }
-    pilotConsentVersion = suppliedVersion;
+    pilotConsentVersion = configuredConsentVersion;
     consentedAt = suppliedDate.toISOString();
-  } else if (candidate.pilotConsentVersion !== undefined || candidate.consentedAt !== undefined) {
+  } else if (candidate.consentConfirmed !== undefined
+    || candidate.consentedAt !== undefined
+    || candidate.consentReference !== undefined) {
     return error('INVALID_ENROLLMENT', 'Esta transición no acepta evidencia de consentimiento nueva.', 400);
   }
   if ((action === 'revoked' || action === 'completed') && (!reason || reason.length < 3 || reason.length > 500)) {
@@ -98,6 +105,7 @@ export async function POST(request: Request): Promise<Response> {
       action: action as typeof ACTIONS[number],
       pilotConsentVersion,
       consentedAt,
+      consentReference,
       actedBy: admin.id,
       reason,
     });
