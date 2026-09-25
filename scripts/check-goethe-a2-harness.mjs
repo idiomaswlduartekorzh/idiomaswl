@@ -13,4 +13,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`✓ Goethe A2 harness: ${harness.ledger.sets.length} reserved sets, ${harness.blueprint.agentStages.length} isolated roles, golden set audio-blocked and legacy sets fail-closed`);
+console.log(`✓ Goethe A2 harness: ${harness.ledger.sets.length} original sets, ${harness.blueprint.agentStages.length} isolated roles, all content-ready and audio-blocked`);

@@ -70,6 +70,13 @@
     "namesPlacesTimesAndCommunicativeActsMustBeAudited": true,
     "authorCannotApproveOwnWork": true
   },
+  "fairnessPolicy": {
+    "answerPositionBalancePerSet": true,
+    "demographicAttributeNeverDeterminesCorrectAnswer": true,
+    "avoidStereotypedCareWorkOrAuthorityRoles": true,
+    "mixedNamesAndEverydayRolesAcrossSets": true,
+    "noNationalityReligionEthnicityOrDisabilityAsDistractor": true
+  },
   "agentStages": [
     { "id": "coordinator", "prompt": "goethe-a2-coordinator", "output": "work-order.json", "gate": "ORDER_FROZEN" },
     { "id": "spec-guardian", "prompt": "goethe-a2-spec-guardian", "output": "spec.json", "gate": "SPEC_PASS" },

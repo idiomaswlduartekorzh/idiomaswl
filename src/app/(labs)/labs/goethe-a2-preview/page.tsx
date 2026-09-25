@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import golden from '@/data/mocks/goethe-a2-golden-set-1';
+import { getGoetheA2Set } from '@/data/mocks/goethe-a2-sets';
 import styles from './preview.module.css';
 
 export const metadata: Metadata = {
@@ -63,7 +63,12 @@ function SectionHeader({ skill, part, title, meta }: {
   );
 }
 
-export default function GoetheA2PreviewPage() {
+export default async function GoetheA2PreviewPage({ searchParams }: {
+  searchParams: Promise<{ set?: string }>;
+}) {
+  const requested = Number((await searchParams).set ?? '1');
+  const selectedSet = Number.isInteger(requested) && requested >= 1 && requested <= 10 ? requested : 1;
+  const golden = getGoetheA2Set(selectedSet);
   const [reading1, reading2, reading3, reading4] = golden.reading.parts;
   const [listening1, listening2, listening3, listening4] = golden.listening.parts;
 
@@ -71,11 +76,11 @@ export default function GoetheA2PreviewPage() {
     <div className={styles.page}>
       <header className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Golden set · revisión integral</p>
+          <p className={styles.eyebrow}>{selectedSet === 1 ? 'Golden set aprobado' : `Mock ${selectedSet} · revisión integral`}</p>
           <h1>{golden.title}</h1>
           <p className={styles.lede}>
-            El simulacro completo de referencia para producir los próximos sets A2 de WeLearn.
-            La arquitectura, el contenido, las imágenes y el scoring están listos; el audio sigue bloqueado.
+            {selectedSet === 1 ? 'El simulacro maestro de referencia para la colección A2 de WeLearn.' : 'Un simulacro original construido con el mismo contrato editorial del mock maestro.'}
+            {' '}La arquitectura, el contenido, las imágenes y el scoring están listos; el audio sigue bloqueado.
           </p>
           <div className={styles.badges}>
             <span className={styles.ready}>Contenido listo</span>
@@ -92,6 +97,17 @@ export default function GoetheA2PreviewPage() {
         </aside>
       </header>
 
+      <nav className={styles.setNav} aria-label="Seleccionar mock Goethe A2">
+        <span>COLECCIÓN A2</span>
+        <div>
+          {Array.from({ length: 10 }, (_, index) => index + 1).map(set => (
+            <a key={set} href={`?set=${set}`} aria-current={set === selectedSet ? 'page' : undefined}>
+              {set === 1 ? 'Maestro 1' : `Mock ${set}`}
+            </a>
+          ))}
+        </div>
+      </nav>
+
       <nav className={styles.jumpNav} aria-label="Secciones del simulacro">
         <a href="#fidelidad">Auditoría</a>
         <a href="#lesen">Lesen · 4 Teile</a>
@@ -104,7 +120,7 @@ export default function GoetheA2PreviewPage() {
       <section className={styles.fidelity} id="fidelidad">
         <div className={styles.fidelityHeading}>
           <div>
-            <p className={styles.eyebrow}>Cotejo oficial · Modellsatz + Übungssatz 01</p>
+            <p className={styles.eyebrow}>Contrato maestro · cotejo Modellsatz + Übungssatz 01</p>
             <h2>100% de la estructura verificable</h2>
           </div>
           <span>13/13 Teile conformes</span>
@@ -117,7 +133,7 @@ export default function GoetheA2PreviewPage() {
           <section><strong>Visuales funcionales</strong><b>PASS</b><p>9 imágenes, trípticos A/B/C y agendas complementarias.</p></section>
           <section><strong>Audio final</strong><b className={styles.pending}>PENDIENTE</b><p>Guion y secuencia listos; falta producir y escuchar la pista maestra.</p></section>
         </div>
-        <p className={styles.fidelityNote}>La equivalencia auditada cubre formato, tarea, cantidad, longitud, complejidad, tiempos y puntuación. La fidelidad sonora no se declara hasta generar y revisar el audio.</p>
+        <p className={styles.fidelityNote}>La equivalencia auditada cubre formato, tarea, cantidad, longitud, complejidad, tiempos y puntuación. Temas de este set: {golden.levelProfile.lexicalDomains.join(' · ')}. La fidelidad sonora no se declara hasta generar y revisar el audio.</p>
       </section>
 
       <section className={styles.moduleIntro} id="lesen">

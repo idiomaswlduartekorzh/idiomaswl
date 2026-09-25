@@ -3,9 +3,14 @@
   "level": "A2",
   "sets": [
     { "id": "a2-1", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
-    { "id": "a2-2", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
-    { "id": "a2-3", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
-    { "id": "a2-4", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false },
-    { "id": "a2-5", "state": "LEGACY_HOLD", "published": false, "contentReady": false, "visualsReady": false, "audioReady": false, "scoringReady": false, "humanApproved": false }
+    { "id": "a2-2", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-3", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-4", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-5", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-6", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-7", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-8", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-9", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false },
+    { "id": "a2-10", "state": "AUDIO_BLOCKED", "published": false, "contentReady": true, "visualsReady": true, "audioReady": false, "scoringReady": true, "humanApproved": false }
   ]
 }

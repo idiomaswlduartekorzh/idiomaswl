@@ -12,10 +12,11 @@ export const fingerprintGoldenCandidate = candidate => createHash('sha256')
   .update(stableStringify(candidate))
   .digest('hex');
 
-export function buildGoldenCandidate(golden) {
+export function buildGoetheA2Candidate(golden) {
+  const set = Number(golden.id.split('-')[1]);
   const unsigned = {
     schemaVersion: 1,
-    set: 1,
+    set,
     levelProfile: golden.levelProfile,
     reading: golden.reading.parts,
     listening: golden.listening.parts,
@@ -28,10 +29,13 @@ export function buildGoldenCandidate(golden) {
   return { ...unsigned, candidateFingerprint: fingerprintGoldenCandidate(unsigned) };
 }
 
-export function buildGoldenAudioPlan(golden, candidateFingerprint) {
+export const buildGoldenCandidate = buildGoetheA2Candidate;
+
+export function buildGoetheA2AudioPlan(golden, candidateFingerprint) {
+  const set = Number(golden.id.split('-')[1]);
   return {
     schemaVersion: 1,
-    set: 1,
+    set,
     candidateFingerprint,
     status: 'script-ready-audio-blocked',
     provider: 'ElevenLabs',
@@ -65,18 +69,20 @@ export function buildGoldenAudioPlan(golden, candidateFingerprint) {
             : 'Sie hören ein Radiointerview zweimal. Wählen Sie Ja oder Nein.',
       scripts: part.part === 1 || part.part === 3
         ? part.items.map(item => ({ id: item.id, turns: item.turns ?? [] }))
-        : [{ id: part.part === 2 ? 'g-a2-1-h2-conversation' : 'g-a2-1-h4-interview', turns: part.turns }],
+        : [{ id: part.part === 2 ? `g-a2-${set}-h2-conversation` : `g-a2-${set}-h4-interview`, turns: part.turns }],
     })),
     outro: 'Ende des Tests Hören. Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen zu übertragen und zu kontrollieren.',
   };
 }
 
+export const buildGoldenAudioPlan = buildGoetheA2AudioPlan;
+
 const wordCount = text => text.trim().split(/\s+/u).filter(Boolean).length;
 
-export function validateGoldenSet(golden, root) {
+export function validateGoetheA2Set(golden, root) {
   const failures = [];
   const fail = message => failures.push(message);
-  if (golden.schemaVersion !== 1 || golden.id !== 'a2-1' || golden.status !== 'AUDIO_BLOCKED') fail('identity/status must be schema 1, a2-1 and AUDIO_BLOCKED');
+  if (golden.schemaVersion !== 1 || !/^a2-(?:[1-9]|10)$/.test(golden.id) || golden.status !== 'AUDIO_BLOCKED') fail('identity/status must be schema 1, a2-1..a2-10 and AUDIO_BLOCKED');
   if (golden.authorship?.original !== true || golden.authorship?.officialSourcesUsedForArchitectureOnly !== true) fail('authorship boundary is missing');
   if (golden.reading?.parts?.length !== 4 || golden.listening?.parts?.length !== 4 || golden.writing?.tasks?.length !== 2 || golden.speaking?.tasks?.length !== 3) fail('the golden set must contain 4/4/2/3 task families');
 
@@ -173,14 +179,38 @@ export function validateGoldenSet(golden, root) {
   for (const forbidden of ['ins kino gehen', 'für einen deutschkurs anmelden', 'generic cinema cancellation', 'generic language-course registration']) {
     if (serialized.includes(forbidden)) fail(`forbidden carryover found: ${forbidden}`);
   }
-  const comparisonFiles = [
-    ...Array.from({ length: 10 }, (_, index) => path.join(root, 'src/data/mocks', `goethe-a1-set-${index + 1}.ts`)),
-    ...Array.from({ length: 4 }, (_, index) => path.join(root, 'src/data/mocks', `goethe-a2-set-${index + 2}.ts`)),
-  ].filter(fs.existsSync);
+  const comparisonFiles = Array.from({ length: 10 }, (_, index) => path.join(root, 'src/data/mocks', `goethe-a1-set-${index + 1}.ts`)).filter(fs.existsSync);
   const comparisonCorpus = comparisonFiles.map(file => fs.readFileSync(file, 'utf8')).join('\n');
   for (const prompt of choices.map(item => item.prompt).filter(value => value.length >= 28)) {
     if (comparisonCorpus.includes(prompt)) fail(`prompt repeats legacy material exactly: ${prompt}`);
   }
+  return failures;
+}
+
+export const validateGoldenSet = validateGoetheA2Set;
+
+export function validateGoetheA2Collection(sets, root) {
+  const failures = sets.flatMap(set => validateGoetheA2Set(set, root).map(message => `${set.id}: ${message}`));
+  const ids = sets.map(set => set.id);
+  if (sets.length !== 10 || new Set(ids).size !== 10 || ids.join('/') !== Array.from({ length: 10 }, (_, index) => `a2-${index + 1}`).join('/')) {
+    failures.push('collection must contain ordered, unique sets a2-1 through a2-10');
+  }
+  const domains = sets.flatMap(set => set.levelProfile.lexicalDomains.map(value => value.trim().toLowerCase()));
+  if (new Set(domains).size !== domains.length) failures.push('lexical domains must not repeat across the ten sets');
+  const stimulusGroups = sets.flatMap(set => [
+    ...set.reading.parts.slice(0, 3).map(part => part.text),
+    set.listening.parts[1].turns.map(turn => turn.text).join(' '),
+    set.listening.parts[3].turns.map(turn => turn.text).join(' '),
+    ...set.writing.tasks.map(task => task.situation),
+    ...[set.speaking.tasks[1].candidateA.prompt, set.speaking.tasks[1].candidateB.prompt, set.speaking.tasks[2].situation],
+  ]).map(value => value.trim().toLowerCase());
+  if (new Set(stimulusGroups).size !== stimulusGroups.length) failures.push('full task stimuli must be original across the ten sets');
+  const objectiveIds = sets.flatMap(set => [
+    ...set.reading.parts.slice(0, 3).flatMap(part => part.items.map(item => item.id)),
+    ...set.reading.parts[3].profiles.map(item => item.id),
+    ...set.listening.parts.flatMap(part => part.items.map(item => item.id)),
+  ]);
+  if (new Set(objectiveIds).size !== objectiveIds.length) failures.push('objective ids must be globally unique');
   return failures;
 }
 

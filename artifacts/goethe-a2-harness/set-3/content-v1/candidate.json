@@ -1,0 +1,1120 @@
+{
+  "schemaVersion": 1,
+  "set": 3,
+  "levelProfile": {
+    "audience": "adults-16-plus",
+    "register": "everyday-personal-and-semi-official",
+    "targetLevel": "A2",
+    "grammarEnvelope": [
+      "Präsens, Perfekt und häufiges Präteritum von sein/haben",
+      "Modalverben und trennbare Verben",
+      "weil, dass, wenn und einfache Relativbezüge",
+      "Komparativ, Zeit- und Ortsangaben",
+      "höfliche Bitten, Vorschläge und einfache Begründungen"
+    ],
+    "lexicalDomains": [
+      "Lernatelier am Abend",
+      "VHS FREIBURG · HAUS B",
+      "Kennenlerntag „Neues lernen“",
+      "Leihräder für den Alltag"
+    ]
+  },
+  "reading": [
+    {
+      "part": 1,
+      "family": "continuous-media-text",
+      "title": "Lernatelier am Abend",
+      "text": "In Freiburg gibt es seit neun Monaten das Projekt „Lernatelier am Abend“. Es befindet sich im Volkshochschule neben dem Rathaus. Dort können Besucherinnen und Besucher kurze praktische Kurse nach der Arbeit besuchen. Das Angebot ist an drei Tagen pro Woche geöffnet und wird von einem kleinen Verein organisiert. Minh koordiniert zwölf freiwillige Helferinnen und Helfer.\n\nWer zum ersten Mal kommt, erhält am Eingang eine kurze Erklärung. Für die Teilnahme zahlt man nichts. Nur besondere Materialien oder ein Pfand müssen manchmal bezahlt werden. Sehr beliebt sind Leih-Tablets für digitale Übungen. Sie können vor Ort benutzt werden, dürfen aber nicht ohne Anmeldung mitgenommen werden. Gruppen ab sechs Personen vereinbaren vorher einen Termin.\n\nDas Team möchte Menschen aus verschiedenen Stadtteilen zusammenbringen. Deshalb gibt es jeden Monat einen offenen Nachmittag mit Kaffee, einfachen Informationen und einer praktischen Vorführung. Kinder dürfen teilnehmen, wenn eine erwachsene Person sie begleitet. Hunde müssen draußen warten, weil im Raum Lebensmittel und empfindliche Geräte stehen.\n\nIm letzten Monat kamen 318 Gäste. Viele blieben länger als geplant und halfen neuen Besucherinnen und Besuchern. Für das nächste Halbjahr plant der Verein Samstagskurse für Eltern und Jugendliche. Dafür sucht das Team noch zwei Personen, die am Freitagabend Zeit haben. Interessierte können sich online melden oder direkt während der Öffnungszeiten mit Minh sprechen.",
+      "example": {
+        "id": "g-a2-3-r1-0",
+        "prompt": "Worum geht es in dem Artikel?",
+        "options": [
+          "um ein neues Angebot im Stadtteil",
+          "um eine private Reisegruppe",
+          "um den Verkauf eines Gebäudes"
+        ],
+        "answer": 0,
+        "rationale": "Die Angabe „um ein neues Angebot im Stadtteil“ entspricht dem Text.",
+        "distractorRationales": [
+          "Richtig: „um ein neues Angebot im Stadtteil“ wird im Text bestätigt.",
+          "Falsch: „um eine private Reisegruppe“ wird vom Text nicht bestätigt.",
+          "Falsch: „um den Verkauf eines Gebäudes“ wird vom Text nicht bestätigt."
+        ]
+      },
+      "items": [
+        {
+          "id": "g-a2-3-r1-1",
+          "prompt": "Was erfahren neue Gäste zuerst?",
+          "options": [
+            "Sie bekommen eine kurze Erklärung.",
+            "Sie müssen einen Kurs bezahlen.",
+            "Sie sprechen mit der Stadtverwaltung."
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „Sie bekommen eine kurze Erklärung.“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „Sie bekommen eine kurze Erklärung.“ wird im Text bestätigt.",
+            "Falsch: „Sie müssen einen Kurs bezahlen.“ wird vom Text nicht bestätigt.",
+            "Falsch: „Sie sprechen mit der Stadtverwaltung.“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r1-2",
+          "prompt": "Wann sollen größere Gruppen Kontakt aufnehmen?",
+          "options": [
+            "erst nach der Veranstaltung",
+            "vor ihrem Besuch",
+            "nur am Freitagabend"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „vor ihrem Besuch“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „erst nach der Veranstaltung“ wird vom Text nicht bestätigt.",
+            "Richtig: „vor ihrem Besuch“ wird im Text bestätigt.",
+            "Falsch: „nur am Freitagabend“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r1-3",
+          "prompt": "Was gilt für Kinder?",
+          "options": [
+            "Sie dürfen nur draußen warten.",
+            "Sie können Material ohne Anmeldung mitnehmen.",
+            "Eine erwachsene Begleitung ist nötig."
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „Eine erwachsene Begleitung ist nötig.“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „Sie dürfen nur draußen warten.“ wird vom Text nicht bestätigt.",
+            "Falsch: „Sie können Material ohne Anmeldung mitnehmen.“ wird vom Text nicht bestätigt.",
+            "Richtig: „Eine erwachsene Begleitung ist nötig.“ wird im Text bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r1-4",
+          "prompt": "Was gefiel vielen Gästen im letzten Monat?",
+          "options": [
+            "Sie halfen auch anderen Personen.",
+            "Sie bekamen kostenlos Geräte geschenkt.",
+            "Sie konnten ihre Hunde mitbringen."
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „Sie halfen auch anderen Personen.“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „Sie halfen auch anderen Personen.“ wird im Text bestätigt.",
+            "Falsch: „Sie bekamen kostenlos Geräte geschenkt.“ wird vom Text nicht bestätigt.",
+            "Falsch: „Sie konnten ihre Hunde mitbringen.“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r1-5",
+          "prompt": "Wofür sucht das Projekt weitere Hilfe?",
+          "options": [
+            "für den Verkauf am Eingang",
+            "für Samstagskurse für Eltern und Jugendliche",
+            "für eine Reise in die Partnerstadt"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „für Samstagskurse für Eltern und Jugendliche“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „für den Verkauf am Eingang“ wird vom Text nicht bestätigt.",
+            "Richtig: „für Samstagskurse für Eltern und Jugendliche“ wird im Text bestätigt.",
+            "Falsch: „für eine Reise in die Partnerstadt“ wird vom Text nicht bestätigt."
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "family": "directory-program-board",
+      "title": "VHS FREIBURG · HAUS B",
+      "text": "VHS FREIBURG · HAUS B\n\nERDGESCHOSS\nKursbüro · Beratung · Bezahlung · Café bis 18 Uhr · barrierefreier Eingang\n\n1. OBERGESCHOSS\nSprachen · Lerncafé · Mediathek · Toiletten · ruhiger Warteplatz\n\n2. OBERGESCHOSS\nComputerraum · Drucken · Leih-Tablets · Beratung Dienstag und Donnerstag 15–18 Uhr\n\n3. OBERGESCHOSS\nKreativräume · Keramik · Fotowerkstatt · Gruppen nur nach Anmeldung\n\nHEUTE\n16:30 Uhr · Einführung für neue Besucher · 1. OG\n18:00 Uhr · Offenes Treffen mit Clara · 3. OG\n\nSERVICE\nKopieren im 2. OG gegen Gebühr. Verlorene Sachen liegen sieben Tage an der Information. Der Aufzug fährt heute nur bis ins 2. Obergeschoss. Große Taschen bleiben in den Schließfächern neben dem Eingang. Samstags schließt das Haus bereits um 14 Uhr.",
+      "example": {
+        "id": "g-a2-3-r2-0",
+        "prompt": "Sie möchten sich am Eingang informieren. Wohin gehen Sie?",
+        "options": [
+          "ins Erdgeschoss",
+          "ins 2. Obergeschoss",
+          "an einen anderen Ort"
+        ],
+        "answer": 0,
+        "rationale": "Die Angabe „ins Erdgeschoss“ entspricht dem Text.",
+        "distractorRationales": [
+          "Richtig: „ins Erdgeschoss“ wird im Text bestätigt.",
+          "Falsch: „ins 2. Obergeschoss“ wird vom Text nicht bestätigt.",
+          "Falsch: „an einen anderen Ort“ wird vom Text nicht bestätigt."
+        ]
+      },
+      "items": [
+        {
+          "id": "g-a2-3-r2-1",
+          "prompt": "Sie möchten heute an der Einführung teilnehmen. Wohin gehen Sie?",
+          "options": [
+            "ins Erdgeschoss",
+            "ins 1. Obergeschoss",
+            "an einen anderen Ort"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „ins 1. Obergeschoss“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „ins Erdgeschoss“ wird vom Text nicht bestätigt.",
+            "Richtig: „ins 1. Obergeschoss“ wird im Text bestätigt.",
+            "Falsch: „an einen anderen Ort“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r2-2",
+          "prompt": "Sie brauchen am Donnerstag eine Beratung. Wohin gehen Sie?",
+          "options": [
+            "ins 3. Obergeschoss",
+            "an einen anderen Ort",
+            "ins 2. Obergeschoss"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „ins 2. Obergeschoss“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „ins 3. Obergeschoss“ wird vom Text nicht bestätigt.",
+            "Falsch: „an einen anderen Ort“ wird vom Text nicht bestätigt.",
+            "Richtig: „ins 2. Obergeschoss“ wird im Text bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r2-3",
+          "prompt": "Sie möchten das offene Treffen mit Clara besuchen. Wohin gehen Sie?",
+          "options": [
+            "ins 3. Obergeschoss",
+            "ins 1. Obergeschoss",
+            "an einen anderen Ort"
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „ins 3. Obergeschoss“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „ins 3. Obergeschoss“ wird im Text bestätigt.",
+            "Falsch: „ins 1. Obergeschoss“ wird vom Text nicht bestätigt.",
+            "Falsch: „an einen anderen Ort“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r2-4",
+          "prompt": "Sie haben gestern Ihre Mütze verloren. Wohin gehen Sie?",
+          "options": [
+            "zum Café im 1. Obergeschoss",
+            "zur Information im Erdgeschoss",
+            "an einen anderen Ort"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „zur Information im Erdgeschoss“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „zum Café im 1. Obergeschoss“ wird vom Text nicht bestätigt.",
+            "Richtig: „zur Information im Erdgeschoss“ wird im Text bestätigt.",
+            "Falsch: „an einen anderen Ort“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r2-5",
+          "prompt": "Sie möchten heute mit dem Aufzug ganz nach oben fahren. Wohin gehen Sie?",
+          "options": [
+            "mit dem Aufzug ins 3. Obergeschoss",
+            "ins Untergeschoss",
+            "über die Treppe ins 3. Obergeschoss"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „über die Treppe ins 3. Obergeschoss“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „mit dem Aufzug ins 3. Obergeschoss“ wird vom Text nicht bestätigt.",
+            "Falsch: „ins Untergeschoss“ wird vom Text nicht bestätigt.",
+            "Richtig: „über die Treppe ins 3. Obergeschoss“ wird im Text bestätigt."
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "family": "correspondence",
+      "title": "Informationen zum Kennenlerntag „Neues lernen“",
+      "text": "Betreff: Kennenlerntag „Neues lernen“ am Samstag\n\nLiebe Helferinnen und Helfer,\n\nvielen Dank, dass ihr bei unserem Kennenlerntag „Neues lernen“ mitmacht. Wegen einer anderen Veranstaltung treffen wir uns nicht am ursprünglich genannten Ort, sondern im Bildungshaus am Rotteckring. Beginn ist um 9:30 Uhr. Ab 9 Uhr könnt ihr am Seiteneingang eure Namensschilder abholen.\n\nAm Vormittag wollen wir Kursräume vorbereiten und Namensschilder sortieren. Nach der gemeinsamen Pause werden wir Besucherinnen und Besucher zu Schnupperkursen begleiten. Bitte bringt bequeme Schuhe und einen Stift mit. Das übrige Material liegt schon bereit. Kaffee, Tee und ein warmes Mittagessen organisiert der Verein. Wer eine Allergie hat oder vegetarisch essen möchte, schreibt mir bitte spätestens bis Mittwoch.\n\nUm 12:30 Uhr essen wir zusammen. Danach teilen wir uns in drei Gruppen. Eine Gruppe bleibt am Infotisch, eine arbeitet mit den angemeldeten Familien, und die dritte räumt Material nach jeder Runde wieder auf. Wir möchten gegen 16:30 Uhr fertig sein. Wer nur bis mittags helfen kann, sagt morgens bei der Anmeldung Bescheid.\n\nIhr erreicht uns mit Straßenbahn 5 bis „Stadttheater“ und über den Innenhof. Fahrräder können hinter dem Gebäude angeschlossen werden. Für Autos gibt es dort keine Besucherparkplätze. Bitte nutzt deshalb möglichst öffentliche Verkehrsmittel. Kinder ab zehn Jahren dürfen helfen, wenn eine erwachsene Person bei ihnen bleibt.\n\nWährend des Tages macht Emre einige Fotos für unseren Vereinsbericht. Wer nicht fotografiert werden möchte, bekommt bei der Anmeldung einen gelben Aufkleber. Bei starkem Regen arbeiten wir nur in den Innenräumen; der Termin fällt nicht aus.\n\nSchreibt mir bis Donnerstag, falls ihr besondere Erfahrungen mitbringt oder eine Aufgabe nicht übernehmen könnt. Am Freitag schicke ich den endgültigen Plan.\n\nViele Grüße\nMinh",
+      "items": [
+        {
+          "id": "g-a2-3-r3-1",
+          "prompt": "Was hat sich für Samstag geändert?",
+          "options": [
+            "das Datum",
+            "das Mittagessen",
+            "der Treffpunkt"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „der Treffpunkt“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „das Datum“ wird vom Text nicht bestätigt.",
+            "Falsch: „das Mittagessen“ wird vom Text nicht bestätigt.",
+            "Richtig: „der Treffpunkt“ wird im Text bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r3-2",
+          "prompt": "Wann muss man wegen besonderem Essen schreiben?",
+          "options": [
+            "spätestens am Mittwoch",
+            "erst am Freitag",
+            "nach dem Aktionstag"
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „spätestens am Mittwoch“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „spätestens am Mittwoch“ wird im Text bestätigt.",
+            "Falsch: „erst am Freitag“ wird vom Text nicht bestätigt.",
+            "Falsch: „nach dem Aktionstag“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r3-3",
+          "prompt": "Was sollen Personen tun, die nur vormittags Zeit haben?",
+          "options": [
+            "die Fotos selbst machen",
+            "bei der Anmeldung Bescheid sagen",
+            "mit dem Auto kommen"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „bei der Anmeldung Bescheid sagen“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „die Fotos selbst machen“ wird vom Text nicht bestätigt.",
+            "Richtig: „bei der Anmeldung Bescheid sagen“ wird im Text bestätigt.",
+            "Falsch: „mit dem Auto kommen“ wird vom Text nicht bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r3-4",
+          "prompt": "Warum soll man möglichst nicht mit dem Auto kommen?",
+          "options": [
+            "Die Straße bleibt den ganzen Tag geschlossen.",
+            "Autos dürfen nur am Morgen fahren.",
+            "Es gibt keine Besucherparkplätze."
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „Es gibt keine Besucherparkplätze.“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „Die Straße bleibt den ganzen Tag geschlossen.“ wird vom Text nicht bestätigt.",
+            "Falsch: „Autos dürfen nur am Morgen fahren.“ wird vom Text nicht bestätigt.",
+            "Richtig: „Es gibt keine Besucherparkplätze.“ wird im Text bestätigt."
+          ]
+        },
+        {
+          "id": "g-a2-3-r3-5",
+          "prompt": "Woran erkennt man Personen, die nicht fotografiert werden möchten?",
+          "options": [
+            "an einem gelben Aufkleber",
+            "an einem schwarzen T-Shirt",
+            "an einem besonderen Namensschild"
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „an einem gelben Aufkleber“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „an einem gelben Aufkleber“ wird im Text bestätigt.",
+            "Falsch: „an einem schwarzen T-Shirt“ wird vom Text nicht bestätigt.",
+            "Falsch: „an einem besonderen Namensschild“ wird vom Text nicht bestätigt."
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "family": "needs-to-six-ads",
+      "title": "Angebote: Kurse und Mobilität",
+      "example": {
+        "profile": "0 · Clara sucht am Dienstagabend einen kurzen Einführungskurs.",
+        "answer": "B"
+      },
+      "profiles": [
+        {
+          "id": "g-a2-3-r4-1",
+          "text": "1 · Emre möchte für einen Tag ein Gerät ausleihen, aber nichts kaufen.",
+          "answer": "C",
+          "rationale": "Anzeige C bietet eine tageweise Ausleihe."
+        },
+        {
+          "id": "g-a2-3-r4-2",
+          "text": "2 · Eine Familie sucht am Samstag ein gemeinsames Angebot für ein Kind von neun Jahren.",
+          "answer": "D",
+          "rationale": "Anzeige D richtet sich an Erwachsene mit Kindern ab acht Jahren."
+        },
+        {
+          "id": "g-a2-3-r4-3",
+          "text": "3 · Minh möchte am Freitag nach der Arbeit persönliche Beratung bekommen.",
+          "answer": "A",
+          "rationale": "Anzeige A ist am Freitagabend geöffnet und bietet Beratung."
+        },
+        {
+          "id": "g-a2-3-r4-4",
+          "text": "4 · Ein Student sucht sonntags einen kostenlosen Reparaturservice für seinen Laptop.",
+          "answer": "X",
+          "rationale": "Keine Anzeige verbindet Sonntag, kostenlos und Laptopreparatur."
+        },
+        {
+          "id": "g-a2-3-r4-5",
+          "text": "5 · Eine Seniorin kann nicht selbst kommen und braucht eine Lieferung nach Hause.",
+          "answer": "F",
+          "rationale": "Anzeige F bietet eine Lieferung nach Termin an."
+        }
+      ],
+      "adverts": [
+        {
+          "letter": "A",
+          "heading": "BERATUNG AM ABEND",
+          "text": "Freitags von 17 bis 20 Uhr beantworten wir persönliche Fragen rund um kurse und mobilität. Bringen Sie vorhandene Unterlagen mit. Ein Termin ist nicht nötig, die Beratung kostet fünf Euro."
+        },
+        {
+          "letter": "B",
+          "heading": "ERSTER SCHRITT",
+          "text": "Dienstag 18 Uhr: In neunzig Minuten lernen Anfängerinnen und Anfänger die wichtigsten Regeln zu kurse und mobilität kennen. Material liegt bereit. Bitte melden Sie sich spätestens einen Tag vorher online an."
+        },
+        {
+          "letter": "C",
+          "heading": "LEIHEN STATT KAUFEN",
+          "text": "Verschiedene Geräte und praktische Gegenstände können Sie für einen Tag oder eine Woche ausleihen. Abholung werktags bis 19 Uhr. Ausweis und kleines Pfand erforderlich. Eine kurze Bedienungserklärung ist inklusive."
+        },
+        {
+          "letter": "D",
+          "heading": "SAMSTAG FÜR FAMILIEN",
+          "text": "Erwachsene und Kinder ab acht Jahren entdecken gemeinsam unser Thema Kurse und Mobilität. Der Kurs beginnt um 10 Uhr und dauert zwei Stunden. Getränke sind vorhanden; bequeme Kleidung bitte mitbringen."
+        },
+        {
+          "letter": "E",
+          "heading": "NUR ONLINE",
+          "text": "Unsere Videos erklären die wichtigsten Grundlagen Schritt für Schritt. Sie lernen zu Hause und können Fragen per E-Mail stellen. Persönliche Treffen, Ausleihe und Lieferung bieten wir bei diesem Angebot nicht an."
+        },
+        {
+          "letter": "F",
+          "heading": "WIR KOMMEN ZU IHNEN",
+          "text": "Wer nicht zu uns kommen kann, vereinbart telefonisch eine Lieferung nach Hause. Termine sind Montag bis Samstag möglich. Unsere Mitarbeitenden erklären alles an der Tür; Reparaturen gehören nicht zum Service."
+        }
+      ]
+    }
+  ],
+  "listening": [
+    {
+      "part": 1,
+      "family": "five-short-public-or-private-messages",
+      "plays": 2,
+      "items": [
+        {
+          "id": "g-a2-3-h1-1",
+          "prompt": "Bis wann liegt Emres Reservierung bereit?",
+          "options": [
+            "bis Dienstag",
+            "bis Donnerstag",
+            "bis Samstag"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „bis Donnerstag“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „bis Dienstag“ wird vom Text nicht bestätigt.",
+            "Richtig: „bis Donnerstag“ wird im Text bestätigt.",
+            "Falsch: „bis Samstag“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Emre, hier ist die Information. Ihre reservierten Unterlagen sind angekommen und liegen bis Donnerstagabend für Sie bereit. Am Mittwoch schließen wir wegen einer internen Besprechung schon um sechzehn Uhr. Donnerstag sind wir wieder bis neunzehn Uhr da. Bitte bringen Sie zur Abholung Ihren Ausweis und die Reservierungsnummer aus unserer E-Mail mit."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-3-h1-2",
+          "prompt": "Wo hält der Bus heute?",
+          "options": [
+            "vor dem Bahnhof",
+            "am Rathaus",
+            "in der Gartenstraße"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „in der Gartenstraße“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „vor dem Bahnhof“ wird vom Text nicht bestätigt.",
+            "Falsch: „am Rathaus“ wird vom Text nicht bestätigt.",
+            "Richtig: „in der Gartenstraße“ wird im Text bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Achtung, wegen Bauarbeiten kann die Haltestelle vor dem Rathaus heute nicht benutzt werden. Der Bus fährt trotzdem nach dem normalen Fahrplan. Bitte steigen Sie an der Ersatzhaltestelle in der Gartenstraße ein. Sie liegt etwa hundertfünfzig Meter weiter, direkt vor der Apotheke. Ab morgen früh halten alle Busse wieder wie gewohnt am Rathaus."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-3-h1-3",
+          "prompt": "Warum kann Clara den Gegenstand noch nicht abholen?",
+          "options": [
+            "Ein Teil fehlt noch.",
+            "Das Büro ist geschlossen.",
+            "Die Rechnung wurde verloren."
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „Ein Teil fehlt noch.“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „Ein Teil fehlt noch.“ wird im Text bestätigt.",
+            "Falsch: „Das Büro ist geschlossen.“ wird vom Text nicht bestätigt.",
+            "Falsch: „Die Rechnung wurde verloren.“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Guten Tag Clara, wir haben Ihren Gegenstand geprüft und fast alles erledigt. Leider fehlt uns noch ein passendes kleines Ersatzteil. Es wird morgen Vormittag geliefert. Deshalb ist eine Abholung heute nicht möglich. Kommen Sie bitte am Freitag nach fünfzehn Uhr. Dann können Sie auch direkt mit Karte oder bar bezahlen."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-3-h1-4",
+          "prompt": "Was sollen die Teilnehmenden mitbringen?",
+          "options": [
+            "einen Becher",
+            "einen Regenschirm",
+            "ein Handtuch"
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „einen Becher“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „einen Becher“ wird im Text bestätigt.",
+            "Falsch: „einen Regenschirm“ wird vom Text nicht bestätigt.",
+            "Falsch: „ein Handtuch“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Noch eine Information zum Termin morgen: Wir treffen uns um neun Uhr am Haupteingang. Die Veranstaltung findet größtenteils im Gebäude statt, deshalb brauchen Sie keinen Regenschirm. Getränke stehen kostenlos bereit, aber bitte bringen Sie einen eigenen Becher mit. Arbeitsmaterial und Schutzkleidung bekommen Sie von uns. Der Termin endet voraussichtlich gegen zwölf Uhr dreißig."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-3-h1-5",
+          "prompt": "Wann beginnt das Treffen?",
+          "options": [
+            "um 17:30 Uhr",
+            "um 18:00 Uhr",
+            "um 18:30 Uhr"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „um 18:30 Uhr“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „um 17:30 Uhr“ wird vom Text nicht bestätigt.",
+            "Falsch: „um 18:00 Uhr“ wird vom Text nicht bestätigt.",
+            "Richtig: „um 18:30 Uhr“ wird im Text bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Hallo zusammen, unser heutiges Treffen beginnt eine halbe Stunde später als geplant, also erst um achtzehn Uhr dreißig. Der Raum bleibt derselbe: Raum vier im ersten Stock. Wer schon um achtzehn Uhr kommt, kann im Café warten. Dort habe ich einen Tisch reserviert. Bitte gebt diese Änderung auch an die neuen Mitglieder weiter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "family": "one-continuous-conversation",
+      "plays": 1,
+      "visualAsset": "/images/goethe/a2-3/hoeren-teil2.svg",
+      "visualAlt": "Neun funktionale Bildfelder zum Tagesplan in Freiburg",
+      "leadQuestion": "Was machen Minh und Clara am Samstag?",
+      "options": [
+        {
+          "letter": "A",
+          "label": "VHS"
+        },
+        {
+          "letter": "B",
+          "label": "Leihrad-Station"
+        },
+        {
+          "letter": "C",
+          "label": "Buchladen"
+        },
+        {
+          "letter": "D",
+          "label": "Rathaus"
+        },
+        {
+          "letter": "E",
+          "label": "Bäckerei"
+        },
+        {
+          "letter": "F",
+          "label": "Wohnungsbüro"
+        },
+        {
+          "letter": "G",
+          "label": "Park"
+        },
+        {
+          "letter": "H",
+          "label": "Copyshop"
+        },
+        {
+          "letter": "I",
+          "label": "Café"
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "Minh",
+          "text": "Unser freier Samstag ist voll, aber wir schaffen alles. Wir treffen uns zuerst um neun Uhr bei der Buchladen. Dort hole ich die bestellten Sachen ab. Das ist unser Beispiel. Danach müssen wir noch einige Wege gemeinsam planen."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Gut. Um zehn Uhr gehen wir zur Leihrad-Station. Du hast doch die Nummer von dem verlorenen Rucksack dabei. Ich war dort noch nie, aber es liegt gleich hinter dem Rathaus."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Ja. Danach möchte ich gegen elf Uhr in den Rathaus. Wir können dort kurz sitzen und die Unterlagen ansehen. Wenn es regnet, nehmen wir stattdessen das Café, aber die Wetter-App zeigt Sonne."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Um zwölf Uhr brauche ich etwas vom Wohnungsbüro. Meine Pflanze hat neue Erde nötig, und dort gibt es auch kleine Töpfe. Das dauert bestimmt nicht lange."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Dann essen wir um halb zwei im Park. Ich habe gestern einen Tisch am Fenster reserviert. Die Bäckerei wäre schneller, aber ich möchte in Ruhe mit dir sprechen."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Am Nachmittag, etwa um drei, müssen wir noch zur VHS. Für Sonntag fehlt uns Brot. Danach bringe ich um vier das Paket zur Copyshop. Sie schließt schon um halb fünf."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Einverstanden. Den Bäckerei und die Café lassen wir heute aus. Wenn alles klappt, sind wir kurz nach vier fertig und können direkt nach Hause fahren. Danach prüfen wir noch den Plan für Sonntag und sprechen den Rückweg gemeinsam ab."
+        }
+      ],
+      "example": {
+        "number": 0,
+        "stageLabel": "09:00 Uhr",
+        "answer": "C",
+        "rationale": "Sie treffen sich zuerst bei Buchladen."
+      },
+      "items": [
+        {
+          "id": "g-a2-3-h2-1",
+          "number": 6,
+          "stageLabel": "10:00 Uhr",
+          "answer": "B",
+          "rationale": "Dieser Ort wird für die Uhrzeit ausdrücklich genannt."
+        },
+        {
+          "id": "g-a2-3-h2-2",
+          "number": 7,
+          "stageLabel": "11:00 Uhr",
+          "answer": "D",
+          "rationale": "Dieser Ort wird für die Uhrzeit ausdrücklich genannt."
+        },
+        {
+          "id": "g-a2-3-h2-3",
+          "number": 8,
+          "stageLabel": "12:00 Uhr",
+          "answer": "F",
+          "rationale": "Dieser Ort wird für die Uhrzeit ausdrücklich genannt."
+        },
+        {
+          "id": "g-a2-3-h2-4",
+          "number": 9,
+          "stageLabel": "13:30 Uhr",
+          "answer": "G",
+          "rationale": "Dieser Ort wird für die Uhrzeit ausdrücklich genannt."
+        },
+        {
+          "id": "g-a2-3-h2-5",
+          "number": 10,
+          "stageLabel": "15:00 Uhr",
+          "answer": "A",
+          "rationale": "Dieser Ort wird für die Uhrzeit ausdrücklich genannt."
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "family": "five-short-conversations",
+      "plays": 1,
+      "items": [
+        {
+          "id": "g-a2-3-h3-1",
+          "prompt": "Was kauft die Frau?",
+          "options": [
+            "eine Fahrkarte",
+            "Leih-Tablets für digitale Übungen",
+            "einen Blumenstrauß"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „Leih-Tablets für digitale Übungen“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „eine Fahrkarte“ wird vom Text nicht bestätigt.",
+            "Richtig: „Leih-Tablets für digitale Übungen“ wird im Text bestätigt.",
+            "Falsch: „einen Blumenstrauß“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Ich wollte eigentlich nur eine Fahrkarte kaufen, aber die habe ich schon in der App. Den Blumenstrauß nehme ich erst morgen mit. Heute brauche ich unbedingt Leih-Tablets für digitale Übungen; zu Hause ist nichts mehr davon da."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Dann gehen wir zuerst dorthin. Der Laden schließt nämlich schon in zwanzig Minuten. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ],
+          "visualAsset": "/images/goethe/a2-3/hoeren-teil3-1.svg",
+          "visualAlt": "Drei funktionale Bildoptionen A, B und C für Aufgabe 11"
+        },
+        {
+          "id": "g-a2-3-h3-2",
+          "prompt": "Wie kommt der Mann nach Hause?",
+          "options": [
+            "mit dem Bus",
+            "mit dem Fahrrad",
+            "zu Fuß"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „zu Fuß“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „mit dem Bus“ wird vom Text nicht bestätigt.",
+            "Falsch: „mit dem Fahrrad“ wird vom Text nicht bestätigt.",
+            "Richtig: „zu Fuß“ wird im Text bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Mein Fahrrad steht noch am Bahnhof, aber wegen des starken Regens fahre ich heute nicht damit. Der Bus kommt erst in vierzig Minuten."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Ich kann dich ein Stück begleiten. Zu Fuß brauchen wir nur fünfundzwanzig Minuten."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Gute Idee, dann nehme ich einen Schirm und wir gehen gemeinsam. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ],
+          "visualAsset": "/images/goethe/a2-3/hoeren-teil3-2.svg",
+          "visualAlt": "Drei funktionale Bildoptionen A, B und C für Aufgabe 12"
+        },
+        {
+          "id": "g-a2-3-h3-3",
+          "prompt": "Wo treffen sich die beiden?",
+          "options": [
+            "Park",
+            "Café",
+            "Rathaus"
+          ],
+          "answer": 1,
+          "rationale": "Die Angabe „Café“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „Park“ wird vom Text nicht bestätigt.",
+            "Richtig: „Café“ wird im Text bestätigt.",
+            "Falsch: „Rathaus“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Treffen wir uns im Park? Dort ist es am Nachmittag oft sehr voll."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Im Rathaus wäre es ruhiger, aber der liegt weit weg. Komm lieber direkt zur Café; ich warte am Haupteingang neben der großen Uhr."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Gut, ich bin um Viertel vor sechs da. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ],
+          "visualAsset": "/images/goethe/a2-3/hoeren-teil3-3.svg",
+          "visualAlt": "Drei funktionale Bildoptionen A, B und C für Aufgabe 13"
+        },
+        {
+          "id": "g-a2-3-h3-4",
+          "prompt": "Wann beginnt der Termin?",
+          "options": [
+            "14:00 Uhr",
+            "15:00 Uhr",
+            "14:30 Uhr"
+          ],
+          "answer": 2,
+          "rationale": "Die Angabe „14:30 Uhr“ entspricht dem Text.",
+          "distractorRationales": [
+            "Falsch: „14:00 Uhr“ wird vom Text nicht bestätigt.",
+            "Falsch: „15:00 Uhr“ wird vom Text nicht bestätigt.",
+            "Richtig: „14:30 Uhr“ wird im Text bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "In meiner Nachricht steht, dass der Termin um vierzehn Uhr beginnt."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Das war die alte Uhrzeit. Gestern kam eine neue E-Mail: Die Gruppe vor uns braucht länger, deshalb starten wir erst um halb drei."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Also vierzehn Uhr dreißig. Gut, dann kann ich vorher noch etwas essen. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ],
+          "visualAsset": "/images/goethe/a2-3/hoeren-teil3-4.svg",
+          "visualAlt": "Drei funktionale Bildoptionen A, B und C für Aufgabe 14"
+        },
+        {
+          "id": "g-a2-3-h3-5",
+          "prompt": "Welchen Raum nehmen sie?",
+          "options": [
+            "Raum 5",
+            "Raum 1",
+            "Raum 3"
+          ],
+          "answer": 0,
+          "rationale": "Die Angabe „Raum 5“ entspricht dem Text.",
+          "distractorRationales": [
+            "Richtig: „Raum 5“ wird im Text bestätigt.",
+            "Falsch: „Raum 1“ wird vom Text nicht bestätigt.",
+            "Falsch: „Raum 3“ wird vom Text nicht bestätigt."
+          ],
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Raum eins ist heute für eine Prüfung reserviert. Raum drei wäre frei, aber dort funktioniert der Beamer nicht."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Für unsere Bilder brauchen wir unbedingt einen."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Dann bleibt Raum fünf. Er ist zwar kleiner, aber die Technik wurde gestern geprüft."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Perfekt, ich schreibe die neue Raumnummer an alle. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ],
+          "visualAsset": "/images/goethe/a2-3/hoeren-teil3-5.svg",
+          "visualAlt": "Drei funktionale Bildoptionen A, B und C für Aufgabe 15"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "family": "radio-interview",
+      "plays": 2,
+      "turns": [
+        {
+          "speaker": "Moderatorin",
+          "text": "Heute sprechen wir mit Emre über „Leihräder für den Alltag“. Viele Menschen kennen das Angebot, aber nicht alle wissen, wie es organisiert wird. Seit wann sind Sie dabei?"
+        },
+        {
+          "speaker": "Emre",
+          "text": "Ich helfe seit dem ersten Jahr mit. Die Stadt bietet die Räder seit zwei Jahren an. Anfangs kamen nur wenige Gäste, inzwischen kennen es viele Familien und Berufstätige. Wichtig ist uns, dass alle ohne komplizierte Schritte teilnehmen können."
+        },
+        {
+          "speaker": "Moderatorin",
+          "text": "Wie groß ist das Angebot heute, und was müssen neue Besucherinnen und Besucher beachten?"
+        },
+        {
+          "speaker": "Emre",
+          "text": "Es gibt 28 Stationen. Die erste halbe Stunde kostet wenig. Neue Gäste bekommen vor Ort eine kurze Erklärung. Man kann Fragen stellen, und niemand muss schon Erfahrung mitbringen. Nur bei größeren Gruppen wünschen wir eine Nachricht vorher."
+        },
+        {
+          "speaker": "Moderatorin",
+          "text": "Welche praktischen Regeln sind besonders wichtig?"
+        },
+        {
+          "speaker": "Emre",
+          "text": "Ein Helm gehört nicht automatisch zur Ausleihe. Viele glauben, man müsse alles im Internet buchen, aber das stimmt nicht. Wir bieten auch persönliche Hilfe. Wer uns regelmäßig besucht, lernt schnell andere Menschen aus dem Viertel kennen."
+        },
+        {
+          "speaker": "Moderatorin",
+          "text": "Gibt es zusätzliche Informationen oder neue Pläne?"
+        },
+        {
+          "speaker": "Emre",
+          "text": "Ja. Schäden meldet man über die App. Am Stadtrand sind neue Stationen geplant. Dafür brauchen wir weitere Freiwillige, vor allem am späten Nachmittag. Interessierte können erst einmal zwei Stunden zuschauen und danach entscheiden, ob sie mitmachen möchten."
+        }
+      ],
+      "example": {
+        "statement": "Das Gespräch handelt von Leihräder für den Alltag.",
+        "answer": true,
+        "rationale": "Das Thema wird in der Einleitung genannt."
+      },
+      "items": [
+        {
+          "id": "g-a2-3-h4-1",
+          "statement": "Das Angebot ist heute bekannter als zu Beginn.",
+          "answer": true,
+          "rationale": "Inzwischen kennen es viele Menschen."
+        },
+        {
+          "id": "g-a2-3-h4-2",
+          "statement": "Neue Gäste müssen bereits Erfahrung haben.",
+          "answer": false,
+          "rationale": "Erfahrung wird ausdrücklich nicht verlangt."
+        },
+        {
+          "id": "g-a2-3-h4-3",
+          "statement": "Größere Gruppen sollen sich vorher melden.",
+          "answer": true,
+          "rationale": "Für Gruppen wird eine Nachricht gewünscht."
+        },
+        {
+          "id": "g-a2-3-h4-4",
+          "statement": "Die Teilnahme ist nur über das Internet möglich.",
+          "answer": false,
+          "rationale": "Es gibt auch persönliche Hilfe vor Ort."
+        },
+        {
+          "id": "g-a2-3-h4-5",
+          "statement": "Neue Freiwillige können das Projekt zuerst kennenlernen.",
+          "answer": true,
+          "rationale": "Sie dürfen zunächst zwei Stunden zuschauen."
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "family": "personal-message",
+      "situation": "Sie wollten sich heute mit Clara treffen, können aber nicht kommen.",
+      "functions": [
+        "Entschuldigen Sie sich.",
+        "Nennen Sie den Grund.",
+        "Schlagen Sie einen neuen Termin vor."
+      ],
+      "minWords": 20,
+      "maxWords": 30,
+      "modelAnswer": "Liebe Clara, leider kann ich heute nicht kommen, weil ich länger arbeiten muss. Entschuldige bitte! Hast du morgen um 18 Uhr Zeit? Liebe Grüße, Alex"
+    },
+    {
+      "part": 2,
+      "family": "semi-official-email",
+      "situation": "Sie haben eine Frage an das VHS-Kursbüro und brauchen eine persönliche Auskunft.",
+      "addressee": "das VHS-Kursbüro",
+      "functions": [
+        "Erklären Sie kurz Ihre Situation.",
+        "Bitten Sie um einen Termin.",
+        "Fragen Sie, welche Unterlagen Sie mitbringen sollen."
+      ],
+      "minWords": 30,
+      "maxWords": 40,
+      "modelAnswer": "Guten Tag, ich brauche eine persönliche Auskunft zu Ihrem Angebot. Könnte ich bitte am Donnerstagnachmittag einen Termin bekommen? Welche Unterlagen soll ich zum Gespräch mitbringen? Vielen Dank und freundliche Grüße, Alex Martin"
+    }
+  ],
+  "speaking": [
+    {
+      "part": 1,
+      "family": "personal-information-exchange",
+      "cards": [
+        "Wohnort?",
+        "Wochenende?",
+        "Verkehrsmittel?",
+        "Lieblingsort?"
+      ],
+      "examples": [
+        "Wo wohnen Sie?",
+        "Was machen Sie am Wochenende?",
+        "Welches Verkehrsmittel benutzen Sie oft?",
+        "Was ist Ihr Lieblingsort in der Stadt?"
+      ]
+    },
+    {
+      "part": 2,
+      "family": "guided-personal-monologue",
+      "candidateA": {
+        "prompt": "Wie lernen Sie am besten?",
+        "cues": [
+          "wann?",
+          "wo?",
+          "wie oft?",
+          "mit wem?"
+        ],
+        "followUps": [
+          "Was ist dabei wichtig?",
+          "Was möchten Sie ändern?"
+        ]
+      },
+      "candidateB": {
+        "prompt": "Wie bewegen Sie sich in Ihrer Stadt?",
+        "cues": [
+          "wann?",
+          "wo?",
+          "wie?",
+          "warum?"
+        ],
+        "followUps": [
+          "Wie war das früher?",
+          "Was empfehlen Sie?"
+        ]
+      }
+    },
+    {
+      "part": 3,
+      "family": "pair-planning-negotiation",
+      "situation": "Sie möchten einen Termin für einen gemeinsamen Schnupperkurs. Finden Sie mithilfe Ihrer beiden Terminkarten einen gemeinsamen Zeitpunkt.",
+      "candidateAAsset": "/images/goethe/a2-3/sprechen-teil3-a.svg",
+      "candidateBAsset": "/images/goethe/a2-3/sprechen-teil3-b.svg",
+      "candidateAAlt": "Terminkarte A mit freien und belegten Zeiten",
+      "candidateBAlt": "Terminkarte B mit freien und belegten Zeiten",
+      "requiredOutcome": "Beide Personen einigen sich auf einen gemeinsamen Termin und nennen Zeit und Treffpunkt."
+    }
+  ],
+  "scoring": {
+    "reading": {
+      "rawMaximum": 20,
+      "multiplier": 1.25,
+      "resultMaximum": 25
+    },
+    "listening": {
+      "rawMaximum": 20,
+      "multiplier": 1.25,
+      "resultMaximum": 25
+    },
+    "writing": {
+      "rawMaximum": 20,
+      "multiplier": 1.25,
+      "resultMaximum": 25,
+      "rubric": {
+        "bands": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "pointsPerCriterion": [
+          5,
+          3.5,
+          2,
+          0.5,
+          0
+        ],
+        "criteriaPerTask": [
+          "task-fulfilment-and-register",
+          "language-range-and-control"
+        ],
+        "zeroRule": "If task fulfilment receives E, the complete task receives 0 points."
+      }
+    },
+    "speaking": {
+      "resultMaximum": 25,
+      "rubric": {
+        "bands": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "part1PointsPerCriterion": [
+          2,
+          1.5,
+          1,
+          0.5,
+          0
+        ],
+        "part2PointsPerCriterion": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "part3PointsPerCriterion": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "pronunciationPoints": [
+          5,
+          3.5,
+          2,
+          0.5,
+          0
+        ],
+        "taskCriteria": [
+          "language-function",
+          "interaction",
+          "register"
+        ],
+        "languageCriteria": [
+          "range",
+          "control"
+        ],
+        "pronunciationCriteria": [
+          "intonation",
+          "word-stress",
+          "individual-sounds"
+        ],
+        "zeroRule": "If task fulfilment receives E, the complete task receives 0 points."
+      }
+    },
+    "pass": {
+      "totalMinimum": 60,
+      "writtenMinimum": 45,
+      "writtenMaximum": 75,
+      "oralMinimum": 15,
+      "oralMaximum": 25
+    }
+  },
+  "media": {
+    "style": "functional-exam-editorial",
+    "photography": "none",
+    "assets": [
+      {
+        "id": "a2-3-h2",
+        "path": "/images/goethe/a2-3/hoeren-teil2.svg",
+        "purpose": "Hören Teil 2: neun Bildoptionen A bis I",
+        "alt": "Neun klar gezeichnete Bildoptionen A bis I"
+      },
+      {
+        "id": "a2-3-h3-1",
+        "path": "/images/goethe/a2-3/hoeren-teil3-1.svg",
+        "purpose": "Hören Teil 3: Bildoptionen für Aufgabe 11",
+        "alt": "Drei Bildoptionen A, B und C für Aufgabe 11"
+      },
+      {
+        "id": "a2-3-h3-2",
+        "path": "/images/goethe/a2-3/hoeren-teil3-2.svg",
+        "purpose": "Hören Teil 3: Bildoptionen für Aufgabe 12",
+        "alt": "Drei Bildoptionen A, B und C für Aufgabe 12"
+      },
+      {
+        "id": "a2-3-h3-3",
+        "path": "/images/goethe/a2-3/hoeren-teil3-3.svg",
+        "purpose": "Hören Teil 3: Bildoptionen für Aufgabe 13",
+        "alt": "Drei Bildoptionen A, B und C für Aufgabe 13"
+      },
+      {
+        "id": "a2-3-h3-4",
+        "path": "/images/goethe/a2-3/hoeren-teil3-4.svg",
+        "purpose": "Hören Teil 3: Bildoptionen für Aufgabe 14",
+        "alt": "Drei Bildoptionen A, B und C für Aufgabe 14"
+      },
+      {
+        "id": "a2-3-h3-5",
+        "path": "/images/goethe/a2-3/hoeren-teil3-5.svg",
+        "purpose": "Hören Teil 3: Bildoptionen für Aufgabe 15",
+        "alt": "Drei Bildoptionen A, B und C für Aufgabe 15"
+      },
+      {
+        "id": "a2-3-sp3-a",
+        "path": "/images/goethe/a2-3/sprechen-teil3-a.svg",
+        "purpose": "Sprechen Teil 3: Terminkarte A",
+        "alt": "Wochenplan für Prüfungsteilnehmerin oder Prüfungsteilnehmer A"
+      },
+      {
+        "id": "a2-3-sp3-b",
+        "path": "/images/goethe/a2-3/sprechen-teil3-b.svg",
+        "purpose": "Sprechen Teil 3: Terminkarte B",
+        "alt": "Wochenplan für Prüfungsteilnehmerin oder Prüfungsteilnehmer B"
+      }
+    ]
+  },
+  "provenance": {
+    "originalWeLearn": true,
+    "officialSourcesUsedForArchitectureOnly": true
+  },
+  "candidateFingerprint": "3d4b557e99c532f116f4ca5c4dafb56c9ec668e4a6ebb23dc2e0692c15bf5506"
+}

@@ -27,14 +27,16 @@ test('official A2 shape, scoring and audio repetitions are frozen', () => {
   assert.deepEqual(contract.passRules, { totalMinimum: 60, writtenMinimum: 45, writtenMaximum: 75, oralMinimum: 15, oralMaximum: 25 });
 });
 
-test('golden set is audio-blocked and the four remaining legacy sets are fail-closed', () => {
-  assert.equal(harness.release.sets.length, 5);
-  const golden = harness.release.sets.find(row => row.id === 'a2-1');
-  assert.deepEqual(golden, { id: 'a2-1', state: 'AUDIO_BLOCKED', published: false, contentReady: true, visualsReady: true, audioReady: false, scoringReady: true, humanApproved: false });
-  for (const row of harness.release.sets.filter(record => record.id !== 'a2-1')) {
-    assert.equal(row.state, 'LEGACY_HOLD');
+test('all ten complete content sets are audio-blocked and fail closed', () => {
+  assert.equal(harness.release.sets.length, 10);
+  for (const row of harness.release.sets) {
+    assert.equal(row.state, 'AUDIO_BLOCKED');
     assert.equal(row.published, false);
-    for (const capability of harness.blueprint.releaseCapabilities.filter(value => value !== 'published')) assert.equal(row[capability], false);
+    assert.equal(row.contentReady, true);
+    assert.equal(row.visualsReady, true);
+    assert.equal(row.scoringReady, true);
+    assert.equal(row.audioReady, false);
+    assert.equal(row.humanApproved, false);
   }
 });
 
@@ -62,6 +64,11 @@ test('topic ledger covers ten distinct sets without repeated domains or interact
   const interactions = harness.ledger.sets.map(row => row.interaction);
   assert.equal(new Set(domains).size, domains.length);
   assert.equal(new Set(interactions).size, interactions.length);
+});
+
+test('fairness guardrails reject positional and demographic bias', () => {
+  assert.equal(Object.keys(harness.blueprint.fairnessPolicy).length, 5);
+  assert.equal(Object.values(harness.blueprint.fairnessPolicy).every(Boolean), true);
 });
 
 test('work orders bind one set to source, blueprint, ledger, prompts and harness fingerprints', () => {

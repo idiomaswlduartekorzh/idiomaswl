@@ -5,8 +5,9 @@ import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 
 import golden from '../src/data/mocks/goethe-a2-golden-set-1.ts';
+import { GOETHE_A2_SETS } from '../src/data/mocks/goethe-a2-sets.ts';
 import mock from '../src/data/mocks/goethe-a2-set-1.ts';
-import { buildGoldenAudioPlan, buildGoldenCandidate, countMockResponses, validateGoldenSet } from '../scripts/lib/goethe-a2-golden-core.mjs';
+import { buildGoldenAudioPlan, buildGoldenCandidate, countMockResponses, validateGoldenSet, validateGoetheA2Collection } from '../scripts/lib/goethe-a2-golden-core.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -15,6 +16,16 @@ test('golden set preserves the complete public A2 task architecture', () => {
   assert.deepEqual(golden.reading.parts.map(part => part.items?.length ?? part.profiles.length), [5, 5, 5, 5]);
   assert.deepEqual(golden.listening.parts.map(part => part.items.length), [5, 5, 5, 5]);
   assert.deepEqual(golden.listening.parts.map(part => part.plays), [2, 1, 1, 2]);
+});
+
+test('ten original sets satisfy the same frozen Goethe A2 contract', () => {
+  assert.deepEqual(validateGoetheA2Collection(GOETHE_A2_SETS, root), []);
+  assert.equal(GOETHE_A2_SETS.length, 10);
+  for (const set of GOETHE_A2_SETS) {
+    assert.deepEqual(set.reading.parts.map(part => part.items?.length ?? part.profiles.length), [5, 5, 5, 5]);
+    assert.deepEqual(set.listening.parts.map(part => part.items.length), [5, 5, 5, 5]);
+    assert.equal(set.status, 'AUDIO_BLOCKED');
+  }
 });
 
 test('worked examples match the official sheets and stay outside the 45 scored responses', () => {

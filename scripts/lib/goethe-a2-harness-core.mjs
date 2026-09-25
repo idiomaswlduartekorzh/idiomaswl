@@ -73,6 +73,7 @@ export function validateGoetheA2Harness(harness) {
   if (blueprint.visualPolicy?.forbiddenLooks?.every(value => !value.includes('AI')) ?? true) fail('blueprint: visual policy must reject obvious AI photography');
   if (blueprint.audioPolicy?.generationDefault !== 'blocked' || blueprint.audioPolicy?.generationRequiresExplicitHumanAuthorization !== true || blueprint.audioPolicy?.generationNeverPublishes !== true) fail('blueprint: audio must remain blocked and must never auto-publish');
   if (blueprint.originalityPolicy?.copyingOfficialTextAudioOrVisualsForbidden !== true || blueprint.originalityPolicy?.authorCannotApproveOwnWork !== true) fail('blueprint: originality and reviewer separation are mandatory');
+  if (Object.values(blueprint.fairnessPolicy ?? {}).length !== 5 || Object.values(blueprint.fairnessPolicy ?? {}).some(value => value !== true)) fail('blueprint: all five fairness guardrails are mandatory');
 
   const stages = blueprint.agentStages ?? [];
   if (stages.length !== REQUIRED_PROMPT_IDS.length) fail(`blueprint: expected ${REQUIRED_PROMPT_IDS.length} agent stages`);
@@ -95,11 +96,9 @@ export function validateGoetheA2Harness(harness) {
   if (interactionKeys.some(value => !value) || new Set(interactionKeys).size !== interactionKeys.length) fail('ledger: interactions must be non-empty and unique');
 
   if (release.schemaVersion !== 1 || release.level !== 'A2') fail('release: invalid identity');
-  if ((release.sets ?? []).length !== 5) fail('release: sets 1 through 5 must be represented');
-  const golden = release.sets?.find(row => row.id === 'a2-1');
-  if (!golden || golden.state !== 'AUDIO_BLOCKED' || golden.published || !golden.contentReady || !golden.visualsReady || golden.audioReady || !golden.scoringReady || golden.humanApproved) fail('release: a2-1 must be content/visual/scoring ready, audio blocked, unapproved and unpublished');
-  for (const row of release.sets?.filter(record => record.id !== 'a2-1') ?? []) {
-    if (row.state !== 'LEGACY_HOLD' || row.published || row.contentReady || row.visualsReady || row.audioReady || row.scoringReady || row.humanApproved) fail(`release: ${row.id} must fail closed as LEGACY_HOLD`);
+  if ((release.sets ?? []).length !== 10 || !same(release.sets.map(row => row.id), Array.from({ length: 10 }, (_, index) => `a2-${index + 1}`))) fail('release: sets a2-1 through a2-10 must be represented in order');
+  for (const row of release.sets ?? []) {
+    if (row.state !== 'AUDIO_BLOCKED' || row.published || !row.contentReady || !row.visualsReady || row.audioReady || !row.scoringReady || row.humanApproved) fail(`release: ${row.id} must be content/visual/scoring ready, audio blocked, unapproved and unpublished`);
   }
 
   for (const [name, schema] of Object.entries(schemas)) {

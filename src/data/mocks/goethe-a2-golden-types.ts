@@ -18,9 +18,9 @@ export type GoetheA2AudioItem = GoetheA2Choice & {
   turns: GoetheA2Turn[];
 };
 
-export type GoetheA2GoldenSet = {
+export type GoetheA2Set = {
   schemaVersion: 1;
-  id: 'a2-1';
+  id: `a2-${number}`;
   status: 'AUDIO_BLOCKED';
   title: string;
   authorship: {
@@ -150,3 +150,6 @@ export type GoetheA2GoldenSet = {
     assets: { id: string; path: string; purpose: string; alt: string }[];
   };
 };
+
+/** @deprecated Kept as a compatibility alias for the approved reference mock. */
+export type GoetheA2GoldenSet = GoetheA2Set;

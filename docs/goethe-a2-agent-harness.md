@@ -6,7 +6,7 @@ Este sistema reemplaza los cinco scaffolds A2 históricos por simulacros origina
 
 El catálogo anterior mostraba `a2-1` a `a2-5` como simulacros gratuitos. Cada archivo tenía 13 ítems de Hören, 9 de Lesen, dos tareas escritas y tres orales; además apuntaba a tres MP3 inexistentes y el runner genérico enseñaba la transcripción durante Hören. Tampoco existían scoring, submission, práctica seccional ni revisión A2 verificables.
 
-Esos cinco archivos se conservan temporalmente solo como deuda histórica y están en `LEGACY_HOLD`. `getMock()` falla cerrado y el catálogo muestra el estado sin CTA. No se ampliarán ni se usarán como referencia textual.
+Los cinco scaffolds fueron retirados. El set 1 aprobado funciona como maestro y los sets 2–10 se reconstruyeron con contenido original, visuales deterministas, scoring y planes de audio completos. Los diez están en `AUDIO_BLOCKED`: `getMock()` falla cerrado y el catálogo muestra el estado sin CTA hasta que existan audio, QA acústica y aprobación humana final.
 
 ## Contrato congelado
 
@@ -78,7 +78,7 @@ LEGACY_HOLD
   → PUBLISHED
 ```
 
-`AUDIO_BLOCKED` es el destino normal mientras ElevenLabs no tenga créditos. Contenido, imágenes, scripts, scoring, práctica, PDF y comercio pueden estar listos sin que el examen completo se abra. La generación futura no publica: después exige QA técnica, escucha humana independiente y un recibo final ligado a la huella exacta.
+`AUDIO_BLOCKED` es el estado actual de los diez mocks mientras ElevenLabs no tenga créditos. Contenido, imágenes, scripts, scoring y el adaptador compartido de examen/práctica están listos sin que el examen completo se abra. La generación futura no publica: después exige QA técnica, escucha humana independiente y un recibo final ligado a la huella exacta.
 
 ## Operación
 
@@ -89,12 +89,14 @@ npm run goethe:a2:harness:inventory
 npm run check:goethe-a2-harness
 ```
 
-Abrir el golden set:
+Regenerar y validar la colección completa:
 
 ```bash
-npm run goethe:a2:harness:scaffold -- --set=1 --run=golden-1
+npm run goethe:a2:visuals
+npm run goethe:a2:golden:build
+npm run check:goethe-a2-harness
 ```
 
-El comando crea una ejecución nueva bajo `artifacts/goethe-a2-harness/set-1/golden-1/` y se niega a sobrescribirla. La orden fija las huellas del blueprint, fuentes, ledger, prompts y núcleo del harness; el objetivo queda en `AUDIO_BLOCKED`.
+La compilación genera `candidate.json`, `audio-plan.json`, `work-order.json`, `run.json` y el manifiesto de audio para cada set. El set 1 permanece en `artifacts/goethe-a2-harness/set-1/golden-1/`; los sets 2–10 viven en su ejecución `content-v1`. Las órdenes fijan las huellas del blueprint, fuentes, ledger, prompts y núcleo del harness.
 
-El Set 1 debe completar todo el circuito antes de abrir Sets 2–10 en paralelo. Solo después del golden set se permite producción por lotes, con un archivo aislado por set y un único integrador para archivos compartidos.
+Vista editorial interna: `/labs/goethe-a2-preview?set=1` hasta `?set=10`. El selector permite revisar los diez con el mismo estilo aprobado de IdiomasWL. Ningún set se publica ni se enlaza a compra como disponible mientras su audio siga bloqueado.
