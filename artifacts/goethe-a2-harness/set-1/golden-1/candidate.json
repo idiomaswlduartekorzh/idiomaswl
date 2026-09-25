@@ -480,7 +480,7 @@
       "part": 2,
       "family": "one-continuous-conversation",
       "plays": 1,
-      "visualAsset": "/images/goethe/a2-1/hoeren-teil2-orte.svg",
+      "visualAsset": "/images/goethe/a2-1/hoeren-teil2-orte-final.jpg",
       "visualAlt": "Neun redaktionelle Illustrationen: Café, Bäckerei, Markt, Fahrradwerkstatt, Park, Straßenbahnhaltestelle, Apotheke, Bibliothek und Post.",
       "options": [
         {
@@ -611,7 +611,7 @@
             "Richtig: Sie entscheidet sich für die Leiter.",
             "Falsch: Eine Nähmaschine kommt nicht vor."
           ],
-          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-1.svg",
+          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-1-final.jpg",
           "visualAlt": "Drei redaktionelle Illustrationen: Bohrmaschine, Leiter und Nähmaschine.",
           "turns": [
             {
@@ -639,7 +639,7 @@
             "Falsch: Das war der ursprüngliche Termin.",
             "Richtig: Er kommt eine halbe Stunde später."
           ],
-          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-2.svg",
+          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-2-final.jpg",
           "visualAlt": "Drei einfache Uhren mit den Zeiten 9:30, 10:00 und 10:30.",
           "turns": [
             {
@@ -667,7 +667,7 @@
             "Falsch: Der Eingang bleibt offen.",
             "Falsch: Lärm wird nicht erwähnt."
           ],
-          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-3.svg",
+          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-3-final.jpg",
           "visualAlt": "Drei Hinweisschilder: Fahrradstellplatz, geschlossener Eingang und Ruhezeichen.",
           "turns": [
             {
@@ -695,7 +695,7 @@
             "Richtig: Die Straßenbahn ist ihre Entscheidung.",
             "Falsch: Das Taxi ist ihnen zu teuer."
           ],
-          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-4.svg",
+          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-4-final.jpg",
           "visualAlt": "Drei redaktionelle Illustrationen: Fahrrad, Straßenbahn und Taxi.",
           "turns": [
             {
@@ -723,7 +723,7 @@
             "Falsch: Für die Schilder braucht sie zusätzlich eine kleine.",
             "Richtig: Eine große weiße und eine kleine grüne Dose."
           ],
-          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-5.svg",
+          "visualAsset": "/images/goethe/a2-1/hoeren-teil3-5-final.jpg",
           "visualAlt": "Drei Gruppen von Farbdosen: zwei kleine, eine große sowie eine große mit einer kleinen.",
           "turns": [
             {
@@ -1001,37 +1001,37 @@
     "assets": [
       {
         "id": "h2-places",
-        "path": "/images/goethe/a2-1/hoeren-teil2-orte.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil2-orte-final.jpg",
         "purpose": "nine-option listening board",
         "alt": "Neun redaktionelle Illustrationen von Alltagssituationen."
       },
       {
         "id": "h3-tools",
-        "path": "/images/goethe/a2-1/hoeren-teil3-1.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil3-1-final.jpg",
         "purpose": "three-option listening illustration",
         "alt": "Bohrmaschine, Leiter und Nähmaschine."
       },
       {
         "id": "h3-times",
-        "path": "/images/goethe/a2-1/hoeren-teil3-2.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil3-2-final.jpg",
         "purpose": "three-option listening illustration",
         "alt": "Uhren mit 9:30, 10:00 und 10:30."
       },
       {
         "id": "h3-signs",
-        "path": "/images/goethe/a2-1/hoeren-teil3-3.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil3-3-final.jpg",
         "purpose": "three-option listening illustration",
         "alt": "Drei Hinweisschilder."
       },
       {
         "id": "h3-transport",
-        "path": "/images/goethe/a2-1/hoeren-teil3-4.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil3-4-final.jpg",
         "purpose": "three-option listening illustration",
         "alt": "Fahrrad, Straßenbahn und Taxi."
       },
       {
         "id": "h3-paint",
-        "path": "/images/goethe/a2-1/hoeren-teil3-5.svg",
+        "path": "/images/goethe/a2-1/hoeren-teil3-5-final.jpg",
         "purpose": "three-option listening illustration",
         "alt": "Drei Kombinationen von Farbdosen."
       },
@@ -1053,5 +1053,5 @@
     "originalWeLearn": true,
     "officialSourcesUsedForArchitectureOnly": true
   },
-  "candidateFingerprint": "af3d944745bfe6cd44b4c4833ec907877093f74b70ee6235229423d985761ebb"
+  "candidateFingerprint": "4b832dccb499ad6f32cce3b95d2a88145454a42be289363e086bf58fe2b1b19d"
 }

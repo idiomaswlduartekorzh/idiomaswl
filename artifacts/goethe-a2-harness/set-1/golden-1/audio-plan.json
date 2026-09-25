@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "set": 1,
-  "candidateFingerprint": "af3d944745bfe6cd44b4c4833ec907877093f74b70ee6235229423d985761ebb",
+  "candidateFingerprint": "4b832dccb499ad6f32cce3b95d2a88145454a42be289363e086bf58fe2b1b19d",
   "status": "script-ready-audio-blocked",
   "provider": "ElevenLabs",
   "generation": {
