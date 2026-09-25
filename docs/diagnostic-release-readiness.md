@@ -75,6 +75,17 @@ Las credenciales no forman parte del reporte. Para escritura externa solo se mue
 de bloqueos, proveedor y modelo fijado. La vía humana puede liberar el diagnóstico sin configurar
 Gemini ni Groq.
 
+### Reutilización segura para el control de audio
+
+El control previo ya no reproduce un beep sintético. Usa
+`/audio/reading/en-a1-my-morning-at-the-cafe.mp3`, un activo público heredado cuya huella
+SHA-256 queda fijada en `config/diagnostic/audio-check.json`. La pantalla lo identifica como
+muestra no puntuada, exige que la persona inicie la reproducción y confirme que la oyó con
+claridad. El manifiesto declara `scored: false` y `assessmentBankEligible: false`; las pruebas
+comprueban además que ni su ruta ni su hash aparecen en los bancos objetivo o de escritura. Así
+se recicla audio existente para familiarización y diagnóstico del dispositivo sin presentarlo
+como evidencia lingüística reservada.
+
 ### Piloto de audio A1 con gasto acotado
 
 Antes de producir las 36 grabaciones existe un preset de escucha deliberadamente pequeño:

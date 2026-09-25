@@ -75,35 +75,20 @@ async function fulfillJson(route: Route, status: number, body: unknown) {
   await route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body) });
 }
 
-async function installAudioCheck(page: Page) {
-  await page.addInitScript(() => {
-    class FakeAudioContext {
-      currentTime = 0;
-      destination = {};
-      createOscillator() {
-        return { frequency: { value: 0 }, connect() {}, start() {}, stop() {} };
-      }
-      createGain() { return { gain: { value: 0 }, connect() {} }; }
-      async resume() {}
-      async close() {}
-    }
-    Object.defineProperty(window, 'AudioContext', { configurable: true, value: FakeAudioContext });
-  });
-}
-
 async function beginDiagnostic(page: Page) {
   await page.goto(DIAGNOSTIC_ROUTE);
   await expect(page.getByRole('heading', { name: /Tu perfil real/ })).toBeVisible();
   const start = page.getByRole('button', { name: /Iniciar diagnóstico/ });
   await expect(start).toBeDisabled();
-  await page.getByRole('button', { name: 'Probar sonido' }).click();
-  await expect(page.getByRole('button', { name: '✓ Sonido verificado' })).toBeVisible();
-  await page.getByRole('checkbox').check();
+  const audioSample = page.getByLabel('Muestra de sonido no puntuada');
+  await expect(audioSample.locator('source')).toHaveAttribute('src', /en-a1-my-morning-at-the-cafe\.mp3/);
+  await audioSample.evaluate(element => element.dispatchEvent(new Event('play', { bubbles: true })));
+  await page.getByLabel('Confirmo que escuché la muestra con claridad.').check();
+  await page.getByLabel(/Acepto que mis respuestas/).check();
   await start.click();
 }
 
 test.beforeEach(async ({ page }) => {
-  await installAudioCheck(page);
   await page.route('**/api/diagnostic/media/private-audio-1', route => route.fulfill({
     status: 200,
     contentType: 'audio/mpeg',

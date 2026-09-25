@@ -110,6 +110,12 @@ Actualizado el 25 de septiembre de 2026:
   opciones manipuladas o borradores obsoletos se descartan. La verificación real en navegador
   pasó en 1440 y 390 px, sin overlay ni errores de consola; el inicio autenticado y la historia
   real de recarga siguen pendientes porque este worktree no dispone de credenciales Supabase.
+- **Fase 4 — audio reciclado usado sin contaminar la medición:** el control previo sustituyó el
+  tono sintético por un MP3 inglés heredado y público, fijado mediante SHA-256. La muestra se
+  rotula como no puntuada, requiere reproducción y confirmación explícita de escucha y permanece
+  fuera de todos los bancos diagnósticos. Su manifiesto prohíbe usarla como evidencia o contenido
+  elegible; de este modo se reutiliza un activo existente para comprobar el dispositivo sin
+  degradar la reserva ni la confiabilidad de la habilidad de escucha.
 - **Banco objetivo — primera tanda editorial:** 24 decisiones de escucha en inglés —12 A1 y
   12 B1, sobre seis audios distintos por nivel— reescritas a partir de audios recuperados. Las
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio

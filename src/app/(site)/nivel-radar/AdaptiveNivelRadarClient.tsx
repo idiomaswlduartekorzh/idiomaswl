@@ -11,6 +11,7 @@ import {
   type DiagnosticDraftAnswer,
   type DiagnosticSubmittedResponse,
 } from '@/lib/diagnostic-draft';
+import audioCheck from '../../../../config/diagnostic/audio-check.json';
 import s from './page.module.css';
 
 const CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
@@ -70,6 +71,7 @@ function wordCount(value: string): number {
 export default function AdaptiveNivelRadarClient() {
   const [view, setView] = useState<View>('intro');
   const [audioReady, setAudioReady] = useState(false);
+  const [audioSampleStarted, setAudioSampleStarted] = useState(false);
   const [consented, setConsented] = useState(false);
   const [objective, setObjective] = useState<ObjectiveDelivery | null>(null);
   const [writing, setWriting] = useState<WritingDelivery | null>(null);
@@ -143,23 +145,6 @@ export default function AdaptiveNivelRadarClient() {
   useEffect(() => {
     if (view === 'writing' && writing) writeWritingDraft(sessionStorage, writing, writingText);
   }, [view, writing, writingText]);
-
-  async function testAudio() {
-    try {
-      const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-      if (!AudioContextClass) throw new Error('audio unavailable');
-      const context = new AudioContextClass();
-      const oscillator = context.createOscillator();
-      const gain = context.createGain();
-      oscillator.frequency.value = 523.25; gain.gain.value = 0.08;
-      oscillator.connect(gain); gain.connect(context.destination); oscillator.start(); oscillator.stop(context.currentTime + 0.22);
-      await context.resume();
-      window.setTimeout(() => void context.close(), 400);
-      setAudioReady(true);
-    } catch {
-      setMessage('No pudimos reproducir el sonido de prueba. Revisa el volumen y los permisos del navegador.');
-    }
-  }
 
   async function start() {
     if (!audioReady || !consented) return;
@@ -352,7 +337,20 @@ export default function AdaptiveNivelRadarClient() {
     <p className={s.lead}>El examen usa etapas adaptativas para medir lectura, escucha, gramática y vocabulario; termina con una producción escrita revisada antes de publicar el resultado.</p>
     <div className={s.skillGrid}>{Object.entries(SKILL_LABELS).map(([key, label]) => <div className={s.skill} key={key}>{label}<small>{key === 'writing' ? 'rúbrica + revisión' : 'evidencia objetiva'}</small></div>)}</div>
     <div className={s.readinessBox}>
-      <button className={audioReady ? s.audioChecked : s.secondary} onClick={() => void testAudio()}>{audioReady ? '✓ Sonido verificado' : 'Probar sonido'}</button>
+      <div>
+        <strong>Muestra de sonido no puntuada</strong>
+        <p style={{ margin: '.35rem 0 .65rem', color: '#9facbf', fontSize: '.82rem' }}>Audio público reciclado sólo para verificar tu dispositivo; no aporta respuestas ni nivel.</p>
+        <audio aria-label="Muestra de sonido no puntuada" controls controlsList="nodownload" preload="metadata" onPlay={() => {
+          setAudioSampleStarted(true); setAudioReady(false); setMessage('');
+        }} onError={() => {
+          setAudioSampleStarted(false); setAudioReady(false);
+          setMessage('No pudimos reproducir la muestra. Revisa la conexión, el volumen y los permisos del navegador.');
+        }}>
+          <source src={audioCheck.assetPath} type="audio/mpeg" />
+          Tu navegador no puede reproducir esta muestra.
+        </audio>
+      </div>
+      <label><input type="checkbox" disabled={!audioSampleStarted} checked={audioReady} onChange={event => setAudioReady(event.target.checked)} /> Confirmo que escuché la muestra con claridad.</label>
       <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}

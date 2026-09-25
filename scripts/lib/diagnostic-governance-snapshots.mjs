@@ -10,6 +10,7 @@ export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
 ];
 
 export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
+  'config/diagnostic/audio-check.json',
   'config/diagnostic/delivery-policy.json',
   'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql',
   'supabase/migrations/20260925051500_diagnostic_pilot_retests.sql',

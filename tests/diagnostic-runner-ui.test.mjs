@@ -31,6 +31,14 @@ test('runner supports resume, private audio, writing and uncertainty-aware resul
   assert.match(client, /nivel-radar-welearn\.pdf/);
 });
 
+test('audio readiness uses a real non-scored sample and explicit listener confirmation', () => {
+  assert.match(client, /audioCheck\.assetPath/);
+  assert.match(client, /Muestra de sonido no puntuada/);
+  assert.match(client, /Confirmo que escuché la muestra con claridad/);
+  assert.match(client, /setAudioSampleStarted\(true\)/);
+  assert.doesNotMatch(client, /createOscillator|AudioContext/);
+});
+
 test('adaptive UI has an independent server-side release flag', () => {
   assert.match(page, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'/);
   assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient \/> : <NivelRadarClient \/>/);

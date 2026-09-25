@@ -1,0 +1,10 @@
+{
+  "checkVersion": "english-diagnostic-audio-check-v1",
+  "language": "en",
+  "assetPath": "/audio/reading/en-a1-my-morning-at-the-cafe.mp3",
+  "assetSha256": "468cb84898f4fdb080ae60047ca54a9325fe4e7aa6abd969a89156d3f93512d7",
+  "source": "recycled-public-reading-audio",
+  "scored": false,
+  "assessmentBankEligible": false,
+  "purpose": "Device familiarization only; confirms audible playback before the reserved diagnostic begins."
+}
