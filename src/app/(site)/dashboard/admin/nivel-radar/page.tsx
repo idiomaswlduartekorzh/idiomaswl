@@ -4,6 +4,7 @@ import { requireAdmin } from '@/lib/auth/require-admin.server';
 import type { DiagnosticWritingReviewView } from '@/lib/diagnostic/admin-review';
 import { ENGLISH_DIAGNOSTIC_WRITING_BANK } from '@/server/diagnostic/bank';
 import { DIAGNOSTIC_WRITING_RUBRIC_VERSION } from '@/server/diagnostic/writing-automation';
+import { getDiagnosticWritingProviderReadiness } from '@/server/diagnostic/writing-provider';
 import { loadDiagnosticWritingReviewQueue } from '@/server/diagnostic/repository.server';
 import DiagnosticWritingReviewClient from './DiagnosticWritingReviewClient';
 
@@ -11,6 +12,7 @@ export const dynamic = 'force-dynamic';
 
 export default async function DiagnosticWritingReviewPage() {
   const admin = await requireAdmin();
+  const providerReadiness = getDiagnosticWritingProviderReadiness();
   let error = '';
   let items: DiagnosticWritingReviewView[] = [];
   try {
@@ -53,6 +55,16 @@ export default async function DiagnosticWritingReviewPage() {
         <p style={{ margin: '0 0 20px', color: '#6b7280', maxWidth: 820 }}>
           La primera revisión es ciega frente al modelo. Una discrepancia material pasa a otra identidad para adjudicación.
         </p>
+        <section aria-labelledby="writing-automation-status" style={{ marginBottom: 20, border: `1px solid ${providerReadiness.ready ? '#86efac' : '#f5c26b'}`, background: providerReadiness.ready ? '#f0fdf4' : '#fffbeb', borderRadius: 12, padding: 14 }}>
+          <h2 id="writing-automation-status" style={{ margin: '0 0 6px', fontSize: 16 }}>
+            Transporte automático: {providerReadiness.ready ? 'configurado' : 'bloqueado'}
+          </h2>
+          <p style={{ margin: 0, color: '#4b5563', fontSize: 13 }}>
+            {providerReadiness.ready
+              ? `Proveedor ${providerReadiness.provider} y modelo fijado. Cada intento todavía exige consentimiento externo persistido antes de enviar su texto.`
+              : `No se enviará ninguna respuesta. Bloqueos: ${providerReadiness.blockers.join(', ')}.`}
+          </p>
+        </section>
         {error
           ? <div role="alert" style={{ background: '#fee2e2', border: '1px solid #fecaca', borderRadius: 12, padding: 14 }}>{error}</div>
           : <DiagnosticWritingReviewClient items={items} currentReviewerId={admin.id} />}

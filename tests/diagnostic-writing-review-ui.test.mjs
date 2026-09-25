@@ -13,6 +13,8 @@ test('review queue is admin-only and hides automated judgments during first blin
   assert.match(page, /\.\.\.\(adjudication \? \{[\s\S]+?automated:/);
   assert.match(repository, /\.in\('status', \['automated-scored', 'human-review', 'adjudication'\]\)/);
   assert.doesNotMatch(repository, /user_email|full_name/);
+  assert.match(page, /getDiagnosticWritingProviderReadiness\(\)/);
+  assert.match(page, /No se enviará ninguna respuesta/);
 });
 
 test('client submits only human evidence and enforces literal citations before sending', () => {

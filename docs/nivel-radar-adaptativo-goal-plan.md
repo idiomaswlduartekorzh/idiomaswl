@@ -79,6 +79,13 @@ Actualizado el 24 de septiembre de 2026:
   sella modelo, fecha, consigna, versión y hash de respuesta, y rechaza evidencia inventada.
   No reutiliza bandas IELTS/TOEFL ni produce un nivel global. La llamada a un proveedor externo
   permanece deliberadamente desconectada hasta aprobar privacidad, consentimiento y proveedor.
+  El transporte Gemini/Groq ya está implementado detrás de puertas independientes de feature,
+  aprobación de procesamiento, política y consentimiento. Usa los contratos estructurados
+  vigentes de cada proveedor, fija el modelo, no registra texto, limita Groq a modelos con modo
+  estricto y vuelve a validar toda la evidencia en servidor. El consentimiento piloto actual se
+  rechaza expresamente como autorización externa; la página administrativa muestra los
+  bloqueos de configuración sin exponer secretos. Falta persistir una autorización externa por
+  intento y ofrecer el camino de revisión exclusivamente humana antes de conectar el caller.
   La evaluación automática se persiste una sola vez mediante RPC exclusiva de servidor; un
   reintento distinto falla, y la finalización carga esa evidencia inmutable desde la base en vez
   de aceptar una copia manipulable reenviada por el navegador del administrador. La cola
@@ -155,7 +162,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **165 pruebas** y
+  borradores; el último corte local ejecutó **170 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.
