@@ -182,6 +182,10 @@ simulan en el navegador, por lo que esta evidencia prueba el contrato UI pero no
 recorrido autenticado contra Supabase real. Registrar esta evidencia no puede aprobar contenido,
 audio, escritura, retención ni piloto.
 
+Cada ejecución explícita elimina primero únicamente el directorio generado e ignorado `.next`.
+Así el build de release no hereda un caché incremental local que pueda crecer sin límite y la
+evidencia siempre corresponde a una compilación limpia.
+
 Para que esta evidencia sea repetible en la máquina local después de la suite completa, el build
 de verificación limita su concurrencia a dos CPU, desactiva compilaciones paralelas y activa las
 optimizaciones de memoria de webpack. Esa configuración solo existe con

@@ -1,6 +1,6 @@
 import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import { once } from 'node:events';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { createServer } from 'node:net';
 import { dirname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -82,6 +82,10 @@ const nodeOptions = (process.env.NODE_OPTIONS ?? '')
   .filter(option => option && !option.startsWith('--max-old-space-size='))
   .concat('--max-old-space-size=8192')
   .join(' ');
+// A release check must not inherit an unbounded incremental cache from prior
+// local builds. The target is fixed, generated and gitignored; source files and
+// private evidence are outside it.
+rmSync(resolve(root, '.next'), { recursive: true, force: true });
 const buildOutput = run(process.execPath, ['node_modules/next/dist/bin/next', 'build', '--webpack'], {
   ...process.env,
   NODE_OPTIONS: nodeOptions,

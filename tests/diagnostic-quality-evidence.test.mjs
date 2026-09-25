@@ -86,6 +86,7 @@ test('quality verifier replaces conflicting heap limits and the release hash inc
   const nextConfig = readFileSync(new URL('../next.config.ts', import.meta.url), 'utf8');
   assert.match(verifier, /!option\.startsWith\('--max-old-space-size='\)/);
   assert.match(verifier, /--max-old-space-size=8192/);
+  assert.match(verifier, /rmSync\(resolve\(root, '\.next'\), \{ recursive: true, force: true \}\)/);
   assert.match(verifier, /diagnostic-adaptive\.spec\.ts/);
   assert.match(verifier, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED: 'true'/);
   assert.match(verifier, /DIAGNOSTIC_QUALITY_BUILD: 'true'/);
