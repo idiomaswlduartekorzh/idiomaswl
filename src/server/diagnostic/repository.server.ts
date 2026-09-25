@@ -27,8 +27,8 @@ export interface DiagnosticWritingReviewQueueRow {
   responseText: string;
   responseSha256: string;
   wordCount: number;
-  status: 'automated-scored' | 'human-review' | 'adjudication';
-  automatedEvaluation: DiagnosticAutomatedWritingEvaluation;
+  status: 'pending' | 'automated-scored' | 'human-review' | 'adjudication';
+  automatedEvaluation: DiagnosticAutomatedWritingEvaluation | null;
   humanEvaluation: DiagnosticHumanWritingEvaluation | null;
   createdAt: string;
 }
@@ -38,7 +38,7 @@ export async function loadDiagnosticWritingReviewQueue(limit = 100): Promise<rea
   const admin = createAdminClient();
   const { data: writingRows, error: writingError } = await admin.from('diagnostic_writing_evaluations')
     .select('attempt_id,prompt_id,content_version,response_text,word_count,status,automated_evaluation,human_evaluation,created_at')
-    .in('status', ['automated-scored', 'human-review', 'adjudication'])
+    .in('status', ['pending', 'automated-scored', 'human-review', 'adjudication'])
     .order('created_at', { ascending: true })
     .limit(boundedLimit);
   if (writingError) throw new Error('diagnostic_persistence_unavailable');
@@ -50,15 +50,22 @@ export async function loadDiagnosticWritingReviewQueue(limit = 100): Promise<rea
   const attemptsById = new Map((attempts ?? []).map(attempt => [String(attempt.id), attempt]));
   return (writingRows ?? []).flatMap(row => {
     const attempt = attemptsById.get(String(row.attempt_id));
-    const automated = parseDiagnosticWritingEvaluation(row.automated_evaluation, 'automated') as DiagnosticAutomatedWritingEvaluation | null;
+    const automated = row.automated_evaluation === null
+      ? null
+      : parseDiagnosticWritingEvaluation(row.automated_evaluation, 'automated') as DiagnosticAutomatedWritingEvaluation | null;
     const human = row.human_evaluation === null
       ? null
       : parseDiagnosticWritingEvaluation(row.human_evaluation, 'human') as DiagnosticHumanWritingEvaluation | null;
-    if (!attempt || attempt.status !== 'scoring' || !automated
+    const status = String(row.status);
+    const coherentState = (status === 'pending' && !automated && !human)
+      || (status === 'automated-scored' && Boolean(automated) && !human)
+      || (status === 'human-review' && Boolean(human))
+      || (status === 'adjudication' && Boolean(human));
+    if (!attempt || attempt.status !== 'scoring' || !coherentState
       || (row.human_evaluation !== null && !human)
       || typeof row.response_text !== 'string'
       || !Number.isInteger(row.word_count)
-      || !['automated-scored', 'human-review', 'adjudication'].includes(String(row.status))) return [];
+      || !['pending', 'automated-scored', 'human-review', 'adjudication'].includes(status)) return [];
     return [{
       attemptId: String(row.attempt_id), attemptVersion: Number(attempt.version),
       routeId: attempt.route_id ? String(attempt.route_id) : null,

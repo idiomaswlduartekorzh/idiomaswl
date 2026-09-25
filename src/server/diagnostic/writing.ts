@@ -219,16 +219,20 @@ export function compareWritingEvaluations(
 }
 
 export function consolidateWritingEvidence(input: {
-  automated: DiagnosticAutomatedWritingEvaluation;
+  automated?: DiagnosticAutomatedWritingEvaluation;
   human?: DiagnosticHumanWritingEvaluation;
   adjudicated?: DiagnosticHumanWritingEvaluation;
 }): DiagnosticWritingSkillEvidence {
   const base = { skill: 'writing' as const, decisions: 1, distinctStimuli: 1 };
   if (!input.human) return { ...base, status: 'not-estimated', reviewStatus: 'awaiting-human' };
   if (input.human.decision === 'exclude') return { ...base, status: 'not-estimated', reviewStatus: 'excluded' };
-  const agreement = compareWritingEvaluations(input.automated, input.human);
-  if (agreement.requiresAdjudication && !input.adjudicated) {
-    return { ...base, status: 'not-estimated', reviewStatus: 'awaiting-adjudication', agreement };
+  const agreement = input.automated ? compareWritingEvaluations(input.automated, input.human) : undefined;
+  const requiresAdjudication = input.human.decision !== 'accept' || agreement?.requiresAdjudication === true;
+  if (requiresAdjudication && !input.adjudicated) {
+    return {
+      ...base, status: 'not-estimated', reviewStatus: 'awaiting-adjudication',
+      ...(agreement ? { agreement } : {}),
+    };
   }
   const finalEvaluation = input.adjudicated ?? input.human;
   if (finalEvaluation.decision !== 'accept') {
@@ -247,6 +251,6 @@ export function consolidateWritingEvidence(input: {
     estimatedLevel,
     plausibleRange: [CEFR_LEVELS[indexes[0]], CEFR_LEVELS[indexes[indexes.length - 1]]],
     confidence: Number(confidence.toFixed(3)),
-    agreement,
+    ...(agreement ? { agreement } : {}),
   };
 }

@@ -75,6 +75,20 @@ test('finalizes all five skills and persists one versioned result', async () => 
   assert.equal(persisted.resultProfile.attemptId, attempt.id);
 });
 
+test('finalizes a consent-safe human-only writing path with null automated evidence', async () => {
+  let persisted;
+  const result = await finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    human: evaluation('human'),
+  }, {
+    objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
+    persist: async input => { persisted = input; return { replayed: false, version: 5 }; },
+  });
+  assert.equal(result.resultProfile.skills.find(skill => skill.skill === 'writing').reviewStatus, 'human-reviewed');
+  assert.equal(persisted.automated, null);
+  assert.equal('agreement' in persisted.finalEvidence.writing, false);
+});
+
 test('requires adjudication for material disagreement and binds the reviewer identity', async () => {
   const dependencies = {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),

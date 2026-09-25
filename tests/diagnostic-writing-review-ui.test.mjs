@@ -10,8 +10,8 @@ const repository = await readFile(new URL('../src/server/diagnostic/repository.s
 test('review queue is admin-only and hides automated judgments during first blind review', () => {
   assert.ok(page.indexOf('await requireAdmin()') < page.indexOf('loadDiagnosticWritingReviewQueue()'));
   assert.match(page, /const adjudication = row\.status === 'adjudication'/);
-  assert.match(page, /\.\.\.\(adjudication \? \{[\s\S]+?automated:/);
-  assert.match(repository, /\.in\('status', \['automated-scored', 'human-review', 'adjudication'\]\)/);
+  assert.match(page, /row\.automatedEvaluation \? \{ automated:/);
+  assert.match(repository, /\.in\('status', \['pending', 'automated-scored', 'human-review', 'adjudication'\]\)/);
   assert.doesNotMatch(repository, /user_email|full_name/);
   assert.match(page, /getDiagnosticWritingProviderReadiness\(\)/);
   assert.match(page, /No se enviará ninguna respuesta/);
@@ -20,8 +20,12 @@ test('review queue is admin-only and hides automated judgments during first blin
 test('client submits only human evidence and enforces literal citations before sending', () => {
   assert.doesNotMatch(client, /automated:\s*active\.automated/);
   assert.match(client, /active\.responseText\.includes\(item\.evidence\[0\]\)/);
-  assert.match(client, /JSON\.stringify\(adjudicating \? \{ adjudicated: evaluation \} : \{ human: evaluation \}\)/);
+  assert.match(client, /adjudicating \? \{ adjudicated: evaluation \} : \{ human: evaluation \}/);
   assert.match(client, /active\.human\?\.reviewerId === currentReviewerId/);
+  assert.match(client, /item\.status === 'pending' \? 'Revisión humana'/);
+  assert.match(client, /item\.status === 'human-review' \? 'Listo para publicar'/);
+  assert.match(client, /JSON\.stringify\(reviewed \? \{\}/);
+  assert.match(client, /Reintenta la publicación sin volver a calificar/);
 });
 
 test('server validates human evidence before its first immutable persistence', () => {
@@ -30,4 +34,6 @@ test('server validates human evidence before its first immutable persistence', (
   assert.ok(validation > 0 && persistence > validation);
   assert.match(route, /RUBRIC_VERSION_CONFLICT/);
   assert.match(route, /INDEPENDENT_ADJUDICATOR_REQUIRED/);
+  assert.match(route, /finalization\.automatedEvaluation === null/);
+  assert.match(route, /human\.decision !== 'accept'/);
 });

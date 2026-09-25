@@ -82,11 +82,15 @@ export async function POST(
       record.publicPrompt.id === finalization.promptId
       && record.publicPrompt.contentVersion === finalization.promptContentVersion);
     if (!promptRecord) return jsonError('VERSION_UNAVAILABLE', 'La consigna versionada no está disponible.', 409);
-    const automated = parseDiagnosticWritingEvaluation(
-      finalization.automatedEvaluation,
-      'automated',
-    ) as DiagnosticAutomatedWritingEvaluation | null;
-    if (!automated) return jsonError('AUTOMATED_EVALUATION_PENDING', 'La evaluación automatizada aún no está disponible.', 409);
+    const automated = finalization.automatedEvaluation === null
+      ? null
+      : parseDiagnosticWritingEvaluation(
+          finalization.automatedEvaluation,
+          'automated',
+        ) as DiagnosticAutomatedWritingEvaluation | null;
+    if (finalization.automatedEvaluation !== null && !automated) {
+      return jsonError('REVIEW_STATE_INVALID', 'La evaluación automatizada guardada no cumple el contrato.', 409);
+    }
     const storedHuman = parseDiagnosticWritingEvaluation(
       finalization.humanEvaluation,
       'human',
@@ -103,22 +107,23 @@ export async function POST(
     const human = storedHuman ?? { ...humanInput!, reviewerId: admin.id };
     const humanErrors = validateDiagnosticWritingEvaluation(human, promptRecord.publicPrompt, finalization.responseText);
     if (humanErrors.length) return jsonError('INVALID_EVALUATION', 'La revisión humana no coincide con la respuesta guardada.', 400);
-    if (automated.rubricVersion !== human.rubricVersion) {
+    if (automated && automated.rubricVersion !== human.rubricVersion) {
       return jsonError('RUBRIC_VERSION_CONFLICT', 'Las evaluaciones usan versiones distintas de la rúbrica.', 409);
     }
-    const agreement = compareWritingEvaluations(automated, human);
+    const agreement = automated ? compareWritingEvaluations(automated, human) : null;
+    const requiresAdjudication = human.decision !== 'accept' || agreement?.requiresAdjudication === true;
     if (!storedHuman) {
       await persistDiagnosticHumanWritingEvaluation({
         attemptId: finalization.attempt.id,
         userId: finalization.attempt.userId,
         evaluation: human,
-        nextStatus: agreement.requiresAdjudication ? 'adjudication' : 'human-review',
+        nextStatus: requiresAdjudication ? 'adjudication' : 'human-review',
       });
     }
-    if (agreement.requiresAdjudication && !adjudicatedInput) {
+    if (requiresAdjudication && !adjudicatedInput) {
       return jsonError('ADJUDICATION_REQUIRED', 'La discrepancia exige adjudicación por otro revisor.', 409);
     }
-    if (!agreement.requiresAdjudication && adjudicatedInput) {
+    if (!requiresAdjudication && adjudicatedInput) {
       return jsonError('ADJUDICATION_NOT_REQUIRED', 'Esta revisión no requiere adjudicación.', 409);
     }
     const adjudicated = adjudicatedInput
@@ -129,7 +134,7 @@ export async function POST(
     }
     if (adjudicated) {
       const adjudicationErrors = validateDiagnosticWritingEvaluation(adjudicated, promptRecord.publicPrompt, finalization.responseText);
-      if (adjudicationErrors.length || adjudicated.rubricVersion !== automated.rubricVersion) {
+      if (adjudicationErrors.length || adjudicated.rubricVersion !== (automated?.rubricVersion ?? human.rubricVersion)) {
         return jsonError('INVALID_EVALUATION', 'La adjudicación no coincide con la respuesta o la rúbrica guardada.', 400);
       }
     }
@@ -139,7 +144,8 @@ export async function POST(
       prompt: promptRecord.publicPrompt,
       responseText: finalization.responseText,
       observations: finalization.observations,
-      automated, human, adjudicated,
+      ...(automated ? { automated } : {}),
+      human, adjudicated,
     }, {
       objectiveBank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       objectiveBankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,

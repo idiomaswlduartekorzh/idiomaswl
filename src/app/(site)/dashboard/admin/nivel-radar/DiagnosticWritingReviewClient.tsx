@@ -65,22 +65,24 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
   async function submit() {
     if (!active || saving) return;
     const adjudicating = active.status === 'adjudication';
+    const reviewed = active.status === 'human-review';
     if (adjudicating && active.human?.reviewerId === currentReviewerId) {
       setMessage('La adjudicación debe hacerla otro administrador.');
       return;
     }
-    const mapped = DIAGNOSTIC_WRITING_CRITERIA.map(criterion => ({
-      criterion,
-      level: criteria[criterion].level,
-      confidence: criteria[criterion].confidence,
-      evidence: [criteria[criterion].evidence.trim()],
-      rationale: criteria[criterion].rationale.trim(),
+    if (reviewed && active.human?.reviewerId !== currentReviewerId) {
+      setMessage('La publicación pendiente debe reintentarla la persona que firmó la revisión.');
+      return;
+    }
+    const mapped = reviewed ? [] : DIAGNOSTIC_WRITING_CRITERIA.map(criterion => ({
+      criterion, level: criteria[criterion].level, confidence: criteria[criterion].confidence,
+      evidence: [criteria[criterion].evidence.trim()], rationale: criteria[criterion].rationale.trim(),
     }));
-    if (mapped.some(item => !item.evidence[0] || !active.responseText.includes(item.evidence[0]) || item.rationale.length < 20)) {
+    if (!reviewed && mapped.some(item => !item.evidence[0] || !active.responseText.includes(item.evidence[0]) || item.rationale.length < 20)) {
       setMessage('Cada criterio necesita una cita literal de la respuesta y una justificación de al menos 20 caracteres.');
       return;
     }
-    const evaluation = {
+    const evaluation = reviewed ? null : {
       evaluator: 'human', reviewerId: 'server-bound-reviewer', rubricVersion: active.rubricVersion,
       promptId: active.prompt.id, promptContentVersion: active.prompt.contentVersion,
       responseSha256: active.responseSha256, criteria: mapped, decision,
@@ -91,7 +93,7 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
     try {
       const response = await fetch(`/api/admin/diagnostic/attempts/${encodeURIComponent(active.attemptId)}/finalize`, {
         method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(adjudicating ? { adjudicated: evaluation } : { human: evaluation }),
+        body: JSON.stringify(reviewed ? {} : adjudicating ? { adjudicated: evaluation } : { human: evaluation }),
       });
       const payload = await response.json().catch(() => null) as { code?: string; error?: string } | null;
       if (!response.ok) {
@@ -112,12 +114,14 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
 
   if (!active) return <div style={{ background: '#fff', borderRadius: 14, padding: 20 }}>No hay escrituras listas para revisión.</div>;
   const adjudicating = active.status === 'adjudication';
+  const reviewed = active.status === 'human-review';
   const blockedAdjudicator = adjudicating && active.human?.reviewerId === currentReviewerId;
+  const blockedPublisher = reviewed && active.human?.reviewerId !== currentReviewerId;
   return <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 16 }}>
     <aside style={{ background: '#fff', borderRadius: 14, padding: 10, alignSelf: 'start' }}>
       {items.map(item => <button key={item.attemptId} type="button" onClick={() => selectAttempt(item.attemptId)} style={{ width: '100%', textAlign: 'left', border: 0, borderRadius: 10, padding: 12, marginBottom: 6, cursor: 'pointer', background: item.attemptId === active.attemptId ? '#f3e7dc' : 'transparent' }}>
         <strong style={{ display: 'block', fontSize: 12 }}>{item.prompt.title}</strong>
-        <span style={{ fontSize: 10, color: '#6b7280' }}>{item.status === 'adjudication' ? 'Adjudicación' : 'Revisión ciega'} · {item.wordCount} palabras</span>
+        <span style={{ fontSize: 10, color: '#6b7280' }}>{item.status === 'adjudication' ? 'Adjudicación' : item.status === 'human-review' ? 'Listo para publicar' : item.status === 'pending' ? 'Revisión humana' : 'Revisión ciega'} · {item.wordCount} palabras</span>
       </button>)}
     </aside>
     <section style={{ minWidth: 0, display: 'grid', gap: 14 }}>
@@ -128,13 +132,15 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
         <ul>{active.prompt.instructions.map(instruction => <li key={instruction}>{instruction}</li>)}</ul>
         <div style={{ whiteSpace: 'pre-wrap', lineHeight: 1.65, background: '#f8f6f3', borderRadius: 10, padding: 14 }}>{active.responseText}</div>
       </div>
-      {adjudicating && active.automated && active.human && <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 10 }}>
-        <EvidenceCard title={`Automático · ${active.automated.model ?? 'modelo'}`} evaluation={active.automated} />
+      {(adjudicating || reviewed) && active.human && <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 10 }}>
+        {active.automated && <EvidenceCard title={`Automático · ${active.automated.model ?? 'modelo'}`} evaluation={active.automated} />}
         <EvidenceCard title="Primera revisión humana" evaluation={active.human} />
       </div>}
       <div style={{ background: '#fff', borderRadius: 14, padding: 18, display: 'grid', gap: 14 }}>
-        <h2 style={{ margin: 0, fontSize: 18 }}>{adjudicating ? 'Adjudicación independiente' : 'Rúbrica MCER · revisión ciega'}</h2>
-        {DIAGNOSTIC_WRITING_CRITERIA.map(criterion => <fieldset key={criterion} disabled={blockedAdjudicator || saving} style={{ border: '1px solid #e8ddd4', borderRadius: 10, padding: 12 }}>
+        <h2 style={{ margin: 0, fontSize: 18 }}>{adjudicating ? 'Adjudicación independiente' : reviewed ? 'Publicación pendiente' : 'Rúbrica MCER · revisión ciega'}</h2>
+        {reviewed
+          ? <p style={{ margin: 0, color: '#4b5563' }}>La revisión ya quedó guardada. Reintenta la publicación sin volver a calificar el texto.</p>
+          : DIAGNOSTIC_WRITING_CRITERIA.map(criterion => <fieldset key={criterion} disabled={blockedAdjudicator || saving} style={{ border: '1px solid #e8ddd4', borderRadius: 10, padding: 12 }}>
           <legend style={{ fontWeight: 800, fontSize: 13 }}>{LABELS[criterion]}</legend>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 150px), 1fr))', gap: 8 }}>
             <label style={{ fontSize: 11 }}>Nivel<select value={criteria[criterion].level} onChange={event => updateCriterion(criterion, { level: event.target.value as CefrLevel })} style={{ display: 'block', width: '100%', padding: 8 }}><>{CEFR_LEVELS.map(level => <option key={level}>{level}</option>)}</></select></label>
@@ -143,10 +149,11 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
           </div>
           <label style={{ display: 'block', marginTop: 8, fontSize: 11 }}>Justificación<textarea rows={3} value={criteria[criterion].rationale} onChange={event => updateCriterion(criterion, { rationale: event.target.value })} style={{ display: 'block', width: '100%', padding: 8 }} /></label>
         </fieldset>)}
-        <label style={{ fontSize: 12 }}>Decisión <select value={decision} onChange={event => setDecision(event.target.value as typeof decision)} disabled={blockedAdjudicator || saving} style={{ marginLeft: 8, padding: 8 }}><option value="accept">Aceptar</option><option value="revise">Requiere revisión</option><option value="exclude">Excluir muestra</option></select></label>
+        {!reviewed && <label style={{ fontSize: 12 }}>Decisión <select value={decision} onChange={event => setDecision(event.target.value as typeof decision)} disabled={blockedAdjudicator || saving} style={{ marginLeft: 8, padding: 8 }}><option value="accept">Aceptar</option><option value="revise">Requiere revisión</option><option value="exclude">Excluir muestra</option></select></label>}
         {blockedAdjudicator && <p role="alert" style={{ color: '#991b1b' }}>La persona que hizo la primera revisión no puede adjudicar este caso.</p>}
+        {blockedPublisher && <p role="alert" style={{ color: '#991b1b' }}>Solo la persona que firmó esta revisión puede reintentar su publicación.</p>}
         {message && <p role="status" style={{ margin: 0, color: message.includes('correctamente') ? '#166534' : '#92400e' }}>{message}</p>}
-        <button type="button" onClick={() => void submit()} disabled={blockedAdjudicator || saving} style={{ border: 0, borderRadius: 10, padding: 12, background: '#8f461f', color: '#fff', fontWeight: 800, cursor: 'pointer', opacity: blockedAdjudicator || saving ? 0.5 : 1 }}>{saving ? 'Guardando…' : adjudicating ? 'Cerrar adjudicación' : 'Guardar revisión'}</button>
+        <button type="button" onClick={() => void submit()} disabled={blockedAdjudicator || blockedPublisher || saving} style={{ border: 0, borderRadius: 10, padding: 12, background: '#8f461f', color: '#fff', fontWeight: 800, cursor: 'pointer', opacity: blockedAdjudicator || blockedPublisher || saving ? 0.5 : 1 }}>{saving ? 'Guardando…' : adjudicating ? 'Cerrar adjudicación' : reviewed ? 'Reintentar publicación' : 'Guardar revisión'}</button>
       </div>
     </section>
   </div>;

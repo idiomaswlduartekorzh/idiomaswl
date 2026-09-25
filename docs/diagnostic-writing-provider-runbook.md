@@ -34,7 +34,9 @@ El transporte hace cero solicitudes si falla cualquiera de estas condiciones:
 
 La futura integración no puede aceptar la autorización desde el cuerpo del navegador. Debe
 leerla de una columna inmutable asociada al intento. Hasta que exista esa persistencia, el
-adaptador debe permanecer sin caller.
+adaptador debe permanecer sin caller. Quien no autorice o no tenga proveedor disponible ya
+conserva una ruta completa de revisión humana, incluida adjudicación independiente cuando el
+primer revisor solicita revisión.
 
 ## Configuración compatible
 
@@ -55,7 +57,6 @@ Antes de conectar el adaptador se requiere:
 - aprobar proveedor, región, retención, uso para entrenamiento, subprocesadores y borrado;
 - aprobar el texto de consentimiento y su versión;
 - persistir consentimiento, fecha y versión de política en `diagnostic_attempts`;
-- ofrecer una ruta humana funcional a quien no autorice el procesamiento externo;
 - añadir una mutación servidor-servidor idempotente que cargue texto y autorización desde DB;
 - probar 429, timeout, reintentos, doble ejecución y ausencia de texto en logs;
 - ejecutar una muestra ancla doblemente calificada antes de usar el resultado automatizado.

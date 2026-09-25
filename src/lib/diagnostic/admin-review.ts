@@ -21,7 +21,7 @@ export interface DiagnosticWritingReviewView {
   attemptId: string;
   attemptVersion: number;
   routeId: string | null;
-  status: 'automated-scored' | 'human-review' | 'adjudication';
+  status: 'pending' | 'automated-scored' | 'human-review' | 'adjudication';
   createdAt: string;
   prompt: {
     id: string;

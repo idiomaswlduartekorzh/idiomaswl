@@ -28,7 +28,7 @@ export interface DiagnosticScoringAttempt {
 
 export interface PersistDiagnosticFinalizationInput {
   attempt: DiagnosticScoringAttempt;
-  automated: DiagnosticAutomatedWritingEvaluation;
+  automated: DiagnosticAutomatedWritingEvaluation | null;
   human: DiagnosticHumanWritingEvaluation;
   finalEvidence: {
     writing: ReturnType<typeof consolidateWritingEvidence>;
@@ -43,7 +43,7 @@ export async function finalizeEnglishDiagnostic(input: {
   prompt: DiagnosticWritingPrompt;
   responseText: string;
   observations: readonly DiagnosticObjectiveObservation[];
-  automated: DiagnosticAutomatedWritingEvaluation;
+  automated?: DiagnosticAutomatedWritingEvaluation;
   human: DiagnosticHumanWritingEvaluation;
   adjudicated?: DiagnosticHumanWritingEvaluation;
 }, dependencies: {
@@ -66,7 +66,7 @@ export async function finalizeEnglishDiagnostic(input: {
   if (reviewerBindingInvalid) {
     throw new Error('diagnostic reviewer identity mismatch');
   }
-  for (const evaluation of [input.automated, input.human, ...(input.adjudicated ? [input.adjudicated] : [])]) {
+  for (const evaluation of [...(input.automated ? [input.automated] : []), input.human, ...(input.adjudicated ? [input.adjudicated] : [])]) {
     const errors = validateDiagnosticWritingEvaluation(evaluation, input.prompt, input.responseText);
     if (errors.length) throw new Error(`invalid diagnostic writing evaluation: ${errors.join('; ')}`);
   }
@@ -100,7 +100,7 @@ export async function finalizeEnglishDiagnostic(input: {
   });
   const persisted = await dependencies.persist({
     attempt: input.attempt,
-    automated: input.automated,
+    automated: input.automated ?? null,
     human: input.human,
     finalEvidence: { writing, adjudicatedEvaluation: input.adjudicated ?? null },
     resultProfile,

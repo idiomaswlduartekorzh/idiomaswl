@@ -108,3 +108,15 @@ test('writing level is withheld until human review and adjudication are complete
   assert.equal(final.estimatedLevel, 'B1');
   assert.equal(final.reviewStatus, 'human-reviewed');
 });
+
+test('human-only review can publish accepted evidence without fabricating model agreement', () => {
+  const human = evaluation('human', ['B1', 'B1', 'B2', 'B1']);
+  const final = consolidateWritingEvidence({ human });
+  assert.equal(final.status, 'provisional');
+  assert.equal(final.estimatedLevel, 'B1');
+  assert.equal(final.reviewStatus, 'human-reviewed');
+  assert.equal('agreement' in final, false);
+
+  const revise = { ...human, decision: 'revise' };
+  assert.equal(consolidateWritingEvidence({ human: revise }).reviewStatus, 'awaiting-adjudication');
+});

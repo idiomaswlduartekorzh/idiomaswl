@@ -23,6 +23,7 @@ export default async function DiagnosticWritingReviewPage() {
         && record.publicPrompt.contentVersion === row.promptContentVersion)?.publicPrompt;
       if (!prompt) return [];
       const adjudication = row.status === 'adjudication';
+      const reviewed = row.status === 'human-review';
       return [{
         attemptId: row.attemptId,
         attemptVersion: row.attemptVersion,
@@ -38,8 +39,8 @@ export default async function DiagnosticWritingReviewPage() {
         responseSha256: row.responseSha256,
         wordCount: row.wordCount,
         rubricVersion: DIAGNOSTIC_WRITING_RUBRIC_VERSION,
-        ...(adjudication ? {
-          automated: row.automatedEvaluation,
+        ...(adjudication || reviewed ? {
+          ...(row.automatedEvaluation ? { automated: row.automatedEvaluation } : {}),
           human: row.humanEvaluation ?? undefined,
         } : {}),
       }];
@@ -53,7 +54,7 @@ export default async function DiagnosticWritingReviewPage() {
         <Link href="/dashboard/admin" style={{ color: '#8f461f', fontSize: 13, fontWeight: 700 }}>← Panel administrativo</Link>
         <h1 style={{ margin: '18px 0 4px', fontSize: 'clamp(26px, 4vw, 42px)' }}>Revisión de escritura · Nivel Radar</h1>
         <p style={{ margin: '0 0 20px', color: '#6b7280', maxWidth: 820 }}>
-          La primera revisión es ciega frente al modelo. Una discrepancia material pasa a otra identidad para adjudicación.
+          La primera revisión es ciega frente al modelo. Una discrepancia material o una decisión de revisar pasa a otra identidad para adjudicación. Sin autorización externa, el caso conserva una ruta completamente humana.
         </p>
         <section aria-labelledby="writing-automation-status" style={{ marginBottom: 20, border: `1px solid ${providerReadiness.ready ? '#86efac' : '#f5c26b'}`, background: providerReadiness.ready ? '#f0fdf4' : '#fffbeb', borderRadius: 12, padding: 14 }}>
           <h2 id="writing-automation-status" style={{ margin: '0 0 6px', fontSize: 16 }}>
