@@ -185,21 +185,25 @@ Actualizado el 25 de septiembre de 2026:
   un objetivo MCER observable por habilidad y enlaces existentes de práctica/curso. La pantalla
   y el PDF se construyen desde las mismas estimaciones, rangos, recomendaciones y advertencias.
   La política provisional limita la confianza y nunca se presenta como calibrada.
-- **Fase 7 — instrumentación de piloto iniciada:** criterios cuantitativos versionados y todavía
-  pendientes de aprobación académica gobiernan un informe agregado de finalización, rutas,
-  facilidad, omisión, tiempos, reproducción, selección de distractores, discriminación
-  corregida, acuerdo de escritura y concordancia con nivel externo. El informe no contiene
-  UUID de participante, texto escrito ni respuestas breves. La referencia independiente se
-  registra mediante una mutación atómica exclusiva de administrador y el nivel diagnóstico se
-  deriva del resultado terminado, no del formulario de referencia. Sin muestra real o sin
-  criterios aprobados, la decisión es obligatoriamente `HOLD`. La migración y la ruta requieren
-  todavía ejecución y verificación contra Supabase real.
+- **Fase 7 — contrato psicométrico fail-closed ampliado:** los criterios provisionales v2 ya no
+  permiten declarar elegible un piloto solo por volumen, finalización y correlaciones de ítem.
+  Exigen cobertura mínima de las tres rutas MST y de los seis niveles MCER de referencia,
+  facilidad dentro de rango y funcionamiento de todos los distractores. Además, requieren un
+  artefacto agregado ligado por hash al banco y a los criterios que demuestre fiabilidad
+  adaptativa por cada habilidad objetiva, consistencia de clasificación, estabilidad por las
+  cinco habilidades, análisis DIF con base lícita y standard setting de los cinco cortes MCER.
+  El artefacto comprometido nace como `not-collected`; por tanto, esos cinco gates permanecen
+  cerrados hasta evidencia real. El informe no contiene UUID, grupos identificables, texto
+  escrito ni respuestas. Los valores numéricos son una propuesta que todavía debe aprobar
+  liderazgo académico y de medición; no se presentan como umbrales universales prescritos por
+  MCER ni por una asociación externa.
 - **Fase 7 — cadena de custodia del piloto preparada:** un capturador read-only consulta el
   informe agregado desde un despliegue que debe coincidir exactamente con fuente, banco, commit,
   modo `pilot` y proyecto Supabase. Reporte y recibo permanecen privados y omiten filas,
   identidades, respuestas y textos. Solo un informe elegible puede generar paquetes separados
-  para liderazgo académico y medición; ambos deben revisar muestra, ítems, escritura, referencia
-  independiente y limitaciones con identidades distintas. El compilador fija todos los hashes y
+  para liderazgo académico y medición; ambos deben revisar muestra, rutas/niveles, ítems,
+  escritura, referencia independiente, fiabilidad adaptativa, consistencia de clasificación,
+  estabilidad, equidad/DIF, standard setting y limitaciones con identidades distintas. El compilador fija todos los hashes y
   el registrador dry-run solo puede trasladar una aprobación humana real del informe exacto al
   gate de release. No se ha capturado ni aprobado un informe porque aún no existe el piloto real.
 - **Fase 8 — puerta integral de salida implementada, lanzamiento bloqueado:** un semáforo único
@@ -252,7 +256,9 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  commit `e560c391` quedó verificado con **243/243 pruebas**, TypeScript sin errores, un build de
+  corte técnico anterior quedó verificado con **245/245 pruebas** de fundamento tras ampliar el
+  contrato de pilotaje; el recibo de calidad vigente todavía corresponde al commit
+  `e560c391`, donde pasaron TypeScript, un build de
   **2.564 páginas estáticas** y **4/4 historias E2E**; el recibo privado se registró por SHA-256
   y el gate de calidad ya pasa sobre la misma huella de fuente.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
@@ -568,6 +574,20 @@ Entregables:
 - acuerdo entre escritura automática y calificadores humanos;
 - propuesta de cortes MCER mediante standard setting documentado;
 - lista de ítems retirados, reparados o recalibrados.
+
+El contrato ejecutable v2 materializa estas obligaciones en quince gates. Diez se derivan del
+informe agregado del piloto (aprobación de criterios, volumen, finalización, rutas, muestras,
+calidad y distractores, escritura, referencia independiente y cobertura MCER). Los cinco
+restantes solo pasan con evidencia de medición especializada y vigente: fiabilidad adaptativa,
+consistencia de clasificación, estabilidad, equidad/DIF y standard setting. El archivo
+`config/diagnostic/pilot-measurement-evidence.json` nace vacío y ligado a versión; una ausencia,
+un hash de banco distinto o una versión de criterios vieja fuerza todos esos gates a `false`.
+
+La arquitectura sigue los principios —no umbrales numéricos universales— de los
+[Standards for Educational and Psychological Testing](https://www.testingstandards.net/), el
+[Manual for Language Test Development and Examining del Consejo de Europa/ALTE](https://www.coe.int/en/web/common-european-framework-reference-languages/developing-tests-examining),
+las [guías de buena práctica de EALTA](https://ealta.eu/ealta-guidelines-for-good-practice-in-language-testing-and-assessment/)
+y la guía del Consejo de Europa para [relacionar exámenes con el MCER](https://www.coe.int/en/web/common-european-framework-reference-languages/tests-and-examinations).
 
 Puerta de salida:
 

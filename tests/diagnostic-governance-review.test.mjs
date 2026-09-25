@@ -124,7 +124,7 @@ test('approved manifest can record only the reviewed human-writing, retention an
       database: { authenticatedFlowVerified: false }, pilot: {}, quality: {},
     },
     retentionPolicy: { policyVersion: 'english-diagnostic-retention-proposal-v1', status: 'proposal-pending-privacy-approval' },
-    pilotCriteria: { criteriaVersion: 'english-diagnostic-pilot-criteria-v1', status: 'provisional-pending-academic-approval' },
+    pilotCriteria: { criteriaVersion: 'english-diagnostic-pilot-criteria-v2', status: 'provisional-pending-academic-approval' },
     validated,
     recordedAt: reviewedAt,
     appliedBy: 'release-operator',

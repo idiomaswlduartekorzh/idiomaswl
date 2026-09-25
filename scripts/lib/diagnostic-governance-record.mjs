@@ -72,7 +72,7 @@ export function recordDiagnosticGovernanceApprovals({
     throw new Error('Release evidence version is invalid.');
   }
   if (retentionPolicy?.policyVersion !== 'english-diagnostic-retention-proposal-v1'
-    || pilotCriteria?.criteriaVersion !== 'english-diagnostic-pilot-criteria-v1') {
+    || pilotCriteria?.criteriaVersion !== 'english-diagnostic-pilot-criteria-v2') {
     throw new Error('Governance document version is unexpected.');
   }
   const writing = validated.writing;

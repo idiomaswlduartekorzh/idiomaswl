@@ -1,6 +1,12 @@
 import { createHash } from 'node:crypto';
 
-import { CEFR_LEVELS, type CefrLevel } from '../../lib/diagnostic/types.ts';
+import {
+  CEFR_LEVELS,
+  DIAGNOSTIC_SKILLS,
+  type CefrLevel,
+  type DiagnosticObjectiveSkill,
+  type DiagnosticSkill,
+} from '../../lib/diagnostic/types.ts';
 import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
@@ -9,19 +15,80 @@ export interface DiagnosticPilotCriteria {
   status: 'provisional-pending-academic-approval' | 'approved';
   minimumStartedAttempts: number;
   minimumCompletionRate: number;
+  minimumCompletedPerRoute: number;
   minimumResponsesPerItem: number;
   minimumDiscriminationSample: number;
   minimumCorrectedItemTotal: number;
+  minimumItemFacility: number;
+  maximumItemFacility: number;
+  minimumDistractorSelectionRate: number;
   maximumOmissionRate: number;
   minimumWritingPairs: number;
   minimumWritingExactAgreement: number;
   maximumWritingMeanAbsoluteLevelDifference: number;
   maximumWritingAdjudicationRate: number;
   minimumIndependentReferencePairs: number;
+  minimumReferencesPerCefrLevel: number;
   minimumReferenceExactAgreement: number;
   minimumReferenceWithinOneLevel: number;
   maximumReferenceSevereDisagreement: number;
+  minimumAdaptiveReliabilitySamplePerSkill: number;
+  minimumAdaptiveReliability: number;
+  minimumClassificationConsistencySample: number;
+  minimumClassificationConsistency: number;
+  minimumStabilityPairsPerSkill: number;
+  minimumStabilityCorrelation: number;
+  minimumStabilityWithinOneLevel: number;
+  minimumFairnessGroups: number;
+  minimumFairnessGroupSample: number;
+  maximumUnresolvedDifItems: number;
+  minimumStandardSettingPanelists: number;
 }
+
+export interface DiagnosticPilotMeasurementEvidence {
+  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v1';
+  status: 'not-collected' | 'complete';
+  criteriaVersion: string;
+  bankSnapshotSha256: string | null;
+  generatedAt: string | null;
+  adaptiveReliability: readonly {
+    skill: DiagnosticObjectiveSkill;
+    sampleSize: number;
+    coefficient: number;
+    method: 'marginal-reliability' | 'route-aware-resampling';
+  }[];
+  classificationConsistency: {
+    sampleSize: number;
+    coefficient: number;
+    method: 'bootstrap-classification' | 'replicated-routing';
+  } | null;
+  stabilityBySkill: readonly {
+    skill: DiagnosticSkill;
+    pairs: number;
+    correlation: number;
+    withinOneLevel: number;
+    method: 'test-retest' | 'parallel-forms';
+  }[];
+  fairness: {
+    method: 'dif-analysis';
+    groupSampleSizes: readonly number[];
+    itemsAnalyzed: number;
+    flaggedItems: number;
+    unresolvedMaterialItems: number;
+    lawfulBasisReference: string;
+  } | null;
+  standardSetting: {
+    method: 'bookmark' | 'body-of-work';
+    panelists: number;
+    reviewedBoundaries: readonly string[];
+    decision: 'approved' | 'changes-requested';
+  } | null;
+}
+
+const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+const ROUTES = ['low-a1-a2', 'mid-b1-b2', 'high-c1-c2'] as const;
+const CEFR_BOUNDARIES = ['A1/A2', 'A2/B1', 'B1/B2', 'B2/C1', 'C1/C2'] as const;
+const SHA256 = /^[a-f0-9]{64}$/u;
 
 export interface DiagnosticPilotAttemptRow {
   attemptId: string;
@@ -66,17 +133,34 @@ function boundedRate(value: unknown): value is number {
 export function validateDiagnosticPilotCriteria(criteria: DiagnosticPilotCriteria): string[] {
   const errors: string[] = [];
   if (!criteria.criteriaVersion.trim()) errors.push('pilot criteria version is required');
-  for (const key of ['minimumStartedAttempts', 'minimumResponsesPerItem', 'minimumDiscriminationSample', 'minimumWritingPairs', 'minimumIndependentReferencePairs'] as const) {
+  for (const key of [
+    'minimumStartedAttempts', 'minimumCompletedPerRoute', 'minimumResponsesPerItem',
+    'minimumDiscriminationSample', 'minimumWritingPairs', 'minimumIndependentReferencePairs',
+    'minimumReferencesPerCefrLevel', 'minimumAdaptiveReliabilitySamplePerSkill',
+    'minimumClassificationConsistencySample', 'minimumStabilityPairsPerSkill',
+    'minimumFairnessGroups', 'minimumFairnessGroupSample', 'minimumStandardSettingPanelists',
+  ] as const) {
     if (!Number.isInteger(criteria[key]) || criteria[key] < 1) errors.push(`${key} must be a positive integer`);
   }
-  for (const key of ['minimumCompletionRate', 'minimumWritingExactAgreement', 'maximumWritingAdjudicationRate', 'minimumReferenceExactAgreement', 'minimumReferenceWithinOneLevel', 'maximumReferenceSevereDisagreement'] as const) {
+  if (!Number.isInteger(criteria.maximumUnresolvedDifItems) || criteria.maximumUnresolvedDifItems < 0) {
+    errors.push('maximumUnresolvedDifItems must be a non-negative integer');
+  }
+  for (const key of [
+    'minimumCompletionRate', 'minimumItemFacility', 'maximumItemFacility',
+    'minimumDistractorSelectionRate', 'maximumOmissionRate', 'minimumWritingExactAgreement',
+    'maximumWritingAdjudicationRate', 'minimumReferenceExactAgreement',
+    'minimumReferenceWithinOneLevel', 'maximumReferenceSevereDisagreement',
+    'minimumAdaptiveReliability', 'minimumClassificationConsistency',
+    'minimumStabilityCorrelation', 'minimumStabilityWithinOneLevel',
+  ] as const) {
     if (!boundedRate(criteria[key])) errors.push(`${key} must be between zero and one`);
+  }
+  if (boundedRate(criteria.minimumItemFacility) && boundedRate(criteria.maximumItemFacility)
+    && criteria.minimumItemFacility >= criteria.maximumItemFacility) {
+    errors.push('minimumItemFacility must be lower than maximumItemFacility');
   }
   if (!Number.isFinite(criteria.minimumCorrectedItemTotal) || criteria.minimumCorrectedItemTotal < -1 || criteria.minimumCorrectedItemTotal > 1) {
     errors.push('minimumCorrectedItemTotal must be a correlation between -1 and 1');
-  }
-  if (!Number.isFinite(criteria.maximumOmissionRate) || criteria.maximumOmissionRate < 0 || criteria.maximumOmissionRate > 1) {
-    errors.push('maximumOmissionRate must be between zero and one');
   }
   if (!Number.isFinite(criteria.maximumWritingMeanAbsoluteLevelDifference) || criteria.maximumWritingMeanAbsoluteLevelDifference < 0) {
     errors.push('maximumWritingMeanAbsoluteLevelDifference must be non-negative');
@@ -230,7 +314,144 @@ function referenceMetrics(references: readonly DiagnosticPilotReferenceRow[]) {
     severeDisagreementRate: rate(differences.filter(value => value > 1).length, differences.length),
     meanAbsoluteLevelDifference: differences.length ? rounded(differences.reduce((sum, value) => sum + value, 0) / differences.length) : null,
     sources: Object.fromEntries(['external-test', 'tutor-judgement', 'course-placement'].map(source => [source, references.filter(row => row.source === source).length])),
+    referenceLevelCounts: Object.fromEntries(CEFR_LEVELS.map(level => [level, references.filter(row => row.referenceLevel === level).length])),
   };
+}
+
+function positiveInteger(value: unknown): value is number {
+  return Number.isInteger(value) && Number(value) > 0;
+}
+
+function measurementEvidenceSummary(input: {
+  evidence: DiagnosticPilotMeasurementEvidence;
+  criteria: DiagnosticPilotCriteria;
+  bankSnapshotSha256: string;
+  objectiveItemCount: number;
+}) {
+  const evidence = input.evidence;
+  const bindingValid = evidence?.evidenceVersion === 'diagnostic-pilot-measurement-evidence-v1'
+    && evidence.status === 'complete'
+    && evidence.criteriaVersion === input.criteria.criteriaVersion
+    && evidence.bankSnapshotSha256 === input.bankSnapshotSha256
+    && typeof evidence.generatedAt === 'string'
+    && !Number.isNaN(Date.parse(evidence.generatedAt))
+    && new Date(Date.parse(evidence.generatedAt)).toISOString() === evidence.generatedAt;
+
+  const reliabilityRows = Array.isArray(evidence?.adaptiveReliability) ? evidence.adaptiveReliability : [];
+  const reliabilityBySkill = OBJECTIVE_SKILLS.map(skill => {
+    const matches = reliabilityRows.filter(row => row?.skill === skill);
+    const row = matches.length === 1 ? matches[0] : null;
+    const valid = Boolean(row
+      && positiveInteger(row.sampleSize)
+      && boundedRate(row.coefficient)
+      && ['marginal-reliability', 'route-aware-resampling'].includes(row.method));
+    return {
+      skill,
+      sampleSize: valid ? row!.sampleSize : null,
+      coefficient: valid ? rounded(row!.coefficient) : null,
+      method: valid ? row!.method : null,
+      meetsThreshold: Boolean(valid
+        && row!.sampleSize >= input.criteria.minimumAdaptiveReliabilitySamplePerSkill
+        && row!.coefficient >= input.criteria.minimumAdaptiveReliability),
+    };
+  });
+  const adaptiveReliability = bindingValid
+    && reliabilityRows.length === OBJECTIVE_SKILLS.length
+    && reliabilityBySkill.every(row => row.meetsThreshold);
+
+  const consistency = evidence?.classificationConsistency;
+  const consistencyValid = Boolean(consistency
+    && positiveInteger(consistency.sampleSize)
+    && boundedRate(consistency.coefficient)
+    && ['bootstrap-classification', 'replicated-routing'].includes(consistency.method));
+  const classificationConsistency = bindingValid && consistencyValid
+    && consistency!.sampleSize >= input.criteria.minimumClassificationConsistencySample
+    && consistency!.coefficient >= input.criteria.minimumClassificationConsistency;
+
+  const stabilityRows = Array.isArray(evidence?.stabilityBySkill) ? evidence.stabilityBySkill : [];
+  const stabilityBySkill = DIAGNOSTIC_SKILLS.map(skill => {
+    const matches = stabilityRows.filter(row => row?.skill === skill);
+    const row = matches.length === 1 ? matches[0] : null;
+    const valid = Boolean(row
+      && positiveInteger(row.pairs)
+      && boundedRate(row.correlation)
+      && boundedRate(row.withinOneLevel)
+      && ['test-retest', 'parallel-forms'].includes(row.method));
+    return {
+      skill,
+      pairs: valid ? row!.pairs : null,
+      correlation: valid ? rounded(row!.correlation) : null,
+      withinOneLevel: valid ? rounded(row!.withinOneLevel) : null,
+      method: valid ? row!.method : null,
+      meetsThreshold: Boolean(valid
+        && row!.pairs >= input.criteria.minimumStabilityPairsPerSkill
+        && row!.correlation >= input.criteria.minimumStabilityCorrelation
+        && row!.withinOneLevel >= input.criteria.minimumStabilityWithinOneLevel),
+    };
+  });
+  const stability = bindingValid
+    && stabilityRows.length === DIAGNOSTIC_SKILLS.length
+    && stabilityBySkill.every(row => row.meetsThreshold);
+
+  const fairness = evidence?.fairness;
+  const fairnessValid = Boolean(fairness
+    && fairness.method === 'dif-analysis'
+    && Array.isArray(fairness.groupSampleSizes)
+    && fairness.groupSampleSizes.every(positiveInteger)
+    && positiveInteger(fairness.itemsAnalyzed)
+    && Number.isInteger(fairness.flaggedItems) && fairness.flaggedItems >= 0
+    && Number.isInteger(fairness.unresolvedMaterialItems) && fairness.unresolvedMaterialItems >= 0
+    && fairness.flaggedItems <= fairness.itemsAnalyzed
+    && fairness.unresolvedMaterialItems <= fairness.flaggedItems
+    && typeof fairness.lawfulBasisReference === 'string'
+    && fairness.lawfulBasisReference.trim().length >= 3);
+  const fairnessReview = bindingValid && fairnessValid
+    && fairness!.groupSampleSizes.length >= input.criteria.minimumFairnessGroups
+    && fairness!.groupSampleSizes.every(sample => sample >= input.criteria.minimumFairnessGroupSample)
+    && fairness!.itemsAnalyzed === input.objectiveItemCount
+    && fairness!.unresolvedMaterialItems <= input.criteria.maximumUnresolvedDifItems;
+
+  const standardSetting = evidence?.standardSetting;
+  const standardSettingValid = Boolean(standardSetting
+    && ['bookmark', 'body-of-work'].includes(standardSetting.method)
+    && positiveInteger(standardSetting.panelists)
+    && Array.isArray(standardSetting.reviewedBoundaries)
+    && new Set(standardSetting.reviewedBoundaries).size === CEFR_BOUNDARIES.length
+    && CEFR_BOUNDARIES.every(boundary => standardSetting.reviewedBoundaries.includes(boundary))
+    && ['approved', 'changes-requested'].includes(standardSetting.decision));
+  const standardSettingReview = bindingValid && standardSettingValid
+    && standardSetting!.panelists >= input.criteria.minimumStandardSettingPanelists
+    && standardSetting!.decision === 'approved';
+
+  return {
+    bindingValid,
+    evidenceVersion: typeof evidence?.evidenceVersion === 'string' ? evidence.evidenceVersion : null,
+    status: typeof evidence?.status === 'string' ? evidence.status : null,
+    generatedAt: bindingValid ? evidence.generatedAt : null,
+    adaptiveReliability: { bySkill: reliabilityBySkill },
+    classificationConsistency: {
+      sampleSize: consistencyValid ? consistency!.sampleSize : null,
+      coefficient: consistencyValid ? rounded(consistency!.coefficient) : null,
+      method: consistencyValid ? consistency!.method : null,
+    },
+    stability: { bySkill: stabilityBySkill },
+    fairness: {
+      groupCount: fairnessValid ? fairness!.groupSampleSizes.length : null,
+      minimumGroupSample: fairnessValid ? Math.min(...fairness!.groupSampleSizes) : null,
+      itemsAnalyzed: fairnessValid ? fairness!.itemsAnalyzed : null,
+      flaggedItems: fairnessValid ? fairness!.flaggedItems : null,
+      unresolvedMaterialItems: fairnessValid ? fairness!.unresolvedMaterialItems : null,
+      method: fairnessValid ? fairness!.method : null,
+      lawfulBasisRecorded: fairnessValid,
+    },
+    standardSetting: {
+      method: standardSettingValid ? standardSetting!.method : null,
+      panelists: standardSettingValid ? standardSetting!.panelists : null,
+      reviewedBoundaryCount: standardSettingValid ? standardSetting!.reviewedBoundaries.length : null,
+      decision: standardSettingValid ? standardSetting!.decision : null,
+    },
+    gates: { adaptiveReliability, classificationConsistency, stability, fairnessReview, standardSettingReview },
+  } as const;
 }
 
 export function buildDiagnosticPilotReport(input: {
@@ -241,6 +462,7 @@ export function buildDiagnosticPilotReport(input: {
   bank: readonly DiagnosticBankRecord[];
   writingBank: readonly DiagnosticWritingPromptRecord[];
   criteria: DiagnosticPilotCriteria;
+  measurementEvidence: DiagnosticPilotMeasurementEvidence;
   generatedAt: string;
 }) {
   const criteriaErrors = validateDiagnosticPilotCriteria(input.criteria);
@@ -259,8 +481,10 @@ export function buildDiagnosticPilotReport(input: {
   });
   const statusCounts = Object.fromEntries([...new Set(input.attempts.map(row => row.status))].sort()
     .map(status => [status, input.attempts.filter(row => row.status === status).length]));
-  const routeCounts = Object.fromEntries(['low-a1-a2', 'mid-b1-b2', 'high-c1-c2', 'unassigned']
+  const routeCounts = Object.fromEntries([...ROUTES, 'unassigned']
     .map(route => [route, input.attempts.filter(row => (row.routeId ?? 'unassigned') === route).length]));
+  const completedRouteCounts = Object.fromEntries(ROUTES
+    .map(route => [route, completed.filter(row => row.routeId === route).length]));
 
   const itemMetrics = input.bank.map(record => {
     const item = record.publicItem;
@@ -269,16 +493,31 @@ export function buildDiagnosticPilotReport(input: {
     const correct = rows.filter(row => row.outcome === 'correct').length;
     const omissions = rows.filter(row => row.outcome === 'omitted').length;
     const times = rows.flatMap(row => row.responseMs === null ? [] : [row.responseMs]);
-    const optionCounts = new Map<string, number>();
+    const optionIds = item.response.kind === 'short-text' ? [] : [...item.response.optionIds];
+    const optionCounts = new Map(optionIds.map(optionId => [optionId, 0]));
     for (const row of attempted) {
       for (const optionId of selectedOptionIds(row.submittedResponse)) optionCounts.set(optionId, (optionCounts.get(optionId) ?? 0) + 1);
     }
     const discrimination = correctedItemTotal(item.id, item.skill, input.responses, input.criteria.minimumDiscriminationSample);
     const omissionRate = rate(omissions, rows.length);
+    const facility = rate(correct, attempted.length);
+    const correctOptionIds = record.scoring.kind === 'short-text'
+      ? new Set<string>()
+      : new Set(record.scoring.kind === 'single-choice' ? [record.scoring.optionId] : record.scoring.optionIds);
+    const distractorRates = optionIds.filter(optionId => !correctOptionIds.has(optionId))
+      .map(optionId => ({ optionId, rate: rate(optionCounts.get(optionId) ?? 0, attempted.length) }));
     const flags: string[] = [];
     if (rows.length < input.criteria.minimumResponsesPerItem) flags.push('INSUFFICIENT_ITEM_SAMPLE');
+    if (facility !== null && (facility < input.criteria.minimumItemFacility || facility > input.criteria.maximumItemFacility)) {
+      flags.push('FACILITY_OUTSIDE_TARGET_RANGE');
+    }
     if (omissionRate !== null && omissionRate > input.criteria.maximumOmissionRate) flags.push('HIGH_OMISSION');
     if (discrimination.correlation !== null && discrimination.correlation < input.criteria.minimumCorrectedItemTotal) flags.push('LOW_OR_NEGATIVE_DISCRIMINATION');
+    if (attempted.length >= input.criteria.minimumResponsesPerItem
+      && distractorRates.some(distractor => distractor.rate === null
+        || distractor.rate < input.criteria.minimumDistractorSelectionRate)) {
+      flags.push('NONFUNCTIONING_DISTRACTOR');
+    }
     if (item.stimulus.kind === 'audio' && attempted.some(row => (row.audioPlayCount ?? 0) < 1)) flags.push('LISTENING_RESPONSE_WITHOUT_PLAYBACK');
     return {
       itemId: item.id,
@@ -290,7 +529,7 @@ export function buildDiagnosticPilotReport(input: {
       correct,
       incorrect: rows.filter(row => row.outcome === 'incorrect').length,
       omitted: omissions,
-      facility: rate(correct, attempted.length),
+      facility,
       omissionRate,
       medianResponseMs: quantile(times, 0.5),
       p90ResponseMs: quantile(times, 0.9),
@@ -300,6 +539,7 @@ export function buildDiagnosticPilotReport(input: {
       correctedItemTotal: discrimination,
       optionSelections: [...optionCounts.entries()].sort(([left], [right]) => left.localeCompare(right))
         .map(([optionId, selections]) => ({ optionId, selections, rateAmongAttempted: rate(selections, attempted.length) })),
+      distractorFunctioning: distractorRates,
       flags,
     };
   }).sort((left, right) => left.itemId.localeCompare(right.itemId));
@@ -314,16 +554,30 @@ export function buildDiagnosticPilotReport(input: {
     : null;
   const adjudicationRate = rate(writingPairs.filter(row => row.requiresAdjudication === true).length, writingPairs.length);
   const references = referenceMetrics(input.references);
+  const bankSnapshotSha256 = diagnosticPilotBankSha256({ bank: input.bank, writingBank: input.writingBank });
+  const measurement = measurementEvidenceSummary({
+    evidence: input.measurementEvidence,
+    criteria: input.criteria,
+    bankSnapshotSha256,
+    objectiveItemCount: input.bank.length,
+  });
 
   const gates = {
     criteriaApproved: input.criteria.status === 'approved',
     attemptVolume: input.attempts.length >= input.criteria.minimumStartedAttempts,
     completion: (rate(completed.length, input.attempts.length) ?? 0) >= input.criteria.minimumCompletionRate,
+    routeCoverage: ROUTES.every(route => completedRouteCounts[route] >= input.criteria.minimumCompletedPerRoute),
     itemSamples: itemMetrics.length > 0 && itemMetrics.every(item => item.served >= input.criteria.minimumResponsesPerItem),
     itemQuality: itemMetrics.length > 0 && itemMetrics.every(item => item.omissionRate !== null
       && item.omissionRate <= input.criteria.maximumOmissionRate
+      && item.facility !== null
+      && item.facility >= input.criteria.minimumItemFacility
+      && item.facility <= input.criteria.maximumItemFacility
       && item.correctedItemTotal.correlation !== null
       && item.correctedItemTotal.correlation >= input.criteria.minimumCorrectedItemTotal),
+    distractorFunctioning: itemMetrics.length > 0 && itemMetrics.every(item =>
+      item.distractorFunctioning.every(distractor => distractor.rate !== null
+        && distractor.rate >= input.criteria.minimumDistractorSelectionRate)),
     writingAgreement: writingPairs.length >= input.criteria.minimumWritingPairs
       && writingExactAgreement !== null && writingExactAgreement >= input.criteria.minimumWritingExactAgreement
       && writingMeanDifference !== null && writingMeanDifference <= input.criteria.maximumWritingMeanAbsoluteLevelDifference
@@ -332,14 +586,17 @@ export function buildDiagnosticPilotReport(input: {
       && references.exactAgreement !== null && references.exactAgreement >= input.criteria.minimumReferenceExactAgreement
       && references.withinOneLevel !== null && references.withinOneLevel >= input.criteria.minimumReferenceWithinOneLevel
       && references.severeDisagreementRate !== null && references.severeDisagreementRate <= input.criteria.maximumReferenceSevereDisagreement,
+    referenceLevelCoverage: CEFR_LEVELS.every(level =>
+      references.referenceLevelCounts[level] >= input.criteria.minimumReferencesPerCefrLevel),
+    ...measurement.gates,
   };
   const allGatesPass = Object.values(gates).every(Boolean);
   return {
-    reportVersion: 'diagnostic-pilot-report-v1',
+    reportVersion: 'diagnostic-pilot-report-v2',
     generatedAt: new Date(input.generatedAt).toISOString(),
     criteria: { version: input.criteria.criteriaVersion, status: input.criteria.status },
     bankSnapshot: {
-      sha256: diagnosticPilotBankSha256({ bank: input.bank, writingBank: input.writingBank }),
+      sha256: bankSnapshotSha256,
       objectiveItems: input.bank.length,
       writingPrompts: input.writingBank.length,
       attemptBankVersions: [...new Set(input.attempts.map(row => row.bankVersion))].sort(),
@@ -354,6 +611,7 @@ export function buildDiagnosticPilotReport(input: {
       p90CompletionMs: quantile(durations, 0.9),
       statusCounts,
       routeCounts,
+      completedRouteCounts,
     },
     itemMetrics,
     writingAgreement: {
@@ -364,9 +622,11 @@ export function buildDiagnosticPilotReport(input: {
       adjudicationRate,
     },
     independentReference: references,
+    measurementEvidence: measurement,
     warnings: [
       ...(input.criteria.status !== 'approved' ? ['PUBLICATION_CRITERIA_AWAIT_ACADEMIC_APPROVAL'] : []),
       ...(input.references.length === 0 ? ['NO_INDEPENDENT_REFERENCE_EVIDENCE'] : []),
+      ...(!measurement.bindingValid ? ['MEASUREMENT_EVIDENCE_NOT_BOUND'] : []),
       ...(itemMetrics.some(item => item.flags.length > 0) ? ['ITEMS_REQUIRE_REVIEW'] : []),
     ],
   } as const;

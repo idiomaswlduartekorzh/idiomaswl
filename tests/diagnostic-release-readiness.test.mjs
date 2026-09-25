@@ -17,20 +17,26 @@ function readyFixture() {
     {
       role: 'academic-lead', reviewerId: 'academic-reviewer', decision: 'APPROVE', reviewedAt,
       checks: {
-        sampleAndCompletionReviewed: true, itemQualityReviewed: true, writingAgreementReviewed: true,
-        independentReferenceReviewed: true, limitationsAccepted: true,
+        sampleAndCompletionReviewed: true, routeAndLevelCoverageReviewed: true,
+        itemQualityReviewed: true, writingAgreementReviewed: true, independentReferenceReviewed: true,
+        measurementEvidenceBindingReviewed: true, adaptiveReliabilityReviewed: true,
+        classificationConsistencyReviewed: true, stabilityReviewed: true, fairnessReviewed: true,
+        standardSettingReviewed: true, limitationsAccepted: true,
       },
     },
     {
       role: 'measurement-lead', reviewerId: 'measurement-reviewer', decision: 'APPROVE', reviewedAt,
       checks: {
-        sampleAndCompletionReviewed: true, itemQualityReviewed: true, writingAgreementReviewed: true,
-        independentReferenceReviewed: true, limitationsAccepted: true,
+        sampleAndCompletionReviewed: true, routeAndLevelCoverageReviewed: true,
+        itemQualityReviewed: true, writingAgreementReviewed: true, independentReferenceReviewed: true,
+        measurementEvidenceBindingReviewed: true, adaptiveReliabilityReviewed: true,
+        classificationConsistencyReviewed: true, stabilityReviewed: true, fairnessReviewed: true,
+        standardSettingReviewed: true, limitationsAccepted: true,
       },
     },
   ];
   const pilotValidationCore = {
-    manifestVersion: 'diagnostic-pilot-validation-manifest-v1', decision: 'APPROVED',
+    manifestVersion: 'diagnostic-pilot-validation-manifest-v2', decision: 'APPROVED',
     reportSha256: pilotReportSha256, captureReceiptSha256: pilotCaptureSha256,
     sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha',
     reviews: pilotReviews,
@@ -110,7 +116,7 @@ function readyFixture() {
       },
     },
     pilotReport: {
-      reportVersion: 'diagnostic-pilot-report-v1',
+      reportVersion: 'diagnostic-pilot-report-v2',
       generatedAt: reviewedAt,
       criteria: { version: 'criteria-v1', status: 'approved' },
       decision: 'ELIGIBLE_FOR_VALIDATION_REVIEW',
@@ -119,7 +125,7 @@ function readyFixture() {
     },
     pilotReportSha256,
     pilotCaptureReceipt: {
-      receiptVersion: 'diagnostic-pilot-report-capture-v1',
+      receiptVersion: 'diagnostic-pilot-report-capture-v2',
       report: { sha256: pilotReportSha256, generatedAt: reviewedAt },
       target: {
         sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha', accessMode: 'pilot',

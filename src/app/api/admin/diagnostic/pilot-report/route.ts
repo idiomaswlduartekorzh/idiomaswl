@@ -1,5 +1,6 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import criteria from '../../../../../../config/diagnostic/pilot-publication-criteria.json' with { type: 'json' };
+import measurementEvidence from '../../../../../../config/diagnostic/pilot-measurement-evidence.json' with { type: 'json' };
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
@@ -7,6 +8,7 @@ import {
 } from '@/server/diagnostic/bank';
 import {
   buildDiagnosticPilotReport,
+  type DiagnosticPilotMeasurementEvidence,
   type DiagnosticPilotCriteria,
 } from '@/server/diagnostic/pilot-analytics';
 import { loadDiagnosticPilotDataset } from '@/server/diagnostic/repository.server';
@@ -45,6 +47,7 @@ export async function GET(request: Request): Promise<Response> {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       criteria: criteria as DiagnosticPilotCriteria,
+      measurementEvidence: measurementEvidence as DiagnosticPilotMeasurementEvidence,
       generatedAt: new Date().toISOString(),
     });
     return Response.json({ ok: true, report }, { status: 200, headers: NO_STORE_HEADERS });

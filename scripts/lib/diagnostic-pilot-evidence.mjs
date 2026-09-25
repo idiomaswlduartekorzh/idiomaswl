@@ -7,17 +7,32 @@ const PILOT_GATE_NAMES = [
   'criteriaApproved',
   'attemptVolume',
   'completion',
+  'routeCoverage',
   'itemSamples',
   'itemQuality',
+  'distractorFunctioning',
   'writingAgreement',
   'independentReference',
+  'referenceLevelCoverage',
+  'adaptiveReliability',
+  'classificationConsistency',
+  'stability',
+  'fairnessReview',
+  'standardSettingReview',
 ];
 const REVIEW_ROLES = ['academic-lead', 'measurement-lead'];
 const REVIEW_CHECKS = [
   'sampleAndCompletionReviewed',
+  'routeAndLevelCoverageReviewed',
   'itemQualityReviewed',
   'writingAgreementReviewed',
   'independentReferenceReviewed',
+  'measurementEvidenceBindingReviewed',
+  'adaptiveReliabilityReviewed',
+  'classificationConsistencyReviewed',
+  'stabilityReviewed',
+  'fairnessReviewed',
+  'standardSettingReviewed',
   'limitationsAccepted',
 ];
 const FORBIDDEN_REPORT_KEYS = new Set([
@@ -82,12 +97,17 @@ export function validateDiagnosticPilotCapture(input) {
   assertHash(input.expectedSourceSha256, 'Expected source');
   assertHash(input.expectedBankSnapshotSha256, 'Expected bank snapshot');
   if (!COMMIT_SHA.test(input.expectedCommitSha ?? '')) throw new Error('Expected commit SHA is invalid.');
-  if (report?.reportVersion !== 'diagnostic-pilot-report-v1'
+  if (report?.reportVersion !== 'diagnostic-pilot-report-v2'
     || !['HOLD', 'ELIGIBLE_FOR_VALIDATION_REVIEW'].includes(report.decision)
     || report.bankSnapshot?.sha256 !== input.expectedBankSnapshotSha256
     || !Array.isArray(report.itemMetrics)
     || typeof report.criteria?.version !== 'string'
     || !['provisional-pending-academic-approval', 'approved'].includes(report.criteria?.status)
+    || report.measurementEvidence?.bindingValid !== true
+    || !Array.isArray(report.measurementEvidence?.adaptiveReliability?.bySkill)
+    || report.measurementEvidence.adaptiveReliability.bySkill.length !== 4
+    || !Array.isArray(report.measurementEvidence?.stability?.bySkill)
+    || report.measurementEvidence.stability.bySkill.length !== 5
     || Object.keys(report.gates ?? {}).sort().join('|') !== [...PILOT_GATE_NAMES].sort().join('|')
     || PILOT_GATE_NAMES.some(name => typeof report.gates[name] !== 'boolean')) {
     throw new Error('Pilot report does not match the aggregate report contract or current bank.');
@@ -106,7 +126,7 @@ export function validateDiagnosticPilotCapture(input) {
     throw new Error('Pilot capture deployment does not match the expected local release.');
   }
   return {
-    receiptVersion: 'diagnostic-pilot-report-capture-v1',
+    receiptVersion: 'diagnostic-pilot-report-capture-v2',
     capturedAt: input.capturedAt,
     since: input.since,
     target: {
@@ -149,7 +169,7 @@ export function validateDiagnosticPilotCaptureReceipt({
   canonicalIso(receipt?.capturedAt, 'pilot capturedAt');
   canonicalIso(receipt?.since, 'pilot since');
   canonicalIso(receipt?.report?.generatedAt, 'pilot report generatedAt');
-  if (receipt?.receiptVersion !== 'diagnostic-pilot-report-capture-v1'
+  if (receipt?.receiptVersion !== 'diagnostic-pilot-report-capture-v2'
     || receipt.report.file !== reportFile
     || receipt.report.sha256 !== reportSha256
     || receipt.report.generatedAt !== report?.generatedAt
@@ -178,12 +198,12 @@ export function validateDiagnosticPilotCaptureReceipt({
 export function buildDiagnosticPilotValidationPackets({ captureReceipt, captureReceiptSha256, generatedAt }) {
   canonicalIso(generatedAt, 'pilot validation packet generatedAt');
   assertHash(captureReceiptSha256, 'Pilot capture receipt');
-  if (captureReceipt?.receiptVersion !== 'diagnostic-pilot-report-capture-v1'
+  if (captureReceipt?.receiptVersion !== 'diagnostic-pilot-report-capture-v2'
     || captureReceipt.report?.decision !== 'ELIGIBLE_FOR_VALIDATION_REVIEW') {
     throw new Error('Only an eligible captured pilot report can enter validation review.');
   }
   return REVIEW_ROLES.map(role => ({
-    receiptVersion: 'diagnostic-pilot-validation-review-v1',
+    receiptVersion: 'diagnostic-pilot-validation-review-v2',
     packetId: `diagnostic-pilot-validation:${role}`,
     role,
     reportSha256: captureReceipt.report.sha256,
@@ -207,7 +227,7 @@ export function buildDiagnosticPilotValidationPackets({ captureReceipt, captureR
 }
 
 export function validateDiagnosticPilotValidationReview(review, expected) {
-  if (review?.receiptVersion !== 'diagnostic-pilot-validation-review-v1'
+  if (review?.receiptVersion !== 'diagnostic-pilot-validation-review-v2'
     || !REVIEW_ROLES.includes(review.role)
     || review.packetId !== `diagnostic-pilot-validation:${review.role}`
     || review.reportSha256 !== expected.reportSha256
@@ -250,7 +270,7 @@ export function compileDiagnosticPilotValidation({ reviews, captureReceipt, capt
     throw new Error('Pilot validation reviews require independent reviewer identities.');
   }
   return {
-    manifestVersion: 'diagnostic-pilot-validation-manifest-v1',
+    manifestVersion: 'diagnostic-pilot-validation-manifest-v2',
     decision: validated.every(review => review.decision === 'APPROVE') ? 'APPROVED' : 'CHANGES_REQUESTED',
     reportSha256: expected.reportSha256,
     captureReceiptSha256,
@@ -280,7 +300,7 @@ export function validateDiagnosticPilotValidationManifest({
   const { manifestSha256: embeddedHash, ...core } = manifest ?? {};
   if (embeddedHash !== manifestSha256
     || createHash('sha256').update(JSON.stringify(core)).digest('hex') !== manifestSha256
-    || manifest?.manifestVersion !== 'diagnostic-pilot-validation-manifest-v1'
+    || manifest?.manifestVersion !== 'diagnostic-pilot-validation-manifest-v2'
     || manifest.decision !== 'APPROVED'
     || manifest.safeguards?.independentRoleReviews !== true
     || manifest.safeguards?.aggregateEvidenceOnly !== true

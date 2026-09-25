@@ -2,9 +2,10 @@
 
 Estado actual: **HOLD**.
 
-Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
-`e560c391`; **243/243 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
-historias E2E** pasaron.
+Último recibo integral reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
+`e560c391`; TypeScript, el build de **2.564 páginas estáticas** y **4/4 historias E2E** pasaron.
+La ampliación posterior del contrato psicométrico pasa **245/245 pruebas** de fundamento, pero
+todavía necesita un nuevo recibo integral ligado a su propia huella antes de actualizar ese corte.
 Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
 aprobación académica, de privacidad o psicométrica.
 
@@ -24,7 +25,8 @@ La puerta reúne ocho dimensiones que deben pasar simultáneamente:
    procesamiento externo con consentimiento específico y proveedor listo;
 5. migraciones aplicadas y flujo autenticado comprobado contra la base real;
 6. política de retención aprobada y borrado probado;
-7. piloto aprobado, con umbrales cumplidos, revisión humana y hash del banco exacto evaluado;
+7. piloto aprobado, con cobertura de rutas y niveles, psicometría adaptativa, estabilidad,
+   equidad/DIF, standard setting, revisión humana y hash del banco exacto evaluado;
 8. suite diagnóstica, TypeScript, build y E2E adaptativo sobre servidor de producción atados al
    commit limpio que se pretende liberar.
 
@@ -259,6 +261,24 @@ actualizar atómicamente el manifiesto.
 
 ### Captura y validación del piloto
 
+Los criterios v2 son deliberadamente más estrictos que el primer informe. Además de volumen,
+finalización, comportamiento de ítems, escritura y referencia independiente, exigen:
+
+- participantes completados en cada una de las tres rutas MST y referencias en A1–C2;
+- facilidad dentro del rango aprobado y cada distractor funcionando con muestra suficiente;
+- fiabilidad adaptativa por lectura, escucha, gramática y vocabulario;
+- consistencia de la decisión de nivel y estabilidad por las cinco habilidades;
+- análisis DIF agregado con grupos suficientemente representados y base lícita documentada;
+- standard setting humano de los cinco límites MCER.
+
+La evidencia especializada vive en un contrato separado y agregado,
+`config/diagnostic/pilot-measurement-evidence.json`. Nace `not-collected` y no incluye etiquetas
+de grupo, participantes ni respuestas. Debe coincidir exactamente con la versión de criterios y
+`bankSnapshot.sha256`; de lo contrario, fiabilidad, consistencia, estabilidad, equidad y cortes
+permanecen en `false`. Los umbrales del archivo de criterios son provisionales hasta revisión
+académica y de medición: las fuentes profesionales justifican las dimensiones de evidencia, no
+un número universal para todos los usos.
+
 El informe del piloto no se descarga manualmente ni se enlaza solo por nombre. Sobre un checkout
 limpio, el capturador consulta primero la identidad administrativa `no-store` del despliegue y
 exige coincidencia exacta de huella de fuente, hash del banco, commit, modo `pilot` y proyecto
@@ -286,8 +306,10 @@ npm run compile:diagnostic-pilot-validation
 npm run record:diagnostic-pilot-validation
 ```
 
-Ambos revisores deben usar identidades distintas y confirmar muestra/finalización, calidad de
-ítems, acuerdo de escritura, referencia independiente y limitaciones de uso. El compilador fija
+Ambos revisores deben usar identidades distintas y confirmar muestra/finalización, rutas y
+niveles, calidad de ítems, acuerdo de escritura, referencia independiente, vínculo de la
+evidencia de medición, fiabilidad, consistencia, estabilidad, equidad/DIF, standard setting y
+limitaciones de uso. El compilador fija
 los hashes de los dos recibos; el registrador vuelve a leerlos y es dry run por defecto. Para
 aplicar exige `--write`, `--applied-by=<operador>` y la confirmación que liga simultáneamente el
 manifiesto y el informe. La puerta de salida relee los tres archivos privados y recalcula el hash

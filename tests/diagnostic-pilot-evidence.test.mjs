@@ -17,16 +17,24 @@ const commitSha = 'c'.repeat(40);
 const reportSha256 = 'd'.repeat(64);
 const capturedAt = '2026-09-25T14:05:00.000Z';
 const report = {
-  reportVersion: 'diagnostic-pilot-report-v1',
+  reportVersion: 'diagnostic-pilot-report-v2',
   generatedAt: '2026-09-25T14:04:00.000Z',
   criteria: { version: 'criteria-v1', status: 'approved' },
   bankSnapshot: { sha256: bankSnapshotSha256 },
   decision: 'ELIGIBLE_FOR_VALIDATION_REVIEW',
   gates: {
-    criteriaApproved: true, attemptVolume: true, completion: true, itemSamples: true,
-    itemQuality: true, writingAgreement: true, independentReference: true,
+    criteriaApproved: true, attemptVolume: true, completion: true, routeCoverage: true,
+    itemSamples: true, itemQuality: true, distractorFunctioning: true,
+    writingAgreement: true, independentReference: true, referenceLevelCoverage: true,
+    adaptiveReliability: true, classificationConsistency: true, stability: true,
+    fairnessReview: true, standardSettingReview: true,
   },
   itemMetrics: [],
+  measurementEvidence: {
+    bindingValid: true,
+    adaptiveReliability: { bySkill: [{}, {}, {}, {}] },
+    stability: { bySkill: [{}, {}, {}, {}, {}] },
+  },
 };
 const binding = {
   bindingVersion: 'diagnostic-live-release-binding-v1', ready: true, accessMode: 'pilot',
