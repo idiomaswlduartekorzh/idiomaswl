@@ -12,6 +12,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925033000_diagnostic_human_only_writing.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 
 test('diagnostic mutations are atomic security-invoker functions', () => {
@@ -21,9 +22,9 @@ test('diagnostic mutations are atomic security-invoker functions', () => {
   assert.match(sql, /create function public\.complete_diagnostic_attempt/);
   assert.match(sql, /create function public\.record_diagnostic_automated_writing_evaluation/);
   assert.match(sql, /create function public\.record_diagnostic_human_writing_evaluation/);
-  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 10);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 13);
   assert.equal(sql.includes('security definer'), false);
-  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 10);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 13);
 });
 
 test('only service_role can execute diagnostic mutation functions', () => {

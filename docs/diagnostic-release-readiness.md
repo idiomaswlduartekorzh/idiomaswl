@@ -49,6 +49,14 @@ transacción con bloqueo por usuario, y una historia demasiado grande o un banco
 falla cerrado. Estos números siguen siendo una propuesta: producción rechaza la política hasta
 que liderazgo académico y producto aprueben el snapshot exacto.
 
+“Programado” se aplica en la base, no sólo en el texto: después de un intento piloto completado,
+otro intento exige una autorización administrativa para una inscripción consentida. La
+autorización fija inicio, fin, entre uno y tres cupos, una referencia opaca al protocolo y una
+razón auditable. Un trigger consume un cupo en la misma transacción que inserta el intento; una
+ventana ausente, futura, vencida o agotada produce `PILOT_RETEST_NOT_AUTHORIZED`. Revocar o cerrar
+la inscripción elimina cualquier cupo restante. Navegador y roles públicos no pueden leer ni
+crear estas autorizaciones.
+
 ## Evidencia que nunca se infiere
 
 El archivo `config/diagnostic/release-evidence.json` nace cerrado. No se debe completar a partir

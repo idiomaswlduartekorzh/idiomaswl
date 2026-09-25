@@ -47,6 +47,7 @@ test('server maps policy limits without exposing dates and result UI communicate
   assert.match(start, /diagnosticDeliveryRules/);
   assert.match(start, /ACTIVE_ATTEMPT_EXISTS/);
   assert.match(start, /RETAKE_NOT_YET_AVAILABLE/);
+  assert.match(start, /PILOT_RETEST_NOT_AUTHORIZED/);
   assert.doesNotMatch(start, /completedAt.*jsonError|nextEligibleAt.*jsonError/);
   assert.match(resultUi, /Vigente como orientación hasta/);
   assert.match(resultUi, /Después conviene repetir el diagnóstico/);

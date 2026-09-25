@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const migration = readFileSync(new URL('../supabase/migrations/20260925043000_diagnostic_pilot_enrollment_rpcs.sql', import.meta.url), 'utf8');
 const consentMigration = readFileSync(new URL('../supabase/migrations/20260925044500_diagnostic_pilot_consent_reference.sql', import.meta.url), 'utf8');
+const retestMigration = readFileSync(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8');
 const route = readFileSync(new URL('../src/app/api/admin/diagnostic/pilot-enrollments/route.ts', import.meta.url), 'utf8');
 const repository = readFileSync(new URL('../src/server/diagnostic/repository.server.ts', import.meta.url), 'utf8');
 const page = readFileSync(new URL('../src/app/(site)/dashboard/admin/nivel-radar/page.tsx', import.meta.url), 'utf8');
@@ -57,6 +58,24 @@ test('admin UI keeps pilot enrollment private, confirms destructive transitions 
   assert.match(client, /consentConfirmed: true/);
   assert.doesNotMatch(client, /localStorage|sessionStorage/);
   assert.doesNotMatch(client, /pilotConsentVersion/);
+});
+
+test('pilot retests require a bounded authorization consumed atomically with attempt creation', () => {
+  assert.match(retestMigration, /record_diagnostic_pilot_retest_authorization/);
+  assert.match(retestMigration, /remaining_retests between 0 and 3/);
+  assert.match(retestMigration, /diagnostic_pilot_retest_before_attempt/);
+  assert.match(retestMigration, /before insert on public\.diagnostic_attempts/);
+  assert.match(retestMigration, /remaining_retests = remaining_retests - 1/);
+  assert.match(retestMigration, /diagnostic_pilot_retest_not_authorized/);
+  assert.match(retestMigration, /retest-consumed/);
+  assert.match(retestMigration, /grant execute on function public\.record_diagnostic_pilot_retest_authorization[\s\S]*to service_role/);
+  assert.doesNotMatch(retestMigration, /to (anon|authenticated)/);
+  assert.match(route, /persistDiagnosticPilotRetestAuthorization/);
+  assert.match(route, /retestNotBefore/);
+  assert.match(route, /authorizationReference/);
+  assert.match(client, /Programar retest/);
+  assert.match(client, /Cupos \(1–3\)/);
+  assert.match(repository, /diagnostic_pilot_retest_not_authorized/);
 });
 
 test('full diagnostic deletion also removes enrollment evidence', () => {

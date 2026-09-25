@@ -7,6 +7,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925013000_diagnostic_confirmation_status.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
@@ -60,4 +61,11 @@ test('attempts bind the delivery policy and result-validity window used at creat
   assert.match(sql, /add column access_mode text not null/);
   assert.match(sql, /add column result_validity_days smallint not null/);
   assert.match(sql, /add column exposure_lookback_days smallint not null/);
+});
+
+test('pilot retest schedules are bounded, private and consumed by an attempt trigger', () => {
+  assert.match(sql, /add column remaining_retests smallint not null default 0/);
+  assert.match(sql, /create trigger diagnostic_pilot_retest_before_attempt/);
+  assert.match(sql, /before insert on public\.diagnostic_attempts/);
+  assert.match(sql, /diagnostic_pilot_retest_not_authorized/);
 });

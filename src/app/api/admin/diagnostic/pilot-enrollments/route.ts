@@ -1,13 +1,16 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
-import { persistDiagnosticPilotEnrollment } from '@/server/diagnostic/repository.server';
+import {
+  persistDiagnosticPilotEnrollment,
+  persistDiagnosticPilotRetestAuthorization,
+} from '@/server/diagnostic/repository.server';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{12}$/iu;
 const COHORT = /^[a-z0-9][a-z0-9._-]{2,99}$/u;
-const ACTIONS = ['invited', 'consented', 'revoked', 'completed'] as const;
+const ACTIONS = ['invited', 'consented', 'revoked', 'completed', 'retest-authorized'] as const;
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 
 function error(code: string, message: string, status: number): Response {
@@ -51,6 +54,7 @@ export async function POST(request: Request): Promise<Response> {
   const candidate = body as Record<string, unknown>;
   const allowedKeys = new Set([
     'userId', 'cohortId', 'action', 'consentConfirmed', 'consentedAt', 'consentReference', 'reason',
+    'retestNotBefore', 'retestNotAfter', 'retestCount', 'authorizationReference',
   ]);
   if (Object.keys(candidate).some(key => !allowedKeys.has(key))) {
     return error('INVALID_ENROLLMENT', 'La inscripción contiene campos no permitidos.', 400);
@@ -63,6 +67,54 @@ export async function POST(request: Request): Promise<Response> {
     ? candidate.consentReference.trim() : null;
   if (!UUID.test(userId) || !COHORT.test(cohortId) || !ACTIONS.includes(action as typeof ACTIONS[number])) {
     return error('INVALID_ENROLLMENT', 'La inscripción no cumple el contrato.', 400);
+  }
+
+  if (action === 'retest-authorized') {
+    const notBefore = typeof candidate.retestNotBefore === 'string'
+      ? new Date(candidate.retestNotBefore) : new Date(Number.NaN);
+    const notAfter = typeof candidate.retestNotAfter === 'string'
+      ? new Date(candidate.retestNotAfter) : new Date(Number.NaN);
+    const retestCount = candidate.retestCount;
+    const authorizationReference = typeof candidate.authorizationReference === 'string'
+      ? candidate.authorizationReference.trim() : '';
+    if (!Number.isInteger(retestCount) || Number(retestCount) < 1 || Number(retestCount) > 3
+      || Number.isNaN(notBefore.getTime()) || Number.isNaN(notAfter.getTime())
+      || notBefore.toISOString() !== candidate.retestNotBefore
+      || notAfter.toISOString() !== candidate.retestNotAfter
+      || notBefore.getTime() < Date.now() - 300_000
+      || notAfter.getTime() <= notBefore.getTime()
+      || notAfter.getTime() > notBefore.getTime() + 90 * 86_400_000
+      || !/^[A-Za-z0-9][A-Za-z0-9._:/-]{2,199}$/u.test(authorizationReference)
+      || !reason || reason.length < 3 || reason.length > 500) {
+      return error('INVALID_RETEST_AUTHORIZATION', 'La autorización de retest no está completa.', 400);
+    }
+    const forbidden = ['consentConfirmed', 'consentedAt', 'consentReference'];
+    if (forbidden.some(key => candidate[key] !== undefined)) {
+      return error('INVALID_RETEST_AUTHORIZATION', 'La autorización de retest no acepta evidencia de consentimiento.', 400);
+    }
+    try {
+      const receipt = await persistDiagnosticPilotRetestAuthorization({
+        userId,
+        cohortId,
+        notBefore: notBefore.toISOString(),
+        notAfter: notAfter.toISOString(),
+        retestCount: Number(retestCount),
+        authorizationReference,
+        actedBy: admin.id,
+        reason,
+      });
+      return Response.json({ ok: true, receipt }, { status: 201, headers: NO_STORE_HEADERS });
+    } catch (cause) {
+      const message = cause instanceof Error ? cause.message : 'unknown';
+      if (message.includes('enrollment_invalid')) {
+        return error('INVALID_TRANSITION', 'El participante no tiene una inscripción consentida vigente.', 409);
+      }
+      if (message.includes('authorization_invalid')) {
+        return error('INVALID_RETEST_AUTHORIZATION', 'La autorización de retest no cumple el contrato.', 400);
+      }
+      console.error('[diagnostic] Pilot retest authorization failed:', message);
+      return error('SERVICE_UNAVAILABLE', 'No pudimos registrar la autorización de retest.', 503);
+    }
   }
 
   const configuredConsentVersion = process.env.DIAGNOSTIC_PILOT_CONSENT_VERSION?.trim() ?? '';
@@ -97,12 +149,16 @@ export async function POST(request: Request): Promise<Response> {
   if ((action === 'invited' || action === 'consented') && reason !== null) {
     return error('INVALID_ENROLLMENT', 'Esta transición no acepta una razón de cierre.', 400);
   }
+  if (['retestNotBefore', 'retestNotAfter', 'retestCount', 'authorizationReference']
+    .some(key => candidate[key] !== undefined)) {
+    return error('INVALID_ENROLLMENT', 'Esta transición no acepta campos de retest.', 400);
+  }
 
   try {
     const receipt = await persistDiagnosticPilotEnrollment({
       userId,
       cohortId,
-      action: action as typeof ACTIONS[number],
+      action: action as Exclude<typeof ACTIONS[number], 'retest-authorized'>,
       pilotConsentVersion,
       consentedAt,
       consentReference,

@@ -1,12 +1,12 @@
 const TABLE_PROBES = [
-  { table: 'diagnostic_attempts', columns: 'id,consent_version,external_writing_processing_consent' },
+  { table: 'diagnostic_attempts', columns: 'id,consent_version,delivery_policy_version,access_mode,exposure_lookback_days,result_validity_days,external_writing_processing_consent' },
   { table: 'diagnostic_stages', columns: 'id,submission_digest' },
   { table: 'diagnostic_responses', columns: 'id,outcome' },
   { table: 'diagnostic_writing_evaluations', columns: 'id,automated_evaluation,human_evaluation' },
   { table: 'diagnostic_attempt_events', columns: 'id,event_type' },
   { table: 'diagnostic_pilot_references', columns: 'attempt_id,reference_level' },
-  { table: 'diagnostic_pilot_enrollments', columns: 'user_id,consent_reference' },
-  { table: 'diagnostic_pilot_enrollment_events', columns: 'id,consent_reference' },
+  { table: 'diagnostic_pilot_enrollments', columns: 'user_id,consent_reference,retest_not_before,retest_not_after,remaining_retests,retest_authorization_reference' },
+  { table: 'diagnostic_pilot_enrollment_events', columns: 'id,consent_reference,retest_count,authorization_reference' },
 ];
 
 const RPC_PROBES = [
@@ -28,6 +28,20 @@ const RPC_PROBES = [
       p_reason: null,
     },
     expectedAdminError: 'diagnostic_pilot_enrollment_invalid',
+  },
+  {
+    name: 'record_diagnostic_pilot_retest_authorization',
+    body: {
+      p_user_id: null,
+      p_cohort_id: null,
+      p_not_before: null,
+      p_not_after: null,
+      p_retest_count: null,
+      p_authorization_reference: null,
+      p_acted_by: null,
+      p_reason: null,
+    },
+    expectedAdminError: 'diagnostic_pilot_retest_authorization_invalid',
   },
 ];
 

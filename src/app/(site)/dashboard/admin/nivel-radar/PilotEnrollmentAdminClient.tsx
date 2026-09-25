@@ -2,13 +2,14 @@
 
 import { useState, type FormEvent } from 'react';
 
-type EnrollmentAction = 'invited' | 'consented' | 'revoked' | 'completed';
+type EnrollmentAction = 'invited' | 'consented' | 'revoked' | 'completed' | 'retest-authorized';
 
 const ACTION_LABELS: Record<EnrollmentAction, string> = {
   invited: 'Registrar invitación',
   consented: 'Confirmar consentimiento',
   revoked: 'Revocar acceso',
   completed: 'Cerrar participación',
+  'retest-authorized': 'Programar retest',
 };
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{12}$/iu;
@@ -18,6 +19,11 @@ const CONSENT_REFERENCE = /^[A-Za-z0-9][A-Za-z0-9._:/-]{2,199}$/u;
 function localDateTimeNow(): string {
   const now = new Date();
   return new Date(now.getTime() - now.getTimezoneOffset() * 60_000).toISOString().slice(0, 16);
+}
+
+function localDateTimeInDays(days: number): string {
+  const future = new Date(Date.now() + days * 86_400_000);
+  return new Date(future.getTime() - future.getTimezoneOffset() * 60_000).toISOString().slice(0, 16);
 }
 
 export default function PilotEnrollmentAdminClient({ consentVersion }: {
@@ -30,11 +36,16 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
   const [consentReference, setConsentReference] = useState('');
   const [consentConfirmed, setConsentConfirmed] = useState(false);
   const [reason, setReason] = useState('');
+  const [retestNotBefore, setRetestNotBefore] = useState('');
+  const [retestNotAfter, setRetestNotAfter] = useState('');
+  const [retestCount, setRetestCount] = useState(1);
+  const [authorizationReference, setAuthorizationReference] = useState('');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<{ kind: 'success' | 'error'; text: string } | null>(null);
 
   const needsConsent = action === 'consented';
-  const needsReason = action === 'revoked' || action === 'completed';
+  const needsRetest = action === 'retest-authorized';
+  const needsReason = action === 'revoked' || action === 'completed' || needsRetest;
   const needsConfiguredConsent = action === 'invited' || needsConsent;
   const configurationBlocked = needsConfiguredConsent && !consentVersion;
 
@@ -45,6 +56,10 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
     setConsentReference('');
     setConsentConfirmed(false);
     setConsentedAt(nextAction === 'consented' ? localDateTimeNow() : '');
+    setRetestNotBefore(nextAction === 'retest-authorized' ? localDateTimeNow() : '');
+    setRetestNotAfter(nextAction === 'retest-authorized' ? localDateTimeInDays(14) : '');
+    setRetestCount(1);
+    setAuthorizationReference('');
   }
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -69,6 +84,18 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
       setMessage({ kind: 'error', text: 'La razón auditable debe tener entre 3 y 500 caracteres.' });
       return;
     }
+    const retestStart = needsRetest ? new Date(retestNotBefore) : null;
+    const retestEnd = needsRetest ? new Date(retestNotAfter) : null;
+    if (needsRetest && (!retestStart || !retestEnd
+      || Number.isNaN(retestStart.getTime()) || Number.isNaN(retestEnd.getTime())
+      || retestStart.getTime() < Date.now() - 300_000
+      || retestEnd.getTime() <= retestStart.getTime()
+      || retestEnd.getTime() > retestStart.getTime() + 90 * 86_400_000
+      || retestCount < 1 || retestCount > 3
+      || !CONSENT_REFERENCE.test(authorizationReference.trim()))) {
+      setMessage({ kind: 'error', text: 'Revisa la ventana, el cupo y la referencia opaca del retest.' });
+      return;
+    }
     if (needsReason && !window.confirm(`¿Confirmas la transición “${ACTION_LABELS[action]}”?`)) return;
 
     const consentIso = consentDate?.toISOString() ?? null;
@@ -89,6 +116,12 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
             consentReference: consentReference.trim(),
           } : {}),
           ...(needsReason ? { reason: reason.trim() } : {}),
+          ...(needsRetest ? {
+            retestNotBefore: retestStart?.toISOString(),
+            retestNotAfter: retestEnd?.toISOString(),
+            retestCount,
+            authorizationReference: authorizationReference.trim(),
+          } : {}),
         }),
       });
       const payload = await response.json().catch(() => null) as {
@@ -108,6 +141,10 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
       setConsentConfirmed(false);
       setConsentedAt('');
       setReason('');
+      setRetestNotBefore('');
+      setRetestNotAfter('');
+      setRetestCount(1);
+      setAuthorizationReference('');
     } catch {
       setMessage({ kind: 'error', text: 'No fue posible conectar con el servidor.' });
     } finally {
@@ -158,6 +195,32 @@ export default function PilotEnrollmentAdminClient({ consentVersion }: {
               <input required type="checkbox" checked={consentConfirmed} onChange={event => setConsentConfirmed(event.target.checked)} />
               Verifiqué que esta persona aceptó la versión vigente y que la referencia identifica el comprobante correspondiente.
             </label>
+          </fieldset>
+        ) : null}
+        {needsRetest ? (
+          <fieldset style={{ display: 'grid', gap: 10, margin: 0, border: '1px solid #e8ddd4', borderRadius: 10, padding: 12 }}>
+            <legend style={{ padding: '0 5px', fontSize: 12, fontWeight: 800 }}>Autorización de retest</legend>
+            <p style={{ margin: 0, color: '#6b7280', fontSize: 12 }}>
+              Sólo para un estudio documentado. La base consumirá un cupo al crear cada nuevo intento y rechazará fechas fuera de la ventana.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 210px), 1fr))', gap: 10 }}>
+              <label style={{ fontSize: 12, fontWeight: 700 }}>
+                Disponible desde
+                <input required type="datetime-local" value={retestNotBefore} onChange={event => setRetestNotBefore(event.target.value)} style={{ boxSizing: 'border-box', display: 'block', width: '100%', marginTop: 5, padding: 10, border: '1px solid #d8cabe', borderRadius: 8 }} />
+              </label>
+              <label style={{ fontSize: 12, fontWeight: 700 }}>
+                Disponible hasta
+                <input required type="datetime-local" value={retestNotAfter} onChange={event => setRetestNotAfter(event.target.value)} style={{ boxSizing: 'border-box', display: 'block', width: '100%', marginTop: 5, padding: 10, border: '1px solid #d8cabe', borderRadius: 8 }} />
+              </label>
+              <label style={{ fontSize: 12, fontWeight: 700 }}>
+                Cupos (1–3)
+                <input required type="number" min={1} max={3} value={retestCount} onChange={event => setRetestCount(Number(event.target.value))} style={{ boxSizing: 'border-box', display: 'block', width: '100%', marginTop: 5, padding: 10, border: '1px solid #d8cabe', borderRadius: 8 }} />
+              </label>
+              <label style={{ fontSize: 12, fontWeight: 700 }}>
+                Referencia opaca del protocolo
+                <input required autoComplete="off" value={authorizationReference} onChange={event => setAuthorizationReference(event.target.value)} placeholder="study:retest:receipt-001" pattern="[A-Za-z0-9][A-Za-z0-9._:/-]{2,199}" style={{ boxSizing: 'border-box', display: 'block', width: '100%', marginTop: 5, padding: 10, border: '1px solid #d8cabe', borderRadius: 8 }} />
+              </label>
+            </div>
           </fieldset>
         ) : null}
         {needsReason ? (

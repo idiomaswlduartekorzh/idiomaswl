@@ -44,7 +44,7 @@ const DELIVERY_CHECKS = {
 };
 const DELIVERY_QUESTIONS = {
   'academic-lead': [
-    'Are unrestricted pilot retests appropriate for the approved reliability study design?',
+    'Are explicitly scheduled pilot retests appropriate for the approved reliability study design?',
     'Is the 90-day production cooldown linguistically and measurement-wise defensible?',
     'Can the reserved bank sustain a 365-day no-repeat window without distorting coverage?',
     'Is the 180-day result validity framed only as WeLearn guidance, never certification?',

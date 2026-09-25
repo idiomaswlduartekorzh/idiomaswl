@@ -141,6 +141,9 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
     if (error instanceof Error && error.message.includes('diagnostic_attempt_cooldown')) {
       return jsonError('RETAKE_NOT_YET_AVAILABLE', 'Tu próximo diagnóstico aún no está disponible.', 429);
     }
+    if (error instanceof Error && error.message.includes('diagnostic_pilot_retest_not_authorized')) {
+      return jsonError('PILOT_RETEST_NOT_AUTHORIZED', 'Este retest piloto requiere una programación vigente.', 403);
+    }
     if (error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY') {
       return jsonError(error.code, 'El banco diagnóstico todavía está en revisión académica.', 503);
     }

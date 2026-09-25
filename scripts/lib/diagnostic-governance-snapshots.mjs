@@ -12,12 +12,16 @@ export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
 export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'config/diagnostic/delivery-policy.json',
   'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql',
+  'supabase/migrations/20260925051500_diagnostic_pilot_retests.sql',
   'src/server/diagnostic/delivery-policy.ts',
   'src/server/diagnostic/start-core.ts',
   'src/server/diagnostic/start.server.ts',
   'src/server/diagnostic/submit.server.ts',
   'src/server/diagnostic/finalize-core.ts',
   'src/server/diagnostic/measurement.ts',
+  'src/server/diagnostic/repository.server.ts',
+  'src/app/api/admin/diagnostic/pilot-enrollments/route.ts',
+  'src/app/(site)/dashboard/admin/nivel-radar/PilotEnrollmentAdminClient.tsx',
   'src/app/(site)/nivel-radar/AdaptiveNivelRadarClient.tsx',
 ];
 

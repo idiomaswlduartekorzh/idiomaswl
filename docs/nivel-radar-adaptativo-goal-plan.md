@@ -244,6 +244,11 @@ Actualizado el 25 de septiembre de 2026:
   Los valores provisionales son 365 días sin repetir contenido, vigencia de 30 días en piloto y
   180 en producción, con cooldown productivo de 90 días. Producción permanece bloqueada hasta
   revisión independiente de liderazgo académico y producto.
+  Los retests del piloto ya no quedan abiertos por tener cooldown cero: una inscripción
+  consentida necesita una ventana administrativa de máximo 90 días, entre uno y tres cupos,
+  referencia opaca y razón. La base consume cada cupo dentro de la transacción de creación y
+  registra autorización y consumo en el historial append-only; revocación o cierre borra el
+  saldo. El panel administrativo prepara esta autorización sin almacenar datos en el navegador.
   Los dos paquetes de esa decisión enumeran evidencia y preguntas específicas por rol; la firma
   queda ligada por una huella compuesta a política, migración, enforcement, cálculo y UI. Un
   reporte agregado distingue pendientes, aprobaciones, cambios solicitados, faltantes e inválidos

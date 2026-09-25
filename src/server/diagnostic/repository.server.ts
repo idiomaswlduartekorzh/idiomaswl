@@ -175,6 +175,47 @@ export async function persistDiagnosticPilotEnrollment(input: {
   return { status: input.action, cohortId: input.cohortId };
 }
 
+export async function persistDiagnosticPilotRetestAuthorization(input: {
+  userId: string;
+  cohortId: string;
+  notBefore: string;
+  notAfter: string;
+  retestCount: number;
+  authorizationReference: string;
+  actedBy: string;
+  reason: string;
+}): Promise<{ status: 'retest-authorized'; cohortId: string; remainingRetests: number }> {
+  const { data, error } = await createAdminClient().rpc('record_diagnostic_pilot_retest_authorization', {
+    p_user_id: input.userId,
+    p_cohort_id: input.cohortId,
+    p_not_before: input.notBefore,
+    p_not_after: input.notAfter,
+    p_retest_count: input.retestCount,
+    p_authorization_reference: input.authorizationReference,
+    p_acted_by: input.actedBy,
+    p_reason: input.reason,
+  });
+  if (error || !data || typeof data !== 'object' || Array.isArray(data)) {
+    const known = [
+      'diagnostic_pilot_retest_authorization_invalid',
+      'diagnostic_pilot_retest_enrollment_invalid',
+    ].find(code => error?.message.includes(code));
+    if (known) throw new Error(known);
+    throw new Error('diagnostic_pilot_retest_authorization_unavailable');
+  }
+  const receipt = data as Record<string, unknown>;
+  if (receipt.status !== 'retest-authorized'
+    || receipt.cohortId !== input.cohortId
+    || receipt.remainingRetests !== input.retestCount) {
+    throw new Error('diagnostic_pilot_retest_authorization_unverified');
+  }
+  return {
+    status: 'retest-authorized',
+    cohortId: input.cohortId,
+    remainingRetests: input.retestCount,
+  };
+}
+
 /**
  * Trusted source for a future provider caller. Authorization is loaded with the
  * writing row and can never be supplied or overridden by a browser request.
@@ -559,7 +600,11 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
   });
   if (error) {
     console.error('[diagnostic] Atomic attempt creation failed:', error.message);
-    const known = ['diagnostic_attempt_active_limit', 'diagnostic_attempt_cooldown']
+    const known = [
+      'diagnostic_attempt_active_limit',
+      'diagnostic_attempt_cooldown',
+      'diagnostic_pilot_retest_not_authorized',
+    ]
       .find(code => error.message.includes(code));
     if (known) throw new Error(known);
     throw new Error('diagnostic_persistence_unavailable');

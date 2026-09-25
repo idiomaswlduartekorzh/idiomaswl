@@ -39,9 +39,12 @@ function passingFetch({ exposePublicTable = false, includeUser = false } = {}) {
     if (url.includes('/rest/v1/rpc/')) {
       if (!isAdmin) return jsonResponse({ code: '42501', message: 'permission denied' }, 403);
       const enrollment = url.endsWith('/record_diagnostic_pilot_enrollment');
+      const retest = url.endsWith('/record_diagnostic_pilot_retest_authorization');
       return jsonResponse({
         code: 'P0001',
-        message: enrollment
+        message: retest
+          ? 'diagnostic_pilot_retest_authorization_invalid'
+          : enrollment
           ? 'diagnostic_pilot_enrollment_invalid'
           : 'diagnostic_deletion_user_required',
       }, 400);
@@ -59,7 +62,7 @@ test('live inspection verifies schema and deny boundaries without collecting row
     endpoint,
     adminKey,
     publicKey,
-    expectedMigration: '20260925044500_diagnostic_pilot_consent_reference.sql',
+    expectedMigration: '20260925051500_diagnostic_pilot_retests.sql',
     userAccessToken: 'user-access-token',
     fetchImpl: passingFetch({ includeUser: true }),
     generatedAt: '2026-09-25T12:00:00.000Z',
@@ -80,7 +83,7 @@ test('inspection fails closed when a diagnostic table becomes browser-readable',
     endpoint,
     adminKey,
     publicKey,
-    expectedMigration: '20260925044500_diagnostic_pilot_consent_reference.sql',
+    expectedMigration: '20260925051500_diagnostic_pilot_retests.sql',
     fetchImpl: passingFetch({ exposePublicTable: true }),
   });
   assert.equal(receipt.decision, 'HOLD');
