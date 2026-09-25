@@ -1,0 +1,488 @@
+{
+  "reportVersion": "diagnostic-bank-readiness-v1",
+  "snapshotDate": "2026-09-24",
+  "releaseReady": false,
+  "note": "Draft counts show editorial progress only. They are not approved, calibrated, or selectable.",
+  "summary": {
+    "requiredObjectiveDecisions": 288,
+    "reservedDraftObjectiveDecisions": 72,
+    "nonReservedDraftObjectiveDecisions": 24,
+    "operationalObjectiveDecisions": 0,
+    "objectiveCellsWithDraftCapacity": 6,
+    "objectiveCellsRequired": 24,
+    "writingDraftPrompts": 24,
+    "writingApprovedPrompts": 0
+  },
+  "objectiveCells": [
+    {
+      "level": "A1",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 6
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "A1",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 12,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "A1",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "A1",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "A2",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 6
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "A2",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "A2",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "A2",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "B1",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "B1",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 12,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "B1",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "B1",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "B2",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "B2",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "B2",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "B2",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "C1",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "C1",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "C1",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "C1",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "C2",
+      "skill": "reading",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "C2",
+      "skill": "listening",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "C2",
+      "skill": "grammar",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    },
+    {
+      "level": "C2",
+      "skill": "vocabulary",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": null
+      },
+      "authored": {
+        "reservedDraftDecisions": 0,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 0
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 12,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": null
+    }
+  ],
+  "writing": [
+    {
+      "level": "A1",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    },
+    {
+      "level": "A2",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    },
+    {
+      "level": "B1",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    },
+    {
+      "level": "B2",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    },
+    {
+      "level": "C1",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    },
+    {
+      "level": "C2",
+      "requiredParallelPrompts": 4,
+      "reservedDraftPrompts": 4,
+      "approvedPrompts": 0
+    }
+  ]
+}

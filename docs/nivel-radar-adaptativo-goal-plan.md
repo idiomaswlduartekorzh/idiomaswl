@@ -62,6 +62,12 @@ Actualizado el 24 de septiembre de 2026:
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
   previamente público; el selector bloquea cualquier contenido que no tenga exposición
   `reserved`, incluso si alguien cambia por error su estado a aprobado.
+- **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–A2 ya
+  tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **72/288
+  decisiones objetivas** y **6/24 celdas** con capacidad editorial de borrador, con claves
+  privadas, racionales de clave y distractores, posiciones equilibradas y estado reservado. El
+  reporte `docs/diagnostic-bank-readiness.json` separa estos avances del banco operativo, que
+  continúa en cero hasta revisión y piloto.
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
