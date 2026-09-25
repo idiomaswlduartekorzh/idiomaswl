@@ -219,14 +219,19 @@ function MCQRenderer({
   answer,
   onAnswer,
   showResult,
+  goethePractice = false,
+  questionNumber,
 }: {
   q: MCQQuestion;
   answer: number | undefined;
   onAnswer: (i: number) => void;
   showResult: boolean;
+  goethePractice?: boolean;
+  questionNumber?: number;
 }) {
   return (
-    <div className="lang-q">
+    <div className={`lang-q${goethePractice ? ' lang-q--goethe' : ''}`}>
+      {goethePractice && questionNumber ? <span className="goethe-question-number">{questionNumber}</span> : null}
       {q.stimulusLabel && <p className="lang-q__label">{q.stimulusLabel}</p>}
       {q.stimulus && <pre className="lang-q__stimulus">{q.stimulus}</pre>}
       {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
@@ -503,6 +508,77 @@ function PassageText({ text }: { text: string }) {
   );
 }
 
+function GoethePassage({ section }: { section: MockSection }) {
+  const text = section.passage ?? '';
+  const blocks = text.trim().split(/\n\n+/);
+
+  if (section.part === 2) {
+    return (
+      <div className="goethe-document goethe-document--directory">
+        <h3 className="goethe-document__title">{blocks[0]}</h3>
+        <div className="goethe-directory">
+          {blocks.slice(1).map((block, index) => {
+            const [label, ...body] = block.split('\n');
+            return (
+              <div className="goethe-directory__row" key={`${label}-${index}`}>
+                <strong>{label}</strong>
+                <p>{body.join(' ')}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  if (section.part === 3) {
+    const [subject = '', ...message] = blocks;
+    return (
+      <div className="goethe-document goethe-document--mail">
+        <div className="goethe-mail__chrome" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+          <b>Neue Nachricht</b>
+        </div>
+        <div className="goethe-mail__meta">
+          <span>An:</span><b>Helferteam</b>
+          <span>Betreff:</span><b>{subject.replace(/^Betreff:\s*/i, '')}</b>
+        </div>
+        <div className="goethe-mail__body">
+          {message.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+        </div>
+      </div>
+    );
+  }
+
+  if (section.part === 4) {
+    return (
+      <div className="goethe-ad-grid">
+        {blocks.map((block, index) => {
+          const [heading = '', ...body] = block.split('\n');
+          const match = heading.match(/^([A-F])\s*·\s*(.*)$/);
+          return (
+            <article className="goethe-ad" key={`${heading}-${index}`}>
+              <span className="goethe-ad__letter">{match?.[1] ?? String.fromCharCode(65 + index)}</span>
+              <h3>{match?.[2] ?? heading}</h3>
+              <p>{body.join(' ')}</p>
+            </article>
+          );
+        })}
+      </div>
+    );
+  }
+
+  return (
+    <article className="goethe-document goethe-document--article">
+      <p className="goethe-document__kicker">Lesetext</p>
+      <h3 className="goethe-document__title">{section.passageTitle ?? section.title}</h3>
+      {blocks.map((paragraph, index) => <p key={index}><PassageText text={paragraph} /></p>)}
+    </article>
+  );
+}
+
 // ── Transcript block (collapsible) ───────────────────────────────────────────
 
 function TranscriptBlock({ transcript }: { transcript: string }) {
@@ -567,9 +643,24 @@ function SectionView({
   showResults: boolean;
   goethePractice?: boolean;
 }) {
+  const skillLabel = GOETHE_SKILL_LABEL[section.skill ?? 'general'];
+  const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
   return (
-    <div className="lang-section">
+    <div className={`lang-section${goethePractice ? ' lang-section--goethe' : ''}`} data-skill={section.skill}>
+      {goethePractice ? (
+        <div className="goethe-sheet-masthead">
+          <div className="goethe-sheet-masthead__primary">
+            <strong>WELEARN · DEUTSCH A2</strong>
+            <strong>{skillLabel}</strong>
+          </div>
+          <div className="goethe-sheet-masthead__secondary">
+            <span>ÜBUNGSSATZ</span>
+            <span>KANDIDATENBLATT</span>
+          </div>
+        </div>
+      ) : null}
       <div className="lang-section__header">
+        {goethePractice ? <p className="goethe-sheet__part">Teil {displayPart}</p> : null}
         <h2 className="lang-section__title">{section.title}</h2>
         <p className="lang-section__instructions">{section.instructions}</p>
       </div>
@@ -582,10 +673,14 @@ function SectionView({
 
       {section.passage && (
         <div className="lang-section__passage">
-          <p className="lang-section__passage-label">📄 {goethePractice ? 'Lesen Sie den Text' : 'Read the text'}</p>
-          <div className="lang-section__passage-text">
-            <PassageText text={section.passage} />
-          </div>
+          <p className="lang-section__passage-label">{goethePractice ? 'Textvorlage' : '📄 Read the text'}</p>
+          {goethePractice ? (
+            <GoethePassage section={section} />
+          ) : (
+            <div className="lang-section__passage-text">
+              <PassageText text={section.passage} />
+            </div>
+          )}
         </div>
       )}
 
@@ -594,7 +689,7 @@ function SectionView({
       )}
 
       <div className="lang-section__questions">
-        {section.questions.map((q: Question) => {
+        {section.questions.map((q: Question, questionIndex) => {
           if (q.type === 'mcq' || q.type === 'dialog') {
             return (
               <MCQRenderer
@@ -603,6 +698,8 @@ function SectionView({
                 answer={mcqAnswers[q.id]}
                 onAnswer={i => onMCQ(q.id, i)}
                 showResult={showResults}
+                goethePractice={goethePractice}
+                questionNumber={section.skill === 'reading' ? ((section.part - 1) * 5) + questionIndex + 1 : undefined}
               />
             );
           }
@@ -1160,7 +1257,7 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
   const unanswered = totalQs - totalAnswered;
 
   return (
-    <div className="prac-shell prac-shell--exam" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <div className={`prac-shell prac-shell--exam${focusedPractice ? ' prac-shell--goethe-a2' : ''}`} style={{ '--exam-color': exam.color } as React.CSSProperties}>
       <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
         <div className="prac-topbar__left">
           <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="prac-topbar__back">{focusedPractice ? 'Práctica A2' : exam.name}</Link>

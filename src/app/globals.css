@@ -5704,6 +5704,393 @@ button {
   padding: 0 1.5rem;
 }
 
+/* ── Goethe A2 · editorial candidate sheets ───────────────────────────────
+   The visual language follows printed exam materials without reproducing
+   Goethe artwork or branding. Content and identity remain WeLearn originals. */
+.prac-shell--goethe-a2 {
+  --goethe-paper: #fff;
+  --goethe-ink: #202020;
+  --goethe-muted: #666;
+  --goethe-rule: #b9b9b9;
+  --goethe-band: #d9d9d9;
+  background: #e7e7e4;
+  color: var(--goethe-ink);
+}
+.prac-shell--goethe-a2 .prac-topbar {
+  background: #17233d;
+  border-bottom-color: #b6c63c;
+}
+.prac-shell--goethe-a2 .lang-section-tabs {
+  top: 116px;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  background: rgba(245, 245, 242, 0.96);
+  border-bottom-color: #c9c9c5;
+  backdrop-filter: blur(14px);
+}
+.prac-shell--goethe-a2 .lang-section-tab {
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: #555;
+}
+.prac-shell--goethe-a2 .lang-section-tab--active {
+  background: #17233d;
+  color: #fff;
+}
+.prac-shell--goethe-a2 .ielts-exam-body {
+  width: min(1040px, 100%);
+  padding: 2rem clamp(0.75rem, 3vw, 2rem) 5rem;
+}
+.prac-shell--goethe-a2 .lang-section--goethe {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: clamp(2.25rem, 6vw, 4.75rem) clamp(1.25rem, 7vw, 5rem);
+  background: var(--goethe-paper);
+  border: 1px solid #d0d0cc;
+  border-radius: 2px;
+  box-shadow: 0 18px 46px rgba(35, 35, 30, 0.13);
+  color: var(--goethe-ink);
+}
+.goethe-sheet-masthead {
+  width: min(460px, 82%);
+  margin: 0 auto clamp(2.5rem, 7vw, 4.5rem);
+  color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.63rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.goethe-sheet-masthead__primary,
+.goethe-sheet-masthead__secondary {
+  display: grid;
+  grid-template-columns: 1.55fr 0.85fr;
+  min-height: 1.1rem;
+  align-items: center;
+}
+.goethe-sheet-masthead__primary {
+  background: #cdcdcd;
+  font-weight: 800;
+}
+.goethe-sheet-masthead__secondary {
+  background: #e5e5e5;
+  color: #555;
+}
+.goethe-sheet-masthead :is(strong, span) {
+  padding: 0.14rem 0.55rem;
+  text-align: center;
+}
+.lang-section--goethe .lang-section__header {
+  margin-bottom: 1.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.goethe-sheet__part {
+  margin: 0 0 1.35rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #151515;
+}
+.lang-section--goethe .lang-section__title {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #242424;
+}
+.lang-section--goethe .lang-section__instructions {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #595959;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.lang-section--goethe .lang-section__passage {
+  margin: 2.1rem 0 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.lang-section--goethe .lang-section__passage-label {
+  margin: 0 0 0.55rem;
+  color: #777;
+  font-size: 0.61rem;
+  letter-spacing: 0.14em;
+}
+.goethe-document {
+  border: 1px solid #8d8d8d;
+  background: #fff;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.goethe-document__title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  line-height: 1.25;
+}
+.goethe-document__kicker {
+  margin: 0 0 0.3rem;
+  color: #777;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.goethe-document--article {
+  padding: clamp(1.6rem, 4vw, 2.8rem);
+}
+.goethe-document--article .goethe-document__title {
+  margin-bottom: 1.6rem;
+}
+.goethe-document--article > p:not(.goethe-document__kicker) {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+.goethe-document--directory {
+  padding: clamp(1.5rem, 5vw, 3.25rem);
+  box-shadow: 6px 7px 0 #e2e2df;
+}
+.goethe-document--directory .goethe-document__title {
+  margin-bottom: clamp(1.8rem, 5vw, 3rem);
+}
+.goethe-directory {
+  display: grid;
+  gap: 1.45rem;
+}
+.goethe-directory__row {
+  display: grid;
+  grid-template-columns: minmax(86px, 0.72fr) 3fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+.goethe-directory__row strong {
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+.goethe-directory__row p {
+  margin: 0;
+  color: #525252;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+.goethe-document--mail {
+  overflow: hidden;
+  border-color: #9b9b9b;
+  box-shadow: 5px 6px 0 #e5e5e2;
+}
+.goethe-mail__chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.34rem;
+  height: 2rem;
+  padding: 0 0.7rem;
+  border-bottom: 1px solid #aaa;
+  background: linear-gradient(#eeeeec, #d7d7d3);
+}
+.goethe-mail__chrome span {
+  width: 0.48rem;
+  height: 0.48rem;
+  border: 1px solid #9a9a96;
+  border-radius: 50%;
+  background: #fafafa;
+}
+.goethe-mail__chrome b {
+  margin-left: 0.4rem;
+  color: #555;
+  font-size: 0.63rem;
+}
+.goethe-mail__meta {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 0;
+  margin: 0.75rem;
+  border: 1px solid #b8b8b4;
+  border-bottom: 0;
+  font-size: 0.7rem;
+}
+.goethe-mail__meta :is(span, b) {
+  min-height: 1.7rem;
+  padding: 0.35rem 0.55rem;
+  border-bottom: 1px solid #b8b8b4;
+}
+.goethe-mail__meta span {
+  background: #ececea;
+  color: #555;
+}
+.goethe-mail__body {
+  margin: 0.75rem;
+  padding: clamp(1.2rem, 4vw, 2.15rem);
+  border: 1px solid #b8b8b4;
+  font-size: 0.82rem;
+  line-height: 1.48;
+}
+.goethe-mail__body p {
+  margin: 0 0 0.9rem;
+  white-space: pre-wrap;
+}
+.goethe-mail__body p:last-child { margin-bottom: 0; }
+.goethe-ad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+.goethe-ad {
+  position: relative;
+  min-height: 150px;
+  padding: 1.2rem 1.1rem 1rem 3.2rem;
+  border: 1px solid #8e8e8e;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.goethe-ad__letter {
+  position: absolute;
+  top: 1.05rem;
+  left: 1rem;
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid #444;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+.goethe-ad h3 {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.025em;
+}
+.goethe-ad p {
+  margin: 0;
+  color: #4f4f4f;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+.lang-section--goethe .lang-section__questions {
+  gap: 0;
+  border-top: 1px solid #bdbdbd;
+}
+.lang-section--goethe .lang-q {
+  position: relative;
+  padding: 1.2rem 0 1.25rem 3rem;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 0;
+  background: #fff;
+  color: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lang-section--goethe .lang-q:last-child { border-bottom: 0; }
+.goethe-question-number {
+  position: absolute;
+  top: 1.18rem;
+  left: 0;
+  width: 2rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.lang-section--goethe .lang-q__text {
+  margin-bottom: 0.75rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.lang-section--goethe .lang-q__options {
+  gap: 0.3rem;
+}
+.lang-section--goethe .lang-opt {
+  gap: 0.65rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: #fff;
+  color: #303030;
+  font-size: 0.82rem;
+}
+.lang-section--goethe .lang-opt:hover {
+  border-color: #9a9a9a;
+  background: #f5f5f2;
+}
+.lang-section--goethe .lang-opt--selected {
+  border-color: #17233d;
+  background: #edf1f7;
+}
+.lang-section--goethe .lang-opt__letter {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #555;
+  border-radius: 0;
+  font-size: 0.66rem;
+}
+.lang-section--goethe .lang-q--write,
+.lang-section--goethe .lang-q--speak {
+  padding-left: 0;
+}
+.lang-section--goethe .lang-q__stimulus,
+.lang-section--goethe .lang-speak__cuecard {
+  border: 1px solid #9d9d9d;
+  border-radius: 1px;
+  background: #f7f7f5;
+  color: #262626;
+}
+.lang-section--goethe .lang-write__area,
+.lang-section--goethe .lang-speak__notes-area {
+  border: 1px solid #aaa;
+  border-radius: 1px;
+  background-color: #fff;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 1.85rem, #e0e0dd 1.9rem);
+  color: #202020;
+  line-height: 1.9rem;
+}
+.lang-section--goethe .lang-speak__badge {
+  border-radius: 2px;
+  background: #e4e4e1;
+  color: #303030;
+}
+.lang-section--goethe .lang-speak__image-card {
+  border-radius: 1px;
+  box-shadow: 4px 5px 0 #e4e4e1;
+}
+.prac-shell--goethe-a2 .ielts-exam-footer {
+  width: min(900px, 100%);
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .prac-shell--goethe-a2 .lang-section-tabs { top: 116px; }
+  .prac-shell--goethe-a2 .ielts-exam-body { padding-inline: 0.55rem; }
+  .prac-shell--goethe-a2 .lang-section--goethe {
+    padding: 1.8rem 1.05rem 2.2rem;
+    box-shadow: 0 10px 28px rgba(35, 35, 30, 0.12);
+  }
+  .goethe-sheet-masthead {
+    width: 94%;
+    margin-bottom: 2.5rem;
+    font-size: 0.52rem;
+  }
+  .goethe-sheet-masthead :is(strong, span) { padding-inline: 0.3rem; }
+  .goethe-document--article,
+  .goethe-document--directory { padding: 1.25rem 1rem; }
+  .goethe-directory { gap: 1.1rem; }
+  .goethe-directory__row {
+    grid-template-columns: 78px 1fr;
+    gap: 0.75rem;
+  }
+  .goethe-directory__row :is(strong, p) { font-size: 0.7rem; }
+  .goethe-mail__body { padding: 1rem; font-size: 0.74rem; }
+  .goethe-ad-grid { grid-template-columns: 1fr; }
+  .goethe-ad { min-height: 0; }
+  .lang-section--goethe .lang-q { padding-left: 2.35rem; }
+  .lang-section--goethe .lang-q--write,
+  .lang-section--goethe .lang-q--speak { padding-left: 0; }
+}
+
 @media (max-width: 640px) {
   .lang-section-tabs {
     flex-wrap: nowrap;

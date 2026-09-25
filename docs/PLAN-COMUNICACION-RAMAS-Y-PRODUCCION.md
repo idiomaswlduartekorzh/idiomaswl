@@ -86,6 +86,18 @@ muro de pago, redirección heredada de A1 y cierre efectivo de Hören y de las r
 examen completo. Los diez simulacros A2 aparecen bloqueados en el catálogo de
 Exámenes con audio pendiente.
 
+Actualización editorial del 24 de septiembre: `codex/goethe-a2-editorial-ui`
+rediseña exclusivamente la práctica A2 como hojas de candidato WeLearn, sin usar
+logos ni páginas oficiales. Lesen distingue visualmente artículo, directorio,
+correo y anuncios; las preguntas recuperan numeración y casillas A/B/C; Schreiben
+y Sprechen comparten la misma jerarquía de Teil y papel editorial. Estado:
+`DESPLEGADO`. Vercel publicó desde `main` el mismo commit que contiene este registro
+y el smoke público se ejecutó sobre
+`/examenes/goethe/practica/a2-2?mode=practice&skill=reading` y `skill=writing`.
+Validaciones: 21/21 harness A2, guardianes Goethe y catálogo, TypeScript, build
+Webpack de 2.584 páginas y recorridos visuales desktop y móvil sin desbordamiento.
+No cambian respuestas, scoring, pagos ni los bloqueos de Hören y examen completo.
+
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
