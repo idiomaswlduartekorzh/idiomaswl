@@ -226,7 +226,7 @@ Actualizado el 24 de septiembre de 2026:
   durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  commit `b8ba9216` quedó verificado con **227/227 pruebas**, TypeScript sin errores y un build de
+  commit `aa2b1864` quedó verificado con **229/229 pruebas**, TypeScript sin errores y un build de
   **2.564 páginas estáticas**; el recibo privado se registró por SHA-256 y el gate de calidad ya
   pasa sobre la misma huella de fuente.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
@@ -248,7 +248,7 @@ Actualizado el 24 de septiembre de 2026:
   confirmación ligada a su UUID, ya cubre inicio, reanudación, audio privado, etapas objetivas,
   escritura, revisión humana, perfil de cinco habilidades y borrado verificado; no se ejecutó
   porque este entorno carece de credenciales y banco piloto aprobado. El último corte local
-  ejecutó **227 pruebas** y
+  ejecutó **229 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.
