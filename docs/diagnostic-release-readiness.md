@@ -3,10 +3,10 @@
 Estado actual: **HOLD**.
 
 Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
-`afd483b7`; **245/245 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
+`e23abac3`; **250/250 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
 historias E2E** pasaron. La huella de fuente es
-`e3febff0ea09d5302f05fd47a5a737854afecf3aba896752d3cab6b711c07916` y el recibo privado quedó
-fijado por `2fcf7d8941757796f8f7f0ba8d74b4e1b73bc11d78d696489e4af78b34d8c458`.
+`4f561cf5b7ac43c795e16346386080f6d69f68a462bc42a7650a37ca98a20e29` y el recibo privado quedó
+fijado por `de219cbbc15f9a7029d72710223d150d817fcda46b693f6b52d3b8d9ea3723d4`.
 Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
 aprobación académica, de privacidad o psicométrica.
 
@@ -181,6 +181,13 @@ audio, omisión, error/reintento, escritura, resultado con incertidumbre y cierr
 simulan en el navegador, por lo que esta evidencia prueba el contrato UI pero no sustituye el
 recorrido autenticado contra Supabase real. Registrar esta evidencia no puede aprobar contenido,
 audio, escritura, retención ni piloto.
+
+Para que esta evidencia sea repetible en la máquina local después de la suite completa, el build
+de verificación limita su concurrencia a dos CPU, desactiva compilaciones paralelas y activa las
+optimizaciones de memoria de webpack. Esa configuración solo existe con
+`DIAGNOSTIC_QUALITY_BUILD=true`, que fija el propio runner; no altera builds ordinarios ni el
+runtime. `next.config.ts` forma parte de la huella diagnóstica, por lo que cambiar esta estrategia
+invalida el recibo.
 
 ### Revisión humana de gobierno
 
