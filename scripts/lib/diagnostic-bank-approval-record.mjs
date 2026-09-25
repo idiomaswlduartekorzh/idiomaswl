@@ -63,6 +63,11 @@ export function buildDiagnosticBankApprovalProposal({
     || ((compiled.objectiveApprovals?.length ?? 0) + (compiled.writingApprovals?.length ?? 0) < 1)) {
     throw new Error('Only complete approval decisions can form a diagnostic bank proposal.');
   }
+  const compiledApprovals = [...(compiled.objectiveApprovals ?? []), ...(compiled.writingApprovals ?? [])];
+  if (compiledApprovals.some(approval => !SHA256.test(approval.contentSha256 ?? '')
+    || !SHA256.test(approval.reviewBasisSha256 ?? ''))) {
+    throw new Error('Diagnostic bank approvals must bind content and the current review basis.');
+  }
   const receiptSetSha256 = hash([...receiptReferences].sort((left, right) => left.file.localeCompare(right.file)));
   const proposal = {
     proposalVersion: 'diagnostic-bank-approval-proposal-v1',

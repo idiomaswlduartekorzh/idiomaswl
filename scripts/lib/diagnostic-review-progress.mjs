@@ -2,6 +2,7 @@ import { isDeepStrictEqual } from 'node:util';
 
 import {
   createDiagnosticReviewPacket,
+  reviewBasisSha256,
   reviewContentSha256,
   validateCompletedDiagnosticReviewPacket,
 } from './diagnostic-review-workflow.mjs';
@@ -45,6 +46,7 @@ function expectedEntryMap(records, skill) {
       itemId,
       contentVersion,
       contentSha256: reviewContentSha256(kind, record),
+      reviewBasisSha256: reviewBasisSha256(kind, record),
     }];
   }));
 }
@@ -62,6 +64,7 @@ function validateExactEntries(packet, expected, expectedLevel, expectedSkill) {
     if (!current) throw new Error('ENTRY_SET_MISMATCH');
     if (entry.contentVersion !== current.contentVersion) throw new Error('STALE_CONTENT_VERSION');
     if (entry.contentSha256 !== current.contentSha256) throw new Error('STALE_CONTENT_HASH');
+    if (entry.reviewBasisSha256 !== current.reviewBasisSha256) throw new Error('STALE_REVIEW_BASIS');
     if (entry.level !== expectedLevel || entry.skill !== expectedSkill) throw new Error('WRONG_CELL');
   }
 }
@@ -79,14 +82,20 @@ function validateCurrentTemplate(packet, { packageId, level, skill, role, record
     objectiveCandidates: skill === 'writing' ? [] : records,
     writingCandidates: skill === 'writing' ? records : [],
   });
-  const expectedMaterial = new Map(expectedPacket.entries.map(entry => [
-    identity(entry.kind, entry.itemId), entry.material,
+  const expectedTemplateEntries = new Map(expectedPacket.entries.map(entry => [
+    identity(entry.kind, entry.itemId), { material: entry.material, checklist: entry.checklist },
   ]));
   if (packet.entries.some(entry => !isDeepStrictEqual(
     entry.material,
-    expectedMaterial.get(identity(entry.kind, entry.itemId)),
+    expectedTemplateEntries.get(identity(entry.kind, entry.itemId))?.material,
   ))) {
     throw new Error('REVIEW_MATERIAL_MISMATCH');
+  }
+  if (packet.entries.some(entry => !isDeepStrictEqual(
+    entry.checklist,
+    expectedTemplateEntries.get(identity(entry.kind, entry.itemId))?.checklist,
+  ))) {
+    throw new Error('STALE_REVIEW_BASIS');
   }
   if (packet.reviewer?.id !== '' || packet.reviewer?.attestsIndependentHumanReview !== false
     || packet.reviewer?.affiliation !== '' || packet.reviewedAt !== '') {
@@ -121,6 +130,7 @@ function safeValidationCode(error) {
   const message = error instanceof Error ? error.message : '';
   if (message.includes('content version mismatch')) return 'STALE_CONTENT_VERSION';
   if (message.includes('content hash mismatch')) return 'STALE_CONTENT_HASH';
+  if (message.includes('review basis mismatch')) return 'STALE_REVIEW_BASIS';
   if (message.includes('review material mismatch')) return 'REVIEW_MATERIAL_MISMATCH';
   if (message.includes('review cell metadata mismatch')) return 'WRONG_CELL';
   if (message.includes('duplicate review entry')) return 'DUPLICATE_ENTRY';

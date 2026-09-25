@@ -1,4 +1,10 @@
-import { createHash } from 'node:crypto';
+import { auditDiagnosticItemCues } from '../../src/server/diagnostic/bank/cue-audit.ts';
+import {
+  diagnosticObjectiveContentSha256,
+  diagnosticObjectiveReviewBasisSha256,
+  diagnosticWritingContentSha256,
+  diagnosticWritingReviewBasisSha256,
+} from '../../src/server/diagnostic/bank/release.ts';
 
 export const DIAGNOSTIC_REVIEW_ROLES = [
   'linguistic-reviewer',
@@ -17,6 +23,7 @@ const CHECKLISTS = {
     'constructAligned',
     'keyUniquelyDefensible',
     'distractorsPlausibleButWrong',
+    'answerCueRiskReviewed',
     'difficultyAndBiasReviewed',
   ],
   'audio-alignment-reviewer': [
@@ -26,6 +33,10 @@ const CHECKLISTS = {
     'audioQualityDoesNotConfoundLevel',
   ],
 };
+
+function checklistFor(role, kind) {
+  return CHECKLISTS[role].filter(key => kind === 'objective' || key !== 'answerCueRiskReviewed');
+}
 
 function canonicalize(value) {
   if (Array.isArray(value)) return value.map(canonicalize);
@@ -38,10 +49,15 @@ function canonicalize(value) {
 }
 
 export function reviewContentSha256(kind, record) {
-  const content = kind === 'objective'
-    ? { publicItem: record.publicItem, scoring: record.scoring, rationale: record.rationale, source: record.source }
-    : { publicPrompt: record.publicPrompt, source: record.source };
-  return createHash('sha256').update(JSON.stringify(canonicalize(content))).digest('hex');
+  return kind === 'objective'
+    ? diagnosticObjectiveContentSha256(record)
+    : diagnosticWritingContentSha256(record);
+}
+
+export function reviewBasisSha256(kind, record) {
+  return kind === 'objective'
+    ? diagnosticObjectiveReviewBasisSha256(record)
+    : diagnosticWritingReviewBasisSha256(record);
 }
 
 function objectivePayload(record, role) {
@@ -51,7 +67,14 @@ function objectivePayload(record, role) {
     source: record.source,
     warnings: record.warnings ?? [],
   };
-  if (role === 'assessment-reviewer') return { ...common, scoring: record.scoring, rationale: record.rationale };
+  if (role === 'assessment-reviewer') {
+    return {
+      ...common,
+      scoring: record.scoring,
+      rationale: record.rationale,
+      adversarialCueAudit: auditDiagnosticItemCues(record),
+    };
+  }
   if (role === 'audio-alignment-reviewer') {
     return {
       publicItem: record.publicItem,
@@ -81,7 +104,6 @@ export function createDiagnosticReviewPacket({
   if (!DIAGNOSTIC_REVIEW_ROLES.includes(role)) throw new Error(`unsupported diagnostic review role: ${role}`);
   if (!packetId?.trim()) throw new Error('review packet id is required');
   if (Number.isNaN(Date.parse(generatedAt))) throw new Error('review packet generation date is invalid');
-  const checklist = CHECKLISTS[role];
   const objective = objectiveCandidates
     .filter(record => record.exposure === 'reserved' && record.status === 'reserved' && appliesToRole('objective', record, role))
     .map(record => ({
@@ -89,11 +111,12 @@ export function createDiagnosticReviewPacket({
       itemId: record.publicItem.id,
       contentVersion: record.publicItem.contentVersion,
       contentSha256: reviewContentSha256('objective', record),
+      reviewBasisSha256: reviewBasisSha256('objective', record),
       level: record.publicItem.levelCandidate,
       skill: record.publicItem.skill,
       material: objectivePayload(record, role),
       decision: 'PENDING',
-      checklist: Object.fromEntries(checklist.map(key => [key, null])),
+      checklist: Object.fromEntries(checklistFor(role, 'objective').map(key => [key, null])),
       comments: '',
     }));
   const writing = writingCandidates
@@ -103,15 +126,16 @@ export function createDiagnosticReviewPacket({
       itemId: record.publicPrompt.id,
       contentVersion: record.publicPrompt.contentVersion,
       contentSha256: reviewContentSha256('writing', record),
+      reviewBasisSha256: reviewBasisSha256('writing', record),
       level: record.publicPrompt.levelCandidate,
       skill: 'writing',
       material: writingPayload(record),
       decision: 'PENDING',
-      checklist: Object.fromEntries(checklist.map(key => [key, null])),
+      checklist: Object.fromEntries(checklistFor(role, 'writing').map(key => [key, null])),
       comments: '',
     }));
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     packetId,
     role,
     generatedAt: new Date(generatedAt).toISOString(),
@@ -122,6 +146,9 @@ export function createDiagnosticReviewPacket({
       'Review every assigned entry against the checklist without consulting another role’s decision.',
       'Set every checklist field to true and decision to APPROVED only when the current immutable content is acceptable.',
       'Use CHANGES_REQUESTED with a specific comment when any criterion fails; never edit item content inside this receipt.',
+      ...(role === 'assessment-reviewer'
+        ? ['For objective entries, inspect every adversarial cue finding; an automated flag requires judgment, not automatic rejection.']
+        : []),
       'Enter a stable reviewer ID, review date, and attestIndependentHumanReview=true before compilation.',
     ],
     entries: [...objective, ...writing],
@@ -137,7 +164,7 @@ function candidateMaps(objectiveCandidates, writingCandidates) {
 
 function validatePacketHeader(packet) {
   if (!packet || typeof packet !== 'object' || Array.isArray(packet)) throw new Error('review receipt must be an object');
-  if (packet.schemaVersion !== 1) throw new Error('unsupported diagnostic review receipt schema');
+  if (packet.schemaVersion !== 2) throw new Error('unsupported diagnostic review receipt schema');
   if (!DIAGNOSTIC_REVIEW_ROLES.includes(packet.role)) throw new Error('review receipt role is invalid');
   if (!packet.reviewer?.id?.trim()) throw new Error(`${packet.packetId ?? 'packet'}: reviewer id is required`);
   if (packet.reviewer.attestsIndependentHumanReview !== true) throw new Error(`${packet.packetId}: independent human review must be attested`);
@@ -160,6 +187,7 @@ export function validateCompletedDiagnosticReviewPacket(packet, objectiveCandida
     const contentVersion = entry.kind === 'objective' ? record.publicItem.contentVersion : record.publicPrompt.contentVersion;
     if (entry.contentVersion !== contentVersion) throw new Error(`${identity}: content version mismatch`);
     if (entry.contentSha256 !== reviewContentSha256(entry.kind, record)) throw new Error(`${identity}: content hash mismatch`);
+    if (entry.reviewBasisSha256 !== reviewBasisSha256(entry.kind, record)) throw new Error(`${identity}: review basis mismatch`);
     const expectedLevel = entry.kind === 'objective' ? record.publicItem.levelCandidate : record.publicPrompt.levelCandidate;
     const expectedSkill = entry.kind === 'objective' ? record.publicItem.skill : 'writing';
     if (entry.level !== expectedLevel || entry.skill !== expectedSkill) {
@@ -172,8 +200,10 @@ export function validateCompletedDiagnosticReviewPacket(packet, objectiveCandida
       throw new Error(`${identity}: review material mismatch`);
     }
     if (!['APPROVED', 'CHANGES_REQUESTED'].includes(entry.decision)) throw new Error(`${identity}: decision is not complete`);
-    const expectedChecklist = CHECKLISTS[packet.role];
-    if (!entry.checklist || expectedChecklist.some(key => typeof entry.checklist[key] !== 'boolean')) {
+    const expectedChecklist = checklistFor(packet.role, entry.kind);
+    if (!entry.checklist
+      || JSON.stringify(Object.keys(entry.checklist).sort()) !== JSON.stringify([...expectedChecklist].sort())
+      || expectedChecklist.some(key => typeof entry.checklist[key] !== 'boolean')) {
       throw new Error(`${identity}: checklist is incomplete`);
     }
     if (entry.decision === 'APPROVED' && expectedChecklist.some(key => entry.checklist[key] !== true)) {
@@ -187,6 +217,7 @@ export function validateCompletedDiagnosticReviewPacket(packet, objectiveCandida
       itemId: entry.itemId,
       contentVersion,
       contentSha256: entry.contentSha256,
+      reviewBasisSha256: entry.reviewBasisSha256,
       skill: entry.kind === 'objective' ? record.publicItem.skill : 'writing',
       decision: entry.decision,
       reviewedAt: new Date(packet.reviewedAt).toISOString(),
@@ -224,7 +255,9 @@ export function compileDiagnosticApprovals(validatedSignatures) {
       continue;
     }
     const [first] = signatures;
-    if (signatures.some(signature => signature.contentVersion !== first.contentVersion || signature.contentSha256 !== first.contentSha256)) {
+    if (signatures.some(signature => signature.contentVersion !== first.contentVersion
+      || signature.contentSha256 !== first.contentSha256
+      || signature.reviewBasisSha256 !== first.reviewBasisSha256)) {
       throw new Error(`${identity}: reviewers signed different content`);
     }
     const roles = requiredRoles(first);
@@ -241,6 +274,7 @@ export function compileDiagnosticApprovals(validatedSignatures) {
       itemId: first.itemId,
       contentVersion: first.contentVersion,
       contentSha256: first.contentSha256,
+      reviewBasisSha256: first.reviewBasisSha256,
       reviewedAt: relevant.map(signature => signature.reviewedAt).sort().at(-1),
       reviewers: relevant.map(signature => signature.reviewer),
     };

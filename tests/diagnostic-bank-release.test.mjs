@@ -4,7 +4,9 @@ import test from 'node:test';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 import {
   diagnosticObjectiveContentSha256,
+  diagnosticObjectiveReviewBasisSha256,
   diagnosticWritingContentSha256,
+  diagnosticWritingReviewBasisSha256,
   releaseApprovedObjectiveBank,
   releaseApprovedWritingBank,
 } from '../src/server/diagnostic/bank/release.ts';
@@ -22,7 +24,9 @@ test('promotes only an immutable objective candidate with independent required r
   const record = ENGLISH_DIAGNOSTIC_READING_CANDIDATES[0];
   const approval = {
     itemId: record.publicItem.id, contentVersion: record.publicItem.contentVersion,
-    contentSha256: diagnosticObjectiveContentSha256(record), reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
+    contentSha256: diagnosticObjectiveContentSha256(record),
+    reviewBasisSha256: diagnosticObjectiveReviewBasisSha256(record),
+    reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
   };
   const released = releaseApprovedObjectiveBank([record], manifest([approval]));
   assert.equal(released.length, 1);
@@ -36,15 +40,19 @@ test('fails closed for changed content, duplicate reviewers and previously publi
   const record = ENGLISH_DIAGNOSTIC_READING_CANDIDATES[0];
   const base = {
     itemId: record.publicItem.id, contentVersion: record.publicItem.contentVersion,
-    contentSha256: diagnosticObjectiveContentSha256(record), reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
+    contentSha256: diagnosticObjectiveContentSha256(record),
+    reviewBasisSha256: diagnosticObjectiveReviewBasisSha256(record),
+    reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
   };
   assert.throws(() => releaseApprovedObjectiveBank([record], manifest([{ ...base, contentSha256: '0'.repeat(64) }])), /content hash mismatch/);
+  assert.throws(() => releaseApprovedObjectiveBank([record], manifest([{ ...base, reviewBasisSha256: '0'.repeat(64) }])), /review basis mismatch/);
   assert.throws(() => releaseApprovedObjectiveBank([record], manifest([{ ...base, reviewers: [reviewers[0], { ...reviewers[1], id: reviewers[0].id }] }])), /independent identities/);
   const { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } = await import('../src/server/diagnostic/bank/listening.en.ts');
   const listening = ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES[0];
   assert.throws(() => releaseApprovedObjectiveBank([listening], manifest([{
     itemId: listening.publicItem.id, contentVersion: listening.publicItem.contentVersion,
-    contentSha256: diagnosticObjectiveContentSha256(listening), reviewedAt: base.reviewedAt,
+    contentSha256: diagnosticObjectiveContentSha256(listening),
+    reviewBasisSha256: diagnosticObjectiveReviewBasisSha256(listening), reviewedAt: base.reviewedAt,
     reviewers: [...reviewers, { id: 'audio-1', role: 'audio-alignment-reviewer' }],
   }])), /exposed content cannot enter/);
 });
@@ -53,7 +61,9 @@ test('writing promotion binds the prompt hash and two review roles', () => {
   const record = ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES[0];
   const approval = {
     itemId: record.publicPrompt.id, contentVersion: record.publicPrompt.contentVersion,
-    contentSha256: diagnosticWritingContentSha256(record), reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
+    contentSha256: diagnosticWritingContentSha256(record),
+    reviewBasisSha256: diagnosticWritingReviewBasisSha256(record),
+    reviewedAt: '2026-09-25T12:00:00.000Z', reviewers,
   };
   const released = releaseApprovedWritingBank([record], manifest([], [approval]));
   assert.equal(released[0].status, 'pilot');

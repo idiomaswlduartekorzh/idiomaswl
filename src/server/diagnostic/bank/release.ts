@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 
 import type { DiagnosticWritingPromptRecord } from '../../../lib/diagnostic/writing.ts';
 import type { DiagnosticBankRecord } from '../types.ts';
+import { auditDiagnosticItemCues, diagnosticReviewBasisSha256 } from './cue-audit.ts';
 
 export type DiagnosticReviewRole = 'linguistic-reviewer' | 'assessment-reviewer' | 'audio-alignment-reviewer';
 
@@ -9,6 +10,7 @@ export interface DiagnosticApproval {
   itemId: string;
   contentVersion: string;
   contentSha256: string;
+  reviewBasisSha256: string;
   reviewedAt: string;
   reviewers: readonly { id: string; role: DiagnosticReviewRole }[];
 }
@@ -42,6 +44,18 @@ export function diagnosticWritingContentSha256(record: DiagnosticWritingPromptRe
   return sha256({ publicPrompt: record.publicPrompt, source: record.source });
 }
 
+export function diagnosticObjectiveReviewBasisSha256(record: DiagnosticBankRecord): string {
+  return diagnosticReviewBasisSha256(
+    diagnosticObjectiveContentSha256(record),
+    'objective',
+    auditDiagnosticItemCues(record),
+  );
+}
+
+export function diagnosticWritingReviewBasisSha256(record: DiagnosticWritingPromptRecord): string {
+  return diagnosticReviewBasisSha256(diagnosticWritingContentSha256(record), 'writing');
+}
+
 function validateApproval(
   approval: DiagnosticApproval,
   requiredRoles: readonly DiagnosticReviewRole[],
@@ -49,6 +63,7 @@ function validateApproval(
   const errors: string[] = [];
   if (!approval.itemId || !approval.contentVersion) errors.push('item and content version are required');
   if (!/^[a-f0-9]{64}$/.test(approval.contentSha256)) errors.push(`${approval.itemId}: invalid content hash`);
+  if (!/^[a-f0-9]{64}$/.test(approval.reviewBasisSha256)) errors.push(`${approval.itemId}: invalid review basis hash`);
   if (Number.isNaN(Date.parse(approval.reviewedAt))) errors.push(`${approval.itemId}: invalid review date`);
   if (new Set(approval.reviewers.map(reviewer => reviewer.id)).size !== approval.reviewers.length) {
     errors.push(`${approval.itemId}: reviewers must be independent identities`);
@@ -81,6 +96,7 @@ export function releaseApprovedObjectiveBank(
     if (record.status !== 'reserved' || record.review.status !== 'draft') errors.push(`${approval.itemId}: candidate is not an unapproved reserved draft`);
     if (record.publicItem.contentVersion !== approval.contentVersion) errors.push(`${approval.itemId}: content version mismatch`);
     if (diagnosticObjectiveContentSha256(record) !== approval.contentSha256) errors.push(`${approval.itemId}: content hash mismatch`);
+    if (diagnosticObjectiveReviewBasisSha256(record) !== approval.reviewBasisSha256) errors.push(`${approval.itemId}: review basis mismatch`);
     if (errors.length) throw new Error(errors.join('; '));
     return {
       ...record,
@@ -111,6 +127,7 @@ export function releaseApprovedWritingBank(
     if (record.status !== 'reserved' || record.review.status !== 'draft') errors.push(`${approval.itemId}: prompt is not an unapproved reserved draft`);
     if (record.publicPrompt.contentVersion !== approval.contentVersion) errors.push(`${approval.itemId}: content version mismatch`);
     if (diagnosticWritingContentSha256(record) !== approval.contentSha256) errors.push(`${approval.itemId}: content hash mismatch`);
+    if (diagnosticWritingReviewBasisSha256(record) !== approval.reviewBasisSha256) errors.push(`${approval.itemId}: review basis mismatch`);
     if (errors.length) throw new Error(errors.join('; '));
     return {
       ...record,

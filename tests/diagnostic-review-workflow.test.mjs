@@ -67,7 +67,11 @@ test('role packets expose only the evidence each independent reviewer needs', ()
   assert.equal(linguistic.entries.length, 2);
   assert.equal('scoring' in linguistic.entries[0].material, false);
   assert.equal('rationale' in linguistic.entries[0].material, false);
+  assert.equal('adversarialCueAudit' in linguistic.entries[0].material, false);
   assert.equal('scoring' in assessment.entries[0].material, true);
+  assert.equal('adversarialCueAudit' in assessment.entries[0].material, true);
+  assert.equal('answerCueRiskReviewed' in assessment.entries[0].checklist, true);
+  assert.equal('answerCueRiskReviewed' in assessment.entries[1].checklist, false);
   assert.equal(assessment.entries[0].decision, 'PENDING');
   assert.equal(assessment.reviewer.attestsIndependentHumanReview, false);
 });
@@ -78,6 +82,12 @@ test('completed receipts remain bound to current version and hash', () => {
   const tampered = structuredClone(completed);
   tampered.entries[0].contentSha256 = '0'.repeat(64);
   assert.throws(() => validateCompletedDiagnosticReviewPacket(tampered, reading, writing), /content hash mismatch/);
+  const staleReviewBasis = structuredClone(completed);
+  staleReviewBasis.entries[0].reviewBasisSha256 = '0'.repeat(64);
+  assert.throws(() => validateCompletedDiagnosticReviewPacket(staleReviewBasis, reading, writing), /review basis mismatch/);
+  const staleChecklist = structuredClone(completed);
+  staleChecklist.entries[1].checklist.answerCueRiskReviewed = true;
+  assert.throws(() => validateCompletedDiagnosticReviewPacket(staleChecklist, reading, writing), /checklist is incomplete/);
   const deceptiveMaterial = structuredClone(completed);
   deceptiveMaterial.entries[0].material.publicItem.prompt = 'A different prompt shown to the reviewer';
   assert.throws(() => validateCompletedDiagnosticReviewPacket(deceptiveMaterial, reading, writing), /review material mismatch/);
@@ -134,11 +144,11 @@ test('changes requested never compile into an approval', () => {
 
 test('bank approval proposal binds completed private receipts and merges without silent loss', () => {
   const objectiveApproval = {
-    itemId: 'new-objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewedAt: generatedAt,
+    itemId: 'new-objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewBasisSha256: 'c'.repeat(64), reviewedAt: generatedAt,
     reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
   };
   const writingApproval = {
-    itemId: 'new-writing', contentVersion: 'v1', contentSha256: 'b'.repeat(64), reviewedAt: generatedAt,
+    itemId: 'new-writing', contentVersion: 'v1', contentSha256: 'b'.repeat(64), reviewBasisSha256: 'd'.repeat(64), reviewedAt: generatedAt,
     reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
   };
   const receiptReferences = [
@@ -172,7 +182,7 @@ test('bank approval proposal binds completed private receipts and merges without
 test('bank approval proposal rejects templates, incomplete decisions and post-review tampering', () => {
   const compiled = {
     objectiveApprovals: [{
-      itemId: 'objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewedAt: generatedAt,
+      itemId: 'objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewBasisSha256: 'c'.repeat(64), reviewedAt: generatedAt,
       reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
     }],
     writingApprovals: [], incomplete: [], changesRequested: [],

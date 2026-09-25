@@ -308,6 +308,10 @@ snapshot aunque los metadatos de aprobación cambien.
 Los paquetes de revisión se generan por nivel, habilidad, tipo o rol y permanecen privados:
 
 ```bash
+npm run audit:diagnostic-item-cues
+# detalle opcional, siempre privado y sin sobrescritura:
+npm run audit:diagnostic-item-cues -- \
+  --output=.diagnostic-private/evidence/item-cue-audit.json
 npm run scaffold:diagnostic-bank-review -- --level=B1 --skill=reading
 # cada persona completa su archivo y lo renombra a *.completed.json
 npm run report:diagnostic-bank-review-progress
@@ -328,6 +332,15 @@ y la unión exacta con aprobaciones anteriores. Solo una segunda ejecución con 
 identificado y la confirmación ligada al hash de la propuesta y del conjunto de recibos actualiza
 el manifiesto de forma atómica. Plantillas, decisiones incompletas, cambios solicitados, rutas
 externas o modificaciones posteriores fallan antes de escribir.
+
+La auditoría adversarial evalúa los 216 ítems reservados de lectura, gramática y vocabulario sin
+imprimir identificadores, textos, claves ni racionales. Reporta agregados de posición de clave y
+hallazgos por celda MCER/habilidad; el corte vigente marca **36 ítems para juicio humano y 0
+defectos bloqueantes**. El detalle aparece únicamente en los paquetes privados de evaluación, no
+en los lingüísticos. Duplicados normalizados bloquean; diferencias de longitud, capitalización o
+puntuación exigen revisión contextual y no rechazo automático. El checklist de evaluación añade
+`answerCueRiskReviewed`, y `reviewBasisSha256` liga cada firma a la versión exacta del auditor y
+del proceso. Una plantilla anterior queda obsoleta aunque `contentSha256` siga coincidiendo.
 
 El reporte de progreso recorre únicamente el paquete privado por lotes y emite datos agregados:
 estado por nivel, habilidad y rol, cobertura de plantillas y recibos, cambios solicitados y número

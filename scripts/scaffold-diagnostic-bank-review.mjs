@@ -69,6 +69,8 @@ writeFileSync(path.join(output, 'README.txt'), [
   'Rename each completed *.template.json file to *.completed.json.',
   'Do not edit item material, IDs, versions, or hashes inside a receipt.',
   'Complete reviewer identity, review date, attestation, every decision, checklist and required comment.',
+  'Assessment packets include an adversarial cue audit. Review every finding; flags require judgment and are not automatic rejection.',
+  'The reviewBasisSha256 binds each decision to the current checklist and cue-audit policy.',
   'Compile independent completed receipts with scripts/record-diagnostic-bank-approvals.mjs.',
   '',
 ].join('\n'));

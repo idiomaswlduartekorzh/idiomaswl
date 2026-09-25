@@ -199,6 +199,17 @@ Actualizado el 25 de septiembre de 2026:
   nueva del manifiesto. El manifiesto comprometido permanece vacío y el inicio comprueba
   capacidad completa tanto del banco objetivo como de las cuatro consignas paralelas de
   escritura por nivel.
+- **Auditoría adversarial de opciones integrada:** los 216 ítems reservados de lectura,
+  gramática y vocabulario pasan por una inspección determinista de duplicados normalizados,
+  atajos metalingüísticos, longitud relativa, paralelismo de longitud, capitalización y
+  puntuación. La salida pública contiene únicamente agregados por nivel y habilidad; el detalle
+  por ítem, posición y clave solo aparece en material privado del revisor de evaluación. El
+  corte actual encuentra **36 ítems que requieren juicio humano y 0 defectos bloqueantes**. Una
+  señal de longitud no rechaza automáticamente contenido que pueda ser legítimo para el
+  constructo, pero ahora exige el criterio `answerCueRiskReviewed`. Cada firma conserva por
+  separado la huella del contenido y la de la política de revisión; cambiar la versión del
+  auditor, sus hallazgos o el checklist invalida recibos anteriores aunque el texto del ítem no
+  haya cambiado.
 - **Seguimiento editorial verificable:** los 216 candidatos objetivos reservados y las 24
   consignas ya están distribuidos en 24 lotes privados A1–C2, con una plantilla lingüística y
   otra de evaluación por lote. `report:diagnostic-bank-review-progress` valida los 48 artefactos
