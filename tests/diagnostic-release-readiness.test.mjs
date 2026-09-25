@@ -199,6 +199,42 @@ test('all independent evidence gates produce READY_TO_ENABLE before flags are sw
   assert.equal(report.summary.passedGates, report.summary.totalGates);
 });
 
+test('production becomes ACTIVE only with production mode and a valid non-secret rollout report', () => {
+  const invalid = readyFixture();
+  invalid.activation = {
+    engineEnabled: true,
+    uiEnabled: true,
+    accessMode: 'production',
+    productionRollout: {
+      ready: false,
+      rolloutId: null,
+      percentage: null,
+      blockers: ['rollout-secret-invalid'],
+    },
+  };
+  const notActive = buildDiagnosticReleaseReadiness(invalid);
+  assert.equal(notActive.decision, 'READY_TO_ENABLE');
+  assert.equal(notActive.releaseReady, true);
+  assert.equal(notActive.activation.productionRollout.ready, false);
+
+  const valid = readyFixture();
+  valid.activation = {
+    engineEnabled: true,
+    uiEnabled: true,
+    accessMode: 'production',
+    productionRollout: {
+      ready: true,
+      rolloutId: 'english-diagnostic-2026-09',
+      percentage: 1,
+      blockers: [],
+    },
+  };
+  const active = buildDiagnosticReleaseReadiness(valid);
+  assert.equal(active.decision, 'ACTIVE');
+  assert.equal(active.activation.productionRollout.percentage, 1);
+  assert.equal(JSON.stringify(active).includes('rollout-secret'), false);
+});
+
 test('quality cannot pass when the protected practice catalog was not verified for this source', () => {
   const fixture = readyFixture();
   fixture.releaseEvidence.quality.protectedCatalogSourceSha256 = null;

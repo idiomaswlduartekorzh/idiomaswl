@@ -37,6 +37,7 @@
     "report:diagnostic-release-readiness": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/check-diagnostic-release-readiness.mjs",
     "check:diagnostic-release-readiness": "npm run report:diagnostic-release-readiness -- --strict",
     "check:diagnostic-release-certificate": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/check-diagnostic-release-certificate.mjs",
+    "check:diagnostic-production-rollout": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/check-diagnostic-production-rollout.mjs",
     "inspect:diagnostic-supabase": "node scripts/inspect-diagnostic-supabase.mjs",
     "verify:diagnostic-auth-flow": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/verify-diagnostic-auth-flow.mjs",
     "record:diagnostic-live-evidence": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/record-diagnostic-live-evidence.mjs",

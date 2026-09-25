@@ -40,6 +40,14 @@ exige un certificado `ready`, `DIAGNOSTIC_RELEASE_ID`, la huella
 `DIAGNOSTIC_RELEASE_SOURCE_SHA256` y el hash del banco actual. El certificado comprometido nace
 en `hold` y el prebuild rechaza certificados malformados o viejos.
 
+Tras autenticar al usuario, producción exige además un rollout válido: ID estable, porcentaje
+entero de 0 a 100 y secreto privado de al menos 32 bytes. La asignación por HMAC es estable y
+monótona; solo controla intentos nuevos y nunca expone bucket, identidad o secreto. El chequeo
+operativo es `pnpm run check:diagnostic-production-rollout`. La escalera de activación, señales
+de pausa y reversión con drenaje están en
+`docs/diagnostic-release-operations-runbook.md`; cambiar algoritmo, enforcement o runbook
+invalida las revisiones de gobierno de entrega.
+
 La entrega queda además ligada a `config/diagnostic/delivery-policy.json`. La propuesta v1
 permite retests programados en piloto, pero en producción fija un único intento activo, 90 días
 entre intentos completados y 180 días de vigencia orientativa del resultado. Ambos canales
@@ -450,9 +458,10 @@ hasta aplicar la migración, probarla contra la base real y aprobar una versión
 6. aprobar privacidad, retención y borrado;
 7. ejecutar el piloto hasta alcanzar evidencia por ítem, ruta y habilidad, exportar su informe y revisarlo;
 8. ejecutar suite, build y E2E sobre el commit candidato limpio;
-8. completar las atestaciones de `release-evidence.json` y ejecutar el check estricto;
-9. emitir el certificado con `--issue-certificate`, fijar su release ID y huella en el entorno;
-10. activar primero el motor y luego la interfaz con monitoreo de rollback.
+9. completar las atestaciones de `release-evidence.json` y ejecutar el check estricto;
+10. emitir el certificado con `--issue-certificate`, fijar su release ID y huella en el entorno;
+11. activar en 0–1–5–25–50–100 siguiendo el runbook y conservar la capacidad de drenaje y
+    rollback al último commit verificado.
 
 Dentro de la superficie ejecutable auditada, la huella de calidad excluye
 `release-evidence.json`, evitando el ciclo en el que firmar el recibo cambiaría la misma huella

@@ -17,6 +17,7 @@ import {
   persistCreatedDiagnosticAttempt,
 } from './repository.server';
 import { getDiagnosticProductionReleaseReadiness } from './release-runtime';
+import { evaluateDiagnosticProductionRollout } from './production-rollout';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from './start-core';
 import {
   diagnosticDeliveryRules,
@@ -86,6 +87,16 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   const supabase = await createClient();
   const { data: { user }, error: authError } = await supabase.auth.getUser();
   if (authError || !user) return jsonError('AUTH_REQUIRED', 'Inicia sesión para comenzar el diagnóstico.', 401);
+  if (accessMode === 'production') {
+    const rollout = evaluateDiagnosticProductionRollout({ env: process.env, userId: user.id });
+    if (!rollout.configurationValid) {
+      console.error('[diagnostic] Production rollout configuration rejected:', rollout.blockers.join(','));
+      return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
+    }
+    if (!rollout.eligible) {
+      return jsonError('ROLLOUT_NOT_ELIGIBLE', 'El diagnóstico aún no está disponible para tu cuenta.', 403);
+    }
+  }
   if (accessMode === 'pilot') {
     const pilotConsentVersion = process.env.DIAGNOSTIC_PILOT_CONSENT_VERSION?.trim() ?? '';
     if (!pilotConsentVersion) {

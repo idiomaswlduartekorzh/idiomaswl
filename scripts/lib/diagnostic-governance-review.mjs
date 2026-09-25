@@ -38,6 +38,7 @@ const DELIVERY_CHECKS = {
     'cooldownAndEligibilityUxReviewed',
     'supportAndNoOverrideRuleReviewed',
     'resultExpiryCommunicationReviewed',
+    'controlledRolloutAndDrainRollbackReviewed',
     'proposedValuesAccepted',
   ],
 };
@@ -54,6 +55,7 @@ const DELIVERY_QUESTIONS = {
     'Are cooldown and next-eligibility behaviors supportable without leaking participant history?',
     'Is the no-override production rule operationally acceptable?',
     'Is result expiry communicated consistently in the screen and exported PDF?',
+    'Is the deterministic cohort rollout and drain-before-rollback procedure operationally acceptable?',
     'Do you accept every proposed pilot and production value in the bound snapshot?',
   ],
 };

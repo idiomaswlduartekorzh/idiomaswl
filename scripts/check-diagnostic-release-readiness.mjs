@@ -10,6 +10,7 @@ import {
   ENGLISH_DIAGNOSTIC_WRITING_BANK,
 } from '../src/server/diagnostic/bank/index.ts';
 import { diagnosticPilotBankSha256 } from '../src/server/diagnostic/pilot-analytics.ts';
+import { validateDiagnosticProductionRolloutConfiguration } from '../src/server/diagnostic/production-rollout.ts';
 import { buildDiagnosticReleaseReadiness } from './lib/diagnostic-release-readiness.mjs';
 import { diagnosticReleaseSourceSha256 } from './lib/diagnostic-release-source.mjs';
 import { diagnosticGovernanceSnapshots } from './lib/diagnostic-governance-snapshots.mjs';
@@ -49,6 +50,7 @@ const listeningBriefs = [
   ...ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
   ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
 ];
+const productionRollout = validateDiagnosticProductionRolloutConfiguration(process.env);
 
 const report = buildDiagnosticReleaseReadiness({
   bankReadiness: readJson('docs/diagnostic-bank-readiness.json'),
@@ -82,6 +84,13 @@ const report = buildDiagnosticReleaseReadiness({
   activation: {
     engineEnabled: process.env.DIAGNOSTIC_ADAPTIVE_ENABLED === 'true',
     uiEnabled: process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true',
+    accessMode: process.env.DIAGNOSTIC_ACCESS_MODE,
+    productionRollout: {
+      ready: productionRollout.valid,
+      rolloutId: productionRollout.rolloutId,
+      percentage: productionRollout.percentage,
+      blockers: productionRollout.blockers,
+    },
   },
 });
 

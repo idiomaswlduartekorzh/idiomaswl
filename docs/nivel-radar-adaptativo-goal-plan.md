@@ -302,6 +302,16 @@ Actualizado el 25 de septiembre de 2026:
   ocho gates pasan y que fija release ID, huella del código y hash del banco. El prebuild rechaza
   un certificado obsoleto y el servidor vuelve a exigir release ID, huella desplegada y banco
   coincidentes. El certificado comprometido permanece en `hold`.
+- **Fase 8 — rollout gradual y reversión implementados:** producción asigna a cada usuario
+  autenticado a una cohorte estable por HMAC, con porcentaje entero de 0 a 100, identificador de
+  rollout y secreto separados. Configuración ausente o inválida falla cerrada; el navegador no
+  recibe bucket, UUID ni secreto. El porcentaje solo gobierna inicios nuevos, por lo que llevarlo
+  a cero detiene la entrada sin impedir reanudar o terminar intentos activos. Un verificador
+  operativo no imprime secretos y el runbook fija la escalera 0–1–5–25–50–100, las señales de
+  pausa y el orden de rollback: cortar nuevos inicios, retirar la UI, drenar, y redesplegar el
+  último commit con su certificado, huella y banco coincidentes. Algoritmo, enforcement,
+  certificado, verificador y procedimiento quedaron dentro del snapshot de gobierno de entrega;
+  por ello las dos revisiones humanas pendientes deben aprobar también este control.
 - **Cohortes piloto — operación administrativa preparada:** una mutación administrativa
   same-origin y rate-limited registra invitación, consentimiento, revocación o cierre mediante
   transiciones SQL atómicas. La evidencia usa la versión de consentimiento configurada y un
@@ -690,6 +700,11 @@ Entregables:
 - procedimiento de retirar un ítem sin invalidar intentos históricos;
 - política de repetición, exposición y caducidad del resultado;
 - documentación para tutores y comunicación al estudiante.
+
+El control de porcentaje y el procedimiento de recuperación ya están implementados en
+`src/server/diagnostic/production-rollout.ts` y
+`docs/diagnostic-release-operations-runbook.md`. Su activación sigue bloqueada por los gates
+humanos, editoriales, de audio, base real y piloto descritos arriba.
 
 Puerta de salida:
 

@@ -57,6 +57,8 @@ test('start handler verifies feature flag, origin, JSON, consent, audio and auth
   assert.match(handler, /DIAGNOSTIC_ACCESS_MODE/);
   assert.match(handler, /hasDiagnosticPilotEnrollment/);
   assert.match(handler, /getDiagnosticProductionReleaseReadiness/);
+  assert.match(handler, /evaluateDiagnosticProductionRollout/);
+  assert.match(handler, /ROLLOUT_NOT_ELIGIBLE/);
   assert.match(handler, /requestHasSameOrigin\(request\)/);
   assert.match(handler, /startsWith\('application\/json'\)/);
   assert.match(handler, /audioCheckPassed !== true/);

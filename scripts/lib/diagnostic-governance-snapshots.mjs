@@ -21,6 +21,7 @@ export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
 ];
 
 export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
+  '.env.example',
   'config/diagnostic/audio-check.json',
   'config/diagnostic/delivery-policy.json',
   'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql',
@@ -28,6 +29,9 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/server/diagnostic/delivery-policy.ts',
   'src/server/diagnostic/start-core.ts',
   'src/server/diagnostic/start.server.ts',
+  'src/server/diagnostic/production-rollout.ts',
+  'src/server/diagnostic/release-runtime-core.ts',
+  'src/server/diagnostic/release-runtime.ts',
   'src/server/diagnostic/submit.server.ts',
   'src/server/diagnostic/finalize-core.ts',
   'src/server/diagnostic/measurement.ts',
@@ -35,6 +39,10 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/app/api/admin/diagnostic/pilot-enrollments/route.ts',
   'src/app/(site)/dashboard/admin/nivel-radar/PilotEnrollmentAdminClient.tsx',
   'src/app/(site)/nivel-radar/AdaptiveNivelRadarClient.tsx',
+  'scripts/check-diagnostic-production-rollout.mjs',
+  'scripts/check-diagnostic-release-readiness.mjs',
+  'scripts/lib/diagnostic-release-readiness.mjs',
+  'docs/diagnostic-release-operations-runbook.md',
 ];
 
 export const DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS = [

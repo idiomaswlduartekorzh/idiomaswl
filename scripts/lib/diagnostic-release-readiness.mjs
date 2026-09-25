@@ -353,8 +353,21 @@ export function buildDiagnosticReleaseReadiness(input) {
   const activation = {
     engineEnabled: input.activation?.engineEnabled === true,
     uiEnabled: input.activation?.uiEnabled === true,
+    accessMode: input.activation?.accessMode === 'production' ? 'production'
+      : input.activation?.accessMode === 'pilot' ? 'pilot' : null,
+    productionRollout: {
+      ready: input.activation?.productionRollout?.ready === true,
+      rolloutId: input.activation?.productionRollout?.rolloutId ?? null,
+      percentage: input.activation?.productionRollout?.percentage ?? null,
+      blockers: Array.isArray(input.activation?.productionRollout?.blockers)
+        ? [...input.activation.productionRollout.blockers] : [],
+    },
   };
-  const active = releaseReady && activation.engineEnabled && activation.uiEnabled;
+  const active = releaseReady
+    && activation.engineEnabled
+    && activation.uiEnabled
+    && activation.accessMode === 'production'
+    && activation.productionRollout.ready;
 
   return {
     reportVersion: 'diagnostic-release-readiness-v1',
@@ -370,6 +383,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     safeguards: {
       secretsIncluded: false,
       activationDoesNotOverrideEvidence: true,
+      productionActivationRequiresValidRollout: true,
       humanWritingPathCanReleaseWithoutExternalProvider: true,
     },
   };
