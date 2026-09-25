@@ -7,7 +7,7 @@ import type {
 import type { DiagnosticWritingPrompt } from './writing.ts';
 
 export const DIAGNOSTIC_CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
-export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v1';
+export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v2';
 
 export interface DiagnosticStageDelivery {
   attemptId: string;

@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { DIAGNOSTIC_CONSENT_VERSION, DIAGNOSTIC_ENGINE_VERSION } from '../src/lib/diagnostic/delivery.ts';
 import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
+import { toDiagnosticPublicItem } from '../src/server/diagnostic/scoring.ts';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from '../src/server/diagnostic/start-core.ts';
 
 const objectiveSkills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
@@ -56,6 +57,10 @@ test('creates and persists a two-hour locator without exposing private bank fiel
     persist: async input => { persisted = input; },
   });
   assert.equal(delivery.items.length, 12);
+  const firstRecord = completeBank.find(record => record.publicItem.id === delivery.items[0].id);
+  assert.deepEqual(delivery.items[0], toDiagnosticPublicItem(firstRecord, delivery.stage.stageId));
+  assert.equal(delivery.items.every(item => item.response.optionIds.join('|')
+    === item.displayOptions.map(option => option.id).join('|')), true);
   assert.equal(delivery.attemptVersion, 1);
   assert.equal(delivery.expiresAt, '2026-09-24T14:00:00.000Z');
   assert.equal(persisted.engineVersion, DIAGNOSTIC_ENGINE_VERSION);

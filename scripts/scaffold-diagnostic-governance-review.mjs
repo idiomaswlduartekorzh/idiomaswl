@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -18,6 +18,9 @@ const privateRoot = resolve(root, '.diagnostic-private');
 const privateRelative = relative(privateRoot, outputRoot);
 if (!privateRelative || privateRelative === '..' || privateRelative.startsWith(`..${sep}`)) {
   throw new Error('Governance packets may only be written below .diagnostic-private/.');
+}
+if (existsSync(outputRoot)) {
+  throw new Error(`Refusing to overwrite an existing governance review directory: ${outputRoot}`);
 }
 const snapshots = diagnosticGovernanceSnapshots(root);
 const packets = buildDiagnosticGovernanceReviewPackets({ snapshots, generatedAt: new Date().toISOString() });

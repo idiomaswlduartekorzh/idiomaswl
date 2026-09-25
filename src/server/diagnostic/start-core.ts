@@ -157,6 +157,6 @@ export async function prepareEnglishDiagnosticAttempt(
     attemptVersion: 1,
     expiresAt,
     stage,
-    items: selected.records.map(toDiagnosticPublicItem),
+    items: selected.records.map(record => toDiagnosticPublicItem(record, stage.stageId)),
   };
 }

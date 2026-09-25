@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { buildDiagnosticCompositeResult } from '../src/server/diagnostic/measurement.ts';
 import { buildEnglishDiagnosticResumeDelivery } from '../src/server/diagnostic/resume-core.ts';
+import { toDiagnosticPublicItem } from '../src/server/diagnostic/scoring.ts';
 
 const item = {
   publicItem: {
@@ -57,7 +58,7 @@ function completedResultProfile() {
 }
 
 test('rehydrates the exact objective stage without private scoring fields', () => {
-  const resume = buildEnglishDiagnosticResumeDelivery({
+  const resumeInput = {
     ...base,
     snapshot: {
       attempt,
@@ -68,9 +69,12 @@ test('rehydrates the exact objective stage without private scoring fields', () =
       stageStatus: 'issued', selectionReceipt: {}, bankVersion: 'objective-v1', blueprintVersion: 'blueprint-v1',
       engineVersion: 'engine-v1', writingStatus: null, resultProfile: null,
     },
-  });
+  };
+  const resume = buildEnglishDiagnosticResumeDelivery(resumeInput);
   assert.equal(resume.kind, 'objective-stage');
   assert.equal(resume.delivery.items[0].id, item.publicItem.id);
+  assert.deepEqual(resume.delivery.items[0], toDiagnosticPublicItem(item, 'stage-1'));
+  assert.deepEqual(resume, buildEnglishDiagnosticResumeDelivery(resumeInput));
   const serialized = JSON.stringify(resume);
   assert.equal(serialized.includes('Private key rationale'), false);
   assert.equal(serialized.includes('scoring'), false);

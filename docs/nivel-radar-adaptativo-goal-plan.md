@@ -210,6 +210,12 @@ Actualizado el 25 de septiembre de 2026:
   separado la huella del contenido y la de la política de revisión; cambiar la versión del
   auditor, sus hallazgos o el checklist invalida recibos anteriores aunque el texto del ítem no
   haya cambiado.
+- **Rotación reproducible de opciones:** `mst-engine-v2` ordena las opciones mediante una huella
+  de etapa, ítem e ID de opción. La clave sigue siendo un ID privado e inmutable, no una letra o
+  posición. Una recarga o reintento idempotente reproduce exactamente el mismo orden, mientras
+  etapas distintas no conservan una posición universal que pueda compartirse o memorizarse. El
+  motor valida además que contrato y opciones públicas contengan el mismo conjunto de IDs antes
+  de entregar el ítem.
 - **Seguimiento editorial verificable:** los 216 candidatos objetivos reservados y las 24
   consignas ya están distribuidos en 24 lotes privados A1–C2, con una plantilla lingüística y
   otra de evaluación por lote. `report:diagnostic-bank-review-progress` valida los 48 artefactos

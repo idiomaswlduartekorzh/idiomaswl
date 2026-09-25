@@ -341,6 +341,10 @@ en los lingüísticos. Duplicados normalizados bloquean; diferencias de longitud
 puntuación exigen revisión contextual y no rechazo automático. El checklist de evaluación añade
 `answerCueRiskReviewed`, y `reviewBasisSha256` liga cada firma a la versión exacta del auditor y
 del proceso. Una plantilla anterior queda obsoleta aunque `contentSha256` siga coincidiendo.
+En entrega, `mst-engine-v2` deriva el orden de opciones de la etapa y del ID de cada opción:
+recargas e idempotencia conservan la forma exacta, pero otra etapa rota posiciones sin alterar
+la clave privada ni el scoring. Una discrepancia entre IDs visibles y el contrato falla antes de
+enviar el ítem.
 
 El reporte de progreso recorre únicamente el paquete privado por lotes y emite datos agregados:
 estado por nivel, habilidad y rol, cobertura de plantillas y recibos, cambios solicitados y número

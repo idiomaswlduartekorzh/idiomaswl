@@ -44,6 +44,19 @@ test('the public serialization boundary excludes keys, rationales and parameters
   assert.equal(serialized.includes('optionId":"b"'), false);
 });
 
+test('option presentation is stable per stage and rotates without changing option identity', () => {
+  const original = structuredClone(record.publicItem);
+  const first = toDiagnosticPublicItem(record, 'stage-alpha');
+  const repeat = toDiagnosticPublicItem(record, 'stage-alpha');
+  assert.deepEqual(first, repeat);
+  assert.deepEqual(record.publicItem, original);
+  assert.deepEqual(first.response.optionIds, first.displayOptions.map(option => option.id));
+  assert.deepEqual([...first.response.optionIds].sort(), ['a', 'b', 'c']);
+  const observedOrders = new Set(['stage-alpha', 'stage-beta', 'stage-gamma', 'stage-delta']
+    .map(seed => toDiagnosticPublicItem(record, seed).response.optionIds.join(',')));
+  assert.ok(observedOrders.size > 1, 'different stages should not preserve one universal answer position');
+});
+
 test('scores objective responses on the server and preserves omission', () => {
   assert.equal(scoreDiagnosticResponse(record.scoring, { kind: 'single-choice', optionId: 'b' }), 'correct');
   assert.equal(scoreDiagnosticResponse(record.scoring, { kind: 'single-choice', optionId: 'a' }), 'incorrect');
@@ -64,4 +77,3 @@ test('scores objective responses on the server and preserves omission', () => {
     /does not match/,
   );
 });
-

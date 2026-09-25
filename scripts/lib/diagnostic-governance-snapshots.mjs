@@ -34,6 +34,8 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/server/diagnostic/delivery-policy.ts',
   'src/server/diagnostic/bank/controls.ts',
   'src/server/diagnostic/start-core.ts',
+  'src/server/diagnostic/continue-core.ts',
+  'src/server/diagnostic/scoring.ts',
   'src/server/diagnostic/start.server.ts',
   'src/server/diagnostic/production-rollout.ts',
   'src/server/diagnostic/release-runtime-core.ts',

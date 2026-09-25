@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+
 import type {
   DiagnosticPublicItem,
   DiagnosticSubmittedResponse,
@@ -78,9 +80,39 @@ function clonePublicItem(item: DiagnosticPublicItem): DiagnosticPublicItem {
   };
 }
 
+function presentationRank(seed: string, itemId: string, optionId: string): string {
+  return createHash('sha256').update(`${seed}\u0000${itemId}\u0000${optionId}`).digest('hex');
+}
+
+function applyDeterministicOptionOrder(item: DiagnosticPublicItem, seed: string): DiagnosticPublicItem {
+  if (!item.displayOptions || item.response.kind === 'short-text') return item;
+  const displayOptionIds = new Set(item.displayOptions.map(option => option.id));
+  if (displayOptionIds.size !== item.displayOptions.length
+    || displayOptionIds.size !== item.response.optionIds.length
+    || item.response.optionIds.some(optionId => !displayOptionIds.has(optionId))) {
+    throw new Error(`${item.id}: public option contract is inconsistent`);
+  }
+  const optionOrder = [...item.displayOptions].sort((left, right) =>
+    presentationRank(seed, item.id, left.id).localeCompare(presentationRank(seed, item.id, right.id))
+    || left.id.localeCompare(right.id));
+  const position = new Map(optionOrder.map((option, index) => [option.id, index]));
+  const responseOptionIds = [...item.response.optionIds].sort((left, right) =>
+    (position.get(left) ?? Number.MAX_SAFE_INTEGER) - (position.get(right) ?? Number.MAX_SAFE_INTEGER)
+    || left.localeCompare(right));
+  return {
+    ...item,
+    response: { ...item.response, optionIds: responseOptionIds },
+    displayOptions: optionOrder,
+  };
+}
+
 /** Explicit allow-list boundary for API payloads. */
-export function toDiagnosticPublicItem(record: DiagnosticBankRecord): DiagnosticPublicItem {
-  return clonePublicItem(record.publicItem);
+export function toDiagnosticPublicItem(
+  record: DiagnosticBankRecord,
+  presentationSeed?: string,
+): DiagnosticPublicItem {
+  const item = clonePublicItem(record.publicItem);
+  return presentationSeed ? applyDeterministicOptionOrder(item, presentationSeed) : item;
 }
 
 function isOmitted(response: DiagnosticSubmittedResponse): boolean {

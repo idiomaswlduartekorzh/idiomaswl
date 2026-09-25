@@ -171,7 +171,7 @@ export async function continueEnglishDiagnosticLocator(input: {
       attemptVersion: persisted.version,
       expiresAt: input.attempt.expiresAt,
       stage: deliveredStage,
-      items: precision.records.map(toDiagnosticPublicItem),
+      items: precision.records.map(record => toDiagnosticPublicItem(record, deliveredStage.stageId)),
     },
     routeDecision,
   };
@@ -346,7 +346,8 @@ export async function continueEnglishDiagnosticPrecision(input: {
     return {
       delivery: {
         attemptId: input.attempt.id, attemptVersion: persisted.version, expiresAt: input.attempt.expiresAt,
-        stage: deliveredStage, items: confirmation.records.map(toDiagnosticPublicItem),
+        stage: deliveredStage,
+        items: confirmation.records.map(record => toDiagnosticPublicItem(record, deliveredStage.stageId)),
       },
       objectiveEvidence,
       confirmationDecision,

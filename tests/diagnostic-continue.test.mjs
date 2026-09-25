@@ -7,6 +7,7 @@ import {
   continueEnglishDiagnosticLocator,
   continueEnglishDiagnosticPrecision,
 } from '../src/server/diagnostic/continue-core.ts';
+import { toDiagnosticPublicItem } from '../src/server/diagnostic/scoring.ts';
 import { selectEnglishLocator, selectEnglishPrecisionStage } from '../src/server/diagnostic/selection.ts';
 
 const skills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
@@ -77,6 +78,8 @@ test('scores locator server-side and atomically prepares a balanced precision st
   assert.equal(result.routeDecision.routeId, 'high-c1-c2');
   assert.equal(result.delivery.attemptVersion, 2);
   assert.equal(result.delivery.items.length, 16);
+  const deliveredRecord = bank.find(item => item.publicItem.id === result.delivery.items[0].id);
+  assert.deepEqual(result.delivery.items[0], toDiagnosticPublicItem(deliveredRecord, 'stage-precision'));
   assert.equal(result.delivery.items.some(item => stage.itemIds.includes(item.id)), false);
   assert.equal(result.delivery.items.some(item => priorExposure.has(item.id)), false);
   assert.equal(persisted.scoredResponses.every(response => response.outcome === 'correct'), true);

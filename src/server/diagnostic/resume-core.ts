@@ -93,7 +93,8 @@ export function buildEnglishDiagnosticResumeDelivery(input: {
     kind: 'objective-stage',
     delivery: {
       attemptId: attempt.id, attemptVersion: attempt.version, expiresAt: attempt.expiresAt,
-      stage, items: (resolved as DiagnosticBankRecord[]).map(toDiagnosticPublicItem),
+      stage,
+      items: (resolved as DiagnosticBankRecord[]).map(record => toDiagnosticPublicItem(record, stage.stageId)),
     },
   };
 }
