@@ -137,6 +137,8 @@ vacías, sin modo de escritura ni aprobación preseleccionados:
 
 ```bash
 npm run scaffold:diagnostic-governance-review
+# después de completar los cinco archivos de forma independiente:
+npm run compile:diagnostic-governance-review
 ```
 
 El paquete privado liga cada revisión a una huella exacta: operación de escritura, política de
@@ -146,8 +148,11 @@ medición. Aprobar la ruta humana requiere al menos dos referencias verificables
 un SLA máximo de 72 horas. La ruta externa exige referencias separadas para consentimiento y
 revisión de proveedor. Un cambio de documento invalida automáticamente sus recibos.
 
-Los paquetes son preparación, no aprobación. Mientras las cinco personas o roles no completen
-sus recibos y el compilador confirme independencia y acuerdo, ningún gate cambia de estado.
+Los paquetes son preparación, no aprobación. El compilador vuelve a calcular las tres huellas,
+exige exactamente los cinco roles, impide identidades duplicadas dentro de cada tema y comprueba
+que los dos revisores de escritura aprobaron el mismo modelo operativo. El manifiesto y los hashes
+de cada recibo permanecen bajo `.diagnostic-private/`. Mientras ese proceso no termine con
+`APPROVED`, ningún gate cambia de estado.
 
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio

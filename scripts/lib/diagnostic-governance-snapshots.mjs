@@ -1,0 +1,26 @@
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
+  'src/server/diagnostic/writing.ts',
+  'src/server/diagnostic/finalize-core.ts',
+  'src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
+  'src/app/(site)/dashboard/admin/nivel-radar/page.tsx',
+];
+
+function fileSha256(root, path) {
+  return createHash('sha256').update(readFileSync(resolve(root, path))).digest('hex');
+}
+
+export function diagnosticGovernanceSnapshots(root) {
+  const writing = createHash('sha256');
+  for (const path of DIAGNOSTIC_WRITING_GOVERNANCE_PATHS) {
+    writing.update(path).update('\0').update(readFileSync(resolve(root, path))).update('\0');
+  }
+  return {
+    'writing-operations': writing.digest('hex'),
+    'retention-policy': fileSha256(root, 'config/diagnostic/data-retention-policy.json'),
+    'pilot-criteria': fileSha256(root, 'config/diagnostic/pilot-publication-criteria.json'),
+  };
+}

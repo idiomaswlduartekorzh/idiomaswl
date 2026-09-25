@@ -1,11 +1,14 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import { fileURLToPath } from 'node:url';
 
 import {
   buildDiagnosticGovernanceReviewPackets,
   compileDiagnosticGovernanceReviews,
   validateDiagnosticGovernanceReceipt,
 } from '../scripts/lib/diagnostic-governance-review.mjs';
+import { diagnosticGovernanceSnapshots } from '../scripts/lib/diagnostic-governance-snapshots.mjs';
 
 const snapshots = {
   'writing-operations': 'a'.repeat(64),
@@ -67,4 +70,16 @@ test('changed snapshots and incomplete operational evidence cannot be approved',
     ...writing,
     details: { ...writing.details, verifiedReviewerReferences: ['only-one'] },
   }, snapshots['writing-operations']), /two verified reviewers/);
+});
+
+test('executable compiler recomputes current snapshots and keeps every artifact private', () => {
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  const current = diagnosticGovernanceSnapshots(root);
+  assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria']);
+  assert.ok(Object.values(current).every(value => /^[a-f0-9]{64}$/u.test(value)));
+  const compiler = readFileSync(new URL('../scripts/compile-diagnostic-governance-review.mjs', import.meta.url), 'utf8');
+  assert.match(compiler, /assertPrivate\(inputRoot/);
+  assert.match(compiler, /assertPrivate\(outputPath/);
+  assert.match(compiler, /manifestSha256/);
+  assert.match(compiler, /receiptCount/);
 });
