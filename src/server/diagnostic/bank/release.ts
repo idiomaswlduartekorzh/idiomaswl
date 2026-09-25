@@ -97,6 +97,7 @@ export function releaseApprovedObjectiveBank(
     if (record.publicItem.contentVersion !== approval.contentVersion) errors.push(`${approval.itemId}: content version mismatch`);
     if (diagnosticObjectiveContentSha256(record) !== approval.contentSha256) errors.push(`${approval.itemId}: content hash mismatch`);
     if (diagnosticObjectiveReviewBasisSha256(record) !== approval.reviewBasisSha256) errors.push(`${approval.itemId}: review basis mismatch`);
+    if (auditDiagnosticItemCues(record).disposition === 'BLOCKING_DEFECT') errors.push(`${approval.itemId}: blocking adversarial cue defect`);
     if (errors.length) throw new Error(errors.join('; '));
     return {
       ...record,

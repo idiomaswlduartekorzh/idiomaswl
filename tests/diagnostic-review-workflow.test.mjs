@@ -142,6 +142,14 @@ test('changes requested never compile into an approval', () => {
   assert.equal(compiled.writingApprovals.length, 1);
 });
 
+test('an assessment reviewer cannot approve an automated blocking cue defect', () => {
+  const duplicate = structuredClone(reading[0]);
+  duplicate.publicItem.displayOptions[1].text = `${duplicate.publicItem.displayOptions[0].text}!`;
+  const assessment = complete(packet('assessment-reviewer', [duplicate], []), 'assessor-1');
+  assert.throws(() => validateCompletedDiagnosticReviewPacket(assessment, [duplicate], []),
+    /blocking adversarial cue defect cannot be approved/);
+});
+
 test('bank approval proposal binds completed private receipts and merges without silent loss', () => {
   const objectiveApproval = {
     itemId: 'new-objective', contentVersion: 'v1', contentSha256: 'a'.repeat(64), reviewBasisSha256: 'c'.repeat(64), reviewedAt: generatedAt,

@@ -55,6 +55,16 @@ test('fails closed for changed content, duplicate reviewers and previously publi
     reviewBasisSha256: diagnosticObjectiveReviewBasisSha256(listening), reviewedAt: base.reviewedAt,
     reviewers: [...reviewers, { id: 'audio-1', role: 'audio-alignment-reviewer' }],
   }])), /exposed content cannot enter/);
+
+  const duplicateOptions = structuredClone(record);
+  duplicateOptions.publicItem.displayOptions[1].text = `${duplicateOptions.publicItem.displayOptions[0].text}!`;
+  const duplicateApproval = {
+    ...base,
+    contentSha256: diagnosticObjectiveContentSha256(duplicateOptions),
+    reviewBasisSha256: diagnosticObjectiveReviewBasisSha256(duplicateOptions),
+  };
+  assert.throws(() => releaseApprovedObjectiveBank([duplicateOptions], manifest([duplicateApproval])),
+    /blocking adversarial cue defect/);
 });
 
 test('writing promotion binds the prompt hash and two review roles', () => {

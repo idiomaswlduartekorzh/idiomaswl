@@ -209,6 +209,11 @@ export function validateCompletedDiagnosticReviewPacket(packet, objectiveCandida
     if (entry.decision === 'APPROVED' && expectedChecklist.some(key => entry.checklist[key] !== true)) {
       throw new Error(`${identity}: approval requires every checklist criterion`);
     }
+    if (entry.kind === 'objective' && packet.role === 'assessment-reviewer'
+      && entry.decision === 'APPROVED'
+      && auditDiagnosticItemCues(record).disposition === 'BLOCKING_DEFECT') {
+      throw new Error(`${identity}: blocking adversarial cue defect cannot be approved`);
+    }
     if (entry.decision === 'CHANGES_REQUESTED' && String(entry.comments ?? '').trim().length < 10) {
       throw new Error(`${identity}: requested changes require a specific comment`);
     }
