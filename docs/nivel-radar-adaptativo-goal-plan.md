@@ -187,9 +187,15 @@ Actualizado el 24 de septiembre de 2026:
   ocho gates pasan y que fija release ID, huella del código y hash del banco. El prebuild rechaza
   un certificado obsoleto y el servidor vuelve a exigir release ID, huella desplegada y banco
   coincidentes. El certificado comprometido permanece en `hold`.
+- **Cohortes piloto — operación administrativa preparada:** una mutación administrativa
+  same-origin y rate-limited registra invitación, consentimiento, revocación o cierre mediante
+  transiciones SQL atómicas. La evidencia usa la versión de consentimiento configurada y un
+  timestamp canónico; revocar o cerrar exige una razón. Cada transición deja un evento
+  append-only exclusivo de servidor, y el borrado del participante elimina también inscripción
+  y eventos. Falta aplicar la migración y conectar el proceso humano que recoge el consentimiento.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **192 pruebas** y
+  borradores; el último corte local ejecutó **196 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

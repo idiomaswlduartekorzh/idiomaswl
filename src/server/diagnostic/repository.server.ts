@@ -50,6 +50,8 @@ export interface DiagnosticDataDeletionReceipt {
   deletedWritingEvaluations: number;
   deletedEvents: number;
   deletedPilotReferences: number;
+  deletedPilotEnrollments: number;
+  deletedPilotEnrollmentEvents: number;
   remainingAttempts: 0;
 }
 
@@ -78,13 +80,48 @@ export async function deleteDiagnosticUserData(userId: string): Promise<Diagnost
   const receipt = data as Record<string, unknown>;
   const keys = [
     'deletedAttempts', 'deletedStages', 'deletedResponses', 'deletedWritingEvaluations',
-    'deletedEvents', 'deletedPilotReferences', 'remainingAttempts',
+    'deletedEvents', 'deletedPilotReferences', 'deletedPilotEnrollments',
+    'deletedPilotEnrollmentEvents', 'remainingAttempts',
   ] as const;
   if (keys.some(key => !Number.isInteger(receipt[key]) || Number(receipt[key]) < 0)
     || receipt.remainingAttempts !== 0) {
     throw new Error('diagnostic_deletion_unverified');
   }
   return receipt as unknown as DiagnosticDataDeletionReceipt;
+}
+
+export async function persistDiagnosticPilotEnrollment(input: {
+  userId: string;
+  cohortId: string;
+  action: 'invited' | 'consented' | 'revoked' | 'completed';
+  pilotConsentVersion: string | null;
+  consentedAt: string | null;
+  actedBy: string;
+  reason: string | null;
+}): Promise<{ status: string; cohortId: string }> {
+  const { data, error } = await createAdminClient().rpc('record_diagnostic_pilot_enrollment', {
+    p_user_id: input.userId,
+    p_cohort_id: input.cohortId,
+    p_action: input.action,
+    p_pilot_consent_version: input.pilotConsentVersion,
+    p_consented_at: input.consentedAt,
+    p_acted_by: input.actedBy,
+    p_reason: input.reason,
+  });
+  if (error || !data || typeof data !== 'object' || Array.isArray(data)) {
+    const known = [
+      'diagnostic_pilot_enrollment_invalid',
+      'diagnostic_pilot_enrollment_transition_invalid',
+      'foreign key constraint',
+    ].find(code => error?.message.includes(code));
+    if (known) throw new Error(known);
+    throw new Error('diagnostic_pilot_enrollment_unavailable');
+  }
+  const receipt = data as Record<string, unknown>;
+  if (receipt.status !== input.action || receipt.cohortId !== input.cohortId) {
+    throw new Error('diagnostic_pilot_enrollment_unverified');
+  }
+  return { status: input.action, cohortId: input.cohortId };
 }
 
 /**
