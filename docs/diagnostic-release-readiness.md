@@ -24,6 +24,12 @@ La puerta reúne ocho dimensiones que deben pasar simultáneamente:
 Ninguna bandera de entorno convierte un `HOLD` en release. Cuando todos los gates pasan, las
 banderas solo distinguen `READY_TO_ENABLE` de `ACTIVE`.
 
+El inicio exige además `DIAGNOSTIC_ACCESS_MODE`. En `pilot`, solo acepta usuarios incluidos en
+la tabla privada de cohortes con la versión exacta de consentimiento piloto. En `production`,
+exige un certificado `ready`, `DIAGNOSTIC_RELEASE_ID`, la huella
+`DIAGNOSTIC_RELEASE_SOURCE_SHA256` y el hash del banco actual. El certificado comprometido nace
+en `hold` y el prebuild rechaza certificados malformados o viejos.
+
 ## Evidencia que nunca se infiere
 
 El archivo `config/diagnostic/release-evidence.json` nace cerrado. No se debe completar a partir
@@ -58,7 +64,8 @@ hasta aplicar la migración, probarla contra la base real y aprobar una versión
 6. ejecutar el piloto, exportar su informe y revisarlo;
 7. ejecutar suite y build sobre el commit candidato limpio;
 8. completar las atestaciones de `release-evidence.json` y ejecutar el check estricto;
-9. activar primero el motor y luego la interfaz con monitoreo de rollback.
+9. emitir el certificado con `--issue-certificate`, fijar su release ID y huella en el entorno;
+10. activar primero el motor y luego la interfaz con monitoreo de rollback.
 
 Dentro de la superficie ejecutable auditada, la huella de calidad excluye
 `release-evidence.json`, evitando el ciclo en el que firmar el recibo cambiaría la misma huella

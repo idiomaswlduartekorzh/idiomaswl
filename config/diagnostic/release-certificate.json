@@ -1,0 +1,10 @@
+{
+  "certificateVersion": "english-diagnostic-release-certificate-v1",
+  "status": "hold",
+  "releaseId": null,
+  "bankSnapshotSha256": null,
+  "sourceSha256": null,
+  "evidenceVersion": null,
+  "issuedAt": null,
+  "issuedBy": null
+}

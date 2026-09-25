@@ -181,9 +181,15 @@ Actualizado el 24 de septiembre de 2026:
   elimina por cascada y rechaza cualquier residuo. Las duraciones de retención están documentadas
   solo como propuesta; no existe purge programado y el gate no puede aprobarse hasta revisión de
   privacidad y prueba contra Supabase real.
+- **Lanzamiento fail-closed por canal:** el inicio ya diferencia `pilot` y `production`. El
+  piloto exige una fila privada de inscripción con consentimiento versionado; el navegador no
+  puede crearla ni leerla. Producción exige un certificado que solo puede emitirse cuando los
+  ocho gates pasan y que fija release ID, huella del código y hash del banco. El prebuild rechaza
+  un certificado obsoleto y el servidor vuelve a exigir release ID, huella desplegada y banco
+  coincidentes. El certificado comprometido permanece en `hold`.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **187 pruebas** y
+  borradores; el último corte local ejecutó **192 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

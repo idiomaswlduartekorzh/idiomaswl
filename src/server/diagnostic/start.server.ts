@@ -10,7 +10,8 @@ import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
   ENGLISH_DIAGNOSTIC_WRITING_BANK,
 } from './bank';
-import { persistCreatedDiagnosticAttempt } from './repository.server';
+import { hasDiagnosticPilotEnrollment, persistCreatedDiagnosticAttempt } from './repository.server';
+import { getDiagnosticProductionReleaseReadiness } from './release-runtime';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from './start-core';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
@@ -39,6 +40,18 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   if (process.env.DIAGNOSTIC_ADAPTIVE_ENABLED !== 'true') {
     return jsonError('PILOT_DISABLED', 'El diagnóstico adaptativo aún no está habilitado.', 503);
   }
+  const accessMode = process.env.DIAGNOSTIC_ACCESS_MODE;
+  if (accessMode !== 'pilot' && accessMode !== 'production') {
+    console.error('[diagnostic] Missing or invalid diagnostic access mode.');
+    return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
+  }
+  if (accessMode === 'production') {
+    const release = getDiagnosticProductionReleaseReadiness();
+    if (!release.ready) {
+      console.error('[diagnostic] Production release certificate rejected:', release.blockers.join(','));
+      return jsonError('RELEASE_NOT_AUTHORIZED', 'El diagnóstico aún no está disponible.', 503);
+    }
+  }
   if (!requestHasSameOrigin(request)) return jsonError('INVALID_ORIGIN', 'Solicitud no válida.', 403);
   if (!request.headers.get('content-type')?.toLowerCase().startsWith('application/json')) {
     return jsonError('INVALID_CONTENT_TYPE', 'La solicitud debe usar JSON.', 415);
@@ -57,6 +70,21 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   const supabase = await createClient();
   const { data: { user }, error: authError } = await supabase.auth.getUser();
   if (authError || !user) return jsonError('AUTH_REQUIRED', 'Inicia sesión para comenzar el diagnóstico.', 401);
+  if (accessMode === 'pilot') {
+    const pilotConsentVersion = process.env.DIAGNOSTIC_PILOT_CONSENT_VERSION?.trim() ?? '';
+    if (!pilotConsentVersion) {
+      console.error('[diagnostic] Pilot consent version is missing.');
+      return jsonError('SERVER_CONFIGURATION_INVALID', 'El piloto aún no está disponible.', 503);
+    }
+    let enrolled = false;
+    try {
+      enrolled = await hasDiagnosticPilotEnrollment({ userId: user.id, pilotConsentVersion });
+    } catch (cause) {
+      console.error('[diagnostic] Pilot enrollment check failed:', cause instanceof Error ? cause.message : 'unknown');
+      return jsonError('SERVICE_UNAVAILABLE', 'No pudimos verificar el acceso al piloto.', 503);
+    }
+    if (!enrolled) return jsonError('PILOT_ACCESS_REQUIRED', 'Este piloto requiere una invitación vigente.', 403);
+  }
 
   const capacityDeficits = ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.length === 0;
   if (capacityDeficits) return jsonError('BANK_NOT_READY', 'El banco diagnóstico todavía está en revisión académica.', 503);

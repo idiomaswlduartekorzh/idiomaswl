@@ -53,6 +53,23 @@ export interface DiagnosticDataDeletionReceipt {
   remainingAttempts: 0;
 }
 
+export async function hasDiagnosticPilotEnrollment(input: {
+  userId: string;
+  pilotConsentVersion: string;
+}): Promise<boolean> {
+  const { data, error } = await createAdminClient().from('diagnostic_pilot_enrollments')
+    .select('user_id,status,pilot_consent_version,consented_at')
+    .eq('user_id', input.userId)
+    .maybeSingle();
+  if (error) throw new Error('diagnostic_pilot_enrollment_unavailable');
+  return Boolean(data
+    && data.status === 'consented'
+    && data.pilot_consent_version === input.pilotConsentVersion
+    && typeof data.consented_at === 'string'
+    && Number.isFinite(Date.parse(data.consented_at))
+    && Date.parse(data.consented_at) <= Date.now());
+}
+
 export async function deleteDiagnosticUserData(userId: string): Promise<DiagnosticDataDeletionReceipt> {
   const { data, error } = await createAdminClient().rpc('delete_diagnostic_user_data', { p_user_id: userId });
   if (error || !data || typeof data !== 'object' || Array.isArray(data)) {
