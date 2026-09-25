@@ -3,10 +3,10 @@
 Estado actual: **HOLD**.
 
 Último corte reproducible: **1/8 gates** y **20 bloqueos** sobre el commit técnico
-`96dffcbf`; el catálogo protegido de **465 temas**, **320/320 pruebas**, TypeScript, el build de
+`6340a098`; el catálogo protegido de **465 temas**, **321/321 pruebas**, TypeScript, el build de
 **2.564 páginas estáticas** y **4/4 historias E2E** pasaron. La huella de fuente es
-`bc55d042dbd8568c2fafa32c432192197a0dba5399496ea358ef5a20f492d1b2` y el recibo privado quedó
-fijado por `43ada6f8c3c85f52a154d2275ca30aa88916927f41e1884ee9db3218bc13c477`.
+`b9bf7fc9e5a0ee9757d92b3d48be22857fc228e73b103b9d15275b618be40be0` y el recibo privado quedó
+fijado por `ff971bba520b345d088bbdb16ed452f0866d70a0b6795c3a79503bb0fc7efcf6`.
 El único gate aprobado es calidad mecánica; gobierno volvió correctamente a `HOLD` porque la
 política de entrega todavía no tiene las dos revisiones humanas requeridas.
 
