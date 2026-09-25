@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
+import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { resolveAudioUrl } from '@/lib/examAudio';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
@@ -69,6 +70,17 @@ const SKILL_ORDER = ['listening', 'reading', 'writing', 'speaking', 'general'];
 const SKILL_LABEL: Record<string, string> = {
   listening: 'Listening', reading: 'Reading', writing: 'Writing',
   speaking: 'Speaking', general: 'General',
+};
+
+const GOETHE_SKILL_LABEL: Record<string, string> = {
+  listening: 'Hören', reading: 'Lesen', writing: 'Schreiben',
+  speaking: 'Sprechen', general: 'Allgemein',
+};
+
+type FocusedPractice = {
+  level: 'A2';
+  skill: 'reading' | 'writing' | 'speaking';
+  part?: number;
 };
 
 function getSkillSections(mock: MockExam, skill: string) {
@@ -390,14 +402,20 @@ function SpeakRenderer({
   q,
   value,
   onChange,
+  recording,
+  onRecording,
+  goethePractice = false,
 }: {
   q: SpeakQuestion;
   value: string;
   onChange: (v: string) => void;
+  recording?: IeltsSpeakingRecording;
+  onRecording?: (recording: IeltsSpeakingRecording | undefined) => void;
+  goethePractice?: boolean;
 }) {
   return (
     <div className="lang-q lang-q--speak">
-      <div className="lang-speak__badge">🎙️ Parte {q.partNumber}</div>
+      <div className="lang-speak__badge">🎙️ {goethePractice ? 'Teil' : 'Parte'} {q.partNumber}</div>
       <p className="lang-q__text">{q.text}</p>
       {q.imageUrls && q.imageUrls.length > 0 && (
         <div className="lang-speak__images">
@@ -431,6 +449,7 @@ function SpeakRenderer({
       <div className="lang-speak__note">
         Practica en voz alta. El examen real se realiza con un examinador.
       </div>
+      {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recording} maxSeconds={180} onChange={onRecording} /> : null}
       <label className="lang-speak__notes">
         <span className="lang-speak__notes-label">Notas de respuesta</span>
         <textarea
@@ -516,31 +535,37 @@ function SectionView({
   mcqAnswers,
   writeAnswers,
   speakingAnswers,
+  recordings,
   formAnswers,
   multiAnswers,
   matchAnswers,
   onMCQ,
   onWrite,
   onSpeak,
+  onRecording,
   onForm,
   onMulti,
   onMatch,
   showResults,
+  goethePractice = false,
 }: {
   section: MockSection;
   mcqAnswers: Record<string, number>;
   writeAnswers: Record<string, string>;
   speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
   formAnswers: Record<string, Record<number, string>>;
   multiAnswers: Record<string, string[]>;
   matchAnswers: Record<string, Record<number, string>>;
   onMCQ: (id: string, i: number) => void;
   onWrite: (id: string, v: string) => void;
   onSpeak: (id: string, v: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
   onForm: (id: string, num: number, v: string) => void;
   onMulti: (id: string, letter: string) => void;
   onMatch: (id: string, num: number, v: string) => void;
   showResults: boolean;
+  goethePractice?: boolean;
 }) {
   return (
     <div className="lang-section">
@@ -557,7 +582,7 @@ function SectionView({
 
       {section.passage && (
         <div className="lang-section__passage">
-          <p className="lang-section__passage-label">📄 Read the text</p>
+          <p className="lang-section__passage-label">📄 {goethePractice ? 'Lesen Sie den Text' : 'Read the text'}</p>
           <div className="lang-section__passage-text">
             <PassageText text={section.passage} />
           </div>
@@ -598,6 +623,9 @@ function SectionView({
                 q={q as SpeakQuestion}
                 value={speakingAnswers[q.id] ?? ''}
                 onChange={v => onSpeak(q.id, v)}
+                recording={recordings?.[q.id]}
+                onRecording={onRecording ? recording => onRecording(q.id, recording) : undefined}
+                goethePractice={goethePractice}
               />
             );
           }
@@ -640,7 +668,7 @@ function SectionView({
 
 // ── Results ───────────────────────────────────────────────────────────────────
 
-function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, formAnswers, multiAnswers, matchAnswers, onRetry }: {
+function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, formAnswers, multiAnswers, matchAnswers, onRetry, focusedPractice, recordingCount = 0 }: {
   mock: MockExam;
   exam: Exam;
   mcqAnswers: Record<string, number>;
@@ -650,6 +678,8 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
   multiAnswers: Record<string, string[]>;
   matchAnswers: Record<string, Record<number, string>>;
   onRetry: () => void;
+  focusedPractice?: FocusedPractice;
+  recordingCount?: number;
 }) {
   const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
@@ -668,14 +698,15 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
   const speakingNotes = speakQuestions.filter(q => speakingAnswers[q.id]?.trim());
   const objectiveUnit = mock.examSlug === 'cambridge-b2' ? 'puntos objetivos' : 'correctas';
   const hasReviewResponses = writtenResponses.length > 0 || speakingNotes.length > 0;
+  const hasObjectiveScore = totalQ > 0;
 
   return (
     <div className="prac-results">
       <div className="prac-results__hero" style={{ '--exam-color': exam.color } as React.CSSProperties}>
-        <p className="prac-results__label">Resultado - preguntas objetivas</p>
-        <div className="prac-results__score">{score}</div>
-        <p className="prac-results__score-sub">sobre 100</p>
-        <p className="prac-results__fraction">{totalCorrect} / {totalQ} {objectiveUnit}</p>
+        <p className="prac-results__label">{focusedPractice ? 'Práctica Goethe A2 terminada' : 'Resultado - preguntas objetivas'}</p>
+        <div className="prac-results__score">{hasObjectiveScore ? score : '✓'}</div>
+        <p className="prac-results__score-sub">{hasObjectiveScore ? 'sobre 100' : GOETHE_SKILL_LABEL[focusedPractice?.skill ?? 'general']}</p>
+        {hasObjectiveScore ? <p className="prac-results__fraction">{totalCorrect} / {totalQ} {objectiveUnit}</p> : null}
       </div>
 
       {objectiveSections.length > 0 && (
@@ -704,7 +735,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
             ✍️ Tus respuestas escritas
           </h3>
           <p className="prac-results__responses-copy">
-            Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.
+            {focusedPractice
+              ? 'Compáralas con las consignas y verifica extensión, saludo, cierre y cumplimiento de los tres puntos.'
+              : 'Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.'}
           </p>
           {writtenResponses.map(q => (
             <div key={q.id} className="prac-results__response-card">
@@ -862,7 +895,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
             🎙️ Tus notas de Speaking
           </h3>
           <p className="prac-results__responses-copy">
-            Estas notas acompañan tu práctica oral para que el profesor pueda revisar ideas, estructura y vocabulario.
+            {focusedPractice
+              ? 'Usa estas notas para repetir tu respuesta con frases completas, conectores sencillos y una reacción clara a tu interlocutor.'
+              : 'Estas notas acompañan tu práctica oral para que el profesor pueda revisar ideas, estructura y vocabulario.'}
           </p>
           {speakingNotes.map(q => (
             <div key={q.id} className="prac-results__response-card">
@@ -877,9 +912,15 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
         </div>
       )}
 
+      {focusedPractice?.skill === 'speaking' && recordingCount > 0 ? (
+        <div className="prac-results__note"><p>🎙️ Completaste {recordingCount} {recordingCount === 1 ? 'grabación' : 'grabaciones'} en esta sesión. Puedes repetir el set para mejorar claridad, interacción y fluidez.</p></div>
+      ) : null}
+
       <div className="prac-results__note">
         <p>
-          {hasReviewResponses
+          {focusedPractice
+            ? 'Este resultado corresponde a una práctica por destreza y no equivale a un puntaje oficial Goethe. El simulacro A2 completo permanece bloqueado hasta que Hören tenga audio aprobado.'
+            : hasReviewResponses
             ? '📬 Tus respuestas escritas y notas de Speaking han sido enviadas para revisión. Pronto recibirás feedback.'
             : '📬 No agregaste respuestas escritas ni notas de Speaking para revisión. Puedes intentarlo de nuevo cuando quieras practicar el envío.'}
         </p>
@@ -887,7 +928,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
       <div className="prac-results__actions">
         <button onClick={onRetry} className="btn btn-ghost">Intentar de nuevo</button>
-        <Link href={`/examenes/${exam.slug}`} className="btn">Volver al examen</Link>
+        <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn">
+          {focusedPractice ? 'Elegir otro set' : 'Volver al examen'}
+        </Link>
       </div>
     </div>
   );
@@ -897,13 +940,14 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
 type Phase = 'intro' | 'exam' | 'lead' | 'results';
 
-export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+export default function LanguagePracticeClient({ exam, mock, focusedPractice }: { exam: Exam; mock: MockExam; focusedPractice?: FocusedPractice }) {
   const skills = orderedSkills(mock);
   const [phase, setPhase] = useState<Phase>('intro');
   const [activeSkill, setActiveSkill] = useState(skills[0] ?? 'reading');
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, number>>({});
   const [writeAnswers, setWriteAnswers] = useState<Record<string, string>>({});
   const [speakingAnswers, setSpeakingAnswers] = useState<Record<string, string>>({});
+  const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording | undefined>>({});
   const [formAnswers, setFormAnswers] = useState<Record<string, Record<number, string>>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
@@ -922,6 +966,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
 
   const handleSpeak = useCallback((id: string, v: string) => {
     setSpeakingAnswers(prev => ({ ...prev, [id]: v }));
+  }, []);
+
+  const handleRecording = useCallback((id: string, recording: IeltsSpeakingRecording | undefined) => {
+    setRecordings(previous => ({ ...previous, [id]: recording }));
   }, []);
 
   const handleForm = useCallback((id: string, num: number, v: string) => {
@@ -943,6 +991,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     setMcqAnswers({});
     setWriteAnswers({});
     setSpeakingAnswers({});
+    setRecordings({});
     setFormAnswers({});
     setMultiAnswers({});
     setMatchAnswers({});
@@ -962,7 +1011,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
         else if (q.type === 'multiselect') { total++; if ((multiAnswers[q.id] ?? []).length > 0) done++; }
         else if (q.type === 'matching') { for (const it of q.items) { total++; if (matchAnswers[q.id]?.[it.num]) done++; } }
         else if (q.type === 'write') { total++; if ((writeAnswers[q.id] ?? '').trim()) done++; }
-        else if (q.type === 'speak') { total++; if ((speakingAnswers[q.id] ?? '').trim()) done++; }
+        else if (q.type === 'speak') { total++; if ((speakingAnswers[q.id] ?? '').trim() || recordings[q.id]) done++; }
       }
     }
     return [sk, { done, total }];
@@ -976,7 +1025,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
 
   // Save to Supabase when entering results phase
   useEffect(() => {
-    if (phase !== 'results') return;
+    if (phase !== 'results' || focusedPractice) return;
 
     const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
@@ -1019,7 +1068,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       }
     ).catch(() => {/* silent — don't block UI */});
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase]);
+  }, [phase, focusedPractice]);
 
   if (phase === 'lead') {
     return (
@@ -1048,8 +1097,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       multiAnswers={multiAnswers}
       matchAnswers={matchAnswers}
       onRetry={handleRetry}
+      focusedPractice={focusedPractice}
+      recordingCount={Object.values(recordings).filter(Boolean).length}
     />;
-    if (exam.slug === 'goethe') {
+    if (exam.slug === 'goethe' && !focusedPractice) {
       return <div className="prac-shell"><ExamResultOffers
         examSlug="goethe"
         examName={exam.name}
@@ -1097,7 +1148,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
           <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
             Comenzar práctica
           </button>
-          <Link href={`/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
+          <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
             ← Volver
           </Link>
         </div>
@@ -1112,16 +1163,16 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     <div className="prac-shell prac-shell--exam" style={{ '--exam-color': exam.color } as React.CSSProperties}>
       <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
         <div className="prac-topbar__left">
-          <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">{exam.name}</Link>
+          <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="prac-topbar__back">{focusedPractice ? 'Práctica A2' : exam.name}</Link>
           <span className="prac-topbar__title">{mock.title}</span>
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs}</span>
-          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('lead')} />
+          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase(focusedPractice ? 'results' : 'lead')} />
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={SKILL_LABEL} />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
         {activeSections.map((sec, i) => (
@@ -1131,16 +1182,19 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
             mcqAnswers={mcqAnswers}
             writeAnswers={writeAnswers}
             speakingAnswers={speakingAnswers}
+            recordings={focusedPractice?.skill === 'speaking' ? recordings : undefined}
             formAnswers={formAnswers}
             multiAnswers={multiAnswers}
             matchAnswers={matchAnswers}
             onMCQ={handleMCQ}
             onWrite={handleWrite}
             onSpeak={handleSpeak}
+            onRecording={focusedPractice?.skill === 'speaking' ? handleRecording : undefined}
             onForm={handleForm}
             onMulti={handleMulti}
             onMatch={handleMatch}
             showResults={false}
+            goethePractice={Boolean(focusedPractice)}
           />
         ))}
 
@@ -1151,12 +1205,12 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
               const prev = skills[i - 1], next = skills[i + 1];
               return (
                 <span key={sk} style={{ display: 'flex', gap: '0.75rem' }}>
-                  {prev && <button onClick={() => setActiveSkill(prev)} className="btn btn-ghost btn-sm">← {SKILL_LABEL[prev]}</button>}
+                  {prev && <button onClick={() => setActiveSkill(prev)} className="btn btn-ghost btn-sm">← {(focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL)[prev]}</button>}
                   {next
-                    ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} →</button>
+                    ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{(focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL)[next]} →</button>
                     : <button onClick={() => {
                         if (unanswered > 0 && !confirm(`${unanswered} pregunta(s) sin responder. ¿Finalizar de todas formas?`)) return;
-                        setPhase('lead');
+                        setPhase(focusedPractice ? 'results' : 'lead');
                       }} className="btn">Finalizar práctica</button>
                   }
                 </span>

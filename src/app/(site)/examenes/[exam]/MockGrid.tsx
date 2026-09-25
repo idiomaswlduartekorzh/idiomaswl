@@ -62,7 +62,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               <div className="wl-mock-card__badges">
                 {mock.badge ? <span className="wl-exam-status-chip">{mock.badge}</span> : null}
                 {goetheAudioPending ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
-                {goetheA2Held ? <span className="wl-exam-status-chip">En reconstrucción</span> : null}
+                {goetheA2Held ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
                 <span className={`wl-mock-card__tag ${mock.free && !goetheA2Held ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
                   {goetheA2Held ? 'Bloqueado' : mock.free ? 'Gratis' : 'Pro'}
                 </span>

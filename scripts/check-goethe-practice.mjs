@@ -74,16 +74,22 @@ assert.deepEqual(nextGoethePractice('a1-7', 'speaking'), { href: goethePracticeH
 assert.equal(nextGoethePractice('a1-7', 'listening'), undefined, 'Hören no debe enlazar a un set sin audio publicado');
 assert.equal(nextGoethePractice('a1-10', 'speaking'), undefined, 'Set 10 debe cerrar la secuencia editorial');
 
-const librarySource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/[skill]/page.tsx'), 'utf8');
+const hubSource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/page.tsx'), 'utf8');
+const levelSource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/[skill]/page.tsx'), 'utf8');
+const librarySource = fs.readFileSync(path.join(root, 'src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx'), 'utf8');
 const routeSource = fs.readFileSync(path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx'), 'utf8');
 const runnerSource = fs.readFileSync(path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheA1PracticeClient.tsx'), 'utf8');
 
 assert.match(librarySource, /&teil=\$\{teil\.teil\}/, 'La biblioteca no enlaza cada Teil');
+assert.match(hubSource, /A1 · A2 · B1 · B2/, 'El hub Goethe no expone los cuatro niveles solicitados');
+assert.match(levelSource, /Hören bloqueado por diseño/, 'El nivel A2 no explica el bloqueo de Hören');
+assert.match(librarySource, /Práctica A2, no simulacro completo/, 'La biblioteca no separa práctica A2 de examen completo');
 assert.match(routeSource, /parseGoethePracticeTeil\(skill, query\.teil\)/, 'La ruta no valida el Teil solicitado');
+assert.match(routeSource, /getGoetheA2PracticeMock\(mockId, a2Skill, a2PracticePart\)/, 'La ruta A2 no usa el resolvedor seguro de práctica');
 assert.match(routeSource, /key=\{`\$\{mock\.id\}:\$\{skill \?\? 'exam'\}:\$\{practicePart \?\? 'all'\}`\}/, 'La navegación entre Teile debe reiniciar el estado del runner');
 assert.match(runnerSource, /goethePracticeSections\(mock, practiceSkill, practicePart\)/, 'El runner no filtra el material del Teil');
 assert.match(runnerSource, /no equivale a un puntaje oficial Goethe/, 'Falta distinguir el resultado parcial del puntaje oficial');
 assert.match(runnerSource, /showListeningEvidence/, 'La práctica de Hören perdió la evidencia posterior a la entrega');
 assert.match(runnerSource, /nextGoethePractice\(mock\.id, practiceSkill, practicePart\)/, 'El runner no ofrece continuidad contextual');
 
-console.log('Práctica Goethe íntegra: 10 sets editoriales, Hören habilitado en 7, 11 Teile aislables y feedback posterior protegido.');
+console.log('Práctica Goethe íntegra: niveles A1–B2 visibles; A1 completo; A2 con Lesen, Schreiben y Sprechen; Hören y exámenes A2 bloqueados.');

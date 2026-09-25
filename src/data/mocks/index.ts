@@ -5,7 +5,7 @@ import { withToefl2026FixedForm } from './toefl-fixed-form';
 import { withIeltsListeningProductionTranscript } from './ielts-listening-production';
 import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
 import { withIeltsBalancedChoicePositions } from './ielts-choice-presentation';
-import { isGoetheA2Held } from '@/lib/goethe/a2-release';
+import { isGoetheA2Held, isGoetheA2PracticePublished } from '@/lib/goethe/a2-release';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -387,6 +387,39 @@ export function getMock(examSlug: string, mockId: string): MockExam | null {
   return examSlug === 'icfes' && mockId.startsWith('mock-')
     ? normalizeIcfesMock(mock)
     : mock;
+}
+
+export function getGoetheA2PracticeMock(
+  mockId: string,
+  skill: 'reading' | 'writing' | 'speaking',
+  part?: number,
+): MockExam | null {
+  if (!isGoetheA2PracticePublished(mockId, skill)) return null;
+  const mock = MOCK_REGISTRY[`goethe:${mockId}`] ?? null;
+  if (!mock) return null;
+
+  const sections = mock.sections.filter(section => {
+    if (section.skill !== skill) return false;
+    if (part === undefined) return true;
+    const officialPart = skill === 'reading'
+      ? section.part
+      : skill === 'writing'
+        ? section.part - 8
+        : section.part - 10;
+    return officialPart === part;
+  });
+  if (sections.length === 0) return null;
+
+  const minutes = skill === 'reading' ? 30 : skill === 'writing' ? 30 : 15;
+  const partMinutes = skill === 'reading' ? [8, 7, 7, 8] : skill === 'writing' ? [15, 15] : [5, 5, 5];
+  const setNumber = Number(mockId.split('-')[1]);
+  return {
+    ...mock,
+    title: `Goethe-Zertifikat A2 · Set ${setNumber} · ${skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen'}`,
+    subtitle: `${part === undefined ? 'Destreza completa' : `Teil ${part}`} · práctica guiada A2 WeLearn`,
+    timeMinutes: part === undefined ? minutes : partMinutes[part - 1],
+    sections,
+  };
 }
 
 export type { MockExam } from './types';

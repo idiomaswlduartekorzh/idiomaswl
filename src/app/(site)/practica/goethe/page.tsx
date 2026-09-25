@@ -1,20 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, BookOpenCheck, ClipboardCheck, Headphones, Mic2, PenLine } from 'lucide-react';
+import { ArrowRight, BookOpenCheck, LockKeyhole, Route } from 'lucide-react';
 
-import { GOETHE_A1_AUDIO_READY_SETS, GOETHE_A1_SET_COUNT } from '@/lib/goethe/release';
 import styles from '../toefl/ios.module.css';
 
-const AUDIO_READY_COUNT = GOETHE_A1_AUDIO_READY_SETS.size;
-const AUDIO_PENDING_COUNT = GOETHE_A1_SET_COUNT - AUDIO_READY_COUNT;
-
 export const metadata: Metadata = {
-  title: 'Práctica Goethe A1: Hören, Lesen, Schreiben y Sprechen',
-  description: `Practica por separado las cuatro destrezas del Goethe-Zertifikat A1 con ${GOETHE_A1_SET_COUNT} sets originales de WeLearn; ${AUDIO_READY_COUNT} incluyen audio completo.`,
+  title: 'Práctica Goethe A1, A2, B1 y B2 por destreza',
+  description: 'Entrena Goethe por nivel y destreza. A1 está disponible; A2 abre Lesen, Schreiben y Sprechen en diez sets y mantiene Hören bloqueado hasta aprobar el audio.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/goethe' },
   openGraph: {
-    title: 'Práctica Goethe A1 por destreza y simulacros completos',
-    description: `Hören, Lesen, Schreiben y Sprechen por separado en ${GOETHE_A1_SET_COUNT} sets A1 originales; ${AUDIO_READY_COUNT} simulacros tienen audio completo.`,
+    title: 'Práctica Goethe por niveles · A1, A2, B1 y B2',
+    description: 'Bibliotecas Goethe organizadas por nivel, set y Teil con material original de WeLearn.',
     url: 'https://www.idiomaswl.com/practica/goethe',
     type: 'website',
     locale: 'es_CO',
@@ -22,52 +18,83 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const skills = [
-  { id: 'listening', label: 'Hören', note: '15 preguntas · 20 min', icon: Headphones },
-  { id: 'reading', label: 'Lesen', note: '15 preguntas · 25 min', icon: BookOpenCheck },
-  { id: 'writing', label: 'Schreiben', note: 'Formulario + mensaje · 20 min', icon: PenLine },
-  { id: 'speaking', label: 'Sprechen', note: '3 partes · 15 min', icon: Mic2 },
+const levels = [
+  {
+    id: 'a1',
+    label: 'A1',
+    subtitle: 'Start Deutsch 1',
+    description: 'Hören, Lesen, Schreiben y Sprechen por separado en los diez sets ya publicados.',
+    status: '4 destrezas disponibles',
+    available: true,
+  },
+  {
+    id: 'a2',
+    label: 'A2',
+    subtitle: 'Goethe-Zertifikat A2',
+    description: 'Diez sets originales con Lesen, Schreiben y Sprechen listos. Hören permanece bloqueado hasta aprobar sus pistas.',
+    status: '3 destrezas disponibles',
+    available: true,
+  },
+  {
+    id: 'b1',
+    label: 'B1',
+    subtitle: 'Goethe-Zertifikat B1',
+    description: 'La sección ya está creada para recibir el próximo banco auditado sin mezclar materiales preliminares.',
+    status: 'Biblioteca bloqueada',
+    available: false,
+  },
+  {
+    id: 'b2',
+    label: 'B2',
+    subtitle: 'Goethe-Zertifikat B2',
+    description: 'La estructura está montada; se habilitará únicamente cuando contenido, visuales y scoring pasen revisión.',
+    status: 'Biblioteca bloqueada',
+    available: false,
+  },
 ] as const;
 
 export default function GoethePracticePage() {
   return <main className={styles.page} data-exam="goethe" lang="es">
     <header className={styles.hero}><div className="wrap">
-      <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><span>Goethe A1</span></nav>
+      <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><span>Goethe</span></nav>
       <div className={styles.heroCopy}>
-        <p className={styles.kicker}>Goethe A1 · rutas claras de práctica</p>
-        <h1>Elige qué quieres practicar.</h1>
-        <p className={styles.lead}>Entrena una sola destreza en modo guiado o completa un simulacro de 80 minutos con la experiencia de examen ya aprobada.</p>
-        <p className={styles.disclosure}>Material original de WeLearn alineado con la arquitectura pública del nivel A1. No es contenido oficial ni está afiliado al Goethe-Institut.</p>
+        <p className={styles.kicker}>Goethe · práctica por nivel y destreza</p>
+        <h1>Elige tu nivel.</h1>
+        <p className={styles.lead}>Entra a una biblioteca organizada por Fertigkeit, set y Teil. Puedes trabajar únicamente la destreza que necesitas sin abrir un simulacro incompleto.</p>
+        <p className={styles.disclosure}>Material original de WeLearn alineado con la arquitectura pública de cada nivel. No es contenido oficial ni está afiliado al Goethe-Institut.</p>
       </div>
-      <dl className={styles.facts} aria-label="Práctica Goethe A1 disponible">
-        <div><dt>Nivel</dt><dd>A1</dd><dd className={styles.factNote}>Start Deutsch 1</dd></div>
-        <div><dt>Destrezas</dt><dd>4</dd><dd className={styles.factNote}>práctica independiente</dd></div>
-        <div><dt>Sets A1</dt><dd>{GOETHE_A1_SET_COUNT}</dd><dd className={styles.factNote}>{AUDIO_READY_COUNT} con audio completo</dd></div>
-        <div><dt>Examen completo</dt><dd>80</dd><dd className={styles.factNote}>minutos</dd></div>
+      <dl className={styles.facts} aria-label="Estado de la práctica Goethe">
+        <div><dt>Niveles</dt><dd>4</dd><dd className={styles.factNote}>A1 · A2 · B1 · B2</dd></div>
+        <div><dt>Sets listos</dt><dd>20</dd><dd className={styles.factNote}>10 A1 + 10 A2</dd></div>
+        <div><dt>Destrezas abiertas</dt><dd>7</dd><dd className={styles.factNote}>4 en A1 · 3 en A2</dd></div>
+        <div><dt>A2 completo</dt><dd>🔒</dd><dd className={styles.factNote}>Hören y examen bloqueados</dd></div>
       </dl>
     </div></header>
 
-    <section className={styles.modes} aria-labelledby="goethe-mode-heading"><div className="wrap">
-      <div className={styles.sectionHeading}><p>Empieza aquí</p><h2 id="goethe-mode-heading">¿Cómo quieres trabajar hoy?</h2><span>Cada ruta explica qué vas a practicar antes de iniciar el tiempo o el audio.</span></div>
-      <div className={styles.modeGrid}>
-        <Link href="#destrezas" className={`${styles.modeCard} ${styles.modeExercises}`}>
-          <div className={styles.modeTop}><span className={styles.modeIcon}><ClipboardCheck aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusAvailable}`}>Disponible</span></div>
-          <p className={styles.modeNumber}>01</p><h3>Práctica por destreza</h3><p>Elige Hören, Lesen, Schreiben o Sprechen y trabaja únicamente ese módulo.</p><span className={styles.modeAction}>Elegir una destreza <ArrowRight aria-hidden="true" /></span>
-        </Link>
-        <Link href="/practica/goethe/listening" className={`${styles.modeCard} ${styles.modePractice}`}>
-          <div className={styles.modeTop}><span className={styles.modeIcon}><Headphones aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusAvailable}`}>Modo guiado</span></div>
-          <p className={styles.modeNumber}>02</p><h3>Empezar con Hören</h3><p>Escucha con repeticiones disponibles y revisa cada respuesta cuando termines el módulo.</p><span className={styles.modeAction}>Abrir Hören A1 <ArrowRight aria-hidden="true" /></span>
-        </Link>
-        <Link href="/examenes/goethe#practica" className={`${styles.modeCard} ${styles.modeMocks}`}>
-          <div className={styles.modeTop}><span className={styles.modeIcon}><BookOpenCheck aria-hidden="true" /></span><span className={`${styles.status} ${styles.statusMocks}`}>{AUDIO_READY_COUNT} completos · {AUDIO_PENDING_COUNT} parciales</span></div>
-          <p className={styles.modeNumber}>03</p><h3>Simulacros completos</h3><p>Haz Hören, Lesen, Schreiben y Sprechen en una sesión continua con resultado Goethe sobre 100.</p><span className={styles.modeAction}>Elegir simulacro <ArrowRight aria-hidden="true" /></span>
-        </Link>
+    <section className={styles.modes} aria-labelledby="goethe-level-heading"><div className="wrap">
+      <div className={styles.sectionHeading}><p>Bibliotecas Goethe</p><h2 id="goethe-level-heading">Una ruta clara para cada etapa.</h2><span>Los niveles bloqueados se muestran desde ahora para mantener una navegación estable, pero no sirven contenido sin auditoría editorial.</span></div>
+      <div className={styles.levelGrid}>
+        {levels.map((level, index) => {
+          const content = <>
+            <div className={styles.modeTop}>
+              <span className={styles.modeIcon}>{level.available ? <Route aria-hidden="true" /> : <LockKeyhole aria-hidden="true" />}</span>
+              <span className={`${styles.status} ${level.available ? styles.statusAvailable : styles.statusSoon}`}>{level.status}</span>
+            </div>
+            <p className={styles.modeNumber}>{String(index + 1).padStart(2, '0')} · {level.subtitle}</p>
+            <h3>{level.label}</h3>
+            <p>{level.description}</p>
+            <span className={level.available ? styles.modeAction : styles.modeUnavailable}>{level.available ? 'Abrir nivel' : 'Próximamente'} {level.available ? <ArrowRight aria-hidden="true" /> : <LockKeyhole aria-hidden="true" />}</span>
+          </>;
+          return level.available
+            ? <Link key={level.id} href={`/practica/goethe/${level.id}`} className={`${styles.modeCard} ${styles.modeExercises}`}>{content}</Link>
+            : <article key={level.id} className={`${styles.modeCard} ${styles.lockedCard}`} aria-label={`${level.label}, próximamente`}>{content}</article>;
+        })}
       </div>
     </div></section>
 
-    <section className={styles.preview} id="destrezas" aria-labelledby="goethe-skills-heading"><div className="wrap">
-      <div className={styles.previewHeader}><div><p>Nivel A1</p><h2 id="goethe-skills-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver los {GOETHE_A1_SET_COUNT} sets <ArrowRight aria-hidden="true" /></Link></div>
-      <div className={styles.sectionStrip}>{skills.map(({ id, label, note, icon: Icon }) => <Link key={id} href={`/practica/goethe/${id}`} className={styles.sectionPreview} data-section={id}><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div>
+    <section className={styles.preview} aria-labelledby="goethe-release-heading"><div className="wrap">
+      <div className={styles.previewHeader}><div><p>Publicación responsable</p><h2 id="goethe-release-heading">A2 útil ahora, sin fingir que el audio está listo.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver simulacros bloqueados <ArrowRight aria-hidden="true" /></Link></div>
+      <aside className={styles.libraryNote}><BookOpenCheck aria-hidden="true" /><strong>Separación de producto</strong><p>Lesen, Schreiben y Sprechen A2 se pueden estudiar por secciones. Los diez exámenes completos siguen bloqueados y Hören no se sirve por ninguna ruta pública hasta tener audio aprobado.</p></aside>
     </div></section>
   </main>;
 }

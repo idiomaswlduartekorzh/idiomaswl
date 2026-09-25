@@ -1,6 +1,6 @@
 import { notFound, redirect } from 'next/navigation';
 import { EXAMS } from '@/data/exams';
-import { getMock } from '@/data/mocks';
+import { getGoetheA2PracticeMock, getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
 import TOEFLPracticeClient from './TOEFLPracticeClient';
@@ -10,7 +10,7 @@ import TOPIKPracticeClient from './TOPIKPracticeClient';
 import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
-import { parseGoethePracticeTeil, type GoethePracticeSkill } from '@/lib/goethe/practice';
+import { parseGoetheA2PracticeTeil, parseGoethePracticeTeil, type GoetheA2PracticeSkill, type GoethePracticeSkill } from '@/lib/goethe/practice';
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 
@@ -32,7 +32,16 @@ export default async function PracticePage({ params, searchParams }: { params: P
   const { exam: slug, mockId } = await params;
   const query = await searchParams;
   const exam = EXAMS[slug];
-  const mock = getMock(slug, mockId);
+  const a2Skill = slug === 'goethe'
+    && /^a2-(?:[1-9]|10)$/.test(mockId)
+    && query.mode === 'practice'
+    && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
+      ? query.skill as GoetheA2PracticeSkill
+      : undefined;
+  const a2PracticePart = a2Skill ? parseGoetheA2PracticeTeil(a2Skill, query.teil) : undefined;
+  const mock = a2Skill
+    ? getGoetheA2PracticeMock(mockId, a2Skill, a2PracticePart)
+    : getMock(slug, mockId);
 
   if (!exam || !mock) notFound();
 
@@ -69,6 +78,14 @@ export default async function PracticePage({ params, searchParams }: { params: P
     if (!hasGoetheA1Audio(mockId) && skill === 'listening') redirect('/practica/goethe/listening');
     const practicePart = skill ? parseGoethePracticeTeil(skill, query.teil) : undefined;
     return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
+  }
+  if (slug === 'goethe' && a2Skill) {
+    return <LanguagePracticeClient
+      key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}`}
+      exam={exam}
+      mock={mock}
+      focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
+    />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;
 

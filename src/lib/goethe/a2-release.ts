@@ -16,6 +16,8 @@ export type GoetheA2ReleaseRecord = {
   audioReady: boolean;
   scoringReady: boolean;
   humanApproved: boolean;
+  practicePublished?: boolean;
+  practiceSkills?: Array<'reading' | 'writing' | 'speaking'>;
 };
 
 const releases = new Map(
@@ -42,4 +44,19 @@ export function isGoetheA2Published(mockId: string): boolean {
 
 export function isGoetheA2Held(mockId: string): boolean {
   return /^a2-\d+$/.test(mockId) && !isGoetheA2Published(mockId);
+}
+
+export function isGoetheA2PracticePublished(
+  mockId: string,
+  skill: 'reading' | 'writing' | 'speaking',
+): boolean {
+  const release = getGoetheA2Release(mockId);
+  return Boolean(
+    release
+    && release.practicePublished
+    && release.practiceSkills?.includes(skill)
+    && release.contentReady
+    && release.visualsReady
+    && release.scoringReady,
+  );
 }

@@ -128,11 +128,11 @@ expectText('src/app/(site)/practica/ingles/a1/vocabulario/[slug]/page.tsx', 'Voc
 expectText('src/app/(site)/nivel-radar/page.tsx', 'NivelRadarClient');
 expectText('src/app/(site)/practica/ielts/IELTSHubClient.tsx', 'IELTS Academic');
 expectText('src/app/(site)/practica/PracticaClient.tsx', "href: '/practica/goethe'");
-expectText('src/app/(site)/practica/goethe/page.tsx', 'Cuatro destrezas. Una práctica cada vez.');
-expectText('src/app/(site)/practica/goethe/page.tsx', '/practica/goethe/${id}');
-expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'goethePracticeSetNumbers(skill as Skill)');
-expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', 'mode=practice&skill=${skill}');
-expectText('src/app/(site)/practica/goethe/[skill]/page.tsx', '&teil=${teil.teil}');
+expectText('src/app/(site)/practica/goethe/page.tsx', 'A1 · A2 · B1 · B2');
+expectText('src/app/(site)/practica/goethe/page.tsx', '/practica/goethe/${level.id}');
+expectText('src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx', 'goethePracticeSetNumbers(skill as GoethePracticeSkill)');
+expectText('src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx', 'mode=practice&skill=${skill}');
+expectText('src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx', '&teil=${teil.teil}');
 expectText('src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx', 'parseGoethePracticeTeil(skill, query.teil)');
 expectText('src/app/(site)/practica/ielts/academic/writing/task1/page.tsx', 'Task 1');
 expectText('src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx', 'IcfesAdaptiveGame');

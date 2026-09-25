@@ -62,6 +62,24 @@ emitieron los meta-redireccionamientos protegidos esperados.
 Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 [`GOETHE-A1-SETS-8-10.md`](GOETHE-A1-SETS-8-10.md).
 
+## Práctica Goethe A2 y catálogo A1–B2 — 24 de septiembre de 2026
+
+`codex/goethe-a2-production` parte de `origin/main` en `092fefda` e integra la
+fábrica editorial A2 aprobada. Estado: `EN_VALIDACION`. Responsable: Codex.
+Alcance: navegación de práctica Goethe A1, A2, B1 y B2; bibliotecas A2 por set y
+Teil para Lesen, Schreiben y Sprechen; y diez simulacros A2 visibles pero
+bloqueados en Exámenes. Hören A2 y cualquier acceso al examen completo permanecen
+cerrados hasta producir y aprobar sus audios. La práctica por destreza es gratuita;
+el flujo de resultados, acceso y pagos de los exámenes completos no se modifica.
+No requiere migraciones ni variables nuevas. La publicación está protegida por un
+registro separado de release de práctica, de modo que habilitar una destreza nunca
+habilita accidentalmente un mock completo. Validaciones previas: 21/21 pruebas de
+estructura, scoring, originalidad y sesgos; guardianes Goethe y catálogo; TypeScript;
+ESLint focalizado; build Webpack de 2.584 páginas; y recorrido visual local del hub,
+bibliotecas, tiempos por Teil, redirección heredada de A1 y niveles bloqueados.
+Pendiente para declarar `DESPLEGADO`: integrar el SHA final en `main`, confirmar el
+deployment de Vercel y ejecutar el smoke público de rutas abiertas y cerradas.
+
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
