@@ -15,6 +15,7 @@ test('diagnostic audio invoice is deterministic and reports unresolved voice app
   assert.deepEqual(invoice, repeated);
   assert.equal(invoice.files, 2);
   assert.ok(invoice.billableCharacters > 100);
+  assert.equal(invoice.estimatedMaximumCreditDebit, invoice.billableCharacters * 2);
   assert.deepEqual(invoice.unresolvedProfiles, []);
   assert.ok(invoice.unapprovedProfiles.length > 0);
   assert.equal(invoice.generationAuthorized, false);
@@ -33,6 +34,7 @@ test('default command is a dry run with no credential requirement or file output
 test('generation path requires package approval, capped characters, credit reserve and seed', () => {
   assert.match(source, /--approve-package/);
   assert.match(source, /--max-billable-characters/);
+  assert.match(source, /--max-credit-debit/);
   assert.match(source, /--min-remaining-credits/);
   assert.match(source, /--seed-salt/);
   assert.match(source, /refusing to overwrite/);

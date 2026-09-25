@@ -41,6 +41,7 @@ export function diagnosticListeningAudioInvoice(briefs) {
     files: briefs.length,
     requestSegments,
     billableCharacters,
+    estimatedMaximumCreditDebit: Math.ceil(billableCharacters * casting.creditSafetyMultiplier),
     modelId: casting.modelId,
     profiles,
     unresolvedProfiles: profiles.filter(profile => !casting.profiles[profile]?.voiceId),
@@ -135,6 +136,9 @@ async function generate(briefs) {
   assert.ok(Number.isInteger(maxCharacters) && maxCharacters >= invoice.billableCharacters, `pass --max-billable-characters of at least ${invoice.billableCharacters}`);
   const protectedReserve = Number(value('--min-remaining-credits'));
   assert.ok(Number.isInteger(protectedReserve) && protectedReserve >= 0, 'pass a non-negative --min-remaining-credits');
+  const maximumCreditDebit = Number(value('--max-credit-debit'));
+  assert.ok(Number.isInteger(maximumCreditDebit) && maximumCreditDebit >= invoice.estimatedMaximumCreditDebit,
+    `pass --max-credit-debit of at least ${invoice.estimatedMaximumCreditDebit}`);
   const seedSalt = value('--seed-salt');
   assert.ok(seedSalt && seedSalt.length >= 8, 'pass a --seed-salt with at least eight characters');
   const apiKey = process.env.ELEVENLABS_API_KEY;
@@ -145,8 +149,8 @@ async function generate(briefs) {
     apiJson('/v1/voices', apiKey),
   ]);
   const remainingCredits = Number(subscription.character_limit) - Number(subscription.character_count);
-  assert.ok(Number.isFinite(remainingCredits) && remainingCredits >= invoice.billableCharacters + protectedReserve,
-    `generation needs ${invoice.billableCharacters} characters plus ${protectedReserve} protected credits; ${remainingCredits} remain`);
+  assert.ok(Number.isFinite(remainingCredits) && remainingCredits >= maximumCreditDebit + protectedReserve,
+    `generation permits up to ${maximumCreditDebit} credits plus ${protectedReserve} protected credits; ${remainingCredits} remain`);
   const availableVoiceIds = new Set((voicesPayload.voices ?? []).map(voice => voice.voice_id));
   for (const profile of invoice.profiles) assert.ok(availableVoiceIds.has(casting.profiles[profile].voiceId), `${profile} voice is unavailable`);
 
@@ -179,14 +183,21 @@ async function generate(briefs) {
       status: 'generated-private-pending-independent-transcript-and-alignment-review',
     });
   }
+  const endingSubscription = await apiJson('/v1/user/subscription', apiKey);
+  const endingCredits = Number(endingSubscription.character_limit) - Number(endingSubscription.character_count);
+  const actualCreditDebit = remainingCredits - endingCredits;
   writeFileSync(path.join(outputRoot, 'generation-log.json'), `${JSON.stringify({
     generatedAt: new Date().toISOString(), castingVersion: casting.castingVersion,
-    packageSha256: invoice.packageSha256, invoice, generated,
+    packageSha256: invoice.packageSha256, invoice, approvedMaximumCreditDebit: maximumCreditDebit,
+    remainingCreditsBefore: remainingCredits, remainingCreditsAfter: endingCredits, actualCreditDebit, generated,
   }, null, 2)}\n`);
+  assert.ok(Number.isFinite(actualCreditDebit) && actualCreditDebit >= 0 && actualCreditDebit <= maximumCreditDebit,
+    `actual credit debit ${actualCreditDebit} exceeded approved ceiling ${maximumCreditDebit}`);
+  assert.ok(endingCredits >= protectedReserve, `generation breached the protected reserve of ${protectedReserve} credits`);
   if (generated.some(file => !file.durationAccepted)) {
     throw new Error(`generated audio remains private: ${generated.filter(file => !file.durationAccepted).length} files fall outside duration envelopes`);
   }
-  process.stdout.write(`${JSON.stringify({ outputRoot, files: generated.length, status: 'private-pending-human-qa' }, null, 2)}\n`);
+  process.stdout.write(`${JSON.stringify({ outputRoot, files: generated.length, actualCreditDebit, status: 'private-pending-human-qa' }, null, 2)}\n`);
 }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);

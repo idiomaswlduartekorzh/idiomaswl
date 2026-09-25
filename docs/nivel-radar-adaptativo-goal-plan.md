@@ -117,7 +117,8 @@ Actualizado el 24 de septiembre de 2026:
   grabación, de modo que una locución alterada no puede entrar silenciosamente al banco. El
   generador ElevenLabs reutiliza los controles del motor internacional: el dry run A1–C2
   factura **36 archivos, 116 segmentos y 30.386 caracteres**; la generación exige hash exacto
-  del paquete, tope de caracteres, reserva de créditos, semilla, cuatro voces existentes y
+  del paquete, tope de caracteres, techo independiente de débito, reserva de créditos, semilla,
+  verificación de saldo antes/después, cuatro voces existentes y
   aprobación explícita del reparto. La salida nunca va a `public/` y queda pendiente de QA
   humano. Se propusieron cuatro voces que ya tenían aprobación separada en el casting TOEFL,
   pero esa aprobación no se hereda: el reparto diagnóstico sigue bloqueado hasta una escucha y
