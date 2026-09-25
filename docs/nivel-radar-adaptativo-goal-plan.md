@@ -29,10 +29,13 @@ Actualizado el 24 de septiembre de 2026:
 
 - **Fase 0 — en progreso avanzado:** contrato, blueprint, descriptores de evidencia y snapshot
   verificable de la línea base implementados. Falta aprobación académica y feature flag.
-- **Fase 1 — recuperación técnica completada; curaduría pendiente:** 80 audios heredados
-  inventariados con commit, blob, SHA-256, duración y vínculo determinista al archivo de guion.
-  Los 60 audios ingleses fueron recuperados en staging privado y verificados; ninguno se
-  considera aprobado lingüísticamente todavía.
+- **Fase 1 — inventario y recuperación técnica completados; curaduría pendiente:** 80 audios
+  heredados inventariados con commit, blob, SHA-256, duración y vínculo determinista al archivo
+  de guion. Los 60 audios ingleses fueron recuperados en staging privado y verificados. Además,
+  965 interacciones objetivas de ICFES, TOEFL y Cambridge quedaron clasificadas por habilidad,
+  rango candidato, exposición de clave, huella y reparación requerida. El análisis demuestra
+  que 820 están concentradas en B2, 840 exponen su clave en material público y los 40 MP3 de
+  Cambridge necesitan segmentación. Ningún candidato se considera aprobado lingüísticamente.
 - **Fase 2 — núcleo en progreso:** contratos público/privado, scoring objetivo en servidor,
   validación antimanipulación y una migración durable con tablas de intentos, etapas,
   respuestas, escritura y auditoría implementados. Las tablas niegan acceso directo a roles de
@@ -54,7 +57,8 @@ Actualizado el 24 de septiembre de 2026:
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
-- **Pruebas actuales:** 58 pruebas específicas pasan y TypeScript compila sin errores.
+- **Pruebas actuales:** la suite específica incorpora ahora controles del inventario de
+  candidatos y TypeScript compila sin errores (véase el último resultado de CI para el conteo).
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.
