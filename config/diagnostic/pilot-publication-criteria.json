@@ -1,0 +1,18 @@
+{
+  "criteriaVersion": "english-diagnostic-pilot-criteria-v1",
+  "status": "provisional-pending-academic-approval",
+  "minimumStartedAttempts": 50,
+  "minimumCompletionRate": 0.75,
+  "minimumResponsesPerItem": 200,
+  "minimumDiscriminationSample": 50,
+  "minimumCorrectedItemTotal": 0.15,
+  "maximumOmissionRate": 0.15,
+  "minimumWritingPairs": 50,
+  "minimumWritingExactAgreement": 0.7,
+  "maximumWritingMeanAbsoluteLevelDifference": 0.5,
+  "maximumWritingAdjudicationRate": 0.2,
+  "minimumIndependentReferencePairs": 100,
+  "minimumReferenceExactAgreement": 0.55,
+  "minimumReferenceWithinOneLevel": 0.85,
+  "maximumReferenceSevereDisagreement": 0.1
+}

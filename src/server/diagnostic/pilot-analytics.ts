@@ -1,0 +1,333 @@
+import { CEFR_LEVELS, type CefrLevel } from '../../lib/diagnostic/types.ts';
+import type { DiagnosticBankRecord } from './types.ts';
+
+export interface DiagnosticPilotCriteria {
+  criteriaVersion: string;
+  status: 'provisional-pending-academic-approval' | 'approved';
+  minimumStartedAttempts: number;
+  minimumCompletionRate: number;
+  minimumResponsesPerItem: number;
+  minimumDiscriminationSample: number;
+  minimumCorrectedItemTotal: number;
+  maximumOmissionRate: number;
+  minimumWritingPairs: number;
+  minimumWritingExactAgreement: number;
+  maximumWritingMeanAbsoluteLevelDifference: number;
+  maximumWritingAdjudicationRate: number;
+  minimumIndependentReferencePairs: number;
+  minimumReferenceExactAgreement: number;
+  minimumReferenceWithinOneLevel: number;
+  maximumReferenceSevereDisagreement: number;
+}
+
+export interface DiagnosticPilotAttemptRow {
+  attemptId: string;
+  status: string;
+  routeId: string | null;
+  bankVersion: string;
+  startedAt: string;
+  updatedAt: string;
+  completedAt: string | null;
+}
+
+export interface DiagnosticPilotResponseRow {
+  attemptId: string;
+  itemId: string;
+  contentVersion: string;
+  skill: string;
+  outcome: 'correct' | 'incorrect' | 'omitted';
+  submittedResponse: unknown;
+  responseMs: number | null;
+  audioPlayCount: number | null;
+}
+
+export interface DiagnosticPilotWritingRow {
+  attemptId: string;
+  status: string;
+  exactAgreement: number | null;
+  meanAbsoluteLevelDifference: number | null;
+  requiresAdjudication: boolean | null;
+}
+
+export interface DiagnosticPilotReferenceRow {
+  attemptId: string;
+  diagnosticLevel: CefrLevel;
+  referenceLevel: CefrLevel;
+  source: 'external-test' | 'tutor-judgement' | 'course-placement';
+}
+
+function boundedRate(value: unknown): value is number {
+  return typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1;
+}
+
+export function validateDiagnosticPilotCriteria(criteria: DiagnosticPilotCriteria): string[] {
+  const errors: string[] = [];
+  if (!criteria.criteriaVersion.trim()) errors.push('pilot criteria version is required');
+  for (const key of ['minimumStartedAttempts', 'minimumResponsesPerItem', 'minimumDiscriminationSample', 'minimumWritingPairs', 'minimumIndependentReferencePairs'] as const) {
+    if (!Number.isInteger(criteria[key]) || criteria[key] < 1) errors.push(`${key} must be a positive integer`);
+  }
+  for (const key of ['minimumCompletionRate', 'minimumWritingExactAgreement', 'maximumWritingAdjudicationRate', 'minimumReferenceExactAgreement', 'minimumReferenceWithinOneLevel', 'maximumReferenceSevereDisagreement'] as const) {
+    if (!boundedRate(criteria[key])) errors.push(`${key} must be between zero and one`);
+  }
+  if (!Number.isFinite(criteria.minimumCorrectedItemTotal) || criteria.minimumCorrectedItemTotal < -1 || criteria.minimumCorrectedItemTotal > 1) {
+    errors.push('minimumCorrectedItemTotal must be a correlation between -1 and 1');
+  }
+  if (!Number.isFinite(criteria.maximumOmissionRate) || criteria.maximumOmissionRate < 0 || criteria.maximumOmissionRate > 1) {
+    errors.push('maximumOmissionRate must be between zero and one');
+  }
+  if (!Number.isFinite(criteria.maximumWritingMeanAbsoluteLevelDifference) || criteria.maximumWritingMeanAbsoluteLevelDifference < 0) {
+    errors.push('maximumWritingMeanAbsoluteLevelDifference must be non-negative');
+  }
+  return errors;
+}
+
+function rounded(value: number, digits = 3): number {
+  return Number(value.toFixed(digits));
+}
+
+function rate(numerator: number, denominator: number): number | null {
+  return denominator ? rounded(numerator / denominator) : null;
+}
+
+function quantile(values: readonly number[], percentile: number): number | null {
+  if (!values.length) return null;
+  const sorted = [...values].sort((left, right) => left - right);
+  const index = Math.min(sorted.length - 1, Math.max(0, Math.ceil(percentile * sorted.length) - 1));
+  return sorted[index];
+}
+
+function pearson(left: readonly number[], right: readonly number[]): number | null {
+  if (left.length !== right.length || left.length < 2) return null;
+  const leftMean = left.reduce((sum, value) => sum + value, 0) / left.length;
+  const rightMean = right.reduce((sum, value) => sum + value, 0) / right.length;
+  let numerator = 0;
+  let leftSquared = 0;
+  let rightSquared = 0;
+  for (let index = 0; index < left.length; index += 1) {
+    const leftDelta = left[index] - leftMean;
+    const rightDelta = right[index] - rightMean;
+    numerator += leftDelta * rightDelta;
+    leftSquared += leftDelta ** 2;
+    rightSquared += rightDelta ** 2;
+  }
+  const denominator = Math.sqrt(leftSquared * rightSquared);
+  return denominator ? rounded(numerator / denominator) : null;
+}
+
+function selectedOptionIds(value: unknown): string[] {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return [];
+  const response = value as Record<string, unknown>;
+  if (response.kind === 'single-choice') return typeof response.optionId === 'string' ? [response.optionId] : [];
+  if (response.kind === 'multiple-choice' && Array.isArray(response.optionIds)) {
+    return response.optionIds.filter((item): item is string => typeof item === 'string');
+  }
+  return [];
+}
+
+function validateDataset(input: {
+  attempts: readonly DiagnosticPilotAttemptRow[];
+  responses: readonly DiagnosticPilotResponseRow[];
+  references: readonly DiagnosticPilotReferenceRow[];
+}, bank: readonly DiagnosticBankRecord[]): void {
+  if (new Set(input.attempts.map(row => row.attemptId)).size !== input.attempts.length) throw new Error('pilot attempts contain duplicate ids');
+  if (new Set(bank.map(record => record.publicItem.id)).size !== bank.length) throw new Error('pilot bank contains duplicate item ids');
+  const attemptIds = new Set(input.attempts.map(row => row.attemptId));
+  const bankById = new Map(bank.map(record => [record.publicItem.id, record]));
+  const responseIds = new Set<string>();
+  for (const response of input.responses) {
+    const identity = `${response.attemptId}:${response.itemId}`;
+    if (responseIds.has(identity)) throw new Error(`pilot responses contain duplicate ${identity}`);
+    responseIds.add(identity);
+    const record = bankById.get(response.itemId);
+    if (!attemptIds.has(response.attemptId)) throw new Error(`${identity} has no pilot attempt`);
+    if (!record || record.publicItem.contentVersion !== response.contentVersion || record.publicItem.skill !== response.skill) {
+      throw new Error(`${identity} does not match the versioned bank`);
+    }
+    if (!['correct', 'incorrect', 'omitted'].includes(response.outcome)) throw new Error(`${identity} has an invalid outcome`);
+    if (response.responseMs !== null && (!Number.isInteger(response.responseMs) || response.responseMs < 0 || response.responseMs > 3_600_000)) {
+      throw new Error(`${identity} has invalid response time`);
+    }
+  }
+  if (new Set(input.references.map(row => row.attemptId)).size !== input.references.length) {
+    throw new Error('pilot references contain duplicate attempts');
+  }
+  for (const reference of input.references) {
+    if (!attemptIds.has(reference.attemptId) || !CEFR_LEVELS.includes(reference.diagnosticLevel) || !CEFR_LEVELS.includes(reference.referenceLevel)) {
+      throw new Error('pilot independent reference is invalid');
+    }
+    if (!['external-test', 'tutor-judgement', 'course-placement'].includes(reference.source)) {
+      throw new Error('pilot independent reference source is invalid');
+    }
+  }
+}
+
+function correctedItemTotal(
+  itemId: string,
+  skill: string,
+  responses: readonly DiagnosticPilotResponseRow[],
+  minimumSample: number,
+): { sampleSize: number; correlation: number | null } {
+  const byAttempt = new Map<string, DiagnosticPilotResponseRow[]>();
+  for (const response of responses) {
+    if (response.skill !== skill || response.outcome === 'omitted') continue;
+    const rows = byAttempt.get(response.attemptId) ?? [];
+    rows.push(response);
+    byAttempt.set(response.attemptId, rows);
+  }
+  const itemScores: number[] = [];
+  const restScores: number[] = [];
+  for (const rows of byAttempt.values()) {
+    const item = rows.find(row => row.itemId === itemId);
+    const rest = rows.filter(row => row.itemId !== itemId);
+    if (!item || !rest.length) continue;
+    itemScores.push(item.outcome === 'correct' ? 1 : 0);
+    restScores.push(rest.filter(row => row.outcome === 'correct').length / rest.length);
+  }
+  return { sampleSize: itemScores.length, correlation: itemScores.length >= minimumSample ? pearson(itemScores, restScores) : null };
+}
+
+function referenceMetrics(references: readonly DiagnosticPilotReferenceRow[]) {
+  const differences = references.map(row => Math.abs(
+    CEFR_LEVELS.indexOf(row.diagnosticLevel) - CEFR_LEVELS.indexOf(row.referenceLevel),
+  ));
+  return {
+    pairs: differences.length,
+    exactAgreement: rate(differences.filter(value => value === 0).length, differences.length),
+    withinOneLevel: rate(differences.filter(value => value <= 1).length, differences.length),
+    severeDisagreementRate: rate(differences.filter(value => value > 1).length, differences.length),
+    meanAbsoluteLevelDifference: differences.length ? rounded(differences.reduce((sum, value) => sum + value, 0) / differences.length) : null,
+    sources: Object.fromEntries(['external-test', 'tutor-judgement', 'course-placement'].map(source => [source, references.filter(row => row.source === source).length])),
+  };
+}
+
+export function buildDiagnosticPilotReport(input: {
+  attempts: readonly DiagnosticPilotAttemptRow[];
+  responses: readonly DiagnosticPilotResponseRow[];
+  writing: readonly DiagnosticPilotWritingRow[];
+  references: readonly DiagnosticPilotReferenceRow[];
+  bank: readonly DiagnosticBankRecord[];
+  criteria: DiagnosticPilotCriteria;
+  generatedAt: string;
+}) {
+  const criteriaErrors = validateDiagnosticPilotCriteria(input.criteria);
+  if (criteriaErrors.length) throw new Error(criteriaErrors.join('; '));
+  if (Number.isNaN(Date.parse(input.generatedAt))) throw new Error('pilot report date is invalid');
+  validateDataset(input, input.bank);
+  const attemptIds = new Set(input.attempts.map(row => row.attemptId));
+  if (input.writing.some(row => !attemptIds.has(row.attemptId))) throw new Error('pilot writing row has no attempt');
+  if (new Set(input.writing.map(row => row.attemptId)).size !== input.writing.length) throw new Error('pilot writing rows contain duplicate attempts');
+
+  const completed = input.attempts.filter(row => row.status === 'completed');
+  const durations = completed.flatMap(row => {
+    if (!row.completedAt) return [];
+    const duration = Date.parse(row.completedAt) - Date.parse(row.startedAt);
+    return Number.isFinite(duration) && duration >= 0 ? [duration] : [];
+  });
+  const statusCounts = Object.fromEntries([...new Set(input.attempts.map(row => row.status))].sort()
+    .map(status => [status, input.attempts.filter(row => row.status === status).length]));
+  const routeCounts = Object.fromEntries(['low-a1-a2', 'mid-b1-b2', 'high-c1-c2', 'unassigned']
+    .map(route => [route, input.attempts.filter(row => (row.routeId ?? 'unassigned') === route).length]));
+
+  const itemMetrics = input.bank.map(record => {
+    const item = record.publicItem;
+    const rows = input.responses.filter(response => response.itemId === item.id);
+    const attempted = rows.filter(row => row.outcome !== 'omitted');
+    const correct = rows.filter(row => row.outcome === 'correct').length;
+    const omissions = rows.filter(row => row.outcome === 'omitted').length;
+    const times = rows.flatMap(row => row.responseMs === null ? [] : [row.responseMs]);
+    const optionCounts = new Map<string, number>();
+    for (const row of attempted) {
+      for (const optionId of selectedOptionIds(row.submittedResponse)) optionCounts.set(optionId, (optionCounts.get(optionId) ?? 0) + 1);
+    }
+    const discrimination = correctedItemTotal(item.id, item.skill, input.responses, input.criteria.minimumDiscriminationSample);
+    const omissionRate = rate(omissions, rows.length);
+    const flags: string[] = [];
+    if (rows.length < input.criteria.minimumResponsesPerItem) flags.push('INSUFFICIENT_ITEM_SAMPLE');
+    if (omissionRate !== null && omissionRate > input.criteria.maximumOmissionRate) flags.push('HIGH_OMISSION');
+    if (discrimination.correlation !== null && discrimination.correlation < input.criteria.minimumCorrectedItemTotal) flags.push('LOW_OR_NEGATIVE_DISCRIMINATION');
+    if (item.stimulus.kind === 'audio' && attempted.some(row => (row.audioPlayCount ?? 0) < 1)) flags.push('LISTENING_RESPONSE_WITHOUT_PLAYBACK');
+    return {
+      itemId: item.id,
+      contentVersion: item.contentVersion,
+      skill: item.skill,
+      levelCandidate: item.levelCandidate,
+      served: rows.length,
+      attempted: attempted.length,
+      correct,
+      incorrect: rows.filter(row => row.outcome === 'incorrect').length,
+      omitted: omissions,
+      facility: rate(correct, attempted.length),
+      omissionRate,
+      medianResponseMs: quantile(times, 0.5),
+      p90ResponseMs: quantile(times, 0.9),
+      audioStartedRate: item.stimulus.kind === 'audio'
+        ? rate(rows.filter(row => (row.audioPlayCount ?? 0) >= 1).length, rows.length)
+        : null,
+      correctedItemTotal: discrimination,
+      optionSelections: [...optionCounts.entries()].sort(([left], [right]) => left.localeCompare(right))
+        .map(([optionId, selections]) => ({ optionId, selections, rateAmongAttempted: rate(selections, attempted.length) })),
+      flags,
+    };
+  }).sort((left, right) => left.itemId.localeCompare(right.itemId));
+
+  const writingPairs = input.writing.filter(row => boundedRate(row.exactAgreement)
+    && typeof row.meanAbsoluteLevelDifference === 'number' && Number.isFinite(row.meanAbsoluteLevelDifference));
+  const writingExactAgreement = writingPairs.length
+    ? rounded(writingPairs.reduce((sum, row) => sum + (row.exactAgreement ?? 0), 0) / writingPairs.length)
+    : null;
+  const writingMeanDifference = writingPairs.length
+    ? rounded(writingPairs.reduce((sum, row) => sum + (row.meanAbsoluteLevelDifference ?? 0), 0) / writingPairs.length)
+    : null;
+  const adjudicationRate = rate(writingPairs.filter(row => row.requiresAdjudication === true).length, writingPairs.length);
+  const references = referenceMetrics(input.references);
+
+  const gates = {
+    criteriaApproved: input.criteria.status === 'approved',
+    attemptVolume: input.attempts.length >= input.criteria.minimumStartedAttempts,
+    completion: (rate(completed.length, input.attempts.length) ?? 0) >= input.criteria.minimumCompletionRate,
+    itemSamples: itemMetrics.length > 0 && itemMetrics.every(item => item.served >= input.criteria.minimumResponsesPerItem),
+    itemQuality: itemMetrics.length > 0 && itemMetrics.every(item => item.omissionRate !== null
+      && item.omissionRate <= input.criteria.maximumOmissionRate
+      && item.correctedItemTotal.correlation !== null
+      && item.correctedItemTotal.correlation >= input.criteria.minimumCorrectedItemTotal),
+    writingAgreement: writingPairs.length >= input.criteria.minimumWritingPairs
+      && writingExactAgreement !== null && writingExactAgreement >= input.criteria.minimumWritingExactAgreement
+      && writingMeanDifference !== null && writingMeanDifference <= input.criteria.maximumWritingMeanAbsoluteLevelDifference
+      && adjudicationRate !== null && adjudicationRate <= input.criteria.maximumWritingAdjudicationRate,
+    independentReference: references.pairs >= input.criteria.minimumIndependentReferencePairs
+      && references.exactAgreement !== null && references.exactAgreement >= input.criteria.minimumReferenceExactAgreement
+      && references.withinOneLevel !== null && references.withinOneLevel >= input.criteria.minimumReferenceWithinOneLevel
+      && references.severeDisagreementRate !== null && references.severeDisagreementRate <= input.criteria.maximumReferenceSevereDisagreement,
+  };
+  const allGatesPass = Object.values(gates).every(Boolean);
+  return {
+    reportVersion: 'diagnostic-pilot-report-v1',
+    generatedAt: new Date(input.generatedAt).toISOString(),
+    criteria: { version: input.criteria.criteriaVersion, status: input.criteria.status },
+    decision: allGatesPass ? 'ELIGIBLE_FOR_VALIDATION_REVIEW' : 'HOLD',
+    gates,
+    attempts: {
+      started: input.attempts.length,
+      completed: completed.length,
+      completionRate: rate(completed.length, input.attempts.length),
+      medianCompletionMs: quantile(durations, 0.5),
+      p90CompletionMs: quantile(durations, 0.9),
+      statusCounts,
+      routeCounts,
+    },
+    itemMetrics,
+    writingAgreement: {
+      submitted: input.writing.length,
+      comparablePairs: writingPairs.length,
+      exactAgreement: writingExactAgreement,
+      meanAbsoluteLevelDifference: writingMeanDifference,
+      adjudicationRate,
+    },
+    independentReference: references,
+    warnings: [
+      ...(input.criteria.status !== 'approved' ? ['PUBLICATION_CRITERIA_AWAIT_ACADEMIC_APPROVAL'] : []),
+      ...(input.references.length === 0 ? ['NO_INDEPENDENT_REFERENCE_EVIDENCE'] : []),
+      ...(itemMetrics.some(item => item.flags.length > 0) ? ['ITEMS_REQUIRE_REVIEW'] : []),
+    ],
+  } as const;
+}

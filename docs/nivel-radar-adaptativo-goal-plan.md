@@ -110,9 +110,18 @@ Actualizado el 24 de septiembre de 2026:
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
+- **Fase 7 — instrumentación de piloto iniciada:** criterios cuantitativos versionados y todavía
+  pendientes de aprobación académica gobiernan un informe agregado de finalización, rutas,
+  facilidad, omisión, tiempos, reproducción, selección de distractores, discriminación
+  corregida, acuerdo de escritura y concordancia con nivel externo. El informe no contiene
+  UUID de participante, texto escrito ni respuestas breves. La referencia independiente se
+  registra mediante una mutación atómica exclusiva de administrador y el nivel diagnóstico se
+  deriva del resultado terminado, no del formulario de referencia. Sin muestra real o sin
+  criterios aprobados, la decisión es obligatoriamente `HOLD`. La migración y la ruta requieren
+  todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **132 pruebas** y
+  borradores; el último corte local ejecutó **140 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

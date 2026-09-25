@@ -9,6 +9,12 @@ import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
 import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
 import type { DiagnosticResumeSnapshot } from './resume-core';
+import type {
+  DiagnosticPilotAttemptRow,
+  DiagnosticPilotReferenceRow,
+  DiagnosticPilotResponseRow,
+  DiagnosticPilotWritingRow,
+} from './pilot-analytics';
 
 export async function loadDiagnosticAttemptForResume(input: {
   attemptId: string;
@@ -346,4 +352,136 @@ export async function persistDiagnosticWritingSubmission(
     throw new Error('diagnostic_persistence_unavailable');
   }
   return { replayed: result.replayed, version: Number(result.version) };
+}
+
+async function loadDiagnosticPilotPages(
+  table: string,
+  columns: string,
+  configure: (query: any) => any,
+): Promise<Record<string, any>[]> {
+  const admin = createAdminClient();
+  const rows: Record<string, any>[] = [];
+  const pageSize = 1_000;
+  for (let from = 0; ; from += pageSize) {
+    const query = configure(admin.from(table).select(columns)).range(from, from + pageSize - 1);
+    const { data, error } = await query;
+    if (error || !Array.isArray(data)) throw new Error('diagnostic_pilot_data_unavailable');
+    rows.push(...data);
+    if (data.length < pageSize) return rows;
+  }
+}
+
+async function loadDiagnosticPilotRowsForAttempts(
+  table: string,
+  columns: string,
+  attemptIds: readonly string[],
+): Promise<Record<string, any>[]> {
+  const rows: Record<string, any>[] = [];
+  for (let index = 0; index < attemptIds.length; index += 100) {
+    const chunk = attemptIds.slice(index, index + 100);
+    rows.push(...await loadDiagnosticPilotPages(table, columns, query => query.in('attempt_id', chunk)));
+  }
+  return rows;
+}
+
+export async function loadDiagnosticPilotDataset(input: {
+  language: string;
+  since: Date;
+}): Promise<{
+  attempts: DiagnosticPilotAttemptRow[];
+  responses: DiagnosticPilotResponseRow[];
+  writing: DiagnosticPilotWritingRow[];
+  references: DiagnosticPilotReferenceRow[];
+}> {
+  const attemptRows = await loadDiagnosticPilotPages(
+    'diagnostic_attempts',
+    'id,status,route_id,bank_version,started_at,updated_at,completed_at,result_profile',
+    query => query.eq('language', input.language).gte('started_at', input.since.toISOString()).order('started_at', { ascending: true }),
+  );
+  const attempts = attemptRows.map(row => ({
+    attemptId: String(row.id), status: String(row.status), routeId: row.route_id ? String(row.route_id) : null,
+    bankVersion: String(row.bank_version), startedAt: String(row.started_at), updatedAt: String(row.updated_at),
+    completedAt: row.completed_at ? String(row.completed_at) : null,
+  }));
+  const attemptIds = attempts.map(row => row.attemptId);
+  if (!attemptIds.length) return { attempts, responses: [], writing: [], references: [] };
+  const [responseRows, writingRows, referenceRows] = await Promise.all([
+    loadDiagnosticPilotRowsForAttempts(
+      'diagnostic_responses',
+      'attempt_id,item_id,content_version,skill,outcome,submitted_response,response_ms,audio_play_count',
+      attemptIds,
+    ),
+    loadDiagnosticPilotRowsForAttempts(
+      'diagnostic_writing_evaluations',
+      'attempt_id,status,final_evidence',
+      attemptIds,
+    ),
+    loadDiagnosticPilotRowsForAttempts(
+      'diagnostic_pilot_references',
+      'attempt_id,reference_level,source',
+      attemptIds,
+    ),
+  ]);
+  const responses: DiagnosticPilotResponseRow[] = responseRows.map(row => ({
+    attemptId: String(row.attempt_id), itemId: String(row.item_id), contentVersion: String(row.content_version),
+    skill: String(row.skill), outcome: row.outcome as DiagnosticPilotResponseRow['outcome'],
+    submittedResponse: row.submitted_response, responseMs: row.response_ms === null ? null : Number(row.response_ms),
+    audioPlayCount: row.audio_play_count === null ? null : Number(row.audio_play_count),
+  }));
+  const writing: DiagnosticPilotWritingRow[] = writingRows.map(row => {
+    const finalEvidence = row.final_evidence && typeof row.final_evidence === 'object' && !Array.isArray(row.final_evidence)
+      ? row.final_evidence as Record<string, any> : {};
+    const evidence = finalEvidence.writing && typeof finalEvidence.writing === 'object' ? finalEvidence.writing as Record<string, any> : {};
+    const agreement = evidence.agreement && typeof evidence.agreement === 'object' ? evidence.agreement as Record<string, any> : {};
+    return {
+      attemptId: String(row.attempt_id), status: String(row.status),
+      exactAgreement: typeof agreement.exactAgreement === 'number' ? agreement.exactAgreement : null,
+      meanAbsoluteLevelDifference: typeof agreement.meanAbsoluteLevelDifference === 'number' ? agreement.meanAbsoluteLevelDifference : null,
+      requiresAdjudication: typeof agreement.requiresAdjudication === 'boolean' ? agreement.requiresAdjudication : null,
+    };
+  });
+  const attemptById = new Map(attemptRows.map(row => [String(row.id), row]));
+  const references: DiagnosticPilotReferenceRow[] = referenceRows.flatMap(row => {
+    const attempt = attemptById.get(String(row.attempt_id));
+    const profile = attempt?.result_profile && typeof attempt.result_profile === 'object' && !Array.isArray(attempt.result_profile)
+      ? attempt.result_profile as Record<string, any> : {};
+    const diagnosticLevel = typeof profile.globalLevel === 'string' ? profile.globalLevel : null;
+    if (!diagnosticLevel) return [];
+    return [{
+      attemptId: String(row.attempt_id), diagnosticLevel: diagnosticLevel as DiagnosticPilotReferenceRow['diagnosticLevel'],
+      referenceLevel: String(row.reference_level) as DiagnosticPilotReferenceRow['referenceLevel'],
+      source: String(row.source) as DiagnosticPilotReferenceRow['source'],
+    }];
+  });
+  return { attempts, responses, writing, references };
+}
+
+export async function persistDiagnosticPilotReference(input: {
+  attemptId: string;
+  referenceLevel: string;
+  source: string;
+  sourceVersion: string;
+  assessorRefHash: string;
+  assessedAt: string;
+  recordedBy: string;
+}): Promise<void> {
+  const { data, error } = await createAdminClient().rpc('record_diagnostic_pilot_reference', {
+    p_attempt_id: input.attemptId,
+    p_reference_level: input.referenceLevel,
+    p_source: input.source,
+    p_source_version: input.sourceVersion,
+    p_assessor_ref_hash: input.assessorRefHash,
+    p_assessed_at: input.assessedAt,
+    p_recorded_by: input.recordedBy,
+  });
+  if (error || String(data) !== input.attemptId) {
+    const known = [
+      'diagnostic_attempt_not_found',
+      'diagnostic_reference_attempt_not_eligible',
+      'diagnostic_reference_invalid',
+      'duplicate key value',
+    ].find(code => error?.message.includes(code));
+    if (known) throw new Error(known);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
 }
