@@ -14,7 +14,7 @@
     "writingDraftPrompts": 24,
     "writingApprovedPrompts": 0,
     "cueAuditReviewedReservedDrafts": 216,
-    "cueAuditFlaggedForHumanReview": 36,
+    "cueAuditFlaggedForHumanReview": 32,
     "cueAuditBlockingDefects": 0
   },
   "objectiveCells": [
@@ -495,7 +495,7 @@
     "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
     "totals": {
       "items": 216,
-      "flaggedItems": 36,
+      "flaggedItems": 32,
       "blockingItems": 0
     },
     "cells": [
@@ -521,12 +521,9 @@
         "level": "A1",
         "skill": "vocabulary",
         "items": 12,
-        "flaggedItems": 1,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "KEY_MATERIALLY_LONGER": 1,
-          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
-        }
+        "findings": {}
       },
       {
         "level": "A2",
@@ -553,11 +550,10 @@
         "level": "A2",
         "skill": "vocabulary",
         "items": 12,
-        "flaggedItems": 2,
+        "flaggedItems": 1,
         "blockingItems": 0,
         "findings": {
-          "KEY_MATERIALLY_LONGER": 2,
-          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
+          "KEY_MATERIALLY_LONGER": 1
         }
       },
       {
@@ -584,10 +580,9 @@
         "level": "B1",
         "skill": "vocabulary",
         "items": 12,
-        "flaggedItems": 2,
+        "flaggedItems": 1,
         "blockingItems": 0,
         "findings": {
-          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1,
           "KEY_MATERIALLY_LONGER": 1
         }
       },
@@ -595,11 +590,10 @@
         "level": "B2",
         "skill": "grammar",
         "items": 12,
-        "flaggedItems": 2,
+        "flaggedItems": 1,
         "blockingItems": 0,
         "findings": {
-          "KEY_MATERIALLY_LONGER": 1,
-          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
+          "KEY_MATERIALLY_LONGER": 1
         }
       },
       {

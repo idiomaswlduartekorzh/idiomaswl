@@ -47,3 +47,17 @@ test('answer positions are balanced and content has no duplicate prompts or opti
   assert.deepEqual(positions, [32, 32, 32]);
   assert.ok(longestOptionKeys <= 48, 'the longest-option strategy must not beat chance materially');
 });
+
+test('only the four editorially revised items advance to content draft 2', () => {
+  const revisions = ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.filter((record) =>
+    record.publicItem.contentVersion === 'draft-2');
+  assert.deepEqual(revisions.map(record => record.publicItem.id), [
+    'en-a1-vocabulary-07',
+    'en-a2-vocabulary-07',
+    'en-b1-vocabulary-07',
+    'en-b2-grammar-08',
+  ]);
+  assert.ok(revisions.every(record => record.source.reference === 'en-language-use-original-draft-2'));
+  assert.equal(ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES
+    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 92);
+});

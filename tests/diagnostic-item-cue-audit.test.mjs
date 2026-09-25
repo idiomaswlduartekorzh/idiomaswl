@@ -24,9 +24,24 @@ test('the adversarial audit deterministically covers every reserved objective dr
   assert.deepEqual(first, second);
   assert.equal(first.totals.items, 216);
   assert.equal(first.cells.length, 18);
-  assert.equal(first.totals.flaggedItems, 36);
+  assert.equal(first.totals.flaggedItems, 32);
   assert.equal(first.totals.blockingItems, 0);
   assert.equal(first.cells.every(cell => cell.keyPositions.join(',') === '4,4,4'), true);
+});
+
+test('revised register and reported-speech items remove accidental punctuation cues', () => {
+  const revisedIds = [
+    'en-a1-vocabulary-07',
+    'en-a2-vocabulary-07',
+    'en-b1-vocabulary-07',
+    'en-b2-grammar-08',
+  ];
+  for (const itemId of revisedIds) {
+    const record = candidates.find(candidate => candidate.publicItem.id === itemId);
+    assert.ok(record, `${itemId} must remain in the reserved bank`);
+    assert.equal(record.publicItem.contentVersion, 'draft-2');
+    assert.deepEqual(auditDiagnosticItemCues(record).findings, []);
+  }
 });
 
 test('aggregate output contains no item identity, option text, key or rationale', () => {

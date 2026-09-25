@@ -2,6 +2,7 @@ import type { CefrLevel, DiagnosticObjectiveSkill } from '../../../lib/diagnosti
 import type { DiagnosticBankRecord } from '../types.ts';
 
 export const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATE_VERSION = 'en-language-use-original-draft-1';
+const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_REVISED_VERSION = 'en-language-use-original-draft-2';
 
 type LanguageUseSeed = {
   level: CefrLevel;
@@ -144,9 +145,9 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
   {
     level: 'A1', skill: 'vocabulary', subdomain: 'register',
     prompt: 'Which greeting is natural when you meet a friend?',
-    options: ['Farewell, customer.', 'Hi! How are you?', 'Attention, passenger.'], correctIndex: 1,
-    rationale: '“Hi! How are you?” is a natural informal greeting between friends.',
-    distractorRationales: ['This is an unnatural formal farewell, not a greeting between friends.', 'This sounds like a public announcement, not a friendly greeting.'],
+    options: ['Goodbye, Maria', 'Hello, Maria', 'Listen, Maria'], correctIndex: 1,
+    rationale: '“Hello, Maria” is a natural greeting when meeting a friend.',
+    distractorRationales: ['This is a farewell, not a greeting when two friends meet.', 'This asks Maria to listen rather than greeting her.'],
   },
   {
     level: 'A1', skill: 'vocabulary', subdomain: 'word-formation',
@@ -312,9 +313,9 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'register',
     prompt: 'Which request is suitable in a polite email to a course office?',
-    options: ['Send me the dates now.', 'Could you tell me the course dates, please?', 'Dates. I need them.'], correctIndex: 1,
-    rationale: 'The modal question and “please” make the request appropriately polite for an office email.',
-    distractorRationales: ['The imperative sounds too direct for this context.', 'The fragments sound abrupt and impolite.'],
+    options: ['Send me the course dates immediately.', 'I would appreciate the course dates.', 'I want the course dates today.'], correctIndex: 1,
+    rationale: '“I would appreciate…” makes the request appropriately polite for an office email.',
+    distractorRationales: ['The imperative sounds too direct for this context.', 'The direct statement of desire sounds abrupt in this context.'],
   },
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'meaning',
@@ -391,7 +392,7 @@ const upperSeedRows = [
     'A shortage is a situation in which the available amount is insufficient.', ['Taste is unrelated to quantity.', 'Testing does not itself imply insufficient supply.']],
   ['B1', 'vocabulary', 'collocation', 'Complete the sentence: “The team has ___ good progress this month.”', ['made', 'done', 'taken'], 0,
     'The standard collocation is “make progress”.', ['“Do progress” is not the standard expression.', '“Take progress” is not the standard expression.']],
-  ['B1', 'vocabulary', 'register', 'Which opening is most suitable for a polite complaint to a hotel?', ['Your hotel was terrible. Fix this.', 'I am writing to report a problem with my room.', 'Hey, you gave me a bad room!'], 1,
+  ['B1', 'vocabulary', 'register', 'Which opening is most suitable for a polite complaint to a hotel?', ['Your hotel was terrible. Fix this.', 'I am writing to report a problem with my room.', 'Hey, you gave me a bad room.'], 1,
     'This opening states the purpose clearly in a neutral, appropriately formal register.', ['The accusation and command are unnecessarily aggressive.', 'The greeting and wording are too casual and confrontational.']],
   ['B1', 'vocabulary', 'word-formation', 'Complete the sentence: “The road is narrow, so overtaking here is ___.”', ['danger', 'dangerously', 'dangerous'], 2,
     'The adjective “dangerous” is required after the linking verb “is”.', ['“Danger” is a noun.', '“Dangerously” is an adverb and does not serve as the subject complement here.']],
@@ -418,8 +419,8 @@ const upperSeedRows = [
     '“Wish” plus the past perfect expresses regret about an earlier decision.', ['This form is incompatible with the past regret and the time expression.', 'The present perfect does not mark the counterfactual earlier action after “wish”.']],
   ['B2', 'grammar', 'sentence-structure', 'Complete the sentence: “The researcher ___ article we discussed will speak tonight.”', ['who', 'whose', 'which'], 1,
     '“Whose” expresses the possessive relationship between the researcher and the article.', ['“Who” cannot directly modify the noun “article”.', '“Which” would refer to a thing and does not express possession here.']],
-  ['B2', 'grammar', 'sentence-structure', 'Choose the correctly reported question: Ana asked, “Why did the plan fail?”', ['Ana asked why did the plan fail.', 'Ana asked why the plan did fail?', 'Ana asked why the plan had failed.'], 2,
-    'An indirect question uses statement word order, and the earlier event may shift to the past perfect.', ['Indirect questions do not retain auxiliary-before-subject order.', 'This keeps an unnecessary emphatic auxiliary and question punctuation.']],
+  ['B2', 'grammar', 'sentence-structure', 'Choose the correctly reported question: Ana asked, “Why did the plan fail?”', ['Ana asked why did the plan fail.', 'Ana asked why the plan did fail.', 'Ana asked why the plan had failed.'], 2,
+    'An indirect question uses statement word order, and the earlier event may shift to the past perfect.', ['Indirect questions do not retain auxiliary-before-subject order.', 'This keeps an unnecessary emphatic auxiliary and fails to backshift the earlier event.']],
   ['B2', 'grammar', 'cohesion', 'Choose the sentence with the correct concessive phrase.', ['Despite having little time, we completed the review.', 'Despite we had little time, we completed the review.', 'Despite of having little time, we completed the review.'], 0,
     '“Despite” can introduce the gerund phrase “having little time”.', ['A finite clause after “despite” requires “the fact that”.', 'Standard usage does not add “of” after “despite”.']],
   ['B2', 'grammar', 'form', 'Complete the sentence: “It was ___ useful advice that I saved the message.”', ['so', 'such', 'such a'], 1,
@@ -462,6 +463,13 @@ const upperSeeds: readonly LanguageUseSeed[] = upperSeedRows.map((row) => ({
 
 const seeds: readonly LanguageUseSeed[] = [...lowerSeeds, ...upperSeeds];
 
+const REVISED_ITEM_CONTENT_VERSIONS = new Map<string, string>([
+  ['en-a1-vocabulary-07', 'draft-2'],
+  ['en-a2-vocabulary-07', 'draft-2'],
+  ['en-b1-vocabulary-07', 'draft-2'],
+  ['en-b2-grammar-08', 'draft-2'],
+]);
+
 function itemId(seed: LanguageUseSeed, ordinal: number): string {
   return `en-${seed.level.toLowerCase()}-${seed.skill}-${String(ordinal).padStart(2, '0')}`;
 }
@@ -470,12 +478,13 @@ export const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES: readonly DiagnosticBank
   const sameCellOrdinal = seeds.slice(0, index + 1)
     .filter((candidate) => candidate.level === seed.level && candidate.skill === seed.skill).length;
   const id = itemId(seed, sameCellOrdinal);
+  const contentVersion = REVISED_ITEM_CONTENT_VERSIONS.get(id) ?? 'draft-1';
   const optionIds = seed.options.map((_, optionIndex) => `${id}-o${optionIndex + 1}`);
   const distractorIndexes = [0, 1, 2].filter((optionIndex) => optionIndex !== seed.correctIndex);
   return {
     publicItem: {
       id,
-      contentVersion: 'draft-1',
+      contentVersion,
       language: 'en',
       skill: seed.skill,
       subdomain: seed.subdomain,
@@ -495,7 +504,12 @@ export const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES: readonly DiagnosticBank
         optionIds[optionIndex], seed.distractorRationales[rationaleIndex],
       ])),
     },
-    source: { kind: 'welearn-original', reference: ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATE_VERSION },
+    source: {
+      kind: 'welearn-original',
+      reference: contentVersion === 'draft-1'
+        ? ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATE_VERSION
+        : ENGLISH_DIAGNOSTIC_LANGUAGE_USE_REVISED_VERSION,
+    },
     levelRange: [seed.level, seed.level],
     warnings: ['PENDING_INDEPENDENT_LINGUISTIC_REVIEW', 'PENDING_PILOT_CALIBRATION'],
   };
