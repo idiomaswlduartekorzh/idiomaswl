@@ -70,6 +70,11 @@ Actualizado el 24 de septiembre de 2026:
 - **Fase 5 — núcleo de escritura iniciado:** rúbrica de cuatro criterios A1–C2, validación de
   evidencia, comparación humano/modelo y adjudicación implementadas. Hay 24 consignas
   reservadas —cuatro por nivel— en estado borrador, pendientes de aprobación lingüística.
+- **Fase 4 — entrega privada de escucha iniciada:** el endpoint de medios autentica al usuario,
+  comprueba que el audio pertenece a su etapa activa y no expirada, descarga desde un bucket
+  privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3
+  recuperados (14.488.449 bytes) contra sus SHA-256 en modo seco; aplicar el bucket y subir los
+  objetos sigue pendiente del entorno Supabase real.
 - **Banco objetivo — primera tanda editorial:** 24 decisiones de escucha en inglés —12 A1 y
   12 B1, sobre seis audios distintos por nivel— reescritas a partir de audios recuperados. Las
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
@@ -85,7 +90,7 @@ Actualizado el 24 de septiembre de 2026:
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **101 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **106 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

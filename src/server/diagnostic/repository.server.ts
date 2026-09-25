@@ -55,6 +55,28 @@ export async function loadDiagnosticAttemptForResume(input: {
   };
 }
 
+export async function authorizeDiagnosticMediaAccess(input: {
+  userId: string;
+  itemIds: readonly string[];
+  now: Date;
+}): Promise<boolean> {
+  if (!input.userId || input.itemIds.length < 1) return false;
+  const admin = createAdminClient();
+  const { data: stages, error: stageError } = await admin.from('diagnostic_stages')
+    .select('attempt_id,kind,item_ids')
+    .eq('user_id', input.userId).eq('status', 'issued')
+    .overlaps('item_ids', [...input.itemIds]).limit(10);
+  if (stageError) throw new Error('diagnostic_persistence_unavailable');
+  if (!stages?.length) return false;
+  const attemptIds = [...new Set(stages.map(stage => String(stage.attempt_id)))];
+  const { data: attempts, error: attemptError } = await admin.from('diagnostic_attempts')
+    .select('id,status,expires_at')
+    .eq('user_id', input.userId).in('id', attemptIds);
+  if (attemptError) throw new Error('diagnostic_persistence_unavailable');
+  return Boolean(attempts?.some(attempt => new Date(String(attempt.expires_at)).getTime() > input.now.getTime()
+    && stages.some(stage => String(stage.attempt_id) === String(attempt.id) && stage.kind === attempt.status)));
+}
+
 export async function loadDiagnosticObjectiveSubmissionContext(input: {
   attemptId: string;
   stageId: string;
