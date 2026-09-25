@@ -18,6 +18,40 @@ export const dynamic = 'force-dynamic';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 
+function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>) {
+  const counts = new Map<string, number>();
+  for (const item of report.itemMetrics) {
+    for (const flag of item.flags) counts.set(flag, (counts.get(flag) ?? 0) + 1);
+  }
+  return {
+    reportVersion: report.reportVersion,
+    generatedAt: report.generatedAt,
+    decision: report.decision,
+    criteria: report.criteria,
+    bankSnapshot: {
+      sha256: report.bankSnapshot.sha256,
+      objectiveItems: report.bankSnapshot.objectiveItems,
+      writingPrompts: report.bankSnapshot.writingPrompts,
+    },
+    gates: report.gates,
+    attempts: {
+      started: report.attempts.started,
+      completed: report.attempts.completed,
+      completionRate: report.attempts.completionRate,
+      medianCompletionMs: report.attempts.medianCompletionMs,
+      p90CompletionMs: report.attempts.p90CompletionMs,
+      statusCounts: report.attempts.statusCounts,
+      completedRouteCounts: report.attempts.completedRouteCounts,
+    },
+    flagCounts: [...counts.entries()].sort(([left], [right]) => left.localeCompare(right))
+      .map(([flag, count]) => ({ flag, count })),
+    writingAgreement: report.writingAgreement,
+    independentReference: report.independentReference,
+    measurementEvidence: report.measurementEvidence,
+    warnings: report.warnings,
+  } as const;
+}
+
 function error(code: string, message: string, status: number): Response {
   return Response.json({ ok: false, code, error: message }, { status, headers: NO_STORE_HEADERS });
 }
@@ -50,7 +84,8 @@ export async function GET(request: Request): Promise<Response> {
       measurementEvidence: measurementEvidence as DiagnosticPilotMeasurementEvidence,
       generatedAt: new Date().toISOString(),
     });
-    return Response.json({ ok: true, report }, { status: 200, headers: NO_STORE_HEADERS });
+    const responseReport = url.searchParams.get('scope') === 'health' ? healthProjection(report) : report;
+    return Response.json({ ok: true, report: responseReport }, { status: 200, headers: NO_STORE_HEADERS });
   } catch (cause) {
     console.error('[diagnostic] Pilot report failed:', cause instanceof Error ? cause.message : 'unknown');
     return error('REPORT_UNAVAILABLE', 'No pudimos generar el informe del piloto.', 503);

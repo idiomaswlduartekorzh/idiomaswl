@@ -218,6 +218,13 @@ Actualizado el 25 de septiembre de 2026:
   dos revisores verificados y SLA. El estado actual medido es `HOLD` en **2/8 gates** y **18
   bloqueos**: gobierno y calidad ya pasan; las seis dimensiones restantes conservan sus bloqueos
   externos, humanos o de contenido sin fingir un release.
+- **Fase 8 — panel de salud del piloto implementado:** el panel administrativo puede solicitar
+  manualmente una ventana de 30 a 365 días y muestra finalización, intentos no completados,
+  mediana y p90 de duración, estados, cobertura de rutas, los quince gates, acuerdo de escritura,
+  referencia independiente, cadena psicométrica y alertas agregadas. El servidor proyecta una
+  respuesta mínima antes de enviarla al navegador: no incluye identidades, respuestas, textos,
+  IDs de ítem u opción, claves ni etiquetas de grupos. La carga es `same-origin`, `no-store` y
+  conserva el límite administrativo existente.
 - **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
   el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
   confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`

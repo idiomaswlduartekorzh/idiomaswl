@@ -7,6 +7,7 @@ import { DIAGNOSTIC_WRITING_RUBRIC_VERSION } from '@/server/diagnostic/writing-a
 import { getDiagnosticWritingProviderReadiness } from '@/server/diagnostic/writing-provider';
 import { loadDiagnosticWritingReviewQueue } from '@/server/diagnostic/repository.server';
 import DiagnosticWritingReviewClient from './DiagnosticWritingReviewClient';
+import DiagnosticPilotHealthClient from './DiagnosticPilotHealthClient';
 import PilotEnrollmentAdminClient from './PilotEnrollmentAdminClient';
 
 export const dynamic = 'force-dynamic';
@@ -62,6 +63,7 @@ export default async function DiagnosticWritingReviewPage() {
           Administra la cohorte cerrada del piloto y la revisión académica de escritura sin exponer el banco ni datos adicionales del participante.
         </p>
         <PilotEnrollmentAdminClient consentVersion={pilotConsentVersion} />
+        <DiagnosticPilotHealthClient />
         <h2 style={{ margin: '0 0 6px', fontSize: 24 }}>Revisión de escritura</h2>
         <p style={{ margin: '0 0 20px', color: '#6b7280', maxWidth: 820 }}>
           La primera revisión es ciega frente al modelo. Una discrepancia material o una decisión de revisar pasa a otra identidad para adjudicación. Sin autorización externa, el caso conserva una ruta completamente humana.

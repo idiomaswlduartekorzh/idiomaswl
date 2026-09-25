@@ -376,3 +376,9 @@ y `package.json` relacionados con el diagnóstico.
 
 El informe piloto contiene `bankSnapshot.sha256`, calculado sobre ítems, claves, racionales,
 fuentes y consignas. Cualquier cambio posterior invalida automáticamente la evidencia del piloto.
+
+El panel administrativo dispone además de una proyección operativa del mismo informe. Se carga
+solo bajo demanda y resume finalización, duración, estados, rutas, gates, escritura, referencia,
+evidencia psicométrica y conteos de alertas. Aunque el endpoint completo sigue reservado para la
+captura hash-bound, la respuesta usada por el navegador omite métricas e identificadores por
+ítem, selecciones de opciones y cualquier dato de participante.
