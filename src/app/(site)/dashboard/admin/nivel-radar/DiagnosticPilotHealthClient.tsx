@@ -26,6 +26,26 @@ type PilotReport = {
     statusCounts: Readonly<Record<string, number>>;
     completedRouteCounts: Readonly<Record<string, number>>;
   };
+  operations: {
+    activeAttempts: number;
+    overdueActiveAttempts: number;
+    abandonedAttempts: number;
+    expiredAttempts: number;
+    objectiveMedianResponseMs: number | null;
+    objectiveP90ResponseMs: number | null;
+    listeningResponses: number;
+    listeningStartedRate: number | null;
+    listeningResponsesWithoutPlayback: number;
+    writingQueueOpen: number;
+    writingQueueOldestMs: number | null;
+    writingFailed: number;
+    writingMedianTurnaroundMs: number | null;
+    writingP90TurnaroundMs: number | null;
+    monitoringCoverage: {
+      applicationErrorRate: 'external-observability-required';
+      audioDeliveryFailureRate: 'external-observability-required';
+    };
+  };
   flagCounts: readonly { flag: string; count: number }[];
   writingAgreement: { comparablePairs: number; exactAgreement: number | null };
   independentReference: { pairs: number; withinOneLevel: number | null; referenceLevelCounts: Readonly<Record<string, number>> };
@@ -69,6 +89,11 @@ function percent(value: number | null): string {
 function duration(value: number | null): string {
   if (value === null) return 'Sin datos';
   return `${Math.round(value / 60_000)} min`;
+}
+
+function latency(value: number | null): string {
+  if (value === null) return 'Sin datos';
+  return value < 60_000 ? `${(value / 1_000).toFixed(1)} s` : duration(value);
 }
 
 function Card({ label, value, detail }: { label: string; value: string | number; detail?: string }) {
@@ -163,6 +188,19 @@ export default function DiagnosticPilotHealthClient() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 8 }}>
             {Object.entries(ROUTE_LABELS).map(([route, label]) => <Card key={route} label={label} value={report.attempts.completedRouteCounts[route] ?? 0} />)}
           </div>
+
+          <h3 style={{ margin: '18px 0 8px', fontSize: 15 }}>Operación para rollout</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(165px, 1fr))', gap: 8 }}>
+            <Card label="Intentos activos" value={report.operations.activeAttempts} detail={`${report.operations.overdueActiveAttempts} vencidos sin cerrar`} />
+            <Card label="Abandono / expiración" value={report.operations.abandonedAttempts + report.operations.expiredAttempts} detail={`${report.operations.abandonedAttempts} abandonados · ${report.operations.expiredAttempts} expirados`} />
+            <Card label="Latencia por respuesta" value={latency(report.operations.objectiveMedianResponseMs)} detail={`p90: ${latency(report.operations.objectiveP90ResponseMs)}`} />
+            <Card label="Escucha iniciada" value={percent(report.operations.listeningStartedRate)} detail={`${report.operations.listeningResponsesWithoutPlayback} respuestas intentadas sin reproducción`} />
+            <Card label="Cola de escritura" value={report.operations.writingQueueOpen} detail={`más antigua: ${duration(report.operations.writingQueueOldestMs)}`} />
+            <Card label="Turnaround escritura" value={duration(report.operations.writingMedianTurnaroundMs)} detail={`p90: ${duration(report.operations.writingP90TurnaroundMs)} · ${report.operations.writingFailed} fallidas`} />
+          </div>
+          <p role="note" style={{ margin: '9px 0 0', color: '#92400e', fontSize: 11 }}>
+            Errores de aplicación y fallos de entrega de audio requieren observabilidad externa; esta vista no los infiere a partir de ceros.
+          </p>
 
           <h3 style={{ margin: '18px 0 8px', fontSize: 15 }}>Estados de intento</h3>
           <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>

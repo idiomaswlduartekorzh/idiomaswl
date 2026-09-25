@@ -260,7 +260,11 @@ Actualizado el 25 de septiembre de 2026:
   referencia independiente, cadena psicométrica y alertas agregadas. El servidor proyecta una
   respuesta mínima antes de enviarla al navegador: no incluye identidades, respuestas, textos,
   IDs de ítem u opción, claves ni etiquetas de grupos. La carga es `same-origin`, `no-store` y
-  conserva el límite administrativo existente.
+  conserva el límite administrativo existente. Para operar el rollout añade ahora intentos
+  activos y vencidos, abandono/expiración, latencia objetiva, reproducción de escucha, cola,
+  antigüedad, fallos y turnaround de escritura. Los errores de aplicación y de entrega de audio
+  se marcan explícitamente como dependientes de observabilidad externa: un cero ausente nunca se
+  presenta como ausencia de fallos. Proyección, cálculo y UI forman parte del snapshot de entrega.
 - **Fase 8 — retiro preservando historia implementado:**
   `config/diagnostic/item-controls.json` separa la disponibilidad futura del contenido
   versionado. Un retiro exige versión exacta, motivo cerrado, referencia de decisión y revisiones

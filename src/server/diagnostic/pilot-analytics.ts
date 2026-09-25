@@ -110,6 +110,7 @@ export interface DiagnosticPilotAttemptRow {
   routeId: string | null;
   bankVersion: string;
   startedAt: string;
+  expiresAt: string;
   updatedAt: string;
   completedAt: string | null;
 }
@@ -133,6 +134,9 @@ export interface DiagnosticPilotWritingRow {
   exactAgreement: number | null;
   meanAbsoluteLevelDifference: number | null;
   requiresAdjudication: boolean | null;
+  createdAt: string;
+  updatedAt: string;
+  completedAt: string | null;
 }
 
 export interface DiagnosticPilotReferenceRow {
@@ -271,12 +275,24 @@ function selectedOptionIds(value: unknown): string[] {
 function validateDataset(input: {
   attempts: readonly DiagnosticPilotAttemptRow[];
   responses: readonly DiagnosticPilotResponseRow[];
+  writing: readonly DiagnosticPilotWritingRow[];
   references: readonly DiagnosticPilotReferenceRow[];
 }, bank: readonly DiagnosticBankRecord[]): void {
   if (new Set(input.attempts.map(row => row.attemptId)).size !== input.attempts.length) throw new Error('pilot attempts contain duplicate ids');
   if (new Set(bank.map(record => record.publicItem.id)).size !== bank.length) throw new Error('pilot bank contains duplicate item ids');
   const attemptIds = new Set(input.attempts.map(row => row.attemptId));
   const bankById = new Map(bank.map(record => [record.publicItem.id, record]));
+  for (const attempt of input.attempts) {
+    const startedAt = Date.parse(attempt.startedAt);
+    const expiresAt = Date.parse(attempt.expiresAt);
+    const updatedAt = Date.parse(attempt.updatedAt);
+    const completedAt = attempt.completedAt === null ? null : Date.parse(attempt.completedAt);
+    if (![startedAt, expiresAt, updatedAt].every(Number.isFinite)
+      || expiresAt <= startedAt || updatedAt < startedAt
+      || (completedAt !== null && (!Number.isFinite(completedAt) || completedAt < startedAt))) {
+      throw new Error('pilot attempt timestamps are invalid');
+    }
+  }
   const responseIds = new Set<string>();
   for (const response of input.responses) {
     const identity = `${response.attemptId}:${response.itemId}`;
@@ -290,6 +306,15 @@ function validateDataset(input: {
     if (!['correct', 'incorrect', 'omitted'].includes(response.outcome)) throw new Error(`${identity} has an invalid outcome`);
     if (response.responseMs !== null && (!Number.isInteger(response.responseMs) || response.responseMs < 0 || response.responseMs > 3_600_000)) {
       throw new Error(`${identity} has invalid response time`);
+    }
+  }
+  for (const row of input.writing) {
+    const createdAt = Date.parse(row.createdAt);
+    const updatedAt = Date.parse(row.updatedAt);
+    const completedAt = row.completedAt === null ? null : Date.parse(row.completedAt);
+    if (!Number.isFinite(createdAt) || !Number.isFinite(updatedAt) || updatedAt < createdAt
+      || (completedAt !== null && (!Number.isFinite(completedAt) || completedAt < createdAt))) {
+      throw new Error('pilot writing timestamps are invalid');
     }
   }
   if (new Set(input.references.map(row => row.attemptId)).size !== input.references.length) {
@@ -522,8 +547,13 @@ export function buildDiagnosticPilotReport(input: {
 }) {
   const criteriaErrors = validateDiagnosticPilotCriteria(input.criteria);
   if (criteriaErrors.length) throw new Error(criteriaErrors.join('; '));
-  if (Number.isNaN(Date.parse(input.generatedAt))) throw new Error('pilot report date is invalid');
+  const generatedAtMs = Date.parse(input.generatedAt);
+  if (!Number.isFinite(generatedAtMs)) throw new Error('pilot report date is invalid');
   validateDataset(input, input.bank);
+  if (input.attempts.some(row => Date.parse(row.startedAt) > generatedAtMs)
+    || input.writing.some(row => Date.parse(row.createdAt) > generatedAtMs)) {
+    throw new Error('pilot dataset contains future operational evidence');
+  }
   const activeBank = input.bank.filter(record => record.status === 'pilot' || record.status === 'operational');
   const activeWritingBank = input.writingBank.filter(record => record.status === 'pilot' || record.status === 'operational');
   const activeItemIds = new Set(activeBank.map(record => record.publicItem.id));
@@ -553,6 +583,19 @@ export function buildDiagnosticPilotReport(input: {
     .map(route => [route, input.attempts.filter(row => (row.routeId ?? 'unassigned') === route).length]));
   const completedRouteCounts = Object.fromEntries(ROUTES
     .map(route => [route, completed.filter(row => row.routeId === route).length]));
+  const activeStatuses = new Set(['locator', 'precision', 'writing', 'scoring']);
+  const activeAttempts = input.attempts.filter(row => activeStatuses.has(row.status));
+  const overdueActiveAttempts = activeAttempts.filter(row => Date.parse(row.expiresAt) <= generatedAtMs).length;
+  const objectiveResponseTimes = input.responses.flatMap(row => row.responseMs === null ? [] : [row.responseMs]);
+  const listeningResponses = input.responses.filter(row => row.skill === 'listening');
+  const attemptedListeningResponses = listeningResponses.filter(row => row.outcome !== 'omitted');
+  const listeningResponsesWithoutPlayback = attemptedListeningResponses
+    .filter(row => (row.audioPlayCount ?? 0) < 1).length;
+  const writingQueueStatuses = new Set(['pending', 'automated-scored', 'human-review', 'adjudication']);
+  const writingQueue = input.writing.filter(row => writingQueueStatuses.has(row.status));
+  const writingQueueAges = writingQueue.map(row => Math.max(0, generatedAtMs - Date.parse(row.createdAt)));
+  const writingTurnaround = input.writing.flatMap(row => row.completedAt === null
+    ? [] : [Date.parse(row.completedAt) - Date.parse(row.createdAt)]);
 
   const itemMetrics = activeBank.map(record => {
     const item = record.publicItem;
@@ -683,6 +726,29 @@ export function buildDiagnosticPilotReport(input: {
       routeCounts,
       completedRouteCounts,
     },
+    operations: {
+      activeAttempts: activeAttempts.length,
+      overdueActiveAttempts,
+      abandonedAttempts: input.attempts.filter(row => row.status === 'abandoned').length,
+      expiredAttempts: input.attempts.filter(row => row.status === 'expired').length,
+      objectiveMedianResponseMs: quantile(objectiveResponseTimes, 0.5),
+      objectiveP90ResponseMs: quantile(objectiveResponseTimes, 0.9),
+      listeningResponses: listeningResponses.length,
+      listeningStartedRate: rate(
+        listeningResponses.filter(row => (row.audioPlayCount ?? 0) >= 1).length,
+        listeningResponses.length,
+      ),
+      listeningResponsesWithoutPlayback,
+      writingQueueOpen: writingQueue.length,
+      writingQueueOldestMs: writingQueueAges.length ? Math.max(...writingQueueAges) : null,
+      writingFailed: input.writing.filter(row => row.status === 'failed').length,
+      writingMedianTurnaroundMs: quantile(writingTurnaround, 0.5),
+      writingP90TurnaroundMs: quantile(writingTurnaround, 0.9),
+      monitoringCoverage: {
+        applicationErrorRate: 'external-observability-required',
+        audioDeliveryFailureRate: 'external-observability-required',
+      },
+    },
     itemMetrics,
     writingAgreement: {
       submitted: activeWritingRows.length,
@@ -698,6 +764,9 @@ export function buildDiagnosticPilotReport(input: {
       ...(input.references.length === 0 ? ['NO_INDEPENDENT_REFERENCE_EVIDENCE'] : []),
       ...(!measurement.bindingValid ? ['MEASUREMENT_EVIDENCE_NOT_BOUND'] : []),
       ...(itemMetrics.some(item => item.flags.length > 0) ? ['ITEMS_REQUIRE_REVIEW'] : []),
+      ...(overdueActiveAttempts > 0 ? ['OVERDUE_ACTIVE_ATTEMPTS'] : []),
+      ...(input.writing.some(row => row.status === 'failed') ? ['WRITING_FAILURES_PRESENT'] : []),
+      ...(listeningResponsesWithoutPlayback > 0 ? ['LISTENING_RESPONSES_WITHOUT_PLAYBACK'] : []),
     ],
   } as const;
 }

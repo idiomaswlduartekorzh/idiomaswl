@@ -24,6 +24,7 @@ test('pilot health projection keeps browser data aggregate and omits item-level 
   assert.match(projection, /retiredObjectiveItems/);
   assert.match(projection, /retiredWritingPrompts/);
   assert.match(projection, /measurementEvidence/);
+  assert.match(projection, /operations/);
   assert.doesNotMatch(projection, /itemId|contentVersion|optionSelections|distractorFunctioning|submittedResponse/);
   assert.match(route, /searchParams\.get\('scope'\) === 'health' \? healthProjection\(report\) : report/);
 });
@@ -39,6 +40,8 @@ test('admin pilot health UI is manual, same-origin, no-store and covers operatio
   assert.match(healthClient, /Puertas del piloto/);
   assert.match(healthClient, /Cadena psicométrica/);
   assert.match(healthClient, /Alertas agregadas/);
+  assert.match(healthClient, /Operación para rollout/);
+  assert.match(healthClient, /Errores de aplicación y fallos de entrega de audio requieren observabilidad externa/);
 });
 
 test('pilot loader omits user identity and writing text from every select', () => {

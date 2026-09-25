@@ -39,6 +39,7 @@ const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const attempts = Array.from({ length: 12 }, (_, index) => ({
   attemptId: `private-attempt-${index + 1}`, status: 'completed', routeId: routes[Math.floor(index / 4)],
   bankVersion: 'fixture-bank', startedAt: `2026-09-25T12:${String(index).padStart(2, '0')}:00.000Z`,
+  expiresAt: `2026-09-25T15:${String(index).padStart(2, '0')}:00.000Z`,
   updatedAt: `2026-09-25T13:${String(index).padStart(2, '0')}:00.000Z`,
   completedAt: `2026-09-25T13:${String(index).padStart(2, '0')}:00.000Z`,
 }));
@@ -61,6 +62,8 @@ const writing = attempts.map(attempt => ({
   contentVersion: writingBank[0].publicPrompt.contentVersion,
   status: 'completed', exactAgreement: 0.75,
   meanAbsoluteLevelDifference: 0.25, requiresAdjudication: false,
+  createdAt: '2026-09-25T13:00:00.000Z', updatedAt: '2026-09-25T13:30:00.000Z',
+  completedAt: '2026-09-25T13:30:00.000Z',
 }));
 const references = attempts.map((attempt, index) => ({
   attemptId: attempt.attemptId, diagnosticLevel: levels[index % levels.length],
@@ -122,6 +125,65 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
   assert.match(report.bankSnapshot.sha256, /^[a-f0-9]{64}$/u);
   assert.equal(report.bankSnapshot.objectiveItems, 2);
   assert.equal(report.bankSnapshot.writingPrompts, 1);
+  assert.equal(report.operations.activeAttempts, 0);
+  assert.equal(report.operations.objectiveMedianResponseMs, 1_500);
+  assert.equal(report.operations.writingMedianTurnaroundMs, 1_800_000);
+  assert.equal(report.operations.listeningStartedRate, null);
+  assert.deepEqual(report.operations.monitoringCoverage, {
+    applicationErrorRate: 'external-observability-required',
+    audioDeliveryFailureRate: 'external-observability-required',
+  });
+});
+
+test('operational health exposes overdue work, listening compliance and writing backlog only as aggregates', () => {
+  const listeningRecord = {
+    ...bank[0],
+    publicItem: {
+      ...bank[0].publicItem,
+      id: 'fixture-listening-item',
+      skill: 'listening',
+      stimulus: {
+        kind: 'audio', mediaId: 'fixture-audio', src: '/api/diagnostic/media/fixture-audio',
+        startMs: 0, endMs: 10_000, maxPlays: 2,
+      },
+    },
+  };
+  const operationalAttempts = [
+    ...attempts,
+    {
+      attemptId: 'private-attempt-active', status: 'writing', routeId: 'low-a1-a2',
+      bankVersion: 'fixture-bank', startedAt: '2026-09-25T10:00:00.000Z',
+      expiresAt: '2026-09-25T13:00:00.000Z', updatedAt: '2026-09-25T13:30:00.000Z', completedAt: null,
+    },
+  ];
+  const operationalWriting = [
+    ...writing,
+    {
+      attemptId: 'private-attempt-active', promptId: writingBank[0].publicPrompt.id,
+      contentVersion: writingBank[0].publicPrompt.contentVersion,
+      status: 'human-review', exactAgreement: null, meanAbsoluteLevelDifference: null,
+      requiresAdjudication: null, createdAt: '2026-09-25T13:00:00.000Z',
+      updatedAt: '2026-09-25T13:30:00.000Z', completedAt: null,
+    },
+  ];
+  const listeningResponse = {
+    ...responses[0], attemptId: 'private-attempt-active', itemId: listeningRecord.publicItem.id,
+    contentVersion: listeningRecord.publicItem.contentVersion, skill: 'listening', audioPlayCount: 0,
+  };
+  const report = buildReport({
+    attempts: operationalAttempts,
+    writing: operationalWriting,
+    responses: [...responses, listeningResponse],
+    bank: [...bank, listeningRecord],
+  });
+  assert.equal(report.operations.activeAttempts, 1);
+  assert.equal(report.operations.overdueActiveAttempts, 1);
+  assert.equal(report.operations.writingQueueOpen, 1);
+  assert.equal(report.operations.writingQueueOldestMs, 3_600_000);
+  assert.equal(report.operations.listeningResponsesWithoutPlayback, 1);
+  assert.ok(report.warnings.includes('OVERDUE_ACTIVE_ATTEMPTS'));
+  assert.ok(report.warnings.includes('LISTENING_RESPONSES_WITHOUT_PLAYBACK'));
+  assert.equal(JSON.stringify(report.operations).includes('private-attempt'), false);
 });
 
 test('report never serializes attempt identity or submitted response content', () => {
@@ -156,6 +218,23 @@ test('criteria validation rejects unfrozen or impossible thresholds', () => {
   assert.match(validateDiagnosticPilotCriteria({ ...criteria, minimumResponsesPerItem: 0 }).join('; '), /positive integer/);
   assert.match(validateDiagnosticPilotCriteria({ ...criteria, maximumOmissionRate: 2 }).join('; '), /between zero and one/);
   assert.match(validateDiagnosticPilotCriteria({ ...criteria, minimumItemFacility: 0.9 }).join('; '), /lower than/);
+});
+
+test('operational health rejects impossible attempt and writing timestamps', () => {
+  assert.throws(() => buildReport({
+    attempts: attempts.map((row, index) => index === 0 ? { ...row, expiresAt: row.startedAt } : row),
+  }), /attempt timestamps/);
+  assert.throws(() => buildReport({
+    writing: writing.map((row, index) => index === 0
+      ? { ...row, completedAt: '2026-09-25T12:59:59.000Z' } : row),
+  }), /writing timestamps/);
+  assert.throws(() => buildReport({
+    attempts: attempts.map((row, index) => index === 0
+      ? {
+        ...row, startedAt: '2026-09-25T14:01:00.000Z', expiresAt: '2026-09-25T16:01:00.000Z',
+        updatedAt: '2026-09-25T14:02:00.000Z', completedAt: '2026-09-25T14:02:00.000Z',
+      } : row),
+  }), /future operational evidence/);
 });
 
 test('route, CEFR coverage and specialist measurement evidence fail closed independently', () => {

@@ -45,6 +45,7 @@ function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>)
       statusCounts: report.attempts.statusCounts,
       completedRouteCounts: report.attempts.completedRouteCounts,
     },
+    operations: report.operations,
     flagCounts: [...counts.entries()].sort(([left], [right]) => left.localeCompare(right))
       .map(([flag, count]) => ({ flag, count })),
     writingAgreement: report.writingAgreement,

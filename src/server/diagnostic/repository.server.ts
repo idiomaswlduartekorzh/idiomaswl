@@ -759,12 +759,13 @@ export async function loadDiagnosticPilotDataset(input: {
 }> {
   const attemptRows = await loadDiagnosticPilotPages(
     'diagnostic_attempts',
-    'id,status,route_id,bank_version,started_at,updated_at,completed_at,result_profile',
+    'id,status,route_id,bank_version,started_at,expires_at,updated_at,completed_at,result_profile',
     query => query.eq('language', input.language).gte('started_at', input.since.toISOString()).order('started_at', { ascending: true }),
   );
   const attempts = attemptRows.map(row => ({
     attemptId: String(row.id), status: String(row.status), routeId: row.route_id ? String(row.route_id) : null,
-    bankVersion: String(row.bank_version), startedAt: String(row.started_at), updatedAt: String(row.updated_at),
+    bankVersion: String(row.bank_version), startedAt: String(row.started_at), expiresAt: String(row.expires_at),
+    updatedAt: String(row.updated_at),
     completedAt: row.completed_at ? String(row.completed_at) : null,
   }));
   const attemptIds = attempts.map(row => row.attemptId);
@@ -777,7 +778,7 @@ export async function loadDiagnosticPilotDataset(input: {
     ),
     loadDiagnosticPilotRowsForAttempts(
       'diagnostic_writing_evaluations',
-      'attempt_id,prompt_id,content_version,status,final_evidence',
+      'attempt_id,prompt_id,content_version,status,final_evidence,created_at,updated_at,completed_at',
       attemptIds,
     ),
     loadDiagnosticPilotRowsForAttempts(
@@ -803,6 +804,8 @@ export async function loadDiagnosticPilotDataset(input: {
       exactAgreement: typeof agreement.exactAgreement === 'number' ? agreement.exactAgreement : null,
       meanAbsoluteLevelDifference: typeof agreement.meanAbsoluteLevelDifference === 'number' ? agreement.meanAbsoluteLevelDifference : null,
       requiresAdjudication: typeof agreement.requiresAdjudication === 'boolean' ? agreement.requiresAdjudication : null,
+      createdAt: String(row.created_at), updatedAt: String(row.updated_at),
+      completedAt: row.completed_at ? String(row.completed_at) : null,
     };
   });
   const attemptById = new Map(attemptRows.map(row => [String(row.id), row]));
