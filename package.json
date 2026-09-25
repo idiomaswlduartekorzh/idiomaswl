@@ -39,6 +39,7 @@
     "verify:diagnostic-audio-upload": "node scripts/upload-diagnostic-legacy-audio.mjs",
     "upload:diagnostic-audio": "node scripts/upload-diagnostic-legacy-audio.mjs --execute",
     "scaffold:diagnostic-bank-review": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/scaffold-diagnostic-bank-review.mjs",
+    "scaffold:diagnostic-listening-production": "node --experimental-strip-types --no-warnings scripts/scaffold-diagnostic-listening-production.mjs",
     "record:diagnostic-bank-approvals": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/record-diagnostic-bank-approvals.mjs",
     "simulate:diagnostic-mst": "node --experimental-strip-types --no-warnings scripts/simulate-diagnostic-mst.mjs",
     "simulate:diagnostic-mst:report": "node --experimental-strip-types --no-warnings scripts/simulate-diagnostic-mst.mjs --output docs/diagnostic-mst-simulation-baseline.json",

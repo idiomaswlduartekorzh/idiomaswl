@@ -100,7 +100,10 @@ Actualizado el 24 de septiembre de 2026:
   duración, SHA-256 de audio, SHA-256 de transcripción y dos revisores de audio independientes;
   después todavía necesitan revisión lingüística, de evaluación y alineación para promoción.
   Cada tramo A1–A2, B1–B2 y C1–C2 lleva versión propia; el ingestor rechaza una grabación
-  generada para otra versión aunque conserve el mismo identificador.
+  generada para otra versión aunque conserve el mismo identificador. El generador de paquetes
+  privados de locución entrega transcript, reparto, ritmo y duración, pero excluye preguntas,
+  claves y racionales. El hash del transcript canónico se verifica de nuevo al materializar una
+  grabación, de modo que una locución alterada no puede entrar silenciosamente al banco.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
@@ -133,7 +136,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **152 pruebas** y
+  borradores; el último corte local ejecutó **153 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

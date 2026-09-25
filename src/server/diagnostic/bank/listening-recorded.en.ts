@@ -2,6 +2,7 @@ import publications from '../../../../config/diagnostic/english-listening-audio-
 import type { DiagnosticBankRecord } from '../types.ts';
 import {
   ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
+  diagnosticListeningTranscriptSha256,
   type DiagnosticListeningProductionBrief,
 } from './listening-production-lower.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS } from './listening-production-mid.en.ts';
@@ -32,6 +33,7 @@ function validatePublication(
   if (publication.productionVersion !== brief.productionVersion) errors.push('production version mismatch');
   if (!/^[a-f0-9]{64}$/.test(publication.audioSha256)) errors.push('invalid audio hash');
   if (!/^[a-f0-9]{64}$/.test(publication.transcriptSha256)) errors.push('invalid transcript hash');
+  else if (publication.transcriptSha256 !== diagnosticListeningTranscriptSha256(brief)) errors.push('transcript hash mismatch');
   const [minimumDuration, maximumDuration] = brief.recording.targetDurationSeconds;
   if (!Number.isFinite(publication.durationSeconds)
     || publication.durationSeconds < minimumDuration

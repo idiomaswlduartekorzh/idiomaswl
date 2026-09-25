@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto';
+
 import type { CefrLevel } from '../../../lib/diagnostic/types.ts';
 
 export const ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_VERSION = 'en-listening-original-lower-production-1';
@@ -38,6 +40,14 @@ export interface DiagnosticListeningProductionBrief {
     transcriptReview: 'pending';
     alignmentReview: 'pending';
   };
+}
+
+export function diagnosticListeningCanonicalTranscript(brief: DiagnosticListeningProductionBrief): string {
+  return brief.recording.turns.map(turn => `${turn.speaker}: ${turn.text.trim()}`).join('\n');
+}
+
+export function diagnosticListeningTranscriptSha256(brief: DiagnosticListeningProductionBrief): string {
+  return createHash('sha256').update(diagnosticListeningCanonicalTranscript(brief), 'utf8').digest('hex');
 }
 
 const briefs: readonly Omit<DiagnosticListeningProductionBrief, 'id' | 'productionVersion' | 'benchmark' | 'audioArtifact'>[] = [
