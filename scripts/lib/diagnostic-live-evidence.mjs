@@ -21,7 +21,7 @@ function assertRecent(timestamp, now, label, maximumAgeHours) {
 
 const INSPECTION_GROUPS = [
   'serviceSchema', 'publicTableIsolation', 'serviceFunctions',
-  'publicFunctionIsolation', 'privateStorage', 'authenticatedBoundary',
+  'immutableEvidence', 'publicFunctionIsolation', 'privateStorage', 'authenticatedBoundary',
 ];
 
 export function validateDiagnosticLiveEvidence(input) {
@@ -40,11 +40,12 @@ export function validateDiagnosticLiveEvidence(input) {
     || !COMMIT_SHA.test(input.expectedCommitSha ?? '')) {
     throw new Error('Expected release identity is invalid.');
   }
-  if (inspection?.receiptVersion !== 'diagnostic-supabase-inspection-v1'
+  if (inspection?.receiptVersion !== 'diagnostic-supabase-inspection-v2'
     || inspection.decision !== 'PASS'
     || !INSPECTION_GROUPS.every(group => inspection.groups?.[group] === true)
     || inspection.expectedMigration !== input.expectedMigration
     || inspection.claims?.schemaContractVerified !== true
+    || inspection.claims?.immutableResponseEvidenceVerified !== true
     || inspection.claims?.browserDirectAccessDenied !== true
     || inspection.claims?.privateStorageVerified !== true
     || inspection.claims?.authenticatedApplicationFlowVerified !== false

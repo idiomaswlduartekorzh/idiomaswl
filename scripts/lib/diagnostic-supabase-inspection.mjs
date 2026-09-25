@@ -45,6 +45,15 @@ const RPC_PROBES = [
   },
 ];
 
+const IMMUTABILITY_PROBES = [
+  { id: 'diagnostic_responses:update', table: 'diagnostic_responses', method: 'PATCH', body: { outcome: 'incorrect' } },
+  { id: 'diagnostic_responses:delete', table: 'diagnostic_responses', method: 'DELETE' },
+  { id: 'diagnostic_attempt_events:update', table: 'diagnostic_attempt_events', method: 'PATCH', body: { event_type: 'tampered' } },
+  { id: 'diagnostic_attempt_events:delete', table: 'diagnostic_attempt_events', method: 'DELETE' },
+];
+
+const IMPOSSIBLE_UUID = '00000000-0000-4000-8000-000000000000';
+
 function apiKeyHeaders(apiKey, userAccessToken = null) {
   const headers = { apikey: apiKey };
   if (userAccessToken) headers.Authorization = `Bearer ${userAccessToken}`;
@@ -161,6 +170,26 @@ export async function inspectDiagnosticSupabase({
     publicFunctionIsolation.push(publicCheckResult(probe.name, publicError));
   }
 
+  const immutableEvidence = [];
+  for (const probe of IMMUTABILITY_PROBES) {
+    const response = await fetchImpl(
+      `${origin}/rest/v1/${probe.table}?id=eq.${IMPOSSIBLE_UUID}`,
+      {
+        method: probe.method,
+        headers: {
+          ...apiKeyHeaders(adminKey),
+          'content-type': 'application/json',
+          Prefer: 'return=minimal',
+        },
+        ...(probe.body ? { body: JSON.stringify(probe.body) } : {}),
+      },
+    );
+    const error = response.ok
+      ? { status: response.status, code: null, message: '' }
+      : await readError(response);
+    immutableEvidence.push(publicCheckResult(probe.id, error));
+  }
+
   const bucketUrl = `${origin}/storage/v1/bucket/diagnostic-audio`;
   const bucketResponse = await fetchImpl(bucketUrl, { headers: apiKeyHeaders(adminKey) });
   const bucketPayload = bucketResponse.ok ? await bucketResponse.json().catch(() => null) : null;
@@ -215,6 +244,7 @@ export async function inspectDiagnosticSupabase({
     serviceSchema: serviceSchema.every(check => check.passed),
     publicTableIsolation: publicIsolation.every(check => check.passed),
     serviceFunctions: serviceFunctions.every(check => check.passed),
+    immutableEvidence: immutableEvidence.every(check => check.passed),
     publicFunctionIsolation: publicFunctionIsolation.every(check => check.passed),
     privateStorage: bucket.passed && publicBucketIsolation.passed,
     authenticatedBoundary: !authenticatedBoundary.supplied
@@ -223,7 +253,7 @@ export async function inspectDiagnosticSupabase({
   const passed = Object.values(groups).every(Boolean);
 
   return {
-    receiptVersion: 'diagnostic-supabase-inspection-v1',
+    receiptVersion: 'diagnostic-supabase-inspection-v2',
     decision: passed ? 'PASS' : 'HOLD',
     generatedAt,
     target: { project: projectLabel(origin) },
@@ -233,13 +263,15 @@ export async function inspectDiagnosticSupabase({
       serviceSchema,
       publicIsolation,
       serviceFunctions,
+      immutableEvidence,
       publicFunctionIsolation,
       bucket,
       publicBucketIsolation,
       authenticatedBoundary,
     },
     claims: {
-      schemaContractVerified: groups.serviceSchema && groups.serviceFunctions,
+      schemaContractVerified: groups.serviceSchema && groups.serviceFunctions && groups.immutableEvidence,
+      immutableResponseEvidenceVerified: groups.immutableEvidence,
       browserDirectAccessDenied: groups.publicTableIsolation && groups.publicFunctionIsolation,
       privateStorageVerified: groups.privateStorage,
       authenticatedApplicationFlowVerified: false,

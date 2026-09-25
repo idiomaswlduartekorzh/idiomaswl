@@ -17,7 +17,7 @@ function jsonResponse(payload, status = 200) {
   });
 }
 
-function passingFetch({ exposePublicTable = false, includeUser = false } = {}) {
+function passingFetch({ exposePublicTable = false, includeUser = false, allowEvidenceMutation = false } = {}) {
   return async (url, options = {}) => {
     const headers = options.headers ?? {};
     const key = headers.apikey;
@@ -50,6 +50,11 @@ function passingFetch({ exposePublicTable = false, includeUser = false } = {}) {
       }, 400);
     }
     if (url.includes('/rest/v1/diagnostic_')) {
+      if (isAdmin && ['PATCH', 'DELETE'].includes(options.method)) {
+        return allowEvidenceMutation
+          ? new Response(null, { status: 204 })
+          : jsonResponse({ code: '42501', message: 'permission denied' }, 403);
+      }
       if (isAdmin || exposePublicTable) return new Response(null, { status: 200 });
       return jsonResponse({ code: '42501', message: 'permission denied' }, 403);
     }
@@ -62,13 +67,14 @@ test('live inspection verifies schema and deny boundaries without collecting row
     endpoint,
     adminKey,
     publicKey,
-    expectedMigration: '20260925051500_diagnostic_pilot_retests.sql',
+    expectedMigration: '20260925053000_diagnostic_immutable_evidence.sql',
     userAccessToken: 'user-access-token',
     fetchImpl: passingFetch({ includeUser: true }),
     generatedAt: '2026-09-25T12:00:00.000Z',
   });
   assert.equal(receipt.decision, 'PASS');
   assert.equal(receipt.claims.schemaContractVerified, true);
+  assert.equal(receipt.claims.immutableResponseEvidenceVerified, true);
   assert.equal(receipt.claims.browserDirectAccessDenied, true);
   assert.equal(receipt.claims.privateStorageVerified, true);
   assert.equal(receipt.checks.authenticatedBoundary.identityResolved, true);
@@ -83,11 +89,25 @@ test('inspection fails closed when a diagnostic table becomes browser-readable',
     endpoint,
     adminKey,
     publicKey,
-    expectedMigration: '20260925051500_diagnostic_pilot_retests.sql',
+    expectedMigration: '20260925053000_diagnostic_immutable_evidence.sql',
     fetchImpl: passingFetch({ exposePublicTable: true }),
   });
   assert.equal(receipt.decision, 'HOLD');
   assert.equal(receipt.groups.publicTableIsolation, false);
+});
+
+test('inspection fails closed when service role can rewrite append-only evidence', async () => {
+  const receipt = await inspectDiagnosticSupabase({
+    endpoint,
+    adminKey,
+    publicKey,
+    expectedMigration: '20260925053000_diagnostic_immutable_evidence.sql',
+    fetchImpl: passingFetch({ allowEvidenceMutation: true }),
+  });
+  assert.equal(receipt.decision, 'HOLD');
+  assert.equal(receipt.groups.immutableEvidence, false);
+  assert.equal(receipt.claims.immutableResponseEvidenceVerified, false);
+  assert.equal(receipt.claims.destructiveWritesPerformed, false);
 });
 
 test('new Supabase API keys are never sent as JWTs while legacy keys retain compatibility', () => {

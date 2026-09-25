@@ -160,6 +160,8 @@ credenciales cargadas únicamente en el entorno, comprueba mediante solicitudes 
 
 - las columnas que prueban la migración diagnóstica más reciente;
 - el acceso de servidor y la denegación directa para clave pública;
+- la denegación de `UPDATE` y `DELETE` directos del rol servidor sobre respuestas y eventos,
+  usando filtros por un UUID imposible que no pueden afectar filas reales;
 - los RPC de servidor con entradas inválidas que no escriben datos;
 - el bucket `diagnostic-audio`, su límite, MIME y condición privada;
 - opcionalmente, la denegación directa con un JWT de usuario de prueba en

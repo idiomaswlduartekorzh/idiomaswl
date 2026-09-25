@@ -42,7 +42,10 @@ Actualizado el 25 de septiembre de 2026:
 - **Fase 2 — núcleo en progreso:** contratos público/privado, scoring objetivo en servidor,
   validación antimanipulación y una migración durable con tablas de intentos, etapas,
   respuestas, escritura y auditoría implementados. Las tablas niegan acceso directo a roles de
-  navegador. La creación del intento y el envío de una etapa tienen funciones SQL atómicas,
+  navegador. Respuestas puntuadas y eventos son además evidencia append-only: `service_role`
+  puede seleccionarlos e insertarlos mediante el flujo versionado, pero no reescribirlos ni
+  borrarlos directamente; el borrado solicitado por el usuario conserva la cascada desde el
+  intento padre. La creación del intento y el envío de una etapa tienen funciones SQL atómicas,
   `SECURITY INVOKER`, autorizadas solo para `service_role`; el endpoint de inicio comprueba
   feature flag, origen, consentimiento, audio, autenticación, cuota y capacidad del banco. La
   transición localizador→precisión ya tiene endpoint autenticado: vuelve a enlazar intento,
@@ -63,9 +66,9 @@ Actualizado el 25 de septiembre de 2026:
   privados. Para un intento completado ya no reenvía ciegamente el JSON persistido: valida las
   cinco habilidades, evidencia, rangos y confianza, descarta campos no públicos y vuelve a
   derivar nivel global, advertencias y recomendaciones; una discrepancia deja el resultado
-  cerrado en servidor. Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker
-  ni Podman), conectar un proveedor de evaluación automática y verificar autorización contra
-  una base real.
+  cerrado en servidor. Falta ejecutar las migraciones contra Postgres —el entorno actual no
+  tiene Docker ni Podman—, conectar un proveedor de evaluación automática y verificar
+  autorización contra una base real.
 - **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación ejecutable de perfiles
   contradictorios, selector balanceado y simulador A1–C2 implementados. La confirmación añade
   dos decisiones por habilidad dentro de la ruta y vuelve a estimar la evidencia antes de

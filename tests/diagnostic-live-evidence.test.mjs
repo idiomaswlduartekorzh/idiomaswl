@@ -16,15 +16,16 @@ const authenticatedFlowReceiptSha256 = 'e'.repeat(64);
 function receipts() {
   return {
     inspectionReceipt: {
-      receiptVersion: 'diagnostic-supabase-inspection-v1', decision: 'PASS',
+      receiptVersion: 'diagnostic-supabase-inspection-v2', decision: 'PASS',
       generatedAt: '2026-09-25T11:00:00.000Z', target: { project: 'project-ref' },
       expectedMigration: 'latest.sql',
       groups: {
-        serviceSchema: true, publicTableIsolation: true, serviceFunctions: true,
+        serviceSchema: true, publicTableIsolation: true, serviceFunctions: true, immutableEvidence: true,
         publicFunctionIsolation: true, privateStorage: true, authenticatedBoundary: true,
       },
       claims: {
-        schemaContractVerified: true, browserDirectAccessDenied: true, privateStorageVerified: true,
+        schemaContractVerified: true, immutableResponseEvidenceVerified: true,
+        browserDirectAccessDenied: true, privateStorageVerified: true,
         authenticatedApplicationFlowVerified: false, destructiveWritesPerformed: false,
         participantDataIncluded: false, secretsIncluded: false,
       },

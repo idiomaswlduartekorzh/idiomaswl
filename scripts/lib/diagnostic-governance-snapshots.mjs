@@ -30,6 +30,7 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'config/diagnostic/item-controls.json',
   'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql',
   'supabase/migrations/20260925051500_diagnostic_pilot_retests.sql',
+  'supabase/migrations/20260925053000_diagnostic_immutable_evidence.sql',
   'src/server/diagnostic/delivery-policy.ts',
   'src/server/diagnostic/bank/controls.ts',
   'src/server/diagnostic/start-core.ts',

@@ -8,6 +8,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925053000_diagnostic_immutable_evidence.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
@@ -35,6 +36,12 @@ test('response ownership is tied to its stage and attempt at the database layer'
   assert.match(sql, /foreign key \(stage_id, attempt_id, user_id\)[\s\S]+?diagnostic_stages\(id, attempt_id, user_id\)/);
   assert.match(sql, /unique \(attempt_id, item_id\)/);
   assert.match(sql, /outcome text not null check \(outcome in \('correct','incorrect','omitted'\)\)/);
+});
+
+test('scored responses and audit events are append-only for the service role', () => {
+  assert.match(sql, /revoke update, delete on table public\.diagnostic_responses from service_role/);
+  assert.match(sql, /revoke update, delete on table public\.diagnostic_attempt_events from service_role/);
+  assert.match(sql, /erasure performed by parent-attempt cascade/);
 });
 
 test('completed attempts and writing evaluations require final evidence', () => {
