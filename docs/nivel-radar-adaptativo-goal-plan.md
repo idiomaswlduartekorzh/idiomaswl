@@ -317,7 +317,8 @@ Actualizado el 25 de septiembre de 2026:
   huella no cambie durante la corrida y emite un recibo privado con commit, conteo de pruebas,
   historias de navegador y páginas estáticas. El E2E levanta el build con la interfaz adaptativa
   en un puerto efímero y cubre desktop, móvil, teclado, recarga, audio, omisión, error/reintento,
-  escritura, resultado con incertidumbre y cierre. Usa contratos de API simulados, por lo que no
+  escritura, resultado con incertidumbre y cierre en **320, 390 y 1.440 px**. Usa contratos de
+  API simulados, por lo que no
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El

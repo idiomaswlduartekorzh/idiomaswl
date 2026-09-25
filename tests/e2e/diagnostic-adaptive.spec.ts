@@ -97,6 +97,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('desktop recorre evidencia objetiva, audio, omisión y escritura con teclado', async ({ page }) => {
+  await page.setViewportSize({ width: 1_440, height: 900 });
   const consoleErrors: string[] = [];
   const submissions: unknown[] = [];
   page.on('console', message => { if (message.type() === 'error') consoleErrors.push(message.text()); });
@@ -180,7 +181,6 @@ test('recarga restaura pregunta y selección; un fallo conserva evidencia para r
 });
 
 test('móvil muestra resultado integral con rangos, cinco habilidades y sin desborde', async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
   await page.addInitScript(({ key, attemptId }) => sessionStorage.setItem(key, attemptId), {
     key: STORAGE_KEY, attemptId: ATTEMPT_ID,
   });
@@ -188,14 +188,20 @@ test('móvil muestra resultado integral con rangos, cinco habilidades y sin desb
     fulfillJson(route, 200, { ok: true, resume: {
       kind: 'result', attemptId: ATTEMPT_ID, attemptVersion: 4, status: 'completed', resultProfile,
     } }));
-  await page.goto(DIAGNOSTIC_ROUTE);
-  await expect(page.getByRole('heading', { name: 'Nivel global B1' })).toBeVisible();
-  await expect(page.getByText('Rango plausible global: A2–B1.')).toBeVisible();
-  await expect(page.getByText(/Advertencias del perfil/)).toContainText('incertidumbre alta');
-  await expect(page.locator('[class*="profileCard"]')).toHaveCount(6);
-  await expect(page.getByText(/provisionales hasta completar calibración/)).toBeVisible();
-  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-  expect(overflow).toBeLessThanOrEqual(1);
+  for (const viewport of [{ width: 320, height: 720 }, { width: 390, height: 844 }]) {
+    await test.step(`${viewport.width}px`, async () => {
+      await page.setViewportSize(viewport);
+      await page.goto(DIAGNOSTIC_ROUTE);
+      await expect(page.getByRole('heading', { name: 'Nivel global B1' })).toBeVisible();
+      await expect(page.getByText('Rango plausible global: A2–B1.')).toBeVisible();
+      await expect(page.getByText(/Advertencias del perfil/)).toContainText('incertidumbre alta');
+      await expect(page.locator('[class*="profileCard"]')).toHaveCount(6);
+      await expect(page.getByText(/provisionales hasta completar calibración/)).toBeVisible();
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth
+        - document.documentElement.clientWidth);
+      expect(overflow).toBeLessThanOrEqual(1);
+    });
+  }
 });
 
 test('un intento abandonado vuelve al inicio y elimina el puntero de reanudación', async ({ page }) => {
