@@ -259,7 +259,9 @@ npm run record:diagnostic-governance-approvals
 El paquete privado liga cada revisión a una huella exacta: operación de escritura, política de
 retención, umbrales del piloto o política de entrega. Escritura exige acuerdo independiente de
 liderazgo académico y operaciones; retención exige privacidad; los criterios del piloto exigen
-liderazgo académico y medición; entrega exige liderazgo académico y producto. Aprobar la ruta
+liderazgo académico y medición. El snapshot de estos últimos liga criterios, blueprint, capacidad
+del banco, simulación, algoritmo y reporte de reclutamiento: no permite aprobar “300 intentos” sin
+revisar también el piso route-balanced de 4.348. Entrega exige liderazgo académico y producto. Aprobar la ruta
 humana requiere al menos dos referencias verificables de revisores y un SLA máximo de 72 horas.
 La ruta externa exige referencias separadas para consentimiento y revisión de proveedor. Un
 cambio de documento invalida automáticamente sus recibos.

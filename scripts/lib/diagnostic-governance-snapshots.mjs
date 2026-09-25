@@ -26,6 +26,15 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/app/(site)/nivel-radar/AdaptiveNivelRadarClient.tsx',
 ];
 
+export const DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS = [
+  'config/diagnostic/pilot-publication-criteria.json',
+  'src/lib/diagnostic/blueprint.ts',
+  'docs/diagnostic-bank-readiness.json',
+  'docs/diagnostic-mst-simulation-baseline.json',
+  'docs/diagnostic-pilot-recruitment-plan.json',
+  'scripts/lib/diagnostic-pilot-recruitment.mjs',
+];
+
 function canonical(value) {
   if (Array.isArray(value)) return `[${value.map(canonical).join(',')}]`;
   if (value && typeof value === 'object') {
@@ -56,6 +65,17 @@ export function diagnosticDeliveryGovernanceSnapshot(root) {
   return delivery.digest('hex');
 }
 
+export function diagnosticPilotCriteriaGovernanceSnapshot(root) {
+  const pilot = createHash('sha256');
+  for (const path of DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS) {
+    const bytes = path === 'config/diagnostic/pilot-publication-criteria.json'
+      ? diagnosticReviewableDocumentSha256(JSON.parse(readFileSync(resolve(root, path), 'utf8')))
+      : readFileSync(resolve(root, path));
+    pilot.update(path).update('\0').update(bytes).update('\0');
+  }
+  return pilot.digest('hex');
+}
+
 export function diagnosticGovernanceSnapshots(root) {
   const writing = createHash('sha256');
   for (const path of DIAGNOSTIC_WRITING_GOVERNANCE_PATHS) {
@@ -64,7 +84,7 @@ export function diagnosticGovernanceSnapshots(root) {
   return {
     'writing-operations': writing.digest('hex'),
     'retention-policy': reviewableDocumentSha256(root, 'config/diagnostic/data-retention-policy.json'),
-    'pilot-criteria': reviewableDocumentSha256(root, 'config/diagnostic/pilot-publication-criteria.json'),
+    'pilot-criteria': diagnosticPilotCriteriaGovernanceSnapshot(root),
     'delivery-policy': diagnosticDeliveryGovernanceSnapshot(root),
   };
 }

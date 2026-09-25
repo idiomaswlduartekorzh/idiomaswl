@@ -224,7 +224,9 @@ Actualizado el 25 de septiembre de 2026:
   además escritura, referencia A1–C2, fiabilidad, consistencia, retest, equidad y panelistas. Se
   regenera desde criterios, blueprint, capacidad y simulación; si cualquiera cambia, el prebuild
   falla por reporte obsoleto. Los valores son cotas inferiores de planificación, nunca una
-  garantía ni una decisión automática de publicación.
+  garantía ni una decisión automática de publicación. La revisión humana de criterios queda
+  ligada a los seis artefactos de esa derivación, de modo que cambiar una cifra, el banco, el
+  blueprint, la simulación o el algoritmo invalida las firmas académica y de medición.
 - **Fase 7 — cadena de custodia del piloto preparada:** un capturador read-only consulta el
   informe agregado desde un despliegue que debe coincidir exactamente con fuente, banco, commit,
   modo `pilot` y proyecto Supabase. Reporte y recibo permanecen privados y omiten filas,

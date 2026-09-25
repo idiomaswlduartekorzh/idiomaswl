@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { buildDiagnosticGovernanceReviewPackets } from './lib/diagnostic-governance-review.mjs';
 import {
   DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
+  DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
   DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
   diagnosticGovernanceSnapshots,
 } from './lib/diagnostic-governance-snapshots.mjs';
@@ -30,6 +31,7 @@ writeFileSync(resolve(outputRoot, 'snapshot.json'), `${JSON.stringify({
   snapshots,
   workflowPaths: {
     writing: DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
+    pilotCriteria: DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
     delivery: DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
   },
 }, null, 2)}\n`, { mode: 0o600 });

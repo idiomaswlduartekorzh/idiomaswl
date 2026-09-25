@@ -1,4 +1,7 @@
-import { DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS } from './diagnostic-governance-snapshots.mjs';
+import {
+  DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
+  DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
+} from './diagnostic-governance-snapshots.mjs';
 
 const SHA256 = /^[a-f0-9]{64}$/u;
 const REVIEWER = /^[A-Za-z0-9][A-Za-z0-9._@+-]{2,159}$/u;
@@ -19,11 +22,7 @@ const EVIDENCE_PATHS = {
     'config/diagnostic/release-evidence.json',
     'docs/diagnostic-release-readiness.md',
   ],
-  'pilot-criteria': [
-    'config/diagnostic/pilot-publication-criteria.json',
-    'docs/diagnostic-release-readiness.md',
-    'docs/nivel-radar-adaptativo-goal-plan.md',
-  ],
+  'pilot-criteria': DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
   'delivery-policy': DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
 };
 const DELIVERY_CHECKS = {
