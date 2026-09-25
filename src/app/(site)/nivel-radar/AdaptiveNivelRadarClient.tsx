@@ -19,6 +19,13 @@ const STORAGE_KEY = 'welearn:diagnostic:active-attempt';
 const SKILL_LABELS: Record<string, string> = {
   reading: 'Lectura', listening: 'Escucha', writing: 'Escritura', grammar: 'Gramática', vocabulary: 'Vocabulario',
 };
+const WRITING_EXCLUSION_LABELS: Record<string, string> = {
+  'partially-off-task': 'respuesta parcialmente fuera de tema',
+  'off-task': 'respuesta fuera de tema',
+  'prompt-copy': 'coincidencia material con la consigna',
+  'suspected-external-text': 'autoría no verificable',
+  'reviewer-excluded': 'muestra excluida por revisión',
+};
 
 type SubmittedResponse = DiagnosticSubmittedResponse;
 
@@ -383,8 +390,11 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
     <div className={s.profileGrid}>{skills.map(skill => {
       const name = String(skill.skill ?? 'skill');
       const range = Array.isArray(skill.plausibleRange) ? skill.plausibleRange.map(String) : [];
+      const exclusionReasons = Array.isArray(skill.exclusionReasons)
+        ? skill.exclusionReasons.map(String).map(reason => WRITING_EXCLUSION_LABELS[reason] ?? reason)
+        : [];
       const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
-      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}</small></div>;
+      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}{exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}</small></div>;
     })}</div>
     {recommendations.length > 0 && <><p className={s.eyebrow}>Ruta recomendada</p><div className={s.profileGrid}>{recommendations.slice(0, 3).map(recommendation => {
       const skill = String(recommendation.skill ?? 'skill');
@@ -432,8 +442,11 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
       for (const skill of skills) {
         const name = String(skill.skill ?? 'skill');
         const range = Array.isArray(skill.plausibleRange) ? skill.plausibleRange.map(String) : [];
+        const exclusionReasons = Array.isArray(skill.exclusionReasons)
+          ? skill.exclusionReasons.map(String).map(reason => WRITING_EXCLUSION_LABELS[reason] ?? reason)
+          : [];
         const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
-        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · confianza ${confidence}`);
+        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · confianza ${confidence}${exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}`);
       }
       if (recommendations.length) {
         line('Prioridades y próximos pasos', 13);

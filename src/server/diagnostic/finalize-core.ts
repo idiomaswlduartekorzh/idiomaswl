@@ -78,10 +78,11 @@ export async function finalizeEnglishDiagnostic(input: {
   const writing = consolidateWritingEvidence({
     automated: input.automated, human: input.human, adjudicated: input.adjudicated,
   });
-  if (writing.status === 'not-estimated' || writing.reviewStatus !== 'human-reviewed') {
-    throw new Error(writing.reviewStatus === 'awaiting-adjudication'
-      ? 'diagnostic writing adjudication required'
-      : 'diagnostic writing evidence is not publishable');
+  if (writing.reviewStatus === 'awaiting-adjudication' || writing.reviewStatus === 'awaiting-human') {
+    throw new Error('diagnostic writing adjudication required');
+  }
+  if (writing.reviewStatus !== 'human-reviewed' && writing.reviewStatus !== 'excluded') {
+    throw new Error('diagnostic writing evidence is not publishable');
   }
   const bankById = new Map(dependencies.objectiveBank.map(record => [record.publicItem.id, record]));
   if (input.observations.length < 1

@@ -15,10 +15,12 @@ import {
 import {
   DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
   DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
+  DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
   diagnosticDeliveryGovernanceSnapshot,
   diagnosticGovernanceSnapshots,
   diagnosticPilotCriteriaGovernanceSnapshot,
   diagnosticReviewableDocumentSha256,
+  diagnosticWritingGovernanceSnapshot,
 } from '../scripts/lib/diagnostic-governance-snapshots.mjs';
 import {
   recordDiagnosticGovernanceApprovals,
@@ -70,6 +72,9 @@ test('scaffold creates seven independent fail-closed review packets without pres
   assert.ok(packets.filter(packet => packet.topic === 'pilot-criteria')
     .every(packet => JSON.stringify(packet.evidencePaths)
       === JSON.stringify(DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS)));
+  assert.ok(packets.filter(packet => packet.topic === 'writing-operations')
+    .every(packet => JSON.stringify(packet.evidencePaths)
+      === JSON.stringify([...DIAGNOSTIC_WRITING_GOVERNANCE_PATHS, 'config/diagnostic/release-evidence.json'])));
 });
 
 test('governance progress is aggregate-only and ready only with seven valid approvals', () => {
@@ -255,6 +260,24 @@ test('delivery governance snapshot binds enforcement and UI, not only proposed n
     const migration = join(temporaryRoot, 'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql');
     writeFileSync(migration, readFileSync(migration, 'utf8').replace('between 1 and 730', 'between 2 and 730'));
     assert.notEqual(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
+  } finally {
+    rmSync(temporaryRoot, { recursive: true, force: true });
+  }
+});
+
+test('writing governance snapshot binds rubric, review UI, server enforcement and runbook', () => {
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  const temporaryRoot = mkdtempSync(join(tmpdir(), 'diagnostic-writing-governance-'));
+  try {
+    for (const path of DIAGNOSTIC_WRITING_GOVERNANCE_PATHS) {
+      const destination = join(temporaryRoot, path);
+      mkdirSync(dirname(destination), { recursive: true });
+      copyFileSync(join(root, path), destination);
+    }
+    const before = diagnosticWritingGovernanceSnapshot(temporaryRoot);
+    const client = join(temporaryRoot, 'src/app/(site)/dashboard/admin/nivel-radar/DiagnosticWritingReviewClient.tsx');
+    writeFileSync(client, readFileSync(client, 'utf8').replace('Esto no prueba plagio.', 'Coincidencia confirmada.'));
+    assert.notEqual(diagnosticWritingGovernanceSnapshot(temporaryRoot), before);
   } finally {
     rmSync(temporaryRoot, { recursive: true, force: true });
   }

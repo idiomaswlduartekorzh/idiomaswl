@@ -23,7 +23,13 @@ const attempt = {
 function evaluation(evaluator, levels = ['B1', 'B1', 'B1', 'B1']) {
   return {
     evaluator,
-    ...(evaluator === 'automated' ? { model: 'fixture-model', warnings: [] } : { reviewerId: 'admin-1', decision: 'accept' }),
+    ...(evaluator === 'automated' ? { model: 'fixture-model', warnings: [] } : {
+      reviewerId: 'admin-1', decision: 'accept',
+      responseQuality: {
+        taskRelevance: 'on-task', authorship: 'no-concern',
+        rationale: 'The response addresses the task and shows no material authorship concern.',
+      },
+    }),
     rubricVersion: 'mcer-writing-v1', promptId: prompt.id, promptContentVersion: prompt.contentVersion,
     responseSha256: diagnosticWritingResponseSha256(responseText), evaluatedAt: '2026-09-25T12:00:00.000Z',
     criteria: DIAGNOSTIC_WRITING_CRITERIA.map((criterion, index) => ({
@@ -126,6 +132,32 @@ test('adjudication is accepted only from a reviewer independent of the first hum
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
     persist: async () => ({ replayed: false, version: 5 }),
   }), /reviewer identity mismatch/);
+});
+
+test('independently excluded off-task writing completes with writing and global level withheld', async () => {
+  let persisted;
+  const human = {
+    ...evaluation('human'), decision: 'exclude',
+    responseQuality: {
+      taskRelevance: 'off-task', authorship: 'no-concern',
+      rationale: 'The response does not address the assigned situation or any required instruction.',
+    },
+  };
+  const adjudicated = { ...human, reviewerId: 'admin-2' };
+  const result = await finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, observations,
+    human, adjudicated,
+  }, {
+    objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
+    persist: async input => { persisted = input; return { replayed: false, version: 5 }; },
+  });
+  const writing = result.resultProfile.skills.find(skill => skill.skill === 'writing');
+  assert.equal(writing.status, 'not-estimated');
+  assert.equal(writing.reviewStatus, 'excluded');
+  assert.deepEqual(writing.exclusionReasons, ['off-task']);
+  assert.equal(result.resultProfile.globalLevel, null);
+  assert.equal(result.resultProfile.overallStatus, 'not-estimated');
+  assert.equal(persisted.finalEvidence.writing.reviewStatus, 'excluded');
 });
 
 test('rejects unknown objective evidence and stale versions', async () => {

@@ -1,6 +1,7 @@
 import {
   DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
   DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS,
+  DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
 } from './diagnostic-governance-snapshots.mjs';
 
 const SHA256 = /^[a-f0-9]{64}$/u;
@@ -13,9 +14,8 @@ export const DIAGNOSTIC_GOVERNANCE_TOPICS = {
 };
 const EVIDENCE_PATHS = {
   'writing-operations': [
-    'config/diagnostic/writing-automation.json',
+    ...DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
     'config/diagnostic/release-evidence.json',
-    'docs/diagnostic-writing-provider-runbook.md',
   ],
   'retention-policy': [
     'config/diagnostic/data-retention-policy.json',

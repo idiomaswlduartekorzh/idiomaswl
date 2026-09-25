@@ -12,7 +12,7 @@ import {
   type DiagnosticAutomatedWritingEvaluation,
 } from './writing.ts';
 
-export const DIAGNOSTIC_WRITING_RUBRIC_VERSION = 'welearn-cefr-writing-rubric-en-v1';
+export const DIAGNOSTIC_WRITING_RUBRIC_VERSION = 'welearn-cefr-writing-rubric-en-v2';
 
 export interface DiagnosticWritingAutomationRequest {
   systemInstruction: string;

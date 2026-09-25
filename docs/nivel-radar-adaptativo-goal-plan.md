@@ -97,6 +97,14 @@ Actualizado el 25 de septiembre de 2026:
   académica de administración mantiene ciega la primera revisión: solo muestra la evaluación
   automática cuando existe discrepancia y el caso entra en adjudicación. La primera revisión
   queda guardada e inmutable; la adjudicación exige una identidad administradora diferente.
+  La rúbrica v2 exige además una clasificación humana estructurada de pertinencia y autoría.
+  Un tamizaje determinista distingue vacío, longitud insuficiente/excesiva y coincidencias
+  literales de seis o más palabras con la consigna, pero nunca convierte esa coincidencia en una
+  acusación ni asigna nivel. Aceptar exige que la muestra esté en tema y sin preocupación de
+  autoría; cualquier duda pasa a adjudicación independiente. Si ambas revisiones excluyen una
+  muestra fuera de tema o no verificable, el intento sí termina: escritura y nivel global quedan
+  explícitamente `no estimados`, con la causa visible, en vez de fabricar puntuación o dejar al
+  estudiante atrapado en procesamiento.
 - **Fase 4 — entrega privada de escucha iniciada:** el endpoint de medios autentica al usuario,
   comprueba que el audio pertenece a su etapa activa y no expirada, descarga desde un bucket
   privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3

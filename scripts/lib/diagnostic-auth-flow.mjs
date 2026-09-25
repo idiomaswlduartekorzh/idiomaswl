@@ -101,7 +101,7 @@ function humanEvaluation(prompt, responseText, now) {
   return {
     evaluator: 'human',
     reviewerId: 'server-bound-reviewer',
-    rubricVersion: 'welearn-cefr-writing-rubric-en-v1',
+    rubricVersion: 'welearn-cefr-writing-rubric-en-v2',
     promptId: prompt.id,
     promptContentVersion: prompt.contentVersion,
     responseSha256,
@@ -112,6 +112,11 @@ function humanEvaluation(prompt, responseText, now) {
       evidence: [excerpt],
       rationale: 'Dedicated end-to-end fixture evidence for the authenticated release verification flow.',
     })),
+    responseQuality: {
+      taskRelevance: 'on-task',
+      authorship: 'no-concern',
+      rationale: 'The dedicated fixture directly answers the task and has no authorship concern.',
+    },
     decision: 'accept',
     evaluatedAt: now,
   };

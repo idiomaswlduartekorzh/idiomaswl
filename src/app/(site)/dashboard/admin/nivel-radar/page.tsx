@@ -5,6 +5,7 @@ import type { DiagnosticWritingReviewView } from '@/lib/diagnostic/admin-review'
 import { ENGLISH_DIAGNOSTIC_WRITING_BANK } from '@/server/diagnostic/bank';
 import { DIAGNOSTIC_WRITING_RUBRIC_VERSION } from '@/server/diagnostic/writing-automation';
 import { getDiagnosticWritingProviderReadiness } from '@/server/diagnostic/writing-provider';
+import { screenDiagnosticWritingResponse } from '@/server/diagnostic/writing';
 import { loadDiagnosticWritingReviewQueue } from '@/server/diagnostic/repository.server';
 import DiagnosticWritingReviewClient from './DiagnosticWritingReviewClient';
 import DiagnosticPilotHealthClient from './DiagnosticPilotHealthClient';
@@ -44,6 +45,7 @@ export default async function DiagnosticWritingReviewPage() {
         responseText: row.responseText,
         responseSha256: row.responseSha256,
         wordCount: row.wordCount,
+        responseScreening: screenDiagnosticWritingResponse(prompt, row.responseText),
         rubricVersion: DIAGNOSTIC_WRITING_RUBRIC_VERSION,
         ...(adjudication || reviewed ? {
           ...(row.automatedEvaluation ? { automated: row.automatedEvaluation } : {}),

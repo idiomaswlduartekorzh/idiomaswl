@@ -1,10 +1,14 @@
 import { createHash } from 'node:crypto';
 
 import {
+  DIAGNOSTIC_WRITING_AUTHORSHIP,
   DIAGNOSTIC_WRITING_CRITERIA,
+  DIAGNOSTIC_WRITING_TASK_RELEVANCE,
   type DiagnosticWritingCriterion,
   type DiagnosticWritingPrompt,
   type DiagnosticWritingPromptRecord,
+  type DiagnosticWritingResponseQuality,
+  type DiagnosticWritingResponseScreening,
 } from '../../lib/diagnostic/writing.ts';
 import { CEFR_LEVELS, type CefrLevel } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticSkillEvidence } from '../../lib/diagnostic/types.ts';
@@ -37,6 +41,7 @@ export interface DiagnosticHumanWritingEvaluation {
   promptContentVersion: string;
   responseSha256: string;
   criteria: readonly DiagnosticWritingCriterionEvaluation[];
+  responseQuality: DiagnosticWritingResponseQuality;
   decision: 'accept' | 'revise' | 'exclude';
   evaluatedAt: string;
 }
@@ -51,6 +56,9 @@ export interface DiagnosticWritingAgreement {
 export interface DiagnosticWritingSkillEvidence extends DiagnosticSkillEvidence {
   skill: 'writing';
   reviewStatus: 'awaiting-human' | 'awaiting-adjudication' | 'excluded' | 'human-reviewed';
+  exclusionReasons?: readonly (
+    'partially-off-task' | 'off-task' | 'prompt-copy' | 'suspected-external-text' | 'reviewer-excluded'
+  )[];
   agreement?: DiagnosticWritingAgreement;
 }
 
@@ -109,9 +117,24 @@ export function parseDiagnosticWritingEvaluation(
     return { ...shared, evaluator, model: candidate.model, warnings: candidate.warnings as string[] };
   }
   if (!boundedString(candidate.reviewerId, 160)
-    || !['accept', 'revise', 'exclude'].includes(String(candidate.decision))) return null;
+    || !['accept', 'revise', 'exclude'].includes(String(candidate.decision))
+    || !candidate.responseQuality
+    || typeof candidate.responseQuality !== 'object'
+    || Array.isArray(candidate.responseQuality)) return null;
+  const responseQuality = candidate.responseQuality as Record<string, unknown>;
+  if (!DIAGNOSTIC_WRITING_TASK_RELEVANCE.includes(
+    responseQuality.taskRelevance as DiagnosticWritingResponseQuality['taskRelevance'],
+  ) || !DIAGNOSTIC_WRITING_AUTHORSHIP.includes(
+    responseQuality.authorship as DiagnosticWritingResponseQuality['authorship'],
+  ) || !boundedString(responseQuality.rationale, 1_000)
+    || responseQuality.rationale.trim().length < 20) return null;
   return {
     ...shared, evaluator, reviewerId: candidate.reviewerId,
+    responseQuality: {
+      taskRelevance: responseQuality.taskRelevance as DiagnosticWritingResponseQuality['taskRelevance'],
+      authorship: responseQuality.authorship as DiagnosticWritingResponseQuality['authorship'],
+      rationale: responseQuality.rationale.trim(),
+    },
     decision: candidate.decision as DiagnosticHumanWritingEvaluation['decision'],
   };
 }
@@ -120,12 +143,78 @@ export function diagnosticWritingResponseSha256(response: string): string {
   return createHash('sha256').update(response.normalize('NFC')).digest('hex');
 }
 
+function writingTokens(value: string): string[] {
+  return value.normalize('NFKC').toLocaleLowerCase('en')
+    .match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu) ?? [];
+}
+
+function longestSharedTokenRun(responseTokens: readonly string[], promptTokens: readonly string[]): {
+  length: number;
+  start: number;
+} {
+  let previous = new Array<number>(promptTokens.length + 1).fill(0);
+  let longest = { length: 0, start: -1 };
+  for (let responseIndex = 0; responseIndex < responseTokens.length; responseIndex += 1) {
+    const current = new Array<number>(promptTokens.length + 1).fill(0);
+    for (let promptIndex = 0; promptIndex < promptTokens.length; promptIndex += 1) {
+      if (responseTokens[responseIndex] !== promptTokens[promptIndex]) continue;
+      current[promptIndex + 1] = previous[promptIndex] + 1;
+      if (current[promptIndex + 1] > longest.length) {
+        longest = {
+          length: current[promptIndex + 1],
+          start: responseIndex - current[promptIndex + 1] + 1,
+        };
+      }
+    }
+    previous = current;
+  }
+  return longest;
+}
+
+/**
+ * Deterministic triage only. Exact prompt overlap is surfaced to a reviewer;
+ * it is never treated as proof of plagiarism or used to assign a CEFR level.
+ */
+export function screenDiagnosticWritingResponse(
+  prompt: DiagnosticWritingPrompt,
+  response: string,
+): DiagnosticWritingResponseScreening {
+  const responseTokens = writingTokens(response);
+  const promptTokens = writingTokens([
+    prompt.title,
+    prompt.situation,
+    ...prompt.instructions,
+  ].join(' '));
+  const shared = longestSharedTokenRun(responseTokens, promptTokens);
+  const lengthStatus = responseTokens.length === 0
+    ? 'empty'
+    : responseTokens.length < prompt.minimumWords
+      ? 'below-minimum'
+      : responseTokens.length > prompt.maximumWords
+        ? 'above-maximum'
+        : 'within-range';
+  return {
+    screeningVersion: 'welearn-writing-response-screening-en-v1',
+    wordCount: responseTokens.length,
+    lengthStatus,
+    promptCopy: {
+      status: shared.length >= 6 ? 'review-required' : 'not-detected',
+      longestTokenRun: shared.length,
+      matchedPhrase: shared.length >= 6
+        ? responseTokens.slice(shared.start, shared.start + Math.min(shared.length, 20)).join(' ')
+        : null,
+    },
+    taskRelevance: 'human-review-required',
+  };
+}
+
 export function validateDiagnosticWritingResponse(prompt: DiagnosticWritingPrompt, response: string): string[] {
   const errors: string[] = [];
   const normalized = response.normalize('NFC').trim();
-  const words = normalized ? normalized.split(/\s+/u).length : 0;
-  if (words < prompt.minimumWords) errors.push(`writing response requires at least ${prompt.minimumWords} words`);
-  if (words > prompt.maximumWords) errors.push(`writing response exceeds ${prompt.maximumWords} words`);
+  const screening = screenDiagnosticWritingResponse(prompt, normalized);
+  if (screening.lengthStatus === 'empty') errors.push('writing response is empty');
+  else if (screening.lengthStatus === 'below-minimum') errors.push(`writing response requires at least ${prompt.minimumWords} words`);
+  if (screening.lengthStatus === 'above-maximum') errors.push(`writing response exceeds ${prompt.maximumWords} words`);
   if (normalized.length > 12_000) errors.push('writing response exceeds the storage limit');
   return errors;
 }
@@ -189,6 +278,16 @@ export function validateDiagnosticWritingEvaluation(
   for (const expected of DIAGNOSTIC_WRITING_CRITERIA) {
     if (!seen.has(expected)) errors.push(`missing writing criterion: ${expected}`);
   }
+  if (evaluation.evaluator === 'human') {
+    if (evaluation.responseQuality.rationale.trim().length < 20) {
+      errors.push('human writing response-quality rationale is incomplete');
+    }
+    if (evaluation.decision === 'accept'
+      && (evaluation.responseQuality.taskRelevance !== 'on-task'
+        || evaluation.responseQuality.authorship !== 'no-concern')) {
+      errors.push('human writing evaluation cannot accept unresolved task-relevance or authorship concerns');
+    }
+  }
   return errors;
 }
 
@@ -225,7 +324,6 @@ export function consolidateWritingEvidence(input: {
 }): DiagnosticWritingSkillEvidence {
   const base = { skill: 'writing' as const, decisions: 1, distinctStimuli: 1 };
   if (!input.human) return { ...base, status: 'not-estimated', reviewStatus: 'awaiting-human' };
-  if (input.human.decision === 'exclude') return { ...base, status: 'not-estimated', reviewStatus: 'excluded' };
   const agreement = input.automated ? compareWritingEvaluations(input.automated, input.human) : undefined;
   const requiresAdjudication = input.human.decision !== 'accept' || agreement?.requiresAdjudication === true;
   if (requiresAdjudication && !input.adjudicated) {
@@ -236,7 +334,24 @@ export function consolidateWritingEvidence(input: {
   }
   const finalEvaluation = input.adjudicated ?? input.human;
   if (finalEvaluation.decision !== 'accept') {
-    return { ...base, status: 'not-estimated', reviewStatus: finalEvaluation.decision === 'exclude' ? 'excluded' : 'awaiting-adjudication', agreement };
+    if (finalEvaluation.decision !== 'exclude') {
+      return { ...base, status: 'not-estimated', reviewStatus: 'awaiting-adjudication', agreement };
+    }
+    const exclusionReasons: NonNullable<DiagnosticWritingSkillEvidence['exclusionReasons']>[number][] = [];
+    if (finalEvaluation.responseQuality.taskRelevance !== 'on-task') {
+      exclusionReasons.push(finalEvaluation.responseQuality.taskRelevance);
+    }
+    if (finalEvaluation.responseQuality.authorship !== 'no-concern') {
+      exclusionReasons.push(finalEvaluation.responseQuality.authorship);
+    }
+    if (!exclusionReasons.length) exclusionReasons.push('reviewer-excluded');
+    return {
+      ...base,
+      status: 'not-estimated',
+      reviewStatus: 'excluded',
+      exclusionReasons,
+      agreement,
+    };
   }
   const indexes = finalEvaluation.criteria.map(criterion => CEFR_LEVELS.indexOf(criterion.level)).sort((a, b) => a - b);
   if (indexes.length !== DIAGNOSTIC_WRITING_CRITERIA.length || indexes.some(index => index < 0)) {

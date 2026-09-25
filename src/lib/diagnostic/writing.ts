@@ -9,6 +9,36 @@ export const DIAGNOSTIC_WRITING_CRITERIA = [
 
 export type DiagnosticWritingCriterion = (typeof DIAGNOSTIC_WRITING_CRITERIA)[number];
 
+export const DIAGNOSTIC_WRITING_TASK_RELEVANCE = [
+  'on-task',
+  'partially-off-task',
+  'off-task',
+] as const;
+
+export const DIAGNOSTIC_WRITING_AUTHORSHIP = [
+  'no-concern',
+  'prompt-copy',
+  'suspected-external-text',
+] as const;
+
+export interface DiagnosticWritingResponseQuality {
+  taskRelevance: (typeof DIAGNOSTIC_WRITING_TASK_RELEVANCE)[number];
+  authorship: (typeof DIAGNOSTIC_WRITING_AUTHORSHIP)[number];
+  rationale: string;
+}
+
+export interface DiagnosticWritingResponseScreening {
+  screeningVersion: 'welearn-writing-response-screening-en-v1';
+  wordCount: number;
+  lengthStatus: 'empty' | 'below-minimum' | 'within-range' | 'above-maximum';
+  promptCopy: {
+    status: 'not-detected' | 'review-required';
+    longestTokenRun: number;
+    matchedPhrase: string | null;
+  };
+  taskRelevance: 'human-review-required';
+}
+
 export interface DiagnosticWritingPrompt {
   id: string;
   contentVersion: string;
@@ -83,4 +113,3 @@ export function validateWritingRubric(): string[] {
   }
   return errors;
 }
-

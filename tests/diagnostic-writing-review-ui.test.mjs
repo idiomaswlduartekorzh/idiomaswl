@@ -26,6 +26,10 @@ test('client submits only human evidence and enforces literal citations before s
   assert.match(client, /item\.status === 'human-review' \? 'Listo para publicar'/);
   assert.match(client, /JSON\.stringify\(reviewed \? \{\}/);
   assert.match(client, /Reintenta la publicación sin volver a calificar/);
+  assert.match(page, /screenDiagnosticWritingResponse\(prompt, row\.responseText\)/);
+  assert.match(client, /Esto no prueba plagio/);
+  assert.match(client, /responseQuality\.taskRelevance !== 'on-task'/);
+  assert.match(client, /responseQuality:\s*\{/);
 });
 
 test('server validates human evidence before its first immutable persistence', () => {

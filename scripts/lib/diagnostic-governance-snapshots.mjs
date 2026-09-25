@@ -3,10 +3,21 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
+  'docs/diagnostic-writing-provider-runbook.md',
+  'src/lib/diagnostic/writing.ts',
+  'src/lib/diagnostic/admin-review.ts',
   'src/server/diagnostic/writing.ts',
+  'src/server/diagnostic/writing-automation.ts',
+  'src/server/diagnostic/writing-provider.ts',
   'src/server/diagnostic/finalize-core.ts',
+  'src/server/diagnostic/repository.server.ts',
   'src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
   'src/app/(site)/dashboard/admin/nivel-radar/page.tsx',
+  'src/app/(site)/dashboard/admin/nivel-radar/DiagnosticWritingReviewClient.tsx',
+  'src/app/(site)/nivel-radar/AdaptiveNivelRadarClient.tsx',
+  'supabase/migrations/20260925030000_diagnostic_writing_automation.sql',
+  'supabase/migrations/20260925031500_diagnostic_human_writing_review.sql',
+  'supabase/migrations/20260925033000_diagnostic_human_only_writing.sql',
 ];
 
 export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
@@ -76,13 +87,17 @@ export function diagnosticPilotCriteriaGovernanceSnapshot(root) {
   return pilot.digest('hex');
 }
 
-export function diagnosticGovernanceSnapshots(root) {
+export function diagnosticWritingGovernanceSnapshot(root) {
   const writing = createHash('sha256');
   for (const path of DIAGNOSTIC_WRITING_GOVERNANCE_PATHS) {
     writing.update(path).update('\0').update(readFileSync(resolve(root, path))).update('\0');
   }
+  return writing.digest('hex');
+}
+
+export function diagnosticGovernanceSnapshots(root) {
   return {
-    'writing-operations': writing.digest('hex'),
+    'writing-operations': diagnosticWritingGovernanceSnapshot(root),
     'retention-policy': reviewableDocumentSha256(root, 'config/diagnostic/data-retention-policy.json'),
     'pilot-criteria': diagnosticPilotCriteriaGovernanceSnapshot(root),
     'delivery-policy': diagnosticDeliveryGovernanceSnapshot(root),

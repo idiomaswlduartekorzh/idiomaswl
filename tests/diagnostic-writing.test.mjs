@@ -11,6 +11,7 @@ import {
   diagnosticWritingResponseSha256,
   parseDiagnosticWritingEvaluation,
   selectDiagnosticWritingPrompt,
+  screenDiagnosticWritingResponse,
   validateDiagnosticWritingEvaluation,
   validateDiagnosticWritingResponse,
 } from '../src/server/diagnostic/writing.ts';
@@ -25,7 +26,13 @@ const response = 'The library should open later because many students finish wor
 function evaluation(evaluator, levels = ['B1', 'B1', 'B1', 'B1']) {
   return {
     evaluator,
-    ...(evaluator === 'human' ? { reviewerId: 'reviewer-1', decision: 'accept' } : { model: 'model-1', warnings: [] }),
+    ...(evaluator === 'human' ? {
+      reviewerId: 'reviewer-1', decision: 'accept',
+      responseQuality: {
+        taskRelevance: 'on-task', authorship: 'no-concern',
+        rationale: 'The response addresses the task and shows no material authorship concern.',
+      },
+    } : { model: 'model-1', warnings: [] }),
     rubricVersion: 'mcer-writing-v1', promptId: prompt.id, promptContentVersion: prompt.contentVersion,
     responseSha256: diagnosticWritingResponseSha256(response), evaluatedAt: '2026-09-24T12:00:00.000Z',
     criteria: DIAGNOSTIC_WRITING_CRITERIA.map((criterion, index) => ({
@@ -71,6 +78,9 @@ test('evaluation validation binds prompt, response and quoted evidence', () => {
 test('evaluation parser rejects malformed privileged payloads', () => {
   assert.equal(parseDiagnosticWritingEvaluation({ evaluator: 'automated' }, 'automated'), null);
   assert.ok(parseDiagnosticWritingEvaluation(evaluation('automated'), 'automated'));
+  const missingResponseQuality = evaluation('human');
+  delete missingResponseQuality.responseQuality;
+  assert.equal(parseDiagnosticWritingEvaluation(missingResponseQuality, 'human'), null);
   assert.equal(parseDiagnosticWritingEvaluation({
     ...evaluation('human'),
     criteria: [...evaluation('human').criteria, evaluation('human').criteria[0]],
@@ -78,9 +88,41 @@ test('evaluation parser rejects malformed privileged payloads', () => {
 });
 
 test('writing response length is checked against the server prompt', () => {
+  assert.ok(validateDiagnosticWritingResponse(prompt, '').some(error => error.includes('empty')));
   assert.ok(validateDiagnosticWritingResponse(prompt, 'Too short.').some(error => error.includes('at least')));
   const validPrompt = { ...prompt, minimumWords: 3, maximumWords: 30 };
   assert.deepEqual(validateDiagnosticWritingResponse(validPrompt, response), []);
+});
+
+test('writing screening distinguishes length and exact prompt copying without assigning relevance', () => {
+  const validPrompt = { ...prompt, minimumWords: 3, maximumWords: 80 };
+  assert.equal(screenDiagnosticWritingResponse(validPrompt, '').lengthStatus, 'empty');
+  assert.equal(screenDiagnosticWritingResponse(validPrompt, 'Too short').lengthStatus, 'below-minimum');
+  const copied = screenDiagnosticWritingResponse(
+    validPrompt,
+    'Your community is considering a change and I strongly support the proposal for several reasons.',
+  );
+  assert.equal(copied.lengthStatus, 'within-range');
+  assert.equal(copied.promptCopy.status, 'review-required');
+  assert.ok(copied.promptCopy.longestTokenRun >= 6);
+  assert.equal(copied.taskRelevance, 'human-review-required');
+});
+
+test('human review cannot accept an off-task or copied response as valid writing evidence', () => {
+  const offTask = evaluation('human');
+  offTask.responseQuality = {
+    taskRelevance: 'off-task', authorship: 'no-concern',
+    rationale: 'The response is fluent but does not answer any part of the assigned task.',
+  };
+  assert.ok(validateDiagnosticWritingEvaluation(offTask, prompt, response)
+    .some(error => error.includes('cannot accept unresolved')));
+  const copied = evaluation('human');
+  copied.responseQuality = {
+    taskRelevance: 'on-task', authorship: 'prompt-copy',
+    rationale: 'A material part of the response repeats the wording supplied by the prompt.',
+  };
+  assert.ok(validateDiagnosticWritingEvaluation(copied, prompt, response)
+    .some(error => error.includes('cannot accept unresolved')));
 });
 
 test('material automated-human disagreement requires adjudication', () => {

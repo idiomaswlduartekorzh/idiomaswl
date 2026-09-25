@@ -19,6 +19,12 @@ interface DraftCriterion {
   rationale: string;
 }
 
+interface DraftResponseQuality {
+  taskRelevance: 'on-task' | 'partially-off-task' | 'off-task';
+  authorship: 'no-concern' | 'prompt-copy' | 'suspected-external-text';
+  rationale: string;
+}
+
 const freshCriteria = (): Record<DiagnosticWritingCriterion, DraftCriterion> => Object.fromEntries(
   DIAGNOSTIC_WRITING_CRITERIA.map(criterion => [criterion, {
     level: 'B1', confidence: 0.6, evidence: '', rationale: '',
@@ -36,6 +42,10 @@ function EvidenceCard({ title, evaluation }: {
       <p style={{ margin: '3px 0', fontSize: 11, color: '#6b7280' }}>{criterion.rationale}</p>
       <p style={{ margin: 0, fontSize: 11 }}>“{criterion.evidence.join('” · “')}”</p>
     </div>)}
+    {evaluation.responseQuality && <div style={{ padding: '8px 0', borderTop: '1px solid #f0ebe4', fontSize: 11 }}>
+      <strong>Calidad de respuesta · {evaluation.responseQuality.taskRelevance} · {evaluation.responseQuality.authorship}</strong>
+      <p style={{ margin: '3px 0 0', color: '#6b7280' }}>{evaluation.responseQuality.rationale}</p>
+    </div>}
   </section>;
 }
 
@@ -46,6 +56,9 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
   const router = useRouter();
   const [selectedId, setSelectedId] = useState(items[0]?.attemptId ?? '');
   const [criteria, setCriteria] = useState(freshCriteria);
+  const [responseQuality, setResponseQuality] = useState<DraftResponseQuality>({
+    taskRelevance: 'on-task', authorship: 'no-concern', rationale: '',
+  });
   const [decision, setDecision] = useState<'accept' | 'revise' | 'exclude'>('accept');
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
@@ -58,6 +71,7 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
   function selectAttempt(attemptId: string) {
     setSelectedId(attemptId);
     setCriteria(freshCriteria());
+    setResponseQuality({ taskRelevance: 'on-task', authorship: 'no-concern', rationale: '' });
     setDecision('accept');
     setMessage('');
   }
@@ -82,10 +96,21 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
       setMessage('Cada criterio necesita una cita literal de la respuesta y una justificación de al menos 20 caracteres.');
       return;
     }
+    if (!reviewed && responseQuality.rationale.trim().length < 20) {
+      setMessage('La clasificación de pertinencia y autoría necesita una justificación de al menos 20 caracteres.');
+      return;
+    }
+    if (!reviewed && decision === 'accept'
+      && (responseQuality.taskRelevance !== 'on-task' || responseQuality.authorship !== 'no-concern')) {
+      setMessage('No se puede aceptar mientras exista una duda de pertinencia o autoría; envía el caso a revisión o exclusión.');
+      return;
+    }
     const evaluation = reviewed ? null : {
       evaluator: 'human', reviewerId: 'server-bound-reviewer', rubricVersion: active.rubricVersion,
       promptId: active.prompt.id, promptContentVersion: active.prompt.contentVersion,
-      responseSha256: active.responseSha256, criteria: mapped, decision,
+      responseSha256: active.responseSha256, criteria: mapped, responseQuality: {
+        ...responseQuality, rationale: responseQuality.rationale.trim(),
+      }, decision,
       evaluatedAt: new Date().toISOString(),
     };
     setSaving(true);
@@ -131,6 +156,15 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
         <p style={{ margin: '0 0 8px', color: '#6b7280' }}>{active.prompt.situation}</p>
         <ul>{active.prompt.instructions.map(instruction => <li key={instruction}>{instruction}</li>)}</ul>
         <div style={{ whiteSpace: 'pre-wrap', lineHeight: 1.65, background: '#f8f6f3', borderRadius: 10, padding: 14 }}>{active.responseText}</div>
+        <aside style={{ marginTop: 12, border: `1px solid ${active.responseScreening.promptCopy.status === 'review-required' ? '#f5c26b' : '#d1d5db'}`, borderRadius: 10, padding: 12, background: active.responseScreening.promptCopy.status === 'review-required' ? '#fffbeb' : '#f9fafb' }}>
+          <strong style={{ display: 'block', fontSize: 12 }}>Tamizaje determinista · no asigna nivel</strong>
+          <span style={{ fontSize: 11, color: '#4b5563' }}>
+            Longitud: {active.responseScreening.lengthStatus} ({active.responseScreening.wordCount} palabras). Pertinencia: requiere juicio humano.
+          </span>
+          {active.responseScreening.promptCopy.status === 'review-required' && <p style={{ margin: '6px 0 0', fontSize: 11, color: '#92400e' }}>
+            Revisar coincidencia literal de {active.responseScreening.promptCopy.longestTokenRun} palabras con la consigna: “{active.responseScreening.promptCopy.matchedPhrase}”. Esto no prueba plagio.
+          </p>}
+        </aside>
       </div>
       {(adjudicating || reviewed) && active.human && <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 10 }}>
         {active.automated && <EvidenceCard title={`Automático · ${active.automated.model ?? 'modelo'}`} evaluation={active.automated} />}
@@ -149,6 +183,14 @@ export default function DiagnosticWritingReviewClient({ items, currentReviewerId
           </div>
           <label style={{ display: 'block', marginTop: 8, fontSize: 11 }}>Justificación<textarea rows={3} value={criteria[criterion].rationale} onChange={event => updateCriterion(criterion, { rationale: event.target.value })} style={{ display: 'block', width: '100%', padding: 8 }} /></label>
         </fieldset>)}
+        {!reviewed && <fieldset disabled={blockedAdjudicator || saving} style={{ border: '1px solid #e8ddd4', borderRadius: 10, padding: 12 }}>
+          <legend style={{ fontWeight: 800, fontSize: 13 }}>Validez de la muestra escrita</legend>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))', gap: 8 }}>
+            <label style={{ fontSize: 11 }}>Pertinencia<select value={responseQuality.taskRelevance} onChange={event => setResponseQuality(current => ({ ...current, taskRelevance: event.target.value as DraftResponseQuality['taskRelevance'] }))} style={{ display: 'block', width: '100%', padding: 8 }}><option value="on-task">Responde la tarea</option><option value="partially-off-task">Parcialmente fuera de tema</option><option value="off-task">Fuera de tema</option></select></label>
+            <label style={{ fontSize: 11 }}>Autoría<select value={responseQuality.authorship} onChange={event => setResponseQuality(current => ({ ...current, authorship: event.target.value as DraftResponseQuality['authorship'] }))} style={{ display: 'block', width: '100%', padding: 8 }}><option value="no-concern">Sin preocupación</option><option value="prompt-copy">Copia material de la consigna</option><option value="suspected-external-text">Posible texto externo o memorizado</option></select></label>
+          </div>
+          <label style={{ display: 'block', marginTop: 8, fontSize: 11 }}>Justificación de pertinencia y autoría<textarea rows={3} value={responseQuality.rationale} onChange={event => setResponseQuality(current => ({ ...current, rationale: event.target.value }))} style={{ display: 'block', width: '100%', padding: 8 }} /></label>
+        </fieldset>}
         {!reviewed && <label style={{ fontSize: 12 }}>Decisión <select value={decision} onChange={event => setDecision(event.target.value as typeof decision)} disabled={blockedAdjudicator || saving} style={{ marginLeft: 8, padding: 8 }}><option value="accept">Aceptar</option><option value="revise">Requiere revisión</option><option value="exclude">Excluir muestra</option></select></label>}
         {blockedAdjudicator && <p role="alert" style={{ color: '#991b1b' }}>La persona que hizo la primera revisión no puede adjudicar este caso.</p>}
         {blockedPublisher && <p role="alert" style={{ color: '#991b1b' }}>Solo la persona que firmó esta revisión puede reintentar su publicación.</p>}
