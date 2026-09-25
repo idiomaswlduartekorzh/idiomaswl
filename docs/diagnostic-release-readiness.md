@@ -3,7 +3,7 @@
 Estado actual: **HOLD**.
 
 Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
-`47c852c8`; **236/236 pruebas**, TypeScript y el build de **2.564 páginas estáticas** pasaron.
+`699901c2`; **242/242 pruebas**, TypeScript y el build de **2.564 páginas estáticas** pasaron.
 Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
 aprobación académica, de privacidad o psicométrica.
 

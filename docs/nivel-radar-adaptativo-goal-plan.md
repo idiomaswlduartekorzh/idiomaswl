@@ -25,7 +25,7 @@ definición de terminado al final de este documento.
 
 ## Registro de ejecución
 
-Actualizado el 24 de septiembre de 2026:
+Actualizado el 25 de septiembre de 2026:
 
 - **Fase 0 — en progreso avanzado:** contrato, blueprint, descriptores de evidencia y snapshot
   verificable de la línea base implementados. Falta aprobación académica y feature flag.
@@ -241,7 +241,7 @@ Actualizado el 24 de septiembre de 2026:
   durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  commit `47c852c8` quedó verificado con **236/236 pruebas**, TypeScript sin errores y un build de
+  commit `699901c2` quedó verificado con **242/242 pruebas**, TypeScript sin errores y un build de
   **2.564 páginas estáticas**; el recibo privado se registró por SHA-256 y el gate de calidad ya
   pasa sobre la misma huella de fuente.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
