@@ -64,8 +64,8 @@ Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 
 ## Práctica Goethe A2 y catálogo A1–B2 — 24 de septiembre de 2026
 
-`codex/goethe-a2-production` parte de `origin/main` en `092fefda` e integra la
-fábrica editorial A2 aprobada. Estado: `EN_VALIDACION`. Responsable: Codex.
+`codex/goethe-a2-production` partió de `origin/main` en `092fefda` e integra la
+fábrica editorial A2 aprobada. Estado: `DESPLEGADO`. Responsable: Codex.
 Alcance: navegación de práctica Goethe A1, A2, B1 y B2; bibliotecas A2 por set y
 Teil para Lesen, Schreiben y Sprechen; y diez simulacros A2 visibles pero
 bloqueados en Exámenes. Hören A2 y cualquier acceso al examen completo permanecen
@@ -73,12 +73,18 @@ cerrados hasta producir y aprobar sus audios. La práctica por destreza es gratu
 el flujo de resultados, acceso y pagos de los exámenes completos no se modifica.
 No requiere migraciones ni variables nuevas. La publicación está protegida por un
 registro separado de release de práctica, de modo que habilitar una destreza nunca
-habilita accidentalmente un mock completo. Validaciones previas: 21/21 pruebas de
+habilita accidentalmente un mock completo. Validaciones: 21/21 pruebas de
 estructura, scoring, originalidad y sesgos; guardianes Goethe y catálogo; TypeScript;
 ESLint focalizado; build Webpack de 2.584 páginas; y recorrido visual local del hub,
 bibliotecas, tiempos por Teil, redirección heredada de A1 y niveles bloqueados.
-Pendiente para declarar `DESPLEGADO`: integrar el SHA final en `main`, confirmar el
-deployment de Vercel y ejecutar el smoke público de rutas abiertas y cerradas.
+La implementación se integró en `main` como `b794f4f9`; los ajustes finales de copy
+y límite SEO quedaron en `841761d1`. Vercel publicó este último commit en
+[`dpl_FXafrB1G88nkZZBsz7T9LkUHUfqd`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/FXafrB1G88nkZZBsz7T9LkUHUfqd),
+estado `success`. El smoke público confirmó el hub A1–B2, diez sets de Lesen,
+Schreiben y Sprechen A2, editor de escritura, grabador oral, resultado gratuito sin
+muro de pago, redirección heredada de A1 y cierre efectivo de Hören y de las rutas de
+examen completo. Los diez simulacros A2 aparecen bloqueados en el catálogo de
+Exámenes con audio pendiente.
 
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
