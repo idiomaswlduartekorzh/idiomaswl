@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
 import {
+  continueEnglishDiagnosticConfirmation,
   continueEnglishDiagnosticLocator,
   continueEnglishDiagnosticPrecision,
 } from '../src/server/diagnostic/continue-core.ts';
@@ -194,4 +195,69 @@ test('an identical precision retry returns the persisted writing stage', async (
   });
   assert.equal(result.delivery.stage.stageId, 'persisted-writing-stage');
   assert.equal(result.delivery.attemptVersion, 3);
+});
+
+test('adds a bounded confirmation stage for insufficient evidence, then proceeds to writing', async () => {
+  const locator = selectEnglishLocator(bank, 'confirm-locator');
+  const used = new Set(locator.records.map(record => record.publicItem.id));
+  const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'confirm-precision', used);
+  precision.records.forEach(record => used.add(record.publicItem.id));
+  const precisionStage = {
+    stageId: 'stage-precision', kind: 'precision', routeId: 'mid-b1-b2',
+    itemIds: precision.records.map(record => record.publicItem.id),
+    contentVersions: Object.fromEntries(precision.records.map(record => [record.publicItem.id, '1'])),
+    issuedAt: '2026-09-24T12:30:00.000Z',
+  };
+  const precisionSubmissions = precision.records.map(item => ({
+    itemId: item.publicItem.id, contentVersion: '1',
+    response: { kind: 'single-choice', optionId: item.publicItem.skill === 'listening' ? null : 'b' },
+    responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+  }));
+  const priorLocator = locator.records.map(record => ({ itemId: record.publicItem.id, outcome: 'correct' }));
+  let precisionPersistence;
+  const confirmationResult = await continueEnglishDiagnosticPrecision({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-confirm', userId: 'user-1', version: 2, status: 'precision', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage: precisionStage, stageRecords: precision.records, priorObservations: priorLocator,
+    locatorRequestedConfirmation: true, submissions: precisionSubmissions,
+  }, {
+    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'stage-confirmation',
+    persist: async input => { precisionPersistence = input; return { replayed: false, version: 3 }; },
+  });
+  assert.equal(confirmationResult.delivery.stage.kind, 'confirmation');
+  assert.equal(confirmationResult.delivery.items.length, 8);
+  assert.equal(confirmationResult.confirmationDecision.required, true);
+  assert.ok(confirmationResult.confirmationDecision.reasons.includes('INSUFFICIENT_SKILL_EVIDENCE'));
+  assert.equal(precisionPersistence.nextStatus, 'confirmation');
+  assert.equal(precisionPersistence.nextStageIndex, 2);
+  assert.equal(confirmationResult.delivery.items.some(item => used.has(item.id)), false);
+
+  const confirmationRecords = confirmationResult.delivery.stage.itemIds.map(itemId => bank.find(record => record.publicItem.id === itemId));
+  assert.equal(confirmationRecords.every(Boolean), true);
+  const priorPrecision = precisionSubmissions.map(submission => ({
+    itemId: submission.itemId,
+    outcome: submission.response.optionId === null ? 'omitted' : 'correct',
+  }));
+  let confirmationPersistence;
+  const writingResult = await continueEnglishDiagnosticConfirmation({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-confirm', userId: 'user-1', version: 3, status: 'confirmation', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage: confirmationResult.delivery.stage,
+    stageRecords: confirmationRecords,
+    priorObservations: [...priorLocator, ...priorPrecision],
+    submissions: confirmationRecords.map(item => ({
+      itemId: item.publicItem.id, contentVersion: '1', response: { kind: 'single-choice', optionId: 'b' },
+      responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+    })),
+  }, {
+    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:10:00.000Z'), newId: () => 'stage-writing-after-confirmation',
+    persist: async input => { confirmationPersistence = input; return { replayed: false, version: 4 }; },
+  });
+  assert.equal(writingResult.delivery.stage.kind, 'writing');
+  assert.equal(writingResult.delivery.attemptVersion, 4);
+  assert.equal(confirmationPersistence.nextStatus, 'writing');
+  assert.equal(confirmationPersistence.nextStageIndex, 3);
+  assert.equal(writingResult.objectiveEvidence.find(skill => skill.skill === 'listening').decisions, 9);
 });

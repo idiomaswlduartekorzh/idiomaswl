@@ -22,7 +22,11 @@ import {
   type DiagnosticScoredSubmission,
 } from './attempt.ts';
 import { toDiagnosticPublicItem } from './scoring.ts';
-import { auditEnglishMstCapacity, selectEnglishPrecisionStage } from './selection.ts';
+import {
+  auditEnglishMstCapacity,
+  selectEnglishConfirmationStage,
+  selectEnglishPrecisionStage,
+} from './selection.ts';
 import { DiagnosticStartError } from './start-core.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 import {
@@ -47,7 +51,7 @@ export interface PersistObjectiveStageInput {
   stage: DiagnosticStageReceipt;
   submissionDigest: string;
   scoredResponses: readonly DiagnosticScoredSubmission[];
-  nextStatus: 'precision' | 'writing';
+  nextStatus: 'precision' | 'confirmation' | 'writing';
   routeId: 'low-a1-a2' | 'mid-b1-b2' | 'high-c1-c2';
   nextStage: DiagnosticStageReceipt;
   nextStageIndex: number;
@@ -72,6 +76,10 @@ function precisionSeed(secret: string, attemptId: string, routeId: string): stri
 
 function writingSeed(secret: string, attemptId: string, level: CefrLevel): string {
   return createHmac('sha256', secret).update(`${attemptId}\u0000writing\u0000${level}`).digest('hex');
+}
+
+function confirmationSeed(secret: string, attemptId: string, routeId: DiagnosticRouteId): string {
+  return createHmac('sha256', secret).update(`${attemptId}\u0000confirmation\u0000${routeId}`).digest('hex');
 }
 
 function selectWritingLevel(
@@ -172,16 +180,109 @@ export interface ContinuePrecisionDependencies extends ContinueLocatorDependenci
   writingBankVersion: string;
 }
 
+function objectiveEvidenceFromObservations(
+  bank: readonly DiagnosticBankRecord[],
+  observations: readonly DiagnosticObjectiveObservation[],
+): readonly DiagnosticMeasuredSkillEvidence[] {
+  if (new Set(observations.map(item => item.itemId)).size !== observations.length) {
+    throw new Error('diagnostic objective evidence contains duplicate observations');
+  }
+  const records = new Map(bank.map(record => [record.publicItem.id, record]));
+  if (observations.some(observation => !records.has(observation.itemId))) {
+    throw new Error('diagnostic objective evidence contains an item outside the versioned bank');
+  }
+  const skills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+  return skills.map(skill => estimateObjectiveSkillEvidence(
+    skill,
+    bank,
+    observations.filter(observation => records.get(observation.itemId)?.publicItem.skill === skill),
+    ENGLISH_PILOT_CALIBRATION,
+  ));
+}
+
+export function needsEnglishDiagnosticConfirmation(
+  evidence: readonly DiagnosticMeasuredSkillEvidence[],
+  locatorRequestedConfirmation: boolean,
+): { required: boolean; reasons: readonly string[] } {
+  const reasons: string[] = [];
+  if (evidence.some(skill => skill.status === 'not-estimated')) reasons.push('INSUFFICIENT_SKILL_EVIDENCE');
+  const indexes = evidence.flatMap(skill => skill.estimatedLevel ? [CEFR_LEVELS.indexOf(skill.estimatedLevel)] : []);
+  if (indexes.length && Math.max(...indexes) - Math.min(...indexes) >= 2) reasons.push('UNEVEN_OBJECTIVE_PROFILE');
+  if (locatorRequestedConfirmation && evidence.some(skill => {
+    if (!skill.plausibleRange) return true;
+    return CEFR_LEVELS.indexOf(skill.plausibleRange[1]) - CEFR_LEVELS.indexOf(skill.plausibleRange[0]) >= 2;
+  })) reasons.push('LOCATOR_BOUNDARY_UNRESOLVED');
+  return { required: reasons.length > 0, reasons };
+}
+
+async function persistWritingStage(input: {
+  attempt: DiagnosticAttemptSnapshot;
+  stage: DiagnosticStageReceipt;
+  submissions: readonly DiagnosticItemSubmission[];
+  scoredResponses: readonly DiagnosticScoredSubmission[];
+  objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
+  nextStageIndex: number;
+}, dependencies: ContinuePrecisionDependencies): Promise<DiagnosticWritingStageDelivery> {
+  if (!input.attempt.routeId) throw new Error('diagnostic route is required before writing');
+  const promptLevel = selectWritingLevel(input.attempt.routeId, input.objectiveEvidence);
+  const seed = writingSeed(dependencies.selectionSecret, input.attempt.id, promptLevel);
+  const prompt = selectDiagnosticWritingPrompt(dependencies.writingBank, 'en', promptLevel, seed);
+  const nextStage: DiagnosticStageReceipt & { kind: 'writing' } = {
+    stageId: dependencies.newId(),
+    kind: 'writing',
+    routeId: input.attempt.routeId,
+    itemIds: [prompt.id],
+    contentVersions: { [prompt.id]: prompt.contentVersion },
+    issuedAt: dependencies.now().toISOString(),
+  };
+  const persisted = await dependencies.persist({
+    attempt: input.attempt,
+    stage: input.stage,
+    submissionDigest: diagnosticSubmissionDigest(input.submissions),
+    scoredResponses: input.scoredResponses,
+    nextStatus: 'writing',
+    routeId: input.attempt.routeId,
+    nextStage,
+    nextStageIndex: input.nextStageIndex,
+    nextSelectionReceipt: {
+      stage: 'writing',
+      promptId: prompt.id,
+      promptLevel,
+      writingBankVersion: dependencies.writingBankVersion,
+      seedHash: createHash('sha256').update(seed).digest('hex'),
+      objectiveEvidence: input.objectiveEvidence,
+    },
+  });
+  const deliveredStage = persisted.replayed ? persisted.nextStage : nextStage;
+  if (!deliveredStage) throw new Error('diagnostic objective replay requires the persisted writing-stage receipt');
+  if (deliveredStage.kind !== 'writing'
+    || deliveredStage.routeId !== input.attempt.routeId
+    || deliveredStage.itemIds.length !== 1
+    || deliveredStage.itemIds[0] !== prompt.id
+    || deliveredStage.contentVersions[prompt.id] !== prompt.contentVersion) {
+    throw new Error('diagnostic persisted writing stage does not match the current prompt bank');
+  }
+  return {
+    attemptId: input.attempt.id,
+    attemptVersion: persisted.version,
+    expiresAt: input.attempt.expiresAt,
+    stage: deliveredStage as DiagnosticStageReceipt & { kind: 'writing' },
+    prompt,
+  };
+}
+
 export async function continueEnglishDiagnosticPrecision(input: {
   authenticatedUserId: string;
   attempt: DiagnosticAttemptSnapshot;
   stage: DiagnosticStageReceipt;
   stageRecords: readonly DiagnosticBankRecord[];
   priorObservations: readonly DiagnosticObjectiveObservation[];
+  locatorRequestedConfirmation?: boolean;
   submissions: readonly DiagnosticItemSubmission[];
 }, dependencies: ContinuePrecisionDependencies): Promise<{
-  delivery: DiagnosticWritingStageDelivery;
+  delivery: DiagnosticStageDelivery | DiagnosticWritingStageDelivery;
   objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
+  confirmationDecision: ReturnType<typeof needsEnglishDiagnosticConfirmation>;
 }> {
   if (dependencies.selectionSecret.length < 32) {
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
@@ -202,63 +303,92 @@ export async function continueEnglishDiagnosticPrecision(input: {
     ...input.priorObservations,
     ...scoredResponses.map(response => ({ itemId: response.itemId, outcome: response.outcome })),
   ];
-  if (new Set(observations.map(item => item.itemId)).size !== observations.length) {
-    throw new Error('diagnostic objective evidence contains duplicate observations');
-  }
-  const skills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
-  const objectiveEvidence = skills.map(skill => estimateObjectiveSkillEvidence(
-    skill,
-    dependencies.bank,
-    observations.filter(observation => dependencies.bank.find(record =>
-      record.publicItem.id === observation.itemId && record.publicItem.skill === skill)),
-    ENGLISH_PILOT_CALIBRATION,
-  ));
-  const promptLevel = selectWritingLevel(input.attempt.routeId, objectiveEvidence);
-  const seed = writingSeed(dependencies.selectionSecret, input.attempt.id, promptLevel);
-  const prompt = selectDiagnosticWritingPrompt(dependencies.writingBank, 'en', promptLevel, seed);
-  const nextStage: DiagnosticStageReceipt & { kind: 'writing' } = {
-    stageId: dependencies.newId(),
-    kind: 'writing',
-    routeId: input.attempt.routeId,
-    itemIds: [prompt.id],
-    contentVersions: { [prompt.id]: prompt.contentVersion },
-    issuedAt: dependencies.now().toISOString(),
-  };
-  const persisted = await dependencies.persist({
-    attempt: input.attempt,
-    stage: input.stage,
-    submissionDigest: diagnosticSubmissionDigest(input.submissions),
-    scoredResponses,
-    nextStatus: 'writing',
-    routeId: input.attempt.routeId,
-    nextStage,
-    nextStageIndex: 2,
-    nextSelectionReceipt: {
-      stage: 'writing',
-      promptId: prompt.id,
-      promptLevel,
-      writingBankVersion: dependencies.writingBankVersion,
-      seedHash: createHash('sha256').update(seed).digest('hex'),
+  const objectiveEvidence = objectiveEvidenceFromObservations(dependencies.bank, observations);
+  const confirmationDecision = needsEnglishDiagnosticConfirmation(
+    objectiveEvidence,
+    input.locatorRequestedConfirmation ?? false,
+  );
+  if (confirmationDecision.required) {
+    const seed = confirmationSeed(dependencies.selectionSecret, input.attempt.id, input.attempt.routeId);
+    const confirmation = selectEnglishConfirmationStage(
+      dependencies.bank,
+      input.attempt.routeId,
+      seed,
+      new Set(observations.map(observation => observation.itemId)),
+    );
+    const nextStage: DiagnosticStageReceipt = {
+      stageId: dependencies.newId(), kind: 'confirmation', routeId: input.attempt.routeId,
+      itemIds: confirmation.records.map(record => record.publicItem.id),
+      contentVersions: Object.fromEntries(confirmation.records.map(record => [record.publicItem.id, record.publicItem.contentVersion])),
+      issuedAt: dependencies.now().toISOString(),
+    };
+    const persisted = await dependencies.persist({
+      attempt: input.attempt, stage: input.stage,
+      submissionDigest: diagnosticSubmissionDigest(input.submissions), scoredResponses,
+      nextStatus: 'confirmation', routeId: input.attempt.routeId, nextStage, nextStageIndex: 2,
+      nextSelectionReceipt: {
+        ...confirmation.receipt, reasons: confirmationDecision.reasons,
+        seedHash: createHash('sha256').update(seed).digest('hex'), objectiveEvidence,
+      },
+    });
+    const deliveredStage = persisted.replayed ? persisted.nextStage : nextStage;
+    if (!deliveredStage || deliveredStage.kind !== 'confirmation'
+      || deliveredStage.itemIds.join('|') !== confirmation.receipt.itemIds.join('|')) {
+      throw new Error('diagnostic persisted confirmation stage does not match the current bank');
+    }
+    return {
+      delivery: {
+        attemptId: input.attempt.id, attemptVersion: persisted.version, expiresAt: input.attempt.expiresAt,
+        stage: deliveredStage, items: confirmation.records.map(toDiagnosticPublicItem),
+      },
       objectiveEvidence,
-    },
-  });
-  const deliveredStage = persisted.replayed ? persisted.nextStage : nextStage;
-  if (!deliveredStage) throw new Error('diagnostic precision replay requires the persisted writing-stage receipt');
-  if (deliveredStage.kind !== 'writing'
-    || deliveredStage.routeId !== input.attempt.routeId
-    || deliveredStage.itemIds.length !== 1
-    || deliveredStage.itemIds[0] !== prompt.id
-    || deliveredStage.contentVersions[prompt.id] !== prompt.contentVersion) {
-    throw new Error('diagnostic persisted writing stage does not match the current prompt bank');
+      confirmationDecision,
+    };
   }
   return {
-    delivery: {
-      attemptId: input.attempt.id,
-      attemptVersion: persisted.version,
-      expiresAt: input.attempt.expiresAt,
-      stage: deliveredStage as DiagnosticStageReceipt & { kind: 'writing' },
-      prompt,
-    },
+    delivery: await persistWritingStage({
+      attempt: input.attempt, stage: input.stage, submissions: input.submissions, scoredResponses,
+      objectiveEvidence, nextStageIndex: 2,
+    }, dependencies),
+    objectiveEvidence,
+    confirmationDecision,
+  };
+}
+
+export async function continueEnglishDiagnosticConfirmation(input: {
+  authenticatedUserId: string;
+  attempt: DiagnosticAttemptSnapshot;
+  stage: DiagnosticStageReceipt;
+  stageRecords: readonly DiagnosticBankRecord[];
+  priorObservations: readonly DiagnosticObjectiveObservation[];
+  submissions: readonly DiagnosticItemSubmission[];
+}, dependencies: ContinuePrecisionDependencies): Promise<{
+  delivery: DiagnosticWritingStageDelivery;
+  objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
+}> {
+  if (dependencies.selectionSecret.length < 32) {
+    throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
+  }
+  assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now());
+  const firstSubmission = input.attempt.status === 'confirmation' && !input.stage.completedAt;
+  const idempotentReplay = input.attempt.status === 'writing' && Boolean(input.stage.completedAt);
+  if ((!firstSubmission && !idempotentReplay)
+    || input.stage.kind !== 'confirmation'
+    || !input.attempt.routeId
+    || input.stage.routeId !== input.attempt.routeId) {
+    throw new Error('diagnostic confirmation stage is out of order');
+  }
+  const scoredResponses = scoreDiagnosticStage(input.stage, input.stageRecords, input.submissions);
+  const observations = [
+    ...input.priorObservations,
+    ...scoredResponses.map(response => ({ itemId: response.itemId, outcome: response.outcome })),
+  ];
+  const objectiveEvidence = objectiveEvidenceFromObservations(dependencies.bank, observations);
+  return {
+    delivery: await persistWritingStage({
+      attempt: input.attempt, stage: input.stage, submissions: input.submissions, scoredResponses,
+      objectiveEvidence, nextStageIndex: 3,
+    }, dependencies),
     objectiveEvidence,
   };
 }

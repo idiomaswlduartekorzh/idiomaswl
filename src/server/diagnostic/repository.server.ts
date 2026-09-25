@@ -15,6 +15,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
   attempt: DiagnosticAttemptSnapshot;
   stage: DiagnosticStageReceipt;
   stageIndex: number;
+  selectionReceipt: unknown;
   priorObservations: readonly DiagnosticObjectiveObservation[];
   bankVersion: string;
   blueprintVersion: string;
@@ -30,7 +31,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
       .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version')
       .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
     admin.from('diagnostic_stages')
-      .select('id,attempt_id,user_id,stage_index,kind,route_id,status,item_ids,content_versions,issued_at,completed_at')
+      .select('id,attempt_id,user_id,stage_index,kind,route_id,status,item_ids,content_versions,selection_receipt,issued_at,completed_at')
       .eq('id', input.stageId).eq('attempt_id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
     admin.from('diagnostic_responses')
       .select('item_id,outcome')
@@ -64,6 +65,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
       ...(stage.completed_at ? { completedAt: String(stage.completed_at) } : {}),
     },
     stageIndex: Number(stage.stage_index),
+    selectionReceipt: stage.selection_receipt,
     priorObservations: priorResponses.map(response => ({
       itemId: String(response.item_id),
       outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],

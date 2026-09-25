@@ -2,8 +2,10 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
-const migrationUrl = new URL('../supabase/migrations/20260925000447_diagnostic_attempts.sql', import.meta.url);
-const sql = (await readFile(migrationUrl, 'utf8')).toLowerCase();
+const sql = (await Promise.all([
+  readFile(new URL('../supabase/migrations/20260925000447_diagnostic_attempts.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925013000_diagnostic_confirmation_status.sql', import.meta.url), 'utf8'),
+])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
   'diagnostic_stages',
@@ -37,3 +39,6 @@ test('completed attempts and writing evaluations require final evidence', () => 
   assert.match(sql, /status = 'completed' and completed_at is not null and final_evidence is not null/);
 });
 
+test('attempt state constraint permits the adaptive confirmation stage', () => {
+  assert.match(sql, /'locator', 'precision', 'confirmation', 'writing'/);
+});

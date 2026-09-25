@@ -4,6 +4,7 @@ import test from 'node:test';
 import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
 import {
   auditEnglishMstCapacity,
+  selectEnglishConfirmationStage,
   selectEnglishLocator,
   selectEnglishPrecisionStage,
 } from '../src/server/diagnostic/selection.ts';
@@ -78,6 +79,25 @@ test('selects 16 precision decisions without reusing locator items', () => {
     assert.equal(levels.filter(level => level === 'B1').length, 2);
     assert.equal(levels.filter(level => level === 'B2').length, 2);
   }
+});
+
+test('selects an eight-decision confirmation without reusing items or stimuli', () => {
+  const bank = capacityBank();
+  const locator = selectEnglishLocator(bank, 'attempt-confirm');
+  const used = new Set(locator.receipt.itemIds);
+  const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'attempt-confirm:precision', used);
+  precision.records.forEach(record => used.add(record.publicItem.id));
+  const confirmation = selectEnglishConfirmationStage(bank, 'mid-b1-b2', 'attempt-confirm:confirmation', used);
+  assert.equal(confirmation.records.length, 8);
+  assert.deepEqual(confirmation.receipt.allocation, { reading: 2, listening: 2, grammar: 2, vocabulary: 2 });
+  assert.equal(confirmation.records.some(record => used.has(record.publicItem.id)), false);
+  const identity = (record) => {
+    const stimulus = record.publicItem.stimulus;
+    return stimulus.kind === 'audio' ? `audio:${stimulus.mediaId}`
+      : stimulus.kind === 'text' ? `text:${stimulus.stimulusId}` : `item:${record.publicItem.id}`;
+  };
+  const usedStimuli = new Set(bank.filter(record => used.has(record.publicItem.id)).map(identity));
+  assert.equal(confirmation.records.some(record => usedStimuli.has(identity(record))), false);
 });
 
 test('reports bank capacity deficits and refuses silent underfilled forms', () => {

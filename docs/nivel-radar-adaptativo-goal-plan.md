@@ -50,11 +50,14 @@ Actualizado el 24 de septiembre de 2026:
   de precisión. La transición precisión→escritura también combina las observaciones guardadas,
   calcula evidencia provisional por habilidad, restringe la consigna a la ruta asignada y
   persiste la etapa de escritura atómicamente; los reintentos idénticos recuperan la etapa ya
-  persistida. Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker
-  ni Podman), completar confirmación, reanudación/finalización y verificar autorización contra
-  una base real.
-- **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación de perfiles
-  contradictorios, selector balanceado y simulador A1–C2 implementados. La simulación inicial
+  persistida. Los perfiles con evidencia insuficiente o dispersión material reciben ahora un
+  módulo de confirmación de ocho decisiones, sin repetir ítems ni estímulos, antes de escritura.
+  Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker ni Podman),
+  completar reanudación/finalización y verificar autorización contra una base real.
+- **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación ejecutable de perfiles
+  contradictorios, selector balanceado y simulador A1–C2 implementados. La confirmación añade
+  dos decisiones por habilidad dentro de la ruta y vuelve a estimar la evidencia antes de
+  escritura. La simulación inicial
   detectó sobreenrutamiento y permitió ajustar los cortes provisionales a 5/12 y 10/12; el
   reporte queda versionado. La puerta de capacidad ahora exige realmente 12 decisiones por
   nivel/habilidad y seis estímulos de lectura/escucha. Los umbrales siguen marcados como piloto
@@ -77,7 +80,7 @@ Actualizado el 24 de septiembre de 2026:
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **88 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **91 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

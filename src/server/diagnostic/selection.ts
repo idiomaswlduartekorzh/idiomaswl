@@ -10,7 +10,7 @@ import type {
 import type { DiagnosticBankRecord } from './types.ts';
 
 export interface DiagnosticSelectionReceipt {
-  stage: 'locator' | 'precision';
+  stage: 'locator' | 'precision' | 'confirmation';
   seedFingerprint: string;
   routeId: DiagnosticRouteId | null;
   itemIds: readonly string[];
@@ -89,9 +89,11 @@ function requireBucket(
   count: number,
   seed: string,
   excluded: ReadonlySet<string>,
+  excludedStimuli: ReadonlySet<string> = new Set(),
 ): DiagnosticBankRecord[] {
   const candidates = bank.filter(record =>
     isSelectable(record, language, excluded)
+    && !excludedStimuli.has(stimulusIdentity(record))
     && record.publicItem.skill === skill
     && record.publicItem.levelCandidate === level,
   );
@@ -137,11 +139,17 @@ export function selectEnglishPrecisionStage(
   }
   const perLevel = decisionsPerSkill / route.levels.length;
   const selectedIds = new Set(usedItemIds);
+  const selectedStimuli = new Set(bank
+    .filter(record => usedItemIds.has(record.publicItem.id))
+    .map(stimulusIdentity));
   const records: DiagnosticBankRecord[] = [];
   for (const skill of LOCATOR_OBJECTIVE_SKILLS) {
     for (const level of route.levels) {
-      const selected = requireBucket(bank, 'en', skill, level, perLevel, seed, selectedIds);
-      selected.forEach(record => selectedIds.add(record.publicItem.id));
+      const selected = requireBucket(bank, 'en', skill, level, perLevel, seed, selectedIds, selectedStimuli);
+      selected.forEach(record => {
+        selectedIds.add(record.publicItem.id);
+        selectedStimuli.add(stimulusIdentity(record));
+      });
       records.push(...selected);
     }
   }
@@ -149,6 +157,39 @@ export function selectEnglishPrecisionStage(
     records,
     receipt: {
       stage: 'precision', seedFingerprint: seedFingerprint(seed), routeId,
+      itemIds: records.map(record => record.publicItem.id), allocation: allocationFor(records),
+    },
+  };
+}
+
+export function selectEnglishConfirmationStage(
+  bank: readonly DiagnosticBankRecord[],
+  routeId: DiagnosticRouteId,
+  seed: string,
+  usedItemIds: ReadonlySet<string>,
+): DiagnosticStageSelection {
+  if (!seed) throw new Error('selection seed is required');
+  const route = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === routeId);
+  if (!route) throw new Error(`unknown diagnostic route: ${routeId}`);
+  const selectedIds = new Set(usedItemIds);
+  const selectedStimuli = new Set(bank
+    .filter(record => usedItemIds.has(record.publicItem.id))
+    .map(stimulusIdentity));
+  const records: DiagnosticBankRecord[] = [];
+  for (const skill of LOCATOR_OBJECTIVE_SKILLS) {
+    for (const level of route.levels) {
+      const selected = requireBucket(bank, 'en', skill, level, 1, seed, selectedIds, selectedStimuli);
+      selected.forEach(record => {
+        selectedIds.add(record.publicItem.id);
+        selectedStimuli.add(stimulusIdentity(record));
+      });
+      records.push(...selected);
+    }
+  }
+  return {
+    records,
+    receipt: {
+      stage: 'confirmation', seedFingerprint: seedFingerprint(seed), routeId,
       itemIds: records.map(record => record.publicItem.id), allocation: allocationFor(records),
     },
   };
