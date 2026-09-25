@@ -53,6 +53,28 @@ Las credenciales no forman parte del reporte. Para escritura externa solo se mue
 de bloqueos, proveedor y modelo fijado. La vía humana puede liberar el diagnóstico sin configurar
 Gemini ni Groq.
 
+### Piloto de audio A1 con gasto acotado
+
+Antes de producir las 36 grabaciones existe un preset de escucha deliberadamente pequeño:
+
+```bash
+npm run generate:diagnostic-listening-audio -- --pilot-a1
+```
+
+Es un dry run sin red ni lectura de secretos. Selecciona exactamente
+`en-a1-listening-original-01`, `02` y `04`: dos mensajes monológicos y una conversación que
+ejercitan las cuatro voces propuestas. La factura inmutable actual es **3 archivos, 6 segmentos,
+712 caracteres y débito máximo estimado de 1.424 créditos**, ligada al paquete
+`98708152b86de8a5481afbb8e004a5a64d5f31711cc6cfbac41f4ce4e566f9d2`.
+
+La ruta `--generate` exige simultáneamente el hash del paquete, la frase de autorización ligada a
+ese hash, un máximo exacto de 712 caracteres, un techo exacto de 1.424 créditos, una reserva de
+saldo, semilla y las cuatro voces marcadas `approved_by_owner`. Si el contenido o la factura
+cambian, la autorización deja de ser válida. La salida queda bajo `.diagnostic-private/` y no
+puede contar como evidencia de escucha hasta dos revisiones humanas independientes de
+transcripción y alineación. Actualmente las cuatro voces siguen como propuestas y no se ha hecho
+ninguna llamada a ElevenLabs.
+
 ### Inspección segura de Supabase
 
 `npm run inspect:diagnostic-supabase` es deliberadamente un dry run. Con `-- --execute` y las

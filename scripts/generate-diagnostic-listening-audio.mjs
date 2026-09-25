@@ -26,6 +26,12 @@ const allBriefs = [
   ...ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
   ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
 ];
+export const DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS = [
+  'en-a1-listening-original-01',
+  'en-a1-listening-original-02',
+  'en-a1-listening-original-04',
+];
+export const DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT = 1_424;
 
 export function diagnosticListeningAudioInvoice(briefs) {
   const productionPackage = buildDiagnosticListeningProductionPackage(briefs);
@@ -53,6 +59,7 @@ export function diagnosticListeningAudioInvoice(briefs) {
 function selectedBriefs() {
   const requestedLevels = value('--levels')?.split(',').map(level => level.trim().toUpperCase()).filter(Boolean) ?? [];
   const requestedMedia = value('--media-ids')?.split(',').map(mediaId => mediaId.trim()).filter(Boolean) ?? [];
+  const pilotA1 = has('--pilot-a1');
   if (requestedLevels.length) {
     assert.ok(requestedLevels.every(level => ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(level)), 'invalid --levels selection');
   }
@@ -60,10 +67,25 @@ function selectedBriefs() {
     const known = new Set(allBriefs.map(brief => brief.id));
     assert.ok(requestedMedia.every(mediaId => known.has(mediaId)), 'invalid --media-ids selection');
   }
-  assert.ok(!(requestedLevels.length && requestedMedia.length), 'choose --levels or --media-ids, not both');
+  assert.ok(Number(Boolean(requestedLevels.length)) + Number(Boolean(requestedMedia.length)) + Number(pilotA1) <= 1,
+    'choose one selection mode: --pilot-a1, --levels or --media-ids');
+  if (pilotA1) return allBriefs.filter(brief => DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS.includes(brief.id));
   if (requestedMedia.length) return allBriefs.filter(brief => requestedMedia.includes(brief.id));
   if (requestedLevels.length) return allBriefs.filter(brief => requestedLevels.includes(brief.level));
   return allBriefs;
+}
+
+function isDiagnosticA1PilotSelection(briefs) {
+  return briefs.length === DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS.length
+    && briefs.every((brief, index) => brief.id === DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS[index]);
+}
+
+export function diagnosticA1AudioPilotAuthorization(invoice) {
+  assert.equal(invoice.files, 3, 'A1 audio pilot must contain exactly three files');
+  assert.equal(invoice.billableCharacters, 712, 'A1 audio pilot character invoice changed');
+  assert.equal(invoice.estimatedMaximumCreditDebit, DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
+    'A1 audio pilot exceeds or changed its approved credit envelope');
+  return `GENERATE_DIAGNOSTIC_A1_AUDIO_PILOT:${invoice.packageSha256}:FILES_3:MAX_CREDITS_${DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT}`;
 }
 
 function profileFor(brief, turn) {
@@ -130,6 +152,11 @@ async function generate(briefs) {
   assert.ok(briefs.length > 0, 'generation selection is empty');
   const invoice = diagnosticListeningAudioInvoice(briefs);
   assert.equal(value('--approve-package'), invoice.packageSha256, `pass --approve-package ${invoice.packageSha256}`);
+  const isA1Pilot = isDiagnosticA1PilotSelection(briefs);
+  if (isA1Pilot) {
+    const authorization = diagnosticA1AudioPilotAuthorization(invoice);
+    assert.equal(value('--authorize-pilot'), authorization, `pass --authorize-pilot ${authorization}`);
+  }
   assert.deepEqual(invoice.unresolvedProfiles, [], 'every used profile needs a voiceId');
   assert.deepEqual(invoice.unapprovedProfiles, [], 'every used profile needs approval=approved_by_owner');
   const maxCharacters = Number(value('--max-billable-characters'));
@@ -139,6 +166,12 @@ async function generate(briefs) {
   const maximumCreditDebit = Number(value('--max-credit-debit'));
   assert.ok(Number.isInteger(maximumCreditDebit) && maximumCreditDebit >= invoice.estimatedMaximumCreditDebit,
     `pass --max-credit-debit of at least ${invoice.estimatedMaximumCreditDebit}`);
+  if (isA1Pilot) {
+    assert.equal(maxCharacters, invoice.billableCharacters,
+      `A1 pilot requires --max-billable-characters ${invoice.billableCharacters}`);
+    assert.equal(maximumCreditDebit, DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
+      `A1 pilot requires --max-credit-debit ${DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT}`);
+  }
   const seedSalt = value('--seed-salt');
   assert.ok(seedSalt && seedSalt.length >= 8, 'pass a --seed-salt with at least eight characters');
   const apiKey = process.env.ELEVENLABS_API_KEY;
@@ -206,8 +239,12 @@ if (isMain) {
   if (has('--generate')) {
     await generate(briefs);
   } else {
+    const invoice = diagnosticListeningAudioInvoice(briefs);
+    const isA1Pilot = isDiagnosticA1PilotSelection(briefs);
     process.stdout.write(`${JSON.stringify({
-      ...diagnosticListeningAudioInvoice(briefs),
+      ...invoice,
+      selectionScope: isA1Pilot ? 'diagnostic-a1-audio-pilot-v1' : 'custom-or-full',
+      authorizationPhrase: isA1Pilot ? diagnosticA1AudioPilotAuthorization(invoice) : null,
       note: 'Dry run only. No API call, secret read, credit spend or audio write occurred.',
     }, null, 2)}\n`);
   }

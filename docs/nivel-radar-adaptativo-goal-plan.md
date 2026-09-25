@@ -135,6 +135,13 @@ Actualizado el 24 de septiembre de 2026:
   humano. Se propusieron cuatro voces que ya tenían aprobación separada en el casting TOEFL,
   pero esa aprobación no se hereda: el reparto diagnóstico sigue bloqueado hasta una escucha y
   aprobación explícitas para este uso.
+- **Piloto A1 de audio acotado:** el generador ofrece ahora `--pilot-a1`, un preset inmutable de
+  tres archivos (dos monólogos y una conversación), seis segmentos y las cuatro voces propuestas.
+  Su factura exacta es **712 caracteres / máximo 1.424 créditos** y queda ligada al hash
+  `98708152…f9d2`. Incluso con `--generate`, el runner rechaza un alcance distinto, un techo
+  superior, una frase de autorización no ligada al paquete o voces sin aprobación del dueño. El
+  dry run pasó sin API, secreto, gasto ni escritura; la generación real sigue pendiente de
+  autorización explícita.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
