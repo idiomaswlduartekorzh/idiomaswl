@@ -172,8 +172,9 @@ Actualizado el 24 de septiembre de 2026:
   sobreescribir ningún gate. El informe piloto incluye ahora un SHA-256 canónico de ítems,
   claves, racionales, fuentes y consignas; cambiar cualquiera invalida el piloto anterior. La
   vía humana de escritura puede liberar el producto sin proveedor externo, pero exige al menos
-  dos revisores verificados y SLA. El estado actual medido es `HOLD` en **0/8 gates**, coherente
-  con la falta de evidencias externas y sin fingir un release.
+  dos revisores verificados y SLA. El estado actual medido es `HOLD` en **2/8 gates** y **17
+  bloqueos**: gobierno y calidad ya pasan; las seis dimensiones restantes conservan sus bloqueos
+  externos, humanos o de contenido sin fingir un release.
 - **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
   el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
   confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`
@@ -209,7 +210,10 @@ Actualizado el 24 de septiembre de 2026:
   TypeScript y el build de producción sobre un árbol limpio, verifica que la huella no cambie
   durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
-  manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto.
+  manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
+  commit `df2970e7` quedó verificado con **214/214 pruebas**, TypeScript sin errores y un build de
+  **2.564 páginas estáticas**; el recibo privado se registró por SHA-256 y el gate de calidad ya
+  pasa sobre la misma huella de fuente.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
