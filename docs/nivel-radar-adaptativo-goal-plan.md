@@ -101,14 +101,18 @@ Actualizado el 24 de septiembre de 2026:
 - **Puerta editorial fail-closed implementada:** un manifiesto versionado solo promueve a piloto
   contenido reservado cuyo hash y versión coinciden, con identidades independientes para
   revisión lingüística y de evaluación; escucha exige además revisión de alineación de audio.
-  El manifiesto comprometido permanece vacío y el inicio comprueba capacidad completa tanto
-  del banco objetivo como de las cuatro consignas paralelas de escritura por nivel.
+  El generador de paquetes privados prepara recibos separados por rol sin mostrar claves al
+  revisor lingüístico; el compilador exige listas completas, atestación humana, identidades
+  independientes y vuelve a ejecutar la puerta de publicación antes de escribir una revisión
+  nueva del manifiesto. El manifiesto comprometido permanece vacío y el inicio comprueba
+  capacidad completa tanto del banco objetivo como de las cuatro consignas paralelas de
+  escritura por nivel.
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia, bancos candidatos y recuperación segura de borradores; el último
-  corte local ejecutó **127 pruebas** y
+  transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
+  borradores; el último corte local ejecutó **132 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
@@ -513,6 +517,13 @@ evidencias:
 
 Estas dependencias se prepararán con paquetes de revisión concretos. No se marcará el goal como
 completo mientras una dependencia necesaria para la promesa de confiabilidad siga pendiente.
+
+El banco reservado ya puede dividirse por nivel, habilidad, tipo y rol con
+`npm run scaffold:diagnostic-bank-review -- --level=B1 --skill=reading`. Los archivos se crean
+exclusivamente dentro de `.diagnostic-private/`, que está ignorado por Git. Dos recibos humanos
+completados e independientes se compilan con `record:diagnostic-bank-approvals`; una decisión
+`CHANGES_REQUESTED`, un hash obsoleto, una lista incompleta o dos roles firmados por la misma
+identidad impiden la aprobación. Escucha añade obligatoriamente un tercer recibo de alineación.
 
 ## Definición de terminado del goal
 
