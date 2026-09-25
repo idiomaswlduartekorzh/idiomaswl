@@ -323,7 +323,7 @@ export default function AdaptiveNivelRadarClient() {
           {currentItem.displayOptions?.map((option, index) => {
             const selected = answer.kind === 'single-choice' ? answer.optionId === option.id
               : answer.kind === 'multiple-choice' && answer.optionIds.includes(option.id);
-            return <button key={option.id} className={selected ? s.selected : ''} onClick={() => {
+            return <button key={option.id} className={selected ? s.selected : ''} aria-pressed={selected} onClick={() => {
               if (currentItem.response.kind === 'single-choice') updateResponse({ kind: 'single-choice', optionId: option.id });
               else if (answer.kind === 'multiple-choice') {
                 const optionIds = selected ? answer.optionIds.filter(id => id !== option.id) : [...answer.optionIds, option.id];
@@ -331,7 +331,7 @@ export default function AdaptiveNivelRadarClient() {
               }
             }}><span>{String.fromCharCode(65 + index)}</span>{option.text}</button>;
           })}
-          <button className={(answer.kind === 'single-choice' && answer.optionId === null) || (answer.kind === 'multiple-choice' && answer.optionIds.length === 0) ? s.selected : ''} onClick={() => updateResponse(currentItem.response.kind === 'single-choice' ? { kind: 'single-choice', optionId: null } : { kind: 'multiple-choice', optionIds: [] })}><span>—</span>No sé / omitir</button>
+          <button aria-pressed={(answer.kind === 'single-choice' && answer.optionId === null) || (answer.kind === 'multiple-choice' && answer.optionIds.length === 0)} className={(answer.kind === 'single-choice' && answer.optionId === null) || (answer.kind === 'multiple-choice' && answer.optionIds.length === 0) ? s.selected : ''} onClick={() => updateResponse(currentItem.response.kind === 'single-choice' ? { kind: 'single-choice', optionId: null } : { kind: 'multiple-choice', optionIds: [] })}><span>—</span>No sé / omitir</button>
         </div>}
         {currentItem.response.kind === 'short-text' && answer.kind === 'short-text' && <textarea className={s.writingArea} rows={5} value={answer.value} onChange={event => updateResponse({ kind: 'short-text', value: event.target.value })} />}
         <div className={s.itemActions}>

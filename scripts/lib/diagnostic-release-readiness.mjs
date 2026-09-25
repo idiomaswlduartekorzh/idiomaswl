@@ -252,6 +252,12 @@ export function buildDiagnosticReleaseReadiness(input) {
     || evidence?.quality?.productionBuildSourceSha256 !== input.currentSourceSha256) {
     qualityBlockers.push('PRODUCTION_BUILD_NOT_VERIFIED_FOR_SOURCE');
   }
+  if (!nonEmpty(input.currentSourceSha256)
+    || evidence?.quality?.browserE2ESourceSha256 !== input.currentSourceSha256
+    || !Number.isInteger(evidence?.quality?.browserE2ETestCount)
+    || evidence.quality.browserE2ETestCount < 1) {
+    qualityBlockers.push('BROWSER_E2E_NOT_VERIFIED_FOR_SOURCE');
+  }
   if (!nonEmpty(evidence?.quality?.verifiedCommit)
     || !SHA256.test(evidence?.quality?.receiptSha256 ?? '')
     || !isIsoDate(evidence?.quality?.verifiedAt)

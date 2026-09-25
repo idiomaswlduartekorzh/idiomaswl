@@ -24,7 +24,8 @@ La puerta reúne ocho dimensiones que deben pasar simultáneamente:
 5. migraciones aplicadas y flujo autenticado comprobado contra la base real;
 6. política de retención aprobada y borrado probado;
 7. piloto aprobado, con umbrales cumplidos, revisión humana y hash del banco exacto evaluado;
-8. suite diagnóstica y build de producción atados al commit limpio que se pretende liberar.
+8. suite diagnóstica, TypeScript, build y E2E adaptativo sobre servidor de producción atados al
+   commit limpio que se pretende liberar.
 
 Ninguna bandera de entorno convierte un `HOLD` en release. Cuando todos los gates pasan, las
 banderas solo distinguen `READY_TO_ENABLE` de `ACTIVE`.
@@ -46,8 +47,8 @@ una comprobación externa o humana real:
 - retención y borrado requieren política aprobada y una prueba de eliminación;
 - el informe piloto se guarda como archivo, se fija por SHA-256 y debe contener el mismo hash de
   banco objetivo y de escritura que el código actual;
-- pruebas y build deben corresponder a la misma huella SHA-256 del código diagnóstico; el commit
-  auditado se conserva como metadato y el árbol de trabajo debe estar limpio.
+- pruebas, build y E2E deben corresponder a la misma huella SHA-256 del código diagnóstico; el
+  commit auditado se conserva como metadato y el árbol de trabajo debe estar limpio.
 
 Las credenciales no forman parte del reporte. Para escritura externa solo se muestran nombres
 de bloqueos, proveedor y modelo fijado. La vía humana puede liberar el diagnóstico sin configurar
@@ -156,8 +157,8 @@ fuente y de banco, y rechaza recibos de otro despliegue, proyecto o antigüedad.
 
 ### Evidencia técnica reproducible
 
-La suite, TypeScript y el build no se atestiguan a mano. Sobre un commit limpio se ejecutan y se
-guardan en un recibo privado ligado a la huella de fuente:
+La suite, TypeScript, el build y el E2E no se atestiguan a mano. Sobre un commit limpio se
+ejecutan y se guardan en un recibo privado ligado a la huella de fuente:
 
 ```bash
 npm run verify:diagnostic-release-quality -- --execute \
@@ -168,9 +169,14 @@ npm run record:diagnostic-quality-evidence -- \
 
 El segundo comando es primero un dry run. Imprime la confirmación SHA-256 que debe repetirse con
 `--write`, `--attested-by=<identidad-del-verificador>` y `--confirm=<valor-exacto>`. El recibo
-solo es válido durante 24 horas, registra el número de pruebas y páginas estáticas, y se rechaza
-si el árbol se ensucia o cambia la huella durante la ejecución. Registrar esta evidencia no puede
-aprobar contenido, audio, escritura, retención ni piloto.
+solo es válido durante 24 horas, registra el número de pruebas unitarias, historias de navegador
+y páginas estáticas, y se rechaza si el árbol se ensucia o cambia la huella durante la ejecución.
+El build activa la interfaz adaptativa únicamente en el entorno efímero de verificación; después
+arranca `next start` en un puerto local y Playwright cubre desktop, móvil, teclado, recarga,
+audio, omisión, error/reintento, escritura, resultado con incertidumbre y cierre. Las APIs se
+simulan en el navegador, por lo que esta evidencia prueba el contrato UI pero no sustituye el
+recorrido autenticado contra Supabase real. Registrar esta evidencia no puede aprobar contenido,
+audio, escritura, retención ni piloto.
 
 ### Revisión humana de gobierno
 
@@ -301,7 +307,7 @@ hasta aplicar la migración, probarla contra la base real y aprobar una versión
 4. seleccionar y aprobar la operación de escritura;
 5. aprobar privacidad, retención y borrado;
 6. ejecutar el piloto, exportar su informe y revisarlo;
-7. ejecutar suite y build sobre el commit candidato limpio;
+7. ejecutar suite, build y E2E sobre el commit candidato limpio;
 8. completar las atestaciones de `release-evidence.json` y ejecutar el check estricto;
 9. emitir el certificado con `--issue-certificate`, fijar su release ID y huella en el entorno;
 10. activar primero el motor y luego la interfaz con monitoreo de rollback.

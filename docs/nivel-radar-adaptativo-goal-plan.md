@@ -244,8 +244,12 @@ Actualizado el 25 de septiembre de 2026:
   No puede aprobar retención ni ninguna decisión académica. No se ha ejecutado contra un entorno
   real porque todavía no hay credenciales ni banco piloto aprobado.
 - **Calidad reproducible ligada a fuente:** un runner separado ejecuta la suite diagnóstica,
-  TypeScript y el build de producción sobre un árbol limpio, verifica que la huella no cambie
-  durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
+  TypeScript, el build de producción y el E2E adaptativo sobre un árbol limpio, verifica que la
+  huella no cambie durante la corrida y emite un recibo privado con commit, conteo de pruebas,
+  historias de navegador y páginas estáticas. El E2E levanta el build con la interfaz adaptativa
+  en un puerto efímero y cubre desktop, móvil, teclado, recarga, audio, omisión, error/reintento,
+  escritura, resultado con incertidumbre y cierre. Usa contratos de API simulados, por lo que no
+  reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
   commit `3ed47314` quedó verificado con **243/243 pruebas**, TypeScript sin errores y un build de
@@ -269,11 +273,8 @@ Actualizado el 25 de septiembre de 2026:
   claves nuevas y legacy. Un segundo runner destructivo, limitado a una cuenta fixture y con
   confirmación ligada a su UUID, ya cubre inicio, reanudación, audio privado, etapas objetivas,
   escritura, revisión humana, perfil de cinco habilidades y borrado verificado; no se ejecutó
-  porque este entorno carece de credenciales y banco piloto aprobado. El último corte local
-  ejecutó **236 pruebas** y
-  TypeScript compiló sin errores. El build de producción con webpack también completó las
-  2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
-  pendiente.
+  porque este entorno carece de credenciales y banco piloto aprobado. El corte reproducible
+  vigente se documenta arriba; la verificación de despliegue real sigue pendiente.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.
@@ -638,7 +639,8 @@ El trabajo añadirá, como mínimo:
 - `check:diagnostic-report`: reproducibilidad de resultados y estados sin evidencia;
 - tests de scoring objetivo y escritura;
 - simulaciones de perfiles A1–C2 y estrategias adversas;
-- historias E2E desktop, móvil, teclado, recarga, audio, abandono y reintento.
+- historias E2E desktop, móvil, teclado, recarga, audio, abandono y reintento, ejecutadas sobre
+  un servidor local de producción y distinguidas del recorrido autenticado real.
 
 Además continúan siendo obligatorios:
 

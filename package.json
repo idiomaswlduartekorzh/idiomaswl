@@ -219,6 +219,7 @@
     "clean": "rm -rf .next .turbo node_modules/.cache && echo '\u2713 Cache limpiado'",
     "audit:listening-audio": "node scripts/audit-listening-audio.mjs",
     "test:e2e": "playwright test",
+    "test:diagnostic-e2e": "playwright test tests/e2e/diagnostic-adaptive.spec.ts",
     "check:vocabulario": "node scripts/check-vocabulario.mjs",
     "check:ielts-task1": "node scripts/check-ielts-task1-alignment.mjs",
     "check:historias": "node scripts/check-historias.mjs",

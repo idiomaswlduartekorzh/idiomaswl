@@ -104,6 +104,7 @@ function readyFixture() {
       },
       quality: {
         diagnosticSuiteSourceSha256: 'source-sha', productionBuildSourceSha256: 'source-sha',
+        browserE2ESourceSha256: 'source-sha', browserE2ETestCount: 4,
         verifiedCommit: commit, verifiedAt: reviewedAt, verifiedBy: 'qa-reviewer',
         receiptSha256: '3'.repeat(64),
       },

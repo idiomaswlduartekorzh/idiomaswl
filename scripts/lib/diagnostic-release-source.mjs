@@ -8,6 +8,7 @@ export function diagnosticReleaseSourcePaths(root) {
     .trim().split('\n').filter(Boolean)
     .filter(path => path === '.env.example'
       || path === 'package.json'
+      || path === 'playwright.config.ts'
       || (path.startsWith('config/diagnostic/')
         && !['config/diagnostic/release-evidence.json', 'config/diagnostic/release-certificate.json'].includes(path))
       || path === 'docs/diagnostic-bank-readiness.json'
@@ -18,7 +19,9 @@ export function diagnosticReleaseSourcePaths(root) {
       || path.startsWith('src/app/api/admin/diagnostic/')
       || path.includes('/nivel-radar/')
       || (path.startsWith('supabase/migrations/') && path.includes('diagnostic'))
-      || path.startsWith('tests/diagnostic-'))
+      || path.startsWith('tests/diagnostic-')
+      || path === 'tests/e2e/diagnostic-adaptive.spec.ts'
+      || path === 'tests/e2e/consola-ajena.ts')
     .sort();
 }
 

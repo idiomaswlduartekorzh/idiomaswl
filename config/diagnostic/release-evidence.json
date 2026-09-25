@@ -63,6 +63,8 @@
   "quality": {
     "diagnosticSuiteSourceSha256": "ca02449efdb6ecdf934fbb447d5859f43aefd2757a2c00f7c84d2d6c3e8624eb",
     "productionBuildSourceSha256": "ca02449efdb6ecdf934fbb447d5859f43aefd2757a2c00f7c84d2d6c3e8624eb",
+    "browserE2ESourceSha256": null,
+    "browserE2ETestCount": null,
     "verifiedCommit": "3ed47314d2d5951bb3b96edfd0c041ff530d021b",
     "verifiedAt": "2026-09-25T05:24:22.808Z",
     "verifiedBy": "codex-agent",

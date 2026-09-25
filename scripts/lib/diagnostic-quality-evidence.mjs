@@ -22,7 +22,7 @@ export function validateDiagnosticQualityReceipt(input) {
     || recordedAt - completedAt > 24 * 60 * 60 * 1_000) {
     throw new Error('Quality receipt is stale or has an invalid time range.');
   }
-  if (receipt?.receiptVersion !== 'diagnostic-quality-evidence-v1'
+  if (receipt?.receiptVersion !== 'diagnostic-quality-evidence-v2'
     || receipt.decision !== 'PASS'
     || receipt.sourceSha256 !== input.expectedSourceSha256
     || !COMMIT_SHA.test(receipt.commitSha ?? '')
@@ -34,6 +34,11 @@ export function validateDiagnosticQualityReceipt(input) {
     || receipt.checks?.productionBuild?.passed !== true
     || !Number.isInteger(receipt.checks.productionBuild.staticPageCount)
     || receipt.checks.productionBuild.staticPageCount < 1
+    || receipt.checks?.browserE2E?.passed !== true
+    || !Number.isInteger(receipt.checks.browserE2E.testCount)
+    || receipt.checks.browserE2E.testCount < 1
+    || receipt.checks.browserE2E.serverMode !== 'production'
+    || receipt.checks.browserE2E.adaptiveUiEnabled !== true
     || receipt.claims?.sourceUnchangedDuringRun !== true
     || receipt.claims?.outputsContainSecrets !== false) {
     throw new Error('Quality receipt does not prove the required clean release checks.');
@@ -44,6 +49,7 @@ export function validateDiagnosticQualityReceipt(input) {
     receiptSha256: input.receiptSha256,
     diagnosticTestCount: receipt.checks.diagnosticSuite.testCount,
     staticPageCount: receipt.checks.productionBuild.staticPageCount,
+    browserE2ETestCount: receipt.checks.browserE2E.testCount,
   };
 }
 
@@ -62,6 +68,8 @@ export function recordDiagnosticQualityEvidence({ currentEvidence, validated, re
       ...currentEvidence.quality,
       diagnosticSuiteSourceSha256: validated.sourceSha256,
       productionBuildSourceSha256: validated.sourceSha256,
+      browserE2ESourceSha256: validated.sourceSha256,
+      browserE2ETestCount: validated.browserE2ETestCount,
       verifiedCommit: validated.verifiedCommit,
       verifiedAt: recordedAt,
       verifiedBy: attestedBy,

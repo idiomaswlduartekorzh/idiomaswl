@@ -1,5 +1,7 @@
-import { execFileSync, spawnSync } from 'node:child_process';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { execFileSync, spawn, spawnSync } from 'node:child_process';
+import { once } from 'node:events';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { createServer } from 'node:net';
 import { dirname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -37,6 +39,40 @@ const run = (command, args, env = process.env) => {
   return `${result.stdout ?? ''}\n${result.stderr ?? ''}`;
 };
 
+const delay = milliseconds => new Promise(resolveDelay => setTimeout(resolveDelay, milliseconds));
+const availablePort = () => new Promise((resolvePort, reject) => {
+  const server = createServer();
+  server.once('error', reject);
+  server.listen(0, '127.0.0.1', () => {
+    const address = server.address();
+    const port = typeof address === 'object' && address ? address.port : null;
+    server.close(error => error ? reject(error) : resolvePort(port));
+  });
+});
+async function waitForServer(url, child, serverOutput) {
+  const deadline = Date.now() + 30_000;
+  while (Date.now() < deadline) {
+    if (child.exitCode !== null) throw new Error(`Production server exited before E2E.\n${serverOutput()}`);
+    try {
+      const response = await fetch(url, { signal: AbortSignal.timeout(2_000) });
+      if (response.ok) return;
+    } catch {
+      // The process is still starting; retry within the bounded deadline.
+    }
+    await delay(250);
+  }
+  throw new Error(`Production server did not become ready for E2E.\n${serverOutput()}`);
+}
+async function stopServer(child) {
+  if (child.exitCode !== null) return;
+  child.kill('SIGTERM');
+  await Promise.race([once(child, 'exit'), delay(5_000)]);
+  if (child.exitCode === null) {
+    child.kill('SIGKILL');
+    await once(child, 'exit');
+  }
+}
+
 const suiteOutput = run('pnpm', ['run', 'test:diagnostic-foundation']);
 const testCount = Number([...suiteOutput.matchAll(/ℹ tests (\d+)/gu)].at(-1)?.[1]);
 if (!Number.isInteger(testCount) || testCount < 1) throw new Error('Diagnostic suite test count was not detected.');
@@ -49,18 +85,51 @@ const nodeOptions = (process.env.NODE_OPTIONS ?? '')
 const buildOutput = run(process.execPath, ['node_modules/next/dist/bin/next', 'build', '--webpack'], {
   ...process.env,
   NODE_OPTIONS: nodeOptions,
+  DIAGNOSTIC_ADAPTIVE_UI_ENABLED: 'true',
 });
 const pageProgress = [...buildOutput.matchAll(/\((\d+)\/(\d+)\)/gu)]
   .map(match => [Number(match[1]), Number(match[2])])
   .filter(([current, total]) => current === total && total > 0);
 const staticPageCount = pageProgress.at(-1)?.[1] ?? 0;
 if (!staticPageCount) throw new Error('Production build static page count was not detected.');
+const port = await availablePort();
+if (!Number.isInteger(port)) throw new Error('Could not reserve a local port for diagnostic E2E.');
+const baseUrl = `http://127.0.0.1:${port}`;
+let serverLog = '';
+const server = spawn(process.execPath, [
+  'node_modules/next/dist/bin/next', 'start', '-H', '127.0.0.1', '-p', String(port),
+], {
+  cwd: root,
+  env: { ...process.env, NODE_OPTIONS: nodeOptions, DIAGNOSTIC_ADAPTIVE_UI_ENABLED: 'true' },
+  stdio: ['ignore', 'pipe', 'pipe'],
+});
+const appendServerLog = chunk => { serverLog = `${serverLog}${chunk.toString('utf8')}`.slice(-8_000); };
+server.stdout.on('data', appendServerLog);
+server.stderr.on('data', appendServerLog);
+let e2eOutput;
+try {
+  await waitForServer(`${baseUrl}/nivel-radar`, server, () => serverLog);
+  const installedChrome = process.platform === 'darwin'
+    && existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');
+  const browserEnv = process.env.PLAYWRIGHT_USE_INSTALLED_CHROME
+    ? process.env.PLAYWRIGHT_USE_INSTALLED_CHROME
+    : installedChrome ? 'true' : 'false';
+  e2eOutput = run(process.execPath, [
+    'node_modules/@playwright/test/cli.js', 'test', 'tests/e2e/diagnostic-adaptive.spec.ts',
+  ], { ...process.env, BASE_URL: baseUrl, PLAYWRIGHT_USE_INSTALLED_CHROME: browserEnv });
+} finally {
+  await stopServer(server);
+}
+const e2eTestCount = Number([...e2eOutput.matchAll(/(\d+) passed/gu)].at(-1)?.[1]);
+if (!Number.isInteger(e2eTestCount) || e2eTestCount < 1) {
+  throw new Error('Diagnostic browser E2E test count was not detected.');
+}
 if (!clean() || diagnosticReleaseSourceSha256(root) !== sourceSha256) {
   throw new Error('Diagnostic source changed during quality verification.');
 }
 
 const receipt = {
-  receiptVersion: 'diagnostic-quality-evidence-v1',
+  receiptVersion: 'diagnostic-quality-evidence-v2',
   decision: 'PASS',
   startedAt,
   completedAt: new Date().toISOString(),
@@ -71,6 +140,12 @@ const receipt = {
     diagnosticSuite: { passed: true, testCount },
     typescript: { passed: true },
     productionBuild: { passed: true, staticPageCount },
+    browserE2E: {
+      passed: true,
+      testCount: e2eTestCount,
+      serverMode: 'production',
+      adaptiveUiEnabled: true,
+    },
   },
   claims: { sourceUnchangedDuringRun: true, outputsContainSecrets: false },
 };
