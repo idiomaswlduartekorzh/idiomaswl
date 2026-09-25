@@ -43,7 +43,11 @@ export interface ContinueLocatorDependencies {
   selectionSecret: string;
   now: () => Date;
   newId: () => string;
-  persist: (input: PersistObjectiveStageInput) => Promise<{ replayed: boolean; version: number }>;
+  persist: (input: PersistObjectiveStageInput) => Promise<{
+    replayed: boolean;
+    version: number;
+    nextStage?: DiagnosticStageReceipt;
+  }>;
 }
 
 function precisionSeed(secret: string, attemptId: string, routeId: string): string {
@@ -64,7 +68,9 @@ export async function continueEnglishDiagnosticLocator(input: {
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
   }
   assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now());
-  if (input.attempt.status !== 'locator' || input.stage.kind !== 'locator' || input.stage.stageId.length < 1) {
+  const firstSubmission = input.attempt.status === 'locator' && !input.stage.completedAt;
+  const idempotentReplay = input.attempt.status === 'precision' && Boolean(input.stage.completedAt);
+  if ((!firstSubmission && !idempotentReplay) || input.stage.kind !== 'locator' || input.stage.stageId.length < 1) {
     throw new Error('diagnostic locator stage is out of order');
   }
   const deficits = auditEnglishMstCapacity(dependencies.bank);
@@ -101,16 +107,23 @@ export async function continueEnglishDiagnosticLocator(input: {
       seedHash: createHash('sha256').update(seed).digest('hex'),
     },
   });
-  if (persisted.replayed) throw new Error('diagnostic locator replay requires the persisted next-stage receipt');
+  const deliveredStage = persisted.replayed ? persisted.nextStage : nextStage;
+  if (!deliveredStage) throw new Error('diagnostic locator replay requires the persisted next-stage receipt');
+  if (deliveredStage.kind !== 'precision'
+    || deliveredStage.routeId !== routeDecision.routeId
+    || deliveredStage.itemIds.join('|') !== precision.receipt.itemIds.join('|')
+    || deliveredStage.itemIds.some((itemId) => deliveredStage.contentVersions[itemId]
+      !== precision.records.find((record) => record.publicItem.id === itemId)?.publicItem.contentVersion)) {
+    throw new Error('diagnostic persisted precision stage does not match the current bank');
+  }
   return {
     delivery: {
       attemptId: input.attempt.id,
       attemptVersion: persisted.version,
       expiresAt: input.attempt.expiresAt,
-      stage: nextStage,
+      stage: deliveredStage,
       items: precision.records.map(toDiagnosticPublicItem),
     },
     routeDecision,
   };
 }
-

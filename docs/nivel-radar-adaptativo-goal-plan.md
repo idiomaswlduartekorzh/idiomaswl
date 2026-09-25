@@ -45,9 +45,11 @@ Actualizado el 24 de septiembre de 2026:
   navegador. La creación del intento y el envío de una etapa tienen funciones SQL atómicas,
   `SECURITY INVOKER`, autorizadas solo para `service_role`; el endpoint de inicio comprueba
   feature flag, origen, consentimiento, audio, autenticación, cuota y capacidad del banco. La
-  transición localizador→precisión ya se puntúa y prepara en servidor. Falta ejecutar las
-  migraciones contra Postgres (el entorno actual no tiene Docker ni Podman), completar los
-  endpoints de continuación/reanudación y verificar autorización de extremo a extremo.
+  transición localizador→precisión ya tiene endpoint autenticado: vuelve a enlazar intento,
+  etapa, owner, versión y banco desde la base de datos, puntúa en servidor y devuelve la forma
+  de precisión; los reintentos idénticos recuperan la etapa persistida. Falta ejecutar las
+  migraciones contra Postgres (el entorno actual no tiene Docker ni Podman), completar
+  precisión→escritura, reanudación/finalización y verificar autorización contra una base real.
 - **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación de perfiles
   contradictorios, selector balanceado y simulador A1–C2 implementados. La simulación inicial
   detectó sobreenrutamiento y permitió ajustar los cortes provisionales a 5/12 y 10/12; el

@@ -81,3 +81,32 @@ test('rejects foreign, expired and tampered locator submissions before persisten
   await assert.rejects(() => continueEnglishDiagnosticLocator({ authenticatedUserId: 'user-1', attempt, stage, stageRecords: selected.records, submissions }, dependencies), /expired/);
   assert.equal(persisted, false);
 });
+
+test('an identical retry returns the persisted precision stage without creating a new form', async () => {
+  const { selected, stage } = locatorFixture();
+  const submissions = selected.records.map(item => ({
+    itemId: item.publicItem.id, contentVersion: '1', response: { kind: 'single-choice', optionId: 'b' },
+    responseMs: 1000, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+  }));
+  let proposed;
+  const result = await continueEnglishDiagnosticLocator({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-1', userId: 'user-1', version: 2, status: 'precision', routeId: 'high-c1-c2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage: { ...stage, completedAt: '2026-09-24T12:29:00.000Z' }, stageRecords: selected.records, submissions,
+  }, {
+    bank, selectionSecret: 's'.repeat(32), now: () => new Date('2026-09-24T13:00:00.000Z'),
+    newId: () => 'new-id-that-must-not-be-returned',
+    persist: async input => {
+      proposed = input.nextStage;
+      return {
+        replayed: true,
+        version: 2,
+        nextStage: { ...input.nextStage, stageId: 'persisted-stage-id', issuedAt: '2026-09-24T12:30:00.000Z' },
+      };
+    },
+  });
+  assert.equal(proposed.stageId, 'new-id-that-must-not-be-returned');
+  assert.equal(result.delivery.stage.stageId, 'persisted-stage-id');
+  assert.equal(result.delivery.stage.issuedAt, '2026-09-24T12:30:00.000Z');
+  assert.equal(result.delivery.attemptVersion, 2);
+});

@@ -1,8 +1,54 @@
 import 'server-only';
 
 import { createAdminClient } from '@/lib/supabase/admin';
+import type { DiagnosticStageReceipt } from '@/lib/diagnostic/types';
+import type { DiagnosticAttemptSnapshot } from './continue-core';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
+
+export async function loadDiagnosticLocatorSubmissionContext(input: {
+  attemptId: string;
+  stageId: string;
+  userId: string;
+}): Promise<{ attempt: DiagnosticAttemptSnapshot; stage: DiagnosticStageReceipt; bankVersion: string; blueprintVersion: string; engineVersion: string } | null> {
+  const admin = createAdminClient();
+  const [{ data: attempt, error: attemptError }, { data: stage, error: stageError }] = await Promise.all([
+    admin.from('diagnostic_attempts')
+      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version')
+      .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+    admin.from('diagnostic_stages')
+      .select('id,attempt_id,user_id,kind,route_id,status,item_ids,content_versions,issued_at,completed_at')
+      .eq('id', input.stageId).eq('attempt_id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+  ]);
+  if (attemptError || stageError) throw new Error('diagnostic_persistence_unavailable');
+  if (!attempt || !stage) return null;
+  if (!Number.isInteger(attempt.version) || !Array.isArray(stage.item_ids)
+    || !stage.content_versions || typeof stage.content_versions !== 'object') {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return {
+    attempt: {
+      id: String(attempt.id),
+      userId: String(attempt.user_id),
+      version: Number(attempt.version),
+      status: attempt.status as DiagnosticAttemptSnapshot['status'],
+      routeId: attempt.route_id as DiagnosticAttemptSnapshot['routeId'],
+      expiresAt: String(attempt.expires_at),
+    },
+    stage: {
+      stageId: String(stage.id),
+      kind: stage.kind as DiagnosticStageReceipt['kind'],
+      routeId: stage.route_id as DiagnosticStageReceipt['routeId'],
+      itemIds: stage.item_ids.map(String),
+      contentVersions: stage.content_versions as Readonly<Record<string, string>>,
+      issuedAt: String(stage.issued_at),
+      ...(stage.completed_at ? { completedAt: String(stage.completed_at) } : {}),
+    },
+    bankVersion: String(attempt.bank_version),
+    blueprintVersion: String(attempt.blueprint_version),
+    engineVersion: String(attempt.engine_version),
+  };
+}
 
 export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAttemptInput): Promise<void> {
   const { error } = await createAdminClient().rpc('create_diagnostic_attempt', {
@@ -27,8 +73,9 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
 
 export async function persistDiagnosticObjectiveStage(
   input: PersistObjectiveStageInput,
-): Promise<{ replayed: boolean; version: number }> {
-  const { data, error } = await createAdminClient().rpc('submit_diagnostic_objective_stage', {
+): Promise<{ replayed: boolean; version: number; nextStage?: PersistObjectiveStageInput['nextStage'] }> {
+  const admin = createAdminClient();
+  const { data, error } = await admin.rpc('submit_diagnostic_objective_stage', {
     p_attempt_id: input.attempt.id,
     p_stage_id: input.stage.stageId,
     p_user_id: input.attempt.userId,
@@ -54,12 +101,45 @@ export async function persistDiagnosticObjectiveStage(
   });
   if (error || !data || typeof data !== 'object') {
     console.error('[diagnostic] Atomic stage submission failed:', error?.message ?? 'invalid RPC result');
+    const knownCode = [
+      'diagnostic_stage_already_completed',
+      'diagnostic_attempt_version_conflict',
+      'diagnostic_attempt_expired',
+      'diagnostic_stage_out_of_order',
+      'diagnostic_response_binding_invalid',
+      'diagnostic_response_count_invalid',
+    ].find((code) => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
     throw new Error('diagnostic_persistence_unavailable');
   }
   const result = data as { replayed?: unknown; version?: unknown };
   if (typeof result.replayed !== 'boolean' || !Number.isInteger(result.version)) {
     throw new Error('diagnostic_persistence_unavailable');
   }
-  return { replayed: result.replayed, version: Number(result.version) };
-}
+  if (!result.replayed) return { replayed: false, version: Number(result.version) };
 
+  const { data: row, error: replayError } = await admin
+    .from('diagnostic_stages')
+    .select('id,kind,route_id,item_ids,content_versions,issued_at,completed_at')
+    .eq('attempt_id', input.attempt.id)
+    .eq('user_id', input.attempt.userId)
+    .eq('stage_index', 1)
+    .maybeSingle();
+  if (replayError || !row || row.kind !== 'precision' || !Array.isArray(row.item_ids)
+    || !row.content_versions || typeof row.content_versions !== 'object') {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return {
+    replayed: true,
+    version: Number(result.version),
+    nextStage: {
+      stageId: String(row.id),
+      kind: 'precision',
+      routeId: row.route_id as PersistObjectiveStageInput['routeId'],
+      itemIds: row.item_ids.map(String),
+      contentVersions: row.content_versions as Readonly<Record<string, string>>,
+      issuedAt: String(row.issued_at),
+      ...(row.completed_at ? { completedAt: String(row.completed_at) } : {}),
+    },
+  };
+}
