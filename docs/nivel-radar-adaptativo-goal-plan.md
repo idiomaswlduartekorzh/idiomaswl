@@ -84,8 +84,11 @@ Actualizado el 24 de septiembre de 2026:
   vigentes de cada proveedor, fija el modelo, no registra texto, limita Groq a modelos con modo
   estricto y vuelve a validar toda la evidencia en servidor. El consentimiento piloto actual se
   rechaza expresamente como autorización externa; la página administrativa muestra los
-  bloqueos de configuración sin exponer secretos. Falta persistir una autorización externa por
-  intento antes de conectar el caller. La ruta exclusivamente humana ya admite escrituras
+  bloqueos de configuración sin exponer secretos. Cada intento nuevo persiste versión y fecha
+  del consentimiento general; las columnas de autorización externa nacen cerradas y un
+  cargador servidor-servidor exige owner, estado y evidencia completa. Falta aprobar e
+  implementar la captura de esa autorización externa antes de conectar el caller. La ruta
+  exclusivamente humana ya admite escrituras
   pendientes sin proveedor: una aceptación puede publicar evidencia provisional y una decisión
   de revisar exige adjudicación por otra identidad, sin fabricar acuerdo con un modelo ausente.
   La evaluación automática se persiste una sola vez mediante RPC exclusiva de servidor; un
@@ -164,7 +167,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **173 pruebas** y
+  borradores; el último corte local ejecutó **176 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

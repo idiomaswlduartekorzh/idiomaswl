@@ -10,6 +10,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925030000_diagnostic_writing_automation.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925031500_diagnostic_human_writing_review.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925033000_diagnostic_human_only_writing.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 
 test('diagnostic mutations are atomic security-invoker functions', () => {
@@ -19,9 +20,9 @@ test('diagnostic mutations are atomic security-invoker functions', () => {
   assert.match(sql, /create function public\.complete_diagnostic_attempt/);
   assert.match(sql, /create function public\.record_diagnostic_automated_writing_evaluation/);
   assert.match(sql, /create function public\.record_diagnostic_human_writing_evaluation/);
-  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 8);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 9);
   assert.equal(sql.includes('security definer'), false);
-  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 8);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 9);
 });
 
 test('only service_role can execute diagnostic mutation functions', () => {
@@ -93,4 +94,11 @@ test('identical retries are idempotent while changed retries are rejected', () =
   assert.match(sql, /v_stage\.submission_digest = p_submission_digest[\s\S]+?'replayed', true/);
   assert.match(sql, /diagnostic_stage_already_completed/);
   assert.match(sql, /unique \(attempt_id, item_id\)/);
+});
+
+test('attempt creation stores server-validated consent evidence and defaults external processing off', () => {
+  assert.match(sql, /p_consent_version text/);
+  assert.match(sql, /p_consented_at timestamptz/);
+  assert.match(sql, /consent_version, consented_at, status/);
+  assert.match(sql, /'externalwritingprocessingconsent', false/);
 });

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { DIAGNOSTIC_ENGINE_VERSION } from '../src/lib/diagnostic/delivery.ts';
+import { DIAGNOSTIC_CONSENT_VERSION, DIAGNOSTIC_ENGINE_VERSION } from '../src/lib/diagnostic/delivery.ts';
 import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from '../src/server/diagnostic/start-core.ts';
 
@@ -45,7 +45,7 @@ test('creates and persists a two-hour locator without exposing private bank fiel
   let persisted;
   let id = 0;
   const delivery = await prepareEnglishDiagnosticAttempt('user-1', {
-    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 'x'.repeat(32),
+    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', consentVersion: DIAGNOSTIC_CONSENT_VERSION, selectionSecret: 'x'.repeat(32),
     now: () => new Date('2026-09-24T12:00:00.000Z'), newId: () => `00000000-0000-4000-8000-${String(++id).padStart(12, '0')}`,
     persist: async input => { persisted = input; },
   });
@@ -53,6 +53,8 @@ test('creates and persists a two-hour locator without exposing private bank fiel
   assert.equal(delivery.attemptVersion, 1);
   assert.equal(delivery.expiresAt, '2026-09-24T14:00:00.000Z');
   assert.equal(persisted.engineVersion, DIAGNOSTIC_ENGINE_VERSION);
+  assert.equal(persisted.consentVersion, DIAGNOSTIC_CONSENT_VERSION);
+  assert.equal(persisted.consentedAt, '2026-09-24T12:00:00.000Z');
   assert.match(persisted.selectionSeedHash, /^[a-f0-9]{64}$/);
   const serialized = JSON.stringify(delivery);
   assert.equal(serialized.includes('private rationale'), false);
@@ -64,7 +66,7 @@ test('same attempt identity produces the same form but a different identity chan
   async function create(attemptId) {
     let call = 0;
     return prepareEnglishDiagnosticAttempt('user-1', {
-      bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
+      bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', consentVersion: DIAGNOSTIC_CONSENT_VERSION, selectionSecret: 's'.repeat(32),
       now: () => new Date('2026-09-24T12:00:00.000Z'),
       newId: () => call++ === 0 ? attemptId : '00000000-0000-4000-8000-999999999999',
       persist: async () => {},
@@ -79,7 +81,7 @@ test('same attempt identity produces the same form but a different identity chan
 
 test('fails closed for an incomplete bank or weak server secret', async () => {
   const base = {
-    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
+    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', consentVersion: DIAGNOSTIC_CONSENT_VERSION, selectionSecret: 's'.repeat(32),
     now: () => new Date('2026-09-24T12:00:00.000Z'), newId: () => crypto.randomUUID(), persist: async () => {},
   };
   await assert.rejects(
@@ -92,6 +94,10 @@ test('fails closed for an incomplete bank or weak server secret', async () => {
   );
   await assert.rejects(
     () => prepareEnglishDiagnosticAttempt('user-1', { ...base, selectionSecret: 'short' }),
+    error => error instanceof DiagnosticStartError && error.code === 'SERVER_CONFIGURATION_INVALID',
+  );
+  await assert.rejects(
+    () => prepareEnglishDiagnosticAttempt('user-1', { ...base, consentVersion: '' }),
     error => error instanceof DiagnosticStartError && error.code === 'SERVER_CONFIGURATION_INVALID',
   );
 });

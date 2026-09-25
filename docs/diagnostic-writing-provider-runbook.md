@@ -5,7 +5,9 @@ Estado: **implementado, probado y desconectado**.
 Este componente puede enviar una producción escrita a Gemini o Groq y convertir la respuesta
 en evidencia MCER sellada por el servidor. No existe todavía una ruta, tarea o evento que lo
 invoque en producción. Esa desconexión es deliberada: el consentimiento piloto vigente no
-cubre procesamiento por un tercero y el intento aún no guarda una autorización externa.
+cubre procesamiento por un tercero. El intento guarda versión y fecha del consentimiento
+general, y ya tiene columnas coherentes para una autorización externa separada, pero estas
+últimas nacen en `false`/`null` y todavía no existe una mutación que pueda activarlas.
 
 ## Qué reutiliza y qué no
 
@@ -32,9 +34,10 @@ El transporte hace cero solicitudes si falla cualquiera de estas condiciones:
 6. versión de consentimiento externo distinta del consentimiento piloto general;
 7. autorización positiva, fechada y versionada del intento, cargada por servidor.
 
-La futura integración no puede aceptar la autorización desde el cuerpo del navegador. Debe
-leerla de una columna inmutable asociada al intento. Hasta que exista esa persistencia, el
-adaptador debe permanecer sin caller. Quien no autorice o no tenga proveedor disponible ya
+La futura integración no puede aceptar la autorización desde el cuerpo del navegador. El
+cargador servidor-servidor ya exige owner, estado `scoring`, escritura `pending` y autorización
+externa completa en la fila del intento. Hasta que exista el flujo aprobado que capture esa
+autorización, el adaptador debe permanecer sin caller. Quien no autorice o no tenga proveedor ya
 conserva una ruta completa de revisión humana, incluida adjudicación independiente cuando el
 primer revisor solicita revisión.
 
@@ -56,7 +59,7 @@ Antes de conectar el adaptador se requiere:
 
 - aprobar proveedor, región, retención, uso para entrenamiento, subprocesadores y borrado;
 - aprobar el texto de consentimiento y su versión;
-- persistir consentimiento, fecha y versión de política en `diagnostic_attempts`;
+- aprobar e implementar la captura del consentimiento externo en las columnas ya preparadas;
 - añadir una mutación servidor-servidor idempotente que cargue texto y autorización desde DB;
 - probar 429, timeout, reintentos, doble ejecución y ausencia de texto en logs;
 - ejecutar una muestra ancla doblemente calificada antes de usar el resultado automatizado.

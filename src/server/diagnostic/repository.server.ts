@@ -9,6 +9,7 @@ import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
 import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
 import type { DiagnosticAutomatedWritingEvaluation, DiagnosticHumanWritingEvaluation } from './writing';
+import type { DiagnosticExternalWritingAuthorization } from './writing-provider';
 import type { DiagnosticResumeSnapshot } from './resume-core';
 import { diagnosticWritingResponseSha256, parseDiagnosticWritingEvaluation } from './writing';
 import type {
@@ -31,6 +32,59 @@ export interface DiagnosticWritingReviewQueueRow {
   automatedEvaluation: DiagnosticAutomatedWritingEvaluation | null;
   humanEvaluation: DiagnosticHumanWritingEvaluation | null;
   createdAt: string;
+}
+
+export interface DiagnosticPendingWritingAutomationContext {
+  attemptId: string;
+  userId: string;
+  promptId: string;
+  promptContentVersion: string;
+  responseText: string;
+  authorization: DiagnosticExternalWritingAuthorization;
+}
+
+/**
+ * Trusted source for a future provider caller. Authorization is loaded with the
+ * writing row and can never be supplied or overridden by a browser request.
+ */
+export async function loadDiagnosticPendingWritingForAutomation(input: {
+  attemptId: string;
+  userId: string;
+}): Promise<DiagnosticPendingWritingAutomationContext | null> {
+  const admin = createAdminClient();
+  const [
+    { data: attempt, error: attemptError },
+    { data: writing, error: writingError },
+  ] = await Promise.all([
+    admin.from('diagnostic_attempts')
+      .select('id,user_id,status,external_writing_processing_consent,external_writing_consent_version,external_writing_provider_policy_version,external_writing_consented_at')
+      .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+    admin.from('diagnostic_writing_evaluations')
+      .select('attempt_id,user_id,prompt_id,content_version,response_text,status,automated_evaluation')
+      .eq('attempt_id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+  ]);
+  if (attemptError || writingError) throw new Error('diagnostic_persistence_unavailable');
+  if (!attempt || !writing
+    || attempt.status !== 'scoring'
+    || writing.status !== 'pending'
+    || writing.automated_evaluation !== null
+    || attempt.external_writing_processing_consent !== true
+    || typeof attempt.external_writing_consent_version !== 'string'
+    || typeof attempt.external_writing_provider_policy_version !== 'string'
+    || typeof attempt.external_writing_consented_at !== 'string'
+    || Number.isNaN(Date.parse(attempt.external_writing_consented_at))
+    || typeof writing.response_text !== 'string') return null;
+  return {
+    attemptId: String(attempt.id), userId: String(attempt.user_id),
+    promptId: String(writing.prompt_id), promptContentVersion: String(writing.content_version),
+    responseText: writing.response_text,
+    authorization: {
+      externalProcessingConsent: true,
+      consentVersion: attempt.external_writing_consent_version,
+      providerPolicyVersion: attempt.external_writing_provider_policy_version,
+      consentedAt: attempt.external_writing_consented_at,
+    },
+  };
 }
 
 export async function loadDiagnosticWritingReviewQueue(limit = 100): Promise<readonly DiagnosticWritingReviewQueueRow[]> {
@@ -351,6 +405,8 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
     p_blueprint_version: input.blueprintVersion,
     p_bank_version: input.bankVersion,
     p_engine_version: input.engineVersion,
+    p_consent_version: input.consentVersion,
+    p_consented_at: input.consentedAt,
     p_selection_seed_hash: input.selectionSeedHash,
     p_expires_at: input.expiresAt,
     p_stage_id: input.stage.stageId,

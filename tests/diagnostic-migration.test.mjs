@@ -5,6 +5,7 @@ import test from 'node:test';
 const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925000447_diagnostic_attempts.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925013000_diagnostic_confirmation_status.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
@@ -41,4 +42,14 @@ test('completed attempts and writing evaluations require final evidence', () => 
 
 test('attempt state constraint permits the adaptive confirmation stage', () => {
   assert.match(sql, /'locator', 'precision', 'confirmation', 'writing'/);
+});
+
+test('attempts bind general consent while external writing processing defaults closed', () => {
+  assert.match(sql, /add column consent_version text/);
+  assert.match(sql, /add column consented_at timestamptz/);
+  assert.match(sql, /external_writing_processing_consent boolean not null default false/);
+  assert.match(sql, /diagnostic_external_writing_consent_evidence_check/);
+  assert.match(sql, /consent_version is not null[\s\S]+?char_length\(consent_version\)/);
+  assert.match(sql, /external_writing_processing_consent = false[\s\S]+?external_writing_consent_version is null/);
+  assert.match(sql, /external_writing_processing_consent = true[\s\S]+?external_writing_consent_version is not null[\s\S]+?external_writing_provider_policy_version is not null/);
 });

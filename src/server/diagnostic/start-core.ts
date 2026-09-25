@@ -31,6 +31,8 @@ export interface PersistDiagnosticAttemptInput {
   blueprintVersion: string;
   bankVersion: string;
   engineVersion: string;
+  consentVersion: string;
+  consentedAt: string;
   selectionSeedHash: string;
   expiresAt: string;
   stage: DiagnosticStageReceipt;
@@ -41,6 +43,7 @@ export interface PrepareDiagnosticAttemptDependencies {
   bank: readonly DiagnosticBankRecord[];
   writingBank: readonly DiagnosticWritingPromptRecord[];
   bankVersion: string;
+  consentVersion: string;
   selectionSecret: string;
   now: () => Date;
   newId: () => string;
@@ -56,6 +59,9 @@ export async function prepareEnglishDiagnosticAttempt(
   dependencies: PrepareDiagnosticAttemptDependencies,
 ): Promise<DiagnosticStageDelivery> {
   if (!userId) throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'authenticated user id is required');
+  if (!dependencies.consentVersion.trim() || dependencies.consentVersion.length > 100) {
+    throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic consent version is invalid');
+  }
   if (dependencies.selectionSecret.length < 32) {
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
   }
@@ -95,6 +101,8 @@ export async function prepareEnglishDiagnosticAttempt(
     blueprintVersion: ENGLISH_DIAGNOSTIC_BLUEPRINT.id,
     bankVersion: dependencies.bankVersion,
     engineVersion: DIAGNOSTIC_ENGINE_VERSION,
+    consentVersion: dependencies.consentVersion,
+    consentedAt: issuedAt,
     selectionSeedHash: createHash('sha256').update(seed).digest('hex'),
     expiresAt,
     stage,

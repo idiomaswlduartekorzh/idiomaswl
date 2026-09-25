@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 import { DIAGNOSTIC_CONSENT_VERSION } from '../src/lib/diagnostic/delivery.ts';
@@ -45,6 +46,7 @@ const authorization = {
   providerPolicyVersion: 'provider-dpa-2026-09-25',
   consentedAt: '2026-09-23T17:00:00.000Z',
 };
+const repositorySource = await readFile(new URL('../src/server/diagnostic/repository.server.ts', import.meta.url), 'utf8');
 
 function providerResponse(provider, output = rawOutput, status = 200) {
   return new Response(JSON.stringify(provider === 'groq'
@@ -95,6 +97,15 @@ test('no request leaves the server when either operational approval or attempt a
     env: readyEnv(), fetch, now: () => new Date('2026-09-25T18:00:00.000Z'),
   }), error => error instanceof DiagnosticWritingProviderError && error.code === 'PROCESSING_NOT_AUTHORIZED');
   assert.equal(fetchCount, 0);
+});
+
+test('future automation can only load external authorization from the owner-scoped database row', () => {
+  assert.match(repositorySource, /loadDiagnosticPendingWritingForAutomation/);
+  assert.match(repositorySource, /external_writing_processing_consent/);
+  assert.match(repositorySource, /\.eq\('id', input\.attemptId\)\.eq\('user_id', input\.userId\)/);
+  assert.match(repositorySource, /writing\.status !== 'pending'/);
+  assert.match(repositorySource, /writing\.automated_evaluation !== null/);
+  assert.doesNotMatch(repositorySource, /authorization:\s*input\./);
 });
 
 test('Groq transport sends the CEFR-native contract and server-seals provider evidence', async () => {

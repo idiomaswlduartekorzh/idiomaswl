@@ -70,6 +70,7 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       bankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
+      consentVersion: DIAGNOSTIC_CONSENT_VERSION,
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
       now: () => new Date(),
       newId: randomUUID,
