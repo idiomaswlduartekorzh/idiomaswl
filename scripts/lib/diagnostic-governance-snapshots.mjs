@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
   'docs/diagnostic-writing-provider-runbook.md',
   'src/lib/diagnostic/writing.ts',
+  'src/lib/diagnostic/types.ts',
   'src/lib/diagnostic/admin-review.ts',
   'src/server/diagnostic/writing.ts',
   'src/server/diagnostic/writing-automation.ts',
@@ -43,6 +44,7 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/server/diagnostic/finalize-core.ts',
   'src/server/diagnostic/measurement.ts',
   'src/server/diagnostic/repository.server.ts',
+  'src/lib/diagnostic/types.ts',
   'src/lib/diagnostic/result-language.ts',
   'src/app/api/admin/diagnostic/pilot-enrollments/route.ts',
   'src/app/api/admin/diagnostic/pilot-report/route.ts',

@@ -80,6 +80,10 @@ test('finalizes all five skills and persists one versioned result', async () => 
   assert.equal(result.resultProfile.overallStatus, 'provisional');
   assert.equal(result.resultProfile.validUntil, '2026-10-25T13:00:00.000Z');
   assert.equal(persisted.finalEvidence.writing.reviewStatus, 'human-reviewed');
+  assert.equal(persisted.finalEvidence.languageUse.length, 2);
+  assert.deepEqual(persisted.finalEvidence.languageUse.map(item => item.skill), ['grammar', 'vocabulary']);
+  assert.ok(persisted.finalEvidence.languageUse.every(item => item.decisions === 6 && item.attempted === 6));
+  assert.ok(persisted.finalEvidence.languageUse.every(item => item.languageUseIntegration.automaticLevelShift === false));
   assert.equal(persisted.resultProfile.attemptId, attempt.id);
 });
 
@@ -158,6 +162,7 @@ test('independently excluded off-task writing completes with writing and global 
   assert.equal(result.resultProfile.globalLevel, null);
   assert.equal(result.resultProfile.overallStatus, 'not-estimated');
   assert.equal(persisted.finalEvidence.writing.reviewStatus, 'excluded');
+  assert.deepEqual(persisted.finalEvidence.languageUse, []);
 });
 
 test('rejects unknown objective evidence and stale versions', async () => {

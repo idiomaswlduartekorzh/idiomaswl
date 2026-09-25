@@ -14,6 +14,7 @@ import {
 import audioCheck from '../../../../config/diagnostic/audio-check.json';
 import {
   diagnosticConfidenceLabel,
+  diagnosticLanguageUseIntegrationLabel,
   diagnosticProfileWarningLabel,
   diagnosticSkillStatusLabel,
 } from '@/lib/diagnostic/result-language';
@@ -402,7 +403,8 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
         : [];
       const confidence = diagnosticConfidenceLabel(skill.confidence);
       const status = diagnosticSkillStatusLabel(skill.status);
-      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{status} · {range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}{exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}</small></div>;
+      const languageUseIntegration = diagnosticLanguageUseIntegrationLabel(skill.languageUseIntegration);
+      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{status} · {range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}{exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}{languageUseIntegration ? ` · ${languageUseIntegration}` : ''}</small></div>;
     })}</div>
     {recommendations.length > 0 && <><p className={s.eyebrow}>Ruta recomendada</p><div className={s.profileGrid}>{recommendations.slice(0, 3).map(recommendation => {
       const skill = String(recommendation.skill ?? 'skill');
@@ -456,7 +458,8 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
           : [];
         const confidence = diagnosticConfidenceLabel(skill.confidence);
         const status = diagnosticSkillStatusLabel(skill.status);
-        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · ${status} · ${confidence}${exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}`);
+        const languageUseIntegration = diagnosticLanguageUseIntegrationLabel(skill.languageUseIntegration);
+        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · ${status} · ${confidence}${exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}${languageUseIntegration ? ` · ${languageUseIntegration}` : ''}`);
       }
       if (recommendations.length) {
         line('Prioridades y próximos pasos', 13);

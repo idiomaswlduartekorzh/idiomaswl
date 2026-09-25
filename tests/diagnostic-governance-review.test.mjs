@@ -159,7 +159,7 @@ test('executable compiler recomputes current snapshots and keeps every artifact 
   const root = fileURLToPath(new URL('..', import.meta.url));
   const current = diagnosticGovernanceSnapshots(root);
   assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria', 'delivery-policy']);
-  assert.equal(DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS.length, 37);
+  assert.equal(DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS.length, 38);
   assert.ok(Object.values(current).every(value => /^[a-f0-9]{64}$/u.test(value)));
   const compiler = readFileSync(new URL('../scripts/compile-diagnostic-governance-review.mjs', import.meta.url), 'utf8');
   assert.match(compiler, /assertPrivate\(inputRoot/);

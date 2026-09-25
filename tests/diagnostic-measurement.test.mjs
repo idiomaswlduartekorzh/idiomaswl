@@ -6,7 +6,9 @@ import {
   buildDiagnosticCompositeResult,
   ENGLISH_PILOT_CALIBRATION,
   estimateObjectiveSkillEvidence,
+  integrateWritingLanguageUseEvidence,
   validateDiagnosticCalibrationPolicy,
+  validateDiagnosticLanguageUseIntegrationPolicy,
 } from '../src/server/diagnostic/measurement.ts';
 
 function record(index, parameters = undefined) {
@@ -69,6 +71,95 @@ test('rejects unordered cuts and impossible item parameters', () => {
     'reading', records, records.map(item => ({ itemId: item.publicItem.id, outcome: 'correct' })),
     { ...ENGLISH_PILOT_CALIBRATION, status: 'validated' },
   ), /invalid item parameters/);
+});
+
+function finalWritingEvaluation(grammarLevel, vocabularyLevel, confidence = 0.8) {
+  return {
+    evaluator: 'human', reviewerId: 'reviewer-1', rubricVersion: 'mcer-writing-v2',
+    promptId: 'prompt-1', promptContentVersion: '1', responseSha256: 'a'.repeat(64),
+    responseQuality: { taskRelevance: 'on-task', authorship: 'no-concern', rationale: 'Sufficient fixture rationale for review.' },
+    decision: 'accept', evaluatedAt: '2026-09-25T12:00:00.000Z',
+    criteria: [
+      { criterion: 'task-achievement', level: 'B1', confidence, evidence: ['x'], rationale: 'fixture' },
+      { criterion: 'organization', level: 'B1', confidence, evidence: ['x'], rationale: 'fixture' },
+      { criterion: 'grammar-control', level: grammarLevel, confidence, evidence: ['x'], rationale: 'fixture' },
+      { criterion: 'vocabulary-control', level: vocabularyLevel, confidence, evidence: ['x'], rationale: 'fixture' },
+    ],
+  };
+}
+
+function languageUseObjective(skill, overrides = {}) {
+  return {
+    skill, decisions: 6, distinctStimuli: 6, attempted: 6, omitted: 0, observedAccuracy: 0.67,
+    status: 'calibrated', estimatedLevel: 'B1', plausibleRange: ['B1', 'B1'], confidence: 0.6,
+    theta: -0.2, standardError: 0.5, calibrationVersion: 'fixture-calibration-v1',
+    ...overrides,
+  };
+}
+
+test('reviewed writing corroborates language-use evidence without changing its level or counts', () => {
+  const objective = languageUseObjective('grammar');
+  const integrated = integrateWritingLanguageUseEvidence({
+    objective,
+    finalWritingEvaluation: finalWritingEvaluation('B1', 'B1'),
+  });
+  assert.equal(integrated.estimatedLevel, 'B1');
+  assert.equal(integrated.decisions, 6);
+  assert.equal(integrated.attempted, 6);
+  assert.equal(integrated.status, 'provisional');
+  assert.equal(integrated.confidence, 0.6);
+  assert.equal(integrated.languageUseIntegration.outcome, 'corroborated');
+  assert.equal(integrated.languageUseIntegration.automaticLevelShift, false);
+});
+
+test('adjacent and divergent writing evidence widen uncertainty but never shift the objective point estimate', () => {
+  const adjacent = integrateWritingLanguageUseEvidence({
+    objective: languageUseObjective('grammar'),
+    finalWritingEvaluation: finalWritingEvaluation('B2', 'B1'),
+  });
+  assert.equal(adjacent.estimatedLevel, 'B1');
+  assert.deepEqual(adjacent.plausibleRange, ['B1', 'B2']);
+  assert.equal(adjacent.confidence, 0.51);
+  assert.equal(adjacent.languageUseIntegration.outcome, 'adjacent');
+
+  const divergent = integrateWritingLanguageUseEvidence({
+    objective: languageUseObjective('vocabulary'),
+    finalWritingEvaluation: finalWritingEvaluation('B1', 'C1'),
+  });
+  assert.equal(divergent.estimatedLevel, 'B1');
+  assert.deepEqual(divergent.plausibleRange, ['B1', 'C1']);
+  assert.equal(divergent.confidence, 0.39);
+  assert.equal(divergent.languageUseIntegration.levelDifference, 2);
+  const skills = DIAGNOSTIC_SKILLS.map(skill => skill === 'vocabulary' ? divergent : ({
+    skill, decisions: 6, distinctStimuli: 3, status: 'provisional', estimatedLevel: 'B1',
+    plausibleRange: ['B1', 'B1'], confidence: 0.6,
+  }));
+  const result = buildDiagnosticCompositeResult({
+    attemptId: 'attempt-language-use', blueprintVersion: 'blueprint-1', bankVersion: 'bank-1', skills,
+    generatedAt: '2026-09-24T12:00:00.000Z', validUntil: '2027-03-23T12:00:00.000Z',
+  });
+  assert.ok(result.warnings.includes('VOCABULARY_WRITING_EVIDENCE_DIVERGES'));
+});
+
+test('one writing sample cannot rescue missing objective language-use evidence', () => {
+  const integrated = integrateWritingLanguageUseEvidence({
+    objective: languageUseObjective('grammar', {
+      decisions: 3, attempted: 3, status: 'not-estimated', estimatedLevel: undefined,
+      plausibleRange: undefined, confidence: undefined, theta: undefined, standardError: undefined,
+    }),
+    finalWritingEvaluation: finalWritingEvaluation('C2', 'C2'),
+  });
+  assert.equal(integrated.status, 'not-estimated');
+  assert.equal(integrated.estimatedLevel, undefined);
+  assert.equal(integrated.decisions, 3);
+  assert.equal(integrated.languageUseIntegration.outcome, 'objective-insufficient');
+});
+
+test('language-use integration rejects policies that imply weak materiality or inverted confidence penalties', () => {
+  assert.ok(validateDiagnosticLanguageUseIntegrationPolicy({
+    version: 'bad', status: 'pilot', materialDifferenceLevels: 1, confidenceCap: 0.65,
+    adjacentConfidenceMultiplier: 0.7, divergentConfidenceMultiplier: 0.8,
+  }).length >= 2);
 });
 
 test('global result is withheld until all five skills have evidence', () => {

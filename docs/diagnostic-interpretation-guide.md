@@ -30,6 +30,26 @@ Una confianza más alta no vuelve “mejor” el nivel: solo indica una estimaci
 con mayor confianza no supera a un B1 con menor confianza. Para decisiones de estudio se mira
 primero el rango, luego el estado y finalmente la confianza.
 
+## Gramática y vocabulario: dos fuentes, una lectura prudente
+
+Gramática y vocabulario conservan como nivel central la evidencia de respuestas objetivas. La
+revisión humana de escritura aporta una segunda observación productiva mediante los criterios
+`grammar-control` y `vocabulary-control`, pero no se suma como si fuera otro bloque de preguntas.
+Una sola muestra escrita nunca crea una estimación si falta el mínimo objetivo ni cambia
+automáticamente el nivel central.
+
+- Si ambas fuentes coinciden, el resultado queda marcado como corroborado sin aumentar la
+  confianza más allá de su límite provisional.
+- Si difieren un nivel, se conserva el nivel objetivo, se amplía el rango para incluir la
+  escritura y se reduce la confianza.
+- Si difieren dos o más niveles, se aplica la misma regla conservadora y aparece una advertencia
+  de discrepancia material para interpretación separada o revisión de Medición.
+
+El detalle publicado identifica criterio, nivel y confianza de la evidencia productiva, versión
+de rúbrica, resultado de integración y la fuente objetiva agregada. Nunca incluye fragmentos del
+texto, respuesta del estudiante, identidad del revisor ni razonamiento interno. Esta integración
+es provisional hasta que el piloto valide por separado su comportamiento y umbrales.
+
 ## Protocolo de conversación del tutor
 
 1. Confirmar que el intento y el PDF corresponden a la misma fecha y que el resultado sigue
@@ -40,9 +60,11 @@ primero el rango, luego el estado y finalmente la confianza.
    A2–B1”, no “eres exactamente B1”.
 4. Si el perfil difiere por dos o más niveles, tratar cada habilidad por separado y evitar una
    etiqueta única. Seguir las prioridades que muestra el resultado.
-5. Acordar una acción observable por habilidad prioritaria y usar los enlaces de práctica/curso
+5. En gramática y vocabulario, leer la nota de integración. Una discrepancia con escritura no se
+   resuelve promediando niveles ni eligiendo la fuente más alta.
+6. Acordar una acción observable por habilidad prioritaria y usar los enlaces de práctica/curso
    incluidos. No prescribir una ruta que contradiga la evidencia mostrada.
-6. Registrar dudas o incidencias operativas sin copiar respuestas, texto escrito, IDs de ítem ni
+7. Registrar dudas o incidencias operativas sin copiar respuestas, texto escrito, IDs de ítem ni
    audio reservado en sistemas no aprobados.
 
 ## Mensajes que sí puede recibir el estudiante

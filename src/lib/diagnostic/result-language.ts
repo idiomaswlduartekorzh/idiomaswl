@@ -3,6 +3,10 @@ const PROFILE_WARNING_LABELS: Readonly<Record<string, string>> = {
     'No se publica un nivel global porque al menos una habilidad no tiene evidencia suficiente.',
   UNEVEN_SKILL_PROFILE:
     'El perfil es desigual: las habilidades difieren por dos o más niveles y deben interpretarse por separado.',
+  GRAMMAR_WRITING_EVIDENCE_DIVERGES:
+    'El uso gramatical observado en la escritura difiere materialmente de las respuestas objetivas; se conserva el nivel objetivo y se amplía la incertidumbre.',
+  VOCABULARY_WRITING_EVIDENCE_DIVERGES:
+    'El vocabulario observado en la escritura difiere materialmente de las respuestas objetivas; se conserva el nivel objetivo y se amplía la incertidumbre.',
 };
 
 const SKILL_STATUS_LABELS: Readonly<Record<string, string>> = {
@@ -26,4 +30,22 @@ export function diagnosticConfidenceLabel(value: unknown): string {
   return typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1
     ? `confianza técnica ${Math.round(value * 100)}%`
     : 'confianza técnica sin estimar';
+}
+
+export function diagnosticLanguageUseIntegrationLabel(value: unknown): string | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const outcome = (value as Record<string, unknown>).outcome;
+  if (outcome === 'objective-insufficient') {
+    return 'la escritura aporta contexto, pero no sustituye la evidencia objetiva faltante';
+  }
+  if (outcome === 'corroborated') {
+    return 'evidencia objetiva corroborada por el uso en escritura; sin cambio automático de nivel';
+  }
+  if (outcome === 'adjacent') {
+    return 'evidencia objetiva y uso en escritura próximos; rango ampliado sin cambio automático de nivel';
+  }
+  if (outcome === 'divergent') {
+    return 'discrepancia material entre evidencia objetiva y escritura; rango ampliado sin cambio automático de nivel';
+  }
+  return null;
 }

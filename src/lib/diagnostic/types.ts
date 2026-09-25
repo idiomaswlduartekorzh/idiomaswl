@@ -77,6 +77,28 @@ export interface DiagnosticSkillEvidence {
   estimatedLevel?: CefrLevel;
   plausibleRange?: readonly [CefrLevel, CefrLevel];
   confidence?: number;
+  languageUseIntegration?: DiagnosticLanguageUseIntegration;
+}
+
+export interface DiagnosticLanguageUseIntegration {
+  policyVersion: string;
+  outcome: 'objective-insufficient' | 'corroborated' | 'adjacent' | 'divergent';
+  objective: {
+    status: DiagnosticSkillEvidence['status'];
+    decisions: number;
+    attempted: number;
+    estimatedLevel?: CefrLevel;
+    plausibleRange?: readonly [CefrLevel, CefrLevel];
+    confidence?: number;
+  };
+  productiveWriting: {
+    criterion: 'grammar-control' | 'vocabulary-control';
+    level: CefrLevel;
+    confidence: number;
+    rubricVersion: string;
+  };
+  levelDifference?: number;
+  automaticLevelShift: false;
 }
 
 export interface DiagnosticResultProfile {

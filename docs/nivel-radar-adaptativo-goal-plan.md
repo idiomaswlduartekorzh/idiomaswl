@@ -104,7 +104,12 @@ Actualizado el 25 de septiembre de 2026:
   autoría; cualquier duda pasa a adjudicación independiente. Si ambas revisiones excluyen una
   muestra fuera de tema o no verificable, el intento sí termina: escritura y nivel global quedan
   explícitamente `no estimados`, con la causa visible, en vez de fabricar puntuación o dejar al
-  estudiante atrapado en procesamiento.
+  estudiante atrapado en procesamiento. Gramática y vocabulario ya integran además sus criterios
+  productivos de la escritura aceptada con una política provisional versionada: la evidencia
+  objetiva conserva el nivel central y sus conteos; coincidencia solo corrobora, una diferencia
+  amplía el rango y reduce confianza, y una diferencia de dos o más niveles genera advertencia.
+  La escritura nunca rescata evidencia objetiva insuficiente ni se cuenta como otro bloque de
+  respuestas. Falta validar empíricamente esta política y sus umbrales durante el piloto.
 - **Fase 4 — entrega privada de escucha iniciada:** el endpoint de medios autentica al usuario,
   comprueba que el audio pertenece a su etapa activa y no expirada, descarga desde un bucket
   privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3

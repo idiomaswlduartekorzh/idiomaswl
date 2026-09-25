@@ -6,6 +6,7 @@ import {
   buildDiagnosticCompositeResult,
   ENGLISH_PILOT_CALIBRATION,
   estimateObjectiveSkillEvidence,
+  integrateWritingLanguageUseEvidence,
   type DiagnosticObjectiveObservation,
 } from './measurement.ts';
 import type { DiagnosticBankRecord } from './types.ts';
@@ -33,6 +34,7 @@ export interface PersistDiagnosticFinalizationInput {
   human: DiagnosticHumanWritingEvaluation;
   finalEvidence: {
     writing: ReturnType<typeof consolidateWritingEvidence>;
+    languageUse: readonly ReturnType<typeof integrateWritingLanguageUseEvidence>[];
     adjudicatedEvaluation: DiagnosticHumanWritingEvaluation | null;
   };
   resultProfile: ReturnType<typeof buildDiagnosticCompositeResult>;
@@ -97,12 +99,26 @@ export async function finalizeEnglishDiagnostic(input: {
     input.observations.filter(observation => bankById.get(observation.itemId)?.publicItem.skill === skill),
     ENGLISH_PILOT_CALIBRATION,
   ));
+  const finalWritingEvaluation = input.adjudicated ?? input.human;
+  const integratedObjectiveEvidence = writing.reviewStatus === 'human-reviewed'
+    ? objectiveEvidence.map(evidence => evidence.skill === 'grammar' || evidence.skill === 'vocabulary'
+      ? integrateWritingLanguageUseEvidence({
+        objective: { ...evidence, skill: evidence.skill },
+        finalWritingEvaluation,
+      })
+      : evidence)
+    : objectiveEvidence;
+  const languageUse = integratedObjectiveEvidence.filter(
+    (evidence): evidence is ReturnType<typeof integrateWritingLanguageUseEvidence> =>
+      (evidence.skill === 'grammar' || evidence.skill === 'vocabulary')
+      && evidence.languageUseIntegration !== undefined,
+  );
   const generatedAt = dependencies.now();
   const resultProfile = buildDiagnosticCompositeResult({
     attemptId: input.attempt.id,
     blueprintVersion: input.attempt.blueprintVersion,
     bankVersion: input.attempt.bankVersion,
-    skills: [...objectiveEvidence, writing],
+    skills: [...integratedObjectiveEvidence, writing],
     generatedAt: generatedAt.toISOString(),
     validUntil: new Date(generatedAt.getTime() + input.attempt.resultValidityDays * 24 * 60 * 60 * 1_000).toISOString(),
   });
@@ -110,7 +126,7 @@ export async function finalizeEnglishDiagnostic(input: {
     attempt: input.attempt,
     automated: input.automated ?? null,
     human: input.human,
-    finalEvidence: { writing, adjudicatedEvaluation: input.adjudicated ?? null },
+    finalEvidence: { writing, languageUse, adjudicatedEvaluation: input.adjudicated ?? null },
     resultProfile,
   });
   return { ...persisted, resultProfile };
