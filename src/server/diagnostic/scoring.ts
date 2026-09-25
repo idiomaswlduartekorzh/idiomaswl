@@ -6,6 +6,56 @@ import type { DiagnosticBankRecord, DiagnosticScoringKey } from './types';
 
 export type DiagnosticObjectiveOutcome = 'correct' | 'incorrect' | 'omitted';
 
+function wordCount(value: string): number {
+  const trimmed = value.trim();
+  return trimmed ? trimmed.split(/\s+/u).length : 0;
+}
+
+export function validateDiagnosticResponseForRecord(input: {
+  record: DiagnosticBankRecord;
+  response: DiagnosticSubmittedResponse;
+  responseMs: number | null;
+  audioPlayCount: number | null;
+}): void {
+  const contract = input.record.publicItem.response;
+  const response = input.response;
+  if (contract.kind !== response.kind) throw new Error(`${input.record.publicItem.id}: response kind mismatch`);
+  if (!Number.isInteger(input.responseMs) && input.responseMs !== null) {
+    throw new Error(`${input.record.publicItem.id}: responseMs must be an integer or null`);
+  }
+  if (input.responseMs !== null && (input.responseMs < 0 || input.responseMs > 3_600_000)) {
+    throw new Error(`${input.record.publicItem.id}: responseMs is outside the accepted range`);
+  }
+  if (response.kind === 'single-choice' && contract.kind === 'single-choice'
+    && response.optionId !== null && !contract.optionIds.includes(response.optionId)) {
+    throw new Error(`${input.record.publicItem.id}: unknown option`);
+  }
+  if (response.kind === 'multiple-choice' && contract.kind === 'multiple-choice') {
+    if (new Set(response.optionIds).size !== response.optionIds.length) throw new Error(`${input.record.publicItem.id}: duplicate option`);
+    if (response.optionIds.some(optionId => !contract.optionIds.includes(optionId))) {
+      throw new Error(`${input.record.publicItem.id}: unknown option`);
+    }
+    if (response.optionIds.length !== 0 && response.optionIds.length !== contract.selectCount) {
+      throw new Error(`${input.record.publicItem.id}: unexpected selection count`);
+    }
+  }
+  if (response.kind === 'short-text' && contract.kind === 'short-text'
+    && wordCount(response.value) > contract.maxWords) {
+    throw new Error(`${input.record.publicItem.id}: short response exceeds its word limit`);
+  }
+  if (!Number.isInteger(input.audioPlayCount) && input.audioPlayCount !== null) {
+    throw new Error(`${input.record.publicItem.id}: audioPlayCount must be an integer or null`);
+  }
+  if (input.record.publicItem.stimulus.kind === 'audio') {
+    if (input.audioPlayCount === null || input.audioPlayCount < 0
+      || input.audioPlayCount > input.record.publicItem.stimulus.maxPlays) {
+      throw new Error(`${input.record.publicItem.id}: audio play count is outside the served limit`);
+    }
+  } else if (input.audioPlayCount !== null && input.audioPlayCount !== 0) {
+    throw new Error(`${input.record.publicItem.id}: non-audio response reported audio playback`);
+  }
+}
+
 function clonePublicItem(item: DiagnosticPublicItem): DiagnosticPublicItem {
   return {
     ...item,
@@ -54,4 +104,3 @@ export function scoreDiagnosticResponse(
   }
   throw new Error('unsupported diagnostic response');
 }
-

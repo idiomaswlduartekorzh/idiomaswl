@@ -352,6 +352,8 @@ finalización, comportamiento de ítems, escritura y referencia independiente, e
 - facilidad dentro del rango aprobado y cada distractor funcionando con muestra suficiente;
 - muestra mínima basada en respuestas intentadas, con omisiones fuera del denominador de
   calibración, y correlación ítem-total que excluye preguntas del mismo estímulo;
+- re-puntuación de cada respuesta persistida contra la clave y versión privadas antes de aceptar
+  el dataset del piloto;
 - fiabilidad adaptativa por lectura, escucha, gramática y vocabulario;
 - consistencia de la decisión de nivel y estabilidad por las cinco habilidades;
 - dependencia local residual en todos los testlets de lectura y escucha, con muestra, umbral y

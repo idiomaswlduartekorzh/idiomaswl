@@ -9,7 +9,11 @@ import type {
   DiagnosticStageReceipt,
   DiagnosticSubmittedResponse,
 } from '../../lib/diagnostic/types.ts';
-import { scoreDiagnosticResponse, type DiagnosticObjectiveOutcome } from './scoring.ts';
+import {
+  scoreDiagnosticResponse,
+  validateDiagnosticResponseForRecord,
+  type DiagnosticObjectiveOutcome,
+} from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
 export interface DiagnosticScoredSubmission extends DiagnosticItemSubmission {
@@ -38,48 +42,6 @@ const STATUS_TRANSITIONS: Readonly<Record<DiagnosticAttemptStatus, readonly Diag
   abandoned: [],
 };
 
-function wordCount(value: string): number {
-  const trimmed = value.trim();
-  return trimmed ? trimmed.split(/\s+/u).length : 0;
-}
-
-function validateResponse(record: DiagnosticBankRecord, submission: DiagnosticItemSubmission): void {
-  const contract = record.publicItem.response;
-  const response = submission.response;
-  if (contract.kind !== response.kind) throw new Error(`${record.publicItem.id}: response kind mismatch`);
-  if (!Number.isInteger(submission.responseMs) && submission.responseMs !== null) {
-    throw new Error(`${record.publicItem.id}: responseMs must be an integer or null`);
-  }
-  if (submission.responseMs !== null && (submission.responseMs < 0 || submission.responseMs > 3_600_000)) {
-    throw new Error(`${record.publicItem.id}: responseMs is outside the accepted range`);
-  }
-
-  if (response.kind === 'single-choice' && contract.kind === 'single-choice'
-    && response.optionId !== null && !contract.optionIds.includes(response.optionId)) {
-    throw new Error(`${record.publicItem.id}: unknown option`);
-  }
-  if (response.kind === 'multiple-choice' && contract.kind === 'multiple-choice') {
-    if (new Set(response.optionIds).size !== response.optionIds.length) throw new Error(`${record.publicItem.id}: duplicate option`);
-    if (response.optionIds.some(optionId => !contract.optionIds.includes(optionId))) throw new Error(`${record.publicItem.id}: unknown option`);
-    if (response.optionIds.length !== 0 && response.optionIds.length !== contract.selectCount) {
-      throw new Error(`${record.publicItem.id}: unexpected selection count`);
-    }
-  }
-  if (response.kind === 'short-text' && contract.kind === 'short-text' && wordCount(response.value) > contract.maxWords) {
-    throw new Error(`${record.publicItem.id}: short response exceeds its word limit`);
-  }
-
-  const playCount = submission.audioPlayCount;
-  if (!Number.isInteger(playCount) && playCount !== null) throw new Error(`${record.publicItem.id}: audioPlayCount must be an integer or null`);
-  if (record.publicItem.stimulus.kind === 'audio') {
-    if (playCount === null || playCount < 0 || playCount > record.publicItem.stimulus.maxPlays) {
-      throw new Error(`${record.publicItem.id}: audio play count is outside the served limit`);
-    }
-  } else if (playCount !== null && playCount !== 0) {
-    throw new Error(`${record.publicItem.id}: non-audio response reported audio playback`);
-  }
-}
-
 export function scoreDiagnosticStage(
   stage: DiagnosticStageReceipt,
   bankRecords: readonly DiagnosticBankRecord[],
@@ -102,7 +64,12 @@ export function scoreDiagnosticStage(
     if (submission.contentVersion !== servedVersion || submission.contentVersion !== record.publicItem.contentVersion) {
       throw new Error(`${submission.itemId}: content version mismatch`);
     }
-    validateResponse(record, submission);
+    validateDiagnosticResponseForRecord({
+      record,
+      response: submission.response,
+      responseMs: submission.responseMs,
+      audioPlayCount: submission.audioPlayCount,
+    });
     return {
       ...submission,
       skill: record.publicItem.skill,

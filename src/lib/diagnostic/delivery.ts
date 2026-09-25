@@ -60,7 +60,7 @@ function boundedString(value: unknown, maximum: number): value is string {
   return typeof value === 'string' && value.length > 0 && value.length <= maximum;
 }
 
-function parseSubmittedResponse(value: unknown): DiagnosticSubmittedResponse | null {
+export function parseDiagnosticSubmittedResponse(value: unknown): DiagnosticSubmittedResponse | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
   const candidate = value as Record<string, unknown>;
   if (candidate.kind === 'single-choice') {
@@ -105,7 +105,7 @@ export function parseDiagnosticObjectiveStageSubmitRequest(
       || (item.audioPlayCount !== null && (!Number.isInteger(item.audioPlayCount) || Number(item.audioPlayCount) < 0 || Number(item.audioPlayCount) > 20))) {
       return null;
     }
-    const response = parseSubmittedResponse(item.response);
+    const response = parseDiagnosticSubmittedResponse(item.response);
     if (!response) return null;
     itemIds.add(item.itemId);
     responses.push({

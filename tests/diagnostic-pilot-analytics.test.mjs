@@ -420,6 +420,19 @@ test('item calibration sample counts attempted responses rather than served omis
   assert.equal(report.gates.itemSamples, false);
 });
 
+test('pilot analytics re-scores persisted responses instead of trusting stored outcomes', () => {
+  assert.throws(() => buildReport({
+    responses: responses.map((row, index) => index === 0
+      ? { ...row, outcome: row.outcome === 'correct' ? 'incorrect' : 'correct' }
+      : row),
+  }), /outcome does not match server scoring/);
+  assert.throws(() => buildReport({
+    responses: responses.map((row, index) => index === 0
+      ? { ...row, submittedResponse: { kind: 'single-choice', optionId: 'forged-option' } }
+      : row),
+  }), /invalid stored response/);
+});
+
 test('pilot bank fingerprint changes with content, selection state or scoring parameters', () => {
   const original = diagnosticPilotBankSha256({ bank, writingBank });
   const changedObjective = bank.map((record, index) => index === 0 ? {

@@ -73,6 +73,9 @@ export const DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS = [
   'src/server/diagnostic/pilot-analytics.ts',
   'scripts/lib/diagnostic-pilot-measurement-review.mjs',
   'scripts/lib/diagnostic-pilot-evidence.mjs',
+  'src/lib/diagnostic/delivery.ts',
+  'src/server/diagnostic/scoring.ts',
+  'src/server/diagnostic/attempt.ts',
 ];
 
 function canonical(value) {

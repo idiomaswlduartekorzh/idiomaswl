@@ -294,7 +294,10 @@ Actualizado el 25 de septiembre de 2026:
   universal ni evidencia ya obtenida. La muestra mínima por ítem cuenta solo respuestas
   intentadas: servir una pregunta u omitirla no aporta observación de dificultad. Además, la
   correlación ítem-total corregida excluye las preguntas hermanas del mismo texto o audio para
-  que la dependencia del testlet no infle artificialmente la discriminación.
+  que la dependencia del testlet no infle artificialmente la discriminación. Antes de agregar
+  el piloto, el servidor vuelve a validar el contrato de cada respuesta y recalcula `correct`,
+  `incorrect` u `omitted` desde la clave y versión privadas; una fila manipulada o inconsistente
+  invalida el dataset en vez de contaminar el informe.
 - **Fase 8 — interpretación responsable preparada:** pantalla y PDF traducen los estados y
   advertencias internas a lenguaje comprensible, distinguen estimación provisional, calibrada y
   no disponible, y aclaran que la confianza técnica no es porcentaje de dominio ni certeza del

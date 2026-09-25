@@ -306,7 +306,7 @@ test('writing governance snapshot binds rubric, review UI, server enforcement an
 
 test('pilot criteria governance binds recruitment assumptions, calculation and report', () => {
   const root = fileURLToPath(new URL('..', import.meta.url));
-  assert.equal(DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS.length, 9);
+  assert.equal(DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS.length, 12);
   const temporaryRoot = mkdtempSync(join(tmpdir(), 'diagnostic-pilot-governance-'));
   try {
     for (const path of DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS) {
