@@ -51,6 +51,11 @@ export interface DiagnosticPilotMeasurementEvidence {
   criteriaVersion: string;
   bankSnapshotSha256: string | null;
   generatedAt: string | null;
+  provenance: {
+    aggregateDatasetSha256: string | null;
+    analysisCodeSha256: string | null;
+    analysisRunId: string | null;
+  };
   adaptiveReliability: readonly {
     skill: DiagnosticObjectiveSkill;
     sampleSize: number;
@@ -83,12 +88,21 @@ export interface DiagnosticPilotMeasurementEvidence {
     reviewedBoundaries: readonly string[];
     decision: 'approved' | 'changes-requested';
   } | null;
+  approval: {
+    manifestSha256: string;
+    candidateSha256: string;
+    approvedAt: string;
+    approvedBy: readonly string[];
+    appliedAt: string;
+    appliedBy: string;
+  } | null;
 }
 
 const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
 const ROUTES = ['low-a1-a2', 'mid-b1-b2', 'high-c1-c2'] as const;
 const CEFR_BOUNDARIES = ['A1/A2', 'A2/B1', 'B1/B2', 'B2/C1', 'C1/C2'] as const;
 const SHA256 = /^[a-f0-9]{64}$/u;
+const REVIEW_REFERENCE = /^(academic-lead|measurement-lead|privacy-lead):[A-Za-z0-9][A-Za-z0-9._@+-]{2,159}$/u;
 
 export interface DiagnosticPilotAttemptRow {
   attemptId: string;
@@ -329,13 +343,39 @@ function measurementEvidenceSummary(input: {
   objectiveItemCount: number;
 }) {
   const evidence = input.evidence;
+  const provenanceValid = SHA256.test(evidence?.provenance?.aggregateDatasetSha256 ?? '')
+    && SHA256.test(evidence?.provenance?.analysisCodeSha256 ?? '')
+    && typeof evidence?.provenance?.analysisRunId === 'string'
+    && /^[A-Za-z0-9][A-Za-z0-9._:-]{2,159}$/u.test(evidence.provenance.analysisRunId);
+  const approval = evidence?.approval;
+  const approvalValid = Boolean(approval
+    && SHA256.test(approval.manifestSha256)
+    && SHA256.test(approval.candidateSha256)
+    && typeof approval.approvedAt === 'string'
+    && !Number.isNaN(Date.parse(approval.approvedAt))
+    && new Date(Date.parse(approval.approvedAt)).toISOString() === approval.approvedAt
+    && typeof approval.appliedAt === 'string'
+    && !Number.isNaN(Date.parse(approval.appliedAt))
+    && new Date(Date.parse(approval.appliedAt)).toISOString() === approval.appliedAt
+    && typeof approval.appliedBy === 'string'
+    && /^[A-Za-z0-9][A-Za-z0-9._@+-]{2,159}$/u.test(approval.appliedBy)
+    && Array.isArray(approval.approvedBy)
+    && approval.approvedBy.length === 3
+    && new Set(approval.approvedBy).size === 3
+    && approval.approvedBy.every(reference => REVIEW_REFERENCE.test(reference))
+    && new Set(approval.approvedBy.map(reference => reference.slice(reference.indexOf(':') + 1))).size === 3
+    && ['academic-lead', 'measurement-lead', 'privacy-lead'].every(role =>
+      approval.approvedBy.some(reference => reference.startsWith(`${role}:`)))
+    && Date.parse(approval.appliedAt) >= Date.parse(approval.approvedAt));
   const bindingValid = evidence?.evidenceVersion === 'diagnostic-pilot-measurement-evidence-v1'
     && evidence.status === 'complete'
     && evidence.criteriaVersion === input.criteria.criteriaVersion
     && evidence.bankSnapshotSha256 === input.bankSnapshotSha256
     && typeof evidence.generatedAt === 'string'
     && !Number.isNaN(Date.parse(evidence.generatedAt))
-    && new Date(Date.parse(evidence.generatedAt)).toISOString() === evidence.generatedAt;
+    && new Date(Date.parse(evidence.generatedAt)).toISOString() === evidence.generatedAt
+    && provenanceValid
+    && approvalValid;
 
   const reliabilityRows = Array.isArray(evidence?.adaptiveReliability) ? evidence.adaptiveReliability : [];
   const reliabilityBySkill = OBJECTIVE_SKILLS.map(skill => {
@@ -428,6 +468,8 @@ function measurementEvidenceSummary(input: {
     evidenceVersion: typeof evidence?.evidenceVersion === 'string' ? evidence.evidenceVersion : null,
     status: typeof evidence?.status === 'string' ? evidence.status : null,
     generatedAt: bindingValid ? evidence.generatedAt : null,
+    provenanceBound: provenanceValid,
+    approvalBound: approvalValid,
     adaptiveReliability: { bySkill: reliabilityBySkill },
     classificationConsistency: {
       sampleSize: consistencyValid ? consistency!.sampleSize : null,

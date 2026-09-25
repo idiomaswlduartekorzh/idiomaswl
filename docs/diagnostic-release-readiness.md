@@ -280,6 +280,32 @@ permanecen en `false`. Los umbrales del archivo de criterios son provisionales h
 académica y de medición: las fuentes profesionales justifican las dimensiones de evidencia, no
 un número universal para todos los usos.
 
+Ese contrato tampoco se completa editándolo libremente. El workflow privado prepara primero una
+plantilla, valida que solo contenga agregados y después separa tres responsabilidades:
+
+```bash
+npm run scaffold:diagnostic-pilot-measurement
+# completar .diagnostic-private/pilot/measurement/candidate.json con el análisis real
+npm run scaffold:diagnostic-pilot-measurement -- --prepare-reviews
+# completar por separado academic-lead.json, measurement-lead.json y privacy-lead.json
+npm run compile:diagnostic-pilot-measurement
+npm run record:diagnostic-pilot-measurement
+```
+
+El candidato debe declarar SHA-256 del dataset agregado y del código de análisis, un identificador
+de ejecución, la versión exacta de criterios y el hash del banco. El validador usa una lista
+cerrada de campos: rechaza filas, identificadores o extensiones arbitrarias, muestras bajo el
+umbral, habilidades ausentes, cortes MCER incompletos o DIF sin referencia de base lícita. La
+revisión académica cubre constructo y standard setting; medición cubre fiabilidad, consistencia,
+estabilidad, DIF y suficiencia muestral; privacidad cubre base lícita, agregación, celdas mínimas
+y riesgo de reidentificación. Las tres identidades deben ser distintas.
+
+El compilador fija los tres recibos privados por hash. El registrador vuelve a validarlos y es
+dry run por defecto; solo escribe el agregado aprobado con checkout limpio, `--write`, operador
+estable y una confirmación ligada simultáneamente al manifiesto y al candidato. El endpoint del
+informe exige que esa aprobación y su procedencia sean válidas, pero expone únicamente que están
+ligadas, nunca identidades, nombres de grupos ni materiales privados.
+
 El informe del piloto no se descarga manualmente ni se enlaza solo por nombre. Sobre un checkout
 limpio, el capturador consulta primero la identidad administrativa `no-store` del despliegue y
 exige coincidencia exacta de huella de fuente, hash del banco, commit, modo `pilot` y proyecto

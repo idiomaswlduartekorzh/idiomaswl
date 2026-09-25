@@ -70,6 +70,10 @@ const measurementEvidence = {
   criteriaVersion: criteria.criteriaVersion,
   bankSnapshotSha256: diagnosticPilotBankSha256({ bank, writingBank }),
   generatedAt: '2026-09-25T13:00:00.000Z',
+  provenance: {
+    aggregateDatasetSha256: '1'.repeat(64), analysisCodeSha256: '2'.repeat(64),
+    analysisRunId: 'fixture-analysis-1',
+  },
   adaptiveReliability: ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => ({
     skill, sampleSize: 12, coefficient: 0.85, method: 'route-aware-resampling',
   })),
@@ -84,6 +88,12 @@ const measurementEvidence = {
   standardSetting: {
     method: 'bookmark', panelists: 3,
     reviewedBoundaries: ['A1/A2', 'A2/B1', 'B1/B2', 'B2/C1', 'C1/C2'], decision: 'approved',
+  },
+  approval: {
+    manifestSha256: '3'.repeat(64), candidateSha256: '4'.repeat(64),
+    approvedAt: '2026-09-25T13:30:00.000Z',
+    approvedBy: ['academic-lead:academic-reviewer', 'measurement-lead:measurement-reviewer', 'privacy-lead:privacy-reviewer'],
+    appliedAt: '2026-09-25T13:45:00.000Z', appliedBy: 'release-operator',
   },
 };
 
@@ -126,7 +136,9 @@ test('empty real-world evidence holds every publication-sensitive gate', () => {
     attempts: [], responses: [], writing: [], references: [], criteria: strictCriteria,
     measurementEvidence: {
       ...measurementEvidence, status: 'not-collected', bankSnapshotSha256: null, generatedAt: null,
-      adaptiveReliability: [], classificationConsistency: null, stabilityBySkill: [], fairness: null, standardSetting: null,
+      provenance: { aggregateDatasetSha256: null, analysisCodeSha256: null, analysisRunId: null },
+      adaptiveReliability: [], classificationConsistency: null, stabilityBySkill: [], fairness: null,
+      standardSetting: null, approval: null,
     },
   });
   assert.equal(report.decision, 'HOLD');
@@ -158,6 +170,20 @@ test('route, CEFR coverage and specialist measurement evidence fail closed indep
   assert.equal(staleMeasurement.gates.fairnessReview, false);
   assert.equal(staleMeasurement.gates.standardSettingReview, false);
   assert.deepEqual(staleMeasurement.warnings, ['MEASUREMENT_EVIDENCE_NOT_BOUND']);
+  const duplicateReviewer = buildReport({
+    measurementEvidence: {
+      ...measurementEvidence,
+      approval: {
+        ...measurementEvidence.approval,
+        approvedBy: [
+          'academic-lead:same-reviewer', 'measurement-lead:same-reviewer',
+          'privacy-lead:privacy-reviewer',
+        ],
+      },
+    },
+  });
+  assert.equal(duplicateReviewer.measurementEvidence.approvalBound, false);
+  assert.equal(duplicateReviewer.gates.fairnessReview, false);
 });
 
 test('item facility and every keyed distractor must function at the approved sample size', () => {

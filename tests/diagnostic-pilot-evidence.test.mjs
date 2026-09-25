@@ -31,7 +31,7 @@ const report = {
   },
   itemMetrics: [],
   measurementEvidence: {
-    bindingValid: true,
+    bindingValid: true, provenanceBound: true, approvalBound: true,
     adaptiveReliability: { bySkill: [{}, {}, {}, {}] },
     stability: { bySkill: [{}, {}, {}, {}, {}] },
   },

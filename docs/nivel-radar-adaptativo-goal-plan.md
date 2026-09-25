@@ -192,8 +192,10 @@ Actualizado el 25 de septiembre de 2026:
   artefacto agregado ligado por hash al banco y a los criterios que demuestre fiabilidad
   adaptativa por cada habilidad objetiva, consistencia de clasificación, estabilidad por las
   cinco habilidades, análisis DIF con base lícita y standard setting de los cinco cortes MCER.
-  El artefacto comprometido nace como `not-collected`; por tanto, esos cinco gates permanecen
-  cerrados hasta evidencia real. El informe no contiene UUID, grupos identificables, texto
+  El artefacto comprometido nace como `not-collected`; solo un candidato agregado con hashes de
+  dataset y código de análisis, aprobado por identidades independientes académica, de medición y
+  privacidad, puede registrarse mediante dry run y confirmación hash-bound. Por tanto, esos cinco
+  gates permanecen cerrados hasta evidencia real. El informe no contiene UUID, grupos identificables, texto
   escrito ni respuestas. Los valores numéricos son una propuesta que todavía debe aprobar
   liderazgo académico y de medición; no se presentan como umbrales universales prescritos por
   MCER ni por una asociación externa.
@@ -581,7 +583,10 @@ calidad y distractores, escritura, referencia independiente y cobertura MCER). L
 restantes solo pasan con evidencia de medición especializada y vigente: fiabilidad adaptativa,
 consistencia de clasificación, estabilidad, equidad/DIF y standard setting. El archivo
 `config/diagnostic/pilot-measurement-evidence.json` nace vacío y ligado a versión; una ausencia,
-un hash de banco distinto o una versión de criterios vieja fuerza todos esos gates a `false`.
+un hash de banco distinto, una versión de criterios vieja, procedencia sin hashes o una aprobación
+sin tres roles independientes fuerza todos esos gates a `false`. El workflow privado usa una
+lista cerrada de campos, revisiones específicas para academia, medición y privacidad, manifiesto
+con hashes y registrador dry-run antes de permitir que el agregado llegue a la configuración.
 
 La arquitectura sigue los principios —no umbrales numéricos universales— de los
 [Standards for Educational and Psychological Testing](https://www.testingstandards.net/), el

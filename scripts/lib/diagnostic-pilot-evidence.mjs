@@ -104,6 +104,8 @@ export function validateDiagnosticPilotCapture(input) {
     || typeof report.criteria?.version !== 'string'
     || !['provisional-pending-academic-approval', 'approved'].includes(report.criteria?.status)
     || report.measurementEvidence?.bindingValid !== true
+    || report.measurementEvidence?.provenanceBound !== true
+    || report.measurementEvidence?.approvalBound !== true
     || !Array.isArray(report.measurementEvidence?.adaptiveReliability?.bySkill)
     || report.measurementEvidence.adaptiveReliability.bySkill.length !== 4
     || !Array.isArray(report.measurementEvidence?.stability?.bySkill)

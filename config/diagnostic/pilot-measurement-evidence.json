@@ -4,9 +4,15 @@
   "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
   "bankSnapshotSha256": null,
   "generatedAt": null,
+  "provenance": {
+    "aggregateDatasetSha256": null,
+    "analysisCodeSha256": null,
+    "analysisRunId": null
+  },
   "adaptiveReliability": [],
   "classificationConsistency": null,
   "stabilityBySkill": [],
   "fairness": null,
-  "standardSetting": null
+  "standardSetting": null,
+  "approval": null
 }
