@@ -67,7 +67,7 @@ export default function GoethePracticePage() {
         <div><dt>Niveles</dt><dd>4</dd><dd className={styles.factNote}>A1 · A2 · B1 · B2</dd></div>
         <div><dt>Sets listos</dt><dd>20</dd><dd className={styles.factNote}>10 A1 + 10 A2</dd></div>
         <div><dt>Destrezas abiertas</dt><dd>7</dd><dd className={styles.factNote}>4 en A1 · 3 en A2</dd></div>
-        <div><dt>A2 completo</dt><dd>🔒</dd><dd className={styles.factNote}>Hören y examen bloqueados</dd></div>
+        <div><dt>Examen A2</dt><dd>🔒</dd><dd className={styles.factNote}>Hören y examen bloqueados</dd></div>
       </dl>
     </div></header>
 
