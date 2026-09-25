@@ -278,6 +278,13 @@ Actualizado el 25 de septiembre de 2026:
   estabilidad. Esta señal nunca recalibra ni retira contenido: congela el rollout y remite al
   control versionado con revisiones académica y de medición independientes. Los tres umbrales
   siguen siendo propuesta dentro de la política de entrega y requieren aprobación humana.
+- **Fase 8 — interpretación responsable preparada:** pantalla y PDF traducen los estados y
+  advertencias internas a lenguaje comprensible, distinguen estimación provisional, calibrada y
+  no disponible, y aclaran que la confianza técnica no es porcentaje de dominio ni certeza del
+  nivel. `docs/diagnostic-interpretation-guide.md` fija para tutores los usos permitidos, el orden
+  de lectura de las cinco habilidades, mensajes para perfiles desiguales o incompletos y los
+  criterios de escalamiento. Guía, vocabulario, UI y PDF quedan ligados a gobierno de entrega,
+  de modo que no pueden cambiarse silenciosamente después de la aprobación.
 - **Fase 8 — retiro preservando historia implementado:**
   `config/diagnostic/item-controls.json` separa la disponibilidad futura del contenido
   versionado. Un retiro exige versión exacta, motivo cerrado, referencia de decisión y revisiones

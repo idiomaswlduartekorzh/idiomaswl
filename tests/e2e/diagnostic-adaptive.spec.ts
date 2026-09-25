@@ -58,8 +58,10 @@ const writingDelivery = {
 const resultProfile = {
   globalLevel: 'B1',
   globalRange: ['A2', 'B1'],
+  overallStatus: 'provisional',
   skills: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map((skill, index) => ({
     skill,
+    status: 'provisional',
     estimatedLevel: index === 1 ? 'A2' : 'B1',
     plausibleRange: index === 1 ? ['A1', 'B1'] : ['A2', 'B2'],
     confidence: index === 1 ? 0.54 : 0.76,
@@ -194,7 +196,10 @@ test('móvil muestra resultado integral con rangos, cinco habilidades y sin desb
       await page.goto(DIAGNOSTIC_ROUTE);
       await expect(page.getByRole('heading', { name: 'Nivel global B1' })).toBeVisible();
       await expect(page.getByText('Rango plausible global: A2–B1.')).toBeVisible();
+      await expect(page.getByText('Estado de medición: estimación provisional.')).toBeVisible();
       await expect(page.getByText(/Advertencias del perfil/)).toContainText('incertidumbre alta');
+      await expect(page.getByText(/confianza técnica resume cuánta precisión/)).toBeVisible();
+      await expect(page.getByText(/confianza técnica 54%/)).toBeVisible();
       await expect(page.locator('[class*="profileCard"]')).toHaveCount(6);
       await expect(page.getByText(/provisionales hasta completar calibración/)).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth

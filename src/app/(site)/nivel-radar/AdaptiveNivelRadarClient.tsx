@@ -12,6 +12,11 @@ import {
   type DiagnosticSubmittedResponse,
 } from '@/lib/diagnostic-draft';
 import audioCheck from '../../../../config/diagnostic/audio-check.json';
+import {
+  diagnosticConfidenceLabel,
+  diagnosticProfileWarningLabel,
+  diagnosticSkillStatusLabel,
+} from '@/lib/diagnostic/result-language';
 import s from './page.module.css';
 
 const CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
@@ -376,7 +381,8 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
   const globalLevel = typeof safe.globalLevel === 'string' ? safe.globalLevel : null;
   const globalRange = Array.isArray(safe.globalRange) ? safe.globalRange.map(String) : [];
   const skills = Array.isArray(safe.skills) ? safe.skills.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>) : [];
-  const warnings = Array.isArray(safe.warnings) ? safe.warnings.map(String) : [];
+  const warnings = Array.isArray(safe.warnings) ? safe.warnings.map(diagnosticProfileWarningLabel) : [];
+  const overallStatus = diagnosticSkillStatusLabel(safe.overallStatus);
   const validUntil = typeof safe.validUntil === 'string' && Number.isFinite(Date.parse(safe.validUntil))
     ? new Date(safe.validUntil) : null;
   const recommendations = Array.isArray(safe.recommendations)
@@ -387,14 +393,16 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
     <div className={s.resultLevel}>{globalLevel ?? '—'}</div>
     <h1>{globalLevel ? <>Nivel global <span>{globalLevel}</span></> : 'Evidencia insuficiente para un nivel global'}</h1>
     <p className={s.lead}>{globalRange.length === 2 ? `Rango plausible global: ${globalRange[0]}–${globalRange[1]}.` : 'El resultado conserva las habilidades por separado para no esconder evidencia faltante.'}</p>
+    <p className={s.note}>Estado de medición: {overallStatus}.</p>
     <div className={s.profileGrid}>{skills.map(skill => {
       const name = String(skill.skill ?? 'skill');
       const range = Array.isArray(skill.plausibleRange) ? skill.plausibleRange.map(String) : [];
       const exclusionReasons = Array.isArray(skill.exclusionReasons)
         ? skill.exclusionReasons.map(String).map(reason => WRITING_EXCLUSION_LABELS[reason] ?? reason)
         : [];
-      const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
-      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}{exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}</small></div>;
+      const confidence = diagnosticConfidenceLabel(skill.confidence);
+      const status = diagnosticSkillStatusLabel(skill.status);
+      return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{status} · {range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}{exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}</small></div>;
     })}</div>
     {recommendations.length > 0 && <><p className={s.eyebrow}>Ruta recomendada</p><div className={s.profileGrid}>{recommendations.slice(0, 3).map(recommendation => {
       const skill = String(recommendation.skill ?? 'skill');
@@ -408,6 +416,7 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
       </div>;
     })}</div></>}
     {warnings.length > 0 && <p className={s.note}>Advertencias del perfil: {warnings.join(' · ')}</p>}
+    <p className={s.note}>La confianza técnica resume cuánta precisión tiene esta estimación con la evidencia disponible; no es un porcentaje de dominio del idioma ni la probabilidad de que el nivel sea “correcto”.</p>
     {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
     <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
@@ -445,8 +454,9 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
         const exclusionReasons = Array.isArray(skill.exclusionReasons)
           ? skill.exclusionReasons.map(String).map(reason => WRITING_EXCLUSION_LABELS[reason] ?? reason)
           : [];
-        const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
-        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · confianza ${confidence}${exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}`);
+        const confidence = diagnosticConfidenceLabel(skill.confidence);
+        const status = diagnosticSkillStatusLabel(skill.status);
+        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · ${status} · ${confidence}${exclusionReasons.length ? ` · ${exclusionReasons.join(' · ')}` : ''}`);
       }
       if (recommendations.length) {
         line('Prioridades y próximos pasos', 13);
@@ -455,6 +465,7 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
         }
       }
       if (warnings.length) line(`Advertencias: ${warnings.join(' · ')}`);
+      line('La confianza técnica expresa precisión de estimación; no es porcentaje de dominio ni probabilidad de acierto del nivel.', 9);
       line('Resultado provisional hasta completar calibración con muestra real. No es una certificación oficial.', 9);
       doc.save('nivel-radar-welearn.pdf');
     } finally {

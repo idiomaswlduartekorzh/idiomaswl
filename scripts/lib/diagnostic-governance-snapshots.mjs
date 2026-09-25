@@ -11,6 +11,7 @@ export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
   'src/server/diagnostic/writing-provider.ts',
   'src/server/diagnostic/finalize-core.ts',
   'src/server/diagnostic/repository.server.ts',
+  'src/lib/diagnostic/result-language.ts',
   'src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
   'src/app/(site)/dashboard/admin/nivel-radar/page.tsx',
   'src/app/(site)/dashboard/admin/nivel-radar/DiagnosticWritingReviewClient.tsx',
@@ -42,6 +43,7 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'src/server/diagnostic/finalize-core.ts',
   'src/server/diagnostic/measurement.ts',
   'src/server/diagnostic/repository.server.ts',
+  'src/lib/diagnostic/result-language.ts',
   'src/app/api/admin/diagnostic/pilot-enrollments/route.ts',
   'src/app/api/admin/diagnostic/pilot-report/route.ts',
   'src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
@@ -55,6 +57,7 @@ export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
   'scripts/check-diagnostic-production-rollout.mjs',
   'scripts/check-diagnostic-release-readiness.mjs',
   'scripts/lib/diagnostic-release-readiness.mjs',
+  'docs/diagnostic-interpretation-guide.md',
   'docs/diagnostic-release-operations-runbook.md',
 ];
 

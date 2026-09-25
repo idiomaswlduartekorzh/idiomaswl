@@ -159,7 +159,7 @@ test('executable compiler recomputes current snapshots and keeps every artifact 
   const root = fileURLToPath(new URL('..', import.meta.url));
   const current = diagnosticGovernanceSnapshots(root);
   assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria', 'delivery-policy']);
-  assert.equal(DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS.length, 35);
+  assert.equal(DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS.length, 37);
   assert.ok(Object.values(current).every(value => /^[a-f0-9]{64}$/u.test(value)));
   const compiler = readFileSync(new URL('../scripts/compile-diagnostic-governance-review.mjs', import.meta.url), 'utf8');
   assert.match(compiler, /assertPrivate\(inputRoot/);
@@ -270,6 +270,13 @@ test('delivery governance snapshot binds enforcement and UI, not only proposed n
     writeFileSync(controls, readFileSync(controls, 'utf8').replace("'psychometric-anomaly'", "'unreviewed-auto-retirement'"));
     assert.notEqual(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
     copyFileSync(join(root, 'src/server/diagnostic/bank/controls.ts'), controls);
+    assert.equal(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
+    const interpretationGuide = join(temporaryRoot, 'docs/diagnostic-interpretation-guide.md');
+    writeFileSync(interpretationGuide, readFileSync(interpretationGuide, 'utf8').replace(
+      'no porcentaje de dominio', 'porcentaje exacto de dominio',
+    ));
+    assert.notEqual(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
+    copyFileSync(join(root, 'docs/diagnostic-interpretation-guide.md'), interpretationGuide);
     assert.equal(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
     const migration = join(temporaryRoot, 'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql');
     writeFileSync(migration, readFileSync(migration, 'utf8').replace('between 1 and 730', 'between 2 and 730'));
