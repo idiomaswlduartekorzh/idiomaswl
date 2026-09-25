@@ -73,7 +73,12 @@ Actualizado el 24 de septiembre de 2026:
   hasta calibración real.
 - **Fase 5 — núcleo de escritura iniciado:** rúbrica de cuatro criterios A1–C2, validación de
   evidencia, comparación humano/modelo y adjudicación implementadas. Hay 24 consignas
-  reservadas —cuatro por nivel— en estado borrador, pendientes de aprobación lingüística.
+  reservadas —cuatro por nivel— en estado borrador, pendientes de aprobación lingüística. El
+  adaptador automatizado ya construye un contrato MCER propio con descriptores A1–C2, cuatro
+  estimaciones independientes, citas literales y confianza provisional limitada; el servidor
+  sella modelo, fecha, consigna, versión y hash de respuesta, y rechaza evidencia inventada.
+  No reutiliza bandas IELTS/TOEFL ni produce un nivel global. La llamada a un proveedor externo
+  permanece deliberadamente desconectada hasta aprobar privacidad, consentimiento y proveedor.
 - **Fase 4 — entrega privada de escucha iniciada:** el endpoint de medios autentica al usuario,
   comprueba que el audio pertenece a su etapa activa y no expirada, descarga desde un bucket
   privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3
@@ -136,7 +141,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **153 pruebas** y
+  borradores; el último corte local ejecutó **156 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.
