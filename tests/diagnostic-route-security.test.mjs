@@ -17,18 +17,20 @@ test('diagnostic start route uses Node runtime and delegates to a server-only ha
 
 test('objective submission route delegates through an authenticated server-only boundary', () => {
   assert.match(submitRoute, /export const runtime = 'nodejs'/);
-  assert.match(submitRoute, /handleDiagnosticObjectiveStageSubmission/);
+  assert.match(submitRoute, /handleDiagnosticStageSubmission/);
   assert.match(submitHandler, /import 'server-only'/);
   assert.match(submitHandler, /request\.headers\.get\('origin'\)/);
   assert.match(submitHandler, /auth\.getUser\(\)/);
   assert.match(submitHandler, /parseDiagnosticObjectiveStageSubmitRequest/);
+  assert.match(submitHandler, /parseDiagnosticWritingStageSubmitRequest/);
   assert.match(submitHandler, /loadDiagnosticObjectiveSubmissionContext/);
   assert.match(submitHandler, /persistDiagnosticObjectiveStage/);
+  assert.match(submitHandler, /persistDiagnosticWritingSubmission/);
   assert.match(submitHandler, /ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK\.length === 0/);
 });
 
 test('submission handler binds current versions and never trusts client scoring', () => {
-  assert.match(submitHandler, /submission\.attemptVersion !== context\.attempt\.version/);
+  assert.match(submitHandler, /submissionVersion !== context\.attempt\.version/);
   assert.match(submitHandler, /context\.bankVersion !== ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION/);
   assert.match(submitHandler, /context\.stage\.itemIds\.map/);
   assert.doesNotMatch(submitHandler, /isCorrect|correctAnswer|correctOption/);

@@ -44,6 +44,11 @@ export interface DiagnosticObjectiveStageSubmitRequest {
   responses: readonly DiagnosticItemSubmission[];
 }
 
+export interface DiagnosticWritingStageSubmitRequest {
+  attemptVersion: number;
+  responseText: string;
+}
+
 function boundedString(value: unknown, maximum: number): value is string {
   return typeof value === 'string' && value.length > 0 && value.length <= maximum;
 }
@@ -105,4 +110,21 @@ export function parseDiagnosticObjectiveStageSubmitRequest(
     });
   }
   return { attemptVersion: Number(candidate.attemptVersion), responses };
+}
+
+export function parseDiagnosticWritingStageSubmitRequest(
+  value: unknown,
+): DiagnosticWritingStageSubmitRequest | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const candidate = value as Record<string, unknown>;
+  if (!Number.isInteger(candidate.attemptVersion)
+    || Number(candidate.attemptVersion) < 1
+    || Number(candidate.attemptVersion) > 2_147_483_647
+    || typeof candidate.responseText !== 'string'
+    || candidate.responseText.length < 1
+    || candidate.responseText.length > 12_000) return null;
+  return {
+    attemptVersion: Number(candidate.attemptVersion),
+    responseText: candidate.responseText,
+  };
 }

@@ -6,6 +6,7 @@ import type { DiagnosticAttemptSnapshot } from './continue-core';
 import type { DiagnosticObjectiveObservation } from './measurement';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
+import type { PersistWritingSubmissionInput } from './writing-submit-core';
 
 export async function loadDiagnosticObjectiveSubmissionContext(input: {
   attemptId: string;
@@ -168,4 +169,38 @@ export async function persistDiagnosticObjectiveStage(
       ...(row.completed_at ? { completedAt: String(row.completed_at) } : {}),
     },
   };
+}
+
+export async function persistDiagnosticWritingSubmission(
+  input: PersistWritingSubmissionInput,
+): Promise<{ replayed: boolean; version: number }> {
+  const { data, error } = await createAdminClient().rpc('submit_diagnostic_writing_stage', {
+    p_attempt_id: input.attempt.id,
+    p_stage_id: input.stage.stageId,
+    p_user_id: input.attempt.userId,
+    p_expected_attempt_version: input.attempt.version,
+    p_prompt_id: input.prompt.id,
+    p_content_version: input.prompt.contentVersion,
+    p_response_text: input.responseText,
+    p_response_sha256: input.responseSha256,
+    p_word_count: input.wordCount,
+  });
+  if (error || !data || typeof data !== 'object') {
+    console.error('[diagnostic] Atomic writing submission failed:', error?.message ?? 'invalid RPC result');
+    const knownCode = [
+      'diagnostic_stage_already_completed',
+      'diagnostic_attempt_version_conflict',
+      'diagnostic_attempt_expired',
+      'diagnostic_stage_out_of_order',
+      'diagnostic_response_binding_invalid',
+      'diagnostic_writing_response_invalid',
+    ].find((code) => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  const result = data as { replayed?: unknown; version?: unknown };
+  if (typeof result.replayed !== 'boolean' || !Number.isInteger(result.version)) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return { replayed: result.replayed, version: Number(result.version) };
 }

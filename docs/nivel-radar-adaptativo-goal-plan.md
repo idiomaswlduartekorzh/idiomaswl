@@ -52,6 +52,9 @@ Actualizado el 24 de septiembre de 2026:
   persiste la etapa de escritura atómicamente; los reintentos idénticos recuperan la etapa ya
   persistida. Los perfiles con evidencia insuficiente o dispersión material reciben ahora un
   módulo de confirmación de ocho decisiones, sin repetir ítems ni estímulos, antes de escritura.
+  La producción escrita ya se valida contra la consigna y los límites resueltos en servidor y
+  se persiste mediante una función atómica e idempotente que deja el intento en `scoring`; la
+  ausencia de evaluación posterior conserva el estado pendiente y nunca fabrica un nivel.
   Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker ni Podman),
   completar reanudación/finalización y verificar autorización contra una base real.
 - **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación ejecutable de perfiles
@@ -80,7 +83,7 @@ Actualizado el 24 de septiembre de 2026:
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **91 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **96 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

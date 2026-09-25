@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { parseDiagnosticObjectiveStageSubmitRequest } from '../src/lib/diagnostic/delivery.ts';
+import {
+  parseDiagnosticObjectiveStageSubmitRequest,
+  parseDiagnosticWritingStageSubmitRequest,
+} from '../src/lib/diagnostic/delivery.ts';
 
 function validResponse(overrides = {}) {
   return {
@@ -43,3 +46,12 @@ test('allows omissions and unique multi-select ids for server-side contract vali
   }), null);
 });
 
+test('parses bounded writing submissions as a distinct network contract', () => {
+  assert.deepEqual(parseDiagnosticWritingStageSubmitRequest({ attemptVersion: 3, responseText: 'A valid response.' }), {
+    attemptVersion: 3, responseText: 'A valid response.',
+  });
+  assert.equal(parseDiagnosticWritingStageSubmitRequest({ attemptVersion: 0, responseText: 'Text' }), null);
+  assert.equal(parseDiagnosticWritingStageSubmitRequest({ attemptVersion: 3, responseText: '' }), null);
+  assert.equal(parseDiagnosticWritingStageSubmitRequest({ attemptVersion: 3, responseText: 'x'.repeat(12_001) }), null);
+  assert.equal(parseDiagnosticWritingStageSubmitRequest({ attemptVersion: 3, responses: [] }), null);
+});
