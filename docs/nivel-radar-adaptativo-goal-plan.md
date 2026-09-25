@@ -248,7 +248,7 @@ Actualizado el 25 de septiembre de 2026:
   durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  commit `699901c2` quedó verificado con **242/242 pruebas**, TypeScript sin errores y un build de
+  commit `3ed47314` quedó verificado con **243/243 pruebas**, TypeScript sin errores y un build de
   **2.564 páginas estáticas**; el recibo privado se registró por SHA-256 y el gate de calidad ya
   pasa sobre la misma huella de fuente.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
