@@ -65,11 +65,77 @@
 .moduleIntro span { color: #ffffff8f; font-size: .82rem; }
 
 .examSection { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: clamp(20px, 4vw, 40px); scroll-margin-top: 90px; }
+.examSection:has(.booklet), .examSection:has(> .candidatePage) { background: #e7e7e4; }
 .sectionHeader { align-items: flex-start; border-bottom: 2px solid var(--ink); display: flex; gap: 20px; justify-content: space-between; margin-bottom: 22px; padding-bottom: 18px; }
 .sectionHeader h2 { font-size: clamp(1.45rem, 3vw, 2.1rem); letter-spacing: -.025em; line-height: 1.1; margin: 7px 0 0; }
 .sectionHeader > span { background: #edf0ef; border-radius: 8px; color: #4e5a61; flex: 0 0 auto; font-size: .72rem; font-weight: 700; padding: 8px 10px; }
 .instructions, .audioNotice { border-left: 3px solid var(--blue); color: #47545d; line-height: 1.6; margin: 0 0 24px; padding: 2px 0 2px 14px; }
 .audioNotice { background: #f5f1e5; border-left-color: #bd7d16; border-radius: 0 8px 8px 0; padding: 12px 14px; }
+
+.booklet { display: grid; gap: 22px; }
+.candidatePage {
+  background: #fff;
+  border: 1px solid #cececa;
+  border-radius: 1px;
+  box-shadow: 0 16px 38px #2020201b;
+  color: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 1040px;
+  overflow: hidden;
+  padding: clamp(34px, 6vw, 72px) clamp(24px, 7vw, 78px) 88px;
+  position: relative;
+}
+.candidateMasthead { color: #262626; font-size: .6rem; letter-spacing: .02em; margin: 0 auto clamp(38px, 7vw, 68px); text-transform: uppercase; width: min(460px, 82%); }
+.candidateMasthead > div { align-items: center; display: grid; grid-template-columns: 1.55fr .85fr; min-height: 18px; }
+.candidateMasthead > div:first-child { background: #cdcdcd; }
+.candidateMasthead > div:last-child { background: #e5e5e5; color: #555; }
+.candidateMasthead :is(strong, span) { padding: 2px 8px; text-align: center; }
+.candidatePage > footer { border-top: 1px solid #d4d4d0; bottom: 30px; color: #696969; display: flex; font-size: .54rem; font-weight: 700; justify-content: space-between; left: clamp(24px, 7vw, 78px); letter-spacing: .12em; padding-top: 8px; position: absolute; right: clamp(24px, 7vw, 78px); }
+.paperPart { color: #171717; font-size: .98rem; font-weight: 800; margin: 0 0 20px; }
+.paperInstructions { color: #555; font-size: .84rem; line-height: 1.62; margin: 0 0 30px; max-width: 680px; }
+.paperQuestions { display: grid; gap: 0; }
+.paperQuestions .question { border: 0; border-bottom: 1px solid #d1d1ce; border-radius: 0; padding: 14px 0; }
+.paperQuestions .question:last-child { border-bottom: 0; }
+.candidatePage .document { border: 1px solid #999; border-radius: 0; margin: 0 auto; max-width: 680px; padding: clamp(20px, 4vw, 40px); position: static; }
+.candidatePage .preText { font-family: Arial, Helvetica, sans-serif; font-size: .82rem; line-height: 1.55; }
+.candidatePage .question h3, .candidatePage .visualQuestion h3, .candidatePage .statementList h3 { font-size: .83rem; }
+.candidatePage .question h3 > span, .candidatePage .visualQuestion h3 > span, .candidatePage .statementList h3 > span { background: transparent; border-radius: 0; color: #222; flex-basis: 22px; font-size: .78rem; height: auto; justify-content: flex-start; }
+.candidatePage .choices { gap: 2px; margin: 9px 0 0 32px; }
+.candidatePage .choices li { background: transparent; border-radius: 0; font-size: .76rem; padding: 2px 4px; }
+.candidatePage .choices li span { border: 1px solid #555; color: #222; display: grid; font-size: .6rem; height: 17px; place-items: center; text-transform: lowercase; width: 17px; }
+.candidatePage .answerKey, .candidatePage .transcript { font-size: .72rem; }
+.candidatePage .workedExample { background: #f5f5f2; border-color: #aaa !important; }
+.candidatePage .adGrid section { min-height: 145px; }
+.candidatePage .adGrid section > span { background: #fff; border: 1px solid #555; color: #222; left: 12px; padding: 3px 7px; top: 12px; }
+.candidatePage .profileList > section { background: #fff; border-bottom: 1px solid #ddd; border-radius: 0; }
+.candidatePage .stageTable { border-radius: 0; margin-bottom: 34px; }
+.candidatePage .stageTable .stageHeader { background: #d0d0d0; color: #222; }
+.candidatePage .heroPlate { border: 0; border-radius: 0; margin-top: 34px; }
+.paperWritingTask + .paperWritingTask { margin-top: 62px; }
+.paperWritingTask { color: #303030; font-size: .84rem; line-height: 1.62; }
+.paperWritingTask ul { line-height: 1.75; }
+.paperAnswer + .paperAnswer { margin-top: 34px; }
+.paperAnswer > h3 { font-size: .88rem; }
+.candidatePage .writingArea { border-radius: 0; }
+.candidatePage .cardPool { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.candidatePage .cardPool section { background: #fff; border-color: #999; border-radius: 0; padding: 0; }
+.candidatePage .cardPool span { background: #d2d2d2; color: #333; padding: 6px 9px; }
+.candidatePage .cardPool strong { font-family: Arial, Helvetica, sans-serif; min-height: 100px; padding: 18px; }
+.candidatePage .monologueGrid { grid-template-columns: 1fr; }
+.candidatePage .promptCard { background: #fff; border: 1px solid #999; border-radius: 0; color: #222; padding: 0; }
+.candidatePage .promptCard .candidateLabel { background: #d2d2d2; color: #333; margin: 0; padding: 6px 9px; text-align: left; }
+.promptMap { min-height: 250px; position: relative; }
+.promptMap::before, .promptMap::after { background: #aaa; content: ''; height: 1px; left: 50%; position: absolute; top: 50%; transform-origin: center; width: 76%; }
+.promptMap::before { transform: translate(-50%, -50%) rotate(28deg); }
+.promptMap::after { transform: translate(-50%, -50%) rotate(-28deg); }
+.promptMap > p { background: #fff; border: 1px solid #555; font-family: Arial, Helvetica, sans-serif; font-size: .86rem; left: 50%; margin: 0; max-width: 230px; padding: 14px; position: absolute; top: 50%; transform: translate(-50%, -50%); z-index: 1; }
+.promptMap > span { background: #fff !important; border: 0 !important; border-radius: 0 !important; color: #222; font-size: .76rem !important; padding: 4px !important; position: absolute; width: 32%; z-index: 1; }
+.promptMap > span[data-position='0'] { left: 6%; top: 12%; }
+.promptMap > span[data-position='1'] { right: 6%; top: 12%; }
+.promptMap > span[data-position='2'] { bottom: 12%; left: 6%; }
+.promptMap > span[data-position='3'] { bottom: 12%; right: 6%; }
+.candidatePage .scheduleGrid { grid-template-columns: 1fr; }
+.candidatePage .scheduleGrid img { border: 0; border-radius: 0; margin: 0 auto; max-height: 680px; object-fit: contain; }
 
 .readingLayout { align-items: start; display: grid; gap: 28px; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); }
 .document { background: #f5f3eb; border: 1px solid #ddd8ca; border-radius: 12px; padding: 24px; position: sticky; top: 82px; }
@@ -165,4 +231,8 @@
   .stageTable > div { grid-template-columns: 80px 1fr 50px; }
   .examSection { padding: 18px; }
   .jumpNav { margin-inline: -6px; }
+  .candidatePage { min-height: 0; padding: 30px 18px 72px; }
+  .candidateMasthead { font-size: .48rem; width: 95%; }
+  .candidatePage > footer { left: 18px; right: 18px; }
+  .candidatePage .cardPool { grid-template-columns: 1fr; }
 }

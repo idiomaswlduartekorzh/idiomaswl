@@ -6062,6 +6062,393 @@ button {
   margin-inline: auto;
 }
 
+/* The official booklet separates stimuli, questions and answer sheets into
+   individual A4-like pages. These rules preserve that paper grammar while
+   keeping WeLearn identity and original content. */
+.goethe-section-stack {
+  display: grid;
+  gap: 1.5rem;
+  width: min(900px, 100%);
+  margin: 0 auto 2rem;
+}
+.goethe-candidate-page {
+  position: relative;
+  min-height: 1080px;
+  padding: clamp(2.25rem, 6vw, 4.75rem) clamp(1.25rem, 7vw, 5rem) 6rem;
+  overflow: hidden;
+  background: var(--goethe-paper, #fff);
+  border: 1px solid #d0d0cc;
+  border-radius: 1px;
+  box-shadow: 0 18px 46px rgba(35, 35, 30, 0.13);
+  color: var(--goethe-ink, #202020);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.goethe-candidate-page .goethe-sheet-masthead {
+  margin-bottom: clamp(2.5rem, 7vw, 4.5rem);
+}
+.goethe-page-footer {
+  position: absolute;
+  right: clamp(1.25rem, 7vw, 5rem);
+  bottom: 2.2rem;
+  left: clamp(1.25rem, 7vw, 5rem);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.55rem;
+  border-top: 1px solid #d4d4d0;
+  color: #696969;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+.goethe-task-heading,
+.goethe-page-part {
+  margin: 0 0 2.15rem;
+}
+.goethe-task-heading h2,
+.goethe-page-part {
+  margin: 0 0 1.35rem;
+  color: #171717;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.goethe-task-heading p {
+  max-width: 680px;
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+.goethe-candidate-page--stimulus .goethe-document {
+  margin-top: 1.25rem;
+}
+.goethe-candidate-page--part-1 .goethe-document--article {
+  margin-inline: auto;
+  max-width: 650px;
+}
+.goethe-candidate-page--part-3 .goethe-document--mail {
+  margin-inline: auto;
+  max-width: 700px;
+}
+.goethe-question-list {
+  display: grid;
+  border-top: 0;
+}
+.goethe-question-list .lang-q {
+  position: relative;
+  padding: 1.1rem 0 1.25rem 3rem;
+  border: 0;
+  border-bottom: 1px solid #d1d1ce;
+  border-radius: 0;
+  background: #fff;
+  color: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.goethe-question-list .lang-q:last-child { border-bottom: 0; }
+.goethe-question-list .goethe-question-number {
+  position: absolute;
+  top: 1.08rem;
+  left: 0;
+  width: 2rem;
+  color: #222;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.goethe-question-list .lang-q__text {
+  margin: 0 0 0.55rem;
+  color: #242424;
+  font-size: 0.84rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.goethe-question-list .lang-q__options {
+  display: grid;
+  gap: 0.16rem;
+}
+.goethe-question-list .lang-opt {
+  display: grid;
+  grid-template-columns: 1.18rem minmax(0, 1fr);
+  gap: 0.62rem;
+  align-items: start;
+  min-height: 1.65rem;
+  padding: 0.2rem 0.35rem;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background: #fff;
+  color: #2c2c2c;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: left;
+  box-shadow: none;
+}
+.goethe-question-list .lang-opt:hover,
+.goethe-question-list .lang-opt:focus-visible {
+  border-color: #8d8d8d;
+  background: #f3f3f1;
+}
+.goethe-question-list .lang-opt--selected {
+  border-color: #17233d;
+  background: #edf1f7;
+}
+.goethe-question-list .lang-opt__letter {
+  display: grid;
+  width: 1.12rem;
+  height: 1.12rem;
+  place-items: center;
+  border: 1px solid #555;
+  border-radius: 0;
+  background: #fff;
+  color: #222;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.goethe-question-list--listening .lang-q__img {
+  display: block;
+  width: min(620px, 100%);
+  max-height: 255px;
+  margin: 0 0 0.7rem;
+  object-fit: contain;
+  object-position: left center;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+.goethe-question-list--listening .lang-q:has(.lang-q__img) {
+  padding-top: 1.55rem;
+  padding-bottom: 1.55rem;
+}
+.goethe-question-list--listening .lang-q:has(.lang-q__options .lang-opt:nth-child(2):last-child) .lang-q__options {
+  display: flex;
+  gap: 1.4rem;
+}
+.goethe-question-list--listening .lang-q:has(.lang-q__options .lang-opt:nth-child(2):last-child) .lang-opt {
+  grid-template-columns: 1.25rem auto;
+  width: auto;
+  min-width: 78px;
+  border-color: #8b8b8b;
+}
+.goethe-example {
+  margin: 0 0 1.4rem;
+  color: #555;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+.goethe-matching-rows {
+  display: grid;
+  gap: 0.95rem;
+}
+.goethe-matching-row {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) 2.5rem;
+  gap: 0.75rem;
+  align-items: center;
+  color: #333;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.goethe-matching-row strong { align-self: start; }
+.goethe-matching-row select {
+  width: 2.25rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid #666;
+  border-radius: 0;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  text-align: center;
+}
+.goethe-listening-grid {
+  margin: 3rem auto 0;
+  border: 0;
+}
+.goethe-listening-grid img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+.goethe-candidate-page--writing {
+  min-height: 1080px;
+}
+.goethe-writing-task + .goethe-writing-task {
+  margin-top: 5rem;
+}
+.goethe-writing-task > p,
+.goethe-speaking-situation {
+  margin: 0.8rem 0;
+  color: #2f2f2f;
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+.goethe-writing-points {
+  margin: 1.1rem 0;
+  color: #252525;
+  font-size: 0.86rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+.goethe-writing-length { margin-top: 1.35rem !important; }
+.goethe-answer-field {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.goethe-answer-field > span {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+.goethe-answer-field textarea {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  resize: vertical;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  background-color: #fff;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 1.82rem, #d7d7d4 1.88rem);
+  color: #202020;
+  font: 0.88rem/1.88rem Arial, Helvetica, sans-serif;
+}
+.goethe-answer-field small {
+  color: #686868;
+  font-size: 0.68rem;
+  text-align: right;
+}
+.goethe-speaking-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin-top: 3.25rem;
+}
+.goethe-speaking-card,
+.goethe-speaking-topic {
+  border: 1px solid #999;
+  background: #fff;
+}
+.goethe-speaking-card header,
+.goethe-speaking-topic header,
+.goethe-speaking-schedules figcaption {
+  padding: 0.35rem 0.55rem;
+  background: #d2d2d2;
+  color: #333;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.goethe-speaking-card strong {
+  display: grid;
+  min-height: 148px;
+  padding: 1rem;
+  place-items: center;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+.goethe-speaking-topic-stack {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.goethe-speaking-topic__map {
+  position: relative;
+  min-height: 310px;
+  padding: 1rem;
+}
+.goethe-speaking-topic__map::before,
+.goethe-speaking-topic__map::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78%;
+  height: 1px;
+  background: #a8a8a8;
+  transform-origin: center;
+  z-index: 0;
+}
+.goethe-speaking-topic__map::before { transform: translate(-50%, -50%) rotate(30deg); }
+.goethe-speaking-topic__map::after { transform: translate(-50%, -50%) rotate(-30deg); }
+.goethe-speaking-topic__map strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: grid;
+  width: min(230px, 42%);
+  min-height: 72px;
+  padding: 0.75rem;
+  place-items: center;
+  border: 1px solid #555;
+  background: #fff;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.goethe-speaking-topic__map span {
+  position: absolute;
+  z-index: 1;
+  width: 34%;
+  padding: 0.3rem;
+  background: #fff;
+  font-size: 0.82rem;
+  text-align: center;
+}
+.goethe-speaking-topic__map span[data-position='0'] { top: 12%; left: 5%; }
+.goethe-speaking-topic__map span[data-position='1'] { top: 12%; right: 5%; }
+.goethe-speaking-topic__map span[data-position='2'] { bottom: 12%; left: 5%; }
+.goethe-speaking-topic__map span[data-position='3'] { right: 5%; bottom: 12%; }
+.goethe-speaking-schedules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.goethe-speaking-schedules figure {
+  margin: 0;
+  border: 1px solid #999;
+  background: #fff;
+}
+.goethe-speaking-schedules--single {
+  grid-template-columns: minmax(0, 560px);
+  justify-content: center;
+}
+.goethe-speaking-schedules img {
+  display: block;
+  width: 100%;
+  max-height: 660px;
+  object-fit: contain;
+}
+.goethe-practice-controls {
+  padding: 1.25rem;
+  border: 1px solid #c4c8ce;
+  background: #f8f8f6;
+  color: #263044;
+  box-shadow: 0 12px 30px rgba(35, 35, 30, 0.08);
+}
+.goethe-practice-controls__eyebrow {
+  margin: 0 0 0.35rem;
+  color: #17233d;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.goethe-practice-controls > p:not(.goethe-practice-controls__eyebrow) {
+  margin: 0 0 1rem;
+  color: #596071;
+  font-size: 0.82rem;
+}
+.goethe-practice-controls .lang-speak__notes { margin-top: 1rem; }
+.goethe-practice-controls .lang-speak__notes-area {
+  border: 1px solid #aaa;
+  border-radius: 1px;
+  background: #fff;
+  color: #202020;
+}
+
 @media (max-width: 640px) {
   .prac-shell--goethe-a2 .lang-section-tabs { top: 116px; }
   .prac-shell--goethe-a2 .ielts-exam-body { padding-inline: 0.55rem; }
@@ -6089,6 +6476,23 @@ button {
   .lang-section--goethe .lang-q { padding-left: 2.35rem; }
   .lang-section--goethe .lang-q--write,
   .lang-section--goethe .lang-q--speak { padding-left: 0; }
+  .goethe-section-stack { gap: 0.8rem; }
+  .goethe-candidate-page {
+    min-height: 0;
+    padding: 1.8rem 1.05rem 5rem;
+    box-shadow: 0 10px 28px rgba(35, 35, 30, 0.12);
+  }
+  .goethe-candidate-page .goethe-sheet-masthead { margin-bottom: 2.5rem; }
+  .goethe-page-footer { right: 1.05rem; bottom: 1.6rem; left: 1.05rem; }
+  .goethe-question-list .lang-q { padding-left: 2.25rem; }
+  .goethe-question-list .lang-opt { font-size: 0.75rem; }
+  .goethe-matching-row { grid-template-columns: 1.6rem minmax(0, 1fr) 2.3rem; gap: 0.45rem; }
+  .goethe-speaking-cards,
+  .goethe-speaking-schedules { grid-template-columns: 1fr; }
+  .goethe-speaking-topic__map { min-height: 280px; }
+  .goethe-speaking-topic__map strong { width: 48%; font-size: 0.78rem; }
+  .goethe-speaking-topic__map span { width: 38%; font-size: 0.7rem; }
+  .goethe-writing-task + .goethe-writing-task { margin-top: 3.5rem; }
 }
 
 @media (max-width: 640px) {

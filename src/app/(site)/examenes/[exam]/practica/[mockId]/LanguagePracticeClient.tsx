@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect, useId } from 'react';
+import { useState, useRef, useCallback, useEffect, useId, type ReactNode } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
@@ -249,7 +249,7 @@ function MCQRenderer({
           const optText = opt.replace(/^[A-H][\s.)\-]+/, '');
           return (
             <button key={i} onClick={() => !showResult && onAnswer(i)} className={cls}>
-              <span className="lang-opt__letter">{String.fromCharCode(65 + i)}</span>
+              <span className="lang-opt__letter">{String.fromCharCode((goethePractice ? 97 : 65) + i)}</span>
               <span>{optText}</span>
             </button>
           );
@@ -579,6 +579,346 @@ function GoethePassage({ section }: { section: MockSection }) {
   );
 }
 
+function GoetheMasthead({ skill, sheet = 'KANDIDATENBLATT' }: { skill: string; sheet?: string }) {
+  return (
+    <div className="goethe-sheet-masthead">
+      <div className="goethe-sheet-masthead__primary">
+        <strong>WELEARN · DEUTSCH A2</strong>
+        <strong>{skill}</strong>
+      </div>
+      <div className="goethe-sheet-masthead__secondary">
+        <span>ÜBUNGSSATZ</span>
+        <span>{sheet}</span>
+      </div>
+    </div>
+  );
+}
+
+function GoethePage({
+  skill,
+  children,
+  className = '',
+  sheet,
+}: {
+  skill: string;
+  children: ReactNode;
+  className?: string;
+  sheet?: string;
+}) {
+  return (
+    <section className={`goethe-candidate-page ${className}`}>
+      <GoetheMasthead skill={skill} sheet={sheet} />
+      {children}
+      <footer className="goethe-page-footer">
+        <span>WELEARN ORIGINAL</span>
+        <span>DEUTSCH A2</span>
+      </footer>
+    </section>
+  );
+}
+
+function GoetheTaskHeading({ section }: { section: MockSection }) {
+  const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
+  return (
+    <header className="goethe-task-heading">
+      <h2>Teil {displayPart}</h2>
+      <p>{section.instructions}</p>
+    </header>
+  );
+}
+
+function goetheQuestionNumber(section: MockSection, index: number) {
+  if (section.skill === 'reading') return ((section.part - 1) * 5) + index + 1;
+  if (section.skill === 'listening') return ((section.part - 5) * 5) + index + 1;
+  return undefined;
+}
+
+function GoetheMatchingRenderer({
+  q,
+  values,
+  onChange,
+  showVisualAfter = false,
+}: {
+  q: MatchingGroupQuestion;
+  values: Record<number, string>;
+  onChange: (num: number, val: string) => void;
+  showVisualAfter?: boolean;
+}) {
+  return (
+    <div className={`goethe-matching-task${showVisualAfter ? ' goethe-matching-task--visual' : ''}`}>
+      {q.groupLabel ? <p className="goethe-example">{q.groupLabel}</p> : null}
+      <div className="goethe-matching-rows">
+        {q.items.map(item => (
+          <label className="goethe-matching-row" key={item.num}>
+            <strong>{item.num}</strong>
+            <span>{item.stem}</span>
+            <select
+              value={values[item.num] ?? ''}
+              onChange={event => onChange(item.num, event.target.value)}
+              aria-label={`Antwort ${item.num}`}
+            >
+              <option value="">–</option>
+              {q.endings.map(ending => (
+                <option key={ending.letter} value={ending.letter}>{ending.letter.toLowerCase()}</option>
+              ))}
+            </select>
+          </label>
+        ))}
+      </div>
+      {q.imageUrl && showVisualAfter ? (
+        <figure className="goethe-listening-grid">
+          <img src={q.imageUrl} alt={q.imageAlt ?? ''} loading="lazy" decoding="async" />
+        </figure>
+      ) : null}
+    </div>
+  );
+}
+
+function GoetheQuestionList({
+  section,
+  mcqAnswers,
+  matchAnswers,
+  onMCQ,
+  onMatch,
+  showResults,
+}: {
+  section: MockSection;
+  mcqAnswers: Record<string, number>;
+  matchAnswers: Record<string, Record<number, string>>;
+  onMCQ: (id: string, i: number) => void;
+  onMatch: (id: string, num: number, v: string) => void;
+  showResults: boolean;
+}) {
+  return (
+    <div className={`goethe-question-list goethe-question-list--${section.skill}`}>
+      {section.questions.map((question, index) => {
+        if (question.type === 'mcq' || question.type === 'dialog') {
+          const q = question as MCQQuestion;
+          return (
+            <MCQRenderer
+              key={q.id}
+              q={q}
+              answer={mcqAnswers[q.id]}
+              onAnswer={answer => onMCQ(q.id, answer)}
+              showResult={showResults}
+              goethePractice
+              questionNumber={goetheQuestionNumber(section, index)}
+            />
+          );
+        }
+        if (question.type === 'matching') {
+          const q = question as MatchingGroupQuestion;
+          return (
+            <GoetheMatchingRenderer
+              key={q.id}
+              q={q}
+              values={matchAnswers[q.id] ?? {}}
+              onChange={(num, value) => onMatch(q.id, num, value)}
+              showVisualAfter={section.skill === 'listening'}
+            />
+          );
+        }
+        return null;
+      })}
+    </div>
+  );
+}
+
+function GoetheSpeakingMaterial({ q }: { q: SpeakQuestion }) {
+  if (q.partNumber === 1) {
+    const cards = (q.cueCard ?? '').split(' · ').filter(Boolean);
+    return (
+      <div className="goethe-speaking-cards">
+        {cards.map((card, index) => (
+          <article key={`${card}-${index}`} className="goethe-speaking-card">
+            <header>Teil 1 · Kandidatenblatt</header>
+            <strong>{card.replace(/\?$/, '')}</strong>
+          </article>
+        ))}
+      </div>
+    );
+  }
+
+  if (q.partNumber === 2) {
+    const prompts = q.text.split('\n').map(line => line.replace(/^KARTE\s+[AB]:\s*/i, ''));
+    const cueGroups = (q.cueCard ?? '').split(/\n\n+/).map(block => {
+      const [, cueLine = ''] = block.split('\n');
+      return cueLine.split(' · ').filter(Boolean);
+    });
+    return (
+      <div className="goethe-speaking-topic-stack">
+        {prompts.map((prompt, index) => (
+          <article className="goethe-speaking-topic" key={`${prompt}-${index}`}>
+            <header>Teil 2 · Kandidatenblatt</header>
+            <div className="goethe-speaking-topic__map">
+              <strong>{prompt}</strong>
+              {(cueGroups[index] ?? []).map((cue, cueIndex) => (
+                <span key={cue} data-position={cueIndex}>{cue}</span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="goethe-speaking-schedules">
+      {(q.imageUrls ?? []).map((url, index) => (
+        <figure key={url}>
+          <figcaption>Kandidat/in {index === 0 ? 'A' : 'B'} · Teil 3</figcaption>
+          <img src={url} alt={q.imageAlts?.[index] ?? `Terminkarte ${index === 0 ? 'A' : 'B'}`} loading="lazy" decoding="async" />
+        </figure>
+      ))}
+    </div>
+  );
+}
+
+function GoetheSpeakingSection({
+  section,
+  speakingAnswers,
+  recordings,
+  onSpeak,
+  onRecording,
+}: {
+  section: MockSection;
+  speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
+  onSpeak: (id: string, value: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
+}) {
+  const q = section.questions.find(question => question.type === 'speak') as SpeakQuestion | undefined;
+  if (!q) return null;
+  return (
+    <div className="goethe-section-stack">
+      {q.partNumber === 3 ? (q.imageUrls ?? []).map((url, index) => (
+        <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking" key={url}>
+          <GoetheTaskHeading section={section} />
+          <p className="goethe-speaking-situation">{q.text}</p>
+          <div className="goethe-speaking-schedules goethe-speaking-schedules--single">
+            <figure>
+              <figcaption>Kandidat/in {index === 0 ? 'A' : 'B'} · Teil 3</figcaption>
+              <img src={url} alt={q.imageAlts?.[index] ?? `Terminkarte ${index === 0 ? 'A' : 'B'}`} loading="eager" decoding="async" />
+            </figure>
+          </div>
+        </GoethePage>
+      )) : (
+        <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking">
+          <GoetheTaskHeading section={section} />
+          <GoetheSpeakingMaterial q={q} />
+        </GoethePage>
+      )}
+      <section className="goethe-practice-controls" aria-label={`Práctica oral Teil ${q.partNumber}`}>
+        <p className="goethe-practice-controls__eyebrow">WeLearn · práctica interactiva</p>
+        <p>Practica en voz alta con la tarjeta oficializada. La grabación y las notas no forman parte del cuadernillo.</p>
+        {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recordings?.[q.id]} maxSeconds={180} onChange={recording => onRecording(q.id, recording)} /> : null}
+        <label className="lang-speak__notes">
+          <span className="lang-speak__notes-label">Notas de respuesta</span>
+          <textarea
+            value={speakingAnswers[q.id] ?? ''}
+            onChange={event => onSpeak(q.id, event.target.value)}
+            className="lang-speak__notes-area"
+            rows={5}
+            placeholder="Ideas clave para tu respuesta..."
+          />
+        </label>
+      </section>
+    </div>
+  );
+}
+
+function GoetheWritingView({
+  sections,
+  writeAnswers,
+  onWrite,
+}: {
+  sections: MockSection[];
+  writeAnswers: Record<string, string>;
+  onWrite: (id: string, value: string) => void;
+}) {
+  const tasks = sections.flatMap(section => section.questions
+    .filter(question => question.type === 'write')
+    .map(question => ({ section, q: question as WriteQuestion })));
+  return (
+    <div className="goethe-section-stack goethe-writing-booklet">
+      <GoethePage skill="Schreiben" className="goethe-candidate-page--writing">
+        {tasks.map(({ section, q }) => (
+          <article className="goethe-writing-task" key={q.id}>
+            <GoetheTaskHeading section={section} />
+            <p>{q.stimulus}</p>
+            <div className="goethe-writing-points">{q.text}</div>
+            <p className="goethe-writing-length">Schreiben Sie {q.taskNumber === 1 ? '20–30' : '30–40'} Wörter.</p>
+            <p>Schreiben Sie zu allen drei Punkten.</p>
+          </article>
+        ))}
+      </GoethePage>
+      <GoethePage skill="Schreiben" sheet="ANTWORTBOGEN" className="goethe-candidate-page--answers">
+        {tasks.map(({ q }) => {
+          const value = writeAnswers[q.id] ?? '';
+          const words = value.trim() ? value.trim().split(/\s+/).length : 0;
+          return (
+            <label className="goethe-answer-field" key={q.id}>
+              <span>Teil {q.taskNumber}</span>
+              <textarea
+                value={value}
+                onChange={event => onWrite(q.id, event.target.value)}
+                rows={q.taskNumber === 1 ? 7 : 10}
+                placeholder="Schreiben Sie hier..."
+              />
+              <small>{words} Wörter</small>
+            </label>
+          );
+        })}
+      </GoethePage>
+    </div>
+  );
+}
+
+function GoetheSectionView({
+  section,
+  mcqAnswers,
+  speakingAnswers,
+  recordings,
+  matchAnswers,
+  onMCQ,
+  onSpeak,
+  onRecording,
+  onMatch,
+  showResults,
+}: {
+  section: MockSection;
+  mcqAnswers: Record<string, number>;
+  speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
+  matchAnswers: Record<string, Record<number, string>>;
+  onMCQ: (id: string, i: number) => void;
+  onSpeak: (id: string, value: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
+  onMatch: (id: string, num: number, value: string) => void;
+  showResults: boolean;
+}) {
+  if (section.skill === 'speaking') {
+    return <GoetheSpeakingSection section={section} speakingAnswers={speakingAnswers} recordings={recordings} onSpeak={onSpeak} onRecording={onRecording} />;
+  }
+
+  const skill = GOETHE_SKILL_LABEL[section.skill ?? 'general'];
+  const passagePage = section.passage ? (
+    <GoethePage skill={skill} className={`goethe-candidate-page--stimulus goethe-candidate-page--part-${section.part}`}>
+      <p className="goethe-page-part">Teil {section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part}</p>
+      <GoethePassage section={section} />
+    </GoethePage>
+  ) : null;
+  const questionPage = (
+    <GoethePage skill={skill} className="goethe-candidate-page--questions">
+      <GoetheTaskHeading section={section} />
+      {section.audioUrl ? <MediaPlayer url={section.audioUrl} /> : null}
+      <GoetheQuestionList section={section} mcqAnswers={mcqAnswers} matchAnswers={matchAnswers} onMCQ={onMCQ} onMatch={onMatch} showResults={showResults} />
+    </GoethePage>
+  );
+  const questionFirst = section.skill === 'reading' && (section.part === 2 || section.part === 4);
+  return <div className="goethe-section-stack">{questionFirst ? <>{questionPage}{passagePage}</> : <>{passagePage}{questionPage}</>}</div>;
+}
+
 // ── Transcript block (collapsible) ───────────────────────────────────────────
 
 function TranscriptBlock({ transcript }: { transcript: string }) {
@@ -643,6 +983,22 @@ function SectionView({
   showResults: boolean;
   goethePractice?: boolean;
 }) {
+  if (goethePractice && section.skill !== 'writing') {
+    return (
+      <GoetheSectionView
+        section={section}
+        mcqAnswers={mcqAnswers}
+        speakingAnswers={speakingAnswers}
+        recordings={recordings}
+        matchAnswers={matchAnswers}
+        onMCQ={onMCQ}
+        onSpeak={onSpeak}
+        onRecording={onRecording}
+        onMatch={onMatch}
+        showResults={showResults}
+      />
+    );
+  }
   const skillLabel = GOETHE_SKILL_LABEL[section.skill ?? 'general'];
   const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
   return (
@@ -1255,9 +1611,10 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
 
   const activeSections = getSkillSections(mock, activeSkill);
   const unanswered = totalQs - totalAnswered;
+  const goetheA2Layout = exam.slug === 'goethe' && /^a2-(?:[1-9]|10)$/.test(mock.id);
 
   return (
-    <div className={`prac-shell prac-shell--exam${focusedPractice ? ' prac-shell--goethe-a2' : ''}`} style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <div className={`prac-shell prac-shell--exam${goetheA2Layout ? ' prac-shell--goethe-a2' : ''}`} style={{ '--exam-color': exam.color } as React.CSSProperties}>
       <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
         <div className="prac-topbar__left">
           <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="prac-topbar__back">{focusedPractice ? 'Práctica A2' : exam.name}</Link>
@@ -1272,7 +1629,9 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
       <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
-        {activeSections.map((sec, i) => (
+        {goetheA2Layout && activeSkill === 'writing' ? (
+          <GoetheWritingView sections={activeSections} writeAnswers={writeAnswers} onWrite={handleWrite} />
+        ) : activeSections.map((sec, i) => (
           <SectionView
             key={`${sec.part}-${i}`}
             section={sec}
@@ -1291,7 +1650,7 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
             onMulti={handleMulti}
             onMatch={handleMatch}
             showResults={false}
-            goethePractice={Boolean(focusedPractice)}
+            goethePractice={goetheA2Layout}
           />
         ))}
 
