@@ -1,6 +1,8 @@
 const EXPECTED_OBJECTIVE_DECISIONS = 288;
 const EXPECTED_WRITING_PROMPTS = 24;
 const EXPECTED_LISTENING_RECORDINGS = 36;
+const SHA256 = /^[a-f0-9]{64}$/u;
+const COMMIT_SHA = /^[a-f0-9]{40}$/u;
 
 function isIsoDate(value) {
   return typeof value === 'string'
@@ -106,6 +108,17 @@ export function buildDiagnosticReleaseReadiness(input) {
     || !nonEmpty(evidence?.database?.verifiedBy)) {
     databaseBlockers.push('AUTHENTICATED_DATABASE_FLOW_NOT_VERIFIED');
   }
+  const liveVerification = evidence?.database?.liveVerification;
+  if (!SHA256.test(liveVerification?.inspectionReceiptSha256 ?? '')
+    || !SHA256.test(liveVerification?.authenticatedFlowReceiptSha256 ?? '')
+    || !nonEmpty(liveVerification?.supabaseProject)
+    || !nonEmpty(liveVerification?.applicationHost)
+    || liveVerification?.sourceSha256 !== input.currentSourceSha256
+    || liveVerification?.bankSnapshotSha256 !== input.currentBankSha256
+    || !COMMIT_SHA.test(liveVerification?.deployedCommit ?? '')
+    || !['pilot', 'production'].includes(liveVerification?.accessMode)) {
+    databaseBlockers.push('LIVE_DATABASE_EVIDENCE_NOT_BOUND_TO_RELEASE');
+  }
 
   const privacyBlockers = [];
   if (input.retentionPolicy?.status !== 'approved'
@@ -114,7 +127,10 @@ export function buildDiagnosticReleaseReadiness(input) {
     || !nonEmpty(evidence?.privacy?.approvedBy)) {
     privacyBlockers.push('RETENTION_POLICY_NOT_APPROVED');
   }
-  if (evidence?.privacy?.deletionFlowVerified !== true) {
+  if (evidence?.privacy?.deletionFlowVerified !== true
+    || !SHA256.test(evidence?.privacy?.deletionReceiptSha256 ?? '')
+    || evidence.privacy.deletionReceiptSha256
+      !== evidence?.database?.liveVerification?.authenticatedFlowReceiptSha256) {
     privacyBlockers.push('DATA_DELETION_FLOW_NOT_VERIFIED');
   }
 
@@ -189,7 +205,11 @@ export function buildDiagnosticReleaseReadiness(input) {
         blockers: [...(provider.blockers ?? [])],
       },
     }),
-    gate('database', databaseBlockers, { expectedMigration: input.expectedMigration }),
+    gate('database', databaseBlockers, {
+      expectedMigration: input.expectedMigration,
+      targetProject: liveVerification?.supabaseProject ?? null,
+      applicationHost: liveVerification?.applicationHost ?? null,
+    }),
     gate('privacy', privacyBlockers, {
       configuredPolicyVersion: input.retentionPolicy?.policyVersion ?? null,
       configuredPolicyStatus: input.retentionPolicy?.status ?? null,

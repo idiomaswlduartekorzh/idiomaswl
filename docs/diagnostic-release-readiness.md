@@ -79,6 +79,13 @@ comando es dry run por defecto y requiere una cuenta fixture dedicada, cookies d
 administrador cargadas en variables de entorno, además de una confirmación destructiva ligada al
 UUID exacto:
 
+Antes del recorrido, el runner consulta una ruta administrativa `no-store` y exige que el
+despliegue declare la misma huella de fuente, hash del banco y commit que el checkout local limpio.
+También comprueba que el modo `pilot`/`production` y el proyecto Supabase coincidan. Para un
+despliegue piloto se deben fijar `DIAGNOSTIC_RELEASE_SOURCE_SHA256` y
+`DIAGNOSTIC_RELEASE_COMMIT_SHA`; en Vercel, `VERCEL_GIT_COMMIT_SHA` puede sustituir la segunda.
+La huella de fuente esperada aparece en `npm run report:diagnostic-release-readiness -- --json`.
+
 ```bash
 export DIAGNOSTIC_AUTH_FLOW_CONFIRM="DELETE_ALL_DIAGNOSTIC_DATA_FOR_DEDICATED_FIXTURE:$DIAGNOSTIC_VERIFY_USER_ID"
 npm run verify:diagnostic-auth-flow -- --execute \
@@ -89,6 +96,21 @@ El runner no conoce claves de respuesta: entrega omisiones válidas, comprueba r
 privado, completa la consigna fixture, usa la revisión exclusivamente humana, exige el perfil de
 cinco habilidades y borra inscripción, intento y evidencia al final. También intenta el borrado
 si el recorrido falla. Por eso jamás debe apuntarse a una cuenta real ni compartida.
+
+Los dos recibos deben producirse sobre el mismo proyecto y dentro de una ventana máxima de 24
+horas. Se validan y se registran primero en modo seco:
+
+```bash
+npm run record:diagnostic-live-evidence -- \
+  --inspection=.diagnostic-private/evidence/supabase-inspection.json \
+  --auth-flow=.diagnostic-private/evidence/authenticated-flow.json
+```
+
+El modo seco imprime una confirmación ligada a los dos SHA-256. Solo un operador identificado
+puede repetir el comando con `--write`, `--attested-by=<identidad>` y esa confirmación exacta. El
+registrador actualiza exclusivamente la evidencia de migración, recorrido autenticado y borrado;
+no aprueba retención, escritura, contenido ni piloto. La puerta vuelve a comparar el hash de
+fuente y de banco, y rechaza recibos de otro despliegue, proyecto o antigüedad.
 
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio

@@ -30,13 +30,25 @@ function readyFixture() {
     releaseEvidence: {
       evidenceVersion: 'english-diagnostic-release-evidence-v1',
       updatedAt: reviewedAt,
-      database: { appliedThroughMigration: 'latest.sql', authenticatedFlowVerified: true, verifiedAt: reviewedAt, verifiedBy: 'db-reviewer' },
+      database: {
+        appliedThroughMigration: 'latest.sql', authenticatedFlowVerified: true,
+        verifiedAt: reviewedAt, verifiedBy: 'db-reviewer',
+        liveVerification: {
+          inspectionReceiptSha256: '1'.repeat(64), authenticatedFlowReceiptSha256: '2'.repeat(64),
+          supabaseProject: 'project-ref', applicationHost: 'preview.example.test',
+          sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha', deployedCommit: commit,
+          accessMode: 'pilot',
+        },
+      },
       writingOperations: {
         mode: 'human',
         humanReview: { approved: true, verifiedReviewerCount: 2, slaHours: 48, verifiedAt: reviewedAt, verifiedBy: 'academic-lead' },
         externalProcessing: { consentCaptureVerified: false, verifiedAt: null, verifiedBy: null },
       },
-      privacy: { retentionPolicyVersion: 'retention-v1', approvedAt: reviewedAt, approvedBy: 'privacy-reviewer', deletionFlowVerified: true },
+      privacy: {
+        retentionPolicyVersion: 'retention-v1', approvedAt: reviewedAt, approvedBy: 'privacy-reviewer',
+        deletionFlowVerified: true, deletionReceiptSha256: '2'.repeat(64),
+      },
       pilot: { reportPath: 'pilot.json', reportSha256: 'pilot-sha', validationDecision: 'approved', reviewedAt, reviewedBy: 'measurement-reviewer' },
       quality: {
         diagnosticSuiteSourceSha256: 'source-sha', productionBuildSourceSha256: 'source-sha',
@@ -102,6 +114,13 @@ test('a passing old pilot cannot release a changed bank', () => {
   assert.deepEqual(report.gates.find(candidate => candidate.id === 'pilot').blockers, [
     'PILOT_BANK_SNAPSHOT_MISMATCH',
   ]);
+});
+
+test('live verification follows the diagnostic source hash across an evidence-only commit', () => {
+  const fixture = readyFixture();
+  fixture.currentCommit = 'f'.repeat(40);
+  const report = buildDiagnosticReleaseReadiness(fixture);
+  assert.equal(report.gates.find(candidate => candidate.id === 'database').status, 'PASS');
 });
 
 test('the human writing path does not require provider credentials', () => {

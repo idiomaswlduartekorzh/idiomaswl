@@ -196,6 +196,15 @@ Actualizado el 24 de septiembre de 2026:
   también inscripción y eventos. El panel de Nivel Radar ya ofrece el flujo, confirma las
   transiciones destructivas y limpia el UUID tras guardar sin usar almacenamiento del navegador.
   Falta aplicar las migraciones y conectar el proceso humano que recoge el consentimiento.
+- **Evidencia live ligada al release:** el recorrido autenticado consulta ahora una ruta
+  administrativa `no-store` que identifica modo, huella de fuente, hash del banco, commit y
+  proyecto Supabase del despliegue. El runner exige coincidencia exacta con un checkout limpio y
+  conserva esa identidad sin cookies, UUID ni contenido del participante. Un registrador
+  fail-closed cruza el recibo del inspector Supabase con el del recorrido, exige que sean del
+  mismo proyecto, tengan menos de 24 horas y estén ligados al mismo release; solo entonces puede
+  registrar migración, flujo autenticado y borrado mediante atestación explícita del operador.
+  No puede aprobar retención ni ninguna decisión académica. No se ha ejecutado contra un entorno
+  real porque todavía no hay credenciales ni banco piloto aprobado.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
@@ -204,7 +213,7 @@ Actualizado el 24 de septiembre de 2026:
   confirmación ligada a su UUID, ya cubre inicio, reanudación, audio privado, etapas objetivas,
   escritura, revisión humana, perfil de cinco habilidades y borrado verificado; no se ejecutó
   porque este entorno carece de credenciales y banco piloto aprobado. El último corte local
-  ejecutó **205 pruebas** y
+  ejecutó **211 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

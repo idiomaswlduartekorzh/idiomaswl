@@ -5,6 +5,8 @@ export const DIAGNOSTIC_AUTH_FLOW_CONFIRMATION_PREFIX =
 export const DIAGNOSTIC_AUTH_FLOW_CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu;
+const SHA256 = /^[a-f0-9]{64}$/u;
+const COMMIT_SHA = /^[a-f0-9]{40}$/u;
 const WRITING_CRITERIA = [
   'task-fulfilment', 'organisation', 'grammar-control', 'vocabulary-control',
 ];
@@ -122,7 +124,10 @@ function cleanReceipt() {
     startedAt: null,
     completedAt: null,
     accessMode: null,
+    target: { applicationHost: null, supabaseProject: null },
+    releaseBinding: null,
     checks: {
+      releaseBinding: false,
       enrollment: false,
       start: false,
       resume: false,
@@ -151,6 +156,9 @@ export async function verifyDiagnosticAuthenticatedFlow({
   adminCookie,
   fixtureUserId,
   destructiveConfirmation,
+  expectedSourceSha256,
+  expectedBankSnapshotSha256,
+  expectedCommitSha,
   accessMode = 'pilot',
   cohortId = 'e2e-release-verification',
   fetchImpl = fetch,
@@ -161,6 +169,15 @@ export async function verifyDiagnosticAuthenticatedFlow({
   const userSession = safeCookie(userCookie, 'DIAGNOSTIC_VERIFY_USER_COOKIE');
   const adminSession = safeCookie(adminCookie, 'DIAGNOSTIC_VERIFY_ADMIN_COOKIE');
   if (!UUID.test(fixtureUserId)) throw new Error('DIAGNOSTIC_VERIFY_USER_ID must be a valid UUID.');
+  if (!SHA256.test(expectedSourceSha256 ?? '')) {
+    throw new Error('Expected diagnostic source SHA-256 is invalid.');
+  }
+  if (!SHA256.test(expectedBankSnapshotSha256 ?? '')) {
+    throw new Error('Expected diagnostic bank SHA-256 is invalid.');
+  }
+  if (!COMMIT_SHA.test(expectedCommitSha ?? '')) {
+    throw new Error('Expected diagnostic commit SHA is invalid.');
+  }
   if (destructiveConfirmation !== `${DIAGNOSTIC_AUTH_FLOW_CONFIRMATION_PREFIX}${fixtureUserId}`) {
     throw new Error('Dedicated fixture deletion confirmation does not match the user UUID.');
   }
@@ -172,6 +189,7 @@ export async function verifyDiagnosticAuthenticatedFlow({
   const receipt = cleanReceipt();
   receipt.startedAt = now().toISOString();
   receipt.accessMode = accessMode;
+  receipt.target.applicationHost = new URL(baseUrl).hostname;
   receipt.checks.enrollment = accessMode === 'production';
   let attemptId = null;
   let deleted = false;
@@ -189,6 +207,32 @@ export async function verifyDiagnosticAuthenticatedFlow({
   }
 
   try {
+    const bindingResult = await requestJson(
+      fetchImpl, baseUrl, '/api/admin/diagnostic/release-binding', adminSession,
+    );
+    const bindingPayload = assertResponse(bindingResult, 200, 'release binding');
+    const binding = bindingPayload?.binding;
+    if (binding?.bindingVersion !== 'diagnostic-live-release-binding-v1'
+      || binding.ready !== true
+      || binding.accessMode !== accessMode
+      || binding.sourceSha256 !== expectedSourceSha256
+      || binding.bankSnapshotSha256 !== expectedBankSnapshotSha256
+      || binding.commitSha !== expectedCommitSha
+      || typeof binding.supabaseProject !== 'string'
+      || binding.supabaseProject.length < 1) {
+      throw new Error('Running application does not match the expected diagnostic release binding.');
+    }
+    receipt.target.supabaseProject = binding.supabaseProject;
+    receipt.releaseBinding = {
+      bindingVersion: binding.bindingVersion,
+      accessMode: binding.accessMode,
+      sourceSha256: binding.sourceSha256,
+      bankSnapshotSha256: binding.bankSnapshotSha256,
+      commitSha: binding.commitSha,
+      releaseId: typeof binding.releaseId === 'string' ? binding.releaseId : null,
+    };
+    receipt.checks.releaseBinding = true;
+
     if (accessMode === 'pilot') {
       const invite = await requestJson(fetchImpl, baseUrl, '/api/admin/diagnostic/pilot-enrollments', adminSession, {
         method: 'POST',

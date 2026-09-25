@@ -5,7 +5,17 @@
     "appliedThroughMigration": null,
     "verifiedAt": null,
     "verifiedBy": null,
-    "authenticatedFlowVerified": false
+    "authenticatedFlowVerified": false,
+    "liveVerification": {
+      "inspectionReceiptSha256": null,
+      "authenticatedFlowReceiptSha256": null,
+      "supabaseProject": null,
+      "applicationHost": null,
+      "sourceSha256": null,
+      "bankSnapshotSha256": null,
+      "deployedCommit": null,
+      "accessMode": null
+    }
   },
   "writingOperations": {
     "mode": null,
@@ -26,7 +36,8 @@
     "retentionPolicyVersion": null,
     "approvedAt": null,
     "approvedBy": null,
-    "deletionFlowVerified": false
+    "deletionFlowVerified": false,
+    "deletionReceiptSha256": null
   },
   "pilot": {
     "reportPath": null,
