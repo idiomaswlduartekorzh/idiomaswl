@@ -88,6 +88,24 @@ como evidencia lingüística reservada.
 
 ### Piloto de audio A1 con gasto acotado
 
+Antes de autorizar cualquier gasto, los 36 guiones y sus 72 decisiones pasan por una puerta de
+preproducción separada:
+
+```bash
+npm run scaffold:diagnostic-listening-preproduction-review
+npm run report:diagnostic-listening-preproduction-review
+# tras 12 recibos humanos completos e independientes:
+npm run record:diagnostic-listening-preproduction-approvals
+```
+
+Se generan dos recibos privados por nivel: uno lingüístico, sin claves ni racionales, y otro de
+evaluación con el contenido necesario para juzgar clave, distractores y constructo. Cada recibo
+queda ligado al hash exacto de los seis testlets del nivel; cambiar un guion, pregunta, opción,
+clave o racional lo invalida. Las dos identidades deben ser distintas. El corte actual es **0/12
+recibos aprobados**, y el manifiesto comprometido contiene cero aprobaciones. El generador
+rechaza `--generate` mientras los testlets seleccionados no hayan pasado esta puerta, incluso si
+existen autorización de gasto y aprobación de voces.
+
 Antes de producir las 36 grabaciones existe un preset de escucha deliberadamente pequeño:
 
 ```bash
@@ -100,7 +118,7 @@ ejercitan las cuatro voces propuestas. La factura inmutable actual es **3 archiv
 712 caracteres y débito máximo estimado de 1.424 créditos**, ligada al paquete
 `98708152b86de8a5481afbb8e004a5a64d5f31711cc6cfbac41f4ce4e566f9d2`.
 
-La ruta `--generate` exige simultáneamente el hash del paquete, la frase de autorización ligada a
+La ruta `--generate` exige simultáneamente la preproducción aprobada, el hash del paquete, la frase de autorización ligada a
 ese hash, un máximo exacto de 712 caracteres, un techo exacto de 1.424 créditos, una reserva de
 saldo, semilla y las cuatro voces marcadas `approved_by_owner`. Si el contenido o la factura
 cambian, la autorización deja de ser válida. La salida queda bajo `.diagnostic-private/` y no

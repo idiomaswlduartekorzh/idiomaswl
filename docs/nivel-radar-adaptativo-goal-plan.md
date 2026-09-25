@@ -141,6 +141,14 @@ Actualizado el 25 de septiembre de 2026:
   humano. Se propusieron cuatro voces que ya tenían aprobación separada en el casting TOEFL,
   pero esa aprobación no se hereda: el reparto diagnóstico sigue bloqueado hasta una escucha y
   aprobación explícitas para este uso.
+- **Escucha — revisión antes del gasto:** la producción ya no puede comenzar solo con reparto y
+  autorización financiera. Doce paquetes privados —lingüístico y de evaluación por cada nivel—
+  fijan los 36 briefs y sus 72 decisiones mediante hashes. La vista lingüística oculta claves y
+  racionales; la de evaluación permite comprobar evidencia, clave, distractores, constructo,
+  dificultad y sesgo. El compilador exige cobertura total, checklists completos e identidades
+  independientes, y conserva la huella de cada recibo. El manifiesto comprometido está vacío y
+  el estado actual es **0/12 aprobaciones**; cualquier cambio de guion o ítem invalida su recibo.
+  `--generate` falla antes de leer secretos o gastar créditos si la selección no está aprobada.
 - **Piloto A1 de audio acotado:** el generador ofrece ahora `--pilot-a1`, un preset inmutable de
   tres archivos (dos monólogos y una conversación), seis segmentos y las cuatro voces propuestas.
   Su factura exacta es **712 caracteres / máximo 1.424 créditos** y queda ligada al hash

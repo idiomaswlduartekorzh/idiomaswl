@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 import casting from '../config/diagnostic/english-listening-voice-casting.json' with { type: 'json' };
+import preproductionApprovals from '../config/diagnostic/english-listening-preproduction-approvals.json' with { type: 'json' };
 import { ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-lower.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-mid.en.ts';
@@ -16,6 +17,7 @@ import {
   diagnosticA1AudioPilotCastingReadiness,
 } from './lib/diagnostic-a1-audio-pilot.mjs';
 import { buildDiagnosticListeningProductionPackage } from './lib/diagnostic-listening-production.mjs';
+import { diagnosticListeningPreproductionReadiness } from './lib/diagnostic-listening-preproduction-review.mjs';
 
 export {
   DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
@@ -41,6 +43,7 @@ const allBriefs = [
 
 export function diagnosticListeningAudioInvoice(briefs) {
   const productionPackage = buildDiagnosticListeningProductionPackage(briefs);
+  const preproduction = diagnosticListeningPreproductionReadiness(briefs, preproductionApprovals);
   const requestSegments = briefs.reduce((sum, brief) => sum + brief.recording.turns.length, 0);
   const billableCharacters = briefs.reduce((sum, brief) =>
     sum + brief.recording.turns.reduce((turnSum, turn) => turnSum + turn.text.length, 0), 0);
@@ -58,6 +61,10 @@ export function diagnosticListeningAudioInvoice(briefs) {
     profiles,
     unresolvedProfiles: profiles.filter(profile => !casting.profiles[profile]?.voiceId),
     unapprovedProfiles: profiles.filter(profile => casting.profiles[profile]?.approval !== 'approved_by_owner'),
+    preproductionApprovedBriefs: preproduction.approvedBriefs,
+    preproductionRequiredBriefs: preproduction.requiredBriefs,
+    preproductionReady: preproduction.ready,
+    preproductionBlockers: preproduction.blockers,
     generationAuthorized: false,
   };
 }
@@ -162,6 +169,8 @@ async function generate(briefs) {
   } else {
     assert.deepEqual(invoice.unapprovedProfiles, [], 'every used profile needs approval=approved_by_owner');
   }
+  assert.equal(invoice.preproductionReady, true,
+    `listening preproduction review is incomplete: ${invoice.preproductionBlockers.join(', ')}`);
   const maxCharacters = Number(value('--max-billable-characters'));
   assert.ok(Number.isInteger(maxCharacters) && maxCharacters >= invoice.billableCharacters, `pass --max-billable-characters of at least ${invoice.billableCharacters}`);
   const protectedReserve = Number(value('--min-remaining-credits'));

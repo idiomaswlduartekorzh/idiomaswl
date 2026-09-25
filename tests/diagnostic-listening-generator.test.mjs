@@ -50,6 +50,9 @@ test('diagnostic audio invoice is deterministic and reports unresolved voice app
   assert.equal(invoice.estimatedMaximumCreditDebit, invoice.billableCharacters * 2);
   assert.deepEqual(invoice.unresolvedProfiles, []);
   assert.ok(invoice.unapprovedProfiles.length > 0);
+  assert.equal(invoice.preproductionReady, false);
+  assert.equal(invoice.preproductionApprovedBriefs, 0);
+  assert.equal(invoice.preproductionRequiredBriefs, 2);
   assert.equal(invoice.generationAuthorized, false);
 });
 
@@ -81,6 +84,8 @@ test('A1 pilot preset is exactly three diverse files and cannot exceed 1,424 cre
   assert.equal(invoice.pilotCastingReady, false);
   assert.ok(invoice.pilotCastingBlockers.includes('PILOT_CAST_NOT_APPROVED_BY_OWNER'));
   assert.deepEqual(invoice.profiles, ['narrator_a', 'narrator_b', 'speaker_a', 'speaker_b']);
+  assert.equal(invoice.preproductionReady, false);
+  assert.ok(invoice.preproductionBlockers.includes('PREPRODUCTION_APPROVALS_INCOMPLETE'));
   assert.equal(invoice.generationAuthorized, false);
   assert.match(invoice.note, /No API call, secret read, credit spend or audio write/);
 });
@@ -170,4 +175,5 @@ test('generation path requires package approval, capped characters, credit reser
   assert.match(source, /A1 pilot requires --max-credit-debit/);
   assert.match(source, /refusing to overwrite/);
   assert.match(source, /private-pending-human-qa/);
+  assert.match(source, /listening preproduction review is incomplete/);
 });
