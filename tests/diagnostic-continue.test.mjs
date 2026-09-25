@@ -2,8 +2,11 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
-import { continueEnglishDiagnosticLocator } from '../src/server/diagnostic/continue-core.ts';
-import { selectEnglishLocator } from '../src/server/diagnostic/selection.ts';
+import {
+  continueEnglishDiagnosticLocator,
+  continueEnglishDiagnosticPrecision,
+} from '../src/server/diagnostic/continue-core.ts';
+import { selectEnglishLocator, selectEnglishPrecisionStage } from '../src/server/diagnostic/selection.ts';
 
 const skills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
 function record(skill, level, variant) {
@@ -25,6 +28,18 @@ function record(skill, level, variant) {
 const bank = skills.flatMap(skill => CEFR_LEVELS.flatMap(level =>
   Array.from({ length: 12 }, (_, index) => record(skill, level, index + 1)),
 ));
+
+const writingBank = ['B1', 'B2'].flatMap(level => Array.from({ length: 4 }, (_, index) => ({
+  publicPrompt: {
+    id: `en-${level.toLowerCase()}-writing-${index + 1}`, contentVersion: '1', language: 'en', levelCandidate: level,
+    title: `${level} writing task ${index + 1}`,
+    situation: 'Write for a community website about a practical change that affects people in your area.',
+    instructions: ['Describe the situation clearly.', 'Explain your position with relevant support.', 'Recommend a realistic next step.'],
+    minimumWords: level === 'B1' ? 100 : 160, maximumWords: level === 'B1' ? 160 : 240, recommendedMinutes: 20,
+  },
+  status: 'pilot', exposure: 'reserved', review: { status: 'approved' },
+  source: { kind: 'welearn-original', reference: 'fixture' },
+})));
 
 function locatorFixture() {
   const selected = selectEnglishLocator(bank, 'locator-seed');
@@ -109,4 +124,74 @@ test('an identical retry returns the persisted precision stage without creating 
   assert.equal(result.delivery.stage.stageId, 'persisted-stage-id');
   assert.equal(result.delivery.stage.issuedAt, '2026-09-24T12:30:00.000Z');
   assert.equal(result.delivery.attemptVersion, 2);
+});
+
+test('scores precision with prior evidence and atomically delivers a route-appropriate writing prompt', async () => {
+  const locator = selectEnglishLocator(bank, 'prior-locator');
+  const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'precision-seed', new Set(locator.records.map(record => record.publicItem.id)));
+  const stage = {
+    stageId: 'stage-precision', kind: 'precision', routeId: 'mid-b1-b2',
+    itemIds: precision.records.map(record => record.publicItem.id),
+    contentVersions: Object.fromEntries(precision.records.map(record => [record.publicItem.id, '1'])),
+    issuedAt: '2026-09-24T12:30:00.000Z',
+  };
+  let persisted;
+  const result = await continueEnglishDiagnosticPrecision({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-1', userId: 'user-1', version: 2, status: 'precision', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage,
+    stageRecords: precision.records,
+    priorObservations: locator.records.map(record => ({ itemId: record.publicItem.id, outcome: 'correct' })),
+    submissions: precision.records.map(item => ({
+      itemId: item.publicItem.id, contentVersion: '1', response: { kind: 'single-choice', optionId: 'b' },
+      responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+    })),
+  }, {
+    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'stage-writing',
+    persist: async input => { persisted = input; return { replayed: false, version: 3 }; },
+  });
+  assert.equal(result.delivery.stage.kind, 'writing');
+  assert.equal(result.delivery.stage.stageId, 'stage-writing');
+  assert.equal(result.delivery.attemptVersion, 3);
+  assert.ok(['B1', 'B2'].includes(result.delivery.prompt.levelCandidate));
+  assert.equal(result.objectiveEvidence.length, 4);
+  assert.equal(result.objectiveEvidence.every(skill => skill.decisions === 7 && skill.status === 'provisional'), true);
+  assert.equal(persisted.nextStatus, 'writing');
+  assert.equal(persisted.nextStageIndex, 2);
+  assert.equal(persisted.nextSelectionReceipt.writingBankVersion, 'writing-bank-v1');
+  const serialized = JSON.stringify(result.delivery);
+  assert.equal(serialized.includes('scoring'), false);
+  assert.equal(serialized.includes('objectiveEvidence'), false);
+});
+
+test('an identical precision retry returns the persisted writing stage', async () => {
+  const locator = selectEnglishLocator(bank, 'prior-locator');
+  const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'precision-seed', new Set(locator.records.map(record => record.publicItem.id)));
+  const stage = {
+    stageId: 'stage-precision', kind: 'precision', routeId: 'mid-b1-b2',
+    itemIds: precision.records.map(record => record.publicItem.id),
+    contentVersions: Object.fromEntries(precision.records.map(record => [record.publicItem.id, '1'])),
+    issuedAt: '2026-09-24T12:30:00.000Z', completedAt: '2026-09-24T12:59:00.000Z',
+  };
+  const result = await continueEnglishDiagnosticPrecision({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-1', userId: 'user-1', version: 3, status: 'writing', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage,
+    stageRecords: precision.records,
+    priorObservations: locator.records.map(record => ({ itemId: record.publicItem.id, outcome: 'correct' })),
+    submissions: precision.records.map(item => ({
+      itemId: item.publicItem.id, contentVersion: '1', response: { kind: 'single-choice', optionId: 'b' },
+      responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+    })),
+  }, {
+    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'discarded-writing-stage',
+    persist: async input => ({
+      replayed: true, version: 3,
+      nextStage: { ...input.nextStage, stageId: 'persisted-writing-stage', issuedAt: '2026-09-24T12:59:00.000Z' },
+    }),
+  });
+  assert.equal(result.delivery.stage.stageId, 'persisted-writing-stage');
+  assert.equal(result.delivery.attemptVersion, 3);
 });

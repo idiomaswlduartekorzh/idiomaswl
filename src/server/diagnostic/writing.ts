@@ -84,6 +84,7 @@ export function selectDiagnosticWritingPrompt(
     .filter(record => record.publicPrompt.language === language
       && record.publicPrompt.levelCandidate === level
       && (record.status === 'pilot' || record.status === 'operational')
+      && record.exposure === 'reserved'
       && record.review.status === 'approved'
       && !excludedPromptIds.has(record.publicPrompt.id))
     .sort((a, b) => stableRank(seed, a.publicPrompt.id).localeCompare(stableRank(seed, b.publicPrompt.id)));

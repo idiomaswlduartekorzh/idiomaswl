@@ -3,27 +3,46 @@ import 'server-only';
 import { createAdminClient } from '@/lib/supabase/admin';
 import type { DiagnosticStageReceipt } from '@/lib/diagnostic/types';
 import type { DiagnosticAttemptSnapshot } from './continue-core';
+import type { DiagnosticObjectiveObservation } from './measurement';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 
-export async function loadDiagnosticLocatorSubmissionContext(input: {
+export async function loadDiagnosticObjectiveSubmissionContext(input: {
   attemptId: string;
   stageId: string;
   userId: string;
-}): Promise<{ attempt: DiagnosticAttemptSnapshot; stage: DiagnosticStageReceipt; bankVersion: string; blueprintVersion: string; engineVersion: string } | null> {
+}): Promise<{
+  attempt: DiagnosticAttemptSnapshot;
+  stage: DiagnosticStageReceipt;
+  stageIndex: number;
+  priorObservations: readonly DiagnosticObjectiveObservation[];
+  bankVersion: string;
+  blueprintVersion: string;
+  engineVersion: string;
+} | null> {
   const admin = createAdminClient();
-  const [{ data: attempt, error: attemptError }, { data: stage, error: stageError }] = await Promise.all([
+  const [
+    { data: attempt, error: attemptError },
+    { data: stage, error: stageError },
+    { data: priorResponses, error: responsesError },
+  ] = await Promise.all([
     admin.from('diagnostic_attempts')
       .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version')
       .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
     admin.from('diagnostic_stages')
-      .select('id,attempt_id,user_id,kind,route_id,status,item_ids,content_versions,issued_at,completed_at')
+      .select('id,attempt_id,user_id,stage_index,kind,route_id,status,item_ids,content_versions,issued_at,completed_at')
       .eq('id', input.stageId).eq('attempt_id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+    admin.from('diagnostic_responses')
+      .select('item_id,outcome')
+      .eq('attempt_id', input.attemptId).eq('user_id', input.userId).neq('stage_id', input.stageId),
   ]);
-  if (attemptError || stageError) throw new Error('diagnostic_persistence_unavailable');
+  if (attemptError || stageError || responsesError) throw new Error('diagnostic_persistence_unavailable');
   if (!attempt || !stage) return null;
   if (!Number.isInteger(attempt.version) || !Array.isArray(stage.item_ids)
-    || !stage.content_versions || typeof stage.content_versions !== 'object') {
+    || !Number.isInteger(stage.stage_index)
+    || !stage.content_versions || typeof stage.content_versions !== 'object'
+    || !Array.isArray(priorResponses)
+    || priorResponses.some(response => !['correct', 'incorrect', 'omitted'].includes(String(response.outcome)))) {
     throw new Error('diagnostic_persistence_unavailable');
   }
   return {
@@ -44,6 +63,11 @@ export async function loadDiagnosticLocatorSubmissionContext(input: {
       issuedAt: String(stage.issued_at),
       ...(stage.completed_at ? { completedAt: String(stage.completed_at) } : {}),
     },
+    stageIndex: Number(stage.stage_index),
+    priorObservations: priorResponses.map(response => ({
+      itemId: String(response.item_id),
+      outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],
+    })),
     bankVersion: String(attempt.bank_version),
     blueprintVersion: String(attempt.blueprint_version),
     engineVersion: String(attempt.engine_version),
@@ -94,7 +118,7 @@ export async function persistDiagnosticObjectiveStage(
     p_route_id: input.routeId,
     p_next_stage_id: input.nextStage.stageId,
     p_next_stage_kind: input.nextStage.kind,
-    p_next_stage_index: 1,
+    p_next_stage_index: input.nextStageIndex,
     p_next_item_ids: [...input.nextStage.itemIds],
     p_next_content_versions: input.nextStage.contentVersions,
     p_next_selection_receipt: input.nextSelectionReceipt,
@@ -123,9 +147,9 @@ export async function persistDiagnosticObjectiveStage(
     .select('id,kind,route_id,item_ids,content_versions,issued_at,completed_at')
     .eq('attempt_id', input.attempt.id)
     .eq('user_id', input.attempt.userId)
-    .eq('stage_index', 1)
+    .eq('stage_index', input.nextStageIndex)
     .maybeSingle();
-  if (replayError || !row || row.kind !== 'precision' || !Array.isArray(row.item_ids)
+  if (replayError || !row || row.kind !== input.nextStage.kind || !Array.isArray(row.item_ids)
     || !row.content_versions || typeof row.content_versions !== 'object') {
     throw new Error('diagnostic_persistence_unavailable');
   }
@@ -134,7 +158,7 @@ export async function persistDiagnosticObjectiveStage(
     version: Number(result.version),
     nextStage: {
       stageId: String(row.id),
-      kind: 'precision',
+      kind: row.kind as PersistObjectiveStageInput['nextStage']['kind'],
       routeId: row.route_id as PersistObjectiveStageInput['routeId'],
       itemIds: row.item_ids.map(String),
       contentVersions: row.content_versions as Readonly<Record<string, string>>,

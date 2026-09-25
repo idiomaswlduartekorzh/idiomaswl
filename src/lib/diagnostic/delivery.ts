@@ -3,6 +3,7 @@ import type {
   DiagnosticStageReceipt,
   DiagnosticSubmittedResponse,
 } from './types.ts';
+import type { DiagnosticWritingPrompt } from './writing.ts';
 
 export const DIAGNOSTIC_CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
 export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v1';
@@ -13,6 +14,15 @@ export interface DiagnosticStageDelivery {
   expiresAt: string;
   stage: DiagnosticStageReceipt;
   items: readonly DiagnosticPublicItem[];
+}
+
+/** Writing delivery is a separate shape so objective answer contracts cannot be confused with free production. */
+export interface DiagnosticWritingStageDelivery {
+  attemptId: string;
+  attemptVersion: number;
+  expiresAt: string;
+  stage: DiagnosticStageReceipt & { kind: 'writing' };
+  prompt: DiagnosticWritingPrompt;
 }
 
 export type DiagnosticStartRequest = {

@@ -47,12 +47,14 @@ test('selects only approved prompts and avoids prompts used before', () => {
     source: { kind: 'welearn-original', reference: 'fixture' },
   }));
   bank.push({ ...bank[0], publicPrompt: { ...prompt, id: 'draft-prompt' }, review: { status: 'draft' } });
+  bank.push({ ...bank[0], publicPrompt: { ...prompt, id: 'public-prompt' }, exposure: 'previously-public' });
   const first = selectDiagnosticWritingPrompt(bank, 'en', 'B1', 'attempt-writing');
   const repeated = selectDiagnosticWritingPrompt([...bank].reverse(), 'en', 'B1', 'attempt-writing');
   assert.equal(first.id, repeated.id);
   const next = selectDiagnosticWritingPrompt(bank, 'en', 'B1', 'attempt-writing', new Set([first.id]));
   assert.notEqual(next.id, first.id);
   assert.notEqual(first.id, 'draft-prompt');
+  assert.notEqual(first.id, 'public-prompt');
 });
 
 test('evaluation validation binds prompt, response and quoted evidence', () => {

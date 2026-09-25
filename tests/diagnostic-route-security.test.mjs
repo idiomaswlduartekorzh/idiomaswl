@@ -15,14 +15,14 @@ test('diagnostic start route uses Node runtime and delegates to a server-only ha
   assert.match(repository, /import 'server-only'/);
 });
 
-test('locator submission route delegates through an authenticated server-only boundary', () => {
+test('objective submission route delegates through an authenticated server-only boundary', () => {
   assert.match(submitRoute, /export const runtime = 'nodejs'/);
-  assert.match(submitRoute, /handleDiagnosticLocatorSubmission/);
+  assert.match(submitRoute, /handleDiagnosticObjectiveStageSubmission/);
   assert.match(submitHandler, /import 'server-only'/);
   assert.match(submitHandler, /request\.headers\.get\('origin'\)/);
   assert.match(submitHandler, /auth\.getUser\(\)/);
   assert.match(submitHandler, /parseDiagnosticObjectiveStageSubmitRequest/);
-  assert.match(submitHandler, /loadDiagnosticLocatorSubmissionContext/);
+  assert.match(submitHandler, /loadDiagnosticObjectiveSubmissionContext/);
   assert.match(submitHandler, /persistDiagnosticObjectiveStage/);
   assert.match(submitHandler, /ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK\.length === 0/);
 });

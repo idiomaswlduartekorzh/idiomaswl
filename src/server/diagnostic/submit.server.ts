@@ -12,10 +12,15 @@ import { createClient } from '@/lib/supabase/server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
+  ENGLISH_DIAGNOSTIC_WRITING_BANK,
+  ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION,
 } from './bank';
-import { continueEnglishDiagnosticLocator } from './continue-core';
 import {
-  loadDiagnosticLocatorSubmissionContext,
+  continueEnglishDiagnosticLocator,
+  continueEnglishDiagnosticPrecision,
+} from './continue-core';
+import {
+  loadDiagnosticObjectiveSubmissionContext,
   persistDiagnosticObjectiveStage,
 } from './repository.server';
 
@@ -31,7 +36,7 @@ function sameOrigin(request: Request): boolean {
   return Boolean(origin && origin === new URL(request.url).origin);
 }
 
-export async function handleDiagnosticLocatorSubmission(
+export async function handleDiagnosticObjectiveStageSubmission(
   request: Request,
   identifiers: { attemptId: string; stageId: string },
 ): Promise<Response> {
@@ -71,10 +76,13 @@ export async function handleDiagnosticLocatorSubmission(
   if (!allowed) return jsonError('RATE_LIMITED', 'Espera un momento antes de volver a enviar.', 429);
 
   try {
-    const context = await loadDiagnosticLocatorSubmissionContext({ ...identifiers, userId: user.id });
+    const context = await loadDiagnosticObjectiveSubmissionContext({ ...identifiers, userId: user.id });
     if (!context) return jsonError('NOT_FOUND', 'Intento no encontrado.', 404);
+    const replayStatus = context.stage.kind === 'locator' ? 'precision'
+      : context.stage.kind === 'precision' ? 'writing'
+        : null;
     const idempotentReplayVersion = Boolean(context.stage.completedAt)
-      && context.attempt.status === 'precision'
+      && context.attempt.status === replayStatus
       && submission.attemptVersion === context.attempt.version - 1;
     if (submission.attemptVersion !== context.attempt.version && !idempotentReplayVersion) {
       return jsonError('VERSION_CONFLICT', 'El intento cambió. Recarga la etapa actual.', 409);
@@ -84,7 +92,7 @@ export async function handleDiagnosticLocatorSubmission(
       || context.engineVersion !== DIAGNOSTIC_ENGINE_VERSION) {
       return jsonError('VERSION_UNAVAILABLE', 'Esta versión del diagnóstico ya no está disponible.', 409);
     }
-    if (context.stage.kind !== 'locator' || context.stage.stageId !== identifiers.stageId) {
+    if (!['locator', 'precision'].includes(context.stage.kind) || context.stage.stageId !== identifiers.stageId) {
       return jsonError('STAGE_OUT_OF_ORDER', 'La etapa ya no está activa.', 409);
     }
     const bankById = new Map(ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.map((record) => [record.publicItem.id, record]));
@@ -92,19 +100,33 @@ export async function handleDiagnosticLocatorSubmission(
     if (stageRecords.some((record) => !record)) {
       return jsonError('VERSION_UNAVAILABLE', 'Esta versión del diagnóstico ya no está disponible.', 409);
     }
-    const result = await continueEnglishDiagnosticLocator({
-      authenticatedUserId: user.id,
-      attempt: context.attempt,
-      stage: context.stage,
-      stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
-      submissions: submission.responses,
-    }, {
+    const sharedDependencies = {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
       now: () => new Date(),
       newId: randomUUID,
       persist: persistDiagnosticObjectiveStage,
-    });
+    };
+    const result = context.stage.kind === 'locator'
+      ? await continueEnglishDiagnosticLocator({
+        authenticatedUserId: user.id,
+        attempt: context.attempt,
+        stage: context.stage,
+        stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+        submissions: submission.responses,
+      }, sharedDependencies)
+      : await continueEnglishDiagnosticPrecision({
+        authenticatedUserId: user.id,
+        attempt: context.attempt,
+        stage: context.stage,
+        stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+        priorObservations: context.priorObservations,
+        submissions: submission.responses,
+      }, {
+        ...sharedDependencies,
+        writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
+        writingBankVersion: ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION,
+      });
     return Response.json({ ok: true, delivery: result.delivery }, { status: 200, headers: NO_STORE_HEADERS });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'unknown';
@@ -118,7 +140,7 @@ export async function handleDiagnosticLocatorSubmission(
       || message.includes('unserved') || message.includes('invalid')) {
       return jsonError('INVALID_RESPONSES', 'Las respuestas no coinciden con la etapa entregada.', 400);
     }
-    console.error('[diagnostic] Locator submission failed:', message);
+    console.error('[diagnostic] Objective stage submission failed:', message);
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos guardar esta etapa. Inténtalo otra vez.', 503);
   }
 }
