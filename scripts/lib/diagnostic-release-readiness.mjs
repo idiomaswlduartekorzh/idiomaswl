@@ -82,6 +82,12 @@ export function buildDiagnosticReleaseReadiness(input) {
   }
 
   const audioBlockers = [];
+  const preproduction = input.listeningPreproductionReadiness;
+  if (preproduction?.ready !== true
+    || preproduction?.approvedBriefs !== EXPECTED_LISTENING_RECORDINGS
+    || preproduction?.requiredBriefs !== EXPECTED_LISTENING_RECORDINGS) {
+    audioBlockers.push('LISTENING_PREPRODUCTION_APPROVALS_INCOMPLETE');
+  }
   if (publications.length !== EXPECTED_LISTENING_RECORDINGS) {
     audioBlockers.push('LISTENING_RECORDINGS_INCOMPLETE');
   }
@@ -298,8 +304,10 @@ export function buildDiagnosticReleaseReadiness(input) {
     gate('listening-audio', audioBlockers, {
       verifiedRecordings: publications.length,
       requiredRecordings: EXPECTED_LISTENING_RECORDINGS,
+      preproductionApprovedBriefs: preproduction?.approvedBriefs ?? 0,
+      preproductionRequiredBriefs: preproduction?.requiredBriefs ?? EXPECTED_LISTENING_RECORDINGS,
       diagnosticCastApprovals: countApprovedCast(input.voiceCasting),
-      note: 'Casting approval is production context; immutable recording publications are the release evidence.',
+      note: 'Preproduction approval prevents unreviewed recording spend; immutable recording publications remain the release audio evidence.',
     }),
     gate('writing-operations', writingBlockers, {
       mode: writingMode,

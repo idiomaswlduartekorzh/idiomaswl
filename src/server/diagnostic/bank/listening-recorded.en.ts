@@ -1,5 +1,7 @@
 import publications from '../../../../config/diagnostic/english-listening-audio-publications.json' with { type: 'json' };
+import preproductionApprovals from '../../../../config/diagnostic/english-listening-preproduction-approvals.json' with { type: 'json' };
 import type { DiagnosticBankRecord } from '../types.ts';
+import { diagnosticListeningPreproductionContentSha256 } from './listening-preproduction-hash.ts';
 import {
   ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
   diagnosticListeningTranscriptSha256,
@@ -23,6 +25,48 @@ export interface DiagnosticListeningAudioPublicationManifest {
   manifestVersion: string;
   updatedAt: string | null;
   publications: readonly DiagnosticListeningAudioPublication[];
+}
+
+export interface DiagnosticListeningPreproductionApprovalManifest {
+  manifestVersion: string;
+  updatedAt: string | null;
+  approvals: readonly {
+    mediaId: string;
+    productionVersion: string;
+    contentSha256: string;
+    reviewedAt: string;
+    reviewers: readonly { id: string; role: string; receiptSha256: string }[];
+  }[];
+}
+
+function validatePreproductionApproval(
+  brief: DiagnosticListeningProductionBrief,
+  manifest: DiagnosticListeningPreproductionApprovalManifest,
+): string[] {
+  const errors: string[] = [];
+  if (manifest.manifestVersion !== 'english-diagnostic-listening-preproduction-approvals-v1') {
+    errors.push('preproduction manifest version mismatch');
+  }
+  const matches = manifest.approvals.filter(approval => approval.mediaId === brief.audioArtifact.mediaId);
+  if (matches.length !== 1) return [...errors, 'exactly one preproduction approval is required'];
+  const [approval] = matches;
+  if (approval.productionVersion !== brief.productionVersion) errors.push('preproduction version mismatch');
+  if (approval.contentSha256 !== diagnosticListeningPreproductionContentSha256(brief)) {
+    errors.push('preproduction content hash mismatch');
+  }
+  if (Number.isNaN(Date.parse(approval.reviewedAt))) errors.push('invalid preproduction review date');
+  const roles = approval.reviewers?.map(reviewer => reviewer.role) ?? [];
+  const ids = approval.reviewers?.map(reviewer => reviewer.id.trim()) ?? [];
+  if (approval.reviewers?.length !== 2
+    || roles.filter(role => role === 'linguistic-reviewer').length !== 1
+    || roles.filter(role => role === 'assessment-reviewer').length !== 1) {
+    errors.push('linguistic and assessment preproduction reviews are required');
+  }
+  if (ids.some(id => !id) || new Set(ids).size !== 2) errors.push('preproduction reviewers must be independent');
+  if (approval.reviewers?.some(reviewer => !/^[a-f0-9]{64}$/u.test(reviewer.receiptSha256)) ?? true) {
+    errors.push('preproduction review receipt hash missing');
+  }
+  return errors;
 }
 
 function validatePublication(
@@ -51,6 +95,7 @@ function optionId(brief: DiagnosticListeningProductionBrief, question: number, o
 export function materializeRecordedListeningCandidates(
   briefs: readonly DiagnosticListeningProductionBrief[],
   manifest: DiagnosticListeningAudioPublicationManifest,
+  preproductionManifest: DiagnosticListeningPreproductionApprovalManifest,
 ): readonly DiagnosticBankRecord[] {
   if (!manifest.manifestVersion.trim()) throw new Error('listening publication manifest version is required');
   if (new Set(manifest.publications.map(publication => publication.mediaId)).size !== manifest.publications.length) {
@@ -60,7 +105,10 @@ export function materializeRecordedListeningCandidates(
   return manifest.publications.flatMap(publication => {
     const brief = briefsById.get(publication.mediaId);
     if (!brief) throw new Error(`${publication.mediaId}: publication has no production brief`);
-    const errors = validatePublication(brief, publication);
+    const errors = [
+      ...validatePreproductionApproval(brief, preproductionManifest),
+      ...validatePublication(brief, publication),
+    ];
     if (errors.length) throw new Error(`${publication.mediaId}: ${errors.join('; ')}`);
     return brief.questions.map((question, questionIndex): DiagnosticBankRecord => {
       const questionNumber = questionIndex + 1;
@@ -112,4 +160,5 @@ export const ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES = materializeRecor
     ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
   ],
   publications as DiagnosticListeningAudioPublicationManifest,
+  preproductionApprovals as DiagnosticListeningPreproductionApprovalManifest,
 );

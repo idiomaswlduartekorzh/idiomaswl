@@ -1,5 +1,9 @@
 import { createHash } from 'node:crypto';
 
+import { diagnosticListeningPreproductionContentSha256 } from '../../src/server/diagnostic/bank/listening-preproduction-hash.ts';
+
+export { diagnosticListeningPreproductionContentSha256 } from '../../src/server/diagnostic/bank/listening-preproduction-hash.ts';
+
 export const DIAGNOSTIC_LISTENING_PREPRODUCTION_MANIFEST_VERSION =
   'english-diagnostic-listening-preproduction-approvals-v1';
 export const DIAGNOSTIC_LISTENING_PREPRODUCTION_ROLES = [
@@ -40,23 +44,6 @@ function canonicalIso(value, label) {
     throw new Error(`${label} must be a canonical ISO timestamp.`);
   }
   return value;
-}
-
-function reviewableBrief(brief) {
-  return {
-    mediaId: brief.audioArtifact.mediaId,
-    level: brief.level,
-    productionVersion: brief.productionVersion,
-    exposure: brief.exposure,
-    recording: brief.recording,
-    questions: brief.questions,
-  };
-}
-
-export function diagnosticListeningPreproductionContentSha256(brief) {
-  return createHash('sha256')
-    .update(JSON.stringify(canonical(reviewableBrief(brief))))
-    .digest('hex');
 }
 
 export function diagnosticListeningPreproductionSnapshotSha256(briefs) {

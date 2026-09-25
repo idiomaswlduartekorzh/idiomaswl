@@ -15,6 +15,7 @@ import {
   ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   materializeRecordedListeningCandidates,
 } from '../src/server/diagnostic/bank/listening-recorded.en.ts';
+import { diagnosticListeningPreproductionContentSha256 } from '../src/server/diagnostic/bank/listening-preproduction-hash.ts';
 import { buildDiagnosticListeningProductionPackage } from '../scripts/lib/diagnostic-listening-production.mjs';
 
 const lowerBriefs = ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS;
@@ -22,6 +23,24 @@ const midBriefs = ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS;
 const advancedBriefs = ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS;
 const briefs = [...lowerBriefs, ...midBriefs, ...advancedBriefs];
 const wordCount = value => value.trim().split(/\s+/u).length;
+
+function approvedPreproduction(brief, overrides = {}) {
+  return {
+    manifestVersion: 'english-diagnostic-listening-preproduction-approvals-v1',
+    updatedAt: '2026-09-25T11:00:00.000Z',
+    approvals: [{
+      mediaId: brief.audioArtifact.mediaId,
+      productionVersion: brief.productionVersion,
+      contentSha256: diagnosticListeningPreproductionContentSha256(brief),
+      reviewedAt: '2026-09-25T11:00:00.000Z',
+      reviewers: [
+        { id: 'linguist-1', role: 'linguistic-reviewer', receiptSha256: '1'.repeat(64) },
+        { id: 'assessor-2', role: 'assessment-reviewer', receiptSha256: '2'.repeat(64) },
+      ],
+      ...overrides,
+    }],
+  };
+}
 
 test('production plans have six original testlets and twelve decisions at every CEFR level', () => {
   for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
@@ -112,7 +131,7 @@ test('a verified recording materializes only as a reserved draft bound to audio 
   };
   const candidates = materializeRecordedListeningCandidates([brief], {
     manifestVersion: 'fixture-v1', updatedAt: publication.reviewedAt, publications: [publication],
-  });
+  }, approvedPreproduction(brief));
   assert.equal(candidates.length, 2);
   assert.equal(candidates.every(record => record.status === 'reserved' && record.exposure === 'reserved'), true);
   assert.equal(candidates.every(record => record.review.status === 'draft'), true);
@@ -129,8 +148,25 @@ test('recording materialization rejects stale versions, invalid duration and non
     transcriptReviewerId: 'reviewer-1', alignmentReviewerId: 'reviewer-2', reviewedAt: '2026-09-25T12:00:00.000Z',
   };
   const manifest = publication => ({ manifestVersion: 'fixture-v1', updatedAt: base.reviewedAt, publications: [publication] });
-  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, productionVersion: 'stale' })), /version mismatch/);
-  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, transcriptSha256: 'b'.repeat(64) })), /transcript hash mismatch/);
-  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, durationSeconds: 200 })), /duration outside/);
-  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, alignmentReviewerId: 'reviewer-1' })), /must be independent/);
+  const preproduction = approvedPreproduction(brief);
+  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, productionVersion: 'stale' }), preproduction), /version mismatch/);
+  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, transcriptSha256: 'b'.repeat(64) }), preproduction), /transcript hash mismatch/);
+  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, durationSeconds: 200 }), preproduction), /duration outside/);
+  assert.throws(() => materializeRecordedListeningCandidates([brief], manifest({ ...base, alignmentReviewerId: 'reviewer-1' }), preproduction), /must be independent/);
+});
+
+test('recording materialization cannot bypass preproduction review', () => {
+  const brief = briefs[0];
+  const publication = {
+    mediaId: brief.audioArtifact.mediaId, productionVersion: brief.productionVersion,
+    audioSha256: 'a'.repeat(64), transcriptSha256: diagnosticListeningTranscriptSha256(brief), durationSeconds: 25,
+    transcriptReviewerId: 'reviewer-1', alignmentReviewerId: 'reviewer-2', reviewedAt: '2026-09-25T12:00:00.000Z',
+  };
+  const publicationManifest = { manifestVersion: 'fixture-v1', updatedAt: publication.reviewedAt, publications: [publication] };
+  assert.throws(() => materializeRecordedListeningCandidates([brief], publicationManifest, {
+    manifestVersion: 'english-diagnostic-listening-preproduction-approvals-v1', updatedAt: null, approvals: [],
+  }), /exactly one preproduction approval/);
+  assert.throws(() => materializeRecordedListeningCandidates(
+    [brief], publicationManifest, approvedPreproduction(brief, { contentSha256: 'f'.repeat(64) }),
+  ), /preproduction content hash mismatch/);
 });

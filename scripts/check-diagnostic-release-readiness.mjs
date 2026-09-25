@@ -13,6 +13,10 @@ import { diagnosticPilotBankSha256 } from '../src/server/diagnostic/pilot-analyt
 import { buildDiagnosticReleaseReadiness } from './lib/diagnostic-release-readiness.mjs';
 import { diagnosticReleaseSourceSha256 } from './lib/diagnostic-release-source.mjs';
 import { diagnosticGovernanceSnapshots } from './lib/diagnostic-governance-snapshots.mjs';
+import { diagnosticListeningPreproductionReadiness } from './lib/diagnostic-listening-preproduction-review.mjs';
+import { ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-lower.en.ts';
+import { ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-mid.en.ts';
+import { ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-advanced.en.ts';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
@@ -40,11 +44,20 @@ const migrationNames = readdirSync(join(root, 'supabase/migrations'))
 const currentCommit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
 const workingTreeClean = execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim() === '';
 const currentSourceSha256 = diagnosticReleaseSourceSha256(root);
+const listeningBriefs = [
+  ...ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
+  ...ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
+  ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
+];
 
 const report = buildDiagnosticReleaseReadiness({
   bankReadiness: readJson('docs/diagnostic-bank-readiness.json'),
   approvals: readJson('config/diagnostic/english-bank-approvals.json'),
   audioPublications: readJson('config/diagnostic/english-listening-audio-publications.json'),
+  listeningPreproductionReadiness: diagnosticListeningPreproductionReadiness(
+    listeningBriefs,
+    readJson('config/diagnostic/english-listening-preproduction-approvals.json'),
+  ),
   voiceCasting: readJson('config/diagnostic/english-listening-voice-casting.json'),
   pilotCriteria: readJson('config/diagnostic/pilot-publication-criteria.json'),
   retentionPolicy: readJson('config/diagnostic/data-retention-policy.json'),

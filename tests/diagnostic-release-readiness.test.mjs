@@ -63,6 +63,9 @@ function readyFixture() {
       mediaId: `m-${index}`, audioSha256: 'a'.repeat(64), transcriptSha256: 'b'.repeat(64),
       transcriptReviewerId: `transcript-${index}`, alignmentReviewerId: `alignment-${index}`, reviewedAt,
     })) },
+    listeningPreproductionReadiness: {
+      ready: true, approvedBriefs: 36, requiredBriefs: 36, blockers: [],
+    },
     voiceCasting: { profiles: {} },
     pilotCriteria: {
       criteriaVersion: 'criteria-v1', status: 'approved',
@@ -166,6 +169,10 @@ test('the committed repository remains on HOLD with explicit independent blocker
   fixture.bankReadiness = json('../docs/diagnostic-bank-readiness.json');
   fixture.approvals = json('../config/diagnostic/english-bank-approvals.json');
   fixture.audioPublications = json('../config/diagnostic/english-listening-audio-publications.json');
+  fixture.listeningPreproductionReadiness = {
+    ready: false, approvedBriefs: 0, requiredBriefs: 36,
+    blockers: ['PREPRODUCTION_APPROVALS_INCOMPLETE'],
+  };
   fixture.voiceCasting = json('../config/diagnostic/english-listening-voice-casting.json');
   fixture.pilotCriteria = json('../config/diagnostic/pilot-publication-criteria.json');
   fixture.retentionPolicy = json('../config/diagnostic/data-retention-policy.json');
@@ -189,6 +196,19 @@ test('all independent evidence gates produce READY_TO_ENABLE before flags are sw
   assert.equal(report.decision, 'READY_TO_ENABLE');
   assert.equal(report.releaseReady, true);
   assert.equal(report.summary.passedGates, report.summary.totalGates);
+});
+
+test('verified recordings cannot release without their preproduction approvals', () => {
+  const fixture = readyFixture();
+  fixture.listeningPreproductionReadiness = {
+    ready: false, approvedBriefs: 35, requiredBriefs: 36,
+    blockers: ['PREPRODUCTION_APPROVALS_INCOMPLETE'],
+  };
+  const report = buildDiagnosticReleaseReadiness(fixture);
+  assert.deepEqual(report.gates.find(candidate => candidate.id === 'listening-audio').blockers, [
+    'LISTENING_PREPRODUCTION_APPROVALS_INCOMPLETE',
+  ]);
+  assert.equal(report.releaseReady, false);
 });
 
 test('activation flags alone cannot override missing evidence', () => {

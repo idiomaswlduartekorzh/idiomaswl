@@ -104,7 +104,9 @@ queda ligado al hash exacto de los seis testlets del nivel; cambiar un guion, pr
 clave o racional lo invalida. Las dos identidades deben ser distintas. El corte actual es **0/12
 recibos aprobados**, y el manifiesto comprometido contiene cero aprobaciones. El generador
 rechaza `--generate` mientras los testlets seleccionados no hayan pasado esta puerta, incluso si
-existen autorización de gasto y aprobación de voces.
+existen autorización de gasto y aprobación de voces. La misma comprobación se repite al
+materializar una grabación en el banco y en la puerta integral de release; una edición manual del
+manifiesto de audio no puede saltarse la preproducción.
 
 Antes de producir las 36 grabaciones existe un preset de escucha deliberadamente pequeño:
 

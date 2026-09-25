@@ -149,6 +149,9 @@ Actualizado el 25 de septiembre de 2026:
   independientes, y conserva la huella de cada recibo. El manifiesto comprometido está vacío y
   el estado actual es **0/12 aprobaciones**; cualquier cambio de guion o ítem invalida su recibo.
   `--generate` falla antes de leer secretos o gastar créditos si la selección no está aprobada.
+  Además, el materializador servidor vuelve a exigir aprobación exacta antes de convertir una
+  grabación en candidato reservado y el gate de salida conserva un bloqueo independiente, por lo
+  que editar manualmente el manifiesto de publicaciones tampoco evita esta revisión.
 - **Piloto A1 de audio acotado:** el generador ofrece ahora `--pilot-a1`, un preset inmutable de
   tres archivos (dos monólogos y una conversación), seis segmentos y las cuatro voces propuestas.
   Su factura exacta es **712 caracteres / máximo 1.424 créditos** y queda ligada al hash
