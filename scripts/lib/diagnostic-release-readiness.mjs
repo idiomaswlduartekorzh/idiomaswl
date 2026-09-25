@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 const EXPECTED_OBJECTIVE_DECISIONS = 288;
 const EXPECTED_WRITING_PROMPTS = 24;
 const EXPECTED_LISTENING_RECORDINGS = 36;
+const EXPECTED_CUE_AUDIT_VERSION = 'diagnostic-item-cue-audit-v1';
 const SHA256 = /^[a-f0-9]{64}$/u;
 const COMMIT_SHA = /^[a-f0-9]{40}$/u;
 const PILOT_VALIDATION_ROLES = ['academic-lead', 'measurement-lead'];
@@ -80,6 +81,16 @@ export function buildDiagnosticReleaseReadiness(input) {
   if (bank?.summary?.writingApprovedPrompts !== EXPECTED_WRITING_PROMPTS
     || writingApprovals.length !== EXPECTED_WRITING_PROMPTS) {
     contentBlockers.push('WRITING_APPROVALS_INCOMPLETE');
+  }
+  const cueAudit = bank?.cueAudit;
+  if (bank?.reportVersion !== 'diagnostic-bank-readiness-v2'
+    || cueAudit?.auditVersion !== EXPECTED_CUE_AUDIT_VERSION
+    || cueAudit?.totals?.items !== bank?.summary?.reservedDraftObjectiveDecisions) {
+    contentBlockers.push('OBJECTIVE_CUE_AUDIT_INCOMPLETE');
+  }
+  if (!Number.isInteger(cueAudit?.totals?.blockingItems)
+    || cueAudit.totals.blockingItems !== 0) {
+    contentBlockers.push('OBJECTIVE_CUE_AUDIT_BLOCKING_DEFECTS');
   }
 
   const audioBlockers = [];
@@ -307,6 +318,9 @@ export function buildDiagnosticReleaseReadiness(input) {
       requiredObjectiveDecisions: EXPECTED_OBJECTIVE_DECISIONS,
       objectiveApprovals: objectiveApprovals.length,
       writingApprovals: writingApprovals.length,
+      cueAuditVersion: cueAudit?.auditVersion ?? null,
+      cueAuditReviewedReservedDrafts: cueAudit?.totals?.items ?? 0,
+      cueAuditBlockingDefects: cueAudit?.totals?.blockingItems ?? null,
     }),
     gate('listening-audio', audioBlockers, {
       verifiedRecordings: publications.length,

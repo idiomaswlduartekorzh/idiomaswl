@@ -56,7 +56,20 @@ function readyFixture() {
     requirements: { decisions: 12 }, operationalDecisions: 12,
   }));
   return {
-    bankReadiness: { summary: { operationalObjectiveDecisions: 288, approvedSelectableObjectiveDecisions: 288, writingApprovedPrompts: 24 }, objectiveCells },
+    bankReadiness: {
+      reportVersion: 'diagnostic-bank-readiness-v2',
+      summary: {
+        reservedDraftObjectiveDecisions: 288,
+        operationalObjectiveDecisions: 288,
+        approvedSelectableObjectiveDecisions: 288,
+        writingApprovedPrompts: 24,
+      },
+      objectiveCells,
+      cueAudit: {
+        auditVersion: 'diagnostic-item-cue-audit-v1',
+        totals: { items: 288, flaggedItems: 0, blockingItems: 0 },
+      },
+    },
     approvals: {
       objectiveApprovals: Array.from({ length: 288 }, (_, index) => ({ id: `o-${index}` })),
       writingApprovals: Array.from({ length: 24 }, (_, index) => ({ id: `w-${index}` })),
@@ -199,6 +212,20 @@ test('all independent evidence gates produce READY_TO_ENABLE before flags are sw
   assert.equal(report.decision, 'READY_TO_ENABLE');
   assert.equal(report.releaseReady, true);
   assert.equal(report.summary.passedGates, report.summary.totalGates);
+});
+
+test('content cannot release with missing cue coverage or an automated blocking defect', () => {
+  const stale = readyFixture();
+  stale.bankReadiness.cueAudit.totals.items = 287;
+  const staleReport = buildDiagnosticReleaseReadiness(stale);
+  assert.ok(staleReport.gates.find(candidate => candidate.id === 'content').blockers
+    .includes('OBJECTIVE_CUE_AUDIT_INCOMPLETE'));
+
+  const defective = readyFixture();
+  defective.bankReadiness.cueAudit.totals.blockingItems = 1;
+  const defectiveReport = buildDiagnosticReleaseReadiness(defective);
+  assert.ok(defectiveReport.gates.find(candidate => candidate.id === 'content').blockers
+    .includes('OBJECTIVE_CUE_AUDIT_BLOCKING_DEFECTS'));
 });
 
 test('production becomes ACTIVE only with production mode and a valid non-secret rollout report', () => {

@@ -11,6 +11,7 @@ import { ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES } from '../src/server/di
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from '../src/server/diagnostic/bank/writing.en.ts';
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK } from '../src/server/diagnostic/bank/index.ts';
+import { diagnosticItemCueAuditAggregate } from '../src/server/diagnostic/bank/cue-audit.ts';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputPath = join(root, 'docs/diagnostic-bank-readiness.json');
@@ -68,11 +69,22 @@ const writing = CEFR_LEVELS.map((level) => {
   };
 });
 
+const reservedObjectiveDrafts = authored.filter((record) =>
+  record.status === 'reserved' && record.exposure === 'reserved');
+const cueAuditAggregate = diagnosticItemCueAuditAggregate(reservedObjectiveDrafts);
+const cueAudit = {
+  auditVersion: cueAuditAggregate.auditVersion,
+  privacy: 'Aggregate-only report: no item identifiers, content, scoring keys, key positions, or rationales.',
+  scope: 'Reserved objective drafts only; non-reserved recycled listening items are excluded.',
+  totals: cueAuditAggregate.totals,
+  cells: cueAuditAggregate.cells.map(({ keyPositions: _keyPositions, ...cell }) => cell),
+};
+
 const report = {
-  reportVersion: 'diagnostic-bank-readiness-v1',
-  snapshotDate: '2026-09-24',
+  reportVersion: 'diagnostic-bank-readiness-v2',
+  snapshotDate: '2026-09-25',
   releaseReady: false,
-  note: 'Draft counts show editorial progress only. They are not approved, calibrated, or selectable.',
+  note: 'Draft counts and automated cue checks show editorial progress only. They are not human-approved, calibrated, or selectable.',
   summary: {
     requiredObjectiveDecisions: cells.reduce((sum, cell) => sum + cell.requirements.decisions, 0),
     reservedDraftObjectiveDecisions: cells.reduce((sum, cell) => sum + cell.authored.reservedDraftDecisions, 0),
@@ -84,9 +96,13 @@ const report = {
     objectiveCellsRequired: cells.length,
     writingDraftPrompts: writing.reduce((sum, row) => sum + row.reservedDraftPrompts, 0),
     writingApprovedPrompts: writing.reduce((sum, row) => sum + row.approvedPrompts, 0),
+    cueAuditReviewedReservedDrafts: cueAudit.totals.items,
+    cueAuditFlaggedForHumanReview: cueAudit.totals.flaggedItems,
+    cueAuditBlockingDefects: cueAudit.totals.blockingItems,
   },
   objectiveCells: cells,
   writing,
+  cueAudit,
 };
 
 const rendered = `${JSON.stringify(report, null, 2)}\n`;

@@ -5,6 +5,7 @@ import test from 'node:test';
 const report = JSON.parse(readFileSync(new URL('../docs/diagnostic-bank-readiness.json', import.meta.url)));
 
 test('readiness report distinguishes authored drafts from operational capacity', () => {
+  assert.equal(report.reportVersion, 'diagnostic-bank-readiness-v2');
   assert.equal(report.releaseReady, false);
   assert.equal(report.summary.requiredObjectiveDecisions, 288);
   assert.equal(report.summary.reservedDraftObjectiveDecisions, 216);
@@ -13,6 +14,22 @@ test('readiness report distinguishes authored drafts from operational capacity',
   assert.equal(report.summary.approvedSelectableObjectiveDecisions, 0);
   assert.equal(report.summary.objectiveCellsRequired, 24);
   assert.equal(report.summary.objectiveCellsWithDraftCapacity, 18);
+});
+
+test('readiness report carries a privacy-safe cue audit for every reserved objective draft', () => {
+  assert.equal(report.cueAudit.auditVersion, 'diagnostic-item-cue-audit-v1');
+  assert.equal(report.summary.cueAuditReviewedReservedDrafts, 216);
+  assert.equal(report.summary.cueAuditFlaggedForHumanReview, 36);
+  assert.equal(report.summary.cueAuditBlockingDefects, 0);
+  assert.deepEqual(report.cueAudit.totals, {
+    items: 216,
+    flaggedItems: 36,
+    blockingItems: 0,
+  });
+  assert.equal(report.cueAudit.cells.length, 18);
+  assert.ok(report.cueAudit.cells.every((cell) => !Object.hasOwn(cell, 'keyPositions')));
+  assert.ok(!JSON.stringify(report.cueAudit).includes('optionId'));
+  assert.ok(!JSON.stringify(report.cueAudit).includes('publicItem'));
 });
 
 test('A1 through C2 reading, grammar and vocabulary have complete draft cells', () => {

@@ -1,8 +1,8 @@
 {
-  "reportVersion": "diagnostic-bank-readiness-v1",
-  "snapshotDate": "2026-09-24",
+  "reportVersion": "diagnostic-bank-readiness-v2",
+  "snapshotDate": "2026-09-25",
   "releaseReady": false,
-  "note": "Draft counts show editorial progress only. They are not approved, calibrated, or selectable.",
+  "note": "Draft counts and automated cue checks show editorial progress only. They are not human-approved, calibrated, or selectable.",
   "summary": {
     "requiredObjectiveDecisions": 288,
     "reservedDraftObjectiveDecisions": 216,
@@ -12,7 +12,10 @@
     "objectiveCellsWithDraftCapacity": 18,
     "objectiveCellsRequired": 24,
     "writingDraftPrompts": 24,
-    "writingApprovedPrompts": 0
+    "writingApprovedPrompts": 0,
+    "cueAuditReviewedReservedDrafts": 216,
+    "cueAuditFlaggedForHumanReview": 36,
+    "cueAuditBlockingDefects": 0
   },
   "objectiveCells": [
     {
@@ -485,5 +488,201 @@
       "reservedDraftPrompts": 4,
       "approvedPrompts": 0
     }
-  ]
+  ],
+  "cueAudit": {
+    "auditVersion": "diagnostic-item-cue-audit-v1",
+    "privacy": "Aggregate-only report: no item identifiers, content, scoring keys, key positions, or rationales.",
+    "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
+    "totals": {
+      "items": 216,
+      "flaggedItems": 36,
+      "blockingItems": 0
+    },
+    "cells": [
+      {
+        "level": "A1",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "A1",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 1,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_SHORTER": 1
+        }
+      },
+      {
+        "level": "A1",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 1,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 1,
+          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
+        }
+      },
+      {
+        "level": "A2",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 2,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 1,
+          "OPTION_LENGTH_SPREAD": 1
+        }
+      },
+      {
+        "level": "A2",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 1,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 1
+        }
+      },
+      {
+        "level": "A2",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 2,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 2,
+          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
+        }
+      },
+      {
+        "level": "B1",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "B1",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 3,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 2,
+          "OPTION_LENGTH_SPREAD": 1,
+          "KEY_MATERIALLY_SHORTER": 1
+        }
+      },
+      {
+        "level": "B1",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 2,
+        "blockingItems": 0,
+        "findings": {
+          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1,
+          "KEY_MATERIALLY_LONGER": 1
+        }
+      },
+      {
+        "level": "B2",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 2,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 1,
+          "TERMINAL_PUNCTUATION_PATTERN_BREAK": 1
+        }
+      },
+      {
+        "level": "B2",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "B2",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 3,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 3,
+          "OPTION_LENGTH_SPREAD": 1
+        }
+      },
+      {
+        "level": "C1",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 3,
+        "blockingItems": 0,
+        "findings": {
+          "OPTION_LENGTH_SPREAD": 2,
+          "KEY_MATERIALLY_LONGER": 1
+        }
+      },
+      {
+        "level": "C1",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 2,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 2
+        }
+      },
+      {
+        "level": "C1",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 6,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 4,
+          "OPTION_LENGTH_SPREAD": 2
+        }
+      },
+      {
+        "level": "C2",
+        "skill": "grammar",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "C2",
+        "skill": "reading",
+        "items": 12,
+        "flaggedItems": 5,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 5,
+          "OPTION_LENGTH_SPREAD": 1
+        }
+      },
+      {
+        "level": "C2",
+        "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 3,
+        "blockingItems": 0,
+        "findings": {
+          "KEY_MATERIALLY_LONGER": 3,
+          "OPTION_LENGTH_SPREAD": 1
+        }
+      }
+    ]
+  }
 }
