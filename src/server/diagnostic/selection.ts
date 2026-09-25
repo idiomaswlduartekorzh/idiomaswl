@@ -26,6 +26,7 @@ export interface DiagnosticCapacityDeficit {
   stage: 'locator' | 'precision';
   skill: DiagnosticObjectiveSkill;
   level: CefrLevel;
+  metric: 'decisions' | 'distinct-stimuli';
   required: number;
   available: number;
 }
@@ -156,18 +157,27 @@ export function auditEnglishMstCapacity(bank: readonly DiagnosticBankRecord[]): 
   const deficits: DiagnosticCapacityDeficit[] = [];
   for (const skill of LOCATOR_OBJECTIVE_SKILLS) {
     for (const level of ENGLISH_DIAGNOSTIC_BLUEPRINT.levels) {
-      const available = new Set(
-        bank
-          .filter(record => isSelectable(record, 'en', new Set())
-            && record.publicItem.skill === skill
-            && record.publicItem.levelCandidate === level)
-          .map(stimulusIdentity),
-      ).size;
-      // A2/B1/B2 need one locator item plus two same-level precision items.
-      const required = ENGLISH_DIAGNOSTIC_BLUEPRINT.locator.targetLevels.includes(level) ? 3 : 2;
-      if (available < required) deficits.push({ stage: 'precision', skill, level, required, available });
+      const candidates = bank.filter(record => isSelectable(record, 'en', new Set())
+        && record.publicItem.skill === skill
+        && record.publicItem.levelCandidate === level);
+      const requiredDecisions = 12;
+      if (candidates.length < requiredDecisions) {
+        deficits.push({
+          stage: 'precision', skill, level, metric: 'decisions',
+          required: requiredDecisions, available: candidates.length,
+        });
+      }
+      if (skill === 'reading' || skill === 'listening') {
+        const availableStimuli = new Set(candidates.map(stimulusIdentity)).size;
+        const requiredStimuli = 6;
+        if (availableStimuli < requiredStimuli) {
+          deficits.push({
+            stage: 'precision', skill, level, metric: 'distinct-stimuli',
+            required: requiredStimuli, available: availableStimuli,
+          });
+        }
+      }
     }
   }
   return deficits;
 }
-

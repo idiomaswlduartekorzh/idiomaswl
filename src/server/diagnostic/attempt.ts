@@ -2,20 +2,15 @@ import { createHash } from 'node:crypto';
 
 import { LOCATOR_OBJECTIVE_SKILLS, routeEnglishLocator, type LocatorScorecard } from '../../lib/diagnostic/mst.ts';
 import type {
+  DiagnosticItemSubmission,
+} from '../../lib/diagnostic/delivery.ts';
+import type {
   DiagnosticStageKind,
   DiagnosticStageReceipt,
   DiagnosticSubmittedResponse,
 } from '../../lib/diagnostic/types.ts';
 import { scoreDiagnosticResponse, type DiagnosticObjectiveOutcome } from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
-
-export interface DiagnosticItemSubmission {
-  itemId: string;
-  contentVersion: string;
-  response: DiagnosticSubmittedResponse;
-  responseMs: number | null;
-  audioPlayCount: number | null;
-}
 
 export interface DiagnosticScoredSubmission extends DiagnosticItemSubmission {
   skill: DiagnosticBankRecord['publicItem']['skill'];

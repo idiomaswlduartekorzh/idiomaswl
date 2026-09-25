@@ -44,6 +44,12 @@ function completeBank() {
   );
 }
 
+function capacityBank() {
+  return objectiveSkills.flatMap(skill =>
+    CEFR_LEVELS.flatMap(level => Array.from({ length: 12 }, (_, index) => fixtureRecord(skill, level, index + 1))),
+  );
+}
+
 test('selects a reproducible locator balanced by skill and target level', () => {
   const bank = completeBank();
   const first = selectEnglishLocator(bank, 'attempt-123');
@@ -75,21 +81,25 @@ test('selects 16 precision decisions without reusing locator items', () => {
 });
 
 test('reports bank capacity deficits and refuses silent underfilled forms', () => {
-  const bank = completeBank();
+  const bank = capacityBank();
   assert.deepEqual(auditEnglishMstCapacity(bank), []);
-  const deficient = bank.filter(record => !(record.publicItem.skill === 'listening'
+  const collapsedStimuli = bank.map(record => record.publicItem.skill === 'listening'
     && record.publicItem.levelCandidate === 'C2'
-    && record.publicItem.id.endsWith('-3')));
-  assert.deepEqual(auditEnglishMstCapacity(deficient), []);
-
-  const exhausted = deficient.filter(record => !(record.publicItem.skill === 'listening'
+    ? { ...record, publicItem: { ...record.publicItem, stimulus: { ...record.publicItem.stimulus, mediaId: 'shared-audio' } } }
+    : record);
+  assert.deepEqual(auditEnglishMstCapacity(collapsedStimuli), [{
+    stage: 'precision', skill: 'listening', level: 'C2', metric: 'distinct-stimuli', required: 6, available: 1,
+  }]);
+  const exhausted = bank.filter(record => !(record.publicItem.skill === 'listening'
     && record.publicItem.levelCandidate === 'C2'
-    && record.publicItem.id.endsWith('-2')));
+    && ['-7', '-8', '-9', '-10', '-11', '-12'].some(suffix => record.publicItem.id.endsWith(suffix))));
   assert.deepEqual(auditEnglishMstCapacity(exhausted), [{
-    stage: 'precision', skill: 'listening', level: 'C2', required: 2, available: 1,
+    stage: 'precision', skill: 'listening', level: 'C2', metric: 'decisions', required: 12, available: 6,
   }]);
   assert.throws(
-    () => selectEnglishPrecisionStage(exhausted, 'high-c1-c2', 'attempt-high', new Set()),
+    () => selectEnglishPrecisionStage(exhausted.filter(record => !(record.publicItem.skill === 'listening'
+      && record.publicItem.levelCandidate === 'C2'
+      && !record.publicItem.id.endsWith('-1'))), 'high-c1-c2', 'attempt-high', new Set()),
     /bank exhausted for listening\/C2/,
   );
 });
@@ -104,4 +114,3 @@ test('draft, unreviewed and non-English items never enter a delivered form', () 
   assert.equal(selected.records.some(record => record.publicItem.id.endsWith('-99')), false);
   assert.equal(selected.records.some(record => record.publicItem.id.endsWith('-98')), false);
 });
-

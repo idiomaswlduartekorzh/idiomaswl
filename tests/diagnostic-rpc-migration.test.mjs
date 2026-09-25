@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import test from 'node:test';
+
+const sql = (await Promise.all([
+  readFile(new URL('../supabase/migrations/20260925000447_diagnostic_attempts.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925001940_diagnostic_attempt_rpcs.sql', import.meta.url), 'utf8'),
+])).join('\n').toLowerCase();
+
+test('diagnostic mutations are atomic security-invoker functions', () => {
+  assert.match(sql, /create function public\.create_diagnostic_attempt/);
+  assert.match(sql, /create function public\.submit_diagnostic_objective_stage/);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 2);
+  assert.equal(sql.includes('security definer'), false);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 2);
+});
+
+test('only service_role can execute diagnostic mutation functions', () => {
+  assert.match(sql, /revoke all on function public\.create_diagnostic_attempt\([\s\S]+?from public, anon, authenticated, service_role;/);
+  assert.match(sql, /grant execute on function public\.create_diagnostic_attempt\([\s\S]+?to service_role;/);
+  assert.match(sql, /revoke all on function public\.submit_diagnostic_objective_stage\([\s\S]+?from public, anon, authenticated, service_role;/);
+  assert.match(sql, /grant execute on function public\.submit_diagnostic_objective_stage\([\s\S]+?to service_role;/);
+  assert.equal(/to (anon|authenticated)/.test(sql), false);
+});
+
+test('stage submission binds owner, version, item ids and content versions before insert', () => {
+  assert.match(sql, /where id = p_attempt_id and user_id = p_user_id[\s\S]+?for update/);
+  assert.match(sql, /v_attempt\.version <> p_expected_attempt_version/);
+  assert.match(sql, /not \(v_item_id = any\(v_stage\.item_ids\)\)/);
+  assert.match(sql, /v_stage\.content_versions->>v_item_id/);
+  assert.match(sql, /diagnostic_response_binding_invalid/);
+});
+
+test('identical retries are idempotent while changed retries are rejected', () => {
+  assert.match(sql, /v_stage\.submission_digest = p_submission_digest[\s\S]+?'replayed', true/);
+  assert.match(sql, /diagnostic_stage_already_completed/);
+  assert.match(sql, /unique \(attempt_id, item_id\)/);
+});
