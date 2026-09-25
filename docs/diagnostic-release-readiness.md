@@ -386,3 +386,19 @@ solo bajo demanda y resume finalización, duración, estados, rutas, gates, escr
 evidencia psicométrica y conteos de alertas. Aunque el endpoint completo sigue reservado para la
 captura hash-bound, la respuesta usada por el navegador omite métricas e identificadores por
 ítem, selecciones de opciones y cualquier dato de participante.
+
+### Retiro de ítems sin romper intentos históricos
+
+Los retiros se registran en `config/diagnostic/item-controls.json`; nunca se borran registros del
+banco ni se reutiliza un ID. Cada control debe identificar tipo, ID y `contentVersion`, usar uno
+de los motivos permitidos, enlazar la decisión y contener revisiones independientes académica y
+de medición. El compilador falla si el ítem no pertenece al banco aprobado, cambió de versión,
+ya no era seleccionable o el paquete contiene campos inesperados, duplicados o firmas no
+independientes.
+
+El efecto es deliberadamente asimétrico: nuevas etapas excluyen el registro `retired`, mientras
+que una etapa emitida conserva acceso servidor a la versión y clave exactas para reanudación y
+puntuación. Las métricas del piloto conservan la huella del registro retirado, pero sus gates
+operativos cuentan solo ítems y consignas activos. El panel muestra ambos conteos. Como estado,
+parámetros, exposición y hash de revisión forman parte de `bankSnapshot.sha256`, cualquier retiro
+o recalibración vuelve obsoletas las evidencias de piloto y calidad hasta una nueva validación.

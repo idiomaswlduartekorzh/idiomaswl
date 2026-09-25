@@ -57,7 +57,9 @@ const responses = attempts.flatMap((attempt, attemptIndex) => bank.map((record, 
 })));
 
 const writing = attempts.map(attempt => ({
-  attemptId: attempt.attemptId, status: 'completed', exactAgreement: 0.75,
+  attemptId: attempt.attemptId, promptId: writingBank[0].publicPrompt.id,
+  contentVersion: writingBank[0].publicPrompt.contentVersion,
+  status: 'completed', exactAgreement: 0.75,
   meanAbsoluteLevelDifference: 0.25, requiresAdjudication: false,
 }));
 const references = attempts.map((attempt, index) => ({
@@ -198,7 +200,7 @@ test('item facility and every keyed distractor must function at the approved sam
   assert.ok(report.itemMetrics.every(item => item.flags.includes('NONFUNCTIONING_DISTRACTOR')));
 });
 
-test('pilot bank fingerprint changes when an objective item or writing prompt changes', () => {
+test('pilot bank fingerprint changes with content, selection state or scoring parameters', () => {
   const original = diagnosticPilotBankSha256({ bank, writingBank });
   const changedObjective = bank.map((record, index) => index === 0 ? {
     ...record,
@@ -208,6 +210,35 @@ test('pilot bank fingerprint changes when an objective item or writing prompt ch
     ...record,
     publicPrompt: { ...record.publicPrompt, title: `${record.publicPrompt.title} changed` },
   }));
+  const retiredObjective = bank.map((record, index) => index === 0 ? { ...record, status: 'retired' } : record);
+  const recalibratedObjective = bank.map((record, index) => index === 0 ? {
+    ...record, parameters: { ...record.parameters, difficulty: 1.25 },
+  } : record);
   assert.notEqual(diagnosticPilotBankSha256({ bank: changedObjective, writingBank }), original);
   assert.notEqual(diagnosticPilotBankSha256({ bank, writingBank: changedWriting }), original);
+  assert.notEqual(diagnosticPilotBankSha256({ bank: retiredObjective, writingBank }), original);
+  assert.notEqual(diagnosticPilotBankSha256({ bank: recalibratedObjective, writingBank }), original);
+});
+
+test('retired records remain auditable but no longer gate the active pilot pool', () => {
+  const controlledBank = bank.map((record, index) => index === 0 ? { ...record, status: 'retired' } : record);
+  const controlledWriting = writingBank.map(record => ({ ...record, status: 'retired' }));
+  const controlledHash = diagnosticPilotBankSha256({ bank: controlledBank, writingBank: controlledWriting });
+  const report = buildReport({
+    bank: controlledBank,
+    writingBank: controlledWriting,
+    measurementEvidence: {
+      ...measurementEvidence,
+      bankSnapshotSha256: controlledHash,
+      fairness: { ...measurementEvidence.fairness, itemsAnalyzed: 1 },
+    },
+  });
+  assert.equal(report.bankSnapshot.objectiveItems, 1);
+  assert.equal(report.bankSnapshot.retiredObjectiveItems, 1);
+  assert.equal(report.bankSnapshot.writingPrompts, 0);
+  assert.equal(report.bankSnapshot.retiredWritingPrompts, 1);
+  assert.equal(report.writingAgreement.submitted, 0);
+  assert.equal(report.writingAgreement.comparablePairs, 0);
+  assert.equal(report.itemMetrics.length, 1);
+  assert.equal(report.itemMetrics[0].itemId, controlledBank[1].publicItem.id);
 });

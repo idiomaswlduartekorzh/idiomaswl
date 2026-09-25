@@ -31,7 +31,9 @@ function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>)
     bankSnapshot: {
       sha256: report.bankSnapshot.sha256,
       objectiveItems: report.bankSnapshot.objectiveItems,
+      retiredObjectiveItems: report.bankSnapshot.retiredObjectiveItems,
       writingPrompts: report.bankSnapshot.writingPrompts,
+      retiredWritingPrompts: report.bankSnapshot.retiredWritingPrompts,
     },
     gates: report.gates,
     attempts: {

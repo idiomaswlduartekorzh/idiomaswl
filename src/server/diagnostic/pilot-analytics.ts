@@ -127,6 +127,8 @@ export interface DiagnosticPilotResponseRow {
 
 export interface DiagnosticPilotWritingRow {
   attemptId: string;
+  promptId: string;
+  contentVersion: string;
   status: string;
   exactAgreement: number | null;
   meanAbsoluteLevelDifference: number | null;
@@ -205,13 +207,24 @@ export function diagnosticPilotBankSha256(input: {
       .sort((left, right) => left.publicItem.id.localeCompare(right.publicItem.id))
       .map(record => ({
         publicItem: record.publicItem,
+        status: record.status,
+        exposure: record.exposure,
+        reviewContentSha256: record.review.contentSha256 ?? null,
         scoring: record.scoring,
         rationale: record.rationale,
         source: record.source,
+        levelRange: record.levelRange,
+        parameters: record.parameters ?? null,
       })),
     writing: [...input.writingBank]
       .sort((left, right) => left.publicPrompt.id.localeCompare(right.publicPrompt.id))
-      .map(record => ({ publicPrompt: record.publicPrompt, source: record.source })),
+      .map(record => ({
+        publicPrompt: record.publicPrompt,
+        status: record.status,
+        exposure: record.exposure,
+        reviewContentSha256: record.review.contentSha256 ?? null,
+        source: record.source,
+      })),
   };
   return createHash('sha256').update(JSON.stringify(canonicalize(snapshot))).digest('hex');
 }
@@ -511,6 +524,19 @@ export function buildDiagnosticPilotReport(input: {
   if (criteriaErrors.length) throw new Error(criteriaErrors.join('; '));
   if (Number.isNaN(Date.parse(input.generatedAt))) throw new Error('pilot report date is invalid');
   validateDataset(input, input.bank);
+  const activeBank = input.bank.filter(record => record.status === 'pilot' || record.status === 'operational');
+  const activeWritingBank = input.writingBank.filter(record => record.status === 'pilot' || record.status === 'operational');
+  const activeItemIds = new Set(activeBank.map(record => record.publicItem.id));
+  const activeResponses = input.responses.filter(response => activeItemIds.has(response.itemId));
+  const writingById = new Map(input.writingBank.map(record => [record.publicPrompt.id, record]));
+  for (const row of input.writing) {
+    const prompt = writingById.get(row.promptId);
+    if (!prompt || prompt.publicPrompt.contentVersion !== row.contentVersion) {
+      throw new Error('pilot writing row does not match the versioned bank');
+    }
+  }
+  const activeWritingIds = new Set(activeWritingBank.map(record => record.publicPrompt.id));
+  const activeWritingRows = input.writing.filter(row => activeWritingIds.has(row.promptId));
   const attemptIds = new Set(input.attempts.map(row => row.attemptId));
   if (input.writing.some(row => !attemptIds.has(row.attemptId))) throw new Error('pilot writing row has no attempt');
   if (new Set(input.writing.map(row => row.attemptId)).size !== input.writing.length) throw new Error('pilot writing rows contain duplicate attempts');
@@ -528,9 +554,9 @@ export function buildDiagnosticPilotReport(input: {
   const completedRouteCounts = Object.fromEntries(ROUTES
     .map(route => [route, completed.filter(row => row.routeId === route).length]));
 
-  const itemMetrics = input.bank.map(record => {
+  const itemMetrics = activeBank.map(record => {
     const item = record.publicItem;
-    const rows = input.responses.filter(response => response.itemId === item.id);
+    const rows = activeResponses.filter(response => response.itemId === item.id);
     const attempted = rows.filter(row => row.outcome !== 'omitted');
     const correct = rows.filter(row => row.outcome === 'correct').length;
     const omissions = rows.filter(row => row.outcome === 'omitted').length;
@@ -540,7 +566,7 @@ export function buildDiagnosticPilotReport(input: {
     for (const row of attempted) {
       for (const optionId of selectedOptionIds(row.submittedResponse)) optionCounts.set(optionId, (optionCounts.get(optionId) ?? 0) + 1);
     }
-    const discrimination = correctedItemTotal(item.id, item.skill, input.responses, input.criteria.minimumDiscriminationSample);
+    const discrimination = correctedItemTotal(item.id, item.skill, activeResponses, input.criteria.minimumDiscriminationSample);
     const omissionRate = rate(omissions, rows.length);
     const facility = rate(correct, attempted.length);
     const correctOptionIds = record.scoring.kind === 'short-text'
@@ -586,7 +612,7 @@ export function buildDiagnosticPilotReport(input: {
     };
   }).sort((left, right) => left.itemId.localeCompare(right.itemId));
 
-  const writingPairs = input.writing.filter(row => boundedRate(row.exactAgreement)
+  const writingPairs = activeWritingRows.filter(row => boundedRate(row.exactAgreement)
     && typeof row.meanAbsoluteLevelDifference === 'number' && Number.isFinite(row.meanAbsoluteLevelDifference));
   const writingExactAgreement = writingPairs.length
     ? rounded(writingPairs.reduce((sum, row) => sum + (row.exactAgreement ?? 0), 0) / writingPairs.length)
@@ -601,7 +627,7 @@ export function buildDiagnosticPilotReport(input: {
     evidence: input.measurementEvidence,
     criteria: input.criteria,
     bankSnapshotSha256,
-    objectiveItemCount: input.bank.length,
+    objectiveItemCount: activeBank.length,
   });
 
   const gates = {
@@ -639,8 +665,10 @@ export function buildDiagnosticPilotReport(input: {
     criteria: { version: input.criteria.criteriaVersion, status: input.criteria.status },
     bankSnapshot: {
       sha256: bankSnapshotSha256,
-      objectiveItems: input.bank.length,
-      writingPrompts: input.writingBank.length,
+      objectiveItems: activeBank.length,
+      retiredObjectiveItems: input.bank.length - activeBank.length,
+      writingPrompts: activeWritingBank.length,
+      retiredWritingPrompts: input.writingBank.length - activeWritingBank.length,
       attemptBankVersions: [...new Set(input.attempts.map(row => row.bankVersion))].sort(),
     },
     decision: allGatesPass ? 'ELIGIBLE_FOR_VALIDATION_REVIEW' : 'HOLD',
@@ -657,7 +685,7 @@ export function buildDiagnosticPilotReport(input: {
     },
     itemMetrics,
     writingAgreement: {
-      submitted: input.writing.length,
+      submitted: activeWritingRows.length,
       comparablePairs: writingPairs.length,
       exactAgreement: writingExactAgreement,
       meanAbsoluteLevelDifference: writingMeanDifference,

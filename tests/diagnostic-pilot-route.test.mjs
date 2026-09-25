@@ -21,6 +21,8 @@ test('pilot health projection keeps browser data aggregate and omits item-level 
   const projection = route.slice(route.indexOf('function healthProjection'), route.indexOf('function error'));
   assert.match(projection, /flagCounts/);
   assert.match(projection, /completedRouteCounts/);
+  assert.match(projection, /retiredObjectiveItems/);
+  assert.match(projection, /retiredWritingPrompts/);
   assert.match(projection, /measurementEvidence/);
   assert.doesNotMatch(projection, /itemId|contentVersion|optionSelections|distractorFunctioning|submittedResponse/);
   assert.match(route, /searchParams\.get\('scope'\) === 'health' \? healthProjection\(report\) : report/);

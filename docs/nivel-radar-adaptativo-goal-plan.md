@@ -225,6 +225,15 @@ Actualizado el 25 de septiembre de 2026:
   respuesta mínima antes de enviarla al navegador: no incluye identidades, respuestas, textos,
   IDs de ítem u opción, claves ni etiquetas de grupos. La carga es `same-origin`, `no-store` y
   conserva el límite administrativo existente.
+- **Fase 8 — retiro preservando historia implementado:**
+  `config/diagnostic/item-controls.json` separa la disponibilidad futura del contenido
+  versionado. Un retiro exige versión exacta, motivo cerrado, referencia de decisión y revisiones
+  independientes de liderazgo académico y medición. El registro continúa en el banco servidor
+  con estado `retired`, por lo que una etapa ya emitida todavía puede reanudarse y puntuarse con
+  su clave y versión originales; los selectores y auditorías de capacidad dejan de contarlo de
+  inmediato. El hash del banco liga ahora estado, exposición, revisión y parámetros, de modo que
+  retirar o recalibrar invalida automáticamente piloto y release anteriores. El manifiesto
+  comprometido permanece vacío: esta infraestructura no inventa retiros ni firmas.
 - **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
   el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
   confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`

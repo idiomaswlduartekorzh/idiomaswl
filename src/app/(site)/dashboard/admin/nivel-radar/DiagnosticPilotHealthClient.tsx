@@ -9,7 +9,13 @@ type PilotReport = {
   generatedAt: string;
   decision: 'HOLD' | 'ELIGIBLE_FOR_VALIDATION_REVIEW';
   criteria: { version: string; status: string };
-  bankSnapshot: { sha256: string; objectiveItems: number; writingPrompts: number };
+  bankSnapshot: {
+    sha256: string;
+    objectiveItems: number;
+    retiredObjectiveItems: number;
+    writingPrompts: number;
+    retiredWritingPrompts: number;
+  };
   gates: GateMap;
   attempts: {
     started: number;
@@ -149,7 +155,8 @@ export default function DiagnosticPilotHealthClient() {
             <Card label="Duración" value={duration(report.attempts.medianCompletionMs)} detail={`p90: ${duration(report.attempts.p90CompletionMs)}`} />
             <Card label="Escritura doble" value={report.writingAgreement.comparablePairs} detail={`Acuerdo exacto: ${percent(report.writingAgreement.exactAgreement)}`} />
             <Card label="Referencias" value={report.independentReference.pairs} detail={`±1 nivel: ${percent(report.independentReference.withinOneLevel)}`} />
-            <Card label="Ítems del banco" value={report.bankSnapshot.objectiveItems} detail={`${report.bankSnapshot.writingPrompts} consignas`} />
+            <Card label="Ítems activos" value={report.bankSnapshot.objectiveItems} detail={`${report.bankSnapshot.retiredObjectiveItems} retirados`} />
+            <Card label="Consignas activas" value={report.bankSnapshot.writingPrompts} detail={`${report.bankSnapshot.retiredWritingPrompts} retiradas`} />
           </div>
 
           <h3 style={{ margin: '18px 0 8px', fontSize: 15 }}>Rutas completadas</h3>

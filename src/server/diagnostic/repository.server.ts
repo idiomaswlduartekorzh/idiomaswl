@@ -669,7 +669,7 @@ export async function loadDiagnosticPilotDataset(input: {
     ),
     loadDiagnosticPilotRowsForAttempts(
       'diagnostic_writing_evaluations',
-      'attempt_id,status,final_evidence',
+      'attempt_id,prompt_id,content_version,status,final_evidence',
       attemptIds,
     ),
     loadDiagnosticPilotRowsForAttempts(
@@ -690,7 +690,8 @@ export async function loadDiagnosticPilotDataset(input: {
     const evidence = finalEvidence.writing && typeof finalEvidence.writing === 'object' ? finalEvidence.writing as Record<string, any> : {};
     const agreement = evidence.agreement && typeof evidence.agreement === 'object' ? evidence.agreement as Record<string, any> : {};
     return {
-      attemptId: String(row.attempt_id), status: String(row.status),
+      attemptId: String(row.attempt_id), promptId: String(row.prompt_id),
+      contentVersion: String(row.content_version), status: String(row.status),
       exactAgreement: typeof agreement.exactAgreement === 'number' ? agreement.exactAgreement : null,
       meanAbsoluteLevelDifference: typeof agreement.meanAbsoluteLevelDifference === 'number' ? agreement.meanAbsoluteLevelDifference : null,
       requiresAdjudication: typeof agreement.requiresAdjudication === 'boolean' ? agreement.requiresAdjudication : null,

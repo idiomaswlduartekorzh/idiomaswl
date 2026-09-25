@@ -1,6 +1,7 @@
 import type { DiagnosticBankRecord } from '../types.ts';
 import type { DiagnosticWritingPromptRecord } from '../../../lib/diagnostic/writing.ts';
 import approvals from '../../../../config/diagnostic/english-bank-approvals.json' with { type: 'json' };
+import itemControls from '../../../../config/diagnostic/item-controls.json' with { type: 'json' };
 import { ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES } from './language-use-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from './language-use.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } from './listening.en.ts';
@@ -12,6 +13,7 @@ import {
   releaseApprovedWritingBank,
   type DiagnosticApprovalManifest,
 } from './release.ts';
+import { applyDiagnosticItemControls, type DiagnosticItemControlManifest } from './controls.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from './writing.en.ts';
 
 /** Versioned pilot registry. The approval manifest is empty until independent review is recorded. */
@@ -24,14 +26,21 @@ const objectiveCandidates: readonly DiagnosticBankRecord[] = [
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
 ];
-export const ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK: readonly DiagnosticBankRecord[] = releaseApprovedObjectiveBank(
+const approvedObjectiveBank = releaseApprovedObjectiveBank(
   objectiveCandidates,
   approvals as DiagnosticApprovalManifest,
 );
 
 /** Writing uses the same fail-closed approval manifest and never promotes draft prompts implicitly. */
 export const ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION = 'en-writing-bank-pilot-v1';
-export const ENGLISH_DIAGNOSTIC_WRITING_BANK: readonly DiagnosticWritingPromptRecord[] = releaseApprovedWritingBank(
+const approvedWritingBank = releaseApprovedWritingBank(
   ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES,
   approvals as DiagnosticApprovalManifest,
 );
+const controlledBank = applyDiagnosticItemControls({
+  objectiveBank: approvedObjectiveBank,
+  writingBank: approvedWritingBank,
+  manifest: itemControls as DiagnosticItemControlManifest,
+});
+export const ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK: readonly DiagnosticBankRecord[] = controlledBank.objectiveBank;
+export const ENGLISH_DIAGNOSTIC_WRITING_BANK: readonly DiagnosticWritingPromptRecord[] = controlledBank.writingBank;
