@@ -200,8 +200,11 @@ Actualizado el 24 de septiembre de 2026:
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
   columnas, grants directos, RPC y bucket privado sin leer filas ni ejecutar escrituras; soporta
-  claves nuevas y legacy, pero declara expresamente que no sustituye el recorrido autenticado de
-  la aplicación. El último corte local ejecutó **201 pruebas** y
+  claves nuevas y legacy. Un segundo runner destructivo, limitado a una cuenta fixture y con
+  confirmación ligada a su UUID, ya cubre inicio, reanudación, audio privado, etapas objetivas,
+  escritura, revisión humana, perfil de cinco habilidades y borrado verificado; no se ejecutó
+  porque este entorno carece de credenciales y banco piloto aprobado. El último corte local
+  ejecutó **205 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

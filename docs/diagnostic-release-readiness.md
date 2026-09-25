@@ -74,6 +74,22 @@ El archivo contiene estados y códigos, pero no filas, UUID, correos ni credenci
 grants, RPC y Storage, pero no sustituye la prueba de inicio, avance, reanudación, audio,
 escritura y resultado a través de la aplicación.
 
+Ese recorrido completo se ejecuta por separado con `npm run verify:diagnostic-auth-flow`. El
+comando es dry run por defecto y requiere una cuenta fixture dedicada, cookies de usuario y
+administrador cargadas en variables de entorno, además de una confirmación destructiva ligada al
+UUID exacto:
+
+```bash
+export DIAGNOSTIC_AUTH_FLOW_CONFIRM="DELETE_ALL_DIAGNOSTIC_DATA_FOR_DEDICATED_FIXTURE:$DIAGNOSTIC_VERIFY_USER_ID"
+npm run verify:diagnostic-auth-flow -- --execute \
+  --output=.diagnostic-private/evidence/authenticated-flow.json
+```
+
+El runner no conoce claves de respuesta: entrega omisiones válidas, comprueba reanudación y audio
+privado, completa la consigna fixture, usa la revisión exclusivamente humana, exige el perfil de
+cinco habilidades y borra inscripción, intento y evidencia al final. También intenta el borrado
+si el recorrido falla. Por eso jamás debe apuntarse a una cuenta real ni compartida.
+
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
 diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica
