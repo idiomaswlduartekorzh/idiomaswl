@@ -611,6 +611,12 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
 
           {/* IELTS, TOEFL y Goethe: cola pendiente e historial revisado. */}
           <div id="review-queues" style={{ display: 'flex', flexDirection: 'column', gap: 14, scrollMarginTop: 18 }}>
+            <Card>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
+                <div><h3 style={{ margin: 0, fontSize: 14 }}>Nivel Radar · revisión diagnóstica</h3><p style={{ margin: '4px 0 0', color: MUTED, fontSize: 11 }}>Calificación ciega MCER y adjudicación independiente.</p></div>
+                <Link href="/dashboard/admin/nivel-radar" style={{ background: A, color: '#fff', borderRadius: 9, padding: '9px 12px', fontSize: 11, fontWeight: 800, textDecoration: 'none' }}>Abrir cola</Link>
+              </div>
+            </Card>
             {data.ieltsReviews.length > 0 && <IELTSReviewPanel items={data.ieltsReviews} />}
             {data.toeflReviews.length > 0 && <TOEFLReviewPanel items={data.toeflReviews} />}
             {data.goetheReviews.length > 0 && <GoetheReviewPanel items={data.goetheReviews} />}

@@ -81,7 +81,10 @@ Actualizado el 24 de septiembre de 2026:
   permanece deliberadamente desconectada hasta aprobar privacidad, consentimiento y proveedor.
   La evaluación automática se persiste una sola vez mediante RPC exclusiva de servidor; un
   reintento distinto falla, y la finalización carga esa evidencia inmutable desde la base en vez
-  de aceptar una copia manipulable reenviada por el navegador del administrador.
+  de aceptar una copia manipulable reenviada por el navegador del administrador. La cola
+  académica de administración mantiene ciega la primera revisión: solo muestra la evaluación
+  automática cuando existe discrepancia y el caso entra en adjudicación. La primera revisión
+  queda guardada e inmutable; la adjudicación exige una identidad administradora diferente.
 - **Fase 4 — entrega privada de escucha iniciada:** el endpoint de medios autentica al usuario,
   comprueba que el audio pertenece a su etapa activa y no expirada, descarga desde un bucket
   privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3
@@ -144,7 +147,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **157 pruebas** y
+  borradores; el último corte local ejecutó **162 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

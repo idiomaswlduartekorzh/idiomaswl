@@ -59,8 +59,11 @@ export async function finalizeEnglishDiagnostic(input: {
     || input.attempt.engineVersion !== DIAGNOSTIC_ENGINE_VERSION) {
     throw new Error('diagnostic version unavailable');
   }
-  if (input.human.reviewerId !== input.authenticatedAdminId
-    || (input.adjudicated && input.adjudicated.reviewerId !== input.authenticatedAdminId)) {
+  const reviewerBindingInvalid = input.adjudicated
+    ? input.adjudicated.reviewerId !== input.authenticatedAdminId
+      || input.adjudicated.reviewerId === input.human.reviewerId
+    : input.human.reviewerId !== input.authenticatedAdminId;
+  if (reviewerBindingInvalid) {
     throw new Error('diagnostic reviewer identity mismatch');
   }
   for (const evaluation of [input.automated, input.human, ...(input.adjudicated ? [input.adjudicated] : [])]) {

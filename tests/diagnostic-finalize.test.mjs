@@ -91,6 +91,27 @@ test('requires adjudication for material disagreement and binds the reviewer ide
   }, dependencies), /reviewer identity mismatch/);
 });
 
+test('adjudication is accepted only from a reviewer independent of the first human review', async () => {
+  const automated = evaluation('automated', ['A2', 'B1', 'A2', 'B1']);
+  const human = evaluation('human', ['B2', 'B1', 'B2', 'B1']);
+  const adjudicated = { ...evaluation('human', ['B1', 'B1', 'B1', 'B1']), reviewerId: 'admin-2' };
+  const successful = await finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, observations,
+    automated, human, adjudicated,
+  }, {
+    objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
+    persist: async () => ({ replayed: false, version: 5 }),
+  });
+  assert.equal(successful.version, 5);
+  await assert.rejects(() => finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    automated, human, adjudicated: { ...adjudicated, reviewerId: 'admin-1' },
+  }, {
+    objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
+    persist: async () => ({ replayed: false, version: 5 }),
+  }), /reviewer identity mismatch/);
+});
+
 test('rejects unknown objective evidence and stale versions', async () => {
   const dependencies = {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),

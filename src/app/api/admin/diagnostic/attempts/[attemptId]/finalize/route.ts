@@ -8,10 +8,13 @@ import {
 import { finalizeEnglishDiagnostic } from '@/server/diagnostic/finalize-core';
 import {
   loadDiagnosticFinalizationContext,
+  persistDiagnosticHumanWritingEvaluation,
   persistDiagnosticFinalization,
 } from '@/server/diagnostic/repository.server';
 import {
+  compareWritingEvaluations,
   parseDiagnosticWritingEvaluation,
+  validateDiagnosticWritingEvaluation,
   type DiagnosticAutomatedWritingEvaluation,
   type DiagnosticHumanWritingEvaluation,
 } from '@/server/diagnostic/writing';
@@ -64,26 +67,72 @@ export async function POST(
   }
   if (!body || typeof body !== 'object' || Array.isArray(body)) return jsonError('INVALID_EVALUATION', 'La evaluación no es válida.', 400);
   const candidate = body as Record<string, unknown>;
-  const humanInput = parseDiagnosticWritingEvaluation(candidate.human, 'human') as DiagnosticHumanWritingEvaluation | null;
+  const humanInput = candidate.human === undefined
+    ? undefined
+    : parseDiagnosticWritingEvaluation(candidate.human, 'human') as DiagnosticHumanWritingEvaluation | null;
   const adjudicatedInput = candidate.adjudicated === undefined
     ? undefined
     : parseDiagnosticWritingEvaluation(candidate.adjudicated, 'human') as DiagnosticHumanWritingEvaluation | null;
-  if (!humanInput || adjudicatedInput === null) return jsonError('INVALID_EVALUATION', 'La evaluación no cumple el contrato.', 400);
-  const human = { ...humanInput, reviewerId: admin.id };
-  const adjudicated = adjudicatedInput ? { ...adjudicatedInput, reviewerId: admin.id } : undefined;
+  if (humanInput === null || adjudicatedInput === null) return jsonError('INVALID_EVALUATION', 'La evaluación no cumple el contrato.', 400);
 
   try {
     const finalization = await loadDiagnosticFinalizationContext(attemptId);
     if (!finalization) return jsonError('NOT_FOUND', 'Intento no encontrado.', 404);
+    const promptRecord = ENGLISH_DIAGNOSTIC_WRITING_BANK.find(record =>
+      record.publicPrompt.id === finalization.promptId
+      && record.publicPrompt.contentVersion === finalization.promptContentVersion);
+    if (!promptRecord) return jsonError('VERSION_UNAVAILABLE', 'La consigna versionada no está disponible.', 409);
     const automated = parseDiagnosticWritingEvaluation(
       finalization.automatedEvaluation,
       'automated',
     ) as DiagnosticAutomatedWritingEvaluation | null;
     if (!automated) return jsonError('AUTOMATED_EVALUATION_PENDING', 'La evaluación automatizada aún no está disponible.', 409);
-    const promptRecord = ENGLISH_DIAGNOSTIC_WRITING_BANK.find(record =>
-      record.publicPrompt.id === finalization.promptId
-      && record.publicPrompt.contentVersion === finalization.promptContentVersion);
-    if (!promptRecord) return jsonError('VERSION_UNAVAILABLE', 'La consigna versionada no está disponible.', 409);
+    const storedHuman = parseDiagnosticWritingEvaluation(
+      finalization.humanEvaluation,
+      'human',
+    ) as DiagnosticHumanWritingEvaluation | null;
+    if (finalization.humanEvaluation !== null && !storedHuman) {
+      return jsonError('REVIEW_STATE_INVALID', 'La revisión guardada no cumple el contrato.', 409);
+    }
+    if (storedHuman && humanInput) {
+      return jsonError('HUMAN_REVIEW_IMMUTABLE', 'La primera revisión humana ya fue registrada.', 409);
+    }
+    if (!storedHuman && !humanInput) {
+      return jsonError('HUMAN_REVIEW_REQUIRED', 'Falta la revisión humana inicial.', 400);
+    }
+    const human = storedHuman ?? { ...humanInput!, reviewerId: admin.id };
+    const humanErrors = validateDiagnosticWritingEvaluation(human, promptRecord.publicPrompt, finalization.responseText);
+    if (humanErrors.length) return jsonError('INVALID_EVALUATION', 'La revisión humana no coincide con la respuesta guardada.', 400);
+    if (automated.rubricVersion !== human.rubricVersion) {
+      return jsonError('RUBRIC_VERSION_CONFLICT', 'Las evaluaciones usan versiones distintas de la rúbrica.', 409);
+    }
+    const agreement = compareWritingEvaluations(automated, human);
+    if (!storedHuman) {
+      await persistDiagnosticHumanWritingEvaluation({
+        attemptId: finalization.attempt.id,
+        userId: finalization.attempt.userId,
+        evaluation: human,
+        nextStatus: agreement.requiresAdjudication ? 'adjudication' : 'human-review',
+      });
+    }
+    if (agreement.requiresAdjudication && !adjudicatedInput) {
+      return jsonError('ADJUDICATION_REQUIRED', 'La discrepancia exige adjudicación por otro revisor.', 409);
+    }
+    if (!agreement.requiresAdjudication && adjudicatedInput) {
+      return jsonError('ADJUDICATION_NOT_REQUIRED', 'Esta revisión no requiere adjudicación.', 409);
+    }
+    const adjudicated = adjudicatedInput
+      ? { ...adjudicatedInput, reviewerId: admin.id }
+      : undefined;
+    if (adjudicated && adjudicated.reviewerId === human.reviewerId) {
+      return jsonError('INDEPENDENT_ADJUDICATOR_REQUIRED', 'La adjudicación requiere otro revisor.', 403);
+    }
+    if (adjudicated) {
+      const adjudicationErrors = validateDiagnosticWritingEvaluation(adjudicated, promptRecord.publicPrompt, finalization.responseText);
+      if (adjudicationErrors.length || adjudicated.rubricVersion !== automated.rubricVersion) {
+        return jsonError('INVALID_EVALUATION', 'La adjudicación no coincide con la respuesta o la rúbrica guardada.', 400);
+      }
+    }
     const result = await finalizeEnglishDiagnostic({
       authenticatedAdminId: admin.id,
       attempt: finalization.attempt,

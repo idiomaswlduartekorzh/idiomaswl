@@ -8,14 +8,67 @@ import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
 import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
-import type { DiagnosticAutomatedWritingEvaluation } from './writing';
+import type { DiagnosticAutomatedWritingEvaluation, DiagnosticHumanWritingEvaluation } from './writing';
 import type { DiagnosticResumeSnapshot } from './resume-core';
+import { diagnosticWritingResponseSha256, parseDiagnosticWritingEvaluation } from './writing';
 import type {
   DiagnosticPilotAttemptRow,
   DiagnosticPilotReferenceRow,
   DiagnosticPilotResponseRow,
   DiagnosticPilotWritingRow,
 } from './pilot-analytics';
+
+export interface DiagnosticWritingReviewQueueRow {
+  attemptId: string;
+  attemptVersion: number;
+  routeId: string | null;
+  promptId: string;
+  promptContentVersion: string;
+  responseText: string;
+  responseSha256: string;
+  wordCount: number;
+  status: 'automated-scored' | 'human-review' | 'adjudication';
+  automatedEvaluation: DiagnosticAutomatedWritingEvaluation;
+  humanEvaluation: DiagnosticHumanWritingEvaluation | null;
+  createdAt: string;
+}
+
+export async function loadDiagnosticWritingReviewQueue(limit = 100): Promise<readonly DiagnosticWritingReviewQueueRow[]> {
+  const boundedLimit = Math.max(1, Math.min(250, Math.trunc(limit)));
+  const admin = createAdminClient();
+  const { data: writingRows, error: writingError } = await admin.from('diagnostic_writing_evaluations')
+    .select('attempt_id,prompt_id,content_version,response_text,word_count,status,automated_evaluation,human_evaluation,created_at')
+    .in('status', ['automated-scored', 'human-review', 'adjudication'])
+    .order('created_at', { ascending: true })
+    .limit(boundedLimit);
+  if (writingError) throw new Error('diagnostic_persistence_unavailable');
+  const attemptIds = [...new Set((writingRows ?? []).map(row => String(row.attempt_id)))];
+  if (!attemptIds.length) return [];
+  const { data: attempts, error: attemptError } = await admin.from('diagnostic_attempts')
+    .select('id,version,route_id,status').in('id', attemptIds);
+  if (attemptError) throw new Error('diagnostic_persistence_unavailable');
+  const attemptsById = new Map((attempts ?? []).map(attempt => [String(attempt.id), attempt]));
+  return (writingRows ?? []).flatMap(row => {
+    const attempt = attemptsById.get(String(row.attempt_id));
+    const automated = parseDiagnosticWritingEvaluation(row.automated_evaluation, 'automated') as DiagnosticAutomatedWritingEvaluation | null;
+    const human = row.human_evaluation === null
+      ? null
+      : parseDiagnosticWritingEvaluation(row.human_evaluation, 'human') as DiagnosticHumanWritingEvaluation | null;
+    if (!attempt || attempt.status !== 'scoring' || !automated
+      || (row.human_evaluation !== null && !human)
+      || typeof row.response_text !== 'string'
+      || !Number.isInteger(row.word_count)
+      || !['automated-scored', 'human-review', 'adjudication'].includes(String(row.status))) return [];
+    return [{
+      attemptId: String(row.attempt_id), attemptVersion: Number(attempt.version),
+      routeId: attempt.route_id ? String(attempt.route_id) : null,
+      promptId: String(row.prompt_id), promptContentVersion: String(row.content_version),
+      responseText: row.response_text, responseSha256: diagnosticWritingResponseSha256(row.response_text),
+      wordCount: Number(row.word_count), status: row.status as DiagnosticWritingReviewQueueRow['status'],
+      automatedEvaluation: automated, humanEvaluation: human, createdAt: String(row.created_at),
+    }];
+  });
+}
 
 export async function loadDiagnosticAttemptForResume(input: {
   attemptId: string;
@@ -91,6 +144,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
   promptContentVersion: string;
   responseText: string;
   automatedEvaluation: unknown;
+  humanEvaluation: unknown;
   observations: readonly DiagnosticObjectiveObservation[];
 } | null> {
   const admin = createAdminClient();
@@ -103,7 +157,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
       .select('id,user_id,version,status,bank_version,blueprint_version,engine_version')
       .eq('id', attemptId).maybeSingle(),
     admin.from('diagnostic_writing_evaluations')
-      .select('prompt_id,content_version,response_text,status,automated_evaluation').eq('attempt_id', attemptId).maybeSingle(),
+      .select('prompt_id,content_version,response_text,status,automated_evaluation,human_evaluation').eq('attempt_id', attemptId).maybeSingle(),
     admin.from('diagnostic_responses')
       .select('item_id,outcome').eq('attempt_id', attemptId),
   ]);
@@ -125,6 +179,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
     promptId: String(writing.prompt_id), promptContentVersion: String(writing.content_version),
     responseText: writing.response_text,
     automatedEvaluation: writing.automated_evaluation,
+    humanEvaluation: writing.human_evaluation,
     observations: responses.map(response => ({
       itemId: String(response.item_id), outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],
     })),
@@ -153,6 +208,34 @@ export async function persistDiagnosticAutomatedWritingEvaluation(input: {
   const result = data as { replayed?: unknown };
   if (typeof result.replayed !== 'boolean') throw new Error('diagnostic_persistence_unavailable');
   return { replayed: result.replayed };
+}
+
+export async function persistDiagnosticHumanWritingEvaluation(input: {
+  attemptId: string;
+  userId: string;
+  evaluation: DiagnosticHumanWritingEvaluation;
+  nextStatus: 'human-review' | 'adjudication';
+}): Promise<{ replayed: boolean; status: 'human-review' | 'adjudication' }> {
+  const { data, error } = await createAdminClient().rpc('record_diagnostic_human_writing_evaluation', {
+    p_attempt_id: input.attemptId,
+    p_user_id: input.userId,
+    p_human_evaluation: input.evaluation,
+    p_next_status: input.nextStatus,
+  });
+  if (error || !data || typeof data !== 'object') {
+    const knownCode = [
+      'diagnostic_attempt_not_found', 'diagnostic_attempt_not_scoring', 'diagnostic_writing_not_found',
+      'diagnostic_automated_evaluation_missing', 'diagnostic_human_evaluation_invalid',
+      'diagnostic_human_evaluation_conflict', 'diagnostic_writing_not_ready_for_human_review',
+    ].find(code => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  const result = data as { replayed?: unknown; status?: unknown };
+  if (typeof result.replayed !== 'boolean' || !['human-review', 'adjudication'].includes(String(result.status))) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return { replayed: result.replayed, status: result.status as 'human-review' | 'adjudication' };
 }
 
 export async function persistDiagnosticFinalization(

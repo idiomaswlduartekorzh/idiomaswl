@@ -8,6 +8,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925014500_diagnostic_writing_submission.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925021500_diagnostic_finalization.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925030000_diagnostic_writing_automation.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925031500_diagnostic_human_writing_review.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 
 test('diagnostic mutations are atomic security-invoker functions', () => {
@@ -16,9 +17,10 @@ test('diagnostic mutations are atomic security-invoker functions', () => {
   assert.match(sql, /create function public\.submit_diagnostic_writing_stage/);
   assert.match(sql, /create function public\.complete_diagnostic_attempt/);
   assert.match(sql, /create function public\.record_diagnostic_automated_writing_evaluation/);
-  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 5);
+  assert.match(sql, /create function public\.record_diagnostic_human_writing_evaluation/);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 6);
   assert.equal(sql.includes('security definer'), false);
-  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 5);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 6);
 });
 
 test('only service_role can execute diagnostic mutation functions', () => {
@@ -32,7 +34,17 @@ test('only service_role can execute diagnostic mutation functions', () => {
   assert.match(sql, /grant execute on function public\.complete_diagnostic_attempt\([\s\S]+?to service_role;/);
   assert.match(sql, /revoke all on function public\.record_diagnostic_automated_writing_evaluation\([\s\S]+?from public, anon, authenticated, service_role;/);
   assert.match(sql, /grant execute on function public\.record_diagnostic_automated_writing_evaluation\([\s\S]+?to service_role;/);
+  assert.match(sql, /revoke all on function public\.record_diagnostic_human_writing_evaluation\([\s\S]+?from public, anon, authenticated, service_role;/);
+  assert.match(sql, /grant execute on function public\.record_diagnostic_human_writing_evaluation\([\s\S]+?to service_role;/);
   assert.equal(/to (anon|authenticated)/.test(sql), false);
+});
+
+test('first human review is immutable and can move to independent adjudication', () => {
+  assert.match(sql, /v_writing\.automated_evaluation is null[\s\S]+?diagnostic_automated_evaluation_missing/);
+  assert.match(sql, /v_writing\.human_evaluation = p_human_evaluation[\s\S]+?'replayed', true/);
+  assert.match(sql, /diagnostic_human_evaluation_conflict/);
+  assert.match(sql, /p_next_status not in \('human-review','adjudication'\)/);
+  assert.match(sql, /set human_evaluation = p_human_evaluation,[\s\S]+?status = p_next_status/);
 });
 
 test('automated writing evidence is stored once and conflicting retries fail closed', () => {

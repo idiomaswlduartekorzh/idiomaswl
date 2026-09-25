@@ -76,6 +76,8 @@ test('diagnostic finalization is admin-only, same-origin and server-scored', () 
   assert.match(finalizeRoute, /loadDiagnosticFinalizationContext/);
   assert.match(finalizeRoute, /finalization\.automatedEvaluation/);
   assert.doesNotMatch(finalizeRoute, /candidate\.automated/);
+  assert.match(finalizeRoute, /persistDiagnosticHumanWritingEvaluation/);
+  assert.match(finalizeRoute, /INDEPENDENT_ADJUDICATOR_REQUIRED/);
   assert.match(finalizeRoute, /finalizeEnglishDiagnostic/);
   assert.match(finalizeRoute, /persistDiagnosticFinalization/);
   assert.match(finalizeRoute, /reviewerId: admin\.id/);
