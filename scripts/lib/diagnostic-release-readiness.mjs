@@ -173,6 +173,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     qualityBlockers.push('PRODUCTION_BUILD_NOT_VERIFIED_FOR_SOURCE');
   }
   if (!nonEmpty(evidence?.quality?.verifiedCommit)
+    || !SHA256.test(evidence?.quality?.receiptSha256 ?? '')
     || !isIsoDate(evidence?.quality?.verifiedAt)
     || !nonEmpty(evidence?.quality?.verifiedBy)) {
     qualityBlockers.push('QUALITY_EVIDENCE_NOT_ATTESTED');

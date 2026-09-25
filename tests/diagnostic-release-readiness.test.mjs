@@ -53,6 +53,7 @@ function readyFixture() {
       quality: {
         diagnosticSuiteSourceSha256: 'source-sha', productionBuildSourceSha256: 'source-sha',
         verifiedCommit: commit, verifiedAt: reviewedAt, verifiedBy: 'qa-reviewer',
+        receiptSha256: '3'.repeat(64),
       },
     },
     pilotReport: {

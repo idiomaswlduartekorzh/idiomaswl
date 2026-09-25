@@ -112,6 +112,24 @@ registrador actualiza exclusivamente la evidencia de migración, recorrido auten
 no aprueba retención, escritura, contenido ni piloto. La puerta vuelve a comparar el hash de
 fuente y de banco, y rechaza recibos de otro despliegue, proyecto o antigüedad.
 
+### Evidencia técnica reproducible
+
+La suite, TypeScript y el build no se atestiguan a mano. Sobre un commit limpio se ejecutan y se
+guardan en un recibo privado ligado a la huella de fuente:
+
+```bash
+npm run verify:diagnostic-release-quality -- --execute \
+  --output=.diagnostic-private/evidence/release-quality.json
+npm run record:diagnostic-quality-evidence -- \
+  --receipt=.diagnostic-private/evidence/release-quality.json
+```
+
+El segundo comando es primero un dry run. Imprime la confirmación SHA-256 que debe repetirse con
+`--write`, `--attested-by=<identidad-del-verificador>` y `--confirm=<valor-exacto>`. El recibo
+solo es válido durante 24 horas, registra el número de pruebas y páginas estáticas, y se rechaza
+si el árbol se ensucia o cambia la huella durante la ejecución. Registrar esta evidencia no puede
+aprobar contenido, audio, escritura, retención ni piloto.
+
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
 diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica

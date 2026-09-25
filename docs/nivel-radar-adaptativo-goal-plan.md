@@ -205,6 +205,11 @@ Actualizado el 24 de septiembre de 2026:
   registrar migración, flujo autenticado y borrado mediante atestación explícita del operador.
   No puede aprobar retención ni ninguna decisión académica. No se ha ejecutado contra un entorno
   real porque todavía no hay credenciales ni banco piloto aprobado.
+- **Calidad reproducible ligada a fuente:** un runner separado ejecuta la suite diagnóstica,
+  TypeScript y el build de producción sobre un árbol limpio, verifica que la huella no cambie
+  durante la corrida y emite un recibo privado con commit, conteo de pruebas y páginas estáticas.
+  Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
+  manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
@@ -213,7 +218,7 @@ Actualizado el 24 de septiembre de 2026:
   confirmación ligada a su UUID, ya cubre inicio, reanudación, audio privado, etapas objetivas,
   escritura, revisión humana, perfil de cinco habilidades y borrado verificado; no se ejecutó
   porque este entorno carece de credenciales y banco piloto aprobado. El último corte local
-  ejecutó **211 pruebas** y
+  ejecutó **214 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

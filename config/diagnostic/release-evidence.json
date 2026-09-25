@@ -51,6 +51,7 @@
     "productionBuildSourceSha256": null,
     "verifiedCommit": null,
     "verifiedAt": null,
-    "verifiedBy": null
+    "verifiedBy": null,
+    "receiptSha256": null
   }
 }
