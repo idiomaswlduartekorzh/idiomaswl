@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" role="img" aria-labelledby="title desc">
+  <title id="title">Drei Mengen Farbe</title>
+  <desc id="desc">Zwei kleine Farbdosen, eine große Farbdose oder eine große und eine kleine Farbdose.</desc>
+  <image href="hoeren-teil3-5-art.jpg" width="2172" height="724"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="#17212b">
+    <g><rect x="28" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="61" y="66">A</text></g>
+    <g><rect x="752" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="785" y="66">B</text></g>
+    <g><rect x="1476" y="24" width="66" height="58" rx="6" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1509" y="66">C</text></g>
+  </g>
+</svg>

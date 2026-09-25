@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="840" viewBox="0 0 760 840" role="img" aria-labelledby="title description">
+  <title id="title">Terminkarte für Kandidatin oder Kandidat B</title>
+  <desc id="description">Samstag von 7 bis 21 Uhr. Besetzt sind 9 bis 12:30 Uhr Arbeit, 12:30 bis 14 Uhr Fahrrad abholen und 17:30 bis 19 Uhr einkaufen.</desc>
+  <rect width="760" height="840" rx="18" fill="#fffef9"/><rect x="22" y="22" width="716" height="796" rx="12" fill="none" stroke="#1e3743" stroke-width="3"/>
+  <text x="48" y="64" fill="#235a70" font-family="system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="2">PRÜFUNGSTEILNEHMER/IN B</text>
+  <text x="48" y="100" fill="#17212b" font-family="Georgia, serif" font-size="28" font-weight="700">Samstag · Meine Termine</text>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#52616a" text-anchor="end">
+    <text x="100" y="143">7.00</text><text x="100" y="190">8.00</text><text x="100" y="237">9.00</text><text x="100" y="284">10.00</text><text x="100" y="331">11.00</text><text x="100" y="378">12.00</text><text x="100" y="425">13.00</text><text x="100" y="472">14.00</text><text x="100" y="519">15.00</text><text x="100" y="566">16.00</text><text x="100" y="613">17.00</text><text x="100" y="660">18.00</text><text x="100" y="707">19.00</text><text x="100" y="754">20.00</text><text x="100" y="801">21.00</text>
+  </g>
+  <path d="M120 138H710M120 185H710M120 232H710M120 279H710M120 326H710M120 373H710M120 420H710M120 467H710M120 514H710M120 561H710M120 608H710M120 655H710M120 702H710M120 749H710M120 796H710" fill="none" stroke="#d9d8d0" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#17212b">
+    <rect x="140" y="232" width="540" height="165" rx="10" fill="#e7eef2" stroke="#235a70" stroke-width="2"/><text x="164" y="319">Arbeit im Café</text>
+    <rect x="140" y="397" width="540" height="70" rx="10" fill="#e9efe7" stroke="#2f6b4f" stroke-width="2"/><text x="164" y="440">Fahrrad abholen</text>
+    <rect x="140" y="631" width="540" height="71" rx="10" fill="#f3ead8" stroke="#9a6b1c" stroke-width="2"/><text x="164" y="675">Großeinkauf</text>
+  </g>
+</svg>

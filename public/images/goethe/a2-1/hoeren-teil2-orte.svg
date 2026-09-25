@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Neun Orte für die Hörübung</title>
+  <desc id="desc">Café, Bäckerei, Markt, Fahrradwerkstatt, Park, Straßenbahnhaltestelle, Apotheke, Bibliothek und Post.</desc>
+  <image href="hoeren-teil2-orte-art.jpg" width="1536" height="1024"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#17212b">
+    <g><rect x="34" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="65">A</text></g>
+    <g><rect x="546" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="65">B</text></g>
+    <g><rect x="1058" y="28" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="65">C</text></g>
+    <g><rect x="34" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="407">D</text></g>
+    <g><rect x="546" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="407">E</text></g>
+    <g><rect x="1058" y="370" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="407">F</text></g>
+    <g><rect x="34" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="63" y="748">G</text></g>
+    <g><rect x="546" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="575" y="748">H</text></g>
+    <g><rect x="1058" y="711" width="58" height="52" rx="5" fill="#fff" stroke="#17212b" stroke-width="2"/><text x="1087" y="748">I</text></g>
+  </g>
+</svg>

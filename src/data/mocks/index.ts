@@ -5,6 +5,7 @@ import { withToefl2026FixedForm } from './toefl-fixed-form';
 import { withIeltsListeningProductionTranscript } from './ielts-listening-production';
 import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
 import { withIeltsBalancedChoicePositions } from './ielts-choice-presentation';
+import { isGoetheA2Held } from '@/lib/goethe/a2-release';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -124,6 +125,11 @@ import goetheA2Set2 from './goethe-a2-set-2';
 import goetheA2Set3 from './goethe-a2-set-3';
 import goetheA2Set4 from './goethe-a2-set-4';
 import goetheA2Set5 from './goethe-a2-set-5';
+import goetheA2Set6 from './goethe-a2-set-6';
+import goetheA2Set7 from './goethe-a2-set-7';
+import goetheA2Set8 from './goethe-a2-set-8';
+import goetheA2Set9 from './goethe-a2-set-9';
+import goetheA2Set10 from './goethe-a2-set-10';
 import goetheB1Set2 from './goethe-b1-set-2';
 import goetheB1Set3 from './goethe-b1-set-3';
 import goetheB1Set4 from './goethe-b1-set-4';
@@ -305,6 +311,11 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'goethe:a2-3': goetheA2Set3,
   'goethe:a2-4': goetheA2Set4,
   'goethe:a2-5': goetheA2Set5,
+  'goethe:a2-6': goetheA2Set6,
+  'goethe:a2-7': goetheA2Set7,
+  'goethe:a2-8': goetheA2Set8,
+  'goethe:a2-9': goetheA2Set9,
+  'goethe:a2-10': goetheA2Set10,
   'goethe:b1-2': goetheB1Set2,
   'goethe:b1-3': goetheB1Set3,
   'goethe:b1-4': goetheB1Set4,
@@ -367,6 +378,9 @@ export function getMock(examSlug: string, mockId: string): MockExam | null {
   // Editorial hold: these drafts must not be served by direct routes, guided
   // routes, grading or paid-detail APIs until provenance and approval close.
   if (examSlug === 'icfes' && ['mock-21', 'mock-22', 'mock-23'].includes(mockId)) return null;
+  // The historical Goethe A2 files are incomplete scaffolds. Keep every access
+  // path fail-closed until a fingerprinted A2 release satisfies all gates.
+  if (examSlug === 'goethe' && isGoetheA2Held(mockId)) return null;
   const mock = MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
   if (!mock) return null;
 

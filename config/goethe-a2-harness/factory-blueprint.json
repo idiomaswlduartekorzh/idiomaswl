@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "examFamily": "goethe",
+  "level": "A2",
+  "audience": "adults-16-plus",
+  "purpose": "Replace the five unsafe legacy scaffolds and produce ten original WeLearn Goethe A2-compatible practice sets without copying protected official material.",
+  "targetRange": [1, 10],
+  "goldenSet": 1,
+  "officialContract": {
+    "parts": 13,
+    "writtenMinutes": 90,
+    "speakingPairMinutes": 15,
+    "formalSpeakingPreparationMinutes": 0,
+    "skills": {
+      "reading": { "parts": 4, "scoredItems": 20, "minutes": 30, "resultPoints": 25 },
+      "listening": { "parts": 4, "scoredItems": 20, "minutes": 30, "resultPoints": 25, "playsByPart": [2, 1, 1, 2] },
+      "writing": { "parts": 2, "tasks": 2, "minutes": 30, "wordRanges": [[20, 30], [30, 40]], "resultPoints": 25 },
+      "speaking": { "parts": 3, "tasks": 3, "resultPoints": 25 }
+    },
+    "totalResponses": 45,
+    "passRules": { "totalMinimum": 60, "writtenMinimum": 45, "writtenMaximum": 75, "oralMinimum": 15, "oralMaximum": 25 }
+  },
+  "taskContracts": {
+    "reading": [
+      { "part": 1, "family": "continuous-media-text", "response": "three-option-mcq", "items": 5, "workedExampleZero": true, "stimulusWords": [193, 230] },
+      { "part": 2, "family": "directory-program-board", "response": "three-option-location-mcq", "items": 5, "workedExampleZero": true, "stimulusWords": [118, 210], "optionPattern": "two-locations-plus-other" },
+      { "part": 3, "family": "correspondence", "response": "three-option-mcq", "items": 5, "stimulusWords": [250, 280] },
+      { "part": 4, "family": "needs-to-six-ads", "response": "matching-a-to-f-or-x", "items": 5, "workedExampleZero": true, "requiredNoMatchX": 1, "advertWords": [30, 45] }
+    ],
+    "listening": [
+      { "part": 1, "family": "five-short-public-or-private-messages", "response": "three-option-text-mcq", "items": 5, "plays": 2 },
+      { "part": 2, "family": "one-continuous-conversation", "response": "matching-nine-visual-options-stage-table", "items": 5, "plays": 1, "workedExampleZero": true, "exampleConsumesOption": true, "remainingDistractors": 3, "scriptWords": [220, 260] },
+      { "part": 3, "family": "five-short-conversations", "response": "three-option-visual-mcq", "items": 5, "plays": 1 },
+      { "part": 4, "family": "radio-interview", "response": "ja-nein", "items": 5, "plays": 2, "workedExampleZero": true, "scriptWords": [190, 230] }
+    ],
+    "writing": [
+      { "part": 1, "family": "personal-message", "requiredCommunicativeFunctions": 3, "wordRange": [20, 30] },
+      { "part": 2, "family": "semi-official-email", "requiredCommunicativeFunctions": 3, "wordRange": [30, 40] }
+    ],
+    "speaking": [
+      { "part": 1, "family": "personal-information-exchange", "sharedQuestionCards": 4 },
+      { "part": 2, "family": "guided-personal-monologue", "distinctCandidateCards": 2, "cuesPerCard": 4, "followUps": [1, 2] },
+      { "part": 3, "family": "pair-planning-negotiation", "requiresComplementaryCards": true }
+    ]
+  },
+  "visualPolicy": {
+    "style": "functional-exam-editorial",
+    "preferredAssets": ["typeset facsimile", "directory", "schedule", "classified card", "simple spot illustration", "calendar constraint card"],
+    "photography": "rare, documentary, modest and subordinate to the task",
+    "forbiddenLooks": ["cinematic advertising", "glossy stock campaign", "obvious generative-AI photography", "decorative image unrelated to the answer"],
+    "deterministicLayoutPreferred": true
+  },
+  "audioPolicy": {
+    "provider": "ElevenLabs",
+    "generationDefault": "blocked",
+    "masterTrackRequired": true,
+    "masterContainsInstructionsPausesRepetitionsAndTransferWindow": true,
+    "generationRequiresFreshCreditSnapshot": true,
+    "generationRequiresExplicitHumanAuthorization": true,
+    "generationNeverPublishes": true,
+    "technicalQaRequired": true,
+    "humanListeningRequired": true,
+    "targetDurationMinutes": [22, 25]
+  },
+  "originalityPolicy": {
+    "officialSourcesAreArchitectureOnly": true,
+    "copyingOfficialTextAudioOrVisualsForbidden": true,
+    "crossSetSemanticAuditRequired": true,
+    "topicLedgerRequired": true,
+    "namesPlacesTimesAndCommunicativeActsMustBeAudited": true,
+    "authorCannotApproveOwnWork": true
+  },
+  "fairnessPolicy": {
+    "answerPositionBalancePerSet": true,
+    "demographicAttributeNeverDeterminesCorrectAnswer": true,
+    "avoidStereotypedCareWorkOrAuthorityRoles": true,
+    "mixedNamesAndEverydayRolesAcrossSets": true,
+    "noNationalityReligionEthnicityOrDisabilityAsDistractor": true
+  },
+  "agentStages": [
+    { "id": "coordinator", "prompt": "goethe-a2-coordinator", "output": "work-order.json", "gate": "ORDER_FROZEN" },
+    { "id": "spec-guardian", "prompt": "goethe-a2-spec-guardian", "output": "spec.json", "gate": "SPEC_PASS" },
+    { "id": "listening-author", "prompt": "goethe-a2-listening-author", "output": "listening.json", "gate": "LISTENING_DRAFTED" },
+    { "id": "reading-author", "prompt": "goethe-a2-reading-author", "output": "reading.json", "gate": "READING_DRAFTED" },
+    { "id": "productive-author", "prompt": "goethe-a2-productive-author", "output": "productive.json", "gate": "PRODUCTIVE_DRAFTED" },
+    { "id": "key-auditor", "prompt": "goethe-a2-key-auditor", "output": "key-audit.json", "gate": "KEY_PASS" },
+    { "id": "language-auditor", "prompt": "goethe-a2-language-auditor", "output": "language.json", "gate": "LANGUAGE_PASS" },
+    { "id": "originality-auditor", "prompt": "goethe-a2-originality-auditor", "output": "originality.json", "gate": "ORIGINALITY_PASS" },
+    { "id": "media-director", "prompt": "goethe-a2-media-director", "output": "media.json", "gate": "MEDIA_PASS" },
+    { "id": "audio-planner", "prompt": "goethe-a2-audio-planner", "output": "audio-plan.json", "gate": "AUDIO_PLAN_PASS" },
+    { "id": "integrator", "prompt": "goethe-a2-integrator", "output": "integration.json", "gate": "RUNTIME_PASS" },
+    { "id": "ux-reviewer", "prompt": "goethe-a2-ux-reviewer", "output": "ux.json", "gate": "UX_PASS" },
+    { "id": "release-warden", "prompt": "goethe-a2-release-warden", "output": "release.json", "gate": "READY_FOR_HUMAN_REVIEW" }
+  ],
+  "releaseCapabilities": ["contentReady", "visualsReady", "audioReady", "scoringReady", "humanApproved", "published"],
+  "failClosedOn": [
+    "legacy scaffold",
+    "missing report",
+    "stale fingerprint",
+    "wrong item count or task family",
+    "unsupported or ambiguous key",
+    "cross-set repetition",
+    "AI-looking exam photography",
+    "missing visual asset",
+    "missing or unreviewed audio",
+    "incorrect A2 scoring",
+    "broken practice, submission, PDF or payment flow",
+    "missing human approval"
+  ]
+}

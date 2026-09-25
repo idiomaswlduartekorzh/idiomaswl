@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 import { hasGuidedMock, hasGuidedWorkbook } from '@/data/icfes/guided-registry';
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
+import { isGoetheA2Held } from '@/lib/goethe/a2-release';
 
 const INITIAL_VISIBLE_MOCKS = 8;
 
@@ -23,7 +24,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
     );
   }
 
-  const freeMocks = exam.mocks.filter(m => m.free);
+  const freeMocks = exam.mocks.filter(m => m.free && !(exam.slug === 'goethe' && isGoetheA2Held(m.id)));
   const paidMocks = exam.mocks.filter(m => !m.free);
   const isIcfes = exam.slug === 'icfes';
   const icfesUniqueResources = isIcfes ? exam.mocks.length + 1 : 0;
@@ -53,15 +54,17 @@ export default function MockGrid({ exam }: { exam: Exam }) {
       {mocks.map((mock) => {
         const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
         const goetheAudioPending = exam.slug === 'goethe' && /^a1-/.test(mock.id) && !hasGoetheA1Audio(mock.id);
+        const goetheA2Held = exam.slug === 'goethe' && isGoetheA2Held(mock.id);
         return (
-          <article key={mock.id} className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
+          <article key={mock.id} className={`wl-mock-card${mock.free && !goetheA2Held ? '' : ' wl-mock-card--locked'}`}>
             <div className="wl-mock-card__header">
               <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
               <div className="wl-mock-card__badges">
                 {mock.badge ? <span className="wl-exam-status-chip">{mock.badge}</span> : null}
                 {goetheAudioPending ? <span className="wl-exam-status-chip">Audio pendiente</span> : null}
-                <span className={`wl-mock-card__tag ${mock.free ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
-                  {mock.free ? 'Gratis' : 'Pro'}
+                {goetheA2Held ? <span className="wl-exam-status-chip">En reconstrucción</span> : null}
+                <span className={`wl-mock-card__tag ${mock.free && !goetheA2Held ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
+                  {goetheA2Held ? 'Bloqueado' : mock.free ? 'Gratis' : 'Pro'}
                 </span>
               </div>
             </div>
@@ -70,7 +73,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             <div className="wl-mock-card__stats">
               <span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span><span aria-hidden="true">·</span><span>{mock.questions} preguntas</span>
             </div>
-            {mock.free ? (
+            {mock.free && !goetheA2Held ? (
               <div className="wl-mock-card__actions">
                 <Link
                   href={goetheAudioPending ? `/examenes/goethe/practica/${mock.id}?mode=practice&skill=reading` : mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
@@ -95,6 +98,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                   >Modo guiado</Link>
                 ) : null}
               </div>
+            ) : goetheA2Held ? (
+              <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 A2 en preparación · audio pendiente</button>
             ) : (
               <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 Suscríbete para acceder</button>
             )}

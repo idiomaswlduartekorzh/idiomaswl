@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "set": 8,
+  "candidateFingerprint": "8c800cd725159f2597645d2786f2bab240082827c04ff2715da9b96623872785",
+  "status": "script-ready-audio-blocked",
+  "provider": "ElevenLabs",
+  "generation": {
+    "requiresFreshCreditSnapshot": true,
+    "requiresExplicitHumanAuthorization": true,
+    "publishesAutomatically": false
+  },
+  "technical": {
+    "format": "mp3 mono 44.1 kHz 64 kbps",
+    "targetLufs": -18,
+    "targetMinutes": [
+      22,
+      25
+    ]
+  },
+  "master": {
+    "path": "/audio/goethe/a2-8/goethe-a2-8-master.mp3",
+    "containsSpokenInstructions": true,
+    "containsExamples": true,
+    "containsPauses": true,
+    "containsTransferWindow": true,
+    "navigation": {
+      "pause": false,
+      "seek": false,
+      "replay": false
+    }
+  },
+  "voices": [
+    {
+      "id": "announcer",
+      "profile": "adult female, clear standard German, neutral examination delivery"
+    },
+    {
+      "id": "adult-f-1",
+      "profile": "adult female, natural everyday German"
+    },
+    {
+      "id": "adult-f-2",
+      "profile": "adult female, distinct from announcer"
+    },
+    {
+      "id": "adult-m-1",
+      "profile": "adult male, natural everyday German"
+    },
+    {
+      "id": "adult-m-2",
+      "profile": "adult male, distinct from adult-m-1"
+    }
+  ],
+  "sequence": [
+    {
+      "part": 1,
+      "family": "five-short-public-or-private-messages",
+      "plays": 2,
+      "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zweimal.",
+      "scripts": [
+        {
+          "id": "g-a2-8-h1-1",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Mina, hier ist die Information. Ihre reservierten Unterlagen sind angekommen und liegen bis Donnerstagabend für Sie bereit. Am Mittwoch schließen wir wegen einer internen Besprechung schon um sechzehn Uhr. Donnerstag sind wir wieder bis neunzehn Uhr da. Bitte bringen Sie zur Abholung Ihren Ausweis und die Reservierungsnummer aus unserer E-Mail mit."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h1-2",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Achtung, wegen Bauarbeiten kann die Haltestelle vor dem Rathaus heute nicht benutzt werden. Der Bus fährt trotzdem nach dem normalen Fahrplan. Bitte steigen Sie an der Ersatzhaltestelle in der Gartenstraße ein. Sie liegt etwa hundertfünfzig Meter weiter, direkt vor der Apotheke. Ab morgen früh halten alle Busse wieder wie gewohnt am Rathaus."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h1-3",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Guten Tag Noah, wir haben Ihren Gegenstand geprüft und fast alles erledigt. Leider fehlt uns noch ein passendes kleines Ersatzteil. Es wird morgen Vormittag geliefert. Deshalb ist eine Abholung heute nicht möglich. Kommen Sie bitte am Freitag nach fünfzehn Uhr. Dann können Sie auch direkt mit Karte oder bar bezahlen."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h1-4",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Noch eine Information zum Termin morgen: Wir treffen uns um neun Uhr am Haupteingang. Die Veranstaltung findet größtenteils im Gebäude statt, deshalb brauchen Sie keinen Regenschirm. Getränke stehen kostenlos bereit, aber bitte bringen Sie einen eigenen Becher mit. Arbeitsmaterial und Schutzkleidung bekommen Sie von uns. Der Termin endet voraussichtlich gegen zwölf Uhr dreißig."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h1-5",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Hallo zusammen, unser heutiges Treffen beginnt eine halbe Stunde später als geplant, also erst um achtzehn Uhr dreißig. Der Raum bleibt derselbe: Raum vier im ersten Stock. Wer schon um achtzehn Uhr kommt, kann im Café warten. Dort habe ich einen Tisch reserviert. Bitte gebt diese Änderung auch an die neuen Mitglieder weiter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "family": "one-continuous-conversation",
+      "plays": 1,
+      "instruction": "Sie hören ein Gespräch einmal. Ordnen Sie die Bilder zu.",
+      "scripts": [
+        {
+          "id": "g-a2-8-h2-conversation",
+          "turns": [
+            {
+              "speaker": "Elena",
+              "text": "Unser freier Samstag ist voll, aber wir schaffen alles. Wir treffen uns zuerst um neun Uhr bei der Sportpark. Dort hole ich die bestellten Sachen ab. Das ist unser Beispiel. Danach müssen wir noch einige Wege gemeinsam planen."
+            },
+            {
+              "speaker": "Noah",
+              "text": "Gut. Um zehn Uhr gehen wir zur Bürgerzentrum. Du hast doch die Nummer von dem verlorenen Rucksack dabei. Ich war dort noch nie, aber es liegt gleich hinter dem Rathaus."
+            },
+            {
+              "speaker": "Elena",
+              "text": "Ja. Danach möchte ich gegen elf Uhr in den Copyshop. Wir können dort kurz sitzen und die Unterlagen ansehen. Wenn es regnet, nehmen wir stattdessen das Café, aber die Wetter-App zeigt Sonne."
+            },
+            {
+              "speaker": "Noah",
+              "text": "Um zwölf Uhr brauche ich etwas vom Tramhalt. Meine Pflanze hat neue Erde nötig, und dort gibt es auch kleine Töpfe. Das dauert bestimmt nicht lange."
+            },
+            {
+              "speaker": "Elena",
+              "text": "Dann essen wir um halb zwei im Café. Ich habe gestern einen Tisch am Fenster reserviert. Die Bäckerei wäre schneller, aber ich möchte in Ruhe mit dir sprechen."
+            },
+            {
+              "speaker": "Noah",
+              "text": "Am Nachmittag, etwa um drei, müssen wir noch zur Tauschraum. Für Sonntag fehlt uns Brot. Danach bringe ich um vier das Paket zur Apotheke. Sie schließt schon um halb fünf."
+            },
+            {
+              "speaker": "Elena",
+              "text": "Einverstanden. Den Bäckerei und die Post lassen wir heute aus. Wenn alles klappt, sind wir kurz nach vier fertig und können direkt nach Hause fahren. Danach prüfen wir noch den Plan für Sonntag und sprechen den Rückweg gemeinsam ab."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "family": "five-short-conversations",
+      "plays": 1,
+      "instruction": "Sie hören fünf kurze Gespräche einmal. Wählen Sie das richtige Bild.",
+      "scripts": [
+        {
+          "id": "g-a2-8-h3-1",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Ich wollte eigentlich nur eine Fahrkarte kaufen, aber die habe ich schon in der App. Den Blumenstrauß nehme ich erst morgen mit. Heute brauche ich unbedingt farbige Karten für verschiedene Kategorien; zu Hause ist nichts mehr davon da."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Dann gehen wir zuerst dorthin. Der Laden schließt nämlich schon in zwanzig Minuten. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h3-2",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Mein Fahrrad steht noch am Bahnhof, aber wegen des starken Regens fahre ich heute nicht damit. Der Bus kommt erst in vierzig Minuten."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Ich kann dich ein Stück begleiten. Zu Fuß brauchen wir nur fünfundzwanzig Minuten."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Gute Idee, dann nehme ich einen Schirm und wir gehen gemeinsam. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h3-3",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Treffen wir uns im Café? Dort ist es am Nachmittag oft sehr voll."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Im Copyshop wäre es ruhiger, aber der liegt weit weg. Komm lieber direkt zur Post; ich warte am Haupteingang neben der großen Uhr."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Gut, ich bin um Viertel vor sechs da. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h3-4",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "In meiner Nachricht steht, dass der Termin um vierzehn Uhr beginnt."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Das war die alte Uhrzeit. Gestern kam eine neue E-Mail: Die Gruppe vor uns braucht länger, deshalb starten wir erst um halb drei."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Also vierzehn Uhr dreißig. Gut, dann kann ich vorher noch etwas essen. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-8-h3-5",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Raum eins ist heute für eine Prüfung reserviert. Raum drei wäre frei, aber dort funktioniert der Beamer nicht."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Für unsere Bilder brauchen wir unbedingt einen."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Dann bleibt Raum fünf. Er ist zwar kleiner, aber die Technik wurde gestern geprüft."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Perfekt, ich schreibe die neue Raumnummer an alle. So ist die gemeinsame Entscheidung für beide am Ende wirklich eindeutig und praktisch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "family": "radio-interview",
+      "plays": 2,
+      "instruction": "Sie hören ein Radiointerview zweimal. Wählen Sie Ja oder Nein.",
+      "scripts": [
+        {
+          "id": "g-a2-8-h4-interview",
+          "turns": [
+            {
+              "speaker": "Moderatorin",
+              "text": "Heute sprechen wir mit Mina über „Kostenlose Angebote im Sportpark“. Viele Menschen kennen das Angebot, aber nicht alle wissen, wie es organisiert wird. Seit wann sind Sie dabei?"
+            },
+            {
+              "speaker": "Mina",
+              "text": "Ich helfe seit dem ersten Jahr mit. Der Sportpark ist seit Mai geöffnet. Anfangs kamen nur wenige Gäste, inzwischen kennen es viele Familien und Berufstätige. Wichtig ist uns, dass alle ohne komplizierte Schritte teilnehmen können."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Wie groß ist das Angebot heute, und was müssen neue Besucherinnen und Besucher beachten?"
+            },
+            {
+              "speaker": "Mina",
+              "text": "Er ist täglich bis 22 Uhr zugänglich. Die Geräte kann man ohne Anmeldung nutzen. Neue Gäste bekommen vor Ort eine kurze Erklärung. Man kann Fragen stellen, und niemand muss schon Erfahrung mitbringen. Nur bei größeren Gruppen wünschen wir eine Nachricht vorher."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Welche praktischen Regeln sind besonders wichtig?"
+            },
+            {
+              "speaker": "Mina",
+              "text": "Trainerinnen sind zweimal pro Woche vor Ort. Viele glauben, man müsse alles im Internet buchen, aber das stimmt nicht. Wir bieten auch persönliche Hilfe. Wer uns regelmäßig besucht, lernt schnell andere Menschen aus dem Viertel kennen."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Gibt es zusätzliche Informationen oder neue Pläne?"
+            },
+            {
+              "speaker": "Mina",
+              "text": "Ja. Bälle werden gegen Pfand ausgeliehen. Weitere Schattenplätze sind geplant. Dafür brauchen wir weitere Freiwillige, vor allem am späten Nachmittag. Interessierte können erst einmal zwei Stunden zuschauen und danach entscheiden, ob sie mitmachen möchten."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outro": "Ende des Tests Hören. Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen zu übertragen und zu kontrollieren."
+}

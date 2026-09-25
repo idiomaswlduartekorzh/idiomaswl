@@ -217,6 +217,7 @@ function MCQRenderer({
     <div className="lang-q">
       {q.stimulusLabel && <p className="lang-q__label">{q.stimulusLabel}</p>}
       {q.stimulus && <pre className="lang-q__stimulus">{q.stimulus}</pre>}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       <p className="lang-q__text">{q.text}</p>
       <div className="lang-q__options">
         {q.options.map((opt, i) => {
@@ -323,6 +324,7 @@ function MatchingRenderer({
   return (
     <div className="lang-q">
       {q.groupLabel && <p className="lang-q__label">{q.groupLabel}</p>}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       <div className="lang-matching">
         <div className="lang-matching__endings">
           {q.endings.map(e => (
