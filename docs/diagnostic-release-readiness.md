@@ -2,13 +2,13 @@
 
 Estado actual: **HOLD**.
 
-Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
-`710f2780`; **256/256 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
+Último corte reproducible: **1/8 gates** y **19 bloqueos** sobre el commit técnico
+`06760de5`; **262/262 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
 historias E2E** pasaron. La huella de fuente es
-`4abcb1876b0dae81b425847f496f855aa58285f03c053a23e188982cc5244a2e` y el recibo privado quedó
-fijado por `d2df7bc4f024b2ddf7a5afa4d6d46bfa8e23cb1e852bb1e8e5b44c95f06e093b`.
-Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
-aprobación académica, de privacidad o psicométrica.
+`d2c63c7c2b986ca2bba18cbc911e97a3834f40a2ad274ff6602aadc95d285069` y el recibo privado quedó
+fijado por `b7aa0f017cf16fbe9a386e642df99604770c3c2ef18c111d3a6917ac1f5684b8`.
+El único gate aprobado es calidad mecánica; gobierno volvió correctamente a `HOLD` porque la
+política de entrega todavía no tiene las dos revisiones humanas requeridas.
 
 `npm run report:diagnostic-release-readiness` produce el semáforo legible y `-- --json`
 produce el contrato estructurado. `npm run check:diagnostic-release-readiness` es la variante
