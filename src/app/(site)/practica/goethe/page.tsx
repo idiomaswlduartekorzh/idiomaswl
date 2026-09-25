@@ -6,7 +6,7 @@ import styles from '../toefl/ios.module.css';
 
 export const metadata: Metadata = {
   title: 'Práctica Goethe A1, A2, B1 y B2 por destreza',
-  description: 'Entrena Goethe por nivel y destreza. A1 está disponible; A2 abre Lesen, Schreiben y Sprechen en diez sets y mantiene Hören bloqueado hasta aprobar el audio.',
+  description: 'Entrena Goethe por nivel y destreza. A1 disponible; A2 abre Lesen, Schreiben y Sprechen en diez sets y mantiene Hören bloqueado hasta aprobar el audio.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/goethe' },
   openGraph: {
     title: 'Práctica Goethe por niveles · A1, A2, B1 y B2',
