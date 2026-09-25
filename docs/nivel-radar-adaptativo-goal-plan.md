@@ -205,9 +205,11 @@ Actualizado el 25 de septiembre de 2026:
   atajos metalingüísticos, longitud relativa, paralelismo de longitud, capitalización y
   puntuación. La salida pública contiene únicamente agregados por nivel y habilidad; el detalle
   por ítem, posición y clave solo aparece en material privado del revisor de evaluación. El
-  corte actual encuentra **32 ítems que requieren juicio humano y 0 defectos bloqueantes**. Cuatro
-  ítems con pistas accidentales de puntuación fueron corregidos y versionados individualmente
-  como `draft-2`, sin cambiar su clave, nivel ni constructo; los otros 212 conservaron `draft-1`. Una
+  corte actual encuentra **19 ítems que requieren juicio humano y 0 defectos bloqueantes**; todas
+  las celdas A1–B2 de lectura, gramática y vocabulario quedan en cero alertas y las 19 restantes
+  se concentran en C1–C2 para revisión especializada. Diecisiete ítems con pistas accidentales de
+  puntuación o longitud fueron corregidos y versionados individualmente como `draft-2`, sin
+  cambiar su clave, nivel ni constructo; los otros 199 conservaron `draft-1`. Una
   señal de longitud no rechaza automáticamente contenido que pueda ser legítimo para el
   constructo, pero ahora exige el criterio `answerCueRiskReviewed`. Cada firma conserva por
   separado la huella del contenido y la de la política de revisión; cambiar la versión del
@@ -417,11 +419,11 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  corte `a53ab90d` quedó verificado con el catálogo protegido de **465 temas**, **326/326
+  corte `132e4fc3` quedó verificado con el catálogo protegido de **465 temas**, **327/327
   pruebas**, TypeScript sin errores, un build de **2.564 páginas estáticas** y **4/4 historias
   E2E**. La huella de fuente
-  `0d74a4d1fc37113594e86663f4932e5ec7bf7f9094759904ffec44930df4088f` y el recibo privado
-  `66cf25a7e79239d0b2fabeaff55fc75ee75d818faad9dc5331c3df94e62ae102` dejan el gate de
+  `828eed6adbb07315269ec1d11deef62fac7f3d916c7ef26c7b84bf231bf3c3c4` y el recibo privado
+  `d8f0e8f8964bbd7c4cc43612106ba8b7a75dd17ef26d0f9c936d3eb223bb22d7` dejan el gate de
   calidad atado exactamente a ese código.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
   paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.

@@ -3,10 +3,10 @@
 Estado actual: **HOLD**.
 
 Último corte reproducible: **1/8 gates** y **20 bloqueos** sobre el commit técnico
-`a53ab90d`; el catálogo protegido de **465 temas**, **326/326 pruebas**, TypeScript, el build de
+`132e4fc3`; el catálogo protegido de **465 temas**, **327/327 pruebas**, TypeScript, el build de
 **2.564 páginas estáticas** y **4/4 historias E2E** pasaron. La huella de fuente es
-`0d74a4d1fc37113594e86663f4932e5ec7bf7f9094759904ffec44930df4088f` y el recibo privado quedó
-fijado por `66cf25a7e79239d0b2fabeaff55fc75ee75d818faad9dc5331c3df94e62ae102`.
+`828eed6adbb07315269ec1d11deef62fac7f3d916c7ef26c7b84bf231bf3c3c4` y el recibo privado quedó
+fijado por `d8f0e8f8964bbd7c4cc43612106ba8b7a75dd17ef26d0f9c936d3eb223bb22d7`.
 El único gate aprobado es calidad mecánica; gobierno volvió correctamente a `HOLD` porque la
 política de entrega todavía no tiene las dos revisiones humanas requeridas.
 
@@ -337,16 +337,18 @@ externas o modificaciones posteriores fallan antes de escribir.
 La auditoría adversarial evalúa los 216 ítems reservados de lectura, gramática y vocabulario sin
 imprimir identificadores, textos, claves ni racionales. El reporte operativo comprometido
 `diagnostic-bank-readiness-v2` conserva únicamente conteos y hallazgos agregados por celda, sin
-IDs ni posiciones de clave: registra **216/216 borradores revisados, 32 ítems para juicio humano
-y 0 defectos bloqueantes**. El release falla cerrado si la versión del auditor no coincide, si
+IDs ni posiciones de clave: registra **216/216 borradores revisados, 19 ítems para juicio humano
+y 0 defectos bloqueantes**. Todas las celdas A1–B2 de lectura, gramática y vocabulario quedan en
+cero alertas automáticas; las 19 restantes están limitadas a C1–C2 para revisión especializada.
+El release falla cerrado si la versión del auditor no coincide, si
 su cobertura difiere del total reservado o si aparece un defecto bloqueante. El detalle aparece
 únicamente en los paquetes privados de evaluación, no en los lingüísticos. Duplicados
 normalizados bloquean; diferencias de longitud, capitalización o puntuación exigen revisión
 contextual y no rechazo automático. El checklist de evaluación añade
 `answerCueRiskReviewed`, y `reviewBasisSha256` liga cada firma a la versión exacta del auditor y
-del proceso. Cuatro ítems de registro y estilo indirecto ya eliminaron pistas accidentales de
-puntuación y avanzaron individualmente a `draft-2`, sin cambiar clave, nivel ni constructo; los
-212 ítems no editados conservaron `draft-1`. Una plantilla anterior queda obsoleta aunque
+del proceso. Diecisiete ítems A1–B2 eliminaron pistas accidentales de puntuación o longitud y
+avanzaron individualmente a `draft-2`, sin cambiar clave, nivel ni constructo; los 199 ítems no
+editados conservaron `draft-1`. Una plantilla anterior queda obsoleta aunque
 `contentSha256` siga coincidiendo.
 En entrega, `mst-engine-v2` deriva el orden de opciones de la etapa y del ID de cada opción:
 recargas e idempotencia conservan la forma exacta, pero otra etapa rota posiciones sin alterar
