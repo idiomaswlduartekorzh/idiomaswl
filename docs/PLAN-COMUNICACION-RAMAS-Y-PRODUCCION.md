@@ -98,6 +98,22 @@ Validaciones: 21/21 harness A2, guardianes Goethe y catálogo, TypeScript, build
 Webpack de 2.584 páginas y recorridos visuales desktop y móvil sin desbordamiento.
 No cambian respuestas, scoring, pagos ni los bloqueos de Hören y examen completo.
 
+Actualización responsive del 25 de septiembre: `codex/goethe-a2-official-layout`
+mantiene Schreiben sin cambios y corrige la respiración visual de Lesen en móvil.
+El directorio de Teil 2 apila rótulo y descripción sin colisiones; Teil 4 separa
+los enunciados 16–20 y elimina los ordinales duplicados del contenido. Sprechen
+recupera el control de aleatoriedad de A1 en sus tres Teile y evita repetir la
+selección consecutiva. Estado: `DESPLEGADO`. La implementación quedó en
+`569db5be` y el árbol publicado en `main` en `08c848db`. Vercel publicó este SHA
+como `Ready` y `Current` en
+[`dpl_4mo2ZS3rmeU2VU1j7jqS1fKH91LZ`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/4mo2ZS3rmeU2VU1j7jqS1fKH91LZ),
+asignado a `www.idiomaswl.com`. Validaciones: 21/21 harness A2, guardianes
+Goethe y catálogo, TypeScript, build Webpack de 2.584 páginas, prueba responsive
+local a 390 × 844 sin desbordamiento y smoke público de Lesen y Sprechen. En el
+smoke, Lesen mostró numeración limpia 16–20 y Sprechen ofreció tres controles de
+azar con cambio verificado de tarjeta. Hören y el examen completo siguen
+bloqueados; pagos, scoring y rutas protegidas no cambian.
+
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
