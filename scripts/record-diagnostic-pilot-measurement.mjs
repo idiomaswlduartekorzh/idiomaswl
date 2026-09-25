@@ -6,7 +6,10 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 import criteria from '../config/diagnostic/pilot-publication-criteria.json' with { type: 'json' };
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK, ENGLISH_DIAGNOSTIC_WRITING_BANK } from '../src/server/diagnostic/bank/index.ts';
-import { diagnosticPilotBankSha256 } from '../src/server/diagnostic/pilot-analytics.ts';
+import {
+  diagnosticEligibleTestletCount,
+  diagnosticPilotBankSha256,
+} from '../src/server/diagnostic/pilot-analytics.ts';
 import {
   recordDiagnosticPilotMeasurementEvidence,
   validateDiagnosticPilotMeasurementCandidate,
@@ -39,9 +42,12 @@ const manifest = JSON.parse(manifestBytes.toString('utf8'));
 const bankSnapshotSha256 = diagnosticPilotBankSha256({
   bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK, writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
 });
+const activeObjectiveBank = ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK
+  .filter(record => record.status === 'pilot' || record.status === 'operational');
 validateDiagnosticPilotMeasurementCandidate({
   candidate, candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
-  objectiveItemCount: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.length,
+  objectiveItemCount: activeObjectiveBank.length,
+  eligibleTestletCount: diagnosticEligibleTestletCount(activeObjectiveBank),
 });
 const reviewFiles = new Map(manifest.receipts.map(reference => {
   if (typeof reference.file !== 'string' || reference.file !== basename(reference.file)) {

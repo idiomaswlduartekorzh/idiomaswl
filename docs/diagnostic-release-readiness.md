@@ -352,6 +352,8 @@ finalización, comportamiento de ítems, escritura y referencia independiente, e
 - facilidad dentro del rango aprobado y cada distractor funcionando con muestra suficiente;
 - fiabilidad adaptativa por lectura, escucha, gramática y vocabulario;
 - consistencia de la decisión de nivel y estabilidad por las cinco habilidades;
+- dependencia local residual en todos los testlets de lectura y escucha, con muestra, umbral y
+  resolución documentada para cada señal material;
 - análisis DIF agregado con grupos suficientemente representados y base lícita documentada;
 - standard setting humano de los cinco límites MCER.
 
@@ -374,7 +376,8 @@ dependiendo de muestras observadas, no de alcanzar un número global.
 La evidencia especializada vive en un contrato separado y agregado,
 `config/diagnostic/pilot-measurement-evidence.json`. Nace `not-collected` y no incluye etiquetas
 de grupo, participantes ni respuestas. Debe coincidir exactamente con la versión de criterios y
-`bankSnapshot.sha256`; de lo contrario, fiabilidad, consistencia, estabilidad, equidad y cortes
+`bankSnapshot.sha256`; de lo contrario, fiabilidad, consistencia, dependencia local, estabilidad,
+equidad y cortes
 permanecen en `false`. Los umbrales del archivo de criterios son provisionales hasta revisión
 académica y de medición: las fuentes profesionales justifican las dimensiones de evidencia, no
 un número universal para todos los usos.

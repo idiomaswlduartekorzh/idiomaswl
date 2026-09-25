@@ -7,6 +7,7 @@ import {
   buildDiagnosticItemDriftMonitor,
   buildDiagnosticItemDriftMetrics,
   buildDiagnosticPilotReport,
+  diagnosticEligibleTestletCount,
   diagnosticPilotBankSha256,
   validateDiagnosticPilotCriteria,
 } from '../src/server/diagnostic/pilot-analytics.ts';
@@ -36,6 +37,9 @@ const criteria = {
   maximumReferenceSevereDisagreement: 0.25,
   minimumAdaptiveReliabilitySamplePerSkill: 10, minimumAdaptiveReliability: 0.8,
   minimumClassificationConsistencySample: 10, minimumClassificationConsistency: 0.8,
+  minimumLocalDependencePairsPerTestlet: 10,
+  maximumLocalDependenceResidualCorrelation: 0.2,
+  maximumUnresolvedLocalDependenceTestlets: 0,
   minimumStabilityPairsPerSkill: 10, minimumStabilityCorrelation: 0.75,
   minimumStabilityWithinOneLevel: 0.9, minimumFairnessGroups: 2,
   minimumFairnessGroupSample: 10, maximumUnresolvedDifItems: 0,
@@ -79,7 +83,7 @@ const references = attempts.map((attempt, index) => ({
 }));
 
 const measurementEvidence = {
-  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v1', status: 'complete',
+  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v2', status: 'complete',
   criteriaVersion: criteria.criteriaVersion,
   bankSnapshotSha256: diagnosticPilotBankSha256({ bank, writingBank }),
   generatedAt: '2026-09-25T13:00:00.000Z',
@@ -91,6 +95,11 @@ const measurementEvidence = {
     skill, sampleSize: 12, coefficient: 0.85, method: 'route-aware-resampling',
   })),
   classificationConsistency: { sampleSize: 12, coefficient: 0.84, method: 'bootstrap-classification' },
+  localDependence: {
+    method: 'adjusted-yen-q3', eligibleTestlets: 1, analyzedTestlets: 1,
+    minimumPairSample: 12, maximumObservedAbsoluteResidualCorrelation: 0.12,
+    flaggedTestlets: 0, unresolvedMaterialTestlets: 0, resolutionReference: null,
+  },
   stabilityBySkill: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map(skill => ({
     skill, pairs: 12, correlation: 0.8, withinOneLevel: 0.92, method: 'parallel-forms',
   })),
@@ -115,6 +124,11 @@ const buildReport = overrides => buildDiagnosticPilotReport({
   generatedAt: '2026-09-25T14:00:00.000Z', ...overrides,
 });
 
+test('eligible testlets are counted from shared active stimuli rather than item totals', () => {
+  assert.equal(diagnosticEligibleTestletCount(bank), 1);
+  assert.equal(diagnosticEligibleTestletCount(bank.slice(0, 1)), 0);
+});
+
 test('pilot report aggregates attempts, item behavior, writing and independent references', () => {
   const report = buildReport();
   assert.equal(report.attempts.started, 12);
@@ -127,6 +141,9 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
     'low-a1-a2': 4, 'mid-b1-b2': 4, 'high-c1-c2': 4,
   });
   assert.equal(report.measurementEvidence.adaptiveReliability.bySkill.length, 4);
+  assert.equal(report.measurementEvidence.localDependence.eligibleTestlets, 1);
+  assert.equal(report.measurementEvidence.localDependence.unresolvedMaterialTestlets, 0);
+  assert.equal(report.gates.localDependenceReview, true);
   assert.equal(report.decision, 'ELIGIBLE_FOR_VALIDATION_REVIEW');
   assert.equal(report.gates.itemQuality, true);
   assert.equal(Object.values(report.gates).every(Boolean), true);
@@ -297,7 +314,7 @@ test('empty real-world evidence holds every publication-sensitive gate', () => {
       ...measurementEvidence, status: 'not-collected', bankSnapshotSha256: null, generatedAt: null,
       provenance: { aggregateDatasetSha256: null, analysisCodeSha256: null, analysisRunId: null },
       adaptiveReliability: [], classificationConsistency: null, stabilityBySkill: [], fairness: null,
-      standardSetting: null, approval: null,
+      localDependence: null, standardSetting: null, approval: null,
     },
   });
   assert.equal(report.decision, 'HOLD');
@@ -342,6 +359,7 @@ test('route, CEFR coverage and specialist measurement evidence fail closed indep
   });
   assert.equal(staleMeasurement.gates.adaptiveReliability, false);
   assert.equal(staleMeasurement.gates.classificationConsistency, false);
+  assert.equal(staleMeasurement.gates.localDependenceReview, false);
   assert.equal(staleMeasurement.gates.stability, false);
   assert.equal(staleMeasurement.gates.fairnessReview, false);
   assert.equal(staleMeasurement.gates.standardSettingReview, false);
@@ -360,6 +378,19 @@ test('route, CEFR coverage and specialist measurement evidence fail closed indep
   });
   assert.equal(duplicateReviewer.measurementEvidence.approvalBound, false);
   assert.equal(duplicateReviewer.gates.fairnessReview, false);
+  const unresolvedDependence = buildReport({
+    measurementEvidence: {
+      ...measurementEvidence,
+      localDependence: {
+        ...measurementEvidence.localDependence,
+        maximumObservedAbsoluteResidualCorrelation: 0.35,
+        flaggedTestlets: 1,
+        unresolvedMaterialTestlets: 1,
+      },
+    },
+  });
+  assert.equal(unresolvedDependence.gates.localDependenceReview, false);
+  assert.ok(unresolvedDependence.warnings.includes('LOCAL_DEPENDENCE_REVIEW_REQUIRED'));
 });
 
 test('item facility and every keyed distractor must function at the approved sample size', () => {

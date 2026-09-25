@@ -20,7 +20,8 @@ function readyFixture() {
         sampleAndCompletionReviewed: true, routeAndLevelCoverageReviewed: true,
         itemQualityReviewed: true, writingAgreementReviewed: true, independentReferenceReviewed: true,
         measurementEvidenceBindingReviewed: true, adaptiveReliabilityReviewed: true,
-        classificationConsistencyReviewed: true, stabilityReviewed: true, fairnessReviewed: true,
+        classificationConsistencyReviewed: true, localDependenceReviewed: true,
+        stabilityReviewed: true, fairnessReviewed: true,
         standardSettingReviewed: true, limitationsAccepted: true,
       },
     },
@@ -30,13 +31,14 @@ function readyFixture() {
         sampleAndCompletionReviewed: true, routeAndLevelCoverageReviewed: true,
         itemQualityReviewed: true, writingAgreementReviewed: true, independentReferenceReviewed: true,
         measurementEvidenceBindingReviewed: true, adaptiveReliabilityReviewed: true,
-        classificationConsistencyReviewed: true, stabilityReviewed: true, fairnessReviewed: true,
+        classificationConsistencyReviewed: true, localDependenceReviewed: true,
+        stabilityReviewed: true, fairnessReviewed: true,
         standardSettingReviewed: true, limitationsAccepted: true,
       },
     },
   ];
   const pilotValidationCore = {
-    manifestVersion: 'diagnostic-pilot-validation-manifest-v2', decision: 'APPROVED',
+    manifestVersion: 'diagnostic-pilot-validation-manifest-v3', decision: 'APPROVED',
     reportSha256: pilotReportSha256, captureReceiptSha256: pilotCaptureSha256,
     sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha',
     reviews: pilotReviews,
@@ -130,7 +132,7 @@ function readyFixture() {
       },
     },
     pilotReport: {
-      reportVersion: 'diagnostic-pilot-report-v2',
+      reportVersion: 'diagnostic-pilot-report-v3',
       generatedAt: reviewedAt,
       criteria: { version: 'criteria-v1', status: 'approved' },
       decision: 'ELIGIBLE_FOR_VALIDATION_REVIEW',
@@ -139,7 +141,7 @@ function readyFixture() {
     },
     pilotReportSha256,
     pilotCaptureReceipt: {
-      receiptVersion: 'diagnostic-pilot-report-capture-v2',
+      receiptVersion: 'diagnostic-pilot-report-capture-v3',
       report: { sha256: pilotReportSha256, generatedAt: reviewedAt },
       target: {
         sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha', accessMode: 'pilot',

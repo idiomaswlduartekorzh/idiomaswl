@@ -1,5 +1,5 @@
 {
-  "evidenceVersion": "diagnostic-pilot-measurement-evidence-v1",
+  "evidenceVersion": "diagnostic-pilot-measurement-evidence-v2",
   "status": "not-collected",
   "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
   "bankSnapshotSha256": null,
@@ -11,6 +11,7 @@
   },
   "adaptiveReliability": [],
   "classificationConsistency": null,
+  "localDependence": null,
   "stabilityBySkill": [],
   "fairness": null,
   "standardSetting": null,

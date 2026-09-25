@@ -92,6 +92,7 @@ const GATE_LABELS: Readonly<Record<string, string>> = {
   referenceLevelCoverage: 'Cobertura A1–C2',
   adaptiveReliability: 'Fiabilidad adaptativa',
   classificationConsistency: 'Consistencia de nivel',
+  localDependenceReview: 'Dependencia local de testlets',
   stability: 'Estabilidad',
   fairnessReview: 'Equidad / DIF',
   standardSettingReview: 'Cortes MCER',

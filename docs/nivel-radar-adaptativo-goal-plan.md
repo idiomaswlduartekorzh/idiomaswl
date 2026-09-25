@@ -261,7 +261,7 @@ Actualizado el 25 de septiembre de 2026:
   entrega y las otras seis dimensiones conservan sus bloqueos externos, humanos o de contenido.
 - **Fase 8 — panel de salud del piloto implementado:** el panel administrativo puede solicitar
   manualmente una ventana de 30 a 365 días y muestra finalización, intentos no completados,
-  mediana y p90 de duración, estados, cobertura de rutas, los quince gates, acuerdo de escritura,
+  mediana y p90 de duración, estados, cobertura de rutas, los dieciséis gates, acuerdo de escritura,
   referencia independiente, cadena psicométrica y alertas agregadas. El servidor proyecta una
   respuesta mínima antes de enviarla al navegador: no incluye identidades, respuestas, textos,
   IDs de ítem u opción, claves ni etiquetas de grupos. La carga es `same-origin`, `no-store` y
@@ -283,6 +283,15 @@ Actualizado el 25 de septiembre de 2026:
   estabilidad. Esta señal nunca recalibra ni retira contenido: congela el rollout y remite al
   control versionado con revisiones académica y de medición independientes. Los tres umbrales
   siguen siendo propuesta dentro de la política de entrega y requieren aprobación humana.
+- **Fase 7 — dependencia local de testlets convertida en gate:** el contrato de evidencia
+  psicométrica v2 exige analizar todos los estímulos de lectura o escucha que alimentan dos o
+  más decisiones. Registra método residual, muestra mínima pareada, máximo residual absoluto,
+  testlets señalados, casos materiales sin resolver y una referencia opaca de resolución cuando
+  corresponda. Una señal por encima del umbral no puede desaparecer sin marcarse; cualquier caso
+  material sin resolver mantiene el piloto en `HOLD`. El reporte agregado v3 y la revisión final
+  del piloto incorporan esta puerta sin exponer respuestas ni participantes. Los valores de 50
+  pares por testlet y residual absoluto 0,20 son propuesta pendiente de aprobación, no una norma
+  universal ni evidencia ya obtenida.
 - **Fase 8 — interpretación responsable preparada:** pantalla y PDF traducen los estados y
   advertencias internas a lenguaje comprensible, distinguen estimación provisional, calibrada y
   no disponible, y aclaran que la confianza técnica no es porcentaje de dominio ni certeza del
@@ -693,11 +702,12 @@ Entregables:
 - propuesta de cortes MCER mediante standard setting documentado;
 - lista de ítems retirados, reparados o recalibrados.
 
-El contrato ejecutable v2 materializa estas obligaciones en quince gates. Diez se derivan del
+El contrato ejecutable v3 materializa estas obligaciones en dieciséis gates. Diez se derivan del
 informe agregado del piloto (aprobación de criterios, volumen, finalización, rutas, muestras,
-calidad y distractores, escritura, referencia independiente y cobertura MCER). Los cinco
+calidad y distractores, escritura, referencia independiente y cobertura MCER). Los seis
 restantes solo pasan con evidencia de medición especializada y vigente: fiabilidad adaptativa,
-consistencia de clasificación, estabilidad, equidad/DIF y standard setting. El archivo
+consistencia de clasificación, dependencia local de testlets, estabilidad, equidad/DIF y
+standard setting. El archivo
 `config/diagnostic/pilot-measurement-evidence.json` nace vacío y ligado a versión; una ausencia,
 un hash de banco distinto, una versión de criterios vieja, procedencia sin hashes o una aprobación
 sin tres roles independientes fuerza todos esos gates a `false`. El workflow privado usa una

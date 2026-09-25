@@ -37,6 +37,9 @@ export interface DiagnosticPilotCriteria {
   minimumAdaptiveReliability: number;
   minimumClassificationConsistencySample: number;
   minimumClassificationConsistency: number;
+  minimumLocalDependencePairsPerTestlet: number;
+  maximumLocalDependenceResidualCorrelation: number;
+  maximumUnresolvedLocalDependenceTestlets: number;
   minimumStabilityPairsPerSkill: number;
   minimumStabilityCorrelation: number;
   minimumStabilityWithinOneLevel: number;
@@ -47,7 +50,7 @@ export interface DiagnosticPilotCriteria {
 }
 
 export interface DiagnosticPilotMeasurementEvidence {
-  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v1';
+  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v2';
   status: 'not-collected' | 'complete';
   criteriaVersion: string;
   bankSnapshotSha256: string | null;
@@ -67,6 +70,16 @@ export interface DiagnosticPilotMeasurementEvidence {
     sampleSize: number;
     coefficient: number;
     method: 'bootstrap-classification' | 'replicated-routing';
+  } | null;
+  localDependence: {
+    method: 'adjusted-yen-q3' | 'testlet-residual-correlation';
+    eligibleTestlets: number;
+    analyzedTestlets: number;
+    minimumPairSample: number;
+    maximumObservedAbsoluteResidualCorrelation: number;
+    flaggedTestlets: number;
+    unresolvedMaterialTestlets: number;
+    resolutionReference: string | null;
   } | null;
   stabilityBySkill: readonly {
     skill: DiagnosticSkill;
@@ -162,6 +175,7 @@ export function validateDiagnosticPilotCriteria(criteria: DiagnosticPilotCriteri
     'minimumDiscriminationSample', 'minimumWritingPairs', 'minimumIndependentReferencePairs',
     'minimumReferencesPerCefrLevel', 'minimumAdaptiveReliabilitySamplePerSkill',
     'minimumClassificationConsistencySample', 'minimumStabilityPairsPerSkill',
+    'minimumLocalDependencePairsPerTestlet',
     'minimumFairnessGroups', 'minimumFairnessGroupSample', 'minimumStandardSettingPanelists',
   ] as const) {
     if (!Number.isInteger(criteria[key]) || criteria[key] < 1) errors.push(`${key} must be a positive integer`);
@@ -169,12 +183,17 @@ export function validateDiagnosticPilotCriteria(criteria: DiagnosticPilotCriteri
   if (!Number.isInteger(criteria.maximumUnresolvedDifItems) || criteria.maximumUnresolvedDifItems < 0) {
     errors.push('maximumUnresolvedDifItems must be a non-negative integer');
   }
+  if (!Number.isInteger(criteria.maximumUnresolvedLocalDependenceTestlets)
+    || criteria.maximumUnresolvedLocalDependenceTestlets < 0) {
+    errors.push('maximumUnresolvedLocalDependenceTestlets must be a non-negative integer');
+  }
   for (const key of [
     'minimumCompletionRate', 'minimumItemFacility', 'maximumItemFacility',
     'minimumDistractorSelectionRate', 'maximumOmissionRate', 'minimumWritingExactAgreement',
     'maximumWritingAdjudicationRate', 'minimumReferenceExactAgreement',
     'minimumReferenceWithinOneLevel', 'maximumReferenceSevereDisagreement',
     'minimumAdaptiveReliability', 'minimumClassificationConsistency',
+    'maximumLocalDependenceResidualCorrelation',
     'minimumStabilityCorrelation', 'minimumStabilityWithinOneLevel',
   ] as const) {
     if (!boundedRate(criteria[key])) errors.push(`${key} must be between zero and one`);
@@ -235,6 +254,18 @@ export function diagnosticPilotBankSha256(input: {
       })),
   };
   return createHash('sha256').update(JSON.stringify(canonicalize(snapshot))).digest('hex');
+}
+
+export function diagnosticEligibleTestletCount(bank: readonly DiagnosticBankRecord[]): number {
+  const counts = new Map<string, number>();
+  for (const record of bank) {
+    const stimulus = record.publicItem.stimulus;
+    const identity = stimulus.kind === 'audio'
+      ? `audio:${stimulus.mediaId}`
+      : stimulus.kind === 'text' ? `text:${stimulus.stimulusId}` : null;
+    if (identity) counts.set(identity, (counts.get(identity) ?? 0) + 1);
+  }
+  return [...counts.values()].filter(count => count >= 2).length;
 }
 
 function rate(numerator: number, denominator: number): number | null {
@@ -521,6 +552,7 @@ function measurementEvidenceSummary(input: {
   criteria: DiagnosticPilotCriteria;
   bankSnapshotSha256: string;
   objectiveItemCount: number;
+  eligibleTestletCount: number;
 }) {
   const evidence = input.evidence;
   const provenanceValid = SHA256.test(evidence?.provenance?.aggregateDatasetSha256 ?? '')
@@ -547,7 +579,7 @@ function measurementEvidenceSummary(input: {
     && ['academic-lead', 'measurement-lead', 'privacy-lead'].every(role =>
       approval.approvedBy.some(reference => reference.startsWith(`${role}:`)))
     && Date.parse(approval.appliedAt) >= Date.parse(approval.approvedAt));
-  const bindingValid = evidence?.evidenceVersion === 'diagnostic-pilot-measurement-evidence-v1'
+  const bindingValid = evidence?.evidenceVersion === 'diagnostic-pilot-measurement-evidence-v2'
     && evidence.status === 'complete'
     && evidence.criteriaVersion === input.criteria.criteriaVersion
     && evidence.bankSnapshotSha256 === input.bankSnapshotSha256
@@ -587,6 +619,32 @@ function measurementEvidenceSummary(input: {
   const classificationConsistency = bindingValid && consistencyValid
     && consistency!.sampleSize >= input.criteria.minimumClassificationConsistencySample
     && consistency!.coefficient >= input.criteria.minimumClassificationConsistency;
+
+  const localDependence = evidence?.localDependence;
+  const localDependenceValid = Boolean(localDependence
+    && ['adjusted-yen-q3', 'testlet-residual-correlation'].includes(localDependence.method)
+    && Number.isInteger(localDependence.eligibleTestlets) && localDependence.eligibleTestlets >= 0
+    && Number.isInteger(localDependence.analyzedTestlets) && localDependence.analyzedTestlets >= 0
+    && positiveInteger(localDependence.minimumPairSample)
+    && boundedRate(localDependence.maximumObservedAbsoluteResidualCorrelation)
+    && Number.isInteger(localDependence.flaggedTestlets) && localDependence.flaggedTestlets >= 0
+    && Number.isInteger(localDependence.unresolvedMaterialTestlets) && localDependence.unresolvedMaterialTestlets >= 0
+    && localDependence.flaggedTestlets <= localDependence.analyzedTestlets
+    && localDependence.unresolvedMaterialTestlets <= localDependence.flaggedTestlets
+    && (localDependence.resolutionReference === null
+      || (typeof localDependence.resolutionReference === 'string'
+        && /^[A-Za-z0-9][A-Za-z0-9._:@+-]{2,159}$/u.test(localDependence.resolutionReference)))
+    && (localDependence.maximumObservedAbsoluteResidualCorrelation
+      <= input.criteria.maximumLocalDependenceResidualCorrelation
+      || localDependence.flaggedTestlets > 0)
+    && (localDependence.flaggedTestlets === 0
+      || localDependence.unresolvedMaterialTestlets > 0
+      || localDependence.resolutionReference !== null));
+  const localDependenceReview = bindingValid && localDependenceValid
+    && localDependence!.eligibleTestlets === input.eligibleTestletCount
+    && localDependence!.analyzedTestlets === input.eligibleTestletCount
+    && localDependence!.minimumPairSample >= input.criteria.minimumLocalDependencePairsPerTestlet
+    && localDependence!.unresolvedMaterialTestlets <= input.criteria.maximumUnresolvedLocalDependenceTestlets;
 
   const stabilityRows = Array.isArray(evidence?.stabilityBySkill) ? evidence.stabilityBySkill : [];
   const stabilityBySkill = DIAGNOSTIC_SKILLS.map(skill => {
@@ -656,6 +714,17 @@ function measurementEvidenceSummary(input: {
       coefficient: consistencyValid ? rounded(consistency!.coefficient) : null,
       method: consistencyValid ? consistency!.method : null,
     },
+    localDependence: {
+      eligibleTestlets: localDependenceValid ? localDependence!.eligibleTestlets : null,
+      analyzedTestlets: localDependenceValid ? localDependence!.analyzedTestlets : null,
+      minimumPairSample: localDependenceValid ? localDependence!.minimumPairSample : null,
+      maximumObservedAbsoluteResidualCorrelation: localDependenceValid
+        ? rounded(localDependence!.maximumObservedAbsoluteResidualCorrelation) : null,
+      flaggedTestlets: localDependenceValid ? localDependence!.flaggedTestlets : null,
+      unresolvedMaterialTestlets: localDependenceValid ? localDependence!.unresolvedMaterialTestlets : null,
+      method: localDependenceValid ? localDependence!.method : null,
+      resolutionRecorded: localDependenceValid && localDependence!.resolutionReference !== null,
+    },
     stability: { bySkill: stabilityBySkill },
     fairness: {
       groupCount: fairnessValid ? fairness!.groupSampleSizes.length : null,
@@ -672,7 +741,10 @@ function measurementEvidenceSummary(input: {
       reviewedBoundaryCount: standardSettingValid ? standardSetting!.reviewedBoundaries.length : null,
       decision: standardSettingValid ? standardSetting!.decision : null,
     },
-    gates: { adaptiveReliability, classificationConsistency, stability, fairnessReview, standardSettingReview },
+    gates: {
+      adaptiveReliability, classificationConsistency, localDependenceReview,
+      stability, fairnessReview, standardSettingReview,
+    },
   } as const;
 }
 
@@ -813,6 +885,7 @@ export function buildDiagnosticPilotReport(input: {
     criteria: input.criteria,
     bankSnapshotSha256,
     objectiveItemCount: activeBank.length,
+    eligibleTestletCount: diagnosticEligibleTestletCount(activeBank),
   });
 
   const gates = {
@@ -845,7 +918,7 @@ export function buildDiagnosticPilotReport(input: {
   };
   const allGatesPass = Object.values(gates).every(Boolean);
   return {
-    reportVersion: 'diagnostic-pilot-report-v2',
+    reportVersion: 'diagnostic-pilot-report-v3',
     generatedAt: new Date(input.generatedAt).toISOString(),
     criteria: { version: input.criteria.criteriaVersion, status: input.criteria.status },
     bankSnapshot: {
@@ -906,6 +979,8 @@ export function buildDiagnosticPilotReport(input: {
       ...(input.criteria.status !== 'approved' ? ['PUBLICATION_CRITERIA_AWAIT_ACADEMIC_APPROVAL'] : []),
       ...(input.references.length === 0 ? ['NO_INDEPENDENT_REFERENCE_EVIDENCE'] : []),
       ...(!measurement.bindingValid ? ['MEASUREMENT_EVIDENCE_NOT_BOUND'] : []),
+      ...(measurement.bindingValid && !measurement.gates.localDependenceReview
+        ? ['LOCAL_DEPENDENCE_REVIEW_REQUIRED'] : []),
       ...(itemMetrics.some(item => item.flags.length > 0) ? ['ITEMS_REQUIRE_REVIEW'] : []),
       ...(overdueActiveAttempts > 0 ? ['OVERDUE_ACTIVE_ATTEMPTS'] : []),
       ...(input.writing.some(row => row.status === 'failed') ? ['WRITING_FAILURES_PRESENT'] : []),

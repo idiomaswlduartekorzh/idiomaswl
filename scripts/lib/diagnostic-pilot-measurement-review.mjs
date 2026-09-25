@@ -9,11 +9,11 @@ const CEFR_BOUNDARIES = ['A1/A2', 'A2/B1', 'B1/B2', 'B2/C1', 'C1/C2'];
 const ROLE_CHECKS = {
   'academic-lead': [
     'constructCoverageReviewed', 'cefrBoundaryEvidenceReviewed',
-    'standardSettingReviewed', 'interpretationLimitsAccepted',
+    'localDependenceInterpretationReviewed', 'standardSettingReviewed', 'interpretationLimitsAccepted',
   ],
   'measurement-lead': [
     'analysisProvenanceReviewed', 'adaptiveReliabilityReviewed',
-    'classificationConsistencyReviewed', 'stabilityReviewed',
+    'classificationConsistencyReviewed', 'localDependenceReviewed', 'stabilityReviewed',
     'difMethodReviewed', 'sampleAdequacyReviewed',
   ],
   'privacy-lead': [
@@ -24,7 +24,7 @@ const ROLE_CHECKS = {
 const TOP_LEVEL_KEYS = [
   'adaptiveReliability', 'approval', 'bankSnapshotSha256', 'classificationConsistency',
   'criteriaVersion', 'evidenceVersion', 'fairness', 'generatedAt', 'provenance',
-  'stabilityBySkill', 'standardSetting', 'status',
+  'localDependence', 'stabilityBySkill', 'standardSetting', 'status',
 ];
 
 function exactKeys(value, expected, label) {
@@ -69,11 +69,12 @@ export function validateDiagnosticPilotMeasurementCandidate({
   criteria,
   expectedBankSnapshotSha256,
   objectiveItemCount,
+  eligibleTestletCount,
 }) {
   assertHash(candidateSha256, 'Measurement candidate');
   assertHash(expectedBankSnapshotSha256, 'Expected bank snapshot');
   exactKeys(candidate, TOP_LEVEL_KEYS, 'Measurement candidate');
-  if (candidate.evidenceVersion !== 'diagnostic-pilot-measurement-evidence-v1'
+  if (candidate.evidenceVersion !== 'diagnostic-pilot-measurement-evidence-v2'
     || candidate.status !== 'complete'
     || candidate.criteriaVersion !== criteria?.criteriaVersion
     || candidate.bankSnapshotSha256 !== expectedBankSnapshotSha256
@@ -104,6 +105,33 @@ export function validateDiagnosticPilotMeasurementCandidate({
     || candidate.classificationConsistency.coefficient < criteria.minimumClassificationConsistency
     || !['bootstrap-classification', 'replicated-routing'].includes(candidate.classificationConsistency.method)) {
     throw new Error('Classification consistency does not meet the approved criteria.');
+  }
+
+  exactKeys(candidate.localDependence, [
+    'analyzedTestlets', 'eligibleTestlets', 'flaggedTestlets',
+    'maximumObservedAbsoluteResidualCorrelation', 'method', 'minimumPairSample',
+    'resolutionReference', 'unresolvedMaterialTestlets',
+  ], 'Local dependence evidence');
+  const local = candidate.localDependence;
+  if (!Number.isInteger(eligibleTestletCount) || eligibleTestletCount < 1
+    || local.eligibleTestlets !== eligibleTestletCount
+    || local.analyzedTestlets !== eligibleTestletCount
+    || !positiveInteger(local.minimumPairSample)
+    || local.minimumPairSample < criteria.minimumLocalDependencePairsPerTestlet
+    || !boundedRate(local.maximumObservedAbsoluteResidualCorrelation)
+    || !['adjusted-yen-q3', 'testlet-residual-correlation'].includes(local.method)
+    || !Number.isInteger(local.flaggedTestlets) || local.flaggedTestlets < 0
+    || local.flaggedTestlets > local.analyzedTestlets
+    || !Number.isInteger(local.unresolvedMaterialTestlets)
+    || local.unresolvedMaterialTestlets < 0
+    || local.unresolvedMaterialTestlets > local.flaggedTestlets
+    || local.unresolvedMaterialTestlets > criteria.maximumUnresolvedLocalDependenceTestlets
+    || (local.maximumObservedAbsoluteResidualCorrelation
+      > criteria.maximumLocalDependenceResidualCorrelation && local.flaggedTestlets < 1)
+    || (local.flaggedTestlets > 0 && local.unresolvedMaterialTestlets === 0
+      && !IDENTITY.test(local.resolutionReference ?? ''))
+    || (local.flaggedTestlets === 0 && local.resolutionReference !== null)) {
+    throw new Error('Local dependence evidence does not cover every testlet or resolve every material flag.');
   }
 
   validateUniqueSkillRows(candidate.stabilityBySkill, ALL_SKILLS, row => {
@@ -159,10 +187,12 @@ export function buildDiagnosticPilotMeasurementReviewPackets({
   criteria,
   expectedBankSnapshotSha256,
   objectiveItemCount,
+  eligibleTestletCount,
   generatedAt,
 }) {
   validateDiagnosticPilotMeasurementCandidate({
-    candidate, candidateSha256, criteria, expectedBankSnapshotSha256, objectiveItemCount,
+    candidate, candidateSha256, criteria, expectedBankSnapshotSha256,
+    objectiveItemCount, eligibleTestletCount,
   });
   canonicalIso(generatedAt, 'Measurement review packet generatedAt');
   return Object.entries(ROLE_CHECKS).map(([role, checks]) => ({

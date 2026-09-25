@@ -10,7 +10,8 @@ const PILOT_VALIDATION_CHECKS = [
   'sampleAndCompletionReviewed', 'routeAndLevelCoverageReviewed', 'itemQualityReviewed',
   'writingAgreementReviewed', 'independentReferenceReviewed',
   'measurementEvidenceBindingReviewed', 'adaptiveReliabilityReviewed',
-  'classificationConsistencyReviewed', 'stabilityReviewed', 'fairnessReviewed',
+  'classificationConsistencyReviewed', 'localDependenceReviewed',
+  'stabilityReviewed', 'fairnessReviewed',
   'standardSettingReviewed', 'limitationsAccepted',
 ];
 
@@ -178,7 +179,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     || input.pilotCriteria?.approval?.snapshotSha256 !== input.governanceSnapshots?.['pilot-criteria']) {
     pilotBlockers.push('PILOT_CRITERIA_NOT_APPROVED');
   }
-  if (input.pilotReport?.reportVersion !== 'diagnostic-pilot-report-v2'
+  if (input.pilotReport?.reportVersion !== 'diagnostic-pilot-report-v3'
     || input.pilotReport?.criteria?.version !== input.pilotCriteria?.criteriaVersion
     || input.pilotReport?.criteria?.status !== 'approved') {
     pilotBlockers.push('PILOT_CRITERIA_SNAPSHOT_MISMATCH');
@@ -201,7 +202,7 @@ export function buildDiagnosticReleaseReadiness(input) {
   if (!nonEmpty(evidence?.pilot?.captureReceiptPath)
     || !SHA256.test(evidence?.pilot?.captureReceiptSha256 ?? '')
     || evidence.pilot.captureReceiptSha256 !== input.pilotCaptureReceiptSha256
-    || capture?.receiptVersion !== 'diagnostic-pilot-report-capture-v2'
+    || capture?.receiptVersion !== 'diagnostic-pilot-report-capture-v3'
     || capture?.report?.sha256 !== input.pilotReportSha256
     || capture?.report?.generatedAt !== input.pilotReport?.generatedAt
     || capture?.target?.sourceSha256 !== input.currentSourceSha256
@@ -240,7 +241,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     || evidence.pilot.validationManifestSha256 !== input.pilotValidationManifestSha256
     || embeddedValidationHash !== input.pilotValidationManifestSha256
     || computedValidationHash !== embeddedValidationHash
-    || validation?.manifestVersion !== 'diagnostic-pilot-validation-manifest-v2'
+    || validation?.manifestVersion !== 'diagnostic-pilot-validation-manifest-v3'
     || validation?.decision !== 'APPROVED'
     || !isIsoDate(validation?.compiledAt)
     || !Array.isArray(validation?.receipts)

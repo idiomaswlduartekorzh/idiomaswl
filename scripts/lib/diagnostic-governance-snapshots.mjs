@@ -70,6 +70,9 @@ export const DIAGNOSTIC_PILOT_CRITERIA_GOVERNANCE_PATHS = [
   'docs/diagnostic-mst-simulation-baseline.json',
   'docs/diagnostic-pilot-recruitment-plan.json',
   'scripts/lib/diagnostic-pilot-recruitment.mjs',
+  'src/server/diagnostic/pilot-analytics.ts',
+  'scripts/lib/diagnostic-pilot-measurement-review.mjs',
+  'scripts/lib/diagnostic-pilot-evidence.mjs',
 ];
 
 function canonical(value) {

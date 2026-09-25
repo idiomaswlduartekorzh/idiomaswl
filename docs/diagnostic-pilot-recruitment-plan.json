@@ -52,6 +52,7 @@
     "independentReferencePairsWithLevelCoverage": 100,
     "adaptiveReliabilitySamplePerObjectiveSkill": 100,
     "classificationConsistencySample": 200,
+    "localDependencePairsPerTestlet": 50,
     "stabilityPairsPerSkill": 50,
     "fairnessParticipantsAtMinimumGroupCount": 100,
     "standardSettingPanelists": 3
@@ -59,6 +60,6 @@
   "warnings": [
     "minimumStartedAttempts is an entry gate, not a sufficient recruitment target for item calibration.",
     "These are mathematical lower bounds, not guarantees; routing, attrition and unequal item exposure can only increase recruitment needs.",
-    "Publication remains governed by observed per-item, route, level, reliability, stability, fairness and standard-setting evidence."
+    "Publication remains governed by observed per-item, route, level, reliability, local dependence, stability, fairness and standard-setting evidence."
   ]
 }

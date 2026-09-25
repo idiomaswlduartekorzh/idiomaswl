@@ -102,6 +102,7 @@ export function buildDiagnosticPilotRecruitmentPlan({
       independentReferencePairsWithLevelCoverage: referenceCoverageMinimum,
       adaptiveReliabilitySamplePerObjectiveSkill: criteria.minimumAdaptiveReliabilitySamplePerSkill,
       classificationConsistencySample: criteria.minimumClassificationConsistencySample,
+      localDependencePairsPerTestlet: criteria.minimumLocalDependencePairsPerTestlet,
       stabilityPairsPerSkill: criteria.minimumStabilityPairsPerSkill,
       fairnessParticipantsAtMinimumGroupCount: criteria.minimumFairnessGroups * criteria.minimumFairnessGroupSample,
       standardSettingPanelists: criteria.minimumStandardSettingPanelists,
@@ -109,7 +110,7 @@ export function buildDiagnosticPilotRecruitmentPlan({
     warnings: [
       'minimumStartedAttempts is an entry gate, not a sufficient recruitment target for item calibration.',
       'These are mathematical lower bounds, not guarantees; routing, attrition and unequal item exposure can only increase recruitment needs.',
-      'Publication remains governed by observed per-item, route, level, reliability, stability, fairness and standard-setting evidence.',
+      'Publication remains governed by observed per-item, route, level, reliability, local dependence, stability, fairness and standard-setting evidence.',
     ],
   };
 }

@@ -15,6 +15,9 @@ const criteria = {
   criteriaVersion: 'criteria-v2', minimumAdaptiveReliabilitySamplePerSkill: 10,
   minimumAdaptiveReliability: 0.8, minimumClassificationConsistencySample: 10,
   minimumClassificationConsistency: 0.8, minimumStabilityPairsPerSkill: 10,
+  minimumLocalDependencePairsPerTestlet: 10,
+  maximumLocalDependenceResidualCorrelation: 0.2,
+  maximumUnresolvedLocalDependenceTestlets: 0,
   minimumStabilityCorrelation: 0.75, minimumStabilityWithinOneLevel: 0.9,
   minimumFairnessGroups: 2, minimumFairnessGroupSample: 10,
   maximumUnresolvedDifItems: 0, minimumStandardSettingPanelists: 3,
@@ -22,7 +25,7 @@ const criteria = {
 const bankSnapshotSha256 = 'b'.repeat(64);
 const candidateSha256 = 'c'.repeat(64);
 const candidate = {
-  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v1', status: 'complete',
+  evidenceVersion: 'diagnostic-pilot-measurement-evidence-v2', status: 'complete',
   criteriaVersion: criteria.criteriaVersion, bankSnapshotSha256,
   generatedAt: '2026-09-25T12:00:00.000Z',
   provenance: {
@@ -33,6 +36,11 @@ const candidate = {
     skill, sampleSize: 10, coefficient: 0.85, method: 'route-aware-resampling',
   })),
   classificationConsistency: { sampleSize: 10, coefficient: 0.84, method: 'bootstrap-classification' },
+  localDependence: {
+    method: 'adjusted-yen-q3', eligibleTestlets: 1, analyzedTestlets: 1,
+    minimumPairSample: 10, maximumObservedAbsoluteResidualCorrelation: 0.12,
+    flaggedTestlets: 0, unresolvedMaterialTestlets: 0, resolutionReference: null,
+  },
   stabilityBySkill: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map(skill => ({
     skill, pairs: 10, correlation: 0.8, withinOneLevel: 0.92, method: 'parallel-forms',
   })),
@@ -50,7 +58,7 @@ const candidate = {
 function packets() {
   return buildDiagnosticPilotMeasurementReviewPackets({
     candidate, candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
-    objectiveItemCount: 2, generatedAt: '2026-09-25T13:00:00.000Z',
+    objectiveItemCount: 2, eligibleTestletCount: 1, generatedAt: '2026-09-25T13:00:00.000Z',
   });
 }
 
@@ -66,11 +74,11 @@ function approvedReviews() {
 test('measurement candidate is aggregate-only, thresholded and bound to criteria and bank', () => {
   assert.equal(validateDiagnosticPilotMeasurementCandidate({
     candidate, candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
-    objectiveItemCount: 2,
+    objectiveItemCount: 2, eligibleTestletCount: 1,
   }), candidate);
   assert.throws(() => validateDiagnosticPilotMeasurementCandidate({
     candidate: { ...candidate, participantRows: [] }, candidateSha256, criteria,
-    expectedBankSnapshotSha256: bankSnapshotSha256, objectiveItemCount: 2,
+    expectedBankSnapshotSha256: bankSnapshotSha256, objectiveItemCount: 2, eligibleTestletCount: 1,
   }), /aggregate evidence schema/);
   assert.throws(() => validateDiagnosticPilotMeasurementCandidate({
     candidate: {
@@ -78,8 +86,22 @@ test('measurement candidate is aggregate-only, thresholded and bound to criteria
       adaptiveReliability: candidate.adaptiveReliability.map((row, index) =>
         index === 0 ? { ...row, coefficient: 0.5 } : row),
     },
-    candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256, objectiveItemCount: 2,
+    candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
+    objectiveItemCount: 2, eligibleTestletCount: 1,
   }), /does not meet criteria/);
+  assert.throws(() => validateDiagnosticPilotMeasurementCandidate({
+    candidate: {
+      ...candidate,
+      localDependence: {
+        ...candidate.localDependence,
+        maximumObservedAbsoluteResidualCorrelation: 0.4,
+        flaggedTestlets: 1,
+        unresolvedMaterialTestlets: 1,
+      },
+    },
+    candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
+    objectiveItemCount: 2, eligibleTestletCount: 1,
+  }), /Local dependence evidence/);
 });
 
 test('review packets separate academic, measurement and privacy responsibilities', () => {
@@ -87,9 +109,10 @@ test('review packets separate academic, measurement and privacy responsibilities
   assert.deepEqual(result.map(packet => packet.role), ['academic-lead', 'measurement-lead', 'privacy-lead']);
   assert.deepEqual(Object.keys(result[0].checks), [
     'constructCoverageReviewed', 'cefrBoundaryEvidenceReviewed',
-    'standardSettingReviewed', 'interpretationLimitsAccepted',
+    'localDependenceInterpretationReviewed', 'standardSettingReviewed', 'interpretationLimitsAccepted',
   ]);
   assert.ok(Object.hasOwn(result[1].checks, 'adaptiveReliabilityReviewed'));
+  assert.ok(Object.hasOwn(result[1].checks, 'localDependenceReviewed'));
   assert.ok(Object.hasOwn(result[2].checks, 'lawfulBasisVerified'));
   assert.doesNotMatch(JSON.stringify(result), /participantRows|groupLabel/);
 });

@@ -41,6 +41,7 @@ test('route and specialist floors remain explicit instead of being hidden by the
   assert.equal(plan.routeExposureLowerBounds.withoutConfirmationStartedAcrossRoutes, 4_800);
   assert.equal(plan.routeExposureLowerBounds.configuredMinimumCompletedPerRoute, 60);
   assert.equal(plan.specialistEvidenceFloors.independentReferencePairsWithLevelCoverage, 100);
+  assert.equal(plan.specialistEvidenceFloors.localDependencePairsPerTestlet, 50);
   assert.equal(plan.specialistEvidenceFloors.fairnessParticipantsAtMinimumGroupCount, 100);
   assert.match(plan.warnings.join(' '), /not a sufficient recruitment target/);
 });

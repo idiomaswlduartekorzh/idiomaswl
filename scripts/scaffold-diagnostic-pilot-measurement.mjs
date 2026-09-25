@@ -6,7 +6,10 @@ import { fileURLToPath } from 'node:url';
 import criteria from '../config/diagnostic/pilot-publication-criteria.json' with { type: 'json' };
 import template from '../config/diagnostic/pilot-measurement-evidence.json' with { type: 'json' };
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK, ENGLISH_DIAGNOSTIC_WRITING_BANK } from '../src/server/diagnostic/bank/index.ts';
-import { diagnosticPilotBankSha256 } from '../src/server/diagnostic/pilot-analytics.ts';
+import {
+  diagnosticEligibleTestletCount,
+  diagnosticPilotBankSha256,
+} from '../src/server/diagnostic/pilot-analytics.ts';
 import { buildDiagnosticPilotMeasurementReviewPackets } from './lib/diagnostic-pilot-measurement-review.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -26,6 +29,8 @@ const reviewRoot = resolve(outputRoot, 'reviews');
 const bankSnapshotSha256 = diagnosticPilotBankSha256({
   bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK, writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
 });
+const activeObjectiveBank = ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK
+  .filter(record => record.status === 'pilot' || record.status === 'operational');
 mkdirSync(outputRoot, { recursive: true });
 
 if (!process.argv.includes('--prepare-reviews')) {
@@ -42,7 +47,8 @@ if (!process.argv.includes('--prepare-reviews')) {
     candidate: relative(root, candidatePath),
     criteriaVersion: criteria.criteriaVersion,
     bankSnapshotSha256,
-    objectiveItemCount: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.length,
+    objectiveItemCount: activeObjectiveBank.length,
+    eligibleTestletCount: diagnosticEligibleTestletCount(activeObjectiveBank),
     next: 'Complete aggregate metrics, set status=complete and generatedAt, then rerun with --prepare-reviews.',
   }, null, 2)}\n`);
   process.exit(0);
@@ -55,7 +61,9 @@ const candidate = JSON.parse(candidateBytes.toString('utf8'));
 const candidateSha256 = createHash('sha256').update(candidateBytes).digest('hex');
 const packets = buildDiagnosticPilotMeasurementReviewPackets({
   candidate, candidateSha256, criteria, expectedBankSnapshotSha256: bankSnapshotSha256,
-  objectiveItemCount: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.length, generatedAt: new Date().toISOString(),
+  objectiveItemCount: activeObjectiveBank.length,
+  eligibleTestletCount: diagnosticEligibleTestletCount(activeObjectiveBank),
+  generatedAt: new Date().toISOString(),
 });
 mkdirSync(reviewRoot, { recursive: true });
 for (const packet of packets) {

@@ -17,7 +17,7 @@ const commitSha = 'c'.repeat(40);
 const reportSha256 = 'd'.repeat(64);
 const capturedAt = '2026-09-25T14:05:00.000Z';
 const report = {
-  reportVersion: 'diagnostic-pilot-report-v2',
+  reportVersion: 'diagnostic-pilot-report-v3',
   generatedAt: '2026-09-25T14:04:00.000Z',
   criteria: { version: 'criteria-v1', status: 'approved' },
   bankSnapshot: { sha256: bankSnapshotSha256 },
@@ -27,12 +27,13 @@ const report = {
     itemSamples: true, itemQuality: true, distractorFunctioning: true,
     writingAgreement: true, independentReference: true, referenceLevelCoverage: true,
     adaptiveReliability: true, classificationConsistency: true, stability: true,
-    fairnessReview: true, standardSettingReview: true,
+    localDependenceReview: true, fairnessReview: true, standardSettingReview: true,
   },
   itemMetrics: [],
   measurementEvidence: {
     bindingValid: true, provenanceBound: true, approvalBound: true,
     adaptiveReliability: { bySkill: [{}, {}, {}, {}] },
+    localDependence: { eligibleTestlets: 2, analyzedTestlets: 2 },
     stability: { bySkill: [{}, {}, {}, {}, {}] },
   },
 };
