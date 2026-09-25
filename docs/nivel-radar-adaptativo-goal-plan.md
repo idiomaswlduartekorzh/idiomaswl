@@ -92,13 +92,15 @@ Actualizado el 24 de septiembre de 2026:
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
   previamente público; el selector bloquea cualquier contenido que no tenga exposición
   `reserved`, incluso si alguien cambia por error su estado a aprobado.
-- **Escucha reservada — producción inferior preparada, no contabilizada:** hay 12 briefs
-  originales A1–A2 —seis estímulos y doce decisiones por nivel— que usan el inventario
+- **Escucha reservada — producción A1–C2 preparada, no contabilizada:** hay 36 briefs
+  originales —seis estímulos y doce decisiones por cada nivel MCER— que usan el inventario
   recuperado únicamente como referencia agregada de duración y entrega. Permanecen en estado
   `production-brief`: no suman capacidad al banco. Un manifiesto vacío solo los materializa
   como borradores reservados cuando cada grabación nueva coincide con la versión de producción,
   duración, SHA-256 de audio, SHA-256 de transcripción y dos revisores de audio independientes;
   después todavía necesitan revisión lingüística, de evaluación y alineación para promoción.
+  Cada tramo A1–A2, B1–B2 y C1–C2 lleva versión propia; el ingestor rechaza una grabación
+  generada para otra versión aunque conserve el mismo identificador.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
@@ -132,7 +134,9 @@ Actualizado el 24 de septiembre de 2026:
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores; el último corte local ejecutó **152 pruebas** y
-  TypeScript compiló sin errores.
+  TypeScript compiló sin errores. El build de producción con webpack también completó las
+  2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
+  pendiente.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.

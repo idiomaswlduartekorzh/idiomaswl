@@ -5,15 +5,24 @@ import {
   ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
 } from '../src/server/diagnostic/bank/listening-production-lower.en.ts';
 import {
+  ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
+} from '../src/server/diagnostic/bank/listening-production-mid.en.ts';
+import {
+  ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
+} from '../src/server/diagnostic/bank/listening-production-advanced.en.ts';
+import {
   ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   materializeRecordedListeningCandidates,
 } from '../src/server/diagnostic/bank/listening-recorded.en.ts';
 
-const briefs = ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS;
+const lowerBriefs = ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS;
+const midBriefs = ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS;
+const advancedBriefs = ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS;
+const briefs = [...lowerBriefs, ...midBriefs, ...advancedBriefs];
 const wordCount = value => value.trim().split(/\s+/u).length;
 
-test('lower-level production plan has six original testlets and twelve decisions per level', () => {
-  for (const level of ['A1', 'A2']) {
+test('production plans have six original testlets and twelve decisions at every CEFR level', () => {
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
     const levelBriefs = briefs.filter(brief => brief.level === level);
     assert.equal(levelBriefs.length, 6);
     assert.equal(levelBriefs.flatMap(brief => brief.questions).length, 12);
@@ -34,7 +43,7 @@ test('production briefs remain non-selectable until immutable audio and human QA
   }
 });
 
-test('scripts fit the declared lower-level recording envelopes', () => {
+test('scripts fit their declared recording envelopes', () => {
   for (const brief of briefs) {
     const words = wordCount(brief.recording.turns.map(turn => turn.text).join(' '));
     const [minimumDuration, maximumDuration] = brief.recording.targetDurationSeconds;
@@ -48,7 +57,7 @@ test('scripts fit the declared lower-level recording envelopes', () => {
 });
 
 test('questions have balanced keys, complete rationales and listening construct coverage', () => {
-  for (const level of ['A1', 'A2']) {
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
     const questions = briefs.filter(brief => brief.level === level).flatMap(brief => brief.questions);
     const keyCounts = [0, 1, 2].map(index => questions.filter(question => question.correctIndex === index).length);
     assert.ok(Math.max(...keyCounts) - Math.min(...keyCounts) <= 1, `${level} answer positions are imbalanced`);
@@ -78,7 +87,7 @@ test('a verified recording materializes only as a reserved draft bound to audio 
   const brief = briefs[0];
   const publication = {
     mediaId: brief.audioArtifact.mediaId,
-    productionVersion: 'en-listening-original-lower-production-1',
+    productionVersion: brief.productionVersion,
     audioSha256: 'a'.repeat(64), transcriptSha256: 'b'.repeat(64), durationSeconds: 25,
     transcriptReviewerId: 'transcript-reviewer-1', alignmentReviewerId: 'alignment-reviewer-1',
     reviewedAt: '2026-09-25T12:00:00.000Z',
@@ -96,7 +105,7 @@ test('a verified recording materializes only as a reserved draft bound to audio 
 test('recording materialization rejects stale versions, invalid duration and non-independent audio QA', () => {
   const brief = briefs[0];
   const base = {
-    mediaId: brief.audioArtifact.mediaId, productionVersion: 'en-listening-original-lower-production-1',
+    mediaId: brief.audioArtifact.mediaId, productionVersion: brief.productionVersion,
     audioSha256: 'a'.repeat(64), transcriptSha256: 'b'.repeat(64), durationSeconds: 25,
     transcriptReviewerId: 'reviewer-1', alignmentReviewerId: 'reviewer-2', reviewedAt: '2026-09-25T12:00:00.000Z',
   };

@@ -3,11 +3,12 @@ import type { CefrLevel } from '../../../lib/diagnostic/types.ts';
 export const ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_VERSION = 'en-listening-original-lower-production-1';
 
 type LowerLevel = Extract<CefrLevel, 'A1' | 'A2'>;
-type ListeningSubdomain = 'main-idea' | 'detail' | 'speaker-intent' | 'inference' | 'discourse-tracking';
+export type ListeningSubdomain = 'main-idea' | 'detail' | 'speaker-intent' | 'inference' | 'discourse-tracking';
 
 export interface DiagnosticListeningProductionBrief {
   id: string;
-  level: LowerLevel;
+  level: CefrLevel;
+  productionVersion: string;
   exposure: 'reserved';
   status: 'production-brief';
   benchmark: {
@@ -39,7 +40,7 @@ export interface DiagnosticListeningProductionBrief {
   };
 }
 
-const briefs: readonly Omit<DiagnosticListeningProductionBrief, 'id' | 'benchmark' | 'audioArtifact'>[] = [
+const briefs: readonly Omit<DiagnosticListeningProductionBrief, 'id' | 'productionVersion' | 'benchmark' | 'audioArtifact'>[] = [
   {
     level: 'A1', exposure: 'reserved', status: 'production-brief',
     recording: {
@@ -196,6 +197,7 @@ export const ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS: readonly Diag
   return {
     ...brief,
     id,
+    productionVersion: ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_VERSION,
     benchmark: {
       source: 'aggregate-legacy-duration-profile',
       note: 'Duration and delivery envelope informed by recovered WeLearn audio; script, construct and questions are newly authored and reserved.',

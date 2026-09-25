@@ -2,9 +2,10 @@ import publications from '../../../../config/diagnostic/english-listening-audio-
 import type { DiagnosticBankRecord } from '../types.ts';
 import {
   ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
-  ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_VERSION,
   type DiagnosticListeningProductionBrief,
 } from './listening-production-lower.en.ts';
+import { ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS } from './listening-production-mid.en.ts';
+import { ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS } from './listening-production-advanced.en.ts';
 
 export interface DiagnosticListeningAudioPublication {
   mediaId: string;
@@ -28,7 +29,7 @@ function validatePublication(
   publication: DiagnosticListeningAudioPublication,
 ): string[] {
   const errors: string[] = [];
-  if (publication.productionVersion !== ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_VERSION) errors.push('production version mismatch');
+  if (publication.productionVersion !== brief.productionVersion) errors.push('production version mismatch');
   if (!/^[a-f0-9]{64}$/.test(publication.audioSha256)) errors.push('invalid audio hash');
   if (!/^[a-f0-9]{64}$/.test(publication.transcriptSha256)) errors.push('invalid transcript hash');
   const [minimumDuration, maximumDuration] = brief.recording.targetDurationSeconds;
@@ -103,6 +104,10 @@ export function materializeRecordedListeningCandidates(
 }
 
 export const ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES = materializeRecordedListeningCandidates(
-  ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
+  [
+    ...ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS,
+    ...ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
+    ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
+  ],
   publications as DiagnosticListeningAudioPublicationManifest,
 );
