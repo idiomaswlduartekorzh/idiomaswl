@@ -11,9 +11,7 @@ export function diagnosticReleaseSourcePaths(root) {
       || (path.startsWith('config/diagnostic/')
         && !['config/diagnostic/release-evidence.json', 'config/diagnostic/release-certificate.json'].includes(path))
       || path === 'docs/diagnostic-bank-readiness.json'
-      || path.startsWith('scripts/check-diagnostic-')
-      || path.startsWith('scripts/build-diagnostic-')
-      || path.startsWith('scripts/lib/diagnostic-')
+      || (path.startsWith('scripts/') && path.includes('diagnostic-'))
       || path.startsWith('src/lib/diagnostic/')
       || path.startsWith('src/server/diagnostic/')
       || path.startsWith('src/app/api/diagnostic/')

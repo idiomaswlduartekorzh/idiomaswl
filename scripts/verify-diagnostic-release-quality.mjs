@@ -41,9 +41,14 @@ const suiteOutput = run('pnpm', ['run', 'test:diagnostic-foundation']);
 const testCount = Number([...suiteOutput.matchAll(/ℹ tests (\d+)/gu)].at(-1)?.[1]);
 if (!Number.isInteger(testCount) || testCount < 1) throw new Error('Diagnostic suite test count was not detected.');
 run(process.execPath, ['node_modules/typescript/bin/tsc', '--noEmit']);
+const nodeOptions = (process.env.NODE_OPTIONS ?? '')
+  .split(/\s+/u)
+  .filter(option => option && !option.startsWith('--max-old-space-size='))
+  .concat('--max-old-space-size=8192')
+  .join(' ');
 const buildOutput = run(process.execPath, ['node_modules/next/dist/bin/next', 'build', '--webpack'], {
   ...process.env,
-  NODE_OPTIONS: `${process.env.NODE_OPTIONS ?? ''} --max-old-space-size=6144`.trim(),
+  NODE_OPTIONS: nodeOptions,
 });
 const pageProgress = [...buildOutput.matchAll(/\((\d+)\/(\d+)\)/gu)]
   .map(match => [Number(match[1]), Number(match[2])])
