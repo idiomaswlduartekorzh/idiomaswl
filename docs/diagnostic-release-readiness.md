@@ -215,6 +215,10 @@ npm run scaffold:diagnostic-bank-review -- --level=B1 --skill=reading
 # cada persona completa su archivo y lo renombra a *.completed.json
 npm run report:diagnostic-bank-review-progress
 npm run record:diagnostic-bank-approvals -- \
+  --review-root=.diagnostic-private/review-packets/english-bank-draft-1-batches \
+  --manifest-version=english-diagnostic-approvals-v2
+# alternativamente, para un lote aislado:
+npm run record:diagnostic-bank-approvals -- \
   .diagnostic-private/review-packets/.../linguistic-reviewer.completed.json \
   .diagnostic-private/review-packets/.../assessment-reviewer.completed.json \
   --manifest-version=english-diagnostic-approvals-v2
@@ -237,6 +241,14 @@ recibo completado. El estado actual es `REVIEW_IN_PROGRESS`: **48/48 plantillas 
 recibos completados, 0/24 lotes listos y 0 artefactos inválidos**. Escucha aparece por separado
 como `NOT_BATCHABLE_RECORDED_CANDIDATES_MISSING`, porque aún no hay grabaciones materializadas
 que puedan someterse a su revisión adicional de alineación.
+
+Cuando los 24 lotes estén completos, `--review-root` ejecuta primero el auditor en modo estricto
+y solo entonces incorpora los 48 recibos en una propuesta única. Las referencias conservan su
+ruta privada relativa —para distinguir nombres repetidos entre lotes— y rechazan rutas absolutas,
+traversal, separadores de otra plataforma y enlaces que escapen de `.diagnostic-private/`. El
+registrador continúa siendo dry run: todavía exige checkout limpio, una versión nueva, la
+confirmación ligada a propuesta y conjunto de recibos, `--write` y operador estable antes de
+actualizar atómicamente el manifiesto.
 
 ### Captura y validación del piloto
 

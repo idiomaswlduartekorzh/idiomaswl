@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { readFileSync, readdirSync, realpathSync, renameSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -29,28 +29,21 @@ import {
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const privateRoot = path.resolve(root, '.diagnostic-private');
-const cli = process.argv.slice(2);
+const cli = process.argv.slice(2).filter(argument => argument !== '--');
 const value = flag => {
   const argument = cli.find(row => row.startsWith(`${flag}=`));
   return argument ? argument.slice(flag.length + 1) : '';
 };
 for (const argument of cli.filter(row => row.startsWith('--'))) {
-  assert.ok(['--manifest=', '--manifest-version=', '--confirm=', '--applied-by='].some(prefix => argument.startsWith(prefix))
+  assert.ok(['--manifest=', '--manifest-version=', '--confirm=', '--applied-by=', '--review-root=']
+    .some(prefix => argument.startsWith(prefix))
     || argument === '--write', `Unknown flag: ${argument}`);
 }
 
 const receiptArguments = cli.filter(argument => !argument.startsWith('--'));
-assert.ok(receiptArguments.length >= 2, 'Provide at least two independent completed review receipts');
-const receiptPaths = receiptArguments.map(argument => {
-  const resolved = path.resolve(root, argument);
-  const relative = path.relative(privateRoot, resolved);
-  assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative),
-    'Completed review receipts must stay below .diagnostic-private/.');
-  assert.ok(path.basename(resolved).endsWith('.completed.json'),
-    'Completed review receipt filenames must end in .completed.json.');
-  return resolved;
-});
-assert.equal(new Set(receiptPaths).size, receiptPaths.length, 'Completed review receipt paths must be unique');
+const reviewRootArgument = value('--review-root');
+assert.ok(reviewRootArgument ? receiptArguments.length === 0 : receiptArguments.length >= 2,
+  'Provide either --review-root=<private batch package> or at least two completed review receipts.');
 
 const defaultManifestPath = path.resolve(root, 'config/diagnostic/english-bank-approvals.json');
 const manifestArgument = value('--manifest');
@@ -65,6 +58,48 @@ assert.ok(manifestVersion, '--manifest-version is required and must identify thi
 const workingTree = execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim();
 assert.equal(workingTree, '', 'Recording diagnostic bank approvals requires a clean working tree.');
 
+const canonicalPrivateRoot = realpathSync(privateRoot);
+function assertPrivatePath(resolved, message) {
+  const relative = path.relative(canonicalPrivateRoot, resolved);
+  assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative), message);
+  return relative;
+}
+function resolveCompletedReceipt(argument) {
+  const resolved = realpathSync(path.resolve(root, argument));
+  assertPrivatePath(resolved, 'Completed review receipts must stay below .diagnostic-private/.');
+  assert.ok(path.basename(resolved).endsWith('.completed.json'),
+    'Completed review receipt filenames must end in .completed.json.');
+  return resolved;
+}
+function receiptsFromReadyPackage(argument) {
+  assert.ok(!path.isAbsolute(argument), '--review-root must be a relative path below .diagnostic-private/.');
+  const reviewRoot = realpathSync(path.resolve(root, argument));
+  assertPrivatePath(reviewRoot, 'Review package must stay below .diagnostic-private/.');
+  try {
+    execFileSync(process.execPath, [
+      '--experimental-strip-types',
+      '--no-warnings',
+      '--experimental-loader', './tests/ts-paths-loader.mjs',
+      'scripts/report-diagnostic-bank-review-progress.mjs',
+      `--root=${reviewRoot}`,
+      '--strict',
+    ], { cwd: root, encoding: 'utf8', stdio: 'pipe' });
+  } catch {
+    throw new Error('The private review package is not READY_TO_COMPILE under the strict progress auditor.');
+  }
+  return readdirSync(reviewRoot, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .flatMap(directory => readdirSync(path.join(reviewRoot, directory.name), { withFileTypes: true })
+      .filter(entry => entry.isFile() && entry.name.endsWith('.completed.json'))
+      .map(entry => resolveCompletedReceipt(path.join(reviewRoot, directory.name, entry.name))))
+    .sort((left, right) => left.localeCompare(right));
+}
+const receiptPaths = reviewRootArgument
+  ? receiptsFromReadyPackage(reviewRootArgument)
+  : receiptArguments.map(resolveCompletedReceipt);
+assert.ok(receiptPaths.length >= 2, 'At least two independent completed review receipts are required.');
+assert.equal(new Set(receiptPaths).size, receiptPaths.length, 'Completed review receipt paths must be unique');
+
 const objectiveCandidates = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
@@ -77,7 +112,7 @@ const receiptEntries = receiptPaths.map(file => {
   const bytes = readFileSync(file);
   const packet = JSON.parse(bytes.toString('utf8'));
   return {
-    file: path.basename(file),
+    file: path.relative(canonicalPrivateRoot, file).split(path.sep).join('/'),
     sha256: createHash('sha256').update(bytes).digest('hex'),
     packet,
   };

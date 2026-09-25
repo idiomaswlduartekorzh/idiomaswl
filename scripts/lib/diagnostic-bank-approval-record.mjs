@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { posix } from 'node:path';
 
 const SHA256 = /^[a-f0-9]{64}$/u;
 const OPERATOR = /^[A-Za-z0-9][A-Za-z0-9._@+-]{2,159}$/u;
@@ -29,6 +30,16 @@ function mergeApprovals(current, additions) {
   return [...byId.values()].sort((left, right) => left.itemId.localeCompare(right.itemId));
 }
 
+export function isSafeDiagnosticReceiptReferencePath(value) {
+  return typeof value === 'string'
+    && value.length > 0
+    && !value.includes('\\')
+    && !posix.isAbsolute(value)
+    && posix.normalize(value) === value
+    && value.split('/').every(segment => segment && segment !== '.' && segment !== '..')
+    && value.endsWith('.completed.json');
+}
+
 export function buildDiagnosticBankApprovalProposal({
   existingManifest,
   compiled,
@@ -41,9 +52,7 @@ export function buildDiagnosticBankApprovalProposal({
   if (!Array.isArray(receiptReferences) || receiptReferences.length < 2
     || new Set(receiptReferences.map(reference => reference.file)).size !== receiptReferences.length
     || new Set(receiptReferences.map(reference => reference.packetId)).size !== receiptReferences.length
-    || receiptReferences.some(reference => typeof reference.file !== 'string'
-      || reference.file !== reference.file.split('/').at(-1)
-      || !reference.file.endsWith('.completed.json')
+    || receiptReferences.some(reference => !isSafeDiagnosticReceiptReferencePath(reference.file)
       || !SHA256.test(reference.sha256 ?? '')
       || typeof reference.packetId !== 'string' || !reference.packetId
       || typeof reference.role !== 'string' || !reference.role

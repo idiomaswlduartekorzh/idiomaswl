@@ -172,6 +172,13 @@ Actualizado el 25 de septiembre de 2026:
   completados y 0/24 lotes listos**. La escucha no se mezcla con ese atraso: permanece no
   loteable hasta materializar audio reservado y después exigirá un tercer rol independiente de
   alineación.
+- **Compilación integral de revisión preparada:** el registrador acepta ahora el directorio
+  privado completo mediante `--review-root`, ejecuta el auditor estricto y se niega a proponer
+  una aplicación mientras falte cualquiera de los 48 recibos o exista un cambio solicitado,
+  hash viejo, vista manipulada o identidad no independiente. Las referencias se preservan con
+  subruta privada segura, por lo que los nombres repetidos de los 24 lotes ya no colisionan. La
+  aplicación sigue separada en dry run y escritura confirmada por hashes; este mecanismo no
+  crea ni presume firmas humanas.
 - **Fase 6 — medición y reporte avanzados:** estimación IRT/EAP parametrizable, rango plausible,
   confianza, distinción de omisiones y retención del nivel global ante evidencia incompleta
   implementadas. El resultado persistido incluye ahora prioridades diferentes según el perfil,
@@ -688,6 +695,17 @@ material reservado: reporta cobertura agregada por nivel/habilidad/rol y solo de
 `READY_TO_COMPILE` cuando cada lote tiene sus dos recibos completos, actuales, sin cambios
 solicitados y firmados por identidades distintas. `-- --strict` permite usar esa misma condición
 como puerta operativa cuando llegue el momento de compilar todos los lotes.
+
+Una vez alcanzado ese estado, el lote completo se prepara con:
+
+```bash
+npm run record:diagnostic-bank-approvals -- \
+  --review-root=.diagnostic-private/review-packets/english-bank-draft-1-batches \
+  --manifest-version=english-diagnostic-approvals-v2
+```
+
+La salida sigue siendo una propuesta sin escritura. Solo su segunda ejecución con la confirmación
+exacta, `--write` y un operador identificado puede actualizar el manifiesto.
 
 ## Definición de terminado del goal
 

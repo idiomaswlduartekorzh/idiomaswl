@@ -12,6 +12,7 @@ import {
 } from '../scripts/lib/diagnostic-review-workflow.mjs';
 import {
   buildDiagnosticBankApprovalProposal,
+  isSafeDiagnosticReceiptReferencePath,
   recordDiagnosticBankApprovalProposal,
 } from '../scripts/lib/diagnostic-bank-approval-record.mjs';
 import { auditDiagnosticBankReviewProgress } from '../scripts/lib/diagnostic-review-progress.mjs';
@@ -141,8 +142,8 @@ test('bank approval proposal binds completed private receipts and merges without
     reviewers: [{ id: 'linguist-1', role: 'linguistic-reviewer' }, { id: 'assessor-1', role: 'assessment-reviewer' }],
   };
   const receiptReferences = [
-    { file: 'linguistic.completed.json', sha256: '1'.repeat(64), packetId: 'packet:linguistic', role: 'linguistic-reviewer', reviewerId: 'linguist-1' },
-    { file: 'assessment.completed.json', sha256: '2'.repeat(64), packetId: 'packet:assessment', role: 'assessment-reviewer', reviewerId: 'assessor-1' },
+    { file: 'review-packets/a1-reading/linguistic.completed.json', sha256: '1'.repeat(64), packetId: 'packet:linguistic', role: 'linguistic-reviewer', reviewerId: 'linguist-1' },
+    { file: 'review-packets/a1-reading/assessment.completed.json', sha256: '2'.repeat(64), packetId: 'packet:assessment', role: 'assessment-reviewer', reviewerId: 'assessor-1' },
   ];
   const built = buildDiagnosticBankApprovalProposal({
     existingManifest: {
@@ -208,7 +209,21 @@ test('bank approval recorder is private, clean-tree, dry-run and confirmation bo
   assert.match(source, /APPLY_DIAGNOSTIC_BANK_APPROVALS/);
   assert.match(source, /--write/);
   assert.match(source, /--applied-by/);
+  assert.match(source, /--review-root/);
+  assert.match(source, /report-diagnostic-bank-review-progress\.mjs/);
+  assert.match(source, /--strict/);
+  assert.match(source, /argument !== '--'/);
   assert.match(source, /renameSync/);
+});
+
+test('receipt references permit unique private subpaths but reject traversal and platform escapes', () => {
+  assert.equal(isSafeDiagnosticReceiptReferencePath('review-packets/a1-reading/linguistic.completed.json'), true);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('linguistic.completed.json'), true);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('../outside.completed.json'), false);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('/absolute.completed.json'), false);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('review-packets\\escape.completed.json'), false);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('review-packets/a/../escape.completed.json'), false);
+  assert.equal(isSafeDiagnosticReceiptReferencePath('review-packets/a.template.json'), false);
 });
 
 test('review progress counts current templates without treating them as completed receipts', () => {
