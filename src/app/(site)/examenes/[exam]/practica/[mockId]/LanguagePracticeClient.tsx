@@ -619,10 +619,14 @@ function GoethePage({
 
 function GoetheTaskHeading({ section }: { section: MockSection }) {
   const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
+  const exampleIndex = section.instructions.search(/\sBEISPIEL(?:\s|:)/i);
+  const instructions = exampleIndex >= 0 ? section.instructions.slice(0, exampleIndex).trim() : section.instructions;
+  const example = exampleIndex >= 0 ? section.instructions.slice(exampleIndex).trim() : '';
   return (
     <header className="goethe-task-heading">
       <h2>Teil {displayPart}</h2>
-      <p>{section.instructions}</p>
+      <p>{instructions}</p>
+      {example ? <p className="goethe-task-heading__example">{example}</p> : null}
     </header>
   );
 }
@@ -774,6 +778,46 @@ function GoetheSpeakingMaterial({ q }: { q: SpeakQuestion }) {
   );
 }
 
+function GoetheSpeakingRandomizer({ q }: { q: SpeakQuestion }) {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const cards = q.partNumber === 1
+    ? (q.cueCard ?? '').split(' · ').filter(Boolean).map(label => ({ label: label.replace(/\?$/, ''), detail: 'Fragekarte' }))
+    : q.partNumber === 2
+      ? q.text.split('\n').map((line, index) => {
+          const label = line.replace(/^KARTE\s+[AB]:\s*/i, '');
+          const cueBlock = (q.cueCard ?? '').split(/\n\n+/)[index] ?? '';
+          const [, cueLine = ''] = cueBlock.split('\n');
+          return { label, detail: cueLine };
+        })
+      : (q.imageUrls ?? []).map((_, index) => ({ label: `Kandidat/in ${index === 0 ? 'A' : 'B'}`, detail: 'Rolle für diese Übungsrunde' }));
+  const selected = selectedIndex === null ? null : cards[selectedIndex];
+
+  const chooseRandomCard = () => {
+    if (cards.length === 0) return;
+    if (cards.length === 1) {
+      setSelectedIndex(0);
+      return;
+    }
+    setSelectedIndex(current => {
+      if (current === null) return Math.floor(Math.random() * cards.length);
+      return (current + 1 + Math.floor(Math.random() * (cards.length - 1))) % cards.length;
+    });
+  };
+
+  return (
+    <div className="goethe-speaking-randomizer">
+      <div className="goethe-speaking-randomizer__copy">
+        <strong>{selected ? selected.label : 'Zufallsauswahl'}</strong>
+        <span>{selected?.detail || 'Wie in A1: Ziehen Sie eine Karte oder Rolle zufällig.'}</span>
+      </div>
+      <button type="button" onClick={chooseRandomCard}>
+        <span aria-hidden="true">↻</span>
+        {selected ? 'Andere Auswahl' : 'Zufällig wählen'}
+      </button>
+    </div>
+  );
+}
+
 function GoetheSpeakingSection({
   section,
   speakingAnswers,
@@ -811,6 +855,7 @@ function GoetheSpeakingSection({
       <section className="goethe-practice-controls" aria-label={`Práctica oral Teil ${q.partNumber}`}>
         <p className="goethe-practice-controls__eyebrow">WeLearn · práctica interactiva</p>
         <p>Practica en voz alta con la tarjeta oficializada. La grabación y las notas no forman parte del cuadernillo.</p>
+        <GoetheSpeakingRandomizer q={q} />
         {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recordings?.[q.id]} maxSeconds={180} onChange={recording => onRecording(q.id, recording)} /> : null}
         <label className="lang-speak__notes">
           <span className="lang-speak__notes-label">Notas de respuesta</span>

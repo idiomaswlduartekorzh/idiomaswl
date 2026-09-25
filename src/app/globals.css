@@ -6119,6 +6119,15 @@ button {
   line-height: 1.65;
   white-space: pre-wrap;
 }
+.goethe-task-heading .goethe-task-heading__example {
+  margin-top: 1.15rem;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid #8f8f8a;
+  background: #f3f3f1;
+  color: #3f3f3f;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
 .goethe-candidate-page--stimulus .goethe-document {
   margin-top: 1.25rem;
 }
@@ -6243,13 +6252,21 @@ button {
 .goethe-matching-row {
   display: grid;
   grid-template-columns: 2rem minmax(0, 1fr) 2.5rem;
-  gap: 0.75rem;
+  gap: 0.9rem;
   align-items: center;
+  min-width: 0;
+  padding: 0.35rem 0 1rem;
+  border-bottom: 1px solid #dededb;
   color: #333;
   font-size: 0.82rem;
-  line-height: 1.45;
+  line-height: 1.55;
 }
+.goethe-matching-row:last-child { border-bottom: 0; }
 .goethe-matching-row strong { align-self: start; }
+.goethe-matching-row > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .goethe-matching-row select {
   width: 2.25rem;
   height: 2rem;
@@ -6441,6 +6458,52 @@ button {
   color: #596071;
   font-size: 0.82rem;
 }
+.goethe-speaking-randomizer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.15rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #afb7c4;
+  background: #fff;
+}
+.goethe-speaking-randomizer__copy {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  gap: 0.2rem;
+}
+.goethe-speaking-randomizer__copy strong {
+  color: #17233d;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+.goethe-speaking-randomizer__copy span {
+  color: #666e7d;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.goethe-speaking-randomizer button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.6rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #17233d;
+  border-radius: 2px;
+  background: #17233d;
+  color: #fff;
+  font: 750 0.76rem/1 Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.goethe-speaking-randomizer button:hover { background: #26385f; }
+.goethe-speaking-randomizer button:focus-visible {
+  outline: 3px solid color-mix(in srgb, #17233d 32%, transparent);
+  outline-offset: 2px;
+}
+.goethe-speaking-randomizer button span { font-size: 1.05rem; }
 .goethe-practice-controls .lang-speak__notes { margin-top: 1rem; }
 .goethe-practice-controls .lang-speak__notes-area {
   border: 1px solid #aaa;
@@ -6463,30 +6526,65 @@ button {
   }
   .goethe-sheet-masthead :is(strong, span) { padding-inline: 0.3rem; }
   .goethe-document--article,
-  .goethe-document--directory { padding: 1.25rem 1rem; }
-  .goethe-directory { gap: 1.1rem; }
-  .goethe-directory__row {
-    grid-template-columns: 78px 1fr;
-    gap: 0.75rem;
+  .goethe-document--directory { padding: 1.45rem 1.15rem; }
+  .goethe-document--directory .goethe-document__title {
+    margin-bottom: 2rem;
+    font-size: 1.02rem;
+    line-height: 1.35;
   }
-  .goethe-directory__row :is(strong, p) { font-size: 0.7rem; }
+  .goethe-directory { gap: 1rem; }
+  .goethe-directory__row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    min-width: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e1de;
+  }
+  .goethe-directory__row:last-child { padding-bottom: 0; border-bottom: 0; }
+  .goethe-directory__row strong {
+    font-size: 0.72rem;
+    letter-spacing: 0.025em;
+    overflow-wrap: anywhere;
+  }
+  .goethe-directory__row p {
+    min-width: 0;
+    font-size: 0.76rem;
+    line-height: 1.52;
+    overflow-wrap: anywhere;
+  }
   .goethe-mail__body { padding: 1rem; font-size: 0.74rem; }
   .goethe-ad-grid { grid-template-columns: 1fr; }
   .goethe-ad { min-height: 0; }
   .lang-section--goethe .lang-q { padding-left: 2.35rem; }
   .lang-section--goethe .lang-q--write,
   .lang-section--goethe .lang-q--speak { padding-left: 0; }
-  .goethe-section-stack { gap: 0.8rem; }
+  .goethe-section-stack { gap: 1.4rem; }
   .goethe-candidate-page {
     min-height: 0;
-    padding: 1.8rem 1.05rem 5rem;
+    padding: 2rem 1.2rem 5.25rem;
     box-shadow: 0 10px 28px rgba(35, 35, 30, 0.12);
   }
-  .goethe-candidate-page .goethe-sheet-masthead { margin-bottom: 2.5rem; }
-  .goethe-page-footer { right: 1.05rem; bottom: 1.6rem; left: 1.05rem; }
-  .goethe-question-list .lang-q { padding-left: 2.25rem; }
-  .goethe-question-list .lang-opt { font-size: 0.75rem; }
-  .goethe-matching-row { grid-template-columns: 1.6rem minmax(0, 1fr) 2.3rem; gap: 0.45rem; }
+  .goethe-candidate-page .goethe-sheet-masthead { margin-bottom: 2.8rem; }
+  .goethe-page-footer { right: 1.2rem; bottom: 1.6rem; left: 1.2rem; }
+  .goethe-task-heading { margin-bottom: 2rem; }
+  .goethe-task-heading h2 { margin-bottom: 1.15rem; font-size: 1.05rem; }
+  .goethe-task-heading p { font-size: 0.84rem; line-height: 1.72; }
+  .goethe-task-heading .goethe-task-heading__example { margin-top: 1rem; font-size: 0.76rem; }
+  .goethe-question-list .lang-q { padding: 1.25rem 0 1.4rem 2.4rem; }
+  .goethe-question-list .lang-q__text { margin-bottom: 0.75rem; font-size: 0.8rem; line-height: 1.58; }
+  .goethe-question-list .lang-q__options { gap: 0.35rem; }
+  .goethe-question-list .lang-opt { min-height: 2rem; padding-block: 0.32rem; font-size: 0.76rem; line-height: 1.48; }
+  .goethe-matching-rows { gap: 0.35rem; }
+  .goethe-matching-row {
+    grid-template-columns: 1.65rem minmax(0, 1fr) 2.5rem;
+    gap: 0.6rem;
+    padding: 0.55rem 0 1.1rem;
+    font-size: 0.78rem;
+    line-height: 1.58;
+  }
+  .goethe-matching-row select { width: 2.5rem; height: 2.15rem; }
+  .goethe-speaking-randomizer { align-items: stretch; flex-direction: column; }
+  .goethe-speaking-randomizer button { width: 100%; }
   .goethe-speaking-cards,
   .goethe-speaking-schedules { grid-template-columns: 1fr; }
   .goethe-speaking-topic__map { min-height: 280px; }

@@ -59,7 +59,22 @@ export function toGoetheA2Mock(set: GoetheA2Set): MockExam {
         part: 4, skill: 'reading', title: `Lesen – Teil 4: ${readingMatching.title}`,
         instructions: 'Sechs Personen suchen ein Angebot. Lesen Sie die Aufgaben 16 bis 20 und die Anzeigen a bis f. Welche Anzeige passt zu welcher Person? Für eine Aufgabe gibt es keine Lösung. Wählen Sie X.',
         passageTitle: 'Anzeigen A bis F', passage: readingMatching.adverts.map(ad => `${ad.letter} · ${ad.heading}\n${ad.text}`).join('\n\n'),
-        questions: [{ type: 'matching', id: `g-a2-${setNumber}-r4`, part: 4, qRange: [16, 20], groupLabel: `BEISPIEL: ${readingMatching.example.profile} → ${readingMatching.example.answer}`, items: readingMatching.profiles.map((profile, index) => ({ num: index + 16, stem: profile.text, answer: profile.answer })), endings: [...readingMatching.adverts.map(ad => ({ letter: ad.letter, text: `${ad.heading} — ${ad.text}` })), { letter: 'X', text: 'Keine Anzeige passt.' }] }],
+        questions: [{
+          type: 'matching',
+          id: `g-a2-${setNumber}-r4`,
+          part: 4,
+          qRange: [16, 20],
+          groupLabel: `BEISPIEL: ${readingMatching.example.profile} → ${readingMatching.example.answer}`,
+          items: readingMatching.profiles.map((profile, index) => ({
+            num: index + 16,
+            // The exercise number already lives in its own print-style column.
+            // Some source profiles also carry a local "1 ·" prefix; keeping both
+            // produced cramped strings such as "161 · …" on narrow screens.
+            stem: profile.text.replace(/^\s*\d+\s*[·.)-]\s*/, ''),
+            answer: profile.answer,
+          })),
+          endings: [...readingMatching.adverts.map(ad => ({ letter: ad.letter, text: `${ad.heading} — ${ad.text}` })), { letter: 'X', text: 'Keine Anzeige passt.' }],
+        }],
       },
       ...listeningSections,
       {
