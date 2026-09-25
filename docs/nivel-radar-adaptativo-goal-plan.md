@@ -163,6 +163,15 @@ Actualizado el 24 de septiembre de 2026:
   nueva del manifiesto. El manifiesto comprometido permanece vacío y el inicio comprueba
   capacidad completa tanto del banco objetivo como de las cuatro consignas paralelas de
   escritura por nivel.
+- **Seguimiento editorial verificable:** los 216 candidatos objetivos reservados y las 24
+  consignas ya están distribuidos en 24 lotes privados A1–C2, con una plantilla lingüística y
+  otra de evaluación por lote. `report:diagnostic-bank-review-progress` valida los 48 artefactos
+  contra los hashes actuales y publica solo conteos agregados. No confunde plantillas con firmas,
+  rechaza cobertura parcial, archivos o roles inesperados, recibos obsoletos, duplicados y una
+  identidad compartida entre roles. El corte actual registra **48 plantillas vigentes, 0 recibos
+  completados y 0/24 lotes listos**. La escucha no se mezcla con ese atraso: permanece no
+  loteable hasta materializar audio reservado y después exigirá un tercer rol independiente de
+  alineación.
 - **Fase 6 — medición y reporte avanzados:** estimación IRT/EAP parametrizable, rango plausible,
   confianza, distinción de omisiones y retención del nivel global ante evidencia incompleta
   implementadas. El resultado persistido incluye ahora prioridades diferentes según el perfil,
@@ -672,6 +681,13 @@ El registrador es ahora dry run por defecto: solo admite recibos `*.completed.js
 checkout limpio, fija hashes de archivos y propuesta, conserva la unión auditada con aprobaciones
 anteriores y requiere `--write`, operador y confirmación exacta para una escritura atómica. Así,
 preparar o inspeccionar revisiones nunca promueve contenido accidentalmente.
+
+El avance de los 24 lotes se inspecciona con
+`npm run report:diagnostic-bank-review-progress`. El comando no modifica archivos ni expone
+material reservado: reporta cobertura agregada por nivel/habilidad/rol y solo declara
+`READY_TO_COMPILE` cuando cada lote tiene sus dos recibos completos, actuales, sin cambios
+solicitados y firmados por identidades distintas. `-- --strict` permite usar esa misma condición
+como puerta operativa cuando llegue el momento de compilar todos los lotes.
 
 ## Definición de terminado del goal
 

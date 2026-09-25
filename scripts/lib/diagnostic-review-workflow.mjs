@@ -160,6 +160,17 @@ export function validateCompletedDiagnosticReviewPacket(packet, objectiveCandida
     const contentVersion = entry.kind === 'objective' ? record.publicItem.contentVersion : record.publicPrompt.contentVersion;
     if (entry.contentVersion !== contentVersion) throw new Error(`${identity}: content version mismatch`);
     if (entry.contentSha256 !== reviewContentSha256(entry.kind, record)) throw new Error(`${identity}: content hash mismatch`);
+    const expectedLevel = entry.kind === 'objective' ? record.publicItem.levelCandidate : record.publicPrompt.levelCandidate;
+    const expectedSkill = entry.kind === 'objective' ? record.publicItem.skill : 'writing';
+    if (entry.level !== expectedLevel || entry.skill !== expectedSkill) {
+      throw new Error(`${identity}: review cell metadata mismatch`);
+    }
+    const expectedMaterial = entry.kind === 'objective'
+      ? objectivePayload(record, packet.role)
+      : writingPayload(record);
+    if (JSON.stringify(canonicalize(entry.material)) !== JSON.stringify(canonicalize(expectedMaterial))) {
+      throw new Error(`${identity}: review material mismatch`);
+    }
     if (!['APPROVED', 'CHANGES_REQUESTED'].includes(entry.decision)) throw new Error(`${identity}: decision is not complete`);
     const expectedChecklist = CHECKLISTS[packet.role];
     if (!entry.checklist || expectedChecklist.some(key => typeof entry.checklist[key] !== 'boolean')) {

@@ -14,6 +14,7 @@ import {
   buildDiagnosticBankApprovalProposal,
   recordDiagnosticBankApprovalProposal,
 } from '../scripts/lib/diagnostic-bank-approval-record.mjs';
+import { auditDiagnosticBankReviewProgress } from '../scripts/lib/diagnostic-review-progress.mjs';
 
 const generatedAt = '2026-09-25T12:00:00.000Z';
 const reading = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 1);
@@ -37,6 +38,28 @@ function packet(role, objectiveCandidates = reading, writingCandidates = writing
   return createDiagnosticReviewPacket({ role, packetId: `fixture:${role}`, generatedAt, objectiveCandidates, writingCandidates });
 }
 
+function progressPacket(role, skill = 'reading') {
+  return createDiagnosticReviewPacket({
+    role,
+    packetId: `english-bank-draft-1:A1:${skill}:${role}`,
+    generatedAt,
+    objectiveCandidates: skill === 'writing' ? [] : reading,
+    writingCandidates: skill === 'writing' ? writing : [],
+  });
+}
+
+function progressReport(skill, artifacts) {
+  return auditDiagnosticBankReviewProgress({
+    packageId: 'english-bank-draft-1',
+    levels: ['A1'],
+    skills: [skill],
+    objectiveCandidates: reading,
+    writingCandidates: writing,
+    recordedListeningCandidates: [],
+    artifacts,
+  });
+}
+
 test('role packets expose only the evidence each independent reviewer needs', () => {
   const linguistic = packet('linguistic-reviewer');
   const assessment = packet('assessment-reviewer');
@@ -54,6 +77,9 @@ test('completed receipts remain bound to current version and hash', () => {
   const tampered = structuredClone(completed);
   tampered.entries[0].contentSha256 = '0'.repeat(64);
   assert.throws(() => validateCompletedDiagnosticReviewPacket(tampered, reading, writing), /content hash mismatch/);
+  const deceptiveMaterial = structuredClone(completed);
+  deceptiveMaterial.entries[0].material.publicItem.prompt = 'A different prompt shown to the reviewer';
+  assert.throws(() => validateCompletedDiagnosticReviewPacket(deceptiveMaterial, reading, writing), /review material mismatch/);
 });
 
 test('approval compilation requires complete checklists and independent roles', () => {
@@ -183,4 +209,100 @@ test('bank approval recorder is private, clean-tree, dry-run and confirmation bo
   assert.match(source, /--write/);
   assert.match(source, /--applied-by/);
   assert.match(source, /renameSync/);
+});
+
+test('review progress counts current templates without treating them as completed receipts', () => {
+  const artifacts = ['linguistic-reviewer', 'assessment-reviewer'].map(role => ({
+    level: 'A1', skill: 'reading', role, state: 'template', packet: progressPacket(role),
+  }));
+  const report = progressReport('reading', artifacts);
+  assert.equal(report.decision, 'REVIEW_IN_PROGRESS');
+  assert.equal(report.summary.expectedBatches, 1);
+  assert.equal(report.summary.currentTemplates, 2);
+  assert.equal(report.summary.currentCompletedReceipts, 0);
+  assert.equal(report.summary.missingCompletedReceipts, 2);
+  assert.equal(report.summary.batchesReadyToCompile, 0);
+  assert.equal(report.listening.status, 'NOT_BATCHABLE_RECORDED_CANDIDATES_MISSING');
+});
+
+test('review progress becomes ready only with current complete receipts and independent identities', () => {
+  const artifacts = [
+    {
+      level: 'A1', skill: 'writing', role: 'linguistic-reviewer', state: 'completed',
+      packet: complete(progressPacket('linguistic-reviewer', 'writing'), 'linguist-private-id'),
+    },
+    {
+      level: 'A1', skill: 'writing', role: 'assessment-reviewer', state: 'completed',
+      packet: complete(progressPacket('assessment-reviewer', 'writing'), 'assessor-private-id'),
+    },
+  ];
+  const report = progressReport('writing', artifacts);
+  assert.equal(report.decision, 'READY_TO_COMPILE');
+  assert.equal(report.summary.batchesReadyToCompile, 1);
+  assert.equal(report.cells[0].independentReviewerIdentities, true);
+  assert.doesNotMatch(JSON.stringify(report), /linguist-private-id|assessor-private-id/u);
+});
+
+test('review progress fails closed for stale content and duplicate reviewer identity', () => {
+  const stale = complete(progressPacket('linguistic-reviewer'), 'reviewer-1');
+  stale.entries[0].contentSha256 = '0'.repeat(64);
+  const staleReport = progressReport('reading', [{
+    level: 'A1', skill: 'reading', role: 'linguistic-reviewer', state: 'completed', packet: stale,
+  }]);
+  assert.equal(staleReport.decision, 'INVALID');
+  assert.equal(staleReport.cells[0].roles[0].validationCode, 'STALE_CONTENT_HASH');
+
+  const sameIdentityReport = progressReport('reading', [
+    {
+      level: 'A1', skill: 'reading', role: 'linguistic-reviewer', state: 'completed',
+      packet: complete(progressPacket('linguistic-reviewer'), 'same-private-id'),
+    },
+    {
+      level: 'A1', skill: 'reading', role: 'assessment-reviewer', state: 'completed',
+      packet: complete(progressPacket('assessment-reviewer'), 'same-private-id'),
+    },
+  ]);
+  assert.equal(sameIdentityReport.decision, 'INVALID');
+  assert.equal(sameIdentityReport.cells[0].independentReviewerIdentities, false);
+  assert.equal(sameIdentityReport.summary.independentIdentityViolations, 1);
+  assert.doesNotMatch(JSON.stringify(sameIdentityReport), /same-private-id/u);
+});
+
+test('review progress keeps changes requested distinct from invalid receipts', () => {
+  const linguistic = complete(progressPacket('linguistic-reviewer'), 'linguist-1');
+  linguistic.entries[0] = {
+    ...linguistic.entries[0],
+    decision: 'CHANGES_REQUESTED',
+    comments: 'The language demand needs a more defensible revision.',
+  };
+  const report = progressReport('reading', [
+    { level: 'A1', skill: 'reading', role: 'linguistic-reviewer', state: 'completed', packet: linguistic },
+    {
+      level: 'A1', skill: 'reading', role: 'assessment-reviewer', state: 'completed',
+      packet: complete(progressPacket('assessment-reviewer'), 'assessor-1'),
+    },
+  ]);
+  assert.equal(report.decision, 'REVIEW_IN_PROGRESS');
+  assert.equal(report.cells[0].status, 'CHANGES_REQUESTED');
+  assert.equal(report.summary.batchesWithChangesRequested, 1);
+  assert.equal(report.summary.changesRequestedEntrySignatures, 1);
+});
+
+test('review progress rejects unexpected cells and duplicate artifacts', () => {
+  const artifact = {
+    level: 'A1', skill: 'reading', role: 'linguistic-reviewer', state: 'template',
+    packet: progressPacket('linguistic-reviewer'),
+  };
+  assert.throws(() => progressReport('reading', [{ ...artifact, skill: 'grammar' }]), /UNEXPECTED_REVIEW_CELL/);
+  assert.throws(() => progressReport('reading', [artifact, structuredClone(artifact)]), /DUPLICATE_REVIEW_ARTIFACT/);
+});
+
+test('review progress rejects a deceptive template view even when its copied hash is current', () => {
+  const deceptive = structuredClone(progressPacket('linguistic-reviewer'));
+  deceptive.entries[0].material.publicItem.prompt = 'A different prompt shown to the reviewer';
+  const report = progressReport('reading', [{
+    level: 'A1', skill: 'reading', role: 'linguistic-reviewer', state: 'template', packet: deceptive,
+  }]);
+  assert.equal(report.decision, 'INVALID');
+  assert.equal(report.cells[0].roles[0].validationCode, 'REVIEW_MATERIAL_MISMATCH');
 });

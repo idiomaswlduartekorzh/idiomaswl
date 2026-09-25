@@ -213,6 +213,7 @@ Los paquetes de revisión se generan por nivel, habilidad, tipo o rol y permanec
 ```bash
 npm run scaffold:diagnostic-bank-review -- --level=B1 --skill=reading
 # cada persona completa su archivo y lo renombra a *.completed.json
+npm run report:diagnostic-bank-review-progress
 npm run record:diagnostic-bank-approvals -- \
   .diagnostic-private/review-packets/.../linguistic-reviewer.completed.json \
   .diagnostic-private/review-packets/.../assessment-reviewer.completed.json \
@@ -226,6 +227,16 @@ y la unión exacta con aprobaciones anteriores. Solo una segunda ejecución con 
 identificado y la confirmación ligada al hash de la propuesta y del conjunto de recibos actualiza
 el manifiesto de forma atómica. Plantillas, decisiones incompletas, cambios solicitados, rutas
 externas o modificaciones posteriores fallan antes de escribir.
+
+El reporte de progreso recorre únicamente el paquete privado por lotes y emite datos agregados:
+estado por nivel, habilidad y rol, cobertura de plantillas y recibos, cambios solicitados y número
+de firmas de entrada. Nunca imprime contenido, claves, comentarios ni identidades. Falla cerrado
+ante directorios o roles inesperados, JSON inválido, duplicados, conjuntos parciales, versiones o
+hashes obsoletos y una misma identidad usada para los dos roles. Una plantilla nunca cuenta como
+recibo completado. El estado actual es `REVIEW_IN_PROGRESS`: **48/48 plantillas vigentes, 0/48
+recibos completados, 0/24 lotes listos y 0 artefactos inválidos**. Escucha aparece por separado
+como `NOT_BATCHABLE_RECORDED_CANDIDATES_MISSING`, porque aún no hay grabaciones materializadas
+que puedan someterse a su revisión adicional de alineación.
 
 ### Captura y validación del piloto
 
