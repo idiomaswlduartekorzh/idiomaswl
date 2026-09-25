@@ -22,6 +22,10 @@ test('runner supports resume, private audio, writing and uncertainty-aware resul
   assert.match(client, /minimumWords/);
   assert.match(client, /plausibleRange/);
   assert.match(client, /No sé \/ omitir/);
+  assert.match(client, /readObjectiveDraft/);
+  assert.match(client, /writeObjectiveDraft/);
+  assert.match(client, /readWritingDraft/);
+  assert.match(client, /writeWritingDraft/);
 });
 
 test('adaptive UI has an independent server-side release flag', () => {

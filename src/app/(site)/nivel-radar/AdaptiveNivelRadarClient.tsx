@@ -2,6 +2,15 @@
 
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  clearDiagnosticAttemptDrafts,
+  readObjectiveDraft,
+  readWritingDraft,
+  writeObjectiveDraft,
+  writeWritingDraft,
+  type DiagnosticDraftAnswer,
+  type DiagnosticSubmittedResponse,
+} from '@/lib/diagnostic-draft';
 import s from './page.module.css';
 
 const CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
@@ -10,10 +19,7 @@ const SKILL_LABELS: Record<string, string> = {
   reading: 'Lectura', listening: 'Escucha', writing: 'Escritura', grammar: 'Gramática', vocabulary: 'Vocabulario',
 };
 
-type SubmittedResponse =
-  | { kind: 'single-choice'; optionId: string | null }
-  | { kind: 'multiple-choice'; optionIds: string[] }
-  | { kind: 'short-text'; value: string };
+type SubmittedResponse = DiagnosticSubmittedResponse;
 
 type PublicItem = {
   id: string;
@@ -46,7 +52,7 @@ type ResumePayload =
   | { kind: 'result'; attemptId: string; attemptVersion: number; status: 'completed'; resultProfile: unknown }
   | { kind: 'closed'; attemptId: string; attemptVersion: number; status: 'expired' | 'abandoned' };
 
-type DraftAnswer = { response: SubmittedResponse; responseMs: number | null; audioPlayCount: number | null };
+type DraftAnswer = DiagnosticDraftAnswer;
 type View = 'intro' | 'loading' | 'objective' | 'writing' | 'processing' | 'result' | 'error';
 
 function responseFor(item: PublicItem, answer?: DraftAnswer): SubmittedResponse {
@@ -76,20 +82,24 @@ export default function AdaptiveNivelRadarClient() {
   const openedAt = useRef(Date.now());
 
   const activateDelivery = useCallback((delivery: ObjectiveDelivery | WritingDelivery) => {
+    clearDiagnosticAttemptDrafts(sessionStorage, delivery.attemptId, delivery.stage.stageId);
     sessionStorage.setItem(STORAGE_KEY, delivery.attemptId);
     setMessage('');
     setAuthRequired(false);
     if ('items' in delivery) {
-      setObjective(delivery); setWriting(null); setAnswers({}); setItemIndex(0); openedAt.current = Date.now(); setView('objective');
+      const draft = readObjectiveDraft(sessionStorage, delivery);
+      setObjective(delivery); setWriting(null); setAnswers(draft?.answers ?? {}); setItemIndex(draft?.itemIndex ?? 0); openedAt.current = Date.now(); setView('objective');
     } else {
-      setWriting(delivery); setObjective(null); setWritingText(''); setView('writing');
+      const draft = readWritingDraft(sessionStorage, delivery);
+      setWriting(delivery); setObjective(null); setWritingText(draft ?? ''); setView('writing');
     }
   }, []);
 
   const applyResume = useCallback((payload: ResumePayload) => {
     if (payload.kind === 'objective-stage' || payload.kind === 'writing-stage') return activateDelivery(payload.delivery);
-    if (payload.kind === 'processing') { setView('processing'); return; }
-    if (payload.kind === 'result') { sessionStorage.removeItem(STORAGE_KEY); setResult(payload.resultProfile); setView('result'); return; }
+    if (payload.kind === 'processing') { clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId); setView('processing'); return; }
+    if (payload.kind === 'result') { clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId); sessionStorage.removeItem(STORAGE_KEY); setResult(payload.resultProfile); setView('result'); return; }
+    clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId);
     sessionStorage.removeItem(STORAGE_KEY);
     setMessage(payload.status === 'expired' ? 'El intento expiró. Puedes comenzar uno nuevo.' : 'El intento fue cerrado.');
     setView('intro');
@@ -125,6 +135,14 @@ export default function AdaptiveNivelRadarClient() {
     const timer = window.setInterval(() => void resume(attemptId, true), 8_000);
     return () => window.clearInterval(timer);
   }, [resume, view]);
+
+  useEffect(() => {
+    if (view === 'objective' && objective) writeObjectiveDraft(sessionStorage, objective, answers, itemIndex);
+  }, [answers, itemIndex, objective, view]);
+
+  useEffect(() => {
+    if (view === 'writing' && writing) writeWritingDraft(sessionStorage, writing, writingText);
+  }, [view, writing, writingText]);
 
   async function testAudio() {
     try {
@@ -221,6 +239,7 @@ export default function AdaptiveNivelRadarClient() {
       const body = await response.json() as { ok?: boolean; delivery?: ObjectiveDelivery | WritingDelivery; error?: string };
       if (response.status === 409) { await resume(objective.attemptId); return; }
       if (!response.ok || !body.delivery) { setMessage(body.error ?? 'No pudimos guardar esta etapa.'); setView('objective'); return; }
+      clearDiagnosticAttemptDrafts(sessionStorage, objective.attemptId);
       activateDelivery(body.delivery);
     } catch {
       setMessage('No pudimos guardar esta etapa. Tus respuestas siguen en esta pantalla.'); setView('objective');
@@ -240,6 +259,7 @@ export default function AdaptiveNivelRadarClient() {
       const body = await response.json() as { ok?: boolean; error?: string };
       if (response.status === 409) { await resume(writing.attemptId); return; }
       if (!response.ok) { setMessage(body.error ?? 'No pudimos guardar tu escritura.'); setView('writing'); return; }
+      clearDiagnosticAttemptDrafts(sessionStorage, writing.attemptId);
       setView('processing');
     } catch {
       setMessage('No pudimos guardar tu escritura. El texto sigue disponible en esta sesión.'); setView('writing');
