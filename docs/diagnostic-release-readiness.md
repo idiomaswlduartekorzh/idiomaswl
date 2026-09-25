@@ -164,6 +164,43 @@ del piloto. No marca el borrado como probado, no aprueba el banco y no valida re
 piloto. Cambiar cualquier regla o umbral después de la aprobación invalida su snapshot aunque los
 metadatos de aprobación cambien.
 
+### Captura y validación del piloto
+
+El informe del piloto no se descarga manualmente ni se enlaza solo por nombre. Sobre un checkout
+limpio, el capturador consulta primero la identidad administrativa `no-store` del despliegue y
+exige coincidencia exacta de huella de fuente, hash del banco, commit, modo `pilot` y proyecto
+Supabase. Después solicita únicamente el informe agregado y guarda tanto el reporte como su
+recibo bajo `.diagnostic-private/`:
+
+```bash
+npm run capture:diagnostic-pilot-report -- --execute \
+  --since=2026-09-01T00:00:00.000Z
+```
+
+La cookie administrativa se carga en `DIAGNOSTIC_VERIFY_ADMIN_COOKIE` y nunca se escribe ni se
+imprime; el origen HTTPS se toma de `DIAGNOSTIC_VERIFY_APP_URL`. La captura rechaza cualquier
+campo de participante, respuesta enviada o texto de escritura. También rechaza un informe de
+otro banco, código o commit. Un resultado `HOLD` puede conservarse para análisis, pero no puede
+entrar al circuito de aprobación.
+
+Solo cuando el informe dice `ELIGIBLE_FOR_VALIDATION_REVIEW` y todos sus gates pasan se crean dos
+paquetes vacíos e independientes:
+
+```bash
+npm run scaffold:diagnostic-pilot-validation
+# liderazgo académico y medición completan sus archivos por separado
+npm run compile:diagnostic-pilot-validation
+npm run record:diagnostic-pilot-validation
+```
+
+Ambos revisores deben usar identidades distintas y confirmar muestra/finalización, calidad de
+ítems, acuerdo de escritura, referencia independiente y limitaciones de uso. El compilador fija
+los hashes de los dos recibos; el registrador vuelve a leerlos y es dry run por defecto. Para
+aplicar exige `--write`, `--applied-by=<operador>` y la confirmación que liga simultáneamente el
+manifiesto y el informe. La puerta de salida relee los tres archivos privados y recalcula el hash
+del manifiesto: un cambio de reporte, banco, código, revisión o identidad devuelve el piloto a
+`HOLD`.
+
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
 diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica

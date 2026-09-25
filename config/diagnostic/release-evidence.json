@@ -48,9 +48,17 @@
   "pilot": {
     "reportPath": null,
     "reportSha256": null,
+    "captureReceiptPath": null,
+    "captureReceiptSha256": null,
+    "validationManifestPath": null,
+    "validationManifestSha256": null,
+    "sourceSha256": null,
+    "bankSnapshotSha256": null,
     "validationDecision": null,
     "reviewedAt": null,
-    "reviewedBy": null
+    "reviewedBy": null,
+    "appliedAt": null,
+    "appliedBy": null
   },
   "quality": {
     "diagnosticSuiteSourceSha256": "da7614932979e85d66121203dd3840a42c0fe5538946dfbd3055208c10819203",

@@ -17,16 +17,23 @@ import { diagnosticGovernanceSnapshots } from './lib/diagnostic-governance-snaps
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
 const evidence = readJson('config/diagnostic/release-evidence.json');
-const pilotPath = evidence.pilot?.reportPath;
-const resolvedPilotPath = pilotPath ? resolve(root, pilotPath) : null;
-const pilotRelativePath = resolvedPilotPath ? relative(root, resolvedPilotPath) : null;
-const pilotPathIsSafe = Boolean(pilotPath)
-  && !isAbsolute(pilotPath)
-  && pilotRelativePath !== '..'
-  && !pilotRelativePath.startsWith(`..${sep}`);
-const pilotBytes = pilotPathIsSafe && resolvedPilotPath && existsSync(resolvedPilotPath)
-  ? readFileSync(resolvedPilotPath)
-  : null;
+const privateRoot = resolve(root, '.diagnostic-private');
+const readPrivateEvidence = path => {
+  if (!path || isAbsolute(path)) return { bytes: null, json: null, sha256: null };
+  const resolvedPath = resolve(root, path);
+  const privateRelative = relative(privateRoot, resolvedPath);
+  if (!privateRelative || privateRelative === '..' || privateRelative.startsWith(`..${sep}`)
+    || !existsSync(resolvedPath)) return { bytes: null, json: null, sha256: null };
+  const bytes = readFileSync(resolvedPath);
+  return {
+    bytes,
+    json: JSON.parse(bytes.toString('utf8')),
+    sha256: createHash('sha256').update(bytes).digest('hex'),
+  };
+};
+const pilotEvidence = readPrivateEvidence(evidence.pilot?.reportPath);
+const pilotCaptureEvidence = readPrivateEvidence(evidence.pilot?.captureReceiptPath);
+const pilotValidationEvidence = readPrivateEvidence(evidence.pilot?.validationManifestPath);
 const migrationNames = readdirSync(join(root, 'supabase/migrations'))
   .filter(name => name.includes('diagnostic') && name.endsWith('.sql'))
   .sort();
@@ -42,8 +49,12 @@ const report = buildDiagnosticReleaseReadiness({
   pilotCriteria: readJson('config/diagnostic/pilot-publication-criteria.json'),
   retentionPolicy: readJson('config/diagnostic/data-retention-policy.json'),
   releaseEvidence: evidence,
-  pilotReport: pilotBytes ? JSON.parse(pilotBytes.toString('utf8')) : null,
-  pilotReportSha256: pilotBytes ? createHash('sha256').update(pilotBytes).digest('hex') : null,
+  pilotReport: pilotEvidence.json,
+  pilotReportSha256: pilotEvidence.sha256,
+  pilotCaptureReceipt: pilotCaptureEvidence.json,
+  pilotCaptureReceiptSha256: pilotCaptureEvidence.sha256,
+  pilotValidationManifest: pilotValidationEvidence.json,
+  pilotValidationManifestSha256: pilotValidationEvidence.json?.manifestSha256 ?? null,
   currentBankSha256: diagnosticPilotBankSha256({
     bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
     writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,

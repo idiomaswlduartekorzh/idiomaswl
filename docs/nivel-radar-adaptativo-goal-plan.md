@@ -165,6 +165,14 @@ Actualizado el 24 de septiembre de 2026:
   deriva del resultado terminado, no del formulario de referencia. Sin muestra real o sin
   criterios aprobados, la decisión es obligatoriamente `HOLD`. La migración y la ruta requieren
   todavía ejecución y verificación contra Supabase real.
+- **Fase 7 — cadena de custodia del piloto preparada:** un capturador read-only consulta el
+  informe agregado desde un despliegue que debe coincidir exactamente con fuente, banco, commit,
+  modo `pilot` y proyecto Supabase. Reporte y recibo permanecen privados y omiten filas,
+  identidades, respuestas y textos. Solo un informe elegible puede generar paquetes separados
+  para liderazgo académico y medición; ambos deben revisar muestra, ítems, escritura, referencia
+  independiente y limitaciones con identidades distintas. El compilador fija todos los hashes y
+  el registrador dry-run solo puede trasladar una aprobación humana real del informe exacto al
+  gate de release. No se ha capturado ni aprobado un informe porque aún no existe el piloto real.
 - **Fase 8 — puerta integral de salida implementada, lanzamiento bloqueado:** un semáforo único
   exige simultáneamente gobierno de evidencia, banco completo y aprobado, 36 grabaciones
   verificadas, operación de escritura, Supabase real, privacidad y borrado, piloto vinculado al

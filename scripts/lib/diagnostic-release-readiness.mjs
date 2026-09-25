@@ -1,8 +1,15 @@
+import { createHash } from 'node:crypto';
+
 const EXPECTED_OBJECTIVE_DECISIONS = 288;
 const EXPECTED_WRITING_PROMPTS = 24;
 const EXPECTED_LISTENING_RECORDINGS = 36;
 const SHA256 = /^[a-f0-9]{64}$/u;
 const COMMIT_SHA = /^[a-f0-9]{40}$/u;
+const PILOT_VALIDATION_ROLES = ['academic-lead', 'measurement-lead'];
+const PILOT_VALIDATION_CHECKS = [
+  'sampleAndCompletionReviewed', 'itemQualityReviewed', 'writingAgreementReviewed',
+  'independentReferenceReviewed', 'limitationsAccepted',
+];
 
 function isIsoDate(value) {
   return typeof value === 'string'
@@ -165,12 +172,73 @@ export function buildDiagnosticReleaseReadiness(input) {
     pilotBlockers.push('PILOT_BANK_SNAPSHOT_MISMATCH');
   }
   if (!nonEmpty(evidence?.pilot?.reportPath)
+    || !SHA256.test(evidence?.pilot?.reportSha256 ?? '')
     || evidence.pilot.reportSha256 !== input.pilotReportSha256) {
     pilotBlockers.push('PILOT_REPORT_NOT_BOUND');
   }
+  const capture = input.pilotCaptureReceipt;
+  if (!nonEmpty(evidence?.pilot?.captureReceiptPath)
+    || !SHA256.test(evidence?.pilot?.captureReceiptSha256 ?? '')
+    || evidence.pilot.captureReceiptSha256 !== input.pilotCaptureReceiptSha256
+    || capture?.receiptVersion !== 'diagnostic-pilot-report-capture-v1'
+    || capture?.report?.sha256 !== input.pilotReportSha256
+    || capture?.report?.generatedAt !== input.pilotReport?.generatedAt
+    || capture?.target?.sourceSha256 !== input.currentSourceSha256
+    || capture?.target?.bankSnapshotSha256 !== input.currentBankSha256
+    || capture?.target?.accessMode !== 'pilot'
+    || !COMMIT_SHA.test(capture?.target?.commitSha ?? '')
+    || !nonEmpty(capture?.target?.applicationHost)
+    || !nonEmpty(capture?.target?.supabaseProject)
+    || capture?.safeguards?.aggregateReportOnly !== true
+    || capture?.safeguards?.participantRowsIncluded !== false
+    || capture?.safeguards?.cookiesIncluded !== false
+    || capture?.safeguards?.answerKeysIncluded !== false) {
+    pilotBlockers.push('PILOT_CAPTURE_NOT_BOUND');
+  }
+  const validation = input.pilotValidationManifest;
+  const validationReviews = validation?.reviews ?? [];
+  const expectedReviewedBy = validationReviews
+    .map(review => `${review.role}:${review.reviewerId}`).join(',');
+  const validationReviewedAt = validationReviews
+    .map(review => review.reviewedAt).filter(isIsoDate).sort().at(-1) ?? null;
+  const { manifestSha256: embeddedValidationHash, ...validationCore } = validation ?? {};
+  const computedValidationHash = validation
+    ? createHash('sha256').update(JSON.stringify(validationCore)).digest('hex')
+    : null;
   if (evidence?.pilot?.validationDecision !== 'approved'
     || !isIsoDate(evidence?.pilot?.reviewedAt)
-    || !nonEmpty(evidence?.pilot?.reviewedBy)) {
+    || evidence.pilot.reviewedAt !== validationReviewedAt
+    || !nonEmpty(evidence?.pilot?.reviewedBy)
+    || evidence.pilot.reviewedBy !== expectedReviewedBy
+    || !isIsoDate(evidence?.pilot?.appliedAt)
+    || !nonEmpty(evidence?.pilot?.appliedBy)
+    || evidence.pilot.sourceSha256 !== input.currentSourceSha256
+    || evidence.pilot.bankSnapshotSha256 !== input.currentBankSha256
+    || !nonEmpty(evidence?.pilot?.validationManifestPath)
+    || !SHA256.test(evidence?.pilot?.validationManifestSha256 ?? '')
+    || evidence.pilot.validationManifestSha256 !== input.pilotValidationManifestSha256
+    || embeddedValidationHash !== input.pilotValidationManifestSha256
+    || computedValidationHash !== embeddedValidationHash
+    || validation?.manifestVersion !== 'diagnostic-pilot-validation-manifest-v1'
+    || validation?.decision !== 'APPROVED'
+    || !isIsoDate(validation?.compiledAt)
+    || !Array.isArray(validation?.receipts)
+    || validation.receipts.length !== 2
+    || validation.receipts.some(receipt => !nonEmpty(receipt?.packetId)
+      || !nonEmpty(receipt?.file) || !SHA256.test(receipt?.sha256 ?? ''))
+    || validation?.reportSha256 !== input.pilotReportSha256
+    || validation?.captureReceiptSha256 !== input.pilotCaptureReceiptSha256
+    || validation?.sourceSha256 !== input.currentSourceSha256
+    || validation?.bankSnapshotSha256 !== input.currentBankSha256
+    || validation?.safeguards?.independentRoleReviews !== true
+    || validation?.safeguards?.aggregateEvidenceOnly !== true
+    || validationReviews.length !== 2
+    || PILOT_VALIDATION_ROLES.some(role => !validationReviews.some(review => review.role === role))
+    || new Set(validationReviews.map(review => review.reviewerId)).size !== 2
+    || validationReviews.some(review => review.decision !== 'APPROVE'
+      || !isIsoDate(review.reviewedAt)
+      || Object.keys(review.checks ?? {}).sort().join('|') !== [...PILOT_VALIDATION_CHECKS].sort().join('|')
+      || PILOT_VALIDATION_CHECKS.some(check => review.checks[check] !== true))) {
     pilotBlockers.push('PILOT_VALIDATION_NOT_APPROVED');
   }
 
@@ -235,6 +303,8 @@ export function buildDiagnosticReleaseReadiness(input) {
       criteriaStatus: input.pilotCriteria?.status ?? null,
       criteriaSnapshot: input.governanceSnapshots?.['pilot-criteria'] ?? null,
       pilotDecision: input.pilotReport?.decision ?? null,
+      reportCapturedFromCurrentRelease: !pilotBlockers.includes('PILOT_CAPTURE_NOT_BOUND'),
+      independentValidationBound: !pilotBlockers.includes('PILOT_VALIDATION_NOT_APPROVED'),
     }),
     gate('quality', qualityBlockers, {
       currentCommit: input.currentCommit ?? null,

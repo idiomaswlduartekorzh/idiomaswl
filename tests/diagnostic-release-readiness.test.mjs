@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
@@ -10,6 +11,37 @@ function readyFixture() {
   const reviewedAt = '2026-09-25T12:00:00.000Z';
   const commit = 'a'.repeat(40);
   const governanceManifestSha256 = '4'.repeat(64);
+  const pilotReportSha256 = '6'.repeat(64);
+  const pilotCaptureSha256 = '7'.repeat(64);
+  const pilotReviews = [
+    {
+      role: 'academic-lead', reviewerId: 'academic-reviewer', decision: 'APPROVE', reviewedAt,
+      checks: {
+        sampleAndCompletionReviewed: true, itemQualityReviewed: true, writingAgreementReviewed: true,
+        independentReferenceReviewed: true, limitationsAccepted: true,
+      },
+    },
+    {
+      role: 'measurement-lead', reviewerId: 'measurement-reviewer', decision: 'APPROVE', reviewedAt,
+      checks: {
+        sampleAndCompletionReviewed: true, itemQualityReviewed: true, writingAgreementReviewed: true,
+        independentReferenceReviewed: true, limitationsAccepted: true,
+      },
+    },
+  ];
+  const pilotValidationCore = {
+    manifestVersion: 'diagnostic-pilot-validation-manifest-v1', decision: 'APPROVED',
+    reportSha256: pilotReportSha256, captureReceiptSha256: pilotCaptureSha256,
+    sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha',
+    reviews: pilotReviews,
+    safeguards: { independentRoleReviews: true, aggregateEvidenceOnly: true },
+    compiledAt: reviewedAt,
+    receipts: [
+      { packetId: 'diagnostic-pilot-validation:academic-lead', file: 'academic-lead.json', sha256: '8'.repeat(64) },
+      { packetId: 'diagnostic-pilot-validation:measurement-lead', file: 'measurement-lead.json', sha256: '9'.repeat(64) },
+    ],
+  };
+  const pilotValidationSha256 = createHash('sha256').update(JSON.stringify(pilotValidationCore)).digest('hex');
   const objectiveCells = Array.from({ length: 24 }, (_, index) => ({
     level: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'][Math.floor(index / 4)],
     skill: ['reading', 'listening', 'grammar', 'vocabulary'][index % 4],
@@ -62,7 +94,14 @@ function readyFixture() {
         retentionSnapshotSha256: 'retention-snapshot', governanceManifestSha256,
         deletionFlowVerified: true, deletionReceiptSha256: '2'.repeat(64),
       },
-      pilot: { reportPath: 'pilot.json', reportSha256: 'pilot-sha', validationDecision: 'approved', reviewedAt, reviewedBy: 'measurement-reviewer' },
+      pilot: {
+        reportPath: '.diagnostic-private/pilot.json', reportSha256: pilotReportSha256,
+        captureReceiptPath: '.diagnostic-private/capture.json', captureReceiptSha256: pilotCaptureSha256,
+        validationManifestPath: '.diagnostic-private/validation.json', validationManifestSha256: pilotValidationSha256,
+        sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha', validationDecision: 'approved',
+        reviewedAt, reviewedBy: 'academic-lead:academic-reviewer,measurement-lead:measurement-reviewer',
+        appliedAt: reviewedAt, appliedBy: 'release-operator',
+      },
       quality: {
         diagnosticSuiteSourceSha256: 'source-sha', productionBuildSourceSha256: 'source-sha',
         verifiedCommit: commit, verifiedAt: reviewedAt, verifiedBy: 'qa-reviewer',
@@ -71,12 +110,27 @@ function readyFixture() {
     },
     pilotReport: {
       reportVersion: 'diagnostic-pilot-report-v1',
+      generatedAt: reviewedAt,
       criteria: { version: 'criteria-v1', status: 'approved' },
       decision: 'ELIGIBLE_FOR_VALIDATION_REVIEW',
       gates: { sample: true, quality: true },
       bankSnapshot: { sha256: 'bank-sha' },
     },
-    pilotReportSha256: 'pilot-sha',
+    pilotReportSha256,
+    pilotCaptureReceipt: {
+      receiptVersion: 'diagnostic-pilot-report-capture-v1',
+      report: { sha256: pilotReportSha256, generatedAt: reviewedAt },
+      target: {
+        sourceSha256: 'source-sha', bankSnapshotSha256: 'bank-sha', accessMode: 'pilot',
+        commitSha: commit, applicationHost: 'preview.example.test', supabaseProject: 'project-ref',
+      },
+      safeguards: {
+        aggregateReportOnly: true, participantRowsIncluded: false, cookiesIncluded: false, answerKeysIncluded: false,
+      },
+    },
+    pilotCaptureReceiptSha256: pilotCaptureSha256,
+    pilotValidationManifest: { ...pilotValidationCore, manifestSha256: pilotValidationSha256 },
+    pilotValidationManifestSha256: pilotValidationSha256,
     currentBankSha256: 'bank-sha',
     providerReadiness: { ready: false, provider: null, model: null, blockers: ['api-key-missing'] },
     expectedMigration: 'latest.sql', currentCommit: commit, currentSourceSha256: 'source-sha', workingTreeClean: true,
@@ -133,7 +187,7 @@ test('a passing old pilot cannot release a changed bank', () => {
   const report = buildDiagnosticReleaseReadiness(fixture);
   assert.equal(report.decision, 'HOLD');
   assert.deepEqual(report.gates.find(candidate => candidate.id === 'pilot').blockers, [
-    'PILOT_BANK_SNAPSHOT_MISMATCH',
+    'PILOT_BANK_SNAPSHOT_MISMATCH', 'PILOT_CAPTURE_NOT_BOUND', 'PILOT_VALIDATION_NOT_APPROVED',
   ]);
 });
 
