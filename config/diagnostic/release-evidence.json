@@ -1,6 +1,6 @@
 {
   "evidenceVersion": "english-diagnostic-release-evidence-v1",
-  "updatedAt": "2026-09-25T08:58:12.761Z",
+  "updatedAt": "2026-09-25T09:09:07.475Z",
   "governanceApplication": null,
   "database": {
     "appliedThroughMigration": null,
@@ -61,15 +61,15 @@
     "appliedBy": null
   },
   "quality": {
-    "diagnosticSuiteSourceSha256": "f0b20cb1a532de393a8bba2256857ec98f0ab910f590f3b0e825a85aac4e7794",
-    "productionBuildSourceSha256": "f0b20cb1a532de393a8bba2256857ec98f0ab910f590f3b0e825a85aac4e7794",
-    "browserE2ESourceSha256": "f0b20cb1a532de393a8bba2256857ec98f0ab910f590f3b0e825a85aac4e7794",
+    "diagnosticSuiteSourceSha256": "3f6cf84b63ce725619d1a0bce24ff2bd90b2228819750f772947e895818e907e",
+    "productionBuildSourceSha256": "3f6cf84b63ce725619d1a0bce24ff2bd90b2228819750f772947e895818e907e",
+    "browserE2ESourceSha256": "3f6cf84b63ce725619d1a0bce24ff2bd90b2228819750f772947e895818e907e",
     "browserE2ETestCount": 4,
-    "verifiedCommit": "ab8c43bd963a0a469a72b2bb6aaae5e266535d4e",
-    "verifiedAt": "2026-09-25T08:58:12.761Z",
+    "verifiedCommit": "6327446170bde40ca9153667d3c06def6b3efd17",
+    "verifiedAt": "2026-09-25T09:09:07.475Z",
     "verifiedBy": "codex",
-    "receiptSha256": "7939d7dcba83bdaf43ac0291edb9fe43bd8dc42b1f41b6ffd6c2300a1688f594",
-    "protectedCatalogSourceSha256": "f0b20cb1a532de393a8bba2256857ec98f0ab910f590f3b0e825a85aac4e7794",
+    "receiptSha256": "130f49b42c0e79d1483db2565422e385a12b35816c6d4b97560144bcbc2e11c6",
+    "protectedCatalogSourceSha256": "3f6cf84b63ce725619d1a0bce24ff2bd90b2228819750f772947e895818e907e",
     "protectedGrammarTopicCount": 465
   }
 }
