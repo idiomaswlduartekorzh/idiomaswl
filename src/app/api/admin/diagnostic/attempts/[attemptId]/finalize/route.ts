@@ -144,7 +144,7 @@ async function handleDiagnosticFinalization(
       attempt: finalization.attempt,
       prompt: promptRecord.publicPrompt,
       responseText: finalization.responseText,
-      observations: finalization.observations,
+      responses: finalization.responses,
       ...(automated ? { automated } : {}),
       human, adjudicated,
     }, {
@@ -163,6 +163,11 @@ async function handleDiagnosticFinalization(
     }
     if (message.includes('invalid diagnostic writing evaluation') || message.includes('reviewer identity mismatch')) {
       return jsonError('INVALID_EVALUATION', 'La evaluación no coincide con la respuesta guardada.', 400);
+    }
+    if (message.includes('invalid stored response')
+      || message.includes('outcome does not match server scoring')
+      || message.includes('does not match the versioned bank')) {
+      return jsonError('OBJECTIVE_EVIDENCE_INVALID', 'La evidencia objetiva guardada no se puede reproducir.', 409);
     }
     logDiagnosticInternalFailure({ component: 'writing-finalization', reason: 'writing-finalization-failed' });
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos finalizar el diagnóstico.', 503);

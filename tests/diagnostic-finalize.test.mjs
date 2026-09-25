@@ -61,14 +61,22 @@ function record(skill, index) {
 
 const objectiveBank = ['reading', 'listening', 'grammar', 'vocabulary'].flatMap(skill =>
   Array.from({ length: 6 }, (_, index) => record(skill, index)));
-const observations = objectiveBank.map((record, index) => ({
-  itemId: record.publicItem.id, outcome: index % 4 === 0 ? 'incorrect' : 'correct',
+const responses = objectiveBank.map((record, index) => ({
+  itemId: record.publicItem.id,
+  contentVersion: record.publicItem.contentVersion,
+  submittedResponse: {
+    kind: 'single-choice',
+    optionId: index % 4 === 0 ? `${record.publicItem.id}-b` : `${record.publicItem.id}-a`,
+  },
+  outcome: index % 4 === 0 ? 'incorrect' : 'correct',
+  responseMs: 1_000,
+  audioPlayCount: record.publicItem.stimulus.kind === 'audio' ? 1 : 0,
 }));
 
 test('finalizes all five skills and persists one versioned result', async () => {
   let persisted;
   const result = await finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, responses,
     automated: evaluation('automated'), human: evaluation('human'),
   }, {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
@@ -90,7 +98,7 @@ test('finalizes all five skills and persists one versioned result', async () => 
 test('finalizes a consent-safe human-only writing path with null automated evidence', async () => {
   let persisted;
   const result = await finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, responses,
     human: evaluation('human'),
   }, {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
@@ -107,12 +115,12 @@ test('requires adjudication for material disagreement and binds the reviewer ide
     persist: async () => { throw new Error('must not persist'); },
   };
   await assert.rejects(() => finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, responses,
     automated: evaluation('automated', ['A2', 'B1', 'A2', 'B1']),
     human: evaluation('human', ['B2', 'B1', 'B2', 'B1']),
   }, dependencies), /adjudication required/);
   await assert.rejects(() => finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'another-admin', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'another-admin', attempt, prompt, responseText, responses,
     automated: evaluation('automated'), human: evaluation('human'),
   }, dependencies), /reviewer identity mismatch/);
 });
@@ -122,7 +130,7 @@ test('adjudication is accepted only from a reviewer independent of the first hum
   const human = evaluation('human', ['B2', 'B1', 'B2', 'B1']);
   const adjudicated = { ...evaluation('human', ['B1', 'B1', 'B1', 'B1']), reviewerId: 'admin-2' };
   const successful = await finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, responses,
     automated, human, adjudicated,
   }, {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
@@ -130,7 +138,7 @@ test('adjudication is accepted only from a reviewer independent of the first hum
   });
   assert.equal(successful.version, 5);
   await assert.rejects(() => finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText, responses,
     automated, human, adjudicated: { ...adjudicated, reviewerId: 'admin-1' },
   }, {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
@@ -149,7 +157,7 @@ test('independently excluded off-task writing completes with writing and global 
   };
   const adjudicated = { ...human, reviewerId: 'admin-2' };
   const result = await finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-2', attempt, prompt, responseText, responses,
     human, adjudicated,
   }, {
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
@@ -172,11 +180,39 @@ test('rejects unknown objective evidence and stale versions', async () => {
   };
   await assert.rejects(() => finalizeEnglishDiagnostic({
     authenticatedAdminId: 'admin-1', attempt, prompt, responseText,
-    observations: [...observations, { itemId: 'forged', outcome: 'correct' }],
+    responses: [...responses, {
+      itemId: 'forged', contentVersion: '1',
+      submittedResponse: { kind: 'single-choice', optionId: 'forged-a' },
+      outcome: 'correct', responseMs: 1_000, audioPlayCount: 0,
+    }],
     automated: evaluation('automated'), human: evaluation('human'),
   }, dependencies), /versioned bank/);
   await assert.rejects(() => finalizeEnglishDiagnostic({
-    authenticatedAdminId: 'admin-1', attempt: { ...attempt, bankVersion: 'old' }, prompt, responseText, observations,
+    authenticatedAdminId: 'admin-1', attempt: { ...attempt, bankVersion: 'old' }, prompt, responseText, responses,
     automated: evaluation('automated'), human: evaluation('human'),
   }, dependencies), /version unavailable/);
+});
+
+test('re-scores durable responses before publishing an individual result', async () => {
+  const dependencies = {
+    objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date(),
+    persist: async () => { throw new Error('must not persist'); },
+  };
+  await assert.rejects(() => finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText,
+    responses: responses.map((row, index) => index === 0 ? { ...row, outcome: 'correct' } : row),
+    human: evaluation('human'),
+  }, dependencies), /outcome does not match server scoring/);
+  await assert.rejects(() => finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText,
+    responses: responses.map((row, index) => index === 0 ? {
+      ...row, submittedResponse: { kind: 'single-choice', optionId: 'forged-option' },
+    } : row),
+    human: evaluation('human'),
+  }, dependencies), /invalid stored response/);
+  await assert.rejects(() => finalizeEnglishDiagnostic({
+    authenticatedAdminId: 'admin-1', attempt, prompt, responseText,
+    responses: responses.map((row, index) => index === 0 ? { ...row, contentVersion: 'stale' } : row),
+    human: evaluation('human'),
+  }, dependencies), /does not match the versioned bank/);
 });

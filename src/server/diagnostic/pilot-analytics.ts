@@ -7,10 +7,9 @@ import {
   type DiagnosticObjectiveSkill,
   type DiagnosticSkill,
 } from '../../lib/diagnostic/types.ts';
-import { parseDiagnosticSubmittedResponse } from '../../lib/diagnostic/delivery.ts';
 import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
 import type { DiagnosticItemDriftMonitoringPolicy } from './delivery-policy.ts';
-import { scoreDiagnosticResponse, validateDiagnosticResponseForRecord } from './scoring.ts';
+import { reproduceDiagnosticStoredResponse } from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
 export interface DiagnosticPilotCriteria {
@@ -478,22 +477,7 @@ function validateDataset(input: {
     if (!record || record.publicItem.contentVersion !== response.contentVersion || record.publicItem.skill !== response.skill) {
       throw new Error(`${identity} does not match the versioned bank`);
     }
-    if (!['correct', 'incorrect', 'omitted'].includes(response.outcome)) throw new Error(`${identity} has an invalid outcome`);
-    const submittedResponse = parseDiagnosticSubmittedResponse(response.submittedResponse);
-    if (!submittedResponse) throw new Error(`${identity} has an invalid stored response`);
-    try {
-      validateDiagnosticResponseForRecord({
-        record,
-        response: submittedResponse,
-        responseMs: response.responseMs,
-        audioPlayCount: response.audioPlayCount,
-      });
-    } catch {
-      throw new Error(`${identity} has an invalid stored response`);
-    }
-    if (scoreDiagnosticResponse(record.scoring, submittedResponse) !== response.outcome) {
-      throw new Error(`${identity} outcome does not match server scoring`);
-    }
+    reproduceDiagnosticStoredResponse({ record, evidence: response, identity });
   }
   for (const row of input.writing) {
     const createdAt = Date.parse(row.createdAt);

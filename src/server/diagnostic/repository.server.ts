@@ -4,6 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import type { DiagnosticStageReceipt } from '@/lib/diagnostic/types';
 import type { DiagnosticAttemptSnapshot } from './continue-core';
 import type { DiagnosticObjectiveObservation } from './measurement';
+import type { DiagnosticStoredResponseEvidence } from './scoring';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
@@ -381,7 +382,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
   responseText: string;
   automatedEvaluation: unknown;
   humanEvaluation: unknown;
-  observations: readonly DiagnosticObjectiveObservation[];
+  responses: readonly DiagnosticStoredResponseEvidence[];
 } | null> {
   const admin = createAdminClient();
   const [
@@ -395,15 +396,15 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
     admin.from('diagnostic_writing_evaluations')
       .select('prompt_id,content_version,response_text,status,automated_evaluation,human_evaluation').eq('attempt_id', attemptId).maybeSingle(),
     admin.from('diagnostic_responses')
-      .select('item_id,outcome').eq('attempt_id', attemptId),
+      .select('item_id,content_version,submitted_response,outcome,response_ms,audio_play_count')
+      .eq('attempt_id', attemptId),
   ]);
   if (attemptError || writingError || responsesError) throw new Error('diagnostic_persistence_unavailable');
   if (!attempt || !writing) return null;
   if (!Number.isInteger(attempt.version)
     || typeof writing.response_text !== 'string'
     || !['pending', 'automated-scored', 'human-review', 'adjudication'].includes(String(writing.status))
-    || !Array.isArray(responses)
-    || responses.some(response => !['correct', 'incorrect', 'omitted'].includes(String(response.outcome)))) {
+    || !Array.isArray(responses)) {
     throw new Error('diagnostic_persistence_unavailable');
   }
   return {
@@ -417,8 +418,11 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
     responseText: writing.response_text,
     automatedEvaluation: writing.automated_evaluation,
     humanEvaluation: writing.human_evaluation,
-    observations: responses.map(response => ({
-      itemId: String(response.item_id), outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],
+    responses: responses.map(response => ({
+      itemId: String(response.item_id), contentVersion: String(response.content_version),
+      submittedResponse: response.submitted_response, outcome: response.outcome,
+      responseMs: response.response_ms === null ? null : Number(response.response_ms),
+      audioPlayCount: response.audio_play_count === null ? null : Number(response.audio_play_count),
     })),
   };
 }

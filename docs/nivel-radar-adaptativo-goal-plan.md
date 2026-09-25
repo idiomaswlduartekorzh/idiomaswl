@@ -297,7 +297,11 @@ Actualizado el 25 de septiembre de 2026:
   que la dependencia del testlet no infle artificialmente la discriminación. Antes de agregar
   el piloto, el servidor vuelve a validar el contrato de cada respuesta y recalcula `correct`,
   `incorrect` u `omitted` desde la clave y versión privadas; una fila manipulada o inconsistente
-  invalida el dataset en vez de contaminar el informe.
+  invalida el dataset en vez de contaminar el informe. La misma reproducción se ejecuta ahora
+  antes de publicar cada resultado individual: la finalización carga respuesta cruda, versión,
+  tiempo y reproducciones, vuelve a aplicar el contrato y la clave del banco, y rechaza cualquier
+  discrepancia con el `outcome` persistido. El perfil ya no depende de confiar en ese campo
+  desnormalizado.
 - **Fase 8 — interpretación responsable preparada:** pantalla y PDF traducen los estados y
   advertencias internas a lenguaje comprensible, distinguen estimación provisional, calibrada y
   no disponible, y aclaran que la confianza técnica no es porcentaje de dominio ni certeza del

@@ -16,6 +16,10 @@ import {
   type DiagnosticHumanWritingEvaluation,
   validateDiagnosticWritingEvaluation,
 } from './writing.ts';
+import {
+  reproduceDiagnosticStoredResponse,
+  type DiagnosticStoredResponseEvidence,
+} from './scoring.ts';
 
 export interface DiagnosticScoringAttempt {
   id: string;
@@ -45,7 +49,7 @@ export async function finalizeEnglishDiagnostic(input: {
   attempt: DiagnosticScoringAttempt;
   prompt: DiagnosticWritingPrompt;
   responseText: string;
-  observations: readonly DiagnosticObjectiveObservation[];
+  responses: readonly DiagnosticStoredResponseEvidence[];
   automated?: DiagnosticAutomatedWritingEvaluation;
   human: DiagnosticHumanWritingEvaluation;
   adjudicated?: DiagnosticHumanWritingEvaluation;
@@ -87,16 +91,26 @@ export async function finalizeEnglishDiagnostic(input: {
     throw new Error('diagnostic writing evidence is not publishable');
   }
   const bankById = new Map(dependencies.objectiveBank.map(record => [record.publicItem.id, record]));
-  if (input.observations.length < 1
-    || new Set(input.observations.map(observation => observation.itemId)).size !== input.observations.length
-    || input.observations.some(observation => !bankById.has(observation.itemId))) {
+  if (input.responses.length < 1
+    || new Set(input.responses.map(response => response.itemId)).size !== input.responses.length
+    || input.responses.some(response => !bankById.has(response.itemId))) {
     throw new Error('diagnostic objective evidence does not match the versioned bank');
   }
+  const observations: DiagnosticObjectiveObservation[] = input.responses.map(response => {
+    const record = bankById.get(response.itemId);
+    if (!record) throw new Error('diagnostic objective evidence does not match the versioned bank');
+    const reproduced = reproduceDiagnosticStoredResponse({
+      record,
+      evidence: response,
+      identity: `diagnostic response ${response.itemId}`,
+    });
+    return { itemId: response.itemId, outcome: reproduced.outcome };
+  });
   const objectiveSkills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
   const objectiveEvidence = objectiveSkills.map(skill => estimateObjectiveSkillEvidence(
     skill,
     dependencies.objectiveBank,
-    input.observations.filter(observation => bankById.get(observation.itemId)?.publicItem.skill === skill),
+    observations.filter(observation => bankById.get(observation.itemId)?.publicItem.skill === skill),
     ENGLISH_PILOT_CALIBRATION,
   ));
   const finalWritingEvaluation = input.adjudicated ?? input.human;

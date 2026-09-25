@@ -2,9 +2,19 @@ import type {
   DiagnosticPublicItem,
   DiagnosticSubmittedResponse,
 } from '@/lib/diagnostic/types';
+import { parseDiagnosticSubmittedResponse } from '../../lib/diagnostic/delivery.ts';
 import type { DiagnosticBankRecord, DiagnosticScoringKey } from './types';
 
 export type DiagnosticObjectiveOutcome = 'correct' | 'incorrect' | 'omitted';
+
+export interface DiagnosticStoredResponseEvidence {
+  itemId: string;
+  contentVersion: string;
+  submittedResponse: unknown;
+  outcome: unknown;
+  responseMs: number | null;
+  audioPlayCount: number | null;
+}
 
 function wordCount(value: string): number {
   const trimmed = value.trim();
@@ -103,4 +113,40 @@ export function scoreDiagnosticResponse(
       : 'incorrect';
   }
   throw new Error('unsupported diagnostic response');
+}
+
+/**
+ * Replays one durable response from the immutable bank instead of trusting the
+ * denormalized outcome stored for querying and analytics.
+ */
+export function reproduceDiagnosticStoredResponse(input: {
+  record: DiagnosticBankRecord;
+  evidence: DiagnosticStoredResponseEvidence;
+  identity?: string;
+}): { response: DiagnosticSubmittedResponse; outcome: DiagnosticObjectiveOutcome } {
+  const identity = input.identity ?? input.evidence.itemId;
+  if (input.evidence.itemId !== input.record.publicItem.id
+    || input.evidence.contentVersion !== input.record.publicItem.contentVersion) {
+    throw new Error(`${identity} does not match the versioned bank`);
+  }
+  if (!['correct', 'incorrect', 'omitted'].includes(String(input.evidence.outcome))) {
+    throw new Error(`${identity} has an invalid outcome`);
+  }
+  const response = parseDiagnosticSubmittedResponse(input.evidence.submittedResponse);
+  if (!response) throw new Error(`${identity} has an invalid stored response`);
+  try {
+    validateDiagnosticResponseForRecord({
+      record: input.record,
+      response,
+      responseMs: input.evidence.responseMs,
+      audioPlayCount: input.evidence.audioPlayCount,
+    });
+  } catch {
+    throw new Error(`${identity} has an invalid stored response`);
+  }
+  const outcome = scoreDiagnosticResponse(input.record.scoring, response);
+  if (outcome !== input.evidence.outcome) {
+    throw new Error(`${identity} outcome does not match server scoring`);
+  }
+  return { response, outcome };
 }
