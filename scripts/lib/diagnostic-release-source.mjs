@@ -8,6 +8,7 @@ export function diagnosticReleaseSourcePaths(root) {
     .trim().split('\n').filter(Boolean)
     .filter(path => path === '.env.example'
       || path === 'package.json'
+      || path === 'next.config.ts'
       || path === 'playwright.config.ts'
       || (path.startsWith('config/diagnostic/')
         && !['config/diagnostic/release-evidence.json', 'config/diagnostic/release-certificate.json'].includes(path))

@@ -86,6 +86,7 @@ const buildOutput = run(process.execPath, ['node_modules/next/dist/bin/next', 'b
   ...process.env,
   NODE_OPTIONS: nodeOptions,
   DIAGNOSTIC_ADAPTIVE_UI_ENABLED: 'true',
+  DIAGNOSTIC_QUALITY_BUILD: 'true',
 });
 const pageProgress = [...buildOutput.matchAll(/\((\d+)\/(\d+)\)/gu)]
   .map(match => [Number(match[1]), Number(match[2])])

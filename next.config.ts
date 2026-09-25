@@ -93,6 +93,19 @@ const nextConfig: NextConfig = {
   // Tree-shaking de barrels: importa solo lo usado de estas librerías pesadas
   // en lugar del paquete completo. Reduce el JS sin usar en el bundle inicial.
   experimental: {
+    // The local release verifier runs after the complete diagnostic suite and
+    // TypeScript. Bound its build concurrency so a transient worker allocation
+    // cannot turn an otherwise reproducible release check into a SIGABRT on a
+    // memory-constrained host. This changes build scheduling, not application
+    // behavior, and is inactive for ordinary local and Vercel builds.
+    ...(process.env.DIAGNOSTIC_QUALITY_BUILD === 'true' ? {
+      cpus: 2,
+      memoryBasedWorkersCount: true,
+      parallelServerCompiles: false,
+      parallelServerBuildTraces: false,
+      webpackBuildWorker: false,
+      webpackMemoryOptimizations: true,
+    } : {}),
     optimizePackageImports: [
       'framer-motion',
       'lucide-react',

@@ -83,11 +83,17 @@ test('recording quality proof touches no academic, privacy or pilot decision', (
 test('quality verifier replaces conflicting heap limits and the release hash includes every diagnostic runner', () => {
   const verifier = readFileSync(new URL('../scripts/verify-diagnostic-release-quality.mjs', import.meta.url), 'utf8');
   const sourceHash = readFileSync(new URL('../scripts/lib/diagnostic-release-source.mjs', import.meta.url), 'utf8');
+  const nextConfig = readFileSync(new URL('../next.config.ts', import.meta.url), 'utf8');
   assert.match(verifier, /!option\.startsWith\('--max-old-space-size='\)/);
   assert.match(verifier, /--max-old-space-size=8192/);
   assert.match(verifier, /diagnostic-adaptive\.spec\.ts/);
   assert.match(verifier, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED: 'true'/);
+  assert.match(verifier, /DIAGNOSTIC_QUALITY_BUILD: 'true'/);
+  assert.match(nextConfig, /DIAGNOSTIC_QUALITY_BUILD === 'true'/);
+  assert.match(nextConfig, /webpackMemoryOptimizations: true/);
+  assert.match(nextConfig, /webpackBuildWorker: false/);
   assert.match(sourceHash, /path\.startsWith\('scripts\/'\) && path\.includes\('diagnostic-'\)/);
   assert.match(sourceHash, /tests\/e2e\/diagnostic-adaptive\.spec\.ts/);
   assert.match(sourceHash, /playwright\.config\.ts/);
+  assert.match(sourceHash, /next\.config\.ts/);
 });
