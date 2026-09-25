@@ -209,7 +209,8 @@ fuente y de banco, y rechaza recibos de otro despliegue, proyecto o antigüedad.
 
 ### Evidencia técnica reproducible
 
-La suite, TypeScript, el build y el E2E no se atestiguan a mano. Sobre un commit limpio se
+El guardián del catálogo protegido, la suite diagnóstica, TypeScript, el build y el E2E no se
+atestiguan a mano. Sobre un commit limpio se
 ejecutan y se guardan en un recibo privado ligado a la huella de fuente:
 
 ```bash
@@ -219,7 +220,9 @@ npm run record:diagnostic-quality-evidence -- \
   --receipt=.diagnostic-private/evidence/release-quality.json
 ```
 
-El segundo comando es primero un dry run. Imprime la confirmación SHA-256 que debe repetirse con
+El primer comando exige que sigan presentes al menos los **465 temas gramaticales** y los módulos
+protegidos de práctica antes de ejecutar el resto de la verificación. El segundo comando es
+primero un dry run. Imprime la confirmación SHA-256 que debe repetirse con
 `--write`, `--attested-by=<identidad-del-verificador>` y `--confirm=<valor-exacto>`. El recibo
 solo es válido durante 24 horas, registra el número de pruebas unitarias, historias de navegador
 y páginas estáticas, y se rechaza si el árbol se ensucia o cambia la huella durante la ejecución.

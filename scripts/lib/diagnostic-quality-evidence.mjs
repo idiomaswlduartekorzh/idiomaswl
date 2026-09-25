@@ -22,11 +22,14 @@ export function validateDiagnosticQualityReceipt(input) {
     || recordedAt - completedAt > 24 * 60 * 60 * 1_000) {
     throw new Error('Quality receipt is stale or has an invalid time range.');
   }
-  if (receipt?.receiptVersion !== 'diagnostic-quality-evidence-v2'
+  if (receipt?.receiptVersion !== 'diagnostic-quality-evidence-v3'
     || receipt.decision !== 'PASS'
     || receipt.sourceSha256 !== input.expectedSourceSha256
     || !COMMIT_SHA.test(receipt.commitSha ?? '')
     || receipt.checks?.workingTreeClean !== true
+    || receipt.checks?.protectedPracticeCatalog?.passed !== true
+    || !Number.isInteger(receipt.checks.protectedPracticeCatalog.grammarTopicCount)
+    || receipt.checks.protectedPracticeCatalog.grammarTopicCount < 1
     || receipt.checks?.diagnosticSuite?.passed !== true
     || !Number.isInteger(receipt.checks.diagnosticSuite.testCount)
     || receipt.checks.diagnosticSuite.testCount < 1
@@ -48,6 +51,7 @@ export function validateDiagnosticQualityReceipt(input) {
     verifiedCommit: receipt.commitSha,
     receiptSha256: input.receiptSha256,
     diagnosticTestCount: receipt.checks.diagnosticSuite.testCount,
+    protectedGrammarTopicCount: receipt.checks.protectedPracticeCatalog.grammarTopicCount,
     staticPageCount: receipt.checks.productionBuild.staticPageCount,
     browserE2ETestCount: receipt.checks.browserE2E.testCount,
   };
@@ -67,6 +71,8 @@ export function recordDiagnosticQualityEvidence({ currentEvidence, validated, re
     quality: {
       ...currentEvidence.quality,
       diagnosticSuiteSourceSha256: validated.sourceSha256,
+      protectedCatalogSourceSha256: validated.sourceSha256,
+      protectedGrammarTopicCount: validated.protectedGrammarTopicCount,
       productionBuildSourceSha256: validated.sourceSha256,
       browserE2ESourceSha256: validated.sourceSha256,
       browserE2ETestCount: validated.browserE2ETestCount,

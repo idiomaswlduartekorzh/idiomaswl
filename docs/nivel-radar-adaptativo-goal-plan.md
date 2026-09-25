@@ -320,7 +320,8 @@ Actualizado el 25 de septiembre de 2026:
   registrar migración, flujo autenticado y borrado mediante atestación explícita del operador.
   No puede aprobar retención ni ninguna decisión académica. No se ha ejecutado contra un entorno
   real porque todavía no hay credenciales ni banco piloto aprobado.
-- **Calidad reproducible ligada a fuente:** un runner separado ejecuta la suite diagnóstica,
+- **Calidad reproducible ligada a fuente:** un runner separado ejecuta el guardián del catálogo
+  protegido —465 temas gramaticales y sus módulos transversales—, la suite diagnóstica,
   TypeScript, el build de producción y el E2E adaptativo sobre un árbol limpio, verifica que la
   huella no cambie durante la corrida y emite un recibo privado con commit, conteo de pruebas,
   historias de navegador y páginas estáticas. El E2E levanta el build con la interfaz adaptativa

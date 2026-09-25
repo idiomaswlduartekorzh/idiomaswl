@@ -270,6 +270,12 @@ export function buildDiagnosticReleaseReadiness(input) {
     qualityBlockers.push('DIAGNOSTIC_SUITE_NOT_VERIFIED_FOR_SOURCE');
   }
   if (!nonEmpty(input.currentSourceSha256)
+    || evidence?.quality?.protectedCatalogSourceSha256 !== input.currentSourceSha256
+    || !Number.isInteger(evidence?.quality?.protectedGrammarTopicCount)
+    || evidence.quality.protectedGrammarTopicCount < 1) {
+    qualityBlockers.push('PRACTICA_CATALOG_NOT_VERIFIED_FOR_SOURCE');
+  }
+  if (!nonEmpty(input.currentSourceSha256)
     || evidence?.quality?.productionBuildSourceSha256 !== input.currentSourceSha256) {
     qualityBlockers.push('PRODUCTION_BUILD_NOT_VERIFIED_FOR_SOURCE');
   }

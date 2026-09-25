@@ -123,6 +123,7 @@ function readyFixture() {
       },
       quality: {
         diagnosticSuiteSourceSha256: 'source-sha', productionBuildSourceSha256: 'source-sha',
+        protectedCatalogSourceSha256: 'source-sha', protectedGrammarTopicCount: 465,
         browserE2ESourceSha256: 'source-sha', browserE2ETestCount: 4,
         verifiedCommit: commit, verifiedAt: reviewedAt, verifiedBy: 'qa-reviewer',
         receiptSha256: '3'.repeat(64),
@@ -196,6 +197,16 @@ test('all independent evidence gates produce READY_TO_ENABLE before flags are sw
   assert.equal(report.decision, 'READY_TO_ENABLE');
   assert.equal(report.releaseReady, true);
   assert.equal(report.summary.passedGates, report.summary.totalGates);
+});
+
+test('quality cannot pass when the protected practice catalog was not verified for this source', () => {
+  const fixture = readyFixture();
+  fixture.releaseEvidence.quality.protectedCatalogSourceSha256 = null;
+  fixture.releaseEvidence.quality.protectedGrammarTopicCount = null;
+  const report = buildDiagnosticReleaseReadiness(fixture);
+  assert.deepEqual(report.gates.find(candidate => candidate.id === 'quality').blockers, [
+    'PRACTICA_CATALOG_NOT_VERIFIED_FOR_SOURCE',
+  ]);
 });
 
 test('verified recordings cannot release without their preproduction approvals', () => {

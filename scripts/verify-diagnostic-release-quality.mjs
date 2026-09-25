@@ -11,7 +11,7 @@ const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputArgument = process.argv.find(argument => argument.startsWith('--output='));
 if (!process.argv.includes('--execute')) {
   process.stdout.write('Diagnostic release quality verification is a dry run.\n');
-  process.stdout.write('Add --execute and a private --output path to run the suite, TypeScript and production build.\n');
+  process.stdout.write('Add --execute and a private --output path to run the catalog guard, suite, TypeScript, production build and E2E.\n');
   process.exit(0);
 }
 if (!outputArgument) throw new Error('Quality verification requires --output below .diagnostic-private/.');
@@ -73,6 +73,13 @@ async function stopServer(child) {
   }
 }
 
+const catalogOutput = run('pnpm', ['run', 'check:practica-catalog']);
+const protectedGrammarTopicCount = Number(
+  catalogOutput.match(/Catálogo de práctica íntegro: (\d+) temas/iu)?.[1],
+);
+if (!Number.isInteger(protectedGrammarTopicCount) || protectedGrammarTopicCount < 1) {
+  throw new Error('Protected practice catalog count was not detected.');
+}
 const suiteOutput = run('pnpm', ['run', 'test:diagnostic-foundation']);
 const testCount = Number([...suiteOutput.matchAll(/ℹ tests (\d+)/gu)].at(-1)?.[1]);
 if (!Number.isInteger(testCount) || testCount < 1) throw new Error('Diagnostic suite test count was not detected.');
@@ -134,7 +141,7 @@ if (!clean() || diagnosticReleaseSourceSha256(root) !== sourceSha256) {
 }
 
 const receipt = {
-  receiptVersion: 'diagnostic-quality-evidence-v2',
+  receiptVersion: 'diagnostic-quality-evidence-v3',
   decision: 'PASS',
   startedAt,
   completedAt: new Date().toISOString(),
@@ -142,6 +149,7 @@ const receipt = {
   commitSha,
   checks: {
     workingTreeClean: true,
+    protectedPracticeCatalog: { passed: true, grammarTopicCount: protectedGrammarTopicCount },
     diagnosticSuite: { passed: true, testCount },
     typescript: { passed: true },
     productionBuild: { passed: true, staticPageCount },
