@@ -142,6 +142,12 @@ Actualizado el 24 de septiembre de 2026:
   superior, una frase de autorización no ligada al paquete o voces sin aprobación del dueño. El
   dry run pasó sin API, secreto, gasto ni escritura; la generación real sigue pendiente de
   autorización explícita.
+- **Aprobación de casting limitada a la cata:** un paquete privado separado fija voces, IDs,
+  guiones, modelo, formato, ensamblaje, tres archivos y techo de crédito. Nace vacío y exige que
+  el dueño confirme voz, alcance, staging privado y no publicación con identidad estable. El
+  registrador revalida el hash y requiere confirmación explícita; al aplicarse solo habilita el
+  preset A1 y conserva las cuatro voces como propuestas para la producción completa. Por tanto,
+  aprobar la cata nunca aprueba ni publica las 36 grabaciones.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves

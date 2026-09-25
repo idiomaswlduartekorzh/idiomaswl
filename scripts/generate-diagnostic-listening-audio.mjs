@@ -9,7 +9,19 @@ import casting from '../config/diagnostic/english-listening-voice-casting.json' 
 import { ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_LOWER_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-lower.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS } from '../src/server/diagnostic/bank/listening-production-mid.en.ts';
+import {
+  DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
+  DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS,
+  diagnosticA1AudioPilotAuthorization,
+  diagnosticA1AudioPilotCastingReadiness,
+} from './lib/diagnostic-a1-audio-pilot.mjs';
 import { buildDiagnosticListeningProductionPackage } from './lib/diagnostic-listening-production.mjs';
+
+export {
+  DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
+  DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS,
+  diagnosticA1AudioPilotAuthorization,
+} from './lib/diagnostic-a1-audio-pilot.mjs';
 
 const API = 'https://api.elevenlabs.io';
 const repoRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -26,12 +38,6 @@ const allBriefs = [
   ...ENGLISH_DIAGNOSTIC_LISTENING_MID_PRODUCTION_BRIEFS,
   ...ENGLISH_DIAGNOSTIC_LISTENING_ADVANCED_PRODUCTION_BRIEFS,
 ];
-export const DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS = [
-  'en-a1-listening-original-01',
-  'en-a1-listening-original-02',
-  'en-a1-listening-original-04',
-];
-export const DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT = 1_424;
 
 export function diagnosticListeningAudioInvoice(briefs) {
   const productionPackage = buildDiagnosticListeningProductionPackage(briefs);
@@ -78,14 +84,6 @@ function selectedBriefs() {
 function isDiagnosticA1PilotSelection(briefs) {
   return briefs.length === DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS.length
     && briefs.every((brief, index) => brief.id === DIAGNOSTIC_A1_AUDIO_PILOT_MEDIA_IDS[index]);
-}
-
-export function diagnosticA1AudioPilotAuthorization(invoice) {
-  assert.equal(invoice.files, 3, 'A1 audio pilot must contain exactly three files');
-  assert.equal(invoice.billableCharacters, 712, 'A1 audio pilot character invoice changed');
-  assert.equal(invoice.estimatedMaximumCreditDebit, DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT,
-    'A1 audio pilot exceeds or changed its approved credit envelope');
-  return `GENERATE_DIAGNOSTIC_A1_AUDIO_PILOT:${invoice.packageSha256}:FILES_3:MAX_CREDITS_${DIAGNOSTIC_A1_AUDIO_PILOT_MAX_CREDIT_DEBIT}`;
 }
 
 function profileFor(brief, turn) {
@@ -158,7 +156,12 @@ async function generate(briefs) {
     assert.equal(value('--authorize-pilot'), authorization, `pass --authorize-pilot ${authorization}`);
   }
   assert.deepEqual(invoice.unresolvedProfiles, [], 'every used profile needs a voiceId');
-  assert.deepEqual(invoice.unapprovedProfiles, [], 'every used profile needs approval=approved_by_owner');
+  if (isA1Pilot) {
+    const scopedCasting = diagnosticA1AudioPilotCastingReadiness(casting, invoice);
+    assert.equal(scopedCasting.ready, true, `A1 pilot cast is not approved: ${scopedCasting.blockers.join(', ')}`);
+  } else {
+    assert.deepEqual(invoice.unapprovedProfiles, [], 'every used profile needs approval=approved_by_owner');
+  }
   const maxCharacters = Number(value('--max-billable-characters'));
   assert.ok(Number.isInteger(maxCharacters) && maxCharacters >= invoice.billableCharacters, `pass --max-billable-characters of at least ${invoice.billableCharacters}`);
   const protectedReserve = Number(value('--min-remaining-credits'));
@@ -221,6 +224,7 @@ async function generate(briefs) {
   const actualCreditDebit = remainingCredits - endingCredits;
   writeFileSync(path.join(outputRoot, 'generation-log.json'), `${JSON.stringify({
     generatedAt: new Date().toISOString(), castingVersion: casting.castingVersion,
+    pilotScope: isA1Pilot ? casting.pilotApproval : null,
     packageSha256: invoice.packageSha256, invoice, approvedMaximumCreditDebit: maximumCreditDebit,
     remainingCreditsBefore: remainingCredits, remainingCreditsAfter: endingCredits, actualCreditDebit, generated,
   }, null, 2)}\n`);
@@ -241,10 +245,13 @@ if (isMain) {
   } else {
     const invoice = diagnosticListeningAudioInvoice(briefs);
     const isA1Pilot = isDiagnosticA1PilotSelection(briefs);
+    const scopedCasting = isA1Pilot ? diagnosticA1AudioPilotCastingReadiness(casting, invoice) : null;
     process.stdout.write(`${JSON.stringify({
       ...invoice,
       selectionScope: isA1Pilot ? 'diagnostic-a1-audio-pilot-v1' : 'custom-or-full',
       authorizationPhrase: isA1Pilot ? diagnosticA1AudioPilotAuthorization(invoice) : null,
+      pilotCastingReady: scopedCasting?.ready ?? null,
+      pilotCastingBlockers: scopedCasting?.blockers ?? [],
       note: 'Dry run only. No API call, secret read, credit spend or audio write occurred.',
     }, null, 2)}\n`);
   }

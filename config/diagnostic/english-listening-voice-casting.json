@@ -11,6 +11,21 @@
     "integratedLoudnessLufs": -18,
     "maxTruePeakDbfs": -1.5
   },
+  "pilotApproval": {
+    "scopeVersion": "diagnostic-a1-audio-pilot-v1",
+    "status": "pending-owner-approval",
+    "proposalSha256": null,
+    "packageSha256": "98708152b86de8a5481afbb8e004a5a64d5f31711cc6cfbac41f4ce4e566f9d2",
+    "approvedProfiles": [],
+    "maximumCreditDebit": 1424,
+    "privateStagingOnly": true,
+    "publicationAuthorized": false,
+    "approvalReceiptSha256": null,
+    "approvedAt": null,
+    "approvedBy": null,
+    "appliedAt": null,
+    "appliedBy": null
+  },
   "profiles": {
     "narrator_a": {
       "voiceId": "onwK4e9ZLuTAKqWW03F9",

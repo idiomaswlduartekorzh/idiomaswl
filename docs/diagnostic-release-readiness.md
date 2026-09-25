@@ -75,6 +75,21 @@ puede contar como evidencia de escucha hasta dos revisiones humanas independient
 transcripción y alineación. Actualmente las cuatro voces siguen como propuestas y no se ha hecho
 ninguna llamada a ElevenLabs.
 
+Para no confundir una cata con el casting definitivo, la aprobación del piloto tiene su propio
+recibo y nunca cambia `profiles.*.approval`:
+
+```bash
+npm run scaffold:diagnostic-a1-audio-pilot-approval
+# el dueño revisa las cuatro voces y completa el recibo privado
+npm run record:diagnostic-a1-audio-pilot-approval
+```
+
+El paquete nace sin decisión ni identidad. Aprobarlo exige confirmar las voces, los tres archivos,
+el techo de 1.424 créditos, staging privado y ausencia de autorización para publicar. El
+registrador es dry run, exige checkout limpio, vuelve a calcular la propuesta y solo escribe con
+`--write`, identidad de operador y confirmación ligada al hash del recibo. Cambiar una voz, guion,
+modelo, formato, política de ensamblaje o costo invalida la aprobación limitada.
+
 ### Inspección segura de Supabase
 
 `npm run inspect:diagnostic-supabase` es deliberadamente un dry run. Con `-- --execute` y las
