@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -8,7 +9,14 @@ import {
   compileDiagnosticGovernanceReviews,
   validateDiagnosticGovernanceReceipt,
 } from '../scripts/lib/diagnostic-governance-review.mjs';
-import { diagnosticGovernanceSnapshots } from '../scripts/lib/diagnostic-governance-snapshots.mjs';
+import {
+  diagnosticGovernanceSnapshots,
+  diagnosticReviewableDocumentSha256,
+} from '../scripts/lib/diagnostic-governance-snapshots.mjs';
+import {
+  recordDiagnosticGovernanceApprovals,
+  validateDiagnosticGovernanceManifest,
+} from '../scripts/lib/diagnostic-governance-record.mjs';
 
 const snapshots = {
   'writing-operations': 'a'.repeat(64),
@@ -82,4 +90,78 @@ test('executable compiler recomputes current snapshots and keeps every artifact 
   assert.match(compiler, /assertPrivate\(outputPath/);
   assert.match(compiler, /manifestSha256/);
   assert.match(compiler, /receiptCount/);
+});
+
+function approvedManifestFixture() {
+  const receipts = completedPackets();
+  const compiled = compileDiagnosticGovernanceReviews({ receipts, snapshots });
+  const references = receipts.map((receipt, index) => {
+    const file = `receipt-${index + 1}.json`;
+    const bytes = Buffer.from(JSON.stringify(receipt));
+    return { packetId: receipt.packetId, file, sha256: createHash('sha256').update(bytes).digest('hex') };
+  });
+  const core = { ...compiled, compiledAt: reviewedAt, receipts: references };
+  const manifestSha256 = createHash('sha256').update(JSON.stringify(core)).digest('hex');
+  const receiptFiles = new Map(receipts.map((receipt, index) => {
+    const reference = references[index];
+    return [reference.file, { sha256: reference.sha256, receipt }];
+  }));
+  return { manifest: { ...core, manifestSha256 }, manifestSha256, receiptFiles };
+}
+
+test('approved manifest can record only the reviewed human-writing, retention and pilot decisions', () => {
+  const fixture = approvedManifestFixture();
+  const validated = validateDiagnosticGovernanceManifest({ ...fixture, snapshots });
+  const result = recordDiagnosticGovernanceApprovals({
+    currentEvidence: {
+      evidenceVersion: 'english-diagnostic-release-evidence-v1', updatedAt: null,
+      writingOperations: {
+        mode: null,
+        humanReview: { approved: false },
+        externalProcessing: { consentCaptureVerified: false, verifiedAt: null, verifiedBy: null },
+      },
+      privacy: { deletionFlowVerified: false },
+      database: { authenticatedFlowVerified: false }, pilot: {}, quality: {},
+    },
+    retentionPolicy: { policyVersion: 'english-diagnostic-retention-proposal-v1', status: 'proposal-pending-privacy-approval' },
+    pilotCriteria: { criteriaVersion: 'english-diagnostic-pilot-criteria-v1', status: 'provisional-pending-academic-approval' },
+    validated,
+    recordedAt: reviewedAt,
+    appliedBy: 'release-operator',
+  });
+  assert.equal(result.nextEvidence.writingOperations.mode, 'human');
+  assert.equal(result.nextEvidence.writingOperations.humanReview.verifiedReviewerCount, 2);
+  assert.equal(result.nextEvidence.privacy.deletionFlowVerified, false);
+  assert.equal(result.nextRetentionPolicy.status, 'approved');
+  assert.equal(result.nextPilotCriteria.status, 'approved');
+  assert.equal(result.nextPilotCriteria.approval.manifestSha256, fixture.manifestSha256);
+});
+
+test('governance recorder rejects a changed manifest or source receipt', () => {
+  const fixture = approvedManifestFixture();
+  assert.throws(() => validateDiagnosticGovernanceManifest({
+    ...fixture,
+    manifest: { ...fixture.manifest, compiledAt: '2026-09-25T12:01:00.000Z' },
+    snapshots,
+  }), /changed or not approved/);
+  const changedReceipts = new Map(fixture.receiptFiles);
+  const [firstKey, first] = changedReceipts.entries().next().value;
+  changedReceipts.set(firstKey, { ...first, sha256: 'f'.repeat(64) });
+  assert.throws(() => validateDiagnosticGovernanceManifest({
+    ...fixture, receiptFiles: changedReceipts, snapshots,
+  }), /does not match/);
+});
+
+test('approval metadata does not invalidate a reviewed policy but threshold edits do', () => {
+  const proposal = { policyVersion: 'v1', status: 'proposal', rules: [{ days: 90 }] };
+  const approved = {
+    ...proposal,
+    status: 'approved',
+    approval: { manifestSha256: 'a'.repeat(64), approvedAt: reviewedAt },
+  };
+  assert.equal(diagnosticReviewableDocumentSha256(proposal), diagnosticReviewableDocumentSha256(approved));
+  assert.notEqual(
+    diagnosticReviewableDocumentSha256(proposal),
+    diagnosticReviewableDocumentSha256({ ...approved, rules: [{ days: 91 }] }),
+  );
 });

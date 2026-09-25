@@ -9,6 +9,7 @@ const json = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'ut
 function readyFixture() {
   const reviewedAt = '2026-09-25T12:00:00.000Z';
   const commit = 'a'.repeat(40);
+  const governanceManifestSha256 = '4'.repeat(64);
   const objectiveCells = Array.from({ length: 24 }, (_, index) => ({
     level: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'][Math.floor(index / 4)],
     skill: ['reading', 'listening', 'grammar', 'vocabulary'][index % 4],
@@ -25,8 +26,14 @@ function readyFixture() {
       transcriptReviewerId: `transcript-${index}`, alignmentReviewerId: `alignment-${index}`, reviewedAt,
     })) },
     voiceCasting: { profiles: {} },
-    pilotCriteria: { criteriaVersion: 'criteria-v1', status: 'approved' },
-    retentionPolicy: { policyVersion: 'retention-v1', status: 'approved' },
+    pilotCriteria: {
+      criteriaVersion: 'criteria-v1', status: 'approved',
+      approval: { manifestSha256: governanceManifestSha256, snapshotSha256: 'pilot-snapshot' },
+    },
+    retentionPolicy: {
+      policyVersion: 'retention-v1', status: 'approved',
+      approval: { manifestSha256: governanceManifestSha256, snapshotSha256: 'retention-snapshot' },
+    },
     releaseEvidence: {
       evidenceVersion: 'english-diagnostic-release-evidence-v1',
       updatedAt: reviewedAt,
@@ -42,11 +49,17 @@ function readyFixture() {
       },
       writingOperations: {
         mode: 'human',
-        humanReview: { approved: true, verifiedReviewerCount: 2, slaHours: 48, verifiedAt: reviewedAt, verifiedBy: 'academic-lead' },
+        governanceManifestSha256,
+        workflowSnapshotSha256: 'writing-snapshot',
+        humanReview: {
+          approved: true, verifiedReviewerCount: 2, reviewerRosterSha256: '5'.repeat(64),
+          slaHours: 48, verifiedAt: reviewedAt, verifiedBy: 'academic-lead',
+        },
         externalProcessing: { consentCaptureVerified: false, verifiedAt: null, verifiedBy: null },
       },
       privacy: {
         retentionPolicyVersion: 'retention-v1', approvedAt: reviewedAt, approvedBy: 'privacy-reviewer',
+        retentionSnapshotSha256: 'retention-snapshot', governanceManifestSha256,
         deletionFlowVerified: true, deletionReceiptSha256: '2'.repeat(64),
       },
       pilot: { reportPath: 'pilot.json', reportSha256: 'pilot-sha', validationDecision: 'approved', reviewedAt, reviewedBy: 'measurement-reviewer' },
@@ -67,6 +80,11 @@ function readyFixture() {
     currentBankSha256: 'bank-sha',
     providerReadiness: { ready: false, provider: null, model: null, blockers: ['api-key-missing'] },
     expectedMigration: 'latest.sql', currentCommit: commit, currentSourceSha256: 'source-sha', workingTreeClean: true,
+    governanceSnapshots: {
+      'writing-operations': 'writing-snapshot',
+      'retention-policy': 'retention-snapshot',
+      'pilot-criteria': 'pilot-snapshot',
+    },
     activation: { engineEnabled: false, uiEnabled: false },
   };
 }

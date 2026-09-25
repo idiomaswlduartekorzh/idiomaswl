@@ -1,6 +1,7 @@
 {
   "evidenceVersion": "english-diagnostic-release-evidence-v1",
   "updatedAt": "2026-09-25T04:28:23.303Z",
+  "governanceApplication": null,
   "database": {
     "appliedThroughMigration": null,
     "verifiedAt": null,
@@ -19,9 +20,12 @@
   },
   "writingOperations": {
     "mode": null,
+    "governanceManifestSha256": null,
+    "workflowSnapshotSha256": null,
     "humanReview": {
       "approved": false,
       "verifiedReviewerCount": 0,
+      "reviewerRosterSha256": null,
       "slaHours": null,
       "verifiedAt": null,
       "verifiedBy": null
@@ -34,6 +38,8 @@
   },
   "privacy": {
     "retentionPolicyVersion": null,
+    "retentionSnapshotSha256": null,
+    "governanceManifestSha256": null,
     "approvedAt": null,
     "approvedBy": null,
     "deletionFlowVerified": false,

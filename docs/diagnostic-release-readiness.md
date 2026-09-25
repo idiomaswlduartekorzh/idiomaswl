@@ -139,6 +139,8 @@ vacías, sin modo de escritura ni aprobación preseleccionados:
 npm run scaffold:diagnostic-governance-review
 # después de completar los cinco archivos de forma independiente:
 npm run compile:diagnostic-governance-review
+# después de obtener APPROVED, validar el cambio sin escribir:
+npm run record:diagnostic-governance-approvals
 ```
 
 El paquete privado liga cada revisión a una huella exacta: operación de escritura, política de
@@ -153,6 +155,14 @@ exige exactamente los cinco roles, impide identidades duplicadas dentro de cada 
 que los dos revisores de escritura aprobaron el mismo modelo operativo. El manifiesto y los hashes
 de cada recibo permanecen bajo `.diagnostic-private/`. Mientras ese proceso no termine con
 `APPROVED`, ningún gate cambia de estado.
+
+El registrador también es dry run por defecto. Solo acepta el manifiesto y los cinco archivos
+originales intactos, recalcula las huellas vigentes y exige una confirmación ligada al hash del
+manifiesto, `--write` y `--applied-by=<operador>`. Al aplicarse, puede registrar únicamente el
+modo de escritura aprobado, la política de retención exacta y el estado aprobado de los criterios
+del piloto. No marca el borrado como probado, no aprueba el banco y no valida resultados del
+piloto. Cambiar cualquier regla o umbral después de la aprobación invalida su snapshot aunque los
+metadatos de aprobación cambien.
 
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio

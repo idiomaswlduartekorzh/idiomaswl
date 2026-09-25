@@ -76,6 +76,8 @@ export function buildDiagnosticReleaseReadiness(input) {
   }
 
   const writingBlockers = [];
+  const writingGovernanceBound = SHA256.test(evidence?.writingOperations?.governanceManifestSha256 ?? '')
+    && evidence?.writingOperations?.workflowSnapshotSha256 === input.governanceSnapshots?.['writing-operations'];
   if (writingMode !== 'human' && writingMode !== 'external') {
     writingBlockers.push('WRITING_OPERATION_MODE_UNSELECTED');
   } else if (writingMode === 'human') {
@@ -83,6 +85,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     if (human?.approved !== true
       || !Number.isInteger(human?.verifiedReviewerCount)
       || human.verifiedReviewerCount < 2
+      || !SHA256.test(human?.reviewerRosterSha256 ?? '')
       || !Number.isFinite(human?.slaHours)
       || human.slaHours <= 0
       || !isIsoDate(human?.verifiedAt)
@@ -97,6 +100,9 @@ export function buildDiagnosticReleaseReadiness(input) {
       writingBlockers.push('EXTERNAL_WRITING_CONSENT_FLOW_NOT_VERIFIED');
     }
     if (!provider.ready) writingBlockers.push('EXTERNAL_WRITING_PROVIDER_NOT_READY');
+  }
+  if (writingMode && !writingGovernanceBound) {
+    writingBlockers.push('WRITING_GOVERNANCE_APPROVAL_NOT_BOUND');
   }
 
   const databaseBlockers = [];
@@ -123,6 +129,10 @@ export function buildDiagnosticReleaseReadiness(input) {
   const privacyBlockers = [];
   if (input.retentionPolicy?.status !== 'approved'
     || evidence?.privacy?.retentionPolicyVersion !== input.retentionPolicy?.policyVersion
+    || !SHA256.test(evidence?.privacy?.governanceManifestSha256 ?? '')
+    || evidence?.privacy?.retentionSnapshotSha256 !== input.governanceSnapshots?.['retention-policy']
+    || input.retentionPolicy?.approval?.snapshotSha256 !== input.governanceSnapshots?.['retention-policy']
+    || input.retentionPolicy?.approval?.manifestSha256 !== evidence?.privacy?.governanceManifestSha256
     || !isIsoDate(evidence?.privacy?.approvedAt)
     || !nonEmpty(evidence?.privacy?.approvedBy)) {
     privacyBlockers.push('RETENTION_POLICY_NOT_APPROVED');
@@ -135,7 +145,9 @@ export function buildDiagnosticReleaseReadiness(input) {
   }
 
   const pilotBlockers = [];
-  if (input.pilotCriteria?.status !== 'approved') {
+  if (input.pilotCriteria?.status !== 'approved'
+    || !SHA256.test(input.pilotCriteria?.approval?.manifestSha256 ?? '')
+    || input.pilotCriteria?.approval?.snapshotSha256 !== input.governanceSnapshots?.['pilot-criteria']) {
     pilotBlockers.push('PILOT_CRITERIA_NOT_APPROVED');
   }
   if (input.pilotReport?.reportVersion !== 'diagnostic-pilot-report-v1'
@@ -199,6 +211,7 @@ export function buildDiagnosticReleaseReadiness(input) {
     }),
     gate('writing-operations', writingBlockers, {
       mode: writingMode,
+      governanceSnapshot: input.governanceSnapshots?.['writing-operations'] ?? null,
       externalProvider: {
         ready: provider.ready === true,
         provider: provider.provider ?? null,
@@ -215,10 +228,12 @@ export function buildDiagnosticReleaseReadiness(input) {
       configuredPolicyVersion: input.retentionPolicy?.policyVersion ?? null,
       configuredPolicyStatus: input.retentionPolicy?.status ?? null,
       retentionPolicyVersion: evidence?.privacy?.retentionPolicyVersion ?? null,
+      retentionSnapshot: input.governanceSnapshots?.['retention-policy'] ?? null,
     }),
     gate('pilot', pilotBlockers, {
       criteriaVersion: input.pilotCriteria?.criteriaVersion ?? null,
       criteriaStatus: input.pilotCriteria?.status ?? null,
+      criteriaSnapshot: input.governanceSnapshots?.['pilot-criteria'] ?? null,
       pilotDecision: input.pilotReport?.decision ?? null,
     }),
     gate('quality', qualityBlockers, {

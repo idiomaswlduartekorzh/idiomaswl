@@ -12,6 +12,7 @@ import {
 import { diagnosticPilotBankSha256 } from '../src/server/diagnostic/pilot-analytics.ts';
 import { buildDiagnosticReleaseReadiness } from './lib/diagnostic-release-readiness.mjs';
 import { diagnosticReleaseSourceSha256 } from './lib/diagnostic-release-source.mjs';
+import { diagnosticGovernanceSnapshots } from './lib/diagnostic-governance-snapshots.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const readJson = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
@@ -51,6 +52,7 @@ const report = buildDiagnosticReleaseReadiness({
   expectedMigration: migrationNames.at(-1) ?? null,
   currentCommit,
   currentSourceSha256,
+  governanceSnapshots: diagnosticGovernanceSnapshots(root),
   workingTreeClean,
   activation: {
     engineEnabled: process.env.DIAGNOSTIC_ADAPTIVE_ENABLED === 'true',

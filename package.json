@@ -44,6 +44,7 @@
     "record:diagnostic-quality-evidence": "node scripts/record-diagnostic-quality-evidence.mjs",
     "scaffold:diagnostic-governance-review": "node scripts/scaffold-diagnostic-governance-review.mjs",
     "compile:diagnostic-governance-review": "node scripts/compile-diagnostic-governance-review.mjs",
+    "record:diagnostic-governance-approvals": "node scripts/record-diagnostic-governance-approvals.mjs",
     "generate:diagnostic-audio-inventory": "node scripts/generate-diagnostic-legacy-audio-inventory.mjs",
     "recover:diagnostic-audio": "node scripts/recover-diagnostic-legacy-audio.mjs",
     "verify:diagnostic-audio-upload": "node scripts/upload-diagnostic-legacy-audio.mjs",

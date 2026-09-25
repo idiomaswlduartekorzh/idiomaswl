@@ -222,7 +222,9 @@ Actualizado el 24 de septiembre de 2026:
   seleccionado; una huella distinta, identidades duplicadas o desacuerdo operativo invalida la
   compilación. El compilador ejecutable recalcula las huellas actuales y conserva manifiesto y
   hashes de recibos únicamente en staging privado. Falta completar esos recibos por personas
-  autorizadas.
+  autorizadas. Un registrador dry-run valida nuevamente manifiesto y archivos originales; solo
+  con confirmación hash-bound y operador identificado puede trasladar las tres decisiones exactas
+  a la configuración. Nunca aprueba contenido, borrado real ni resultados del piloto.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
   borradores. Un inspector Supabase fail-closed ya puede comprobar la última migración por sus
