@@ -205,7 +205,9 @@ Actualizado el 25 de septiembre de 2026:
   atajos metalingüísticos, longitud relativa, paralelismo de longitud, capitalización y
   puntuación. La salida pública contiene únicamente agregados por nivel y habilidad; el detalle
   por ítem, posición y clave solo aparece en material privado del revisor de evaluación. El
-  corte actual encuentra **36 ítems que requieren juicio humano y 0 defectos bloqueantes**. Una
+  corte actual encuentra **32 ítems que requieren juicio humano y 0 defectos bloqueantes**. Cuatro
+  ítems con pistas accidentales de puntuación fueron corregidos y versionados individualmente
+  como `draft-2`, sin cambiar su clave, nivel ni constructo; los otros 212 conservaron `draft-1`. Una
   señal de longitud no rechaza automáticamente contenido que pueda ser legítimo para el
   constructo, pero ahora exige el criterio `answerCueRiskReviewed`. Cada firma conserva por
   separado la huella del contenido y la de la política de revisión; cambiar la versión del
@@ -415,11 +417,11 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  corte `8662fc3a` quedó verificado con el catálogo protegido de **465 temas**, **324/324
+  corte `a53ab90d` quedó verificado con el catálogo protegido de **465 temas**, **326/326
   pruebas**, TypeScript sin errores, un build de **2.564 páginas estáticas** y **4/4 historias
   E2E**. La huella de fuente
-  `5c007245ff68db2d434c080079c175978c407f3469f2f3ee90a7609f1002b122` y el recibo privado
-  `2a72b4490bc014594aba27b51739250a0774844eea8db5bc4359afb73fd48cfb` dejan el gate de
+  `0d74a4d1fc37113594e86663f4932e5ec7bf7f9094759904ffec44930df4088f` y el recibo privado
+  `66cf25a7e79239d0b2fabeaff55fc75ee75d818faad9dc5331c3df94e62ae102` dejan el gate de
   calidad atado exactamente a ese código.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
   paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.
