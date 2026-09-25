@@ -1,15 +1,20 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { dirname, join } from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 
 import {
   buildDiagnosticGovernanceReviewPackets,
   compileDiagnosticGovernanceReviews,
+  diagnosticGovernanceReviewProgress,
   validateDiagnosticGovernanceReceipt,
 } from '../scripts/lib/diagnostic-governance-review.mjs';
 import {
+  DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
+  diagnosticDeliveryGovernanceSnapshot,
   diagnosticGovernanceSnapshots,
   diagnosticReviewableDocumentSha256,
 } from '../scripts/lib/diagnostic-governance-snapshots.mjs';
@@ -40,7 +45,9 @@ function completedPackets() {
         slaHours: 48,
         externalConsentCaptureReference: null,
         externalProviderReviewReference: null,
-      } : null,
+      } : packet.topic === 'delivery-policy'
+        ? Object.fromEntries(Object.keys(packet.details).map(check => [check, true]))
+        : null,
     }));
 }
 
@@ -48,6 +55,7 @@ test('scaffold creates seven independent fail-closed review packets without pres
   const packets = buildDiagnosticGovernanceReviewPackets({ snapshots, generatedAt: reviewedAt });
   assert.equal(packets.length, 7);
   assert.ok(packets.every(packet => packet.decision === null && packet.reviewerId === null));
+  assert.ok(packets.every(packet => packet.evidencePaths.every(path => !path.startsWith('.diagnostic-private/'))));
   assert.deepEqual(packets.map(packet => `${packet.topic}:${packet.role}`), [
     'writing-operations:academic-lead',
     'writing-operations:operations-lead',
@@ -57,6 +65,57 @@ test('scaffold creates seven independent fail-closed review packets without pres
     'delivery-policy:academic-lead',
     'delivery-policy:product-owner',
   ]);
+});
+
+test('governance progress is aggregate-only and ready only with seven valid approvals', () => {
+  const templates = buildDiagnosticGovernanceReviewPackets({ snapshots, generatedAt: reviewedAt });
+  const pending = diagnosticGovernanceReviewProgress({ receipts: templates, snapshots });
+  assert.equal(pending.decision, 'INCOMPLETE');
+  assert.deepEqual(pending.counts, {
+    approved: 0, pending: 7, 'changes-requested': 0, missing: 0, invalid: 0,
+  });
+  assert.equal(JSON.stringify(pending).includes('reviewerId'), false);
+  assert.equal(JSON.stringify(pending).includes('comments'), false);
+
+  const ready = diagnosticGovernanceReviewProgress({ receipts: completedPackets(), snapshots });
+  assert.equal(ready.decision, 'READY_FOR_COMPILATION');
+  assert.equal(ready.counts.approved, 7);
+
+  const changed = completedPackets();
+  changed[5] = { ...changed[5], details: { ...changed[5].details, proposedValuesAccepted: false } };
+  const rejected = diagnosticGovernanceReviewProgress({
+    receipts: [...changed, { ...changed[0], packetId: 'unexpected' }], snapshots,
+  });
+  assert.equal(rejected.decision, 'INCOMPLETE');
+  assert.equal(rejected.counts.invalid, 2);
+});
+
+test('delivery reviewers must inspect their exact evidence paths and complete every role-specific check', () => {
+  const packets = completedPackets();
+  const academic = packets.find(packet => packet.topic === 'delivery-policy' && packet.role === 'academic-lead');
+  const product = packets.find(packet => packet.topic === 'delivery-policy' && packet.role === 'product-owner');
+  assert.deepEqual(Object.keys(academic.details), [
+    'pilotRetestDesignReviewed',
+    'productionCooldownReviewed',
+    'exposureWindowAndBankCapacityReviewed',
+    'validityIsNonCertificationReviewed',
+    'proposedValuesAccepted',
+  ]);
+  assert.deepEqual(Object.keys(product.details), [
+    'activeAttemptUxReviewed',
+    'cooldownAndEligibilityUxReviewed',
+    'supportAndNoOverrideRuleReviewed',
+    'resultExpiryCommunicationReviewed',
+    'proposedValuesAccepted',
+  ]);
+  assert.throws(() => validateDiagnosticGovernanceReceipt({
+    ...academic,
+    details: { ...academic.details, exposureWindowAndBankCapacityReviewed: false },
+  }, snapshots['delivery-policy']), /every academic-lead check/);
+  assert.throws(() => validateDiagnosticGovernanceReceipt({
+    ...product,
+    evidencePaths: [...product.evidencePaths, 'unreviewed-extra.md'],
+  }, snapshots['delivery-policy']), /another snapshot/);
 });
 
 test('governance compilation requires exact snapshots, independent roles and one writing model', () => {
@@ -87,6 +146,7 @@ test('executable compiler recomputes current snapshots and keeps every artifact 
   const root = fileURLToPath(new URL('..', import.meta.url));
   const current = diagnosticGovernanceSnapshots(root);
   assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria', 'delivery-policy']);
+  assert.equal(DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS.length, 9);
   assert.ok(Object.values(current).every(value => /^[a-f0-9]{64}$/u.test(value)));
   const compiler = readFileSync(new URL('../scripts/compile-diagnostic-governance-review.mjs', import.meta.url), 'utf8');
   assert.match(compiler, /assertPrivate\(inputRoot/);
@@ -175,4 +235,22 @@ test('approval metadata does not invalidate a reviewed policy but threshold edit
     diagnosticReviewableDocumentSha256(proposal),
     diagnosticReviewableDocumentSha256({ ...approved, rules: [{ days: 91 }] }),
   );
+});
+
+test('delivery governance snapshot binds enforcement and UI, not only proposed numbers', () => {
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  const temporaryRoot = mkdtempSync(join(tmpdir(), 'diagnostic-delivery-governance-'));
+  try {
+    for (const path of DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS) {
+      const destination = join(temporaryRoot, path);
+      mkdirSync(dirname(destination), { recursive: true });
+      copyFileSync(join(root, path), destination);
+    }
+    const before = diagnosticDeliveryGovernanceSnapshot(temporaryRoot);
+    const migration = join(temporaryRoot, 'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql');
+    writeFileSync(migration, readFileSync(migration, 'utf8').replace('between 1 and 730', 'between 2 and 730'));
+    assert.notEqual(diagnosticDeliveryGovernanceSnapshot(temporaryRoot), before);
+  } finally {
+    rmSync(temporaryRoot, { recursive: true, force: true });
+  }
 });

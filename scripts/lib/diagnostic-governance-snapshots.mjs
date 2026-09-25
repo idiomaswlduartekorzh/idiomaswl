@@ -9,6 +9,18 @@ export const DIAGNOSTIC_WRITING_GOVERNANCE_PATHS = [
   'src/app/(site)/dashboard/admin/nivel-radar/page.tsx',
 ];
 
+export const DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS = [
+  'config/diagnostic/delivery-policy.json',
+  'supabase/migrations/20260925050000_diagnostic_delivery_policy.sql',
+  'src/server/diagnostic/delivery-policy.ts',
+  'src/server/diagnostic/start-core.ts',
+  'src/server/diagnostic/start.server.ts',
+  'src/server/diagnostic/submit.server.ts',
+  'src/server/diagnostic/finalize-core.ts',
+  'src/server/diagnostic/measurement.ts',
+  'src/app/(site)/nivel-radar/AdaptiveNivelRadarClient.tsx',
+];
+
 function canonical(value) {
   if (Array.isArray(value)) return `[${value.map(canonical).join(',')}]`;
   if (value && typeof value === 'object') {
@@ -28,6 +40,17 @@ function reviewableDocumentSha256(root, path) {
   return diagnosticReviewableDocumentSha256(JSON.parse(readFileSync(resolve(root, path), 'utf8')));
 }
 
+export function diagnosticDeliveryGovernanceSnapshot(root) {
+  const delivery = createHash('sha256');
+  for (const path of DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS) {
+    const bytes = path === 'config/diagnostic/delivery-policy.json'
+      ? diagnosticReviewableDocumentSha256(JSON.parse(readFileSync(resolve(root, path), 'utf8')))
+      : readFileSync(resolve(root, path));
+    delivery.update(path).update('\0').update(bytes).update('\0');
+  }
+  return delivery.digest('hex');
+}
+
 export function diagnosticGovernanceSnapshots(root) {
   const writing = createHash('sha256');
   for (const path of DIAGNOSTIC_WRITING_GOVERNANCE_PATHS) {
@@ -37,6 +60,6 @@ export function diagnosticGovernanceSnapshots(root) {
     'writing-operations': writing.digest('hex'),
     'retention-policy': reviewableDocumentSha256(root, 'config/diagnostic/data-retention-policy.json'),
     'pilot-criteria': reviewableDocumentSha256(root, 'config/diagnostic/pilot-publication-criteria.json'),
-    'delivery-policy': reviewableDocumentSha256(root, 'config/diagnostic/delivery-policy.json'),
+    'delivery-policy': diagnosticDeliveryGovernanceSnapshot(root),
   };
 }

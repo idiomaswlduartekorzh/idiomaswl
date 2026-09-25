@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 import { buildDiagnosticGovernanceReviewPackets } from './lib/diagnostic-governance-review.mjs';
 import {
+  DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
   DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
   diagnosticGovernanceSnapshots,
 } from './lib/diagnostic-governance-snapshots.mjs';
@@ -27,6 +28,9 @@ for (const packet of packets) {
 writeFileSync(resolve(outputRoot, 'snapshot.json'), `${JSON.stringify({
   snapshotVersion: 'diagnostic-governance-snapshot-v1',
   snapshots,
-  workflowPaths: DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
+  workflowPaths: {
+    writing: DIAGNOSTIC_WRITING_GOVERNANCE_PATHS,
+    delivery: DIAGNOSTIC_DELIVERY_GOVERNANCE_PATHS,
+  },
 }, null, 2)}\n`, { mode: 0o600 });
 process.stdout.write(`${JSON.stringify({ outputRoot, packetCount: packets.length, snapshots }, null, 2)}\n`);

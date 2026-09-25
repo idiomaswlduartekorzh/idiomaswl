@@ -43,6 +43,7 @@
     "verify:diagnostic-release-quality": "node scripts/verify-diagnostic-release-quality.mjs",
     "record:diagnostic-quality-evidence": "node scripts/record-diagnostic-quality-evidence.mjs",
     "scaffold:diagnostic-governance-review": "node scripts/scaffold-diagnostic-governance-review.mjs",
+    "report:diagnostic-governance-review-progress": "node scripts/report-diagnostic-governance-review-progress.mjs",
     "compile:diagnostic-governance-review": "node scripts/compile-diagnostic-governance-review.mjs",
     "record:diagnostic-governance-approvals": "node scripts/record-diagnostic-governance-approvals.mjs",
     "capture:diagnostic-pilot-report": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/capture-diagnostic-pilot-report.mjs",

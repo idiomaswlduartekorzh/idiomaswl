@@ -209,6 +209,8 @@ vacías, sin modo de escritura ni aprobación preseleccionados:
 
 ```bash
 npm run scaffold:diagnostic-governance-review
+# muestra únicamente conteos y estado por rol; INCOMPLETE termina con código 1:
+npm run report:diagnostic-governance-review-progress
 # después de completar los siete archivos de forma independiente:
 npm run compile:diagnostic-governance-review
 # después de obtener APPROVED, validar el cambio sin escribir:
@@ -222,6 +224,14 @@ liderazgo académico y medición; entrega exige liderazgo académico y producto.
 humana requiere al menos dos referencias verificables de revisores y un SLA máximo de 72 horas.
 La ruta externa exige referencias separadas para consentimiento y revisión de proveedor. Un
 cambio de documento invalida automáticamente sus recibos.
+
+La revisión de entrega no queda ligada únicamente a los números del JSON. Su snapshot incluye
+la política sin metadatos de aprobación, la migración atómica, validación y selección de
+servidor, cálculo de vigencia y comunicación en pantalla/PDF. Academic debe confirmar diseño de
+retest, cooldown, capacidad bajo la ventana sin repetición, carácter no certificador y valores;
+Product debe confirmar intento activo, elegibilidad, ausencia de override, soporte y comunicación
+de caducidad. Un solo check distinto de `true` impide aprobar. El reporte de progreso nunca
+imprime identidades, comentarios ni contenido de los documentos privados.
 
 Los paquetes son preparación, no aprobación. El compilador vuelve a calcular las cuatro huellas,
 exige exactamente los siete roles, impide identidades duplicadas dentro de cada tema y comprueba

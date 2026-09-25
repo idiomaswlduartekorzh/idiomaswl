@@ -244,6 +244,10 @@ Actualizado el 25 de septiembre de 2026:
   Los valores provisionales son 365 días sin repetir contenido, vigencia de 30 días en piloto y
   180 en producción, con cooldown productivo de 90 días. Producción permanece bloqueada hasta
   revisión independiente de liderazgo académico y producto.
+  Los dos paquetes de esa decisión enumeran evidencia y preguntas específicas por rol; la firma
+  queda ligada por una huella compuesta a política, migración, enforcement, cálculo y UI. Un
+  reporte agregado distingue pendientes, aprobaciones, cambios solicitados, faltantes e inválidos
+  sin revelar identidades o comentarios y sólo habilita compilación con 7/7 recibos válidos.
 - **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
   el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
   confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`
