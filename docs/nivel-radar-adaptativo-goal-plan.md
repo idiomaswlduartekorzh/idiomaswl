@@ -38,10 +38,17 @@ Actualizado el 24 de septiembre de 2026:
   respuestas, escritura y auditoría implementados. Las tablas niegan acceso directo a roles de
   navegador. Falta ejecutar la migración contra Postgres (el entorno actual no tiene Docker ni
   Podman), implementar el repositorio/endpoints y verificar autorización de extremo a extremo.
-- **Fase 3 — núcleo MST iniciado:** enrutamiento monotónico de localizador, confirmación de
-  perfiles desiguales y selector balanceado de formas implementados. Falta el simulador de
-  perfiles completos y calibrar los umbrales con el piloto.
-- **Pruebas actuales:** 26 pruebas específicas pasan y TypeScript compila sin errores.
+- **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación de perfiles
+  contradictorios, selector balanceado y simulador A1–C2 implementados. La simulación inicial
+  detectó sobreenrutamiento y permitió ajustar los cortes provisionales a 5/12 y 10/12; el
+  reporte queda versionado. Los umbrales siguen marcados como piloto hasta calibración real.
+- **Fase 5 — núcleo de escritura iniciado:** rúbrica de cuatro criterios A1–C2, validación de
+  evidencia, comparación humano/modelo y adjudicación implementadas. Hay 24 consignas
+  reservadas —cuatro por nivel— en estado borrador, pendientes de aprobación lingüística.
+- **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
+  distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
+  La política provisional limita la confianza y nunca se presenta como calibrada.
+- **Pruebas actuales:** 46 pruebas específicas pasan y TypeScript compila sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.

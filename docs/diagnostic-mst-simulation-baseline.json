@@ -1,0 +1,78 @@
+{
+  "simulationVersion": "diagnostic-mst-simulation-v1",
+  "seed": 20260924,
+  "sampleSizePerLevel": 1000,
+  "cohorts": [
+    {
+      "trueLevel": "A1",
+      "sampleSize": 1000,
+      "meanCorrect": 3.779,
+      "confirmationRate": 0.205,
+      "routes": {
+        "low-a1-a2": 846,
+        "mid-b1-b2": 154,
+        "high-c1-c2": 0
+      }
+    },
+    {
+      "trueLevel": "A2",
+      "sampleSize": 1000,
+      "meanCorrect": 5.319,
+      "confirmationRate": 0.318,
+      "routes": {
+        "low-a1-a2": 559,
+        "mid-b1-b2": 434,
+        "high-c1-c2": 7
+      }
+    },
+    {
+      "trueLevel": "B1",
+      "sampleSize": 1000,
+      "meanCorrect": 7.529,
+      "confirmationRate": 0.197,
+      "routes": {
+        "low-a1-a2": 87,
+        "mid-b1-b2": 818,
+        "high-c1-c2": 95
+      }
+    },
+    {
+      "trueLevel": "B2",
+      "sampleSize": 1000,
+      "meanCorrect": 9.689,
+      "confirmationRate": 0.331,
+      "routes": {
+        "low-a1-a2": 3,
+        "mid-b1-b2": 408,
+        "high-c1-c2": 589
+      }
+    },
+    {
+      "trueLevel": "C1",
+      "sampleSize": 1000,
+      "meanCorrect": 11.149,
+      "confirmationRate": 0.164,
+      "routes": {
+        "low-a1-a2": 0,
+        "mid-b1-b2": 41,
+        "high-c1-c2": 959
+      }
+    },
+    {
+      "trueLevel": "C2",
+      "sampleSize": 1000,
+      "meanCorrect": 11.736,
+      "confirmationRate": 0.037,
+      "routes": {
+        "low-a1-a2": 0,
+        "mid-b1-b2": 0,
+        "high-c1-c2": 1000
+      }
+    }
+  ],
+  "adversarial": {
+    "alwaysSameOption": "low-a1-a2",
+    "alwaysLongestOption": "low-a1-a2",
+    "advancedWithoutAudio": "mid-b1-b2"
+  }
+}

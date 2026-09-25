@@ -50,11 +50,11 @@ export interface LocatorRoutingPolicy {
  */
 export const ENGLISH_LOCATOR_ROUTING_POLICY: LocatorRoutingPolicy = {
   decisionsPerSkill: 3,
-  lowMaximumCorrect: 4,
-  highMinimumCorrect: 9,
+  lowMaximumCorrect: 5,
+  highMinimumCorrect: 10,
   highMinimumCorrectPerSkill: 1,
-  boundaryDistance: 1,
-  confirmationSpread: 2,
+  boundaryDistance: 0,
+  confirmationSpread: 3,
 };
 
 function assertIntegerInRange(value: number, minimum: number, maximum: number, label: string): void {
@@ -123,4 +123,3 @@ export function routeEnglishLocator(
     reasons,
   };
 }
-

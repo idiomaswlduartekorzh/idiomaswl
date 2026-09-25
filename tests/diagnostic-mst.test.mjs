@@ -23,7 +23,7 @@ function rank(routeId) {
 test('routes representative low, middle and high locator profiles', () => {
   assert.equal(routeEnglishLocator(scorecard([1, 1, 1, 1])).routeId, 'low-a1-a2');
   assert.equal(routeEnglishLocator(scorecard([2, 2, 2, 1])).routeId, 'mid-b1-b2');
-  assert.equal(routeEnglishLocator(scorecard([3, 2, 2, 2])).routeId, 'high-c1-c2');
+  assert.equal(routeEnglishLocator(scorecard([3, 3, 2, 2])).routeId, 'high-c1-c2');
 });
 
 test('flags boundary and uneven profiles for confirmation', () => {
@@ -80,8 +80,7 @@ test('rejects incomplete, inconsistent and overlapping routing inputs', () => {
   );
   assert.throws(() => routeEnglishLocator(scorecard([1, 1, 1, 1], 3)), /exceed/);
   assert.throws(
-    () => routeEnglishLocator(scorecard([1, 1, 1, 1]), { ...ENGLISH_LOCATOR_ROUTING_POLICY, lowMaximumCorrect: 9 }),
+    () => routeEnglishLocator(scorecard([1, 1, 1, 1]), { ...ENGLISH_LOCATOR_ROUTING_POLICY, lowMaximumCorrect: 10 }),
     /overlap/,
   );
 });
-
