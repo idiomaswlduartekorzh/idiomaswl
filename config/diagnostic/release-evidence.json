@@ -1,6 +1,6 @@
 {
   "evidenceVersion": "english-diagnostic-release-evidence-v1",
-  "updatedAt": null,
+  "updatedAt": "2026-09-25T04:14:49.922Z",
   "database": {
     "appliedThroughMigration": null,
     "verifiedAt": null,
@@ -47,11 +47,11 @@
     "reviewedBy": null
   },
   "quality": {
-    "diagnosticSuiteSourceSha256": null,
-    "productionBuildSourceSha256": null,
-    "verifiedCommit": null,
-    "verifiedAt": null,
-    "verifiedBy": null,
-    "receiptSha256": null
+    "diagnosticSuiteSourceSha256": "aeed58d119420145166a740705e78de3eab05ac8940f1e923a755ffd903ecb27",
+    "productionBuildSourceSha256": "aeed58d119420145166a740705e78de3eab05ac8940f1e923a755ffd903ecb27",
+    "verifiedCommit": "df2970e7ecb6b4d1aa40afca6efaba0872f97c34",
+    "verifiedAt": "2026-09-25T04:14:49.922Z",
+    "verifiedBy": "codex-local-verifier",
+    "receiptSha256": "8cc2b8cd729a8ecb2f8e0f1c010a4122816964d3e89455fb11f8d183e74c7f4c"
   }
 }
