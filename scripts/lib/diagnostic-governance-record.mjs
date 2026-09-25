@@ -21,12 +21,12 @@ export function validateDiagnosticGovernanceManifest({ manifest, manifestSha256,
     || manifest.decision !== 'APPROVED'
     || manifest.safeguards?.independentRoleReviews !== true
     || !Array.isArray(manifest.receipts)
-    || manifest.receipts.length !== 5) {
+    || manifest.receipts.length !== 7) {
     throw new Error('Governance manifest is incomplete, changed or not approved.');
   }
   canonicalIso(manifest.compiledAt, 'governance compiledAt');
-  if (!(receiptFiles instanceof Map) || receiptFiles.size !== 5) {
-    throw new Error('Exactly five source receipt files are required.');
+  if (!(receiptFiles instanceof Map) || receiptFiles.size !== 7) {
+    throw new Error('Exactly seven source receipt files are required.');
   }
   const receipts = manifest.receipts.map(reference => {
     if (typeof reference.file !== 'string' || reference.file !== reference.file.split('/').at(-1)
@@ -55,6 +55,8 @@ export function validateDiagnosticGovernanceManifest({ manifest, manifestSha256,
       .map(review => `${review.role}:${review.reviewerId}`).join(','),
     pilotApprovers: recomputed.topics['pilot-criteria'].reviews
       .map(review => `${review.role}:${review.reviewerId}`),
+    deliveryApprovers: recomputed.topics['delivery-policy'].reviews
+      .map(review => `${review.role}:${review.reviewerId}`),
   };
 }
 
@@ -62,6 +64,7 @@ export function recordDiagnosticGovernanceApprovals({
   currentEvidence,
   retentionPolicy,
   pilotCriteria,
+  deliveryPolicy,
   validated,
   recordedAt,
   appliedBy,
@@ -72,7 +75,8 @@ export function recordDiagnosticGovernanceApprovals({
     throw new Error('Release evidence version is invalid.');
   }
   if (retentionPolicy?.policyVersion !== 'english-diagnostic-retention-proposal-v1'
-    || pilotCriteria?.criteriaVersion !== 'english-diagnostic-pilot-criteria-v2') {
+    || pilotCriteria?.criteriaVersion !== 'english-diagnostic-pilot-criteria-v2'
+    || deliveryPolicy?.policyVersion !== 'english-diagnostic-delivery-policy-v1') {
     throw new Error('Governance document version is unexpected.');
   }
   const writing = validated.writing;
@@ -97,6 +101,15 @@ export function recordDiagnosticGovernanceApprovals({
       ...commonApproval,
       snapshotSha256: validated.snapshots['pilot-criteria'],
       approvedBy: validated.pilotApprovers,
+    },
+  };
+  const nextDeliveryPolicy = {
+    ...deliveryPolicy,
+    status: 'approved',
+    approval: {
+      ...commonApproval,
+      snapshotSha256: validated.snapshots['delivery-policy'],
+      approvedBy: validated.deliveryApprovers,
     },
   };
   const writingEvidence = writing.selectedMode === 'human' ? {
@@ -140,5 +153,5 @@ export function recordDiagnosticGovernanceApprovals({
       approvedBy: validated.privacyApprover,
     },
   };
-  return { nextEvidence, nextRetentionPolicy, nextPilotCriteria };
+  return { nextEvidence, nextRetentionPolicy, nextPilotCriteria, nextDeliveryPolicy };
 }

@@ -55,6 +55,55 @@ export interface DiagnosticDataDeletionReceipt {
   remainingAttempts: 0;
 }
 
+export interface DiagnosticPriorExposure {
+  objectiveItemIds: readonly string[];
+  writingPromptIds: readonly string[];
+}
+
+export async function loadDiagnosticPriorExposure(input: {
+  userId: string;
+  language: 'en';
+  since: Date;
+  excludeAttemptId?: string;
+}): Promise<DiagnosticPriorExposure> {
+  if (!input.userId || !Number.isFinite(input.since.getTime())) {
+    throw new Error('diagnostic_exposure_query_invalid');
+  }
+  const admin = createAdminClient();
+  let attemptQuery = admin.from('diagnostic_attempts')
+    .select('id')
+    .eq('user_id', input.userId)
+    .eq('language', input.language)
+    .gte('started_at', input.since.toISOString())
+    .order('started_at', { ascending: false })
+    .limit(101);
+  if (input.excludeAttemptId) attemptQuery = attemptQuery.neq('id', input.excludeAttemptId);
+  const { data: attempts, error: attemptError } = await attemptQuery;
+  if (attemptError) throw new Error('diagnostic_exposure_unavailable');
+  if ((attempts ?? []).length > 100) throw new Error('diagnostic_exposure_history_too_large');
+  const attemptIds = (attempts ?? []).map(row => String(row.id));
+  if (!attemptIds.length) return { objectiveItemIds: [], writingPromptIds: [] };
+  const { data: stages, error: stageError } = await admin.from('diagnostic_stages')
+    .select('kind,item_ids')
+    .eq('user_id', input.userId)
+    .in('attempt_id', attemptIds)
+    .limit(401);
+  if (stageError || !Array.isArray(stages) || stages.length > 400) {
+    throw new Error('diagnostic_exposure_unavailable');
+  }
+  const objectiveItemIds = new Set<string>();
+  const writingPromptIds = new Set<string>();
+  for (const stage of stages) {
+    if (!Array.isArray(stage.item_ids)) throw new Error('diagnostic_exposure_unavailable');
+    const target = stage.kind === 'writing' ? writingPromptIds : objectiveItemIds;
+    stage.item_ids.forEach(itemId => target.add(String(itemId)));
+  }
+  return {
+    objectiveItemIds: [...objectiveItemIds].sort(),
+    writingPromptIds: [...writingPromptIds].sort(),
+  };
+}
+
 export async function hasDiagnosticPilotEnrollment(input: {
   userId: string;
   pilotConsentVersion: string;
@@ -298,7 +347,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
     { data: responses, error: responsesError },
   ] = await Promise.all([
     admin.from('diagnostic_attempts')
-      .select('id,user_id,version,status,bank_version,blueprint_version,engine_version')
+      .select('id,user_id,version,status,bank_version,blueprint_version,engine_version,result_validity_days')
       .eq('id', attemptId).maybeSingle(),
     admin.from('diagnostic_writing_evaluations')
       .select('prompt_id,content_version,response_text,status,automated_evaluation,human_evaluation').eq('attempt_id', attemptId).maybeSingle(),
@@ -319,6 +368,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
       id: String(attempt.id), userId: String(attempt.user_id), version: Number(attempt.version),
       status: String(attempt.status), bankVersion: String(attempt.bank_version),
       blueprintVersion: String(attempt.blueprint_version), engineVersion: String(attempt.engine_version),
+      resultValidityDays: Number(attempt.result_validity_days),
     },
     promptId: String(writing.prompt_id), promptContentVersion: String(writing.content_version),
     responseText: writing.response_text,
@@ -424,6 +474,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
   bankVersion: string;
   blueprintVersion: string;
   engineVersion: string;
+  exposureLookbackDays: number;
 } | null> {
   const admin = createAdminClient();
   const [
@@ -432,7 +483,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
     { data: priorResponses, error: responsesError },
   ] = await Promise.all([
     admin.from('diagnostic_attempts')
-      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version')
+      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version,exposure_lookback_days')
       .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
     admin.from('diagnostic_stages')
       .select('id,attempt_id,user_id,stage_index,kind,route_id,status,item_ids,content_versions,selection_receipt,issued_at,completed_at')
@@ -443,7 +494,9 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
   ]);
   if (attemptError || stageError || responsesError) throw new Error('diagnostic_persistence_unavailable');
   if (!attempt || !stage) return null;
-  if (!Number.isInteger(attempt.version) || !Array.isArray(stage.item_ids)
+  if (!Number.isInteger(attempt.version) || !Number.isInteger(attempt.exposure_lookback_days)
+    || attempt.exposure_lookback_days < 1 || attempt.exposure_lookback_days > 730
+    || !Array.isArray(stage.item_ids)
     || !Number.isInteger(stage.stage_index)
     || !stage.content_versions || typeof stage.content_versions !== 'object'
     || !Array.isArray(priorResponses)
@@ -477,6 +530,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
     bankVersion: String(attempt.bank_version),
     blueprintVersion: String(attempt.blueprint_version),
     engineVersion: String(attempt.engine_version),
+    exposureLookbackDays: Number(attempt.exposure_lookback_days),
   };
 }
 
@@ -490,6 +544,12 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
     p_engine_version: input.engineVersion,
     p_consent_version: input.consentVersion,
     p_consented_at: input.consentedAt,
+    p_delivery_policy_version: input.deliveryPolicyVersion,
+    p_access_mode: input.accessMode,
+    p_minimum_days_between_completed: input.minimumDaysBetweenCompletedAttempts,
+    p_maximum_concurrent_active: input.maximumConcurrentActiveAttempts,
+    p_exposure_lookback_days: input.exposureLookbackDays,
+    p_result_validity_days: input.resultValidityDays,
     p_selection_seed_hash: input.selectionSeedHash,
     p_expires_at: input.expiresAt,
     p_stage_id: input.stage.stageId,
@@ -499,6 +559,9 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
   });
   if (error) {
     console.error('[diagnostic] Atomic attempt creation failed:', error.message);
+    const known = ['diagnostic_attempt_active_limit', 'diagnostic_attempt_cooldown']
+      .find(code => error.message.includes(code));
+    if (known) throw new Error(known);
     throw new Error('diagnostic_persistence_unavailable');
   }
 }

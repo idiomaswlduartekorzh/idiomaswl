@@ -372,6 +372,8 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
   const globalRange = Array.isArray(safe.globalRange) ? safe.globalRange.map(String) : [];
   const skills = Array.isArray(safe.skills) ? safe.skills.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>) : [];
   const warnings = Array.isArray(safe.warnings) ? safe.warnings.map(String) : [];
+  const validUntil = typeof safe.validUntil === 'string' && Number.isFinite(Date.parse(safe.validUntil))
+    ? new Date(safe.validUntil) : null;
   const recommendations = Array.isArray(safe.recommendations)
     ? safe.recommendations.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>)
     : [];
@@ -398,17 +400,19 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
       </div>;
     })}</div></>}
     {warnings.length > 0 && <p className={s.note}>Advertencias del perfil: {warnings.join(' · ')}</p>}
+    {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
-    <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
+    <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
   </div></section>;
 }
 
-function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations, warnings }: {
+function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations, warnings, validUntil }: {
   globalLevel: string | null;
   globalRange: string[];
   skills: Record<string, unknown>[];
   recommendations: Record<string, unknown>[];
   warnings: string[];
+  validUntil: Date | null;
 }) {
   const [creating, setCreating] = useState(false);
   async function download() {
@@ -425,6 +429,7 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
       };
       line('Nivel Radar WeLearn — perfil integral', 17);
       line(`Nivel global: ${globalLevel ?? 'no estimado'}${globalRange.length === 2 ? ` · rango plausible ${globalRange[0]}–${globalRange[1]}` : ''}`, 12);
+      if (validUntil) line(`Vigente como orientación hasta ${validUntil.toLocaleDateString('es-CO')}.`);
       line('Habilidades', 13);
       for (const skill of skills) {
         const name = String(skill.skill ?? 'skill');

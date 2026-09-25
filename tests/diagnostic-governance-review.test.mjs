@@ -22,6 +22,7 @@ const snapshots = {
   'writing-operations': 'a'.repeat(64),
   'retention-policy': 'b'.repeat(64),
   'pilot-criteria': 'c'.repeat(64),
+  'delivery-policy': 'd'.repeat(64),
 };
 const reviewedAt = '2026-09-25T12:00:00.000Z';
 
@@ -43,9 +44,9 @@ function completedPackets() {
     }));
 }
 
-test('scaffold creates five independent fail-closed review packets without preselected decisions', () => {
+test('scaffold creates seven independent fail-closed review packets without preselected decisions', () => {
   const packets = buildDiagnosticGovernanceReviewPackets({ snapshots, generatedAt: reviewedAt });
-  assert.equal(packets.length, 5);
+  assert.equal(packets.length, 7);
   assert.ok(packets.every(packet => packet.decision === null && packet.reviewerId === null));
   assert.deepEqual(packets.map(packet => `${packet.topic}:${packet.role}`), [
     'writing-operations:academic-lead',
@@ -53,13 +54,15 @@ test('scaffold creates five independent fail-closed review packets without prese
     'retention-policy:privacy-lead',
     'pilot-criteria:academic-lead',
     'pilot-criteria:measurement-lead',
+    'delivery-policy:academic-lead',
+    'delivery-policy:product-owner',
   ]);
 });
 
 test('governance compilation requires exact snapshots, independent roles and one writing model', () => {
   const manifest = compileDiagnosticGovernanceReviews({ receipts: completedPackets(), snapshots });
   assert.equal(manifest.decision, 'APPROVED');
-  assert.equal(manifest.safeguards.reviewerIdentityCount, 5);
+  assert.equal(manifest.safeguards.reviewerIdentityCount, 7);
   assert.equal(manifest.topics['writing-operations'].reviews[0].details.selectedMode, 'human');
 
   const duplicated = completedPackets();
@@ -83,7 +86,7 @@ test('changed snapshots and incomplete operational evidence cannot be approved',
 test('executable compiler recomputes current snapshots and keeps every artifact private', () => {
   const root = fileURLToPath(new URL('..', import.meta.url));
   const current = diagnosticGovernanceSnapshots(root);
-  assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria']);
+  assert.deepEqual(Object.keys(current), ['writing-operations', 'retention-policy', 'pilot-criteria', 'delivery-policy']);
   assert.ok(Object.values(current).every(value => /^[a-f0-9]{64}$/u.test(value)));
   const compiler = readFileSync(new URL('../scripts/compile-diagnostic-governance-review.mjs', import.meta.url), 'utf8');
   assert.match(compiler, /assertPrivate\(inputRoot/);
@@ -109,7 +112,7 @@ function approvedManifestFixture() {
   return { manifest: { ...core, manifestSha256 }, manifestSha256, receiptFiles };
 }
 
-test('approved manifest can record only the reviewed human-writing, retention and pilot decisions', () => {
+test('approved manifest records only reviewed writing, retention, pilot and delivery decisions', () => {
   const fixture = approvedManifestFixture();
   const validated = validateDiagnosticGovernanceManifest({ ...fixture, snapshots });
   const result = recordDiagnosticGovernanceApprovals({
@@ -125,6 +128,10 @@ test('approved manifest can record only the reviewed human-writing, retention an
     },
     retentionPolicy: { policyVersion: 'english-diagnostic-retention-proposal-v1', status: 'proposal-pending-privacy-approval' },
     pilotCriteria: { criteriaVersion: 'english-diagnostic-pilot-criteria-v2', status: 'provisional-pending-academic-approval' },
+    deliveryPolicy: {
+      policyVersion: 'english-diagnostic-delivery-policy-v1',
+      status: 'provisional-pending-academic-and-product-approval', approval: null,
+    },
     validated,
     recordedAt: reviewedAt,
     appliedBy: 'release-operator',
@@ -135,6 +142,10 @@ test('approved manifest can record only the reviewed human-writing, retention an
   assert.equal(result.nextRetentionPolicy.status, 'approved');
   assert.equal(result.nextPilotCriteria.status, 'approved');
   assert.equal(result.nextPilotCriteria.approval.manifestSha256, fixture.manifestSha256);
+  assert.equal(result.nextDeliveryPolicy.status, 'approved');
+  assert.deepEqual(result.nextDeliveryPolicy.approval.approvedBy, [
+    'academic-lead:reviewer-6', 'product-owner:reviewer-7',
+  ]);
 });
 
 test('governance recorder rejects a changed manifest or source receipt', () => {

@@ -3,6 +3,7 @@ import 'server-only';
 import { randomUUID } from 'node:crypto';
 
 import { DIAGNOSTIC_CONSENT_VERSION, type DiagnosticStartRequest } from '@/lib/diagnostic/delivery';
+import deliveryPolicy from '../../../config/diagnostic/delivery-policy.json' with { type: 'json' };
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import { createClient } from '@/lib/supabase/server';
 import {
@@ -10,9 +11,17 @@ import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
   ENGLISH_DIAGNOSTIC_WRITING_BANK,
 } from './bank';
-import { hasDiagnosticPilotEnrollment, persistCreatedDiagnosticAttempt } from './repository.server';
+import {
+  hasDiagnosticPilotEnrollment,
+  loadDiagnosticPriorExposure,
+  persistCreatedDiagnosticAttempt,
+} from './repository.server';
 import { getDiagnosticProductionReleaseReadiness } from './release-runtime';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from './start-core';
+import {
+  diagnosticDeliveryRules,
+  type DiagnosticDeliveryPolicy,
+} from './delivery-policy';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 
@@ -43,6 +52,13 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   const accessMode = process.env.DIAGNOSTIC_ACCESS_MODE;
   if (accessMode !== 'pilot' && accessMode !== 'production') {
     console.error('[diagnostic] Missing or invalid diagnostic access mode.');
+    return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
+  }
+  let deliveryRules;
+  try {
+    deliveryRules = diagnosticDeliveryRules(deliveryPolicy as DiagnosticDeliveryPolicy, accessMode);
+  } catch (cause) {
+    console.error('[diagnostic] Delivery policy rejected:', cause instanceof Error ? cause.message : 'unknown');
     return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
   }
   if (accessMode === 'production') {
@@ -94,18 +110,37 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   if (!allowed) return jsonError('RATE_LIMITED', 'Alcanzaste el límite de intentos por ahora.', 429);
 
   try {
+    const startedAt = new Date();
+    const priorExposure = await loadDiagnosticPriorExposure({
+      userId: user.id,
+      language: 'en',
+      since: new Date(startedAt.getTime() - deliveryRules.exposureLookbackDays * 86_400_000),
+    });
     const delivery = await prepareEnglishDiagnosticAttempt(user.id, {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       bankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
       consentVersion: DIAGNOSTIC_CONSENT_VERSION,
+      deliveryPolicyVersion: deliveryPolicy.policyVersion,
+      accessMode,
+      minimumDaysBetweenCompletedAttempts: deliveryRules.minimumDaysBetweenCompletedAttempts,
+      maximumConcurrentActiveAttempts: deliveryRules.maximumConcurrentActiveAttempts,
+      exposureLookbackDays: deliveryRules.exposureLookbackDays,
+      resultValidityDays: deliveryRules.resultValidityDays,
+      excludedObjectiveItemIds: new Set(priorExposure.objectiveItemIds),
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
-      now: () => new Date(),
+      now: () => startedAt,
       newId: randomUUID,
       persist: persistCreatedDiagnosticAttempt,
     });
     return Response.json({ ok: true, delivery }, { status: 201, headers: NO_STORE_HEADERS });
   } catch (error) {
+    if (error instanceof Error && error.message.includes('diagnostic_attempt_active_limit')) {
+      return jsonError('ACTIVE_ATTEMPT_EXISTS', 'Ya tienes un diagnóstico activo. Continúalo antes de iniciar otro.', 409);
+    }
+    if (error instanceof Error && error.message.includes('diagnostic_attempt_cooldown')) {
+      return jsonError('RETAKE_NOT_YET_AVAILABLE', 'Tu próximo diagnóstico aún no está disponible.', 429);
+    }
     if (error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY') {
       return jsonError(error.code, 'El banco diagnóstico todavía está en revisión académica.', 503);
     }

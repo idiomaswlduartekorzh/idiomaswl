@@ -23,6 +23,7 @@ import {
 } from './continue-core';
 import {
   loadDiagnosticObjectiveSubmissionContext,
+  loadDiagnosticPriorExposure,
   persistDiagnosticObjectiveStage,
   persistDiagnosticWritingSubmission,
 } from './repository.server';
@@ -123,6 +124,13 @@ export async function handleDiagnosticStageSubmission(
     if (!['locator', 'precision', 'confirmation', 'writing'].includes(context.stage.kind) || context.stage.stageId !== identifiers.stageId) {
       return jsonError('STAGE_OUT_OF_ORDER', 'La etapa ya no está activa.', 409);
     }
+    const submissionTime = new Date();
+    const priorExposure = await loadDiagnosticPriorExposure({
+      userId: user.id,
+      language: 'en',
+      since: new Date(submissionTime.getTime() - context.exposureLookbackDays * 86_400_000),
+      excludeAttemptId: context.attempt.id,
+    });
     if (context.stage.kind === 'writing') {
       if (selectedWritingBankVersion(context.selectionReceipt) !== ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION) {
         return jsonError('VERSION_UNAVAILABLE', 'Esta versión de la consigna ya no está disponible.', 409);
@@ -151,9 +159,11 @@ export async function handleDiagnosticStageSubmission(
     const sharedDependencies = {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
-      now: () => new Date(),
+      now: () => submissionTime,
       newId: randomUUID,
       persist: persistDiagnosticObjectiveStage,
+      excludedObjectiveItemIds: new Set(priorExposure.objectiveItemIds),
+      excludedWritingPromptIds: new Set(priorExposure.writingPromptIds),
     };
     let result;
     if (context.stage.kind === 'locator') {
@@ -196,6 +206,9 @@ export async function handleDiagnosticStageSubmission(
   } catch (error) {
     const message = error instanceof Error ? error.message : 'unknown';
     if (message.includes('expired')) return jsonError('ATTEMPT_EXPIRED', 'El intento expiró.', 410);
+    if (message.includes('bank exhausted')) {
+      return jsonError('BANK_NOT_READY', 'El banco diagnóstico no puede generar otra etapa válida.', 503);
+    }
     if (message.includes('out of order') || message.includes('out_of_order')
       || message.includes('version conflict') || message.includes('version_conflict')
       || message.includes('already_completed')) {

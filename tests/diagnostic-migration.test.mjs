@@ -6,6 +6,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925000447_diagnostic_attempts.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925013000_diagnostic_confirmation_status.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
@@ -52,4 +53,11 @@ test('attempts bind general consent while external writing processing defaults c
   assert.match(sql, /consent_version is not null[\s\S]+?char_length\(consent_version\)/);
   assert.match(sql, /external_writing_processing_consent = false[\s\S]+?external_writing_consent_version is null/);
   assert.match(sql, /external_writing_processing_consent = true[\s\S]+?external_writing_consent_version is not null[\s\S]+?external_writing_provider_policy_version is not null/);
+});
+
+test('attempts bind the delivery policy and result-validity window used at creation', () => {
+  assert.match(sql, /add column delivery_policy_version text not null/);
+  assert.match(sql, /add column access_mode text not null/);
+  assert.match(sql, /add column result_validity_days smallint not null/);
+  assert.match(sql, /add column exposure_lookback_days smallint not null/);
 });

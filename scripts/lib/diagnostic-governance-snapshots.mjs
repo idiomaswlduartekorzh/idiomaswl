@@ -37,5 +37,6 @@ export function diagnosticGovernanceSnapshots(root) {
     'writing-operations': writing.digest('hex'),
     'retention-policy': reviewableDocumentSha256(root, 'config/diagnostic/data-retention-policy.json'),
     'pilot-criteria': reviewableDocumentSha256(root, 'config/diagnostic/pilot-publication-criteria.json'),
+    'delivery-policy': reviewableDocumentSha256(root, 'config/diagnostic/delivery-policy.json'),
   };
 }

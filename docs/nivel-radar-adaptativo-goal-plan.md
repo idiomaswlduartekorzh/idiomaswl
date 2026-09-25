@@ -234,6 +234,16 @@ Actualizado el 25 de septiembre de 2026:
   inmediato. El hash del banco liga ahora estado, exposición, revisión y parámetros, de modo que
   retirar o recalibrar invalida automáticamente piloto y release anteriores. El manifiesto
   comprometido permanece vacío: esta infraestructura no inventa retiros ni firmas.
+- **Fase 8 — política de entrega y repetición implementada, aprobación pendiente:** una política
+  versionada separa piloto y producción. El inicio limita atómicamente los intentos activos y el
+  cooldown por usuario; cada intento conserva la ventana de exposición y la vigencia exactas que
+  se aplicaron. El servidor consulta material entregado al mismo usuario e idioma dentro de esa
+  ventana y lo excluye del locator, precisión, confirmación y escritura; si la historia excede el
+  límite auditable o el banco no tiene reemplazos, no degrada silenciosamente y falla cerrado.
+  El resultado comunica una fecha `validUntil` como orientación, no como certificación oficial.
+  Los valores provisionales son 365 días sin repetir contenido, vigencia de 30 días en piloto y
+  180 en producción, con cooldown productivo de 90 días. Producción permanece bloqueada hasta
+  revisión independiente de liderazgo académico y producto.
 - **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
   el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
   confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`
@@ -279,16 +289,18 @@ Actualizado el 25 de septiembre de 2026:
   `4abcb1876b0dae81b425847f496f855aa58285f03c053a23e188982cc5244a2e` y el recibo privado
   `d2df7bc4f024b2ddf7a5afa4d6d46bfa8e23cb1e852bb1e8e5b44c95f06e093b` dejan el gate de
   calidad atado exactamente a ese código.
-- **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce cinco
-  paquetes hash-bound para escritura, retención y criterios de piloto. Escritura requiere
+- **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
+  paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.
+  Escritura requiere
   revisiones independientes académica y operativa y, si se elige modo humano, dos referencias
   verificables de revisores con SLA máximo de 72 horas. Retención exige privacidad y los umbrales
-  del piloto exigen revisiones académica y de medición. Los paquetes nacen sin decisión ni modo
+  del piloto exigen revisiones académica y de medición; entrega exige revisiones académica y de
+  producto. Los paquetes nacen sin decisión ni modo
   seleccionado; una huella distinta, identidades duplicadas o desacuerdo operativo invalida la
   compilación. El compilador ejecutable recalcula las huellas actuales y conserva manifiesto y
   hashes de recibos únicamente en staging privado. Falta completar esos recibos por personas
   autorizadas. Un registrador dry-run valida nuevamente manifiesto y archivos originales; solo
-  con confirmación hash-bound y operador identificado puede trasladar las tres decisiones exactas
+  con confirmación hash-bound y operador identificado puede trasladar las cuatro decisiones exactas
   a la configuración. Nunca aprueba contenido, borrado real ni resultados del piloto.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de

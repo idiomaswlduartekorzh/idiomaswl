@@ -24,6 +24,7 @@ export interface DiagnosticScoringAttempt {
   bankVersion: string;
   blueprintVersion: string;
   engineVersion: string;
+  resultValidityDays: number;
 }
 
 export interface PersistDiagnosticFinalizationInput {
@@ -54,6 +55,10 @@ export async function finalizeEnglishDiagnostic(input: {
 }): Promise<{ replayed: boolean; version: number; resultProfile: ReturnType<typeof buildDiagnosticCompositeResult> }> {
   if (!input.authenticatedAdminId) throw new Error('diagnostic administrator identity is required');
   if (input.attempt.status !== 'scoring') throw new Error('diagnostic attempt is not awaiting scoring');
+  if (!Number.isInteger(input.attempt.resultValidityDays)
+    || input.attempt.resultValidityDays < 1 || input.attempt.resultValidityDays > 730) {
+    throw new Error('diagnostic result validity policy is invalid');
+  }
   if (input.attempt.bankVersion !== dependencies.objectiveBankVersion
     || input.attempt.blueprintVersion !== ENGLISH_DIAGNOSTIC_BLUEPRINT.id
     || input.attempt.engineVersion !== DIAGNOSTIC_ENGINE_VERSION) {
@@ -91,12 +96,14 @@ export async function finalizeEnglishDiagnostic(input: {
     input.observations.filter(observation => bankById.get(observation.itemId)?.publicItem.skill === skill),
     ENGLISH_PILOT_CALIBRATION,
   ));
+  const generatedAt = dependencies.now();
   const resultProfile = buildDiagnosticCompositeResult({
     attemptId: input.attempt.id,
     blueprintVersion: input.attempt.blueprintVersion,
     bankVersion: input.attempt.bankVersion,
     skills: [...objectiveEvidence, writing],
-    generatedAt: dependencies.now().toISOString(),
+    generatedAt: generatedAt.toISOString(),
+    validUntil: new Date(generatedAt.getTime() + input.attempt.resultValidityDays * 24 * 60 * 60 * 1_000).toISOString(),
   });
   const persisted = await dependencies.persist({
     attempt: input.attempt,

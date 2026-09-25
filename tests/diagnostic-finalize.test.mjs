@@ -17,6 +17,7 @@ const responseText = 'The library should open later because working students nee
 const attempt = {
   id: 'attempt-1', userId: 'student-1', version: 4, status: 'scoring', bankVersion,
   blueprintVersion: ENGLISH_DIAGNOSTIC_BLUEPRINT.id, engineVersion: DIAGNOSTIC_ENGINE_VERSION,
+  resultValidityDays: 30,
 };
 
 function evaluation(evaluator, levels = ['B1', 'B1', 'B1', 'B1']) {
@@ -71,6 +72,7 @@ test('finalizes all five skills and persists one versioned result', async () => 
   assert.equal(result.resultProfile.skills.length, 5);
   assert.equal(result.resultProfile.globalLevel, 'B2');
   assert.equal(result.resultProfile.overallStatus, 'provisional');
+  assert.equal(result.resultProfile.validUntil, '2026-10-25T13:00:00.000Z');
   assert.equal(persisted.finalEvidence.writing.reviewStatus, 'human-reviewed');
   assert.equal(persisted.resultProfile.attemptId, attempt.id);
 });

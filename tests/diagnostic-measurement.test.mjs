@@ -80,6 +80,7 @@ test('global result is withheld until all five skills have evidence', () => {
   const result = buildDiagnosticCompositeResult({
     attemptId: 'attempt-1', blueprintVersion: 'blueprint-1', bankVersion: 'bank-1', skills: incomplete,
     generatedAt: '2026-09-24T12:00:00.000Z',
+    validUntil: '2027-03-23T12:00:00.000Z',
   });
   assert.equal(result.globalLevel, null);
   assert.equal(result.overallStatus, 'not-estimated');
@@ -95,6 +96,7 @@ test('a two-level skill spread remains explicit in the composite result', () => 
   const result = buildDiagnosticCompositeResult({
     attemptId: 'attempt-2', blueprintVersion: 'blueprint-1', bankVersion: 'bank-1', skills,
     generatedAt: '2026-09-24T12:00:00.000Z',
+    validUntil: '2027-03-23T12:00:00.000Z',
   });
   assert.equal(result.globalLevel, 'B1');
   assert.equal(result.profileIsUneven, true);

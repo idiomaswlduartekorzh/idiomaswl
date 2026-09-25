@@ -72,9 +72,19 @@ function readyFixture() {
       policyVersion: 'retention-v1', status: 'approved',
       approval: { manifestSha256: governanceManifestSha256, snapshotSha256: 'retention-snapshot' },
     },
+    deliveryPolicy: {
+      policyVersion: 'english-diagnostic-delivery-policy-v1', status: 'approved',
+      approval: {
+        manifestSha256: governanceManifestSha256, snapshotSha256: 'delivery-snapshot',
+        approvedAt: reviewedAt,
+        approvedBy: ['academic-lead:academic-reviewer', 'product-owner:product-reviewer'],
+        appliedBy: 'release-operator',
+      },
+    },
     releaseEvidence: {
       evidenceVersion: 'english-diagnostic-release-evidence-v1',
       updatedAt: reviewedAt,
+      governanceApplication: { manifestSha256: governanceManifestSha256 },
       database: {
         appliedThroughMigration: 'latest.sql', authenticatedFlowVerified: true,
         verifiedAt: reviewedAt, verifiedBy: 'db-reviewer',
@@ -145,6 +155,7 @@ function readyFixture() {
       'writing-operations': 'writing-snapshot',
       'retention-policy': 'retention-snapshot',
       'pilot-criteria': 'pilot-snapshot',
+      'delivery-policy': 'delivery-snapshot',
     },
     activation: { engineEnabled: false, uiEnabled: false },
   };
@@ -158,6 +169,7 @@ test('the committed repository remains on HOLD with explicit independent blocker
   fixture.voiceCasting = json('../config/diagnostic/english-listening-voice-casting.json');
   fixture.pilotCriteria = json('../config/diagnostic/pilot-publication-criteria.json');
   fixture.retentionPolicy = json('../config/diagnostic/data-retention-policy.json');
+  fixture.deliveryPolicy = json('../config/diagnostic/delivery-policy.json');
   fixture.releaseEvidence = json('../config/diagnostic/release-evidence.json');
   fixture.pilotReport = null;
   fixture.pilotReportSha256 = null;
@@ -166,9 +178,10 @@ test('the committed repository remains on HOLD with explicit independent blocker
   assert.equal(report.decision, 'HOLD');
   assert.equal(report.releaseReady, false);
   assert.ok(report.summary.blockerCount >= 10);
-  assert.equal(report.gates.find(candidate => candidate.id === 'governance').status, 'PASS');
-  assert.ok(report.gates.filter(candidate => candidate.id !== 'governance')
-    .every(candidate => candidate.status === 'HOLD'));
+  assert.deepEqual(report.gates.find(candidate => candidate.id === 'governance').blockers, [
+    'DELIVERY_POLICY_NOT_APPROVED',
+  ]);
+  assert.ok(report.gates.every(candidate => candidate.status === 'HOLD'));
 });
 
 test('all independent evidence gates produce READY_TO_ENABLE before flags are switched on', () => {

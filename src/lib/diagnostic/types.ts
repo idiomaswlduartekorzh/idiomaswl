@@ -87,4 +87,5 @@ export interface DiagnosticResultProfile {
   globalRange: readonly [CefrLevel, CefrLevel] | null;
   skills: readonly DiagnosticSkillEvidence[];
   generatedAt: string;
+  validUntil: string;
 }

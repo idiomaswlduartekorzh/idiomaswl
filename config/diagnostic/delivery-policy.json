@@ -1,0 +1,25 @@
+{
+  "policyVersion": "english-diagnostic-delivery-policy-v1",
+  "status": "provisional-pending-academic-and-product-approval",
+  "language": "en",
+  "pilot": {
+    "maximumConcurrentActiveAttempts": 1,
+    "minimumDaysBetweenCompletedAttempts": 0,
+    "exposureLookbackDays": 365,
+    "resultValidityDays": 30,
+    "scheduledRetestAllowed": true
+  },
+  "production": {
+    "maximumConcurrentActiveAttempts": 1,
+    "minimumDaysBetweenCompletedAttempts": 90,
+    "exposureLookbackDays": 365,
+    "resultValidityDays": 180,
+    "scheduledRetestAllowed": false
+  },
+  "approval": null,
+  "notes": [
+    "These values are a product and academic proposal, not an approved operating policy.",
+    "Pilot retests remain possible for documented reliability studies; production cooldown is enforced atomically.",
+    "Result validity is reported as an expiry date and does not represent an official language certificate."
+  ]
+}

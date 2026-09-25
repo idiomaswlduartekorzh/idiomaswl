@@ -173,7 +173,12 @@ export function buildDiagnosticCompositeResult(input: {
   bankVersion: string;
   skills: readonly DiagnosticSkillEvidence[];
   generatedAt: string;
+  validUntil: string;
 }): DiagnosticCompositeResult {
+  if (Number.isNaN(Date.parse(input.generatedAt)) || Number.isNaN(Date.parse(input.validUntil))
+    || Date.parse(input.validUntil) <= Date.parse(input.generatedAt)) {
+    throw new Error('diagnostic result validity window is invalid');
+  }
   const warnings: string[] = [];
   const levelIndexes = input.skills.flatMap(skill => skill.estimatedLevel ? [CEFR_LEVELS.indexOf(skill.estimatedLevel)] : []);
   const allSkillsEstimated = input.skills.length === 5 && input.skills.every(skill => skill.status !== 'not-estimated' && skill.estimatedLevel);

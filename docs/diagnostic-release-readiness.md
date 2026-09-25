@@ -40,6 +40,15 @@ exige un certificado `ready`, `DIAGNOSTIC_RELEASE_ID`, la huella
 `DIAGNOSTIC_RELEASE_SOURCE_SHA256` y el hash del banco actual. El certificado comprometido nace
 en `hold` y el prebuild rechaza certificados malformados o viejos.
 
+La entrega queda además ligada a `config/diagnostic/delivery-policy.json`. La propuesta v1
+permite retests programados en piloto, pero en producción fija un único intento activo, 90 días
+entre intentos completados y 180 días de vigencia orientativa del resultado. Ambos canales
+excluyen durante 365 días los ítems y consignas ya entregados al mismo usuario e idioma. La
+ventana aplicada se copia al intento, la creación aplica concurrencia y cooldown dentro de una
+transacción con bloqueo por usuario, y una historia demasiado grande o un banco sin reemplazos
+falla cerrado. Estos números siguen siendo una propuesta: producción rechaza la política hasta
+que liderazgo académico y producto aprueben el snapshot exacto.
+
 ## Evidencia que nunca se infiere
 
 El archivo `config/diagnostic/release-evidence.json` nace cerrado. No se debe completar a partir
@@ -195,37 +204,38 @@ invalida el recibo.
 
 ### Revisión humana de gobierno
 
-Las decisiones que no son mecánicas se preparan como cinco revisiones independientes y nacen
+Las decisiones que no son mecánicas se preparan como siete revisiones independientes y nacen
 vacías, sin modo de escritura ni aprobación preseleccionados:
 
 ```bash
 npm run scaffold:diagnostic-governance-review
-# después de completar los cinco archivos de forma independiente:
+# después de completar los siete archivos de forma independiente:
 npm run compile:diagnostic-governance-review
 # después de obtener APPROVED, validar el cambio sin escribir:
 npm run record:diagnostic-governance-approvals
 ```
 
 El paquete privado liga cada revisión a una huella exacta: operación de escritura, política de
-retención o umbrales del piloto. Escritura exige acuerdo independiente de liderazgo académico y
-operaciones; retención exige privacidad; los criterios del piloto exigen liderazgo académico y
-medición. Aprobar la ruta humana requiere al menos dos referencias verificables de revisores y
-un SLA máximo de 72 horas. La ruta externa exige referencias separadas para consentimiento y
-revisión de proveedor. Un cambio de documento invalida automáticamente sus recibos.
+retención, umbrales del piloto o política de entrega. Escritura exige acuerdo independiente de
+liderazgo académico y operaciones; retención exige privacidad; los criterios del piloto exigen
+liderazgo académico y medición; entrega exige liderazgo académico y producto. Aprobar la ruta
+humana requiere al menos dos referencias verificables de revisores y un SLA máximo de 72 horas.
+La ruta externa exige referencias separadas para consentimiento y revisión de proveedor. Un
+cambio de documento invalida automáticamente sus recibos.
 
-Los paquetes son preparación, no aprobación. El compilador vuelve a calcular las tres huellas,
-exige exactamente los cinco roles, impide identidades duplicadas dentro de cada tema y comprueba
+Los paquetes son preparación, no aprobación. El compilador vuelve a calcular las cuatro huellas,
+exige exactamente los siete roles, impide identidades duplicadas dentro de cada tema y comprueba
 que los dos revisores de escritura aprobaron el mismo modelo operativo. El manifiesto y los hashes
 de cada recibo permanecen bajo `.diagnostic-private/`. Mientras ese proceso no termine con
 `APPROVED`, ningún gate cambia de estado.
 
-El registrador también es dry run por defecto. Solo acepta el manifiesto y los cinco archivos
+El registrador también es dry run por defecto. Solo acepta el manifiesto y los siete archivos
 originales intactos, recalcula las huellas vigentes y exige una confirmación ligada al hash del
 manifiesto, `--write` y `--applied-by=<operador>`. Al aplicarse, puede registrar únicamente el
-modo de escritura aprobado, la política de retención exacta y el estado aprobado de los criterios
-del piloto. No marca el borrado como probado, no aprueba el banco y no valida resultados del
-piloto. Cambiar cualquier regla o umbral después de la aprobación invalida su snapshot aunque los
-metadatos de aprobación cambien.
+modo de escritura aprobado, las políticas exactas de retención y entrega y el estado aprobado de
+los criterios del piloto. No marca el borrado como probado, no aprueba el banco y no valida
+resultados del piloto. Cambiar cualquier regla o umbral después de la aprobación invalida su
+snapshot aunque los metadatos de aprobación cambien.
 
 ### Aprobación editorial del banco
 

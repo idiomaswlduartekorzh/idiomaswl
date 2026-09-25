@@ -26,6 +26,8 @@ const expectedFiles = [
   'retention-policy--privacy-lead.json',
   'pilot-criteria--academic-lead.json',
   'pilot-criteria--measurement-lead.json',
+  'delivery-policy--academic-lead.json',
+  'delivery-policy--product-owner.json',
 ];
 const snapshots = diagnosticGovernanceSnapshots(root);
 const receipts = expectedFiles.map(file => {

@@ -63,6 +63,8 @@ export interface ContinueLocatorDependencies {
   selectionSecret: string;
   now: () => Date;
   newId: () => string;
+  excludedObjectiveItemIds?: ReadonlySet<string>;
+  excludedWritingPromptIds?: ReadonlySet<string>;
   persist: (input: PersistObjectiveStageInput) => Promise<{
     replayed: boolean;
     version: number;
@@ -129,7 +131,7 @@ export async function continueEnglishDiagnosticLocator(input: {
     dependencies.bank,
     routeDecision.routeId,
     seed,
-    new Set(input.stage.itemIds),
+    new Set([...(dependencies.excludedObjectiveItemIds ?? []), ...input.stage.itemIds]),
   );
   const nextStage: DiagnosticStageReceipt = {
     stageId: dependencies.newId(),
@@ -226,7 +228,9 @@ async function persistWritingStage(input: {
   if (!input.attempt.routeId) throw new Error('diagnostic route is required before writing');
   const promptLevel = selectWritingLevel(input.attempt.routeId, input.objectiveEvidence);
   const seed = writingSeed(dependencies.selectionSecret, input.attempt.id, promptLevel);
-  const prompt = selectDiagnosticWritingPrompt(dependencies.writingBank, 'en', promptLevel, seed);
+  const prompt = selectDiagnosticWritingPrompt(
+    dependencies.writingBank, 'en', promptLevel, seed, dependencies.excludedWritingPromptIds,
+  );
   const nextStage: DiagnosticStageReceipt & { kind: 'writing' } = {
     stageId: dependencies.newId(),
     kind: 'writing',
@@ -314,7 +318,10 @@ export async function continueEnglishDiagnosticPrecision(input: {
       dependencies.bank,
       input.attempt.routeId,
       seed,
-      new Set(observations.map(observation => observation.itemId)),
+      new Set([
+        ...(dependencies.excludedObjectiveItemIds ?? []),
+        ...observations.map(observation => observation.itemId),
+      ]),
     );
     const nextStage: DiagnosticStageReceipt = {
       stageId: dependencies.newId(), kind: 'confirmation', routeId: input.attempt.routeId,

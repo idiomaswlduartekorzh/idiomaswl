@@ -55,6 +55,10 @@ function locatorFixture() {
 
 test('scores locator server-side and atomically prepares a balanced precision stage', async () => {
   const { selected, stage } = locatorFixture();
+  const priorExposure = new Set(bank
+    .filter(item => ['C1', 'C2'].includes(item.publicItem.levelCandidate)
+      && Number(item.publicItem.id.split('-').at(-1)) > 2)
+    .map(item => item.publicItem.id));
   let persisted;
   const result = await continueEnglishDiagnosticLocator({
     authenticatedUserId: 'user-1',
@@ -67,12 +71,14 @@ test('scores locator server-side and atomically prepares a balanced precision st
     })),
   }, {
     bank, selectionSecret: 's'.repeat(32), now: () => new Date('2026-09-24T13:00:00.000Z'),
+    excludedObjectiveItemIds: priorExposure,
     newId: () => 'stage-precision', persist: async input => { persisted = input; return { replayed: false, version: 2 }; },
   });
   assert.equal(result.routeDecision.routeId, 'high-c1-c2');
   assert.equal(result.delivery.attemptVersion, 2);
   assert.equal(result.delivery.items.length, 16);
   assert.equal(result.delivery.items.some(item => stage.itemIds.includes(item.id)), false);
+  assert.equal(result.delivery.items.some(item => priorExposure.has(item.id)), false);
   assert.equal(persisted.scoredResponses.every(response => response.outcome === 'correct'), true);
   assert.match(persisted.submissionDigest, /^[a-f0-9]{64}$/);
   const serialized = JSON.stringify(result.delivery);
@@ -149,6 +155,9 @@ test('scores precision with prior evidence and atomically delivers a route-appro
     })),
   }, {
     bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    excludedWritingPromptIds: new Set(writingBank
+      .filter(record => !record.publicPrompt.id.endsWith('-4'))
+      .map(record => record.publicPrompt.id)),
     now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'stage-writing',
     persist: async input => { persisted = input; return { replayed: false, version: 3 }; },
   });
@@ -156,6 +165,7 @@ test('scores precision with prior evidence and atomically delivers a route-appro
   assert.equal(result.delivery.stage.stageId, 'stage-writing');
   assert.equal(result.delivery.attemptVersion, 3);
   assert.ok(['B1', 'B2'].includes(result.delivery.prompt.levelCandidate));
+  assert.match(result.delivery.prompt.id, /-4$/);
   assert.equal(result.objectiveEvidence.length, 4);
   assert.equal(result.objectiveEvidence.every(skill => skill.decisions === 7 && skill.status === 'provisional'), true);
   assert.equal(persisted.nextStatus, 'writing');

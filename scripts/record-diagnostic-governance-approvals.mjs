@@ -61,10 +61,12 @@ if (value('confirm') !== confirmation) throw new Error('Governance confirmation 
 const evidencePath = resolve(root, 'config/diagnostic/release-evidence.json');
 const retentionPath = resolve(root, 'config/diagnostic/data-retention-policy.json');
 const criteriaPath = resolve(root, 'config/diagnostic/pilot-publication-criteria.json');
+const deliveryPolicyPath = resolve(root, 'config/diagnostic/delivery-policy.json');
 const result = recordDiagnosticGovernanceApprovals({
   currentEvidence: JSON.parse(readFileSync(evidencePath, 'utf8')),
   retentionPolicy: JSON.parse(readFileSync(retentionPath, 'utf8')),
   pilotCriteria: JSON.parse(readFileSync(criteriaPath, 'utf8')),
+  deliveryPolicy: JSON.parse(readFileSync(deliveryPolicyPath, 'utf8')),
   validated,
   recordedAt,
   appliedBy: value('applied-by'),
@@ -72,4 +74,5 @@ const result = recordDiagnosticGovernanceApprovals({
 writeFileSync(evidencePath, `${JSON.stringify(result.nextEvidence, null, 2)}\n`);
 writeFileSync(retentionPath, `${JSON.stringify(result.nextRetentionPolicy, null, 2)}\n`);
 writeFileSync(criteriaPath, `${JSON.stringify(result.nextPilotCriteria, null, 2)}\n`);
+writeFileSync(deliveryPolicyPath, `${JSON.stringify(result.nextDeliveryPolicy, null, 2)}\n`);
 process.stdout.write(`${JSON.stringify({ ...summary, decision: 'APPLIED', appliedBy: value('applied-by') }, null, 2)}\n`);

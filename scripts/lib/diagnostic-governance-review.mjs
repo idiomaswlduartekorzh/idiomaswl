@@ -4,6 +4,7 @@ const TOPICS = {
   'writing-operations': ['academic-lead', 'operations-lead'],
   'retention-policy': ['privacy-lead'],
   'pilot-criteria': ['academic-lead', 'measurement-lead'],
+  'delivery-policy': ['academic-lead', 'product-owner'],
 };
 
 function canonicalIso(value) {
@@ -98,8 +99,8 @@ export function validateDiagnosticGovernanceReceipt(receipt, expectedSnapshot) {
 }
 
 export function compileDiagnosticGovernanceReviews({ receipts, snapshots }) {
-  if (!Array.isArray(receipts) || receipts.length !== 5) {
-    throw new Error('Exactly five governance receipts are required.');
+  if (!Array.isArray(receipts) || receipts.length !== 7) {
+    throw new Error('Exactly seven governance receipts are required.');
   }
   const validated = receipts.map(receipt =>
     validateDiagnosticGovernanceReceipt(receipt, snapshots?.[receipt?.topic]));

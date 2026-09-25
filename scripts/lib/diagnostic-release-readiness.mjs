@@ -47,6 +47,18 @@ export function buildDiagnosticReleaseReadiness(input) {
     governanceBlockers.push('RELEASE_EVIDENCE_VERSION_INVALID');
   }
   if (!isIsoDate(evidence?.updatedAt)) governanceBlockers.push('RELEASE_EVIDENCE_NOT_ATTESTED');
+  const deliveryApproval = input.deliveryPolicy?.approval;
+  if (input.deliveryPolicy?.status !== 'approved'
+    || input.deliveryPolicy?.policyVersion !== 'english-diagnostic-delivery-policy-v1'
+    || deliveryApproval?.snapshotSha256 !== input.governanceSnapshots?.['delivery-policy']
+    || !SHA256.test(deliveryApproval?.manifestSha256 ?? '')
+    || deliveryApproval?.manifestSha256 !== evidence?.governanceApplication?.manifestSha256
+    || !isIsoDate(deliveryApproval?.approvedAt)
+    || !Array.isArray(deliveryApproval?.approvedBy)
+    || deliveryApproval.approvedBy.length !== 2
+    || !nonEmpty(deliveryApproval?.appliedBy)) {
+    governanceBlockers.push('DELIVERY_POLICY_NOT_APPROVED');
+  }
 
   const contentBlockers = [];
   const approvedSelectableObjectiveDecisions = bank?.summary?.approvedSelectableObjectiveDecisions
@@ -272,6 +284,9 @@ export function buildDiagnosticReleaseReadiness(input) {
     gate('governance', governanceBlockers, {
       evidenceVersion: evidence?.evidenceVersion ?? null,
       updatedAt: evidence?.updatedAt ?? null,
+      deliveryPolicyVersion: input.deliveryPolicy?.policyVersion ?? null,
+      deliveryPolicyStatus: input.deliveryPolicy?.status ?? null,
+      deliveryPolicySnapshot: input.governanceSnapshots?.['delivery-policy'] ?? null,
     }),
     gate('content', contentBlockers, {
       approvedSelectableObjectiveDecisions,
