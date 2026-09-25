@@ -1,0 +1,64 @@
+{
+  "planVersion": "diagnostic-pilot-recruitment-plan-v1",
+  "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
+  "blueprintVersion": "welearn-english-placement-v1",
+  "simulationVersion": "diagnostic-mst-simulation-v1",
+  "status": "planning-floor-not-publication-decision",
+  "assumptions": {
+    "objectiveItems": 288,
+    "minimumResponsesPerItem": 200,
+    "requiredItemResponses": 57600,
+    "minimumCompletionRate": 0.75,
+    "minimumObjectiveDecisionsPerCompletedAttempt": 28,
+    "maximumObjectiveDecisionsPerCompletedAttempt": 36,
+    "simulatedWeightedConfirmationRate": 0.208667,
+    "simulatedExpectedObjectiveDecisionsPerCompletedAttempt": 29.669
+  },
+  "itemCalibrationLowerBounds": {
+    "absoluteBestCase": {
+      "completedAttempts": 1600,
+      "startedAttempts": 2134,
+      "interpretation": "Every completed attempt would need the maximum objective form length and perfectly useful exposure."
+    },
+    "simulationExpectedFormLength": {
+      "completedAttempts": 1942,
+      "startedAttempts": 2590,
+      "interpretation": "Uses the current balanced-cohort routing simulation only; adaptive exposure imbalance can require more."
+    },
+    "withoutConfirmation": {
+      "completedAttempts": 2058,
+      "startedAttempts": 2744,
+      "interpretation": "Assumes every completed attempt receives only locator plus the minimum precision module."
+    }
+  },
+  "routeExposureLowerBounds": {
+    "routes": 3,
+    "objectiveItemsPerRoute": 96,
+    "requiredItemResponsesPerRoute": 19200,
+    "bestCaseCompletedPerRoute": 800,
+    "bestCaseCompletedAcrossRoutes": 2400,
+    "bestCaseStartedAcrossRoutes": 3200,
+    "simulatedExpectedRouteDecisionsPerCompletedAttempt": 17.669,
+    "simulationExpectedCompletedPerRoute": 1087,
+    "simulationExpectedCompletedAcrossRoutes": 3261,
+    "simulationExpectedStartedAcrossRoutes": 4348,
+    "withoutConfirmationCompletedPerRoute": 1200,
+    "withoutConfirmationCompletedAcrossRoutes": 3600,
+    "withoutConfirmationStartedAcrossRoutes": 4800,
+    "configuredMinimumCompletedPerRoute": 60
+  },
+  "specialistEvidenceFloors": {
+    "writingPairs": 50,
+    "independentReferencePairsWithLevelCoverage": 100,
+    "adaptiveReliabilitySamplePerObjectiveSkill": 100,
+    "classificationConsistencySample": 200,
+    "stabilityPairsPerSkill": 50,
+    "fairnessParticipantsAtMinimumGroupCount": 100,
+    "standardSettingPanelists": 3
+  },
+  "warnings": [
+    "minimumStartedAttempts is an entry gate, not a sufficient recruitment target for item calibration.",
+    "These are mathematical lower bounds, not guarantees; routing, attrition and unequal item exposure can only increase recruitment needs.",
+    "Publication remains governed by observed per-item, route, level, reliability, stability, fairness and standard-setting evidence."
+  ]
+}

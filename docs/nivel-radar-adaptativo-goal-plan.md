@@ -216,6 +216,15 @@ Actualizado el 25 de septiembre de 2026:
   escrito ni respuestas. Los valores numéricos son una propuesta que todavía debe aprobar
   liderazgo académico y de medición; no se presentan como umbrales universales prescritos por
   MCER ni por una asociación externa.
+- **Fase 7 — reclutamiento reconciliado con la exposición real:** un plan ejecutable cruza los
+  288 ítems, 200 respuestas por ítem, longitud MST, confirmación simulada, tres rutas y 75% de
+  finalización. Demuestra que 300 iniciados es solo un gate de entrada. El piso global simulado
+  es 2.590 iniciados, pero el piso route-balanced más útil es **4.348 iniciados** —1.087
+  completados por ruta— aun suponiendo exposición perfectamente uniforme. El reporte distingue
+  además escritura, referencia A1–C2, fiabilidad, consistencia, retest, equidad y panelistas. Se
+  regenera desde criterios, blueprint, capacidad y simulación; si cualquiera cambia, el prebuild
+  falla por reporte obsoleto. Los valores son cotas inferiores de planificación, nunca una
+  garantía ni una decisión automática de publicación.
 - **Fase 7 — cadena de custodia del piloto preparada:** un capturador read-only consulta el
   informe agregado desde un despliegue que debe coincidir exactamente con fuente, banco, commit,
   modo `pilot` y proyecto Supabase. Reporte y recibo permanecen privados y omiten filas,

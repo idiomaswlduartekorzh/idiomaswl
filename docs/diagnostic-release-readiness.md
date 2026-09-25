@@ -342,6 +342,22 @@ finalización, comportamiento de ítems, escritura y referencia independiente, e
 - análisis DIF agregado con grupos suficientemente representados y base lícita documentada;
 - standard setting humano de los cinco límites MCER.
 
+El umbral de 300 intentos iniciados es solo una puerta de entrada, no una meta suficiente de
+calibración. El plan reproducible se actualiza con:
+
+```bash
+npm run check:diagnostic-pilot-recruitment
+```
+
+Con 288 ítems y 200 respuestas requeridas por ítem se necesitan 57.600 respuestas objetivas. El
+piso global bajo la longitud media simulada sería 1.942 intentos completados o 2.590 iniciados al
+75% de finalización. Sin embargo, al respetar las tres rutas, el piso simulado y perfectamente
+balanceado asciende a **1.087 completados por ruta, 3.261 completados y 4.348 iniciados**. Incluso
+ese número no es una garantía: desbalance de rutas, exposición adaptativa y attrition solo pueden
+aumentarlo. El artefacto versionado `docs/diagnostic-pilot-recruitment-plan.json` muestra también
+los límites absoluto, sin confirmación y de cada evidencia especializada; la publicación sigue
+dependiendo de muestras observadas, no de alcanzar un número global.
+
 La evidencia especializada vive en un contrato separado y agregado,
 `config/diagnostic/pilot-measurement-evidence.json`. Nace `not-collected` y no incluye etiquetas
 de grupo, participantes ni respuestas. Debe coincidir exactamente con la versión de criterios y
@@ -421,13 +437,14 @@ hasta aplicar la migración, probarla contra la base real y aprobar una versión
 
 ## Orden seguro para cerrar la puerta
 
-1. producir y revisar audio reservado;
-2. completar las revisiones editoriales y compilar el banco piloto;
-3. aplicar migraciones y verificar el recorrido autenticado;
-4. seleccionar y aprobar la operación de escritura;
-5. aprobar privacidad, retención y borrado;
-6. ejecutar el piloto, exportar su informe y revisarlo;
-7. ejecutar suite, build y E2E sobre el commit candidato limpio;
+1. completar las 12 revisiones de preproducción de escucha;
+2. autorizar, producir y revisar audio reservado;
+3. completar las revisiones editoriales y compilar el banco piloto;
+4. aplicar migraciones y verificar el recorrido autenticado;
+5. seleccionar y aprobar la operación de escritura;
+6. aprobar privacidad, retención y borrado;
+7. ejecutar el piloto hasta alcanzar evidencia por ítem, ruta y habilidad, exportar su informe y revisarlo;
+8. ejecutar suite, build y E2E sobre el commit candidato limpio;
 8. completar las atestaciones de `release-evidence.json` y ejecutar el check estricto;
 9. emitir el certificado con `--issue-certificate`, fijar su release ID y huella en el entorno;
 10. activar primero el motor y luego la interfaz con monitoreo de rollback.
