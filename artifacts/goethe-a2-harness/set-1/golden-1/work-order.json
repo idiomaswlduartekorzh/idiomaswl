@@ -4,10 +4,10 @@
   "run": "golden-1",
   "baseCommit": "a1f55f8fe5d03571701ec0b7aafbee448a309f46",
   "fingerprints": {
-    "blueprint": "91d502db39abc8a5fd0e121d48c0022e8524fcfeb2f63fb12ad4f2e118fefbfb",
+    "blueprint": "d157da1e3bb281aef4b6d0673e511c71968409963e7ba32e3228b7ca0531d011",
     "sources": "703d8ee86067a54bb47827edfecbd4c61ff92cc70cdfb06510a1fb538fb8af5d",
     "ledger": "a0074ffe0999396d2bf7ac0569a067e683c85e60b8991f526d0ccadbf970fad4",
-    "prompts": "d64b674f5d3499eb9f30ab673a0dd82bfd7e55b2b165b344cd4559ec0ce6dee2",
+    "prompts": "692b81ff4aef90780a6c26e963b44f7965128d916592cd5fcae7cecb214c6486",
     "harness": "4f6bf0843f83bf3ed00c6a9cd5765a9001da497e27af6037553fa13ca8078cdb"
   },
   "topicReservation": {

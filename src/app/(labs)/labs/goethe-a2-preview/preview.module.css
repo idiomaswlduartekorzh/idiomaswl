@@ -40,6 +40,18 @@
 .jumpNav a { border-radius: 10px; color: #d8e0e5; font-size: .82rem; font-weight: 700; padding: 10px 14px; text-decoration: none; white-space: nowrap; }
 .jumpNav a:hover { background: #ffffff12; color: white; }
 
+.fidelity { background: #f5f3eb; border: 1px solid #d8d1bd; border-radius: 20px; padding: clamp(22px, 4vw, 38px); scroll-margin-top: 90px; }
+.fidelityHeading { align-items: flex-start; display: flex; gap: 18px; justify-content: space-between; }
+.fidelityHeading h2 { font-size: clamp(1.65rem, 3vw, 2.5rem); letter-spacing: -.035em; margin: 8px 0 0; }
+.fidelityHeading > span { background: #dcebdd; border-radius: 999px; color: #23563d; flex: 0 0 auto; font-size: .76rem; font-weight: 800; padding: 8px 12px; }
+.fidelityGrid { display: grid; gap: 10px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 24px; }
+.fidelityGrid section { background: #fffef9; border: 1px solid #dedbd1; border-radius: 12px; display: grid; gap: 7px; padding: 16px; }
+.fidelityGrid strong { color: #52616a; font-size: .78rem; }
+.fidelityGrid b { color: #2f6b4f; font-size: .72rem; letter-spacing: .12em; }
+.fidelityGrid b.pending { color: #9a6b1c; }
+.fidelityGrid p, .fidelityNote { color: #52616a; font-size: .82rem; line-height: 1.5; margin: 0; }
+.fidelityNote { border-top: 1px solid #d8d1bd; margin-top: 18px; padding-top: 14px; }
+
 .moduleIntro { border-bottom: 1px solid #ffffff26; color: white; margin-top: 28px; padding: 28px 2px 18px; scroll-margin-top: 90px; }
 .moduleIntro > p { color: #83b4c7; font-size: .72rem; font-weight: 800; letter-spacing: .16em; margin: 0 0 8px; text-transform: uppercase; }
 .moduleIntro > div { align-items: baseline; display: flex; gap: 16px; justify-content: space-between; }
@@ -68,6 +80,9 @@
 .answerKey, .transcript, .modelAnswer { border-top: 1px solid #e2e1da; margin-top: 14px; padding-top: 12px; }
 .answerKey summary, .transcript summary, .modelAnswer summary { color: #52626b; cursor: pointer; font-size: .76rem; font-weight: 750; }
 .answerKey p, .modelAnswer p, .modelAnswer li { color: #48545b; font-size: .84rem; line-height: 1.55; margin-bottom: 0; }
+.workedExample { background: #eef3ed; border-color: #b8ccb9 !important; }
+.exampleTag { color: var(--green); font-size: .7rem; font-weight: 850; letter-spacing: .12em; margin: 0 0 8px; text-transform: uppercase; }
+.exampleSolution { color: var(--green); font-size: .78rem; font-weight: 800; margin: 12px 0 0; }
 .transcript { border: 1px dashed #d1cbbb; border-radius: 9px; padding: 10px 12px; }
 .turns { background: #f9f5e9; border-radius: 8px; margin-top: 10px; padding: 10px 14px; }
 .turns p { color: #3f4b51; font-size: .84rem; line-height: 1.55; margin: 5px 0; }
@@ -83,6 +98,13 @@
 
 .heroPlate { background: #f5f3eb; border: 1px solid #dedbd1; border-radius: 12px; display: block; height: auto; margin: 0 auto 22px; max-width: 100%; }
 .matchingGrid { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stageTable { border: 1px solid #d8d8d2; border-radius: 12px; overflow: hidden; }
+.stageTable > div { align-items: center; display: grid; gap: 12px; grid-template-columns: 110px 1fr 70px; padding: 12px 16px; }
+.stageTable > div + div { border-top: 1px solid #e1e0da; }
+.stageTable .stageHeader { background: #1e3743; color: white; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.stageTable .stageExample { background: #eef3ed; color: #315840; }
+.stageTable > div > b:last-of-type { color: var(--blue); text-align: center; }
+.stageTable .answerKey { grid-column: 1 / -1; }
 .visualQuestion img { border: 1px solid #d9d6cc; border-radius: 9px; display: block; height: auto; margin: 16px 0; width: 100%; }
 .statementList { display: grid; gap: 10px; }
 .binary { color: #4c5860; font-size: .86rem; margin: 12px 0 0 38px; }
@@ -90,17 +112,26 @@
 .taskCard { background: #f5f3eb; border-radius: 12px; color: #303b42; line-height: 1.6; padding: 22px; }
 .taskCard p { margin: 0 0 12px; }
 .taskCard ul { margin-bottom: 0; }
+.allPoints { border-top: 1px solid #d8d3c6; font-size: .82rem; font-weight: 800; margin-top: 16px !important; padding-top: 12px; }
 .addressee { color: var(--blue); font-size: .8rem; font-weight: 800; }
 .writingArea { background: repeating-linear-gradient(to bottom, #fff, #fff 31px, #dfe1dd 32px); border: 1px solid #d8d9d3; border-radius: 10px; height: 210px; margin-top: 18px; padding: 13px 16px; }
 .writingArea span { background: white; color: #929b9f; font-size: .72rem; padding-right: 8px; }
-.candidateGrid, .scheduleGrid { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.candidateGrid, .scheduleGrid, .monologueGrid { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .candidateGrid section { background: #f5f3eb; border: 1px solid #d8d3c6; border-radius: 12px; display: grid; gap: 9px; padding: 22px; }
 .candidateGrid section > span { color: var(--blue); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .candidateGrid strong { background: white; border: 1px solid #dddcd6; border-radius: 7px; font-size: .86rem; padding: 10px; text-align: center; }
+.cardPool { display: grid; gap: 14px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cardPool section { background: #f5f3eb; border: 1px solid #d8d3c6; border-radius: 12px; display: grid; gap: 18px; min-height: 140px; padding: 18px; }
+.cardPool span, .candidateLabel { color: var(--blue); font-size: .68rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.cardPool strong { align-self: center; font-family: Georgia, 'Times New Roman', serif; font-size: 1.08rem; text-align: center; }
 .promptCard { background: #193947; border-radius: 16px; color: white; padding: 28px; text-align: center; }
 .promptCard > p { font-family: Georgia, 'Times New Roman', serif; font-size: 1.8rem; margin: 0 0 20px; }
 .promptCard > div { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .promptCard span { background: #ffffff15; border: 1px solid #ffffff2e; border-radius: 999px; font-size: .8rem; padding: 7px 12px; }
+.promptCard .candidateLabel { background: transparent; border: 0; display: block; margin-bottom: 18px; padding: 0; }
+.cardFollowUps { border-top: 1px solid #ffffff26; margin-top: 20px; padding-top: 14px; text-align: left; }
+.cardFollowUps summary { color: #fff; cursor: pointer; font-size: .76rem; font-weight: 800; }
+.cardFollowUps li { color: #ffffffbf; font-size: .8rem; margin: 6px 0; }
 .scheduleGrid img { background: white; border: 1px solid #d8d8d2; border-radius: 10px; height: auto; width: 100%; }
 
 .scoring { scroll-margin-top: 90px; }
@@ -116,14 +147,16 @@
   .hero, .readingLayout { grid-template-columns: 1fr; }
   .snapshot { min-height: 230px; }
   .document { position: static; }
-  .scoreGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .scoreGrid, .fidelityGrid, .cardPool { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 600px) {
   .hero { padding: 24px; }
   .heroCopy h1 { font-size: 2.35rem; }
   .moduleIntro > div, .sectionHeader { align-items: flex-start; flex-direction: column; }
-  .adGrid, .matchingGrid, .candidateGrid, .scheduleGrid, .scoreGrid { grid-template-columns: 1fr; }
+  .adGrid, .matchingGrid, .candidateGrid, .scheduleGrid, .scoreGrid, .fidelityGrid, .cardPool, .monologueGrid { grid-template-columns: 1fr; }
+  .fidelityHeading { flex-direction: column; }
+  .stageTable > div { grid-template-columns: 80px 1fr 50px; }
   .examSection { padding: 18px; }
   .jumpNav { margin-inline: -6px; }
 }

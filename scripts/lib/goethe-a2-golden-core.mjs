@@ -63,9 +63,9 @@ export function buildGoldenAudioPlan(golden, candidateFingerprint) {
           : part.part === 3
             ? 'Sie hören fünf kurze Gespräche einmal. Wählen Sie das richtige Bild.'
             : 'Sie hören ein Radiointerview zweimal. Wählen Sie Ja oder Nein.',
-      scripts: 'items' in part
+      scripts: part.part === 1 || part.part === 3
         ? part.items.map(item => ({ id: item.id, turns: item.turns ?? [] }))
-        : [{ id: 'g-a2-1-h4-interview', turns: part.turns }],
+        : [{ id: part.part === 2 ? 'g-a2-1-h2-conversation' : 'g-a2-1-h4-interview', turns: part.turns }],
     })),
     outro: 'Ende des Tests Hören. Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen zu übertragen und zu kontrollieren.',
   };
@@ -85,6 +85,14 @@ export function validateGoldenSet(golden, root) {
   if (readingCounts.join('/') !== '5/5/5/5') fail(`reading item shape drifted: ${readingCounts.join('/')}`);
   if (listeningCounts.join('/') !== '5/5/5/5') fail(`listening item shape drifted: ${listeningCounts.join('/')}`);
   if (golden.listening.parts.map(part => part.plays).join('/') !== '2/1/1/2') fail('listening repetitions must remain 2/1/1/2');
+
+  if (!golden.reading.parts[0].example || !golden.reading.parts[1].example) fail('Lesen Teil 1 and 2 require a worked example 0');
+  const readingStimulusRanges = [[193, 230], [118, 210], [250, 280]];
+  golden.reading.parts.slice(0, 3).forEach((part, index) => {
+    const count = wordCount(part.text);
+    const [minimum, maximum] = readingStimulusRanges[index];
+    if (count < minimum || count > maximum) fail(`Lesen Teil ${index + 1}: stimulus has ${count} words; expected ${minimum}-${maximum}`);
+  });
 
   const choices = [
     ...golden.reading.parts.slice(0, 3).flatMap(part => part.items),
@@ -111,6 +119,26 @@ export function validateGoldenSet(golden, root) {
   const usedAds = new Set([reading4.example.answer, ...reading4.profiles.map(profile => profile.answer).filter(answer => answer !== 'X')]);
   if (usedAds.size !== 5) fail('Lesen Teil 4 must use the example plus four different advertisements');
   if (reading4.adverts.filter(ad => !usedAds.has(ad.letter)).length !== 1) fail('Lesen Teil 4 needs exactly one unused advertisement');
+  for (const advert of reading4.adverts) {
+    const count = wordCount(`${advert.heading} ${advert.text}`);
+    if (count < 30 || count > 45) fail(`Lesen Teil 4 advert ${advert.letter}: ${count} words; expected 30-45`);
+  }
+
+  const listening2 = golden.listening.parts[1];
+  if (!listening2.example || listening2.options.length !== 9) fail('Hören Teil 2 requires example 0 and nine visual options');
+  const listening2Used = new Set([listening2.example.answer, ...listening2.items.map(item => item.answer)]);
+  if (listening2Used.size !== 6 || listening2.options.filter(option => !listening2Used.has(option.letter)).length !== 3) fail('Hören Teil 2 requires one consumed example, five unique scored answers and three distractors');
+  if (!golden.listening.parts[3].example) fail('Hören Teil 4 requires a worked example 0');
+  const h1Counts = golden.listening.parts[0].items.map(item => wordCount(item.turns.map(turn => turn.text).join(' ')));
+  h1Counts.forEach((count, index) => { if (count < 45 || count > 70) fail(`Hören Teil 1 item ${index + 1}: ${count} words; expected 45-70`); });
+  const h2Count = wordCount(listening2.turns.map(turn => turn.text).join(' '));
+  if (h2Count < 220 || h2Count > 260) fail(`Hören Teil 2: ${h2Count} words; expected 220-260`);
+  const h3Counts = golden.listening.parts[2].items.map(item => wordCount(item.turns.map(turn => turn.text).join(' ')));
+  h3Counts.forEach((count, index) => { if (count < 43 || count > 70) fail(`Hören Teil 3 item ${index + 11}: ${count} words; expected 43-70`); });
+  const h3Total = h3Counts.reduce((total, count) => total + count, 0);
+  if (h3Total < 280 || h3Total > 310) fail(`Hören Teil 3: ${h3Total} total words; expected 280-310`);
+  const h4Count = wordCount(golden.listening.parts[3].turns.map(turn => turn.text).join(' '));
+  if (h4Count < 190 || h4Count > 230) fail(`Hören Teil 4: ${h4Count} words; expected 190-230`);
 
   const ranges = [[20, 30], [30, 40]];
   golden.writing.tasks.forEach((task, index) => {
@@ -119,8 +147,12 @@ export function validateGoldenSet(golden, root) {
     const count = wordCount(task.modelAnswer);
     if (count < task.minWords || count > task.maxWords) fail(`writing task ${index + 1}: model answer has ${count} words`);
   });
-  if (golden.speaking.tasks[0].candidateA.length !== 4 || golden.speaking.tasks[0].candidateB.length !== 4) fail('Sprechen Teil 1 requires four cards per candidate');
-  if (golden.speaking.tasks[1].cues.length !== 4 || golden.speaking.tasks[1].followUps.length < 1 || golden.speaking.tasks[1].followUps.length > 2) fail('Sprechen Teil 2 requires four cues and one or two follow-ups');
+  if (golden.speaking.tasks[0].cards.length !== 4) fail('Sprechen Teil 1 requires one shared pool of four question cards');
+  const speaking2 = golden.speaking.tasks[1];
+  for (const [candidate, card] of Object.entries({ A: speaking2.candidateA, B: speaking2.candidateB })) {
+    if (card.cues.length !== 4 || card.followUps.length < 1 || card.followUps.length > 2) fail(`Sprechen Teil 2 candidate ${candidate} requires four cues and one or two follow-ups`);
+  }
+  if (speaking2.candidateA.prompt === speaking2.candidateB.prompt) fail('Sprechen Teil 2 requires distinct topics for candidates A and B');
   const writingRubric = golden.scoring.writing.rubric;
   if (writingRubric.pointsPerCriterion.join('/') !== '5/3.5/2/0.5/0' || golden.scoring.writing.rawMaximum !== 20 || golden.scoring.writing.multiplier !== 1.25) fail('writing scoring grid must preserve the official 20 raw points and A-E values');
   const speakingRubric = golden.scoring.speaking.rubric;

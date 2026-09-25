@@ -22,24 +22,24 @@
   },
   "taskContracts": {
     "reading": [
-      { "part": 1, "family": "continuous-media-text", "response": "three-option-mcq", "items": 5 },
-      { "part": 2, "family": "directory-program-board", "response": "three-option-mcq", "items": 5 },
-      { "part": 3, "family": "correspondence", "response": "three-option-mcq", "items": 5 },
-      { "part": 4, "family": "needs-to-six-ads", "response": "matching-a-to-f-or-x", "items": 5, "requiredNoMatchX": 1 }
+      { "part": 1, "family": "continuous-media-text", "response": "three-option-mcq", "items": 5, "workedExampleZero": true, "stimulusWords": [193, 230] },
+      { "part": 2, "family": "directory-program-board", "response": "three-option-location-mcq", "items": 5, "workedExampleZero": true, "stimulusWords": [118, 210], "optionPattern": "two-locations-plus-other" },
+      { "part": 3, "family": "correspondence", "response": "three-option-mcq", "items": 5, "stimulusWords": [250, 280] },
+      { "part": 4, "family": "needs-to-six-ads", "response": "matching-a-to-f-or-x", "items": 5, "workedExampleZero": true, "requiredNoMatchX": 1, "advertWords": [30, 45] }
     ],
     "listening": [
       { "part": 1, "family": "five-short-public-or-private-messages", "response": "three-option-text-mcq", "items": 5, "plays": 2 },
-      { "part": 2, "family": "one-continuous-conversation", "response": "matching-nine-visual-options", "items": 5, "plays": 1 },
+      { "part": 2, "family": "one-continuous-conversation", "response": "matching-nine-visual-options-stage-table", "items": 5, "plays": 1, "workedExampleZero": true, "exampleConsumesOption": true, "remainingDistractors": 3, "scriptWords": [220, 260] },
       { "part": 3, "family": "five-short-conversations", "response": "three-option-visual-mcq", "items": 5, "plays": 1 },
-      { "part": 4, "family": "radio-interview", "response": "ja-nein", "items": 5, "plays": 2 }
+      { "part": 4, "family": "radio-interview", "response": "ja-nein", "items": 5, "plays": 2, "workedExampleZero": true, "scriptWords": [190, 230] }
     ],
     "writing": [
       { "part": 1, "family": "personal-message", "requiredCommunicativeFunctions": 3, "wordRange": [20, 30] },
       { "part": 2, "family": "semi-official-email", "requiredCommunicativeFunctions": 3, "wordRange": [30, 40] }
     ],
     "speaking": [
-      { "part": 1, "family": "personal-information-exchange", "cardsPerCandidate": 4 },
-      { "part": 2, "family": "guided-personal-monologue", "cues": 4, "followUps": [1, 2] },
+      { "part": 1, "family": "personal-information-exchange", "sharedQuestionCards": 4 },
+      { "part": 2, "family": "guided-personal-monologue", "distinctCandidateCards": 2, "cuesPerCard": 4, "followUps": [1, 2] },
       { "part": 3, "family": "pair-planning-negotiation", "requiresComplementaryCards": true }
     ]
   },

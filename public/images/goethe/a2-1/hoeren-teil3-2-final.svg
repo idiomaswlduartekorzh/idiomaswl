@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2172" height="724" viewBox="0 0 2172 724" role="img" aria-labelledby="title description">
+  <title id="title">Drei analoge Uhren als Antwortoptionen</title>
+  <desc id="description">Option A zeigt halb zehn, Option B zehn Uhr und Option C halb elf.</desc>
+  <defs>
+    <style>
+      .panel { fill: #fbfaf4; stroke: #d5d2c7; stroke-width: 4; }
+      .face { fill: #fffef9; stroke: #1e3743; stroke-width: 16; }
+      .tick { stroke: #66747a; stroke-width: 5; stroke-linecap: round; }
+      .major { stroke: #1e3743; stroke-width: 10; stroke-linecap: round; }
+      .hour { stroke: #1e3743; stroke-width: 22; stroke-linecap: round; }
+      .minute { stroke: #235a70; stroke-width: 14; stroke-linecap: round; }
+      .hub { fill: #1e3743; }
+      .label-box { fill: #1e3743; }
+      .label { fill: #fff; font: 700 54px system-ui, sans-serif; text-anchor: middle; }
+    </style>
+    <g id="ticks">
+      <line class="major" x1="0" y1="-244" x2="0" y2="-211"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(30)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(60)"/>
+      <line class="major" x1="0" y1="-244" x2="0" y2="-211" transform="rotate(90)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(120)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(150)"/>
+      <line class="major" x1="0" y1="-244" x2="0" y2="-211" transform="rotate(180)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(210)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(240)"/>
+      <line class="major" x1="0" y1="-244" x2="0" y2="-211" transform="rotate(270)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(300)"/>
+      <line class="tick" x1="0" y1="-244" x2="0" y2="-222" transform="rotate(330)"/>
+    </g>
+  </defs>
+
+  <rect width="2172" height="724" fill="#ece9df"/>
+
+  <g transform="translate(18 18)">
+    <rect class="panel" width="700" height="688" rx="26"/>
+    <rect class="label-box" x="30" y="30" width="94" height="82" rx="12"/>
+    <text class="label" x="77" y="90">A</text>
+    <g transform="translate(350 354)">
+      <circle class="face" r="264"/>
+      <use href="#ticks"/>
+      <line class="hour" x1="0" y1="0" x2="-106" y2="-28"/>
+      <line class="minute" x1="0" y1="0" x2="0" y2="174"/>
+      <circle class="hub" r="18"/>
+    </g>
+  </g>
+
+  <g transform="translate(736 18)">
+    <rect class="panel" width="700" height="688" rx="26"/>
+    <rect class="label-box" x="30" y="30" width="94" height="82" rx="12"/>
+    <text class="label" x="77" y="90">B</text>
+    <g transform="translate(350 354)">
+      <circle class="face" r="264"/>
+      <use href="#ticks"/>
+      <line class="hour" x1="0" y1="0" x2="-95" y2="-55"/>
+      <line class="minute" x1="0" y1="0" x2="0" y2="-174"/>
+      <circle class="hub" r="18"/>
+    </g>
+  </g>
+
+  <g transform="translate(1454 18)">
+    <rect class="panel" width="700" height="688" rx="26"/>
+    <rect class="label-box" x="30" y="30" width="94" height="82" rx="12"/>
+    <text class="label" x="77" y="90">C</text>
+    <g transform="translate(350 354)">
+      <circle class="face" r="264"/>
+      <use href="#ticks"/>
+      <line class="hour" x1="0" y1="0" x2="-78" y2="-78"/>
+      <line class="minute" x1="0" y1="0" x2="0" y2="174"/>
+      <circle class="hub" r="18"/>
+    </g>
+  </g>
+</svg>

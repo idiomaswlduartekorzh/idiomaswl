@@ -38,8 +38,8 @@ export type GoetheA2GoldenSet = {
   reading: {
     minutes: 30;
     parts: [
-      { part: 1; family: 'continuous-media-text'; title: string; text: string; items: GoetheA2Choice[] },
-      { part: 2; family: 'directory-program-board'; title: string; text: string; items: GoetheA2Choice[] },
+      { part: 1; family: 'continuous-media-text'; title: string; text: string; example: GoetheA2Choice; items: GoetheA2Choice[] },
+      { part: 2; family: 'directory-program-board'; title: string; text: string; example: GoetheA2Choice; items: GoetheA2Choice[] },
       { part: 3; family: 'correspondence'; title: string; text: string; items: GoetheA2Choice[] },
       {
         part: 4;
@@ -62,9 +62,11 @@ export type GoetheA2GoldenSet = {
         plays: 1;
         visualAsset: string;
         visualAlt: string;
+        leadQuestion: string;
         options: { letter: string; label: string }[];
         turns: GoetheA2Turn[];
-        items: { id: string; prompt: string; answer: string; rationale: string }[];
+        example: { number: 0; stageLabel: string; answer: string; rationale: string };
+        items: { id: string; number: 6 | 7 | 8 | 9 | 10; stageLabel: string; answer: string; rationale: string }[];
       },
       { part: 3; family: 'five-short-conversations'; plays: 1; items: GoetheA2AudioItem[] },
       {
@@ -72,6 +74,7 @@ export type GoetheA2GoldenSet = {
         family: 'radio-interview';
         plays: 2;
         turns: GoetheA2Turn[];
+        example: { statement: string; answer: boolean; rationale: string };
         items: { id: string; statement: string; answer: boolean; rationale: string }[];
       },
     ];
@@ -90,11 +93,15 @@ export type GoetheA2GoldenSet = {
       {
         part: 1;
         family: 'personal-information-exchange';
-        candidateA: [string, string, string, string];
-        candidateB: [string, string, string, string];
+        cards: [string, string, string, string];
         examples: string[];
       },
-      { part: 2; family: 'guided-personal-monologue'; prompt: string; cues: [string, string, string, string]; followUps: [string, string] },
+      {
+        part: 2;
+        family: 'guided-personal-monologue';
+        candidateA: { prompt: string; cues: [string, string, string, string]; followUps: [string, string] };
+        candidateB: { prompt: string; cues: [string, string, string, string]; followUps: [string, string] };
+      },
       {
         part: 3;
         family: 'pair-planning-negotiation';

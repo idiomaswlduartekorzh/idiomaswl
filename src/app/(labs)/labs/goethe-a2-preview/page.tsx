@@ -93,12 +93,32 @@ export default function GoetheA2PreviewPage() {
       </header>
 
       <nav className={styles.jumpNav} aria-label="Secciones del simulacro">
+        <a href="#fidelidad">Auditoría</a>
         <a href="#lesen">Lesen · 4 Teile</a>
         <a href="#hoeren">Hören · 4 Teile</a>
         <a href="#schreiben">Schreiben · 2 Teile</a>
         <a href="#sprechen">Sprechen · 3 Teile</a>
         <a href="#scoring">Scoring</a>
       </nav>
+
+      <section className={styles.fidelity} id="fidelidad">
+        <div className={styles.fidelityHeading}>
+          <div>
+            <p className={styles.eyebrow}>Cotejo oficial · Modellsatz + Übungssatz 01</p>
+            <h2>100% de la estructura verificable</h2>
+          </div>
+          <span>13/13 Teile conformes</span>
+        </div>
+        <div className={styles.fidelityGrid}>
+          <section><strong>Construcción</strong><b>PASS</b><p>4 Lesen · 4 Hören · 2 Schreiben · 3 Sprechen.</p></section>
+          <section><strong>Respuestas</strong><b>PASS</b><p>20 Lesen · 20 Hören · 2 textos · 3 tareas orales.</p></section>
+          <section><strong>Ejemplos 0</strong><b>PASS</b><p>Lesen 1, 2 y 4; Hören 2 y 4. Nunca puntúan.</p></section>
+          <section><strong>Longitud y nivel</strong><b>PASS</b><p>Textos y guiones dentro de las bandas de ambos cuadernillos.</p></section>
+          <section><strong>Visuales funcionales</strong><b>PASS</b><p>9 imágenes, trípticos A/B/C y agendas complementarias.</p></section>
+          <section><strong>Audio final</strong><b className={styles.pending}>PENDIENTE</b><p>Guion y secuencia listos; falta producir y escuchar la pista maestra.</p></section>
+        </div>
+        <p className={styles.fidelityNote}>La equivalencia auditada cubre formato, tarea, cantidad, longitud, complejidad, tiempos y puntuación. La fidelidad sonora no se declara hasta generar y revisar el audio.</p>
+      </section>
 
       <section className={styles.moduleIntro} id="lesen">
         <p>Prüfungsteil 01</p>
@@ -116,6 +136,14 @@ export default function GoetheA2PreviewPage() {
               <div className={styles.preText}>{part.text}</div>
             </div>
             <div className={styles.questionStack}>
+              {'example' in part && (
+                <section className={`${styles.question} ${styles.workedExample}`}>
+                  <p className={styles.exampleTag}>Beispiel · 0</p>
+                  <h3>{part.example.prompt}</h3>
+                  <ChoiceList options={part.example.options} />
+                  <p className={styles.exampleSolution}>Lösung: {letters[part.example.answer]}</p>
+                </section>
+              )}
               {part.items.map((item, index) => (
                 <section className={styles.question} key={item.id}>
                   <h3><span>{(part.part - 1) * 5 + index + 1}</span>{item.prompt}</h3>
@@ -169,14 +197,16 @@ export default function GoetheA2PreviewPage() {
 
       <article className={styles.examSection} id="hoeren-2">
         <SectionHeader skill="Hören" part={2} title="Ein zusammenhängendes Gespräch" meta="5 Zuordnungen · einmal hören" />
-        <p className={styles.audioNotice}>Wählen Sie für die Aufgaben 6 bis 10 ein passendes Bild aus A bis I. Jeden Buchstaben nur einmal.</p>
+        <p className={styles.audioNotice}>{listening2.leadQuestion} Wählen Sie für die Aufgaben 6 bis 10 ein passendes Bild aus A bis I. Jeden Buchstaben nur einmal.</p>
         <Image className={styles.heroPlate} src={listening2.visualAsset} alt={listening2.visualAlt} width={1536} height={1024} unoptimized />
-        <div className={styles.matchingGrid}>
-          {listening2.items.map((item, index) => (
-            <section key={item.id}>
-              <h3><span>{index + 6}</span>{item.prompt}</h3>
+        <div className={styles.stageTable} role="table" aria-label="Etapas del sábado">
+          <div className={styles.stageHeader} role="row"><span>Aufgabe</span><span>Zeit</span><span>Bild</span></div>
+          <div className={styles.stageExample} role="row"><strong>Beispiel 0</strong><span>{listening2.example.stageLabel}</span><b>{listening2.example.answer}</b></div>
+          {listening2.items.map(item => (
+            <div role="row" key={item.id}>
+              <strong>{item.number}</strong><span>{item.stageLabel}</span><b>□</b>
               <AnswerKey answer={item.answer} rationale={item.rationale} />
-            </section>
+            </div>
           ))}
         </div>
         <Transcript turns={listening2.turns} label="Guion completo · una reproducción" />
@@ -190,7 +220,6 @@ export default function GoetheA2PreviewPage() {
             <section className={styles.visualQuestion} key={item.id}>
               <h3><span>{index + 11}</span>{item.prompt}</h3>
               {item.visualAsset && <Image src={item.visualAsset} alt={item.visualAlt ?? ''} width={2172} height={724} unoptimized />}
-              <ChoiceList options={item.options} />
               <Transcript turns={item.turns} />
               <AnswerKey answer={letters[item.answer]} rationale={item.rationale} />
             </section>
@@ -202,6 +231,11 @@ export default function GoetheA2PreviewPage() {
         <SectionHeader skill="Hören" part={4} title="Radiointerview" meta="5 Aussagen · zweimal hören" />
         <p className={styles.audioNotice}>Lesen Sie die Aussagen. Wählen Sie Ja oder Nein.</p>
         <div className={styles.statementList}>
+          <section className={styles.workedExample}>
+            <p className={styles.exampleTag}>Beispiel · 0</p>
+            <h3>{listening4.example.statement}</h3>
+            <p className={styles.binary}>☒ {listening4.example.answer ? 'Ja' : 'Nein'}</p>
+          </section>
           {listening4.items.map((item, index) => (
             <section key={item.id}>
               <h3><span>{index + 16}</span>{item.statement}</h3>
@@ -225,6 +259,7 @@ export default function GoetheA2PreviewPage() {
             {'addressee' in task && <p className={styles.addressee}>An: {task.addressee}</p>}
             <p>{task.situation}</p>
             <ul>{task.functions.map(value => <li key={value}>{value}</li>)}</ul>
+            <p className={styles.allPoints}>Schreiben Sie zu allen drei Punkten.</p>
           </div>
           <div className={styles.writingArea} aria-label="Espacio para redactar"><span>Ihre Antwort</span></div>
           <details className={styles.modelAnswer}><summary>Ver modelo editorial</summary><p>{task.modelAnswer}</p></details>
@@ -239,28 +274,37 @@ export default function GoetheA2PreviewPage() {
       <article className={styles.examSection} id="sprechen-1">
         <SectionHeader skill="Sprechen" part={1} title="Informationen zur Person austauschen" meta="Partnerarbeit" />
         <p className={styles.instructions}>Stellen Sie Ihrer Partnerin oder Ihrem Partner vier Fragen. Antworten Sie mit vollständigen kurzen Sätzen.</p>
-        <div className={styles.candidateGrid}>
-          <section><span>Karte A</span>{golden.speaking.tasks[0].candidateA.map(value => <strong key={value}>{value}</strong>)}</section>
-          <section><span>Karte B</span>{golden.speaking.tasks[0].candidateB.map(value => <strong key={value}>{value}</strong>)}</section>
+        <div className={styles.cardPool}>
+          {golden.speaking.tasks[0].cards.map((value, index) => (
+            <section key={value}><span>Karte {index + 1}</span><strong>{value}</strong></section>
+          ))}
         </div>
         <details className={styles.modelAnswer}><summary>Ver ejemplos de preguntas</summary><ul>{golden.speaking.tasks[0].examples.map(value => <li key={value}>{value}</li>)}</ul></details>
       </article>
 
       <article className={styles.examSection} id="sprechen-2">
         <SectionHeader skill="Sprechen" part={2} title="Von sich erzählen" meta="Monolog mit Nachfragen" />
-        <div className={styles.promptCard}>
-          <p>{golden.speaking.tasks[1].prompt}</p>
-          <div>{golden.speaking.tasks[1].cues.map(value => <span key={value}>{value}</span>)}</div>
+        <div className={styles.monologueGrid}>
+          {(['candidateA', 'candidateB'] as const).map((candidate, index) => {
+            const card = golden.speaking.tasks[1][candidate];
+            return (
+              <section className={styles.promptCard} key={candidate}>
+                <span className={styles.candidateLabel}>Prüfungsteilnehmer/in {index === 0 ? 'A' : 'B'}</span>
+                <p>{card.prompt}</p>
+                <div>{card.cues.map(value => <span key={value}>{value}</span>)}</div>
+                <details className={styles.cardFollowUps}><summary>Nachfragen</summary><ul>{card.followUps.map(value => <li key={value}>{value}</li>)}</ul></details>
+              </section>
+            );
+          })}
         </div>
-        <details className={styles.modelAnswer}><summary>Ver preguntas de seguimiento</summary><ul>{golden.speaking.tasks[1].followUps.map(value => <li key={value}>{value}</li>)}</ul></details>
       </article>
 
       <article className={styles.examSection} id="sprechen-3">
         <SectionHeader skill="Sprechen" part={3} title="Gemeinsam planen" meta="Aushandeln und einigen" />
         <p className={styles.instructions}>{golden.speaking.tasks[2].situation}</p>
         <div className={styles.scheduleGrid}>
-          <Image src={golden.speaking.tasks[2].candidateAAsset} alt={golden.speaking.tasks[2].candidateAAlt} width={760} height={430} unoptimized />
-          <Image src={golden.speaking.tasks[2].candidateBAsset} alt={golden.speaking.tasks[2].candidateBAlt} width={760} height={430} unoptimized />
+          <Image src={golden.speaking.tasks[2].candidateAAsset} alt={golden.speaking.tasks[2].candidateAAlt} width={760} height={840} unoptimized />
+          <Image src={golden.speaking.tasks[2].candidateBAsset} alt={golden.speaking.tasks[2].candidateBAlt} width={760} height={840} unoptimized />
         </div>
         <AnswerKey answer="Acuerdo compartido" rationale={golden.speaking.tasks[2].requiredOutcome} />
       </article>

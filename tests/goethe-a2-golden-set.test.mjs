@@ -17,6 +17,24 @@ test('golden set preserves the complete public A2 task architecture', () => {
   assert.deepEqual(golden.listening.parts.map(part => part.plays), [2, 1, 1, 2]);
 });
 
+test('worked examples match the official sheets and stay outside the 45 scored responses', () => {
+  assert.ok(golden.reading.parts[0].example);
+  assert.ok(golden.reading.parts[1].example);
+  assert.ok(golden.reading.parts[3].example);
+  assert.ok(golden.listening.parts[1].example);
+  assert.ok(golden.listening.parts[3].example);
+  assert.equal(countMockResponses(mock), 45);
+});
+
+test('Hören Teil 2 uses the official stage table shape with one consumed example option', () => {
+  const part = golden.listening.parts[1];
+  assert.equal(part.options.length, 9);
+  assert.deepEqual(part.items.map(item => item.number), [6, 7, 8, 9, 10]);
+  const used = new Set([part.example.answer, ...part.items.map(item => item.answer)]);
+  assert.equal(used.size, 6);
+  assert.equal(part.options.filter(option => !used.has(option.letter)).length, 3);
+});
+
 test('objective keys are balanced without changing the natural item logic', () => {
   const reading = golden.reading.parts.slice(0, 3).flatMap(part => part.items);
   assert.deepEqual([0, 1, 2].map(position => reading.filter(item => item.answer === position).length), [5, 5, 5]);
@@ -48,8 +66,21 @@ test('audio plan is one locked master with repetitions, pauses and transfer wind
   assert.equal(plan.master.navigation.replay, false);
   assert.equal(plan.master.containsTransferWindow, true);
   assert.equal(plan.status, 'script-ready-audio-blocked');
+  assert.equal(plan.sequence[1].scripts.length, 1);
+  assert.equal(plan.sequence[1].scripts[0].turns.length, golden.listening.parts[1].turns.length);
+  assert.equal(plan.sequence[3].scripts.length, 1);
+  assert.equal(plan.sequence[3].scripts[0].turns.length, golden.listening.parts[3].turns.length);
+  assert.equal(plan.sequence.flatMap(part => part.scripts).every(script => script.turns.length > 0), true);
   assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, 'artifacts/goethe-a2-harness/set-1/golden-1/candidate.json'), 'utf8')), candidate);
   assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, 'src/data/mocks/goethe-a2-set-1-audio.json'), 'utf8')), plan);
+});
+
+test('Sprechen keeps four shared Teil 1 cards and distinct Teil 2 candidate cards', () => {
+  assert.equal(golden.speaking.tasks[0].cards.length, 4);
+  const part2 = golden.speaking.tasks[1];
+  assert.notEqual(part2.candidateA.prompt, part2.candidateB.prompt);
+  assert.equal(part2.candidateA.cues.length, 4);
+  assert.equal(part2.candidateB.cues.length, 4);
 });
 
 test('productive rubrics preserve the official 20-point writing and 25-point speaking grids', () => {
