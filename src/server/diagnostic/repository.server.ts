@@ -7,6 +7,7 @@ import type { DiagnosticObjectiveObservation } from './measurement';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
+import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
 import type { DiagnosticResumeSnapshot } from './resume-core';
 
 export async function loadDiagnosticAttemptForResume(input: {
@@ -75,6 +76,79 @@ export async function authorizeDiagnosticMediaAccess(input: {
   if (attemptError) throw new Error('diagnostic_persistence_unavailable');
   return Boolean(attempts?.some(attempt => new Date(String(attempt.expires_at)).getTime() > input.now.getTime()
     && stages.some(stage => String(stage.attempt_id) === String(attempt.id) && stage.kind === attempt.status)));
+}
+
+export async function loadDiagnosticFinalizationContext(attemptId: string): Promise<{
+  attempt: DiagnosticScoringAttempt;
+  promptId: string;
+  promptContentVersion: string;
+  responseText: string;
+  observations: readonly DiagnosticObjectiveObservation[];
+} | null> {
+  const admin = createAdminClient();
+  const [
+    { data: attempt, error: attemptError },
+    { data: writing, error: writingError },
+    { data: responses, error: responsesError },
+  ] = await Promise.all([
+    admin.from('diagnostic_attempts')
+      .select('id,user_id,version,status,bank_version,blueprint_version,engine_version')
+      .eq('id', attemptId).maybeSingle(),
+    admin.from('diagnostic_writing_evaluations')
+      .select('prompt_id,content_version,response_text,status').eq('attempt_id', attemptId).maybeSingle(),
+    admin.from('diagnostic_responses')
+      .select('item_id,outcome').eq('attempt_id', attemptId),
+  ]);
+  if (attemptError || writingError || responsesError) throw new Error('diagnostic_persistence_unavailable');
+  if (!attempt || !writing) return null;
+  if (!Number.isInteger(attempt.version)
+    || typeof writing.response_text !== 'string'
+    || !['pending', 'automated-scored', 'human-review', 'adjudication'].includes(String(writing.status))
+    || !Array.isArray(responses)
+    || responses.some(response => !['correct', 'incorrect', 'omitted'].includes(String(response.outcome)))) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return {
+    attempt: {
+      id: String(attempt.id), userId: String(attempt.user_id), version: Number(attempt.version),
+      status: String(attempt.status), bankVersion: String(attempt.bank_version),
+      blueprintVersion: String(attempt.blueprint_version), engineVersion: String(attempt.engine_version),
+    },
+    promptId: String(writing.prompt_id), promptContentVersion: String(writing.content_version),
+    responseText: writing.response_text,
+    observations: responses.map(response => ({
+      itemId: String(response.item_id), outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],
+    })),
+  };
+}
+
+export async function persistDiagnosticFinalization(
+  input: PersistDiagnosticFinalizationInput,
+): Promise<{ replayed: boolean; version: number }> {
+  const { data, error } = await createAdminClient().rpc('complete_diagnostic_attempt', {
+    p_attempt_id: input.attempt.id,
+    p_user_id: input.attempt.userId,
+    p_expected_attempt_version: input.attempt.version,
+    p_automated_evaluation: input.automated,
+    p_human_evaluation: input.human,
+    p_final_evidence: input.finalEvidence,
+    p_result_profile: input.resultProfile,
+  });
+  if (error || !data || typeof data !== 'object') {
+    console.error('[diagnostic] Atomic finalization failed:', error?.message ?? 'invalid RPC result');
+    const knownCode = [
+      'diagnostic_attempt_not_found', 'diagnostic_writing_not_found',
+      'diagnostic_attempt_version_conflict', 'diagnostic_attempt_not_scoring',
+      'diagnostic_writing_not_pending', 'diagnostic_finalization_invalid',
+    ].find(code => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  const result = data as { replayed?: unknown; version?: unknown };
+  if (typeof result.replayed !== 'boolean' || !Number.isInteger(result.version)) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return { replayed: result.replayed, version: Number(result.version) };
 }
 
 export async function loadDiagnosticObjectiveSubmissionContext(input: {

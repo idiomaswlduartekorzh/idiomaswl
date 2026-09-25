@@ -9,6 +9,7 @@ import {
   compareWritingEvaluations,
   consolidateWritingEvidence,
   diagnosticWritingResponseSha256,
+  parseDiagnosticWritingEvaluation,
   selectDiagnosticWritingPrompt,
   validateDiagnosticWritingEvaluation,
   validateDiagnosticWritingResponse,
@@ -65,6 +66,15 @@ test('evaluation validation binds prompt, response and quoted evidence', () => {
   const errors = validateDiagnosticWritingEvaluation(forged, prompt, response);
   assert.ok(errors.includes('evaluation does not match the submitted writing response'));
   assert.ok(errors.some(error => error.includes('evidence absent')));
+});
+
+test('evaluation parser rejects malformed privileged payloads', () => {
+  assert.equal(parseDiagnosticWritingEvaluation({ evaluator: 'automated' }, 'automated'), null);
+  assert.ok(parseDiagnosticWritingEvaluation(evaluation('automated'), 'automated'));
+  assert.equal(parseDiagnosticWritingEvaluation({
+    ...evaluation('human'),
+    criteria: [...evaluation('human').criteria, evaluation('human').criteria[0]],
+  }, 'human'), null);
 });
 
 test('writing response length is checked against the server prompt', () => {

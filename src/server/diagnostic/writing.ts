@@ -54,6 +54,68 @@ export interface DiagnosticWritingSkillEvidence extends DiagnosticSkillEvidence 
   agreement?: DiagnosticWritingAgreement;
 }
 
+function boundedString(value: unknown, maximum: number): value is string {
+  return typeof value === 'string' && value.trim().length > 0 && value.length <= maximum;
+}
+
+/** Parses evaluator output at a privileged network boundary without trusting its declared shape. */
+export function parseDiagnosticWritingEvaluation(
+  value: unknown,
+  evaluator: 'automated' | 'human',
+): DiagnosticAutomatedWritingEvaluation | DiagnosticHumanWritingEvaluation | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const candidate = value as Record<string, unknown>;
+  if (candidate.evaluator !== evaluator
+    || !boundedString(candidate.rubricVersion, 100)
+    || !boundedString(candidate.promptId, 160)
+    || !boundedString(candidate.promptContentVersion, 100)
+    || typeof candidate.responseSha256 !== 'string'
+    || !/^[a-f0-9]{64}$/.test(candidate.responseSha256)
+    || !boundedString(candidate.evaluatedAt, 50)
+    || Number.isNaN(Date.parse(candidate.evaluatedAt))
+    || !Array.isArray(candidate.criteria)
+    || candidate.criteria.length !== DIAGNOSTIC_WRITING_CRITERIA.length) return null;
+  const criteria: DiagnosticWritingCriterionEvaluation[] = [];
+  for (const raw of candidate.criteria) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
+    const item = raw as Record<string, unknown>;
+    if (!DIAGNOSTIC_WRITING_CRITERIA.includes(item.criterion as DiagnosticWritingCriterion)
+      || !CEFR_LEVELS.includes(item.level as CefrLevel)
+      || typeof item.confidence !== 'number'
+      || !Number.isFinite(item.confidence)
+      || item.confidence < 0 || item.confidence > 1
+      || !boundedString(item.rationale, 2_400)
+      || !Array.isArray(item.evidence)
+      || item.evidence.length < 1 || item.evidence.length > 5
+      || item.evidence.some(excerpt => !boundedString(excerpt, 500))) return null;
+    criteria.push({
+      criterion: item.criterion as DiagnosticWritingCriterion,
+      level: item.level as CefrLevel,
+      confidence: item.confidence,
+      evidence: item.evidence as string[],
+      rationale: item.rationale,
+    });
+  }
+  const shared = {
+    evaluator, rubricVersion: candidate.rubricVersion, promptId: candidate.promptId,
+    promptContentVersion: candidate.promptContentVersion, responseSha256: candidate.responseSha256,
+    evaluatedAt: candidate.evaluatedAt, criteria,
+  } as const;
+  if (evaluator === 'automated') {
+    if (!boundedString(candidate.model, 160)
+      || !Array.isArray(candidate.warnings)
+      || candidate.warnings.length > 20
+      || candidate.warnings.some(warning => typeof warning !== 'string' || warning.length > 500)) return null;
+    return { ...shared, evaluator, model: candidate.model, warnings: candidate.warnings as string[] };
+  }
+  if (!boundedString(candidate.reviewerId, 160)
+    || !['accept', 'revise', 'exclude'].includes(String(candidate.decision))) return null;
+  return {
+    ...shared, evaluator, reviewerId: candidate.reviewerId,
+    decision: candidate.decision as DiagnosticHumanWritingEvaluation['decision'],
+  };
+}
+
 export function diagnosticWritingResponseSha256(response: string): string {
   return createHash('sha256').update(response.normalize('NFC')).digest('hex');
 }

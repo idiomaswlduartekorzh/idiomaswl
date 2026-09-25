@@ -9,6 +9,7 @@ const submitRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[
 const submitHandler = await readFile(new URL('../src/server/diagnostic/submit.server.ts', import.meta.url), 'utf8');
 const resumeRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[attemptId]/route.ts', import.meta.url), 'utf8');
 const resumeHandler = await readFile(new URL('../src/server/diagnostic/resume.server.ts', import.meta.url), 'utf8');
+const finalizeRoute = await readFile(new URL('../src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts', import.meta.url), 'utf8');
 
 test('diagnostic start route uses Node runtime and delegates to a server-only handler', () => {
   assert.match(route, /export const runtime = 'nodejs'/);
@@ -66,4 +67,15 @@ test('browser response is private and bank readiness fails closed', () => {
   assert.match(handler, /ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK\.length === 0/);
   assert.match(handler, /BANK_NOT_READY/);
   assert.match(repository, /rpc\('create_diagnostic_attempt'/);
+});
+
+test('diagnostic finalization is admin-only, same-origin and server-scored', () => {
+  assert.match(finalizeRoute, /requireAdmin\(\)/);
+  assert.match(finalizeRoute, /sameOrigin\(request\)/);
+  assert.match(finalizeRoute, /parseDiagnosticWritingEvaluation/);
+  assert.match(finalizeRoute, /loadDiagnosticFinalizationContext/);
+  assert.match(finalizeRoute, /finalizeEnglishDiagnostic/);
+  assert.match(finalizeRoute, /persistDiagnosticFinalization/);
+  assert.match(finalizeRoute, /reviewerId: admin\.id/);
+  assert.match(finalizeRoute, /'Cache-Control': 'private, no-store, max-age=0'/);
 });
