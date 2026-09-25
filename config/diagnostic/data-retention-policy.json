@@ -1,0 +1,32 @@
+{
+  "policyVersion": "english-diagnostic-retention-proposal-v1",
+  "status": "proposal-pending-privacy-approval",
+  "scope": "English adaptive diagnostic attempts and derived five-skill results",
+  "rules": [
+    {
+      "dataClass": "incomplete-attempts",
+      "proposedMaximumDays": 90,
+      "action": "delete-attempt-and-cascading-evidence"
+    },
+    {
+      "dataClass": "completed-objective-responses-and-event-log",
+      "proposedMaximumDays": 730,
+      "action": "delete-or-anonymize-after-validation-window"
+    },
+    {
+      "dataClass": "writing-response-and-evaluation-evidence",
+      "proposedMaximumDays": 730,
+      "action": "delete-or-anonymize-after-validation-window"
+    },
+    {
+      "dataClass": "result-profile",
+      "proposedMaximumDays": 730,
+      "action": "delete-unless-a-separate-user-facing-record-policy-is-approved"
+    }
+  ],
+  "notes": [
+    "The durations are a proposal, not an active legal or operational policy.",
+    "No scheduled purge may be connected until privacy approval and live deletion verification are recorded.",
+    "A user-directed full diagnostic deletion is implemented independently of these proposed durations."
+  ]
+}

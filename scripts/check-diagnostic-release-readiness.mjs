@@ -59,6 +59,7 @@ const report = buildDiagnosticReleaseReadiness({
   audioPublications: readJson('config/diagnostic/english-listening-audio-publications.json'),
   voiceCasting: readJson('config/diagnostic/english-listening-voice-casting.json'),
   pilotCriteria: readJson('config/diagnostic/pilot-publication-criteria.json'),
+  retentionPolicy: readJson('config/diagnostic/data-retention-policy.json'),
   releaseEvidence: evidence,
   pilotReport: pilotBytes ? JSON.parse(pilotBytes.toString('utf8')) : null,
   pilotReportSha256: pilotBytes ? createHash('sha256').update(pilotBytes).digest('hex') : null,

@@ -42,6 +42,12 @@ Las credenciales no forman parte del reporte. Para escritura externa solo se mue
 de bloqueos, proveedor y modelo fijado. La vía humana puede liberar el diagnóstico sin configurar
 Gemini ni Groq.
 
+La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
+endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
+diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica
+la cascada, y solo `service_role` puede ejecutarla. La puerta de privacidad seguirá en `HOLD`
+hasta aplicar la migración, probarla contra la base real y aprobar una versión de política.
+
 ## Orden seguro para cerrar la puerta
 
 1. producir y revisar audio reservado;

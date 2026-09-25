@@ -26,6 +26,7 @@ function readyFixture() {
     })) },
     voiceCasting: { profiles: {} },
     pilotCriteria: { criteriaVersion: 'criteria-v1', status: 'approved' },
+    retentionPolicy: { policyVersion: 'retention-v1', status: 'approved' },
     releaseEvidence: {
       evidenceVersion: 'english-diagnostic-release-evidence-v1',
       updatedAt: reviewedAt,
@@ -64,6 +65,7 @@ test('the committed repository remains on HOLD with explicit independent blocker
   fixture.audioPublications = json('../config/diagnostic/english-listening-audio-publications.json');
   fixture.voiceCasting = json('../config/diagnostic/english-listening-voice-casting.json');
   fixture.pilotCriteria = json('../config/diagnostic/pilot-publication-criteria.json');
+  fixture.retentionPolicy = json('../config/diagnostic/data-retention-policy.json');
   fixture.releaseEvidence = json('../config/diagnostic/release-evidence.json');
   fixture.pilotReport = null;
   fixture.pilotReportSha256 = null;

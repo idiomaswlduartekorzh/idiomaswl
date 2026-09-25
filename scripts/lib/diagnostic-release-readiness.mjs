@@ -108,7 +108,8 @@ export function buildDiagnosticReleaseReadiness(input) {
   }
 
   const privacyBlockers = [];
-  if (!nonEmpty(evidence?.privacy?.retentionPolicyVersion)
+  if (input.retentionPolicy?.status !== 'approved'
+    || evidence?.privacy?.retentionPolicyVersion !== input.retentionPolicy?.policyVersion
     || !isIsoDate(evidence?.privacy?.approvedAt)
     || !nonEmpty(evidence?.privacy?.approvedBy)) {
     privacyBlockers.push('RETENTION_POLICY_NOT_APPROVED');
@@ -190,6 +191,8 @@ export function buildDiagnosticReleaseReadiness(input) {
     }),
     gate('database', databaseBlockers, { expectedMigration: input.expectedMigration }),
     gate('privacy', privacyBlockers, {
+      configuredPolicyVersion: input.retentionPolicy?.policyVersion ?? null,
+      configuredPolicyStatus: input.retentionPolicy?.status ?? null,
       retentionPolicyVersion: evidence?.privacy?.retentionPolicyVersion ?? null,
     }),
     gate('pilot', pilotBlockers, {

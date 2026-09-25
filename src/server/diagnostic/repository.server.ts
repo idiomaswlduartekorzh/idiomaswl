@@ -43,6 +43,33 @@ export interface DiagnosticPendingWritingAutomationContext {
   authorization: DiagnosticExternalWritingAuthorization;
 }
 
+export interface DiagnosticDataDeletionReceipt {
+  deletedAttempts: number;
+  deletedStages: number;
+  deletedResponses: number;
+  deletedWritingEvaluations: number;
+  deletedEvents: number;
+  deletedPilotReferences: number;
+  remainingAttempts: 0;
+}
+
+export async function deleteDiagnosticUserData(userId: string): Promise<DiagnosticDataDeletionReceipt> {
+  const { data, error } = await createAdminClient().rpc('delete_diagnostic_user_data', { p_user_id: userId });
+  if (error || !data || typeof data !== 'object' || Array.isArray(data)) {
+    throw new Error('diagnostic_deletion_unavailable');
+  }
+  const receipt = data as Record<string, unknown>;
+  const keys = [
+    'deletedAttempts', 'deletedStages', 'deletedResponses', 'deletedWritingEvaluations',
+    'deletedEvents', 'deletedPilotReferences', 'remainingAttempts',
+  ] as const;
+  if (keys.some(key => !Number.isInteger(receipt[key]) || Number(receipt[key]) < 0)
+    || receipt.remainingAttempts !== 0) {
+    throw new Error('diagnostic_deletion_unverified');
+  }
+  return receipt as unknown as DiagnosticDataDeletionReceipt;
+}
+
 /**
  * Trusted source for a future provider caller. Authorization is loaded with the
  * writing row and can never be supplied or overridden by a browser request.

@@ -174,9 +174,16 @@ Actualizado el 24 de septiembre de 2026:
   vía humana de escritura puede liberar el producto sin proveedor externo, pero exige al menos
   dos revisores verificados y SLA. El estado actual medido es `HOLD` en **0/8 gates**, coherente
   con la falta de evidencias externas y sin fingir un release.
+- **Privacidad — borrado implementado, política pendiente:** el usuario autenticado puede pedir
+  el borrado completo de sus intentos diagnósticos mediante una mutación same-origin con
+  confirmación explícita y cuota estricta. Una función transaccional exclusiva de `service_role`
+  bloquea carreras, cuenta intentos, etapas, respuestas, escritura, eventos y referencias,
+  elimina por cascada y rechaza cualquier residuo. Las duraciones de retención están documentadas
+  solo como propuesta; no existe purge programado y el gate no puede aprobarse hasta revisión de
+  privacidad y prueba contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **183 pruebas** y
+  borradores; el último corte local ejecutó **187 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.
