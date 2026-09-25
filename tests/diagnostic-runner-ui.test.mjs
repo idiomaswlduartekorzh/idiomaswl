@@ -26,6 +26,9 @@ test('runner supports resume, private audio, writing and uncertainty-aware resul
   assert.match(client, /writeObjectiveDraft/);
   assert.match(client, /readWritingDraft/);
   assert.match(client, /writeWritingDraft/);
+  assert.match(client, /recommendations/);
+  assert.match(client, /import\('jspdf'\)/);
+  assert.match(client, /nivel-radar-welearn\.pdf/);
 });
 
 test('adaptive UI has an independent server-side release flag', () => {

@@ -371,6 +371,10 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
   const globalLevel = typeof safe.globalLevel === 'string' ? safe.globalLevel : null;
   const globalRange = Array.isArray(safe.globalRange) ? safe.globalRange.map(String) : [];
   const skills = Array.isArray(safe.skills) ? safe.skills.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>) : [];
+  const warnings = Array.isArray(safe.warnings) ? safe.warnings.map(String) : [];
+  const recommendations = Array.isArray(safe.recommendations)
+    ? safe.recommendations.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>)
+    : [];
   return <section className={s.hero}><div className={s.shell}>
     <p className={s.eyebrow}>Perfil integral</p>
     <div className={s.resultLevel}>{globalLevel ?? '—'}</div>
@@ -382,7 +386,64 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
       const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
       return <div key={name} className={s.profileCard}><span>{SKILL_LABELS[name] ?? name}</span><b>{String(skill.estimatedLevel ?? '—')}</b><small>{range.length === 2 ? `${range[0]}–${range[1]} · ` : ''}{confidence}</small></div>;
     })}</div>
+    {recommendations.length > 0 && <><p className={s.eyebrow}>Ruta recomendada</p><div className={s.profileGrid}>{recommendations.slice(0, 3).map(recommendation => {
+      const skill = String(recommendation.skill ?? 'skill');
+      const practice = recommendation.practice && typeof recommendation.practice === 'object' ? recommendation.practice as Record<string, unknown> : {};
+      const href = typeof practice.href === 'string' && practice.href.startsWith('/') ? practice.href : '/practica/ingles';
+      return <div key={skill} className={s.profileCard}>
+        <span>Prioridad {String(recommendation.priority ?? '—')} · {SKILL_LABELS[skill] ?? skill}</span>
+        <b>{String(recommendation.currentLevel ?? '—')} → {String(recommendation.targetLevel ?? '—')}</b>
+        <small>{String(recommendation.reason ?? '')}</small>
+        <Link href={href}>{String(practice.label ?? 'Abrir práctica')} <span>→</span></Link>
+      </div>;
+    })}</div></>}
+    {warnings.length > 0 && <p className={s.note}>Advertencias del perfil: {warnings.join(' · ')}</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
-    <div className={s.actions}><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
+    <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
   </div></section>;
+}
+
+function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations, warnings }: {
+  globalLevel: string | null;
+  globalRange: string[];
+  skills: Record<string, unknown>[];
+  recommendations: Record<string, unknown>[];
+  warnings: string[];
+}) {
+  const [creating, setCreating] = useState(false);
+  async function download() {
+    setCreating(true);
+    try {
+      const { jsPDF } = await import('jspdf');
+      const doc = new jsPDF();
+      let y = 18;
+      const line = (text: string, size = 10) => {
+        doc.setFontSize(size);
+        const rows = doc.splitTextToSize(text, 174) as string[];
+        doc.text(rows, 18, y);
+        y += rows.length * (size * 0.45) + 4;
+      };
+      line('Nivel Radar WeLearn — perfil integral', 17);
+      line(`Nivel global: ${globalLevel ?? 'no estimado'}${globalRange.length === 2 ? ` · rango plausible ${globalRange[0]}–${globalRange[1]}` : ''}`, 12);
+      line('Habilidades', 13);
+      for (const skill of skills) {
+        const name = String(skill.skill ?? 'skill');
+        const range = Array.isArray(skill.plausibleRange) ? skill.plausibleRange.map(String) : [];
+        const confidence = typeof skill.confidence === 'number' ? `${Math.round(skill.confidence * 100)}%` : 'sin estimar';
+        line(`${SKILL_LABELS[name] ?? name}: ${String(skill.estimatedLevel ?? 'no estimado')}${range.length === 2 ? ` (${range[0]}–${range[1]})` : ''} · confianza ${confidence}`);
+      }
+      if (recommendations.length) {
+        line('Prioridades y próximos pasos', 13);
+        for (const recommendation of recommendations.slice(0, 3)) {
+          line(`${String(recommendation.priority ?? '—')}. ${SKILL_LABELS[String(recommendation.skill ?? '')] ?? String(recommendation.skill ?? '')}: ${String(recommendation.currentLevel ?? '—')} → ${String(recommendation.targetLevel ?? '—')}. ${String(recommendation.reason ?? '')}`);
+        }
+      }
+      if (warnings.length) line(`Advertencias: ${warnings.join(' · ')}`);
+      line('Resultado provisional hasta completar calibración con muestra real. No es una certificación oficial.', 9);
+      doc.save('nivel-radar-welearn.pdf');
+    } finally {
+      setCreating(false);
+    }
+  }
+  return <button className={s.secondary} disabled={creating} onClick={() => void download()}>{creating ? 'Creando PDF…' : 'Descargar PDF'}</button>;
 }

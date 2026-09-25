@@ -8,6 +8,7 @@ import {
 } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticObjectiveOutcome } from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
+import { buildEnglishDiagnosticRecommendations, type DiagnosticRecommendation } from './recommendations.ts';
 
 export interface DiagnosticCalibrationPolicy {
   version: string;
@@ -34,6 +35,7 @@ export interface DiagnosticCompositeResult extends DiagnosticResultProfile {
   overallStatus: 'not-estimated' | 'provisional' | 'calibrated';
   profileIsUneven: boolean;
   warnings: readonly string[];
+  recommendations: readonly DiagnosticRecommendation[];
 }
 
 const AUTHORED_LEVEL_DIFFICULTY: Readonly<Record<CefrLevel, number>> = {
@@ -192,5 +194,13 @@ export function buildDiagnosticCompositeResult(input: {
     });
     globalRange = [CEFR_LEVELS[Math.min(...ranges)], CEFR_LEVELS[Math.max(...ranges)]];
   }
-  return { ...input, globalLevel, globalRange, overallStatus, profileIsUneven, warnings };
+  return {
+    ...input,
+    globalLevel,
+    globalRange,
+    overallStatus,
+    profileIsUneven,
+    warnings,
+    recommendations: buildEnglishDiagnosticRecommendations(input.skills),
+  };
 }

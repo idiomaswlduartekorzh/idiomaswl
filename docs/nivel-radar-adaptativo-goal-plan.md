@@ -114,8 +114,11 @@ Actualizado el 24 de septiembre de 2026:
   nueva del manifiesto. El manifiesto comprometido permanece vacío y el inicio comprueba
   capacidad completa tanto del banco objetivo como de las cuatro consignas paralelas de
   escritura por nivel.
-- **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
-  distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
+- **Fase 6 — medición y reporte avanzados:** estimación IRT/EAP parametrizable, rango plausible,
+  confianza, distinción de omisiones y retención del nivel global ante evidencia incompleta
+  implementadas. El resultado persistido incluye ahora prioridades diferentes según el perfil,
+  un objetivo MCER observable por habilidad y enlaces existentes de práctica/curso. La pantalla
+  y el PDF se construyen desde las mismas estimaciones, rangos, recomendaciones y advertencias.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Fase 7 — instrumentación de piloto iniciada:** criterios cuantitativos versionados y todavía
   pendientes de aprobación académica gobiernan un informe agregado de finalización, rutas,
@@ -128,7 +131,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **148 pruebas** y
+  borradores; el último corte local ejecutó **152 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
