@@ -11,9 +11,29 @@
     "maxTruePeakDbfs": -1.5
   },
   "profiles": {
-    "narrator_a": { "voiceId": "", "approval": "pending_owner_listening_review" },
-    "narrator_b": { "voiceId": "", "approval": "pending_owner_listening_review" },
-    "speaker_a": { "voiceId": "", "approval": "pending_owner_listening_review" },
-    "speaker_b": { "voiceId": "", "approval": "pending_owner_listening_review" }
+    "narrator_a": {
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "sourceProfile": "toefl-2026/announcer",
+      "approval": "proposed_from_separately_approved_cast"
+    },
+    "narrator_b": {
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "voiceName": "Matilda - Knowledgable, Professional",
+      "sourceProfile": "toefl-2026/professor",
+      "approval": "proposed_from_separately_approved_cast"
+    },
+    "speaker_a": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sourceProfile": "toefl-2026/woman_a",
+      "approval": "proposed_from_separately_approved_cast"
+    },
+    "speaker_b": {
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sourceProfile": "toefl-2026/man_a",
+      "approval": "proposed_from_separately_approved_cast"
+    }
   }
 }

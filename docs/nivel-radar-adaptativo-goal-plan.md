@@ -119,7 +119,9 @@ Actualizado el 24 de septiembre de 2026:
   factura **36 archivos, 116 segmentos y 30.386 caracteres**; la generación exige hash exacto
   del paquete, tope de caracteres, reserva de créditos, semilla, cuatro voces existentes y
   aprobación explícita del reparto. La salida nunca va a `public/` y queda pendiente de QA
-  humano. Las cuatro voces siguen sin seleccionar, por lo que hoy el gasto está bloqueado.
+  humano. Se propusieron cuatro voces que ya tenían aprobación separada en el casting TOEFL,
+  pero esa aprobación no se hereda: el reparto diagnóstico sigue bloqueado hasta una escucha y
+  aprobación explícitas para este uso.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves

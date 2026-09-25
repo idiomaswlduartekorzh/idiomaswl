@@ -15,7 +15,7 @@ test('diagnostic audio invoice is deterministic and reports unresolved voice app
   assert.deepEqual(invoice, repeated);
   assert.equal(invoice.files, 2);
   assert.ok(invoice.billableCharacters > 100);
-  assert.ok(invoice.unresolvedProfiles.length > 0);
+  assert.deepEqual(invoice.unresolvedProfiles, []);
   assert.ok(invoice.unapprovedProfiles.length > 0);
   assert.equal(invoice.generationAuthorized, false);
 });
