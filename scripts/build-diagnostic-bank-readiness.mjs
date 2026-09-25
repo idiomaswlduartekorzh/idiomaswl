@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { CEFR_LEVELS } from '../src/lib/diagnostic/types.ts';
 import { ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES } from '../src/server/diagnostic/bank/language-use-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } from '../src/server/diagnostic/bank/listening.en.ts';
+import { ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES } from '../src/server/diagnostic/bank/listening-recorded.en.ts';
 import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from '../src/server/diagnostic/bank/language-use.en.ts';
 import { ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
@@ -19,6 +20,7 @@ const authored = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
 ];

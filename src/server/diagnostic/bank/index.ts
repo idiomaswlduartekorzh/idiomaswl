@@ -4,6 +4,7 @@ import approvals from '../../../../config/diagnostic/english-bank-approvals.json
 import { ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES } from './language-use-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from './language-use.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } from './listening.en.ts';
+import { ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES } from './listening-recorded.en.ts';
 import { ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES } from './reading-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from './reading.en.ts';
 import {
@@ -19,6 +20,7 @@ const objectiveCandidates: readonly DiagnosticBankRecord[] = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
 ];

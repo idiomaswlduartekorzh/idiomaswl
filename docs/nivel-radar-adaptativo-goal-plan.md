@@ -92,6 +92,13 @@ Actualizado el 24 de septiembre de 2026:
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
   previamente público; el selector bloquea cualquier contenido que no tenga exposición
   `reserved`, incluso si alguien cambia por error su estado a aprobado.
+- **Escucha reservada — producción inferior preparada, no contabilizada:** hay 12 briefs
+  originales A1–A2 —seis estímulos y doce decisiones por nivel— que usan el inventario
+  recuperado únicamente como referencia agregada de duración y entrega. Permanecen en estado
+  `production-brief`: no suman capacidad al banco. Un manifiesto vacío solo los materializa
+  como borradores reservados cuando cada grabación nueva coincide con la versión de producción,
+  duración, SHA-256 de audio, SHA-256 de transcripción y dos revisores de audio independientes;
+  después todavía necesitan revisión lingüística, de evaluación y alineación para promoción.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
@@ -121,7 +128,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **140 pruebas** y
+  borradores; el último corte local ejecutó **148 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
