@@ -3,9 +3,9 @@ import test from 'node:test';
 
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 
-test('original A1 and A2 reading drafts meet decision and stimulus floors', () => {
-  assert.equal(ENGLISH_DIAGNOSTIC_READING_CANDIDATES.length, 24);
-  for (const level of ['A1', 'A2']) {
+test('original A1 through B2 reading drafts meet decision and stimulus floors', () => {
+  assert.equal(ENGLISH_DIAGNOSTIC_READING_CANDIDATES.length, 48);
+  for (const level of ['A1', 'A2', 'B1', 'B2']) {
     const records = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.filter((record) => record.publicItem.levelCandidate === level);
     assert.equal(records.length, 12);
     assert.equal(new Set(records.map((record) => record.publicItem.stimulus.stimulusId)).size, 6);
@@ -15,6 +15,7 @@ test('original A1 and A2 reading drafts meet decision and stimulus floors', () =
 
 test('reading content is reserved, original, and remains an unapproved draft', () => {
   const prompts = new Set();
+  const wordBounds = { A1: [15, 50], A2: [40, 90], B1: [80, 130], B2: [100, 160] };
   for (const record of ENGLISH_DIAGNOSTIC_READING_CANDIDATES) {
     assert.equal(record.status, 'reserved');
     assert.equal(record.exposure, 'reserved');
@@ -22,7 +23,9 @@ test('reading content is reserved, original, and remains an unapproved draft', (
     assert.equal(record.source.kind, 'welearn-original');
     assert.equal(prompts.has(record.publicItem.prompt), false);
     prompts.add(record.publicItem.prompt);
-    assert.ok(record.publicItem.stimulus.body.split(/\s+/u).length >= 20);
+    const words = record.publicItem.stimulus.body.split(/\s+/u).length;
+    const [minimum, maximum] = wordBounds[record.publicItem.levelCandidate];
+    assert.ok(words >= minimum && words <= maximum, `${record.publicItem.id} has ${words} words`);
   }
 });
 
@@ -38,6 +41,5 @@ test('reading keys are balanced, rationalized, and absent from public serializat
     assert.equal(serialized.includes('rationale'), false);
     assert.equal(serialized.includes('scoring'), false);
   }
-  assert.deepEqual(positions, [8, 8, 8]);
+  assert.deepEqual(positions, [16, 16, 16]);
 });
-

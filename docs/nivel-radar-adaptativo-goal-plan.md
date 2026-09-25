@@ -47,9 +47,12 @@ Actualizado el 24 de septiembre de 2026:
   feature flag, origen, consentimiento, audio, autenticación, cuota y capacidad del banco. La
   transición localizador→precisión ya tiene endpoint autenticado: vuelve a enlazar intento,
   etapa, owner, versión y banco desde la base de datos, puntúa en servidor y devuelve la forma
-  de precisión; los reintentos idénticos recuperan la etapa persistida. Falta ejecutar las
-  migraciones contra Postgres (el entorno actual no tiene Docker ni Podman), completar
-  precisión→escritura, reanudación/finalización y verificar autorización contra una base real.
+  de precisión. La transición precisión→escritura también combina las observaciones guardadas,
+  calcula evidencia provisional por habilidad, restringe la consigna a la ruta asignada y
+  persiste la etapa de escritura atómicamente; los reintentos idénticos recuperan la etapa ya
+  persistida. Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker
+  ni Podman), completar confirmación, reanudación/finalización y verificar autorización contra
+  una base real.
 - **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación de perfiles
   contradictorios, selector balanceado y simulador A1–C2 implementados. La simulación inicial
   detectó sobreenrutamiento y permitió ajustar los cortes provisionales a 5/12 y 10/12; el
@@ -64,17 +67,18 @@ Actualizado el 24 de septiembre de 2026:
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
   previamente público; el selector bloquea cualquier contenido que no tenga exposición
   `reserved`, incluso si alguien cambia por error su estado a aprobado.
-- **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–A2 ya
-  tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **72/288
-  decisiones objetivas** y **6/24 celdas** con capacidad editorial de borrador, con claves
+- **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–B2 ya
+  tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **144/288
+  decisiones objetivas** y **12/24 celdas** con capacidad editorial de borrador, con claves
   privadas, racionales de clave y distractores, posiciones equilibradas y estado reservado. El
   reporte `docs/diagnostic-bank-readiness.json` separa estos avances del banco operativo, que
   continúa en cero hasta revisión y piloto.
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
-- **Pruebas actuales:** la suite específica incorpora ahora controles del inventario de
-  candidatos y TypeScript compila sin errores (véase el último resultado de CI para el conteo).
+- **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **88 pruebas** y
+  TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.

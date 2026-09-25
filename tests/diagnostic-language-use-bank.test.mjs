@@ -3,9 +3,9 @@ import test from 'node:test';
 
 import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from '../src/server/diagnostic/bank/language-use.en.ts';
 
-test('the first original language-use tranche fills A1 and A2 grammar and vocabulary draft capacity', () => {
-  assert.equal(ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.length, 48);
-  for (const level of ['A1', 'A2']) {
+test('the original language-use tranches fill A1 through B2 grammar and vocabulary draft capacity', () => {
+  assert.equal(ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.length, 96);
+  for (const level of ['A1', 'A2', 'B1', 'B2']) {
     for (const skill of ['grammar', 'vocabulary']) {
       const cell = ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.filter((record) =>
         record.publicItem.levelCandidate === level && record.publicItem.skill === skill);
@@ -44,6 +44,6 @@ test('answer positions are balanced and content has no duplicate prompts or opti
     const maximumLength = Math.max(...options.map((option) => option.text.length));
     if (options[keyIndex].text.length === maximumLength) longestOptionKeys += 1;
   }
-  assert.deepEqual(positions, [16, 16, 16]);
-  assert.ok(longestOptionKeys <= 24, 'the longest-option strategy must not beat chance materially');
+  assert.deepEqual(positions, [32, 32, 32]);
+  assert.ok(longestOptionKeys <= 48, 'the longest-option strategy must not beat chance materially');
 });
