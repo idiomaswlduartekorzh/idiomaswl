@@ -31,12 +31,21 @@ function fixtureRecord(skill, level, variant) {
 const completeBank = objectiveSkills.flatMap(skill =>
   CEFR_LEVELS.flatMap(level => Array.from({ length: 12 }, (_, index) => fixtureRecord(skill, level, index + 1))),
 );
+const completeWritingBank = CEFR_LEVELS.flatMap(level => Array.from({ length: 4 }, (_, index) => ({
+  publicPrompt: {
+    id: `en-${level.toLowerCase()}-writing-${index + 1}`, contentVersion: '1', language: 'en', levelCandidate: level,
+    title: 'Fixture', situation: 'Write a response.', instructions: ['Respond.'], minimumWords: 1, maximumWords: 100,
+    recommendedMinutes: 10,
+  },
+  status: 'pilot', exposure: 'reserved', review: { status: 'approved' },
+  source: { kind: 'welearn-original', reference: 'fixture' },
+})));
 
 test('creates and persists a two-hour locator without exposing private bank fields', async () => {
   let persisted;
   let id = 0;
   const delivery = await prepareEnglishDiagnosticAttempt('user-1', {
-    bank: completeBank, bankVersion: 'bank-v1', selectionSecret: 'x'.repeat(32),
+    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 'x'.repeat(32),
     now: () => new Date('2026-09-24T12:00:00.000Z'), newId: () => `00000000-0000-4000-8000-${String(++id).padStart(12, '0')}`,
     persist: async input => { persisted = input; },
   });
@@ -55,7 +64,7 @@ test('same attempt identity produces the same form but a different identity chan
   async function create(attemptId) {
     let call = 0;
     return prepareEnglishDiagnosticAttempt('user-1', {
-      bank: completeBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
+      bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
       now: () => new Date('2026-09-24T12:00:00.000Z'),
       newId: () => call++ === 0 ? attemptId : '00000000-0000-4000-8000-999999999999',
       persist: async () => {},
@@ -70,11 +79,15 @@ test('same attempt identity produces the same form but a different identity chan
 
 test('fails closed for an incomplete bank or weak server secret', async () => {
   const base = {
-    bank: completeBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
+    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1', selectionSecret: 's'.repeat(32),
     now: () => new Date('2026-09-24T12:00:00.000Z'), newId: () => crypto.randomUUID(), persist: async () => {},
   };
   await assert.rejects(
     () => prepareEnglishDiagnosticAttempt('user-1', { ...base, bank: [] }),
+    error => error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY',
+  );
+  await assert.rejects(
+    () => prepareEnglishDiagnosticAttempt('user-1', { ...base, writingBank: [] }),
     error => error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY',
   );
   await assert.rejects(

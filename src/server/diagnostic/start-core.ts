@@ -3,6 +3,8 @@ import { createHash, createHmac } from 'node:crypto';
 import { ENGLISH_DIAGNOSTIC_BLUEPRINT } from '../../lib/diagnostic/blueprint.ts';
 import { DIAGNOSTIC_ENGINE_VERSION, type DiagnosticStageDelivery } from '../../lib/diagnostic/delivery.ts';
 import type { DiagnosticStageReceipt } from '../../lib/diagnostic/types.ts';
+import { CEFR_LEVELS } from '../../lib/diagnostic/types.ts';
+import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
 import { toDiagnosticPublicItem } from './scoring.ts';
 import { auditEnglishMstCapacity, selectEnglishLocator } from './selection.ts';
 import type { DiagnosticBankRecord } from './types.ts';
@@ -37,6 +39,7 @@ export interface PersistDiagnosticAttemptInput {
 
 export interface PrepareDiagnosticAttemptDependencies {
   bank: readonly DiagnosticBankRecord[];
+  writingBank: readonly DiagnosticWritingPromptRecord[];
   bankVersion: string;
   selectionSecret: string;
   now: () => Date;
@@ -57,8 +60,14 @@ export async function prepareEnglishDiagnosticAttempt(
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
   }
   const deficits = auditEnglishMstCapacity(dependencies.bank);
-  if (deficits.length) {
-    throw new DiagnosticStartError('BANK_NOT_READY', `diagnostic objective bank has ${deficits.length} capacity deficits`);
+  const writingDeficits = CEFR_LEVELS.filter(level => dependencies.writingBank.filter(record =>
+    record.publicPrompt.language === 'en'
+    && record.publicPrompt.levelCandidate === level
+    && (record.status === 'pilot' || record.status === 'operational')
+    && record.exposure === 'reserved'
+    && record.review.status === 'approved').length < ENGLISH_DIAGNOSTIC_BLUEPRINT.writing.promptVariantsPerLevel);
+  if (deficits.length || writingDeficits.length) {
+    throw new DiagnosticStartError('BANK_NOT_READY', `diagnostic bank has ${deficits.length} objective and ${writingDeficits.length} writing capacity deficits`);
   }
 
   const now = dependencies.now();

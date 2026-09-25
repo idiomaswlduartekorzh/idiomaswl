@@ -8,6 +8,7 @@ import { createClient } from '@/lib/supabase/server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
+  ENGLISH_DIAGNOSTIC_WRITING_BANK,
 } from './bank';
 import { persistCreatedDiagnosticAttempt } from './repository.server';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from './start-core';
@@ -67,6 +68,7 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   try {
     const delivery = await prepareEnglishDiagnosticAttempt(user.id, {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+      writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       bankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
       now: () => new Date(),
@@ -86,4 +88,3 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos iniciar el diagnóstico. Inténtalo más tarde.', 503);
   }
 }
-

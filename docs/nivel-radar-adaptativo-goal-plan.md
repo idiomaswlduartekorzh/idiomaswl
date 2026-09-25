@@ -96,11 +96,16 @@ Actualizado el 24 de septiembre de 2026:
   privadas, racionales de clave y distractores, posiciones equilibradas y estado reservado. El
   reporte `docs/diagnostic-bank-readiness.json` separa estos avances del banco operativo, que
   continúa en cero hasta revisión y piloto.
+- **Puerta editorial fail-closed implementada:** un manifiesto versionado solo promueve a piloto
+  contenido reservado cuyo hash y versión coinciden, con identidades independientes para
+  revisión lingüística y de evaluación; escucha exige además revisión de alineación de audio.
+  El manifiesto comprometido permanece vacío y el inicio comprueba capacidad completa tanto
+  del banco objetivo como de las cuatro consignas paralelas de escritura por nivel.
 - **Fase 6 — medición iniciada:** estimación IRT/EAP parametrizable, rango plausible, confianza,
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **118 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **122 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
