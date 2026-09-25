@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-24",
+  "source": "src/app/(site)/nivel-radar/NivelRadarClient.tsx",
+  "sourceSha256": "df0b59d9a655b9c8e8bb165f69722426babf9d5db8f1e58e8d0dba246a89c808",
+  "status": "known-defective-baseline",
+  "pool": {
+    "totalItems": 76,
+    "byLevelAndSkill": {
+      "A1": { "grammar": 1, "vocabulary": 2, "reading": 1, "listening": 0 },
+      "A2": { "grammar": 2, "vocabulary": 1, "reading": 5, "listening": 0 },
+      "B1": { "grammar": 2, "vocabulary": 2, "reading": 7, "listening": 1 },
+      "B2": { "grammar": 37, "vocabulary": 1, "reading": 1, "listening": 1 },
+      "C1": { "grammar": 1, "vocabulary": 1, "reading": 1, "listening": 3 },
+      "C2": { "grammar": 2, "vocabulary": 2, "reading": 1, "listening": 3 }
+    },
+    "toeflC1ImportedItems": 0,
+    "cambridgeB2McqClassifiedAsGrammar": 36
+  },
+  "delivery": {
+    "startsAt": "A1",
+    "maximumScheduledDecisions": 40,
+    "earliestStopAfterDecisions": 4,
+    "stopErrors": 2,
+    "passRate": 0.75,
+    "questionSelection": "first-unused-at-level",
+    "answerKeysDeliveredToBrowser": true,
+    "writingMeasured": false,
+    "responsesPersisted": false
+  },
+  "audio": {
+    "b1Master": { "path": "/audio/ielts/ielts-listening-set-1.mp3", "durationSeconds": 1379.736, "questionsUsed": 1 },
+    "b2Master": { "path": "/audio/ielts/ielts-listening-set-4.mp3", "durationSeconds": 1745.032, "questionsUsed": 1 },
+    "purposeBuiltC1C2Files": 2
+  },
+  "knownFailures": [
+    "No listening evidence at A1 or A2.",
+    "One B1 and one B2 listening item cannot satisfy their two scheduled listening positions without skill fallback.",
+    "Cambridge Reading and Use of English titles cause all imported MCQs to be labelled grammar.",
+    "The TOEFL adapter only accepts legacy mcq items, while the source uses TOEFL-specific reading types.",
+    "The result reports raw skill percentages across items with different intended difficulty.",
+    "The client bundle contains answer indices.",
+    "The test does not measure writing."
+  ]
+}

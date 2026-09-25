@@ -1,0 +1,2252 @@
+{
+  "inventoryVersion": "diagnostic-legacy-audio-v1",
+  "snapshotDate": "2026-09-24",
+  "purpose": "Recovery provenance and technical inventory; inclusion does not imply linguistic approval.",
+  "totals": {
+    "items": 80,
+    "englishGitRecoverable": 60,
+    "italianPublicLegacy": 20
+  },
+  "items": [
+    {
+      "id": "en-a1-legacy-listening-01",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 1,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-01.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "4dc07b0ca5a61d9c58781f1c3d41f356cb0c2f4b",
+        "sha256": "b6300ad4a3ca54cd8f6216c8f6c8570c2517d15354972d2705b26ab54eeb6ed4",
+        "bytes": 162839,
+        "durationSeconds": 20.323,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:1"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-02",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 2,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-02.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "ce04161cd089e5946757e703bbf25d37bcf4f902",
+        "sha256": "fffce79b71a39276f16028b4de12c89a22f4cebf6caf4e483ce8442af2c39244",
+        "bytes": 164928,
+        "durationSeconds": 20.584,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:2"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-03",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 3,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-03.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "abcc1d6124f790a7bf71b8e9300977681bf648f4",
+        "sha256": "7f24be0e6f0a947207cbfc08cd1721ee1922c3c4b5d75c5c29f2572937e8b075",
+        "bytes": 159704,
+        "durationSeconds": 19.931,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:3"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-04",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 4,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-04.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "e32ab36ec417f17db88790e7d1fcc0a571f4ab80",
+        "sha256": "d32d89601154d55e9943bcd031dc23d6c4298928f7f734c228b20c5974fe7a46",
+        "bytes": 195021,
+        "durationSeconds": 24.346,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:4"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-05",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 5,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-05.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "a27268befb41e431e05123222855cfc5d1702f95",
+        "sha256": "d82dedd5746e87d0fee4361c0e97c5d321bf6d9167e6d5ead839477536468523",
+        "bytes": 173079,
+        "durationSeconds": 21.603,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:5"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-06",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 6,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-06.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "c5961cd48dedd93a5447ffd016dc10d93520118e",
+        "sha256": "1c75b93a487a9c928de67822dbaf4a86c86a8e3110924c0f24262d4c44135e05",
+        "bytes": 162421,
+        "durationSeconds": 20.271,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:6"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-07",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 7,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-07.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "2ae135b37f5a4d44652a27e5399ea0cc7399e0c2",
+        "sha256": "88573bb5c5917c545f0f02dccc34283c7fdd18cfd60e2fcf6dfe3790a1030146",
+        "bytes": 196902,
+        "durationSeconds": 24.581,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:7"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-08",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 8,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-08.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "21a32ec3b4be90b92dd02eb9df5dfc1d047fcafb",
+        "sha256": "7bd4a198398a53647d2d7e0540a0211d53fe4afb765bd9b748973b43a46d139f",
+        "bytes": 200037,
+        "durationSeconds": 24.973,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:8"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-09",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 9,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-09.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "362fe2bdb51ee9e8c9914bc3e1caade04238422f",
+        "sha256": "3fe4a77c0fb1846f5c77694a8c537cb915f07f59f3be8e432c4ee776ccc7e2c2",
+        "bytes": 176840,
+        "durationSeconds": 22.073,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:9"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-10",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 10,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-10.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "443b916ffd3fdbe8591c9c9f672c9f46758d5a92",
+        "sha256": "e729c37aee513ae3809ba1aa66e835923fb70fa76e1ad5b066d3901ab3f96d90",
+        "bytes": 202127,
+        "durationSeconds": 25.234,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:10"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-11",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 11,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-11.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "83fdfea10a0ae1450d0e8a40ccf49e51d2869b6d",
+        "sha256": "44da0224d913da13858477e9c9b2cbc369e4a7b7264980c6186b61a36f00af5f",
+        "bytes": 196902,
+        "durationSeconds": 24.581,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:11"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-12",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 12,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-12.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "8c4ffaf397e6e4e6a68c62533a3d99b314a08829",
+        "sha256": "4f1e41b2ef3d31861a3831f2f523ae8491f69a75feb4cdd2f4e9067abf7944c3",
+        "bytes": 214875,
+        "durationSeconds": 26.828,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:12"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-13",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 13,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-13.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "b21142a327465ee0e212b4383877036cbafe851e",
+        "sha256": "790240bd26231fac6d510f3fbe24d2fb41413d45a1bf191af7e5abe242a9625d",
+        "bytes": 179766,
+        "durationSeconds": 22.439,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:13"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-14",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 14,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-14.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "d0bb6328f931e05ac4535b0acc595f364a8012e5",
+        "sha256": "f0f564d2205c9211c6498971e0b9cb2980b2fac08e58226ecb8d15330d997a0a",
+        "bytes": 164928,
+        "durationSeconds": 20.584,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:14"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-15",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 15,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-15.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "c013aa6c6af93ab2531e4629a5edaa829ce69373",
+        "sha256": "125fe8468925b98fb4e6a77ee88fb07a6d1f8feee7d66b35730506a1d2b64d15",
+        "bytes": 188752,
+        "durationSeconds": 23.562,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:15"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-16",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 16,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-16.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "49fbf9b40b3bfc17979ec311d097aab493f53a39",
+        "sha256": "d87d90c9e150482ff03c3da0b9565299519b54f855213f44256b6947f11e9cad",
+        "bytes": 169526,
+        "durationSeconds": 21.159,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:16"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-17",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 17,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-17.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "30294078ad17debab248b604ecad90bca250c9f5",
+        "sha256": "612e5f70fe0f93cb798d3db71df1dd17a25618b9f244bb5d8ff04d8e5aeb1eed",
+        "bytes": 172452,
+        "durationSeconds": 21.525,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:17"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-18",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 18,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-18.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "ed17a322145562f73f69b412634fe490b65babfc",
+        "sha256": "605e56e6667ae8a75f4b6ca3cdbaddae323eee8540db7a9ee8a7106fc5214cd2",
+        "bytes": 237235,
+        "durationSeconds": 29.623,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:18"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-19",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 19,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-19.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "c78bbe8fd2179ba09feceb5113cbf13844ddd793",
+        "sha256": "8176c965887cb863ad95bcff3da01f3912a62832e3b23997387b073bbcef7503",
+        "bytes": 252073,
+        "durationSeconds": 31.478,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:19"
+      }
+    },
+    {
+      "id": "en-a1-legacy-listening-20",
+      "language": "en",
+      "levelCandidate": "A1",
+      "order": 20,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a1/listening-20.mp3",
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "72c90ff6bcbe4c2df0c1daeead0af94c6a4f8cd8",
+        "sha256": "385737b782fa47d0dd0bd247ee9331dff0c247e8a73527b15e874da814eafc9b",
+        "bytes": 258342,
+        "durationSeconds": 32.261,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "a78365b6f47abca69fce15e89b5ee9157d862566",
+        "gitBlob": "68458fe8af2cd3ec829e4ef5d1d86a68573c7b05",
+        "sha256": "6e5ec94dca749b7f0eabbb2e43622e0908dad8cd4de9a6023f667d042ae6bd04",
+        "path": "src/data/practica/ingles-a1-listening.ts",
+        "mapping": "array-order:20"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-01",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 1,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-01.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "48c90d74de218317ceb95a99e992e850cd749807",
+        "sha256": "0868e1745d611523c063a64523f29012846fd8047bfec1095404729f8dcd09ee",
+        "bytes": 269836,
+        "durationSeconds": 33.698,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:1"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-02",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 2,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-02.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "5b6b6904fac727c2882e18c0720bebefba9b1aca",
+        "sha256": "5163e0ac85b35cd5d3ae1d23700ad13cb0d00a4d42ea4b41e08836c9a7ebe148",
+        "bytes": 260014,
+        "durationSeconds": 32.47,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:2"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-03",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 3,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-03.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "409f1eb3833115c590dd83433f44a82311ea9b49",
+        "sha256": "0f59ea148ab12bb84e6513e8d39d975a386926f87faa4115e9c300f484d14752",
+        "bytes": 269836,
+        "durationSeconds": 33.698,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:3"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-04",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 4,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-04.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "ff9af1fe054499b0b6d79867a981ef20ae85cf7e",
+        "sha256": "6949af4a9023fe1347ab77822af8ddff10eca738f532f2103cb00733d6c25a1a",
+        "bytes": 237026,
+        "durationSeconds": 29.597,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:4"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-05",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 5,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-05.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "054281db372610c0723eb26cb11b696076f9ba3f",
+        "sha256": "f919d3d62062b7df34f7ed3deca8e7af2deab229e02b1397864ca8b25c806151",
+        "bytes": 200664,
+        "durationSeconds": 25.051,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:5"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-06",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 6,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-06.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "2b485de520fe2528956be2205a14d7fb01780b41",
+        "sha256": "7f35b876f2b191fdf8f2df4cd3a2eceb489805b062763c8d7b82be070df3812f",
+        "bytes": 181229,
+        "durationSeconds": 22.622,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:6"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-07",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 7,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-07.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "89f1418fc0023d4a1737c04ea036c0a60df8ba1d",
+        "sha256": "9d0d7589252f6d743cdf0a86f3d19d6de87c02dac75781f2495c4a075a212395",
+        "bytes": 200664,
+        "durationSeconds": 25.051,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:7"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-08",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 8,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-08.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "0abcbc8922881bf5c85af9c8e89f913e3359d815",
+        "sha256": "8be550e1e0d8f17de1ae74e265873ffb048137e1fcb60c628c4b6b0699cd31ce",
+        "bytes": 190633,
+        "durationSeconds": 23.798,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:8"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-09",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 9,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-09.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "0490cf40ce12d51cc6a22eae4ed0855738e8619d",
+        "sha256": "626e8c9e924154732dcddf37eb11c82392cf945f27d62b7131cb706da4ff9d4d",
+        "bytes": 167227,
+        "durationSeconds": 20.872,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:9"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-10",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 10,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-10.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "ee5b294aa436bbd465dca3d2240ce83c4e1938f3",
+        "sha256": "3281ef92cdc7f5fd870ee0b471239d933bc8599cbaa7458ff1988b6d4e12b1df",
+        "bytes": 189797,
+        "durationSeconds": 23.693,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:10"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-11",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 11,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-11.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "42091ea92cb744b228df567cb3a1f602e3ff5c6a",
+        "sha256": "c2c87fe9a70b1906f196d32b59d25a632a48154ea8af95f35db7a125e8e9f8f9",
+        "bytes": 169526,
+        "durationSeconds": 21.159,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:11"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-12",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 12,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-12.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "2160d303f2ceaf5b95b02d8ef9c879a0bf5e555b",
+        "sha256": "5c5a211e5fc861fcbdf17f7216747b17455bde235f32769a9623aa1c66deacf3",
+        "bytes": 168272,
+        "durationSeconds": 21.002,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:12"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-13",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 13,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-13.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "c811f0c2007688699b0f731247dea42a35a11296",
+        "sha256": "5f5c0b380955d08eaf042846c25a6fd447ad765ce4cfd5d2fd0e46b958299451",
+        "bytes": 193559,
+        "durationSeconds": 24.163,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:13"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-14",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 14,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-14.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "4bbb2c2fb8a67a31deb944525f159ff805c419cf",
+        "sha256": "072360c646e6e2bbb1256c1cfd240a88d072fba4f21e3cea4b205e9fdaf9522a",
+        "bytes": 191051,
+        "durationSeconds": 23.85,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:14"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-15",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 15,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-15.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "dc54e581d966bd858acd3a9be4ce5c1b8b596e24",
+        "sha256": "3527134328e995e87a2963f4161bfcd40c13b84922d55db50c801710d42dc0d5",
+        "bytes": 188752,
+        "durationSeconds": 23.562,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:15"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-16",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 16,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-16.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "fc79e7428922e46a66436ee63316bbacc594e780",
+        "sha256": "0fc05218b363874ea9e8a8b9c94fa4d735a01f02ef86c7847a768863f9a4239d",
+        "bytes": 221144,
+        "durationSeconds": 27.611,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:16"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-17",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 17,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-17.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "3926bfb49e7de05ce200d96b304e30a8b17f3d56",
+        "sha256": "aac3dd42d391735e28e6fc53a0ba289feeaab6a37a1a461bea5e4bc2f0095c8b",
+        "bytes": 233265,
+        "durationSeconds": 29.127,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:17"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-18",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 18,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-18.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "a7d358bf242a831e984af9463d873e1a4bed1232",
+        "sha256": "e1102372c7cc6df12750f95fca671722cdaa958797d3464ba4e54d1673ab2247",
+        "bytes": 203590,
+        "durationSeconds": 25.417,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:18"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-19",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 19,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-19.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1ff2edbc06c8e93b64a3a720a34c1a954f48c29f",
+        "sha256": "22f63db0935395a670941eb21a4ef5dec7dbdb21d489e740a2f438a95e6eb7d4",
+        "bytes": 186871,
+        "durationSeconds": 23.327,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:19"
+      }
+    },
+    {
+      "id": "en-a2-legacy-listening-20",
+      "language": "en",
+      "levelCandidate": "A2",
+      "order": 20,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/a2/listening-20.mp3",
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "c6110751dd3c9ba495fc412baad95dbe88861ad8",
+        "sha256": "3b0406bce3b7ad787481894ac367e0926d4e5c44795f5687b690831107d13934",
+        "bytes": 221353,
+        "durationSeconds": 27.638,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "13343f8f750cc46a241e1bdc70b23190120d2f72",
+        "gitBlob": "1e9f2ba56d1d9c577c4cbdbbb36b26fac681b72d",
+        "sha256": "42d75b25b3667990f1751ba2897c81fe33ce896dc09f18185cb66a4e828b0565",
+        "path": "src/data/practica/ingles-a2-listening.ts",
+        "mapping": "array-order:20"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-01",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 1,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-01.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "7cd9ffa45f4bf63de38ff2606a3fa28c0200cf94",
+        "sha256": "5f182b2d24b1ddbb3a636ba89a974cab6fee44e2b1ef09419b053d4fc5eccca6",
+        "bytes": 283002,
+        "durationSeconds": 35.344,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:1"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-02",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 2,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-02.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "e07b62772f9198bc9d0d62c053d0b093170904e0",
+        "sha256": "235db677f644a1c2e7c823c1c571fd82383d17b99890ddbaaf90b276b7619fce",
+        "bytes": 324380,
+        "durationSeconds": 40.516,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:2"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-03",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 3,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-03.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "ce95727a070cf960313a5e8eb4c670a6be7d75ae",
+        "sha256": "aff398c34ca4bd06a36698df6401f6537e5677520ca1e0811ed17a01b14a7941",
+        "bytes": 250819,
+        "durationSeconds": 31.321,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:3"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-04",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 4,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-04.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "cfe163864d13ada195e70dc294e6e8d205b99ed2",
+        "sha256": "cb017b2b1f906460d71e0b161a4f2f669aaa4cf411d6414b4d79bbead0d3aca7",
+        "bytes": 299093,
+        "durationSeconds": 37.355,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:4"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-05",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 5,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-05.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "4de1b1c988bc6185f7efc5c395a501853cc532e9",
+        "sha256": "c0b8e31e2ee0a3e1de43a44abcc67e1a6aed321dcbe7d361ab16557ccafa8c66",
+        "bytes": 349248,
+        "durationSeconds": 43.624,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:5"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-06",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 6,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-06.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "3584bf7cbf7e5315329e84b23e9a9148ab56adef",
+        "sha256": "041f0417af7a049132d769a8ec950beb6eec1d3d6975e1d8584a6eae8aa60b14",
+        "bytes": 322499,
+        "durationSeconds": 40.281,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:6"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-07",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 7,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-07.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "78665d9bd0453200c954c37f67f73f701a496d48",
+        "sha256": "298dfb12a8608b622310e6aa66f9b084fc825efea43cc0e2ffb359fc0e29e384",
+        "bytes": 314558,
+        "durationSeconds": 39.288,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:7"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-08",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 8,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-08.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "fd9685fe75133f7c21d20a3079ff8967085335e8",
+        "sha256": "2efef4102a2de61d7aa7ef92a6b1436647330471636c0f8526e4a858b4b97f4e",
+        "bytes": 292406,
+        "durationSeconds": 36.519,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:8"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-09",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 9,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-09.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "b422fb824c4bc53835eac2a04f48c5c6cb59974b",
+        "sha256": "4326775e770e56b4469de26b9de012748ae38e7157cad3c608118dc55b23ebf3",
+        "bytes": 355100,
+        "durationSeconds": 44.356,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:9"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-10",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 10,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-10.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "07c7cee0c89b656ad88c8c44c753bb3af86062e0",
+        "sha256": "74c0a8dca4df6953a955363c5b77deb0cdc9ff1b8cca5edc4cec2ffdc267bd4c",
+        "bytes": 318737,
+        "durationSeconds": 39.811,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:10"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-11",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 11,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-11.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "5ec34c3ed8d9c5c966df87912673d4fba3de1ff7",
+        "sha256": "dc644b1cb7ebe2da1b92fb547fcd49f98069778f36a8a3de8157d1004e9a1be9",
+        "bytes": 312259,
+        "durationSeconds": 39.001,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:11"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-12",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 12,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-12.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "dea4f204760e2c812a56139f77f68b9b0905dd2e",
+        "sha256": "8d6629682d499685c1992bb2fc7410415686c9846c34ecab2f694d73e73445ed",
+        "bytes": 332112,
+        "durationSeconds": 41.482,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:12"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-13",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 13,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-13.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "90da1cb246bd48798ee58a679ef19f82fa3e46a8",
+        "sha256": "32d0a35351118cd4482513d6f9896a18f047b5f87a61bf6a13d581155421d2f2",
+        "bytes": 328768,
+        "durationSeconds": 41.064,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:13"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-14",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 14,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-14.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "57592df4bd2f4b8368d78c14dafd9eca94fd4aa0",
+        "sha256": "4b4c05df16078fcbe1136222e023eda5fcb9a5e7cc5e4aee7cb7e19a81527227",
+        "bytes": 324589,
+        "durationSeconds": 40.542,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:14"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-15",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 15,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-15.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "9f8b1b1e41965a20e4de29f9d93e84c1d6271724",
+        "sha256": "d886e9560c5aa5bd0820764f9ecc80d64ec8e161a562cebbe481530e8c3ba680",
+        "bytes": 384566,
+        "durationSeconds": 48.039,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:15"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-16",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 16,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-16.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "f22416ae15c5734c5233f056aa95f2f3f3444c2c",
+        "sha256": "2e7fb4cf5ef38b7933ff0852872169dee095324072b327f9a739829b37a8c83e",
+        "bytes": 311841,
+        "durationSeconds": 38.949,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:16"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-17",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 17,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-17.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "8fd0c6a675c50da8161f0af37402aa826cffde2e",
+        "sha256": "144f773c3beb0e90730bdd0b01c2649b1272d3ebf2ba125ed73d3d3d27423c6b",
+        "bytes": 346114,
+        "durationSeconds": 43.233,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:17"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-18",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 18,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-18.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "9f285c47b7de253e9a65719d3193a9a1f3333379",
+        "sha256": "a647e0e517fa7231cabafd508b16eef5101ff5c9ed119790387766c20053394b",
+        "bytes": 344651,
+        "durationSeconds": 43.05,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:18"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-19",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 19,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-19.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "0d37123f23fcdfdde9477b5831e08f91a342717d",
+        "sha256": "d95c37c6619ea6396b0800893e0f24e5d8ac2c194026c26bae1c94e938cb82fc",
+        "bytes": 367639,
+        "durationSeconds": 45.923,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:19"
+      }
+    },
+    {
+      "id": "en-b1-legacy-listening-20",
+      "language": "en",
+      "levelCandidate": "B1",
+      "order": 20,
+      "exposure": "previously-public",
+      "availability": "git-recoverable",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/ingles/b1/listening-20.mp3",
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "b5a576619a3922781f93807bba6e933418e9d07d",
+        "sha256": "b6f4aaa399a1cb4972ec79e2d2bf0f57937be5686ce995896f21dddd34ec98d4",
+        "bytes": 353010,
+        "durationSeconds": 44.095,
+        "channels": 1,
+        "sampleRateHz": 44100,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "9712f2d4e6639bcc1a412173361ae88c09964632",
+        "gitBlob": "09768e3bce993283e5745d566ab960b76e9ae402",
+        "sha256": "83a70c96f9f2e9bde38cabf9c5d0f4b5ca32fad46ca46cb9df4443230eae740e",
+        "path": "src/data/practica/ingles-b1-listening.ts",
+        "mapping": "array-order:20"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-01",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 1,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-al-bar-ordinare-un-caffe.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "794d1b46e6162bdbd58a99482aa5255373b4da90",
+        "sha256": "be439e7187f025a17e886143599a3cbf892742889f14227338f97835238546f3",
+        "bytes": 172461,
+        "durationSeconds": 21.528,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-al-bar-ordinare-un-caffe"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-02",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 2,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-che-tempo-fa-oggi.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "38ff89f33692a336fb0f08492c1a01b971138603",
+        "sha256": "c98eb22312c6fa307d50db676ac820ff8b0a7dc0684fca449033d53ffeeb0c27",
+        "bytes": 171501,
+        "durationSeconds": 21.408,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-che-tempo-fa-oggi"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-03",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 3,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-come-arrivare-in-biblioteca.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "0c1c39fcf76f2d88eca2e02179b0163a6cbb5e6e",
+        "sha256": "258bf6ec679a2bcc5bcd96af40fd7279c775b753860405de62f0adc167636f36",
+        "bytes": 230061,
+        "durationSeconds": 28.728,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-come-arrivare-in-biblioteca"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-04",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 4,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-cosa-metto-per-la-scuola.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "e266d96670836da85de5e198c826498a143ab554",
+        "sha256": "bdb165d00b2ca25c899736d15de421f6277a93e2dd6bd6ce77d24fe83a1242e8",
+        "bytes": 180909,
+        "durationSeconds": 22.584,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-cosa-metto-per-la-scuola"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-05",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 5,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-cosa-non-faccio-la-domenica.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "428d410e21f273df9e837bbee4d3a630efa8191a",
+        "sha256": "ff0dfb4dfdd0711b7ad90e8cdacef19d0063e183b86716f1d1508e641ebfb4b1",
+        "bytes": 176301,
+        "durationSeconds": 22.008,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-cosa-non-faccio-la-domenica"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-06",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 6,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-cosa-succede-al-parco.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "19e09cc426160c49aef425adb9e9d4ed7f6cddc8",
+        "sha256": "3044867795b6cc650db5bc794e7b2d71e09c7ba5f36b3f94a4c02dc2e6845b01",
+        "bytes": 200877,
+        "durationSeconds": 25.08,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-cosa-succede-al-parco"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-07",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 7,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-il-mio-cane-max.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "7af4a83a7809840db713321f32f60d4cc1f02010",
+        "sha256": "3ebfe4e6e6bd848beb77cc3c4f885fff9d06bb25776b8ac62208a90fdd884660",
+        "bytes": 180909,
+        "durationSeconds": 22.584,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-il-mio-cane-max"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-08",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 8,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-il-mio-orario-di-scuola.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "efe4f329fa67266499e15c3cdd46bbdb85473d44",
+        "sha256": "3486d286da5cd81a8e0659084cd137de045679a1080e925352847656209fcde4",
+        "bytes": 184365,
+        "durationSeconds": 23.016,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-il-mio-orario-di-scuola"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-09",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 9,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-il-mio-pranzo-preferito.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "3f0c1aa5ed0cc29ab58d73380d714e88b0d79599",
+        "sha256": "6aff69ab2389407206f4e89334831feae25f796a3361d98d398d73e63c8eed53",
+        "bytes": 198957,
+        "durationSeconds": 24.84,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-il-mio-pranzo-preferito"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-10",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 10,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-lista-della-spesa.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "b74caa230cb29ba5b815e9631038155e5cdf82f7",
+        "sha256": "e99dba76624b8c2fbc83910793e84e9b9374e1060b49f1020134b387c18f7709",
+        "bytes": 154989,
+        "durationSeconds": 19.344,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-lista-della-spesa"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-11",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 11,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-mia-camera.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "e6283e0955497e91af38397a5c3257a3364600ad",
+        "sha256": "514717356daace99ff751111c764862db6b5647f0da3536ad9a5ac39f0befe12",
+        "bytes": 160941,
+        "durationSeconds": 20.088,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-mia-camera"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-12",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 12,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-mia-citta.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "b88c5c494433a6b1c08e3ed31b0214ff1dca28c9",
+        "sha256": "44ff2aeb631dbb2a093101fde8b35238acc71a48b17e4139ceb1d5f68e1781f6",
+        "bytes": 187245,
+        "durationSeconds": 23.376,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-mia-citta"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-13",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 13,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-mia-famiglia.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "18c66796493cce51916571b9f8e80e6977a10ffd",
+        "sha256": "56b5cc161029e802bec2ea4476cba7c272648968c3e7a1f0d174636d8d97749f",
+        "bytes": 191853,
+        "durationSeconds": 23.952,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-mia-famiglia"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-14",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 14,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-mia-giornata-ideale.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "36bfa12983d1287ad17c20f3e12cb2c795e2ff78",
+        "sha256": "fb22b7440cc3c4638264d6203188e35b0e05704865fb5da30422cafaf4783e1b",
+        "bytes": 209901,
+        "durationSeconds": 26.208,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-mia-giornata-ideale"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-15",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 15,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-mia-mattina.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "ed85a41c66f4095d68aa8838eea2169b121a639a",
+        "sha256": "7122e6f61ea33cafa4e8b824fc6c8f40a8d874bd213d0c81025cfd2dc3aa7648",
+        "bytes": 174765,
+        "durationSeconds": 21.816,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-mia-mattina"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-16",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 16,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-la-nostra-casa.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "858da981b545ed2c3f4678a5c2bdc928f0b827b2",
+        "sha256": "62bbc64ef5040cce12debb450843fa68663c7d3303496851c6357655e291e5dc",
+        "bytes": 214701,
+        "durationSeconds": 26.808,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-la-nostra-casa"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-17",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 17,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-le-cose-che-so-fare.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "1e038d24b463040cc6d0170bb2cb7e8ad8c85f88",
+        "sha256": "97d0d4c60566748f05d2305f751627c2dc6c7ea485d42988b166d0a628872d9e",
+        "bytes": 161325,
+        "durationSeconds": 20.136,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-le-cose-che-so-fare"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-18",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 18,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-presentarsi-a-scuola.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "12d072e2f09b43f0ac8df84dc7df7bc550b7075a",
+        "sha256": "5d31c91afd35bded96ceefddf29df9cb5150b69444ed55e79d0dda3a5c66baea",
+        "bytes": 153645,
+        "durationSeconds": 19.176,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-presentarsi-a-scuola"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-19",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 19,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-una-giornata-di-lavoro.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "e83f930be34425099053384b567b8c5cc3c30a1f",
+        "sha256": "5eb6b104b402d57555c6d80e4b47e968c171f4b0aea891881eb42db537543ade",
+        "bytes": 189549,
+        "durationSeconds": 23.664,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 63999,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-una-giornata-di-lavoro"
+      }
+    },
+    {
+      "id": "it-a1-legacy-listening-20",
+      "language": "it",
+      "levelCandidate": "A1",
+      "order": 20,
+      "exposure": "public-practice",
+      "availability": "worktree-public",
+      "diagnosticDisposition": "candidate-pending-linguistic-review",
+      "audio": {
+        "originalPath": "public/audio/italiano/a1/it-a1-una-telefonata-dove-sei.mp3",
+        "gitCommit": "bfebab2dd780573b5f618e66a5c9922a8224d071",
+        "gitBlob": "0896414262a1dbb5406f9723e72aa3654dc66fae",
+        "sha256": "343eae55af37b57e27968209224ba601edf92efb5dddc0177980d0de16317f5b",
+        "bytes": 166893,
+        "durationSeconds": 20.832,
+        "channels": 1,
+        "sampleRateHz": 24000,
+        "bitRateBps": 64000,
+        "decodeStatus": "pass"
+      },
+      "contentSource": {
+        "gitCommit": "4fb2202d3a4bdf51fb539b2a87f0b92e059a6077",
+        "gitBlob": "3ad0abc9cd87d9a46ce512cb58c7e429991c0de7",
+        "sha256": "8069a190373148a01b49929c3e93493169bb9371d447f2196c373b3a9ea68be6",
+        "path": "src/data/practica/italiano-a1-ascolto.ts",
+        "mapping": "audioFile:it-a1-una-telefonata-dove-sei"
+      }
+    }
+  ]
+}

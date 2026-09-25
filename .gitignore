@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+.diagnostic-private/
 .pnp.*
 .yarn/*
 !.yarn/patches
