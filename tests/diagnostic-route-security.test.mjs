@@ -7,12 +7,25 @@ const handler = await readFile(new URL('../src/server/diagnostic/start.server.ts
 const repository = await readFile(new URL('../src/server/diagnostic/repository.server.ts', import.meta.url), 'utf8');
 const submitRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[attemptId]/stages/[stageId]/route.ts', import.meta.url), 'utf8');
 const submitHandler = await readFile(new URL('../src/server/diagnostic/submit.server.ts', import.meta.url), 'utf8');
+const resumeRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[attemptId]/route.ts', import.meta.url), 'utf8');
+const resumeHandler = await readFile(new URL('../src/server/diagnostic/resume.server.ts', import.meta.url), 'utf8');
 
 test('diagnostic start route uses Node runtime and delegates to a server-only handler', () => {
   assert.match(route, /export const runtime = 'nodejs'/);
   assert.match(route, /handleDiagnosticAttemptStart\(request\)/);
   assert.match(handler, /import 'server-only'/);
   assert.match(repository, /import 'server-only'/);
+});
+
+test('attempt resume is authenticated, owner-scoped and returns no-store payloads', () => {
+  assert.match(resumeRoute, /export const runtime = 'nodejs'/);
+  assert.match(resumeRoute, /handleDiagnosticAttemptResume/);
+  assert.match(resumeHandler, /import 'server-only'/);
+  assert.match(resumeHandler, /auth\.getUser\(\)/);
+  assert.match(resumeHandler, /loadDiagnosticAttemptForResume/);
+  assert.match(resumeHandler, /'Cache-Control': 'private, no-store, max-age=0'/);
+  assert.match(repository, /loadDiagnosticAttemptForResume/);
+  assert.match(repository, /\.eq\('id', input\.attemptId\)\.eq\('user_id', input\.userId\)/);
 });
 
 test('objective submission route delegates through an authenticated server-only boundary', () => {

@@ -25,6 +25,13 @@ export interface DiagnosticWritingStageDelivery {
   prompt: DiagnosticWritingPrompt;
 }
 
+export type DiagnosticResumeDelivery =
+  | { kind: 'objective-stage'; delivery: DiagnosticStageDelivery }
+  | { kind: 'writing-stage'; delivery: DiagnosticWritingStageDelivery }
+  | { kind: 'processing'; attemptId: string; attemptVersion: number; status: 'scoring'; writingStatus: string | null }
+  | { kind: 'result'; attemptId: string; attemptVersion: number; status: 'completed'; resultProfile: unknown }
+  | { kind: 'closed'; attemptId: string; attemptVersion: number; status: 'expired' | 'abandoned' };
+
 export type DiagnosticStartRequest = {
   language: 'en';
   audioCheckPassed: true;

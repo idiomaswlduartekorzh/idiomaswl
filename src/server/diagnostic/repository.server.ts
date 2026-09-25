@@ -7,6 +7,53 @@ import type { DiagnosticObjectiveObservation } from './measurement';
 import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
+import type { DiagnosticResumeSnapshot } from './resume-core';
+
+export async function loadDiagnosticAttemptForResume(input: {
+  attemptId: string;
+  userId: string;
+}): Promise<DiagnosticResumeSnapshot | null> {
+  const admin = createAdminClient();
+  const [
+    { data: attempt, error: attemptError },
+    { data: stages, error: stageError },
+    { data: writing, error: writingError },
+  ] = await Promise.all([
+    admin.from('diagnostic_attempts')
+      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version,result_profile')
+      .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+    admin.from('diagnostic_stages')
+      .select('id,stage_index,kind,route_id,status,item_ids,content_versions,selection_receipt,issued_at,completed_at')
+      .eq('attempt_id', input.attemptId).eq('user_id', input.userId)
+      .order('stage_index', { ascending: false }).limit(1),
+    admin.from('diagnostic_writing_evaluations')
+      .select('status').eq('attempt_id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
+  ]);
+  if (attemptError || stageError || writingError) throw new Error('diagnostic_persistence_unavailable');
+  if (!attempt) return null;
+  const stage = stages?.[0] ?? null;
+  if (stage && (!Array.isArray(stage.item_ids) || !stage.content_versions || typeof stage.content_versions !== 'object')) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return {
+    attempt: {
+      id: String(attempt.id), userId: String(attempt.user_id), version: Number(attempt.version),
+      status: attempt.status as DiagnosticAttemptSnapshot['status'],
+      routeId: attempt.route_id as DiagnosticAttemptSnapshot['routeId'], expiresAt: String(attempt.expires_at),
+    },
+    stage: stage ? {
+      stageId: String(stage.id), kind: stage.kind as DiagnosticStageReceipt['kind'],
+      routeId: stage.route_id as DiagnosticStageReceipt['routeId'], itemIds: stage.item_ids.map(String),
+      contentVersions: stage.content_versions as Readonly<Record<string, string>>, issuedAt: String(stage.issued_at),
+      ...(stage.completed_at ? { completedAt: String(stage.completed_at) } : {}),
+    } : null,
+    stageStatus: stage ? stage.status as DiagnosticResumeSnapshot['stageStatus'] : null,
+    selectionReceipt: stage?.selection_receipt ?? null,
+    bankVersion: String(attempt.bank_version), blueprintVersion: String(attempt.blueprint_version),
+    engineVersion: String(attempt.engine_version), writingStatus: writing?.status ? String(writing.status) : null,
+    resultProfile: attempt.result_profile ?? null,
+  };
+}
 
 export async function loadDiagnosticObjectiveSubmissionContext(input: {
   attemptId: string;
