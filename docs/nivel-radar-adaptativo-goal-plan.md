@@ -79,6 +79,12 @@ Actualizado el 24 de septiembre de 2026:
   privado y soporta rangos HTTP sin URL pública ni firmada. El cargador verificó los 60 MP3
   recuperados (14.488.449 bytes) contra sus SHA-256 en modo seco; aplicar el bucket y subir los
   objetos sigue pendiente del entorno Supabase real.
+- **Fase 4 — corredor adaptativo implementado tras bandera independiente:** la interfaz inicia o
+  reanuda intentos, renderiza únicamente etapas emitidas por servidor, registra tiempo y
+  reproducciones, permite omisiones explícitas, entrega escritura y muestra nivel, rango y
+  confianza por habilidad. La verificación real en navegador pasó en 1440 y 390 px, sin overlay
+  ni errores de consola; el inicio autenticado no pudo probarse localmente porque este worktree
+  no dispone de credenciales Supabase.
 - **Banco objetivo — primera tanda editorial:** 24 decisiones de escucha en inglés —12 A1 y
   12 B1, sobre seis audios distintos por nivel— reescritas a partir de audios recuperados. Las
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
@@ -94,7 +100,7 @@ Actualizado el 24 de septiembre de 2026:
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **115 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **118 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

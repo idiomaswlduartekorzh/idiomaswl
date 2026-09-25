@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import s from './page.module.css';
-import NivelRadarClient from './NivelRadarClient';
+
+const NivelRadarClient = dynamic(() => import('./NivelRadarClient'));
+const AdaptiveNivelRadarClient = dynamic(() => import('./AdaptiveNivelRadarClient'));
 
 const WA = '573005004253';
 const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de inglés y cómo avanzar con WeLearn.');
@@ -8,26 +11,27 @@ const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de 
 export const metadata: Metadata = {
   title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
   description:
-    'Diagnóstico adaptativo de inglés entre A1 y C2. Lectura, escucha, vocabulario y uso de la lengua con resultado orientativo inmediato.',
+    'Diagnóstico adaptativo de inglés A1–C2 con lectura, escritura, gramática, vocabulario y escucha, y un perfil con incertidumbre explícita.',
   keywords: [
     'nivel de inglés test', 'cuál es mi nivel de inglés', 'test de inglés gratis',
     'diagnóstico de inglés online', 'nivel real de inglés WeLearn',
   ],
   openGraph: {
     title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
-    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, vocabulario y gramática.',
+    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escritura, gramática, vocabulario y escucha.',
     url: 'https://www.idiomaswl.com/nivel-radar',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/nivel-radar' },
 };
 
 const HOW = [
-  { title: 'Respondes ítems reales', desc: 'El diagnóstico alterna lectura, escucha, vocabulario y uso de la lengua. No usa respuestas de autopercepción.' },
-  { title: 'La dificultad se adapta', desc: 'Cada acierto eleva la exigencia y cada error la ajusta. Así localizamos tu límite funcional entre B1 y C2.' },
-  { title: 'Ves un mapa por habilidad', desc: 'Recibes un nivel orientativo y una prioridad de trabajo. Para escritura y habla, recomendamos una evaluación con tutor.' },
+  { title: 'Generas evidencia real', desc: 'El diagnóstico combina lectura, escucha, gramática, vocabulario y una producción escrita. No usa respuestas de autopercepción.' },
+  { title: 'La ruta se adapta', desc: 'Un localizador abre la rama adecuada y una etapa de precisión —con confirmación si hace falta— mide tu límite funcional.' },
+  { title: 'Ves un mapa honesto', desc: 'Recibes un nivel y rango por habilidad. Si falta evidencia o el perfil es desigual, el resultado lo dice explícitamente.' },
 ];
 
 export default function NivelRadarPage() {
+  const adaptiveUiEnabled = process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true';
   return (
     <main className={s.page}>
       <script
@@ -42,7 +46,7 @@ export default function NivelRadarPage() {
         }) }}
       />
 
-      <NivelRadarClient />
+      {adaptiveUiEnabled ? <AdaptiveNivelRadarClient /> : <NivelRadarClient />}
 
       {/* ══════════════ HOW IT WORKS ══════════════ */}
       <section className={s.howSection}>
