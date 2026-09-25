@@ -2,6 +2,7 @@ import type { CefrLevel } from '../../../lib/diagnostic/types.ts';
 import type { DiagnosticBankRecord } from '../types.ts';
 
 export const ENGLISH_DIAGNOSTIC_READING_CANDIDATE_VERSION = 'en-reading-original-draft-1';
+const ENGLISH_DIAGNOSTIC_READING_REVISED_VERSION = 'en-reading-original-draft-2';
 
 type ReadingQuestionSeed = {
   subdomain: 'main-idea' | 'detail' | 'inference' | 'purpose' | 'structure' | 'meaning-in-context';
@@ -105,7 +106,7 @@ const lowerTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'detail', prompt: 'Why should Mia bring a jacket?', correctIndex: 1,
-        options: ['The park closes early.', 'It may rain.', 'The bus is always cold.'],
+        options: ['Because the park closes early.', 'Because rain is possible.', 'Because the bus is always cold.'],
         rationale: 'Sam directly connects the jacket with the possibility of rain.',
         distractorRationales: ['No closing time is mentioned.', 'The email says nothing about the bus temperature.'],
       },
@@ -141,7 +142,7 @@ const lowerTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'detail', prompt: 'How long may a member keep a bicycle?', correctIndex: 2,
-        options: ['One day', 'One week', 'Up to three days'],
+        options: ['For up to one day', 'For up to one week', 'For up to three days'],
         rationale: 'The borrowing limit is explicitly stated as up to three days.',
         distractorRationales: ['One day is shorter than the stated limit.', 'One week is longer than the stated limit.'],
       },
@@ -282,7 +283,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
     questions: [
       {
         subdomain: 'detail', prompt: 'What problem appeared during the trial?', correctIndex: 1,
-        options: ['Employees completed fewer projects.', 'Some clients could not contact the appropriate person on Fridays.', 'Sick leave increased because the days were longer.'],
+        options: ['Employees completed substantially fewer projects during the trial.', 'Some clients could not contact the appropriate person on Fridays.', 'Sick leave increased because the days were longer.'],
         rationale: 'The text identifies Friday contact with the right employee as the difficulty clients experienced.',
         distractorRationales: ['Completed projects remained stable.', 'Sick leave decreased rather than increased.'],
       },
@@ -324,7 +325,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'detail', prompt: 'How does the group prepare for an emergency?', correctIndex: 0,
-        options: ['It keeps one phone available.', 'It ends every walk after a few minutes.', 'It asks each walker to leave a phone switched on.'],
+        options: ['It keeps one shared phone available for emergency calls.', 'It ends every walk after a few minutes.', 'It asks each walker to leave a phone switched on.'],
         rationale: 'The organiser keeps one emergency phone available while participants switch theirs off.',
         distractorRationales: ['No unusually short walk is described.', 'Participants are asked to switch their own phones off.'],
       },
@@ -342,7 +343,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'purpose', prompt: 'Why will students sell herb plants?', correctIndex: 2,
-        options: ['To provide all school meals', 'To create a permanent commercial company', 'To raise money for tools and support the garden'],
+        options: ['To provide every meal served at the school', 'To establish a permanent commercial business run by students', 'To raise money for tools and support the garden'],
         rationale: 'The sales are proposed specifically to fund new tools and make the garden more independent.',
         distractorRationales: ['The garden cannot produce enough food for the whole school.', 'The final sentence explicitly rejects turning it into a business.'],
       },
@@ -460,16 +461,25 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
 
 const testlets: readonly ReadingTestletSeed[] = [...lowerTestlets, ...upperTestlets];
 
+const REVISED_ITEM_CONTENT_VERSIONS = new Map<string, string>([
+  ['en-a1-reading-05-q2', 'draft-2'],
+  ['en-a2-reading-01-q2', 'draft-2'],
+  ['en-b1-reading-03-q1', 'draft-2'],
+  ['en-b1-reading-05-q2', 'draft-2'],
+  ['en-b1-reading-06-q2', 'draft-2'],
+]);
+
 export const ENGLISH_DIAGNOSTIC_READING_CANDIDATES: readonly DiagnosticBankRecord[] = testlets.flatMap((testlet, testletIndex) => {
   const stimulusId = `en-${testlet.level.toLowerCase()}-reading-${String((testletIndex % 6) + 1).padStart(2, '0')}`;
   return testlet.questions.map((question, questionIndex): DiagnosticBankRecord => {
     const id = `${stimulusId}-q${questionIndex + 1}`;
+    const contentVersion = REVISED_ITEM_CONTENT_VERSIONS.get(id) ?? 'draft-1';
     const optionIds = question.options.map((_, optionIndex) => `${id}-o${optionIndex + 1}`);
     const distractorIndexes = [0, 1, 2].filter((optionIndex) => optionIndex !== question.correctIndex);
     return {
       publicItem: {
         id,
-        contentVersion: 'draft-1',
+        contentVersion,
         language: 'en',
         skill: 'reading',
         subdomain: question.subdomain,
@@ -489,7 +499,12 @@ export const ENGLISH_DIAGNOSTIC_READING_CANDIDATES: readonly DiagnosticBankRecor
           optionIds[optionIndex], question.distractorRationales[rationaleIndex],
         ])),
       },
-      source: { kind: 'welearn-original', reference: `${ENGLISH_DIAGNOSTIC_READING_CANDIDATE_VERSION}:${testlet.slug}` },
+      source: {
+        kind: 'welearn-original',
+        reference: `${contentVersion === 'draft-1'
+          ? ENGLISH_DIAGNOSTIC_READING_CANDIDATE_VERSION
+          : ENGLISH_DIAGNOSTIC_READING_REVISED_VERSION}:${testlet.slug}`,
+      },
       levelRange: [testlet.level, testlet.level],
       warnings: ['PENDING_INDEPENDENT_LINGUISTIC_REVIEW', 'PENDING_PILOT_CALIBRATION'],
     };

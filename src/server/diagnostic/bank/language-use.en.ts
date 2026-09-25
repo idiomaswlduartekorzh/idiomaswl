@@ -229,16 +229,16 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
   {
     level: 'A2', skill: 'grammar', subdomain: 'tense-aspect',
     prompt: 'Complete the plan: “Sara ___ her aunt this weekend.”',
-    options: ['visits yesterday', 'is going to visit', 'has visit'], correctIndex: 1,
-    rationale: '“Is going to visit” expresses Sara’s future plan for the coming weekend.',
-    distractorRationales: ['“Yesterday” conflicts with the future time expression.', 'The present perfect requires the participle “visited” and would express a different meaning.'],
+    options: ['visited', 'is visiting', 'has visit'], correctIndex: 1,
+    rationale: 'The present continuous “is visiting” expresses Sara’s arranged future plan for the coming weekend.',
+    distractorRationales: ['The simple past conflicts with the future time expression.', 'The present perfect requires the participle “visited”.'],
   },
   {
     level: 'A2', skill: 'grammar', subdomain: 'tense-aspect',
     prompt: 'Complete the sentence: “I ___ my homework, so I can go out now.”',
-    options: ['finish', 'am finishing yesterday', 'have finished'], correctIndex: 2,
+    options: ['have finish', 'am finished', 'have finished'], correctIndex: 2,
     rationale: 'The present perfect “have finished” connects a completed action with its present result.',
-    distractorRationales: ['The simple present does not express the completed result here.', 'The present continuous cannot combine with “yesterday” in this way.'],
+    distractorRationales: ['The present perfect requires the participle “finished”.', 'The passive-like form does not express completing the homework.'],
   },
   {
     level: 'A2', skill: 'grammar', subdomain: 'form',
@@ -320,9 +320,9 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'meaning',
     prompt: 'At a railway station, what is a “platform”?',
-    options: ['A ticket discount', 'A bag storage room', 'The place where passengers board a train'], correctIndex: 2,
+    options: ['The place where passengers buy a ticket', 'The place where passengers store their bags', 'The place where passengers board a train'], correctIndex: 2,
     rationale: 'A railway platform is the raised area beside the track where passengers board and leave trains.',
-    distractorRationales: ['A discount concerns ticket price.', 'Bag storage is usually called left luggage or a locker area.'],
+    distractorRationales: ['Tickets are normally bought at a ticket office or machine.', 'Bag storage is usually called left luggage or a locker area.'],
   },
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'meaning',
@@ -402,7 +402,7 @@ const upperSeedRows = [
     '“Reluctant” means not willing and often hesitant to act.', ['Eagerness is the opposite attitude.', 'The word describes willingness, not hearing ability.']],
   ['B1', 'vocabulary', 'collocation', 'Complete the sentence: “We moved abroad but still ___ with our old neighbours.”', ['make contact in', 'hold the touching', 'keep in touch'], 2,
     '“Keep in touch” means continue communicating with someone.', ['This preposition and noun combination is not idiomatic here.', 'This is an incorrect literal rendering, not the communication idiom.']],
-  ['B1', 'vocabulary', 'meaning', 'An “affordable” apartment is one that ___.', ['you can pay for without excessive difficulty', 'has recently been painted', 'is located outside the city'], 0,
+  ['B1', 'vocabulary', 'meaning', 'An “affordable” apartment is one that ___.', ['costs no more than you can reasonably pay', 'has walls that were painted very recently', 'stands in a neighbourhood outside the city'], 0,
     '“Affordable” means reasonably priced relative to what someone can pay.', ['Decoration does not determine affordability.', 'Location may affect price but is not the meaning of the word.']],
 
   ['B2', 'grammar', 'tense-aspect', 'Complete the sentence: “By next June, she ___ the training programme.”', ['completes', 'will have completed', 'has completed'], 1,
@@ -411,8 +411,8 @@ const upperSeedRows = [
     'A past unreal condition takes “would have” plus a past participle in the result.', ['This form describes a present or future hypothetical result.', 'The past simple does not express the counterfactual consequence.']],
   ['B2', 'grammar', 'form', 'You knew the deadline had changed. You ___ me earlier.', ['should have told', 'should tell yesterday', 'must have tell'], 0,
     '“Should have told” expresses criticism of an action that did not happen in the past.', ['“Yesterday” does not combine with this unshifted modal form.', 'A perfect modal requires the past participle “told”.']],
-  ['B2', 'grammar', 'sentence-structure', 'Complete the report: “The painting is believed ___ during the 1920s.”', ['that created', 'to have been created', 'being created'], 1,
-    'The passive reporting pattern “is believed to have been created” refers to an earlier creation.', ['This clause lacks the required subject and passive form.', 'The gerund does not complete the reporting construction.']],
+  ['B2', 'grammar', 'sentence-structure', 'Complete the report: “The painting is believed ___ during the 1920s.”', ['to have created', 'to have been created', 'to have been creating'], 1,
+    'The passive reporting pattern “is believed to have been created” refers to an earlier creation.', ['The active infinitive would make the painting the creator.', 'The active progressive would make the painting perform an ongoing creation.']],
   ['B2', 'grammar', 'form', 'Complete the sentence: “We had the heating system ___ before winter.”', ['repairing', 'to repair', 'repaired'], 2,
     'The causative pattern “have something done” takes a past participle.', ['The “-ing” form does not express the completed service.', 'The infinitive is not used after the object in this causative pattern.']],
   ['B2', 'grammar', 'tense-aspect', 'Complete the sentence: “I wish I ___ more carefully before accepting the offer.”', ['had thought', 'would think yesterday', 'have thought'], 0,
@@ -432,7 +432,7 @@ const upperSeedRows = [
 
   ['B2', 'vocabulary', 'meaning', 'The report presents a “compelling” case for changing the policy. The case is ___.', ['easy to ignore', 'strongly convincing', 'deliberately confusing'], 1,
     'A compelling argument is powerful and persuasive.', ['Something compelling attracts attention rather than inviting dismissal.', 'Confusion is not part of the word’s meaning.']],
-  ['B2', 'vocabulary', 'paraphrase', 'The investigators could not “rule out” equipment failure. What does this mean?', ['They proved it was the cause.', 'They repaired the equipment.', 'They could not eliminate it as a possibility.'], 2,
+  ['B2', 'vocabulary', 'paraphrase', 'The investigators could not “rule out” equipment failure. What does this mean?', ['They established that it caused the failure.', 'They repaired the equipment after the failure.', 'They could not eliminate it as a possible cause.'], 2,
     'To rule something out is to exclude it as a possible explanation.', ['Not excluding a cause is not the same as proving it.', 'The expression concerns judgment, not repair work.']],
   ['B2', 'vocabulary', 'meaning', 'Which verb means “make a harmful effect less severe”?', ['mitigate', 'duplicate', 'anticipate'], 0,
     '“Mitigate” means reduce the seriousness or harmfulness of something.', ['“Duplicate” means copy.', '“Anticipate” means expect or prepare for something.']],
@@ -442,13 +442,13 @@ const upperSeedRows = [
     '“Widespread” describes something existing or happening over a large area or among many people.', ['Visibility is separate from extent.', 'Restriction to one company is the opposite of widespread.']],
   ['B2', 'vocabulary', 'collocation', 'Complete the advice: “Please ___ in mind that the figures are provisional.”', ['bear', 'carry', 'hold up'], 0,
     '“Bear in mind” is the fixed expression meaning remember or consider.', ['“Carry in mind” is not the established collocation.', '“Hold up” has different meanings and does not fit this phrase.']],
-  ['B2', 'vocabulary', 'register', 'Which sentence is most suitable in a formal evaluation?', ['The project was kind of a mess.', 'The project achieved some aims but lacked a clear implementation plan.', 'Honestly, they did a pretty bad job.'], 1,
+  ['B2', 'vocabulary', 'register', 'Which sentence is most suitable in a formal evaluation?', ['The project was, frankly, a complete mess from beginning to end.', 'The project achieved some aims but lacked a clear implementation plan.', 'Honestly, the team did a pretty bad job on the whole project.'], 1,
     'This version gives a precise, measured criticism in an appropriately formal register.', ['“Kind of a mess” is vague and conversational.', '“Honestly” and “pretty bad job” are personal and informal.']],
   ['B2', 'vocabulary', 'word-formation', 'Complete the sentence: “The proposal raises questions about the long-term ___ of the service.”', ['sustain', 'sustainable', 'sustainability'], 2,
     'The noun “sustainability” is required after “the long-term”.', ['“Sustain” is a verb.', '“Sustainable” is an adjective and would need to modify a noun.']],
   ['B2', 'vocabulary', 'paraphrase', 'Our plan to share the office “fell through”. What happened?', ['It failed to happen.', 'It became cheaper.', 'It was completed early.'], 0,
     'If a plan falls through, it is not successfully completed or does not happen.', ['The expression says nothing about cost.', 'Early completion is the opposite of failure to happen.']],
-  ['B2', 'vocabulary', 'meaning', 'There is a “subtle” difference between the two proposals. The difference is ___.', ['impossible to explain', 'small and not immediately obvious', 'legally unacceptable'], 1,
+  ['B2', 'vocabulary', 'meaning', 'There is a “subtle” difference between the two proposals. The difference is ___.', ['difficult or impossible to explain', 'small and not immediately obvious', 'unacceptable under the relevant law'], 1,
     '“Subtle” describes a fine distinction that may be difficult to notice at first.', ['A subtle difference can still be explained.', 'The word does not make a legal judgment.']],
   ['B2', 'vocabulary', 'paraphrase', 'Several reviewers “took issue with” the final recommendation. They ___.', ['forgot to read it', 'accepted it without question', 'disagreed with or objected to it'], 2,
     'To take issue with something is to disagree with or challenge it.', ['The expression implies an active response, not failure to read.', 'Acceptance without question is the opposite reaction.']],
@@ -465,9 +465,17 @@ const seeds: readonly LanguageUseSeed[] = [...lowerSeeds, ...upperSeeds];
 
 const REVISED_ITEM_CONTENT_VERSIONS = new Map<string, string>([
   ['en-a1-vocabulary-07', 'draft-2'],
+  ['en-a2-grammar-07', 'draft-2'],
+  ['en-a2-grammar-08', 'draft-2'],
   ['en-a2-vocabulary-07', 'draft-2'],
+  ['en-a2-vocabulary-08', 'draft-2'],
   ['en-b1-vocabulary-07', 'draft-2'],
+  ['en-b1-vocabulary-12', 'draft-2'],
+  ['en-b2-grammar-04', 'draft-2'],
   ['en-b2-grammar-08', 'draft-2'],
+  ['en-b2-vocabulary-02', 'draft-2'],
+  ['en-b2-vocabulary-07', 'draft-2'],
+  ['en-b2-vocabulary-10', 'draft-2'],
 ]);
 
 function itemId(seed: LanguageUseSeed, ordinal: number): string {

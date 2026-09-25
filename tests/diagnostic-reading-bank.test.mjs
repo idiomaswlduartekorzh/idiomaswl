@@ -43,3 +43,18 @@ test('reading keys are balanced, rationalized, and absent from public serializat
   }
   assert.deepEqual(positions, [16, 16, 16]);
 });
+
+test('only the five cue-balanced reading items advance to content draft 2', () => {
+  const revisions = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.filter((record) =>
+    record.publicItem.contentVersion === 'draft-2');
+  assert.deepEqual(revisions.map(record => record.publicItem.id), [
+    'en-a1-reading-05-q2',
+    'en-a2-reading-01-q2',
+    'en-b1-reading-03-q1',
+    'en-b1-reading-05-q2',
+    'en-b1-reading-06-q2',
+  ]);
+  assert.ok(revisions.every(record => record.source.reference.includes('en-reading-original-draft-2:')));
+  assert.equal(ENGLISH_DIAGNOSTIC_READING_CANDIDATES
+    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 43);
+});

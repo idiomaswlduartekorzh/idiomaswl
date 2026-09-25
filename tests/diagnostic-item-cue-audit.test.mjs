@@ -24,18 +24,35 @@ test('the adversarial audit deterministically covers every reserved objective dr
   assert.deepEqual(first, second);
   assert.equal(first.totals.items, 216);
   assert.equal(first.cells.length, 18);
-  assert.equal(first.totals.flaggedItems, 32);
+  assert.equal(first.totals.flaggedItems, 19);
   assert.equal(first.totals.blockingItems, 0);
   assert.equal(first.cells.every(cell => cell.keyPositions.join(',') === '4,4,4'), true);
+  assert.equal(first.cells
+    .filter(cell => ['A1', 'A2', 'B1', 'B2'].includes(cell.level))
+    .every(cell => cell.flaggedItems === 0 && cell.blockingItems === 0), true);
 });
 
-test('revised register and reported-speech items remove accidental punctuation cues', () => {
+test('revised A1 through B2 items remove accidental option cues without changing their keys', () => {
   const revisedIds = [
+    'en-a1-reading-05-q2',
     'en-a1-vocabulary-07',
+    'en-a2-grammar-07',
+    'en-a2-grammar-08',
+    'en-a2-reading-01-q2',
     'en-a2-vocabulary-07',
+    'en-a2-vocabulary-08',
+    'en-b1-reading-03-q1',
+    'en-b1-reading-05-q2',
+    'en-b1-reading-06-q2',
     'en-b1-vocabulary-07',
+    'en-b1-vocabulary-12',
+    'en-b2-grammar-04',
     'en-b2-grammar-08',
+    'en-b2-vocabulary-02',
+    'en-b2-vocabulary-07',
+    'en-b2-vocabulary-10',
   ];
+  assert.equal(candidates.filter(candidate => candidate.publicItem.contentVersion === 'draft-2').length, 17);
   for (const itemId of revisedIds) {
     const record = candidates.find(candidate => candidate.publicItem.id === itemId);
     assert.ok(record, `${itemId} must remain in the reserved bank`);
