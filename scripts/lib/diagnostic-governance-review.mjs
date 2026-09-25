@@ -31,6 +31,7 @@ const DELIVERY_CHECKS = {
     'productionCooldownReviewed',
     'exposureWindowAndBankCapacityReviewed',
     'validityIsNonCertificationReviewed',
+    'itemDriftSignalReviewed',
     'proposedValuesAccepted',
   ],
   'product-owner': [
@@ -39,6 +40,7 @@ const DELIVERY_CHECKS = {
     'supportAndNoOverrideRuleReviewed',
     'resultExpiryCommunicationReviewed',
     'controlledRolloutAndDrainRollbackReviewed',
+    'itemDriftResponseRunbookReviewed',
     'proposedValuesAccepted',
   ],
 };
@@ -48,6 +50,7 @@ const DELIVERY_QUESTIONS = {
     'Is the 90-day production cooldown linguistically and measurement-wise defensible?',
     'Can the reserved bank sustain a 365-day no-repeat window without distorting coverage?',
     'Is the 180-day result validity framed only as WeLearn guidance, never certification?',
+    'Are the minimum sample, facility-shift and z-score thresholds suitable only as a signal for independent item review?',
     'Do you accept every proposed pilot and production value in the bound snapshot?',
   ],
   'product-owner': [
@@ -56,6 +59,7 @@ const DELIVERY_QUESTIONS = {
     'Is the no-override production rule operationally acceptable?',
     'Is result expiry communicated consistently in the screen and exported PDF?',
     'Is the deterministic cohort rollout and drain-before-rollback procedure operationally acceptable?',
+    'Can operations investigate a drift alert without automatic recalibration or bypassing independent retirement review?',
     'Do you accept every proposed pilot and production value in the bound snapshot?',
   ],
 };

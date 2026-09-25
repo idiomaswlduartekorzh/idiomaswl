@@ -1,6 +1,7 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import criteria from '../../../../../../config/diagnostic/pilot-publication-criteria.json' with { type: 'json' };
 import measurementEvidence from '../../../../../../config/diagnostic/pilot-measurement-evidence.json' with { type: 'json' };
+import deliveryPolicy from '../../../../../../config/diagnostic/delivery-policy.json' with { type: 'json' };
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
@@ -8,17 +9,25 @@ import {
 } from '@/server/diagnostic/bank';
 import {
   buildDiagnosticPilotReport,
+  buildDiagnosticItemDriftMonitor,
+  buildDiagnosticItemDriftMetrics,
   type DiagnosticPilotMeasurementEvidence,
   type DiagnosticPilotCriteria,
 } from '@/server/diagnostic/pilot-analytics';
-import { loadDiagnosticPilotDataset } from '@/server/diagnostic/repository.server';
+import type { DiagnosticDeliveryPolicy } from '@/server/diagnostic/delivery-policy';
+import {
+  loadDiagnosticItemDriftResponses,
+  loadDiagnosticPilotDataset,
+} from '@/server/diagnostic/repository.server';
+import { logDiagnosticInternalFailure, observeDiagnosticRoute } from '@/server/diagnostic/observability';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 
-function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>) {
+function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>,
+  itemDrift: ReturnType<typeof buildDiagnosticItemDriftMonitor>) {
   const counts = new Map<string, number>();
   for (const item of report.itemMetrics) {
     for (const flag of item.flags) counts.set(flag, (counts.get(flag) ?? 0) + 1);
@@ -46,6 +55,18 @@ function healthProjection(report: ReturnType<typeof buildDiagnosticPilotReport>)
       completedRouteCounts: report.attempts.completedRouteCounts,
     },
     operations: report.operations,
+    itemDrift: {
+      monitorVersion: itemDrift.monitorVersion,
+      comparisonBasis: itemDrift.comparisonBasis,
+      status: itemDrift.status,
+      thresholds: itemDrift.thresholds,
+      activeItems: itemDrift.activeItems,
+      comparableItems: itemDrift.comparableItems,
+      insufficientItems: itemDrift.insufficientItems,
+      reviewRequiredItems: itemDrift.reviewRequiredItems,
+      largestAbsoluteFacilityShift: itemDrift.largestAbsoluteFacilityShift,
+      safeguards: itemDrift.safeguards,
+    },
     flagCounts: [...counts.entries()].sort(([left], [right]) => left.localeCompare(right))
       .map(([flag, count]) => ({ flag, count })),
     writingAgreement: report.writingAgreement,
@@ -59,7 +80,7 @@ function error(code: string, message: string, status: number): Response {
   return Response.json({ ok: false, code, error: message }, { status, headers: NO_STORE_HEADERS });
 }
 
-export async function GET(request: Request): Promise<Response> {
+async function handleGet(request: Request): Promise<Response> {
   let admin;
   try {
     admin = await requireAdmin();
@@ -72,25 +93,47 @@ export async function GET(request: Request): Promise<Response> {
   if (!allowed) return error('RATE_LIMITED', 'Espera antes de generar otro informe.', 429);
 
   const url = new URL(request.url);
+  const now = new Date();
   const sinceValue = url.searchParams.get('since');
-  const since = sinceValue ? new Date(sinceValue) : new Date(Date.now() - 180 * 24 * 60 * 60 * 1_000);
-  if (Number.isNaN(since.getTime()) || since.getTime() > Date.now() || since.getTime() < Date.now() - 366 * 24 * 60 * 60 * 1_000) {
+  const since = sinceValue ? new Date(sinceValue) : new Date(now.getTime() - 180 * 24 * 60 * 60 * 1_000);
+  if (Number.isNaN(since.getTime()) || since >= now || since.getTime() < now.getTime() - 366 * 24 * 60 * 60 * 1_000) {
     return error('INVALID_WINDOW', 'El rango del piloto no es válido.', 400);
   }
   try {
-    const dataset = await loadDiagnosticPilotDataset({ language: 'en', since });
+    const windowMs = now.getTime() - since.getTime();
+    const baselineSince = new Date(since.getTime() - windowMs);
+    const [dataset, baselineResponses] = await Promise.all([
+      loadDiagnosticPilotDataset({ language: 'en', since, until: now }),
+      loadDiagnosticItemDriftResponses({ language: 'en', since: baselineSince, until: since }),
+    ]);
     const report = buildDiagnosticPilotReport({
       ...dataset,
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
       writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       criteria: criteria as DiagnosticPilotCriteria,
       measurementEvidence: measurementEvidence as DiagnosticPilotMeasurementEvidence,
-      generatedAt: new Date().toISOString(),
+      generatedAt: now.toISOString(),
     });
-    const responseReport = url.searchParams.get('scope') === 'health' ? healthProjection(report) : report;
+    const itemDrift = buildDiagnosticItemDriftMonitor({
+      current: report.itemMetrics,
+      baseline: buildDiagnosticItemDriftMetrics({
+        responses: baselineResponses,
+        bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+      }),
+      policy: (deliveryPolicy as DiagnosticDeliveryPolicy).monitoring.itemDrift,
+    });
+    const responseReport = url.searchParams.get('scope') === 'health'
+      ? healthProjection(report, itemDrift) : { ...report, itemDrift };
     return Response.json({ ok: true, report: responseReport }, { status: 200, headers: NO_STORE_HEADERS });
-  } catch (cause) {
-    console.error('[diagnostic] Pilot report failed:', cause instanceof Error ? cause.message : 'unknown');
+  } catch {
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'pilot-report-failed' });
     return error('REPORT_UNAVAILABLE', 'No pudimos generar el informe del piloto.', 503);
   }
+}
+
+export async function GET(request: Request): Promise<Response> {
+  return observeDiagnosticRoute(
+    { route: '/api/admin/diagnostic/pilot-report', method: 'GET' },
+    () => handleGet(request),
+  );
 }

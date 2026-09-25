@@ -3,6 +3,7 @@ export type DiagnosticObservedRoute =
   | '/api/diagnostic/attempts/[attemptId]'
   | '/api/diagnostic/attempts/[attemptId]/stages/[stageId]'
   | '/api/diagnostic/media/[mediaId]'
+  | '/api/admin/diagnostic/pilot-report'
   | '/api/admin/diagnostic/attempts/[attemptId]/finalize';
 
 type DiagnosticObservedMethod = 'GET' | 'HEAD' | 'POST' | 'DELETE';
@@ -14,6 +15,7 @@ type DiagnosticInternalFailureReason =
   | 'rollout-configuration-invalid' | 'pilot-consent-version-missing'
   | 'pilot-enrollment-check-failed' | 'attempt-start-failed' | 'attempt-resume-failed'
   | 'stage-submission-failed' | 'media-delivery-failed' | 'data-deletion-failed'
+  | 'pilot-report-failed'
   | 'writing-finalization-failed' | 'attempt-creation-persistence-failed'
   | 'stage-persistence-failed' | 'writing-persistence-failed'
   | 'finalization-persistence-failed' | 'unclassified';
@@ -23,6 +25,7 @@ const OBSERVED_ROUTES = new Set<DiagnosticObservedRoute>([
   '/api/diagnostic/attempts/[attemptId]',
   '/api/diagnostic/attempts/[attemptId]/stages/[stageId]',
   '/api/diagnostic/media/[mediaId]',
+  '/api/admin/diagnostic/pilot-report',
   '/api/admin/diagnostic/attempts/[attemptId]/finalize',
 ]);
 const OBSERVED_METHODS = new Set<DiagnosticObservedMethod>(['GET', 'HEAD', 'POST', 'DELETE']);
@@ -35,6 +38,7 @@ const INTERNAL_REASONS = new Set<DiagnosticInternalFailureReason>([
   'rollout-configuration-invalid', 'pilot-consent-version-missing',
   'pilot-enrollment-check-failed', 'attempt-start-failed', 'attempt-resume-failed',
   'stage-submission-failed', 'media-delivery-failed', 'data-deletion-failed',
+  'pilot-report-failed',
   'writing-finalization-failed', 'attempt-creation-persistence-failed',
   'stage-persistence-failed', 'writing-persistence-failed',
   'finalization-persistence-failed', 'unclassified',

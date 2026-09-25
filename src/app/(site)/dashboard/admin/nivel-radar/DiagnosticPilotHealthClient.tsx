@@ -47,6 +47,26 @@ type PilotReport = {
       forwardingAndAlerts: 'deployment-verification-required';
     };
   };
+  itemDrift: {
+    monitorVersion: 'diagnostic-item-drift-monitor-v1';
+    comparisonBasis: 'consecutive-equal-attempt-start-cohorts';
+    status: 'STABLE' | 'INSUFFICIENT_DATA' | 'REVIEW_REQUIRED';
+    thresholds: {
+      minimumAttemptedPerWindow: number;
+      maximumAbsoluteFacilityShift: number;
+      minimumTwoProportionZScore: number;
+    };
+    activeItems: number;
+    comparableItems: number;
+    insufficientItems: number;
+    reviewRequiredItems: number;
+    largestAbsoluteFacilityShift: number | null;
+    safeguards: {
+      automaticRecalibration: false;
+      automaticRetirement: false;
+      independentRetirementReviewRequired: true;
+    };
+  };
   flagCounts: readonly { flag: string; count: number }[];
   writingAgreement: { comparablePairs: number; exactAgreement: number | null };
   independentReference: { pairs: number; withinOneLevel: number | null; referenceLevelCounts: Readonly<Record<string, number>> };
@@ -198,9 +218,17 @@ export default function DiagnosticPilotHealthClient() {
             <Card label="Escucha iniciada" value={percent(report.operations.listeningStartedRate)} detail={`${report.operations.listeningResponsesWithoutPlayback} respuestas intentadas sin reproducción`} />
             <Card label="Cola de escritura" value={report.operations.writingQueueOpen} detail={`más antigua: ${duration(report.operations.writingQueueOldestMs)}`} />
             <Card label="Turnaround escritura" value={duration(report.operations.writingMedianTurnaroundMs)} detail={`p90: ${duration(report.operations.writingP90TurnaroundMs)} · ${report.operations.writingFailed} fallidas`} />
+            <Card
+              label="Deriva de ítems"
+              value={report.itemDrift.status === 'REVIEW_REQUIRED' ? 'Revisar' : report.itemDrift.status === 'STABLE' ? 'Estable' : 'Sin muestra'}
+              detail={`${report.itemDrift.reviewRequiredItems} alertas · ${report.itemDrift.comparableItems}/${report.itemDrift.activeItems} comparables`}
+            />
           </div>
           <p role="note" style={{ margin: '9px 0 0', color: '#92400e', fontSize: 11 }}>
             Errores de aplicación y entrega de audio emiten logs estructurados sin datos personales. El forwarding, las alertas y su recepción deben verificarse en el despliegue; esta vista no infiere ceros.
+          </p>
+          <p role="note" style={{ margin: '5px 0 0', color: '#6b7280', fontSize: 11 }}>
+            La deriva compara esta cohorte con la ventana inmediatamente anterior. El cambio de facilidad es una señal para revisión independiente: nunca recalibra ni retira un ítem automáticamente.
           </p>
 
           <h3 style={{ margin: '18px 0 8px', fontSize: 15 }}>Estados de intento</h3>
@@ -227,12 +255,14 @@ export default function DiagnosticPilotHealthClient() {
             Estado: {report.measurementEvidence.status ?? 'sin evidencia'} · procedencia {report.measurementEvidence.provenanceBound ? 'ligada' : 'pendiente'} · aprobación {report.measurementEvidence.approvalBound ? 'ligada' : 'pendiente'} · banco/criterios {report.measurementEvidence.bindingValid ? 'vigentes' : 'sin validar'}.
           </p>
 
-          {(report.flagCounts.length > 0 || report.warnings.length > 0) ? (
+          {(report.flagCounts.length > 0 || report.warnings.length > 0 || report.itemDrift.status === 'REVIEW_REQUIRED') ? (
             <div style={{ marginTop: 16, border: '1px solid #fed7aa', background: '#fff7ed', borderRadius: 10, padding: 12 }}>
               <h3 style={{ margin: '0 0 7px', fontSize: 14 }}>Alertas agregadas</h3>
               <ul style={{ margin: 0, paddingLeft: 18, color: '#7c2d12', fontSize: 12 }}>
                 {report.warnings.map(warning => <li key={`warning:${warning}`}>{warning}</li>)}
                 {report.flagCounts.map(({ flag, count }) => <li key={`flag:${flag}`}>{flag}: {count} ítems</li>)}
+                {report.itemDrift.status === 'REVIEW_REQUIRED'
+                  ? <li>ITEM_FACILITY_DRIFT: {report.itemDrift.reviewRequiredItems} ítems</li> : null}
               </ul>
             </div>
           ) : null}

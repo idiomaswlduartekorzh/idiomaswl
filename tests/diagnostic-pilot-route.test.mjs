@@ -25,8 +25,14 @@ test('pilot health projection keeps browser data aggregate and omits item-level 
   assert.match(projection, /retiredWritingPrompts/);
   assert.match(projection, /measurementEvidence/);
   assert.match(projection, /operations/);
+  assert.match(projection, /itemDrift/);
+  assert.match(projection, /reviewRequiredItems/);
+  assert.match(projection, /safeguards: itemDrift\.safeguards/);
   assert.doesNotMatch(projection, /itemId|contentVersion|optionSelections|distractorFunctioning|submittedResponse/);
-  assert.match(route, /searchParams\.get\('scope'\) === 'health' \? healthProjection\(report\) : report/);
+  assert.match(route, /healthProjection\(report, itemDrift\)/);
+  assert.match(route, /\{ \.\.\.report, itemDrift \}/);
+  assert.match(route, /baselineSince/);
+  assert.match(route, /until: since/);
 });
 
 test('admin pilot health UI is manual, same-origin, no-store and covers operational gates', () => {
@@ -41,6 +47,8 @@ test('admin pilot health UI is manual, same-origin, no-store and covers operatio
   assert.match(healthClient, /Cadena psicométrica/);
   assert.match(healthClient, /Alertas agregadas/);
   assert.match(healthClient, /Operación para rollout/);
+  assert.match(healthClient, /Deriva de ítems/);
+  assert.match(healthClient, /nunca recalibra ni retira un ítem automáticamente/);
   assert.match(healthClient, /Errores de aplicación y entrega de audio emiten logs estructurados sin datos personales/);
 });
 
@@ -49,6 +57,10 @@ test('pilot loader omits user identity and writing text from every select', () =
   assert.doesNotMatch(loader, /user_id|response_text/);
   assert.match(loader, /submitted_response/);
   assert.match(loader, /final_evidence/);
+  assert.match(loader, /\.lt\('started_at', input\.until\.toISOString\(\)\)/);
+  const driftLoader = repository.slice(repository.indexOf('export async function loadDiagnosticItemDriftResponses'));
+  assert.doesNotMatch(driftLoader, /user_id|submitted_response|response_text|final_evidence/);
+  assert.match(driftLoader, /attempt_id,item_id,content_version,skill,outcome/);
 });
 
 test('independent reference labels are server-only and do not duplicate the diagnostic result', () => {

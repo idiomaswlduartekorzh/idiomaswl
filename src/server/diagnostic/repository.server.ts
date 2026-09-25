@@ -18,6 +18,7 @@ import type {
   DiagnosticPilotReferenceRow,
   DiagnosticPilotResponseRow,
   DiagnosticPilotWritingRow,
+  DiagnosticItemDriftResponseRow,
 } from './pilot-analytics';
 
 export interface DiagnosticWritingReviewQueueRow {
@@ -752,16 +753,25 @@ async function loadDiagnosticPilotRowsForAttempts(
 export async function loadDiagnosticPilotDataset(input: {
   language: string;
   since: Date;
+  until?: Date;
 }): Promise<{
   attempts: DiagnosticPilotAttemptRow[];
   responses: DiagnosticPilotResponseRow[];
   writing: DiagnosticPilotWritingRow[];
   references: DiagnosticPilotReferenceRow[];
 }> {
+  if (!Number.isFinite(input.since.getTime())
+    || (input.until && (!Number.isFinite(input.until.getTime()) || input.until <= input.since))) {
+    throw new Error('diagnostic_pilot_window_invalid');
+  }
   const attemptRows = await loadDiagnosticPilotPages(
     'diagnostic_attempts',
     'id,status,route_id,bank_version,started_at,expires_at,updated_at,completed_at,result_profile',
-    query => query.eq('language', input.language).gte('started_at', input.since.toISOString()).order('started_at', { ascending: true }),
+    query => {
+      let filtered = query.eq('language', input.language).gte('started_at', input.since.toISOString());
+      if (input.until) filtered = filtered.lt('started_at', input.until.toISOString());
+      return filtered.order('started_at', { ascending: true });
+    },
   );
   const attempts = attemptRows.map(row => ({
     attemptId: String(row.id), status: String(row.status), routeId: row.route_id ? String(row.route_id) : null,
@@ -823,6 +833,36 @@ export async function loadDiagnosticPilotDataset(input: {
     }];
   });
   return { attempts, responses, writing, references };
+}
+
+export async function loadDiagnosticItemDriftResponses(input: {
+  language: string;
+  since: Date;
+  until: Date;
+}): Promise<DiagnosticItemDriftResponseRow[]> {
+  if (!Number.isFinite(input.since.getTime()) || !Number.isFinite(input.until.getTime())
+    || input.until <= input.since) throw new Error('diagnostic_pilot_window_invalid');
+  const attemptRows = await loadDiagnosticPilotPages(
+    'diagnostic_attempts',
+    'id',
+    query => query.eq('language', input.language)
+      .gte('started_at', input.since.toISOString())
+      .lt('started_at', input.until.toISOString()),
+  );
+  const attemptIds = attemptRows.map(row => String(row.id));
+  if (!attemptIds.length) return [];
+  const rows = await loadDiagnosticPilotRowsForAttempts(
+    'diagnostic_responses',
+    'attempt_id,item_id,content_version,skill,outcome',
+    attemptIds,
+  );
+  return rows.map(row => ({
+    attemptId: String(row.attempt_id),
+    itemId: String(row.item_id),
+    contentVersion: String(row.content_version),
+    skill: String(row.skill),
+    outcome: String(row.outcome) as DiagnosticItemDriftResponseRow['outcome'],
+  }));
 }
 
 export async function persistDiagnosticPilotReference(input: {

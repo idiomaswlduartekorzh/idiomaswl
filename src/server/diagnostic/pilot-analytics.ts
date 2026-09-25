@@ -8,6 +8,7 @@ import {
   type DiagnosticSkill,
 } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
+import type { DiagnosticItemDriftMonitoringPolicy } from './delivery-policy.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
 export interface DiagnosticPilotCriteria {
@@ -126,6 +127,9 @@ export interface DiagnosticPilotResponseRow {
   audioPlayCount: number | null;
 }
 
+export type DiagnosticItemDriftResponseRow = Pick<DiagnosticPilotResponseRow,
+  'attemptId' | 'itemId' | 'contentVersion' | 'skill' | 'outcome'>;
+
 export interface DiagnosticPilotWritingRow {
   attemptId: string;
   promptId: string;
@@ -235,6 +239,144 @@ export function diagnosticPilotBankSha256(input: {
 
 function rate(numerator: number, denominator: number): number | null {
   return denominator ? rounded(numerator / denominator) : null;
+}
+
+interface DiagnosticItemDriftMetric {
+  itemId: string;
+  contentVersion: string;
+  attempted: number;
+  correct: number;
+  facility: number | null;
+}
+
+export function buildDiagnosticItemDriftMetrics(input: {
+  responses: readonly DiagnosticItemDriftResponseRow[];
+  bank: readonly DiagnosticBankRecord[];
+}): DiagnosticItemDriftMetric[] {
+  const active = input.bank.filter(record => record.status === 'pilot' || record.status === 'operational');
+  const activeById = new Map(active.map(record => [record.publicItem.id, record]));
+  const seen = new Set<string>();
+  const counts = new Map(active.map(record => [record.publicItem.id, { attempted: 0, correct: 0 }]));
+  for (const response of input.responses) {
+    const record = activeById.get(response.itemId);
+    if (!record || record.publicItem.contentVersion !== response.contentVersion) continue;
+    if (record.publicItem.skill !== response.skill || !['correct', 'incorrect', 'omitted'].includes(response.outcome)) {
+      throw new Error('item drift response does not match the active versioned bank');
+    }
+    const identity = `${response.attemptId}\0${response.itemId}`;
+    if (!response.attemptId?.trim() || seen.has(identity)) {
+      throw new Error('item drift responses contain duplicate or invalid identities');
+    }
+    seen.add(identity);
+    if (response.outcome !== 'omitted') {
+      const aggregate = counts.get(response.itemId)!;
+      aggregate.attempted += 1;
+      if (response.outcome === 'correct') aggregate.correct += 1;
+    }
+  }
+  return active.map(record => {
+    const { attempted, correct } = counts.get(record.publicItem.id)!;
+    return {
+      itemId: record.publicItem.id,
+      contentVersion: record.publicItem.contentVersion,
+      attempted,
+      correct,
+      facility: rate(correct, attempted),
+    };
+  }).sort((left, right) => left.itemId.localeCompare(right.itemId));
+}
+
+function validateDriftMetric(metric: DiagnosticItemDriftMetric): void {
+  if (!metric.itemId?.trim() || !metric.contentVersion?.trim()
+    || !Number.isInteger(metric.attempted) || metric.attempted < 0
+    || !Number.isInteger(metric.correct) || metric.correct < 0 || metric.correct > metric.attempted
+    || (metric.facility !== null && !boundedRate(metric.facility))) {
+    throw new Error('item drift metric is invalid');
+  }
+}
+
+function twoProportionZScore(currentCorrect: number, currentAttempted: number,
+  baselineCorrect: number, baselineAttempted: number): number | null {
+  if (currentAttempted < 1 || baselineAttempted < 1) return null;
+  const currentFacility = currentCorrect / currentAttempted;
+  const baselineFacility = baselineCorrect / baselineAttempted;
+  const pooled = (currentCorrect + baselineCorrect) / (currentAttempted + baselineAttempted);
+  const standardError = Math.sqrt(pooled * (1 - pooled)
+    * ((1 / currentAttempted) + (1 / baselineAttempted)));
+  return standardError > 0 ? rounded(Math.abs(currentFacility - baselineFacility) / standardError) : null;
+}
+
+/**
+ * Compares equal, consecutive attempt-start cohorts. Facility is an operational proxy for
+ * difficulty drift; a signal requires both a material shift and a two-proportion z threshold.
+ * The result never recalibrates or retires an item automatically.
+ */
+export function buildDiagnosticItemDriftMonitor(input: {
+  current: readonly DiagnosticItemDriftMetric[];
+  baseline: readonly DiagnosticItemDriftMetric[];
+  policy: DiagnosticItemDriftMonitoringPolicy;
+}) {
+  const policy = input.policy;
+  if (!Number.isInteger(policy?.minimumAttemptedPerWindow) || policy.minimumAttemptedPerWindow < 20
+    || !boundedRate(policy?.maximumAbsoluteFacilityShift) || policy.maximumAbsoluteFacilityShift < 0.05
+    || typeof policy?.minimumTwoProportionZScore !== 'number'
+    || !Number.isFinite(policy.minimumTwoProportionZScore) || policy.minimumTwoProportionZScore < 1.96) {
+    throw new Error('item drift monitoring policy is invalid');
+  }
+  for (const metric of [...input.current, ...input.baseline]) validateDriftMetric(metric);
+  const identity = (metric: DiagnosticItemDriftMetric) => `${metric.itemId}\0${metric.contentVersion}`;
+  if (new Set(input.current.map(identity)).size !== input.current.length
+    || new Set(input.baseline.map(identity)).size !== input.baseline.length) {
+    throw new Error('item drift metrics contain duplicate identities');
+  }
+  const baselineByIdentity = new Map(input.baseline.map(metric => [identity(metric), metric]));
+  const items = input.current.map(current => {
+    const baseline = baselineByIdentity.get(identity(current));
+    const enoughSample = Boolean(baseline
+      && current.attempted >= policy.minimumAttemptedPerWindow
+      && baseline.attempted >= policy.minimumAttemptedPerWindow);
+    const currentFacility = current.attempted ? current.correct / current.attempted : null;
+    const baselineFacility = baseline?.attempted ? baseline.correct / baseline.attempted : null;
+    const absoluteFacilityShift = enoughSample && currentFacility !== null && baselineFacility !== null
+      ? rounded(Math.abs(currentFacility - baselineFacility)) : null;
+    const zScore = enoughSample && baseline
+      ? twoProportionZScore(current.correct, current.attempted, baseline.correct, baseline.attempted) : null;
+    const reviewRequired = absoluteFacilityShift !== null && zScore !== null
+      && absoluteFacilityShift >= policy.maximumAbsoluteFacilityShift
+      && zScore >= policy.minimumTwoProportionZScore;
+    return {
+      itemId: current.itemId,
+      contentVersion: current.contentVersion,
+      currentAttempted: current.attempted,
+      baselineAttempted: baseline?.attempted ?? 0,
+      currentFacility: currentFacility === null ? null : rounded(currentFacility),
+      baselineFacility: baselineFacility === null ? null : rounded(baselineFacility),
+      absoluteFacilityShift,
+      twoProportionZScore: zScore,
+      status: reviewRequired ? 'REVIEW_REQUIRED' : enoughSample ? 'STABLE' : 'INSUFFICIENT_DATA',
+    } as const;
+  }).sort((left, right) => left.itemId.localeCompare(right.itemId));
+  const comparable = items.filter(item => item.status !== 'INSUFFICIENT_DATA');
+  const flagged = items.filter(item => item.status === 'REVIEW_REQUIRED');
+  const shifts = comparable.flatMap(item => item.absoluteFacilityShift === null ? [] : [item.absoluteFacilityShift]);
+  return {
+    monitorVersion: 'diagnostic-item-drift-monitor-v1',
+    comparisonBasis: 'consecutive-equal-attempt-start-cohorts',
+    status: flagged.length > 0 ? 'REVIEW_REQUIRED'
+      : items.length > 0 && comparable.length === items.length ? 'STABLE' : 'INSUFFICIENT_DATA',
+    thresholds: { ...policy },
+    activeItems: items.length,
+    comparableItems: comparable.length,
+    insufficientItems: items.length - comparable.length,
+    reviewRequiredItems: flagged.length,
+    largestAbsoluteFacilityShift: shifts.length ? Math.max(...shifts) : null,
+    safeguards: {
+      automaticRecalibration: false,
+      automaticRetirement: false,
+      independentRetirementReviewRequired: true,
+    },
+    items,
+  } as const;
 }
 
 function quantile(values: readonly number[], percentile: number): number | null {

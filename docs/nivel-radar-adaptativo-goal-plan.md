@@ -268,6 +268,16 @@ Actualizado el 25 de septiembre de 2026:
   requieren verificación en el despliegue: un cero ausente nunca se presenta como ausencia de
   fallos. Proyección, cálculo, rutas, instrumentación, runbook y UI forman parte del snapshot de
   entrega.
+- **Fase 8 — señal de deriva de ítems implementada:** el informe administrativo compara la
+  cohorte seleccionada con la ventana inmediatamente anterior y de igual duración. Solo une el
+  mismo ítem y versión, exige al menos 50 respuestas intentadas en cada ventana y marca revisión
+  cuando coinciden un cambio absoluto de facilidad de 0,15 o más y un z de dos proporciones de
+  al menos 3. La línea base usa una consulta mínima sin opciones elegidas, texto ni identidad y
+  se agrega en tiempo lineal. La vista de salud recibe únicamente conteos; el informe privado
+  completo conserva los IDs necesarios para investigar. `INSUFFICIENT_DATA` no se muestra como
+  estabilidad. Esta señal nunca recalibra ni retira contenido: congela el rollout y remite al
+  control versionado con revisiones académica y de medición independientes. Los tres umbrales
+  siguen siendo propuesta dentro de la política de entrega y requieren aprobación humana.
 - **Fase 8 — retiro preservando historia implementado:**
   `config/diagnostic/item-controls.json` separa la disponibilidad futura del contenido
   versionado. Un retiro exige versión exacta, motivo cerrado, referencia de decisión y revisiones

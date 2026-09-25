@@ -48,6 +48,31 @@ de error, filtrando `service=nivel-radar`. Un `request.failed`, cualquier estado
 logs esperados detiene el avance hasta investigar. Esta comprobación real sigue siendo externa:
 la presencia del código de instrumentación no prueba que el despliegue, Drain o alerta funcione.
 
+### Señales de ítems y deriva
+
+El panel compara la ventana solicitada con la ventana consecutiva inmediatamente anterior y de
+igual duración. La cohorte se asigna por inicio del intento y solo se comparan el mismo `itemId`
+y la misma `contentVersion`. Un ítem se marca `REVIEW_REQUIRED` únicamente si ambas ventanas
+alcanzan la muestra mínima de la política de entrega, el cambio absoluto de facilidad supera el
+umbral aprobado y la prueba de dos proporciones supera también su z mínimo. `INSUFFICIENT_DATA`
+significa literalmente que no hay evidencia comparable; nunca se interpreta como estabilidad.
+
+La facilidad es aquí una señal operacional de posible deriva de dificultad, no un parámetro IRT
+recalibrado. Ante una alerta:
+
+1. congelar el siguiente aumento de rollout y capturar el informe agregado completo;
+2. comprobar versión, exposición, ruta, omisión, distractores, latencia y cualquier cambio de
+   población o entrega que pueda explicar la señal;
+3. abrir una revisión independiente académica y de medición con referencia estable;
+4. si ambas personas deciden retirar, añadir un control `psychometric-anomaly` ligado exactamente
+   a `itemId` y `contentVersion` en `config/diagnostic/item-controls.json`;
+5. ejecutar la suite y emitir un nuevo certificado. La retirada solo impide selección futura: el
+   registro permanece para reanudar, puntuar y reproducir intentos históricos ya emitidos.
+
+El monitor no cambia parámetros, niveles ni estado del banco. Tampoco escribe controles de
+retirada. Cambiar sus umbrales modifica la política de entrega y exige nuevamente aprobación
+académica y de Producto.
+
 ## Secuencia de activación
 
 1. Desplegar el commit y certificado verificados con motor encendido, interfaz adaptativa apagada

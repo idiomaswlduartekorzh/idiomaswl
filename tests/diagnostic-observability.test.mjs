@@ -97,6 +97,7 @@ test('observability rejects dynamic route metadata and every user-facing route i
     '../src/app/api/diagnostic/attempts/[attemptId]/stages/[stageId]/route.ts',
     '../src/app/api/diagnostic/media/[mediaId]/route.ts',
     '../src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
+    '../src/app/api/admin/diagnostic/pilot-report/route.ts',
   ].map(path => readFileSync(new URL(path, import.meta.url), 'utf8'));
   assert.ok(sources.every(source => source.includes('observeDiagnosticRoute')));
   assert.ok(sources.every(source => !/route:\s*[`'"]\/api\/diagnostic\/.*\$\{/u.test(source)));
@@ -122,6 +123,7 @@ test('internal failures are allowlisted and instrumented handlers never log raw 
     '../src/server/diagnostic/repository.server.ts',
     '../src/app/api/diagnostic/media/[mediaId]/route.ts',
     '../src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts',
+    '../src/app/api/admin/diagnostic/pilot-report/route.ts',
   ].map(path => readFileSync(new URL(path, import.meta.url), 'utf8'));
   assert.ok(sources.every(source => !source.includes('console.error')));
 });

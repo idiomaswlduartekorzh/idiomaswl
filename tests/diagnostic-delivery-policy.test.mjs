@@ -16,6 +16,11 @@ test('delivery policy separates pilot retests from production cooldown and remai
   assert.deepEqual(validateDiagnosticDeliveryPolicy(policy), []);
   assert.equal(diagnosticDeliveryRules(policy, 'pilot').scheduledRetestAllowed, true);
   assert.equal(diagnosticDeliveryRules(policy, 'pilot').minimumDaysBetweenCompletedAttempts, 0);
+  assert.deepEqual(policy.monitoring.itemDrift, {
+    minimumAttemptedPerWindow: 50,
+    maximumAbsoluteFacilityShift: 0.15,
+    minimumTwoProportionZScore: 3,
+  });
   assert.throws(() => diagnosticDeliveryRules(policy, 'production'), /not approved/);
   assert.equal(policy.approval, null);
 });
@@ -25,6 +30,14 @@ test('delivery policy rejects weakened limits, hidden fields and false approval 
     ...policy, production: { ...policy.production, minimumDaysBetweenCompletedAttempts: 0 },
   }).join('; '), /production policy must enforce a cooldown/);
   assert.match(validateDiagnosticDeliveryPolicy({ ...policy, bypass: true }).join('; '), /unexpected fields/);
+  assert.match(validateDiagnosticDeliveryPolicy({
+    ...policy,
+    monitoring: { itemDrift: { ...policy.monitoring.itemDrift, minimumAttemptedPerWindow: 19 } },
+  }).join('; '), /minimum sample/);
+  assert.match(validateDiagnosticDeliveryPolicy({
+    ...policy,
+    monitoring: { itemDrift: { ...policy.monitoring.itemDrift, maximumAbsoluteFacilityShift: 0.01 } },
+  }).join('; '), /facility shift/);
   assert.match(validateDiagnosticDeliveryPolicy({
     ...policy, status: 'approved', approval: null,
   }).join('; '), /requires bound approval/);

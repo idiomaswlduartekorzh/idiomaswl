@@ -8,12 +8,21 @@ export interface DiagnosticDeliveryChannelPolicy {
   scheduledRetestAllowed: boolean;
 }
 
+export interface DiagnosticItemDriftMonitoringPolicy {
+  minimumAttemptedPerWindow: number;
+  maximumAbsoluteFacilityShift: number;
+  minimumTwoProportionZScore: number;
+}
+
 export interface DiagnosticDeliveryPolicy {
   policyVersion: string;
   status: 'provisional-pending-academic-and-product-approval' | 'approved';
   language: 'en';
   pilot: DiagnosticDeliveryChannelPolicy;
   production: DiagnosticDeliveryChannelPolicy;
+  monitoring: {
+    itemDrift: DiagnosticItemDriftMonitoringPolicy;
+  };
   approval: null | {
     manifestSha256: string;
     snapshotSha256: string;
@@ -24,12 +33,16 @@ export interface DiagnosticDeliveryPolicy {
   notes: readonly string[];
 }
 
-const POLICY_KEYS = ['approval', 'language', 'notes', 'pilot', 'policyVersion', 'production', 'status'];
+const POLICY_KEYS = ['approval', 'language', 'monitoring', 'notes', 'pilot', 'policyVersion', 'production', 'status'];
 const CHANNEL_KEYS = [
   'exposureLookbackDays', 'maximumConcurrentActiveAttempts', 'minimumDaysBetweenCompletedAttempts',
   'resultValidityDays', 'scheduledRetestAllowed',
 ];
 const APPROVAL_KEYS = ['appliedBy', 'approvedAt', 'approvedBy', 'manifestSha256', 'snapshotSha256'];
+const MONITORING_KEYS = ['itemDrift'];
+const ITEM_DRIFT_KEYS = [
+  'maximumAbsoluteFacilityShift', 'minimumAttemptedPerWindow', 'minimumTwoProportionZScore',
+];
 const SHA256 = /^[a-f0-9]{64}$/u;
 const IDENTITY = /^[A-Za-z0-9][A-Za-z0-9._@+-]{2,159}$/u;
 
@@ -53,6 +66,30 @@ export function validateDiagnosticDeliveryPolicy(policy: DiagnosticDeliveryPolic
   if (!Array.isArray(policy.notes) || policy.notes.length < 1
     || policy.notes.some(note => typeof note !== 'string' || note.trim().length < 10)) {
     errors.push('delivery policy notes are incomplete');
+  }
+  if (!policy.monitoring || typeof policy.monitoring !== 'object' || Array.isArray(policy.monitoring)
+    || Object.keys(policy.monitoring).sort().join('|') !== MONITORING_KEYS.join('|')) {
+    errors.push('delivery monitoring policy has unexpected fields');
+  } else {
+    const drift = policy.monitoring.itemDrift;
+    if (!drift || typeof drift !== 'object' || Array.isArray(drift)
+      || Object.keys(drift).sort().join('|') !== ITEM_DRIFT_KEYS.join('|')) {
+      errors.push('item drift monitoring policy has unexpected fields');
+    } else {
+      if (!integerInRange(drift.minimumAttemptedPerWindow, 20, 10_000)) {
+        errors.push('item drift minimum sample must be between 20 and 10000');
+      }
+      if (typeof drift.maximumAbsoluteFacilityShift !== 'number'
+        || !Number.isFinite(drift.maximumAbsoluteFacilityShift)
+        || drift.maximumAbsoluteFacilityShift < 0.05 || drift.maximumAbsoluteFacilityShift > 0.5) {
+        errors.push('item drift facility shift must be between 0.05 and 0.5');
+      }
+      if (typeof drift.minimumTwoProportionZScore !== 'number'
+        || !Number.isFinite(drift.minimumTwoProportionZScore)
+        || drift.minimumTwoProportionZScore < 1.96 || drift.minimumTwoProportionZScore > 6) {
+        errors.push('item drift z score must be between 1.96 and 6');
+      }
+    }
   }
   for (const mode of ['pilot', 'production'] as const) {
     const channel = policy[mode];

@@ -16,10 +16,18 @@
     "resultValidityDays": 180,
     "scheduledRetestAllowed": false
   },
+  "monitoring": {
+    "itemDrift": {
+      "minimumAttemptedPerWindow": 50,
+      "maximumAbsoluteFacilityShift": 0.15,
+      "minimumTwoProportionZScore": 3
+    }
+  },
   "approval": null,
   "notes": [
     "These values are a product and academic proposal, not an approved operating policy.",
     "Pilot retests remain possible for documented reliability studies; production cooldown is enforced atomically.",
-    "Result validity is reported as an expiry date and does not represent an official language certificate."
+    "Result validity is reported as an expiry date and does not represent an official language certificate.",
+    "Item drift monitoring compares consecutive attempt-start cohorts and treats facility change only as a review signal, never as automatic recalibration or retirement."
   ]
 }

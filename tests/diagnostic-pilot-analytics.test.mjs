@@ -4,10 +4,18 @@ import test from 'node:test';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from '../src/server/diagnostic/bank/writing.en.ts';
 import {
+  buildDiagnosticItemDriftMonitor,
+  buildDiagnosticItemDriftMetrics,
   buildDiagnosticPilotReport,
   diagnosticPilotBankSha256,
   validateDiagnosticPilotCriteria,
 } from '../src/server/diagnostic/pilot-analytics.ts';
+
+const driftPolicy = {
+  minimumAttemptedPerWindow: 50,
+  maximumAbsoluteFacilityShift: 0.15,
+  minimumTwoProportionZScore: 3,
+};
 
 const bank = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 2).map(record => ({
   ...record, status: 'pilot', review: { status: 'approved' },
@@ -185,6 +193,92 @@ test('operational health exposes overdue work, listening compliance and writing 
   assert.ok(report.warnings.includes('OVERDUE_ACTIVE_ATTEMPTS'));
   assert.ok(report.warnings.includes('LISTENING_RESPONSES_WITHOUT_PLAYBACK'));
   assert.equal(JSON.stringify(report.operations).includes('private-attempt'), false);
+});
+
+test('item drift monitor requires sample, material facility shift and statistical signal together', () => {
+  const current = [
+    { itemId: 'stable', contentVersion: 'v1', attempted: 100, correct: 62, facility: 0.62 },
+    { itemId: 'drifted', contentVersion: 'v1', attempted: 100, correct: 35, facility: 0.35 },
+    { itemId: 'new-item', contentVersion: 'v1', attempted: 20, correct: 10, facility: 0.5 },
+  ];
+  const baseline = [
+    { itemId: 'stable', contentVersion: 'v1', attempted: 100, correct: 60, facility: 0.6 },
+    { itemId: 'drifted', contentVersion: 'v1', attempted: 100, correct: 70, facility: 0.7 },
+  ];
+  const monitor = buildDiagnosticItemDriftMonitor({ current, baseline, policy: driftPolicy });
+  assert.equal(monitor.status, 'REVIEW_REQUIRED');
+  assert.equal(monitor.comparableItems, 2);
+  assert.equal(monitor.insufficientItems, 1);
+  assert.equal(monitor.reviewRequiredItems, 1);
+  assert.equal(monitor.items.find(item => item.itemId === 'drifted').status, 'REVIEW_REQUIRED');
+  assert.equal(monitor.items.find(item => item.itemId === 'stable').status, 'STABLE');
+  assert.equal(monitor.items.find(item => item.itemId === 'new-item').status, 'INSUFFICIENT_DATA');
+  assert.deepEqual(monitor.safeguards, {
+    automaticRecalibration: false,
+    automaticRetirement: false,
+    independentRetirementReviewRequired: true,
+  });
+});
+
+test('item drift aggregation is version-bound and ignores retired or historical versions', () => {
+  const retired = { ...bank[1], status: 'retired' };
+  const metrics = buildDiagnosticItemDriftMetrics({
+    bank: [bank[0], retired],
+    responses: [
+      {
+        attemptId: 'attempt-current', itemId: bank[0].publicItem.id,
+        contentVersion: bank[0].publicItem.contentVersion, skill: 'reading', outcome: 'correct',
+      },
+      {
+        attemptId: 'attempt-old-version', itemId: bank[0].publicItem.id,
+        contentVersion: 'historical-v0', skill: 'reading', outcome: 'incorrect',
+      },
+      {
+        attemptId: 'attempt-retired', itemId: retired.publicItem.id,
+        contentVersion: retired.publicItem.contentVersion, skill: 'reading', outcome: 'correct',
+      },
+    ],
+  });
+  assert.equal(metrics.length, 1);
+  assert.deepEqual(metrics[0], {
+    itemId: bank[0].publicItem.id,
+    contentVersion: bank[0].publicItem.contentVersion,
+    attempted: 1,
+    correct: 1,
+    facility: 1,
+  });
+  assert.throws(() => buildDiagnosticItemDriftMetrics({
+    bank: [bank[0]],
+    responses: [
+      {
+        attemptId: 'attempt-1', itemId: bank[0].publicItem.id,
+        contentVersion: bank[0].publicItem.contentVersion, skill: 'grammar', outcome: 'correct',
+      },
+    ],
+  }), /active versioned bank/);
+});
+
+test('item drift monitor stays informational when evidence or one threshold is insufficient', () => {
+  const baseline = [{ itemId: 'item', contentVersion: 'v1', attempted: 100, correct: 60, facility: 0.6 }];
+  const small = buildDiagnosticItemDriftMonitor({
+    current: [{ itemId: 'item', contentVersion: 'v1', attempted: 49, correct: 10, facility: 0.204 }],
+    baseline,
+    policy: driftPolicy,
+  });
+  assert.equal(small.status, 'INSUFFICIENT_DATA');
+  assert.equal(small.reviewRequiredItems, 0);
+
+  const materialButNotSignificant = buildDiagnosticItemDriftMonitor({
+    current: [{ itemId: 'item', contentVersion: 'v1', attempted: 50, correct: 22, facility: 0.44 }],
+    baseline: [{ itemId: 'item', contentVersion: 'v1', attempted: 50, correct: 30, facility: 0.6 }],
+    policy: driftPolicy,
+  });
+  assert.equal(materialButNotSignificant.items[0].absoluteFacilityShift, 0.16);
+  assert.equal(materialButNotSignificant.items[0].status, 'STABLE');
+  assert.equal(materialButNotSignificant.status, 'STABLE');
+  assert.throws(() => buildDiagnosticItemDriftMonitor({
+    current: [baseline[0], baseline[0]], baseline, policy: driftPolicy,
+  }), /duplicate identities/);
 });
 
 test('report never serializes attempt identity or submitted response content', () => {
