@@ -18,7 +18,7 @@ const driftPolicy = {
   minimumTwoProportionZScore: 3,
 };
 
-const bank = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 2).map(record => ({
+const bank = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 4).map(record => ({
   ...record, status: 'pilot', review: { status: 'approved' },
 }));
 const writingBank = ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES.slice(0, 1).map(record => ({
@@ -56,7 +56,7 @@ const attempts = Array.from({ length: 12 }, (_, index) => ({
   completedAt: `2026-09-25T13:${String(index).padStart(2, '0')}:00.000Z`,
 }));
 
-const patterns = Array.from({ length: 12 }, (_, index) => [index < 6, index < 6]);
+const patterns = Array.from({ length: 12 }, (_, index) => bank.map(() => index < 6));
 const responses = attempts.flatMap((attempt, attemptIndex) => bank.map((record, itemIndex) => ({
   attemptId: attempt.attemptId, itemId: record.publicItem.id, contentVersion: record.publicItem.contentVersion,
   skill: 'reading', outcome: patterns[attemptIndex][itemIndex] ? 'correct' : 'incorrect',
@@ -96,7 +96,7 @@ const measurementEvidence = {
   })),
   classificationConsistency: { sampleSize: 12, coefficient: 0.84, method: 'bootstrap-classification' },
   localDependence: {
-    method: 'adjusted-yen-q3', eligibleTestlets: 1, analyzedTestlets: 1,
+    method: 'adjusted-yen-q3', eligibleTestlets: 2, analyzedTestlets: 2,
     minimumPairSample: 12, maximumObservedAbsoluteResidualCorrelation: 0.12,
     flaggedTestlets: 0, unresolvedMaterialTestlets: 0, resolutionReference: null,
   },
@@ -125,7 +125,7 @@ const buildReport = overrides => buildDiagnosticPilotReport({
 });
 
 test('eligible testlets are counted from shared active stimuli rather than item totals', () => {
-  assert.equal(diagnosticEligibleTestletCount(bank), 1);
+  assert.equal(diagnosticEligibleTestletCount(bank), 2);
   assert.equal(diagnosticEligibleTestletCount(bank.slice(0, 1)), 0);
 });
 
@@ -141,19 +141,21 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
     'low-a1-a2': 4, 'mid-b1-b2': 4, 'high-c1-c2': 4,
   });
   assert.equal(report.measurementEvidence.adaptiveReliability.bySkill.length, 4);
-  assert.equal(report.measurementEvidence.localDependence.eligibleTestlets, 1);
+  assert.equal(report.measurementEvidence.localDependence.eligibleTestlets, 2);
   assert.equal(report.measurementEvidence.localDependence.unresolvedMaterialTestlets, 0);
   assert.equal(report.gates.localDependenceReview, true);
   assert.equal(report.decision, 'ELIGIBLE_FOR_VALIDATION_REVIEW');
   assert.equal(report.gates.itemQuality, true);
   assert.equal(Object.values(report.gates).every(Boolean), true);
   assert.match(report.bankSnapshot.sha256, /^[a-f0-9]{64}$/u);
-  assert.equal(report.bankSnapshot.objectiveItems, 2);
+  assert.equal(report.bankSnapshot.objectiveItems, 4);
   assert.equal(report.bankSnapshot.writingPrompts, 1);
   assert.equal(report.operations.activeAttempts, 0);
   assert.equal(report.operations.objectiveMedianResponseMs, 1_500);
   assert.equal(report.operations.writingMedianTurnaroundMs, 1_800_000);
   assert.equal(report.operations.listeningStartedRate, null);
+  assert.equal(report.itemMetrics[0].correctedItemTotal.basis, 'same-skill-excluding-shared-stimulus');
+  assert.equal(report.itemMetrics[0].correctedItemTotal.excludedSiblingItems, 1);
   assert.deepEqual(report.operations.monitoringCoverage, {
     applicationErrorRate: 'structured-runtime-logs',
     audioDeliveryFailureRate: 'structured-runtime-logs',
@@ -403,6 +405,19 @@ test('item facility and every keyed distractor must function at the approved sam
   assert.equal(report.gates.distractorFunctioning, false);
   assert.ok(report.itemMetrics.every(item => item.flags.includes('FACILITY_OUTSIDE_TARGET_RANGE')));
   assert.ok(report.itemMetrics.every(item => item.flags.includes('NONFUNCTIONING_DISTRACTOR')));
+  assert.ok(report.itemMetrics.every(item => item.flags.includes('DISCRIMINATION_NOT_ESTIMABLE')));
+});
+
+test('item calibration sample counts attempted responses rather than served omissions', () => {
+  const withOneOmission = responses.map((row, index) => index === 0 ? {
+    ...row, outcome: 'omitted', submittedResponse: { kind: 'single-choice', optionId: null },
+  } : row);
+  const report = buildReport({ responses: withOneOmission });
+  const item = report.itemMetrics.find(metric => metric.itemId === bank[0].publicItem.id);
+  assert.equal(item.served, 12);
+  assert.equal(item.attempted, 11);
+  assert.ok(item.flags.includes('INSUFFICIENT_ITEM_SAMPLE'));
+  assert.equal(report.gates.itemSamples, false);
 });
 
 test('pilot bank fingerprint changes with content, selection state or scoring parameters', () => {
@@ -435,15 +450,15 @@ test('retired records remain auditable but no longer gate the active pilot pool'
     measurementEvidence: {
       ...measurementEvidence,
       bankSnapshotSha256: controlledHash,
-      fairness: { ...measurementEvidence.fairness, itemsAnalyzed: 1 },
+      fairness: { ...measurementEvidence.fairness, itemsAnalyzed: 3 },
     },
   });
-  assert.equal(report.bankSnapshot.objectiveItems, 1);
+  assert.equal(report.bankSnapshot.objectiveItems, 3);
   assert.equal(report.bankSnapshot.retiredObjectiveItems, 1);
   assert.equal(report.bankSnapshot.writingPrompts, 0);
   assert.equal(report.bankSnapshot.retiredWritingPrompts, 1);
   assert.equal(report.writingAgreement.submitted, 0);
   assert.equal(report.writingAgreement.comparablePairs, 0);
-  assert.equal(report.itemMetrics.length, 1);
+  assert.equal(report.itemMetrics.length, 3);
   assert.equal(report.itemMetrics[0].itemId, controlledBank[1].publicItem.id);
 });

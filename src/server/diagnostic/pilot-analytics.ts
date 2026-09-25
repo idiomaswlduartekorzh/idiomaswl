@@ -504,14 +504,30 @@ function validateDataset(input: {
 }
 
 function correctedItemTotal(
-  itemId: string,
-  skill: string,
+  targetRecord: DiagnosticBankRecord,
   responses: readonly DiagnosticPilotResponseRow[],
+  bankById: ReadonlyMap<string, DiagnosticBankRecord>,
   minimumSample: number,
-): { sampleSize: number; correlation: number | null } {
+): {
+  sampleSize: number;
+  correlation: number | null;
+  basis: 'same-skill-excluding-shared-stimulus';
+  excludedSiblingItems: number;
+} {
+  const clusterIdentity = (record: DiagnosticBankRecord): string => {
+    const stimulus = record.publicItem.stimulus;
+    if (stimulus.kind === 'audio') return `audio:${stimulus.mediaId}`;
+    if (stimulus.kind === 'text') return `text:${stimulus.stimulusId}`;
+    return `item:${record.publicItem.id}`;
+  };
+  const targetCluster = clusterIdentity(targetRecord);
+  const excludedSiblingItems = [...bankById.values()].filter(record =>
+    record.publicItem.id !== targetRecord.publicItem.id
+    && record.publicItem.skill === targetRecord.publicItem.skill
+    && clusterIdentity(record) === targetCluster).length;
   const byAttempt = new Map<string, DiagnosticPilotResponseRow[]>();
   for (const response of responses) {
-    if (response.skill !== skill || response.outcome === 'omitted') continue;
+    if (response.skill !== targetRecord.publicItem.skill || response.outcome === 'omitted') continue;
     const rows = byAttempt.get(response.attemptId) ?? [];
     rows.push(response);
     byAttempt.set(response.attemptId, rows);
@@ -519,13 +535,22 @@ function correctedItemTotal(
   const itemScores: number[] = [];
   const restScores: number[] = [];
   for (const rows of byAttempt.values()) {
-    const item = rows.find(row => row.itemId === itemId);
-    const rest = rows.filter(row => row.itemId !== itemId);
+    const item = rows.find(row => row.itemId === targetRecord.publicItem.id);
+    const rest = rows.filter(row => {
+      if (row.itemId === targetRecord.publicItem.id) return false;
+      const record = bankById.get(row.itemId);
+      return record !== undefined && clusterIdentity(record) !== targetCluster;
+    });
     if (!item || !rest.length) continue;
     itemScores.push(item.outcome === 'correct' ? 1 : 0);
     restScores.push(rest.filter(row => row.outcome === 'correct').length / rest.length);
   }
-  return { sampleSize: itemScores.length, correlation: itemScores.length >= minimumSample ? pearson(itemScores, restScores) : null };
+  return {
+    sampleSize: itemScores.length,
+    correlation: itemScores.length >= minimumSample ? pearson(itemScores, restScores) : null,
+    basis: 'same-skill-excluding-shared-stimulus',
+    excludedSiblingItems,
+  };
 }
 
 function referenceMetrics(references: readonly DiagnosticPilotReferenceRow[]) {
@@ -810,6 +835,7 @@ export function buildDiagnosticPilotReport(input: {
   const writingQueueAges = writingQueue.map(row => Math.max(0, generatedAtMs - Date.parse(row.createdAt)));
   const writingTurnaround = input.writing.flatMap(row => row.completedAt === null
     ? [] : [Date.parse(row.completedAt) - Date.parse(row.createdAt)]);
+  const activeBankById = new Map(activeBank.map(record => [record.publicItem.id, record]));
 
   const itemMetrics = activeBank.map(record => {
     const item = record.publicItem;
@@ -823,7 +849,9 @@ export function buildDiagnosticPilotReport(input: {
     for (const row of attempted) {
       for (const optionId of selectedOptionIds(row.submittedResponse)) optionCounts.set(optionId, (optionCounts.get(optionId) ?? 0) + 1);
     }
-    const discrimination = correctedItemTotal(item.id, item.skill, activeResponses, input.criteria.minimumDiscriminationSample);
+    const discrimination = correctedItemTotal(
+      record, activeResponses, activeBankById, input.criteria.minimumDiscriminationSample,
+    );
     const omissionRate = rate(omissions, rows.length);
     const facility = rate(correct, attempted.length);
     const correctOptionIds = record.scoring.kind === 'short-text'
@@ -832,11 +860,12 @@ export function buildDiagnosticPilotReport(input: {
     const distractorRates = optionIds.filter(optionId => !correctOptionIds.has(optionId))
       .map(optionId => ({ optionId, rate: rate(optionCounts.get(optionId) ?? 0, attempted.length) }));
     const flags: string[] = [];
-    if (rows.length < input.criteria.minimumResponsesPerItem) flags.push('INSUFFICIENT_ITEM_SAMPLE');
+    if (attempted.length < input.criteria.minimumResponsesPerItem) flags.push('INSUFFICIENT_ITEM_SAMPLE');
     if (facility !== null && (facility < input.criteria.minimumItemFacility || facility > input.criteria.maximumItemFacility)) {
       flags.push('FACILITY_OUTSIDE_TARGET_RANGE');
     }
     if (omissionRate !== null && omissionRate > input.criteria.maximumOmissionRate) flags.push('HIGH_OMISSION');
+    if (discrimination.correlation === null) flags.push('DISCRIMINATION_NOT_ESTIMABLE');
     if (discrimination.correlation !== null && discrimination.correlation < input.criteria.minimumCorrectedItemTotal) flags.push('LOW_OR_NEGATIVE_DISCRIMINATION');
     if (attempted.length >= input.criteria.minimumResponsesPerItem
       && distractorRates.some(distractor => distractor.rate === null
@@ -893,7 +922,8 @@ export function buildDiagnosticPilotReport(input: {
     attemptVolume: input.attempts.length >= input.criteria.minimumStartedAttempts,
     completion: (rate(completed.length, input.attempts.length) ?? 0) >= input.criteria.minimumCompletionRate,
     routeCoverage: ROUTES.every(route => completedRouteCounts[route] >= input.criteria.minimumCompletedPerRoute),
-    itemSamples: itemMetrics.length > 0 && itemMetrics.every(item => item.served >= input.criteria.minimumResponsesPerItem),
+    itemSamples: itemMetrics.length > 0
+      && itemMetrics.every(item => item.attempted >= input.criteria.minimumResponsesPerItem),
     itemQuality: itemMetrics.length > 0 && itemMetrics.every(item => item.omissionRate !== null
       && item.omissionRate <= input.criteria.maximumOmissionRate
       && item.facility !== null

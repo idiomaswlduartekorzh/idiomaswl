@@ -291,7 +291,10 @@ Actualizado el 25 de septiembre de 2026:
   material sin resolver mantiene el piloto en `HOLD`. El reporte agregado v3 y la revisión final
   del piloto incorporan esta puerta sin exponer respuestas ni participantes. Los valores de 50
   pares por testlet y residual absoluto 0,20 son propuesta pendiente de aprobación, no una norma
-  universal ni evidencia ya obtenida.
+  universal ni evidencia ya obtenida. La muestra mínima por ítem cuenta solo respuestas
+  intentadas: servir una pregunta u omitirla no aporta observación de dificultad. Además, la
+  correlación ítem-total corregida excluye las preguntas hermanas del mismo texto o audio para
+  que la dependencia del testlet no infle artificialmente la discriminación.
 - **Fase 8 — interpretación responsable preparada:** pantalla y PDF traducen los estados y
   advertencias internas a lenguaje comprensible, distinguen estimación provisional, calibrada y
   no disponible, y aclaran que la confianza técnica no es porcentaje de dominio ni certeza del

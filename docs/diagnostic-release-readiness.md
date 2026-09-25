@@ -350,6 +350,8 @@ finalización, comportamiento de ítems, escritura y referencia independiente, e
 
 - participantes completados en cada una de las tres rutas MST y referencias en A1–C2;
 - facilidad dentro del rango aprobado y cada distractor funcionando con muestra suficiente;
+- muestra mínima basada en respuestas intentadas, con omisiones fuera del denominador de
+  calibración, y correlación ítem-total que excluye preguntas del mismo estímulo;
 - fiabilidad adaptativa por lectura, escucha, gramática y vocabulario;
 - consistencia de la decisión de nivel y estabilidad por las cinco habilidades;
 - dependencia local residual en todos los testlets de lectura y escucha, con muestra, umbral y
