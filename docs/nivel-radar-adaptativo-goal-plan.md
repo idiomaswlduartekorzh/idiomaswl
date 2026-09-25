@@ -114,7 +114,12 @@ Actualizado el 24 de septiembre de 2026:
   generada para otra versión aunque conserve el mismo identificador. El generador de paquetes
   privados de locución entrega transcript, reparto, ritmo y duración, pero excluye preguntas,
   claves y racionales. El hash del transcript canónico se verifica de nuevo al materializar una
-  grabación, de modo que una locución alterada no puede entrar silenciosamente al banco.
+  grabación, de modo que una locución alterada no puede entrar silenciosamente al banco. El
+  generador ElevenLabs reutiliza los controles del motor internacional: el dry run A1–C2
+  factura **36 archivos, 116 segmentos y 30.386 caracteres**; la generación exige hash exacto
+  del paquete, tope de caracteres, reserva de créditos, semilla, cuatro voces existentes y
+  aprobación explícita del reparto. La salida nunca va a `public/` y queda pendiente de QA
+  humano. Las cuatro voces siguen sin seleccionar, por lo que hoy el gasto está bloqueado.
 - **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
   tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
@@ -147,7 +152,7 @@ Actualizado el 24 de septiembre de 2026:
   todavía ejecución y verificación contra Supabase real.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **162 pruebas** y
+  borradores; el último corte local ejecutó **165 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

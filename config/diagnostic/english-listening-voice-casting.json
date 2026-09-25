@@ -1,0 +1,19 @@
+{
+  "castingVersion": "diagnostic-en-listening-casting-v1",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "target": {
+    "sampleRateHz": 44100,
+    "channels": 1,
+    "bitrate": "96k",
+    "turnPauseSeconds": 0.35,
+    "integratedLoudnessLufs": -18,
+    "maxTruePeakDbfs": -1.5
+  },
+  "profiles": {
+    "narrator_a": { "voiceId": "", "approval": "pending_owner_listening_review" },
+    "narrator_b": { "voiceId": "", "approval": "pending_owner_listening_review" },
+    "speaker_a": { "voiceId": "", "approval": "pending_owner_listening_review" },
+    "speaker_b": { "voiceId": "", "approval": "pending_owner_listening_review" }
+  }
+}
