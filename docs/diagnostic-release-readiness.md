@@ -76,6 +76,8 @@ una comprobación externa o humana real:
 - retención y borrado requieren política aprobada y una prueba de eliminación;
 - el informe piloto se guarda como archivo, se fija por SHA-256 y debe contener el mismo hash de
   banco objetivo y de escritura que el código actual;
+- un resultado completado solo cruza la API después de validar su contrato y reproducir nivel
+  global, advertencias y recomendaciones desde las cinco evidencias persistidas;
 - pruebas, build y E2E deben corresponder a la misma huella SHA-256 del código diagnóstico; el
   commit auditado se conserva como metadato y el árbol de trabajo debe estar limpio.
 

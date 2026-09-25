@@ -1,5 +1,6 @@
 import type {
   DiagnosticPublicItem,
+  DiagnosticResultProfile,
   DiagnosticStageReceipt,
   DiagnosticSubmittedResponse,
 } from './types.ts';
@@ -29,7 +30,7 @@ export type DiagnosticResumeDelivery =
   | { kind: 'objective-stage'; delivery: DiagnosticStageDelivery }
   | { kind: 'writing-stage'; delivery: DiagnosticWritingStageDelivery }
   | { kind: 'processing'; attemptId: string; attemptVersion: number; status: 'scoring'; writingStatus: string | null }
-  | { kind: 'result'; attemptId: string; attemptVersion: number; status: 'completed'; resultProfile: unknown }
+  | { kind: 'result'; attemptId: string; attemptVersion: number; status: 'completed'; resultProfile: DiagnosticResultProfile }
   | { kind: 'closed'; attemptId: string; attemptVersion: number; status: 'expired' | 'abandoned' };
 
 export type DiagnosticStartRequest = {

@@ -60,7 +60,10 @@ Actualizado el 25 de septiembre de 2026:
   objetivas y publica escritura y perfil integral en una sola transacción.
   La reanudación autenticada vuelve a resolver la última etapa desde los bancos versionados y
   distingue etapa objetiva, escritura, procesamiento, resultado y cierre sin exponer campos
-  privados. Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker
+  privados. Para un intento completado ya no reenvía ciegamente el JSON persistido: valida las
+  cinco habilidades, evidencia, rangos y confianza, descarta campos no públicos y vuelve a
+  derivar nivel global, advertencias y recomendaciones; una discrepancia deja el resultado
+  cerrado en servidor. Falta ejecutar las migraciones contra Postgres (el entorno actual no tiene Docker
   ni Podman), conectar un proveedor de evaluación automática y verificar autorización contra
   una base real.
 - **Fase 3 — núcleo MST avanzado:** enrutamiento monotónico, confirmación ejecutable de perfiles

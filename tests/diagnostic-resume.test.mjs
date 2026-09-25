@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
+import { buildDiagnosticCompositeResult } from '../src/server/diagnostic/measurement.ts';
 import { buildEnglishDiagnosticResumeDelivery } from '../src/server/diagnostic/resume-core.ts';
 
 const item = {
@@ -34,6 +35,26 @@ const base = {
   writingBank: [promptRecord], writingBankVersion: 'writing-v1', blueprintVersion: 'blueprint-v1',
   engineVersion: 'engine-v1', now: new Date('2026-09-24T13:00:00.000Z'),
 };
+
+function completedResultProfile() {
+  const objective = ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => ({
+    skill, decisions: 6, distinctStimuli: skill === 'reading' || skill === 'listening' ? 3 : 6,
+    attempted: 6, omitted: 0, observedAccuracy: 0.67,
+    status: 'provisional', estimatedLevel: 'B1', plausibleRange: ['A2', 'B2'], confidence: 0.61,
+    theta: -0.35, standardError: 0.78, calibrationVersion: 'fixture-calibration-v1',
+  }));
+  return buildDiagnosticCompositeResult({
+    attemptId: attempt.id,
+    blueprintVersion: base.blueprintVersion,
+    bankVersion: base.objectiveBankVersion,
+    skills: [...objective, {
+      skill: 'writing', decisions: 1, distinctStimuli: 1, status: 'provisional',
+      reviewStatus: 'human-reviewed', estimatedLevel: 'B1', plausibleRange: ['B1', 'B1'], confidence: 0.7,
+    }],
+    generatedAt: '2026-09-24T13:00:00.000Z',
+    validUntil: '2026-10-24T13:00:00.000Z',
+  });
+}
 
 test('rehydrates the exact objective stage without private scoring fields', () => {
   const resume = buildEnglishDiagnosticResumeDelivery({
@@ -85,7 +106,7 @@ test('returns processing, completed and closed states without inventing missing 
   assert.deepEqual(processing, {
     kind: 'processing', attemptId: 'attempt-1', attemptVersion: 4, status: 'scoring', writingStatus: 'human-review',
   });
-  const resultProfile = { globalLevel: 'B1', skills: [] };
+  const resultProfile = completedResultProfile();
   const result = buildEnglishDiagnosticResumeDelivery({
     ...base, snapshot: { ...common, attempt: { ...attempt, version: 5, status: 'completed' }, resultProfile },
   });
@@ -99,6 +120,31 @@ test('returns processing, completed and closed states without inventing missing 
   assert.throws(
     () => buildEnglishDiagnosticResumeDelivery({ ...base, snapshot: { ...common, attempt: { ...attempt, status: 'completed' } } }),
     /no result profile/,
+  );
+  assert.throws(
+    () => buildEnglishDiagnosticResumeDelivery({
+      ...base,
+      snapshot: {
+        ...common,
+        attempt: { ...attempt, version: 5, status: 'completed' },
+        resultProfile: { ...resultProfile, globalLevel: 'C2' },
+      },
+    }),
+    /invalid result profile/,
+  );
+  assert.throws(
+    () => buildEnglishDiagnosticResumeDelivery({
+      ...base,
+      snapshot: {
+        ...common,
+        attempt: { ...attempt, version: 5, status: 'completed' },
+        resultProfile: {
+          ...resultProfile,
+          skills: resultProfile.skills.map((skill, index) => index === 0 ? { ...skill, confidence: 2 } : skill),
+        },
+      },
+    }),
+    /invalid result profile/,
   );
 });
 

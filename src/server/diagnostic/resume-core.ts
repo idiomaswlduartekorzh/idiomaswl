@@ -4,6 +4,7 @@ import type { DiagnosticStageReceipt } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticAttemptSnapshot } from './continue-core.ts';
 import { toDiagnosticPublicItem } from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
+import { parseDiagnosticPersistedResultProfile } from './result-contract.ts';
 
 export interface DiagnosticResumeSnapshot {
   attempt: DiagnosticAttemptSnapshot;
@@ -39,7 +40,14 @@ export function buildEnglishDiagnosticResumeDelivery(input: {
   }
   if (attempt.status === 'completed') {
     if (!input.snapshot.resultProfile) throw new Error('completed diagnostic has no result profile');
-    return { kind: 'result', attemptId: attempt.id, attemptVersion: attempt.version, status: 'completed', resultProfile: input.snapshot.resultProfile };
+    const resultProfile = parseDiagnosticPersistedResultProfile({
+      value: input.snapshot.resultProfile,
+      attemptId: attempt.id,
+      blueprintVersion: input.snapshot.blueprintVersion,
+      bankVersion: input.snapshot.bankVersion,
+    });
+    if (!resultProfile) throw new Error('completed diagnostic has an invalid result profile');
+    return { kind: 'result', attemptId: attempt.id, attemptVersion: attempt.version, status: 'completed', resultProfile };
   }
   if (attempt.status === 'expired' || attempt.status === 'abandoned') {
     return { kind: 'closed', attemptId: attempt.id, attemptVersion: attempt.version, status: attempt.status };

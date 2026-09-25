@@ -5,6 +5,7 @@ import { ENGLISH_DIAGNOSTIC_BLUEPRINT } from '../src/lib/diagnostic/blueprint.ts
 import { DIAGNOSTIC_ENGINE_VERSION } from '../src/lib/diagnostic/delivery.ts';
 import { DIAGNOSTIC_WRITING_CRITERIA } from '../src/lib/diagnostic/writing.ts';
 import { finalizeEnglishDiagnostic } from '../src/server/diagnostic/finalize-core.ts';
+import { parseDiagnosticPersistedResultProfile } from '../src/server/diagnostic/result-contract.ts';
 import { diagnosticWritingResponseSha256 } from '../src/server/diagnostic/writing.ts';
 
 const bankVersion = 'fixture-bank-v1';
@@ -93,6 +94,12 @@ test('finalizes all five skills and persists one versioned result', async () => 
   assert.ok(persisted.finalEvidence.languageUse.every(item => item.decisions === 6 && item.attempted === 6));
   assert.ok(persisted.finalEvidence.languageUse.every(item => item.languageUseIntegration.automaticLevelShift === false));
   assert.equal(persisted.resultProfile.attemptId, attempt.id);
+  assert.deepEqual(parseDiagnosticPersistedResultProfile({
+    value: result.resultProfile,
+    attemptId: attempt.id,
+    blueprintVersion: attempt.blueprintVersion,
+    bankVersion: attempt.bankVersion,
+  }), result.resultProfile);
 });
 
 test('finalizes a consent-safe human-only writing path with null automated evidence', async () => {

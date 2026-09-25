@@ -9,6 +9,7 @@ const submitRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[
 const submitHandler = await readFile(new URL('../src/server/diagnostic/submit.server.ts', import.meta.url), 'utf8');
 const resumeRoute = await readFile(new URL('../src/app/api/diagnostic/attempts/[attemptId]/route.ts', import.meta.url), 'utf8');
 const resumeHandler = await readFile(new URL('../src/server/diagnostic/resume.server.ts', import.meta.url), 'utf8');
+const resumeCore = await readFile(new URL('../src/server/diagnostic/resume-core.ts', import.meta.url), 'utf8');
 const finalizeRoute = await readFile(new URL('../src/app/api/admin/diagnostic/attempts/[attemptId]/finalize/route.ts', import.meta.url), 'utf8');
 
 test('diagnostic start route uses Node runtime and delegates to a server-only handler', () => {
@@ -24,6 +25,8 @@ test('attempt resume is authenticated, owner-scoped and returns no-store payload
   assert.match(resumeHandler, /import 'server-only'/);
   assert.match(resumeHandler, /auth\.getUser\(\)/);
   assert.match(resumeHandler, /loadDiagnosticAttemptForResume/);
+  assert.match(resumeCore, /parseDiagnosticPersistedResultProfile/);
+  assert.match(resumeCore, /invalid result profile/);
   assert.match(resumeHandler, /'Cache-Control': 'private, no-store, max-age=0'/);
   assert.match(repository, /loadDiagnosticAttemptForResume/);
   assert.match(repository, /\.eq\('id', input\.attemptId\)\.eq\('user_id', input\.userId\)/);
