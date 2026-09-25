@@ -2,10 +2,11 @@
 
 Estado actual: **HOLD**.
 
-Último recibo integral reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
-`e560c391`; TypeScript, el build de **2.564 páginas estáticas** y **4/4 historias E2E** pasaron.
-La ampliación posterior del contrato psicométrico pasa **245/245 pruebas** de fundamento, pero
-todavía necesita un nuevo recibo integral ligado a su propia huella antes de actualizar ese corte.
+Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
+`afd483b7`; **245/245 pruebas**, TypeScript, el build de **2.564 páginas estáticas** y **4/4
+historias E2E** pasaron. La huella de fuente es
+`e3febff0ea09d5302f05fd47a5a737854afecf3aba896752d3cab6b711c07916` y el recibo privado quedó
+fijado por `2fcf7d8941757796f8f7f0ba8d74b4e1b73bc11d78d696489e4af78b34d8c458`.
 Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
 aprobación académica, de privacidad o psicométrica.
 
