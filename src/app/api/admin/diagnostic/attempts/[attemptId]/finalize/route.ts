@@ -64,18 +64,22 @@ export async function POST(
   }
   if (!body || typeof body !== 'object' || Array.isArray(body)) return jsonError('INVALID_EVALUATION', 'La evaluación no es válida.', 400);
   const candidate = body as Record<string, unknown>;
-  const automated = parseDiagnosticWritingEvaluation(candidate.automated, 'automated') as DiagnosticAutomatedWritingEvaluation | null;
   const humanInput = parseDiagnosticWritingEvaluation(candidate.human, 'human') as DiagnosticHumanWritingEvaluation | null;
   const adjudicatedInput = candidate.adjudicated === undefined
     ? undefined
     : parseDiagnosticWritingEvaluation(candidate.adjudicated, 'human') as DiagnosticHumanWritingEvaluation | null;
-  if (!automated || !humanInput || adjudicatedInput === null) return jsonError('INVALID_EVALUATION', 'La evaluación no cumple el contrato.', 400);
+  if (!humanInput || adjudicatedInput === null) return jsonError('INVALID_EVALUATION', 'La evaluación no cumple el contrato.', 400);
   const human = { ...humanInput, reviewerId: admin.id };
   const adjudicated = adjudicatedInput ? { ...adjudicatedInput, reviewerId: admin.id } : undefined;
 
   try {
     const finalization = await loadDiagnosticFinalizationContext(attemptId);
     if (!finalization) return jsonError('NOT_FOUND', 'Intento no encontrado.', 404);
+    const automated = parseDiagnosticWritingEvaluation(
+      finalization.automatedEvaluation,
+      'automated',
+    ) as DiagnosticAutomatedWritingEvaluation | null;
+    if (!automated) return jsonError('AUTOMATED_EVALUATION_PENDING', 'La evaluación automatizada aún no está disponible.', 409);
     const promptRecord = ENGLISH_DIAGNOSTIC_WRITING_BANK.find(record =>
       record.publicPrompt.id === finalization.promptId
       && record.publicPrompt.contentVersion === finalization.promptContentVersion);

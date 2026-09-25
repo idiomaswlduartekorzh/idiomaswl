@@ -8,6 +8,7 @@ import type { PersistDiagnosticAttemptInput } from './start-core';
 import type { PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
 import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
+import type { DiagnosticAutomatedWritingEvaluation } from './writing';
 import type { DiagnosticResumeSnapshot } from './resume-core';
 import type {
   DiagnosticPilotAttemptRow,
@@ -89,6 +90,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
   promptId: string;
   promptContentVersion: string;
   responseText: string;
+  automatedEvaluation: unknown;
   observations: readonly DiagnosticObjectiveObservation[];
 } | null> {
   const admin = createAdminClient();
@@ -101,7 +103,7 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
       .select('id,user_id,version,status,bank_version,blueprint_version,engine_version')
       .eq('id', attemptId).maybeSingle(),
     admin.from('diagnostic_writing_evaluations')
-      .select('prompt_id,content_version,response_text,status').eq('attempt_id', attemptId).maybeSingle(),
+      .select('prompt_id,content_version,response_text,status,automated_evaluation').eq('attempt_id', attemptId).maybeSingle(),
     admin.from('diagnostic_responses')
       .select('item_id,outcome').eq('attempt_id', attemptId),
   ]);
@@ -122,10 +124,35 @@ export async function loadDiagnosticFinalizationContext(attemptId: string): Prom
     },
     promptId: String(writing.prompt_id), promptContentVersion: String(writing.content_version),
     responseText: writing.response_text,
+    automatedEvaluation: writing.automated_evaluation,
     observations: responses.map(response => ({
       itemId: String(response.item_id), outcome: response.outcome as DiagnosticObjectiveObservation['outcome'],
     })),
   };
+}
+
+export async function persistDiagnosticAutomatedWritingEvaluation(input: {
+  attemptId: string;
+  userId: string;
+  evaluation: DiagnosticAutomatedWritingEvaluation;
+}): Promise<{ replayed: boolean }> {
+  const { data, error } = await createAdminClient().rpc('record_diagnostic_automated_writing_evaluation', {
+    p_attempt_id: input.attemptId,
+    p_user_id: input.userId,
+    p_automated_evaluation: input.evaluation,
+  });
+  if (error || !data || typeof data !== 'object') {
+    const knownCode = [
+      'diagnostic_attempt_not_found', 'diagnostic_attempt_not_scoring', 'diagnostic_writing_not_found',
+      'diagnostic_writing_not_pending', 'diagnostic_automated_evaluation_invalid',
+      'diagnostic_automated_evaluation_conflict',
+    ].find(code => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  const result = data as { replayed?: unknown };
+  if (typeof result.replayed !== 'boolean') throw new Error('diagnostic_persistence_unavailable');
+  return { replayed: result.replayed };
 }
 
 export async function persistDiagnosticFinalization(

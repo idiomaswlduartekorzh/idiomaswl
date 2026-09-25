@@ -7,6 +7,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925001940_diagnostic_attempt_rpcs.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925014500_diagnostic_writing_submission.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925021500_diagnostic_finalization.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260925030000_diagnostic_writing_automation.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 
 test('diagnostic mutations are atomic security-invoker functions', () => {
@@ -14,9 +15,10 @@ test('diagnostic mutations are atomic security-invoker functions', () => {
   assert.match(sql, /create function public\.submit_diagnostic_objective_stage/);
   assert.match(sql, /create function public\.submit_diagnostic_writing_stage/);
   assert.match(sql, /create function public\.complete_diagnostic_attempt/);
-  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 4);
+  assert.match(sql, /create function public\.record_diagnostic_automated_writing_evaluation/);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 5);
   assert.equal(sql.includes('security definer'), false);
-  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 4);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 5);
 });
 
 test('only service_role can execute diagnostic mutation functions', () => {
@@ -28,7 +30,17 @@ test('only service_role can execute diagnostic mutation functions', () => {
   assert.match(sql, /grant execute on function public\.submit_diagnostic_writing_stage\([\s\S]+?to service_role;/);
   assert.match(sql, /revoke all on function public\.complete_diagnostic_attempt\([\s\S]+?from public, anon, authenticated, service_role;/);
   assert.match(sql, /grant execute on function public\.complete_diagnostic_attempt\([\s\S]+?to service_role;/);
+  assert.match(sql, /revoke all on function public\.record_diagnostic_automated_writing_evaluation\([\s\S]+?from public, anon, authenticated, service_role;/);
+  assert.match(sql, /grant execute on function public\.record_diagnostic_automated_writing_evaluation\([\s\S]+?to service_role;/);
   assert.equal(/to (anon|authenticated)/.test(sql), false);
+});
+
+test('automated writing evidence is stored once and conflicting retries fail closed', () => {
+  assert.match(sql, /v_attempt\.status <> 'scoring'/);
+  assert.match(sql, /v_writing\.automated_evaluation = p_automated_evaluation[\s\S]+?'replayed', true/);
+  assert.match(sql, /diagnostic_automated_evaluation_conflict/);
+  assert.match(sql, /set automated_evaluation = p_automated_evaluation,[\s\S]+?status = 'automated-scored'/);
+  assert.match(sql, /'writing\.automated_scored'/);
 });
 
 test('finalization publishes writing evidence and the result profile in one transaction', () => {
