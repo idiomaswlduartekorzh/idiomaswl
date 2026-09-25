@@ -48,6 +48,32 @@ Las credenciales no forman parte del reporte. Para escritura externa solo se mue
 de bloqueos, proveedor y modelo fijado. La vía humana puede liberar el diagnóstico sin configurar
 Gemini ni Groq.
 
+### Inspección segura de Supabase
+
+`npm run inspect:diagnostic-supabase` es deliberadamente un dry run. Con `-- --execute` y las
+credenciales cargadas únicamente en el entorno, comprueba mediante solicitudes sin cuerpo:
+
+- las columnas que prueban la migración diagnóstica más reciente;
+- el acceso de servidor y la denegación directa para clave pública;
+- los RPC de servidor con entradas inválidas que no escriben datos;
+- el bucket `diagnostic-audio`, su límite, MIME y condición privada;
+- opcionalmente, la denegación directa con un JWT de usuario de prueba en
+  `DIAGNOSTIC_VERIFY_USER_ACCESS_TOKEN`.
+
+Admite las claves nuevas `SUPABASE_SECRET_KEY` y
+`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, con fallback a las variables legacy. Las claves nuevas
+solo viajan en `apikey`; nunca se presentan como JWT. Un recibo privado puede conservarse con:
+
+```bash
+npm run inspect:diagnostic-supabase -- --execute \
+  --output=.diagnostic-private/evidence/supabase-inspection.json
+```
+
+El archivo contiene estados y códigos, pero no filas, UUID, correos ni credenciales. Incluso un
+`PASS` mantiene `authenticatedApplicationFlowVerified: false`: esta inspección valida esquema,
+grants, RPC y Storage, pero no sustituye la prueba de inicio, avance, reanudación, audio,
+escritura y resultado a través de la aplicación.
+
 La propuesta `config/diagnostic/data-retention-policy.json` no está activa ni aprobada. El
 endpoint autenticado `DELETE /api/diagnostic/attempts` ya permite borrar todo el dominio
 diagnóstico del usuario con confirmación explícita; la función transaccional cuenta y verifica
