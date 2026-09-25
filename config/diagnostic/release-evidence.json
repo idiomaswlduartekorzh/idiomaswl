@@ -1,0 +1,45 @@
+{
+  "evidenceVersion": "english-diagnostic-release-evidence-v1",
+  "updatedAt": null,
+  "database": {
+    "appliedThroughMigration": null,
+    "verifiedAt": null,
+    "verifiedBy": null,
+    "authenticatedFlowVerified": false
+  },
+  "writingOperations": {
+    "mode": null,
+    "humanReview": {
+      "approved": false,
+      "verifiedReviewerCount": 0,
+      "slaHours": null,
+      "verifiedAt": null,
+      "verifiedBy": null
+    },
+    "externalProcessing": {
+      "consentCaptureVerified": false,
+      "verifiedAt": null,
+      "verifiedBy": null
+    }
+  },
+  "privacy": {
+    "retentionPolicyVersion": null,
+    "approvedAt": null,
+    "approvedBy": null,
+    "deletionFlowVerified": false
+  },
+  "pilot": {
+    "reportPath": null,
+    "reportSha256": null,
+    "validationDecision": null,
+    "reviewedAt": null,
+    "reviewedBy": null
+  },
+  "quality": {
+    "diagnosticSuiteSourceSha256": null,
+    "productionBuildSourceSha256": null,
+    "verifiedCommit": null,
+    "verifiedAt": null,
+    "verifiedBy": null
+  }
+}

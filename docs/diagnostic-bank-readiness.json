@@ -8,6 +8,7 @@
     "reservedDraftObjectiveDecisions": 216,
     "nonReservedDraftObjectiveDecisions": 24,
     "operationalObjectiveDecisions": 0,
+    "approvedSelectableObjectiveDecisions": 0,
     "objectiveCellsWithDraftCapacity": 18,
     "objectiveCellsRequired": 24,
     "writingDraftPrompts": 24,

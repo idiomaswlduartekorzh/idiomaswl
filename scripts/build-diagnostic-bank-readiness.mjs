@@ -78,6 +78,8 @@ const report = {
     reservedDraftObjectiveDecisions: cells.reduce((sum, cell) => sum + cell.authored.reservedDraftDecisions, 0),
     nonReservedDraftObjectiveDecisions: cells.reduce((sum, cell) => sum + cell.authored.nonReservedDraftDecisions, 0),
     operationalObjectiveDecisions: cells.reduce((sum, cell) => sum + cell.operationalDecisions, 0),
+    approvedSelectableObjectiveDecisions: cells.reduce((sum, cell) =>
+      sum + cell.approvedPilotDecisions + cell.operationalDecisions, 0),
     objectiveCellsWithDraftCapacity: cells.filter((cell) => cell.authoringGap === 0 && (cell.stimulusAuthoringGap ?? 0) === 0).length,
     objectiveCellsRequired: cells.length,
     writingDraftPrompts: writing.reduce((sum, row) => sum + row.reservedDraftPrompts, 0),

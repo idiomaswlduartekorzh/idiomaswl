@@ -1,4 +1,7 @@
+import { createHash } from 'node:crypto';
+
 import { CEFR_LEVELS, type CefrLevel } from '../../lib/diagnostic/types.ts';
+import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
 export interface DiagnosticPilotCriteria {
@@ -83,6 +86,36 @@ export function validateDiagnosticPilotCriteria(criteria: DiagnosticPilotCriteri
 
 function rounded(value: number, digits = 3): number {
   return Number(value.toFixed(digits));
+}
+
+function canonicalize(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(canonicalize);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value as Record<string, unknown>)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, child]) => [key, canonicalize(child)]));
+  }
+  return value;
+}
+
+export function diagnosticPilotBankSha256(input: {
+  bank: readonly DiagnosticBankRecord[];
+  writingBank: readonly DiagnosticWritingPromptRecord[];
+}): string {
+  const snapshot = {
+    objective: [...input.bank]
+      .sort((left, right) => left.publicItem.id.localeCompare(right.publicItem.id))
+      .map(record => ({
+        publicItem: record.publicItem,
+        scoring: record.scoring,
+        rationale: record.rationale,
+        source: record.source,
+      })),
+    writing: [...input.writingBank]
+      .sort((left, right) => left.publicPrompt.id.localeCompare(right.publicPrompt.id))
+      .map(record => ({ publicPrompt: record.publicPrompt, source: record.source })),
+  };
+  return createHash('sha256').update(JSON.stringify(canonicalize(snapshot))).digest('hex');
 }
 
 function rate(numerator: number, denominator: number): number | null {
@@ -206,6 +239,7 @@ export function buildDiagnosticPilotReport(input: {
   writing: readonly DiagnosticPilotWritingRow[];
   references: readonly DiagnosticPilotReferenceRow[];
   bank: readonly DiagnosticBankRecord[];
+  writingBank: readonly DiagnosticWritingPromptRecord[];
   criteria: DiagnosticPilotCriteria;
   generatedAt: string;
 }) {
@@ -304,6 +338,12 @@ export function buildDiagnosticPilotReport(input: {
     reportVersion: 'diagnostic-pilot-report-v1',
     generatedAt: new Date(input.generatedAt).toISOString(),
     criteria: { version: input.criteria.criteriaVersion, status: input.criteria.status },
+    bankSnapshot: {
+      sha256: diagnosticPilotBankSha256({ bank: input.bank, writingBank: input.writingBank }),
+      objectiveItems: input.bank.length,
+      writingPrompts: input.writingBank.length,
+      attemptBankVersions: [...new Set(input.attempts.map(row => row.bankVersion))].sort(),
+    },
     decision: allGatesPass ? 'ELIGIBLE_FOR_VALIDATION_REVIEW' : 'HOLD',
     gates,
     attempts: {

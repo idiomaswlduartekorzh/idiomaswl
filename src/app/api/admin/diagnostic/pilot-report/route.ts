@@ -1,7 +1,10 @@
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import criteria from '../../../../../../config/diagnostic/pilot-publication-criteria.json' with { type: 'json' };
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
-import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK } from '@/server/diagnostic/bank';
+import {
+  ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+  ENGLISH_DIAGNOSTIC_WRITING_BANK,
+} from '@/server/diagnostic/bank';
 import {
   buildDiagnosticPilotReport,
   type DiagnosticPilotCriteria,
@@ -40,6 +43,7 @@ export async function GET(request: Request): Promise<Response> {
     const report = buildDiagnosticPilotReport({
       ...dataset,
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
+      writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       criteria: criteria as DiagnosticPilotCriteria,
       generatedAt: new Date().toISOString(),
     });

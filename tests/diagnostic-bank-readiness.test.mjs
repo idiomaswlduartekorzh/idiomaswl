@@ -10,6 +10,7 @@ test('readiness report distinguishes authored drafts from operational capacity',
   assert.equal(report.summary.reservedDraftObjectiveDecisions, 216);
   assert.equal(report.summary.nonReservedDraftObjectiveDecisions, 24);
   assert.equal(report.summary.operationalObjectiveDecisions, 0);
+  assert.equal(report.summary.approvedSelectableObjectiveDecisions, 0);
   assert.equal(report.summary.objectiveCellsRequired, 24);
   assert.equal(report.summary.objectiveCellsWithDraftCapacity, 18);
 });

@@ -165,9 +165,18 @@ Actualizado el 24 de septiembre de 2026:
   deriva del resultado terminado, no del formulario de referencia. Sin muestra real o sin
   criterios aprobados, la decisión es obligatoriamente `HOLD`. La migración y la ruta requieren
   todavía ejecución y verificación contra Supabase real.
+- **Fase 8 — puerta integral de salida implementada, lanzamiento bloqueado:** un semáforo único
+  exige simultáneamente gobierno de evidencia, banco completo y aprobado, 36 grabaciones
+  verificadas, operación de escritura, Supabase real, privacidad y borrado, piloto vinculado al
+  banco exacto y calidad ligada a una huella de código. Activar las dos feature flags no puede
+  sobreescribir ningún gate. El informe piloto incluye ahora un SHA-256 canónico de ítems,
+  claves, racionales, fuentes y consignas; cambiar cualquiera invalida el piloto anterior. La
+  vía humana de escritura puede liberar el producto sin proveedor externo, pero exige al menos
+  dos revisores verificados y SLA. El estado actual medido es `HOLD` en **0/8 gates**, coherente
+  con la falta de evidencias externas y sin fingir un release.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
   transición, idempotencia, bancos candidatos, recibos humanos y recuperación segura de
-  borradores; el último corte local ejecutó **176 pruebas** y
+  borradores; el último corte local ejecutó **183 pruebas** y
   TypeScript compiló sin errores. El build de producción con webpack también completó las
   2.564 páginas estáticas y las rutas diagnósticas; la verificación de despliegue real sigue
   pendiente.

@@ -2,12 +2,17 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
+import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from '../src/server/diagnostic/bank/writing.en.ts';
 import {
   buildDiagnosticPilotReport,
+  diagnosticPilotBankSha256,
   validateDiagnosticPilotCriteria,
 } from '../src/server/diagnostic/pilot-analytics.ts';
 
 const bank = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.slice(0, 2).map(record => ({
+  ...record, status: 'pilot', review: { status: 'approved' },
+}));
+const writingBank = ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES.slice(0, 1).map(record => ({
   ...record, status: 'pilot', review: { status: 'approved' },
 }));
 const criteria = {
@@ -44,7 +49,7 @@ const references = attempts.map((attempt, index) => ({
 }));
 
 test('pilot report aggregates attempts, item behavior, writing and independent references', () => {
-  const report = buildDiagnosticPilotReport({ attempts, responses, writing, references, bank, criteria, generatedAt: '2026-09-25T14:00:00.000Z' });
+  const report = buildDiagnosticPilotReport({ attempts, responses, writing, references, bank, writingBank, criteria, generatedAt: '2026-09-25T14:00:00.000Z' });
   assert.equal(report.attempts.started, 4);
   assert.equal(report.attempts.completionRate, 1);
   assert.equal(report.itemMetrics[0].served, 4);
@@ -53,10 +58,13 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
   assert.equal(report.independentReference.withinOneLevel, 1);
   assert.equal(report.decision, 'ELIGIBLE_FOR_VALIDATION_REVIEW');
   assert.equal(report.gates.itemQuality, true);
+  assert.match(report.bankSnapshot.sha256, /^[a-f0-9]{64}$/u);
+  assert.equal(report.bankSnapshot.objectiveItems, 2);
+  assert.equal(report.bankSnapshot.writingPrompts, 1);
 });
 
 test('report never serializes attempt identity or submitted response content', () => {
-  const report = buildDiagnosticPilotReport({ attempts, responses, writing, references, bank, criteria, generatedAt: '2026-09-25T14:00:00.000Z' });
+  const report = buildDiagnosticPilotReport({ attempts, responses, writing, references, bank, writingBank, criteria, generatedAt: '2026-09-25T14:00:00.000Z' });
   const serialized = JSON.stringify(report);
   assert.doesNotMatch(serialized, /private-attempt/);
   assert.doesNotMatch(serialized, /submittedResponse/);
@@ -65,7 +73,7 @@ test('report never serializes attempt identity or submitted response content', (
 
 test('empty real-world evidence holds every publication-sensitive gate', () => {
   const strictCriteria = { ...criteria, status: 'provisional-pending-academic-approval' };
-  const report = buildDiagnosticPilotReport({ attempts: [], responses: [], writing: [], references: [], bank, criteria: strictCriteria, generatedAt: '2026-09-25T14:00:00.000Z' });
+  const report = buildDiagnosticPilotReport({ attempts: [], responses: [], writing: [], references: [], bank, writingBank, criteria: strictCriteria, generatedAt: '2026-09-25T14:00:00.000Z' });
   assert.equal(report.decision, 'HOLD');
   assert.equal(Object.values(report.gates).every(value => value === false), true);
   assert.deepEqual(report.warnings, ['PUBLICATION_CRITERIA_AWAIT_ACADEMIC_APPROVAL', 'NO_INDEPENDENT_REFERENCE_EVIDENCE', 'ITEMS_REQUIRE_REVIEW']);
@@ -75,4 +83,18 @@ test('criteria validation rejects unfrozen or impossible thresholds', () => {
   assert.deepEqual(validateDiagnosticPilotCriteria(criteria), []);
   assert.match(validateDiagnosticPilotCriteria({ ...criteria, minimumResponsesPerItem: 0 }).join('; '), /positive integer/);
   assert.match(validateDiagnosticPilotCriteria({ ...criteria, maximumOmissionRate: 2 }).join('; '), /between zero and one/);
+});
+
+test('pilot bank fingerprint changes when an objective item or writing prompt changes', () => {
+  const original = diagnosticPilotBankSha256({ bank, writingBank });
+  const changedObjective = bank.map((record, index) => index === 0 ? {
+    ...record,
+    rationale: { ...record.rationale, key: `${record.rationale.key} changed` },
+  } : record);
+  const changedWriting = writingBank.map(record => ({
+    ...record,
+    publicPrompt: { ...record.publicPrompt, title: `${record.publicPrompt.title} changed` },
+  }));
+  assert.notEqual(diagnosticPilotBankSha256({ bank: changedObjective, writingBank }), original);
+  assert.notEqual(diagnosticPilotBankSha256({ bank, writingBank: changedWriting }), original);
 });
