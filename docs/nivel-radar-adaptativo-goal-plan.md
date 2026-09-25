@@ -33,12 +33,15 @@ Actualizado el 24 de septiembre de 2026:
   inventariados con commit, blob, SHA-256, duración y vínculo determinista al archivo de guion.
   Los 60 audios ingleses fueron recuperados en staging privado y verificados; ninguno se
   considera aprobado lingüísticamente todavía.
-- **Fase 2 — núcleo iniciado:** contratos público/privado y scoring objetivo en servidor
-  implementados y probados. Persistencia, endpoints y autorización siguen pendientes.
+- **Fase 2 — núcleo en progreso:** contratos público/privado, scoring objetivo en servidor,
+  validación antimanipulación y una migración durable con tablas de intentos, etapas,
+  respuestas, escritura y auditoría implementados. Las tablas niegan acceso directo a roles de
+  navegador. Falta ejecutar la migración contra Postgres (el entorno actual no tiene Docker ni
+  Podman), implementar el repositorio/endpoints y verificar autorización de extremo a extremo.
 - **Fase 3 — núcleo MST iniciado:** enrutamiento monotónico de localizador, confirmación de
   perfiles desiguales y selector balanceado de formas implementados. Falta el simulador de
   perfiles completos y calibrar los umbrales con el piloto.
-- **Pruebas actuales:** 16 pruebas específicas pasan y TypeScript compila sin errores.
+- **Pruebas actuales:** 26 pruebas específicas pasan y TypeScript compila sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o
 psicométrica todavía no obtenida.
