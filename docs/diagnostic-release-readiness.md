@@ -2,6 +2,11 @@
 
 Estado actual: **HOLD**.
 
+Último corte reproducible: **2/8 gates** y **18 bloqueos** sobre el commit técnico
+`b8ba9216`; **227/227 pruebas**, TypeScript y el build de **2.564 páginas estáticas** pasaron.
+Los gates aprobados son gobierno de evidencia y calidad mecánica; esto no sustituye ninguna
+aprobación académica, de privacidad o psicométrica.
+
 `npm run report:diagnostic-release-readiness` produce el semáforo legible y `-- --json`
 produce el contrato estructurado. `npm run check:diagnostic-release-readiness` es la variante
 estricta: termina con código distinto de cero mientras el examen no sea `READY_TO_ENABLE` o
