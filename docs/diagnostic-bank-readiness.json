@@ -5,10 +5,10 @@
   "note": "Draft counts show editorial progress only. They are not approved, calibrated, or selectable.",
   "summary": {
     "requiredObjectiveDecisions": 288,
-    "reservedDraftObjectiveDecisions": 144,
+    "reservedDraftObjectiveDecisions": 216,
     "nonReservedDraftObjectiveDecisions": 24,
     "operationalObjectiveDecisions": 0,
-    "objectiveCellsWithDraftCapacity": 12,
+    "objectiveCellsWithDraftCapacity": 18,
     "objectiveCellsRequired": 24,
     "writingDraftPrompts": 24,
     "writingApprovedPrompts": 0
@@ -310,15 +310,15 @@
         "distinctStimuli": 6
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 6
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
-      "stimulusAuthoringGap": 6
+      "stimulusAuthoringGap": 0
     },
     {
       "level": "C1",
@@ -346,13 +346,13 @@
         "distinctStimuli": null
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 12
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
       "stimulusAuthoringGap": null
     },
@@ -364,13 +364,13 @@
         "distinctStimuli": null
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 12
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
       "stimulusAuthoringGap": null
     },
@@ -382,15 +382,15 @@
         "distinctStimuli": 6
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 6
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
-      "stimulusAuthoringGap": 6
+      "stimulusAuthoringGap": 0
     },
     {
       "level": "C2",
@@ -418,13 +418,13 @@
         "distinctStimuli": null
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 12
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
       "stimulusAuthoringGap": null
     },
@@ -436,13 +436,13 @@
         "distinctStimuli": null
       },
       "authored": {
-        "reservedDraftDecisions": 0,
+        "reservedDraftDecisions": 12,
         "nonReservedDraftDecisions": 0,
-        "reservedDraftDistinctStimuli": 0
+        "reservedDraftDistinctStimuli": 12
       },
       "approvedPilotDecisions": 0,
       "operationalDecisions": 0,
-      "authoringGap": 12,
+      "authoringGap": 0,
       "operationalGap": 12,
       "stimulusAuthoringGap": null
     }

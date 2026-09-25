@@ -80,9 +80,9 @@ Actualizado el 24 de septiembre de 2026:
   claves, racionales y huellas permanecen en servidor. Siguen en borrador y marcadas como audio
   previamente público; el selector bloquea cualquier contenido que no tenga exposición
   `reserved`, incluso si alguien cambia por error su estado a aprobado.
-- **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–B2 ya
-  tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **144/288
-  decisiones objetivas** y **12/24 celdas** con capacidad editorial de borrador, con claves
+- **Banco objetivo — contenido reservado original:** lectura, gramática y vocabulario A1–C2 ya
+  tienen 12 decisiones por celda; lectura usa seis estímulos distintos por nivel. Son **216/288
+  decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
   privadas, racionales de clave y distractores, posiciones equilibradas y estado reservado. El
   reporte `docs/diagnostic-bank-readiness.json` separa estos avances del banco operativo, que
   continúa en cero hasta revisión y piloto.
@@ -90,7 +90,7 @@ Actualizado el 24 de septiembre de 2026:
   distinción de omisiones y retención del nivel global ante evidencia incompleta implementadas.
   La política provisional limita la confianza y nunca se presenta como calibrada.
 - **Pruebas actuales:** la suite específica incorpora controles del inventario, seguridad de
-  transición, idempotencia y bancos candidatos; el último corte local ejecutó **106 pruebas** y
+  transición, idempotencia y bancos candidatos; el último corte local ejecutó **109 pruebas** y
   TypeScript compiló sin errores.
 
 Este registro distingue deliberadamente software terminado de evidencia lingüística o

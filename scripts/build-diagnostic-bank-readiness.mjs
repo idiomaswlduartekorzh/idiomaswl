@@ -3,8 +3,10 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { CEFR_LEVELS } from '../src/lib/diagnostic/types.ts';
+import { ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES } from '../src/server/diagnostic/bank/language-use-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES } from '../src/server/diagnostic/bank/listening.en.ts';
 import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from '../src/server/diagnostic/bank/language-use.en.ts';
+import { ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from '../src/server/diagnostic/bank/writing.en.ts';
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK } from '../src/server/diagnostic/bank/index.ts';
@@ -15,8 +17,10 @@ const writeMode = process.argv.includes('--write');
 const skills = ['reading', 'listening', 'grammar', 'vocabulary'];
 const authored = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LISTENING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
 ];
 
 function stimulusIdentity(record) {
@@ -92,4 +96,3 @@ if (writeMode) {
   }
   process.stdout.write(`✓ Bank readiness current: ${report.summary.reservedDraftObjectiveDecisions}/${report.summary.requiredObjectiveDecisions} reserved draft decisions\n`);
 }
-

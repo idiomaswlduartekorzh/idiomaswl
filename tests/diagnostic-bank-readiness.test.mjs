@@ -7,15 +7,15 @@ const report = JSON.parse(readFileSync(new URL('../docs/diagnostic-bank-readines
 test('readiness report distinguishes authored drafts from operational capacity', () => {
   assert.equal(report.releaseReady, false);
   assert.equal(report.summary.requiredObjectiveDecisions, 288);
-  assert.equal(report.summary.reservedDraftObjectiveDecisions, 144);
+  assert.equal(report.summary.reservedDraftObjectiveDecisions, 216);
   assert.equal(report.summary.nonReservedDraftObjectiveDecisions, 24);
   assert.equal(report.summary.operationalObjectiveDecisions, 0);
   assert.equal(report.summary.objectiveCellsRequired, 24);
-  assert.equal(report.summary.objectiveCellsWithDraftCapacity, 12);
+  assert.equal(report.summary.objectiveCellsWithDraftCapacity, 18);
 });
 
-test('A1 through B2 reading, grammar and vocabulary have complete draft cells', () => {
-  for (const level of ['A1', 'A2', 'B1', 'B2']) {
+test('A1 through C2 reading, grammar and vocabulary have complete draft cells', () => {
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
     for (const skill of ['reading', 'grammar', 'vocabulary']) {
       const cell = report.objectiveCells.find((candidate) => candidate.level === level && candidate.skill === skill);
       assert.equal(cell.authoringGap, 0, `${skill}/${level} authoring gap`);
