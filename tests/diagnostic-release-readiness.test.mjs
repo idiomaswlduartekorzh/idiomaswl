@@ -87,7 +87,9 @@ test('the committed repository remains on HOLD with explicit independent blocker
   assert.equal(report.decision, 'HOLD');
   assert.equal(report.releaseReady, false);
   assert.ok(report.summary.blockerCount >= 10);
-  assert.ok(report.gates.every(candidate => candidate.status === 'HOLD'));
+  assert.equal(report.gates.find(candidate => candidate.id === 'governance').status, 'PASS');
+  assert.ok(report.gates.filter(candidate => candidate.id !== 'governance')
+    .every(candidate => candidate.status === 'HOLD'));
 });
 
 test('all independent evidence gates produce READY_TO_ENABLE before flags are switched on', () => {
