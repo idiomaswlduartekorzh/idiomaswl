@@ -3,10 +3,10 @@
 Estado actual: **HOLD**.
 
 Último corte reproducible: **1/8 gates** y **20 bloqueos** sobre el commit técnico
-`b04a43ca`; el catálogo protegido de **465 temas**, **322/322 pruebas**, TypeScript, el build de
+`8662fc3a`; el catálogo protegido de **465 temas**, **324/324 pruebas**, TypeScript, el build de
 **2.564 páginas estáticas** y **4/4 historias E2E** pasaron. La huella de fuente es
-`eebc75bfdb6f58bb08baeb9d9d4d1895b84c48433821884f7589854aad66f9f9` y el recibo privado quedó
-fijado por `227724a4a1d07922e119b5566bc1239a84b8a6bfbbc0cbfaf98499ee693a42c9`.
+`5c007245ff68db2d434c080079c175978c407f3469f2f3ee90a7609f1002b122` y el recibo privado quedó
+fijado por `2a72b4490bc014594aba27b51739250a0774844eea8db5bc4359afb73fd48cfb`.
 El único gate aprobado es calidad mecánica; gobierno volvió correctamente a `HOLD` porque la
 política de entrega todavía no tiene las dos revisiones humanas requeridas.
 
@@ -19,7 +19,8 @@ La puerta reúne ocho dimensiones que deben pasar simultáneamente:
 
 1. evidencia de release versionada y fechada;
 2. 288 decisiones objetivas y 24 consignas de escritura aprobadas, con capacidad completa en
-   las 24 celdas objetivas A1–C2;
+   las 24 celdas objetivas A1–C2 y auditoría adversarial vigente sobre todo borrador reservado,
+   sin defectos automáticos bloqueantes;
 3. 36 grabaciones privadas con hashes, transcripción y alineación revisadas por identidades
    independientes;
 4. una operación de escritura verificable: revisión humana con dos revisores y SLA, o
@@ -334,11 +335,14 @@ el manifiesto de forma atómica. Plantillas, decisiones incompletas, cambios sol
 externas o modificaciones posteriores fallan antes de escribir.
 
 La auditoría adversarial evalúa los 216 ítems reservados de lectura, gramática y vocabulario sin
-imprimir identificadores, textos, claves ni racionales. Reporta agregados de posición de clave y
-hallazgos por celda MCER/habilidad; el corte vigente marca **36 ítems para juicio humano y 0
-defectos bloqueantes**. El detalle aparece únicamente en los paquetes privados de evaluación, no
-en los lingüísticos. Duplicados normalizados bloquean; diferencias de longitud, capitalización o
-puntuación exigen revisión contextual y no rechazo automático. El checklist de evaluación añade
+imprimir identificadores, textos, claves ni racionales. El reporte operativo comprometido
+`diagnostic-bank-readiness-v2` conserva únicamente conteos y hallazgos agregados por celda, sin
+IDs ni posiciones de clave: registra **216/216 borradores revisados, 36 ítems para juicio humano
+y 0 defectos bloqueantes**. El release falla cerrado si la versión del auditor no coincide, si
+su cobertura difiere del total reservado o si aparece un defecto bloqueante. El detalle aparece
+únicamente en los paquetes privados de evaluación, no en los lingüísticos. Duplicados
+normalizados bloquean; diferencias de longitud, capitalización o puntuación exigen revisión
+contextual y no rechazo automático. El checklist de evaluación añade
 `answerCueRiskReviewed`, y `reviewBasisSha256` liga cada firma a la versión exacta del auditor y
 del proceso. Una plantilla anterior queda obsoleta aunque `contentSha256` siga coincidiendo.
 En entrega, `mst-engine-v2` deriva el orden de opciones de la etapa y del ID de cada opción:

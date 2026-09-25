@@ -189,7 +189,8 @@ Actualizado el 25 de septiembre de 2026:
   decisiones objetivas** y **18/24 celdas** con capacidad editorial de borrador, con claves
   privadas, racionales de clave y distractores, posiciones equilibradas y estado reservado. El
   reporte `docs/diagnostic-bank-readiness.json` separa estos avances del banco operativo, que
-  continúa en cero hasta revisión y piloto.
+  continúa en cero hasta revisión y piloto. Su versión v2 incorpora la cobertura agregada del
+  auditor de pistas sin publicar IDs, contenido, claves ni posiciones correctas.
 - **Puerta editorial fail-closed implementada:** un manifiesto versionado solo promueve a piloto
   contenido reservado cuyo hash y versión coinciden, con identidades independientes para
   revisión lingüística y de evaluación; escucha exige además revisión de alineación de audio.
@@ -209,7 +210,9 @@ Actualizado el 25 de septiembre de 2026:
   constructo, pero ahora exige el criterio `answerCueRiskReviewed`. Cada firma conserva por
   separado la huella del contenido y la de la política de revisión; cambiar la versión del
   auditor, sus hallazgos o el checklist invalida recibos anteriores aunque el texto del ítem no
-  haya cambiado.
+  haya cambiado. La puerta integral compara además la versión y cobertura del auditor contra
+  todos los borradores reservados y se cierra ante cobertura incompleta o cualquier defecto
+  automático bloqueante.
 - **Rotación reproducible de opciones:** `mst-engine-v2` ordena las opciones mediante una huella
   de etapa, ítem e ID de opción. La clave sigue siendo un ID privado e inmutable, no una letra o
   posición. Una recarga o reintento idempotente reproduce exactamente el mismo orden, mientras
@@ -412,11 +415,11 @@ Actualizado el 25 de septiembre de 2026:
   reemplaza la comprobación autenticada posterior contra Supabase.
   Un registrador de confirmación hash-bound puede trasladar únicamente esa evidencia mecánica al
   manifiesto de release, sin tocar decisiones académicas, privacidad, escritura ni piloto. El
-  corte `b04a43ca` quedó verificado con el catálogo protegido de **465 temas**, **322/322
+  corte `8662fc3a` quedó verificado con el catálogo protegido de **465 temas**, **324/324
   pruebas**, TypeScript sin errores, un build de **2.564 páginas estáticas** y **4/4 historias
   E2E**. La huella de fuente
-  `eebc75bfdb6f58bb08baeb9d9d4d1895b84c48433821884f7589854aad66f9f9` y el recibo privado
-  `227724a4a1d07922e119b5566bc1239a84b8a6bfbbc0cbfaf98499ee693a42c9` dejan el gate de
+  `5c007245ff68db2d434c080079c175978c407f3469f2f3ee90a7609f1002b122` y el recibo privado
+  `2a72b4490bc014594aba27b51739250a0774844eea8db5bc4359afb73fd48cfb` dejan el gate de
   calidad atado exactamente a ese código.
 - **Gobierno humano preparado sin decisiones implícitas:** un generador privado produce siete
   paquetes hash-bound para escritura, retención, criterios de piloto y política de entrega.
