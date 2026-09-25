@@ -745,8 +745,9 @@ export function buildDiagnosticPilotReport(input: {
       writingMedianTurnaroundMs: quantile(writingTurnaround, 0.5),
       writingP90TurnaroundMs: quantile(writingTurnaround, 0.9),
       monitoringCoverage: {
-        applicationErrorRate: 'external-observability-required',
-        audioDeliveryFailureRate: 'external-observability-required',
+        applicationErrorRate: 'structured-runtime-logs',
+        audioDeliveryFailureRate: 'structured-runtime-logs',
+        forwardingAndAlerts: 'deployment-verification-required',
       },
     },
     itemMetrics,

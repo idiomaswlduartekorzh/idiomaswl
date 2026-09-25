@@ -18,6 +18,7 @@ import {
   type DiagnosticAutomatedWritingEvaluation,
   type DiagnosticHumanWritingEvaluation,
 } from '@/server/diagnostic/writing';
+import { logDiagnosticInternalFailure, observeDiagnosticRoute } from '@/server/diagnostic/observability';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -34,7 +35,7 @@ function sameOrigin(request: Request): boolean {
   return Boolean(origin && origin === new URL(request.url).origin);
 }
 
-export async function POST(
+async function handleDiagnosticFinalization(
   request: Request,
   context: { params: Promise<{ attemptId: string }> },
 ): Promise<Response> {
@@ -163,7 +164,17 @@ export async function POST(
     if (message.includes('invalid diagnostic writing evaluation') || message.includes('reviewer identity mismatch')) {
       return jsonError('INVALID_EVALUATION', 'La evaluación no coincide con la respuesta guardada.', 400);
     }
-    console.error('[diagnostic] Finalization failed:', message);
+    logDiagnosticInternalFailure({ component: 'writing-finalization', reason: 'writing-finalization-failed' });
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos finalizar el diagnóstico.', 503);
   }
+}
+
+export async function POST(
+  request: Request,
+  context: { params: Promise<{ attemptId: string }> },
+): Promise<Response> {
+  return observeDiagnosticRoute(
+    { route: '/api/admin/diagnostic/attempts/[attemptId]/finalize', method: 'POST' },
+    () => handleDiagnosticFinalization(request, context),
+  );
 }

@@ -41,7 +41,7 @@ test('admin pilot health UI is manual, same-origin, no-store and covers operatio
   assert.match(healthClient, /Cadena psicométrica/);
   assert.match(healthClient, /Alertas agregadas/);
   assert.match(healthClient, /Operación para rollout/);
-  assert.match(healthClient, /Errores de aplicación y fallos de entrega de audio requieren observabilidad externa/);
+  assert.match(healthClient, /Errores de aplicación y entrega de audio emiten logs estructurados sin datos personales/);
 });
 
 test('pilot loader omits user identity and writing text from every select', () => {

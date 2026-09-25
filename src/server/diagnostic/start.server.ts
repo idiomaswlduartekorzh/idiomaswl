@@ -18,6 +18,7 @@ import {
 } from './repository.server';
 import { getDiagnosticProductionReleaseReadiness } from './release-runtime';
 import { evaluateDiagnosticProductionRollout } from './production-rollout';
+import { logDiagnosticInternalFailure } from './observability';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from './start-core';
 import {
   diagnosticDeliveryRules,
@@ -52,20 +53,20 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   }
   const accessMode = process.env.DIAGNOSTIC_ACCESS_MODE;
   if (accessMode !== 'pilot' && accessMode !== 'production') {
-    console.error('[diagnostic] Missing or invalid diagnostic access mode.');
+    logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'access-mode-invalid' });
     return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
   }
   let deliveryRules;
   try {
     deliveryRules = diagnosticDeliveryRules(deliveryPolicy as DiagnosticDeliveryPolicy, accessMode);
-  } catch (cause) {
-    console.error('[diagnostic] Delivery policy rejected:', cause instanceof Error ? cause.message : 'unknown');
+  } catch {
+    logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'delivery-policy-invalid' });
     return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
   }
   if (accessMode === 'production') {
     const release = getDiagnosticProductionReleaseReadiness();
     if (!release.ready) {
-      console.error('[diagnostic] Production release certificate rejected:', release.blockers.join(','));
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'release-certificate-invalid' });
       return jsonError('RELEASE_NOT_AUTHORIZED', 'El diagnóstico aún no está disponible.', 503);
     }
   }
@@ -90,7 +91,7 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   if (accessMode === 'production') {
     const rollout = evaluateDiagnosticProductionRollout({ env: process.env, userId: user.id });
     if (!rollout.configurationValid) {
-      console.error('[diagnostic] Production rollout configuration rejected:', rollout.blockers.join(','));
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'rollout-configuration-invalid' });
       return jsonError('SERVER_CONFIGURATION_INVALID', 'El diagnóstico aún no está disponible.', 503);
     }
     if (!rollout.eligible) {
@@ -100,14 +101,14 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   if (accessMode === 'pilot') {
     const pilotConsentVersion = process.env.DIAGNOSTIC_PILOT_CONSENT_VERSION?.trim() ?? '';
     if (!pilotConsentVersion) {
-      console.error('[diagnostic] Pilot consent version is missing.');
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'pilot-consent-version-missing' });
       return jsonError('SERVER_CONFIGURATION_INVALID', 'El piloto aún no está disponible.', 503);
     }
     let enrolled = false;
     try {
       enrolled = await hasDiagnosticPilotEnrollment({ userId: user.id, pilotConsentVersion });
-    } catch (cause) {
-      console.error('[diagnostic] Pilot enrollment check failed:', cause instanceof Error ? cause.message : 'unknown');
+    } catch {
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'pilot-enrollment-check-failed' });
       return jsonError('SERVICE_UNAVAILABLE', 'No pudimos verificar el acceso al piloto.', 503);
     }
     if (!enrolled) return jsonError('PILOT_ACCESS_REQUIRED', 'Este piloto requiere una invitación vigente.', 403);
@@ -159,9 +160,9 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
       return jsonError(error.code, 'El banco diagnóstico todavía está en revisión académica.', 503);
     }
     if (error instanceof DiagnosticStartError && error.code === 'SERVER_CONFIGURATION_INVALID') {
-      console.error('[diagnostic] Invalid server configuration:', error.message);
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'delivery-policy-invalid' });
     } else {
-      console.error('[diagnostic] Attempt start failed:', error instanceof Error ? error.message : 'unknown');
+      logDiagnosticInternalFailure({ component: 'attempt-start', reason: 'attempt-start-failed' });
     }
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos iniciar el diagnóstico. Inténtalo más tarde.', 503);
   }

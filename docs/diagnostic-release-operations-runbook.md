@@ -35,6 +35,19 @@ Cada cambio de porcentaje exige una entrada de decisión con fecha UTC, operador
 commit, porcentaje anterior/nuevo, periodo observado, métricas revisadas y decisión. Nunca se
 registran UUID, correos, respuestas, claves de ítem ni texto de escritura.
 
+Las rutas de inicio, reanudación, envío, borrado y audio emiten JSON con
+`schemaVersion=diagnostic-operational-log-v1`. El contrato solo permite ruta plantillada, método,
+estado HTTP, resultado y duración; no acepta request, URL concreta, parámetros, errores crudos ni
+payload. Antes de abrir el 1%, Operaciones debe comprobar en los Runtime Logs del despliegue que
+los eventos `request.started` y `request.completed` llegan para las cinco superficies. Si existe
+un Drain o proveedor de alertas, también se verifica su recepción; si no existe, se registra el
+uso explícito del visor/CLI de Vercel como cobertura temporal.
+
+Después de cada despliegue y antes de subir un peldaño se revisa al menos la última hora de logs
+de error, filtrando `service=nivel-radar`. Un `request.failed`, cualquier estado 5xx o ausencia de
+logs esperados detiene el avance hasta investigar. Esta comprobación real sigue siendo externa:
+la presencia del código de instrumentación no prueba que el despliegue, Drain o alerta funcione.
+
 ## Secuencia de activación
 
 1. Desplegar el commit y certificado verificados con motor encendido, interfaz adaptativa apagada

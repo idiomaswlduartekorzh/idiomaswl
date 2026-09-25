@@ -42,8 +42,9 @@ type PilotReport = {
     writingMedianTurnaroundMs: number | null;
     writingP90TurnaroundMs: number | null;
     monitoringCoverage: {
-      applicationErrorRate: 'external-observability-required';
-      audioDeliveryFailureRate: 'external-observability-required';
+      applicationErrorRate: 'structured-runtime-logs';
+      audioDeliveryFailureRate: 'structured-runtime-logs';
+      forwardingAndAlerts: 'deployment-verification-required';
     };
   };
   flagCounts: readonly { flag: string; count: number }[];
@@ -199,7 +200,7 @@ export default function DiagnosticPilotHealthClient() {
             <Card label="Turnaround escritura" value={duration(report.operations.writingMedianTurnaroundMs)} detail={`p90: ${duration(report.operations.writingP90TurnaroundMs)} · ${report.operations.writingFailed} fallidas`} />
           </div>
           <p role="note" style={{ margin: '9px 0 0', color: '#92400e', fontSize: 11 }}>
-            Errores de aplicación y fallos de entrega de audio requieren observabilidad externa; esta vista no los infiere a partir de ceros.
+            Errores de aplicación y entrega de audio emiten logs estructurados sin datos personales. El forwarding, las alertas y su recepción deben verificarse en el despliegue; esta vista no infiere ceros.
           </p>
 
           <h3 style={{ margin: '18px 0 8px', fontSize: 15 }}>Estados de intento</h3>

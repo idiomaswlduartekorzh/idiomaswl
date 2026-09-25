@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server';
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK } from '@/server/diagnostic/bank';
 import { resolveDiagnosticMediaObject } from '@/server/diagnostic/media';
 import { authorizeDiagnosticMediaAccess } from '@/server/diagnostic/repository.server';
+import { logDiagnosticInternalFailure, observeDiagnosticRoute } from '@/server/diagnostic/observability';
 
 export const runtime = 'nodejs';
 
@@ -56,16 +57,22 @@ async function serveDiagnosticMedia(
       status: range ? 206 : 200,
       headers,
     });
-  } catch (error) {
-    console.error('[diagnostic] Private media delivery failed:', error instanceof Error ? error.message : 'unknown');
+  } catch {
+    logDiagnosticInternalFailure({ component: 'media-delivery', reason: 'media-delivery-failed' });
     return fail(503);
   }
 }
 
 export async function GET(request: Request, context: { params: Promise<{ mediaId: string }> }): Promise<Response> {
-  return serveDiagnosticMedia(request, context);
+  return observeDiagnosticRoute(
+    { route: '/api/diagnostic/media/[mediaId]', method: 'GET' },
+    () => serveDiagnosticMedia(request, context),
+  );
 }
 
 export async function HEAD(request: Request, context: { params: Promise<{ mediaId: string }> }): Promise<Response> {
-  return serveDiagnosticMedia(request, context, true);
+  return observeDiagnosticRoute(
+    { route: '/api/diagnostic/media/[mediaId]', method: 'HEAD' },
+    () => serveDiagnosticMedia(request, context, true),
+  );
 }

@@ -3,6 +3,7 @@ import 'server-only';
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import { createClient } from '@/lib/supabase/server';
 import { deleteDiagnosticUserData } from './repository.server';
+import { logDiagnosticInternalFailure } from './observability';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 const CONFIRMATION = 'DELETE_DIAGNOSTIC_DATA';
@@ -48,8 +49,8 @@ export async function handleDiagnosticDataDeletion(request: Request): Promise<Re
   try {
     const receipt = await deleteDiagnosticUserData(user.id);
     return Response.json({ ok: true, receipt }, { status: 200, headers: NO_STORE_HEADERS });
-  } catch (cause) {
-    console.error('[diagnostic] Data deletion failed:', cause instanceof Error ? cause.message : 'unknown');
+  } catch {
+    logDiagnosticInternalFailure({ component: 'data-deletion', reason: 'data-deletion-failed' });
     return error('DELETION_UNAVAILABLE', 'No pudimos borrar los datos diagnósticos.', 503);
   }
 }

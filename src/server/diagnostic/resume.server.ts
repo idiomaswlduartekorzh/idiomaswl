@@ -12,6 +12,7 @@ import {
 } from './bank';
 import { loadDiagnosticAttemptForResume } from './repository.server';
 import { buildEnglishDiagnosticResumeDelivery } from './resume-core';
+import { logDiagnosticInternalFailure } from './observability';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu;
@@ -51,7 +52,7 @@ export async function handleDiagnosticAttemptResume(attemptId: string): Promise<
     if (message.includes('version') || message.includes('unavailable')) {
       return jsonError('VERSION_UNAVAILABLE', 'Esta versión del diagnóstico ya no está disponible.', 409);
     }
-    console.error('[diagnostic] Attempt resume failed:', message);
+    logDiagnosticInternalFailure({ component: 'attempt-resume', reason: 'attempt-resume-failed' });
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos recuperar el intento.', 503);
   }
 }

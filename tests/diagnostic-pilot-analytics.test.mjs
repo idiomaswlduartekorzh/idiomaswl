@@ -130,8 +130,9 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
   assert.equal(report.operations.writingMedianTurnaroundMs, 1_800_000);
   assert.equal(report.operations.listeningStartedRate, null);
   assert.deepEqual(report.operations.monitoringCoverage, {
-    applicationErrorRate: 'external-observability-required',
-    audioDeliveryFailureRate: 'external-observability-required',
+    applicationErrorRate: 'structured-runtime-logs',
+    audioDeliveryFailureRate: 'structured-runtime-logs',
+    forwardingAndAlerts: 'deployment-verification-required',
   });
 });
 

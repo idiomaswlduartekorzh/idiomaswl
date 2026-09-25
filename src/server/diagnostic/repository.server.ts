@@ -12,6 +12,7 @@ import type { DiagnosticAutomatedWritingEvaluation, DiagnosticHumanWritingEvalua
 import type { DiagnosticExternalWritingAuthorization } from './writing-provider';
 import type { DiagnosticResumeSnapshot } from './resume-core';
 import { diagnosticWritingResponseSha256, parseDiagnosticWritingEvaluation } from './writing';
+import { logDiagnosticInternalFailure } from './observability';
 import type {
   DiagnosticPilotAttemptRow,
   DiagnosticPilotReferenceRow,
@@ -486,7 +487,7 @@ export async function persistDiagnosticFinalization(
     p_result_profile: input.resultProfile,
   });
   if (error || !data || typeof data !== 'object') {
-    console.error('[diagnostic] Atomic finalization failed:', error?.message ?? 'invalid RPC result');
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'finalization-persistence-failed' });
     const knownCode = [
       'diagnostic_attempt_not_found', 'diagnostic_writing_not_found',
       'diagnostic_attempt_version_conflict', 'diagnostic_attempt_not_scoring',
@@ -599,7 +600,7 @@ export async function persistCreatedDiagnosticAttempt(input: PersistDiagnosticAt
     p_selection_receipt: input.selectionReceipt,
   });
   if (error) {
-    console.error('[diagnostic] Atomic attempt creation failed:', error.message);
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'attempt-creation-persistence-failed' });
     const known = [
       'diagnostic_attempt_active_limit',
       'diagnostic_attempt_cooldown',
@@ -640,7 +641,7 @@ export async function persistDiagnosticObjectiveStage(
     p_next_selection_receipt: input.nextSelectionReceipt,
   });
   if (error || !data || typeof data !== 'object') {
-    console.error('[diagnostic] Atomic stage submission failed:', error?.message ?? 'invalid RPC result');
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'stage-persistence-failed' });
     const knownCode = [
       'diagnostic_stage_already_completed',
       'diagnostic_attempt_version_conflict',
@@ -699,7 +700,7 @@ export async function persistDiagnosticWritingSubmission(
     p_word_count: input.wordCount,
   });
   if (error || !data || typeof data !== 'object') {
-    console.error('[diagnostic] Atomic writing submission failed:', error?.message ?? 'invalid RPC result');
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'writing-persistence-failed' });
     const knownCode = [
       'diagnostic_stage_already_completed',
       'diagnostic_attempt_version_conflict',

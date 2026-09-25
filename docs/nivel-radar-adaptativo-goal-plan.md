@@ -263,8 +263,11 @@ Actualizado el 25 de septiembre de 2026:
   conserva el límite administrativo existente. Para operar el rollout añade ahora intentos
   activos y vencidos, abandono/expiración, latencia objetiva, reproducción de escucha, cola,
   antigüedad, fallos y turnaround de escritura. Los errores de aplicación y de entrega de audio
-  se marcan explícitamente como dependientes de observabilidad externa: un cero ausente nunca se
-  presenta como ausencia de fallos. Proyección, cálculo y UI forman parte del snapshot de entrega.
+  emiten ahora logs estructurados por ruta plantillada, estado y duración, sin UUID, parámetros,
+  contenido ni errores crudos. El panel mantiene explícito que recepción, forwarding y alertas
+  requieren verificación en el despliegue: un cero ausente nunca se presenta como ausencia de
+  fallos. Proyección, cálculo, rutas, instrumentación, runbook y UI forman parte del snapshot de
+  entrega.
 - **Fase 8 — retiro preservando historia implementado:**
   `config/diagnostic/item-controls.json` separa la disponibilidad futura del contenido
   versionado. Un retiro exige versión exacta, motivo cerrado, referencia de decisión y revisiones

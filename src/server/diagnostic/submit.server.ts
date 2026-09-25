@@ -28,6 +28,7 @@ import {
   persistDiagnosticWritingSubmission,
 } from './repository.server';
 import { submitEnglishDiagnosticWriting } from './writing-submit-core';
+import { logDiagnosticInternalFailure } from './observability';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu;
@@ -218,7 +219,7 @@ export async function handleDiagnosticStageSubmission(
       || message.includes('unserved') || message.includes('invalid')) {
       return jsonError('INVALID_RESPONSES', 'Las respuestas no coinciden con la etapa entregada.', 400);
     }
-    console.error('[diagnostic] Stage submission failed:', message);
+    logDiagnosticInternalFailure({ component: 'stage-submit', reason: 'stage-submission-failed' });
     return jsonError('SERVICE_UNAVAILABLE', 'No pudimos guardar esta etapa. Inténtalo otra vez.', 503);
   }
 }
