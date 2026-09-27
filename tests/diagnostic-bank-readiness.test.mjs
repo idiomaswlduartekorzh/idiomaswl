@@ -19,11 +19,11 @@ test('readiness report distinguishes authored drafts from operational capacity',
 test('readiness report carries a privacy-safe cue audit for every reserved objective draft', () => {
   assert.equal(report.cueAudit.auditVersion, 'diagnostic-item-cue-audit-v1');
   assert.equal(report.summary.cueAuditReviewedReservedDrafts, 216);
-  assert.equal(report.summary.cueAuditFlaggedForHumanReview, 19);
+  assert.equal(report.summary.cueAuditFlaggedForHumanReview, 0);
   assert.equal(report.summary.cueAuditBlockingDefects, 0);
   assert.deepEqual(report.cueAudit.totals, {
     items: 216,
-    flaggedItems: 19,
+    flaggedItems: 0,
     blockingItems: 0,
   });
   assert.equal(report.cueAudit.cells.length, 18);

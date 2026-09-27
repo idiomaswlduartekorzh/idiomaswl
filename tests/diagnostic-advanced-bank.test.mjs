@@ -57,3 +57,37 @@ test('advanced drafts are original, reserved, rationalized and never falsely app
     assert.equal(serialized.includes('scoring'), false);
   }
 });
+
+test('only the cue-balanced advanced items advance to draft-2 source revisions', () => {
+  const expectedReading = [
+    'en-c1-reading-04-q2',
+    'en-c1-reading-06-q2',
+    'en-c2-reading-01-q1',
+    'en-c2-reading-01-q2',
+    'en-c2-reading-02-q1',
+    'en-c2-reading-03-q2',
+    'en-c2-reading-04-q1',
+  ];
+  const expectedLanguageUse = [
+    'en-c1-grammar-05',
+    'en-c1-grammar-09',
+    'en-c1-grammar-11',
+    'en-c1-vocabulary-03',
+    'en-c1-vocabulary-04',
+    'en-c1-vocabulary-06',
+    'en-c1-vocabulary-09',
+    'en-c1-vocabulary-11',
+    'en-c1-vocabulary-12',
+    'en-c2-vocabulary-04',
+    'en-c2-vocabulary-09',
+    'en-c2-vocabulary-12',
+  ];
+  const revisedReading = ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES
+    .filter(record => record.publicItem.contentVersion === 'draft-2');
+  const revisedLanguageUse = ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES
+    .filter(record => record.publicItem.contentVersion === 'draft-2');
+  assert.deepEqual(revisedReading.map(record => record.publicItem.id), expectedReading);
+  assert.deepEqual(revisedLanguageUse.map(record => record.publicItem.id), expectedLanguageUse);
+  assert.ok(revisedReading.every(record => record.source.reference.includes('original-draft-2:')));
+  assert.ok(revisedLanguageUse.every(record => record.source.reference.endsWith('original-draft-2')));
+});

@@ -14,7 +14,7 @@
     "writingDraftPrompts": 24,
     "writingApprovedPrompts": 0,
     "cueAuditReviewedReservedDrafts": 216,
-    "cueAuditFlaggedForHumanReview": 19,
+    "cueAuditFlaggedForHumanReview": 0,
     "cueAuditBlockingDefects": 0
   },
   "objectiveCells": [
@@ -495,7 +495,7 @@
     "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
     "totals": {
       "items": 216,
-      "flaggedItems": 19,
+      "flaggedItems": 0,
       "blockingItems": 0
     },
     "cells": [
@@ -599,33 +599,25 @@
         "level": "C1",
         "skill": "grammar",
         "items": 12,
-        "flaggedItems": 3,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "OPTION_LENGTH_SPREAD": 2,
-          "KEY_MATERIALLY_LONGER": 1
-        }
+        "findings": {}
       },
       {
         "level": "C1",
         "skill": "reading",
         "items": 12,
-        "flaggedItems": 2,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "KEY_MATERIALLY_LONGER": 2
-        }
+        "findings": {}
       },
       {
         "level": "C1",
         "skill": "vocabulary",
         "items": 12,
-        "flaggedItems": 6,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "KEY_MATERIALLY_LONGER": 4,
-          "OPTION_LENGTH_SPREAD": 2
-        }
+        "findings": {}
       },
       {
         "level": "C2",
@@ -639,23 +631,17 @@
         "level": "C2",
         "skill": "reading",
         "items": 12,
-        "flaggedItems": 5,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "KEY_MATERIALLY_LONGER": 5,
-          "OPTION_LENGTH_SPREAD": 1
-        }
+        "findings": {}
       },
       {
         "level": "C2",
         "skill": "vocabulary",
         "items": 12,
-        "flaggedItems": 3,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "KEY_MATERIALLY_LONGER": 3,
-          "OPTION_LENGTH_SPREAD": 1
-        }
+        "findings": {}
       }
     ]
   }
