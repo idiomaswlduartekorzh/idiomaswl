@@ -162,3 +162,11 @@ test('human-only review can publish accepted evidence without fabricating model 
   const revise = { ...human, decision: 'revise' };
   assert.equal(consolidateWritingEvidence({ human: revise }).reviewStatus, 'awaiting-adjudication');
 });
+
+test('writing aggregation uses the conservative lower median for an uneven four-criterion profile', () => {
+  const human = evaluation('human', ['A1', 'A1', 'C2', 'C2']);
+  const final = consolidateWritingEvidence({ human });
+  assert.equal(final.status, 'provisional');
+  assert.equal(final.estimatedLevel, 'A1');
+  assert.equal(final.reviewStatus, 'human-reviewed');
+});

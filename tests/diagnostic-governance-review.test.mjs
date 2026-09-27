@@ -318,7 +318,7 @@ test('pilot criteria governance binds recruitment assumptions, calculation and r
     }
     const before = diagnosticPilotCriteriaGovernanceSnapshot(temporaryRoot);
     const plan = join(temporaryRoot, 'docs/diagnostic-pilot-recruitment-plan.json');
-    writeFileSync(plan, readFileSync(plan, 'utf8').replace('4348', '4349'));
+    writeFileSync(plan, readFileSync(plan, 'utf8').replace('4324', '4325'));
     assert.notEqual(diagnosticPilotCriteriaGovernanceSnapshot(temporaryRoot), before);
   } finally {
     rmSync(temporaryRoot, { recursive: true, force: true });

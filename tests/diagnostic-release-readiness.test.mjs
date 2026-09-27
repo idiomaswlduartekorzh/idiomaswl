@@ -66,7 +66,7 @@ function readyFixture() {
       },
       objectiveCells,
       cueAudit: {
-        auditVersion: 'diagnostic-item-cue-audit-v1',
+        auditVersion: 'diagnostic-item-cue-audit-v2',
         totals: { items: 288, flaggedItems: 0, blockingItems: 0 },
       },
     },

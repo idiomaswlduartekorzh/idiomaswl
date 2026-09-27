@@ -16,13 +16,12 @@ export interface SimulatedLocatorCohort {
 }
 
 export interface DiagnosticMstSimulationReport {
-  simulationVersion: 'diagnostic-mst-simulation-v1';
+  simulationVersion: 'diagnostic-mst-simulation-v2';
   seed: number;
   sampleSizePerLevel: number;
   cohorts: readonly SimulatedLocatorCohort[];
-  adversarial: {
-    alwaysSameOption: DiagnosticRouteId;
-    alwaysLongestOption: DiagnosticRouteId;
+  scorecardProxies: {
+    oneCorrectPerSkill: DiagnosticRouteId;
     advancedWithoutAudio: DiagnosticRouteId;
   };
 }
@@ -37,7 +36,8 @@ function createRandom(seed: number): () => number {
 
 function probabilityCorrect(theta: number, difficulty: number): number {
   const knowledge = 1 / (1 + Math.exp(-1.35 * (theta - difficulty)));
-  return 0.25 + 0.75 * knowledge;
+  const chance = 1 / 3;
+  return chance + (1 - chance) * knowledge;
 }
 
 export function simulateDiagnosticMst(seed = 20260924, sampleSizePerLevel = 1000): DiagnosticMstSimulationReport {
@@ -81,10 +81,9 @@ export function simulateDiagnosticMst(seed = 20260924, sampleSizePerLevel = 1000
     omitted: skill === 'listening' ? 3 : 0,
   }])) as LocatorScorecard;
   return {
-    simulationVersion: 'diagnostic-mst-simulation-v1', seed, sampleSizePerLevel, cohorts,
-    adversarial: {
-      alwaysSameOption: routeEnglishLocator(balancedGuess).routeId,
-      alwaysLongestOption: routeEnglishLocator(balancedGuess).routeId,
+    simulationVersion: 'diagnostic-mst-simulation-v2', seed, sampleSizePerLevel, cohorts,
+    scorecardProxies: {
+      oneCorrectPerSkill: routeEnglishLocator(balancedGuess).routeId,
       advancedWithoutAudio: routeEnglishLocator(noAudio).routeId,
     },
   };

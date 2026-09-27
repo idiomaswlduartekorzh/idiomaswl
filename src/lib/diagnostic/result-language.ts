@@ -1,6 +1,8 @@
 const PROFILE_WARNING_LABELS: Readonly<Record<string, string>> = {
   GLOBAL_WITHHELD_INCOMPLETE_EVIDENCE:
     'No se publica un nivel global porque al menos una habilidad no tiene evidencia suficiente.',
+  GLOBAL_WITHHELD_UNEVEN_PROFILE:
+    'No se publica un nivel global porque las diferencias entre habilidades harían engañosa una sola etiqueta.',
   UNEVEN_SKILL_PROFILE:
     'El perfil es desigual: las habilidades difieren por dos o más niveles y deben interpretarse por separado.',
   GRAMMAR_WRITING_EVIDENCE_DIVERGES:

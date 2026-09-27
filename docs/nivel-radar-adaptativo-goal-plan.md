@@ -202,15 +202,16 @@ Actualizado el 25 de septiembre de 2026:
   escritura por nivel.
 - **Auditoría adversarial de opciones integrada:** los 216 ítems reservados de lectura,
   gramática y vocabulario pasan por una inspección determinista de duplicados normalizados,
-  atajos metalingüísticos, longitud relativa, paralelismo de longitud, capitalización y
-  puntuación. La salida pública contiene únicamente agregados por nivel y habilidad; el detalle
+  atajos metalingüísticos, asimetrías de lenguaje absoluto, longitud relativa, paralelismo de
+  longitud, capitalización y puntuación. La salida pública contiene únicamente agregados por
+  nivel y habilidad; el detalle
   por ítem, posición y clave solo aparece en material privado del revisor de evaluación. El
   corte actual encuentra **0 alertas automáticas y 0 defectos bloqueantes** en las 18 celdas
   A1–C2 de lectura, gramática y vocabulario. Esto elimina atajos detectables, pero no sustituye el
   juicio lingüístico ni la calibración psicométrica: los 216 ítems siguen pendientes de revisión
-  especializada. Treinta y seis ítems con pistas accidentales de puntuación o longitud fueron
-  corregidos y versionados individualmente como `draft-2`, sin cambiar su clave, nivel ni
-  constructo; los otros 180 conservaron `draft-1`. Una
+  especializada. Cincuenta y un ítems con ambigüedad lingüística, metadatos imprecisos o pistas
+  accidentales fueron corregidos y versionados individualmente: 33 están en `draft-2`, 18 en
+  `draft-3` y los otros 165 conservaron `draft-1`. Una
   señal de longitud no rechaza automáticamente contenido que pueda ser legítimo para el
   constructo, pero ahora exige el criterio `answerCueRiskReviewed`. Cada firma conserva por
   separado la huella del contenido y la de la política de revisión; cambiar la versión del
@@ -218,6 +219,16 @@ Actualizado el 25 de septiembre de 2026:
   haya cambiado. La puerta integral compara además la versión y cobertura del auditor contra
   todos los borradores reservados y se cierra ante cobertura incompleta o cualquier defecto
   automático bloqueante.
+- **Panel experto asistido, no firma humana:** tres revisiones independientes por agentes —calidad
+  lingüística, medición y sesgo/accesibilidad— encontraron claves no únicas, distractores
+  caricaturescos, una simulación con azar incorrecto para tres opciones, agregación excesivamente
+  optimista y controles de privacidad/UX poco visibles. La remediación corrige esos defectos,
+  eleva el auditor a v2, usa mediana inferior en escritura, retiene el nivel global en perfiles
+  muy desiguales, desactiva ayudas ortográficas variables y expone borrado de datos. Este panel
+  es una prerevisión técnica: no cuenta como los 48 recibos humanos independientes, no aprueba
+  contenido y no levanta ningún gate de salida. Siguen abiertos el acceso equivalente para quien
+  no pueda rendir escucha, la aplicación confiable de límites de reproducción, el balance por
+  subdominio/forma y la validación psicométrica con participantes reales.
 - **Rotación reproducible de opciones:** `mst-engine-v2` ordena las opciones mediante una huella
   de etapa, ítem e ID de opción. La clave sigue siendo un ID privado e inmutable, no una letra o
   posición. Una recarga o reintento idempotente reproduce exactamente el mismo orden, mientras
@@ -510,7 +521,7 @@ pero no fingirá que un promedio crudo de porcentajes equivale automáticamente 
 6. **Control de consistencia:** ítems ancla o módulo corto adicional cuando dos fuentes de evidencia se contradigan.
 7. **Resultado:** perfil, rango probable, confianza, evidencias y ruta de estudio.
 
-Objetivo de duración: **35–45 minutos**. El examen podrá alargarse hasta un máximo explícito
+Objetivo de duración: **50–75 minutos**. El examen podrá alargarse hasta un máximo explícito
 cuando necesite resolver una clasificación incierta, pero nunca podrá terminar sin el mínimo de
 evidencia definido por habilidad.
 

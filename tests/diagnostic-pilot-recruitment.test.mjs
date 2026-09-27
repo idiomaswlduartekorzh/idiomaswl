@@ -22,8 +22,8 @@ test('pilot recruitment plan exposes the real item-calibration lower bound', () 
   assert.equal(plan.assumptions.maximumObjectiveDecisionsPerCompletedAttempt, 36);
   assert.equal(plan.itemCalibrationLowerBounds.absoluteBestCase.completedAttempts, 1_600);
   assert.equal(plan.itemCalibrationLowerBounds.absoluteBestCase.startedAttempts, 2_134);
-  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.completedAttempts, 1_942);
-  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.startedAttempts, 2_590);
+  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.completedAttempts, 1_936);
+  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.startedAttempts, 2_582);
   assert.equal(plan.itemCalibrationLowerBounds.withoutConfirmation.completedAttempts, 2_058);
   assert.equal(plan.itemCalibrationLowerBounds.withoutConfirmation.startedAttempts, 2_744);
   assert.ok(plan.itemCalibrationLowerBounds.absoluteBestCase.startedAttempts > criteria.minimumStartedAttempts);
@@ -35,8 +35,8 @@ test('route and specialist floors remain explicit instead of being hidden by the
   assert.equal(plan.routeExposureLowerBounds.requiredItemResponsesPerRoute, 19_200);
   assert.equal(plan.routeExposureLowerBounds.bestCaseCompletedPerRoute, 800);
   assert.equal(plan.routeExposureLowerBounds.bestCaseStartedAcrossRoutes, 3_200);
-  assert.equal(plan.routeExposureLowerBounds.simulationExpectedCompletedPerRoute, 1_087);
-  assert.equal(plan.routeExposureLowerBounds.simulationExpectedStartedAcrossRoutes, 4_348);
+  assert.equal(plan.routeExposureLowerBounds.simulationExpectedCompletedPerRoute, 1_081);
+  assert.equal(plan.routeExposureLowerBounds.simulationExpectedStartedAcrossRoutes, 4_324);
   assert.equal(plan.routeExposureLowerBounds.withoutConfirmationCompletedPerRoute, 1_200);
   assert.equal(plan.routeExposureLowerBounds.withoutConfirmationStartedAcrossRoutes, 4_800);
   assert.equal(plan.routeExposureLowerBounds.configuredMinimumCompletedPerRoute, 60);

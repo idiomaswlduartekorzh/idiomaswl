@@ -490,7 +490,7 @@
     }
   ],
   "cueAudit": {
-    "auditVersion": "diagnostic-item-cue-audit-v1",
+    "auditVersion": "diagnostic-item-cue-audit-v2",
     "privacy": "Aggregate-only report: no item identifiers, content, scoring keys, key positions, or rationales.",
     "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
     "totals": {

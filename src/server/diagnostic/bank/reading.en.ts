@@ -87,7 +87,7 @@ const lowerTestlets: readonly ReadingTestletSeed[] = [
         distractorRationales: ['08:10 is the Oak Street time.', '08:55 is the Market Square time.'],
       },
       {
-        subdomain: 'structure', prompt: 'Where does the bus stop after the museum?', correctIndex: 2,
+        subdomain: 'detail', prompt: 'Where does the bus stop after the museum?', correctIndex: 2,
         options: ['Oak Street', 'Market Square', 'Central Station'],
         rationale: 'Central Station is the next listed stop after the museum.',
         distractorRationales: ['Oak Street comes before the museum.', 'Market Square comes after Central Station.'],
@@ -177,7 +177,7 @@ const lowerTestlets: readonly ReadingTestletSeed[] = [
         distractorRationales: ['Tools are shared, not sold by a company.', 'No park closure is announced.'],
       },
       {
-        subdomain: 'inference', prompt: 'Why does the group sell some vegetables?', correctIndex: 0,
+        subdomain: 'detail', prompt: 'Why does the group sell some vegetables?', correctIndex: 0,
         options: ['To cover part of the garden’s costs', 'To pay every volunteer a salary', 'To buy the empty land'],
         rationale: 'The money pays for seeds, so the sales help cover an operating cost.',
         distractorRationales: ['The members are described as volunteers.', 'Buying the land is not mentioned.'],
@@ -253,7 +253,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'detail', prompt: 'When may borrowers attend a safety session during the first month?', correctIndex: 1,
-        options: ['Every weekday evening', 'On Saturday mornings', 'Next spring only'],
+        options: ['On weekday evenings', 'On Saturday mornings', 'During the following spring'],
         rationale: 'The text explicitly schedules the initial safety sessions for every Saturday morning.',
         distractorRationales: ['No weekday evening sessions are mentioned.', 'Next spring refers to possible children’s bicycles.'],
       },
@@ -271,7 +271,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
       },
       {
         subdomain: 'inference', prompt: 'What surprised the writer about the café?', correctIndex: 0,
-        options: ['Visitors participate in diagnosing and repairing objects.', 'Every damaged object can be repaired.', 'Only professional engineers are allowed to help.'],
+        options: ['Visitors participate in diagnosing and repairing objects.', 'Volunteers repair the objects while visitors observe the process.', 'Professional engineers lead the repairs and explain each step.'],
         rationale: 'The contrast between the writer’s expectation and “Instead” shows surprise at visitors learning beside volunteers.',
         distractorRationales: ['The text explicitly says not every object can be saved.', 'A retired engineer is one example, but the helpers are described generally as volunteers.'],
       },
@@ -427,7 +427,7 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
     questions: [
       {
         subdomain: 'main-idea', prompt: 'What conclusion does the text reach about volunteer data?', correctIndex: 2,
-        options: ['They should replace laboratory testing completely.', 'They are useful only for public education.', 'Their broad coverage can complement more precise professional testing.'],
+        options: ['They can replace many routine laboratory measurements at monitored sites.', 'Their main contribution is public engagement rather than research evidence.', 'Their broad coverage can complement more precise professional testing.'],
         rationale: 'The final comparison presents volunteer breadth and laboratory precision as complementary strengths.',
         distractorRationales: ['The text explicitly says the network does not replace laboratories.', 'Researchers now use the observations as evidence for patterns and follow-up decisions.'],
       },
@@ -462,11 +462,16 @@ const upperTestlets: readonly ReadingTestletSeed[] = [
 const testlets: readonly ReadingTestletSeed[] = [...lowerTestlets, ...upperTestlets];
 
 const REVISED_ITEM_CONTENT_VERSIONS = new Map<string, string>([
+  ['en-a1-reading-04-q2', 'draft-2'],
   ['en-a1-reading-05-q2', 'draft-2'],
+  ['en-a2-reading-03-q2', 'draft-2'],
+  ['en-b1-reading-01-q2', 'draft-2'],
+  ['en-b1-reading-02-q2', 'draft-2'],
   ['en-a2-reading-01-q2', 'draft-2'],
   ['en-b1-reading-03-q1', 'draft-2'],
   ['en-b1-reading-05-q2', 'draft-2'],
   ['en-b1-reading-06-q2', 'draft-2'],
+  ['en-b2-reading-05-q1', 'draft-2'],
 ]);
 
 export const ENGLISH_DIAGNOSTIC_READING_CANDIDATES: readonly DiagnosticBankRecord[] = testlets.flatMap((testlet, testletIndex) => {

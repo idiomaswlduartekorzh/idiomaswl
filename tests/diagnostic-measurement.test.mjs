@@ -178,7 +178,7 @@ test('global result is withheld until all five skills have evidence', () => {
   assert.ok(result.warnings.includes('GLOBAL_WITHHELD_INCOMPLETE_EVIDENCE'));
 });
 
-test('a two-level skill spread remains explicit in the composite result', () => {
+test('a two-level skill spread withholds the unsupported global level', () => {
   const levels = ['A2', 'B2', 'B1', 'B2', 'B1'];
   const skills = DIAGNOSTIC_SKILLS.map((skill, index) => ({
     skill, decisions: 6, distinctStimuli: 3, status: 'provisional', estimatedLevel: levels[index],
@@ -189,7 +189,9 @@ test('a two-level skill spread remains explicit in the composite result', () => 
     generatedAt: '2026-09-24T12:00:00.000Z',
     validUntil: '2027-03-23T12:00:00.000Z',
   });
-  assert.equal(result.globalLevel, 'B1');
+  assert.equal(result.globalLevel, null);
+  assert.equal(result.globalRange, null);
   assert.equal(result.profileIsUneven, true);
   assert.ok(result.warnings.includes('UNEVEN_SKILL_PROFILE'));
+  assert.ok(result.warnings.includes('GLOBAL_WITHHELD_UNEVEN_PROFILE'));
 });

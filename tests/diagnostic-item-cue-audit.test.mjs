@@ -30,62 +30,13 @@ test('the adversarial audit deterministically covers every reserved objective dr
   assert.equal(first.cells.every(cell => cell.flaggedItems === 0 && cell.blockingItems === 0), true);
 });
 
-test('revised A1 through B2 items remove accidental option cues without changing their keys', () => {
-  const revisedIds = [
-    'en-a1-reading-05-q2',
-    'en-a1-vocabulary-07',
-    'en-a2-grammar-07',
-    'en-a2-grammar-08',
-    'en-a2-reading-01-q2',
-    'en-a2-vocabulary-07',
-    'en-a2-vocabulary-08',
-    'en-b1-reading-03-q1',
-    'en-b1-reading-05-q2',
-    'en-b1-reading-06-q2',
-    'en-b1-vocabulary-07',
-    'en-b1-vocabulary-12',
-    'en-b2-grammar-04',
-    'en-b2-grammar-08',
-    'en-b2-vocabulary-02',
-    'en-b2-vocabulary-07',
-    'en-b2-vocabulary-10',
-  ];
-  for (const itemId of revisedIds) {
-    const record = candidates.find(candidate => candidate.publicItem.id === itemId);
-    assert.ok(record, `${itemId} must remain in the reserved bank`);
-    assert.equal(record.publicItem.contentVersion, 'draft-2');
-    assert.deepEqual(auditDiagnosticItemCues(record).findings, []);
-  }
-});
-
-test('revised C1 and C2 items remove accidental option cues without changing their keys', () => {
-  const keyPositions = new Map([
-    ['en-c1-grammar-05', 1],
-    ['en-c1-grammar-09', 2],
-    ['en-c1-grammar-11', 1],
-    ['en-c1-reading-04-q2', 1],
-    ['en-c1-reading-06-q2', 2],
-    ['en-c1-vocabulary-03', 2],
-    ['en-c1-vocabulary-04', 0],
-    ['en-c1-vocabulary-06', 2],
-    ['en-c1-vocabulary-09', 2],
-    ['en-c1-vocabulary-11', 1],
-    ['en-c1-vocabulary-12', 2],
-    ['en-c2-reading-01-q1', 0],
-    ['en-c2-reading-01-q2', 0],
-    ['en-c2-reading-02-q1', 1],
-    ['en-c2-reading-03-q2', 0],
-    ['en-c2-reading-04-q1', 1],
-    ['en-c2-vocabulary-04', 0],
-    ['en-c2-vocabulary-09', 2],
-    ['en-c2-vocabulary-12', 2],
-  ]);
-  assert.equal(candidates.filter(candidate => candidate.publicItem.contentVersion === 'draft-2').length, 36);
-  for (const [itemId, expectedKeyPosition] of keyPositions) {
-    const record = candidates.find(candidate => candidate.publicItem.id === itemId);
-    assert.ok(record, `${itemId} must remain in the reserved bank`);
-    assert.equal(record.publicItem.contentVersion, 'draft-2');
-    assert.equal(record.publicItem.response.optionIds.indexOf(record.scoring.optionId), expectedKeyPosition);
+test('all 51 individually revised items remain cue-clean and source-versioned', () => {
+  const revised = candidates.filter(candidate => candidate.publicItem.contentVersion !== 'draft-1');
+  assert.equal(revised.length, 51);
+  assert.equal(revised.filter(candidate => candidate.publicItem.contentVersion === 'draft-2').length, 33);
+  assert.equal(revised.filter(candidate => candidate.publicItem.contentVersion === 'draft-3').length, 18);
+  for (const record of revised) {
+    assert.match(record.source.reference, new RegExp(`original-${record.publicItem.contentVersion}(?::|$)`));
     assert.deepEqual(auditDiagnosticItemCues(record).findings, []);
   }
 });
@@ -113,6 +64,18 @@ test('normalized duplicates block approval while length findings require human j
   const lengthAudit = auditDiagnosticItemCues(lengthCue);
   assert.equal(lengthAudit.disposition, 'HUMAN_REVIEW_REQUIRED');
   assert.ok(lengthAudit.findings.some(finding => finding.code === 'KEY_MATERIALLY_LONGER'));
+
+  const semanticCue = structuredClone(source);
+  const semanticKeyIndex = semanticCue.publicItem.displayOptions
+    .findIndex(option => option.id === semanticCue.scoring.optionId);
+  const semanticDistractors = semanticCue.publicItem.displayOptions
+    .filter((_, index) => index !== semanticKeyIndex);
+  semanticCue.publicItem.displayOptions[semanticKeyIndex].text = 'It may be useful in some cases.';
+  semanticDistractors[0].text = 'It is always the only possible answer.';
+  semanticDistractors[1].text = 'It is never useful anywhere.';
+  const semanticAudit = auditDiagnosticItemCues(semanticCue);
+  assert.equal(semanticAudit.disposition, 'HUMAN_REVIEW_REQUIRED');
+  assert.ok(semanticAudit.findings.some(finding => finding.code === 'ABSOLUTE_LANGUAGE_ASYMMETRY'));
 });
 
 test('the CLI writes item-level detail only below the private evidence root', () => {

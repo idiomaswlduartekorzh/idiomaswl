@@ -39,6 +39,14 @@ test('audio readiness uses a real non-scored sample and explicit listener confir
   assert.doesNotMatch(client, /createOscillator|AudioContext/);
 });
 
+test('runner standardizes writing assistance, explains consent scope and exposes data deletion', () => {
+  assert.match(client, /spellCheck=\{false\}/);
+  assert.match(client, /autoCorrect="off"/);
+  assert.match(client, /procesamiento externo de escritura requiere un consentimiento distinto/i);
+  assert.match(client, /Borrar mis datos diagnósticos/);
+  assert.match(client, /confirmation: 'DELETE_DIAGNOSTIC_DATA'/);
+});
+
 test('adaptive UI has an independent server-side release flag', () => {
   assert.match(page, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'/);
   assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient \/> : <NivelRadarClient \/>/);

@@ -334,7 +334,7 @@ identificado y la confirmación ligada al hash de la propuesta y del conjunto de
 el manifiesto de forma atómica. Plantillas, decisiones incompletas, cambios solicitados, rutas
 externas o modificaciones posteriores fallan antes de escribir.
 
-La auditoría adversarial evalúa los 216 ítems reservados de lectura, gramática y vocabulario sin
+La auditoría adversarial v2 evalúa los 216 ítems reservados de lectura, gramática y vocabulario sin
 imprimir identificadores, textos, claves ni racionales. El reporte operativo comprometido
 `diagnostic-bank-readiness-v2` conserva únicamente conteos y hallazgos agregados por celda, sin
 IDs ni posiciones de clave: registra **216/216 borradores revisados, 0 alertas automáticas y 0
@@ -344,13 +344,24 @@ hallazgos mecánicos; este resultado no constituye aprobación lingüística ni 
 El release falla cerrado si la versión del auditor no coincide, si
 su cobertura difiere del total reservado o si aparece un defecto bloqueante. El detalle aparece
 únicamente en los paquetes privados de evaluación, no en los lingüísticos. Duplicados
-normalizados bloquean; diferencias de longitud, capitalización o puntuación exigen revisión
-contextual y no rechazo automático. El checklist de evaluación añade
+normalizados bloquean; asimetrías donde ambos distractores usan lenguaje absoluto y la clave no,
+así como diferencias de longitud, capitalización o puntuación, exigen revisión contextual y no
+rechazo automático. El checklist de evaluación añade
 `answerCueRiskReviewed`, y `reviewBasisSha256` liga cada firma a la versión exacta del auditor y
-del proceso. Treinta y seis ítems A1–C2 eliminaron pistas accidentales de puntuación o longitud y
-avanzaron individualmente a `draft-2`, sin cambiar clave, nivel ni constructo; los 180 ítems no
-editados conservaron `draft-1`. Una plantilla anterior queda obsoleta aunque
+del proceso. Cincuenta y un ítems A1–C2 corrigieron ambigüedades, metadatos o pistas accidentales:
+33 quedaron en `draft-2`, 18 en `draft-3` y los 165 no editados conservaron `draft-1`. Una
+plantilla anterior queda obsoleta aunque
 `contentSha256` siga coincidiendo.
+
+La prerevisión de septiembre de 2026 fue realizada por un panel de agentes con tres perspectivas:
+lingüística, medición y sesgo/accesibilidad. Sirvió para encontrar y remediar defectos, pero no es
+una revisión humana independiente y no se registra como recibo editorial ni de gobierno. Además
+de las correcciones de banco, la implementación usa la mediana inferior para cuatro criterios de
+escritura, retiene el nivel global cuando las habilidades difieren dos o más niveles, corrige el
+azar de simulación a 1/3, desactiva ayudas ortográficas variables y hace visible el borrado de
+datos. Permanecen bloqueantes la vía equivalente para personas que no pueden rendir escucha, el
+control servidor de reproducciones, el balance de subdominios/formas y toda inferencia de
+fiabilidad, cortes o DIF que requiera muestra real.
 En entrega, `mst-engine-v2` deriva el orden de opciones de la etapa y del ID de cada opción:
 recargas e idempotencia conservan la forma exacta, pero otra etapa rota posiciones sin alterar
 la clave privada ni el scoring. Una discrepancia entre IDs visibles y el contrato falla antes de

@@ -28,11 +28,11 @@ test('the dominant route never moves downward as latent level increases', () => 
   }
 });
 
-test('trivial response strategies cannot reach the advanced route', () => {
+test('declared scorecard proxies cannot reach the advanced route', () => {
   const report = simulateDiagnosticMst();
-  assert.equal(report.adversarial.alwaysSameOption, 'low-a1-a2');
-  assert.equal(report.adversarial.alwaysLongestOption, 'low-a1-a2');
-  assert.notEqual(report.adversarial.advancedWithoutAudio, 'high-c1-c2');
+  assert.equal(report.scorecardProxies.oneCorrectPerSkill, 'low-a1-a2');
+  assert.notEqual(report.scorecardProxies.advancedWithoutAudio, 'high-c1-c2');
+  assert.equal('adversarial' in report, false);
 });
 
 test('simulation is reproducible and refuses misleading tiny cohorts', () => {

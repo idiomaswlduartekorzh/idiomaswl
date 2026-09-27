@@ -2,12 +2,13 @@ import { createHash } from 'node:crypto';
 
 import type { DiagnosticBankRecord } from '../types.ts';
 
-export const DIAGNOSTIC_ITEM_CUE_AUDIT_VERSION = 'diagnostic-item-cue-audit-v1';
-export const DIAGNOSTIC_BANK_REVIEW_POLICY_VERSION = 'diagnostic-bank-review-policy-v2';
+export const DIAGNOSTIC_ITEM_CUE_AUDIT_VERSION = 'diagnostic-item-cue-audit-v2';
+export const DIAGNOSTIC_BANK_REVIEW_POLICY_VERSION = 'diagnostic-bank-review-policy-v3';
 
 export type DiagnosticItemCueCode =
   | 'DUPLICATE_NORMALIZED_OPTIONS'
   | 'META_RESPONSE_OPTION'
+  | 'ABSOLUTE_LANGUAGE_ASYMMETRY'
   | 'KEY_MATERIALLY_LONGER'
   | 'KEY_MATERIALLY_SHORTER'
   | 'OPTION_LENGTH_SPREAD'
@@ -35,6 +36,7 @@ export interface DiagnosticItemCueAudit {
 }
 
 const META_RESPONSE = /^(?:all|none)\s+of\s+(?:the\s+)?(?:above|these)|^(?:both|either|neither)\s+[a-z]\s+(?:and|or|nor)\s+[a-z]$/iu;
+const ABSOLUTE_LANGUAGE = /\b(?:always|never|only|every(?:one|thing|where)?|all|none|entirely|completely|impossible|inevitably|obviously|definitely|unlawful|exclusively)\b|\bno reasonable\b|\bof any kind\b/iu;
 const FILL_IN_PROMPT = /_{2,}|\bcomplete\b/iu;
 
 function normalizeOption(text: string): string {
@@ -102,6 +104,18 @@ export function auditDiagnosticItemCues(record: DiagnosticBankRecord): Diagnosti
       code: 'META_RESPONSE_OPTION', severity: 'review', optionPositions: metaPositions,
       evidence: 'An option uses an all/none/both/either response shortcut.',
       reviewQuestion: 'Does this option create test-wiseness unrelated to the target construct?',
+    });
+  }
+
+  const absolutePositions = options.flatMap((option, index) =>
+    ABSOLUTE_LANGUAGE.test(option.text) ? [index + 1] : []);
+  const distractorPositions = options.flatMap((_, index) => index === keyIndex ? [] : [index + 1]);
+  if (!absolutePositions.includes(keyIndex + 1)
+    && distractorPositions.every(position => absolutePositions.includes(position))) {
+    findings.push({
+      code: 'ABSOLUTE_LANGUAGE_ASYMMETRY', severity: 'review', optionPositions: distractorPositions,
+      evidence: 'Both distractors use absolute or extreme language while the keyed option does not.',
+      reviewQuestion: 'Is the contrast required by the construct, or can a candidate choose the uniquely qualified option without understanding the target language or text?',
     });
   }
 

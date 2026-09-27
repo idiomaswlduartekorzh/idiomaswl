@@ -357,7 +357,10 @@ export function consolidateWritingEvidence(input: {
   if (indexes.length !== DIAGNOSTIC_WRITING_CRITERIA.length || indexes.some(index => index < 0)) {
     throw new Error('final writing evaluation does not cover the complete rubric');
   }
-  const estimatedLevel = CEFR_LEVELS[indexes[Math.floor(indexes.length / 2)]];
+  // With four rubric criteria, use the lower median until pilot standard-setting
+  // supports a more permissive aggregation rule. This prevents two high criteria
+  // from masking two materially lower dimensions of the same response.
+  const estimatedLevel = CEFR_LEVELS[indexes[Math.floor((indexes.length - 1) / 2)]];
   const confidence = Math.min(0.75, finalEvaluation.criteria.reduce((sum, criterion) => sum + criterion.confidence, 0) / indexes.length);
   return {
     ...base,

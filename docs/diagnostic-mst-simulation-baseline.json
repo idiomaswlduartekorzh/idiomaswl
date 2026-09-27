@@ -1,68 +1,68 @@
 {
-  "simulationVersion": "diagnostic-mst-simulation-v1",
+  "simulationVersion": "diagnostic-mst-simulation-v2",
   "seed": 20260924,
   "sampleSizePerLevel": 1000,
   "cohorts": [
     {
       "trueLevel": "A1",
       "sampleSize": 1000,
-      "meanCorrect": 3.779,
-      "confirmationRate": 0.205,
+      "meanCorrect": 4.688,
+      "confirmationRate": 0.313,
       "routes": {
-        "low-a1-a2": 846,
-        "mid-b1-b2": 154,
-        "high-c1-c2": 0
+        "low-a1-a2": 692,
+        "mid-b1-b2": 307,
+        "high-c1-c2": 1
       }
     },
     {
       "trueLevel": "A2",
       "sampleSize": 1000,
-      "meanCorrect": 5.319,
-      "confirmationRate": 0.318,
+      "meanCorrect": 6.095,
+      "confirmationRate": 0.293,
       "routes": {
-        "low-a1-a2": 559,
-        "mid-b1-b2": 434,
-        "high-c1-c2": 7
+        "low-a1-a2": 364,
+        "mid-b1-b2": 616,
+        "high-c1-c2": 20
       }
     },
     {
       "trueLevel": "B1",
       "sampleSize": 1000,
-      "meanCorrect": 7.529,
-      "confirmationRate": 0.197,
+      "meanCorrect": 8.038,
+      "confirmationRate": 0.229,
       "routes": {
-        "low-a1-a2": 87,
-        "mid-b1-b2": 818,
-        "high-c1-c2": 95
+        "low-a1-a2": 48,
+        "mid-b1-b2": 769,
+        "high-c1-c2": 183
       }
     },
     {
       "trueLevel": "B2",
       "sampleSize": 1000,
-      "meanCorrect": 9.689,
-      "confirmationRate": 0.331,
+      "meanCorrect": 9.96,
+      "confirmationRate": 0.325,
       "routes": {
-        "low-a1-a2": 3,
-        "mid-b1-b2": 408,
-        "high-c1-c2": 589
+        "low-a1-a2": 0,
+        "mid-b1-b2": 333,
+        "high-c1-c2": 667
       }
     },
     {
       "trueLevel": "C1",
       "sampleSize": 1000,
-      "meanCorrect": 11.149,
-      "confirmationRate": 0.164,
+      "meanCorrect": 11.234,
+      "confirmationRate": 0.132,
       "routes": {
         "low-a1-a2": 0,
-        "mid-b1-b2": 41,
-        "high-c1-c2": 959
+        "mid-b1-b2": 32,
+        "high-c1-c2": 968
       }
     },
     {
       "trueLevel": "C2",
       "sampleSize": 1000,
-      "meanCorrect": 11.736,
-      "confirmationRate": 0.037,
+      "meanCorrect": 11.768,
+      "confirmationRate": 0.029,
       "routes": {
         "low-a1-a2": 0,
         "mid-b1-b2": 0,
@@ -70,9 +70,8 @@
       }
     }
   ],
-  "adversarial": {
-    "alwaysSameOption": "low-a1-a2",
-    "alwaysLongestOption": "low-a1-a2",
+  "scorecardProxies": {
+    "oneCorrectPerSkill": "low-a1-a2",
     "advancedWithoutAudio": "mid-b1-b2"
   }
 }

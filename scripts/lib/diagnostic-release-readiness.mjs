@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 const EXPECTED_OBJECTIVE_DECISIONS = 288;
 const EXPECTED_WRITING_PROMPTS = 24;
 const EXPECTED_LISTENING_RECORDINGS = 36;
-const EXPECTED_CUE_AUDIT_VERSION = 'diagnostic-item-cue-audit-v1';
+const EXPECTED_CUE_AUDIT_VERSION = 'diagnostic-item-cue-audit-v2';
 const SHA256 = /^[a-f0-9]{64}$/u;
 const COMMIT_SHA = /^[a-f0-9]{40}$/u;
 const PILOT_VALIDATION_ROLES = ['academic-lead', 'measurement-lead'];

@@ -327,12 +327,12 @@ export function buildDiagnosticCompositeResult(input: {
   }
   const spread = levelIndexes.length ? Math.max(...levelIndexes) - Math.min(...levelIndexes) : 0;
   const profileIsUneven = spread >= 2;
-  if (profileIsUneven) warnings.push('UNEVEN_SKILL_PROFILE');
+  if (profileIsUneven) warnings.push('UNEVEN_SKILL_PROFILE', 'GLOBAL_WITHHELD_UNEVEN_PROFILE');
   const allCalibrated = allSkillsEstimated && input.skills.every(skill => skill.status === 'calibrated');
   const overallStatus = !allSkillsEstimated ? 'not-estimated' : allCalibrated ? 'calibrated' : 'provisional';
   let globalLevel: CefrLevel | null = null;
   let globalRange: readonly [CefrLevel, CefrLevel] | null = null;
-  if (allSkillsEstimated) {
+  if (allSkillsEstimated && !profileIsUneven) {
     const sorted = [...levelIndexes].sort((a, b) => a - b);
     globalLevel = CEFR_LEVELS[sorted[Math.floor(sorted.length / 2)]];
     const ranges = input.skills.flatMap(skill => {

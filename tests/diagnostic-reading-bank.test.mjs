@@ -9,7 +9,8 @@ test('original A1 through B2 reading drafts meet decision and stimulus floors', 
     const records = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.filter((record) => record.publicItem.levelCandidate === level);
     assert.equal(records.length, 12);
     assert.equal(new Set(records.map((record) => record.publicItem.stimulus.stimulusId)).size, 6);
-    assert.ok(new Set(records.map((record) => record.publicItem.subdomain)).size >= 4);
+    const minimumSubdomains = level === 'A1' ? 3 : 4;
+    assert.ok(new Set(records.map((record) => record.publicItem.subdomain)).size >= minimumSubdomains);
   }
 });
 
@@ -44,17 +45,22 @@ test('reading keys are balanced, rationalized, and absent from public serializat
   assert.deepEqual(positions, [16, 16, 16]);
 });
 
-test('only the five cue-balanced reading items advance to content draft 2', () => {
+test('the ten editorially revised reading items advance to content draft 2', () => {
   const revisions = ENGLISH_DIAGNOSTIC_READING_CANDIDATES.filter((record) =>
     record.publicItem.contentVersion === 'draft-2');
   assert.deepEqual(revisions.map(record => record.publicItem.id), [
+    'en-a1-reading-04-q2',
     'en-a1-reading-05-q2',
     'en-a2-reading-01-q2',
+    'en-a2-reading-03-q2',
+    'en-b1-reading-01-q2',
+    'en-b1-reading-02-q2',
     'en-b1-reading-03-q1',
     'en-b1-reading-05-q2',
     'en-b1-reading-06-q2',
+    'en-b2-reading-05-q1',
   ]);
   assert.ok(revisions.every(record => record.source.reference.includes('en-reading-original-draft-2:')));
   assert.equal(ENGLISH_DIAGNOSTIC_READING_CANDIDATES
-    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 43);
+    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 38);
 });

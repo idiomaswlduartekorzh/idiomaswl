@@ -48,24 +48,34 @@ test('answer positions are balanced and content has no duplicate prompts or opti
   assert.ok(longestOptionKeys <= 48, 'the longest-option strategy must not beat chance materially');
 });
 
-test('only the twelve editorially revised language-use items advance to content draft 2', () => {
-  const revisions = ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.filter((record) =>
-    record.publicItem.contentVersion === 'draft-2');
-  assert.deepEqual(revisions.map(record => record.publicItem.id), [
+test('editorially revised language-use items carry exact source revisions', () => {
+  const expectedDraft2 = [
     'en-a1-vocabulary-07',
     'en-a2-grammar-07',
     'en-a2-grammar-08',
-    'en-a2-vocabulary-07',
     'en-a2-vocabulary-08',
+    'en-b1-grammar-02',
+    'en-b1-grammar-11',
+    'en-b1-vocabulary-03',
     'en-b1-vocabulary-07',
     'en-b1-vocabulary-12',
     'en-b2-grammar-04',
-    'en-b2-grammar-08',
     'en-b2-vocabulary-02',
     'en-b2-vocabulary-07',
+  ];
+  const expectedDraft3 = [
+    'en-a2-vocabulary-07',
+    'en-b2-grammar-08',
     'en-b2-vocabulary-10',
-  ]);
-  assert.ok(revisions.every(record => record.source.reference === 'en-language-use-original-draft-2'));
+  ];
+  const revisions2 = ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.filter((record) =>
+    record.publicItem.contentVersion === 'draft-2');
+  const revisions3 = ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES.filter((record) =>
+    record.publicItem.contentVersion === 'draft-3');
+  assert.deepEqual(revisions2.map(record => record.publicItem.id), expectedDraft2);
+  assert.deepEqual(revisions3.map(record => record.publicItem.id), expectedDraft3);
+  assert.ok(revisions2.every(record => record.source.reference === 'en-language-use-original-draft-2'));
+  assert.ok(revisions3.every(record => record.source.reference === 'en-language-use-original-draft-3'));
   assert.equal(ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES
-    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 84);
+    .filter(record => record.publicItem.contentVersion === 'draft-1').length, 81);
 });

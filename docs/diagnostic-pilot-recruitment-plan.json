@@ -2,7 +2,7 @@
   "planVersion": "diagnostic-pilot-recruitment-plan-v1",
   "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
   "blueprintVersion": "welearn-english-placement-v1",
-  "simulationVersion": "diagnostic-mst-simulation-v1",
+  "simulationVersion": "diagnostic-mst-simulation-v2",
   "status": "planning-floor-not-publication-decision",
   "assumptions": {
     "objectiveItems": 288,
@@ -11,8 +11,8 @@
     "minimumCompletionRate": 0.75,
     "minimumObjectiveDecisionsPerCompletedAttempt": 28,
     "maximumObjectiveDecisionsPerCompletedAttempt": 36,
-    "simulatedWeightedConfirmationRate": 0.208667,
-    "simulatedExpectedObjectiveDecisionsPerCompletedAttempt": 29.669
+    "simulatedWeightedConfirmationRate": 0.220167,
+    "simulatedExpectedObjectiveDecisionsPerCompletedAttempt": 29.761
   },
   "itemCalibrationLowerBounds": {
     "absoluteBestCase": {
@@ -21,8 +21,8 @@
       "interpretation": "Every completed attempt would need the maximum objective form length and perfectly useful exposure."
     },
     "simulationExpectedFormLength": {
-      "completedAttempts": 1942,
-      "startedAttempts": 2590,
+      "completedAttempts": 1936,
+      "startedAttempts": 2582,
       "interpretation": "Uses the current balanced-cohort routing simulation only; adaptive exposure imbalance can require more."
     },
     "withoutConfirmation": {
@@ -38,10 +38,10 @@
     "bestCaseCompletedPerRoute": 800,
     "bestCaseCompletedAcrossRoutes": 2400,
     "bestCaseStartedAcrossRoutes": 3200,
-    "simulatedExpectedRouteDecisionsPerCompletedAttempt": 17.669,
-    "simulationExpectedCompletedPerRoute": 1087,
-    "simulationExpectedCompletedAcrossRoutes": 3261,
-    "simulationExpectedStartedAcrossRoutes": 4348,
+    "simulatedExpectedRouteDecisionsPerCompletedAttempt": 17.761,
+    "simulationExpectedCompletedPerRoute": 1081,
+    "simulationExpectedCompletedAcrossRoutes": 3243,
+    "simulationExpectedStartedAcrossRoutes": 4324,
     "withoutConfirmationCompletedPerRoute": 1200,
     "withoutConfirmationCompletedAcrossRoutes": 3600,
     "withoutConfirmationStartedAcrossRoutes": 4800,

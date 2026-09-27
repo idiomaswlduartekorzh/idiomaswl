@@ -98,7 +98,7 @@ export const ENGLISH_DIAGNOSTIC_BLUEPRINT: DiagnosticBlueprint = {
     { id: 'high-c1-c2', levels: ['C1', 'C2'], label: 'Dominio avanzado' },
   ],
   writing: { tasksPerAttempt: 1, promptVariantsPerLevel: 4 },
-  maximumMinutes: 45,
+  maximumMinutes: 75,
 };
 
 export const ENGLISH_LEVEL_EVIDENCE: Readonly<Record<CefrLevel, Readonly<Record<DiagnosticSkill, string>>>> = {

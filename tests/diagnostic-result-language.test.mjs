@@ -10,6 +10,7 @@ import {
 
 test('result language translates internal warnings into actionable Spanish', () => {
   assert.match(diagnosticProfileWarningLabel('GLOBAL_WITHHELD_INCOMPLETE_EVIDENCE'), /no se publica un nivel global/i);
+  assert.match(diagnosticProfileWarningLabel('GLOBAL_WITHHELD_UNEVEN_PROFILE'), /diferencias entre habilidades/i);
   assert.match(diagnosticProfileWarningLabel('UNEVEN_SKILL_PROFILE'), /perfil es desigual/i);
   assert.match(diagnosticProfileWarningLabel('GRAMMAR_WRITING_EVIDENCE_DIVERGES'), /uso gramatical.*difiere materialmente/i);
   assert.match(diagnosticProfileWarningLabel('VOCABULARY_WRITING_EVIDENCE_DIVERGES'), /vocabulario.*difiere materialmente/i);

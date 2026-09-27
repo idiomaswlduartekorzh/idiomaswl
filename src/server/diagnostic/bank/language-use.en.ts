@@ -3,6 +3,7 @@ import type { DiagnosticBankRecord } from '../types.ts';
 
 export const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATE_VERSION = 'en-language-use-original-draft-1';
 const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_REVISED_VERSION = 'en-language-use-original-draft-2';
+const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_SECOND_REVISED_VERSION = 'en-language-use-original-draft-3';
 
 type LanguageUseSeed = {
   level: CefrLevel;
@@ -313,9 +314,9 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'register',
     prompt: 'Which request is suitable in a polite email to a course office?',
-    options: ['Send me the course dates immediately.', 'I would appreciate the course dates.', 'I want the course dates today.'], correctIndex: 1,
-    rationale: '“I would appreciate…” makes the request appropriately polite for an office email.',
-    distractorRationales: ['The imperative sounds too direct for this context.', 'The direct statement of desire sounds abrupt in this context.'],
+    options: ['Can you send me the course dates immediately?', 'Could you please send me the course dates?', 'Will you send me the course dates today?'], correctIndex: 1,
+    rationale: '“Could you please…” makes a clear and appropriately polite request in an office email.',
+    distractorRationales: ['“Immediately” makes the request unnecessarily demanding.', 'This direct question imposes a same-day expectation without softening the request.'],
   },
   {
     level: 'A2', skill: 'vocabulary', subdomain: 'meaning',
@@ -357,8 +358,8 @@ const lowerSeeds: readonly LanguageUseSeed[] = [
 const upperSeedRows = [
   ['B1', 'grammar', 'tense-aspect', 'Complete the sentence: “I have lived here ___ 2021.”', ['for', 'since', 'during'], 1,
     '“Since” introduces the point in time when the continuing situation began.', ['“For” introduces a duration, not a starting year.', '“During” locates an event within a period but does not mark the start of a continuing state.']],
-  ['B1', 'grammar', 'tense-aspect', 'Complete the sentence: “While I was cooking, the phone ___.”', ['was ringing', 'has rung', 'rang'], 2,
-    'The past simple “rang” presents the shorter completed event that interrupted the ongoing action.', ['The repeated continuous form would make both events background actions.', 'The present perfect does not combine naturally with this finished past-time frame.']],
+  ['B1', 'grammar', 'tense-aspect', 'Complete the sentence: “While I was cooking, the phone ___ once.”', ['was ringing', 'has rung', 'rang'], 2,
+    'The past simple “rang” presents the single completed event marked by “once” against the ongoing action.', ['The continuous form conflicts with the single bounded event marked by “once”.', 'The present perfect does not combine naturally with this finished past-time frame.']],
   ['B1', 'grammar', 'cohesion', 'Complete the sentence: “If the weather improves, we ___ the match outside.”', ['will play', 'would play', 'played'], 0,
     'A real future condition uses present simple in the if-clause and “will” in the result.', ['“Would” normally marks a hypothetical result.', 'The past form does not express the expected future result.']],
   ['B1', 'grammar', 'cohesion', 'Complete the sentence: “If I had more free time, I ___ another language.”', ['will learn', 'would learn', 'learned'], 1,
@@ -375,8 +376,8 @@ const upperSeedRows = [
     'The verb “enjoy” is followed by a gerund, here “trying”.', ['An infinitive marker cannot be followed by the past form.', 'The bare infinitive does not normally follow “enjoy”.']],
   ['B1', 'grammar', 'agreement', 'Complete the sentence: “You sent the form yesterday, ___?”', ['did you', 'didn’t you', 'haven’t you'], 1,
     'A positive past-simple statement takes the negative past tag “didn’t you?”.', ['The tag should reverse polarity and therefore be negative.', 'The present-perfect auxiliary does not match “sent”.']],
-  ['B1', 'grammar', 'form', 'The office lights are off and the door is locked. Sam ___ be here.', ['should', 'can', 'can’t'], 2,
-    'The evidence supports the strong negative deduction expressed by “can’t be”.', ['“Should be” expresses expectation, not the conclusion supported here.', 'Affirmative “can be” expresses possibility, not a strong deduction.']],
+  ['B1', 'grammar', 'form', 'Sam said he had left, and now the office lights are off and the door is locked. Sam ___ be here.', ['should', 'can', 'can’t'], 2,
+    'The combined evidence supports the strong negative deduction expressed by “can’t be”.', ['“Should be” expresses expectation that conflicts with the evidence.', 'Affirmative “can be” expresses possibility rather than the supported deduction.']],
   ['B1', 'grammar', 'cohesion', 'Choose the sentence that uses “despite” correctly.', ['Despite the heavy rain, the event continued.', 'Despite it rained heavily, the event continued.', 'Despite of the heavy rain, the event continued.'], 0,
     '“Despite” can be followed directly by the noun phrase “the heavy rain”.', ['A finite clause needs “although” or the form “despite the fact that”.', 'Standard English does not use “despite of”.']],
 
@@ -384,7 +385,7 @@ const upperSeedRows = [
     'The established collocation is “take responsibility”.', ['English does not normally say “make responsibility”.', 'English does not normally say “do responsibility”.']],
   ['B1', 'vocabulary', 'paraphrase', 'The meeting was “put off” until Friday. What happened?', ['It was made shorter.', 'It was moved outside.', 'It was postponed.'], 2,
     '“Put off” means postpone an event until a later time.', ['The phrase says nothing about duration.', 'The particle does not indicate a change of location.']],
-  ['B1', 'vocabulary', 'meaning', 'A “reliable” bus service is one that ___.', ['usually operates as expected', 'is always the cheapest', 'only runs at night'], 0,
+  ['B1', 'vocabulary', 'meaning', 'A “reliable” bus service is one that ___.', ['usually operates as expected', 'offers the lowest fares on most routes', 'operates mainly during the night'], 0,
     '“Reliable” describes something that can be trusted to work or happen as expected.', ['Price and reliability are different qualities.', 'The time of operation does not define reliability.']],
   ['B1', 'vocabulary', 'meaning', 'After several delays, the package “eventually” arrived. When did it arrive?', ['Immediately', 'In the end', 'By accident'], 1,
     '“Eventually” means after some time or difficulties, in the end.', ['The delays rule out immediate arrival.', 'The adverb concerns timing, not whether something was intentional.']],
@@ -419,8 +420,8 @@ const upperSeedRows = [
     '“Wish” plus the past perfect expresses regret about an earlier decision.', ['This form is incompatible with the past regret and the time expression.', 'The present perfect does not mark the counterfactual earlier action after “wish”.']],
   ['B2', 'grammar', 'sentence-structure', 'Complete the sentence: “The researcher ___ article we discussed will speak tonight.”', ['who', 'whose', 'which'], 1,
     '“Whose” expresses the possessive relationship between the researcher and the article.', ['“Who” cannot directly modify the noun “article”.', '“Which” would refer to a thing and does not express possession here.']],
-  ['B2', 'grammar', 'sentence-structure', 'Choose the correctly reported question: Ana asked, “Why did the plan fail?”', ['Ana asked why did the plan fail.', 'Ana asked why the plan did fail.', 'Ana asked why the plan had failed.'], 2,
-    'An indirect question uses statement word order, and the earlier event may shift to the past perfect.', ['Indirect questions do not retain auxiliary-before-subject order.', 'This keeps an unnecessary emphatic auxiliary and fails to backshift the earlier event.']],
+  ['B2', 'grammar', 'sentence-structure', 'Choose the correctly reported question: Ana asked, “Why has the plan failed?”', ['Ana asked why had the plan failed.', 'Ana asked why did the plan fail.', 'Ana asked why the plan had failed.'], 2,
+    'The reported question uses statement word order and backshifts the present perfect to the past perfect.', ['The auxiliary must follow the subject in an indirect question.', 'This option retains question-style support with “did” instead of the required backshift.']],
   ['B2', 'grammar', 'cohesion', 'Choose the sentence with the correct concessive phrase.', ['Despite having little time, we completed the review.', 'Despite we had little time, we completed the review.', 'Despite of having little time, we completed the review.'], 0,
     '“Despite” can introduce the gerund phrase “having little time”.', ['A finite clause after “despite” requires “the fact that”.', 'Standard usage does not add “of” after “despite”.']],
   ['B2', 'grammar', 'form', 'Complete the sentence: “It was ___ useful advice that I saved the message.”', ['so', 'such', 'such a'], 1,
@@ -443,13 +444,13 @@ const upperSeedRows = [
   ['B2', 'vocabulary', 'collocation', 'Complete the advice: “Please ___ in mind that the figures are provisional.”', ['bear', 'carry', 'hold up'], 0,
     '“Bear in mind” is the fixed expression meaning remember or consider.', ['“Carry in mind” is not the established collocation.', '“Hold up” has different meanings and does not fit this phrase.']],
   ['B2', 'vocabulary', 'register', 'Which sentence is most suitable in a formal evaluation?', ['The project was, frankly, a complete mess from beginning to end.', 'The project achieved some aims but lacked a clear implementation plan.', 'Honestly, the team did a pretty bad job on the whole project.'], 1,
-    'This version gives a precise, measured criticism in an appropriately formal register.', ['“Kind of a mess” is vague and conversational.', '“Honestly” and “pretty bad job” are personal and informal.']],
+    'This version gives a precise, measured criticism in an appropriately formal register.', ['“Frankly” and “a complete mess” are personal, vague and conversational.', '“Honestly” and “pretty bad job” are personal and informal.']],
   ['B2', 'vocabulary', 'word-formation', 'Complete the sentence: “The proposal raises questions about the long-term ___ of the service.”', ['sustain', 'sustainable', 'sustainability'], 2,
     'The noun “sustainability” is required after “the long-term”.', ['“Sustain” is a verb.', '“Sustainable” is an adjective and would need to modify a noun.']],
   ['B2', 'vocabulary', 'paraphrase', 'Our plan to share the office “fell through”. What happened?', ['It failed to happen.', 'It became cheaper.', 'It was completed early.'], 0,
     'If a plan falls through, it is not successfully completed or does not happen.', ['The expression says nothing about cost.', 'Early completion is the opposite of failure to happen.']],
-  ['B2', 'vocabulary', 'meaning', 'There is a “subtle” difference between the two proposals. The difference is ___.', ['difficult or impossible to explain', 'small and not immediately obvious', 'unacceptable under the relevant law'], 1,
-    '“Subtle” describes a fine distinction that may be difficult to notice at first.', ['A subtle difference can still be explained.', 'The word does not make a legal judgment.']],
+  ['B2', 'vocabulary', 'meaning', 'There is a “subtle” difference between the two proposals. The difference is ___.', ['large and immediately obvious to everyone', 'small and not immediately obvious', 'unacceptable under the relevant law'], 1,
+    '“Subtle” describes a fine distinction that may be difficult to notice at first.', ['A large, obvious difference is the opposite of a subtle one.', 'The word does not make a legal judgment.']],
   ['B2', 'vocabulary', 'paraphrase', 'Several reviewers “took issue with” the final recommendation. They ___.', ['forgot to read it', 'accepted it without question', 'disagreed with or objected to it'], 2,
     'To take issue with something is to disagree with or challenge it.', ['The expression implies an active response, not failure to read.', 'Acceptance without question is the opposite reaction.']],
   ['B2', 'vocabulary', 'meaning', 'A “viable” solution is one that is ___.', ['capable of working successfully', 'popular only in the past', 'difficult to describe'], 0,
@@ -467,15 +468,18 @@ const REVISED_ITEM_CONTENT_VERSIONS = new Map<string, string>([
   ['en-a1-vocabulary-07', 'draft-2'],
   ['en-a2-grammar-07', 'draft-2'],
   ['en-a2-grammar-08', 'draft-2'],
-  ['en-a2-vocabulary-07', 'draft-2'],
+  ['en-a2-vocabulary-07', 'draft-3'],
   ['en-a2-vocabulary-08', 'draft-2'],
   ['en-b1-vocabulary-07', 'draft-2'],
+  ['en-b1-vocabulary-03', 'draft-2'],
   ['en-b1-vocabulary-12', 'draft-2'],
+  ['en-b1-grammar-02', 'draft-2'],
+  ['en-b1-grammar-11', 'draft-2'],
   ['en-b2-grammar-04', 'draft-2'],
-  ['en-b2-grammar-08', 'draft-2'],
+  ['en-b2-grammar-08', 'draft-3'],
   ['en-b2-vocabulary-02', 'draft-2'],
   ['en-b2-vocabulary-07', 'draft-2'],
-  ['en-b2-vocabulary-10', 'draft-2'],
+  ['en-b2-vocabulary-10', 'draft-3'],
 ]);
 
 function itemId(seed: LanguageUseSeed, ordinal: number): string {
@@ -516,7 +520,9 @@ export const ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES: readonly DiagnosticBank
       kind: 'welearn-original',
       reference: contentVersion === 'draft-1'
         ? ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATE_VERSION
-        : ENGLISH_DIAGNOSTIC_LANGUAGE_USE_REVISED_VERSION,
+        : contentVersion === 'draft-2'
+          ? ENGLISH_DIAGNOSTIC_LANGUAGE_USE_REVISED_VERSION
+          : ENGLISH_DIAGNOSTIC_LANGUAGE_USE_SECOND_REVISED_VERSION,
     },
     levelRange: [seed.level, seed.level],
     warnings: ['PENDING_INDEPENDENT_LINGUISTIC_REVIEW', 'PENDING_PILOT_CALIBRATION'],

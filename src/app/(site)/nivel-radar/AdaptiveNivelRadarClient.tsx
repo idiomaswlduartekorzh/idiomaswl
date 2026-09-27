@@ -90,6 +90,7 @@ export default function AdaptiveNivelRadarClient() {
   const [writing, setWriting] = useState<WritingDelivery | null>(null);
   const [result, setResult] = useState<unknown>(null);
   const [message, setMessage] = useState('');
+  const [deletingData, setDeletingData] = useState(false);
   const [authRequired, setAuthRequired] = useState(false);
   const [itemIndex, setItemIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, DraftAnswer>>({});
@@ -173,6 +174,30 @@ export default function AdaptiveNivelRadarClient() {
       activateDelivery(body.delivery);
     } catch {
       setMessage('No pudimos conectar con el diagnóstico.'); setView('error');
+    }
+  }
+
+  async function deleteDiagnosticData() {
+    if (!window.confirm('¿Borrar definitivamente tus intentos, respuestas y resultados diagnósticos? Esta acción no se puede deshacer.')) return;
+    setDeletingData(true); setMessage('');
+    try {
+      const response = await fetch('/api/diagnostic/attempts', {
+        method: 'DELETE', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ confirmation: 'DELETE_DIAGNOSTIC_DATA' }),
+      });
+      const body = await response.json() as { ok?: boolean; error?: string };
+      if (!response.ok || !body.ok) {
+        setMessage(body.error ?? 'No pudimos borrar tus datos diagnósticos.');
+        return;
+      }
+      sessionStorage.removeItem(STORAGE_KEY);
+      setResult(null); setConsented(false); setAudioReady(false); setAudioSampleStarted(false);
+      setMessage('Tus intentos, respuestas y resultados diagnósticos fueron borrados.');
+      setView('intro');
+    } catch {
+      setMessage('No pudimos conectar con el servicio de borrado.');
+    } finally {
+      setDeletingData(false);
     }
   }
 
@@ -266,7 +291,7 @@ export default function AdaptiveNivelRadarClient() {
 
   if (view === 'loading') return <Status title="Guardando evidencia…" text="No cierres esta ventana." />;
   if (view === 'processing') return <Status title="Tu evidencia está completa" text="La escritura está pendiente de revisión. Publicaremos el perfil integral cuando la evaluación humana quede cerrada." />;
-  if (view === 'result') return <ResultProfile profile={result} onRestart={() => { setResult(null); setView('intro'); }} />;
+  if (view === 'result') return <ResultProfile profile={result} message={message} deletingData={deletingData} onDelete={() => void deleteDiagnosticData()} onRestart={() => { setResult(null); setMessage(''); setView('intro'); }} />;
   if (view === 'error') return <Status title="No pudimos continuar" text={message} action={<button className={s.secondary} onClick={() => { const id = sessionStorage.getItem(STORAGE_KEY); if (id) { setView('loading'); void resume(id); } else setView('intro'); }}>Reintentar</button>} />;
 
   if (view === 'writing' && writing) {
@@ -279,7 +304,7 @@ export default function AdaptiveNivelRadarClient() {
         <h2>{writing.prompt.situation}</h2>
         <ul className={s.instructions}>{writing.prompt.instructions.map(instruction => <li key={instruction}>{instruction}</li>)}</ul>
         <label className={s.writingLabel}>Tu respuesta
-          <textarea className={s.writingArea} value={writingText} onChange={event => setWritingText(event.target.value)} rows={12} spellCheck lang="en" />
+          <textarea className={s.writingArea} value={writingText} onChange={event => setWritingText(event.target.value)} rows={12} spellCheck={false} autoCorrect="off" autoCapitalize="off" lang="en" />
         </label>
         <div className={s.wordMeter}><span>{count} palabras</span><span>mín. {writing.prompt.minimumWords} · máx. {writing.prompt.maximumWords}</span></div>
         {message && <p className={s.inlineError}>{message}</p>}
@@ -364,20 +389,27 @@ export default function AdaptiveNivelRadarClient() {
         </audio>
       </div>
       <label><input type="checkbox" disabled={!audioSampleStarted} checked={audioReady} onChange={event => setAudioReady(event.target.checked)} /> Confirmo que escuché la muestra con claridad.</label>
-      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
+      <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento, revisar la escritura y calibrar el diagnóstico. El procesamiento externo de escritura requiere un consentimiento distinto y no queda autorizado aquí. Podrás borrar tus datos diagnósticos desde el resultado.</p>
+      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto el uso descrito de mis respuestas para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}
     {authRequired ? <Link className={s.primary} href={`/login?next=${encodeURIComponent('/nivel-radar')}`}>Iniciar sesión y continuar <span>→</span></Link>
       : <button className={s.primary} disabled={!audioReady || !consented} onClick={() => void start()}>Iniciar diagnóstico <span>→</span></button>}
-    <p className={s.note}>35–45 minutos · El resultado muestra incertidumbre · No es una certificación oficial</p>
+    <p className={s.note}>50–75 minutos · Una confirmación adaptativa puede ampliar la duración · No es una certificación oficial</p>
   </div></section>;
 }
 
 function Status({ title, text, action }: { title: string; text: string; action?: React.ReactNode }) {
-  return <section className={s.hero}><div className={s.shell}><p className={s.eyebrow}>Nivel Radar WeLearn</p><h1>{title}</h1><p className={s.lead}>{text}</p>{action}</div></section>;
+  return <section className={s.hero} aria-live="polite"><div className={s.shell}><p className={s.eyebrow}>Nivel Radar WeLearn</p><h1>{title}</h1><p className={s.lead}>{text}</p>{action}</div></section>;
 }
 
-function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: () => void }) {
+function ResultProfile({ profile, message, deletingData, onDelete, onRestart }: {
+  profile: unknown;
+  message: string;
+  deletingData: boolean;
+  onDelete: () => void;
+  onRestart: () => void;
+}) {
   const safe = profile && typeof profile === 'object' && !Array.isArray(profile) ? profile as Record<string, unknown> : {};
   const globalLevel = typeof safe.globalLevel === 'string' ? safe.globalLevel : null;
   const globalRange = Array.isArray(safe.globalRange) ? safe.globalRange.map(String) : [];
@@ -421,7 +453,9 @@ function ResultProfile({ profile, onRestart }: { profile: unknown; onRestart: ()
     <p className={s.note}>La confianza técnica resume cuánta precisión tiene esta estimación con la evidencia disponible; no es un porcentaje de dominio del idioma ni la probabilidad de que el nivel sea “correcto”.</p>
     {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
+    {message && <p className={s.inlineError} aria-live="polite">{message}</p>}
     <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
+    <button className={s.secondary} disabled={deletingData} onClick={onDelete}>{deletingData ? 'Borrando datos…' : 'Borrar mis datos diagnósticos'}</button>
   </div></section>;
 }
 
