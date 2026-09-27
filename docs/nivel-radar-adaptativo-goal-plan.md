@@ -278,7 +278,7 @@ Actualizado el 25 de septiembre de 2026:
 - **Fase 7 — reclutamiento reconciliado con la exposición real:** un plan ejecutable cruza los
   288 ítems, 200 respuestas por ítem, longitud MST, confirmación simulada, tres rutas y 75% de
   finalización. Demuestra que 300 iniciados es solo un gate de entrada. El piso global simulado
-  es 2.590 iniciados, pero el piso route-balanced más útil es **4.348 iniciados** —1.087
+  es 2.582 iniciados, pero el piso route-balanced más útil es **4.324 iniciados** —1.081
   completados por ruta— aun suponiendo exposición perfectamente uniforme. El reporte distingue
   además escritura, referencia A1–C2, fiabilidad, consistencia, retest, equidad y panelistas. Se
   regenera desde criterios, blueprint, capacidad y simulación; si cualquiera cambia, el prebuild

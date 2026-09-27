@@ -277,7 +277,7 @@ retención, umbrales del piloto o política de entrega. Escritura exige acuerdo 
 liderazgo académico y operaciones; retención exige privacidad; los criterios del piloto exigen
 liderazgo académico y medición. El snapshot de estos últimos liga criterios, blueprint, capacidad
 del banco, simulación, algoritmo y reporte de reclutamiento: no permite aprobar “300 intentos” sin
-revisar también el piso route-balanced de 4.348. Entrega exige liderazgo académico y producto. Aprobar la ruta
+revisar también el piso route-balanced de 4.324. Entrega exige liderazgo académico y producto. Aprobar la ruta
 humana requiere al menos dos referencias verificables de revisores y un SLA máximo de 72 horas.
 La ruta externa exige referencias separadas para consentimiento y revisión de proveedor. Un
 cambio de documento invalida automáticamente sus recibos.
@@ -423,9 +423,9 @@ npm run check:diagnostic-pilot-recruitment
 ```
 
 Con 288 ítems y 200 respuestas requeridas por ítem se necesitan 57.600 respuestas objetivas. El
-piso global bajo la longitud media simulada sería 1.942 intentos completados o 2.590 iniciados al
+piso global bajo la longitud media simulada sería 1.936 intentos completados o 2.582 iniciados al
 75% de finalización. Sin embargo, al respetar las tres rutas, el piso simulado y perfectamente
-balanceado asciende a **1.087 completados por ruta, 3.261 completados y 4.348 iniciados**. Incluso
+balanceado asciende a **1.081 completados por ruta, 3.243 completados y 4.324 iniciados**. Incluso
 ese número no es una garantía: desbalance de rutas, exposición adaptativa y attrition solo pueden
 aumentarlo. El artefacto versionado `docs/diagnostic-pilot-recruitment-plan.json` muestra también
 los límites absoluto, sin confirmación y de cada evidencia especializada; la publicación sigue
