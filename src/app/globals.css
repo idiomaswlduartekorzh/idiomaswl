@@ -6593,6 +6593,533 @@ button {
   .goethe-writing-task + .goethe-writing-task { margin-top: 3.5rem; }
 }
 
+/* Goethe A2 · web-native study mode
+   The `sheet` query mode intentionally keeps the candidate-sheet reference
+   above. The default `web` mode preserves the official task grammar while
+   presenting it as an IdiomasWL learning interface rather than an A4 preview. */
+.prac-shell--goethe-a2-web {
+  --goethe-web-navy: #14213d;
+  --goethe-web-blue: #234a8b;
+  --goethe-web-blue-soft: #eef4ff;
+  --goethe-web-red: #c92843;
+  --goethe-web-lime: #c2d33c;
+  --goethe-web-line: #dbe2ee;
+  --goethe-web-muted: #657087;
+  background:
+    radial-gradient(circle at 6% 2%, rgba(194, 211, 60, 0.12), transparent 24rem),
+    radial-gradient(circle at 94% 8%, rgba(35, 74, 139, 0.1), transparent 28rem),
+    #f4f7fb;
+}
+.prac-shell--goethe-a2-web .prac-topbar {
+  border-bottom: 3px solid var(--goethe-web-lime);
+  box-shadow: 0 9px 28px rgba(16, 30, 58, 0.18);
+}
+.prac-shell--goethe-a2-web .lang-section-tabs {
+  gap: 0.45rem;
+  padding-block: 0.75rem;
+  border-bottom-color: rgba(20, 33, 61, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.06);
+}
+.prac-shell--goethe-a2-web .lang-section-tab {
+  min-height: 2.55rem;
+  padding-inline: 1.15rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #4d5870;
+  font-weight: 750;
+}
+.prac-shell--goethe-a2-web .lang-section-tab:hover {
+  border-color: #ccd7e8;
+  background: #f3f6fb;
+}
+.prac-shell--goethe-a2-web .lang-section-tab--active {
+  border-color: var(--goethe-web-navy);
+  background: var(--goethe-web-navy);
+  box-shadow: 0 7px 18px rgba(20, 33, 61, 0.2);
+  color: #fff;
+}
+.prac-shell--goethe-a2-web .ielts-exam-body {
+  width: min(1240px, 100%);
+  padding: clamp(1rem, 2.5vw, 2rem) clamp(0.75rem, 2.7vw, 2rem) 5rem;
+}
+.prac-shell--goethe-a2-web .goethe-section-stack {
+  width: min(1180px, 100%);
+  gap: clamp(1rem, 2vw, 1.4rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+.prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-candidate-page--stimulus) {
+  grid-template-areas: "stimulus questions";
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  align-items: start;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page--stimulus {
+  grid-area: stimulus;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page--questions {
+  grid-area: questions;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page {
+  min-height: 0;
+  padding: clamp(1.1rem, 2.4vw, 1.75rem);
+  overflow: visible;
+  border: 1px solid rgba(122, 139, 168, 0.24);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 15px 38px rgba(36, 54, 88, 0.08);
+  color: #202b42;
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page--stimulus {
+  position: sticky;
+  top: 11.75rem;
+}
+.prac-shell--goethe-a2-web .goethe-page-footer {
+  display: none;
+}
+.prac-shell--goethe-a2-web .goethe-sheet-masthead {
+  width: 100%;
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--goethe-web-line);
+  color: var(--goethe-web-navy);
+  font-family: inherit;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+.prac-shell--goethe-a2-web .goethe-sheet-masthead__primary,
+.prac-shell--goethe-a2-web .goethe-sheet-masthead__secondary {
+  display: flex;
+  min-height: 0;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+.prac-shell--goethe-a2-web .goethe-sheet-masthead__primary {
+  color: var(--goethe-web-navy);
+  font-size: 0.73rem;
+}
+.prac-shell--goethe-a2-web .goethe-sheet-masthead__secondary {
+  margin-top: 0.28rem;
+  color: var(--goethe-web-muted);
+  font-size: 0.58rem;
+}
+.prac-shell--goethe-a2-web .goethe-sheet-masthead :is(strong, span) {
+  padding: 0;
+  text-align: left;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page--questions .goethe-sheet-masthead {
+  display: none;
+}
+.prac-shell--goethe-a2-web .goethe-page-part {
+  display: inline-flex;
+  margin: 0 0 1rem;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  background: var(--goethe-web-blue-soft);
+  color: var(--goethe-web-blue);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.prac-shell--goethe-a2-web .goethe-task-heading {
+  margin-bottom: 1.25rem;
+}
+.prac-shell--goethe-a2-web .goethe-task-heading h2 {
+  display: inline-flex;
+  margin: 0 0 0.85rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: var(--goethe-web-navy);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.prac-shell--goethe-a2-web .goethe-task-heading p {
+  color: #4f5b70;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.prac-shell--goethe-a2-web .goethe-task-heading .goethe-task-heading__example {
+  margin-top: 0.85rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #d9e4f4;
+  border-left: 4px solid var(--goethe-web-blue);
+  border-radius: 10px;
+  background: #f6f9fe;
+  color: #3e4b63;
+}
+.prac-shell--goethe-a2-web .goethe-document {
+  border-color: #d7dfeb;
+  border-radius: 16px;
+  background: #fbfcfe;
+  color: #253047;
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-document--article {
+  padding: clamp(1.15rem, 3vw, 2rem);
+  border: 0;
+  background: #f7f9fc;
+}
+.prac-shell--goethe-a2-web .goethe-document--article .goethe-document__title {
+  margin-bottom: 1.25rem;
+  color: var(--goethe-web-navy);
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  text-align: left;
+}
+.prac-shell--goethe-a2-web .goethe-document--article > p:not(.goethe-document__kicker) {
+  color: #3f4a5f;
+  font-size: 0.93rem;
+  line-height: 1.72;
+}
+.prac-shell--goethe-a2-web .goethe-document__kicker {
+  color: var(--goethe-web-red);
+  text-align: left;
+}
+.prac-shell--goethe-a2-web .goethe-document--directory {
+  padding: clamp(1.15rem, 3vw, 2rem);
+  box-shadow: none;
+}
+.prac-shell--goethe-a2-web .goethe-document--directory .goethe-document__title {
+  margin-bottom: 1.5rem;
+  color: var(--goethe-web-navy);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
+.prac-shell--goethe-a2-web .goethe-directory {
+  gap: 0;
+}
+.prac-shell--goethe-a2-web .goethe-directory__row {
+  grid-template-columns: minmax(120px, 0.78fr) 2.4fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #e2e8f1;
+}
+.prac-shell--goethe-a2-web .goethe-directory__row:last-child {
+  border-bottom: 0;
+}
+.prac-shell--goethe-a2-web .goethe-directory__row strong {
+  color: var(--goethe-web-blue);
+  font-family: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+.prac-shell--goethe-a2-web .goethe-directory__row p {
+  color: #4d596e;
+  font-family: inherit;
+  font-size: 0.82rem;
+  line-height: 1.52;
+}
+.prac-shell--goethe-a2-web .goethe-document--mail {
+  overflow: hidden;
+  box-shadow: none;
+}
+.prac-shell--goethe-a2-web .goethe-mail__chrome {
+  height: 2.45rem;
+  border-bottom-color: #d8e0ed;
+  background: #eef3fa;
+}
+.prac-shell--goethe-a2-web .goethe-mail__chrome span {
+  border: 0;
+}
+.prac-shell--goethe-a2-web .goethe-mail__chrome span:nth-child(1) { background: #e85d68; }
+.prac-shell--goethe-a2-web .goethe-mail__chrome span:nth-child(2) { background: #eeb64e; }
+.prac-shell--goethe-a2-web .goethe-mail__chrome span:nth-child(3) { background: #67b878; }
+.prac-shell--goethe-a2-web .goethe-mail__meta {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #dfe6f0;
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-mail__meta :is(span, b) {
+  min-height: 2.2rem;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid #e8edf4;
+}
+.prac-shell--goethe-a2-web .goethe-mail__meta span {
+  background: #f6f8fb;
+}
+.prac-shell--goethe-a2-web .goethe-mail__body {
+  margin: 0;
+  padding: clamp(1.15rem, 3vw, 1.8rem);
+  border: 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+.prac-shell--goethe-a2-web .goethe-ad-grid {
+  gap: 0.8rem;
+}
+.prac-shell--goethe-a2-web .goethe-ad {
+  min-height: 0;
+  padding: 1rem 1rem 1rem 3.1rem;
+  border-color: #d6dfec;
+  border-radius: 14px;
+  background: #fbfcfe;
+  font-family: inherit;
+  box-shadow: 0 5px 14px rgba(32, 51, 84, 0.04);
+}
+.prac-shell--goethe-a2-web .goethe-ad__letter {
+  border: 0;
+  border-radius: 8px;
+  background: var(--goethe-web-navy);
+  color: #fff;
+}
+.prac-shell--goethe-a2-web .goethe-ad h3 {
+  color: var(--goethe-web-navy);
+  font-size: 0.82rem;
+}
+.prac-shell--goethe-a2-web .goethe-ad p {
+  color: #566176;
+  font-size: 0.78rem;
+  line-height: 1.52;
+}
+.prac-shell--goethe-a2-web .goethe-question-list {
+  gap: 0.75rem;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-q {
+  padding: 1rem 1rem 1rem 3.15rem;
+  border: 1px solid #e0e6ef;
+  border-radius: 14px;
+  background: #fff;
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .goethe-question-number {
+  top: 1rem;
+  left: 0.85rem;
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--goethe-web-blue-soft);
+  color: var(--goethe-web-blue);
+  font-size: 0.72rem;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-q__text {
+  color: #2f3b51;
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-q__options {
+  gap: 0.42rem;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-opt {
+  min-height: 2.5rem;
+  padding: 0.55rem 0.65rem;
+  border-color: #e0e6ef;
+  border-radius: 10px;
+  color: #3c475b;
+  font-family: inherit;
+  font-size: 0.82rem;
+  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-opt:hover,
+.prac-shell--goethe-a2-web .goethe-question-list .lang-opt:focus-visible {
+  border-color: #9db3d5;
+  background: #f5f8fd;
+  transform: translateY(-1px);
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-opt--selected {
+  border-color: var(--goethe-web-blue);
+  background: var(--goethe-web-blue-soft);
+  color: var(--goethe-web-navy);
+}
+.prac-shell--goethe-a2-web .goethe-question-list .lang-opt__letter {
+  border-color: #9eabc0;
+  border-radius: 5px;
+  color: var(--goethe-web-navy);
+}
+.prac-shell--goethe-a2-web .goethe-matching-rows {
+  gap: 0.6rem;
+}
+.prac-shell--goethe-a2-web .goethe-matching-row {
+  grid-template-columns: 2rem minmax(0, 1fr) 3rem;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border: 1px solid #e0e6ef;
+  border-radius: 12px;
+  background: #fff;
+  color: #3c475b;
+  font-family: inherit;
+  font-size: 0.82rem;
+}
+.prac-shell--goethe-a2-web .goethe-matching-row strong {
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--goethe-web-blue-soft);
+  color: var(--goethe-web-blue);
+}
+.prac-shell--goethe-a2-web .goethe-matching-row select {
+  width: 3rem;
+  height: 2.35rem;
+  border-color: #a8b6ca;
+  border-radius: 8px;
+  background: #f8faff;
+  color: var(--goethe-web-navy);
+}
+.prac-shell--goethe-a2-web .goethe-writing-booklet {
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  align-items: start;
+}
+.prac-shell--goethe-a2-web .goethe-candidate-page--writing,
+.prac-shell--goethe-a2-web .goethe-candidate-page--answers {
+  min-height: 0;
+}
+.prac-shell--goethe-a2-web .goethe-writing-task + .goethe-writing-task {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--goethe-web-line);
+}
+.prac-shell--goethe-a2-web .goethe-writing-task > p,
+.prac-shell--goethe-a2-web .goethe-writing-points {
+  color: #455168;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.68;
+}
+.prac-shell--goethe-a2-web .goethe-answer-field {
+  margin-bottom: 1.5rem;
+}
+.prac-shell--goethe-a2-web .goethe-answer-field > span {
+  color: var(--goethe-web-navy);
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-answer-field textarea,
+.prac-shell--goethe-a2-web .goethe-practice-controls .lang-speak__notes-area {
+  padding: 0.9rem 1rem;
+  border-color: #c9d4e5;
+  border-radius: 12px;
+  background: #fbfcff;
+  background-image: none;
+  color: #26334a;
+  font-family: inherit;
+  line-height: 1.65;
+}
+.prac-shell--goethe-a2-web .goethe-answer-field textarea:focus,
+.prac-shell--goethe-a2-web .goethe-practice-controls .lang-speak__notes-area:focus {
+  outline: 0;
+  border-color: var(--goethe-web-blue);
+  box-shadow: 0 0 0 4px rgba(35, 74, 139, 0.1);
+}
+.prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-practice-controls) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+.prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-practice-controls) .goethe-candidate-page:first-child:nth-last-child(2) {
+  grid-column: 1 / -1;
+}
+.prac-shell--goethe-a2-web .goethe-practice-controls {
+  grid-column: 1 / -1;
+  padding: clamp(1.1rem, 2.5vw, 1.6rem);
+  border: 1px solid #cfd9e8;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8fbff, #f2f6fc);
+  box-shadow: 0 12px 28px rgba(35, 53, 87, 0.07);
+}
+.prac-shell--goethe-a2-web .goethe-practice-controls__eyebrow {
+  color: var(--goethe-web-red);
+}
+.prac-shell--goethe-a2-web .goethe-speaking-randomizer {
+  border-color: #d4ddeb;
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(32, 51, 84, 0.04);
+}
+.prac-shell--goethe-a2-web .goethe-speaking-randomizer button {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 10px;
+  background: var(--goethe-web-navy);
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .goethe-speaking-card,
+.prac-shell--goethe-a2-web .goethe-speaking-topic,
+.prac-shell--goethe-a2-web .goethe-speaking-schedules figure {
+  overflow: hidden;
+  border-color: #d3ddea;
+  border-radius: 15px;
+  box-shadow: 0 7px 18px rgba(35, 53, 87, 0.06);
+}
+.prac-shell--goethe-a2-web .goethe-speaking-card header,
+.prac-shell--goethe-a2-web .goethe-speaking-topic header,
+.prac-shell--goethe-a2-web .goethe-speaking-schedules figcaption {
+  background: var(--goethe-web-navy);
+  color: #fff;
+  font-family: inherit;
+}
+.prac-shell--goethe-a2-web .ielts-exam-footer {
+  width: min(1180px, 100%);
+}
+
+@media (max-width: 900px) {
+  .prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-candidate-page--stimulus),
+  .prac-shell--goethe-a2-web .goethe-writing-booklet,
+  .prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-practice-controls) {
+    grid-template-columns: 1fr;
+  }
+  .prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-candidate-page--stimulus) {
+    grid-template-areas: "stimulus" "questions";
+  }
+  .prac-shell--goethe-a2-web .goethe-candidate-page--stimulus {
+    position: relative;
+    top: auto;
+  }
+  .prac-shell--goethe-a2-web .goethe-section-stack:has(.goethe-practice-controls) .goethe-candidate-page,
+  .prac-shell--goethe-a2-web .goethe-practice-controls {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .prac-shell--goethe-a2-web .ielts-exam-body {
+    padding-inline: 0.7rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-candidate-page {
+    padding: 1rem;
+    border-radius: 17px;
+    box-shadow: 0 10px 24px rgba(36, 54, 88, 0.07);
+  }
+  .prac-shell--goethe-a2-web .goethe-candidate-page .goethe-sheet-masthead {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-directory__row {
+    grid-template-columns: 1fr;
+    gap: 0.28rem;
+    padding: 0.78rem 0;
+  }
+  .prac-shell--goethe-a2-web .goethe-ad-grid,
+  .prac-shell--goethe-a2-web .goethe-speaking-cards,
+  .prac-shell--goethe-a2-web .goethe-speaking-schedules {
+    grid-template-columns: 1fr;
+  }
+  .prac-shell--goethe-a2-web .goethe-question-list .lang-q {
+    padding: 0.9rem 0.85rem 0.95rem 2.85rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-question-list .goethe-question-number {
+    left: 0.65rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-matching-row {
+    grid-template-columns: 1.7rem minmax(0, 1fr) 2.6rem;
+    gap: 0.55rem;
+    padding: 0.75rem 0.65rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-matching-row select {
+    width: 2.6rem;
+  }
+  .prac-shell--goethe-a2-web .goethe-speaking-randomizer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 640px) {
   .lang-section-tabs {
     flex-wrap: nowrap;

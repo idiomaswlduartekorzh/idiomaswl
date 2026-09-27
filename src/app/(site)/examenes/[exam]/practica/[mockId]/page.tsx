@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   };
 }
 
-export default async function PracticePage({ params, searchParams }: { params: Promise<{ exam: string; mockId: string }>; searchParams: Promise<{ mode?: string; skill?: string; teil?: string }> }) {
+export default async function PracticePage({ params, searchParams }: { params: Promise<{ exam: string; mockId: string }>; searchParams: Promise<{ mode?: string; skill?: string; teil?: string; layout?: string }> }) {
   const { exam: slug, mockId } = await params;
   const query = await searchParams;
   const exam = EXAMS[slug];
@@ -80,11 +80,13 @@ export default async function PracticePage({ params, searchParams }: { params: P
     return <GoetheA1PracticeClient key={`${mock.id}:${skill ?? 'exam'}:${practicePart ?? 'all'}`} exam={exam} mock={mock} practiceSkill={skill} practicePart={practicePart} />;
   }
   if (slug === 'goethe' && a2Skill) {
+    const a2Layout = query.layout === 'sheet' ? 'sheet' : 'web';
     return <LanguagePracticeClient
-      key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}`}
+      key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}:${a2Layout}`}
       exam={exam}
       mock={mock}
       focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
+      goetheA2LayoutMode={a2Layout}
     />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;

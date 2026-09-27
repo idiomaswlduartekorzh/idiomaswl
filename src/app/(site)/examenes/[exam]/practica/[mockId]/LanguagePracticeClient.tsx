@@ -83,6 +83,8 @@ type FocusedPractice = {
   part?: number;
 };
 
+type GoetheA2LayoutMode = 'web' | 'sheet';
+
 function getSkillSections(mock: MockExam, skill: string) {
   return mock.sections.filter(s => (s.skill ?? 'general') === skill);
 }
@@ -1438,7 +1440,17 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
 type Phase = 'intro' | 'exam' | 'lead' | 'results';
 
-export default function LanguagePracticeClient({ exam, mock, focusedPractice }: { exam: Exam; mock: MockExam; focusedPractice?: FocusedPractice }) {
+export default function LanguagePracticeClient({
+  exam,
+  mock,
+  focusedPractice,
+  goetheA2LayoutMode = 'web',
+}: {
+  exam: Exam;
+  mock: MockExam;
+  focusedPractice?: FocusedPractice;
+  goetheA2LayoutMode?: GoetheA2LayoutMode;
+}) {
   const skills = orderedSkills(mock);
   const [phase, setPhase] = useState<Phase>('intro');
   const [activeSkill, setActiveSkill] = useState(skills[0] ?? 'reading');
@@ -1453,6 +1465,12 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
   const [attemptNumber, setAttemptNumber] = useState(1);
   const stableInstanceId = useId().replace(/[^A-Za-z0-9_-]/g, '');
   const attemptRef = `language:${mock.id}:${stableInstanceId}:${attemptNumber}`;
+
+  useEffect(() => {
+    if (phase === 'exam' && focusedPractice?.level === 'A2') {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }, [phase, focusedPractice?.level]);
 
   const handleMCQ = useCallback((id: string, i: number) => {
     setMcqAnswers(prev => ({ ...prev, [id]: i }));
@@ -1659,7 +1677,11 @@ export default function LanguagePracticeClient({ exam, mock, focusedPractice }: 
   const goetheA2Layout = exam.slug === 'goethe' && /^a2-(?:[1-9]|10)$/.test(mock.id);
 
   return (
-    <div className={`prac-shell prac-shell--exam${goetheA2Layout ? ' prac-shell--goethe-a2' : ''}`} style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <div
+      className={`prac-shell prac-shell--exam${goetheA2Layout ? ` prac-shell--goethe-a2 prac-shell--goethe-a2-${goetheA2LayoutMode}` : ''}`}
+      data-goethe-layout={goetheA2Layout ? goetheA2LayoutMode : undefined}
+      style={{ '--exam-color': exam.color } as React.CSSProperties}
+    >
       <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
         <div className="prac-topbar__left">
           <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="prac-topbar__back">{focusedPractice ? 'Práctica A2' : exam.name}</Link>
