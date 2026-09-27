@@ -90,6 +90,33 @@ test('scores locator server-side and atomically prepares a balanced precision st
   assert.equal(serialized.includes('parameters'), false);
 });
 
+test('locator omission withholds listening precision without lowering the other skill routes', async () => {
+  const { selected, stage } = locatorFixture();
+  let persisted;
+  const result = await continueEnglishDiagnosticLocator({
+    authenticatedUserId: 'user-1',
+    attempt: { id: 'attempt-accessible', userId: 'user-1', version: 1, status: 'locator', routeId: null, expiresAt: '2026-09-24T15:00:00.000Z' },
+    stage,
+    stageRecords: selected.records,
+    submissions: selected.records.map(item => ({
+      itemId: item.publicItem.id,
+      contentVersion: '1',
+      response: { kind: 'single-choice', optionId: item.publicItem.skill === 'listening' ? null : 'b' },
+      responseMs: 1000,
+      audioPlayCount: item.publicItem.skill === 'listening' ? 0 : null,
+    })),
+  }, {
+    bank, selectionSecret: 's'.repeat(32), now: () => new Date('2026-09-24T13:00:00.000Z'),
+    newId: () => 'stage-precision-accessible', persist: async input => { persisted = input; return { replayed: false, version: 2 }; },
+  });
+  assert.equal(result.routeDecision.routeId, 'high-c1-c2');
+  assert.equal(result.routeDecision.skillRoutes.listening, null);
+  assert.equal(result.routeDecision.requiresConfirmation, true);
+  assert.equal(result.delivery.items.length, 12);
+  assert.equal(result.delivery.items.some(item => item.skill === 'listening'), false);
+  assert.deepEqual(persisted.nextSelectionReceipt.skillRoutes, result.routeDecision.skillRoutes);
+});
+
 test('rejects foreign, expired and tampered locator submissions before persistence', async () => {
   const { selected, stage } = locatorFixture();
   let persisted = false;
@@ -273,4 +300,57 @@ test('adds a bounded confirmation stage for insufficient evidence, then proceeds
   assert.equal(confirmationPersistence.nextStatus, 'writing');
   assert.equal(confirmationPersistence.nextStageIndex, 3);
   assert.equal(writingResult.objectiveEvidence.find(skill => skill.skill === 'listening').decisions, 9);
+});
+
+test('confirmation recovers accidental listening omission but honors an explicit accommodation', async () => {
+  const locator = selectEnglishLocator(bank, 'omitted-listening-locator');
+  const skillRoutes = {
+    reading: 'high-c1-c2', listening: null, grammar: 'high-c1-c2', vocabulary: 'high-c1-c2',
+  };
+  const precision = selectEnglishPrecisionStage(
+    bank,
+    'high-c1-c2',
+    'omitted-listening-precision',
+    new Set(locator.records.map(record => record.publicItem.id)),
+    skillRoutes,
+  );
+  const stage = {
+    stageId: 'stage-precision-omitted-listening', kind: 'precision', routeId: 'high-c1-c2',
+    itemIds: precision.records.map(record => record.publicItem.id),
+    contentVersions: Object.fromEntries(precision.records.map(record => [record.publicItem.id, '1'])),
+    issuedAt: '2026-09-24T12:30:00.000Z',
+  };
+  const priorObservations = locator.records.map(record => ({
+    itemId: record.publicItem.id,
+    outcome: record.publicItem.skill === 'listening' ? 'omitted' : 'correct',
+  }));
+  const submissions = precision.records.map(item => ({
+    itemId: item.publicItem.id, contentVersion: '1', response: { kind: 'single-choice', optionId: 'b' },
+    responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
+  }));
+
+  async function run(listeningAccommodation) {
+    return continueEnglishDiagnosticPrecision({
+      authenticatedUserId: 'user-1',
+      attempt: { id: `attempt-${listeningAccommodation}`, userId: 'user-1', version: 2, status: 'precision', routeId: 'high-c1-c2', expiresAt: '2026-09-24T15:00:00.000Z' },
+      stage, stageRecords: precision.records, priorObservations, skillRoutes,
+      locatorRequestedConfirmation: true, listeningAccommodation, submissions,
+    }, {
+      bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+      now: () => new Date('2026-09-24T13:00:00.000Z'),
+      newId: () => `stage-confirm-${listeningAccommodation}`,
+      persist: async input => ({ replayed: false, version: 3, nextStage: input.nextStage }),
+    });
+  }
+
+  const accidental = await run(false);
+  assert.equal(accidental.delivery.stage.kind, 'confirmation');
+  assert.equal(accidental.delivery.items.length, 8);
+  assert.equal(accidental.delivery.items.filter(item => item.skill === 'listening').length, 2);
+
+  const accommodated = await run(true);
+  assert.equal(accommodated.delivery.stage.kind, 'confirmation');
+  assert.equal(accommodated.delivery.items.length, 6);
+  assert.equal(accommodated.delivery.items.some(item => item.skill === 'listening'), false);
+  assert.equal(accommodated.delivery.listeningAccommodation, true);
 });

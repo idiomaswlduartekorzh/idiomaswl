@@ -37,6 +37,9 @@ test('audio readiness uses a real non-scored sample and explicit listener confir
   assert.match(client, /Confirmo que escuché la muestra con claridad/);
   assert.match(client, /setAudioSampleStarted\(true\)/);
   assert.doesNotMatch(client, /createOscillator|AudioContext/);
+  assert.match(client, /No puedo realizar la parte de escucha y necesito la vía accesible/);
+  assert.match(client, /Escucha quedará sin estimar/);
+  assert.match(client, /listeningAccommodation/);
 });
 
 test('runner standardizes writing assistance, explains consent scope and exposes data deletion', () => {

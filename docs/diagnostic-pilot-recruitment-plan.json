@@ -2,7 +2,7 @@
   "planVersion": "diagnostic-pilot-recruitment-plan-v1",
   "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
   "blueprintVersion": "welearn-english-placement-v1",
-  "simulationVersion": "diagnostic-mst-simulation-v2",
+  "simulationVersion": "diagnostic-mst-simulation-v3",
   "status": "planning-floor-not-publication-decision",
   "assumptions": {
     "objectiveItems": 288,

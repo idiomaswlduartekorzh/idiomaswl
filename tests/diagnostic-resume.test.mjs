@@ -80,6 +80,24 @@ test('rehydrates the exact objective stage without private scoring fields', () =
   assert.equal(serialized.includes('scoring'), false);
 });
 
+test('rehydrates the listening accommodation from the private stage receipt', () => {
+  const resume = buildEnglishDiagnosticResumeDelivery({
+    ...base,
+    snapshot: {
+      attempt,
+      stage: {
+        stageId: 'stage-1', kind: 'precision', routeId: 'mid-b1-b2', itemIds: [item.publicItem.id],
+        contentVersions: { [item.publicItem.id]: item.publicItem.contentVersion }, issuedAt: '2026-09-24T12:00:00.000Z',
+      },
+      stageStatus: 'issued', selectionReceipt: { listeningAccommodation: true },
+      bankVersion: 'objective-v1', blueprintVersion: 'blueprint-v1', engineVersion: 'engine-v1',
+      writingStatus: null, resultProfile: null,
+    },
+  });
+  assert.equal(resume.kind, 'objective-stage');
+  assert.equal(resume.delivery.listeningAccommodation, true);
+});
+
 test('rehydrates writing only from the pinned prompt-bank version', () => {
   const snapshot = {
     attempt: { ...attempt, version: 3, status: 'writing' },

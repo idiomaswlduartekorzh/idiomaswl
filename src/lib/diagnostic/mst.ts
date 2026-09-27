@@ -1,6 +1,7 @@
 import {
   type DiagnosticObjectiveSkill,
   type DiagnosticRouteId,
+  type DiagnosticSkillRouteMap,
 } from './types.ts';
 
 export const LOCATOR_OBJECTIVE_SKILLS = [
@@ -23,13 +24,16 @@ export type LocatorRouteReason =
   | 'MID_TOTAL_EVIDENCE'
   | 'HIGH_TOTAL_EVIDENCE'
   | 'UNEVEN_PROFILE'
+  | 'SKILL_EVIDENCE_OMITTED'
   | 'BOUNDARY_SCORE';
 
 export interface LocatorRouteDecision {
   routeId: DiagnosticRouteId;
   totalCorrect: number;
+  effectiveCorrect: number;
   totalDecisions: number;
   totalOmitted: number;
+  skillRoutes: DiagnosticSkillRouteMap;
   requiresConfirmation: boolean;
   reasons: readonly LocatorRouteReason[];
 }
@@ -88,16 +92,35 @@ export function routeEnglishLocator(
   const totalCorrect = scores.reduce((sum, score) => sum + score.correct, 0);
   const totalDecisions = scores.reduce((sum, score) => sum + score.decisions, 0);
   const totalOmitted = scores.reduce((sum, score) => sum + score.omitted, 0);
+  const totalAttempted = totalDecisions - totalOmitted;
+  const effectiveCorrect = totalAttempted
+    ? Math.round((totalCorrect / totalAttempted) * totalDecisions)
+    : 0;
+  const skillRoutes = Object.fromEntries(LOCATOR_OBJECTIVE_SKILLS.map((skill, index) => {
+    const score = scores[index];
+    const attempted = score.decisions - score.omitted;
+    if (attempted === 0) return [skill, null];
+    const accuracy = score.correct / attempted;
+    const routeId: DiagnosticRouteId = accuracy <= 1 / 3
+      ? 'low-a1-a2'
+      : accuracy >= 0.8 && attempted >= 2
+        ? 'high-c1-c2'
+        : 'mid-b1-b2';
+    return [skill, routeId];
+  })) as DiagnosticSkillRouteMap;
   const correctCounts = scores.map(score => score.correct);
   const spread = Math.max(...correctCounts) - Math.min(...correctCounts);
   const unevenProfile = spread >= policy.confirmationSpread;
   const highEvidence =
-    totalCorrect >= policy.highMinimumCorrect &&
-    correctCounts.every(correct => correct >= policy.highMinimumCorrectPerSkill);
+    effectiveCorrect >= policy.highMinimumCorrect &&
+    scores.every(score => {
+      const attempted = score.decisions - score.omitted;
+      return attempted === 0 || score.correct >= Math.min(policy.highMinimumCorrectPerSkill, attempted);
+    });
 
   let routeId: DiagnosticRouteId;
   const reasons: LocatorRouteReason[] = [];
-  if (totalCorrect <= policy.lowMaximumCorrect) {
+  if (effectiveCorrect <= policy.lowMaximumCorrect) {
     routeId = 'low-a1-a2';
     reasons.push('LOW_TOTAL_EVIDENCE');
   } else if (highEvidence) {
@@ -109,17 +132,20 @@ export function routeEnglishLocator(
   }
 
   const boundaryScore =
-    Math.abs(totalCorrect - policy.lowMaximumCorrect) <= policy.boundaryDistance ||
-    Math.abs(totalCorrect - policy.highMinimumCorrect) <= policy.boundaryDistance;
+    Math.abs(effectiveCorrect - policy.lowMaximumCorrect) <= policy.boundaryDistance ||
+    Math.abs(effectiveCorrect - policy.highMinimumCorrect) <= policy.boundaryDistance;
   if (unevenProfile) reasons.push('UNEVEN_PROFILE');
+  if (totalOmitted > 0) reasons.push('SKILL_EVIDENCE_OMITTED');
   if (boundaryScore) reasons.push('BOUNDARY_SCORE');
 
   return {
     routeId,
     totalCorrect,
+    effectiveCorrect,
     totalDecisions,
     totalOmitted,
-    requiresConfirmation: unevenProfile || boundaryScore,
+    skillRoutes,
+    requiresConfirmation: unevenProfile || boundaryScore || totalOmitted > 0,
     reasons,
   };
 }

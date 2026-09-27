@@ -16,13 +16,18 @@ export interface SimulatedLocatorCohort {
 }
 
 export interface DiagnosticMstSimulationReport {
-  simulationVersion: 'diagnostic-mst-simulation-v2';
+  simulationVersion: 'diagnostic-mst-simulation-v3';
   seed: number;
   sampleSizePerLevel: number;
   cohorts: readonly SimulatedLocatorCohort[];
   scorecardProxies: {
     oneCorrectPerSkill: DiagnosticRouteId;
-    advancedWithoutAudio: DiagnosticRouteId;
+    advancedWithoutAudio: {
+      routeId: DiagnosticRouteId;
+      listeningRoute: null;
+      requiresConfirmation: true;
+      globalResultEligible: false;
+    };
   };
 }
 
@@ -80,11 +85,17 @@ export function simulateDiagnosticMst(seed = 20260924, sampleSizePerLevel = 1000
     decisions: 3,
     omitted: skill === 'listening' ? 3 : 0,
   }])) as LocatorScorecard;
+  const noAudioDecision = routeEnglishLocator(noAudio);
   return {
-    simulationVersion: 'diagnostic-mst-simulation-v2', seed, sampleSizePerLevel, cohorts,
+    simulationVersion: 'diagnostic-mst-simulation-v3', seed, sampleSizePerLevel, cohorts,
     scorecardProxies: {
       oneCorrectPerSkill: routeEnglishLocator(balancedGuess).routeId,
-      advancedWithoutAudio: routeEnglishLocator(noAudio).routeId,
+      advancedWithoutAudio: {
+        routeId: noAudioDecision.routeId,
+        listeningRoute: null,
+        requiresConfirmation: true,
+        globalResultEligible: false,
+      },
     },
   };
 }

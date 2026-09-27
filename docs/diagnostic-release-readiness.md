@@ -359,10 +359,22 @@ una revisión humana independiente y no se registra como recibo editorial ni de 
 de las correcciones de banco, la implementación usa la mediana inferior para cuatro criterios de
 escritura, retiene el nivel global cuando las habilidades difieren dos o más niveles, corrige el
 azar de simulación a 1/3, desactiva ayudas ortográficas variables y hace visible el borrado de
-datos. Permanecen bloqueantes la vía equivalente para personas que no pueden rendir escucha, el
-control servidor de reproducciones, el balance de subdominios/formas y toda inferencia de
-fiabilidad, cortes o DIF que requiera muestra real.
-En entrega, `mst-engine-v2` deriva el orden de opciones de la etapa y del ID de cada opción:
+datos. La remediación posterior añade una vía equivalente para quien no puede rendir escucha:
+no exige la prueba de audio, marca las decisiones de escucha como omitidas, retiene esa habilidad
+y el nivel global, y conserva rutas independientes para lectura, gramática y vocabulario. Una
+omisión total no solicitada sí recibe una etapa breve de recuperación; una adaptación explícita
+nunca vuelve a forzar audio. Permanecen bloqueantes el balance de subdominios/formas y toda
+inferencia de fiabilidad, cortes o DIF que requiera muestra real.
+
+`maxPlays` significa **inicios de reproducción contados por la interfaz**, no un control forense
+servidor. El servidor rechaza valores reportados fuera del contrato; el endpoint privado exige
+usuario, intento activo, pertenencia del ítem y rate limit, y el piloto agrega anomalías de
+reproducción. Sin embargo, las solicitudes HTTP con rangos de un elemento `<audio>` no equivalen
+de forma fiable a una reproducción humana y el navegador puede manipular su contador. Por eso no
+se usa este dato para subir nivel, rescatar evidencia ni hacer una afirmación de seguridad. Un
+límite duro exigiría sesiones de reproducción emitidas y consumidas por servidor y debe validarse
+antes de presentarlo como garantía operativa.
+En entrega, `mst-engine-v3` deriva el orden de opciones de la etapa y del ID de cada opción:
 recargas e idempotencia conservan la forma exacta, pero otra etapa rota posiciones sin alterar
 la clave privada ni el scoring. Una discrepancia entre IDs visibles y el contrato falla antes de
 enviar el ítem.

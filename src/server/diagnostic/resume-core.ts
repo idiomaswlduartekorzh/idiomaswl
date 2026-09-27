@@ -95,6 +95,10 @@ export function buildEnglishDiagnosticResumeDelivery(input: {
       attemptId: attempt.id, attemptVersion: attempt.version, expiresAt: attempt.expiresAt,
       stage,
       items: (resolved as DiagnosticBankRecord[]).map(record => toDiagnosticPublicItem(record, stage.stageId)),
+      listeningAccommodation: Boolean(input.snapshot.selectionReceipt
+        && typeof input.snapshot.selectionReceipt === 'object'
+        && !Array.isArray(input.snapshot.selectionReceipt)
+        && (input.snapshot.selectionReceipt as Record<string, unknown>).listeningAccommodation === true),
     },
   };
 }

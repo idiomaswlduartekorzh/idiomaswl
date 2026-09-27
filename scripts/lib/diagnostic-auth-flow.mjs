@@ -264,6 +264,7 @@ export async function verifyDiagnosticAuthenticatedFlow({
       body: {
         language: 'en',
         audioCheckPassed: true,
+        listeningAccommodation: false,
         consentVersion: DIAGNOSTIC_AUTH_FLOW_CONSENT_VERSION,
       },
     });

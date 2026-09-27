@@ -40,6 +40,7 @@ const objectiveDelivery = {
       ],
     },
   ],
+  listeningAccommodation: false,
 } as const;
 
 const writingDelivery = {
@@ -88,6 +89,13 @@ async function beginDiagnostic(page: Page) {
   await page.getByLabel('Confirmo que escuché la muestra con claridad.').check();
   await page.getByLabel(/Acepto que mis respuestas/).check();
   await start.click();
+}
+
+async function beginAccessibleDiagnostic(page: Page) {
+  await page.goto(DIAGNOSTIC_ROUTE);
+  await page.getByLabel('No puedo realizar la parte de escucha y necesito la vía accesible.').check();
+  await page.getByLabel(/Acepto que mis respuestas/).check();
+  await page.getByRole('button', { name: /Iniciar diagnóstico/ }).click();
 }
 
 test.beforeEach(async ({ page }) => {
@@ -148,6 +156,40 @@ test('desktop recorre evidencia objetiva, audio, omisión y escritura con teclad
   expect(objective.responses[1]).toMatchObject({ itemId: 'listening-1', audioPlayCount: 1, response: { optionId: null } });
   expect(submissions[1]).toMatchObject({ attemptVersion: 2, responseText: 'I study English nightly and practise listening.' });
   expect(erroresPropios(consoleErrors), consoleErrors.join('\n')).toEqual([]);
+});
+
+test('la vía accesible inicia sin audio y envía escucha como evidencia faltante', async ({ page }) => {
+  const submissions: unknown[] = [];
+  const accessibleDelivery = { ...objectiveDelivery, listeningAccommodation: true } as const;
+  await page.route('**/api/diagnostic/attempts', async route => {
+    if (route.request().method() !== 'POST') return route.fallback();
+    expect(route.request().postDataJSON()).toMatchObject({
+      audioCheckPassed: false,
+      listeningAccommodation: true,
+    });
+    await fulfillJson(route, 200, { ok: true, delivery: accessibleDelivery });
+  });
+  await page.route('**/api/diagnostic/attempts/*/stages/*', async route => {
+    submissions.push(route.request().postDataJSON());
+    await fulfillJson(route, 200, { ok: true, delivery: writingDelivery });
+  });
+
+  await beginAccessibleDiagnostic(page);
+  await page.getByRole('button', { name: /Tuesday/ }).click();
+  await page.getByRole('button', { name: /Siguiente/ }).click();
+  await expect(page.getByText('Escucha omitida por accesibilidad')).toBeVisible();
+  await expect(page.locator('audio')).toHaveCount(0);
+  await page.getByRole('button', { name: /Siguiente/ }).click();
+  await page.getByRole('button', { name: /has left already/ }).click();
+  await page.getByRole('button', { name: /left yesterday/ }).click();
+  await page.getByRole('button', { name: /Enviar etapa/ }).click();
+
+  const objective = submissions[0] as { responses: Array<Record<string, unknown>> };
+  expect(objective.responses[1]).toMatchObject({
+    itemId: 'listening-1',
+    audioPlayCount: 0,
+    response: { optionId: null },
+  });
 });
 
 test('recarga restaura pregunta y selección; un fallo conserva evidencia para reintentar', async ({ page }) => {

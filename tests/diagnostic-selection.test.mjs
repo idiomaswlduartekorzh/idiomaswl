@@ -81,6 +81,23 @@ test('selects 16 precision decisions without reusing locator items', () => {
   }
 });
 
+test('precision follows each skill route and skips a skill with no locator evidence', () => {
+  const bank = completeBank();
+  const routes = {
+    reading: 'high-c1-c2', listening: null, grammar: 'low-a1-a2', vocabulary: 'mid-b1-b2',
+  };
+  const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'mixed-routes', new Set(), routes);
+  assert.equal(precision.records.length, 12);
+  assert.deepEqual(precision.receipt.allocation, { reading: 4, listening: 0, grammar: 4, vocabulary: 4 });
+  assert.deepEqual(precision.receipt.skillRoutes, routes);
+  assert.deepEqual(new Set(precision.records.filter(record => record.publicItem.skill === 'reading')
+    .map(record => record.publicItem.levelCandidate)), new Set(['C1', 'C2']));
+  assert.deepEqual(new Set(precision.records.filter(record => record.publicItem.skill === 'grammar')
+    .map(record => record.publicItem.levelCandidate)), new Set(['A1', 'A2']));
+  assert.deepEqual(new Set(precision.records.filter(record => record.publicItem.skill === 'vocabulary')
+    .map(record => record.publicItem.levelCandidate)), new Set(['B1', 'B2']));
+});
+
 test('selects an eight-decision confirmation without reusing items or stimuli', () => {
   const bank = capacityBank();
   const locator = selectEnglishLocator(bank, 'attempt-confirm');

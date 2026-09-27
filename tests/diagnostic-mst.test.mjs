@@ -37,6 +37,19 @@ test('flags boundary and uneven profiles for confirmation', () => {
   assert.ok(uneven.reasons.includes('UNEVEN_PROFILE'));
 });
 
+test('a fully omitted listening locator does not lower the other skill routes or fabricate listening evidence', () => {
+  const noAudio = scorecard([3, 0, 3, 3]);
+  noAudio.listening = { correct: 0, decisions: 3, omitted: 3 };
+  const decision = routeEnglishLocator(noAudio);
+  assert.equal(decision.routeId, 'high-c1-c2');
+  assert.equal(decision.effectiveCorrect, 12);
+  assert.deepEqual(decision.skillRoutes, {
+    reading: 'high-c1-c2', listening: null, grammar: 'high-c1-c2', vocabulary: 'high-c1-c2',
+  });
+  assert.equal(decision.requiresConfirmation, true);
+  assert.ok(decision.reasons.includes('SKILL_EVIDENCE_OMITTED'));
+});
+
 test('every possible complete locator scorecard receives exactly one valid route', () => {
   const routes = new Set();
   for (let reading = 0; reading <= 3; reading += 1) {

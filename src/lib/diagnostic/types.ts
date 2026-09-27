@@ -57,6 +57,7 @@ export type DiagnosticSubmittedResponse =
   | { kind: 'short-text'; value: string };
 
 export type DiagnosticRouteId = 'low-a1-a2' | 'mid-b1-b2' | 'high-c1-c2';
+export type DiagnosticSkillRouteMap = Readonly<Record<DiagnosticObjectiveSkill, DiagnosticRouteId | null>>;
 export type DiagnosticStageKind = 'locator' | 'precision' | 'confirmation' | 'writing';
 
 export interface DiagnosticStageReceipt {

@@ -35,10 +35,14 @@ function parseStartRequest(value: unknown): DiagnosticStartRequest | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
   const candidate = value as Partial<DiagnosticStartRequest>;
   if (candidate.language !== 'en'
-    || candidate.audioCheckPassed !== true
+    || typeof candidate.audioCheckPassed !== 'boolean'
+    || typeof candidate.listeningAccommodation !== 'boolean'
+    || candidate.audioCheckPassed === candidate.listeningAccommodation
     || candidate.consentVersion !== DIAGNOSTIC_CONSENT_VERSION) return null;
   return {
-    language: 'en', audioCheckPassed: true, consentVersion: DIAGNOSTIC_CONSENT_VERSION,
+    language: 'en', audioCheckPassed: candidate.audioCheckPassed,
+    listeningAccommodation: candidate.listeningAccommodation,
+    consentVersion: DIAGNOSTIC_CONSENT_VERSION,
   };
 }
 
@@ -83,7 +87,8 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
   } catch {
     return jsonError('INVALID_JSON', 'La solicitud no contiene JSON válido.', 400);
   }
-  if (!parseStartRequest(body)) return jsonError('INVALID_REQUEST', 'Completa el control de audio y acepta el consentimiento vigente.', 400);
+  const startRequest = parseStartRequest(body);
+  if (!startRequest) return jsonError('INVALID_REQUEST', 'Completa el control de audio o solicita la vía sin escucha, y acepta el consentimiento vigente.', 400);
 
   const supabase = await createClient();
   const { data: { user }, error: authError } = await supabase.auth.getUser();
@@ -139,6 +144,7 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
       maximumConcurrentActiveAttempts: deliveryRules.maximumConcurrentActiveAttempts,
       exposureLookbackDays: deliveryRules.exposureLookbackDays,
       resultValidityDays: deliveryRules.resultValidityDays,
+      listeningAccommodation: startRequest.listeningAccommodation,
       excludedObjectiveItemIds: new Set(priorExposure.objectiveItemIds),
       selectionSecret: process.env.DIAGNOSTIC_SELECTION_SECRET ?? '',
       now: () => startedAt,

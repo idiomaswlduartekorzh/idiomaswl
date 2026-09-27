@@ -226,10 +226,14 @@ Actualizado el 25 de septiembre de 2026:
   eleva el auditor a v2, usa mediana inferior en escritura, retiene el nivel global en perfiles
   muy desiguales, desactiva ayudas ortográficas variables y expone borrado de datos. Este panel
   es una prerevisión técnica: no cuenta como los 48 recibos humanos independientes, no aprueba
-  contenido y no levanta ningún gate de salida. Siguen abiertos el acceso equivalente para quien
-  no pueda rendir escucha, la aplicación confiable de límites de reproducción, el balance por
-  subdominio/forma y la validación psicométrica con participantes reales.
-- **Rotación reproducible de opciones:** `mst-engine-v2` ordena las opciones mediante una huella
+  contenido y no levanta ningún gate de salida. La remediación posterior incorpora una vía
+  accesible sin audio: escucha queda sin estimar, el nivel global se retiene y lectura, gramática
+  y vocabulario siguen rutas independientes. Las omisiones accidentales reciben una recuperación
+  acotada, mientras una adaptación explícita nunca vuelve a forzar escucha. `maxPlays` queda
+  definido honestamente como contador de inicios de reproducción de interfaz, validado al enviar
+  y usado como telemetría, no como enforcement forense del servidor. Siguen abiertos el balance
+  por subdominio/forma y la validación psicométrica con participantes reales.
+- **Rotación reproducible de opciones:** `mst-engine-v3` ordena las opciones mediante una huella
   de etapa, ítem e ID de opción. La clave sigue siendo un ID privado e inmutable, no una letra o
   posición. Una recarga o reintento idempotente reproduce exactamente el mismo orden, mientras
   etapas distintas no conservan una posición universal que pueda compartirse o memorizarse. El

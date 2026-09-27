@@ -1,5 +1,5 @@
 {
-  "simulationVersion": "diagnostic-mst-simulation-v2",
+  "simulationVersion": "diagnostic-mst-simulation-v3",
   "seed": 20260924,
   "sampleSizePerLevel": 1000,
   "cohorts": [
@@ -72,6 +72,11 @@
   ],
   "scorecardProxies": {
     "oneCorrectPerSkill": "low-a1-a2",
-    "advancedWithoutAudio": "mid-b1-b2"
+    "advancedWithoutAudio": {
+      "routeId": "high-c1-c2",
+      "listeningRoute": null,
+      "requiresConfirmation": true,
+      "globalResultEligible": false
+    }
   }
 }

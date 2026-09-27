@@ -61,7 +61,7 @@ export function validateDiagnosticResponseForRecord(input: {
   if (input.record.publicItem.stimulus.kind === 'audio') {
     if (input.audioPlayCount === null || input.audioPlayCount < 0
       || input.audioPlayCount > input.record.publicItem.stimulus.maxPlays) {
-      throw new Error(`${input.record.publicItem.id}: audio play count is outside the served limit`);
+      throw new Error(`${input.record.publicItem.id}: reported audio play count is outside the item limit`);
     }
   } else if (input.audioPlayCount !== null && input.audioPlayCount !== 0) {
     throw new Error(`${input.record.publicItem.id}: non-audio response reported audio playback`);

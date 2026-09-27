@@ -7,7 +7,7 @@ import type {
 import type { DiagnosticWritingPrompt } from './writing.ts';
 
 export const DIAGNOSTIC_CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
-export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v2';
+export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v3';
 
 export interface DiagnosticStageDelivery {
   attemptId: string;
@@ -15,6 +15,7 @@ export interface DiagnosticStageDelivery {
   expiresAt: string;
   stage: DiagnosticStageReceipt;
   items: readonly DiagnosticPublicItem[];
+  listeningAccommodation: boolean;
 }
 
 /** Writing delivery is a separate shape so objective answer contracts cannot be confused with free production. */
@@ -35,7 +36,8 @@ export type DiagnosticResumeDelivery =
 
 export type DiagnosticStartRequest = {
   language: 'en';
-  audioCheckPassed: true;
+  audioCheckPassed: boolean;
+  listeningAccommodation: boolean;
   consentVersion: typeof DIAGNOSTIC_CONSENT_VERSION;
 };
 

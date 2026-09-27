@@ -55,7 +55,7 @@ test('submission handler binds current versions and never trusts client scoring'
 });
 
 
-test('start handler verifies feature flag, origin, JSON, consent, audio and authenticated user', () => {
+test('start handler verifies feature flag, origin, JSON, consent, audio or accommodation, and authenticated user', () => {
   assert.match(handler, /DIAGNOSTIC_ADAPTIVE_ENABLED !== 'true'/);
   assert.match(handler, /DIAGNOSTIC_ACCESS_MODE/);
   assert.match(handler, /hasDiagnosticPilotEnrollment/);
@@ -64,7 +64,7 @@ test('start handler verifies feature flag, origin, JSON, consent, audio and auth
   assert.match(handler, /ROLLOUT_NOT_ELIGIBLE/);
   assert.match(handler, /requestHasSameOrigin\(request\)/);
   assert.match(handler, /startsWith\('application\/json'\)/);
-  assert.match(handler, /audioCheckPassed !== true/);
+  assert.match(handler, /candidate\.audioCheckPassed === candidate\.listeningAccommodation/);
   assert.match(handler, /DIAGNOSTIC_CONSENT_VERSION/);
   assert.match(handler, /auth\.getUser\(\)/);
   assert.match(handler, /consumeExamReviewRateLimit/);

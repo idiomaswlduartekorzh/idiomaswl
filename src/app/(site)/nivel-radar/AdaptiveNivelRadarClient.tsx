@@ -53,7 +53,7 @@ type PublicItem = {
 };
 
 type Stage = { stageId: string; kind: 'locator' | 'precision' | 'confirmation' | 'writing'; itemIds: readonly string[] };
-type ObjectiveDelivery = { attemptId: string; attemptVersion: number; expiresAt: string; stage: Stage; items: readonly PublicItem[] };
+type ObjectiveDelivery = { attemptId: string; attemptVersion: number; expiresAt: string; stage: Stage; items: readonly PublicItem[]; listeningAccommodation: boolean };
 type WritingPrompt = {
   id: string; contentVersion: string; title: string; situation: string; instructions: readonly string[];
   minimumWords: number; maximumWords: number; recommendedMinutes: number;
@@ -85,6 +85,7 @@ export default function AdaptiveNivelRadarClient() {
   const [view, setView] = useState<View>('intro');
   const [audioReady, setAudioReady] = useState(false);
   const [audioSampleStarted, setAudioSampleStarted] = useState(false);
+  const [listeningAccommodation, setListeningAccommodation] = useState(false);
   const [consented, setConsented] = useState(false);
   const [objective, setObjective] = useState<ObjectiveDelivery | null>(null);
   const [writing, setWriting] = useState<WritingDelivery | null>(null);
@@ -104,7 +105,12 @@ export default function AdaptiveNivelRadarClient() {
     setAuthRequired(false);
     if ('items' in delivery) {
       const draft = readObjectiveDraft(sessionStorage, delivery);
-      setObjective(delivery); setWriting(null); setAnswers(draft?.answers ?? {}); setItemIndex(draft?.itemIndex ?? 0); openedAt.current = Date.now(); setView('objective');
+      const accommodatedAnswers = delivery.listeningAccommodation
+        ? Object.fromEntries(delivery.items.filter(item => item.skill === 'listening').map(item => [item.id, {
+          response: responseFor(item), responseMs: null, audioPlayCount: 0,
+        }]))
+        : {};
+      setObjective(delivery); setWriting(null); setAnswers({ ...(draft?.answers ?? {}), ...accommodatedAnswers }); setItemIndex(draft?.itemIndex ?? 0); openedAt.current = Date.now(); setView('objective');
     } else {
       const draft = readWritingDraft(sessionStorage, delivery);
       setWriting(delivery); setObjective(null); setWritingText(draft ?? ''); setView('writing');
@@ -161,12 +167,15 @@ export default function AdaptiveNivelRadarClient() {
   }, [view, writing, writingText]);
 
   async function start() {
-    if (!audioReady || !consented) return;
+    if ((!audioReady && !listeningAccommodation) || !consented) return;
     setView('loading'); setMessage(''); setAuthRequired(false);
     try {
       const response = await fetch('/api/diagnostic/attempts', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ language: 'en', audioCheckPassed: true, consentVersion: CONSENT_VERSION }),
+        body: JSON.stringify({
+          language: 'en', audioCheckPassed: audioReady,
+          listeningAccommodation, consentVersion: CONSENT_VERSION,
+        }),
       });
       const body = await response.json() as { ok?: boolean; delivery?: ObjectiveDelivery; error?: string; code?: string };
       if (response.status === 401) { setAuthRequired(true); setMessage('Inicia sesión para guardar y reanudar tu diagnóstico.'); setView('intro'); return; }
@@ -191,7 +200,7 @@ export default function AdaptiveNivelRadarClient() {
         return;
       }
       sessionStorage.removeItem(STORAGE_KEY);
-      setResult(null); setConsented(false); setAudioReady(false); setAudioSampleStarted(false);
+      setResult(null); setConsented(false); setAudioReady(false); setAudioSampleStarted(false); setListeningAccommodation(false);
       setMessage('Tus intentos, respuestas y resultados diagnósticos fueron borrados.');
       setView('intro');
     } catch {
@@ -324,7 +333,10 @@ export default function AdaptiveNivelRadarClient() {
       <div className={s.levelRow}><span>Etapa</span><b>{objective.stage.kind}</b><span>{SKILL_LABELS[currentItem.skill] ?? currentItem.skill}</span></div>
       <article className={s.question}>
         {currentItem.stimulus.kind === 'text' && <div className={s.stimulus}>{currentItem.stimulus.title && <strong>{currentItem.stimulus.title}</strong>}<p>{currentItem.stimulus.body}</p></div>}
-        {audioStimulus && <div className={s.audioCard}>
+        {audioStimulus && objective.listeningAccommodation && <div className={s.audioCard}>
+          <div><strong>Escucha omitida por accesibilidad</strong><small>Esta pregunta queda como evidencia faltante y no reduce las demás habilidades.</small></div>
+        </div>}
+        {audioStimulus && !objective.listeningAccommodation && <div className={s.audioCard}>
           <div><strong>Escucha el fragmento</strong><small>{plays} de {audioStimulus.maxPlays} reproducciones iniciadas</small></div>
           <audio
             className={s.audioPlayer} controls controlsList="nodownload noplaybackrate" preload="metadata"
@@ -379,7 +391,7 @@ export default function AdaptiveNivelRadarClient() {
         <strong>Muestra de sonido no puntuada</strong>
         <p style={{ margin: '.35rem 0 .65rem', color: '#9facbf', fontSize: '.82rem' }}>Audio público reciclado sólo para verificar tu dispositivo; no aporta respuestas ni nivel.</p>
         <audio aria-label="Muestra de sonido no puntuada" controls controlsList="nodownload" preload="metadata" onPlay={() => {
-          setAudioSampleStarted(true); setAudioReady(false); setMessage('');
+          setAudioSampleStarted(true); setAudioReady(false); setListeningAccommodation(false); setMessage('');
         }} onError={() => {
           setAudioSampleStarted(false); setAudioReady(false);
           setMessage('No pudimos reproducir la muestra. Revisa la conexión, el volumen y los permisos del navegador.');
@@ -389,12 +401,17 @@ export default function AdaptiveNivelRadarClient() {
         </audio>
       </div>
       <label><input type="checkbox" disabled={!audioSampleStarted} checked={audioReady} onChange={event => setAudioReady(event.target.checked)} /> Confirmo que escuché la muestra con claridad.</label>
+      <label><input type="checkbox" checked={listeningAccommodation} onChange={event => {
+        setListeningAccommodation(event.target.checked);
+        if (event.target.checked) setAudioReady(false);
+      }} /> No puedo realizar la parte de escucha y necesito la vía accesible.</label>
+      {listeningAccommodation && <p className={s.note}>Escucha quedará sin estimar, no se reproducirá audio y no se publicará un nivel global. Lectura, escritura, gramática y vocabulario conservarán rutas independientes.</p>}
       <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento, revisar la escritura y calibrar el diagnóstico. El procesamiento externo de escritura requiere un consentimiento distinto y no queda autorizado aquí. Podrás borrar tus datos diagnósticos desde el resultado.</p>
       <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen según lo descrito para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}
     {authRequired ? <Link className={s.primary} href={`/login?next=${encodeURIComponent('/nivel-radar')}`}>Iniciar sesión y continuar <span>→</span></Link>
-      : <button className={s.primary} disabled={!audioReady || !consented} onClick={() => void start()}>Iniciar diagnóstico <span>→</span></button>}
+      : <button className={s.primary} disabled={(!audioReady && !listeningAccommodation) || !consented} onClick={() => void start()}>Iniciar diagnóstico <span>→</span></button>}
     <p className={s.note}>50–75 minutos · Una confirmación adaptativa puede ampliar la duración · No es una certificación oficial</p>
   </div></section>;
 }

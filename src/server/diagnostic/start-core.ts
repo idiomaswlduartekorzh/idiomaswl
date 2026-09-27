@@ -57,6 +57,7 @@ export interface PrepareDiagnosticAttemptDependencies {
   maximumConcurrentActiveAttempts: number;
   exposureLookbackDays: number;
   resultValidityDays: number;
+  listeningAccommodation?: boolean;
   excludedObjectiveItemIds: ReadonlySet<string>;
   selectionSecret: string;
   now: () => Date;
@@ -150,7 +151,7 @@ export async function prepareEnglishDiagnosticAttempt(
     selectionSeedHash: createHash('sha256').update(seed).digest('hex'),
     expiresAt,
     stage,
-    selectionReceipt: selected.receipt,
+    selectionReceipt: { ...selected.receipt, listeningAccommodation: dependencies.listeningAccommodation === true },
   });
   return {
     attemptId,
@@ -158,5 +159,6 @@ export async function prepareEnglishDiagnosticAttempt(
     expiresAt,
     stage,
     items: selected.records.map(record => toDiagnosticPublicItem(record, stage.stageId)),
+    listeningAccommodation: dependencies.listeningAccommodation === true,
   };
 }

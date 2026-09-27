@@ -62,6 +62,7 @@ test('creates and persists a two-hour locator without exposing private bank fiel
   assert.equal(delivery.items.every(item => item.response.optionIds.join('|')
     === item.displayOptions.map(option => option.id).join('|')), true);
   assert.equal(delivery.attemptVersion, 1);
+  assert.equal(delivery.listeningAccommodation, false);
   assert.equal(delivery.expiresAt, '2026-09-24T14:00:00.000Z');
   assert.equal(persisted.engineVersion, DIAGNOSTIC_ENGINE_VERSION);
   assert.equal(persisted.consentVersion, DIAGNOSTIC_CONSENT_VERSION);
@@ -74,6 +75,21 @@ test('creates and persists a two-hour locator without exposing private bank fiel
   assert.equal(serialized.includes('private rationale'), false);
   assert.equal(serialized.includes('scoring'), false);
   assert.equal(serialized.includes('parameters'), false);
+});
+
+test('binds a listening accommodation to the private locator receipt and public delivery', async () => {
+  let persisted;
+  let id = 0;
+  const delivery = await prepareEnglishDiagnosticAttempt('user-1', {
+    bank: completeBank, writingBank: completeWritingBank, bankVersion: 'bank-v1',
+    consentVersion: DIAGNOSTIC_CONSENT_VERSION, selectionSecret: 'x'.repeat(32), ...deliveryPolicy,
+    listeningAccommodation: true,
+    now: () => new Date('2026-09-24T12:00:00.000Z'),
+    newId: () => `00000000-0000-4000-8000-${String(++id).padStart(12, '0')}`,
+    persist: async input => { persisted = input; },
+  });
+  assert.equal(delivery.listeningAccommodation, true);
+  assert.equal(persisted.selectionReceipt.listeningAccommodation, true);
 });
 
 test('excludes recently exposed items and fails closed when one locator cell is exhausted', async () => {

@@ -6,6 +6,7 @@ import type {
   CefrLevel,
   DiagnosticObjectiveSkill,
   DiagnosticRouteId,
+  DiagnosticSkillRouteMap,
 } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticBankRecord } from './types.ts';
 
@@ -13,6 +14,7 @@ export interface DiagnosticSelectionReceipt {
   stage: 'locator' | 'precision' | 'confirmation';
   seedFingerprint: string;
   routeId: DiagnosticRouteId | null;
+  skillRoutes: DiagnosticSkillRouteMap | null;
   itemIds: readonly string[];
   allocation: Readonly<Record<DiagnosticObjectiveSkill, number>>;
 }
@@ -119,6 +121,7 @@ export function selectEnglishLocator(
     records,
     receipt: {
       stage: 'locator', seedFingerprint: seedFingerprint(seed), routeId: null,
+      skillRoutes: null,
       itemIds: records.map(record => record.publicItem.id), allocation: allocationFor(records),
     },
   };
@@ -129,6 +132,9 @@ export function selectEnglishPrecisionStage(
   routeId: DiagnosticRouteId,
   seed: string,
   usedItemIds: ReadonlySet<string>,
+  skillRoutes: DiagnosticSkillRouteMap = Object.fromEntries(
+    LOCATOR_OBJECTIVE_SKILLS.map(skill => [skill, routeId]),
+  ) as DiagnosticSkillRouteMap,
 ): DiagnosticStageSelection {
   if (!seed) throw new Error('selection seed is required');
   const route = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === routeId);
@@ -144,7 +150,11 @@ export function selectEnglishPrecisionStage(
     .map(stimulusIdentity));
   const records: DiagnosticBankRecord[] = [];
   for (const skill of LOCATOR_OBJECTIVE_SKILLS) {
-    for (const level of route.levels) {
+    const skillRouteId = skillRoutes[skill];
+    if (skillRouteId === null) continue;
+    const skillRoute = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === skillRouteId);
+    if (!skillRoute) throw new Error(`unknown diagnostic route for ${skill}: ${skillRouteId}`);
+    for (const level of skillRoute.levels) {
       const selected = requireBucket(bank, 'en', skill, level, perLevel, seed, selectedIds, selectedStimuli);
       selected.forEach(record => {
         selectedIds.add(record.publicItem.id);
@@ -157,6 +167,7 @@ export function selectEnglishPrecisionStage(
     records,
     receipt: {
       stage: 'precision', seedFingerprint: seedFingerprint(seed), routeId,
+      skillRoutes,
       itemIds: records.map(record => record.publicItem.id), allocation: allocationFor(records),
     },
   };
@@ -167,6 +178,9 @@ export function selectEnglishConfirmationStage(
   routeId: DiagnosticRouteId,
   seed: string,
   usedItemIds: ReadonlySet<string>,
+  skillRoutes: DiagnosticSkillRouteMap = Object.fromEntries(
+    LOCATOR_OBJECTIVE_SKILLS.map(skill => [skill, routeId]),
+  ) as DiagnosticSkillRouteMap,
 ): DiagnosticStageSelection {
   if (!seed) throw new Error('selection seed is required');
   const route = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === routeId);
@@ -177,7 +191,11 @@ export function selectEnglishConfirmationStage(
     .map(stimulusIdentity));
   const records: DiagnosticBankRecord[] = [];
   for (const skill of LOCATOR_OBJECTIVE_SKILLS) {
-    for (const level of route.levels) {
+    const skillRouteId = skillRoutes[skill];
+    if (skillRouteId === null) continue;
+    const skillRoute = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === skillRouteId);
+    if (!skillRoute) throw new Error(`unknown diagnostic route for ${skill}: ${skillRouteId}`);
+    for (const level of skillRoute.levels) {
       const selected = requireBucket(bank, 'en', skill, level, 1, seed, selectedIds, selectedStimuli);
       selected.forEach(record => {
         selectedIds.add(record.publicItem.id);
@@ -190,6 +208,7 @@ export function selectEnglishConfirmationStage(
     records,
     receipt: {
       stage: 'confirmation', seedFingerprint: seedFingerprint(seed), routeId,
+      skillRoutes,
       itemIds: records.map(record => record.publicItem.id), allocation: allocationFor(records),
     },
   };

@@ -28,10 +28,12 @@ test('the dominant route never moves downward as latent level increases', () => 
   }
 });
 
-test('declared scorecard proxies cannot reach the advanced route', () => {
+test('scorecard proxies distinguish guessing from an inaccessible listening skill', () => {
   const report = simulateDiagnosticMst();
   assert.equal(report.scorecardProxies.oneCorrectPerSkill, 'low-a1-a2');
-  assert.notEqual(report.scorecardProxies.advancedWithoutAudio, 'high-c1-c2');
+  assert.deepEqual(report.scorecardProxies.advancedWithoutAudio, {
+    routeId: 'high-c1-c2', listeningRoute: null, requiresConfirmation: true, globalResultEligible: false,
+  });
   assert.equal('adversarial' in report, false);
 });
 

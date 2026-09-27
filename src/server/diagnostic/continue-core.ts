@@ -11,6 +11,7 @@ import {
   type CefrLevel,
   type DiagnosticObjectiveSkill,
   type DiagnosticRouteId,
+  type DiagnosticSkillRouteMap,
   type DiagnosticStageReceipt,
 } from '../../lib/diagnostic/types.ts';
 import {
@@ -72,16 +73,23 @@ export interface ContinueLocatorDependencies {
   }>;
 }
 
-function precisionSeed(secret: string, attemptId: string, routeId: string): string {
-  return createHmac('sha256', secret).update(`${attemptId}\u0000precision\u0000${routeId}`).digest('hex');
+function canonicalSkillRoutes(skillRoutes: DiagnosticSkillRouteMap): string {
+  return ['reading', 'listening', 'grammar', 'vocabulary']
+    .map(skill => `${skill}:${skillRoutes[skill as DiagnosticObjectiveSkill] ?? 'withheld'}`).join('|');
+}
+
+function precisionSeed(secret: string, attemptId: string, skillRoutes: DiagnosticSkillRouteMap): string {
+  return createHmac('sha256', secret)
+    .update(`${attemptId}\u0000precision\u0000${canonicalSkillRoutes(skillRoutes)}`).digest('hex');
 }
 
 function writingSeed(secret: string, attemptId: string, level: CefrLevel): string {
   return createHmac('sha256', secret).update(`${attemptId}\u0000writing\u0000${level}`).digest('hex');
 }
 
-function confirmationSeed(secret: string, attemptId: string, routeId: DiagnosticRouteId): string {
-  return createHmac('sha256', secret).update(`${attemptId}\u0000confirmation\u0000${routeId}`).digest('hex');
+function confirmationSeed(secret: string, attemptId: string, skillRoutes: DiagnosticSkillRouteMap): string {
+  return createHmac('sha256', secret)
+    .update(`${attemptId}\u0000confirmation\u0000${canonicalSkillRoutes(skillRoutes)}`).digest('hex');
 }
 
 function selectWritingLevel(
@@ -108,6 +116,7 @@ export async function continueEnglishDiagnosticLocator(input: {
   stage: DiagnosticStageReceipt;
   stageRecords: readonly DiagnosticBankRecord[];
   submissions: readonly DiagnosticItemSubmission[];
+  listeningAccommodation?: boolean;
 }, dependencies: ContinueLocatorDependencies): Promise<{
   delivery: DiagnosticStageDelivery;
   routeDecision: ReturnType<typeof locatorDecisionFromResponses>;
@@ -126,12 +135,13 @@ export async function continueEnglishDiagnosticLocator(input: {
 
   const scoredResponses = scoreDiagnosticStage(input.stage, input.stageRecords, input.submissions);
   const routeDecision = locatorDecisionFromResponses(input.stageRecords, scoredResponses);
-  const seed = precisionSeed(dependencies.selectionSecret, input.attempt.id, routeDecision.routeId);
+  const seed = precisionSeed(dependencies.selectionSecret, input.attempt.id, routeDecision.skillRoutes);
   const precision = selectEnglishPrecisionStage(
     dependencies.bank,
     routeDecision.routeId,
     seed,
     new Set([...(dependencies.excludedObjectiveItemIds ?? []), ...input.stage.itemIds]),
+    routeDecision.skillRoutes,
   );
   const nextStage: DiagnosticStageReceipt = {
     stageId: dependencies.newId(),
@@ -153,6 +163,7 @@ export async function continueEnglishDiagnosticLocator(input: {
     nextSelectionReceipt: {
       ...precision.receipt,
       locator: routeDecision,
+      listeningAccommodation: input.listeningAccommodation === true,
       seedHash: createHash('sha256').update(seed).digest('hex'),
     },
   });
@@ -172,6 +183,7 @@ export async function continueEnglishDiagnosticLocator(input: {
       expiresAt: input.attempt.expiresAt,
       stage: deliveredStage,
       items: precision.records.map(record => toDiagnosticPublicItem(record, deliveredStage.stageId)),
+      listeningAccommodation: input.listeningAccommodation === true,
     },
     routeDecision,
   };
@@ -282,6 +294,8 @@ export async function continueEnglishDiagnosticPrecision(input: {
   stageRecords: readonly DiagnosticBankRecord[];
   priorObservations: readonly DiagnosticObjectiveObservation[];
   locatorRequestedConfirmation?: boolean;
+  skillRoutes?: DiagnosticSkillRouteMap;
+  listeningAccommodation?: boolean;
   submissions: readonly DiagnosticItemSubmission[];
 }, dependencies: ContinuePrecisionDependencies): Promise<{
   delivery: DiagnosticStageDelivery | DiagnosticWritingStageDelivery;
@@ -313,7 +327,22 @@ export async function continueEnglishDiagnosticPrecision(input: {
     input.locatorRequestedConfirmation ?? false,
   );
   if (confirmationDecision.required) {
-    const seed = confirmationSeed(dependencies.selectionSecret, input.attempt.id, input.attempt.routeId);
+    const skillRoutes = input.skillRoutes ?? Object.fromEntries(
+      ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => [skill, input.attempt.routeId]),
+    ) as DiagnosticSkillRouteMap;
+    // A wholly omitted skill gets one bounded recovery module unless listening
+    // was explicitly withheld through the accessibility path. This prevents an
+    // accidental locator omission from becoming permanently unmeasurable while
+    // preserving the candidate's explicit accommodation choice.
+    const confirmationSkillRoutes = Object.fromEntries(
+      (['reading', 'listening', 'grammar', 'vocabulary'] as const).map(skill => [
+        skill,
+        skill === 'listening' && input.listeningAccommodation === true
+          ? skillRoutes[skill]
+          : skillRoutes[skill] ?? input.attempt.routeId,
+      ]),
+    ) as DiagnosticSkillRouteMap;
+    const seed = confirmationSeed(dependencies.selectionSecret, input.attempt.id, confirmationSkillRoutes);
     const confirmation = selectEnglishConfirmationStage(
       dependencies.bank,
       input.attempt.routeId,
@@ -322,6 +351,7 @@ export async function continueEnglishDiagnosticPrecision(input: {
         ...(dependencies.excludedObjectiveItemIds ?? []),
         ...observations.map(observation => observation.itemId),
       ]),
+      confirmationSkillRoutes,
     );
     const nextStage: DiagnosticStageReceipt = {
       stageId: dependencies.newId(), kind: 'confirmation', routeId: input.attempt.routeId,
@@ -335,6 +365,7 @@ export async function continueEnglishDiagnosticPrecision(input: {
       nextStatus: 'confirmation', routeId: input.attempt.routeId, nextStage, nextStageIndex: 2,
       nextSelectionReceipt: {
         ...confirmation.receipt, reasons: confirmationDecision.reasons,
+        listeningAccommodation: input.listeningAccommodation === true,
         seedHash: createHash('sha256').update(seed).digest('hex'), objectiveEvidence,
       },
     });
@@ -348,6 +379,7 @@ export async function continueEnglishDiagnosticPrecision(input: {
         attemptId: input.attempt.id, attemptVersion: persisted.version, expiresAt: input.attempt.expiresAt,
         stage: deliveredStage,
         items: confirmation.records.map(record => toDiagnosticPublicItem(record, deliveredStage.stageId)),
+        listeningAccommodation: input.listeningAccommodation === true,
       },
       objectiveEvidence,
       confirmationDecision,

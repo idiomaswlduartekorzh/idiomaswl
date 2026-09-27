@@ -3,6 +3,7 @@ import 'server-only';
 import { randomUUID } from 'node:crypto';
 
 import { ENGLISH_DIAGNOSTIC_BLUEPRINT } from '@/lib/diagnostic/blueprint';
+import type { DiagnosticObjectiveSkill, DiagnosticRouteId, DiagnosticSkillRouteMap } from '@/lib/diagnostic/types';
 import {
   DIAGNOSTIC_ENGINE_VERSION,
   parseDiagnosticObjectiveStageSubmitRequest,
@@ -53,6 +54,35 @@ function selectedWritingBankVersion(selectionReceipt: unknown): string | null {
   if (!selectionReceipt || typeof selectionReceipt !== 'object' || Array.isArray(selectionReceipt)) return null;
   const version = (selectionReceipt as Record<string, unknown>).writingBankVersion;
   return typeof version === 'string' ? version : null;
+}
+
+function selectedListeningAccommodation(selectionReceipt: unknown): boolean {
+  return Boolean(selectionReceipt && typeof selectionReceipt === 'object' && !Array.isArray(selectionReceipt)
+    && (selectionReceipt as Record<string, unknown>).listeningAccommodation === true);
+}
+
+function selectedSkillRoutes(
+  selectionReceipt: unknown,
+  fallbackRouteId: DiagnosticRouteId,
+): DiagnosticSkillRouteMap {
+  const skills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+  const routes: readonly DiagnosticRouteId[] = ['low-a1-a2', 'mid-b1-b2', 'high-c1-c2'];
+  if (!selectionReceipt || typeof selectionReceipt !== 'object' || Array.isArray(selectionReceipt)) {
+    return Object.fromEntries(skills.map(skill => [skill, fallbackRouteId])) as DiagnosticSkillRouteMap;
+  }
+  const candidate = (selectionReceipt as Record<string, unknown>).skillRoutes;
+  if (candidate === undefined) {
+    return Object.fromEntries(skills.map(skill => [skill, fallbackRouteId])) as DiagnosticSkillRouteMap;
+  }
+  if (!candidate || typeof candidate !== 'object' || Array.isArray(candidate)) {
+    throw new Error('diagnostic skill routes are invalid');
+  }
+  const record = candidate as Record<string, unknown>;
+  if (Object.keys(record).length !== skills.length
+    || skills.some(skill => record[skill] !== null && !routes.includes(record[skill] as DiagnosticRouteId))) {
+    throw new Error('diagnostic skill routes are invalid');
+  }
+  return Object.fromEntries(skills.map(skill => [skill, record[skill] as DiagnosticRouteId | null])) as DiagnosticSkillRouteMap;
 }
 
 export async function handleDiagnosticStageSubmission(
@@ -174,8 +204,10 @@ export async function handleDiagnosticStageSubmission(
         stage: context.stage,
         stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
         submissions: objectiveSubmission.responses,
+        listeningAccommodation: selectedListeningAccommodation(context.selectionReceipt),
       }, sharedDependencies);
     } else if (context.stage.kind === 'precision') {
+      if (!context.attempt.routeId) throw new Error('diagnostic route is missing');
       result = await continueEnglishDiagnosticPrecision({
         authenticatedUserId: user.id,
         attempt: context.attempt,
@@ -183,6 +215,8 @@ export async function handleDiagnosticStageSubmission(
         stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
         priorObservations: context.priorObservations,
         locatorRequestedConfirmation: locatorRequestedConfirmation(context.selectionReceipt),
+        skillRoutes: selectedSkillRoutes(context.selectionReceipt, context.attempt.routeId),
+        listeningAccommodation: selectedListeningAccommodation(context.selectionReceipt),
         submissions: objectiveSubmission.responses,
       }, {
         ...sharedDependencies,
