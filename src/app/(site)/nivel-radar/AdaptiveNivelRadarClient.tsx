@@ -390,7 +390,7 @@ export default function AdaptiveNivelRadarClient() {
       </div>
       <label><input type="checkbox" disabled={!audioSampleStarted} checked={audioReady} onChange={event => setAudioReady(event.target.checked)} /> Confirmo que escuché la muestra con claridad.</label>
       <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento, revisar la escritura y calibrar el diagnóstico. El procesamiento externo de escritura requiere un consentimiento distinto y no queda autorizado aquí. Podrás borrar tus datos diagnósticos desde el resultado.</p>
-      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto el uso descrito de mis respuestas para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
+      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen según lo descrito para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}
     {authRequired ? <Link className={s.primary} href={`/login?next=${encodeURIComponent('/nivel-radar')}`}>Iniciar sesión y continuar <span>→</span></Link>
