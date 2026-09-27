@@ -1,4 +1,5 @@
 import { notFound, redirect } from 'next/navigation';
+import '@/app/goethe-a2-web.css';
 import { EXAMS } from '@/data/exams';
 import { getGoetheA2PracticeMock, getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
