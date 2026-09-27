@@ -114,6 +114,17 @@ smoke, Lesen mostró numeración limpia 16–20 y Sprechen ofreció tres control
 azar con cambio verificado de tarjeta. Hören y el examen completo siguen
 bloqueados; pagos, scoring y rutas protegidas no cambian.
 
+Actualización web nativa del 27 de septiembre: `codex/goethe-a2-web-native`
+mantiene el cuadernillo A2 aprobado como referencia opcional (`layout=sheet`),
+pero presenta por defecto Lesen, Schreiben y Sprechen dentro de la experiencia
+web de IdiomasWL. El contenido, la estructura Goethe, las respuestas y el scoring
+no cambian. Lesen usa paneles de lectura y preguntas coordinados; Schreiben usa un
+espacio de consigna y respuesta; Sprechen conserva los tres controles aleatorios
+de A1. Estado: `DESPLEGADO`. La implementación entró en `main` en `cbdeebe3`.
+Validaciones: harness A2 y guardianes de catálogo, TypeScript, build Webpack de
+2.584 páginas, y recorridos funcionales desktop y móvil. Hören y el examen
+completo siguen bloqueados; pagos y rutas protegidas permanecen sin cambios.
+
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
