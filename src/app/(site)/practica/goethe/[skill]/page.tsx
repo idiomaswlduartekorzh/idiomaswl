@@ -27,9 +27,9 @@ const levelConfig = {
   b1: {
     name: 'B1',
     subtitle: 'Goethe-Zertifikat B1',
-    lead: 'La navegación está preparada, pero el banco seguirá bloqueado hasta completar la auditoría editorial por destreza.',
-    sets: 0,
-    available: false,
+    lead: 'Practica Lesen, Schreiben y Sprechen con el primer mock maestro B1. Hören y el examen completo esperan el audio definitivo.',
+    sets: 1,
+    available: true,
   },
   b2: {
     name: 'B2',
@@ -41,10 +41,10 @@ const levelConfig = {
 } as const;
 
 const skillConfig = [
-  { id: 'listening', label: 'Hören', icon: Headphones, a1: '15 preguntas · 20 min', a2: '20 preguntas · audio pendiente' },
-  { id: 'reading', label: 'Lesen', icon: BookOpenCheck, a1: '15 preguntas · 25 min', a2: '20 preguntas · 30 min' },
-  { id: 'writing', label: 'Schreiben', icon: PenLine, a1: 'Formulario + mensaje · 20 min', a2: '2 tareas · 30 min' },
-  { id: 'speaking', label: 'Sprechen', icon: Mic2, a1: '3 partes · 15 min', a2: '3 partes · 15 min' },
+  { id: 'listening', label: 'Hören', icon: Headphones, a1: '15 preguntas · 20 min', a2: '20 preguntas · audio pendiente', b1: '30 preguntas · audio pendiente' },
+  { id: 'reading', label: 'Lesen', icon: BookOpenCheck, a1: '15 preguntas · 25 min', a2: '20 preguntas · 30 min', b1: '30 respuestas · 65 min' },
+  { id: 'writing', label: 'Schreiben', icon: PenLine, a1: 'Formulario + mensaje · 20 min', a2: '2 tareas · 30 min', b1: '3 tareas · 60 min' },
+  { id: 'speaking', label: 'Sprechen', icon: Mic2, a1: '3 partes · 15 min', a2: '3 partes · 15 min', b1: '3 partes · 15 min + preparación' },
 ] as const;
 
 type Props = { params: Promise<{ skill: string }> };
@@ -84,7 +84,7 @@ export default async function GoetheLevelPage({ params }: Props) {
       <dl className={styles.facts} aria-label={`Estado de Goethe ${config.name}`}>
         <div><dt>Nivel</dt><dd>{config.name}</dd><dd className={styles.factNote}>{config.subtitle}</dd></div>
         <div><dt>Sets</dt><dd>{config.sets || '—'}</dd><dd className={styles.factNote}>{config.sets ? 'biblioteca original WeLearn' : 'pendientes de auditoría'}</dd></div>
-        <div><dt>Destrezas</dt><dd>{level === 'a1' ? 4 : level === 'a2' ? 3 : 0}</dd><dd className={styles.factNote}>disponibles ahora</dd></div>
+        <div><dt>Destrezas</dt><dd>{level === 'a1' ? 4 : level === 'a2' || level === 'b1' ? 3 : 0}</dd><dd className={styles.factNote}>disponibles ahora</dd></div>
         <div><dt>Estado</dt><dd>{config.available ? '✓' : '🔒'}</dd><dd className={styles.factNote}>{config.available ? 'práctica por secciones' : 'sin contenido público'}</dd></div>
       </dl>
     </div></header>
@@ -92,16 +92,16 @@ export default async function GoetheLevelPage({ params }: Props) {
     <section className={styles.modes} aria-labelledby="goethe-skill-heading"><div className="wrap">
       <div className={styles.previewHeader}><div><p>Nivel {config.name}</p><h2 id="goethe-skill-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/practica/goethe" className={styles.textLink}><ArrowLeft aria-hidden="true" /> Cambiar de nivel</Link></div>
       <div className={styles.sectionStrip}>
-        {skillConfig.map(({ id, label, icon: Icon, a1, a2 }) => {
-          const available = level === 'a1' || (level === 'a2' && id !== 'listening');
-          const note = level === 'a1' ? a1 : level === 'a2' ? a2 : 'Banco editorial pendiente';
+        {skillConfig.map(({ id, label, icon: Icon, a1, a2, b1 }) => {
+          const available = level === 'a1' || ((level === 'a2' || level === 'b1') && id !== 'listening');
+          const note = level === 'a1' ? a1 : level === 'a2' ? a2 : level === 'b1' ? b1 : 'Banco editorial pendiente';
           const content = <><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span>{available ? <ArrowRight aria-hidden="true" /> : <LockKeyhole aria-hidden="true" />}</>;
           return available
             ? <Link key={id} href={`/practica/goethe/${level}/${id}`} className={styles.sectionPreview} data-section={id}>{content}</Link>
             : <div key={id} className={`${styles.sectionPreview} ${styles.lockedSection}`} data-section={id} aria-label={`${label}, bloqueado`}>{content}</div>;
         })}
       </div>
-      {level === 'a2' ? <aside className={styles.libraryNote}><strong>Hören bloqueado por diseño</strong><p>Los guiones, preguntas e imágenes existen, pero la destreza no se habilitará hasta que las pistas de audio pasen revisión técnica y humana. Los simulacros completos A2 permanecen bloqueados por la misma razón.</p></aside> : null}
+      {level === 'a2' || level === 'b1' ? <aside className={styles.libraryNote}><strong>Hören bloqueado por diseño</strong><p>{level === 'b1' ? 'La arquitectura de 30 ítems está reservada, pero no se publicarán guiones ni pistas hasta iniciar la fase de audio.' : 'Los guiones, preguntas e imágenes existen, pero la destreza no se habilitará hasta que las pistas de audio pasen revisión técnica y humana.'} El examen completo permanece bloqueado por la misma razón.</p></aside> : null}
       {!config.available ? <aside className={styles.libraryNote}><strong>Sin atajos editoriales</strong><p>Las fichas B1/B2 históricas no se publican como práctica hasta que satisfagan el mismo contrato de estructura, originalidad, dificultad, visuales y scoring aplicado a A2.</p></aside> : null}
     </div></section>
   </main>;

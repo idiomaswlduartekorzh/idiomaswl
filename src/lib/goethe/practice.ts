@@ -5,6 +5,8 @@ export type GoethePracticeSkill = 'listening' | 'reading' | 'writing' | 'speakin
 export type GoethePracticeTeil = 1 | 2 | 3;
 export type GoetheA2PracticeSkill = Exclude<GoethePracticeSkill, 'listening'>;
 export type GoetheA2PracticeTeil = 1 | 2 | 3 | 4;
+export type GoetheB1PracticeSkill = Exclude<GoethePracticeSkill, 'listening'>;
+export type GoetheB1PracticeTeil = 1 | 2 | 3 | 4 | 5;
 
 export type GoethePracticeTeilMeta<TTeil extends number = GoethePracticeTeil> = {
   teil: TTeil;
@@ -58,6 +60,39 @@ export const GOETHE_A2_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePractic
     { teil: 3, title: 'Gemeinsam planen', workload: 'proponer, reaccionar y acordar', minutes: 5 },
   ],
 };
+
+export const GOETHE_B1_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTeilMeta<GoetheB1PracticeTeil>[]> = {
+  listening: [
+    { teil: 1, title: 'Kurze Texte', workload: '10 preguntas · 2 reproducciones', minutes: 10 },
+    { teil: 2, title: 'Öffentlicher Monolog', workload: '5 preguntas · 1 reproducción', minutes: 8 },
+    { teil: 3, title: 'Gespräch', workload: '7 preguntas · 1 reproducción', minutes: 8 },
+    { teil: 4, title: 'Diskussion', workload: '8 asignaciones · 2 reproducciones', minutes: 14 },
+  ],
+  reading: [
+    { teil: 1, title: 'Persönliche Korrespondenz', workload: '6 preguntas · Richtig/Falsch', minutes: 10 },
+    { teil: 2, title: 'Pressetexte', workload: '2 textos · 6 preguntas', minutes: 20 },
+    { teil: 3, title: 'Situationen und Anzeigen', workload: '7 situaciones · 10 anuncios', minutes: 10 },
+    { teil: 4, title: 'Meinungen', workload: '7 opiniones · Ja/Nein', minutes: 15 },
+    { teil: 5, title: 'Regeln', workload: '1 reglamento · 4 preguntas', minutes: 10 },
+  ],
+  writing: [
+    { teil: 1, title: 'Persönliche E-Mail', workload: 'texto de unas 80 palabras', minutes: 20 },
+    { teil: 2, title: 'Forumsbeitrag', workload: 'opinión de unas 80 palabras', minutes: 25 },
+    { teil: 3, title: 'Formelle E-Mail', workload: 'correo de unas 40 palabras', minutes: 15 },
+  ],
+  speaking: [
+    { teil: 1, title: 'Gemeinsam planen', workload: 'negociar y acordar un plan', minutes: 3 },
+    { teil: 2, title: 'Thema präsentieren', workload: 'presentación con cinco puntos', minutes: 8 },
+    { teil: 3, title: 'Feedback und Fragen', workload: 'reaccionar, preguntar y responder', minutes: 4 },
+  ],
+};
+
+export function parseGoetheB1PracticeTeil(skill: GoethePracticeSkill, value?: string) {
+  const teil = Number(value);
+  return GOETHE_B1_PRACTICE_TEILE[skill].some(item => item.teil === teil)
+    ? teil as GoetheB1PracticeTeil
+    : undefined;
+}
 
 export function parseGoetheA2PracticeTeil(skill: GoethePracticeSkill, value?: string) {
   const teil = Number(value);

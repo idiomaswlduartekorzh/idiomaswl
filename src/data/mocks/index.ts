@@ -6,6 +6,7 @@ import { withIeltsListeningProductionTranscript } from './ielts-listening-produc
 import { withIeltsListeningLegacyReplacementTranscript } from './ielts-listening-legacy-replacement';
 import { withIeltsBalancedChoicePositions } from './ielts-choice-presentation';
 import { isGoetheA2Held, isGoetheA2PracticePublished } from '@/lib/goethe/a2-release';
+import { isGoetheB1Held, isGoetheB1PracticePublished } from '@/lib/goethe/b1-release';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -130,6 +131,7 @@ import goetheA2Set7 from './goethe-a2-set-7';
 import goetheA2Set8 from './goethe-a2-set-8';
 import goetheA2Set9 from './goethe-a2-set-9';
 import goetheA2Set10 from './goethe-a2-set-10';
+import goetheB1Set1 from './goethe-b1-master-set-1';
 import goetheB1Set2 from './goethe-b1-set-2';
 import goetheB1Set3 from './goethe-b1-set-3';
 import goetheB1Set4 from './goethe-b1-set-4';
@@ -316,6 +318,7 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'goethe:a2-8': goetheA2Set8,
   'goethe:a2-9': goetheA2Set9,
   'goethe:a2-10': goetheA2Set10,
+  'goethe:b1-1': goetheB1Set1,
   'goethe:b1-2': goetheB1Set2,
   'goethe:b1-3': goetheB1Set3,
   'goethe:b1-4': goetheB1Set4,
@@ -381,6 +384,9 @@ export function getMock(examSlug: string, mockId: string): MockExam | null {
   // The historical Goethe A2 files are incomplete scaffolds. Keep every access
   // path fail-closed until a fingerprinted A2 release satisfies all gates.
   if (examSlug === 'goethe' && isGoetheA2Held(mockId)) return null;
+  // B1 historical files predate the current Goethe contract. The full exam is
+  // fail-closed; only fingerprinted per-skill practice can use the new master.
+  if (examSlug === 'goethe' && isGoetheB1Held(mockId)) return null;
   const mock = MOCK_REGISTRY[`${examSlug}:${mockId}`] ?? null;
   if (!mock) return null;
 
@@ -418,6 +424,33 @@ export function getGoetheA2PracticeMock(
     title: `Goethe-Zertifikat A2 · Set ${setNumber} · ${skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen'}`,
     subtitle: `${part === undefined ? 'Destreza completa' : `Teil ${part}`} · práctica guiada A2 WeLearn`,
     timeMinutes: part === undefined ? minutes : partMinutes[part - 1],
+    sections,
+  };
+}
+
+export function getGoetheB1PracticeMock(
+  mockId: string,
+  skill: 'reading' | 'writing' | 'speaking',
+  part?: number,
+): MockExam | null {
+  if (!isGoetheB1PracticePublished(mockId, skill)) return null;
+  const mock = MOCK_REGISTRY[`goethe:${mockId}`] ?? null;
+  if (!mock) return null;
+
+  const partOffset = skill === 'reading' ? 0 : skill === 'writing' ? 5 : 8;
+  const sections = mock.sections.filter(section => (
+    section.skill === skill && (part === undefined || section.part - partOffset === part)
+  ));
+  if (sections.length === 0) return null;
+
+  const fullMinutes = skill === 'reading' ? 65 : skill === 'writing' ? 60 : 15;
+  const partMinutes = skill === 'reading' ? [10, 20, 10, 15, 10] : skill === 'writing' ? [20, 25, 15] : [3, 8, 4];
+  const skillLabel = skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen';
+  return {
+    ...mock,
+    title: `Goethe-Zertifikat B1 · Set 1 · ${skillLabel}`,
+    subtitle: `${part === undefined ? 'Módulo completo' : `Teil ${part}`} · práctica B1 original WeLearn`,
+    timeMinutes: part === undefined ? fullMinutes : partMinutes[part - 1],
     sections,
   };
 }

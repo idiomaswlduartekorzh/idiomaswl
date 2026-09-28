@@ -164,15 +164,18 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
   const sections = scope.sections ?? mock.sections;
   const content = worksheetForMock(mock, sections, scope.listeningOrderVersion);
   const name = exam === 'goethe'
-    ? `Goethe-Zertifikat ${mock.id.startsWith('a2-') ? 'A2' : 'A1'}`
+    ? `Goethe-Zertifikat ${mock.id.startsWith('b1-') ? 'B1' : mock.id.startsWith('a2-') ? 'A2' : 'A1'}`
     : exam === 'ielts'
       ? 'IELTS Academic'
       : 'TOEFL iBT 2026';
   const sourcePath = scope.sourcePath ?? `/examenes/${exam}/practica/${mock.id}`;
+  const worksheetTitle = scope.label && !mock.title.toLowerCase().endsWith(scope.label.toLowerCase())
+    ? `${mock.title} · ${scope.label}`
+    : mock.title;
   const api = await createBrandedDoc({
     levelLabel: name,
     skillLabel: scope.label ?? 'Student worksheet',
-    title: `${mock.title} · ${scope.label ?? 'Student worksheet'}`,
+    title: worksheetTitle,
     subject: 'Printable student questions and blank response spaces, without answer keys or transcripts.',
     keywords: [name, 'student worksheet', mock.id],
     sourceUrl: `${WELEARN_PDF_BASE_URL}${sourcePath}`,
@@ -185,7 +188,7 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
   paragraph(scope.label ?? 'All sections', { size: 11, style: 'bold', color: NAVY });
   paragraph('Name: ____________________________________    Date: ____________________', { size: 9.4, gap: 4 });
   callout('How to use this worksheet', exam === 'goethe'
-    ? 'Follow each Goethe Teil in order. Read each text with its questions, compare the printed notices, and open the live practice page for Hören audio. Speaking cards are prompts for practice, not answer keys.'
+    ? `${mock.id.startsWith('b1-') ? 'Follow the B1 module and Teil order shown here.' : 'Follow each Goethe Teil in order.'} Read each text with its questions and use the speaking cards as prompts. Hören is not included unless approved audio is available in the live practice page.`
     : exam === 'ielts'
       ? 'Work through each IELTS part in order. Reading passages stay with their questions; charts and diagrams appear next to their tasks. Open the live practice page for Listening audio and Speaking recordings.'
       : 'Follow the fixed WeLearn TOEFL 2026 module order. Open the live practice page for Listening and Speaking audio. This worksheet does not reproduce adaptive routing or an official score.', [239, 249, 251], [15, 95, 115]);
@@ -215,7 +218,7 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
     for (const section of answerSections) {
       heading(section.title, { size: 10.5, gapTop: 4, rule: false });
       for (const question of section.questions) {
-        if (exam === 'ielts' && question.answerNumbers?.length) {
+        if (question.answerNumbers?.length) {
           for (const number of question.answerNumbers) paragraph(`${number}. ____________________________________`, { size: 9, gap: 2 });
           continue;
         }

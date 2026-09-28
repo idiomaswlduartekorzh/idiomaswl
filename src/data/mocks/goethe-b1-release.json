@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sets": [
+    {
+      "id": "b1-1",
+      "state": "AUDIO_BLOCKED",
+      "published": false,
+      "contentReady": true,
+      "visualsReady": true,
+      "audioReady": false,
+      "scoringReady": true,
+      "humanApproved": false,
+      "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    }
+  ]
+}

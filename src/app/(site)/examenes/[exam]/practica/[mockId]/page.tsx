@@ -1,7 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import '@/app/goethe-a2-web.css';
 import { EXAMS } from '@/data/exams';
-import { getGoetheA2PracticeMock, getMock } from '@/data/mocks';
+import { getGoetheA2PracticeMock, getGoetheB1PracticeMock, getMock } from '@/data/mocks';
 import PracticeClient from './PracticeClient';
 import IELTSPracticeClient from './IELTSPracticeClient';
 import TOEFLPracticeClient from './TOEFLPracticeClient';
@@ -11,7 +11,7 @@ import TOPIKPracticeClient from './TOPIKPracticeClient';
 import GoetheA1PracticeClient from './GoetheA1PracticeClient';
 import { sanitizeIcfesMock } from '@/lib/icfes/exam-registry.server';
 import { isIcfesPassEnabled } from '@/lib/icfes/product-config.server';
-import { parseGoetheA2PracticeTeil, parseGoethePracticeTeil, type GoetheA2PracticeSkill, type GoethePracticeSkill } from '@/lib/goethe/practice';
+import { parseGoetheA2PracticeTeil, parseGoetheB1PracticeTeil, parseGoethePracticeTeil, type GoetheA2PracticeSkill, type GoetheB1PracticeSkill, type GoethePracticeSkill } from '@/lib/goethe/practice';
 import { hasGoetheA1Audio } from '@/lib/goethe/release';
 import { sanitizeIeltsMock } from '@/lib/ielts/public-mock';
 
@@ -40,8 +40,17 @@ export default async function PracticePage({ params, searchParams }: { params: P
       ? query.skill as GoetheA2PracticeSkill
       : undefined;
   const a2PracticePart = a2Skill ? parseGoetheA2PracticeTeil(a2Skill, query.teil) : undefined;
+  const b1Skill = slug === 'goethe'
+    && mockId === 'b1-1'
+    && query.mode === 'practice'
+    && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
+      ? query.skill as GoetheB1PracticeSkill
+      : undefined;
+  const b1PracticePart = b1Skill ? parseGoetheB1PracticeTeil(b1Skill, query.teil) : undefined;
   const mock = a2Skill
     ? getGoetheA2PracticeMock(mockId, a2Skill, a2PracticePart)
+    : b1Skill
+      ? getGoetheB1PracticeMock(mockId, b1Skill, b1PracticePart)
     : getMock(slug, mockId);
 
   if (!exam || !mock) notFound();
@@ -88,6 +97,16 @@ export default async function PracticePage({ params, searchParams }: { params: P
       mock={mock}
       focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
       goetheA2LayoutMode={a2Layout}
+    />;
+  }
+  if (slug === 'goethe' && b1Skill) {
+    const b1Layout = query.layout === 'sheet' ? 'sheet' : 'web';
+    return <LanguagePracticeClient
+      key={`${mock.id}:${b1Skill}:${b1PracticePart ?? 'all'}:${b1Layout}`}
+      exam={exam}
+      mock={mock}
+      focusedPractice={{ level: 'B1', skill: b1Skill, part: b1PracticePart }}
+      goetheA2LayoutMode={b1Layout}
     />;
   }
   if (LANGUAGE_EXAMS.has(slug)) return <LanguagePracticeClient exam={exam} mock={mock} />;

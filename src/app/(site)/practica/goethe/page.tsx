@@ -6,7 +6,7 @@ import styles from '../toefl/ios.module.css';
 
 export const metadata: Metadata = {
   title: 'Práctica Goethe A1, A2, B1 y B2 por destreza',
-  description: 'Entrena Goethe por nivel y destreza. A1 disponible; A2 abre Lesen, Schreiben y Sprechen en diez sets y mantiene Hören bloqueado hasta aprobar el audio.',
+  description: 'Entrena Goethe por nivel y destreza. A1 y A2 están disponibles; B1 abre su primer mock maestro para Lesen, Schreiben y Sprechen.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/goethe' },
   openGraph: {
     title: 'Práctica Goethe por niveles · A1, A2, B1 y B2',
@@ -39,9 +39,9 @@ const levels = [
     id: 'b1',
     label: 'B1',
     subtitle: 'Goethe-Zertifikat B1',
-    description: 'La sección ya está creada para recibir el próximo banco auditado sin mezclar materiales preliminares.',
-    status: 'Biblioteca bloqueada',
-    available: false,
+    description: 'Primer mock maestro auditado con Lesen, Schreiben y Sprechen. Hören y el examen completo esperan el audio.',
+    status: '3 destrezas · 1 set',
+    available: true,
   },
   {
     id: 'b2',
@@ -65,9 +65,9 @@ export default function GoethePracticePage() {
       </div>
       <dl className={styles.facts} aria-label="Estado de la práctica Goethe">
         <div><dt>Niveles</dt><dd>4</dd><dd className={styles.factNote}>A1 · A2 · B1 · B2</dd></div>
-        <div><dt>Sets listos</dt><dd>20</dd><dd className={styles.factNote}>10 A1 + 10 A2</dd></div>
-        <div><dt>Destrezas abiertas</dt><dd>7</dd><dd className={styles.factNote}>4 en A1 · 3 en A2</dd></div>
-        <div><dt>Examen A2</dt><dd>🔒</dd><dd className={styles.factNote}>Hören y examen bloqueados</dd></div>
+        <div><dt>Sets listos</dt><dd>21</dd><dd className={styles.factNote}>10 A1 + 10 A2 + 1 B1</dd></div>
+        <div><dt>Destrezas abiertas</dt><dd>10</dd><dd className={styles.factNote}>4 A1 · 3 A2 · 3 B1</dd></div>
+        <div><dt>Exámenes con audio pendiente</dt><dd>🔒</dd><dd className={styles.factNote}>A2 y B1</dd></div>
       </dl>
     </div></header>
 
@@ -93,8 +93,8 @@ export default function GoethePracticePage() {
     </div></section>
 
     <section className={styles.preview} aria-labelledby="goethe-release-heading"><div className="wrap">
-      <div className={styles.previewHeader}><div><p>Publicación responsable</p><h2 id="goethe-release-heading">A2 útil ahora, sin fingir que el audio está listo.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver simulacros bloqueados <ArrowRight aria-hidden="true" /></Link></div>
-      <aside className={styles.libraryNote}><BookOpenCheck aria-hidden="true" /><strong>Separación de producto</strong><p>Lesen, Schreiben y Sprechen A2 se pueden estudiar por secciones. Los diez exámenes completos siguen bloqueados y Hören no se sirve por ninguna ruta pública hasta tener audio aprobado.</p></aside>
+      <div className={styles.previewHeader}><div><p>Publicación responsable</p><h2 id="goethe-release-heading">Práctica útil, sin fingir que el audio está listo.</h2></div><Link href="/examenes/goethe#practica" className={styles.textLink}>Ver simulacros bloqueados <ArrowRight aria-hidden="true" /></Link></div>
+      <aside className={styles.libraryNote}><BookOpenCheck aria-hidden="true" /><strong>Separación de producto</strong><p>Lesen, Schreiben y Sprechen A2/B1 se estudian por secciones. Los exámenes completos y Hören permanecen bloqueados hasta tener audio aprobado.</p></aside>
     </div></section>
   </main>;
 }

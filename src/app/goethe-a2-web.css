@@ -10,6 +10,71 @@
   justify-content: center;
   gap: 0.7rem;
 }
+
+.goethe-b1-module-nav {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1rem auto 1.25rem;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.goethe-b1-module-nav__item {
+  background: #fff;
+  border: 1px solid #d7ddea;
+  color: #17264b;
+  display: grid;
+  gap: 0.22rem;
+  min-width: 0;
+  padding: 0.8rem 0.9rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.goethe-b1-module-nav__item:hover,
+.goethe-b1-module-nav__item:focus-visible {
+  border-color: #8b671c;
+  box-shadow: 0 8px 22px rgba(23, 38, 75, 0.1);
+  transform: translateY(-1px);
+}
+
+.goethe-b1-module-nav__item[aria-current='page'] {
+  background: #f0f3fa;
+  border-color: #17264b;
+  box-shadow: inset 0 3px 0 #17264b;
+}
+
+.goethe-b1-module-nav__label {
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.goethe-b1-module-nav__item small {
+  color: #69728a;
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.goethe-b1-module-nav__item--locked {
+  background: #f7f5f1;
+  border-style: dashed;
+}
+
+.goethe-b1-module-nav__lock {
+  color: #8b671c;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.goethe-b1-module-nav--compact {
+  margin-top: 0;
+}
 .prac-shell--goethe-a2 .goethe-a2-pdf-bar {
   display: flex;
   width: min(1180px, 100%);
@@ -315,6 +380,32 @@
   font-size: 0.78rem;
   line-height: 1.52;
 }
+.prac-shell--goethe-a2-web .goethe-ad-grid--b1 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.prac-shell--goethe-a2-web .goethe-opinion-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+.prac-shell--goethe-a2-web .goethe-opinion {
+  padding: 1rem 1.05rem;
+  border: 1px solid #dbe3ef;
+  border-left: 4px solid var(--goethe-web-red);
+  border-radius: 0 14px 14px 0;
+  background: #fbfcfe;
+  box-shadow: 0 5px 14px rgba(32, 51, 84, 0.04);
+}
+.prac-shell--goethe-a2-web .goethe-opinion strong {
+  color: var(--goethe-web-navy);
+  font-size: 0.78rem;
+  letter-spacing: 0.035em;
+}
+.prac-shell--goethe-a2-web .goethe-opinion p {
+  margin: 0.4rem 0 0;
+  color: #4d596e;
+  font-size: 0.82rem;
+  line-height: 1.58;
+}
 .prac-shell--goethe-a2-web .goethe-question-list {
   gap: 0.75rem;
 }
@@ -534,6 +625,10 @@
 }
 
 @media (max-width: 640px) {
+  .goethe-b1-module-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .goethe-a2-intro-actions,
   .prac-shell--goethe-a2 .goethe-a2-pdf-bar {
     align-items: stretch;
