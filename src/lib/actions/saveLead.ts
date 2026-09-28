@@ -67,7 +67,11 @@ export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: st
   const requestHeaders = await headers();
   const forwardedFor = requestHeaders.get('x-forwarded-for')?.split(',')[0]?.trim();
   const clientFingerprint = `${forwardedFor ?? 'unknown'}|${requestHeaders.get('user-agent') ?? 'unknown'}`;
-  const hashKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? 'idiomaswl-lead-rate-limit';
+  const hashKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!hashKey) {
+    console.error('[saveLead] SUPABASE_SERVICE_ROLE_KEY is not configured');
+    return { ok: false, error: 'No pudimos guardar tus datos. Intenta de nuevo.' };
+  }
   const rateKey = createHmac('sha256', hashKey).update(clientFingerprint).digest('hex');
   const supabase = createAdminClient();
 
