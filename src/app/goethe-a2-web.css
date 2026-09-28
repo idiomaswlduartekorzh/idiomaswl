@@ -3,6 +3,38 @@
    The `sheet` query mode intentionally keeps the candidate-sheet reference
    above. The default `web` mode preserves the official task grammar while
    presenting it as an IdiomasWL learning interface rather than an A4 preview. */
+.goethe-a2-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.prac-shell--goethe-a2 .goethe-a2-pdf-bar {
+  display: flex;
+  width: min(1180px, 100%);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto 1rem;
+  padding: 0.8rem 0.9rem 0.8rem 1rem;
+  border: 1px solid #d9e2ef;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.06);
+}
+.prac-shell--goethe-a2 .goethe-a2-pdf-bar div {
+  display: grid;
+  gap: 0.14rem;
+}
+.prac-shell--goethe-a2 .goethe-a2-pdf-bar strong {
+  color: #14213d;
+  font-size: 0.83rem;
+}
+.prac-shell--goethe-a2 .goethe-a2-pdf-bar span {
+  color: #657087;
+  font-size: 0.73rem;
+}
 .prac-shell--goethe-a2-web {
   --goethe-web-navy: #14213d;
   --goethe-web-blue: #234a8b;
@@ -445,6 +477,24 @@
   background: var(--goethe-web-navy);
   font-family: inherit;
 }
+.prac-shell--goethe-a2-web .goethe-speaking-randomizer button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.prac-shell--goethe-a2-web .goethe-speaking-draw-pending {
+  display: grid;
+  min-height: 230px;
+  place-items: center;
+  align-content: center;
+  gap: 0.6rem;
+  border: 1px dashed #cbd7e8;
+  border-radius: 18px;
+  background: #f7f9fd;
+  color: #53627b;
+}
+.prac-shell--goethe-a2-web .goethe-speaking-draw-pending span {
+  font-size: 1.45rem;
+}
 .prac-shell--goethe-a2-web .goethe-speaking-card,
 .prac-shell--goethe-a2-web .goethe-speaking-topic,
 .prac-shell--goethe-a2-web .goethe-speaking-schedules figure {
@@ -484,6 +534,16 @@
 }
 
 @media (max-width: 640px) {
+  .goethe-a2-intro-actions,
+  .prac-shell--goethe-a2 .goethe-a2-pdf-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .goethe-a2-intro-actions > *,
+  .prac-shell--goethe-a2 .goethe-a2-pdf-bar > button {
+    width: 100%;
+    justify-content: center;
+  }
   .prac-shell--goethe-a2-web .ielts-exam-body {
     padding-inline: 0.7rem;
   }

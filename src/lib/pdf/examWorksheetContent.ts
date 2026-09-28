@@ -89,7 +89,9 @@ export function examWorksheetSections(sections: readonly MockSection[], exam: Wo
     passage: section.passage,
     skill: section.skill,
     part: section.part,
-    audio: !!section.audioUrl || section.skill === 'listening' || section.skill === 'speaking',
+    audio: !!section.audioUrl
+      || section.skill === 'listening'
+      || section.questions.some(question => 'audioUrl' in question && !!question.audioUrl),
     questions: section.questions.map((question, index) => worksheetQuestion(question, index + 1, exam, listeningOrderVersion)),
   }));
 }

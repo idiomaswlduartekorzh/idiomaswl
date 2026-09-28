@@ -27,6 +27,7 @@ import type {
   MatchingGroupQuestion,
 } from '@/data/mocks/types';
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -730,17 +731,47 @@ function GoetheQuestionList({
   );
 }
 
-function GoetheSpeakingMaterial({ q }: { q: SpeakQuestion }) {
+function goetheSpeakingChoices(q: SpeakQuestion) {
+  if (q.partNumber === 1) {
+    return (q.cueCard ?? '').split(' · ').filter(Boolean).map(label => ({
+      label: label.replace(/\?$/, ''),
+      detail: 'Fragekarte',
+    }));
+  }
+  if (q.partNumber === 2) {
+    return q.text.split('\n').map((line, index) => {
+      const label = line.replace(/^KARTE\s+[AB]:\s*/i, '');
+      const cueBlock = (q.cueCard ?? '').split(/\n\n+/)[index] ?? '';
+      const [, cueLine = ''] = cueBlock.split('\n');
+      return { label, detail: cueLine };
+    });
+  }
+  return (q.imageUrls ?? []).map((_, index) => ({
+    label: `Kandidat/in ${index === 0 ? 'A' : 'B'}`,
+    detail: 'Rolle für diese Übungsrunde',
+  }));
+}
+
+function GoetheSpeakingMaterial({ q, selectedIndex }: { q: SpeakQuestion; selectedIndex: number | null }) {
+  if (selectedIndex === null) {
+    return (
+      <div className="goethe-speaking-draw-pending" role="status">
+        <span aria-hidden="true">↻</span>
+        <strong>Karte wird gezogen…</strong>
+      </div>
+    );
+  }
+
   if (q.partNumber === 1) {
     const cards = (q.cueCard ?? '').split(' · ').filter(Boolean);
+    const card = cards[selectedIndex];
+    if (!card) return null;
     return (
       <div className="goethe-speaking-cards">
-        {cards.map((card, index) => (
-          <article key={`${card}-${index}`} className="goethe-speaking-card">
-            <header>Teil 1 · Kandidatenblatt</header>
-            <strong>{card.replace(/\?$/, '')}</strong>
-          </article>
-        ))}
+        <article className="goethe-speaking-card">
+          <header>Teil 1 · Ihre Karte</header>
+          <strong>{card.replace(/\?$/, '')}</strong>
+        </article>
       </div>
     );
   }
@@ -751,59 +782,53 @@ function GoetheSpeakingMaterial({ q }: { q: SpeakQuestion }) {
       const [, cueLine = ''] = block.split('\n');
       return cueLine.split(' · ').filter(Boolean);
     });
+    const prompt = prompts[selectedIndex];
+    if (!prompt) return null;
     return (
       <div className="goethe-speaking-topic-stack">
-        {prompts.map((prompt, index) => (
-          <article className="goethe-speaking-topic" key={`${prompt}-${index}`}>
-            <header>Teil 2 · Kandidatenblatt</header>
-            <div className="goethe-speaking-topic__map">
-              <strong>{prompt}</strong>
-              {(cueGroups[index] ?? []).map((cue, cueIndex) => (
-                <span key={cue} data-position={cueIndex}>{cue}</span>
-              ))}
-            </div>
-          </article>
-        ))}
+        <article className="goethe-speaking-topic">
+          <header>Teil 2 · Ihre Karte</header>
+          <div className="goethe-speaking-topic__map">
+            <strong>{prompt}</strong>
+            {(cueGroups[selectedIndex] ?? []).map((cue, cueIndex) => (
+              <span key={cue} data-position={cueIndex}>{cue}</span>
+            ))}
+          </div>
+        </article>
       </div>
     );
   }
 
+  const url = q.imageUrls?.[selectedIndex];
+  if (!url) return null;
   return (
-    <div className="goethe-speaking-schedules">
-      {(q.imageUrls ?? []).map((url, index) => (
-        <figure key={url}>
-          <figcaption>Kandidat/in {index === 0 ? 'A' : 'B'} · Teil 3</figcaption>
-          <img src={url} alt={q.imageAlts?.[index] ?? `Terminkarte ${index === 0 ? 'A' : 'B'}`} loading="lazy" decoding="async" />
-        </figure>
-      ))}
+    <div className="goethe-speaking-schedules goethe-speaking-schedules--single">
+      <figure>
+        <figcaption>Kandidat/in {selectedIndex === 0 ? 'A' : 'B'} · Ihre Rolle</figcaption>
+        <img src={url} alt={q.imageAlts?.[selectedIndex] ?? `Terminkarte ${selectedIndex === 0 ? 'A' : 'B'}`} loading="eager" decoding="async" />
+      </figure>
     </div>
   );
 }
 
-function GoetheSpeakingRandomizer({ q }: { q: SpeakQuestion }) {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const cards = q.partNumber === 1
-    ? (q.cueCard ?? '').split(' · ').filter(Boolean).map(label => ({ label: label.replace(/\?$/, ''), detail: 'Fragekarte' }))
-    : q.partNumber === 2
-      ? q.text.split('\n').map((line, index) => {
-          const label = line.replace(/^KARTE\s+[AB]:\s*/i, '');
-          const cueBlock = (q.cueCard ?? '').split(/\n\n+/)[index] ?? '';
-          const [, cueLine = ''] = cueBlock.split('\n');
-          return { label, detail: cueLine };
-        })
-      : (q.imageUrls ?? []).map((_, index) => ({ label: `Kandidat/in ${index === 0 ? 'A' : 'B'}`, detail: 'Rolle für diese Übungsrunde' }));
+function GoetheSpeakingRandomizer({ q, selectedIndex, onSelect }: {
+  q: SpeakQuestion;
+  selectedIndex: number | null;
+  onSelect: (index: number) => void;
+}) {
+  const cards = goetheSpeakingChoices(q);
   const selected = selectedIndex === null ? null : cards[selectedIndex];
 
   const chooseRandomCard = () => {
     if (cards.length === 0) return;
     if (cards.length === 1) {
-      setSelectedIndex(0);
+      onSelect(0);
       return;
     }
-    setSelectedIndex(current => {
-      if (current === null) return Math.floor(Math.random() * cards.length);
-      return (current + 1 + Math.floor(Math.random() * (cards.length - 1))) % cards.length;
-    });
+    const next = selectedIndex === null
+      ? Math.floor(Math.random() * cards.length)
+      : (selectedIndex + 1 + Math.floor(Math.random() * (cards.length - 1))) % cards.length;
+    onSelect(next);
   };
 
   return (
@@ -812,9 +837,9 @@ function GoetheSpeakingRandomizer({ q }: { q: SpeakQuestion }) {
         <strong>{selected ? selected.label : 'Zufallsauswahl'}</strong>
         <span>{selected?.detail || 'Wie in A1: Ziehen Sie eine Karte oder Rolle zufällig.'}</span>
       </div>
-      <button type="button" onClick={chooseRandomCard}>
+      <button type="button" onClick={chooseRandomCard} disabled={selectedIndex === null}>
         <span aria-hidden="true">↻</span>
-        {selected ? 'Andere Auswahl' : 'Zufällig wählen'}
+        {selected ? 'Andere Auswahl' : 'Wird gezogen…'}
       </button>
     </div>
   );
@@ -834,30 +859,26 @@ function GoetheSpeakingSection({
   onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
 }) {
   const q = section.questions.find(question => question.type === 'speak') as SpeakQuestion | undefined;
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  useEffect(() => {
+    const choices = q ? goetheSpeakingChoices(q) : [];
+    const frame = window.requestAnimationFrame(() => {
+      setSelectedIndex(choices.length ? Math.floor(Math.random() * choices.length) : null);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [q]);
   if (!q) return null;
   return (
     <div className="goethe-section-stack">
-      {q.partNumber === 3 ? (q.imageUrls ?? []).map((url, index) => (
-        <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking" key={url}>
-          <GoetheTaskHeading section={section} />
-          <p className="goethe-speaking-situation">{q.text}</p>
-          <div className="goethe-speaking-schedules goethe-speaking-schedules--single">
-            <figure>
-              <figcaption>Kandidat/in {index === 0 ? 'A' : 'B'} · Teil 3</figcaption>
-              <img src={url} alt={q.imageAlts?.[index] ?? `Terminkarte ${index === 0 ? 'A' : 'B'}`} loading="eager" decoding="async" />
-            </figure>
-          </div>
-        </GoethePage>
-      )) : (
-        <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking">
-          <GoetheTaskHeading section={section} />
-          <GoetheSpeakingMaterial q={q} />
-        </GoethePage>
-      )}
+      <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking">
+        <GoetheTaskHeading section={section} />
+        {q.partNumber === 3 ? <p className="goethe-speaking-situation">{q.text}</p> : null}
+        <GoetheSpeakingMaterial q={q} selectedIndex={selectedIndex} />
+      </GoethePage>
       <section className="goethe-practice-controls" aria-label={`Práctica oral Teil ${q.partNumber}`}>
         <p className="goethe-practice-controls__eyebrow">WeLearn · práctica interactiva</p>
-        <p>Practica en voz alta con la tarjeta oficializada. La grabación y las notas no forman parte del cuadernillo.</p>
-        <GoetheSpeakingRandomizer q={q} />
+        <p>La tarjeta o el rol ya se eligió al azar. Practica en voz alta y pulsa «Otra selección» para cambiarlo.</p>
+        <GoetheSpeakingRandomizer q={q} selectedIndex={selectedIndex} onSelect={setSelectedIndex} />
         {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recordings?.[q.id]} maxSeconds={180} onChange={recording => onRecording(q.id, recording)} /> : null}
         <label className="lang-speak__notes">
           <span className="lang-speak__notes-label">Notas de respuesta</span>
@@ -1534,6 +1555,18 @@ export default function LanguagePracticeClient({
   }));
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
+  const goetheA2Layout = exam.slug === 'goethe' && /^a2-(?:[1-9]|10)$/.test(mock.id);
+  const downloadGoetheA2Worksheet = async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    const skill = focusedPractice?.skill ?? activeSkill;
+    const teil = focusedPractice?.part;
+    const query = new URLSearchParams({ mode: 'practice', skill });
+    if (teil) query.set('teil', String(teil));
+    await generateExamWorksheetPdf(mock, {
+      label: `${GOETHE_SKILL_LABEL[skill] ?? skill}${teil ? ` · Teil ${teil}` : ''}`,
+      sourcePath: `/examenes/goethe/practica/${mock.id}?${query.toString()}`,
+    });
+  };
   const leadObjectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
   const leadCorrect = leadObjectiveSections.reduce((sum, section) => sum + section.correct, 0);
   const leadTotal = leadObjectiveSections.reduce((sum, section) => sum + section.total, 0);
@@ -1661,9 +1694,12 @@ export default function LanguagePracticeClient({
               </div>
             ))}
           </div>
-          <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
-            Comenzar práctica
-          </button>
+          <div className="goethe-a2-intro-actions">
+            <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
+              Comenzar práctica
+            </button>
+            {goetheA2Layout ? <PdfDownloadButton generate={downloadGoetheA2Worksheet} label="Descargar cuadernillo PDF" /> : null}
+          </div>
           <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
             ← Volver
           </Link>
@@ -1674,7 +1710,6 @@ export default function LanguagePracticeClient({
 
   const activeSections = getSkillSections(mock, activeSkill);
   const unanswered = totalQs - totalAnswered;
-  const goetheA2Layout = exam.slug === 'goethe' && /^a2-(?:[1-9]|10)$/.test(mock.id);
 
   return (
     <div
@@ -1696,6 +1731,15 @@ export default function LanguagePracticeClient({
       <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
+        {goetheA2Layout ? (
+          <aside className="goethe-a2-pdf-bar" aria-label="Cuadernillo imprimible">
+            <div>
+              <strong>¿Prefieres trabajar en papel?</strong>
+              <span>Descarga esta misma sección en formato de cuadernillo.</span>
+            </div>
+            <PdfDownloadButton generate={downloadGoetheA2Worksheet} label={`${GOETHE_SKILL_LABEL[activeSkill] ?? activeSkill} PDF`} compact />
+          </aside>
+        ) : null}
         {goetheA2Layout && activeSkill === 'writing' ? (
           <GoetheWritingView sections={activeSections} writeAnswers={writeAnswers} onWrite={handleWrite} />
         ) : activeSections.map((sec, i) => (
