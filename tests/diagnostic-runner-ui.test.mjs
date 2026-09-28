@@ -50,7 +50,10 @@ test('runner standardizes writing assistance, explains consent scope and exposes
   assert.match(client, /confirmation: 'DELETE_DIAGNOSTIC_DATA'/);
 });
 
-test('adaptive UI has an independent server-side release flag', () => {
+test('adaptive UI has an independent server-side release flag and isolated preview review mode', () => {
   assert.match(page, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'/);
-  assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient \/> : <NivelRadarClient \/>/);
+  assert.match(page, /process\.env\.VERCEL_ENV === 'preview'/);
+  assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient reviewMode=\{reviewMode\} \/> : <NivelRadarClient \/>/);
+  assert.match(client, /Preview de revisión · recorrido simulado/);
+  assert.match(client, /no se guardó ni calificó ninguna respuesta/i);
 });

@@ -69,6 +69,97 @@ type ResumePayload =
 type DraftAnswer = DiagnosticDraftAnswer;
 type View = 'intro' | 'loading' | 'objective' | 'writing' | 'processing' | 'result' | 'error';
 
+const REVIEW_ATTEMPT_ID = 'diagnostic-review-preview';
+const REVIEW_EXPIRES_AT = '2099-12-31T23:59:59.000Z';
+const REVIEW_OBJECTIVE_DELIVERY: ObjectiveDelivery = {
+  attemptId: REVIEW_ATTEMPT_ID,
+  attemptVersion: 1,
+  expiresAt: REVIEW_EXPIRES_AT,
+  stage: {
+    stageId: 'review-locator',
+    kind: 'locator',
+    itemIds: ['review-reading', 'review-listening', 'review-grammar', 'review-vocabulary'],
+  },
+  items: [
+    {
+      id: 'review-reading', contentVersion: 'review-v1', skill: 'reading', subdomain: 'explicit-detail',
+      prompt: 'When does the Saturday workshop begin?',
+      stimulus: {
+        kind: 'text', stimulusId: 'review-notice', title: 'Community workshop',
+        body: 'The bicycle workshop opens at 9:30 on Saturday. Please arrive ten minutes early if you need to borrow tools.',
+      },
+      response: { kind: 'single-choice', optionIds: ['nine', 'nine-thirty', 'ten'] },
+      displayOptions: [
+        { id: 'nine', text: 'At 9:00.' },
+        { id: 'nine-thirty', text: 'At 9:30.' },
+        { id: 'ten', text: 'At 10:00.' },
+      ],
+    },
+    {
+      id: 'review-listening', contentVersion: 'review-v1', skill: 'listening', subdomain: 'gist',
+      prompt: 'What place is the speaker mainly describing?',
+      stimulus: {
+        kind: 'audio', mediaId: 'review-audio', src: audioCheck.assetPath,
+        startMs: 0, endMs: 3_600_000, maxPlays: 2,
+      },
+      response: { kind: 'single-choice', optionIds: ['cafe', 'station', 'library'] },
+      displayOptions: [
+        { id: 'cafe', text: 'A café.' },
+        { id: 'station', text: 'A train station.' },
+        { id: 'library', text: 'A library.' },
+      ],
+    },
+    {
+      id: 'review-grammar', contentVersion: 'review-v1', skill: 'grammar', subdomain: 'verb-form',
+      prompt: 'Choose the sentence that is grammatically complete.',
+      stimulus: { kind: 'none' },
+      response: { kind: 'single-choice', optionIds: ['arrived', 'arrive', 'arriving'] },
+      displayOptions: [
+        { id: 'arrived', text: 'She arrived before the class started.' },
+        { id: 'arrive', text: 'She arrive before the class started.' },
+        { id: 'arriving', text: 'She arriving before the class started.' },
+      ],
+    },
+    {
+      id: 'review-vocabulary', contentVersion: 'review-v1', skill: 'vocabulary', subdomain: 'meaning-in-context',
+      prompt: 'In this context, what does “borrow” mean?',
+      stimulus: { kind: 'text', stimulusId: 'review-context', body: 'You may borrow a helmet for the workshop, but you must return it before leaving.' },
+      response: { kind: 'single-choice', optionIds: ['use-return', 'buy', 'repair'] },
+      displayOptions: [
+        { id: 'use-return', text: 'Use something temporarily and return it.' },
+        { id: 'buy', text: 'Pay to own something permanently.' },
+        { id: 'repair', text: 'Fix something that is broken.' },
+      ],
+    },
+  ],
+  listeningAccommodation: false,
+};
+const REVIEW_WRITING_DELIVERY: WritingDelivery = {
+  attemptId: REVIEW_ATTEMPT_ID,
+  attemptVersion: 2,
+  expiresAt: REVIEW_EXPIRES_AT,
+  stage: { stageId: 'review-writing', kind: 'writing', itemIds: ['review-writing-prompt'] },
+  prompt: {
+    id: 'review-writing-prompt', contentVersion: 'review-v1', title: 'A short recommendation',
+    situation: 'Write to a friend who wants to improve their English.',
+    instructions: ['Recommend one study habit.', 'Explain why it helps.', 'Give one practical example.'],
+    minimumWords: 5, maximumWords: 120, recommendedMinutes: 8,
+  },
+};
+const REVIEW_RESULT = {
+  globalLevel: 'B1', globalRange: ['A2', 'B1'], overallStatus: 'provisional',
+  skills: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map((skill, index) => ({
+    skill, status: 'provisional', estimatedLevel: index === 1 ? 'A2' : 'B1',
+    plausibleRange: index === 1 ? ['A1', 'B1'] : ['A2', 'B2'], confidence: index === 1 ? 0.54 : 0.76,
+  })),
+  recommendations: [{
+    priority: 1, skill: 'listening', currentLevel: 'A2', targetLevel: 'B1',
+    reason: 'La escucha conserva el rango más amplio en este resultado simulado.',
+    practice: { href: '/practica/ingles/a2/escucha', label: 'Abrir práctica de escucha' },
+  }],
+  warnings: ['Vista de revisión: el perfil mostrado es simulado y no procede de una calificación.'],
+};
+
 function responseFor(item: PublicItem, answer?: DraftAnswer): SubmittedResponse {
   if (answer) return answer.response;
   if (item.response.kind === 'single-choice') return { kind: 'single-choice', optionId: null };
@@ -81,7 +172,7 @@ function wordCount(value: string): number {
   return normalized ? normalized.split(/\s+/u).length : 0;
 }
 
-export default function AdaptiveNivelRadarClient() {
+export default function AdaptiveNivelRadarClient({ reviewMode = false }: { reviewMode?: boolean }) {
   const [view, setView] = useState<View>('intro');
   const [audioReady, setAudioReady] = useState(false);
   const [audioSampleStarted, setAudioSampleStarted] = useState(false);
@@ -146,9 +237,10 @@ export default function AdaptiveNivelRadarClient() {
   }, [applyResume]);
 
   useEffect(() => {
+    if (reviewMode) return;
     const attemptId = sessionStorage.getItem(STORAGE_KEY);
     if (attemptId) { setView('loading'); void resume(attemptId); }
-  }, [resume]);
+  }, [resume, reviewMode]);
 
   useEffect(() => {
     if (view !== 'processing') return;
@@ -168,6 +260,10 @@ export default function AdaptiveNivelRadarClient() {
 
   async function start() {
     if ((!audioReady && !listeningAccommodation) || !consented) return;
+    if (reviewMode) {
+      activateDelivery({ ...REVIEW_OBJECTIVE_DELIVERY, listeningAccommodation });
+      return;
+    }
     setView('loading'); setMessage(''); setAuthRequired(false);
     try {
       const response = await fetch('/api/diagnostic/attempts', {
@@ -255,6 +351,10 @@ export default function AdaptiveNivelRadarClient() {
       },
     };
     setAnswers(finalAnswers); setView('loading');
+    if (reviewMode) {
+      activateDelivery(REVIEW_WRITING_DELIVERY);
+      return;
+    }
     try {
       const response = await fetch(`/api/diagnostic/attempts/${objective.attemptId}/stages/${objective.stage.stageId}`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -283,6 +383,14 @@ export default function AdaptiveNivelRadarClient() {
     const count = wordCount(writingText);
     if (count < writing.prompt.minimumWords || count > writing.prompt.maximumWords) return;
     setView('loading');
+    if (reviewMode) {
+      clearDiagnosticAttemptDrafts(sessionStorage, REVIEW_ATTEMPT_ID);
+      sessionStorage.removeItem(STORAGE_KEY);
+      setResult(REVIEW_RESULT);
+      setMessage('Resultado simulado para revisar la presentación; no se guardó ni calificó ninguna respuesta.');
+      setView('result');
+      return;
+    }
     try {
       const response = await fetch(`/api/diagnostic/attempts/${writing.attemptId}/stages/${writing.stage.stageId}`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -300,7 +408,7 @@ export default function AdaptiveNivelRadarClient() {
 
   if (view === 'loading') return <Status title="Guardando evidencia…" text="No cierres esta ventana." />;
   if (view === 'processing') return <Status title="Tu evidencia está completa" text="La escritura está pendiente de revisión. Publicaremos el perfil integral cuando la evaluación humana quede cerrada." />;
-  if (view === 'result') return <ResultProfile profile={result} message={message} deletingData={deletingData} onDelete={() => void deleteDiagnosticData()} onRestart={() => { setResult(null); setMessage(''); setView('intro'); }} />;
+  if (view === 'result') return <ResultProfile profile={result} message={message} deletingData={deletingData} reviewMode={reviewMode} onDelete={() => void deleteDiagnosticData()} onRestart={() => { setResult(null); setMessage(''); setView('intro'); }} />;
   if (view === 'error') return <Status title="No pudimos continuar" text={message} action={<button className={s.secondary} onClick={() => { const id = sessionStorage.getItem(STORAGE_KEY); if (id) { setView('loading'); void resume(id); } else setView('intro'); }}>Reintentar</button>} />;
 
   if (view === 'writing' && writing) {
@@ -382,9 +490,10 @@ export default function AdaptiveNivelRadarClient() {
   }
 
   return <section className={s.hero}><div className={s.shell}>
-    <p className={s.eyebrow}>Diagnóstico adaptativo · Inglés A1–C2</p>
+    <p className={s.eyebrow}>{reviewMode ? 'Preview de revisión · recorrido simulado' : 'Diagnóstico adaptativo · Inglés A1–C2'}</p>
     <h1>Tu perfil real,<br /><span>habilidad por habilidad.</span></h1>
     <p className={s.lead}>El examen usa etapas adaptativas para medir lectura, escucha, gramática y vocabulario; termina con una producción escrita revisada antes de publicar el resultado.</p>
+    {reviewMode && <p className={s.inlineError}>Este modo sirve para revisar la experiencia completa. No guarda respuestas, no califica y el perfil final es una demostración.</p>}
     <div className={s.skillGrid}>{Object.entries(SKILL_LABELS).map(([key, label]) => <div className={s.skill} key={key}>{label}<small>{key === 'writing' ? 'rúbrica + revisión' : 'evidencia objetiva'}</small></div>)}</div>
     <div className={s.readinessBox}>
       <div>
@@ -420,10 +529,11 @@ function Status({ title, text, action }: { title: string; text: string; action?:
   return <section className={s.hero} aria-live="polite"><div className={s.shell}><p className={s.eyebrow}>Nivel Radar WeLearn</p><h1>{title}</h1><p className={s.lead}>{text}</p>{action}</div></section>;
 }
 
-function ResultProfile({ profile, message, deletingData, onDelete, onRestart }: {
+function ResultProfile({ profile, message, deletingData, reviewMode, onDelete, onRestart }: {
   profile: unknown;
   message: string;
   deletingData: boolean;
+  reviewMode: boolean;
   onDelete: () => void;
   onRestart: () => void;
 }) {
@@ -471,8 +581,8 @@ function ResultProfile({ profile, message, deletingData, onDelete, onRestart }: 
     {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
     {message && <p className={s.inlineError} aria-live="polite">{message}</p>}
-    <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>Nuevo diagnóstico</button><Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link></div>
-    <button className={s.secondary} disabled={deletingData} onClick={onDelete}>{deletingData ? 'Borrando datos…' : 'Borrar mis datos diagnósticos'}</button>
+    <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>{reviewMode ? 'Repetir preview' : 'Nuevo diagnóstico'}</button>{!reviewMode && <Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link>}</div>
+    {!reviewMode && <button className={s.secondary} disabled={deletingData} onClick={onDelete}>{deletingData ? 'Borrando datos…' : 'Borrar mis datos diagnósticos'}</button>}
   </div></section>;
 }
 

@@ -31,7 +31,8 @@ const HOW = [
 ];
 
 export default function NivelRadarPage() {
-  const adaptiveUiEnabled = process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true';
+  const reviewMode = process.env.VERCEL_ENV === 'preview';
+  const adaptiveUiEnabled = reviewMode || process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true';
   return (
     <main className={s.page}>
       <script
@@ -46,7 +47,7 @@ export default function NivelRadarPage() {
         }) }}
       />
 
-      {adaptiveUiEnabled ? <AdaptiveNivelRadarClient /> : <NivelRadarClient />}
+      {adaptiveUiEnabled ? <AdaptiveNivelRadarClient reviewMode={reviewMode} /> : <NivelRadarClient />}
 
       {/* ══════════════ HOW IT WORKS ══════════════ */}
       <section className={s.howSection}>
