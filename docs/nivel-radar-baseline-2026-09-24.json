@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-09-24",
+  "capturedAt": "2026-09-28",
   "source": "src/app/(site)/nivel-radar/NivelRadarClient.tsx",
-  "sourceSha256": "df0b59d9a655b9c8e8bb165f69722426babf9d5db8f1e58e8d0dba246a89c808",
+  "sourceSha256": "b8834fdc8b59dec909d52e9d13b4689fc2071b1e11f26557a78057fba34b223a",
   "status": "known-defective-baseline",
   "pool": {
     "totalItems": 76,
