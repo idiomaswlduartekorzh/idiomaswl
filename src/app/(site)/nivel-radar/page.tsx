@@ -32,7 +32,10 @@ const HOW = [
 
 export default function NivelRadarPage() {
   const reviewMode = process.env.VERCEL_ENV === 'preview';
-  const adaptiveUiEnabled = reviewMode || process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true';
+  const adaptiveUiEnabled = reviewMode || (
+    process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'
+    && process.env.DIAGNOSTIC_ADAPTIVE_ENABLED === 'true'
+  );
   return (
     <main className={s.page}>
       <script

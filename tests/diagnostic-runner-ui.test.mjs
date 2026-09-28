@@ -53,6 +53,7 @@ test('runner avoids free-text review, explains the objective construct and expos
 
 test('adaptive UI has an independent server-side release flag and isolated preview review mode', () => {
   assert.match(page, /DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'/);
+  assert.match(page, /DIAGNOSTIC_ADAPTIVE_ENABLED === 'true'/);
   assert.match(page, /process\.env\.VERCEL_ENV === 'preview'/);
   assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient reviewMode=\{reviewMode\} \/> : <NivelRadarClient \/>/);
   assert.match(client, /Preview de revisión · recorrido simulado/);
