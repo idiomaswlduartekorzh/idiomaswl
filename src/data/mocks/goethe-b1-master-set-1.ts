@@ -1,4 +1,5 @@
 import type { MCQQuestion, MockExam, MockSection } from './types';
+import { applyGoetheB1Fidelity } from './goethe-b1-fidelity-enrichment';
 
 type B1PartContract = {
   part: number;
@@ -352,4 +353,4 @@ const GOETHE_B1_MASTER_SET_1: MockExam = {
   sections: [...lesen, ...schreiben, ...sprechen],
 };
 
-export default GOETHE_B1_MASTER_SET_1;
+export default applyGoetheB1Fidelity(1, GOETHE_B1_MASTER_SET_1);

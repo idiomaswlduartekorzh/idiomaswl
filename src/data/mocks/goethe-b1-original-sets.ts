@@ -1,4 +1,5 @@
 import type { MCQQuestion, MockExam, MockSection } from './types';
+import { applyGoetheB1Fidelity } from './goethe-b1-fidelity-enrichment';
 
 type TrueFalseItem = { text: string; answer: boolean };
 type ChoiceItem = { text: string; correct: string; distractors: [string, string] };
@@ -32,7 +33,25 @@ const mcq = (id: string, part: number, text: string, options: string[], answer: 
 });
 
 function choice(id: string, part: number, item: ChoiceItem, seed: number): MCQQuestion {
-  const positions = [seed % 3, (seed + 2) % 3, (seed + 1) % 3];
+  const positionPatterns: Record<number, readonly number[]> = {
+    2: [0, 2, 1, 1, 2, 0, 2, 0, 1, 2],
+    3: [1, 0, 2, 2, 1, 0, 1, 2, 0, 1],
+    4: [2, 1, 0, 0, 2, 1, 1, 0, 2, 2],
+    5: [1, 2, 0, 2, 0, 2, 0, 1, 1, 2],
+    6: [2, 0, 1, 0, 1, 2, 2, 1, 0, 0],
+    7: [0, 1, 2, 2, 0, 1, 1, 2, 0, 2],
+    8: [2, 2, 1, 0, 1, 0, 2, 0, 1, 0],
+    9: [1, 0, 0, 2, 2, 1, 0, 1, 2, 2],
+    10: [2, 1, 2, 1, 0, 0, 2, 2, 0, 1],
+  };
+  const [, setToken, questionToken] = id.match(/^g-b1-(\d+)-r\d-(\d+)$/u) ?? [];
+  const setNumber = Number(setToken);
+  const questionNumber = Number(questionToken);
+  const patternIndex = questionNumber <= 12 ? questionNumber - 7 : 6 + questionNumber - 27;
+  const hash = [...`${id}:${seed}:${item.text}`].reduce((value, character) => ((value * 33) ^ character.codePointAt(0)!) >>> 0, 5381);
+  const answerPosition = positionPatterns[setNumber]?.[patternIndex] ?? hash % 3;
+  const distractorOrder = (hash >>> 3) % 2;
+  const positions = [answerPosition, (answerPosition + 1 + distractorOrder) % 3, (answerPosition + 2 - distractorOrder) % 3];
   const answer = positions[0];
   const options = Array<string>(3);
   options[positions[0]] = item.correct;
@@ -124,12 +143,12 @@ function buildOriginalSet(source: GoetheB1OriginalSource): MockExam {
     },
   ];
 
-  return {
+  return applyGoetheB1Fidelity(source.set, {
     id: `b1-${source.set}`, examSlug: 'goethe',
     title: `Goethe-Zertifikat B1 · Originalmock ${source.set}`,
     subtitle: 'Lesen, Schreiben und Sprechen vollständig · Hören und Gesamtprüfung bis zum geprüften Audio blockiert',
     timeMinutes: 140, sections: [...lesen, ...schreiben, ...sprechen],
-  };
+  });
 }
 
 const commonAds = (rows: Array<[string, string]>): Advertisement[] => rows.map(([title, text], index) => ({ letter: String.fromCharCode(65 + index), title, text }));
@@ -304,8 +323,24 @@ const compactSources: GoetheB1OriginalSource[] = [
   ].map((row, rowIndex) => {
     const [topicKey, topicLabel, experience, pressQuestion, rulesTitle, debateQuestion, planning, cardA, cardB] = row;
     const set = rowIndex + 5;
-    const people = ['Alina', 'Burak', 'Clara', 'Diego', 'Elif', 'Felix', 'Grace'];
-    const cities = ['Aachen', 'Bremen', 'Chemnitz', 'Darmstadt', 'Erlangen', 'Fulda', 'Genf'];
+    const peopleBySet = [
+      ['Mina', 'Jonas', 'Ebru', 'Lukas', 'Sofia', 'Karim', 'Nora'],
+      ['Clara', 'Emre', 'Johanna', 'Daniel', 'Mara', 'Tobias', 'Aylin'],
+      ['Samira', 'Paul', 'Leonie', 'Omar', 'Theresa', 'Kenan', 'Ruth'],
+      ['Nadine', 'Mehmet', 'Laura', 'Benedikt', 'Ivana', 'Farid', 'Miriam'],
+      ['Selin', 'Moritz', 'Fatima', 'Jan', 'Petra', 'David', 'Zoe'],
+      ['Helena', 'Cem', 'Amira', 'Florian', 'Klara', 'Yusuf', 'Daria'],
+    ];
+    const citiesBySet = [
+      ['Aachen', 'Bremen', 'Chemnitz', 'Darmstadt', 'Erlangen', 'Fulda', 'Genf'],
+      ['Graz', 'Hannover', 'Innsbruck', 'Jena', 'Kassel', 'Luzern', 'Mainz'],
+      ['Münster', 'Nürnberg', 'Oldenburg', 'Potsdam', 'Regensburg', 'Salzburg', 'Thun'],
+      ['Ulm', 'Villach', 'Wiesbaden', 'Zürich', 'Augsburg', 'Basel', 'Cottbus'],
+      ['Dresden', 'Essen', 'Freiburg', 'Göttingen', 'Heidelberg', 'Kiel', 'Leipzig'],
+      ['Magdeburg', 'Neuss', 'Osnabrück', 'Rostock', 'St. Gallen', 'Tübingen', 'Wien'],
+    ];
+    const people = peopleBySet[rowIndex];
+    const cities = citiesBySet[rowIndex];
     const yesPattern = rowIndex % 2 === 0 ? [true, false, false, true, true, false, true] : [false, true, true, false, true, false, false];
     const volunteerExamples = [
       'Gesprächsräume vorbereiten, Infomaterial ordnen und Feedbackbögen erfassen',
