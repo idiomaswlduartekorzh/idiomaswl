@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Gesprächskarte: Kostenloser Nahverkehr</title>
+  <desc id="desc">Redaktionelle Karte mit fünf Gesprächsschritten für die Rückmeldung nach einer Präsentation.</desc>
+  <rect width="1200" height="760" fill="#f7f4ed"/>
+  <rect x="60" y="60" width="1080" height="640" rx="24" fill="#fff" stroke="#18304f" stroke-width="4"/>
+  <rect x="60" y="60" width="1080" height="118" rx="24" fill="#18304f"/>
+  <text x="110" y="130" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="700">TEIL 3 · GESPRÄCH</text>
+  <text x="110" y="244" fill="#c31632" font-family="Arial, sans-serif" font-size="25" font-weight="700">THEMA B</text>
+  <text x="110" y="304" fill="#162238" font-family="Arial, sans-serif" font-size="48" font-weight="700">Kostenloser Nahverkehr?</text>
+  <line x1="110" y1="342" x2="1090" y2="342" stroke="#d7dce4" stroke-width="3"/>
+  <g fill="#162238" font-family="Arial, sans-serif" font-size="29">
+    <circle cx="130" cy="406" r="17" fill="#c31632"/><text x="170" y="416">Nennen Sie einen überzeugenden Punkt.</text>
+    <circle cx="130" cy="482" r="17" fill="#c31632"/><text x="170" y="492">Sagen Sie höflich, wo Sie anders denken.</text>
+    <circle cx="130" cy="558" r="17" fill="#c31632"/><text x="170" y="568">Stellen Sie eine offene Frage.</text>
+    <circle cx="130" cy="634" r="17" fill="#c31632"/><text x="170" y="644">Beantworten Sie eine Rückfrage mit Beispiel.</text>
+  </g>
+</svg>

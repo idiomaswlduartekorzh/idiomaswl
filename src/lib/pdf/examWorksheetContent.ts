@@ -78,7 +78,7 @@ export function worksheetQuestion(question: Question, position: number, exam: Wo
     case 'tablegroup':
       return { label: `Questions ${question.qRange[0]}–${question.qRange[1]}`, response: 'short', answerNumbers: exam === 'ielts' ? question.rows.flatMap(row => row.flatMap(cell => typeof cell === 'string' ? [] : [cell.num])) : undefined, lines: [question.groupLabel, question.headers.join(' | '), ...question.rows.map(row => row.map(cell => typeof cell === 'string' ? cell : `[${cell.num}] ________`).join(' | '))] };
     case 'matching':
-      return { label: exam === 'ielts' ? `Questions ${question.qRange[0]}–${question.qRange[1]}` : label, response: 'short', answerNumbers: exam === 'ielts' ? question.items.map(item => item.num) : undefined, lines: [question.groupLabel ?? '', ...question.endings.map(end => `${end.letter}. ${end.text}`), ...question.items.map(item => `${item.num}. ${item.stem} ______`)].filter(Boolean) };
+      return { label: exam === 'goethe' ? `Aufgaben ${question.qRange[0]}–${question.qRange[1]}` : `Questions ${question.qRange[0]}–${question.qRange[1]}`, response: 'short', answerNumbers: question.items.map(item => item.num), lines: [question.groupLabel ?? '', ...question.endings.map(end => `${end.letter}. ${end.text}`), ...question.items.map(item => `${item.num}. ${item.stem} ______`)].filter(Boolean) };
   }
 }
 

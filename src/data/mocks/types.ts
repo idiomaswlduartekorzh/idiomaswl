@@ -50,13 +50,14 @@ export interface WriteQuestion {
   type: 'write';
   id: string;
   part: number;
-  taskNumber: 1 | 2;
+  taskNumber: 1 | 2 | 3;
   stimulus: string;
   stimulusLabel?: string;
   imageUrl?: string;       // chart/graph image for Task 1
   imageAlt?: string;
   text: string;
   minWords: number;
+  maxWords?: number;
   timeLimitSeconds?: 420 | 600;
   minimumWordsPolicy?: 'none-published' | 'recommended-100';
   evaluationDisclosure?: string;

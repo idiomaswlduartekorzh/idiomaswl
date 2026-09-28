@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, BookOpenCheck, Headphones, LockKeyhole, Mic2, PenLine } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
-import { GOETHE_A2_PRACTICE_TEILE, GOETHE_PRACTICE_TEILE, type GoethePracticeSkill } from '@/lib/goethe/practice';
+import { GOETHE_A2_PRACTICE_TEILE, GOETHE_B1_PRACTICE_TEILE, GOETHE_PRACTICE_TEILE, type GoethePracticeSkill } from '@/lib/goethe/practice';
 import { GOETHE_A1_AUDIO_READY_SETS, GOETHE_A1_SET_COUNT, goethePracticeSetNumbers } from '@/lib/goethe/release';
 import styles from '../../../toefl/ios.module.css';
 
@@ -17,21 +17,25 @@ const skillConfig = {
     label: 'Hören', icon: Headphones,
     a1: { duration: '20 min', workload: '15 preguntas · 3 partes', description: 'Escucha conversaciones y anuncios breves con las reproducciones previstas para A1.', feedback: 'Corrección pregunta por pregunta al terminar la destreza.' },
     a2: { duration: '30 min', workload: '20 preguntas · 4 partes', description: 'Los cuatro tipos de tarea ya están escritos, pero la práctica espera sus pistas definitivas.', feedback: 'Bloqueado hasta que el audio pase control técnico y humano.' },
+    b1: { duration: '40 min', workload: '30 preguntas · 4 partes', description: 'La arquitectura está reservada, pero los guiones y las pistas se producirán en la fase de audio.', feedback: 'Bloqueado hasta que el audio pase control técnico y humano.' },
   },
   reading: {
     label: 'Lesen', icon: BookOpenCheck,
     a1: { duration: '25 min', workload: '15 preguntas · 3 partes', description: 'Trabaja mensajes personales, anuncios de internet y avisos cotidianos con textos A1 originales.', feedback: 'Corrección pregunta por pregunta al terminar la destreza.' },
     a2: { duration: '30 min', workload: '20 respuestas · 4 partes', description: 'Trabaja artículo, tablero informativo, correo y asignación de anuncios con complejidad A2.', feedback: 'Corrección objetiva únicamente después de entregar.' },
+    b1: { duration: '65 min', workload: '30 respuestas · 5 partes', description: 'Trabaja correspondencia, prensa, anuncios, opiniones y reglamentos con extensión y exigencia B1.', feedback: 'Corrección objetiva únicamente después de entregar.' },
   },
   writing: {
     label: 'Schreiben', icon: PenLine,
     a1: { duration: '20 min', workload: 'Formulario + mensaje', description: 'Completa un formulario y redacta un mensaje breve siguiendo tres consignas.', feedback: 'Revisión de campos, extensión y cumplimiento de consignas.' },
     a2: { duration: '30 min', workload: '2 tareas · 20–40 palabras', description: 'Redacta una Nachricht personal y una E-Mail halbformell con tres funciones comunicativas.', feedback: 'Guía de autoevaluación tras terminar cada tarea.' },
+    b1: { duration: '60 min', workload: '3 tareas · 80/80/40 palabras', description: 'Redacta un correo personal, una opinión para un foro y un correo formal breve.', feedback: 'Contador de palabras y guía de cumplimiento por tarea.' },
   },
   speaking: {
     label: 'Sprechen', icon: Mic2,
     a1: { duration: '15 min', workload: '3 partes · grabación', description: 'Practica presentación personal, preguntas por tarjetas y peticiones cotidianas.', feedback: 'Registro de la grabación y guía de autoevaluación.' },
     a2: { duration: '15 min', workload: '3 partes · práctica oral', description: 'Formula preguntas, habla sobre una experiencia y acuerda un plan con apoyos A2.', feedback: 'Guía de producción y notas para repetir la respuesta.' },
+    b1: { duration: '15 min + preparación', workload: '3 partes · práctica oral', description: 'Planifica en pareja, presenta uno de dos temas y practica feedback con preguntas.', feedback: 'Selección aleatoria directa, grabación y notas para repetir.' },
   },
 } as const;
 
@@ -50,7 +54,7 @@ function isValidSkill(value: string): value is Skill {
 }
 
 function isAvailable(level: Level, skill: Skill) {
-  return level === 'a1' || (level === 'a2' && skill !== 'listening');
+  return level === 'a1' || ((level === 'a2' || level === 'b1') && skill !== 'listening');
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -60,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const available = isAvailable(level, practiceSkill);
   return {
     title: `Práctica Goethe ${level.toUpperCase()} ${config.label}`,
-    description: available ? config[level === 'a1' ? 'a1' : 'a2'].description : `${config.label} ${level.toUpperCase()} está en preparación.`,
+    description: available ? config[level === 'a1' ? 'a1' : level === 'b1' ? 'b1' : 'a2'].description : `${config.label} ${level.toUpperCase()} está en preparación.`,
     alternates: { canonical: `https://www.idiomaswl.com/practica/goethe/${level}/${practiceSkill}` },
     robots: { index: available, follow: true },
   };
@@ -72,11 +76,17 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
   const level = levelParam;
   const skill = skillParam;
   const config = skillConfig[skill];
-  const details = config[level === 'a1' ? 'a1' : 'a2'];
+  const details = config[level === 'a1' ? 'a1' : level === 'b1' ? 'b1' : 'a2'];
   const available = isAvailable(level, skill);
   const Icon = config.icon;
-  const setNumbers = level === 'a1' ? goethePracticeSetNumbers(skill as GoethePracticeSkill) : available ? Array.from({ length: 10 }, (_, index) => index + 1) : [];
-  const teile = level === 'a1' ? GOETHE_PRACTICE_TEILE[skill] : GOETHE_A2_PRACTICE_TEILE[skill];
+  const setNumbers = level === 'a1'
+    ? goethePracticeSetNumbers(skill as GoethePracticeSkill)
+    : level === 'a2' && available
+      ? Array.from({ length: 10 }, (_, index) => index + 1)
+      : level === 'b1' && available
+        ? [1]
+        : [];
+  const teile = level === 'a1' ? GOETHE_PRACTICE_TEILE[skill] : level === 'b1' ? GOETHE_B1_PRACTICE_TEILE[skill] : GOETHE_A2_PRACTICE_TEILE[skill];
   const pendingAudioSets = level === 'a1'
     ? Array.from({ length: GOETHE_A1_SET_COUNT }, (_, index) => index + 1).filter(number => !GOETHE_A1_AUDIO_READY_SETS.has(number))
     : [];
@@ -88,7 +98,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
         <div className={styles.heroCopy}>
           <p className={styles.kicker}>Goethe {level.toUpperCase()} · práctica independiente</p>
           <h1>{available ? `Practica ${config.label}.` : `${config.label} está bloqueado.`}</h1>
-          <p className={styles.lead}>{available ? details.description : level === 'a2' && skill === 'listening' ? 'El contenido está listo, pero no se sirve sin las pistas de audio aprobadas.' : `La biblioteca ${level.toUpperCase()} se habilitará después de la auditoría editorial completa.`}</p>
+          <p className={styles.lead}>{available ? details.description : (level === 'a2' || level === 'b1') && skill === 'listening' ? 'Esta destreza no se sirve sin las pistas de audio aprobadas.' : `La biblioteca ${level.toUpperCase()} se habilitará después de la auditoría editorial completa.`}</p>
         </div>
         <div className={styles.skillSummary}><Icon aria-hidden="true" /><strong>{available ? details.duration : 'Bloqueado'}</strong><span>{details.workload}</span><small>{details.feedback}</small></div>
       </div>
@@ -118,6 +128,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
         </div>
         {level === 'a1' && skill === 'listening' && pendingAudioSets.length > 0 ? <aside className={styles.libraryNote}><strong>Audio en producción</strong><p>Los sets {pendingAudioSets.join(', ')} se habilitarán únicamente cuando sus pistas hayan pasado el control de audio.</p></aside> : null}
         {level === 'a2' ? <aside className={styles.libraryNote}><strong>Práctica A2, no simulacro completo</strong><p>Esta biblioteca abre solamente {config.label}. Hören y los diez exámenes A2 continúan bloqueados hasta completar el audio.</p></aside> : null}
+        {level === 'b1' ? <aside className={styles.libraryNote}><strong>Práctica B1, no simulacro completo</strong><p>Esta biblioteca abre solamente {config.label}. Hören y el examen B1 completo continúan bloqueados hasta completar el audio.</p></aside> : null}
       </> : <aside className={styles.lockedPanel}><LockKeyhole aria-hidden="true" /><div><strong>{level === 'a2' ? 'Esperando audio aprobado' : 'Esperando banco auditado'}</strong><p>No hay un enlace alterno que permita saltar este bloqueo. Vuelve a las destrezas disponibles para seguir practicando.</p></div></aside>}
     </div></section>
   </main>;
