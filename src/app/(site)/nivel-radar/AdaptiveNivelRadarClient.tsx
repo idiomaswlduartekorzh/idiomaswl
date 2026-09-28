@@ -18,6 +18,7 @@ import {
   diagnosticSkillStatusLabel,
 } from '@/lib/diagnostic/result-language';
 import s from './page.module.css';
+import NivelRadarLeadCapture from './NivelRadarLeadCapture';
 
 const CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
 const STORAGE_KEY = 'welearn:diagnostic:active-attempt';
@@ -521,6 +522,7 @@ function ResultProfile({ profile, message, deletingData, reviewMode, onDelete, o
     <p className={s.note}>La confianza técnica resume cuánta precisión tiene esta estimación con la evidencia disponible; no es un porcentaje de dominio del idioma ni la probabilidad de que el nivel sea “correcto”.</p>
     {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
     <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. “Discurso escrito” mide organización y revisión mediante tareas cerradas; no demuestra producción escrita libre. Este resultado no sustituye un certificado oficial.</p>
+    {!reviewMode && <NivelRadarLeadCapture level={globalLevel} scoreLabel={globalLevel ? `${globalLevel}${globalRange.length === 2 ? ` · rango ${globalRange[0]}–${globalRange[1]}` : ''}` : 'Perfil por habilidad'} profileData={{ instrumentVersion: 'adaptive-integral-v1', globalLevel, globalRange, overallStatus: safe.overallStatus ?? null, skills, warnings, recommendations }} />}
     {message && <p className={s.inlineError} aria-live="polite">{message}</p>}
     <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>{reviewMode ? 'Repetir preview' : 'Nuevo diagnóstico'}</button>{!reviewMode && <Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link>}</div>
     {!reviewMode && <button className={s.secondary} disabled={deletingData} onClick={onDelete}>{deletingData ? 'Borrando datos…' : 'Borrar mis datos diagnósticos'}</button>}

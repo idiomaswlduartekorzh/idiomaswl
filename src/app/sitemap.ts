@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leccion`, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/podcasts`, changeFrequency: 'monthly', priority: 0.82 },
-    { url: `${BASE}/nivel-radar`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/nivel-radar`, changeFrequency: 'weekly',  priority: 0.95 },
 
     // ── Herramientas gratuitas ────────────────────────────────────────────────
     // Una URL por idioma a propósito: «transcripción fonética inglés» y «cómo se

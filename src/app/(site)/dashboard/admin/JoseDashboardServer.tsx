@@ -56,6 +56,18 @@ export interface LeadRow {
   exam_slug: string | null
   exam_score: string | null
   source: string | null
+  utm_source: string | null
+  utm_medium: string | null
+  utm_campaign: string | null
+  utm_content: string | null
+  utm_term: string | null
+  landing_page: string | null
+  referrer_host: string | null
+  contact_consent_at: string | null
+  marketing_consent: boolean
+  consent_version: string | null
+  lead_status: 'new' | 'contacted' | 'qualified' | 'converted' | 'discarded'
+  profile_data: Record<string, unknown>
   created_at: string
   /** Nombre legible del examen ('ICFES', 'SAT', 'IELTS'...). Se resuelve en el
    *  servidor para no arrastrar todo `EXAMS` al bundle del cliente. */
@@ -93,7 +105,7 @@ export interface AdminViewer {
 //   · ICFES seguro    → source 'icfes-post-result-gate-v1' (histórico de sep. 2026)
 // El source 'blog' queda fuera a propósito: no es un simulacro y su `exam_score`
 // guarda una categoría de blog, no un puntaje.
-const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.simulacro,source.eq.icfes-post-result-gate-v1'
+const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.simulacro,source.eq.icfes-post-result-gate-v1,source.eq.nivel-radar'
 const PRACTICA_SUFFIX = /-practica$/
 
 /** El slug del examen: primero el campo propio; si falta, se deduce del source. */
@@ -112,6 +124,7 @@ function leadExamSlug(examSlug: string | null, source: string | null): string | 
 function leadExamLabel(examSlug: string | null, source: string | null): string | null {
   const slug = leadExamSlug(examSlug, source)
   if (!slug) return null
+  if (slug === 'nivel-radar') return 'Nivel Radar'
   return EXAMS[slug]?.name ?? slug.toUpperCase()
 }
 
@@ -338,7 +351,7 @@ export default async function JoseDashboardServer() {
   // que vengan (SAT ya, y los siguientes) sin tener que volver a tocar esto.
   const leadsSelect = () => supabase
     .from('leads')
-    .select('id, name, whatsapp, email, exam_slug, exam_score, source, created_at')
+    .select('id, name, whatsapp, email, exam_slug, exam_score, source, utm_source, utm_medium, utm_campaign, utm_content, utm_term, landing_page, referrer_host, contact_consent_at, marketing_consent, consent_version, lead_status, profile_data, created_at')
     .order('created_at', { ascending: false })
     .limit(300)
 
@@ -349,7 +362,7 @@ export default async function JoseDashboardServer() {
     // las fuentes por convención como las dos fuentes exactas conocidas.
     const [practiceFallback, exactFallback] = await Promise.all([
       leadsSelect().like('source', '%-practica'),
-      leadsSelect().in('source', ['simulacro', 'icfes-post-result-gate-v1']),
+      leadsSelect().in('source', ['simulacro', 'icfes-post-result-gate-v1', 'nivel-radar']),
     ])
     const uniqueFallback = new Map(
       [...(practiceFallback.data ?? []), ...(exactFallback.data ?? [])]
@@ -401,6 +414,18 @@ export default async function JoseDashboardServer() {
       exam_slug: submission.exam_slug,
       exam_score: submission.total_label,
       source: 'exam_submission_historic',
+      utm_source: null,
+      utm_medium: null,
+      utm_campaign: null,
+      utm_content: null,
+      utm_term: null,
+      landing_page: null,
+      referrer_host: null,
+      contact_consent_at: null,
+      marketing_consent: false,
+      consent_version: null,
+      lead_status: 'new',
+      profile_data: {},
       created_at: submission.created_at,
       exam_label: leadExamLabel(submission.exam_slug, 'exam_submission_historic'),
     }))

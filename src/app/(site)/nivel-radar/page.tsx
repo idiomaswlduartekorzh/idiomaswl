@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import s from './page.module.css';
 
 const NivelRadarClient = dynamic(() => import('./NivelRadarClient'));
@@ -9,25 +10,54 @@ const WA = '573005004253';
 const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de inglés y cómo avanzar con WeLearn.');
 
 export const metadata: Metadata = {
-  title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
+  title: 'Test de nivel de inglés gratis A1–C2 | Nivel Radar',
   description:
-    'Diagnóstico adaptativo de inglés A1–C2: lectura, escucha, discurso escrito, gramática y vocabulario, con resultados por habilidad.',
+    'Test de nivel de inglés gratis con resultado orientativo A1–C2 por lectura, escucha, gramática y vocabulario, más una ruta de estudio.',
   keywords: [
-    'nivel de inglés test', 'cuál es mi nivel de inglés', 'test de inglés gratis',
-    'diagnóstico de inglés online', 'nivel real de inglés WeLearn',
+    'test de nivel de inglés gratis', 'test de inglés A1 A2 B1 B2 C1 C2',
+    'cuál es mi nivel de inglés', 'prueba de inglés online', 'diagnóstico de inglés',
+    'test de inglés con resultados', 'nivel de inglés CEFR',
   ],
   openGraph: {
-    title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
-    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, construcción del discurso escrito, gramática y vocabulario.',
+    title: 'Test de nivel de inglés gratis A1–C2 | Nivel Radar',
+    description: 'Descubre tu nivel orientativo y tu perfil en lectura, escucha, gramática y vocabulario. Gratis, online y sin instalar una app.',
     url: 'https://www.idiomaswl.com/nivel-radar',
+    type: 'website',
+    siteName: 'Idiomas WeLearn',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Test de nivel de inglés gratis A1–C2 | Nivel Radar',
+    description: 'Obtén un resultado orientativo por habilidad y una ruta clara para seguir mejorando.',
+  },
+  robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.idiomaswl.com/nivel-radar' },
 };
 
-const HOW = [
+const PUBLIC_HOW = [
+  { title: 'Respondes tareas reales', desc: 'Trabajas con preguntas de lectura, escucha, gramática y vocabulario. No calculamos tu nivel a partir de cómo te percibes.' },
+  { title: 'Avanzas según tu evidencia', desc: 'La prueba sube de nivel cuando consolidas una banda y se detiene cuando encuentra el límite que todavía necesitas reforzar.' },
+  { title: 'Recibes un mapa útil', desc: 'Ves una estimación A1–C2, tu desempeño por habilidad y una prioridad concreta para organizar el siguiente paso.' },
+];
+
+const ADAPTIVE_HOW = [
   { title: 'Generas evidencia real', desc: 'El diagnóstico combina lectura, escucha, gramática, vocabulario y construcción del discurso mediante tareas cerradas. No usa respuestas de autopercepción.' },
   { title: 'La ruta se adapta', desc: 'Un localizador abre la rama adecuada y una etapa de precisión —con confirmación si hace falta— mide tu límite funcional.' },
   { title: 'Ves un mapa honesto', desc: 'Recibes un nivel y rango por habilidad. Si falta evidencia o el perfil es desigual, el resultado lo dice explícitamente.' },
+];
+
+const BENEFITS = [
+  { title: 'Sin instalar una app', desc: 'Puedes completar la prueba desde el navegador en computador o celular y consultar el resultado al terminar.' },
+  { title: 'Resultado por habilidad', desc: 'Un promedio puede ocultar brechas. Nivel Radar separa la evidencia disponible para mostrar fortalezas y prioridades.' },
+  { title: 'Orientación, no promesas falsas', desc: 'La estimación usa la escala A1–C2 como referencia, pero no se presenta como un certificado oficial ni reemplaza un examen acreditado.' },
+];
+
+const FAQ = [
+  { question: '¿El test de nivel de inglés es gratis?', answer: 'Sí. Puedes completar Nivel Radar y ver el resultado orientativo sin pagar. Al final puedes decidir, de forma opcional, si quieres que WeLearn te contacte con una ruta de estudio.' },
+  { question: '¿Qué habilidades evalúa Nivel Radar?', answer: 'La versión pública evalúa lectura, escucha, gramática y vocabulario con tareas objetivas. La versión integral, que se publica únicamente cuando completa su validación, añade organización del discurso mediante tareas cerradas.' },
+  { question: '¿El resultado equivale a un certificado CEFR o MCER?', answer: 'No. El resultado usa A1–C2 como marco orientativo para ayudarte a tomar decisiones de estudio. No sustituye IELTS, TOEFL, Cambridge ni otro certificado oficial.' },
+  { question: '¿Cuánto dura la prueba?', answer: 'La duración depende de tu recorrido porque el número de preguntas puede crecer con tu desempeño. Reserva entre 45 y 60 minutos y usa audífonos para la parte de escucha.' },
+  { question: '¿Tengo que dejar mis datos para ver el resultado?', answer: 'No. Primero ves y puedes descargar tu resultado. El formulario de contacto aparece después y es opcional; solo lo completas si quieres una orientación personalizada.' },
 ];
 
 export default function NivelRadarPage() {
@@ -36,18 +66,44 @@ export default function NivelRadarPage() {
     process.env.DIAGNOSTIC_ADAPTIVE_UI_ENABLED === 'true'
     && process.env.DIAGNOSTIC_ADAPTIVE_ENABLED === 'true'
   );
+  const how = adaptiveUiEnabled ? ADAPTIVE_HOW : PUBLIC_HOW;
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
+        { '@type': 'ListItem', position: 2, name: 'Nivel Radar', item: 'https://www.idiomaswl.com/nivel-radar' },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Nivel Radar — test de nivel de inglés',
+      url: 'https://www.idiomaswl.com/nivel-radar',
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: 'Web',
+      inLanguage: 'es',
+      isAccessibleForFree: true,
+      description: 'Test gratuito de inglés con estimación orientativa A1–C2 y resultado por habilidad.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'COP' },
+      provider: { '@type': 'EducationalOrganization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: FAQ.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    },
+  ];
   return (
     <main className={s.page}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.idiomaswl.com' },
-            { '@type': 'ListItem', position: 2, name: 'Nivel Radar', item: 'https://www.idiomaswl.com/nivel-radar' },
-          ],
-        }) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {adaptiveUiEnabled ? <AdaptiveNivelRadarClient reviewMode={reviewMode} /> : <NivelRadarClient />}
@@ -58,13 +114,45 @@ export default function NivelRadarPage() {
           <p className={s.sectionEyebrow}>¿Cómo funciona?</p>
           <h2 className={s.h2}>No es un test de autopercepción</h2>
           <div className={s.howGrid}>
-            {HOW.map((h, i) => (
+            {how.map((h, i) => (
               <div key={h.title} className={s.howCard}>
                 <div className={s.howNum}>{i + 1}</div>
                 <h3 className={s.howTitle}>{h.title}</h3>
                 <p className={s.howDesc}>{h.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={s.seoSection} aria-labelledby="nivel-radar-beneficios">
+        <div className={s.wrap}>
+          <p className={s.sectionEyebrow}>Un diagnóstico que conduce a una decisión</p>
+          <h2 className={s.h2} id="nivel-radar-beneficios">Más que “aciertos”: una prioridad para avanzar</h2>
+          <p className={s.seoIntro}>Nivel Radar está diseñado para quien busca un test de nivel de inglés gratis y necesita entender qué reforzar después. El resultado es orientativo, transparente y accionable.</p>
+          <div className={s.benefitGrid}>
+            {BENEFITS.map(benefit => <article className={s.benefitCard} key={benefit.title}>
+              <h3>{benefit.title}</h3>
+              <p>{benefit.desc}</p>
+            </article>)}
+          </div>
+          <nav className={s.internalLinks} aria-label="Próximos pasos de estudio">
+            <Link href="/practica/ingles">Practicar inglés por nivel</Link>
+            <Link href="/examenes/ielts">Preparar IELTS</Link>
+            <Link href="/examenes/toefl">Preparar TOEFL</Link>
+          </nav>
+        </div>
+      </section>
+
+      <section className={s.faqSection} aria-labelledby="nivel-radar-preguntas">
+        <div className={s.wrap}>
+          <p className={s.sectionEyebrow}>Preguntas frecuentes</p>
+          <h2 className={s.h2} id="nivel-radar-preguntas">Lo que debes saber antes de empezar</h2>
+          <div className={s.faqList}>
+            {FAQ.map(item => <details className={s.faqItem} key={item.question}>
+              <summary>{item.question}</summary>
+              <p>{item.answer}</p>
+            </details>)}
           </div>
         </div>
       </section>

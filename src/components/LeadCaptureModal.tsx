@@ -28,6 +28,9 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
   const [name, setName]       = useState('');
   const [phone, setPhone]     = useState('');
   const [email, setEmail]     = useState('');
+  const [contactConsent, setContactConsent] = useState(false);
+  const [marketingConsent, setMarketingConsent] = useState(false);
+  const [company, setCompany] = useState('');
   const [accessCode, setAccessCode] = useState('');
   const [status, setStatus]   = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
@@ -52,6 +55,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
     if (!isPlausibleWhatsapp(phone)) { setErrorMsg('Ingresa un WhatsApp válido de 10 a 15 dígitos.'); return; }
     if (mandatory && !isPlausibleEmail(email)) { setErrorMsg('Ingresa un correo electrónico válido.'); return; }
     if (email.trim() && !isPlausibleEmail(email)) { setErrorMsg('Ingresa un correo electrónico válido.'); return; }
+    if (!contactConsent) { setErrorMsg('Autoriza el contacto para recibir tu plan personalizado.'); return; }
 
     setStatus('loading');
     setErrorMsg('');
@@ -70,6 +74,14 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
         utmSource:   params.get('utm_source')   ?? undefined,
         utmMedium:   params.get('utm_medium')   ?? undefined,
         utmCampaign: params.get('utm_campaign') ?? undefined,
+        utmContent:  params.get('utm_content')  ?? undefined,
+        utmTerm:     params.get('utm_term')     ?? undefined,
+        landingPage: `${window.location.pathname}${window.location.search}`,
+        referrer: document.referrer || undefined,
+        contactConsent,
+        marketingConsent,
+        consentVersion: 'lead-contact-v1-2026-09',
+        company,
       });
 
       if (!result.ok) {
@@ -203,6 +215,13 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
           font-size: 0.8rem; color: #f87171;
           margin: -0.25rem 0 0.75rem;
         }
+        .wl-lead-consent {
+          display: flex; align-items: flex-start; gap: 0.55rem;
+          color: rgba(255,255,255,0.62); font-size: 0.76rem; line-height: 1.45;
+          margin: 0.65rem 0;
+        }
+        .wl-lead-consent input { margin-top: 0.2rem; accent-color: #c8202e; }
+        .wl-lead-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
         .wl-lead-submit {
           width: 100%; padding: 0.8rem;
           background: #c8202e; color: #fff;
@@ -358,6 +377,20 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose, manda
                   required={mandatory}
                 />
               </div>
+
+              <div className="wl-lead-honeypot" aria-hidden="true">
+                <label htmlFor="lead-company">Empresa</label>
+                <input id="lead-company" type="text" tabIndex={-1} autoComplete="off" value={company} onChange={e => setCompany(e.target.value)} />
+              </div>
+
+              <label className="wl-lead-consent">
+                <input type="checkbox" checked={contactConsent} onChange={e => setContactConsent(e.target.checked)} required />
+                <span>Autorizo a WeLearn a contactarme por WhatsApp o correo para entregarme recomendaciones relacionadas con este resultado. *</span>
+              </label>
+              <label className="wl-lead-consent">
+                <input type="checkbox" checked={marketingConsent} onChange={e => setMarketingConsent(e.target.checked)} />
+                <span>Quiero recibir recursos, novedades y ofertas educativas. Es opcional.</span>
+              </label>
 
               {errorMsg && <p className="wl-lead-error">{errorMsg}</p>}
 

@@ -153,6 +153,7 @@ const LEAD_EXAM_COLORS: Record<string, string> = {
   'DELF / DALF':        '#1a2ecc',
   'CILS / CELI':        '#166534',
   'CELPE-BRAS':         '#15803d',
+  'Nivel Radar':        '#e73e4e',
 }
 
 function leadExamName(lead: LeadRow): string {
@@ -169,9 +170,26 @@ function leadWaHref(lead: LeadRow): string | null {
   const digits = (lead.whatsapp ?? '').replace(/\D/g, '')
   if (!digits) return null
   const saludo = lead.name ? `Hola ${lead.name}` : 'Hola'
-  const examen = lead.exam_label ? `el simulacro ${lead.exam_label}` : 'un simulacro'
-  const msg = `${saludo}, vi que completaste ${examen} en WeLearn. ¿Te puedo ayudar a prepararte?`
+  const examen = lead.exam_label === 'Nivel Radar'
+    ? 'tu diagnóstico Nivel Radar'
+    : lead.exam_label ? `el simulacro ${lead.exam_label}` : 'un simulacro'
+  const priority = typeof lead.profile_data?.priority === 'string' ? ` Tu prioridad fue ${lead.profile_data.priority}.` : ''
+  const msg = `${saludo}, vi que completaste ${examen} en WeLearn.${priority} ¿Te puedo ayudar a construir tu ruta de estudio?`
   return `https://wa.me/${digits}?text=${encodeURIComponent(msg)}`
+}
+
+const LEAD_STATUS_LABELS: Record<LeadRow['lead_status'], string> = {
+  new: 'Nuevo',
+  contacted: 'Contactado',
+  qualified: 'Calificado',
+  converted: 'Convertido',
+  discarded: 'Descartado',
+}
+
+function leadAcquisition(lead: LeadRow): string {
+  const campaign = lead.utm_campaign?.trim()
+  const channel = [lead.utm_source, lead.utm_medium].filter(Boolean).join(' / ')
+  return campaign ? `${channel || 'Campaña'} · ${campaign}` : channel || lead.referrer_host || 'Directo / sin UTM'
 }
 
 function csvCell(v: string): string {
@@ -179,13 +197,19 @@ function csvCell(v: string): string {
 }
 
 function leadsCsv(leads: LeadRow[]): string {
-  const head = ['Nombre', 'WhatsApp', 'Email', 'Examen', 'Puntaje', 'Fecha']
+  const head = ['Nombre', 'WhatsApp', 'Email', 'Examen', 'Puntaje', 'Origen', 'Campaña', 'Estado', 'Consentimiento contacto', 'Marketing', 'Landing', 'Fecha']
   const rows = leads.map(l => [
     l.name ?? '',
     l.whatsapp ?? '',
     l.email ?? '',
     leadExamName(l),
     l.exam_score ?? '',
+    [l.utm_source, l.utm_medium].filter(Boolean).join(' / ') || l.referrer_host || 'directo',
+    l.utm_campaign ?? '',
+    LEAD_STATUS_LABELS[l.lead_status],
+    l.contact_consent_at ? 'sí' : 'no registrado',
+    l.marketing_consent ? 'sí' : 'no',
+    l.landing_page ?? '',
     new Date(l.created_at).toLocaleString('es-CO', { timeZone: 'America/Bogota' }),
   ])
   return [head, ...rows].map(r => r.map(csvCell).join(',')).join('\n')
@@ -377,7 +401,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
             <div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, gap: 12, flexWrap: 'wrap' }}>
                 <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: TEXT, letterSpacing: '-0.03em' }}>
-                  Leads de simulacros
+                  Leads de diagnósticos y simulacros
                 </h1>
                 <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
                   {leadExamOptions.length > 1 && (
@@ -407,7 +431,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                     <p style={{ fontSize: 32, marginBottom: 8 }}>📋</p>
                     <p style={{ color: MUTED, fontSize: 14 }}>
                       {data.leads.length === 0
-                        ? 'Aún no hay leads. Cuando alguien complete un simulacro y deje sus datos, aparecerán aquí.'
+                        ? 'Aún no hay leads. Cuando alguien complete un diagnóstico o simulacro y deje sus datos, aparecerá aquí.'
                         : `Ningún lead de ${leadExam} por ahora.`}
                     </p>
                   </div>
@@ -416,7 +440,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
                       <thead>
                         <tr style={{ borderBottom: `2px solid ${BORDER}` }}>
-                          {['Nombre', 'WhatsApp', 'Email', 'Examen', 'Puntaje', 'Fecha'].map(h => (
+                          {['Nombre', 'WhatsApp', 'Email', 'Producto', 'Resultado', 'Adquisición', 'Estado', 'Fecha'].map(h => (
                             <th key={h} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>{h}</th>
                           ))}
                           <th style={{ padding: '8px 12px' }} />
@@ -448,6 +472,17 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                               {lead.exam_score ? (
                                 <span style={{ fontWeight: 700, color: A, fontSize: 13 }}>{lead.exam_score}</span>
                               ) : <span style={{ color: MUTED }}>—</span>}
+                            </td>
+                            <td style={{ padding: '10px 12px', color: MUTED, fontSize: 11, minWidth: 150 }}>
+                              {leadAcquisition(lead)}
+                              <div style={{ marginTop: 3, color: lead.marketing_consent ? '#16a34a' : MUTED }}>
+                                Contacto: {lead.contact_consent_at ? 'sí' : 'histórico'} · Marketing: {lead.marketing_consent ? 'sí' : 'no'}
+                              </div>
+                            </td>
+                            <td style={{ padding: '10px 12px' }}>
+                              <span style={{ display: 'inline-block', padding: '3px 8px', borderRadius: 20, background: '#eef2ff', color: '#3730a3', fontSize: 10, fontWeight: 800, whiteSpace: 'nowrap' }}>
+                                {LEAD_STATUS_LABELS[lead.lead_status]}
+                              </span>
                             </td>
                             <td style={{ padding: '10px 12px', color: MUTED, fontSize: 11, whiteSpace: 'nowrap' }}>
                               {new Date(lead.created_at).toLocaleString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'America/Bogota' })}
