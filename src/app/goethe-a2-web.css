@@ -100,6 +100,13 @@
   color: #657087;
   font-size: 0.73rem;
 }
+.prac-shell--goethe-a2 .goethe-a2-pdf-bar > .goethe-a2-pdf-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+}
 .prac-shell--goethe-a2-web {
   --goethe-web-navy: #14213d;
   --goethe-web-blue: #234a8b;
@@ -636,6 +643,13 @@
   }
   .goethe-a2-intro-actions > *,
   .prac-shell--goethe-a2 .goethe-a2-pdf-bar > button {
+    width: 100%;
+    justify-content: center;
+  }
+  .prac-shell--goethe-a2 .goethe-a2-pdf-bar > .goethe-a2-pdf-actions {
+    width: 100%;
+  }
+  .prac-shell--goethe-a2 .goethe-a2-pdf-actions > button {
     width: 100%;
     justify-content: center;
   }

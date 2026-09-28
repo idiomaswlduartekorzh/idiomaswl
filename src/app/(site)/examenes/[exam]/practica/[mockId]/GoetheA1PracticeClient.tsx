@@ -758,9 +758,10 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
   };
   const downloadSkillWorksheet = (skill: GoethePracticeSkill) => async () => {
     const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    const skillLabel = SKILLS.find(item => item.id === skill)?.label ?? skill;
     await generateExamWorksheetPdf(mock, {
       sections: mock.sections.filter(section => section.skill === skill),
-      label: `${skill} practice`,
+      label: `${skillLabel} · komplette Fertigkeit`,
       sourcePath: goethePracticeHref(mock.id, skill),
     });
   };
@@ -802,6 +803,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
       ? readingQuestions.length
       : deliveryMock.sections.length;
   const practiceLabel = `${activeSkillMeta.label}${practiceTeil ? ` · Teil ${practiceTeil.teil}` : ''}`;
+  const practicePdfLabel = practicePart ? `Teil ${practicePart} PDF` : `${activeSkillMeta.label} completo PDF`;
   const practiceGuidance = practiceSkill === 'listening'
     ? 'Puedes repetir el audio; la transcripción y la evidencia aparecen únicamente después de entregar.'
     : practiceSkill === 'reading'
@@ -858,7 +860,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               <div className={styles.introStats}>{practiceSkill ? <><div><strong>{practicePart ? `Teil ${practicePart}` : '1'}</strong><span>{practicePart ? 'unidad elegida' : 'Fertigkeit'}</span></div><div><strong>{practiceMinutes}</strong><span>Minuten</span></div><div><strong>{practicePart ? practiceUnitCount : activeSkillMeta.points}</strong><span>{practicePart ? practiceUnitCount === 1 ? 'tarea' : 'preguntas' : 'Punkte'}</span></div></> : <><div><strong>4</strong><span>Prüfungsteile</span></div><div><strong>60</strong><span>Rohpunkte</span></div><div><strong>60</strong><span>zum Bestehen</span></div></>}</div>
               <div className={styles.moduleGrid}>{visibleSkills.map(skill => <article key={skill.id}><div><strong>{skill.label}{practiceTeil ? ` · Teil ${practiceTeil.teil}` : ''}</strong><small>{practiceTeil?.title ?? `${skill.minutes} Minuten`}</small></div><span>{practiceTeil ? `${practiceTeil.minutes} min` : `${skill.points} P.`}</span></article>)}</div>
               <div className={styles.introNotice}><strong>Antes de empezar</strong><p>{practiceSkill ? practiceGuidance : 'El audio solo puede iniciarse una vez por parte. Las repeticiones reglamentarias ya están incluidas dentro de cada pista.'}</p></div>
-              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>{practiceSkill ? 'Empezar práctica' : 'Empezar examen'}</button><PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja de práctica en PDF" /></div>
+              <div className={styles.introActions}><button className={styles.primary} onClick={() => setPhase('exam')}>{practiceSkill ? 'Empezar práctica' : 'Empezar examen'}</button><PdfDownloadButton generate={downloadWorksheet} label={practiceSkill ? practicePdfLabel : 'Descargar hoja de práctica en PDF'} />{practiceSkill && practicePart ? <PdfDownloadButton generate={downloadSkillWorksheet(practiceSkill)} label={`Descargar ${activeSkillMeta.label} completo`} /> : null}</div>
               {!practiceSkill && <div className="exam-pdf-options" aria-label="Hojas PDF por destreza">{(['listening', 'reading', 'writing', 'speaking'] as const).map(skill => <PdfDownloadButton key={skill} generate={downloadSkillWorksheet(skill)} label={`${skill === 'listening' ? 'Hören' : skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen'} PDF`} compact />)}</div>}
               <p className={styles.disclaimer}>Contenido original de WeLearn alineado con la arquitectura pública A1. No es un examen oficial ni está afiliado al Goethe-Institut.</p>
               <Link className={styles.backLink} href={practiceSkill ? `/practica/goethe/${practiceSkill}` : `/examenes/${exam.slug}`}>← Volver a Goethe</Link>
@@ -874,7 +876,7 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
             </header>
             <ol className={`${styles.tabs} exam-unified__nav`} aria-label="Progreso del examen">{visibleSkills.map((skill, index) => <li key={skill.id} className={index < activeSkillIndex ? styles.tabComplete : activeSkill === skill.id ? styles.tabActive : styles.tabPending} aria-current={activeSkill === skill.id ? 'step' : undefined}><span><b>{practiceTeil?.teil ?? index + 1}</b>{skill.label}{practiceTeil ? ` · Teil ${practiceTeil.teil}` : ''}</span><small>{index < activeSkillIndex ? 'Cerrado' : activeSkill === skill.id ? 'En curso' : `${skill.minutes} min`}</small></li>)}</ol>
             <main className={`${styles.exam} exam-unified__body`}>
-              <div className={styles.worksheetAction}><PdfDownloadButton generate={practiceSkill ? downloadWorksheet : downloadSkillWorksheet(activeSkill)} label={`${activeSkillMeta.label} PDF`} compact /></div>
+              <div className={styles.worksheetAction}><PdfDownloadButton generate={practiceSkill ? downloadWorksheet : downloadSkillWorksheet(activeSkill)} label={practiceSkill ? practicePdfLabel : `${activeSkillMeta.label} PDF`} compact />{practiceSkill && practicePart ? <PdfDownloadButton generate={downloadSkillWorksheet(practiceSkill)} label={`${activeSkillMeta.label} completo PDF`} compact /> : null}</div>
               <>
                   {activeSkill === 'listening' && <ListeningModule mock={deliveryMock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} mode={mode} playedParts={playedParts} setPlayedParts={setPlayedParts} />}
                   {activeSkill === 'reading' && <ReadingModule mock={deliveryMock} answers={answers} setAnswer={(id, answer) => setAnswers(previous => ({ ...previous, [id]: answer }))} />}
@@ -966,7 +968,8 @@ export default function GoetheA1PracticeClient({ exam, mock, practiceSkill, prac
               {practiceSkill === 'speaking' && <><section className={styles.resultNotice}><strong>Práctica oral disponible en esta sesión</strong><p>Escucha cada respuesta y compárala con el criterio del Teil. La evaluación con rúbrica y profesor permanece en el simulacro completo.</p></section><SpeakingPracticeReview mock={deliveryMock} recordings={recordings} /></>}
             </section>
             <div className={styles.introActions}>
-              <PdfDownloadButton generate={downloadWorksheet} label="Descargar hoja de práctica en PDF" />
+              <PdfDownloadButton generate={downloadWorksheet} label={practicePdfLabel} />
+              {practicePart ? <PdfDownloadButton generate={downloadSkillWorksheet(practiceSkill)} label={`Descargar ${activeSkillMeta.label} completo`} /> : null}
               {nextPractice && <Link className={styles.primary} href={nextPractice.href}>{nextPractice.label}</Link>}
               <button className={nextPractice ? styles.secondary : styles.primary} onClick={restart}>Practicar de nuevo</button>
               <Link className={styles.secondary} href={`/practica/goethe/${practiceSkill}`}>Elegir otro set o Teil</Link>

@@ -1544,11 +1544,13 @@ type Phase = 'intro' | 'exam' | 'lead' | 'results';
 export default function LanguagePracticeClient({
   exam,
   mock,
+  goetheFullSkillMock,
   focusedPractice,
   goetheA2LayoutMode = 'web',
 }: {
   exam: Exam;
   mock: MockExam;
+  goetheFullSkillMock?: MockExam;
   focusedPractice?: FocusedPractice;
   goetheA2LayoutMode?: GoetheA2LayoutMode;
 }) {
@@ -1636,14 +1638,28 @@ export default function LanguagePracticeClient({
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
   const goetheWorksheetLayout = exam.slug === 'goethe' && /^(?:a2|b1)-(?:[1-9]|10)$/.test(mock.id);
+  const goetheSkill = focusedPractice?.skill ?? activeSkill;
+  const goetheSkillLabel = GOETHE_SKILL_LABEL[goetheSkill] ?? goetheSkill;
+  const goetheCurrentPdfLabel = focusedPractice?.part ? `Teil ${focusedPractice.part} PDF` : `${goetheSkillLabel} completo PDF`;
   const downloadGoetheWorksheet = async () => {
     const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
-    const skill = focusedPractice?.skill ?? activeSkill;
+    const skill = goetheSkill;
     const teil = focusedPractice?.part;
     const query = new URLSearchParams({ mode: 'practice', skill });
     if (teil) query.set('teil', String(teil));
     await generateExamWorksheetPdf(mock, {
+      sections: mock.sections,
       label: `${GOETHE_SKILL_LABEL[skill] ?? skill}${teil ? ` · Teil ${teil}` : ''}`,
+      sourcePath: `/examenes/goethe/practica/${mock.id}?${query.toString()}`,
+    });
+  };
+  const downloadGoetheFullSkillWorksheet = async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    const skillMock = goetheFullSkillMock ?? mock;
+    const query = new URLSearchParams({ mode: 'practice', skill: goetheSkill });
+    await generateExamWorksheetPdf(skillMock, {
+      sections: skillMock.sections.filter(section => section.skill === goetheSkill),
+      label: `${goetheSkillLabel} · komplette Fertigkeit`,
       sourcePath: `/examenes/goethe/practica/${mock.id}?${query.toString()}`,
     });
   };
@@ -1779,7 +1795,8 @@ export default function LanguagePracticeClient({
             <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
               Comenzar práctica
             </button>
-            {goetheWorksheetLayout ? <PdfDownloadButton generate={downloadGoetheWorksheet} label="Descargar cuadernillo PDF" /> : null}
+            {goetheWorksheetLayout ? <PdfDownloadButton generate={downloadGoetheWorksheet} label={goetheCurrentPdfLabel} /> : null}
+            {goetheWorksheetLayout && focusedPractice?.part && goetheFullSkillMock ? <PdfDownloadButton generate={downloadGoetheFullSkillWorksheet} label={`Descargar ${goetheSkillLabel} completo`} /> : null}
           </div>
           <Link href={focusedPractice ? `/practica/goethe/${focusedPractice.level.toLowerCase()}/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
             ← Volver
@@ -1817,9 +1834,12 @@ export default function LanguagePracticeClient({
           <aside className="goethe-a2-pdf-bar" aria-label="Cuadernillo imprimible">
             <div>
               <strong>¿Prefieres trabajar en papel?</strong>
-              <span>Descarga esta misma sección en formato de cuadernillo.</span>
+              <span>{focusedPractice?.part ? 'Descarga este Teil o toda la destreza en un solo cuadernillo con Antwortbogen.' : 'Descarga toda la destreza en un solo cuadernillo con Antwortbogen.'}</span>
             </div>
-            <PdfDownloadButton generate={downloadGoetheWorksheet} label={`${GOETHE_SKILL_LABEL[activeSkill] ?? activeSkill} PDF`} compact />
+            <div className="goethe-a2-pdf-actions">
+              <PdfDownloadButton generate={downloadGoetheWorksheet} label={goetheCurrentPdfLabel} compact />
+              {focusedPractice?.part && goetheFullSkillMock ? <PdfDownloadButton generate={downloadGoetheFullSkillWorksheet} label={`${goetheSkillLabel} completo PDF`} compact /> : null}
+            </div>
           </aside>
         ) : null}
         {goetheWorksheetLayout && activeSkill === 'writing' ? (
