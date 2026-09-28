@@ -11,21 +11,21 @@ const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de 
 export const metadata: Metadata = {
   title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
   description:
-    'Diagnóstico adaptativo de inglés A1–C2 con lectura, escritura, gramática, vocabulario y escucha, y un perfil con incertidumbre explícita.',
+    'Diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, construcción del discurso escrito, gramática y vocabulario, y un perfil con incertidumbre explícita.',
   keywords: [
     'nivel de inglés test', 'cuál es mi nivel de inglés', 'test de inglés gratis',
     'diagnóstico de inglés online', 'nivel real de inglés WeLearn',
   ],
   openGraph: {
     title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
-    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escritura, gramática, vocabulario y escucha.',
+    description: 'Un diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, construcción del discurso escrito, gramática y vocabulario.',
     url: 'https://www.idiomaswl.com/nivel-radar',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/nivel-radar' },
 };
 
 const HOW = [
-  { title: 'Generas evidencia real', desc: 'El diagnóstico combina lectura, escucha, gramática, vocabulario y una producción escrita. No usa respuestas de autopercepción.' },
+  { title: 'Generas evidencia real', desc: 'El diagnóstico combina lectura, escucha, gramática, vocabulario y construcción del discurso mediante tareas cerradas. No usa respuestas de autopercepción.' },
   { title: 'La ruta se adapta', desc: 'Un localizador abre la rama adecuada y una etapa de precisión —con confirmación si hace falta— mide tu límite funcional.' },
   { title: 'Ves un mapa honesto', desc: 'Recibes un nivel y rango por habilidad. Si falta evidencia o el perfil es desigual, el resultado lo dice explícitamente.' },
 ];

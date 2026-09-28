@@ -7,26 +7,25 @@ const report = JSON.parse(readFileSync(new URL('../docs/diagnostic-bank-readines
 test('readiness report distinguishes authored drafts from operational capacity', () => {
   assert.equal(report.reportVersion, 'diagnostic-bank-readiness-v2');
   assert.equal(report.releaseReady, false);
-  assert.equal(report.summary.requiredObjectiveDecisions, 288);
-  assert.equal(report.summary.reservedDraftObjectiveDecisions, 216);
+  assert.equal(report.summary.requiredObjectiveDecisions, 360);
+  assert.equal(report.summary.reservedDraftObjectiveDecisions, 288);
   assert.equal(report.summary.nonReservedDraftObjectiveDecisions, 24);
   assert.equal(report.summary.operationalObjectiveDecisions, 0);
   assert.equal(report.summary.approvedSelectableObjectiveDecisions, 0);
-  assert.equal(report.summary.objectiveCellsRequired, 24);
-  assert.equal(report.summary.objectiveCellsWithDraftCapacity, 18);
+  assert.equal(report.summary.objectiveCellsRequired, 30);
+  assert.equal(report.summary.objectiveCellsWithDraftCapacity, 24);
 });
 
 test('readiness report carries a privacy-safe cue audit for every reserved objective draft', () => {
   assert.equal(report.cueAudit.auditVersion, 'diagnostic-item-cue-audit-v2');
-  assert.equal(report.summary.cueAuditReviewedReservedDrafts, 216);
-  assert.equal(report.summary.cueAuditFlaggedForHumanReview, 0);
+  assert.equal(report.summary.cueAuditReviewedReservedDrafts, 288);
   assert.equal(report.summary.cueAuditBlockingDefects, 0);
   assert.deepEqual(report.cueAudit.totals, {
-    items: 216,
-    flaggedItems: 0,
+    items: 288,
+    flaggedItems: report.summary.cueAuditFlaggedForHumanReview,
     blockingItems: 0,
   });
-  assert.equal(report.cueAudit.cells.length, 18);
+  assert.equal(report.cueAudit.cells.length, 24);
   assert.ok(report.cueAudit.cells.every((cell) => !Object.hasOwn(cell, 'keyPositions')));
   assert.ok(!JSON.stringify(report.cueAudit).includes('optionId'));
   assert.ok(!JSON.stringify(report.cueAudit).includes('publicItem'));
@@ -52,8 +51,13 @@ test('recycled listening drafts do not count as reserved authoring capacity', ()
   }
 });
 
-test('writing has parallel drafts at every level but no false approvals', () => {
-  assert.equal(report.summary.writingDraftPrompts, 24);
-  assert.equal(report.summary.writingApprovedPrompts, 0);
-  assert.ok(report.writing.every((row) => row.reservedDraftPrompts === 4 && row.approvedPrompts === 0));
+test('written discourse has full objective draft cells while legacy writing remains unapproved', () => {
+  for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+    const cell = report.objectiveCells.find((candidate) => candidate.level === level && candidate.skill === 'written-discourse');
+    assert.equal(cell.authoringGap, 0);
+    assert.equal(cell.operationalGap, 12);
+  }
+  assert.equal(report.summary.legacyWritingDraftPrompts, 24);
+  assert.equal(report.summary.legacyWritingApprovedPrompts, 0);
+  assert.ok(report.legacyWriting.every((row) => row.reservedDraftPrompts === 4 && row.approvedPrompts === 0));
 });

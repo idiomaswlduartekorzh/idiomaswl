@@ -8,6 +8,7 @@ import {
   type DiagnosticSkill,
 } from '../../lib/diagnostic/types.ts';
 import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
+import { LOCATOR_OBJECTIVE_SKILLS } from '../../lib/diagnostic/mst.ts';
 import type { DiagnosticItemDriftMonitoringPolicy } from './delivery-policy.ts';
 import { reproduceDiagnosticStoredResponse } from './scoring.ts';
 import type { DiagnosticBankRecord } from './types.ts';
@@ -113,7 +114,7 @@ export interface DiagnosticPilotMeasurementEvidence {
   } | null;
 }
 
-const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = LOCATOR_OBJECTIVE_SKILLS;
 const ROUTES = ['low-a1-a2', 'mid-b1-b2', 'high-c1-c2'] as const;
 const CEFR_BOUNDARIES = ['A1/A2', 'A2/B1', 'B1/B2', 'B2/C1', 'C1/C2'] as const;
 const SHA256 = /^[a-f0-9]{64}$/u;
@@ -854,7 +855,11 @@ export function buildDiagnosticPilotReport(input: {
     const facility = rate(correct, attempted.length);
     const correctOptionIds = record.scoring.kind === 'short-text'
       ? new Set<string>()
-      : new Set(record.scoring.kind === 'single-choice' ? [record.scoring.optionId] : record.scoring.optionIds);
+      : record.scoring.kind === 'single-choice'
+        ? new Set([record.scoring.optionId])
+        : record.scoring.kind === 'ordering'
+          ? new Set(record.scoring.acceptedOrders.flat())
+          : new Set(record.scoring.optionIds);
     const distractorRates = optionIds.filter(optionId => !correctOptionIds.has(optionId))
       .map(optionId => ({ optionId, rate: rate(optionCounts.get(optionId) ?? 0, attempted.length) }));
     const flags: string[] = [];

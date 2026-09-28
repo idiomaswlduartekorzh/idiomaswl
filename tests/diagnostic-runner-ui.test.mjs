@@ -15,17 +15,18 @@ test('adaptive runner uses only server-issued stages and never bundles answer ke
   assert.doesNotMatch(client, /cambridge|toefl|ICFES_DIAGNOSTIC_QUESTIONS/);
 });
 
-test('runner supports resume, private audio, writing and uncertainty-aware results', () => {
+test('runner supports resume, private audio, discourse ordering and uncertainty-aware results', () => {
   assert.match(client, /welearn:diagnostic:active-attempt/);
   assert.match(client, /kind === 'processing'/);
   assert.match(client, /audioStimulus\.src/);
-  assert.match(client, /minimumWords/);
+  assert.match(client, /kind === 'ordering'/);
+  assert.match(client, /moveOrderingFragment/);
+  assert.match(client, /Usar este orden/);
   assert.match(client, /plausibleRange/);
   assert.match(client, /No sé \/ omitir/);
   assert.match(client, /readObjectiveDraft/);
   assert.match(client, /writeObjectiveDraft/);
-  assert.match(client, /readWritingDraft/);
-  assert.match(client, /writeWritingDraft/);
+  assert.match(client, /written-discourse/);
   assert.match(client, /recommendations/);
   assert.match(client, /import\('jspdf'\)/);
   assert.match(client, /nivel-radar-welearn\.pdf/);
@@ -42,10 +43,10 @@ test('audio readiness uses a real non-scored sample and explicit listener confir
   assert.match(client, /listeningAccommodation/);
 });
 
-test('runner standardizes writing assistance, explains consent scope and exposes data deletion', () => {
-  assert.match(client, /spellCheck=\{false\}/);
-  assert.match(client, /autoCorrect="off"/);
-  assert.match(client, /procesamiento externo de escritura requiere un consentimiento distinto/i);
+test('runner avoids free-text review, explains the objective construct and exposes data deletion', () => {
+  assert.match(client, /Todo se califica automáticamente/);
+  assert.match(client, /No enviamos texto libre a revisores ni proveedores externos/);
+  assert.match(client, /no acredita producción libre/i);
   assert.match(client, /Borrar mis datos diagnósticos/);
   assert.match(client, /confirmation: 'DELETE_DIAGNOSTIC_DATA'/);
 });

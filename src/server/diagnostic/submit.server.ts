@@ -3,19 +3,17 @@ import 'server-only';
 import { randomUUID } from 'node:crypto';
 
 import { ENGLISH_DIAGNOSTIC_BLUEPRINT } from '@/lib/diagnostic/blueprint';
-import type { DiagnosticObjectiveSkill, DiagnosticRouteId, DiagnosticSkillRouteMap } from '@/lib/diagnostic/types';
+import { LOCATOR_OBJECTIVE_SKILLS } from '@/lib/diagnostic/mst';
+import type { DiagnosticRouteId, DiagnosticSkillRouteMap } from '@/lib/diagnostic/types';
 import {
   DIAGNOSTIC_ENGINE_VERSION,
   parseDiagnosticObjectiveStageSubmitRequest,
-  parseDiagnosticWritingStageSubmitRequest,
 } from '@/lib/diagnostic/delivery';
 import { consumeExamReviewRateLimit } from '@/lib/exam-review/rate-limit.server';
 import { createClient } from '@/lib/supabase/server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
-  ENGLISH_DIAGNOSTIC_WRITING_BANK,
-  ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION,
 } from './bank';
 import {
   continueEnglishDiagnosticLocator,
@@ -25,10 +23,9 @@ import {
 import {
   loadDiagnosticObjectiveSubmissionContext,
   loadDiagnosticPriorExposure,
+  persistDiagnosticObjectiveCompletion,
   persistDiagnosticObjectiveStage,
-  persistDiagnosticWritingSubmission,
 } from './repository.server';
-import { submitEnglishDiagnosticWriting } from './writing-submit-core';
 import { logDiagnosticInternalFailure } from './observability';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'private, no-store, max-age=0' };
@@ -50,12 +47,6 @@ function locatorRequestedConfirmation(selectionReceipt: unknown): boolean {
     && (locator as Record<string, unknown>).requiresConfirmation === true);
 }
 
-function selectedWritingBankVersion(selectionReceipt: unknown): string | null {
-  if (!selectionReceipt || typeof selectionReceipt !== 'object' || Array.isArray(selectionReceipt)) return null;
-  const version = (selectionReceipt as Record<string, unknown>).writingBankVersion;
-  return typeof version === 'string' ? version : null;
-}
-
 function selectedListeningAccommodation(selectionReceipt: unknown): boolean {
   return Boolean(selectionReceipt && typeof selectionReceipt === 'object' && !Array.isArray(selectionReceipt)
     && (selectionReceipt as Record<string, unknown>).listeningAccommodation === true);
@@ -65,7 +56,7 @@ function selectedSkillRoutes(
   selectionReceipt: unknown,
   fallbackRouteId: DiagnosticRouteId,
 ): DiagnosticSkillRouteMap {
-  const skills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+  const skills = LOCATOR_OBJECTIVE_SKILLS;
   const routes: readonly DiagnosticRouteId[] = ['low-a1-a2', 'mid-b1-b2', 'high-c1-c2'];
   if (!selectionReceipt || typeof selectionReceipt !== 'object' || Array.isArray(selectionReceipt)) {
     return Object.fromEntries(skills.map(skill => [skill, fallbackRouteId])) as DiagnosticSkillRouteMap;
@@ -111,8 +102,7 @@ export async function handleDiagnosticStageSubmission(
     return jsonError('INVALID_JSON', 'La solicitud no contiene JSON válido.', 400);
   }
   const objectiveSubmission = parseDiagnosticObjectiveStageSubmitRequest(body);
-  const writingSubmission = parseDiagnosticWritingStageSubmitRequest(body);
-  if (!objectiveSubmission && !writingSubmission) {
+  if (!objectiveSubmission) {
     return jsonError('INVALID_REQUEST', 'La respuesta enviada no es válida.', 400);
   }
 
@@ -130,17 +120,14 @@ export async function handleDiagnosticStageSubmission(
   try {
     const context = await loadDiagnosticObjectiveSubmissionContext({ ...identifiers, userId: user.id });
     if (!context) return jsonError('NOT_FOUND', 'Intento no encontrado.', 404);
-    const submissionVersion = context.stage.kind === 'writing'
-      ? writingSubmission?.attemptVersion
-      : objectiveSubmission?.attemptVersion;
+    const submissionVersion = objectiveSubmission.attemptVersion;
     if (submissionVersion === undefined) {
       return jsonError('INVALID_REQUEST', 'La respuesta no corresponde a la etapa activa.', 400);
     }
     const replayStatuses = context.stage.kind === 'locator' ? ['precision']
-      : context.stage.kind === 'precision' ? ['confirmation', 'writing']
-        : context.stage.kind === 'confirmation' ? ['writing']
-          : context.stage.kind === 'writing' ? ['scoring']
-            : [];
+      : context.stage.kind === 'precision' ? ['confirmation', 'completed']
+        : context.stage.kind === 'confirmation' ? ['completed']
+          : [];
     const idempotentReplayVersion = Boolean(context.stage.completedAt)
       && replayStatuses.includes(context.attempt.status)
       && submissionVersion === context.attempt.version - 1;
@@ -152,7 +139,7 @@ export async function handleDiagnosticStageSubmission(
       || context.engineVersion !== DIAGNOSTIC_ENGINE_VERSION) {
       return jsonError('VERSION_UNAVAILABLE', 'Esta versión del diagnóstico ya no está disponible.', 409);
     }
-    if (!['locator', 'precision', 'confirmation', 'writing'].includes(context.stage.kind) || context.stage.stageId !== identifiers.stageId) {
+    if (!['locator', 'precision', 'confirmation'].includes(context.stage.kind) || context.stage.stageId !== identifiers.stageId) {
       return jsonError('STAGE_OUT_OF_ORDER', 'La etapa ya no está activa.', 409);
     }
     const submissionTime = new Date();
@@ -162,26 +149,6 @@ export async function handleDiagnosticStageSubmission(
       since: new Date(submissionTime.getTime() - context.exposureLookbackDays * 86_400_000),
       excludeAttemptId: context.attempt.id,
     });
-    if (context.stage.kind === 'writing') {
-      if (selectedWritingBankVersion(context.selectionReceipt) !== ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION) {
-        return jsonError('VERSION_UNAVAILABLE', 'Esta versión de la consigna ya no está disponible.', 409);
-      }
-      const prompt = ENGLISH_DIAGNOSTIC_WRITING_BANK.find(record =>
-        record.publicPrompt.id === context.stage.itemIds[0]
-        && record.publicPrompt.contentVersion === context.stage.contentVersions[record.publicPrompt.id])?.publicPrompt;
-      if (!prompt || !writingSubmission) {
-        return jsonError('VERSION_UNAVAILABLE', 'Esta versión de la consigna ya no está disponible.', 409);
-      }
-      const result = await submitEnglishDiagnosticWriting({
-        authenticatedUserId: user.id,
-        attempt: context.attempt,
-        stage: context.stage,
-        prompt,
-        submission: writingSubmission,
-      }, { now: () => new Date(), persist: persistDiagnosticWritingSubmission });
-      return Response.json({ ok: true, submission: result }, { status: 202, headers: NO_STORE_HEADERS });
-    }
-    if (!objectiveSubmission) return jsonError('INVALID_REQUEST', 'Las respuestas enviadas no son válidas.', 400);
     const bankById = new Map(ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK.map((record) => [record.publicItem.id, record]));
     const stageRecords = context.stage.itemIds.map((itemId) => bankById.get(itemId));
     if (stageRecords.some((record) => !record)) {
@@ -193,8 +160,10 @@ export async function handleDiagnosticStageSubmission(
       now: () => submissionTime,
       newId: randomUUID,
       persist: persistDiagnosticObjectiveStage,
+      persistCompletion: persistDiagnosticObjectiveCompletion,
+      bankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
+      resultValidityDays: context.resultValidityDays,
       excludedObjectiveItemIds: new Set(priorExposure.objectiveItemIds),
-      excludedWritingPromptIds: new Set(priorExposure.writingPromptIds),
     };
     let result;
     if (context.stage.kind === 'locator') {
@@ -218,11 +187,7 @@ export async function handleDiagnosticStageSubmission(
         skillRoutes: selectedSkillRoutes(context.selectionReceipt, context.attempt.routeId),
         listeningAccommodation: selectedListeningAccommodation(context.selectionReceipt),
         submissions: objectiveSubmission.responses,
-      }, {
-        ...sharedDependencies,
-        writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
-        writingBankVersion: ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION,
-      });
+      }, sharedDependencies);
     } else {
       result = await continueEnglishDiagnosticConfirmation({
         authenticatedUserId: user.id,
@@ -231,13 +196,15 @@ export async function handleDiagnosticStageSubmission(
         stageRecords: stageRecords as typeof ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
         priorObservations: context.priorObservations,
         submissions: objectiveSubmission.responses,
-      }, {
-        ...sharedDependencies,
-        writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
-        writingBankVersion: ENGLISH_DIAGNOSTIC_WRITING_BANK_VERSION,
-      });
+      }, sharedDependencies);
     }
-    return Response.json({ ok: true, delivery: result.delivery }, { status: 200, headers: NO_STORE_HEADERS });
+    const delivery = 'delivery' in result ? result.delivery : undefined;
+    const resultProfile = 'resultProfile' in result ? result.resultProfile : undefined;
+    return Response.json({
+      ok: true,
+      ...(delivery ? { delivery } : {}),
+      ...(resultProfile ? { resultProfile } : {}),
+    }, { status: 200, headers: NO_STORE_HEADERS });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'unknown';
     if (message.includes('expired')) return jsonError('ATTEMPT_EXPIRED', 'El intento expiró.', 410);

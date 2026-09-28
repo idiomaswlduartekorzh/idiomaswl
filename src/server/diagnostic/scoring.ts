@@ -51,6 +51,17 @@ export function validateDiagnosticResponseForRecord(input: {
       throw new Error(`${input.record.publicItem.id}: unexpected selection count`);
     }
   }
+  if (response.kind === 'ordering' && contract.kind === 'ordering') {
+    if (response.optionIds.length !== 0 && response.optionIds.length !== contract.optionIds.length) {
+      throw new Error(`${input.record.publicItem.id}: incomplete ordering`);
+    }
+    if (new Set(response.optionIds).size !== response.optionIds.length) {
+      throw new Error(`${input.record.publicItem.id}: duplicate ordering option`);
+    }
+    if (response.optionIds.some(optionId => !contract.optionIds.includes(optionId))) {
+      throw new Error(`${input.record.publicItem.id}: unknown ordering option`);
+    }
+  }
   if (response.kind === 'short-text' && contract.kind === 'short-text'
     && wordCount(response.value) > contract.maxWords) {
     throw new Error(`${input.record.publicItem.id}: short response exceeds its word limit`);
@@ -117,7 +128,7 @@ export function toDiagnosticPublicItem(
 
 function isOmitted(response: DiagnosticSubmittedResponse): boolean {
   if (response.kind === 'single-choice') return response.optionId === null;
-  if (response.kind === 'multiple-choice') return response.optionIds.length === 0;
+  if (response.kind === 'multiple-choice' || response.kind === 'ordering') return response.optionIds.length === 0;
   return response.value.trim().length === 0;
 }
 
@@ -137,6 +148,10 @@ export function scoreDiagnosticResponse(
   }
   if (key.kind === 'multiple-choice' && response.kind === 'multiple-choice') {
     return canonicalIds(response.optionIds) === canonicalIds(key.optionIds) ? 'correct' : 'incorrect';
+  }
+  if (key.kind === 'ordering' && response.kind === 'ordering') {
+    const submitted = response.optionIds.join('\u0000');
+    return key.acceptedOrders.some(order => submitted === order.join('\u0000')) ? 'correct' : 'incorrect';
   }
   if (key.kind === 'short-text' && response.kind === 'short-text') {
     const normalized = response.value.trim().toLocaleLowerCase('en');

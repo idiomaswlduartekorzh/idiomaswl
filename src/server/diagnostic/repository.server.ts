@@ -6,7 +6,7 @@ import type { DiagnosticAttemptSnapshot } from './continue-core';
 import type { DiagnosticObjectiveObservation } from './measurement';
 import type { DiagnosticStoredResponseEvidence } from './scoring';
 import type { PersistDiagnosticAttemptInput } from './start-core';
-import type { PersistObjectiveStageInput } from './continue-core';
+import type { PersistObjectiveCompletionInput, PersistObjectiveStageInput } from './continue-core';
 import type { PersistWritingSubmissionInput } from './writing-submit-core';
 import type { DiagnosticScoringAttempt, PersistDiagnosticFinalizationInput } from './finalize-core';
 import type { DiagnosticAutomatedWritingEvaluation, DiagnosticHumanWritingEvaluation } from './writing';
@@ -522,6 +522,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
   blueprintVersion: string;
   engineVersion: string;
   exposureLookbackDays: number;
+  resultValidityDays: number;
 } | null> {
   const admin = createAdminClient();
   const [
@@ -530,7 +531,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
     { data: priorResponses, error: responsesError },
   ] = await Promise.all([
     admin.from('diagnostic_attempts')
-      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version,exposure_lookback_days')
+      .select('id,user_id,version,status,route_id,expires_at,bank_version,blueprint_version,engine_version,exposure_lookback_days,result_validity_days')
       .eq('id', input.attemptId).eq('user_id', input.userId).maybeSingle(),
     admin.from('diagnostic_stages')
       .select('id,attempt_id,user_id,stage_index,kind,route_id,status,item_ids,content_versions,selection_receipt,issued_at,completed_at')
@@ -543,6 +544,8 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
   if (!attempt || !stage) return null;
   if (!Number.isInteger(attempt.version) || !Number.isInteger(attempt.exposure_lookback_days)
     || attempt.exposure_lookback_days < 1 || attempt.exposure_lookback_days > 730
+    || !Number.isInteger(attempt.result_validity_days)
+    || attempt.result_validity_days < 1 || attempt.result_validity_days > 730
     || !Array.isArray(stage.item_ids)
     || !Number.isInteger(stage.stage_index)
     || !stage.content_versions || typeof stage.content_versions !== 'object'
@@ -578,6 +581,7 @@ export async function loadDiagnosticObjectiveSubmissionContext(input: {
     blueprintVersion: String(attempt.blueprint_version),
     engineVersion: String(attempt.engine_version),
     exposureLookbackDays: Number(attempt.exposure_lookback_days),
+    resultValidityDays: Number(attempt.result_validity_days),
   };
 }
 
@@ -688,6 +692,44 @@ export async function persistDiagnosticObjectiveStage(
       ...(row.completed_at ? { completedAt: String(row.completed_at) } : {}),
     },
   };
+}
+
+export async function persistDiagnosticObjectiveCompletion(
+  input: PersistObjectiveCompletionInput,
+): Promise<{ replayed: boolean; version: number }> {
+  const { data, error } = await createAdminClient().rpc('complete_diagnostic_objective_attempt', {
+    p_attempt_id: input.attempt.id,
+    p_stage_id: input.stage.stageId,
+    p_user_id: input.attempt.userId,
+    p_expected_attempt_version: input.attempt.version,
+    p_submission_digest: input.submissionDigest,
+    p_responses: input.scoredResponses.map(response => ({
+      itemId: response.itemId,
+      contentVersion: response.contentVersion,
+      skill: response.skill,
+      response: response.response,
+      outcome: response.outcome,
+      responseMs: response.responseMs,
+      audioPlayCount: response.audioPlayCount,
+    })),
+    p_result_profile: input.resultProfile,
+  });
+  if (error || !data || typeof data !== 'object') {
+    logDiagnosticInternalFailure({ component: 'persistence', reason: 'objective-completion-persistence-failed' });
+    const knownCode = [
+      'diagnostic_stage_already_completed', 'diagnostic_attempt_version_conflict',
+      'diagnostic_attempt_expired', 'diagnostic_stage_out_of_order',
+      'diagnostic_response_binding_invalid', 'diagnostic_response_count_invalid',
+      'diagnostic_result_invalid',
+    ].find(code => error?.message.includes(code));
+    if (knownCode) throw new Error(knownCode);
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  const result = data as { replayed?: unknown; version?: unknown };
+  if (typeof result.replayed !== 'boolean' || !Number.isInteger(result.version)) {
+    throw new Error('diagnostic_persistence_unavailable');
+  }
+  return { replayed: result.replayed, version: Number(result.version) };
 }
 
 export async function persistDiagnosticWritingSubmission(

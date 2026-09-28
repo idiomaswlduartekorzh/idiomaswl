@@ -4,17 +4,17 @@
   "releaseReady": false,
   "note": "Draft counts and automated cue checks show editorial progress only. They are not human-approved, calibrated, or selectable.",
   "summary": {
-    "requiredObjectiveDecisions": 288,
-    "reservedDraftObjectiveDecisions": 216,
+    "requiredObjectiveDecisions": 360,
+    "reservedDraftObjectiveDecisions": 288,
     "nonReservedDraftObjectiveDecisions": 24,
     "operationalObjectiveDecisions": 0,
     "approvedSelectableObjectiveDecisions": 0,
-    "objectiveCellsWithDraftCapacity": 18,
-    "objectiveCellsRequired": 24,
-    "writingDraftPrompts": 24,
-    "writingApprovedPrompts": 0,
-    "cueAuditReviewedReservedDrafts": 216,
-    "cueAuditFlaggedForHumanReview": 0,
+    "objectiveCellsWithDraftCapacity": 24,
+    "objectiveCellsRequired": 30,
+    "legacyWritingDraftPrompts": 24,
+    "legacyWritingApprovedPrompts": 0,
+    "cueAuditReviewedReservedDrafts": 288,
+    "cueAuditFlaggedForHumanReview": 1,
     "cueAuditBlockingDefects": 0
   },
   "objectiveCells": [
@@ -56,6 +56,24 @@
     },
     {
       "level": "A1",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "A1",
       "skill": "grammar",
       "requirements": {
         "decisions": 12,
@@ -125,6 +143,24 @@
       "authoringGap": 12,
       "operationalGap": 12,
       "stimulusAuthoringGap": 6
+    },
+    {
+      "level": "A2",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
     },
     {
       "level": "A2",
@@ -200,6 +236,24 @@
     },
     {
       "level": "B1",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "B1",
       "skill": "grammar",
       "requirements": {
         "decisions": 12,
@@ -272,6 +326,24 @@
     },
     {
       "level": "B2",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "B2",
       "skill": "grammar",
       "requirements": {
         "decisions": 12,
@@ -344,6 +416,24 @@
     },
     {
       "level": "C1",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "C1",
       "skill": "grammar",
       "requirements": {
         "decisions": 12,
@@ -416,6 +506,24 @@
     },
     {
       "level": "C2",
+      "skill": "written-discourse",
+      "requirements": {
+        "decisions": 12,
+        "distinctStimuli": 6
+      },
+      "authored": {
+        "reservedDraftDecisions": 12,
+        "nonReservedDraftDecisions": 0,
+        "reservedDraftDistinctStimuli": 12
+      },
+      "approvedPilotDecisions": 0,
+      "operationalDecisions": 0,
+      "authoringGap": 0,
+      "operationalGap": 12,
+      "stimulusAuthoringGap": 0
+    },
+    {
+      "level": "C2",
       "skill": "grammar",
       "requirements": {
         "decisions": 12,
@@ -451,7 +559,7 @@
       "stimulusAuthoringGap": null
     }
   ],
-  "writing": [
+  "legacyWriting": [
     {
       "level": "A1",
       "requiredParallelPrompts": 4,
@@ -494,8 +602,8 @@
     "privacy": "Aggregate-only report: no item identifiers, content, scoring keys, key positions, or rationales.",
     "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
     "totals": {
-      "items": 216,
-      "flaggedItems": 0,
+      "items": 288,
+      "flaggedItems": 1,
       "blockingItems": 0
     },
     "cells": [
@@ -524,6 +632,16 @@
         "findings": {}
       },
       {
+        "level": "A1",
+        "skill": "written-discourse",
+        "items": 12,
+        "flaggedItems": 1,
+        "blockingItems": 0,
+        "findings": {
+          "ORDERING_SEQUENCE_MARKER_CUE": 1
+        }
+      },
+      {
         "level": "A2",
         "skill": "grammar",
         "items": 12,
@@ -542,6 +660,14 @@
       {
         "level": "A2",
         "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "A2",
+        "skill": "written-discourse",
         "items": 12,
         "flaggedItems": 0,
         "blockingItems": 0,
@@ -572,6 +698,14 @@
         "findings": {}
       },
       {
+        "level": "B1",
+        "skill": "written-discourse",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
         "level": "B2",
         "skill": "grammar",
         "items": 12,
@@ -590,6 +724,14 @@
       {
         "level": "B2",
         "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "B2",
+        "skill": "written-discourse",
         "items": 12,
         "flaggedItems": 0,
         "blockingItems": 0,
@@ -620,6 +762,14 @@
         "findings": {}
       },
       {
+        "level": "C1",
+        "skill": "written-discourse",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
         "level": "C2",
         "skill": "grammar",
         "items": 12,
@@ -638,6 +788,14 @@
       {
         "level": "C2",
         "skill": "vocabulary",
+        "items": 12,
+        "flaggedItems": 0,
+        "blockingItems": 0,
+        "findings": {}
+      },
+      {
+        "level": "C2",
+        "skill": "written-discourse",
         "items": 12,
         "flaggedItems": 0,
         "blockingItems": 0,

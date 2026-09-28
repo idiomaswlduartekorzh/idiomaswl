@@ -7,7 +7,7 @@ import {
   type DiagnosticSkill,
 } from './types.ts';
 
-export const DIAGNOSTIC_BLUEPRINT_VERSION = 'welearn-english-placement-v1';
+export const DIAGNOSTIC_BLUEPRINT_VERSION = 'welearn-english-placement-v2';
 
 export interface DiagnosticDimensionBlueprint {
   skill: DiagnosticSkill;
@@ -36,7 +36,6 @@ export interface DiagnosticBlueprint {
   };
   precision: { minimumDecisions: number; maximumDecisions: number };
   routes: readonly DiagnosticRouteBlueprint[];
-  writing: { tasksPerAttempt: 1; promptVariantsPerLevel: number };
   maximumMinutes: number;
 }
 
@@ -62,12 +61,12 @@ export const ENGLISH_DIAGNOSTIC_BLUEPRINT: DiagnosticBlueprint = {
       minimumDistinctStimuli: 3,
     },
     {
-      skill: 'writing',
-      label: 'Escritura',
-      construct: 'Producir un texto pertinente, comprensible y organizado con recursos lingüísticos adecuados a la tarea.',
-      subdomains: ['task-fulfilment', 'organisation', 'grammar-control', 'vocabulary-control'],
-      minimumDecisions: 1,
-      minimumDistinctStimuli: 1,
+      skill: 'written-discourse',
+      label: 'Construcción del discurso escrito',
+      construct: 'Reconocer, organizar y revisar relaciones de coherencia, cohesión, propósito, audiencia y estructura en textos escritos mediante tareas cerradas.',
+      subdomains: ['organisation-sequencing', 'cohesion-reference', 'rhetorical-relations', 'audience-register', 'revision-coherence'],
+      minimumDecisions: 7,
+      minimumDistinctStimuli: 6,
     },
     {
       skill: 'grammar',
@@ -87,17 +86,16 @@ export const ENGLISH_DIAGNOSTIC_BLUEPRINT: DiagnosticBlueprint = {
     },
   ],
   locator: {
-    decisions: 12,
+    decisions: 15,
     targetLevels: ['A2', 'B1', 'B2'],
-    decisionsPerObjectiveSkill: { reading: 3, listening: 3, grammar: 3, vocabulary: 3 },
+    decisionsPerObjectiveSkill: { reading: 3, listening: 3, 'written-discourse': 3, grammar: 3, vocabulary: 3 },
   },
-  precision: { minimumDecisions: 16, maximumDecisions: 24 },
+  precision: { minimumDecisions: 20, maximumDecisions: 30 },
   routes: [
     { id: 'low-a1-a2', levels: ['A1', 'A2'], label: 'Fundamentos' },
     { id: 'mid-b1-b2', levels: ['B1', 'B2'], label: 'Independencia' },
     { id: 'high-c1-c2', levels: ['C1', 'C2'], label: 'Dominio avanzado' },
   ],
-  writing: { tasksPerAttempt: 1, promptVariantsPerLevel: 4 },
   maximumMinutes: 75,
 };
 
@@ -105,42 +103,42 @@ export const ENGLISH_LEVEL_EVIDENCE: Readonly<Record<CefrLevel, Readonly<Record<
   A1: {
     reading: 'Localiza nombres, cifras y mensajes muy breves en material cotidiano con apoyo contextual.',
     listening: 'Reconoce información concreta en habla lenta, clara y familiar.',
-    writing: 'Produce frases simples sobre información personal y necesidades inmediatas.',
+    'written-discourse': 'Reconoce secuencias cotidianas, referencias explícitas y conectores básicos en textos muy breves.',
     grammar: 'Controla patrones memorizados y estructuras elementales, aunque con errores frecuentes.',
     vocabulary: 'Dispone de palabras y expresiones básicas para situaciones personales inmediatas.',
   },
   A2: {
     reading: 'Comprende textos breves y previsibles y localiza información específica de alta frecuencia.',
     listening: 'Comprende el punto esencial y detalles previsibles en mensajes claros sobre asuntos cotidianos.',
-    writing: 'Conecta frases sencillas para describir experiencias, rutinas y necesidades conocidas.',
+    'written-discourse': 'Organiza mensajes breves y reconoce cronología, causa, contraste y referencias frecuentes.',
     grammar: 'Usa estructuras simples frecuentes con control suficiente para mantener el significado.',
     vocabulary: 'Maneja repertorio para rutinas, transacciones y temas personales, con reformulación limitada.',
   },
   B1: {
     reading: 'Comprende los puntos principales y evidencia explícita en textos claros sobre temas familiares.',
     listening: 'Sigue las ideas principales y detalles relevantes de habla estándar claramente articulada.',
-    writing: 'Produce texto conectado y comprensible sobre experiencias, opiniones y asuntos familiares.',
+    'written-discourse': 'Organiza párrafos conectados y distingue idea principal, apoyo, contraste y consecuencia explícita.',
     grammar: 'Combina estructuras frecuentes con control razonable, aunque persisten errores no sistemáticos.',
     vocabulary: 'Tiene rango suficiente para explicar temas familiares y sortear vacíos mediante paráfrasis.',
   },
   B2: {
     reading: 'Comprende argumentos, postura y detalle en textos de complejidad concreta y abstracta moderada.',
     listening: 'Sigue discurso extendido y argumentación cuando la organización y el tema son razonablemente accesibles.',
-    writing: 'Desarrolla textos claros y detallados, organiza argumentos y sostiene una posición pertinente.',
+    'written-discourse': 'Organiza y revisa textos argumentativos breves y reconoce relaciones de apoyo, concesión y propósito.',
     grammar: 'Usa variedad de estructuras con buen control y errores que rara vez dificultan la comprensión.',
     vocabulary: 'Selecciona vocabulario amplio con control de colocación, matiz y registro en temas generales.',
   },
   C1: {
     reading: 'Interpreta textos largos y exigentes, relaciones implícitas, postura, tono y organización discursiva.',
     listening: 'Comprende discurso extenso incluso cuando las relaciones no están señaladas explícitamente.',
-    writing: 'Produce textos bien estructurados y precisos, adaptados al propósito, lector y registro.',
+    'written-discourse': 'Reconstruye arquitectura textual, relaciones implícitas y elecciones de registro con matización.',
     grammar: 'Mantiene control alto sobre un repertorio amplio de estructuras complejas.',
     vocabulary: 'Usa repertorio amplio, idiomático y flexible con selección precisa y escasa búsqueda visible.',
   },
   C2: {
     reading: 'Comprende prácticamente cualquier texto y discrimina matices de estilo, implicación y significado.',
     listening: 'Comprende habla rápida o densa y reconstruye matices e implicaciones con poca dependencia del apoyo.',
-    writing: 'Produce textos complejos, fluidos y eficaces con arquitectura y estilo ajustados finamente al propósito.',
+    'written-discourse': 'Discrimina alcance lógico, presuposición, postura y revisiones globales entre alternativas plausibles.',
     grammar: 'Sostiene control consistente de estructuras complejas incluso al formular significado denso.',
     vocabulary: 'Explota un repertorio muy amplio con precisión de matiz, colocación, registro y efecto retórico.',
   },
@@ -169,9 +167,6 @@ export function validateDiagnosticBlueprint(blueprint: DiagnosticBlueprint): str
     if (dimension.minimumDecisions < 1) errors.push(`${dimension.skill} has no evidence floor`);
     if (dimension.minimumDistinctStimuli < 1) errors.push(`${dimension.skill} has no stimulus floor`);
     if (!dimension.construct.trim() || dimension.subdomains.length < 3) errors.push(`${dimension.skill} construct is incomplete`);
-  }
-  if (blueprint.writing.tasksPerAttempt !== 1 || blueprint.writing.promptVariantsPerLevel < 2) {
-    errors.push('writing requires one task per attempt and parallel prompt variants');
   }
   return errors;
 }

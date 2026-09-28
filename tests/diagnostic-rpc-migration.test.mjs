@@ -13,6 +13,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925034500_diagnostic_consent_evidence.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260928090000_diagnostic_written_discourse.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 
 test('diagnostic mutations are atomic security-invoker functions', () => {
@@ -22,9 +23,9 @@ test('diagnostic mutations are atomic security-invoker functions', () => {
   assert.match(sql, /create function public\.complete_diagnostic_attempt/);
   assert.match(sql, /create function public\.record_diagnostic_automated_writing_evaluation/);
   assert.match(sql, /create function public\.record_diagnostic_human_writing_evaluation/);
-  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 13);
+  assert.equal((sql.match(/\nsecurity invoker\n/g) ?? []).length, 15);
   assert.equal(sql.includes('security definer'), false);
-  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 13);
+  assert.equal((sql.match(/set search_path = ''/g) ?? []).length, 15);
 });
 
 test('only service_role can execute diagnostic mutation functions', () => {
@@ -107,4 +108,13 @@ test('attempt creation stores server-validated consent evidence and defaults ext
   assert.match(sql, /p_result_validity_days integer/);
   assert.match(sql, /p_exposure_lookback_days integer/);
   assert.match(sql, /pg_advisory_xact_lock/);
+});
+
+test('objective-only completion is atomic, idempotent and service-role-only', () => {
+  assert.match(sql, /create function public\.complete_diagnostic_objective_attempt/);
+  assert.match(sql, /v_attempt\.status not in \('precision','confirmation'\)/);
+  assert.match(sql, /set status = 'completed', result_profile = p_result_profile/);
+  assert.match(sql, /v_stage\.submission_digest = p_submission_digest and v_attempt\.status = 'completed'[\s\S]+?'replayed', true/);
+  assert.match(sql, /revoke all on function public\.complete_diagnostic_objective_attempt\([\s\S]+?from public, anon, authenticated, service_role;/);
+  assert.match(sql, /grant execute on function public\.complete_diagnostic_objective_attempt\([\s\S]+?to service_role;/);
 });

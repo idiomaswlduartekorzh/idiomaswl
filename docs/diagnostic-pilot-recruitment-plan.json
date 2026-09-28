@@ -1,18 +1,18 @@
 {
   "planVersion": "diagnostic-pilot-recruitment-plan-v1",
   "criteriaVersion": "english-diagnostic-pilot-criteria-v2",
-  "blueprintVersion": "welearn-english-placement-v1",
+  "blueprintVersion": "welearn-english-placement-v2",
   "simulationVersion": "diagnostic-mst-simulation-v3",
   "status": "planning-floor-not-publication-decision",
   "assumptions": {
-    "objectiveItems": 288,
+    "objectiveItems": 360,
     "minimumResponsesPerItem": 200,
-    "requiredItemResponses": 57600,
+    "requiredItemResponses": 72000,
     "minimumCompletionRate": 0.75,
-    "minimumObjectiveDecisionsPerCompletedAttempt": 28,
-    "maximumObjectiveDecisionsPerCompletedAttempt": 36,
-    "simulatedWeightedConfirmationRate": 0.220167,
-    "simulatedExpectedObjectiveDecisionsPerCompletedAttempt": 29.761
+    "minimumObjectiveDecisionsPerCompletedAttempt": 35,
+    "maximumObjectiveDecisionsPerCompletedAttempt": 45,
+    "simulatedWeightedConfirmationRate": 0.195833,
+    "simulatedExpectedObjectiveDecisionsPerCompletedAttempt": 36.958
   },
   "itemCalibrationLowerBounds": {
     "absoluteBestCase": {
@@ -21,8 +21,8 @@
       "interpretation": "Every completed attempt would need the maximum objective form length and perfectly useful exposure."
     },
     "simulationExpectedFormLength": {
-      "completedAttempts": 1936,
-      "startedAttempts": 2582,
+      "completedAttempts": 1949,
+      "startedAttempts": 2599,
       "interpretation": "Uses the current balanced-cohort routing simulation only; adaptive exposure imbalance can require more."
     },
     "withoutConfirmation": {
@@ -33,15 +33,15 @@
   },
   "routeExposureLowerBounds": {
     "routes": 3,
-    "objectiveItemsPerRoute": 96,
-    "requiredItemResponsesPerRoute": 19200,
+    "objectiveItemsPerRoute": 120,
+    "requiredItemResponsesPerRoute": 24000,
     "bestCaseCompletedPerRoute": 800,
     "bestCaseCompletedAcrossRoutes": 2400,
     "bestCaseStartedAcrossRoutes": 3200,
-    "simulatedExpectedRouteDecisionsPerCompletedAttempt": 17.761,
-    "simulationExpectedCompletedPerRoute": 1081,
-    "simulationExpectedCompletedAcrossRoutes": 3243,
-    "simulationExpectedStartedAcrossRoutes": 4324,
+    "simulatedExpectedRouteDecisionsPerCompletedAttempt": 21.958,
+    "simulationExpectedCompletedPerRoute": 1093,
+    "simulationExpectedCompletedAcrossRoutes": 3279,
+    "simulationExpectedStartedAcrossRoutes": 4372,
     "withoutConfirmationCompletedPerRoute": 1200,
     "withoutConfirmationCompletedAcrossRoutes": 3600,
     "withoutConfirmationStartedAcrossRoutes": 4800,

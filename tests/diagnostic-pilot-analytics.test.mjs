@@ -91,7 +91,7 @@ const measurementEvidence = {
     aggregateDatasetSha256: '1'.repeat(64), analysisCodeSha256: '2'.repeat(64),
     analysisRunId: 'fixture-analysis-1',
   },
-  adaptiveReliability: ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => ({
+  adaptiveReliability: ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map(skill => ({
     skill, sampleSize: 12, coefficient: 0.85, method: 'route-aware-resampling',
   })),
   classificationConsistency: { sampleSize: 12, coefficient: 0.84, method: 'bootstrap-classification' },
@@ -100,7 +100,7 @@ const measurementEvidence = {
     minimumPairSample: 12, maximumObservedAbsoluteResidualCorrelation: 0.12,
     flaggedTestlets: 0, unresolvedMaterialTestlets: 0, resolutionReference: null,
   },
-  stabilityBySkill: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map(skill => ({
+  stabilityBySkill: ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map(skill => ({
     skill, pairs: 12, correlation: 0.8, withinOneLevel: 0.92, method: 'parallel-forms',
   })),
   fairness: {
@@ -140,7 +140,7 @@ test('pilot report aggregates attempts, item behavior, writing and independent r
   assert.deepEqual(report.attempts.completedRouteCounts, {
     'low-a1-a2': 4, 'mid-b1-b2': 4, 'high-c1-c2': 4,
   });
-  assert.equal(report.measurementEvidence.adaptiveReliability.bySkill.length, 4);
+  assert.equal(report.measurementEvidence.adaptiveReliability.bySkill.length, 5);
   assert.equal(report.measurementEvidence.localDependence.eligibleTestlets, 2);
   assert.equal(report.measurementEvidence.localDependence.unresolvedMaterialTestlets, 0);
   assert.equal(report.gates.localDependenceReview, true);

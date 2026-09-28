@@ -38,7 +38,7 @@ const base = {
 };
 
 function completedResultProfile() {
-  const objective = ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => ({
+  const objective = ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map(skill => ({
     skill, decisions: 6, distinctStimuli: skill === 'reading' || skill === 'listening' ? 3 : 6,
     attempted: 6, omitted: 0, observedAccuracy: 0.67,
     status: 'provisional', estimatedLevel: 'B1', plausibleRange: ['A2', 'B2'], confidence: 0.61,
@@ -48,10 +48,7 @@ function completedResultProfile() {
     attemptId: attempt.id,
     blueprintVersion: base.blueprintVersion,
     bankVersion: base.objectiveBankVersion,
-    skills: [...objective, {
-      skill: 'writing', decisions: 1, distinctStimuli: 1, status: 'provisional',
-      reviewStatus: 'human-reviewed', estimatedLevel: 'B1', plausibleRange: ['B1', 'B1'], confidence: 0.7,
-    }],
+    skills: objective,
     generatedAt: '2026-09-24T13:00:00.000Z',
     validUntil: '2026-10-24T13:00:00.000Z',
   });

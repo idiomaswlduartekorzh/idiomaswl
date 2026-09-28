@@ -2,12 +2,16 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
+import { LOCATOR_OBJECTIVE_SKILLS } from '../src/lib/diagnostic/mst.ts';
 import { simulateDiagnosticMst } from '../src/server/diagnostic/simulation.ts';
 
 const routeRank = { 'low-a1-a2': 0, 'mid-b1-b2': 1, 'high-c1-c2': 2 };
 
 test('synthetic A1-C2 cohorts produce monotonic locator evidence', () => {
   const report = simulateDiagnosticMst(20260924, 2000);
+  assert.deepEqual(LOCATOR_OBJECTIVE_SKILLS, [
+    'reading', 'listening', 'written-discourse', 'grammar', 'vocabulary',
+  ]);
   assert.equal(report.cohorts.length, 6);
   for (let index = 1; index < report.cohorts.length; index += 1) {
     assert.ok(report.cohorts[index].meanCorrect > report.cohorts[index - 1].meanCorrect);
@@ -15,6 +19,7 @@ test('synthetic A1-C2 cohorts produce monotonic locator evidence', () => {
   for (const cohort of report.cohorts) {
     assert.equal(Object.values(cohort.routes).reduce((sum, count) => sum + count, 0), cohort.sampleSize);
     assert.ok(cohort.confirmationRate >= 0 && cohort.confirmationRate <= 1);
+    assert.ok(cohort.meanCorrect >= 0 && cohort.meanCorrect <= 15);
   }
 });
 

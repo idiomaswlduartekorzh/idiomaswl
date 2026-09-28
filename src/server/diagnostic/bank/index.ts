@@ -15,9 +15,10 @@ import {
 } from './release.ts';
 import { applyDiagnosticItemControls, type DiagnosticItemControlManifest } from './controls.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from './writing.en.ts';
+import { ENGLISH_DIAGNOSTIC_WRITTEN_DISCOURSE_CANDIDATES } from './written-discourse.en.ts';
 
 /** Versioned pilot registry. The approval manifest is empty until independent review is recorded. */
-export const ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION = 'en-objective-bank-pilot-v1';
+export const ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION = 'en-objective-bank-pilot-v2';
 const objectiveCandidates: readonly DiagnosticBankRecord[] = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
@@ -25,6 +26,7 @@ const objectiveCandidates: readonly DiagnosticBankRecord[] = [
   ...ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_WRITTEN_DISCOURSE_CANDIDATES,
 ];
 const approvedObjectiveBank = releaseApprovedObjectiveBank(
   objectiveCandidates,

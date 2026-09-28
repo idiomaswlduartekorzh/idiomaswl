@@ -10,12 +10,20 @@ import {
 import { toDiagnosticPublicItem } from '../src/server/diagnostic/scoring.ts';
 import { selectEnglishLocator, selectEnglishPrecisionStage } from '../src/server/diagnostic/selection.ts';
 
-const skills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
+const skills = DIAGNOSTIC_SKILLS;
+const discourseSubdomains = [
+  'organisation-sequencing', 'rhetorical-relations', 'cohesion-reference',
+  'audience-register', 'revision-coherence',
+];
 function record(skill, level, variant) {
   const id = `en-${level.toLowerCase()}-${skill}-${variant}`;
   return {
     publicItem: {
-      id, contentVersion: '1', language: 'en', skill, subdomain: 'fixture', levelCandidate: level, prompt: id,
+      id, contentVersion: '1', language: 'en', skill,
+      subdomain: skill === 'written-discourse'
+        ? discourseSubdomains[(variant - 1) % discourseSubdomains.length]
+        : 'fixture',
+      levelCandidate: level, prompt: id,
       stimulus: skill === 'listening'
         ? { kind: 'audio', mediaId: `audio-${id}`, src: `/private/${id}.mp3`, startMs: 0, endMs: 1000, maxPlays: 2 }
         : skill === 'reading' ? { kind: 'text', stimulusId: `text-${id}`, body: id } : { kind: 'none' },
@@ -58,7 +66,7 @@ test('scores locator server-side and atomically prepares a balanced precision st
   const { selected, stage } = locatorFixture();
   const priorExposure = new Set(bank
     .filter(item => ['C1', 'C2'].includes(item.publicItem.levelCandidate)
-      && Number(item.publicItem.id.split('-').at(-1)) > 2)
+      && Number(item.publicItem.id.split('-').at(-1)) > 5)
     .map(item => item.publicItem.id));
   let persisted;
   const result = await continueEnglishDiagnosticLocator({
@@ -77,7 +85,7 @@ test('scores locator server-side and atomically prepares a balanced precision st
   });
   assert.equal(result.routeDecision.routeId, 'high-c1-c2');
   assert.equal(result.delivery.attemptVersion, 2);
-  assert.equal(result.delivery.items.length, 16);
+  assert.equal(result.delivery.items.length, 20);
   const deliveredRecord = bank.find(item => item.publicItem.id === result.delivery.items[0].id);
   assert.deepEqual(result.delivery.items[0], toDiagnosticPublicItem(deliveredRecord, 'stage-precision'));
   assert.equal(result.delivery.items.some(item => stage.itemIds.includes(item.id)), false);
@@ -112,7 +120,7 @@ test('locator omission withholds listening precision without lowering the other 
   assert.equal(result.routeDecision.routeId, 'high-c1-c2');
   assert.equal(result.routeDecision.skillRoutes.listening, null);
   assert.equal(result.routeDecision.requiresConfirmation, true);
-  assert.equal(result.delivery.items.length, 12);
+  assert.equal(result.delivery.items.length, 16);
   assert.equal(result.delivery.items.some(item => item.skill === 'listening'), false);
   assert.deepEqual(persisted.nextSelectionReceipt.skillRoutes, result.routeDecision.skillRoutes);
 });
@@ -163,7 +171,7 @@ test('an identical retry returns the persisted precision stage without creating 
   assert.equal(result.delivery.attemptVersion, 2);
 });
 
-test('scores precision with prior evidence and atomically delivers a route-appropriate writing prompt', async () => {
+test('scores precision with prior evidence and atomically completes the objective profile', async () => {
   const locator = selectEnglishLocator(bank, 'prior-locator');
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'precision-seed', new Set(locator.records.map(record => record.publicItem.id)));
   const stage = {
@@ -184,29 +192,22 @@ test('scores precision with prior evidence and atomically delivers a route-appro
       responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
     })),
   }, {
-    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
-    excludedWritingPromptIds: new Set(writingBank
-      .filter(record => !record.publicPrompt.id.endsWith('-4'))
-      .map(record => record.publicPrompt.id)),
-    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'stage-writing',
-    persist: async input => { persisted = input; return { replayed: false, version: 3 }; },
+    bank, bankVersion: 'bank-v2', resultValidityDays: 30,
+    selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'unused-stage',
+    persist: async () => { throw new Error('confirmation must not be persisted'); },
+    persistCompletion: async input => { persisted = input; return { replayed: false, version: 3 }; },
   });
-  assert.equal(result.delivery.stage.kind, 'writing');
-  assert.equal(result.delivery.stage.stageId, 'stage-writing');
-  assert.equal(result.delivery.attemptVersion, 3);
-  assert.ok(['B1', 'B2'].includes(result.delivery.prompt.levelCandidate));
-  assert.match(result.delivery.prompt.id, /-4$/);
-  assert.equal(result.objectiveEvidence.length, 4);
+  assert.equal(result.delivery, undefined);
+  assert.equal(result.resultProfile.skills.length, 5);
+  assert.equal(result.resultProfile.skills.some(skill => skill.skill === 'written-discourse'), true);
+  assert.equal(result.objectiveEvidence.length, 5);
   assert.equal(result.objectiveEvidence.every(skill => skill.decisions === 7 && skill.status === 'provisional'), true);
-  assert.equal(persisted.nextStatus, 'writing');
-  assert.equal(persisted.nextStageIndex, 2);
-  assert.equal(persisted.nextSelectionReceipt.writingBankVersion, 'writing-bank-v1');
-  const serialized = JSON.stringify(result.delivery);
-  assert.equal(serialized.includes('scoring'), false);
-  assert.equal(serialized.includes('objectiveEvidence'), false);
+  assert.equal(persisted.resultProfile.bankVersion, 'bank-v2');
+  assert.equal(persisted.scoredResponses.length, 20);
 });
 
-test('an identical precision retry returns the persisted writing stage', async () => {
+test('an identical completed precision retry returns the same recomputed result contract', async () => {
   const locator = selectEnglishLocator(bank, 'prior-locator');
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'precision-seed', new Set(locator.records.map(record => record.publicItem.id)));
   const stage = {
@@ -217,7 +218,7 @@ test('an identical precision retry returns the persisted writing stage', async (
   };
   const result = await continueEnglishDiagnosticPrecision({
     authenticatedUserId: 'user-1',
-    attempt: { id: 'attempt-1', userId: 'user-1', version: 3, status: 'writing', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
+    attempt: { id: 'attempt-1', userId: 'user-1', version: 3, status: 'completed', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
     stage,
     stageRecords: precision.records,
     priorObservations: locator.records.map(record => ({ itemId: record.publicItem.id, outcome: 'correct' })),
@@ -226,18 +227,17 @@ test('an identical precision retry returns the persisted writing stage', async (
       responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
     })),
   }, {
-    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
-    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'discarded-writing-stage',
-    persist: async input => ({
-      replayed: true, version: 3,
-      nextStage: { ...input.nextStage, stageId: 'persisted-writing-stage', issuedAt: '2026-09-24T12:59:00.000Z' },
-    }),
+    bank, bankVersion: 'bank-v2', resultValidityDays: 30,
+    selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'unused-stage',
+    persist: async () => { throw new Error('confirmation must not be persisted'); },
+    persistCompletion: async () => ({ replayed: true, version: 3 }),
   });
-  assert.equal(result.delivery.stage.stageId, 'persisted-writing-stage');
-  assert.equal(result.delivery.attemptVersion, 3);
+  assert.equal(result.delivery, undefined);
+  assert.equal(result.resultProfile.attemptId, 'attempt-1');
 });
 
-test('adds a bounded confirmation stage for insufficient evidence, then proceeds to writing', async () => {
+test('adds a bounded confirmation stage for insufficient evidence, then completes objectively', async () => {
   const locator = selectEnglishLocator(bank, 'confirm-locator');
   const used = new Set(locator.records.map(record => record.publicItem.id));
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'confirm-precision', used);
@@ -261,12 +261,13 @@ test('adds a bounded confirmation stage for insufficient evidence, then proceeds
     stage: precisionStage, stageRecords: precision.records, priorObservations: priorLocator,
     locatorRequestedConfirmation: true, submissions: precisionSubmissions,
   }, {
-    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+    bank, bankVersion: 'bank-v2', resultValidityDays: 30, selectionSecret: 's'.repeat(32),
     now: () => new Date('2026-09-24T13:00:00.000Z'), newId: () => 'stage-confirmation',
     persist: async input => { precisionPersistence = input; return { replayed: false, version: 3 }; },
+    persistCompletion: async () => { throw new Error('must require confirmation'); },
   });
   assert.equal(confirmationResult.delivery.stage.kind, 'confirmation');
-  assert.equal(confirmationResult.delivery.items.length, 8);
+  assert.equal(confirmationResult.delivery.items.length, 10);
   assert.equal(confirmationResult.confirmationDecision.required, true);
   assert.ok(confirmationResult.confirmationDecision.reasons.includes('INSUFFICIENT_SKILL_EVIDENCE'));
   assert.equal(precisionPersistence.nextStatus, 'confirmation');
@@ -280,7 +281,7 @@ test('adds a bounded confirmation stage for insufficient evidence, then proceeds
     outcome: submission.response.optionId === null ? 'omitted' : 'correct',
   }));
   let confirmationPersistence;
-  const writingResult = await continueEnglishDiagnosticConfirmation({
+  const completedResult = await continueEnglishDiagnosticConfirmation({
     authenticatedUserId: 'user-1',
     attempt: { id: 'attempt-confirm', userId: 'user-1', version: 3, status: 'confirmation', routeId: 'mid-b1-b2', expiresAt: '2026-09-24T15:00:00.000Z' },
     stage: confirmationResult.delivery.stage,
@@ -291,21 +292,21 @@ test('adds a bounded confirmation stage for insufficient evidence, then proceeds
       responseMs: 1200, audioPlayCount: item.publicItem.skill === 'listening' ? 1 : 0,
     })),
   }, {
-    bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
-    now: () => new Date('2026-09-24T13:10:00.000Z'), newId: () => 'stage-writing-after-confirmation',
-    persist: async input => { confirmationPersistence = input; return { replayed: false, version: 4 }; },
+    bank, bankVersion: 'bank-v2', resultValidityDays: 30, selectionSecret: 's'.repeat(32),
+    now: () => new Date('2026-09-24T13:10:00.000Z'), newId: () => 'unused-stage',
+    persist: async () => { throw new Error('no further stage expected'); },
+    persistCompletion: async input => { confirmationPersistence = input; return { replayed: false, version: 4 }; },
   });
-  assert.equal(writingResult.delivery.stage.kind, 'writing');
-  assert.equal(writingResult.delivery.attemptVersion, 4);
-  assert.equal(confirmationPersistence.nextStatus, 'writing');
-  assert.equal(confirmationPersistence.nextStageIndex, 3);
-  assert.equal(writingResult.objectiveEvidence.find(skill => skill.skill === 'listening').decisions, 9);
+  assert.equal(completedResult.resultProfile.attemptId, 'attempt-confirm');
+  assert.equal(confirmationPersistence.resultProfile.skills.length, 5);
+  assert.equal(completedResult.objectiveEvidence.find(skill => skill.skill === 'listening').decisions, 9);
 });
 
 test('confirmation recovers accidental listening omission but honors an explicit accommodation', async () => {
   const locator = selectEnglishLocator(bank, 'omitted-listening-locator');
   const skillRoutes = {
-    reading: 'high-c1-c2', listening: null, grammar: 'high-c1-c2', vocabulary: 'high-c1-c2',
+    reading: 'high-c1-c2', listening: null, 'written-discourse': 'high-c1-c2',
+    grammar: 'high-c1-c2', vocabulary: 'high-c1-c2',
   };
   const precision = selectEnglishPrecisionStage(
     bank,
@@ -336,21 +337,22 @@ test('confirmation recovers accidental listening omission but honors an explicit
       stage, stageRecords: precision.records, priorObservations, skillRoutes,
       locatorRequestedConfirmation: true, listeningAccommodation, submissions,
     }, {
-      bank, writingBank, writingBankVersion: 'writing-bank-v1', selectionSecret: 's'.repeat(32),
+      bank, bankVersion: 'bank-v2', resultValidityDays: 30, selectionSecret: 's'.repeat(32),
       now: () => new Date('2026-09-24T13:00:00.000Z'),
       newId: () => `stage-confirm-${listeningAccommodation}`,
       persist: async input => ({ replayed: false, version: 3, nextStage: input.nextStage }),
+      persistCompletion: async () => { throw new Error('must require confirmation'); },
     });
   }
 
   const accidental = await run(false);
   assert.equal(accidental.delivery.stage.kind, 'confirmation');
-  assert.equal(accidental.delivery.items.length, 8);
+  assert.equal(accidental.delivery.items.length, 10);
   assert.equal(accidental.delivery.items.filter(item => item.skill === 'listening').length, 2);
 
   const accommodated = await run(true);
   assert.equal(accommodated.delivery.stage.kind, 'confirmation');
-  assert.equal(accommodated.delivery.items.length, 6);
+  assert.equal(accommodated.delivery.items.length, 8);
   assert.equal(accommodated.delivery.items.some(item => item.skill === 'listening'), false);
   assert.equal(accommodated.delivery.listeningAccommodation, true);
 });

@@ -39,10 +39,9 @@ test('objective submission route delegates through an authenticated server-only 
   assert.match(submitHandler, /request\.headers\.get\('origin'\)/);
   assert.match(submitHandler, /auth\.getUser\(\)/);
   assert.match(submitHandler, /parseDiagnosticObjectiveStageSubmitRequest/);
-  assert.match(submitHandler, /parseDiagnosticWritingStageSubmitRequest/);
   assert.match(submitHandler, /loadDiagnosticObjectiveSubmissionContext/);
   assert.match(submitHandler, /persistDiagnosticObjectiveStage/);
-  assert.match(submitHandler, /persistDiagnosticWritingSubmission/);
+  assert.match(submitHandler, /persistDiagnosticObjectiveCompletion/);
   assert.match(submitHandler, /ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK\.length === 0/);
 });
 

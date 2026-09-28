@@ -53,7 +53,7 @@ export interface DiagnosticWritingAgreement {
   requiresAdjudication: boolean;
 }
 
-export interface DiagnosticWritingSkillEvidence extends DiagnosticSkillEvidence {
+export interface DiagnosticWritingSkillEvidence extends Omit<DiagnosticSkillEvidence, 'skill'> {
   skill: 'writing';
   reviewStatus: 'awaiting-human' | 'awaiting-adjudication' | 'excluded' | 'human-reviewed';
   exclusionReasons?: readonly (

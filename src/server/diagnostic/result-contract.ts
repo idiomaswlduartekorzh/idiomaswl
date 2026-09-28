@@ -7,19 +7,14 @@ import {
   type DiagnosticSkill,
   type DiagnosticSkillEvidence,
 } from '../../lib/diagnostic/types.ts';
+import { LOCATOR_OBJECTIVE_SKILLS } from '../../lib/diagnostic/mst.ts';
 import {
   buildDiagnosticCompositeResult,
   type DiagnosticCompositeResult,
   type DiagnosticMeasuredSkillEvidence,
 } from './measurement.ts';
-import type { DiagnosticWritingAgreement, DiagnosticWritingSkillEvidence } from './writing.ts';
-
-const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
+const OBJECTIVE_SKILLS: readonly DiagnosticObjectiveSkill[] = LOCATOR_OBJECTIVE_SKILLS;
 const STATUSES = ['not-estimated', 'provisional', 'calibrated'] as const;
-const WRITING_REVIEW_STATUSES = ['human-reviewed', 'excluded'] as const;
-const WRITING_EXCLUSION_REASONS = [
-  'partially-off-task', 'off-task', 'prompt-copy', 'suspected-external-text', 'reviewer-excluded',
-] as const;
 
 function record(value: unknown): Record<string, unknown> | null {
   return value && typeof value === 'object' && !Array.isArray(value)
@@ -47,21 +42,6 @@ function parseRange(value: unknown): readonly [CefrLevel, CefrLevel] | null {
   if (!Array.isArray(value) || value.length !== 2 || !cefr(value[0]) || !cefr(value[1])) return null;
   if (CEFR_LEVELS.indexOf(value[0]) > CEFR_LEVELS.indexOf(value[1])) return null;
   return [value[0], value[1]];
-}
-
-function parseAgreement(value: unknown): DiagnosticWritingAgreement | null {
-  const candidate = record(value);
-  if (!candidate
-    || !finiteBetween(candidate.exactAgreement, 0, 1)
-    || !finiteBetween(candidate.meanAbsoluteLevelDifference, 0, 5)
-    || !integerBetween(candidate.maximumLevelDifference, 0, 5)
-    || typeof candidate.requiresAdjudication !== 'boolean') return null;
-  return {
-    exactAgreement: candidate.exactAgreement,
-    meanAbsoluteLevelDifference: candidate.meanAbsoluteLevelDifference,
-    maximumLevelDifference: candidate.maximumLevelDifference,
-    requiresAdjudication: candidate.requiresAdjudication,
-  };
 }
 
 function parseLanguageUseIntegration(
@@ -157,25 +137,6 @@ function parseSkillEvidence(value: unknown): DiagnosticSkillEvidence | null {
     ...(plausibleRange ? { plausibleRange } : {}),
     ...(confidence !== undefined ? { confidence: confidence as number } : {}),
   };
-  if (skill === 'writing') {
-    if (!WRITING_REVIEW_STATUSES.includes(candidate.reviewStatus as typeof WRITING_REVIEW_STATUSES[number])) return null;
-    const exclusions = candidate.exclusionReasons === undefined ? undefined : candidate.exclusionReasons;
-    if (exclusions !== undefined && (!Array.isArray(exclusions)
-      || exclusions.length < 1 || exclusions.length > WRITING_EXCLUSION_REASONS.length
-      || exclusions.some(reason => !WRITING_EXCLUSION_REASONS.includes(reason as typeof WRITING_EXCLUSION_REASONS[number]))
-      || new Set(exclusions).size !== exclusions.length)) return null;
-    const agreement = candidate.agreement === undefined ? undefined : parseAgreement(candidate.agreement);
-    if (candidate.agreement !== undefined && !agreement) return null;
-    if (candidate.reviewStatus === 'human-reviewed' && status === 'not-estimated') return null;
-    if (candidate.reviewStatus === 'excluded' && (status !== 'not-estimated' || !exclusions)) return null;
-    return {
-      ...base,
-      skill,
-      reviewStatus: candidate.reviewStatus as DiagnosticWritingSkillEvidence['reviewStatus'],
-      ...(exclusions ? { exclusionReasons: exclusions as DiagnosticWritingSkillEvidence['exclusionReasons'] } : {}),
-      ...(agreement ? { agreement } : {}),
-    } as DiagnosticWritingSkillEvidence;
-  }
   if (!OBJECTIVE_SKILLS.includes(skill as DiagnosticObjectiveSkill)
     || !integerBetween(candidate.attempted, 0, Number(candidate.decisions))
     || !integerBetween(candidate.omitted, 0, Number(candidate.decisions))

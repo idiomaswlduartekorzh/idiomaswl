@@ -85,8 +85,8 @@ test('finalizes all five skills and persists one versioned result', async () => 
   });
   assert.equal(result.version, 5);
   assert.equal(result.resultProfile.skills.length, 5);
-  assert.equal(result.resultProfile.globalLevel, 'B2');
-  assert.equal(result.resultProfile.overallStatus, 'provisional');
+  assert.equal(result.resultProfile.globalLevel, null);
+  assert.equal(result.resultProfile.overallStatus, 'not-estimated');
   assert.equal(result.resultProfile.validUntil, '2026-10-25T13:00:00.000Z');
   assert.equal(persisted.finalEvidence.writing.reviewStatus, 'human-reviewed');
   assert.equal(persisted.finalEvidence.languageUse.length, 2);
@@ -111,7 +111,8 @@ test('finalizes a consent-safe human-only writing path with null automated evide
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
     persist: async input => { persisted = input; return { replayed: false, version: 5 }; },
   });
-  assert.equal(result.resultProfile.skills.find(skill => skill.skill === 'writing').reviewStatus, 'human-reviewed');
+  assert.equal(result.resultProfile.skills.find(skill => skill.skill === 'written-discourse').status, 'not-estimated');
+  assert.equal(persisted.finalEvidence.writing.reviewStatus, 'human-reviewed');
   assert.equal(persisted.automated, null);
   assert.equal('agreement' in persisted.finalEvidence.writing, false);
 });
@@ -170,13 +171,12 @@ test('independently excluded off-task writing completes with writing and global 
     objectiveBank, objectiveBankVersion: bankVersion, now: () => new Date('2026-09-25T13:00:00.000Z'),
     persist: async input => { persisted = input; return { replayed: false, version: 5 }; },
   });
-  const writing = result.resultProfile.skills.find(skill => skill.skill === 'writing');
-  assert.equal(writing.status, 'not-estimated');
-  assert.equal(writing.reviewStatus, 'excluded');
-  assert.deepEqual(writing.exclusionReasons, ['off-task']);
+  const discourse = result.resultProfile.skills.find(skill => skill.skill === 'written-discourse');
+  assert.equal(discourse.status, 'not-estimated');
+  assert.equal(persisted.finalEvidence.writing.reviewStatus, 'excluded');
+  assert.deepEqual(persisted.finalEvidence.writing.exclusionReasons, ['off-task']);
   assert.equal(result.resultProfile.globalLevel, null);
   assert.equal(result.resultProfile.overallStatus, 'not-estimated');
-  assert.equal(persisted.finalEvidence.writing.reviewStatus, 'excluded');
   assert.deepEqual(persisted.finalEvidence.languageUse, []);
 });
 

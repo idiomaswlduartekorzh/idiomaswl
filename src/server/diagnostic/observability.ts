@@ -18,6 +18,7 @@ type DiagnosticInternalFailureReason =
   | 'pilot-report-failed'
   | 'writing-finalization-failed' | 'attempt-creation-persistence-failed'
   | 'stage-persistence-failed' | 'writing-persistence-failed'
+  | 'objective-completion-persistence-failed'
   | 'finalization-persistence-failed' | 'unclassified';
 
 const OBSERVED_ROUTES = new Set<DiagnosticObservedRoute>([
@@ -41,6 +42,7 @@ const INTERNAL_REASONS = new Set<DiagnosticInternalFailureReason>([
   'pilot-report-failed',
   'writing-finalization-failed', 'attempt-creation-persistence-failed',
   'stage-persistence-failed', 'writing-persistence-failed',
+  'objective-completion-persistence-failed',
   'finalization-persistence-failed', 'unclassified',
 ]);
 

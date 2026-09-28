@@ -9,6 +9,7 @@ import type {
 export type DiagnosticScoringKey =
   | { kind: 'single-choice'; optionId: string }
   | { kind: 'multiple-choice'; optionIds: readonly string[] }
+  | { kind: 'ordering'; acceptedOrders: readonly (readonly string[])[] }
   | { kind: 'short-text'; accepted: readonly string[] };
 
 export interface DiagnosticItemParameters {

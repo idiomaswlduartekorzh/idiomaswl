@@ -3,17 +3,15 @@ import { createHash, createHmac } from 'node:crypto';
 import type {
   DiagnosticItemSubmission,
   DiagnosticStageDelivery,
-  DiagnosticWritingStageDelivery,
 } from '../../lib/diagnostic/delivery.ts';
-import type { DiagnosticWritingPromptRecord } from '../../lib/diagnostic/writing.ts';
 import {
   CEFR_LEVELS,
-  type CefrLevel,
-  type DiagnosticObjectiveSkill,
-  type DiagnosticRouteId,
+  type DiagnosticResultProfile,
   type DiagnosticSkillRouteMap,
   type DiagnosticStageReceipt,
 } from '../../lib/diagnostic/types.ts';
+import { ENGLISH_DIAGNOSTIC_BLUEPRINT } from '../../lib/diagnostic/blueprint.ts';
+import { LOCATOR_OBJECTIVE_SKILLS } from '../../lib/diagnostic/mst.ts';
 import {
   assertDiagnosticAttemptAccess,
   diagnosticSubmissionDigest,
@@ -36,7 +34,7 @@ import {
   type DiagnosticMeasuredSkillEvidence,
   type DiagnosticObjectiveObservation,
 } from './measurement.ts';
-import { selectDiagnosticWritingPrompt } from './writing.ts';
+import { buildDiagnosticCompositeResult } from './measurement.ts';
 
 export interface DiagnosticAttemptSnapshot {
   id: string;
@@ -52,11 +50,19 @@ export interface PersistObjectiveStageInput {
   stage: DiagnosticStageReceipt;
   submissionDigest: string;
   scoredResponses: readonly DiagnosticScoredSubmission[];
-  nextStatus: 'precision' | 'confirmation' | 'writing';
+  nextStatus: 'precision' | 'confirmation';
   routeId: 'low-a1-a2' | 'mid-b1-b2' | 'high-c1-c2';
   nextStage: DiagnosticStageReceipt;
   nextStageIndex: number;
   nextSelectionReceipt: unknown;
+}
+
+export interface PersistObjectiveCompletionInput {
+  attempt: DiagnosticAttemptSnapshot;
+  stage: DiagnosticStageReceipt;
+  submissionDigest: string;
+  scoredResponses: readonly DiagnosticScoredSubmission[];
+  resultProfile: DiagnosticResultProfile;
 }
 
 export interface ContinueLocatorDependencies {
@@ -74,8 +80,8 @@ export interface ContinueLocatorDependencies {
 }
 
 function canonicalSkillRoutes(skillRoutes: DiagnosticSkillRouteMap): string {
-  return ['reading', 'listening', 'grammar', 'vocabulary']
-    .map(skill => `${skill}:${skillRoutes[skill as DiagnosticObjectiveSkill] ?? 'withheld'}`).join('|');
+  return LOCATOR_OBJECTIVE_SKILLS
+    .map(skill => `${skill}:${skillRoutes[skill] ?? 'withheld'}`).join('|');
 }
 
 function precisionSeed(secret: string, attemptId: string, skillRoutes: DiagnosticSkillRouteMap): string {
@@ -83,31 +89,9 @@ function precisionSeed(secret: string, attemptId: string, skillRoutes: Diagnosti
     .update(`${attemptId}\u0000precision\u0000${canonicalSkillRoutes(skillRoutes)}`).digest('hex');
 }
 
-function writingSeed(secret: string, attemptId: string, level: CefrLevel): string {
-  return createHmac('sha256', secret).update(`${attemptId}\u0000writing\u0000${level}`).digest('hex');
-}
-
 function confirmationSeed(secret: string, attemptId: string, skillRoutes: DiagnosticSkillRouteMap): string {
   return createHmac('sha256', secret)
     .update(`${attemptId}\u0000confirmation\u0000${canonicalSkillRoutes(skillRoutes)}`).digest('hex');
-}
-
-function selectWritingLevel(
-  routeId: DiagnosticRouteId,
-  evidence: readonly DiagnosticMeasuredSkillEvidence[],
-): CefrLevel {
-  const routeLevels: Readonly<Record<DiagnosticRouteId, readonly [CefrLevel, CefrLevel]>> = {
-    'low-a1-a2': ['A1', 'A2'],
-    'mid-b1-b2': ['B1', 'B2'],
-    'high-c1-c2': ['C1', 'C2'],
-  };
-  const candidates = evidence.flatMap(item => item.estimatedLevel ? [CEFR_LEVELS.indexOf(item.estimatedLevel)] : []);
-  if (!candidates.length) return routeLevels[routeId][0];
-  const average = candidates.reduce((sum, value) => sum + value, 0) / candidates.length;
-  return [...routeLevels[routeId]].sort((a, b) => {
-    const distance = Math.abs(CEFR_LEVELS.indexOf(a) - average) - Math.abs(CEFR_LEVELS.indexOf(b) - average);
-    return distance || CEFR_LEVELS.indexOf(a) - CEFR_LEVELS.indexOf(b);
-  })[0];
 }
 
 export async function continueEnglishDiagnosticLocator(input: {
@@ -190,8 +174,9 @@ export async function continueEnglishDiagnosticLocator(input: {
 }
 
 export interface ContinuePrecisionDependencies extends ContinueLocatorDependencies {
-  writingBank: readonly DiagnosticWritingPromptRecord[];
-  writingBankVersion: string;
+  persistCompletion: (input: PersistObjectiveCompletionInput) => Promise<{ replayed: boolean; version: number }>;
+  bankVersion: string;
+  resultValidityDays: number;
 }
 
 function objectiveEvidenceFromObservations(
@@ -205,8 +190,7 @@ function objectiveEvidenceFromObservations(
   if (observations.some(observation => !records.has(observation.itemId))) {
     throw new Error('diagnostic objective evidence contains an item outside the versioned bank');
   }
-  const skills: readonly DiagnosticObjectiveSkill[] = ['reading', 'listening', 'grammar', 'vocabulary'];
-  return skills.map(skill => estimateObjectiveSkillEvidence(
+  return LOCATOR_OBJECTIVE_SKILLS.map(skill => estimateObjectiveSkillEvidence(
     skill,
     bank,
     observations.filter(observation => records.get(observation.itemId)?.publicItem.skill === skill),
@@ -229,62 +213,34 @@ export function needsEnglishDiagnosticConfirmation(
   return { required: reasons.length > 0, reasons };
 }
 
-async function persistWritingStage(input: {
+async function persistCompletedProfile(input: {
   attempt: DiagnosticAttemptSnapshot;
   stage: DiagnosticStageReceipt;
   submissions: readonly DiagnosticItemSubmission[];
   scoredResponses: readonly DiagnosticScoredSubmission[];
   objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
-  nextStageIndex: number;
-}, dependencies: ContinuePrecisionDependencies): Promise<DiagnosticWritingStageDelivery> {
-  if (!input.attempt.routeId) throw new Error('diagnostic route is required before writing');
-  const promptLevel = selectWritingLevel(input.attempt.routeId, input.objectiveEvidence);
-  const seed = writingSeed(dependencies.selectionSecret, input.attempt.id, promptLevel);
-  const prompt = selectDiagnosticWritingPrompt(
-    dependencies.writingBank, 'en', promptLevel, seed, dependencies.excludedWritingPromptIds,
-  );
-  const nextStage: DiagnosticStageReceipt & { kind: 'writing' } = {
-    stageId: dependencies.newId(),
-    kind: 'writing',
-    routeId: input.attempt.routeId,
-    itemIds: [prompt.id],
-    contentVersions: { [prompt.id]: prompt.contentVersion },
-    issuedAt: dependencies.now().toISOString(),
-  };
-  const persisted = await dependencies.persist({
+}, dependencies: ContinuePrecisionDependencies): Promise<DiagnosticResultProfile> {
+  if (!Number.isInteger(dependencies.resultValidityDays)
+    || dependencies.resultValidityDays < 1 || dependencies.resultValidityDays > 730) {
+    throw new Error('diagnostic result validity policy is invalid');
+  }
+  const generatedAt = dependencies.now();
+  const resultProfile = buildDiagnosticCompositeResult({
+    attemptId: input.attempt.id,
+    blueprintVersion: ENGLISH_DIAGNOSTIC_BLUEPRINT.id,
+    bankVersion: dependencies.bankVersion,
+    skills: input.objectiveEvidence,
+    generatedAt: generatedAt.toISOString(),
+    validUntil: new Date(generatedAt.getTime() + dependencies.resultValidityDays * 86_400_000).toISOString(),
+  });
+  await dependencies.persistCompletion({
     attempt: input.attempt,
     stage: input.stage,
     submissionDigest: diagnosticSubmissionDigest(input.submissions),
     scoredResponses: input.scoredResponses,
-    nextStatus: 'writing',
-    routeId: input.attempt.routeId,
-    nextStage,
-    nextStageIndex: input.nextStageIndex,
-    nextSelectionReceipt: {
-      stage: 'writing',
-      promptId: prompt.id,
-      promptLevel,
-      writingBankVersion: dependencies.writingBankVersion,
-      seedHash: createHash('sha256').update(seed).digest('hex'),
-      objectiveEvidence: input.objectiveEvidence,
-    },
+    resultProfile,
   });
-  const deliveredStage = persisted.replayed ? persisted.nextStage : nextStage;
-  if (!deliveredStage) throw new Error('diagnostic objective replay requires the persisted writing-stage receipt');
-  if (deliveredStage.kind !== 'writing'
-    || deliveredStage.routeId !== input.attempt.routeId
-    || deliveredStage.itemIds.length !== 1
-    || deliveredStage.itemIds[0] !== prompt.id
-    || deliveredStage.contentVersions[prompt.id] !== prompt.contentVersion) {
-    throw new Error('diagnostic persisted writing stage does not match the current prompt bank');
-  }
-  return {
-    attemptId: input.attempt.id,
-    attemptVersion: persisted.version,
-    expiresAt: input.attempt.expiresAt,
-    stage: deliveredStage as DiagnosticStageReceipt & { kind: 'writing' },
-    prompt,
-  };
+  return resultProfile;
 }
 
 export async function continueEnglishDiagnosticPrecision(input: {
@@ -298,16 +254,17 @@ export async function continueEnglishDiagnosticPrecision(input: {
   listeningAccommodation?: boolean;
   submissions: readonly DiagnosticItemSubmission[];
 }, dependencies: ContinuePrecisionDependencies): Promise<{
-  delivery: DiagnosticStageDelivery | DiagnosticWritingStageDelivery;
+  delivery?: DiagnosticStageDelivery;
+  resultProfile?: DiagnosticResultProfile;
   objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
   confirmationDecision: ReturnType<typeof needsEnglishDiagnosticConfirmation>;
 }> {
   if (dependencies.selectionSecret.length < 32) {
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
   }
-  assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now());
+  assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now(), { allowCompleted: true });
   const firstSubmission = input.attempt.status === 'precision' && !input.stage.completedAt;
-  const idempotentReplay = input.attempt.status === 'writing' && Boolean(input.stage.completedAt);
+  const idempotentReplay = input.attempt.status === 'completed' && Boolean(input.stage.completedAt);
   if ((!firstSubmission && !idempotentReplay)
     || input.stage.kind !== 'precision'
     || !input.attempt.routeId
@@ -328,14 +285,14 @@ export async function continueEnglishDiagnosticPrecision(input: {
   );
   if (confirmationDecision.required) {
     const skillRoutes = input.skillRoutes ?? Object.fromEntries(
-      ['reading', 'listening', 'grammar', 'vocabulary'].map(skill => [skill, input.attempt.routeId]),
+      LOCATOR_OBJECTIVE_SKILLS.map(skill => [skill, input.attempt.routeId]),
     ) as DiagnosticSkillRouteMap;
     // A wholly omitted skill gets one bounded recovery module unless listening
     // was explicitly withheld through the accessibility path. This prevents an
     // accidental locator omission from becoming permanently unmeasurable while
     // preserving the candidate's explicit accommodation choice.
     const confirmationSkillRoutes = Object.fromEntries(
-      (['reading', 'listening', 'grammar', 'vocabulary'] as const).map(skill => [
+      LOCATOR_OBJECTIVE_SKILLS.map(skill => [
         skill,
         skill === 'listening' && input.listeningAccommodation === true
           ? skillRoutes[skill]
@@ -386,9 +343,9 @@ export async function continueEnglishDiagnosticPrecision(input: {
     };
   }
   return {
-    delivery: await persistWritingStage({
+    resultProfile: await persistCompletedProfile({
       attempt: input.attempt, stage: input.stage, submissions: input.submissions, scoredResponses,
-      objectiveEvidence, nextStageIndex: 2,
+      objectiveEvidence,
     }, dependencies),
     objectiveEvidence,
     confirmationDecision,
@@ -403,15 +360,15 @@ export async function continueEnglishDiagnosticConfirmation(input: {
   priorObservations: readonly DiagnosticObjectiveObservation[];
   submissions: readonly DiagnosticItemSubmission[];
 }, dependencies: ContinuePrecisionDependencies): Promise<{
-  delivery: DiagnosticWritingStageDelivery;
+  resultProfile: DiagnosticResultProfile;
   objectiveEvidence: readonly DiagnosticMeasuredSkillEvidence[];
 }> {
   if (dependencies.selectionSecret.length < 32) {
     throw new DiagnosticStartError('SERVER_CONFIGURATION_INVALID', 'diagnostic selection secret must contain at least 32 characters');
   }
-  assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now());
+  assertDiagnosticAttemptAccess(input.attempt, input.authenticatedUserId, dependencies.now(), { allowCompleted: true });
   const firstSubmission = input.attempt.status === 'confirmation' && !input.stage.completedAt;
-  const idempotentReplay = input.attempt.status === 'writing' && Boolean(input.stage.completedAt);
+  const idempotentReplay = input.attempt.status === 'completed' && Boolean(input.stage.completedAt);
   if ((!firstSubmission && !idempotentReplay)
     || input.stage.kind !== 'confirmation'
     || !input.attempt.routeId
@@ -425,9 +382,9 @@ export async function continueEnglishDiagnosticConfirmation(input: {
   ];
   const objectiveEvidence = objectiveEvidenceFromObservations(dependencies.bank, observations);
   return {
-    delivery: await persistWritingStage({
+    resultProfile: await persistCompletedProfile({
       attempt: input.attempt, stage: input.stage, submissions: input.submissions, scoredResponses,
-      objectiveEvidence, nextStageIndex: 3,
+      objectiveEvidence,
     }, dependencies),
     objectiveEvidence,
   };

@@ -6,63 +6,63 @@
     {
       "trueLevel": "A1",
       "sampleSize": 1000,
-      "meanCorrect": 4.688,
-      "confirmationRate": 0.313,
+      "meanCorrect": 5.904,
+      "confirmationRate": 0.343,
       "routes": {
-        "low-a1-a2": 692,
-        "mid-b1-b2": 307,
-        "high-c1-c2": 1
+        "low-a1-a2": 637,
+        "mid-b1-b2": 361,
+        "high-c1-c2": 2
       }
     },
     {
       "trueLevel": "A2",
       "sampleSize": 1000,
-      "meanCorrect": 6.095,
-      "confirmationRate": 0.293,
+      "meanCorrect": 7.693,
+      "confirmationRate": 0.321,
       "routes": {
-        "low-a1-a2": 364,
-        "mid-b1-b2": 616,
-        "high-c1-c2": 20
+        "low-a1-a2": 266,
+        "mid-b1-b2": 716,
+        "high-c1-c2": 18
       }
     },
     {
       "trueLevel": "B1",
       "sampleSize": 1000,
-      "meanCorrect": 8.038,
-      "confirmationRate": 0.229,
+      "meanCorrect": 10.184,
+      "confirmationRate": 0.223,
       "routes": {
-        "low-a1-a2": 48,
-        "mid-b1-b2": 769,
-        "high-c1-c2": 183
+        "low-a1-a2": 12,
+        "mid-b1-b2": 764,
+        "high-c1-c2": 224
       }
     },
     {
       "trueLevel": "B2",
       "sampleSize": 1000,
-      "meanCorrect": 9.96,
-      "confirmationRate": 0.325,
+      "meanCorrect": 12.528,
+      "confirmationRate": 0.235,
       "routes": {
         "low-a1-a2": 0,
-        "mid-b1-b2": 333,
-        "high-c1-c2": 667
+        "mid-b1-b2": 226,
+        "high-c1-c2": 774
       }
     },
     {
       "trueLevel": "C1",
       "sampleSize": 1000,
-      "meanCorrect": 11.234,
-      "confirmationRate": 0.132,
+      "meanCorrect": 14.054,
+      "confirmationRate": 0.051,
       "routes": {
         "low-a1-a2": 0,
-        "mid-b1-b2": 32,
-        "high-c1-c2": 968
+        "mid-b1-b2": 8,
+        "high-c1-c2": 992
       }
     },
     {
       "trueLevel": "C2",
       "sampleSize": 1000,
-      "meanCorrect": 11.768,
-      "confirmationRate": 0.029,
+      "meanCorrect": 14.731,
+      "confirmationRate": 0.002,
       "routes": {
         "low-a1-a2": 0,
         "mid-b1-b2": 0,

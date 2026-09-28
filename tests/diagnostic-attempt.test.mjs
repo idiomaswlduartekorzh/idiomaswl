@@ -9,7 +9,7 @@ import {
   scoreDiagnosticStage,
 } from '../src/server/diagnostic/attempt.ts';
 
-const skills = ['reading', 'listening', 'grammar', 'vocabulary'];
+const skills = ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'];
 const levels = ['A2', 'B1', 'B2'];
 
 function record(skill, level, answer = 'b') {
@@ -50,7 +50,7 @@ function submissions(optionId = 'b') {
 
 test('scores only the exact items and versions served by the stage', () => {
   const scored = scoreDiagnosticStage(stage, records, submissions());
-  assert.equal(scored.length, 12);
+  assert.equal(scored.length, 15);
   assert.equal(scored.every(response => response.outcome === 'correct'), true);
 
   const wrongVersion = submissions();
@@ -112,4 +112,3 @@ test('attempt access and state transitions reject stale or foreign writes', () =
   assert.throws(() => assertDiagnosticAttemptAccess(attempt, 'user-2'), /does not belong/);
   assert.throws(() => assertDiagnosticAttemptAccess(attempt, 'user-1', new Date('2026-09-25T00:00:00.000Z')), /expired/);
 });
-

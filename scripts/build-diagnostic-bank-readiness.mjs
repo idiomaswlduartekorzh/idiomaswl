@@ -10,13 +10,14 @@ import { ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES } from '../src/server/diagno
 import { ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading-advanced.en.ts';
 import { ENGLISH_DIAGNOSTIC_READING_CANDIDATES } from '../src/server/diagnostic/bank/reading.en.ts';
 import { ENGLISH_DIAGNOSTIC_WRITING_CANDIDATES } from '../src/server/diagnostic/bank/writing.en.ts';
+import { ENGLISH_DIAGNOSTIC_WRITTEN_DISCOURSE_CANDIDATES } from '../src/server/diagnostic/bank/written-discourse.en.ts';
 import { ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK } from '../src/server/diagnostic/bank/index.ts';
 import { diagnosticItemCueAuditAggregate } from '../src/server/diagnostic/bank/cue-audit.ts';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputPath = join(root, 'docs/diagnostic-bank-readiness.json');
 const writeMode = process.argv.includes('--write');
-const skills = ['reading', 'listening', 'grammar', 'vocabulary'];
+const skills = ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'];
 const authored = [
   ...ENGLISH_DIAGNOSTIC_READING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_READING_CANDIDATES,
@@ -24,6 +25,7 @@ const authored = [
   ...ENGLISH_DIAGNOSTIC_RECORDED_LISTENING_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_LANGUAGE_USE_CANDIDATES,
   ...ENGLISH_DIAGNOSTIC_ADVANCED_LANGUAGE_USE_CANDIDATES,
+  ...ENGLISH_DIAGNOSTIC_WRITTEN_DISCOURSE_CANDIDATES,
 ];
 
 function stimulusIdentity(record) {
@@ -40,7 +42,7 @@ const cells = CEFR_LEVELS.flatMap((level) => skills.map((skill) => {
   const operational = approved.filter((record) => record.status === 'operational' && record.exposure === 'reserved');
   const reservedDrafts = cell.filter((record) => record.status === 'reserved' && record.exposure === 'reserved');
   const exposedDrafts = cell.filter((record) => record.exposure !== 'reserved');
-  const requiredStimuli = skill === 'reading' || skill === 'listening' ? 6 : null;
+    const requiredStimuli = skill === 'reading' || skill === 'listening' || skill === 'written-discourse' ? 6 : null;
   const reservedDraftStimuli = new Set(reservedDrafts.map(stimulusIdentity)).size;
   return {
     level,
@@ -94,14 +96,14 @@ const report = {
       sum + cell.approvedPilotDecisions + cell.operationalDecisions, 0),
     objectiveCellsWithDraftCapacity: cells.filter((cell) => cell.authoringGap === 0 && (cell.stimulusAuthoringGap ?? 0) === 0).length,
     objectiveCellsRequired: cells.length,
-    writingDraftPrompts: writing.reduce((sum, row) => sum + row.reservedDraftPrompts, 0),
-    writingApprovedPrompts: writing.reduce((sum, row) => sum + row.approvedPrompts, 0),
+    legacyWritingDraftPrompts: writing.reduce((sum, row) => sum + row.reservedDraftPrompts, 0),
+    legacyWritingApprovedPrompts: writing.reduce((sum, row) => sum + row.approvedPrompts, 0),
     cueAuditReviewedReservedDrafts: cueAudit.totals.items,
     cueAuditFlaggedForHumanReview: cueAudit.totals.flaggedItems,
     cueAuditBlockingDefects: cueAudit.totals.blockingItems,
   },
   objectiveCells: cells,
-  writing,
+  legacyWriting: writing,
   cueAudit,
 };
 

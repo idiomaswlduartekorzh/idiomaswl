@@ -7,6 +7,7 @@ import {
 export const LOCATOR_OBJECTIVE_SKILLS = [
   'reading',
   'listening',
+  'written-discourse',
   'grammar',
   'vocabulary',
 ] as const satisfies readonly DiagnosticObjectiveSkill[];
@@ -54,8 +55,8 @@ export interface LocatorRoutingPolicy {
  */
 export const ENGLISH_LOCATOR_ROUTING_POLICY: LocatorRoutingPolicy = {
   decisionsPerSkill: 3,
-  lowMaximumCorrect: 5,
-  highMinimumCorrect: 10,
+  lowMaximumCorrect: 6,
+  highMinimumCorrect: 12,
   highMinimumCorrectPerSkill: 1,
   boundaryDistance: 0,
   confirmationSpread: 3,

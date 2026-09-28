@@ -6,13 +6,21 @@ import { CEFR_LEVELS, DIAGNOSTIC_SKILLS } from '../src/lib/diagnostic/types.ts';
 import { toDiagnosticPublicItem } from '../src/server/diagnostic/scoring.ts';
 import { DiagnosticStartError, prepareEnglishDiagnosticAttempt } from '../src/server/diagnostic/start-core.ts';
 
-const objectiveSkills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
+const objectiveSkills = DIAGNOSTIC_SKILLS;
+const discourseSubdomains = [
+  'organisation-sequencing', 'rhetorical-relations', 'cohesion-reference',
+  'audience-register', 'revision-coherence',
+];
 
 function fixtureRecord(skill, level, variant) {
   const id = `en-${level.toLowerCase()}-${skill}-${variant}`;
   return {
     publicItem: {
-      id, contentVersion: '1', language: 'en', skill, subdomain: 'fixture', levelCandidate: level,
+      id, contentVersion: '1', language: 'en', skill,
+      subdomain: skill === 'written-discourse'
+        ? discourseSubdomains[(variant - 1) % discourseSubdomains.length]
+        : 'fixture',
+      levelCandidate: level,
       prompt: id,
       stimulus: skill === 'listening'
         ? { kind: 'audio', mediaId: `media-${id}`, src: `/private/${id}.mp3`, startMs: 0, endMs: 1000, maxPlays: 2 }
@@ -56,7 +64,7 @@ test('creates and persists a two-hour locator without exposing private bank fiel
     now: () => new Date('2026-09-24T12:00:00.000Z'), newId: () => `00000000-0000-4000-8000-${String(++id).padStart(12, '0')}`,
     persist: async input => { persisted = input; },
   });
-  assert.equal(delivery.items.length, 12);
+  assert.equal(delivery.items.length, 15);
   const firstRecord = completeBank.find(record => record.publicItem.id === delivery.items[0].id);
   assert.deepEqual(delivery.items[0], toDiagnosticPublicItem(firstRecord, delivery.stage.stageId));
   assert.equal(delivery.items.every(item => item.response.optionIds.join('|')
@@ -140,10 +148,6 @@ test('fails closed for an incomplete bank or weak server secret', async () => {
   };
   await assert.rejects(
     () => prepareEnglishDiagnosticAttempt('user-1', { ...base, bank: [] }),
-    error => error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY',
-  );
-  await assert.rejects(
-    () => prepareEnglishDiagnosticAttempt('user-1', { ...base, writingBank: [] }),
     error => error instanceof DiagnosticStartError && error.code === 'BANK_NOT_READY',
   );
   await assert.rejects(

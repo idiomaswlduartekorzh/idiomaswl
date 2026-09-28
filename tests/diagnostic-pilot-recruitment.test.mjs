@@ -16,14 +16,14 @@ const plan = buildDiagnosticPilotRecruitmentPlan({
 });
 
 test('pilot recruitment plan exposes the real item-calibration lower bound', () => {
-  assert.equal(plan.assumptions.objectiveItems, 288);
-  assert.equal(plan.assumptions.requiredItemResponses, 57_600);
-  assert.equal(plan.assumptions.minimumObjectiveDecisionsPerCompletedAttempt, 28);
-  assert.equal(plan.assumptions.maximumObjectiveDecisionsPerCompletedAttempt, 36);
+  assert.equal(plan.assumptions.objectiveItems, 360);
+  assert.equal(plan.assumptions.requiredItemResponses, 72_000);
+  assert.equal(plan.assumptions.minimumObjectiveDecisionsPerCompletedAttempt, 35);
+  assert.equal(plan.assumptions.maximumObjectiveDecisionsPerCompletedAttempt, 45);
   assert.equal(plan.itemCalibrationLowerBounds.absoluteBestCase.completedAttempts, 1_600);
   assert.equal(plan.itemCalibrationLowerBounds.absoluteBestCase.startedAttempts, 2_134);
-  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.completedAttempts, 1_936);
-  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.startedAttempts, 2_582);
+  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.completedAttempts, 1_949);
+  assert.equal(plan.itemCalibrationLowerBounds.simulationExpectedFormLength.startedAttempts, 2_599);
   assert.equal(plan.itemCalibrationLowerBounds.withoutConfirmation.completedAttempts, 2_058);
   assert.equal(plan.itemCalibrationLowerBounds.withoutConfirmation.startedAttempts, 2_744);
   assert.ok(plan.itemCalibrationLowerBounds.absoluteBestCase.startedAttempts > criteria.minimumStartedAttempts);
@@ -31,12 +31,12 @@ test('pilot recruitment plan exposes the real item-calibration lower bound', () 
 
 test('route and specialist floors remain explicit instead of being hidden by the global sample', () => {
   assert.equal(plan.routeExposureLowerBounds.routes, 3);
-  assert.equal(plan.routeExposureLowerBounds.objectiveItemsPerRoute, 96);
-  assert.equal(plan.routeExposureLowerBounds.requiredItemResponsesPerRoute, 19_200);
+  assert.equal(plan.routeExposureLowerBounds.objectiveItemsPerRoute, 120);
+  assert.equal(plan.routeExposureLowerBounds.requiredItemResponsesPerRoute, 24_000);
   assert.equal(plan.routeExposureLowerBounds.bestCaseCompletedPerRoute, 800);
   assert.equal(plan.routeExposureLowerBounds.bestCaseStartedAcrossRoutes, 3_200);
-  assert.equal(plan.routeExposureLowerBounds.simulationExpectedCompletedPerRoute, 1_081);
-  assert.equal(plan.routeExposureLowerBounds.simulationExpectedStartedAcrossRoutes, 4_324);
+  assert.equal(plan.routeExposureLowerBounds.simulationExpectedCompletedPerRoute, 1_093);
+  assert.equal(plan.routeExposureLowerBounds.simulationExpectedStartedAcrossRoutes, 4_372);
   assert.equal(plan.routeExposureLowerBounds.withoutConfirmationCompletedPerRoute, 1_200);
   assert.equal(plan.routeExposureLowerBounds.withoutConfirmationStartedAcrossRoutes, 4_800);
   assert.equal(plan.routeExposureLowerBounds.configuredMinimumCompletedPerRoute, 60);

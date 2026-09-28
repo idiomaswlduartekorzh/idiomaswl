@@ -12,6 +12,8 @@ export type DiagnosticItemCueCode =
   | 'KEY_MATERIALLY_LONGER'
   | 'KEY_MATERIALLY_SHORTER'
   | 'OPTION_LENGTH_SPREAD'
+  | 'ORDERING_CONTRACT_INVALID'
+  | 'ORDERING_SEQUENCE_MARKER_CUE'
   | 'CAPITALIZATION_PATTERN_BREAK'
   | 'TERMINAL_PUNCTUATION_PATTERN_BREAK';
 
@@ -26,7 +28,7 @@ export interface DiagnosticItemCueFinding {
 export interface DiagnosticItemCueAudit {
   auditVersion: typeof DIAGNOSTIC_ITEM_CUE_AUDIT_VERSION;
   disposition: 'NO_AUTOMATED_CUE_FOUND' | 'HUMAN_REVIEW_REQUIRED' | 'BLOCKING_DEFECT';
-  keyPosition: number;
+  keyPosition: number | null;
   optionProfiles: readonly {
     position: number;
     tokenCount: number;
@@ -68,6 +70,59 @@ function rounded(value: number): string {
 }
 
 export function auditDiagnosticItemCues(record: DiagnosticBankRecord): DiagnosticItemCueAudit {
+  if (record.publicItem.response.kind === 'ordering' && record.scoring.kind === 'ordering') {
+    const options = record.publicItem.displayOptions ?? [];
+    const publicIds = record.publicItem.response.optionIds;
+    const acceptedOrders = record.scoring.acceptedOrders;
+    const findings: DiagnosticItemCueFinding[] = [];
+    const optionIds = options.map(option => option.id);
+    const sameMembers = (left: readonly string[], right: readonly string[]) =>
+      left.length === right.length && [...left].sort().join('\u0000') === [...right].sort().join('\u0000');
+    if (options.length < 4 || options.length > 6
+      || new Set(optionIds).size !== optionIds.length
+      || !sameMembers(optionIds, publicIds)
+      || acceptedOrders.length < 1
+      || acceptedOrders.some(order => !sameMembers(optionIds, order))) {
+      findings.push({
+        code: 'ORDERING_CONTRACT_INVALID', severity: 'blocking', optionPositions: [],
+        evidence: 'The ordering key is not an exact permutation of four to six unique public fragments.',
+        reviewQuestion: 'Repair the fragment contract and scoring permutation before review.',
+      });
+    }
+    const normalizedGroups = new Map<string, number[]>();
+    options.forEach((option, index) => {
+      const normalized = normalizeOption(option.text);
+      normalizedGroups.set(normalized, [...(normalizedGroups.get(normalized) ?? []), index + 1]);
+    });
+    const duplicatePositions = [...normalizedGroups.values()].filter(group => group.length > 1).flat();
+    if (duplicatePositions.length) {
+      findings.push({
+        code: 'DUPLICATE_NORMALIZED_OPTIONS', severity: 'blocking', optionPositions: duplicatePositions,
+        evidence: 'Two or more ordering fragments become identical after normalization.',
+        reviewQuestion: 'Replace duplicate fragments before this item can be approved.',
+      });
+    }
+    const markerCount = options.filter(option => /^(?:first|second|third|then|next|finally|lastly|afterwards)\b/iu.test(option.text.trim())).length;
+    if (markerCount >= Math.max(3, options.length - 1)) {
+      findings.push({
+        code: 'ORDERING_SEQUENCE_MARKER_CUE', severity: 'review', optionPositions: options.map((_, index) => index + 1),
+        evidence: 'Most fragments contain explicit sequence markers, which may reduce the task to mechanical matching.',
+        reviewQuestion: 'Does the item still require discourse understanding beyond sorting visible markers?',
+      });
+    }
+    return {
+      auditVersion: DIAGNOSTIC_ITEM_CUE_AUDIT_VERSION,
+      disposition: findings.some(finding => finding.severity === 'blocking')
+        ? 'BLOCKING_DEFECT' : findings.length ? 'HUMAN_REVIEW_REQUIRED' : 'NO_AUTOMATED_CUE_FOUND',
+      keyPosition: null,
+      optionProfiles: options.map((option, index) => ({
+        position: index + 1,
+        tokenCount: tokens(option.text).length,
+        characterCount: normalizeOption(option.text).length,
+      })),
+      findings,
+    };
+  }
   if (record.publicItem.response.kind !== 'single-choice'
     || record.scoring.kind !== 'single-choice'
     || !record.publicItem.displayOptions?.length) {
@@ -225,7 +280,7 @@ export function diagnosticItemCueAuditAggregate(records: readonly DiagnosticBank
     cell.items += 1;
     if (audit.findings.length) cell.flaggedItems += 1;
     if (audit.disposition === 'BLOCKING_DEFECT') cell.blockingItems += 1;
-    cell.keyPositions[audit.keyPosition - 1] += 1;
+    if (audit.keyPosition !== null) cell.keyPositions[audit.keyPosition - 1] += 1;
     for (const finding of audit.findings) cell.findings[finding.code] = (cell.findings[finding.code] ?? 0) + 1;
     cells.set(cellKey, cell);
   }

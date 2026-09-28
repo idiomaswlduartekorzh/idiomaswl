@@ -33,8 +33,8 @@ export type DiagnosticAttemptStatus =
 
 const STATUS_TRANSITIONS: Readonly<Record<DiagnosticAttemptStatus, readonly DiagnosticAttemptStatus[]>> = {
   locator: ['precision', 'expired', 'abandoned'],
-  precision: ['confirmation', 'writing', 'expired', 'abandoned'],
-  confirmation: ['writing', 'expired', 'abandoned'],
+  precision: ['confirmation', 'completed', 'expired', 'abandoned'],
+  confirmation: ['completed', 'expired', 'abandoned'],
   writing: ['scoring', 'expired', 'abandoned'],
   scoring: ['completed'],
   completed: [],
@@ -124,10 +124,14 @@ export function assertDiagnosticAttemptAccess(
   attempt: { userId: string; expiresAt: string; status: DiagnosticAttemptStatus },
   authenticatedUserId: string,
   now = new Date(),
+  options: { allowCompleted?: boolean } = {},
 ): void {
   if (!authenticatedUserId || attempt.userId !== authenticatedUserId) throw new Error('diagnostic attempt does not belong to the authenticated user');
   if (new Date(attempt.expiresAt).getTime() <= now.getTime()) throw new Error('diagnostic attempt has expired');
-  if (['completed', 'expired', 'abandoned'].includes(attempt.status)) throw new Error(`diagnostic attempt is ${attempt.status}`);
+  if (['expired', 'abandoned'].includes(attempt.status)
+    || (attempt.status === 'completed' && options.allowCompleted !== true)) {
+    throw new Error(`diagnostic attempt is ${attempt.status}`);
+  }
 }
 
 export function expectedStageKind(status: DiagnosticAttemptStatus): DiagnosticStageKind | null {

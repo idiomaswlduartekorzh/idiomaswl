@@ -7,7 +7,7 @@ import { buildEnglishDiagnosticRecommendations } from '../src/server/diagnostic/
 const skills = [
   { skill: 'reading', decisions: 8, distinctStimuli: 4, status: 'provisional', estimatedLevel: 'B2', confidence: 0.6 },
   { skill: 'listening', decisions: 8, distinctStimuli: 4, status: 'provisional', estimatedLevel: 'A2', confidence: 0.5 },
-  { skill: 'writing', decisions: 1, distinctStimuli: 1, status: 'provisional', estimatedLevel: 'B1', confidence: 0.6 },
+  { skill: 'written-discourse', decisions: 7, distinctStimuli: 7, status: 'provisional', estimatedLevel: 'B1', confidence: 0.6 },
   { skill: 'grammar', decisions: 8, distinctStimuli: 8, status: 'provisional', estimatedLevel: 'B1', confidence: 0.55 },
   { skill: 'vocabulary', decisions: 8, distinctStimuli: 8, status: 'provisional', estimatedLevel: 'C1', confidence: 0.5 },
 ];
@@ -23,11 +23,11 @@ test('recommendations prioritize the weakest measured skill and set the next obs
 });
 
 test('missing evidence is the first priority and never appears as a zero score', () => {
-  const missing = skills.map(skill => skill.skill === 'writing'
-    ? { skill: 'writing', decisions: 1, distinctStimuli: 1, status: 'not-estimated' }
+  const missing = skills.map(skill => skill.skill === 'written-discourse'
+    ? { skill: 'written-discourse', decisions: 7, distinctStimuli: 7, status: 'not-estimated' }
     : skill);
   const recommendations = buildEnglishDiagnosticRecommendations(missing);
-  assert.equal(recommendations[0].skill, 'writing');
+  assert.equal(recommendations[0].skill, 'written-discourse');
   assert.equal(recommendations[0].currentLevel, null);
   assert.doesNotMatch(recommendations[0].reason, /0%|cero/iu);
 });

@@ -6,9 +6,7 @@ import {
   buildDiagnosticCompositeResult,
   ENGLISH_PILOT_CALIBRATION,
   estimateObjectiveSkillEvidence,
-  integrateWritingLanguageUseEvidence,
   validateDiagnosticCalibrationPolicy,
-  validateDiagnosticLanguageUseIntegrationPolicy,
 } from '../src/server/diagnostic/measurement.ts';
 
 function record(index, parameters = undefined) {
@@ -73,100 +71,101 @@ test('rejects unordered cuts and impossible item parameters', () => {
   ), /invalid item parameters/);
 });
 
-function finalWritingEvaluation(grammarLevel, vocabularyLevel, confidence = 0.8) {
+const WRITTEN_DISCOURSE_SUBDOMAINS = [
+  'organisation-sequencing',
+  'rhetorical-relations',
+  'cohesion-reference',
+  'audience-register',
+  'revision-coherence',
+  'cohesion-reference',
+  'audience-register',
+  'revision-coherence',
+];
+
+function writtenDiscourseRecord(index, { subdomain, stimulusId } = {}) {
+  const base = record(index);
+  const id = `written-discourse-${index}`;
   return {
-    evaluator: 'human', reviewerId: 'reviewer-1', rubricVersion: 'mcer-writing-v2',
-    promptId: 'prompt-1', promptContentVersion: '1', responseSha256: 'a'.repeat(64),
-    responseQuality: { taskRelevance: 'on-task', authorship: 'no-concern', rationale: 'Sufficient fixture rationale for review.' },
-    decision: 'accept', evaluatedAt: '2026-09-25T12:00:00.000Z',
-    criteria: [
-      { criterion: 'task-achievement', level: 'B1', confidence, evidence: ['x'], rationale: 'fixture' },
-      { criterion: 'organization', level: 'B1', confidence, evidence: ['x'], rationale: 'fixture' },
-      { criterion: 'grammar-control', level: grammarLevel, confidence, evidence: ['x'], rationale: 'fixture' },
-      { criterion: 'vocabulary-control', level: vocabularyLevel, confidence, evidence: ['x'], rationale: 'fixture' },
-    ],
+    ...base,
+    publicItem: {
+      ...base.publicItem,
+      id,
+      skill: 'written-discourse',
+      subdomain: subdomain ?? WRITTEN_DISCOURSE_SUBDOMAINS[index],
+      prompt: `Closed discourse decision ${index}`,
+      stimulus: {
+        kind: 'text',
+        stimulusId: stimulusId ?? `written-discourse-text-${index}`,
+        body: `Written discourse fixture ${index}`,
+      },
+    },
   };
 }
 
-function languageUseObjective(skill, overrides = {}) {
-  return {
-    skill, decisions: 6, distinctStimuli: 6, attempted: 6, omitted: 0, observedAccuracy: 0.67,
-    status: 'calibrated', estimatedLevel: 'B1', plausibleRange: ['B1', 'B1'], confidence: 0.6,
-    theta: -0.2, standardError: 0.5, calibrationVersion: 'fixture-calibration-v1',
-    ...overrides,
-  };
-}
-
-test('reviewed writing corroborates language-use evidence without changing its level or counts', () => {
-  const objective = languageUseObjective('grammar');
-  const integrated = integrateWritingLanguageUseEvidence({
-    objective,
-    finalWritingEvaluation: finalWritingEvaluation('B1', 'B1'),
-  });
-  assert.equal(integrated.estimatedLevel, 'B1');
-  assert.equal(integrated.decisions, 6);
-  assert.equal(integrated.attempted, 6);
-  assert.equal(integrated.status, 'provisional');
-  assert.equal(integrated.confidence, 0.6);
-  assert.equal(integrated.languageUseIntegration.outcome, 'corroborated');
-  assert.equal(integrated.languageUseIntegration.automaticLevelShift, false);
-});
-
-test('adjacent and divergent writing evidence widen uncertainty but never shift the objective point estimate', () => {
-  const adjacent = integrateWritingLanguageUseEvidence({
-    objective: languageUseObjective('grammar'),
-    finalWritingEvaluation: finalWritingEvaluation('B2', 'B1'),
-  });
-  assert.equal(adjacent.estimatedLevel, 'B1');
-  assert.deepEqual(adjacent.plausibleRange, ['B1', 'B2']);
-  assert.equal(adjacent.confidence, 0.51);
-  assert.equal(adjacent.languageUseIntegration.outcome, 'adjacent');
-
-  const divergent = integrateWritingLanguageUseEvidence({
-    objective: languageUseObjective('vocabulary'),
-    finalWritingEvaluation: finalWritingEvaluation('B1', 'C1'),
-  });
-  assert.equal(divergent.estimatedLevel, 'B1');
-  assert.deepEqual(divergent.plausibleRange, ['B1', 'C1']);
-  assert.equal(divergent.confidence, 0.39);
-  assert.equal(divergent.languageUseIntegration.levelDifference, 2);
-  const skills = DIAGNOSTIC_SKILLS.map(skill => skill === 'vocabulary' ? divergent : ({
-    skill, decisions: 6, distinctStimuli: 3, status: 'provisional', estimatedLevel: 'B1',
-    plausibleRange: ['B1', 'B1'], confidence: 0.6,
+function observe(records, omittedIndexes = []) {
+  return records.map((item, index) => ({
+    itemId: item.publicItem.id,
+    outcome: omittedIndexes.includes(index) ? 'omitted' : 'correct',
   }));
-  const result = buildDiagnosticCompositeResult({
-    attemptId: 'attempt-language-use', blueprintVersion: 'blueprint-1', bankVersion: 'bank-1', skills,
-    generatedAt: '2026-09-24T12:00:00.000Z', validUntil: '2027-03-23T12:00:00.000Z',
-  });
-  assert.ok(result.warnings.includes('VOCABULARY_WRITING_EVIDENCE_DIVERGES'));
+}
+
+test('written discourse is estimated from closed objective decisions when its full evidence floor is met', () => {
+  const records = Array.from({ length: 7 }, (_, index) => writtenDiscourseRecord(index));
+  const evidence = estimateObjectiveSkillEvidence(
+    'written-discourse', records, observe(records, [6]), ENGLISH_PILOT_CALIBRATION,
+  );
+  assert.equal(evidence.status, 'provisional');
+  assert.equal(evidence.skill, 'written-discourse');
+  assert.equal(evidence.decisions, 7);
+  assert.equal(evidence.attempted, 6);
+  assert.equal(evidence.omitted, 1);
+  assert.equal(evidence.distinctStimuli, 6);
+  assert.equal('languageUseIntegration' in evidence, false);
 });
 
-test('one writing sample cannot rescue missing objective language-use evidence', () => {
-  const integrated = integrateWritingLanguageUseEvidence({
-    objective: languageUseObjective('grammar', {
-      decisions: 3, attempted: 3, status: 'not-estimated', estimatedLevel: undefined,
-      plausibleRange: undefined, confidence: undefined, theta: undefined, standardError: undefined,
-    }),
-    finalWritingEvaluation: finalWritingEvaluation('C2', 'C2'),
-  });
-  assert.equal(integrated.status, 'not-estimated');
-  assert.equal(integrated.estimatedLevel, undefined);
-  assert.equal(integrated.decisions, 3);
-  assert.equal(integrated.languageUseIntegration.outcome, 'objective-insufficient');
+test('written discourse requires broad subdomain coverage including organisation and rhetorical relations', () => {
+  const narrow = Array.from({ length: 7 }, (_, index) => writtenDiscourseRecord(index, {
+    subdomain: ['organisation-sequencing', 'rhetorical-relations', 'cohesion-reference'][index % 3],
+  }));
+  assert.equal(estimateObjectiveSkillEvidence(
+    'written-discourse', narrow, observe(narrow), ENGLISH_PILOT_CALIBRATION,
+  ).status, 'not-estimated');
+
+  for (const required of ['organisation-sequencing', 'rhetorical-relations']) {
+    const withoutRequired = Array.from({ length: 7 }, (_, index) => writtenDiscourseRecord(index, {
+      subdomain: WRITTEN_DISCOURSE_SUBDOMAINS[index] === required
+        ? 'revision-coherence'
+        : WRITTEN_DISCOURSE_SUBDOMAINS[index],
+    }));
+    assert.equal(estimateObjectiveSkillEvidence(
+      'written-discourse', withoutRequired, observe(withoutRequired), ENGLISH_PILOT_CALIBRATION,
+    ).status, 'not-estimated', required);
+  }
 });
 
-test('language-use integration rejects policies that imply weak materiality or inverted confidence penalties', () => {
-  assert.ok(validateDiagnosticLanguageUseIntegrationPolicy({
-    version: 'bad', status: 'pilot', materialDifferenceLevels: 1, confidenceCap: 0.65,
-    adjacentConfidenceMultiplier: 0.7, divergentConfidenceMultiplier: 0.8,
-  }).length >= 2);
+test('written discourse counts only attempted stimuli and permits at most one omission', () => {
+  const sharedStimulus = Array.from({ length: 7 }, (_, index) => writtenDiscourseRecord(index, {
+    stimulusId: index === 5 ? 'written-discourse-text-4' : undefined,
+  }));
+  assert.equal(estimateObjectiveSkillEvidence(
+    'written-discourse', sharedStimulus, observe(sharedStimulus, [6]), ENGLISH_PILOT_CALIBRATION,
+  ).status, 'not-estimated');
+
+  const twoOmissions = Array.from({ length: 8 }, (_, index) => writtenDiscourseRecord(index));
+  assert.equal(estimateObjectiveSkillEvidence(
+    'written-discourse', twoOmissions, observe(twoOmissions, [6, 7]), ENGLISH_PILOT_CALIBRATION,
+  ).status, 'not-estimated');
 });
 
 test('global result is withheld until all five skills have evidence', () => {
   const incomplete = DIAGNOSTIC_SKILLS.map(skill => ({
-    skill, decisions: skill === 'writing' ? 0 : 6, distinctStimuli: skill === 'writing' ? 0 : 3,
-    status: skill === 'writing' ? 'not-estimated' : 'provisional',
-    ...(skill === 'writing' ? {} : { estimatedLevel: 'B1', plausibleRange: ['A2', 'B2'], confidence: 0.6 }),
+    skill,
+    decisions: skill === 'written-discourse' ? 0 : 6,
+    distinctStimuli: skill === 'written-discourse' ? 0 : 3,
+    status: skill === 'written-discourse' ? 'not-estimated' : 'provisional',
+    ...(skill === 'written-discourse' ? {} : {
+      estimatedLevel: 'B1', plausibleRange: ['A2', 'B2'], confidence: 0.6,
+    }),
   }));
   const result = buildDiagnosticCompositeResult({
     attemptId: 'attempt-1', blueprintVersion: 'blueprint-1', bankVersion: 'bank-1', skills: incomplete,

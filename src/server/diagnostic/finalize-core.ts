@@ -128,11 +128,23 @@ export async function finalizeEnglishDiagnostic(input: {
       && evidence.languageUseIntegration !== undefined,
   );
   const generatedAt = dependencies.now();
+  // Historical attempts may still reach this admin-only finalizer. Preserve
+  // their human writing evidence in the audit payload, but do not relabel one
+  // free response as calibrated evidence for the new closed-task construct.
+  const legacyWrittenDiscourseEvidence = {
+    skill: 'written-discourse' as const,
+    decisions: 1,
+    distinctStimuli: 1,
+    attempted: 0,
+    omitted: 1,
+    observedAccuracy: null,
+    status: 'not-estimated' as const,
+  };
   const resultProfile = buildDiagnosticCompositeResult({
     attemptId: input.attempt.id,
     blueprintVersion: input.attempt.blueprintVersion,
     bankVersion: input.attempt.bankVersion,
-    skills: [...integratedObjectiveEvidence, writing],
+    skills: [...integratedObjectiveEvidence, legacyWrittenDiscourseEvidence],
     generatedAt: generatedAt.toISOString(),
     validUntil: new Date(generatedAt.getTime() + input.attempt.resultValidityDays * 24 * 60 * 60 * 1_000).toISOString(),
   });

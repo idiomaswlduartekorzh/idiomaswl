@@ -5,9 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   clearDiagnosticAttemptDrafts,
   readObjectiveDraft,
-  readWritingDraft,
   writeObjectiveDraft,
-  writeWritingDraft,
   type DiagnosticDraftAnswer,
   type DiagnosticSubmittedResponse,
 } from '@/lib/diagnostic-draft';
@@ -23,7 +21,7 @@ import s from './page.module.css';
 const CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
 const STORAGE_KEY = 'welearn:diagnostic:active-attempt';
 const SKILL_LABELS: Record<string, string> = {
-  reading: 'Lectura', listening: 'Escucha', writing: 'Escritura', grammar: 'Gramática', vocabulary: 'Vocabulario',
+  reading: 'Lectura', listening: 'Escucha', 'written-discourse': 'Discurso escrito', grammar: 'Gramática', vocabulary: 'Vocabulario',
 };
 const WRITING_EXCLUSION_LABELS: Record<string, string> = {
   'partially-off-task': 'respuesta parcialmente fuera de tema',
@@ -48,26 +46,21 @@ type PublicItem = {
   response:
     | { kind: 'single-choice'; optionIds: readonly string[] }
     | { kind: 'multiple-choice'; optionIds: readonly string[]; selectCount: number }
+    | { kind: 'ordering'; optionIds: readonly string[] }
     | { kind: 'short-text'; maxWords: number };
   displayOptions?: readonly { id: string; text: string }[];
 };
 
 type Stage = { stageId: string; kind: 'locator' | 'precision' | 'confirmation' | 'writing'; itemIds: readonly string[] };
 type ObjectiveDelivery = { attemptId: string; attemptVersion: number; expiresAt: string; stage: Stage; items: readonly PublicItem[]; listeningAccommodation: boolean };
-type WritingPrompt = {
-  id: string; contentVersion: string; title: string; situation: string; instructions: readonly string[];
-  minimumWords: number; maximumWords: number; recommendedMinutes: number;
-};
-type WritingDelivery = { attemptId: string; attemptVersion: number; expiresAt: string; stage: Stage; prompt: WritingPrompt };
 type ResumePayload =
   | { kind: 'objective-stage'; delivery: ObjectiveDelivery }
-  | { kind: 'writing-stage'; delivery: WritingDelivery }
   | { kind: 'processing'; attemptId: string; attemptVersion: number; status: 'scoring'; writingStatus: string | null }
   | { kind: 'result'; attemptId: string; attemptVersion: number; status: 'completed'; resultProfile: unknown }
   | { kind: 'closed'; attemptId: string; attemptVersion: number; status: 'expired' | 'abandoned' };
 
 type DraftAnswer = DiagnosticDraftAnswer;
-type View = 'intro' | 'loading' | 'objective' | 'writing' | 'processing' | 'result' | 'error';
+type View = 'intro' | 'loading' | 'objective' | 'processing' | 'result' | 'error';
 
 const REVIEW_ATTEMPT_ID = 'diagnostic-review-preview';
 const REVIEW_EXPIRES_AT = '2099-12-31T23:59:59.000Z';
@@ -134,21 +127,55 @@ const REVIEW_OBJECTIVE_DELIVERY: ObjectiveDelivery = {
   ],
   listeningAccommodation: false,
 };
-const REVIEW_WRITING_DELIVERY: WritingDelivery = {
+const REVIEW_DISCOURSE_DELIVERY: ObjectiveDelivery = {
   attemptId: REVIEW_ATTEMPT_ID,
   attemptVersion: 2,
   expiresAt: REVIEW_EXPIRES_AT,
-  stage: { stageId: 'review-writing', kind: 'writing', itemIds: ['review-writing-prompt'] },
-  prompt: {
-    id: 'review-writing-prompt', contentVersion: 'review-v1', title: 'A short recommendation',
-    situation: 'Write to a friend who wants to improve their English.',
-    instructions: ['Recommend one study habit.', 'Explain why it helps.', 'Give one practical example.'],
-    minimumWords: 5, maximumWords: 120, recommendedMinutes: 8,
-  },
+  stage: { stageId: 'review-written-discourse', kind: 'precision', itemIds: ['review-discourse-connector', 'review-discourse-order', 'review-discourse-insert', 'review-discourse-edit'] },
+  items: [
+    {
+      id: 'review-discourse-connector', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'rhetorical-relations',
+      prompt: 'Choose the phrase that best expresses the relationship between the two ideas.',
+      stimulus: { kind: 'text', stimulusId: 'review-discourse-connector-text', title: 'A changed plan', body: 'The outdoor concert was cancelled. ___, the musicians performed inside the town hall.' },
+      response: { kind: 'single-choice', optionIds: ['for-example', 'instead', 'meanwhile'] },
+      displayOptions: [{ id: 'for-example', text: 'For example' }, { id: 'instead', text: 'Instead' }, { id: 'meanwhile', text: 'Meanwhile' }],
+    },
+    {
+      id: 'review-discourse-order', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'organisation-sequencing',
+      prompt: 'Order the fragments to form a coherent paragraph.',
+      stimulus: { kind: 'text', stimulusId: 'review-discourse-order-text', title: 'Community garden', body: 'The paragraph explains why a neighbourhood project succeeded.' },
+      response: { kind: 'ordering', optionIds: ['order-c', 'order-a', 'order-d', 'order-b'] },
+      displayOptions: [
+        { id: 'order-c', text: 'As a result, more residents volunteered during the following month.' },
+        { id: 'order-a', text: 'At first, only six people worked in the community garden.' },
+        { id: 'order-d', text: 'The organisers therefore added a second weekly session.' },
+        { id: 'order-b', text: 'After they shared photographs of the first harvest, interest grew quickly.' },
+      ],
+    },
+    {
+      id: 'review-discourse-insert', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'cohesion-reference',
+      prompt: 'Where should this sentence go? “This limitation matters when the figures are compared across years.”',
+      stimulus: { kind: 'text', stimulusId: 'review-discourse-insert-text', title: 'Survey results', body: 'The survey reached twice as many people as last year. [1] However, most new respondents were under twenty-five. [2] The apparent increase may therefore reflect the sample rather than a change in opinion. [3]' },
+      response: { kind: 'single-choice', optionIds: ['position-1', 'position-2', 'position-3'] },
+      displayOptions: [{ id: 'position-1', text: 'Position 1' }, { id: 'position-2', text: 'Position 2' }, { id: 'position-3', text: 'Position 3' }],
+    },
+    {
+      id: 'review-discourse-edit', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'revision-coherence',
+      prompt: 'The intended meaning is that Marta reviewed the budget. Choose the clearest revision.',
+      stimulus: { kind: 'text', stimulusId: 'review-discourse-edit-text', title: 'An ambiguous reference', body: 'Marta discussed the proposal with Elena after she reviewed the budget.' },
+      response: { kind: 'single-choice', optionIds: ['marta', 'elena', 'proposal'] },
+      displayOptions: [
+        { id: 'marta', text: 'After reviewing the budget, Marta discussed the proposal with Elena.' },
+        { id: 'elena', text: 'After Elena reviewed the budget, Marta discussed the proposal with her.' },
+        { id: 'proposal', text: 'Marta discussed the proposal with Elena before reviewing the budget.' },
+      ],
+    },
+  ],
+  listeningAccommodation: false,
 };
 const REVIEW_RESULT = {
   globalLevel: 'B1', globalRange: ['A2', 'B1'], overallStatus: 'provisional',
-  skills: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map((skill, index) => ({
+  skills: ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map((skill, index) => ({
     skill, status: 'provisional', estimatedLevel: index === 1 ? 'A2' : 'B1',
     plausibleRange: index === 1 ? ['A1', 'B1'] : ['A2', 'B2'], confidence: index === 1 ? 0.54 : 0.76,
   })),
@@ -164,12 +191,8 @@ function responseFor(item: PublicItem, answer?: DraftAnswer): SubmittedResponse 
   if (answer) return answer.response;
   if (item.response.kind === 'single-choice') return { kind: 'single-choice', optionId: null };
   if (item.response.kind === 'multiple-choice') return { kind: 'multiple-choice', optionIds: [] };
+  if (item.response.kind === 'ordering') return { kind: 'ordering', optionIds: [] };
   return { kind: 'short-text', value: '' };
-}
-
-function wordCount(value: string): number {
-  const normalized = value.normalize('NFC').trim();
-  return normalized ? normalized.split(/\s+/u).length : 0;
 }
 
 export default function AdaptiveNivelRadarClient({ reviewMode = false }: { reviewMode?: boolean }) {
@@ -179,37 +202,30 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   const [listeningAccommodation, setListeningAccommodation] = useState(false);
   const [consented, setConsented] = useState(false);
   const [objective, setObjective] = useState<ObjectiveDelivery | null>(null);
-  const [writing, setWriting] = useState<WritingDelivery | null>(null);
   const [result, setResult] = useState<unknown>(null);
   const [message, setMessage] = useState('');
   const [deletingData, setDeletingData] = useState(false);
   const [authRequired, setAuthRequired] = useState(false);
   const [itemIndex, setItemIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, DraftAnswer>>({});
-  const [writingText, setWritingText] = useState('');
-  const openedAt = useRef(Date.now());
+  const openedAt = useRef(0);
 
-  const activateDelivery = useCallback((delivery: ObjectiveDelivery | WritingDelivery) => {
+  const activateDelivery = useCallback((delivery: ObjectiveDelivery) => {
     clearDiagnosticAttemptDrafts(sessionStorage, delivery.attemptId, delivery.stage.stageId);
     sessionStorage.setItem(STORAGE_KEY, delivery.attemptId);
     setMessage('');
     setAuthRequired(false);
-    if ('items' in delivery) {
-      const draft = readObjectiveDraft(sessionStorage, delivery);
-      const accommodatedAnswers = delivery.listeningAccommodation
-        ? Object.fromEntries(delivery.items.filter(item => item.skill === 'listening').map(item => [item.id, {
-          response: responseFor(item), responseMs: null, audioPlayCount: 0,
-        }]))
-        : {};
-      setObjective(delivery); setWriting(null); setAnswers({ ...(draft?.answers ?? {}), ...accommodatedAnswers }); setItemIndex(draft?.itemIndex ?? 0); openedAt.current = Date.now(); setView('objective');
-    } else {
-      const draft = readWritingDraft(sessionStorage, delivery);
-      setWriting(delivery); setObjective(null); setWritingText(draft ?? ''); setView('writing');
-    }
+    const draft = readObjectiveDraft(sessionStorage, delivery);
+    const accommodatedAnswers = delivery.listeningAccommodation
+      ? Object.fromEntries(delivery.items.filter(item => item.skill === 'listening').map(item => [item.id, {
+        response: responseFor(item), responseMs: null, audioPlayCount: 0,
+      }]))
+      : {};
+    setObjective(delivery); setAnswers({ ...(draft?.answers ?? {}), ...accommodatedAnswers }); setItemIndex(draft?.itemIndex ?? 0); openedAt.current = Date.now(); setView('objective');
   }, []);
 
   const applyResume = useCallback((payload: ResumePayload) => {
-    if (payload.kind === 'objective-stage' || payload.kind === 'writing-stage') return activateDelivery(payload.delivery);
+    if (payload.kind === 'objective-stage') return activateDelivery(payload.delivery);
     if (payload.kind === 'processing') { clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId); setView('processing'); return; }
     if (payload.kind === 'result') { clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId); sessionStorage.removeItem(STORAGE_KEY); setResult(payload.resultProfile); setView('result'); return; }
     clearDiagnosticAttemptDrafts(sessionStorage, payload.attemptId);
@@ -239,7 +255,12 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   useEffect(() => {
     if (reviewMode) return;
     const attemptId = sessionStorage.getItem(STORAGE_KEY);
-    if (attemptId) { setView('loading'); void resume(attemptId); }
+    if (!attemptId) return;
+    let active = true;
+    queueMicrotask(() => {
+      if (active) void resume(attemptId);
+    });
+    return () => { active = false; };
   }, [resume, reviewMode]);
 
   useEffect(() => {
@@ -253,10 +274,6 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   useEffect(() => {
     if (view === 'objective' && objective) writeObjectiveDraft(sessionStorage, objective, answers, itemIndex);
   }, [answers, itemIndex, objective, view]);
-
-  useEffect(() => {
-    if (view === 'writing' && writing) writeWritingDraft(sessionStorage, writing, writingText);
-  }, [view, writing, writingText]);
 
   async function start() {
     if ((!audioReady && !listeningAccommodation) || !consented) return;
@@ -340,6 +357,14 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
     openedAt.current = Date.now();
   }
 
+  function moveOrderingFragment(optionIds: readonly string[], from: number, direction: -1 | 1) {
+    const to = from + direction;
+    if (to < 0 || to >= optionIds.length) return;
+    const reordered = [...optionIds];
+    [reordered[from], reordered[to]] = [reordered[to], reordered[from]];
+    updateResponse({ kind: 'ordering', optionIds: reordered });
+  }
+
   async function submitObjective() {
     if (!objective || !currentItem) return;
     const elapsed = Math.min(3_600_000, Math.max(0, Date.now() - openedAt.current));
@@ -352,7 +377,15 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
     };
     setAnswers(finalAnswers); setView('loading');
     if (reviewMode) {
-      activateDelivery(REVIEW_WRITING_DELIVERY);
+      if (objective.stage.stageId === REVIEW_OBJECTIVE_DELIVERY.stage.stageId) {
+        activateDelivery(REVIEW_DISCOURSE_DELIVERY);
+      } else {
+        clearDiagnosticAttemptDrafts(sessionStorage, REVIEW_ATTEMPT_ID);
+        sessionStorage.removeItem(STORAGE_KEY);
+        setResult(REVIEW_RESULT);
+        setMessage('Resultado simulado para revisar la presentación; no se guardó ni calificó ninguna respuesta.');
+        setView('result');
+      }
       return;
     }
     try {
@@ -368,67 +401,26 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
           })),
         }),
       });
-      const body = await response.json() as { ok?: boolean; delivery?: ObjectiveDelivery | WritingDelivery; error?: string };
+      const body = await response.json() as { ok?: boolean; delivery?: ObjectiveDelivery; resultProfile?: unknown; error?: string };
       if (response.status === 409) { await resume(objective.attemptId); return; }
-      if (!response.ok || !body.delivery) { setMessage(body.error ?? 'No pudimos guardar esta etapa.'); setView('objective'); return; }
+      if (!response.ok || (!body.delivery && !body.resultProfile)) { setMessage(body.error ?? 'No pudimos guardar esta etapa.'); setView('objective'); return; }
       clearDiagnosticAttemptDrafts(sessionStorage, objective.attemptId);
-      activateDelivery(body.delivery);
+      if (body.delivery) activateDelivery(body.delivery);
+      else {
+        sessionStorage.removeItem(STORAGE_KEY);
+        setResult(body.resultProfile);
+        setMessage('Diagnóstico completado y calificado automáticamente.');
+        setView('result');
+      }
     } catch {
       setMessage('No pudimos guardar esta etapa. Tus respuestas siguen en esta pantalla.'); setView('objective');
     }
   }
 
-  async function submitWriting() {
-    if (!writing) return;
-    const count = wordCount(writingText);
-    if (count < writing.prompt.minimumWords || count > writing.prompt.maximumWords) return;
-    setView('loading');
-    if (reviewMode) {
-      clearDiagnosticAttemptDrafts(sessionStorage, REVIEW_ATTEMPT_ID);
-      sessionStorage.removeItem(STORAGE_KEY);
-      setResult(REVIEW_RESULT);
-      setMessage('Resultado simulado para revisar la presentación; no se guardó ni calificó ninguna respuesta.');
-      setView('result');
-      return;
-    }
-    try {
-      const response = await fetch(`/api/diagnostic/attempts/${writing.attemptId}/stages/${writing.stage.stageId}`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ attemptVersion: writing.attemptVersion, responseText: writingText }),
-      });
-      const body = await response.json() as { ok?: boolean; error?: string };
-      if (response.status === 409) { await resume(writing.attemptId); return; }
-      if (!response.ok) { setMessage(body.error ?? 'No pudimos guardar tu escritura.'); setView('writing'); return; }
-      clearDiagnosticAttemptDrafts(sessionStorage, writing.attemptId);
-      setView('processing');
-    } catch {
-      setMessage('No pudimos guardar tu escritura. El texto sigue disponible en esta sesión.'); setView('writing');
-    }
-  }
-
   if (view === 'loading') return <Status title="Guardando evidencia…" text="No cierres esta ventana." />;
-  if (view === 'processing') return <Status title="Tu evidencia está completa" text="La escritura está pendiente de revisión. Publicaremos el perfil integral cuando la evaluación humana quede cerrada." />;
+  if (view === 'processing') return <Status title="Calculando tu perfil" text="Estamos cerrando las cinco estimaciones objetivas. No se requiere revisión humana." />;
   if (view === 'result') return <ResultProfile profile={result} message={message} deletingData={deletingData} reviewMode={reviewMode} onDelete={() => void deleteDiagnosticData()} onRestart={() => { setResult(null); setMessage(''); setView('intro'); }} />;
   if (view === 'error') return <Status title="No pudimos continuar" text={message} action={<button className={s.secondary} onClick={() => { const id = sessionStorage.getItem(STORAGE_KEY); if (id) { setView('loading'); void resume(id); } else setView('intro'); }}>Reintentar</button>} />;
-
-  if (view === 'writing' && writing) {
-    const count = wordCount(writingText);
-    const valid = count >= writing.prompt.minimumWords && count <= writing.prompt.maximumWords;
-    return <section className={s.hero}><div className={s.shell}>
-      <div className={s.testHeader}><span>Etapa final · Escritura</span><span>{writing.prompt.recommendedMinutes} min sugeridos</span></div>
-      <article className={s.question}>
-        <p className={s.eyebrow}>{writing.prompt.title}</p>
-        <h2>{writing.prompt.situation}</h2>
-        <ul className={s.instructions}>{writing.prompt.instructions.map(instruction => <li key={instruction}>{instruction}</li>)}</ul>
-        <label className={s.writingLabel}>Tu respuesta
-          <textarea className={s.writingArea} value={writingText} onChange={event => setWritingText(event.target.value)} rows={12} spellCheck={false} autoCorrect="off" autoCapitalize="off" lang="en" />
-        </label>
-        <div className={s.wordMeter}><span>{count} palabras</span><span>mín. {writing.prompt.minimumWords} · máx. {writing.prompt.maximumWords}</span></div>
-        {message && <p className={s.inlineError}>{message}</p>}
-        <button className={s.primary} disabled={!valid} onClick={() => void submitWriting()}>Enviar para evaluación <span>→</span></button>
-      </article>
-    </div></section>;
-  }
 
   if (view === 'objective' && objective && currentItem) {
     const answer = responseFor(currentItem, currentAnswer);
@@ -476,6 +468,27 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
           })}
           <button aria-pressed={(answer.kind === 'single-choice' && answer.optionId === null) || (answer.kind === 'multiple-choice' && answer.optionIds.length === 0)} className={(answer.kind === 'single-choice' && answer.optionId === null) || (answer.kind === 'multiple-choice' && answer.optionIds.length === 0) ? s.selected : ''} onClick={() => updateResponse(currentItem.response.kind === 'single-choice' ? { kind: 'single-choice', optionId: null } : { kind: 'multiple-choice', optionIds: [] })}><span>—</span>No sé / omitir</button>
         </div>}
+        {currentItem.response.kind === 'ordering' && answer.kind === 'ordering' && <div className={s.ordering}>
+          <p className={s.orderingHelp}>Organiza los fragmentos hasta formar el texto más coherente.</p>
+          {(answer.optionIds.length ? answer.optionIds : currentItem.displayOptions?.map(option => option.id) ?? []).map((optionId, index, order) => {
+            const option = currentItem.displayOptions?.find(candidate => candidate.id === optionId);
+            if (!option) return null;
+            return <div className={s.orderingRow} key={option.id}>
+              <span className={s.orderingIndex}>{index + 1}</span>
+              <span className={s.orderingText}>{option.text}</span>
+              <span className={s.orderingActions}>
+                <button type="button" aria-label={`Subir fragmento ${index + 1}`} disabled={index === 0} onClick={() => moveOrderingFragment(order, index, -1)}>↑</button>
+                <button type="button" aria-label={`Bajar fragmento ${index + 1}`} disabled={index === order.length - 1} onClick={() => moveOrderingFragment(order, index, 1)}>↓</button>
+              </span>
+            </div>;
+          })}
+          <div className={s.orderingDecision}>
+            {answer.optionIds.length === 0
+              ? <button type="button" className={s.acceptOrdering} onClick={() => updateResponse({ kind: 'ordering', optionIds: currentItem.displayOptions?.map(option => option.id) ?? [] })}>Usar este orden</button>
+              : <span aria-live="polite">Orden registrado</span>}
+            <button type="button" className={s.omitOrdering} aria-pressed={answer.optionIds.length === 0} onClick={() => updateResponse({ kind: 'ordering', optionIds: [] })}>No sé / omitir</button>
+          </div>
+        </div>}
         {currentItem.response.kind === 'short-text' && answer.kind === 'short-text' && <textarea className={s.writingArea} rows={5} value={answer.value} onChange={event => updateResponse({ kind: 'short-text', value: event.target.value })} />}
         <div className={s.itemActions}>
           <button className={s.secondary} disabled={itemIndex === 0} onClick={() => moveItem(itemIndex - 1)}>Anterior</button>
@@ -492,9 +505,9 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   return <section className={s.hero}><div className={s.shell}>
     <p className={s.eyebrow}>{reviewMode ? 'Preview de revisión · recorrido simulado' : 'Diagnóstico adaptativo · Inglés A1–C2'}</p>
     <h1>Tu perfil real,<br /><span>habilidad por habilidad.</span></h1>
-    <p className={s.lead}>El examen usa etapas adaptativas para medir lectura, escucha, gramática y vocabulario; termina con una producción escrita revisada antes de publicar el resultado.</p>
+    <p className={s.lead}>El examen usa etapas adaptativas para medir lectura, escucha, construcción del discurso escrito, gramática y vocabulario. Todo se califica automáticamente.</p>
     {reviewMode && <p className={s.inlineError}>Este modo sirve para revisar la experiencia completa. No guarda respuestas, no califica y el perfil final es una demostración.</p>}
-    <div className={s.skillGrid}>{Object.entries(SKILL_LABELS).map(([key, label]) => <div className={s.skill} key={key}>{label}<small>{key === 'writing' ? 'rúbrica + revisión' : 'evidencia objetiva'}</small></div>)}</div>
+    <div className={s.skillGrid}>{Object.entries(SKILL_LABELS).map(([key, label]) => <div className={s.skill} key={key}>{label}<small>{key === 'written-discourse' ? 'cohesión, orden y revisión' : 'evidencia objetiva'}</small></div>)}</div>
     <div className={s.readinessBox}>
       <div>
         <strong>Muestra de sonido no puntuada</strong>
@@ -514,14 +527,14 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
         setListeningAccommodation(event.target.checked);
         if (event.target.checked) setAudioReady(false);
       }} /> No puedo realizar la parte de escucha y necesito la vía accesible.</label>
-      {listeningAccommodation && <p className={s.note}>Escucha quedará sin estimar, no se reproducirá audio y no se publicará un nivel global. Lectura, escritura, gramática y vocabulario conservarán rutas independientes.</p>}
-      <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento, revisar la escritura y calibrar el diagnóstico. El procesamiento externo de escritura requiere un consentimiento distinto y no queda autorizado aquí. Podrás borrar tus datos diagnósticos desde el resultado.</p>
+      {listeningAccommodation && <p className={s.note}>Escucha quedará sin estimar, no se reproducirá audio y no se publicará una orientación global. Las demás dimensiones conservarán rutas independientes.</p>}
+      <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento y calibrar el diagnóstico. No enviamos texto libre a revisores ni proveedores externos. Podrás borrar tus datos diagnósticos desde el resultado.</p>
       <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen según lo descrito para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}
     {authRequired ? <Link className={s.primary} href={`/login?next=${encodeURIComponent('/nivel-radar')}`}>Iniciar sesión y continuar <span>→</span></Link>
       : <button className={s.primary} disabled={(!audioReady && !listeningAccommodation) || !consented} onClick={() => void start()}>Iniciar diagnóstico <span>→</span></button>}
-    <p className={s.note}>50–75 minutos · Una confirmación adaptativa puede ampliar la duración · No es una certificación oficial</p>
+    <p className={s.note}>45–70 minutos · Una confirmación adaptativa puede ampliar la duración · El componente de discurso escrito usa tareas cerradas y no acredita producción libre · No es una certificación oficial</p>
   </div></section>;
 }
 
@@ -549,7 +562,7 @@ function ResultProfile({ profile, message, deletingData, reviewMode, onDelete, o
     ? safe.recommendations.filter(item => item && typeof item === 'object').map(item => item as Record<string, unknown>)
     : [];
   return <section className={s.hero}><div className={s.shell}>
-    <p className={s.eyebrow}>Perfil integral</p>
+    <p className={s.eyebrow}>Perfil objetivo integral</p>
     <div className={s.resultLevel}>{globalLevel ?? '—'}</div>
     <h1>{globalLevel ? <>Nivel global <span>{globalLevel}</span></> : 'Evidencia insuficiente para un nivel global'}</h1>
     <p className={s.lead}>{globalRange.length === 2 ? `Rango plausible global: ${globalRange[0]}–${globalRange[1]}.` : 'El resultado conserva las habilidades por separado para no esconder evidencia faltante.'}</p>
@@ -579,7 +592,7 @@ function ResultProfile({ profile, message, deletingData, reviewMode, onDelete, o
     {warnings.length > 0 && <p className={s.note}>Advertencias del perfil: {warnings.join(' · ')}</p>}
     <p className={s.note}>La confianza técnica resume cuánta precisión tiene esta estimación con la evidencia disponible; no es un porcentaje de dominio del idioma ni la probabilidad de que el nivel sea “correcto”.</p>
     {validUntil && <p className={s.note}>Vigente como orientación hasta {validUntil.toLocaleDateString('es-CO')}. Después conviene repetir el diagnóstico.</p>}
-    <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. Este resultado no sustituye un certificado oficial.</p>
+    <p className={s.disclaimer}>Las estimaciones se muestran como provisionales hasta completar calibración con muestra real. “Discurso escrito” mide organización y revisión mediante tareas cerradas; no demuestra producción escrita libre. Este resultado no sustituye un certificado oficial.</p>
     {message && <p className={s.inlineError} aria-live="polite">{message}</p>}
     <div className={s.actions}><IntegratedReportPdf globalLevel={globalLevel} globalRange={globalRange} skills={skills} recommendations={recommendations} warnings={warnings} validUntil={validUntil} /><button className={s.secondary} onClick={onRestart}>{reviewMode ? 'Repetir preview' : 'Nuevo diagnóstico'}</button>{!reviewMode && <Link className={s.primary} href="/dashboard/student">Ver mi panel <span>→</span></Link>}</div>
     {!reviewMode && <button className={s.secondary} disabled={deletingData} onClick={onDelete}>{deletingData ? 'Borrando datos…' : 'Borrar mis datos diagnósticos'}</button>}
@@ -607,7 +620,7 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
         doc.text(rows, 18, y);
         y += rows.length * (size * 0.45) + 4;
       };
-      line('Nivel Radar WeLearn — perfil integral', 17);
+      line('Nivel Radar WeLearn — perfil objetivo integral', 17);
       line(`Nivel global: ${globalLevel ?? 'no estimado'}${globalRange.length === 2 ? ` · rango plausible ${globalRange[0]}–${globalRange[1]}` : ''}`, 12);
       if (validUntil) line(`Vigente como orientación hasta ${validUntil.toLocaleDateString('es-CO')}.`);
       line('Habilidades', 13);
@@ -630,7 +643,7 @@ function IntegratedReportPdf({ globalLevel, globalRange, skills, recommendations
       }
       if (warnings.length) line(`Advertencias: ${warnings.join(' · ')}`);
       line('La confianza técnica expresa precisión de estimación; no es porcentaje de dominio ni probabilidad de acierto del nivel.', 9);
-      line('Resultado provisional hasta completar calibración con muestra real. No es una certificación oficial.', 9);
+      line('Resultado provisional hasta completar calibración con muestra real. Discurso escrito usa tareas cerradas y no acredita producción libre. No es una certificación oficial.', 9);
       doc.save('nivel-radar-welearn.pdf');
     } finally {
       setCreating(false);

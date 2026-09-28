@@ -7,7 +7,7 @@ import type {
 import type { DiagnosticWritingPrompt } from './writing.ts';
 
 export const DIAGNOSTIC_CONSENT_VERSION = 'diagnostic-pilot-2026-09-24';
-export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v3';
+export const DIAGNOSTIC_ENGINE_VERSION = 'mst-engine-v4';
 
 export interface DiagnosticStageDelivery {
   attemptId: string;
@@ -75,6 +75,12 @@ export function parseDiagnosticSubmittedResponse(value: unknown): DiagnosticSubm
       || candidate.optionIds.some((item) => !boundedString(item, 180))
       || new Set(candidate.optionIds).size !== candidate.optionIds.length) return null;
     return { kind: 'multiple-choice', optionIds: candidate.optionIds as string[] };
+  }
+  if (candidate.kind === 'ordering') {
+    if (!Array.isArray(candidate.optionIds) || candidate.optionIds.length > 8
+      || candidate.optionIds.some((item) => !boundedString(item, 180))
+      || new Set(candidate.optionIds).size !== candidate.optionIds.length) return null;
+    return { kind: 'ordering', optionIds: candidate.optionIds as string[] };
   }
   if (candidate.kind === 'short-text') {
     if (typeof candidate.value !== 'string' || candidate.value.length > 500) return null;

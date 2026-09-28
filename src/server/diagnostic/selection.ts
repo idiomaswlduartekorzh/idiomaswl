@@ -106,15 +106,35 @@ function requireBucket(
   return selected;
 }
 
+function requireSubdomainBucket(
+  bank: readonly DiagnosticBankRecord[], language: string, skill: DiagnosticObjectiveSkill,
+  level: CefrLevel, subdomain: string, count: number, seed: string,
+  excluded: ReadonlySet<string>, excludedStimuli: ReadonlySet<string> = new Set(),
+): DiagnosticBankRecord[] {
+  const selected = selectDistinctStimuli(bank.filter(record =>
+    isSelectable(record, language, excluded)
+    && !excludedStimuli.has(stimulusIdentity(record))
+    && record.publicItem.skill === skill
+    && record.publicItem.levelCandidate === level
+    && record.publicItem.subdomain === subdomain), count, `${seed}:${skill}:${level}:${subdomain}`);
+  if (selected.length < count) {
+    throw new Error(`diagnostic bank exhausted for ${skill}/${level}/${subdomain}: required ${count}, available ${selected.length}`);
+  }
+  return selected;
+}
+
 export function selectEnglishLocator(
   bank: readonly DiagnosticBankRecord[],
   seed: string,
   excludedItemIds: ReadonlySet<string> = new Set(),
 ): DiagnosticStageSelection {
   if (!seed) throw new Error('selection seed is required');
+  const discourseLocatorSubdomains = ['organisation-sequencing', 'rhetorical-relations', 'cohesion-reference'] as const;
   const records = LOCATOR_OBJECTIVE_SKILLS.flatMap(skill =>
-    ENGLISH_DIAGNOSTIC_BLUEPRINT.locator.targetLevels.flatMap(level =>
-      requireBucket(bank, 'en', skill, level, 1, seed, excludedItemIds),
+    ENGLISH_DIAGNOSTIC_BLUEPRINT.locator.targetLevels.flatMap((level, levelIndex) =>
+      skill === 'written-discourse'
+        ? requireSubdomainBucket(bank, 'en', skill, level, discourseLocatorSubdomains[levelIndex], 1, seed, excludedItemIds)
+        : requireBucket(bank, 'en', skill, level, 1, seed, excludedItemIds),
     ),
   );
   return {
@@ -154,8 +174,15 @@ export function selectEnglishPrecisionStage(
     if (skillRouteId === null) continue;
     const skillRoute = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === skillRouteId);
     if (!skillRoute) throw new Error(`unknown diagnostic route for ${skill}: ${skillRouteId}`);
-    for (const level of skillRoute.levels) {
-      const selected = requireBucket(bank, 'en', skill, level, perLevel, seed, selectedIds, selectedStimuli);
+    for (const [levelIndex, level] of skillRoute.levels.entries()) {
+      const discourseSubdomains = levelIndex === 0
+        ? ['organisation-sequencing', 'audience-register']
+        : ['rhetorical-relations', 'revision-coherence'];
+      const selected = skill === 'written-discourse'
+        ? discourseSubdomains.flatMap(subdomain => requireSubdomainBucket(
+          bank, 'en', skill, level, subdomain, 1, seed, selectedIds, selectedStimuli,
+        ))
+        : requireBucket(bank, 'en', skill, level, perLevel, seed, selectedIds, selectedStimuli);
       selected.forEach(record => {
         selectedIds.add(record.publicItem.id);
         selectedStimuli.add(stimulusIdentity(record));
@@ -195,8 +222,14 @@ export function selectEnglishConfirmationStage(
     if (skillRouteId === null) continue;
     const skillRoute = ENGLISH_DIAGNOSTIC_BLUEPRINT.routes.find(candidate => candidate.id === skillRouteId);
     if (!skillRoute) throw new Error(`unknown diagnostic route for ${skill}: ${skillRouteId}`);
-    for (const level of skillRoute.levels) {
-      const selected = requireBucket(bank, 'en', skill, level, 1, seed, selectedIds, selectedStimuli);
+    for (const [levelIndex, level] of skillRoute.levels.entries()) {
+      const selected = skill === 'written-discourse'
+        ? requireSubdomainBucket(
+          bank, 'en', skill, level,
+          levelIndex === 0 ? 'cohesion-reference' : 'rhetorical-relations',
+          1, seed, selectedIds, selectedStimuli,
+        )
+        : requireBucket(bank, 'en', skill, level, 1, seed, selectedIds, selectedStimuli);
       selected.forEach(record => {
         selectedIds.add(record.publicItem.id);
         selectedStimuli.add(stimulusIdentity(record));
@@ -228,7 +261,7 @@ export function auditEnglishMstCapacity(bank: readonly DiagnosticBankRecord[]): 
           required: requiredDecisions, available: candidates.length,
         });
       }
-      if (skill === 'reading' || skill === 'listening') {
+      if (skill === 'reading' || skill === 'listening' || skill === 'written-discourse') {
         const availableStimuli = new Set(candidates.map(stimulusIdentity)).size;
         const requiredStimuli = 6;
         if (availableStimuli < requiredStimuli) {

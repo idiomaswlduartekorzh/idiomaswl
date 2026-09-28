@@ -5,13 +5,13 @@ export type CefrLevel = (typeof CEFR_LEVELS)[number];
 export const DIAGNOSTIC_SKILLS = [
   'reading',
   'listening',
-  'writing',
+  'written-discourse',
   'grammar',
   'vocabulary',
 ] as const;
 
 export type DiagnosticSkill = (typeof DIAGNOSTIC_SKILLS)[number];
-export type DiagnosticObjectiveSkill = Exclude<DiagnosticSkill, 'writing'>;
+export type DiagnosticObjectiveSkill = DiagnosticSkill;
 
 export type DiagnosticItemStatus = 'reserved' | 'pilot' | 'operational' | 'retired';
 export type DiagnosticReviewStatus = 'draft' | 'linguistic-reviewed' | 'approved';
@@ -20,6 +20,7 @@ export type DiagnosticExposure = 'reserved' | 'public-practice' | 'previously-pu
 export type DiagnosticResponseContract =
   | { kind: 'single-choice'; optionIds: readonly string[] }
   | { kind: 'multiple-choice'; optionIds: readonly string[]; selectCount: number }
+  | { kind: 'ordering'; optionIds: readonly string[] }
   | { kind: 'short-text'; maxWords: number };
 
 export type DiagnosticStimulus =
@@ -42,7 +43,8 @@ export interface DiagnosticPublicItem {
   id: string;
   contentVersion: string;
   language: string;
-  skill: DiagnosticObjectiveSkill;
+  /** Machine-scored items may also measure written-discourse construction. */
+  skill: DiagnosticSkill;
   subdomain: string;
   levelCandidate: CefrLevel;
   prompt: string;
@@ -54,6 +56,7 @@ export interface DiagnosticPublicItem {
 export type DiagnosticSubmittedResponse =
   | { kind: 'single-choice'; optionId: string | null }
   | { kind: 'multiple-choice'; optionIds: readonly string[] }
+  | { kind: 'ordering'; optionIds: readonly string[] }
   | { kind: 'short-text'; value: string };
 
 export type DiagnosticRouteId = 'low-a1-a2' | 'mid-b1-b2' | 'high-c1-c2';

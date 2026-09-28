@@ -9,6 +9,7 @@ const sql = (await Promise.all([
   readFile(new URL('../supabase/migrations/20260925050000_diagnostic_delivery_policy.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925051500_diagnostic_pilot_retests.sql', import.meta.url), 'utf8'),
   readFile(new URL('../supabase/migrations/20260925053000_diagnostic_immutable_evidence.sql', import.meta.url), 'utf8'),
+  readFile(new URL('../supabase/migrations/20260928090000_diagnostic_written_discourse.sql', import.meta.url), 'utf8'),
 ])).join('\n').toLowerCase();
 const tables = [
   'diagnostic_attempts',
@@ -75,4 +76,10 @@ test('pilot retest schedules are bounded, private and consumed by an attempt tri
   assert.match(sql, /create trigger diagnostic_pilot_retest_before_attempt/);
   assert.match(sql, /before insert on public\.diagnostic_attempts/);
   assert.match(sql, /diagnostic_pilot_retest_not_authorized/);
+});
+
+test('written discourse becomes a machine-scored response dimension', () => {
+  assert.match(sql, /check \(skill in \('reading','listening','written-discourse','grammar','vocabulary'\)\)/);
+  assert.match(sql, /cardinality\(p_item_ids\) <> 15/);
+  assert.match(sql, /'constructs', jsonb_build_array\('reading','listening','written-discourse','grammar','vocabulary'\)/);
 });

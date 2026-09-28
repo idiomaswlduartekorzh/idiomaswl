@@ -14,7 +14,7 @@ export interface DiagnosticRecommendation {
 const PRACTICE: Readonly<Record<DiagnosticSkill, { label: string; href: string }>> = {
   reading: { label: 'Practicar lectura en inglés', href: '/practica/ingles' },
   listening: { label: 'Entrenar escucha con podcasts', href: '/podcasts' },
-  writing: { label: 'Practicar organización escrita', href: '/practica/ielts-writing-conectores' },
+  'written-discourse': { label: 'Practicar cohesión y organización escrita', href: '/practica/ielts-writing-conectores' },
   grammar: { label: 'Reforzar estructuras en contexto', href: '/practica/ingles' },
   vocabulary: { label: 'Construir vocabulario personal', href: '/practica/mi-vocabulario' },
 };

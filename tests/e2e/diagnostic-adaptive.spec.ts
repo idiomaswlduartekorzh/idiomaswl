@@ -43,24 +43,31 @@ const objectiveDelivery = {
   listeningAccommodation: false,
 } as const;
 
-const writingDelivery = {
+const discourseDelivery = {
   attemptId: ATTEMPT_ID,
   attemptVersion: 2,
   expiresAt: EXPIRES_AT,
-  stage: { stageId: 'writing-stage-1', kind: 'writing', itemIds: ['writing-b1-1'] },
-  prompt: {
-    id: 'writing-b1-1', contentVersion: 'v1', title: 'A short message',
-    situation: 'Write to a classmate about your English routine.',
-    instructions: ['Describe when you study.', 'Explain one goal.'],
-    minimumWords: 5, maximumWords: 20, recommendedMinutes: 8,
-  },
+  stage: { stageId: 'discourse-stage-1', kind: 'precision', itemIds: ['discourse-order-1'] },
+  items: [{
+    id: 'discourse-order-1', contentVersion: 'v1', skill: 'written-discourse', subdomain: 'organisation-sequencing',
+    prompt: 'Order the fragments to form a coherent paragraph.',
+    stimulus: { kind: 'text', stimulusId: 'garden-1', body: 'A short account of a community garden.' },
+    response: { kind: 'ordering', optionIds: ['result', 'start', 'action', 'response'] },
+    displayOptions: [
+      { id: 'result', text: 'As a result, more neighbours joined.' },
+      { id: 'start', text: 'At first, only two people maintained the garden.' },
+      { id: 'action', text: 'They shared photographs of the first harvest.' },
+      { id: 'response', text: 'The organisers then added another weekly session.' },
+    ],
+  }],
+  listeningAccommodation: false,
 } as const;
 
 const resultProfile = {
   globalLevel: 'B1',
   globalRange: ['A2', 'B1'],
   overallStatus: 'provisional',
-  skills: ['reading', 'listening', 'writing', 'grammar', 'vocabulary'].map((skill, index) => ({
+  skills: ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map((skill, index) => ({
     skill,
     status: 'provisional',
     estimatedLevel: index === 1 ? 'A2' : 'B1',
@@ -106,7 +113,7 @@ test.beforeEach(async ({ page }) => {
   }));
 });
 
-test('desktop recorre evidencia objetiva, audio, omisión y escritura con teclado', async ({ page }) => {
+test('desktop recorre evidencia objetiva, audio, omisión y discurso escrito con teclado', async ({ page }) => {
   await page.setViewportSize({ width: 1_440, height: 900 });
   const consoleErrors: string[] = [];
   const submissions: unknown[] = [];
@@ -118,9 +125,9 @@ test('desktop recorre evidencia objetiva, audio, omisión y escritura con teclad
   await page.route('**/api/diagnostic/attempts/*/stages/*', async route => {
     submissions.push(route.request().postDataJSON());
     if (route.request().url().endsWith('/locator-stage-1')) {
-      await fulfillJson(route, 200, { ok: true, delivery: writingDelivery });
+      await fulfillJson(route, 200, { ok: true, delivery: discourseDelivery });
     } else {
-      await fulfillJson(route, 200, { ok: true });
+      await fulfillJson(route, 200, { ok: true, resultProfile });
     }
   });
 
@@ -142,19 +149,20 @@ test('desktop recorre evidencia objetiva, audio, omisión y escritura con teclad
   await page.getByRole('button', { name: /has left already/ }).click();
   await page.getByRole('button', { name: /left yesterday/ }).click();
   await page.getByRole('button', { name: /Enviar etapa/ }).click();
-  await expect(page.getByRole('heading', { name: 'Write to a classmate about your English routine.' })).toBeVisible();
-  const sendWriting = page.getByRole('button', { name: /Enviar para evaluación/ });
-  await expect(sendWriting).toBeDisabled();
-  await page.getByRole('textbox', { name: 'Tu respuesta' }).fill('I study English nightly and practise listening.');
-  await expect(sendWriting).toBeEnabled();
-  await sendWriting.click();
-  await expect(page.getByRole('heading', { name: 'Tu evidencia está completa' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Order the fragments to form a coherent paragraph.' })).toBeVisible();
+  await page.getByRole('button', { name: 'Usar este orden' }).click();
+  await page.getByRole('button', { name: /Bajar fragmento 1/ }).click();
+  await page.getByRole('button', { name: /Enviar etapa/ }).click();
+  await expect(page.getByRole('heading', { name: 'Nivel global B1' })).toBeVisible();
 
   expect(submissions).toHaveLength(2);
   const objective = submissions[0] as { responses: Array<Record<string, unknown>> };
   expect(objective.responses).toHaveLength(3);
   expect(objective.responses[1]).toMatchObject({ itemId: 'listening-1', audioPlayCount: 1, response: { optionId: null } });
-  expect(submissions[1]).toMatchObject({ attemptVersion: 2, responseText: 'I study English nightly and practise listening.' });
+  expect(submissions[1]).toMatchObject({
+    attemptVersion: 2,
+    responses: [{ itemId: 'discourse-order-1', response: { kind: 'ordering' } }],
+  });
   expect(erroresPropios(consoleErrors), consoleErrors.join('\n')).toEqual([]);
 });
 
@@ -171,7 +179,7 @@ test('la vía accesible inicia sin audio y envía escucha como evidencia faltant
   });
   await page.route('**/api/diagnostic/attempts/*/stages/*', async route => {
     submissions.push(route.request().postDataJSON());
-    await fulfillJson(route, 200, { ok: true, delivery: writingDelivery });
+    await fulfillJson(route, 200, { ok: true, delivery: discourseDelivery });
   });
 
   await beginAccessibleDiagnostic(page);
@@ -203,7 +211,7 @@ test('recarga restaura pregunta y selección; un fallo conserva evidencia para r
   await page.route('**/api/diagnostic/attempts/*/stages/*', async route => {
     stageSubmissions += 1;
     if (stageSubmissions === 1) await fulfillJson(route, 503, { ok: false, error: 'Servicio temporalmente no disponible.' });
-    else await fulfillJson(route, 200, { ok: true, delivery: writingDelivery });
+    else await fulfillJson(route, 200, { ok: true, delivery: discourseDelivery });
   });
 
   await beginDiagnostic(page);
@@ -220,7 +228,7 @@ test('recarga restaura pregunta y selección; un fallo conserva evidencia para r
   await expect(page.getByText('Servicio temporalmente no disponible.')).toBeVisible();
   await expect(page.getByRole('button', { name: /has left already/ })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: /Enviar etapa/ }).click();
-  await expect(page.getByRole('heading', { name: 'Write to a classmate about your English routine.' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Order the fragments to form a coherent paragraph.' })).toBeVisible();
   expect(stageSubmissions).toBe(2);
 });
 

@@ -9,7 +9,11 @@ import {
   selectEnglishPrecisionStage,
 } from '../src/server/diagnostic/selection.ts';
 
-const objectiveSkills = DIAGNOSTIC_SKILLS.filter(skill => skill !== 'writing');
+const objectiveSkills = DIAGNOSTIC_SKILLS;
+const discourseSubdomains = [
+  'organisation-sequencing', 'rhetorical-relations', 'cohesion-reference',
+  'audience-register', 'revision-coherence',
+];
 
 function fixtureRecord(skill, level, variant, overrides = {}) {
   const id = `en-${level.toLowerCase()}-${skill}-${variant}`;
@@ -19,7 +23,9 @@ function fixtureRecord(skill, level, variant, overrides = {}) {
       contentVersion: '1',
       language: 'en',
       skill,
-      subdomain: `${skill}-subdomain`,
+      subdomain: skill === 'written-discourse'
+        ? discourseSubdomains[(variant - 1) % discourseSubdomains.length]
+        : `${skill}-subdomain`,
       levelCandidate: level,
       prompt: `Prompt ${id}`,
       stimulus: skill === 'listening'
@@ -41,7 +47,7 @@ function fixtureRecord(skill, level, variant, overrides = {}) {
 
 function completeBank() {
   return objectiveSkills.flatMap(skill =>
-    CEFR_LEVELS.flatMap(level => [1, 2, 3].map(variant => fixtureRecord(skill, level, variant))),
+    CEFR_LEVELS.flatMap(level => Array.from({ length: 12 }, (_, index) => fixtureRecord(skill, level, index + 1))),
   );
 }
 
@@ -56,8 +62,10 @@ test('selects a reproducible locator balanced by skill and target level', () => 
   const first = selectEnglishLocator(bank, 'attempt-123');
   const second = selectEnglishLocator([...bank].reverse(), 'attempt-123');
   assert.deepEqual(first.receipt.itemIds, second.receipt.itemIds);
-  assert.equal(first.records.length, 12);
-  assert.deepEqual(first.receipt.allocation, { reading: 3, listening: 3, grammar: 3, vocabulary: 3 });
+  assert.equal(first.records.length, 15);
+  assert.deepEqual(first.receipt.allocation, {
+    reading: 3, listening: 3, 'written-discourse': 3, grammar: 3, vocabulary: 3,
+  });
   for (const skill of objectiveSkills) {
     assert.deepEqual(
       first.records.filter(record => record.publicItem.skill === skill).map(record => record.publicItem.levelCandidate).sort(),
@@ -66,13 +74,15 @@ test('selects a reproducible locator balanced by skill and target level', () => 
   }
 });
 
-test('selects 16 precision decisions without reusing locator items', () => {
+test('selects 20 precision decisions without reusing locator items', () => {
   const bank = completeBank();
   const locator = selectEnglishLocator(bank, 'attempt-123');
   const used = new Set(locator.receipt.itemIds);
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'attempt-123:precision', used);
-  assert.equal(precision.records.length, 16);
-  assert.deepEqual(precision.receipt.allocation, { reading: 4, listening: 4, grammar: 4, vocabulary: 4 });
+  assert.equal(precision.records.length, 20);
+  assert.deepEqual(precision.receipt.allocation, {
+    reading: 4, listening: 4, 'written-discourse': 4, grammar: 4, vocabulary: 4,
+  });
   assert.equal(precision.records.some(record => used.has(record.publicItem.id)), false);
   for (const skill of objectiveSkills) {
     const levels = precision.records.filter(record => record.publicItem.skill === skill).map(record => record.publicItem.levelCandidate);
@@ -84,11 +94,14 @@ test('selects 16 precision decisions without reusing locator items', () => {
 test('precision follows each skill route and skips a skill with no locator evidence', () => {
   const bank = completeBank();
   const routes = {
-    reading: 'high-c1-c2', listening: null, grammar: 'low-a1-a2', vocabulary: 'mid-b1-b2',
+    reading: 'high-c1-c2', listening: null, 'written-discourse': 'mid-b1-b2',
+    grammar: 'low-a1-a2', vocabulary: 'mid-b1-b2',
   };
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'mixed-routes', new Set(), routes);
-  assert.equal(precision.records.length, 12);
-  assert.deepEqual(precision.receipt.allocation, { reading: 4, listening: 0, grammar: 4, vocabulary: 4 });
+  assert.equal(precision.records.length, 16);
+  assert.deepEqual(precision.receipt.allocation, {
+    reading: 4, listening: 0, 'written-discourse': 4, grammar: 4, vocabulary: 4,
+  });
   assert.deepEqual(precision.receipt.skillRoutes, routes);
   assert.deepEqual(new Set(precision.records.filter(record => record.publicItem.skill === 'reading')
     .map(record => record.publicItem.levelCandidate)), new Set(['C1', 'C2']));
@@ -98,15 +111,17 @@ test('precision follows each skill route and skips a skill with no locator evide
     .map(record => record.publicItem.levelCandidate)), new Set(['B1', 'B2']));
 });
 
-test('selects an eight-decision confirmation without reusing items or stimuli', () => {
+test('selects a ten-decision confirmation without reusing items or stimuli', () => {
   const bank = capacityBank();
   const locator = selectEnglishLocator(bank, 'attempt-confirm');
   const used = new Set(locator.receipt.itemIds);
   const precision = selectEnglishPrecisionStage(bank, 'mid-b1-b2', 'attempt-confirm:precision', used);
   precision.records.forEach(record => used.add(record.publicItem.id));
   const confirmation = selectEnglishConfirmationStage(bank, 'mid-b1-b2', 'attempt-confirm:confirmation', used);
-  assert.equal(confirmation.records.length, 8);
-  assert.deepEqual(confirmation.receipt.allocation, { reading: 2, listening: 2, grammar: 2, vocabulary: 2 });
+  assert.equal(confirmation.records.length, 10);
+  assert.deepEqual(confirmation.receipt.allocation, {
+    reading: 2, listening: 2, 'written-discourse': 2, grammar: 2, vocabulary: 2,
+  });
   assert.equal(confirmation.records.some(record => used.has(record.publicItem.id)), false);
   const identity = (record) => {
     const stimulus = record.publicItem.stimulus;

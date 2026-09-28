@@ -4,6 +4,7 @@ const DRAFT_KEY_PREFIX = 'welearn:diagnostic:draft:';
 export type DiagnosticSubmittedResponse =
   | { kind: 'single-choice'; optionId: string | null }
   | { kind: 'multiple-choice'; optionIds: string[] }
+  | { kind: 'ordering'; optionIds: string[] }
   | { kind: 'short-text'; value: string };
 
 export type DiagnosticDraftAnswer = {
@@ -17,6 +18,7 @@ type ObjectiveDraftItem = {
   response:
     | { kind: 'single-choice'; optionIds: readonly string[] }
     | { kind: 'multiple-choice'; optionIds: readonly string[]; selectCount: number }
+    | { kind: 'ordering'; optionIds: readonly string[] }
     | { kind: 'short-text'; maxWords: number };
   stimulus: { kind: string; maxPlays?: number };
 };
@@ -96,6 +98,14 @@ function validatedAnswer(value: unknown, item: ObjectiveDraftItem): DiagnosticDr
       || optionIds.some(optionId => typeof optionId !== 'string' || !contract.optionIds.includes(optionId))
       || new Set(optionIds).size !== optionIds.length) return null;
     cleanResponse = { kind: 'multiple-choice', optionIds: optionIds as string[] };
+  } else if (item.response.kind === 'ordering') {
+    const contract = item.response;
+    if (response.kind !== 'ordering' || !Array.isArray(response.optionIds)) return null;
+    const optionIds = response.optionIds;
+    if (optionIds.length !== 0 && optionIds.length !== contract.optionIds.length) return null;
+    if (optionIds.some(optionId => typeof optionId !== 'string' || !contract.optionIds.includes(optionId))
+      || new Set(optionIds).size !== optionIds.length) return null;
+    cleanResponse = { kind: 'ordering', optionIds: optionIds as string[] };
   } else {
     if (response.kind !== 'short-text' || typeof response.value !== 'string' || response.value.length > 20_000) return null;
     cleanResponse = { kind: 'short-text', value: response.value };

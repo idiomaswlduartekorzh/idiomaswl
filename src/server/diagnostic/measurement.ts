@@ -166,17 +166,26 @@ export function estimateObjectiveSkillEvidence(
     if (!record) throw new Error(`${skill} observation ${observation.itemId} has no matching bank record`);
     return { record, outcome: observation.outcome };
   });
-  const distinctStimuli = new Set(resolved.map(item => stimulusIdentity(item.record))).size;
   const omitted = resolved.filter(item => item.outcome === 'omitted').length;
   const attemptedEvidence = resolved.filter(
     (item): item is { record: DiagnosticBankRecord; outcome: 'correct' | 'incorrect' } => item.outcome !== 'omitted',
   );
+  const distinctStimuli = new Set(attemptedEvidence.map(item => stimulusIdentity(item.record))).size;
   const attempted = attemptedEvidence.length;
   const correct = attemptedEvidence.filter(item => item.outcome === 'correct').length;
   const base = { skill, decisions: resolved.length, distinctStimuli, attempted, omitted, observedAccuracy: attempted ? correct / attempted : null };
+  const writtenDiscourseCoverage = skill === 'written-discourse'
+    ? new Set(attemptedEvidence.map(item => item.record.publicItem.subdomain))
+    : null;
+  const missingWrittenDiscourseCoverage = writtenDiscourseCoverage !== null
+    && (writtenDiscourseCoverage.size < 4
+      || !writtenDiscourseCoverage.has('organisation-sequencing')
+      || !writtenDiscourseCoverage.has('rhetorical-relations')
+      || omitted > 1);
   if (resolved.length < dimension.minimumDecisions
     || distinctStimuli < dimension.minimumDistinctStimuli
-    || attempted < Math.max(4, dimension.minimumDecisions - 1)) {
+    || attempted < Math.max(4, dimension.minimumDecisions - 1)
+    || missingWrittenDiscourseCoverage) {
     return { ...base, status: 'not-estimated' };
   }
 

@@ -72,6 +72,27 @@ test('scores objective responses on the server and preserves omission', () => {
     scoreDiagnosticResponse({ kind: 'short-text', accepted: ['The station'] }, { kind: 'short-text', value: ' the station ' }),
     'correct',
   );
+  assert.equal(
+    scoreDiagnosticResponse(
+      { kind: 'ordering', acceptedOrders: [['a', 'b', 'c'], ['a', 'c', 'b']] },
+      { kind: 'ordering', optionIds: ['a', 'c', 'b'] },
+    ),
+    'correct',
+  );
+  assert.equal(
+    scoreDiagnosticResponse(
+      { kind: 'ordering', acceptedOrders: [['a', 'b', 'c']] },
+      { kind: 'ordering', optionIds: ['b', 'a', 'c'] },
+    ),
+    'incorrect',
+  );
+  assert.equal(
+    scoreDiagnosticResponse(
+      { kind: 'ordering', acceptedOrders: [['a', 'b', 'c']] },
+      { kind: 'ordering', optionIds: [] },
+    ),
+    'omitted',
+  );
   assert.throws(
     () => scoreDiagnosticResponse(record.scoring, { kind: 'multiple-choice', optionIds: ['b'] }),
     /does not match/,

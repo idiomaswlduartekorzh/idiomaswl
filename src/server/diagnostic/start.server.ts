@@ -9,7 +9,6 @@ import { createClient } from '@/lib/supabase/server';
 import {
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
   ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
-  ENGLISH_DIAGNOSTIC_WRITING_BANK,
 } from './bank';
 import {
   hasDiagnosticPilotEnrollment,
@@ -135,7 +134,6 @@ export async function handleDiagnosticAttemptStart(request: Request): Promise<Re
     });
     const delivery = await prepareEnglishDiagnosticAttempt(user.id, {
       bank: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK,
-      writingBank: ENGLISH_DIAGNOSTIC_WRITING_BANK,
       bankVersion: ENGLISH_DIAGNOSTIC_OBJECTIVE_BANK_VERSION,
       consentVersion: DIAGNOSTIC_CONSENT_VERSION,
       deliveryPolicyVersion: deliveryPolicy.policyVersion,
