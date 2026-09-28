@@ -125,6 +125,29 @@ Validaciones: harness A2 y guardianes de catálogo, TypeScript, build Webpack de
 2.584 páginas, y recorridos funcionales desktop y móvil. Hören y el examen
 completo siguen bloqueados; pagos y rutas protegidas permanecen sin cambios.
 
+## Mock maestro Goethe B1 — 27 de septiembre de 2026
+
+`codex/goethe-b1-master-20260927` partió de `origin/main` en `ce6eee65`.
+Estado: `DESPLEGADO`. Responsable: Codex. Alcance: primer mock maestro B1 original,
+navegación por módulos, presentación web IdiomasWL y cuadernos PDF. En Exámenes,
+el mock completo aparece bloqueado y sin enlace porque Hören todavía no dispone de
+guiones ni pistas aprobadas. En Práctica B1 están publicados Lesen, Schreiben y
+Sprechen; Hören muestra únicamente su arquitectura de cuatro partes y 30 tareas,
+sin reproductores ni acceso ejecutable. No cambian pagos ni se añaden variables,
+migraciones o servicios externos.
+
+La implementación y la corrección de visibilidad entraron en `main` mediante los
+commits `37a05d97` y `1271c72a`. Vercel publicó el segundo desde `main` en el
+deployment
+[`5JnedE7ZJ83LTzGhf5cXYZsapH9a`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/5JnedE7ZJ83LTzGhf5cXYZsapH9a),
+estado `success`. Pasaron 6/6 pruebas B1, catálogo protegido de 465 temas, contrato
+PDF de 60 sets, TypeScript, build Webpack local y los jobs de GitHub
+`baseline-and-types` y `production-build`. El smoke público confirmó la tarjeta B1
+bloqueada y sin enlace en Exámenes; los enlaces de Lesen, Schreiben y Sprechen en
+Práctica; un botón PDF en cada destreza; tres áreas de respuesta en Schreiben;
+cuatro partes de Hören sin controles; cero errores de consola y cero desbordamiento
+horizontal a 390 × 844.
+
 ## Presencia en tiempo real del sitio — 24 de septiembre de 2026
 
 `codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
