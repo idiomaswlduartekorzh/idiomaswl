@@ -80,6 +80,11 @@ LEGACY_HOLD
 
 `AUDIO_BLOCKED` es el estado actual de los diez mocks mientras ElevenLabs no tenga créditos. Contenido, imágenes, scripts, scoring y el adaptador compartido de examen/práctica están listos sin que el examen completo se abra. La generación futura no publica: después exige QA técnica, escucha humana independiente y un recibo final ligado a la huella exacta.
 
+El inventario de reanudación y sus huellas por set están centralizados en
+`docs/GOETHE-AUDIO-PENDIENTE-A1-B1.md` y
+`config/goethe-audio/backlog.json`. Ese contrato también deja explícitos los
+cuatro cierres que faltan antes de permitir gasto en A2.
+
 ## Operación
 
 Inventario y validación estática:

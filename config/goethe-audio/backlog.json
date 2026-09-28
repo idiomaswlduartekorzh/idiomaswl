@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-09-28",
+  "policy": {
+    "provider": "ElevenLabs",
+    "generateOnlyAfterFreshCreditSnapshot": true,
+    "generateOnlyWithExplicitHumanAuthorization": true,
+    "publishAutomatically": false,
+    "requiredQa": ["technical", "human-listening", "runtime", "release-receipt"]
+  },
+  "a1": {
+    "state": "PARTIALLY_RELEASED",
+    "releasedSets": [1, 2, 3, 4, 5, 6, 7],
+    "pendingSets": [
+      {
+        "set": 8,
+        "sourceClips": 28,
+        "billableCharacters": 3875,
+        "estimatedCreditsAtCurrentModel": 2713,
+        "sourceManifestHash": "808da3196a73b89d"
+      },
+      {
+        "set": 9,
+        "sourceClips": 28,
+        "billableCharacters": 4440,
+        "estimatedCreditsAtCurrentModel": 3108,
+        "sourceManifestHash": "62ed3dc8d450c4da"
+      },
+      {
+        "set": 10,
+        "sourceClips": 28,
+        "billableCharacters": 4233,
+        "estimatedCreditsAtCurrentModel": 2964,
+        "sourceManifestHash": "0c11d84ba7140c62"
+      }
+    ],
+    "generation": {
+      "script": "scripts/generate-goethe-a1-set2-audio.mjs",
+      "modelId": "eleven_v3",
+      "creditMultiplier": 0.7,
+      "minimumRemainingCreditReserve": 8000,
+      "outputFormat": "mp3_44100_128",
+      "voices": ["WL de · Klara", "WL de · Emma", "WL de · Frau Schneider", "WL de · Jonas", "WL de · Herr Becker"]
+    },
+    "publicOutputsPerPendingSet": {
+      "count": 19,
+      "master": "public/audio/goethe/a1-{set}/hoeren-komplett.mp3",
+      "parts": [
+        "public/audio/goethe/a1-{set}/hoeren-teil1.mp3",
+        "public/audio/goethe/a1-{set}/hoeren-teil2.mp3",
+        "public/audio/goethe/a1-{set}/hoeren-teil3.mp3"
+      ],
+      "items": "public/audio/goethe/a1-{set}/item-01.mp3 … item-15.mp3"
+    }
+  },
+  "a2": {
+    "state": "SCRIPTS_READY_GENERATOR_BLOCKED",
+    "sets": [
+      { "set": 1, "scriptUnits": 12, "turns": 46, "frozenCharacters": 6646, "sequenceHash": "33d22ca770355196", "candidateFingerprint": "fdf1b86b39fe8e04" },
+      { "set": 2, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6531, "sequenceHash": "c0284e12cf57da15", "candidateFingerprint": "0e2b1c12fa2389de" },
+      { "set": 3, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6501, "sequenceHash": "434889d141a42355", "candidateFingerprint": "3d4b557e99c532f1" },
+      { "set": 4, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6546, "sequenceHash": "cb3ba4142fbce141", "candidateFingerprint": "e3bf4f45a42e4cbf" },
+      { "set": 5, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6538, "sequenceHash": "a5df442cf60e89d2", "candidateFingerprint": "08f77489be8b3e71" },
+      { "set": 6, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6548, "sequenceHash": "faf0d46acc813337", "candidateFingerprint": "0e0512ef467e687d" },
+      { "set": 7, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6535, "sequenceHash": "f078cb9eba6d3ca4", "candidateFingerprint": "baf6505e1e66cd35" },
+      { "set": 8, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6528, "sequenceHash": "5375ac1e859162bd", "candidateFingerprint": "8c800cd725159f25" },
+      { "set": 9, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6517, "sequenceHash": "f0b21bf9df46cdb8", "candidateFingerprint": "49f2710a3b9211c3" },
+      { "set": 10, "scriptUnits": 12, "turns": 35, "frozenCharacters": 6574, "sequenceHash": "f8108ebb648c7677", "candidateFingerprint": "b3d424324b832585" }
+    ],
+    "frozenCharacterTotal": 65464,
+    "listeningContract": {
+      "itemsPerSet": 20,
+      "parts": [
+        { "part": 1, "scriptUnits": 5, "plays": 2 },
+        { "part": 2, "scriptUnits": 1, "plays": 1 },
+        { "part": 3, "scriptUnits": 5, "plays": 1 },
+        { "part": 4, "scriptUnits": 1, "plays": 2 }
+      ],
+      "targetMinutes": [22, 25],
+      "outputFormat": "mp3 mono 44.1 kHz 64 kbps",
+      "targetLufs": -18
+    },
+    "publicOutputsPerSet": {
+      "count": 5,
+      "master": "public/audio/goethe/a2-{set}/goethe-a2-{set}-master.mp3",
+      "parts": "public/audio/goethe/a2-{set}/hoeren-teil1.mp3 … hoeren-teil4.mp3"
+    },
+    "generationBlockers": ["EXECUTABLE_GENERATOR_MISSING", "VOICE_IDS_NOT_APPROVED", "CREDIT_RATE_NOT_FROZEN", "ASSEMBLY_AND_QA_RECEIPT_MISSING"]
+  },
+  "b1": {
+    "state": "SCRIPTS_MISSING",
+    "sets": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "scriptsReady": false,
+    "audioReady": false,
+    "listeningContract": {
+      "itemsPerSet": 30,
+      "minutesApprox": 40,
+      "parts": [
+        { "part": 1, "family": "five-short-texts-two-items-each", "scriptUnits": 5, "items": 10, "plays": 2 },
+        { "part": 2, "family": "one-public-monologue", "scriptUnits": 1, "items": 5, "plays": 1 },
+        { "part": 3, "family": "one-conversation-true-false", "scriptUnits": 1, "items": 7, "plays": 1 },
+        { "part": 4, "family": "radio-discussion-speaker-attribution", "scriptUnits": 1, "items": 8, "plays": 2 }
+      ]
+    },
+    "plannedPublicOutputsPerSet": {
+      "count": 5,
+      "master": "public/audio/goethe/b1-{set}/goethe-b1-{set}-hoeren-master.mp3",
+      "parts": "public/audio/goethe/b1-{set}/hoeren-teil1.mp3 … hoeren-teil4.mp3"
+    },
+    "generationBlockers": ["FOUR_PART_SCRIPTS_MISSING", "VOICE_CASTING_MISSING", "EXECUTABLE_GENERATOR_MISSING", "CREDIT_INVOICE_MISSING", "ASSEMBLY_AND_QA_RECEIPT_MISSING"],
+    "forbiddenLegacyInput": "src/data/mocks/goethe-b1-set-2.ts … goethe-b1-set-5.ts contain an obsolete two-part listening shape and must not be synthesized or published"
+  }
+}

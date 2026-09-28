@@ -71,6 +71,12 @@ Cada set incluye dos hojas y doce objetos nuevos. En el set 8 son plato, cuchill
 
 ## Audio pendiente
 
+El inventario operativo consolidado —caracteres, huellas, salidas y reserva—
+vive en `docs/GOETHE-AUDIO-PENDIENTE-A1-B1.md`; el contrato verificable está en
+`config/goethe-audio/backlog.json`. Si este documento y aquel inventario
+divergen, se detiene la generación y se vuelve a ejecutar
+`npm run check:goethe-audio-backlog`.
+
 El guion de cada set ya está dividido en 28 clips naturales y usa el reparto existente:
 
 - narradora: Klara;
