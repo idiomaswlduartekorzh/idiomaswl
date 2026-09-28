@@ -1,5 +1,9 @@
 # Nivel Radar: estrategia SEO y captura de leads
 
+Para replicar el diagnóstico en otros idiomas, consultar
+`docs/nivel-radar-multilingual-scaling-blueprint.md`. Ese contrato separa lo reutilizable del motor
+de lo que exige nueva validación lingüística, de audio y medición.
+
 Fecha de análisis: 27 de septiembre de 2026.
 
 ## Objetivo
