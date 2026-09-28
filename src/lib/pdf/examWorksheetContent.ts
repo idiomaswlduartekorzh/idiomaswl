@@ -16,6 +16,36 @@ export type WorksheetQuestion = {
 };
 export type WorksheetSection = { title: string; instructions: string; passage?: string; audio?: boolean; skill?: MockSection['skill']; part: number; questions: WorksheetQuestion[] };
 
+const GOETHE_OBJECTIVE_STARTS: Record<string, Record<number, number>> = {
+  a1: { 1: 1, 2: 7, 3: 11, 4: 1, 5: 6, 6: 11, 7: 1 },
+  a2: { 1: 1, 2: 6, 3: 11, 4: 16, 5: 1, 6: 6, 7: 11, 8: 16 },
+  b1: { 1: 1, 2: 7, 3: 13, 4: 20, 5: 27 },
+};
+
+function goetheAnswerNumbers(mockId: string, section: MockSection, question: Question, position: number): number[] | undefined {
+  if (question.type === 'matching') return question.items.map(item => item.num);
+  if (question.type === 'formgroup') return question.blanks.map(blank => blank.num);
+  if (question.type !== 'mcq' && question.type !== 'dialog') return undefined;
+  const level = mockId.match(/^(a1|a2|b1)-/)?.[1];
+  const start = level ? GOETHE_OBJECTIVE_STARTS[level]?.[section.part] : undefined;
+  return start === undefined ? undefined : [start + position - 1];
+}
+
+function withGoetheAnswerNumbers(mockId: string, source: readonly MockSection[], printable: WorksheetSection[]): WorksheetSection[] {
+  return printable.map((section, sectionIndex) => ({
+    ...section,
+    questions: section.questions.map((question, questionIndex) => {
+      const numbers = goetheAnswerNumbers(mockId, source[sectionIndex], source[sectionIndex].questions[questionIndex], questionIndex + 1);
+      if (!numbers?.length) return question;
+      return {
+        ...question,
+        answerNumbers: numbers,
+        label: numbers.length === 1 ? `Aufgabe ${numbers[0]}` : `Aufgaben ${numbers[0]}–${numbers.at(-1)}`,
+      };
+    }),
+  }));
+}
+
 /** Keeps Goethe Lesen Teil 1 questions immediately after their own text. */
 export function goetheReadingGroups(section: WorksheetSection) {
   const groups: Array<{ title: string; body: string; questions: WorksheetQuestion[] }> = [];
@@ -98,5 +128,8 @@ export function examWorksheetSections(sections: readonly MockSection[], exam: Wo
 
 export function worksheetForMock(mock: MockExam, sections: readonly MockSection[] = mock.sections, listeningOrderVersion: ListeningOrderVersion = CURRENT_LISTENING_ORDER) {
   if (mock.examSlug !== 'goethe' && mock.examSlug !== 'toefl' && mock.examSlug !== 'ielts') throw new Error('Unsupported worksheet exam');
-  return examWorksheetSections(sections, mock.examSlug, listeningOrderVersion);
+  const printable = examWorksheetSections(sections, mock.examSlug, listeningOrderVersion);
+  return mock.examSlug === 'goethe'
+    ? withGoetheAnswerNumbers(mock.id, sections, printable)
+    : printable;
 }

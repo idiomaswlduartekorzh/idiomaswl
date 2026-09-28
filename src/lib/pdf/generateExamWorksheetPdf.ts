@@ -158,6 +158,125 @@ async function printGoetheReadingTexts(api: BrandedDoc, section: WorksheetSectio
   }
 }
 
+type GoetheAnswerRow = {
+  number: number;
+  options: string[];
+  teil: string;
+  startsTeil: boolean;
+};
+
+function goetheOptionLabels(question: WorksheetQuestion): string[] {
+  return [...new Set(question.lines.flatMap(line => line.split('\n')).flatMap(line => {
+    const match = line.trim().match(/^([A-Z0])\.\s/u);
+    return match ? [match[1]] : [];
+  }))];
+}
+
+function goetheAnswerRows(sections: WorksheetSection[]): GoetheAnswerRow[] {
+  const rows: GoetheAnswerRow[] = [];
+  for (const section of sections) {
+    const teil = section.title.match(/(?:Teil|Aufgabe)\s*(\d+)/iu)?.[1] ?? String(section.part);
+    let first = true;
+    for (const question of section.questions) {
+      if (!question.answerNumbers?.length) continue;
+      const options = goetheOptionLabels(question);
+      for (const number of question.answerNumbers) {
+        rows.push({ number, options, teil, startsTeil: first });
+        first = false;
+      }
+    }
+  }
+  return rows;
+}
+
+function printGoetheAntwortbogen(api: BrandedDoc, sections: WorksheetSection[]) {
+  const rows = goetheAnswerRows(sections);
+  if (!rows.length) return;
+  const chunks = Array.from({ length: Math.ceil(rows.length / 36) }, (_, index) => rows.slice(index * 36, index * 36 + 36));
+  for (const [pageIndex, pageRows] of chunks.entries()) {
+    api.addPage();
+    api.heading('Antwortbogen', { size: 16 });
+    api.paragraph(pageIndex === 0
+      ? 'Übertragen Sie hier Ihre endgültigen Antworten. Kreuzen Sie bei Auswahlaufgaben genau ein Feld an.'
+      : 'Fortsetzung des Antwortbogens.', { size: 9.2, color: GRAY, gap: 4 });
+    api.paragraph('Name: ____________________________________    Datum: ____________________', { size: 9.4, gap: 5 });
+
+    const columns = pageRows.length > 12 ? 2 : 1;
+    const gap = 8;
+    const columnWidth = (api.contentW - gap * (columns - 1)) / columns;
+    const rowsPerColumn = Math.ceil(pageRows.length / columns);
+    const startY = api.state.y;
+    let deepestY = startY;
+    for (let column = 0; column < columns; column += 1) {
+      const columnRows = pageRows.slice(column * rowsPerColumn, (column + 1) * rowsPerColumn);
+      const x = api.M + column * (columnWidth + gap);
+      let y = startY;
+      for (const row of columnRows) {
+        const height = 8.5;
+        api.doc.setDrawColor(...SOFT).setLineWidth(0.35);
+        api.doc.rect(x, y, columnWidth, height, 'S');
+        api.doc.line(x + 12, y, x + 12, y + height);
+        api.F('bold').setFontSize(8.4).setTextColor(...NAVY);
+        api.doc.text(String(row.number), x + 6, y + 5.7, { align: 'center' });
+        api.F('normal').setFontSize(6.3).setTextColor(...GRAY);
+        api.doc.text(row.startsTeil ? `T${row.teil}` : '', x + 1.5, y + 2.3);
+        if (row.options.length) {
+          const optionWidth = Math.min(12, (columnWidth - 15) / row.options.length);
+          let optionX = x + 15;
+          for (const option of row.options) {
+            api.doc.roundedRect(optionX, y + 1.25, optionWidth - 1.2, 6, 1, 1, 'S');
+            api.F('bold').setFontSize(row.options.length > 6 ? 6.5 : 7.5).setTextColor(...INK);
+            api.doc.text(option, optionX + (optionWidth - 1.2) / 2, y + 5.35, { align: 'center' });
+            optionX += optionWidth;
+          }
+        } else {
+          api.doc.setDrawColor(...GRAY).setLineWidth(0.25);
+          api.doc.line(x + 18, y + 5.8, x + columnWidth - 4, y + 5.8);
+        }
+        y += height + 1.4;
+      }
+      deepestY = Math.max(deepestY, y);
+    }
+    api.state.y = deepestY + 2;
+  }
+}
+
+function printGoetheWritingAnswerSheets(api: BrandedDoc, sections: WorksheetSection[], mockId: string) {
+  const tasks = sections.flatMap(section => section.questions
+    .filter(question => question.response === 'writing')
+    .map(question => ({ section, question })));
+  for (const { section, question } of tasks) {
+    api.addPage();
+    api.heading('Antwortbogen Schreiben', { size: 16 });
+    api.paragraph(section.title, { size: 10.5, style: 'bold', color: NAVY, gap: 2 });
+    api.paragraph(question.label, { size: 9, color: GRAY, gap: 4 });
+    api.paragraph('Name: ____________________________________    Datum: ____________________', { size: 9.4, gap: 5 });
+    const lineCount = mockId.startsWith('b1-') ? (section.title.match(/(?:Aufgabe|Teil)\s*3/iu) ? 18 : 24) : mockId.startsWith('a2-') ? 18 : 15;
+    for (let line = 0; line < lineCount; line += 1) {
+      api.ensure(7.2);
+      api.doc.setDrawColor(...SOFT).setLineWidth(0.3).line(api.M, api.state.y, api.M + api.contentW, api.state.y);
+      api.state.y += 7.2;
+    }
+  }
+}
+
+function printGoetheSpeakingNotes(api: BrandedDoc, sections: WorksheetSection[]) {
+  if (!sections.some(section => section.questions.some(question => question.response === 'speaking'))) return;
+  api.addPage();
+  api.heading('Notizblatt Sprechen', { size: 16 });
+  api.paragraph('Nutzen Sie dieses Blatt nur für Ihre Vorbereitung. Schreiben Sie keine vollständigen Antworten vor.', { size: 9.2, color: GRAY, gap: 4 });
+  api.paragraph('Name: ____________________________________    Datum: ____________________', { size: 9.4, gap: 4 });
+  for (const section of sections) {
+    if (!section.questions.some(question => question.response === 'speaking')) continue;
+    api.heading(section.title, { size: 10.5, gapTop: 3, rule: false });
+    for (let line = 0; line < 5; line += 1) {
+      api.ensure(7);
+      api.doc.setDrawColor(...SOFT).setLineWidth(0.3).line(api.M, api.state.y, api.M + api.contentW, api.state.y);
+      api.state.y += 7;
+    }
+  }
+}
+
 export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetScope = {}) {
   const exam = mock.examSlug;
   if (exam !== 'goethe' && exam !== 'toefl' && exam !== 'ielts') throw new Error('Unsupported worksheet exam');
@@ -169,7 +288,8 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
       ? 'IELTS Academic'
       : 'TOEFL iBT 2026';
   const sourcePath = scope.sourcePath ?? `/examenes/${exam}/practica/${mock.id}`;
-  const worksheetTitle = scope.label && !mock.title.toLowerCase().endsWith(scope.label.toLowerCase())
+  const scopeSkill = scope.label?.split('·')[0]?.trim();
+  const worksheetTitle = scope.label && !(scopeSkill && mock.title.toLowerCase().endsWith(scopeSkill.toLowerCase()))
     ? `${mock.title} · ${scope.label}`
     : mock.title;
   const api = await createBrandedDoc({
@@ -211,7 +331,11 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
   }
 
   const answerSections = content.filter(section => section.questions.some(question => question.response !== 'writing' && question.response !== 'speaking'));
-  if (answerSections.length > 0) {
+  if (exam === 'goethe') {
+    printGoetheAntwortbogen(api, answerSections);
+    printGoetheWritingAnswerSheets(api, content, mock.id);
+    printGoetheSpeakingNotes(api, content);
+  } else if (answerSections.length > 0) {
     api.addPage();
     heading('Blank answer sheet', { size: 15 });
     paragraph('Transfer your final objective answers here. Keep the written responses and speaking notes in their sections.', { size: 9.2, color: GRAY, gap: 5 });

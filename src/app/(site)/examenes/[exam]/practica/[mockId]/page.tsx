@@ -47,6 +47,11 @@ export default async function PracticePage({ params, searchParams }: { params: P
       ? query.skill as GoetheB1PracticeSkill
       : undefined;
   const b1PracticePart = b1Skill ? parseGoetheB1PracticeTeil(b1Skill, query.teil) : undefined;
+  const goetheFullSkillMock = a2Skill
+    ? getGoetheA2PracticeMock(mockId, a2Skill)
+    : b1Skill
+      ? getGoetheB1PracticeMock(mockId, b1Skill)
+      : undefined;
   const mock = a2Skill
     ? getGoetheA2PracticeMock(mockId, a2Skill, a2PracticePart)
     : b1Skill
@@ -95,6 +100,7 @@ export default async function PracticePage({ params, searchParams }: { params: P
       key={`${mock.id}:${a2Skill}:${a2PracticePart ?? 'all'}:${a2Layout}`}
       exam={exam}
       mock={mock}
+      goetheFullSkillMock={goetheFullSkillMock ?? undefined}
       focusedPractice={{ level: 'A2', skill: a2Skill, part: a2PracticePart }}
       goetheA2LayoutMode={a2Layout}
     />;
@@ -105,6 +111,7 @@ export default async function PracticePage({ params, searchParams }: { params: P
       key={`${mock.id}:${b1Skill}:${b1PracticePart ?? 'all'}:${b1Layout}`}
       exam={exam}
       mock={mock}
+      goetheFullSkillMock={goetheFullSkillMock ?? undefined}
       focusedPractice={{ level: 'B1', skill: b1Skill, part: b1PracticePart }}
       goetheA2LayoutMode={b1Layout}
     />;

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-import { getMock } from '../src/data/mocks/index.ts';
+import { getGoetheB1PracticeMock, getMock } from '../src/data/mocks/index.ts';
 import { toGoetheA2Mock } from '../src/data/mocks/goethe-a2-adapter.ts';
 import { getGoetheA2Set } from '../src/data/mocks/goethe-a2-sets.ts';
 import { examWorksheetSections, goetheReadingGroups, worksheetForMock } from '../src/lib/pdf/examWorksheetContent.ts';
@@ -13,10 +13,17 @@ const root = path.resolve(import.meta.dirname, '..');
 const skills = ['listening', 'reading', 'writing', 'speaking'];
 let checked = 0;
 
+function getGoetheB1WorksheetMock(id) {
+  const modules = ['reading', 'writing', 'speaking'].map(skill => getGoetheB1PracticeMock(id, skill));
+  assert.ok(modules.every(Boolean), `${id}: a published B1 practice module is missing`);
+  return { ...modules[0], timeMinutes: 140, sections: modules.flatMap(module => module.sections) };
+}
+
 for (const [exam, ids] of [
   ['goethe', [
     ...Array.from({ length: 10 }, (_, index) => `a1-${index + 1}`),
     ...Array.from({ length: 10 }, (_, index) => `a2-${index + 1}`),
+    ...Array.from({ length: 10 }, (_, index) => `b1-${index + 1}`),
   ]],
   ['toefl', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
   ['ielts', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
@@ -24,6 +31,8 @@ for (const [exam, ids] of [
   for (const id of ids) {
     const mock = exam === 'goethe' && id.startsWith('a2-')
       ? toGoetheA2Mock(getGoetheA2Set(Number(id.slice(3))))
+      : exam === 'goethe' && id.startsWith('b1-')
+        ? getGoetheB1WorksheetMock(id)
       : getMock(exam, id);
     assert.ok(mock, `${exam} ${id} is missing`);
     const sections = worksheetForMock(mock);
@@ -57,12 +66,18 @@ for (const [exam, ids] of [
     }
     if (exam === 'goethe') {
       const isA1 = id.startsWith('a1-');
-      assert.equal(sections.length, isA1 ? 11 : 13, `${id}: full Goethe set has the wrong number of Teile`);
+      const isB1 = id.startsWith('b1-');
+      assert.equal(sections.length, isA1 ? 11 : isB1 ? 11 : 13, `${id}: full Goethe set has the wrong number of Teile`);
+      const answerNumbers = skill => sections
+        .filter(section => section.skill === skill)
+        .flatMap(section => section.questions.flatMap(question => question.answerNumbers ?? []));
+      assert.deepEqual(answerNumbers('reading'), Array.from({ length: isA1 ? 15 : isB1 ? 30 : 20 }, (_, index) => index + 1), `${id}: Lesen Antwortbogen numbering`);
+      if (!isB1) assert.deepEqual(answerNumbers('listening'), Array.from({ length: isA1 ? 15 : 20 }, (_, index) => index + 1), `${id}: Hören Antwortbogen numbering`);
       if (!isA1) {
         assert.deepEqual(
           skills.map(skill => sections.filter(section => section.skill === skill).length),
-          [4, 4, 2, 3],
-          `${id}: Goethe A2 skill PDFs are incomplete`,
+          isB1 ? [0, 5, 3, 3] : [4, 4, 2, 3],
+          `${id}: Goethe skill PDFs are incomplete`,
         );
         assert.ok(sections.filter(section => section.skill === 'speaking').every(section => section.questions.length === 1), `${id}: Sprechen PDF task count`);
         assert.ok(sections.filter(section => section.skill === 'speaking').every(section => !section.audio), `${id}: Sprechen PDF must not invent audio`);
@@ -143,5 +158,14 @@ for (const [file, expected] of [
   assert.ok(source.includes(expected), `${file}: download does not use the current mock`);
   assert.ok(source.includes('PdfDownloadButton'), `${file}: download button is missing`);
 }
+
+const worksheetGeneratorSource = await readFile(path.join(root, 'src/lib/pdf/generateExamWorksheetPdf.ts'), 'utf8');
+assert.match(worksheetGeneratorSource, /Antwortbogen/);
+assert.match(worksheetGeneratorSource, /Notizblatt Sprechen/);
+const languageRunnerSource = await readFile(path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]/LanguagePracticeClient.tsx'), 'utf8');
+assert.match(languageRunnerSource, /goetheFullSkillMock/);
+assert.match(languageRunnerSource, /komplette Fertigkeit/);
+const a1RunnerSource = await readFile(path.join(root, 'src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheA1PracticeClient.tsx'), 'utf8');
+assert.match(a1RunnerSource, /komplette Fertigkeit/);
 
 console.log(`✓ Student PDF contract: ${checked} sets, Goethe text/question groups and image plates, IELTS diagrams, TOEFL 34-item Listening, and key isolation`);

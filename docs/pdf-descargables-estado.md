@@ -19,7 +19,7 @@ membretada. La descarga es libre y de un clic: no pide correo.
 
 IELTS Listening ya ofrece 20 hojas de estudiante en sus prácticas por set. El
 [PR #15](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/15), publicado en producción,
-añadió hojas para Goethe A1 (7 sets, por destreza y por Teil) y TOEFL iBT 2026
+añadió hojas para Goethe A1 (10 sets, por destreza y por Teil) y TOEFL iBT 2026
 (20 simulacros completos y 20 prácticas independientes de Listening). Los PDF
 nacen del mismo mock que ve el estudiante:
 `examWorksheetContent.ts` proyecta solo campos imprimibles y `generateExamWorksheetPdf.ts`
@@ -28,13 +28,17 @@ Listen and Repeat. El audio se abre desde la práctica viva.
 
 La ampliación de la rama de unificación añade botones por destreza en los 20 sets
 TOEFL e IELTS, y por Task/Part/Pasaje en las prácticas independientes de IELTS.
-Goethe conserva sus PDF por destreza y por Teil. La composición de Goethe Lesen
+Goethe A1–B1 ofrece dos escalas de descarga: cada Teil por separado y toda la
+destreza reunida en un solo PDF. Los cuadernillos completos conservan el orden
+oficial de los Teile y terminan con un `Antwortbogen` en alemán; Schreiben añade
+hojas pautadas y Sprechen un `Notizblatt`. La composición de Goethe Lesen
 Teil 1 intercala Text A con sus preguntas antes de Text B; Teil 2 coloca la
 lámina de anuncios junto a cada pregunta, y Teil 3 presenta cada aviso como
 recuadro. Los gráficos y diagramas de IELTS, incluidos los SVG, se imprimen
 junto a sus tareas. La plantilla `brandedDoc.ts` sigue siendo la misma.
 
-`npm run check:exam-worksheets` comprueba los 47 sets, el recorte por Teil,
+`npm run check:exam-worksheets` comprueba los 70 sets, el recorte por Teil y por
+destreza completa, la numeración continua de los Antwortbogen Goethe,
 los grupos texto/preguntas de Goethe, las láminas públicas, la numeración 1–40
 de IELTS Listening y Reading, las 34 preguntas de TOEFL Listening, el orden de
 opciones y los canarios de privacidad. Corre en `prebuild`.
