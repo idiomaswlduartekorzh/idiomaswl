@@ -1,7 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm exec next build",
-  "ignoreCommand": "exit 1",
   "git": {
     "deploymentEnabled": {
       "codex/sat-scale-*": false
