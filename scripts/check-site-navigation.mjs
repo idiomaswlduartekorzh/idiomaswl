@@ -9,6 +9,8 @@ const failures = []
 const siteNav = read('src/components/SiteNav.tsx')
 const toolsPage = read('src/app/(site)/herramientas/page.tsx')
 const podcastPage = read('src/app/(site)/podcasts/page.tsx')
+const vocabularyPage = read('src/app/(site)/herramientas/vocabulario/page.tsx')
+const englishVocabularyPage = read('src/app/(site)/herramientas/vocabulario/ingles/page.tsx')
 
 const expect = (condition, message) => {
   if (!condition) failures.push(message)
@@ -28,6 +30,15 @@ expect(
   'La biblioteca de podcasts debe vivir como tarjeta dentro de Herramientas.',
 )
 expect(
+  toolsPage.includes("slug: 'vocabulario'") && toolsPage.includes("href: '/herramientas/vocabulario'"),
+  'Vocabulario debe vivir como tarjeta dentro de Herramientas.',
+)
+expect(
+  vocabularyPage.includes('VOCABULARY_LANGUAGES.map') &&
+    englishVocabularyPage.includes('PHRASAL_VERBS_BASE_PATH'),
+  'El recorrido Herramientas → Vocabulario → Inglés → Phrasal verbs debe conservarse.',
+)
+expect(
   podcastPage.includes("alternates: { canonical: 'https://www.idiomaswl.com/podcasts' }"),
   'La ruta pública de podcasts debe conservar su canonical para no romper el SEO.',
 )
@@ -37,5 +48,5 @@ if (failures.length) {
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else {
-  console.log('Navegación íntegra: Podcasts vive en Herramientas y conserva su ruta pública.')
+  console.log('Navegación íntegra: Podcasts y Vocabulario viven en Herramientas y conservan sus rutas públicas.')
 }

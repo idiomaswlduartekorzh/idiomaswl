@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.idiomaswl.com/herramientas/vocabulario/ingles/phrasal-verbs/sitemap.xml

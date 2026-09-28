@@ -175,7 +175,20 @@ const nextConfig: NextConfig = {
           destination: '/practica/ielts/reading/international-question-type/:slug',
         },
       ],
-      afterFiles: [],
+      afterFiles: [
+        {
+          source: '/herramientas/vocabulario/ingles/phrasal-verbs',
+          destination: '/herramientas/vocabulario/ingles/phrasal-verbs/index.html',
+        },
+        {
+          source: '/herramientas/vocabulario/ingles/phrasal-verbs/explorar',
+          destination: '/herramientas/vocabulario/ingles/phrasal-verbs/explorar/index.html',
+        },
+        {
+          source: '/herramientas/vocabulario/ingles/phrasal-verbs/:slug(phrasal-verbs-[a-z-]+)',
+          destination: '/herramientas/vocabulario/ingles/phrasal-verbs/:slug/index.html',
+        },
+      ],
       fallback: [],
     };
   },

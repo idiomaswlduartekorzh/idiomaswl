@@ -27,6 +27,10 @@ import { PARAPHRASE_TECHNIQUES } from '@/app/(site)/practica/ielts/academic/writ
 import { VOCAB_FUNCTIONS } from '@/app/(site)/practica/ielts/academic/writing/task2/academic-vocabulary/vocabulary-data';
 import { TRANSFERABLE_SKILLS } from '@/app/(site)/practica/ielts/academic/writing/task2/habilidades/skills-data';
 import { VOCAB_UNITS } from '@/app/(site)/practica/ielts/academic/writing/vocabulario/vocabulary-index';
+import {
+  PHRASAL_VERB_SEO_PAGES,
+  PHRASAL_VERBS_BASE_PATH,
+} from '@/data/herramientas/vocabulario';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -68,6 +72,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Los idiomas salen del registro, no de una lista a mano: así añadir uno no puede
     // dejarlo fuera del sitemap.
     { url: `${BASE}/herramientas`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/herramientas/vocabulario`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/herramientas/vocabulario/ingles`, changeFrequency: 'monthly', priority: 0.82 },
+    {
+      url: `${BASE}${PHRASAL_VERBS_BASE_PATH}`,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+      images: [`${BASE}${PHRASAL_VERBS_BASE_PATH}/assets/seo/phrasal-verbs-esenciales-welearn.png`],
+    },
+    ...PHRASAL_VERB_SEO_PAGES.map((page) => ({
+      url: `${BASE}${PHRASAL_VERBS_BASE_PATH}/${page.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: page.slug === 'explorar' || page.slug === 'phrasal-verbs-esenciales' ? 0.8 : 0.76,
+      images: [`${BASE}${PHRASAL_VERBS_BASE_PATH}/assets/seo/${page.image}`],
+    })),
     { url: `${BASE}/herramientas/quizes`, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/herramientas/quizes/pronombres`, changeFrequency: 'monthly', priority: 0.73 },
     ...QUIZ_LANGUAGES.flatMap((language) => [

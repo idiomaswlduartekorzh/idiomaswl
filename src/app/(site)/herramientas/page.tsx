@@ -9,7 +9,7 @@ const URL = 'https://www.idiomaswl.com/herramientas'
 export const metadata: Metadata = {
   title: 'Herramientas gratuitas para estudiar idiomas',
   description:
-    'Utilidades abiertas de Idiomas WeLearn: podcasts para preparar exámenes, quizes y transcripción fonética. Sin registro.',
+    'Utilidades abiertas de Idiomas WeLearn: vocabulario, podcasts para preparar exámenes, quizes y transcripción fonética. Sin registro.',
   alternates: { canonical: URL },
   // Sin esto se hereda el `openGraph` del layout raíz entero, `url` incluida: compartir
   // esta página por WhatsApp enseñaba el título del sitio y un enlace a la portada.
@@ -56,6 +56,16 @@ const TOOLS: Tool[] = [
     // Línea base histórica protegida: 8 episodios · 6 exámenes.
     detail: '10 episodios · 7 exámenes · 3 idiomas',
     color: SKILL_ACCENT.escucha.light,
+  },
+  {
+    slug: 'vocabulario',
+    href: '/herramientas/vocabulario',
+    flag: '📚',
+    name: 'Vocabulario por idioma',
+    tagline:
+      'Estudia vocabulario en ocho idiomas y abre en inglés un banco de phrasal verbs con ejemplos, práctica, imágenes y PDFs.',
+    detail: '8 idiomas · 334 phrasal verbs en inglés',
+    color: SKILL_ACCENT.vocabulario.light,
   },
   {
     slug: 'quizes',
