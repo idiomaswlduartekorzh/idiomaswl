@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-24",
+  "usage": "architecture-and-public-assessment-contract-only",
+  "sources": [
+    { "id": "adult-materials", "url": "https://www.goethe.de/ins/co/es/spr/prf/gzsd2/ueb.html", "kind": "official-material-index" },
+    { "id": "adult-model", "url": "https://www.goethe.de/pro/relaunch/prf/materialien/A2/A2_Modellsatz_Erwachsene.pdf", "kind": "official-model-pdf", "observedVersion": "Vs5.1_050525" },
+    { "id": "implementation-rules", "url": "https://www.goethe.de/pro/relaunch/prf/es/Durchfuehrungsbestimmungen_A2.pdf", "kind": "official-regulations", "effectiveFrom": "2025-09-01" },
+    { "id": "a2-word-list", "url": "https://www.goethe.de/resources/files/pdf329/goethe-zertifikat_a2_wortliste.pdf", "kind": "official-level-vocabulary" }
+  ],
+  "copyrightBoundary": {
+    "mayReuse": ["part counts", "task families", "timings", "scoring model", "rubric dimensions"],
+    "mustCreateOriginal": ["texts", "prompts", "answer options", "audio", "images", "names", "situations", "layouts carrying protected content"]
+  }
+}

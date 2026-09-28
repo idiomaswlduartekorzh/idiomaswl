@@ -3,15 +3,17 @@ import { goethePracticeSetNumbers } from './release';
 
 export type GoethePracticeSkill = 'listening' | 'reading' | 'writing' | 'speaking';
 export type GoethePracticeTeil = 1 | 2 | 3;
+export type GoetheA2PracticeSkill = Exclude<GoethePracticeSkill, 'listening'>;
+export type GoetheA2PracticeTeil = 1 | 2 | 3 | 4;
 
-export type GoethePracticeTeilMeta = {
-  teil: GoethePracticeTeil;
+export type GoethePracticeTeilMeta<TTeil extends number = GoethePracticeTeil> = {
+  teil: TTeil;
   title: string;
   workload: string;
   minutes: number;
 };
 
-export const GOETHE_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTeilMeta[]> = {
+export const GOETHE_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTeilMeta<GoethePracticeTeil>[]> = {
   listening: [
     { teil: 1, title: 'Kurze Gespräche', workload: '6 preguntas · 2 reproducciones', minutes: 8 },
     { teil: 2, title: 'Öffentliche Ansagen', workload: '4 preguntas · 1 reproducción', minutes: 5 },
@@ -32,6 +34,43 @@ export const GOETHE_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTe
     { teil: 3, title: 'Bitten und reagieren', workload: 'tarjetas con imágenes', minutes: 5 },
   ],
 };
+
+export const GOETHE_A2_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTeilMeta<GoetheA2PracticeTeil>[]> = {
+  listening: [
+    { teil: 1, title: 'Kurze Texte', workload: '5 preguntas · audio pendiente', minutes: 8 },
+    { teil: 2, title: 'Ein Gespräch', workload: '5 asignaciones · audio pendiente', minutes: 7 },
+    { teil: 3, title: 'Kurze Gespräche', workload: '5 preguntas · audio pendiente', minutes: 7 },
+    { teil: 4, title: 'Radiointerview', workload: '5 preguntas · audio pendiente', minutes: 8 },
+  ],
+  reading: [
+    { teil: 1, title: 'Artikel', workload: '1 texto · 5 preguntas', minutes: 8 },
+    { teil: 2, title: 'Informationstafel', workload: '1 tablero · 5 preguntas', minutes: 7 },
+    { teil: 3, title: 'E-Mail', workload: '1 mensaje · 5 preguntas', minutes: 7 },
+    { teil: 4, title: 'Anzeigen zuordnen', workload: '5 situaciones · 6 anuncios', minutes: 8 },
+  ],
+  writing: [
+    { teil: 1, title: 'Persönliche Nachricht', workload: 'mensaje de 20–30 palabras', minutes: 15 },
+    { teil: 2, title: 'Halbformelle E-Mail', workload: 'correo de 30–40 palabras', minutes: 15 },
+  ],
+  speaking: [
+    { teil: 1, title: 'Fragen zur Person', workload: 'preguntar y responder', minutes: 5 },
+    { teil: 2, title: 'Von sich erzählen', workload: 'tema con cuatro puntos', minutes: 5 },
+    { teil: 3, title: 'Gemeinsam planen', workload: 'proponer, reaccionar y acordar', minutes: 5 },
+  ],
+};
+
+export function parseGoetheA2PracticeTeil(skill: GoethePracticeSkill, value?: string) {
+  const teil = Number(value);
+  return GOETHE_A2_PRACTICE_TEILE[skill].some(item => item.teil === teil)
+    ? teil as GoetheA2PracticeTeil
+    : undefined;
+}
+
+export function goetheA2PracticeHref(mockId: string, skill: GoetheA2PracticeSkill, teil?: GoetheA2PracticeTeil) {
+  const params = new URLSearchParams({ mode: 'practice', skill });
+  if (teil !== undefined) params.set('teil', String(teil));
+  return `/examenes/goethe/practica/${mockId}?${params.toString()}`;
+}
 
 export function parseGoethePracticeTeil(skill: GoethePracticeSkill, value?: string) {
   const teil = Number(value);

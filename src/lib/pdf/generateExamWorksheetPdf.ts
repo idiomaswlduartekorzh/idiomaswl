@@ -86,20 +86,26 @@ function printLines(api: BrandedDoc, lines: string[]) {
 }
 
 async function printQuestion(api: BrandedDoc, question: WorksheetQuestion, section: WorksheetSection, exam: MockExam['examSlug'], mockId: string, index: number) {
-  const hasIllustration = !!question.imageUrl || !!question.imageUrls?.length || exam === 'goethe' && (section.part === 5 || section.part === 1 && index < 6 || section.part === 11);
+  const isGoetheA1 = exam === 'goethe' && mockId.startsWith('a1-');
+  const hasA1Illustration = isGoetheA1 && (
+    section.skill === 'reading' && section.part === 5
+    || section.skill === 'listening' && section.part === 1 && index < 6
+    || section.skill === 'speaking' && section.part === 11
+  );
+  const hasIllustration = !!question.imageUrl || !!question.imageUrls?.length || hasA1Illustration;
   api.ensure(exam === 'goethe' && section.part === 5 ? 145 : hasIllustration ? 112 : 24);
   api.heading(question.label, { size: 10.5, gapTop: 5, rule: false });
   let stimulusShown = false;
   if (exam === 'goethe' && section.part === 5 && question.stimulusLabel) {
     api.paragraph(question.stimulusLabel, { size: 9.3, style: 'bold', gap: 2 });
   }
-  if (exam === 'goethe' && section.part === 1 && index < 6) {
+  if (isGoetheA1 && section.skill === 'listening' && section.part === 1 && index < 6) {
     await printImage(api, goetheListeningImage(mockId, index + 1), 'Bildoptionen A–C · Hören Teil 1');
   }
-  if (exam === 'goethe' && section.part === 5 && index < 5) {
+  if (isGoetheA1 && section.skill === 'reading' && section.part === 5 && index < 5) {
     await printImage(api, goetheReadingImage(mockId, index + 6), 'Anzeigen A und B · Lesen Teil 2', 68);
   }
-  if (exam === 'goethe' && section.part === 11) {
+  if (isGoetheA1 && section.skill === 'speaking' && section.part === 11) {
     for (let sheet = 1; sheet <= 2; sheet += 1) {
       await printImage(api, `/images/goethe/${mockId}/sprechen-teil3-karten-0${sheet}.png`, `Bildkarten · Sprechen Teil 3 · Blatt ${sheet}`);
     }
@@ -157,7 +163,11 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
   if (exam !== 'goethe' && exam !== 'toefl' && exam !== 'ielts') throw new Error('Unsupported worksheet exam');
   const sections = scope.sections ?? mock.sections;
   const content = worksheetForMock(mock, sections, scope.listeningOrderVersion);
-  const name = exam === 'goethe' ? 'Goethe-Zertifikat A1' : exam === 'ielts' ? 'IELTS Academic' : 'TOEFL iBT 2026';
+  const name = exam === 'goethe'
+    ? `Goethe-Zertifikat ${mock.id.startsWith('a2-') ? 'A2' : 'A1'}`
+    : exam === 'ielts'
+      ? 'IELTS Academic'
+      : 'TOEFL iBT 2026';
   const sourcePath = scope.sourcePath ?? `/examenes/${exam}/practica/${mock.id}`;
   const api = await createBrandedDoc({
     levelLabel: name,
@@ -186,7 +196,7 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
     heading(section.title, { size: 14, color: exam === 'goethe' ? INK : NAVY });
     paragraph(section.instructions, { size: 9.3, gap: 3 });
     if (section.audio) paragraph('Audio: open the linked live practice page to listen.', { size: 8.6, color: GRAY, gap: 3 });
-    if (exam === 'goethe' && section.part === 4 && section.passage) {
+    if (exam === 'goethe' && mock.id.startsWith('a1-') && section.part === 4 && section.passage) {
       await printGoetheReadingTexts(api, section, mock.id);
       continue;
     }
@@ -197,19 +207,21 @@ export async function generateExamWorksheetPdf(mock: MockExam, scope: WorksheetS
     for (const [questionIndex, question] of section.questions.entries()) await printQuestion(api, question, section, exam, mock.id, questionIndex);
   }
 
-  api.addPage();
-  heading('Blank answer sheet', { size: 15 });
-  paragraph('Transfer your final objective answers here. Keep the written responses and speaking notes in their sections.', { size: 9.2, color: GRAY, gap: 5 });
-  for (const section of content) {
-    if (section.questions.every(question => question.response === 'writing' || question.response === 'speaking')) continue;
-    heading(section.title, { size: 10.5, gapTop: 4, rule: false });
-    for (const question of section.questions) {
-      if (exam === 'ielts' && question.answerNumbers?.length) {
-        for (const number of question.answerNumbers) paragraph(`${number}. ____________________________________`, { size: 9, gap: 2 });
-        continue;
+  const answerSections = content.filter(section => section.questions.some(question => question.response !== 'writing' && question.response !== 'speaking'));
+  if (answerSections.length > 0) {
+    api.addPage();
+    heading('Blank answer sheet', { size: 15 });
+    paragraph('Transfer your final objective answers here. Keep the written responses and speaking notes in their sections.', { size: 9.2, color: GRAY, gap: 5 });
+    for (const section of answerSections) {
+      heading(section.title, { size: 10.5, gapTop: 4, rule: false });
+      for (const question of section.questions) {
+        if (exam === 'ielts' && question.answerNumbers?.length) {
+          for (const number of question.answerNumbers) paragraph(`${number}. ____________________________________`, { size: 9, gap: 2 });
+          continue;
+        }
+        paragraph(`${question.label}: ____________________________________`, { size: 9, gap: 2 });
+        if (question.label === 'Complete the Words') for (const match of question.lines.join(' ').matchAll(/\[(\d+)\]/g)) paragraph(`Blank ${match[1]}: ____________________`, { size: 8.8, indent: 5, gap: 1 });
       }
-      paragraph(`${question.label}: ____________________________________`, { size: 9, gap: 2 });
-      if (question.label === 'Complete the Words') for (const match of question.lines.join(' ').matchAll(/\[(\d+)\]/g)) paragraph(`Blank ${match[1]}: ____________________`, { size: 8.8, indent: 5, gap: 1 });
     }
   }
   paragraph('This PDF is original WeLearn practice material, not an official exam paper.', { size: 8.3, color: GRAY });

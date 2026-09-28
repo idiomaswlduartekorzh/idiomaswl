@@ -62,6 +62,92 @@ emitieron los meta-redireccionamientos protegidos esperados.
 Detalle editorial, prompts de imagen, hashes de audio y procedimiento:
 [`GOETHE-A1-SETS-8-10.md`](GOETHE-A1-SETS-8-10.md).
 
+## Práctica Goethe A2 y catálogo A1–B2 — 24 de septiembre de 2026
+
+`codex/goethe-a2-production` partió de `origin/main` en `092fefda` e integra la
+fábrica editorial A2 aprobada. Estado: `DESPLEGADO`. Responsable: Codex.
+Alcance: navegación de práctica Goethe A1, A2, B1 y B2; bibliotecas A2 por set y
+Teil para Lesen, Schreiben y Sprechen; y diez simulacros A2 visibles pero
+bloqueados en Exámenes. Hören A2 y cualquier acceso al examen completo permanecen
+cerrados hasta producir y aprobar sus audios. La práctica por destreza es gratuita;
+el flujo de resultados, acceso y pagos de los exámenes completos no se modifica.
+No requiere migraciones ni variables nuevas. La publicación está protegida por un
+registro separado de release de práctica, de modo que habilitar una destreza nunca
+habilita accidentalmente un mock completo. Validaciones: 21/21 pruebas de
+estructura, scoring, originalidad y sesgos; guardianes Goethe y catálogo; TypeScript;
+ESLint focalizado; build Webpack de 2.584 páginas; y recorrido visual local del hub,
+bibliotecas, tiempos por Teil, redirección heredada de A1 y niveles bloqueados.
+La implementación se integró en `main` como `b794f4f9`; los ajustes finales de copy
+y límite SEO quedaron en `841761d1`. Vercel publicó este último commit en
+[`dpl_FXafrB1G88nkZZBsz7T9LkUHUfqd`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/FXafrB1G88nkZZBsz7T9LkUHUfqd),
+estado `success`. El smoke público confirmó el hub A1–B2, diez sets de Lesen,
+Schreiben y Sprechen A2, editor de escritura, grabador oral, resultado gratuito sin
+muro de pago, redirección heredada de A1 y cierre efectivo de Hören y de las rutas de
+examen completo. Los diez simulacros A2 aparecen bloqueados en el catálogo de
+Exámenes con audio pendiente.
+
+Actualización editorial del 24 de septiembre: `codex/goethe-a2-editorial-ui`
+rediseña exclusivamente la práctica A2 como hojas de candidato WeLearn, sin usar
+logos ni páginas oficiales. Lesen distingue visualmente artículo, directorio,
+correo y anuncios; las preguntas recuperan numeración y casillas A/B/C; Schreiben
+y Sprechen comparten la misma jerarquía de Teil y papel editorial. Estado:
+`DESPLEGADO`. Vercel publicó desde `main` el mismo commit que contiene este registro
+y el smoke público se ejecutó sobre
+`/examenes/goethe/practica/a2-2?mode=practice&skill=reading` y `skill=writing`.
+Validaciones: 21/21 harness A2, guardianes Goethe y catálogo, TypeScript, build
+Webpack de 2.584 páginas y recorridos visuales desktop y móvil sin desbordamiento.
+No cambian respuestas, scoring, pagos ni los bloqueos de Hören y examen completo.
+
+Actualización responsive del 25 de septiembre: `codex/goethe-a2-official-layout`
+mantiene Schreiben sin cambios y corrige la respiración visual de Lesen en móvil.
+El directorio de Teil 2 apila rótulo y descripción sin colisiones; Teil 4 separa
+los enunciados 16–20 y elimina los ordinales duplicados del contenido. Sprechen
+recupera el control de aleatoriedad de A1 en sus tres Teile y evita repetir la
+selección consecutiva. Estado: `DESPLEGADO`. La implementación quedó en
+`569db5be` y el árbol publicado en `main` en `08c848db`. Vercel publicó este SHA
+como `Ready` y `Current` en
+[`dpl_4mo2ZS3rmeU2VU1j7jqS1fKH91LZ`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/4mo2ZS3rmeU2VU1j7jqS1fKH91LZ),
+asignado a `www.idiomaswl.com`. Validaciones: 21/21 harness A2, guardianes
+Goethe y catálogo, TypeScript, build Webpack de 2.584 páginas, prueba responsive
+local a 390 × 844 sin desbordamiento y smoke público de Lesen y Sprechen. En el
+smoke, Lesen mostró numeración limpia 16–20 y Sprechen ofreció tres controles de
+azar con cambio verificado de tarjeta. Hören y el examen completo siguen
+bloqueados; pagos, scoring y rutas protegidas no cambian.
+
+Actualización web nativa del 27 de septiembre: `codex/goethe-a2-web-native`
+mantiene el cuadernillo A2 aprobado como referencia opcional (`layout=sheet`),
+pero presenta por defecto Lesen, Schreiben y Sprechen dentro de la experiencia
+web de IdiomasWL. El contenido, la estructura Goethe, las respuestas y el scoring
+no cambian. Lesen usa paneles de lectura y preguntas coordinados; Schreiben usa un
+espacio de consigna y respuesta; Sprechen conserva los tres controles aleatorios
+de A1. Estado: `DESPLEGADO`. La implementación entró en `main` en `cbdeebe3`.
+Validaciones: harness A2 y guardianes de catálogo, TypeScript, build Webpack de
+2.584 páginas, y recorridos funcionales desktop y móvil. Hören y el examen
+completo siguen bloqueados; pagos y rutas protegidas permanecen sin cambios.
+
+## Presencia en tiempo real del sitio — 24 de septiembre de 2026
+
+`codex/live-presence-admin-20260924` parte de `origin/main` en `bfebab2d`.
+Estado: `DESPLEGADO_PRODUCCION`. Responsable: Codex. Alcance: medición anónima de sesiones
+activas, detección estimada de bots, API administrativa y tarjeta en
+`/dashboard/admin`. Compartidos reservados: `src/app/layout.tsx`, `src/proxy.ts`,
+migraciones de Supabase y este documento. Requiere una migración nueva, sin
+variables adicionales. La medición no conserva IP, correo ni user-agent; solo un
+identificador irreversible, el tipo estimado, la ruta actual y marcas de tiempo.
+La migración `20260924233546_live_site_presence.sql` se aplicó en Supabase
+producción. Verificación: seis columnas esperadas, RLS activo, `anon` y
+`authenticated` sin privilegios, `service_role` con acceso explícito, tres
+índices y cero filas iniciales. Los asesores de seguridad y rendimiento no
+reportaron errores ni advertencias para `site_presence`. Validación local:
+5/5 pruebas de presencia, TypeScript, ESLint focalizado, catálogo de prácticas,
+build completo de Next.js y smoke visual/HTTP. Integrado en `main` por el commit
+`2e608ac0`; el deployment productivo final también contiene el commit posterior
+`38f46db8`. Vercel `3LKF2yaNEyLhfwuQDof8zknsmRPm` quedó `Ready`, `Latest` y
+`Current` para `www.idiomaswl.com`. Smoke final: página pública `200`, heartbeat
+humano `204`, visita bot `200`, API administrativa anónima `403` y panel anónimo
+redirigido a `/login`. Supabase confirmó filas recientes tanto `person/heartbeat`
+como `bot/request`.
+
 ## 1. Resultado que debe producir este plan
 
 El sistema de trabajo debe garantizar simultáneamente que:

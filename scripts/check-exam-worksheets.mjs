@@ -3,6 +3,8 @@ import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 import { getMock } from '../src/data/mocks/index.ts';
+import { toGoetheA2Mock } from '../src/data/mocks/goethe-a2-adapter.ts';
+import { getGoetheA2Set } from '../src/data/mocks/goethe-a2-sets.ts';
 import { examWorksheetSections, goetheReadingGroups, worksheetForMock } from '../src/lib/pdf/examWorksheetContent.ts';
 import { goethePracticeSections } from '../src/lib/goethe/practice.ts';
 import { CURRENT_LISTENING_ORDER, LEGACY_LISTENING_ORDER, listeningDisplayOptions } from '../src/data/toefl/listening-option-order.ts';
@@ -12,12 +14,17 @@ const skills = ['listening', 'reading', 'writing', 'speaking'];
 let checked = 0;
 
 for (const [exam, ids] of [
-  ['goethe', Array.from({ length: 10 }, (_, index) => `a1-${index + 1}`)],
+  ['goethe', [
+    ...Array.from({ length: 10 }, (_, index) => `a1-${index + 1}`),
+    ...Array.from({ length: 10 }, (_, index) => `a2-${index + 1}`),
+  ]],
   ['toefl', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
   ['ielts', Array.from({ length: 20 }, (_, index) => `set-${index + 1}`)],
 ]) {
   for (const id of ids) {
-    const mock = getMock(exam, id);
+    const mock = exam === 'goethe' && id.startsWith('a2-')
+      ? toGoetheA2Mock(getGoetheA2Set(Number(id.slice(3))))
+      : getMock(exam, id);
     assert.ok(mock, `${exam} ${id} is missing`);
     const sections = worksheetForMock(mock);
     assert.equal(sections.length, mock.sections.length, `${exam} ${id}: section count`);
@@ -49,7 +56,20 @@ for (const [exam, ids] of [
       }
     }
     if (exam === 'goethe') {
-      assert.equal(sections.length, 11, `${id}: full Goethe set must have eleven Teile`);
+      const isA1 = id.startsWith('a1-');
+      assert.equal(sections.length, isA1 ? 11 : 13, `${id}: full Goethe set has the wrong number of Teile`);
+      if (!isA1) {
+        assert.deepEqual(
+          skills.map(skill => sections.filter(section => section.skill === skill).length),
+          [4, 4, 2, 3],
+          `${id}: Goethe A2 skill PDFs are incomplete`,
+        );
+        assert.ok(sections.filter(section => section.skill === 'speaking').every(section => section.questions.length === 1), `${id}: Sprechen PDF task count`);
+        assert.ok(sections.filter(section => section.skill === 'speaking').every(section => !section.audio), `${id}: Sprechen PDF must not invent audio`);
+        assert.ok(sections.filter(section => section.skill === 'listening').every(section => section.audio), `${id}: Hören PDF must retain its audio notice`);
+        checked += 1;
+        continue;
+      }
       const lesen = sections.find(section => section.part === 4);
       const { groups, unmatched } = goetheReadingGroups(lesen);
       assert.equal(groups.length, 2, `${id}: Lesen Teil 1 must contain Text A then Text B`);
@@ -114,6 +134,7 @@ assert.ok(!JSON.stringify(worksheetForMock(toefl)).includes(repeat.targetSentenc
 
 for (const [file, expected] of [
   ['src/app/(site)/examenes/[exam]/practica/[mockId]/GoetheA1PracticeClient.tsx', 'generateExamWorksheetPdf(deliveryMock'],
+  ['src/app/(site)/examenes/[exam]/practica/[mockId]/LanguagePracticeClient.tsx', 'generateExamWorksheetPdf(mock'],
   ['src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx', 'generateExamWorksheetPdf(mock'],
   ['src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx', 'generateExamWorksheetPdf(mock'],
   ['src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx', 'generateExamWorksheetPdf({'],

@@ -21,6 +21,7 @@ import StudentList from './StudentList'
 import IELTSReviewPanel from './IELTSReviewPanel'
 import TOEFLReviewPanel from './TOEFLReviewPanel'
 import GoetheReviewPanel from './GoetheReviewPanel'
+import LivePresenceCard from './LivePresenceCard'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -482,6 +483,8 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
               <p style={{ margin: '4px 0 0', fontSize: 12, color: MUTED }}>Hola, {viewer.displayName}. Datos reales de exámenes, leads y estudiantes.</p>
             </div>
           </div>
+
+          <LivePresenceCard />
 
           {/* Acciones que requieren atención, calculadas con datos reales. */}
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }} aria-label="Prioridades operativas">

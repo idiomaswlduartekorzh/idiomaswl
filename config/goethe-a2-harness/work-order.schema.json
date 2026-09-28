@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://welearn.com.co/schemas/goethe-a2-work-order.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "set", "run", "baseCommit", "fingerprints", "topicReservation", "requiredStages", "releaseTarget"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "set": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "run": { "type": "string", "minLength": 1 },
+    "baseCommit": { "type": "string", "minLength": 7 },
+    "fingerprints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["blueprint", "sources", "ledger", "prompts", "harness"],
+      "properties": {
+        "blueprint": { "$ref": "#/$defs/sha256" },
+        "sources": { "$ref": "#/$defs/sha256" },
+        "ledger": { "$ref": "#/$defs/sha256" },
+        "prompts": { "$ref": "#/$defs/sha256" },
+        "harness": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "topicReservation": { "type": "object" },
+    "requiredStages": { "type": "array", "minItems": 13, "items": { "type": "string" }, "uniqueItems": true },
+    "releaseTarget": { "const": "AUDIO_BLOCKED" }
+  },
+  "$defs": { "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" } }
+}

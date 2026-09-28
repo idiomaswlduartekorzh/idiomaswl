@@ -27,6 +27,8 @@ export interface MCQQuestion {
   // Visual treatment of the stimulus. 'passage' renders it as reading prose (SAT: each
   // item carries its own 25–150 word text), the rest keep the ICFES notice/sign/dialog look.
   stimulusStyle?: 'notice' | 'sign' | 'dialog-box' | 'passage';
+  imageUrl?: string;
+  imageAlt?: string;
   audioUrl?: string;   // per-item audio prompt (e.g. TOEFL 2026 "Listen and Choose a Response")
   text: string;
   options: string[];
@@ -186,6 +188,8 @@ export interface MatchingGroupQuestion {
   part: number;
   qRange: [number, number];
   groupLabel?: string;
+  imageUrl?: string;
+  imageAlt?: string;
   items: MatchingItem[];
   endings: { letter: string; text: string }[];
 }

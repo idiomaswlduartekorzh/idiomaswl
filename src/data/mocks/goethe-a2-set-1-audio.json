@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "set": 1,
+  "candidateFingerprint": "fdf1b86b39fe8e0447747d1204de1bbbb9df24a8ee77a6b8c3cf1a177be01988",
+  "status": "script-ready-audio-blocked",
+  "provider": "ElevenLabs",
+  "generation": {
+    "requiresFreshCreditSnapshot": true,
+    "requiresExplicitHumanAuthorization": true,
+    "publishesAutomatically": false
+  },
+  "technical": {
+    "format": "mp3 mono 44.1 kHz 64 kbps",
+    "targetLufs": -18,
+    "targetMinutes": [
+      22,
+      25
+    ]
+  },
+  "master": {
+    "path": "/audio/goethe/a2-1/goethe-a2-1-master.mp3",
+    "containsSpokenInstructions": true,
+    "containsExamples": true,
+    "containsPauses": true,
+    "containsTransferWindow": true,
+    "navigation": {
+      "pause": false,
+      "seek": false,
+      "replay": false
+    }
+  },
+  "voices": [
+    {
+      "id": "announcer",
+      "profile": "adult female, clear standard German, neutral examination delivery"
+    },
+    {
+      "id": "adult-f-1",
+      "profile": "adult female, natural everyday German"
+    },
+    {
+      "id": "adult-f-2",
+      "profile": "adult female, distinct from announcer"
+    },
+    {
+      "id": "adult-m-1",
+      "profile": "adult male, natural everyday German"
+    },
+    {
+      "id": "adult-m-2",
+      "profile": "adult male, distinct from adult-m-1"
+    }
+  ],
+  "sequence": [
+    {
+      "part": 1,
+      "family": "five-short-public-or-private-messages",
+      "plays": 2,
+      "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zweimal.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h1-1",
+          "turns": [
+            {
+              "speaker": "Bibliothek",
+              "text": "Guten Tag, Frau Campos, hier ist die Stadtbibliothek. Ihr bestelltes Buch über Stadtgärten ist heute angekommen. Wir legen es bis Donnerstagabend für Sie zurück. Am Mittwoch schließen wir wegen einer Veranstaltung schon um sechzehn Uhr. Donnerstag haben wir wie gewöhnlich bis neunzehn Uhr geöffnet. Bitte bringen Sie zur Abholung Ihren Bibliotheksausweis mit."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-2",
+          "turns": [
+            {
+              "speaker": "Ansage",
+              "text": "Achtung, Fahrgäste der Linie sieben Richtung Hauptbahnhof. Wegen Bauarbeiten kann die Haltestelle Markt heute nicht benutzt werden. Die Bahnen fahren aber nach dem normalen Fahrplan. Bitte gehen Sie ungefähr zweihundert Meter weiter und steigen Sie an der Ersatzhaltestelle in der Kleinen Steinstraße ein. Morgen früh halten die Bahnen wieder am Markt."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-3",
+          "turns": [
+            {
+              "speaker": "Werkstatt",
+              "text": "Hallo Herr Novak, hier ist die Werkstatt Lichtblick. Wir haben Ihre alte Stehlampe geprüft. Das Kabel ist schon neu und die Lampe funktioniert fast wieder. Leider passt keiner unserer Schalter; das richtige Ersatzteil kommt erst morgen. Deshalb ist die Abholung heute noch nicht möglich. Sie können die Lampe am Freitag ab vierzehn Uhr abholen und dann auch bezahlen."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-4",
+          "turns": [
+            {
+              "speaker": "Hausansage",
+              "text": "Liebe Besucherinnen und Besucher, noch eine Änderung im heutigen Programm: Der Vortrag „Weniger Müll im Alltag“ beginnt wie angekündigt um achtzehn Uhr, aber nicht im großen Saal, sondern in Raum zwei im ersten Stock. Der Saal wird heute noch gestrichen. Nach dem Vortrag können Sie gern im Café weiterdiskutieren; es bleibt bis zwanzig Uhr geöffnet."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h1-5",
+          "turns": [
+            {
+              "speaker": "Mailbox",
+              "text": "Hallo zusammen, hier ist Nora vom Geschichtsverein. Unsere Führung durch die alte Fabrik findet morgen statt, auch wenn es regnet, denn wir sind fast die ganze Zeit im Gebäude. Der Boden ist an einigen Stellen uneben und nass. Zieht deshalb bitte feste Schuhe an. Getränke gibt es vor Ort, und Jacken können wir am Eingang einschließen. Wir treffen uns um zehn Uhr am Haupttor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "family": "one-continuous-conversation",
+      "plays": 1,
+      "instruction": "Sie hören ein Gespräch einmal. Ordnen Sie die Bilder zu.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h2-conversation",
+          "turns": [
+            {
+              "speaker": "Anna",
+              "text": "Also, Yusuf, wir haben am Samstag viel vor. Lass uns den Vormittag noch einmal planen. Wo treffen wir uns?"
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Ich muss zuerst ein Paket für meine Schwester wegbringen. Treffen wir uns um Viertel vor neun vor der Post?"
+            },
+            {
+              "speaker": "Anna",
+              "text": "Gut, ich warte draußen auf dich. Danach brauchen wir Brot für das Frühstück mit den anderen."
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Dann gehen wir um neun zur Bäckerei am Marktplatz. Ich habe dort gestern schon zwei große Brote bestellt."
+            },
+            {
+              "speaker": "Anna",
+              "text": "Prima. Um halb zehn öffnet die Bibliothek. Ich muss drei Bücher zurückbringen, weil ich nächste Woche nicht in der Stadt bin."
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Das passt. Sie liegt ja direkt auf unserem Weg. Und um zehn wartet die Fahrradwerkstatt auf mich. Mein Hinterrad ist schon wieder kaputt."
+            },
+            {
+              "speaker": "Anna",
+              "text": "Wie lange dauert die Reparatur? Wir müssen doch später beim Nachbarschaftsfest helfen."
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Der Mechaniker braucht ungefähr eine Stunde. Währenddessen können wir im Café gegenüber frühstücken. Dort ist es morgens meistens noch ruhig."
+            },
+            {
+              "speaker": "Anna",
+              "text": "Einverstanden. Auf den Markt müssen wir übrigens nicht. Mia kauft dort schon das Gemüse und bringt es direkt zum Fest."
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Dann holen wir das Fahrrad gegen halb zwölf wieder ab und fahren zusammen in den Park. Die anderen stellen dort schon Tische und Bänke auf."
+            },
+            {
+              "speaker": "Anna",
+              "text": "Und wenn es regnet? In der Nachricht stand etwas von der Straßenbahnhaltestelle."
+            },
+            {
+              "speaker": "Yusuf",
+              "text": "Nur bei starkem Regen treffen sich alle dort und fahren gemeinsam ins Gemeindehaus. Aber die Vorhersage ist gut, also bleibt es beim Park."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "family": "five-short-conversations",
+      "plays": 1,
+      "instruction": "Sie hören fünf kurze Gespräche einmal. Wählen Sie das richtige Bild.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h3-1",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Guten Tag. Sie haben online eine Bohrmaschine und eine Leiter reserviert. Brauchen Sie beides?"
+            },
+            {
+              "speaker": "Frau",
+              "text": "Nein, die Bohrmaschine habe ich inzwischen von meinem Nachbarn bekommen. Eine Nähmaschine wollte ich zuerst auch reservieren, aber die brauche ich doch nicht."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Dann gebe ich Ihnen nur die Leiter. Wann bringen Sie sie zurück?"
+            },
+            {
+              "speaker": "Frau",
+              "text": "Am Montagmorgen, gleich nach der Arbeit. Das ist für mich praktisch."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-2",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Guten Morgen, unser Termin war doch um zehn. Es ist jetzt schon fünf nach zehn. Wo bleiben Sie?"
+            },
+            {
+              "speaker": "Mann",
+              "text": "Entschuldigung, der Bus steht im Stau. Der Termin davor um halb zehn hat außerdem länger gedauert. Ich brauche von hier noch ungefähr fünfundzwanzig Minuten."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Gut, dann rechne ich um halb elf mit Ihnen. Ich bin zu Hause. Bitte klingeln Sie bei Baumann."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-3",
+          "turns": [
+            {
+              "speaker": "Mann",
+              "text": "Haben wir noch das Schild für die Fahrräder? Vor dem Eingang stehen heute schon wieder fünf Räder im Weg."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Du meinst das Schild, das zeigt, wo man sie abstellen darf? Es liegt hinten im Schrank."
+            },
+            {
+              "speaker": "Mann",
+              "text": "Genau das. Das Schild „Bitte leise sprechen“ hängt ja schon im Leseraum. Und den Eingang müssen wir heute nicht schließen. Ich hole es."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-4",
+          "turns": [
+            {
+              "speaker": "Frau",
+              "text": "Es regnet plötzlich sehr stark. Wollen wir die Fahrräder hier im Park lassen und ein Taxi nach Hause nehmen?"
+            },
+            {
+              "speaker": "Mann",
+              "text": "Ein Taxi ist mir zu teuer. Laut Fahrplan kommt die nächste Straßenbahn in fünf Minuten. Die Haltestelle ist gleich hinter dem Café."
+            },
+            {
+              "speaker": "Frau",
+              "text": "Einverstanden. Das machen wir. Morgen holen wir die Fahrräder ab, wenn das Wetter besser ist."
+            }
+          ]
+        },
+        {
+          "id": "g-a2-1-h3-5",
+          "turns": [
+            {
+              "speaker": "Verkäufer",
+              "text": "Guten Tag. Wie viel Farbe brauchen Sie? Die kleinen Dosen sind heute günstiger."
+            },
+            {
+              "speaker": "Kundin",
+              "text": "Für die ganze Wand reicht eine kleine Dose bestimmt nicht. Ich nehme eine große Dose Weiß."
+            },
+            {
+              "speaker": "Verkäufer",
+              "text": "Sonst noch etwas? Vielleicht dieselbe Größe in Grün?"
+            },
+            {
+              "speaker": "Kundin",
+              "text": "Nein, für die Gartenschilder brauche ich nur wenig Grün. Da genügt eine kleine Dose. Dann nehme ich beide."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "family": "radio-interview",
+      "plays": 2,
+      "instruction": "Sie hören ein Radiointerview zweimal. Wählen Sie Ja oder Nein.",
+      "scripts": [
+        {
+          "id": "g-a2-1-h4-interview",
+          "turns": [
+            {
+              "speaker": "Moderatorin",
+              "text": "Heute sprechen wir mit David Kern vom Werkraum Süd. Herr Kern, wie ist die Idee entstanden?"
+            },
+            {
+              "speaker": "David",
+              "text": "Vor drei Jahren wollten einige Nachbarn einen Raum teilen, weil in ihren Wohnungen kein Platz für Werkzeuge war. Die Stadt gab uns dann eine alte Garage."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "War es schwierig, aus der Garage eine Werkstatt zu machen?"
+            },
+            {
+              "speaker": "David",
+              "text": "Am Anfang schon. Viele Menschen aus dem Viertel haben am Wochenende geholfen. Nach vier Monaten konnten wir eröffnen. Heute kommen im Jahr ungefähr achthundert Besucherinnen und Besucher."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Wer kann den Werkraum benutzen?"
+            },
+            {
+              "speaker": "David",
+              "text": "Alle Erwachsenen aus dem Viertel. Jugendliche ab vierzehn dürfen mit einer erwachsenen Person kommen. Man muss keinen Jahresbeitrag zahlen. Für manche Maschinen kostet eine Stunde zwei Euro."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Was machen die Menschen dort?"
+            },
+            {
+              "speaker": "David",
+              "text": "Viele reparieren Fahrräder oder kleine Möbel. Andere bauen etwas Neues, zum Beispiel eine Lampe oder ein Regal. Donnerstags gibt es Hilfe von erfahrenen Freiwilligen. Sie zeigen die Arbeit, übernehmen sie aber nicht komplett. So lernen die Gäste, beim nächsten Mal selbstständig zu arbeiten."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Gibt es auch Kurse?"
+            },
+            {
+              "speaker": "David",
+              "text": "Ja, zweimal im Monat. Im letzten Kurs haben wir Regale gebaut. Im nächsten lernen die Teilnehmenden, wie man elektrische Geräte sicher prüft. Dafür muss man sich online anmelden."
+            },
+            {
+              "speaker": "Moderatorin",
+              "text": "Was wünschen Sie sich für die Zukunft?"
+            },
+            {
+              "speaker": "David",
+              "text": "Mehr Öffnungszeiten wären schön, aber zuerst brauchen wir weitere Freiwillige. Deshalb organisieren wir im Oktober einen Informationstag."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outro": "Ende des Tests Hören. Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen zu übertragen und zu kontrollieren."
+}

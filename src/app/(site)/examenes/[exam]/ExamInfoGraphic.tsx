@@ -43,7 +43,7 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
   const levelDenominator = Math.max((exam.levels?.length ?? 1) - 1, 1);
   const stats = isIcfes
     ? [
-        { label: 'Recursos únicos', value: '34' },
+        { label: 'Recursos únicos', value: String(exam.mocks.length + 1) },
         { label: vocabulary.sectionLabel, value: String(exam.sections.length) },
         { label: 'Preguntas estándar', value: String(exam.totalQuestions) },
         { label: 'Nivel máximo', value: 'B1' },

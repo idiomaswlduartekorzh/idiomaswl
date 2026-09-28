@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect, useId } from 'react';
+import { useState, useRef, useCallback, useEffect, useId, type ReactNode } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
+import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { resolveAudioUrl } from '@/lib/examAudio';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
 import { isFreeCambridgeMock } from '@/lib/labs/exam-bridge/cambridge';
@@ -26,6 +27,7 @@ import type {
   MatchingGroupQuestion,
 } from '@/data/mocks/types';
 import ExamResultOffers from '@/components/exams/ExamResultOffers';
+import PdfDownloadButton from '@/components/practica/PdfDownloadButton';
 import type { ExamAccessOutcome } from '@/lib/exam-access-codes/client';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -70,6 +72,19 @@ const SKILL_LABEL: Record<string, string> = {
   listening: 'Listening', reading: 'Reading', writing: 'Writing',
   speaking: 'Speaking', general: 'General',
 };
+
+const GOETHE_SKILL_LABEL: Record<string, string> = {
+  listening: 'Hören', reading: 'Lesen', writing: 'Schreiben',
+  speaking: 'Sprechen', general: 'Allgemein',
+};
+
+type FocusedPractice = {
+  level: 'A2';
+  skill: 'reading' | 'writing' | 'speaking';
+  part?: number;
+};
+
+type GoetheA2LayoutMode = 'web' | 'sheet';
 
 function getSkillSections(mock: MockExam, skill: string) {
   return mock.sections.filter(s => (s.skill ?? 'general') === skill);
@@ -207,16 +222,22 @@ function MCQRenderer({
   answer,
   onAnswer,
   showResult,
+  goethePractice = false,
+  questionNumber,
 }: {
   q: MCQQuestion;
   answer: number | undefined;
   onAnswer: (i: number) => void;
   showResult: boolean;
+  goethePractice?: boolean;
+  questionNumber?: number;
 }) {
   return (
-    <div className="lang-q">
+    <div className={`lang-q${goethePractice ? ' lang-q--goethe' : ''}`}>
+      {goethePractice && questionNumber ? <span className="goethe-question-number">{questionNumber}</span> : null}
       {q.stimulusLabel && <p className="lang-q__label">{q.stimulusLabel}</p>}
       {q.stimulus && <pre className="lang-q__stimulus">{q.stimulus}</pre>}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       <p className="lang-q__text">{q.text}</p>
       <div className="lang-q__options">
         {q.options.map((opt, i) => {
@@ -231,7 +252,7 @@ function MCQRenderer({
           const optText = opt.replace(/^[A-H][\s.)\-]+/, '');
           return (
             <button key={i} onClick={() => !showResult && onAnswer(i)} className={cls}>
-              <span className="lang-opt__letter">{String.fromCharCode(65 + i)}</span>
+              <span className="lang-opt__letter">{String.fromCharCode((goethePractice ? 97 : 65) + i)}</span>
               <span>{optText}</span>
             </button>
           );
@@ -323,6 +344,7 @@ function MatchingRenderer({
   return (
     <div className="lang-q">
       {q.groupLabel && <p className="lang-q__label">{q.groupLabel}</p>}
+      {q.imageUrl && <img src={q.imageUrl} alt={q.imageAlt ?? ''} className="lang-q__img" loading="lazy" decoding="async" />}
       <div className="lang-matching">
         <div className="lang-matching__endings">
           {q.endings.map(e => (
@@ -388,14 +410,20 @@ function SpeakRenderer({
   q,
   value,
   onChange,
+  recording,
+  onRecording,
+  goethePractice = false,
 }: {
   q: SpeakQuestion;
   value: string;
   onChange: (v: string) => void;
+  recording?: IeltsSpeakingRecording;
+  onRecording?: (recording: IeltsSpeakingRecording | undefined) => void;
+  goethePractice?: boolean;
 }) {
   return (
     <div className="lang-q lang-q--speak">
-      <div className="lang-speak__badge">🎙️ Parte {q.partNumber}</div>
+      <div className="lang-speak__badge">🎙️ {goethePractice ? 'Teil' : 'Parte'} {q.partNumber}</div>
       <p className="lang-q__text">{q.text}</p>
       {q.imageUrls && q.imageUrls.length > 0 && (
         <div className="lang-speak__images">
@@ -429,6 +457,7 @@ function SpeakRenderer({
       <div className="lang-speak__note">
         Practica en voz alta. El examen real se realiza con un examinador.
       </div>
+      {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recording} maxSeconds={180} onChange={onRecording} /> : null}
       <label className="lang-speak__notes">
         <span className="lang-speak__notes-label">Notas de respuesta</span>
         <textarea
@@ -482,6 +511,482 @@ function PassageText({ text }: { text: string }) {
   );
 }
 
+function GoethePassage({ section }: { section: MockSection }) {
+  const text = section.passage ?? '';
+  const blocks = text.trim().split(/\n\n+/);
+
+  if (section.part === 2) {
+    return (
+      <div className="goethe-document goethe-document--directory">
+        <h3 className="goethe-document__title">{blocks[0]}</h3>
+        <div className="goethe-directory">
+          {blocks.slice(1).map((block, index) => {
+            const [label, ...body] = block.split('\n');
+            return (
+              <div className="goethe-directory__row" key={`${label}-${index}`}>
+                <strong>{label}</strong>
+                <p>{body.join(' ')}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  if (section.part === 3) {
+    const [subject = '', ...message] = blocks;
+    return (
+      <div className="goethe-document goethe-document--mail">
+        <div className="goethe-mail__chrome" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+          <b>Neue Nachricht</b>
+        </div>
+        <div className="goethe-mail__meta">
+          <span>An:</span><b>Helferteam</b>
+          <span>Betreff:</span><b>{subject.replace(/^Betreff:\s*/i, '')}</b>
+        </div>
+        <div className="goethe-mail__body">
+          {message.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+        </div>
+      </div>
+    );
+  }
+
+  if (section.part === 4) {
+    return (
+      <div className="goethe-ad-grid">
+        {blocks.map((block, index) => {
+          const [heading = '', ...body] = block.split('\n');
+          const match = heading.match(/^([A-F])\s*·\s*(.*)$/);
+          return (
+            <article className="goethe-ad" key={`${heading}-${index}`}>
+              <span className="goethe-ad__letter">{match?.[1] ?? String.fromCharCode(65 + index)}</span>
+              <h3>{match?.[2] ?? heading}</h3>
+              <p>{body.join(' ')}</p>
+            </article>
+          );
+        })}
+      </div>
+    );
+  }
+
+  return (
+    <article className="goethe-document goethe-document--article">
+      <p className="goethe-document__kicker">Lesetext</p>
+      <h3 className="goethe-document__title">{section.passageTitle ?? section.title}</h3>
+      {blocks.map((paragraph, index) => <p key={index}><PassageText text={paragraph} /></p>)}
+    </article>
+  );
+}
+
+function GoetheMasthead({ skill, sheet = 'KANDIDATENBLATT' }: { skill: string; sheet?: string }) {
+  return (
+    <div className="goethe-sheet-masthead">
+      <div className="goethe-sheet-masthead__primary">
+        <strong>WELEARN · DEUTSCH A2</strong>
+        <strong>{skill}</strong>
+      </div>
+      <div className="goethe-sheet-masthead__secondary">
+        <span>ÜBUNGSSATZ</span>
+        <span>{sheet}</span>
+      </div>
+    </div>
+  );
+}
+
+function GoethePage({
+  skill,
+  children,
+  className = '',
+  sheet,
+}: {
+  skill: string;
+  children: ReactNode;
+  className?: string;
+  sheet?: string;
+}) {
+  return (
+    <section className={`goethe-candidate-page ${className}`}>
+      <GoetheMasthead skill={skill} sheet={sheet} />
+      {children}
+      <footer className="goethe-page-footer">
+        <span>WELEARN ORIGINAL</span>
+        <span>DEUTSCH A2</span>
+      </footer>
+    </section>
+  );
+}
+
+function GoetheTaskHeading({ section }: { section: MockSection }) {
+  const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
+  const exampleIndex = section.instructions.search(/\sBEISPIEL(?:\s|:)/i);
+  const instructions = exampleIndex >= 0 ? section.instructions.slice(0, exampleIndex).trim() : section.instructions;
+  const example = exampleIndex >= 0 ? section.instructions.slice(exampleIndex).trim() : '';
+  return (
+    <header className="goethe-task-heading">
+      <h2>Teil {displayPart}</h2>
+      <p>{instructions}</p>
+      {example ? <p className="goethe-task-heading__example">{example}</p> : null}
+    </header>
+  );
+}
+
+function goetheQuestionNumber(section: MockSection, index: number) {
+  if (section.skill === 'reading') return ((section.part - 1) * 5) + index + 1;
+  if (section.skill === 'listening') return ((section.part - 5) * 5) + index + 1;
+  return undefined;
+}
+
+function GoetheMatchingRenderer({
+  q,
+  values,
+  onChange,
+  showVisualAfter = false,
+}: {
+  q: MatchingGroupQuestion;
+  values: Record<number, string>;
+  onChange: (num: number, val: string) => void;
+  showVisualAfter?: boolean;
+}) {
+  return (
+    <div className={`goethe-matching-task${showVisualAfter ? ' goethe-matching-task--visual' : ''}`}>
+      {q.groupLabel ? <p className="goethe-example">{q.groupLabel}</p> : null}
+      <div className="goethe-matching-rows">
+        {q.items.map(item => (
+          <label className="goethe-matching-row" key={item.num}>
+            <strong>{item.num}</strong>
+            <span>{item.stem}</span>
+            <select
+              value={values[item.num] ?? ''}
+              onChange={event => onChange(item.num, event.target.value)}
+              aria-label={`Antwort ${item.num}`}
+            >
+              <option value="">–</option>
+              {q.endings.map(ending => (
+                <option key={ending.letter} value={ending.letter}>{ending.letter.toLowerCase()}</option>
+              ))}
+            </select>
+          </label>
+        ))}
+      </div>
+      {q.imageUrl && showVisualAfter ? (
+        <figure className="goethe-listening-grid">
+          <img src={q.imageUrl} alt={q.imageAlt ?? ''} loading="lazy" decoding="async" />
+        </figure>
+      ) : null}
+    </div>
+  );
+}
+
+function GoetheQuestionList({
+  section,
+  mcqAnswers,
+  matchAnswers,
+  onMCQ,
+  onMatch,
+  showResults,
+}: {
+  section: MockSection;
+  mcqAnswers: Record<string, number>;
+  matchAnswers: Record<string, Record<number, string>>;
+  onMCQ: (id: string, i: number) => void;
+  onMatch: (id: string, num: number, v: string) => void;
+  showResults: boolean;
+}) {
+  return (
+    <div className={`goethe-question-list goethe-question-list--${section.skill}`}>
+      {section.questions.map((question, index) => {
+        if (question.type === 'mcq' || question.type === 'dialog') {
+          const q = question as MCQQuestion;
+          return (
+            <MCQRenderer
+              key={q.id}
+              q={q}
+              answer={mcqAnswers[q.id]}
+              onAnswer={answer => onMCQ(q.id, answer)}
+              showResult={showResults}
+              goethePractice
+              questionNumber={goetheQuestionNumber(section, index)}
+            />
+          );
+        }
+        if (question.type === 'matching') {
+          const q = question as MatchingGroupQuestion;
+          return (
+            <GoetheMatchingRenderer
+              key={q.id}
+              q={q}
+              values={matchAnswers[q.id] ?? {}}
+              onChange={(num, value) => onMatch(q.id, num, value)}
+              showVisualAfter={section.skill === 'listening'}
+            />
+          );
+        }
+        return null;
+      })}
+    </div>
+  );
+}
+
+function goetheSpeakingChoices(q: SpeakQuestion) {
+  if (q.partNumber === 1) {
+    return (q.cueCard ?? '').split(' · ').filter(Boolean).map(label => ({
+      label: label.replace(/\?$/, ''),
+      detail: 'Fragekarte',
+    }));
+  }
+  if (q.partNumber === 2) {
+    return q.text.split('\n').map((line, index) => {
+      const label = line.replace(/^KARTE\s+[AB]:\s*/i, '');
+      const cueBlock = (q.cueCard ?? '').split(/\n\n+/)[index] ?? '';
+      const [, cueLine = ''] = cueBlock.split('\n');
+      return { label, detail: cueLine };
+    });
+  }
+  return (q.imageUrls ?? []).map((_, index) => ({
+    label: `Kandidat/in ${index === 0 ? 'A' : 'B'}`,
+    detail: 'Rolle für diese Übungsrunde',
+  }));
+}
+
+function GoetheSpeakingMaterial({ q, selectedIndex }: { q: SpeakQuestion; selectedIndex: number | null }) {
+  if (selectedIndex === null) {
+    return (
+      <div className="goethe-speaking-draw-pending" role="status">
+        <span aria-hidden="true">↻</span>
+        <strong>Karte wird gezogen…</strong>
+      </div>
+    );
+  }
+
+  if (q.partNumber === 1) {
+    const cards = (q.cueCard ?? '').split(' · ').filter(Boolean);
+    const card = cards[selectedIndex];
+    if (!card) return null;
+    return (
+      <div className="goethe-speaking-cards">
+        <article className="goethe-speaking-card">
+          <header>Teil 1 · Ihre Karte</header>
+          <strong>{card.replace(/\?$/, '')}</strong>
+        </article>
+      </div>
+    );
+  }
+
+  if (q.partNumber === 2) {
+    const prompts = q.text.split('\n').map(line => line.replace(/^KARTE\s+[AB]:\s*/i, ''));
+    const cueGroups = (q.cueCard ?? '').split(/\n\n+/).map(block => {
+      const [, cueLine = ''] = block.split('\n');
+      return cueLine.split(' · ').filter(Boolean);
+    });
+    const prompt = prompts[selectedIndex];
+    if (!prompt) return null;
+    return (
+      <div className="goethe-speaking-topic-stack">
+        <article className="goethe-speaking-topic">
+          <header>Teil 2 · Ihre Karte</header>
+          <div className="goethe-speaking-topic__map">
+            <strong>{prompt}</strong>
+            {(cueGroups[selectedIndex] ?? []).map((cue, cueIndex) => (
+              <span key={cue} data-position={cueIndex}>{cue}</span>
+            ))}
+          </div>
+        </article>
+      </div>
+    );
+  }
+
+  const url = q.imageUrls?.[selectedIndex];
+  if (!url) return null;
+  return (
+    <div className="goethe-speaking-schedules goethe-speaking-schedules--single">
+      <figure>
+        <figcaption>Kandidat/in {selectedIndex === 0 ? 'A' : 'B'} · Ihre Rolle</figcaption>
+        <img src={url} alt={q.imageAlts?.[selectedIndex] ?? `Terminkarte ${selectedIndex === 0 ? 'A' : 'B'}`} loading="eager" decoding="async" />
+      </figure>
+    </div>
+  );
+}
+
+function GoetheSpeakingRandomizer({ q, selectedIndex, onSelect }: {
+  q: SpeakQuestion;
+  selectedIndex: number | null;
+  onSelect: (index: number) => void;
+}) {
+  const cards = goetheSpeakingChoices(q);
+  const selected = selectedIndex === null ? null : cards[selectedIndex];
+
+  const chooseRandomCard = () => {
+    if (cards.length === 0) return;
+    if (cards.length === 1) {
+      onSelect(0);
+      return;
+    }
+    const next = selectedIndex === null
+      ? Math.floor(Math.random() * cards.length)
+      : (selectedIndex + 1 + Math.floor(Math.random() * (cards.length - 1))) % cards.length;
+    onSelect(next);
+  };
+
+  return (
+    <div className="goethe-speaking-randomizer">
+      <div className="goethe-speaking-randomizer__copy">
+        <strong>{selected ? selected.label : 'Zufallsauswahl'}</strong>
+        <span>{selected?.detail || 'Wie in A1: Ziehen Sie eine Karte oder Rolle zufällig.'}</span>
+      </div>
+      <button type="button" onClick={chooseRandomCard} disabled={selectedIndex === null}>
+        <span aria-hidden="true">↻</span>
+        {selected ? 'Andere Auswahl' : 'Wird gezogen…'}
+      </button>
+    </div>
+  );
+}
+
+function GoetheSpeakingSection({
+  section,
+  speakingAnswers,
+  recordings,
+  onSpeak,
+  onRecording,
+}: {
+  section: MockSection;
+  speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
+  onSpeak: (id: string, value: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
+}) {
+  const q = section.questions.find(question => question.type === 'speak') as SpeakQuestion | undefined;
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  useEffect(() => {
+    const choices = q ? goetheSpeakingChoices(q) : [];
+    const frame = window.requestAnimationFrame(() => {
+      setSelectedIndex(choices.length ? Math.floor(Math.random() * choices.length) : null);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [q]);
+  if (!q) return null;
+  return (
+    <div className="goethe-section-stack">
+      <GoethePage skill="Sprechen" className="goethe-candidate-page--speaking">
+        <GoetheTaskHeading section={section} />
+        {q.partNumber === 3 ? <p className="goethe-speaking-situation">{q.text}</p> : null}
+        <GoetheSpeakingMaterial q={q} selectedIndex={selectedIndex} />
+      </GoethePage>
+      <section className="goethe-practice-controls" aria-label={`Práctica oral Teil ${q.partNumber}`}>
+        <p className="goethe-practice-controls__eyebrow">WeLearn · práctica interactiva</p>
+        <p>La tarjeta o el rol ya se eligió al azar. Practica en voz alta y pulsa «Otra selección» para cambiarlo.</p>
+        <GoetheSpeakingRandomizer q={q} selectedIndex={selectedIndex} onSelect={setSelectedIndex} />
+        {onRecording ? <IELTSSpeakingRecorder questionId={q.id} recording={recordings?.[q.id]} maxSeconds={180} onChange={recording => onRecording(q.id, recording)} /> : null}
+        <label className="lang-speak__notes">
+          <span className="lang-speak__notes-label">Notas de respuesta</span>
+          <textarea
+            value={speakingAnswers[q.id] ?? ''}
+            onChange={event => onSpeak(q.id, event.target.value)}
+            className="lang-speak__notes-area"
+            rows={5}
+            placeholder="Ideas clave para tu respuesta..."
+          />
+        </label>
+      </section>
+    </div>
+  );
+}
+
+function GoetheWritingView({
+  sections,
+  writeAnswers,
+  onWrite,
+}: {
+  sections: MockSection[];
+  writeAnswers: Record<string, string>;
+  onWrite: (id: string, value: string) => void;
+}) {
+  const tasks = sections.flatMap(section => section.questions
+    .filter(question => question.type === 'write')
+    .map(question => ({ section, q: question as WriteQuestion })));
+  return (
+    <div className="goethe-section-stack goethe-writing-booklet">
+      <GoethePage skill="Schreiben" className="goethe-candidate-page--writing">
+        {tasks.map(({ section, q }) => (
+          <article className="goethe-writing-task" key={q.id}>
+            <GoetheTaskHeading section={section} />
+            <p>{q.stimulus}</p>
+            <div className="goethe-writing-points">{q.text}</div>
+            <p className="goethe-writing-length">Schreiben Sie {q.taskNumber === 1 ? '20–30' : '30–40'} Wörter.</p>
+            <p>Schreiben Sie zu allen drei Punkten.</p>
+          </article>
+        ))}
+      </GoethePage>
+      <GoethePage skill="Schreiben" sheet="ANTWORTBOGEN" className="goethe-candidate-page--answers">
+        {tasks.map(({ q }) => {
+          const value = writeAnswers[q.id] ?? '';
+          const words = value.trim() ? value.trim().split(/\s+/).length : 0;
+          return (
+            <label className="goethe-answer-field" key={q.id}>
+              <span>Teil {q.taskNumber}</span>
+              <textarea
+                value={value}
+                onChange={event => onWrite(q.id, event.target.value)}
+                rows={q.taskNumber === 1 ? 7 : 10}
+                placeholder="Schreiben Sie hier..."
+              />
+              <small>{words} Wörter</small>
+            </label>
+          );
+        })}
+      </GoethePage>
+    </div>
+  );
+}
+
+function GoetheSectionView({
+  section,
+  mcqAnswers,
+  speakingAnswers,
+  recordings,
+  matchAnswers,
+  onMCQ,
+  onSpeak,
+  onRecording,
+  onMatch,
+  showResults,
+}: {
+  section: MockSection;
+  mcqAnswers: Record<string, number>;
+  speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
+  matchAnswers: Record<string, Record<number, string>>;
+  onMCQ: (id: string, i: number) => void;
+  onSpeak: (id: string, value: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
+  onMatch: (id: string, num: number, value: string) => void;
+  showResults: boolean;
+}) {
+  if (section.skill === 'speaking') {
+    return <GoetheSpeakingSection section={section} speakingAnswers={speakingAnswers} recordings={recordings} onSpeak={onSpeak} onRecording={onRecording} />;
+  }
+
+  const skill = GOETHE_SKILL_LABEL[section.skill ?? 'general'];
+  const passagePage = section.passage ? (
+    <GoethePage skill={skill} className={`goethe-candidate-page--stimulus goethe-candidate-page--part-${section.part}`}>
+      <p className="goethe-page-part">Teil {section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part}</p>
+      <GoethePassage section={section} />
+    </GoethePage>
+  ) : null;
+  const questionPage = (
+    <GoethePage skill={skill} className="goethe-candidate-page--questions">
+      <GoetheTaskHeading section={section} />
+      {section.audioUrl ? <MediaPlayer url={section.audioUrl} /> : null}
+      <GoetheQuestionList section={section} mcqAnswers={mcqAnswers} matchAnswers={matchAnswers} onMCQ={onMCQ} onMatch={onMatch} showResults={showResults} />
+    </GoethePage>
+  );
+  const questionFirst = section.skill === 'reading' && (section.part === 2 || section.part === 4);
+  return <div className="goethe-section-stack">{questionFirst ? <>{questionPage}{passagePage}</> : <>{passagePage}{questionPage}</>}</div>;
+}
+
 // ── Transcript block (collapsible) ───────────────────────────────────────────
 
 function TranscriptBlock({ transcript }: { transcript: string }) {
@@ -514,35 +1019,72 @@ function SectionView({
   mcqAnswers,
   writeAnswers,
   speakingAnswers,
+  recordings,
   formAnswers,
   multiAnswers,
   matchAnswers,
   onMCQ,
   onWrite,
   onSpeak,
+  onRecording,
   onForm,
   onMulti,
   onMatch,
   showResults,
+  goethePractice = false,
 }: {
   section: MockSection;
   mcqAnswers: Record<string, number>;
   writeAnswers: Record<string, string>;
   speakingAnswers: Record<string, string>;
+  recordings?: Record<string, IeltsSpeakingRecording | undefined>;
   formAnswers: Record<string, Record<number, string>>;
   multiAnswers: Record<string, string[]>;
   matchAnswers: Record<string, Record<number, string>>;
   onMCQ: (id: string, i: number) => void;
   onWrite: (id: string, v: string) => void;
   onSpeak: (id: string, v: string) => void;
+  onRecording?: (id: string, recording: IeltsSpeakingRecording | undefined) => void;
   onForm: (id: string, num: number, v: string) => void;
   onMulti: (id: string, letter: string) => void;
   onMatch: (id: string, num: number, v: string) => void;
   showResults: boolean;
+  goethePractice?: boolean;
 }) {
+  if (goethePractice && section.skill !== 'writing') {
+    return (
+      <GoetheSectionView
+        section={section}
+        mcqAnswers={mcqAnswers}
+        speakingAnswers={speakingAnswers}
+        recordings={recordings}
+        matchAnswers={matchAnswers}
+        onMCQ={onMCQ}
+        onSpeak={onSpeak}
+        onRecording={onRecording}
+        onMatch={onMatch}
+        showResults={showResults}
+      />
+    );
+  }
+  const skillLabel = GOETHE_SKILL_LABEL[section.skill ?? 'general'];
+  const displayPart = section.title.match(/Teil\s+(\d+)/i)?.[1] ?? section.part;
   return (
-    <div className="lang-section">
+    <div className={`lang-section${goethePractice ? ' lang-section--goethe' : ''}`} data-skill={section.skill}>
+      {goethePractice ? (
+        <div className="goethe-sheet-masthead">
+          <div className="goethe-sheet-masthead__primary">
+            <strong>WELEARN · DEUTSCH A2</strong>
+            <strong>{skillLabel}</strong>
+          </div>
+          <div className="goethe-sheet-masthead__secondary">
+            <span>ÜBUNGSSATZ</span>
+            <span>KANDIDATENBLATT</span>
+          </div>
+        </div>
+      ) : null}
       <div className="lang-section__header">
+        {goethePractice ? <p className="goethe-sheet__part">Teil {displayPart}</p> : null}
         <h2 className="lang-section__title">{section.title}</h2>
         <p className="lang-section__instructions">{section.instructions}</p>
       </div>
@@ -555,10 +1097,14 @@ function SectionView({
 
       {section.passage && (
         <div className="lang-section__passage">
-          <p className="lang-section__passage-label">📄 Read the text</p>
-          <div className="lang-section__passage-text">
-            <PassageText text={section.passage} />
-          </div>
+          <p className="lang-section__passage-label">{goethePractice ? 'Textvorlage' : '📄 Read the text'}</p>
+          {goethePractice ? (
+            <GoethePassage section={section} />
+          ) : (
+            <div className="lang-section__passage-text">
+              <PassageText text={section.passage} />
+            </div>
+          )}
         </div>
       )}
 
@@ -567,7 +1113,7 @@ function SectionView({
       )}
 
       <div className="lang-section__questions">
-        {section.questions.map((q: Question) => {
+        {section.questions.map((q: Question, questionIndex) => {
           if (q.type === 'mcq' || q.type === 'dialog') {
             return (
               <MCQRenderer
@@ -576,6 +1122,8 @@ function SectionView({
                 answer={mcqAnswers[q.id]}
                 onAnswer={i => onMCQ(q.id, i)}
                 showResult={showResults}
+                goethePractice={goethePractice}
+                questionNumber={section.skill === 'reading' ? ((section.part - 1) * 5) + questionIndex + 1 : undefined}
               />
             );
           }
@@ -596,6 +1144,9 @@ function SectionView({
                 q={q as SpeakQuestion}
                 value={speakingAnswers[q.id] ?? ''}
                 onChange={v => onSpeak(q.id, v)}
+                recording={recordings?.[q.id]}
+                onRecording={onRecording ? recording => onRecording(q.id, recording) : undefined}
+                goethePractice={goethePractice}
               />
             );
           }
@@ -638,7 +1189,7 @@ function SectionView({
 
 // ── Results ───────────────────────────────────────────────────────────────────
 
-function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, formAnswers, multiAnswers, matchAnswers, onRetry }: {
+function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, formAnswers, multiAnswers, matchAnswers, onRetry, focusedPractice, recordingCount = 0 }: {
   mock: MockExam;
   exam: Exam;
   mcqAnswers: Record<string, number>;
@@ -648,6 +1199,8 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
   multiAnswers: Record<string, string[]>;
   matchAnswers: Record<string, Record<number, string>>;
   onRetry: () => void;
+  focusedPractice?: FocusedPractice;
+  recordingCount?: number;
 }) {
   const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
@@ -666,14 +1219,15 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
   const speakingNotes = speakQuestions.filter(q => speakingAnswers[q.id]?.trim());
   const objectiveUnit = mock.examSlug === 'cambridge-b2' ? 'puntos objetivos' : 'correctas';
   const hasReviewResponses = writtenResponses.length > 0 || speakingNotes.length > 0;
+  const hasObjectiveScore = totalQ > 0;
 
   return (
     <div className="prac-results">
       <div className="prac-results__hero" style={{ '--exam-color': exam.color } as React.CSSProperties}>
-        <p className="prac-results__label">Resultado - preguntas objetivas</p>
-        <div className="prac-results__score">{score}</div>
-        <p className="prac-results__score-sub">sobre 100</p>
-        <p className="prac-results__fraction">{totalCorrect} / {totalQ} {objectiveUnit}</p>
+        <p className="prac-results__label">{focusedPractice ? 'Práctica Goethe A2 terminada' : 'Resultado - preguntas objetivas'}</p>
+        <div className="prac-results__score">{hasObjectiveScore ? score : '✓'}</div>
+        <p className="prac-results__score-sub">{hasObjectiveScore ? 'sobre 100' : GOETHE_SKILL_LABEL[focusedPractice?.skill ?? 'general']}</p>
+        {hasObjectiveScore ? <p className="prac-results__fraction">{totalCorrect} / {totalQ} {objectiveUnit}</p> : null}
       </div>
 
       {objectiveSections.length > 0 && (
@@ -702,7 +1256,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
             ✍️ Tus respuestas escritas
           </h3>
           <p className="prac-results__responses-copy">
-            Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.
+            {focusedPractice
+              ? 'Compáralas con las consignas y verifica extensión, saludo, cierre y cumplimiento de los tres puntos.'
+              : 'Estas respuestas han sido enviadas a tu profesor para corrección. Recibirás feedback personalizado.'}
           </p>
           {writtenResponses.map(q => (
             <div key={q.id} className="prac-results__response-card">
@@ -860,7 +1416,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
             🎙️ Tus notas de Speaking
           </h3>
           <p className="prac-results__responses-copy">
-            Estas notas acompañan tu práctica oral para que el profesor pueda revisar ideas, estructura y vocabulario.
+            {focusedPractice
+              ? 'Usa estas notas para repetir tu respuesta con frases completas, conectores sencillos y una reacción clara a tu interlocutor.'
+              : 'Estas notas acompañan tu práctica oral para que el profesor pueda revisar ideas, estructura y vocabulario.'}
           </p>
           {speakingNotes.map(q => (
             <div key={q.id} className="prac-results__response-card">
@@ -875,9 +1433,15 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
         </div>
       )}
 
+      {focusedPractice?.skill === 'speaking' && recordingCount > 0 ? (
+        <div className="prac-results__note"><p>🎙️ Completaste {recordingCount} {recordingCount === 1 ? 'grabación' : 'grabaciones'} en esta sesión. Puedes repetir el set para mejorar claridad, interacción y fluidez.</p></div>
+      ) : null}
+
       <div className="prac-results__note">
         <p>
-          {hasReviewResponses
+          {focusedPractice
+            ? 'Este resultado corresponde a una práctica por destreza y no equivale a un puntaje oficial Goethe. El simulacro A2 completo permanece bloqueado hasta que Hören tenga audio aprobado.'
+            : hasReviewResponses
             ? '📬 Tus respuestas escritas y notas de Speaking han sido enviadas para revisión. Pronto recibirás feedback.'
             : '📬 No agregaste respuestas escritas ni notas de Speaking para revisión. Puedes intentarlo de nuevo cuando quieras practicar el envío.'}
         </p>
@@ -885,7 +1449,9 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
       <div className="prac-results__actions">
         <button onClick={onRetry} className="btn btn-ghost">Intentar de nuevo</button>
-        <Link href={`/examenes/${exam.slug}`} className="btn">Volver al examen</Link>
+        <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn">
+          {focusedPractice ? 'Elegir otro set' : 'Volver al examen'}
+        </Link>
       </div>
     </div>
   );
@@ -895,13 +1461,24 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
 type Phase = 'intro' | 'exam' | 'lead' | 'results';
 
-export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+export default function LanguagePracticeClient({
+  exam,
+  mock,
+  focusedPractice,
+  goetheA2LayoutMode = 'web',
+}: {
+  exam: Exam;
+  mock: MockExam;
+  focusedPractice?: FocusedPractice;
+  goetheA2LayoutMode?: GoetheA2LayoutMode;
+}) {
   const skills = orderedSkills(mock);
   const [phase, setPhase] = useState<Phase>('intro');
   const [activeSkill, setActiveSkill] = useState(skills[0] ?? 'reading');
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, number>>({});
   const [writeAnswers, setWriteAnswers] = useState<Record<string, string>>({});
   const [speakingAnswers, setSpeakingAnswers] = useState<Record<string, string>>({});
+  const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording | undefined>>({});
   const [formAnswers, setFormAnswers] = useState<Record<string, Record<number, string>>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<string, string[]>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<string, Record<number, string>>>({});
@@ -909,6 +1486,12 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   const [attemptNumber, setAttemptNumber] = useState(1);
   const stableInstanceId = useId().replace(/[^A-Za-z0-9_-]/g, '');
   const attemptRef = `language:${mock.id}:${stableInstanceId}:${attemptNumber}`;
+
+  useEffect(() => {
+    if (phase === 'exam' && focusedPractice?.level === 'A2') {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }, [phase, focusedPractice?.level]);
 
   const handleMCQ = useCallback((id: string, i: number) => {
     setMcqAnswers(prev => ({ ...prev, [id]: i }));
@@ -920,6 +1503,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
 
   const handleSpeak = useCallback((id: string, v: string) => {
     setSpeakingAnswers(prev => ({ ...prev, [id]: v }));
+  }, []);
+
+  const handleRecording = useCallback((id: string, recording: IeltsSpeakingRecording | undefined) => {
+    setRecordings(previous => ({ ...previous, [id]: recording }));
   }, []);
 
   const handleForm = useCallback((id: string, num: number, v: string) => {
@@ -941,6 +1528,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     setMcqAnswers({});
     setWriteAnswers({});
     setSpeakingAnswers({});
+    setRecordings({});
     setFormAnswers({});
     setMultiAnswers({});
     setMatchAnswers({});
@@ -960,13 +1548,25 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
         else if (q.type === 'multiselect') { total++; if ((multiAnswers[q.id] ?? []).length > 0) done++; }
         else if (q.type === 'matching') { for (const it of q.items) { total++; if (matchAnswers[q.id]?.[it.num]) done++; } }
         else if (q.type === 'write') { total++; if ((writeAnswers[q.id] ?? '').trim()) done++; }
-        else if (q.type === 'speak') { total++; if ((speakingAnswers[q.id] ?? '').trim()) done++; }
+        else if (q.type === 'speak') { total++; if ((speakingAnswers[q.id] ?? '').trim() || recordings[q.id]) done++; }
       }
     }
     return [sk, { done, total }];
   }));
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
+  const goetheA2Layout = exam.slug === 'goethe' && /^a2-(?:[1-9]|10)$/.test(mock.id);
+  const downloadGoetheA2Worksheet = async () => {
+    const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
+    const skill = focusedPractice?.skill ?? activeSkill;
+    const teil = focusedPractice?.part;
+    const query = new URLSearchParams({ mode: 'practice', skill });
+    if (teil) query.set('teil', String(teil));
+    await generateExamWorksheetPdf(mock, {
+      label: `${GOETHE_SKILL_LABEL[skill] ?? skill}${teil ? ` · Teil ${teil}` : ''}`,
+      sourcePath: `/examenes/goethe/practica/${mock.id}?${query.toString()}`,
+    });
+  };
   const leadObjectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
   const leadCorrect = leadObjectiveSections.reduce((sum, section) => sum + section.correct, 0);
   const leadTotal = leadObjectiveSections.reduce((sum, section) => sum + section.total, 0);
@@ -974,7 +1574,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
 
   // Save to Supabase when entering results phase
   useEffect(() => {
-    if (phase !== 'results') return;
+    if (phase !== 'results' || focusedPractice) return;
 
     const objectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
 
@@ -1017,7 +1617,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       }
     ).catch(() => {/* silent — don't block UI */});
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase]);
+  }, [phase, focusedPractice]);
 
   if (phase === 'lead') {
     return (
@@ -1046,8 +1646,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
       multiAnswers={multiAnswers}
       matchAnswers={matchAnswers}
       onRetry={handleRetry}
+      focusedPractice={focusedPractice}
+      recordingCount={Object.values(recordings).filter(Boolean).length}
     />;
-    if (exam.slug === 'goethe') {
+    if (exam.slug === 'goethe' && !focusedPractice) {
       return <div className="prac-shell"><ExamResultOffers
         examSlug="goethe"
         examName={exam.name}
@@ -1092,10 +1694,13 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
               </div>
             ))}
           </div>
-          <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
-            Comenzar práctica
-          </button>
-          <Link href={`/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
+          <div className="goethe-a2-intro-actions">
+            <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
+              Comenzar práctica
+            </button>
+            {goetheA2Layout ? <PdfDownloadButton generate={downloadGoetheA2Worksheet} label="Descargar cuadernillo PDF" /> : null}
+          </div>
+          <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="btn btn-ghost btn-sm" style={{ marginTop: '0.5rem' }}>
             ← Volver
           </Link>
         </div>
@@ -1107,38 +1712,56 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   const unanswered = totalQs - totalAnswered;
 
   return (
-    <div className="prac-shell prac-shell--exam" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+    <div
+      className={`prac-shell prac-shell--exam${goetheA2Layout ? ` prac-shell--goethe-a2 prac-shell--goethe-a2-${goetheA2LayoutMode}` : ''}`}
+      data-goethe-layout={goetheA2Layout ? goetheA2LayoutMode : undefined}
+      style={{ '--exam-color': exam.color } as React.CSSProperties}
+    >
       <header className="prac-topbar" style={{ '--exam-color': exam.color } as React.CSSProperties}>
         <div className="prac-topbar__left">
-          <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">{exam.name}</Link>
+          <Link href={focusedPractice ? `/practica/goethe/a2/${focusedPractice.skill}` : `/examenes/${exam.slug}`} className="prac-topbar__back">{focusedPractice ? 'Práctica A2' : exam.name}</Link>
           <span className="prac-topbar__title">{mock.title}</span>
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs}</span>
-          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('lead')} />
+          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase(focusedPractice ? 'results' : 'lead')} />
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={SKILL_LABEL} />
+      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
-        {activeSections.map((sec, i) => (
+        {goetheA2Layout ? (
+          <aside className="goethe-a2-pdf-bar" aria-label="Cuadernillo imprimible">
+            <div>
+              <strong>¿Prefieres trabajar en papel?</strong>
+              <span>Descarga esta misma sección en formato de cuadernillo.</span>
+            </div>
+            <PdfDownloadButton generate={downloadGoetheA2Worksheet} label={`${GOETHE_SKILL_LABEL[activeSkill] ?? activeSkill} PDF`} compact />
+          </aside>
+        ) : null}
+        {goetheA2Layout && activeSkill === 'writing' ? (
+          <GoetheWritingView sections={activeSections} writeAnswers={writeAnswers} onWrite={handleWrite} />
+        ) : activeSections.map((sec, i) => (
           <SectionView
             key={`${sec.part}-${i}`}
             section={sec}
             mcqAnswers={mcqAnswers}
             writeAnswers={writeAnswers}
             speakingAnswers={speakingAnswers}
+            recordings={focusedPractice?.skill === 'speaking' ? recordings : undefined}
             formAnswers={formAnswers}
             multiAnswers={multiAnswers}
             matchAnswers={matchAnswers}
             onMCQ={handleMCQ}
             onWrite={handleWrite}
             onSpeak={handleSpeak}
+            onRecording={focusedPractice?.skill === 'speaking' ? handleRecording : undefined}
             onForm={handleForm}
             onMulti={handleMulti}
             onMatch={handleMatch}
             showResults={false}
+            goethePractice={goetheA2Layout}
           />
         ))}
 
@@ -1149,12 +1772,12 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
               const prev = skills[i - 1], next = skills[i + 1];
               return (
                 <span key={sk} style={{ display: 'flex', gap: '0.75rem' }}>
-                  {prev && <button onClick={() => setActiveSkill(prev)} className="btn btn-ghost btn-sm">← {SKILL_LABEL[prev]}</button>}
+                  {prev && <button onClick={() => setActiveSkill(prev)} className="btn btn-ghost btn-sm">← {(focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL)[prev]}</button>}
                   {next
-                    ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} →</button>
+                    ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{(focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL)[next]} →</button>
                     : <button onClick={() => {
                         if (unanswered > 0 && !confirm(`${unanswered} pregunta(s) sin responder. ¿Finalizar de todas formas?`)) return;
-                        setPhase('lead');
+                        setPhase(focusedPractice ? 'results' : 'lead');
                       }} className="btn">Finalizar práctica</button>
                   }
                 </span>

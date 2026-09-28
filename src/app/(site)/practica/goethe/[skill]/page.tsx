@@ -1,123 +1,108 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, BookOpenCheck, Headphones, Mic2, PenLine } from 'lucide-react';
-import { notFound } from 'next/navigation';
+import { ArrowLeft, ArrowRight, BookOpenCheck, Headphones, LockKeyhole, Mic2, PenLine } from 'lucide-react';
+import { notFound, permanentRedirect } from 'next/navigation';
 
-import { GOETHE_PRACTICE_TEILE } from '@/lib/goethe/practice';
-import { GOETHE_A1_AUDIO_READY_SETS, GOETHE_A1_SET_COUNT, goethePracticeSetNumbers } from '@/lib/goethe/release';
 import styles from '../../toefl/ios.module.css';
 
-const skillConfig = {
-  listening: {
-    label: 'Hören',
-    icon: Headphones,
-    duration: '20 min',
-    workload: '15 preguntas · 3 partes',
-    description: 'Escucha conversaciones y anuncios breves con la misma lógica de una o dos reproducciones del examen A1.',
-    feedback: 'Corrección pregunta por pregunta al terminar la destreza.',
-    guidance: 'puedes repetir los audios de Hören y recibir feedback al final',
+const LEVELS = ['a1', 'a2', 'b1', 'b2'] as const;
+const LEGACY_SKILLS = ['listening', 'reading', 'writing', 'speaking'] as const;
+type Level = typeof LEVELS[number];
+
+const levelConfig = {
+  a1: {
+    name: 'A1',
+    subtitle: 'Start Deutsch 1',
+    lead: 'Trabaja las cuatro destrezas de los diez sets A1 con el recorrido y la retroalimentación ya aprobados.',
+    sets: 10,
+    available: true,
   },
-  reading: {
-    label: 'Lesen',
-    icon: BookOpenCheck,
-    duration: '25 min',
-    workload: '15 preguntas · 3 partes',
-    description: 'Trabaja mensajes personales, anuncios de internet y avisos cotidianos con textos A1 originales.',
-    feedback: 'Corrección pregunta por pregunta al terminar la destreza.',
-    guidance: 'puedes releer los textos y revisar la evidencia de cada respuesta al final',
+  a2: {
+    name: 'A2',
+    subtitle: 'Goethe-Zertifikat A2',
+    lead: 'Estudia Lesen, Schreiben y Sprechen en diez mocks originales y fieles a la estructura A2. Hören espera sus audios definitivos.',
+    sets: 10,
+    available: true,
   },
-  writing: {
-    label: 'Schreiben',
-    icon: PenLine,
-    duration: '20 min',
-    workload: 'Formulario + mensaje',
-    description: 'Completa un formulario a partir de una situación y redacta un mensaje breve siguiendo tres consignas.',
-    feedback: 'Revisión de campos, extensión y cumplimiento de consignas.',
-    guidance: 'puedes completar el formulario y usar la guía de revisión del mensaje al final',
+  b1: {
+    name: 'B1',
+    subtitle: 'Goethe-Zertifikat B1',
+    lead: 'La navegación está preparada, pero el banco seguirá bloqueado hasta completar la auditoría editorial por destreza.',
+    sets: 0,
+    available: false,
   },
-  speaking: {
-    label: 'Sprechen',
-    icon: Mic2,
-    duration: '15 min',
-    workload: '3 partes · grabación',
-    description: 'Practica presentación personal, preguntas por tarjetas y peticiones cotidianas en una sesión enfocada.',
-    feedback: 'Registro de la grabación y guía de autoevaluación al terminar.',
-    guidance: 'puedes grabar tus respuestas y usar la guía de autoevaluación al final',
+  b2: {
+    name: 'B2',
+    subtitle: 'Goethe-Zertifikat B2',
+    lead: 'La navegación está preparada, pero el banco seguirá bloqueado hasta completar la auditoría editorial por destreza.',
+    sets: 0,
+    available: false,
   },
 } as const;
 
-type Skill = keyof typeof skillConfig;
+const skillConfig = [
+  { id: 'listening', label: 'Hören', icon: Headphones, a1: '15 preguntas · 20 min', a2: '20 preguntas · audio pendiente' },
+  { id: 'reading', label: 'Lesen', icon: BookOpenCheck, a1: '15 preguntas · 25 min', a2: '20 preguntas · 30 min' },
+  { id: 'writing', label: 'Schreiben', icon: PenLine, a1: 'Formulario + mensaje · 20 min', a2: '2 tareas · 30 min' },
+  { id: 'speaking', label: 'Sprechen', icon: Mic2, a1: '3 partes · 15 min', a2: '3 partes · 15 min' },
+] as const;
+
 type Props = { params: Promise<{ skill: string }> };
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
-  return Object.keys(skillConfig).map((skill) => ({ skill }));
+  return [...LEVELS, ...LEGACY_SKILLS].map(skill => ({ skill }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { skill } = await params;
-  const config = skillConfig[skill as Skill];
-  if (!config) return {};
-  const canonical = `https://www.idiomaswl.com/practica/goethe/${skill}`;
-  const setCount = goethePracticeSetNumbers(skill as Skill).length;
+  if ((LEGACY_SKILLS as readonly string[]).includes(skill)) return { robots: { index: false, follow: true } };
+  if (!(LEVELS as readonly string[]).includes(skill)) return {};
+  const config = levelConfig[skill as Level];
   return {
-    title: `Práctica Goethe A1 ${config.label}: ${setCount} ejercicios guiados`,
-    description: `${config.workload}. Elige uno de ${setCount} sets originales de WeLearn para practicar ${config.label} de forma independiente.`,
-    alternates: { canonical },
-    robots: { index: true, follow: true },
+    title: `Práctica Goethe ${config.name} por destreza`,
+    description: config.lead,
+    alternates: { canonical: `https://www.idiomaswl.com/practica/goethe/${skill}` },
+    robots: { index: config.available, follow: true },
   };
 }
 
-export default async function GoetheSkillLibraryPage({ params }: Props) {
-  const { skill } = await params;
-  const config = skillConfig[skill as Skill];
-  if (!config) notFound();
-  const Icon = config.icon;
-  const teile = GOETHE_PRACTICE_TEILE[skill as Skill];
-  const setNumbers = goethePracticeSetNumbers(skill as Skill);
-  const pendingAudioSets = Array.from({ length: GOETHE_A1_SET_COUNT }, (_, index) => index + 1)
-    .filter(number => !GOETHE_A1_AUDIO_READY_SETS.has(number));
+export default async function GoetheLevelPage({ params }: Props) {
+  const { skill: segment } = await params;
+  if ((LEGACY_SKILLS as readonly string[]).includes(segment)) permanentRedirect(`/practica/goethe/a1/${segment}`);
+  if (!(LEVELS as readonly string[]).includes(segment)) notFound();
+  const level = segment as Level;
+  const config = levelConfig[level];
 
   return <main className={styles.page} data-exam="goethe" lang="es">
     <header className={styles.hero}><div className="wrap">
-      <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><Link href="/practica/goethe">Goethe A1</Link><span>›</span><span>{config.label}</span></nav>
-      <div className={styles.skillHeroGrid}>
-        <div className={styles.heroCopy}>
-          <p className={styles.kicker}>Goethe A1 · práctica independiente</p>
-          <h1>Practica {config.label}.</h1>
-          <p className={styles.lead}>{config.description}</p>
-        </div>
-        <div className={styles.skillSummary}><Icon aria-hidden="true" /><strong>{config.duration}</strong><span>{config.workload}</span><small>{config.feedback}</small></div>
+      <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Práctica</Link><span>›</span><Link href="/practica/goethe">Goethe</Link><span>›</span><span>{config.name}</span></nav>
+      <div className={styles.heroCopy}>
+        <p className={styles.kicker}>Goethe {config.name} · {config.subtitle}</p>
+        <h1>{config.available ? 'Elige una destreza.' : `${config.name} está en preparación.`}</h1>
+        <p className={styles.lead}>{config.lead}</p>
       </div>
+      <dl className={styles.facts} aria-label={`Estado de Goethe ${config.name}`}>
+        <div><dt>Nivel</dt><dd>{config.name}</dd><dd className={styles.factNote}>{config.subtitle}</dd></div>
+        <div><dt>Sets</dt><dd>{config.sets || '—'}</dd><dd className={styles.factNote}>{config.sets ? 'biblioteca original WeLearn' : 'pendientes de auditoría'}</dd></div>
+        <div><dt>Destrezas</dt><dd>{level === 'a1' ? 4 : level === 'a2' ? 3 : 0}</dd><dd className={styles.factNote}>disponibles ahora</dd></div>
+        <div><dt>Estado</dt><dd>{config.available ? '✓' : '🔒'}</dd><dd className={styles.factNote}>{config.available ? 'práctica por secciones' : 'sin contenido público'}</dd></div>
+      </dl>
     </div></header>
 
-    <section className={styles.modes} aria-labelledby="goethe-set-heading"><div className="wrap">
-      <div className={styles.previewHeader}><div><p>Biblioteca A1</p><h2 id="goethe-set-heading">Elige un set para comenzar.</h2></div><Link href="/practica/goethe" className={styles.textLink}><ArrowLeft aria-hidden="true" /> Cambiar de destreza</Link></div>
-      <p className={styles.libraryLead}>Elige la destreza completa o un Teil específico. Cada ruta conserva el material y la lógica de ese bloque, y muestra la retroalimentación únicamente después de entregar.</p>
-      <div className={styles.setGrid}>
-        {setNumbers.map(number => {
-          const baseHref = `/examenes/goethe/practica/a1-${number}?mode=practice&skill=${skill}`;
-          return <article key={number} className={styles.setPracticeCard}>
-            <header className={styles.setPracticeHeader}>
-              <span className={styles.setNumber}>{String(number).padStart(2, '0')}</span>
-              <span className={styles.setCopy}><strong>Set {number}</strong><small>{config.workload}</small></span>
-            </header>
-            <Link href={baseHref} className={styles.setCompleteLink}>
-              Destreza completa <ArrowRight aria-hidden="true" />
-            </Link>
-            <div className={styles.teilLinks} aria-label={`Practicar un Teil de ${config.label}, set ${number}`}>
-              {teile.map(teil => <Link key={teil.teil} href={`${baseHref}&teil=${teil.teil}`}>
-                <span>Teil {teil.teil}</span>
-                <strong>{teil.title}</strong>
-                <small>{teil.workload} · {teil.minutes} min</small>
-              </Link>)}
-            </div>
-          </article>;
+    <section className={styles.modes} aria-labelledby="goethe-skill-heading"><div className="wrap">
+      <div className={styles.previewHeader}><div><p>Nivel {config.name}</p><h2 id="goethe-skill-heading">Cuatro destrezas. Una práctica cada vez.</h2></div><Link href="/practica/goethe" className={styles.textLink}><ArrowLeft aria-hidden="true" /> Cambiar de nivel</Link></div>
+      <div className={styles.sectionStrip}>
+        {skillConfig.map(({ id, label, icon: Icon, a1, a2 }) => {
+          const available = level === 'a1' || (level === 'a2' && id !== 'listening');
+          const note = level === 'a1' ? a1 : level === 'a2' ? a2 : 'Banco editorial pendiente';
+          const content = <><Icon aria-hidden="true" /><span><strong>{label}</strong><small>{note}</small></span>{available ? <ArrowRight aria-hidden="true" /> : <LockKeyhole aria-hidden="true" />}</>;
+          return available
+            ? <Link key={id} href={`/practica/goethe/${level}/${id}`} className={styles.sectionPreview} data-section={id}>{content}</Link>
+            : <div key={id} className={`${styles.sectionPreview} ${styles.lockedSection}`} data-section={id} aria-label={`${label}, bloqueado`}>{content}</div>;
         })}
       </div>
-      {skill === 'listening' && pendingAudioSets.length > 0 ? <aside className={styles.libraryNote}><strong>Audio en producción</strong><p>Los sets {pendingAudioSets.join(', ')} ya tienen guion, preguntas e imágenes, pero Hören se habilitará únicamente cuando sus pistas hayan pasado el control de audio.</p></aside> : null}
-      <aside className={styles.libraryNote}><strong>Antes de empezar</strong><p>Esta ruta es de práctica guiada: {config.guidance}. El simulacro completo mantiene las restricciones y el recorrido lineal del examen.</p></aside>
+      {level === 'a2' ? <aside className={styles.libraryNote}><strong>Hören bloqueado por diseño</strong><p>Los guiones, preguntas e imágenes existen, pero la destreza no se habilitará hasta que las pistas de audio pasen revisión técnica y humana. Los simulacros completos A2 permanecen bloqueados por la misma razón.</p></aside> : null}
+      {!config.available ? <aside className={styles.libraryNote}><strong>Sin atajos editoriales</strong><p>Las fichas B1/B2 históricas no se publican como práctica hasta que satisfagan el mismo contrato de estructura, originalidad, dificultad, visuales y scoring aplicado a A2.</p></aside> : null}
     </div></section>
   </main>;
 }

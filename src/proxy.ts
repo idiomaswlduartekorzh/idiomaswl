@@ -1,8 +1,19 @@
 import { createServerClient } from '@supabase/ssr';
-import { NextResponse, type NextRequest } from 'next/server';
+import { NextResponse, type NextFetchEvent, type NextRequest } from 'next/server';
+import { isBotUserAgent, shouldTrackPresencePath } from '@/lib/presence';
+import { recordBotPresence } from '@/lib/presence.server';
 
-export async function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest, event: NextFetchEvent) {
   const pathname = request.nextUrl.pathname;
+  if (
+    request.method === 'GET'
+    && !pathname.startsWith('/dashboard')
+    && shouldTrackPresencePath(pathname)
+    && isBotUserAgent(request.headers.get('user-agent'))
+  ) {
+    event.waitUntil(recordBotPresence(request));
+  }
+
   if (/^\/examenes\/icfes\/practica\/mock-(?:21|22|23)(?:\/|$)/.test(pathname)) {
     return new NextResponse('No encontrado', {
       status: 404,
@@ -41,5 +52,7 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/examenes/icfes/practica/:path*'],
+  matcher: [
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp3|wav|pdf|xml|txt)$).*)',
+  ],
 };

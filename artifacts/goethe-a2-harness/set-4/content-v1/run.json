@@ -1,0 +1,72 @@
+{
+  "order": {
+    "schemaVersion": 1,
+    "set": 4,
+    "run": "content-v1",
+    "baseCommit": "059cade671be12ec2447703fe072ad4d6df23519",
+    "fingerprints": {
+      "blueprint": "026bd8952a719fe33ff59c7e5085baae7da219fd87a801f9210830ccc4984439",
+      "sources": "703d8ee86067a54bb47827edfecbd4c61ff92cc70cdfb06510a1fb538fb8af5d",
+      "ledger": "a0074ffe0999396d2bf7ac0569a067e683c85e60b8991f526d0ccadbf970fad4",
+      "prompts": "692b81ff4aef90780a6c26e963b44f7965128d916592cd5fcae7cecb214c6486",
+      "harness": "c5c6c2fd3364c882c867d14edfb9791402443716ceff8dd4a09be66b04349acd"
+    },
+    "topicReservation": {
+      "set": 4,
+      "status": "reserved",
+      "domains": [
+        "mobile health service",
+        "local museum",
+        "volunteer shift"
+      ],
+      "places": [
+        "Kassel",
+        "Göttingen"
+      ],
+      "interaction": "trade volunteer duties",
+      "forbiddenCarryover": [
+        "doctor appointment reschedule",
+        "generic weekend trip"
+      ]
+    },
+    "requiredStages": [
+      "coordinator",
+      "spec-guardian",
+      "listening-author",
+      "reading-author",
+      "productive-author",
+      "key-auditor",
+      "language-auditor",
+      "originality-auditor",
+      "media-director",
+      "audio-planner",
+      "integrator",
+      "ux-reviewer",
+      "release-warden"
+    ],
+    "releaseTarget": "AUDIO_BLOCKED"
+  },
+  "candidateFingerprint": "e3bf4f45a42e4cbf8ead21b137c934d90c7f3027ba46036b8520f161f8586cf6",
+  "derivedState": "AUDIO_BLOCKED",
+  "passedGates": [
+    "ORDER_FROZEN",
+    "SPEC_PASS",
+    "LISTENING_DRAFTED",
+    "READING_DRAFTED",
+    "PRODUCTIVE_DRAFTED",
+    "KEY_PASS",
+    "LANGUAGE_PASS",
+    "ORIGINALITY_PASS",
+    "MEDIA_PASS",
+    "AUDIO_PLAN_PASS",
+    "RUNTIME_PASS",
+    "UX_PASS"
+  ],
+  "pendingGates": [
+    "AUDIO_GENERATED",
+    "AUDIO_TECHNICAL_QA",
+    "HUMAN_LISTENING",
+    "FINAL_HUMAN_APPROVAL"
+  ],
+  "note": "Contenido, visuales, scoring y plan de audio listos. Publicación bloqueada hasta generar y revisar el audio."
+}

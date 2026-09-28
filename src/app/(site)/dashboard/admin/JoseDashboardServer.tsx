@@ -90,9 +90,10 @@ export interface AdminViewer {
 // Los leads de simulacro llegan por dos rutas y hay que reconocer las dos:
 //   · PracticeClient  → source '<examen>-practica'  (icfes-practica, sat-practica…)
 //   · LeadCaptureModal→ source 'simulacro'          (IELTS, TOPIK…)
+//   · ICFES seguro    → source 'icfes-post-result-gate-v1' (histórico de sep. 2026)
 // El source 'blog' queda fuera a propósito: no es un simulacro y su `exam_score`
 // guarda una categoría de blog, no un puntaje.
-const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.simulacro'
+const LEADS_SOURCE_FILTER = 'source.like.*-practica,source.eq.simulacro,source.eq.icfes-post-result-gate-v1'
 const PRACTICA_SUFFIX = /-practica$/
 
 /** El slug del examen: primero el campo propio; si falta, se deduce del source. */
@@ -344,10 +345,19 @@ export default async function JoseDashboardServer() {
   let { data: leadsData } = await leadsSelect().or(LEADS_SOURCE_FILTER)
 
   if (!leadsData) {
-    // Red de seguridad: si el filtro compuesto falla, el panel de David no se
-    // queda en blanco — al menos salen los leads de simulacro de tipo '-practica'.
-    const fallback = await leadsSelect().like('source', '%-practica')
-    leadsData = fallback.data
+    // Red de seguridad: si PostgREST rechaza el filtro compuesto, recuperar tanto
+    // las fuentes por convención como las dos fuentes exactas conocidas.
+    const [practiceFallback, exactFallback] = await Promise.all([
+      leadsSelect().like('source', '%-practica'),
+      leadsSelect().in('source', ['simulacro', 'icfes-post-result-gate-v1']),
+    ])
+    const uniqueFallback = new Map(
+      [...(practiceFallback.data ?? []), ...(exactFallback.data ?? [])]
+        .map(lead => [lead.id, lead] as const)
+    )
+    leadsData = Array.from(uniqueFallback.values())
+      .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+      .slice(0, 300)
   }
 
   const storedLeads: LeadRow[] = ((leadsData ?? []) as Omit<LeadRow, 'exam_label'>[]).map(l => ({

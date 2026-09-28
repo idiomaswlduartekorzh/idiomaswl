@@ -172,6 +172,31 @@
   margin-top: 2rem;
 }
 
+.levelGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.levelGrid .modeCard {
+  min-height: 390px;
+}
+
+.lockedCard {
+  background: #f0f2f6;
+  border-style: dashed;
+}
+
+.lockedCard::before {
+  background: #7a8292;
+}
+
+.lockedCard .modeIcon {
+  background: #e1e4ea;
+  color: #626b7c;
+}
+
 .modeCard {
   --card-accent: var(--toefl-navy);
   background: #fff;
@@ -373,6 +398,41 @@ a.modeCard:focus-visible {
   position: relative;
   z-index: 1;
 }
+
+.lockedSection {
+  background: #f0f2f6;
+  color: #727b8c;
+  cursor: not-allowed;
+}
+
+.lockedSection > svg:first-child,
+.lockedSection > svg:last-child,
+.lockedSection strong,
+.lockedSection small {
+  color: #727b8c;
+}
+
+.lockedPanel {
+  align-items: flex-start;
+  background: #fff;
+  border: 1px dashed #9ba3b2;
+  color: var(--toefl-muted);
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 760px;
+  padding: 1.3rem;
+}
+
+.lockedPanel > svg {
+  color: var(--toefl-red);
+  flex: 0 0 auto;
+  height: 24px;
+  width: 24px;
+}
+
+.lockedPanel strong { color: var(--toefl-navy); }
+.lockedPanel p { line-height: 1.65; margin: 0.35rem 0 0; }
 
 .faq {
   background: var(--toefl-paper);
@@ -627,6 +687,14 @@ a.modeCard:focus-visible {
     min-height: 285px;
   }
 
+  .levelGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .levelGrid .modeCard {
+    min-height: 330px;
+  }
+
   .sectionStrip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -683,6 +751,14 @@ a.modeCard:focus-visible {
   }
 
   .modeCard {
+    min-height: 300px;
+  }
+
+  .levelGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .levelGrid .modeCard {
     min-height: 300px;
   }
 
