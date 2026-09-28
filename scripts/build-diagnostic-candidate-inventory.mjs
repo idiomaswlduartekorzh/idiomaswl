@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, statSync, writeFileSync } from 'node:fs';
-import { dirname, join, resolve } from 'node:path';
+import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { ICFES_DIAGNOSTIC_QUESTIONS } from '../src/data/icfes-diagnostic-questions.ts';
@@ -16,6 +16,14 @@ import { TOEFL_READING_SETS_16_TO_20 } from '../src/data/toefl/reading-sets-16-2
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputPath = join(root, 'config/diagnostic/objective-candidate-inventory.json');
 const writeMode = process.argv.includes('--write');
+const existingInventory = existsSync(outputPath)
+  ? JSON.parse(readFileSync(outputPath, 'utf8'))
+  : null;
+const pinnedAudio = new Map(
+  (existingInventory?.candidates ?? [])
+    .filter((item) => item.stimulus?.kind === 'audio' && item.stimulus.audio?.exists)
+    .map((item) => [item.stimulus.audio.url, item.stimulus.audio]),
+);
 
 function sha256(value) {
   return createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex');
@@ -197,16 +205,39 @@ function audioMetadata(audioUrl) {
   if (!existsSync(absolutePath)) {
     return { url: audioUrl, exists: false, bytes: 0, sha256: null, durationSeconds: null, requiresSegmentation: true };
   }
-  const output = execFileSync('/usr/bin/afinfo', [absolutePath], { encoding: 'utf8' });
-  const duration = output.match(/estimated duration:\s+([0-9.]+) sec/);
-  if (!duration) throw new Error(`Cannot read duration for ${audioUrl}`);
   const buffer = readFileSync(absolutePath);
+  const bytes = statSync(absolutePath).size;
+  const digest = sha256(buffer);
+  let durationSeconds = null;
+
+  if (existsSync('/usr/bin/afinfo')) {
+    const output = execFileSync('/usr/bin/afinfo', [absolutePath], { encoding: 'utf8' });
+    const duration = output.match(/estimated duration:\s+([0-9.]+) sec/);
+    if (!duration) throw new Error(`Cannot read duration for ${audioUrl}`);
+    durationSeconds = Number(Number(duration[1]).toFixed(3));
+  } else {
+    try {
+      const output = execFileSync('ffprobe', [
+        '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', absolutePath,
+      ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+      durationSeconds = Number(Number(output.trim()).toFixed(3));
+      if (!Number.isFinite(durationSeconds)) throw new Error(`Cannot read duration for ${audioUrl}`);
+    } catch (error) {
+      if (error?.code !== 'ENOENT') throw error;
+      const pinned = pinnedAudio.get(audioUrl);
+      if (!pinned || pinned.bytes !== bytes || pinned.sha256 !== digest || !(pinned.durationSeconds > 0)) {
+        throw new Error(`No media probe is available and pinned metadata does not match ${audioUrl}`);
+      }
+      durationSeconds = pinned.durationSeconds;
+    }
+  }
+
   return {
     url: audioUrl,
     exists: true,
-    bytes: statSync(absolutePath).size,
-    sha256: sha256(buffer),
-    durationSeconds: Number(Number(duration[1]).toFixed(3)),
+    bytes,
+    sha256: digest,
+    durationSeconds,
     requiresSegmentation: true,
   };
 }
@@ -350,4 +381,3 @@ if (writeMode) {
   }
   process.stdout.write(`✓ Diagnostic candidate inventory current: ${inventory.summary.candidates} interactions, ${inventory.summary.uniqueAudioFiles} audio files\n`);
 }
-
