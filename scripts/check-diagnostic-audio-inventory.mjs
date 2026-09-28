@@ -7,6 +7,23 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const manifest = JSON.parse(readFileSync(resolve(root, 'config/diagnostic/legacy-audio-inventory.json'), 'utf8'));
 const failures = [];
+const shallowRepository = execFileSync('git', ['rev-parse', '--is-shallow-repository'], {
+  cwd: root, encoding: 'utf8',
+}).trim() === 'true';
+let historicalBlobsSkipped = 0;
+
+function readHistoricalBlob(commit, path) {
+  try {
+    return execFileSync('git', ['cat-file', '-p', `${commit}:${path}`], {
+      cwd: root, encoding: 'buffer', maxBuffer: 32 * 1024 * 1024,
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+  } catch (error) {
+    if (!shallowRepository) throw error;
+    historicalBlobsSkipped += 1;
+    return null;
+  }
+}
 
 if (manifest.inventoryVersion !== 'diagnostic-legacy-audio-v1') failures.push('unexpected inventory version');
 if (manifest.items.length !== 80) failures.push(`expected 80 items, found ${manifest.items.length}`);
@@ -22,16 +39,16 @@ for (const item of manifest.items) {
   if (!(item.audio.durationSeconds > 0)) failures.push(`${item.id} has no duration`);
   if (!/^[a-f0-9]{64}$/.test(item.audio.sha256)) failures.push(`${item.id} has an invalid sha256`);
   if (item.diagnosticDisposition !== 'candidate-pending-linguistic-review') failures.push(`${item.id} bypasses linguistic review`);
-  const buffer = execFileSync('git', ['cat-file', '-p', `${item.audio.gitCommit}:${item.audio.originalPath}`], {
-    cwd: root, encoding: 'buffer', maxBuffer: 32 * 1024 * 1024,
-  });
-  const actualSha256 = createHash('sha256').update(buffer).digest('hex');
-  if (actualSha256 !== item.audio.sha256) failures.push(`${item.id} no longer matches its source blob`);
-  const sourceBuffer = execFileSync('git', ['cat-file', '-p', `${item.contentSource.gitCommit}:${item.contentSource.path}`], {
-    cwd: root, encoding: 'buffer', maxBuffer: 32 * 1024 * 1024,
-  });
-  const sourceSha256 = createHash('sha256').update(sourceBuffer).digest('hex');
-  if (sourceSha256 !== item.contentSource.sha256) failures.push(`${item.id} no longer matches its content source`);
+  const buffer = readHistoricalBlob(item.audio.gitCommit, item.audio.originalPath);
+  if (buffer) {
+    const actualSha256 = createHash('sha256').update(buffer).digest('hex');
+    if (actualSha256 !== item.audio.sha256) failures.push(`${item.id} no longer matches its source blob`);
+  }
+  const sourceBuffer = readHistoricalBlob(item.contentSource.gitCommit, item.contentSource.path);
+  if (sourceBuffer) {
+    const sourceSha256 = createHash('sha256').update(sourceBuffer).digest('hex');
+    if (sourceSha256 !== item.contentSource.sha256) failures.push(`${item.id} no longer matches its content source`);
+  }
   if (!/^(array-order:\d+|audioFile:[a-z0-9-]+)$/.test(item.contentSource.mapping)) {
     failures.push(`${item.id} has no deterministic script mapping`);
   }
@@ -44,4 +61,9 @@ if (failures.length) {
   process.stderr.write(`${failures.map(failure => `- ${failure}`).join('\n')}\n`);
   process.exit(1);
 }
-process.stdout.write(`${JSON.stringify({ status: 'PASS', inventoryVersion: manifest.inventoryVersion, groups: Object.fromEntries(groupCounts) }, null, 2)}\n`);
+process.stdout.write(`${JSON.stringify({
+  status: 'PASS',
+  inventoryVersion: manifest.inventoryVersion,
+  groups: Object.fromEntries(groupCounts),
+  historicalBlobsSkipped,
+}, null, 2)}\n`);
