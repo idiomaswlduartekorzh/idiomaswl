@@ -11,7 +11,7 @@ const WA_MSG = encodeURIComponent('Hola, quiero saber cuál es mi nivel real de 
 export const metadata: Metadata = {
   title: 'Nivel Radar — ¿Cuál es tu nivel real de inglés?',
   description:
-    'Diagnóstico adaptativo de inglés A1–C2 con lectura, escucha, construcción del discurso escrito, gramática y vocabulario, y un perfil con incertidumbre explícita.',
+    'Diagnóstico adaptativo de inglés A1–C2: lectura, escucha, discurso escrito, gramática y vocabulario, con resultados por habilidad.',
   keywords: [
     'nivel de inglés test', 'cuál es mi nivel de inglés', 'test de inglés gratis',
     'diagnóstico de inglés online', 'nivel real de inglés WeLearn',
