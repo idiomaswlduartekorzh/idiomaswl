@@ -549,12 +549,12 @@ const orderingSeeds: readonly OrderingSeed[] = [
     level: 'A1', number: 4, title: 'Making a sandwich', body: 'Four steps describe how to make a sandwich.',
     prompt: 'Order the fragments to form a clear set of steps.',
     fragments: [
-      'Then I put cheese on the bread.',
-      'First, I take two slices of bread.',
-      'Finally, I eat it.',
-      'Next, I close the sandwich.',
+      'I put cheese on one slice.',
+      'I take two slices of bread.',
+      'The sandwich is ready to eat.',
+      'I place the other slice on top.',
     ], correctOrder: [1, 0, 3, 2],
-    rationale: 'The explicit sequence markers order the actions, and “it” refers to the completed sandwich.',
+    rationale: '“One slice” depends on the two slices, “the other slice” follows the first one, and the completed sandwich is ready last.',
   },
   {
     level: 'A1', number: 5, title: 'Going to school', body: 'Four fragments describe a student’s journey to school.',

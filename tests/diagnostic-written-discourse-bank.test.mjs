@@ -126,7 +126,7 @@ test('ordering items use exact private permutations with varied source-position 
 test('cue audit covers every format without blocking or material key-length cues', () => {
   for (const record of bank) {
     const audit = auditDiagnosticItemCues(record);
-    assert.notEqual(audit.disposition, 'BLOCKING_DEFECT', record.publicItem.id);
+    assert.equal(audit.disposition, 'NO_AUTOMATED_CUE_FOUND', record.publicItem.id);
     assert.equal(audit.findings.some(finding =>
       finding.code === 'KEY_MATERIALLY_LONGER' || finding.code === 'KEY_MATERIALLY_SHORTER'), false,
     `${record.publicItem.id} has a material keyed-length cue`);

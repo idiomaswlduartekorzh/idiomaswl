@@ -14,7 +14,7 @@
     "legacyWritingDraftPrompts": 24,
     "legacyWritingApprovedPrompts": 0,
     "cueAuditReviewedReservedDrafts": 288,
-    "cueAuditFlaggedForHumanReview": 1,
+    "cueAuditFlaggedForHumanReview": 0,
     "cueAuditBlockingDefects": 0
   },
   "objectiveCells": [
@@ -603,7 +603,7 @@
     "scope": "Reserved objective drafts only; non-reserved recycled listening items are excluded.",
     "totals": {
       "items": 288,
-      "flaggedItems": 1,
+      "flaggedItems": 0,
       "blockingItems": 0
     },
     "cells": [
@@ -635,11 +635,9 @@
         "level": "A1",
         "skill": "written-discourse",
         "items": 12,
-        "flaggedItems": 1,
+        "flaggedItems": 0,
         "blockingItems": 0,
-        "findings": {
-          "ORDERING_SEQUENCE_MARKER_CUE": 1
-        }
+        "findings": {}
       },
       {
         "level": "A2",
