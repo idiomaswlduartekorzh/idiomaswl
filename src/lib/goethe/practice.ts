@@ -63,10 +63,10 @@ export const GOETHE_A2_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePractic
 
 export const GOETHE_B1_PRACTICE_TEILE: Record<GoethePracticeSkill, GoethePracticeTeilMeta<GoetheB1PracticeTeil>[]> = {
   listening: [
-    { teil: 1, title: 'Kurze Texte', workload: '10 preguntas · audio pendiente', minutes: 10 },
-    { teil: 2, title: 'Öffentlicher Monolog', workload: '5 preguntas · audio pendiente', minutes: 8 },
-    { teil: 3, title: 'Gespräch', workload: '7 preguntas · audio pendiente', minutes: 8 },
-    { teil: 4, title: 'Diskussion', workload: '8 asignaciones · audio pendiente', minutes: 14 },
+    { teil: 1, title: 'Kurze Texte', workload: '10 preguntas · 2 reproducciones', minutes: 10 },
+    { teil: 2, title: 'Öffentlicher Monolog', workload: '5 preguntas · 1 reproducción', minutes: 8 },
+    { teil: 3, title: 'Gespräch', workload: '7 preguntas · 1 reproducción', minutes: 8 },
+    { teil: 4, title: 'Diskussion', workload: '8 asignaciones · 2 reproducciones', minutes: 14 },
   ],
   reading: [
     { teil: 1, title: 'Persönliche Korrespondenz', workload: '6 preguntas · Richtig/Falsch', minutes: 10 },

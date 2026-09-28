@@ -86,6 +86,37 @@ type FocusedPractice = {
 
 type GoetheA2LayoutMode = 'web' | 'sheet';
 
+const GOETHE_B1_MODULES = [
+  { skill: 'reading', label: 'Lesen', detail: '30 respuestas · listo', locked: false },
+  { skill: 'writing', label: 'Schreiben', detail: '3 tareas · listo', locked: false },
+  { skill: 'speaking', label: 'Sprechen', detail: '3 partes · listo', locked: false },
+  { skill: 'listening', label: 'Hören', detail: '30 ítems · audio pendiente', locked: true },
+] as const;
+
+function GoetheB1ModuleNav({ activeSkill, compact = false }: { activeSkill: string; compact?: boolean }) {
+  return (
+    <nav
+      className={`goethe-b1-module-nav${compact ? ' goethe-b1-module-nav--compact' : ''}`}
+      aria-label="Módulos del mock Goethe B1"
+    >
+      {GOETHE_B1_MODULES.map(module => (
+        <Link
+          key={module.skill}
+          href={module.locked
+            ? '/practica/goethe/b1/listening'
+            : `/examenes/goethe/practica/b1-1?mode=practice&skill=${module.skill}`}
+          className={`goethe-b1-module-nav__item${module.locked ? ' goethe-b1-module-nav__item--locked' : ''}`}
+          aria-current={module.skill === activeSkill ? 'page' : undefined}
+        >
+          <span className="goethe-b1-module-nav__label">{module.label}</span>
+          <small>{module.detail}</small>
+          {module.locked ? <span className="goethe-b1-module-nav__lock">Bloqueado</span> : null}
+        </Link>
+      ))}
+    </nav>
+  );
+}
+
 function getSkillSections(mock: MockExam, skill: string) {
   return mock.sections.filter(s => (s.skill ?? 'general') === skill);
 }
@@ -1743,6 +1774,7 @@ export default function LanguagePracticeClient({
               </div>
             ))}
           </div>
+          {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} /> : null}
           <div className="goethe-a2-intro-actions">
             <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
               Comenzar práctica
@@ -1780,6 +1812,7 @@ export default function LanguagePracticeClient({
       <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
+        {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} compact /> : null}
         {goetheWorksheetLayout ? (
           <aside className="goethe-a2-pdf-bar" aria-label="Cuadernillo imprimible">
             <div>

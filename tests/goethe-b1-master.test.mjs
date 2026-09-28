@@ -69,8 +69,16 @@ test('speaking uses deterministic editorial assets, not generated photography', 
 test('catalog and practice copy expose one master while keeping Hören blocked', () => {
   const catalog = readFileSync(new URL('../src/data/exams.ts', import.meta.url), 'utf8');
   const library = readFileSync(new URL('../src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx', import.meta.url), 'utf8');
+  const runner = readFileSync(new URL('../src/app/(site)/examenes/[exam]/practica/[mockId]/LanguagePracticeClient.tsx', import.meta.url), 'utf8');
   assert.match(catalog, /id: 'b1-1'.+Referenzmock 1/);
   assert.doesNotMatch(catalog, /id: 'b1-[2-5]'.+Goethe-Zertifikat B1/);
   assert.match(library, /level === 'b1' && available[\s\S]+\? \[1\]/);
   assert.match(library, /Hören y.+examen B1 completo.+bloqueados/s);
+  assert.match(library, /level === 'b1' && skill === 'listening'/);
+  assert.match(library, /GOETHE_B1_PRACTICE_TEILE\[skill\]/);
+  assert.match(library, /Esperando guiones y audio aprobados/);
+  assert.match(runner, /GOETHE_B1_MODULES/);
+  assert.match(runner, /label: 'Schreiben'.+3 tareas · listo/);
+  assert.match(runner, /label: 'Hören'.+30 ítems · audio pendiente.+locked: true/);
+  assert.doesNotMatch(runner, /skill=listening/);
 });
