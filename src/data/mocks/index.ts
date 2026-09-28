@@ -132,10 +132,17 @@ import goetheA2Set8 from './goethe-a2-set-8';
 import goetheA2Set9 from './goethe-a2-set-9';
 import goetheA2Set10 from './goethe-a2-set-10';
 import goetheB1Set1 from './goethe-b1-master-set-1';
-import goetheB1Set2 from './goethe-b1-set-2';
-import goetheB1Set3 from './goethe-b1-set-3';
-import goetheB1Set4 from './goethe-b1-set-4';
-import goetheB1Set5 from './goethe-b1-set-5';
+import {
+  goetheB1Set2,
+  goetheB1Set3,
+  goetheB1Set4,
+  goetheB1Set5,
+  goetheB1Set6,
+  goetheB1Set7,
+  goetheB1Set8,
+  goetheB1Set9,
+  goetheB1Set10,
+} from './goethe-b1-original-sets';
 import goetheB2Set1 from './goethe-b2-set-1';
 import goetheB2Set2 from './goethe-b2-set-2';
 import goetheB2Set3 from './goethe-b2-set-3';
@@ -323,6 +330,11 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'goethe:b1-3': goetheB1Set3,
   'goethe:b1-4': goetheB1Set4,
   'goethe:b1-5': goetheB1Set5,
+  'goethe:b1-6': goetheB1Set6,
+  'goethe:b1-7': goetheB1Set7,
+  'goethe:b1-8': goetheB1Set8,
+  'goethe:b1-9': goetheB1Set9,
+  'goethe:b1-10': goetheB1Set10,
   'goethe:b2-1': goetheB2Set1,
   'goethe:b2-2': goetheB2Set2,
   'goethe:b2-3': goetheB2Set3,
@@ -446,9 +458,10 @@ export function getGoetheB1PracticeMock(
   const fullMinutes = skill === 'reading' ? 65 : skill === 'writing' ? 60 : 15;
   const partMinutes = skill === 'reading' ? [10, 20, 10, 15, 10] : skill === 'writing' ? [20, 25, 15] : [3, 8, 4];
   const skillLabel = skill === 'reading' ? 'Lesen' : skill === 'writing' ? 'Schreiben' : 'Sprechen';
+  const setNumber = Number(mockId.split('-')[1]);
   return {
     ...mock,
-    title: `Goethe-Zertifikat B1 · Set 1 · ${skillLabel}`,
+    title: `Goethe-Zertifikat B1 · Set ${setNumber} · ${skillLabel}`,
     subtitle: `${part === undefined ? 'Módulo completo' : `Teil ${part}`} · práctica B1 original WeLearn`,
     timeMinutes: part === undefined ? fullMinutes : partMinutes[part - 1],
     sections,

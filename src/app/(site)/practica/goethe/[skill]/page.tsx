@@ -27,8 +27,8 @@ const levelConfig = {
   b1: {
     name: 'B1',
     subtitle: 'Goethe-Zertifikat B1',
-    lead: 'Practica Lesen, Schreiben y Sprechen con el primer mock maestro B1. Hören y el examen completo esperan el audio definitivo.',
-    sets: 1,
+    lead: 'Practica Lesen, Schreiben y Sprechen con diez mocks B1 originales y fieles al modelo aprobado. Hören y los exámenes completos esperan el audio definitivo.',
+    sets: 10,
     available: true,
   },
   b2: {

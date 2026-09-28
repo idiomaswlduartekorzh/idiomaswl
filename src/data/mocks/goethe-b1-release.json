@@ -12,6 +12,60 @@
       "humanApproved": false,
       "practicePublished": true,
       "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-2", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-3", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-4", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-5", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-6", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-7", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-8", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-9", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
+    },
+    {
+      "id": "b1-10", "state": "AUDIO_BLOCKED", "published": false,
+      "contentReady": true, "visualsReady": true, "audioReady": false,
+      "scoringReady": true, "humanApproved": false, "practicePublished": true,
+      "practiceSkills": ["reading", "writing", "speaking"]
     }
   ]
 }

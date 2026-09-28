@@ -41,7 +41,7 @@ export default async function PracticePage({ params, searchParams }: { params: P
       : undefined;
   const a2PracticePart = a2Skill ? parseGoetheA2PracticeTeil(a2Skill, query.teil) : undefined;
   const b1Skill = slug === 'goethe'
-    && mockId === 'b1-1'
+    && /^b1-(?:[1-9]|10)$/.test(mockId)
     && query.mode === 'practice'
     && ['reading', 'writing', 'speaking'].includes(query.skill ?? '')
       ? query.skill as GoetheB1PracticeSkill
