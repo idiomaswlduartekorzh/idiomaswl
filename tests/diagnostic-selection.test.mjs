@@ -132,6 +132,42 @@ test('selects a ten-decision confirmation without reusing items or stimuli', () 
   assert.equal(confirmation.records.some(record => usedStimuli.has(identity(record))), false);
 });
 
+test('a representative complete path cannot finish before 35 balanced decisions and keeps audio in every objective stage', () => {
+  const bank = completeBank();
+  const locator = selectEnglishLocator(bank, 'representative-path:locator');
+  const used = new Set(locator.receipt.itemIds);
+  const precision = selectEnglishPrecisionStage(
+    bank, 'mid-b1-b2', 'representative-path:precision', used,
+  );
+  precision.records.forEach(record => used.add(record.publicItem.id));
+
+  const basePath = [...locator.records, ...precision.records];
+  assert.equal(locator.records.length, 15);
+  assert.equal(precision.records.length, 20);
+  assert.equal(basePath.length, 35);
+  for (const skill of objectiveSkills) {
+    assert.equal(basePath.filter(record => record.publicItem.skill === skill).length, 7, skill);
+  }
+  for (const stage of [locator.records, precision.records]) {
+    const listening = stage.filter(record => record.publicItem.skill === 'listening');
+    assert.ok(listening.length > 0);
+    assert.equal(listening.every(record => record.publicItem.stimulus.kind === 'audio'), true);
+  }
+
+  const confirmation = selectEnglishConfirmationStage(
+    bank, 'mid-b1-b2', 'representative-path:confirmation', used,
+  );
+  const confirmedPath = [...basePath, ...confirmation.records];
+  assert.equal(confirmation.records.length, 10);
+  assert.equal(confirmedPath.length, 45);
+  for (const skill of objectiveSkills) {
+    assert.equal(confirmedPath.filter(record => record.publicItem.skill === skill).length, 9, skill);
+  }
+  const confirmationListening = confirmation.records.filter(record => record.publicItem.skill === 'listening');
+  assert.equal(confirmationListening.length, 2);
+  assert.equal(confirmationListening.every(record => record.publicItem.stimulus.kind === 'audio'), true);
+});
+
 test('reports bank capacity deficits and refuses silent underfilled forms', () => {
   const bank = capacityBank();
   assert.deepEqual(auditEnglishMstCapacity(bank), []);

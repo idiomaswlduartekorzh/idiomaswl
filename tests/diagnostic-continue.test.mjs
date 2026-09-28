@@ -86,6 +86,17 @@ test('scores locator server-side and atomically prepares a balanced precision st
   assert.equal(result.routeDecision.routeId, 'high-c1-c2');
   assert.equal(result.delivery.attemptVersion, 2);
   assert.equal(result.delivery.items.length, 20);
+  assert.deepEqual(
+    Object.fromEntries(skills.map(skill => [
+      skill, result.delivery.items.filter(item => item.skill === skill).length,
+    ])),
+    { reading: 4, listening: 4, 'written-discourse': 4, grammar: 4, vocabulary: 4 },
+  );
+  assert.equal(
+    result.delivery.items.filter(item => item.skill === 'listening')
+      .every(item => item.stimulus.kind === 'audio'),
+    true,
+  );
   const deliveredRecord = bank.find(item => item.publicItem.id === result.delivery.items[0].id);
   assert.deepEqual(result.delivery.items[0], toDiagnosticPublicItem(deliveredRecord, 'stage-precision'));
   assert.equal(result.delivery.items.some(item => stage.itemIds.includes(item.id)), false);
@@ -203,6 +214,14 @@ test('scores precision with prior evidence and atomically completes the objectiv
   assert.equal(result.resultProfile.skills.some(skill => skill.skill === 'written-discourse'), true);
   assert.equal(result.objectiveEvidence.length, 5);
   assert.equal(result.objectiveEvidence.every(skill => skill.decisions === 7 && skill.status === 'provisional'), true);
+  assert.equal(locator.records.length + precision.records.length, 35);
+  for (const skill of skills) {
+    assert.equal(
+      [...locator.records, ...precision.records].filter(record => record.publicItem.skill === skill).length,
+      7,
+      skill,
+    );
+  }
   assert.equal(persisted.resultProfile.bankVersion, 'bank-v2');
   assert.equal(persisted.scoredResponses.length, 20);
 });
@@ -268,6 +287,17 @@ test('adds a bounded confirmation stage for insufficient evidence, then complete
   });
   assert.equal(confirmationResult.delivery.stage.kind, 'confirmation');
   assert.equal(confirmationResult.delivery.items.length, 10);
+  assert.deepEqual(
+    Object.fromEntries(skills.map(skill => [
+      skill, confirmationResult.delivery.items.filter(item => item.skill === skill).length,
+    ])),
+    { reading: 2, listening: 2, 'written-discourse': 2, grammar: 2, vocabulary: 2 },
+  );
+  assert.equal(
+    confirmationResult.delivery.items.filter(item => item.skill === 'listening')
+      .every(item => item.stimulus.kind === 'audio'),
+    true,
+  );
   assert.equal(confirmationResult.confirmationDecision.required, true);
   assert.ok(confirmationResult.confirmationDecision.reasons.includes('INSUFFICIENT_SKILL_EVIDENCE'));
   assert.equal(precisionPersistence.nextStatus, 'confirmation');

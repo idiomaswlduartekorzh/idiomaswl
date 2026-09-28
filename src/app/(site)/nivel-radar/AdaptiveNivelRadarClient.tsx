@@ -10,6 +10,7 @@ import {
   type DiagnosticSubmittedResponse,
 } from '@/lib/diagnostic-draft';
 import audioCheck from '../../../../config/diagnostic/audio-check.json';
+import { REVIEW_LOCATOR_ITEMS, REVIEW_PRECISION_ITEMS } from '@/lib/diagnostic-review-preview';
 import {
   diagnosticConfidenceLabel,
   diagnosticLanguageUseIntegrationLabel,
@@ -60,7 +61,7 @@ type ResumePayload =
   | { kind: 'closed'; attemptId: string; attemptVersion: number; status: 'expired' | 'abandoned' };
 
 type DraftAnswer = DiagnosticDraftAnswer;
-type View = 'intro' | 'loading' | 'objective' | 'processing' | 'result' | 'error';
+type View = 'intro' | 'loading' | 'objective' | 'processing' | 'result' | 'review-complete' | 'error';
 
 const REVIEW_ATTEMPT_ID = 'diagnostic-review-preview';
 const REVIEW_EXPIRES_AT = '2099-12-31T23:59:59.000Z';
@@ -71,120 +72,18 @@ const REVIEW_OBJECTIVE_DELIVERY: ObjectiveDelivery = {
   stage: {
     stageId: 'review-locator',
     kind: 'locator',
-    itemIds: ['review-reading', 'review-listening', 'review-grammar', 'review-vocabulary'],
+    itemIds: REVIEW_LOCATOR_ITEMS.map(item => item.id),
   },
-  items: [
-    {
-      id: 'review-reading', contentVersion: 'review-v1', skill: 'reading', subdomain: 'explicit-detail',
-      prompt: 'When does the Saturday workshop begin?',
-      stimulus: {
-        kind: 'text', stimulusId: 'review-notice', title: 'Community workshop',
-        body: 'The bicycle workshop opens at 9:30 on Saturday. Please arrive ten minutes early if you need to borrow tools.',
-      },
-      response: { kind: 'single-choice', optionIds: ['nine', 'nine-thirty', 'ten'] },
-      displayOptions: [
-        { id: 'nine', text: 'At 9:00.' },
-        { id: 'nine-thirty', text: 'At 9:30.' },
-        { id: 'ten', text: 'At 10:00.' },
-      ],
-    },
-    {
-      id: 'review-listening', contentVersion: 'review-v1', skill: 'listening', subdomain: 'gist',
-      prompt: 'What place is the speaker mainly describing?',
-      stimulus: {
-        kind: 'audio', mediaId: 'review-audio', src: audioCheck.assetPath,
-        startMs: 0, endMs: 3_600_000, maxPlays: 2,
-      },
-      response: { kind: 'single-choice', optionIds: ['cafe', 'station', 'library'] },
-      displayOptions: [
-        { id: 'cafe', text: 'A café.' },
-        { id: 'station', text: 'A train station.' },
-        { id: 'library', text: 'A library.' },
-      ],
-    },
-    {
-      id: 'review-grammar', contentVersion: 'review-v1', skill: 'grammar', subdomain: 'verb-form',
-      prompt: 'Choose the sentence that is grammatically complete.',
-      stimulus: { kind: 'none' },
-      response: { kind: 'single-choice', optionIds: ['arrived', 'arrive', 'arriving'] },
-      displayOptions: [
-        { id: 'arrived', text: 'She arrived before the class started.' },
-        { id: 'arrive', text: 'She arrive before the class started.' },
-        { id: 'arriving', text: 'She arriving before the class started.' },
-      ],
-    },
-    {
-      id: 'review-vocabulary', contentVersion: 'review-v1', skill: 'vocabulary', subdomain: 'meaning-in-context',
-      prompt: 'In this context, what does “borrow” mean?',
-      stimulus: { kind: 'text', stimulusId: 'review-context', body: 'You may borrow a helmet for the workshop, but you must return it before leaving.' },
-      response: { kind: 'single-choice', optionIds: ['use-return', 'buy', 'repair'] },
-      displayOptions: [
-        { id: 'use-return', text: 'Use something temporarily and return it.' },
-        { id: 'buy', text: 'Pay to own something permanently.' },
-        { id: 'repair', text: 'Fix something that is broken.' },
-      ],
-    },
-  ],
+  items: REVIEW_LOCATOR_ITEMS,
   listeningAccommodation: false,
 };
-const REVIEW_DISCOURSE_DELIVERY: ObjectiveDelivery = {
+const REVIEW_PRECISION_DELIVERY: ObjectiveDelivery = {
   attemptId: REVIEW_ATTEMPT_ID,
   attemptVersion: 2,
   expiresAt: REVIEW_EXPIRES_AT,
-  stage: { stageId: 'review-written-discourse', kind: 'precision', itemIds: ['review-discourse-connector', 'review-discourse-order', 'review-discourse-insert', 'review-discourse-edit'] },
-  items: [
-    {
-      id: 'review-discourse-connector', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'rhetorical-relations',
-      prompt: 'Choose the phrase that best expresses the relationship between the two ideas.',
-      stimulus: { kind: 'text', stimulusId: 'review-discourse-connector-text', title: 'A changed plan', body: 'The outdoor concert was cancelled. ___, the musicians performed inside the town hall.' },
-      response: { kind: 'single-choice', optionIds: ['for-example', 'instead', 'meanwhile'] },
-      displayOptions: [{ id: 'for-example', text: 'For example' }, { id: 'instead', text: 'Instead' }, { id: 'meanwhile', text: 'Meanwhile' }],
-    },
-    {
-      id: 'review-discourse-order', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'organisation-sequencing',
-      prompt: 'Order the fragments to form a coherent paragraph.',
-      stimulus: { kind: 'text', stimulusId: 'review-discourse-order-text', title: 'Community garden', body: 'The paragraph explains why a neighbourhood project succeeded.' },
-      response: { kind: 'ordering', optionIds: ['order-c', 'order-a', 'order-d', 'order-b'] },
-      displayOptions: [
-        { id: 'order-c', text: 'As a result, more residents volunteered during the following month.' },
-        { id: 'order-a', text: 'At first, only six people worked in the community garden.' },
-        { id: 'order-d', text: 'The organisers therefore added a second weekly session.' },
-        { id: 'order-b', text: 'After they shared photographs of the first harvest, interest grew quickly.' },
-      ],
-    },
-    {
-      id: 'review-discourse-insert', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'cohesion-reference',
-      prompt: 'Where should this sentence go? “This limitation matters when the figures are compared across years.”',
-      stimulus: { kind: 'text', stimulusId: 'review-discourse-insert-text', title: 'Survey results', body: 'The survey reached twice as many people as last year. [1] However, most new respondents were under twenty-five. [2] The apparent increase may therefore reflect the sample rather than a change in opinion. [3]' },
-      response: { kind: 'single-choice', optionIds: ['position-1', 'position-2', 'position-3'] },
-      displayOptions: [{ id: 'position-1', text: 'Position 1' }, { id: 'position-2', text: 'Position 2' }, { id: 'position-3', text: 'Position 3' }],
-    },
-    {
-      id: 'review-discourse-edit', contentVersion: 'review-v2', skill: 'written-discourse', subdomain: 'revision-coherence',
-      prompt: 'The intended meaning is that Marta reviewed the budget. Choose the clearest revision.',
-      stimulus: { kind: 'text', stimulusId: 'review-discourse-edit-text', title: 'An ambiguous reference', body: 'Marta discussed the proposal with Elena after she reviewed the budget.' },
-      response: { kind: 'single-choice', optionIds: ['marta', 'elena', 'proposal'] },
-      displayOptions: [
-        { id: 'marta', text: 'After reviewing the budget, Marta discussed the proposal with Elena.' },
-        { id: 'elena', text: 'After Elena reviewed the budget, Marta discussed the proposal with her.' },
-        { id: 'proposal', text: 'Marta discussed the proposal with Elena before reviewing the budget.' },
-      ],
-    },
-  ],
+  stage: { stageId: 'review-precision', kind: 'precision', itemIds: REVIEW_PRECISION_ITEMS.map(item => item.id) },
+  items: REVIEW_PRECISION_ITEMS,
   listeningAccommodation: false,
-};
-const REVIEW_RESULT = {
-  globalLevel: 'B1', globalRange: ['A2', 'B1'], overallStatus: 'provisional',
-  skills: ['reading', 'listening', 'written-discourse', 'grammar', 'vocabulary'].map((skill, index) => ({
-    skill, status: 'provisional', estimatedLevel: index === 1 ? 'A2' : 'B1',
-    plausibleRange: index === 1 ? ['A1', 'B1'] : ['A2', 'B2'], confidence: index === 1 ? 0.54 : 0.76,
-  })),
-  recommendations: [{
-    priority: 1, skill: 'listening', currentLevel: 'A2', targetLevel: 'B1',
-    reason: 'La escucha conserva el rango más amplio en este resultado simulado.',
-    practice: { href: '/practica/ingles/a2/escucha', label: 'Abrir práctica de escucha' },
-  }],
-  warnings: ['Vista de revisión: el perfil mostrado es simulado y no procede de una calificación.'],
 };
 
 function responseFor(item: PublicItem, answer?: DraftAnswer): SubmittedResponse {
@@ -378,13 +277,12 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
     setAnswers(finalAnswers); setView('loading');
     if (reviewMode) {
       if (objective.stage.stageId === REVIEW_OBJECTIVE_DELIVERY.stage.stageId) {
-        activateDelivery(REVIEW_DISCOURSE_DELIVERY);
+        activateDelivery(REVIEW_PRECISION_DELIVERY);
       } else {
         clearDiagnosticAttemptDrafts(sessionStorage, REVIEW_ATTEMPT_ID);
         sessionStorage.removeItem(STORAGE_KEY);
-        setResult(REVIEW_RESULT);
-        setMessage('Resultado simulado para revisar la presentación; no se guardó ni calificó ninguna respuesta.');
-        setView('result');
+        setMessage('Recorrido completo: 35 preguntas, 7 por dimensión y 7 estímulos de audio. No calculamos un nivel ficticio con datos de preview.');
+        setView('review-complete');
       }
       return;
     }
@@ -420,6 +318,7 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   if (view === 'loading') return <Status title="Guardando evidencia…" text="No cierres esta ventana." />;
   if (view === 'processing') return <Status title="Calculando tu perfil" text="Estamos cerrando las cinco estimaciones objetivas. No se requiere revisión humana." />;
   if (view === 'result') return <ResultProfile profile={result} message={message} deletingData={deletingData} reviewMode={reviewMode} onDelete={() => void deleteDiagnosticData()} onRestart={() => { setResult(null); setMessage(''); setView('intro'); }} />;
+  if (view === 'review-complete') return <ReviewComplete message={message} onRestart={() => { setMessage(''); setView('intro'); }} />;
   if (view === 'error') return <Status title="No pudimos continuar" text={message} action={<button className={s.secondary} onClick={() => { const id = sessionStorage.getItem(STORAGE_KEY); if (id) { setView('loading'); void resume(id); } else setView('intro'); }}>Reintentar</button>} />;
 
   if (view === 'objective' && objective && currentItem) {
@@ -427,9 +326,17 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
     const plays = currentAnswer?.audioPlayCount ?? 0;
     const audioStimulus = currentItem.stimulus.kind === 'audio' ? currentItem.stimulus : null;
     const multipleChoice = currentItem.response.kind === 'multiple-choice' ? currentItem.response : null;
+    const explicitlyOmittedAudio = currentAnswer?.response.kind === 'single-choice'
+      && currentAnswer.response.optionId === null;
+    const audioInteractionRequired = Boolean(audioStimulus && !objective.listeningAccommodation
+      && plays === 0 && !explicitlyOmittedAudio);
+    const reviewCompletedBefore = reviewMode && objective.stage.kind === 'precision' ? REVIEW_LOCATOR_ITEMS.length : 0;
+    const displayedIndex = reviewMode ? reviewCompletedBefore + itemIndex + 1 : itemIndex + 1;
+    const displayedTotal = reviewMode ? REVIEW_LOCATOR_ITEMS.length + REVIEW_PRECISION_ITEMS.length : objective.items.length;
+    const displayedProgress = Math.round((displayedIndex / displayedTotal) * 100);
     return <section className={s.hero}><div className={s.shell}>
-      <div className={s.testHeader}><span>{objective.stage.kind === 'confirmation' ? 'Confirmación adaptativa' : 'Diagnóstico adaptativo'}</span><span>{itemIndex + 1} / {objective.items.length}</span></div>
-      <div className={s.progress} role="progressbar" aria-label="Progreso de la etapa" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}><i style={{ width: `${progress}%` }} /></div>
+      <div className={s.testHeader}><span>{objective.stage.kind === 'confirmation' ? 'Confirmación adaptativa' : reviewMode ? `Preview completo · etapa ${objective.stage.kind === 'locator' ? '1 de 2' : '2 de 2'}` : 'Diagnóstico adaptativo'}</span><span>{displayedIndex} / {displayedTotal}</span></div>
+      <div className={s.progress} role="progressbar" aria-label={reviewMode ? 'Progreso total del preview' : 'Progreso de la etapa'} aria-valuemin={0} aria-valuemax={100} aria-valuenow={reviewMode ? displayedProgress : progress}><i style={{ width: `${reviewMode ? displayedProgress : progress}%` }} /></div>
       <div className={s.levelRow}><span>Etapa</span><b>{objective.stage.kind}</b><span>{SKILL_LABELS[currentItem.skill] ?? currentItem.skill}</span></div>
       <article className={s.question}>
         {currentItem.stimulus.kind === 'text' && <div className={s.stimulus}>{currentItem.stimulus.title && <strong>{currentItem.stimulus.title}</strong>}<p>{currentItem.stimulus.body}</p></div>}
@@ -452,6 +359,7 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
               } }));
             }}
           />
+          {audioInteractionRequired && <small>Reproduce el audio antes de responder o selecciona “No sé / omitir”.</small>}
         </div>}
         <h2>{currentItem.prompt}</h2>
         {(currentItem.response.kind === 'single-choice' || currentItem.response.kind === 'multiple-choice') && <div className={s.options}>
@@ -493,8 +401,8 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
         <div className={s.itemActions}>
           <button className={s.secondary} disabled={itemIndex === 0} onClick={() => moveItem(itemIndex - 1)}>Anterior</button>
           {itemIndex < objective.items.length - 1
-            ? <button className={s.primary} onClick={() => moveItem(itemIndex + 1)}>Siguiente <span>→</span></button>
-            : <button className={s.primary} onClick={() => void submitObjective()}>Enviar etapa <span>→</span></button>}
+            ? <button className={s.primary} disabled={audioInteractionRequired} onClick={() => moveItem(itemIndex + 1)}>Siguiente <span>→</span></button>
+            : <button className={s.primary} disabled={audioInteractionRequired} onClick={() => void submitObjective()}>Enviar etapa <span>→</span></button>}
         </div>
       </article>
       {message && <p className={s.inlineError}>{message}</p>}
@@ -505,8 +413,10 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
   return <section className={s.hero}><div className={s.shell}>
     <p className={s.eyebrow}>{reviewMode ? 'Preview de revisión · recorrido simulado' : 'Diagnóstico adaptativo · Inglés A1–C2'}</p>
     <h1>Tu perfil real,<br /><span>habilidad por habilidad.</span></h1>
-    <p className={s.lead}>El examen usa etapas adaptativas para medir lectura, escucha, construcción del discurso escrito, gramática y vocabulario. Todo se califica automáticamente.</p>
-    {reviewMode && <p className={s.inlineError}>Este modo sirve para revisar la experiencia completa. No guarda respuestas, no califica y el perfil final es una demostración.</p>}
+    <p className={s.lead}>{reviewMode
+      ? 'Este recorrido permite revisar la cobertura de lectura, escucha, construcción del discurso escrito, gramática y vocabulario antes de habilitar la medición.'
+      : 'El examen usa etapas adaptativas para medir lectura, escucha, construcción del discurso escrito, gramática y vocabulario. Todo se califica automáticamente.'}</p>
+    {reviewMode && <p className={s.inlineError}>Preview completo de 35 preguntas: 7 de lectura, 7 de escucha con audio, 7 de discurso escrito, 7 de gramática y 7 de vocabulario. La segunda etapa ilustra una ruta de precisión; no se selecciona a partir de tus respuestas. No guarda respuestas ni inventa un nivel personal.</p>}
     <div className={s.skillGrid}>{Object.entries(SKILL_LABELS).map(([key, label]) => <div className={s.skill} key={key}>{label}<small>{key === 'written-discourse' ? 'cohesión, orden y revisión' : 'evidencia objetiva'}</small></div>)}</div>
     <div className={s.readinessBox}>
       <div>
@@ -528,13 +438,31 @@ export default function AdaptiveNivelRadarClient({ reviewMode = false }: { revie
         if (event.target.checked) setAudioReady(false);
       }} /> No puedo realizar la parte de escucha y necesito la vía accesible.</label>
       {listeningAccommodation && <p className={s.note}>Escucha quedará sin estimar, no se reproducirá audio y no se publicará una orientación global. Las demás dimensiones conservarán rutas independientes.</p>}
-      <p className={s.note}>Guardamos respuestas y resultados en tu cuenta para reanudar el intento y calibrar el diagnóstico. No enviamos texto libre a revisores ni proveedores externos. Podrás borrar tus datos diagnósticos desde el resultado.</p>
-      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> Acepto que mis respuestas se usen según lo descrito para estimar mi nivel y mejorar la calibración del diagnóstico.</label>
+      <p className={s.note}>{reviewMode
+        ? 'Este preview no guarda respuestas, no calcula resultados y no alimenta la calibración.'
+        : 'Guardamos respuestas y resultados en tu cuenta para reanudar el intento y calibrar el diagnóstico. No enviamos texto libre a revisores ni proveedores externos. Podrás borrar tus datos diagnósticos desde el resultado.'}</p>
+      <label><input type="checkbox" checked={consented} onChange={event => setConsented(event.target.checked)} /> {reviewMode
+        ? 'Entiendo que este recorrido sirve para revisar el instrumento y no recibirá un nivel.'
+        : 'Acepto que mis respuestas se usen según lo descrito para estimar mi nivel y mejorar la calibración del diagnóstico.'}</label>
     </div>
     {message && <p className={s.inlineError}>{message}</p>}
     {authRequired ? <Link className={s.primary} href={`/login?next=${encodeURIComponent('/nivel-radar')}`}>Iniciar sesión y continuar <span>→</span></Link>
       : <button className={s.primary} disabled={(!audioReady && !listeningAccommodation) || !consented} onClick={() => void start()}>Iniciar diagnóstico <span>→</span></button>}
     <p className={s.note}>45–70 minutos · Una confirmación adaptativa puede ampliar la duración · El componente de discurso escrito usa tareas cerradas y no acredita producción libre · No es una certificación oficial</p>
+  </div></section>;
+}
+
+function ReviewComplete({ message, onRestart }: { message: string; onRestart: () => void }) {
+  return <section className={s.hero}><div className={s.shell}>
+    <p className={s.eyebrow}>Preview integral completado</p>
+    <h1>Recorriste la cobertura mínima del instrumento.</h1>
+    <p className={s.lead}>El preview cubrió 35 decisiones: 15 de localización y 20 de una ruta de precisión ilustrativa.</p>
+    <div className={s.profileGrid}>{Object.entries(SKILL_LABELS).map(([skill, label]) => <div className={s.profileCard} key={skill}>
+      <span>{label}</span><b>7 preguntas</b><small>{skill === 'listening' ? '7 estímulos de audio reproducibles' : '3 de localización + 4 de precisión'}</small>
+    </div>)}</div>
+    <p className={s.inlineError}>{message}</p>
+    <p className={s.disclaimer}>Este entorno de revisión no contiene claves ni ejecuta el motor de medición. Por eso no muestra un nivel: asignarte A1–C2 aquí volvería a ser una conclusión superficial. El intento operativo solo publica nivel después de calificar la ruta completa y comprobar sus mínimos de evidencia.</p>
+    <button className={s.secondary} onClick={onRestart}>Repetir preview</button>
   </div></section>;
 }
 

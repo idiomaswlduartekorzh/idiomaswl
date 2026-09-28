@@ -56,5 +56,14 @@ test('adaptive UI has an independent server-side release flag and isolated previ
   assert.match(page, /process\.env\.VERCEL_ENV === 'preview'/);
   assert.match(page, /adaptiveUiEnabled \? <AdaptiveNivelRadarClient reviewMode=\{reviewMode\} \/> : <NivelRadarClient \/>/);
   assert.match(client, /Preview de revisión · recorrido simulado/);
-  assert.match(client, /no se guardó ni calificó ninguna respuesta/i);
+  assert.match(client, /No guarda respuestas ni inventa un nivel personal/i);
+});
+
+test('preview review mode mirrors the real 15 + 20 objective path instead of returning a superficial profile', () => {
+  assert.match(client, /items: REVIEW_LOCATOR_ITEMS/);
+  assert.match(client, /items: REVIEW_PRECISION_ITEMS/);
+  assert.match(client, /REVIEW_OBJECTIVE_DELIVERY\.stage\.stageId/);
+  assert.match(client, /activateDelivery\(REVIEW_PRECISION_DELIVERY\)/);
+  assert.match(client, /setView\('review-complete'\)/);
+  assert.doesNotMatch(client, /const REVIEW_RESULT/);
 });
