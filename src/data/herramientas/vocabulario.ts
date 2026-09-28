@@ -90,6 +90,7 @@ export const VOCABULARY_LANGUAGES = [
 ] as const
 
 export const PHRASAL_VERBS_BASE_PATH = '/herramientas/vocabulario/ingles/phrasal-verbs'
+export const PHRASAL_VERBS_PUBLISHED_AT = '2026-09-28'
 
 export const PHRASAL_VERBS_SUMMARY = {
   uniqueTerms: 334,

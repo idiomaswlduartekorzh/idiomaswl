@@ -12,7 +12,7 @@ Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-P
 ## Ecosistema de vocabulario y phrasal verbs — 28 de septiembre de 2026
 
 `codex/phrasal-verbs-main-integration` parte de `origin/main` en `f4019feb`.
-Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: nueva entrada
+Estado: `INTEGRADO`. Responsable: Codex. Alcance: nueva entrada
 `Herramientas → Vocabulario`, selector de ocho idiomas, colección de inglés y el
 banco existente de phrasal verbs en rutas limpias bajo
 `/herramientas/vocabulario/ingles/phrasal-verbs`. No se amplió el corpus durante
@@ -26,8 +26,9 @@ catálogo de práctica, vocabulario, baseline productivo, TypeScript y build Web
 de 2.587 páginas; smoke HTTP de HTML, PDF, imagen y sitemap; recorrido funcional
 desktop y móvil a 390 × 844; quiz con retroalimentación y avance; trazabilidad
 entre contextos; cero errores o advertencias de consola. Decisión de integración:
-`MERGE`. El SHA final de `main`, el deployment de Vercel y el smoke público se
-registrarán al terminar la publicación.
+`MERGE`. La implementación se integró inicialmente en `main` como `d4ab165e`.
+El deployment definitivo de Vercel y el smoke público se registrarán al terminar
+la publicación.
 
 ## Hojas PDF Goethe y TOEFL — 19 de septiembre de 2026
 

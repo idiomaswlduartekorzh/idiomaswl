@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import {
   PHRASAL_VERBS_BASE_PATH,
+  PHRASAL_VERBS_PUBLISHED_AT,
   PHRASAL_VERBS_SUMMARY,
 } from '@/data/herramientas/vocabulario'
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
@@ -43,6 +44,8 @@ export default function VocabularioInglesPage() {
     name: 'Vocabulario en inglés',
     url: PAGE_URL,
     description: metadata.description,
+    datePublished: PHRASAL_VERBS_PUBLISHED_AT,
+    dateModified: PHRASAL_VERBS_PUBLISHED_AT,
     hasPart: {
       '@type': 'LearningResource',
       name: 'Banco de phrasal verbs en inglés',
