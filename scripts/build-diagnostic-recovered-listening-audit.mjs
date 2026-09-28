@@ -8,6 +8,16 @@ import { pathToFileURL, fileURLToPath } from 'node:url';
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputPath = join(root, 'config/diagnostic/recovered-listening-content-audit.json');
 const writeMode = process.argv.includes('--write');
+const privateArchiveRoot = join(root, '.diagnostic-private/legacy-audio/en');
+const privateArchiveMounted = existsSync(privateArchiveRoot);
+const existingAudit = existsSync(outputPath)
+  ? JSON.parse(readFileSync(outputPath, 'utf8'))
+  : null;
+const pinnedAudio = new Map(
+  (existingAudit?.items ?? [])
+    .filter((item) => item.audio)
+    .map((item) => [item.id, item.audio]),
+);
 
 const sources = [
   { level: 'A1', ref: '13343f8f^', path: 'src/data/practica/ingles-a1-listening.ts', exportName: 'LISTENING_A1_ALL' },
@@ -21,6 +31,41 @@ function git(...args) {
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
+}
+
+function historicalSourceExists(source) {
+  try {
+    execFileSync('git', ['cat-file', '-e', `${source.ref}:${source.path}`], {
+      cwd: root, stdio: 'ignore',
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function validatePinnedAudit() {
+  if (!existingAudit) throw new Error(`Missing ${outputPath}; run with --write`);
+  if (existingAudit.auditVersion !== 'diagnostic-recovered-listening-content-v1') {
+    throw new Error('Recovered listening audit has an unexpected version');
+  }
+  if (existingAudit.policy?.operationalUseAllowed !== false || existingAudit.items?.length !== 60) {
+    throw new Error('Recovered listening audit has an invalid policy or item count');
+  }
+  for (const item of existingAudit.items) {
+    if (!/^[a-f0-9]{64}$/.test(item.source?.sourceSha256 ?? '')) {
+      throw new Error(`${item.id} has an invalid source digest`);
+    }
+    if (!/^[a-f0-9]{64}$/.test(item.audio?.sha256 ?? '') || !(item.audio?.bytes > 0) || !(item.audio?.durationSeconds > 0)) {
+      throw new Error(`${item.id} has invalid pinned audio metadata`);
+    }
+  }
+}
+
+if (!privateArchiveMounted && !sources.every(historicalSourceExists)) {
+  validatePinnedAudit();
+  process.stdout.write('✓ Recovered listening audit metadata valid; private archive and historical Git sources are not mounted in this build environment\n');
+  process.exit(0);
 }
 
 function metadata(audioPath) {
@@ -59,8 +104,11 @@ try {
     }
     for (const exercise of module.exercises) {
       const order = Number(exercise.order);
+      const itemId = `en-${level.toLowerCase()}-legacy-listening-${String(order).padStart(2, '0')}`;
       const audioPath = join(root, '.diagnostic-private/legacy-audio/en', level.toLowerCase(), `listening-${String(order).padStart(2, '0')}.mp3`);
       const audioExists = existsSync(audioPath);
+      const pinned = privateArchiveMounted ? null : pinnedAudio.get(itemId);
+      const audioAvailable = audioExists || Boolean(pinned);
       const transcriptLines = Array.isArray(exercise.transcript) ? exercise.transcript.filter((line) => line?.en?.trim()).length : 0;
       const detailQuestions = Array.isArray(exercise.details) ? exercise.details.length : 0;
       const questionObjects = [exercise.gist, ...(exercise.details ?? []), exercise.consolidation].filter(Boolean);
@@ -69,7 +117,7 @@ try {
       ).length;
       const completeTranscript = transcriptLines >= 3;
       const enoughQuestionsForTestlet = questionObjects.length >= 3 && questionsWithSingleKey === questionObjects.length;
-      const disposition = !audioExists
+      const disposition = !audioAvailable
         ? 'audio-missing'
         : !completeTranscript
           ? 'transcription-required'
@@ -77,7 +125,7 @@ try {
             ? 'question-repair-required'
             : 'ready-for-english-question-rewrite';
       items.push({
-        id: `en-${level.toLowerCase()}-legacy-listening-${String(order).padStart(2, '0')}`,
+        id: itemId,
         levelCandidate: level,
         source: {
           path: module.source.path,
@@ -95,7 +143,9 @@ try {
           targetAudioLanguage: 'en',
           expectedDurationSeconds: Number(exercise.duration),
         },
-        audio: audioExists ? { privatePath: audioPath.replace(`${root}/`, ''), ...metadata(audioPath) } : null,
+        audio: audioExists
+          ? { privatePath: audioPath.replace(`${root}/`, ''), ...metadata(audioPath) }
+          : pinned ?? null,
         disposition,
         requiredActions: disposition === 'ready-for-english-question-rewrite'
           ? ['rewrite-prompts-and-options-in-target-language', 'independent-linguistic-review', 'human-audio-alignment-review']
@@ -147,4 +197,3 @@ try {
 } finally {
   rmSync(temporaryDirectory, { recursive: true, force: true });
 }
-
