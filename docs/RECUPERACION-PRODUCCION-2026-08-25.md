@@ -665,3 +665,20 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 | Trabajo | Rama / base | Estado | Responsable y alcance | Validación, integración y producción |
 |---|---|---|---|---|
 | Práctica TOEFL, IELTS y Goethe; PDFs por destreza | `codex/exam-ui-pdf-unification-20260920` / `4f9b8c9aa0ae54890ae23a92f7071cd40c42831e`; base `f957d1b12823a8d4bb3950336e77724a8eca11fb` | `DESPLEGADO` | Codex; hubs y librerías de sets, corredores de práctica, `src/app/globals.css`, generador PDF y guardianes. Sin migraciones, variables ni activos externos nuevos. Decisión: `MERGE` vía [PR #17](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/17). | Revisión visual de escritorio y móvil, PDFs reales de los tres exámenes, 47 sets bajo contrato, catálogo protegido, TypeScript, prebuild y build Webpack de 2562 páginas aprobados. SHA integrado en `main`: `fed94902b1e95eaee880a54cd14da6a2a7b524e7`. Vercel producción `dpl_CuCHrbtVuz3ErCMM2prD1XUzUUYF`, `READY`, asignado a `www.idiomaswl.com` el 20 de septiembre de 2026. Smoke: 9/9 rutas HTTP 200 (hubs, bibliotecas y simulacros de los tres exámenes); intros de Goethe Lesen e IELTS Writing con PDFs visibles; TOEFL con PDFs de cuatro destrezas. PDF TOEFL Reading descargado de producción: 12 páginas, tres bloques, sin clave de respuestas. |
+
+### 27 de septiembre de 2026 — cuadernillos Goethe completos y Antwortbogen
+
+- Goethe A1, A2 y B1 permiten descargar cada Teil por separado o reunir todos los
+  Teile de una destreza en un solo PDF. Lesen y Hören terminan con numeración
+  continua y `Antwortbogen`; Schreiben agrega una hoja pautada por tarea y
+  Sprechen un `Notizblatt`. Las hojas siguen siendo copias del estudiante sin
+  claves, soluciones ni transcripciones.
+- El cambio entró en `main` con
+  `881c8621e92db330f8fad785472a72bcd781fd6f`. Vercel completó el deployment
+  [`9aVC8xLMnsabFtZ6kRHGtgfLQirf`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/9aVC8xLMnsabFtZ6kRHGtgfLQirf),
+  y el pipeline posterior de `main` en `c3e9938f48e761d90189212592b35dc867a062a4`
+  terminó correctamente.
+- El contrato PDF aprobó 70 sets; también pasaron los harness A1, A2 y B1,
+  catálogo protegido, TypeScript y build Webpack. El smoke público confirmó
+  ambos botones en A1/A2/B1 y descargó Lesen A2 completo: 9 páginas A4, cuatro
+  Teile y `Antwortbogen` 1–20.
