@@ -27,3 +27,18 @@ Modo hoja conservado:
 El modo hoja corresponde al diseño publicado inicialmente en `main` como
 `96f08499`. Cambiar de modo no debe modificar el mock, la puntuación, los
 bloqueos de Hören, el flujo de resultados ni los pagos.
+
+## Cuadernillo descargable y Sprechen
+
+La presentación `sheet` se conserva para comparación interna. El estudiante
+recibe su equivalente útil mediante **Descargar cuadernillo PDF**, disponible
+antes de comenzar y dentro de cada práctica publicada de Lesen, Schreiben y
+Sprechen. El archivo se genera con el set y el Teil activos, sin claves,
+transcripciones ni contenido bloqueado; identifica correctamente el nivel A2 y
+enlaza de vuelta a la práctica viva.
+
+En Sprechen la página no muestra el mazo completo. Cada Teil abre directamente
+con una sola tarjeta o un solo rol elegido al azar. **Andere Auswahl** sustituye
+esa selección por otra distinta; en Teil 3 la imagen visible y la etiqueta de
+Kandidat/in cambian juntas. El PDF mantiene todas las tarjetas necesarias para
+trabajo impreso, mientras la interfaz web conserva la dinámica de extracción.
