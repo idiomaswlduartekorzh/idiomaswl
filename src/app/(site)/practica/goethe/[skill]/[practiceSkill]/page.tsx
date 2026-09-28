@@ -84,7 +84,7 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
     : level === 'a2' && available
       ? Array.from({ length: 10 }, (_, index) => index + 1)
       : level === 'b1' && available
-        ? [1]
+        ? Array.from({ length: 10 }, (_, index) => index + 1)
         : [];
   const teile = level === 'a1' ? GOETHE_PRACTICE_TEILE[skill] : level === 'b1' ? GOETHE_B1_PRACTICE_TEILE[skill] : GOETHE_A2_PRACTICE_TEILE[skill];
   const pendingAudioSets = level === 'a1'
@@ -128,21 +128,21 @@ export default async function GoetheSkillLibraryPage({ params }: Props) {
         </div>
         {level === 'a1' && skill === 'listening' && pendingAudioSets.length > 0 ? <aside className={styles.libraryNote}><strong>Audio en producción</strong><p>Los sets {pendingAudioSets.join(', ')} se habilitarán únicamente cuando sus pistas hayan pasado el control de audio.</p></aside> : null}
         {level === 'a2' ? <aside className={styles.libraryNote}><strong>Práctica A2, no simulacro completo</strong><p>Esta biblioteca abre solamente {config.label}. Hören y los diez exámenes A2 continúan bloqueados hasta completar el audio.</p></aside> : null}
-        {level === 'b1' ? <aside className={styles.libraryNote}><strong>Práctica B1, no simulacro completo</strong><p>Esta biblioteca abre solamente {config.label}. Hören y el examen B1 completo continúan bloqueados hasta completar el audio.</p></aside> : null}
+        {level === 'b1' ? <aside className={styles.libraryNote}><strong>Práctica B1, no simulacro completo</strong><p>Esta biblioteca abre solamente {config.label}. Hören y los diez exámenes B1 completos continúan bloqueados hasta completar el audio.</p></aside> : null}
       </> : level === 'b1' && skill === 'listening' ? <>
         <p className={styles.libraryLead}>La estructura de Hören sí forma parte del mock maestro B1. Puedes revisar aquí sus cuatro tipos de tarea; los ejercicios permanecen cerrados hasta que sus guiones y audios hayan pasado el control editorial y técnico.</p>
         <div className={styles.setGrid}>
-          <article className={styles.setPracticeCard}>
+          {Array.from({ length: 10 }, (_, index) => index + 1).map(number => <article key={number} className={styles.setPracticeCard}>
             <header className={styles.setPracticeHeader}>
-              <span className={styles.setNumber}>01</span>
-              <span className={styles.setCopy}><strong>Set 1 · estructura reservada</strong><small>30 preguntas · 4 partes · 40 min</small></span>
+              <span className={styles.setNumber}>{String(number).padStart(2, '0')}</span>
+              <span className={styles.setCopy}><strong>Set {number} · estructura reservada</strong><small>30 preguntas · 4 partes · 40 min</small></span>
             </header>
-            <div className={styles.lockedTeilLinks} aria-label="Estructura bloqueada de Hören, set 1">
+            <div className={styles.lockedTeilLinks} aria-label={`Estructura bloqueada de Hören, set ${number}`}>
               {teile.map(teil => <div key={teil.teil} aria-disabled="true">
                 <span>Teil {teil.teil}</span><strong>{teil.title}</strong><small>{teil.workload} · {teil.minutes} min</small>
               </div>)}
             </div>
-          </article>
+          </article>)}
         </div>
         <aside className={styles.lockedPanel}><LockKeyhole aria-hidden="true" /><div><strong>Esperando guiones y audio aprobados</strong><p>No hay reproductores ni enlaces alternos para saltar el bloqueo. Hören se habilitará solamente después de producir y auditar las 30 tareas sonoras.</p></div></aside>
       </> : <aside className={styles.lockedPanel}><LockKeyhole aria-hidden="true" /><div><strong>{level === 'a2' ? 'Esperando audio aprobado' : 'Esperando banco auditado'}</strong><p>No hay un enlace alterno que permita saltar este bloqueo. Vuelve a las destrezas disponibles para seguir practicando.</p></div></aside>}

@@ -66,14 +66,14 @@ test('speaking uses deterministic editorial assets, not generated photography', 
   }
 });
 
-test('catalog and practice copy expose one master while keeping Hören blocked', () => {
+test('catalog and practice copy expose the expanded bank while keeping Hören blocked', () => {
   const catalog = readFileSync(new URL('../src/data/exams.ts', import.meta.url), 'utf8');
   const library = readFileSync(new URL('../src/app/(site)/practica/goethe/[skill]/[practiceSkill]/page.tsx', import.meta.url), 'utf8');
   const runner = readFileSync(new URL('../src/app/(site)/examenes/[exam]/practica/[mockId]/LanguagePracticeClient.tsx', import.meta.url), 'utf8');
   assert.match(catalog, /id: 'b1-1'.+Referenzmock 1/);
-  assert.doesNotMatch(catalog, /id: 'b1-[2-5]'.+Goethe-Zertifikat B1/);
-  assert.match(library, /level === 'b1' && available[\s\S]+\? \[1\]/);
-  assert.match(library, /Hören y.+examen B1 completo.+bloqueados/s);
+  assert.match(catalog, /id: 'b1-10'.+Originalmock 10/);
+  assert.match(library, /level === 'b1' && available[\s\S]+Array\.from\(\{ length: 10 \}/);
+  assert.match(library, /Hören y.+diez exámenes B1 completos.+bloqueados/s);
   assert.match(library, /level === 'b1' && skill === 'listening'/);
   assert.match(library, /GOETHE_B1_PRACTICE_TEILE\[skill\]/);
   assert.match(library, /Esperando guiones y audio aprobados/);

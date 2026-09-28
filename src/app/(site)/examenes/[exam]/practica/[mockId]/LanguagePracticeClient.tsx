@@ -93,7 +93,7 @@ const GOETHE_B1_MODULES = [
   { skill: 'listening', label: 'Hören', detail: '30 ítems · audio pendiente', locked: true },
 ] as const;
 
-function GoetheB1ModuleNav({ activeSkill, compact = false }: { activeSkill: string; compact?: boolean }) {
+function GoetheB1ModuleNav({ activeSkill, mockId, compact = false }: { activeSkill: string; mockId: string; compact?: boolean }) {
   return (
     <nav
       className={`goethe-b1-module-nav${compact ? ' goethe-b1-module-nav--compact' : ''}`}
@@ -104,7 +104,7 @@ function GoetheB1ModuleNav({ activeSkill, compact = false }: { activeSkill: stri
           key={module.skill}
           href={module.locked
             ? '/practica/goethe/b1/listening'
-            : `/examenes/goethe/practica/b1-1?mode=practice&skill=${module.skill}`}
+            : `/examenes/goethe/practica/${mockId}?mode=practice&skill=${module.skill}`}
           className={`goethe-b1-module-nav__item${module.locked ? ' goethe-b1-module-nav__item--locked' : ''}`}
           aria-current={module.skill === activeSkill ? 'page' : undefined}
         >
@@ -1635,7 +1635,7 @@ export default function LanguagePracticeClient({
   }));
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
-  const goetheWorksheetLayout = exam.slug === 'goethe' && /^(?:a2-(?:[1-9]|10)|b1-1)$/.test(mock.id);
+  const goetheWorksheetLayout = exam.slug === 'goethe' && /^(?:a2|b1)-(?:[1-9]|10)$/.test(mock.id);
   const downloadGoetheWorksheet = async () => {
     const { generateExamWorksheetPdf } = await import('@/lib/pdf/generateExamWorksheetPdf');
     const skill = focusedPractice?.skill ?? activeSkill;
@@ -1774,7 +1774,7 @@ export default function LanguagePracticeClient({
               </div>
             ))}
           </div>
-          {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} /> : null}
+          {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} mockId={mock.id} /> : null}
           <div className="goethe-a2-intro-actions">
             <button onClick={() => { setActiveSkill(skills[0] ?? 'reading'); setPhase('exam'); }} className="btn btn-lg" style={{ background: exam.color, color: '#fff', border: 'none' }}>
               Comenzar práctica
@@ -1812,7 +1812,7 @@ export default function LanguagePracticeClient({
       <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} labels={focusedPractice ? GOETHE_SKILL_LABEL : SKILL_LABEL} />
 
       <div className="ielts-exam-body">
-        {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} compact /> : null}
+        {focusedPractice?.level === 'B1' ? <GoetheB1ModuleNav activeSkill={focusedPractice.skill} mockId={mock.id} compact /> : null}
         {goetheWorksheetLayout ? (
           <aside className="goethe-a2-pdf-bar" aria-label="Cuadernillo imprimible">
             <div>
