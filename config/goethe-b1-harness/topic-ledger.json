@@ -10,15 +10,15 @@
     "reparaturservice"
   ],
   "sets": [
-    { "set": 1, "status": "approved-reference", "topicKey": "repair-cafe", "label": "Reparaturcafé y jornada laboral de cuatro días" },
-    { "set": 2, "status": "practice-ready-audio-blocked", "topicKey": "short-film-festival", "label": "Kurzfilmfestival y trabajo audiovisual" },
-    { "set": 3, "status": "practice-ready-audio-blocked", "topicKey": "cooperative-housing", "label": "Mehrgenerationenwohnen y convivencia" },
-    { "set": 4, "status": "practice-ready-audio-blocked", "topicKey": "citizen-science-bird-count", "label": "Bürgerforschung y observación de aves" },
-    { "set": 5, "status": "practice-ready-audio-blocked", "topicKey": "student-mediation", "label": "Mediación y resolución de conflictos" },
-    { "set": 6, "status": "practice-ready-audio-blocked", "topicKey": "public-observatory", "label": "Sternwarte y comunicación científica" },
-    { "set": 7, "status": "practice-ready-audio-blocked", "topicKey": "volunteer-rescue", "label": "Rettungsdienst voluntario y seguridad" },
-    { "set": 8, "status": "practice-ready-audio-blocked", "topicKey": "accessible-cinema", "label": "Cine accesible e inclusión cultural" },
-    { "set": 9, "status": "practice-ready-audio-blocked", "topicKey": "participatory-budgeting", "label": "Bürgerhaushalt y participación local" },
-    { "set": 10, "status": "practice-ready-audio-blocked", "topicKey": "volunteer-fire-service", "label": "Freiwillige Feuerwehr y prevención" }
+    { "set": 1, "status": "high-fidelity-audio-blocked", "topicKey": "repair-cafe", "label": "Reparaturcafé y jornada laboral de cuatro días" },
+    { "set": 2, "status": "high-fidelity-audio-blocked", "topicKey": "short-film-festival", "label": "Kurzfilmfestival y trabajo audiovisual" },
+    { "set": 3, "status": "high-fidelity-audio-blocked", "topicKey": "cooperative-housing", "label": "Mehrgenerationenwohnen y convivencia" },
+    { "set": 4, "status": "high-fidelity-audio-blocked", "topicKey": "citizen-science-bird-count", "label": "Bürgerforschung y observación de aves" },
+    { "set": 5, "status": "high-fidelity-audio-blocked", "topicKey": "student-mediation", "label": "Mediación y resolución de conflictos" },
+    { "set": 6, "status": "high-fidelity-audio-blocked", "topicKey": "public-observatory", "label": "Sternwarte y comunicación científica" },
+    { "set": 7, "status": "high-fidelity-audio-blocked", "topicKey": "volunteer-rescue", "label": "Rettungsdienst voluntario y seguridad" },
+    { "set": 8, "status": "high-fidelity-audio-blocked", "topicKey": "accessible-cinema", "label": "Cine accesible e inclusión cultural" },
+    { "set": 9, "status": "high-fidelity-audio-blocked", "topicKey": "participatory-budgeting", "label": "Bürgerhaushalt y participación local" },
+    { "set": 10, "status": "high-fidelity-audio-blocked", "topicKey": "volunteer-fire-service", "label": "Freiwillige Feuerwehr y prevención" }
   ]
 }

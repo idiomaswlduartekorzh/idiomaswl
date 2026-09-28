@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "reference": {
+    "publisher": "Goethe-Institut",
+    "adultModelUrl": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/b1_modellsatz_erwachsene.pdf",
+    "adultPracticeUrl": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/B1_Uebungssatz_Erwachsene.pdf",
+    "basis": "Task families, item counts, timing and calibrated text-volume bands derived from the two official adult candidate booklets. WeLearn text remains original."
+  },
+  "reading": {
+    "minutes": 65,
+    "parts": [
+      { "part": 1, "items": 6, "wordRange": [300, 370] },
+      { "part": 2, "items": 6, "wordRange": [335, 420] },
+      { "part": 3, "items": 7, "wordRange": [290, 380] },
+      { "part": 4, "items": 7, "wordRange": [320, 390] },
+      { "part": 5, "items": 4, "wordRange": [210, 250] }
+    ],
+    "totalWordRange": [1450, 1750],
+    "averageSentenceWordRange": [10.5, 15.5],
+    "averageTokenLengthRange": [5.4, 6.8],
+    "maximumCrossSetTrigramJaccard": 0.5
+  },
+  "writing": {
+    "minutes": 60,
+    "targetWords": [80, 80, 40],
+    "minimumForumStimulusWords": 30
+  },
+  "speaking": {
+    "pairMinutes": 15,
+    "preparationMinutes": 15,
+    "presentationMinutes": 3,
+    "presentationSlides": 5
+  },
+  "listening": {
+    "state": "AUDIO_BLOCKED",
+    "scriptsReady": false,
+    "audioReady": false
+  }
+}
