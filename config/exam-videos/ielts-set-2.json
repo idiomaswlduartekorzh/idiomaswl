@@ -1,0 +1,16 @@
+{
+  "exam": "ielts",
+  "set": "set-2",
+  "audio": "public/audio/ielts/ielts-listening-set-2.mp3",
+  "duration": 1744.997,
+  "pages": [
+    { "at": 0, "part": 1, "questions": [1, 6] },
+    { "at": 182.15, "part": 1, "questions": [7, 10] },
+    { "at": 430.13, "part": 2, "questions": [11, 12] },
+    { "at": 640.18, "part": 2, "questions": [13, 20] },
+    { "at": 858.28, "part": 3, "questions": [21, 25] },
+    { "at": 1057.46, "part": 3, "questions": [26, 30] },
+    { "at": 1293.99, "part": 4, "questions": [31, 35] },
+    { "at": 1515.54, "part": 4, "questions": [36, 40] }
+  ]
+}

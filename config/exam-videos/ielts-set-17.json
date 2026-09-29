@@ -1,0 +1,72 @@
+{
+  "exam": "ielts",
+  "set": "set-17",
+  "audio": "public/audio/ielts/ielts-listening-set-17.mp3",
+  "duration": 1744.995,
+  "pages": [
+    {
+      "at": 0,
+      "part": 1,
+      "questions": [
+        1,
+        6
+      ]
+    },
+    {
+      "at": 177.76,
+      "part": 1,
+      "questions": [
+        7,
+        10
+      ]
+    },
+    {
+      "at": 416.9,
+      "part": 2,
+      "questions": [
+        11,
+        12
+      ]
+    },
+    {
+      "at": 621.1,
+      "part": 2,
+      "questions": [
+        13,
+        20
+      ]
+    },
+    {
+      "at": 817.89,
+      "part": 3,
+      "questions": [
+        21,
+        25
+      ]
+    },
+    {
+      "at": 1022.95,
+      "part": 3,
+      "questions": [
+        26,
+        30
+      ]
+    },
+    {
+      "at": 1269.38,
+      "part": 4,
+      "questions": [
+        31,
+        35
+      ]
+    },
+    {
+      "at": 1498.85,
+      "part": 4,
+      "questions": [
+        36,
+        40
+      ]
+    }
+  ]
+}
