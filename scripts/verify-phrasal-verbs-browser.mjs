@@ -56,6 +56,11 @@ try {
     check(await page.locator('.topic-quiz-options button').count() === 4, `${slug}: quiz con cuatro opciones`)
     check(await page.locator('.cross-links a').count() > 0, `${slug}: enlaces internos rastreables`)
     const routeImage = page.locator('.seo-hero img')
+    await routeImage.evaluate(image => image.complete ? undefined : new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('La imagen no terminó de cargar en 15 segundos.')), 15_000)
+      image.addEventListener('load', () => { clearTimeout(timer); resolve() }, { once: true })
+      image.addEventListener('error', () => { clearTimeout(timer); reject(new Error('La imagen respondió con error.')) }, { once: true })
+    }))
     check(await routeImage.evaluate(image => image.complete && image.naturalWidth > 0), `${slug}: imagen principal cargada`)
     const pdfResponse = await page.request.get(`${base}/pdfs/${slug}.pdf`)
     check(pdfResponse.ok(), `${slug}: PDF responde 200`, String(pdfResponse.status()))
@@ -64,6 +69,7 @@ try {
   }
 
   await visit(`${base}/phrasal-verbs-comunicacion-redes-sociales`)
+  await page.locator('.topic-quiz-options button').first().waitFor({ state: 'visible' })
   check(await page.locator('h1').innerText() === 'Phrasal verbs para comunicación y redes sociales', 'Título de contexto correcto')
   check(await page.locator('.ecosystem-term').count() === 20, 'Contexto con 20 usos')
   check(await page.locator('.term-examples p').count() === 40, 'Contexto con 40 ejemplos')
@@ -77,6 +83,7 @@ try {
   await page.screenshot({ path: '/private/tmp/phrasal-verbs-comunicacion.png', fullPage: true })
 
   await visit(`${base}/phrasal-verbs-con-turn`)
+  await page.locator('.topic-quiz-options button').first().waitFor({ state: 'visible' })
   check(await page.locator('h1').innerText() === 'Phrasal verbs con TURN', 'Título de familia correcto')
   check(await page.locator('.ecosystem-term').count() === 20, 'Familia con 20 sentidos')
   check(await page.locator('.term-examples p').count() === 40, 'Familia con 40 ejemplos')
@@ -86,16 +93,21 @@ try {
 
   await page.setViewportSize({ width: 390, height: 844 })
   await visit(`${base}/phrasal-verbs-comunicacion-redes-sociales`)
+  await page.locator('.ecosystem-term').first().waitFor({ state: 'visible' })
   const mobileOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
   check(mobileOverflow <= 1, 'Ruta adaptable sin desbordamiento horizontal', String(mobileOverflow))
   await page.screenshot({ path: '/private/tmp/phrasal-verbs-comunicacion-mobile.png', fullPage: true })
   await page.setViewportSize({ width: 1440, height: 1000 })
 
+  const ecosystemResponse = page.waitForResponse(response => response.url().endsWith('/data/ecosystem.json') && response.ok())
   await visit(`${base}/explorar`)
+  await ecosystemResponse
+  await page.locator('.explore-topic-card').first().waitFor({ state: 'visible' })
   check(await page.locator('.explore-topic-card.family-card').count() === 10, 'Explorador con 10 familias')
   check(await page.locator('.explore-topic-card.particle-card').count() === 6, 'Explorador con 6 partículas')
   check(await page.locator('.explore-topic-card:not(.family-card):not(.particle-card)').count() === 32, 'Explorador con 32 contextos')
   await page.locator('#ecosystem-search').fill('turn off')
+  await page.waitForFunction(() => document.querySelectorAll('[data-search-list] .ecosystem-term').length >= 2)
   check(await page.locator('[data-search-list] .ecosystem-term').count() >= 2, 'Buscador recupera sentidos múltiples')
 
   check(consoleErrors.length === 0, 'Sin errores de consola', consoleErrors.join(' | '))
