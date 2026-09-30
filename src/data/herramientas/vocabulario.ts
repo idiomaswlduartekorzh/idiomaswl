@@ -90,14 +90,14 @@ export const VOCABULARY_LANGUAGES = [
 ] as const
 
 export const PHRASAL_VERBS_BASE_PATH = '/herramientas/vocabulario/ingles/phrasal-verbs'
-export const PHRASAL_VERBS_PUBLISHED_AT = '2026-09-28'
+export const PHRASAL_VERBS_PUBLISHED_AT = '2026-09-29'
 
 export const PHRASAL_VERBS_SUMMARY = {
-  uniqueTerms: 334,
-  occurrences: 672,
-  learningRoutes: 40,
-  examples: 1_344,
-  downloadableGuides: 41,
+  uniqueTerms: 409,
+  occurrences: 832,
+  learningRoutes: 48,
+  examples: 1_664,
+  downloadableGuides: 49,
 } as const
 
 /**
@@ -137,12 +137,20 @@ export const PHRASAL_VERB_SEO_PAGES = [
   { slug: 'phrasal-verbs-relaciones', image: 'phrasal-verbs-relaciones-welearn.jpg' },
   { slug: 'phrasal-verbs-emociones', image: 'phrasal-verbs-emociones-welearn.jpg' },
   { slug: 'phrasal-verbs-deporte', image: 'phrasal-verbs-deporte-welearn.jpg' },
+  { slug: 'phrasal-verbs-comunicacion-redes-sociales', image: 'phrasal-verbs-comunicacion-redes-sociales-welearn.jpg' },
+  { slug: 'phrasal-verbs-transporte-conduccion', image: 'phrasal-verbs-transporte-conduccion-welearn.jpg' },
+  { slug: 'phrasal-verbs-familia-crianza', image: 'phrasal-verbs-familia-crianza-welearn.jpg' },
+  { slug: 'phrasal-verbs-vivienda-arriendo', image: 'phrasal-verbs-vivienda-arriendo-welearn.jpg' },
   { slug: 'phrasal-verbs-con-get', image: 'phrasal-verbs-con-get-welearn.png' },
   { slug: 'phrasal-verbs-con-take', image: 'phrasal-verbs-con-take-welearn.jpg' },
   { slug: 'phrasal-verbs-con-put', image: 'phrasal-verbs-con-put-welearn.jpg' },
   { slug: 'phrasal-verbs-con-look', image: 'phrasal-verbs-con-look-welearn.jpg' },
   { slug: 'phrasal-verbs-con-go', image: 'phrasal-verbs-con-go-welearn.jpg' },
   { slug: 'phrasal-verbs-con-work', image: 'phrasal-verbs-con-work-welearn.jpg' },
+  { slug: 'phrasal-verbs-con-turn', image: 'phrasal-verbs-con-turn-welearn-social.jpg' },
+  { slug: 'phrasal-verbs-con-come', image: 'phrasal-verbs-con-come-welearn-social.jpg' },
+  { slug: 'phrasal-verbs-con-bring', image: 'phrasal-verbs-con-bring-welearn-social.jpg' },
+  { slug: 'phrasal-verbs-con-give', image: 'phrasal-verbs-con-give-welearn-social.jpg' },
   { slug: 'phrasal-verbs-con-up', image: 'phrasal-verbs-con-up-welearn.jpg' },
   { slug: 'phrasal-verbs-con-out', image: 'phrasal-verbs-con-out-welearn.jpg' },
   { slug: 'phrasal-verbs-con-off', image: 'phrasal-verbs-con-off-welearn.jpg' },

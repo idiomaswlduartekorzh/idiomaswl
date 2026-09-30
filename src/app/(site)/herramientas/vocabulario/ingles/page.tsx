@@ -16,12 +16,11 @@ const PREVIEW_IMAGE = `${PHRASAL_VERBS_BASE_PATH}/assets/seo/phrasal-verbs-esenc
 
 export const metadata: Metadata = {
   title: 'Vocabulario en inglés — phrasal verbs con ejemplos y PDFs',
-  description:
-    'Estudia phrasal verbs por contexto, verbo y partícula: 334 expresiones, 672 usos, 1.344 ejemplos, ejercicios e imágenes y PDFs descargables.',
+  description: `Estudia phrasal verbs por contexto, verbo y partícula: ${PHRASAL_VERBS_SUMMARY.uniqueTerms} expresiones, ${PHRASAL_VERBS_SUMMARY.occurrences} usos, ${PHRASAL_VERBS_SUMMARY.examples.toLocaleString('es-CO')} ejemplos, ejercicios, imágenes y PDFs descargables.`,
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Vocabulario en inglés — banco de phrasal verbs',
-    description: '334 expresiones y 1.344 ejemplos organizados en 40 rutas de aprendizaje.',
+    description: `${PHRASAL_VERBS_SUMMARY.uniqueTerms} expresiones y ${PHRASAL_VERBS_SUMMARY.examples.toLocaleString('es-CO')} ejemplos organizados en ${PHRASAL_VERBS_SUMMARY.learningRoutes} rutas de aprendizaje.`,
     url: PAGE_URL,
     type: 'website',
     siteName: 'Idiomas WeLearn',

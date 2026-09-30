@@ -9,6 +9,12 @@ const basePath = '/herramientas/vocabulario/ingles/phrasal-verbs'
 const publicRoot = path.join(repoRoot, 'public', basePath)
 const canonicalRoot = `https://www.idiomaswl.com${basePath}`
 const failures = []
+const expansionRoutes = new Set([
+  'phrasal-verbs-comunicacion-redes-sociales', 'phrasal-verbs-transporte-conduccion',
+  'phrasal-verbs-familia-crianza', 'phrasal-verbs-vivienda-arriendo',
+  'phrasal-verbs-con-turn', 'phrasal-verbs-con-come', 'phrasal-verbs-con-bring',
+  'phrasal-verbs-con-give',
+])
 
 const fail = (message) => failures.push(message)
 const read = (relativePath) => fs.readFileSync(path.join(repoRoot, relativePath), 'utf8')
@@ -22,17 +28,37 @@ if (!exists(publicRoot)) {
     fail('Falta data/ecosystem.json, fuente del buscador y la trazabilidad.')
   } else {
     const ecosystem = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+    const combined = [...ecosystem.occurrences, ...ecosystem.family_occurrences]
+    const semanticBank = [...combined, ...ecosystem.particle_occurrences]
     const expectedSummary = {
-      topics: 28,
-      total_occurrences: 672,
-      unique_terms_all: 334,
-      learning_routes: 40,
-      examples_total: 1344,
+      topics: ecosystem.topics.length,
+      occurrences: ecosystem.occurrences.length,
+      unique_terms: new Set(ecosystem.occurrences.map((entry) => entry.term)).size,
+      families: ecosystem.families.length,
+      family_occurrences: ecosystem.family_occurrences.length,
+      particles: ecosystem.particles.length,
+      particle_occurrences: ecosystem.particle_occurrences.length,
+      total_occurrences: combined.length,
+      unique_terms_all: new Set(combined.map((entry) => entry.term)).size,
+      learning_routes: ecosystem.topics.length + ecosystem.families.length + ecosystem.particles.length,
+      examples_total: combined.reduce((total, entry) => total + entry.examples_en.length, 0),
     }
 
     for (const [key, expected] of Object.entries(expectedSummary)) {
       if (ecosystem.summary?.[key] !== expected) {
-        fail(`ecosystem.json: ${key} debe ser ${expected}; recibido ${ecosystem.summary?.[key]}.`)
+        fail(`ecosystem.json: ${key} debe derivarse como ${expected}; recibido ${ecosystem.summary?.[key]}.`)
+      }
+    }
+
+    if (ecosystem.topics.length < 32) fail(`El banco debe conservar al menos 32 contextos; hay ${ecosystem.topics.length}.`)
+    if (ecosystem.families.length < 10) fail(`El banco debe conservar al menos 10 familias; hay ${ecosystem.families.length}.`)
+    if (ecosystem.summary.total_occurrences < 832) fail(`El banco no puede bajar de 832 usos; hay ${ecosystem.summary.total_occurrences}.`)
+    for (const entry of semanticBank) {
+      if (!entry.sense_id || !entry.base_verb || !Array.isArray(entry.particles)) {
+        fail(`${entry.id}: falta la identidad semántica derivada.`)
+      }
+      if (!Array.isArray(entry.examples_en) || entry.examples_en.length < 2) {
+        fail(`${entry.id}: debe conservar al menos dos ejemplos.`)
       }
     }
 
@@ -44,7 +70,8 @@ if (!exists(publicRoot)) {
       ...ecosystem.particles.map((entry) => entry.path),
     ]
 
-    if (new Set(routes).size !== 42) fail(`Se esperaban 42 rutas SEO únicas; hay ${new Set(routes).size}.`)
+    const expectedRoutes = 2 + ecosystem.summary.learning_routes
+    if (new Set(routes).size !== expectedRoutes) fail(`Se esperaban ${expectedRoutes} rutas SEO únicas; hay ${new Set(routes).size}.`)
 
     for (const route of routes) {
       const htmlPath = path.join(publicRoot, route, 'index.html')
@@ -59,8 +86,14 @@ if (!exists(publicRoot)) {
         fail(`${route}: canonical ausente o incorrecto.`)
       }
       if (!html.includes('<meta property="og:image"')) fail(`${route}: falta og:image.`)
+      if (!html.includes('<meta name="twitter:image"') && expansionRoutes.has(route)) fail(`${route}: falta twitter:image.`)
       if (!html.includes('application/ld+json')) fail(`${route}: falta JSON-LD.`)
       if (!html.includes(`${basePath}/assets/seo/`)) fail(`${route}: la imagen no usa la ruta productiva.`)
+      const imageMatch = html.match(/<meta property="og:image" content="[^"]+\/assets\/seo\/([^"]+)">/)
+      if (!imageMatch || !exists(path.join(publicRoot, 'assets', 'seo', imageMatch[1]))) {
+        fail(`${route}: el archivo de og:image no existe.`)
+      }
+      if (imageMatch?.[1].endsWith('.svg')) fail(`${route}: og:image debe usar una imagen raster, no SVG.`)
     }
   }
 
@@ -70,7 +103,17 @@ if (!exists(publicRoot)) {
 
   const pdfDir = path.join(publicRoot, 'pdfs')
   const pdfs = exists(pdfDir) ? fs.readdirSync(pdfDir).filter((name) => name.endsWith('.pdf')) : []
-  if (pdfs.length !== 42) fail(`Se esperaban 42 archivos PDF; hay ${pdfs.length}.`)
+  const ecosystem = JSON.parse(fs.readFileSync(path.join(publicRoot, 'data', 'ecosystem.json'), 'utf8'))
+  const minimumPdfs = ecosystem.summary.learning_routes + 2
+  if (pdfs.length < minimumPdfs) fail(`Se esperaban al menos ${minimumPdfs} archivos PDF; hay ${pdfs.length}.`)
+  const expectedGuideNames = [
+    ...ecosystem.topics.map((entry) => `${entry.path}.pdf`),
+    ...ecosystem.families.map((entry) => `${entry.path}.pdf`),
+    ...ecosystem.particles.map((entry) => `${entry.path}.pdf`),
+  ]
+  for (const guideName of expectedGuideNames) {
+    if (!pdfs.includes(guideName)) fail(`Falta el PDF correspondiente a la ruta: ${guideName}.`)
+  }
   for (const pdf of pdfs) {
     const buffer = fs.readFileSync(path.join(pdfDir, pdf))
     if (buffer.length < 5_000 || buffer.subarray(0, 4).toString() !== '%PDF') {
@@ -102,6 +145,7 @@ const vocabularyHub = read('src/app/(site)/herramientas/vocabulario/page.tsx')
 const englishHub = read('src/app/(site)/herramientas/vocabulario/ingles/page.tsx')
 const sitemap = read('src/app/sitemap.ts')
 const nextConfig = read('next.config.ts')
+const vocabularyCatalog = read('src/data/herramientas/vocabulario.ts')
 
 if (!toolsPage.includes("href: '/herramientas/vocabulario'")) fail('Herramientas no enlaza el hub de Vocabulario.')
 if (!vocabularyHub.includes('VOCABULARY_LANGUAGES.map')) fail('El hub no deriva sus tarjetas del catálogo de idiomas.')
@@ -110,11 +154,34 @@ if (!sitemap.includes('PHRASAL_VERB_SEO_PAGES.map')) fail('El sitemap principal 
 if (!nextConfig.includes("source: '/herramientas/vocabulario/ingles/phrasal-verbs/:slug(phrasal-verbs-[a-z-]+)'")) {
   fail('Next no conserva el rewrite limpio de las páginas editoriales.')
 }
+if (!nextConfig.includes("source: '/herramientas/vocabulario/ingles/phrasal-verbs/pdfs/:path*'") || !nextConfig.includes("value: 'noindex, follow, noarchive'")) {
+  fail('Los PDF deben llevar X-Robots-Tag noindex para evitar competir con sus landings.')
+}
+
+if (exists(path.join(publicRoot, 'data', 'ecosystem.json'))) {
+  const ecosystem = JSON.parse(fs.readFileSync(path.join(publicRoot, 'data', 'ecosystem.json'), 'utf8'))
+  const catalogEntries = [...vocabularyCatalog.matchAll(/\{\s*slug: '([^']+)', image: '([^']+)'\s*\}/g)]
+    .filter(([, slug]) => slug === 'explorar' || slug.startsWith('phrasal-verbs-'))
+    .map(([, slug, image]) => ({ slug, image }))
+  const expectedCatalog = [
+    { slug: 'explorar', image: 'phrasal-verbs-esenciales-welearn.png' },
+    { slug: 'phrasal-verbs-esenciales', image: 'phrasal-verbs-esenciales-welearn.png' },
+    ...ecosystem.topics.map((entry) => ({ slug: entry.path, image: entry.image })),
+    ...ecosystem.families.map((entry) => ({ slug: entry.path, image: entry.social_image || entry.image })),
+    ...ecosystem.particles.map((entry) => ({ slug: entry.path, image: entry.image })),
+  ]
+  if (JSON.stringify(catalogEntries) !== JSON.stringify(expectedCatalog)) {
+    fail('El catálogo TypeScript de SEO no coincide exactamente con las rutas e imágenes de ecosystem.json.')
+  }
+}
 
 if (failures.length) {
   console.error(`El contrato del banco de phrasal verbs falló (${failures.length}):`)
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else {
-  console.log('Banco de phrasal verbs íntegro: 42 rutas SEO, 42 PDFs, imágenes y navegación productiva verificadas.')
+  const ecosystem = JSON.parse(fs.readFileSync(path.join(publicRoot, 'data', 'ecosystem.json'), 'utf8'))
+  const routeCount = ecosystem.summary.learning_routes + 2
+  const pdfCount = fs.readdirSync(path.join(publicRoot, 'pdfs')).filter((name) => name.endsWith('.pdf')).length
+  console.log(`Banco de phrasal verbs íntegro: ${routeCount} rutas SEO, ${pdfCount} PDFs, imágenes, semántica y navegación verificadas.`)
 }

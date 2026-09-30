@@ -164,6 +164,14 @@ const nextConfig: NextConfig = {
           { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
         ],
       },
+      {
+        // Los PDF son material descargable de apoyo. La landing HTML es la
+        // versión canónica, navegable y medible que debe competir en búsqueda.
+        source: '/herramientas/vocabulario/ingles/phrasal-verbs/pdfs/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, follow, noarchive' },
+        ],
+      },
     ];
   },
 

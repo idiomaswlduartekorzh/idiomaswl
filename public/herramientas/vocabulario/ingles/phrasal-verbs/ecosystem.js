@@ -25,13 +25,14 @@ function occurrenceMarkup(item, compact = false) {
 function openRelated(term) {
   const dialog = document.querySelector('[data-related-dialog]')
   if (!dialog) return
-  const matches = ecosystem.occurrences.filter(item => clean(item.term) === clean(term))
+  const bank = [...ecosystem.occurrences, ...ecosystem.family_occurrences]
+  const matches = bank.filter(item => clean(item.term) === clean(term))
+    .filter((item, index, items) => items.findIndex(other => other.sense_id === item.sense_id && other.source_path === item.source_path) === index)
   dialog.innerHTML = `<div class="related-dialog-inner">
     <div class="related-dialog-top"><div><p class="eyebrow">Trazabilidad</p><h2>${escapeHtml(term)}</h2></div><button type="button" data-close-dialog aria-label="Cerrar">×</button></div>
-    <p class="related-intro">Esta expresión aparece en ${new Set(matches.map(item => item.topic)).size} contextos y conserva aquí cada significado y ejemplo.</p>
+    <p class="related-intro">Esta expresión aparece en ${new Set(matches.map(item => item.source_path)).size} rutas y conserva aquí cada significado y ejemplo.</p>
     <div class="related-list">${matches.map(item => {
-      const topic = topicFor(item.topic)
-      return `<a href="/herramientas/vocabulario/ingles/phrasal-verbs/${topic.path}"><span>${escapeHtml(item.topic_title)} · ${escapeHtml(item.subtopic)}</span><strong>${escapeHtml(item.meaning_es)}</strong>${item.examples_en.map((example, index) => `<p><b>${index + 1}</b> ${escapeHtml(example)}</p>`).join('')}</a>`
+      return `<a href="/herramientas/vocabulario/ingles/phrasal-verbs/${escapeHtml(item.source_path)}"><span>${escapeHtml(item.topic_title)} · ${escapeHtml(item.subtopic)}</span><strong>${escapeHtml(item.meaning_es)}</strong>${item.examples_en.map((example, index) => `<p><b>${index + 1}</b> ${escapeHtml(example)}</p>`).join('')}</a>`
     }).join('')}</div>
   </div>`
   dialog.showModal()

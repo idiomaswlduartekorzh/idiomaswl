@@ -64,7 +64,7 @@ const TOOLS: Tool[] = [
     name: 'Vocabulario por idioma',
     tagline:
       'Estudia vocabulario en ocho idiomas y abre en inglés un banco de phrasal verbs con ejemplos, práctica, imágenes y PDFs.',
-    detail: '8 idiomas · 334 phrasal verbs en inglés',
+    detail: '8 idiomas · 409 phrasal verbs en inglés',
     color: SKILL_ACCENT.vocabulario.light,
   },
   {
