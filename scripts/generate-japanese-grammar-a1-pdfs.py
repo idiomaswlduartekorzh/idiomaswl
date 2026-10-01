@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Generate the printable Japanese A1 grammar workbooks used by the site."""
+"""Generate the printable Japanese grammar workbooks used by the site."""
 
+import argparse
 import json
 import re
 import sys
@@ -22,8 +23,13 @@ from reportlab.platypus import (
     Paragraph, Spacer, Table, TableStyle,
 )
 
-DATA = ROOT / 'tmp' / 'japanese-grammar-a1' / 'topics.json'
-OUT = ROOT / 'public' / 'downloads' / 'japanese-a1' / 'grammar'
+PARSER = argparse.ArgumentParser()
+PARSER.add_argument('--level', choices=('a1', 'a2', 'b1'), default='a1')
+ARGS = PARSER.parse_args()
+LEVEL = ARGS.level
+LEVEL_LABEL = LEVEL.upper()
+DATA = ROOT / 'tmp' / f'japanese-grammar-{LEVEL}' / 'topics.json'
+OUT = ROOT / 'public' / 'downloads' / f'japanese-{LEVEL}' / 'grammar'
 FONT_REGULAR = ROOT / 'public' / 'fonts' / 'welearn-ja-400.ttf'
 FONT_BOLD = ROOT / 'public' / 'fonts' / 'welearn-ja-700.ttf'
 LOGO = ROOT / 'public' / 'images' / 'welearn-logo.png'
@@ -91,7 +97,7 @@ def draw_page(canvas, doc):
     canvas.line(18 * mm, PAGE_H - 28 * mm, PAGE_W - 18 * mm, PAGE_H - 28 * mm)
     canvas.setFillColor(MUTED)
     canvas.setFont('WeLearnJP', 6.7)
-    canvas.drawString(18 * mm, 10 * mm, 'Material original · Japonés A1 · idiomaswl.com')
+    canvas.drawString(18 * mm, 10 * mm, f'Material original · Japonés {LEVEL_LABEL} · idiomaswl.com')
     canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'Página {doc.page}')
     canvas.restoreState()
 
@@ -101,8 +107,8 @@ class Workbook(BaseDocTemplate):
         super().__init__(
             filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm,
             topMargin=32 * mm, bottomMargin=20 * mm,
-            title='Idiomas WeLearn · Gramática japonesa A1',
-            author='Idiomas WeLearn', subject='Cuaderno de gramática japonesa A1',
+            title=f'Idiomas WeLearn · Gramática japonesa {LEVEL_LABEL}',
+            author='Idiomas WeLearn', subject=f'Cuaderno de gramática japonesa {LEVEL_LABEL}',
         )
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id='body')
         self.addPageTemplates([PageTemplate(id='welearn', frames=[frame], onPage=draw_page)])
@@ -172,7 +178,7 @@ def exercises_for(topic):
 
 def build_story(topic):
     story = []
-    story += [p('JAPONÉS · NIVEL A1 · CUADERNO IMPRIMIBLE', STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead'])]
+    story += [p(f'JAPONÉS · NIVEL {LEVEL_LABEL} · CUADERNO IMPRIMIBLE', STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead'])]
     story += [info_box('Meta de la lección', topic['guide']['goal']), Spacer(1, 5 * mm)]
     story += [p('Al terminar podrás', STYLES['h1'])]
     for index, outcome in enumerate(topic['outcomes'], 1):
@@ -219,10 +225,11 @@ def main():
     topics = json.loads(DATA.read_text(encoding='utf-8'))
     OUT.mkdir(parents=True, exist_ok=True)
     for topic in topics:
-        target = OUT / f"idiomaswl-{topic['slug']}-a1.pdf"
+        pdf_slug = topic['slug'] if topic['slug'].endswith(f'-{LEVEL}') else f"{topic['slug']}-{LEVEL}"
+        target = OUT / f"idiomaswl-{pdf_slug}.pdf"
         Workbook(str(target)).build(build_story(topic))
         print(target.relative_to(ROOT))
-    print(f'Listo: {len(topics)} cuadernos PDF de gramática japonesa A1.')
+    print(f'Listo: {len(topics)} cuadernos PDF de gramática japonesa {LEVEL_LABEL}.')
 
 
 if __name__ == '__main__':
