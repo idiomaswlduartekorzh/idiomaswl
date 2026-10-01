@@ -33,5 +33,14 @@ no tienen un MP3 integral revisado como fuente de este flujo.
 El generador rechaza un audio cuya duración cambie más de 0,15 s; si se sustituye
 un MP3, hay que volver a auditar sus cortes antes de renderizar. La salida usa
 1920 × 1080, H.264 y AAC. Los 20 s iniciales de portada e instrucciones preceden
-al MP3 íntegro; los 8 s finales muestran el cierre. No hay respuestas visibles
-durante la prueba.
+al MP3 íntegro. En la versión nueva, el final incluye 12 s para pausar antes de
+la corrección, una tarjeta de respuestas por parte (12 s cada una) y 8 s de
+cierre. Las respuestas se derivan de las claves del simulacro y se comprueban
+contra los 40 ítems IELTS o los 15 ítems GOETHE. No aparecen durante la prueba.
+Las variantes aceptadas de respuestas abiertas se comprueban en el simulacro
+enlazado. `thumbnail.png` anuncia la clave y el manifiesto genera capítulos
+para preguntas y soluciones.
+
+Los 10 IELTS Sets 2, 3, 5–8 y 10–13 se publicaron antes de añadir la clave:
+su cierre solo recomienda continuar en idiomaswl.com. No anunciar respuestas
+en sus títulos o descripciones sin volver a subir una versión corregida.

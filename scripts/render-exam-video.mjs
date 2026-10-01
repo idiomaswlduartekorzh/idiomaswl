@@ -18,9 +18,9 @@ async function loadMock() {
     const { getGoetheA1SetContent } = await import(path.join(root, 'src/data/mocks/goethe-a1-sets-3-10-content.ts'));
     const content = getGoetheA1SetContent(Number(set.split('-')[1]));
     return { sections: [
-      { part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche', instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.', questions: content.listening1.map(q => ({ type: 'mcq', text: q.question, options: q.options })) },
-      { part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen', instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.', questions: content.listening2.map(q => ({ type: 'mcq', text: q.question, options: ['Richtig', 'Falsch'] })) },
-      { part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten', instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.', questions: content.listening3.map(q => ({ type: 'mcq', text: q.question, options: q.options })) },
+      { part: 1, skill: 'listening', title: 'Hören – Teil 1: Kurze Gespräche', instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.', questions: content.listening1.map(q => ({ type: 'mcq', text: q.question, options: q.options, answer: q.answer })) },
+      { part: 2, skill: 'listening', title: 'Hören – Teil 2: Ansagen', instructions: 'Kreuzen Sie an: Richtig oder Falsch. Sie hören jeden Text einmal.', questions: content.listening2.map(q => ({ type: 'mcq', text: q.question, options: ['Richtig', 'Falsch'], answer: q.answer })) },
+      { part: 3, skill: 'listening', title: 'Hören – Teil 3: Telefonische Nachrichten', instructions: 'Was ist richtig? Wählen Sie A, B oder C. Sie hören jeden Text zweimal.', questions: content.listening3.map(q => ({ type: 'mcq', text: q.question, options: q.options, answer: q.answer })) },
     ] };
   }
   const mockFile = exam === 'ielts' ? `ielts-${set}` : `goethe-a1-set-${set.split('-')[1]}`;
@@ -31,7 +31,7 @@ const out = path.join(root, 'output/youtube', `${exam}-${config.set}-listening`)
 await fs.mkdir(out, { recursive: true });
 const audio = path.join(root, config.audio);
 const brand = path.join(root, 'public/images/welearn-wordmark-transparent-v2.png');
-const W = 1920, H = 1080, lead = 20, tail = 8;
+const W = 1920, H = 1080, lead = 20, answerIntro = 12, answerPage = 12, tail = 8;
 const esc = (s) => String(s ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&apos;');
 const probe = (file) => Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], { encoding: 'utf8' }).trim());
 const duration = probe(audio);
@@ -165,6 +165,55 @@ function goetheContent(part, number) {
   return panel(title, `Teil ${part}  ·  Aufgabe ${number}`, `${stem}${opts}`);
 }
 
+function answerRows(section) {
+  const rows = [];
+  for (const question of section.questions) {
+    if (question.type === 'formgroup') {
+      for (const blank of question.blanks) rows.push({ number: blank.num, answer: blank.answers[0] });
+    } else if (question.type === 'tablegroup') {
+      for (const row of question.rows) for (const cell of row) {
+        if (typeof cell === 'object') rows.push({ number: cell.num, answer: cell.answers[0] });
+      }
+    } else if (question.type === 'multiselect') {
+      const pair = `${question.answers.join(' + ')} (either order)`;
+      question.answers.forEach((_, i) => rows.push({ number: question.qRange[0] + i, answer: pair }));
+    } else if (question.type === 'mcq') {
+      const number = exam === 'ielts' ? Number(question.id.match(/(\d+)$/)?.[1]) : null;
+      const answer = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[question.answer];
+      rows.push({ number, answer });
+    } else {
+      throw new Error(`Unsupported listening answer type: ${question.type}`);
+    }
+  }
+  if (exam === 'goethe') {
+    const offset = section.part === 1 ? 1 : section.part === 2 ? 7 : 11;
+    rows.forEach((row, i) => { row.number = offset + i; });
+  }
+  rows.sort((a, b) => a.number - b.number);
+  const expected = exam === 'ielts' ? 10 : section.part === 1 ? 6 : section.part === 2 ? 4 : 5;
+  const offset = exam === 'ielts' ? (section.part - 1) * 10 + 1 : section.part === 1 ? 1 : section.part === 2 ? 7 : 11;
+  if (rows.length !== expected || rows.some((row, i) => row.number !== offset + i || !row.answer)) {
+    throw new Error(`Incomplete answer key for ${exam} ${set} part ${section.part}`);
+  }
+  return rows;
+}
+
+function answerCard(section) {
+  const rows = answerRows(section);
+  const columns = exam === 'ielts' ? 2 : 2;
+  const perColumn = Math.ceil(rows.length / columns);
+  const entries = rows.map((row, i) => {
+    const x = i < perColumn ? 160 : 990;
+    const y = 390 + (i % perColumn) * 91;
+    const short = wrap(row.answer, 36);
+    if (short.length > 1) throw new Error(`Answer too long for card: ${row.number} ${row.answer}`);
+    return `<rect x="${x}" y="${y - 41}" width="735" height="70" rx="18" fill="#E4EFFD"/>${label(x + 20, y + 7, String(row.number).padStart(2, '0'), 29, '#124493', 800)}${label(x + 92, y + 7, row.answer, 28, '#153261', 700)}`;
+  });
+  const part = exam === 'ielts' ? `Part ${section.part}` : `Teil ${section.part}`;
+  const note = exam === 'ielts' ? 'Accepted spelling variants are checked in the WeLearn mock.' : 'Vergleichen Sie Ihre Antworten mit dem WeLearn-Übungstest.';
+  return panel(exam === 'ielts' ? 'Answer key' : 'Lösungen', part, `${entries.join('')}${label(160, 852, note, 26, '#52749E')}`);
+}
+
 const scenes = [];
 const add = async (name, start, end, content, hero = false) => {
   if (end <= start) throw new Error(`Invalid scene ${name}: ${start}–${end}`);
@@ -193,8 +242,16 @@ if (exam === 'ielts') {
     await add(`page-${String(i + 1).padStart(2, '0')}`, lead + p.at, lead + (pageStarts[i + 1]?.at ?? duration), goetheContent(p.part, p.question));
   }
 }
-await add('99-finish', lead + duration, lead + duration + tail, panel(exam === 'ielts' ? 'Test complete' : 'Test beendet', title, `${lines(160, 480, exam === 'ielts' ? 'Review your answers and continue practicing at idiomaswl.com' : 'Überprüfen Sie Ihre Antworten und üben Sie weiter auf idiomaswl.com', 44, 66, 70, '#173864', 600)}`));
-const total = lead + duration + tail;
+let end = lead + duration;
+await add('90-answer-intro', end, end + answerIntro, panel(exam === 'ielts' ? 'Answer key next' : 'Lösungen folgen', title, `${lines(160, 470, exam === 'ielts' ? 'Pause here if you need more time. Then score your answers out of 40.' : 'Pausieren Sie bei Bedarf. Vergleichen Sie danach Ihre 15 Antworten.', 44, 66, 65, '#173864', 600)}`));
+end += answerIntro;
+for (const section of mock.sections.filter(s => s.skill === 'listening')) {
+  await add(`91-answers-part-${section.part}`, end, end + answerPage, answerCard(section));
+  end += answerPage;
+}
+await add('99-finish', end, end + tail, panel(exam === 'ielts' ? 'Test complete' : 'Test beendet', title, `${lines(160, 480, exam === 'ielts' ? 'Review accepted answers and keep practicing at idiomaswl.com' : 'Prüfen Sie Ihr Ergebnis und üben Sie weiter auf idiomaswl.com', 44, 66, 70, '#173864', 600)}`));
+const total = end + tail;
+await card('thumbnail', panel(exam === 'ielts' ? 'IELTS LISTENING' : 'GOETHE A1 HÖREN', 'WeLearn', `${label(160, 460, exam === 'ielts' ? `FULL TEST · SET ${set.split('-')[1]}` : `ÜBUNGSTEST · SET ${set.split('-')[1]}`, 66, '#15458B', 800)}${label(160, 555, exam === 'ielts' ? '40 QUESTIONS + ANSWER KEY' : '15 AUFGABEN + LÖSUNGEN', 45, '#0A2862', 800)}${label(160, 648, exam === 'ielts' ? 'Full audio · 4 parts' : 'Mit Signalton · 3 Teile', 34, '#456B9C', 600)}`));
 await fs.writeFile(path.join(out, 'timeline.json'), JSON.stringify({ exam, set: config.set, audio: config.audio, audioDuration: duration, videoDuration: total, scenes: scenes.map(({ name, start, end }) => ({ name, start, end })) }, null, 2) + '\n');
 const concat = 'ffconcat version 1.0\n' + scenes.map(s => `file '${s.file.replaceAll("'", "'\\''")}'\nduration ${(s.end - s.start).toFixed(6)}\n`).join('') + `file '${scenes.at(-1).file.replaceAll("'", "'\\''")}'\n`;
 await fs.writeFile(path.join(out, 'frames.ffconcat'), concat);
