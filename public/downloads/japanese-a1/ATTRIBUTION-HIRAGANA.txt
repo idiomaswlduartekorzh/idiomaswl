@@ -1,0 +1,6 @@
+Idiomas WeLearn — Hiragana A1
+
+Animated stroke-order SVG files are derived from AnimCJK.
+Copyright FM-SH, https://github.com/parsimonhi/animCJK
+Licensed under GNU Lesser General Public License v3 or later.
+This package contains the 46 basic hiragana used in the A1 learning unit.

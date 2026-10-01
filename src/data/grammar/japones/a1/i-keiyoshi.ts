@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'i-keiyoshi',
-  order: '09',
+  order: '10',
   color: '#dc2626',
   category: 'Adjetivos',
   level: 'A1',

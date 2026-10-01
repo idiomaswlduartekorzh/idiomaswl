@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'te-form-permission',
-  order: '16',
+  order: '17',
   color: '#dc2626',
   category: 'Verbos',
   level: 'A1',

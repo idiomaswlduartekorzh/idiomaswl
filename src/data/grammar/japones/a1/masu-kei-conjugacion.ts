@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'masu-kei-conjugacion',
-  order: '11',
+  order: '12',
   color: '#dc2626',
   category: 'Verbos',
   level: 'A1',

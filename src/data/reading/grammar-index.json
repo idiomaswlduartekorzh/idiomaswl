@@ -1843,6 +1843,12 @@
           "file": "src/data/grammar/japones/a1/jikan-tiempo.ts"
         },
         {
+          "slug": "kanji-esencial-a1",
+          "title": "Kanji esencial A1",
+          "category": "Escritura",
+          "file": "src/data/grammar/japones/a1/kanji-esencial-a1.ts"
+        },
+        {
           "slug": "katakana-basico",
           "title": "Katakana",
           "category": "Escritura",

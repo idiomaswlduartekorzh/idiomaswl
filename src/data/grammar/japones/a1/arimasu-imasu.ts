@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'arimasu-imasu',
-  order: '08',
+  order: '09',
   color: '#dc2626',
   category: 'Verbos',
   level: 'A1',

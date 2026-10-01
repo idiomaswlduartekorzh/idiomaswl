@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'particula-de-e',
-  order: '07',
+  order: '08',
   color: '#dc2626',
   category: 'Partículas',
   level: 'A1',

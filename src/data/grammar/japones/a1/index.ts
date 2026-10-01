@@ -5,6 +5,7 @@ import desuMasu from './desu-masu'
 import particulaWaGa from './particula-wa-ga'
 import particulaWoNi from './particula-wo-ni'
 import katakanaBasico from './katakana-basico'
+import kanjiEsencialA1 from './kanji-esencial-a1'
 import particulaDeE from './particula-de-e'
 import arimasuImasu from './arimasu-imasu'
 import iKeiyoshi from './i-keiyoshi'
@@ -27,6 +28,7 @@ const topics: GrammarTopic[] = [
   particulaWaGa,
   particulaWoNi,
   katakanaBasico,
+  kanjiEsencialA1,
   particulaDeE,
   arimasuImasu,
   iKeiyoshi,

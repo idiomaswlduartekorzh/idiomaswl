@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'interrogativos-ka',
-  order: '12',
+  order: '13',
   color: '#dc2626',
   category: 'Preguntas',
   level: 'A1',

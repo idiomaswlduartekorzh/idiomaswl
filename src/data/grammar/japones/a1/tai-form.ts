@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'tai-form',
-  order: '15',
+  order: '16',
   color: '#dc2626',
   category: 'Verbos',
   level: 'A1',

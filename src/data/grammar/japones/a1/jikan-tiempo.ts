@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'jikan-tiempo',
-  order: '14',
+  order: '15',
   color: '#dc2626',
   category: 'Tiempo',
   level: 'A1',

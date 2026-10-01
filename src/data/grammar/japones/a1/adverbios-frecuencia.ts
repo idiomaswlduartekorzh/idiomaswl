@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'adverbios-frecuencia',
-  order: '17',
+  order: '18',
   color: '#dc2626',
   category: 'Adverbios',
   level: 'A1',

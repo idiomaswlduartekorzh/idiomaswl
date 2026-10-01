@@ -2,7 +2,7 @@ import type { GrammarTopic } from '../../types'
 
 const topic: GrammarTopic = {
   slug: 'negacion-completa',
-  order: '18',
+  order: '19',
   color: '#dc2626',
   category: 'Negación',
   level: 'A1',

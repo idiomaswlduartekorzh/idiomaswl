@@ -3,8 +3,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
 import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
+import { getJapaneseScriptLesson } from '@/data/japanese-scripts-a1'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
+import JapaneseScriptLesson from '@/components/grammar/JapaneseScriptLesson'
 import TopicNav from '@/components/grammar/TopicNav'
 
 const IDIOMA = 'japones'
@@ -30,6 +32,7 @@ export default async function GrammarTopicPage({ params }: Props) {
   const { slug } = await params
   const topic = getTopicBySlug(IDIOMA, NIVEL, slug)
   if (!topic) notFound()
+  const scriptLesson = getJapaneseScriptLesson(topic.slug)
 
   const canonical = `https://www.idiomaswl.com/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`
   const indexUrl = `https://www.idiomaswl.com/practica/${IDIOMA}/${NIVEL}/gramatica`
@@ -58,6 +61,28 @@ export default async function GrammarTopicPage({ params }: Props) {
           { '@type': 'ListItem', position: 5, name: topic.shortTitle, item: canonical },
         ],
       },
+      ...(scriptLesson ? [
+        {
+          '@type': 'HowTo',
+          name: `Cómo aprender ${scriptLesson.name} en nivel A1`,
+          description: scriptLesson.lead,
+          totalTime: scriptLesson.id === 'kanji' ? 'PT45M' : 'PT35M',
+          step: [
+            { '@type': 'HowToStep', position: 1, name: 'Comprender su función', text: scriptLesson.intro.paragraphs[0] },
+            { '@type': 'HowToStep', position: 2, name: 'Estudiar la tabla visual', text: scriptLesson.chartCopy },
+            { '@type': 'HowToStep', position: 3, name: 'Practicar los trazos', text: scriptLesson.strokeCopy },
+            { '@type': 'HowToStep', position: 4, name: 'Reconocer en ambas direcciones', text: scriptLesson.practiceCopy },
+          ],
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: scriptLesson.faqs.map(([question, answer]) => ({
+            '@type': 'Question',
+            name: question,
+            acceptedAnswer: { '@type': 'Answer', text: answer },
+          })),
+        },
+      ] : []),
     ],
   }
 
@@ -78,6 +103,10 @@ export default async function GrammarTopicPage({ params }: Props) {
             <span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span>
           </nav>
 
+          {scriptLesson ? (
+            <JapaneseScriptLesson scriptId={scriptLesson.id} />
+          ) : (
+            <>
           <section className="topic-hero">
             <div className="topic-hero__grid">
               <div>
@@ -140,6 +169,8 @@ export default async function GrammarTopicPage({ params }: Props) {
           </article>
 
           <GrammarTopicClient topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
+            </>
+          )}
 
           <TopicNav idioma={IDIOMA} nivel={NIVEL} slug={topic.slug} indexLabel="Gramática A1" />
         </div>
