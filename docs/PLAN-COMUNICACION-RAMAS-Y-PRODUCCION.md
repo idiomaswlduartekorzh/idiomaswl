@@ -9,6 +9,27 @@ Fuente canónica al redactarlo: `origin/main` en `a036f93c5f151e0e49d90823f0e9dd
 
 Registro vivo asociado: [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
 
+## Tracker financiero y links de pago administrativos — 30 de septiembre de 2026
+
+`codex/admin-payment-tracker-20260930` parte de `origin/main` en `2361475c`.
+Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex. Alcance: nueva ruta privada
+`/dashboard/admin/pagos`, ledger normalizado de planes, clases, Xpress, ICFES y
+links personalizados, indicadores de recaudo bruto, filtros y CSV; creación de
+links Wompi de monto fijo, un solo uso y vencimiento; y conciliación por webhook
+mediante consulta autenticada a Wompi. No se almacenan datos de tarjeta ni se
+estiman comisiones, retenciones o desembolsos.
+
+Las migraciones aditivas `20261001043031_admin_payment_links_and_ledger.sql` y
+`20261001044506_admin_payment_links_hardening.sql` están aplicadas en Supabase
+producción. La comprobación remota confirmó RLS, tres políticas de denegación,
+cero privilegios de navegador, acceso exclusivo de `service_role`, cero hallazgos
+de seguridad del asesor y tres registros históricos visibles en el ledger; todavía
+no existen tickets personalizados. Validaciones: 36/36 pruebas del módulo y sus
+regresiones Wompi/comercio/admin, TypeScript, ESLint focalizado, navegación,
+catálogo protegido y build Next.js de 2.596 páginas. El baseline de archivos
+multimedia no pudo ejecutarse en el clon liviano porque `public/audio` no se
+descargó; el catálogo de 465 temas sí pasó. Decisión de integración: `MERGE`.
+
 ## Ecosistema de vocabulario y phrasal verbs — 28 de septiembre de 2026
 
 `codex/phrasal-verbs-main-integration` parte de `origin/main` en `f4019feb`.

@@ -72,6 +72,27 @@ La migracion `supabase/migrations/20260821190614_toefl_report_payments.sql` crea
 - El informe TOEFL siempre necesita Supabase y su migracion, también en Sandbox, porque debe enlazar el pago con una entrega concreta y conservar el acceso durante la revisión humana.
 - En Produccion, el checkout se bloquea si el ledger no esta disponible. Antes de activar llaves reales se debe aplicar y verificar la migracion.
 
+### Panel financiero y links administrativos
+
+`/dashboard/admin/pagos` consolida en un ledger privado los intentos y las
+transacciones verificadas de planes, clases, Xpress, ICFES y cobros personalizados.
+Muestra recaudo bruto, pagos del mes, referencias abiertas, alertas, métodos de
+pago, filtros y exportación CSV. No calcula recaudo neto: comisiones, retenciones y
+desembolsos deben conciliarse con los reportes de Wompi y el extracto bancario.
+
+Un administrador puede crear un ticket de valor fijo entre COP 1.000 y
+COP 100.000.000, con vencimiento de 1 a 30 días. El servidor registra primero el
+ticket, crea en Wompi un link de un solo uso y guarda su URL. El navegador nunca
+recibe la llave privada. Cuando llega el evento, el webhook usa únicamente el ID
+firmado para consultar la transacción en la API autenticada de Wompi y valida link,
+ambiente, monto y moneda antes de actualizar el estado de forma idempotente.
+
+Las migraciones `20261001043031_admin_payment_links_and_ledger.sql` y
+`20261001044506_admin_payment_links_hardening.sql` crean las tablas, la función
+transaccional y la vista normalizada. Las tablas tienen RLS, políticas explícitas
+de denegación para `anon` y `authenticated`, y privilegios exclusivos de
+`service_role`. No se guardan datos de tarjeta.
+
 ## URL de eventos Sandbox
 
 Despues de desplegar el Preview, configura en el Dashboard de Wompi la URL HTTPS exacta del despliegue:
@@ -87,6 +108,7 @@ Sandbox y Produccion deben tener URLs de eventos independientes. No apuntes Sand
 ```bash
 npm run check:wompi-env
 npm run test:wompi
+npm run test:admin-payments
 npx tsc --noEmit
 ```
 
