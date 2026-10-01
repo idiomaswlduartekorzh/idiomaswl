@@ -707,3 +707,34 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   opción múltiple corrigieron correctamente en hiragana, katakana y kanji. La
   auditoría WCAG A/AA no reportó violaciones automáticas y los logs del
   despliegue mostraron 0 warnings, 0 errores y 0 fallos fatales.
+
+### 30 de septiembre de 2026 — gramática japonesa A1 completa
+
+- La implementación funcional quedó integrada en `main` mediante
+  `4d4615db9c232ae9a6a59138536607639cf98e92`; la rama de respaldo es
+  `codex/japanese-a1-grammar-complete-20260930`. La ruta de gramática pasó de
+  21 a 28 temas, con siete temas nuevos y 786 interacciones de práctica. Los
+  25 temas gramaticales usan cinco etapas: comprender, mapa visual, paso a
+  paso, práctica progresiva y recursos; hiragana, katakana y kanji conservan
+  su experiencia especializada ya aprobada.
+- Se produjeron 25 modelos MP3 con ElevenLabs, 25 mapas PNG, seis imágenes
+  editoriales y 25 cuadernos PDF A4 de seis páginas cada uno. Sumados a la
+  entrega de escritura, Japonés A1 dispone de 109 audios y 28 PDF de gramática.
+  Los 150 folios nuevos se renderizaron y revisaron sin páginas en blanco,
+  cortes, solapamientos ni glifos dañados.
+- Pasaron el guardián japonés (`28` temas, `786` interacciones, `25` PDF,
+  `25` mapas y `25` audios), TypeScript, ESLint dirigido, prebuild completo y
+  el build Turbopack de 2.595 páginas. Se regeneraron las fuentes japonesas
+  locales para cubrir todos los glifos utilizados.
+- El ajuste `e250c7301a8de9c649dc9064abd4bcdfbdce2366` anuló desde `vercel.json` una
+  regla obsoleta de “Ignored Build Step” que estaba cancelando los pushes de
+  `main`. El ajuste móvil final quedó en
+  `17d27761400ab128297c402a737064ab0770c6a0`: a 390 px el documento mide 390 px
+  y no presenta elementos fuera del viewport.
+- El deployment funcional verificado de Vercel
+  [`dpl_HTbwrfCxaobSKSvvPXeWrEb38EBk`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/HTbwrfCxaobSKSvvPXeWrEb38EBk)
+  terminó correctamente y quedó asignado a `https://www.idiomaswl.com`. El
+  smoke posterior verificó 104/104 objetivos públicos: índice, 28 lecciones y
+  75 recursos nuevos. La revisión de navegador confirmó navegación por las
+  cinco etapas, avance de ejercicios, descargas, escritorio, móvil y ausencia
+  de errores de página.
