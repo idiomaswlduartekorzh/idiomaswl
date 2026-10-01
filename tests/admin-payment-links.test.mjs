@@ -73,11 +73,13 @@ test('admin navigation and webhook include the protected payment workflow', () =
   const dashboard = readFileSync(new URL('../src/app/(site)/dashboard/admin/JoseDashboard.tsx', import.meta.url), 'utf8');
   const page = readFileSync(new URL('../src/app/(site)/dashboard/admin/pagos/page.tsx', import.meta.url), 'utf8');
   const action = readFileSync(new URL('../src/app/(site)/dashboard/admin/pagos/actions.ts', import.meta.url), 'utf8');
+  const client = readFileSync(new URL('../src/app/(site)/dashboard/admin/pagos/PaymentsAdminClient.tsx', import.meta.url), 'utf8');
   const webhook = readFileSync(new URL('../src/app/api/wompi/events/route.ts', import.meta.url), 'utf8');
 
   assert.match(dashboard, /\/dashboard\/admin\/pagos/);
   assert.match(page, /requireAdmin/);
   assert.match(action, /await requireAdmin\(\)/);
+  assert.match(client, /environment !== data\.currentEnvironment/);
   assert.match(webhook, /persistVerifiedAdminPaymentLinkTransaction/);
   assert.match(webhook, /transaction\.id/);
 });

@@ -401,9 +401,18 @@ export default function PaymentsAdminClient({
               <textarea name="internalNote" maxLength={1000} rows={2} placeholder="Solo la ve el equipo administrativo." />
             </label>
             <div className={styles.formFooter}>
-              <p><ShieldCheck size={15} /> Monto fijo · un solo pago aprobado · vencimiento automático</p>
-              <button type="submit" className={styles.createButton} disabled={formPending || data.setupRequired || !data.wompiConfigured}>
-                <Link2 size={17} /> {formPending ? 'Creando en Wompi…' : 'Crear link de pago'}
+              <p><ShieldCheck size={15} /> Monto fijo · un solo pago aprobado · ambiente {data.currentEnvironment === 'production' ? 'real' : 'sandbox'}</p>
+              <button
+                type="submit"
+                className={styles.createButton}
+                disabled={formPending || data.setupRequired || !data.wompiConfigured || environment !== data.currentEnvironment}
+              >
+                <Link2 size={17} />
+                {formPending
+                  ? 'Creando en Wompi…'
+                  : environment !== data.currentEnvironment
+                    ? `Cambia a ${data.currentEnvironment === 'production' ? 'Producción' : 'Sandbox'} para crear`
+                    : 'Crear link de pago'}
               </button>
             </div>
             {formState.message && <p role="status" className={formState.status === 'success' ? styles.successMessage : styles.errorMessage}>{formState.message}</p>}
